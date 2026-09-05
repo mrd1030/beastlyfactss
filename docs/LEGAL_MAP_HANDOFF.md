@@ -8,14 +8,14 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 19 (AZ, CO, CT, DE, FL, HI, IL, MA, MD, MI, MN, NE, NM, NV, NY, OR, PA, TN, TX) |
-| Unread cells | 400 |
-| Cached primary sources | 44 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 21 (AZ, CO, CT, DE, FL, GA, HI, IL, MA, MD, MI, MN, NE, NM, NV, NY, NYC, OR, PA, TN, TX) |
+| Unread cells | 342 |
+| Cached primary sources | 46 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
-Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts, Nebraska, Florida and New York sit
-on `claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main once it
-lands.
+Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts, Nebraska, Florida, New York,
+Georgia and New York City sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
+fresh branch from main once it lands.
 
 ## The loop
 
@@ -28,7 +28,7 @@ One jurisdiction per sitting. It takes a while and that is fine.
    that explains rather than asserts, and `verifiedOn` set to today in US Eastern.
 4. Re-run `legal-gaps.mjs`, then `node scripts/check-legal-map-sync.mjs`. That script
    cross-checks every legal guide against the map and will catch guides you just made
-   wrong. It sits at 9 pre-existing errors; anything above that is yours.
+   wrong. It sits at 7 pre-existing errors; anything above that is yours.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
@@ -99,6 +99,15 @@ the species, and bars selling one at any number. The garter snake, the flying sq
 prairie dog all sat on this map as unrestricted with accurate notes about a statute that was never
 going to reach them.
 
+**A licence that is not a pet licence.** Georgia's rule sorts wild animals into three tiers, two of
+which read as permit tiers, and five entries on this map sat here as `permit` because of it. They
+were wrong. O.C.G.A. § 27-5-4(b)(1) says who a wild animal licence goes to: the wholesale or retail
+wild animal trade and public exhibitors, with no-cost permits for science, education, a capuchin
+monkey for a person with a permanent disability, and grass carp for a pond owner. No pet category
+exists anywhere in it, and the regulation proves the point by writing express "may be held as a pet
+without a license" exceptions for exactly two animals. Before recording any state's licence tier as
+a permit, read the statute that says who the licence is issued to.
+
 **A prohibition hidden in a definition.** New York's famous rule is the closed "wild animal" list
 that bars keeping a serval or a Burmese python as a pet, and it answers almost nothing else. What
 reaches every native snake, lizard, salamander and turtle in the state is ECL § 11-0103(2)(c), which
@@ -151,14 +160,25 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| GA | Georgia | 29 | 4 sources on file |
-| NYC | New York City | 29 | 1 source on file |
 | NJ | New Jersey | 28 | 3 sources on file |
 | UT | Utah | 27 | 5 sources on file |
 | AL | Alabama | 20 | 3 sources on file |
+| IN | Indiana | 20 | 1 source on file |
+| OK | Oklahoma | 20 | 1 source on file |
 
 ## Loose ends
 
+- **New York City has one unclear cell and it turns on a 1989 systematics paper.** § 161.01(b)(10)
+  prohibits "any member of the family Iguanidae, including the green or common iguana". Anolis
+  carolinensis was an iguanid until the Frost and Etheridge revision split Polychrotidae, and now
+  sits in Dactyloidae. On drafting-era taxonomy the green anole is prohibited; on current taxonomy
+  it is not. The Code never dates its family names, and it uses them loosely elsewhere, printing
+  "teiidae" in lower case and calling hedgehogs Insectivora. Recorded unclear rather than guessed.
+- **Georgia has no unclear cells but one thin answer.** The tiger salamander is recorded legal
+  because DNR's prohibited natives list names five salamanders and not that one, and lists "spring
+  lizards" among natives that may be taken. DNR says of that list that it "does not include all
+  native wildlife that is prohibited", so this is the weakest Georgia entry and the one to re-check
+  if anyone gets a straight answer from the Special Permit Unit.
 - **New York has one unclear cell and it is the sharpest statute-versus-practice gap on the map.**
   The flying squirrel is on none of New York's lists. It is not a "wild animal" under ECL
   § 11-0103(6)(e), so the pet ban at § 11-0512 misses it. It is not on 6 NYCRR § 180.1, so the
@@ -273,10 +293,11 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Ten animals are now at 51 of 51: hamster, gerbil, guinea pig, chinchilla, ferret, cockatoo,
-hedgehog, sugar glider, garter snake and kingsnake. Seven more are one short at 50: Russian
-tortoise, quaker parakeet, veiled chameleon, fennec fox, serval, prairie dog and capybara. That is
-seventeen animals at or near full coverage and the largest article-ready batch this map has had.
+Ten animals are at 51 of 51: hamster, gerbil, guinea pig, chinchilla, ferret, cockatoo, hedgehog,
+sugar glider, garter snake and kingsnake. Thirteen more are one short at 50, among them the ball
+python, boa constrictor, green iguana, tokay gecko, veiled chameleon, Bengal cat, degu, quaker
+parakeet, Russian tortoise, fennec fox, serval, prairie dog and capybara. Twenty-three animals at
+or near full coverage, which is comfortably the largest article-ready batch this map has had.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -318,6 +339,13 @@ Maryland is the only state that answers it by weight: § 10-621(b)(1)(iv) reache
 only "if the hybrid weighs over 30 pounds", with no generation test anywhere in the section. The
 line is drawn on the individual animal rather than its ancestry, which is the one version of
 this rule whose answer could change as a cat grows.
+
+New York City is the fifteenth Bengal answer and the only one with no exit at all: "any hybrid or
+cross-breed offspring of a wild cat and domesticated or other cat", with no filial number, no weight
+test and no registry exception. The same cat is lawful in Buffalo under the state's five-generation
+rule and unlawful in Brooklyn. Georgia is the fourteenth and nearly as blunt, banning all Felidae
+and adding, through DNR, that hybrids "and all subsequent generations" are regulated and that most
+exotic cat hybrids are not a legal pet.
 
 New York is the thirteenth Bengal answer and the strictest generation rule on the map. Felidae "and
 all hybrids thereof" is a wild animal, with one exit: hybrids of Felis catus "that are registered by

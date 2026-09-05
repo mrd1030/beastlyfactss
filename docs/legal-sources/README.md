@@ -57,6 +57,8 @@ about this species", not to claim a new verification date.
 | `NE-ne-captive-wildlife.txt` | Nebraska's renumbered wildlife chapters, its statutory felid ban, and the definition that decides the rest |
 | `FL-fl-captive-and-nonnative.txt` | Florida's four separate chapters, its 22-item no-permit list, and the arthropod rule that is not FWC's |
 | `NY-ny-wildlife.txt` | New York's closed wild animal list, and the small game definition that reaches every native herptile |
+| `GA-ga-wild-animals.txt` | Georgia's three licence tiers, the statute that makes none of them a pet licence, and its native ban list |
+| `NYC-nyc-health-code-161.txt` | New York City's family-level ban, and the clause that imports the whole of New York State's protected wildlife |
 
 ## Reading the awkward ones
 
@@ -81,6 +83,23 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   what selective breeding has done rather than by species, which is what makes the pet rabbit
   clean there when the same species is a hard call in Minnesota and Illinois. Read (a)(7) and
   (a)(21) before the lists.
+- **`GA-ga-wild-animals.txt`** is a state where "licence required" means no. Read O.C.G.A.
+  § 27-5-4(b)(1) before any of the three rule tiers: licences go only to the wholesale or retail
+  wild animal trade and to public exhibitors, and permits only for science, education, a capuchin
+  monkey for a person with a permanent disability, and grass carp. There is no pet category, which
+  is why the rule writes express "may be held as a pet without a license" exceptions for exactly two
+  animals, the European ferret and the sugar glider. The licence rule works by taxonomic ORDER, so
+  all Carnivora, all hedgehogs, all lagomorphs, all marsupials and all rodents outside six named
+  genera are caught. Natives are a separate scheme on the DNR page, and its sentence "regardless of
+  the origin or morphology" is what kills the captive-bred and colour-morph arguments.
+- **`NYC-nyc-health-code-161.txt`** bans by FAMILY, so look up the family and not the species: all
+  Boidae, all Pythonidae, all Varanidae, all Iguanidae, all teiidae, all Chelydridae, all squirrels,
+  all Mustelidae, all marsupials. The clause most readings skip is § 161.01(b)(ii), which prohibits
+  anything protected or endangered under federal, STATE or local law and therefore imports New York
+  State's whole protected wildlife scheme into the city. There is no amphibian clause at all, which
+  is why the axolotl is legal here and the tiger salamander is not. Always compare against the New
+  York State entries: the state excepts captive bred fennec foxes and five-generation registered cat
+  hybrids and the city excepts neither.
 - **`NY-ny-wildlife.txt`** describes a state with two mechanisms where the famous one answers fewer
   animals. The closed "wild animal" list at ECL 11-0103(6)(e) is what everyone quotes, and it is six
   clauses. The rule that catches natives is a definition: 11-0103(2)(c) puts native frogs,
@@ -187,6 +206,8 @@ not on the sites, so a person with a browser can open all of them.
 | `publications.tnsosfiles.com`, `sos.tn.gov`, `tnsos.org` | 403 "Request blocked" from CloudFront on every path, with or without a browser User-Agent and Referer. This is the whole of Tennessee's rules and proclamations publishing | No workaround found. `www.tn.gov` IS reachable, so read the TWRA pages instead, and cross-check the statutes against two reproductions |
 | `statutes.capitol.texas.gov` | Angular SPA. Every `/Docs/` path returns the same 250KB shell, so a fetch looks successful and contains no law; headless Chromium cannot reach it at all | Fetch `https://tcss.legis.texas.gov/resources/<CODE>/htm/<CODE>.<CHAPTER>.htm` instead and cite the capitol URL. The base is in the SPA chunk `chunk-7GRZWKYH.js` as `TCASCore` |
 | `texreg.sos.state.tx.us` | Retired. Serves "Site Has Moved" to every path, the old `TacPage` viewer included | The TAC is on an Appian portal now: POST `{"#t":"UiConfig"}` to `texas-sos.appianportalsgov.com/rules-and-meetings/_/ui?interface=VIEW_TAC&title=..&part=..&chapter=..` with a cookie jar and `X-Client-Version: APNX-1-4105-002`. Full recipe in `TX-tx-nongame.txt` |
+| `rules.sos.ga.gov` | Works with plain curl, but only at SUBJECT level. Individual rule pages such as `/GAC/391-4-8-.05` are JavaScript shells containing no law | Always fetch the subject page, `/GAC/391-4-8`, which returns every rule in it |
+| `www.nyc.gov/assets/doh/...pdf` | 403 to plain curl, and it saves an HTML error body under the `.pdf` name, which then fails parsing with "invalid pdf header" | Refetch with a browser User-Agent and check `file` output before parsing |
 | `govt.westlaw.com/nycrr` | New York publishes the NYCRR only here. 403 to plain curl; a browser User-Agent gets real document pages | Individual sections render as static HTML at `/nycrr/Document/<guid>?viewType=FullText&contextData=(sc.Default)`. The obstacle is the guid: browse and search are JS-driven and the top-level Browse page returns only the title list, so a Part you have no guid for is unreadable. 6 NYCRR Part 175 is in that position |
 | `flrules.org` | 403 to plain curl, fine with a browser User-Agent. `RuleNo.asp` returns metadata, not rule text | The text is a Word doc at `/gateway/readFile.asp?sid=0&tid=<tid>&type=1&file=<rule>.doc`; scrape the tid off the RuleNo page. LibreOffice cannot open these files; extract with a printable-run regex at a 4-character threshold, since a higher one silently drops the short list items that are the whole point |
 | `rules.nebraska.gov` | TLS fails with "unable to get local issuer certificate": the server omits the intermediate for a genuine DigiCert `*.nebraska.gov` cert | Complete the chain instead of disabling verification. Fetch `http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt`, convert with `openssl x509 -inform DER`, concatenate onto the proxy bundle, pass with `--cacert`. Then the JSON API needs no headers: `/api/title`, `/api/chapter/GetByTitleId/<id>` returns full chapter text |

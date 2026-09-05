@@ -1,0 +1,197 @@
+# New York City: a family-level ban, plus the whole of New York State's protected wildlife
+
+sourceId: nyc-161-01
+jurisdiction: NYC
+url: https://www.nyc.gov/assets/doh/downloads/pdf/about/healthcode/health-code-article161.pdf
+fetched: 2026-09-05
+fetch notes: The PDF needs a browser User-Agent; a plain curl gets a 403 and, worse, an HTML error
+  body saved under a .pdf name, which then fails PDF parsing with "invalid pdf header". Seventeen
+  pages, extracts cleanly with pypdf.
+
+THREE LAYERS, and the middle one is the one most readings skip:
+  1. A STANDARD, not a list. "a wild animal is deemed to be any animal which is naturally inclined
+     to do harm and capable of inflicting harm upon human beings and all such animals are hereby
+     prohibited".
+  2. § 161.01(b)(ii): "any native or exotic wildlife whose possession or sale is prohibited because
+     they are designated as protected or endangered pursuant to any federal, STATE or local law".
+     This imports New York State's protected wildlife scheme into the city wholesale. Since the
+     state makes native frogs, salamanders, turtles, lizards and snakes small game and therefore
+     protected wildlife, every one of them is prohibited in the five boroughs too. That is how the
+     garter snake, milk snake, box turtle and tiger salamander are answered here.
+  3. Twenty-four numbered clauses, mostly BY FAMILY. All Boidae. All Pythonidae. All Varanidae.
+     All Iguanidae. All teiidae. All Chelydridae. All squirrels (Sciuridae). All Mustelidae.
+     All marsupials. All large rodents. All venomous spiders "including tarantula", and "scorpion"
+     with no qualifier at all. Plus all turtles and tortoises under a four-inch carapace.
+
+WHAT IS LEFT, at § 161.01(c), written as examples rather than a closed list:
+  "gerbil, hamster (Mesocricetus auratus), guinea pig, domesticated rabbit and fowl or small birds
+   such as parakeet, parrot, canary and finch"
+
+TRAPS:
+  The family-level drafting means a ball python and a rosy boa are prohibited on the same words as
+  a green anaconda, and an ackie monitor on the same words as a Komodo dragon. Do not look for the
+  species; look for the family.
+  There is NO amphibian clause anywhere in (b). The axolotl is legal here and the tiger salamander
+  is not, and the difference comes entirely from layer 2.
+  Chilopoda is centipedes. The millipede is Diplopoda and not venomous, so clause (13) misses it.
+  THE OPEN ITEM: the green anole. "any member of the family Iguanidae" prohibits it on pre-1989
+  taxonomy and misses it on current taxonomy, where Anolis is Dactyloidae. The Code never dates its
+  family names. Recorded unclear.
+  Compare with New York State constantly. The state excepts captive bred fennec foxes and
+  five-generation registered cat hybrids; the city excepts neither. The state names six large
+  constrictors; the city takes Boidae and Pythonidae entire.
+
+--- NYC Health Code § 161.01, Wild and other animals prohibited, verbatim ------------------
+§161.01 Wild and other animals prohibited.
+(a) (1) Prohibitions; exceptions. No person shall sell or give to another person, possess,
+harbor, keep, or yard wild or other animals identified in this section or in regulations
+promulgated by the Commissioner pursuant to subdivision (e) of this section other
+than in:
+(i) a zoological park or aquarium operated by the Department of Parks, by the
+Wildlife Conservation Society, or by the Staten Island Zoological Society; or
+(ii) a laboratory operated pursuant to §504 of the Public Health Law; or
+(iii) a veterinary hospital or other veterinary or medical facility where veterinary
+care is provided for such animals; or
+(iv) a temporary exhibit, performan or display that has been issued a permit by the
+Commissioner.
+(2) Permits. Persons who own, operate, manage or control any premises, businesses or
+activities in which such animals will be exhibited or displayed, or persons who
+propose to exhibit or display such animals, including, but not limited to, in a rodeo,
+circus or other performance, petting zoo, farm museum, school or similar institution,
+or for a film, television, photographic or other production or a media or non-media
+event, or for commercial, educational or other purposes, must obtain a permit issued
+by the Commissioner.
+(A)The Commissioner may impose reasonable conditions and time limits on such
+exhibitions, usages or displays when issuing such permits, including requiring
+proof of insurance and a showing that places where animals are to be exhibited,
+used or displayed have protective devices that the Department is satisfied will
+prevent animals from escaping or injuring the public.
+(B)All animals exhibited or displayed shall have received all species appropriate
+immunizations and have been tested for zoonotic diseases in accordance with
+federal and state law and guidelines, and recommendations of the Association of
+Zoos and Aquariums, or other recognized animal health authorities. The
+Commissioner may prohibit the use, display or exhibition of an animal that, in the
+opinion of the Commissioner, carries an unreasonable risk of exposing persons to
+zoonotic diseases or physical harm.
+(C) An application for a permit to exhibit, use or display animals shall be submitted to
+the Department at least ten (10) business days prior to the arrival of such animals
+into New York City in preparation for such exhibition, use or display by the
+person or entity that proposes to exhibit, use or display such animals or the person
+in control of the premises where such animals will be exhibited, used or
+displayed.
+(D) Any animal of a species for which a rabies vaccine licensed and approved by the
+USDA is available shall be currently vaccinated against rabies in accordance with
+the vaccine manufacturer's instructions sufficiently in advance of any permit
+being issued for its exhibition, use or display, so that such vaccine shall be
+effective at the time of the animal's exhibition, use or display.
+(E) The Department may impose a fee to cover its costs in issuing such permits.
+(b) For the purposes of this Code, a wild animal is deemed to be any animal which is
+naturally inclined to do harm and capable of inflicting harm upon human beings and all
+such animals are hereby prohibited pursuant to subdivision (a) of this section. Such
+animals shall also include: (i) any animals specified by the Commissioner in regulations
+promulgated pursuant to this section; (ii) any native or exotic wildlife whose possession
+or sale is prohibited because they are designated as protected or endangered pursuant to
+any federal, state or local law, regulation, or rule; and (iii) any of the following animals:
+(1) All dogs other than domesticated dogs (Canis familiaris), including, but not limited
+to, wolf, fox, coyote, hyaena, dingo, jackal, dhole, fennec, raccoon dog, zorro, bush
+dog, aardwolf, cape hunting dog and any hybrid or cross-breed offspring of a wild
+dog and domesticated dog.
+(2) All cats other than domesticated cats (Felis catus), including, but not limited to, lion,
+tiger, leopard, ocelot, jaguar, puma, panther, mountain lion, cheetah, wild cat, cougar,
+bobcat, lynx, serval, caracal, jaguarundi, margay and any hybrid or cross-breed
+offspring of a wild cat and domesticated or other cat.
+(3) All bears, including polar, grizzly, brown and black bear.
+(4) All fur bearing mammals of the family Mustelidae, including, but not limited to,
+weasel, marten, mink, badger, ermine, skunk, otter, pole cat, zorille, wolverine, stoat
+and ferret.
+(5) All Procyonidae: All raccoon (eastern, desert, ring-tailed cat), kinkajou, cacomistle,
+cat-bear, panda and coatimundi.
+(6) All carnivorous mammals of the family Viverridae, including, but not limited to,
+civet, mongoose, genet, binturong, fossa, linsang and suricate.
+(7) All bats (Chiroptera).
+(8) All non-human primates, including, but not limited to, monkey, ape, chimpanzee,
+gorilla and lemur.
+(9) All squirrels (Sciuridae).
+(10)Reptiles (Reptilia). All Helodermatidae (gila monster and Mexican beaded lizard); all
+front-fanged venomous snakes, even if devenomized, including, but not limited to, all
+Viperidae (viper, pit viper), all Elapidae (cobra, mamba, krait, coral snake), all
+Atractaspididae (African burrowing asp), all Hydrophiidae (sea snake), all
+Laticaudidae (sea krait); all venomous, mid-or rear-fanged, Duvernoy-glanded
+members of the family Colubridae, even if devenomized; any member, or hybrid
+offspring of the family Boidae, including, but not limited to, the common or green
+anaconda and yellow anaconda; any member of the family Pythonidae, including, but
+not limited to, the African rock python, Indian or Burmese python, Amethystine or
+scrub python; any member of the family Varanidae, including the white throated
+monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile
+monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of
+the family Iguanidae, including the green or common iguana; any member of the
+family teiidae, including, but not limited to, the golden, common, or black and white
+tegu; all members of the family Chelydridae, including snapping turtle and alligator
+snapping turtle; all turtles and tortoises with a carapace length of less than four (4)
+inches; and all members of the order Crocodylia, including, but not limited to,
+alligator, caiman and crocodile.
+(11)Birds and Fowl (Aves): All predatory or large birds, including, but not limited to,
+eagle, hawk, falcon, owl, vulture, condor, emu, rhea and ostrich; roosters, geese,
+ducks and turkeys prohibited or otherwise regulated pursuant to §161.19 of this Code,
+the Agriculture and Markets Law or applicable federal law.
+(12)All venomous insects, including, but not limited to, bees other than non-aggressive
+honey bees (Apis mellifera), hornet and wasp. Persons keeping honey bees shall file a
+notice with the Department, on a form provided or approved by the Department,
+containing the beekeeper's name, address, telephone, e-mail and fax numbers,
+emergency contact information, and location of the hive, and they shall notify the
+Department within ten business days of any changes to such information. Beekeepers
+shall adhere to appropriate beekeeping practices including maintaining bee colonies
+in moveable-frame hives that are kept in sound and usable condition; providing a
+constant and adequate water source; locating hives so that the movement of bees does
+not become an animal nuisance, as defined in §161.02 of this Article; and shall be
+able to respond immediately to control bee swarms and to remediate nuisance
+conditions.
+(13)Arachnida and Chilopoda: All venomous spiders, including, but not limited to,
+tarantula, black widow and solifugid; scorpion; all venomous arthropods including,
+but not limited to, centipede.
+(14)All large rodents (Rodentia), including, but not limited to, gopher, muskrat, nutria,
+paca, woodchuck, marmot, beaver, prairie dog, capybara, sewellel, viscacha,
+porcupine and hutia.
+(15)All even-toed ungulates (Artiodactyla) including, but not limited to, deer, antelope,
+sheep, pigs, including pot bellied pigs, goats, cattle, giraffe and hippopotamus. Such
+prohibition shall not affect persons who keep livestock in accordance with applicable
+law.
+(16)All odd-toed ungulates (Perissodactyla) other than domesticated horses (Equus
+caballus), including, but not limited to, zebra, rhinoceros and tapir.
+(17)All marsupials, including, but not limited to, Tasmanian devil, dasyure, bandicoot,
+kangaroo, wallaby, opossum, wombat, koala bear, cuscus, numbat and pigmy, sugar
+and greater glider.
+(18)Sea mammals (Cetacea, Pinnipedia and Sirenia), including, but not limited to,
+dolphin, whale, seal, sea lion and walrus, and any other predatory marine and
+freshwater animals and fishes including, but not limited to, sharks and piranhas.
+(19)All elephants (Proboscides).
+(20)All hyrax (Hyracoidea).
+(21)All pangolin (Pholidota).
+(22)All sloth and armadillo (Edentala).
+(23)Insectivorous mammals (Insectivora): All aardvark (Tubulidentata), anteater, shrew,
+otter shrew, gymnure, desman, tenrec, mole and hedge hog.
+(24)Gliding lemur (Dermoptera).
+(c) In addition to domesticated dogs and cats, an animal may be kept, possessed, harbored or
+sold in the City of New York provided that possession of the animal is not otherwise
+prohibited by law, including federal, state and local laws regulating domestic animals and
+livestock or protecting wildlife and endangered species. Such animals include, but are not
+limited to, gerbil, hamster (Mesocricetus auratus), guinea pig, domesticated rabbit and
+fowl or small birds such as parakeet, parrot, canary and finch.
+(d) An animal whose possession is prohibited pursuant to this section may be seized by any
+authorized employee, officer or agent of the Department or of any other agency of the
+City of New York, and the Commissioner shall provide for such animal's appropriate
+disposition.
+(1) An order issued by the Commissioner pursuant to this section shall contain a notice
+that the owner of such animal may, within three business days of receipt of the order,
+request an opportunity to be heard with respect to whether the animal is a prohibited
+animal and its appropriate disposition. The Commissioner shall provide such an
+opportunity to be heard as soon as practicable, but no later than 15 days after receipt
+of such request.
+(2) With the written consent of the Department, an owner of any animal whose
+possession is prohibited pursuant to this section, may remove such animal to another
+jurisdiction where its possession is not prohibited pursuant to any local or other law.
+(e) The Commissioner may promulgate such regulations as may be necessary to add to the
+list in subsection (b) any animal which the Commissioner determines is naturally inclined
+to do harm and capable of inflicting bodily harm upon human beings.
+(f) If any provision of this section is adjudged invalid by any court of competent jurisdiction,
+such judgment shall not affect or impair the validity of the remainder of this section.
