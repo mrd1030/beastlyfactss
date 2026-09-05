@@ -29,6 +29,7 @@ about this species", not to claim a new verification date.
 | `VT-vt-restricted-list.txt` | Vermont Restricted Wild Animal List, the appendix the other list points at |
 | `NM-nm-importation-list.txt` | New Mexico Director's Species Importation List, ~1,300 rows with group |
 | `NM-nm-19-35-7.txt` | 19.35.7 NMAC, the rule that defines the four importation groups |
+| `NV-nv-nac-503.txt` | NAC chapter 503, Nevada's prohibited list, no-permit list and classifications |
 
 ## Reading the awkward ones
 

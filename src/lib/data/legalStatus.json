@@ -98,159 +98,159 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 5,
+        "checked": 6,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 5,
+        "checked": 6,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 6,
+        "checked": 7,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 6,
+        "checked": 7,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 6,
+        "checked": 7,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 6,
+        "checked": 7,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 6,
+        "checked": 7,
         "of": 51
       },
       "green-anole": {
-        "checked": 6,
+        "checked": 7,
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 24,
+        "checked": 25,
         "of": 51
       },
       "tarantula": {
-        "checked": 30,
+        "checked": 31,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 30,
+        "checked": 31,
         "of": 51
       },
       "axolotl": {
-        "checked": 30,
+        "checked": 31,
         "of": 51
       },
       "box-turtle": {
-        "checked": 30,
+        "checked": 31,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 30,
+        "checked": 31,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 31,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 31,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 31,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 31,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 32,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 32,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 32,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 32,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 33,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 34,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "green-iguana": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "burmese-python": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "degu": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "hamster": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "gerbil": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "bengal-cat": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "veiled-chameleon": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "ball-python": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "milk-snake": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "boa-constrictor": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "chinchilla": {
@@ -258,7 +258,7 @@
         "of": 51
       },
       "corn-snake": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "fennec-fox": {
@@ -270,7 +270,7 @@
         "of": 51
       },
       "rosy-boa": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "prairie-dog": {
@@ -402,7 +402,8 @@
     },
     "NV": {
       "name": "Nevada",
-      "level": "state"
+      "level": "state",
+      "scope": "Two lists over a statutory default. NAC 503.110 prohibits a named set of species outright, with permits only for zoos, universities, scientific institutions, aquaculture and nonprofit educational exhibitors. NAC 503.140 clears forty-five categories that need no permit at all, and three of its lines carry most of the pet trade: all felines except mountain lions and bobcats, all nonvenomous nonindigenous reptiles, and all nonindigenous amphibians except bullfrogs. Anything on neither list falls to NRS 503.597, which requires the Department's written consent to bring wildlife into the state. Insects and arachnids sit outside all of it, because NRS 501.097 defines wildlife as mammals, birds, fish, reptiles, amphibians, mollusks and crustaceans. Local override is set across this jurisdiction because NAC 503.140(4) preserves county and city ordinances in terms, and Clark County, Las Vegas and Henderson are all stricter."
     },
     "VA": {
       "name": "Virginia",
@@ -1205,6 +1206,16 @@
       "title": "New Mexico Department of Game and Fish, Director's Species Importation List, updated January 2023",
       "url": "https://wildlife.dgf.nm.gov/download/directors-species-importation-list/",
       "note": "The roughly 1,300 row table that 19.35.7 NMAC points at and that earlier research could not obtain. Every row gives a family, a scientific name, a common name and a roman numeral group. Group I is semi-domesticated and needs no importation permit. Group II is not known to be invasive or dangerous and needs a permit. Group III presents minimal or manageable concerns and needs a permit with specific provisions attached. Group IV is prohibited to the general public. The list is reached from the download page rather than a direct file URL, and the site needs a User-Agent header."
+    },
+    "nv-nac-503-140": {
+      "title": "Nev. Admin. Code § 503.140, species for which certain permits and licenses are not required",
+      "url": "https://www.leg.state.nv.us/nac/nac-503.html",
+      "note": "Nevada's clearance list, and the section that decides most pet questions here. Forty-five entries that may be possessed, transported, imported and exported without any Department permit. Three of them do enormous work: all felines except mountain lions and bobcats, all nonvenomous nonindigenous reptile species and subspecies, and all nonindigenous amphibians except bullfrogs. Subsection 4 preserves county and city ordinances, which matters because Clark County, Las Vegas and Henderson are all stricter than the state."
+    },
+    "nv-nrs-503-597": {
+      "title": "Nev. Rev. Stat. § 503.597, importation of wildlife, with the definition of wildlife at NRS 501.097",
+      "url": "https://www.leg.state.nv.us/nrs/nrs-503.html",
+      "note": "The default nobody had pinned down. NRS 503.597 makes it unlawful without the written consent and approval of the Department for any person to receive, bring or have brought or shipped into the state any aquatic life or wildlife, so an animal that is neither prohibited by NAC 503.110 nor cleared by NAC 503.140 needs Department approval rather than being unregulated. NRS 501.097 defines wildlife as any wild mammal, wild bird, fish, reptile, amphibian, mollusk or crustacean found naturally in a wild state, which leaves insects and arachnids outside the Department's authority entirely."
     }
   },
   "animals": {
@@ -2684,6 +2695,15 @@
           "quote": "Mammal | Rodent | Muridae | Mesocricetus auratus | Hamster | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(i)",
+          "quote": "(i) Hamsters;",
+          "note": "The hamster is named outright on the no-permit list, so it may be possessed, transported, imported and exported with no Department permit. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -2977,6 +2997,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Mammal | Rodent | Muridae | Meriones unguiculatus | Gerbil | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(k)",
+          "quote": "(k) Gerbils;",
+          "note": "The gerbil is named outright on the no-permit list, so it may be possessed, transported, imported and exported with no Department permit. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3291,6 +3320,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Bird | Parakeet | Psittacidae | Myiopsitta monachus | Parakeet, Quaker Monk | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Worth flagging against other states, because this is the species Pennsylvania bans by name. New Mexico treats it as semi-domesticated.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(e), (h)",
+          "quote": "(e) Parakeets; ... (h) Parrots;",
+          "note": "Parakeets and parrots are both cleared by name, and Nevada's prohibited bird list is only three species, the pink starling, the red-billed dioch and the red-whiskered bulbul. The monk parakeet is on none of them. Worth flagging against Pennsylvania, which bans this species by name. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3609,6 +3647,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Mammal | Cat | Felidae | Felis catus | Common house cat & hybrids | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. An unusually clean answer for a Bengal, because New Mexico writes hybrids into the domestic cat row rather than leaving them to be argued about. The wild parent species, Prionailurus bengalensis, sits separately in Group IV as a federally endangered animal, but the hybrid does not inherit that.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(q)",
+          "quote": "(q) All felines, except mountain lions and bobcats;",
+          "note": "Nevada disposes of the whole hybrid cat question in seven words by clearing the entire family and naming only two exceptions, neither of which is a small cat. A Bengal is a feline, so no filial generation argument arises and no permit is needed. This is the most permissive answer of any state on this map. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3932,6 +3979,15 @@
           "quote": "Rep/Amph | Lizard | Chamaeleonidae | Chamaeleo calyptratus | Veiled chameleon | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The veiled chameleon is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4221,6 +4277,15 @@
           "quote": "Rep/Amph | Turtle | Testudinidae | Testudo horsfieldii | Russian tortoise | II",
           "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The Russian tortoise is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4543,6 +4608,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Rep/Amph | Snake | Pythonidae | Python regius | Ball Python | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Worth contrasting with the reticulated python two rows down, which is Group IV. New Mexico sorts pythons by species rather than treating the family as one.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The ball python is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -4879,6 +4953,15 @@
           "note": "The Columbian red-tail is the boa that dominates the pet trade and it sits in Group III, needing an importation permit with specific provisions attached. The Peruvian and Argentine red-tails are Group III too. Two rows go the other way: Boa constrictor ssp, except as restricted in another group, covers the Central American and Hog Isle boas at Group I. So the answer turns on which boa, and the common one needs the permit. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The boa constrictor is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5137,6 +5220,15 @@
           "cite": "Director's Species Importation List, 2023, and 19.35.7 NMAC",
           "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
           "note": "A tarantula is not on the Director's list, and neither is any other terrestrial invertebrate: the roughly 1,300 rows are mammals, birds, reptiles, amphibians and fish. Read literally the default clause would designate it group IV and bar it, since it is a live non-domesticated animal. Read in context that looks wrong, because the rule is titled importation of live non-domesticated animals, birds and fish, its scope speaks of wildlife species, and its machinery is veterinary inspection certificates and disease testing built for vertebrates. The regulation never uses the word invertebrate. Recorded unclear rather than banned, because the definition arguably reaches the animal and plainly was not written with it in mind.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 501.097",
+          "quote": "\"Wildlife\" means any wild mammal, wild bird, fish, reptile, amphibian, mollusk or crustacean found naturally in a wild state",
+          "note": "A tarantula is an arthropod, and Nevada's definition of wildlife lists mammals, birds, fish, reptiles, amphibians, mollusks and crustaceans and stops there. Insects and arachnids are outside the Department of Wildlife's authority altogether, so neither the prohibited list nor the importation rule reaches one. A cleaner answer than New Mexico gives, where the same animals fall into a default clause written for vertebrates. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5399,6 +5491,15 @@
           "cite": "Director's Species Importation List, 2023, and 19.35.7 NMAC",
           "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
           "note": "The emperor scorpion is not on the Director's list, and neither is any other terrestrial invertebrate: the roughly 1,300 rows are mammals, birds, reptiles, amphibians and fish. Read literally the default clause would designate it group IV and bar it, since it is a live non-domesticated animal. Read in context that looks wrong, because the rule is titled importation of live non-domesticated animals, birds and fish, its scope speaks of wildlife species, and its machinery is veterinary inspection certificates and disease testing built for vertebrates. The regulation never uses the word invertebrate. Recorded unclear rather than banned, because the definition arguably reaches the animal and plainly was not written with it in mind.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 501.097",
+          "quote": "\"Wildlife\" means any wild mammal, wild bird, fish, reptile, amphibian, mollusk or crustacean found naturally in a wild state",
+          "note": "The emperor scorpion is an arthropod, and Nevada's definition of wildlife lists mammals, birds, fish, reptiles, amphibians, mollusks and crustaceans and stops there. Insects and arachnids are outside the Department of Wildlife's authority altogether, so neither the prohibited list nor the importation rule reaches one. A cleaner answer than New Mexico gives, where the same animals fall into a default clause written for vertebrates. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5693,6 +5794,15 @@
           "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Listed at genus level under the older name Tupinambis; the Argentine black and white tegu is now Salvator merianae.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The Argentine black and white tegu is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5966,6 +6076,15 @@
           "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
           "note": "The savannah monitor is not on the list. Only five monitors are, the Indian, yellow, desert, Komodo and green tree, and the first four are Group IV outright. Everything else in Varanidae falls to the default clause and is designated group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The savannah monitor is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -6095,11 +6214,14 @@
           "note": "The regulated animal definition is cats, bears and non-human primates. No rodent appears in it."
         },
         "NV": {
-          "status": "unclear",
-          "sourceId": "nv-nac-503",
-          "note": "On neither list, same as the capybara.",
+          "status": "permit",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 503.597(1)",
+          "quote": "it is unlawful, except by the written consent and approval of the Department, for any person at any time to receive, bring or have brought or shipped into this State, or remove from one stream or body of water in this State to any other...any aquatic life or wildlife",
+          "note": "Resolved from unclear. The previous entry noted this animal is on neither Nevada list and that no default could be found for unlisted species. The default is NRS 503.597, which makes it unlawful to bring any wildlife into the state without the written consent and approval of the Department. NAC 503.140 is the list of exemptions from that requirement, so being absent from it leaves the requirement in place rather than leaving the animal unregulated. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "permitFor": "personal",
           "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "status": "permit",
@@ -6491,11 +6613,14 @@
           "note": "The regulated animal definition is cats, bears and non-human primates. No rodent appears in it."
         },
         "NV": {
-          "status": "unclear",
-          "sourceId": "nv-nac-503",
-          "note": "On neither list. Nevada does not state a default for unlisted species in the text read, so this does not resolve either way.",
+          "status": "permit",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 503.597(1)",
+          "quote": "it is unlawful, except by the written consent and approval of the Department, for any person at any time to receive, bring or have brought or shipped into this State, or remove from one stream or body of water in this State to any other...any aquatic life or wildlife",
+          "note": "Resolved from unclear. The previous entry noted this animal is on neither Nevada list and that no default could be found for unlisted species. The default is NRS 503.597, which makes it unlawful to bring any wildlife into the state without the written consent and approval of the Department. NAC 503.140 is the list of exemptions from that requirement, so being absent from it leaves the requirement in place rather than leaving the animal unregulated. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "permitFor": "personal",
           "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "status": "legal",
@@ -7274,12 +7399,13 @@
           "note": "Minnesota bans the cat family wholesale with a single exception for Felis catus, so the serval is caught by the same words that catch a tiger. Possession has been unlawful since 2005 unless the animal was already held on 1 January of that year in compliance with the federal Animal Welfare Act."
         },
         "NV": {
-          "status": "banned",
-          "sourceId": "nv-nac-503",
-          "cite": "NAC 503.110(d)",
-          "quote": "All felines, except mountain lions and bobcats",
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(q)",
+          "quote": "(q) All felines, except mountain lions and bobcats;",
+          "note": "Corrected from banned. Nevada's no-permit list clears all felines with two exceptions, mountain lions and bobcats, and the serval is neither. No felid appears on the prohibited list at NAC 503.110 either, so nothing in state law restricts one. Nevada is genuinely among the most permissive states on exotic cats, and the real constraint is local: Clark County, Las Vegas and Henderson each regulate more tightly than the state does. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "status": "permit",
@@ -8194,6 +8320,15 @@
           "quote": "Mammal | PocketPet | Caviidae | Cavia porcellus | Guinea pig | I | Captive Bred",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. The row carries a Captive Bred marker, so the clearance is for the domesticated animal rather than wild-caught stock.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(l)",
+          "quote": "(l) Guinea pigs;",
+          "note": "The guinea pig is named outright on the no-permit list, so it may be possessed, transported, imported and exported with no Department permit. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8481,6 +8616,15 @@
           "quote": "Rep/Amph | Lizard | Iguanidae | Iguana iguana | Iguana, Green Common | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The green iguana is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -8767,6 +8911,15 @@
           "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Both the eastern and Florida snapping turtles are Group II.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "banned",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(1)(b)(8)",
+          "quote": "(8) Snapping Turtles................ All species in the family Chelydridae",
+          "note": "Named at family level on the prohibited list, so importation, transportation and possession are all unlawful and no subspecies argument helps. The only permits available under this section go to accredited zoos and aquariums, universities and government agencies for research, other scientific institutions, commercial aquaculture, and tax-exempt nonprofits exhibiting wildlife for education, none of which is a pet route. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9032,6 +9185,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Rep/Amph | Lizard | Gekkonidae | Gekko gecko | Tokay Gecko | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The tokay gecko is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9306,6 +9468,15 @@
           "quote": "Rep/Amph | Salamander | Ambystomatidae | Ambystoma tigrinum | Eastern Tiger Salamander | II",
           "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. The barred tiger salamander that fills the pet trade is listed separately at Group II as well, so both answers land in the same place. The Sonora and California tiger salamanders are Group IV as federally listed animals.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-unprotected-reptiles",
+          "cite": "NAC 503.075(4)",
+          "quote": "Unprotected amphibians are all species of amphibians which are not classified as game, protected, threatened, sensitive or endangered amphibians.",
+          "note": "The tiger salamander is indigenous to Nevada, so the nonindigenous clearance does not reach it and the classification rule decides instead. Nevada's protected amphibians are three frogs and four toads, none of them a salamander, so the tiger salamander is unprotected and the possession restriction at NAC 503.093, which applies only to protected wildlife, does not bite. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9584,6 +9755,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
           "note": "The Nile monitor is not on the list. Only five monitors are, the Indian, yellow, desert, Komodo and green tree, and the first four are Group IV outright. Everything else in Varanidae falls to the default clause and is designated group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The Nile monitor is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9880,6 +10060,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Rep/Amph | Snake | Pythonidae | Python molurus bivitatis | Burmese Python | IV",
           "note": "Named outright in Group IV, under the older taxonomy that treated the Burmese as a subspecies of Python molurus, with the species epithet misspelled bivitatis. Federal law bars interstate transport of this species anyway under its Lacey Act injurious wildlife listing. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "Nonvenomous and not indigenous to Nevada, so the state itself does not restrict it. Nevada's prohibited reptile list reaches crocodilians, several venomous families, snapping turtles and helodermatids, and no python appears on it. Federal law is the real constraint: the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10179,6 +10368,16 @@
           "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
           "note": "The degu appears nowhere on the Director's list, and New Mexico's default clause is the operative rule: an unlisted live non-domesticated animal is designated group IV until the director decides otherwise. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "permit",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 503.597(1)",
+          "quote": "it is unlawful, except by the written consent and approval of the Department, for any person at any time to receive, bring or have brought or shipped into this State, or remove from one stream or body of water in this State to any other...any aquatic life or wildlife",
+          "note": "The degu is on neither Nevada list. That is not the same as being unregulated, which is the point earlier research could not settle: NRS 503.597 makes it unlawful to bring any wildlife into the state without the written consent and approval of the Department, and NAC 503.140 is the Commission's list of exemptions from exactly that. An animal off both lists therefore needs Department approval. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "permitFor": "personal",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -10434,6 +10633,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
           "note": "Fifteen Ambystoma appear on the list and the axolotl is not among them, so the default clause designates it group IV. That is a harsh result for a laboratory animal that has effectively no wild population, and it sits oddly beside the tiger salamander two rows away at group II. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(qq)",
+          "quote": "(qq) Nonindigenous species of amphibians, except: (1) Bullfrogs (Rana catesbeiana); and (2) Species listed in NAC 503.110;",
+          "note": "Nonindigenous amphibians are cleared as a class, with only bullfrogs and the species on the prohibited list carved out. The prohibited amphibians are clawed frogs and the giant marine toads, so the axolotl is clear. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10694,6 +10902,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Rep/Amph | Turtle | Emydidae | Terrapene ornata ssp | Ornate Box Turtle | II",
           "note": "The condition is which box turtle. The ornate box turtle, which is the one native to New Mexico, and the three-toed box turtle are both Group II and need an importation permit. The eastern box turtle, Terrapene carolina carolina, appears nowhere on the list, and an unlisted animal defaults to Group IV, which is closed to the general public. The aquatic box turtle is Group IV outright as a federally endangered species. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The box turtle is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit. Worth noting that Nevada does restrict one turtle family outright, Chelydridae, so a snapping turtle is a different answer entirely.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10961,6 +11178,15 @@
           "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Named to the subspecies, alongside the yellow-bellied and Cumberland sliders. The South American red-lined slider is the outlier at Group IV.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The red-eared slider is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11222,6 +11448,15 @@
           "quote": "Rep/Amph | Turtle | Testudinidae | Geochelone sulcata | Tortoise, Sulcata | II",
           "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Listed under the older genus Geochelone, now Centrochelys, which is the same naming drift that leaves the sulcata unresolvable in Hawaii. New Mexico's list is old enough to still carry it.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The sulcata is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11485,6 +11720,15 @@
           "note": "Group III, which is a permit with strings: the list defines the group as animals presenting minimal or manageable concerns that require specific provisions to be met before an importation permit issues. All three Heterodon on the list sit here, the western, eastern and Mexican hognose alike, so unlike most states the answer does not turn on which hognose you have. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The hognose snake is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11745,6 +11989,15 @@
           "quote": "Bird | Parrot | Psittacidae | Psittacus sp. | Parrots, African Greys | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Named at genus level.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(h)",
+          "quote": "(h) Parrots;",
+          "note": "Cleared by name, and absent from the three-species prohibited bird list. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11999,6 +12252,15 @@
           "cite": "Director's Species Importation List, 2023, and 19.35.7 NMAC",
           "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
           "note": "The giant African millipede is not on the Director's list, and neither is any other terrestrial invertebrate: the roughly 1,300 rows are mammals, birds, reptiles, amphibians and fish. Read literally the default clause would designate it group IV and bar it, since it is a live non-domesticated animal. Read in context that looks wrong, because the rule is titled importation of live non-domesticated animals, birds and fish, its scope speaks of wildlife species, and its machinery is veterinary inspection certificates and disease testing built for vertebrates. The regulation never uses the word invertebrate. Recorded unclear rather than banned, because the definition arguably reaches the animal and plainly was not written with it in mind.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 501.097",
+          "quote": "\"Wildlife\" means any wild mammal, wild bird, fish, reptile, amphibian, mollusk or crustacean found naturally in a wild state",
+          "note": "The giant African millipede is an arthropod, and Nevada's definition of wildlife lists mammals, birds, fish, reptiles, amphibians, mollusks and crustaceans and stops there. Insects and arachnids are outside the Department of Wildlife's authority altogether, so neither the prohibited list nor the importation rule reaches one. A cleaner answer than New Mexico gives, where the same animals fall into a default clause written for vertebrates. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -12332,6 +12594,15 @@
           "quote": "Rep/Amph | Snake | Colubridae | Pantherophis guttatus | Red Cornsnake | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The corn snake is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/corn-snake-legal-guide/"
@@ -12641,6 +12912,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Rep/Amph | Snake | Colubridae | Lampropeltis triangulum hondurensis | Honduran Tangerine Milksnake | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Nine milk snake subspecies appear and every one of them is Group I, including the New Mexico milksnake, so unlike Vermont and Pennsylvania the answer does not turn on which subspecies you have.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The milk snake is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -13002,6 +13282,15 @@
           "quote": "Rep/Amph | Snake | Boidae | Lichanura trivirgata | Rosy Boa | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "conditional",
+          "sourceId": "nv-unprotected-reptiles",
+          "cite": "NAC 503.080(1)(b), with NAC 503.140(1)(aa)",
+          "quote": "(b) Snake Rosy Boa.................................. Lichanura orcutti",
+          "note": "The condition is which rosy boa, and it turns on a species split most keepers have never heard of. Nevada classifies Lichanura orcutti, the northern three-lined rosy boa, as protected, and NAC 503.093 bars possessing protected wildlife without a licence or permit from the Department. Lichanura trivirgata, the Mexican rosy boa that the pet trade mostly sells, was separated from orcutti and is not indigenous to Nevada, which puts it inside the clearance for nonvenomous nonindigenous reptiles at NAC 503.140(1)(aa). So the same common name lands on either side of the line depending on the animal's actual identity and provenance. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/rosy-boa-legal-guide/"
@@ -13200,6 +13489,16 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Mammal | Squirrel | Sciuridae | Glaucomys sabrinus coloratus | Squirrel, Carolina northern flying | IV | Federally Endangered",
           "note": "The only flying squirrel named is the Carolina northern, in Group IV as federally endangered. The southern flying squirrel kept as a pet is not on the list, so the default clause designates it Group IV too. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "permit",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 503.597(1)",
+          "quote": "it is unlawful, except by the written consent and approval of the Department, for any person at any time to receive, bring or have brought or shipped into this State, or remove from one stream or body of water in this State to any other...any aquatic life or wildlife",
+          "note": "The flying squirrel is on neither Nevada list. That is not the same as being unregulated, which is the point earlier research could not settle: NRS 503.597 makes it unlawful to bring any wildlife into the state without the written consent and approval of the Department, and NAC 503.140 is the Commission's list of exemptions from exactly that. An animal off both lists therefore needs Department approval. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "permitFor": "personal",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -13492,6 +13791,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
           "note": "The ackie monitor is not on the list. Only five monitors are, the Indian, yellow, desert, Komodo and green tree, and the first four are Group IV outright. Everything else in Varanidae falls to the default clause and is designated group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The ackie monitor is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -14943,6 +15251,15 @@
           "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Listed under the older genus Geochelone, now Chelonoidis.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The red-footed tortoise is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14995,6 +15312,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Rep/Amph | Lizard | Agamidae | Pogona vitticepts | Bearded dragon | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. The list misspells the species, printing vitticepts for vitticeps.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The inland bearded dragon is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15049,6 +15375,15 @@
           "quote": "Rep/Amph | Lizard | Gekkonidae | Eublepharis macularius | Leopard Gecko | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The leopard gecko is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15101,6 +15436,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Rep/Amph | Lizard | Gekkonidae | Rhacodactylus cillatus | Crested Gecko | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Listed under the older genus Rhacodactylus, now Correlophus, and with the species misspelled cillatus for ciliatus.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The crested gecko is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15155,6 +15499,15 @@
           "quote": "Rep/Amph | Lizard | Scincidae | Tiliqua sp. | Blue Tongued Skink | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Named at genus level, so every blue-tongue in the trade is covered.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The blue-tongue skink is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15207,6 +15560,15 @@
           "cite": "Director's Species Importation List, 2023",
           "quote": "Rep/Amph | Lizard | Chamaeleonidae | Chamaeleo jacksoni | Jackson's chameleon | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Listed under the older genus Chamaeleo, now Trioceros.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "Jackson's chameleon is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15261,6 +15623,15 @@
           "quote": "Rep/Amph | Lizard | Polychrotidae | Anolis carolinensis | Green Anole | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa)",
+          "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "The green anole is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15307,6 +15678,15 @@
           "quote": "Mammal | Rabbit | Leporidae | Oryctolagus cuniculus | Rabbit, European (common) | I",
           "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "unclear",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(1)(d)(5)",
+          "quote": "(5) Wild European Rabbit....................... Oryctolagus cuniculus",
+          "note": "The two columns of this row disagree with each other. The scientific classification names Oryctolagus cuniculus, which is the species every domestic rabbit belongs to, while the common name column says Wild European Rabbit. Nothing in the section says whether domesticated races are carved out, and unlike the chinchilla, mink, rat, mouse, turkey and duck entries elsewhere in these rules, no domesticated races wording appears here. Pet rabbits are plainly sold in Nevada and the definition of wildlife at NRS 501.097 reaches animals found naturally in a wild state, which a domesticated breed arguably is not. Rendered grey rather than guessed, because the text arguably reaches the animal and clearly was aimed at the wild form. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15352,6 +15732,15 @@
           "cite": "Director's Species Importation List, 2023, and 19.35.7 NMAC",
           "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
           "note": "The Madagascar hissing cockroach is not on the Director's list, and neither is any other terrestrial invertebrate: the roughly 1,300 rows are mammals, birds, reptiles, amphibians and fish. Read literally the default clause would designate it group IV and bar it, since it is a live non-domesticated animal. Read in context that looks wrong, because the rule is titled importation of live non-domesticated animals, birds and fish, its scope speaks of wildlife species, and its machinery is veterinary inspection certificates and disease testing built for vertebrates. The regulation never uses the word invertebrate. Recorded unclear rather than banned, because the definition arguably reaches the animal and plainly was not written with it in mind.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 501.097",
+          "quote": "\"Wildlife\" means any wild mammal, wild bird, fish, reptile, amphibian, mollusk or crustacean found naturally in a wild state",
+          "note": "The Madagascar hissing cockroach is an arthropod, and Nevada's definition of wildlife lists mammals, birds, fish, reptiles, amphibians, mollusks and crustaceans and stops there. Insects and arachnids are outside the Department of Wildlife's authority altogether, so neither the prohibited list nor the importation rule reaches one. A cleaner answer than New Mexico gives, where the same animals fall into a default clause written for vertebrates. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
