@@ -97,164 +97,164 @@
     "remaining": 0,
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got.",
     "perAnimal": {
+      "flying-squirrel": {
+        "checked": 22,
+        "of": 51
+      },
       "tarantula": {
-        "checked": 26,
+        "checked": 27,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 26,
+        "checked": 27,
         "of": 51
       },
       "axolotl": {
-        "checked": 26,
+        "checked": 27,
         "of": 51
       },
       "box-turtle": {
-        "checked": 26,
-        "of": 51
-      },
-      "red-eared-slider": {
         "checked": 27,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 26,
+        "checked": 27,
         "of": 51
       },
-      "tiger-salamander": {
+      "red-eared-slider": {
         "checked": 28,
         "of": 51
       },
       "sulcata-tortoise": {
-        "checked": 27,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 27,
-        "of": 51
-      },
-      "african-grey-parrot": {
         "checked": 28,
         "of": 51
       },
-      "snapping-turtle": {
+      "hognose-snake": {
+        "checked": 28,
+        "of": 51
+      },
+      "tiger-salamander": {
+        "checked": 29,
+        "of": 51
+      },
+      "african-grey-parrot": {
         "checked": 29,
         "of": 51
       },
       "savannah-monitor": {
-        "checked": 29,
+        "checked": 30,
+        "of": 51
+      },
+      "snapping-turtle": {
+        "checked": 30,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 30,
+        "checked": 31,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 30,
+        "checked": 31,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 31,
-        "of": 51
-      },
-      "green-iguana": {
-        "checked": 31,
-        "of": 51
-      },
-      "burmese-python": {
-        "checked": 31,
-        "of": 51
-      },
-      "russian-tortoise": {
         "checked": 32,
         "of": 51
       },
-      "bengal-cat": {
+      "green-iguana": {
+        "checked": 32,
+        "of": 51
+      },
+      "burmese-python": {
+        "checked": 32,
+        "of": 51
+      },
+      "russian-tortoise": {
+        "checked": 33,
+        "of": 51
+      },
+      "red-footed-tortoise": {
+        "checked": 33,
+        "of": 51
+      },
+      "ackie-monitor": {
         "checked": 34,
+        "of": 51
+      },
+      "bengal-cat": {
+        "checked": 35,
         "of": 51
       },
       "degu": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "hamster": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "gerbil": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "veiled-chameleon": {
-        "checked": 37,
-        "of": 51
-      },
-      "ball-python": {
-        "checked": 37,
-        "of": 51
-      },
-      "boa-constrictor": {
         "checked": 38,
         "of": 51
       },
-      "fennec-fox": {
-        "checked": 43,
-        "of": 51
-      },
-      "chinchilla": {
-        "checked": 43,
-        "of": 51
-      },
-      "serval": {
-        "checked": 44,
-        "of": 51
-      },
-      "prairie-dog": {
-        "checked": 47,
-        "of": 51
-      },
-      "capybara": {
-        "checked": 47,
-        "of": 51
-      },
-      "ferret": {
-        "checked": 49,
-        "of": 51
-      },
-      "sugar-glider": {
-        "checked": 51,
-        "of": 51
-      },
-      "hedgehog": {
-        "checked": 51,
-        "of": 51
-      },
-      "corn-snake": {
-        "checked": 41,
+      "ball-python": {
+        "checked": 38,
         "of": 51
       },
       "milk-snake": {
         "checked": 38,
         "of": 51
       },
+      "boa-constrictor": {
+        "checked": 39,
+        "of": 51
+      },
+      "corn-snake": {
+        "checked": 41,
+        "of": 51
+      },
+      "fennec-fox": {
+        "checked": 44,
+        "of": 51
+      },
+      "chinchilla": {
+        "checked": 44,
+        "of": 51
+      },
       "rosy-boa": {
         "checked": 44,
         "of": 51
       },
-      "flying-squirrel": {
-        "checked": 21,
+      "serval": {
+        "checked": 45,
         "of": 51
       },
-      "ackie-monitor": {
-        "checked": 33,
+      "prairie-dog": {
+        "checked": 48,
+        "of": 51
+      },
+      "capybara": {
+        "checked": 48,
+        "of": 51
+      },
+      "cockatoo": {
+        "checked": 49,
+        "of": 51
+      },
+      "ferret": {
+        "checked": 50,
         "of": 51
       },
       "garter-snake": {
@@ -265,12 +265,12 @@
         "checked": 50,
         "of": 51
       },
-      "cockatoo": {
-        "checked": 49,
+      "hedgehog": {
+        "checked": 51,
         "of": 51
       },
-      "red-footed-tortoise": {
-        "checked": 32,
+      "sugar-glider": {
+        "checked": 51,
         "of": 51
       }
     }
@@ -292,7 +292,7 @@
     "PA": {
       "name": "Pennsylvania",
       "level": "state",
-      "scope": "34 Pa.C.S. § 2961, the Game and Wildlife Code definition of exotic wildlife, as the Game Commission applies it."
+      "scope": "Both Pennsylvania agencies, because they split the animal kingdom between them. The Game Commission holds wildlife, which 34 Pa.C.S. § 102 limits to wild birds and wild mammals, and enforces it through the prohibited list at 58 Pa. Code § 137.1 and the exotic wildlife permit at 34 Pa.C.S. § 2961 and 2963 as the Commission applies it. The Fish and Boat Commission holds reptiles and amphibians under 58 Pa. Code Ch. 79, which regulates native species only. Terrestrial invertebrates fall to neither."
     },
     "DC": {
       "name": "District of Columbia",
@@ -1120,6 +1120,21 @@
       "title": "Utah DWR Bird and Mammal Classification Table 3b-1 (May 1, 2023), under Utah Admin. Code R657-3b",
       "url": "https://wildlife.utah.gov/pdf/cor/bird_and_mammal_classification_table_3b-1.pdf",
       "note": "R657-3b-1 governs the collection, importation, possession and propagation of BIRDS AND MAMMALS only. The table's own header sets an inverted default: 'Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.' Sections are domestic animals not covered by the rule, noncontrolled, controlled, and prohibited (the last defined as known detrimental impacts, where 'personal possession will not be authorized')."
+    },
+    "pa-34-102": {
+      "title": "34 Pa.C.S. § 102, Game and Wildlife Code definitions of wildlife, wild animals and wild birds",
+      "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=34&div=0&chpt=1&sctn=2&subsctn=0",
+      "note": "The definitional chain that decides what the Game Commission can reach at all. Wildlife is wild birds and wild mammals, so reptiles, amphibians and invertebrates fall outside the Game Code entirely and sit with the Fish and Boat Commission or with nobody. Wild birds is a closed set: federally listed migratory birds, game birds, and any other birds the Commission designates by name. Wild animals is the opposite, all mammals except the five livestock groups in 1 Pa.C.S. § 1991, so the mammal side sweeps far wider than the Commission enforces. The Pennsylvania General Assembly site blocks automated access, so this wording was read from two independent reproductions of the section that agree verbatim, FindLaw and the Association of Fish and Wildlife Agencies law research library."
+    },
+    "pa-58-137-1": {
+      "title": "58 Pa. Code Ch. 137, Game Commission wildlife regulations, § 137.1 importation, possession, sale and release of certain wildlife and § 137.31 possession of live wildlife",
+      "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter137%2Fchap137toc.html&d=",
+      "note": "The Game Commission's actual prohibited list, and the document most Pennsylvania exotic pet questions turn on rather than the § 2961 definition. Eleven categories, of which three matter most here: all Felidae except house cats, the monk parakeet by name, and a catch-all barring possession of any wildlife held in captivity or captive bred in another state or nation."
+    },
+    "pa-pfbc-native-species": {
+      "title": "Pennsylvania Fish and Boat Commission, Pennsylvania Native Reptile and Amphibian Species",
+      "url": "https://www.pa.gov/agencies/fishandboat/conservation/species-management/reptiles-and-amphibians/pa-native-species",
+      "note": "The enforcing agency's own native species list, which is what 58 Pa. Code § 79.1 points to when it says the Commission will publish the species it has determined are native. Membership on this list is the switch that decides whether Chapter 79 reaches an animal at all."
     }
   },
   "animals": {
@@ -1888,6 +1903,14 @@
           "quote": "Ferret, European - Mustela putorius furo - domestic",
           "note": "Listed under 'Domestic mammals and mammalian livestock not covered under this rule', so R657-3b does not reach it and no certificate of registration arises.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)",
+          "quote": "In the family Mustelidae. All species of the skunks.",
+          "note": "The Game Commission's prohibited list reaches Mustelidae only through its skunk line, and the domestic ferret is not a skunk. No other category in § 137.1(a) names it, and Pennsylvania is not one of the states that treats ferrets as wildlife. Read literally, § 137.1(a)(11) bars possessing any wildlife captive bred in another state, and 34 Pa.C.S. § 102 defines wild animals as every mammal except horses, cattle, sheep, goats and pigs, so the text reaches far wider than the Game Commission applies it. The Commission draws its line at undomesticated species, which is why hedgehogs and sugar gliders are pursued and long domesticated pets are not.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -2556,6 +2579,14 @@
           "quote": "Hamster, golden - Mesocricetus auratus",
           "note": "Listed under 'Domestic mammals and mammalian livestock not covered under this rule', so R657-3b does not reach it and no certificate of registration arises.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)",
+          "quote": "Unless otherwise provided in this section or the act, it is unlawful for a person to import, possess, sell, offer for sale or release within this Commonwealth the following wild animals or wild birds or the eggs of the birds or a crossbreed or hybrid of the wild animals or wild birds, which are similar in appearance",
+          "note": "The golden hamster appears in none of the eleven categories the Game Commission prohibits, which run to cats, canids, bears, raccoons, nutria, skunks, primates, listed species, the monk parakeet, and wildlife taken from the wild or captive bred out of state. Read literally, § 137.1(a)(11) bars possessing any wildlife captive bred in another state, and 34 Pa.C.S. § 102 defines wild animals as every mammal except horses, cattle, sheep, goats and pigs, so the text reaches far wider than the Game Commission applies it. The Commission draws its line at undomesticated species, which is why hedgehogs and sugar gliders are pursued and long domesticated pets are not.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -2825,6 +2856,14 @@
           "status": "legal",
           "quote": "Gerbil = Mongolian jird - Meriones unguiculatus",
           "note": "Listed under 'Domestic mammals and mammalian livestock not covered under this rule', so R657-3b does not reach it and no certificate of registration arises.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)",
+          "quote": "Unless otherwise provided in this section or the act, it is unlawful for a person to import, possess, sell, offer for sale or release within this Commonwealth the following wild animals or wild birds or the eggs of the birds or a crossbreed or hybrid of the wild animals or wild birds, which are similar in appearance",
+          "note": "The Mongolian gerbil appears in none of the eleven categories the Game Commission prohibits, which run to cats, canids, bears, raccoons, nutria, skunks, primates, listed species, the monk parakeet, and wildlife taken from the wild or captive bred out of state. Read literally, § 137.1(a)(11) bars possessing any wildlife captive bred in another state, and 34 Pa.C.S. § 102 defines wild animals as every mammal except horses, cattle, sheep, goats and pigs, so the text reaches far wider than the Game Commission applies it. The Commission draws its line at undomesticated species, which is why hedgehogs and sugar gliders are pursued and long domesticated pets are not.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3115,6 +3154,14 @@
           "quote": "Parrots - Family Psittacidae - All species not native to North America",
           "note": "Utah clears the whole parrot family by one line, provided the species is not native to North America. Unlike Wisconsin and a number of other states, Utah draws no monk parakeet carve-out, so the Quaker sits in the same noncontrolled column as the African grey and the cockatoo.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(9)",
+          "quote": "The Monk Parakeet, Myiopsitts monachus , sometimes referred to as the Quaker Parakeet or Gray-headed Parakeet.",
+          "note": "Named outright, which makes this one of the few Pennsylvania exotic pet answers that needs no interpretation at all: import, possession, sale, offering for sale and release are each unlawful. The scientific name is misspelled in the official text, which prints Myiopsitts for Myiopsitta. This is the only parrot Pennsylvania designates, and the designation is what brings the species inside the Game Code, since 34 Pa.C.S. § 102 otherwise limits wild birds to federally listed migratory birds and game birds.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "quaker-parakeet"
@@ -3399,6 +3446,14 @@
           "status": "legal",
           "quote": "Cat - Felis catus - including breeds that are recognized by The International Cat Association as Preliminary New, Advanced New, Non-championship, and Championship Breeds",
           "note": "Utah resolves cat hybrids by TICA recognition rather than by generation, and the Bengal is a TICA Championship breed, so it lands in the domestic column outside the rule. That is an unusually clean answer next to the generation tests used by New York and Iowa.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(1)",
+          "quote": "In the family Felidae . Species and subspecies, except species which are commonly called house cats which may be possessed but not released into the wild.",
+          "note": "Genuinely unresolved, and the ambiguity is structural. The Bengal is a cross between the domestic cat and the Asian leopard cat, so it sits on both sides of this line at once: the opening sentence of § 137.1(a) prohibits a crossbreed or hybrid of the listed animals which are similar in appearance, while the Felidae line exempts species commonly called house cats. Nothing in the regulation names a filial generation, a percentage of wild ancestry, or the Bengal itself, so an early generation animal and a late generation one get the same silent text. Rendered grey rather than guessed.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3689,6 +3744,14 @@
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The veiled chameleon is native to the Arabian Peninsula and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -3944,6 +4007,14 @@
           "cite": "Wis. Stat. § 169.04",
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The Russian tortoise is a Central Asian species and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4233,6 +4304,14 @@
           "cite": "Wis. Stat. § 169.04",
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The ball python is West African and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -4535,6 +4614,14 @@
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The boa constrictor is a Central and South American species and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -4760,6 +4847,14 @@
           "cite": "Wis. Admin. Code ch. NR 40; Wis. Stat. § 169.04(4)(b)",
           "status": "legal",
           "note": "No invertebrate kept as a pet appears on NR 40, whose terrestrial invertebrate entries are forest and soil pests such as the emerald ash borer and jumping worm. Non-native species are outside captive wildlife licensing.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-34-102",
+          "cite": "34 Pa.C.S. § 102",
+          "quote": "Wild birds, wild mammals and facsimiles thereof, regardless of classification, whether protected or unprotected, including any part, product, egg or offspring thereof, or the dead body or parts thereof (excluding fossils), whether or not included in a manufactured product or in a processed food product.",
+          "note": "A tarantula is neither a bird nor a mammal, so it is not wildlife and the Game Commission has no authority over it. The Fish and Boat Commission's Chapter 79 covers reptiles and amphibians. Pennsylvania's two animal agencies divide the field between them and a terrestrial invertebrate falls in the gap, so no state possession rule applies.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4989,6 +5084,14 @@
           "cite": "Wis. Admin. Code ch. NR 40; Wis. Stat. § 169.04(4)(b)",
           "status": "legal",
           "note": "No invertebrate kept as a pet appears on NR 40, whose terrestrial invertebrate entries are forest and soil pests such as the emerald ash borer and jumping worm. Non-native species are outside captive wildlife licensing.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-34-102",
+          "cite": "34 Pa.C.S. § 102",
+          "quote": "Wild birds, wild mammals and facsimiles thereof, regardless of classification, whether protected or unprotected, including any part, product, egg or offspring thereof, or the dead body or parts thereof (excluding fossils), whether or not included in a manufactured product or in a processed food product.",
+          "note": "The emperor scorpion is neither a bird nor a mammal, so it is not wildlife and the Game Commission has no authority over it. The Fish and Boat Commission's Chapter 79 covers reptiles and amphibians. Pennsylvania's two animal agencies divide the field between them and a terrestrial invertebrate falls in the gap, so no state possession rule applies.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5249,6 +5352,14 @@
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The Argentine black and white tegu is South American and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5488,6 +5599,14 @@
           "cite": "Wis. Stat. § 169.04",
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The savannah monitor is African and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5872,6 +5991,14 @@
           "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
           "note": "Not listed anywhere in Table 3b-1, and the table's default is inverted: unlisted birds and mammals are 'presumed prohibited' and require a division assessment before possession will be authorized. So this is neither cleared nor expressly banned, it is an application to DWR with no published answer. Utah also has its own native species, the federally threatened Utah prairie dog, which is protected separately from anything in this table.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(11)",
+          "quote": "Game or wild held captive . Game or wildlife held in captivity or captive bred in another state or nation.",
+          "note": "The prairie dog is named nowhere in Pennsylvania law. What arguably reaches it is this catch-all, which bars possessing wildlife captive bred in another state, read together with 34 Pa.C.S. § 102, where wild animals means every mammal except horses, cattle, sheep, goats and pigs. That is the same reading the Game Commission uses to ban hedgehogs and sugar gliders, and it is an agency interpretation of a definition rather than a rule anyone wrote about this species. Recorded unclear rather than banned because no text names the animal.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6250,6 +6377,14 @@
           "note": "Controlled rather than prohibited, so a certificate of registration is required before collection, importation or possession, but a route exists. Same column as the bobcat and the two-toed sloth.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(11)",
+          "quote": "Game or wild held captive . Game or wildlife held in captivity or captive bred in another state or nation.",
+          "note": "The capybara is named nowhere in Pennsylvania law. What arguably reaches it is this catch-all, which bars possessing wildlife captive bred in another state, read together with 34 Pa.C.S. § 102, where wild animals means every mammal except horses, cattle, sheep, goats and pigs. That is the same reading the Game Commission uses to ban hedgehogs and sugar gliders, and it is an agency interpretation of a definition rather than a rule anyone wrote about this species. Recorded unclear rather than banned because no text names the animal.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6600,6 +6735,14 @@
           "quote": "Fennec fox - Vulpes zerda",
           "note": "Controlled rather than prohibited, so a certificate of registration is required before collection, importation or possession, but a route exists. Same column as the bobcat and the two-toed sloth.",
           "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(2), (11)",
+          "quote": "In the family Canidae . Species and subspecies of the coyote, the red and gray fox and a full-blooded wolf or crossbreed thereof not licensed by the Department of Agriculture.",
+          "note": "The Canidae line is species-specific and reaches only the coyote, the red fox, the gray fox and the wolf. The fennec fox is none of them. What arguably reaches it instead is the catch-all at § 137.1(a)(11) barring possession of wildlife captive bred in another state, since 34 Pa.C.S. § 102 makes every mammal but livestock a wild animal. Same agency interpretation that bans hedgehogs and sugar gliders, and no Pennsylvania text names the fennec fox, so this is recorded unclear rather than banned.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6981,6 +7124,15 @@
           "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
           "note": "Not listed anywhere in Table 3b-1, and the table's default is inverted: unlisted birds and mammals are 'presumed prohibited' and require a division assessment before possession will be authorized. So this is neither cleared nor expressly banned, it is an application to DWR with no published answer. Worth noting the prohibited column's big cat entry lists Panthera, Acinonyx, Uncia and Puma by name under the federal Big Cat Public Safety Act, and the serval is not among them, so it falls to the unlisted default rather than the big cat ban.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "permit",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(1)",
+          "quote": "In the family Felidae . Species and subspecies, except species which are commonly called house cats which may be possessed but not released into the wild.",
+          "note": "The Felidae line is a whole-family prohibition with one exception, house cats, and a serval is not a house cat. The route out is the exotic wildlife possession permit under 34 Pa.C.S. § 2963 and 58 Pa. Code Ch. 147 Subchapter N, and it is written around facilities rather than pet homes: a separate permit for each animal, and a new applicant must document two years of hands-on work with the species at a recognized or approved facility, with a letter of reference from its owner or manager. The 2005 Joint State Government Commission report on exotic wildlife in Pennsylvania lists the serval among the lesser cats given minimum cage specifications, which confirms the Commission treats it as exotic wildlife rather than leaving it to the catch-all.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/serval-legal-guide/"
@@ -7316,6 +7468,14 @@
           "quote": "Chinchillas - Chinchilla chinchilla, Chinchilla lanigera",
           "note": "Listed under 'Domestic mammals and mammalian livestock not covered under this rule', so R657-3b does not reach it and no certificate of registration arises.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)",
+          "quote": "Unless otherwise provided in this section or the act, it is unlawful for a person to import, possess, sell, offer for sale or release within this Commonwealth the following wild animals or wild birds or the eggs of the birds or a crossbreed or hybrid of the wild animals or wild birds, which are similar in appearance",
+          "note": "The chinchilla appears in none of the eleven categories the Game Commission prohibits, which run to cats, canids, bears, raccoons, nutria, skunks, primates, listed species, the monk parakeet, and wildlife taken from the wild or captive bred out of state. Read literally, § 137.1(a)(11) bars possessing any wildlife captive bred in another state, and 34 Pa.C.S. § 102 defines wild animals as every mammal except horses, cattle, sheep, goats and pigs, so the text reaches far wider than the Game Commission applies it. The Commission draws its line at undomesticated species, which is why hedgehogs and sugar gliders are pursued and long domesticated pets are not.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7591,6 +7751,14 @@
           "quote": "Guinea pig - Cavia porcellus",
           "note": "Listed under 'Domestic mammals and mammalian livestock not covered under this rule', so R657-3b does not reach it and no certificate of registration arises.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)",
+          "quote": "Unless otherwise provided in this section or the act, it is unlawful for a person to import, possess, sell, offer for sale or release within this Commonwealth the following wild animals or wild birds or the eggs of the birds or a crossbreed or hybrid of the wild animals or wild birds, which are similar in appearance",
+          "note": "The guinea pig appears in none of the eleven categories the Game Commission prohibits, which run to cats, canids, bears, raccoons, nutria, skunks, primates, listed species, the monk parakeet, and wildlife taken from the wild or captive bred out of state. Read literally, § 137.1(a)(11) bars possessing any wildlife captive bred in another state, and 34 Pa.C.S. § 102 defines wild animals as every mammal except horses, cattle, sheep, goats and pigs, so the text reaches far wider than the Game Commission applies it. The Commission draws its line at undomesticated species, which is why hedgehogs and sugar gliders are pursued and long domesticated pets are not.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7844,6 +8012,14 @@
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The green iguana is Central and South American and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -8095,6 +8271,14 @@
           "quote": "Common snapping turtle - Chelydra serpentina",
           "note": "Utah puts established non-natives in a deliberately permissive column: 'they may be collected or possessed in any number without a permit', precisely because the division treats them as problematic for native wildlife. Note the one-way rule that applies to every herp here, native or not: once removed from the wild it may not be released back.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "conditional",
+          "sourceId": "pa-58-79-3",
+          "cite": "58 Pa. Code §§ 79.3(h), 79.5, 79.10(a)",
+          "quote": "Common snapping turtle ( Chelydra serpentina ) | July 1 to October 31 | 15 | 30",
+          "note": "The only turtle in the table with a real open season, and personal possession of up to 30 needs no permit. Three conditions bind. The animal has to be taken in season, taking requires a fishing license, and § 79.5 requires an annual permit before anyone may take, catch, kill or possess snapping turtles for sale, barter or trade. Then § 79.10(a) bars importing a native species from another jurisdiction, so a Pennsylvania snapping turtle has to come from your own lawful take rather than a seller in another state.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8327,6 +8511,14 @@
           "cite": "Wis. Stat. § 169.04",
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The tokay gecko is Southeast Asian and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -8566,6 +8758,14 @@
           "status": "conditional",
           "quote": "Tiger salamander - Ambystoma mavortium - Standard possession (3 daily/9 total, per species)",
           "note": "A Utah native and a controlled species. Taking one from the wild requires the orientation course and a collection permit, caps at 3 daily and 9 in total possession, and carries a mandatory online report within 72 hours.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "conditional",
+          "sourceId": "pa-58-79-3",
+          "cite": "58 Pa. Code §§ 79.3(h), 79.10(a)",
+          "quote": "Native species not listed in this subsection | No closed season | 1 | 1",
+          "note": "Ambystoma tigrinum sits on the Fish and Boat Commission's own native species list even though it is considered extirpated here, because § 79.1 defines a native species by whether it occurs historically in Pennsylvania rather than whether it still does. It is not tabled by name, so the catch-all line applies and the limit is one animal, and § 79.10(a) bars importing a native species from another jurisdiction. Check what you are actually buying, because most pet-trade tiger salamanders are the barred tiger salamander, Ambystoma mavortium, a western species absent from Pennsylvania's native list and therefore outside Chapter 79.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -8810,6 +9010,14 @@
           "cite": "Wis. Stat. § 169.04",
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "Pennsylvania itself does not restrict the Nile monitor. It is not on the Fish and Boat Commission's native species list, so Chapter 79 does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework. The federal injurious wildlife listing under the Lacey Act, which took effect in 2016, is the constraint that actually bites, because it bars importation and interstate transport of the species.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9072,6 +9280,14 @@
           "cite": "Wis. Stat. § 169.04",
           "status": "legal",
           "note": "No Wisconsin rule reaches it: not a harmful wild animal, not on NR 40, not native. The binding constraint is federal rather than state, since the Burmese python is listed as injurious wildlife under the Lacey Act, which bars importation and interstate transport.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "Pennsylvania itself does not restrict the Burmese python. It is not on the Fish and Boat Commission's native species list, so Chapter 79 does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework. Federal law is the live constraint instead: the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport, so a Pennsylvania keeper cannot lawfully bring one across a state line even though possession here is unregulated.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9347,6 +9563,14 @@
           "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
           "note": "Not listed anywhere in Table 3b-1, and the table's default is inverted: unlisted birds and mammals are 'presumed prohibited' and require a division assessment before possession will be authorized. So this is neither cleared nor expressly banned, it is an application to DWR with no published answer.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(11)",
+          "quote": "Game or wild held captive . Game or wildlife held in captivity or captive bred in another state or nation.",
+          "note": "The degu is named nowhere in Pennsylvania law. What arguably reaches it is this catch-all, which bars possessing wildlife captive bred in another state, read together with 34 Pa.C.S. § 102, where wild animals means every mammal except horses, cattle, sheep, goats and pigs. That is the same reading the Game Commission uses to ban hedgehogs and sugar gliders, and it is an agency interpretation of a definition rather than a rule anyone wrote about this species. Recorded unclear rather than banned because no text names the animal.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -9569,6 +9793,14 @@
           "status": "legal",
           "note": "Non-native, so NR 16.12's native amphibian rules do not reach it. Worth not confusing with the eastern tiger salamander, a Wisconsin native in the same genus that NR 16.12 does restrict.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The axolotl is Mexican and is absent from the Fish and Boat Commission's native species list, so Chapter 79 does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework. Worth noting that the answer turns on the species and not the genus, because its Pennsylvania native congener the tiger salamander is covered by that chapter and is limited to one animal.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9790,6 +10022,18 @@
           "cite": "Wis. Stat. § 29.604; Wis. Admin. Code ch. NR 27",
           "status": "banned",
           "note": "Wisconsin's only native box turtle, the ornate box turtle, is a state Endangered species, so it may not be taken or possessed without an endangered and threatened species permit, and those are issued for education, research and conservation rather than pet keeping. The eastern box turtle is not a Wisconsin native and would instead be a non-native reptile under § 169.04.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-58-79-3",
+          "cite": "58 Pa. Code §§ 79.3(h), 79.10(a)",
+          "quote": "Woodland box turtle ( Terrapene carolina carolina ) | No open season | 0 | 0",
+          "note": "Pennsylvania's native box turtle is the woodland box turtle, and the table gives it no open season and a daily and possession limit of zero, so it cannot lawfully be taken here. The other route is closed too: § 79.10(a) makes it unlawful to transport or import into or within Pennsylvania a native species from another jurisdiction, and § 79.10(b) makes it unlawful to receive one, so an out-of-state breeder is not an answer either. A Terrapene that is not Pennsylvania native, such as the ornate box turtle, falls outside Chapter 79 altogether, but the eastern box turtle people usually mean is barred both ways.",
+          "grandfathered": {
+            "before": "2007-01-01",
+            "detail": "A one-time permit under § 79.4 let anyone already holding an animal on January 1, 2007 keep it for the rest of its life, but applications closed on June 30, 2007 and no ongoing permit route replaced it."
+          },
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10022,6 +10266,14 @@
           "quote": "Red-eared slider or pond slider - Trachemys scripta",
           "note": "Utah puts established non-natives in a deliberately permissive column: 'they may be collected or possessed in any number without a permit', precisely because the division treats them as problematic for native wildlife. Note the one-way rule that applies to every herp here, native or not: once removed from the wild it may not be released back.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The red-eared slider is native to the Mississippi drainage rather than Pennsylvania, and it does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10248,6 +10500,14 @@
           "cite": "Wis. Stat. § 169.04",
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The sulcata is a Sahelian tortoise and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10476,6 +10736,14 @@
           "status": "conditional",
           "quote": "A person may take or possess up to 5 individuals or eggs of each species of native amphibian, lizard and snake that are not endangered or threatened",
           "note": "The eastern hognose is a Wisconsin native, listed by DNR as Common rather than threatened, so it falls under the general native-herp cap rather than the endangered species rules. Wisconsin repealed and recreated NR 16.12(3) effective 1 January 2027 (CR 25-092). Until then the rule allows taking or possessing up to 5 individuals of each non-listed native species. From that date possession of live native reptiles and amphibians is prohibited outright except under narrow exemptions, of which the one that matters to keepers is NR 16.12(3)(k): captive-bred colour variants acquired from a legal source. A wild-type native animal will no longer be keepable.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "conditional",
+          "sourceId": "pa-58-79-3",
+          "cite": "58 Pa. Code §§ 79.3(h), 79.10(a)",
+          "quote": "Eastern Hog-nosed Snake ( Heterodon platirhinos ) | No open season | 0 | 0",
+          "note": "The condition is which hognose. The eastern hognose is Pennsylvania native, gets no open season and a zero limit, and cannot be imported from another jurisdiction under § 79.10(a), so it can be neither taken nor bought. The western hognose, Heterodon nasicus, which is what the pet trade almost always sells, is not on the Commission's native species list and so falls outside Chapter 79 entirely. Nearly every hognose in a Pennsylvania shop is lawful and the one in the field is not.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10712,6 +10980,14 @@
           "quote": "Parrots - Family Psittacidae - All species not native to North America",
           "note": "Utah clears the whole parrot family by one line, provided the species is not native to North America. Unlike Wisconsin and a number of other states, Utah draws no monk parakeet carve-out, so the Quaker sits in the same noncontrolled column as the African grey and the cockatoo.",
           "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-34-102",
+          "cite": "34 Pa.C.S. § 102",
+          "quote": "All migratory birds as defined in 50 CFR by the United States Fish and Wildlife Service of the Department of the Interior, game birds and any other birds designated by the commission, including, but not limited to, grouse, partridge, pheasant, quail and wild turkey.",
+          "note": "The Game Code reaches a bird only if it is a wild bird, and that definition is a closed set of three: federally listed migratory birds, game birds, and any other birds the Commission designates. The African grey is none of them. The Commission has used its designation power on exactly one pet parrot, the monk parakeet at 58 Pa. Code § 137.1(a)(9), which shows it designates by name rather than by category. Parrots are not covered as a group.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10933,6 +11209,14 @@
           "cite": "Wis. Admin. Code ch. NR 40; Wis. Stat. § 169.04(4)(b)",
           "status": "legal",
           "note": "No invertebrate kept as a pet appears on NR 40, whose terrestrial invertebrate entries are forest and soil pests such as the emerald ash borer and jumping worm. Non-native species are outside captive wildlife licensing.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-34-102",
+          "cite": "34 Pa.C.S. § 102",
+          "quote": "Wild birds, wild mammals and facsimiles thereof, regardless of classification, whether protected or unprotected, including any part, product, egg or offspring thereof, or the dead body or parts thereof (excluding fossils), whether or not included in a manufactured product or in a processed food product.",
+          "note": "The giant African millipede is neither a bird nor a mammal, so it is not wildlife and the Game Commission has no authority over it. The Fish and Boat Commission's Chapter 79 covers reptiles and amphibians. Pennsylvania's two animal agencies divide the field between them and a terrestrial invertebrate falls in the gap, so no state possession rule applies.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11161,10 +11445,12 @@
           "verifiedOn": "2026-08-27"
         },
         "PA": {
-          "status": "unclear",
-          "sourceId": "pa-exotic-wildlife-permit",
-          "note": "Corn snake is not Pennsylvania native, so the Fish and Boat Commission's native-species possession-limit rule (58 Pa. Code Ch. 79) does not apply. What does apply is the Game Commission's Exotic Wildlife Possession Permit framework, and we could not find a clear species-level exemption list confirming small non-venomous colubrids fall outside it. Left unclear rather than guessed.",
-          "verifiedOn": "2026-08-27"
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "note": "Corrected. The previous entry left this unclear on the view that the Game Commission's exotic wildlife permit framework might reach snakes. It cannot: 34 Pa.C.S. § 102 defines wildlife as wild birds and wild mammals, so every reptile is outside the Game Code. The corn snake is also absent from the Fish and Boat Commission's native species list, Pennsylvania's native ratsnake being Pantherophis alleghaniensis, so Chapter 79 does not reach it either. Nothing regulates it.",
+          "verifiedOn": "2026-09-05",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth."
         },
         "SC": {
           "status": "conditional",
@@ -11444,10 +11730,10 @@
         "PA": {
           "status": "conditional",
           "sourceId": "pa-58-79-3",
-          "cite": "58 Pa. Code §§ 79.3, 79.4",
+          "cite": "58 Pa. Code §§ 79.3(h), 79.9, 79.10(a)",
           "quote": "Native species not listed in this subsection | No closed season | 1 | 1",
-          "note": "Milk snake is Pennsylvania native and is not one of the specifically-tabled species in Chapter 79, so it falls under the catch-all \"native species not listed\" line: a daily and possession limit of one. Critically, § 79.4 states a permit is required for continued possession \"regardless of the animal's origin,\" meaning this one-per-species cap is not just a wild-collection bag limit; it appears to bind a purchased or captive-bred milk snake too, since it is still a species native to Pennsylvania.",
-          "verifiedOn": "2026-08-27"
+          "note": "Note corrected. The one-per-species cap is right, but the previous entry read § 79.4 as a general permit requirement for continued possession regardless of origin. That section is a one-time grandfather permit for animals already held on January 1, 2007, and its application window closed on June 30, 2007. The rules that actually bind a milk snake today are § 79.10(a), which makes importing a native species from another jurisdiction unlawful, and § 79.9, which bars selling or buying a reptile taken from Pennsylvania and its progeny. Designated color morphs are exempt under § 79.12, which is how most captive-bred milk snakes are lawfully sold here.",
+          "verifiedOn": "2026-09-05"
         },
         "SC": {
           "status": "conditional",
@@ -11772,10 +12058,12 @@
           "verifiedOn": "2026-08-27"
         },
         "PA": {
-          "status": "unclear",
-          "sourceId": "pa-exotic-wildlife-permit",
-          "note": "Rosy boa is not Pennsylvania native, so the Fish and Boat Commission's native-species chapter (58 Pa. Code Ch. 79) does not apply. The Game Commission's Exotic Wildlife Possession Permit framework would be the relevant regime instead, and we could not confirm whether small non-venomous boids are exempted from it. Left unclear rather than guessed.",
-          "verifiedOn": "2026-08-27"
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "note": "Corrected on the same ground as the corn snake. The Game Commission's exotic wildlife framework cannot reach a snake, because 34 Pa.C.S. § 102 limits wildlife to wild birds and wild mammals. The rosy boa is a desert species of the American southwest and is absent from the Fish and Boat Commission's native species list, so Chapter 79 does not reach it. Nothing regulates it.",
+          "verifiedOn": "2026-09-05",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth."
         },
         "RI": {
           "status": "legal",
@@ -12029,6 +12317,14 @@
           "status": "restricted",
           "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
           "note": "Not listed anywhere in Table 3b-1, and the table's default is inverted: unlisted birds and mammals are 'presumed prohibited' and require a division assessment before possession will be authorized. So this is neither cleared nor expressly banned, it is an application to DWR with no published answer. The northern flying squirrel is also a Utah native, which brings the state's native wildlife rules to bear on a wild-caught animal independently of this table.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code §§ 137.1(a)(10), (11), 137.31(a)",
+          "quote": "It is unlawful for a person to possess live wildlife taken from a wild state within this Commonwealth",
+          "note": "The southern flying squirrel is a Pennsylvania native wild mammal, so it is wildlife under 34 Pa.C.S. § 102 and both routes into a home are closed. Taking one here is barred by § 137.31(a), whose only exception is a permit to hold up to five foxes for urine collection. Buying one from out of state is barred by § 137.1(a)(11), which prohibits possessing wildlife captive bred in another state, and § 137.1(a)(10) covers wildlife taken alive from the wild. Unlike the small exotic mammals, this one does not rest on an agency reading of an open-ended definition. A native squirrel is squarely what the Game Code was written for.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -12287,6 +12583,14 @@
           "cite": "Wis. Stat. § 169.04",
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The ackie monitor is Australian and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -12579,11 +12883,12 @@
           "verifiedOn": "2026-08-27"
         },
         "PA": {
-          "status": "legal",
-          "sourceId": "pa-58-79",
-          "cite": "58 Pa. Code Ch. 79",
-          "note": "Pennsylvania Fish and Boat Commission rules reach only PA-native species and only regulate taking them from the wild, which requires a fishing license. Keeping a captive-bred or pet-store garter snake isn't separately licensed.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "pa-58-79-3",
+          "cite": "58 Pa. Code §§ 79.3(h), 79.9, 79.10(a)",
+          "note": "Corrected from legal. The common garter snake is Pennsylvania native and is not tabled by name, so the catch-all line caps possession at one animal. Two further rules bind that the previous entry missed. § 79.10(a) makes it unlawful to transport or import a native species into Pennsylvania from another jurisdiction, so an out-of-state garter snake is not an option, and § 79.9 bars selling or buying a reptile taken from Pennsylvania and its progeny. The designated color morphs at § 79.12 are the exception, exempt from the possession limit and sellable by registered propagators. Note that two Pennsylvania gartersnakes, the short-headed gartersnake and the eastern ribbonsnake, are tabled separately at zero.",
+          "verifiedOn": "2026-09-05",
+          "quote": "Native species not listed in this subsection | No closed season | 1 | 1"
         },
         "RI": {
           "status": "banned",
@@ -13320,10 +13625,11 @@
         },
         "PA": {
           "status": "legal",
-          "sourceId": "pa-2961",
-          "cite": "34 Pa.C.S. § 2961",
-          "note": "Pennsylvania's exotic wildlife definition (bears, coyotes, lions, tigers, leopards, jaguars, cheetahs, cougars, wolves and their crossbreeds) does not reach birds at all; no cockatoo-specific rule was found. Corrected from an earlier draft citation (34 Pa.C.S. section 102) that does not exist as described; the real exotic-wildlife definition is section 2961, already used elsewhere in this dataset.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "pa-34-102",
+          "cite": "34 Pa.C.S. § 102",
+          "note": "Conclusion unchanged, reasoning corrected. The previous entry said the Game Code does not reach birds at all, which is wrong: 34 Pa.C.S. § 102 defines wildlife as wild birds and wild mammals, and the Commission has designated the monk parakeet at 58 Pa. Code § 137.1(a)(9). The reason a cockatoo is lawful is narrower. Wild birds is a closed set of federally listed migratory birds, game birds, and birds the Commission designates, and no cockatoo is any of the three.",
+          "verifiedOn": "2026-09-05",
+          "quote": "All migratory birds as defined in 50 CFR by the United States Fish and Wildlife Service of the Department of the Interior, game birds and any other birds designated by the commission, including, but not limited to, grouse, partridge, pheasant, quail and wild turkey."
         },
         "RI": {
           "status": "legal",
@@ -13665,6 +13971,14 @@
           "cite": "Wis. Stat. § 169.04",
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
+          "note": "The red-footed tortoise is South American and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
         }
       }
