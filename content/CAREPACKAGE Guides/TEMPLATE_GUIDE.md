@@ -757,6 +757,45 @@ with internal parasites and the fecal test, mouth rot, tail rot and toe loss, ey
 problems, and burns and prolapse. `reptile-emergency-plan-guide.mdx` covers the power
 outage, travel, and pet-sitter pages for every reptile package, not just this one.
 
+**5 September 2026: what the Sep 4 cross-species articles changed here, at 3.1.** A
+closed block is not a finished package. The batch postdates this block, and the Ball
+Python block names this package as sharing its stool and urates row, so the pages
+those articles touch were audited. Four things moved. Quarantine went from 60 to 90
+days to Merck's 3 to 6 months on pages 18 and 33, the same correction made in three
+other packages. The discolored-urate row on page 21 offered "excess calcium being
+passed" as a cause, which is a mechanism error, since urates are uric acid from
+protein digestion; it now gives dehydration, then a urate or kidney problem, then
+gout. The stool row flagging undigested insect parts now distinguishes whole parts
+from the chitin fragments that are normal in an insectivore. Page 7 narrowed its
+ceramic-emitter controller advice from "on/off or pulse" to "pulse proportional or
+dimming" and gained the daily second thermometer that catches a stuck thermostat.
+The Salmonella callout was rewritten with the rest of the set.
+
+**One conflict is unresolved, and it is a safety instruction.** Page 7 puts the
+thermostat probe **beside** the basking platform, not on it.
+`reptile-heating-thermostats-guide.mdx` says the probe belongs **on** the basking
+spot itself for an overhead source. Ball Python page 7 and Leopard Gecko page 7 both
+agree with the article, which makes this package the outlier. It was researched
+rather than guessed: VCA's bearded dragon housing page covers thermometer placement
+and thermostat control but gives no probe position; Merck's husbandry page requires
+thermostat control and says nothing about probes; LafeberVet gives thermometer
+placement only, and its burns article is member-gated. No named veterinary source
+states a thermostat probe position for an overhead basking lamp. The package holds
+its figure and page 34 carries the disagreement openly. **Settle this first in v4 if
+a veterinary source appears.**
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item:
+
+- **The article's basking-surface probe claim is an extension, not a direct source.**
+  `reptile-heating-thermostats-guide.mdx` states that the probe belongs on "the
+  basking spot itself for an overhead source", and the strongest backing it claims is
+  that this "matches VCA's snake housing guidance on thermometers generally, placing
+  them at the animal's level rather than higher in the airspace". The article is
+  honest about that in its own text, so this is not an error. But it is a thermometer
+  guideline extended to a thermostat probe, and it is not strong enough to overturn a
+  package that says otherwise. **Worth either finding a source that states it directly
+  or softening the article's wording to match what it can actually support.**
+
 ### Ball Python 2.1, t3 (Sep 2026)
 
 Already covered, do not rewrite: pages 28 and 29 from `reptile-emergency-plan-guide.mdx`,
