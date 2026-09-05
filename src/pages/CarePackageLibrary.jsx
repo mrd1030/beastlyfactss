@@ -6,6 +6,7 @@ import { Download, Loader2, Mail, LogOut, AlertCircle } from 'lucide-react';
 import { supabase, isSupabaseConfigured } from '@/api/supabaseClient';
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
 import CarePackagesNav from '@/components/shared/CarePackagesNav';
+import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/TurnstileWidget';
 
 // /care-packages/library/
 //
@@ -38,6 +39,13 @@ export default function CarePackageLibrary() {
   const [working, setWorking] = useState(false);
   const [notice, setNotice] = useState('');
   const [error, setError] = useState('');
+
+  // Turnstile. Both stay inert until VITE_TURNSTILE_SITE_KEY is set, so this
+  // ships safely before the keys exist. captchaNonce is bumped after every
+  // send to force a fresh token, since a Turnstile token is single use and
+  // reusing one is rejected.
+  const [captchaToken, setCaptchaToken] = useState('');
+  const [captchaNonce, setCaptchaNonce] = useState(0);
 
   const [purchases, setPurchases] = useState([]);
   const [loadingPurchases, setLoadingPurchases] = useState(false);
@@ -103,6 +111,15 @@ export default function CarePackageLibrary() {
     e.preventDefault();
     setError('');
     setNotice('');
+
+    // Caught here rather than at Supabase so the buyer gets a sentence about
+    // the box in front of them instead of a raw "captcha protection: request
+    // disallowed" from the API.
+    if (isTurnstileEnabled && !captchaToken) {
+      setError('Tick the verification box below, then try again.');
+      return;
+    }
+
     setWorking(true);
     const { error: otpError } = await supabase.auth.signInWithOtp({
       email: email.trim(),
@@ -112,9 +129,18 @@ export default function CarePackageLibrary() {
         // account here grants nothing except reading your own purchase rows.
         shouldCreateUser: true,
         emailRedirectTo: `${window.location.origin}/care-packages/library/`,
+        // Spread rather than always set: with no site key configured there is
+        // no token, and sending captchaToken: '' to a project that has CAPTCHA
+        // switched off is a request Supabase rejects outright.
+        ...(captchaToken ? { captchaToken } : {}),
       },
     });
     setWorking(false);
+
+    // Burn the token whatever happened. It cannot be reused, so a buyer who
+    // mistypes their address and corrects it needs a new one either way.
+    setCaptchaToken('');
+    setCaptchaNonce(n => n + 1);
     if (otpError) {
       // Supabase's raw "email rate limit exceeded" is true but unhelpful to a
       // buyer, who reads it as having done something wrong. The limit is on the
@@ -295,6 +321,12 @@ export default function CarePackageLibrary() {
                 {codeSent ? 'Send again' : 'Email me a sign-in link'}
               </button>
             </form>
+
+            <TurnstileWidget
+              onToken={setCaptchaToken}
+              resetSignal={captchaNonce}
+              className="mt-3"
+            />
 
             {codeSent && (
               <form onSubmit={verifyCode} className="mt-4 pt-4 border-t border-border">

@@ -201,6 +201,34 @@ Stripe's records stay, which is both required for tax and what makes this
 reversible: the payment proves the purchase, so the manual grant can put the
 row back if they change their mind.
 
+### Stopping the sign-in form being an open email relay
+
+The library form emails whatever address is typed into it, and the Supabase
+publishable key that drives it ships in the bundle, so `/auth/v1/otp` is
+reachable with or without our page. A check in the form would be theatre: the
+abuse path skips the form entirely.
+
+Cloudflare Turnstile, configured in Supabase, is the actual control. With
+CAPTCHA on, Supabase rejects any OTP request without a valid token, whoever
+sends it and from wherever. The browser half is already written and shipped
+(`src/components/shared/TurnstileWidget.jsx`), and it renders nothing until a
+site key exists, so nothing changes until you finish the setup.
+
+**Order matters. Doing 3 before 2 breaks every sign-in**, because Supabase
+starts demanding a token the page is not yet sending:
+
+1. Cloudflare -> Turnstile -> add a widget for `beastlyfacts.com`. Keep the
+   site key and the secret key.
+2. Set `VITE_TURNSTILE_SITE_KEY` in Cloudflare Pages and **redeploy**. It is
+   compiled into the bundle at build time, so a variable added without a
+   rebuild does nothing. After this the widget appears and sign-in starts
+   sending a token, which a project with CAPTCHA still off simply ignores.
+3. Supabase -> Authentication -> Attack Protection -> enable CAPTCHA, provider
+   Turnstile, paste the secret key.
+
+Until step 3, the only thing capping abuse is the Supabase Auth per-hour send
+limit, so do not raise that limit before Turnstile is on.
+
 ### Do NOT turn off "Confirm email"
 
 Authentication -> Sign In / Providers has a **Confirm email** toggle, and it is
@@ -231,6 +259,7 @@ Preview too if previews are ever re-enabled).
 | `STRIPE_WEBHOOK_SECRET` | Secret | Signing secret of the endpoint above, `whsec_...` |
 | `SUPABASE_URL` | Plaintext | `https://ipqqeofzlwvfnunduuru.supabase.co` |
 | `SUPABASE_SERVICE_ROLE_KEY` | Secret | Supabase secret key, `sb_secret_...` |
+| `VITE_TURNSTILE_SITE_KEY` | Plaintext | Cloudflare Turnstile site key. Optional, see below. Public by design, and `VITE_` on purpose: this one IS meant to be in the bundle. |
 
 Two things about the service role key. It bypasses RLS entirely, so it is the
 one value in this system that must never reach the browser. It is read only by
