@@ -1041,18 +1041,38 @@ at the depth pages 13 and 14 needed.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Household pesticides and invertebrate pets | 26 | Cross-species (invertebrates) | Nothing anywhere, and it is one of the few ways a well-kept spider dies suddenly with no warning. Bug spray, plug-in insect killers, flea and tick treatment on a pet in the same room, ant powder, and wild-caught feeders. Serves tarantula, scorpion, mantis, millipede, and every future invertebrate |
-| Rehousing an invertebrate | 18, 19 | Cross-species (invertebrates) | Nothing. The catch-cup-and-card method, working inside a larger tub, low to the ground, what to do when it bolts, and never during a molt. Two pages here because the preparation and the method are separate jobs |
-| Urticating hair first aid | 17 | Cross-species (New World species) | `tarantula-handling-guide.mdx` explains the risk and cites the eye-injury literature but gives no first aid. Tape rather than washing for skin, flush and same-day attention for eyes, ventilation and a mask for airway |
+| Household pesticides and invertebrate pets | 26 | Cross-species (invertebrates) | **CLOSED Sep 5 2026 by `invertebrate-pesticide-hazards-guide`.** The package already had the five household routes right. It gained total release foggers, which it had missed, with the EPA point that every pet leaves a treated space and a tank cannot, and the article's own caveat that the toxicology is documented in insects and extended to arachnids on shared nerve chemistry. Original row follows. Nothing anywhere, and it is one of the few ways a well-kept spider dies suddenly with no warning. Bug spray, plug-in insect killers, flea and tick treatment on a pet in the same room, ant powder, and wild-caught feeders. Serves tarantula, scorpion, mantis, millipede, and every future invertebrate |
+| Rehousing an invertebrate | 18, 19 | Cross-species (invertebrates) | **CLOSED Sep 5 2026 by `invertebrate-rehousing-guide`**, which independently split the job the same way the package did, preparation on one page and method on the other. One correction: step 4 tipped the spider out where the documented method slides the card and lets it walk. An arboreal variant and a spare cup were added. Original row follows. Nothing. The catch-cup-and-card method, working inside a larger tub, low to the ground, what to do when it bolts, and never during a molt. Two pages here because the preparation and the method are separate jobs |
+| Urticating hair first aid | 17 | Cross-species (New World species) | **CLOSED Sep 5 2026 by `invertebrate-rehousing-guide`**, which carries the first aid rather than a separate article: worth noting, since this row was logged expecting its own URL. It caught the package's worst error: page 17 said to flush a hair from the eye, and no clinical source describes a rinse for an embedded barbed hair. Corrected to shield the eye and get same-day ophthalmology, and the airway row gained the emergency trigger it lacked. Original row follows. `tarantula-handling-guide.mdx` explains the risk and cites the eye-injury literature but gives no first aid. Tape rather than washing for skin, flush and same-day attention for eyes, ventilation and a mask for airway |
 | Sexing a tarantula from the exuvia | 27 | Tarantula | Nothing. The spermatheca in the shed skin is the only reliable home method, and it decides whether the animal is a 5-year pet or a 20-year one, which makes it more consequential here than sexing is for most species |
 | Enclosure type by lifestyle | 7 | Tarantula | `tarantula-tank-setup-guide.mdx` says most pet species are terrestrial and stops there. No terrestrial versus fossorial versus arboreal table, which is the decision every other husbandry choice depends on, and getting it wrong is the commonest genuine welfare failure in the hobby |
 | Water, and reading the abdomen | 9 | Tarantula | `tarantula-health-issues-guide.mdx` covers dehydration as a condition. Nothing frames the water dish as the single most important object in the enclosure, and there is no reference for reading the abdomen from plump through premolt to death curl |
-| Invertebrate power outages, travel &amp; shipping | 35, 36 | Cross-species (invertebrates) | Nothing. Mostly reassuring, which is worth writing down: a tarantula is fine alone for two weeks. The transport and shipping half is where the real risk is |
+| Invertebrate power outages, travel &amp; shipping | 35, 36 | Cross-species (invertebrates) | **CLOSED Sep 5 2026 by `invertebrate-emergency-travel-shipping-guide`, and it withdrew this row's own headline claim.** The article declines to print a day count and explains why: no source will stand behind one, and the University of Illinois page has keepers refilling the water dish daily in a normal week. The package's trip table lost its 2 week, 2 to 4 week and over-a-month rows and was rebuilt around water as the constraint. Page 36 also gained the USPS prohibition on mailing spiders, which a package with a full legality page should always have carried. Original row follows. Nothing. Mostly reassuring, which is worth writing down: a tarantula is fine alone for two weeks. The transport and shipping half is where the real risk is |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the enclosure height ceiling and the 3&times;-leg-span floor rule on page 6, the
-substrate depths by type on page 7, the abdomen reference table on page 9, the premolt
-sign list and hardening windows on pages 13 and 14, and the sexing method on page 27.
+**Numbers with no site source at all**, updated Sep 5 2026 after the cross-check:
+
+- **Still package-only:** the enclosure height ceiling and the 3&times;-leg-span floor rule
+  on page 6, the substrate depths by type on page 7, the abdomen reference table on page 9,
+  and the sexing method on page 27. None of the four species-only rows above was in the
+  September batch.
+- **Now carried:** the premolt sign list and the hardening windows on pages 13 and 14 agree
+  with `invertebrate-molting-guide`, which was already live when this package was built and
+  has not changed since.
+- **Removed rather than sourced:** the trip-length day counts on page 36, and the eye-flush
+  step on page 17. Page 43 now carries a callout naming both, because a figure missing on
+  purpose reads like an oversight otherwise.
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item, and it predates
+this cross-check rather than coming out of it:
+
+- **Five of this package's sources are hobbyist sites.** The Tarantula Collective, Tom's Big
+  Spiders, Giant Spiders and Tarantula Heaven carry the enclosure, substrate, feeding and
+  refusal figures, and Vet Verified carries Section 03. That is the same class of source the
+  September 2026 article commit says is being removed from 21 site articles on a follow-up
+  branch. They were left in place, because replacing them means re-sourcing the figures
+  behind them, which is a re-build rather than a cross-check. **It is the next thing this
+  package needs**, and it is the reason the invertebrate set still has the thinnest
+  veterinary backing in the series: there is very little veterinary literature to draw on.
 
 **Source drift found while building:** none. The tarantula guides agree with each other,
 which is worth noting because they are also unusually honest about where the underlying
