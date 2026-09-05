@@ -1,0 +1,179 @@
+# Oregon: two closed lists, one for wildlife and one for invertebrates
+
+sourceId: or-609-305 / or-496-004 / or-635-056-0020 / or-635-056-0050 / or-635-056-0060 / or-635-056-0130 / or-603-052-1320
+jurisdiction: OR
+url: https://secure.sos.state.or.us/oard/view.action?ruleNumber=<rule>
+     https://oregon.public.law/statutes/ors_496.004
+     https://oregon.public.law/statutes/ors_609.305
+fetched: 2026-09-05
+fetch notes: the Oregon Secretary of State's OARD serves whole rules from
+  view.action?ruleNumber=635-056-0060 with plain curl. displayDivisionRules.action returns an
+  almost empty page, so enumerate rule numbers by probing view.action instead; a rule that does
+  not exist answers "<number> not found". Statutes are on oregonlegislature.gov but
+  oregon.public.law reproduces them cleanly and is what the map cites.
+
+OREGON IS A CLOSED-LIST STATE TWICE OVER, and that is the thing to understand before anything
+else. Two different agencies run two different allow-lists, and an animal absent from the
+relevant one is barred rather than unregulated:
+
+  OAR 635-056-0130(1)  ODFW: "For species that are not listed in these rules, no person may
+                       possess, import, purchase, sell, exchange, or offer to purchase, sell or
+                       exchange the species in Oregon."
+  OAR 603-052-1320(3)  ODA: "Live invertebrates not on the list of approved invertebrates in any
+                       life stage may not be imported, possessed, sold, purchased, exchanged,
+                       transported, or released in the state unless a permit is first obtained."
+
+WHICH LAW ANSWERS WHICH ANIMAL:
+  ORS 609.305 (Agriculture)   cats, primates, non-wolf canids, bears, crocodilians. NOTHING ELSE.
+                              Reading a rodent or a reptile question against this statute is the
+                              mistake that put the prairie dog and the capybara on the wrong side
+                              of this map for a month.
+  OAR 635-056 (ODFW)          every other vertebrate. ORS 496.004(19) makes reptiles and
+                              amphibians wildlife by statute; for mammals and birds the
+                              commission says what is wild, and 635-056-0020 is that list.
+  OAR 603-052-1320 (ODA)      terrestrial invertebrates, on plant-pest authority.
+
+THE NOT-WILD LIST AT 635-056-0020 has 32 entries and is the strongest position an animal can
+hold here: guinea pig, gerbil, chinchilla, ferret, European rabbit, domestic cat breeds and all
+Psittaciformes are declared not wild and drop out of the wildlife rules entirely.
+
+THE HAMSTER TRAP. That list reads "(14) Common Hamster — Cricetus cricetus", which is the
+European common hamster, a wild burrowing rodent nobody keeps. The pet Syrian hamster,
+Mesocricetus auratus, appears NOWHERE in division 56: not not-wild, not noncontrolled (which
+clears Phodopus dwarf hamsters), not prohibited (which names Calomyscus and Cricetulus). Under
+0130(1) that is a bar. Recorded `unclear` on the map as an evident drafting slip.
+
+WHAT OREGON PROHIBITS THAT OTHER STATES DO NOT. Check 635-056-0050 before assuming an ordinary
+pet is fine:
+  prairie dogs (Cynomys, all species and hybrids)      capybara (Hydrochaeris hydrochaeris)
+  southern flying squirrel (Glaucomys volans)          snapping turtle (Chelydridae, all)
+  tiger salamander (Ambystoma tigrinum, all nonnative subspecies)
+  pond sliders (Pseudemys and Trachemys, all species and hybrids)  <- red-eared slider
+
+TAXONOMY. The noncontrolled list uses the taxonomy current when each entry was written. Tegus
+are listed as Tupinambis (Salvator since 2012), geckos as "Gekkonidae and Eublepharidae" (which
+is pre-2008 and is how the crested gecko, now Diplodactylidae, is covered), anoles only via
+"Iguanid lizards -- Iguanaidae", whose five excepted genera are all former Iguanidae sensu lato,
+and the California kingsnake only via Lampropeltis getula, from which it was split in 2009.
+
+THE EXOTIC ANIMAL PERMIT IS CLOSED. ORS 609.351 opened applications for 90 days after
+1 January 2010 and never reopened them, so serval and fennec fox are bans with a lifetime
+allowance, not permit regimes.
+
+=========================================================================
+ORS 496.004(19) and ORS 609.305, 609.341, 609.351
+=========================================================================
+
+As used in ORS 609.305 (“Exotic animal” defined) to 609.355 (Issuance of permit upon lapse of federal license or registration) and 609.992 (Penalties for ORS 609.341) , “exotic animal” means:
+(1)
+Any member of the family Felidae not indigenous to Oregon, except the species Felis catus (domestic cat);
+(2)
+Any nonhuman primate;
+(3)
+Any nonwolf member of the family Canidae not indigenous to Oregon, except the species Canis familiaris (domestic dog);
+(4)
+Any bear, except the black bear (Ursus americanus); and
+(5)
+Any member of the order Crocodylia. [1985 c.437 §2; 1999 c.699 §3; 2009 c.492 §1]
+
+(1)
+A person may not keep an exotic animal in this state unless the person possesses a valid State Department of Agriculture permit for that animal issued prior to January 1, 2010, or issued as provided in ORS 609.351 (Issuance and renewal of exotic animal permit) .
+(2)
+Except as provided in subsection (4) of this section, a person keeping an exotic animal in this state may not breed that animal.
+(3)
+A person may not keep an exotic animal in this state for more than 30 days after the expiration, revocation or suspension of a permit.
+(4)
+Intentionally left blank —Ed.
+(a)
+A person may breed a small exotic feline if the person:
+(A)
+Is exempt from the requirements for a permit under ORS 609.345 (Exceptions to permit requirement) ; or
+(B)
+Breeds a small exotic feline with a member of the species Felis catus (domestic cat), and:
+(i)
+The person has a permit issued by the State Department of Agriculture under ORS 609.351 (Issuance and renewal of exotic animal permit) ; and
+(ii)
+The person provides written documentation, including the person’s business license, that the person bred the animals for the purpose of retail sale of the offspring.
+(b)
+As used in this subsection, “small exotic feline” means a member of the family Felidae, except the species Felis catus (domestic cat), that weighs 50 pounds or less when fully mature. [Formerly 609.319]
+
+(1)
+The State Department of Agriculture may issue a permit to a person to keep an exotic animal if the person applies for the permit within 90 days after January 1, 2010.
+(2)
+The department may, within one year of January 1, 2010, issue a permit to a person to possess an exotic animal if the person submits satisfactory proof to the department that the person possessed the exotic animal prior to January 1, 2010, and that the person meets requirements of rules adopted by the department under ORS 609.335 (Department rules regulating keeping of exotic animals) .
+(3)
+The department may charge a fee to issue or renew a permit under this section. The fee may not exceed $100. Each permit or renewal of a permit is valid for two years. [2009 c.492 §8]
+
+=========================================================================
+OAR 635-056-0020  Animals Exempt from These Rules
+=========================================================================
+635-056-0020
+Animals Exempt from These Rules
+Pursuant to the definition of "wildlife," the following species are not subject to these rules because they are not "wild": SPECIES — SCIENTIFIC NAME
+(1) Alpaca, Guanaco, Llama — Lama glama.
+(2) Ass, Burro, Donkey — Equus asinus.
+(3) Bison — Bison bison.
+(4) Camel — Camelus bactrianus and C. dromedarius.
+(5) Cat (all domestic breeds) — Felis catus.
+(6) Cattle and Yak — Bos species.
+(7) Chinchilla — Chinchilla laniger.
+(8) Dog (all domestic breeds) — Canis familiaris.
+(9) European Rabbit — Oryctolagus cuniculus.
+(10) Ferret (European polecat) — Mustela putorius.
+(11) Gerbil (Mongolian Jird) — Meriones unguiculatus.
+(12) Goat — Capra hircus.
+(13) Guinea pig — Cavia porcellus.
+(14) Common Hamster — Cricetus cricetus.
+(15) Horse — Equus caballus.
+(16) Mouse (House mouse) — Mus musculus.
+(17) Mule and Hinny — Equus asinus x E. caballus.
+(18) Rat — Rattus norvegicus and R. rattus.
+(19) Sheep — Ovis aries and hybrids of O. aries with O. aires orientalis, hybrids of O. aries with Ammotragus lervia, and hybrids of O. aries with Pseudois nayaur.
+(20) Swine — Sus scrofa domestica (includes pot-bellied pigs)
+(21) Vicuña — Vicugna vicugna.
+(22) Cassowary — Casuarius species.
+(23) Chicken — Gallus gallus.
+(24) Ducks and Geese (morphologically distinct from wild waterfowl; except Egyptian geese and Mute swans).
+(25) Emu — Dromaius novaehollandiae.
+(26) Guinea fowl — Numida meleagris.
+(27) Ostrich — Struthio camelus.
+(28) Parrots, Parakeets, Lories, and Cockatoos — Psittaciforme (All species).
+(29) Peafowl — Pavo cristatus.
+(30) Pigeon or Rock dove — Columba livia.
+(31) Rhea — Rhea americana and R. pennata.
+(32) Turkey (morphologically distinct from wild turkey) — Meleagris gallopavo.
+
+=========================================================================
+OAR 635-056-0130  Classification Requests (the default bar)
+=========================================================================
+635-056-0130
+Classification Requests
+(1) For species that are not listed in these rules, no person may possess, import, purchase, sell, exchange, or offer to purchase, sell or exchange the species in Oregon.
+(2) Species may be classified as Prohibited, Controlled or Noncontrolled. The classification may vary by activity (e.g., possession allowed, but sale prohibited). If a specific nonnative species, subspecies or hybrid is not classified as either Prohibited, Controlled or Noncontrolled, or is classified but not for a particular activity (e.g., import, sale, possession, transport), any person may either:
+(a) Petition the commission to classify the species or allow the particular activity pursuant to OAR 137-001-0070; or
+(b) Request the director to classify the species as Noncontrolled, pursuant to OAR 635-056-0140.
+(c) Any person petitioning or requesting classification shall provide information illustrating that the requested action will not harm, nor has the potential to harm, any native species or its habitat. The information should be scientific in nature, in written form and include an appropriate literature cited section.
+(3) In evaluating a request to classify a species, subspecies or hybrid, the commission may consider the following factors, when appropriate:
+(a) Potential to introduce disease or parasites to native wildlife populations;
+(b) Potential for interbreeding or hybridizing with native wildlife;
+(c) Possible competition with native wildlife for habitat, food, water, etc.;
+(d) Impacts on the habitat of native wildlife;
+(e) Potential predation on native wildlife;
+(f) Feasibility of capturing and eradicating escaped animals;
+(g) Cost of capturing and eradicating escaped animals; or
+(h) Any other factor or consideration the commission considers necessary to protect and maintain native wildlife.
+(i) How is the species categorized in “The IUCN Red List of Threatened Species?
+(j) Is the species commercially propagated? Unknown, rarely, moderate, common
+(4) The director may appoint a Wildlife Integrity Review Panel to consider the information presented by the petitioner as appropriate. The director may, in appointing the panel, consider scientific expertise, professional background, and other qualifications needed to make sound decisions. The director may seek commission recommendations in making Wildlife Integrity Review Panel appointments. If convened, the panel shall make a recommendation to the commission on the classification of the species, subspecies or hybrid and what conditions, if any, should apply to the proposed activity (e.g., import, sale, possession, transfer).
+(5) The director may call for scientific based studies or other verifiable information useful in placing the requested species in the appropriate classification category.
+
+=========================================================================
+OAR 635-056-0150  Grandfathering
+=========================================================================
+635-056-0150
+Grandfathering
+(1) A person who possessed a Prohibited wildlife species prior to the time the commission places the species on the Prohibited list, or an unclassified species if legally obtained prior to January 1, 2000, may continue to hold the animal(s) for the life of such animal(s), provided:
+(a) The person has proof of legal possession prior to the listing (e.g., sales receipt, import permit from Oregon Department of Agriculture.)
+(b) The animal(s) and any offspring are not released, transported, imported, sold, purchased, exchanged, offered for sale, purchase or exchange, or otherwise transferred within the state; and
+(c) The person abides by all regulations outlined in OAR 635-056-0110.
+(2) A Prohibited wildlife species legally held in compliance with the requirements of subsection (1) of this rule may be sold or exchanged provided that the animal is directly and permanently transported out of Oregon

@@ -41,6 +41,9 @@ about this species", not to claim a new verification date.
 | `IL-il-admin-code.txt` | Illinois Parts 885 (herptiles), 1010 (endangered and threatened) and 805 (injurious species) |
 | `MN-mn-statutes.txt` | Minnesota's five operative sections, with the 2021 reptile rule and the hole in it flagged |
 | `MN-mn-definitions-and-agency.txt` | Minnesota's definitions, its invasive species rule, and the two DNR pages that read them |
+| `OR-or-framework.txt` | Oregon's two closed lists explained, plus the not-wild list, the default bar and the exotic animal statute |
+| `OR-or-species-lists.txt` | Oregon's Prohibited, Noncontrolled and Controlled wildlife lists in full |
+| `OR-or-invertebrates.txt` | Oregon's approved invertebrate list, the rule that answers a tarantula or roach question there |
 
 ## Reading the awkward ones
 
@@ -55,6 +58,12 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   as *Geochelone*, the crested gecko would be *Rhacodactylus*, and the bearded dragon is
   printed as *vittaceps* for *vitticeps*. Search the genus and the synonym, not just the
   current name.
+- **The Oregon files** describe a state where absence from a list is a ban, not silence, and
+  where two agencies run two separate closed lists. Before recording anything for Oregon, check
+  which law reaches the animal: ORS 609.305 covers only cats, primates, non-wolf canids, bears
+  and crocodilians, OAR 635-056 covers every other vertebrate, and OAR 603-052-1320 covers
+  terrestrial invertebrates. Reading a rodent against the exotic animal statute is how the
+  prairie dog and the capybara sat wrong on this map.
 - **`MN-mn-statutes.txt`** is the state where the definitions matter more than the rule.
   `97A.015` subd. 55 makes any reptile a wild animal regardless of origin and subd. 39 makes
   snakes, lizards, salamanders and turtles protected as categories, so the pet rule at
@@ -91,6 +100,7 @@ not on the sites, so a person with a browser can open all of them.
 | `www.sos.state.co.us` | Works with curl, but PDF links are not in the HTML | Scrape `OpenRuleWindow('<id>'` off the rule page, then fetch `/CCR/GenerateRulePdf.do?ruleVersionId=<id>` |
 | `drive.google.com` | CPW publishes its species lists here | Fetch `https://drive.google.com/uc?export=download&id=<id>`; the ids are in the accordion markup, not in any `.pdf` link |
 | `revisor.mn.gov` | Works with plain curl, occasional TLS handshake failure on the first try | Retry once. Statutes at `/statutes/cite/<section>`, rules at `/rules/<part>/`; a bare chapter number gives only the table of parts |
+| `secure.sos.state.or.us` | Rules serve fine from `view.action?ruleNumber=<rule>`; `displayDivisionRules.action` returns a near-empty page | Probe rule numbers one at a time; a missing rule answers "not found" |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
 
 When the official host is unreachable, cite the official URL anyway, verify the wording

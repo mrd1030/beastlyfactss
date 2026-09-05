@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 10 (AZ, CO, DE, HI, IL, MI, MN, NM, NV, PA) |
-| Unread cells | 705 |
-| Cached primary sources | 28 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 11 (AZ, CO, DE, HI, IL, MI, MN, NM, NV, OR, PA) |
+| Unread cells | 668 |
+| Cached primary sources | 31 files in `docs/legal-sources` |
 
-`main` carries everything through Delaware and is deployed. Colorado, Illinois and Minnesota
-sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main
-once it lands.
+`main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota and
+Oregon sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch
+from main once it lands.
 
 ## The loop
 
@@ -27,7 +27,7 @@ One jurisdiction per sitting. It takes a while and that is fine.
    that explains rather than asserts, and `verifiedOn` set to today in US Eastern.
 4. Re-run `legal-gaps.mjs`, then `node scripts/check-legal-map-sync.mjs`. That script
    cross-checks every legal guide against the map and will catch guides you just made
-   wrong. It sits at 16 pre-existing errors; anything above that is yours.
+   wrong. It sits at 15 pre-existing errors; anything above that is yours.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
@@ -60,6 +60,13 @@ that you are reading the current one before you quote a cite that has been on th
 month. Two guides had already picked up the change without the map being updated, which is the
 same signal from the other direction.
 
+**The wrong statute, read correctly.** Oregon's prairie dog and capybara sat on this map as
+unrestricted, with accurate notes: rodents really are outside ORS 609.305, which reaches only
+cats, primates, non-wolf canids, bears and crocodilians. The reasoning was sound and the law was
+the wrong one. Both animals are named on ODFW's prohibited species list, which is where a rodent
+question in Oregon is actually answered. When an entry's note explains why some statute does not
+reach an animal, that is the moment to ask which statute does.
+
 **A rule with nothing behind it.** Minnesota's 2021 pet reptile law says the commissioner
 "must prescribe conditions and may issue permits" and then makes lawful possession turn on the
 animal having come from a permitted breeder. There is no such permit on the DNR's permits page,
@@ -81,11 +88,11 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| OR | Oregon | 37 | 2 sources on file |
 | CT | Connecticut | 36 | 2 sources on file |
 | MD | Maryland | 35 | 4 sources on file |
 | TN | Tennessee | 35 | 1 source on file |
 | TX | Texas | 35 | 3 sources on file |
+| MA | Massachusetts | 34 | 3 sources on file |
 
 ## Loose ends
 
@@ -113,6 +120,11 @@ state that codifies by version. And confirm the citation itself still resolves.
   885.20(d) writes the same cap as reaching native taxa only. Every Illinois non-native reptile
   entry carries this in its note rather than resolving it, because the statute and the rule
   genuinely do not agree and IDNR has not published a reading either way.
+- **Oregon's hamster is `unclear` on what looks like a drafting slip.** The not-wild list at
+  OAR 635-056-0020(14) reads "Common Hamster — Cricetus cricetus", the wild European species,
+  and the pet Syrian hamster, *Mesocricetus auratus*, appears nowhere in the division. In a
+  closed-list state that is a bar. The fix would be one binomial, and it is worth re-checking on
+  a later pass in case ODFW has corrected it.
 - **The Minnesota rabbit is recorded `unclear`, and it is the sharpest version of this problem
   on the map.** Minn. R. 6216.0250 designates *Oryctolagus cuniculus* a prohibited invasive
   species with no strain qualifier, § 84D.05 bars possession outright, and the DNR's own page
@@ -142,8 +154,8 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Then guinea pig and gerbil at 44, quaker parakeet and ackie monitor at 43, degu and red-footed
-tortoise at 42, green iguana at 41.
+Then guinea pig and gerbil at 45, quaker parakeet and ackie monitor at 44, degu and red-footed
+tortoise at 43, green iguana at 42.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -180,6 +192,12 @@ available only for educational programmes. Read the heading and Illinois restric
 Varanus; read the definition and it restricts two, leaving the savannah, Nile and ackie monitors
 entirely unregulated. Any state that names a family and then narrows it in the same sentence
 needs the definition read before the list.
+
+Oregon is the sixth Bengal answer and the most permissive: no hybrid clause anywhere in the
+statute, domestic cat breeds declared not wild, and ORS 609.341(4)(a)(B) expressly contemplating
+breeding a small exotic feline with a domestic cat for retail sale of the offspring. A state
+that legislates about the breeding programme and says nothing about the kittens has answered the
+question.
 
 Minnesota is the fifth Bengal answer and the first one that is a contradiction rather than a
 rule: the carve-out for registered domestic breeds and the all-generations hybrid sentence are

@@ -1,0 +1,594 @@
+# Oregon OAR 635-056-0050 Prohibited Species and 635-056-0060 Noncontrolled Species
+
+sourceId: or-635-056-0050 / or-635-056-0060
+jurisdiction: OR
+url: https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-056-0050
+     https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-056-0060
+fetched: 2026-09-05
+fetch notes: see the header of OR-or-framework.txt. 0050 was last amended 19 August 2025.
+
+The two lists in full. Read them together with OAR 635-056-0130(1): an animal on neither is
+barred, so absence is never the same as silence in Oregon.
+
+635-056-0050
+Prohibited Species
+(1) Except as otherwise provided in these rules or other rules of the commission, live wildlife listed below may not be imported, possessed, sold, purchased, exchanged or transported in the state:
+(a) Prohibited Mammals: Common Name — Family — Genus/species:
+(A) Order Artiodactyla:
+(i) Sheep, Goats, Chamois, Tahr — Bovidae — Subfamily Caprinae; All species and hybrids except:
+(I) Capra hircus;
+(II) Ovis aries;
+(III) hybrids of Ovis aries with O. a. orientalis; hybrids of O. aries with Ammotragus lervia; and hybrids of O. aries with Pseudois nayaur;
+(ii) Wildebeest — Bovidae — Connochaetes All species and hybrids;
+(iii) Central Asian gazelles — Bovidae — Procapra All species and hybrids;
+(iv) Wild boar — Suidae — Sus scrofa (except Sus scrofa domesticus).
+(B) Order Carnivora:
+(i) Wild canids — Canidae — All native species. However, fox (Vulpes vulpes and Urocyon cinereoargenteus) are exempt from this prohibition if when part of a commercial fur farming operation or for wildlife rehabilitation purposes by a licensed wildlife rehabilitator;
+(ii) Mongooses — Herpestidae — All species and hybrids;
+(iii) North American Otter, Eastern subspecies — Mustelidae — Lontra canadensis lataxina;
+(iv) Asian Small-clawed Otter — Mustelidae — Lutrinae Aonyx cinerea (also classified as Aonyx cinereus);
+(v) Civets and Genets — Viverridae — All species and hybrids (except Arctictis binturong).
+(C) Order Chiroptera: Bats — All families except Pteropodidae — All species and hybrids.
+(D) Order Cingulata: Nine-banded armadillo — Dasypodidae — Dasypus novemcinctus.
+(E) Order Dasyuromorphia:
+(i) Broad-footed marsupial mice — Dasyuridae — Antechinus All species and hybrids;
+(ii) Brush-tailed marsupial mice — Dasyuridae — Phascogale All species and hybrids;
+(iii) Dunnant — Dasyuridae — Sminthopsis All species and hybrids.
+(F) Order Didelphimorphia: Virginia opossum — Didelphidae — Didelphis virginiana.
+(G) Order Diprotodontia:
+(i) Common brushtail — Phalangeridae — Trichosurus vulpecula;
+(ii) Common ringtail — Pseudocheiridae — Pseudocheirus peregrinus.
+(H) Order Erinaceomorpha: Eurasian hedgehogs — Erinaceidae — Erinaceus europaeus, E. concolor, E. amurensis.
+(I) Order Lagomorpha:
+(i) Hares and Jackrabbits — Leporidae — Lepus All nonnative species and hybrids;
+(ii) Cottontails — Leporidae — Sylvilagus All nonnative species and hybrids.
+(J) Order Rodentia:
+(i) Argentine Plains viscacha — Chinchillidae — Lagostomus maximus;
+(ii) Chinese jumping mouse — Dipodidae — Eozapus setchuanus;
+(iii) Desert jerboas — Dipodidae — Jaculus All species and hybrids;
+(iv) Kangaroo rats — Heteromyidae — Dipodomys All nonnative species except D. deserti and D. spectabilis;
+(v) Pale kangaroo mouse — Heteromyidae — Microdipodops pallidus;
+(vi) Pocket mice — Heteromyidae — Perognathus All nonnative species and hybrids;
+(vii) Capybara — Hydrochaeridae — Hydrochaeris hydrochaeris;
+(viii) Old world porcupines — Hystricidae — Hystrix africaeaustralis, H. cristata, and H. indica;
+(ix) Mouselike hamster — Muridae — Calomyscus All species and hybrids;
+(x) Ratlike hamsters — Muridae — Cricetulus All species and hybrids;
+(xi) Bushy-tailed jird — Muridae — Sekeetamys calurus;
+(xii) Nutria (Coypu) — Myocastoridae — Myocastor coypus;
+(xiii) Fat dormouse — Myoxidae — Glis glis;
+(xiv) Hazel dormouse — Myoxidae — Muscardinus avellanarius;
+(xv) Antelope ground squirrels — Sciuridae — Ammospermophilus All nonnative species and hybrids except A. harrisii;
+(xvi) Tricolored squirrels — Sciuridae — Callosciurus All species and hybrids except C. prevostii;
+(xvii) Prairie dogs — Sciuridae — Cynomys All species and hybrids;
+(xviii) Southern flying squirrel — Sciuridae — Glaucomys volans;
+(xix) Marmots — Sciuridae — Marmota All nonnative species and hybrids;
+(xx) Giant flying squirrel — Sciuridae — Petaurista All species and hybrids;
+(xxi) Eastern gray squirrel — Sciuridae — Sciurus carolinensis;
+(xxii) Eastern fox squirrel — Sciuridae — Sciurus niger;
+(xxiii) Eurasian red squirrel — Sciuridae — Sciurus vulgaris;
+(xxiv) Ground squirrels — Sciuridae — Spermophilus All nonnative species and hybrids except S. adocetus, S. annulatus, S. atricapillus, S. madrensis, S. mexicanus, S. mohavensis, S. perotensis, and S. tereticaudus;
+(xxv) Chipmunks — Sciuridae — Tamias All nonnative species and hybrids;
+(xxvi) African ground squirrels — Sciuridae — Xerus All species and hybrids.
+(b) Prohibited Birds: Common Name — Family — Genus/species:
+(A) Order Anseriformes: Egyptian goose — Anatidae — Alopochen aegyptiaca.
+(B) Order Charadriiformes: Spotted thick-knee — Burhinidae — Burhinus capensis.
+(C) Order Coraciiformes:
+(i) Malachite kingfisher — Alcedinidae — Alcedo cristata;
+(ii) Laughing kookaburra — Alcedinidae — Dacelo novaeguineae.
+(D) Order Passeriformes:
+(i) Yellowhammer — Emberizidae — Emberiza citrinella;
+(ii) European greenfinch — Fringillidae — Chloris Chloris (also classified as Chloris Chloris);
+(iii) Chaffinch — Fringillidae — Fringilla coelobs.
+(c) Prohibited Amphibians: Common Name — Family — Genus/species:
+(A) Order Caudata:
+(i) Tiger salamander — Ambystomatidae — Ambystoma tigrinum All nonnative sub-species;
+(ii) Amphiumas — Amphiumidae — All species and hybrids;
+(iii) Giant salamanders and Hellbenders — Cryptobranchidae — All species and hybrids;
+(iv) American giant salamanders — Dicamptodontidae — All nonnative species and hybrids;
+(v) Asian salamanders — Hynobiidae — Ranodon All species and hybrids;
+(vi) Shovel-nosed salamander — Plethodontidae — Leurognathus marmoratus;
+(vii) Waterdogs — Proteidae — Necturus All species and hybrids;
+(viii) Firebelly newts — Salamandridae — Cynops All species and hybrids;
+(ix) European Mountain or Brook salamanders — Salamandridae — Euproctus All species and hybrids;
+(x) Caucasus or Spine-tailed salamanders — Salamandridae — Mertensiella All species and hybrids;
+(xi) Red-spotted or Eastern newt — Salamandridae — Notophthalmus viridescens;
+(xii) Chinese newts — Salamandridae — Pachytriton All species and hybrids;
+(xiii) Warty newts — Salamandridae — Paramesotriton All species and hybrids;
+(xiv) Ribbed newts — Salamandridae — Pleurodeles All species and hybrids;
+(xv) Fire salamanders — Salamandridae — Salamandra All species and hybrids;
+(xvi) Roughskin newts — Salamandridae — Taricha rivularis and T. torosa;
+(xvii) Alpine newts — Salamandridae — Triturus All species and hybrids;
+(xviii) Crocodile newts — Salamandridae — Tylotriton All species and hybrids;
+(xix) Sirens — Sirenidae — All species and hybrids.
+(B) Order Anura:
+(i) Fire-bellied toads — Bombinatoridae — Bombina All species and hybrids;
+(ii) True toads — Bufonidae — Bufo All nonnative species and hybrids except Bufo marinus;
+(iii) Midwife toads — Discoglossidae — Alytes All species and hybrids;
+(iv) Painted frogs — Discoglossidae — Discoglossus All species and hybrids;
+(v) Cricket frog — Hylidae — Acris All species and hybrids;
+(vi) European tree frog — Hylidae — Hyla arborea;
+(vii) Cope’s gray tree frog — Hylidae — Hyla chrysoscelis;
+(viii) Green tree frog — Hylidae — Hyla cinerea;
+(ix) Mediterranean tree frog — Hylidae — Hyla meridionalis;
+(x) Gray tree frog — Hylidae — Hyla versicolor;
+(xi) Chorus frog — Hylidae — Pseudacris All nonnative species and hybrids;
+(xii) Australian froglets — Myobatrachidae — Crinia All species and hybrids;
+(xiii) Australian swamp frogs — Myobatrachidae — Limnodynastes All species and hybrids;
+(xiv) Barred frogs — Myobatrachidae — Mixophyes All species and hybrids;
+(xv) Spadefoot toads — Pelobatidae — All nonnative species and hybrids;
+(xvi) African clawed frog — Pipidae — Xenopus All species and hybrids;
+(xvii) African bull frog — Ranidae — Pyxicephalus All species and hybrids;
+(xviii) Siberian frog — Ranidae — Rana altaica;
+(xix) Khabarovsk frog — Ranidae — Rana amurensis;
+(xx) Crawfish frog — Ranidae — Rana areolata;
+(xxi) Swedish swamp frog — Ranidae — Rana arvalis;
+(xxii) Asian frog — Ranidae — Rana asiatica;
+(xxiii) Rio Grande leopard frog — Ranidae — Rana berlandieri;
+(xxiv) Plains leopard frog — Ranidae — Rana blairi;
+(xxv) Caucasus frog — Ranidae — Rana camerani;
+(xxvi) Inkiapo frog — Ranidae — Rana chensinensis;
+(xxvii) Toudaohe frog — Ranidae — Rana chevronta;
+(xxviii) Green frog — Ranidae — Rana clamitans;
+(xxix) Spring frog — Ranidae — Rana dalmatina;
+(xxx) Dybowski’s frog — Ranidae — Rana dybowskii;
+(xxxi) Stream frog — Ranidae — Rana graeca;
+(xxxii) Pig frog — Ranidae — Rana grylio;
+(xxxiii) River frog — Ranidae — Rana heckscheri;
+(xxxiv) Turkish frog — Ranidae — Rana holtzi;
+(xxxv) Iberian frog — Ranidae — Rana iberica;
+(xxxvi) Agile frog — Ranidae — Rana japonica;
+(xxxvii) Italian agile frog — Ranidae — Rana latastei;
+(xxxviii) Kokarit or Taipa frog — Ranidae — Rana longicrus;
+(xxxix) Brusa frog — Ranidae — Rana macrocnemis;
+(xl) Nikko frog — Ranidae — Rana ornativentris;
+(xli) Pickeral frog — Ranidae — Rana palustris;
+(xlii) Mink frog — Ranidae — Rana septentrionalis;
+(xliii) Wood frog — Ranidae — Rana sylvatica;
+(xliv) Tago frog — Ranidae — Rana tagoe;
+(xlv) European common frog — Ranidae — Rana temporaria;
+(xlvi) Tsushima frog — Ranidae — Rana tsushimensis;
+(xlvii) Carpenter frog — Ranidae — Rana virgatipes.
+(d) Prohibited Reptiles: Common Name — Family — Genus/species:
+(A) Order Testudines:
+(i) Sea turtles - Cheloniidae and Dermochelvidae - All species
+(ii) Snapping turtle — Chelydridae — All species and hybrids;
+(iii) Chinese pond turtle — Emydidae — Chinemys All species and hybrids;
+(iv) Pond turtle — Emydidae — Clemmys All nonnative species;
+(v) Painted turtle — Emydidae — Chrysemys All nonnative sub-species;
+(vi) European pond turtle — Emydidae — Emys orbicularis;
+(vii) Blanding’s turtle — Emydidae — Emydoidea blandingii;
+(viii) Map turtle — Emydidae — Graptemys All species and hybrids;
+(ix) Asian pond turtle — Emydidae — Mauremys All species and hybrids;
+(x) Pond slider — Emydidae — Pseudemys and Trachemys All species and hybrids;
+(xi) Common musk turtle — Kinosternidae — Kinosternon odoratum;
+(xii) Common mud turtle — Kinosternidae — Kinosternon subrubrum;
+(xiii) North American soft shell — Trionychidae — Apalone All species and hybrids;
+(xiv) African soft shell — Trionychidae — Trionyx triunguis.
+(B) Order Squamata (Suborder Lacertilia):
+(i) Slow worm — Anguidae — Anguis fragilis;
+(ii) Armored Glass lizard — Anguidae — Ophisaurus apodus
+(iii) Sand lizard — Lacertidae — Lacerta agilis;
+(iv) Jewelled lizard — Lacertidae — Lacerta lepida;
+(v) Iberian Mountain lizard — Lacertidae — Lacerta monticola;
+(vi) Meadow lizard — Lacertidae — Lacerta praticola;
+(vii) Iberian Emerald lizard — Lacertidae — Lacerta schreiberi;
+(viii) Balkan Emerald lizard — Lacertidae — Lacerta trilineata;
+(ix) Emerald lizard — Lacertidae — Lacerta viridis;
+(x) Viviparous lizard — Lacertidae — Lacerta vivipara;
+(xi) Erhard’s Wall lizard — Lacertidae — Podarcis erhardi;
+(xii) Iberian Wall lizard — Lacertidae — Podarcis hispanica;
+(xiii) Common Wall lizard — Lacertidae — Podarcis muralis;
+(xiv) Crocodile lizard — Xenosauridae — Shinisaurus crocodilurus.
+(C) Order Squamata (Suborder Serpentes):
+(i) Brown tree snake — Colubridae — Boiga irregularis;
+(ii) Watersnake - Colubridae - Nerodia - All species and hybrids;
+(iii) Black-necked spitting cobra — Elapidae — Naja nigricollis;
+(iv) Cape cobra — Elapidae — Naja nivea;
+(v) Copperheads and cottonmouths — Viperidae — Agkistrodon All species and hybrids;
+(vi) Puff adders — Viperidae — Bitis All species and hybrids except Bitis gabonica and B. nasicornis;
+(vii) Lanceheads — Viperidae — Bothrops All species and hybrids;
+(viii) Palm pit vipers — Viperidae — Bothriechis All species and hybrids;
+(ix) Rattlesnakes — Viperidae — All nonnative species and hybrids except Crotalus aquilus, C. basiliscus, C. durissus, C. intermedius, C. polystictus, C. pusillus, C. tortugensis, C. triseriatus, C. unicolor, and C. vegrandis;
+(x) Mid-east vipers — Viperidae — Daboia All species and hybrids;
+(xi) Pygmy rattlesnake — Viperidae — Sistrurus catenatus;
+(xii) Asian pit vipers — Viperidae — Trimeresurus All species and hybrids;
+(xiii) Wagler’s palm viper — Viperidae — Tropidolaemus wagleri;
+(xiv) Sand vipers — Viperidae — Vipera All species and hybrids.
+(e) Prohibited Fish: Common Name — Family — Genus/species:
+(A) Order Amiiformes: Bowfin — Amiidae — Amia calva.
+(B) Order Cypriniformes:
+(i) Piranha or Caribe — Characidae subfamily Serrasalminae commonly known as caribe or piranha — All species and hybrids except carnivorous species of Pygocentrus, Serrasalmus or Pristobrycon pursuant to ORS 498.242;
+(ii) Walking catfish (ORS 498.242) — Clariidae — All species and hybrids;
+(iii) Oriental weatherfish — Cobitidae — Misgurnus anguillicaudatus;
+(iv) Ide — Cyprinidae — Leuciscus idus;
+(v) Rudd — Cyprinidae — Scardinius erythropthalmus.
+(vi) Asian carp — Cyprinidae — Hypophthalmichthys All species and hybrids;
+(vii) Black carp — Cyprinidae — Mylopharyngodon piceus
+(C) Order Lepisosteiformes: Gar — Lepisosteidae — All species and hybrids.
+(D) Order Perciformes:
+(i) Snakehead — Channidae — Channa All species and hybrids;
+(ii) Round goby — Gobiidae — Neogobius melanostomus;
+(iii) Ruffe — Percidae — Gymnocephalus cernuus;
+(iv) Zander or Pike-perch — Percidae — Sander lucioperca.
+(E) Order Salmoniformes: Pikes, Pickerel, Muskellunge — Esocidae — All species and hybrids except tiger muskellunge (Esox lucius X Esox masquinongy) in Phillips Reservoir located in Baker County
+(f) Prohibited Mollusks Common Name — Family — Genus/species:
+(A) Order Veneroida:
+(i) Asian clam — Corbiculidae — All species;
+(ii) Zebra mussel, Quagga mussel — Dreissenidae — All species (whether live or dead).
+(iii) Golden mussel — Mytilidae — All species (whether live or dead).
+(B) Order Neogastropoda: Oyster drill - Muricidae - all non-native species and hybrids
+(C) Order Architaenioglossa:  Mystery snail — Viviparidae — All species and hybrids
+(D) Order Lepetellida:  Abalone - Haliotidae - Haliotis - All non-native species and hybrids
+(E) Order Mytiloida: Golden mussel - Mytilidae (whether live or dead)
+(g) Prohibited Crustaceans Common Name — Family — Genus/species: Order Decapoda:
+(A) Chinese mitten crab — Grapsidae — Eriocheir All species;
+(B) Blue crab — Portunidae — Callinectes sapidus;
+(2) The department may issue a permit for the importation, possession, sale, purchase, exchange or intrastate transportation of prohibited species and those species not yet classified if the department finds that the following standards have been met:
+(a) The facility is constructed to minimize escape of prohibited species;
+(b) There are adequate security and safety programs and procedures which minimize the possibility of escape;
+(c) There is adequate record keeping to aid in tracking of confined animals or recovery of escaped animals;
+(d) There are adequate procedures, equipment and trained staff to maximize capture of escaped animals;
+(e) Adequate veterinary care is provided to identify and minimize the spread of diseases; and
+(f) The applicant has a good reputation for care of animals and compliance with the wildlife laws.
+(g) Using forms provided by the department, persons or entities may apply for a permit under subsection (2) as follows:
+(A) Facilities accredited by the American Zoo and Aquarium Association (AZA). Because the department finds that the current AZA accreditation process holds these facilities to standards equivalent to those in subsection (2), AZA accreditation shall be evidence that the department’s standards for importation, possession, sale, purchase, exchange or intrastate transportation of prohibited species are met. To obtain a permit for these activities, AZA accredited facilities shall submit a completed application form and proof of accreditation.
+(B) Universities and colleges. To obtain a permit, universities and colleges shall submit:
+(i) A completed application form;
+(ii) A written description of escape avoidance procedures and facilities; and
+(iii) Identification of the time period(s) during which prohibited species will be held.
+(C) Others. To apply for a permit, persons and entities other than universities, colleges and AZA accredited facilities shall submit:
+(i) A completed application form; and
+(ii) A completed Prohibited Species Questionnaire.
+(h) Satisfactory facilities inspections may be required prior to issuance of any permit.
+Statutory/Other Authority:  ORS 496.012, 496.138, 496.146, 497.298, 497.308, 497.312, 497.318, 498.022, 498.052, 498.222 & 498.234
+Statutes/Other Implemented:  ORS 496.012, 496.138, 496.146, 497.298, 497.308, 497.312, 497.318, 498.022, 498.052, 498.222 & 498.234
+History:
+DFW 73-2025, amend filed 08/19/2025, effective 08/19/2025
+DFW 26-2025, temporary amend filed 04/10/2025, effective 04/10/2025 th
+=========================================================================
+
+635-056-0060
+Noncontrolled Species
+Except as otherwise provided in these rules or other rules of the commission, wildlife listed below may be imported, possessed, sold, purchased, exchanged or transported in the state without a Department permit (some species require a permit from the Oregon Department of Agriculture):
+(1) Noncontrolled Mammals: Common Name -- Family -- Genus/species:
+(a) Order Artiodactyla:
+(A) Antelope and buffalo-- Bovidae -- All species except subfamily Caprinae and Procapra species;
+(B) Giraffe and okapi -- Giraffidae -- All species;
+(C) Pygmy hippopotamus -- Hippopotamidae -- Hexaprotodon liberiensis ;
+(D) Hippopotamus -- Hippopotamidae -- Hippopotamus amphibius ;
+(E) Peccary -- Tayassuidae -- All species; (F) Chevrotains -- Tragulidae -- All species.
+(b) Order Carnivora:
+(A) Aardwolf -- Hyaenidae -- Proteles cristatus ;
+(B) Seals and sea lions -- Otariidae -- All nonnative species.
+(C) Red/Lesser Panda -- Procyonidae -- Ailurus fulgens ;
+(D) Olingos -- Procyonidae -- Bassaricyon All species;
+(E) Coatimundis -- Procyonidae -- Nasua All species;
+(F) Kinkajou -- Procyonidae -- Potos flavus ;
+(G) Binturong -- Viverridae -- Arctictis binturong .
+(c) Order Cetacea: Whales and dolphins -- All families -- All species.
+(d) Order Chiroptera: Old World fruit bats -- Pteropodidae -- All species.
+(e) Order Dasyuromorphia: Numbat -- Myrmecobiidae -- Myrmecobius fasciatus .
+(f) Order Dermoptera: Flying lemurs or colugos -- Cynocephalidae -- All species.
+(g) Order Didelphimorphia: Short-tailed opossums – Didelphinae -- Monodelphis All species.
+(h) Order Diprotodontia:
+(A) Feathertail glider -- Acrobatidae -- Acrobates pygmaeus ;
+(B) Kangaroos and wallabies -- Macropodidae -- All species;
+(C) Striped possums -- Petauridae -- Dactylopsila All species;
+(D) Sugar glider -- Petauridae -- Petaurus breviceps ;
+(E) Cuscuses -- Phalangeridae -- Phalanger All species.
+(F) Brush Tailed Bettong - Protoridae -- Bettongia penicillata
+(i) Order Erinaceomorpha:  Four-toed hedgehog -- Erinaceidae -- Atelerix albiventris .
+(j) Order Hyracoidea: Hyraxes -- Procaviidae -- All species.
+(k) Order Monotremata:  Echidnas -- Tachyglossidae -- All species.
+(l) Order Peramelemorphia:
+(A) Dry country bandicoots -- Peramelidae -- All species except Isoodon obesulus, Perameles gunnii , and P. nasuta ;
+(B) Rainforest bandicoots – Peramelidae -- All species.
+(m) Order Perissodactyla:
+(A) Zebra and Asses-- Equidae -- Equus All species;
+(B) Rhinoceros -- Rhinocerotidae -- All species;
+(C) Tapirs -- Tapiridae -- All species.
+(n) Order Pholidota: Pangolins -- Manidae -- All species.
+(o) Order Pilosa:
+(A) Three-toed tree sloths -- Bradypodidae -- All species;
+(B) Two-toed tree sloths -- Megalonychidae -- All species;
+(C) Anteaters -- Myrmecophagidae -- All species.
+(p) Order Proboscidea: Elephants -- Elephantidae -- All species.
+(q) Order Rodentia:
+(A) Scaly--tailed squirrels -- Anomaluridae -- All species;
+(B) Hutias -- Capromyidae -- All species;
+(C) Mara (Patagonian hare) -- Caviidae -- Dolichotis All species;
+(D) Mountain viscachas -- Chinchillidae -- Lagidium All species;
+(E) Dwarf hamsters -- Cricetidae -- Phodopus All species
+(F) Paca -- Cuniculidae -- Cuniculus paca ;
+(G) Agoutis -- Dasyproctidae -- Dasyprocta All species;
+(H) Acouchis -- Dasyproctidae -- Myoprocta All species;
+(I) Pacarana -- Dinomyidae -- Dinomys branickii ;
+(J) Prehensile-tailed Porcupines -- Erethizontidae -- Coendou All species;
+(K) Kangaroo Rats -- Heteromyidae -- Dipodomys deserti and D. spectabilis ;
+(L) Brush-tailed porcupines -- Hystricidae -- Atherusus All species;
+(M) Old world porcupines -- Hystricidae -- Hystrix All species except H. africaeaustralis, H. cristata , and H. indica ;
+(N) Spiny mice -- Muridae -- Acomys All species;
+(O) Crateromys (Bushy tailed cloud rats) -- Muridae -- Crateromys All species;
+(P) African giant pouched rats -- Muridae -- Cricetomys All species;
+(Q) African White-tailed rat -- Muridae -- Mystromys albicaudatus ;
+(R) Phloeomys (Slender tailed rats) -- Muridae -- Phloeomys All species;
+(S) Degus -- Octodontidae -- Octodon All species;
+(T) South African Springhare -- Pedetidae -- Pedetes capensis ;
+(U) Prevost's squirrel -- Sciuridae -- Callosciurus prevostii ;
+(V) African palm squirrels -- Sciuridae -- Epixerus All species;
+(W) Pygmy flying squirrels -- Sciuridae -- Petaurillus All species;
+(X) Oil palm squirrels -- Sciuridae -- Protoxerus All species;
+(Y) Giant squirrels -- Sciuridae -- Ratufa All species.
+(r) Order Sirenia:  Manatees -- All families -- All species.
+(s) Order Tubulidentata: Aardvark -- Orycteropodidae -- Orycteropus afer .
+(2) Noncontrolled Birds: Nothing in this subsection authorizes the importation, possession, sale, confinement or transportation of birds protected by the federal Migratory Bird Treaty Act: Common Name -- Family -- Genus/species:
+(a) Order Charadriiformes:
+(A) Senegal thick-knee -- Burhinidae -- Burhinus senegalensis ;
+(B) Water thick-knee -- Burhinidae -- Burhinus vermiculatus .
+(b) Order Coliiformes: Mousebirds and Collies -- Coliidae -- All species.
+(c) Order Coraciiformes:
+(A) Blue-winged kookaburra -- Alcedinidae -- Dacelo leachii ;
+(B) Woodland kingfisher -- Alcedinidae -- Halcyon senegalensis ;
+(C) African pygmy kingfisher -- Alcedinidae -- Ispidina picta ;
+(D) Hornbills -- Bucerotidae -- All species;
+(E) Rollers -- Coraciidae -- All species;
+(F) Bee-eaters -- Meropidae -- All species except Merops apiaster, M. oreobates, M. pusillus , and  Nyctyornis athertoni ;
+(G) Motmots -- Momotidae -- All species.
+(d) Order Cuculiformes:
+(A) White browed coucal-- Centropodidae -- Centropus superciliousus burchelli ;
+(B) Pheasant coucal -- Centropodidae -- Centropus phasianinus ;
+(C) Senegal coucal -- Centropodidae -- Centropus senegalensis ;
+(D) Greater coucal -- Centropodidae -- Centropus sinensis .
+(E) Turacos, Plaintain eaters and Go-away birds -- Musophagidae -- All Species
+(e) Order Galliformes:
+(A) Curassows, guans, and chacalacas -- Cracidae -- All species except Chamaepetes goudotii, Penelope montagni i, and P. superciliaris ;
+(B) Megapodes -- Megapodiidae – All species.
+(f) Order Gruiformes:
+(A) Trumpeters -- Psophiidae -- All species;
+(B) Buttonquails and hemipodes -- Turnicidae -- All species.
+(g) Order Passeriformes:
+(A) Orange-breasted bunting -- Cardinalidae -- Passerina leclancherii ;
+(B) Cotingas -- Cotingidae -- All species;
+(C) Red-crested finch -- Emberizidae – Coryphospingus cucullatus ;
+(D) Pileated finch -- Emberizidae -- Coryphospingus pileatus ;
+(E) Yellow-breasted bunting -- Emberizidae -- Emberiza aureola ;
+(F) Golden-breasted bunting -- Emberizidae -- Emberiza flaviventris ;
+(G) Cinnamon-breasted bunting -- Emberizidae – Emberiza tahapisi ;
+(H) Yellow cardinal -- Emberizidae -- Gubernatrix cristata ;
+(I) Black-crested finch -- Emberizidae -- Lophospingus pusillus ;
+(J) Crested bunting -- Emberizidae -- Melophus lathami ;
+(K) Yellow-billed cardinal -- Emberizidae -- Paroaria capitata ;
+(L) Red-crested cardinal -- Emberizidae -- Paroaria coronata ;
+(M) Black-capped warbling finch -- Emberizidae -- Poospiza melanoleuca;
+(N) Saffron finch -- Emberizidae -- Sicalis flaveola;
+(O) Double-collared seedeater -- Emberizidae -- Sporophila caerulescens;
+(P) Rusty-collared seedeater -- Emberizidae -- Sporophila collaris;
+(Q) Parrot-billed seedeater -- Emberizidae -- Sporophila peruviana;
+(R) Slate-colored seedeater -- Emberizidae -- Sporophila schistacea;
+(S) Swallow tanager -- Emberizidae -- Tersina viridis;
+(T) Cuban grassquit -- Emberizidae -- Tiaris canorus;
+(U) Blue-back grassquit -- Emberizidae -- Volatinia jacarina;
+(V) Waxbills, mannikins, munias -- Estrilididae -- All species;
+(W) Broadbills -- Eurylaimidae -- All species;
+(X) Black siskin -- Fringillidae -- Carduelis atrata;
+(Y) Linnet -- Fringillidae -- Carduelis cannabina;
+(Z) European goldfinch -- Fringillidae -- Carduelis carduelis;
+(AA) Red siskin -- Fringillidae -- Carduelis cucullata;
+(BB) Hooded siskin -- Fringillidae -- Carduelis magellanica;
+(CC) Yellow--breasted greenfinch -- Fringillidae -- Carduelis spinoides;
+(DD) European siskin -- Fringillidae -- Carduelis spinus (also classified as Spinus spinus);
+(EE) Yellow-rumped siskin -- Fringillidae -- Carduelis uropygialis;
+(FF) Yellow-bellied siskin -- Fringillidae -- Carduelis xanthogastra;
+(GG) Yellow-billed grosbeak -- Fringillidae – Eophona migratoria;
+(HH) Japanese grosbeak -- Fringillidae -- Eophona personata;
+(II) Oriole finch -- Fringillidae -- Linurgus olivaceus;
+(JJ) Brown bullfinch -- Fringillidae -- Pyrrhula nipalensis;
+(KK) Eurasian bullfinch -- Fringillidae -- Pyrrhula pyrrhula;
+(LL) Black-throated island canary -- Fringillidae -- Serinus atrogularis;
+(MM) Island canary -- Fringillidae -- Serinus canaria;
+(NN) Yellow crowned canary -- Fringillidae -- Serinus flaviventris;
+(OO) White-rumped seedeater -- Fringillidae -- Serinus leucopygius;
+(PP) Yellow-fronted canary -- Fringillidae -- Serinus mozambicus;
+(QQ) European serin -- Fringillidae -- Serinus serinus;
+(RR) Long-tailed rosefinch -- Fringillidae -- Uragus sibiricus;
+(SS) Troupials and Allies -- Icteridae -- All nonnative species;
+(TT) Leafbirds and fairy bluebirds -- Irenidae -- All species;
+(UU) Honeyeaters -- Meliphagidae -- All species;
+(VV) Old World Flycatchers -- Muscicapidae -- Copyschus All species;
+(WW) Sunbirds -- Nectariniidae -- All species;
+(XX) Sudan sparrow -- Passeridae -- Passer luteus ;
+(YY) Red-headed weaver -- Ploceidae -- Anaplectes rubriceps ;
+(ZZ) Yellow-crowned bishop -- Ploceidae -- Euplectes afe r;
+(AAA) Red-collared widowbird -- Ploceidae -- Euplectes ardens ;
+(BBB) Black-winged bishop -- Ploceidae -- Euplectes hordeaceus ;
+(CCC) Jackson's widowbird -- Ploceidae -- Euplectes jacksoni;
+(DDD) Yellow-shouldered widowbird -- Ploceidae -- Euplectes macrourus;
+(EEE) Red bishop -- Ploceidae -- Euplectes orix;
+(FFF) Long-tailed widowbird -- Ploceidae -- Euplectes progne;
+(GGG) Red fody -- Ploceidae -- Foudia madagascariensis;
+(HHH) Orange weaver -- Ploceidae -- Ploceus aurantius;
+(III) Village weaver -- Ploceidae -- Ploceus cucullatus;
+(JJJ) Lesser masked weaver -- Ploceidae -- Ploceus intermedius;
+(KKK) Little weaver -- Ploceidae -- Ploceus luteolus;
+(LLL) Baya weaver -- Ploceidae -- Ploceus philippinus;
+(MMM) Vitelline-masked weaver -- Ploceidae -- Ploceus vitellinus;
+(NNN) Speckle-fronted weaver -- Ploceidae -- Sporopipes frontalis;
+(OOO) Scaly weaver -- Ploceidae -- Sporopipes squamifrons;
+(PPP) Sugarbirds -- Promeropidae -- All species;
+(QQQ) Golden-crested myna -- Sturnidae -- Ampeliceps coronatus;
+(RRR) Violet-backed starling -- Sturnidae -- Cinnyricinclus leucogaster;
+(SSS) Emerald starling -- Sturnidae – Lamprotornis iris;
+(TTT) Golden-breasted starling -- Sturnidae -- Lamprotornis regius;
+(UUU) Common hill myna -- Sturnidae -- Gracula religiosa;
+(VVV) Long-tailed glossy-starling -- Sturnidae -- Lamprotornis caudatus;
+(WWW) Bronze-tailed glossy-starling -- Sturnidae -- Lamprotornis chalcurus;
+(XXX) Greater blue-eared glossy-starling -- Sturnidae -- Lamprotornis chalybaeus;
+(YYY) Lesser blue-eared glossy-starling -- Sturnidae -- Lamprotornis chloropterus;
+(ZZZ) Hildebrandt's starling -- Sturnidae -- Lamprotornis hildebrandti;
+(AAAA) Chestnut-bellied starling -- Sturnidae -- Lamprotornis pulcher;
+(BBBB) Purple-headed glossy-starling -- Sturnidae -- Lamprotornis purpureiceps;
+(CCCC) Purple glossy-starling -- Sturnidae -- Lamprotornis purpureus;
+(DDDD) Rueppell's glossy-starling -- Sturnidae – Lamprotornis purpuroptera;
+(EEEE) Splendid glossy-starling -- Sturnidae -- Lamprotornis splendidus;
+(FFFF) Superb starling -- Sturnidae -- Lamprotornis superbus;
+(GGGG) Bali myna -- Sturnidae -- Leucopsar rothschildi;
+(HHHH)Golden myna -- Sturnidae -- Mino anais;
+(IIII) Yellow-faced myna -- Sturnidae -- Mino dumontii;
+(JJJJ) Tanagers and Allies -- Thraupidae -- All nonnative species;
+(KKKK) Babblers -- Timaliidae -- All species;
+(LLLL) White-eyes -- Zosteropidae -- All species.
+(h) Order Piciformes:
+(A) Barbets -- Capitonidae -- All species;
+(B) Toucans -- Ramphastidae -- All species.
+(i) Order Sphenisciformes:  Penguins – Spheniscidae – All species.
+(j) Order Tinamiformes:  Tinamous -- Tinamidae -- All species.
+(k) Order Trogoniformes:  Trogons -- Trogonidae -- All species.
+(3) Noncontrolled Amphibians: Common Name -- Family -- Genus/species:
+(a) Order Anura:
+(A) Allophrynid tree frog -- Allophrynidae -- Allophryne All species;
+(B) Hairy frogs -- Arthroleptidae -- Trichobatrachus All species;
+(C) Cane toad -- Bufonidae -- Bufo marinus;
+(D) African tree toads -- Bufonidae -- Nectophryne All species;
+(E) Live-bearing toads -- Bufonidae -- Nectophrynoides All species;
+(F) Glass frogs -- Centrolenidae -- All species;
+(G) Poison arrow frogs -- Dendrobatidae -- All species;
+(H) Ghost frogs -- Heleophrynidae -- Heleophryne All species;
+(I) Shovel-nosed frogs -- Hemisotidae -- Hemisus All species;
+(J) Leaf frogs -- Hylidae -- Agalychnis All species;
+(K) Casque-headed frogs -- Hylidae -- Aparashpenodon All species;
+(L) Water-holding frogs -- Hylidae -- Cyclorana All species;
+(M) Marsupial frogs -- Hylidae -- Gastrotheca All species;
+(N) Marbled tree frogs – Hylidae – Hyla marmorata
+(O) Australian giant tree frogs -- Hylidae --Litoria chlorus and L. infrafrenata;
+(P) Slender-legged tree frogs -- Hylidae -- Osteocephalus All species;
+(Q) Cuban tree frogs -- Hylidae -- Osteopilus All species;
+(R) White's tree frog -- Hylidae -- Pelodryas caerulea;
+(S) Golden-eyed tree frogs -- Hylidae -- Phrynohyas All species;
+(T) Monkey frogs -- Hylidae -- Phyllomedusa All species;
+(U) Burrowing frogs -- Hylidae -- Pternohyla All species;
+(V) Casque-headed tree frogs -- Hylidae -- Trachycephalus All species;
+(W) Shovel-headed tree frogs -- Hylidae -- Triprion All species;
+(X) Banana frogs -- Hyperoliidae -- Afrixalas All species;
+(Y) Reed frogs -- Hyperoliidae -- Hyperolius All species;
+(Z) Running frogs -- Hyperoliidae -- Kassina All species;
+(AA) Forest tree frogs -- Hyperoliidae -- Leptopelis All species;
+(BB) New Zealand frogs -- Leiopelmatidae -- Leiopelma All species;
+(CC) Common horned frogs -- Leptodactylidae -- Ceratophrys All species;
+(DD) Rain or robber frogs -- Leptodactylidae -- Eleutherodactylus All species;
+(EE) Paraguay horned toads -- Leptodactylidae -- Lepidobatrachus All species
+(FF) Asian horned toad -- Megophryidae -- Megophrys montana (nasuta);
+(GG) Tomato frogs -- Microhylidae -- Dyscophus All species;
+(HH) Narrow-mouthed frogs -- Microhylidae -- Gastrophryne All species;
+(II) Sheep frogs -- Microhylidae -- Hypopachus All species;
+(JJ) Malaysian narrowmouth toad -- Microhylidae -- Kaloula pulchra;
+(KK) Tusked frog -- Myobatrachidae -- Adelotus brevis;
+(LL) Pouched frog -- Myobatrachidae -- Assa darlingtoni;
+(MM) Giant burrowing frogs -- Myobatrachidae -- Heleioporus All species;
+(NN) Cannibal frogs -- Myobatrachidae -- Lechriodus All species;
+(OO) Turtle frog -- Myobatrachidae -- Myobatrachus gouldii;
+(PP) Australian spadefoot toads -- Myobatrachidae -- Notaden All species;
+(QQ) Crowned toadlets -- Myobatrachidae -- Pseudophryne All species;
+(RR) Gastric brooding frog -- Myobatrachidae -- Rheobatrachus All species;
+(SS) Torrent frogs -- Myobatrachidae -- Taudactylus All species;
+(TT) Australian toadlets -- Myobatrachidae -- Uperoleia All species;
+(UU) Parsley frogs -- Pelodytidae -- Pelodytes All species;
+(VV) Dwarf clawed frogs -- Pipidae -- Hymenochirus All species;
+(WW) Surinam frogs -- Pipidae -- Pipa All species;
+(XX) Mantella frogs --Ranidae -- Mantella All species;
+(YY)Foam nest tree frogs -- Rhacophoridae -- Chiromantis All species;
+(ZZ) Gliding or flying frogs -- Rhacophoridae -- Rhacophorus All species;
+(AAA) Tonkin Bug-eyed frog – Rhacophoridae – Theloderma corticale;
+(BBB) Mexican burrowing frog -- Rhinodermatidae -- Rhinophrynus dorsalis;
+(CCC) Seychelles frogs -- Sooglossidae -- All species.
+(b) Order Caudata:
+(A) Axolotl -- Ambystomatidae -- Ambystoma mexicanum;
+(B) Gold-striped salamander -- Salamandridae -- Chioglossa lusitanica;
+(C) Black-spotted and striped newts -- Salamandridae -- Notophthalmus meridionalis and N. perstriatus;
+(D) Spectacled salamander -- Salamandridae -- Salamandrina teridgitata.
+(c) Order Gymnophiona:  Caecilians -- All species.
+(4) Noncontrolled Reptiles: Common Name -- Family -- Genus/species;
+(a) Order Squamata (Suborder Amphisbaenia): Worm lizards – All species.
+(b) Order Squamata (Suborder Lacertilia):
+(A) Pricklenapes -- Agamidae -- Acanthosaura All species;
+(B) Common or rainbow agama -- Agamidae -- Agama agama;
+(C) Frilled dragon -- Agamidae -- Chlamydosaurus kingii;
+(D) Humphead forest dragons -- Agamidae -- Gonocephalus All species;
+(E) Sailfin lizards -- Agamidae -- Hydrosaurus All species;
+(F) Anglehead forest dragons -- Agamidae -- Hypsilurus All species;
+(G) Splendid Japalure – Agamidae – Japalura splendida
+(H) Water dragons -- Agamidae -- Lophognathus All species;
+(I) Water dragons -- Agamidae -- Physignathus All species;
+(J) Bearded dragons -- Agamidae -- Pogona All species;
+(K) Mastigures -- Agamidae -- Uromastyx All species;
+(L) Strange Agamas – Agamidae – Xenagama All species;
+(M) Chameleons -- Chamaeleonidae -- All species;
+(N) Plated lizards -- Cordylidae -- Gerrhosaurus All species;
+(O) Flat lizards -- Cordylidae -- Platysaurus All species;
+(P) Geckos -- Gekkonidae and Eublepharidae -- All species;
+(Q) Gila monster, beaded lizard -- Helodermatidae -- All species;
+(R) Iguanid lizards -- Iguanaidae -- All nonnative species except: Crotaphytus spp., Gambelia spp., Sceloporus spp., Uta spp., Phrynosoma spp.;
+(S) Asian Grass Lizard – Lacertidae – Takydromus sexlineatus
+(T) Skinks -- Scincidae -- All nonnative species except Eumeces spp.;
+(U) Ameivas -- Teiidae -- Ameiva All species;
+(V) Tegus -- Teiidae -- Tupinambis All species;
+(W) Monitor lizards -- Varanidae -- All species except Varanus griseus ;
+(X) Night lizards -- Xantusiidae -- All species;
+(Y) American knob-scaled lizards -- Xenosauridae -- Xenosaurus All species.
+(c) Order Squamata (Suborder Serpentes):
+(A) File snakes -- Acrochordidae -- All species;
+(B) Pythons and Boas -- Boidae -- All nonnative species (including those also classified as Loxocemidae spp.);
+(C) Milk, Pine, Corn, Rat, Garter snakes -- Colubridae -- All nonnative species of Milk, Pine, Corn, Rat, Garter;
+(D) Hognose snake -- Colubridae -- Heterodon nasicus;
+(E) False water cobra -- Colubridae -- Hydrodynates gigas;
+(F) Kingsnakes and gopher (bull) snakes -- Colubridae -- Individuals of Lampropeltis getula, L. zonata and Pituophis catenifer that are morphologically distinct from native species.
+(G) Egyptian cobra -- Elapidae -- Naja haje;
+(H) Black & white cobra -- Elapidae -- Naja melanoleuca;
+(I) Indian cobra -- Elapidae -- Naja naja;
+(J) Red spitting cobra -- Elapidae -- Naja pallida;
+(K) King cobra -- Elapidae -- Ophiophagus hannah;
+(L) Bush vipers -- Viperidae -- Atheris All species;
+(M) Gaboon viper -- Viperidae -- Bitis gabonica;
+(N) Rhinoceros viper -- Viperidae -- Bitis nasicornis;
+(O) Horned vipers -- Viperidae -- Cerastes All species;
+(P) Rattlesnakes -- Viperidae -- Crotalus aquilus, C. basiliscus, C. durissus, C. intermedius, C. polystictus, C. pusillus, C. tortugensis, C. triseriatus, C. unicolor, and C. vegrandis;
+(Q) Saw-scaled vipers -- Viperidae -- Echis All species;
+(R) Bushmaster -- Viperidae -- Lachesis muta;
+(S) False horned vipers -- Viperidae -- Pseudocerastes All species;
+(T) Pygmy rattlesnakes -- Viperidae -- Sistrurus miliarius and S. ravus.
+(d) Order Testudines:
+(A) Pignose turtles -- Carettochelyidae -- All species;
+(B) Austro--American side-necked turtles -- Chelidae -- All species;
+(C) River turtles -- Dermatemydidae -- All species;
+(D) Pond and box turtles -- Emydidae -- All nonnative species except Pseudemys spp., Trachemys spp., Chinemys spp., Clemmys spp., Chrysemys spp., Graptemys spp., Emys orbicularis , Emydoidea blandingii and Mauremys spp.;
+(E) American mud and musk turtles -- Kinosternidae -- All species except Kinosternon subrubrum and K. odoratum ;
+(F) Afro-American side-necked turtles -- Pelomedusidae -- All species;
+(G) Bighead turtles -- Platysternidae -- All species;
+(H) Tortoises -- Testudinidae -- All species;
+(I) Softshell turtles -- Trionychidae -- All species except Apolone spp. and Trionyx triunguis.
+(5) Noncontrolled Fish: Common Name -- Family -- Genus/species: Aquaria fish and Live Foodfish -- All species.
+Statutory/Other Authority:  ORS 496.012, 496.138, 496.146, 497.298, 497.308, 497.312, 497.318, 498.022, 498.029, 498.052, 498.222 & 498.234
+Statutes/Other Implemented:  ORS 496.012, 496.138, 496.146, 497.298, 497.308, 497.312, 497.318, 498.022, 498.029, 498.052, 498.222 & 498.234
+History:
+DFW 73-2025, amend filed 08/19/2025, effective 08/19/2025
+DFW 90-2017(Temp), f. & cert. ef. 7-14-17 thru 12-31
+=========================================================================
+
+635-056-0070
+Controlled Wildlife Species
+At the time the commission categorizes a species, subspecies or hybrid as Controlled, it shall also establish the controls necessary to protect native wildlife.
+(1) Controlled Mammals:
+(2) Controlled Birds:
+(a) Mute swans ( Cygnus olor ): The possession is allowed with an approval and authorization from the Department provided all individuals are surgically pinioned and any eggs produced must be destroyed. Importation, transport, sale, purchase, exchange and offer to sell, purchase or exchange of any mute swan are prohibited.
+(b) Hawks and falcons (families Falconidae and Accipitridae): The capture, possession, propagation, transportation, release, sale, purchase, exchange and disposition of falcons is allowed only as per the requirements of OAR 635 Division 44 (Protected Wildlife, Holding, and Game Bird Propagating Rules) and OAR 635 Division 55 (Falconry Licenses, Permits and Requirements.)
+(c) Game birds: (Anatidae, Columbidae, Tetranidae, Phasianidae, Meleagrididae, Scolopacidae, Gruidae, Rallidae). The possession, propagation, sale, purchase and exchange of game birds is allowed only as per the requirements of OAR 635 division 44 (Protected Wildlife, Holding, and Game Bird Propagating Rules.)
+(d) Unless authorized by the Department, European starling ( Sturnus vulgaris ), House sparrows ( Passer domesticus ), or Eurasian Collared Dove ( Streptopelia decaocto ) may not be imported into Oregon or released into the wild. However, viable eggs, nestlings, fledglings, or adults may be captured from the wild, possessed, bought or sold for any other purpose (including damage control research). No permit is required for such capture and possession.
+(3) Controlled Amphibians: Bullfrog ( Rana catesbeiana ) including viable eggs, hatchlings, tadpoles, juveniles and adults: No person may import, purchase, sell, barter or exchange, or offer to import, purchase, sell, barter or exchange live bullfrogs. Individual bullfrogs may be collected from the wild and held indoors in an escape proof aquarium as per OAR 635-044-0050, Exhibit 1, for amphibians. Release is prohibited unless the person first obtains a permit from the director.
+(4) Controlled Reptiles: Order Crocodylia (Crocodiles, Alligators and Gavials) are considered exotic animals pursuant to ORS 609.305. Therefore, the keeping, breeding and sale of such animals is regulated by ORS 609.205 through 609.355 and OAR 603-011-0705 and 603-011-0706. Those statutes and rules govern the authority of local governments and the Department of Agriculture over those activities concerning these animals. However, the Fish and Wildlife Commission retains authority to regulate release and transport of these animals, and their management if they are released or escape into the wild. It is unlawful to release any member of the order Crocodylia.
+Statutory/Other Authority:  496.012, 496.138, 496.146, 497.298, 497.308, 497.312, 497.318, 498.022, 498.029, 498.052, 498.222 & 498.234
+Statutes/Other Implemented:  498.234
+History:
+DFW 73-2025, amend filed 08/19/2025, effective 08/19/2025
+DFW 152-2017, amend filed 12/19/2017, effective 01/01/2018
+DFW 90-2017(Temp), f. & cert. ef. 7-14-17 thru 12-31-17
+DFW 69-2011, f. 6-15-11, cert. ef. 7-1-11
+DFW

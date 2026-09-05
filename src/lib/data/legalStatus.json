@@ -95,146 +95,146 @@
       "NE"
     ],
     "remaining": 0,
-    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 10 of the 52 jurisdictions have now been read for all 52 animals and 31 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
+    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 11 of the 52 jurisdictions have now been read for all 52 animals and 32 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 11,
+        "checked": 12,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 11,
+        "checked": 12,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 12,
+        "checked": 13,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 12,
+        "checked": 13,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 12,
+        "checked": 13,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 12,
+        "checked": 13,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 12,
+        "checked": 13,
         "of": 51
       },
       "green-anole": {
-        "checked": 12,
+        "checked": 13,
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 28,
+        "checked": 29,
         "of": 51
       },
       "tarantula": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "axolotl": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "box-turtle": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 37,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 37,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 37,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 37,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 38,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 38,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 38,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 38,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 39,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 40,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "green-iguana": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "burmese-python": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "degu": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "hamster": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "gerbil": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "bengal-cat": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "milk-snake": {
@@ -258,7 +258,7 @@
         "of": 51
       },
       "chinchilla": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "fennec-fox": {
@@ -286,7 +286,7 @@
         "of": 51
       },
       "cockatoo": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "hedgehog": {
@@ -630,9 +630,9 @@
       "note": "The operative rule. Restricted live wildlife needs a special licence, and the lists run by order and family rather than by species, so the whole of Carnivora is caught while most of the pet reptile trade is not. Two exceptions are written in by name: the genus Atelerix, the pet hedgehogs, and the genus Oryctolagus, which the rule says are not wildlife at all. Two subsections do quiet work: (D) exempts domestic animals, defined at R12-4-401 as a species that does not exist in the wild, and (E) pulls hybrids back in whenever one parent species is on the list. Note that the AZGFD commission rules PDF circulating as Supp. 13-2 is a 2013 edition and predates the Atelerix and Oryctolagus exceptions; read the current text, not that one."
     },
     "or-609-305": {
-      "title": "Or. Rev. Stat. § 609.305, 'Exotic animal' defined, with § 609.341 permit requirement",
+      "title": "Or. Rev. Stat. § 609.305, 'Exotic animal' defined, with §§ 609.341 and 609.351",
       "url": "https://oregon.public.law/statutes/ors_609.305",
-      "note": "A closed definition: non-indigenous Felidae except the domestic cat, nonhuman primates, non-wolf non-indigenous Canidae except the domestic dog, bears other than the black bear, and Crocodylia. § 609.341 bars keeping one without an ODA permit, and permits had to pre-date the 2009 Act, so the practical answer for a listed animal is no. Cities and counties may prohibit exotic animals by ordinance on top of this."
+      "note": "A five-line closed definition run by the Department of Agriculture: non-indigenous Felidae except Felis catus, non-human primates, non-wolf non-indigenous Canidae except the domestic dog, bears other than the black bear, and Crocodylia. § 609.341 bars keeping one without a permit and § 609.351 shut the application window, which was 90 days after 1 January 2010, or one year for an animal already held then. There is no hybrid clause anywhere in it. This statute answers cats, canids and crocodilians only; every other animal on this map is decided by the ODFW rules in OAR 635-056."
     },
     "wa-rcw-16-30": {
       "title": "Wash. Rev. Code ch. 16.30, Dangerous Wild Animals, § 16.30.010(2) and § 16.30.030",
@@ -1005,9 +1005,9 @@
       "note": "Nevada Legislature's administrative code chapter defining unprotected reptiles as any species not classified protected, sensitive, threatened, or endangered."
     },
     "or-635-056-0060": {
-      "title": "OAR 635-056-0060",
+      "title": "OAR 635-056-0060, Noncontrolled Species",
       "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-056-0060",
-      "note": "Oregon Secretary of State's administrative rules database entry listing wildlife species exempt from ODFW importation permits."
+      "note": "The allow-list. Wildlife on it may be imported, possessed, sold, purchased, exchanged or transported without an ODFW permit. It is long and written to genus or family with named exceptions, and it uses the taxonomy current when each entry was added rather than the current one."
     },
     "pa-58-79": {
       "title": "58 Pa. Code Ch. 79",
@@ -1288,6 +1288,31 @@
       "title": "Minnesota DNR, Pet-trade sales of amphibians and reptiles in Minnesota",
       "url": "https://www.dnr.state.mn.us/reptiles_amphibians/sales.html",
       "note": "The agency's own page. It gives the native turtle list, the endangered and threatened herptiles, the frog importation list, and the DNR's summary of the 2017 change, which it describes as reaching wild collected Minnesota snakes, lizards and salamanders. It does not mention the 2021 breeder-permit rule at all, which is the gap the reptile entries here flag."
+    },
+    "or-635-056-0020": {
+      "title": "OAR 635-056-0020, Animals Exempt from These Rules",
+      "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-056-0020",
+      "note": "ORS 496.004(19) leaves it to the commission to say which mammals are wild, and this rule is that list: 32 species declared not wild and outside the wildlife rules entirely. It carries the guinea pig, gerbil, chinchilla, ferret, European rabbit, domestic cat breeds and all Psittaciformes. Read the binomials rather than the common names; the hamster entry is the one that does not say what it looks like it says."
+    },
+    "or-635-056-0050": {
+      "title": "OAR 635-056-0050, Prohibited Species",
+      "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-056-0050",
+      "note": "The ban list, and the one to check before assuming a common pet is fine in Oregon. It reaches the prairie dog, the capybara, the southern flying squirrel, the tiger salamander, the snapping turtle and the whole of Trachemys, all of which are ordinary pet-trade animals elsewhere on this map."
+    },
+    "or-635-056-0130": {
+      "title": "OAR 635-056-0130, Classification Requests",
+      "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-056-0130",
+      "note": "Subsection (1) is what makes Oregon a closed-list state: for species not listed in the rules, no person may possess, import, purchase, sell or exchange the species. An animal that is simply absent from all three lists is barred, not unregulated, and the only routes are a petition to the commission or a request to the director to classify it as Noncontrolled."
+    },
+    "or-496-004": {
+      "title": "Or. Rev. Stat. § 496.004(19), definition of wildlife",
+      "url": "https://oregon.public.law/statutes/ors_496.004",
+      "note": "Fish, shellfish, amphibians and reptiles, feral swine, wild birds as defined by commission rule and other wild mammals as defined by commission rule. Reptiles and amphibians are wildlife by statute with no rule needed, which is why every reptile question in Oregon runs through OAR 635-056. Terrestrial invertebrates are outside it."
+    },
+    "or-603-052-1320": {
+      "title": "OAR 603-052-1320, Approved Species (Non-Regulated)",
+      "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=603-052-1320",
+      "note": "Oregon's second closed list, run by the Department of Agriculture and covering terrestrial invertebrates, which the Fish and Wildlife rules never reach. Subsection (3) bars possessing any live invertebrate not on the list without a Department permit, and subsection (1) limits the clearance to stock collected within the continental United States. The list is long and written to species with the intended use in brackets, and most pet-trade arachnids, myriapods and roaches are on it. It does not apply to marine or aquatic invertebrates."
     }
   },
   "animals": {
@@ -1407,9 +1432,11 @@
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305",
-          "note": "Outside the statutory definition of exotic animal.",
-          "verifiedOn": "2026-08-04",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(1)(i)",
+          "quote": "Four-toed hedgehog -- Erinaceidae -- Atelerix albiventris.",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The African pygmy hedgehog is named to the species. Which species matters here more than in most states: the three Eurasian hedgehogs, Erinaceus europaeus, E. concolor and E. amurensis, are on the prohibited list. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
           "localOverride": true
         },
         "WA": {
@@ -1774,9 +1801,11 @@
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305",
-          "note": "Mustelidae is not in the definition.",
-          "verifiedOn": "2026-08-04",
+          "sourceId": "or-635-056-0020",
+          "cite": "OAR 635-056-0020",
+          "quote": "Pursuant to the definition of \"wildlife,\" the following species are not subject to these rules because they are not \"wild\" ... (10) Ferret (European polecat) — Mustela putorius.",
+          "note": "This is the strongest position an animal can hold in Oregon. ORS 496.004(19) leaves it to the commission to define which mammals count as wild, and this rule is that definition: the 32 species on it are declared not wild and fall outside the wildlife rules altogether, rather than being permitted by them. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
           "localOverride": true
         },
         "WA": {
@@ -2183,9 +2212,11 @@
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305",
-          "note": "Marsupials are not in the definition.",
-          "verifiedOn": "2026-08-04",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(1)(h)(D)",
+          "quote": "Sugar glider -- Petauridae -- Petaurus breviceps;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Named to the species, alongside the feathertail glider, the kangaroos and wallabies at family level, the striped possums and the cuscuses. Oregon prohibits two other marsupials by name, the common brushtail and the common ringtail possum. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
           "localOverride": true
         },
         "WA": {
@@ -2829,6 +2860,15 @@
           "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
           "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it. The other place to check for a mammal here is the prohibited invasive species list at Minn. R. 6216.0250, which runs to four species, the Asian raccoon dog, Eurasian swine, European rabbit and nutria, and the hamster is not among them.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "unclear",
+          "sourceId": "or-635-056-0130",
+          "cite": "OAR 635-056-0130(1); OAR 635-056-0020(14)",
+          "quote": "For species that are not listed in these rules, no person may possess, import, purchase, sell, exchange, or offer to purchase, sell or exchange the species in Oregon.",
+          "note": "Oregon appears to have exempted the wrong hamster. The not-wild list at OAR 635-056-0020(14) reads \"Common Hamster — Cricetus cricetus\", which is the European common hamster, a large wild burrowing rodent nobody keeps as a pet. The pet-shop animal is the Syrian or golden hamster, Mesocricetus auratus, and that binomial appears nowhere in the division: not on the not-wild list, not on the noncontrolled list, which clears the dwarf hamsters of the genus Phodopus, and not on the prohibited list, which names Calomyscus and Cricetulus. An unlisted mammal is not unregulated in Oregon; OAR 635-056-0130(1) bars possessing it. Read literally, the commonest small pet in the country cannot be kept here. Recorded unclear rather than banned because the exemption plainly means to reach the pet hamster and attaches the wrong name to it, and because pet hamsters are sold openly in Oregon. It is the clearest drafting slip found on this map, and the fix is one binomial. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3174,6 +3214,15 @@
           "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
           "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it, and the gerbil is not on the prohibited invasive species list either.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0020",
+          "cite": "OAR 635-056-0020",
+          "quote": "Pursuant to the definition of \"wildlife,\" the following species are not subject to these rules because they are not \"wild\" ... (11) Gerbil (Mongolian Jird) — Meriones unguiculatus.",
+          "note": "This is the strongest position an animal can hold in Oregon. ORS 496.004(19) leaves it to the commission to define which mammals count as wild, and this rule is that definition: the 32 species on it are declared not wild and fall outside the wildlife rules altogether, rather than being permitted by them. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "encyclopediaId": "gerbil"
@@ -3529,6 +3578,15 @@
           "quote": "\"Protected wild animals\" means big game, small game, game fish, native rough fish, minnows, leeches, chubs, frogs, turtles, clams, mussels, wolf, mourning doves, bats, snakes, salamanders, lizards, any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134, and wild animals that are protected by a restriction in the time or manner of taking, other than a restriction in the use of artificial lights, poison, or motor vehicles.",
           "note": "The protected list is worth reading in full for Minnesota, because it names five herptile categories and then almost nothing among birds beyond game birds and mourning doves. The monk parakeet falls outside it, so § 97A.501's possession bar does not apply. Minnesota is one of the states that never picked this species up. It is on neither the prohibited nor the regulated invasive species list, and there is no counterpart to the release bans other states wrote for it. The reason is probably climate rather than policy: the naturalised colonies that prompted those rules are in warmer states.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0020",
+          "cite": "OAR 635-056-0020",
+          "quote": "Pursuant to the definition of \"wildlife,\" the following species are not subject to these rules because they are not \"wild\" ... (28) Parrots, Parakeets, Lories, and Cockatoos — Psittaciforme (All species).",
+          "note": "Oregon is unusual in that its parrot exemption is written at order level with no carve-out at all, so the monk parakeet sits in it alongside every other psittacine. The species is named nowhere in the division: not on the prohibited bird list, not among the controlled birds, which are the mute swan, the raptors, the game birds and three named passerines. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "encyclopediaId": "quaker-parakeet"
@@ -3893,6 +3951,15 @@
           "note": "Illinois names 11 wild cats and stops. The Bengal is a cross with the Asian leopard cat, Prionailurus bengalensis, which is not one of them, and the statute has no hybrid clause, no generation cutoff and no weight threshold, so nothing in it reaches a Bengal at any filial generation. Worth reading the list carefully rather than the word leopard in it: the leopard named is Panthera pardus. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305",
+          "cite": "ORS 609.305(1); ORS 609.341(4)(a)(B)",
+          "quote": "Any member of the family Felidae not indigenous to Oregon, except the species Felis catus (domestic cat)",
+          "note": "Oregon has no hybrid clause anywhere in its exotic animal statute, which is what decides this. The definition names Felidae and excepts Felis catus, and the wildlife rules separately declare \"Cat (all domestic breeds) — Felis catus\" not wild, so a Bengal registered as a domestic breed sits on the exempt side of both. The statute goes further than silence: ORS 609.341(4)(a)(B) expressly contemplates breeding a small exotic feline with a domestic cat for retail sale of the offspring under an Agriculture permit, which is the Bengal and Savannah breeding programme described in a statute that then does nothing to the offspring. Compare Minnesota, where the same question turns on a hybrid sentence Oregon never wrote. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -3988,11 +4055,12 @@
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "cite": "ORS § 609.305",
-          "note": "Oregon's exotic animal definition is closed: non-indigenous cats other than the domestic cat, non-human primates, non-wolf non-indigenous canids other than the domestic dog, bears other than the black bear, and crocodilians. The only reptiles in it are crocodilians."
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(M)",
+          "quote": "Chameleons -- Chamaeleonidae -- All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The whole family is cleared, so no chameleon question arises in Oregon. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
@@ -4600,6 +4668,15 @@
           "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
           "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. Whether a Russian tortoise is a \"turtle\" for this section is not spelled out, since Minnesota never defines the word and its turtle rules are plainly written around aquatic natives. It does not matter much in practice: read broadly, the retail outlet exemption in subd. 2c covers a pet-shop animal anyway, and read narrowly the section does not reach it at all. Either way no licence is needed for one bought at retail, and the species is on neither invasive species list.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(d)(H)",
+          "quote": "Tortoises -- Testudinidae -- All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Oregon clears the tortoises as a family with no exceptions and no range test, which is the opposite of how Colorado now does it. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/russian-tortoise-legal-guide/"
@@ -4674,9 +4751,11 @@
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305",
-          "note": "Only Crocodylia among reptiles.",
-          "verifiedOn": "2026-08-04",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(c)(B)",
+          "quote": "Pythons and Boas -- Boidae -- All nonnative species (including those also classified as Loxocemidae spp.);",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Boidae is cleared at family level for nonnative species, with no length threshold anywhere in the rule. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
           "localOverride": true
         },
         "WA": {
@@ -5043,11 +5122,12 @@
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "cite": "ORS § 609.305",
-          "note": "The only reptiles in Oregon's closed definition are crocodilians, so no constrictor is covered at any length."
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(c)(B)",
+          "quote": "Pythons and Boas -- Boidae -- All nonnative species (including those also classified as Loxocemidae spp.);",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Cleared on the family entry, with no length threshold. Oregon has one native boid, the rubber boa, which is what the word nonnative is doing in the entry. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
@@ -5650,6 +5730,15 @@
           "quote": "\"Wild animals\" means all creatures, whether dead or alive, not human, wild by nature, endowed with sensation and power of voluntary motion, and includes mammals, birds, fish, amphibians, reptiles, crustaceans, and mollusks.",
           "note": "A tarantula is an arachnid, and Minnesota's definition of wild animals lists seven groups, of which the only invertebrates are crustaceans and mollusks. That places it outside chapter 97A altogether, including the protected wild animal list and the possession bar built on it. The invasive species rules stop in the same place: the invertebrates designated under Minn. R. 6216.0250 are aquatic snails, rusty crayfish and the spiny waterflea. Minnesota is unusual in that its wild animal definition is broad enough to catch a ball python and still narrow enough to miss a tarantula.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "conditional",
+          "sourceId": "or-603-052-1320",
+          "cite": "OAR 603-052-1320(1), (3), (7)",
+          "quote": "Invertebrate species listed as approved may be imported, possessed, sold, purchased, exchanged, transported, or released in Oregon without a permit from the Department. This applies only to stock collected within the continental United States. ... Tarantulas, Family Theraphosidae (education, pet). ... Live invertebrates not on the list of approved invertebrates in any life stage may not be imported, possessed, sold, purchased, exchanged, transported, or released in the state unless a permit is first obtained from the Department.",
+          "note": "Oregon runs two closed lists, and this animal is on the second one. ORS 496.004(19) defines wildlife as fish, shellfish, amphibians, reptiles, feral swine, wild birds and wild mammals, so a terrestrial arthropod is outside the Fish and Wildlife rules entirely; the Department of Agriculture picks it up instead under its plant pest authority. Cleared at family level and marked for pet use, so no species question arises. The asterisked stock restriction on the two entries below it, the wolf spider and the orb weaver, which may come only from Pacific Northwest stock, does not apply to the tarantulas. The condition is a real one and easy to miss: the clearance applies only to stock collected within the continental United States, so an animal imported from abroad needs a Department permit even though the species is approved. Nothing on this list is unregulated; an invertebrate absent from it may not be possessed at all without a permit. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -5961,6 +6050,15 @@
           "cite": "§ 97A.015, subd. 55",
           "quote": "\"Wild animals\" means all creatures, whether dead or alive, not human, wild by nature, endowed with sensation and power of voluntary motion, and includes mammals, birds, fish, amphibians, reptiles, crustaceans, and mollusks.",
           "note": "The emperor scorpion is an arachnid, and Minnesota's definition of wild animals lists seven groups, of which the only invertebrates are crustaceans and mollusks. That places it outside chapter 97A altogether, including the protected wild animal list and the possession bar built on it. The invasive species rules stop in the same place: the invertebrates designated under Minn. R. 6216.0250 are aquatic snails, rusty crayfish and the spiny waterflea. Minnesota is unusual in that its wild animal definition is broad enough to catch a ball python and still narrow enough to miss a tarantula.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "conditional",
+          "sourceId": "or-603-052-1320",
+          "cite": "OAR 603-052-1320(1), (3), (7)",
+          "quote": "Invertebrate species listed as approved may be imported, possessed, sold, purchased, exchanged, transported, or released in Oregon without a permit from the Department. This applies only to stock collected within the continental United States. ... Emperor scorpion, Pandinus imperator (education, pet). ... Live invertebrates not on the list of approved invertebrates in any life stage may not be imported, possessed, sold, purchased, exchanged, transported, or released in the state unless a permit is first obtained from the Department.",
+          "note": "Oregon runs two closed lists, and this animal is on the second one. ORS 496.004(19) defines wildlife as fish, shellfish, amphibians, reptiles, feral swine, wild birds and wild mammals, so a terrestrial arthropod is outside the Fish and Wildlife rules entirely; the Department of Agriculture picks it up instead under its plant pest authority. Named to the species and marked for pet use, in a scorpion section that runs to more than a dozen entries including the fat-tailed scorpions and the deathstalker. The condition is a real one and easy to miss: the clearance applies only to stock collected within the continental United States, so an animal imported from abroad needs a Department permit even though the species is approved. Nothing on this list is unregulated; an invertebrate absent from it may not be possessed at all without a permit. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6306,6 +6404,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A tegu is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(V)",
+          "quote": "Tegus -- Teiidae -- Tupinambis All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The Argentine black and white tegu was Tupinambis merianae when this entry was written and was moved to Salvator in 2012. Oregon still names the old genus, which is the taxonomy the entry has to be read in. Notable for what Oregon did not do: several states wrote tegu-specific restrictions after the Florida populations established, and this clearance is untouched. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -6631,6 +6738,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A savannah monitor is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(W)",
+          "quote": "Monitor lizards -- Varanidae -- All species except Varanus griseus;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The family is cleared with one exception, the desert monitor, and it is not this species. Oregon draws the line by species rather than by adult size, so the savannah and the Nile monitor land in the same place. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -6710,12 +6826,13 @@
           "verifiedOn": "2026-08-04"
         },
         "OR": {
-          "status": "legal",
-          "sourceId": "or-609-305",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "cite": "ORS § 609.305",
-          "note": "The closed definition covers cats, primates, canids, bears and crocodilians. No rodent appears in it."
+          "status": "banned",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(a)(J)(xvii)",
+          "quote": "Prairie dogs — Sciuridae — Cynomys All species and hybrids;",
+          "note": "Prohibited at genus level, not merely unlisted. This entry previously read as unrestricted on the strength of the Agriculture exotic animal statute, which covers cats, primates, canids, bears and crocodilians and never reaches a rodent. The statute is the wrong law for this question: ODFW runs the nonnative wildlife lists, and the prairie dog is on the ban list alongside the capybara, the marmots and the southern flying squirrel. OAR 635-056-0150 allows someone who held the animal before the commission listed it to keep it for its life, on proof of lawful prior possession, with no transfer, sale or transport inside Oregon and no release. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
@@ -7116,10 +7233,12 @@
           }
         },
         "OR": {
-          "status": "legal",
-          "sourceId": "or-609-305",
-          "note": "Rodents are outside the definition.",
-          "verifiedOn": "2026-08-04",
+          "status": "banned",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(a)(J)(vii)",
+          "quote": "Capybara — Hydrochaeridae — Hydrochaeris hydrochaeris;",
+          "note": "Named to the species on the prohibited list. This entry previously read as unrestricted because rodents are outside the Agriculture exotic animal definition, which is true and beside the point: the ODFW nonnative wildlife rules are what decide a rodent in Oregon, and they name this one. OAR 635-056-0150 allows someone who held the animal before the commission listed it to keep it for its life, on proof of lawful prior possession, with no transfer, sale or transport inside Oregon and no release. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
           "localOverride": true
         },
         "WA": {
@@ -7511,12 +7630,14 @@
         "OR": {
           "status": "banned",
           "sourceId": "or-609-305",
-          "note": "Non-wolf, non-indigenous Canidae, with the same closed permit route.",
-          "verifiedOn": "2026-08-04",
+          "cite": "ORS 609.305; ORS 609.341(1); ORS 609.351(1)",
+          "quote": "Any nonwolf member of the family Canidae not indigenous to Oregon, except the species Canis familiaris (domestic dog)",
+          "note": "Oregon writes its canid clause the same way as its cat clause, by family with one species excepted, so the fennec fox is an exotic animal on its family membership alone. Most states that ban a serval leave a fennec fox alone, because their cat rules are drawn by family and their canid rules by species; Oregon draws both by family, which is why the two land together here. The permit window closed in 2010 and was never reopened. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "grandfathered": {
-            "before": "2009-01-01",
-            "detail": "ODA permits had to pre-date the 2009 Act."
+            "before": "2010-01-01",
+            "detail": "A State Department of Agriculture permit issued before 1 January 2010, or issued within a year of that date on proof the animal was already held. Applications closed 90 days after 1 January 2010, breeding a permitted animal is barred, and possession ends 30 days after a permit lapses."
           },
+          "verifiedOn": "2026-09-05",
           "localOverride": true
         },
         "WA": {
@@ -7917,12 +8038,14 @@
         "OR": {
           "status": "banned",
           "sourceId": "or-609-305",
-          "note": "Non-indigenous Felidae. Permits had to pre-date the 2009 Act, so there is no route for a new animal.",
-          "verifiedOn": "2026-08-04",
+          "cite": "ORS 609.305; ORS 609.341(1); ORS 609.351(1)",
+          "quote": "Any member of the family Felidae not indigenous to Oregon, except the species Felis catus (domestic cat)",
+          "note": "The serval is caught by two words and a family name, the same way a lion is. What makes this a ban rather than a permit regime is ORS 609.351, which opened the application window for 90 days after 1 January 2010 and never reopened it: there is no route to a new permit for a new animal, only a lifetime allowance for animals that were already here and papered in time. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "grandfathered": {
-            "before": "2009-01-01",
-            "detail": "ODA permits had to pre-date the 2009 Act, so no new permit is available."
+            "before": "2010-01-01",
+            "detail": "A State Department of Agriculture permit issued before 1 January 2010, or issued within a year of that date on proof the animal was already held. Applications closed 90 days after 1 January 2010, breeding a permitted animal is barred, and possession ends 30 days after a permit lapses."
           },
+          "verifiedOn": "2026-09-05",
           "localOverride": true
         },
         "WA": {
@@ -8643,6 +8766,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "Chinchillas appear by name on the exempt mammal list, so no permit is required.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0020",
+          "cite": "OAR 635-056-0020",
+          "quote": "Pursuant to the definition of \"wildlife,\" the following species are not subject to these rules because they are not \"wild\" ... (7) Chinchilla — Chinchilla laniger.",
+          "note": "This is the strongest position an animal can hold in Oregon. ORS 496.004(19) leaves it to the commission to define which mammals count as wild, and this rule is that definition: the 32 species on it are declared not wild and fall outside the wildlife rules altogether, rather than being permitted by them. Oregon names the domesticated chinchilla directly, and separately prohibits the Argentine plains viscacha, its wild relative in the same family. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -8993,6 +9125,15 @@
           "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
           "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it. Minnesota has no general exotic mammal licence, so an animal outside those three groups and off the invasive lists is simply unregulated at state level.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0020",
+          "cite": "OAR 635-056-0020",
+          "quote": "Pursuant to the definition of \"wildlife,\" the following species are not subject to these rules because they are not \"wild\" ... (13) Guinea pig — Cavia porcellus.",
+          "note": "This is the strongest position an animal can hold in Oregon. ORS 496.004(19) leaves it to the commission to define which mammals count as wild, and this rule is that definition: the 32 species on it are declared not wild and fall outside the wildlife rules altogether, rather than being permitted by them. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -9331,6 +9472,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A green iguana is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(R)",
+          "quote": "Iguanid lizards -- Iguanaidae -- All nonnative species except: Crotaphytus spp., Gambelia spp., Sceloporus spp., Uta spp., Phrynosoma spp.;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Iguana iguana is a nonnative iguanid and none of the five excepted genera, which are all Oregon natives. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "encyclopediaId": "green-iguana"
@@ -9670,6 +9820,15 @@
           "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
           "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. The snapping turtle is the one animal on this map that Minnesota treats as its own harvestable native turtle. It and the western painted turtle are the only two a recreational turtle licence covers, and the only two native turtles that may be sold as pets, under a turtle seller's licence. Minn. R. 6256.0500 sets the size floor at a shell length greater than 12 inches. A retail purchase is exempt from the licence requirement, and taking one from the wild needs both an angling licence and a recreational turtle licence, for personal use only.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(d)(A)(ii)",
+          "quote": "Snapping turtle — Chelydridae — All species and hybrids;",
+          "note": "The whole family is prohibited, so the alligator snapping turtle goes with the common one. Chelydridae appears nowhere on the noncontrolled list, which clears eight other turtle families. OAR 635-056-0150 allows someone who held the animal before the commission listed it to keep it for its life, on proof of lawful prior possession, with no transfer, sale or transport inside Oregon and no release. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -9987,6 +10146,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A tokay gecko is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(P)",
+          "quote": "Geckos -- Gekkonidae and Eublepharidae -- All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Gekko gecko is a Gekkonidae in any taxonomy, so nothing turns on the family question here. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -10316,6 +10484,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. The eastern tiger salamander is a Minnesota native, and it is the animal the DNR's own summary of the rule is aimed at, since the department describes the restriction as reaching wild collected Minnesota salamanders. It is not on the state endangered or threatened list; the listed amphibian is Blanchard's cricket frog. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(d)(A)(i)",
+          "quote": "Tiger salamander — Ambystomatidae — Ambystoma tigrinum All nonnative sub-species;",
+          "note": "Prohibited by name, and the reason is next door: eastern Oregon has its own tiger salamander population, and the rule bars the nonnative subspecies that would hybridise with it. Oregon lists nineteen caudates as prohibited and four as noncontrolled, and the axolotl is on the short list while this species is on the long one. OAR 635-056-0150 allows someone who held the animal before the commission listed it to keep it for its life, on proof of lawful prior possession, with no transfer, sale or transport inside Oregon and no release. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -10646,6 +10823,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A Nile monitor is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(W)",
+          "quote": "Monitor lizards -- Varanidae -- All species except Varanus griseus;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Varanus niloticus is cleared by the same family entry that clears the savannah monitor; the single exception is Varanus griseus. Several states separate these two on size or on the Florida populations, and Oregon does not. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -10994,6 +11180,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A Burmese python is a snake and takes the same breeder-source condition. Federal law is the sharper constraint: the species has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport, so one cannot lawfully be brought into Minnesota at all. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(c)(B)",
+          "quote": "Pythons and Boas -- Boidae -- All nonnative species (including those also classified as Loxocemidae spp.);",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Oregon itself does not restrict this species: the family entry clears it and there is no length trigger. Federal law is the constraint that bites, since the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport into Oregon. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -11339,6 +11534,15 @@
           "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
           "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it, and the degu is on neither the prohibited nor the regulated invasive species list.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(1)(q)(S)",
+          "quote": "Degus -- Octodontidae -- Octodon All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Cleared at genus level. Oregon is unusually specific about which rodents it will and will not have: the same rule clears the mara, the paca, the agoutis and the dwarf hamsters, and the prohibited list names the capybara, the prairie dogs and the plains viscacha. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "encyclopediaId": "degu"
@@ -11646,6 +11850,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. The axolotl is a salamander, so the same condition applies. Nothing else in Minnesota reaches it: it is not on either invasive species list, and the DNR's frog importation permit list at Minn. R. 6256.0300 is frogs and toads only. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(3)(b)(A)",
+          "quote": "Axolotl -- Ambystomatidae -- Ambystoma mexicanum;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Oregon lists only four caudates as Noncontrolled and the axolotl is the first of them. Its close relative is on the opposite list: Ambystoma tigrinum, all nonnative subspecies, is prohibited. Two Ambystoma, one cleared by name and one banned by name, in the same division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -11959,6 +12172,15 @@
           "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
           "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. Neither box turtle is on the DNR's list of native Minnesota turtles, so the ban on selling native turtles as pets, which spares only the snapping turtle and the painted turtle, does not reach one. A box turtle bought at a retail outlet is exempt from the licence requirement; there is no lawful wild-take route, since a recreational turtle licence authorises only painted and snapping turtles.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(d)(D)",
+          "quote": "Pond and box turtles -- Emydidae -- All nonnative species except Pseudemys spp., Trachemys spp., Chinemys spp., Clemmys spp., Chrysemys spp., Graptemys spp., Emys orbicularis, Emydoidea blandingii and Mauremys spp.;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Terrapene is not among the nine excepted genera, so box turtles are cleared while most of the rest of the family is not. Every one of those exceptions appears on the prohibited list, so this is a clearance with real teeth around it: the red-eared slider, four lines below the box turtle in the same family, is banned outright in Oregon. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -12276,6 +12498,15 @@
           "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
           "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. The retail exemption is what makes a pet slider straightforward: buying one at a retail outlet needs no licence. Taking one from the wild is a different matter and not available, because the only turtles a recreational turtle licence authorises taking are the western painted turtle and the snapping turtle. Minnesota also designates the red-eared slider a regulated invasive species, which the DNR describes as legal to possess, sell, buy and transport but never to release into a free-living state. It is not on the DNR's list of native Minnesota turtles.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(d)(A)(x)",
+          "quote": "Pond slider — Emydidae — Pseudemys and Trachemys All species and hybrids;",
+          "note": "Both genera are prohibited outright, and the same species is excepted by name from the Emydidae clearance on the noncontrolled list, so Oregon says it twice. This is among the firmest positions any state on this map takes on the red-eared slider: not a licence, not an invasive-species labelling rule, a flat bar on possession, import, purchase, sale, exchange and transport. OAR 635-056-0150 allows someone who held the animal before the commission listed it to keep it for its life, on proof of lawful prior possession, with no transfer, sale or transport inside Oregon and no release. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -12590,6 +12821,15 @@
           "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
           "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. Whether a sulcata is a \"turtle\" for this section is not spelled out, since Minnesota never defines the word and its turtle rules are plainly written around aquatic natives. It does not matter much in practice: read broadly, the retail outlet exemption in subd. 2c covers a pet-shop animal anyway, and read narrowly the section does not reach it at all. Either way no licence is needed for one bought at retail, and the species is on neither invasive species list.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(d)(H)",
+          "quote": "Tortoises -- Testudinidae -- All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The whole family is cleared, so the sulcata needs nothing. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -12903,6 +13143,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. Both hognose species are Minnesota natives, so the wild-collection reading and the breeder-source reading point the same way. Neither is listed as endangered or threatened in Minnesota; the DNR's listed snakes are the eastern massasauga, the timber rattlesnake and the western ratsnake. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(c)(D)",
+          "quote": "Hognose snake -- Colubridae -- Heterodon nasicus;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Oregon clears one hognose by species and no others. The western hognose, Heterodon nasicus, is the pet-trade animal and is named. The eastern hognose, H. platirhinos, is on no list at all, which under OAR 635-056-0130(1) means it may not be possessed. A rule written to a single binomial is one to read exactly. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -13214,6 +13463,15 @@
           "quote": "\"Protected wild animals\" means big game, small game, game fish, native rough fish, minnows, leeches, chubs, frogs, turtles, clams, mussels, wolf, mourning doves, bats, snakes, salamanders, lizards, any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134, and wild animals that are protected by a restriction in the time or manner of taking, other than a restriction in the use of artificial lights, poison, or motor vehicles.",
           "note": "The protected list is worth reading in full for Minnesota, because it names five herptile categories and then almost nothing among birds beyond game birds and mourning doves. The African grey falls outside it, so § 97A.501's possession bar does not apply. No parrot appears on either invasive species list. Federal CITES Appendix I paperwork is the live constraint for this species and is not a Minnesota matter.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0020",
+          "cite": "OAR 635-056-0020",
+          "quote": "Pursuant to the definition of \"wildlife,\" the following species are not subject to these rules because they are not \"wild\" ... (28) Parrots, Parakeets, Lories, and Cockatoos — Psittaciforme (All species).",
+          "note": "The whole order Psittaciformes is declared not wild, so the African grey is outside the wildlife rules entirely. Federal CITES Appendix I paperwork is the live constraint on this species and is not an Oregon matter. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -13519,6 +13777,15 @@
           "quote": "\"Wild animals\" means all creatures, whether dead or alive, not human, wild by nature, endowed with sensation and power of voluntary motion, and includes mammals, birds, fish, amphibians, reptiles, crustaceans, and mollusks.",
           "note": "The giant African millipede is a myriapod, and Minnesota's definition of wild animals lists seven groups, of which the only invertebrates are crustaceans and mollusks. That places it outside chapter 97A altogether, including the protected wild animal list and the possession bar built on it. The invasive species rules stop in the same place: the invertebrates designated under Minn. R. 6216.0250 are aquatic snails, rusty crayfish and the spiny waterflea. Minnesota is unusual in that its wild animal definition is broad enough to catch a ball python and still narrow enough to miss a tarantula.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "conditional",
+          "sourceId": "or-603-052-1320",
+          "cite": "OAR 603-052-1320(1), (3), (7)",
+          "quote": "Invertebrate species listed as approved may be imported, possessed, sold, purchased, exchanged, transported, or released in Oregon without a permit from the Department. This applies only to stock collected within the continental United States. ... Giant African millipede, Archispirostreptus gigas (education, pet). ... Live invertebrates not on the list of approved invertebrates in any life stage may not be imported, possessed, sold, purchased, exchanged, transported, or released in the state unless a permit is first obtained from the Department.",
+          "note": "Oregon runs two closed lists, and this animal is on the second one. ORS 496.004(19) defines wildlife as fish, shellfish, amphibians, reptiles, feral swine, wild birds and wild mammals, so a terrestrial arthropod is outside the Fish and Wildlife rules entirely; the Department of Agriculture picks it up instead under its plant pest authority. Named to the species and marked for pet use, alongside five other millipedes. Oregon is one of the few states that answers this animal by name in either direction. The condition is a real one and easy to miss: the clearance applies only to stock collected within the continental United States, so an animal imported from abroad needs a Department permit even though the species is approved. Nothing on this list is unregulated; an invertebrate absent from it may not be possessed at all without a permit. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13742,10 +14009,12 @@
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305",
-          "cite": "ORS § 609.305",
-          "note": "The only reptiles in Oregon's closed dangerous-animal definition are crocodilians.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(c)(C)",
+          "quote": "Milk, Pine, Corn, Rat, Garter snakes -- Colubridae -- All nonnative species of Milk, Pine, Corn, Rat, Garter;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The corn snake is a nonnative colubrid of a named kind, so the entry reaches it directly. The word nonnative is load-bearing across this whole entry, which is why the garter snake comes out differently. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "PA": {
           "status": "legal",
@@ -14070,10 +14339,12 @@
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305",
-          "cite": "ORS § 609.305",
-          "note": "The only reptiles in Oregon's closed dangerous-animal definition are crocodilians.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(c)(C)",
+          "quote": "Milk, Pine, Corn, Rat, Garter snakes -- Colubridae -- All nonnative species of Milk, Pine, Corn, Rat, Garter;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Milk snakes are named in the entry and are not native to Oregon, so the clearance applies without qualification. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "PA": {
           "status": "conditional",
@@ -14448,10 +14719,12 @@
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305",
-          "cite": "ORS § 609.305",
-          "note": "The only reptiles in Oregon's closed dangerous-animal definition are crocodilians.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(c)(B)",
+          "quote": "Pythons and Boas -- Boidae -- All nonnative species (including those also classified as Loxocemidae spp.);",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The rosy boa is a boid and is not native to Oregon, whose only native boid is the rubber boa, so the family clearance reaches it. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "PA": {
           "status": "legal",
@@ -14812,6 +15085,15 @@
           "quote": "A person may not take, buy, sell, transport, or possess a protected wild animal unless allowed by the game and fish laws.",
           "note": "Minnesota bars possessing protected wild animals, and the flying squirrel is not one. Section 97A.015, subd. 39 lists the protected categories, and among mammals it reaches big game, small game, wolf and bats; subd. 45 defines small game and names the gray squirrel, fox squirrel, cottontail rabbit and snowshoe hare but not the flying squirrel. Minn. R. 6134 lists nineteen mammals of special concern, including two other squirrel-family animals, and no Glaucomys. That leaves it an unprotected wild animal under subd. 53, outside the § 97A.501 prohibition. Worth checking against the states either side of it: this is one of the few places a flying squirrel needs nothing at all, and the reason is a gap in a list rather than an express permission.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(a)(J)(xviii)",
+          "quote": "Southern flying squirrel — Sciuridae — Glaucomys volans;",
+          "note": "Oregon names Glaucomys volans specifically, and separately prohibits the giant flying squirrels of the genus Petaurista. Oregon has its own native flying squirrel, the northern, which is why the prohibition is written to the southern species: this is a rule about keeping a nonnative congener out rather than about the pet trade as such. OAR 635-056-0150 allows someone who held the animal before the commission listed it to keep it for its life, on proof of lawful prior possession, with no transfer, sale or transport inside Oregon and no release. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -15155,6 +15437,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A ackie monitor is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(W)",
+          "quote": "Monitor lizards -- Varanidae -- All species except Varanus griseus;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Varanus acanthurus is cleared by the family entry, the single exception being Varanus griseus. A cleaner answer than the states whose monitor rules turn on native range or adult length. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -15445,10 +15736,11 @@
         "OR": {
           "status": "conditional",
           "sourceId": "or-635-056-0060",
-          "cite": "OAR 635-056-0060(C)",
-          "quote": "Milk, Pine, Corn, Rat, Garter snakes -- Colubridae -- All nonnative species except Boiga irregularis, Lampropeltis getula, L. zonata, and Pituophis catenifer",
-          "note": "Oregon's noncontrolled clearance for this group of colubrids is written for nonnative individuals. No equivalent express clearance was located for a garter snake that is an Oregon native, which instead appears to fall under the state's general nongame-wildlife holding-permit rule once three or more are kept.",
-          "verifiedOn": "2026-08-27"
+          "cite": "OAR 635-056-0060(4)(c)(C)",
+          "quote": "Milk, Pine, Corn, Rat, Garter snakes -- Colubridae -- All nonnative species of Milk, Pine, Corn, Rat, Garter;",
+          "note": "The clearance is written for nonnative garter snakes only, and the common garter snake, Thamnophis sirtalis, is an Oregon native. So which animal it is decides the answer: a nonnative Thamnophis is cleared outright, and an Oregon one is not covered by this entry at all. Native wildlife falls outside this division, which by its own title governs nonnative wildlife, and lands instead under the ODFW protected wildlife and holding rules in OAR 635 division 44. Note also that the entry has been rewritten since it was last read here; it previously carved out Boiga irregularis, Lampropeltis getula, L. zonata and Pituophis catenifer, and now reads as a positive list of the five snake kinds. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "PA": {
           "status": "conditional",
@@ -15838,10 +16130,11 @@
         "OR": {
           "status": "conditional",
           "sourceId": "or-635-056-0060",
-          "cite": "OAR 635-056-0060(D)",
-          "quote": "Individuals of Lampropeltis getula, L. zonata and Pituophis catenifer that are morphologically distinct from native species.",
-          "note": "Oregon's kingsnake clearance, written under the older taxonomy in which the California kingsnake was classified as Lampropeltis getula californiae, only reaches individuals 'morphologically distinct from native species' -- in practice, a recognizable color or pattern morph rather than a wild-type-looking snake. Wild-caught, native-looking kingsnakes and their offspring aren't covered.",
-          "verifiedOn": "2026-08-27"
+          "cite": "OAR 635-056-0060(4)(c)(F)",
+          "quote": "Kingsnakes and gopher (bull) snakes -- Colubridae -- Individuals of Lampropeltis getula, L. zonata and Pituophis catenifer that are morphologically distinct from native species.",
+          "note": "Oregon clears these snakes individual by individual rather than by species, and the test is appearance: an animal must be morphologically distinct from the native species, which in practice means a recognisable colour or pattern morph rather than a wild-type-looking snake. Wild-caught, native-looking kingsnakes and their offspring are not covered. The entry is also written under the older taxonomy in which the California kingsnake was Lampropeltis getula californiae; it has since been raised to L. californiae, which Oregon does not name, so the animal depends on being read as part of L. getula. Two layers of imprecision on one line. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "PA": {
           "status": "legal",
@@ -16331,6 +16624,15 @@
           "note": "Cockatoos is named in no Michigan statute or order. The Large Carnivore Act covers cats and bears, the captive game permit covers native game, and the herp order covers reptiles and amphibians, so nothing reaches a pet parrot. The only requirement is the certificate of veterinary inspection for a non-poultry bird moved into the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0020",
+          "cite": "OAR 635-056-0020",
+          "quote": "Pursuant to the definition of \"wildlife,\" the following species are not subject to these rules because they are not \"wild\" ... (28) Parrots, Parakeets, Lories, and Cockatoos — Psittaciforme (All species).",
+          "note": "Oregon disposes of the whole parrot order in one line, cockatoos named in it. No psittacine appears on the prohibited bird list, which runs to seven species and is aimed at the Egyptian goose, a thick-knee, two kingfishers and three European passerines. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/cockatoo-legal-guide/"
@@ -16670,6 +16972,15 @@
           "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
           "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. Whether a red-footed tortoise is a \"turtle\" for this section is not spelled out, since Minnesota never defines the word and its turtle rules are plainly written around aquatic natives. It does not matter much in practice: read broadly, the retail outlet exemption in subd. 2c covers a pet-shop animal anyway, and read narrowly the section does not reach it at all. Either way no licence is needed for one bought at retail, and the species is on neither invasive species list.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(d)(H)",
+          "quote": "Tortoises -- Testudinidae -- All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The whole family is cleared. Worth contrasting with the turtles a few lines above, where Oregon excepts nine genera from the Emydidae clearance and prohibits most of them outright. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -16774,6 +17085,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A bearded dragon is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(J)",
+          "quote": "Bearded dragons -- Agamidae -- Pogona All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Cleared at genus level. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -16878,6 +17198,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A leopard gecko is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(P)",
+          "quote": "Geckos -- Gekkonidae and Eublepharidae -- All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Eublepharidae is named in its own right, so the leopard gecko is squarely inside it. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -16982,6 +17311,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A crested gecko is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(P)",
+          "quote": "Geckos -- Gekkonidae and Eublepharidae -- All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Worth a note on taxonomy: the crested gecko is placed in Diplodactylidae today, and Oregon names only Gekkonidae and Eublepharidae. The pairing of those two families is itself pre-2008 gecko taxonomy, under which Diplodactylinae was a subfamily of Gekkonidae, so the entry reads as covering it. Colorado writes the same clearance with Diplodactylidae named, which is the version that leaves nothing to argue about. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17086,6 +17424,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A blue-tongue skink is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(T)",
+          "quote": "Skinks -- Scincidae -- All nonnative species except Eumeces spp.;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Tiliqua is a nonnative skink and not Eumeces, the genus Oregon carves out for its own natives. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17190,6 +17537,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A Jackson's chameleon is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(M)",
+          "quote": "Chameleons -- Chamaeleonidae -- All species;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The whole family is cleared at once. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17293,6 +17649,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A green anole is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(b)(R)",
+          "quote": "Iguanid lizards -- Iguanaidae -- All nonnative species except: Crotaphytus spp., Gambelia spp., Sceloporus spp., Uta spp., Phrynosoma spp.;",
+          "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. This one turns on which Iguanidae the rule means. Anolis sits in Dactyloidae today, but the five genera Oregon excepts are Crotaphytus, Gambelia, Sceloporus, Uta and Phrynosoma, which now belong to Crotaphytidae and Phrynosomatidae and were only ever grouped together inside the broad old Iguanidae. The exceptions are what date the entry, and under that taxonomy the anoles are in it. Recorded legal on that reading; the alternative would put the species outside every list and into the default bar at OAR 635-056-0130(1). Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17390,6 +17755,15 @@
           "quote": "A person may not possess, import, purchase, sell, propagate, transport, or introduce a prohibited invasive species, except: (1) under a permit issued by the commissioner under section 84D.11",
           "note": "Minnesota designates the European rabbit, Oryctolagus cuniculus, a prohibited invasive species by rule, with no strain or domestication qualifier, and § 84D.05 then bars possessing one outright. The DNR restates that on its own invasive species page, listing the European rabbit among the prohibited mammals and saying it is a misdemeanour to possess, import, purchase, transport or introduce them except under a permit for disposal, control, research or education. None of those permit categories is pet-keeping, no carve-out for domesticated stock appears in the rule, the statute or the agency page, and the DNR has published no species profile or guidance for it at all. Against that sits the obvious: Minnesota licenses pet shops and runs county-fair rabbit shows, and the listing descends from the federal injurious wildlife entry aimed at wild-type animals. Recorded unclear because the text says one thing plainly and practice says another, and nothing published resolves it. Illinois names the same animal and lands differently, because there the possession bar is written for the San Juan strain and the injurious list is headed \"Wild Mammals\".",
           "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0020",
+          "cite": "OAR 635-056-0020",
+          "quote": "Pursuant to the definition of \"wildlife,\" the following species are not subject to these rules because they are not \"wild\" ... (9) European Rabbit — Oryctolagus cuniculus.",
+          "note": "This is the strongest position an animal can hold in Oregon. ORS 496.004(19) leaves it to the commission to define which mammals count as wild, and this rule is that definition: the 32 species on it are declared not wild and fall outside the wildlife rules altogether, rather than being permitted by them. Oregon is the clean counter-example to the states that name this species and leave the pet unaddressed: here Oryctolagus cuniculus is declared not wild outright, with no strain qualifier needed, while nonnative hares and cottontails are prohibited by the same division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17485,6 +17859,15 @@
           "cite": "§ 97A.015, subd. 55",
           "quote": "\"Wild animals\" means all creatures, whether dead or alive, not human, wild by nature, endowed with sensation and power of voluntary motion, and includes mammals, birds, fish, amphibians, reptiles, crustaceans, and mollusks.",
           "note": "The Madagascar hissing cockroach is an insect, and Minnesota's definition of wild animals lists seven groups, of which the only invertebrates are crustaceans and mollusks. That places it outside chapter 97A altogether, including the protected wild animal list and the possession bar built on it. The invasive species rules stop in the same place: the invertebrates designated under Minn. R. 6216.0250 are aquatic snails, rusty crayfish and the spiny waterflea. Minnesota is unusual in that its wild animal definition is broad enough to catch a ball python and still narrow enough to miss a tarantula.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OR": {
+          "status": "conditional",
+          "sourceId": "or-603-052-1320",
+          "cite": "OAR 603-052-1320(1), (3), (7)",
+          "quote": "Invertebrate species listed as approved may be imported, possessed, sold, purchased, exchanged, transported, or released in Oregon without a permit from the Department. This applies only to stock collected within the continental United States. ... Madagascar hissing cockroach, Gromphadorhina portentosa (education, pet). ... Live invertebrates not on the list of approved invertebrates in any life stage may not be imported, possessed, sold, purchased, exchanged, transported, or released in the state unless a permit is first obtained from the Department.",
+          "note": "Oregon runs two closed lists, and this animal is on the second one. ORS 496.004(19) defines wildlife as fish, shellfish, amphibians, reptiles, feral swine, wild birds and wild mammals, so a terrestrial arthropod is outside the Fish and Wildlife rules entirely; the Department of Agriculture picks it up instead under its plant pest authority. Named to the species and marked for pet use, in a roach section of nearly twenty entries that separates the hissing cockroaches from the pest species listed for education and research only. The condition is a real one and easy to miss: the clearance applies only to stock collected within the continental United States, so an animal imported from abroad needs a Department permit even though the species is approved. Nothing on this list is unregulated; an invertebrate absent from it may not be possessed at all without a permit. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
