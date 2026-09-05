@@ -977,7 +977,7 @@ site content rather than the package:
   further. `guinea-pig-scurvy-vitamin-c-guide.mdx` has the same problem and is on the
   Guinea Pig list below.
 
-### Hamster 3.0, t3 (Sep 2026)
+### Hamster 3.1, t3 (Sep 2026)
 
 The second mammal package, and the one that shows the small-mammal skeleton runs
 narrower than the rabbit's, not wider. It was first built at 42 pages and cut to 36 by
@@ -1019,12 +1019,56 @@ hand-edit it** is for. A build script that refuses to build on a duplicate key t
 class of error into a build failure instead of six pages nobody notices until the page
 count comes in eight over. Worth having on any package long enough to be interrupted.
 
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item, in site
+content rather than the package:
+
+- **`small-mammal-grooming-nails-molting-guide.mdx` omits the sand bath for hamsters.**
+  Its bathing table row reads "Hamster, gerbil, rat, degu / Self-grooming, no routine
+  bathing / These species keep their own coats clean without owner intervention." A
+  dust-free, non-clumping sand bath is a genuine species essential for a hamster, it is
+  page 8 of this package and on the never-cut list above, and an owner who reads the
+  article and not the package will conclude a hamster needs nothing. The row needs a
+  hamster carve-out. Nothing in the package changed: the package is the one that is right.
+
 Already covered, do not rewrite: the bedding-depth study is reported with all three of
 its figures on page 7 and is the package's strongest single page.
 
 Known gaps, listed in the notes file: there is no target weight anywhere despite the
 owner log asking for grams, no sexing page despite the guide telling the reader twice to
-check the sex, and nothing on cheek pouches.
+check the sex, and nothing on cheek pouches. The September 2026 cross-check reached none
+of the three.
+
+**What the Sep 2026 cross-check found here.** This block has no gap table, so the check
+ran the other way: every page the four cross-species small mammal articles could touch
+was read against them. Three of the four found something, and the package rebuilt as 3.1
+at 37 pages.
+
+- **The torpor threshold was wrong by about 24&deg;F, and it drove seven pages.** 3.0 gave
+  60 to 65&deg;F, attributed only to "sources". Merck's hamster page gives hibernation at
+  "< 5&deg;C (41&deg;F)" and LafeberVet's information sheet gives torpor "below 41&deg;F (5&deg;C),
+  particularly when exposed to short days", with both adding a thin food supply as a
+  trigger. 65&deg;F is now printed as the point to act, 41&deg;F as the veterinary figure, and
+  short days and food are named. **Closed by `small-mammal-temperature-heat-stress-guide`,
+  though the correct figure came from Merck and LafeberVet rather than from the article,
+  which gives 41&deg;F for hamsters and is right.**
+- **The package had no antibiotic warning at all**, while telling the reader twice to
+  expect antibiotics, for wet tail on page 19 and respiratory infection on page 21.
+  **Closed Sep 4 2026 by `small-mammal-enterotoxemia-guide`**: page 18 now carries the
+  class list, the never-give drugs and Merck's 3 to 5 day window, with pointers from 19
+  and 21. This was the single largest omission found in any of the three mammal packages.
+  The room came from page 18's call-checklist, which duplicated the page 26 card.
+- **VCA's 80&deg;F ceiling** was on page 9 only and is now also on the setup targets and the
+  emergency card. The package keeps its own tighter 65 to 75&deg;F range and says so.
+- **Grooming needed nothing.** The package's position, that a hamster wears its nails down
+  and only needs a check in an older or less active animal, matches
+  `small-mammal-grooming-nails-molting-guide` exactly. It is the cleanest agreement in the
+  whole cross-check.
+- **Carrier size and anesthesia were deliberately left alone**, because the vet-visits
+  article's sourcing on both is rabbit and guinea pig and does not reach a hamster. The
+  reasoning is in the notes file so the next build does not re-open it.
+- **The cover badge still read 42 pages** from the 2.0 build, three editions after the
+  merges took it to 36. Worth adding to the pre-publish checks: the cover page count is
+  the one number no page of the guide itself contradicts, so nothing catches it.
 
 ### Tarantula 2.1, t3 (Sep 2026)
 
