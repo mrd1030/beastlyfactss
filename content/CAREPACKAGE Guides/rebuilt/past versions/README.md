@@ -22,6 +22,7 @@ version are different numbers".
 | `Betta_Fish_Care_Package_v2.1.pdf` | 2.2 | Quarantine at 2 to 4 weeks against the Merck 30 day minimum, a 10 day ceiling on aquarium salt that no source supports, a blackout plan that put oxygen after temperature, and *Oodinium* named as the freshwater velvet genus |
 | `Goldfish_Care_Package_v2.pdf` | 2.1 | Filter turnover floor of 4 times an hour, which is the light-stocking figure rather than the goldfish one, a KH action line below the level that already inhibits the biofilter, quarantine at 2 to 4 weeks, and waste rows that assigned confident causes to a nonspecific sign |
 | `Axolotl_Care_Package_v2.0.pdf` | 2.1 | Salt bath figures printed as a prescription with an indication and a salt type the source never gives, a temperature change ceiling of 1 to 2&deg;F an hour, per-method cooling figures with no source, and a hardness target that traces to nothing |
+| `Rabbit_Care_Package_v2.pdf` | 2.1 | A comfortable range of 60 to 70&deg;F and a heatstroke line of 85&deg;F, against Merck's 61 to 72&deg;F optimal environment and VCA's 80&deg;F ceiling; heat stress signs with no drooling stage; nail and scent gland intervals of 4 to 8 weeks and a month or two against Lafeber's 6 to 8; swallowed fur described as a direct route to GI stasis where VCA has it compounding a gut that has already slowed; a flat no-fasting instruction before surgery against Merck's short 1 to 2 hour mouth-clearing fast; a post-operative eating deadline of the evening of surgery day against Merck's 2 to 3 hours; and the GI stasis line printed as 8 hours on five pages and 8 to 12 hours on a sixth |
 | `Tarantula_Care_Package_v2.pdf` | 2.1 | A layout-only tightening pass across all 43 pages that changed no words and no type sizes. Minimum page headroom went from 19px to 31px |
 | `BeastlyFacts-Rabbit-Care-Package.pdf`, `BeastlyFacts-Tarantula-Care-Package.pdf` | 2.0 | Not in this folder, see the note below. 22 and 21 pages on the old parallel layout, rebuilt at 39 and 43 pages on t3 |
 
@@ -37,8 +38,11 @@ unversioned 21 and 20 page files that stay in `rebuilt/`, and betta at `coming-s
 All three new editions also gained a second reference page at the back, which is the
 Cockatiel 1.0 finding applied to the aquatic set: 36 to 37, 39 to 40, and 41 to 42 pages.
 
-Rabbit has no file in this folder. Its current edition is still 2.0, and its
-only earlier build is the pre-t3 one named above.
+Rabbit's 2.0 was archived here in September 2026 by the small mammal
+cross-check. Its other earlier build is the pre-t3 one named above, which is not
+in this folder. 2.1 also gained a second reference page at the back, splitting
+sources from version history, which is the Cockatiel 1.0 finding applied to the
+mammal set: 39 to 40 pages.
 
 `Bearded_Dragon_Care_Package.pdf` is **not** here despite the existence of a
 3.0 build. The 22-page unversioned file is the edition currently on sale

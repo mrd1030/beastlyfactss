@@ -130,3 +130,176 @@ Do not cut: any GI stasis content, the eight-hour rule wherever it appears, the 
 and cecotrope reference, the dental page, the spay and neuter page, the space standard on
 page 5, or any owner-tool page. The uterine cancer figure and the eight-hour rule are the
 two numbers this package exists to put in front of an owner.
+
+---
+
+## 2.1, September 2026: the small mammal article cross-check
+
+Written against **2.1, 40 pages, template t3**. A corrections edition, not a
+rebuild. It came out of checking the package against the four cross-species
+small mammal articles published on 3 and 4 September 2026
+(`small-mammal-temperature-heat-stress-guide`,
+`small-mammal-grooming-nails-molting-guide`,
+`small-mammal-vet-visits-and-travel-guide`, `small-mammal-enterotoxemia-guide`)
+and against `rabbit-gi-stasis-guide`, which has not been expanded since the
+package was built.
+
+Every figure below was re-sourced from the primary veterinary reference rather
+than taken from the article, and two of the article's numbers turned out to be
+roundings rather than sources. Those are logged on the site list in the Rabbit
+block of `TEMPLATE_GUIDE.md`.
+
+### Every page touched, old text and new
+
+**Page 7, temperature table.**
+
+| Was | Became |
+|---|---|
+| `60 to 70&deg;F (15 to 21&deg;C)` / "Comfortable. A normal indoor room, and no intervention needed" | `61 to 72&deg;F (16 to 22&deg;C)` / "Merck's optimal rabbit environment. A normal indoor room, and no intervention needed" |
+| `Above 77&deg;F (25&deg;C)` / "Start actively cooling: airflow..." | `Above 77&deg;F (25&deg;C)` / "Start actively cooling, ahead of the line: airflow..." |
+| `Above 85&deg;F (29&deg;C)` / "Genuine heatstroke risk. Move the rabbit to the coolest room in the house and do not wait to see how it copes" | `Above 80&deg;F (27&deg;C)` / "**The line.** VCA calls it critical to keep a rabbit at or below this. Move to the coolest room and do not wait to see how it copes" |
+| `Below 50&deg;F (10&deg;C)` / "Tolerable for a healthy, acclimated rabbit with deep bedding and a windbreak, but see the lifespan figures above before deciding this is fine" | `Below 50&deg;F (10&deg;C)` / "Merck notes rabbits tolerate subzero outdoor temperatures given proper shelter, so an acclimated rabbit with deep bedding and a windbreak copes. Indoors, drafts and damp bedding cause far more cold-related illness than a steadily cool room. See the lifespan figures above first" |
+
+Sources: Merck Veterinary Manual, *Housing of Rabbits*, "the optimal rabbit
+environment is 61&deg;-72&deg;F". VCA Animal Hospitals, *Health Problems in Rabbits*,
+which calls it critical to keep a rabbit at or below 80&deg;F (26&deg;C). The 85&deg;F
+figure had no source and sat above the sourced danger line, which is the wrong
+direction to be wrong in.
+
+**Page 7, heat stress signs.** Was: "Heatstroke signs are rapid shallow
+breathing, wet nose, red or very hot ears, lethargy, and a rabbit lying
+stretched flat and unwilling to move." Became: "Heatstroke signs arrive in an
+order: rapid shallow breathing, then drooling or salivating, then weakness and
+a rabbit lying stretched flat and unwilling to move, with red or very hot ears
+and a wet nose throughout." Drooling was missing entirely and it is the second
+sign in VCA's rodent list ("panting, salivating, weakness, convulsions, and
+refusal to move") and the first in the RSPCA's guinea pig entry.
+
+**Page 7, the vaccination callout: removed, not cut.** The "Vaccination is
+regional" callout was a duplicate. Every fact in it, the US annual
+recommendation and the UK and European combined vaccine covering myxomatosis
+and RHDV1, was already in page 23's RHDV2 paragraph. Its one unique clause, the
+regional caveat, was moved into that paragraph verbatim in meaning: page 23 now
+ends "Ask your vet what is standard where you live rather than assuming this
+package's list is complete for your region." Nothing was lost, and page 7 went
+from 31px over to 130px free.
+
+Worth knowing for v3: page 7 is a table plus two callouts, and **trimming prose
+on it does nothing at all.** Four rounds of sentence-level compression moved the
+measurement by exactly 0px, because a four-line callout stays four lines until
+about 100 characters come out of it. The page only moved when a whole block
+did. The same is true of any page whose tail is callouts rather than paragraphs.
+
+**Page 16, choosing a clinic.** Was: "The answer you want is that they do
+**not** fast a rabbit before surgery, because rabbits cannot vomit and an empty
+gut is a stasis risk." Became: "The answer you want is Merck's: fasting for
+longer than three hours is neither required nor recommended, because rabbits
+cannot vomit and their stomachs are never empty anyway. A short one to two hour
+fast is normal, and its purpose is clearing the mouth, not settling the
+stomach." The old wording was directionally right and factually too absolute: a
+short pre-op fast **is** recommended, for a narrower reason. Source: Merck
+Veterinary Manual, *Management of Rabbits*.
+
+**Page 16, recovery.** Was: "Expect a rabbit to be eating within a few hours and
+back to normal in a couple of days... Any rabbit that has not eaten by the
+evening of surgery day goes straight back to the vet." Became: "Merck's bar is
+**2 to 3 hours**: a rabbit that has not eaten by then needs its pain relief
+reviewed, not more waiting." Same source: "If the rabbit does not eat within 2-3
+hours after surgery, the analgesic protocol should be reevaluated." The old
+deadline was many hours looser than the source.
+
+**Pages 4, 17, 25, 27 and 30, the GI stasis line.** All five read "8 hours".
+Page 19 read "8 to 12 hours", as does `rabbit-gi-stasis-guide`. All six now read
+**8 to 12 hours**. This was the package disagreeing with itself on its single
+most important number, with the emergency card and the care page on opposite
+sides of it.
+
+**Page 24, molting.** Was: "Rabbits molt roughly every three months, and two of
+those a year are usually heavy." Became: "...and Merck's point is that the
+pattern is unpredictable: one molt can be light and the next heavy." Merck
+describes it as unpredictable rather than a fixed schedule; the two-heavy-molts
+figure had no source.
+
+**Page 24, fur and stasis.** Was: "Swallowed fur combined with dehydrated gut
+contents forms a mass that is hard to pass, which is a direct route to the
+emergency on page 18." Became: "A rabbit normally carries some hair in its
+stomach and passes it, so fur is rarely the cause of a stasis episode on its
+own. What it does is compound a gut that has already slowed for another reason,
+which is why a heavy molt is a fortnight to watch closely rather than a shedding
+nuisance." VCA is explicit that rabbits normally have hair in their stomachs and
+that stasis generally has a separate underlying trigger. The old sentence
+inverted the causation, which matters: an owner who thinks fur causes stasis
+brushes harder instead of looking for the real trigger.
+
+**Page 24, brushing.** "Brush daily through a heavy molt, and weekly otherwise"
+became "...and at least twice weekly otherwise", which is Merck's figure for a
+short-haired rabbit.
+
+**Pages 24, 31 and 36, nail interval.** "Every 4 to 8 weeks" became "every 6 to
+8 weeks" in all three places, which is Lafeber's interval for both rabbits and
+guinea pigs.
+
+**Page 24, dark nails.** Was: "on dark nails, take a very small amount at a time
+and stop when the cut surface changes texture." Became the same, preceded by
+"hold a torch *behind* the nail and the quick becomes visible against the
+light". The package had the torch pointed at the wrong nail: Lafeber's technique
+is a flashlight behind a **dark** nail, which is the case where you cannot see
+the quick, not a pale one where you already can.
+
+**Page 24, scent glands.** Was: "Clean them gently every month or two with a
+damp cotton bud." Became: "Clean them every 6 to 8 weeks, in the same session as
+the nails. Have a rabbit-savvy vet or groomer show you once first: the area is
+sensitive and easy to irritate with the wrong method." Lafeber recommends a vet
+or groomer handle it or teach it, and the package was sending an owner in
+unaided.
+
+**Page 24, bathing.** "the panic of being submerged can cause spinal injury"
+became "the Rabbit Welfare Association warns that a rabbit panicking in water
+can fracture its spine or a limb thrashing to get out." The claim was true and
+unsourced; RWAF's *Bathing Rabbits* carries it almost word for word, and names
+a limb as well as the spine.
+
+**Page 32, outages.** Added, all from PDSA's winter guidance for rabbits and
+guinea pigs and the RSPCA's guinea pig heat guidance: raise the pen off the
+floor where the coldest air sits, check the water has not frozen including the
+ball in a bottle nozzle, water-heavy foods (cucumber, melon, apple) in a hot
+outage, water in more than one container, and the relocate-at-hour-two rule.
+That last one is the only genuinely new decision on the page: managing in place
+works while the room is still in band, and the call to move the rabbit out is
+worth making early rather than after a house has had all day to heat up.
+
+**Page 33, transport.** Added, all RSPCA *Transporting Your Rabbits*: a handful
+of unsoiled bedding from home, a towel over most of the carrier because a prey
+animal wants to hide rather than watch, water alongside the hay, and the
+carrier's side facing the direction of travel so a hard stop does not throw the
+rabbit face first into the end.
+
+**Pages 39 and 40, the reference split.** Page 39 is now sources only and page
+40 is version history, the disclaimer and the colophon. This is the Cockatiel
+1.0 finding, and it applies here for the same reason: the sources page nearly
+tripled in length. On a single hand-edited file the split is an append at the
+very end and moves no existing page number, exactly as the aquatic note in
+`TEMPLATE_GUIDE.md` says.
+
+The old sources page carried four papers, House Rabbit Society, PetMD, the
+Wisconsin Humane Society and FurCalc, and **not one** of Merck, VCA, RSPCA,
+Lafeber or PDSA, which are the sources behind most of Section 02 and 03. All
+five are now on it, per figure, along with RWAF.
+
+### Layout changes, no words
+
+`.snug` was added to pages 7, 24 and 27, which had not had it. The targets
+tables on pages 26 and 27 became `table.dense`, matching the guinea pig
+package's emergency card. Minimum headroom across all 40 pages is 19px.
+
+### Not fixed here, and why
+
+- **Bonding stages (page 15), rabbit-proofing (page 6), the droppings reference
+  table (page 25) and the spay and neuter timing (page 16)** are all still PDF
+  only. No site article covers any of them, and the cross-species batch did not
+  reach them. They remain open rows in the Rabbit block.
+- **Merck's temperature-plus-humidity rule** (the two summed should not exceed
+  150, so 80&deg;F at 70% humidity is already the ceiling) is a real, sourced
+  figure that page 7 does not carry, and it is the single best addition
+  available to that page in v3. It was left out of 2.1 only because a
+  corrections edition should not add facts nobody asked for.

@@ -886,13 +886,14 @@ site content rather than the package:
   sentence and still does not carry the point that ich wants the temperature raised and
   columnaris wants it lowered, which is the reason the row was logged.
 
-### Rabbit 2.0, t3 (Sep 2026)
+### Rabbit 2.1, t3 (Sep 2026)
 
 The first mammal package on the t3 template, and the layout needed real surgery: the
 reptile heat, UVB, thermostat and substrate pages have no mammal equivalent, so they were
 replaced with indoors versus outdoors and temperature, flooring and litter training,
 rabbit-proofing, bonding, and spay and neuter. Section 03 went the other way and grew,
-because GI stasis needs three pages on its own. It came out at 39 pages.
+because GI stasis needs three pages on its own. It came out at 39 pages, and 40 once the
+September 2026 cross-check split sources from version history at the back.
 
 For the next mammal build: expect the health section to be the long one rather than the
 husbandry section, and expect a vet-choice page, which reptiles never need. The 38 to 40
@@ -911,18 +912,31 @@ dental mechanism.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Small-mammal temperature, heat stress &amp; cold | 7 | Cross-species (small mammals) | Nothing anywhere. The tank setup guide gives the indoor-versus-outdoor lifespan figures but no temperature ranges, no heatstroke signs, and no cooling method. Serves rabbit, guinea pig, chinchilla, hamster, and every future small mammal |
+| Small-mammal temperature, heat stress &amp; cold | 7, 26, 27 | Cross-species (small mammals) | **CLOSED Sep 4 2026 by `small-mammal-temperature-heat-stress-guide`.** Also closes the same row in the Guinea Pig block. Package rebuilt as 2.1: the comfortable band moved to Merck's 61 to 72&deg;F, the heatstroke line from an unsourced 85&deg;F to VCA's 80&deg;F, drooling was inserted into the sign order, and both the line and the cold guidance now appear on the checklist and the emergency card rather than page 7 alone. Original row follows. Nothing anywhere. The tank setup guide gives the indoor-versus-outdoor lifespan figures but no temperature ranges, no heatstroke signs, and no cooling method. Serves rabbit, guinea pig, chinchilla, hamster, and every future small mammal |
 | Bonding a pair, step by step | 15 | Rabbit | Nothing, and `rabbit-enrichment-guide.mdx` currently promises that the handling guide covers introductions when it does not (see drift below). Side-by-side pens, neutral territory, stress bonding, what is normal negotiation versus a real fight, and the weeks it actually takes |
-| Spay and neuter beyond the price | 16 | Rabbit | `rabbit-cost-guide.mdx` has the cost and the 80% uterine cancer figure. Nothing on timing, what it changes behaviorally, how to choose a clinic, or the point that rabbits must **not** be fasted before surgery, which is also the best question for vetting a practice |
+| Spay and neuter beyond the price | 16 | Rabbit | **PARTLY CLOSED Sep 4 2026 by `small-mammal-vet-visits-and-travel-guide`,** which carries the fasting rule and the post-operative eating deadline. Package rebuilt as 2.1 to Merck's figures: no fast longer than 3 hours, a short 1 to 2 hour fast to clear the mouth, and pain relief reviewed if the rabbit has not eaten within 2 to 3 hours. Timing, what it changes behaviorally and choosing a clinic are **still open**. Original row follows. `rabbit-cost-guide.mdx` has the cost and the 80% uterine cancer figure. Nothing on timing, what it changes behaviorally, how to choose a clinic, or the point that rabbits must **not** be fasted before surgery, which is also the best question for vetting a practice |
 | Rabbit-proofing a room | 6 | Rabbit | Nothing. Cables first because that is the one that kills, then plants, baseboards, carpet corners, and pairing every block with an outlet |
-| Grooming, nails &amp; molting | 24 | Cross-species (small mammals) | Nothing. Molt frequency, why a rabbit cannot cough up a hairball and what that means for GI stasis, nail trim interval and technique, scent glands, and why you never bath a rabbit |
+| Grooming, nails &amp; molting | 24, 31, 36 | Cross-species (small mammals) | **CLOSED Sep 4 2026 by `small-mammal-grooming-nails-molting-guide`.** Also closes the Guinea Pig block's grooming row. Package rebuilt as 2.1: nail and scent gland intervals moved to Lafeber's 6 to 8 weeks from 4 to 8 and "a month or two", the torch technique was corrected to a dark nail rather than a pale one, short-haired brushing moved to Merck's at least twice weekly, the molt pattern became Merck's unpredictable one, and swallowed fur stopped being described as a direct cause of stasis. Original row follows. Nothing. Molt frequency, why a rabbit cannot cough up a hairball and what that means for GI stasis, nail trim interval and technique, scent glands, and why you never bath a rabbit |
 | Reading droppings &amp; cecotropes | 25 | Rabbit | `rabbit-gi-stasis-guide.mdx` explains cecotropes in a FunFact. There is no reference for what the litter box is telling you, which is the earliest signal this species gives and the cheapest daily check in the whole package |
-| Small-mammal power outages &amp; travel | 32, 33 | Cross-species (small mammals) | Nothing, and `reptile-emergency-plan-guide.mdx` does not transfer. Note the advice inverts for a rabbit: keep feeding through an outage, because a rabbit that stops eating is in more danger than a cold one |
+| Small-mammal power outages &amp; travel | 32, 33 | Cross-species (small mammals) | **CLOSED Sep 4 2026 by `small-mammal-temperature-heat-stress-guide` (the outage half) and `small-mammal-vet-visits-and-travel-guide` (the travel half).** Also closes the same row in the Guinea Pig block. Package rebuilt as 2.1: page 32 gained the PDSA cold-outage detail, water-heavy foods, a second water container and the relocate-at-hour-two rule; page 33 gained the RSPCA carrier hide, familiar bedding, water and the direction-of-travel placement. Original row follows. Nothing, and `reptile-emergency-plan-guide.mdx` does not transfer. Note the advice inverts for a rabbit: keep feeding through an outage, because a rabbit that stops eating is in more danger than a cold one |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the temperature table and heatstroke signs on page 7, the bonding stages on page
-15, the spay and neuter timing on page 16, the nail trim interval and scent gland
-schedule on page 24, and the droppings reference table on page 25.
+**Numbers with no site source at all**, updated Sep 4 2026 after the cross-check:
+
+- Temperature table and heatstroke signs, page 7: **now carried** by
+  `small-mammal-temperature-heat-stress-guide`, though not at the package's old figures.
+  The package moved to Merck's 61 to 72&deg;F and VCA's 80&deg;F; the unsourced 85&deg;F is gone.
+- Nail trim interval and scent gland schedule, page 24: **now carried** by
+  `small-mammal-grooming-nails-molting-guide` at Lafeber's 6 to 8 weeks, which is what the
+  package now prints. The old 4 to 8 weeks was the package's own number.
+- Fasting and post-operative eating, page 16: **now carried** by
+  `small-mammal-vet-visits-and-travel-guide`, and re-sourced to Merck in the package.
+- Bathing and spinal injury, page 24: **now sourced**, to the Rabbit Welfare Association
+  and Fund rather than to any site article. Still no site article covers it.
+- Bonding stages, page 15: **still PDF only.** No article.
+- Spay and neuter timing, page 16: **still PDF only.** The fasting half of that row is
+  closed; the timing, the behavioral change and choosing a clinic are not.
+- Droppings and cecotrope reference table, page 25: **still PDF only.** No article.
+- The 70% recovery figure on page 20 is PetMD's and is attributed on the sources page.
 
 **Source drift found while building:**
 
@@ -942,6 +956,26 @@ schedule on page 24, and the droppings reference table on page 25.
   guide's range is the better figure and is what the package uses. Same for greens, where
   the feeding guide's "1 to 4 cups per several pounds depending on the source" is too
   vague to act on next to the setup guide's 1 cup per 2 lb.
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** Three items, all in
+site content rather than the package:
+
+- **The GI stasis threshold is still three numbers across three articles**, exactly as the
+  drift note above recorded when the package was built. `rabbit-feeding-guide.mdx` gives 3
+  to 12 hours, `rabbit-gi-stasis-guide.mdx` gives 8 to 12, and
+  `rabbit-health-issues-guide.mdx` gives 8 or more. Nothing has propagated in the months
+  since. Package 2.1 now prints **8 to 12 hours** on all six of its pages, matching the
+  dedicated guide, so the package is internally consistent and the site is not.
+- **The broken cross-reference is still live.** `rabbit-enrichment-guide.mdx` still says
+  "Our [handling guide](/blog/rabbit-handling-guide/) covers introductions."
+  `rabbit-handling-guide.mdx` still contains nothing about introductions or bonding. Either
+  write the bonding article the table above asks for and point at it, or fix the sentence.
+  This has now survived two cross-checks.
+- **`rabbit-gi-stasis-guide.mdx` ships with no `<Sources>` block**, unlike every article
+  written since. Pages 18, 19, 20 and 25 of the package cite it for the single most
+  important number in rabbit care, and a reader who follows the link cannot trace it any
+  further. `guinea-pig-scurvy-vitamin-c-guide.mdx` has the same problem and is on the
+  Guinea Pig list below.
 
 ### Hamster 3.0, t3 (Sep 2026)
 
