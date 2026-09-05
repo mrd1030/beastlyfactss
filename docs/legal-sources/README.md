@@ -27,6 +27,8 @@ about this species", not to claim a new verification date.
 | `VT-vt-unrestricted.txt` | Vermont Unrestricted Wild Animal List, raw |
 | `VT-vt-unrestricted-parsed.txt` | The same list parsed into readable rows. Start here |
 | `VT-vt-restricted-list.txt` | Vermont Restricted Wild Animal List, the appendix the other list points at |
+| `NM-nm-importation-list.txt` | New Mexico Director's Species Importation List, ~1,300 rows with group |
+| `NM-nm-19-35-7.txt` | 19.35.7 NMAC, the rule that defines the four importation groups |
 
 ## Reading the awkward ones
 
@@ -53,6 +55,7 @@ not on the sites, so a person with a browser can open all of them.
 | `legislature.mi.gov` | Connection fails | Use `animallaw.info` reproductions, cross-check against two sources |
 | `legis.state.pa.us`, `palegis.us` | 403 and 503 | Same, cross-check two reproductions before quoting |
 | `vtfishandwildlife.com` | 403 without a User-Agent | `curl -A "Mozilla/5.0"` works |
+| `wildlife.dgf.nm.gov` | Download pages are HTML wrappers | Scrape the `wpdmdl` PDF link out, then fetch that with a User-Agent |
 | `law.justia.com`, `invasive.org` | 403 | Find another reproduction |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
 

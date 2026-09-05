@@ -1,0 +1,1323 @@
+# New Mexico Director's Species Importation List, January 2023, parsed into rows
+
+sourceId: nm-importation-list
+jurisdiction: NM
+url: https://wildlife.dgf.nm.gov/download/directors-species-importation-list/
+fetched: 2026-09-05
+fetch notes: the download page is HTML; scrape the wpdmdl PDF link out of it, then fetch
+  that with curl -A "Mozilla/5.0". The PDF text is letter-spaced, so collapse whitespace.
+  Rows run class, category, family, scientific name, common name, group, optional note.
+
+First column below is the importation group. Definitions from 19.35.7 NMAC:
+  I    semi-domesticated, no importation permit required
+  II   not known to be invasive or dangerous, importation permit required
+  III  minimal or manageable concerns, permit with specific provisions attached
+  IV   dangerous, invasive, undesirable, listed, or a furbearer. Prohibited to the
+       general public; allowed only for scientific study, department approved restoration,
+       zoological display, temporary events, service animals, or a qualified expert.
+
+Default clause, which does a lot of work here: "Any species of live non-domesticated
+animal not currently on the species importation list will be designated group IV until
+such time as another determination is made by the director."
+
+Scope of the rule: "Persons who desire to bring wildlife species into the state of New
+Mexico." It governs importation, not possession of an animal already here.
+
+Note there are NO terrestrial invertebrates anywhere in these rows, and the regulation
+never uses the word invertebrate, which is why pet invertebrates are recorded unclear
+rather than barred by the default clause.
+
+----------------------------------------------------------------------
+
+  ?     Saltwater Acanthuridaeallspecies Tang
+  ?     IAquatic
+  ?     Freshwater Achiridae Trinectesmaculatus Flounder IAquatic
+  ?     Freshwater Alestiidae Phenacogrammusinterruptus Congotetra IAquatic
+  ?     Freshwater Anostomidae Chiloduspunctatus Headstander IAquatic
+  ?     Freshwater Anostomidae Leporinusfasciatus Leporinusfasciatus IAquatic
+  ?     Saltwater Apogonidaeallspecies Cardinalfish IAquatic
+  ?     Freshwater Ariidae Sciadesseemanni Silvertipshark IAquatic
+  IV    Freshwater Bagridae Coreobagrusichikawai Catfish,Naked Nekogigi IVFederally Endangered Aquatic
+  ?     Freshwater Bagridae Horabagrusbracysoma Suncatfish IAquatic
+  ?     Freshwater Bagridae Mystusleucophasis Blackupside-downcatfish IAquatic
+  ?     Freshwater Bagridae Mystusvittatus Mystuscatfish IAquatic
+  ?     Freshwater Bagridae Pseudomystussiamensis Siamesecatfish IAquatic
+  ?     Saltwater Balistidaeallspecies Triggerfish IAquatic
+  ?     Freshwater Balitoridae Gastromyzonpunctulatus Borneosuckercatfish IAquatic
+  ?     Freshwater Balitoridae Nemacheilusfasciatus Bandedredtailloach IAquatic
+  ?     Freshwater Balitoridae Schisturabalteata Sumoloach IAquatic
+  ?     Freshwater Balitoridae Schisturapoculi Redtailloach IAquatic
+  ?     Saltwater Batrachoididae Opsansubeta Orangetoadfish IAquatic
+  ?     Freshwater Belonidae Xenentodoncancila Needlenosegar IAquatic
+  ?     Freshwater Belontiidae Colisasp.Betta/Gourami IAquatic
+  ?     Saltwater Blenniidaeallspecies Blenny IAquatic
+  ?     Saltwater Bothidaeallspecies Peacock Flounder IAquatic
+  ?     Freshwater Callichthyidae Corydorassp.Corycatfish IAquatic
+  ?     Freshwater Callichthyidae Dianemasp.Portholecatfish IAquatic
+  ?     Saltwater Callionymidaeallspecies Blenny Goby IAquatic
+  ?     Saltwater Carangidae Naucratesductor Pilotfish IAquatic
+  ?     Freshwater Catostomidae Myxocyprinusasiaticus Sucker,Chinesehi-finshark IAquatic
+  III   Freshwater Centrarchidaeallspecies Bass,Sunfish,Crappie IIIState Protected Species Aquatic
+  ?     Saltwater Chaetodontidaeallspecies Butterflyfish IAquatic
+  ?     Freshwater Channidaeallspecies Snakeheadfish IVAquatic
+  I     Freshwater Characidaeallspecies Ornamental Tetras Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  ?     Freshwater Characidaeallspecies Pirahna&Pacu IVAquatic
+  I     Freshwater Cichildaeallspeciesexcept Tilapia&Sarotherodon Cichlids Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  ?     Freshwater Cichlidae Sarotherodonsp.Cichlids,tilapiineanyvariety IVAquatic
+  ?     Freshwater Cichlidae Tilapiasp.Tilapia,anyvariety IVAquatic
+  ?     Saltwater Cirrhitidaeallspecies Hawkfish IAquatic
+  ?     Freshwater Citharinidae Citharinidaesp.Citharinids IAquatic
+  ?     Freshwater Clariidae Silurusbatrachus\Clarias\Walking Catfish IVAquatic
+  ?     Freshwater Cobitidaeallspecies Loach Botia IAquatic
+  ?     Freshwater Ctenoluciidae Ctenoluciushujeta Barracuda IAquatic
+  ?     Freshwater Curimatidae Curimatidaespp Toothlesscharacins IAquatic
+  I     Freshwater Cyprinidaeallspecies Ornamental Goldfish Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  ?     Freshwater Cyprinidae Carassiuscarassius Crucian Carp IVAquatic
+  I     Freshwater Cyprinidae Carassiussp.Ornamental Goldfish Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  ?     Freshwater Cyprinidae Catlasp.Carpsp.IVAquatic
+  ?     Freshwater Cyprinidae Cirrhinasp.Carpsp.IVAquatic
+  IV    Freshwater Cyprinidae Cirrhinussp.Mud Carpsp.IVNew Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated20233CLASSQUICKREFERENCEFAMILYSCIENTIFICNAME\G
+  ?     Freshwater Cyprinidae Ctenopharyngodonidella Grasscarp IVAquatic
+  ?     Freshwater Cyprinidae Cyprinellasp.Shiners IVAquatic
+  I     Freshwater Cyprinidae Cyprinussp.Ornamental Koi Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  IV    Freshwater Cyprinidae Gilasp.Chubs IVFederally Endangered Aquatic
+  IV    Freshwater Cyprinidae Hybognathusamarus Minnow,Rio Grandesilvery IVFederally Endangered Aquatic
+  ?     Freshwater Cyprinidae Hybognathussp.Minnow,Silvery IVAquatic
+  ?     Freshwater Cyprinidae Hypophthalmichthysharmandi Largescale Silver Carp IVAquatic
+  ?     Freshwater Cyprinidae Hypophthalmichthysmolitrix Silver Carp IVAquatic
+  ?     Freshwater Cyprinidae Hypophthalmichthysnobilis Bighead Carp IVAquatic
+  ?     Freshwater Cyprinidae Hypophthalmichthyssp.Bighead/Silver Carpsp.IVAquatic
+  ?     Freshwater Cyprinidae Labeosp.Labeo Carpsp.IVAquatic
+  ?     Freshwater Cyprinidae Leuciscussp.Eurasiandaces Carpsp.IVAquatic
+  ?     Freshwater Cyprinidae Mylopharyngodonpiceus Black Carp IVAquatic
+  ?     Freshwater Cyprinidae Notemigonussp.Golden Shiner IVAquatic
+  ?     Freshwater Cyprinidae Pimephalespromelas Fathead Minnow IAquatic
+  ?     Freshwater Cyprinidae Rohitasp.Rohu Carpsp.IVAquatic
+  IV    Freshwater Cyprinodontidae Cyprinodonbovinus Pupfish,Leon Springs IVFederally Endangered Aquatic
+  IV    Freshwater Cyprinodontidae Cyprinodondiabolis Pupfish,Devils Hole IVFederally Endangered Aquatic
+  IV    Freshwater Cyprinodontidae Cyprinodonelegans Pupfish,Comanche Springs IVFederally Endangered Aquatic
+  IV    Freshwater Cyprinodontidae Cyprinodonmacularius Pupfish,Desert IVFederally Endangered Aquatic
+  IV    Freshwater Cyprinodontidae Cyprinodonnevadensismionectes Pupfish,Ash Meadows Amargosa IVFederally Endangered Aquatic
+  IV    Freshwater Cyprinodontidae Cyprinodonnevadensispectoralis Pupfish,Warm Springs IVFederally Endangered Aquatic
+  IV    Freshwater Cyprinodontidae Cyprinodonradiosus Pupfish,Owens IVFederally Endangered Aquatic
+  I     Freshwater Cyprinodontidae Cyprinodonsp.except C.bovinus,diabolis,elegans,macularius,nevadensisandradiosus Pupfish Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  ?     Freshwater Datnioididaeallspecies Tigerfish IAquatic
+  ?     Saltwater Diadematidae Diademasp.Longspineseaurchin IAquatic
+  ?     Saltwater Diodontidae Diodonsp.Porcupine Pufferfish,Poisonous IVAquatic
+  ?     Saltwater Diogenidae Paguristescadenati Scarletreefhermitcrab IAquatic
+  ?     Freshwater Doradidaeallspecies Catfishssp IAquatic
+  ?     Saltwater Echinasteridae Echinasterluzonicus Redstarfish IAquatic
+  ?     Freshwater Eleotridae Eleotridaespp Sleepergobies IAquatic
+  ?     Saltwater Ephippidae Plataxsp.Batfish IAquatic
+  ?     Freshwater Erethistidaeallspecies Ornamental Catfish IAquatic
+  III   Freshwater Esocidaeallspecies Pike Muskiesp IIIState Protected Species Aquatic
+  ?     Freshwater Gasteropelecidaeallspecies Hatchetfishes IAquatic
+  I     Freshwater Gasterosteidaeallspeciesexcept Gasterosteusaculeatuswilliamsoni Ornamental Sticklebacks Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  IV    Freshwater Gasterosteidae Gasterosteusaculeatuswilliamsoni Stickleback,unarmoredthreespine IVFederally Endangered Aquatic
+  I     Saltwater Gobiidaeallspeciesexcept Eucyclogobiusnewberryi Ornamental Goby Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  IV    Saltwater Gobiidae Eucyclogobiusnewberryi Goby,tidewater IVFederally Endangered Aquatic
+  I     Freshwater Goodeidaeallspeciesexcept Crenichthysbaileyissp.&nevadaesp Teleostfish Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  IV    Freshwater Goodeidae Crenichthysbaileyibaileyi Springfish,White River IVFederally Endangered Aquatic
+  IV    Freshwater Goodeidae Crenichthysbaileyigrandis Springfish,Hiko White River IVFederally Endangered Aquatic
+  IV    Freshwater Goodeidae Crenichthysnevadae Springfish,Railroad Valley IVFederally Threatened Aquatic
+  IV    Freshwater Goodeidae Empetrichthyslatos Poolfish,Pahrump IVFederally Endangered Aquatic
+  I     Saltwater Grammatidae Grammaloreto Gramma INew Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated20234CLASSQUICKREFERENCEFAMILYSCIENTIFICNAME\Genus
+  ?     Freshwater Gyrinocheilidae Gyrinocheilusaymonieri Chinesealgaeeater IAquatic
+  ?     Saltwater Haemulidaeallspecies Sweetlips IAquatic
+  ?     Saltwater Harpacticidae Tigriopussp.Nutramarcopepod IAquatic
+  ?     Freshwater Helostomatidaeallspecies Gouramis IAquatic
+  ?     Freshwater Hemiodontidae Hemiodussp.Hemiodusshark IAquatic
+  ?     Freshwater Hemiramphidae Dermogenyspusilla Halfbeaklivebearers IAquatic
+  ?     Saltwater Holocentridae Myripristissp.Big-eye Squirrelfish IAquatic
+  ?     Saltwater Holocentridae Sargocentronsp.Squirrelfish IAquatic
+  III   Freshwater Ictaluridaeallspecies Catfish IIIState Protected Species Aquatic
+  ?     Saltwater Labridaeallspecies Hogfish Wrasse IAquatic
+  ?     Freshwater Latidaeallspecies Lates IVAquatic
+  ?     Freshwater Lebiasinidae Lebiasinidaesp Pencilfish IAquatic
+  ?     Freshwater Loricariidaeallspecies Plecostomus IAquatic
+  ?     Saltwater Lutjanidae Lutjanussp.Snapperfish IAquatic
+  ?     Freshwater Mastacembelidae Macrognathus Eelspp IAquatic
+  ?     Freshwater Mastacembelidae Mastacembelus Eelspp IAquatic
+  ?     Freshwater Melanotaeniidaeallspecies Rainbowfish IAquatic
+  ?     Freshwater Mochokidaeallspecies Squeakercatfish IAquatic
+  ?     Saltwater Monacanthidaeallspecies Filefish IAquatic
+  ?     Freshwater Monodactylidaeallspecies Moonyfish IAquatic
+  ?     Freshwater Mormyridaeallspecies Elephantfish IAquatic
+  ?     Freshwater Moronidaeallspecies Bass IIIAquatic
+  ?     Saltwater Mullidae Parupeneuscyclostomus Yellowgoatfish IAquatic
+  ?     Saltwater Muraenidaeallspecies Eel,large IAquatic
+  ?     Freshwater Nandidaeallspecies Asianleaffishes IAquatic
+  ?     Freshwater Neritae Neritinassp Snail IAquatic
+  ?     Freshwater Notopteridaeallspecies Clownknifefish IAquatic
+  ?     Saltwater Opistognathidae Opistognathus Jawfish IAquatic
+  IV    Freshwater Osmeridae Hypomesustranspacificus Smelt,delta IVFederally Threatened Aquatic
+  ?     Freshwater Osphronemidaeallspecies Betta.Gourami IAquatic
+  I     Freshwater Osteoglossidaeallspeciesexcept Scleropagesformosus Arowana Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  IV    Freshwater Osteoglossidae Scleropagesformosus Bonytongue,Asian Arowana IVFederally Endangered Aquatic
+  ?     Saltwater Ostraciidaeallspecies Pufferfish,cowfish,boxfish IVAquatic
+  I     Freshwater Pangasiidaeallspeciesexcept Pangasianodongigas&Pangasiussantiwongsei Catfishshark Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  IV    Freshwater Pangasiidae Pangasianodongigas Catfish,Thailandgiant IVFederally Endangered Aquatic
+  IV    Freshwater Pangasiidae Pangasiussanitwongsei Catfish IVFederally Endangered Aquatic
+  ?     Freshwater Pantodontidaeallspecies Butterflyfishspp IAquatic
+  III   Freshwater Percichthyidaeallspecies Perchsp IIIState Protected Species Aquatic
+  III   Freshwater Percidaeallspecies Walleye IIIState Protected Species Aquatic
+  IV    Freshwater Percidae Etheostomasp.Darter IVFederally Threatened Aquatic
+  IV    Freshwater Percidae Percinasp.Darter IVFederally Endangered Aquatic
+  ?     Saltwater Pholidichthyidae Pholidichthysleucotaenia Engineergoby IAquatic
+  ?     Freshwater Pimelodidaeallspecies Marbledcatfish IAquatic
+  ?     Saltwater Pinguipedidae Parapercisschauinslandii Stripesleeperblenny IAquatic
+  ?     Saltwater Plesiopidae Calloplesiopsaltivelis Marinebetta IAquatic
+  I     Freshwater Poeciliidae Gambusiaaffinis Westernmosquitofish Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  IV    Freshwater Poeciliidae Gambusiagaigei Gambusia,Big Bend IVFederally Endangered Aquatic
+  IV    Freshwater Poeciliidae Gambusiageorgei Gambusia,San Marcos IVFederally Endangered Aquatic
+  IV    Freshwater Poeciliidae Gambusiaheterochir Gambusia,Clear Creek IVFederally Endangered New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated20235CL
+  IV    Freshwater Poeciliidae Gambusianobilis Gambusia,Pecos IVFederally Endangered Aquatic
+  I     Freshwater Poeciliidae Poeciliassp Guppy/Molly Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  IV    Freshwater Poeciliidae Poeciliopsisoccidentalis Topminnow,Gila\incl.Yaqui\IVFederally Endangered Aquatic
+  I     Freshwater Poeciliidae Xiphophorusssp Swordtail Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  I     Freshwater Poeciliidae Xirhossp Mollyvariety Iallspeciesexceptasrestrictedinanothergroup.Nottobeusedasbaitfish Aquatic
+  ?     Freshwater Polypteridae Erpetoichthyscalabaricus Africanropefish IAquatic
+  ?     Freshwater Polypteridae Polypterusssp Poly Pterus,Bichir IAquatic
+  ?     Saltwater Pomacanthidaeallspecies Angel,Damsel,Clownfish IAquatic
+  III   Freshwater Pomadasyidaeallspecies Sargo IIIState Protected Species Aquatic
+  IV    Saltwater Pristidae Pristispectinata Sawfish,smalltooth IVFederally Endangered Aquatic
+  ?     Saltwater Pseudochromidaeallspecies Dottyback IAquatic
+  ?     Freshwater Pseudopimelodidae Microglanisiheringi Bumblebeecatfish IAquatic
+  ?     Saltwater Ptereleotridaeallspecies Dartfish,firefish IAquatic
+  ?     Freshwater Rhamphichthyidaeallspecies Knifefishes IAquatic
+  ?     Saltwater Sabellidaeallspecies Feather Duster IAquatic
+  III   Freshwater Salmonidaeallspecies Trout,Salmon,Chars IIIState Protected Species Aquatic
+  IV    Freshwater Salmonidae Oncorhynchusaguabonitawhitei Trout,Little Kerngolden IVFederally Threatened Aquatic
+  IV    Freshwater Salmonidae Oncorhynchusapache Trout,Apache IVFederally Threatened Aquatic
+  IV    Freshwater Salmonidae Oncorhynchusclarkihenshawi Trout,Lahontancutthroat IVFederally Threatened Aquatic
+  IV    Freshwater Salmonidae Oncorhynchusclarkiseleniris Trout,Paiutecutthroat IVFederally Threatened Aquatic
+  IV    Freshwater Salmonidae Oncorhynchusclarkistomias Trout,greenbackcutthroat IVFederally Threatened Aquatic
+  IV    Freshwater Salmonidae Oncorhynchusgilae Trout,Gila IVFederally Threatened Aquatic
+  IV    Freshwater Salmonidae Oncorhynchusketa\=Salmo\Salmon,chum IVFederally Threatened Aquatic
+  IV    Freshwater Salmonidae Oncorhynchuskisutch\=Salmo\Salmon,coho IVFederally Threatened Aquatic
+  IV    Freshwater Salmonidae Oncorhynchusmykiss\=Salmo\Steelhead IVFederally Endangered Aquatic
+  IV    Freshwater Salmonidae Oncorhynchusnerka\=Salmo\Salmon,sockeye IVFederally Threatened Aquatic
+  IV    Freshwater Salmonidae Oncorhynchustshawytscha\=Salmo\Salmon,chinook IVFederally Endangered Aquatic
+  IV    Freshwater Salmonidae Salmoplatycephalus Alabalik\trout\IVFederally Endangered Aquatic
+  IV    Freshwater Salmonidae Salmosalar Salmon,Atlantic IVFederally Endangered Aquatic
+  IV    Freshwater Salmonidae Salvelinusconfluentus Trout,bull IVFederally Threatened Aquatic
+  ?     Saltwater Scaridae Scarussp.Parrotfish IAquatic
+  ?     Freshwater Scatophagidaeallspecies Scatfish IAquatic
+  ?     Freshwater Schilbeidaeallspecies Catfish,Butter IAquatic
+  IV    Saltwater Sciaenidae Cynoscionmacdonaldi Totoaba\seatroutorweakfish\IVFederally Endangered Aquatic
+  III   Saltwater Sciaenidae Equetussp.Highhat IIIExcept Cynoscionmadonaldi Aquatic
+  III   Saltwater Sciaenidae Parequessp.Highhat IIIExcept Cynoscionmadonaldi Aquatic
+  ?     Saltwater Serpulidaeallspecies Christmastreerock IAquatic
+  ?     Saltwater Serranidaeallspecies Grouper IAquatic
+  ?     Freshwater Serrasalmidae Metynnissp Silver Dollar IAquatic
+  ?     Saltwater Siganidae Siganussp.Rabbitfish,foxface IAquatic
+  ?     Freshwater Siluridae Clariasbatrachus\Silurus\Walking Catfish IVAquatic
+  ?     Freshwater Siluridae Kryptopteruscryptopterus Kryptocatfish IAquatic
+  ?     Freshwater Siluridae Ompokbimaculatus Knifecatfish IAquatic
+  ?     Freshwater Sisoridae Harahara Haraharacatfish IAquatic
+  ?     Saltwater Soleidaeallspecies Flounder IAquatic
+  ?     Saltwater Strombidae Strombusalatus Floridafightingconch IAquatic
+  ?     Freshwater Syngnathidaeallspecies Seahorse,Pipefish IAquatic
+  ?     Freshwater Terapontidae Teraponjarbua Targetfish IAquatic
+  I     Saltwater Tetraodontidae Arothronsp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated20
+  I     Saltwater Tetraodontidae Auriglobussp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Canthigastersp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Carinotetraodonsp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Chelonodonsp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Colomesussp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Contusussp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Ephippionsp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Feroxodonsp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  ?     Saltwater Tetraodontidae Fugusp.Fugu Pufferfish IVAquatic
+  I     Saltwater Tetraodontidae Gastrophysussp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Javichthyssp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  ?     Saltwater Tetraodontidae Lagocephalussp.Pufferfish IVAquatic
+  I     Saltwater Tetraodontidae Liosaccussp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Marilynasp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Monotretussp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Omegaphorasp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Pelagocephalussp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Polyspinasp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Reicheltiasp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  ?     Saltwater Tetraodontidae Sphoeroidessp.Pufferfish IVAquatic
+  ?     Saltwater Tetraodontidae Takifugusp.Pufferfish IVAquatic
+  I     Saltwater Tetraodontidae Tetractenossp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Tetraodonsp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Torquigenersp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Tyleriussp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  I     Saltwater Tetraodontidae Xenopterussp.Pufferfish Iallspeciesexceptasrestrictedinanothergroup Aquatic
+  ?     Freshwater Toxotidae Toxotessp.Archer IAquatic
+  IV    Freshwater Triopsidae Lepiduruspackardi Tadpoleshrimp,vernalpool IVFederally Endangered
+  IV    Hawks,Eagles Accipitridaeallspecies Hawks,Eagles IVFederally Protected
+  IV    Eagle Accipitridae Aquilaheliacaadalberti Eagle,Spanishimperial IVFederally Endangered
+  IV    Eagle Accipitridae Eutriorchisastur Eagle,Madagascarserpent IVFederally Endangered
+  IV    Eagle Accipitridae Haliaeetusalbicillagroenlandicus Eagle,Greenlandwhite-tailed IVFederally Endangered
+  IV    Eagle Accipitridae Haliaeetusleucocephalus Eagle,Bald IVFederally Protected
+  IV    Eagle Accipitridae Haliaeetusvociferoides Eagle,Madagascarsea IVFederally Endangered
+  IV    Eagle Accipitridae Harpiaharpyja Eagle,Harpy IVFederally Endangered
+  IV    Eagle Accipitridae Pithecophagajefferyi Eagle,Philippine IVFederally Endangered
+  III   Waterfowl Anatidaeallwildspecies Geese,Swans,Ducks IIIState Protected Species New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated20237CLASSQUICK
+  IV    Waterfowl Anatidae Anasaucklandicanesiotis Duck Teal,Campbell Islandflightless IVFederally Endangered
+  IV    Waterfowl Anatidae Anaslaysanensis Duck,Laysan IVFederally Endangered
+  IV    Waterfowl Anatidae Anaswyvilliana Duck,Hawaiian\=koloa\IVFederally Endangered
+  IV    Waterfowl Anatidae Aythyainnotata Duck,Pochard Madagascar IVFederally Endangered
+  IV    Waterfowl Anatidae Brantasandvicensis\Nesochen\Goose,Hawaiian Nene IVFederally Endangered
+  IV    Waterfowl Anatidae Cairinascutulata Duck,white-wingedwood IVFederally Endangered
+  IV    Duck Anatidae Polystictastelleri Eider,Steller's IVFederally Threatened
+  IV    Duck Anatidae Rhodonessacaryophyllacea Duck,pink-headed IVFederally Endangered
+  IV    Duck Anatidae Somateriafischeri Eider,spectacled IVFederally Threatened
+  IV    Egret Ardeidae Egrettaeulophotes Egret,Chinese IVFederally Endangered
+  I     Cockatoo Cacatuidae Cacatuasp.Cockatoo Iallspeciesexceptasrestrictedinanothergroup
+  IV    Cockatoo Cacatuidae Cacatuaalba Cockatoo,Whiteor Umbrella IVFederally Endangered
+  IV    Cockatoo Cacatuidae Cacatuahaematuropygia Cockatoo,Whiteor Umbrella IVFederally Endangered
+  IV    Cockatoo Cacatuidae Cacatuasulphurea Cockatoo,Yellow-Crested IVFederally Endangered
+  I     Cockatoo Cacatuidae Callocephalonsp.Cockatoo,Gang-Gang I
+  I     Cockatoo Cacatuidae Calyptorhynchussp.Cockatoo I
+  I     Cockatoo Cacatuidae Eolophussp.Cockatoo,Rose Breasted I
+  I     Cockatoos Cacatuidae Nymphicussp.Cockatiel,Quarrion Weiro I
+  I     Cockatoos Cacatuidae Proboscigersp.Cockatoo,Palm I
+  ?     Emu Casuariidae Dromaiussp.Emu INMLivestock Board
+  I     Finch Coliidae Coliussp.Finch,Mousebird I
+  I     Pigeon Columbidae Columbadomestica Pigeon,Domestic I
+  IV    Pigeon Columbidae Columbainornatawetmorei Pigeon,Puerto Ricanplain IVFederally Endangered
+  IV    Pigeon Columbidae Columbajunoniae Pigeon,white-tailedlaurel IVFederally Threatened
+  I     Pigeon Columbidae Columbalivia Pigeon,Rock\Dove\I
+  IV    Pigeon Columbidae Columbamayeri Pigeon,pink IVFederally Endangered
+  IV    Pigeon Columbidae Columbapalumbusazorica Pigeon,Azoreswood IVFederally Endangered
+  IV    Dove Columbidae Drepanoptilaholosericea Dove,cloven-feathered IVFederally Endangered
+  IV    Pigeon Columbidae Duculamindorensis Pigeon,Mindoroimperial IVFederally Endangered
+  IV    Pigeon Columbidae Hemiphaganovaeseelandiaechathamensis Pigeon,Chatham Island IVFederally Endangered
+  IV    Dove Columbidae Leptotilarufaxillawellsi Dove,Grenadagray-fronted IVFederally Endangered
+  IV    Dove Columbidae Streptopeliapicturatarostrata Turtledove,Seychelles IVFederally Endangered
+  I     Dove Columbidae Geopeliacuneata Dove,Diamond I
+  IV    Crow Corvidae Corvussp.Crowvariety IV
+  I     Finch Emberizidaeallspecies Finch Tanagervariety I
+  I     Finch Estrildidaeallspecies Finchvariety I
+  IV    Falcons Falconidaeallspecies Falcons IV
+  I     Finch Fringillidae Cardueliscannabina Linnet I
+  I     Finch Fringillidae Cardueliscardeulis Finch,Europeangoldfinch I
+  IV    Finch Fringillidae Cardueliscucullata Finch,Red Siskin IVFederally Endangered
+  I     Finch Fringillidae Carduelisyarrellii Finch,Yellow-faced Siskin I
+  I     Finch Fringillidae Leucostictesp.Finch,Rosy-rump I
+  IV    Finch Fringillidae Paroreomyzaflammea Creeper,Molokai IVFederally Endangered
+  IV    Finch Fringillidae Paroreomyzamaculata Creeper,Oahu IVFederally Endangered
+  IV    Finch Fringillidae Pyrrhulapyrrhulamurina Bullfinch,Sao Miguel\finch\IVFederally Endangered
+  I     Finch Fringillidae Serinusalario Canary,Black Headed I
+  I     Finch/Canary Fringillidae Serinuscanaria Finch,Canary I
+  I     Finch Fringillidae Serinusleucopygius Finch,Greysinger I
+  I     Finch Fringillidae Serinusmozambicus Finch,Green Singer I
+  I     Finch Fringillidae Serinus Sulphuratus Canary,Brimstone I
+  IV    Finch Fringillidae Telespyzacantans Finch,Laysan\honeycreeper\IVFederally Endangered
+  IV    Finch Fringillidae Telespyzaultima Finch,Nihoa\honeycreeper\IVFederally Endangered
+  IV    Cranes Gruidaeallspecies Crane IVState Protected Species New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated20238CLASSQUICKREFERENCEFAMILYSCIENT
+  I     Turkey,Domestic Meleagrididae Meleagris\commonlivestock\Turkey,Common\White\Iallspeciesexceptasrestrictedinanothergroup
+  IV    Turkey,Wild Meleagrididae Meleagris\wild\Turkey,wildvariety,includinghybrids IVState Protected Speciesincludeshybrids
+  IV    Turkey,Wild Meleagrididae Meleagrisgallopavogallopavo Turkey,South Mexican IVState Protected Speciesincludeshybrids
+  IV    Turkey,Wild Meleagrididae Meleagrisgallopavointermedia Turkey,Rio Grande IVState Protected Speciesincludeshybrids
+  IV    Turkey,Wild Meleagrididae Meleagrisgallopavomerriami Turkey,Merriam's IVState Protected Speciesincludeshybrids
+  IV    Turkey,Wild Meleagrididae Meleagrisgallopavomexicana Turkey,Gould's IVState Threatened Speciesincludeshybrids
+  IV    Turkey,Wild Meleagrididae Meleagrisgallopavoosceola Turkey,Osceolaor Florida IVState Protected Speciesincludeshybrids
+  IV    Turkey,Wild Meleagrididae Meleagrisgallopavosilvestris Turkey,Eastern Wild IVState Protected Speciesincludeshybrids
+  IV    Turkey,Wild Meleagrididae Meleagrisocellata Turkey,Ocellated IVState Protected Speciesincludeshybrids
+  IV    Guinea Fowl Numididae Agelastesmeleagrides Guineafowl,white-breasted IVFederally Threatened
+  III   Guinea Fowl Numididae Numidameleagris Guineahenor Guinea Fowl III
+  IV    Quail Odontophoridae Cyrtonyxmontezumaemerriami Quail,Merriam's Montezuma IVFederally Endangered
+  I     Finch Passeridae Emblemaguttata Finch,Diamondsparrow I
+  I     Finch Passeridae Lonchuradomestica Finch,Society I
+  III   Phalaropes Phalaropodidaeallspecies Phalaropes Sandpipers IIIState Protected Species
+  III   Pheasants Phasianidaeallspecies Pheasant,Game Birdvariety IIIState Protected Species
+  III   Chukar Phasianidae Alectorissp.Chukar Partridge,Game Birdvariety IIIState Protected Species
+  III   Quail Phasianidae Coturnix\spvariety\Quail,Game Birdvariety IIIState Protected Species
+  I     Chicken Phasianidae Gallusgallusdomesticus Chicken,commonlivestock Iallspeciesexceptasrestrictedinanothergroup
+  III   Peacock Phasianidae Pavocristatus Peacock Peafowl,Common Blue IIIState Protected Species
+  I     Weaver Ploceidae Euplectesorix Weaver,Red Bishop Iallspeciesexceptasrestrictedinanothergroup
+  IV    Weaver Ploceidae Foudiaflavicans Fody,Rodrigues IVFederally Endangered
+  IV    Weaver Ploceidae Foudiarubra Fody,Mauritius IVFederally Endangered
+  IV    Weaver Ploceidae Foudiasechellarum Fody,Seychelles\weaver-finch\IVFederally Endangered
+  IV    Weaver Ploceidae Malimbusibadanensis Malimbe,Ibadan IVFederally Endangered
+  IV    Weaver Ploceidae Ploceusgolandi Weaver,Clarke's IVFederally Endangered
+  I     Lovebird Psittacidae Agapornissp.Lovebirds I
+  I     Parrot Psittacidae Alisterus Parrot I
+  I     Parrot Psittacidae Amazonasp.Parrot,Amazons Iallspeciesexceptasrestrictedinanothergroup
+  IV    Parrot Psittacidae Amazonaarausiaca Parrot,red-neckedjaco IVFederally Endangered
+  IV    Parrot Psittacidae Amazonabrasiliensis Parrot,red-tailed IVFederally Endangered
+  IV    Parrot Psittacidae Amazonaguildingii Parrot,St Vincent IVFederally Endangered
+  IV    Parrot Psittacidae Amazonaimperialis Parrot,imperial IVFederally Endangered
+  IV    Parrot Psittacidae Amazonaleucocephala Parrot,Bahamanor Cuban IVFederally Endangered
+  IV    Parrot Psittacidae Amazonapretrei Parrot,red-spectacled IVFederally Endangered
+  IV    Parrot Psittacidae Amazonarhodocorytha Parrot,red-browed IVFederally Endangered
+  IV    Parrot Psittacidae Amazonaversicolor Parrot,St.Lucia IVFederally Endangered
+  IV    Parrot Psittacidae Amazonavinacea Parrot,vinaceous-breasted IVFederally Endangered
+  IV    Parrot Psittacidae Amazonavittata Parrot,Puerto Rican IVFederally Endangered
+  IV    Macaw Psittacidae Anodorhynchusglaucus Macaw,Glaucous IVFederally Endangered
+  ?     Macaw Psittacidae Anodorhynchushyacinthus Macaw,Hyacinth IVFed Proposed Endangered
+  IV    Macaw Psittacidae Anodorhynchusleari Macaw,Indigo IVFederally Endangered
+  I     Parrot Psittacidae Aprosmictussp.Parrot I
+  I     Macaw Psittacidae Araambigua Macaw,Great Green Buffon I
+  IV    Macaw Psittacidae Araambiguus Macaw,Great Military IVFederally Endangered
+  I     Macaw Psittacidae Araararauna Macaw,Blue Gold I
+  I     Macaw Psittacidae Araaurucollis Macaw,Yellow Collared I
+  IV    Macaw Psittacidae Aracaninde\renamed Araglaucogularis\Macaw,Blue-throated IVFederally Endangered
+  I     Macaw Psittacidae Arachloropterus Macaw,Green Wing I
+  IV    Macaw Psittacidae Araglaucogularis\prev.Aracaninde\Macaw,Blue-throated IVFederally Endangered
+  ?     Macaw Psittacidae Aramacao Macaw,Scarlet IVFed Proposed Endangered New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated20239CLASSQUICKREFERENCEFA
+  I     Macaw Psittacidae Aramanilata Macaw,Redbellied I
+  IV    Macaw Psittacidae Aramilitaris Macaw,Military IVFederally Endangered
+  I     Macaw Psittacidae Aranobilis Macaw,Red Shouldered I
+  I     Macaw Psittacidae Ararubrogenys Macaw,Red-fronted I
+  I     Macaw Psittacidae Arasevera Macaw,Severe/Chestnutfronted I
+  IV    Conure Psittacidae Aratingaguarouba Conure,Golden Parakeet IVFederally Endangered
+  I     Conure Psittacidae Aratingasp.Conures Iallspeciesexceptasrestrictedinanothergroup
+  I     Parakeet Psittacidae Barnardiussp.Parakeet I
+  I     Parakeet Psittacidae Bolbopsittacuslunulatus Parakeet,Guaiabero I
+  I     Parakeet Psittacidae Bolborhynchussp.Parakeet I
+  I     Parakeet Psittacidae Brotogerissp.Parakeet I
+  I     Lorikeet Psittacidae Chalcopsittasp.Lory I
+  I     Lorikeet Psittacidae Charmosynasp.Lorikeet I
+  I     Parrot Psittacidae Coracopsissp.Parrot Iallspeciesexceptasrestrictedinanothergroup
+  IV    Parrot Psittacidae Coracopsisnigrabarklyi Parrot,Seychelleslesservasa IVFederally Endangered
+  I     Conure Psittacidae Cyanoliseussp.Conure,Patagonian I
+  IV    Macaw Psittacidae Cyanopsittaspixii Macaw,Spixlittleblue IVFederally Endangered
+  I     Parakeet Psittacidae Cyanoramphussp.Parakeet Iallspeciesexceptasrestrictedinanothergroup
+  IV    Parakeet Psittacidae Cyanoramphusauricepsforbesi Parakeet,Forbes'IVFederally Endangered
+  IV    Parakeet Psittacidae Cyanoramphuscookii Parakeet,Norfolk Island Red IVFederally Endangered
+  I     Parrot Psittacidae Cyclopsittasp.Parrot,Figs I
+  I     Parrot Psittacidae Deroptyusaccipitrinus Parrot,Hawkheaded I
+  I     Parrot Psittacidae Eclectusroratussp.Parrot,Eclectus I
+  I     Conure Psittacidae Enicognathussp.Conure,Slenderbill I
+  I     Lorikeet Psittacidae Eossp.Lory I
+  I     Parakeet Psittacidae Eunymphicuscornutus Parakeet,Horned I
+  I     Parrot Psittacidae Forpussp.Parrotlets I
+  I     Parrot Psittacidae Geoffroyussp.Parrot I
+  IV    Parrot Psittacidae Geopsittacusoccidentalis Parrot,Night\Australian\IVFederally Endangered
+  I     Lorikeet Psittacidae Glossopsittasp.Lorikeet I
+  I     Parrot Psittacidae Graydidascalusbrachyurus Parrot,Shorttailed I
+  IV    Parakeet Psittacidae Guaroubaguarouba Parakeet,Golden Conure IVFederally Endangered
+  I     Parrot Psittacidae Gypopsittavulturina Parrot,Vulturine I
+  I     Parrot Psittacidae Hapalopsittacasp.Parrot I
+  I     Parakeet Psittacidae Lathamusdiscolor Parrot,Red-shouldered Swift I
+  I     Conure Psittacidae Leptosittacasp.Conure,Golden Plumed I
+  I     Parrot Psittacidae Loriculussp.Parrot I
+  I     Lorikeet Psittacidae Loriussp.Lory I
+  I     Parakeet Psittacidae Melopsittacusundulatus Parakeet,Common\Budgie\I
+  I     Parrot Psittacidae Micropsittasp.Parrot,Pygmy I
+  I     Parakeet Psittacidae Myiopsittamonachus Parakeet,Quaker Monk I
+  I     Conure Psittacidae Nandayussp.Conure,Nanday I
+  I     Parrot Psittacidae Nannopsittacapanychlora Parrotlet,Tepui I
+  IV    Parakeet Psittacidae Neophemachrysogaster Parakeet,orangebellied IVFederally Endangered
+  IV    Parakeet Psittacidae Neophemapulchella Parakeet,turquoise IVFederally Endangered
+  I     Parakeet Psittacidae Neophemasp.Parakeet Iallspeciesexceptasrestrictedinanothergroup
+  IV    Parakeet Psittacidae Neophemasplendida Parakeet,scarletchested IVFederally Endangered
+  I     Parakeet Psittacidae Neopsittacussp.Lorikeet I
+  I     Conure Psittacidae Ognorhynchussp.Conure,Yellow Eared I
+  I     Parrot Psittacidae Opopsittasp.Parrot,Figs I
+  I     Lorikeet Psittacidae Oreopsittacusarfaki Whiskered Lorikeet INew Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202310CLASSQUICKREFERENCEFAMILYS
+  IV    Parrot Psittacidae Pezoporusoccidentalis Parrot,Night IVFederally Endangered
+  IV    Parrot Psittacidae Pezoporuswallicus Parrot,Ground IVFederally Endangered
+  I     Lorikeet Psittacidae Phigyssolitarius Collared Lory I
+  I     Parrot Psittacidae Pionitesleucogaster Parrot,Whitebelliedcaique I
+  I     Parrot Psittacidae Pionitesmelanocephala Parrot,Blackheadedcaique I
+  IV    Parrot Psittacidae Pionopsittapileata Parrot,Pileated Red Capped IVFederally Endangered
+  I     Parrot Psittacidae Pionopsittasp.Parrot Iallspeciesexceptasrestrictedinanothergroup
+  I     Parrot Psittacidae Pionussp.Parrots I
+  I     Parakeet Psittacidae Platycercussp.Rosella I
+  I     Parrot Psittacidae Poicephalussp.Parrots I
+  I     Parakeet Psittacidae Polytelissp.Parakeet I
+  I     Macaw Psittacidae Primoliuscouloni Macaw,Blue-headed Coulon I
+  I     Macaw Psittacidae Primoliusmaracana Macaw,Blue-winged Illiger I
+  I     Parrot Psittacidae Prioniturus Parrots,Racket-tailed I
+  I     Parrot Psittacidae Prosopeia Parrots,Shining I
+  IV    Parrot Psittacidae Psephotuschrysopterygius Parakeet,Golden Shoulder IVFederally Endangered
+  IV    Parrot Psittacidae Psephotuspulcherrimus Parakeet,Paradise IVFederally Endangered
+  I     Parrot Psittacidae Psephotusvarius Mulga Parakeet Iallspeciesexceptasrestrictedinanothergroup
+  I     Lorikeet Psittacidae Pseudosfuscata Lorikeet,Duskylory I
+  I     Parakeet Psittacidae Psiitinuscyanurus Blue-rumped Parrot I
+  IV    Parakeet Psittacidae Psittaculaecho Parakeet,Mauritius IVFederally Endangered
+  I     Parakeet Psittacidae Psittaculasp.except Psittaculaecho Parakeet IExcept Psittaculaecho
+  I     Parrot Psittacidae Psittaculirostris Parrot,Figs I
+  I     Parrot Psittacidae Psittacussp.Parrots,African Greys I
+  I     Lorikeet Psittacidae Psitteutelesgoldiei Lorikeet,Goldies I
+  I     Parrot Psittacidae Psittrichasfulgidus Pesquet's Parrot I
+  I     Parrot Psittacidae Purpureicephalusspurius Red-capped Parrot I
+  IV    Parakeet Psittacidae Pyrrhuracruentata Parakeet,Ochre Bluethroat IVFederally Endangered
+  I     Conure Psittacidae Pyrrhurasp.Conure Iallspeciesexceptasrestrictedinanothergroup
+  IV    Parrot Psittacidae Rhynchopsittapachyrhyncha Parrot,thick-billed IVFederally Endangered
+  I     Parrot Psittacidae Tanygnathussp.Parrot I
+  I     Parrot Psittacidae Touitsp.Parrotlets I
+  I     Parrot Psittacidae Trichoglossussp.Lorikeets I
+  I     Parrot Psittacidae Triclariamalachitacea Parrot,Purplebellied I
+  I     Lorikeet Psittacidae Vinisp.Lory I
+  III   Rails Rallidaeallspecies Coots,Rails,Gallinules IIIState Protected Species
+  I     Toucans Ramphastidae Andigenacucullata Toucan,Hooded Mountain I
+  I     Toucans Ramphastidae Andigenahypolauca Toucan,Greybreasted Mtn I
+  I     Toucans Ramphastidae Andigenalaminirostris Toucan,Platebilled Mtn I
+  I     Toucans Ramphastidae Andigenanigrirostris Toucan,Blackbilled Mtn I
+  I     Toucans Ramphastidae Aulacorhynchussp.Toucanets I
+  I     Toucans Ramphastidae Aulacorhynchussp.Toucanets I
+  I     Toucans Ramphastidae Bailloniusbailloni Toucanet,Saffron I
+  I     Toucans Ramphastidae Pteroglossussp.Aracaris I
+  I     Toucans Ramphastidae Ramphastossp.Toucans I
+  I     Toucans Ramphastidae Seleniderasp.Toucanets I
+  IV    Stilt Recurvirostridae Himantopusmexicanusknudseni Stilt,Hawaiian IVFederally Endangered
+  IV    Stilt Recurvirostridae Himantopusnovaezelandiae Stilt,black IVFederally Endangered
+  ?     Rheas Rheidae Rheaamericana Rhea,Greater American Grey INMLivestock Board
+  ?     Sea
+  IV    Scolopacidae Numeniusborealis Curlew,Eskimoseabird IVFederally Endangered
+  ?     Sea
+  ?     Scolopacidae Tringaguttifer Greenshank,Nordmann's Sea
+  IV    IVFederally Endangered
+  IV    Penguins Spheniscidae Spheniscusmendiculus Penguin,Galapagos IVFederally Endangered New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202311CLA
+  IV    Owls Strigidaeallspecies Owls IVFederally Protected
+  I     Parrot Strigopidae Nestormeridionalis Kaka I
+  I     Parrot Strigopidae Nestornotabilis Kea I
+  I     Parrot Strigopidae Nestorproductus Norfolk Island Kaka I
+  IV    Parrot,True Strigopidae Strigopshabroptilus Kakapo,Night Parrot IVFederally Endangered
+  ?     Ostrich Struthionidae Struthiospp.Ostrich INMLivestock Board
+  I     Finch Sturnidae Acridotherestristis Mynah,Common I
+  I     Finch Sturnidae Graculareligiosa Mynah,Hill I
+  I     Finch Sturnidae Minodumontii Mynah,Yellow Faced I
+  I     Finch Sylviidae Aidemosynemodesta Finch,Cherry I
+  I     Finch Sylviidae Amadinafaciata Finch,Cutthroat I
+  I     Finch Sylviidae Euodicemalabarca Finch,Silver Bill I
+  I     Finch Sylviidae Leiothrixlutea Finch,Pekinrobin I
+  I     Finch Sylviidae Ortygospizaatricollis Finch,African Quail I
+  III   Grouse Tetraonidaeallspecies Grouse,Ptarmigan IIIState Protected Species
+  I     Finch Viduidae Viduachalybeata Finch,Combassou I
+  ?     Finch Viduidae Viduamacroura Finch,Pintailwhydah IBivalvia Molluscs Dreissenidae Dreissenapolymorpha Zebra Mussel IVAquatic Invasive Species Bivalvia Molluscs Dreissenidae Dreissenarostrifor
+  III   Pronghorn Antilocapridaeallspecies Pronghorn Antelope IIIState Protected Species
+  IV    Primate\non-human\Aotidaeallspecies Monkeys,Night IV
+  IV    Beaver Aplodontiidae Aplodontiarufanigra Beaver,Mountain Point Arena IVFederally Endangered
+  IV    Primate\non-human\Atelidae Alouattasp.Monkey,howler IVFederally Threatened
+  IV    Primate\non-human\Atelidae Atelessp.Monkey,spider IVFederally Endangered
+  IV    Primate\non-human\Atelidae Brachytelesarachnoides Monkey,woollyspider IVFederally Endangered
+  IV    Primate\non-human\Atelidae Lagothrixflavicauda Monkey,yellow-tailedwoolly IVFederally Endangered
+  IV    Primate\non-human\Atelidae Oreonaxflavicauda Monkey,Howler/prehensile-tailed IV
+  IV    Ungulates Bovidae Addaxnasomaculatus Addax,Desert Antelope IVFederally Endangered
+  IV    Ungulates Bovidae Aepycerosmelampuspetersi Impala,black-faced IVFederally Endangered
+  IV    Ungulates Bovidae Alcelaphusbuselaphusswaynei Hartebeest,Swayne's IVFederally Endangered
+  IV    Ungulates Bovidae Alcelaphusbuselaphustora Hartebeest,Tora IVFederally Endangered
+  IV    Ungulates Bovidae Ammodorcasclarkei Gazelle,Clark's Dibatag IVFederally Endangered
+  IV    Ungulates Bovidae Ammotragusssp.Aoudad,Barbary Sheep IVState Protected Species
+  IV    Ungulates Bovidae Bisonbison Bison,American Buffalo IVExceptwhereraisedincaptivityfordomesticorcommercialmeatproduction
+  IV    Ungulates Bovidae Bisonbisonathabascae Bison,Wood Canada IVFederally Endangered
+  IV    Ungulates Bovidae Bosgaurus Seledang IVFederally Endangered
+  ?     Ungulates Bovidae Bosgrunniens Yak INMLivestock Board
+  IV    Ungulates Bovidae Bosgrunniensmutus Yak,Wild\Large Himalayan\IVFederally Endangered
+  IV    Ungulates Bovidae Bosjavanicus Cattle,Wild Banteng IVFederally Endangered
+  IV    Ungulates Bovidae Bossauveli Ox,Grey Kouprey IVFederally Endangered New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202312CLASSQUICKREFERENCE
+  ?     Ungulates Bovidae Bostaurusor Bosindicus Cattle,commonlivestock INMLivestock Board
+  IV    Ungulates Bovidae Bubalusdepressicornis Buffalo,Dwarf Anoalowland IVFederally Endangered
+  IV    Ungulates Bovidae Bubalusmindorensis Tamaraw IVFederally Endangered
+  IV    Ungulates Bovidae Bubalusquarlesi Anoa,mountain IVFederally Endangered
+  IV    Ungulates Bovidae Capraaegagrus\wildsp.\Ibex,Persian IVState Protected Species
+  ?     Ungulates Bovidae Capraaegagrushircus Goat,commonlivestock INMLivestock Board
+  IV    Ungulates Bovidae Capraaegragruschiltanensis Ibex,Markhor IVFederally Endangered
+  IV    Ungulates Bovidae Caprafalconerijerdoni Ibex,Markhorstraight-horned IVFederally Endangered
+  IV    Ungulates Bovidae Caprafalconerimegaceros Ibex,Markhor Kabul IVFederally Endangered
+  ?     Ungulates Bovidae Caprahircus Goat,commonlivestock INMLivestock Board
+  IV    Ungulates Bovidae Caprapyrenaicapyrenaica Ibex,Pyrenean IVFederally Endangered
+  IV    Ungulates Bovidae Caprasibirica Ibex,Siberian IVState Protected Species
+  IV    Ungulates Bovidae Caprawalie Ibex,Walia IVFederally Endangered
+  IV    Ungulates Bovidae Cephalophusjentinki Duiker,Jentink's IVFederally Endangered
+  IV    Ungulates Bovidae Damaliscuspygarusdorcas Bontebok,Antelope IVFederally Endangered
+  IV    Ungulates Bovidae Gazellacuvieri Gazelle,mountain\=Cuvier's\IVFederally Endangered
+  IV    Ungulates Bovidae Gazelladama Gazelle,dama IVFederally Endangered
+  IV    Ungulates Bovidae Gazelladamalozanoi Gazelle,Riode Oro Dama IVFederally Endangered
+  IV    Ungulates Bovidae Gazelladamamhorr Gazelle,Mhorr IVFederally Endangered
+  IV    Ungulates Bovidae Gazelladorcasmassaesyla Gazelle,Moroccan IVFederally Endangered
+  IV    Ungulates Bovidae Gazelladorcaspelzelni Gazelle,Pelzeln's IVFederally Endangered
+  IV    Ungulates Bovidae Gazelladorcassaudiya Gazelle,Saudi Arabian IVFederally Endangered
+  IV    Ungulates Bovidae Gazellagazella Gazelle,Arabian IVFederally Endangered
+  IV    Ungulates Bovidae Gazellaleptoceros Gazelle,slender-horned IVFederally Endangered
+  IV    Ungulates Bovidae Gazellasubgutturosamarica Gazelle,sand IVFederally Endangered
+  IV    Ungulates Bovidae Hemitragusjayakari Tahr,Arabian IVFederally Endangered
+  IV    Ungulates Bovidae Hippotragusnigervariani Antelope,giantsable IVFederally Endangered
+  IV    Ungulates Bovidae Kobusleche Lechwe,Red Antelope IVFederally Threatened
+  IV    Ungulates Bovidae Naemorhedusgoral Goral,Himalayan IVFederally Endangered
+  IV    Ungulates Bovidae Naemorhedussumatraensis\=Capricornis\Serow IVFederally Endangered
+  IV    Ungulates Bovidae Neotragusmoschatusmoschatus Suni,Zanzibar IVFederally Endangered
+  IV    Ungulates Bovidae Oryxbeisa Oryx,East African IVState Protected Species
+  IV    Ungulates Bovidae Oryxdammah Oryx,scimitar-horned IVFederally Endangered
+  IV    Ungulates Bovidae Oryxgazella Oryx,Gemsbok IVState Protected Species
+  IV    Ungulates Bovidae Oryxleucoryx Oryx,Arabian IVFederally Endangered
+  IV    Ungulates Bovidae Ovisammon Sheep,Argali IVFederally Threatened
+  ?     Ungulates Bovidae Ovisaries Sheep,commonlivestock INMLivestock Board
+  IV    Ungulates Bovidae Oviscanadensis Sheep,Desert Bighorn IVState Protected Species
+  IV    Ungulates Bovidae Oviscanadensismexicana Sheep,Desert Bighorn IVState Protected Species
+  IV    Ungulates Bovidae Oviscanadensisnelsoni Sheep,Peninsularbighorn IVFederally Endangered
+  IV    Ungulates Bovidae Oviscanadensissierrae Sheep,Sierra Nevadabighorn IVFederally Endangered
+  IV    Ungulates Bovidae Ovismusimonophion Urial IVFederally Endangered
+  IV    Ungulates Bovidae Ovisvigneivignei Shapo IVFederally Endangered
+  IV    Ungulates Bovidae Pantholopshodgsonii Antelope,Tibetan IVFederally Endangered
+  IV    Ungulates Bovidae Rupicaprarupicapraornata Chamois,Apennine IVFederally Endangered
+  IV    Ungulates Bovidae Saigatataricamongolica Saiga,Mongolian\antelope\IVFederally Endangered
+  IV    Ungulates Bovidae Taurotragusderbianusderbianus Eland,westerngiant IVFederally Endangered
+  IV    Ungulates Bovidae Tragelaphusssp.Kudu IVState Protected Species
+  IV    Sloth Bradypodidae Bradypustorquatus Sloth,Brazilianthree-toed IVFederally Endangered
+  IV    Primate\non-human\Callitrichidaeallspecies Marmoset IVFederally Endangered
+  ?     Ungulates Camelidae Camelusbactrianus Camel,Bactrian INMLivestock Board
+  ?     Ungulates Camelidae Camelusdromedarius Camel Dromedary Arabian INMLivestock Board New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202313CLASS
+  ?     Ungulates Camelidae Lamaglama Llama Alpaca INMLivestock Board
+  I     Dog Canidae Canisfamiliaris Dog,Common&Hybrids Iallspeciesexceptasrestrictedinanothergroup
+  IV    Dog,wild Canidae Canislatrans Coyote IV
+  IV    Dog,wild Canidae Canislupus Wolf,gray IVFederally Endangered
+  IV    Dog,wild Canidae Canisrufus Wolf,red IVFederally Endangered
+  IV    Dog,wild Canidae Canissimensis Fox,Simien IVFederally Endangered
+  IV    Dog,wild Canidae Chrysocyonbrachyurus Wolf,Maned Bushed Dog IVFederally Endangered
+  IV    Dog,wild Canidae Cuonalpinus Dog,Dhole\wild\IVFederally Endangered
+  IV    Dog,wild Canidae Lycalopexsp.Fox,South American IVState Protected Species
+  IV    Dog,wild Canidae Lycaonpictus Dog,Africanwild IVFederally Endangered
+  IV    Dog,wild Canidae Urocyonlittoralis Fox,Island IVFederally Endangered
+  IV    Dog,wild Canidae Vulpes\sp.variety\Fox\anytype\IVState Protected Species
+  IV    Rodent Capromyidae Capromysangelcabrerai Hutia,Cabrera's IVFederally Endangered
+  IV    Rodent Capromyidae Capromysauritus Hutia,large-eared IVFederally Endangered
+  IV    Rodent Capromyidae Capromysnana Hutia,dwarf IVFederally Endangered
+  IV    Rodent Capromyidae Capromyssanfelipensis Hutia,littleearth IVFederally Endangered
+  IV    Rodent Castoridae Castorfiberbirulai Beaver\Mongolian\IVFederally Endangered
+  I     Pocket Pet Caviidae Caviaporcellus Guineapig ICaptive Bred
+  IV    Primate\non-human\Cebidaeallspecies Monkeys IVFederally Endangered
+  IV    Primate\non-human\Cercopithecidaeallspecies Monkeys,Old World IVFederally Endangered
+  IV    Ungulates Cervideaallspecies Caribou Raindeer\anytype\IVState Protected Species
+  IV    Ungulates Cervideaallspecies Deer\anytype\IVState Protected Species
+  IV    Ungulates Cervideaallspecies Elk\anytype\IVState Protected Species
+  IV    Ungulates Cervideaallspecies Moose\anytype\IVState Protected Species
+  IV    Primate\non-human\Cheirogaleidae Cheirogaleidaespp.Dwarflemurs IV
+  IV    Rodent Chinchillidae Chinchillabrevicaudataboliviana Chinchilla,Short-tailed IVFederally Endangered
+  I     Rodent Chinchillidae Chinchillalaniger Chinchilla,Long-tailed IExcept Chinchillabrevicaudataboliviana
+  I     Rodent Cricetidae Cricetulusgriseus Hamster,Chinesedwarf ICaptive Bred
+  IV    Rodent Cricetidae Microtuscalifornicusscirpensis Vole,Amargosa IVFederally Endangered
+  IV    Rodent Cricetidae Microtusmexicanushualpaiensis Vole,Hualapai Mexican IVFederally Endangered
+  IV    Rodent Cricetidae Microtusmontanusarizonensis Vole,Montane\Arizona\IVState Protected Species
+  IV    Rodent Cricetidae Microtuspennsylvanicusdukecampbelli Vole,Floridasaltmarsh IVFederally Endangered
+  IV    Rodent Cricetidae Neotomafloridanasmalli Woodrat,Key Largo IVFederally Endangered
+  IV    Rodent Cricetidae Neotomafuscipesriparia Woodrat,riparian\=San Joaquin Valley\IVFederally Endangered
+  IV    Rodent Cricetidae Ondatrazibethicus Muskrat IVState Protected Species
+  IV    Rodent Cricetidae Oryzomyspalustrisnatator Ricerat IVFederally Endangered
+  IV    Rodent Cricetidae Peromyscusgossypinusallapaticola Mouse,Key Largocotton IVFederally Endangered
+  IV    Rodent Cricetidae Peromyscuspolionotusallophrys Mouse,Choctawhatcheebeach IVFederally Endangered
+  IV    Rodent Cricetidae Peromyscuspolionotusammobates Mouse,Alabamabeach IVFederally Endangered
+  IV    Rodent Cricetidae Peromyscuspolionotusniveiventris Mouse,southeasternbeach IVFederally Threatened
+  IV    Rodent Cricetidae Peromyscuspolionotuspeninsularis Mouse,St.Andrewbeach IVFederally Endangered
+  IV    Rodent Cricetidae Peromyscuspolionotusphasma Mouse,Anastasia Islandbeach IVFederally Endangered
+  IV    Rodent Cricetidae Peromyscuspolionotustrissyllepsis Mouse,Perdido Keybeach IVFederally Endangered
+  IV    Rodent Cricetidae Reithrodontomysraviventris Mouse,saltmarshharvest IVFederally Endangered
+  IV    Rodent Cuniculidae Cuniculuspaca Paca IV
+  IV    Armadillos Dasypodidae Chaetophractusnationi Armadillos IV
+  IV    Primate\non-human\Daubentoniidae Daubentoniamadagascariensis Lemur,Aye-aye IVFederally Endangered
+  II    Marsupial Didelphidae Monodelphisdomestica Shorttail Oppossum IICaptive Bred
+  IV    Rodent Dipodidae Zapushudsoniuspreblei Mouse,Preble'smeadowjumping IVFederally Threatened New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202
+  IV    Elephant Elephantidae Elephasmaximus Elephant,Asian IVFederally Endangered
+  IV    Elephant Elephantidae Loxodontaafricana Elephant,African IVFederally Threatened
+  ?     Equine Equidae Equusafricanusasinus Donkeycommonlivestock INMLivestock Boardallspeciesexceptasrestrictedinanothergroup
+  IV    Equine Equidae Equusasinus Donkey,Africanwild IVFederally Endangered
+  ?     Equine Equidae Equuscaballus Horse,commonlivestock INMLivestock Board
+  IV    Equine Equidae Equusgrevyi Zebra,Grevy's IVFederally Threatened
+  IV    Equine Equidae Equushemionus Ass,Asianwild IVFederally Endangered
+  IV    Equine Equidae Equusprzewalskii Horse,Przewalski's IVFederally Endangered
+  IV    Equine Equidae Equuszebrahartmannae Zebra,Hartmann'smountain IVFederally Threatened
+  IV    Equine Equidae Equuszebrazebra Zebra,mountain IVFederally Endangered
+  IV    Rodent Erethizontidae Chaetomyssubspinosus Porcupine,thin-spined IVFederally Endangered
+  IV    Porcupine Erethizontidae Sphiggurusssp Porcupines IV
+  I     Hedgehog Erinaceidae Atelerixssp Hedgehog\Common\I
+  IV    Civet Eupleridaeallspecies Civet,Fossa,falanouc,Malagasy IV
+  IV    Cat,wild Felidae Acinonyxjubatus Cheetah IVFederally Endangered
+  IV    Cat,wild Felidae Caracalcaracal Caracal IV
+  IV    Cat,wild Felidae Catopuma\=Felis\temminckii Cat,Asiangolden\=Temmnick's\IVFederally Endangered
+  IV    Cat,wild Felidae Catopumatemminckii Asiangoldencat IV
+  I     Cat Felidae Feliscatus Commonhousecat&hybrids I
+  IV    Cat,wild Felidae Felisconcolorcoryi Panther,Florida IV
+  IV    Cat,wild Felidae Felisjacobita Cat,Andean IVFederally Endangered
+  IV    Cat,wild Felidae Felismargaritascheffeli Cat,Pakistansand IVFederally Endangered
+  IV    Cat,wild Felidae Felisnigripes Cat,black-footed IVFederally Endangered
+  IV    Cat,wild Felidae Felispardalis Ocelot IVFederally Endangered
+  IV    Cat,wild Felidae Felispardina Lynx,Spanish IVFederally Endangered
+  IV    Cat,wild Felidae Herpailurusyagouaroundicacomitli\=Felis\Jaguarundi,Gulf Coast IVFederally Endangered
+  IV    Cat,wild Felidae Herpailurusyagouaroundifossata\=Felis\Jaguarundi,Guatemalan IVFederally Endangered
+  IV    Cat,wild Felidae Herpailurusyagouaroundipanamensis\=Felis\Jaguarundi,Panamanian IVFederally Endangered
+  IV    Cat,wild Felidae Herpailurusyagouarounditolteca\=Felis\Jaguarundi,Sinaloan IVFederally Endangered
+  IV    Cat,wild Felidae Leopardusgeoffroyi Geoffroy'scat IV
+  IV    Cat,wild Felidae Leopardusjacobitus Andean Mountaincat IV
+  IV    Cat,wild Felidae Leoparduspardalis\=Felis\Ocelot IVFederally Endangered
+  IV    Cat,wild Felidae Leopardustigrinus\=Felis\Tiger Cat IVFederally Endangered
+  IV    Cat,wild Felidae Leoparduswiedii\=Felis\Margay IVFederally Endangered
+  IV    Cat,wild Felidae Leptailurusserval Serval IV
+  IV    Cat,wild Felidae Leptailurusservalconstantina\=Felis\Serval,Barbary IVFederally Endangered
+  IV    Cat,wild Felidae Lynxcanadensis Lynx,Canada IVFederally Threatened
+  IV    Cat,wild Felidae Lynxrufusescuinapae\=Felis\Bobcat,Mexican IVFederally Endangered
+  IV    Cat,wild Felidae Neofelisnebulosa Leopard,clouded IVFederally Endangered
+  IV    Cat,wild Felidae Pantheraleopersica Lion,Asiatic IVFederally Endangered
+  IV    Cat,wild Felidae Pantheraonca Jaguar IVFederally Endangered
+  IV    Cat,wild Felidae Pantherapardus Leopard IVFederally Endangered
+  IV    Cat,wild Felidae Pantheratigris Tiger IVFederally Endangered
+  IV    Cat,wild Felidae Pantherauncia Leopard,snow IVFederally Endangered
+  IV    Cat,wild Felidae Pardofelismarmorata\=Felis\Cat,marbled IVFederally Endangered
+  IV    Cat,wild Felidae Prionailurusbengalensisbengalensis\=Felis\Cat,leopard IVFederally Endangered
+  IV    Cat,wild Felidae Prionailurusbengalensisiriomotensis\=Felis\Cat,Iriomote IVFederally Endangered New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Upda
+  IV    Cat,wild Felidae Prionailurusplaniceps\=Felis\Cat,flat-headed IVFederally Endangered
+  IV    Cat,wild Felidae Prionailurusrubiginosus Cat,Rusty Spotted IV
+  IV    Cat,wild Felidae Pumaconcolor\allsubsp\Mountain Lion,Puma IVFederally Threatened
+  IV    Cat,wild Felidae Pumaconcolorcoryi Panther,Florida IVFederally Endangered
+  IV    Cat,wild Felidae Pumaconcolorcostaricensis Cougar,Costa Rican Puma IVFederally Endangered
+  IV    Cat,wild Felidae Pumaconcolorcouguar Cougar,Eastern Puma IVFederally Endangered
+  IV    Cat,wild Felidae Pumayagouaroundi Jaguar,American IV
+  IV    Gopher Geomyidae Thomomysumbrinus Gopher,Southern Pocket IVState Protected Species
+  IV    Mongoose Herpestidae Herpestes Mongooses IV
+  IV    Primate\non-human\Hominidaeallspecies Apes,Great IVFederally Endangered
+  IV    Dog,wild Hyaenidaeallspecies Hyena IV
+  IV    Primate\non-human\Hylobatidae Hylobatesspp.\including Nomascus\Gibbons IVFederally Endangered
+  IV    Primate\non-human\Hylobatidae Symphalangussyndactylus Siamang IVFederally Endangered
+  IV    Primate\nonhuman\Indriidaeallspecies Lemur,Avahi Wooly Indri Sifaka IVFederally Endangered
+  IV    Primate\nonhuman\Lemuridaeallspecies Lemur IVFederally Endangered
+  IV    Rabbit Leporidae Brachylagusidahoensis Rabbit,pygmy IVFederally Endangered
+  IV    Rabbit Leporidae Caprolagushispidus Rabbit,Hispid Hare IVFederally Endangered
+  IV    Rabbit Leporidae Lepuscallotis Jackrabbit,White-sided IVState Protected Species
+  I     Rabbit Leporidae Oryctolaguscuniculus Rabbit,European\common\I
+  IV    Rabbit Leporidae Pentalagusfurnessi Rabbit,Ryukyu IVFederally Endangered
+  IV    Rabbit Leporidae Romerolagusdiazi Rabbit,Volcano IVFederally Endangered
+  IV    Rabbit Leporidae Sylvilagusbachmaniriparius Rabbit,Riparianbrush IVFederally Endangered
+  IV    Rabbit Leporidae Sylvilaguspalustrishefneri Rabbit,Lower Keysmarsh IVFederally Endangered
+  IV    Kangaroo Macropodidaeallspecies Kangaroos,wallabies IV
+  IV    Skunk Mephitidaeallspecies Skunk\anytype\IV
+  IV    Ungulates Moschidae Moschusspp.\allspecies\Deer,musk IVFederally Endangered
+  IV    Rodent Muridae Leporillusconditor Rat,stick-nest IVFederally Endangered
+  I     Rodent Muridae Merionesunguiculatus Gerbil I
+  I     Rodent Muridae Mesocricetusauratus Hamster I
+  I     Rodent Muridae Musmusculus Mouse,Common I
+  IV    Rodent Muridae Notomysaquilo Mouse,Australiannative IVFederally Endangered
+  I     Rodent Muridae Phodopuscampbelli Hamster,Dwarf/Russian I
+  I     Rodent Muridae Phodopusroborvski Hamster,Roborovski I
+  I     Rodent Muridae Phodopusssp.Hamster,Dwarf I
+  I     Rodent Muridae Phodopussungorus Hamster,Djungarian I
+  IV    Rodent Muridae Pseudomysfieldi Mouse,Field's IVFederally Endangered
+  IV    Rodent Muridae Pseudomysfumeus Mouse,Smoky IVFederally Endangered
+  IV    Rodent Muridae Pseudomysgouldii Mouse,Gould's IVFederally Endangered
+  IV    Rodent Muridae Pseudomysnovaehollandiae Mouse,New Holland IVFederally Endangered
+  IV    Rodent Muridae Pseudomysoccidentalis Mouse,Western IVFederally Endangered
+  IV    Rodent Muridae Pseudomyspraeconis Mouse,Shark Bay IVFederally Endangered
+  IV    Rodent Muridae Pseudomysshortridgei Mouse,Shortridge's IVFederally Endangered
+  I     Rodent Muridae Rattusnorvegicus Rat,Common I
+  IV    Rodent Muridae Xeromysmyoides Rat,falsewater IVFederally Endangered
+  IV    Rodent Muridae Zyzomyspedunculatus Mouse,Australiannative IVFederally Endangered
+  IV    Furbear,small Mustelidae Lontracanadensis Otter IVState Protected Species
+  IV    Furbear,small Mustelidae Martesamericana Pine Marten IVState Protected Species
+  IV    Furbear,small Mustelidae Mustelafrenata Weasel IVState Protected Species
+  IV    Furbear,small Mustelidae Mustelanigripes Ferret,black-footed IVFederally Endangered
+  I     Ferret Mustelidae Mustelaputoriusfuro Ferret,Common Iallspeciesexceptasrestrictedinanothergroup New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Upda
+  IV    Furbear,small Mustelidae Neovison\Mustela\Mink IVState Protected Species
+  IV    Furbear,small Mustelidae Taxideataxus\genusvariety\Badger IVState Protected Species
+  IV    Rodent Myocastoridae Myocastorcoypus Nutria IVState Protected Species
+  IV    Rodent Nesomyidae Cricetomysgambianus Rat,Giant African Pouch IV
+  IV    Ungulates Ochotonideaanyspecies Pika IVState Protected Species
+  II    Marsupial Petauridae Petaurusbreviceps Sugar Glider II
+  IV    Bat Phyllostomidae Leptonycteriscurasoaeyerbabuenae Bat,lesserlong-nosed IVFederally Endangered
+  IV    Bat Phyllostomidae Leptonycterisnivalis Bat,Mexicanlong-nosed IVFederally Endangered
+  III   Bat Phyllostomidae Platyrrhinuslineatus Bat,Broad-nosed III
+  IV    Primate\non-human\Pithecidae Cacajaospp.Sakis,Uakaris\allspecies\IVFederally Endangered
+  IV    Primate\non-human\Pitheciidae Chiropotesalbinasus Saki,white-nosed IVFederally Endangered
+  IV    Primate\non-human\Pitheciidae Chiropotessatanassatanas Saki,southernbearded IVFederally Endangered
+  IV    Primate\non-human\Primate\non-human\allnon-humanprimates Monkeys IV
+  IV    Furbear,small Procyonidae Nasua Coatimundi IVState Protected Species
+  IV    Furbear,small Procyonidae Potos Kinkajou IV
+  IV    Furbear,small Procyonidae Procyon Raccoon\anytype\IVState Protected Species
+  IV    Bat Pteropodidae Aprotelesbulmerae Bat,Bulmer'sfruit\=flyingfox\IVFederally Endangered
+  IV    Bat Pteropodidae Pteropusmariannusmariannus Bat,Marianafruit\=Marianaflyingfox\IVFederally Threatened
+  IV    Bat Pteropodidae Pteropusrodricensis Bat,Rodriguesfruit\=flyingfox\IVFederally Endangered
+  IV    Bat Pteropodidae Pteropustokudae Bat,little Marianafruit IVFederally Endangered
+  IV    Rhino Rhinocerotidae Ceratotheriumsimumcottoni Rhinoceros,northernwhite IVFederally Endangered
+  IV    Rhino Rhinocerotidae Dicerorhinussumatrensis Rhinoceros,Sumatran IVFederally Endangered
+  IV    Rhino Rhinocerotidae Dicerosbicornis Rhinoceros,black IVFederally Endangered
+  IV    Rhino Rhinocerotidae Rhinocerossondaicus Rhinoceros,Javan IVFederally Endangered
+  IV    Rhino Rhinocerotidae Rhinocerosunicornis Rhinoceros,great Indian IVFederally Endangered
+  IV    Squirrel Sciuridae Cynomysmexicanus Prairiedog,Mexican IVFederally Endangered
+  IV    Squirrel Sciuridae Cynomysparvidens Prairiedog,Utah IVFederally Threatened
+  IV    Squirrel Sciuridae Glaucomyssabrinuscoloratus Squirrel,Carolinanorthernflying IVFederally Endangered
+  IV    Squirrel Sciuridae Marmota Marmot,Squirrels IVState Protected Species
+  IV    Squirrel Sciuridae Marmotavancouverensis Marmot,Vancouver Island IVFederally Endangered
+  IV    Squirrel Sciuridae Neotamiasminimusatristriatus Chipmunk,Least\Penasco\IVState Protected Species
+  IV    Squirrel Sciuridae Neotamiasquadrivittatusaustralis Chipmunk,Colorado IVState Protected Species
+  IV    Squirrel Sciuridae Sciurusnigercinereus Squirrel,Delmarva Peninsulafox IVFederally Endangered
+  IV    Squirrel Sciuridae Sciurusspp Squirrels IVState Protected Species
+  IV    Squirrel Sciuridae Spermophilusbrunneusbrunneus Squirrel,northern Idahoground IVFederally Threatened
+  IV    Squirrel Sciuridae Tamiasciurushudsonicusgrahamensis Squirrel,Mount Grahamred IVFederally Endangered
+  IV    Shrew Solenodontidae Solenodoncubanus Solenodon,Cuban IVFederally Endangered
+  IV    Shrew Solenodontidae Solenodonparadoxus Solenodon,Haitian IVFederally Endangered
+  IV    Shrew Soricidae Cryptotisparva Shrew,Least IVState Protected Species
+  IV    Shrew Soricidae Sorexarizona Shrew,Arizona IVState Protected Species
+  IV    Shrew Soricidae Sorexornatusrelictus Shrew,Buena Vista Lakeornate IVFederally Endangered
+  IV    Swine,Pig Suidae Babyrousababyrussa Hog,Buru Babirusa Golden IVFederally Endangered
+  IV    Pig,Swine Suidae Sussalvanius Hog,pygmy IVFederally Endangered
+  ?     Pig,Swine Suidae Susscrofadomestica Swine\domestic\INMLivestock Board
+  IV    Tapir Tapiridae Tapirus Tapir IVFederally Endangered
+  IV    Primate\non-human\Tarsiidae Tarsiussyrichta Tarsier,Philippine IVFederally Threatened
+  IV    Pig,Swine Tayassuidaeallspecies Javelina,\ferralpig\IVState Protected Species
+  IV    Bear Ursidaeallspecies Bear\anyspecies\IVState Protected Species
+  IV    Bear Ursidae Ursusamericanus Bear,Black IVFederally Threatened
+  IV    Bear Ursidae Ursusarctos Bear,Grizzly IVFederally Endangered New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202317CLASSQUICKREFERENCEFAMILYS
+  IV    Bear Ursidae Ursusarctosarctos Bear,Brown IVFederally Endangered
+  IV    Bear Ursidae Ursusmaritimus Bear,Polar IVFederally Threatened
+  IV    Bear Ursidae Ursusthibetanusgedrosianus Bear,Baluchistan IVFederally Endangered
+  IV    Bat Vespertilionidae Corynorhinus Bat,big-eared IVFederally Endangered
+  IV    Bat Vespertilionidae Eudermamaculatum Bat,Spotted IVState Protected Species
+  IV    Bat Vespertilionidae Lasiuruscinereussemotus Bat,Hawaiianhoary IVFederally Endangered
+  IV    Bat Vespertilionidae Lasiurusxanthius Bat,Western Yellow IVState Protected Species
+  IV    Bat Vespertilionidae Myotisgrisescens Bat,gray IVFederally Endangered
+  IV    Bat Vespertilionidae Myotissodalis Bat,Indiana IVFederally Endangered
+  IV    Civet Viverridae Civettictissp.Civetsp.IV
+  IV    Civet Viverridae Genettasp.Genetsp.IV
+  IV    Civet Viverridae Prionodonpardicolor Linsang,spotted IVFederally Endangered
+  IV    Civet Viverridae Viverracivettina\=megaspilac.\Civet,Malabarlarge-spotted IVFederally Endangered
+  I     Lizard Agamidae Acanthosauruscrucigera Mountain Horned Dragon I
+  I     Lizard Agamidae Agamaagama Red Headed Agama/Common Agama I
+  I     Lizard Agamidae Chlamydosauruskingii Frilled Dragon I
+  I     Lizard Agamidae Dracovolans Common Flying Dragon I
+  I     Lizard Agamidae Hydrosauruspustulatus Sailfin Lizard/Phillipine Sailfin I
+  I     Lizard Agamidae Hydrosaurusweberi Sailfinlizard I
+  I     Lizard Agamidae Japalurasp.Tree Dragon I
+  I     Lizard Agamidae Japalurasplendida Neontreedragon I
+  I     Lizard Agamidae Laudakiastellio Pyramid Agama I
+  I     Lizard Agamidae Laudakiestelliobrachydactyla Giant Painted Agama I
+  I     Lizard Agamidae Leiolepisbelliana Butterfly Agama I
+  I     Lizard Agamidae Mesaspismoreletii Central American Alligator Lizard I
+  I     Lizard Agamidae Physignathuscocincinus Green Water Dragon I
+  I     Lizard Agamidae Physignathuslesueuri Austrailian Water Dragon I
+  I     Lizard Agamidae Pogonavitticepts Beardeddragon I
+  I     Lizard Agamidae Uromastyxacanthinurus Moroccan Uromastyx I
+  I     Lizard Agamidae Uromastyxaegyptia Egyptian Giant Uromastyx I
+  I     Lizard Agamidae Uromastyxgeyri Saharan Uromastyx I
+  I     Lizard Agamidae Uromastyxmaliensis Mali Uromastyx I
+  I     Lizard Agamidae Uromastyxocellata Oscellated Uromastyx I
+  I     Lizard Agamidae Uromastyxornata Ornate Uromastyx I
+  IV    Alligator Alligatoridae Alligatormississippiensis American Alligator IVFederally Threatened
+  IV    Alligator Alligatoridae Alligatorsinensis Chinese Alligator IVFederally Endangered
+  IV    Alligator Alligatoridae Caimancrocodiluscrocodilus Common Caiman IVFederally Threatened
+  IV    Alligator Alligatoridae Caimancrocodilusfuscus Brown Caiman IVFederally Threatened
+  IV    Alligator Alligatoridae Caimanlatirostris Broad-snouted Caiman IVFederally Endangered
+  IV    Alligator Alligatoridae Caimanyacare Yacare Caiman IVFederally Threatened
+  IV    Alligator Alligatoridae Melanosuchusniger Black Caiman IVFederally Endangered
+  IV    Alligator Alligatoridae Paleosuchuspalpebrosus Dwarf Caiman IV
+  IV    Alligator Alligatoridae Paleosuchustrigonatus Smooth-fronted Caiman IV
+  IV    Salamander Ambystomatidae Ambystomabishopi Reticulated Flatwoods Salamander,IVFederally Endangered
+  IV    Salamander Ambystomatidae Ambystomacaliforniense California Tiger Salamander IVFederally Endangered
+  IV    Salamander Ambystomatidae Ambystomacingulatum Frosted Flatwoods Salamander IVFederally Threatened
+  II    Salamander Ambystomatidae Ambystomagracile Northwestern Salamander II
+  II    Salamander Ambystomatidae Ambystomajeffersonianum Jefferson Salamander II
+  II    Salamander Ambystomatidae Ambystomalaterale Blue-spotted Salamander II
+  IV    Salamander Ambystomatidae Ambystomamacrodactylumcroceum Santa Cruz Long-toed Salamander IVFederally Endangered
+  II    Salamander Ambystomatidae Ambystomamaculatum Spotted Salamander II
+  II    Salamander Ambystomatidae Ambystomamavortium Barred Tiger Salamander II
+  IV    Salamander Ambystomatidae Ambystomamavortiumstebbinsi Sonora Tiger Salamander IVFederally Endangered New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program
+  II    Salamander Ambystomatidae Ambystomaopacum Marbled Salamander II
+  II    Salamander Ambystomatidae Ambystomatalpoideum Mole Salamander II
+  II    Salamander Ambystomatidae Ambystomatexanum Small-mouth Salamander II
+  II    Salamander Ambystomatidae Ambystomatigrinum Eastern Tiger Salamander II
+  II    Salamander Ambystomatidae Dicamptodonensatus Coastal Giant Salamanders II
+  I     Salamander Amphiumidae Amphiumatridactylum Three-toed Amphiuma I
+  I     Lizard Anugidae Elgariakingiissp.Alligator Lizard I
+  I     Lizard Anugidae Mesaspismoreletii Central American Alligator Lizard I
+  I     Lizard Anugidae Ophisaurussp.Glass Lizards I
+  IV    Snake Atractaspididaeallvenomousspecies Snakes,Mole Vipers,Stilettosnakes,Burrowingasps IV
+  II    Turtle Bataguridae Cuoraamboinensis Turtle,Asian Box II
+  II    Turtle Bataguridae Mauremyscaspica Turtle,Caspian Pond II
+  I     Snake Boidae Acrantophisdumerili Dumeril Boa I
+  III   Snake Boidae Boaconstrictorconstrictor Boa,Red Tail Peruvian III
+  III   Snake Boidae Boaconstrictorimperator Boa,Columbian Red Tail III
+  III   Snake Boidae Boaconstrictoroccodentalis Boa,Argentine Red Tail III
+  I     Snake Boidae Boaconstrictorssp.exceptasrestrictedinanothergroup Boa,Central American I
+  I     Snake Boidae Boaconstrictorssp.exceptasrestrictedinanothergroup Boa,Hog Isle I
+  I     Snake Boidae Boamadagascariensis Madagascar Ground Boa I
+  I     Snake Boidae Boamanditra Boa,Madagascar Tree I
+  I     Snake Boidae Candoiabibroniaustralis Soloman Island Tree Boa I
+  I     Snake Boidae Candoiacarinatapaulsoni Soloman Island Ground Boa,Viper Boa I
+  I     Snake Boidae Charinabottae Northern Rubber Boa I
+  I     Snake Boidae Coralluscaninuscaninus Emerald Tree Boa I
+  I     Snake Boidae Coralluscaninushortulanus Amazon Tree Boa I
+  I     Snake Boidae Epicratescenchriassp Boa,Rainbow I
+  IV    Snake Boidae Epicratesinornatus Boa,Puerto Rican IVFederally Endangered
+  IV    Snake Boidae Epicratesmonensisgranti Boa,Virgin Islandstree IVFederally Endangered
+  IV    Snake Boidae Epicratesmonensismonensis Boa,Mona IVFederally Threatened
+  IV    Snake Boidae Epicratessubflavus Boa,Jamaican IVFederally Endangered
+  I     Snake Boidae Eryxcolubrinusloveridgei Kenyan Sand Boa I
+  I     Snake Boidae Eryxgongylophisconicus Rough Scaled Sand Boa I
+  IV    Snake Boidae Eunectesssp Anacondas IV
+  I     Snake Boidae Gongylophismuelleri Saharan Sand Boa I
+  I     Snake Boidae Lichanuratrivirgata Rosy Boa I
+  I     Snake Boidae Sanziniamadagascariensis Madagascar\malagasy\treeboa I
+  IV    Snake Bolyeriidae Bolyeriamultocarinata Boa,Round Island Burrowing IVFederally Endangered
+  IV    Snake Bolyeriidae Casareadussumieri Boa,Round Island Casarea Keel IVFederally Endangered
+  II    Frog/Toad Bombinatoridae Bombinaorientalis Firebelly Toad II
+  II    Frog/Toad Bombinatoridae Bombinavariegata Yellow Belly Toad II
+  II    Frog/Toad Bufonidae Anaphatelophustricolor Tricolor Toad II
+  II    Frog/Toad Bufonidae Anaxyrusamericanus American Toad II
+  IV    Frog/Toad Bufonidae Anaxyrusbaxteri Wyoming Toad IVFederally Endangered
+  IV    Frog/Toad Bufonidae Anaxyruscalifornicus Arroyo Toad IVFederally Endangered
+  II    Frog/Toad Bufonidae Anaxyruscognatus Great Plains Toad II
+  II    Frog/Toad Bufonidae Anaxyrusdebilis Green Toad II
+  IV    Frog/Toad Bufonidae Anaxyrushoustonensis Houston Toad IVFederally Endangered
+  II    Frog/Toad Bufonidae Anaxyrusmicroscaphus Arizona Toad II
+  II    Frog/Toad Bufonidae Anaxyruspunctatus Red-spotted Toad II
+  II    Frog/Toad Bufonidae Anaxyrusspeciosus Texas Toad II
+  II    Frog/Toad Bufonidae Anaxyrusterrestris Southern Toad II
+  II    Frog/Toad Bufonidae Anaxyruswoodhousii Woodhouse's Toad IINew Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202319CLASSQUICKREFERENCEFAMILYSCIE
+  IV    Frog/Toad Bufonidae Atelophuszeteki Frog,Panamaniangolden IVFederally Endangered
+  II    Frog/Toad Bufonidae Melanophryniscusstelzneri Paraguayyellowspottedtoad II
+  IV    Frog/Toad Bufonidae Nectophrynoides Toads,Africanviviparous IVFederally Endangered
+  II    Frog/Toad Bufonidae Nimbaphrynoides Toad,Nimba II
+  IV    Frog/Toad Bufonidae Peltophrynelemur Toad,Puerto Ricancrested IVFederally Threatened
+  II    Frog/Toad Bufonidae Spinophrynoides Toad,Ethiopian II
+  ?     
+  II    Caecilidae Dermophismexicanus Mexican Caecilian II
+  ?     
+  II    Caecilidae Siphonopsannulatus South American Caecilian II
+  ?     
+  II    Caecilidae Typhlonectescompressicaudus Cayenne Caecilian II
+  II    Turtle Carettochelyidae Carettochelysinsculpta Turtle,Pig Snouted River II
+  II    Frog Centrolenidae Allophyninaesp.Glass Frog II
+  II    Frog Centrolenidae Centroleninaesp.Glass Frog II
+  II    Frog Centrolenidae Hyalinobatrachinaesp.Glass Frog II
+  I     Lizard Chamaeleonidae Bradypodionsp.Dwarf Chameleon I
+  I     Lizard Chamaeleonidae Calummaparsonii Parson's Chameleon I
+  I     Lizard Chamaeleonidae Calummatigris Tiger Chameleon I
+  I     Lizard Chamaeleonidae Chamaeleocalyptratus Veiledchameleon I
+  I     Lizard Chamaeleonidae Chamaeleojacksoni Jackson'schameleon I
+  I     Lizard Chamaeleonidae Chamaeleorudis Rudis Mountaindwarfchameleon I
+  I     Lizard Chamaeleonidae Furciferminor Giantcarpetchameleon I
+  I     Lizard Chamaeleonidae Furciferpardalis Pantherchameleon I
+  I     Lizard Chamaeleonidae Rhampholeonsp.Chameleon,Stump Tail I
+  II    Turtle Chelidae Chelodinalongicollis Common Snakeneck Turtle II
+  II    Turtle Chelidae Chelodinamccordi Afro American Side Necked Turtle II
+  II    Turtle Chelidae Chelusfimbriatus Mata Mata II
+  II    Turtle Chelidae Emydurasubglobosa Red Bellied Short Necked Turtle II
+  IV    Turtle Chelidae Mesoclemmyshogei\Phrynops\Turtle,Braziliansideneck IVFederally Endangered
+  IV    Turtle Chelidae Phrynopshogei\Mesoclemmys\Turtle,Braziliansideneck IVFederally Endangered
+  IV    Turtle Chelidae Pseudemyduraumbrina Turtle,short-neckedorwesternswamp IVFederally Endangered
+  IV    Turtle Cheloniidae Carettacaretta Seaturtle,loggerhead IVFederally Threatened
+  IV    Turtle Cheloniidae Cheloniamydas Seaturtle,green IVFederally Threatened
+  IV    Turtle Cheloniidae Eretmochelysimbricata Seaturtle,hawksbill IVFederally Endangered
+  IV    Turtle Cheloniidae Lepidochelyskempii Seaturtle,Kemp'sridley IVFederally Endangered
+  IV    Turtle Cheloniidae Lepidochelysolivacea Seaturtle,oliveridley IVFederally Endangered
+  II    Turtle Chelydridae Chelydraserpentinaosceola Florida Snapping Turtle II
+  II    Turtle Chelydridae Chelydraserpentinaserpentina Eastern Snapping Turtle II
+  II    Turtle Chelydridae Macrochelystemminckii Alligator Snapping Turtle II
+  I     Snake Colubridae Atretiumschistosum Split Olive Keel Backed Snake I
+  I     Snake Colubridae Bogertophissubocularis Trans Pecos Rat Snake I
+  III   Snake Colubridae Boigadendrophila Mangrove Snake III
+  I     Snake Colubridae Cerberusrynchops Dog Faced Water Snake I
+  I     Snake Colubridae Cleliaclelia Mussurana Snake I
+  III   Snake Colubridae Cyclagrasgigas False Water Cobra III
+  IV    Snake Colubridae Drymarchoncoraiscouperi Snake,easternindigo IVFederally Threatened
+  I     Snake Colubridae Elachistodonwestermanni Indian Egg Eating Snake I
+  I     Snake Colubridae Gonyosomaoxycephala Red Tailed Rat Snake I
+  III   Snake Colubridae Heterodonnasicuskennerlyi Mexican Hognose Snake III
+  III   Snake Colubridae Heterodonnasicusnasicus Western Hognose Snake III
+  III   Snake Colubridae Heterodonnasicusplatyrhinos Eastern Hognose Snake III
+  III   Snake Colubridae Hydrodynastesgigas Brazilian Smooth Snake\falsewatercobra\III
+  IV    Snake Colubridae Lampropeltisalterna Grey Banded Kingsnake IVState Protected Species
+  I     Snake Colubridae Lampropeltiscalligastercalligaster Prarie Kingsnake I
+  I     Snake Colubridae Lampropeltisgetulabrooksi Brooksi Kingsnake I
+  I     Snake Colubridae Lampropeltisgetulacaliforniae California Kingsnake INew Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202320CLASSQUICKREFERENC
+  I     Snake Colubridae Lampropeltisgetulafloridana Florida Kingsnake\Brooksi\I
+  I     Snake Colubridae Lampropeltisgetulagoini Blotched Kingsnake I
+  I     Snake Colubridae Lampropeltisgetulanigra Eastern Black Kingsnake I
+  I     Snake Colubridae Lampropeltisgetulanigrita Western Black Kingsnake I
+  I     Snake Colubridae Lampropeltisgetulasplendida Desert Kingsnake I
+  I     Snake Colubridae Lampropeltismexicanamexicana San Luis Potosi Kingsnake I
+  I     Snake Colubridae Lampropeltismexicanathayeri Nuevo Leon Kingsnake/Variable I
+  I     Snake Colubridae Lampropeltismexicanangreeri Durango Mountain Kingsnake I
+  I     Snake Colubridae Lampropeltispyromelanassp.Sonoran Mountain Kingsnake I
+  I     Snake Colubridae Lampropeltisruthveni Ruthven's Kingsnake I
+  I     Snake Colubridae Lampropeltistriangulumannulata Mexican Milksnake I
+  I     Snake Colubridae Lampropeltistriangulumcampbelli Pueblan Milksnake I
+  I     Snake Colubridae Lampropeltistriangulumcelaenops New Mexico Milksnake I
+  I     Snake Colubridae Lampropeltistriangulumelapsoides Scarlet Kingsnake I
+  I     Snake Colubridae Lampropeltistriangulumgaigageae Black Milksnake I
+  I     Snake Colubridae Lampropeltistriangulumhondurensis Honduran Tangerine Milksnake I
+  I     Snake Colubridae Lampropeltistriangulumnelsoni Nelsons Milksnake I
+  I     Snake Colubridae Lampropeltistriangulumsinaolae Sinaloan Milksnake I
+  I     Snake Colubridae Lampropeltistriangulumstuarti Stewart's Milksnake I
+  III   Snake Colubridae Lamprophisfuliginosus African House Snake III
+  III   Snake Colubridae Leioheterodonmadagascariensis Giant Malagasy Hognose III
+  IV    Snake Colubridae Liophusornatus Snake,Maria Island IVFederally Endangered
+  I     Snake Colubridae Masticophisflagellumtestaceus Red Coachwhip I
+  IV    Snake Colubridae Masticophislateraliseuryxanthus Whipsnake Alameda\stripedracer\IVFederally Threatened
+  IV    Snake Colubridae Nerodiaclarkiitaeniata Snake,Atlanticsaltmarsh IVFederally Threatened
+  IV    Snake Colubridae Nerodiaerythrogasterneglecta Snake,Copperbellywater IVFederally Threatened
+  IV    Snake Colubridae Nerodiapaucimaculata Snake,Conchowater IVFederally Threatened
+  IV    Snake Colubridae Nerodiasipedoninsularum Snake,Lake Eriewater IVFederally Threatened
+  I     Snake Colubridae Opheodrysaestivus Rough Green Snake I
+  I     Snake Colubridae Opheodrysvernalis Smooth Green Snake I
+  I     Snake Colubridae Orthriophistaeniurus Beauty Ratsnake I
+  I     Snake Colubridae Pantherophisbairdi Baird's Ratsnake I
+  I     Snake Colubridae Pantherophisemoryi Great Plains Rat Snake I
+  I     Snake Colubridae Pantherophisguttatus Red Cornsnake I
+  I     Snake Colubridae Pantherophisobsoletus Texas Ratsnake I
+  I     Snake Colubridae Pituophiscateniferaffinis Sonoran Gopher Snake I
+  I     Snake Colubridae Pituophiscatenifercatenifer Pacific Gopher Snake I
+  I     Snake Colubridae Pituophiscatenifersayi Bullsnake I
+  I     Snake Colubridae Pituophiscatenifervertebralis Baja Gopher Snake I
+  I     Snake Colubridae Pituophismelanoleucuslodingi Black Pinesnake I
+  I     Snake Colubridae Pituophismelanoleucusmelanoleucus Northern Pinesnake I
+  I     Snake Colubridae Pituophismelanoleucusmugitus Florida Pinesnake I
+  I     Snake Colubridae Ptyasmuscosus Oriental Rat Snake I
+  I     Snake Colubridae Thamnophiscyrtopsis Black-necked Gartersnake I
+  IV    Snake Colubridae Thamnophisgigas Giant Gartersnake IVFederally Threatened
+  I     Snake Colubridae Thamnophismarcianus Checkered Gartersnake I
+  III   Snake Colubridae Thamnophisproximusdiabolicus Western Ribbonsnake IIIState Threatened
+  III   Snake Colubridae Thamnophisrufipunctatus Narrow-headed Gartersnake IIIState Threatened
+  I     Snake Colubridae Thamnophissauritis Eastern Ribbonsnake I
+  I     Snake Colubridae Thamnophissirtalisparietalis Red-sided Gartersnake I
+  I     Snake Colubridae Thamnophissirtalissirtalis Easter Gartersnake I
+  IV    Snake Colubridae Thamnophissirtalistetrataenia San Francisco Gartersnake IVFederally Endangered
+  I     Snake Colubridae Xenochrophispiscator Keelbackor Asiatic Water Snake INew Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202321CLASSQUICKREFEREN
+  I     Snake Colubridae Xenochrophisvittatus Indonesian Garter Snake I
+  I     Lizard Cordylidae Cordylussp.Spiny-tail Lizard I
+  I     Lizard Corytophanidae Basiliscussp.Basilisk Lizard I
+  I     Lizard Corytophanidae Laemanctuslongipes Coneheadlizard I
+  IV    Alligator Crocodylidae Crocodylusacutus Crocodile,American IVFederally Endangered
+  IV    Alligator Crocodylidae Crocodyluscataphractus Crocodile,Africanslender-snouted IVFederally Endangered
+  IV    Alligator Crocodylidae Crocodylusintermedius Crocodile,Orinoco IVFederally Endangered
+  IV    Alligator Crocodylidae Crocodylusmoreletii Crocodile,Morelet's IVFederally Endangered
+  IV    Alligator Crocodylidae Crocodylusniloticus Crocodile,Nile IVFederally Threatened
+  IV    Alligator Crocodylidae Crocodylusnovaeguineaemindorensis Crocodile,Philippine IVFederally Endangered
+  IV    Alligator Crocodylidae Crocodyluspalustriskimbula Crocodile,Ceylonmugger IVFederally Endangered
+  IV    Alligator Crocodylidae Crocodyluspalustrispalustris Crocodile,mugger IVFederally Endangered
+  IV    Alligator Crocodylidae Crocodylusporosus Crocodile,saltwater IVFederally Threatened
+  IV    Alligator Crocodylidae Crocodylusrhombifer Crocodile,Cuban IVFederally Endangered
+  IV    Alligator Crocodylidae Crocodylussiamensis Crocodile,Siamese IVFederally Endangered
+  IV    Alligator Crocodylidae Gavialisgangeticus Gavial IVFederally Endangered
+  IV    Alligator Crocodylidae Osteolaemustetraspisosborni Crocodile,Congodwarf IVFederally Endangered
+  IV    Alligator Crocodylidae Osteolaemustetraspistetraspis Crocodile,Africandwarf IVFederally Endangered
+  IV    Alligator Crocodylidae Tomistomaschlegelii Tomistoma IVFederally Endangered
+  I     Lizard Crotaphytidae Crotaphytuscollaris Lizard,Eastern Collared I
+  IV    Lizard Crotaphytidae Gambeliasilus Lizard,blunt-nosedleopard IVFederally Endangered
+  IV    Salamander Cryptobranchidae Andriasdavidianus\davidianus\Salamander,Chinesegiant IVFederally Endangered
+  IV    Salamander Cryptobranchidae Andriasjaponicus\davidianus\Salamander,Japanesegiant IVFederally Endangered
+  II    Salamander Cryptobranchidae Cryptobranchusalleganiensis Hellbender Salamander II
+  II    Frog Dendrobatidaeallspecies Dart Frogs II
+  IV    Turtle Dermatemydidae Dermatemysmawii Central American River Turtle IVFederally Endangered
+  IV    Turtle Dermochelyidae Dermochelyscoriacea Seaturtle,leatherback IVFederally Endangered
+  II    Salamander Dicamptodontidae Dicamptodontenebrosus Pacific Salamander II
+  I     Gecko Diptolacktlydaeallspecies Knob Tail Geckos I
+  IV    Frog Discoglossidae Discoglossusnigriventer Frog,Israelpainted IVFederally Endangered
+  IV    Snake Elapidaeallvenomousspecies Snakes,Venomous IV
+  II    Turtle Emydidae Chrysemysdorsalis Southern Painted Turtle II
+  II    Turtle Emydidae Chrysemyspictassp Painted Turtle II
+  II    Turtle Emydidae Cuoraflavomarginata Chinese/Yellow Marginated Box Turtle II
+  II    Turtle Emydidae Emysorbicularis European Pond Turtle II
+  II    Turtle Emydidae Glyptemysinsculpta Wood Turtle II
+  IV    Turtle Emydidae Glyptemysmuhlenbergii Bog Turtle IVFederally Threatened
+  IV    Turtle Emydidae Graptemysflavimaculata Yellow-blotched Map Turtle IVFederally Threatened
+  II    Turtle Emydidae Graptemysnigrinodanigrinoda Black-knobbed Map Turtle II
+  IV    Turtle Emydidae Graptemysoculifera Ringed Map Turtle IVFederally Threatened
+  II    Turtle Emydidae Graptemysouachitensis Ouachita Map Turtle II
+  II    Turtle Emydidae Graptemyspseudogeographicakohnii Mississippi Map Turtle II
+  IV    Turtle Emydidae Pseudemysalabamensis Alabama Red-bellied Cooter IVFederally Endangered
+  II    Turtle Emydidae Pseudemysconcinnaconcinna Eastern River Cooter II
+  II    Turtle Emydidae Pseudemysnelsoni Florida Red-bellied Cooter II
+  II    Turtle Emydidae Pseudemyspeninsularis Peninsula Cooter II
+  II    Turtle Emydidae Pseudemysrubriventris Northern Red-bellied Cooter II
+  IV    Turtle Emydidae Pseudemysrubriventrisbangsi Plymouth Red-bellied Cooter IVFederally Endangered
+  II    Turtle Emydidae Terrapenecarolinatriunguis Three-toed Box Turtle II
+  IV    Turtle Emydidae Terrapenecoahuila Aquatic Box Turtle IVFederally Endangered
+  II    Turtle Emydidae Terrapeneornatassp.Ornate Box Turtle II
+  IV    Turtle Emydidae Trachemysgaigeae Big Bend Slider IVNative Species New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202322CLASSQUICKREFERENCEFA
+  IV    Turtle Emydidae Trachemysscriptacallirostris Turtle,South Americanred-lined IVFederally Endangered
+  II    Turtle Emydidae Trachemysscriptaelegans Red-eared Slider II
+  II    Turtle Emydidae Trachemysscriptascripta Yellow-bellied Slider II
+  II    Turtle Emydidae Trachemysscriptatroostii Cumberland Slider II
+  IV    Turtle Emydidae Trachemysstejnegerimalonei Turtle,Inagua Island IVFederally Endangered
+  IV    Turtle Emydidae Trachemysterrapen Turtle,Cat Island IVFederally Endangered
+  I     Lizard Gekkonidae Chondrodactylusssp.Comb-Toed Gecko I
+  I     Lizard Gekkonidae Coleonyxmitratus Central American Banded Gecko I
+  I     Lizard Gekkonidae Coleonyxvariegatus Western Banded Gecko I
+  IV    Lizard Gekkonidae Cyrtodactylusserpensinsula Gecko,Serpent Island IVFederally Threatened
+  I     Lizard Gekkonidae Eublepharismacularius Leopard Gecko I
+  I     Lizard Gekkonidae Eurydactylodessp.Bauer's Chameleon Gecko I
+  I     Lizard Gekkonidae Geckoniachazaliae Helemet Head Gecko I
+  I     Lizard Gekkonidae Gekkogecko Tokay Gecko I
+  I     Lizard Gekkonidae Gekkopetricolus Golden Gecko I
+  I     Lizard Gekkonidae Gekkovittatus Skunk Gecko I
+  I     Lizard Gekkonidae Hemidactylusfrenatus House Gecko I
+  I     Lizard Gekkonidae Hemitheconyxcaudicinctus African Fat Tail Gecko I
+  I     Lizard Gekkonidae Homopholiswalbergii African Wahlberg Gecko I
+  I     Lizard Gekkonidae Hoplodactylussp.Common Gecko I
+  I     Lizard Gekkonidae Lygodactylusluteopicturatus Cape Zebra Gecko I
+  I     Lizard Gekkonidae Lygodactyluspicturatus Yellow Headed Gecko I
+  I     Lizard Gekkonidae Lygodactyluswilliamsi Electric Blue Day Gecko I
+  I     Lizard Gekkonidae Naultinussp.Green Gecko I
+  I     Lizard Gekkonidae Nephrurussp.Knob-tailed Gecko I
+  I     Lizard Gekkonidae Oedurasp.Velvet Gecko I
+  I     Lizard Gekkonidae Paroedurapicta Panther Gecko Madagascar I
+  IV    Lizard Gekkonidae Phelsumaedwardnewtoni Gecko,day IVFederally Endangered
+  IV    Lizard Gekkonidae Phelsumaguentheri Gecko,Round Islandday IVFederally Endangered
+  I     Lizard Gekkonidae Phelsumamadagascariensis Day Geckos I
+  I     Lizard Gekkonidae Phyllurussp.Australian Leaf-Tail Gecko I
+  I     Lizard Gekkonidae Ptenopussp.Barking Gecko I
+  I     Lizard Gekkonidae Ptychozoonlionotum Flying Gecko I
+  I     Lizard Gekkonidae Ptyodactylushasselquistii Fan Footed Gecko I
+  I     Lizard Gekkonidae Rhacodactylusauriculatus Gargoyle Gecko I
+  I     Lizard Gekkonidae Rhacodactyluscillatus Crested Gecko I
+  I     Lizard Gekkonidae Rhacodactylusleachianus Giant Gecko I
+  I     Lizard Gekkonidae Saltuariussp.Leaf-tail Gecko I
+  IV    Gecko Gekkonidae Sphaerodactylusmicropithecus Gecko,Monito IVFederally Endangered
+  I     Lizard Gekkonidae Strophurussp.Spiny-tailed Gecko I
+  I     Lizard Gekkonidae Tarentolaannularis White Spot Gecko I
+  I     Lizard Gekkonidae Tarentolamauritanica Crocodile Gecko/Moorish Gecko I
+  I     Lizard Gekkonidae Teratoscincussp.Frog Eyed Gecko I
+  I     Lizard Gekkonidae Uroplatusspp.Leaf-tailgecko I
+  IV    Turtle Geoemydidae Batagurbaska Turtle,Terrapingiantriver IVFederally Endangered
+  II    Turtle Geoemydidae Callagurborneoensis Turtle,Painted Batagur II
+  IV    Turtle Geoemydidae Geoclemyshamiltonii Turtle,spottedpond IVFederally Endangered
+  II    Turtle Geoemydidae Geoemydaspengleri Turtle,Bk-breast Vietnamese Leaf II
+  II    Turtle Geoemydidae Heosemysannandalii Turtle,Yellow Headed Temple II
+  II    Turtle Geoemydidae Heosemysdepressa Turtle,Arakan Forest II
+  II    Turtle Geoemydidae Heosemysgrandis Turtle,Giant Asian Pond II
+  II    Turtle Geoemydidae Heosemysspinosa Turtle,Spiny II
+  IV    Turtle Geoemydidae Kachugatectatecta Turtle,Indiansawback IVFederally Endangered
+  II    Turtle Geoemydidae Leucocephalonyuwonoi Turtle,Sulawesi Forest IINew Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202323CLASSQUICKREFERENCEFAM
+  II    Turtle Geoemydidae Mauremysannamensis Turtle,Vietnamese Pond Leaf II
+  II    Turtle Geoemydidae Mauremysiversoni Turtle,Fujian Pond II
+  II    Turtle Geoemydidae Mauremysmegalocephala Turtle,Pond II
+  II    Turtle Geoemydidae Mauremysmutica Turtle,Aian Yellow Pond II
+  II    Turtle Geoemydidae Mauremysnigricans Asian Yellow Pond Turtle II
+  II    Turtle Geoemydidae Mauremyspritchardi Turtle,Pond II
+  II    Turtle Geoemydidae Mauremysreevesii Turtle,Chinese Reeves Pond II
+  II    Turtle Geoemydidae Mauremyssinensis Turtle,Chinese Stripneck II
+  IV    Turtle Geoemydidae Melanochelystricarinata Turtle,three-keeled Asian IVFederally Endangered
+  IV    Turtle Geoemydidae Moreniaocellata Turtle,Burmesepeacock IVFederally Endangered
+  II    Turtle Geoemydidae Notochelysplatynota Turtle,Malayan Flatshelled II
+  II    Turtle Geoemydidae Ocadiaglyphistoma Turtle,Stripeneck Pond II
+  II    Turtle Geoemydidae Ocadiaphilippeni Turtle,Philippen's Striped II
+  II    Turtle Geoemydidae Orlitiaborneensis Turtle,Bornean River Giant II
+  II    Turtle Geoemydidae Pangshurassp\Kachuga\Turtle,Brown-roofed II
+  II    Turtle Geoemydidae Siebenrockiellacrassicollis Turtle,Malaysian Black Mud II
+  II    Turtle Geoemydidae Siebenrockiellaleytensis Turtle,Philippine Leyte Pond II
+  I     Lizard Gerrhosauridae Gerrhosaurussp.Plated Lizard I
+  I     Lizard Gerrhosauridae Tracheloptychusmadagascariens Lizard,Madagascar Rainbow Rock I
+  II    Frog Heleophrynidae Heleophrynepurcelli Cape Ghost Frog II
+  IV    Lizard Helodermatidae Helodermahorridumcharlesbogerti Lizard,Motagua Valley Beaded IV
+  IV    Lizard Helodermatidae Helodermahorridumexasperatum Lizard,Rio Fuerte Beaded IV
+  IV    Lizard Helodermatidae Helodermasuspectum Gila Monster IVState Protected Species
+  II    Frog Hylidae Acriscrepitans Northern Cricket Frog II
+  II    Frog Hylidae Agalychniscallidryas Red-eyed Treefrog II
+  II    Frog Hylidae Agalychnismoreletii Black-eyed Treefrog II
+  II    Frog Hylidae Dendropsophusebraccatus Hourglass Treefrog II
+  II    Frog Hylidae Dendropsophussarayacuensis Clown Treefrog II
+  II    Frog Hylidae Hylachrysoscelis Cope's Gray Treefrog II
+  II    Frog Hylidae Hylacinera Green Treefrog II
+  II    Frog Hylidae Hylagratiosa Barking Treefrog II
+  II    Frog Hylidae Hylaversicolor Gray Treefrog II
+  II    Frog Hylidae Litoriaaurea Golden Bell Frog II
+  II    Frog Hylidae Litoriacaerulea Whites/Dumpy's Treefrog II
+  II    Frog Hylidae Osteopilusseptentrionalis Cuban Treefrog II
+  II    Frog Hylidae Pachymedusadacnicolor Mexican Leaf Frog II
+  II    Frog Hylidae Phyllomedusahyprochondrialis Orange-Legged Leaf Frog II
+  II    Frog Hylidae Phyllomedusasauvagii Waxy Monkey Leaf Frog II
+  II    Frog Hylidae Triprionpetasatus Yucatecan Shovel-headed Treefrog II
+  II    Salamander Hynobidae Hynobiusdunni Oita Salamander II
+  II    Salamander Hynobidae Hynobiustokyoensis Toyko Salamander II
+  II    Frog Hyperoliidae Hylambatesmaculatus Red-legged Walking Frog II
+  II    Frog Hyperoliidae Hyperoliussp.Reed Frogs II
+  IV    Lizard Iguanidae Brachylophusfasciatus Iguana,Fijibanded IVFederally Endangered
+  IV    Lizard Iguanidae Brachylophusvitiensis Iguana,Fijicrested IVFederally Endangered
+  IV    Lizard Iguanidae Conolophuspallidus Iguana,Barringtonland IVFederally Endangered
+  I     Lizard Iguanidae Crotaphytuscollaris Collared Lizard I
+  I     Lizard Iguanidae Ctenosaurapectinata Iguana,Mexican Spinytail I
+  I     Lizard Iguanidae Ctenosauraquinquecarinata Iguana,Ornateclubtail I
+  I     Lizard Iguanidae Ctenosaurasimilis Iguana,Spiney-tail I
+  IV    Lizard Iguanidae Cycluracarinatabartschi Iguana,Mayaguana IVFederally Threatened
+  IV    Lizard Iguanidae Cycluracarinatacarinata Iguana,Turksand Caicos IVFederally Threatened
+  IV    Lizard Iguanidae Cycluracollei Iguana,Jamaican IVFederally Endangered
+  IV    Lizard Iguanidae Cycluracornutastejnegeri Iguana,Monaground IVFederally Threatened New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202324CLAS
+  IV    Lizard Iguanidae Cycluracychluracychlura Iguana,Andros Islandground IVFederally Threatened
+  IV    Lizard Iguanidae Cycluracychlurafigginsi Iguana,Exuma Island IVFederally Threatened
+  IV    Lizard Iguanidae Cycluracychlurainornata Iguana,Allen's Cay IVFederally Threatened
+  IV    Lizard Iguanidae Cycluranubilacaymanensis Iguana,Cayman Bracground IVFederally Threatened
+  IV    Lizard Iguanidae Cycluranubilalewisi Iguana,Grand Caymanground IVFederally Endangered
+  IV    Lizard Iguanidae Cycluranubilanubila Iguana,Cubanground IVFederally Threatened
+  IV    Lizard Iguanidae Cyclurapinguis Iguana,Anegadaground IVFederally Endangered
+  IV    Lizard Iguanidae Cyclurarileyicristata Iguana,White Cayground IVFederally Threatened
+  IV    Lizard Iguanidae Cyclurarileyinuchalis Iguana,Acklinsground IVFederally Threatened
+  IV    Lizard Iguanidae Cyclurarileyirileyi Iguana,Watling Islandground IVFederally Endangered
+  I     Lizard Iguanidae Dipsosaurusdorsalis Desert Iguana I
+  I     Lizard Iguanidae Iguanaiguana Iguana,Green Common I
+  I     Lizard Iguanidae Laemanctuslongipes Conehead Lizard I
+  IV    Lizard Iguanidae Sauromalusvarius Iguana Chuckwalla,San Esteban Island IVFederally Endangered
+  II    Turtle Kinosternidae Kinosternonflavescens Yellow Mud Turtle II
+  IV    Turtle Kinosternidae Sternotherusdepressus Flattened Musk Turtle IVFederally Threatened
+  II    Turtle Kinosternidae Sternotherusodoratus Eastern Musk Turtle II
+  IV    Lizard Lacertidae Gallotiasimonyisimonyi Lizard,Wall Hierrogiant IVFederally Endangered
+  I     Lizard Lacertidae Lacertasp.Lacerta Lizard I
+  IV    Lizard Lacertidae Podarcispityusensis Lizard,Ibizawall IVFederally Threatened
+  I     Lizard Lacertidae Takydromussexlineatus Long-tailed Grass Lizard I
+  I     Lizard Lacertidae Timonlepidus Jeweledlacerta I
+  IV    Frog Leiopelmatidae Leiopelmahamiltoni Frog,Stephen Island IVFederally Endangered
+  II    Frog Leptodactylidae Ceratophryssp.Pac Man Frog/Fantasy Frog II
+  IV    Frog Leptodactylidae Eleutherodactyluscooki Guajon Chirping Frog IVFederally Threatened
+  IV    Frog Leptodactylidae Eleutherodactylusjasperi Golden Coqui Chirping Frog IVFederally Threatened
+  II    Snake Loxocemidae Loxocemussp.Mexican Dwarf Python II
+  II    Frog Mantellidae Mantellasp.Mantella Frog II
+  II    Frog Microhylidae Phrynomantisbifasciatus Red-Backed Creeping Frog II
+  II    Frog Microhylidae Scaphiophrynegottlebei Red Rain Frog II
+  II    Frog Microhylidae Dyscophussp.Tomato Frog II
+  II    Frog Microhylidae Kaloulapulchra Frog,Chubby II
+  II    Frog Microhylidae Phrynomantisbifasciatus Frog,Red-backedcreeping II
+  II    Frog Pelobatidae Megophrysmontananasuta Malayan Horned Frog II
+  II    Turtle Pelomedusidae Pelomedusasubrufa African Helmeted Turtle II
+  II    Turtle Pelomedusidae Pelusiossubniger African Side Neck Turtle II
+  II    Turtle Pelomedusidae Podocnemisunifilis Yellow Spotted River Turtle II
+  III   Lizard Phrynosomatidae Phrynosomacoronatum Lizard,Horned Texas IIIState Protected Species
+  I     Lizard Phrynosomatidae Sceloporusmalachiticus Emeral Swift I
+  I     Lizard Phrynosomatidae Sceloporusvariabilis Pink Belly Swift I
+  IV    Lizard Phrynosomatidae Umainornata Lizard,Coachella Valleyfringe-toed IVFederally Threatened
+  II    Frog Pipidae Hymenochirussp.African Dwarf Frog II
+  II    Frog Pipidae Pipasp.Surinam Toad II
+  II    Frog Pipidae Pseudohymenochirussp.Dwarf Frog II
+  II    Frog Pipidae Xenopussp.African Clawed Frog II
+  II    Turtle Platysternidae Platysternonmegacephalum Big-Headed Turtle II
+  II    Salamander Plethodontidae Aneideslugubris Arboreal Salamander II
+  IV    Salamander Plethodontidae Batrachosepsaridus Salamander,desertslender IVFederally Endangered
+  II    Salamander Plethodontidae Desmognathusfuscus Dusky Salamander II
+  II    Salamander Plethodontidae Desmognathusmonticola Seal Salamander II
+  II    Salamander Plethodontidae Ensatinaeschsholtzii Ensatina II
+  II    Salamander Plethodontidae Euryceaguttolineata Three-linedsalamander II
+  IV    Salamander Plethodontidae Euryceanana Salamander,San Marcos IVFederally Threatened
+  IV    Salamander Plethodontidae Euryceasosorum Salamander,Barton Springs IVFederally Endangered New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202
+  IV    Salamander Plethodontidae Phaeognathushubrichti Salamander,Red Hills IVFederally Threatened
+  II    Salamander Plethodontidae Plethodoncinereus Redback Salamander II
+  IV    Salamander Plethodontidae Plethodonnettingi Salamander,Cheat Mountain IVFederally Threatened
+  IV    Salamander Plethodontidae Plethodonshenandoah Salamander,Shenandoah IVFederally Endangered
+  II    Salamander Plethodontidae Pseudotritonmontanus Mud Salamander II
+  II    Salamander Plethodontidae Pseudotritonruber Red Salamander II
+  IV    Salamander Plethodontidae Typhlomolgerathbuni Salamander,Texasblind IVFederally Endangered
+  II    Turtle Podocnemididae Erymnochelysmadagascariensis Afro-American Side Neck Turtle II
+  II    Turtle Podocnemididae Peltocephalusdumerilianus Afro-American Side Neck Turtle II
+  IV    Turtle Podocnemididae Podocnemisexpansa Tartaruga IVFederally Endangered
+  IV    Turtle Podocnemididae Podocnemisunifilis Tracaja IVFederally Endangered
+  I     Lizard Polychrotidae Anoliscarolinensis Green Anole I
+  I     Lizard Polychrotidae Anolisequestris Cubanknightanole I
+  IV    Lizard Polychrotidae Anolisroosevelti Anole,Culebra Islandgiant IVFederally Endangered
+  I     Lizard Polychrotidae Noropssagrei Bahamadiamondanole I
+  I     Snake Pythonidae Antaresiachildreni Children'spython I
+  I     Snake Pythonidae Antaresiamaculosa Spottedpython I
+  III   Snake Pythonidae Apodorapapuana Olive Python III
+  III   Snake Pythonidae Aspiditesmelanocephalus Black Headed Python III
+  II    Snake Pythonidae Aspiditesramsay Woma Python II
+  II    Snake Pythonidae Leiopythonalbertisii White Lipped Python/D'Albets Python II
+  III   Snake Pythonidae Liasisfuscus Australian Brown Water Python III
+  III   Snake Pythonidae Liasismacklotimackloti Macklots Python III
+  II    Snake Pythonidae Liasismacklotisavuensis Sauv Python II
+  II    Snake Pythonidae Morelispilotavariegata Irian Jaya Carpet Python II
+  IV    Snake Pythonidae Moreliaamethistina Amethystine Python/Scrub Python IV
+  IV    Snake Pythonidae Moreliaboeleni Boelen's Python IV
+  II    Snake Pythonidae Moreliabredli Centralian Carpet Python II
+  II    Snake Pythonidae Moreliacheynei Jungle Carpet Python II
+  III   Snake Pythonidae Moreliamacdoweli Coastal Carpet Python III
+  III   Snake Pythonidae Moreliaspilota Diamond Carpet Python III
+  II    Snake Pythonidae Moreliaviridis Green Tree Python II
+  II    Snake Pythonidae Pythoncurtusbreitensteini Borneobloodpython II
+  II    Snake Pythonidae Pythoncurtusbrongersmai Malayanbloodpython II
+  IV    Snake Pythonidae Pythonmolurusbivitatis Burmese Python IV
+  IV    Snake Pythonidae Pythonmolurusmolurus Python,Indian Rock IVFederally Endangered
+  I     Snake Pythonidae Pythonregius Ball Python I
+  IV    Snake Pythonidae Pythonreticulatus Reticulated Python IV
+  IV    Snake Pythonidae Pythonsebae African Rock Python IV
+  IV    Frog Ranidae Conrauagoliath Goliath Frog IVFederally Threatened
+  II    Frog Ranidae Euphlyctishexadactylus Green Pond Frog II
+  II    Frog Ranidae Hoplobatrachustigerinus Indian Bull Frog II
+  IV    Frog Ranidae Lithobatescapito Gopher Frog IVFederally Endangered
+  II    Frog Ranidae Lithobatescatesbeiana American Bullfrog II
+  IV    Frog Ranidae Lithobateschiricahuensis Chiricahua Leopard Frog IVFederally Threatened
+  II    Frog Ranidae Lithobatesclamitansclamitans Bronze Frog II
+  IV    Frog Ranidae Lithobatespipiens Northern Leopard Frog IV
+  II    Frog Ranidae Pyxicephalusadspersus African Pixie Frog II
+  IV    Frog Ranidae Ranadraytonii California Red-legged Frog IVFederally Threatened
+  IV    Frog Ranidae Ranamuscosa Southern Mountain Yellow-legged Frog IVFederally Endangered
+  II    Frog Rhacophoridae Chiromantisserampelina Foam Nest Frog II
+  II    Frog Rhacophoridae Polypedatesdennysi Giant Temple Glyding Treefrog II
+  II    Frog Rhacophoridae Rhacophorusleucomystax Gold Treefrog II
+  II    Frog Rheobatrachidae Rheobatrachussp.Gastric-brooding Frog IINew Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202326CLASSQUICKREFERENCEFAMILYS
+  ?     Salamander Salamandridaeallspeciesinthe Salamandridaefamily Newts-Salamanders IIexceptasrestrictedinanothergroup
+  I     Lizard Scincidae Chalcidesocellatus Oscellated Skink I
+  I     Lizard Scincidae Coruciazebrata Prehensile Tailed Skink I
+  I     Lizard Scincidae Coruciazebrata Soloman Island/Prehensile Tailed Skink I
+  IV    Lizard Scincidae Eumecesegregiuslividus Skink,bluetailmole IVFederally Threatened
+  I     Lizard Scincidae Eumecesfasciatus Five Lined Skink I
+  I     Lizard Scincidae Eumeceslaticeps Broad Headed Skink I
+  I     Lizard Scincidae Eumecesschneideri Schneider's Skink I
+  IV    Lizard Scincidae Leiolopismatelfairi Skink,Round Island IVFederally Threatened
+  I     Lizard Scincidae Mabuyamacularia Orange Throat Pygmy Skink I
+  I     Lizard Scincidae Mabuyaperotetti Red Sided Skink I
+  I     Lizard Scincidae Mochlusfernandi Truefireskink I
+  IV    Lizard Scincidae Neosepsreynoldsi Skink,sand IVFederally Threatened
+  I     Lizard Scincidae Riopafernandi Fire Skink I
+  I     Lizard Scincidae Scincellalateralis Southern Brown Skink I
+  I     Lizard Scincidae Tiliquasp.Blue Tongued Skink I
+  I     Lizard Scincidae Trachydosaurusrugosus Shinglebacked Skink I
+  I     Lizard Scincidae Trachylepisstriata Skink,Red-sided I
+  I     Lizard Scincidae Tribolonotusgracillis,Trachylepisstriata Red Eyed Crocodile Skink I
+  II    Salamander Sirenidae Pseudobranchusaxanthus Southern Dwarf Siren II
+  II    Salamander Sirenidae Pseudobranchusstriatus Northner Dwarf Siren II
+  II    Salamander Sirenidae Sirenintermedia Lesser Siren II
+  II    Salamander Sirenidae Sirenlacertina Greater Siren II
+  IV    Lizard Sphenodontidae Sphenodonsp.Tuatara Lizard IVFederally Endangered
+  II    Turtle Sternotherus Sternotheruscarinatus Turtle,Razorback Musk II
+  II    Turtle Sternotherus Sternotherussp.Musk Turtle II
+  I     Lizard Teiidae Ameivaameiva Giant Ameiva I
+  IV    Lizard Teiidae Ameivapolops Lizard,St.Croixground IVFederally Endangered
+  IV    Lizard Teiidae Aspidoscelisvanzoi Lizard,Maria Islandground IVFederally Endangered
+  I     Lizard Teiidae Callopistesmaculatus Dwarf Tegu I
+  I     Lizard Teiidae Cnemidophorusleminscatus Rainbow Whiptail I
+  II    Lizard Teiidae Crocodilurusamazonicus Crocodile Tegu II
+  II    Lizard Teiidae Dracaenasp.Caiman Lizard II
+  II    Lizard Teiidae Tupinambissp.Black,Redand Gold Tegu II
+  II    Turtle Testudinidae Astrochelysradiata Radiated Tortoise II
+  II    Turtle Testudinidae Astrochelysyniphora Madagascar Angulated Tortoise II
+  II    Turtle Testudinidae Chelonoidisnigra Galapagos Tortoise II
+  II    Turtle Testudinidae Geochelonecarbonaria Tortoise,Red-foot II
+  II    Turtle Testudinidae Geochelonedenticulata Tortoise,Yellow-foot II
+  II    Turtle Testudinidae Geocheloneelegans Indian Star Tortoise II
+  IV    Turtle Testudinidae Geochelonenigra\=elephantopus\Tortoise,Galapagos IVFederally Endangered
+  II    Turtle Testudinidae Geochelonepardalisssp Leopard Tortoise II
+  IV    Turtle Testudinidae Geocheloneradiata Tortoise,Madagascarradiated IVFederally Endangered
+  II    Turtle Testudinidae Geochelonesulcata Tortoise,Sulcata II
+  IV    Turtle Testudinidae Geocheloneyniphora Tortoise,Angulated IVFederally Endangered
+  IV    Turtle Testudinidae Gopherusagassizii Desert Tortoise IVFederally Threatened
+  IV    Turtle Testudinidae Gopherusflavomarginatus Tortoise,Bolson Gopher IVFederally Endangered
+  IV    Turtle Testudinidae Gopheruspolyphemus Gopher Tortoise IVFederally Threatened
+  II    Turtle Testudinidae Kinixyshomeana Foresthingebacktortoise II
+  II    Turtle Testudinidae Malaclemysterrapinssp.Diamond-backed Terrapin II
+  II    Turtle Testudinidae Malacochersustornieri Pancaketortoise II
+  IV    Turtle Testudinidae Psammobatesgeometricus Turtle,geometric IVFederally Endangered New Mexico Departmentof Game&Fish.LEField Operations Division.Special Use Permits Program Updated202327CLAS
+  II    Turtle Testudinidae Pyxisarachnoides Spidertortoise II
+  II    Turtle Testudinidae Pyxisplanicauda Flat-backed Spidertortoise II
+  II    Turtle Testudinidae Testudograeca Greek Tortoise,Spur Thighed II
+  II    Turtle Testudinidae Testudohermanni Hermans Tortoise II
+  II    Turtle Testudinidae Testudohorsfieldii Russiantortoise II
+  II    Turtle Testudinidae Testudokleinmanni Egyptiantortoise,Kleinmann's II
+  IV    Turtle Trionychidae Apaloneater Cuatro Cienegas Soft-shell IVFederally Endangered
+  II    Turtle Trionychidae Apaloneferox Florida Soft-shell II
+  II    Turtle Trionychidae Apalonespiniferassp.Spiny Softshell II
+  II    Turtle Trionychidae Lissemyspunctata Indian Flap-shelled Turtle II
+  II    Turtle Trionychidae Lissemysscutata Burmese Flap-shelled Turtle II
+  II    Turtle Trionychidae Paleasteindachneri Wattle Necked Soft-shell II
+  II    Turtle Trionychidae Pelochelyssp.Giant Soft-shell II
+  II    Turtle Trionychidae Pelodiscussp.Chinese Soft-shell II
+  II    Turtle Trionychidae Rafetusswinhoei Shanghai Soft-shell II
+  IV    Turtle Trionychidae Trionyxgangeticus Indian Soft-shell IVFederally Endangered
+  IV    Turtle Trionychidae Trionyxhurum Peacocksoftshell IVFederally Endangered
+  II    Turtle Trionychidae Trionyxmuticus Smooth Soft-shell II
+  IV    Turtle Trionychidae Trionyxnigricans Black Soft-shell IVFederally Endangered
+  I     Lizard Tropiduridae Leiocephaluspersonatus Jeweled Curly Tail Lizard I
+  I     Lizard Tropiduridae Leiocephalusschreibersii Bahamana Curly Tail Lizard I
+  IV    Lizard Varanidae Varanusbengalensis Monitor,Indian\=Bengal\IVFederally Endangered
+  IV    Lizard Varanidae Varanusflavescens Monitor,yellow IVFederally Endangered
+  IV    Lizard Varanidae Varanusgriseus Monitor,desert IVFederally Endangered
+  IV    Lizard Varanidae Varanuskomodoensis Monitor,Komodo Island IVFederally Endangered
+  III   Lizard Varanidae Varanusprasinus Monitor,Green Tree III
+  IV    Snake Viperidaeanyvenomousspeciesanyvenomousspecies IV
+  IV    Snake Viperidae Crotalusunicolor Rattlesnake,Aruba Island IVFederally Threatened
+  IV    Snake Viperidae Crotaluswillardiobscurus Rattlesnake,New Mexicanridge-nosed IVFederally Threatened
+  IV    Snake Viperidae Viperalatifii Viper,Lar Valley IVFederally Endangered
+  IV    Lizard Xantusiidae Xantusiariversiana Lizard,Islandnight IVFederally Threatened
+  II    Snake Xenopeltidae Xenopeltisunicolor Sunbeam Snake\Asian\II
+  ?     Lizard Xenosauridae Shinisauruscrocodilurus Chinese Crocodile Lizard IIKEY:Forquestionscontactthe Permits Programat DGF.Permits@dgf.nm.gov Biological Classification\scientifictaxonomy\=Famil

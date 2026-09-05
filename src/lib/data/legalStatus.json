@@ -98,166 +98,166 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 4,
+        "checked": 5,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 4,
+        "checked": 5,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 5,
+        "checked": 6,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 5,
+        "checked": 6,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 5,
+        "checked": 6,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 5,
+        "checked": 6,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 5,
+        "checked": 6,
         "of": 51
       },
       "green-anole": {
-        "checked": 5,
+        "checked": 6,
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 23,
+        "checked": 24,
         "of": 51
       },
       "tarantula": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "axolotl": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "box-turtle": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 30,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 30,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 30,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 30,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 31,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 31,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 31,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 31,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 32,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 33,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "green-iguana": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "burmese-python": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "degu": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "hamster": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "gerbil": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "bengal-cat": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "veiled-chameleon": {
-        "checked": 40,
-        "of": 51
-      },
-      "ball-python": {
-        "checked": 40,
-        "of": 51
-      },
-      "milk-snake": {
-        "checked": 40,
-        "of": 51
-      },
-      "boa-constrictor": {
         "checked": 41,
         "of": 51
       },
-      "corn-snake": {
-        "checked": 43,
+      "ball-python": {
+        "checked": 41,
+        "of": 51
+      },
+      "milk-snake": {
+        "checked": 41,
+        "of": 51
+      },
+      "boa-constrictor": {
+        "checked": 42,
         "of": 51
       },
       "chinchilla": {
+        "checked": 44,
+        "of": 51
+      },
+      "corn-snake": {
         "checked": 44,
         "of": 51
       },
@@ -270,7 +270,7 @@
         "of": 51
       },
       "rosy-boa": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "prairie-dog": {
@@ -415,7 +415,8 @@
     },
     "NM": {
       "name": "New Mexico",
-      "level": "state"
+      "level": "state",
+      "scope": "19.35.7 NMAC and the Director's Species Importation List it points at, now readable in full. Four groups: I is semi-domesticated and needs no importation permit, II needs a permit, III needs a permit with specific provisions attached, and IV is prohibited to the general public and allowed only for scientific study, restoration, zoological display, temporary events, service animals or qualified experts. An animal on none of the roughly 1,300 rows defaults to group IV. Note the rule's own scope, persons who desire to bring wildlife species into New Mexico, so it governs importation rather than possession of an animal already here. The list carries no terrestrial invertebrates at all, which is why the pet invertebrates on this map are recorded unclear rather than barred by default."
     },
     "VT": {
       "name": "Vermont",
@@ -1199,6 +1200,11 @@
       "title": "Vermont Fish and Wildlife Department, Restricted Wild Animal List, July 2025",
       "url": "https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Restricted_Wild%20Animals_List.pdf",
       "note": "The appendix the Unrestricted list keeps pointing at. Headed: species below are exceptions to Unrestricted Wild Animal List status and require an importation and possession permit. It matters because several families are unrestricted as a whole and then clawed back species by species here, which is how Vermont ends up allowing a ball python and not a Burmese, a California kingsnake and not an eastern milk snake."
+    },
+    "nm-importation-list": {
+      "title": "New Mexico Department of Game and Fish, Director's Species Importation List, updated January 2023",
+      "url": "https://wildlife.dgf.nm.gov/download/directors-species-importation-list/",
+      "note": "The roughly 1,300 row table that 19.35.7 NMAC points at and that earlier research could not obtain. Every row gives a family, a scientific name, a common name and a roman numeral group. Group I is semi-domesticated and needs no importation permit. Group II is not known to be invasive or dangerous and needs a permit. Group III presents minimal or manageable concerns and needs a permit with specific provisions attached. Group IV is prohibited to the general public. The list is reached from the download page rather than a direct file URL, and the site needs a User-Agent header."
     }
   },
   "animals": {
@@ -1391,10 +1397,12 @@
           "note": "Maryland's list names the cat family, several primates, and this short group of rabies vector species. An insectivore is none of them. Counties and municipalities may be stricter than the state here."
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "The framework is verified but the Director's Species Importation List is not, so the group assignment is unknown. Note the default cuts toward prohibition: anything not on the list is Group IV. Do not present New Mexico as legal without that list.",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Hedgehog | Erinaceidae | Atelerix ssp | Hedgehog (Common) | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Resolved from a previous unclear entry now that the list is in hand. The whole genus is covered, so the African pygmy hedgehog of the pet trade is included.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "VT": {
           "status": "conditional",
@@ -1754,10 +1762,12 @@
           "verifiedOn": "2026-08-04"
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "Group assignment unknown; unlisted defaults to Group IV.",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Ferret | Mustelidae | Mustela putorius furo | Ferret, Common | I | all species except as restricted in another group",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Resolved from unclear.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "VT": {
           "status": "legal",
@@ -2161,10 +2171,13 @@
           "note": "No marsupial appears on the list. Counties and municipalities may be stricter than the state."
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "Group assignment unknown; unlisted defaults to Group IV.",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Marsupial | Petauridae | Petaurus breviceps | Sugar Glider | II",
+          "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Resolved from unclear.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         },
         "VT": {
           "status": "legal",
@@ -2663,6 +2676,14 @@
           "quote": "Rodentia | Myomorpha | Cricetidae | Mesocricetus | all species | Hamsters",
           "note": "Named at genus level, and the list separately covers Cricetus and the dwarf hamsters in Phodopus, so every hamster in the pet trade is unrestricted and needs no permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Rodent | Muridae | Mesocricetus auratus | Hamster | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -2948,6 +2969,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "Rodentia | Myomorpha | Muridae | Meriones | unguiculatus | Gerbils",
           "note": "Named to the species, which matters because the list also carries Gerbillus and Gerbillurus under the same common name and the pet gerbil is neither of those. Meriones unguiculatus is the one on the shelf.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Rodent | Muridae | Meriones unguiculatus | Gerbil | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3254,6 +3283,14 @@
           "quote": "Certificate of Veterinary Inspection is required for the import of exotic, circus and zoo animals, native wild animals, domestic rabbits, nonnative rodents, nonnative reptiles and amphibians, and non-poultry birds",
           "note": "The monk or quaker parakeet is named in no Michigan statute or order. The Large Carnivore Act covers cats and bears, the captive game permit covers native game, and the herp order covers reptiles and amphibians, so nothing reaches a pet parrot. The only requirement is the certificate of veterinary inspection for a non-poultry bird moved into the state. Worth checking against your own state, because Michigan does not follow Pennsylvania, which bans this species by name.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Bird | Parakeet | Psittacidae | Myiopsitta monachus | Parakeet, Quaker Monk | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Worth flagging against other states, because this is the species Pennsylvania bans by name. New Mexico treats it as semi-domesticated.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3564,6 +3601,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "Carnivora | Feliformia | Felidae | All wild-domestic hybrid cats of F4 generation or greater",
           "note": "Vermont draws the line by generation, which is unusually precise. An F4 or later Bengal is unrestricted. An earlier generation animal is on no list and therefore restricted, and the permit that would cover it is not issued for pet keeping. Ask the breeder for the filial generation before you buy, because it is the whole answer here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Cat | Felidae | Felis catus | Common house cat & hybrids | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. An unusually clean answer for a Bengal, because New Mexico writes hybrids into the domestic cat row rather than leaving them to be argued about. The wild parent species, Prionailurus bengalensis, sits separately in Group IV as a federally endangered animal, but the hybrid does not inherit that.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3879,6 +3924,14 @@
           "quote": "Squamata | Iguania | Chamaelonidae | all species | Chameleons",
           "note": "The whole family is unrestricted, so no chameleon needs a permit in Vermont.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Lizard | Chamaeleonidae | Chamaeleo calyptratus | Veiled chameleon | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4159,6 +4212,15 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "Testudines | Testudinidae | Testudo/Agrionemys | horsfieldii | Russian tortoise (Captive Bred Only)",
           "note": "Named to the species and unrestricted, but the Captive Bred Only marker is a real condition rather than a footnote. The list requires captive bred animals to arrive with a statement of origin or a certificate of veterinary inspection identifying the business of origin and the number of animals imported.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "permit",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Turtle | Testudinidae | Testudo horsfieldii | Russian tortoise | II",
+          "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "permitFor": "personal",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4473,6 +4535,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "Squamata | Serpentes | Boidae | All species of boas and pythons, except those listed in Appendix that require an importation and possession",
           "note": "Boas and pythons are unrestricted as a group, and the Restricted list claws back eleven of them. The ball python is not among them.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Snake | Pythonidae | Python regius | Ball Python | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Worth contrasting with the reticulated python two rows down, which is Group IV. New Mexico sorts pythons by species rather than treating the family as one.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -4800,6 +4870,15 @@
           "quote": "Squamata | Serpentes | Boidae | All species of boas and pythons, except those listed in Appendix that require an importation and possession",
           "note": "Not among the eleven boids clawed back on the Restricted list, which name the anacondas, the large Python species and a handful of sand boas and Australasian pythons.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "permit",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Snake | Boidae | Boa constrictor imperator | Boa, Columbian Red Tail | III",
+          "note": "The Columbian red-tail is the boa that dominates the pet trade and it sits in Group III, needing an importation permit with specific provisions attached. The Peruvian and Argentine red-tails are Group III too. Two rows go the other way: Boa constrictor ssp, except as restricted in another group, covers the Central American and Hog Isle boas at Group I. So the answer turns on which boa, and the common one needs the permit. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5050,6 +5129,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "All species of Invertebrates, except those listed in Appendix that require an importation and possession permit. Note: Importation of any invertebrate species also requires compliance with USDA regulations.",
           "note": "A tarantula is covered by the blanket invertebrate entry, and the Restricted list claws back no terrestrial invertebrate at all. The USDA condition attaches to importing rather than to keeping.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023, and 19.35.7 NMAC",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "A tarantula is not on the Director's list, and neither is any other terrestrial invertebrate: the roughly 1,300 rows are mammals, birds, reptiles, amphibians and fish. Read literally the default clause would designate it group IV and bar it, since it is a live non-domesticated animal. Read in context that looks wrong, because the rule is titled importation of live non-domesticated animals, birds and fish, its scope speaks of wildlife species, and its machinery is veterinary inspection certificates and disease testing built for vertebrates. The regulation never uses the word invertebrate. Recorded unclear rather than banned, because the definition arguably reaches the animal and plainly was not written with it in mind.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5304,6 +5391,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "All species of Invertebrates, except those listed in Appendix that require an importation and possession permit. Note: Importation of any invertebrate species also requires compliance with USDA regulations.",
           "note": "The emperor scorpion is covered by the blanket invertebrate entry, and the Restricted list claws back no terrestrial invertebrate at all. The USDA condition attaches to importing rather than to keeping.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023, and 19.35.7 NMAC",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The emperor scorpion is not on the Director's list, and neither is any other terrestrial invertebrate: the roughly 1,300 rows are mammals, birds, reptiles, amphibians and fish. Read literally the default clause would designate it group IV and bar it, since it is a live non-domesticated animal. Read in context that looks wrong, because the rule is titled importation of live non-domesticated animals, birds and fish, its scope speaks of wildlife species, and its machinery is veterinary inspection certificates and disease testing built for vertebrates. The regulation never uses the word invertebrate. Recorded unclear rather than banned, because the definition arguably reaches the animal and plainly was not written with it in mind.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5589,6 +5684,15 @@
           "quote": "Squamata | Autarchoglossa | Teiidae | all species | Tegus and whiptails",
           "note": "The whole family is unrestricted with no clawback, which makes Vermont notably more permissive on tegus than Florida.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "permit",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Lizard | Teiidae | Tupinambis sp. | Black, Red and Gold Tegu | II",
+          "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Listed at genus level under the older name Tupinambis; the Argentine black and white tegu is now Salvator merianae.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5854,6 +5958,14 @@
           "quote": "Squamata | Autarchoglossa | Varanidae | Varanus | exanthematicus | Savannah/Bosc's monitor",
           "note": "Monitors are handled the other way round from most families here: only four Varanus are unrestricted and the savannah is one of them by name. Any monitor not on that short list is restricted.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The savannah monitor is not on the list. Only five monitors are, the Indian, yellow, desert, Komodo and green tree, and the first four are Group IV outright. Everything else in Varanidae falls to the default clause and is designated group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -6008,10 +6120,12 @@
           "note": "No rodent appears on the list. Counties and municipalities may be stricter than the state."
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "Native to New Mexico and possibly a furbearer or species of concern, either of which would put it in Group IV, but the list was not read.",
-          "verifiedOn": "2026-08-04"
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Squirrel | Sciuridae | Cynomys mexicanus | Prairie dog, Mexican | IV | Federally Endangered",
+          "note": "Resolved from unclear. Two prairie dogs are named, the Mexican and the Utah, both Group IV as federally listed animals. The black-tailed prairie dog of the pet trade appears nowhere on the list, and the default clause puts an unlisted animal in Group IV as well, so every route lands in the same place. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "VT": {
           "status": "permit",
@@ -6400,10 +6514,12 @@
           "note": "No rodent appears on the list, so Maryland's thirty pound weight test applies to cat hybrids rather than to size generally."
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "Group assignment unknown.",
-          "verifiedOn": "2026-08-04"
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The capybara appears nowhere on the Director's list, and New Mexico's default clause is the operative rule: an unlisted live non-domesticated animal is designated group IV until the director decides otherwise. Resolved from a previous unclear entry now that the list is in hand. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "VT": {
           "status": "permit",
@@ -6767,10 +6883,12 @@
           "verifiedOn": "2026-08-04"
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "Group assignment unknown.",
-          "verifiedOn": "2026-08-04"
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The fennec fox appears nowhere on the Director's list, and New Mexico's default clause is the operative rule: an unlisted live non-domesticated animal is designated group IV until the director decides otherwise. Resolved from a previous unclear entry now that the list is in hand. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "TN": {
           "status": "unclear",
@@ -7184,10 +7302,12 @@
           "verifiedOn": "2026-08-04"
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "Likely Group IV as a dangerous species, but the list was not read, so this is not asserted.",
-          "verifiedOn": "2026-08-04"
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Cat, wild | Felidae | Leptailurus serval | Serval | IV",
+          "note": "Resolved from unclear, and now confirmed rather than assumed. Named outright in Group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "TN": {
           "status": "unclear",
@@ -7559,10 +7679,12 @@
           "note": "No rodent appears on the list."
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "Group assignment unknown; unlisted defaults to Group IV.",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Rodent | Chinchillidae | Chinchilla laniger | Chinchilla, Long-tailed | I | Except Chinchilla brevicaudata boliviana",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Resolved from unclear. The long-tailed chinchilla of the pet trade is Group I, and the exception named is the short-tailed Bolivian chinchilla, which is federally endangered and sits in Group IV.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "VT": {
           "status": "legal",
@@ -8064,6 +8186,14 @@
           "quote": "Rodentia | Hystricomorpha | Caviidae | Cavia | porcellus | Guinea pig",
           "note": "Named to the species. No permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | PocketPet | Caviidae | Cavia porcellus | Guinea pig | I | Captive Bred",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. The row carries a Captive Bred marker, so the clearance is for the domesticated animal rather than wild-caught stock.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8343,6 +8473,14 @@
           "note": "The green iguana is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. Vermont's Unrestricted list works through the lizard families one at a time, agamids, chameleons, geckos, skinks, teiids, anguids, lacertids, four named monitors and four iguanian families, and Iguanidae is not among them. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Lizard | Iguanidae | Iguana iguana | Iguana, Green Common | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -8620,6 +8758,15 @@
           "note": "The snapping turtle is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. Chelydra is on neither list, so despite being native to Vermont it cannot be kept. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "permit",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Turtle | Chelydridae | Chelydra serpentina serpentina | Eastern Snapping Turtle | II",
+          "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Both the eastern and Florida snapping turtles are Group II.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8877,6 +9024,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "Squamata | Scleroglossa | Gekkonidae | all species | Geckos",
           "note": "Covered by the family-wide gecko entry and absent from the Restricted list.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Lizard | Gekkonidae | Gekko gecko | Tokay Gecko | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9142,6 +9297,15 @@
           "quote": "Amphibians | Caudata | Ambystomatidae | Ambystoma | all species | Mole salamanders",
           "note": "The whole genus is on the Restricted list, so both the eastern tiger salamander and the barred tiger salamander sold in the trade are caught. Unlike Pennsylvania and Michigan, the species being native or not makes no difference here. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "permit",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Salamander | Ambystomatidae | Ambystoma tigrinum | Eastern Tiger Salamander | II",
+          "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. The barred tiger salamander that fills the pet trade is listed separately at Group II as well, so both answers land in the same place. The Sonora and California tiger salamanders are Group IV as federally listed animals.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "permitFor": "personal",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9412,6 +9576,14 @@
           "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
           "note": "The Nile monitor is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. Only four small monitors are unrestricted by name and the Nile is not among them, which is unsurprising given it is the largest of the group. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The Nile monitor is not on the list. Only five monitors are, the Indian, yellow, desert, Komodo and green tree, and the first four are Group IV outright. Everything else in Varanidae falls to the default clause and is designated group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9700,6 +9872,14 @@
           "quote": "Squamata | Serpentes | Boidae | Python | molurus | Indian/Burmese python",
           "note": "Named on the Restricted list, which uses the older taxonomy: the Burmese python was Python molurus bivittatus before being raised to Python bivittatus, and the list's common name column says Indian/Burmese outright, so the species is covered. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in. Federal law bars interstate transport of this species anyway, since it has been listed as injurious wildlife under the Lacey Act since 2012.",
           "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Snake | Pythonidae | Python molurus bivitatis | Burmese Python | IV",
+          "note": "Named outright in Group IV, under the older taxonomy that treated the Burmese as a subspecies of Python molurus, with the species epithet misspelled bivitatis. Federal law bars interstate transport of this species anyway under its Lacey Act injurious wildlife listing. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9991,6 +10171,14 @@
           "quote": "Rodentia | Hystricomorpha | Octodontidae | Octodon | all species | Degus",
           "note": "Named at genus level. Worth contrasting with Colorado, which does require a permit for a degu.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The degu appears nowhere on the Director's list, and New Mexico's default clause is the operative rule: an unlisted live non-domesticated animal is designated group IV until the director decides otherwise. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -10238,6 +10426,14 @@
           "quote": "Amphibians | Caudata | Ambystomatidae | Ambystoma | all species | Mole salamanders",
           "note": "Salamanders and newts are unrestricted as a group, and then the entire genus Ambystoma is clawed back, which catches the axolotl even though it is a laboratory and pet animal that has not existed in the wild in any meaningful way for decades. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "Fifteen Ambystoma appear on the list and the axolotl is not among them, so the default clause designates it group IV. That is a harsh result for a laboratory animal that has effectively no wild population, and it sits oddly beside the tiger salamander two rows away at group II. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10490,6 +10686,14 @@
           "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
           "note": "The box turtle is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. Only three chelonians are unrestricted in Vermont, the southern painted turtle and two tortoises, all captive bred only. Terrapene is on neither list. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "conditional",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Turtle | Emydidae | Terrapene ornata ssp | Ornate Box Turtle | II",
+          "note": "The condition is which box turtle. The ornate box turtle, which is the one native to New Mexico, and the three-toed box turtle are both Group II and need an importation permit. The eastern box turtle, Terrapene carolina carolina, appears nowhere on the list, and an unlisted animal defaults to Group IV, which is closed to the general public. The aquatic box turtle is Group IV outright as a federally endangered species. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10748,6 +10952,15 @@
           "note": "Named on the Restricted list to the subspecies, along with the yellow-bellied and Cumberland sliders, so the whole Trachemys scripta complex is caught. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "permit",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Turtle | Emydidae | Trachemys scripta elegans | Red-eared Slider | II",
+          "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Named to the subspecies, alongside the yellow-bellied and Cumberland sliders. The South American red-lined slider is the outlier at Group IV.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11000,6 +11213,15 @@
           "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
           "note": "The sulcata is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. The two tortoises Vermont does allow are the Russian and the red-footed. The sulcata appears on neither list under Centrochelys or its older name Geochelone sulcata. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "permit",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Turtle | Testudinidae | Geochelone sulcata | Tortoise, Sulcata | II",
+          "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Listed under the older genus Geochelone, now Centrochelys, which is the same naming drift that leaves the sulcata unresolvable in Hawaii. New Mexico's list is old enough to still carry it.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "permitFor": "personal",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11254,6 +11476,15 @@
           "quote": "Squamata | Serpentes | Colubridae | All species of colubrids, except those listed in Appendix that require an importation and possession permit",
           "note": "Heterodon appears nowhere on the Restricted list, so both the eastern and the western hognose are unrestricted.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "permit",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Snake | Colubridae | Heterodon nasicus nasicus | Western Hognose Snake | III",
+          "note": "Group III, which is a permit with strings: the list defines the group as animals presenting minimal or manageable concerns that require specific provisions to be met before an importation permit issues. All three Heterodon on the list sit here, the western, eastern and Mexican hognose alike, so unlike most states the answer does not turn on which hognose you have. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11506,6 +11737,14 @@
           "note": "The African grey is named in no Michigan statute or order. The Large Carnivore Act covers cats and bears, the captive game permit covers native game, and the herp order covers reptiles and amphibians, so nothing reaches a pet parrot. The only requirement is the certificate of veterinary inspection for a non-poultry bird moved into the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Bird | Parrot | Psittacidae | Psittacus sp. | Parrots, African Greys | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Named at genus level.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11752,6 +11991,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "All species of Invertebrates, except those listed in Appendix that require an importation and possession permit. Note: Importation of any invertebrate species also requires compliance with USDA regulations.",
           "note": "The giant African millipede is covered by the blanket invertebrate entry, and the Restricted list claws back no terrestrial invertebrate at all. The USDA condition attaches to importing rather than to keeping.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023, and 19.35.7 NMAC",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The giant African millipede is not on the Director's list, and neither is any other terrestrial invertebrate: the roughly 1,300 rows are mammals, birds, reptiles, amphibians and fish. Read literally the default clause would designate it group IV and bar it, since it is a live non-domesticated animal. Read in context that looks wrong, because the rule is titled importation of live non-domesticated animals, birds and fish, its scope speaks of wildlife species, and its machinery is veterinary inspection certificates and disease testing built for vertebrates. The regulation never uses the word invertebrate. Recorded unclear rather than banned, because the definition arguably reaches the animal and plainly was not written with it in mind.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -12077,6 +12324,14 @@
           "quote": "Squamata | Serpentes | Colubridae | All species of colubrids, except those listed in Appendix that require an importation and possession permit",
           "note": "Colubrids are unrestricted as a group. The Restricted list reaches the North American ratsnake as Elaphe obsoleta but not the corn snake, which was Elaphe guttata and is now Pantherophis guttatus, so the corn snake stays clear.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Snake | Colubridae | Pantherophis guttatus | Red Cornsnake | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/corn-snake-legal-guide/"
@@ -12378,6 +12633,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "Squamata | Serpentes | Colubridae | Lampropeltis | triangulum traingulum | Eastern milk snake",
           "note": "The condition is which milk snake. Colubrids are unrestricted as a family, and then the Restricted list claws back the eastern milk snake specifically, Vermont's own native subspecies. The Honduran, Pueblan and Nelson's milk snakes that fill the pet trade are other subspecies of Lampropeltis triangulum and are not named, so they stay unrestricted. The official list misspells the subspecies as traingulum.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Snake | Colubridae | Lampropeltis triangulum hondurensis | Honduran Tangerine Milksnake | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Nine milk snake subspecies appear and every one of them is Group I, including the New Mexico milksnake, so unlike Vermont and Pennsylvania the answer does not turn on which subspecies you have.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -12731,6 +12994,14 @@
           "quote": "Squamata | Serpentes | Boidae | All species of boas and pythons, except those listed in Appendix that require an importation and possession",
           "note": "Not among the boids clawed back on the Restricted list.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Snake | Boidae | Lichanura trivirgata | Rosy Boa | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/rosy-boa-legal-guide/"
@@ -12921,6 +13192,14 @@
           "note": "Squirrels are on the closed list of species that may be held under a permit to hold game in captivity, so Michigan's native flying squirrel needs one. Two limits matter. The permit authorizes captive-bred game, so an animal taken from the wild cannot be brought under it, and the permit is issued for the species rather than as a general exotic pet licence. This is the opposite of the answer for the non-native rodents on this map, which need no permit at all.",
           "permitFor": "personal",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Squirrel | Sciuridae | Glaucomys sabrinus coloratus | Squirrel, Carolina northern flying | IV | Federally Endangered",
+          "note": "The only flying squirrel named is the Carolina northern, in Group IV as federally endangered. The southern flying squirrel kept as a pet is not on the list, so the default clause designates it Group IV too. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -13206,6 +13485,14 @@
           "note": "The ackie monitor is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. Only four monitors are unrestricted by name, the short-tailed pygmy, the savannah, the dwarf and the Timor. Varanus acanthurus is not one of them. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The ackie monitor is not on the list. Only five monitors are, the Indian, yellow, desert, Komodo and green tree, and the first four are Group IV outright. Everything else in Varanidae falls to the default clause and is designated group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -13452,10 +13739,12 @@
           "verifiedOn": "2026-08-27"
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "New Mexico's exotic wildlife rule sorts species into Groups I through IV by danger level; the garter snake isn't named in the regulation text located, and an unlisted species defaults to Group IV, whose actual permit requirements weren't confirmed in this research.",
-          "verifiedOn": "2026-08-27"
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Snake | Colubridae | Thamnophis sirtalis sirtalis | Easter Gartersnake | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Resolved from unclear. Both the eastern and red-sided garter snakes are Group I. The exception is the San Francisco garter snake, which is Group IV as a federally endangered animal.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "legal",
@@ -13840,10 +14129,12 @@
           "verifiedOn": "2026-08-27"
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "New Mexico sorts exotic wildlife into Groups I through IV by danger level; the California kingsnake wasn't named in the regulation text located, and an unlisted species defaults to Group IV, whose actual requirements weren't confirmed in this research.",
-          "verifiedOn": "2026-08-27"
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Snake | Colubridae | Lampropeltis getula californiae | California Kingsnake | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Resolved from unclear. Named to the subspecies, and all seven Lampropeltis getula subspecies on the list are Group I.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "legal",
@@ -14225,10 +14516,12 @@
           "verifiedOn": "2026-08-27"
         },
         "NM": {
-          "status": "unclear",
-          "sourceId": "nm-19-35-7",
-          "note": "New Mexico sorts exotic wildlife into Groups I through IV by danger level; cockatoos weren't named in the regulation text located, and an unlisted species defaults to Group IV, whose actual requirements weren't confirmed in this research.",
-          "verifiedOn": "2026-08-27"
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Bird | Cockatoo | Cacatuidae | Cacatua sp. | Cockatoo | I | all species except as restricted in another group",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Resolved from unclear. The genus is Group I with a carve-out, and the carve-out is real: the white or umbrella, Philippine and yellow-crested cockatoos each appear separately in Group IV as federally endangered. Check the species, not just the genus.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "legal",
@@ -14641,6 +14934,15 @@
           "quote": "Testudines | Testudinidae | Geochelone | carbonaria | Red-footed tortoise (Captive Bred Only)",
           "note": "Unrestricted under its older name Geochelone carbonaria, now Chelonoidis carbonarius, and subject to the same Captive Bred Only condition, which requires a statement of origin or certificate of veterinary inspection on import. Only three chelonians are on the whole Unrestricted list, so this is a narrow permission.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "permit",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Turtle | Testudinidae | Geochelone carbonaria | Tortoise, Red-foot | II",
+          "note": "Group II on the Director's list: not known to be invasive or dangerous, but an importation permit is still required before the animal may be brought into New Mexico. Listed under the older genus Geochelone, now Chelonoidis.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14685,6 +14987,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "Squamata | Iguania | Agamidae | all species | Agamas",
           "note": "The whole agamid family is unrestricted, so the bearded dragon needs no permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Lizard | Agamidae | Pogona vitticepts | Bearded dragon | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. The list misspells the species, printing vitticepts for vitticeps.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -14731,6 +15041,14 @@
           "quote": "Squamata | Scleroglossa | Gekkonidae | all species | Geckos",
           "note": "The whole family is unrestricted and the Restricted list claws back no gecko, so every pet gecko is clear here.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Lizard | Gekkonidae | Eublepharis macularius | Leopard Gecko | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14775,6 +15093,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "Squamata | Scleroglossa | Gekkonidae | all species | Geckos",
           "note": "Covered by the family-wide entry, which is the opposite of Hawaii, where the crested gecko falls through the gaps of a species-by-species list and is barred by default.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Lizard | Gekkonidae | Rhacodactylus cillatus | Crested Gecko | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Listed under the older genus Rhacodactylus, now Correlophus, and with the species misspelled cillatus for ciliatus.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -14821,6 +15147,14 @@
           "quote": "Squamata | Autarchoglossa | Scincidae | All species of skinks, except those listed in Appendix that require an importation and possession permit",
           "note": "Skinks are unrestricted as a family with an exception, and the exception is Eumeces, not Tiliqua. The blue-tongue skink is therefore clear.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Lizard | Scincidae | Tiliqua sp. | Blue Tongued Skink | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Named at genus level, so every blue-tongue in the trade is covered.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14865,6 +15199,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "Squamata | Iguania | Chamaelonidae | all species | Chameleons",
           "note": "The whole family is unrestricted. A striking contrast with Hawaii, where this species is barred by default despite living wild on the islands.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Lizard | Chamaeleonidae | Chamaeleo jacksoni | Jackson's chameleon | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required. Listed under the older genus Chamaeleo, now Trioceros.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -14911,6 +15253,14 @@
           "quote": "Squamata | Iguania | Polychrotidae | Anolis | all species | Anoles",
           "note": "The genus is unrestricted in full.",
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Rep/Amph | Lizard | Polychrotidae | Anolis carolinensis | Green Anole | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14949,6 +15299,14 @@
           "note": "The permit to hold game in captivity is a closed list of native game species and the rabbit is not on it; Michigan's native lagomorphs are the snowshoe hare and the eastern cottontail, not the European rabbit behind every pet breed. Nothing else in Michigan reaches it. Importing one calls for a certificate of veterinary inspection as a domestic rabbit.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Rabbit | Leporidae | Oryctolagus cuniculus | Rabbit, European (common) | I",
+          "note": "Group I on the Director's list, which means semi-domesticated and no importation permit required.  One caveat on all of this: 19.35.7 NMAC is an importation rule, its stated scope being persons who desire to bring wildlife species into New Mexico, so it governs getting the animal here rather than keeping one already in the state.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14986,6 +15344,14 @@
           "cite": "Unrestricted Wild Animal List, July 2025",
           "quote": "All species of Invertebrates, except those listed in Appendix that require an importation and possession permit. Note: Importation of any invertebrate species also requires compliance with USDA regulations.",
           "note": "The Madagascar hissing cockroach is covered by the blanket invertebrate entry, and the Restricted list claws back no terrestrial invertebrate at all. The USDA condition attaches to importing rather than to keeping.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023, and 19.35.7 NMAC",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The Madagascar hissing cockroach is not on the Director's list, and neither is any other terrestrial invertebrate: the roughly 1,300 rows are mammals, birds, reptiles, amphibians and fish. Read literally the default clause would designate it group IV and bar it, since it is a live non-domesticated animal. Read in context that looks wrong, because the rule is titled importation of live non-domesticated animals, birds and fish, its scope speaks of wildlife species, and its machinery is veterinary inspection certificates and disease testing built for vertebrates. The regulation never uses the word invertebrate. Recorded unclear rather than banned, because the definition arguably reaches the animal and plainly was not written with it in mind.",
           "verifiedOn": "2026-09-05"
         }
       }

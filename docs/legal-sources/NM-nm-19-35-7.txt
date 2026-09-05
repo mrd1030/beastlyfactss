@@ -1,0 +1,737 @@
+# 19.35.7 NMAC, Importation of Live Non-Domesticated Animals, Birds and Fish
+
+sourceId: nm-19-35-7
+jurisdiction: NM
+url: https://www.srca.nm.gov/parts/title19/19.035.0007.html
+fetched: 2026-09-05
+fetch notes: plain curl with a User-Agent works. The four group definitions are in the
+  section on the species importation list; the scope statement is 19.35.7.2.
+
+----------------------------------------------------------------------
+
+ 
+ 19.35.7 NMAC 
+ TeamViewer 
+ Matt Ortiz 
+ 2 
+ 1 
+ 2014-01-14T22:24:00Z 
+ 2021-02-09T21:18:00Z 
+ 2021-02-09T21:18:00Z 
+ 9 
+ 5118 
+ 29173 
+ State of New mexico 
+ 243 
+ 68 
+ 34223 
+ 14.00 
+ false 
+ false 
+ false 
+ EN-US 
+ X-NONE 
+ X-NONE 
+ TITLE 19 ������������ NATURAL RESOURCES AND WILDLIFE 
+ CHAPTER 35 ���� CAPTIVE WILDLIFE USES 
+ PART 7 ��������������� IMPORTATION OF LIVE NON-DOMESTIC ANIMALS, BIRDS AND FISH 
+ 19.35.7.1 �������������� ISSUING AGENCY: � New Mexico Department of Game and Fish. 
+ [19.35.7.1 NMAC - Rp, 19.35.7.1 NMAC, 1/31/2014] 
+ 19.35.7.2 �������������� SCOPE: � Persons who desire to bring wildlife species
+into the state of New Mexico. � It may
+include the general public, pet importers, holders of Class �A� park licenses,
+department permittees and others. 
+ [19.35.7.2
+NMAC - Rp, 19.35.7.2 NMAC, 1/31/2014; A, 2/9/2021] 
+ 19.35.7.3 �������������� STATUATORY AUTHORITY: � 17-1-14, 17-1-26 and 17-3-32. 
+ [19.35.7.3 NMAC - Rp, 19.35.7.3 NMAC, 1/31/2014] 
+ 19.35.7.4 �������������� DURATION: � Permanent. 
+ [19.35.7.4 NMAC - Rp, 19.35.7.4 NMAC, 1/31/2014] 
+ 19.35.7.5 �������������� EFFECTIVE DATE: � January 31, 2014, unless a later date is cited
+at the end of a section. 
+ [19.35.7.5 NMAC - Rp, 19.35.7.5 NMAC, 1/31/2014] 
+ 19.35.7.6 �������������� OBJECTIVE: � To provide consistent criteria for the importation
+of live non-domesticated animals into New Mexico and to protect native wildlife
+against the introduction of contagious or infectious diseases, undesirable
+species and address human health and safety issues. 
+ [19.35.7.6 NMAC - Rp, 19.35.7.6 NMAC, 1/31/2014] 
+ 19.35.7.7 �������������� DEFINITIONS: 
+ ��������������� A. ����������� �Accredited laboratory� A lab
+recognized for CWD testing by the New Mexico department of game and fish. 
+ ��������������� B. ����������� �Animal health emergency� A situation
+in which people or animals are at risk of exposure to infectious or contagious
+diseases as determined by the director. 
+ ��������������� C. ����������� �APHIS� Animal and plant health
+inspection service, United States department of agriculture. 
+ ��������������� D. ����������� �Applicant� Any person or entity that
+causes or submits a department application for importation. 
+ ��������������� E. ����������� �Certificate of compliance� An official
+department document declaring an applicant�s ability to resume importation
+application eligibility. 
+ ��������������� F. ����������� �Certified Herd� A herd that has
+attained certified status as defined in the current USDA chronic wasting
+disease program standards. 
+ ��������������� G. ����������� �Closed herd sales� Sales of animals
+from a herd directly to the buyer in a manner that allows the buyer to
+transport the animals from the producer's premises directly to the buyer's
+premises without contact with animals from another herd, and without contact
+with other pens or transport facilities used by any other herd. 
+ ��������������� H. ����������� �Chronic Wasting Disease� or �CWD� is a transmissible spongiform
+encephalopathy of cervids. 
+ ��������������� I. ������������ �CWD-Exposed Animal� is an animal that
+is part of a CWD-positive herd, or that has been exposed to a CWD-positive
+animal or contaminated premises within the previous 60 months. 
+ ��������������� J. ������������ �CWD-Exposed herd� is a herd in which a
+CWD-positive animal resided within 60 months prior to that animal�s diagnosis
+as CWD-positive. 
+ ��������������� K. ����������� �CWD-Positive herd� is a herd in which
+a CWD-positive animal resided at the time it was diagnosed and which has not
+been released from quarantine. 
+ ��������������� L. ����������� �CWD-Suspect animal� is an animal for
+which unofficial CWD test results, laboratory evidence, or clinical signs
+suggest a diagnosis of CWD, but for which laboratory results have been
+inconclusive or not yet conducted. 
+ ��������������� M. ���������� �CWD-Suspect herd� is a herd for which
+laboratory evidence or clinical signs suggest a diagnosis of CWD, but for which
+laboratory results have been inconclusive or not yet conducted. 
+ ��������������� N. ����������� �CWD-Trace-Back herd� is an exposed
+herd in which a CWD-positive animal has resided during the 60 months prior to
+the diagnosis. 
+ ��������������� O. ����������� �CWD-Trace-Forward herd� is a
+CWD-exposed herd that has received CWD-exposed animals from a CWD-positive herd
+during the 60 months prior to the diagnosis of CWD in the CWD-positive herd. 
+ ��������������� P. ����������� �Dangerous animal� An animal that due
+to its nature, biology or its behavior, including predatory or venomous
+animals, that may present a risk to the health, safety or well-being of the
+public or other animals including native wildlife, domestic pets or livestock. 
+ ��������������� Q. ����������� �Department� Shall mean New Mexico
+department of game and fish. 
+ ��������������� R. ����������� �Director� Shall mean the director of
+the department of game and fish. 
+ ��������������� S. ������������ �Importer� Any person or entity that
+causes an animal to be brought, transported or shipped into New Mexico with the
+exception of common mail carriers and delivery service providers during the
+course of their regular duties. 
+ ��������������� T. ����������� �Invasive animal� Any non-native
+animal, except protected wildlife, including any aquatic invasive species
+(AIS), whose introduction into New Mexico may cause or is likely to cause harm
+to the economy, environment, protected wildlife, human health or safety. 
+ ��������������� U. ����������� �Isolation� A period of time imported
+animals are separated and observed. � The
+observation pen must have fences at least eight feet high. � The isolation pen must prevent nose-to-nose
+contact with all wild ungulates during the observation period. 
+ ��������������� V. ����������� �Mixed herd� A herd comprised of
+animals from different sources and held to allow contact or commingling. 
+ ��������������� W. ���������� �Mixed herd sales� Sales from sale
+barns, auctions, private arrangements, or other facilities that allow joint
+penning or adjacent penning of animals from more than one closed herd, or
+otherwise facilitate or permit commingling, direct contact, or holding,
+boarding, or sharing the premises by more than one herd simultaneous or
+successively in time. 
+ ��������������� X. ����������� �Non-domesticated animal� For the purposes of this rule, any animal species that is wild
+by nature not listed as semi-domesticated or protected under chapter 17 NMSA,
+1978. 
+ ��������������� Y. ����������� �NPIP� National poultry improvement
+program. 
+ ��������������� Z. ����������� �Official Animal Identification� A
+device or means of animal identification approved by USDA to uniquely identify
+individual animals nationally. � The
+animal identification must include a nationally unique identification number
+that adheres to one of the following: 
+ ������������������������������� (1) ���������� national
+uniform ear tagging system; 
+ ������������������������������� (2) ���������� animal
+identification number (AIN); 
+ ������������������������������� (3) ���������� premises-based
+number system using a premises identification number (PIN) in conjunction with
+a livestock production numbering system; or 
+ ������������������������������� (4) ���������� any
+other numbering system approved by USDA for the identification of animals in
+commerce. 
+ ��������������� AA. �������� �Protected wildlife� Shall mean those
+taxonomic groups of mammals, birds and fish listed in Chapter 17 NMSA, 1978,
+including any species that are listed as either state or federally threatened
+or endangered. 
+ ��������������� BB. �������� �Release from captivity� For the
+purpose of this rule, the act of removing from confinement, letting go,
+liberating or setting free any imported, live non-domesticated animal into the
+wild. 
+ ��������������� CC. �������� �Semi-domesticated animal� For the
+purpose of this rule, the director may designate an animal species as
+semi-domesticated in those instances where individual members of such species
+are commonly tamed, raised, bred or sold in captivity. 
+ ��������������� DD. �������� �Species importation list� A list
+containing protected, non-game and semi-domesticated animal species
+established, maintained, updated or amended by the director of the New Mexico
+department of game and fish. � The species
+importation list may contain importation requirements, restrictions and
+conditions for each animal species listed. 
+ ��������������� EE. �������� �Qualified expert� Only a person
+officially designated by the director to import a specific non-domesticated
+animal. 
+ ��������������� FF. ��������� �Undesirable animal� An animal that may
+have adverse impacts to health, management or safety. 
+ ��������������� GG. ������� �USDA� United States department of
+agriculture. 
+ [19.35.7.7
+NMAC - Rp, 19.35.7.7 NMAC, 1/31/2014; A, 12/15/2014; A, 2/9/2021] 
+ 19.35.7.8 �������������� IMPORTATION OF
+LIVE NON-DOMESTICATED ANIMALS: � It
+shall be unlawful to import any live non-domesticated animal into New Mexico
+without first obtaining appropriate permit(s) issued by the director except
+those animals identified within the species importation list group I. � Permits will only be issued when all
+application requirements and provisions have been met. � Failure to adhere to or violation of permit
+provisions may result in the applicant/importer becoming ineligible for
+importation(s). � The pendency or
+determination of any administrative action or the pendency or determination of
+a criminal prosecution for the same is not a bar to the other. 
+ [19.35.7.8
+NMAC � Rp, 19.35.7.8 NMAC, 1/31/2014; A, 12/15/2014; A, 2/9/2021] 
+ 19.35.7.9 �������������� [Reserved] 
+ 19.35.7.10 ������������ DIRECTOR�S AUTHORITY: 
+ ��������������� A. ����������� Species
+importation list: � The director of the
+New Mexico department of game and fish shall develop a species importation
+list. � The species importation list shall
+be established, maintained, updated or amended by the director as species
+information and concerns become available and are identified. � The species importation list shall be grouped
+into the following minimum importation �groups� based on the following
+criteria. 
+ ������������������������������� (1) ���������� Species
+importation list group I are designated semi-domesticated animals and do not
+require an importation permit. 
+ ������������������������������� (2) ���������� Species
+importation list group II may be for live non-domesticated animals that are not
+known to be either invasive or dangerous and do not present a known risk to the
+health, safety or well-being of the public, domestic livestock or to native
+wildlife and their habitats. 
+ ������������������������������� (3) ���������� Species
+importation list group III may be for live non-domesticated animals that
+present minimal or manageable concerns that will require specific provisions
+that must be met prior to issuing an importation permit to address health,
+safety or well-being of the public, domestic livestock or to native wildlife
+and their habitats. 
+ ������������������������������� (4) ���������� Species
+importation list group IV may be for live non-domesticated animals that are
+considered dangerous, invasive, undesirable, state or federal listed
+threatened, endangered, a furbearer or any other species of concern as
+identified by the director. � The
+importation of these species are prohibited for the general public but may be
+allowed for, scientific study, department approved restoration and recovery
+plans, zoological display, temporary events/entertainment, use as service
+animal or by a qualified expert. 
+ ������������������������������� (5) ���������� Any
+species of live non-domesticated animal not currently on the species
+importation list will be designated group IV until such time as another
+determination is made by the director. 
+ ��������������� B. ����������� Non-domesticated
+animal importation: � The director may, in
+times of animal health emergency, suspend all importation activities or suspend
+importation of selected taxa for indefinite periods of time to protect wild and
+domestic animals from infectious disease epidemics and to protect the people of
+New Mexico from zoonoses. 
+ ��������������� C. ����������� Non-domesticated
+animal intrastate movement: � the director
+may suspend intrastate movement in an animal health emergency. 
+ ��������������� D. ����������� Eligibility
+requirements for importation (cooperative compliance): � The director may declare any applicant or
+importer who fails to comply with any importation conditions or provisions as
+ineligible for future importation permits or ability to supply animals into New
+Mexico until all permit violations are corrected and the appropriate
+certificate of compliance fees are paid in full. 
+ ������������������������������� (1) ���������� The
+director may require an applicant to obtain a certificate of compliance prior
+to becoming eligible to import any live non-domesticated animals and may impose
+additional corrective measures in those instances where violations of this
+provision have been identified. 
+ ������������������������������� (2) ���������� The
+director may impose a cease-and-desist order that makes an applicant ineligible
+to apply for an importation permit for up to a year in those instances where
+corrective measures have not been implemented or repeated violations have
+occurred. 
+ ��������������� E. ����������� Certificate
+of compliance fee: � The director shall
+determine the appropriate certificate of compliance fee per violation not to
+exceed $500.00 based on the following criteria: 
+ ������������������������������� (1) ���������� department
+expenses including manpower, travel, inspection and compliance monitoring; 
+ ������������������������������� (2) ���������� department
+office expenses including mailing, shipping, certificate issuance; 
+ ������������������������������� (3) ���������� animal
+care, treatment, housing and feeding; 
+ ������������������������������� (4) ���������� other
+miscellaneous expenses. 
+ ��������������� F. ����������� Qualified
+expert: � the director shall determine the
+process and the requirements for a person to be designated a qualified expert
+for each applicable species. 
+ ������������������������������� (1) ���������� The
+director may require an applicant to provide specific qualifications including,
+but not limited to the following: � professional references, experience, training,
+education and facility specifications. 
+ ������������������������������� (2) ���������� The
+determination to approve or deny a qualified expert designation by the director
+is final and is not subject to appeal. 
+ ��������������� G. ����������� Application
+notices and documents. 
+ ������������������������������� (1) ���������� The
+director shall determine required forms, applications and documents to carry
+out the provisions of this rule. 
+ ������������������������������� (2) ���������� The
+director shall determine noticing and posting provisions to carry out the
+provisions of this rule. 
+ ������������������������������� (3) ���������� The
+director shall determine the permit and application conditions and requirements
+to carry out the provisions of this rule. 
+ ��������������� H. ����������� The
+director shall determine the process and requirements for re-entry into the
+state. 
+ ��������������� I. ������������ The
+director shall determine the process for expediting applications and permits
+including an additional application fee of $25.00. 
+ [19.35.7.10 NMAC - Rp, 19.35.7.10 NMAC, 1/31/2014] 
+ 19.35.7.11 ������������ [Reserved] 
+ 19.35.7.12 ������������ APPLICATION FOR IMPORTATION: 
+ ��������������� A. ����������� Any
+applicant requesting an importation permit for non-domesticated animals must
+submit the following information with the application: 
+ ������������������������������� (1) ���������� a
+containment or confinement plan indicating where and how the species will be
+maintained; 
+ ������������������������������� (2) ���������� a
+current and valid certificate from an accredited veterinarian certifying that
+each animal or rearing facility of origin has been inspected and is in good
+general health, disease free or that each animal or rearing facility of origin
+tests disease free for any specific disease(s) following the testing
+requirements and procedures as identified by the department during the
+application process, except; 
+ (a) the department may approve an animal
+supplier that is currently enrolled in an accredited animal breeding program or
+facility health monitoring standards such as NPIP, AZA, or other government
+sanctioned program; 
+ (b) the department may approve detailed and
+verifiable facility of origin health monitoring plans and records to be
+submitted by an organization(s) in lieu of a health or rearing facility
+inspection certificate from an accredited veterinarian; 
+ ������������������������������� (3) ���������� proof
+from the county and city into which the animal will be imported and held that
+possession of the animal is allowed; 
+ ������������������������������� (4) ���������� proof
+that all necessary federal permits have been obtained; 
+ ������������������������������� (5) ���������� proof
+that the requested species does not possess or have the immediate potential to
+carry infectious or contagious diseases; and 
+ ������������������������������� (6) ���������� confirmation
+by the applicant or person in authority representing the applicant agreeing to
+any conditions and provisions listed on the respective permit; and 
+ ������������������������������� (7) ���������� any
+importing person or entity must notify the department of game and fish within
+24 hours of any disease indications or symptoms that manifest themselves among
+the imported animals. 
+ ��������������� B. ����������� Additional
+conditions for the importation of a dangerous animal; applicant shall agree to
+the following provisions before an importation permit is approved: 
+ ������������������������������� (1) ���������� enter
+into a department approved written agreement releasing the department from
+liability; 
+ ������������������������������� (2) ���������� agree
+to meet all department approved posted warning requirements; 
+ ������������������������������� (3) ���������� agree
+to provide a department approved written warning to any person receiving such
+animal; 
+ ������������������������������� (4) ���������� government
+agencies or other entities as designated by the director may be exempted from
+the liability or warning requirements in this subsection. 
+ ��������������� C. ����������� All
+application fees are non-refundable. 
+ [19.35.7.12 NMAC - Rp, 19.35.7.12 NMAC, 1/31/2014] 
+ 19.35.7.13 ������������ TEMPORARY IMPORTATION: � Importation into the state for exhibition,
+advertising, movies etc. � may be approved
+on an expedited basis provided that the animal will not be in the state for a
+period of more than 30 days. � Specific
+requirements for the animals will be listed on the application and permit. � Specific requirements for importation may be
+listed on the application. � The
+department will have the final authority to list all conditions on the permit
+that will be required prior to final approval. 
+ [19.35.7.13 NMAC - Rp, 19.35.7.13 NMAC, 1/31/2014] 
+ 19.35.7.14 ������������ IMPORTATION OF
+CERTAIN FISH OR FISH EGGS INTO NEW MEXICO: �
+ All fish species or eggs of the families salmonidae, esocidae, moronidae,
+ictaluridae, centrarchidae, percidae, and the genus oreochromis may be imported
+into the state provided that all conditions stated on the application and
+permit are met, including the following: 
+ ��������������� A. ����������� the name of
+department approved supplier pursuant to this regulation; 
+ ��������������� B. ����������� description of
+water into which fish will be released is provided; description must include:
+legal owner of water; legal description of location (township, range, section);
+county; name of water; size of water (surface acres-lake; miles-stream); source
+and discharge of water; major use of water; a map of sufficient size and detail
+to allow the water to be located by someone unfamiliar with the area shall be
+included; 
+ ��������������� C. ����������� species, size,
+pounds, and number of fish to be imported will be specified; 
+ ��������������� D. ����������� purpose of
+importation will be specified; 
+ ��������������� E. ����������� full description
+of person or persons requesting importation, to include: name, address,
+telephone number, name of contact person; 
+ ��������������� F. ����������� GPS coordinates
+(latitude and longitude in degree decimal minutes (DDM) using WGS 84 datum for
+each location where fish are stocked. 
+ ��������������� G. ����������� Oreochromis
+niloticus and oreochromis mossambicus may be imported into the state provided
+that: 
+ ������������������������������� (1) ���������� All
+requirements set forth in the application and on the permit are met. 
+ ������������������������������� (2) ���������� All
+other regulatory requirements, including those set forth herein, are met. 
+ [19.35.7.14
+NMAC - Rp, 19.35.7.14 NMAC, 1/31/2014; A, 10/15/2015; A, 2/9/2021] 
+ 19.35.7.15 ������������ APPROVED
+SUPPLIERS OF FISH OR FISH EGGS FOR IMPORTATION INTO NEW MEXICO: 
+ ��������������� A. ����������� The department
+will maintain a listing of approved fish suppliers. 
+ ��������������� B. ����������� All approved
+fish suppliers or their agent must carry a department-issued copy of the
+importation permit while transporting fish to the approved release site in New
+Mexico. 
+ ��������������� C. ����������� Approved supplier
+or their agent must notify the department of intended port of entry for
+importation of fish or fish eggs into New Mexico. 
+ ��������������� D. ����������� Approved
+supplier may be required to provide a presence/absence disease history (e.g.,
+furunculosis bacterium, enteric redmouth bacterium, proliferative kidney
+disease, ceratomyxosis of salmonids, etc.) of the hatchery facility if
+requested by the New Mexico department of game and fish. 
+ ��������������� E. ����������� Approved
+suppliers shall meet the criteria and provide pathogen-free certification as specified
+herein. 
+ ��������������� F. ����������� Salmonids: 
+ ������������������������������� (1) ���������� For
+the infectious hematopoietic necrosis virus (IHNV), infectious pancreatic
+necrosis virus (IPNV), viral hemorrhagic septicemia (VHS), and bacterial kidney
+disease (BKD). 
+ ����������������������������������������������� (a) ���������� Disease
+testing will be conducted by another state wildlife agency, United States fish
+and wildlife service; USDA certified source or other source approved by the New
+Mexico department of game and fish. 
+ ����������������������������������������������� (b) ���������� Disease
+testing of fish must use American fisheries society (AFS) blue book or meet OIE
+(office international des epizooties) standards. 
+ ����������������������������������������������� (c) ���������� Disease
+testing will be conducted on an annual basis; annual inspection must have
+occurred within the previous 12 months of application date. 
+ ����������������������������������������������� (d) ���������� Sixty
+fish per lot will be sampled. 
+ ����������������������������������������������� (e) ���������� For
+all lots of fish not originating on facility, supplier must provide a
+historical account documenting fish were reared only at New Mexico department
+of game and fish approved aquaculture facilities. 
+ ������������������������������� (2) ���������� For
+the whirling disease pathogen. 
+ ����������������������������������������������� (a) ���������� Disease
+testing will be conducted by another state wildlife agency, United States fish
+and wildlife service; USDA certified source or other source approved by the New
+Mexico department of game and fish. 
+ ����������������������������������������������� (b) ���������� Sixty
+fish per lot will be sampled. 
+ ����������������������������������������������� (c) ���������� Inspection
+will include at least one lot of susceptible salmonids (rainbow trout,
+cutthroat trout, rainbow-cutthroat hybrids) which has been on the hatchery's
+water source for at least 10 months. � If
+no lot of susceptible salmonids has been on the hatchery�s water source for at
+least 10 months, then inspection shall include at least one lot of susceptible
+salmonid at least six months of age or older. 
+ ����������������������������������������������� (d) ���������� Disease
+testing will be conducted on an annual basis. �
+ Annual inspection must have occurred within the previous 12 months of
+application date. 
+ ����������������������������������������������� (e) ���������� Positive
+findings of whirling disease by pepsin-trypsin digestion shall be considered
+presumptive; positive findings of whirling disease by histology shall be
+considered confirmatory. 
+ ����������������������������������������������� (f) ����������� For
+all lots of fish not originating on facility, supplier must provide a
+historical account documenting fish were reared only at New Mexico department
+of game and fish approved aquaculture facilities. 
+ ����������������������������������������������� (g) ���������� Supplier
+may be required to provide a whirling disease history of the hatchery facility
+if requested by the New Mexico department of game and fish. 
+ ����������������������������������������������� (h) ���������� Presumptive
+findings: Any presumptive findings of disease with no confirmatory testing
+shall be deemed a positive finding of the disease. 
+ ����������������������������������������������� (i) ����������� Positive
+findings of disease: Any facility deemed to have tested positive, by
+confirmatory findings or presumptive findings without confirmatory testing,
+under this rule shall be barred from importation into the state of New Mexico
+until the facility is shown to be pathogen free for a minimum of two
+consecutive years and has met all other requirements. 
+ ����������������������������������������������� (j) ����������� Renovated
+facilities: A facility that has been deemed positive under this rule and has
+undergone complete renovation may apply for importation privileges as a new
+facility once it has had at least one annual inspection and has met all other
+requirements. � Complete renovation for
+the purposes of this rule shall be defined as a facility that has: 
+ ��������������������������������������������������������������� (i) ����������� closed,
+secured, and sanitized all water sources; 
+ ��������������������������������������������������������������� (ii) ���������� confined
+all water conveyance to closed sealed pipes; and 
+ ��������������������������������������������������������������� (iii) �������� constructed
+all rearing spaces out of hard surfaced materials. Proof of renovation must be
+provided with the application for importation privileges. � On-site inspection of the facility after
+renovation may be required prior to authorization to import. 
+ ��������������� G. ����������� Warm water fish: 
+ ������������������������������� (1) ���������� Disease
+testing will be conducted by another state wildlife agency, United States fish
+and wildlife service; USDA certified source or other source approved by the New
+Mexico department of game and fish. 
+ ������������������������������� (2) ���������� Disease
+testing of fish must use American Fisheries Society (AFS) blue book procedures
+or meet OIE standards. 
+ ������������������������������� (3) ���������� Disease
+testing will be conducted on an annual basis. �
+ Annual inspection must have occurred within the previous 12 months of
+application date. 
+ ������������������������������� (4) ���������� Sixty
+warm water fish per lot shall be tested for viruses and bacteria. 
+ ������������������������������� (5) ���������� Approved
+supplier will document whether fish on the facility have ever been diagnosed
+with channel catfish virus. 
+ ��������������� H. ����������� Orechromis
+niloticus and oreochromis mossambicus shall be certified as to species and as
+either all male or otherwise sterile by a qualified independent laboratory or
+by other means approved by the director. �
+ Oreochromis niloticus and oreochromis mossambicus capable of
+reproduction and certified as to species by a qualified, independent laboratory
+or by other means approved by the director may be approved for import only to a
+qualified expert. 
+ ��������������� I. ������������ Triploid grass
+carp: A notarized certificate of triploidy issued by another state wildlife
+agency, United States fish and wildlife service, USDA certified source or other
+source approved by the New Mexico department of game and fish must be provided
+for all grass carp imported into New Mexico. 
+ ��������������� J. ������������ Approved
+suppliers shall provide signed written assurance to the department that the
+fish rearing facilities are free of aquatic nuisance species (ANS) and aquatic
+invasive species (AIS). � Failure to
+provide this assurance shall be reason to deny importation privileges. � Approved suppliers shall be liable for any
+introduction of ANS or AIS caused by their actions. 
+ [19.35.7.15
+NMAC - Rp, 19.35.7.15 NMAC, 1/31/2014; A, 10/15/2015; A, 2/9/2021] 
+ 19.35.7.16 ������������ [Reserved] 
+ 19.35.7.17 ������������ IMPORTATION CONDITIONS FOR THE FAMILIES
+BOVIDAE, ANTILOCAPRIDAE AND CERVIDAE: � All live protected wildlife species of the
+families bovidae, antilocapridae, and cervidae imported in the state of New
+Mexico shall meet the following criteria. 
+ ��������������� A. ����������� Be
+permanently identified with any 2 of the following devices, one of which must
+be an official animal identification. �
+ All identification data shall be registered with the department: 
+ ������������������������������� (1) ���������� implanted
+electronic identification device. 
+ ������������������������������� (2) ���������� ear
+tag with park identification number. 
+ ������������������������������� (3) ���������� tamper-proof
+ear tag with imprinted national identification number. 
+ ������������������������������� (4) ���������� USDA
+metal ear tags. 
+ ��������������� B. ����������� Be
+examined by an accredited veterinarian prior to importation. � Each animal shall be accompanied by a
+pre-approved health certificate, certifying a disease-free status. 
+ ��������������� C. ����������� Test
+negative for brucellosis. � Serum testing
+shall be done not more than 30 days prior to importation. � All serum samples shall be tested by a
+cooperative state federal brucellosis laboratory. 
+ ��������������� D. ����������� Test
+negative for bovine tuberculosis not more than 90 days prior to importation. � Animals to be imported must originate from a
+herd that had a negative whole-herd tuberculosis test not more than 12 months
+prior to importation or have a current �tuberculosis free herd� certificate
+issued from the state of origin through a USDA accreditation program. � Bovine tuberculosis testing must be performed
+with the current USDA approved method and be conducted by a federally
+accredited veterinarian. � Exception: � Wild sheep are exempt from this testing
+requirement. 
+ ��������������� E. ����������� Only
+cervids enrolled and in the state CWD herd certification program and from a
+herd that has achieved certified status, and that does not show clinical signs
+associated with CWD may be imported into New Mexico. 
+ ������������������������������� (1) ���������� No
+cervid shall be allowed to enter the state if it has had any contact with a CWD
+suspect, exposed, positive, trace-forward or trace-back animal within 60 months
+prior to time of importation. 
+ ������������������������������� (2) ���������� No
+cervid coming through mixed herd sales or auctions shall be allowed to enter
+the state. � Only animals from closed
+sales may be imported. 
+ ������������������������������� (3) ���������� No
+cervid shall enter the state in a conveyance that has held CWD suspect,
+exposed, positive, trace-forward or trace-back animals. 
+ ��������������� F. ����������� All
+elk to be imported into the state of New Mexico shall be tested for genetic
+purity. � Only Rocky Mountain elk (Cervus elaphus nelsoni) will be allowed
+to be imported into the state of New Mexico. � Any elk showing red deer hybridization or
+hybridization of other elk subspecies will not be allowed into the state. � All testing shall be done ONLY by a New Mexico
+department of game and fish approved laboratory. 
+ ��������������� G. ����������� All
+progeny from female elk impregnated prior to importation into New Mexico shall
+be tested for hybridization of red deer and other elk subspecies. 
+ ��������������� H. ����������� White-tailed
+deer subspecies to be imported into the state of New Mexico must have
+originated and must exist west of the 100 th meridian and test
+negative for meningeal worm. 
+ ��������������� I. ������������ Be
+permitted in compliance with Subsection A of 19.31.1.10 NMAC. 
+ ������������������������������� (1) ���������� Cost
+of testing: � All testing will be at
+owner's expense. 
+ ������������������������������� (2) ���������� After
+entering the state, all animals shall be held in a separate facility by the
+owner and/or importer. � All imported
+animals, prior to release, may be inspected at any time by a department of game
+and fish official or designee. 
+ ������������������������������� (3) ���������� Owners/importers
+must notify the department of game and fish within 24 hours of any disease
+indications or symptoms that manifest themselves among the imported animals
+prior to final inspection. 
+ ������������������������������� (4) ���������� Animals
+shall be held in isolation in the event of an animal health emergency as
+declared by the director. 
+ ������������������������������� (5) ���������� Final
+inspection / permit validation: � No
+animals may be released from the separate facility into the class A park or
+other enclosure until the owner has received a release approval signed by a
+department of game and fish official. 
+ [19.35.7.17 NMAC - Rp, 19.35.7.17 NMAC, 1/31/2014] 
+ 19.35.7.18 ������������ INTRASTATE TRANSPORTATION FOR THE FAMILIES
+BOVIDAE, ANTILOCAPRIDAE AND CERVIDAE: 
+ ��������������� A. ����������� Transporting
+requirements: � All live cervids
+transported within the state of New Mexico shall be legally possessed and
+permanently identified with any 2 of the following devices, one of which must
+be an official animal identification. �
+ All identification data shall be registered with the department: 
+ ������������������������������� (1) ���������� implanted
+electronic identification device. 
+ ������������������������������� (2) ���������� ear
+tag with park identification number. 
+ ������������������������������� (3) ���������� tamper-proof
+ear tag with imprinted national identification number. 
+ ������������������������������� (4) ���������� USDA
+metal ear tags. 
+ ��������������� B. ����������� The
+director may suspend intrastate movement in an animal health emergency. 
+ [19.35.7.18 NMAC- Rp, 19.35.7.18 NMAC, 1/31/2014] 
+ 19.35.7.19 ������������ RELEASE FROM
+CAPTIVITY FOR IMPORTED ANIMALS: � No
+person shall release from captivity an imported animal into New Mexico except
+by obtaining a release permit from the director. � The transfer of an imported animal from one
+person to another person does not constitute a release from captivity. 
+ ��������������� A. ����������� Prior to
+approval by the director an applicant must: 
+ ������������������������������� (1) ���������� submit
+a plat of the release area; 
+ ������������������������������� (2) ���������� submit
+verification that landowners, tribal officials, state officials, federal
+officials and county officials that may be directly affected by the release
+have been notified of the potential release in writing and have been given 20
+days to respond to the release; responses must be submitted with the
+application; it is the responsibility of the applicant to notify the above and
+submit responses to the department; failure to notify as indicated herein or to
+submit responses will result in the application being rejected until this
+condition is met and any compliance fees are paid; 
+ ������������������������������� (3) ���������� demonstrate
+that the intended release is provided for in state or federal resource or
+species management plans or strategies (CWCS). 
+ ��������������� B. ����������� Any individual
+or group of isolated animals in which signs of infectious or contagious disease
+is evident will not be released, will remain in isolation, and, at the
+recommendation of the state veterinarian: 
+ ������������������������������� (1) ���������� the
+animals shall be treated and restored to health until they no longer pose a
+threat of infection to wild, free ranging wildlife or to other captive animals
+in the facility; or 
+ ������������������������������� (2) ���������� the
+isolated animals shall be destroyed and remains will be disposed in a manner
+conforming to state, federal or local rules and regulations. 
+ ��������������� C. ����������� The director
+shall not approve any release permit that conflicts with current conservation
+management. 
+ [19.35.7.19
+NMAC - Rp, 19.35.7.19 NMAC, 1/31/2014; A, 12/15/2014; A, 2/9/2021] 
+ 19.35.7.20 ������������ [Reserved] 
+ 19.35.7.21 ������������ DENIAL OF PERMIT APPLICATION: � The appropriate department division chief
+shall notify the applicant of a denial to import non-domesticated animals in
+writing. � A denied application will not
+be further considered unless the applicant is granted an allowance through the
+director�s review or the commission appeal process. 
+ [19.35.7.21 NMAC - Rp, 19.35.7.21 NMAC, 1/31/2014] 
+ 19.35.7.22 ������������ IMPORTATION PERMIT APPEAL PROCESS: � The denial of an importation permit may only
+be set aside if each step in the application and appeal process is adhered to sequentially
+and the appeal is conducted in accordance with the following procedures. 
+ ��������������� A. ����������� Director�s
+review: � any applicant whose importation
+permit application has been denied may request a review by the director in
+accordance with the following procedures. 
+ ������������������������������� (1) ���������� The
+applicant must submit by certified mail a written request to the director
+within 30 days of denial. 
+ ������������������������������� (2) ���������� A
+request for the director�s review must contain the reason for the objection. 
+ ������������������������������� (3) ���������� The
+director will consider any additional evidence and information that was not
+previously considered in the initial denial. 
+ ������������������������������� (4) ���������� The
+director will consider any conflicts with native wildlife, threats to human
+health, domestic animals or livestock and qualified expert designation when
+making a determination. 
+ ������������������������������� (5) ���������� The
+designation within a specified group on the director�s species importation list
+cannot be used as the basis for review or appeal. 
+ ������������������������������� (6) ���������� The
+director shall make a determination and send the applicant his decision within
+45 days. 
+ ������������������������������� (7) ���������� The
+determination to approve or deny a qualified expert designation by the director
+is final and is not subject to appeal. 
+ ��������������� B. ����������� Commission
+appeal: � any applicant may appeal the
+decision by the director in accordance with the following procedures. 
+ ������������������������������� (1) ���������� The
+applicant must submit by certified mail a written appeal to the chairman of the
+state game commission within 20 days of denial by the director. 
+ ������������������������������� (2) ���������� The
+appeal to the chairman must contain the reason for the objection. 
+ ��������������� C. ����������� Basis
+for decision: � The commission may set
+aside the decision of the director only if; 
+ ������������������������������� (1) ���������� the
+commission determines that the decision of the director was arbitrary or
+capricious; 
+ ������������������������������� (2) ���������� the
+decision of the director was not based on law or regulation; 
+ ������������������������������� (3) ���������� the
+appellant provides additional data or proves significant evidence that
+contradicts the data of the department; 
+ ������������������������������� (4) ���������� the
+decision of the commission shall be final. 
+ ��������������� D . ����������� An
+appeal filed with the commission will be heard at the next scheduled commission
+meeting subject to agenda item availability and related time constraints. 
+ [19.35.7.22 NMAC- Rp, 19.35.7.22 NMAC, 1/31/2014] 
+ 19.35.7.23 ������������ EXCEPTIONS: � Employees of the New Mexico department of game
+and fish and other state agencies acting in the course of their official duties
+are not required to have an importation permit. � However, all disease testing requirements
+specified in this rule must be met prior to importation. 
+ [19.35.7.23 NMAC- Rp, 19.35.7.23 NMAC, 1/31/2014] 
+ HISTORY
+OF 19.35.7 NMAC: 
+ NMAC History: 
+ 19 NMAC 31.1, Hunting and Fishing - Manner and Method of Taking, filed
+3/1/1995. 
+ 19.35.7 NMAC, Importation of Live Non-Domesticated Animals, Birds and
+Fish, filed 3/17/2000. 
+ History of Repealed Material: 
+ 19.35.7 NMAC, Importation of Live Non-Domesticated Animals, Birds and
+Fish, filed 3/17/2000 - Repealed effective 7/9/2010. 
+ 19.35.7 NMAC, Importation of Live Non-Domesticated Animals, Birds and
+Fish, filed 7/9/2010 - Repealed effective 1/31/2013. 
