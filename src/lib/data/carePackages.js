@@ -4,8 +4,14 @@
 //
 // status: 'live' has a real Gumroad product (image + gumroadUrl set) and shows
 // in the buyable grid. status: 'coming-soon' has neither yet - it renders in
-// the teaser row instead. Flip to 'live' and fill in image/gumroadUrl once the
-// Gumroad listing is actually published, matching the pattern below.
+// the teaser row with `cover` (the guide hero under public/assets/guides) in
+// place of the Gumroad cover art. Flip to 'live' and fill in image/gumroadUrl
+// once the Gumroad listing is actually published, matching the pattern below.
+//
+// pages and version on a coming-soon entry describe the current build in
+// content/CAREPACKAGE Guides/rebuilt, which is what will be listed. On a live
+// entry they describe the edition a buyer receives today, which can lag the
+// current build until the listing is refreshed.
 export const CARE_PACKAGES = [
   {
     id: 'bearded-dragon',
@@ -195,8 +201,9 @@ export const CARE_PACKAGES = [
     emoji: '🐍',
     status: 'coming-soon',
     price: '$8.99',
-    pages: 34,
-    version: '2.1',
+    pages: 35,
+    version: '2.2',
+    cover: '/assets/guides/ball-python.jpg',
     blurb: 'Complete 34-page printable guide with thermostat and probe placement, the humidity range that decides everything, a full prey chart, health triage, and printable owner tools.',
     bullets: [
       'Housing, temperature and humidity, substrate, handling, feeding by age, and enrichment in one guide',
@@ -212,8 +219,9 @@ export const CARE_PACKAGES = [
     emoji: '🐠',
     status: 'coming-soon',
     price: '$8.99',
-    pages: 36,
-    version: '2.0',
+    pages: 37,
+    version: '2.2',
+    cover: '/assets/guides/betta-fish.jpg',
     blurb: 'Complete 36-page printable guide with tank and heater targets, the water numbers that actually matter, a full fishless cycling walkthrough, health triage, and owner checklists.',
     bullets: [
       'Tank, heater and filter, water parameters, cycling and water changes, diet, and enrichment in one guide',
@@ -229,8 +237,9 @@ export const CARE_PACKAGES = [
     emoji: '🐹',
     status: 'coming-soon',
     price: '$8.99',
-    pages: 22,
-    version: '1.0',
+    pages: 37,
+    version: '2.2',
+    cover: '/assets/guides/hamster.jpg',
     blurb: 'Complete 22-page printable guide with the floor space and bedding depth the starter kit gets wrong, species differences, wet tail triage, and owner checklists.',
     bullets: [
       'Enclosure size and bedding depth, the wheel and sand bath, species differences and handling, diet, and enrichment in one guide',
@@ -246,8 +255,9 @@ export const CARE_PACKAGES = [
     emoji: '🐰',
     status: 'coming-soon',
     price: '$8.99',
-    pages: 39,
-    version: '2.0',
+    pages: 40,
+    version: '2.1',
+    cover: '/assets/guides/rabbit.jpg',
     blurb: 'Complete 39-page printable guide with the real space standard, unlimited hay and why it is the whole diet, three pages on GI stasis, bonding a pair, and owner checklists.',
     bullets: [
       'Housing and space, flooring and litter training, handling, diet by life stage, and enrichment in one guide',
@@ -263,30 +273,14 @@ export const CARE_PACKAGES = [
     emoji: '🕷️',
     status: 'coming-soon',
     price: '$8.99',
-    pages: 43,
-    version: '2.0',
+    pages: 44,
+    version: '2.2',
+    cover: '/assets/guides/tarantula.jpg',
     blurb: 'Complete 43-page printable guide with why the enclosure is low and wide, substrate depth by species type, the fasting that is normal, the dehydration that is not, molting start to finish, and a safe rehousing method.',
     bullets: [
       'Enclosure shape and substrate, humidity and ventilation, why handling is off the table, feeding by life stage, and enrichment in one guide',
       'Health section with red flags, dehydration, molting start to finish, and falls, mites, oral nematodes and DKS guidance',
       'Setup checklist, budget and shopping list, first 90 days checklist, symptom quick reference, molt and feeding logs, and a routine',
-    ],
-  },
-  {
-    id: 'corn-snake',
-    animal: 'Corn Snake',
-    name: 'Corn Snake Care Package',
-    badge: 'Reptile',
-    emoji: '🐍',
-    status: 'coming-soon',
-    price: '$8.99',
-    pages: 22,
-    version: '1.0',
-    blurb: 'Complete 22-page printable guide with the enclosure size a preference test supports, the thermostat rule, feeding by weight, health triage, and owner checklists.',
-    bullets: [
-      'Enclosure and the thermostat rule, temperature and humidity, substrate and handling, feeding by age and weight, and enrichment in one guide',
-      'Health section with red flags, respiratory infection and scale rot, mites, mouth rot and retained shed, and regurgitation, refusal and brumation guidance',
-      'Setup checklist, budget and shopping list, first 30 days checklist, symptom quick reference, owner log, and a daily and weekly routine',
     ],
   },
 ];

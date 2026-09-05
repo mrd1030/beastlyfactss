@@ -15,8 +15,27 @@ const HOW_IT_WORKS = [
   { title: 'Not a vet replacement', body: "Each package is a husbandry reference, not a substitute for a vet familiar with your pet's species." },
 ];
 
+// Badge values in carePackages.js map onto the catalog sections below. A new
+// badge that is not listed here lands in the last group rather than vanishing.
+const GROUPS = [
+  { id: 'reptiles', label: 'Reptiles', badges: ['Reptile'] },
+  { id: 'birds', label: 'Birds', badges: ['Bird'] },
+  { id: 'fish-and-amphibians', label: 'Fish and amphibians', badges: ['Fish', 'Amphibian'] },
+  { id: 'small-mammals', label: 'Small mammals', badges: ['Mammal'] },
+  { id: 'invertebrates', label: 'Invertebrates', badges: ['Invertebrate'] },
+];
+
+function groupPackages(list) {
+  const known = new Set(GROUPS.flatMap(g => g.badges));
+  return GROUPS.map((g, i) => ({
+    ...g,
+    items: list.filter(pkg => g.badges.includes(pkg.badge) || (i === GROUPS.length - 1 && !known.has(pkg.badge))),
+  })).filter(g => g.items.length > 0);
+}
+
 export default function CarePackagesStore() {
   const live = CARE_PACKAGES.filter(pkg => pkg.status === 'live');
+  const groups = groupPackages(live);
   const comingSoon = CARE_PACKAGES.filter(pkg => pkg.status === 'coming-soon');
 
   return (
@@ -25,7 +44,6 @@ export default function CarePackagesStore() {
         <title>{TITLE}</title>
         <meta name="description" content={DESCRIPTION} />
         <link rel="canonical" href="https://beastlyfacts.com/care-packages/store/" />
-        <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
@@ -47,7 +65,7 @@ export default function CarePackagesStore() {
             </h1>
             <p className="font-body text-sm text-muted-foreground max-w-xl">
               Printable PDF owner manuals built from the same research standards as the rest of the site.
-              Each link opens the product page in a new tab, so you keep your spot here.
+              Every package links to its product page in a new tab, and to the free guide it was built from.
             </p>
           </motion.div>
           <CarePackagesNav />
@@ -63,13 +81,25 @@ export default function CarePackagesStore() {
         >
           <div className="mb-4">
             <h2 className="font-display font-bold text-xl text-foreground">Care packages</h2>
-            <p className="text-sm text-muted-foreground font-body">{`${live.length} package${live.length === 1 ? '' : 's'}, $8.99 each. One time purchase, yours to keep.`}</p>
+            <p className="text-sm text-muted-foreground font-body">{`${live.length} package${live.length === 1 ? '' : 's'}, $8.99 each. One time purchase, yours to keep, and every corrected edition is a free re-download.`}</p>
+            <nav aria-label="Catalog sections" className="flex flex-wrap gap-2 mt-3">
+              {groups.map(g => (
+                <a key={g.id} href={`#${g.id}`} className="px-3 py-1 rounded-full text-xs font-body font-semibold bg-card border border-border text-muted-foreground hover:text-foreground">
+                  {`${g.label} (${g.items.length})`}
+                </a>
+              ))}
+            </nav>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {live.map(pkg => (
-              <CarePackageCard key={pkg.id} pkg={pkg} variant="full" />
-            ))}
-          </div>
+          {groups.map(g => (
+            <div key={g.id} id={g.id} className="mt-6 scroll-mt-24">
+              <h3 className="font-display font-bold text-base text-foreground mb-3">{g.label}</h3>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {g.items.map(pkg => (
+                  <CarePackageCard key={pkg.id} pkg={pkg} variant="full" />
+                ))}
+              </div>
+            </div>
+          ))}
         </motion.section>
 
         {comingSoon.length > 0 && (
@@ -81,7 +111,7 @@ export default function CarePackagesStore() {
           >
             <div className="mb-4">
               <h2 className="font-display font-bold text-xl text-foreground">Next in the series</h2>
-              <p className="text-sm text-muted-foreground font-body">Being researched and written now. Each one goes on sale once it clears the same review as the free guides.</p>
+              <p className="text-sm text-muted-foreground font-body">Rebuilt on the current template and cross-checked against the site's articles. Each one is listed once the Gumroad product is set up. The free guide for each species is live now.</p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {comingSoon.map(pkg => (

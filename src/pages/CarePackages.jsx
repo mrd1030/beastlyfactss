@@ -18,6 +18,10 @@ const FEATURES = [
 export default function CarePackages() {
   const live = CARE_PACKAGES.filter(pkg => pkg.status === 'live');
   const comingSoon = CARE_PACKAGES.filter(pkg => pkg.status === 'coming-soon');
+  // The landing shows a taste; the store at /care-packages/store/ is the full
+  // catalog, grouped by class. Featured is simply the first three live entries
+  // in carePackages.js, so reordering that file reorders this row.
+  const featured = live.slice(0, 3);
 
   return (
     <div className="min-h-screen">
@@ -67,38 +71,29 @@ export default function CarePackages() {
         >
           <div className="flex items-end justify-between gap-3 mb-4">
             <div>
-              <h2 className="font-display font-bold text-xl text-foreground">Care packages</h2>
-              <p className="text-sm text-muted-foreground font-body">Opens the product page in a new tab.</p>
+              <h2 className="font-display font-bold text-xl text-foreground">A few from the catalog</h2>
+              <p className="text-sm text-muted-foreground font-body">{`${live.length} packages on sale, $8.99 each, and ${comingSoon.length} more rebuilt and waiting to be listed.`}</p>
             </div>
             <Link to="/care-packages/store/" className="text-sm font-body font-semibold text-secondary hover:underline flex-shrink-0">
-              View full store &rarr;
+              {`See all ${live.length} in the store`} &rarr;
             </Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {live.map(pkg => (
+            {featured.map(pkg => (
               <CarePackageCard key={pkg.id} pkg={pkg} />
             ))}
           </div>
+          <div className="mt-6 flex flex-wrap items-center justify-between gap-3 bg-card border border-border rounded-2xl p-5">
+            <p className="text-sm text-muted-foreground font-body">Browse by class: reptiles, birds, fish and amphibians, small mammals, invertebrates.</p>
+            <Link
+              to="/care-packages/store/"
+              className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-body font-bold text-sm hover:opacity-90 transition-opacity flex-shrink-0"
+            >
+              Open the store
+            </Link>
+          </div>
         </motion.section>
 
-        {comingSoon.length > 0 && (
-          <motion.section
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.12 }}
-            className="mt-10"
-          >
-            <div className="mb-4">
-              <h2 className="font-display font-bold text-xl text-foreground">Next in the series</h2>
-              <p className="text-sm text-muted-foreground font-body">Being researched and written now. Each one goes on sale once it clears the same review as the free guides.</p>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {comingSoon.map(pkg => (
-                <CarePackageCard key={pkg.id} pkg={pkg} />
-              ))}
-            </div>
-          </motion.section>
-        )}
 
         <motion.section
           initial={{ opacity: 0, y: 16 }}
