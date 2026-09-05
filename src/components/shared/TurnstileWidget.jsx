@@ -60,13 +60,21 @@ function loadTurnstile() {
 // resetSignal: bump this number after every attempt. A Turnstile token is
 // single use, so a second send with the same token is rejected. Resetting
 // hands the caller a fresh one.
-export default function TurnstileWidget({ onToken, resetSignal = 0, className = '' }) {
+// onUnavailable fires when the widget cannot be shown at all, which in practice
+// means the script was blocked: a Content-Security-Policy missing
+// challenges.cloudflare.com from script-src or frame-src, an extension, or a
+// network that drops it. A caller should stop requiring a token at that point,
+// because there is no way for the visitor to produce one and the alternative is
+// a button that never works.
+export default function TurnstileWidget({ onToken, onUnavailable, resetSignal = 0, className = '' }) {
   const container = useRef(null);
   const widgetId = useRef(null);
   // Held in a ref so the mount effect can stay dependency-free without
   // capturing a stale callback.
   const onTokenRef = useRef(onToken);
   onTokenRef.current = onToken;
+  const onUnavailableRef = useRef(onUnavailable);
+  onUnavailableRef.current = onUnavailable;
 
   useEffect(() => {
     if (!SITE_KEY) return undefined;
@@ -88,11 +96,12 @@ export default function TurnstileWidget({ onToken, resetSignal = 0, className = 
       })
       .catch(() => {
         // A blocked or failed script must not strand the buyer with a form
-        // that refuses to submit, so treat it as "no widget" and let the
-        // request go without a token. Supabase is still the one enforcing:
-        // if CAPTCHA is on there, it rejects the request and the buyer sees
-        // that error rather than a dead button.
+        // that refuses to submit. Say so, so the caller drops the token
+        // requirement and lets the request through. Supabase is still the one
+        // enforcing: with CAPTCHA on there it rejects the request and the
+        // buyer sees a real error instead of a dead button.
         onTokenRef.current('');
+        if (onUnavailableRef.current) onUnavailableRef.current();
       });
 
     return () => {

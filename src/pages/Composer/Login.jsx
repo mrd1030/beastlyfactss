@@ -18,11 +18,15 @@ function ComposerLoginForm() {
   // Inert until VITE_TURNSTILE_SITE_KEY is set, same as everywhere else.
   const [captchaToken, setCaptchaToken] = useState('');
   const [captchaNonce, setCaptchaNonce] = useState(0);
+  // Set when the widget cannot load at all, usually a CSP missing
+  // challenges.cloudflare.com. Requiring a token then would be a button that
+  // can never be pressed, so the request goes through and Supabase decides.
+  const [captchaBlocked, setCaptchaBlocked] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-    if (isTurnstileEnabled && !captchaToken) {
+    if (isTurnstileEnabled && !captchaToken && !captchaBlocked) {
       setError('Complete the verification below, then try again.');
       return;
     }
@@ -69,7 +73,7 @@ function ComposerLoginForm() {
           autoComplete="current-password"
           className="font-body"
         />
-        <TurnstileWidget onToken={setCaptchaToken} resetSignal={captchaNonce} />
+        <TurnstileWidget onToken={setCaptchaToken} onUnavailable={() => setCaptchaBlocked(true)} resetSignal={captchaNonce} />
         {error && <p className="text-sm text-destructive font-body">{error}</p>}
         <Button type="submit" disabled={submitting} className="w-full font-body font-bold">
           {submitting ? 'Signing in...' : 'Sign In'}

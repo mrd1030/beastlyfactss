@@ -46,6 +46,10 @@ export default function CarePackageLibrary() {
   // reusing one is rejected.
   const [captchaToken, setCaptchaToken] = useState('');
   const [captchaNonce, setCaptchaNonce] = useState(0);
+  // Set when the widget cannot load at all, usually a CSP missing
+  // challenges.cloudflare.com. Requiring a token then would be a button that
+  // can never be pressed, so the request goes through and Supabase decides.
+  const [captchaBlocked, setCaptchaBlocked] = useState(false);
 
   const [purchases, setPurchases] = useState([]);
   const [loadingPurchases, setLoadingPurchases] = useState(false);
@@ -115,7 +119,7 @@ export default function CarePackageLibrary() {
     // Caught here rather than at Supabase so the buyer gets a sentence about
     // the box in front of them instead of a raw "captcha protection: request
     // disallowed" from the API.
-    if (isTurnstileEnabled && !captchaToken) {
+    if (isTurnstileEnabled && !captchaToken && !captchaBlocked) {
       setError('Tick the verification box below, then try again.');
       return;
     }
@@ -324,6 +328,7 @@ export default function CarePackageLibrary() {
 
             <TurnstileWidget
               onToken={setCaptchaToken}
+              onUnavailable={() => setCaptchaBlocked(true)}
               resetSignal={captchaNonce}
               className="mt-3"
             />

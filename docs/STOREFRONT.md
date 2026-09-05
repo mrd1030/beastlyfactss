@@ -226,6 +226,26 @@ starts demanding a token the page is not yet sending:
 3. Supabase -> Authentication -> Attack Protection -> enable CAPTCHA, provider
    Turnstile, paste the secret key.
 
+**The CSP has to allow it, and the CSP is not in this repo.** It is set as a
+Transform Rule on the Cloudflare zone; `cloudflare-csp.txt` is a local
+reference copy and is gitignored, so grepping `public/_headers` finds nothing
+and tells you nothing. Turnstile needs both of these, because it loads a script
+and renders the challenge in an iframe:
+
+```
+script-src ... https://challenges.cloudflare.com;
+frame-src  ... https://challenges.cloudflare.com;
+```
+
+Miss `frame-src` and the script loads while the box never appears. This is what
+happened on the first attempt.
+
+If the widget cannot load at all, the sign-in form drops the token requirement
+and sends the request anyway, so a blocked script gives a real Supabase error
+rather than a button that can never be pressed. That is deliberate: the widget
+is a filter, Supabase is the enforcement, and only one of those should be able
+to lock a buyer out.
+
 Until step 3, the only thing capping abuse is the Supabase Auth per-hour send
 limit, so do not raise that limit before Turnstile is on.
 
