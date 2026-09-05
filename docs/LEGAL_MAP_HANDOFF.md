@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 8 (AZ, CO, DE, HI, MI, NM, NV, PA) |
-| Unread cells | 779 |
-| Cached primary sources | 23 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 9 (AZ, CO, DE, HI, IL, MI, NM, NV, PA) |
+| Unread cells | 742 |
+| Cached primary sources | 26 files in `docs/legal-sources` |
 
-`main` carries everything through Delaware and is deployed. Colorado sits on
-`claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main
-once it lands.
+`main` carries everything through Delaware and is deployed. Colorado and Illinois sit on
+`claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main once
+it lands.
 
 ## The loop
 
@@ -60,19 +60,25 @@ that you are reading the current one before you quote a cite that has been on th
 month. Two guides had already picked up the change without the map being updated, which is the
 same signal from the other direction.
 
+**A citation that outlived its statute.** Every Illinois entry on the map cited 720 ILCS 585,
+the Dangerous Animals Act. P.A. 98-752 repealed it effective 1 January 2015 and moved it to
+720 ILCS 5/48-10. The substance survived the move, so nothing on the map was wrong, but nine
+entries pointed at a statute that no longer exists, because that is what the secondary sources
+still print. Where a fetcher answers "not currently available" for a section, that is the answer.
+
 So: read the section heading, not just the list. Never take a prohibited list from a secondary
-source without finding it in the regulation. And check the version date on anything cited from a
-state that codifies by version.
+source without finding it in the regulation. Check the version date on anything cited from a
+state that codifies by version. And confirm the citation itself still resolves.
 
 ## Next up
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| IL | Illinois | 37 | 3 sources on file |
 | MN | Minnesota | 37 | |
 | OR | Oregon | 37 | |
 | CT | Connecticut | 36 | |
 | MD | Maryland | 35 | 4 sources on file |
+| TX | Texas | 35 | 3 sources on file |
 
 ## Loose ends
 
@@ -94,6 +100,17 @@ state that codifies by version.
 - **Colorado's other entries carry a shelf life.** CPW updates its species lists "on an
   as-available basis" and says outright that a determination can change when new information
   changes a species' native range. Several Colorado cells turn entirely on that call.
+- **Illinois has one unresolved conflict, and it is in the statute.** 510 ILCS 68/5-5(a) caps
+  possession at "no more than 4 total per species" for herptiles, and § 5-5(e) requires a permit
+  over that limit "regardless of the origin of the species". The rule at 17 Ill. Adm. Code
+  885.20(d) writes the same cap as reaching native taxa only. Every Illinois non-native reptile
+  entry carries this in its note rather than resolving it, because the statute and the rule
+  genuinely do not agree and IDNR has not published a reading either way.
+- **The Illinois rabbit is recorded legal on a reading, not on a carve-out.** Two provisions name
+  the animal, 520 ILCS 5/3.23 barring possession of "San Juan (sometimes called European)
+  rabbits" with no permit available, and 17 Ill. Adm. Code 805.20(a) listing the genus
+  Oryctolagus as injurious. Neither writes an express exception for domestic stock. The note
+  sets out why both read as aimed at wild-type animals; it is the thinnest Illinois answer.
 
 ## Articles
 
@@ -107,8 +124,8 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Then guinea pig and gerbil at 42, quaker parakeet and ackie monitor at 41, degu and red-footed
-tortoise at 40, green iguana at 39.
+Then guinea pig and gerbil at 43, quaker parakeet and ackie monitor at 42, degu and red-footed
+tortoise at 41, green iguana at 40.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -137,6 +154,14 @@ boa, Russian tortoise, garter snake and green anole are all banned there anyway,
 family listing is qualified by "native only to the tropical and subtropical region". Boa
 constrictor clears it and the rosy boa does not, off the same line. Any state whose allow-list
 carries a range or origin qualifier needs this check per species, not per family.
+
+Illinois adds a fourth probe, and it is a definition rather than a list: 510 ILCS 68/25-5 says
+"'Monitor lizards' means the following members of the Varanidae family, specifically crocodile
+monitors and Komodo dragons." The article around it puts monitor lizards under a permit regime
+available only for educational programmes. Read the heading and Illinois restricts every
+Varanus; read the definition and it restricts two, leaving the savannah, Nile and ackie monitors
+entirely unregulated. Any state that names a family and then narrows it in the same sentence
+needs the definition read before the list.
 
 The rabbit is the other good probe. Hawaii, California and Arizona each carve it out by
 name in different words, Arizona going furthest by saying domestic rabbits are not wildlife

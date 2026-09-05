@@ -1,0 +1,357 @@
+# Illinois Herptiles-Herps Act, 510 ILCS 68
+
+sourceId: il-510-68
+jurisdiction: IL
+url: https://www.ilga.gov/Legislation/ILCS/Fulltext?DocName=051000680K5-5
+fetched: 2026-09-05
+fetch notes: ilga.gov's /Legislation/ILCS/Articles pages list article headings only, and the
+  legacy fulltext.asp and /documents/ paths both 404. The endpoint that works is
+  /Legislation/ILCS/Fulltext?DocName=<doc>, one section per request. DocName is a 4-digit
+  chapter, then the act number times ten padded to 5 digits, then K, then the section:
+  510 ILCS 68/5-5 is 051000680K5-5, 720 ILCS 5/48-10 is 072000050K48-10, 520 ILCS 5/2.2 is
+  052000050K2.2, 520 ILCS 10/3 is 052000100K3. A section that does not exist returns
+  "Document: <name> is not currently available", which is also how you confirm a repeal:
+  720 ILCS 585, the old Dangerous Animals Act, answers that way.
+  The administrative rules come from the JCAR endpoint instead, which serves whole Parts:
+  https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=0170<part>
+
+HOW ILLINOIS IS PUT TOGETHER. Four bodies of law, and each one disclaims the others' territory:
+  720 ILCS 5/48-10   15 named mammals plus primates. Says in terms it does NOT reach herptiles.
+  520 ILCS 5 (Wildlife Code)  applies "only to the wild birds ... and wild mammals". Parrots are
+                     not on its protected list; the flying squirrel is.
+  510 ILCS 68 (this Act)  every reptile and amphibian question.
+  17 Ill. Adm. Code 805  injurious species, and § 805.10 excludes herptiles expressly.
+A terrestrial invertebrate falls through all four.
+
+THE THREE TRAPS IN THIS ACT:
+  § 15-5   clears the whole family Boidae from the permit process by statute. This is the real
+           source of the "Boidae are exempt" line that circulates; it is NOT in Part 885.
+           Part 885's boa section, § 885.45, is a handling rule for educational events.
+  § 25-5   "'Monitor lizards' means the following members of the Varanidae family, specifically
+           crocodile monitors and Komodo dragons." Article 25 then puts "monitor lizards" under
+           the special use permit regime. Read only the article heading and you conclude
+           Illinois permits every Varanus; it restricts two.
+  § 5-5    the 4-per-species possession cap is written for "herptiles", and § 5-5(e) requires a
+           permit over the limit "regardless of the origin of the species". The rule at
+           § 885.20(d) writes the same cap as native-only. Statute and rule do not agree, and
+           the statute has the broader words.
+
+WHETHER A SPECIES IS AN ILLINOIS NATIVE TAXON decides almost everything, and the list is
+17 Ill. Adm. Code 885.40, to the subspecies. On it: tiger salamander, common snapping turtle,
+eastern and ornate box turtles, RED-EARED SLIDER, both hognose snakes, garter snakes, several
+Lampropeltis, Pantherophis emoryi/obsoletus/ramspotti. NOT on it: Pantherophis guttatus. The
+corn snake is not an Illinois native, whatever secondary sources say.
+
+(510 ILCS 68/1-5)
+Sec. 1-5. Purpose. The purpose of this Act is to regulate the protection, control, possession, and propagation of herptiles in this State.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/1-10)
+Sec. 1-10. Administrative agency. This Act shall be administered and under the direction of the Department of Natural Resources.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/5-5)
+Sec. 5-5. Possession limits.
+(a) The possession limit for herptiles (excluding common snapping turtles and bullfrogs) is no more than 4 total per species. The possession of one or more parts of the body of the same individual herptile shall equal one individual herptile of a species. In no case shall a person possess more than 8 indigenous amphibian or reptiles in total. Young of gravid wild-collected amphibians and reptiles shall be returned to the site of adult capture after birth.
+The possession limit for common snapping turtles and bullfrogs shall be set by administrative rule.
+(b) Only residents may possess herptiles collected from the wild within this State under a valid sport fishing license; non-residents may not possess herptiles collected from the wild within this State except for scientific purposes after first
+obtaining, a Herptile Scientific Collection permit.
+(c) All herptile species (other than bullfrogs and common snapping turtles) shall be captured by hand only, unless otherwise authorized by this Act or administrative rule. This shall not restrict the use of legally taken herptiles as bait by anglers only, unless otherwise authorized by this Act or administrative rule. Any captured herptiles that are not to be retained in the possession of the captor shall be immediately released at the site of capture, unless taken with a lethal method such as bow and arrow, gig, spear, or pitchfork which does not permit release without harm. All common snapping turtles and bullfrogs taken from the wild must be kept and counted in the daily catch creel or bag. No culling of species taken from the wild is permitted.
+(d) The trier of fact may infer that a person is collecting from the wild within this State if he or she possesses indigenous reptiles or amphibians, in whole or in part, if no documentation exists stating that the animals were legally collected from the wild outside of this State.
+(e) A resident of this State in possession of more than the allowed possession limit set forth in subsection (a) must obtain and have in his or her possession either a Herptile Scientific Collection permit or Herpetoculture permit from the Department, regardless of the origin of the species. Unless exempt under the provisions of Section 20 of the Fish and Aquatic Life Code, a sport fishing license is required for residents to legally collect any native herptile taxon on private land, with the landowner's permission. Collecting herptiles on public lands shall require the agency that manages the land to authorize the collecting of herptiles on the public land under its control.
+(f) Any resident wishing to possess more than his or her allowed possession limit shall first apply to the Department for a Herptile Scientific Collection permit or Herpetoculture permit to do so. Issuance, modification, or denial of any and all of these permits shall be at the sole discretion of the Department.
+Procedures for the issuance, modification, or denial of permits shall be set forth by administrative rule.
+(g) (Blank).
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/5-10)
+Sec. 5-10. Commercialization; herpetoculture.
+(a) It is unlawful to take, possess, buy, sell, offer to buy or sell or barter any herptile, or their eggs, any resulting offspring, or parts taken from the wild in this State for commercial purposes unless otherwise authorized by law.
+(b) The trier of fact may infer that a person is collecting from the wild within this State for commercial purposes if he or she possesses indigenous herptiles, in whole or in part, for which no documentation exists stating that the animals were legally collected from the wild outside this State.
+(c) (Blank).
+(d) A valid, Department-issued Herpetoculture permit shall apply only to indigenous herptile taxa. A Herpetoculture permit shall not be required in order to commercialize non-indigenous herptile taxa except as otherwise prohibited or regulated under this Act or federal law.
+(e) Indigenous herptile taxa collected from the wild in this State may not be bred unless otherwise authorized by the Department for research or recovery purposes unless otherwise authorized by this Act or administrative rule.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/5-15)
+Sec. 5-15. Protection of habitat. Habitat features that are disturbed in the course of searching for herptiles shall be returned to as near its original position and condition as possible.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/5-20)
+Sec. 5-20. Propagation of endangered or threatened species.
+(a) No person shall take or possess for the purpose of propagation any of the herptiles listed in the Illinois Endangered Species Protection Act, the federal Endangered Species Act of 1973, or administrative rules unless authorized by a Herptile Endangered and Threatened Species Propagation permit issued by the Department. For the purpose of propagation only, a Herptile Endangered and Threatened Species Propagation permit shall allow a resident of this State to possess, propagate, or sell legally obtained endangered and threatened herptiles.
+The Department shall adopt rules relating to the acquisition, possession, and propagation of legally obtained endangered and threatened herptiles. The Department shall determine, by rule, the application, fees, duration, and other requirements necessary for the issuance or suspension or revocation of a Herptile Endangered and Threatened Species Propagation permit. All fees collected from the issuance of a Herptile Endangered and Threatened Species Propagation permit shall be deposited into the Illinois Wildlife Preservation Fund.
+(b) Any person issued a Herptile Endangered and Threatened Species Propagation permit by the Department who is in possession of a threatened or endangered (T/E) herptile species shall be exempt from an individual's overall possession limit under the permitting system set forth in this Act. However, the holder of a Herptile Endangered and Threatened Species Propagation permit is not exempt from the species limitations set forth in the administrative rules regarding the Herptile Endangered and Threatened Species Propagation permit. Any species occurring on the federal T/E list also requires a Department permit for possession, propagation, sale, or offer for sale unless otherwise permitted under this Act or administrative rule.
+(c) (Blank).
+(d) Federally licensed exhibits shall not be exempt from the Illinois Endangered Species Protection Act, this Act, or administrative rule.
+(e) Any changes in threatened or endangered species inventory for herptiles by current, existing Herptile Endangered and Threatened Species Propagation permit holders shall be reported to the Department in writing no later than the first business day after that change occurred. Applications for permits to possess and take herptiles shall be reviewed by the Department as provided by this Act or administrative rule.
+(f) (Blank).
+(g) (Blank).
+(h) (Blank).
+(i) (Blank).
+(Source: P.A. 102-315, eff. 1-1-22; 103-363, eff. 7-28-23.)
+
+(510 ILCS 68/5-25)
+Sec. 5-25. Taking of snakes. Unless otherwise provided in this Act, any non-threatened or non-endangered snake may be taken by the owners or bona fide tenants of lands actually residing on the lands and their children, parents, brothers, and sisters permanently residing with them.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/5-30)
+Sec. 5-30. Taking of turtles or bullfrogs; illegal devices.
+(a) Turtles or bullfrogs may be taken only by methods set forth in administrative rule.
+(b) Bullfrog; common snapping turtle; open season.
+(1) All persons taking bullfrogs shall possess a
+valid sport fishing license issued under Article 20 of the Fish and Aquatic Life Code and may take bullfrogs only during the open season to be specified by administrative rule.
+(2) The daily catch limit and total possession limit
+for all properly licensed persons shall be specified by administrative rule.
+(3) All persons taking common snapping turtles shall
+possess a valid sport fishing license issued under Article 20 of the Fish and Aquatic Life Code and may take common snapping turtles only during the open season to be specified by administrative rule. Common snapping turtles (Chelydra serpentina) may be taken only by methods set forth in administrative rule, except in the counties listed in administrative rule where bowfishing for common snapping turtles is not allowed.
+(4) The daily catch limit and total possession limit
+for all properly licensed persons shall be specified by administrative rule.
+(c) (Blank).
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/5-35)
+Sec. 5-35. Areas closed to the taking of reptiles and amphibians.
+(a) Unless otherwise allowed under the provisions of this Act or administrative rule, the taking of herptiles at any time and by any method is prohibited in the
+LaRue-Pine Hills or Otter Pond Research Natural Area in Union County. Unless otherwise authorized, possession of any collecting equipment is prohibited within the area.
+(b) For the protection and preservation of any herptile taxa, the Department may close any area to prevent the taking, collecting, or killing of herptiles. The Department may close an area for purposes that include the biological significance or importance of a species or location or for the prevention, containment, or treatment of disease. The Department shall adopt procedures for the closure of an area by administrative rule.
+(c) (Blank).
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/5-40)
+Sec. 5-40. Translocation and release of herptiles.
+(a) Except as provided for in subsection (a) of Section 5-5, no herptile indigenous species may be moved, translocated, or populations repatriated within this State without approval of the Department, after review of a proposal complete with long-term monitoring plan at least 5 years post-release.
+(b) It shall be unlawful to intentionally or negligently release any non-indigenous herptile species into this State.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/10-5)
+Sec. 10-5. Venomous reptile defined. Venomous reptiles include, but are not limited to, any medically significant venomous species of the families or genera of the Order Squamata: Helodermatidae, such as gila monsters and beaded lizards; Elapidae, such as cobras and coral snakes; Hydrophiidae, such as sea snakes; Viperidae and Crotalinae, such as vipers and pit vipers; Atractaspididae, such as burrowing asps; Colubridae in the following genera that shall be determined by administrative rule: West Indian racers (Alsophis); boigas and mangrove snakes (Boiga); road guarders (Conophis); Boomslangs (Dispholidus); false water cobras (Hydrodynastes); varied or hooded keelbacks (Macropisthodon); Montpellier snakes (Malpolon); kukri snakes (Oligodon); collared snakes (Phalotris); palm snakes or green racers (Philodryas); sand snakes or racers (Psammophis); keelbacks (Rhabdophis); beaked snakes (Rhamphiophis); twig snakes (Thelotornis); black tree snakes (Thrasops); Pampas snakes (Tomodon); Wagler's snakes (Waglerophis); false fer-de-lances (Xenodon); specimens or eggs of the brown tree snake (Boiga irregularis); and any other species added through legislative process designated.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/10-10)
+Sec. 10-10. Surgically altered venomous reptiles. It is not a defense to a violation of Article 65 that the person violating that Article has had the venomous reptile surgically altered to render it harmless.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/10-15)
+Sec. 10-15. Venomous reptile permit requirements. In addition to those requirements listed in Articles 60 and 65 of this Act, Herptile Special Use permits may be issued to residents using approved venomous reptile species only for bona fide educational programs, following an inspection and approval of the proposed facilities. A minimum of 6 documented programs shall be required of each permittee per calendar year. Unless addressed or exempted by administrative rule, annual permit renewal must be accompanied by a non-refundable fee as set by the Department by administrative rule and documented proof of educational programs completed on the recipient's letterhead. Prospective permittees must have 250 documented hours of experience with venomous reptiles. The Department or the Department of Agriculture reserves the right to inspect permittees and facilities during reasonable hours. Additions to permits must be approved prior to acquisition of additional venomous reptiles, and any changes shall be reported to the Department in writing no later than the first business day after that change occurred.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/10-20)
+Sec. 10-20. Approved venomous reptiles. Permittees may keep legally obtained venomous reptile specimens native to the United States, except the following species: Eastern diamondback rattlesnakes (Crotalus adamanteus); Western diamondback rattlesnakes (Crotalus atrox); Mojave rattlesnakes (Crotalus scutulatus); Southern Pacific rattlesnakes (Crotalus oreganus helleri); Eastern and Texas coral snakes (Micrurus fulvius); Sonoran coral snakes (Micruroides euryxanthus); and timber/canebrake rattlesnakes (Crotalus horridus) from the southern portions of their range (Oklahoma, southern Arkansas, Louisiana, and also southeastern South Carolina south through eastern Georgia to northern Florida), known as "Type A" and containing canebrake toxin.
+Except for Boomslangs (Dispholidus), twig snakes (Thelotornis), keelbacks (Rhabdophis), Lichtenstein's green racer (Philodryas olfersii), and brown tree snake (Boiga irregularis), medically significant snakes in the family Colubridae defined in Section 10-5 of this Article may be possessed with a permit.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/10-25)
+Sec. 10-25. Maintenance of venomous reptiles. Permittees shall keep approved venomous reptiles in strong escape-proof enclosures that at a minimum are: impact resistant, locked at all times, prominently labeled with the permittee's full name, address, telephone number, list of cage contents by scientific and common names, and a sign labeled "venomous". The signage shall also include the type and location of antivenom and contact information of the person or organization possessing the antivenom.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/10-30)
+Sec. 10-30. Educational programs with approved venomous reptiles. Permittees shall keep approved venomous reptiles in strong escape-proof enclosures that at a minimum are: impact resistant, locked at all times, prominently labeled with the permittee's full name, address, telephone number, list of cage contents by scientific and common names, and a sign labeled "venomous". Labeling shall also include the type and location of antivenom and contact information of the person or organization possessing the antivenom. Interiors of enclosures may not be accessible to the public.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/10-35)
+Sec. 10-35. Transport of approved venomous reptiles. During transport of any approved venomous reptile, it must be kept out of sight of the public in an escape-proof enclosure at all times that is labeled "venomous". Transport of any venomous reptile to any public venue, commercial establishment, retail establishment, or educational institution shall only be for bona fide educational programs or veterinary care.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/10-40)
+Sec. 10-40. Additional regulations. Venomous reptiles shall not be bred, sold, or offered for sale within this State. The Department may approve limited transfers among existing permittees as set forth in administrative rule.
+As determined by the Department, non-residents may apply for a permit not to exceed 15 consecutive days to use venomous reptiles in bona fide educational programs. The fee for the permit shall be set by administrative rule, and all fees shall be deposited into the Illinois Wildlife Preservation Fund.
+(Source: P.A. 102-315, eff. 1-1-22; 103-363, eff. 7-28-23.)
+
+(510 ILCS 68/15-5)
+Sec. 15-5. Boas, pythons, and anacondas. Unless contrary to any other law or rule, nothing shall prohibit lawfully acquired possession of any of the Boidae family, such as boas, pythons, and anacondas, provided captive maintenance requirements from the Department as set forth in this Act are met. All boas, pythons, and anacondas referenced in this Act are exempt from the permit process, associated annual fee, and liability insurance coverage.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/15-10)
+Sec. 15-10. Maintenance of boas, pythons, and anacondas. Any species of boa, python, or anaconda not native to the United States, regardless of length, must be properly maintained in suitable, strong, impact resistant, escape-proof enclosures at all times unless being used for bona fide educational programs or trips for veterinary care.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/15-20)
+Sec. 15-20. Transport of boas, pythons, and anacondas. During transport of any boa, python, or anaconda, the snake must be kept out of sight of the public in an escape-proof enclosure at all times.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/15-25)
+Sec. 15-25. Use of boas, pythons, and anacondas at reptile shows. An owner or affiliated agent must have physical possession and control of any boa, python, or anaconda that is not native to the United States at all times if removed from a container or cage. Uncontained boas, pythons, or anacondas removed from cages for examination or onlooker interaction must be kept confined either behind or at a display table. Interiors of cages or containers may not be accessible to the public.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/20-5)
+Sec. 20-5. Crocodilians. "Crocodilians" means any species of the Order Crocodilia, such as crocodiles, alligators, caimans, and gavials.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/20-10)
+Sec. 20-10. Crocodilian permit requirements. In addition to the requirements listed in Articles 60 and 65 of this Act, Herptile Special Use permits may be issued to residents using crocodilian species only for bona fide educational programs, following an inspection and approval of the proposed facilities. A minimum of 6 documented programs shall be required of each permittee per calendar year. Unless addressed or exempted by administrative rule, annual permit renewal must be accompanied by a non-refundable fee as set by the Department and documented proof of educational programs completed on the recipient's letterhead. The Department or the Department of Agriculture reserves the right to inspect permittees and facilities during reasonable hours. Additions to permits must be approved prior to acquisition of additional crocodilians, and any changes shall be reported to the Department in writing no later than the first business day after that change occurred.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/20-15)
+Sec. 20-15. Maintenance of crocodilians. Permittees shall keep crocodilians maintained in suitable, strong, impact resistant, escape-proof enclosures at all times unless being used for bona fide educational programs or trips for veterinary care.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/20-30)
+Sec. 20-30. Additional regulations. Crocodilians shall not be bred, sold, or offered for sale within this State. However, the Department may approve, by rule, limited
+transfers among existing permittees.
+As determined by the Department through administrative rule, non-residents may apply for a permit not to exceed 15 consecutive days to use crocodilians in bona fide educational programs. The fee for this permit shall be set by administrative rule, and all fees shall be deposited into the Illinois Wildlife Preservation Fund.
+(Source: P.A. 102-315, eff. 1-1-22; 103-363, eff. 7-28-23.)
+
+(510 ILCS 68/25-5)
+Sec. 25-5. Monitor lizards. "Monitor lizards" means the following members of the Varanidae family, specifically crocodile monitors and Komodo dragons.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/25-10)
+Sec. 25-10. Monitor lizard permit requirements. In addition to those requirements listed in Articles 60 and 65 of this Act, Herptile Special Use permits may be issued to residents using monitor lizard species only for bona fide educational programs, following an inspection and approval of the proposed facilities. A minimum of 6 documented programs on the family Varanidae shall be required of each permittee per calendar year. Unless addressed or exempted by administrative rule, annual permit renewal must be accompanied by a non-refundable fee as set by the Department and documented proof of educational programs completed on the recipient's letterhead. The Department or the Department of Agriculture reserves the right to inspect permittees and facilities during reasonable hours. Additions to permits must be approved prior to acquisition of additional monitor lizards, and any changes shall be reported to the Department in writing no later than the first business day after that change occurred.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/25-15)
+Sec. 25-15. Maintenance of monitor lizards. Permittees shall keep monitor lizards maintained in suitable, strong, impact resistant, escape-proof enclosures at all times unless being used for bona fide educational programs or trips for veterinary care.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/25-20)
+Sec. 25-20. Educational programs with monitor lizards. During any bona fide educational program involving monitor lizards, the owner or affiliated agent must maintain physical possession and control of the monitor lizard at all times if removed from a container or cage. Interiors of cages or containers used during educational programs may not be accessible to the public. Monitor lizards removed from their cage or enclosure for educational programs must have either the mouth banded or taped shut, or kept at a minimum of 10 feet from the public and also kept out of direct contact with the public.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/25-25)
+Sec. 25-25. Transport of monitor lizards. During transport of any monitor lizard, it must be kept out of sight of the public in an escape-proof enclosure at all times. Transport of a monitor lizard to any public venue, commercial establishment, retail establishment, or educational institution shall only be for bona fide educational programs or veterinary care.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/25-30)
+Sec. 25-30. Additional regulations. Monitor lizards shall not be bred, sold, or offered for sale within this State.
+However, the Department may approve, by rule, limited transfers among existing permittees.
+As determined by the Department, non-residents may apply for a permit not to exceed 15 consecutive days to use monitor lizards in bona fide educational programs. The fee for the permit shall be set by administrative rule, and all fees shall be deposited into the Illinois Wildlife Preservation Fund.
+(Source: P.A. 102-315, eff. 1-1-22; 103-363, eff. 7-28-23.)
+
+(510 ILCS 68/30-5)
+Sec. 30-5. Turtle farming. Turtles shall not be commercially farmed in this State.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/30-10)
+Sec. 30-10. Turtle collection. Collection of wild turtles for races or other types of events involving congregating and gathering numbers of wild turtles is prohibited in counties where ranavirus has been documented. Inclusion on the county list shall be determined by administrative rule.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/35-5)
+Sec. 35-5. Amphibians. For the purposes of this Section, "amphibians" means those medically significant poisonous amphibians capable of causing bodily harm to humans or animals, including, but not limited to, cane or marine toads (Bufo marinus) and Colorado river toads (Bufo alvarius), or any other amphibian found to be medically significant and listed in administrative rule. Amphibians defined in this Section shall only be allowed for bona fide educational purposes or research purposes by bona fide scientific or educational institutions.
+Poison dart frogs bred and raised in captivity shall be exempt from the permit process.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/40-5)
+Sec. 40-5. Permit issuance. Herptile Scientific Collection permits may be granted by the Department under administrative rule, to any properly accredited person at least 18 years of age, permitting the capture, marking, handling, banding, or collecting (including hide, skin, bones, teeth, claws, nests, eggs, or young), for strictly scientific purposes, of any of the herptiles not listed as endangered or threatened but now protected under this Act. A Herptile Scientific Collection permit may be granted under administrative rule for purpose of salvaging dead, sick, or injured herptiles not listed as endangered or threatened but protected by this Act for permanent donation to bona fide public or state scientific, educational, or zoological institutions. Collecting herptiles on public lands shall require additional permits.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/40-10)
+Sec. 40-10. Permit requirements. The criteria and standards for a Herptile Scientific Collection permit shall be provided by administrative rule. The Department shall set forth applicable rules covering qualifications and facilities needed to obtain a permit. Disposition of herptiles taken under the authority of this Article shall be specified by the Department. The holder of each permit shall make to the Department a report in writing upon forms furnished by the Department as provided by administrative rule. These reports shall be made (i) annually if the permit is granted for a period of one year or (ii) within 30 days after the expiration of the permit if the permit is granted for a period of less than one year. These reports shall include all information that is required by the Department.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/45-5)
+Sec. 45-5. Permit application and fees. An applicant for a Herptile Scientific Collection permit must file an application with the Department on a form provided by the Department. The application must include all information and requirements as set by administrative rule. The application for these permits shall be reviewed by the Department to determine if a permit should be issued.
+Unless addressed or exempted by administrative rule, annual permit renewal must be accompanied by non-refundable fee as set by the Department. The annual fee for a Herptile Scientific Collection permit shall be set by administrative rule. The Department shall adopt, by administrative rule, any additional procedures for the renewal of a Herptile Scientific Collection permit. All fees shall be deposited into the Fish and Preservation Fund.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/50-5)
+Sec. 50-5. Permit issuance. Any person or business who engages in herpetoculture, the sale, or the offer for sale of any indigenous herptile, regardless of origin, shall procure a Herpetoculture permit from the Department. Herptiles for which a Herpetoculture permit is issued or that are bred, hatched, propagated, or legally obtained by a person or business holding a Herpetoculture permit may be transported and sold or offered for sale within this State. Indigenous herptile taxa collected from the wild in this State shall not be bred unless otherwise authorized by this Act or administrative rule.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/50-10)
+Sec. 50-10. Permit requirements. Herpetoculture permit holders shall maintain written records of all herptiles possessed, bought, sold, hatched, propagated, or shipped and that are indigenous to this State for a minimum of 2 years after the date of the transaction and shall be made immediately available to authorized employees of the Department upon request. These records shall include the name and address of the buyer and seller, the appropriate permit number of the buyer and seller, the date of the transaction, the species name (both common and scientific), and the origin of herptile involved. Records of the annual operations, as may be required by the Department, shall be forwarded to the Department upon request.
+The criteria and standards for a Herpetoculture permit shall be provided by administrative rule. The Department shall set forth applicable rules, including a list of herptiles indigenous to this State.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/55-5)
+Sec. 55-5. Permit application and fees. An applicant for a Herpetoculture permit must file an application with the Department on a form provided by the Department. The application must include all information and requirements as set forth by administrative rule. The application for these permits shall be reviewed by the Department to determine if a permit will be issued.
+An annual permit renewal must be accompanied by a non-refundable fee as set by the Department. The annual fee for a residential Herpetoculture permit shall be set by administrative rule. The Department shall adopt, by administrative rule, any additional procedures for the renewal of a Herpetoculture permit. All fees shall be deposited into the Illinois Wildlife Preservation Fund.
+As determined by administrative rule, non-residents may apply for a permit not to exceed 15 consecutive days to commercialize herptiles indigenous to this State as outlined in this Article. The application, procedures, and fee for the permit and permit renewal shall be set by administrative rule, and all fees shall be deposited into the Illinois Wildlife Preservation Fund.
+(Source: P.A. 102-315, eff. 1-1-22; 103-363, eff. 7-28-23.)
+
+(510 ILCS 68/60-5)
+Sec. 60-5. Permit requirements. Prior to any person obtaining a Herptile Special Use permit, the following criteria must be met:
+(1) the person was in legal possession and is the
+legal possessor of the herptile prior to the effective date of this Act and the person applies for and is granted a Personal Possession permit for each special use herptile in the person's possession within 30 days after the enactment of this Act; or
+(2) prior to acquiring a Herptile Special Use permit,
+the person must provide the name, address, date of birth, permit number, telephone number of the possessor, type or species, and the date the herptile is to be acquired.
+The applicant must comply with all requirements of this Act and the rules adopted by the Department to obtain a Herptile Special Use permit. Prior to the issuance of the Herptile Special Use permit, the applicant must provide proof of liability insurance or surety bond, either individually, or in the name of the entity engaged in bona fide educational programs, in the amount of $100,000 for each special use herptile up to a maximum of $1,000,000 and the insurance or surety bond is to be maintained during the term of the permit for liability for any incident arising out of or relating to the special use herptile.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/65-5)
+Sec. 65-5. Permit application and fees. An applicant for a Herptile Special Use permit must file an application with the Department on a form provided by the Department. The application must include all information and requirements as set forth by administrative rule.
+The annual fee for a residential Herptile Special Use permit shall be set by administrative rule. The Herptile Special Use permit shall not be based on the number of special use herptile kept by an owner or possessor. All fees shall be deposited into the Illinois Wildlife Preservation Fund.
+The Department shall adopt, by administrative rule, procedures for the renewal of annual Herptile Special Use permits.
+Any person possessing and in legal possession of a special use herptile as stipulated in this Article that no longer wishes to keep the herptile may be assisted by the Department, at no charge to them and without prosecution, to place the special use herptile in a new home, within 30 days after the effective date of this Act.
+The Department may issue a Limited Entry permit to an applicant who: (i) is not a resident of this State; (ii) complies with the requirements of this Act and all rules adopted by the Department under the authority of this Act; (iii) provides proof to the Department that he or she shall, during the permit term, maintain sufficient liability insurance coverage; (iv) pays to the Department, along with each application for a Limited Entry permit, a non-refundable fee as set by administrative rule, which the Department shall deposit into the Illinois Wildlife Preservation Fund; and (v) uses the herptile for an activity authorized in the Limited Entry permit. A Limited Entry permit shall be valid for not more than 15 consecutive days.
+The application, review, and procedures to obtain or renew a Limited Entry permit shall be set by administrative rule.
+(Source: P.A. 102-315, eff. 1-1-22; 103-363, eff. 7-28-23.)
+
+(510 ILCS 68/70-5)
+Sec. 70-5. Suspension of privileges and revocation of permits. A person who does not hold a Herptile Special Use permit or Limited Entry permit and who violates a provision of this Act, an administrative rule authorized under this Act, or a provision of the United States Code that involves the taking, possessing, killing, harvesting, transportation, selling, exporting, or importing of any herptile protected by this Act, when any part of the United States Code violation occurred in Illinois, shall have his or her privileges under this Act suspended for a period to be set by administrative rule.
+Department suspensions and revocations shall be addressed by administrative rule.
+A person who holds a Herptile Special Use permit or Limited Entry permit and who violates a provision of this Act, an administrative rule authorized under this Act, or a provision of the United States Code that involves the taking, possessing, killing, harvesting, transportation, selling, exporting, or importing of any herptile protected by this Act, when any part of the United States Code violation occurred in Illinois, shall have his or her permit revoked and permit privileges under this Act suspended for a period to be set by administrative rule.
+Department suspensions and revocations shall be addressed by administrative rule.
+A person whose privileges or permit to possess a special use herptile have been suspended or revoked may appeal that decision in accordance with the provisions set forth in administrative rule.
+(Source: P.A. 102-315, eff. 1-1-22; 102-837, eff. 5-13-22.)
+
+(510 ILCS 68/75-5)
+Sec. 75-5. Record keeping requirements. A person who possesses a special use herptile must maintain records pertaining to the acquisition, possession, and disposition of the special use herptile as provided by administrative rule. These records shall be maintained for a minimum of 2 years after the date the special use herptile is no longer in possession of the permit holder. All records are subject to inspection by authorized law enforcement officers. In addition to maintaining records, all special use herptiles must be either pit-tagged or microchipped to individually identify them and the pit-tag or microchip numbers are also to be maintained as other pertinent records, unless otherwise provided by administrative rule.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/80-5)
+Sec. 80-5. Injury to a member of public by special use herptiles. A person who possesses a special use herptile without complying with the requirements of this Act and the rules adopted under the authority of this Act and whose special use herptile causes bodily harm to a person when the possessor knew or should have known that the herptile had a propensity, when provoked or unprovoked, to harm, cause injury to, or otherwise substantially endanger a member of the public is guilty of a Class A misdemeanor. A person who possesses a special use herptile without complying with the requirements of this Act and the rules adopted under the authority of this Act and whose special use herptile causes great bodily harm or death to a person when the possessor knew or should have known that the herptile had a propensity, when provoked or unprovoked, to harm, cause injury to, or otherwise substantially endanger a member of the public is guilty of a Class 4 felony.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/85-5)
+Sec. 85-5. Prohibited acts. Except as otherwise provided in this Act or by administrative rule, a person shall not own, possess, keep, import, transfer, harbor, bring into this State, breed, propagate, buy, sell, or offer to sell, or have in his or her custody or control a special use herptile.
+A person shall not release any special use herptile into the wild at any time unless authorized by the Director in writing. The possessor of a special use herptile must immediately contact the animal control authority or law enforcement agency of the municipality or county where the possessor resides if a special use herptile escapes or is released.
+The possessor of a special use herptile shall not keep, harbor, care for, transport, act as the custodian of, or maintain in his or her possession the special use herptile in anything other than an escape-proof enclosure.
+The possessor of a special use herptile shall not transport the special use herptile to or possess the special use herptile at a public venue, commercial establishment, retail establishment, or educational institution unless specifically authorized by permit or required to render veterinary care to the special use herptile.
+The possessor of a special use herptile, at all reasonable times, shall not deny the Department or its designated agents and officers access to premises where the possessor keeps a special use herptile to ensure compliance with this Act.
+Except as otherwise provided in this Act or by administrative rule, a person shall not buy, sell, or barter, or offer to buy, sell, or barter a special use herptile.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/90-5)
+Sec. 90-5. Penalties.
+(a) Unless otherwise stated in this Act, a violation of this Act is a Class A misdemeanor.
+(b) A person who violates Article 85 of this Act is guilty of a Class A misdemeanor for a first offense and a Class 4 felony for a second or subsequent offense.
+(c) A person who violates Article 75 of this Act is guilty of a Class B misdemeanor. A violation of the record keeping requirement for each individual special use herptile constitutes a separate offense.
+(d) Any person who takes, possesses, captures, kills, or disposes of any herptile protected under this Act in violation of this Act is guilty of a Class B misdemeanor unless otherwise stated in this Act.
+(e) All fines and penalties collected under the authority of this Act or its administrative rules shall be deposited into the Illinois Wildlife Preservation Fund.
+(Source: P.A. 102-315, eff. 1-1-22; 103-363, eff. 7-28-23.)
+
+(510 ILCS 68/95-5)
+Sec. 95-5. Assumption of risk. Each person who owns, possesses, or keeps a herptile expressly assumes the risk of and legal responsibility for injury, loss, or damage to the person or property that results from the ownership, possession, or keeping, of the herptile. Each owner, keeper, or possessor of a herptile shall be solely liable to manage, care for, and control a particular herptile species, and it shall be the duty of each owner, keeper, or possessor, to maintain reasonable control of the particular herptile at all times, and to refrain from acting in a manner that may cause or contribute to the injury of person, whether in public or on private property.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/100-5)
+Sec. 100-5. Prima facie evidence; confiscation. The possession of any herptile, special use herptile, or part of any herptile or special use herptile protected under this Act is prima facie evidence that the herptile or special use herptile or any part of is subject to the provisions of this Act, including administrative rules.
+Whenever the contents of any box, barrel, package, or receptacle consists partly of contraband and partly of a legally possessed or shipped herptile or special use herptile or any part of a legally possessed or shipped herptile or special use herptile, the entire contents of the box, barrel, or package, or other receptacle are subject to confiscation.
+Whenever a person has in his or her possession in excess of the number of herptiles or special use herptiles or any parts of herptiles or special use herptiles permitted under this Act, including administrative rules, the entire number of herptiles or special use herptiles or any parts of herptiles or special use herptiles in his or her possession is subject to confiscation, seizure, or forfeiture.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/100-10)
+Sec. 100-10. Search and seizure. Whenever any authorized employee of the Department, sheriff, deputy sheriff, or other peace officer of the State has reason to believe that any person, owner, possessor, commercial institution, pet store, or reptile show vendor or attendee possesses any herptile or any part or parts of a herptile contrary to the provisions of this Act, including administrative rules, he or she may file, or cause to be filed, a sworn complaint to that effect before the circuit court and procure and execute a search warrant. Upon execution of the search warrant, the officer executing the search warrant shall make due return of the search warrant to the court issuing the search warrant, together with an inventory of all the herptiles or any part or parts of a herptile taken under the search warrant. The court shall then issue process against the party owning, controlling, or transporting the herptile or any part of a herptile seized, and upon its return shall proceed to determine whether or not the herptile or any part or parts of a herptile were held, possessed, or transported in violation of this Act, including administrative rules. In case of a finding that a herptile was illegally held, possessed, transported, or sold, a judgment shall be entered against the owner or party found in possession of the herptile or any part or parts of a herptile for the costs of the proceeding and providing for the disposition of the property seized, as provided for by this Act.
+(Source: P.A. 102-315, eff. 1-1-22; 103-154, eff. 6-30-23.)
+
+(510 ILCS 68/100-15)
+Sec. 100-15. Seizure and forfeiture. If any person is found to possess a special use herptile that is in violation of this Act, including any administrative rules, then the special use herptile and any equipment or items used contrary to this Act shall be subject to seizure and forfeiture by the Department under Section 100-10. Any special use herptile seized in violation of this Act may immediately be placed in a facility approved by the Department.
+If a person's special use herptile has been seized by the Department, then the owner and possessor of the special use herptile is liable for the reasonable costs associated with the seizure, placement, testing, and care for the special use herptile from the time of confiscation until the time the special use herptile is relocated to an approved facility or person holding a valid Herptile Special Use permit or is otherwise disposed of by the Department.
+The circuit court, in addition to any other penalty, may award any seized or confiscated special use herptiles or items to the Department. The circuit court, in addition to any other penalty, may assess a fee upon a person who pleads guilty to the provisions of this Act equal to the amount established or determined to maintain the special use herptile until it is permanently placed in a facility approved by the Department or otherwise disposed of.
+(Source: P.A. 102-315, eff. 1-1-22 .)
+
+(510 ILCS 68/105-5)
+Sec. 105-5. Administrative rules. The Department is authorized to adopt administrative rules for carrying out, administering, and enforcing the provisions of this Act. The administrative rules shall be adopted in accordance with the Illinois Administrative Procedure Act.
+Rules, after becoming effective, shall be enforced in the same manner as other provisions of this Act. It is unlawful for any person to violate any provision of any administrative rule adopted by the Department. Violators of administrative rules are subject to the penalties in this Act.
+(Source: P.A. 98-752, eff. 1-1-15 .)
+
+(510 ILCS 68/110-5)
+Sec. 110-5. Exemptions. When acting in their official capacity, the following entities and their agents are exempt from Section 75-5 and 85-5 of this Act:
+(1) public zoos or aquaria accredited by the
+Association of Zoos and Aquariums or the Zoological Association of America;
+(2) licensed veterinarians or anyone operating under
+the authority of a licensed veterinarian who is actively treating a special use herptile that is being maintained in the veterinarian facility in accordance with Sections 10-25, 20-15, and 25-15 of this Act in order to prevent the escape of the herptile and protect public health and safety;
+(3) (blank);
+(4) accredited research or medical institutions;
+(5) licensed or accredited educational institutions;
+(6) circuses licensed and in compliance with the
+Animal Welfare Act and all rules adopted by the Department of Agriculture;
+(7) federal, State, and local law enforcement
+officers, including animal control officers acting under the authority of this Act;
+(8) members of federal, State, or local agencies
+approved by the Department; and
+(9) (blank);
+(10) any motion picture or television production
+company that uses licensed dealers, exhibitors, and transporters under the federal Animal Welfare Act, 7 U.S.C. 2132.
+(Source: P.A. 102-315, eff. 1-1-22 .)

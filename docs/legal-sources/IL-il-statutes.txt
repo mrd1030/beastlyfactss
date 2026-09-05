@@ -1,0 +1,525 @@
+# Illinois 720 ILCS 5/48-10, Dangerous animals, and 520 ILCS 5, Wildlife Code
+
+sourceId: il-720-48-10 / il-520-5 / il-520-10
+jurisdiction: IL
+url: https://www.ilga.gov/Legislation/ILCS/Fulltext?DocName=072000050K48-10
+     https://www.ilga.gov/Legislation/ILCS/Fulltext?DocName=052000050K2.2
+     https://www.ilga.gov/Legislation/ILCS/Fulltext?DocName=052000100K3
+fetched: 2026-09-05
+fetch notes: see the header of IL-il-510-68.txt for the DocName scheme.
+
+CITE THE LIVE STATUTE. Almost every secondary source, and several entries previously on this
+map, cite the Illinois Dangerous Animals Act at 720 ILCS 585. P.A. 98-752 repealed it effective
+1 January 2015 and moved it to 720 ILCS 5/48-10. ILGA returns "not currently available" for
+720 ILCS 585 now.
+
+720 ILCS 5/48-10 in one line: 11 wild cats, bear, hyena, wolf, coyote, plus a blanket bar on
+primates. No hybrid clause, no size test, no catch-all. The serval is NOT on it. The Bengal is
+not reached. And it states that "Dangerous animal does not mean any herptiles included in the
+Herptiles-Herps Act", so it never answers a reptile question.
+
+520 ILCS 5/2.2 is the Wildlife Code's scope and protected species list. Two things to find in it:
+  the flying squirrel, Glaucomys volans, under "OTHER MAMMALS", which is what makes it a permit
+  species; and the absence of Psittacidae anywhere in the bird families, which is what leaves
+  every parrot outside the Act.
+
+520 ILCS 5/3.23 carries three clauses that decide map animals and are easy to miss because they
+sit at the end of a breeder-permit section:
+  the Class A Noncommercial game breeders permit, $10, for anyone wishing "to possess, propagate,
+    hold in captivity but not offer for sale any species protected by this Act" - a real personal
+    route, not an institutional one;
+  a flat bar on holding or possessing "San Juan (sometimes called European) rabbits", with no
+    permit available;
+  and a bar on releasing or propagating for release the monk parakeet - release only, not
+    possession, which is narrower than most states go with that bird.
+
+520 ILCS 10/3 is the Endangered Species Protection Act possession bar. No captive-bred carve-out.
+With 17 Ill. Adm. Code 1010 it is what makes the western hognose a permit animal in Illinois.
+
+(720 ILCS 5/48-10)
+Sec. 48-10. Dangerous animals.
+(a) Definitions. As used in this Section, unless the context otherwise requires:
+"Dangerous animal" means a lion, tiger, leopard,
+ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.
+"Owner" means any person who (1) has a right of
+property in a dangerous animal or primate, (2) keeps or harbors a dangerous animal or primate, (3) has a dangerous animal or primate in his or her care, or (4) acts as custodian of a dangerous animal or primate.
+"Person" means any individual, firm, association,
+partnership, corporation, or other legal entity, any public or private institution, the State, or any municipal corporation or political subdivision of the State.
+"Primate" means a nonhuman member of the order
+primate, including but not limited to chimpanzee, gorilla, orangutan, bonobo, gibbon, monkey, lemur, loris, aye-aye, and tarsier.
+(b) Dangerous animal or primate offense. No person shall have a right of property in, keep, harbor,
+care for, act as custodian
+of or maintain in
+his or her possession any dangerous animal or primate except at a properly maintained zoological
+park, federally licensed
+exhibit, circus, college or university, scientific institution, research laboratory, veterinary hospital, hound running area, or animal
+refuge in an escape-proof enclosure.
+(c) Exemptions.
+(1) This Section does not prohibit a person who had
+lawful possession of a primate before January 1, 2011, from continuing to possess that primate if the person registers the animal by providing written notification to the local animal control administrator on or before April 1, 2011. The notification shall include:
+(A) the person's name, address, and telephone
+number; and
+(B) the type of primate, the age, a photograph, a
+description of any tattoo, microchip, or other identifying information, and a list of current inoculations.
+(2) This Section does not prohibit a person who has a
+permanent disability with a severe mobility impairment from possessing a single capuchin monkey to assist the person in performing daily tasks if:
+(A) the capuchin monkey was obtained from and
+trained at a licensed nonprofit organization described in Section 501(c)(3) of the Internal Revenue Code of 1986, the nonprofit tax status of which was obtained on the basis of a mission to improve the quality of life of severely mobility-impaired individuals; and
+(B) the person complies with the notification
+requirements as described in paragraph (1) of this subsection (c).
+(d) A person who registers a primate shall notify the local animal control administrator within 30 days of a change of address. If the person moves to another locality within the State, the person shall register the primate with the new local animal control administrator within 30 days of moving by providing written notification as provided in paragraph (1) of subsection (c) and shall include proof of the prior registration.
+(e) A person who registers a primate shall notify the local animal control administrator immediately if the primate dies, escapes, or bites, scratches, or injures a person.
+(f) It is no defense to a violation of subsection (b)
+that the person violating subsection
+(b) has attempted to domesticate the dangerous animal. If there appears
+to be imminent danger to the public, any
+dangerous animal found not in compliance with the provisions of this Section
+shall be subject to
+seizure and may immediately be placed in an approved facility. Upon the
+conviction of a person for a violation of subsection (b), the animal with regard
+to which the conviction was obtained shall be confiscated and placed in an
+approved facility, with the owner responsible for all costs
+connected with the seizure and confiscation of the animal.
+Approved facilities include, but are not limited to, a zoological park,
+federally licensed exhibit,
+humane society, veterinary hospital or animal refuge.
+(g) Sentence. Any person violating this Section is guilty of a Class C
+misdemeanor. Any corporation or
+partnership, any officer, director, manager or managerial agent of the
+partnership or corporation who violates this Section or causes the
+partnership or corporation to violate this Section is guilty of a Class C misdemeanor. Each day of violation constitutes a separate offense.
+(Source: P.A. 98-752, eff. 1-1-15; 99-143, eff. 7-27-15.)
+Footer
+
+======================= 520 ILCS 5 (Wildlife Code) =======================
+
+(520 ILCS 5/1.2) (from Ch. 61, par. 1.2)
+Sec. 1.2.
+This Act shall be administered by and under the direction
+of the Department of Natural Resources. As used in this
+Act, unless the context otherwise requires, the terms specified in the Sections following this Section and preceding Section 1.3 have the meanings ascribed to them in those Sections.
+(Source: P.A. 98-756, eff. 7-16-14.)
+
+(520 ILCS 5/1.2a) (from Ch. 61, par. 1.2a)
+Sec. 1.2a.
+"Administrative rule" means an administrative
+rule of the
+Department issued under Section 1.3 of this Act.
+(Source: P.A. 85-152.)
+
+(520 ILCS 5/2.2) (from Ch. 61, par. 2.2)
+Sec. 2.2. This Act shall apply only to the wild birds and parts of
+wild birds (including, but not limited to, their nests and eggs), and wild mammals and parts
+of wild mammals, which shall include their green hides, in the State of
+Illinois, or which may be brought into the State.
+Wildlife protected by this Act, hereby defined as protected species, include the following wild species and all
+wild species contained in listed families, including, but not limited to, groups of wild species preceding each family
+name: (except the House Sparrow, Passer
+domesticus; European Starling, Sturnus vulgaris; and Rock Pigeon, Domestic
+Pigeon, Columba livia; Eurasian Collared Dove, Streptopelia decaocto; Ringed Turtle-Dove, Streptopelia roseogrisea; Purple Swamphen, Porphyrio porphyio; or Muscovy Duck, Cairina moschata). GAME BIRDS-Ruffed grouse, Bonasa umbellus;
+Sharp-tailed grouse, Tympanuchus phasianellus; Northern Bobwhite, Colinus
+virginianus; Gray Partridge, Perdix perdix; Chukar,
+Alectoris chukar; Ring-necked Pheasant, Phasianus colchicus; Greater
+Prairie Chicken, Tympanuchus cupido; Wild Turkey, Meleagris gallopavo.
+MIGRATORY GAME BIRDS-Waterfowl including brant, ducks, geese, and
+swans, Anatidae; wild species of the families Rallidae (Virginia Rails and Sora Rails), Scolopacidae (Wilson's Snipe and Woodcock), Columbidae (Mourning Dove and White-winged Dove), and Corvidae that may be legally hunted as provided for in Section 2.18 of this Act.
+RESIDENT AND MIGRATORY NON-GAME BIRDS-Loons, Gaviidae; grebes,
+Podicipedidae; pelicans, Pelecanidae; gannets, Sulidae; cormorants, Phalacrocoracidae; anhingas, Anhingidae; frigatebirds, Fregatidae;
+herons, bitterns and egrets, Ardeidae; ibises and spoonbills,
+Threskiornithidae; storks, Ciconiidae; vultures, Cathartidae; kites, hawks, ospreys,
+and eagles, Accipitridae; falcons, merlins, and kestrels, Falconidae; rails, gallinules, and moorhens, which may not be legally hunted, Rallidae (unless listed as a migratory game bird); cranes, Gruidae; all shorebirds that may not be legally hunted, of the families Charadriidae, Scolopacidae (unless listed as a migratory game bird),
+and Recurvirostridae gulls,
+terns, jaegers, skimmers, and kittiwakes, Laridae; dovekies and murrelets, Alcidae; doves and pigeons, which may not be legally hunted, Columbidae (unless listed as a migratory game bird); cuckoos and anis, Cuculidae; owls, Tytonidae and Strigidae;
+whip-poor-wills, chuck-will's-widows, and nighthawks, Caprimulgidae; swifts, Apodidae;
+hummingbirds, Trochilidae, Kingfishers, Alcedinidae; woodpeckers, flickers, and sapsuckers, Picidae;
+kingbirds, pewees, phoebes, and flycatchers, Tyrannidae shrikes, Laniidae; vireos, Vireonidae; magpies, ravens, and jays, Corvidae; larks, Alaudidae; swallows and
+martins, Hirundinidae; chickadees and
+titmice, Paridae; nuthatches, Sittidae; creepers, Certhiidae; wrens,
+Troglodytidae; kinglets, Regulidae; gnatcatchers, Sylviidae; robins,
+bluebirds, solitaires, veerys, and thrushes, Turdidae; mockingbirds, catbirds, and thrashers, Mimidae;
+pipits, Motacillidae; waxwings, Bombycillidae; warblers, parulas, redstarts, ovenbirds, waterthrushes, yellowthroats, and chats, Parulidae; tanagers, Thraupidae; towhees, longspurs, sparrows, buntings, and juncos, Emberizidae; dickcissels, cardinals, buntings, and grosbeaks, Cardinalidae;
+blackbirds, meadowlarks, bobolinks, grackles, cowbirds, and orioles, Icteridae; grosbeaks, finches, crossbills, redpolls, and siskins, Fringillidae. GAME MAMMALS-Woodchuck, Marmota
+monax; Gray squirrel, Sciurus carolinensis; Fox squirrel, Sciurus niger;
+Eastern cottontail, Sylvilagus
+floridanus; Swamp rabbit, Sylvilagus aquaticus; White-tailed deer,
+Odocoileus virginianus. FUR-BEARING MAMMALS-Muskrat, Ondatra zibethicus;
+Beaver, Castor canadensis; Raccoon, Procyon lotor; Opossum, Didelphis virginiana; Least weasel, Mustela nivalis; Long-tailed weasel, Mustela
+frenata; Mink, Mustela vison; River otter, Lontra canadensis; Striped skunk,
+Mephitis mephitis; Badger, Taxidea taxus; Red fox, Vulpes vulpes; Gray fox,
+Urocyon cinereoargenteus; Coyote, Canis latrans; Bobcat, Lynx rufus. OTHER
+MAMMALS-Flying squirrel, Glaucomys volans; Red squirrel, Tamiasciurus
+hudsonicus; Eastern Woodrat, Neotoma floridana; Golden Mouse, Ochrotomys
+nuttalli; Rice Rat, Oryzomys palustris; Franklin's Ground Squirrel, Spermophilus franklinii; Bats, Vespertilionidae; Gray wolf, Canis lupus; American black bear, Ursus americanus; Cougar, Puma concolor.
+It shall be unlawful for any person at any time to take, possess, sell,
+or offer for sale, propagate, or release into the wild, any of these wild birds (dead or alive) and parts of
+wild birds (including, but not limited to, their nests and eggs), wild mammals (dead or alive)
+and parts of wild mammals, including their green hides contrary to the
+provisions of this Act. However, nothing in this Act shall prohibit
+bona-fide public or state scientific, educational or zoological
+institutions from receiving, holding, and displaying protected species that
+were salvaged or legally obtained.
+It shall be unlawful for any person to take any other living wildlife
+animal not covered by this Act without the permission of the landowner
+or tenant.
+(Source: P.A. 103-23, eff. 1-1-24 .)
+
+(520 ILCS 5/2.3) (from Ch. 61, par. 2.3)
+Sec. 2.3. Release of Wildlife - Permission. It shall be unlawful to
+release from captivity any live bird or mammal, either indigenous or non-indigenous in this State and that is ordinarily considered a wildlife species except as
+provided in Sections 2.2, 2.4, 2.34, 2.37, 3.23 and
+3.29, anywhere in this State without first securing the written permission of the
+Department to do so. The Department may set forth applicable regulations by
+administrative rule.
+(Source: P.A. 97-431, eff. 8-16-11.)
+
+(520 ILCS 5/2.5)
+Sec. 2.5. (Repealed).
+(Source: P.A. 99-143, eff. 7-27-15. Repealed by P.A. 100-489, eff. 9-8-17.)
+
+(520 ILCS 5/3.21) (from Ch. 61, par. 3.21)
+Sec. 3.21.
+(a) Every person before engaging in the business of
+taxidermy shall obtain a license for such purpose from the Department.
+Application for such license shall be filed with the Department and shall
+set forth the name of the applicant; its principal officers, if the
+applicant is a corporation, or the partners, if the applicant is a
+partnership; the location of the place of business and such additional
+information as the Department may require. The annual fee for each
+taxidermist license shall be $25.00. All licenses issued to taxidermists
+are valid only at the location described and designated on the application
+for such license. All taxidermist permits shall expire on March 31 of
+each year. Persons employed by a licensed taxidermist shall not be
+required to possess a taxidermist license while working for and at the
+place of business of the license holder.
+Licensed taxidermists shall submit to the Department a list naming all
+individuals who will be working at the place of business specified on
+the license. Only those individuals whose names are on file with the
+Department shall be authorized to work under the scope of the taxidermist's
+license.
+(b) Taxidermists shall keep written records of all birds or mammals,
+or parts thereof, received or returned by them. Records shall include the
+following information:
+(1) The date the bird or mammal was received.
+(2) The name and address of the person from whom the
+bird or mammal was received.
+(3) The number and species of each bird or mammal
+received.
+(4) The number and state of issuance of the hunting
+or trapping license, or special Department permit, of the individual from whom the bird or mammal was received. In the absence of a license or permit number, the taxidermist may rely on the written certification of the person from whom the bird or mammal was received that the specimen was legally taken or obtained, or, in the event the individual is exempt from the apposite license requirements, an indication of such exemption.
+(c) All birds or mammals or parts thereof that have been received,
+preserved
+or mounted or possessed by a taxidermist are required to bear a coded origin
+tag or label. The origin tag or label shall correspond with written
+records containing more complete information as required by the Department.
+(d) Taxidermy records shall be open for inspection by any peace officer
+at any reasonable hour. Taxidermists shall maintain records for a period
+of 2 years from the date of receipt of the bird or mammal or for as long
+as the specimen or mount remains in the taxidermist's possession, whichever
+is longer. The Department may require the taxidermist to submit to it such
+information as it deems necessary.
+(e) A licensed taxidermist may possess the green hides of furbearers and
+other game mammals the year round as long as such hides are tagged as and
+remain the property of the individual who legally took them and for whom the
+taxidermist is performing services.
+(f) A licensed taxidermist may without a fur tanners permit tan the
+green hides of furbearers and other game mammals as long as such hides are
+tagged as and remain the property of the individual who legally took them
+and for whom the taxidermist is performing services.
+(f.5) A licensed taxidermist may, without a fur buyer's permit, buy, sell,
+transport and possess the green or tanned hides of any legally obtained
+furbearer or game mammal the year round as long as the hides in the
+taxidermist's possession are used for taxidermy purposes only and bear a coded
+origin tag or label. The origin tag or label shall correspond with written
+records containing more complete information as required by the Department.
+(g) No taxidermist shall have in his or her possession any bird or
+mammal that is not listed in his written records and properly tagged or
+labeled.
+(h) All persons licensed as taxidermists under this Act who shall ship
+any birds or mammals or parts thereof that have been received, preserved or
+mounted, shall tag or label such shipment and such tag or label shall
+state the name of the taxidermist and the number and date of his or her
+license.
+(i) Nothing in this Section removes taxidermists from responsibility for
+the observance of any federal laws, rules, or regulations that may apply to the
+taxidermy business.
+(Source: P.A. 100-256, eff. 1-1-18 .)
+
+(520 ILCS 5/3.22) (from Ch. 61, par. 3.22)
+Sec. 3.22. Issuance of scientific and special purpose permits. Scientific permits may be granted by the Department to any properly accredited
+person at least 18 years of age, permitting the capture, marking, handling, banding, or collecting
+(including fur, hide, skin, teeth, feathers, claws, nests, eggs, or young),
+for strictly scientific purposes, of any of the fauna now protected
+under this Code. A special purpose permit may be granted to qualified
+individuals for the purpose of salvaging dead, sick, orphaned, or
+crippled wildlife species protected by this Act for permanent donation to
+bona fide public or state scientific, educational or zoological
+institutions or, for the purpose of rehabilitation and subsequent release
+to the wild, or other
+disposal as directed by the Department.
+Private educational organizations may be granted a special purpose permit to possess wildlife or parts thereof for educational purposes. A special purpose permit is required prior to treatment, administration, or both of any wild fauna protected by this Code that is captured, handled, or both in the wild or will be released to the wild with any type of chemical or other compound (including but not limited to vaccines, inhalants, medicinal agents requiring oral or dermal application) regardless of means of delivery, except that individuals and organizations removing or destroying wild birds and wild mammals under Section 2.37 of this Code or releasing game birds under Section 3.23 of this Code are not required to obtain those special purpose permits. Treatment under this special purpose permit means to effect a cure or physiological change within the animal. The criteria, definitions, application process, fees, and standards for a scientific or special purpose permit shall be provided by administrative rule. The annual fee for a scientific or special purpose permit shall not exceed $100. The Department shall set forth applicable regulations in an administrative rule covering qualifications and facilities needed to obtain both a scientific and a special purpose permit. The application for these permits shall be approved by the Department to determine if a permit should be issued. Disposition of fauna taken under the authority of this Section shall be specified by the Department.
+The holder of each such scientific or special purpose permit shall make to the Department a report in writing
+upon blanks furnished by the Department. Such reports shall be made (i) annually if the permit is granted for a period of more than one year or (ii) within 30 days after the expiration of the permit if the permit is granted for a period of one year or less. Such reports shall include information
+which the Department may consider necessary.
+(Source: P.A. 96-979, eff. 7-2-10; 97-1136, eff. 1-1-13.)
+
+(520 ILCS 5/3.23) (from Ch. 61, par. 3.23)
+Sec. 3.23. Before any person shall hold, possess or engage in the raising of
+game mammals, game birds or migratory game birds protected by this Act,
+he shall procure a permit from the Department to do so. Any person
+desiring to possess, propagate, hold in captivity but not offer for sale
+any species protected by this Act may do so by
+acquiring either a Class A Noncommercial bird breeders permit or a Class
+A Noncommercial game breeders permit. Any person desiring to possess,
+propagate, to hold in captivity, to sell alive, for propagation or
+hunting purposes, sell dressed for food purposes any species protected by
+this Act may do so by acquiring a
+Class B Commercial bird breeders permit or a Class B Commercial/game
+breeders permit.
+No person shall breed, raise, sell
+or offer to sell ferrets without first obtaining from the Department either a Class A
+noncommercial game breeder permit or a Class B commercial game breeder
+permit; such permit shall not, however,
+authorize the use or sale of ferrets for taking any of the wild birds or
+wild mammals protected by this Act.
+Except for a Class A noncommercial ferret permit which shall be issued
+free of charge, the fee for a Class A permit shall be $10. The
+fee
+for a
+Class B permit shall
+be $20. Both Class A and Class B permits shall expire
+on March 31 of each year.
+Holders of wild game or bird breeder's permits may import game mammals, game
+birds or migratory game birds into the State of Illinois but may release
+the same only with the permission of the Director.
+Bobwhite quail and male pheasants raised in Illinois from eggs
+originating in Illinois and reared under the provisions of this
+Act may be released and harvested by hunting during the open season
+provided by the regulations under Sections 2.6 and 2.7 of this Act.
+Hen pheasants raised in Illinois from eggs originating in Illinois and
+reared under the provisions of this Act may be released but may be
+harvested only as provided by the regulations under Sections 2.34 and 3.28 of this Act.
+Licensed breeders who hold Class B permits may sell live
+hand-reared pheasants, bobwhite quail and chukar partridges to organized
+field trial clubs, or to individuals operating dog training grounds
+designated by the Department, to be used for field trial purposes and
+such pheasants, bobwhite quail and chukar partridges may be killed by
+shooting in connection therewith on areas approved by the Department.
+Tags or decals on containers, of a type not removable without
+breaking or mutilating the tag or decal, shall be used to designate the
+carcasses of game mammals, game birds or migratory game birds raised in
+captivity, as provided in this Section, and all game imported legally
+from any source outside the State of Illinois shall be so designated
+with irremovable tags or decals. If such tag or decal is not provided
+for in the State of origin the consignor shall obtain such tags or
+decals from the Department to identify such carcasses. Upon the
+application and payment of a fee of 10 cents for such tag or decal, the
+Department shall furnish permittees with such tags or decals, except
+that the Department shall only furnish any permittee with sufficient
+tags or decals for the number of game mammals, game birds or migratory
+game birds, or parts of carcasses thereof, as may from time to time have
+been disposed of by the permittee. One of such tags shall be securely
+affixed to one of the legs of each game mammal, except deer, where a tag
+shall be affixed to each leg, game bird or migratory game bird before
+removing such game mammal, game bird or migratory game bird from the
+premises of the permittee, and such tags shall remain upon the leg or
+legs of such mammal, game bird or migratory bird until prepared for
+consumption. Class B permit holders who sell such species dressed for food
+purposes shall affix such tags to one of the legs of each game mammal, except
+deer, where a tag must be secured to each leg, game bird or migratory game
+bird or shall secure such decals on the containers in which the carcasses
+are transported before removing such species from the premises of the permittees.
+Nothing in this Section shall be construed to give any such permittee
+authority to take game mammals, game birds or migratory game birds in
+their wild state contrary to other provisions of this Act, or to remove
+such permittee from responsibility for the observance of any Federal
+laws, rules or regulations which may apply to such game mammals, game
+birds or migratory game birds.
+When any wild birds or wild mammals raised in captivity, or parts
+thereof, are transported or offered for shipment by the holder of a
+permit, issued under the provisions of Sections 1.6 and 1.7 hereof, or
+by a licensed breeder from outside the State, such shipment shall be
+plainly tagged or with decals if in containers so as to show the
+contents thereof, the name of the shipper, his place of residence, the
+place from where the shipment is made, its destination, name of
+consignee and the number, date and type of permit under which shipment
+is offered.
+Game and game bird breeders shall keep records of the acquisition, sale
+or disposition of each game mammal or game bird so raised or propagated,
+showing the date of such transaction, the name and address of the person
+acquiring or receiving such game mammal or game bird, and shall furnish
+such person with a certificate of purchase showing the number and kinds of
+game mammals or game birds so disposed of, the date of transaction, the
+name of the person receiving, collecting, or buying such game mammals or
+game birds, and such other information as the Department may require. Such
+records and certificates of purchase or disposition shall be immediately
+presented to officers or authorized employees of the Department, any
+Sheriff, Deputy Sheriff, or other peace officer when request is made for same.
+Failure to produce such records of certificates of purchase or
+disposition shall be prima facie evidence that such game mammals or game
+birds are contraband within the State of Illinois. Records shall be
+maintained from the date of acquisition until 2 years after the date of
+disposition or sale.
+Duly organized clubs and associations approved by the Department and
+engaged in the raising, for release only and without profit, any of the
+game mammals and game birds protected by this Act are exempt from the
+provisions of this Section.
+No person shall release, hold, possess, or engage in raising San Juan
+(sometimes called European) rabbits or finnraccoons (sometimes called
+raccoon dogs) (Nyctereutes procyonoides) in this State and no permit shall be
+issued therefor.
+No person shall release, or propagate for the release any Nutria
+(Myocastor coypus), and monk parakeet (Myiopsitta monachus), in
+this State at any time.
+(Source: P.A. 95-331, eff. 8-21-07.)
+
+(520 ILCS 5/3.24) (from Ch. 61, par. 3.24)
+(Text of Section before amendment by P.A. 104-703 )
+Sec. 3.24.
+Before any person, except permittees under Section 3.23 of
+this Act, shall engage in buying, selling or processing wild game for the purpose
+of buying, selling or shipping the same, including the carcasses of
+fur-bearing mammals, for public consumption, he shall
+first procure a license
+to do so from the Department. Dealers in deer, or any parts thereof,
+legally taken and possessed in and transported from, other states, shall
+also be licensed under the provisions of this Section. All such deer, or
+parts thereof, shall be marked with permanent irremovable tags, or
+similar devices, to establish and retain their origin and identity.
+The terms "buying or selling" include buying or selling by hotel
+keepers, restaurant keepers and others engaged in buying or selling
+prepared foods for consumption.
+A permit shall be procured for each separate market or place of
+business operated by any person who sells wild game for public
+consumption and for each vehicle from
+which game or fur-bearing mammals are sold. Such
+permits shall be
+conspicuously displayed at all times.
+This permit shall be known as a processed wild game dealer's permit. It
+shall be issued by the Department for a fee of $25.00 annually and shall
+expire on March 31st of each year. The Department may prescribe
+the necessary forms as may be desirable for the maintenance of records
+by the licensee, to record all transactions in wild game that may be
+marketed under the provisions of the laws of this State and game
+imported legally from other states.
+Nothing in this Section shall be construed to give the holder of a
+processed wild game dealer's permit authority to take game birds, game
+or fur-bearing mammals in their wild state contrary to other provisions of this Act.
+The person in possession of such game birds and mammals has the burden
+of proving the legality of his possession.
+(Source: P.A. 84-150.)
+(Text of Section after amendment by P.A. 104-703 )
+Sec. 3.24. Before any person, except permittees under Section 3.23 of this Act, shall engage in buying, selling or processing of captive-reared game birds, captive-reared migratory game birds, captive-reared game mammals, or legally taken furbearers for the purpose of buying, selling or shipping the same, including the carcasses of fur-bearing mammals, for public consumption, he shall first procure a license to do so from the Department.
+The terms "buying or selling" include buying or selling by hotel keepers, restaurant keepers and others engaged in buying or selling prepared foods for consumption.
+A permit shall be procured for each separate market or place of business operated by any person who sells captive-reared game birds, captive-reared migratory game birds, captive-reared game mammals, or legally taken furbearers for public consumption and for each vehicle from which captive-reared game birds, captive-reared migratory game birds, captive-reared game mammals, or legally taken furbearers are sold. Such permits shall be conspicuously displayed at all times.
+This permit shall be known as a processed wild game dealer's permit. It shall be issued by the Department for a fee of $25.00 annually and shall expire on March 31st of each year. The Department may prescribe the necessary forms as may be desirable for the maintenance of records by the licensee, to record all transactions in wild game that may be marketed under the provisions of the laws of this State and game imported legally from other states.
+Nothing in this Section shall be construed to give the holder of a processed wild game dealer's permit authority to take or sell game birds, migratory game birds, game mammals, or fur-bearing mammals in their wild state contrary to other provisions of this Act. The person in possession of such game birds, migratory game birds, game mammals, or fur-bearing mammals has the burden of proving the legality of their possession.
+No person shall sell the carcasses, or parts thereof, of game birds, migratory game birds, or game mammals in their wild state for public consumption.
+(Source: P.A. 104-703, eff. 1-1-27.)
+
+(520 ILCS 5/3.25) (from Ch. 61, par. 3.25)
+Sec. 3.25. Any individual who, within the State of
+Illinois, holds, possesses
+or engages in the breeding or raising of live fur-bearing mammals, protected
+by this Act, except as provided in Sections 1.6 or 1.7, shall be a fur-bearing
+mammal breeder in the meaning of this Act. Before any individual shall hold,
+possess or engage in the breeding or raising of live fur-bearing mammals,
+he shall first procure a fur-bearing mammal breeder permit. Fur-bearing
+mammal breeder permits shall be issued by the Department. The annual fee
+for each fur-bearing mammal breeder permit shall be $25. All fur-bearing
+mammal breeder permits shall expire on March 31 of each year.
+Holders of fur-bearing mammal breeder permits may hold, possess, engage
+in the breeding or raising, sell, or otherwise dispose of live fur-bearing
+mammals or their green hides, possessed thereunder, at any time of the year.
+Fur-bearing mammal breeders shall keep a record for 2 years from the
+date of the acquisition,
+sale or other disposition
+of each live fur-bearing mammal or its green hide so raised or propagated,
+showing the date of such transaction, the name and address of the
+individual
+receiving or buying such live fur-bearing mammal or its green hide, and
+when requested to do so, shall furnish such individual with
+a certificate of
+purchase showing the number and kinds of live fur-bearing mammals or green
+hides so disposed of, the date of the transaction, the name and permit number
+of the breeder, and the name of the individual receiving,
+collecting, or buying
+such live fur-bearing mammals or green hides, and such other information
+as the Department may require. Such records and certificates of purchase
+shall be immediately presented to officers or authorized employees of the
+Department, any sheriff, deputy sheriff, or other peace officer when request
+is made for same. Failure to produce such records or certificates of purchase
+shall be prima facie evidence that such live fur-bearing mammals or green
+hides are contraband with the State of Illinois. The holder of a fur-bearing
+mammal breeder permit may exhibit fur-bearing mammals commercially.
+Nothing in this Section shall be construed to give any such permittee
+authority to take fur-bearing mammals in their wild state contrary to
+other provisions of this Act, or to remove such permittee from
+responsibility for the observance of any Federal Laws, rules or
+regulations which may apply to such fur-bearing mammals.
+Holders of fur-bearing mammal breeder permits may import fur-bearing mammals
+into the State of Illinois but may release the same only after health and
+disease prevention requirements set forth by the Director and other State
+agencies have been met and permission of the Director has been granted.
+The breeding, raising and producing in captivity, and the marketing, by
+the producer, of mink (Mustela vison), red fox (Vulpes vulpes) or arctic fox
+(Alopex lagopus), as live animals, or as animal pelts or carcasses shall be
+deemed an agricultural pursuit, and all such animals so raised in captivity
+shall be deemed domestic animals, subject to all
+the laws of the State with reference to possession and ownership as are
+applicable at any time to domestic
+animals. All individuals engaged in the foregoing
+activities are fur farmers and engaged in farming for all statutory
+purposes. Such individuals are exempt from the fur-bearing mammal breeder
+permit requirements set forth in this Section if: (1) they are defined as
+farmers for Federal income tax purposes, and (2) at least 20 percent of
+their gross farm income as reported on Federal tax form Schedule F (Form
+1040) for the previous year is generated from the sale of mink, red fox or
+arctic fox as live animals, animal pelts or carcasses.
+No fur-bearing mammal breeder permits will be issued to hold,
+possess, or engage in the breeding and raising of striped skunks acquired after
+July 1, 1975, or coyotes acquired after July 1, 1978, except for coyotes that are held or possessed by a person who holds a hound running area permit under Section 3.26 of this Act. No fur-bearing mammal breeder permits will be issued to hold, possess, or engage in the breeding and raising of any dangerous animal as defined in Section 48-10 of the Criminal Code of 2012 acquired after July 1, 2022 except for coyotes that are held or possessed by a person who holds a hound running area permit under Section 3.26.
+(Source: P.A. 102-837, eff. 5-13-22.)
+
+(520 ILCS 5/3.26)
+Sec. 3.26. Hound running area permits; requirements.
+(a) Any person owning, holding, or controlling by lease, for a term of at least 5 years, any contiguous tract of land having an area prescribed by administrative rule who desires to establish a hound running area to pursue authorized species with hounds in a way that is not designed to capture or kill the authorized species, shall apply to the Department for a hound running area permit under this Section. The application shall be made under oath of the applicant or under oath of one of the applicant's principal officers if the applicant is an association, club, or corporation. The annual fee for each hound running area permit is $250. All hound running area permits expire on March 31 of each year.
+Every applicant under this Section must also hold a fur-bearing mammal breeder permit or a Class B commercial game breeder permit, as appropriate.
+Upon receipt of an application, the Department is authorized to inspect the area proposed to be a hound running area as described in the application, the general premises, the facilities where the authorized species are to be maintained or propagated, and the habitat for the authorized species. As part of the application and inspection process, the Department shall assess the ability of the applicant to operate a property as a hound running area. If the Department finds that (i) the area meets the requirements of all applicable laws and rules, (ii) the authorized species are healthy and disease free, and (iii) the issuing of the permit will otherwise be in the public interest, then the Department shall approve the application and issue the permit for the operation of the property described in the application.
+(b) Hound running areas shall be operated in a manner consistent with the following:
+(1) Authorized species may be pursued with dogs in a
+hound running area, but not in a manner or with the intent to capture or kill. The Department shall promulgate rules that establish appropriate and prohibited activities for hound running areas.
+(2) Every hound running area shall have dog-proof
+escape areas. "Dog-proof escape area" means a culvert, brush pile, fenced refuge, or other structure suitable for use by authorized species to safely escape from dogs present on the hound running area. The number, type, and spacing of dog-proof escape areas shall be prescribed by administrative rule.
+(3) Every permit holder shall promptly post on the
+hound running area, at intervals of not more than 500 feet, signs prescribed by the Department by administrative rule. The boundaries of the hound running area shall also be clearly defined by fencing and signs under administrative rules promulgated by the Department. The area, signs, fencing, dog-proof escape areas, and facilities to maintain the authorized species are subject to inspection by the Department at any reasonable time.
+(4) A permit holder may maintain authorized species
+in temporary confinement facilities on the hound running area or at another location inspected by the Department and specified on the permit. Authorized species held by a permit holder may only be released into a hound running area, except that authorized species held by a permit holder may be released into the wild, exported, or given to a person that does not hold a hound running area permit or a fur-bearing mammal breeder permit or a Class B Commercial game breeders permit as appropriate, after written authorization is obtained from the Director. Prior to being released into a hound running area, all newly acquired authorized species shall be provided at least 7 days to acclimate to the hound running area in which the animal will be pursued. Authorized species held under a permit are subject to inspection by an agent of the Department and this inspection may include removal of reasonable samples for examination.
+(5) Any person who releases or handles dogs on a
+hound running area is subject to the hunting license and habitat stamp requirements of this Act.
+(6) The permit holder shall keep accurate permanent
+records on forms prescribed by the Department. The permanent records shall include, for each supplier of authorized species: (i) the supplier's full name, address, and telephone numbers; (ii) the number, sex, and identifier designation of each animal purchased, donated, sold, traded, or given to the permit holder by that supplier; and (iii) the date of the event or transaction. The permanent records shall also include the identification of all authorized species, while under the control of the permit holder on the area or elsewhere, by identifier designation and sex, along with information for each animal of the authorized species that gave birth, was born, died, or was disposed of in some other manner or that was sold, traded, donated, or conveyed in some other manner, and the dates on which those events occurred.
+(7) Every permit holder shall attach an individually
+marked identifier provided by the Department to each animal of the authorized species maintained by the permit holder. The permit holder shall pay a fee for each identifier as established by the Department by administrative rule. The permit holder shall record the identifier for each animal maintained on the area or elsewhere or released into the area.
+(8) Any person using the hound running area shall at
+all times respect the property rights of the property owners and the owners of adjacent properties, and shall not injure or destroy any livestock or property of any of those property owners. Springs and streams shall not be contaminated or polluted in any manner by persons using the hound running area. The natural use of springs and streams by dogs using the area shall not constitute contamination or pollution. Unless the express permission of the property owner has been given, no person using a hound running area may (i) mutilate or cut trees or shrubs on the hound running area or (ii) pick berries, fruits, or nuts present on the hound running area.
+(c) Except as otherwise provided by administrative rule, it is unlawful for any person to enter a hound running area at any time with a firearm, bow and arrow, or trap.
+(d) A hound running area permit is not transferable from one person to another. When a permit holder sells or leases the property that comprises or includes a hound running area and the purchaser or lessee intends to continue to use the hound running area under this Section, the purchaser or lessee must apply for a permit as provided in subsection (a) of this Section.
+(e) All authorized species must be legally acquired.
+(f) A person breeding or otherwise maintaining authorized species in conjunction with a hound running area must have the authorized species annually inspected and certified by a licensed Illinois veterinarian to be disease free. Anyone violating this subsection (f) is guilty of a business offense and shall be fined an amount not exceeding $5,000.
+(g) The provisions of this Section are subject to modification by administrative rule.
+(Source: P.A. 95-196, eff. 1-1-08.)
+
+
+======================= 520 ILCS 10/3 (Endangered Species Protection Act) =======================
+
+(520 ILCS 10/3) (from Ch. 8, par. 333)
+Sec. 3. It is unlawful for any person:
+(1) to possess, take, transport, sell, offer for
+sale, give or otherwise dispose of any animal or the product thereof of any animal species which occurs on the Illinois List, unless otherwise authorized by law;
+(2) to deliver, receive, carry, transport or ship in
+interstate or foreign commerce plants listed as endangered by the federal government without a permit therefor issued by the Department as provided in Section 4 of this Act;
+(3) to take plants on the Illinois List without the
+express written permission of the landowner; or
+(4) to sell or offer for sale plants or plant
+products of endangered species on the Illinois List.
+(Source: P.A. 102-315, eff. 1-1-22 .)

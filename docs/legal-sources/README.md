@@ -36,6 +36,9 @@ about this species", not to claim a new verification date.
 | `CO-co-w11.txt` | Colorado's domestic animal and unregulated wildlife lists, current version. No reptiles in it any more |
 | `CO-co-w0-008.txt` | Colorado's prohibited species list, § 008(B), excerpted from the 166-page Chapter W-0 |
 | `CO-co-cpw-species-list.txt` | CPW's own species-by-species determinations, 303 rows. Start here for any Colorado animal |
+| `IL-il-510-68.txt` | Illinois Herptiles-Herps Act in full, with the three clauses that get summarised backwards flagged |
+| `IL-il-statutes.txt` | Illinois dangerous animal statute, Wildlife Code and Endangered Species Act possession bar |
+| `IL-il-admin-code.txt` | Illinois Parts 885 (herptiles), 1010 (endangered and threatened) and 805 (injurious species) |
 
 ## Reading the awkward ones
 
@@ -50,6 +53,12 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   as *Geochelone*, the crested gecko would be *Rhacodactylus*, and the bearded dragon is
   printed as *vittaceps* for *vitticeps*. Search the genus and the synonym, not just the
   current name.
+- **The Illinois files** are three different fetch mechanisms in one state. Statutes come one
+  section at a time from `ilga.gov/Legislation/ILCS/Fulltext?DocName=<doc>`, where DocName is a
+  4-digit chapter, the act number times ten padded to 5, then `K`, then the section: 510 ILCS
+  68/5-5 is `051000680K5-5`. Administrative rules come whole from
+  `ilga.gov/agencies/JCAR/EntirePart?titlepart=0170<part>`. A repealed act answers "not
+  currently available", which is how 720 ILCS 585 was confirmed dead.
 - **`CO-co-cpw-species-list.txt`** is parsed into two-line records, the species then its
   determination, so grep with `-A1`:
   `grep -A1 -i 'testudo horsfieldii' docs/legal-sources/CO-co-cpw-species-list.txt`

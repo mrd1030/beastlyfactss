@@ -1,0 +1,1802 @@
+# Illinois 17 Ill. Adm. Code 885 (Herptile Code), 1010 (T/E fauna) and 805 (Injurious Species)
+
+sourceId: il-herps-act / il-1010 / il-805
+jurisdiction: IL
+url: https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=01700885
+     https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=01701010
+     https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=01700805
+fetched: 2026-09-05
+fetch notes: the JCAR EntirePart endpoint serves whole administrative Parts as HTML and works
+  with plain curl. Titlepart is the 4-digit title (0170 for Title 17 Conservation) followed by
+  the 4-digit part. Unlike the ILCS side, this one needs no per-section requests.
+
+Part 885 was amended effective 31 July 2025 and Part 1010 effective 30 October 2025, so both
+are newer than most state material on this map.
+
+WHAT TO GREP FOR:
+  § 885.40   the native taxa list, to the subspecies. Whether a species is on it decides whether
+             the possession cap, the sport fishing licence and the Herpetoculture Permit apply.
+             Pantherophis guttatus is NOT on it.
+  § 885.20   seasons and limits. The common snapping turtle and the bullfrog get their own
+             regime: 15 June to 15 October, two a day, four in possession, no bowfishing in
+             sixteen named counties.
+  § 885.80   the $50 Herpetoculture Permit, needed to exceed the cap, to breed, or to sell.
+  § 885.105(j)  ADDED 2025, and the sharpest thing in the Part. Any hybrid, cross or
+             "morphological variation" of a listed herptile is treated as endangered, and the
+             examples given are pet-shop names: scaleless, root beer and creamsicle/dreamsicle
+             corn snakes. Those carry Pantherophis emoryi ancestry, and emoryi is Illinois
+             endangered. Four corn snake morph lines are endangered animals in Illinois while
+             the species itself is unregulated.
+  § 885.45   the boa/python section, and NOT the source of the "Boidae are exempt" line. That is
+             510 ILCS 68/15-5. This section is a handling rule for educational events.
+  § 885.48   medically significant amphibians, all toxic toads and frogs. Reaches no pet caudate.
+
+Part 1010, the three entries that touch the pet trade:
+  ENDANGERED  Great Plains Ratsnake, Pantherophis emoryi
+  THREATENED  Plains Hog-nosed Snake, Heterodon nasicus  <- the pet-trade western hognose
+  THREATENED  Ornate Box Turtle, Terrapene ornata
+
+Part 805, injurious species. Read § 805.10 first: it excludes herptiles from the whole Part and
+sends them to the Herptiles-Herps Act, so this is never the answer for a reptile or amphibian.
+Its wild mammal list does name "Any species of European rabbit of the genus Oryctolagus",
+carried over from 50 CFR 16.11. That entry, and the San Juan rabbit bar in 520 ILCS 5/3.23, are
+the two provisions to read carefully before recording a rabbit answer for Illinois; both are
+aimed at wild-type stock, and neither writes the carve-out out loud.
+
+=========================================================================
+PART 885 - HERPTILE CODE
+=========================================================================
+TITLE 17: CONSERVATION
+CHAPTER I: DEPARTMENT OF NATURAL RESOURCES
+SUBCHAPTER b: FISH AND WILDLIFE
+PART 885 HERPTILE CODE
+Section 885.10 Definitions
+Section 885.15 Purpose
+Section 885.20 Seasons, Limits and Methods of Take for Bullfrogs, Snapping Turtles and Other Native Herptiles
+Section 885.30 Counties Documented with Ranavirus
+Section 885.40 Indigenous or Native Herptile Taxa List
+Section 885.45 Use of Boas, Pythons and Anacondas
+Section 885.48 Medically Significant Amphibians
+Section 885.50 Herptile Scientific Collection Permit Application
+Section 885.60 Herptile Scientific Collection Permit Provisions
+Section 885.70 Herptile Scientific Collection Permit Reports and Renewal
+Section 885.80 Herpetoculture Permit Requirements, Application and Fees
+Section 885.90 Herpetoculture Permit Provisions
+Section 885.100 Herpetoculture Permit Reporting and Renewal
+Section 885.103 Herptile Endangered and Threatened Species Propagation Permit Requirements, Application and Fees
+Section 885.105 Herptile Endangered and Threatened Species Propagation Permit Provisions
+Section 885.107 Herptile Endangered and Threatened Species Propagation Permit Reporting and Renewal
+Section 885.110 Medically Significant Rear-fanged Colubridae
+Section 885.120 Resident Herptile Special Use Permit Requirements, Application and Fee
+Section 885.130 Resident Herptile Special Use Permit Provisions
+Section 885.140 Resident Herptile Special Use Permit Reporting Requirements
+Section 885.150 Limited Entry (Nonresident) Special Use Herptile Permits; Fees, Reporting and Renewal
+Section 885.155 Herptile Diseases
+Section 885.160 Herptile Facilities and Welfare Standards
+Section 885.170 Denial, Suspension, and Revocation Procedures
+AUTHORITY: Implementing and authorized by Sections 5-20, 5-30, 5-35, 10-5, 10-15, 10-40, 20-10, 20-30, 25-10, 25-30, 30-10, 40-10, 45-5, 50-10, 55-5, 60-5, 65-5, 70-5, 75-5, 80-5, 85-5, 90-5, 100-5, 100-10, 100-15, 105-5, 105-10, 105-15, 105-20, 105-25, 105-40, 105-55, 105-60, 105-65 and 105-70 of the Herptiles-Herps Act [510 ILCS 68/5-20, 5-30, 5-35, 10-5, 10-15, 10-40, 20-10, 20-30, 25-10, 25-30, 30-10, 40-10, 45-5, 50-10, 55-5, 60-5, 65-5, 70-5, 75-5, 80-5, 85-5, 90-5, 100-5, 100-10, 100-15, 105-5, 105-10, 105-15, 105-20, 105-25, 105-40, 105-55, 105-60, 105-65 and 105-70], Sections 1-20, 10-30, 10-35, 10-60, 10-65 and 10-115 of the Fish and Aquatic Life Code [515 ILCS 5/1-20, 10-30, 10-35, 10-60, 10-65 and 10-115], Sections 4 and 5 of the Illinois Endangered Species Protection Act [520 ILCS 10/4 and 5], and Section 48-10 of the Criminal Code of 2012 [720 ILCS 5/48-10].
+SOURCE: Adopted at 41 Ill. Reg. 96, effective December 22, 2016; amended at 49 Ill. Reg. 10413, effective July 31, 2025.
+Section 885.10  Definitions
+"Act" means the
+Herptile-Herps Act [510 ILCS 68].
+"Code" means the Fish
+and Aquatic Life Code [515 ILCS 5].
+"Commercialize" means to
+sell, offer for sale, barter, trade or otherwise assign a commercial value to a
+herptile protected under this Part.
+"Department" means
+the Illinois Department of Natural Resources.
+"Educational Program"
+means a program of organized instruction or study for providing education
+intended to meet a public need.
+"Herpetoculture"
+means the breeding, hatching, propagation, or raising of indigenous or native
+herptiles in captivity.
+"Herptile" means any
+amphibian or reptile taxon and includes any species, hybrid, or intergrade
+thereof .
+"Herptile Special Use
+Permit" means the permit issued by the Department under Section 10-15 of
+the Act and Sections 885.120, 885.140 and 885.150 of this Part that authorizes
+use of special use herptiles for programs of a bonafide educational purpose.
+"HETP" means the
+Herptile Endangered Threatened Propagation Permit described in Section 885.103.
+"HSCP" means the
+Herptile Scientific Collection Permit described in Section 885.50.
+"Hybrid" means the
+offspring of two herptiles of different breeds, varieties, species, or genera.
+"Indigenous" or
+"Native Taxa" means those amphibians and reptiles to the subspecies
+level (where applicable) that can be found naturally in this State .
+"Individual"
+means a natural person.
+"Intergrade"
+means the offspring of two herptiles of different subspecies.
+"Limited Entry Special Use
+Herptile Permit" or "Limited Entry Permit" means a Herpetoculture
+Permit or Special Use Herptile Permit issued to a nonresident of Illinois
+allowing that person to bring specified herptiles into Illinois for a limited
+period not to exceed 30 days.
+"Listed" means a species
+that is listed as endangered or threatened, either at the State level or the federal
+level.
+"Medically Significant"
+means a venomous or poisonous species whose venom or toxin can cause death or
+serious illness or injury in humans that may require emergency room care or the
+immediate care of a physician.  These species are categorized as being
+"medically significant" or "medically important".
+"Morphological Variation"
+means the form and structure of a herptile or any part of a herptile.  "Morphological
+variation" includes the outward appearance, structure, shape, color,
+pattern and size of a herptile.
+"Non-listed" means a
+species that is not endangered or threatened.
+"Owner" means an
+individual who has a legal right to the possession of a herptile.
+"Person" means any
+individual, partnership, corporation, organization, trade or professional
+association, firm, limited liability company, joint venture or group.
+"Possession Limit"
+means the maximum number or amount of herptiles either alive or dead
+that can be lawfully held or possessed by one person at any time.
+"Possessor" means any
+person who possesses, keeps, harbors, brings into the State, cares for, acts as
+custodian for, has in his or her custody or control or holds a property right
+to a herptile.
+"Propagation" means
+the act or process of maintaining any herptile in its natural environment or in
+a controlled environment that intentionally or unintentionally results in the
+production of eggs or offspring from the parent stock.  "Propagation"
+includes the attempt to produce eggs or offspring from the parent stock.
+"Ranavirus" means any
+group of viruses in the family Iridoviridae that are highly infectious and
+often lethal to aquatic and terrestrial cold-blooded wildlife.  Ranaviruses can
+cause mass die-offs, especially in aquatic populations.  These viruses are
+found nearly worldwide and can infect any species of fish, amphibian or
+reptile.
+"Resident" means a
+person who in good faith makes application for any license or permit and
+verifies by statement that he or she has maintained his or her permanent abode
+in this State for a period of at least 30 consecutive days immediately
+preceding the person's application, and who does not maintain permanent abode
+or claim residency in another state for the purposes of obtaining any of the
+same or similar licenses or permits under the Act.  A person's permanent abode
+is his or her fixed and permanent dwelling place, as distinguished from a
+temporary or transient place of residence.  Domiciliary intent is required to
+establish that the person is maintaining his or her permanent abode in this
+State.  Evidence of domiciliary intent includes, but is not limited to, the
+location where the person votes, pays personal income tax, or obtains a
+driver's license.  Any person qualifying as a resident under this
+definition who is on active duty in the Armed Forces shall be considered a
+resident of Illinois during his or her period of military duty.
+"Special Use
+Herptile" means any taxon of amphibian or reptile (including, but not
+limited to crocodilians, Komodo dragons, crocodile monitor lizards, or venomous
+species) for which a Special Use Herptile Permit is required to acquire
+and possess.
+"Take" means possess,
+collect, catch, detain, hunt, shoot, pursue, lure, kill, destroy, capture, gig
+or spear, trap or ensnare or harass, or an attempt to do so.
+"Taxon" or the plural
+"Taxa" means a taxonomic category such as a genus, species or
+subspecies.
+"Transport" or
+"Ship" means to convey by parcel post, express, freight, baggage or
+shipment by common carrier of any description; by automobile, motorcycle or
+other vehicle of any kind; by water or aircraft of any kind; or by any other
+means of transportation.  [510 ILCS 68/1-15]
+"Voucher Herptile" means
+an actual herptile specimen deposited into a museum or scientific institution
+collection as proof of its existence in the locality at which it was collected.
+(Source:  Amended at 49 Ill. Reg. 10413,
+effective July 31, 2025)
+Section 885.15  Purpose
+This Part is established to govern the taking, acquisition,
+possession, transport, disposition and commercial use of herptiles defined and
+specified in the Act, the issuance of those permits, and reporting
+requirements.
+Section 885.20  Seasons, Limits and Methods of Take for
+Bullfrogs, Snapping Turtles and Other Native Herptiles
+a)         A
+sport fishing license is required for residents, unless exempt from a sport
+fishing license under Section 20-5 and 20-15 of the Code to legally collect or
+take any native herptile taxon.
+b)         Bullfrogs
+and common snapping turtles may be taken only June 15 through October 15.
+There is no closed season on all other non-listed native herptiles.
+c)         The
+daily harvest limit for bullfrogs is eight, with a possession limit of 16.  The
+daily harvest limit for common snapping turtles is two, with a possession limit
+of four.
+d)         Unless
+otherwise permitted under 510 ILCS 68/5-5, for non-listed native herptile taxa
+(excluding common snapping turtles and bullfrogs), the possession limit is eight
+collectively, with no more than four per species.  This includes live specimens
+or any parts thereof.
+e)         Unless
+otherwise permitted under Section 885.60, bullfrogs may be taken by hand, gig,
+pitchfork, spear, landing net, bowfishing, and hook and line during bullfrog
+season.  Bowfishing for bullfrogs is prohibited at 2 Pole and Line Fishing Only
+sites noted in 17 Ill. Adm. Code 810.45, except during the dates where take of
+fish by bow and arrow or bow and arrow devices are allowed at that site subject
+to any location specific uses of such devices.
+f)         Unless
+otherwise permitted under Section 885.60, turtles other than common snapping
+turtles may be taken only by hand.  Common snapping turtles may be taken only
+by hand, hook and line or bow and arrow.  Bowfishing for bullfrogs is
+prohibited at 2 Pole and Line Fishing Only sites noted in 17 Ill. Adm. Code
+810.45, except during the dates where take of fish by bow and arrow or bow and
+arrow devices are allowed at that site subject to any location specific uses of
+such devices.  Common snapping turtles may not be taken by bow and arrow in the
+following counties:  Randolph, Perry, Franklin, Hamilton, White, Gallatin,
+Saline, Williamson, Jackson, Union, Johnson, Pope, Hardin, Massac, Pulaski and
+Alexander.
+g)         Nonresidents
+Nonresidents may not possess or
+collect herptiles collected from the wild within this State, except for
+scientific purposes to those individuals that have been issued a Herptile
+Scientific Collection permit.
+(Source:  Amended at 49 Ill. Reg. 10413,
+effective July 31, 2025)
+Section 885.30  Counties Documented with Ranavirus
+a)         Pursuant
+to 510 ILCS 68/30-10, collection of wild turtles for races or other types of
+events involving congregating and gathering numbers of wild turtles is
+prohibited in counties where ranavirus has been documented.
+b)         The
+following Illinois counties have been documented with Ranavirus:  Clark, Cook, Jackson,
+Lake, Madison, Monroe and Vermilion.
+c)         This
+Section may be amended to add additional counties as ongoing research documents
+new outbreaks of the virus in Illinois.
+(Source:
+Amended at 49 Ill. Reg. 10413, effective July 31, 2025)
+Section 885.40  Indigenous or Native Herptile Taxa List
+The following list comprises Illinois' indigenous or native
+herptile taxa to the subspecies level, if applicable. A current list of State
+endangered/threatened species may be found in 17 Ill. Adm. Code 1010. A single
+asterisk (*) denotes a venomous and special use species.
+Salamanders
+Jefferson Salamander
+Ambystoma jeffersonianum
+Blue-spotted Salamander
+Ambystoma laterale
+Spotted Salamander
+Ambystoma maculatum
+Marbled Salamander
+Ambystoma opacum
+Silvery Salamander
+Ambystoma platineum
+Mole Salamander
+Ambystoma talpoideum
+Small-mouthed Salamander
+Ambystoma texanum
+Eastern Tiger Salamander
+Ambystoma tigrinum
+Eastern Hellbender
+Cryptobranchus alleganiensis
+Spotted Dusky Salamander
+Desmognathus conanti
+Northern Dusky Salamander
+Desmognathus fuscus
+Southern Two-lined Salamander
+Eurycea cirrigera
+Eastern Long-tailed Salamander
+Eurycea longicauda longicauda
+Dark-sided Salamander
+Eurycea longicauda melanopleura
+Cave Salamander
+Eurycea lucifuga
+Four-toed Salamander
+Hemidactylium scutatum
+Common Mudpuppy
+Necturus maculosus
+Central Newt
+Notophthalmus viridescens louisianensis
+Eastern Red-backed Salamander
+Plethodon cinereus
+Northern Zigzag Salamander
+Plethodon dorsalis
+Northern Slimy Salamander
+Plethodon glutinosus
+Western Lesser Siren
+Siren intermedia nettingi
+Frogs and Toads
+Blanchard's Cricket Frog
+Acris blanchardi
+American Toad
+Anaxyrus americanus americanus
+Dwarf American Toad
+Anaxyrus americanus charlesmithi
+Fowler's Toad
+Anaxyrus fowleri
+Eastern Narrow-mouthed Toad
+Gastrophryne carolinensis
+Western Bird-voiced Treefrog
+Hyla avivoca
+Cope's Gray Treefrog
+Hyla chrysoscelis
+Green Treefrog
+Hyla cinerea
+Eastern Gray Treefrog
+Hyla versicolor
+Northern Crawfish Frog
+Lithobates areolatus circulosus
+Plains Leopard Frog
+Lithobates blairi
+American Bullfrog
+Lithobates catesbeianus
+Green Frog
+Lithobates clamitans
+Pickerel Frog
+Lithobates palustris
+Northern Leopard Frog
+Lithobates pipiens
+Southern Leopard Frog
+Lithobates sphenocephalus
+Wood Frog
+Lithobates sylvaticus
+Spring Peeper
+Pseudacris crucifer
+Upland Chorus Frog
+Pseudacris feriarum
+Illinois Chorus Frog
+Pseudacris illinoensis
+Boreal Chorus Frog
+Pseudacris maculata
+Western/Midland Chorus Frog
+Pseudacris triseriata
+Eastern Spadefoot Toad
+Scaphiopus holbrookii
+Turtles
+Midland Smooth Softshell Turtle
+Apalone mutica
+Spiny Softshell Turtle
+Apalone spinifera
+Common/Eastern Snapping Turtle
+Chelydra serpentina
+Western Painted Turtle
+Chrysemys picta bellii
+Southern Painted Turtle
+Chrysemys picta dorsalis
+Midland Painted Turtle
+Chrysemys picta marginata
+Spotted Turtle
+Clemmys guttata
+Blanding's Turtle
+Emydoidea blandingii
+Northern Map Turtle
+Graptemys geographica
+Northern False Map Turtle
+Graptemys pseudogeographica pseudogeographica
+Mississippi Map Turtle
+Graptemys pseudogeographica kohnii
+Ouachita Map Turtle
+Graptemys ouachitensis ouachitensis
+Yellow Mud Turtle
+Kinosternon flavescens
+Eastern Mud Turtle
+Kinosternon subrubrum
+Alligator Snapping Turtle
+Macrochelys temminckii
+River Cooter
+Pseudemys concinna
+Common/Eastern Musk Turtle
+Sternotherus odoratus
+Eastern Box Turtle
+Terrapene carolina carolina
+Ornate Box Turtle
+Terrapene ornata
+Red-eared Slider
+Trachemys scripta elegans
+Lizards
+Eastern Six-lined Racerunner
+Aspidoscelis sexlineata sexlineata
+Western Slender Glass Lizard
+Ophisaurus attenuatus attenuatus
+Common Five-lined Skink
+Plestiodon fasciatus
+Broad-headed Skink
+Plestiodon laticeps
+Eastern Fence Lizard
+Sceloporus undulatus
+Ground/Little Brown Skink
+Scincella lateralis
+Snakes
+Midwestern Worm Snake
+Carphophis amoenus helenae
+Western Worm Snake
+Carphophis vermis
+Northern Scarlet Snake
+Cemophora coccinea copei
+Kirtland's Snake
+Clonophis kirtlandii
+Blue Racer
+Coluber constrictor foxii
+Southern Black Racer
+Coluber constrictor priapus
+Prairie Ring-necked Snake
+Diadophis punctatus arnyi
+Northern Ring-necked Snake
+Diadophis punctatus edwardsii
+Mississippi Ring-necked Snake
+Diadophis punctatus stictogenys
+Western Mud Snake
+Farancia abacura reinwardtii
+Western Hog-nosed Snake
+Heterodon nasicus
+Eastern Hog-nosed Snake
+Heterodon platirhinos
+Prairie King Snake
+Lampropeltis calligaster calligaster
+Speckled King Snake
+Lampropeltis getula holbrookii
+Eastern Black King Snake
+Lampropeltis getula nigra
+Red Milk Snake
+Lampropeltis triangulum syspila
+Eastern Milk Snake
+Lampropeltis triangulum triangulum
+Eastern Coachwhip
+Masticophis flagellum
+Mississippi Green Watersnake
+Nerodia cyclopion
+Plain-bellied Watersnake
+Nerodia erythrogaster
+Southern/Broad-banded Watersnake
+Nerodia fasciata
+Diamond-backed Watersnake
+Nerodia rhombifer rhombifer
+Midland Watersnake
+Nerodia sipedon pleuralis
+Northern Watersnake
+Nerodia sipedon sipedon
+Rough Green Snake
+Opheodrys aestivus
+Smooth Green Snake
+Opheodrys vernalis
+Great Plains Rat Snake
+Pantherophis emoryi
+Black Rat Snake
+Pantherophis obsoletus (spiloides) obsoletus
+Gray Rat Snake
+Pantherophis obsoletus (spiloides) spiloides
+Western/Eastern Fox Snake
+Pantherophis ramspotti/vulpinus
+Bull Snake
+Pituophis catenifer sayi
+Graham's Crayfish Snake
+Regina grahamii
+Queen Snake
+Regina septemvittata
+Midland Brown Snake
+Storeria dekayi wrightorum
+Northern Red-bellied Snake
+Storeria occipitomaculata occipitomaculata
+Flat-headed Snake
+Tantilla gracilis
+Western Ribbon Snake
+Thamnophis proximus proximus
+Plains Garter Snake
+Thamnophis radix
+Eastern Ribbon Snake
+Thamnophis sauritus
+Chicago Garter Snake
+Thamnophis sirtalis semifasciatus
+Eastern Garter Snake
+Thamnophis sirtalis sirtalis
+Lined Snake
+Tropidoclonion lineatum
+Western Smooth Earth Snake
+Virginia valeriae elegans
+Southern Copperhead
+Agkistrodon contortrix contortrix *
+Northern Copperhead
+Agkistrodon contortrix mokasen *
+Western Cottonmouth
+Agkistrodon piscivorus leucostoma *
+Timber Rattlesnake
+Crotalus horridus *
+Eastern Massasauga
+Sistrurus catenatus *
+Section 885.45  Use of Boas,
+Pythons and Anacondas
+a)         Any
+person using a boa, python or anaconda that is not native to the United
+States , at strictly educational events with no commercialization, sponsored
+by a school herpetological society, museum, zoo or nature center, must
+maintain control or physical possession of that species at all
+times .  [510 ILCS 68/15-15]  These events include, but are not limited to,
+the Chicago Herpetological Society's Reptile Fest, Wildlife Discovery Center's
+Reptile Rampage, Central Illinois Herpetological Society's Reptile Fair and
+Midwest Museum of Natural History's Rockin for the Reptiles.
+b)         In
+strictly educational events as described in subsection (a), the owner or
+affiliated agent in control of the boa, python or anaconda shall ensure any
+contact with the snakes will be supervised and conducted in a manner that
+results in no physical harm to a member of the public.
+c)         In
+licensed pet stores where someone may wish to handle the boa, python or
+anaconda prior to purchase, or for other reasons, handling shall be supervised
+and conducted by the owner or affiliated agent in a manner that results in no
+physical harm to a member of the public while interacting with the snakes.
+Section 885.48  Medically Significant Amphibians
+Medically significant poisonous/venomous amphibians, capable
+of causing bodily harm to humans or animals, may be possessed for educational
+purposes or research purposes by bona fide scientific or educational
+institutions.  Medically significant amphibians include cane or marine toads/suriname
+giant marine toads (Bufo marinus), Colorado river toads (Bufo alvarius),
+Smooth-sided toad (Rhaebo [Bufo] guttatus), any South American/ beaked/Rio
+Viejo/Crested toads (genus Rhinella), Bruno's casque headed frog (Aparasphenodon
+brunoi), Greening's frog (Corythomantis greening), Spring-headed or Coronated
+tree frog (Anotheca [Triprion] spinosa), and Ranwella's horned tree frog
+(Polypedates ranwellai), including hybrids or intergrades of any of the listed
+species in this Section.
+(Source:  Added at 49 Ill. Reg. 10413,
+effective July 31, 2025)
+Section 885.50  Herptile Scientific Collection Permit
+Application
+a)         Any
+person who wishes to do research on, take or salvage non-listed Illinois
+herptiles must obtain and possess a valid Herptile Scientific Collection Permit
+(HSCP) from the Department. The HSCP will permit, for strictly scientific
+purposes, the capture, marking, handling, banding or collection (including
+hide, skin, bones, teeth, claws, nest, eggs or young) of any of the herptiles
+not protected under federal law or the Illinois Endangered Species Protection
+Act [520 ILCS 10], but now protected under the Herptiles-Herps Act.  Any
+collections made must be for permanent donation to bonafide public or state
+scientific, educational or zoological institutions.  There is no fee for this
+permit.  Any person who is under the direct control of the applicant, or who is
+employed by or under control of the applicant and will be assisting with the
+activities authorized under a HSCP must be listed in the permit application.
+b)         To be
+eligible for an HSCP for scientific research or salvage, the applicant must:
+1)         be at
+least 18 years of age;
+2)         be
+engaged in scientific research, which may include, but is not necessarily
+limited to, research sponsored by universities, colleges or scientific
+institutions; and
+3)         have
+public or state scientific, educational or zoological institutions available that
+will take any voucher herptiles that are collected.
+c)         To be
+eligible for an HSCP for salvage and subsequent rehabilitation of injured
+herptiles, the applicant must:
+1)         be at
+least 18 years of age;
+2)         have held
+a salvage permit from the previous year or submit a reference statement from a
+licensed veterinarian, zoological curator, conservation police officer or an DNR
+wildlife resources, natural heritage or fisheries biologist, as appropriate,
+stating that the applicant has experience in treating and handling wild
+herptiles and has facilities available to treat, care for and produce
+self-dependent herptiles for release to the wild; and
+3)         have
+public or state scientific, educational or zoological institutions available that
+will take voucher and/or permanently disabled herptiles.
+d)         Application
+for an HSCP can be found on the Departments website (www.dnr.illinois.gov) and shall
+be made on forms provided by the Department.  Information items requested on
+application forms will include, but are not limited to:  name, address, phone
+number, list of herptile species to be requested for that permit.  These forms
+may be submitted via email at DNR.HerpPermit@
+illinois.gov.
+e)         HSCPs
+will be issued by the Department provided the applicant has met the eligibility
+requirements of this Section and the application form has been completed.
+f)         Collecting
+on Department-owned, -managed and -leased properties, including but not limited
+to, collecting in State Parks or Conservation Areas, Nature Preserves or Land
+and Water Reserves may require additional permits, pursuant to Section 6 of the
+State Parks Act [20 ILCS 835], Section 23 of the Illinois Natural Areas
+Preservation Act [525 ILCS 30], and 17 Ill. Adm. Code 110.70, 4000.570,
+4000.580 and 4010.260.
+(Source:
+Amended at 49 Ill. Reg. 10413, effective July 31, 2025)
+Section 885.60  Herptile Scientific Collection Permit
+Provisions
+a)         Full-time
+employees of state or federal conservation agencies shall be issued an HSCP at
+no charge for the term of their employment, as long as that person continues to
+submit, by January 31 of each year, an annual report of the past year's
+activities as defined in Section 885.70.
+b)         The HSCP
+is valid for only the approved type of research and/or collection of a voucher
+herptile stated on the permit.  Under no circumstances shall an HSCP be used in
+lieu of sport or commercial licenses.  HSCPs exempt holders from herptile
+possession limits for strictly research only, whereas sport fishing licenses do
+have personal herptile possession limits and Herpetoculture Permits (see
+Sections 885.80, 885.90 and 885.100) exempt holders from herptile possession
+limits for personal or commercial purposes only.
+c)         The
+permittee's method of taking herptiles must be approved by the Department.  All
+devices used for taking, which are left unattended, must have the permittee's
+name, address and HSCP number visible on them.
+d)         Taking
+and/or salvage of herptiles shall be performed by or under the direct supervision
+of the permittee.  The permittee shall disclose in the permit application the
+name of any other person who will assist the permittee. The permittee must be
+present when any person named in the application is involved in the actual
+taking of herptiles.
+e)         Taking
+and/or collection of a voucher herptile is only allowed in areas designated on
+the permit.
+f)         Taking
+and/or collection of a voucher herptile on private properties requires oral or
+written landowner's or landowner designee's permission.  This permit does not
+allow the privilege of trespass.
+g)         Taking
+and/or collection of a voucher herptile on Department-owned, -leased, or -managed
+lands, including, but not limited to, collection in State Parks, Conservation
+Areas, Nature Preserves or Land and Water Reserves, is not permitted without
+additional permits, pursuant to the State Parks Act, Illinois Natural Areas
+Preservation Act and 17 Ill. Adm. Code 110.70, 4000.570, 4000.580 and 4010.260.
+h)         The HSCP
+must be carried on the person at all times when taking specimens and be
+presented, upon request, to Department or law enforcement personnel.
+i)          Except
+as otherwise stated on the face of a permit, any person who is under the direct
+control of the permittee, or who is employed by or under control of the permittee
+for the purposes authorized by the permit, may carry out the activity
+authorized by the permit.  Additional persons or agents must be disclosed on
+the application.
+j)          Herptiles
+taken and rehabilitated shall be released to the wild here originally captured
+or shall be permanently donated to a public or state scientific educational or
+zoological institution.  Any proposed return of a herptile taken under an HSCP
+to the wild of Illinois must first be pre‑approved in writing by the
+Department.  Return of a herptile to the wild of Illinois without written
+approval by the Department will constitute a violation of this Part.
+k)         The
+permittee is responsible for the taking activities under the permit and for
+submitting the annual report required by Section 885.70.  The permittee must
+maintain a record of all specimens taken for no less than two years and shall
+present that record, upon request, to Department or law enforcement personnel.
+l)          An
+HSCP does not release the permittee from other provisions under the Act, nor
+from federal or other State statutes and does not supersede federal permits.
+m)        No person shall transfer
+a permit issued under this Section to another person.
+(Source:  Amended at 49 Ill. Reg. 10413,
+effective July 31, 2025)
+Section 885.70  Herptile Scientific Collection Permit
+Reports and Renewal
+a)         By
+January 31 annually, the permit holder shall submit to the Department an annual
+report, either in hardcopy or online, on forms provided by the Department.
+Failure to provide this report by the due date will result in a violation of
+this Part and denial of subsequent renewal requests by the permittee for a
+period of not less than one year.
+b)         The
+permittee shall also provide the Department one copy of all written reports resulting
+from the permitted activities, in a format specified by the Department,
+including, but not limited to, reports, technical papers or technical notes.
+Permits will be renewed only after copies of the annual report and all written
+reports have been received by the Department.  Permittees are required to
+update, when submitting the annual report, any applicable personal or contact
+information.
+Section 885.80  Herpetoculture Permit Requirements,
+Application and Fees
+a)         A Herpetoculture Permit
+is required of any persons wishing to:
+1)         be
+exempt from the possession limits for non-listed native herptile taxa,
+regardless of whether the permit holder only possesses, or also breeds or
+commercializes;
+2)         commercialize
+any non-listed native herptile taxa that have not originated from the wild in
+Illinois;
+3)         breed
+(either intentionally or unintentionally) any non-listed native herptile taxa.
+b)         Residents
+seeking to obtain a Herpetoculture Permit must submit an application form,
+provided by the Department at www.dnr.illinois.gov, along with a nonrefundable annual
+fee of $50.  Information items requested on application forms will include, but
+are not limited to:  name, address, phone number, list of herptile species to
+be requested for that permit.  These forms may be submitted via email at DNR.HerpPermit@illinois.gov.
+The Department will review and act on these permit requests within 60 days
+after receipt of the request. Residents applying for renewal of their permit
+must submit an application, along with annual reports for the preceding year's
+activities and a nonrefundable fee of $50. Applications may be mailed to IDNR,
+Herptile Permits, One Natural Resources Way, Springfield IL 62702.
+c)         Nonresidents
+seeking to obtain a limited entry Herpetoculture Permit to sell or offer for
+sale any non-listed native herptile taxa that have not originated from the wild
+in Illinois must submit an application, provided by the Department, along with
+a nonrefundable fee of $25.  This permit shall be valid for a specified period
+that does not exceed 15 consecutive days.
+d)         Applicants
+must be at least 18 years of age.  All portions of the permit application must
+be completed in full and accompanied by the nonrefundable fee.  Incomplete
+applications will be rejected.  All non-listed native herptile taxa the
+applicant wishes to work with or commercialize must be listed on the permit
+application form.  Any person who is under the direct control of the applicant,
+or who is employed by or under control of the applicant and will be assisting
+with the activities authorized under a Herpetoculture Permit must be listed in
+the permit application.
+e)         No Herpetoculture
+Permit will be issued for any special use herptile taxa. Special use herptile
+taxa are subject to permitting requirements of Section 885.120.
+f)         Indigenous
+herptile taxa collected from the wild in this State, or any resulting
+offspring, may not be bred or commercialized, including any lineages of
+wild-caught Illinois herptiles, unless otherwise authorized by the Department,
+in writing, for research or recovery purposes.
+g)         Release
+of any propagated indigenous herptile is prohibited unless authorized by the
+Department in writing.
+(Source:
+Amended at 49 Ill. Reg. 10413, effective July 31, 2025)
+Section 885.90  Herpetoculture Permit Provisions
+a)         Additions
+of native herptile species to Herpetoculture Permits must be approved by the
+Department prior to acquisition of the species and any changes or reductions in
+native herptile species identified on the permit must be reported to the
+Department in writing no later than the first business day after the change or
+reduction occurs.
+b)         Herpetoculture
+Permit holders must have in possession proof of origin of the native herptiles
+that are being sold or offered for sale.  This can be original receipts from
+when the permit holder acquired the specimens, along with photo documentation
+of subsequent hatching eggs and/or hatchlings.  Documentation must be
+presented, upon request, to any authorized officer or agent of the Department
+or local, state or federal law enforcement officer.
+c)         Native
+herptile species held under a Herpetoculture Permit shall be maintained in
+facilities that meet the standards of Section 885.160.
+d)         Receipts/bills
+of sale must be issued for each sale of native herptile species.  Failure to
+issue paper receipts/bills of sale or issuance of incomplete paper
+receipts/bills of sale shall constitute a violation of this Part.
+Receipts/bills of sale shall include:
+1)         name,
+address, phone number and Department Herpetoculture Permit number of the seller
+in the upper left hand corner;
+2)         name,
+address and phone number of the buyer;
+3)         date of
+transaction;
+4)         quantities
+and species of each native herptile sold.
+e)         Any sale
+of a native herptile to a nonresident shall be documented by a receipt/bill of
+sale as described in subsection (d) to verify, when the herptile is exiting the
+State, that it was legally obtained.
+f)         Permits
+must be in the possession of the holder or his or her agent (the agent must be
+disclosed in the permit application) when engaged in activities involving
+native herptile species and must be presented, upon request, to any authorized
+officer or agent of the Department or any local, state or federal law enforcement
+officer.
+g)         Except
+as otherwise stated on the face of a permit, any person who is under the direct
+control of the permittee, or who is employed by or under control of the
+permittee for the purposes authorized by the permit, may carry out the activity
+authorized by the permit.  Additional persons or agents must be disclosed on
+the application.
+h)         No person shall transfer
+a Herpetoculture Permit to another person.
+i)          The
+authorization on the face of a permit that allows specific activities (such as
+sale, possession, etc.), specifies numbers of native herptile species, or
+otherwise specifically limits the permit are to be strictly construed and shall
+not be interpreted to permit similar or related matters outside the scope of
+strict construction.
+j)          All
+records of permit holder sales and purchases must be kept for a minimum of two years
+from the date of disposition of the herptile.
+(Source:
+Amended at 49 Ill. Reg. 10413, effective July 31, 2025)
+Section 885.100  Herpetoculture Permit Reporting and
+Renewal
+a)         Resident
+permit holders shall submit a report by January 31 of each year on forms
+provided by the Department that summarizes activities conducted under the
+permit during the preceding calendar year.  Failure to submit this annual report
+by the due date will constitute a violation of this Part and may result in
+denial of subsequent renewal requests.
+b)         Any
+permit holder approved to sell or offer to sell non-listed native herptiles shall
+present copies of receipts/bills of sale to any agent of the Department or
+authorized local, state or federal law enforcement officer upon request.  Failure
+to present copies of receipts/bills of sale will constitute a violation of this
+Part.
+c)         Resident
+permit holders applying for renewal of the Herpetoculture Permit shall do so by
+January 31 of each year and shall submit the nonrefundable fee (see Section
+885.80), along with the annual report.
+d)         Nonresident
+Limited Entry Herpetoculture Permit holders shall submit a report within 30
+days after the expiration of the permit, on forms provided by the Department,
+along with the copies of receipts/bills of sale.  Failure to provide to the
+Department the report and copies will constitute a violation of this Part.
+Section 885.103  Herptile Endangered and Threatened
+Species Propagation Permit Requirements, Application and Fees
+a)         A
+Herptile Endangered and Threatened Species Propagation Permit (HETP) is
+required of any resident wishing to:
+1)         acquire
+or possess, for the purpose of propagation (intentionally or unintentionally),
+any herptiles listed under the Illinois Endangered Species Protection Act [520
+ILCS 10], that have been legally obtained; or
+2)         commercialize
+or offer for sale, any captively propagated and hatched State or federally
+endangered/threatened herptiles that was legally obtained.
+b)         A
+person must have a valid Department endangered/threatened species possession
+permit for any State or federally endangered/threatened herptile taxa or any
+hybrid, intergrade, cross, or morphological variation thereof prior to
+obtaining a permit under this Section.  Residents seeking to obtain an HETP
+must be a minimum of 18 years of age and submit an official application along
+with a non-refundable annual fee of $150.  Applications and instructions for
+submittal can be found at www.dnr.illinos.gov.
+c)         Permits
+for possession only of endangered or threated species (i.e. no propagation
+either intentionally or unintentionally) must be applied for at:
+www://dnr.illinois.gov/ORCApplication Review.
+d)         A
+current list of State endangered/threated herptiles can be found at 17 Ill.
+Adm. Code 1010.  A list of all federally endangered/threated species can be
+found at www://ecos.fws.gov.
+e)         No
+HEPT will be issued for any special use herptiles defined in Section 885.120.
+Special use herptiles are subject to permitting requirements under Section
+885.120.
+f)         Release
+of any propagated endangered/threatened herptiles is strictly prohibited unless
+authorized by the Department pursuant to Section 5-40 of the Act.
+g)         Pursuant
+to Section 5-20(b) of the Act, any person issued a Herptile Endangered and
+Threatened Species Propagation permit by the Department who is in possession of
+a threatened or endangered (T/E) herptile species shall be exempt from an
+individual's overall possession limit under the permitting system set forth in
+this Act.  A permitted persons possession limit shall be listed on their issued
+HETP.
+(Source:  Added at 49 Ill. Reg. 10413,
+effective July 31, 2025)
+Section 885.105  Herptile Endangered and Threatened
+Species Propagation Permit Provisions
+a)         Additions
+of endangered/threated herptile species to an HETP must be approved by the
+Department prior to acquisition of the species.  Reductions in possessed
+quantities of endangered/threatened species identified on the permit must be
+reported to the Department in writing no later than the first business day
+after the reduction occurs.
+b)         HETP
+holders must retain proof of origin of all endangered/threatened herptiles
+being propagated, sold, or offered for sale.  This can be original purchase
+receipts and/or a current Department endangered/threatened species possession
+permit, along with photo documentation of subsequent hatching eggs and/or
+hatchlings.  Documentation must be presented, upon request, to any authorized
+officer or agent of the Department or local, state or federal law enforcement
+officer.  The Department may require proof of origin for any State or federally
+endangered/threatened herptiles to be propagated if that information has not
+already been submitted to the Department.
+c)         Endangered/threatened
+herptile species held under an HETP shall be maintained in facilities that meet
+the standards of Section 885.160.
+d)         Receipts/bills
+of sale must be issued to all Illinois residents, as well as non-residents, for
+each sale of endangered/threatened herptile species.  Failure to issue paper
+receipts/bills of sale or incomplete paper receipts/bills of sale shall
+constitute a violation of this Part.  Receipts bills of sale shall include:
+1)         name,
+address, phone number and Department HETP number of the seller in the upper
+left hand corner;
+2)         name,
+address, phone number and Department permit number (both HETP and Department
+endangered/threatened species possession permit), where applicable, of the
+buyer;
+3)         date of transaction;
+and
+4)         quantity of each
+endangered/threatened herptile sold.
+e)         It is
+unlawful to sell an endangered/threatened herptile to an Illinois resident who
+does not have either a current Department endangered/threatened species
+possession permit, and/or HETP, allowing possession of the species being sold.
+Sellers must be presented with either an electronic or hard copy of the buyer's
+permit before completing any transaction.
+f)         Permits
+must be in the possession of the holder, or the permit holder's agent (agent
+must be disclosed in the permit application) when engaged in activities
+involving endangered/threatened herptiles.  Permits must be presented, upon
+request, to any authorized officer or agent of the Department, or any local, State
+or federal law enforcement officer.  Failure to present permits shall
+constitute a violation of this Part.
+g)         No person shall transfer
+an HETP to another person.
+h)         The
+authorization on the face of a permit that allows specific activities (such as
+sale, possession, etc.), specifies quantities of endangered/threatened herptile
+species, or other special conditions are to be strictly adhered to and shall
+not be interpreted to allow similar or related matters outside the scope of the
+permit.
+i)          Copies
+of all sales and purchase records shall be kept for a minimum of two years after
+the date of disposition of any endangered/threatened herptile.  Failure to
+present copies of receipts/bills of sale to any agent of the Department or
+authorized local State or federal law enforcement officer upon request shall
+constitute a violation of this Part.
+j)          Any
+hybrid, intergrade, cross, or morphological variation of any listed herptile
+shall be treated as an endangered or threatened herptile under this Part.
+Examples of these include, but are not limited to:  scaleless corn snakes, root
+beer corn snakes, creamsicle/dreamsicle corn snakes, and Slowinski/Kisatchie
+rat snakes.
+(Source:  Added at 49 Ill. Reg. 10413,
+effective July 31, 2025)
+Section 885.107  Herptile Endangered and Threatened
+Species Propagation Permit Reporting and Renewal
+a)         All HETP
+holders shall submit an annual report by January 31 of each year summarizing
+activities conducted under the permit during the preceding calendar year.
+Permit holders applying for HETP renewal shall do so by January 31 of each year
+and submit the non-refundable fee (see Section 885.103), along with the annual
+report.
+b)         Annual report forms can
+be accessed at: www.dnr.illinois.gov.
+c)         Permit
+holders must notify the Department in writing of any changes in name, address,
+or similar contact information within five business days after making such a
+change.
+(Source:  Added at 49 Ill. Reg. 10413,
+effective July 31, 2025)
+Section 885.110  Medically Significant Rear-fanged
+Colubridae
+a)         The
+following 15 medically significant colubrid genera are subject to this Section:
+Alsophis, Boiga, Conophis, Hydrodynastes, Macropisthodon, Malpolon,
+Oligodon, Phalotris, Philodryas, Psammophis, Rhamphiophis, Thrasops, Tomodon,
+Waglerophis and Xenodon [510 ILCS 68/10-5].
+b)         Except
+for boomslangs (Dispholidus), twig snakes (Thelotornis), keelbacks
+(Rhabdophis), Blanding's tree snake (Toxicodendron), brown tree snake (Boiga irregularis),
+Green Palmsnake or Common green racer (Philodryas [Chlorosoma] viridissima), and
+Lichtenstein's green racer (Philodryas olfersii), all other medically
+significant species within the genera listed in subsection (a) may be kept with
+a Herptile Special Use Permit and be exempt from the required hours of
+experience needed (see Section 10-15 of the Act) and liability insurance
+requirement (see Section 60-5 of the Act).  Annual permit fee, reporting
+requirements, prohibition on breeding (intentional or unintentional), and
+required educational programs remain in effect.  The facilities to be used to
+house rear-fanged colubrids must still meet the standards of Article 10 of the
+Act (Venomous Reptiles) and Section 885.160.  Experience with rear-fanged colubrids
+will not count towards experience with other venomous species.
+(Source:
+Amended at 49 Ill. Reg. 10413, effective July 31, 2025)
+Section 885.120  Resident Herptile Special Use Permit
+Requirements, Application and Fee
+a)         A
+Herptile Special Use Permit is required of any resident who commits to
+conducting at least six educational programs per calendar years, for which the
+resident is seeking to possess any venomous reptile or other special use
+herptile species, including, but not limited to, any crocodilian, Komodo dragon
+or crocodile monitor lizard, pursuant to Articles 10, 20 (Crocodilians) and 25 (Monitor
+Lizards) of the Act, unless exempted under Section 110-5 of the Act.  An
+application for a Herptile Special Use Permit must file an application with the
+Department on a form provided by the Department.  Information items requested
+on application forms will include, but are not limited to:  name, address,
+phone number, list of herptile species to be requested for that permit.  Any
+person who is under the direct control of the applicant, or who is employed by
+or under control of the applicant and will be assisting with the activities
+authorized under a Resident Herptile Special Use Permit must be listed in the
+permit application.  These forms may be submitted via email at DNR.HerpPermit@illinois.gov,
+or hardcopy applications may be mailed to IDNR, Herptile Permits, One Natural
+Resources Way, Springfield IL  62702. A period of 60 days should be allowed for
+the Department to receive and approve permits. Unless otherwise exempted by the
+Department, prior to any person obtaining a Herptile Special Use Permit, the
+following criteria must be met:
+1)         Applicants
+must be at least 18 years of age and complete all portions of the permit
+application form.  Incomplete applications will be rejected.
+2)         Each applicant
+must submit payment for each application.  The nonrefundable annual fee for a
+residential Herptile Special Use Permit shall be $250 per permittee.
+3)         The
+requirements of Article 60 of the Act (Herptile Special Use Requirements) must
+be met.
+4)         The
+venomous or special use herptile species applied for must be included in the
+approved list in Section 10-20, 20-5 or 25-5 of the Act.
+5)         Unless
+otherwise exempted, proof of the liability insurance or surety bond required by
+Section 60-5 of the Act shall be provided and maintained during the term of the
+permit.
+b)         In
+addition to completing a permit application form provided by the Department,
+the applicant must submit:
+1)         an
+outline of the educational program to be presented.  Every educational program
+shall include information on the status of the special use herptiles being
+displayed or utilized and an explanation of the legal acquisition of the
+specimens;
+2)         a
+list of all similar programs conducted by the applicant during the two years
+preceding the application for a Herptile Special Use Permit, including
+estimates of the number of persons attending each presentation;
+3)         a
+statement as to how the possession of the specimens or products of special use
+herptiles by the applicant will enhance the welfare of the species involved;
+and
+4)         a
+description, including photographs, of the facilities intended for use in
+holding the special use herptile species.
+c)         A
+permit for special use herptiles may be issued if the applicant meets the
+following criteria:
+1)         unless
+exempted (see Section 885.110(b)), the credentials and required hours of
+experience of the applicant indicate training and experience that will assure
+the applicant has the ability to conduct the proposed programs;
+2)         the
+program promotes the survival of the special use herptile species and its
+natural habitat;
+3)         the
+program promotes understanding of the ecological needs of natural populations
+of the species;
+4)         the
+program promotes understanding of the role of the special use herptile species
+in its natural environment;
+5)         the
+applicable nonrefundable fee has been submitted (see subsection (a)(2));
+6)         unless
+otherwise exempted, the permit holder has obtained the amount of liability
+insurance applicable to the number of special use herptiles (see Section
+885.150(b)(3));
+7)         the
+facilities to be used to house special use herptile species are shown to meet
+the standards defined in Section 885.160; and
+8)         a
+pre-inspection of the proposed facilities has been conducted and the Department
+has approved the facility.
+(Source:
+Amended at 49 Ill. Reg. 10413, effective July 31, 2025)
+Section 885.130  Resident Herptile Special Use Permit
+Provisions
+a)         Special
+use herptiles for which a Herptile Special Use Permit has been issued will not
+count against an individual's possession limits under the Herpetoculture
+Permit.
+b)         It
+shall be unlawful for any person to propagate or attempt to propagate any special
+use herptile, either intentionally or unintentionally, without a Herptile Special
+Use Permit.
+c)         It
+shall be unlawful for any person to sell or offer for sale any special use
+herptile without a Herptile Special Use Permit.
+d)         Additions
+of specimens to Herptile Special Use Permits must be approved prior to
+acquisition of the specimens. Any changes in numbers of specimens possessed must
+be reported to the Department in writing no later than the first business day
+after that change occurs.
+e)         A
+minimum of six documented educational programs shall be required of each
+permittee per calendar year.
+f)         The
+special use herptile shall be maintained in a facility that meets the
+requirements of Sections 10-25, 20-15 and 25-15 of the Act and Section 885.160
+of this Part.
+g)         Educational
+program use of special use herptiles shall be in accordance with Sections 10-30,
+20-20 and 25-20 of the Act.
+h)         Transport
+of special use herptiles shall be in accordance with Sections 10-35, 20-25 and
+25-25 of the Act.
+i)          All
+special use herptiles must be pit-tagged or microchipped to individually identify
+them unless the specimen is too small to be tagged or chipped.  In that case, a
+color photograph documenting pattern aberrancies unique to that specimen may be
+accepted until the herptile is larger, at the sole discretion of the
+Department.
+j)          The Herptile
+Special Use Permit, or a valid copy of the permit, must be in the possession of
+the holder or his or her agent (the agent must be disclosed in the permit application)
+when engaged in activities involving special use herptile species and presented
+upon demand to any authorized officer or agent of the Department or authorized
+local, State or federal law enforcement officer.
+k)         Except
+as otherwise stated on the face of a permit, any person who is under the direct
+control of the permittee, or who is employed by or under control of the
+permittee for the purposes authorized by the permit, may carry out the activity
+authorized by the permit.  Additional persons or agents must be disclosed on
+the application.
+l)          No
+person shall transfer a Herptile Special Use Permit to another person.
+m)        The authorization
+on the face of a permit that allows specific activities (such as taking, possession,
+etc.), specifies the number or quantity of special use herptile specimens or
+products, or otherwise specifically limits the permit are to be strictly
+construed and shall not be interpreted to permit similar or related matters
+outside the scope of strict construction.
+(Source:
+Amended at 49 Ill. Reg. 10413, effective July 31, 2025)
+Section 885.140  Resident Herptile Special Use Permit
+Reporting Requirements
+a)         A
+person who possesses any special use herptile must maintain records pertaining
+to the acquisition, possession and disposition of the special use herptile.
+b)         These
+records shall be maintained for a minimum of 2 years after the date the special
+use herptile is no longer in possession of the permit holder.  All records are
+subject to inspection by any authorized officer or agent of the Department or
+authorized local, state or federal law enforcement officer.
+c)         All pit-tag
+or microchip numbers, and any identifying photographs, are to be maintained as
+other pertinent records, unless otherwise provided.
+d)         Holders
+of Herptile Special Use Permits shall submit a report by January 31 of each
+year on forms provided by the Department that summarizes activities conducted
+under the permit during the preceding calendar year.  Failure to submit this annual
+report by the due date will constitute a violation of this Part.
+e)         Permit
+holders may transfer special use herptiles to other permit holders with written
+approved by the Department. The transferring permit holder must include copies
+of receipts/bills of sale with the annual report. Failure to provide copies of
+receipts/bills of sale will constitute a violation of this Part.
+f)         Permit
+holders seeking to renew their Herptile Special Use Permits must submit the
+renewal application by January 31 of each year and must submit the nonrefundable
+permit fee (see Section 885.120(a)(2)), liability insurance renewal (if
+applicable), and proof of educational programs, along with the annual reports.
+g)         A
+permit holder shall notify the Department in writing of any change in his or
+her name or address or any change in his or her operations within 10 days after
+making the change.
+Section 885.150  Limited Entry (Nonresident) Special Use Herptile
+Permits; Fees, Reporting and Renewal
+a)         Nonresidents
+seeking to transport, ship or display venomous or other special use herptiles
+through or within the State must apply for a Limited Entry Special Use Herptile
+Permit.  The permit shall be valid for a specified period that does not
+exceed 15 consecutive days.  Any person who is under the direct control of
+the applicant, or who is employed by or under control of the applicant and will
+be assisting with the activities authorized under a Limited Entry Special Use
+Herptile Permit must be listed in the permit application.  The nonrefundable
+fee for the Limited Entry Permit is $25.  [510 ILCS 68/65-5]
+b)         The
+Department may issue a Limited Entry Permit to an applicant who:
+1)         is
+not a resident of this State;
+2)         complies
+with the requirements of the Act and this Part;
+3)         provides
+proof to the Department that he or she shall, during the permit term, maintain
+sufficient liability insurance coverage of $100,000 per special use
+herptile, up to a maximum of $1,000,000 ;
+4)         pays
+to the Department, along with each Limited Entry Permit, a nonrefundable fee
+of $25;
+5)         uses
+the special use herptile for an activity authorized in the Limited Entry
+Permit [510 ILCS 68/65-5]; and
+6)         meets
+the standards defined in Article 10 of the Act and Section 885.160 of this Part
+to house special use herptiles.
+c)         In
+addition to completing a Limited Entry Permit application form provided by the
+Department, the applicant must submit:
+1)         a
+description, including photographs, of the facilities intended for use in
+holding the special use herptiles while in Illinois;
+2)         the
+name and address of any venues where the special use herptiles will appear;
+3)         the
+dates of entry and exit from the State;
+4)         a
+complete inventory of special use herptiles entering the State with the applicant;
+and
+5)         a
+verified statement that any specimens to be possessed while in Illinois have
+been obtained legally.
+d)         Limited
+Entry Permit holders must submit a report to the Department within 30 days
+after the expiration of the permit, on forms provided by the Department. Failure
+to provide required reports can result in denial of subsequent permit requests.
+e)         Permits
+must be in the possession of the holder or the permit holder's agent (agent
+must be disclosed in the permit application) when engaged in activities
+involving Special Use herptile species and must be presented, upon request, to
+any authorized officer or agent of the Department or any local, State or federal
+law enforcement officer.
+f)         Except
+as otherwise stated on the face of a permit, any person who is under the direct
+control of the permittee, or who is employed by or under control of the
+permittee for the purposes authorized by the permit, may carry out the activity
+authorized by the permit.  Additional persons or agents must be disclosed on
+the application.
+(Source:
+Amended at 49 Ill. Reg. 10413, effective July 31, 2025)
+Section 885.155  Herptile Diseases
+a)         Herptile
+diseases include, Ranavirus, chytrid fungus, of amphibians (Batrachochytrium
+dendrobatitis and Batrachocytrium salamandrivorans), Snake Fungal Disease, and turtle
+shell fungal disease (Emydomyces testovorans).
+b)         Owners
+and possessors of herptiles shall observe the health of their animals.  Any
+herptile diagnosed positively with any herptile disease, shall be reported to
+the Department via email to DNR.HerpPermit@illinois.gov.  Owners and possessors
+must ensure that their animals do not infect wild herptiles in Illinois.
+c)         The
+Department may recommend testing for herptile disease specific to a species of
+interest.  A positive diagnosis from these tests may result in a required
+quarantine and treatment period that will be determined by a licensed
+veterinarian.  Reporting to the Department will include date of veterinary
+visit, owner or possessor name and contact information, veterinarian's name and
+contact information, herptile species affected, pathogen tested, method of
+test, and outcome of animal (euthanized or alive).  Reports will be sent to
+DNR.HerpPermit@illinois.gov.
+d)         Water,
+bedding, or other materials that have been in contact with a herptile disease
+that tested positive shall be disinfected prior to disposal such that
+infectious pathogens are no longer present in the affected material.
+Acceptable methods of disinfection include a 3% bleach bath for five minutes,
+autoclave, heat greater than 250 degrees for 30 minutes, or other methods
+approved by the Department.  Owners and Possessor shall report method of
+disinfection used to DNR.HerpPermit@illinois.gov.
+e)         A
+herptile positively diagnosed with a herptile disease may not be propagated or
+transferred/commercialized to another person until determined free of disease
+by a veterinarian and approved by the Department.  The Department may require
+owners or possessors to provide proof of testing, which may be at their
+expense, confirming the animal is free from disease.
+f)         Any
+wild release of captive-housed herptiles must be free from herptile diseases
+and approved by the Department prior to release.  The Department may require
+owners or possessors to provide proof of testing, which may be at their
+expense, confirming the animal is free from disease.
+(Source:  Added at 49 Ill. Reg. 10413,
+effective July 31, 2025)
+Section 885.160  Herptile Facilities and Welfare
+Standards
+a)         Facility
+Standards
+All Herpetoculture, Herptile Endangered
+and Threatened Species Propagation, and Herptile Special Use Permit holders
+shall keep herptiles in a secure, escape-proof enclosure that is large enough to
+allow the herptiles reasonable movement. The herptiles shall be supplied clean
+water, cover and a clean environment and shall be fed regularly.
+1)         Enclosures
+must be relatively free of feces and multiple shed skins. Non-eaten food items
+must be removed.  Each permit holder must demonstrate that his or her premises
+and any facilities used in his or her operation comply with this Section.
+2)         The
+facility must be constructed of materials of sufficient strength and design to
+prohibit escape, and enclosures must be of dimensions that allow the intended species
+to move about freely.  Facilities shall be structurally sound and maintained in
+good repair to protect herptiles from damage by unauthorized persons or from other
+causes.  Electric power, if required to comply with other provisions of this
+Section, shall be available on the premises.
+3)         Temperatures
+in indoor facilities shall be regulated by heating or cooling to simulate conditions
+of the herptile's natural environment.  Indoor facilities shall have lighting,
+by natural or artificial means or both, of quality, intensity, color,
+temperature, distribution and duration appropriate for the species.
+4)         Outdoor
+facilities shall be sited and constructed to simulate the natural environment
+of the herptile with regard to humidity, moisture, temperature, lighting,
+cover, clean water, and all other factors necessary for survival and growth.
+b)         Inspection
+of Facilities
+To assure adequacy of facilities when
+a permit application is being reviewed, or upon receipt of a complaint, the
+applicant/permit holder shall make the premises, facilities and equipment
+available at any reasonable hour for the purpose of ascertaining compliance
+with the Act and this Part.  If the applicant's/permit holder's premises,
+facilities or equipment do not meet the requirements of the Act and this Part,
+the applicant/permit holder will be advised of deficiencies and the corrective
+measures that must be taken to bring the premises, facilities and equipment
+into compliance.  The permit holder will be given a deadline by which
+prescribed corrective measures must be completed.
+(Source:  Amended at 49 Ill. Reg. 10413,
+effective July 31, 2025)
+Section 885.170  Denial, Suspension, and Revocation
+Procedures
+a)         Permit
+Denial. No person shall be issued a permit under this Part if their privileges
+to obtain a permit are suspended or a permit is revoked at any time during
+their application process.
+b)         Suspension
+or Revocation of Permits. In accordance with Section 5-20 and 70-5 of the Act,
+failure to comply with any provision of the Act may result in suspension or
+revocation of any permit issued pursuant to the Act.  The timeframe for the suspension
+of permits and the procedure by which suspensions and revocations are made, the
+rights of permittees to notice and hearing, and the procedures governing such
+hearings are set forth in 17 Ill. Adm. Code 2530.
+(Source:
+Amended at 49 Ill. Reg. 10413, effective July 31, 2025)
+=========================================================================
+PART 1010 - ILLINOIS LIST OF ENDANGERED AND THREATENED FAUNA (herptiles only)
+=========================================================================
+
+TITLE 17: CONSERVATION
+CHAPTER I: DEPARTMENT OF NATURAL RESOURCES
+SUBCHAPTER c: ENDANGERED SPECIES
+PART 1010 ILLINOIS LIST OF ENDANGERED AND THREATENED FAUNA
+Section 1010.10 Official List
+Section 1010.20 Definitions (Repealed)
+Section 1010.25 Criteria Used for Listing
+Section 1010.30 List
+Section 1010.40 Effective Date (Repealed)
+AUTHORITY: Implementing and authorized by Section 7 of the Illinois Endangered Species Protection Act [520 ILCS 10].
+SOURCE: Filed December 21, 1977, effective December 31, 1977; codified at 5 Ill. Reg. 10653; amended at 8 Ill. Reg. 13705, effective July 25, 1984; amended at 13 Ill. Reg. 4179, effective March 17, 1989; amended at 16 Ill. Reg. 103, effective December 20, 1991; amended at 18 Ill. Reg. 1134, effective January 18, 1994; recodified by changing the agency name from Department of Conservation to Department of Natural Resources at 20 Ill. Reg. 9389; amended at 21 Ill. Reg. 3118, effective March 3, 1997; amended at 23 Ill. Reg. 5556, effective April 26, 1999; amended at 28 Ill. Reg. 12895, effective September 1, 2004; amended at 33 Ill. Reg. 14739, effective October 30, 2009; amended at 34 Ill. Reg. 12866, effective August 20, 2010; emergency amendment at 34 Ill. Reg. 15892, effective October 1, 2010, for a maximum of 150 days; amended at 35 Ill. Reg. 4196, effective February 22, 2011; amended at 39 Ill. Reg. 7982, effective May 19, 2015; amended at 44 Ill. Reg. 10132, effective May 28, 2020; amended at 49 Ill. Reg. 14764, effective October 30, 2025.
+Section 1010.10  Official
+List
+The following list has been
+adopted by the Illinois Endangered Species Protection Board as the Official
+List of Endangered and Threatened Fauna of Illinois.
+
+c)         ENDANGERED
+AMPHIBIANS AND REPTILES OF ILLINOIS
+Salamanders
+Silvery Salamander
+Ambystoma platineum
+Hellbender
+Cryptobranchus
+alleganiensis
+Spotted Dusky Salamander
+Desmognathus
+conanti
+Turtles
+Spotted Turtle
+Clemmys
+guttata
+Blanding's Turtle
+Emydoidea
+blandingii
+Yellow Mud Turtle
+Kinosternon
+flavescens
+Alligator Snapping Turtle
+Macrochelys
+temminckii
+River Cooter
+Pseudemys
+concinna
+Snakes
+Great Plains Ratsnake
+Pantherophis
+emoryi
+Eastern Massasauga*
+Sistrurus
+catenatus
+d)         THREATENED
+AMPHIBIANS AND REPTILES OF ILLINOIS
+Salamanders
+Jefferson Salamander
+Ambystoma jeffersonianum
+Four-toed Salamander
+Hemidactylium scutatum
+Mudpuppy
+Necturus maculosus
+Frogs and Toads
+Eastern Narrow-mouthed Toad
+Gastrophryne carolinensis
+Bird-voiced Treefrog
+Hyla avivoca
+Illinois Chorus Frog
+Pseudacris illinoensis
+Turtles
+Smooth Softshell
+Apalone mutica
+Ornate Box Turtle
+Terrapene ornata
+Snakes
+Kirtland's
+Snake
+Clonophis kirtlandii
+Timber
+Rattlesnake
+Crotalus horridus
+Plains
+Hog-nosed Snake
+Heterodon nasicus
+Mississippi
+Green Watersnake
+Nerodia cyclopion
+Flat-headed
+Snake
+Tantilla gracilis
+Eastern
+Ribbonsnake
+Thamnophis saurita
+Lined
+Snake
+Tropidoclonion lineatum
+
+=========================================================================
+PART 805 - INJURIOUS SPECIES
+=========================================================================
+TITLE 17: CONSERVATION
+CHAPTER I: DEPARTMENT OF NATURAL RESOURCES
+SUBCHAPTER b: FISH AND WILDLIFE
+PART 805 INJURIOUS SPECIES
+Section 805.10 Definition
+Section 805.20 Listing of Injurious Species
+Section 805.30 Unlawful Acts
+Section 805.40 Permits
+Section 805.50 Penalties
+AUTHORITY: Implementing and authorized by Sections 1-125, 1-150, 5-10, 10-100 and 20-90, and 20-100 of the Fish and Aquatic Life Code [515 ILCS 5/1-125, 1-150, 5-10, 10-100, 20-90, and 20-100], and Sections 1.4, 1.10, 2.2, 2.3 and 3.22 of the Wildlife Code [520 ILCS 5/1.4, 1.10, 2.2, 2.3 and 3.22].
+SOURCE: Adopted by emergency rulemaking at 26 Ill. Reg. 14878, effective September 26, 2002, for a maximum of 150 days; adopted at 27 Ill. Reg. 3369, effective February 14, 2003; amended at 29 Ill. Reg. 2280, effective May 1, 2005; amended at 37 Ill. Reg. 14976, effective August 30, 2013; amended at 39 Ill. Reg. 7682, effective May 18, 2015; amended at 47 Ill. Reg. 18981, effective December 7, 2023.
+Section 805.10  Definition
+Injurious Species are defined as those species listed and/or
+hybrids thereof in 50 CFR 16.11-15, not including herptiles, and any other
+species as listed in this Part, based upon the potential threat to indigenous wildlife,
+aquatic life, or the habitat.  For the purposes of this Part, Injurious Species
+shall include any live specimens, progeny thereof, viable eggs, gametes, seeds,
+reproductive structures (e.g., turions/tubers), or plant fragments of those
+species previously identified in this Section; except fish, eggs, or gametes of
+the family Salmonidae.  Injurious herptiles (amphibians and/or reptiles) are
+found and regulated under the Herptiles-Herps Act [510 ILC 68] and its
+accompanying administrative rules, 17 Ill. Adm. Code 885.
+(Source:  Amended at 47 Ill.
+Reg. 18981, effective December 7, 2023)
+Section 805.20  Listing of Injurious Species
+a)         Wild Mammals
+*Flying fox or fruit bat of the
+genus Pteropus
+*Mongoose or meerkat of the genera
+Atilax, Cynictis, Helogale, Heroestes
+*Ichneumia,
+Munzos, and Suricata
+*Any species of
+European rabbit of the genus Oryctolagus
+*Any species of
+Indian wild dog, red dog, or dhole of the genus Cuon
+*Any species of
+multimammate rat or mouse of the genus Mastomys
+*Raccoon dog, Nyctereutes
+procyonoides
+*Any Brushtail
+Possum, Trichosurus vulpecular
+b)         Wild Birds
+*Pink starling or rosy pastor, Sturnus
+roseus
+*Dioch, Quelea quelea, including
+its black-fronted, red-billed or Sudan subspecies
+*Java sparrow, Padda
+oryzivora
+*Red-whiskered bul-bul, Pycnonotus
+jocosus
+*Eggs of wild
+nongame birds
+c)         Fish, Mollusks and Aquatic
+Invertebrates
+*Walking catfish of the family
+Clariidae
+*Dreissenid mussels, genus Dreissena,
+including but not limited to zebra and quagga mussels
+*Mitten crabs of the genus Eriocheir
+*Snakehead fishes of the genera
+Channa and Parachann (or their generic synonyms of Bostrychoides,
+Orphicephalus, Ophiocephalus, and Paraphiocephalis) of the family Channidae,
+including but not limited to:
+Chel or Borna
+snakehead, Channa amphibeus
+Northern or Amur
+snakehead, Channa argus
+Chinese or
+Northern Green snakehead, Channa asiatica
+Channa
+aurantimaculata
+Bangka snakehead,
+Channa bankanensis
+Baram snakehead,
+Channa baramensis
+Barca or Tiger
+snakehead, Channa barca
+Rainbow or Jewel
+snakehead, Channa bleheri
+Bluespotted
+snakehead, Channa cyanospilos
+Dwarf, Gaucha, or
+Frog snakehead, Channa gachua
+Inle snakehead,
+Channa harcourtbutleri
+Shiny or splendid
+snakehead, Channa Lucius
+Blotched
+snakehead, Channa maculata
+Bullseye, Murrel,
+Indian, Great, or Cobra snakehead, Channa marulius
+Emperor
+snakehead, Channa maruloides
+Channa
+melanoptera
+Black snakehead,
+Channa melasoma
+Giant, Red, or
+Redline snakehead, Channa micropeltes
+Channa nox
+Ceylon or
+Ceylonese Green snakehead, Channa orientalis
+Channa panaw
+Ocellated,
+Spotted, or Eyespot snakehead, Channa pleurophthalmus
+Dotted or Spotted
+Snakehead, Channa punctata
+Golden Snakehead,
+Channa stewartia
+Chevron or
+Striped Snakehead, Channa striata
+Niger or African
+Snakehead, Parachanna Africana
+Congo, Square-spotted African, or
+Light African Snakehead, Parachanna insignis
+Dark African, Dusky, or
+Square-spotted Snakehead, Parachanna obscura
+*Crucian carp,
+Carassius carassius
+*Prussian carp,
+Carassius gibelio
+*Largescale silver carp,
+Hypophthalmichthys harmandi
+*Silver carp, Hypophthalmichthys
+molitrix
+*Bighead carp, Hypophthalmichthys
+nobilis
+*Black carp, Mylopharyngodon
+piceus
+*Eurasian minnow, Phoxinus
+phoxinus
+River ruffe, Gymnocephalus cernuus
+Round goby, Neogobius melanostomos
+Tubenose goby, roterorhinus
+marmoratus
+*Roach, Rutilus rutilus
+*Nile perch, Lates niloticus
+*Amur sleeper, Perccottus glenii
+*European perch, Perca fluyiatilis
+Rusty crayfish, Orconectes
+rusticus.  Possession of living rusty crayfish is prohibited for all except the
+holders of an approved aquaculture permit with a letter of authorization to
+import/possess this species.
+Rudd, Scardinius erythrophthalmus
+Stone moroko, Pseudorasbora parva
+Zander, Sander lucioperca
+*Wels catfish, Silurus glanis
+Killer Shrimp, Dikerogammarus
+villosus
+Yabby, Cherax destructor
+Asian Swamp eel, Monopterus albus
+Tench, Tinca tinca
+Golden mussel, Limnoperna
+fortune
+Marmorkreb/marbled
+crayfish, Procambarus virginalis
+New Zealand mud
+snail, Potamopyrgus antipodarum
+d)         Plants
+Mosquito fern, Azolla
+pinnata
+Flowering rush, Butomus
+umbellatus
+Caulerpa or
+Mediterranean killer algae, Caulerpa taxifolia
+Brazilian elodea, Brazilian
+waterweed, Anacharis or Egeria, Egeria densa
+Anchored water
+hyacinth, Eichhornia azurea
+Hydrilla or water
+thyme, Hydrilla verticillata
+European frogbit or common frogbit,
+Hydrocharis morsus-ranae
+Miramar weed, Indiana swampweed or
+hygro, Hygrophilia polysperma
+**Chinese water spinach or swamp
+morning-glory, Ipomoea aquatic
+Yellow flag iris
+or tall yellow iris, Iris pseudacorus
+Oxygen weed or
+African elodea, Lagarosiphon major
+Asian marshweed or
+ambulia, Limnophila sessiliflora
+Monochoria, arrowleaf, or false
+pickerelweed, Monochoria hastata
+Heartshape or
+false pickerelweed, Monochoria vaginalis
+Parrot feather or parrot feather
+watermilfoil, Myriophyllum aquaticum)
+Eurasian watermilfoil,
+Myriophyllum spicatum
+Brittle naiad or
+brittle water nymph, Najas minor
+Yellow floating
+heart, Nymphoides peltata
+Duck lettuce, Ottelia
+alismoides
+Curlyleaf pondweed,
+Potamogeton crispus
+Arrowhead, Sagittaria
+sagittifolia
+Giant salvinia, Salvinia
+auriculata
+Giant salvinia, Salvinia
+biloba
+Giant salvinia, Salvinia
+herzogii
+Giant salvinia, Salvinia
+molesta
+Exotic bur-reed, Sparganium
+erectum
+Water chestnut, Trapa
+natans
+Water soldier, Stratiotes
+aloides
+NOTE:  Species noted by an asterisk
+(*) are also federally listed as injurious wildlife under 50 CFR 16.  (**)
+Chinese water spinach, a federally listed noxious weed, cannot be propagated in
+Illinois; however, stems, leaves and parts of plants absent roots are
+permissible to possess and sell, within the State of Illinois, for consumption.
+(Source:  Amended at 47 Ill.
+Reg. 18981, effective December 7, 2023)
+Section 805.30  Unlawful Acts
+a)         Injurious
+species shall not be possessed, propagated, bought, sold, bartered or offered
+to be bought, sold, bartered, transported, traded, transferred or loaned to any
+other person or institution unless a permit is first obtained from the
+Department of Natural Resources in accordance with Section 805.40 of this Part,
+except persons engaged in interstate transport for lawful commercial purposes
+who do not buy, sell, barter, trade, transfer, loan or offer to do so in Illinois
+may transport injurious species across Illinois without an injurious species
+permit from the Department.
+1)         Under no circumstances
+shall an interstate transporter:
+A)        transfer any injurious
+species from one container to another; nor
+B)        exchange
+or discharge from a container containing injurious species without first
+obtaining written permission from the Department:
+i)          water;
+ii)         bedding;
+iii)        soluble material; or
+iv)        insoluble material.
+2)         The
+Department shall grant permission under subsection (a)(1)(B) only if:
+A)        it
+approves of the final disposition of the water, bedding, or material; and
+B)        the
+transporter satisfies the Department that there is no possibility of release
+into the environment.
+b)         Injurious
+species shall not be released.  Release of injurious species is a violation of
+Section 10-100 and/or Section 20-90 of the Fish and Aquatic Life Code [515 ILCS
+5/10-100 or 20-90] or Section 2.2 and/or 2.3 of the Wildlife Code [520 ILCS 5/2.2
+and/or 5/2.3].
+c)         Receipt
+of an Injurious Species Permit from the Department of Natural Resources does
+not excuse compliance with any other federal, State or local government laws or
+regulations.
+(Source:  Amended at 47 Ill.
+Reg. 18981, effective December 7, 2023)
+Section 805.40  Permits
+a)         Application Requirements
+Permits to transport/possess
+injurious species may be issued by the Department of Natural Resources in
+accordance with Section 20-100 of the Fish and Aquatic Life Code [515 ILCS 5/20-100] and Sections 2.2, 2.3 or 3.22 of the Wildlife Code [520 ILCS 5/2.2, 5/2.3 or 5/3.22],
+for zoological, educational, medical, or scientific purposes, under the
+following provisions:
+1)         Educational,
+medical or research institutions, or zoological exhibitions wishing to
+transport/possess injurious species must make application to the Department in
+writing, on forms provided by the Department, at the following:
+Illinois
+Department of Natural Resources
+Office of
+Resource Conservation
+One Natural Resources Way
+Springfield, IL  62702-1271
+Or by email at:
+For Section 805.20(a), Mammals and
+Birds – dnr.wildlife@illinois.gov
+or
+For Section 805.20(b) and (c),
+Fish, Mollusks, Aquatic Invertebrates and Plants – dnr.aquaculture@illinois.gov
+2)         Applications
+must contain the following minimum information:
+A)        Name
+and address of educational, medical or research institution, or zoological
+exhibition;
+B)        Name,
+address, and position of person making application;
+C)        Number
+of specimens and the common and scientific names of each species for which
+permit is requested;
+D)        Explanation
+of the exhibition, or educational, medical or research project necessitating
+need for injurious species permit;
+E)        A
+statement of the applicant's qualifications and previous experience in caring
+for and handling captive wildlife or aquatic life;
+F)         Time
+period for which permit is requested;
+G)        Location
+and description of facilities in which species will be kept; and
+H)        Any
+other information as requested by the Department, e.g., purpose of research,
+supplier of animals, disposition of animals and federal permit, if required.
+b)         Issuance Criteria
+The Department shall consider the
+following in determining whether to issue a permit to transport/possess
+injurious species for zoological, educational, medical, or scientific purposes:
+1)         Whether
+the request is for a bonafide educational, medical, research or zoological
+exhibition purpose;
+2)         Whether
+the facilities for holding the specimens have been inspected and approved by
+the Department prior to issuance of an injurious species permit.  Facilities
+must be constructed and maintained to prevent escape of all life stages of the
+specimens;
+3)         Whether
+the applicant is aware of the potential dangers to public interest posed by the
+injurious species; and who, by reason of the applicant's knowledge, experience,
+and facilities, can be expected to provide adequate protection to the public
+interests; and
+4)         If
+permit application is for zoological exhibition purposes, whether the exhibit
+or display will be open to the public during regular, appropriate hours.
+c)         Permit Conditions
+Permits issued for the
+transportation/possession of injurious species shall be subject to the
+following conditions:
+1)         All
+specimens and progeny thereof approved under the permit must be confined in the
+facilities and at the location approved on the permit.
+2)         Disposition
+of the specimens (including conditions under which they may be sold, traded,
+bartered or transferred to another permitted exhibition or institution) shall
+be as designated by the Department.
+3)         Permits
+issued under this Part shall be valid only for the time periods and under the
+provisions designated by the Department on the permit.
+4)         All
+permit holders shall file with the Department, no later than 30 days after the
+expiration of the permit, a report documenting disposition of all specimens.
+5)         In
+the event of escape or unintentional release of specimens, or progeny thereof,
+authorized under the permit, permittees shall notify the Department by
+telephone (1-877-236-7529, toll-free) or other expedient means within 24 hours
+following the escape unless specifically exempted by the Department in writing.
+6)         Before
+any person shall import/export any federally listed injurious species, a permit
+must first be obtained in accordance with the provisions of 50 CFR 16.22.
+d)         Live
+haul of commercially wild caught Asian carp shall only be allowed with a
+Restricted Species Transportation Permit (as outlined in 17 Ill. Adm. Code
+830.12 and 17 Ill. Adm. Code 870.6).  Restricted Species Transportation permits
+are available by writing or email to:
+Aquaculture
+Specialist
+Illinois
+Department of Natural Resources
+Aquatic
+Nuisance Species and Aquaculture Program
+One Natural
+Resources Way
+Springfield,
+Illinois  62702-1271
+dnr.aquaculture@illinois.gov
+(Source:  Amended at 47 Ill. Reg. 18981,
+effective December 7, 2023)
+Section 805.50  Penalties
+a)         Violations
+of Section 20-90 of the Fish and Aquatic Life Code [515 ILCS 5/20-90] and
+associated administrative rules are business offenses, punishable by a fine of
+not less than $1,000 or more than $5,000.
+b)         Violations
+of Section 10-100(a) of the Fish and Aquatic Life Code [515 ILCS 5/10-100(a)]
+is a Class B misdemeanor punishable by a fine up to $1500.  Violations of
+Section 10-100(b) of the Fish and Aquatic Life Code [515 ILCS 5/10-100(b)] is a
+Class A misdemeanor punishable by a fine up to $2500.
+c)         Violations
+of Sections 20-100 of the Fish and Aquatic Life Code [515 ILCS 5/20-100], and
+Sections 2.2 and 3.22 of the Wildlife Code [520 ILCS 5/2.2 and 3.22] are petty
+offenses, punishable by a fine of up to $1,000.
+d)         Any
+violations of the Fish and Aquatic Life Code [515 ILCS 5], Wildlife Code [520
+ILCS 5], or administrative rules of the Department may result in the revocation
+of licenses and permits, and the suspension of privileges pursuant to 17 Ill.
+Adm. Code 2530.
+(Source:
+Amended at 47 Ill. Reg. 18981, effective December 7, 2023)

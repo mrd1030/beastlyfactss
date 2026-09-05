@@ -95,38 +95,38 @@
       "NE"
     ],
     "remaining": 0,
-    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 8 of the 52 jurisdictions have now been read for all 52 animals and 29 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
+    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 9 of the 52 jurisdictions have now been read for all 52 animals and 30 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 9,
+        "checked": 10,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 9,
+        "checked": 10,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 10,
+        "checked": 11,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 10,
+        "checked": 11,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 10,
+        "checked": 11,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 10,
+        "checked": 11,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 10,
+        "checked": 11,
         "of": 51
       },
       "green-anole": {
-        "checked": 10,
+        "checked": 11,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,107 +134,107 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "axolotl": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "box-turtle": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 35,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 35,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 35,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 35,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 36,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 36,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 36,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 36,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 37,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 38,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "green-iguana": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "burmese-python": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "degu": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "hamster": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "gerbil": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "bengal-cat": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "milk-snake": {
@@ -242,15 +242,15 @@
         "of": 51
       },
       "ball-python": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "veiled-chameleon": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "boa-constrictor": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "corn-snake": {
@@ -656,8 +656,8 @@
     },
     "il-720-48-10": {
       "title": "720 ILCS 5/48-10, Dangerous animals",
-      "url": "https://www.animallaw.info/statute/il-exotic-pets-548-10-dangerous-animals",
-      "note": "A closed species list plus a blanket bar on primates. Exemptions: lawful primate possession before 1 January 2011 if registered, and a single service capuchin for a permanently disabled person with severe mobility impairment. Illinois is a home rule state, so municipal ordinances matter here more than most."
+      "url": "https://www.ilga.gov/Legislation/ILCS/Fulltext?DocName=072000050K48-10",
+      "note": "A closed list of 15 named mammals plus a blanket bar on primates, and nothing else. It replaced the Dangerous Animals Act at 720 ILCS 585, which P.A. 98-752 repealed effective 1 January 2015; the old citation is still what most secondary sources give. The section says in terms that it does not reach reptiles or amphibians. Exemptions: primates lawfully held before 1 January 2011 and registered by 1 April 2011, and one service capuchin for a person with a severe mobility impairment."
     },
     "mn-346-155": {
       "title": "Minn. Stat. § 346.155, Possessing regulated animals",
@@ -900,9 +900,9 @@
       "note": "Corn Snake and Milksnake both appear by name on DNR's own prohibited-native-species list, with the page stating plainly that origin or morphology doesn't matter."
     },
     "il-herps-act": {
-      "title": "Illinois Administrative Code, Title 17, Part 885 — Herptile Code",
+      "title": "Illinois Administrative Code, Title 17, Part 885, Herptile Code",
       "url": "https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=01700885",
-      "note": "Official Joint Committee on Administrative Rules text; §885.20 sets the 8-total/4-per-species cap on native herptiles and §885.80 sets the $50 Herpetoculture Permit that exempts a keeper from it."
+      "note": "Official Joint Committee on Administrative Rules text, amended effective 31 July 2025. § 885.40 is the list of Illinois native herptile taxa, which decides whether the possession cap applies to a species at all; § 885.20 sets the seasons and limits; § 885.80 sets the $50 Herpetoculture Permit; and § 885.105(j), new in 2025, sweeps named corn snake morph lines into the endangered species regime."
     },
     "mn-97a-401": {
       "title": "Minnesota Statutes 2025, Section 97A.401",
@@ -1061,8 +1061,8 @@
     },
     "il-520-5": {
       "title": "Illinois Wildlife Code, 520 ILCS 5",
-      "url": "https://www.ilga.gov/Legislation/ILCS/Articles?ActID=1729&ChapterID=43",
-      "note": "Places ownership of wild birds and mammals in the state and requires an IDNR permit to hold protected native wildlife, including tree squirrels, in captivity."
+      "url": "https://www.ilga.gov/Legislation/ILCS/Fulltext?DocName=052000050K2.2",
+      "note": "§ 2.2 says the Act applies only to wild birds and wild mammals, then lists the protected species by name and family. Parrots are not among them; the flying squirrel is. § 3.23 (DocName 052000050K3.23) carries the Class A noncommercial breeder permit that lets a private keeper hold a protected species, plus the two named-species clauses that decide the rabbit and the monk parakeet."
     },
     "oh-1531": {
       "title": "Ohio Revised Code Chapter 1531",
@@ -1243,6 +1243,26 @@
       "title": "Colorado Parks and Wildlife, Wildlife and Animal Possession in Colorado, species determination lists",
       "url": "https://cpw.state.co.us/wildlife-arent-pets",
       "note": "CPW's own page, with four downloadable lists, herpetofauna, mammals, birds, and fish and marine animals, each row giving a species and the regulation that decides it: Domestic, Unregulated, Appendix A or B, Appendix C, Regulated or Prohibited. Updated 1 May 2026. Not exhaustive, and CPW takes questions on unlisted species by email. This is the agency applying its own rule, which matters most where Appendix A turns on whether a species is native only to the tropics."
+    },
+    "il-510-68": {
+      "title": "Illinois Herptiles-Herps Act, 510 ILCS 68",
+      "url": "https://www.ilga.gov/Legislation/ILCS/Fulltext?DocName=051000680K5-5",
+      "note": "The statute behind 17 Ill. Adm. Code 885, and the only Illinois law that reaches pet reptiles and amphibians. § 5-5 sets the possession limits, § 15-5 clears the family Boidae from the permit system outright, § 25-5 defines 'monitor lizards' as only the crocodile monitor and Komodo dragon, and § 85-5 bars possession of a special use herptile. Sections are served individually from this endpoint by DocName, 051000680K<section>."
+    },
+    "il-520-10": {
+      "title": "Illinois Endangered Species Protection Act, 520 ILCS 10/3",
+      "url": "https://www.ilga.gov/Legislation/ILCS/Fulltext?DocName=052000100K3",
+      "note": "Makes it unlawful to possess any animal on the Illinois List unless otherwise authorized by law. There is no captive-bred carve-out in the statute, so a species on the list stays on it however the animal was produced."
+    },
+    "il-1010": {
+      "title": "Illinois Administrative Code, Title 17, Part 1010, Illinois List of Endangered and Threatened Fauna",
+      "url": "https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=01701010",
+      "note": "Amended effective 30 October 2025. Three entries here reach animals sold in the pet trade: the Great Plains ratsnake is endangered, and the plains hog-nosed snake and the ornate box turtle are threatened."
+    },
+    "il-805": {
+      "title": "Illinois Administrative Code, Title 17, Part 805, Injurious Species",
+      "url": "https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=01700805",
+      "note": "Adopts the federal injurious wildlife list at 50 CFR 16.11-15 and adds to it, then bars possession of anything on it without a permit issued only to institutions. § 805.10 excludes herptiles expressly, sending them to the Herptiles-Herps Act, so this Part never decides a reptile or amphibian question in Illinois."
     }
   },
   "animals": {
@@ -1398,10 +1418,11 @@
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04",
-          "cite": "720 ILCS 585/0.1",
-          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
-          "note": "Illinois works from a closed species list plus a blanket bar on primates. It names large cats, and no insectivore appears anywhere in it. Illinois is a home rule state, so a municipal ordinance is the layer that actually decides this."
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No insectivore appears on it, and no hedgehog is on the Part 805 injurious species list, which is the other place Illinois bars an exotic mammal. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "MN": {
           "status": "legal",
@@ -1765,11 +1786,12 @@
         },
         "IL": {
           "status": "legal",
-          "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04",
-          "cite": "720 ILCS 585/0.1",
-          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
-          "note": "Absent from the closed list. Being a home rule state, Illinois leaves the real decision to your municipality."
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/3.23",
+          "quote": "No person shall breed, raise, sell or offer to sell ferrets without first obtaining from the Department either a Class A noncommercial game breeder permit or a Class B commercial game breeder permit; such permit shall not, however, authorize the use or sale of ferrets for taking any of the wild birds or wild mammals protected by this Act.",
+          "note": "Keeping a pet ferret needs nothing: the ferret is not on the closed dangerous animal list at 720 ILCS 5/48-10 and not on the Wildlife Code's protected species list. Breeding or selling one is a different question, and this is the clause that answers it. Illinois requires a game breeder permit to breed, raise or sell ferrets, free of charge for the Class A noncommercial version, and the same sentence bars using a ferret to hunt protected wildlife, which is the practice the rule was written about. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "MN": {
           "status": "legal",
@@ -2176,10 +2198,11 @@
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04",
-          "cite": "720 ILCS 585/0.1",
-          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
-          "note": "No marsupial appears on the closed list. Check your municipal code, which in a home rule state can be stricter than the statute."
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "No marsupial appears on the list. Illinois does bar one marsupial elsewhere, the brushtail possum, as an injurious species under 17 Ill. Adm. Code 805.20(a), and the sugar glider is not on that list either. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "MN": {
           "status": "legal",
@@ -2762,6 +2785,15 @@
           "note": "Colorado's domestic animal list is the shortest route through this chapter: an animal on it is exempted from Parks and Wildlife Commission regulations outright, with no licence, no possession limit and no importation approval to obtain. The Syrian hamster is named at genus level. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it, and the hamster is not a native Illinois wild mammal, so neither the Wildlife Code nor this section reaches one. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3088,6 +3120,15 @@
           "cite": "§ 1103(A)",
           "quote": "Domesticated races of gerbils (Meriones unguiculatus)",
           "note": "Named to the species on the domestic animal list, so the wildlife chapters do not reach it. Colorado draws its line at the domesticated race rather than the genus, which is worth noting for anyone importing a wild-type Meriones. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it. The Wildlife Code reaches only wild birds and wild mammals native to or brought into Illinois and named in its § 2.2 list, and the gerbil is on neither. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
@@ -3427,6 +3468,15 @@
           "cite": "Del. Code tit. 3 § 7201",
           "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
           "note": "The permit requirement names live wild mammals, hybrids of wild mammals and non-native reptiles, and stops there. Birds are absent from the operative text despite the chapter's title mentioning them, and the Department of Agriculture's own guidance states that all birds and fish are exempt from the permitting process. The monk or quaker parakeet therefore needs nothing.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/3.23",
+          "quote": "No person shall release, or propagate for the release any Nutria (Myocastor coypus), and monk parakeet (Myiopsitta monachus), in this State at any time.",
+          "note": "Illinois names the monk parakeet in statute and then stops short of the thing most states do with it. The clause bars releasing one and bars propagating one for release, and says nothing about keeping or selling. Two sentences earlier in the same section Illinois shows what a possession ban looks like when it wants one, barring anyone from holding or possessing San Juan rabbits or raccoon dogs with no permit available; the monk parakeet clause is deliberately narrower. Nor is the species on the Part 805 injurious list or the § 2.2 protected list. Illinois has a naturalized monk parakeet population on the south side of Chicago that has been there since the 1970s, which makes the restraint here more pointed, not less. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3781,6 +3831,15 @@
           "note": "Colorado disposes of the entire hybrid cat question in five words. The domestic animal list clears Felis catus \"including hybrids with wild felines\", with no generation cutoff, no weight threshold and no registration, so an F1 Bengal sits in the same place as a housecat. Arizona reaches the opposite answer on an express hybrid clause, and Pennsylvania cannot answer it at all, which makes this among the cleanest hybrid rules on the map. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Illinois names 11 wild cats and stops. The Bengal is a cross with the Asian leopard cat, Prionailurus bengalensis, which is not one of them, and the statute has no hybrid clause, no generation cutoff and no weight threshold, so nothing in it reaches a Bengal at any filial generation. Worth reading the list carefully rather than the word leopard in it: the leopard named is Panthera pardus. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -4130,6 +4189,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "The veiled chameleon is covered by the entry for chameleons is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The veiled chameleon is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4453,6 +4521,15 @@
           "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
           "note": "Testudinidae is on Appendix A, but only for tortoises native only to the tropical and subtropical region, and the Russian tortoise is a Central Asian steppe animal ranging far north of the 26 degree line. CPW's herpetofauna list records Testudo horsfieldii against Appendix A, C, 3 with the finding \"native range is outside tropical/subtropical\", and files the Greek tortoise, Hermann's tortoise and the leopard tortoise the same way, against the sulcata and the red-footed tortoise which do clear it. A tortoise being on Appendix A's family list is therefore not the answer in Colorado; the range test is.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The Russian tortoise is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4802,6 +4879,15 @@
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of snake native only to the tropical and subtropical region from the following families: Pythonidae (giant snakes)",
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. The ball python is West and Central African and breeds nowhere outside the tropics, so it satisfies the \"native only\" qualifier that decides most of this appendix. CPW's herpetofauna list files Python regius against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/15-5",
+          "quote": "Unless contrary to any other law or rule, nothing shall prohibit lawfully acquired possession of any of the Boidae family, such as boas, pythons, and anacondas, provided captive maintenance requirements from the Department as set forth in this Act are met. All boas, pythons, and anacondas referenced in this Act are exempt from the permit process, associated annual fee, and liability insurance coverage.",
+          "note": "Illinois clears the boas and pythons by name in statute rather than by leaving them off a list, which is a stronger position than most species here get. There is no length threshold anywhere in it. What the Act does attach is husbandry: § 15-10 requires any boa, python or anaconda not native to the United States to be kept in a strong, impact resistant, escape-proof enclosure regardless of length, and § 15-20 requires it to be out of public sight in an escape-proof enclosure during transport. The ball python is a python and squarely inside § 15-5. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
@@ -5161,6 +5247,15 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The boa constrictor is on none of it, so no special licence is required. Boidae appears nowhere in the rule. ",
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/15-5",
+          "quote": "Unless contrary to any other law or rule, nothing shall prohibit lawfully acquired possession of any of the Boidae family, such as boas, pythons, and anacondas, provided captive maintenance requirements from the Department as set forth in this Act are met. All boas, pythons, and anacondas referenced in this Act are exempt from the permit process, associated annual fee, and liability insurance coverage.",
+          "note": "Illinois clears the boas and pythons by name in statute rather than by leaving them off a list, which is a stronger position than most species here get. There is no length threshold anywhere in it. What the Act does attach is husbandry: § 15-10 requires any boa, python or anaconda not native to the United States to be kept in a strong, impact resistant, escape-proof enclosure regardless of length, and § 15-20 requires it to be out of public sight in an escape-proof enclosure during transport. Boa constrictor is the animal § 15-5 is named for. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5452,6 +5547,15 @@
           "cite": "C.R.S. § 33-1-102(51)",
           "quote": "\"Wildlife\" means wild vertebrates, mollusks, and crustaceans, whether alive or dead, including any part, product, egg, or offspring thereof, that exist as a species in a natural wild state in their place of origin, presently or historically",
           "note": "A tarantula is an arachnid, and Colorado's statutory definition of wildlife runs to wild vertebrates, mollusks and crustaceans and stops there. Everything CPW does about private possession, the licensing scheme in Chapter W-11, the prohibited list in Chapter W-0 and the new herpetofauna chapter, is built on that definition, so none of it reaches this animal. CPW's own species lists are divided into birds, mammals, herpetofauna and fish and marine animals, with no terrestrial invertebrate category at all, which is the same gap seen from the other side. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/2.2",
+          "quote": "This Act shall apply only to the wild birds and parts of wild birds (including, but not limited to, their nests and eggs), and wild mammals and parts of wild mammals, which shall include their green hides, in the State of Illinois, or which may be brought into the State.",
+          "note": "A tarantula is an arachnid, and Illinois divides its animal law up in a way that leaves it out of every piece. The Wildlife Code says in its own words that it applies only to wild birds and wild mammals. The Herptiles-Herps Act covers reptiles and amphibians. The Fish and Aquatic Life Code covers aquatic life. The injurious species list at 17 Ill. Adm. Code 805 has a category for invertebrates, and it is headed \"Fish, Mollusks and Aquatic Invertebrates\". A terrestrial arthropod falls in the gap, the same way it does in Pennsylvania, so no state possession rule applies. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5747,6 +5851,15 @@
           "cite": "C.R.S. § 33-1-102(51)",
           "quote": "\"Wildlife\" means wild vertebrates, mollusks, and crustaceans, whether alive or dead, including any part, product, egg, or offspring thereof, that exist as a species in a natural wild state in their place of origin, presently or historically",
           "note": "The emperor scorpion is an arachnid, and Colorado's statutory definition of wildlife runs to wild vertebrates, mollusks and crustaceans and stops there. Everything CPW does about private possession, the licensing scheme in Chapter W-11, the prohibited list in Chapter W-0 and the new herpetofauna chapter, is built on that definition, so none of it reaches this animal. CPW's own species lists are divided into birds, mammals, herpetofauna and fish and marine animals, with no terrestrial invertebrate category at all, which is the same gap seen from the other side. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/2.2",
+          "quote": "This Act shall apply only to the wild birds and parts of wild birds (including, but not limited to, their nests and eggs), and wild mammals and parts of wild mammals, which shall include their green hides, in the State of Illinois, or which may be brought into the State.",
+          "note": "The emperor scorpion is an arachnid, and Illinois divides its animal law up in a way that leaves it out of every piece. The Wildlife Code says in its own words that it applies only to wild birds and wild mammals. The Herptiles-Herps Act covers reptiles and amphibians. The Fish and Aquatic Life Code covers aquatic life. The injurious species list at 17 Ill. Adm. Code 805 has a category for invertebrates, and it is headed \"Fish, Mollusks and Aquatic Invertebrates\". A terrestrial arthropod falls in the gap, the same way it does in Pennsylvania, so no state possession rule applies. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6075,6 +6188,15 @@
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Salvator merianae against this line, with the red tegu and the gold tegu beside it. Colorado does not run the tegu-specific rules several southern states have adopted; the family listing decides it. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The Argentine black and white tegu is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. Illinois has not followed the states that wrote tegu-specific rules after the Florida populations established. Nothing in the Act or Part 885 names Salvator or Tupinambis at all. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6383,6 +6505,15 @@
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Varanus exanthematicus against this line, along with the black-throated, blue-spotted tree, crocodile and Asian water monitors. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/25-5",
+          "quote": "\"Monitor lizards\" means the following members of the Varanidae family, specifically crocodile monitors and Komodo dragons.",
+          "note": "This is the definition to read before assuming Illinois restricts monitors. Article 25 puts monitor lizards under the special use permit regime, available only to residents running bona fide educational programs, and § 85-5 bars possessing a special use herptile outside it. But § 25-5 defines the term to mean two animals, the crocodile monitor and the Komodo dragon, and nothing else in Varanidae. The savannah monitor is neither, so it is an ordinary non-native herptile and needs no permit. A rule that names a family and then narrows it to two species in the same sentence is exactly the kind that gets summarised backwards. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -6498,10 +6629,11 @@
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04",
-          "cite": "720 ILCS 585/0.1",
-          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
-          "note": "No rodent appears on the closed list."
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it, and the prairie dog is not native to Illinois, so the Wildlife Code's protected species list does not reach it either. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "MN": {
           "status": "legal",
@@ -6902,10 +7034,11 @@
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04",
-          "cite": "720 ILCS 585/0.1",
-          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
-          "note": "No rodent appears on the closed list, so the capybara's size does not bring it in."
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it, so the capybara's size does not bring it in, and Illinois has no weight or dangerousness trigger that would. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "MN": {
           "status": "legal",
@@ -7293,8 +7426,11 @@
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "note": "The canids listed are the wolf and coyote only.",
-          "verifiedOn": "2026-08-04"
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "The only canids on the list are the wolf and the coyote. The fennec fox is neither, and it is not a native Illinois furbearer, so the Wildlife Code does not reach it. Illinois does list the raccoon dog as an injurious species under 17 Ill. Adm. Code 805, which shows the state naming a specific exotic canid when it means to bar one; the fennec fox is not named there. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "MN": {
           "status": "legal",
@@ -7711,9 +7847,11 @@
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote",
-          "note": "The serval is NOT on the Illinois list, despite several secondary sources saying it is. Read the statute rather than the summaries here.",
-          "verifiedOn": "2026-08-04"
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "The serval is NOT on the Illinois list, despite several secondary sources saying it is. The 11 cats named are the lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat and jaguarundi. Read the statute rather than the summaries here, and note that the live citation is 720 ILCS 5/48-10; the Dangerous Animals Act at 720 ILCS 585 that most summaries still cite was repealed effective 1 January 2015. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "MN": {
           "status": "banned",
@@ -8115,10 +8253,11 @@
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04",
-          "cite": "720 ILCS 585/0.1",
-          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
-          "note": "No rodent appears on the closed list."
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it, and the chinchilla is not a native Illinois wild mammal. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "MN": {
           "status": "legal",
@@ -8718,6 +8857,15 @@
           "note": "Named to the species on the domestic animal list. The capybara, its much larger relative in the same family, is not, which is why the two land on opposite sides of this map in Colorado. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it. Illinois has no exotic mammal permit scheme at all for an animal off the list, so there is nothing to apply for and nothing to comply with at state level. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9037,6 +9185,15 @@
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Iguanidae (iguanas)",
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Iguana iguana against this line. The green iguana is neotropical from Mexico south to Paraguay, inside the band the chapter draws. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The green iguana is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
@@ -9361,6 +9518,15 @@
             "detail": "A snapping turtle legally collected on or before 1 May 2026 may be kept and transported within Colorado for the life of the animal if a CPW Legacy Report was filed by 30 July 2026. No new wild capture is allowed."
           },
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "conditional",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.20(b), (c)",
+          "quote": "Bullfrogs and common snapping turtles may be taken only June 15 through October 15. There is no closed season on all other non-listed native herptiles. The daily harvest limit for bullfrogs is eight, with a possession limit of 16. The daily harvest limit for common snapping turtles is two, with a possession limit of four.",
+          "note": "Illinois pulls the common snapping turtle out of the general herptile cap and gives it its own regime, the only reptile besides the bullfrog treated this way. It is a native taxon under § 885.40, and it is the only one with a closed season: a sport fishing licence, take only between 15 June and 15 October, two a day and four in possession. Bowfishing for it is barred in sixteen named southern counties, and § 30-10 bars collecting wild turtles for turtle races in the seven counties where ranavirus has been documented. The alligator snapping turtle is a different animal and is state endangered. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9659,6 +9825,15 @@
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)",
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. The geckos are handled in the appendix's Other Species block, which CPW introduces as species that are not native only to tropic or subtropic regions, so the native-range qualifier that governs the family lists does not apply to them. Three gecko families are cleared with a single exception, the Mediterranean house gecko. CPW files Gekko gecko against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The tokay gecko is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
@@ -9973,6 +10148,15 @@
             "detail": "A western tiger salamander legally collected from the wild on or before 1 May 2026 may be kept for life if a CPW Legacy Report was filed by 30 July 2026."
           },
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "conditional",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/5-5(a); 17 Ill. Adm. Code 885.40",
+          "quote": "The possession limit for herptiles (excluding common snapping turtles and bullfrogs) is no more than 4 total per species. ... In no case shall a person possess more than 8 indigenous amphibian or reptiles in total.",
+          "note": "The eastern tiger salamander, Ambystoma tigrinum is on the § 885.40 list of Illinois native herptile taxa, which is what puts it inside the cap rather than outside it. No licence is needed to keep one, but three conditions ride along: no more than 4 of the species and no more than 8 indigenous herptiles in total, a sport fishing licence to collect any native taxon from the wild, and a $50 Herpetoculture Permit to breed or to sell. Non-residents may not possess herptiles collected from the wild in Illinois at all except under a scientific collection permit. It is not on the state endangered or threatened list, unlike the Jefferson, silvery and spotted dusky salamanders and the mudpuppy, so the ordinary cap is the whole of it. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10284,6 +10468,15 @@
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Varanidae (monitor lizard)",
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Varanus niloticus against this line. Colorado's monitor rule turns on native range rather than on adult size or on the animal's reputation, so the Nile monitor and the savannah monitor land in the same place here even though several states separate them. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/25-5",
+          "quote": "\"Monitor lizards\" means the following members of the Varanidae family, specifically crocodile monitors and Komodo dragons.",
+          "note": "This is the definition to read before assuming Illinois restricts monitors. Article 25 puts monitor lizards under the special use permit regime, available only to residents running bona fide educational programs, and § 85-5 bars possessing a special use herptile outside it. But § 25-5 defines the term to mean two animals, the crocodile monitor and the Komodo dragon, and nothing else in Varanidae. The Nile monitor is neither, so it is an ordinary non-native herptile and needs no permit. A rule that names a family and then narrows it to two species in the same sentence is exactly the kind that gets summarised backwards. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
@@ -10617,6 +10810,15 @@
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Python bivittatus on Appendix A, and files the Indian python, Python molurus, as regulated because its range runs outside the tropics. The two decisions sit a line apart on the same list and show how narrowly the qualifier is being applied. Federal law is the real constraint here rather than Colorado: the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/15-5",
+          "quote": "Unless contrary to any other law or rule, nothing shall prohibit lawfully acquired possession of any of the Boidae family, such as boas, pythons, and anacondas, provided captive maintenance requirements from the Department as set forth in this Act are met. All boas, pythons, and anacondas referenced in this Act are exempt from the permit process, associated annual fee, and liability insurance coverage.",
+          "note": "Illinois clears the boas and pythons by name in statute rather than by leaving them off a list, which is a stronger position than most species here get. There is no length threshold anywhere in it. What the Act does attach is husbandry: § 15-10 requires any boa, python or anaconda not native to the United States to be kept in a strong, impact resistant, escape-proof enclosure regardless of length, and § 15-20 requires it to be out of public sight in an escape-proof enclosure during transport. Illinois itself does not restrict this species: no length trigger, no separate list. Federal law is the real constraint, since the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport, so one cannot lawfully cross a state line into Illinois even though keeping one here is cleared by statute. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10945,6 +11147,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "Degus appear by name on the exempt mammal list, so no permit is required. Worth noting because Delaware names the degu specifically, which few states do, and Colorado goes the other way and requires a permit for one.",
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it. The degu is not on the Part 805 injurious species list either, which is where Illinois puts the exotic mammals it does want to keep out, among them the raccoon dog, the multimammate rat and the brushtail possum. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -11233,6 +11444,15 @@
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species from the order Urodela (salamanders and newts) except tiger salamanders (Ambystoma tigrinum/mavortium)",
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. The salamanders are cleared at order level in the appendix's Other Species block, which CPW introduces as species that are not native only to tropic or subtropic regions, so the axolotl does not have to satisfy the range test that governs the family lists. The single carve-out is for tiger salamanders, and the axolotl is a different Ambystoma. Its own conservation status does the rest of the work in practice: the species is CITES Appendix II and effectively extinct in the wild, so what circulates is captive stock. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The axolotl is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. Nor is it a medically significant amphibian: § 885.48 lists those by name and they are toxic toads and frogs. Part 805 injurious species would be the other place to look, and § 805.10 excludes herptiles from that Part expressly, sending them here. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
@@ -11530,6 +11750,15 @@
             "before": "2026-05-01",
             "detail": "An ornate box turtle legally collected on or before 1 May 2026 may be kept and transported within Colorado for the life of the animal if a CPW Legacy Report was filed by 30 July 2026. No new wild capture is allowed."
           },
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "conditional",
+          "sourceId": "il-1010",
+          "cite": "17 Ill. Adm. Code 1010.30; 510 ILCS 68/5-5(a)",
+          "quote": "THREATENED AMPHIBIANS AND REPTILES OF ILLINOIS ... Turtles ... Ornate Box Turtle Terrapene ornata",
+          "note": "Illinois splits its two box turtles. The ornate box turtle is a threatened species, so 520 ILCS 10/3 bars possessing one without a Department permit. The eastern box turtle, Terrapene carolina carolina, is on the § 885.40 native list but not on the endangered and threatened list, so it needs no permit and sits under the ordinary limits: 4 of the species, 8 indigenous herptiles in total, a sport fishing licence to collect one from the wild and a $50 Herpetoculture Permit to breed or sell. Turtles other than common snapping turtles may be taken by hand only, and § 30-5 bars commercial turtle farming in the State. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11831,6 +12060,15 @@
           "quote": "A person may possess, transport, or export, but not propagate, a red-eared slider taken from the wild in Colorado for the life of the animal.",
           "note": "Colorado reversed itself on this species in 2026. The red-eared slider used to be named outright on the Chapter W-11 unregulated wildlife list; Chapter W-7 § 708(A) now declares it invasive herpetofauna detrimental to Colorado wildlife and habitat, allows unlimited collection from the wild, and leaves Emydidae off every appendix. CPW's summary of the position is \"No import, no sale\". What survives is narrow and points the wrong way for a buyer: § 708(C)(1) permits keeping a slider taken from the wild in Colorado, for that animal's life, with no propagation and no release. So the pet-trade route is closed while the wild-take route is wide open, which is the opposite of how these rules usually run.",
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "conditional",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/5-5(a); 17 Ill. Adm. Code 885.40",
+          "quote": "The possession limit for herptiles (excluding common snapping turtles and bullfrogs) is no more than 4 total per species. ... In no case shall a person possess more than 8 indigenous amphibian or reptiles in total.",
+          "note": "The red-eared slider, Trachemys scripta elegans is on the § 885.40 list of Illinois native herptile taxa, which is what puts it inside the cap rather than outside it. No licence is needed to keep one, but three conditions ride along: no more than 4 of the species and no more than 8 indigenous herptiles in total, a sport fishing licence to collect any native taxon from the wild, and a $50 Herpetoculture Permit to breed or to sell. Non-residents may not possess herptiles collected from the wild in Illinois at all except under a scientific collection permit. Illinois is inside the species' natural range, which is why it lands here rather than in the free non-native bucket, and it is the opposite of how states outside that range treat the animal. Turtles other than common snapping turtles may be taken only by hand, and § 30-5 bars commercial turtle farming in the State outright. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12128,6 +12366,15 @@
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Centrochelys sulcata against this line. Its Sahelian range sits inside the band, unlike the Russian, Greek, Hermann's and leopard tortoises, which CPW files as regulated on the same family listing. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The sulcata tortoise is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12421,6 +12668,16 @@
           "cite": "Appendix B; § 703(B)",
           "quote": "Any captive-bred species from the genus Heterodon except the Eastern hog-nosed snake (Heterodon platirhinos), Lystrophis, or Leioheterodon (hognose snakes)",
           "note": "Captive-bred western hognose is on Appendix B, needing documentation under § 703(B) but no licence, and CPW files Heterodon nasicus (captive bred) against exactly this line. Two things fall outside it. The eastern hognose is excluded by name. And a hognose taken from the wild in Colorado is not covered: CPW files that as legacy possession only, lawful if held on or before 1 May 2026 and reported by 30 July 2026, with no new wild capture allowed. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "permit",
+          "sourceId": "il-1010",
+          "cite": "17 Ill. Adm. Code 1010.30; 520 ILCS 10/3",
+          "quote": "THREATENED AMPHIBIANS AND REPTILES OF ILLINOIS ... Snakes ... Plains Hog-nosed Snake Heterodon nasicus",
+          "note": "The species the pet trade sells as the western hognose is Heterodon nasicus, and Illinois lists it as a threatened species. 520 ILCS 10/3 then makes it unlawful to possess any animal on the Illinois List unless otherwise authorized by law, with no captive-bred carve-out written into the statute, so a Department endangered or threatened species possession permit is the route, applied for through the Office of Resource Conservation, with a separate Herptile Endangered and Threatened Species Propagation Permit at $150 a year on top if the animal is to be bred or sold. The eastern hognose, Heterodon platirhinos, is the other Illinois native and is not listed, so it sits under the ordinary 4-per-species and 8-total cap instead. Which hognose it is decides the answer here, and the pet trade animal is the listed one. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "permitFor": "personal",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
@@ -12717,6 +12974,15 @@
           "note": "The unregulated wildlife list clears the parrots as a group, with the regulation's own misspelling of psittacine. Unregulated means no CPW licence is required, not that nothing applies: importation and health requirements still do. One parrot is carved out elsewhere and it is not this one. The monk parakeet sits on the Chapter W-0 prohibited list, and CPW's bird list restates this line as \"All Psitticine birds (except Monk Parakeet/Quaker Parrot)\". CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/2.2",
+          "quote": "This Act shall apply only to the wild birds and parts of wild birds (including, but not limited to, their nests and eggs), and wild mammals and parts of wild mammals, which shall include their green hides, in the State of Illinois, or which may be brought into the State.",
+          "note": "The Wildlife Code then lists the protected birds family by family, running from loons through finches and covering essentially the native and migratory avifauna. Psittacidae is not among them, so no parrot is a protected species in Illinois. The Part 805 injurious bird list is four species long, the pink starling, the dioch, the Java sparrow and the red-whiskered bulbul, and the African grey is not one of them. Federal CITES Appendix I paperwork is the constraint that actually bites on this species, and it is not a state matter. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13005,6 +13271,15 @@
           "quote": "\"Wildlife\" means wild vertebrates, mollusks, and crustaceans, whether alive or dead, including any part, product, egg, or offspring thereof, that exist as a species in a natural wild state in their place of origin, presently or historically",
           "note": "The giant African millipede is a myriapod, and Colorado's statutory definition of wildlife runs to wild vertebrates, mollusks and crustaceans and stops there. Everything CPW does about private possession, the licensing scheme in Chapter W-11, the prohibited list in Chapter W-0 and the new herpetofauna chapter, is built on that definition, so none of it reaches this animal. CPW's own species lists are divided into birds, mammals, herpetofauna and fish and marine animals, with no terrestrial invertebrate category at all, which is the same gap seen from the other side. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/2.2",
+          "quote": "This Act shall apply only to the wild birds and parts of wild birds (including, but not limited to, their nests and eggs), and wild mammals and parts of wild mammals, which shall include their green hides, in the State of Illinois, or which may be brought into the State.",
+          "note": "The giant African millipede is a myriapod, and Illinois divides its animal law up in a way that leaves it out of every piece. The Wildlife Code says in its own words that it applies only to wild birds and wild mammals. The Herptiles-Herps Act covers reptiles and amphibians. The Fish and Aquatic Life Code covers aquatic life. The injurious species list at 17 Ill. Adm. Code 805 has a category for invertebrates, and it is headed \"Fish, Mollusks and Aquatic Invertebrates\". A terrestrial arthropod falls in the gap, the same way it does in Pennsylvania, so no state possession rule applies. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13103,9 +13378,11 @@
         "IL": {
           "status": "conditional",
           "sourceId": "il-herps-act",
-          "cite": "17 Ill. Adm. Code 885 (Herptiles-Herps Act)",
-          "note": "Illinois caps possession of native Illinois herptiles at 8 specimens total and 4 per species without a permit, and a sport fishing license is required to collect any native species from the wild. Corn snake is Illinois native. A $50 Herpetoculture Permit exempts a keeper from this possession cap. Boidae, by contrast, is specifically exempted from the whole permit process (relevant to rosy boa, not this species).",
-          "verifiedOn": "2026-08-27"
+          "cite": "17 Ill. Adm. Code 885.105(j)",
+          "quote": "Any hybrid, intergrade, cross, or morphological variation of any listed herptile shall be treated as an endangered or threatened herptile under this Part. Examples of these include, but are not limited to: scaleless corn snakes, root beer corn snakes, creamsicle/dreamsicle corn snakes, and Slowinski/Kisatchie rat snakes.",
+          "note": "This entry previously read the corn snake as an Illinois native subject to the possession cap. It is not: Pantherophis guttatus is absent from the § 885.40 native taxa list, which carries emoryi, obsoletus and ramspotti/vulpinus but not guttatus, so an ordinary corn snake is a non-native herptile and needs no licence. What does reach it is newer and narrower. Illinois lists the Great Plains ratsnake, Pantherophis emoryi, as endangered, and this subsection, added effective 31 July 2025, treats any hybrid, cross or morphological variation of a listed herptile as endangered too, then names the common pet-trade lines that carry emoryi ancestry: creamsicle, dreamsicle, root beer and scaleless corn snakes. Those need an endangered species possession permit; a normal corn snake does not. It is an unusually specific rule, and a keeper is unlikely to find it by looking up the species. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "IN": {
           "status": "legal",
@@ -13452,10 +13729,12 @@
         },
         "IL": {
           "status": "conditional",
-          "sourceId": "il-herps-act",
-          "cite": "17 Ill. Adm. Code 885 (Herptiles-Herps Act)",
-          "note": "Illinois caps possession of native Illinois herptiles at 8 specimens total and 4 per species without a permit, and a sport fishing license is required to collect a native species from the wild. Milk snake is Illinois native. A $50 Herpetoculture Permit exempts a keeper from this cap.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/5-5(a); 17 Ill. Adm. Code 885.40",
+          "quote": "The possession limit for herptiles (excluding common snapping turtles and bullfrogs) is no more than 4 total per species. ... In no case shall a person possess more than 8 indigenous amphibian or reptiles in total.",
+          "note": "The milk snake, in the red and eastern subspecies Lampropeltis triangulum syspila and L. t. triangulum is on the § 885.40 list of Illinois native herptile taxa, which is what puts it inside the cap rather than outside it. No licence is needed to keep one, but three conditions ride along: no more than 4 of the species and no more than 8 indigenous herptiles in total, a sport fishing licence to collect any native taxon from the wild, and a $50 Herpetoculture Permit to breed or to sell. Non-residents may not possess herptiles collected from the wild in Illinois at all except under a scientific collection permit. The genus is well represented on the native list, so the cap is the ordinary answer for a milksnake here, and the $50 Herpetoculture Permit in § 885.80 is what lifts it for a keeper who breeds. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "IN": {
           "status": "legal",
@@ -13785,11 +14064,12 @@
         },
         "IL": {
           "status": "legal",
-          "sourceId": "il-herps-act",
-          "cite": "17 Ill. Adm. Code 885 (Herptiles-Herps Act)",
-          "quote": "Boidae family snakes such as boas, pythons, and anacondas are exempt from the permit process, associated annual fee, and liability insurance coverage.",
-          "note": "Illinois exempts the whole family Boidae from its reptile permit system outright, a cleaner result than the native-species possession cap that applies to corn snake and milk snake under the same Act.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/15-5",
+          "quote": "Unless contrary to any other law or rule, nothing shall prohibit lawfully acquired possession of any of the Boidae family, such as boas, pythons, and anacondas, provided captive maintenance requirements from the Department as set forth in this Act are met. All boas, pythons, and anacondas referenced in this Act are exempt from the permit process, associated annual fee, and liability insurance coverage.",
+          "note": "Illinois clears the boas and pythons by name in statute rather than by leaving them off a list, which is a stronger position than most species here get. There is no length threshold anywhere in it. What the Act does attach is husbandry: § 15-10 requires any boa, python or anaconda not native to the United States to be kept in a strong, impact resistant, escape-proof enclosure regardless of length, and § 15-20 requires it to be out of public sight in an escape-proof enclosure during transport. The rosy boa is a boid, so § 15-5 reaches it on the family name, the same clause that clears the boa constrictor. It is also not an Illinois native taxon, so none of the possession or collection machinery for native herptiles applies. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "IN": {
           "status": "legal",
@@ -14162,9 +14442,12 @@
         "IL": {
           "status": "permit",
           "sourceId": "il-520-5",
-          "cite": "520 ILCS 5 (Wildlife Code)",
-          "note": "Illinois is home to four native tree-squirrel species, all classed as protected wildlife; the flying squirrel is one of them and cannot be held in captivity without an IDNR permit. Whether IDNR treats non-native-sourced, captive-bred flying squirrels differently was not confirmed in the text reviewed.",
-          "verifiedOn": "2026-08-27"
+          "cite": "520 ILCS 5/2.2; 520 ILCS 5/3.23",
+          "quote": "OTHER MAMMALS-Flying squirrel, Glaucomys volans ... It shall be unlawful for any person at any time to take, possess, sell, or offer for sale, propagate, or release into the wild, any of these wild birds (dead or alive) and parts of wild birds ... wild mammals (dead or alive) and parts of wild mammals ... contrary to the provisions of this Act.",
+          "note": "Illinois names the southern flying squirrel in its protected species list, in the \"OTHER MAMMALS\" group alongside the red squirrel, the eastern woodrat and the bats, and then makes possession unlawful except as the Act provides. The route the Act provides is § 3.23: anyone wishing to possess, propagate or hold in captivity but not sell a protected species may do so under a Class A Noncommercial game breeders permit, $10 a year, expiring 31 March. That is a real personal permit rather than an institutional one, which is what separates the flying squirrel here from a species that is simply barred. The protection is species-specific and does not turn on where the animal came from, so a captive-bred out-of-state Glaucomys volans is still a protected species once it is in Illinois. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "permitFor": "personal",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "OH": {
           "status": "permit",
@@ -14608,6 +14891,15 @@
           "quote": "\"Tropical and subtropical region\" means the region between 26.0 degrees north latitude and 26.0 degrees south latitude.",
           "note": "Varanidae is on Appendix A, but only for monitors native only to the tropical and subtropical region, and § 700(G) fixes that region at 26.0 degrees north to 26.0 degrees south. The ackie monitor's range across northern and central Western Australia and inland Queensland reaches roughly that latitude, so it sits on the line the rule draws rather than clearly inside it. CPW has published determinations for six monitors, the savannah, Nile, black-throated, blue-spotted tree, crocodile and Asian water monitors, and none for Varanus acanthurus, and its list is expressly not exhaustive. Recorded unclear rather than legal because the qualifier is species-specific and this species is the one it is hardest to call. CPW takes the question by email for exactly this situation.",
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/25-5",
+          "quote": "\"Monitor lizards\" means the following members of the Varanidae family, specifically crocodile monitors and Komodo dragons.",
+          "note": "This is the definition to read before assuming Illinois restricts monitors. Article 25 puts monitor lizards under the special use permit regime, available only to residents running bona fide educational programs, and § 85-5 bars possessing a special use herptile outside it. But § 25-5 defines the term to mean two animals, the crocodile monitor and the Komodo dragon, and nothing else in Varanidae. The ackie monitor is neither, so it is an ordinary non-native herptile and needs no permit. A rule that names a family and then narrows it to two species in the same sentence is exactly the kind that gets summarised backwards. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -14724,11 +15016,13 @@
           "verifiedOn": "2026-08-27"
         },
         "IL": {
-          "status": "legal",
-          "sourceId": "il-720-48-10",
-          "cite": "720 ILCS 585/0.1",
-          "note": "Illinois's Dangerous Animals Act is a closed list of big cats and never reaches ordinary colubrids. Illinois is a home-rule state, though, so a municipality can still restrict snake ownership on its own.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/5-5(a); 17 Ill. Adm. Code 885.40",
+          "quote": "The possession limit for herptiles (excluding common snapping turtles and bullfrogs) is no more than 4 total per species. ... In no case shall a person possess more than 8 indigenous amphibian or reptiles in total.",
+          "note": "The common garter snake, Thamnophis sirtalis, in both its eastern and Chicago subspecies is on the § 885.40 list of Illinois native herptile taxa, which is what puts it inside the cap rather than outside it. No licence is needed to keep one, but three conditions ride along: no more than 4 of the species and no more than 8 indigenous herptiles in total, a sport fishing licence to collect any native taxon from the wild, and a $50 Herpetoculture Permit to breed or to sell. Non-residents may not possess herptiles collected from the wild in Illinois at all except under a scientific collection permit. This entry previously read as unrestricted on the strength of the dangerous animal statute, which is a closed list of big cats and says in terms that it does not reach herptiles. The Herptiles-Herps Act is the law that actually answers a snake question in Illinois, and a native colubrid sits inside its cap. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "IN": {
           "status": "legal",
@@ -15124,10 +15418,12 @@
         },
         "IL": {
           "status": "legal",
-          "sourceId": "il-720-48-10",
-          "cite": "720 ILCS 585/0.1",
-          "note": "Illinois's Dangerous Animals Act is a closed list of big cats and never reaches ordinary colubrids. Illinois is a home-rule state, so a municipality can still restrict snake ownership on its own.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The California kingsnake is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. Illinois does have native Lampropeltis, the prairie, speckled and eastern black kingsnakes and the red and eastern milksnakes, and those are capped. Lampropeltis californiae is not one of them. This entry previously cited the dangerous animal statute, which says in terms that it does not reach herptiles at all. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "IN": {
           "status": "legal",
@@ -15508,10 +15804,12 @@
         },
         "IL": {
           "status": "legal",
-          "sourceId": "il-720-48-10",
-          "cite": "720 ILCS 585/0.1",
-          "note": "Illinois's Dangerous Animals Act is a closed list of big cats and doesn't reach birds. Illinois is a home-rule state, so a municipality could still restrict one.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/2.2",
+          "quote": "This Act shall apply only to the wild birds and parts of wild birds (including, but not limited to, their nests and eggs), and wild mammals and parts of wild mammals, which shall include their green hides, in the State of Illinois, or which may be brought into the State.",
+          "note": "The Wildlife Code's protected species list is native and migratory birds by family and does not include the parrots, so a cockatoo is outside it. The closed dangerous animal list at 720 ILCS 5/48-10 is mammals and primates only and does not reach birds at all. The one parrot Illinois names anywhere is the monk parakeet, and even that clause bars only release and propagation for release. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "IN": {
           "status": "legal",
@@ -16098,6 +16396,15 @@
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Chelonoidis carbonarius against this line. Its South American range is entirely inside the band Chapter W-7 § 700(G) draws. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The red-footed tortoise is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16183,6 +16490,15 @@
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Agamidae (chisel-teeth lizards)",
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Pogona vitticeps against this line, treating the central bearded dragon's Australian interior range as falling inside the tropical and subtropical band. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The bearded dragon is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
@@ -16272,6 +16588,15 @@
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. Eublepharidae is cleared outright in the Other Species block rather than through the native-range test, which matters for this species: the leopard gecko's Afghanistan-to-northwest-India range would be a hard call under that test. CPW files Eublepharis macularius against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The leopard gecko is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16357,6 +16682,15 @@
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)",
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. Diplodactylidae is named in its own right, so the crested gecko does not depend on the older taxonomy that filed Correlophus and Rhacodactylus inside Gekkonidae. CPW files Correlophus ciliatus against this line, and the gargoyle and leachianus geckos with it. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The crested gecko is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
@@ -16446,6 +16780,15 @@
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Tiliqua at genus level as well as three named forms, the Indonesian, Halmahera and northern blue-tongues, all on Appendix A. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The blue-tongue skink is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. Illinois has native skinks, the five-lined, broad-headed and ground skinks, so the family is represented on the § 885.40 list; Tiliqua is not, and the list works to the species and subspecies level rather than by family. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16531,6 +16874,15 @@
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Chamaeleonidae (chameleons)",
           "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Trioceros jacksonii against this line. Its native East African montane range straddles the equator. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. Jackson's chameleon is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
@@ -16619,6 +16971,15 @@
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
           "note": "The anoles are on Appendix A as a family, Dactyloidae, but the listing carries the same qualifier as the rest of the lizard block, native only to the tropical and subtropical region, and CPW has read Anolis carolinensis as failing it. Its herpetofauna list records the species against Appendix A, B, 8 with the finding \"native range outside tropical/subtropical\", which is a determination against, not for. The green anole breeds up the southeastern United States well north of the 26 degree line Chapter W-7 § 700(G) draws, so the family listing does not carry it. That leaves it regulated wildlife with no pet licence available. This is the clearest case on the map of a family appearing on an allow-list without the species being allowed.",
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885.40",
+          "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
+          "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The green anole is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. Illinois' native lizards are six species, the six-lined racerunner, slender glass lizard, five-lined and broad-headed skinks, eastern fence lizard and ground skink. Anolis is not among them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16699,6 +17060,15 @@
           "note": "Colorado reaches the rabbit the way most states do that address it at all, by naming the domesticated race of the European rabbit rather than the wild species. CPW's own mammal list files Oryctolagus cuniculus domesticus against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/3.23; 17 Ill. Adm. Code 805.20(a)",
+          "quote": "No person shall release, hold, possess, or engage in raising San Juan (sometimes called European) rabbits or finnraccoons (sometimes called raccoon dogs) (Nyctereutes procyonoides) in this State and no permit shall be issued therefor.",
+          "note": "Illinois is the state where the rabbit needs the most care, because two provisions name the animal and neither writes an express carve-out for domestic stock. This one bars holding or possessing San Juan rabbits with no permit available at all, and the San Juan is a feral strain of Oryctolagus cuniculus kept for dog training rather than a pet breed. The injurious species list at 17 Ill. Adm. Code 805.20(a) then names \"Any species of European rabbit of the genus Oryctolagus\", carried over from the federal injurious wildlife listing at 50 CFR 16.11. Read at face value that pair would reach a house rabbit. Read in place they do not: the Part 805 heading is \"Wild Mammals\" and the federal section it copies is titled \"Importation of live wild mammals\", the Wildlife Code says in its own words that it applies only to wild birds and wild mammals, and the Animal Welfare Act licenses Illinois pet shops to sell animals customarily obtained as pets. Recorded legal on that reading, and flagged because the wording is the kind that gets quoted out of context in both directions. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16777,6 +17147,15 @@
           "cite": "C.R.S. § 33-1-102(51)",
           "quote": "\"Wildlife\" means wild vertebrates, mollusks, and crustaceans, whether alive or dead, including any part, product, egg, or offspring thereof, that exist as a species in a natural wild state in their place of origin, presently or historically",
           "note": "The Madagascar hissing cockroach is an insect, and Colorado's statutory definition of wildlife runs to wild vertebrates, mollusks and crustaceans and stops there. Everything CPW does about private possession, the licensing scheme in Chapter W-11, the prohibited list in Chapter W-0 and the new herpetofauna chapter, is built on that definition, so none of it reaches this animal. CPW's own species lists are divided into birds, mammals, herpetofauna and fish and marine animals, with no terrestrial invertebrate category at all, which is the same gap seen from the other side. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/2.2",
+          "quote": "This Act shall apply only to the wild birds and parts of wild birds (including, but not limited to, their nests and eggs), and wild mammals and parts of wild mammals, which shall include their green hides, in the State of Illinois, or which may be brought into the State.",
+          "note": "The Madagascar hissing cockroach is an insect, and Illinois divides its animal law up in a way that leaves it out of every piece. The Wildlife Code says in its own words that it applies only to wild birds and wild mammals. The Herptiles-Herps Act covers reptiles and amphibians. The Fish and Aquatic Life Code covers aquatic life. The injurious species list at 17 Ill. Adm. Code 805 has a category for invertebrates, and it is headed \"Fish, Mollusks and Aquatic Invertebrates\". A terrestrial arthropod falls in the gap, the same way it does in Pennsylvania, so no state possession rule applies. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
