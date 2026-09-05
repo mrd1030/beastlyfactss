@@ -214,30 +214,41 @@ Red-footed tortoises do not need to brumate and should not be allowed to get col
     image: "/assets/guides/russian-tortoise.jpg",
     tagline: "The compact, hardy tortoise that can live over 50 years with proper care!",
     funFact: "Russian tortoises are one of the world's most cold-tolerant tortoise species. They can survive sub-zero temperatures in the wild by hibernating (brumating) deep underground for months at a time!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Rebuilt Sep 2026 from the itemized budget on page 28 of the Russian Tortoise
+    // care package v2.1, which is the researched list. Setup sums to $372-$775 and
+    // annual to $365-$715. The thermostat, the infrared gun and the gram scale are
+    // the lines the old list omitted, and they are exactly the equipment that
+    // prevents the respiratory and shell problems in the health guide.
     costs: {
       setup: [
-        { item: "Tortoise table or outdoor pen", low: 150, high: 350 },
-        { item: "Strong UVB (T5 HO Arcadia 12%)", low: 60, high: 100 },
-        { item: "Basking bulb", low: 20, high: 40 },
-        { item: "Deep substrate (topsoil/sand or coir/sand mix)", low: 25, high: 50 },
+        { item: "Tortoise table or outdoor pen", low: 95, high: 190 },
         { item: "Secure high walls (escape-proof)", low: 30, high: 60 },
+        { item: "Strong UVB (T5 HO Arcadia 12%)", low: 60, high: 130 },
+        { item: "Basking bulb", low: 20, high: 40 },
+        { item: "Dimming thermostat, lamp fixture and timer", low: 40, high: 85 },
+        { item: "Infrared temperature gun", low: 18, high: 30 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 30 },
+        { item: "Deep substrate (topsoil/sand or coir/sand mix)", low: 25, high: 60 },
+        { item: "3 hides (warm, cool, moist)", low: 30, high: 70 },
         { item: "Shallow water dish", low: 10, high: 20 },
+        { item: "Digital gram scale and feeding tile", low: 14, high: 30 },
+        { item: "Calcium and multivitamin supplements (herbivore, no added phosphorus)", low: 15, high: 30 },
       ],
       annual: [
         { item: "Dark leafy greens and edible weeds", low: 100, high: 200 },
         { item: "Grass hay (unlimited access)", low: 40, high: 80 },
-        { item: "Calcium and multivitamin supplements (herbivore, no added phosphorus)", low: 20, high: 30 },
-        { item: "UVB bulb replacement", low: 60, high: 100 },
-        { item: "Electricity (heat and lighting)", low: 60, high: 100 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
+        { item: "Supplement replacement (calcium and multivitamin)", low: 20, high: 35 },
+        { item: "Deep substrate replacement (topsoil/sand or coir/sand mix)", low: 40, high: 90 },
+        { item: "UVB bulb replacement", low: 45, high: 90 },
+        { item: "Electricity (heat and lighting)", low: 60, high: 120 },
+        { item: "Annual vet wellness check with fecal test", low: 60, high: 100 },
       ],
     },
     sections: {
-      housing: "A minimum 4x4 ft outdoor enclosure or 4x2 ft indoor tortoise table is needed for one adult. Outdoor enclosures with burrowing barriers (sunk 12 inches or more underground) are ideal in warm climates. Indoor setups need a strong UVB lamp (T5 HO Arcadia 12%) and a basking spot of 95 to 100 degrees F. Cool ambient of 68 to 78 degrees F. Deep substrate (6 inches or more of a 50/50 topsoil/sand or coconut coir/sand mix) is essential for natural burrowing behavior. Russian tortoises are notorious escape and climb artists. Secure walls 12 inches or more high.",
+      housing: "A 4x2 ft indoor tortoise table, about 8 square feet, is the commonly quoted floor for one adult, and a 4x4 ft outdoor enclosure the equivalent outdoors. It is a floor rather than a target, and the sources disagree about how far above it you should aim: ReptiFiles, republished by Zen Habitats, asks for at least 12 square feet of floor space at least a foot high, and our own enclosure guide puts the functional size nearer 7 ft by 3.5 ft. Build to the largest of those you can house, because this is an active species that walks the whole enclosure daily. Outdoor enclosures with burrowing barriers (sunk 12 inches or more underground) are ideal in warm climates. Indoor setups need a strong UVB lamp (T5 HO Arcadia 12%) and a basking spot of 95 to 100 degrees F. Cool ambient of 68 to 78 degrees F. Deep substrate (6 inches or more of a 50/50 topsoil/sand or coconut coir/sand mix) is essential for natural burrowing behavior. Russian tortoises are notorious escape and climb artists. Secure walls 12 inches or more high.",
       diet: `Russian tortoises are almost entirely herbivorous. The foundation of the diet is unlimited grass hay (Timothy, orchard, or meadow) and a wide variety of dark leafy greens and edible weeds: dandelion greens and flowers, clover, plantain weed, endive, escarole, mustard greens, and collard greens. Weeds and fibrous leafy greens are the most nutritionally appropriate foods and should dominate the diet.
 
-Avoid high-oxalate foods (spinach, beet greens) as staples, high-protein foods (commercial tortoise pellets should not be primary), and all animal protein. Fruits should be minimal - less than 5% of the diet - as high sugar disrupts gut flora and can cause loose droppings and digestive issues.
+Avoid high-oxalate foods (spinach, beet greens) as staples, high-protein foods (commercial tortoise pellets should not be primary), and all animal protein. Fruits should be minimal, less than 5% of the diet, as high sugar disrupts gut flora and can cause loose droppings and digestive issues. Specialist opinion goes further: the Tortoise Trust's guidance on Mediterranean tortoises, which covers the same arid-habitat pattern, says fruit "should not be given as it frequently leads to digestive upset, intestinal parasite proliferation, and colic," and adds that fruit is high in phosphorus and poor in calcium, the opposite of what this animal needs. Zero fruit is a defensible answer for a Russian tortoise, and under 5% is the outer limit rather than a target.
 
 Dust food with calcium without D3 at most feedings, calcium with D3 twice weekly. Fresh water should always be accessible in a shallow dish - many Russian tortoises appear to drink little but they appreciate the option and some drink more than keepers expect. Weekly soaking in shallow warm water for 20 to 30 minutes supports hydration.`,
       enrichment: `Russian tortoises are among the most active and personality-rich tortoise species. They explore their entire enclosure and available territory daily, pushing through obstacles, rearranging items, and investigating everything. An enclosure that was "organized" the day before is typically rearranged by the next morning.
