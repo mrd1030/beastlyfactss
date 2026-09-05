@@ -18,6 +18,7 @@
     "check:related": "node scripts/check-related-articles.mjs",
     "check:link-depth": "node scripts/audit-internal-links.mjs",
     "check:seo": "node scripts/check-seo-tags.mjs",
+    "check:legal-sync": "node scripts/check-legal-map-sync.mjs",
     "check:images": "node scripts/check-images.mjs"
   },
   "dependencies": {
