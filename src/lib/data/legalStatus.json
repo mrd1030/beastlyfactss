@@ -98,35 +98,35 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 6,
+        "checked": 7,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 6,
+        "checked": 7,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 7,
+        "checked": 8,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 7,
+        "checked": 8,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 7,
+        "checked": 8,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 7,
+        "checked": 8,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 7,
+        "checked": 8,
         "of": 51
       },
       "green-anole": {
-        "checked": 7,
+        "checked": 8,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,127 +134,127 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 31,
+        "checked": 32,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 31,
+        "checked": 32,
         "of": 51
       },
       "axolotl": {
-        "checked": 31,
+        "checked": 32,
         "of": 51
       },
       "box-turtle": {
-        "checked": 31,
+        "checked": 32,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 31,
+        "checked": 32,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 32,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 32,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 32,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 32,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 33,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 33,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 33,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 33,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 34,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 35,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "green-iguana": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "burmese-python": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "degu": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "hamster": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "gerbil": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "bengal-cat": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 39,
-        "of": 51
-      },
-      "veiled-chameleon": {
-        "checked": 42,
-        "of": 51
-      },
-      "ball-python": {
-        "checked": 42,
+        "checked": 40,
         "of": 51
       },
       "milk-snake": {
         "checked": 42,
         "of": 51
       },
-      "boa-constrictor": {
+      "veiled-chameleon": {
         "checked": 43,
         "of": 51
       },
-      "chinchilla": {
+      "ball-python": {
+        "checked": 43,
+        "of": 51
+      },
+      "boa-constrictor": {
         "checked": 44,
+        "of": 51
+      },
+      "chinchilla": {
+        "checked": 45,
         "of": 51
       },
       "corn-snake": {
@@ -277,11 +277,11 @@
         "checked": 49,
         "of": 51
       },
-      "capybara": {
-        "checked": 49,
+      "ferret": {
+        "checked": 50,
         "of": 51
       },
-      "ferret": {
+      "capybara": {
         "checked": 50,
         "of": 51
       },
@@ -369,7 +369,8 @@
     },
     "AZ": {
       "name": "Arizona",
-      "level": "state"
+      "level": "state",
+      "scope": "R12-4-406, restricted live wildlife, which lists by order and family rather than by species and so catches whole groups at once. All of Carnivora is restricted; the pet reptile trade almost entirely is not, the exceptions being crocodilians, the venomous families, four named colubrids, snapping turtles and the state's own gopher tortoises. Two carve-outs are written in by name, the pet hedgehogs in Atelerix and the domestic rabbits in Oryctolagus, which the rule says are not wildlife at all. Subsection D exempts domestic animals, defined as species that do not exist in the wild, and subsection E pulls hybrids back in whenever one parent species is listed. Terrestrial invertebrates sit outside all of it, because A.R.S. § 17-101 defines wildlife as mammals, birds, reptiles, amphibians, mollusks, crustaceans and fish. Taking a native species alive from the wild is a separate regime under R12-4-404, R12-4-405 and Commission Order 43, and needs a hunting licence."
     },
     "OR": {
       "name": "Oregon",
@@ -625,7 +626,7 @@
     "az-r12-4-406": {
       "title": "Ariz. Admin. Code R12-4-406, Restricted Live Wildlife",
       "url": "https://www.animallaw.info/administrative/az-exotic-wildlife-article-4-live-wildlife",
-      "note": "Restricted wildlife requires the applicable federal licences and permits, an appropriate special licence, or a lawful exemption."
+      "note": "The operative rule. Restricted live wildlife needs a special licence, and the lists run by order and family rather than by species, so the whole of Carnivora is caught while most of the pet reptile trade is not. Two exceptions are written in by name: the genus Atelerix, the pet hedgehogs, and the genus Oryctolagus, which the rule says are not wildlife at all. Two subsections do quiet work: (D) exempts domestic animals, defined at R12-4-401 as a species that does not exist in the wild, and (E) pulls hybrids back in whenever one parent species is on the list. Note that the AZGFD commission rules PDF circulating as Supp. 13-2 is a 2013 edition and predates the Atelerix and Oryctolagus exceptions; read the current text, not that one."
     },
     "or-609-305": {
       "title": "Or. Rev. Stat. § 609.305, 'Exotic animal' defined, with § 609.341 permit requirement",
@@ -1216,6 +1217,11 @@
       "title": "Nev. Rev. Stat. § 503.597, importation of wildlife, with the definition of wildlife at NRS 501.097",
       "url": "https://www.leg.state.nv.us/nrs/nrs-503.html",
       "note": "The default nobody had pinned down. NRS 503.597 makes it unlawful without the written consent and approval of the Department for any person to receive, bring or have brought or shipped into the state any aquatic life or wildlife, so an animal that is neither prohibited by NAC 503.110 nor cleared by NAC 503.140 needs Department approval rather than being unregulated. NRS 501.097 defines wildlife as any wild mammal, wild bird, fish, reptile, amphibian, mollusk or crustacean found naturally in a wild state, which leaves insects and arachnids outside the Department's authority entirely."
+    },
+    "az-ars-17-101": {
+      "title": "Ariz. Rev. Stat. § 17-101, definitions, including wildlife",
+      "url": "https://www.azleg.gov/ars/17/00101.htm",
+      "note": "Sets the outer edge of what the Game and Fish Commission can reach. Wildlife means all wild mammals, wild birds and the nests or eggs thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or spawn. Insects and arachnids are absent, so a terrestrial invertebrate is outside Title 17 altogether."
     }
   },
   "animals": {
@@ -2704,6 +2710,14 @@
           "note": "The hamster is named outright on the no-permit list, so it may be possessed, transported, imported and exported with no Department permit. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
+          "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The golden hamster is Cricetidae, which is not among them, so no special licence is required.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3006,6 +3020,14 @@
           "quote": "(k) Gerbils;",
           "note": "The gerbil is named outright on the no-permit list, so it may be possessed, transported, imported and exported with no Department permit. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
+          "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The Mongolian gerbil is Muridae, which is not among them, so no special licence is required.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3329,6 +3351,14 @@
           "quote": "(e) Parakeets; ... (h) Parrots;",
           "note": "Parakeets and parrots are both cleared by name, and Nevada's prohibited bird list is only three species, the pink starling, the red-billed dioch and the red-whiskered bulbul. The monk parakeet is on none of them. Worth flagging against Pennsylvania, which bans this species by name. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(G)",
+          "quote": "The following species within the family Phasianidae ... All species listed under the Migratory Bird Treaty Act listed under 50 CFR 10.13",
+          "note": "Arizona's restricted bird list is a handful of quail, grouse and turkeys plus everything covered by the federal Migratory Bird Treaty Act. No psittacine appears, and the only parrot the state names anywhere is the thick-billed parrot, a native species. The monk or quaker parakeet is neither, so no licence is required. Worth flagging against Pennsylvania, which bans this species by name.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3656,6 +3686,14 @@
           "quote": "(q) All felines, except mountain lions and bobcats;",
           "note": "Nevada disposes of the whole hybrid cat question in seven words by clearing the entire family and naming only two exceptions, neither of which is a small cat. A Bengal is a feline, so no filial generation argument arises and no permit is needed. This is the most permissive answer of any state on this map. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(E)",
+          "quote": "Hybrid wildlife, as defined in R12-4-401, that result from the interbreeding of at least one parent species of wildlife that is listed under this Section are regulated by this Section.",
+          "note": "Arizona is one of the few states with an express rule on hybrids, and it points the wrong way for the Bengal. The whole order Carnivora is restricted, which takes in the Asian leopard cat behind the breed, and subsection E then says hybrids resulting from the interbreeding of at least one listed parent species are regulated by the same section. No filial generation cutoff appears, so on the text a late-generation Bengal is caught alongside an F1. The counterweight is subsection D, which exempts domestic animals, defined as a species that does not exist in the wild, and a Bengal is a cross rather than a species. Recorded restricted rather than banned or legal, because the permit regime plainly reaches it and pet keeping is not clearly ruled out.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3988,6 +4026,14 @@
           "note": "The veiled chameleon is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The veiled chameleon is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4286,6 +4332,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "The Russian tortoise is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The Russian tortoise is on none of it, so no special licence is required. The only tortoises Arizona restricts are the genus Gopherus, which is its own desert tortoise. ",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4617,6 +4671,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "The ball python is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The ball python is on none of it, so no special licence is required. Pythonidae appears nowhere in the rule. ",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -4962,6 +5024,14 @@
           "note": "The boa constrictor is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The boa constrictor is on none of it, so no special licence is required. Boidae appears nowhere in the rule. ",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5229,6 +5299,14 @@
           "quote": "\"Wildlife\" means any wild mammal, wild bird, fish, reptile, amphibian, mollusk or crustacean found naturally in a wild state",
           "note": "A tarantula is an arthropod, and Nevada's definition of wildlife lists mammals, birds, fish, reptiles, amphibians, mollusks and crustaceans and stops there. Insects and arachnids are outside the Department of Wildlife's authority altogether, so neither the prohibited list nor the importation rule reaches one. A cleaner answer than New Mexico gives, where the same animals fall into a default clause written for vertebrates. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-ars-17-101",
+          "cite": "A.R.S. § 17-101(24)",
+          "quote": "\"Wildlife\" means all wild mammals, wild birds and the nests or eggs thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or spawn.",
+          "note": "A tarantula is an arthropod, and Arizona's definition of wildlife runs to mammals, birds, reptiles, amphibians, mollusks, crustaceans and fish. Insects and arachnids are not in it, so Title 17 and the restricted live wildlife rule made under it do not reach one at all. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5500,6 +5578,14 @@
           "quote": "\"Wildlife\" means any wild mammal, wild bird, fish, reptile, amphibian, mollusk or crustacean found naturally in a wild state",
           "note": "The emperor scorpion is an arthropod, and Nevada's definition of wildlife lists mammals, birds, fish, reptiles, amphibians, mollusks and crustaceans and stops there. Insects and arachnids are outside the Department of Wildlife's authority altogether, so neither the prohibited list nor the importation rule reaches one. A cleaner answer than New Mexico gives, where the same animals fall into a default clause written for vertebrates. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-ars-17-101",
+          "cite": "A.R.S. § 17-101(24)",
+          "quote": "\"Wildlife\" means all wild mammals, wild birds and the nests or eggs thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or spawn.",
+          "note": "The emperor scorpion is an arthropod, and Arizona's definition of wildlife runs to mammals, birds, reptiles, amphibians, mollusks, crustaceans and fish. Insects and arachnids are not in it, so Title 17 and the restricted live wildlife rule made under it do not reach one at all. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5803,6 +5889,14 @@
           "note": "The Argentine black and white tegu is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The Argentine black and white tegu is on none of it, so no special licence is required. Teiidae appears nowhere in the rule. ",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6084,6 +6178,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "The savannah monitor is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The savannah monitor is on none of it, so no special licence is required. Varanidae appears nowhere in the rule, so monitors of any size are unrestricted here. ",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6891,6 +6993,14 @@
           "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
           "note": "Commonly reported as needing a Michigan DNR permit, and that is wrong. The permit to hold game in captivity covers the closed list of native species quoted here and authorizes captive-bred game only; a South American rodent is not game in Michigan and cannot be permitted under it because it is not eligible in the first place. No Michigan statute names the capybara. The live requirement is the certificate of veterinary inspection to bring one in as a nonnative rodent.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
+          "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The capybara is Caviidae, which is not among them, so no special licence is required. Worth saying plainly, because the capybara is the largest rodent in the world and reads like something a state would regulate; Arizona's list simply does not reach its family. Squirrels and prairie dogs, much smaller animals, are restricted.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -8021,6 +8131,14 @@
           "quote": "Unless otherwise provided in this section or the act, it is unlawful for a person to import, possess, sell, offer for sale or release within this Commonwealth the following wild animals or wild birds or the eggs of the birds or a crossbreed or hybrid of the wild animals or wild birds, which are similar in appearance",
           "note": "The chinchilla appears in none of the eleven categories the Game Commission prohibits, which run to cats, canids, bears, raccoons, nutria, skunks, primates, listed species, the monk parakeet, and wildlife taken from the wild or captive bred out of state. Read literally, § 137.1(a)(11) bars possessing any wildlife captive bred in another state, and 34 Pa.C.S. § 102 defines wild animals as every mammal except horses, cattle, sheep, goats and pigs, so the text reaches far wider than the Game Commission applies it. The Commission draws its line at undomesticated species, which is why hedgehogs and sugar gliders are pursued and long domesticated pets are not.",
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
+          "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The chinchilla is Chinchillidae, which is not among them, so no special licence is required.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8329,6 +8447,14 @@
           "note": "The guinea pig is named outright on the no-permit list, so it may be possessed, transported, imported and exported with no Department permit. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
+          "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The guinea pig is Caviidae, which is not among them, so no special licence is required.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8625,6 +8751,14 @@
           "note": "The green iguana is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The green iguana is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -8920,6 +9054,14 @@
           "note": "Named at family level on the prohibited list, so importation, transportation and possession are all unlawful and no subspecies argument helps. The only permits available under this section go to accredited zoos and aquariums, universities and government agencies for research, other scientific institutions, commercial aquaculture, and tax-exempt nonprofits exhibiting wildlife for education, none of which is a pet route. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Named at family level, so every snapping turtle is restricted live wildlife and needs the appropriate special licence under R12-4-409(A) or a lawful exemption. The exemptions at R12-4-407 are about transit, fairs and circuses, photography, advertising, veterinary care and registered research facilities, none of which is a pet route, so a private keeper has no practical way in. Arizona restricts only two turtle groups and this is one of them, the other being its own gopher tortoises.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9194,6 +9336,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "The tokay gecko is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The tokay gecko is on none of it, so no special licence is required. ",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9477,6 +9627,14 @@
           "quote": "Unprotected amphibians are all species of amphibians which are not classified as game, protected, threatened, sensitive or endangered amphibians.",
           "note": "The tiger salamander is indigenous to Nevada, so the nonindigenous clearance does not reach it and the classification rule decides instead. Nevada's protected amphibians are three frogs and four toads, none of them a salamander, so the tiger salamander is unprotected and the possession restriction at NAC 503.093, which applies only to protected wildlife, does not bite. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(I)",
+          "quote": "The species Bufo horribilis, Bufo marinus, Bufo schneideri ... All species of the genus Rana ... All species of the genus Xenopus",
+          "note": "Arizona's restricted amphibian list is three genera and species groups, the giant and marine toads, the genus Rana and the genus Xenopus. Ambystoma is not among them, so the tiger salamander needs no special licence. One Arizona-specific caveat: this species occurs in the wild here, and taking one alive from the wild is a separate question governed by R12-4-404 and R12-4-405 and the take limits in Commission Order 43, which need a valid hunting licence. The clearance above is about keeping a captive-bred animal, not about collecting one. The Sonora tiger salamander is also federally endangered, which is a separate federal constraint on that subspecies.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9764,6 +9922,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "The Nile monitor is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The Nile monitor is on none of it, so no special licence is required. Varanidae appears nowhere in the rule. ",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10069,6 +10235,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "Nonvenomous and not indigenous to Nevada, so the state itself does not restrict it. Nevada's prohibited reptile list reaches crocodilians, several venomous families, snapping turtles and helodermatids, and no python appears on it. Federal law is the real constraint: the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. No python appears on it, so Arizona itself does not restrict the Burmese python. Federal law is the constraint that bites: the species has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10378,6 +10552,14 @@
           "permitFor": "personal",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
+          "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The degu is Octodontidae, which is not among them, so no special licence is required.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -10642,6 +10824,14 @@
           "quote": "(qq) Nonindigenous species of amphibians, except: (1) Bullfrogs (Rana catesbeiana); and (2) Species listed in NAC 503.110;",
           "note": "Nonindigenous amphibians are cleared as a class, with only bullfrogs and the species on the prohibited list carved out. The prohibited amphibians are clawed frogs and the giant marine toads, so the axolotl is clear. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(I)",
+          "quote": "The species Bufo horribilis, Bufo marinus, Bufo schneideri ... All species of the genus Rana ... All species of the genus Xenopus",
+          "note": "Arizona's restricted amphibian list is three genera and species groups, the giant and marine toads, the genus Rana and the genus Xenopus. Ambystoma is not among them, so the axolotl needs no special licence.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10911,6 +11101,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "The box turtle is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit. Worth noting that Nevada does restrict one turtle family outright, Chelydridae, so a snapping turtle is a different answer entirely.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. Terrapene is on none of it. The only turtles Arizona restricts are the snapping turtles and its own gopher tortoises. One Arizona-specific caveat: this species occurs in the wild here, and taking one alive from the wild is a separate question governed by R12-4-404 and R12-4-405 and the take limits in Commission Order 43, which need a valid hunting licence. The clearance above is about keeping a captive-bred animal, not about collecting one. The ornate box turtle is the Arizona native here.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11187,6 +11385,14 @@
           "note": "The red-eared slider is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The red-eared slider is on none of it, so no special licence is required. Trachemys appears nowhere in the rule. ",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11457,6 +11663,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "The sulcata is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The sulcata is on none of it, so no special licence is required. Centrochelys is not Gopherus, so the sulcata is clear where the state's own desert tortoise is not. ",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11729,6 +11943,14 @@
           "note": "The hognose snake is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The four colubrids Arizona claws back are the brown tree snake, boomslang, keelback and twig snake, and Heterodon is not among them. One Arizona-specific caveat: this species occurs in the wild here, and taking one alive from the wild is a separate question governed by R12-4-404 and R12-4-405 and the take limits in Commission Order 43, which need a valid hunting licence. The clearance above is about keeping a captive-bred animal, not about collecting one. The Mexican hognose reaches southeastern Arizona.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11998,6 +12220,14 @@
           "note": "Cleared by name, and absent from the three-species prohibited bird list. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(G)",
+          "quote": "The following species within the family Phasianidae ... All species listed under the Migratory Bird Treaty Act listed under 50 CFR 10.13",
+          "note": "Arizona's restricted bird list is a handful of quail, grouse and turkeys plus everything covered by the federal Migratory Bird Treaty Act. No psittacine appears, and the only parrot the state names anywhere is the thick-billed parrot, a native species. The African grey is neither, so no licence is required.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12261,6 +12491,14 @@
           "quote": "\"Wildlife\" means any wild mammal, wild bird, fish, reptile, amphibian, mollusk or crustacean found naturally in a wild state",
           "note": "The giant African millipede is an arthropod, and Nevada's definition of wildlife lists mammals, birds, fish, reptiles, amphibians, mollusks and crustaceans and stops there. Insects and arachnids are outside the Department of Wildlife's authority altogether, so neither the prohibited list nor the importation rule reaches one. A cleaner answer than New Mexico gives, where the same animals fall into a default clause written for vertebrates. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-ars-17-101",
+          "cite": "A.R.S. § 17-101(24)",
+          "quote": "\"Wildlife\" means all wild mammals, wild birds and the nests or eggs thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or spawn.",
+          "note": "The giant African millipede is an arthropod, and Arizona's definition of wildlife runs to mammals, birds, reptiles, amphibians, mollusks, crustaceans and fish. Insects and arachnids are not in it, so Title 17 and the restricted live wildlife rule made under it do not reach one at all. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13801,6 +14039,14 @@
           "note": "The ackie monitor is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The ackie monitor is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -15260,6 +15506,14 @@
           "note": "The red-footed tortoise is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The red-footed tortoise is on none of it, so no special licence is required. The only restricted tortoises are the genus Gopherus. ",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15321,6 +15575,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "The inland bearded dragon is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The bearded dragon is on none of it, so no special licence is required. ",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15384,6 +15646,14 @@
           "note": "The leopard gecko is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The leopard gecko is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15445,6 +15715,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "The crested gecko is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The crested gecko is on none of it, so no special licence is required. ",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15508,6 +15786,14 @@
           "note": "The blue-tongue skink is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The blue-tongue skink is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15569,6 +15855,14 @@
           "quote": "(aa) Nonvenomous, nonindigenous reptile species and subspecies;",
           "note": "Jackson's chameleon is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. Jackson's chameleon is on none of it, so no special licence is required. ",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15632,6 +15926,14 @@
           "note": "The green anole is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
+          "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The green anole is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15687,6 +15989,14 @@
           "note": "The two columns of this row disagree with each other. The scientific classification names Oryctolagus cuniculus, which is the species every domestic rabbit belongs to, while the common name column says Wild European Rabbit. Nothing in the section says whether domesticated races are carved out, and unlike the chinchilla, mink, rat, mouse, turkey and duck entries elsewhere in these rules, no domesticated races wording appears here. Pet rabbits are plainly sold in Nevada and the definition of wildlife at NRS 501.097 reaches animals found naturally in a wild state, which a domesticated breed arguably is not. Rendered grey rather than guessed, because the text arguably reaches the animal and clearly was aimed at the wild form. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
+          "note": "Arizona goes further than clearing the rabbit, it declines to call it wildlife at all. The order Lagomorpha is restricted with the genus Oryctolagus carved out in terms, and the carve-out says domestic rabbits are not wildlife and are not restricted. That phrasing puts the pet rabbit outside Title 17 rather than merely exempting it, which is the cleanest rabbit answer on this map.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15741,6 +16051,14 @@
           "quote": "\"Wildlife\" means any wild mammal, wild bird, fish, reptile, amphibian, mollusk or crustacean found naturally in a wild state",
           "note": "The Madagascar hissing cockroach is an arthropod, and Nevada's definition of wildlife lists mammals, birds, fish, reptiles, amphibians, mollusks and crustaceans and stops there. Insects and arachnids are outside the Department of Wildlife's authority altogether, so neither the prohibited list nor the importation rule reaches one. A cleaner answer than New Mexico gives, where the same animals fall into a default clause written for vertebrates. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-ars-17-101",
+          "cite": "A.R.S. § 17-101(24)",
+          "quote": "\"Wildlife\" means all wild mammals, wild birds and the nests or eggs thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or spawn.",
+          "note": "The Madagascar hissing cockroach is an arthropod, and Arizona's definition of wildlife runs to mammals, birds, reptiles, amphibians, mollusks, crustaceans and fish. Insects and arachnids are not in it, so Title 17 and the restricted live wildlife rule made under it do not reach one at all. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
           "verifiedOn": "2026-09-05"
         }
       }

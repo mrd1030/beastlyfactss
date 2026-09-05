@@ -1,0 +1,63 @@
+# Arizona restricted live wildlife, R12-4-406 and R12-4-407
+
+sourceId: az-r12-4-406 / az-ars-17-101
+jurisdiction: AZ
+url: https://www.animallaw.info/administrative/az-exotic-wildlife-article-4-live-wildlife
+     https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R12-4-406
+     https://www.azleg.gov/ars/17/00101.htm
+fetched: 2026-09-05
+fetch notes: apps.azsos.gov sits behind a Cloudflare challenge and refuses this container.
+  The AZGFD commission rules PDF at s3.amazonaws.com/azgfd-portal-wordpress does download,
+  BUT it is Supp. 13-2, a June 2013 edition, and it PREDATES the Atelerix and Oryctolagus
+  exceptions. Do not answer a hedgehog or rabbit question from it. The current subsection
+  text below was read from two reproductions that agree. azleg.gov works for the statutes.
+
+----------------------------------------------------------------------
+
+STRUCTURE
+
+  R12-4-406(D)  Domestic animals, as defined under R12-4-401, are not subject to
+                restrictions under A.R.S. Title 17, 12 A.A.C. 4, or Commission Orders.
+  R12-4-401(8)  "Domestic" means an animal species that does not exist in the wild, and
+                includes animal species that have only become feral after they were
+                released by humans who held them in captivity or individuals or
+                populations that escaped from human captivity.
+  R12-4-406(E)  Hybrid wildlife that result from the interbreeding of at least one parent
+                species of wildlife listed under this Section are regulated by this
+                Section. No filial generation cutoff. This is what catches the Bengal.
+  R12-4-407     Exemptions. Transit within 72 hours, fairs and circuses, photography,
+                advertising, veterinary care, USDA-registered research facilities,
+                pre-1989 desert tortoises. None of them is a pet route.
+
+CURRENT RESTRICTED LISTS
+
+  (F) Mammals: Afrosoricida; Artiodactyla families Antilocapridae, Bovidae, Cervidae,
+      Tayassuidae; ALL of Carnivora; Chiroptera; genus Didelphis; Erinaceomorpha EXCEPT
+      genus Atelerix, which are not restricted; Lagomorpha EXCEPT genus Oryctolagus,
+      which are not wildlife and are not restricted; all nonhuman primates; Rodentia
+      families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae,
+      Geomyidae, Sciuridae; Soricomorpha; Xenarthra.
+      NOTE the rodent families NOT listed: Caviidae (guinea pig, capybara), Cricetidae
+      (hamster), Muridae (gerbil), Chinchillidae, Octodontidae (degu). All clear.
+
+  (G) Birds: named Phasianidae species, plus all species listed under the Migratory Bird
+      Treaty Act at 50 CFR 10.13. No psittacine appears. The only parrot Arizona names
+      anywhere is its native thick-billed parrot.
+
+  (H) Reptiles: order Crocodilia; family Chelydridae (snapping turtles); genus Gopherus
+      (gopher and desert tortoises); Squamata families Atractaspidae, Elapidae,
+      Helodermatidae, Hydrophiidae, Viperidae; and four colubrids by name, the brown tree
+      snake, boomslang, keelback and twig snake.
+      NOTE the absences: Varanidae, Teiidae, Pythonidae, Boidae, Trachemys, Terrapene.
+
+  (I) Amphibians: Bufo horribilis, Bufo marinus, Bufo schneideri; genus Rana; genus
+      Xenopus. Ambystoma is absent, so axolotl and tiger salamander are clear.
+
+OUTER LIMIT
+
+  A.R.S. 17-101(24): "Wildlife" means all wild mammals, wild birds and the nests or eggs
+  thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or
+  spawn. Insects and arachnids are outside Title 17 entirely.
+
+  Taking a native species alive from the wild is a separate regime: R12-4-404, R12-4-405
+  and Commission Order 43, all requiring a hunting licence.

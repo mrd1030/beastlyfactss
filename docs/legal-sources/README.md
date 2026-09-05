@@ -30,6 +30,7 @@ about this species", not to claim a new verification date.
 | `NM-nm-importation-list.txt` | New Mexico Director's Species Importation List, ~1,300 rows with group |
 | `NM-nm-19-35-7.txt` | 19.35.7 NMAC, the rule that defines the four importation groups |
 | `NV-nv-nac-503.txt` | NAC chapter 503, Nevada's prohibited list, no-permit list and classifications |
+| `AZ-az-r12-4-406.txt` | Arizona's restricted live wildlife lists, with the 2013 PDF trap flagged |
 
 ## Reading the awkward ones
 
@@ -57,6 +58,7 @@ not on the sites, so a person with a browser can open all of them.
 | `legis.state.pa.us`, `palegis.us` | 403 and 503 | Same, cross-check two reproductions before quoting |
 | `vtfishandwildlife.com` | 403 without a User-Agent | `curl -A "Mozilla/5.0"` works |
 | `wildlife.dgf.nm.gov` | Download pages are HTML wrappers | Scrape the `wpdmdl` PDF link out, then fetch that with a User-Agent |
+| `apps.azsos.gov` | Cloudflare challenge | Use Cornell LII or animallaw.info, and cross-check two reproductions |
 | `law.justia.com`, `invasive.org` | 403 | Find another reproduction |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
 
