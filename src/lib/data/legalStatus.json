@@ -202,7 +202,7 @@
         "of": 51
       },
       "boa-constrictor": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "fennec-fox": {
@@ -4401,6 +4401,14 @@
           "quote": "Boa constrictor",
           "note": "Named individually with no length or weight qualifier attached.",
           "verifiedOn": "2026-08-05"
+        },
+        "TX": {
+          "sourceId": "tx-tpwd-nonindigenous",
+          "cite": "31 TAC 55.651",
+          "status": "legal",
+          "quote": "African rock python (Python sebae), Asiatic rock python (Python molurus), green anaconda (Eunectes murinus), reticulated python (python reticulates), and southern African python (Python natalensis).",
+          "note": "Texas controls exotic snakes by a closed list of five large constrictors plus non-native venomous species. Boa constrictor is on neither part of it, so no controlled exotic snake permit applies.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
