@@ -229,6 +229,17 @@ starts demanding a token the page is not yet sending:
 Until step 3, the only thing capping abuse is the Supabase Auth per-hour send
 limit, so do not raise that limit before Turnstile is on.
 
+**CAPTCHA covers the whole Auth surface, not just the buyer library.** Turning
+it on also gates `signInWithPassword`, which is the admin login at
+`/composer/login/`. That page carries the same widget and passes the token
+through `AuthContext.login()`; if it ever stops doing so, the composer becomes
+unreachable with a "captcha protection: request disallowed" error and no
+obvious cause.
+
+What it does NOT touch: comments, likes, shares and push subscriptions all go
+through PostgREST at `/rest/v1/`, which CAPTCHA does not cover, and the
+newsletter is Beehiiv rather than Supabase. Those forms are unaffected.
+
 ### Do NOT turn off "Confirm email"
 
 Authentication -> Sign In / Providers has a **Confirm email** toggle, and it is

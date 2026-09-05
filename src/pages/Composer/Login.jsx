@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/TurnstileWidget';
 
 function ComposerLoginForm() {
   const { login } = useAuth();
@@ -12,18 +13,30 @@ function ComposerLoginForm() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  // Supabase CAPTCHA protection covers every Auth endpoint, so turning it on
+  // for the buyer library's OTP also starts gating this password sign-in.
+  // Inert until VITE_TURNSTILE_SITE_KEY is set, same as everywhere else.
+  const [captchaToken, setCaptchaToken] = useState('');
+  const [captchaNonce, setCaptchaNonce] = useState(0);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+    if (isTurnstileEnabled && !captchaToken) {
+      setError('Complete the verification below, then try again.');
+      return;
+    }
     setSubmitting(true);
     try {
-      await login(email.trim(), password);
+      await login(email.trim(), password, captchaToken);
       navigate('/composer/', { replace: true });
     } catch (err) {
       setError(err?.message || 'Sign-in failed.');
     } finally {
       setSubmitting(false);
+      // Single use, so a failed attempt needs a fresh one before retrying.
+      setCaptchaToken('');
+      setCaptchaNonce(n => n + 1);
     }
   };
 
@@ -56,6 +69,7 @@ function ComposerLoginForm() {
           autoComplete="current-password"
           className="font-body"
         />
+        <TurnstileWidget onToken={setCaptchaToken} resetSignal={captchaNonce} />
         {error && <p className="text-sm text-destructive font-body">{error}</p>}
         <Button type="submit" disabled={submitting} className="w-full font-body font-bold">
           {submitting ? 'Signing in...' : 'Sign In'}

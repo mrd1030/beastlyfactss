@@ -57,11 +57,20 @@ export const AuthProvider = ({ children }) => {
     return promise;
   }, [applySession]);
 
-  const login = useCallback(async (email, password) => {
+  // captchaToken is optional and only present once Turnstile is configured.
+  // Supabase's CAPTCHA protection covers the whole Auth surface, not just the
+  // OTP endpoint the buyer library uses, so signInWithPassword needs a token
+  // too the moment it is switched on. Spread rather than always set: sending
+  // an empty one to a project with CAPTCHA off is itself rejected.
+  const login = useCallback(async (email, password, captchaToken = '') => {
     if (!isSupabaseConfigured) {
       throw new Error('Sign-in is not configured.');
     }
-    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+      ...(captchaToken ? { options: { captchaToken } } : {}),
+    });
     if (error) throw error;
     applySession(data.session);
     return data;
