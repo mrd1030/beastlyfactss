@@ -1,0 +1,182 @@
+# Texas: the famous statute is the wrong one, and a number decides the rest
+
+sourceId: tx-822-101 / tx-64-002 / tx-exotic-snakes / tx-71-001
+jurisdiction: TX
+url: https://statutes.capitol.texas.gov/Docs/HS/htm/HS.822.htm
+     https://statutes.capitol.texas.gov/Docs/PW/htm/PW.43.htm
+     https://statutes.capitol.texas.gov/Docs/PW/htm/PW.64.htm
+     https://statutes.capitol.texas.gov/Docs/PW/htm/PW.67.htm
+     https://statutes.capitol.texas.gov/Docs/PW/htm/PW.71.htm
+fetched: 2026-09-05
+fetch notes: statutes.capitol.texas.gov is now an Angular single-page app. Every /Docs/ path returns
+  the same 250KB shell, so a fetch LOOKS successful and contains no law; headless Chromium cannot
+  reach the host at all. The document server behind it does work with plain curl:
+      https://tcss.legis.texas.gov/resources/<CODE>/htm/<CODE>.<CHAPTER>.htm
+      e.g. https://tcss.legis.texas.gov/resources/PW/htm/PW.43.htm
+  That base is in the SPA's own config, in the lazy chunk chunk-7GRZWKYH.js, as
+  {environment:"PROD", TCASCore:"https://tcss.legis.texas.gov/api/", FileServerPath:".../resources"}.
+  Cite the statutes.capitol.texas.gov URL, fetch the tcss one.
+
+WHICH RULE REACHES THE ANIMAL, because Texas has four and only one is famous:
+  Health & Safety Code 822.101(4)   twenty clauses, nineteen named mammals plus their hybrids.
+                                    No reptile, no bird, no rodent, no invertebrate. This is the
+                                    statute every secondary summary quotes and it answers almost
+                                    nothing on this map. Of 52 animals it reaches exactly one, the
+                                    serval, and one by implication, the Bengal, which it misses.
+  31 TAC 65.325-65.331              nongame wildlife: anything INDIGENOUS to Texas. Caps rather
+                                    than bans. This is where a native reptile, native rodent or
+                                    native amphibian is actually answered. See the companion file.
+  Parks & Wild. Code 43.851         six named constrictors and nonnative venomous snakes, permit
+                                    available to private keepers. Nothing else.
+  Parks & Wild. Code 64.002         all nongame birds prohibited by (a), all pet birds restored
+                                    by (d). Quote only (a) and Texas looks like a bird ban state.
+
+TWO THINGS THE DANGEROUS WILD ANIMAL STATUTE DOES THAT ARE WORTH KNOWING:
+  822.103(a)  the certificate is issued by the LOCAL animal control office, or the county sheriff
+              where there is none, not by a state agency. Texas administers this county by county.
+  822.107     $100,000 liability insurance per occurrence, the highest figure on this map.
+  822.116(b)  and any municipality or county may prohibit the animal outright anyway.
+
+WHAT IS NOT IN TEXAS LAW, checked rather than assumed:
+  No high-risk rabies species ban. Health & Safety Code ch. 826 imposes vaccination duties on dogs
+  and cats only, and 25 TAC ch. 169 subch. A has no possession prohibition, so the fennec fox is
+  not reached the way it is in states with a rabies-vector rule.
+  No prohibited nonnative reptile list. The Argentine tegu, Nile monitor and green iguana are
+  restricted in neighbouring states and regulated in Texas not at all.
+  No amphibian on the harmful exotic species list. 31 TAC ch. 57 subch. A is long and covers only
+  fish, shellfish and aquatic plants, which is what clears the axolotl.
+
+--- Tex. Health & Safety Code 822.101 to 822.103, verbatim --------------------------------
+Sec. 822.101. DEFINITIONS. In this subchapter:
+(1) "Animal registration agency" means the municipal or county animal control office with authority over the area where a dangerous wild animal is kept or a county sheriff in an area that does not have an animal control office.
+(2) Repealed by Acts 2015, 84th Leg., R.S., Ch. 1, Sec. 3.1639(119), eff. April 2, 2015.
+(3) "Commercial activity" means:
+(A) an activity involving a dangerous wild animal conducted for profit that is not inherent to the animal's nature;
+(B) an activity for which a fee is charged and that is entertainment using or an exhibition of the animal; or
+(C) the selling, trading, bartering, or auctioning of a dangerous wild animal or a dangerous wild animal's body parts.
+(4) "Dangerous wild animal" means:
+(A) a lion;
+(B) a tiger;
+(C) an ocelot;
+(D) a cougar;
+(E) a leopard;
+(F) a cheetah;
+(G) a jaguar;
+(H) a bobcat;
+(I) a lynx;
+(J) a serval;
+(K) a caracal;
+(L) a hyena;
+(M) a bear;
+(N) a coyote;
+(O) a jackal;
+(P) a baboon;
+(Q) a chimpanzee;
+(R) an orangutan;
+(S) a gorilla; or
+(T) any hybrid of an animal listed in this subdivision.
+(4-a) "Executive commissioner" means the executive commissioner of the Health and Human Services Commission.
+(5) "Owner" means any person who owns, harbors, or has custody or control of a dangerous wild animal.
+(6) "Person" means an individual, partnership, corporation, trust, estate, joint stock company, foundation, or association of individuals.
+(7) "Primary enclosure" means any structure used to immediately restrict an animal to a limited amount of space, including a cage, pen, run, room, compartment, or hutch.
+
+Added by Acts 2001, 77th Leg., ch. 54, Sec. 1, eff. Sept. 1, 2001.
+Amended by: 
+Acts 2015, 84th Leg., R.S., Ch. 1 (S.B. 219), Sec. 3.1599, eff. April 2, 2015.
+Acts 2015, 84th Leg., R.S., Ch. 1 (S.B. 219), Sec. 3.1639(119), eff. April 2, 2015.
+
+Sec. 822.102. APPLICABILITY OF SUBCHAPTER. (a) This subchapter does not apply to:
+(1) a county, municipality, or agency of the state or an agency of the United States or an agent or official of a county, municipality, or agency acting in an official capacity;
+(2) a research facility, as that term is defined by Section 2(e), Animal Welfare Act (7 U.S.C. Section 2132), and its subsequent amendments, that is licensed by the secretary of agriculture of the United States under that Act;
+(3) an organization that is an accredited member of the Association of Zoos and Aquariums;
+(4) an injured, infirm, orphaned, or abandoned dangerous wild animal while being transported for care or treatment;
+(5) an injured, infirm, orphaned, or abandoned dangerous wild animal while being rehabilitated, treated, or cared for by a licensed veterinarian, an incorporated humane society or animal shelter, or a person who holds a rehabilitation permit issued under Subchapter C, Chapter 43, Parks and Wildlife Code;
+(6) a dangerous wild animal owned by and in the custody and control of a transient circus company that is not based in this state if:
+(A) the animal is used as an integral part of the circus performances; and
+(B) the animal is kept within this state only during the time the circus is performing in this state or for a period not to exceed 30 days while the circus is performing outside the United States;
+(7) a dangerous wild animal while in the temporary custody or control of a television or motion picture production company during the filming of a television or motion picture production in this state;
+(8) a dangerous wild animal owned by and in the possession, custody, or control of a college or university solely as a mascot for the college or university;
+(9) a dangerous wild animal while being transported in interstate commerce through the state in compliance with the Animal Welfare Act (7 U.S.C. Section 2131 et seq.) and its subsequent amendments and the regulations adopted under that Act;
+(10) a nonhuman primate owned by and in the control and custody of a person whose only business is supplying nonhuman primates directly and exclusively to biomedical research facilities and who holds a Class "A" or Class "B" dealer's license issued by the secretary of agriculture of the United States under the Animal Welfare Act (7 U.S.C. Section 2131 et seq.) and its subsequent amendments;
+(11) a dangerous wild animal that is:
+(A) owned by or in the possession, control, or custody of a person who is a participant in a species survival plan of the Association of Zoos and Aquariums for that species; and
+(B) an integral part of that species survival plan; and
+(12) in a county west of the Pecos River that has a population of less than 25,000, a cougar, bobcat, or coyote in the possession, custody, or control of a person that has trapped the cougar, bobcat, or coyote as part of a predator or depredation control activity.
+(b) This subchapter does not require a municipality that does not have an animal control office to create that office.
+
+Added by Acts 2001, 77th Leg., ch. 54, Sec. 1, eff. Sept. 1, 2001.
+Amended by: 
+Acts 2005, 79th Leg., Ch. 992 (H.B. 2026), Sec. 31, eff. June 18, 2005.
+Acts 2015, 84th Leg., R.S., Ch. 1 (S.B. 219), Sec. 3.1600, eff. April 2, 2015.
+
+Sec. 822.103. CERTIFICATE OF REGISTRATION; FEES. (a) A person may not own, harbor, or have custody or control of a dangerous wild animal for any purpose unless the person holds a certificate of registration for that animal issued by an animal registration agency.
+(b) A certificate of registration issued under this subchapter is not transferrable and is valid for one year after its date of issuance or renewal unless revoked.
+(c) The animal registration agency may establish and charge reasonable fees for application, issuance, and renewal of a certificate of registration in order to recover the costs associated with the administration and enforcement of this subchapter. The fee charged to an applicant may not exceed $50 for each animal registered and may not exceed $500 for each person registering animals, regardless of the number of animals owned by the person. The fees collected under this section may be used only to administer and enforce this subchapter.
+
+Added by Acts 2001, 77th Leg., ch. 54, Sec. 1, eff. Sept. 1, 2001.
+
+--- 822.107, the insurance requirement ---------------------------------------------------
+Sec. 822.107. LIABILITY INSURANCE. An owner of a dangerous wild animal shall maintain liability insurance coverage in an amount of not less than $100,000 for each occurrence for liability for damages for destruction of or damage to property and death or bodily injury to a person caused by the dangerous wild animal.
+
+Added by Acts 2001, 77th Leg., ch. 54, Sec. 1, eff. Sept. 1, 2001.
+
+--- Tex. Parks & Wild. Code 43.851, controlled exotic snakes ------------------------------
+Sec. 43.851. PERMIT. (a) The commission by rule shall establish permits that allow permit holders to possess or transport in this state a live nonindigenous snake, including a hybrid of any kind, that is:
+(1) venomous; or
+(2) a constrictor that is one of the following:
+(A) African rock python, Python sebae;
+(B) Asiatic rock python, Python molurus;
+(C) Burmese python, Python bivittatus;
+(D) green anaconda, Eunectes murinus;
+(E) reticulated python, Python reticulatus; or
+(F) southern African python, Python natalensis.
+(b) The commission shall establish separate permits for recreational and commercial purposes.
+(c) A permit under this subchapter is not required for:
+(1) a state or county official performing an official duty;
+(2) a licensed zoo that possesses or transports a snake for exhibition or scientific purposes;
+(3) a research facility, including a university, licensed under the Animal Welfare Act (7 U.S.C. Section 2131 et seq.) that possesses or transports a snake for scientific purposes; or
+(4) a person who assists a department employee in the handling or transport of a snake under this subchapter.
+(d) Except as provided by Subsection (c), a person may not possess or transport in this state a snake described by Subsection (a) without a permit issued by the department under this subchapter.
+(e) A person convicted of a violation of this subchapter or a rule adopted under this subchapter may not obtain a permit before the fifth anniversary of the date of the conviction.
+
+Added by Acts 2007, 80th Leg., R.S., Ch. 1159 (H.B. 12), Sec. 41, eff. September 1, 2007.
+Amended by: 
+Acts 2021, 87th Leg., R.S., Ch. 340 (H.B. 2326), Sec. 1, eff. September 1, 2021.
+
+--- Tex. Parks & Wild. Code 64.002, nongame birds ----------------------------------------
+Sec. 64.002. PROTECTION OF NONGAME BIRDS. (a) Except as provided by this code, no person may:
+(1) catch, kill, injure, pursue, or possess, dead or alive, or purchase, sell, expose for sale, transport, ship, or receive or deliver for transportation, a bird that is not a game bird;
+(2) possess any part of the plumage, skin, or body of a bird that is not a game bird; or
+(3) disturb or destroy the eggs, nest, or young of a bird that is not a game bird.
+(b) European starlings, English sparrows, and feral rock doves (Columba livia) may be killed at any time in any manner and their nests or eggs may be destroyed, and such conduct does not constitute an offense under Chapter 42, Penal Code.
+(c) A permit is not required to control yellow-headed, red-winged, rusty, or Brewer's blackbirds or all grackles, cowbirds, crows, or magpies when found committing or about to commit depredations on ornamental or shade trees, agricultural crops, livestock, or wildlife, or when concentrated in numbers and in a manner that constitutes a health hazard or other nuisance.
+(d) Canaries, parrots, and other exotic nongame birds may be sold, purchased, and kept as domestic pets.
+
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975. Amended by Acts 1981, 67th Leg., p. 202, ch. 95, Sec. 2, eff. April 30, 1981; Acts 1985, 69th Leg., ch. 267, art. 3, Sec. 110, eff. Sept. 1, 1985; Acts 1987, 70th Leg., ch. 610, Sec. 2, eff. Sept. 1, 1987; Acts 1997, 75th Leg., ch. 1256, Sec. 92, eff. Sept. 1, 1997.
+Amended by: 
+Acts 2009, 81st Leg., R.S., Ch. 952 (H.B. 3391), Sec. 13, eff. September 1, 2009.
+
+--- Tex. Parks & Wild. Code 67.001, the definition the nongame RULE narrows ---------------
+Sec. 67.001. DEFINITION. In this chapter, "nongame" means those species of vertebrate and invertebrate wildlife indigenous to Texas that are not classified as game animals, game birds, game fish, fur-bearing animals, endangered species, alligators, marine penaeid shrimp, or oysters.
+
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975. Amended by Acts 1985, 69th Leg., ch. 267, art. 1, Sec. 63, eff. Sept. 1, 1985; Acts 1997, 75th Leg., ch. 863, Sec. 7, eff. Sept. 1, 1997; Acts 1997, 75th Leg., ch. 1256, Sec. 109, eff. Sept. 1, 1997.
+
+--- Tex. Parks & Wild. Code 71.001, fur-bearing animals, where the word "fox" lives -------
+Sec. 71.001. DEFINITIONS. In this subtitle:
+(1) "Fur-bearing animal" means wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria.
+(2) "Trapper" means a person who takes a fur-bearing animal or the pelt of a fur-bearing animal.
+(3) "Retail fur buyer" means a person who purchases a fur-bearing animal or the pelt of a fur-bearing animal of this state from trappers only.
+(4) "Wholesale fur dealer" means a person who purchases for himself or for another person a fur-bearing animal or the pelt of a fur-bearing animal of this state from a trapper, a retail fur buyer, a fur-bearing animal propagator, or another wholesale fur dealer.
+(5) "Resident" means an individual who has resided continuously in this state for more than six months immediately before applying for a license issued under this chapter.
+(6) "Nonresident" means an individual who is not a resident.
+(7) "Sale" includes barter and other transfers of ownership for consideration.
+(8) "Take" means the act of snaring, trapping, shooting, killing, or capturing by any means and includes an attempt to take.
+(9) "Carcass" means the body of a dead fur-bearing animal, with or without the hide attached.
+(10) "Depredation" means the loss of or damage to agricultural crops, livestock, poultry, wildlife, or personal property.
+(11) "Pelt" means the untanned, green or dried hide or skin of a fur-bearing animal, whether or not the hide or skin is attached to the carcass.
+(12) "Place of business" means a place where fur-bearing animals or their pelts are sold, received, transported, possessed, or purchased, and includes a vehicle used by a trapper, retail fur buyer, wholesale fur dealer, or fur-bearing animal propagator.
+(13) "Fur-bearing animal propagator" means a person who takes or possesses a living fur-bearing animal and holds it for the purpose of propagation or sale.
+
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975. Amended by Acts 1979, 66th Leg., p. 2047, ch. 801, Sec. 1, eff. Aug. 27, 1979; Acts 1981, 67th Leg., p. 2737, ch. 748, Sec. 1, eff. Sept. 1, 1981; Acts 1983, 68th Leg., p. 2886, ch. 491, Sec. 3, eff. Aug. 29, 1983; Acts 1991, 72nd Leg., ch. 301, Sec. 7, eff. Sept. 1, 1991; Acts 1993, 73rd Leg., ch. 635, Sec. 6, eff. Sept. 1, 1993.
+Amended by: 
+Acts 2005, 79th Leg., Ch. 992 (H.B. 2026), Sec. 28, eff. June 18, 2005.

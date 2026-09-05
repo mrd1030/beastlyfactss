@@ -1,0 +1,436 @@
+# Texas nongame: two lists, two numbers, and captive-bred does not help
+
+sourceId: tx-nongame
+jurisdiction: TX
+url: https://texas-sos.appianportalsgov.com/rules-and-meetings?interface=VIEW_TAC&title=31&part=2&chapter=65&subchapter=O
+fetched: 2026-09-05
+fetch notes: The Texas Administrative Code moved off texreg.sos.state.tx.us, which now serves only a
+  "Site Has Moved" page to every path including the old TacPage viewer. The replacement is an Appian
+  portal. Its data API refuses a plain request with 406 "Client not supported", and web.archive.org is
+  blocked by egress policy here, so this looked unreachable for a while. It is not. What works:
+
+    1. GET https://texas-sos.appianportalsgov.com/rules-and-meetings?interface=VIEW_TAC with a cookie
+       jar (curl -c), to pick up the session cookie.
+    2. POST to .../rules-and-meetings/_/ui?<query> with -b that cookie jar, body exactly
+       {"#t":"UiConfig"}, and these headers:
+         Accept: application/vnd.appian.tv.ui+json
+         Content-Type: application/vnd.appian.tv+json
+         X-Appian-Features: ffffffff
+         X-Appian-Features-Extended: ffffffffffffffff
+         X-Appian-Ui-State: stateful
+         X-Appian-Client-Mode: PORTAL
+         X-Client-Version: APNX-1-4105-002
+       Without X-Client-Version it answers 406; with the wrong body it answers 500 "Expected uiConfig
+       to be of type Record", which is the useful error that tells you the headers are right.
+    3. The interface takes plain query parameters, so no click simulation is needed:
+         interface=VIEW_TAC&title=31&part=2&chapter=65&subchapter=O
+       lists the rules with a recordId per section, and
+         interface=VIEW_TAC_SUMMARY&recordId=<id>&queryAsDate=09%2F05%2F2026
+       returns the section. The rule text arrives as an escaped HTML blob under "richText".
+    4. Attached figures (the species lists) are NOT in the text. They come back as presigned
+       sos-appian-downloads.s3.amazonaws.com links inside the same response, and expire, so grab them
+       in the same pass. The (d) list is HTML, the (e) list is a five-page PDF.
+
+THE TWO NUMBERS, which is the whole of the pet answer:
+  65.327(b)(3)(B)   25 or fewer of a species on the 65.331(d) list, no permit
+  65.327(b)(3)(A)    6 or fewer of a species on the 65.331(e) list, no permit
+  Both are conditioned on not engaging in commercial activity, which 65.326(2) defines as "the sale,
+  offer for sale, exchange, or barter". BUYING is not commercial activity, and 65.327(b)(1)(B) lets a
+  permitted dealer sell to anyone, so a keeper may buy but never sell.
+  65.331(e) is expressly "not limited to" the species it names, so a native species on NEITHER list
+  falls to six, not to no cap.
+
+THE THREE DEFINITIONS THAT DECIDE EVERYTHING ELSE:
+  "indigenous to this state"  the rule reaches native species only. Not native, not reached: that is
+                              why the corn snake (Pantherophis guttatus, an eastern species) and the
+                              California kingsnake are clear while the milk snake and the common
+                              gartersnake are capped.
+  "includes captive-bred"     65.325(a), third sentence. A breeder receipt does not lift the cap.
+  "vertebrate wildlife"       65.325(a), first sentence, and this is the interesting one. Parks &
+                              Wild. Code 67.001, the statute it implements, says "vertebrate and
+                              INVERTEBRATE wildlife indigenous to Texas". The department had the
+                              power to reach invertebrates and wrote the rule narrower, which is
+                              what leaves the tarantula outside it even though Texas has native
+                              Aphonopelma species.
+
+TRAPS:
+  The (d) list uses pre-2002 herpetological names: Elaphe rather than Pantherophis, Eumeces rather
+  than Plestiodon, Aspidoscelis spelled two different ways across the two figures. "Slowinski's
+  cornsnake (Elaphe slowinskii)" is a species split OUT of Pantherophis guttatus in 2002, so seeing
+  "cornsnake" on the list does not mean the pet corn snake is on it. Same trap with "Speckled or
+  desert kingsnake (Lampropeltis getula)" and Lampropeltis californiae, split in 2009.
+  Three garter snakes are on the 25 list and Thamnophis sirtalis, the pet one, is on the 6 list.
+  Chelydra serpentina is capped at six; Macrochelys temminckii is THREATENED under 31 TAC 65.175 and
+  cannot be possessed at all. Do not read across from one snapping turtle to the other.
+  65.325(b) excepts eight things from the whole subchapter, among them rabbits of the genus
+  Sylvilagus, coyotes, bobcats and any species already listed as threatened.
+
+--- 31 TAC 65.325, Applicability -----------------------------------------------------------
+(a) General Applicability. In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.
+(b) Exceptions. This subchapter does not apply to the following nongame wildlife:
+(1) coyotes;
+(2) mountain lions;
+(3) bobcats;
+(4) rabbits (genus Sylvilagus);
+(5) American bison;
+(6) diamondback terrapin (Malaclemys terrapin), which are addressed under the provisions of §57.972 of this title (relating to General Rules);
+(7) bats (which are protected under the provisions of Parks and Wildlife Code, §63.101); or
+(8) threatened species listed in Subchapter G of this chapter (relating to Threatened and Endangered Nongame Species).
+(c) Transitional Provisions for Possession of Certain Nongame Wildlife. A person in lawful possession of nongame wildlife listed in §65.331(e) of this title (relating to Commercial Activity) prior to October 21, 2007 who possesses the nongame wildlife for personal, noncommercial use may continue to possess the nongame wildlife and any increase, provided:
+(1) the person contacts the department by no later than November 1, 2010 and reports the person's name and address, and the species and number of the nongame wildlife in possession; and
+(2) the person does not engage in any commercial activity involving the nongame wildlife possessed under this section.
+
+Source Note: The provisions of this §65.325 adopted to be effective January 1, 1999, 23 TexReg 10034; amended to be effective October 28, 2002, 27 TexReg 10041; amended to be effective October 21, 2007, 32 TexReg 7472; amended to be effective November 18, 2008, 33 TexReg 9266; amended to be effective November 16, 2011, 36 TexReg 7672.
+
+--- 31 TAC 65.326, Definitions ------------------------------------------------------------
+The following words and terms, when used in this subchapter, shall have the following meanings, unless the context clearly indicates otherwise. All other words and terms shall have the meanings assigned by the Parks and Wildlife Code or regulatory definitions adopted under the authority of Parks and Wildlife Code.
+(1) Captive-bred--Any wildlife born in captivity from parents held in captivity.
+(2) Commercial activity--The sale, offer for sale, exchange, or barter of nongame wildlife.
+(3) Export--The transport of nongame wildlife from Texas across a state or international boundary.
+(4) Possession--actual care, custody, or control of nongame wildlife.
+(5) Resale--Any transaction or activity in which a person purchases nongame wildlife or otherwise acquires nongame wildlife for a consideration and subsequently transfers or delivers the same nongame wildlife to any person in exchange for compensation or remuneration of any kind.
+(6) Processed product--
+(A) nongame wildlife or parts of nongame wildlife that have been treated or prepared, by means other than refrigeration or freezing, to prevent decomposition; or
+(B) parts of nongame wildlife that do not require treatment or preparation to prevent decomposition.
+
+Source Note: The provisions of this §65.326 adopted to be effective January 1, 1999, 23 TexReg 10034; amended to be effective October 28, 2002, 27 TexReg 10041.
+
+--- 31 TAC 65.327, Permit Required --------------------------------------------------------
+MINIMIZE
+SOLID
+LINK
+Historical
+MINIMIZE
+SOLID
+LINK
+Texas Register
+MINIMIZE
+SOLID
+LINK
+View PDF
+MINIMIZE
+SOLID
+START
+#03264B
+Title 31
+JUSTIFIED
+NATURAL RESOURCES AND CONSERVATION
+Part 2
+JUSTIFIED
+TEXAS PARKS AND WILDLIFE DEPARTMENT
+Chapter 65
+JUSTIFIED
+WILDLIFE
+Subchapter O
+JUSTIFIED
+COMMERCIAL NONGAME PERMITS
+Rule §65.327
+JUSTIFIED
+Permit Required
+Previous Rule
+JUSTIFIED
+SAME_TAB
+View Rule
+https://texas-sos.appianportalsgov.com/rules-and-meetings?recordId=97168&queryAsDate=09%2F05%2F2026&interface=VIEW_TAC_SUMMARY&$locale=en_US
+View Rule
+Next Rule
+JUSTIFIED
+SAME_TAB
+View Rule
+https://texas-sos.appianportalsgov.com/rules-and-meetings?recordId=193174&queryAsDate=09%2F05%2F2026&interface=VIEW_TAC_SUMMARY&$locale=en_US
+View Rule
+Chapter Review Date
+DEFAULT
+UNFOCUS
+JUSTIFIED
+08/05/2025
+{}
+https://texas-sos.appianportalsgov-dynamic.com/rules-and-meetings/webcontent/q62w-oYib1aJ5eUyyc3qCg/richTextFieldWithTables/index.html?_cacheClear=1
+{"com.appian.richtext":"DBhDflyACuOQtcNOJXTJPYg46VOo9ygNOfOv8IzYZ9UWhR402upRP76txI5fPmrmAbECSrRSQTtyCVt6GwcF-Lk9J1OqEHsAXnKVSvIHPOFTSW6fG-dY2ZpkGfkD7pEOdF4rS2L4_Ug6KVFpQbGWN5d0MFpRPFOh7hpAXW0nL8vpp7b-DoAmlZoFXg"}
+{"protocolVersion":1,"action":"NEW_VALUE","value":{"richText":"<p>(a) General Requirement. Except as provided in this subchapter, no person may collect, acquire, possess, import, export, cause the import or export of, or engage in a commercial activity involving nongame wildlife.</p><p>(b) Permit Privileges and Restrictions.</p><p style=\"margin-left: 25px;\">(1) The holder of a valid nongame dealer permit may:</p><p style=\"margin-left: 50px;\">(A) collect nongame wildlife listed in §65.331(d) of this title (relating to Commercial Activity) from the wild;</p><p style=\"margin-left: 50px;\">(B) sell lawfully obtained nongame wildlife to anyone;</p><p style=\"margin-left: 50px;\">(C) acquire nongame wildlife by or for a commercial activity only from a person permitted under this subchapter or a lawful out-of-state source; and</p><p style=\"margin-left: 50px;\">(D) import nongame wildlife, including species listed in §65.331(e) of this title, into Texas for any purpose, including sale or resale, or for purposes of export, provided the person:</p><p style=\"margin-left: 75px;\">(i) does not release the nongame wildlife in Texas or allow the nongame wildlife to commingle with native nongame wildlife in Texas;</p><p style=\"margin-left: 75px;\">(ii) possesses an invoice, bill of sale, or receipt establishing that the nongame wildlife was lawfully obtained in and transported from another state;</p><p style=\"margin-left: 75px;\">(iii) completes and mails to the department a department-supplied Notice of Import/Export within 24 hours of each instance of receiving such nongame wildlife from out-of-state; and</p><p style=\"margin-left: 75px;\">(iv) maintains all documentation required by this paragraph for a period of two years following the importation of the nongame wildlife. The documentation required by this paragraph includes the dealer's copy of each Notice of Import/Export. All documentation shall be provided at the request of any department employee acting within the scope of official duties;</p><p style=\"margin-left: 50px;\">(E) export lawfully obtained nongame wildlife, including species listed in §65.331(e) of this title, from Texas for any reason, including sale or resale, provided the person:</p><p style=\"margin-left: 75px;\">(i) completes and mails to the department a department-supplied Notice of Import/Export within 24 hours of each instance of shipping such wildlife out-of-state; and</p><p style=\"margin-left: 75px;\">(ii) maintains the dealer's copy of each Notice of Import/Export for a period of two years following each instance of exportation of nongame wildlife. The documentation required by this paragraph shall be provided at the request of any department employee acting within the scope of official duties; and</p><p style=\"margin-left: 50px;\">(F) engage in captive breeding of all species of nongame wildlife; and</p><p style=\"margin-left: 50px;\">(G) possess, transport, purchase, sell, resell, import, or export dead armadillos (Dasypus novemcinctus); however, the possession, transportation, sale, resale, import, or export of live armadillos is prohibited under Parks and Wildlife Code, §63.103.</p><p style=\"margin-left: 25px;\">(2) The holder of a valid nongame permit:</p><p style=\"margin-left: 50px;\">(A) may collect nongame wildlife listed in §65.331(d) of this title from the wild; and</p><p style=\"margin-left: 50px;\">(B) may purchase or acquire nongame wildlife, including species listed in §65.331(e) of this title, from the holder of a valid nongame dealer permit or lawful out-of-state source; but</p><p style=\"margin-left: 50px;\">(C) may sell only to the holder of a valid nongame dealer permit; and</p><p style=\"margin-left: 50px;\">(D) may possess, transport, purchase, sell, resell, import, or export dead armadillos (Dasypus novemcinctus), however:</p><p style=\"margin-left: 75px;\">(i) dead armadillos may be sold only to the holder of a valid nongame dealer permit; and</p><p style=\"margin-left: 75px;\">(ii) the possession, transportation, sale, resale, import, or export of live armadillos is prohibited under Parks and Wildlife Code, §63.103.</p><p style=\"margin-left: 25px;\">(3) A person without a nongame or nongame dealer's permit may:</p><p style=\"margin-left: 50px;\">(A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and</p><p style=\"margin-left: 50px;\">(B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.</p><p style=\"margin-left: 25px;\">(4) A permit is not required for any person to sell nongame wildlife listed in §65.331(b) or (d) of this title for and ready for immediate consumption in individual portion servings, and which are subject to limited sales or use tax, provided the person maintains a receipt identifying the source of the nongame wildlife.</p><p style=\"margin-left: 25px;\">(5) Notwithstanding any other requirement of this subchapter, no permit under this subchapter is required to purchase, possess, or sell processed products made from nongame wildlife.</p><p style=\"margin-left: 25px;\">(6) No person in this state may take nongame wildlife and subsequently treat it to create a processed product for sale, offer for sale, exchange, or barter unless that person possesses a valid nongame dealer's permit.</p><p>(c) Possession of Permit.</p><p style=\"margin-left: 25px;\">(1) This subchapter does not relieve any person of the obligation to possess an appropriate hunting license for any activity involving the take of nongame wildlife.</p><p style=\"margin-left: 25px;\">(2) Except as provided in this section, a permit required by this subchapter shall be possessed on the person of the permittee during any activity governed by this subchapter. A separate permit is required for each permanent place of business. An employee of a nongame dealer may engage in commercial activity or the resale of nongame wildlife only at a permanent place of business operated by the permittee, provided that:</p><p style=\"margin-left: 50px;\">(A) the employer's permit or a legible photocopy of the permit is maintained at the place of business during all activities governed by this subchapter; and</p><p style=\"margin-left: 50px;\">(B) the place of business has been identified on the application required by §65.329 of this title (relating to Permit Application).</p><p style=\"margin-left: 25px;\">(3) In the event that a nongame dealer conducts a commercial activity at a place in addition to the permittee's permanent place of business, that person shall possess on their person the original or a legible photocopy of a valid nongame dealer's permit.</p><p>(d) Period of Permit Validity. A permit issued under this subchapter is valid through the August 31 immediately following the date of issuance.</p><p>(e) Exception. No permit is required for nongame wildlife not taken or originating in Texas that are shipped by common carrier or accompanied by documentation of lawful possession from outside of this state to a destination within this state for immediate shipment outside the state.</p>","readOnly":true,"maxSize":null,"placeholder":"","tableBorderStyle":"NONE","insertableItemsLabel":"","insertableItems":null}}
+AUTO
+{}
+https://texas-sos.appianportalsgov-dynamic.com/rules-and-meetings/webcontent/q62w-oYib1aJ5eUyyc3qCg/richTextFieldWithTables/index.html?_cacheClear=1
+{"com.appian.richtext":"k6_ds93Dlyr9XClu5fNhfBS1OYYFIIPPZOA-ut_gxBz1Qmm8l9JXe9EopzXnHKGjWJxiQ8QttKQhaCZvZxL5YfxgzzJBrcx35H0MkyFcyXrhokj1dX57YoxqEhtZn0Y2r46KkO6OnyKYSzeWB2-9BjTqUvYD5kAVfkd3ZGqa2LNjPNYiSZhVc-SH7g"}
+{"protocolVersion":1,"action":"NEW_VALUE","value":{"richText":"<span style=\"font-size: 14px;\"><p><strong>Source Note: </strong>The provisions of this &sect;65.327 adopted to be effective January 1, 1999, 23 TexReg 10034; amended to be effective October 28, 2002, 27 TexReg 10041; amended to be effective October 21, 2007, 32 TexReg 7472; amended to be effective November 18, 2008, 33 TexReg 9266; amended to be effective November 16, 2011, 36 TexReg 7672; amended to be effective September 1, 2021, 46 TexReg 4171.</p></span>","readOnly":true,"maxSize":null,"placeholder":"","tableBorderStyle":"","insertableItemsLabel":"","insertableItems":null}}
+AUTO
+Rules & Meetings
+TOPBAR
+
+--- 31 TAC 65.331, Commercial Activity ----------------------------------------------------
+(a) Policy. The department shall develop a policy for periodic evaluation of pertinent information or evidence to determine if a species should be added to or removed from the lists of species in this section.
+(b) Turtles. No person while on or in public water may possess or use a net or trap capable of catching a turtle. This section does not apply to:
+(1) dip nets; or
+(2) minnow traps, provided the minnow trap is less than 24 inches in length or has a throat smaller than one by three inches.
+(c) It is an offense for any person to take or attempt to take nongame wildlife for purposes of commercial activity from public land or water.
+(d) The species of nongame wildlife listed in this paragraph may be possessed, purchased, sold, offered for sale, imported, or exported as provided under this subchapter.
+Attached Graphic
+
+(e) No person shall engage in commercial activity involving any nongame species not listed in subsection (d) of this section, except as provided in §65.327 of this title (relating to Permit Required). This prohibition on commercial activity includes, but is not limited to, the following species:
+Attached Graphic
+
+Source Note: The provisions of this §65.331 adopted to be effective January 1, 1999, 23 TexReg 10034; amended to be effective October 28, 2002, 27 TexReg 10041; amended to be effective October 21, 2007, 32 TexReg 7472; amended to be effective November 18, 2008, 33 TexReg 9266; amended to be effective November 16, 2011, 36 TexReg 7672; amended to be effective November 4, 2018, 43 TexReg 7178; amended to be effective March 30, 2020, 45 TexReg 2192.
+
+--- FIGURE: 31 TAC 65.331(d), the 25 list -------------------------------------------------
+Figure: 31 TAC '65.331(d)
+Figure: 31 TAC '65.331(d)
+Frogs and Toads
+Great Plains toad (Bufo cognatus)
+Green toad (Bufo debilis)
+Red-spotted toad (Bufo punctatus)
+Texas toad (Bufo speciosus)
+Gulf Coast toad (Bufo valliceps)
+Woodhouse's toad (Bufo woodhousei)
+Green treefrog (Hyla cinerea)
+Bull frog (Rana catesbeiana)
+Couch's spadefoot (Scaphiopus couchii)
+Plains spadefoot (Spea bombifrons)
+New Mexico spadefoot (Spea multiplicata)
+Salamanders
+Tiger salamander (Ambystoma tigrinum)
+Lizards
+Green anole (Anolis carolinensis)
+Chihuahuan spotted whiptail (Aspidoscelis exsanguis)
+Texas spotted whiptail (Aspidoscelis gularis)
+Marbled whiptail (Aspidoscelis marmoratus)
+Six-lined racerunner (Aspidoscelis sexlineatus)
+Checkered whiptail (Aspidoscelis tesselatus)
+Texas banded gecko (Coleonyx brevis)
+Greater earless lizard (Cophosaurus texanus)
+Collared lizard (Crotaphytus collaris)
+Five-lined skink (Eumeces fasciatus)
+Great plains skink (Eumeces obsoletus)
+Texas alligator lizard (Gerrhonotus infernalis)
+Lesser earless lizard (Holbrookia maculata)
+Crevice spiny lizard (Sceloporus poinsettii)
+Prairie lizard (Sceloporus undulatus)
+Ground skink (Scincella lateralis)
+Tree lizard (Urosaurus ornatus)
+Side-blotched lizard (Uta stansburiana)
+Snakes
+Copperhead (Agkistrodon contortrix)
+Cottonmouth (Agkistrodon piscivorus)
+Glossy snake (Arizona elegans)
+Trans-Pecos rat snake (Bogertophis subocularis)
+Racer (Coluber constrictor)
+Western diamondback rattlesnake (Crotalus atrox)
+Rock rattlesnake (Crotalus lepidus)
+Blacktail rattlesnake (Crotalus molossus)
+Mojave rattlesnake (Crotalus scutulatus)
+Prairie rattlesnake (Crotalus viridis)
+Baird's rat snake (Elaphe bairdi)
+Great Plains rat snake (Elaphe emoryi)
+Texas rat snake (Elaphe obsoleta)
+Slowinski's cornsnake (Elaphe slowinskii)
+Western hognose snake (Heterodon nasicus)
+Eastern hognose snake (Heterodon platirhinos)
+Texas night snake (Hypsiglena torquata)
+Gray-banded kingsnake (Lampropeltis alterna)
+Prairie kingsnake (Lampropeltis calligaster)
+Speckled or desert kingsnake (Lampropeltis getula)
+Milk snake (Lampropeltis triangulum)
+Texas blind snake (Leptotyphlops dulcis)
+Coachwhip (Masticophis flagellum)
+Schott's whipsnake (Masticophis schotti)
+Striped whipsnake (Masticophis taeniatus)
+Texas coral snake (Micrurus tener)
+Blotched or yellowbelly water snake (Nerodia erythrogaster)
+Broad-banded water snake (Nerodia fasciata)
+Diamondback water snake (Nerodia rhombifer)
+Rough green snake (Opheodrys aestivus)
+Bullsnake or gopher snake (Pituophis catenifer)
+Texas longnose snake (Rhinocheilus lecontei)
+Western blackneck garter snake (Thamnophis cyrtopsis)
+Checkered garter snake (Thamnophis marcianus)
+Western ribbon snake (Thamnophis proximus)
+Big Bend patchnose snake (Salvadora deserticola)
+Texas or mountain patchnose snake (Salvadora grahamiae)
+Massasauga (Sistrurus catenatus)
+Pygmy rattlesnake (Sistrurus miliarius)
+Ground snake (Sonora semiannulata)
+Brown snake (Storeria dekayi)
+Flathead snake (Tantilla gracilis)
+Southwestern blackhead snake (Tantilla hobartsmithi)
+Plains blackhead snake (Tantilla nigriceps)
+Lined snake (Tropidoclonion lineatum)
+Rough earth snake (Virginia striatula)
+Mammals
+Texas Antelope Squirrel (Ammospermophilus interpres)
+Black-tailed Prairie Dog (Cynomys ludovicianus)
+Merriam's Kangaroo Rat (Dipodomys merriami)
+Eastern Flying Squirrel (Glaucomys volans)
+Black-tailed Jackrabbit (Lepus californicus)
+Spotted Ground Squirrel (Spermophilus spilosoma)
+Thirteen-lined Ground Squirrel (Spermophilus tridecemlineatus)
+Rock Squirrel (Spermophilus variegatus)
+
+--- FIGURE: 31 TAC 65.331(e), the 6 list (extracted from the PDF) -------------------------
+Figure: 31 TAC §65.331(e)
+Salamanders
+Three‐toed Amphiuma (Amphiuma tridactylum)
+Gulf Coast Waterdog (Necturus beyeri)
+Lesser Siren (Siren intermedia)
+Spotted Salamander (Ambystoma maculatum)
+Marbled Salamander (Ambystoma opacum)
+Mole Salamander (Ambystoma talpoideum)
+Small‐mouthed Salamander (Ambystoma texanum)
+Southern Dusky Salamander (Desmognathus auriculatus)
+Salado Salamander (Eurycea chisholmensis)
+Texas Salamander (Eurycea neotenes)
+Dwarf Salamander (Eurycea quadridigitata)
+Jollyville Plateau Salamander (Eurycea tonkawae)
+Valdina Farms Salamander (Eurycea troglodytes)
+Western Slimy Salamander (Plethodon albagula)
+Southern Red‐backed Salamander (Plethodon serratus)
+Eastern Newt (Notophthalmus viridescens)
+Frogs and Toads
+American Toad (Bufo americanus)
+Cane Toad (Bufo marinus)
+Cricket Frog (Acris crepitans)
+Canyon Treefrog (Hyla arenicolor)
+Cope’s Gray Treefrog (Hyla chrysoscelis)
+Squirrel Treefrog (Hyla squirella)
+Gray Treefrog (Hyla versicolor)
+Spotted Chorus Frog (Pseudacris clarki)
+Spring Peeper (Pseudacris crucifer)
+Southeastern Chorus Frog (Pseudacris feriarum)
+Strecker’s Chorus Frog (Pseudacris streckeri)
+Barking Frog (Eleutherodactylus augusti)
+Rio Grande Chirping Frog (Eleutherodactylus cystignathoides)
+Spotted Chirping Frog (Eleutherodactylus guttilatus)
+Cliff Chirping Frog (Eleutherodactylus marnockii)
+Eastern Narrow‐mouthed Toad (Gastrophryne carolinensis)
+Great Plains Narrow‐mouthed Toad (Gastrophryne olivacea)
+Hurterʹs Spadefoot (Scaphiopus hurterii)
+Crawfish Frog (Rana areolata)
+Rio Grande Leopard Frog (Rana berlandieri)
+Plains Leopard Frog (Rana blairi)
+Green Frog (Rana clamitans)
+Pig Frog (Rana grylio)
+Pickerel Frog (Rana palustris)
+Southern Leopard Frog (Rana sphenocephala)
+Turtles
+Painted Painted Turtle (Chrysemys picta)
+Chicken Turtle (Deirochelys reticularia)
+Mississippi Map Turtle (Graptemys kohni)
+Ouachita Map Turtle (Graptemys ouachitensis)
+Texas Map Turtle (Graptemys versa)
+River Cooter (Pseudemys concinna)
+Rio Grande Cooter (Pseudemys gorzugi)
+Texas River Cooter (Pseudemys texana)
+Eastern Box Turtle (Terrapene carolina)
+Ornate Box Turtle (Terrapene ornata)
+Big Bend Slider (Trachemys gaigeae)
+Red‐eared slider (Trachemys scripta)
+Yellow Mud Turtle (Kinosternon flavescens)
+Eastern Mud Turtle (Kinosternon subrubrum)
+Razor‐backed Musk Turtle (Sternotherus carinatus)
+Stinkpot (Sternotherus odoratus)
+Common snapping turtle (Chelydra serpentina)
+Spiny softshell turtle (Apalone spinifera)
+Smooth softshell turtle (Apalone mutica)
+Lizards
+Slender Glass Lizard (Ophisaurus attenuatus)
+Long‐nosed Leopard Lizard (Gambelia wislizenii)
+Spot‐tailed Earless Lizard (Holbrookia lacerata)
+Keeled Earless Lizard (Holbrookia propinqua)
+Round‐tailed Horned Lizard (Phrynosoma modestum)
+Dunes Sagebrush Lizard (Sceloporus arenicolus)
+Blue Spiny Lizard (Sceloporus cyanogenys)
+Graphic Spiny Lizard (Sceloporus grammicus)
+Desert Spiny Lizard (Sceloporus magister)
+Canyon Lizard (Sceloporus merriami)
+Texas Spiny Lizard (Sceloporus olivaceus)
+Rose‐bellied Lizard (Sceloporus variabilis)
+Coal Skink (Eumeces anthracinus)
+Broad‐headed Skink (Eumeces laticeps)
+Many‐lined Skink (Eumeces multivirgatus)
+Prairie Skink (Eumeces septentrionalis)
+Four‐lined Skink (Eumeces tetragrammus)
+Gray Checkered Whiptail (Aspidocelis dixoni)
+Little Striped Whiptail (Aspidocelis inornata)
+Laredo Striped Whiptail (Aspidocelis laredoensis)
+New Mexico Whiptail (Aspidocelis neomexicana)
+Mexican Plateau Spotted Whiptail (Aspidocelis septemvittata)
+Desert Grassland Whiptail (Aspidocelis uniparens)
+Reticulated Gecko (Coleonyx reticulatus)
+Reticulate Collared Lizard (Crotaphytus reticulatus)
+Snakes
+New Mexico Blind Snake (Leptotyphlops dissectus)
+Western Blind Snake (Leptotyphlops humilis)
+Western Wormsnake (Carphophis vermis)
+Timber (Canebrake) Rattlesnake (Crotalus horridus)]
+Ring‐necked Snake (Diadophis punctatus)
+Texas Indigo Snake (Drymarchon melanurus)
+Red‐bellied Mudsnake (Farancia abacura)
+Tamaulipan Hook‐nosed Snake (Ficimia streckeri)
+Chihuahuan Hooked‐nosed Snake (Gyalopion canum)
+Smooth Green Snake (Liochlorophis vernalis)
+Saltmarsh Snake (Nerodia clarki)
+Mississippi Green Watersnake (Nerodia cyclopion)
+Graham’s Crayfish Snake (Regina grahamii)
+Glossy Crayfish Snake (Regina rigida)
+Red‐bellied Snake (Storeria occipitomaculata)
+Mexican Black‐headed Snake (Tantilla atriceps)
+Plains Gartersnake (Thamnophis radix)
+Common Gartersnake (Thamnophis sirtalis)
+Chihuahuan Desert Lyre Snake (Trimorphodon vilkinsonii)
+Smooth Earthsnake (Virginia valeriae)
+Mammals
+Southern Short‐tailed Shrew (Blarina carolinensis)
+Elliot’s Short‐tailed Shrew (Blarina hylophaga)
+Least Shrew (Cryptotis parva)
+Desert Shrew (Notiosorex crawfordi)
+Eastern Mole (Scalopus aquaticus)
+Mexican Ground Squirrel (Spermophilus mexicanus)
+Gray‐footed Chipmunk (Tamias canipes)
+Yellow‐faced Pocket Gopher (Cratogeomys castanops)
+Desert Pocket Gopher (Geomys arenarius)
+Attwater’s Pocket Gopher (Geomys attwateri)
+Baird’s Pocket Gopher (Geomys breviceps)
+Plains Pocket Gopher (Geomys bursarius)
+Jones’ Pocket Gopher (Geomys knoxjonesi)
+Texas Pocket Gopher (Geomys personatus)
+Llano Pocket Gopher (Geomys texensis)
+Botta’s Pocket Gopher (Thomomys bottae)
+Northern Pygmy Mouse (Baiomys taylori)
+Hispid Pocket Mouse (Chaetodipus hispidus)
+Rock Pocket Mouse (Chaetodipus intermedius)
+Nelson’s Pocket Mouse (Chaetodipus nelsoni)
+Desert Pocket Mouse (Chaetodipus penicillatus)
+Gulf Coast Kangaroo Rat (Dipodomys compactus)
+Ord’s Kangaroo Rat (Dipodomys ordii)
+Banner‐tailed Kangaroo Rat (Dipodomys spectabilis)
+Mexican Spiny Pocket Mouse (Liomys irroratus)
+Mexican Vole (Microtus mexicanus)
+Prairie Vole (Microtus ochrogaster)
+Woodland Vole (Microtus pinetorum)
+White‐throated Woodrat (Neotoma albigula)
+Eastern Woodrat (Neotoma floridana)
+Golden Mouse (Ochrotomys nuttalli)
+Mearns’ Grasshopper Mouse (Onychomys arenicola)
+Northern Grasshopper Mouse (Onychomys leucogaster)
+Marsh Rice Rat (Oryzomys palustris)
+Plains Pocket Mouse (Perognathus flavescens)
+Silky Pocket Mouse (Perognathus flavus)
+Merriam’s Pocket Mouse (Perognathus merriami)
+Texas Mouse (Peromyscus attwateri)
+Brush Mouse (Peromyscus boylii)
+Cactus Mouse (Peromyscus eremicus)
+Cotton Mouse (Peromyscus gossypinus)
+White‐footed Mouse (Peromyscus leucopus)
+Deer Mouse (Peromyscus maniculatus)
+Northern Rock Mouse (Peromyscus nasutus)
+White‐ankled Mouse (Peromyscus pectoralis)
+Piñon Mouse (Peromyscus truei)
+Fulvous Harvest Mouse (Reithrodontomys fulvescens)
+Eastern Harvest Mouse (Reithrodontomys humulis)
+Western Harvest Mouse (Reithrodontomys megalotis)
+Plains Harvest Mouse (Reithrodontomys montanus)
+Mexican Woodrat (Neotoma mexicana)
+Southern Plains Woodrat (Neotoma micropus)
+Tawny‐bellied Cotton Rat (Sigmodon fulviventer)
+Hispid Cotton Rat (Sigmodon hispidus)
+Yellow‐nosed Cotton Rat (Sigmodon ochrognathus)
+Porcupine (Erethizon dorsatum)
+Long‐tailed Weasel (Mustela frenata)

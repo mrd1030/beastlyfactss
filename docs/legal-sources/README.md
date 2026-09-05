@@ -50,6 +50,8 @@ about this species", not to claim a new verification date.
 | `MD-md-fisheries.txt` | Where Maryland's snapping turtle went, and the nonnative list that names no reptile |
 | `TN-tn-exotic-animals-act.txt` | Tennessee's five classes, with the two clauses that make it permissive and the rule chapter that could not be read |
 | `TN-tn-twra-permits.txt` | TWRA's own permits page, which closes Class I to private keepers and names the missing rule chapter |
+| `TX-tx-statutes.txt` | Texas's four separate animal rules and which one reaches what, with the famous one flagged as the wrong one |
+| `TX-tx-nongame.txt` | Texas's two nongame lists in full, the 25 cap and the 6 cap, and the taxonomy traps in both |
 
 ## Reading the awkward ones
 
@@ -74,6 +76,15 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   what selective breeding has done rather than by species, which is what makes the pet rabbit
   clean there when the same species is a hard call in Minnesota and Illinois. Read (a)(7) and
   (a)(21) before the lists.
+- **The Texas files** describe a state with four animal rules where only one is ever quoted. Before
+  recording anything for Texas, ask whether the animal is INDIGENOUS. If it is, the answer is in
+  `TX-tx-nongame.txt` and it is a number, 25 or 6, that follows captive-bred animals too. If it is
+  not, Health & Safety Code 822.101(4) is a closed list of nineteen mammals that reaches no reptile,
+  bird, rodent or invertebrate, and the answer is almost always yes. Reading a native Texas reptile
+  or rodent against the dangerous wild animal statute is how the garter snake, the flying squirrel
+  and the prairie dog sat wrong on this map. Check the scientific name against the two figures rather
+  than the common name: they use pre-2002 genus names, and two pet species (the corn snake and the
+  California kingsnake) were split off from listed Texas natives after the lists were written.
 - **`TN-tn-exotic-animals-act.txt`** turns on two clauses that are easy to read past. The
   catch-all sits in Class III, which "requires no permits", so an animal nobody thought about
   needs nothing. And Class II is "native species, EXCEPT those listed in other classes", so a
@@ -131,6 +142,9 @@ not on the sites, so a person with a browser can open all of them.
 | `revisor.mn.gov` | Works with plain curl, occasional TLS handshake failure on the first try | Retry once. Statutes at `/statutes/cite/<section>`, rules at `/rules/<part>/`; a bare chapter number gives only the table of parts |
 | `secure.sos.state.or.us` | Rules serve fine from `view.action?ruleNumber=<rule>`; `displayDivisionRules.action` returns a near-empty page | Probe rule numbers one at a time; a missing rule answers "not found" |
 | `publications.tnsosfiles.com`, `sos.tn.gov`, `tnsos.org` | 403 "Request blocked" from CloudFront on every path, with or without a browser User-Agent and Referer. This is the whole of Tennessee's rules and proclamations publishing | No workaround found. `www.tn.gov` IS reachable, so read the TWRA pages instead, and cross-check the statutes against two reproductions |
+| `statutes.capitol.texas.gov` | Angular SPA. Every `/Docs/` path returns the same 250KB shell, so a fetch looks successful and contains no law; headless Chromium cannot reach it at all | Fetch `https://tcss.legis.texas.gov/resources/<CODE>/htm/<CODE>.<CHAPTER>.htm` instead and cite the capitol URL. The base is in the SPA chunk `chunk-7GRZWKYH.js` as `TCASCore` |
+| `texreg.sos.state.tx.us` | Retired. Serves "Site Has Moved" to every path, the old `TacPage` viewer included | The TAC is on an Appian portal now: POST `{"#t":"UiConfig"}` to `texas-sos.appianportalsgov.com/rules-and-meetings/_/ui?interface=VIEW_TAC&title=..&part=..&chapter=..` with a cookie jar and `X-Client-Version: APNX-1-4105-002`. Full recipe in `TX-tx-nongame.txt` |
+| `web.archive.org` | Blocked by egress policy, so the Wayback fallback is not available here. `archive.org/wayback/available` does answer | Find another live reproduction instead |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
 
 When the official host is unreachable, cite the official URL anyway, verify the wording

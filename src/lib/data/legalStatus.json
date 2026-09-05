@@ -98,35 +98,35 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 15,
+        "checked": 16,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 15,
+        "checked": 16,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 16,
+        "checked": 17,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 16,
+        "checked": 17,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 16,
+        "checked": 17,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 16,
+        "checked": 17,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 16,
+        "checked": 17,
         "of": 51
       },
       "green-anole": {
-        "checked": 16,
+        "checked": 17,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,75 +134,75 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "axolotl": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "box-turtle": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 41,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 41,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 41,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 41,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 42,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 42,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 42,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 42,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 43,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 44,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "green-iguana": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "burmese-python": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "red-footed-tortoise": {
@@ -210,7 +210,7 @@
         "of": 51
       },
       "degu": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "ackie-monitor": {
@@ -218,23 +218,23 @@
         "of": 51
       },
       "hamster": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "gerbil": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "bengal-cat": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "milk-snake": {
@@ -242,11 +242,11 @@
         "of": 51
       },
       "ball-python": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "veiled-chameleon": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "boa-constrictor": {
@@ -258,7 +258,7 @@
         "of": 51
       },
       "chinchilla": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "fennec-fox": {
@@ -645,9 +645,9 @@
       "note": "Two enumerated lists. Dangerous wild animals need an Ohio Department of Agriculture wildlife shelter permit; anything on neither list needs no state permit. Restricted snakes are constrictors of 12 feet or more plus venomous families."
     },
     "tx-822-101": {
-      "title": "Tex. Health & Safety Code § 822.101(4) and § 822.103, Dangerous Wild Animals",
-      "url": "https://www.animallaw.info/statute/tx-dangerous-subchapter-e-dangerous-wild-animals",
-      "note": "A closed species list. § 822.103: 'a person may not own, harbor, or have custody or control of a dangerous wild animal for any purpose unless the person holds a certificate of registration for that animal issued by an animal registration agency', plus liability insurance of at least $100,000 per occurrence and caging standards."
+      "title": "Tex. Health & Safety Code §§ 822.101-822.116, Dangerous Wild Animals",
+      "url": "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.822.htm",
+      "note": "The statute everyone cites for Texas, and the one that answers the fewest questions on this map. § 822.101(4) is a closed list of twenty clauses, nineteen named mammals plus \"any hybrid of an animal listed in this subdivision\". It contains no reptile, no bird, no rodent and no invertebrate. Where it does bite it bites hard: § 822.103(a) requires a certificate of registration issued by the local animal control office, or the county sheriff where there is none, rather than by a state agency; § 822.107 requires liability insurance of at least $100,000 per occurrence; and § 822.116(b) expressly preserves the power of any municipality or county to prohibit the animal outright."
     },
     "mi-large-carnivore": {
       "title": "Mich. Comp. Laws ch. 287, Large Carnivore Act and Wolf-dog Cross Act",
@@ -929,11 +929,6 @@
       "url": "https://www.scstatehouse.gov/coderegs/Chapter%20123.pdf",
       "note": "Official codified text implementing 2021 Act 177; §123-151.3 carves out captive-bred corn snakes under 20 inches and eastern milksnakes under 10 inches from the general native-reptile sale/possession ban."
     },
-    "tx-tpwd-nonindigenous": {
-      "title": "TPWD: Nonindigenous Snake Permits (Controlled Exotic Snake Permit)",
-      "url": "https://tpwd.texas.gov/faq/business/permits/nonindigenous_snakes/index.phtml",
-      "note": "Official TPWD FAQ page; the controlled list covers only non-native venomous snakes plus five named large constrictor species, so corn snake, milk snake, and rosy boa fall outside the permit requirement."
-    },
     "pa-58-79-3": {
       "title": "58 Pa. Code § 79.3 — Season and Daily Possession Limits (Chapter 79, Reptiles and Amphibians)",
       "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/058/chapter79/s79.3.html&d=reduce",
@@ -1035,9 +1030,9 @@
       "note": "Wisconsin Legislature's captive wildlife statute requiring lawful acquisition, animals sourced from out of state also need a DATCP import permit."
     },
     "tx-71-001": {
-      "title": "Texas Parks & Wildlife Code § 71.001",
+      "title": "Tex. Parks & Wild. Code § 71.001 and 31 Tex. Admin. Code §§ 65.371-65.375, fur-bearing animals",
       "url": "https://statutes.capitol.texas.gov/Docs/PW/htm/PW.71.htm",
-      "note": "Defines fur-bearing animal with a closed list of species that does not include squirrels or flying squirrels."
+      "note": "The definition at § 71.001(1) reads \"wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria\", and the bare word \"fox\" is what makes people read Texas as a fox ban state. It is not one. Chapter 71 and the proclamation at 31 TAC §§ 65.371-65.375 govern taking, trapping, pelts and fur dealing; § 65.375(a)(2) says there are no bag or possession limits for fur-bearing animals; and nothing in either bars keeping one. The series is also headed by \"wild\", which a captive-bred animal is not."
     },
     "fl-class3": {
       "title": "Florida Administrative Code Chapter 68A-6, Captive Wildlife",
@@ -1328,6 +1323,21 @@
       "title": "Tennessee Wildlife Resources Agency, Wildlife Permits Available",
       "url": "https://www.tn.gov/twra/law-enforcement/permits.html",
       "note": "The agency page that administers the classification statute, useful for two things. It restates the § 70-4-404(c)(1) position in one line, \"Personal possession of any Class 1 species is not allowed\", and adds that Class I animals may be held only by permitted exhibitors and commercial propagators, which is how the agency reads a fee schedule that still lists a $150 personal possession permit for grandfathered animals. And it names the rule chapter carrying the commission's own additions to the classes, 1660-01-18, Rules and Regulations of Live Wildlife, which sits on publications.tnsosfiles.com and cannot be read from this container."
+    },
+    "tx-nongame": {
+      "title": "31 Tex. Admin. Code §§ 65.325-65.331, Commercial Nongame Permits, with Tex. Parks & Wild. Code § 67.001",
+      "url": "https://texas-sos.appianportalsgov.com/rules-and-meetings?interface=VIEW_TAC&title=31&part=2&chapter=65&subchapter=O",
+      "note": "The rule that decides a Texas pet question whenever the animal is native, and the one the dangerous wild animal statute distracts from. § 65.327(a) starts from a prohibition, \"no person may collect, acquire, possess, import, export, cause the import or export of, or engage in a commercial activity involving nongame wildlife\", and § 65.327(b)(3) then gives an unlicensed keeper two numbers: 25 of a species on the § 65.331(d) list, six of anything else. Three definitions carry the weight. § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so buying from a breeder does not lift the cap. The same sentence limits the subchapter to VERTEBRATE wildlife, which is narrower than the statute it implements, since Parks & Wild. Code § 67.001 says \"vertebrate and invertebrate\", and that gap is what leaves every terrestrial invertebrate outside the scheme entirely. And § 65.326(2) defines commercial activity as \"the sale, offer for sale, exchange, or barter\", so buying is not itself commercial activity, and § 65.327(b)(1)(B) lets a permitted dealer \"sell lawfully obtained nongame wildlife to anyone\". The two species lists are attached figures rather than statutory text: the (d) list names about 100 species, and the (e) list is longer and expressly \"not limited to\" what it names, so a native species on neither list falls to the six cap."
+    },
+    "tx-64-002": {
+      "title": "Tex. Parks & Wild. Code § 64.002, Protection of Nongame Birds",
+      "url": "https://statutes.capitol.texas.gov/Docs/PW/htm/PW.64.htm",
+      "note": "A very wide prohibition and a one-sentence carve-out for the whole pet trade. Subsection (a) makes it unlawful to \"catch, kill, injure, pursue, or possess, dead or alive, or purchase, sell, expose for sale, transport, ship, or receive or deliver for transportation, a bird that is not a game bird\", which read alone would reach every pet bird in the state. Subsection (d) answers it: \"Canaries, parrots, and other exotic nongame birds may be sold, purchased, and kept as domestic pets.\" A summary that quotes only (a) makes Texas look like a bird ban state."
+    },
+    "tx-exotic-snakes": {
+      "title": "Tex. Parks & Wild. Code § 43.851 and 31 Tex. Admin. Code §§ 55.651-55.653, Controlled Exotic Snakes",
+      "url": "https://statutes.capitol.texas.gov/Docs/PW/htm/PW.43.htm",
+      "note": "Texas regulates six constrictors by name and every nonvenomous snake beyond them not at all. The list is in the statute at § 43.851(a)(2) and repeated in the rule at 31 TAC § 55.651(2): African rock python, Asiatic rock python, Burmese python, green anaconda, reticulated python, southern African python, plus any hybrid, plus all venomous snakes not indigenous to Texas. H.B. 2326 in 2021 added Python bivittatus by name, after the Burmese was split off from Python molurus and the older wording left it arguable. A recreational permit is available to private keepers under 31 TAC § 55.652(a)(1), which is what separates this from a ban, and § 55.653(c) makes the sales receipt a temporary permit for 21 days from purchase."
     }
   },
   "animals": {
@@ -1473,9 +1483,10 @@
         "TX": {
           "status": "legal",
           "sourceId": "tx-822-101",
-          "note": "Not on the list. Texas requires no state permit for an animal that is not listed, not endangered and not native wildlife.",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "cite": "§ 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Texas has no exotic pet permit scheme, so an animal is legal here unless a specific list names it. The dangerous wild animal list is closed and contains no insectivore. The nongame possession caps in 31 TAC Chapter 65 Subchapter O reach only wildlife indigenous to Texas, which Atelerix albiventris is not, and Texas has no importation permit for exotic mammals.",
+          "verifiedOn": "2026-09-05"
         },
         "MI": {
           "status": "legal",
@@ -1848,9 +1859,10 @@
         "TX": {
           "status": "legal",
           "sourceId": "tx-822-101",
-          "note": "Legal statewide, though some cities restrict ferrets by ordinance.",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "cite": "§ 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Not on the closed list, and not indigenous to Texas, so neither of the two rules that restrict mammals here applies. Texas is one of the states where the ferret question is simply never asked, which is worth contrasting with California and Hawaii, where it is asked and answered no.",
+          "verifiedOn": "2026-09-05"
         },
         "MI": {
           "status": "conditional",
@@ -2261,11 +2273,10 @@
         "TX": {
           "status": "legal",
           "sourceId": "tx-822-101",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "cite": "Health & Safety Code § 822.101",
-          "quote": "a person may not own, harbor, or have custody or control of a dangerous wild animal for any purpose unless the person holds a certificate of registration for that animal",
-          "note": "Texas registers by closed species list: lions, tigers, ocelots, cougars, leopards, cheetahs, jaguars, bobcats, lynxes, servals, caracals, hyenas, bears, coyotes, jackals, baboons, chimpanzees, orangutans, gorillas and any hybrid. No marsupial appears, so no certificate is required."
+          "cite": "§ 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Nineteen named mammals and no marsupial among them. Petaurus breviceps is not indigenous to Texas, so the nongame caps do not reach it, and no Texas rule regulates exotic marsupials as a group.",
+          "verifiedOn": "2026-09-05"
         },
         "MI": {
           "status": "legal",
@@ -2912,6 +2923,14 @@
           "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the hamster is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "§ 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "A domesticated rodent, and Texas restricts rodents in exactly one place: the § 65.331(d) nongame list, which names eight native squirrels, prairie dogs, kangaroo rats and jackrabbits. Mesocricetus auratus is not indigenous to Texas and is nowhere on it. The dangerous wild animal list has no rodent at all.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3285,6 +3304,14 @@
           "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the gerbil is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "§ 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Meriones unguiculatus is Mongolian, so the nongame rules, which reach only species indigenous to Texas, do not apply, and no rodent appears on the dangerous wild animal list. Nothing at state level touches a pet gerbil.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "gerbil"
@@ -3673,6 +3700,14 @@
           "cite": "§ 70-4-403(3)(F), (5)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Avian species not otherwise listed, excluding North American game birds, ostriches and cassowary",
           "note": "The statute does not reach the monk parakeet. It is named nowhere in the five classes, and the avian catch-all at (3)(F) puts it in the no-permit class. What keeps this unresolved is Class V, which is not a list at all but whatever the commission designates by rule as injurious to the environment, and an agricultural pest bird is exactly what a Class V designation is for. Those designations live in Tenn. Comp. R. & Regs. 1660-01-18, Rules and Regulations of Live Wildlife, which could not be read here: publications.tnsosfiles.com, sos.tn.gov and tnsos.org all sit behind a filter that returns 403 to this container, and Tennessee's official code is behind LexisNexis. Tennessee appears on most circulated lists of states banning the monk parakeet, and if that is right the rule chapter is where it comes from. Recorded unclear rather than legal because the statute alone cannot settle a question the commission was given the power to answer elsewhere.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-64-002",
+          "cite": "§ 64.002(a), (d)",
+          "quote": "(a) Except as provided by this code, no person may: (1) catch, kill, injure, pursue, or possess, dead or alive, or purchase, sell, expose for sale, transport, ship, or receive or deliver for transportation, a bird that is not a game bird ... (d) Canaries, parrots, and other exotic nongame birds may be sold, purchased, and kept as domestic pets.",
+          "note": "Subsection (a) would reach a monk parakeet on its face, since it covers possessing, purchasing or selling \"a bird that is not a game bird\" and says nothing about where the bird came from. Subsection (d) is the answer, and it is written for exactly this: parrots and other exotic nongame birds may be kept as pets. Texas is worth flagging because it has large established monk parakeet colonies and the state has chosen to deal with them through the depredation provisions in § 64.002(c) rather than through a possession ban. No Texas rule bars keeping one.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4068,6 +4103,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Bobcat/domestic cat hybrids ... Hybrids resulting from a cross between a Class II species and a domestic animal or Class III species",
           "note": "Two things settle this. The Class I cat entry is \"Lions, tigers, leopards, jaguars, cheetahs, cougars--All species\", and the Asian leopard cat behind the Bengal, Prionailurus bengalensis, is none of them, so it is Class III itself under the catch-all and its hybrid with a domestic cat is too. And Tennessee shows its hand two subdivisions later by putting bobcat/domestic cat hybrids in the no-permit class expressly, even though the bobcat is a native Class II animal. A state that deliberately drops a hybrid of its own native wildcat into Class III is not reaching an Asian leopard cat hybrid by implication.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "§ 822.101(4)(T)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "The ninth different answer to the Bengal question on this map, and it turns entirely on clause (T), which reaches a hybrid only of an animal \"listed in this subdivision\". The small cats on that list are specific: ocelot, bobcat, lynx, serval, caracal. Prionailurus bengalensis, the Asian leopard cat behind the Bengal, is none of them and appears nowhere in Texas law, so its hybrid is not caught. No generation cutoff, no weight test, no registry requirement. The sentence does catch a Savannah, because the serval is at clause (J), which puts the two hybrid breeds on opposite sides of one line.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -4452,6 +4495,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The veiled chameleon is nonvenomous and is neither a caiman nor a gavial.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Chamaeleo calyptratus is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4826,6 +4877,14 @@
           "cite": "§ 70-4-403(3)(A)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The Russian tortoise is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Testudo horsfieldii is Central Asian and appears in no Texas list. The tortoise to keep it separate from is the Texas tortoise, Gopherus berlandieri, which is listed as threatened under 31 TAC § 65.175 and cannot be taken, possessed or sold at all. The nongame subchapter and the threatened species subchapter both reach only species indigenous to Texas, so neither touches this one.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5206,6 +5265,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The ball python is nonvenomous and is neither a caiman nor a gavial.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-exotic-snakes",
+          "cite": "31 TAC § 55.651(2); Parks & Wild. Code § 43.851(a)",
+          "quote": "Controlled exotic snake--Any live snake that is: (A) a venomous snake not indigenous to Texas; (B) any of the following: (i) African rock python (Python sebae); (ii) Asiatic rock python, (Python molurus); (iii) Burmese python (Python bivittatus); (iv) green anaconda, (Eunectes murinus); (v) reticulated python, (Python reticulatus); (vi) southern African python (Python natalensis); or (C) a hybrid of any species listed in this paragraph.",
+          "note": "The controlled exotic snake list is six constrictors by name plus nonnative venomous species, and Python regius is not among them. Texas named three pythons and left the rest of the genus alone, which is the clearest case on this map of a state legislating by species rather than by genus. Nothing else reaches a ball python: it is not indigenous to Texas, so the nongame caps do not apply.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5500,11 +5567,11 @@
           "verifiedOn": "2026-08-05"
         },
         "TX": {
-          "sourceId": "tx-tpwd-nonindigenous",
-          "cite": "31 TAC 55.651",
           "status": "legal",
-          "quote": "African rock python (Python sebae), Asiatic rock python (Python molurus), green anaconda (Eunectes murinus), reticulated python (python reticulates), and southern African python (Python natalensis).",
-          "note": "Texas controls exotic snakes by a closed list of five large constrictors plus non-native venomous species. Boa constrictor is on neither part of it, so no controlled exotic snake permit applies.",
+          "sourceId": "tx-exotic-snakes",
+          "cite": "31 TAC § 55.651(2); Parks & Wild. Code § 43.851(a)",
+          "quote": "Controlled exotic snake--Any live snake that is: (A) a venomous snake not indigenous to Texas; (B) any of the following: (i) African rock python (Python sebae); (ii) Asiatic rock python, (Python molurus); (iii) Burmese python (Python bivittatus); (iv) green anaconda, (Eunectes murinus); (v) reticulated python, (Python reticulatus); (vi) southern African python (Python natalensis); or (C) a hybrid of any species listed in this paragraph.",
+          "note": "Boa constrictor is not on the six-name list, which covers the pythons, the green anaconda and the southern African python. The green anaconda is there and the boa is not, so the two large constrictors most often grouped together in secondary summaries are on opposite sides of the Texas line. Not indigenous, so the nongame caps do not apply either.",
           "verifiedOn": "2026-09-05"
         },
         "WI": {
@@ -5941,6 +6008,14 @@
           "quote": "\"Wildlife\" means wild vertebrates, mollusks, crustaceans, and fish",
           "note": "A tarantula is an arachnid, and Tennessee's definition of wildlife runs to wild vertebrates, mollusks, crustaceans and fish. Section 70-4-403 classifies \"live wildlife\", so the five classes never reach a terrestrial arthropod at all, and neither does the possession prohibition in § 70-4-401(a), which is written about wildlife. Arizona, Nevada and Colorado draw the line in almost the same words. It matters less here than in a closed-list state, since Tennessee's catch-all would have put the animal in the no-permit class in any event.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a); Parks & Wild. Code § 67.001",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Texas regulates nongame wildlife through 31 TAC Chapter 65 Subchapter O, and the rule defines its own subject as \"species of vertebrate wildlife\". That is narrower than the statute it was written under: Parks & Wild. Code § 67.001 defines nongame as \"those species of vertebrate and invertebrate wildlife indigenous to Texas\". The department had the power to reach invertebrates and did not use it, so the tarantula sits outside the scheme entirely. The dangerous wild animal list is mammals only, and 31 TAC Chapter 57 Subchapter A, the harmful exotic species rule, covers fish, shellfish and aquatic plants and no terrestrial arthropod. This matters more here than in most states, because Texas has native Aphonopelma tarantulas: a native invertebrate is still outside the rule, since the vertebrate limit does the excluding rather than the origin test.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -6286,6 +6361,14 @@
           "cite": "§ 70-1-101(40); § 70-4-403",
           "quote": "\"Wildlife\" means wild vertebrates, mollusks, crustaceans, and fish",
           "note": "The emperor scorpion is an arachnid, and Tennessee's definition of wildlife runs to wild vertebrates, mollusks, crustaceans and fish. Section 70-4-403 classifies \"live wildlife\", so the five classes never reach a terrestrial arthropod at all, and neither does the possession prohibition in § 70-4-401(a), which is written about wildlife. Arizona, Nevada and Colorado draw the line in almost the same words. It matters less here than in a closed-list state, since Tennessee's catch-all would have put the animal in the no-permit class in any event.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a); Parks & Wild. Code § 67.001",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Texas regulates nongame wildlife through 31 TAC Chapter 65 Subchapter O, and the rule defines its own subject as \"species of vertebrate wildlife\". That is narrower than the statute it was written under: Parks & Wild. Code § 67.001 defines nongame as \"those species of vertebrate and invertebrate wildlife indigenous to Texas\". The department had the power to reach invertebrates and did not use it, so Pandinus imperator sits outside the scheme entirely. The dangerous wild animal list is mammals only, and 31 TAC Chapter 57 Subchapter A, the harmful exotic species rule, covers fish, shellfish and aquatic plants and no terrestrial arthropod.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6665,6 +6748,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The Argentine black and white tegu is nonvenomous and is neither a caiman nor a gavial. Tennessee has written no tegu-specific rule, and the statute names no lizard at all outside Class I.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Salvator merianae is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. This is the notable absence in Texas. The Argentine black and white tegu is established in Florida and Georgia and is prohibited or permitted in a growing number of states, and Texas, which has suitable climate, regulates it not at all.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7024,6 +7115,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The savannah monitor is nonvenomous and is neither a caiman nor a gavial.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Varanus exanthematicus is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -7129,13 +7228,12 @@
           "note": "No rodent appears on either Ohio list."
         },
         "TX": {
-          "status": "legal",
-          "sourceId": "tx-822-101",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "cite": "Health & Safety Code § 822.101",
-          "quote": "a person may not own, harbor, or have custody or control of a dangerous wild animal for any purpose unless the person holds a certificate of registration for that animal",
-          "note": "No rodent appears on the dangerous wild animal list. Texas counties and municipalities can still be stricter, and several are."
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.327(b)(3)(B); § 65.331(d)",
+          "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
+          "note": "The black-tailed prairie dog is on the § 65.331(d) list by name, which makes it nongame wildlife with a hard cap of 25 and no permit below that, provided the keeper does not sell, offer for sale, exchange or barter one. This entry previously read as unrestricted on the strength of the dangerous wild animal statute, which is accurate and is the wrong rule: that list contains no rodent, and Cynomys ludovicianus is native to the Texas panhandle and plains, which is what brings the nongame rule down on it. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. Taking one from the wild is a further question governed by the hunting licence requirement in § 65.327(c)(1).",
+          "verifiedOn": "2026-09-05"
         },
         "IL": {
           "status": "legal",
@@ -7546,11 +7644,10 @@
         "TX": {
           "status": "legal",
           "sourceId": "tx-822-101",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "cite": "Health & Safety Code § 822.101",
-          "quote": "a person may not own, harbor, or have custody or control of a dangerous wild animal for any purpose unless the person holds a certificate of registration for that animal",
-          "note": "No rodent appears on the dangerous wild animal list, which is drawn by species rather than by size."
+          "cite": "§ 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "The closed list reaches no rodent at all, which is what makes Texas one of the clean yes answers on the capybara row. Hydrochoerus hydrochaeris is South American, so the nongame caps do not apply either. Compare Colorado and Oregon, where the capybara is prohibited by name on a species list, and Connecticut, where it is caught as a rodent that is not domesticated.",
+          "verifiedOn": "2026-09-05"
         },
         "IL": {
           "status": "legal",
@@ -7945,10 +8042,11 @@
         },
         "TX": {
           "status": "legal",
-          "sourceId": "tx-822-101",
-          "note": "The canids listed are the coyote and jackal only.",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "sourceId": "tx-71-001",
+          "cite": "Parks & Wild. Code § 71.001(1); 31 TAC § 65.375(a)(2); Health & Safety Code § 822.101(4)",
+          "quote": "\"Fur-bearing animal\" means wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria.",
+          "note": "The word \"fox\" appears once in Texas wildlife law, in the fur-bearing animal definition, and it belongs to a trapping and pelt chapter rather than a possession one. The proclamation under it says at 31 TAC § 65.375(a)(2) that there are no bag or possession limits for fur-bearing animals, and nothing in Chapter 71 bars keeping one. The series is headed by \"wild\", which a captive-bred fennec is not, and Vulpes zerda is not a Texas fur-bearer population in any case. The dangerous wild animal list names the coyote and the jackal and no other canid. The rabies rules are the other place to look and they do not help either: Health & Safety Code Chapter 826 imposes vaccination duties on dogs and cats only, and 25 TAC Chapter 169 Subchapter A carries no high-risk-species possession ban of the kind several states use to reach foxes.",
+          "verifiedOn": "2026-09-05"
         },
         "IL": {
           "status": "legal",
@@ -8365,11 +8463,11 @@
         "TX": {
           "status": "permit",
           "sourceId": "tx-822-101",
-          "quote": "a lion; a tiger; an ocelot; a cougar; a leopard; a cheetah; a jaguar; a bobcat; a lynx; a serval; a caracal; a hyena; a bear; a coyote; a jackal; a baboon; a chimpanzee; an orangutan; a gorilla; or any hybrid",
-          "note": "Certificate of registration plus $100,000 liability insurance.",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "permitFor": "personal"
+          "cite": "§ 822.101(4)(J); §§ 822.103, 822.107",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Named at clause (J), between the lynx and the caracal. Two things about the Texas certificate are unusual. It is issued by the local animal control office, or by the county sheriff where there is none, rather than by a state agency, so the answer is administered county by county and § 822.116(b) lets any of those counties prohibit the animal outright instead. And § 822.107 requires liability insurance of at least $100,000 for each occurrence, the highest insurance figure on this map. § 822.113 makes possession without the certificate a Class C misdemeanor per animal per day, and § 822.114 adds a civil penalty of up to $2,000 on the same per-animal, per-day basis.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "MI": {
           "status": "legal",
@@ -9085,6 +9183,14 @@
           "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
           "note": "Connecticut puts the whole order Rodentia in Category Two, which bars private possession, and then excepts nine species. The chinchilla, Chinchilla lanigera is one of them, so it is named in the regulation rather than merely absent from it. Named to the species, and to the species rather than the genus: Chinchilla chinchilla, the short-tailed chinchilla, is not excepted.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "§ 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Chinchilla lanigera is Andean and appears in no Texas list. The fur-bearing animal definition at Parks & Wild. Code § 71.001(1) is worth checking here because chinchillas are farmed for fur, and it does not name them: it is a closed list of eleven native fur-bearers.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9463,6 +9569,14 @@
           "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the guinea pig is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "§ 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Cavia porcellus is a domesticated South American rodent. It is not indigenous to Texas, so the nongame possession caps do not reach it, and no rodent is on the dangerous wild animal list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9834,6 +9948,14 @@
           "cite": "§ 70-4-403(3)(A)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The green iguana is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Iguana iguana is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. Florida is where this animal is restricted, as an established invasive. Texas has no prohibited nonnative reptile list to put it on.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -10208,6 +10330,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The snapping turtle is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. Commercial harvest from the wild is regulated separately; the classification decides possession.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.327(b)(3)(A); § 65.331(e)",
+          "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
+          "note": "The common snapping turtle, Chelydra serpentina, is on the § 65.331(e) list: six without a permit, no commercial activity. Do not read across from the alligator snapping turtle, Macrochelys temminckii, which Texas lists as threatened under 31 TAC § 65.175, where § 65.171(b)(2) bars taking, possessing, transporting, importing, exporting or selling it altogether. Two snapping turtles, two entirely different answers, and the name is what runs them together. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10558,6 +10688,14 @@
           "cite": "§ 70-4-403(3)(A)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The tokay gecko is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Gekko gecko is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10922,6 +11060,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The tiger salamander is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. Class I amphibians are the poisonous species only, and Ambystoma tigrinum is not one. Compare Oregon and Maryland, which each ban this animal outright to protect their own populations, and Tennessee, which reaches it through a rule about venom and so does not reach it at all.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.327(b)(3)(B); § 65.331(d)",
+          "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
+          "note": "Ambystoma tigrinum is on the § 65.331(d) list and is native across most of Texas, so the answer is 25 without a permit and no commercial activity in them. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. Note the § 65.331(e) list names eight other Ambystoma and Eurycea salamanders at the lower cap of six, so the tiger salamander is on the more permissive of the two lists rather than outside the scheme.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11285,6 +11431,14 @@
           "cite": "§ 70-4-403(3)(A)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The Nile monitor is nonvenomous and is neither a caiman nor a gavial. Several states name this species specifically. Tennessee names no monitor, because its reptile line is drawn on venom.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Varanus niloticus is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. Another one Texas leaves open that neighbouring states do not: the Nile monitor is established in Florida and is on several prohibited lists elsewhere, and no Texas rule names it.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11668,6 +11822,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The Burmese python is nonvenomous and is neither a caiman nor a gavial. Tennessee itself sets no length trigger and lists no python. Federal law is the constraint that bites, since the species has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport into Tennessee.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-exotic-snakes",
+          "cite": "Parks & Wild. Code § 43.851(a)(2)(C); 31 TAC §§ 55.651(2), 55.652(a)(1)",
+          "quote": "Controlled exotic snake--Any live snake that is: (A) a venomous snake not indigenous to Texas; (B) any of the following: (i) African rock python (Python sebae); (ii) Asiatic rock python, (Python molurus); (iii) Burmese python (Python bivittatus); (iv) green anaconda, (Eunectes murinus); (v) reticulated python, (Python reticulatus); (vi) southern African python (Python natalensis); or (C) a hybrid of any species listed in this paragraph.",
+          "note": "Python bivittatus is named in the statute and again in the rule, so a Texas keeper needs a recreational controlled exotic snake permit, renewed annually and running 1 September to 31 August. It is a permit rather than a ban, which separates Texas from the states that prohibit the species outright. Two practical details: 31 TAC § 55.653(c) makes the sales receipt a temporary permit for 21 days from the date of sale, so a buyer is not immediately in violation, and Parks & Wild. Code § 43.856(b) makes releasing one a Class A misdemeanor rather than the Class C that covers permit offences. The species was added by name in 2021 by H.B. 2326; before that it had to be read into \"Asiatic rock python, Python molurus\", which is the parent species it was split from.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12047,6 +12209,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
           "note": "Tennessee's catch-all sits in the no-permit class rather than the permit class, which is the single fact that decides most questions here: an animal that appears nowhere in Classes I, II, IV or V is Class III and needs no wildlife permit. The degu is not on the Class I list, is not native to Tennessee, and is not among the three Class IV species. The rodent subdivision names seven kinds and the catch-all covers the rest.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "§ 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Octodon degus is Chilean, so the nongame rules do not reach it, and the dangerous wild animal list contains no rodent. Texas asks nothing about it.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -12387,6 +12557,14 @@
           "cite": "§ 70-4-403(3)(A)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The axolotl is nonvenomous and is neither a caiman nor a gavial. Only poisonous amphibians are Class I, and the axolotl is not one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Ambystoma mexicanum is endemic to the Xochimilco canals in Mexico City, so it is not indigenous to Texas and the nongame rules do not reach it, even though its close relative the tiger salamander is capped at 25. The other rule worth ruling out is 31 TAC Chapter 57 Subchapter A, the harmful or potentially harmful exotic species list, which is long but covers only fish, shellfish and aquatic plants and names no amphibian at all.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -12735,6 +12913,14 @@
           "cite": "§ 70-4-403(3)(A)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The eastern box turtle is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. Taking one from the wild is a separate question under the hunting and trapping rules; the classification decides possession.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.327(b)(3)(A); § 65.331(e)",
+          "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
+          "note": "Both Terrapene species that occur in Texas are on the § 65.331(e) list, the eastern box turtle and the ornate box turtle, so the cap is six per species and commercial activity is barred outright. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. Texas is a state where the box turtle question is often reported as a flat ban and it is not one; it is a low cap with no sale. The related restriction to know is § 65.331(b), which bars possessing or using a net or trap capable of catching a turtle while on or in public water, dip nets and small minnow traps excepted.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13087,6 +13273,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The red-eared slider is nonvenomous and is neither a caiman nor a gavial. Tennessee does not classify the species as invasive anywhere in the statute, which puts it at the permissive end of a question Oregon and Colorado answer sharply.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.327(b)(3)(A); § 65.331(e)",
+          "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
+          "note": "Trachemys scripta is on the § 65.331(e) list, which is the lower tier: six without a permit and no sale, offer for sale, exchange or barter. The slider is native across most of Texas, which is what brings the rule down on it, and the same list names the Big Bend slider separately. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. The federal four-inch rule under 21 C.F.R. 1240.62 is the other half of the answer for hatchlings and is unaffected by any of this.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13435,6 +13629,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The sulcata tortoise is nonvenomous and is neither a caiman nor a gavial.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Centrochelys sulcata is African. Nothing in the nongame rules reaches it, because they apply only to wildlife indigenous to Texas, and no Texas list names it. The state’s own tortoise, Gopherus berlandieri, is threatened and off limits entirely, which is a useful contrast: Texas restricts the tortoise it has and not the ones it does not.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13782,6 +13984,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The hognose snake is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. Both the eastern and the western hognose are nonvenomous, so which species it is makes no difference here. That is unusual: Illinois, Connecticut and Maryland all split the two, and no two of them split it the same way.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.327(b)(3)(B); § 65.331(d)",
+          "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
+          "note": "Both Texas hognose species are on the § 65.331(d) list by name, the western Heterodon nasicus and the eastern H. platirhinos, so whichever one a keeper has, the answer is 25 without a permit and no commercial activity. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. The western hognose is the ordinary pet-trade animal and is squarely native to Texas, so the captive-bred qualification is the one that matters here.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14127,6 +14337,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Avian species not otherwise listed, excluding North American game birds, ostriches and cassowary",
           "note": "Covered by the avian catch-all. Federal CITES Appendix I paperwork is the live constraint on this species and is not a Tennessee matter.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-64-002",
+          "cite": "§ 64.002(a), (d)",
+          "quote": "(a) Except as provided by this code, no person may: (1) catch, kill, injure, pursue, or possess, dead or alive, or purchase, sell, expose for sale, transport, ship, or receive or deliver for transportation, a bird that is not a game bird ... (d) Canaries, parrots, and other exotic nongame birds may be sold, purchased, and kept as domestic pets.",
+          "note": "Psittacus erithacus is a parrot, which subsection (d) clears by name for sale, purchase and keeping. The state layer is the easy half here. The federal Wild Bird Conservation Act bars commercial import of wild-caught birds and CITES Appendix I has covered this species since 2017, so a lawfully sold African grey in Texas is a captive-bred one with paperwork, and that paperwork is what a buyer should be checking rather than a state list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14466,6 +14684,14 @@
           "quote": "\"Wildlife\" means wild vertebrates, mollusks, crustaceans, and fish",
           "note": "The giant African millipede is a myriapod, and Tennessee's definition of wildlife runs to wild vertebrates, mollusks, crustaceans and fish. Section 70-4-403 classifies \"live wildlife\", so the five classes never reach a terrestrial arthropod at all, and neither does the possession prohibition in § 70-4-401(a), which is written about wildlife. Arizona, Nevada and Colorado draw the line in almost the same words. It matters less here than in a closed-list state, since Tennessee's catch-all would have put the animal in the no-permit class in any event.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a); Parks & Wild. Code § 67.001",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Texas regulates nongame wildlife through 31 TAC Chapter 65 Subchapter O, and the rule defines its own subject as \"species of vertebrate wildlife\". That is narrower than the statute it was written under: Parks & Wild. Code § 67.001 defines nongame as \"those species of vertebrate and invertebrate wildlife indigenous to Texas\". The department had the power to reach invertebrates and did not use it, so Archispirostreptus gigas sits outside the scheme entirely. The dangerous wild animal list is mammals only, and 31 TAC Chapter 57 Subchapter A, the harmful exotic species rule, covers fish, shellfish and aquatic plants and no terrestrial arthropod. The federal layer is the one to check for this animal: giant African millipedes are restricted at the border by USDA APHIS as a plant pest, which is a separate question from Texas law.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14732,10 +14958,11 @@
         },
         "TX": {
           "status": "legal",
-          "sourceId": "tx-tpwd-nonindigenous",
-          "cite": "TPWD Nonindigenous/Controlled Exotic Snake Permit rules",
-          "note": "Corn snake is not a controlled exotic snake and is not a threatened species; TPWD confirms it can be kept for personal enjoyment without a permit. Corn snake is Texas native, and wild collection of native nongame wildlife generally requires a Texas hunting license; this entry covers possessing a lawfully acquired animal, not wild take.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a); § 65.331(d)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "This one needs the species checked rather than the common name. The § 65.331(d) nongame list names two Texas ratsnakes that are easy to confuse with this animal, \"Great Plains rat snake (Elaphe emoryi)\" and \"Slowinski’s cornsnake (Elaphe slowinskii)\", both using the older Elaphe genus. Pantherophis guttatus itself, the pet-trade corn snake, is an animal of the southeastern United States whose range stops east of Texas, so it is not indigenous and the nongame rules do not reach it at all. The distinction is real rather than semantic: P. slowinskii was split out of P. guttatus in 2002, and it is the split that leaves the pet species outside the Texas list.",
+          "verifiedOn": "2026-09-05"
         },
         "UT": {
           "status": "legal",
@@ -15064,11 +15291,12 @@
           "verifiedOn": "2026-09-05"
         },
         "TX": {
-          "status": "legal",
-          "sourceId": "tx-tpwd-nonindigenous",
-          "cite": "TPWD Nonindigenous/Controlled Exotic Snake Permit rules",
-          "note": "Milk snake is not a controlled exotic snake or threatened species under TPWD rules. Several milk snake subspecies are Texas native; wild collection of native nongame wildlife generally requires a Texas hunting license, but a lawfully acquired pet-trade animal needs no TPWD permit.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.327(b)(3)(B); § 65.331(d)",
+          "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
+          "note": "Lampropeltis triangulum is named on the § 65.331(d) list, and milksnakes are native across east and central Texas, so this is nongame wildlife: 25 without a permit, and no selling, offering for sale, exchanging or bartering. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. That is the difference between this animal and the corn snake in Texas, which is not native and is not capped at all.",
+          "verifiedOn": "2026-09-05"
         },
         "UT": {
           "status": "conditional",
@@ -15456,10 +15684,11 @@
         },
         "TX": {
           "status": "legal",
-          "sourceId": "tx-tpwd-nonindigenous",
-          "cite": "TPWD Nonindigenous/Controlled Exotic Snake Permit rules",
-          "note": "Rosy boa is not on TPWD's controlled exotic snake list (aimed at large pythons and the green anaconda) and is not Texas native.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "tx-exotic-snakes",
+          "cite": "31 TAC § 55.651(2); Parks & Wild. Code § 43.851(a)",
+          "quote": "Controlled exotic snake--Any live snake that is: (A) a venomous snake not indigenous to Texas; (B) any of the following: (i) African rock python (Python sebae); (ii) Asiatic rock python, (Python molurus); (iii) Burmese python (Python bivittatus); (iv) green anaconda, (Eunectes murinus); (v) reticulated python, (Python reticulatus); (vi) southern African python (Python natalensis); or (C) a hybrid of any species listed in this paragraph.",
+          "note": "Lichanura trivirgata is a small North American boa from the deserts of California, Arizona and Baja, and it is neither on the controlled exotic snake list nor indigenous to Texas, so neither rule reaches it. Worth separating from the boa constrictor question: the six-name list is species-specific and would not have caught either one.",
+          "verifiedOn": "2026-09-05"
         },
         "UT": {
           "status": "legal",
@@ -15571,12 +15800,12 @@
           "verifiedOn": "2026-09-05"
         },
         "TX": {
-          "status": "legal",
-          "sourceId": "tx-71-001",
-          "cite": "Parks & Wildlife Code § 71.001",
-          "quote": "\"Fur-bearing animal\" means wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria.",
-          "note": "The closed statutory definition of fur-bearing animal (the category Texas otherwise regulates possession of) does not include squirrels or flying squirrels, and flying squirrels are not on the Ch. 822 dangerous-wild-animal list either.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.327(b)(3)(B); § 65.331(d)",
+          "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
+          "note": "The eastern flying squirrel is named on the § 65.331(d) list, and the word \"squirrels\" is not what puts it there; the list names Glaucomys volans specifically. So Texas allows 25 without a permit and bars selling, offering for sale, exchanging or bartering any of them. This entry previously read as unrestricted, citing the fur-bearing animal definition at Parks & Wild. Code § 71.001, which is a closed list of eleven animals that includes no squirrel. That reading was correct about the fur-bearer chapter and was looking at the wrong rule. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it.",
+          "verifiedOn": "2026-09-05"
         },
         "IN": {
           "status": "permit",
@@ -15836,11 +16065,11 @@
         },
         "TX": {
           "status": "legal",
-          "sourceId": "tx-822-101",
-          "cite": "Health & Safety Code § 822.101",
-          "note": "Monitor lizards do not appear on Texas's closed dangerous-wild-animal list, which is limited to named big cats, bears, canids and primates.",
-          "verifiedOn": "2026-08-27",
-          "localOverride": true
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Varanus acanthurus is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
+          "verifiedOn": "2026-09-05"
         },
         "LA": {
           "status": "legal",
@@ -16508,11 +16737,12 @@
           "verifiedOn": "2026-09-05"
         },
         "TX": {
-          "status": "legal",
-          "sourceId": "tx-822-101",
-          "note": "Texas's dangerous wild animal statute (Health & Safety Code ch. 822) is a closed list of big carnivores and doesn't reach ordinary snakes. Legal statewide, though some cities restrict snakes by ordinance.",
-          "verifiedOn": "2026-08-27",
-          "localOverride": true
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.327(b)(3)(A); § 65.331(e)",
+          "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
+          "note": "The § 65.331(d) list names three Texas garter snakes, the western blackneck, the checkered and the western ribbon, and it does not name Thamnophis sirtalis. The common gartersnake is instead on the § 65.331(e) list, which drops it to the lower cap: six without a permit, and no selling, offering for sale, exchanging or bartering at all. This entry previously read as unrestricted, citing the dangerous wild animal statute, which contains no reptile. The rule that answers a native Texas snake is the nongame subchapter, and within it the two lists give different answers to two garter snakes. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it.",
+          "verifiedOn": "2026-09-05"
         },
         "UT": {
           "status": "legal",
@@ -16905,10 +17135,11 @@
         },
         "TX": {
           "status": "legal",
-          "sourceId": "tx-822-101",
-          "note": "Texas's dangerous wild animal statute doesn't reach ordinary snakes. Legal statewide, though some cities restrict snakes by ordinance.",
-          "verifiedOn": "2026-08-27",
-          "localOverride": true
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a); § 65.331(d)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "The § 65.331(d) list names \"Speckled or desert kingsnake (Lampropeltis getula)\", which is the Texas native, and Lampropeltis californiae was split out of L. getula in 2009. The California kingsnake’s range runs from California and Baja east to western Arizona and Utah and does not reach Texas, so it is not indigenous and the nongame rules do not apply. Texas is one of several states where this animal is answered by the fact that the state’s own kingsnake is a different species.",
+          "verifiedOn": "2026-09-05"
         },
         "UT": {
           "status": "legal",
@@ -17293,10 +17524,11 @@
         },
         "TX": {
           "status": "legal",
-          "sourceId": "tx-822-101",
-          "note": "Texas's dangerous wild animal statute doesn't reach birds. Legal statewide, subject to local ordinance.",
-          "verifiedOn": "2026-08-27",
-          "localOverride": true
+          "sourceId": "tx-64-002",
+          "cite": "§ 64.002(a), (d)",
+          "quote": "(a) Except as provided by this code, no person may: (1) catch, kill, injure, pursue, or possess, dead or alive, or purchase, sell, expose for sale, transport, ship, or receive or deliver for transportation, a bird that is not a game bird ... (d) Canaries, parrots, and other exotic nongame birds may be sold, purchased, and kept as domestic pets.",
+          "note": "Cockatoos are parrots in the ordinary sense subsection (d) uses, and the sentence reaches \"other exotic nongame birds\" in any event. Nothing in Texas law distinguishes them from any other pet parrot.",
+          "verifiedOn": "2026-09-05"
         },
         "UT": {
           "status": "legal",
@@ -17447,11 +17679,11 @@
         },
         "TX": {
           "status": "legal",
-          "sourceId": "tx-822-101",
-          "cite": "Health & Safety Code § 822.101",
-          "note": "Not on Texas's closed dangerous-wild-animal list (lions, tigers, and other named cats, bears, canids and primates). Tortoises and monitor lizards are outside the registration requirement.",
-          "verifiedOn": "2026-08-27",
-          "localOverride": true
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Chelonoidis carbonarius is South American and is not indigenous to Texas, so the nongame possession caps do not apply. The turtle and tortoise restrictions in this state are all aimed at native species, and the only tortoise among them is the threatened Texas tortoise.",
+          "verifiedOn": "2026-09-05"
         },
         "LA": {
           "status": "legal",
@@ -17879,6 +18111,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The bearded dragon is nonvenomous and is neither a caiman nor a gavial.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Pogona vitticeps is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18016,6 +18256,14 @@
           "cite": "§ 70-4-403(3)(A)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The leopard gecko is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Eublepharis macularius is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. The native the list does name is the Texas banded gecko, Coleonyx brevis, capped at 25, which is a different genus.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -18155,6 +18403,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The crested gecko is nonvenomous and is neither a caiman nor a gavial. Tennessee names no gecko family, so the reclassification that complicates this species in Colorado and Oregon does not arise.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Correlophus ciliatus is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18292,6 +18548,14 @@
           "cite": "§ 70-4-403(3)(A)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The blue-tongue skink is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Tiliqua scincoides is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. Texas does list five native Eumeces skinks across its two nongame lists, so the genus matters here rather than the common name.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -18431,6 +18695,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. Jackson's chameleon is nonvenomous and is neither a caiman nor a gavial.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a)",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Trioceros jacksonii is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. Hawaii is the state that regulates this animal heavily, because it is established in the wild there. Texas has no equivalent concern and no equivalent rule.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18568,6 +18840,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The green anole is nonvenomous and is neither a caiman nor a gavial.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.327(b)(3)(B); § 65.331(d)",
+          "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
+          "note": "Anolis carolinensis is on the § 65.331(d) list, and it is native across the eastern half of Texas, so a keeper may hold 25 without a permit but may not sell, offer for sale, exchange or barter one. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. This is the animal on this map where the Texas cap is most likely to surprise someone, because green anoles are sold nationally as cheap starter lizards and the buyer is the one the cap follows.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18699,6 +18979,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Rabbits, hares, moles and shrews",
           "note": "Named in its own subdivision of the no-permit class. Tennessee reaches the rabbit by common name and by group rather than by the binomial that makes this species awkward in Minnesota and Illinois, and it does not adopt the federal injurious wildlife list anywhere in this part.",
           "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "§ 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Two Texas rules mention rabbits and neither reaches this one. The § 65.331(d) nongame list names the black-tailed jackrabbit, a Lepus, and 31 TAC § 65.325(b)(4) expressly excepts rabbits of the genus Sylvilagus from the whole subchapter. Oryctolagus cuniculus is neither, and it is not indigenous to Texas in any event, so the definition never reaches it. That is a cleaner answer than Minnesota or Illinois manage, where the same species is named outright on an injurious species list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18828,6 +19116,14 @@
           "cite": "§ 70-1-101(40); § 70-4-403",
           "quote": "\"Wildlife\" means wild vertebrates, mollusks, crustaceans, and fish",
           "note": "The Madagascar hissing cockroach is an insect, and Tennessee's definition of wildlife runs to wild vertebrates, mollusks, crustaceans and fish. Section 70-4-403 classifies \"live wildlife\", so the five classes never reach a terrestrial arthropod at all, and neither does the possession prohibition in § 70-4-401(a), which is written about wildlife. Arizona, Nevada and Colorado draw the line in almost the same words. It matters less here than in a closed-list state, since Tennessee's catch-all would have put the animal in the no-permit class in any event.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC § 65.325(a); Parks & Wild. Code § 67.001",
+          "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
+          "note": "Texas regulates nongame wildlife through 31 TAC Chapter 65 Subchapter O, and the rule defines its own subject as \"species of vertebrate wildlife\". That is narrower than the statute it was written under: Parks & Wild. Code § 67.001 defines nongame as \"those species of vertebrate and invertebrate wildlife indigenous to Texas\". The department had the power to reach invertebrates and did not use it, so Gromphadorhina portentosa sits outside the scheme entirely. The dangerous wild animal list is mammals only, and 31 TAC Chapter 57 Subchapter A, the harmful exotic species rule, covers fish, shellfish and aquatic plants and no terrestrial arthropod. As with the millipede, the constraint that actually exists is a federal USDA permit for interstate movement, not a Texas one.",
           "verifiedOn": "2026-09-05"
         }
       }

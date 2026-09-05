@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 14 (AZ, CO, CT, DE, HI, IL, MD, MI, MN, NM, NV, OR, PA, TN) |
-| Unread cells | 562 |
-| Cached primary sources | 37 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 15 (AZ, CO, CT, DE, HI, IL, MD, MI, MN, NM, NV, OR, PA, TN, TX) |
+| Unread cells | 527 |
+| Cached primary sources | 39 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
-Oregon, Connecticut, Maryland and Tennessee sit on `claude/legal-map-colorado-dca3og`; either
-continue there or cut a fresh branch from main once it lands.
+Oregon, Connecticut, Maryland, Tennessee and Texas sit on `claude/legal-map-colorado-dca3og`;
+either continue there or cut a fresh branch from main once it lands.
 
 ## The loop
 
@@ -27,7 +27,7 @@ One jurisdiction per sitting. It takes a while and that is fine.
    that explains rather than asserts, and `verifiedOn` set to today in US Eastern.
 4. Re-run `legal-gaps.mjs`, then `node scripts/check-legal-map-sync.mjs`. That script
    cross-checks every legal guide against the map and will catch guides you just made
-   wrong. It sits at 13 pre-existing errors; anything above that is yours.
+   wrong. It sits at 12 pre-existing errors; anything above that is yours.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
@@ -81,6 +81,15 @@ takes them straight back out. A sourcing-paperwork condition had come along with
 § 70-4-401(b), which reaches Class I and Class II wildlife only. When a definition carries an
 "except those listed elsewhere" clause, the elsewhere is the part that decides.
 
+Texas is the sixth and the most expensive so far, at seven wrong cells. Health & Safety Code
+§ 822.101(4) is the statute every summary of Texas quotes, and it is a closed list of nineteen
+mammals that reaches no reptile, no bird, no rodent and no invertebrate. Of 52 animals it answers
+one. The rule that answers a native Texas animal is 31 TAC Chapter 65 Subchapter O, which does not
+ban anything: it caps possession at 25 or at six depending on which of two attached figures names
+the species, and bars selling one at any number. The garter snake, the flying squirrel and the
+prairie dog all sat on this map as unrestricted with accurate notes about a statute that was never
+going to reach them.
+
 **A rule with nothing behind it.** Minnesota's 2021 pet reptile law says the commissioner
 "must prescribe conditions and may issue permits" and then makes lawful possession turn on the
 animal having come from a permitted breeder. There is no such permit on the DNR's permits page,
@@ -102,14 +111,20 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| TX | Texas | 35 | 3 sources on file |
 | MA | Massachusetts | 34 | 3 sources on file |
 | NE | Nebraska | 33 | 4 sources on file |
 | FL | Florida | 30 | 2 sources on file |
 | NY | New York | 30 | 4 sources on file |
+| GA | Georgia | 29 | 4 sources on file |
 
 ## Loose ends
 
+- **Texas has no open cells, but one thing to watch.** Its § 65.331(d) and (e) figures are the two
+  attached graphics that carry the whole cap scheme, and they are served as presigned S3 links that
+  expire, so they cannot be re-fetched from a stored URL. Both are transcribed in full in
+  `TX-tx-nongame.txt`. The (d) list was last amended March 2020 and § 65.325(a) says the department
+  evaluates additions and removals periodically, so the figures are the part of Texas with a shelf
+  life.
 - **Tennessee has three cells left, and they are all the same chapter.** Tenn. Comp. R. & Regs.
   1660-01-18, Rules and Regulations of Live Wildlife, is where the commission's own additions to
   the classes live. Serval and fennec fox are on no statutory Class I list but § 70-4-403(1)
@@ -185,8 +200,9 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Then guinea pig, gerbil, quaker parakeet and ackie monitor at 47, degu and red-footed tortoise
-at 46, green iguana at 45.
+Cockatoo, hedgehog, sugar glider, garter snake and kingsnake are now at 51 of 51, and ferret at 50,
+which makes five more animals article-ready than the two named above. Then guinea pig, gerbil and
+quaker parakeet at 48, ackie monitor and degu at 47, red-footed tortoise and green iguana at 46.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -228,6 +244,13 @@ Maryland is the only state that answers it by weight: § 10-621(b)(1)(iv) reache
 only "if the hybrid weighs over 30 pounds", with no generation test anywhere in the section. The
 line is drawn on the individual animal rather than its ancestry, which is the one version of
 this rule whose answer could change as a cat grows.
+
+Texas is the ninth Bengal answer and the one that turns on a single cross-reference. Health & Safety
+Code § 822.101(4)(T) reaches "any hybrid of an animal listed in this subdivision", and the small cats
+listed are the ocelot, bobcat, lynx, serval and caracal. Prionailurus bengalensis is not among them,
+so the Bengal is clear, while the Savannah is caught by the same sentence because the serval is at
+clause (J). Two hybrid breeds, one sentence, opposite answers. When a state defines hybrids by
+reference to its own list rather than by generation, the answer is which parent species got named.
 
 Tennessee is the eighth, and it answers by implication rather than by drafting. Nothing in the
 statute mentions the Bengal or the Asian leopard cat, so the catch-all puts both in Class III.
