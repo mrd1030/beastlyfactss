@@ -10,7 +10,7 @@ import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
-import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
+import DeepDiveList from '@/components/shared/DeepDiveList';
 import SaveButton from '@/components/shared/SaveButton';
 import TableOfContents from '@/components/blog/TableOfContents';
 import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
@@ -334,29 +334,7 @@ export default function EncyclopediaAnimal() {
             </div>
 
             {/* Related deep-dive articles */}
-            {relatedArticles.length > 0 && (
-              <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-                  📰 Deep Dive
-                </p>
-                <div className="space-y-3">
-                  {relatedArticles.map(article => (
-                    // Same as GuideDetail: the encyclopedia page builds this
-                    // list from animal.guideId, so that is the thread to carry.
-                    <Link
-                      key={article._id}
-                      to={`/blog/${article.slug.current}/`}
-                      onClick={() => rememberDeepDiveGuide(animal.guideId)}
-                      className="group block"
-                    >
-                      <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
-                        {(article.emoji ? `${article.emoji} ` : '') + article.title}
-                      </p>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
+            <DeepDiveList articles={relatedArticles} guideId={animal.guideId} />
 
             {/* Did you know */}
             {guide?.funFact && (

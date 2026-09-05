@@ -9,7 +9,7 @@ import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
-import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
+import DeepDiveList from '@/components/shared/DeepDiveList';
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
@@ -648,30 +648,7 @@ export default function GuideDetail() {
             )}
 
             {/* Related deep-dive articles */}
-            {relatedArticles.length > 0 && (
-              <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-                  📰 Deep Dive
-                </p>
-                <div className="space-y-3">
-                  {relatedArticles.map(article => (
-                    // Carries which guide this click came from, so the article's
-                    // own Deep Dive block can continue this exact list instead of
-                    // guessing. See deepDiveContext.js.
-                    <Link
-                      key={article._id}
-                      to={`/blog/${article.slug.current}/`}
-                      onClick={() => rememberDeepDiveGuide(guide.id)}
-                      className="group block"
-                    >
-                      <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
-                        {(article.emoji ? `${article.emoji} ` : '') + article.title}
-                      </p>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
+            <DeepDiveList articles={relatedArticles} guideId={guide.id} />
 
             {/* Related short story */}
             {guide.relatedStory && (
