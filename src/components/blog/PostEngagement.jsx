@@ -529,6 +529,10 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                           Cancel
                         </button>
                       </div>
+                      <p className="pl-4 text-xs text-muted-foreground font-body">
+                        Add your email if you wouldn't mind a response by email, or leave it
+                        blank for a reply here. It is never shown publicly.
+                      </p>
                     </form>
                   ) : null}
                 </motion.div>
@@ -581,7 +585,11 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
             >
               {submitting ? 'Submitting...' : <><Send className="w-4 h-4 mr-1.5" /> Submit Comment</>}
             </Button>
-            <p className="text-xs text-muted-foreground font-body">Comments are moderated before appearing.</p>
+            <p className="text-xs text-muted-foreground font-body">
+              Comments are moderated before appearing. Add your email if you wouldn't mind a
+              response by email, or leave it blank and we'll reply here on the site. Either way
+              your address is never shown publicly.
+            </p>
           </form>
         )}
       </div>
