@@ -42,10 +42,14 @@ working checklist.
 
 - A source is a page actually opened that contains the specific claim. Never a
   homepage, never a search results page, never a constructed URL.
-- Keep the `<Sources>` block curated: 4 to 5 links maximum, not a URL library.
-  One granted exception: `bearded-dragon-health-issues-guide.mdx` runs 7, because
-  the prolapse and ADV material has no substitute among the other five and
-  trimming would orphan a cited claim. Don't "fix" it back down.
+- Keep the `<Sources>` block curated: 4 to 5 links is the target, not a hard cap,
+  and never a URL library. Going over is allowed when every extra link carries a
+  claim nothing else in the block supports; when it does, say why in an MDX
+  comment directly above `<Sources>` so the next audit doesn't trim it. Current
+  overruns: `bearded-dragon-health-issues-guide.mdx` runs 7 (the prolapse and ADV
+  material), `red-eared-slider-health-issues-guide.mdx` runs 6 (the pyramiding
+  correction needs both the Stancel feeding trial and a cause list). Don't "fix"
+  either back down.
   Prefer peer-reviewed papers with DOI, then .gov agencies, then museums and
   universities, then established science journalism. Name the actual paper
   title and credit the authors, not just the journal.
