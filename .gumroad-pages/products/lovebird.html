@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lovebird Care Package</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'media',
+    theme: {
+      extend: {
+        colors: {
+          rose: { 950:'#22090F', 900:'#341019', 800:'#4C1826', 700:'#682335' },
+          bloom: { 400:'#FF9FAE', 500:'#F97C90', 600:'#E85D75' },
+          cream: { 50:'#FDF6F3', 100:'#F8E9E4' }
+        },
+        fontFamily: { display: ['Fredoka','system-ui','sans-serif'], body: ['"Atkinson Hyperlegible Next"','system-ui','sans-serif'] },
+        boxShadow: { bloom: '0 0 42px rgba(249,124,144,0.4)' }
+      }
+    }
+  }
+</script>
+<style>
+  @keyframes drift { 0% { transform: translateY(6%) rotate(-6deg); opacity:0; } 12% { opacity:.5; } 88% { opacity:.3; } 100% { transform: translateY(-110vh) rotate(10deg); opacity:0; } }
+  @keyframes beat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.18); } }
+  .petal { position:absolute; bottom:-6%; font-size:14px; animation: drift linear infinite; pointer-events:none; }
+  .beat { display:inline-block; animation: beat 1.4s ease-in-out infinite; transform-origin:50% 50%; }
+  .weave { position: relative; }
+  .weave::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(45deg, rgba(249,124,144,.08) 0px, rgba(249,124,144,.08) 1px, transparent 1px, transparent 22px),
+                       repeating-linear-gradient(-45deg, rgba(249,124,144,.08) 0px, rgba(249,124,144,.08) 1px, transparent 1px, transparent 22px);
+  }
+  .reveal { opacity:0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity:1; transform:none; }
+  #gallery-track { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    .petal, .beat { animation: none !important; }
+    .reveal { opacity:1 !important; transform:none !important; transition:none !important; }
+    #gallery-track { scroll-behavior: auto; }
+  }
+  ::selection { background: #F97C90; color:#fff; }
+  :focus-visible { outline: 3px solid #F97C90; outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="min-h-screen bg-cream-50 text-rose-950 dark:bg-rose-950 dark:text-cream-100 font-body antialiased">
+
+  <a href="#buy" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-bloom-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-full">Skip to buy</a>
+
+  <!-- HERO -->
+  <header class="relative overflow-hidden bg-gradient-to-b from-rose-900 to-rose-800 dark:from-rose-950 dark:to-rose-900 text-cream-50 weave">
+    <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <span class="petal" style="left:12%; animation-duration:15s; animation-delay:0s;">🌸</span>
+      <span class="petal" style="left:28%; animation-duration:19s; animation-delay:4s;">🌸</span>
+      <span class="petal" style="left:46%; animation-duration:13s; animation-delay:8s;">🌸</span>
+      <span class="petal" style="left:64%; animation-duration:21s; animation-delay:2s;">🌸</span>
+      <span class="petal" style="left:80%; animation-duration:17s; animation-delay:10s;">🌸</span>
+    </div>
+
+    <nav class="relative z-10 max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="https://beastlyfacts.com/care-packages/" target="_blank" rel="noopener noreferrer" class="font-display font-semibold text-lg tracking-tight flex items-center gap-2">
+        <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-bloom-500 to-bloom-400 shadow-bloom" aria-hidden="true"></span>
+        BeastlyFacts
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="https://beastlyfacts.com/care-packages/" target="_blank" rel="noopener noreferrer" class="text-sm text-cream-100/80 hover:text-bloom-400 transition-colors">Visit Website &rarr;</a>
+        <a href="https://beastlyfacts.gumroad.com/store" onclick="window.top.location.href=this.href;return false;" class="text-sm text-cream-100/80 hover:text-bloom-400 transition-colors">Full store &rarr;</a>
+      </div>
+    </nav>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pt-6 pb-20 grid gap-10 lg:grid-cols-2 lg:items-center">
+      <div>
+        <p class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-bloom-400 mb-4">
+          <span class="beat" aria-hidden="true">❤️</span> Printable owner manual
+        </p>
+        <h1 class="font-display text-4xl sm:text-5xl leading-[1.05] tracking-tight mb-5 text-cream-50">
+          Solo or paired isn't a small decision.
+        </h1>
+        <p class="text-lg text-cream-100/90 max-w-lg mb-6">
+          A 21-page printable manual that walks through the single-versus-pair decision that shapes everything else, plus real cage sizing and full health triage.
+        </p>
+        <div class="flex flex-wrap items-center gap-4 mb-8">
+          <a href="#buy" data-gumroad-action="buy" class="inline-flex items-center gap-2 bg-bloom-500 hover:bg-bloom-400 text-white font-semibold px-6 py-3.5 rounded-full shadow-bloom transition-transform hover:-translate-y-0.5">
+            Get the guide, <span data-gumroad-field="price">$8.99</span>
+          </a>
+          <span class="text-sm text-cream-100/75">One time purchase &middot; Instant PDF download</span>
+        </div>
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-cream-100/80">
+          <li class="flex items-center gap-1.5"><span aria-hidden="true">✓</span> 21 pages, print or view</li>
+          <li class="flex items-center gap-1.5"><span aria-hidden="true">✓</span> Beginner and intermediate friendly</li>
+          <li class="flex items-center gap-1.5"><span aria-hidden="true">✓</span> No external links inside the PDF</li>
+        </ul>
+      </div>
+
+      <div class="relative reveal">
+        <div class="rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10 rotate-1 hover:rotate-0 transition-transform duration-500">
+          <img src="https://public-files.gumroad.com/4wkkh3y7p00uqewtojfjxmv0j91s" alt="Lovebird Care Package cover, printable PDF owner manual" class="w-full h-auto" width="1280" height="720" />
+        </div>
+        <div class="absolute -bottom-5 -left-5 bg-cream-50 text-rose-950 rounded-2xl shadow-xl px-4 py-3 hidden sm:block">
+          <p class="font-display text-xl leading-none" data-gumroad-field="rating">Be the first</p>
+          <p class="text-xs text-bloom-600" data-gumroad-field="review-count">to review this guide</p>
+        </div>
+      </div>
+    </div>
+
+    <svg class="relative block w-full text-cream-50 dark:text-rose-950" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0,26 C220,0 460,56 720,30 C980,4 1220,50 1440,22 L1440,60 L0,60 Z"></path></svg>
+  </header>
+
+  <main>
+    <!-- PAIN / CONTRAST -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+      <div class="reveal grid gap-6 sm:grid-cols-2">
+        <div class="rounded-2xl border border-rose-200 dark:border-red-900/50 bg-red-50 dark:bg-red-950/30 p-6">
+          <p class="text-xs font-bold tracking-widest uppercase text-red-600 dark:text-red-400 mb-3">"Low maintenance" myth</p>
+          <ul class="space-y-2.5 text-sm text-rose-900/80 dark:text-cream-100/70">
+            <li>Solo versus pair decided by accident, not on purpose</li>
+            <li>A cage sized like it's for a smaller, quieter bird</li>
+            <li>Chronic egg-laying nobody explained how to prevent</li>
+            <li>Feather plucking dismissed instead of investigated</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-bloom-200 dark:border-bloom-800/60 bg-bloom-50 dark:bg-rose-900/60 p-6">
+          <p class="text-xs font-bold tracking-widest uppercase text-bloom-700 dark:text-bloom-400 mb-3">This guide</p>
+          <ul class="space-y-2.5 text-sm text-rose-950 dark:text-cream-100/90">
+            <li>The single-versus-pair decision explained up front</li>
+            <li>Real cage size and bar spacing minimums</li>
+            <li>Chronic egg-laying and egg binding covered plainly</li>
+            <li>Feather plucking treated as the health signal it is</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S INSIDE -->
+    <section class="bg-rose-50/60 dark:bg-white/[0.03] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="reveal mb-10 max-w-xl">
+          <p class="text-xs font-bold tracking-widest uppercase text-bloom-600 dark:text-bloom-400 mb-2">What's inside &middot; 21 pages</p>
+          <h2 class="font-display text-3xl tracking-tight">Everything a first cage setup actually needs.</h2>
+        </div>
+        <div class="reveal grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white dark:bg-rose-900/40 rounded-xl p-5 border border-bloom-100 dark:border-rose-700">
+            <p class="text-2xl mb-2" aria-hidden="true">💞</p>
+            <h3 class="font-semibold mb-1">Solo vs. pair</h3>
+            <p class="text-sm text-rose-900/70 dark:text-cream-100/65">The decision that shapes bonding, behavior, and health.</p>
+          </div>
+          <div class="bg-white dark:bg-rose-900/40 rounded-xl p-5 border border-bloom-100 dark:border-rose-700">
+            <p class="text-2xl mb-2" aria-hidden="true">📐</p>
+            <h3 class="font-semibold mb-1">Cage &amp; setup</h3>
+            <p class="text-sm text-rose-900/70 dark:text-cream-100/65">Cage size, bar spacing, diet, and handling in one guide.</p>
+          </div>
+          <div class="bg-white dark:bg-rose-900/40 rounded-xl p-5 border border-bloom-100 dark:border-rose-700">
+            <p class="text-2xl mb-2" aria-hidden="true">⚠️</p>
+            <h3 class="font-semibold mb-1">Health &amp; red flags</h3>
+            <p class="text-sm text-rose-900/70 dark:text-cream-100/65">Egg binding, PBFD, polyomavirus, and feather plucking.</p>
+          </div>
+          <div class="bg-white dark:bg-rose-900/40 rounded-xl p-5 border border-bloom-100 dark:border-rose-700">
+            <p class="text-2xl mb-2" aria-hidden="true">🥗</p>
+            <h3 class="font-semibold mb-1">Diet &amp; social needs</h3>
+            <p class="text-sm text-rose-900/70 dark:text-cream-100/65">Diet, handling, and enrichment built around real behavior.</p>
+          </div>
+          <div class="bg-white dark:bg-rose-900/40 rounded-xl p-5 border border-bloom-100 dark:border-rose-700">
+            <p class="text-2xl mb-2" aria-hidden="true">🧰</p>
+            <h3 class="font-semibold mb-1">Owner tools</h3>
+            <p class="text-sm text-rose-900/70 dark:text-cream-100/65">Budget tiers, shopping list, first 30 and 31 to 90 day checklists, owner log.</p>
+          </div>
+          <div class="bg-white dark:bg-rose-900/40 rounded-xl p-5 border border-bloom-100 dark:border-rose-700">
+            <p class="text-2xl mb-2" aria-hidden="true">📖</p>
+            <h3 class="font-semibold mb-1">Symptom reference</h3>
+            <p class="text-sm text-rose-900/70 dark:text-cream-100/65">Quick reference table plus a daily, weekly, monthly, and seasonal routine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREVIEW GALLERY (carousel) -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+      <div class="reveal mb-8 max-w-xl">
+        <p class="text-xs font-bold tracking-widest uppercase text-bloom-600 dark:text-bloom-400 mb-2">Take a look inside</p>
+        <h2 class="font-display text-3xl tracking-tight">Print-first pages, clearly marked.</h2>
+      </div>
+      <div class="reveal relative">
+        <div id="gallery-track" class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 -mx-6 px-6 [scrollbar-width:none] [-ms-overflow-style:none] [&amp;::-webkit-scrollbar]:hidden">
+          <img src="https://public-files.gumroad.com/4wkkh3y7p00uqewtojfjxmv0j91s" alt="Lovebird Care Package cover page" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-bloom-100 dark:border-rose-700" />
+          <img src="https://public-files.gumroad.com/gmiz3pu6yg6vknga4ymcsfd560f1" alt="Lovebird Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-bloom-100 dark:border-rose-700" />
+          <img src="https://public-files.gumroad.com/atkbrkrfgn352or19w2i1lf4fjrh" alt="Lovebird Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-bloom-100 dark:border-rose-700" />
+          <img src="https://public-files.gumroad.com/abbpbstfljdewh6ir43rnmhadx7x" alt="Lovebird Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-bloom-100 dark:border-rose-700" />
+          <img src="https://public-files.gumroad.com/o6th6wokiwbh91csx9vsv1ug0grp" alt="Lovebird Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-bloom-100 dark:border-rose-700" />
+        </div>
+        <button id="gallery-prev" type="button" aria-label="Previous image" class="hidden sm:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-white dark:bg-rose-800 shadow-lg items-center justify-center text-rose-900 dark:text-cream-100 hover:bg-bloom-100 dark:hover:bg-rose-700 transition-colors text-xl leading-none">&lsaquo;</button>
+        <button id="gallery-next" type="button" aria-label="Next image" class="hidden sm:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white dark:bg-rose-800 shadow-lg items-center justify-center text-rose-900 dark:text-cream-100 hover:bg-bloom-100 dark:hover:bg-rose-700 transition-colors text-xl leading-none">&rsaquo;</button>
+        <div id="gallery-dots" class="flex justify-center gap-2 mt-4"></div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR / DISCLAIMER -->
+    <section class="bg-rose-900 dark:bg-black/40 text-cream-50 py-16 weave">
+      <div class="max-w-5xl mx-auto px-6 grid gap-8 sm:grid-cols-2">
+        <div class="reveal">
+          <h2 class="font-display text-2xl mb-3">Who this is for</h2>
+          <ul class="space-y-2 text-cream-100/80 text-sm">
+            <li>New lovebird owners deciding between one bird or a pair</li>
+            <li>Keepers who want a real cage size, not a starter-kit guess</li>
+            <li>Anyone who wants to catch egg-laying issues or plucking early</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h2 class="font-display text-2xl mb-3">What it's not</h2>
+          <ul class="space-y-2 text-cream-100/80 text-sm">
+            <li>Not a substitute for an avian-experienced veterinarian</li>
+            <li>Not a live website mirror, a clean printable package instead</li>
+            <li>Not a subscription, one purchase and it's yours to keep</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="buy" class="max-w-4xl mx-auto px-6 py-20 text-center">
+      <p class="text-xs font-bold tracking-widest uppercase text-bloom-600 dark:text-bloom-400 mb-3">Ready when you are</p>
+      <h2 class="font-display text-3xl sm:text-4xl tracking-tight mb-4" data-gumroad-field="name">Lovebird Care Package</h2>
+      <p class="text-rose-900/70 dark:text-cream-100/70 mb-8 max-w-md mx-auto">21 pages. PDF. Print it or keep it open on your phone, tablet, or computer by the cage. Yours the moment you check out.</p>
+      <a href="#" data-gumroad-action="buy" class="inline-flex items-center gap-2 bg-bloom-500 hover:bg-bloom-400 text-white font-semibold text-lg px-8 py-4 rounded-full shadow-bloom transition-transform hover:-translate-y-0.5">
+        I want this, <span data-gumroad-field="price">$8.99</span>
+      </a>
+      <p class="mt-4 text-xs text-rose-900/60 dark:text-cream-100/50">Questions first? <a href="https://beastlyfacts.gumroad.com/faq" onclick="window.top.location.href=this.href;return false;" class="underline hover:text-bloom-600 dark:hover:text-bloom-400">Read the FAQ</a></p>
+    </section>
+  </main>
+
+  <footer class="border-t border-bloom-100 dark:border-rose-700 py-10">
+    <div class="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-between gap-4 text-sm text-rose-900/70 dark:text-cream-100/60">
+      <p>&copy; BeastlyFacts &middot; Practical care guides for curious animal lovers</p>
+      <div class="flex flex-wrap gap-x-5 gap-y-2">
+        <a href="https://beastlyfacts.com/care-packages/" target="_blank" rel="noopener noreferrer" class="hover:text-bloom-600 dark:hover:text-bloom-400">Home</a>
+        <a href="https://beastlyfacts.gumroad.com/store" onclick="window.top.location.href=this.href;return false;" class="hover:text-bloom-600 dark:hover:text-bloom-400">Store</a>
+        <a href="https://beastlyfacts.gumroad.com/about" onclick="window.top.location.href=this.href;return false;" class="hover:text-bloom-600 dark:hover:text-bloom-400">About</a>
+        <a href="https://beastlyfacts.gumroad.com/faq" onclick="window.top.location.href=this.href;return false;" class="hover:text-bloom-600 dark:hover:text-bloom-400">FAQ</a>
+        <a href="https://beastlyfacts.com" target="_blank" rel="noopener noreferrer" class="hover:text-bloom-600 dark:hover:text-bloom-400">beastlyfacts.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || !els.length) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+
+    (function () {
+      var track = document.getElementById('gallery-track');
+      var prev = document.getElementById('gallery-prev');
+      var next = document.getElementById('gallery-next');
+      var dotsWrap = document.getElementById('gallery-dots');
+      if (!track || !dotsWrap) return;
+      var slides = Array.prototype.slice.call(track.children);
+
+      function scrollToSlide(i) {
+        var maxScroll = track.scrollWidth - track.clientWidth;
+        var target;
+        if (i <= 0) target = 0;
+        else if (i >= slides.length - 1) target = maxScroll;
+        else target = slides[i].offsetLeft - (track.clientWidth - slides[i].offsetWidth) / 2;
+        track.scrollTo({ left: target, behavior: 'smooth' });
+      }
+
+      slides.forEach(function (slide, i) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', 'Go to image ' + (i + 1) + ' of ' + slides.length);
+        dot.className = 'w-2 h-2 rounded-full bg-bloom-300 dark:bg-rose-600 transition-colors';
+        dot.addEventListener('click', function () { scrollToSlide(i); });
+        dotsWrap.appendChild(dot);
+      });
+      var dots = Array.prototype.slice.call(dotsWrap.children);
+
+      function activeIndex() {
+        var maxScroll = track.scrollWidth - track.clientWidth;
+        if (track.scrollLeft <= 4) return 0;
+        if (track.scrollLeft >= maxScroll - 4) return slides.length - 1;
+        var trackRect = track.getBoundingClientRect();
+        var center = trackRect.left + trackRect.width / 2;
+        var closest = 0, closestDist = Infinity;
+        slides.forEach(function (s, i) {
+          var r = s.getBoundingClientRect();
+          var d = Math.abs((r.left + r.width / 2) - center);
+          if (d < closestDist) { closestDist = d; closest = i; }
+        });
+        return closest;
+      }
+      function updateDots() {
+        var idx = activeIndex();
+        dots.forEach(function (d, i) {
+          d.classList.toggle('bg-bloom-500', i === idx);
+          d.classList.toggle('bg-bloom-300', i !== idx);
+          d.classList.toggle('dark:bg-rose-600', i !== idx);
+        });
+      }
+      var ticking = false;
+      track.addEventListener('scroll', function () {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function () { updateDots(); ticking = false; });
+      }, { passive: true });
+      if (prev) prev.addEventListener('click', function () { scrollToSlide(Math.max(0, activeIndex() - 1)); });
+      if (next) next.addEventListener('click', function () { scrollToSlide(Math.min(slides.length - 1, activeIndex() + 1)); });
+      updateDots();
+    })();
+  </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Axolotl Care Package</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'media',
+    theme: {
+      extend: {
+        colors: {
+          deep: { 950:'#0C1226', 900:'#141B36', 800:'#1C2650', 700:'#26336B', 600:'#324390' },
+          coral: { 400:'#FFA3B3', 500:'#FF8298', 600:'#EC647D' },
+          mist: { 50:'#F3F5FA', 100:'#E7EBF5' }
+        },
+        fontFamily: { display: ['Fredoka','system-ui','sans-serif'], body: ['"Atkinson Hyperlegible Next"','system-ui','sans-serif'] },
+        boxShadow: { coral: '0 0 42px rgba(255,130,152,0.4)' }
+      }
+    }
+  }
+</script>
+<style>
+  @keyframes rise { 0% { transform: translateY(6%) scale(.8); opacity:0; } 12% { opacity:.5; } 88% { opacity:.3; } 100% { transform: translateY(-110vh) scale(1.1); opacity:0; } }
+  @keyframes sway { 0%,100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+  .mote { position:absolute; bottom:-6%; border-radius:9999px; background: radial-gradient(circle at 35% 35%, rgba(255,255,255,.7), rgba(255,255,255,.08) 70%); animation: rise linear infinite; pointer-events:none; }
+  .sway { display:inline-block; animation: sway 3.4s ease-in-out infinite; transform-origin: 50% 80%; }
+  /* gill-frill ripple texture on a pseudo-element, never sharing background-image
+     with the gradient utility on the same element */
+  .ripple { position: relative; }
+  .ripple::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-radial-gradient(circle at 20% 30%, rgba(255,163,179,.08) 0, rgba(255,163,179,.08) 1px, transparent 2px, transparent 30px),
+                       repeating-radial-gradient(circle at 75% 70%, rgba(255,163,179,.07) 0, rgba(255,163,179,.07) 1px, transparent 2px, transparent 36px);
+  }
+  .reveal { opacity:0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity:1; transform:none; }
+  #gallery-track { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    .mote, .sway { animation: none !important; }
+    .reveal { opacity:1 !important; transform:none !important; transition:none !important; }
+    #gallery-track { scroll-behavior: auto; }
+  }
+  ::selection { background: #FF8298; color:#fff; }
+  :focus-visible { outline: 3px solid #FF8298; outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="min-h-screen bg-mist-50 text-deep-950 dark:bg-deep-950 dark:text-mist-100 font-body antialiased">
+
+  <a href="#buy" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-coral-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-full">Skip to buy</a>
+
+  <!-- HERO -->
+  <header class="relative overflow-hidden bg-gradient-to-b from-deep-900 to-deep-800 dark:from-deep-950 dark:to-deep-900 text-mist-50 ripple">
+    <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <span class="mote" style="left:10%; width:8px; height:8px; animation-duration:14s; animation-delay:0s;"></span>
+      <span class="mote" style="left:24%; width:5px; height:5px; animation-duration:11s; animation-delay:3s;"></span>
+      <span class="mote" style="left:40%; width:10px; height:10px; animation-duration:17s; animation-delay:6s;"></span>
+      <span class="mote" style="left:58%; width:6px; height:6px; animation-duration:13s; animation-delay:1.5s;"></span>
+      <span class="mote" style="left:72%; width:9px; height:9px; animation-duration:16s; animation-delay:8s;"></span>
+      <span class="mote" style="left:88%; width:6px; height:6px; animation-duration:12s; animation-delay:4s;"></span>
+    </div>
+
+    <nav class="relative z-10 max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="https://beastlyfacts.com/care-packages/" target="_blank" rel="noopener noreferrer" class="font-display font-semibold text-lg tracking-tight flex items-center gap-2">
+        <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-coral-500 to-coral-400 shadow-coral" aria-hidden="true"></span>
+        BeastlyFacts
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="https://beastlyfacts.com/care-packages/" target="_blank" rel="noopener noreferrer" class="text-sm text-mist-100/80 hover:text-coral-400 transition-colors">Visit Website &rarr;</a>
+        <a href="https://beastlyfacts.gumroad.com/store" onclick="window.top.location.href=this.href;return false;" class="text-sm text-mist-100/80 hover:text-coral-400 transition-colors">Full store &rarr;</a>
+      </div>
+    </nav>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pt-6 pb-20 grid gap-10 lg:grid-cols-2 lg:items-center">
+      <div>
+        <p class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-coral-400 mb-4">
+          <span class="sway" aria-hidden="true">🦎</span> Printable owner manual
+        </p>
+        <h1 class="font-display text-4xl sm:text-5xl leading-[1.05] tracking-tight mb-5 text-mist-50">
+          Cold water and a real cycle, not a bare bowl.
+        </h1>
+        <p class="text-lg text-mist-100/85 max-w-lg mb-6">
+          A 20-page printable manual with cold-water setup, cycling, and water quality targets, plus the health section for what actually goes wrong in most axolotl tanks.
+        </p>
+        <div class="flex flex-wrap items-center gap-4 mb-8">
+          <a href="#buy" data-gumroad-action="buy" class="inline-flex items-center gap-2 bg-coral-500 hover:bg-coral-400 text-white font-semibold px-6 py-3.5 rounded-full shadow-coral transition-transform hover:-translate-y-0.5">
+            Get the guide, <span data-gumroad-field="price">$8.99</span>
+          </a>
+          <span class="text-sm text-mist-100/70">One time purchase &middot; Instant PDF download</span>
+        </div>
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-mist-100/80">
+          <li class="flex items-center gap-1.5"><span aria-hidden="true">✓</span> 20 pages, print or view</li>
+          <li class="flex items-center gap-1.5"><span aria-hidden="true">✓</span> Beginner and intermediate friendly</li>
+          <li class="flex items-center gap-1.5"><span aria-hidden="true">✓</span> No external links inside the PDF</li>
+        </ul>
+      </div>
+
+      <div class="relative reveal">
+        <div class="rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10 rotate-1 hover:rotate-0 transition-transform duration-500">
+          <img src="https://public-files.gumroad.com/6zba9255p5yhte5abvd08avjulcv" alt="Axolotl Care Package cover, printable PDF owner manual" class="w-full h-auto" width="1280" height="720" />
+        </div>
+        <div class="absolute -bottom-5 -left-5 bg-mist-50 text-deep-950 rounded-2xl shadow-xl px-4 py-3 hidden sm:block">
+          <p class="font-display text-xl leading-none" data-gumroad-field="rating">Be the first</p>
+          <p class="text-xs text-coral-600" data-gumroad-field="review-count">to review this guide</p>
+        </div>
+      </div>
+    </div>
+
+    <svg class="relative block w-full text-mist-50 dark:text-deep-950" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0,26 C220,0 460,56 720,30 C980,4 1220,50 1440,22 L1440,60 L0,60 Z"></path></svg>
+  </header>
+
+  <main>
+    <!-- PAIN / CONTRAST -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+      <div class="reveal grid gap-6 sm:grid-cols-2">
+        <div class="rounded-2xl border border-rose-200 dark:border-rose-900/50 bg-rose-50 dark:bg-rose-950/30 p-6">
+          <p class="text-xs font-bold tracking-widest uppercase text-rose-600 dark:text-rose-400 mb-3">Care-sheet default</p>
+          <ul class="space-y-2.5 text-sm text-deep-900/80 dark:text-mist-100/70">
+            <li>A tank set up like a warm-water community aquarium</li>
+            <li>No real cycling before the axolotl goes in</li>
+            <li>Water temperature nobody's actually checking</li>
+            <li>No idea what fungal infection or impaction looks like</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-coral-200 dark:border-coral-800/60 bg-coral-50 dark:bg-deep-900/60 p-6">
+          <p class="text-xs font-bold tracking-widest uppercase text-coral-700 dark:text-coral-400 mb-3">This guide</p>
+          <ul class="space-y-2.5 text-sm text-deep-950 dark:text-mist-100/90">
+            <li>Real cold-water tank setup, checked and dated</li>
+            <li>A cycling plan before the axolotl ever goes in</li>
+            <li>Water temperature and quality targets stated plainly</li>
+            <li>Fungal infection, impaction, and heat stress called out clearly</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S INSIDE -->
+    <section class="bg-deep-50/40 dark:bg-white/[0.03] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="reveal mb-10 max-w-xl">
+          <p class="text-xs font-bold tracking-widest uppercase text-coral-600 dark:text-coral-400 mb-2">What's inside &middot; 20 pages</p>
+          <h2 class="font-display text-3xl tracking-tight">Everything a first cold-water tank needs.</h2>
+        </div>
+        <div class="reveal grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white dark:bg-deep-900/40 rounded-xl p-5 border border-coral-100 dark:border-deep-700">
+            <p class="text-2xl mb-2" aria-hidden="true">🧊</p>
+            <h3 class="font-semibold mb-1">Cold-water setup</h3>
+            <p class="text-sm text-deep-900/70 dark:text-mist-100/65">Tank size, temperature, and cycling, checked and dated.</p>
+          </div>
+          <div class="bg-white dark:bg-deep-900/40 rounded-xl p-5 border border-coral-100 dark:border-deep-700">
+            <p class="text-2xl mb-2" aria-hidden="true">💧</p>
+            <h3 class="font-semibold mb-1">Water quality</h3>
+            <p class="text-sm text-deep-900/70 dark:text-mist-100/65">Filtration and water quality targets that actually matter.</p>
+          </div>
+          <div class="bg-white dark:bg-deep-900/40 rounded-xl p-5 border border-coral-100 dark:border-deep-700">
+            <p class="text-2xl mb-2" aria-hidden="true">⚠️</p>
+            <h3 class="font-semibold mb-1">Health &amp; red flags</h3>
+            <p class="text-sm text-deep-900/70 dark:text-mist-100/65">Fungal infection, impaction, and heat stress or water burns.</p>
+          </div>
+          <div class="bg-white dark:bg-deep-900/40 rounded-xl p-5 border border-coral-100 dark:border-deep-700">
+            <p class="text-2xl mb-2" aria-hidden="true">🥗</p>
+            <h3 class="font-semibold mb-1">Diet &amp; handling</h3>
+            <p class="text-sm text-deep-900/70 dark:text-mist-100/65">Diet, handling, and enrichment built around real welfare needs.</p>
+          </div>
+          <div class="bg-white dark:bg-deep-900/40 rounded-xl p-5 border border-coral-100 dark:border-deep-700">
+            <p class="text-2xl mb-2" aria-hidden="true">🧰</p>
+            <h3 class="font-semibold mb-1">Owner tools</h3>
+            <p class="text-sm text-deep-900/70 dark:text-mist-100/65">Budget tiers, shopping list, first 30 and 31 to 90 day checklists, owner log.</p>
+          </div>
+          <div class="bg-white dark:bg-deep-900/40 rounded-xl p-5 border border-coral-100 dark:border-deep-700">
+            <p class="text-2xl mb-2" aria-hidden="true">📖</p>
+            <h3 class="font-semibold mb-1">Symptom reference</h3>
+            <p class="text-sm text-deep-900/70 dark:text-mist-100/65">Quick reference table plus a daily, weekly, monthly, and seasonal routine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREVIEW GALLERY (carousel) -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+      <div class="reveal mb-8 max-w-xl">
+        <p class="text-xs font-bold tracking-widest uppercase text-coral-600 dark:text-coral-400 mb-2">Take a look inside</p>
+        <h2 class="font-display text-3xl tracking-tight">Print-first pages, clearly marked.</h2>
+      </div>
+      <div class="reveal relative">
+        <div id="gallery-track" class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 -mx-6 px-6 [scrollbar-width:none] [-ms-overflow-style:none] [&amp;::-webkit-scrollbar]:hidden">
+          <img src="https://public-files.gumroad.com/6zba9255p5yhte5abvd08avjulcv" alt="Axolotl Care Package cover page" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-coral-100 dark:border-deep-700" />
+          <img src="https://public-files.gumroad.com/7tzxrdy02kww4wxvt2tbfnhoxlin" alt="Axolotl Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-coral-100 dark:border-deep-700" />
+          <img src="https://public-files.gumroad.com/717llkj1fde5wxxftfkxcezjaknq" alt="Axolotl Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-coral-100 dark:border-deep-700" />
+          <img src="https://public-files.gumroad.com/jcer665ekstpgx4wh7aeqz6h785v" alt="Axolotl Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-coral-100 dark:border-deep-700" />
+          <img src="https://public-files.gumroad.com/4ikbo4ukz7j1scsws0o77j5vjc9k" alt="Axolotl Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-coral-100 dark:border-deep-700" />
+        </div>
+        <button id="gallery-prev" type="button" aria-label="Previous image" class="hidden sm:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-white dark:bg-deep-800 shadow-lg items-center justify-center text-deep-900 dark:text-mist-100 hover:bg-coral-100 dark:hover:bg-deep-700 transition-colors text-xl leading-none">&lsaquo;</button>
+        <button id="gallery-next" type="button" aria-label="Next image" class="hidden sm:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white dark:bg-deep-800 shadow-lg items-center justify-center text-deep-900 dark:text-mist-100 hover:bg-coral-100 dark:hover:bg-deep-700 transition-colors text-xl leading-none">&rsaquo;</button>
+        <div id="gallery-dots" class="flex justify-center gap-2 mt-4"></div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR / DISCLAIMER -->
+    <section class="bg-deep-900 dark:bg-black/40 text-mist-50 py-16 ripple">
+      <div class="max-w-5xl mx-auto px-6 grid gap-8 sm:grid-cols-2">
+        <div class="reveal">
+          <h2 class="font-display text-2xl mb-3">Who this is for</h2>
+          <ul class="space-y-2 text-mist-100/80 text-sm">
+            <li>New axolotl owners setting up a proper cold-water tank</li>
+            <li>Keepers who want one consistent cycling and water standard</li>
+            <li>Anyone who wants to catch fungal issues or stress early</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h2 class="font-display text-2xl mb-3">What it's not</h2>
+          <ul class="space-y-2 text-mist-100/80 text-sm">
+            <li>Not a substitute for an aquatic-experienced veterinarian</li>
+            <li>Not a live website mirror, a clean printable package instead</li>
+            <li>Not a subscription, one purchase and it's yours to keep</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="buy" class="max-w-4xl mx-auto px-6 py-20 text-center">
+      <p class="text-xs font-bold tracking-widest uppercase text-coral-600 dark:text-coral-400 mb-3">Ready when you are</p>
+      <h2 class="font-display text-3xl sm:text-4xl tracking-tight mb-4" data-gumroad-field="name">Axolotl Care Package</h2>
+      <p class="text-deep-900/70 dark:text-mist-100/70 mb-8 max-w-md mx-auto">20 pages. PDF. Print it or keep it open on your phone, tablet, or computer by the tank. Yours the moment you check out.</p>
+      <a href="#" data-gumroad-action="buy" class="inline-flex items-center gap-2 bg-coral-500 hover:bg-coral-400 text-white font-semibold text-lg px-8 py-4 rounded-full shadow-coral transition-transform hover:-translate-y-0.5">
+        I want this, <span data-gumroad-field="price">$8.99</span>
+      </a>
+      <p class="mt-4 text-xs text-deep-900/60 dark:text-mist-100/50">Questions first? <a href="https://beastlyfacts.gumroad.com/faq" onclick="window.top.location.href=this.href;return false;" class="underline hover:text-coral-600 dark:hover:text-coral-400">Read the FAQ</a></p>
+    </section>
+  </main>
+
+  <footer class="border-t border-coral-100 dark:border-deep-700 py-10">
+    <div class="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-between gap-4 text-sm text-deep-900/70 dark:text-mist-100/60">
+      <p>&copy; BeastlyFacts &middot; Practical care guides for curious animal lovers</p>
+      <div class="flex flex-wrap gap-x-5 gap-y-2">
+        <a href="https://beastlyfacts.com/care-packages/" target="_blank" rel="noopener noreferrer" class="hover:text-coral-600 dark:hover:text-coral-400">Home</a>
+        <a href="https://beastlyfacts.gumroad.com/store" onclick="window.top.location.href=this.href;return false;" class="hover:text-coral-600 dark:hover:text-coral-400">Store</a>
+        <a href="https://beastlyfacts.gumroad.com/about" onclick="window.top.location.href=this.href;return false;" class="hover:text-coral-600 dark:hover:text-coral-400">About</a>
+        <a href="https://beastlyfacts.gumroad.com/faq" onclick="window.top.location.href=this.href;return false;" class="hover:text-coral-600 dark:hover:text-coral-400">FAQ</a>
+        <a href="https://beastlyfacts.com" target="_blank" rel="noopener noreferrer" class="hover:text-coral-600 dark:hover:text-coral-400">beastlyfacts.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || !els.length) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+
+    (function () {
+      var track = document.getElementById('gallery-track');
+      var prev = document.getElementById('gallery-prev');
+      var next = document.getElementById('gallery-next');
+      var dotsWrap = document.getElementById('gallery-dots');
+      if (!track || !dotsWrap) return;
+      var slides = Array.prototype.slice.call(track.children);
+
+      function scrollToSlide(i) {
+        var maxScroll = track.scrollWidth - track.clientWidth;
+        var target;
+        if (i <= 0) target = 0;
+        else if (i >= slides.length - 1) target = maxScroll;
+        else target = slides[i].offsetLeft - (track.clientWidth - slides[i].offsetWidth) / 2;
+        track.scrollTo({ left: target, behavior: 'smooth' });
+      }
+
+      slides.forEach(function (slide, i) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', 'Go to image ' + (i + 1) + ' of ' + slides.length);
+        dot.className = 'w-2 h-2 rounded-full bg-coral-300 dark:bg-deep-600 transition-colors';
+        dot.addEventListener('click', function () { scrollToSlide(i); });
+        dotsWrap.appendChild(dot);
+      });
+      var dots = Array.prototype.slice.call(dotsWrap.children);
+
+      function activeIndex() {
+        var maxScroll = track.scrollWidth - track.clientWidth;
+        if (track.scrollLeft <= 4) return 0;
+        if (track.scrollLeft >= maxScroll - 4) return slides.length - 1;
+        var trackRect = track.getBoundingClientRect();
+        var center = trackRect.left + trackRect.width / 2;
+        var closest = 0, closestDist = Infinity;
+        slides.forEach(function (s, i) {
+          var r = s.getBoundingClientRect();
+          var d = Math.abs((r.left + r.width / 2) - center);
+          if (d < closestDist) { closestDist = d; closest = i; }
+        });
+        return closest;
+      }
+      function updateDots() {
+        var idx = activeIndex();
+        dots.forEach(function (d, i) {
+          d.classList.toggle('bg-coral-500', i === idx);
+          d.classList.toggle('bg-coral-300', i !== idx);
+          d.classList.toggle('dark:bg-deep-600', i !== idx);
+        });
+      }
+      var ticking = false;
+      track.addEventListener('scroll', function () {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function () { updateDots(); ticking = false; });
+      }, { passive: true });
+      if (prev) prev.addEventListener('click', function () { scrollToSlide(Math.max(0, activeIndex() - 1)); });
+      if (next) next.addEventListener('click', function () { scrollToSlide(Math.min(slides.length - 1, activeIndex() + 1)); });
+      updateDots();
+    })();
+  </script>
+</div>
+</body>
+</html>

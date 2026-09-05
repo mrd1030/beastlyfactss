@@ -1,0 +1,578 @@
+
+
+
+  
+  
+  
+  <style>
+    :root {
+      --orange: hsl(24 100% 63%);
+      --orange-soft: hsl(24 100% 70%);
+      --bg: hsl(34 55% 96%);
+      --bg-elevated: hsl(34 40% 98%);
+      --text: hsl(150 40% 10%);
+      --text-muted: hsl(150 15% 40%);
+      --border: hsl(34 25% 88%);
+      --card-shadow: 0 10px 30px rgba(26, 26, 26, 0.06);
+      --radius: 16px;
+      --max: 1080px;
+      --font: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: hsl(150 12% 7%);
+        --bg-elevated: hsl(150 10% 11%);
+        --text: hsl(34 15% 93%);
+        --text-muted: hsl(34 20% 60%);
+        --border: hsl(150 15% 18%);
+        --card-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max));
+      margin-inline: auto;
+    }
+
+    /* Header */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: color-mix(in srgb, var(--bg) 86%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.9rem 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--orange), var(--orange-soft));
+      box-shadow: 0 4px 12px rgba(232, 93, 4, 0.28);
+    }
+    .nav {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .nav a {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
+    }
+    .nav a:hover, .nav a[aria-current="page"] { color: var(--text); background: color-mix(in srgb, var(--orange) 10%, transparent); }
+    .nav a[aria-current="page"] { color: var(--orange); font-weight: 650; }
+
+    /* Hero */
+    .hero { padding: 2.75rem 0 2rem; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 0.85rem;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 18px;
+      height: 2px;
+      background: var(--orange);
+      border-radius: 2px;
+    }
+    h1 {
+      margin: 0 0 0.85rem;
+      font-size: clamp(1.9rem, 4vw, 2.85rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+    .lead {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 1.08rem;
+      max-width: 40rem;
+    }
+
+    /* Sections */
+    section { padding: 1.25rem 0 2.75rem; }
+    .section-head { margin-bottom: 1.25rem; }
+    h2 {
+      margin: 0;
+      font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+      letter-spacing: -0.02em;
+    }
+    .section-sub {
+      margin: 0.35rem 0 0;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    /* Product cards (store treatment: bigger, feature bullets) */
+    .grid.catalog {
+      display: grid;
+      gap: 1.25rem;
+    }
+    @media (min-width: 760px) {
+      .grid.catalog { grid-template-columns: repeat(3, 1fr); }
+    }
+    .product {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    .product:hover {
+      border-color: color-mix(in srgb, var(--orange) 40%, var(--border));
+      transform: translateY(-2px);
+    }
+    .product-media { aspect-ratio: 16 / 10; }
+    .product-media img { width: 100%; height: 100%; object-fit: cover; }
+    .product-body {
+      padding: 1.25rem 1.3rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      flex: 1;
+    }
+    .product-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .badge {
+      display: inline-flex;
+      width: fit-content;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--orange);
+      background: color-mix(in srgb, var(--orange) 12%, transparent);
+      padding: 0.28rem 0.55rem;
+      border-radius: 999px;
+    }
+    .price {
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    .product h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      letter-spacing: -0.015em;
+    }
+    .pages-tag {
+      margin: -0.35rem 0 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .bullets {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.45rem;
+      flex: 1;
+    }
+    .bullets li {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+    .bullets li::before {
+      content: "";
+      flex: none;
+      width: 6px;
+      height: 6px;
+      margin-top: 0.5rem;
+      border-radius: 50%;
+      background: var(--orange);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.8rem 1.15rem;
+      border-radius: 999px;
+      font-weight: 650;
+      font-size: 0.95rem;
+      border: 1px solid transparent;
+      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--orange);
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(232, 93, 4, 0.28);
+    }
+    .btn-primary:hover { background: var(--orange-soft); }
+    .btn-ghost {
+      background: transparent;
+      border-color: var(--border);
+      color: var(--text);
+    }
+    .btn-ghost:hover { border-color: color-mix(in srgb, var(--orange) 45%, var(--border)); }
+    .btn-block { width: 100%; margin-top: 0.2rem; }
+
+    /* How it works */
+    .how-grid {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 700px) {
+      .how-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .how-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.15rem 1.2rem;
+    }
+    .how-card strong { display: block; margin-bottom: 0.35rem; font-size: 1.02rem; }
+    .how-card p { margin: 0; color: var(--text-muted); font-size: 0.94rem; }
+
+    .cta-band {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      padding: 1.5rem 1.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .cta-band h2 { margin-bottom: 0.3rem; }
+    .cta-band p { margin: 0; color: var(--text-muted); }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.6rem 0 2.4rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+    }
+    .footer-links a:hover { color: var(--orange); }
+  </style>
+
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/" aria-label="BeastlyFacts home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>BeastlyFacts</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/store" aria-current="page">Store</a>
+        <a href="/about">About</a>
+        <a href="/why-we-exist">Why We Exist</a>
+        <a href="/faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">The full catalog</div>
+        <h1>Every BeastlyFacts care package, in one place.</h1>
+        <p class="lead">
+          Printable PDF owner manuals built from the same research standards as beastlyfacts.com.
+          Each link opens the product page in a new tab, so you keep your spot here.
+        </p>
+      </div>
+    </section>
+
+    <section id="catalog">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Care packages</h2>
+          <p class="section-sub">9 packages, $8.99 each. One time purchase, yours to keep.</p>
+        </div>
+        <div class="grid catalog">
+          <article class="product">
+            <div class="product-media">
+              <img src="https://public-files.gumroad.com/8z1vvv1brh27j8fn12mt5s4izm0z" alt="Bearded Dragon Care Package cover">
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <span class="badge">Reptile</span>
+                <span class="price">$8.99</span>
+              </div>
+              <h3>Bearded Dragon Care Package</h3>
+              <p class="pages-tag">22 pages · PDF · print or view · v2.0</p>
+              <ul class="bullets">
+                <li>Housing, heat and UVB, substrate, handling, diet, and enrichment in one guide</li>
+                <li>Health section with red flags, metabolic bone disease and impaction, respiratory infection and yellow fungus, and brumation, stuck shed, and glass surfing guidance</li>
+                <li>Shopping list, first 30 days checklist, owner log, and a daily and weekly routine</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://beastlyfacts.gumroad.com/l/beardeddragoncarepackage" target="_blank" rel="noopener noreferrer">Get the guide →</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-media">
+              <img src="https://public-files.gumroad.com/j6l5pdwxluup1tlalmbc88e6mqrx" alt="Leopard Gecko Care Package cover">
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <span class="badge">Reptile</span>
+                <span class="price">$8.99</span>
+              </div>
+              <h3>Leopard Gecko Care Package</h3>
+              <p class="pages-tag">22 pages · PDF · print or view · v1.0</p>
+              <ul class="bullets">
+                <li>Housing, belly heat and the three-hide humidity system, optional UVB, diet by age, handling, and enrichment in one guide</li>
+                <li>Health section with red flags, cryptosporidiosis, metabolic bone disease and impaction, and shedding, tail loss, egg binding, and prolapse guidance</li>
+                <li>Setup checklist, budget and shopping list, first 30 days checklist, symptom quick reference, owner log, and a daily, weekly, and seasonal routine</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://beastlyfacts.gumroad.com/l/leopardgeckocarepackage" target="_blank" rel="noopener noreferrer">Get the guide →</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-media">
+              <img src="https://public-files.gumroad.com/2icuul18qkr60te6v8e1jzqi3vvm" alt="Goldfish Care Package cover">
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <span class="badge">Fish</span>
+                <span class="price">$8.99</span>
+              </div>
+              <h3>Goldfish Care Package</h3>
+              <p class="pages-tag">21 pages · PDF · print or view · v1.0</p>
+              <ul class="bullets">
+                <li>Tank size, filtration and cycling, water quality, diet, and common mistakes</li>
+                <li>Red flags, swim bladder disease, ich and fin rot, cycling failure and dropsy, and handling and slime coat stress guidance</li>
+                <li>Water quality targets, shopping list, and a daily and weekly routine</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://beastlyfacts.gumroad.com/l/goldfishcarepackage" target="_blank" rel="noopener noreferrer">Get the guide →</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-media">
+              <img src="https://public-files.gumroad.com/6zba9255p5yhte5abvd08avjulcv" alt="Axolotl Care Package cover">
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <span class="badge">Amphibian</span>
+                <span class="price">$8.99</span>
+              </div>
+              <h3>Axolotl Care Package</h3>
+              <p class="pages-tag">20 pages · PDF · print or view · v1.0</p>
+              <ul class="bullets">
+                <li>Tank size, water temperature and quality, filtration, substrate, diet, handling, and enrichment in one guide</li>
+                <li>Health section with red flags, fungal infection, impaction, and heat stress guidance</li>
+                <li>Shopping list, first 30 days checklist, and a daily and weekly routine</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://beastlyfacts.gumroad.com/l/axolotlcarepackage" target="_blank" rel="noopener noreferrer">Get the guide →</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-media">
+              <img src="https://public-files.gumroad.com/m7ggu288hajb3rfxo87uzmpr45xz" alt="Budgie Care Package cover">
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <span class="badge">Bird</span>
+                <span class="price">$8.99</span>
+              </div>
+              <h3>Budgie Care Package</h3>
+              <p class="pages-tag">20 pages · PDF · print or view · v1.0</p>
+              <ul class="bullets">
+                <li>Cage size, bar spacing, diet ratios, handling, and enrichment in one guide</li>
+                <li>Health section with red flags, fatty liver and scaly face mites, and respiratory disease and egg binding guidance</li>
+                <li>Shopping list, first 30 days checklist, and a daily and weekly routine</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://beastlyfacts.gumroad.com/l/budgiecarepackage" target="_blank" rel="noopener noreferrer">Get the guide →</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-media">
+              <img src="https://public-files.gumroad.com/vv8vahkgez2zvg8bq2roehqhmwkq" alt="Crested Gecko Care Package cover">
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <span class="badge">Reptile</span>
+                <span class="price">$8.99</span>
+              </div>
+              <h3>Crested Gecko Care Package</h3>
+              <p class="pages-tag">21 pages · PDF · print or view · v1.0</p>
+              <ul class="bullets">
+                <li>Housing, temperature and humidity cycling, substrate, handling, diet, and enrichment in one guide</li>
+                <li>Health section with red flags, stuck shed and metabolic bone disease, and floppy tail syndrome, impaction, and tail loss guidance</li>
+                <li>Shopping list, first 30 days checklist, symptom table, and a daily and weekly routine</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://beastlyfacts.gumroad.com/l/crestedgeckocarepackage" target="_blank" rel="noopener noreferrer">Get the guide →</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-media">
+              <img src="https://public-files.gumroad.com/q7ktcgzkfrj13zgu1p9e56q757i5" alt="Guinea Pig Care Package cover">
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <span class="badge">Mammal</span>
+                <span class="price">$8.99</span>
+              </div>
+              <h3>Guinea Pig Care Package</h3>
+              <p class="pages-tag">22 pages · PDF · print or view · v1.0</p>
+              <ul class="bullets">
+                <li>Housing, temperature, substrate, handling, diet, and enrichment in one guide</li>
+                <li>Health section with red flags, vitamin C deficiency and dental disease, GI stasis and respiratory infection, and bladder stones and ovarian cyst guidance</li>
+                <li>Budget tiers, shopping list, first 30 days checklist, and a daily and weekly routine</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://beastlyfacts.gumroad.com/l/guineapigcarepackage" target="_blank" rel="noopener noreferrer">Get the guide →</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-media">
+              <img src="https://public-files.gumroad.com/4wkkh3y7p00uqewtojfjxmv0j91s" alt="Lovebird Care Package cover">
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <span class="badge">Bird</span>
+                <span class="price">$8.99</span>
+              </div>
+              <h3>Lovebird Care Package</h3>
+              <p class="pages-tag">21 pages · PDF · print or view · v1.0</p>
+              <ul class="bullets">
+                <li>Housing, bar spacing, diet, handling, and enrichment in one guide</li>
+                <li>Health section with red flags, chronic egg laying and egg binding, PBFD and respiratory disease, and feather plucking and behavioral health guidance</li>
+                <li>Budget tiers, shopping list, first 30 days checklist, and a daily and weekly routine</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://beastlyfacts.gumroad.com/l/lovebirdcarepackage" target="_blank" rel="noopener noreferrer">Get the guide →</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-media">
+              <img src="https://public-files.gumroad.com/1gh7for81hcwsfl7gx1n2hnyi8d7" alt="Russian Tortoise Care Package cover">
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <span class="badge">Reptile</span>
+                <span class="price">$8.99</span>
+              </div>
+              <h3>Russian Tortoise Care Package</h3>
+              <p class="pages-tag">21 pages · PDF · print or view · v1.0</p>
+              <ul class="bullets">
+                <li>Housing, temperature and UVB, substrate, diet, brumation and seasonal care, handling, and enrichment in one guide</li>
+                <li>Health section with red flags, metabolic bone disease and pyramiding, and respiratory infection, shell rot, and parasite guidance</li>
+                <li>Shopping list, first 30 days checklist, symptom reference, and a daily and weekly routine</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://beastlyfacts.gumroad.com/l/russiantortoisecarepackage" target="_blank" rel="noopener noreferrer">Get the guide →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How every package works</h2>
+          <p class="section-sub">Same format across the catalog, so you know what you are getting.</p>
+        </div>
+        <div class="how-grid">
+          <div class="how-card">
+            <strong>Print-first pages</strong>
+            <p>The high-use tools such as targets, shopping lists, and routines are marked so you can print just those and keep the rest as reference.</p>
+          </div>
+          <div class="how-card">
+            <strong>Built for real use</strong>
+            <p>Bold Never rules call out the mistakes that cause the most harm. No external links or website CTAs inside the document itself.</p>
+          </div>
+          <div class="how-card">
+            <strong>Not a vet replacement</strong>
+            <p>Each package is a husbandry reference, not a substitute for a vet familiar with your pet's species.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <div class="wrap">
+        <div class="cta-band">
+          <div>
+            <h2>Questions before you buy?</h2>
+            <p>Format, printing, and refunds are answered on the FAQ page.</p>
+          </div>
+          <a class="btn btn-ghost" href="/faq">Read the FAQ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>© BeastlyFacts · Practical care guides for curious animal lovers</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/why-we-exist">Why We Exist</a>
+        <a href="/faq">FAQ</a>
+        <a href="https://beastlyfacts.com" target="_blank" rel="noopener noreferrer">Website</a>
+      </div>
+    </div>
+  </footer>
+
+

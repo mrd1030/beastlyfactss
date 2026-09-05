@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bearded Dragon Care Package</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'media',
+    theme: {
+      extend: {
+        colors: {
+          ember: { 950:'#1C0E08', 900:'#2B140A', 800:'#421D0E', 700:'#5C2810' },
+          fire: { 400:'#F2A93C', 500:'#E8862A', 600:'#D2551F', 700:'#B33F1E' },
+          sand: { 50:'#FBF5EC', 100:'#F4E7D3' }
+        },
+        fontFamily: { display: ['Fredoka','system-ui','sans-serif'], body: ['"Atkinson Hyperlegible Next"','system-ui','sans-serif'] },
+        boxShadow: { ember: '0 0 46px rgba(232,134,42,0.45)' }
+      }
+    }
+  }
+</script>
+<style>
+  @keyframes rise { 0% { transform: translateY(0); } 50% { transform: translateY(-6px); } 100% { transform: translateY(0); } }
+  @keyframes spin-slow { to { transform: rotate(360deg); } }
+  @keyframes emberPulse { 0%,100% { box-shadow: 0 0 30px rgba(232,134,42,.35); } 50% { box-shadow: 0 0 54px rgba(232,134,42,.65); } }
+  .sun-icon { display:inline-block; animation: spin-slow 18s linear infinite; }
+  .rise { animation: rise 3.2s ease-in-out infinite; }
+  .ember-pulse { animation: emberPulse 2.6s ease-in-out infinite; }
+  .scales { position: relative; }
+  .scales::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle at 0 0, transparent 11px, rgba(242,169,60,.10) 12px, rgba(242,169,60,.10) 13px, transparent 14px);
+    background-size: 30px 30px;
+  }
+  .reveal { opacity:0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity:1; transform:none; }
+  #gallery-track { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    .sun-icon, .rise, .ember-pulse { animation: none !important; }
+    .reveal { opacity:1 !important; transform:none !important; transition:none !important; }
+    #gallery-track { scroll-behavior: auto; }
+  }
+  ::selection { background: #E8862A; color:#fff; }
+  :focus-visible { outline: 3px solid #E8862A; outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="min-h-screen bg-sand-50 text-ember-950 dark:bg-ember-950 dark:text-sand-100 font-body antialiased">
+
+  <a href="#buy" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-fire-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-full">Skip to buy</a>
+
+  <!-- HERO -->
+  <header class="relative overflow-hidden bg-gradient-to-br from-fire-700 via-fire-600 to-fire-500 text-white scales">
+    <nav class="relative z-10 max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="https://beastlyfacts.com/care-packages/" target="_blank" rel="noopener noreferrer" class="font-display font-semibold text-lg tracking-tight flex items-center gap-2">
+        <span class="w-7 h-7 rounded-lg bg-white/95 shadow-ember" aria-hidden="true"></span>
+        BeastlyFacts
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="https://beastlyfacts.com/care-packages/" target="_blank" rel="noopener noreferrer" class="text-sm text-white/85 hover:text-ember-950 transition-colors">Visit Website &rarr;</a>
+        <a href="https://beastlyfacts.gumroad.com/store" onclick="window.top.location.href=this.href;return false;" class="text-sm text-white/85 hover:text-ember-950 transition-colors">Full store &rarr;</a>
+      </div>
+    </nav>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pt-6 pb-20 grid gap-10 lg:grid-cols-2 lg:items-center">
+      <div>
+        <p class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-ember-950/80 mb-4">
+          <span class="sun-icon" aria-hidden="true">☀️</span> Printable owner manual
+        </p>
+        <h1 class="font-display text-4xl sm:text-5xl leading-[1.05] tracking-tight mb-5 text-white drop-shadow-sm">
+          Basking temps you don't have to guess at.
+        </h1>
+        <p class="text-lg text-white/90 max-w-lg mb-6">
+          A 22-page printable manual with basking, UVB, and diet targets split by age, not one blurry range copied across a dozen care sheets.
+        </p>
+        <div class="flex flex-wrap items-center gap-4 mb-8">
+          <a href="#buy" data-gumroad-action="buy" class="ember-pulse inline-flex items-center gap-2 bg-white hover:bg-sand-50 text-fire-700 font-semibold px-6 py-3.5 rounded-full transition-transform hover:-translate-y-0.5">
+            Get the guide, <span data-gumroad-field="price">$8.99</span>
+          </a>
+          <span class="text-sm text-white/85">One time purchase &middot; Instant PDF download</span>
+        </div>
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/85">
+          <li class="flex items-center gap-1.5"><span aria-hidden="true">✓</span> 22 pages, print or view</li>
+          <li class="flex items-center gap-1.5"><span aria-hidden="true">✓</span> Beginner and intermediate friendly</li>
+          <li class="flex items-center gap-1.5"><span aria-hidden="true">✓</span> No external links inside the PDF</li>
+        </ul>
+      </div>
+
+      <div class="relative reveal">
+        <div class="rise rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/20 rotate-1 hover:rotate-0 transition-transform duration-500">
+          <img src="https://public-files.gumroad.com/8z1vvv1brh27j8fn12mt5s4izm0z" alt="Bearded Dragon Care Package cover, printable PDF owner manual" class="w-full h-auto" width="1280" height="720" />
+        </div>
+        <div class="absolute -bottom-5 -left-5 bg-sand-50 text-ember-950 rounded-2xl shadow-xl px-4 py-3 hidden sm:block">
+          <p class="font-display text-xl leading-none" data-gumroad-field="rating">Be the first</p>
+          <p class="text-xs text-fire-700" data-gumroad-field="review-count">to review this guide</p>
+        </div>
+      </div>
+    </div>
+
+    <svg class="relative block w-full text-sand-50 dark:text-ember-950" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0,20 C220,58 460,4 720,28 C980,52 1220,10 1440,32 L1440,60 L0,60 Z"></path></svg>
+  </header>
+
+  <main>
+    <!-- PAIN / CONTRAST -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+      <div class="reveal grid gap-6 sm:grid-cols-2">
+        <div class="rounded-2xl border border-rose-200 dark:border-rose-900/50 bg-rose-50 dark:bg-rose-950/30 p-6">
+          <p class="text-xs font-bold tracking-widest uppercase text-rose-600 dark:text-rose-400 mb-3">Care-sheet roulette</p>
+          <ul class="space-y-2.5 text-sm text-ember-900/80 dark:text-sand-100/70">
+            <li>Basking temps that vary 15+ degrees between sources</li>
+            <li>UVB replacement schedules nobody agrees on</li>
+            <li>No idea what glass surfing even means</li>
+            <li>Stuck shed advice that quietly makes it worse</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-fire-200 dark:border-fire-800/60 bg-fire-50 dark:bg-ember-900/60 p-6">
+          <p class="text-xs font-bold tracking-widest uppercase text-fire-700 dark:text-fire-400 mb-3">This guide</p>
+          <ul class="space-y-2.5 text-sm text-ember-950 dark:text-sand-100/90">
+            <li>One basking target, split by age, with the why</li>
+            <li>UVB replacement interval stated plainly</li>
+            <li>Glass surfing explained, with the actual fix</li>
+            <li>Stuck shed handled the safe way, step by step</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S INSIDE -->
+    <section class="bg-fire-50/50 dark:bg-white/[0.03] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="reveal mb-10 max-w-xl">
+          <p class="text-xs font-bold tracking-widest uppercase text-fire-600 dark:text-fire-400 mb-2">What's inside &middot; 22 pages</p>
+          <h2 class="font-display text-3xl tracking-tight">Everything from first setup to daily routine.</h2>
+        </div>
+        <div class="reveal grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white dark:bg-ember-900/40 rounded-xl p-5 border border-fire-100 dark:border-ember-700">
+            <p class="text-2xl mb-2" aria-hidden="true">🏠</p>
+            <h3 class="font-semibold mb-1">Housing &amp; setup</h3>
+            <p class="text-sm text-ember-900/70 dark:text-sand-100/65">Housing, heat and UVB, substrate, handling, diet, and enrichment in one guide.</p>
+          </div>
+          <div class="bg-white dark:bg-ember-900/40 rounded-xl p-5 border border-fire-100 dark:border-ember-700">
+            <p class="text-2xl mb-2" aria-hidden="true">⚠️</p>
+            <h3 class="font-semibold mb-1">Health &amp; red flags</h3>
+            <p class="text-sm text-ember-900/70 dark:text-sand-100/65">Metabolic bone disease, impaction, respiratory infection, and yellow fungus.</p>
+          </div>
+          <div class="bg-white dark:bg-ember-900/40 rounded-xl p-5 border border-fire-100 dark:border-ember-700">
+            <p class="text-2xl mb-2" aria-hidden="true">🪟</p>
+            <h3 class="font-semibold mb-1">Brumation &amp; shedding</h3>
+            <p class="text-sm text-ember-900/70 dark:text-sand-100/65">Brumation, stuck shed, and glass surfing, explained and fixed.</p>
+          </div>
+          <div class="bg-white dark:bg-ember-900/40 rounded-xl p-5 border border-fire-100 dark:border-ember-700">
+            <p class="text-2xl mb-2" aria-hidden="true">🥗</p>
+            <h3 class="font-semibold mb-1">Diet by age</h3>
+            <p class="text-sm text-ember-900/70 dark:text-sand-100/65">Diet ratios that actually shift as your dragon grows up.</p>
+          </div>
+          <div class="bg-white dark:bg-ember-900/40 rounded-xl p-5 border border-fire-100 dark:border-ember-700">
+            <p class="text-2xl mb-2" aria-hidden="true">🧰</p>
+            <h3 class="font-semibold mb-1">Owner tools</h3>
+            <p class="text-sm text-ember-900/70 dark:text-sand-100/65">Shopping list, first 30 days checklist, owner log, and a daily and weekly routine.</p>
+          </div>
+          <div class="bg-white dark:bg-ember-900/40 rounded-xl p-5 border border-fire-100 dark:border-ember-700">
+            <p class="text-2xl mb-2" aria-hidden="true">📖</p>
+            <h3 class="font-semibold mb-1">Symptom table &amp; glossary</h3>
+            <p class="text-sm text-ember-900/70 dark:text-sand-100/65">Quick reference table plus every term defined, alphabetically.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREVIEW GALLERY (carousel) -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+      <div class="reveal mb-8 max-w-xl">
+        <p class="text-xs font-bold tracking-widest uppercase text-fire-600 dark:text-fire-400 mb-2">Take a look inside</p>
+        <h2 class="font-display text-3xl tracking-tight">Bold Never rules, impossible to miss.</h2>
+      </div>
+      <div class="reveal relative">
+        <div id="gallery-track" class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 -mx-6 px-6 [scrollbar-width:none] [-ms-overflow-style:none] [&amp;::-webkit-scrollbar]:hidden">
+          <img src="https://public-files.gumroad.com/8z1vvv1brh27j8fn12mt5s4izm0z" alt="Bearded Dragon Care Package cover page" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-fire-100 dark:border-ember-700" />
+          <img src="https://public-files.gumroad.com/6gt1jhlxc50yd0nf6iq0aa8e8880" alt="Bearded Dragon Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-fire-100 dark:border-ember-700" />
+          <img src="https://public-files.gumroad.com/vtwx2i3j9acsk2mbstsq98w1p59k" alt="Bearded Dragon Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-fire-100 dark:border-ember-700" />
+          <img src="https://public-files.gumroad.com/20k02cukcw7knfegrslrth4b8ngh" alt="Bearded Dragon Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-fire-100 dark:border-ember-700" />
+          <img src="https://public-files.gumroad.com/ii36t5jv7vc7zi84hbhpk0glwl35" alt="Bearded Dragon Care Package interior page sample" class="snap-center flex-shrink-0 w-[80%] sm:w-[42%] aspect-[4/3] object-cover rounded-xl shadow-lg border border-fire-100 dark:border-ember-700" />
+        </div>
+        <button id="gallery-prev" type="button" aria-label="Previous image" class="hidden sm:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-white dark:bg-ember-800 shadow-lg items-center justify-center text-ember-900 dark:text-sand-100 hover:bg-fire-100 dark:hover:bg-ember-700 transition-colors text-xl leading-none">&lsaquo;</button>
+        <button id="gallery-next" type="button" aria-label="Next image" class="hidden sm:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white dark:bg-ember-800 shadow-lg items-center justify-center text-ember-900 dark:text-sand-100 hover:bg-fire-100 dark:hover:bg-ember-700 transition-colors text-xl leading-none">&rsaquo;</button>
+        <div id="gallery-dots" class="flex justify-center gap-2 mt-4"></div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR / DISCLAIMER -->
+    <section class="bg-ember-900 dark:bg-black/40 text-sand-50 py-16 scales">
+      <div class="max-w-5xl mx-auto px-6 grid gap-8 sm:grid-cols-2">
+        <div class="reveal">
+          <h2 class="font-display text-2xl mb-3">Who this is for</h2>
+          <ul class="space-y-2 text-sand-100/80 text-sm">
+            <li>New bearded dragon owners setting up correctly the first time</li>
+            <li>Keepers who want a single offline reference instead of scattered tabs</li>
+            <li>Anyone who prefers clear checklists over long internet rabbit holes</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h2 class="font-display text-2xl mb-3">What it's not</h2>
+          <ul class="space-y-2 text-sand-100/80 text-sm">
+            <li>Not a substitute for a reptile-experienced veterinarian</li>
+            <li>Not a live website mirror, a clean printable package instead</li>
+            <li>Not a subscription, one purchase and it's yours to keep</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="buy" class="max-w-4xl mx-auto px-6 py-20 text-center">
+      <p class="text-xs font-bold tracking-widest uppercase text-fire-600 dark:text-fire-400 mb-3">Ready when you are</p>
+      <h2 class="font-display text-3xl sm:text-4xl tracking-tight mb-4" data-gumroad-field="name">Bearded Dragon Care Package</h2>
+      <p class="text-ember-900/70 dark:text-sand-100/70 mb-8 max-w-md mx-auto">22 pages. PDF. Print it or keep it open on your phone, tablet, or computer. Yours the moment you check out.</p>
+      <a href="#" data-gumroad-action="buy" class="ember-pulse inline-flex items-center gap-2 bg-fire-600 hover:bg-fire-500 text-white font-semibold text-lg px-8 py-4 rounded-full transition-transform hover:-translate-y-0.5">
+        I want this, <span data-gumroad-field="price">$8.99</span>
+      </a>
+      <p class="mt-4 text-xs text-ember-900/60 dark:text-sand-100/50">Questions first? <a href="https://beastlyfacts.gumroad.com/faq" onclick="window.top.location.href=this.href;return false;" class="underline hover:text-fire-600 dark:hover:text-fire-400">Read the FAQ</a></p>
+    </section>
+  </main>
+
+  <footer class="border-t border-fire-100 dark:border-ember-700 py-10">
+    <div class="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-between gap-4 text-sm text-ember-900/70 dark:text-sand-100/60">
+      <p>&copy; BeastlyFacts &middot; Practical care guides for curious animal lovers</p>
+      <div class="flex flex-wrap gap-x-5 gap-y-2">
+        <a href="https://beastlyfacts.com/care-packages/" target="_blank" rel="noopener noreferrer" class="hover:text-fire-600 dark:hover:text-fire-400">Home</a>
+        <a href="https://beastlyfacts.gumroad.com/store" onclick="window.top.location.href=this.href;return false;" class="hover:text-fire-600 dark:hover:text-fire-400">Store</a>
+        <a href="https://beastlyfacts.gumroad.com/about" onclick="window.top.location.href=this.href;return false;" class="hover:text-fire-600 dark:hover:text-fire-400">About</a>
+        <a href="https://beastlyfacts.gumroad.com/faq" onclick="window.top.location.href=this.href;return false;" class="hover:text-fire-600 dark:hover:text-fire-400">FAQ</a>
+        <a href="https://beastlyfacts.com" target="_blank" rel="noopener noreferrer" class="hover:text-fire-600 dark:hover:text-fire-400">beastlyfacts.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || !els.length) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+
+    (function () {
+      var track = document.getElementById('gallery-track');
+      var prev = document.getElementById('gallery-prev');
+      var next = document.getElementById('gallery-next');
+      var dotsWrap = document.getElementById('gallery-dots');
+      if (!track || !dotsWrap) return;
+      var slides = Array.prototype.slice.call(track.children);
+
+      function scrollToSlide(i) {
+        var maxScroll = track.scrollWidth - track.clientWidth;
+        var target;
+        if (i <= 0) target = 0;
+        else if (i >= slides.length - 1) target = maxScroll;
+        else target = slides[i].offsetLeft - (track.clientWidth - slides[i].offsetWidth) / 2;
+        track.scrollTo({ left: target, behavior: 'smooth' });
+      }
+
+      slides.forEach(function (slide, i) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', 'Go to image ' + (i + 1) + ' of ' + slides.length);
+        dot.className = 'w-2 h-2 rounded-full bg-fire-300 dark:bg-ember-600 transition-colors';
+        dot.addEventListener('click', function () { scrollToSlide(i); });
+        dotsWrap.appendChild(dot);
+      });
+      var dots = Array.prototype.slice.call(dotsWrap.children);
+
+      function activeIndex() {
+        var maxScroll = track.scrollWidth - track.clientWidth;
+        if (track.scrollLeft <= 4) return 0;
+        if (track.scrollLeft >= maxScroll - 4) return slides.length - 1;
+        var trackRect = track.getBoundingClientRect();
+        var center = trackRect.left + trackRect.width / 2;
+        var closest = 0, closestDist = Infinity;
+        slides.forEach(function (s, i) {
+          var r = s.getBoundingClientRect();
+          var d = Math.abs((r.left + r.width / 2) - center);
+          if (d < closestDist) { closestDist = d; closest = i; }
+        });
+        return closest;
+      }
+      function updateDots() {
+        var idx = activeIndex();
+        dots.forEach(function (d, i) {
+          d.classList.toggle('bg-fire-500', i === idx);
+          d.classList.toggle('bg-fire-300', i !== idx);
+          d.classList.toggle('dark:bg-ember-600', i !== idx);
+        });
+      }
+      var ticking = false;
+      track.addEventListener('scroll', function () {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function () { updateDots(); ticking = false; });
+      }, { passive: true });
+      if (prev) prev.addEventListener('click', function () { scrollToSlide(Math.max(0, activeIndex() - 1)); });
+      if (next) next.addEventListener('click', function () { scrollToSlide(Math.min(slides.length - 1, activeIndex() + 1)); });
+      updateDots();
+    })();
+  </script>
+</div>
+</body>
+</html>
