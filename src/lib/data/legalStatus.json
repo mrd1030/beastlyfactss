@@ -95,38 +95,38 @@
       "NE"
     ],
     "remaining": 0,
-    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 12 of the 52 jurisdictions have now been read for all 52 animals and 33 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
+    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 13,
+        "checked": 14,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 13,
+        "checked": 14,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 14,
+        "checked": 15,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 14,
+        "checked": 15,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 14,
+        "checked": 15,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 14,
+        "checked": 15,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 14,
+        "checked": 15,
         "of": 51
       },
       "green-anole": {
-        "checked": 14,
+        "checked": 15,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,99 +134,99 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "axolotl": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "box-turtle": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 39,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 39,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 39,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 39,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 40,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 40,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 40,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 40,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 41,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 42,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "green-iguana": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "burmese-python": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "degu": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "hamster": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "gerbil": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "bengal-cat": {
@@ -234,7 +234,7 @@
         "of": 51
       },
       "guinea-pig": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "milk-snake": {
@@ -246,11 +246,11 @@
         "of": 51
       },
       "veiled-chameleon": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "boa-constrictor": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "corn-snake": {
@@ -676,8 +676,8 @@
     },
     "md-10-621": {
       "title": "Md. Code, Criminal Law § 10-621, Importing, selling or possessing certain animals",
-      "url": "https://www.animallaw.info/statute/md-exotic-pets-subtitle-6-crimes-relating-animals",
-      "note": "Misdemeanour: a fine up to $1,000 for an individual, $10,000 otherwise, and the animal may be seized immediately with costs falling on the keeper unless the seizure proves unjustified. Counties and municipalities may be stricter. Note COMAR 15.11.16.01, which is titled List of Prohibited Animals, is an agriculture rule about feral swine only and is not the exotic pet provision."
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcr&section=10-621&enactments=false",
+      "note": "Maryland's dangerous animal list, on the General Assembly's own site. Eight clauses and nothing else: fox, skunk, raccoon or bear; caiman, alligator or crocodile; any cat other than the domestic cat; a cat hybrid over 30 pounds; any dog other than the domestic dog and any dog hybrid; non-human primates; and venomous snakes of four named families. A misdemeanour, and subsection (e) says in terms that counties and municipalities may go further. Note COMAR 15.11.16.01, titled List of Prohibited Animals, is an agriculture rule about feral swine and is not this provision."
     },
     "nm-19-35-7": {
       "title": "N.M. Admin. Code 19.35.7, Importation of Live Non-domesticated Animals, Birds and Fish",
@@ -985,9 +985,9 @@
       "note": "MassWildlife's official exemption list under M.G.L. c. 131, section 23, only species actually named in it may be imported, sold, or possessed without a license."
     },
     "md-native-herp": {
-      "title": "COMAR 08.03.11 (formerly cited as 08.03.09, adopted 1993)",
+      "title": "COMAR 08.03.11, Reptile and Amphibian Possession and Permits",
       "url": "https://regs.maryland.gov/us/md/exec/comar/08.03.11/index.full.html",
-      "note": "Maryland's native reptile and amphibian possession permit chapter, permanently adopted December 1, 1993, and renumbered from 08.03.09 to 08.03.11 since then."
+      "note": "Maryland's native reptile and amphibian chapter, adopted 1993 and amended through 2016, renumbered from 08.03.09. It works off three lists in Regulation .03: .03A species may be kept four per species without a permit, .03B species one only, and .03C species not at all outside a scientific collection or endangered species permit. A species on none of the three lists is not native to Maryland and the chapter does not reach it. Regulation .03D provides that where both names are given, the scientific name controls."
     },
     "ne-captive-wildlife": {
       "title": "163 Neb. Admin. Code ch. 4, § 008",
@@ -1069,11 +1069,6 @@
       "url": "https://codes.ohio.gov/ohio-revised-code/chapter-1531",
       "note": "Ohio's Division of Wildlife chapter, which defines game quadrupeds (including the flying squirrel) and requires a permit to possess native wildlife."
     },
-    "md-10-901": {
-      "title": "Maryland Natural Resources Code § 10-901",
-      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=10-901&enactments=false",
-      "note": "Opens Maryland's Captive Wildlife subtitle with legislative findings supporting strict regulation of possessing wildlife native to the state."
-    },
     "hi-4-71-6-prohibited": {
       "title": "Hawaii Administrative Rules § 4-71-6, List of Prohibited Animals",
       "url": "https://dab.hawaii.gov/wp-content/uploads/2019/08/List-of-Prohibited-Animals.pdf",
@@ -1098,11 +1093,6 @@
       "title": "Delaware Code, Title 3, Chapter 72 — Possession of Mammals or Reptiles Exotic to Delaware",
       "url": "https://delcode.delaware.gov/title3/c072/index.html",
       "note": "§7201 requires a permit before bringing in, possessing, selling, or exhibiting any live wild mammal or reptile not native to Delaware; the California kingsnake, a Pacific coast species, falls under this permit requirement."
-    },
-    "md-not-native": {
-      "title": "Md. Code, Criminal Law § 10-621, Import, Offer, or Transfer of Dangerous Animal",
-      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcr&section=10-621&enactments=false",
-      "note": "The dangerous-animal list covers only specific mammals, crocodilians, and venomous snakes of four named families; non-venomous colubrids like the kingsnake and companion birds like cockatoos are both absent from it."
     },
     "al-exotic-birds": {
       "title": "Ala. Admin. Code r. 220-2-.26, Restrictions On Possession, Sale, Importation And/Or Release Of Certain Animals And Fish",
@@ -1318,6 +1308,16 @@
       "title": "Connecticut DEEP wildlife fact sheets, listing status",
       "url": "https://portal.ct.gov/deep/wildlife/fact-sheets/eastern-box-turtle",
       "note": "DEEP's own species pages carry the state listing status in their header, which is what decides whether an animal is a Category Four Wild Animal under § 26-55-6. The eastern box turtle and the eastern hog-nosed snake are both State Species of Special Concern; the common snapping turtle is not listed. Fact sheet URLs follow the common name with hyphens, but not predictably: eastern-hog-nosed-snake works and eastern-hognose-snake does not."
+    },
+    "md-10-902": {
+      "title": "Md. Code, Natural Resources § 10-902, Permit required for native wildlife",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=10-902&enactments=false",
+      "note": "The captive wildlife permit requirement, and the reason a native Maryland mammal is not a free pet here: anyone wishing to possess any wildlife native to Maryland must first obtain a permit or licence from the Department. Subsection (b)(2) lets the Secretary exempt species by regulation, which is what COMAR 08.03.11 does for reptiles and amphibians. Section 10-903 gives a separate power to restrict NON-native wildlife by regulation, which Maryland has used for aquatic organisms and not for pet mammals, birds or reptiles. Section 10-101(dd) defines wildlife broadly enough to reach an invertebrate, but the permit only ever attaches to natives."
+    },
+    "md-snapping-turtle": {
+      "title": "COMAR 08.02.06, Snapping Turtles",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/08.02.06/index.full.html",
+      "note": "Maryland handles the snapping turtle through the Fisheries Service rather than the wildlife rules, which is why it appears on none of the three native herptile lists in COMAR 08.03.11. This chapter governs taking one from the wild: prohibited gear, a season, a measuring method and a harvest permit card."
     }
   },
   "animals": {
@@ -1510,11 +1510,11 @@
         "MD": {
           "status": "legal",
           "sourceId": "md-10-621",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04",
-          "cite": "Crim. Law § 10-621",
-          "quote": "fox, skunk, raccoon, or bear",
-          "note": "Maryland's list names the cat family, several primates, and this short group of rabies vector species. An insectivore is none of them. Counties and municipalities may be stricter than the state here."
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No insectivore appears in the eight clauses, and the African pygmy hedgehog is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "NM": {
           "status": "legal",
@@ -1883,9 +1883,11 @@
         "MD": {
           "status": "legal",
           "sourceId": "md-10-621",
-          "note": "Mustelids are absent; only skunk and raccoon are named among small carnivores.",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No mustelid appears in the eight clauses; the small carnivores named are the skunk and the raccoon, and both are named as rabies vector species rather than as mustelids. The domestic ferret is not native Maryland wildlife either. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "NM": {
           "status": "legal",
@@ -2295,11 +2297,11 @@
         "MD": {
           "status": "legal",
           "sourceId": "md-10-621",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04",
-          "cite": "Crim. Law § 10-621",
-          "quote": "fox, skunk, raccoon, or bear",
-          "note": "No marsupial appears on the list. Counties and municipalities may be stricter than the state."
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No marsupial appears in the eight clauses, and the sugar glider is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "NM": {
           "status": "permit",
@@ -2884,6 +2886,15 @@
           "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
           "note": "Connecticut puts the whole order Rodentia in Category Two, which bars private possession, and then excepts nine species. The Syrian or golden hamster, Mesocricetus auratus is one of them, so it is named in the regulation rather than merely absent from it. Connecticut names the binomial correctly and separately excepts the dwarf hamsters of the genera Phodopus and Cricetulus, so both pet hamster groups are covered. Oregon writes the same exception with the wrong binomial and leaves the pet hamster unlisted; this is what the clause is supposed to look like.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the hamster is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3246,6 +3257,15 @@
           "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
           "note": "Connecticut puts the whole order Rodentia in Category Two, which bars private possession, and then excepts nine species. The gerbil, Meriones unguiculatus is one of them, so it is named in the regulation rather than merely absent from it. Named to the species. Everything in Rodentia that is not one of the nine, the prairie dog and the degu included, is Category Two and barred to private keepers.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the gerbil is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "encyclopediaId": "gerbil"
@@ -3618,6 +3638,15 @@
           "quote": "Monk parakeet (Myiopsitta monachus)",
           "note": "Connecticut names the monk parakeet by species in Category Two, and it is the only psittacine anywhere in the regulation. Every other parrot falls outside all four categories and is unrestricted, so this is a single-species rule sitting in the middle of an otherwise untouched order. Subsection (b)(3) allows possession of a Category Two animal only by a vet treating it, a municipal park, zoo, marine mammal park, aquarium, nature centre, museum, exhibitor, laboratory or research facility. There is no private permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. The statute reaches no bird at all, and the monk parakeet is named nowhere in Maryland law. That is worth stating plainly, because this is the species most states single out if they single out any parrot: California, Connecticut, New Jersey and Virginia all name it, and Colorado prohibits it outright. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "encyclopediaId": "quaker-parakeet"
@@ -3665,10 +3694,15 @@
         "MD": {
           "status": "conditional",
           "sourceId": "md-10-621",
-          "quote": "hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds",
-          "note": "Maryland draws the line by weight rather than by generation. A Bengal under 30 lb is outside the prohibition, which most Bengals are.",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "cite": "Crim. Law § 10-621(b)(1)(iv)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland is the one state on this map that answers the hybrid cat question by weight. The prohibition reaches a cat hybrid only \"if the hybrid weighs over 30 pounds\", with no generation test, no registry requirement and no reference to filial number at all. Most Bengals are well under that, so most Bengals are lawful, and the same clause would catch a large Savannah. The line is drawn on the individual animal rather than on its ancestry, which means the answer can in principle change as a cat grows. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "ID": {
           "status": "legal",
@@ -4366,6 +4400,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A veiled chameleon is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No chameleon is native to Maryland; the native lizards are three skinks, the eastern fence lizard and the six-lined racerunner. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4724,6 +4767,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No tortoise appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three. One caveat that applies to every Connecticut turtle on this map: Conn. Gen. Stat. § 26-78 addresses turtles separately from the regulation, and it could not be read this sitting because cga.ct.gov refuses every connection from this container. This entry rests on § 26-55-6, which is the comprehensive rule and mentions no turtle sale ban, and the point is flagged rather than assumed away.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No tortoise is native to Maryland; the native testudines are pond and box turtles, softshells and the terrapin. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/russian-tortoise-legal-guide/"
@@ -4821,10 +4873,12 @@
         },
         "MD": {
           "status": "legal",
-          "sourceId": "md-10-621",
-          "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Pythonidae is not among the four venomous families named, and no python is a Maryland native. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "DE": {
           "status": "permit",
@@ -5468,6 +5522,15 @@
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A boa constrictor is a snake, so it needs to have come from a permitted breeder or to have been held before 1 August 2021. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. The four snake families Maryland names are Hydrophidae, Elapidae, Viperidae and Crotolidae, all venomous. There is no constrictor length rule anywhere in the statute. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -5794,6 +5857,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. A tarantula appears in none of them. This one is worth stating carefully, because Connecticut is unusual in that its definition of wild animal does reach invertebrates, and the section is titled importation, possession or liberation of wild birds, mammals, reptiles, amphibians and invertebrates. So the answer here is not the jurisdictional gap that clears the same animal in Arizona, Nevada and Pennsylvania; Connecticut has the authority and has simply not used it against any terrestrial arthropod. The only invertebrates that could be caught are ones on the state endangered, threatened and special concern list, which is Connecticut's own beetles, dragonflies and mussels.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-902",
+          "cite": "Nat. Res. § 10-101(dd), § 10-902(a), § 10-903",
+          "quote": "\"Wildlife\" means, except as provided in § 10-2A-01 of this title, every living creature, not human, wild by nature, endowed with sensation and power of voluntary motion. (2) \"Wildlife\" includes mammals, birds, amphibians, and reptiles which spend a majority of their life cycle on land",
+          "note": "A tarantula is worth reading carefully in Maryland, because the definition is broad rather than narrow. Unlike Arizona, Nevada and Oregon, whose wildlife definitions list vertebrate groups and stop, Maryland's opening words are \"every living creature, not human, wild by nature\", with the vertebrate list following as an inclusion rather than a limit. What saves the answer is the operative section rather than the definition: § 10-902 attaches its permit only to wildlife native to Maryland, and this species is not. Section 10-903 gives the Secretary a separate power to restrict non-native wildlife by regulation, and Maryland has used it for nonnative aquatic organisms at COMAR 08.02.19, a list of fish, crustaceans, molluscs and two plants, and for nothing terrestrial. Crim. Law § 10-621 reaches no invertebrate either. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "scientific": "Theraphosidae",
@@ -6123,6 +6195,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The emperor scorpion appears in none of them. This one is worth stating carefully, because Connecticut is unusual in that its definition of wild animal does reach invertebrates, and the section is titled importation, possession or liberation of wild birds, mammals, reptiles, amphibians and invertebrates. So the answer here is not the jurisdictional gap that clears the same animal in Arizona, Nevada and Pennsylvania; Connecticut has the authority and has simply not used it against any terrestrial arthropod. The only invertebrates that could be caught are ones on the state endangered, threatened and special concern list, which is Connecticut's own beetles, dragonflies and mussels.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-902",
+          "cite": "Nat. Res. § 10-101(dd), § 10-902(a), § 10-903",
+          "quote": "\"Wildlife\" means, except as provided in § 10-2A-01 of this title, every living creature, not human, wild by nature, endowed with sensation and power of voluntary motion. (2) \"Wildlife\" includes mammals, birds, amphibians, and reptiles which spend a majority of their life cycle on land",
+          "note": "The emperor scorpion is worth reading carefully in Maryland, because the definition is broad rather than narrow. Unlike Arizona, Nevada and Oregon, whose wildlife definitions list vertebrate groups and stop, Maryland's opening words are \"every living creature, not human, wild by nature\", with the vertebrate list following as an inclusion rather than a limit. What saves the answer is the operative section rather than the definition: § 10-902 attaches its permit only to wildlife native to Maryland, and this species is not. Section 10-903 gives the Secretary a separate power to restrict non-native wildlife by regulation, and Maryland has used it for nonnative aquatic organisms at COMAR 08.02.19, a list of fish, crustaceans, molluscs and two plants, and for nothing terrestrial. Crim. Law § 10-621 reaches no invertebrate either. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/emperor-scorpion-legal-guide/"
@@ -6484,6 +6565,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Teiidae appears in no category. Connecticut has not followed the states that wrote tegu-specific rules after the Florida populations established. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Teiidae is represented among Maryland natives by the eastern six-lined racerunner only, which is on the one-per-person tier. Salvator is not native, so the chapter does not reach it, and Maryland has written no tegu-specific rule. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -6826,6 +6916,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Read the five named monitors to the species: the Nile, water, black-throated, white-throated and crocodile monitors. The black-throated and white-throated are subspecies of Varanus albigularis, not the savannah monitor, Varanus exanthematicus, which is named nowhere. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No monitor is native to Maryland and none is named in the statute. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -6978,11 +7077,11 @@
         "MD": {
           "status": "legal",
           "sourceId": "md-10-621",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04",
-          "cite": "Crim. Law § 10-621",
-          "quote": "fox, skunk, raccoon, or bear",
-          "note": "No rodent appears on the list. Counties and municipalities may be stricter than the state."
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the prairie dog is not a Maryland native, so the § 10-902 permit does not attach. Worth noting how differently this animal comes out across the map: prohibited outright in Colorado, Connecticut and Oregon, and unregulated here, on rules that all read as closed lists. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "NM": {
           "status": "banned",
@@ -7383,11 +7482,11 @@
         "MD": {
           "status": "legal",
           "sourceId": "md-10-621",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04",
-          "cite": "Crim. Law § 10-621",
-          "quote": "fox, skunk, raccoon, or bear",
-          "note": "No rodent appears on the list, so Maryland's thirty pound weight test applies to cat hybrids rather than to size generally."
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the capybara is not native to Maryland. Maryland does use a weight threshold in this statute, but only for cat hybrids, so size does nothing for a rodent here. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "NM": {
           "status": "banned",
@@ -7771,10 +7870,15 @@
         "MD": {
           "status": "banned",
           "sourceId": "md-10-621",
-          "quote": "fox, skunk, raccoon, or bear",
-          "note": "Caught by the bare word 'fox', with no genus qualifier and no exception for the fennec.",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "cite": "Crim. Law § 10-621(b)(1)(i)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Caught by the bare word \"fox\", with no genus qualifier and no carve-out for the fennec, in a clause otherwise aimed at rabies vector species. Maryland also bars the whole dog family other than the domestic dog two clauses later, so the fennec fox would be reached twice over. There is no private permit route. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "NM": {
           "status": "banned",
@@ -8211,9 +8315,15 @@
         "MD": {
           "status": "banned",
           "sourceId": "md-10-621",
-          "quote": "member of the cat family other than the domestic cat",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "cite": "Crim. Law § 10-621(b)(1)(iii)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland writes its cat clause as the whole family with one species excepted, so the serval is caught by the same six words that catch a lion. There is no permit anywhere in this section: the exemptions run to zoos, sanctuaries, research and licensed exhibitors, and for private keepers there is only the closed 2006 notification window. Enforcement is unusually direct, with immediate seizure available on probable cause and the costs of care falling on the keeper unless a court finds the seizure unjustified. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "NM": {
           "status": "banned",
@@ -8606,11 +8716,11 @@
         "MD": {
           "status": "legal",
           "sourceId": "md-10-621",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04",
-          "cite": "Crim. Law § 10-621",
-          "quote": "fox, skunk, raccoon, or bear",
-          "note": "No rodent appears on the list."
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the chinchilla is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "NM": {
           "status": "legal",
@@ -9229,6 +9339,15 @@
           "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
           "note": "Connecticut puts the whole order Rodentia in Category Two, which bars private possession, and then excepts nine species. The guinea pig, Cavia porcellus is one of them, so it is named in the regulation rather than merely absent from it. Named to the species, and the Patagonian mara is excepted a few words later, so two caviomorphs are cleared while the capybara, a third, is not.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the guinea pig is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -9584,6 +9703,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Iguanidae appears in no category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No iguanid is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "encyclopediaId": "green-iguana"
@@ -9940,6 +10068,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The common snapping turtle is a Connecticut native but is not among the eight herptiles in Category Three, and DEEP's fact sheet shows it as unlisted rather than of special concern, so it is not Category Four either. Taking one from the wild is a separate question governed by DEEP's harvest regulations rather than by this section. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three. One caveat that applies to every Connecticut turtle on this map: Conn. Gen. Stat. § 26-78 addresses turtles separately from the regulation, and it could not be read this sitting because cga.ct.gov refuses every connection from this container. This entry rests on § 26-55-6, which is the comprehensive rule and mentions no turtle sale ban, and the point is flagged rather than assumed away.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "conditional",
+          "sourceId": "md-snapping-turtle",
+          "cite": "COMAR 08.02.06.01; COMAR 08.03.11.03",
+          "quote": "A person may not catch a snapping turtle from the waters of the State by the use of a hook and line, trot line, bow and arrow, spear, gig or gig iron, or any other device capable of piercing any part of a turtle.",
+          "note": "The snapping turtle is a Maryland native and appears on none of the three native herptile lists, which looks like an omission until you notice which agency has it: Maryland treats the species as a fishery, under the Fisheries Service and Natural Resources Article §§ 4-218 and 4-738 rather than the wildlife article. This chapter governs taking one from the wild, with prohibited gear, a season, a prescribed way of measuring the carapace and a harvest permit card. What it does not do is set up a pet possession permit, so a captive animal is not reached by the herptile chapter and a wild-caught one runs through the fisheries rules instead. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -10274,6 +10411,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No gecko appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No gecko is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -10620,6 +10766,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Ambystoma tigrinum is not a Connecticut species, so neither the Category Three native list nor the state endangered and threatened list reaches it. Connecticut is at the opposite end from Oregon here, which prohibits every nonnative subspecies of the same animal by name to protect its own population. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03C",
+          "quote": "Except under the authority of the permits described in Regulation .01A of this chapter, the following species or subspecies are considered native to Maryland and may not be possessed, bred, or commercially traded: (1) Salamanders: (a) Eastern tiger salamander (Ambystoma tigrinum) ...",
+          "note": "Maryland puts the eastern tiger salamander on its third tier, which is a flat bar rather than a cap. The only permits that reach it are the scientific collection permit under Nat. Res. § 10-909 and the endangered species permit under § 10-2A-05, both institutional. The species is at the northern edge of its range in Maryland and is state endangered, which is the context. Note the chapter draws no captive-bred exception anywhere on this tier, and Regulation .03D makes the scientific name control, so Ambystoma tigrinum is caught however the animal was produced or wherever it came from. Oregon reaches the same result by naming every nonnative subspecies on its prohibited list; Maryland reaches it by naming its own. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -10967,6 +11122,15 @@
           "quote": "Nile monitor (Varanus niloticus), water monitor (Varanus salvator), black-throated monitor (Varanus a. ionidesi), white-throated monitor (Varanus a. albigularis) or crocodile monitor (Varanus salvadorii)",
           "note": "Connecticut names five monitors and the Nile monitor is the first of them. Read the list to the species: the two albigularis subspecies named are the black-throated and white-throated monitors, which are a different species from the savannah monitor, so Varanus exanthematicus is not caught and neither is the ackie. Subsection (b)(3) allows possession of a Category Two animal only by a vet treating it, a municipal park, zoo, marine mammal park, aquarium, nature centre, museum, exhibitor, laboratory or research facility. There is no private permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No monitor is native to Maryland. Several states name this species specifically; Maryland does not. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -11332,6 +11496,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Worth noticing what Connecticut left out: Category Two names the northern African, southern African, reticulated and amethystine pythons and stops, so Python bivittatus is not caught. The Category Two clause that picks up federal injurious wildlife refers only to 50 CFR 16.11, which is the mammals section; the Burmese python is listed at 50 CFR 16.15 and is not reached by the cross-reference. Federal law still bars importation and interstate transport of the species under that listing, so it cannot lawfully cross a state line into Connecticut. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Maryland itself sets no length trigger and lists no python. Federal law is the constraint that bites, since the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport into Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -11694,6 +11867,15 @@
           "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
           "note": "Connecticut regulates rodents the opposite way round from most states: rather than naming the ones it bars, it puts the whole order Rodentia in Category Two and then excepts nine, the guinea pig, gerbil, chinchilla, rat, mouse, hamster, dwarf hamsters, Patagonian mara and American beaver. The degu is not among them. The exception list names every small rodent that is commonly sold, including both hamster groups, which makes the degu's absence hard to read as accidental. Subsection (b)(3) allows possession of a Category Two animal only by a vet treating it, a municipal park, zoo, marine mammal park, aquarium, nature centre, museum, exhibitor, laboratory or research facility. There is no private permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the degu is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "encyclopediaId": "degu"
@@ -12018,6 +12200,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The four amphibians in Category Three are Fowler's toad, the northern dusky salamander, the gray treefrog, the eastern newt and the wood frog, all Connecticut natives, and no amphibian appears in Category Two at all. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Ambystoma mexicanum is not native to Maryland. Its congener the eastern tiger salamander is, and is on the tier that may not be possessed at all, so the two Ambystoma come out at opposite ends of the same chapter. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -12349,6 +12540,15 @@
           "note": "Category Four is defined as any wild animal listed as endangered, threatened or of special concern under Conn. Gen. Stat. § 26-306, and DEEP's own fact sheet puts the eastern box turtle there. Subsection (b)(5) bars importing or possessing one without a permit, and subsection (d) makes the permit specific to the individual animal, valid for that animal's life and non-transferable. Unlike Category One and Two, this is a real permit route rather than an institutional exemption. Connecticut is not distinguishing captive-bred from wild here; the listing attaches to the species. One caveat that applies to every Connecticut turtle on this map: Conn. Gen. Stat. § 26-78 addresses turtles separately from the regulation, and it could not be read this sitting because cga.ct.gov refuses every connection from this container. This entry rests on § 26-55-6, which is the comprehensive rule and mentions no turtle sale ban, and the point is flagged rather than assumed away.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "conditional",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03B, .04C",
+          "quote": "Notwithstanding Natural Resources Article, §4-902, Annotated Code of Maryland, a person without a reptile and amphibian permit may possess only one of each individual reptile or amphibian, live or dead, listed in Regulation .03B of this chapter. A person may not take wood turtles, spotted turtles, or diamond-backed terrapins, including their eggs, from the wild. ... All turtles shall have a carapace length of at least 4 inches.",
+          "note": "The eastern box turtle is on Maryland's middle tier, so one animal per person with no permit and no more. Two further conditions ride on the same subsection: every turtle must have a carapace of at least four inches, which is the state writing the federal small-turtle rule into its own possession law, and Regulation .16 bars using any listed species in a competition, which is aimed at turtle races. The certificate of origin requirement in the same subsection applies to wood turtles, spotted turtles and terrapins rather than to the box turtle. Above one, or to breed or sell, a reptile and amphibian permit is needed. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -12683,6 +12883,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "The regulation gives one answer and a statute in the same chapter may give another. Under § 26-55-6 the red-eared slider is in none of the four categories: the only turtles Connecticut names are its own spotted turtle and diamond-backed terrapin, both Category Three, and Trachemys appears nowhere, so the regulation does not restrict it. But Conn. Gen. Stat. § 26-78 deals with turtles separately, and it is reported to bar importing, buying, selling and exchanging red-eared sliders. That section could not be read here: cga.ct.gov refuses every connection from this container, through curl, through a headless browser and through the CGA's own search service, and no reproduction was reachable either. Recorded unclear rather than legal because the regulation alone is not the whole chapter, and rather than banned because the text behind that claim has not been read. Subsection (b)(6) separately bars liberating any wild animal, which is not in doubt. Reading § 26-78 is the one thing left open in Connecticut.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Trachemys is absent from all three native lists; Maryland's comparable native is the northern red-bellied cooter, Pseudemys rubriventris, which is on the one-per-person tier. Nor is the slider on the nonnative aquatic organism list at COMAR 08.02.19, which is fish, crustaceans, molluscs and two plants and names no reptile. That puts Maryland at the permissive end of a question Oregon and Colorado answer sharply. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -13014,6 +13223,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No tortoise appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three. One caveat that applies to every Connecticut turtle on this map: Conn. Gen. Stat. § 26-78 addresses turtles separately from the regulation, and it could not be read this sitting because cga.ct.gov refuses every connection from this container. This entry rests on § 26-55-6, which is the comprehensive rule and mentions no turtle sale ban, and the point is flagged rather than assumed away.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No tortoise is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -13344,6 +13562,15 @@
           "quote": "Eastern Hog-nosed Snake ... State Species of Special Concern",
           "note": "Which hognose it is decides the answer, and the split runs the opposite way from Illinois. Connecticut's own eastern hog-nosed snake, Heterodon platirhinos, is a State Species of Special Concern, which makes it a Category Four Wild Animal needing a permit to import or possess. The western hognose, H. nasicus, is the animal the pet trade sells, is not a Connecticut species, and appears in none of the four categories, so it is unrestricted. Illinois lists the western and leaves the eastern alone; Connecticut does the reverse.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "conditional",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03B, .04C",
+          "quote": "Notwithstanding Natural Resources Article, §4-902, Annotated Code of Maryland, a person without a reptile and amphibian permit may possess only one of each individual reptile or amphibian, live or dead, listed in Regulation .03B of this chapter. A person may not take wood turtles, spotted turtles, or diamond-backed terrapins, including their eggs, from the wild. ... All turtles shall have a carapace length of at least 4 inches.",
+          "note": "Which hognose it is decides the answer, and Maryland makes the split a matter of degree rather than of kind. The eastern hog-nosed snake, Heterodon platirhinos, is a Maryland native on the middle tier, so one per person with no permit. The western hognose, H. nasicus, is the animal the pet trade sells, is not on any of the three native lists, and is therefore outside the chapter entirely and unrestricted. Illinois and Connecticut each list one hognose and leave the other alone too, and no two of the three states pick the same one. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -13672,6 +13899,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No parrot is regulated here except the monk parakeet. Federal CITES Appendix I paperwork is the live constraint on this species and is not a Connecticut matter.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. The statute reaches no bird, and the African grey is not native Maryland wildlife. Federal CITES Appendix I paperwork is the live constraint on this species and is not a Maryland matter. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -13994,6 +14230,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The giant African millipede appears in none of them. This one is worth stating carefully, because Connecticut is unusual in that its definition of wild animal does reach invertebrates, and the section is titled importation, possession or liberation of wild birds, mammals, reptiles, amphibians and invertebrates. So the answer here is not the jurisdictional gap that clears the same animal in Arizona, Nevada and Pennsylvania; Connecticut has the authority and has simply not used it against any terrestrial arthropod. The only invertebrates that could be caught are ones on the state endangered, threatened and special concern list, which is Connecticut's own beetles, dragonflies and mussels.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-902",
+          "cite": "Nat. Res. § 10-101(dd), § 10-902(a), § 10-903",
+          "quote": "\"Wildlife\" means, except as provided in § 10-2A-01 of this title, every living creature, not human, wild by nature, endowed with sensation and power of voluntary motion. (2) \"Wildlife\" includes mammals, birds, amphibians, and reptiles which spend a majority of their life cycle on land",
+          "note": "The giant African millipede is worth reading carefully in Maryland, because the definition is broad rather than narrow. Unlike Arizona, Nevada and Oregon, whose wildlife definitions list vertebrate groups and stop, Maryland's opening words are \"every living creature, not human, wild by nature\", with the vertebrate list following as an inclusion rather than a limit. What saves the answer is the operative section rather than the definition: § 10-902 attaches its permit only to wildlife native to Maryland, and this species is not. Section 10-903 gives the Secretary a separate power to restrict non-native wildlife by regulation, and Maryland has used it for nonnative aquatic organisms at COMAR 08.02.19, a list of fish, crustaceans, molluscs and two plants, and for nothing terrestrial. Crim. Law § 10-621 reaches no invertebrate either. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -14128,10 +14373,13 @@
           "verifiedOn": "2026-08-27"
         },
         "MD": {
-          "status": "legal",
-          "sourceId": "md-10-621",
-          "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03A, .04A",
+          "quote": "Except as provided in §§D—F of this regulation, a person without a reptile and amphibian permit may not possess more than four of each individual reptile or salamander, live or dead, listed in Regulation .03A of this chapter. The individual reptiles or salamanders may have been: (1) Obtained from the wild; (2) Captively produced; or (3) Legally obtained outside of Maryland.",
+          "note": "The cornsnake, which Maryland lists as Elaphe guttata guttata is on Maryland's first tier of native species, which means no permit but a hard cap of four. Read the second sentence: the cap applies whether the animal came from the wild, from captive breeding, or lawfully from outside Maryland, so buying a captive-bred one out of state does not lift it. Above four, or to breed or sell at all, a reptile and amphibian permit is needed. Colour mutations bred in captivity are exempt from the cap under Regulation .04E, with the burden of proving the mutation on the owner, and Regulation .16 bars using any listed species in a competition. This entry previously read as unrestricted on the strength of the venomous snake clause in the criminal statute. That clause is accurate and is not the rule: the corn snake is a Maryland native and the possession chapter is where it is answered. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "MN": {
           "status": "conditional",
@@ -14482,10 +14730,13 @@
           "verifiedOn": "2026-08-27"
         },
         "MD": {
-          "status": "legal",
-          "sourceId": "md-10-621",
-          "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03A, .04A",
+          "quote": "Except as provided in §§D—F of this regulation, a person without a reptile and amphibian permit may not possess more than four of each individual reptile or salamander, live or dead, listed in Regulation .03A of this chapter. The individual reptiles or salamanders may have been: (1) Obtained from the wild; (2) Captively produced; or (3) Legally obtained outside of Maryland.",
+          "note": "The eastern milksnake, and separately the coastal plain milksnake is on Maryland's first tier of native species, which means no permit but a hard cap of four. Read the second sentence: the cap applies whether the animal came from the wild, from captive breeding, or lawfully from outside Maryland, so buying a captive-bred one out of state does not lift it. Above four, or to breed or sell at all, a reptile and amphibian permit is needed. Colour mutations bred in captivity are exempt from the cap under Regulation .04E, with the burden of proving the mutation on the owner, and Regulation .16 bars using any listed species in a competition. Both Maryland forms are on the first tier, so the cap is the whole of the answer for a milksnake here. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "MN": {
           "status": "conditional",
@@ -14826,9 +15077,12 @@
         },
         "MD": {
           "status": "legal",
-          "sourceId": "md-10-621",
-          "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Not venomous, not a crocodilian and not a Maryland native, so none of the three rules reaches it. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "MN": {
           "status": "conditional",
@@ -15178,11 +15432,13 @@
         },
         "MD": {
           "status": "permit",
-          "sourceId": "md-10-901",
-          "cite": "Nat. Res. § 10-901 et seq.",
-          "note": "Maryland strictly regulates possession of wildlife native to the state; multiple sources confirm the Department does not issue personal pet-possession permits for squirrels specifically, only rehabilitation (time-limited) or other institutional permits.",
+          "sourceId": "md-10-902",
+          "cite": "Nat. Res. § 10-902(a); § 10-901",
+          "quote": "Any person desiring to possess, import, export, breed, raise, protect, rehabilitate, hunt, kill, trap, capture, purchase, or sell any wildlife native to Maryland, shall first obtain a permit or license from the Department.",
+          "note": "The southern flying squirrel is native to Maryland, and that single fact is the whole answer: § 10-902(a) attaches a permit requirement to possessing any native wildlife, with no exception for captive-bred animals and no exception for animals lawfully bought out of state. Section 10-901 sets out why, in findings about competition with native wildlife, disease and enforcement. The Secretary may exempt species by regulation under § 10-902(b)(2), which is what COMAR 08.03.11 does for reptiles and amphibians, and no equivalent exemption or personal pet permit class for a native mammal was located in COMAR subtitle 08.03, whose wildlife possession chapter deals with importation for release, protected birds, falconry, cervids and mute swans. So the permit exists in statute and the class a pet keeper would apply under is not evident in the regulations. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "permitFor": "commercial-exhibition-research",
-          "verifiedOn": "2026-08-27"
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "AL": {
           "status": "banned",
@@ -15670,6 +15926,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The five named monitors are the Nile, water, black-throated, white-throated and crocodile monitors, and Varanus acanthurus is not among them. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No monitor is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -15834,12 +16099,13 @@
           "verifiedOn": "2026-08-27"
         },
         "MD": {
-          "status": "permit",
+          "status": "conditional",
           "sourceId": "md-native-herp",
-          "cite": "COMAR 08.03.09 (native reptile and amphibian regulations, adopted 1993)",
-          "permitFor": "personal",
-          "note": "Maryland requires a permit to possess, breed, sell, or trade a species of reptile or amphibian native to the state, and the garter snake is a Maryland native.",
-          "verifiedOn": "2026-08-27"
+          "cite": "COMAR 08.03.11.03A, .04A",
+          "quote": "Except as provided in §§D—F of this regulation, a person without a reptile and amphibian permit may not possess more than four of each individual reptile or salamander, live or dead, listed in Regulation .03A of this chapter. The individual reptiles or salamanders may have been: (1) Obtained from the wild; (2) Captively produced; or (3) Legally obtained outside of Maryland.",
+          "note": "The eastern gartersnake, Thamnophis sirtalis sirtalis is on Maryland's first tier of native species, which means no permit but a hard cap of four. Read the second sentence: the cap applies whether the animal came from the wild, from captive breeding, or lawfully from outside Maryland, so buying a captive-bred one out of state does not lift it. Above four, or to breed or sell at all, a reptile and amphibian permit is needed. Colour mutations bred in captivity are exempt from the cap under Regulation .04E, with the burden of proving the mutation on the owner, and Regulation .16 bars using any listed species in a competition. This entry previously read as requiring a permit outright. It does not: Regulation .04A allows four of a first-tier species with no permit at all, and the permit is what lifts the cap or allows breeding and sale. The common ribbonsnake, a close relative, sits one tier down at one per person. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "ME": {
           "status": "permit",
@@ -16236,10 +16502,12 @@
         },
         "MD": {
           "status": "legal",
-          "sourceId": "md-not-native",
-          "cite": "Md. Code, Crim. Law § 10-621",
-          "note": "Not a Maryland native, so the state's native-reptile possession permit doesn't apply, and it's absent from the § 10-621 dangerous-animal list.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Maryland does have native Lampropeltis, the eastern kingsnake and the mole kingsnake, both on the four-per-species list. The California kingsnake is Lampropeltis californiae and is not among them, and Regulation .03D provides that the scientific name controls where both are given, which settles it. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "ME": {
           "status": "legal",
@@ -16625,10 +16893,12 @@
         },
         "MD": {
           "status": "legal",
-          "sourceId": "md-not-native",
-          "cite": "Md. Code, Crim. Law § 10-621",
-          "note": "Parrots, macaws, and cockatoos are legal in Maryland; they're outside both the § 10-621 dangerous-animal list and the Migratory Bird Treaty Act, which doesn't reach non-native species.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. The statute reaches no bird, and no cockatoo is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         },
         "ME": {
           "status": "permit",
@@ -17216,6 +17486,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No tortoise appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three. One caveat that applies to every Connecticut turtle on this map: Conn. Gen. Stat. § 26-78 addresses turtles separately from the regulation, and it could not be read this sitting because cga.ct.gov refuses every connection from this container. This entry rests on § 26-55-6, which is the comprehensive rule and mentions no turtle sale ban, and the point is flagged rather than assumed away.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No tortoise is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17337,6 +17616,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Agamidae appears in no category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Agamidae is not represented among Maryland natives. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17458,6 +17746,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No gecko appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No gecko is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17579,6 +17876,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No gecko appears in any category, so the family reclassification that complicates this species in Colorado and Oregon does not arise here. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No gecko is native to Maryland, so the family reclassification that complicates this species in Colorado and Oregon does not arise. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17700,6 +18006,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No skink appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Maryland has three native skinks, the common five-lined, little brown and broad-headed, and a fourth on its prohibited tier, the northern coal skink. Tiliqua is none of them. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17821,6 +18136,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No chameleon appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No chameleon is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -17941,6 +18265,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Anolis appears in no category, and neither does any broader grouping that would reach it. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.11.03; Crim. Law § 10-621(b)(1)",
+          "quote": "The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter",
+          "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Anolis is not among the six lizards Maryland lists as native. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -18055,6 +18388,15 @@
           "quote": "\"Domestic animal\" means any animal that humans have selectively bred in captivity to produce genetic changes affecting the temperament, color, conformation, or other attributes of the species to an extent that makes such animal unique and distinguishable from wild individuals of the species, and that has been raised in a life intimately associated with and advantageous to humans. \"Domestic animal\" does not include any wild animal raised in captivity, even over many generations, that has become accustomed to human interaction but that is still wild by nature.",
           "note": "Connecticut is the state that shows how the rabbit question should be drafted. Category Two reaches \"a species referenced as injurious wildlife in 50 CFR 16.11\", and the European rabbit is on that federal list, so on the lists alone a pet rabbit would be barred outright. It is not, because the categories only ever apply to a \"wild animal\", which the regulation defines as excluding a domestic animal, and it defines a domestic animal by what selective breeding has done to it rather than by species name. A house rabbit is selectively bred to be distinguishable from wild individuals and raised in a life intimately associated with humans, so it is outside the scheme entirely. Minnesota and Illinois name the same species with no equivalent definition and end up much harder to answer.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. § 10-902(a)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. The pet rabbit is Oryctolagus cuniculus and is not native to Maryland, whose native lagomorph is the eastern cottontail, so the § 10-902 permit does not attach. Maryland does not adopt the federal injurious wildlife list, which is what makes this species awkward in Minnesota and Illinois. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     },
@@ -18168,6 +18510,15 @@
           "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
           "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The Madagascar hissing cockroach appears in none of them. This one is worth stating carefully, because Connecticut is unusual in that its definition of wild animal does reach invertebrates, and the section is titled importation, possession or liberation of wild birds, mammals, reptiles, amphibians and invertebrates. So the answer here is not the jurisdictional gap that clears the same animal in Arizona, Nevada and Pennsylvania; Connecticut has the authority and has simply not used it against any terrestrial arthropod. The only invertebrates that could be caught are ones on the state endangered, threatened and special concern list, which is Connecticut's own beetles, dragonflies and mussels.",
           "verifiedOn": "2026-09-05"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-902",
+          "cite": "Nat. Res. § 10-101(dd), § 10-902(a), § 10-903",
+          "quote": "\"Wildlife\" means, except as provided in § 10-2A-01 of this title, every living creature, not human, wild by nature, endowed with sensation and power of voluntary motion. (2) \"Wildlife\" includes mammals, birds, amphibians, and reptiles which spend a majority of their life cycle on land",
+          "note": "The Madagascar hissing cockroach is worth reading carefully in Maryland, because the definition is broad rather than narrow. Unlike Arizona, Nevada and Oregon, whose wildlife definitions list vertebrate groups and stop, Maryland's opening words are \"every living creature, not human, wild by nature\", with the vertebrate list following as an inclusion rather than a limit. What saves the answer is the operative section rather than the definition: § 10-902 attaches its permit only to wildlife native to Maryland, and this species is not. Section 10-903 gives the Secretary a separate power to restrict non-native wildlife by regulation, and Maryland has used it for nonnative aquatic organisms at COMAR 08.02.19, a list of fish, crustaceans, molluscs and two plants, and for nothing terrestrial. Crim. Law § 10-621 reaches no invertebrate either. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true
         }
       }
     }

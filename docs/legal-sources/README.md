@@ -46,6 +46,8 @@ about this species", not to claim a new verification date.
 | `OR-or-invertebrates.txt` | Oregon's approved invertebrate list, the rule that answers a tarantula or roach question there |
 | `CT-ct-26-55-6.txt` | Connecticut's four-category wild animal regulation, whose definitions decide more than its lists |
 | `CT-ct-deep-listings.txt` | The DEEP fact sheet statuses that decide which Connecticut animals are Category Four |
+| `MD-md-framework.txt` | Maryland's three rules and its three-tier native herptile chapter, with which rule reaches what |
+| `MD-md-fisheries.txt` | Where Maryland's snapping turtle went, and the nonnative list that names no reptile |
 
 ## Reading the awkward ones
 
@@ -60,6 +62,11 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   as *Geochelone*, the crested gecko would be *Rhacodactylus*, and the bearded dragon is
   printed as *vittaceps* for *vitticeps*. Search the genus and the synonym, not just the
   current name.
+- **`MD-md-framework.txt`** is organised around one question: which of Maryland's three rules
+  reaches the animal. Crim. Law § 10-621 is eight clauses and touches no rodent, bird or
+  invertebrate; Nat. Res. § 10-902 attaches a permit only to NATIVE wildlife; COMAR 08.03.11
+  sorts native herptiles into three tiers. Grep the tier lists in Regulation .03 before
+  assuming a reptile is unregulated, and remember .03D makes the scientific name control.
 - **`CT-ct-26-55-6.txt`** is a state where the definitions in subsection (a) matter more than
   the category lists. "Wild animal" reaches invertebrates, and "domestic animal" is defined by
   what selective breeding has done rather than by species, which is what makes the pet rabbit
@@ -104,6 +111,8 @@ not on the sites, so a person with a browser can open all of them.
 | `apps.azsos.gov` | Cloudflare challenge | Use Cornell LII or animallaw.info, and cross-check two reproductions |
 | `regulations.delaware.gov` | Angular app, serves an empty shell to every fetcher | Use `delcode.delaware.gov` for statutes and a reproduction for regulations |
 | `law.justia.com`, `invasive.org` | 403 | Find another reproduction |
+| `mgaleg.maryland.gov` | Works with curl; headless Chromium cannot reach it. Statute body sits after a "Previous Next" marker and the section number uses an en dash, so grepping the plain number finds nothing | Slice from `Article - ` to `Validation`. Article codes: `gcr` Criminal Law, `gnr` Natural Resources |
+| `regs.maryland.gov` | Serves whole COMAR chapters cleanly | `/us/md/exec/comar/<chapter>/index.full.html` |
 | `cga.ct.gov` | Connection reset on every route: curl, python, headless Chromium | No workaround found. `search.cga.state.ct.us` answers but its statute search returns nothing. Connecticut statutes could not be read; the regulations at `eregulations.ct.gov` can |
 | `eregulations.ct.gov` | `Browse/getDocument?guid=<guid>` works and returns a PDF; browse and search are JS-driven behind bot protection | Keep the GUID for any section you find, because there is no way back to it |
 | `www.sos.state.co.us` | Works with curl, but PDF links are not in the HTML | Scrape `OpenRuleWindow('<id>'` off the rule page, then fetch `/CCR/GenerateRulePdf.do?ruleVersionId=<id>` |

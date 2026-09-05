@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 12 (AZ, CO, CT, DE, HI, IL, MI, MN, NM, NV, OR, PA) |
-| Unread cells | 632 |
-| Cached primary sources | 33 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 13 (AZ, CO, CT, DE, HI, IL, MD, MI, MN, NM, NV, OR, PA) |
+| Unread cells | 597 |
+| Cached primary sources | 35 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
-Oregon and Connecticut sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
-fresh branch from main once it lands.
+Oregon, Connecticut and Maryland sit on `claude/legal-map-colorado-dca3og`; either continue
+there or cut a fresh branch from main once it lands.
 
 ## The loop
 
@@ -67,6 +67,12 @@ the wrong one. Both animals are named on ODFW's prohibited species list, which i
 question in Oregon is actually answered. When an entry's note explains why some statute does not
 reach an animal, that is the moment to ask which statute does.
 
+That failure mode has now cost four states. Oregon's prairie dog and capybara, Connecticut's
+prairie dog and capybara, Illinois's garter snake and Maryland's corn snake and garter snake all
+sat on an accurate reading of a statute that was not the one that answers the question. The
+tell is always the same: a note that explains why a list does not reach an animal, without
+naming the rule that does. Every state on this map has more than one animal law.
+
 **A rule with nothing behind it.** Minnesota's 2021 pet reptile law says the commissioner
 "must prescribe conditions and may issue permits" and then makes lawful possession turn on the
 animal having come from a permitted breeder. There is no such permit on the DNR's permits page,
@@ -88,11 +94,11 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| MD | Maryland | 35 | 4 sources on file |
 | TN | Tennessee | 35 | 1 source on file |
 | TX | Texas | 35 | 3 sources on file |
 | MA | Massachusetts | 34 | 3 sources on file |
 | NE | Nebraska | 33 | 4 sources on file |
+| FL | Florida | 30 | 2 sources on file |
 
 ## Loose ends
 
@@ -161,8 +167,8 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Then guinea pig and gerbil at 46, quaker parakeet and ackie monitor at 45, degu and red-footed
-tortoise at 44, green iguana at 43.
+Then guinea pig and gerbil at 47, quaker parakeet and ackie monitor at 46, degu and red-footed
+tortoise at 45, green iguana at 44.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -199,6 +205,11 @@ available only for educational programmes. Read the heading and Illinois restric
 Varanus; read the definition and it restricts two, leaving the savannah, Nile and ackie monitors
 entirely unregulated. Any state that names a family and then narrows it in the same sentence
 needs the definition read before the list.
+
+Maryland is the only state that answers it by weight: § 10-621(b)(1)(iv) reaches a cat hybrid
+only "if the hybrid weighs over 30 pounds", with no generation test anywhere in the section. The
+line is drawn on the individual animal rather than its ancestry, which is the one version of
+this rule whose answer could change as a cat grows.
 
 Connecticut is the seventh and the cleanest: Category One is the family Felidae, "except Bengal
 cat pursuant to section 26-40a", carved out by name inside the listing, with no generation

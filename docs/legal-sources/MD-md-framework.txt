@@ -1,0 +1,474 @@
+# Maryland: three rules, and which one reaches the animal decides everything
+
+sourceId: md-10-621 / md-native-herp / md-10-902 / md-snapping-turtle
+jurisdiction: MD
+url: https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcr&section=10-621&enactments=false
+     https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=10-902&enactments=false
+     https://regs.maryland.gov/us/md/exec/comar/08.03.11/index.full.html
+     https://regs.maryland.gov/us/md/exec/comar/08.02.06/index.full.html
+fetched: 2026-09-05
+fetch notes: regs.maryland.gov serves whole COMAR chapters from
+  /us/md/exec/comar/<chapter>/index.full.html with plain curl and is the easiest state source
+  in this cache. mgaleg.maryland.gov also works with curl, but two traps: headless Chromium
+  cannot reach it at all (connection reset), and the statute body sits AFTER a "Previous Next"
+  marker with the section number written using an en dash, so grepping for "10-902" finds
+  nothing while the text is right there. Slice from "Article - " to "Validation" instead.
+  Article codes: gcr = Criminal Law, gnr = Natural Resources.
+
+THE THREE RULES, and nothing else answers a pet question in Maryland:
+  Crim. Law § 10-621     a closed list of eight clauses. Cats, dogs, primates, fox/skunk/
+                         raccoon/bear, crocodilians, four venomous snake families, and cat
+                         hybrids OVER 30 POUNDS. Reaches no rodent, no bird, no invertebrate.
+  Nat. Res. § 10-902(a)  a permit for possessing any wildlife NATIVE to Maryland. This is what
+                         makes the flying squirrel a permit animal and it has no captive-bred
+                         or bought-out-of-state exception.
+  COMAR 08.03.11         native reptiles and amphibians, in three tiers.
+  (Nat. Res. § 10-903 gives a power to restrict NON-native wildlife by regulation. Maryland has
+   used it only for aquatic organisms, COMAR 08.02.19, which names no reptile.)
+
+THE HERP CHAPTER'S THREE TIERS, all in Regulation .03:
+  .03A  four per species, no permit. Cornsnake, eastern and coastal plain milksnakes, eastern
+        kingsnake, mole kingsnake, EASTERN GARTERSNAKE, black racer, ratsnakes and others.
+        Regulation .04A applies the cap to animals "obtained from the wild", "captively
+        produced" OR "legally obtained outside of Maryland", so an out-of-state breeder does
+        not lift it.
+  .03B  ONE per person. Eastern hog-nosed snake, broad-headed skink, six-lined racerunner,
+        queen snake, ribbonsnake, and the turtles: wood, spotted, EASTERN BOX, painted, mud,
+        red-bellied cooter, stinkpot, terrapin. All turtles need a 4-inch carapace.
+  .03C  may not be possessed at all outside a scientific collection or endangered species
+        permit. EASTERN TIGER SALAMANDER (Ambystoma tigrinum), hellbender, mudpuppy, bog
+        turtle, spiny softshell, timber rattlesnake, copperhead and others.
+  .03D  where both names are given, THE SCIENTIFIC NAME CONTROLS. That is what keeps the
+        California kingsnake, Lampropeltis californiae, outside the eastern kingsnake entry.
+
+THE SNAPPING TURTLE IS NOT MISSING, IT IS ELSEWHERE. It appears on none of the three tiers
+because Maryland treats it as a fishery: COMAR 08.02.06, under Nat. Res. §§ 4-218 and 4-738,
+governs gear, season, measuring and a harvest permit card. There is no pet possession permit.
+
+THE BENGAL is answered by weight rather than generation, the only state on this map that does
+so: § 10-621(b)(1)(iv) reaches a cat hybrid only "if the hybrid weighs over 30 pounds".
+
+INVERTEBRATES need care here. Nat. Res. § 10-101(dd) opens "every living creature, not human,
+wild by nature", with the vertebrate list following as an inclusion rather than a limit, so
+Maryland's definition is broader than Arizona's or Nevada's and does reach an arthropod. What
+saves the answer is that § 10-902 attaches its permit only to NATIVE wildlife.
+
+=========================================================================
+Md. Code, Criminal Law § 10-621
+=========================================================================
+(a)    (1)    Except as provided in subsection (b)(2) of this section, this section does not apply to:
+(i)    a research facility or federal research facility licensed under the federal Animal Welfare Act;
+(ii)    the holder of a Class C Exhibitor’s License under the Animal Welfare Act, 7 U.S.C. § 2131 et seq., that displays the animals specified in subsection (b) of this section in a public setting as the exhibitor’s primary function;
+(iii)    a person who possesses a valid license or permit issued by the Department of Natural Resources to import, sell, trade, barter, possess, breed, or exchange an animal specified in subsection (b) of this section;
+(iv)    an animal sanctuary that:
+1.    is a nonprofit organization qualified under § 501(c)(3) of the Internal Revenue Code;
+2.    operates a place of refuge for abused, neglected, impounded, abandoned, orphaned, or displaced wildlife;
+3.    does not conduct commercial activity with respect to any animal of which the organization is an owner; and
+4.    does not buy, sell, trade, lease, or breed any animal except as an integral part of the species survival plan of the American Zoo and Aquarium Association;
+(v)    an animal control officer under the jurisdiction of the State or a local governing authority, a law enforcement officer acting under the authority of this subtitle, or a private contractor of a county or municipal corporation that is responsible for animal control operations;
+(vi)    a person who holds a valid license to practice veterinary medicine in the State and treats the animal specified in subsection (b) of this section in accordance with customary and normal veterinary practices;
+(vii)    a person who is not a resident of the State and is in the State for 10 days or less for the purpose of traveling between locations outside of the State; and
+(viii)    a circus holding a Class C Exhibitor’s License under the Animal Welfare Act, 7 U.S.C. § 2131 et seq., that:
+1.    is in the State for less than 90 days per calendar year;
+2.    regularly conducts performances featuring live animals and multiple human entertainers, including acrobats and clowns; and
+3.    does not allow members of the public to be in proximity to an animal specified under subsection (b) of this section, including opportunities to be photographed with the animal, without sufficient distance and protective barriers.
+(2)    (i)    This section does not prohibit a person who had lawful possession of an animal specified in subsection (b) of this section on or before May 31, 2006, from continuing to possess that animal if the person provides written notification to the local animal control authority on or before August 1, 2006.
+(ii)    The notification shall include:
+1.    the person’s name, address, and telephone number;
+2.    the number and type of animals being kept; and
+3.    a photograph of the animal or a description of a tattoo or microchip identification of the animal.
+(3)    This section does not prohibit a person who has a disability that severely limits mobility from possessing an animal specified in subsection (b) of this section if that animal is:
+(i)    trained to perform tasks for the owner by an organization described in Section 501(c) of the Internal Revenue Code; and
+(ii)    dedicated to improving the quality of life of a person who has a disability that severely limits mobility.
+(b)    (1)    A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live:
+(i)    fox, skunk, raccoon, or bear;
+(ii)    caiman, alligator, or crocodile;
+(iii)    member of the cat family other than the domestic cat;
+(iv)    hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds;
+(v)    member of the dog family other than the domestic dog;
+(vi)    hybrid of a member of the dog family and a domestic dog;
+(vii)    nonhuman primate, including a lemur, monkey, chimpanzee, gorilla, orangutan, marmoset, loris, or tamarin; or
+(viii)    poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.
+(2)    (i)    This paragraph does not apply to an entity described in subsection (a)(1)(i), (iii), (iv), (v), (vi), (vii), or (viii) of this section.
+(ii)    Except as provided in subparagraph (iii) of this paragraph, the holder of a Class C Exhibitor’s License under the Animal Welfare Act, 7 U.S.C. § 2131 et seq., may not possess a nonhuman primate, bear, lion, tiger, leopard, clouded leopard, snow leopard, jaguar, cheetah, or cougar or a hybrid of one of these animals that was not owned by the holder of the license on June 30, 2014.
+(iii)    The holder of a Class C Exhibitor’s License under the Animal Welfare Act, 7 U.S.C. § 2131 et seq., may acquire or breed a nonhuman primate, bear, lion, tiger, leopard, clouded leopard, snow leopard, jaguar, cheetah, or cougar or a hybrid of one of these animals if the holder:
+1.    maintains a liability insurance policy of at least $1,000,000;
+2.    has a paid full–time director;
+3.    has at least one paid full–time staff member trained in the care of each species that the holder keeps;
+4.    has an animal disposition policy that provides for the placement of animals in appropriate facilities if the holder’s facility closes; and
+5.    maintains and implements a training plan regarding zoonotic disease risk and prevention.
+(c)    (1)    A person who violates this section is guilty of a misdemeanor and on conviction is subject to:
+(i)    if an individual, a fine not exceeding $1,000; or
+(ii)    if not an individual, a fine not exceeding $10,000.
+(2)    The provisions of this section may be enforced by:
+(i)    any State or local law enforcement officer; or
+(ii)    the local animal control authority for the jurisdiction where the violation occurs.
+(d)    (1)    An animal specified in subsection (b) of this section may be immediately seized if:
+(i)    there is probable cause to believe that the possession of the animal is in violation of this section; or
+(ii)    the animal poses a risk to public health or public safety.
+(2)    An animal specified in subsection (b) of this section that is seized may be returned to the person who had possession of the animal at the time the animal was seized only if it is established that:
+(i)    possession of the animal by the person is not a violation of this section; and
+(ii)    the return of the animal does not pose a risk to public health or public safety.
+(3)    (i)    Notice that the animal was seized shall be served on the person who had possession of the animal at the time the animal was seized by:
+1.    posting a copy of the notice at the place where the animal was seized;
+2.    regular and certified mail, return receipt requested; or
+3.    delivering the notice to a person residing on the property from which the animal was seized.
+(ii)    The notice shall include:
+1.    a description of the animal seized;
+2.    the authority for and the purpose of the seizure;
+3.    the time, place, and circumstances of the seizure;
+4.    a contact person and telephone number;
+5.    a statement that the person from whom the animal was seized may:
+A.    post security to prevent disposition of the animal; and
+B.    request a hearing concerning the seizure;
+6.    a statement that failure to post security or request a hearing within 10 days of the date of the notice will result in the disposition of the animal; and
+7.    a statement that, unless a court finds that the seizure of the animal was not justified, the actual costs of the care, keeping, and disposal of the animal are the responsibility of the person from whom the animal was seized.
+(4)    (i)    Before a seizure under paragraph (1) of this subsection occurs, the person in possession of the animal to be seized may request that the animal remain in the person’s physical custody for 30 days after the date the animal was to be seized.
+(ii)    During the 30 days provided in subparagraph (i) of this paragraph, the person shall take all necessary actions to comply with this section.
+(iii)    At any reasonable time during the 30–day period, the local animal control authority may inspect the premises where the animal is being kept.
+(5)    (i)    If a person who retains possession of an animal under paragraph (4) of this subsection is not in compliance with this section after the 30–day period has expired, the local animal control authority shall seize the animal and place it in a holding facility that is appropriate for the species.
+(ii)    The authority seizing an animal under this paragraph shall provide notice of the seizure in the same manner as provided in paragraph (3) of this subsection.
+(6)    (i)    A person from whom an animal was seized may request a hearing in the District Court within 10 days of the seizure.
+(ii)    A hearing shall be held as soon as practicable to determine the validity of the seizure and the disposition of the animal.
+(7)    (i)    Unless the court finds that the seizure of the animal was not justified by law, a person from whom the animal specified in subsection (b) of this section is seized is liable for all actual costs of care, keeping, and disposal of the animal.
+(ii)    The costs required under this paragraph shall be paid in full unless a mutually satisfactory agreement is made between the local animal control authority and the person claiming an interest in the animal.
+(8)    (i)    If there is no request for a hearing within 10 days of the notice or if the court orders a permanent and final disposition of the animal, the local animal control authority shall take steps to find long–term placement of the animal with another appropriate facility that is equipped for the continued care of the particular species of the animal.
+(ii)    If there is no entity that is suitable for the care of the animal, the animal may be euthanized.
+(e)    This section does not limit a county or municipality from enacting laws or adopting regulations that are more restrictive pertaining to any potentially dangerous animals, including those specified in subsection (b) of this section.
+(f)    If the owner of an animal specified in subsection (b) of this section dies without making arrangements for the transfer of custody of the animal to another person, the animal may be turned over to one of the organizations specified in subsection (a)(1) of this section or euthanized if no suitable location can be found in a reasonable amount of time.
+
+=========================================================================
+Md. Code, Natural Resources §§ 10-901, 10-902, 10-903 and 10-101(dd)
+=========================================================================
+§10–901.
+The General Assembly finds and declares that it is in the public interest to insure the conservation, preservation, and condition of wildlife native to Maryland, by strictly regulating in the State the possession, importation, exportation, breeding, raising, protection, rehabilitation, hunting, killing, trapping, capture, purchase, or sale of certain wildlife which pose a possibility of:
+(1)    Harmful competition to native wildlife;
+(2)    The introduction of a disease or pest harmful to native wildlife;
+(3)    Problems of enforcing laws and regulations relative to wildlife; or
+(4)    Threatening native wildlife or other natural resources.
+Previous Next
+§10–902.
+(a)    Any person desiring to possess, import, export, breed, raise, protect, rehabilitate, hunt, kill, trap, capture, purchase, or sell any wildlife native to Maryland, shall first obtain a permit or license from the Department.
+(b)    The Secretary shall establish by regulation:
+(1)    The types and classes of permits and licenses which shall be issued;
+(2)    The species of wildlife exempt from the permit and license requirement;
+(3)    Sanitary housing or any other conditions which are necessary for the humane, safe, and healthy possession of wildlife;
+(4)    Conditions under which captive wildlife may be hunted or released to the wild; and
+(5)    Record keeping requirements.
+(c)    The Secretary shall charge a reasonable fee for each permit or license.
+Previous Next
+§10–903.
+The Secretary may adopt regulations prohibiting or restricting the importation, exportation, sale, release, or possession of wildlife not native to Maryland on a finding that the wildlife is harmful to native wildlife or to natural ecosystems.
+Previous Next
+(dd)    (1)    “Wildlife” means, except as provided in § 10–2A–01 of this title, every living creature, not human, wild by nature, endowed with sensation and power of voluntary motion.
+(2)    “Wildlife” includes mammals, birds, amphibians, and reptiles which spend a majority of their life cycle on land or any part, egg, offspring, or dead body of any of them.
+Previous Next
+
+=========================================================================
+COMAR 08.03.11  Reptile and Amphibian Possession and Permits
+=========================================================================
+.01 Scope.
+A. This chapter does not apply to reptiles and amphibians that are held in accordance with:
+(1) A Scientific Collection Permit described in Natural Resources Article, §10-909 and §4-212, Annotated Code of Maryland;
+(2) An Endangered Species Permit described in Natural Resources Article, §10-2 A-05, Annotated Code of Maryland; or
+(3) Aquaculture activities regulated under COMAR 08.02.14 .
+B. This chapter regulates the possession, breeding, sale, offer to sell, trade, or barter of certain native reptiles and amphibians. It is intended to protect and conserve native reptiles and amphibians while maintaining many of the educational and economic benefits derived from them.
+Cross References
+08.03.11.03C
+.02 Definitions.
+A. In this chapter, the following terms have the meanings indicated.
+B. Terms Defined.
+(1) “Amphibian” means salamanders, frogs, and toads, or any part, egg, tadpole, offspring, or dead body of any of them.
+(2) “Captively produced” means produced as a result of breeding in captivity.
+(3) “Captivity” means intentionally holding a reptile or amphibian under any condition of restraint or control imposed by humans.
+(4) “Competition” means a contest, race, derby, tournament, match, game, performance, show, meet, event, or test of skill in which contestants compete for a prize or honor or in which a winner is selected from among two or more entrants.
+(5) “Educational facility” means State wildlife agencies, public game farms or parks, public museums, public zoological parks, accredited members of the American Association of Zoological Parks and Aquariums, and public scientific or educational institutions.
+(6) “Native reptiles and amphibians” means those species of reptiles and amphibians that naturally occur or historically occurred within Maryland not as a result of any action by humans.
+(7) “Permittee” means any person holding a permit issued under the authority of this chapter to perform certain activities.
+(8) “Public” means open to the general public and established, maintained, and operated as a governmental service, or privately established and operated on a nonprofit basis for tax purposes.
+(9) “Reptile” means turtles, lizards, and snakes, or any part, egg, offspring, or any dead body of any of them.
+(10) “The wild” means any land or water in the State, either natural or altered, upon which any native reptile or amphibian can exist in a condition which is not constrained or controlled by humans.
+.03 List of Native Species.
+A. The following species or subspecies are considered native to Maryland and may be lawfully possessed, bred, or commercially traded only as provided in Regulations .04 — .09 of this chapter:
+(1) Salamanders:
+(a) Red-spotted newt (Notophthalmus viridescens),
+(b) Spotted salamander (Ambystoma maculatum),
+(c) Marbled salamander (Ambystoma opacum),
+(d) Northern dusky salamander (Desmognathus fuscus),
+(e) Seal salamander (Desmognathus monticola),
+(f) Mountain dusky salamander (Desmognathus ochrophaeus),
+(g) Northern two-lined salamander (Eurycea bislineata),
+(h) Long-tailed salamander (Eurycea longicauda),
+(i) Northern spring salamander (Gyrinophilus porphyriticus),
+(j) Four-toed salamander (Hemidactylium scutatum),
+(k) Eastern red-backed salamander (Plethodon cinereus),
+(l) Northern slimy salamander (Plethodon glutinosus),
+(m) Valley and ridge salamander (Plethodon hoffmani),
+(n) Northern red salamander (Pseudotriton ruber);
+(2) Frogs and toads:
+(a) Eastern spadefoot (Scaphiopus holbrooki),
+(b) American toad (Bufo americanus),
+(c) Fowler's toad (Bufo fowleri),
+(d) Northern cricket frog (Acris crepitans),
+(e) Cope's gray treefrog (Hyla chrysoscelis),
+(f) Gray treefrog (Hyla versicolor),
+(g) Green treefrog (Hyla cinerea),
+(h) Northern spring peeper (Pseudacris crucifer),
+(i) Southeastern chorus frog (Pseudacris feriarum),
+(j) Pickerel frog (Rana palustris),
+(k) Southern leopard frog (Rana spenocephala),
+(l) Wood frog (Rana sylvatica);
+(m) Green frog (Rana clamitans),
+(n) American bullfrog (Rana catesbeiana);
+(3) Lizards:
+(a) Eastern fence lizard (Sceloporus undulates),
+(b) Common five-lined skink (Eumeces fasciatus),
+(c) Little brown skink (Scincella lateralis),
+(4) Snakes:
+(a) Eastern wormsnake (Carphophis amoenus),
+(b) Northern black racer (Coluber constrictor),
+(c) Ring-necked snake (Diadophis punctatus),
+(d) Cornsnake (Elaphe guttata guttata),
+(e) Black ratsnake (Elaphe obsoleta obsoleta),
+(f) Mole kingsnake (Lampropeltis calligaster rhombomaculata),
+(g) Eastern milksnake (Lampropeltis triangulum triangulum),
+(h) Coastal plain milksnake (Lampropeltis triangulum elapsoides x triangulum),
+(i) Eastern kingsnake (Lampropeltis getula getula),
+(j) Red-bellied watersnake (Nerodia erythrogaster),
+(k) Northern watersnake (Nerodia sipedon),
+(l) Rough greensnake (Opheodrys aestivus),
+(m) Smooth greensnake (Opheodrys vernalis),
+(n) Dekay's brownsnake (Storeria dekayi),
+(o) Red-bellied snake (Storeria occipitomaculata),
+(p) Eastern gartersnake (Thamnophis sirtalis sirtalis).
+B. The following species or subspecies are considered native to Maryland and may be lawfully possessed only as provided in Regulations .04C and .05A of this chapter, or bred or commercially traded only as provided in Regulations .05 — .09 of this chapter:
+(1) Lizards:
+(a) Broad-headed skink (Eumeces laticeps),
+(b) Eastern six-lined racerunner (Cnemidophorus sexlineatus);
+(2) Snakes:
+(a) Eastern hog-nosed snake (Heterodon platirhinos),
+(b) Queen snake (Regina septemvittata),
+(c) Common ribbonsnake (Thamnophis sauritus sauritus);
+(3) Turtles:
+(a) Wood turtle (Glyptemys insculpta),
+(b) Spotted turtle (Clemmys guttata),
+(c) Eastern box turtle (Terrapene carolina carolina),
+(d) Eastern painted turtle (Chrysemys picta picta),
+(e) Midland painted turtle (Chrysemys picta marginata),
+(f) Eastern mud turtle (Kinosternon subrubrum),
+(g) Northern red-bellied cooter (Pseudemys rubriventris),
+(h) Stinkpot (Sternothorus odoratus),
+(i) Diamond-backed terrapin (Malaclemys terrapin).
+C. Except under the authority of the permits described in Regulation .01A of this chapter , the following species or subspecies are considered native to Maryland and may not be possessed, bred, or commercially traded:
+(1) Salamanders:
+(a) Eastern tiger salamander (Ambystoma tigrinum),
+(b) Green salamander (Aneides aeneus),
+(c) Jefferson salamander (Ambystoma jeffersonianum),
+(d) Wehrle's salamander (Plethodon wehrlei),
+(e) Eastern hellbender (Cryptobranchus alleganiensis),
+(f) Mudpuppy (Necturus maculosus),
+(g) Eastern mud salamander (Pseudotriton montanus),
+(2) Frogs and Toads:
+(a) Eastern narrow-mouthed toad (Gastrophryne carolinensis),
+(b) Carpenter frog (Rana virgatipes),
+(c) Mountain chorus frog (Pseudacris brachyphona),
+(d) Barking treefrog (Hyla gratiosa);
+(3) Turtles:
+(a) Northern map turtle (Graptemys geographica),
+(b) Leatherback seaturtle (Dermochelys coriacea),
+(c) Loggerhead seaturtle (Caretta caretta),
+(d) Green seaturtle (Chelonia mydas),
+(e) Atlantic hawksbill seaturtle (Eretmochelys imbricata),
+(f) Kemp's ridley seaturtle (Lepidochelys kempii),
+(g) Bog turtle (Glyptemys muhlenbergii),
+(h) Spiny softshell (Apalone spinifera);
+(4) Lizards: Northern coal skink (Eumeces anthracinus);
+(5) Snakes:
+(a) Rainbow snake (Farancia erytrogramma),
+(b) Smooth earthsnake (Virginia valeriae),
+(c) Northern scarletsnake (Cemophora coccinea),
+(d) Timber rattlesnake (Crotalus horridus),
+(e) Copperhead (Agkistrodon contortrix).
+D. Unless otherwise stated, when both the scientific and common names are listed, the scientific name takes precedence over the common name.
+Cross References
+08.03.11.04A
+08.03.11.04B
+08.03.11.04C
+08.03.11.04D
+08.03.11.04E
+08.03.11.05A(1)
+08.03.11.05A(2)
+08.03.11.05A(3)
+08.03.11.16
+.04 Possession Without Permits.
+A. Except as provided in §§D—F of this regulation, a person without a reptile and amphibian permit may not possess more than four of each individual reptile or salamander, live or dead, listed in Regulation .03A of this chapter . The individual reptiles or salamanders may have been:
+(1) Obtained from the wild;
+(2) Captively produced; or
+(3) Legally obtained outside of Maryland.
+B. Except as provided in §§D—F of this regulation, a person without a reptile and amphibian permit may not possess more than four adults and 25 eggs or tadpoles of each individual frog or toad, live or dead, listed in Regulation .03A of this chapter . The frog or toad may have been:
+(1) Obtained from the wild;
+(2) Captively produced; or
+(3) Legally obtained outside of Maryland.
+C. Notwithstanding Natural Resources Article, §4-902, Annotated Code of Maryland , a person without a reptile and amphibian permit may possess only one of each individual reptile or amphibian, live or dead, listed in Regulation .03B of this chapter . A person may not take wood turtles, spotted turtles, or diamond-backed terrapins, including their eggs, from the wild. A certificate of origin, bill of sale, or other documentation proving captive origin of wood turtles, spotted turtles, or diamond-backed terrapins shall be retained. All turtles shall have a carapace length of at least 4 inches.
+D. An educational facility without a reptile and amphibian permit may possess an unlimited number of individual frogs and toads listed in Regulation .03A of this chapter if they are obtained:
+(1) From a permittee; or
+(2) Legally from outside of Maryland.
+E. A person without a reptile and amphibian permit may possess an unlimited number of albino, or other color mutations, resulting from captive breeding, of any species or subspecies listed in Regulation .03A of this chapter . The burden of proving that the mutant is a legitimate color mutant lies with the owner. However, commercial trade in these individuals is regulated as described in Regulations .05 — .07 of this chapter.
+F. American Bullfrogs.
+(1) A person without a reptile and amphibian permit may:
+(a) Take from the wild not more than ten American bullfrogs, or parts of them, per day, for personal use as food or possess more than 20 American bullfrogs, or parts of them; and
+(b) Possess or sell, for use as food, an unlimited number of American bullfrogs, or parts of them, if the animals were legally obtained from outside of Maryland.
+(2) American bullfrogs under §F(1)(a) of this regulation may not be sold or commercially traded.
+G. Possession of a hybrid applies to the possession limit for each species or subspecies in its lineage.
+Cross References
+08.02.13.03C
+08.02.13.05D
+08.03.11.03A
+.05 Permits.
+A. Except as provided in Regulation .04D—F of this chapter, a person shall obtain a reptile and amphibian permit from the Department in order to:
+(1) Possess more than four individuals, live or dead, of each reptile or salamander listed in Regulation .03A of this chapter , of which only four of each reptile or salamander may have been taken from the wild;
+(2) Possess more than four adults and 25 eggs or tadpoles, live or dead, of each frog or toad listed in Regulation .03A of this chapter , of which only four adults and 25 eggs or tadpoles of each frog or toad may have been taken from the wild;
+(3) Possess more than one individual, live or dead, of any species or subspecies listed in Regulation .03B of this chapter , of which:
+(a) No wood turtles, spotted turtles, or diamond-backed terrapins, or their eggs, may have been taken from the wild; and
+(b) Only one eastern box turtle, eastern painted turtle, midland painted turtle, eastern mud turtle, northern red-bellied cooter, stinkpot, broad-headed skink, eastern six-lined racerunner, eastern hog-nosed snake, queen snake, or common ribbonsnake may have been taken from the wild; or
+(4) Breed, attempt to breed, sell, offer for sale, trade, or barter any reptile or amphibian as allowed by Regulations .06 and .07 of this chapter.
+B. A permittee may possess an unlimited number of any reptiles or amphibians listed in Regulation .03A and B of this chapter that are:
+(1) Captively produced and documented as described in Regulation .11B of this chapter ;
+(2) Legally obtained from outside of Maryland and documented as described in Regulation .11B of this chapter ; or
+(3) Obtained from a licensed reptile and amphibian rescue service, veterinarian, or wildlife rehabilitator if documentation accompanies the reptiles or amphibians.
+C. Issuance of Permit.
+(1) The Director may issue a reptile and amphibian permit to possess, breed, sell, offer for sale, trade, or barter reptiles or amphibians only after the Director is satisfied that the issuance of a permit will not be detrimental to the protection and conservation of native reptiles or amphibians.
+(2) The Department may issue a reptile and amphibian permit for activities authorized in this chapter to a person who has submitted a completed application on a form provided by the Department, and a fee of $10. The permit is valid from the date of issuance until the following December 31.
+Cross References
+08.03.11.03B
+08.03.11.04E
+08.03.11.06A
+.06 Breeding.
+A. A permittee may collect from the wild for breeding purposes not more than the number of individual reptiles or amphibians allowed in Regulation .05A of this chapter .
+B. A permittee may breed turtles.
+.07 Commercial Trade.
+A. A permittee may sell, offer for sale, trade, or barter individuals of each species or subspecies of reptiles or amphibians listed in Regulation .03A and B of this chapter if they are:
+(1) Captively produced and documented as described in Regulation .11B of this chapter ; or
+(2) Legally obtained from outside of Maryland and documented as described in Regulation .11B of this chapter .
+B. Reptiles or amphibians listed in Regulation .03A and B of this chapter may be obtained:
+(1) From another permittee and documented as described in Regulation .11B of this chapter ; or
+(2) Legally from outside of Maryland and documented as described in Regulation .11B of this chapter .
+C. A permittee may not sell, offer for sale, trade, or barter turtles with a carapace length less than 4 inches to any person in Maryland. A permittee may not display live turtles, sell, offer for sale, trade, or barter turtles with a carapace length less than 4 inches at a facility open to the general public. A permittee may sell, offer for sale, trade, or barter turtles with a carapace length less than 4 inches outside of Maryland if it is legal to do so in the state where the commercial trade occurs.
+D. Reptiles or amphibians regulated under this chapter may not be taken from the wild in Maryland and sold, offered for sale, traded, or bartered.
+Cross References
+08.03.11.04E
+.08 Sanitary Housing and Shipping Requirements.
+A. Reptiles and amphibians held in captivity under the authority of this chapter shall be housed under conditions which are humane, safe, and healthy.
+B. Housing conditions shall meet all of the following requirements:
+(1) Enclosures shall be designed to:
+(a) Provide appropriate lighting, temperatures, humidity, and clean water to meet the physical requirements of the reptile or amphibian,
+(b) Keep the reptile or amphibian in complete and continuous captivity,
+(c) Restrict the entry of unauthorized persons or predatory animals,
+(d) Provide sufficient fresh food and clean water to fulfill the reptile or amphibian's dietary requirements and present the food and water in a manner compatible with the reptile or amphibian's particular eating habits, and
+(e) Minimize any potential danger to humans;
+(2) Enclosures shall be maintained in a sanitary condition and good repair;
+(3) Equipment shall be available for proper storage and disposal of waste material to control vermin, insects, and obnoxious odors;
+(4) Effective measures shall be provided to prevent and control infection and infestation of disease, parasites, or vermin;
+(5) Adequate shelter shall be provided for the comfort of the animal and, when necessary, for the isolation of diseased reptiles or amphibians; and
+(6) Reptiles or amphibians that are housed together shall be maintained in compatible groups without overcrowding.
+C. Standards for Shipping and Transportation of Live Reptiles and Amphibians.
+(1) Container Design and Maintenance.
+(a) Containers used for the transport of live animals shall be designed, constructed, and fitted as appropriate to the species, size, and weight of the animals to be transported. Special attention shall be paid to the avoidance of injury to animals through the use of secure smooth fittings or walls free from sharp protrusions.
+(b) Containers shall be designed with the structures necessary to provide protection from adverse weather conditions and to minimize the opportunity for animals to escape.
+(c) In order to minimize the likelihood of the spread of infectious disease during transport, containers shall be designed to permit thorough cleaning and disinfection. The cleaning and disinfection shall be completed after animals have been removed from the container.
+(d) Containers shall be maintained in good mechanical and structural condition.
+(e) Containers shall have adequate ventilation to meet variations in climate and the thermo-regulatory needs of the species to be transported.
+(f) For salamanders, frogs, toads, and juvenile turtles, sufficient moisture shall be available and applied to prevent desiccation of the animal. Turtles may not be transported in water.
+(2) Provisions for Transport.
+(a) Containers shall be adequately designed and positioned during transport so that the containers are securely fastened within the vehicle.
+(b) Vehicles shall have adequate ventilation to meet variations in climate and the thermo-regulatory needs of the species being transported.
+(c) For salamanders, frogs, toads, and juvenile turtles, sufficient moisture shall be available and applied to prevent desiccation of the animal.
+(3) Space allowance considerations shall:
+(a) Limit the number of animals that may be transported in a container to only one animal per compartment;
+(b) Ensure that each animal is able to assume its natural position during transport, including during loading and unloading, without coming into contact with the roof or upper deck of the container; and
+(c) Provide sufficient headroom to allow for adequate airflow over the animals.
+(4) Animals may not be stacked upon one another in a container.
+.09 Unlawful Methods for Taking from the Wild.
+A. A person may not take any reptile or amphibian regulated by this chapter by:
+(1) Lethal methods;
+(2) The use of a hook and line, trot line, bow and arrow, spear, gig or gig iron, or any other device capable of piercing any part of the reptile or amphibian;
+(3) Use of traps, pit falls, snares, seines, or nets other than dip nets; or
+(4) Use of chemicals, including gasoline.
+B. A person may not destroy or alter dens, burrows, basking sites, nests, hibernating sites, or other places of refuge of reptiles or amphibians.
+Cross References
+08.02.13.03C
+08.03.11.03A
+08.03.11.03B
+.10 Conditions for Release.
+A. Except as provided in §B(2) of this regulation , a reptile or amphibian that has been captively produced or that is not native to Maryland may not be released into the wild.
+B. A person may release an individual of any species or subspecies of reptiles or amphibians taken from the wild back to the wild if:
+(1) It was not held in captivity with any other reptile or amphibian and it was not held in captivity for more than 30 days; or
+(2) The person has obtained prior written authorization from the Department.
+C. Release of an individual reptile or amphibian under §B of this regulation shall occur at or near the point of capture.
+.11 Record-Keeping Requirements.
+A. A permittee shall maintain accurate, current, and complete records on forms provided by the Department. A copy of these records shall be submitted to the Department:
+(1) At the time of application for permit renewal; or
+(2) By January 31, following expiration of the permit, if the permit is not renewed.
+B. To prove that any reptile or amphibian held under a reptile and amphibian permit did not come from the wild in Maryland, a permittee shall retain as part of the permittee's records for each individual reptile or amphibian:
+(1) One of the following:
+(a) A certificate of origin issued at the time an individual of any species or subspecies of reptiles or amphibians listed in Regulation .03A and B of this chapter is obtained; or
+(b) A bill of sale or other documentation to prove that the individuals of any species or subspecies of reptiles or amphibians listed in Regulation .03A and B of this chapter were legally obtained; and
+(2) Breeding records for young produced in captivity by a permittee, including number of young produced by each female of each species.
+C. A certificate of origin, bill of sale, or other documentation shall include:
+(1) Common name;
+(2) Scientific name;
+(3) Number of individuals by species;
+(4) Date of transaction;
+(5) Name and address of seller, including Maryland permit number when applicable.
+D. The records referred to in §B of this regulation shall be maintained for each individual reptile or amphibian possessed by the permittee for as long as the reptile or amphibian is possessed by the permittee, or for 3 years following the disposition of each individual reptile or amphibian, whichever is longer.
+E. A certificate of origin, a bill of sale, or other documentation shall be retained for the individuals of any species or subspecies of reptiles or amphibians that are similar in appearance to those species or subspecies regulated under this chapter.
+Cross References
+08.03.11.05B(1)
+08.03.11.05B(2)
+08.03.11.07A(1)
+08.03.11.07A(2)
+08.03.11.07B(1)
+08.03.11.07B(2)
+08.03.11.12B
+.12 Inspection.
+A permittee shall allow the Department to:
+A. Enter and inspect at any reasonable hour the premises where operations under this chapter occur; and
+B. Inspect the records described in Regulation .11 of this chapter .
+Cross References
+08.03.11.15D
+.13 Revocation.
+A. The Director may revoke a reptile and amphibian permit for a violation of:
+(1) Natural Resources Article, Title 10, Annotated Code of Maryland ;
+(2) This chapter; or
+(3) The terms of the permit.
+B. At the sole discretion of the Director, a reptile and amphibian permit revocation may result in confiscation of an individual of any species or subspecies of reptiles or amphibians listed in Regulation .03A—C of this chapter which only may be possessed, bred, or sold with a permit issued under the authority of this chapter. The disposition of confiscated individuals of any species or subspecies of reptiles or amphibians is at the discretion of the Director.
+.14 Penalties.
+Violation of these regulations is a misdemeanor punishable under Natural Resources Article, §§ 10-205 and 10-1101 — 10-1107 , Annotated Code of Maryland.
+.15 Grandfather Clause.
+A. A person shall have until March 31, 2008, to declare in writing to the Director possession of each individual:
+(1) Eastern painted turtle, midland painted turtle, eastern mud turtle, northern red-bellied cooter, and stinkpot possessed prior to the effective date of this regulation, if the person possesses more than one individual, live or dead;
+(2) Diamond-backed terrapin possessed prior to the effective date of these regulations, if the person possesses any individuals taken from the wild;
+(3) Copperhead possessed prior to May 31, 2006;
+(4) Broad-headed skink, eastern six-lined racerunner, eastern hog-nosed snake, queen snake, or common ribbonsnake possessed prior to the effective date of this regulation, if the person possesses more than one individual, live or dead; or
+(5) Eastern mud salamander possessed prior to the effective date of this regulation, live or dead.
+B. For each individual reptile or amphibian possessed, the declaration shall include:
+(1) Species name;
+(2) Number of individuals of each species;
+(3) Date acquired;
+(4) Sex, if known;
+(5) Estimated age;
+(6) Length;
+(7) Origin; and
+(8) Other identifying characteristics or specific markings such as tattoos, registration numbers, PIT tag numbers, coloration, missing limbs, or notched shells.
+C. The Department shall acknowledge each declaration in writing. This acknowledgement shall serve as a permit for possession only and is not transferable.
+D. The holder of a grandfather permit shall be subject to inspection as described in Regulation .12A of this chapter .
+.16 Prohibition on Use in Competitions.
+No species listed in Regulation .03 of this chapter , regardless of origin, may be used in a competition.
+Previous
+Chapter 10 General Wildlife Hunting Regulations
+Next
+Chapter 12 Wildlife Rehabilitation
+This version of the laws and codes on this website is licensed under the CC BY-NC-SA 4.0 license with copyright held by the State of Maryland.
+This version of the laws and codes on this website will be dedicated to the public domain under the CC0 1.0 license 180 days after publication.
+Please do not scrape. Instead, bulk download the CC BY-NC-SA-4.0 HTML or XML or CC0 HTML or XML .
+Powered by the non-profit Open Law Library .

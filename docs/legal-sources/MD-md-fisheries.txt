@@ -1,0 +1,216 @@
+# Maryland COMAR 08.02.06 Snapping Turtles and 08.02.19 Nuisance and Prohibited Species
+
+sourceId: md-snapping-turtle
+jurisdiction: MD
+url: https://regs.maryland.gov/us/md/exec/comar/08.02.06/index.full.html
+     https://regs.maryland.gov/us/md/exec/comar/08.02.19/index.full.html
+fetched: 2026-09-05
+fetch notes: see the header of MD-md-framework.txt.
+
+Two chapters that answer by absence as much as by content. 08.02.06 is where the snapping
+turtle went, which is why it is missing from the native herptile lists. 08.02.19 is
+Maryland's only use of the Nat. Res. § 10-903 power to restrict non-native wildlife, and its
+lists are fish, crustaceans, molluscs and two aquatic plants: NO reptile, NO amphibian, no
+terrestrial anything. That is what leaves the red-eared slider unregulated in Maryland.
+
+=========================================================================
+COMAR 08.02.06  SNAPPING TURTLES
+=========================================================================
+.01 Snapping Turtles.
+A. In this regulation, the following terms have the meanings indicated.
+B. Terms Defined.
+(1) “Carapace” means the top shell of a turtle.
+(2) “The wild” means any land or water in the State, either natural or altered, upon which a snapping turtle can exist in a condition which is not constrained or controlled by humans.
+C. Methods of Taking Snapping Turtles.
+(1) A person may not catch a snapping turtle from the waters of the State by the use of a hook and line, trot line, bow and arrow, spear, gig or gig iron, or any other device capable of piercing any part of a turtle.
+(2) Nontidal Waters. In addition to the gear prohibited in §C(1) of this regulation , a person may not catch a snapping turtle from nontidal waters of the State by the use of a net, seine, fish pot, trap, or other fishing rig.
+D. Measuring a Snapping Turtle. The length of a snapping turtle shall be measured:
+(1) Along the curvature of the carapace with a flexible tape measure that conforms to the snapping turtle's shell; and
+(2) From the nuchal scute, the scute directly behind the turtle's head, to the base of the notch where the two most posterior scutes meet, as described on the harvester's snapping turtle harvest permit card.
+E. Season. The only place and time that a person may not catch or attempt to catch snapping turtles is in the tributary waters of Charles County from April 15 to May 31, inclusive.
+F. Eggs and Nests. A person may not possess, destroy, or disturb snapping turtle eggs or disturb the nest of a snapping turtle.
+G. Commercial Fishery.
+(1) General Requirements and Restrictions.
+(a) A person may not harvest or possess a snapping turtle for commercial purposes that has a carapace length that is less than 11 inches, measured in accordance with §D of this regulation .
+(b) A person may not buy, sell, or offer to buy or sell any snapping turtle harvested from the nontidal waters of the State.
+(c) A person catching snapping turtles for commercial purposes shall:
+(i) Be licensed to fish for commercial purposes in accordance with Natural Resources Article, §4-701, Annotated Code of Maryland ; and
+(ii) Have the Department-issued snapping turtle harvest permit in possession while harvesting or transporting snapping turtles.
+(2) Snapping Turtle Harvest Permit.
+(a) Snapping turtle harvest permits shall be issued to all licensees who have:
+(i) Paid the fee for a snapping turtle permit as required by Natural Resources Article, §4-701, Annotated Code of Maryland ; and
+(ii) Met all reporting requirements as required by Natural Resources Article, §4-206, Annotated Code of Maryland , and this regulation.
+(b) Snapping turtle harvest permits may not be transferred.
+(3) Reporting. A person permitted by the Department to harvest snapping turtles shall:
+(a) Record their catch on the snapping turtle harvest report and on the daily commercial fisheries catch log;
+(b) Submit the snapping turtle harvest report as required by the Department and the daily commercial fisheries catch log in accordance with COMAR 08.02.13.06 ; and
+(c) Make available daily information, harvest report cards, and catch logs for immediate inspection on request of a Department representative.
+(4) Penalties.
+(a) In addition to any other penalty established in COMAR 08.02.13 , failure to comply with this regulation may result in the denial of a subsequent permit.
+(b) Prior to suspending a permit under this regulation or denying an application for a permit, the Department shall give the licensee notice of its intended action and an opportunity to appear at a hearing conducted in accordance with the contested case procedures set forth in State Government Article, Title 10, Subtitle 2, Annotated Code of Maryland , and COMAR 08.01.04 .
+(5) Float Requirements for Traps. A trap used to catch snapping turtles shall have a solid foam or hard plastic float inserted inside the trap that will bring a portion of the trap to the surface of the water and provide breathing space for trapped turtles.
+H. Noncommercial Taking and Possession; Pets.
+(1) A person may not take or possess a snapping turtle from the wild that has a carapace length that is less than 4 inches.
+(2) A person may not possess more than one snapping turtle taken from the wild for noncommercial purposes.
+(3) A person must be licensed in accordance with Natural Resources Article, §4-604, Annotated Code of Maryland , to take or possess a snapping turtle from nontidal waters for noncommercial purposes.
+(4) A person need not be licensed in accordance with Natural Resources Article, §4-745, Annotated Code of Maryland , to take or possess a snapping turtle from tidal waters for noncommercial purposes.
+I. Release of Captive Snapping Turtles. A person may only release a snapping turtle taken from the wild back to the wild if the person has obtained prior written authorization from the Department.
+J. Exceptions. The provisions of §§C, E, and F of this regulation do not apply to a person who:
+(1) Is authorized by a scientific collection permit in accordance with Natural Resources Article, §4-212, Annotated Code of Maryland ;
+(2) Is authorized by a landowner wildlife damage control permit in accordance with Natural Resources Article, §10-206, Annotated Code of Maryland ; or
+(3) Is authorized by a commercial wildlife damage control permit in accordance with Natural Resources Article, §10-908, Annotated Code of Maryland .
+K. Public Notice.
+(1) The Secretary may modify size limits or open, close, or modify a season by publishing notice in a daily newspaper of general circulation at least 48 hours in advance, stating the effective hour and date.
+(2) The Secretary shall make a reasonable effort to disseminate public notice through various other media so that an affected person has reasonable opportunity to be informed.
+Cross References
+08.02.13.03C
+08.02.13.10E
+Previous
+Chapter 05 Fish
+Next
+Chapter 07 Hard-Shell Clams
+This version of the laws and codes on this website is licensed under the CC BY-NC-SA 4.0 license with copyright held by the State of Maryland.
+This version of the laws and codes on this website will be dedicated to the public domain under the CC0 1.0 license 180 days after publication.
+Please do not scrape. Instead, bulk download the CC BY-NC-SA-4.0 HTML or XML or CC0 HTML or XML .
+Powered by the non-profit Open Law Library .
+
+=========================================================================
+COMAR 08.02.19  NUISANCE AND PROHIBITED SPECIES
+=========================================================================
+.01 Purpose.
+The purpose of this chapter is to control the importation, possession, propagation, transport, purchase, sale, or introduction into State waters of certain nonnative aquatic organisms that if accidentally or deliberately introduced into or further spread in the waters of the State would alter and threaten to harm the ecosystem, the abundance and diversity of native or naturalized aquatic organisms, or the productivity of State waters.
+.02 Definitions.
+A. In this chapter, the following terms have the meanings indicated.
+B. Terms Defined.
+(1) “Aquaculture” means the rearing for commercial purposes of a species of fish or aquatic plant as listed in and described in COMAR 08.02.14 and may include the purchase, sale, possession, capture, production, breeding, transportation, and processing of fish or aquatic plants.
+(2) “Aquatic organism” means a living organism that spends part of its life in water.
+(3) “Felt sole” means a sole to which felt or any other natural or synthetic porous material capable of absorbing liquid is attached.
+(4) “Historically” means commonly accepted to have been in State waters in the year 1500.
+(5) “Hybrid” means the offspring of any species of fish of genetically dissimilar parents or stock.
+(6) “Introduction into State waters” means the deliberate or accidental release of an aquatic organism into State waters.
+(7) “Native” means having historically lived, grown, and reproduced in State waters.
+(8) “Naturalized” means documented as having lived, grown, and reproduced in State waters for more than 10 years without known harm to the ecosystem.
+(9) “Nonnative ” means any species other than native or naturalized.
+(10) “Nuisance organism” means a nonnative aquatic organism that will foreseeably alter and threaten to harm the ecosystem or the abundance and diversity of native or naturalized aquatic organisms.
+(11) “State waters” means tidal and nontidal waters located within the boundaries of the State, including that portion of the Atlantic Ocean within the boundaries of the State, the Chesapeake Bay and its tributaries, and all ponds, lakes, rivers, streams, public ditches, tax ditches, and public drainage systems within the State.
+(12) “Transgenic” means an organism into which genetic material from another organism has been experimentally transferred so that the host acquires the genetic traits of the transferred genes.
+(13) “Transport” means to move a nonnative aquatic organism from the waters of one watershed, as named by Maryland Integrated Watershed Data and Information System 6-digit map, and introduce it into the waters of another watershed, as named by Maryland Integrated Watershed Data and Information System 6-digit map.
+(14) “Without known harm” means a species has acclimated or adapted to life in Maryland's waters for more than 50 years without diminishing the abundance, diversity, distribution or reproduction of a native species or degrading water quality requirements for a native species.
+C. A term used in this chapter and not defined in this regulation has:
+(1) The meaning given to the term in a relevant statute or regulation; or
+(2) If not defined in statute or regulation, the meaning attributed in common use.
+.03 Transgenic.
+A person may not introduce into State waters any transgenic aquatic organism.
+.04 Classification of Nonnative Aquatic Organisms.
+A. A person may not import, transport, purchase, possess, propagate, sell, or release into State waters the following nonnative aquatic organisms:
+(1) Fish species:
+(a) Alabama bass (Micropterus hensalli);
+(b) Asian horseshoe crabs (Tachypleus tridentatus, Tachypleus gigas, Carcinoscorpius rotundicauda);
+(c) Asian swamp eel (Monoterus albus);
+(d) Bighead carp (Hypophthalmichthys nobilis);
+(e) Black carp (Mylopharynodon piceus);
+(f) Candiru (Vandellia cirrhosa);
+(g) Chinese mitten crab (Eriocheir sinensis);
+(h) Eurasian river ruffe (Gymnocephalus cernuus);
+(i) Grass carp (Ctenopharyngodon idella);
+(j) Marbled crayfish (marmorkrebs) (Procambarus sp.);
+(k) New Zealand Mudsnail (Potamopyrgus anitpodarum);
+(l) Quagga mussel (Dreissena bugensis);
+(m) Red shiner (Notropis lutrensis, Cyprinella lutrensis);
+(n) Round goby (Neogobius melanostomus);
+(o) Rudd (Scardinius erythrophthalmus);
+(p) Rusty crayfish (Orconectes rusticus);
+(q) Silver carp (Hypophthalmichthys molitrix);
+(r) Spotted bass (Micropterus punctulatus);
+(s) Veined rapa whelk (Rapana venosa);
+(t) Walking catfish (Clarius batrachus); and
+(u) Zebra mussel (Dreissena polymorpha); and
+(2) Aquatic plant species:
+(a) Giant salvinia (Salvinia molesta); and
+(b) Green Caulerpa seaweed (Caulerpa taxifolia).
+B. A person may not transport the following nonnative aquatic organisms:
+(1) Fish species:
+(a) Blue catfish (Ictalurus furcatus);
+(b) Flathead catfish (Pylodictis olivaris);
+(c) Green crab (Carcinus manenas);
+(d) Japanese shore crab (Hemigrapsus sanguineus);
+(e) Mimic shiner (Notropis volucellus);
+(f) Red swamp crayfish (Procambarus clarkii);
+(g) Southern white river crayfish (Procambarus zonangulus); and
+(h) Virile crayfish (Orconectes virilis); and
+(2) Aquatic plant species:
+(a) Brazilian elodea (Egeria densa);
+(b) Hydrilla (Hydrilla verticillata);
+(c) Parrot feather (Myriophyllum aquaticum, Myriophyllum brasiliense); and
+(d) Water chestnut (Trapa natans).
+C. A person may not import, transport, purchase, propagate, sell, or release into State waters the following nonnative aquatic organisms:
+(1) Australian crayfish of genus Cherax (Cherax);
+(2) Chinese mystery snail (Cipangopaludina chinensis, Viviparus malleatus); and
+(3) Oriental weatherfish (Misgurnus anguillicaudatus).
+D. Permit.
+(1) A person may not import, transport, purchase, possess, propagate, or sell a nonnative aquatic organism listed in §A of this regulation , or transport a nonnative aquatic organism listed in §B of this regulation , or import, transport, purchase, propagate, or sell a nonnative aquatic organism listed in §C of this regulation , unless the person has been issued a permit by the Department, as specified in Natural Resources Article, §4-212 or 4-11A-02, Annotated Code of Maryland.
+(2) A permit may be granted only if satisfactory proof is presented to the Department that the organism is free of a communicable disease.
+(3) An application for the permit shall be filed with the Department not less than 60 days before the proposed date of importation.
+(4) An application for an activity listed in §D(1) of this regulation that is in progress at the time of adoption of this regulation shall be filed within 60 days after the date of adoption of this regulation.
+(5) A permitted nonnative aquatic organism may be held only in a secure facility from which escape into State waters is not possible.
+(6) A permit is not required if:
+(a) The species is being transported to the Department or another destination as the Secretary may direct:
+(i) In a sealed container or dead; and
+(ii) For purposes of species identification or reporting the presence of the species; or
+(b) The specimen has been lawfully acquired dead and, in the case of plant species, all seeds are removed or otherwise secured in a sealed container or is in the form of herbaria or other preserved museum specimens.
+.05 General.
+A. A person may not place or attempt to place upon or into State waters a watercraft or associated equipment with attached or contained aquatic plants, zebra mussels, or other prohibited species of nonnative organisms.
+B. Water taken from waters infested by prohibited nonnative species may not be diverted, appropriated, or transported on public roads except in the following circumstances:
+(1) In an emergency declared by appropriate local or State authorities, such as a fire emergency;
+(2) As specified in water appropriation or public waters work permits; or
+(3) Under a permit issued by the Secretary.
+.06 Snakehead Prohibitions.
+A. Except as authorized by 50 CFR Part 16, a person may not import, transport, or introduce into the State any live fish or viable eggs of snakehead fish of the Family Channidae, including but not limited to:
+(1) African snakehead (Parachanna obscura);
+(2) Bangka snakehead (Channa bankanensis);
+(3) Baram snakehead (Channa baramensis);
+(4) Barca snakehead (Channa barca);
+(5) Black snakehead (Channa melasoma);
+(6) Blackfinned snakehead (Channa melanoptera);
+(7) Blotched snakehead (Channa maculata);
+(8) Bluespotted snakehead (Channa cyanospilos);
+(9) Bullseye snakehead (Channa marulius);
+(10) Burmese snakehead (Channa burmanica);
+(11) Ceylon snakehead (Channa orientalis);
+(12) Chel snakehead (Channa amphibeus);
+(13) Chevron snakehead (Channa striata);
+(14) Chinese snakehead (Channa asiatica);
+(15) Congo snakehead (Parachanna insignis);
+(16) Dwarf snakehead (Channa gachua);
+(17) Emperor snakehead (Channa maruloides);
+(18) Giant snakehead (Channa micropeltes);
+(19) Golden snakehead (Channa stewartii);
+(20) Inle snakehead (Channa harcourtbutleri);
+(21) Niger snakehead (Parachanna africana);
+(22) Night snakehead (Channa nox);
+(23) Northern snakehead (Channa argus);
+(24) Ocellated snakehead (Channa pleurophthalmus);
+(25) Orangespotted snakehead (Channa aurantimaculata);
+(26) Panaw snakehead (Channa panaw);
+(27) Rainbow snakehead (Channa bleheri);
+(28) Splendid snakehead (Channa lucius); and
+(29) Spotted snakehead (Channa punctata).
+B. A person may not sell or breed live snakehead fish of the Family Channidae in the State.
+C. Except as provided in §D of this regulation , a person may not possess the viable eggs or live snakehead fish of the species:
+(1) Blotched snakehead (Channa maculata); and
+(2) Northern snakehead (Channa argus).
+D. Except as described in §E of this regulation , an individual may only possess a snakehead if, immediately upon capture, the snakehead is killed.
+E. The Department may issue a permit for the possession of a live snakehead fish for scientific purposes to a properly accredited person of known scientific attainment.
+Cross References
+08.02.11.04N(3)
+08.02.13.05F
+.07 Felt-Soled Waders.
+An individual may not use footgear with external felt soles in State waters or within five feet of State waters.
+Previous
+Chapter 18 Fishing Guide Provisions
+Next
+Chapter 20 Bait
+This version of the laws and codes on this website is licensed under the CC BY-NC-SA 4.0 license with copyright held by the State of Maryland.
+This version of the laws and codes on this website will be dedicated to the public domain under the CC0 1.0 license 180 days after publication.
+Please do not scrape. Instead, bulk download the CC BY-NC-SA-4.0 HTML or XML or CC0 HTML or XML .
+Powered by the non-profit Open Law Library .
