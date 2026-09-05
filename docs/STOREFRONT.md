@@ -142,7 +142,8 @@ uses for likes and comments.
    is a project setting and is not always 6 digits, so the library accepts 6 to
    10; do not narrow that to whatever length you happen to see.
 
-   Until that is done, treat the storefront as testable but not sellable.
+   Confirmed working on 5 September 2026: `noreply@beastlyfacts.com` delivered
+   to an address that is not on the project team.
 6. **Email sign-in, and why the library takes a pasted link.** The library uses
    `signInWithOtp`, and clicking the emailed link is the normal path. The box
    underneath that accepts a pasted link is not decoration: on Android a device
@@ -151,6 +152,25 @@ uses for likes and comments.
    before the human sees them, and some clients rewrite the URL. In all of those
    the token is still in the email, and pasting the link verifies it directly
    through `verifyOtp({ token_hash })` with no redirect involved.
+
+### Do NOT turn off "Confirm email"
+
+Authentication -> Sign In / Providers has a **Confirm email** toggle, and it is
+tempting to switch it off, because with it on a brand new address gets the
+"Confirm your email address" template on its first sign-in instead of the
+sign-in one. Leave it on. It is load-bearing for the paywall.
+
+Anyone can call Supabase's public signup endpoint with the publishable key that
+already ships in the site bundle. With confirmations on, no session is issued
+until the address is proved. With them off, a stranger could sign up as a real
+buyer's email address, receive a session immediately, and the library would
+hand them that buyer's purchases and PDFs, because ownership is keyed on the
+email inside the token.
+
+The safe fix for the wording is to edit the **Confirm signup** template so it
+reads like signing in rather than registering, and to add `{{ .Token }}` to it
+as well as to Magic Link. The library tries a typed code as type `email` and
+falls back to `signup`, so a code from either template works.
 
 ## Cloudflare Pages environment variables
 
@@ -175,6 +195,15 @@ swapped for their live equivalents and a live webhook endpoint is registered.
 Nothing else changes.
 
 ### Stripe receipt emails
+
+Receipts do not arrive in the Sandbox, and that is not a bug to chase. Stripe's
+docs: "By default, Stripe doesn't email customers in sandboxes", and email
+receipts in test mode go only to an address belonging to a verified team
+member. To see one, send it by hand: Transactions -> Payments -> the payment ->
+Receipt history -> the overflow menu -> Send receipt.
+
+What to check instead is that the charge carries a `receipt_email` at all. A
+charge with `receipt_email: null` can never produce a receipt in any mode.
 
 Checkout is created with `customer_creation: 'always'`. That is deliberate and
 should not be relaxed back to `if_required`: with `if_required` a card payment

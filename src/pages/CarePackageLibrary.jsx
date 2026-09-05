@@ -167,9 +167,26 @@ export default function CarePackageLibrary() {
     }
 
     setWorking(true);
-    const { error: verifyError } = parsed.kind === 'code'
-      ? await supabase.auth.verifyOtp({ email: email.trim(), token: parsed.token, type: 'email' })
-      : await supabase.auth.verifyOtp({ token_hash: parsed.token, type: parsed.type });
+
+    let verifyError;
+    if (parsed.kind === 'code') {
+      // A typed code carries no type of its own, and the right one depends on
+      // which email it came from: a returning buyer's code is 'email', but a
+      // brand new address gets the signup confirmation instead, whose code
+      // only verifies as 'signup'. Nothing in the digits distinguishes them,
+      // so try the common case and fall back rather than making the buyer
+      // know which email they are looking at.
+      const first = await supabase.auth.verifyOtp({ email: email.trim(), token: parsed.token, type: 'email' });
+      verifyError = first.error;
+      if (verifyError) {
+        const second = await supabase.auth.verifyOtp({ email: email.trim(), token: parsed.token, type: 'signup' });
+        verifyError = second.error;
+      }
+    } else {
+      // A pasted link carries its own type in the query string, so there is
+      // nothing to guess.
+      ({ error: verifyError } = await supabase.auth.verifyOtp({ token_hash: parsed.token, type: parsed.type }));
+    }
     setWorking(false);
 
     if (verifyError) {
