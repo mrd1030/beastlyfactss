@@ -98,35 +98,35 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 22,
+        "checked": 23,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 22,
+        "checked": 23,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 23,
+        "checked": 24,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 23,
+        "checked": 24,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 23,
+        "checked": 24,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 23,
+        "checked": 24,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 23,
+        "checked": 24,
         "of": 51
       },
       "green-anole": {
-        "checked": 23,
+        "checked": 24,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,23 +134,23 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "axolotl": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "box-turtle": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "red-eared-slider": {
@@ -158,11 +158,11 @@
         "of": 51
       },
       "sulcata-tortoise": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "hognose-snake": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "african-grey-parrot": {
@@ -174,7 +174,7 @@
         "of": 51
       },
       "savannah-monitor": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "snapping-turtle": {
@@ -182,31 +182,31 @@
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "green-iguana": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "burmese-python": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "degu": {
@@ -214,7 +214,7 @@
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "hamster": {
@@ -242,15 +242,15 @@
         "of": 51
       },
       "ball-python": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "veiled-chameleon": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "boa-constrictor": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "corn-snake": {
@@ -690,11 +690,6 @@
       "url": "https://legislature.vermont.gov/statutes/section/10appendix/001/00018",
       "note": "Ferrets were legalised in 1989 and are defined as a domestic pet alongside dogs and cats, limited to 'the European ferret Mustela putorious furo'."
     },
-    "ut-r657-3": {
-      "title": "Utah Admin. Code R657-3 / R657-3b, Collection, Importation, Transportation and Possession of Animals",
-      "url": "https://www.animallaw.info/administrative/ut-wildlife-possession-r657-3-collection-importation-transportation-and-possession",
-      "note": "Three tiers: noncontrolled needs no certificate of registration, controlled and prohibited both do. Species assignments are in Table 3b-1 on the division's Certificates of Registration page. A reclassification from noncontrolled to controlled or prohibited allows a COR for continued possession of an animal already held."
-    },
     "de-3900": {
       "title": "7 Del. Admin. Code 3900, Wildlife, exotic animal provisions",
       "url": "https://regulations.delaware.gov/AdminCode/title7/3900",
@@ -923,7 +918,7 @@
     "ut-r657-53-tables": {
       "title": "Species Tables for Utah's Reptiles and Amphibians",
       "url": "https://wildlife.utah.gov/reptiles-amphibians/tables",
-      "note": "Official Utah DWR table under R657-53; lists Western milk snake (Lampropeltis gentilis) under 'Limited possession' at 2 daily/yearly and 4 total per species."
+      "note": "The division's classification tables under R657-53. Every table on the page is about animals taken from the wild in Utah: six prohibited natives, six naturalized non-natives at unlimited, four native lizards at Expanded, and the Standard and Limited controlled lists. The page says outright that 'the DWR does not maintain a full list of non-native species', so it answers a pet species only when that species also lives wild in Utah."
     },
     "wi-nr-16-12": {
       "title": "Wisconsin Admin. Code NR 16.12 — Amphibian and Reptile Regulations",
@@ -986,9 +981,9 @@
       "note": "Official Pennsylvania Code and Bulletin chapter, Fish and Boat Commission rules that apply only to species native to Pennsylvania and only to wild take, which requires a fishing license."
     },
     "ut-r657-53": {
-      "title": "Utah Admin. Code R657-53-5",
+      "title": "Utah Admin. Code R657-53, Amphibian and Reptile Collection, Importation, Transportation and Possession",
       "url": "https://wildlife.utah.gov/rules/r657-53",
-      "note": "Utah DWR's own hosting of rule R657-53, section 5 lists activities allowed without a wildlife document, including noncontrolled species possession thresholds."
+      "note": "The whole of Utah's herp rule, self-hosted by the Division of Wildlife Resources because the Office of Administrative Rules site is a React app that serves nothing to a fetcher. Written for collection from the wild: 53-4(1) bars possession outright and 53-5 then gives it back, 53-12 is the only certificate of registration that attaches to possession and it covers native venomous reptiles only, and 53-8(1) lifts captive-bred and out-of-state animals out of the possession limits."
     },
     "vt-10-app-18": {
       "title": "10 V.S.A. App. § 18",
@@ -1051,9 +1046,9 @@
       "note": "Defines pet bird as a non-native, non-endangered, non-migratory psittacine or soft-bill bird, the category Wisconsin's captive wildlife law leaves unregulated."
     },
     "ut-r657-3b": {
-      "title": "Utah Administrative Code R657-3b",
+      "title": "Utah Admin. Code R657-3b, Collection, Importation, Possession and Propagation of Birds and Mammals",
       "url": "https://wildlife.utah.gov/rules/r657-03b",
-      "note": "Governs certificates of registration for bird and mammal species; its Table 3b-1 classifies non-native Family Psittacidae as noncontrolled, needing no certificate."
+      "note": "Birds and mammals only. 3b-1(3) points at Bird and Mammal Classification Table 3b-1 for the domestic animals the rule does not govern at all, which is the section that answers most pet mammals in Utah."
     },
     "de-nonnative-reptile-permit": {
       "title": "Delaware Code, Title 3, Chapter 72 — Possession of Mammals or Reptiles Exotic to Delaware",
@@ -1098,7 +1093,7 @@
     "ut-table-3b-1": {
       "title": "Utah DWR Bird and Mammal Classification Table 3b-1 (May 1, 2023), under Utah Admin. Code R657-3b",
       "url": "https://wildlife.utah.gov/pdf/cor/bird_and_mammal_classification_table_3b-1.pdf",
-      "note": "R657-3b-1 governs the collection, importation, possession and propagation of BIRDS AND MAMMALS only. The table's own header sets an inverted default: 'Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.' Sections are domestic animals not covered by the rule, noncontrolled, controlled, and prohibited (the last defined as known detrimental impacts, where 'personal possession will not be authorized')."
+      "note": "Five sections: domestic mammals and birds not covered by the rule, noncontrolled mammals and birds, controlled mammals, and prohibited mammals. The header sets an inverted default: 'Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.' The prohibited section adds that 'personal possession will not be authorized'."
     },
     "pa-34-102": {
       "title": "34 Pa.C.S. § 102, Game and Wildlife Code definitions of wildlife, wild animals and wild birds",
@@ -1359,6 +1354,16 @@
       "title": "N.J.S.A. 23:4-63.3, Possession, release of certain animals, prohibited; terms defined",
       "url": "https://law.onecle.com/new-jersey/title-23/23-4-63.3.html",
       "note": "The statutory possession bar that sits above subchapter 4. New Jersey publishes its statutes through a Folio viewer that does not serve a plain document URL, so the section was read from this reproduction and is cited to the official section. Its definition of 'exotic animal' is narrower than the rule's: it reaches mammals, birds, reptiles, amphibians, fish, molluscs and crustaceans only, and it carves out domesticated companion animals."
+    },
+    "ut-r657-3a": {
+      "title": "Utah Admin. Code R657-3a, Collection, Importation, Transportation and Possession of Animals",
+      "url": "https://wildlife.utah.gov/rules/r657-03a",
+      "note": "The umbrella rule that replaced R657-3, which no longer exists. R657-3a carries the definitions and the collection, importation, possession and propagation sections; the species classifications live in R657-3b for birds and mammals, R657-3c for aquatic animals, and R657-53 for herps. 3a-2(2)(b) expressly puts Amphibia and Reptilia outside it. Its 3a-2(20)(b) is the inverted default: a species that has not gone through the division's classification process is a prohibited species."
+    },
+    "ut-23a-1-101": {
+      "title": "Utah Code § 23A-1-101, Wildlife Resources Code definitions",
+      "url": "https://le.utah.gov/xcode/Title23A/Chapter1/23A-1-S101.html",
+      "note": "The statutory definition that decides Utah's invertebrates. Subsection (65) limits wildlife to crustaceans, molluscs and vertebrate animals living in nature, so an arachnid, an insect or a myriapod is outside the Division of Wildlife Resources' authority entirely. Note that le.utah.gov serves the section text only from the versioned URL, /xcode/Title23A/Chapter1/C23A-1-S101_<version>.html; the plain section page is a shell."
     }
   },
   "animals": {
@@ -1582,10 +1587,11 @@
         },
         "UT": {
           "status": "legal",
-          "sourceId": "ut-r657-3",
-          "quote": "Hedgehogs (Erinaceidae) except white bellied hedgehogs are controlled for collection, importation and possession",
-          "note": "White-bellied hedgehog is another common name for Atelerix albiventris, the pet species, so the exception is precisely the animal people keep. Every other hedgehog needs a certificate of registration. Same drafting pattern as Arizona, which exempts genus Atelerix by name.",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "ut-table-3b-1",
+          "cite": "Utah Admin. Code R657-3b-1(3); Table 3b-1, domestic mammals and controlled mammals",
+          "quote": "Domestic mammals and mammalian livestock not covered under this rule ... Hedgehog, \"white-bellied\", \"African pygmy\", etc. Atelerix species includes hybrids ... Controlled mammals ... Hedgehogs family Erinaceidae except \"while-bellied\" (see domestic animals)",
+          "note": "Utah is unusually careful about the hedgehog and gets the taxonomy right where several states get it wrong. Table 3b-1 lists Atelerix species, described as \"white-bellied\" or \"African pygmy\" and expressly including hybrids, among the domestic mammals the rule does not govern. It then lists the rest of family Erinaceidae as controlled, with the parenthetical \"except while-bellied (see domestic animals)\", typo and all. So the pet hedgehog is free and a European hedgehog would need a certificate of registration. Compare Nebraska, whose importation list says \"Eurasian Hedgehogs, Erinaceus spp.\" and leaves the pet species unanswered. This entry previously cited R657-3, a rule that no longer exists.",
+          "verifiedOn": "2026-09-05"
         },
         "DE": {
           "status": "legal",
@@ -2395,9 +2401,11 @@
         },
         "UT": {
           "status": "legal",
-          "sourceId": "ut-r657-3",
-          "quote": "Sugar glider (Petaurus breviceps) is noncontrolled for collection, importation or possession",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "ut-table-3b-1",
+          "cite": "Utah Admin. Code R657-3b-1(3); Table 3b-1, domestic mammals",
+          "quote": "Domestic mammals and mammalian livestock not covered under this rule ... Sugar glider Petaurus breviceps",
+          "note": "Petaurus breviceps is named in Table 3b-1's domestic mammals section, so R657-3b does not govern it at all. Worth reading against the same table's other marsupials, because Utah does not treat the group as one: the gray short-tailed opossum is noncontrolled, kangaroos and wallabies are controlled, and the Virginia opossum is prohibited outright. Four marsupials, four different answers, and the sugar glider gets the most permissive of them. This entry previously cited R657-3, a rule that no longer exists.",
+          "verifiedOn": "2026-09-05"
         },
         "DE": {
           "status": "legal",
@@ -4700,6 +4708,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Chamaeleo calyptratus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the veiled chameleon is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. No chameleon is native to Utah and none appears on any division table. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -5108,6 +5124,14 @@
           "cite": "68A-6.003(14)(a)",
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Testudo horsfieldii is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. Florida's tortoise restriction is aimed at its own: the gopher tortoise, Gopherus polyphemus, is on the imperiled list with its own protective provisions.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-13(5)",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the Russian tortoise is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. The only tortoise Utah names is the Mojave desert tortoise, Gopherus agassizii, which is on the prohibited list and cannot be collected or possessed without a variance. Testudo horsfieldii is not it. The federal four inch sale rule, restated at R657-53-13(5), reaches hatchlings of any tortoise. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5518,6 +5542,14 @@
           "cite": "Ga. Comp. R. & Regs. Subject 391-4-8",
           "quote": "The following wild animals are subject to licensing requirements pursuant to O.C.G.A. Sec. 27-5-4. (a) Mammals ... 3. Order Carnivora (weasels, ferrets, cats, bears, wolves, etc.) - All species, except that European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 7. Orders Diprotodontia and Peramelemorphia (Marsupials) - All species except that Petaurus breviceps (sugar glider) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 8. Order Erinaceopmorpha (hedgehogs) - All species ... 10. Order Lagomorpha (Rabbits, hares, etc) - All species ... 16. Order Rodentia (rats, mice, etc.) - All species except Genera Cavia, Chinchilla, Gerbillus, Meriones, Mesocricetus, and species Mus musculus, Rattus rattus, and Rattus norvegicus",
           "note": "Georgia's three tiers are closed lists, and the ball python is on none of them: not prohibited under .03, not inherently dangerous under .04, and not within any order or species licensed under .05. It is not a Georgia native either, so the separate native wildlife restriction does not reach it. Two pythons are named, the Indian and the Burmese, and Python regius is neither.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the ball python is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Python regius is on none of the division's tables. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -5935,6 +5967,14 @@
           "quote": "The following wild animals are subject to licensing requirements pursuant to O.C.G.A. Sec. 27-5-4. (a) Mammals ... 3. Order Carnivora (weasels, ferrets, cats, bears, wolves, etc.) - All species, except that European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 7. Orders Diprotodontia and Peramelemorphia (Marsupials) - All species except that Petaurus breviceps (sugar glider) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 8. Order Erinaceopmorpha (hedgehogs) - All species ... 10. Order Lagomorpha (Rabbits, hares, etc) - All species ... 16. Order Rodentia (rats, mice, etc.) - All species except Genera Cavia, Chinchilla, Gerbillus, Meriones, Mesocricetus, and species Mus musculus, Rattus rattus, and Rattus norvegicus",
           "note": "Georgia's three tiers are closed lists, and the boa constrictor is on none of them: not prohibited under .03, not inherently dangerous under .04, and not within any order or species licensed under .05. It is not a Georgia native either, so the separate native wildlife restriction does not reach it. No boid appears anywhere in the three tiers.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the boa constrictor is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Utah has a boid of its own, the northern rubber boa, Charina bottae, Controlled at Standard, and the rule handles it by species rather than by family, so nothing about Boidae attaches to Boa constrictor. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6335,6 +6375,14 @@
           "cite": "N.J.A.C. 7:25-4.1, 4.5; N.J.S.A. 23:4-63.3(j)",
           "quote": "\"Nongame species\" means any wildlife for which a legal hunting or trapping season has not been established in New Jersey or which has not been classified as an endangered species by statute or regulation of this State.",
           "note": "New Jersey never says what it does about invertebrates and the two obvious readings go opposite ways. 4.5 requires a permit for \"any other exotic mammals, birds, reptiles, or amphibians, or nongame species\", and that last phrase is not limited by class: 4.1 defines a nongame species as any wildlife without a hunting season, and the enabling act at N.J.S.A. 23:2A-3 defines wildlife to include \"or other wild animal\", which reaches a spider. 4.17 confirms the Division does treat invertebrates as nongame wildlife, since it assigns conservation status to bivalves and insects. Pulling the other way, the possession statute at N.J.S.A. 23:4-63.3(j) defines an exotic animal as a mammal, bird, reptile, amphibian, fish, mollusc or crustacean, which leaves out arachnids entirely, and not one of the Division's three published lists names a single invertebrate. Left unresolved rather than called either way.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-23a-1-101",
+          "cite": "Utah Code § 23A-1-101(65)",
+          "quote": "\"Wildlife\" means: (a) crustaceans, including brine shrimp and crayfish; (b) mollusks; and (c) vertebrate animals living in nature, except feral animals.",
+          "note": "Utah answers the invertebrates at the level of the statute rather than the rule, and it answers them cleanly. Utah Code 23A-1-101(65) defines wildlife as crustaceans, molluscs, and \"vertebrate animals living in nature, except feral animals\". A tarantula is an arachnid, and an arachnid is none of the three, so the Division of Wildlife Resources has no authority over it, and its rules divide the same way: R657-53 reaches Amphibia and Reptilia, R657-3b birds and mammals, R657-3c aquatic animals. There is a trap in R657-3a worth naming, because reading it alone gives the wrong answer. Its own definition of \"Animal\" carries no class limit, and 3a-2(20)(b) says a prohibited species \"also means a species or subspecies that has not gone through the division's species classification process\", which on its face would make every unclassified arthropod prohibited. It does not, because 3a-1(1) makes the rule under Title 23A and the rule cannot reach further than the code's definition of wildlife does. Nor does the Department of Agriculture and Food fill the gap the way Florida's does. Utah's plant industry rules at R68 are commodity quarantines aimed at named pests, the Japanese beetle, the spongy moth and firewood, rather than a general permit for possessing an arthropod.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6739,6 +6787,14 @@
           "cite": "N.J.A.C. 7:25-4.1, 4.5; N.J.S.A. 23:4-63.3(j)",
           "quote": "\"Nongame species\" means any wildlife for which a legal hunting or trapping season has not been established in New Jersey or which has not been classified as an endangered species by statute or regulation of this State.",
           "note": "Same unresolved question as the tarantula, and worth noting that New Jersey does not treat venom as its own trigger the way it does for reptiles. 4.8(a) lists venomous lizards and venomous snakes by family and says nothing about venomous invertebrates, so the emperor scorpion is not potentially dangerous under the rule. It then falls into the same gap: 4.5 reaches \"nongame species\", which 4.1 and the enabling act define broadly enough to include an arachnid, while the possession statute at N.J.S.A. 23:4-63.3(j) does not reach arachnids at all and no Division list names one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-23a-1-101",
+          "cite": "Utah Code § 23A-1-101(65)",
+          "quote": "\"Wildlife\" means: (a) crustaceans, including brine shrimp and crayfish; (b) mollusks; and (c) vertebrate animals living in nature, except feral animals.",
+          "note": "Utah answers the invertebrates at the level of the statute rather than the rule, and it answers them cleanly. Utah Code 23A-1-101(65) defines wildlife as crustaceans, molluscs, and \"vertebrate animals living in nature, except feral animals\". The emperor scorpion is an arachnid, and an arachnid is none of the three, so the Division of Wildlife Resources has no authority over it, and its rules divide the same way: R657-53 reaches Amphibia and Reptilia, R657-3b birds and mammals, R657-3c aquatic animals. There is a trap in R657-3a worth naming, because reading it alone gives the wrong answer. Its own definition of \"Animal\" carries no class limit, and 3a-2(20)(b) says a prohibited species \"also means a species or subspecies that has not gone through the division's species classification process\", which on its face would make every unclassified arthropod prohibited. It does not, because 3a-1(1) makes the rule under Title 23A and the rule cannot reach further than the code's definition of wildlife does. Venom changes nothing here. Utah does treat venom as a trigger, at R657-53-9(1)(a) for non-native squamates and at R657-53-12 for native venomous reptiles, but both provisions are inside the herp rule and neither reaches an invertebrate.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -7166,6 +7222,14 @@
           "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
           "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The Argentine black and white tegu appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. The near miss is worth flagging: 4.3(a)3.xi names Ameiva spp., which is the tegu's own family Teiidae, but the list takes that one genus rather than the family, so Salvator merianae is not on it and arrives at the same permit through 4.5 instead.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the Argentine black and white tegu is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Utah has whiptails of its own in the same family, the plateau striped and the tiger whiptail, both Controlled at Standard, but Salvator merianae is not among them. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7582,6 +7646,14 @@
           "cite": "N.J.A.C. 7:25-4.3(a)3.ix",
           "quote": "Reptiles: ... ix. Monitor - Varanus spp.;",
           "note": "The savannah monitor is answered by name on the 4.3 permit list rather than by the catch-all. The list takes the genus whole, \"Monitor - Varanus spp.\", so every monitor is a permit animal without any of them being named. The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the savannah monitor is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Utah names no monitor anywhere in the rule or the tables, so the whole genus is answered by the general structure rather than by a listing. That is the opposite of the pattern in New Jersey and Illinois, which name Varanus expressly. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -10599,6 +10671,14 @@
           "quote": "The following wild animals are subject to licensing requirements pursuant to O.C.G.A. Sec. 27-5-4. (a) Mammals ... 3. Order Carnivora (weasels, ferrets, cats, bears, wolves, etc.) - All species, except that European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 7. Orders Diprotodontia and Peramelemorphia (Marsupials) - All species except that Petaurus breviceps (sugar glider) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 8. Order Erinaceopmorpha (hedgehogs) - All species ... 10. Order Lagomorpha (Rabbits, hares, etc) - All species ... 16. Order Rodentia (rats, mice, etc.) - All species except Genera Cavia, Chinchilla, Gerbillus, Meriones, Mesocricetus, and species Mus musculus, Rattus rattus, and Rattus norvegicus",
           "note": "Georgia's three tiers are closed lists, and the green iguana is on none of them: not prohibited under .03, not inherently dangerous under .04, and not within any order or species licensed under .05. It is not a Georgia native either, so the separate native wildlife restriction does not reach it. Notable by comparison with Florida, which prohibited this species in 2021: Georgia names four squamates in its licence rule and the green iguana is not among them.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the green iguana is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. The desert iguana, Dipsosaurus dorsalis, is a Utah animal at Limited, and Iguana iguana is not it. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -11432,6 +11512,14 @@
           "cite": "§ 161.01(b)(10), (c)",
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "The reptile clause is a list of families and the tokay gecko belongs to none of them: not Helodermatidae, not a venomous snake family, not Boidae, Pythonidae, Varanidae, Iguanidae, teiidae, Chelydridae or Crocodylia. No gecko family is named, and the tokay's reputation for biting is not the kind of harm the opening standard is aimed at.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the tokay gecko is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Gekko gecko is south-east Asian and on none of the division's tables. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -12290,6 +12378,14 @@
           "quote": "Reptiles: ... ix. Monitor - Varanus spp.;",
           "note": "The Nile monitor is answered by name on the 4.3 permit list rather than by the catch-all. It comes in through the genus entry \"Monitor - Varanus spp.\". The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. New Jersey makes no distinction among monitors by adult size, so the Nile monitor and the ackie are on the same footing here even though one is a two foot animal and the other reaches six.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the Nile monitor is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Utah draws no line by adult size anywhere in R657-53, so the Nile monitor is on the same footing as the ackie. Florida, where this species is an established invasive, treats it very differently. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12726,6 +12822,14 @@
           "cite": "N.J.A.C. 7:25-4.3(a)3.i",
           "quote": "Reptiles: i. Pythons - Family Pythonidae;",
           "note": "The Burmese python is answered by name on the 4.3 permit list rather than by the catch-all. It is covered by the family entry \"Pythons - Family Pythonidae\". The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. New Jersey does not put the giant constrictors in a separate tier the way many states now do, so the Burmese python and the ball python are read off the same line. The federal Lacey Act injurious listing still bars importing one across state lines, which is a separate question from whether New Jersey will permit one already here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-9(1); R657-53-8(1)",
+          "quote": "(a) A species of the Order Squamata (snakes and lizards) is classified as a prohibited species if: (i) it is venomous; (ii) not native to Utah; and (iii) a bite from which may cause substantial physical injury to humans ordinarily requiring medical treatment. (b) Species of the Order Crocodilia (crocodiles, gharials, caimans, and alligators) are classified as prohibited.",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the Burmese python is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Utah writes its prohibited categories by hazard rather than by size: venomous non-native squamates and the whole of Crocodilia, with no giant constrictor tier of the sort Florida and several other states now run. What does reach this species is federal, since the Lacey Act injurious listing bars importing one or moving it across state lines, which is a separate question from whether Utah will let you keep one already here. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13559,6 +13663,14 @@
           "quote": "Due to the difficulties in determining morphological differences among several species, the following may not be kept as pets or for hobby purposes, nor may they be sold in New Jersey: grey tree frogs (all species), larval salamanders, water dogs, dino dogs, mud puppies, axolotls.",
           "note": "The axolotl is named outright in the Division's restricted species notice, in the sentence that bans grey tree frogs, larval salamanders, water dogs, dino dogs, mud puppies and axolotls from being kept, held for hobby purposes or sold. The reason given is enforcement rather than the animal: a neotenic salamander cannot reliably be told from the larva of a protected native one by looking at it, and New Jersey has two listed Ambystoma of its own. There is a second and independent route to the same answer, since the notice treats an IUCN Red List entry as an endangered listing and Ambystoma mexicanum is Critically Endangered there, which 4.10(a) turns into a bar on issuing a permit. Note that the express ban lives in the notice and not in the rule text, which is the sort of thing that gets missed by reading the code alone.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-9(1)(d); R657-53-4(3)(h)",
+          "quote": "Any amphibian or reptile listed by the U.S. Fish and Wildlife Service as endangered or threatened pursuant to the federal Endangered Species Act shall have a zero daily and total possession limit",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the axolotl is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Two things that catch this species elsewhere do not catch it here. R657-53-9(1)(d) gives a zero limit only to a species listed under the federal Endangered Species Act, and Ambystoma mexicanum is IUCN Critically Endangered without being on that list, so Utah's hook never engages. And the January 2025 federal salamander rule is an injurious wildlife listing, which restricts importation and shipment rather than possession. The one genuine add-on is R657-53-4(3)(h), which bars transporting or propagating an amphibian without complying with Title 4 Chapter 37 of the Utah Code and the Department of Agriculture and Food's rules under it, an aquaculture regime that sits outside the wildlife division entirely. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13970,6 +14082,14 @@
           "cite": "N.J.A.C. 7:25-4.5; 7:25-4.17",
           "quote": "Eastern Box Turtle Terrapene c. Carolina SC",
           "note": "The eastern box turtle is a New Jersey animal, listed as special concern on the nongame conservation status table at 4.17, which makes it a nongame species and not an exotic one. Either way it lands in the same place, because 4.4 exempts only two turtles, the eastern painted and the snapping turtle, and 4.5 requires a permit for any other nongame species. The separate point that matters more in practice is that a permit does not authorise going and getting one: the Division states that it is illegal to take any animal from the wild, so a lawful box turtle has to have a lawful captive origin.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-13(5)",
+          "quote": "It is unlawful to sell or trade any turtle, including tortoises, less than 4\" in carapace length (See Federal Register 21 CFR 1240.62).",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the box turtle is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. No Terrapene is native to Utah and none appears on any division table, which is what separates this from most states, where the box turtle is the native the rules are written about. The federal four inch rule does apply and Utah restates it in its own words at R657-53-13(5), so a hatchling cannot lawfully be sold or traded here. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -14792,6 +14912,14 @@
           "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
           "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The sulcata tortoise appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. 4.7 conditions the permit on housing that lets the animal \"perform the normal behavior patterns of its species\", which is a real question for an animal that reaches a hundred pounds and digs, rather than a formality.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-13(5)",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the sulcata tortoise is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Centrochelys sulcata is IUCN Endangered but carries no federal Endangered Species Act listing, which is what R657-53-9(1)(d) turns on when it gives a zero limit to any species the U.S. Fish and Wildlife Service has listed as endangered or threatened. Utah reads the federal list rather than the IUCN one, which is the opposite of the choice Massachusetts and New Jersey made. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15196,6 +15324,14 @@
           "cite": "N.J.A.C. 7:25-4.5; 7:25-4.17",
           "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
           "note": "The two hognoses reach the permit from opposite directions. The eastern hognose, Heterodon platirhinos, is native to New Jersey and appears on the 4.17 nongame table as secure-stable, so it is a nongame species and 4.5 catches it. The western hognose, Heterodon nasicus, is not native, so it is an exotic reptile and 4.5 catches it too. Neither is on the closed exempt list at 4.4, whose only colubrids are the garter snake and the ribbon snake. For the native one there is the further point that taking it from the wild is separately illegal, so the permit has to sit on a captive-bred animal.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the hognose snake is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Neither Heterodon species appears on any Utah table, which is the point worth checking rather than assuming, because Utah does list a long run of native colubrids at Standard and Limited and a keeper could reasonably expect a hognose among them. The rear-fanged question does not arise either: R657-53-9(1)(a) reaches a venomous non-native squamate only where a bite \"may cause substantial physical injury to humans ordinarily requiring medical treatment\". The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -16003,6 +16139,14 @@
           "quote": "\"Nongame species\" means any wildlife for which a legal hunting or trapping season has not been established in New Jersey or which has not been classified as an endangered species by statute or regulation of this State.",
           "note": "The same invertebrate gap as the tarantula: 4.5 reaches \"nongame species\", 4.1 defines that as any wildlife without a hunting season, and the enabling act's definition of wildlife ends in \"or other wild animal\", while the possession statute at N.J.S.A. 23:4-63.3(j) covers only vertebrates plus molluscs and crustaceans and no Division list names an invertebrate. Archispirostreptus gigas carries a separate federal problem regardless of how New Jersey reads its own rule, since USDA APHIS treats non-native millipedes as regulated organisms requiring a PPQ 526 permit to move interstate, which is the restriction that actually bites on this species in most states.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-23a-1-101",
+          "cite": "Utah Code § 23A-1-101(65)",
+          "quote": "\"Wildlife\" means: (a) crustaceans, including brine shrimp and crayfish; (b) mollusks; and (c) vertebrate animals living in nature, except feral animals.",
+          "note": "Utah answers the invertebrates at the level of the statute rather than the rule, and it answers them cleanly. Utah Code 23A-1-101(65) defines wildlife as crustaceans, molluscs, and \"vertebrate animals living in nature, except feral animals\". A millipede is a myriapod, and a myriapod is none of the three, so the Division of Wildlife Resources has no authority over it, and its rules divide the same way: R657-53 reaches Amphibia and Reptilia, R657-3b birds and mammals, R657-3c aquatic animals. There is a trap in R657-3a worth naming, because reading it alone gives the wrong answer. Its own definition of \"Animal\" carries no class limit, and 3a-2(20)(b) says a prohibited species \"also means a species or subspecies that has not gone through the division's species classification process\", which on its face would make every unclassified arthropod prohibited. It does not, because 3a-1(1) makes the rule under Title 23A and the rule cannot reach further than the code's definition of wildlife does. The restriction that actually bites on this species is federal rather than Utah's: USDA APHIS treats non-native millipedes as regulated organisms, so moving one across state lines needs a PPQ 526 permit whatever Utah says.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16282,10 +16426,11 @@
         },
         "UT": {
           "status": "legal",
-          "sourceId": "ut-r657-3",
-          "cite": "Utah Admin. Code R657-3",
-          "note": "Corn snake does not appear on Utah's controlled/prohibited reptile tables and is not Utah native. Under R657-3's noncontrolled-species default, no certificate of registration is required for a species that poses no detrimental impact and isn't otherwise listed.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the corn snake is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. The near miss is worth naming: Utah's own Pantherophis is the Great Plains ratsnake, P. emoryi, which sits on the Limited table at two a day and four in total. Pantherophis guttatus is a different species and is on no Utah table, so it does not inherit that cap. This entry previously cited R657-3, a rule that no longer exists. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "status": "legal",
@@ -16637,10 +16782,10 @@
         "UT": {
           "status": "conditional",
           "sourceId": "ut-r657-53-tables",
-          "cite": "Utah DWR reptile/amphibian species tables (R657-53)",
-          "quote": "Western milk snake, Lampropeltis gentilis: Limited possession (2 daily and yearly/4 total, per species)",
-          "note": "Utah's own species table names the state's native milk snake population \"Lampropeltis gentilis\" (a segregate now often split from the broader Lampropeltis triangulum complex commonly called \"milk snake\" in the pet trade) and caps daily/yearly take and total possession at a combined 4. The phrase \"limited possession,\" not just \"bag limit,\" suggests the cap is not purely about wild collection.",
-          "verifiedOn": "2026-08-27"
+          "cite": "Utah Admin. Code R657-53-7(3)(b); R657-53-8(1); species tables, Limited possession",
+          "quote": "Limited possession (2 daily and yearly/4 total, per species) ... Western milk snake Lampropeltis gentilis",
+          "note": "Utah's species table names the state's own milk snake population Lampropeltis gentilis, a segregate split off from the broader Lampropeltis triangulum complex the pet trade calls milk snake, and puts it in Limited possession: two a day, two a year, four in total, on a herpetology collection permit obtained after passing an orientation course. The earlier reading here took the words \"limited possession\" to mean the cap reached a purchased animal as well as a wild-caught one. R657-53-8(1) says otherwise in terms, and it is the section that decides this: total possession limits apply to everything acquired in state or imported, \"except the following do not count towards an individual's applicable limit\", and the exceptions are animals that are captive bred and animals \"legally obtained outside of Utah\", in both cases so long as the species is not Prohibited and not a native venomous reptile under R657-53-12. A milk snake is neither. So the cap is a wild collection cap after all, and a captive-bred milk snake from a breeder is unrestricted in Utah.",
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "status": "legal",
@@ -17058,10 +17203,11 @@
         },
         "UT": {
           "status": "legal",
-          "sourceId": "ut-r657-3",
-          "cite": "Utah Admin. Code R657-3",
-          "note": "Rosy boa does not appear on Utah's controlled/prohibited reptile tables and is not established as a Utah native species. Under R657-3's noncontrolled-species default, no certificate of registration is required.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the rosy boa is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Lichanura trivirgata is not a Utah animal; the state's boid is the northern rubber boa, Charina bottae, which sits on the Standard table at three and nine. Utah handles boas by species rather than by family, so unlike Colorado and New York City there is no family-wide clause here for a rosy boa to be caught by. This entry previously cited R657-3, a rule that no longer exists. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "status": "legal",
@@ -17816,6 +17962,14 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "Not named, and it makes no difference: the clause is \"any member of the family Varanidae\". The ackie is the smallest monitor in the pet trade and is prohibited on the same words as the Komodo dragon. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the ackie monitor is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Varanus acanthurus needs no species-level determination here, which is worth contrasting with Colorado, where this exact animal is the one open cell because its allow-list turns on whether a monitor is native only to the tropics. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -18164,11 +18318,12 @@
           "verifiedOn": "2026-09-05"
         },
         "UT": {
-          "status": "legal",
-          "sourceId": "ut-r657-53",
-          "cite": "Utah Admin. Code R657-53-5",
-          "note": "Non-controlled native reptiles, a category that includes garter snakes, may be possessed without a certificate of registration up to a threshold (three animals for most such species); holding more requires a certificate of registration from the Wildlife Board.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "ut-r657-53-tables",
+          "cite": "Utah Admin. Code R657-53-7(3)(a); species tables, Standard possession",
+          "quote": "Standard possession (3 daily/9 total, per species) ... Common gartersnake Thamnophis sirtalis",
+          "note": "This entry read legal before, on R657-53-5's list of activities allowed without a wildlife document. That is right for a captive-bred animal and wrong for a Utah one, and the common gartersnake is a Utah animal. Thamnophis sirtalis is on the division's Standard possession table, which makes it a Controlled species: taking one from the wild needs the herpetology collection permit, which costs ten dollars and requires passing an online orientation course first, and the limit is three a day and nine in total. The terrestrial gartersnake is on the same table and the black-necked gartersnake is at Limited, two and four. A captive-bred or out-of-state garter snake is a different animal in law: R657-53-8(1)(a) and (c) lift both out of the possession limit entirely, and no certificate of registration attaches to possessing one. So the answer turns on where the snake came from rather than what it is.",
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "status": "legal",
@@ -18575,11 +18730,12 @@
           "verifiedOn": "2026-09-05"
         },
         "UT": {
-          "status": "legal",
-          "sourceId": "ut-r657-53",
-          "cite": "Utah Admin. Code R657-53-5",
-          "note": "Falls under Utah's non-controlled reptile framework, the same one that clears the garter snake: up to three may be possessed without a certificate of registration, more with one from the Wildlife Board.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "ut-r657-53-tables",
+          "cite": "Utah Admin. Code R657-53-7(3)(b); species tables, Limited possession",
+          "quote": "Limited possession (2 daily and yearly/4 total, per species) ... California kingsnake Lampropeltis californiae",
+          "note": "This entry read legal before, and Lampropeltis californiae is in fact on Utah's Limited possession table, which is the tightest controlled tier the rule has: two a day, two a year, and four in total, on a herpetology collection permit obtained after an orientation course. The Arizona mountain kingsnake and the western milk snake are on the same table. What the earlier reading got right is the other half: R657-53-8(1)(a) and (c) take captive-bred animals and animals legally obtained outside Utah out of the possession limits altogether, and the only possession certificate of registration in the rule is R657-53-12 for native venomous reptiles. So a captive-bred kingsnake from a breeder is unrestricted and a Utah-caught one is capped at four.",
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "status": "legal",
@@ -19447,6 +19603,14 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "New York City draws its turtle line by size rather than by species: the reptile clause ends with \"all turtles and tortoises with a carapace length of less than four (4) inches\". The red-footed tortoise is not otherwise named, so an adult is lawful and a hatchling is not, and the animal grows out of the prohibition rather than into it. The four-inch figure is the same one the federal rule at 21 C.F.R. 1240.62 uses, and the reason is the same: small turtles are the ones children put in their mouths. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-13(5)",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the red-footed tortoise is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Chelonoidis carbonarius is CITES Appendix II but not federally listed, so R657-53-9(1)(d)'s zero limit for Endangered Species Act listings does not reach it. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19648,6 +19812,14 @@
           "cite": "N.J.A.C. 7:25-4.5",
           "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
           "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The bearded dragon appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. Agamidae is missing from 4.3, which does list the collared lizard, the chuckwalla, the alligator lizard, the skinks and the geckos, so Pogona vitticeps ends up in the catch-all rather than on the named list. It is the single most common pet lizard in the country and New Jersey requires a permit for it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the bearded dragon is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Pogona vitticeps is on none of the division's tables, which list Utah animals. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -19851,6 +20023,14 @@
           "quote": "Reptiles: ... xiv. Geckos - Family Gekkonidae other than Tokay Gecko;",
           "note": "The leopard gecko is answered by name on the 4.3 permit list rather than by the catch-all. The entry is \"Geckos - Family Gekkonidae other than Tokay Gecko\", which takes every gecko but one. The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. Eublepharis macularius has since been moved to Eublepharidae, but the list is using Gekkonidae in the older broad sense that covered all geckos, which is the only reading on which the tokay carve-out makes sense, since the tokay would otherwise not need excluding.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the leopard gecko is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. The one native gecko Utah does regulate is the western banded gecko, Coleonyx variegatus, at Limited, two a day and four in total, so a Utah-caught gecko and a captive-bred Eublepharis macularius get very different answers. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20052,6 +20232,14 @@
           "cite": "N.J.A.C. 7:25-4.3(a)3.xiv; 7:25-4.5",
           "quote": "Reptiles: ... xiv. Geckos - Family Gekkonidae other than Tokay Gecko;",
           "note": "The crested gecko is Correlophus ciliatus, placed in Diplodactylidae under current taxonomy, so whether 4.3(a)3.xiv reaches it depends on reading Gekkonidae in the older broad sense that covered all geckos. It does not change the answer. If the entry reaches it, the permit comes from 4.3; if it does not, 4.4 has no crested gecko on it and 4.5 requires a permit for any other exotic reptile. Both roads end at the individual hobby permit under 4.6(a)1.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the crested gecko is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Correlophus ciliatus is a New Caledonian animal and appears on none of the division's tables. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -20255,6 +20443,14 @@
           "quote": "Reptiles: ... x. Skinks - Family Scincidae;",
           "note": "The blue-tongue skink is answered by name on the 4.3 permit list rather than by the catch-all. The list takes the family whole, \"Skinks - Family Scincidae\", and Tiliqua scincoides is inside it. The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the blue-tongue skink is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Utah has skinks of its own, the many-lined and the western, both Controlled at Standard, but Tiliqua scincoides is not one of them. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20457,6 +20653,14 @@
           "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
           "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. Jackson's chameleon appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. Chamaeleonidae is absent from 4.3 altogether, so the chameleons all arrive through the catch-all rather than through a named family.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and Jackson's chameleon is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Trioceros jacksonii is an east African animal, absent from every division table. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20658,6 +20862,14 @@
           "quote": "Reptiles: i. American Anole - Anolis carolinensis;",
           "note": "The green anole is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. It heads the reptile section of the exempt list as the \"American Anole - Anolis carolinensis\". 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\". It is one of only three lizards New Jersey lets anyone keep without a permit, with the green iguana and the tokay gecko, while the leopard gecko, the bearded dragon and the blue-tongue skink all need one.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
+          "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
+          "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the green anole is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Anolis carolinensis is not a Utah animal and appears on none of the division's tables. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20853,6 +21065,14 @@
           "quote": "\"Exotic animal\" means any species of mammal, bird, reptile, amphibian, fish, mollusk, or crustacean that is not indigenous to New Jersey as determined by the Fish and Game Council in rules and regulations adopted pursuant to the \"Administrative Procedure Act,\" and shall include the young or eggs of any such species, but shall not include (1) domesticated companion animals or farm livestock as defined by the Fish and Game Council, or (2) fish, shellfish, or game species not indigenous to New Jersey for which fishing, harvesting, hunting, or trapping is authorized and regulated pursuant to law, the State Fish and Game Code, or rules and regulations of the Fish and Game Council;",
           "note": "The domestic rabbit is not on any of the Division's three lists, and in a closed-list state that would normally mean a permit under 4.5. It does not here, because the possession bar the subchapter implements is N.J.S.A. 23:4-63.3, whose definition of \"exotic animal\" excludes domesticated companion animals, and Oryctolagus cuniculus is a domesticated species rather than a wild one. Subchapter 4 is adopted under the Endangered and Nongame Species Conservation Act, which reaches wildlife, defined at N.J.S.A. 23:2A-3 as wild animals. Two loose threads are worth naming rather than hiding. The statute says domesticated companion animals are those \"defined by the Fish and Game Council\", and the Council has not defined the term anywhere in N.J.A.C. 7:25. And 4.4 goes to the trouble of exempting the hamster, the gerbil and the guinea pig, which are domesticated pets on the same footing, so the exempt list is belt and braces rather than a sign that unlisted domestic pets are caught. The native cottontail is a different animal and a game species under 7:25-5.3.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Utah Admin. Code R657-3b-1(3); Table 3b-1, domestic mammals",
+          "quote": "Domestic mammals and mammalian livestock not covered under this rule ... Rabbit, European Oryctolagus cuniculus",
+          "note": "Utah puts the domestic rabbit in the cleanest category it has. R657-3b-1(3) says \"domestic animals not governed by this rule are listed in Bird and Mammal Classification Table 3b-1\", and the table's first section is headed \"Domestic mammals and mammalian livestock not covered under this rule\". Oryctolagus cuniculus is on it by name. That is stronger than an exemption, because the animal is outside the rule rather than excused from it, and it matters in Utah more than it would elsewhere: the same table's header says every species not listed is \"presumed prohibited\". Utah is also the state where the domestic and the wild answers do not collide, since the native lagomorphs it excludes from protected wildlife at 23A-1-101(46)(b) are the jack rabbits, a different genus.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21046,6 +21266,14 @@
           "cite": "N.J.A.C. 7:25-4.1, 4.5; N.J.S.A. 23:4-63.3(j)",
           "quote": "\"Nongame species\" means any wildlife for which a legal hunting or trapping season has not been established in New Jersey or which has not been classified as an endangered species by statute or regulation of this State.",
           "note": "The same invertebrate gap as the tarantula and the millipede, with the same two readings and no Division list naming an insect. Gromphadorhina portentosa has an extra layer that New Jersey's wildlife rules do not speak to at all: it is a USDA-regulated organism, so moving one interstate needs a PPQ 526 permit, and several states reach it through their agriculture department rather than their wildlife agency. New Jersey's plant pest rules sit at N.J.A.C. 2:20 under the Department of Agriculture, a separate agency from the one that writes subchapter 4, which is where the answer would be if there is one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-23a-1-101",
+          "cite": "Utah Code § 23A-1-101(65)",
+          "quote": "\"Wildlife\" means: (a) crustaceans, including brine shrimp and crayfish; (b) mollusks; and (c) vertebrate animals living in nature, except feral animals.",
+          "note": "Utah answers the invertebrates at the level of the statute rather than the rule, and it answers them cleanly. Utah Code 23A-1-101(65) defines wildlife as crustaceans, molluscs, and \"vertebrate animals living in nature, except feral animals\". A cockroach is an insect, and a terrestrial insect is none of the three, so the Division of Wildlife Resources has no authority over it, and its rules divide the same way: R657-53 reaches Amphibia and Reptilia, R657-3b birds and mammals, R657-3c aquatic animals. There is a trap in R657-3a worth naming, because reading it alone gives the wrong answer. Its own definition of \"Animal\" carries no class limit, and 3a-2(20)(b) says a prohibited species \"also means a species or subspecies that has not gone through the division's species classification process\", which on its face would make every unclassified arthropod prohibited. It does not, because 3a-1(1) makes the rule under Title 23A and the rule cannot reach further than the code's definition of wildlife does. Utah does mention insects once, at 23A-1-101(4), where aquatic insects are aquatic wildlife, and then removes them again at (45)(b), which says protected aquatic wildlife does not include aquatic insects. A Madagascar hissing cockroach is not aquatic and never reaches even that. The federal PPQ 526 permit for interstate movement applies to this species regardless.",
           "verifiedOn": "2026-09-05"
         }
       }

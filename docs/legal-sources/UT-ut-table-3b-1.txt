@@ -1,0 +1,208 @@
+SOURCE: Utah DWR Bird and Mammal Classification Table 3b-1 (May 1, 2023), under Utah Admin. Code R657-3b
+URL: https://wildlife.utah.gov/pdf/cor/bird_and_mammal_classification_table_3b-1.pdf
+FETCHED: 2026-09-05 (Extracted with pypdf. Column breaks survive as line breaks, so a common name and its binomial can land on separate lines.)
+
+Table 3b-1. May 1, 2023 
+Except as otherwise listed, all species are presumed prohibited. All species not 
+listed will require an assessment before collection, importation, or possession will 
+be authorized. 
+ 
+Domestic mammals and mammalian livestock not covered under this rule 
+Common Name Scientific Classification Comments 
+Bison, American Bos bison privately owned 
+Cat  Felis catus  
+including breeds that are 
+recognized by The 
+International Cat 
+Association as Preliminary 
+New, Advanced New, 
+Non-championship, and 
+Championship Breeds 
+Camels, llama, alpaca, 
+vicuña, guanaco family Camelidae all species 
+Cattle Bos taurus  
+Chinchillas Chinchilla chinchilla, 
+Chinchilla lanigera  
+Dog Canis lupus familiaris 
+domestic including 
+hybrids between wild and 
+domestic species and 
+subspecies 
+Elk Cervus elaphus 
+canadensis privately owned 
+Ferret, European Mustela putorius furo domestic 
+Fox, red Vulpes vulpes 
+privately owned, 
+domestically bred and 
+raised 
+Goat Capra hircus  
+Gerbil (= Mongolian jird) Meriones unguiculatus  
+Guinea pig Cavia porcellus  
+Hamster, golden Mesocricetus auratus  
+Hedgehog, “white-
+bellied”, “African pygmy”, 
+etc. 
+Atelerix species includes hybrids 
+Horse, donkey (= ass, 
+burro), mule, hinny 
+Equus caballus, Equus 
+asinus  
+includes hybrids (= mule 
+or hinny) 
+Mink Neogale vison domestic 
+Mouse, house Mus musculus  
+Rabbit, European Oryctolagus cuniculus  
+Rat, Norway Rattus norvegicus  
+Sheep Ovis aries includes “haired” sheep 
+Sugar glider Petaurus breviceps  
+Swine Sus scrofa domestic 
+Tenrecs family Tenrecidae  
+Water buffalo Bubalus bubalis  
+Yak Bos grunniens  
+Zebu or “Brahma” Bos taurus indicus  
+ 
+ 
+Domestic birds and avian livestock not covered under this rule 
+Common Name Scientific Classification Comments 
+Pigeon (= Rock Dove) Columba livia  
+Chicken Gallus gallus  
+Ratites infraclass Palaeognathae ostrich, emus, rheas, 
+cassowaries 
+Ducks family Anatidae 
+distinguishable 
+morphologically from wild 
+ducks 
+Guineafowl Numida meleagris  
+Geese family Anatidae 
+distinguishable 
+morphologically from wild 
+geese 
+Peafowl Pavo cristatus  
+Turkey Meleagris gallopavo privately owned 
+ 
+ 
+Noncontrolled mammals  
+Common Name Scientific Classification Comments 
+Patagonian cavy  
+(= Patagonian mara) Dolichotis patagonum  
+Short-tailed opossum, 
+gray (= “Brazilian”) Monodelphis domestica  
+ 
+ 
+Noncontrolled birds 
+Common Name Scientific Classification Comments 
+Babblers, Old World family Timaliidae all species 
+Barbets  families Capitonidae and 
+Ramphastidae 
+all species not native to 
+North America 
+Broadbills family Eurylaimidae all species 
+Cotingas  family Cotingidae all species 
+Estrildid finches, Waxbills, 
+Mannikins, and Munias  family Estrildidae all species 
+Fairy-bluebirds family Irenidae all species 
+Finches and Canaries family Fringillidae all species not native to 
+North America 
+Honeyeaters family Meliphagidae all species 
+Hornbills  family Bucerotidae all species 
+Icterids, Troupials, 
+Blackbirds, Orioles family Icteridae 
+all species not native to 
+North America except 
+Central and South 
+American Cowbirds 
+Leafbirds  family Chloropseidae all species 
+Megapodes (= Mound-
+builders) family Megapodiidae 
+all species (scrubfowl, 
+malleefowl, brushturkeys, 
+etc.) 
+Motmots family Momotidae all species 
+Parrots family Psittacidae all species not native to 
+North America 
+Pigeons and Doves family Columbidae  
+Rollers  family Coraciidae all species 
+Sugarbirds family Promeropidae all species 
+Sunbirds family Nectariniidae all species 
+Tanagers, Swallow-
+tanager, and related 
+species 
+family Thraupidae all species not native to 
+North America 
+Toucans family Ramphastidae all species not native to 
+North America 
+Turacos, Plantain-eaters 
+and Go-away-birds family Musophagidae all species 
+Vidua finches subfamily Viduinae all species 
+Weaver finches family Ploceidae all species 
+White-eyes and related 
+species family Zosteropidae all species 
+ 
+ 
+Controlled mammals 
+Common Name Scientific Classification Comments 
+American marten Martes americana  captive-bred 
+Bobcat Lynx rufus captive-bred 
+Capybaras 
+Hydrochoerus 
+hydrochaeris, 
+Hydrochoerus isthmus 
+ 
+Eurasian lynx Lynx lynx captive-bred 
+Fallow deer Dama dama captive-bred 
+Fennec fox Vulpes zerda  
+Hedgehogs family Erinaceidae except “while-bellied” 
+(see domestic animals)  
+Kangaroos and wallabies family Macropodidae  
+Muskox Ovibos moschatus captive-bred 
+Shrews family Soricidae  
+Two-toed sloths Choloepus didactylus,  
+Choloepus hoffmanni  
+Zebras Equus zebra, Equus 
+grevyi, Equus burchellii all species 
+ 
+ 
+Prohibited mammals—known detrimental impacts to native wildlife 
+populations, human health and safety, or agriculture. Personal possession 
+will not be authorized.  
+Common Name Scientific Classification Comments 
+Bats order Chiroptera  
+Bears family Ursidae all species 
+Big cats 
+Panthera leo, Panthera 
+tigris, Panthera pardus, 
+Acinonyx jubatus, Uncia 
+uncia, Puma concolor, 
+Panthera onca 
+lion, tiger, leopard, 
+cheetah, snow leopard, 
+cougar (= puma), jaguar, 
+or any hybrid of these 
+species; in accordance 
+with Federal Big Cat 
+Public Safety Act 
+Nutria (= coypu) Myocastor coypus  
+Primates order Primates all non-human species 
+Raccoon dog Nyctereutes procyonoides  
+Reindeer Rangifer tarandus  
+Virginia opossum Didelphis virginiana  
+Wolf Canis lupus  
+Eurasian boar, all non-
+domestic swine Sus scrofa 
+Eurasian boar, Russian 
+boar, wild boar, wild hog, 
+razorback, or feral swine. 
+Does not include 
+domestic swine 
+Big game (see below)   
+Bighorn (= mountain 
+sheep) Ovis canadensis  
+Bison (= American bison) Bos bison  
+Elk Cervus elaphus 
+canadensis  
+Moose Alces alces  
+Mountain goat Oreamnos americanus  
+Mule deer Odocoileus hemionus  
+Pronghorn Antilocapra americana  
+White-tailed deer Odocoileus virginianus  
+ 

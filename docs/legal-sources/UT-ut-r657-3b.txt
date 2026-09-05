@@ -1,0 +1,851 @@
+SOURCE: Utah Admin. Code R657-3b, Collection, Importation, Possession and Propagation of Birds and Mammals
+URL: https://wildlife.utah.gov/rules/r657-03b
+FETCHED: 2026-09-05 (Birds and mammals only. Species assignments are in Table 3b-1, cached separately. Site chrome stripped.)
+
+R657-3b-1. Purpose and Authority.
+
+(1) Under Title 23A, Wildlife Resources Code of Utah, this rule governs the collection, importation, possession and propagation of birds and mammals in Utah.
+
+(2) The importation, distribution, relocation, holding in captivity or possession of coyotes and raccoons in Utah is governed by the Agricultural and Wildlife Damage Prevention Board and is prohibited under Section 4-23-11 and Rule R58-14, except as permitted by the Utah Department of Agriculture and Food.
+
+(3) Domestic animals not governed by this rule are listed in Bird and Mammal Classification Table 3b-1, May 1, 2023.
+
+R657-3b-2. Definitions.
+
+(1) Terms used for purposes of this rule are defined in Section 23A-1-101, Section R657-3a-2, and Subsection (2) through Subsection (5).
+
+(2) "Resident Canada Goose" means Canada geese that nest within Utah in urban environments during the months of March, April, May or June.
+
+(3) "Bird" means an animal from the Class of Aves, including hybrid species or subspecies of birds and viable embryos or gametes of species or subspecies of birds.
+
+(4) "Mammal" means an animal from the Class of Mammalia, including hybrid species or subspecies of mammals and viable embryos or gametes of species or subspecies of mammals.
+
+(5) "Nuisance bird or mammal" means a bird or mammal damaging personal or real property, or when concentrated in such numbers and manner that constitutes a health hazard or other nuisance.
+
+R657-3b-3. Liability.
+
+(1)(a) Any person who accepts a certificate of registration assumes all liability and responsibility for the collection, importation, transportation, possession and propagation of the authorized animal and for any other activity authorized by the certificate of registration.
+
+(b) To the extent provided under Title 63g, Chapter 7, the Utah Governmental Immunity Act of Utah, the division, the Department of Agriculture and Food, and the Department of Health and Human Services shall not be liable in any civil action for:
+
+(i) any injury, disease, or damage caused by or to any animal, person, or property as a result of any activity authorized under this rule or a certificate of registration; or
+
+(ii) the issuance, denial, suspension, or revocation of or by the failure or refusal to issue, deny, suspend, or revoke any certificate of registration or similar authorization.
+
+(2) It is the responsibility of any person who obtains a certificate of registration to read, understand and comply with this rule and all other applicable federal, state, county, city, or other municipality laws, regulations, and ordinances governing animals.
+
+R657-3b-4. Prohibited Activities.
+
+(1) A person may not take, posses, import, export, transfer, or release to the wild a bird or mammal or their parts in Utah, or attempt to undertake such activity, except as provided in this rule or in a proclamation or guidebook issued by the Wildlife Board.
+
+(2)(a) A person may not release from captivity any bird or mammal, including domestic or other animals for hunting purposes, without first obtaining written authorization from the division.
+
+(b) Any peace officer, division representative, or authorized animal control officer may seize, euthanize, or dispose of any live bird or mammal that is released from or escapes from captivity.
+
+(c) The division may keep custody of any recaptured bird or mammal until the costs of recapture or care have been paid by its owner or keeper.
+
+(3) A person may not collect a native or naturalized bird or mammal species from the wild for personal possession except as otherwise authorized under Title 23A, the Wildlife Resources Code of Utah, or Title R657.
+
+(4) The following species are prohibited from collection, possession, and importation into Utah without first obtaining a certificate of registration from the division, a federal permit from the U.S. Fish and Wildlife Service, and an entry permit number from the Department of Agriculture and Food if importing:
+
+(a) any species which have been determined by the U.S. Fish and Wildlife Service to be endangered or threatened pursuant to the federal Endangered Species Act, as amended; and
+
+(b) any species of migratory birds protected under the Migratory Bird Treaty Act.
+
+R657-3b-5. Application and Renewal Procedures — Amendments — Expiration — Fees.
+
+(1)(a) Initial and renewal applications for certificates of registration are available from, and must be submitted to, the Wildlife Registration Office in Salt Lake City or any regional division office.
+
+(b) Applications may require a minimum of 45 days for review and processing from the date the application is received.
+
+(c) Applications that are incomplete, completed incorrectly, or submitted without the appropriate fee or other required information may be returned to the applicant.
+
+(2)(a) Upon or before the expiration date of a certificate of registration, the holder must apply for a renewal of the certificate of registration to continue the activity.
+
+(b) The division may use the criteria provided in Section R657-3b-6 in determining whether to renew the certificate of registration.
+
+(c) It is unlawful for a person to possess an animal for which a certificate of registration is required if that person;
+
+(i) does not have a valid certificate of registration authorizing possession of the animal; or
+
+(ii) fails to submit a renewal application to the division before the expiration of an existing certificate of registration authorizing possession of the animal.
+
+(d) If a renewal application is not submitted to the division by the expiration date, live or dead animals held in possession under the expired certificate of registration shall be considered unlawfully held and may be seized by the division.
+
+(e) If a renewal application is submitted to the division before the expiration date of the existing certificate of registration, continued possession of the animal under the expired certificate of registration shall remain lawful while the renewal application is pending.
+
+(3)(a) Certificates of registration are not transferable and expire December 31 of the year issued, except as otherwise designated on the certificate of registration.
+
+(b) If the holder of a certificate of registration is a representative of an institution, organization, business, or agency, the certificate of registration shall expire effective upon the date of the representative's discontinuation of association with that entity.
+
+(c) Certificates of registration do not provide the holder any rights of succession and any certificate of registration issued to a business or organization shall be void upon the termination of the business or organization or upon bankruptcy or transfer or death of the COR holder.
+
+(4) Failure to submit timely, accurate, or valid reports as required under this rule or the terms of a certificate of registration may disqualify a person from renewing an existing certificate of registration or obtaining a new certificate of registration.
+
+R657-3b-6. Issuance and Renewal Criteria.
+
+(1) The following factors shall be considered before the division may issue or renew a certificate of registration for the collection, importation, transportation, possession or propagation of an animal:
+
+(a) the health, welfare, and safety of the public;
+
+(b) the health, welfare, safety and genetic integrity of wildlife, domestic livestock, poultry and other animals;
+
+(c) ecological and environmental impacts;
+
+(d) the suitability of the applicant's holding facilities;
+
+(e) the experience of the applicant for the activity requested; and
+
+(f) ecological or environmental impact on other states.
+
+(2) In addition to the criteria provided in Subsection (1), the division shall use the following criteria for the issuance or renewal of a certificate of registration for a scientific use of an animal:
+
+(a) the validity of the objectives and design;
+
+(b) the likelihood the project will fulfill the stated objectives;
+
+(c) the applicant's qualifications to conduct the research, including education or experience;
+
+(d) the adequacy of the applicant's resources to conduct the study; and
+
+(e) whether the scientific use is in the best interest of the animal, wildlife management, education, or the advancement of science without unnecessarily duplicating previously documented scientific research.
+
+(3) In addition to the criteria provided in Subsection (1), the division may use the following criteria for the issuance or renewal of a certificate of registration for an educational use of an animal:
+
+(a) the objectives and structure of the educational program;
+
+(b) whether the applicant has written approval from the appropriate official if the activity is conducted in a school or other educational facility; and
+
+(c) whether the individual is in possession of the required federal permits.
+
+(4) The factors in Subsection (1) do not apply to the following:
+
+(a) the commercial use of a dead coyote, jackrabbit, muskrat, raccoon, or its parts;
+
+(b) a business entity that has obtained a certificate of registration from the division to conduct nuisance wildlife control or carcass removal; and
+
+(c) dead animals sold or traded for educational use.
+
+(5) The division may deny issuing or renewing a certificate of registration to any applicant, if:
+
+(a) the applicant has violated Title 23A, the Wildlife Resources Code of Utah, Title R657, proclamation or guidebook, a certificate of registration, an order of the Wildlife Board or any other law that when considered with the functions and responsibilities of collecting, importing, possessing or propagating an animal bears a reasonable relationship to the applicant's ability to safely and responsibly carry out such activities;
+
+(b) the applicant has previously been issued a certificate of registration and failed to submit any report or information required by this rule, the division, or the Wildlife Board;
+
+(c) the applicant misrepresented or failed to disclose material information required in connection with the application; or
+
+(d) holding the animal at the proposed location violates federal, state, or local laws.
+
+(6) The collection or importation and subsequent possession of an animal may be granted only upon a clear demonstration that the criteria established in this section have been met by the applicant.
+
+(7) The division, in making a determination under this section, may consider any available facts or information that is relevant to the issuance or renewal of the certificate of registration, including independent inquiry or investigation to verify information or substantiate the qualifications asserted by the applicant.
+
+(8) If an application is denied, the division shall provide the applicant with written notice of the reasons for denial.
+
+R657-3b-7. Noncontrolled, Controlled and Prohibited Species.
+
+(1)(a) The noncontrolled, controlled and prohibited bird and mammal animal species classification table entitled Birds and Mammals Classification Table 3b-1, dated May 1, 2023 is incorporated by reference.
+
+(b) Table 3b-1 can be accessed in person or by contacting the Salt Lake division office located at 1594 West North Temple, Salt Lake City, Utah 84114, and on the division's Certificates of Registration web page at https://wildlife.utah.gov/cor.
+
+R657-3b-8. Collection of Bird and Mammal Species.
+
+(1) A person shall obtain a certificate of registration before collecting any bird and mammal species or bird and mammal species parts classified as prohibited or controlled, except as otherwise provided in this rule, statute, or rules and orders of the Wildlife Board.
+
+(2) A certificate of registration is not required to collect any bird and mammal species classified as noncontrolled.
+
+(3) A person may take a raptor species for falconry as provided in Rule R657-20.
+
+R657-3b-9. Nuisance Bird and Mammal Species.
+
+(1) A person is not required to obtain a certificate of registration or a federal permit to kill a house sparrow (Passer domesticus), European starling (Sturnus vulgaris), or domestic pigeon or rock pigeon (Columba livia) when found damaging personal or real property, or when concentrated in such numbers and manner as to constitute a health hazard or other nuisance when:
+
+(a) an attempt to control the birds using non-lethal methods occurs before using lethal methods;
+
+(b) applicable local, state, and federal laws are strictly complied with; and
+
+(c) none of the birds killed, nor their plumage, are sold or offered for sale.
+
+(2) A person is not required to obtain a certificate of registration or a federal permit to kill a Brewer's blackbird (Euphagus cyanocephalus), Red-winged blackbird (Agelaius phoeniceus), Yellow-headed blackbird (Xanthocephalus xanthocephalus), Boat-tailed grackle (Quiscalus major), Common grackle (Quiscalus quiscula), Great-tailed grackle (Quiscalus mexicanus), Black-billed magpie (Pica hudsonia), American crow (Corvus brachyrhynchos), bronzed cowbird (Molothrus aeneus), brown-headed cowbird (Molothrus ater), or shiny cowbird (Molothrus bonariensis) that is committing or about to commit depredations on ornamental or shade trees, agricultural crops, livestock, or wildlife, or when concentrated in such numbers and manner as to constitute a health hazard or other nuisance when:
+
+(a) an attempt to control the birds using non-lethal methods occurs before using lethal methods;
+
+(b) applicable local, state, and federal laws are strictly complied with; and
+
+(c) none of the birds killed, nor their plumage, are sold or offered for sale.
+
+(3) Any person that takes a nuisance bird pursuant to Subsections (1) and (2) must provide to the appropriate U.S. Fish and Wildlife Service, Regional Migratory Bird Permit Office an annual report for each species taken.
+
+(4) A person may not take nuisance birds with bait, explosives, or poisons.
+
+(5) A person shall dispose of dead nuisance birds at a landfill that accepts wildlife carcasses, or burned or incinerated.
+
+(6) Neither a federal permit nor a state certificate of registration is required to destroy the nests and eggs of resident Canada geese if the landowner or agent qualifies, registers, and complies with all the Federal Nest and Egg Registry.
+
+(7) A person may kill coyote, field mouse, gopher, ground squirrel, jackrabbit, muskrat, and raccoon at any time.
+
+(8) A person may kill nuisance furbearers as provided in Rule R657-11.
+
+(9) A person may kill nongame mammals as provided in Rule R657-19.
+
+R657-3b-10. Importation of Bird and Mammal Species.
+
+(1) A person shall obtain a certificate of registration before importing any bird or mammal species, or bird or mammal species parts, classified as prohibited or controlled, except as otherwise provided in this rule, statute, or rules and orders of the Wildlife Board.
+
+(2) A certificate of registration is not required to import any bird or mammal species classified as noncontrolled.
+
+R657-3b-11. Transportation of Bird and Mammal Species.
+
+(1) A person shall obtain a certificate of registration before transporting any bird or mammal species, or bird or mammal species parts, classified as prohibited or controlled, except as otherwise provided in this rule, statute, or rules and orders of the Wildlife Board.
+
+(2) A certificate of registration is not required to transport any bird and mammal species classified as noncontrolled.
+
+R657-3b-12. Possession of Bird and Mammal Species.
+
+(1) A person shall obtain a certificate of registration before possessing any bird or mammal species, or bird or mammal species parts, classified as prohibited or controlled, except as otherwise provided in this rule, statute, or rules and orders of the Wildlife Board.
+
+(2) A certificate of registration is not required to possess any bird or mammal species classified as noncontrolled.
+
+(3) Any bird or mammal held in possession under the authority of a certificate of registration shall be maintained under humane and healthy conditions, including the humane handling, care, confinement, transportation and feeding.
+
+(4) A person shall protect the public from harm when possessing any bird or mammal.
+
+(5) The division may impose specific requirements on the certificate of registration holder consistent with industry standards or generally accepted animal husbandry practices deemed necessary for the safe and humane handling and care of the animal involved, including requirements for veterinary care, cage or holding pen sizes and standards, feeding requirements, social grouping requirements, and other requirements considered necessary by the division for the health and welfare of the animal or the public.
+
+(6) A person may possess gamebirds as provided in Rule R657-4.
+
+(7) A person may possess a raptor species for falconry as provided in Rule R657-20.
+
+R657-3b-13. Propagation of Bird and Mammal Species.
+
+(1) A person shall obtain a certificate of registration before propagating any bird or mammal species classified as prohibited or controlled, except as otherwise provided in this rule, statute, or rules and orders of the Wildlife Board.
+
+(2) A certificate of registration is not required to propagate any bird or mammal species classified as noncontrolled.
+
+(3) A certificate of registration may contain stipulations to prevent detrimental impacts to wild populations, the environment, or human health or safety.
+
+(4) A person may propagate raptors only as provided in Rule R657-20 and 50 CFR 21.85.
+
+Table 3b-1. May 1, 2023
+
+Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation or possession will be authorized.
+
+Domestic mammals and mammalian livestock not covered under this rule
+
+Table showing domestic mammals and mammalian livestock not covered under this rule
+
+Common name | 
+
+Scientific classification | 
+
+Comments | 
+
+Bison, American | 
+
+Bos bison | 
+
+Privately owned | 
+
+Cat | 
+
+Felis catus | 
+
+Including breeds that are recognized by The International Cat Association as Preliminary New, Advanced New, Non-championship, and Championship Breeds | 
+
+Camels, llama, alpaca, vicuña, guanaco | 
+
+Family Camelidae | 
+
+All species | 
+
+Cattle | 
+
+Bos taurus | 
+
+| 
+
+Chinchillas | 
+
+Chinchilla chinchilla, Chinchilla lanigera | 
+
+| 
+
+Dog | 
+
+Canis lupus familiaris | 
+
+Domestic including hybrids between wild and domestic species and subspecies | 
+
+Elk | 
+
+Cervus elaphus canadensis | 
+
+Privately owned | 
+
+Ferret, European | 
+
+Mustela putorius furo | 
+
+Domestic | 
+
+Fox, red | 
+
+Vulpes vulpes | 
+
+Privately owned, domestically bred and raised | 
+
+Goat | 
+
+Capra hircus | 
+
+| 
+
+Gerbil (= Mongolian jird) | 
+
+Meriones unguiculatus | 
+
+| 
+
+Guinea pig | 
+
+Cavia porcellus | 
+
+| 
+
+Hamster, golden | 
+
+Mesocricetus auratus | 
+
+| 
+
+Hedgehog, "white-bellied", "African pygmy", etc. | 
+
+Atelerix species | 
+
+Includes hybrids | 
+
+Horse, donkey (= ass, burro), mule, hinny | 
+
+Equus caballus, Equus asinus | 
+
+Includes hybrids (= mule or hinny) | 
+
+Mink | 
+
+Neogale vison | 
+
+Domestic | 
+
+Mouse, house | 
+
+Mus musculus | 
+
+| 
+
+Rabbit, European | 
+
+Oryctolagus cuniculus | 
+
+| 
+
+Rat, Norway | 
+
+Rattus norvegicus | 
+
+| 
+
+Sheep | 
+
+Ovis aries | 
+
+Includes "haired" sheep | 
+
+Sugar glider | 
+
+Petaurus breviceps | 
+
+| 
+
+Swine | 
+
+Sus scrofa | 
+
+Domestic | 
+
+Tenrecs | 
+
+Family Tenrecidae | 
+
+| 
+
+Water buffalo | 
+
+Bubalus bubalis | 
+
+| 
+
+Yak | 
+
+Bos grunniens | 
+
+| 
+
+Zebu or "Brahma" | 
+
+Bos taurus indicus | 
+
+| 
+
+Domestic birds and avian livestock not covered under this rule
+
+Table showing domestic birds and avian livestock not covered under this rule
+
+Common name | 
+
+Scientific classification | 
+
+Comments | 
+
+Pigeon (= Rock Dove) | 
+
+Columba livia | 
+
+| 
+
+Chicken | 
+
+Gallus gallus | 
+
+| 
+
+Ratites | 
+
+Infraclass Palaeognathae | 
+
+Ostrich, emus, rheas, cassowaries | 
+
+Ducks | 
+
+Family Anatidae | 
+
+Distinguishable morphologically from wild ducks | 
+
+Guineafowl | 
+
+Numida meleagris | 
+
+| 
+
+Geese | 
+
+Family Anatidae | 
+
+Distinguishable morphologically from wild geese | 
+
+Peafowl | 
+
+Pavo cristatus | 
+
+| 
+
+Turkey | 
+
+Meleagris gallopavo | 
+
+Privately owned | 
+
+Noncontrolled mammals
+
+Table showing noncontrolled mammals
+
+Common name | 
+
+Scientific classification | 
+
+Comments | 
+
+Patagonian cavy (= Patagonian mara) | 
+
+Dolichotis patagonum | 
+
+| 
+
+Short-tailed opossum, gray (= "Brazilian") | 
+
+Monodelphis domestica | 
+
+| 
+
+Noncontrolled birds
+
+Table showing noncontrolled birds
+
+Common name | 
+
+Scientific classification | 
+
+Comments | 
+
+Babblers, Old World | 
+
+Family Timaliidae | 
+
+All species | 
+
+Barbets | 
+
+Families Capitonidae and Ramphastidae | 
+
+All species not native to North America | 
+
+Broadbills | 
+
+Family Eurylaimidae | 
+
+All species | 
+
+Cotingas | 
+
+Family Cotingidae | 
+
+All species | 
+
+Estrildid finches, Waxbills, Mannikins and Munias | 
+
+Family Estrildidae | 
+
+All species | 
+
+Fairy-bluebirds | 
+
+Family Irenidae | 
+
+All species | 
+
+Finches and canaries | 
+
+Family Fringillidae | 
+
+All species not native to North America | 
+
+Honeyeaters | 
+
+Family Meliphagidae | 
+
+All species | 
+
+Hornbills | 
+
+Family Bucerotidae | 
+
+All species | 
+
+Icterids, troupials, blackbirds, orioles | 
+
+Family Icteridae | 
+
+All species not native to North America except Central and South American cowbirds | 
+
+Leafbirds | 
+
+Family Chloropseidae | 
+
+All species | 
+
+Megapodes (= Mound-builders) | 
+
+Family Megapodiidae | 
+
+All species (scrubfowl, malleefowl, brushturkeys, etc.) | 
+
+Motmots | 
+
+Family Momotidae | 
+
+All species | 
+
+Parrots | 
+
+Family Psittacidae | 
+
+All species not native to North America | 
+
+Pigeons and doves | 
+
+Family Columbidae | 
+
+| 
+
+Rollers | 
+
+Family Coraciidae | 
+
+All species | 
+
+Sugarbirds | 
+
+Family Promeropidae | 
+
+All species | 
+
+Sunbirds | 
+
+Family Nectariniidae | 
+
+All species | 
+
+Tanagers, Swallow-tanager and related species | 
+
+Family Thraupidae | 
+
+All species not native to North America | 
+
+Toucans | 
+
+Family Ramphastidae | 
+
+All species not native to North America | 
+
+Turacos, plantain-eaters and go-away-birds | 
+
+Family Musophagidae | 
+
+All species | 
+
+Vidua finches | 
+
+Subfamily Viduinae | 
+
+All species | 
+
+Weaver finches | 
+
+Family Ploceidae | 
+
+All species | 
+
+White-eyes and related species | 
+
+Family Zosteropidae | 
+
+All species | 
+
+Controlled mammals
+
+Table showing controlled mammals
+
+Common name | 
+
+Scientific classification | 
+
+Comments | 
+
+American marten | 
+
+Martes americana | 
+
+Captive-bred | 
+
+Bobcat | 
+
+Lynx rufus | 
+
+Captive-bred | 
+
+Capybaras | 
+
+Hydrochoerus hydrochaeris, Hydrochoerus isthmus | 
+
+| 
+
+Eurasian lynx | 
+
+Lynx lunx | 
+
+Captive-bred | 
+
+Fallow deer | 
+
+Dama dama | 
+
+Captive-bred | 
+
+Fennec fox | 
+
+Vulpes zerda | 
+
+| 
+
+Hedgehogs | 
+
+Family Erinaceidae | 
+
+Except "while-bellied" (see domestic animals) | 
+
+Kangaroos and wallabies | 
+
+Family Macropodidae | 
+
+| 
+
+Muskox | 
+
+Ovibos moschatus | 
+
+Captive-bred | 
+
+Shrews | 
+
+Family Soricidae | 
+
+| 
+
+Two-toed sloths | 
+
+Choloepus didactylus, Choloepus hoffmanni | 
+
+| 
+
+Zebras | 
+
+Equus zebra, Equus grevyi, Equus burchellii | 
+
+All species | 
+
+Prohibited mammals — known detrimental impacts to native wildlife populations, human health and safety, or agriculture.
+
+Personal possession will not be authorized.
+
+Table showing prohibited mammals
+
+Common name | 
+
+Scientific classification | 
+
+Comments | 
+
+Bats | 
+
+Order Chiroptera | 
+
+| 
+
+Bears | 
+
+Family Ursidae | 
+
+All species | 
+
+Big cats | 
+
+Panthera leo, Panthera tigris, Panthera pardus, Acinonyx jubatus, Uncia uncia, Puma concolor, Panthera onca | 
+
+Lion, tiger, leopard, cheetah, snow leopard, cougar (= puma), jaguar or any hybrid of these species; in accordance with the Federal Big Cat Public Safety Act | 
+
+Nutria (= coypu) | 
+
+Myocastor coypus | 
+
+| 
+
+Primates | 
+
+Order Primates | 
+
+All non-human species | 
+
+Raccoon dog | 
+
+Nyctereutes procyonoides | 
+
+| 
+
+Reindeer | 
+
+Rangifer tarandus | 
+
+| 
+
+Virginia opossum | 
+
+Didelphis virginiana | 
+
+| 
+
+Wolf | 
+
+Canis lupus | 
+
+| 
+
+Eurasian boar, all non-domestic swine | 
+
+Sus scrofa | 
+
+Eurasian boar, Russian boar, wild boar, wild hog, razorback or feral swine; does not include domestic swine | 
+
+Big game (see below) | 
+
+| 
+
+| 
+
+Bighorn (= mountain sheep) | 
+
+Ovis canadensis | 
+
+| 
+
+Bison (= American bison) | 
+
+Bos bison | 
+
+| 
+
+Elk | 
+
+Cervus elaphus canadensis | 
+
+| 
+
+Moose | 
+
+Alces alces | 
+
+| 
+
+Mountain goat | 
+
+Oreamnos americanus | 
+
+| 
+
+Mule deer | 
+
+Odocoileus hemionus | 
+
+| 
+
+Pronghorn | 
+
+Antilocapra americana | 
+
+| 
+
+White-tailed deer | 
+
+Odocoileus virginianus | 
+
+| 
+
+Download administrative rule R657-3b-->
+
+On this page
+
+Back to top
+
+Close
+
+Search again
+
+Search now

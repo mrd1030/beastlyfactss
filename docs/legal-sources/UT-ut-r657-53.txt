@@ -1,0 +1,731 @@
+SOURCE: Utah Admin. Code R657-53, Amphibian and Reptile Collection, Importation, Transportation and Possession
+URL: https://wildlife.utah.gov/rules/r657-53
+FETCHED: 2026-09-05 (DWR's own hosting of the rule. The Office of Administrative Rules site, adminrules.utah.gov, is a React app that returns 404 to a fetcher on every /public/rule/ path, so the agency copy is the only readable one. Site chrome stripped.)
+
+R657-53-1. Purpose and Authority.
+
+(1) Under Title 23A, Wildlife Resources Code of Utah, this rule governs the collection, importation, possession, and propagation of amphibians and reptiles in Utah.
+
+(2)(a) Nothing in this rule shall be construed as superseding the provisions set forth in Title 23A, Wildlife Resources Code of Utah.
+
+(b) Any provision of this rule setting forth a criminal violation that overlaps a section of that title is provided in this rule only as a clarification or to provide greater specificity needed for the administration of the provisions of this rule.
+
+(3) Specific dates, species, collection permit boundaries, number of collection permits, daily collection and total possession limits, and other administrative details which may change annually are published in the proclamation or guidebook of the Wildlife Board for amphibians and reptiles.
+
+(4)(a) In addition to this rule, the Utah Department of Agriculture and Food regulates animal importation and disease testing requirements through Title 4 of Utah Code and Utah Admin. Rule R58-1.
+
+(b) In addition to this rule, local government entities may impose additional prohibitions or restrictions through zoning restrictions and similar ordinances.
+
+(c) Nothing in this rule is intended to authorize an activity that is otherwise prohibited by federal law, rules of the Utah Department of Agriculture and Food, or properly enacted restrictions imposed by local government entities.
+
+R657-53-2. Definitions.
+
+(1) Terms used in this rule are defined in Section 23A-1-101 and Subsection (2) through Subsection (29).
+
+(2) "Amphibian" means animals from the Class of Amphibia, including hybrid species or subspecies of amphibians and viable embryos or gametes of species or subspecies of amphibians.
+
+(3) "Captive-bred" or "born in captivity" means any legally-obtained amphibian or reptile that:
+
+(a) was born in captivity;
+
+(b) spends its entire life in captivity; and
+
+(c) is the offspring of legally obtained progenitors.
+
+(4) "Certificate of registration" means, for the purposes of this rule, a wildlife document issued by the division authorizing an individual or entity to undertake activities that are otherwise prohibited.
+
+(5) "Collect" means to take, catch, capture, salvage, or kill any free-roaming amphibian or reptile or their parts within Utah, except as described in (22) below and in R657-53-7(2).
+
+(6) "Collection permit" means a wildlife document authorizing collection from the wild and subsequent personal possession of amphibians and reptiles in Utah.
+
+(7)(a) "Commercial use" means any activity through which a person is:
+
+(i) in lawful possession of a wild-caught amphibian or reptile categorized as controlled or prohibited;
+
+(ii) doing business in Utah wherein that business activity utilizes and relies upon a wild-caught amphibian or reptile for financial gain;
+
+(iii) engaged in business activity that is continuous, such that it involves some permanent presence beyond casual or isolated financial transactions; and
+
+(iv) receiving consideration exceeding the costs directly related to care, breeding, rearing of the wild-caught amphibian or reptile and its offspring.
+
+(b) Consideration derived from the sale of offspring from captive-bred amphibians or reptiles does not constitute commercial use.
+
+(8) "Controlled species" means species or subspecies of amphibian or reptile for which a person must acquire certificate of registration or collection permit prior to possessing the animal.
+
+(9) "Daily collection limit" means the maximum limit, in number of individuals, that one person may legally remove from the field during one 24-hour period.
+
+(10) "Den" means any place where reptiles congregate for winter hibernation or brumation.
+
+(11) "Educational use" means the possession and use of an amphibian or reptile by a public educational institution, non-profit organization established for the purposes of wildlife conservation or education, or a government agency, for the purposes of conducting instructional activities for the public concerning wildlife and wildlife-related activities, where the individual or entity does not receive compensation or remuneration beyond the costs incurred to conduct the instruction.
+
+(12) "Entry permit number" means a number issued by the state veterinarian's office to a veterinarian signing a certificate of veterinary inspection authorizing the importation of an amphibian or reptile into Utah.
+
+(13) "Export" means to move or cause to move any amphibian or reptile or their parts from Utah by any means.
+
+(14) "Import" means to bring or cause an amphibian or reptile or their parts to be brought into Utah by any means.
+
+(15) "Legally obtained" means to acquire through collection, trade, barter, propagation or purchase with supporting written documentation if required, such as applicable certificate of registration, collection permit, license, or sales receipt in accordance with applicable laws. Documentation must include the date of the transaction; the name, address and phone number of the person or organization relinquishing the animal; the name, address and phone number of the person or organization obtaining the animal; the scientific name of the animal acquired; and a description of the animal. A state-issued wildlife document and completion of all mandatory reporting satisfies any documentation requirement for specimens covered by the wildlife document and reporting.
+
+(16) "Native species" means any species or subspecies of amphibian or reptile that historically occurred in Utah and has not been introduced by humans or migrated into Utah as a result of human activity.
+
+(17) "Naturalized species" means any species or subspecies of amphibian or reptile that is not native to Utah but has established a wild, self-sustaining population in Utah.
+
+(18) "Noncontrolled species" means a species or subspecies of amphibian or reptile that does not require a certificate of registration or a collection permit to possess.
+
+(19) "Nonnative species" means a species or subspecies of amphibian or reptile that is not native to Utah and has not established a wild, self-sustaining population in Utah.
+
+(20) "Possession" means to physically retain or to exercise dominion or control over an amphibian or reptile.
+
+(21) "Prohibited species" means a species or subspecies of amphibian or reptile that requires variance approval from the Wildlife Board prior to issuing a certificate of registration or collection permit and prior to possessing the animal.
+
+(22) "Propagation" means the reproduction of amphibians or reptiles in captivity that results in the production of offspring.
+
+(23) "Reptile" means animals from the Class of Reptilia, including hybrid species or subspecies of reptiles and viable embryos or gametes of species or subspecies of reptiles.
+
+(24) "Salvage" means the collection of a reptile or amphibian when that specimen is dead upon discovery and that death was not due to any action attributable to the individual collecting or ultimately receiving the specimen.
+
+(25) "Scientific use" means the possession and use of an amphibian or reptile by a public educational institution, non-profit organization established for the purposes of wildlife conservation or education, or a government agency, for conducting bona fide scientific research that is directly or indirectly beneficial to wildlife or the general public.
+
+(26) "Temporary possession" or "temporarily possess" for the purposes of this rule means handling an amphibian or reptile for the minimum amount of time necessary for a person to complete measurements and documentation required as part of their mandatory reporting.
+
+(27) "Total possession limit" means the maximum limit, in number of individuals, that one person or entity may possess.
+
+(28) "Transport" means to be moved or cause to be moved, any amphibian or reptile within Utah by any means.
+
+(29) "Turtle" means all animals commonly known as turtles, tortoises and terrapins, and all other animals of the Order Testudines, Class Reptilia.
+
+(30) "Wild population" means native or naturalized amphibians or reptiles living in nature.
+
+(31) "Wildlife document" means a document issued by the division allowing an activity that would otherwise be prohibited and includes a collection permit and certificate of registration.
+
+R657-53-3. Liability.
+
+(1) Any person who engages in an activity described in this rule assumes all liability and responsibility and agrees to fully indemnify the State of Utah for any activity undertaken pursuant to this rule and for any injury, damage, or claim arising out of or related to their activity.
+
+(2) Nothing in this rule shall be construed as a waiver or limitation of any protection, immunity, defense, or damage cap limitation available to the division under state or federal law.
+
+(3) To the extent allowable under Utah law, the division shall not be liable in any civil action for:
+
+(a) any injury, disease, or damage caused by or to any animal, person, or property as a result of any activity authorized under this rule, a certificate of registration, or collection permit; or
+
+(b) the issuance, denial, suspension, or revocation of or by the failure or refusal to issue, deny, suspend, or revoke any certificate of registration, collection permit, or similar authorization.
+
+R657-53-4. Prohibited Activities.
+
+(1) A person may not take, posses, import, export, transfer, or release to the wild a reptile or amphibian or their parts in Utah, or attempt to undertake such activity, except as provided in this rule or in a proclamation or guidebook issued by the Wildlife Board.
+
+(2)(a) Pursuant to Section 23A-5-305, a person may not release from captivity any amphibian or reptile without first obtaining written authorization from the division.
+
+(b) Any peace officer, division representative, or authorized animal control officer may seize, euthanize, or dispose of any live amphibian or reptile that escapes from captivity.
+
+(c) The division may retain custody of any recaptured amphibian or reptile until the costs of recapture or care have been paid by its owner or keeper.
+
+(3) A person may not:
+
+(a) knowingly disturb the den of any reptile or kill, capture, or harass any reptile within 100 yards of a reptile den without first obtaining a wildlife document authorizing that activity;
+
+(b) trespass while engaged in an activity regulated by this rule;
+
+(c) sell a wild caught reptile or amphibian;
+
+(d) transfer a wild caught native amphibian or reptile without completing mandatory reporting;
+
+(e) transfer any wild caught native amphibian or reptile to another individual between April 1 and December 31 without prior approval from the division;
+
+(f) collect or attempt to collect a reptile or amphibian under another individual's collection permit;
+
+(g) collect or attempt to collect a reptile or amphibian in an area that is closed to collection activities; or
+
+(h) transport or propagate an amphibian without complying with Title 4 Chapter 37 Utah Code and implementing regulations of the Utah Department of Agriculture and Food.
+
+(4)(a) A person may not conduct educational use or scientific use activities with a species categorized as controlled or prohibited without first obtaining a certificate of registration from the division.
+
+(b)(i) A person may not conduct commercial use activities with controlled species without first obtaining a certificate of registration from the division.
+
+(ii) A person may not conduct commercial use activities with a prohibited species without first obtaining a variance from the Wildlife Board and a certificate of registration from the division.
+
+R657-53-5. Activities Allowed Without a Wildlife Document.
+
+(1) A person may conduct the following activities without acquiring a wildlife document from the division:
+
+(a) collect a noncontrolled reptile or amphibian from the wild;
+
+(b) possess, import, export, or transfer to another person a reptile or amphibian that was previously removed from the wild and is classified as noncontrolled or controlled, provided:
+
+(i) the person receiving the animal maintains documentation verifying that the specimen was legally acquired;
+
+(ii) the person transferring the animal certifies that they were in lawful possession of the animal;
+
+(iii) if the animal is wild caught, no financial compensation or consideration is exchanged as part of the transfer of possession;
+
+(iv) the person receiving the animal has otherwise completed all mandatory education courses necessary to obtain or possess the animal;
+
+(v) the person receiving the animal will not exceed the total possession limit for that species, if applicable; and
+
+(vi) the animal does not belong to a species subject to certificate or registration requirements under R657-53-12;
+
+(c) possess, import, export, transfer, or salvage a dead reptile or amphibian or their parts, provided:
+
+(i) such actions are allowed under applicable state and federal law;
+
+(ii) the specimen was lawfully acquired;
+
+(iii) proof of legal possession accompanies the specimens; and
+
+(iv) the individual completes any required mandatory reporting as described in R657-53-19 and possesses any necessary federal permit necessary to possess the animal or it's part;
+
+(d) pursue and temporarily possess a reptile or amphibian, if that action complies with the requirements in R657-53-8(2);
+
+(e) propagate lawfully acquired amphibians and reptiles, unless:
+
+(i) the species to be propagated requires a certificate of registration under R657-53-12;
+
+(ii) the propagator is breeding a wild caught species native to Utah and is selling the progeny in a manner qualifying as a commercial use under R657-53-2(7); or
+
+(iii) otherwise prohibited by local, state, or federal law; or
+
+(f) transport any reptile or amphibian, regardless of total possession limit restrictions, through Utah without a wildlife document, provided:
+
+(i) the transporter is otherwise in lawful possession of the specimens;
+
+(ii) proof of legal possession or origin accompanies the specimens;
+
+(iii) the transporter complies with importation requirements established by the Utah Department of Agriculture and Food;
+
+(iv) the specimens remain in Utah no more than 72 hours; and
+
+(v) the specimens are not sold, transferred, exhibited, displayed, or used for a commercial use while in Utah.
+
+R657-53-6. Activities Requiring a Wildlife Document.
+
+(1) A person must acquire a collection permit or certificate of registration before capturing a controlled species from the wild in Utah.
+
+(2) Only one collection permit or certificate of registration is required per individual, regardless of the number of animals collected under that permit, provided:
+
+(a) the individual remains in compliance with daily collection limits and total possession limits; and
+
+(b) the individual completes mandatory reporting under R657-53-19 as required.
+
+(3)(a) Collection permits are valid for the capture season authorized by the Wildlife Board.
+
+(b) Certificates of registration for personal collection under R657-53-12 are valid for the term indicated on the document.
+
+(4)(a) If a person lawfully collects an amphibian or reptile from the wild using a collection permit or certificate of registration, the collection permit or certificate of registration serves as the authorization for continued possession of those collected specimens consistent with the provisions of this rule.
+
+(b) A copy of the collection permit or certificate of registration may serve as documentation of lawful acquisition necessary to transfer possession of a wild caught specimen under R657-53-6.
+
+(c) A person may not collect individual specimens in excess of the identified daily collection or total possession limits during the term of their collection permit, regardless of whether they transfer ownership of a specimen to another individual during the collection permit's term.
+
+(5) A person must obtain a variance from the Wildlife Board to collect or possess a prohibited species.
+
+(6)(a) An individual or entity must acquire a certificate of registration before engaging in an educational, scientific, or commercial use activity involving the collection or possession of a controlled or prohibited species.
+
+(b) A scientific use certificate of registration is valid for the time-period identified in the research proposal and approved by the division.
+
+(c) Educational use certificates of registration are valid for 3 years and authorize wildlife-related instructional activities identified on the certificate of registration.
+
+(d) Commercial use certificates of registration are valid for 3 years and authorize activities commercial use activities identified on the certificate of registration.
+
+(7) A wildlife document may be suspended or revoked as provided in Section 23A-4-1106 and Rule R657-26.
+
+R657-53-7. Total Possession Limits and Daily Collection Limits.
+
+(1)(a) The division shall establish daily collection limits and total possession limits for amphibians and reptiles found in Utah based upon their classification as a noncontrolled species, controlled species, or prohibited species.
+
+(b) Daily limits, total possession limits, collection permit numbers, collection season dates, and collection permit boundaries will be approved by the Wildlife Board and published in a guidebook by the division.
+
+(2) Noncontrolled species may be given the following daily collection limits and total possession limits:
+
+(a) "Unlimited," allowing an unlimited number of individuals that may be collected from the wild or otherwise possessed; or
+
+(b) "Expanded," allowing for a daily collection limit of 25 individuals and total possession limit of 100.
+
+(3) Controlled species may be given the following daily collection limits and total possession limits:
+
+(a) "Standard," allowing for a daily collection limit of 3 individuals and total possession limit of 9 individuals; or
+
+(b) "Limited," allowing for a daily and yearly collection limit of 2 individuals and total possession limit of 4 individuals.
+
+(4) Prohibited species shall be given the daily collection limit and total possession limit of "Zero," prohibiting all collection and possession of prohibited species.
+
+(5) A person may not exceed daily collection limits or total possession limits unless an authorization is provided in this rule, on a certificate of registration, or a variance granted by the Wildlife Board pursuant to R657-53-18.
+
+(6) An individual's daily collection limit and total possession limit is established at the time they possess an individual specimen and are cumulative throughout the term of a collection permit.
+
+(7) In establishing a daily collection limit or total possession limit, any specimen that belongs to a species that is native to Utah is presumed to be a wild caught specimen unless the individual in possession provides verifiable documentation required by R657-53-5.
+
+(8) If a species classification and associated daily collection limit and total possession limit is not defined in this rule or otherwise included in the guidebook published by the Wildlife Board, it shall be classified as a Controlled species and have a Standard daily collection limit and total possession limit.
+
+R657-53-8. Exceptions to Total Possession Limits and Daily Collection Limits.
+
+(1) Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit:
+
+(a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession;
+
+(b) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and are in possession of an individual conducting reptile propagation, so long as:
+
+(i) the individual performing the propagation registers with the division as a propagator; and
+
+(ii) completes associated mandatory reporting under R657-53-19;
+
+(c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12; and
+
+(d) individuals or entities authorized to collect or possess species under commercial use, educational use, or scientific use certificates of registration may be subject to alternative total possession limits or daily collection limits established by the division.
+
+(2) Daily collection limits apply to any reptile or amphibian captured in the wild in Utah, except that a person may temporarily possess an individual animal in excess of daily collection limits, provided:
+
+(a) the animal is released immediately after the temporary possession time period has expired;
+
+(b) the animal is not transported away from the capture site unless necessary to accurately complete mandatory reporting;
+
+(c) the animal is released in reasonable proximity to the capture location;
+
+(d) required reporting is accurately submitted to the division;
+
+(e) temporary possession is not prohibited by federal law;
+
+(f) the individual has completed all mandatory training courses necessary to possess the animal; and
+
+(g) the animal does not belong to a species subject to certificate of registration requirements under R657-53-12.
+
+(3) Specimens salvaged in accordance with this rule do not count towards an individual's daily collection limit or total possession limit for that species.
+
+R657-53-9. Determination of Prohibited Species; Establishing Daily Limits and Total Possession Limits for Controlled Species.
+
+(1)(a) A species of the Order Squamata (snakes and lizards) is classified as a prohibited species if:
+
+(i) it is venomous;
+
+(ii) not native to Utah; and
+
+(iii) a bite from which may cause substantial physical injury to humans ordinarily requiring medical treatment.
+
+(b) Species of the Order Crocodilia (crocodiles, gharials, caimans, and alligators) are classified as prohibited.
+
+(c) The division may classify any species of reptile or amphibian as prohibited if take from the wild or introduction into the wild poses a significant detrimental impact to wildlife populations or their habitat and publish them in the guidebook of the Wildlife Board for amphibians and reptiles.
+
+(d) Any amphibian or reptile listed by the U.S. Fish and Wildlife Service as endangered or threatened pursuant to the federal Endangered Species Act shall have a zero daily and total possession limit, except:
+
+(i) the division may issue a wildlife document authorizing the collection, importation, possession, or propagation of a threatened or endangered species under the criteria set forth in this rule where the U.S Fish and Wildlife Service has issued a permit or otherwise authorized the particular activity; and
+
+(ii) A person may import, possess, transfer, or propagate captive-bred eastern indigo snakes (Drymarchon couperi) without a certificate of registration where the U.S. Fish and Wildlife Service has issued a permit or otherwise authorized the particular activity.
+
+(2) The division may consider the following factors in establishing recommended daily limits, total possession limits, collection permit numbers, and collection permit boundaries for controlled species to the Wildlife Board for approval:
+
+(a) prevalence and distribution of the species;
+
+(b) anticipated number of persons participating in the program;
+
+(c) harvest success rates;
+
+(d) population trends and related conservation data for the species;
+
+(e) human safety concerns posed by collection and possession of the species; and
+
+(f) other relevant social, biological, and political concerns.
+
+(3)(a) The division may establish a harvest objective for each species, which is the total number of specimens per species may be collected from the wild each year and close an area or region.
+
+(b) If an established harvest objective for a particular species is reached, collection in that area or region is closed for the remainder of the collection season and removing additional specimens of that species from the wild is prohibited.
+
+(c) The division will identify harvest objective species and numbers in the guidebook of the Wildlife Board for amphibians and reptiles and publish harvest objective criteria on their website.
+
+(d) Individuals collecting amphibians or reptiles having an established harvest objective are responsible for verifying that collection remains open.
+
+R657-53-10. Collection Permits and Certificates of Registration; Prohibited Collection Methods.
+
+(1)(a) Collection permits authorize continued possession of an individual animal after it has been reduced to possession and removed from the wild, subject to the limitations identified in this rule.
+
+(b) In lieu of a collection permit, a person must obtain a certificate of registration to collect, possess, import, or propagate certain venomous reptiles that are native to Utah, pursuant to R657-53-12.
+
+(2) A person may collect amphibians and reptiles having an Unlimited daily collection limit without acquiring a wildlife document from the division.
+
+(3)(a) A person may collect amphibians and reptiles having an Expanded daily collection limit after successfully completing the Reptile and Amphibian education course, so long as that person satisfies all the mandatory reporting requirements established in R657-53-19.
+
+(b) A collection permit is needed to collect amphibians or reptiles having an Expanded daily collection limit.
+
+(4)(a) A person may collect amphibians and reptiles having a Standard or Limited daily collection limit after:
+
+(i) successfully completing the Reptile and Amphibian education course; and
+
+(ii) acquiring a collection permit or certificate of registration from the division.
+
+(b) A person may not collect amphibians or reptiles having a Standard or Limited daily collection limit if they have failed to complete mandatory reporting required in R657-53-19 under their current collection permit.
+
+(5) A person may only collect amphibians and reptiles having a Zero daily collection limit after receiving a variance from the Wildlife Board.
+
+(6) Collection methods.
+
+(a) Amphibians and reptiles may not be collected using any method prohibited in this rule and the proclamations of the Wildlife Board except as provided by a variance or the Wildlife Board.
+
+(b) The following tools or methods may be utilized in collecting amphibians or reptiles pursuant to this rule:
+
+(i) dip nets less than 24 inches in diameter;
+
+(ii) snake sticks, including hooks, tongs, or grabbers;
+
+(iii) lizard nooses;
+
+(iv) use of a firearm considered a legal weapon under R657-5, so long as the individual has satisfied Hunter Safety requirements in the State of Utah; or
+
+(v) capture-by-hand.
+
+(c) Amphibians and reptiles may only be collected within boundaries established in the guidebook for amphibians and reptiles.
+
+(d) The destruction of habitats such as breaking apart of rocks, logs or other shelters in or under which amphibians or reptiles may be found is prohibited.
+
+(e) Any logs, rocks, or other objects turned over or moved must be replaced in their original position.
+
+R657-53-11. Acquiring a Wildlife Document.
+
+(1) A person may acquire a certificate of registration by:
+
+(a) possessing a valid certificate of completion for the Amphibian and Reptile education course;
+
+(b) submitting an application on the division's website;
+
+(c) paying the associated application fee;
+
+(d) providing required information for the type of certificate of registration applied for;
+
+(e) being approved by the division; and
+
+(f) paying the certificate of registration fee.
+
+(2)(a) A person may acquire a collection permit by:
+
+(i) possessing a valid certificate of completion for the Amphibian and Reptile education course;
+
+(ii) paying the associated application fee; and
+
+(iii) if applying for a collection permit distributed through a random drawing, submitting an application on the division's website during the designated application period and, if selected, paying the associated permit fee.
+
+(b) If the division receives more valid applications than the number of available collection permits, the division will conduct a random drawing to identify successful applicants.
+
+(3) Procedures regarding application errors, surrenders, refunds, reallocation of wildlife documents, and variance requests are processed pursuant to Utah Admin. Rules R657-42, R657-50, R657-57, and relevant sections of Utah Code.
+
+(4) Wildlife documents are not transferable.
+
+(5) If the holder of a wildlife document is a representative of an institution, organization, business, or agency, the wildlife document shall be considered void upon the representative's discontinuation of association with that entity.
+
+(6) Wildlife documents do not provide the holder with any rights of succession and any wildlife document issued to a business or organization shall be void upon the termination of the business or organization or upon bankruptcy or transfer.
+
+(7) The issuance of a wildlife document automatically incorporates within its terms the conditions and requirements of this rule specifically governing the activity for which the document is issued.
+
+(8) In order to acquire a wildlife document, a person must be eligible to possess the wildlife document and submit a complete application or purchase request.
+
+(9) An individual must register with the division as an amphibian or reptile propagator if they wish to breed reptiles or amphibians and maintain possession of those individuals beyond total possession limits that would otherwise apply.
+
+R657-53-12. Regulations Specific to Venomous Reptiles Native to Utah.
+
+(1) An individual must obtain a certificate of registration prior to collecting, possessing, importing, or propagating any reptile, whether wild caught or captive-bred, that is:
+
+(a) native to Utah;
+
+(b) venomous; and
+
+(c) a bite from which may cause substantial physical injury to humans ordinarily requiring medical treatment.
+
+(2) An individual must be at least 18 years of age to receive a certificate of registration pursuant to this section.
+
+(3) To apply for a certificate of registration, a person must submit the following materials to the division:
+
+(a) the species and number of individual animals requested;
+
+(b) the source from which they are to be acquired;
+
+(c) a description of the knowledge, skills, and experience the applicant has in handling venomous reptiles, and if any mentor will be utilized during the term of the certificate of registration;
+
+(d) the address where the animals will be housed and written verification from the local governmental entity that the activity requested is consistent with their ordinances;
+
+(e) a description of the facilities and equipment to be utilized in housing the animals;
+
+(f) all documentation required by the Utah Department of Agriculture and Food for lawful import, if necessary;
+
+(g) verification that appropriate medical treatment from a medical provider is available in proximity to the location where the animals will be housed; and
+
+(h) registration with the division for propagation activities, if requested.
+
+(4) The division may deny a certificate of registration application if:
+
+(a) the applicant fails to submit any of the required application materials in this section;
+
+(b) approval of which would violate local, state, or federal law;
+
+(c) there is a basis for denial described in R657-53-17; or
+
+(d) approval of which may continue to pose a substantial public safety concern.
+
+(5) All activities conducted under a certificate of registration authorization issued pursuant to this section are subject to the mandatory reporting requirements identified in R657-53-19.
+
+R657-53-13. Commercial Use Certificate of Registration.
+
+(1) An individual or entity wishing to utilize an amphibian or reptile in manner qualifying as commercial use must first acquire a commercial use certificate of registration from the division.
+
+(2) The division shall consider the following factors in reviewing an application for a commercial use certificate of registration:
+
+(a) the health, welfare, and safety of the public;
+
+(b) demonstrated knowledge and expertise in conducting the proposed wildlife-related activities;
+
+(c) the health, welfare, safety, and genetic integrity of wildlife and other animals;
+
+(d) ecological and environmental impacts of the proposed activity; and
+
+(e) the acquisition of other necessary permits or approvals.
+
+(3)(a) The division may review facility and operational guidelines to use in evaluating applications.
+
+(b) The division may condition approval of an application on compliance with additional requirements determined to be necessary components to protect human health and safety and the wildlife resource, such as minimum facility requirements, acquisition of liability insurance, modified total possession limits or daily limits, allowed methods of take, authorization of live release of amphibians and reptiles, mandatory reporting requirements, and other similar expectations.
+
+(c) Notwithstanding Subsection 3(b), a commercial use certificate of registration may not authorize possession of a species having a total possession limit of Zero without variance approval from the Wildlife Board, unless they are an entity meeting the requirements described in Subsection (4).
+
+(d) If the applicant requests the authorization to capture amphibians or reptiles from the wild, the division shall determine what species, locations, capture season dates, and total numbers that may be captured.
+
+(e) Unless otherwise stated on the certificate of registration, the holder of the certificate of registration may only utilize lawful methods of take identified in R657-53-10.
+
+(4) The division may issue a commercial use certificate of registration to a zoo, circus, amusement park, aviary, or film company to import and possess a live amphibian or reptile having a total possession limit of Expanded, Standard, Limited, or Zero, provided:
+
+(a) the applicant satisfies the application requirements in Subsection (2); and
+
+(b) the benefits to the wildlife resource or the general public outweigh any negative impacts to the wildlife resource or the general public.
+
+(5) It is unlawful to sell or trade any turtle, including tortoises, less than 4" in carapace length (See Federal Register 21 CFR 1240.62).
+
+(6)(a) Applications for a commercial use certificate of registration are available on the division's website.
+
+(b) The division will make a determination approving or denying an application within 30 days of receiving a complete application.
+
+(7) A commercial use certificate of registration is non-transferable and automatically terminates upon any of the following:
+
+(a) sale of the licensed commercial enterprise;
+
+(b) a change in the majority of interest holder in the commercial enterprise; or
+
+(c) closure of the commercial enterprise or discontinuation of the activities authorized under a certificate of registration.
+
+R657-53-14. Scientific Use Certificate of Registration.
+
+(1) An individual or enterprise wishing to utilize a reptile or amphibian in a manner qualifying as a scientific use must first acquire a scientific use certificate of registration from the division.
+
+(2) The division shall consider the following factors in analyzing an application for a scientific use certificate of registration:
+
+(a) the health, welfare, and safety of the public;
+
+(b) the health, welfare, safety, and genetic integrity of wildlife and other animals;
+
+(c) ecological and environmental impacts of the proposed activity;
+
+(d) the acquisition of other necessary permits or approvals;
+
+(e) the validity of the research objectives and design;
+
+(f) the likelihood the research will fulfill the stated objectives;
+
+(g) the applicant's qualifications to conduct the research, including the requisite education or experience;
+
+(h) the adequacy of the applicant's resources to conduct the study and, if applicable, catalogue or otherwise store specimens in a long-term repository; and
+
+(i) whether the scientific use is in the best interest of the amphibian or reptile, wildlife management, education, or the advancement of science without unnecessarily duplicating previously documented scientific research.
+
+(3)(a) The division may condition approval of an application on compliance with additional requirements determined to be necessary components to protect human health and safety and the wildlife resource, such as minimum facility requirements, acquisition of liability insurance, modified total possession limits or daily limits, allowed methods of take, authorization of live release of amphibians and reptiles, mandatory reporting requirements, and other similar expectations.
+
+(b) A scientific use certificate of registration may authorize possession of a species having a total possession limit of Zero without variance approval from the Wildlife Board.
+
+(c) If the applicant requests the authorization to capture amphibians or reptiles from the wild, the division shall determine what species, locations, capture season dates, and total numbers that may be captured.
+
+(d) Unless otherwise stated on the certificate of registration, the holder of the certificate of registration may only utilize lawful methods of take identified in R657-53-12.
+
+(4)(a) Applications for a scientific use certificate of registration are available on the division's website.
+
+(b) The division will make a determination approving or denying the application within 30 days of receiving a complete application.
+
+(5) The division may condition approval of a certificate of registration for scientific use on the applicant's agreement to provide an annual report to the division during the permit period, detailing the species and locality of specimens or tissues that were removed from the wild and the destination of any specimens submitted to a long-term collection or depository.
+
+(6) A scientific use certificate of registration is non-transferable and automatically terminates upon:
+
+(a) conclusion of the relevant research project for which the certificate of registration was issued; or
+
+(b) a change in the researcher named as the principal investigator.
+
+R657-53-15. Educational Use Certificate of Registration.
+
+(1) An individual or entity wishing to utilize an amphibian or reptile in a method qualifying as an educational use must first acquire an educational use certificate of registration from the division.
+
+(2) The division shall consider the following factors in analyzing an application for a educational use certificate of registration:
+
+(a) the health, welfare, and safety of the public;
+
+(b) demonstrated knowledge and expertise in conducting the proposed wildlife-related activities;
+
+(c) the health, welfare, safety, and genetic integrity of wildlife and other animals;
+
+(d) ecological and environmental impacts of the proposed activity; and
+
+(e) the acquisition of other necessary permits or approvals.
+
+(f) the objectives and structure of the educational program; and
+
+(g) whether the applicant has written approval from the appropriate official if the activity is conducted in a school or other educational facility.
+
+(3)(a) The division may establish facility and operational guidelines to use in reviewing Applications.
+
+(b) The division may condition approval of an application on compliance with additional requirements determined to be necessary components to protect human health and safety and the wildlife resource, such as minimum facility requirements, acquisition of liability insurance, modified total possession limits or daily limits, allowed methods of take, authorization of live release of amphibians and reptiles, mandatory reporting requirements, and other similar expectations.
+
+(c) Notwithstanding Subsection 2(b), an educational use certificate of registration may not authorize possession of a species having a total possession limit of Zero without variance approval from the Wildlife Board.
+
+(d) If the applicant requests the authorization to capture amphibians or reptiles from the wild, the division shall determine what species, locations, capture season dates, and total numbers that may be captured.
+
+(e) Unless otherwise stated on the certificate of registration, the holder of the certificate of registration may only utilize lawful methods of take identified in R657-53-10.
+
+(4)(a) Applications for educational use certificates of registration are available on the division's website.
+
+(b) The division will make a determination approving or denying the application within 30 days of receiving a complete application.
+
+(5) An educational use certificate of registration is non-transferable and automatically expires if the principal educator named on the certificate of registration is no longer providing the educational activity described on the certificate of registration.
+
+R657-53-16. Reptile and Amphibian Education Course.
+
+(1) A person must complete an amphibian and reptile education course before:
+
+(a) importing, collecting, or possessing a species having a total possession limit of Expanded;
+
+(b) applying for or acquiring a collection permit; or
+
+(c) applying for a certificate of registration; or
+
+(d) engaging in any activity requiring a wildlife document.
+
+(2) The Reptile and Amphibian Education Course may be comprised of educational materials on biology and conservation of reptiles and amphibians, laws and rules pertaining to reptiles and amphibians, field work etiquette and safety, and a written exam.
+
+(3) A person must complete the entire course and obtain at least a 75% passing score on the exam in order to receive a certification of completion.
+
+(4) A certification of completion is valid for three calendar years.
+
+R657-53-17. Denials and Appeals.
+
+(1) The division may deny issuing or reissuing a wildlife document to any applicant, if:
+
+(a) the applicant has violated any provision of:
+
+(i) Title 23A, Utah Wildlife Resources Code;
+
+(ii) Administrative Code R657;
+
+(iii) any term in a wildlife document pertaining to activities described in this rule;
+
+(iv) an order of the Wildlife Board; or
+
+(v) any other law that, when considered with the functions and responsibilities of collecting, importing, possessing or propagating an amphibian or reptile, bears a reasonable relationship to the applicant's ability to safely and responsibly carry out such activities;
+
+(b) the applicant has failed to submit mandatory reporting information required by this rule, the division, or the Wildlife Board; or
+
+(c) the applicant misrepresented or failed to disclose material information required in connection with the application; or
+
+(d) where the conduct authorized by the wildlife document violates federal, state or local laws.
+
+(2) If the division denies an application, they shall provide the applicant with written notice of the reasons for denial.
+
+(3) If the division denies an application, the applicant may request that the Director reconsider the division's decision by providing written notice to the Director within 30 days of denial.
+
+(4) If the Director denies a request for reconsideration, the applicant may submit an appeal to the Wildlife Board consistent with R657-2.
+
+R657-53-18. Request for Variance.
+
+(1) A person may make a request for a variance to this rule for the collection, importation, propagation, or possession of an amphibian or reptile by submitting the request to the Chairman of the Wildlife Board.
+
+(2)(a) A request for variance shall include the following:
+
+(i) the name, address, and phone number of the person making the request;
+
+(ii) the species or subspecies of the amphibian or reptile and associated activities for which the request is made; and
+
+(iii) a statement of the facts and reasons forming the basis for the variance.
+
+(b) In addition to the information required under Subsection (a), the person making the request must provide any information requested by the committee necessary to formulate a recommendation to the Wildlife Board.
+
+(3) At the next available Wildlife Board meeting the Wildlife Board shall:
+
+(a) consider the division's recommendation; and
+
+(b) any information provided by the person making the request.
+
+(4) The Wildlife Board evaluate the application materials and based upon the criteria established in this rule for that particular type of certificate of registration.
+
+(5)(a) If the request is approved, the Wildlife Board may impose any restrictions on the person making the request considered necessary for that person to maintain the standards upon which the variance is made.
+
+(b) Any restrictions imposed on the person making the request shall be included in writing on the wildlife document which shall be signed by the person making the request.
+
+(6) A request for variance shall be considered a request for agency action as provided in Subsection 63G-4-201(3) and Rule R657-2.
+
+R657-53-19. Data Collection and Mandatory Reporting.
+
+(1) A person must complete mandatory reporting within 72 hours of obtaining possession of the specimen if:
+
+(a) the individual is collected from the wild and belongs to a species having a daily collection limit of Standard or Limited;
+
+(b) the individual is salvaging a species having a daily collection limit of Standard, Limited, or Zero;
+
+(c) the individual is transferring a wild caught species native to the State of Utah to another individual; or
+
+(d) the individual is a registered propagator and a breeding event results in amphibian or reptile possession beyond the total possession limit for the relevant species.
+
+(2) Mandatory reporting must be completed using a division-approved reporting platform, and shall include:
+
+(a) UTM or latitude/longitude coordinates of the location of the collection point;
+
+(b) number of individuals or specimens obtained;
+
+(c) morphological measurements and descriptions; and
+
+(d) photographic documentation.
+
+(3) A person who fails to complete mandatory reporting as required in this rule may be:
+
+(a) considered in unlawful possession of animals that went unreported; and
+
+(b) deemed ineligible to obtain wildlife documents until such reporting is completed.
+
+(4) Mandatory reporting for commercial use, scientific use, and educational use certificates of registration will be established as part of the certificate of registration approval process.
+
+(5) The division will offer an online method for completing mandatory reporting.
+
+R657-53-20. Animal Welfare.
+
+(1) Any amphibian or reptile possessed under the authority of a certificate of completion or wildlife document shall be maintained under humane and healthy conditions, including humane handling, care, confinement, transportation, and feeding of the amphibian or reptile.
+
+(2) Adequate measures must be taken for the protection of the public when handling, confining, or transporting any amphibian or reptile.
+
+(3) The division may impose specific requirements on the holder of a wildlife document, consistent with industry standards or generally accepted animal husbandry practices, deemed necessary for the safe and humane handling and care of the animal involved, including requirements for veterinary care, cage or holding pen sizes and standards, feeding requirements, social grouping requirements, and other requirements considered necessary by the division for the health and welfare of the animal or the public.
+
+R657-53-21. Record Retention; Inspection of Documentation.
+
+(1) An individual is required to maintain all records verifying compliance with this rule while in possession of an amphibian or reptile or otherwise engaging in an activity regulated under this rule.
+
+(2) A conservation officer or any other peace officer may require any person engaged in activities covered by this rule to exhibit any documentation related to activities covered by this rule, including certificates of registration, permits, certificates of veterinary inspection, bills of sale, or proof of ownership or legal possession.
+
+R657-53-22. Retroactive Effect on Possession.
+
+(1) A person lawfully possessing an amphibian or reptile prior to the effective date of any reduction in total possession limit may continue to lawfully possess those individual specimens, even if it exceeds the newly established total possession limit.
+
+(2) An individual utilizing the authorization described in Subsection (1) may not acquire specimens after the change total possession limits in that would exceed the newly established possession limit.
+
+R657-53-23. Violations; Suspension and Revocation.
+
+(1) Any violation of this rule is a class C misdemeanor, as provided in Section 23A-5-301.
+
+(2) Nothing in this rule shall be construed to supersede any provision of Title 23A, Wildlife Resources Code of Utah which establishes a penalty greater than a class C misdemeanor. Any provision of this rule which overlaps a provision of that title is intended only as a clarification or to provide greater specificity needed for the administration of the provisions of this rule.
+
+(3) A wildlife document issued pursuant to this rule may be suspended or revoked consistent with Section 23A-4-1106.
+
+Download administrative rule R657-53-->
+
+On this page
+
+Back to top
+
+Close
+
+Search again
+
+Search now

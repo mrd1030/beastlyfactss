@@ -1,0 +1,236 @@
+SOURCE: Utah Admin. Code R657-3a, Collection, Importation, Transportation and Possession of Animals
+URL: https://wildlife.utah.gov/rules/r657-03a
+FETCHED: 2026-09-05 (The umbrella rule that replaced R657-3, which no longer exists. Site chrome stripped.)
+
+R657-3a-1. Purpose and Authority.
+
+(1) Under Title 23A, the Wildlife Resources Code of Utah and in accordance with a memorandum of understanding between the division, the Utah Department of Agriculture and Food, and the Utah Department of Health and Human Services, this rule governs the collection, importation, transportation and possession of animals and animal parts.
+
+(2) Nothing in this rule shall be construed as superseding the provisions set forth in Title 23A, the Wildlife Resources Code of Utah. Any provision of this rule setting forth a criminal violation that overlaps a section of that title is provided in this rule only as a clarification or to provide greater specificity needed for the administration of this rule.
+
+(3) In addition to this rule, the Wildlife Board may allow for collection, importation, transportation, propagation and possession of animal species under specific circumstances as provided elsewhere in Title R657. Where a more specific provision has been adopted, that provision shall control.
+
+(4) This rule does not apply to division employees acting within the scope of their assigned duties.
+
+(5) The English and scientific names used throughout this rule for animals are, at the time of publication, the most widely accepted names. The English and scientific names of animals change, and the names used in this rule are to be considered synonymous with names in earlier use and with names that, at any time after publication of this rule, may supersede those used in this rule.
+
+(6) Nothing in this rule or in the issuance of a certificate of registration shall be construed as creating a property right and certificates of registration are subject to change.
+
+(7) Nothing in this rule is intended to authorize an activity that is otherwise prohibited by federal law, rules of the Utah Department of Agriculture and Food, or properly enacted restrictions imposed by local government entities.
+
+(8) The division, in consultation with the Utah Department of Agriculture and Food and the Utah Department of Health and Human Services, will be responsible for:
+
+(a) reviewing:
+
+(i) petitions to reclassify species and subspecies of animals; and
+
+(ii) requests for variances to this rule; and
+
+(b) making recommendations to the Wildlife Board.
+
+(9) The division shall require a fee for the submission of a request provided in Sections R657-3a-8 and R657-3a-9.
+
+(10) Certificates of registration issued by the division before the effective date of this rule are valid. Specific terms contained in each certificate of registration issued before the effective date of this rule remain in effect and are not impacted by any inconsistency created by this rule.
+
+R657-3a-2. Definitions.
+
+(1) Terms used for purposes of this rule are defined in Section 23A-1-101 and Subsection (2) through Subsection (24).
+
+(2)(a) "Animal" means:
+
+(i) native, naturalized, and nonnative animals belonging to a species that naturally occurs in the wild, including animals captured from the wild or born or raised in captivity;
+
+(ii) hybrids of any native, naturalized, or nonnative species or subspecies of animal, including hybrids between wild and domestic species or subspecies; and
+
+(iii) viable embryos or gametes (eggs or sperm) of any native, naturalized or nonnative species or subspecies of animals.
+
+(b) For purposes of this rule, "Animal" does not include species or subspecies from the Class of Amphibia or Reptilia, which are guided by Rule R657-53.
+
+(3) "Captive-bred" means any privately owned animal, which is born inside of and has spent its entire life in captivity, and is the offspring of privately owned animals that are born inside of and have spent their entire life in captivity.
+
+(4) "Certificate of registration" means, for the purposes of this rule, an official document issued by the division authorizing the collection, importation, transportation and possession of an animal or animals.
+
+(5) "Certificate of veterinary inspection" means an official health authorization issued by an accredited veterinarian required for the importation of animals, as provided in Rule R58-1.
+
+(6) "CFR" means the Code of Federal Regulations.
+
+(7) "Collect" means to take, catch, capture, salvage, or kill any animal within Utah.
+
+(8) "Commercial use" means any activity through which a person in possession of an animal:
+
+(a) receives any consideration for that animal or for a use of that animal; or
+
+(b) expects to recover all or any part of the cost of keeping the animal through selling, bartering, trading, exchanging, breeding or other use, including displaying the animal for entertainment, advertisement or business promotion.
+
+(9) "Controlled species" means a species or subspecies of animal that if taken from the wild, introduced into the wild, or held in captivity, threatens to pose a significant detrimental impact to wild populations, the environment, or human health or safety, and for which a certificate of registration is required.
+
+(10) "Domestic" means an animal notably different from its wild ancestors because of selective breeding and taming in captivity by humans for food, commodities, transportation, assistance, work, protection, companionship, display and other beneficial purposes.
+
+(11) "Educational use" means the possession and use of an animal for conducting educational activities.
+
+(12) "Entry permit number" means a number issued by the state veterinarian's office to a veterinarian signing a certificate of veterinary inspection.
+
+(13) "Import" means to bring or cause an animal to be brought into Utah by any means.
+
+(14) "Native species" means any species or subspecies of animal that historically occurred in Utah and has not been introduced by humans or migrated into Utah because of human activity.
+
+(15) "Naturalized species" means any species or subspecies of animal that is not native to Utah but has established a wild, self-sustaining population in Utah.
+
+(16) "Noncontrolled species" means a species or subspecies of animal that, if taken from the wild, introduced into the wild, or held in captivity, likely poses minimal or no detrimental impact to wild populations, the environment, or human health or safety, and for which a certificate of registration is not required, unless otherwise specified.
+
+(17) "Nonnative species" means a species or subspecies of animal that is not native to Utah.
+
+(18) "Personal use" means the possession and use of an animal where no consideration for the possession or use of the animal is received by selling, bartering, trading, exchanging, breeding, hunting or any other use.
+
+(19) "Possession" means to physically keep or to exercise dominion or control over a live or dead animal, or animal parts.
+
+(20)(a) "Prohibited species" means a species or subspecies of animal that, if taken from the wild, introduced into the wild or held in captivity, poses a significant detrimental impact to wild populations, the environment, or human health or safety, and for which a certificate of registration shall only be issued under special circumstances as approved by the division.
+
+(b) "Prohibited species" also means a species or subspecies that has not gone through the division's species classification process.
+
+(21) "Scientific use" means the possession and use of an animal for conducting scientific research that is directly or indirectly beneficial to wildlife or the general public.
+
+(22) "Transport" means to move or cause to move any animal within Utah by any means.
+
+(23) "Wildlife Registration Office" means the division office in Salt Lake City responsible for processing applications and issuing certificates of registration.
+
+R657-3a-3. Collection of Animals and Animal Parts.
+
+(1) An individual may collect a dead animal or animal parts listed as controlled or prohibited for personal, commercial, or scientific use as follows:
+
+(a) A certificate of registration may be issued for personal use, except as otherwise provided in Title R657 and the Wildlife Board's guidebooks.
+
+(b) A certificate of registration may be issued for commercial use.
+
+(c) A certificate of registration may be issued for scientific and educational uses if:
+
+(i) the applicant is a university, college, governmental agency, bona fide nonprofit institution, or person involved in wildlife research; and
+
+(ii) in the opinion of the division, the scientific or educational use is beneficial to wildlife or significantly benefits the general public without material detriment to wildlife.
+
+R657-3a-4. Importation of Animals and Animal Parts.
+
+(1) As provided in Rule R58-1, the Utah Department of Agriculture and Food requires a valid certificate of veterinary inspection and an entry permit number before any live animal may be imported into Utah.
+
+(2) A certificate of registration number may be issued to obtain an entry permit number and the entry permit number must in turn be provided to the division before final approval and issuance of the certificate of registration.
+
+(3) A person may import an animal classified as controlled for personal, commercial and scientific and educational uses only after obtaining a certificate of registration from the division.
+
+R657-3a-5. Transportation of Animals and Animal Parts.
+
+(1) A person may transport an animal classified as controlled for personal, commercial and scientific and educational uses only after obtaining a certificate of registration from the division.
+
+(2) Any controlled or prohibited animal species may be transported through Utah without a certificate of registration if:
+
+(a) the animal remains in Utah no more than 72 hours;
+
+(b) the animal is not sold, transferred, exhibited, displayed or used for a commercial use while in Utah; and
+
+(c) the animal is a raptor used for falconry purposes in compliance with the requirements in Rule R657-20.
+
+(3) A certificate of veterinary inspection is required from the state of origin as provided in Rule R58-1 and proof of legal possession must accompany the animal.
+
+(4) If delays in transportation arise, an extension of the 72 hours may be requested by contacting the Wildlife Registration Office in Salt Lake City.
+
+(5) None of the provisions in this section will be construed to supersede Sections R657-20-14 and R657-20-30.
+
+(6) A person shipping live animals directly to a state other than Utah or to a federally regulated establishment for immediate euthanasia and processing is not required to obtain a certificate of registration or certificate of veterinary inspection, provided the animal is accompanied by a waybill or other proof of legal ownership describing the animals, their source, and indicating the destination.
+
+R657-3a-6. Possession of Animals and Animal Parts.
+
+(1) An individual shall obtain a certificate of registration before possession of a live animal classified as controlled.
+
+(2) A certificate of registration is not required for possessing a live animal classified as noncontrolled.
+
+(3) Any animal or animal parts in a person's possession must originate from a legal source.
+
+(4)(a) A person who lawfully possesses an animal classified as controlled or prohibited may transfer possession of that animal to another person only after that person first applies for and obtains a certificate of registration from the division for that animal.
+
+(b) The division may issue a certificate of registration granting the transfer and possession of a controlled or prohibited animal only if the applicant meets the application criteria provided in Section R657-3-6.
+
+(5) A certificate of registration is not required to possess a live animal if the applicant is registered and in good standing with the Association of Zoos and Aquariums.
+
+R657-3a-7. Propagation of Animals.
+
+(1) A person may propagate animal species not classified as controlled or prohibited without obtaining a certificate of registration from the division.
+
+(2) A person may propagate animal species classified as controlled for personal, commercial, and scientific and educational uses only after obtaining a certificate of registration from the division.
+
+(3) The division may provide any federal and additional requirements for propagating specific species on a certificate of registration.
+
+(4) No person in possession of a certificate of registration for propagation may propagate a captive-bred animal with any wild animal.
+
+(5) Propagation may not be used to exceed the number allowed under a certificate of registration for possession.
+
+R657-3a-8. Request for Species Reclassification.
+
+(1) A person may request to change the species or subspecies classification of an animal provided under this rule.
+
+(2) A request for species or subspecies reclassification must be made to the division by applying for reclassification.
+
+(3) The reclassification application shall include:
+
+(a) the petitioner's name, address and phone number;
+
+(b) the requested species or subspecies reclassification;
+
+(c) the name of all interested parties known by the petitioner;
+
+(d) the current classification of the species or subspecies;
+
+(e) a statement of the facts and reasons forming the basis for the reclassification; and
+
+(f) copies of scientific literature or other evidence supporting the change in classification.
+
+(4)(a) The division shall consider the request for reclassification and shall approve or deny the request for reclassification based on the issuance and renewal criteria provided in Sections R657-3b-6 and R657-3c-8.
+
+(b) The division shall send a copy of its approval or denial to the applicant and other interested parties specified on the application.
+(5) A change in species classification shall be made in accordance with Title 63g, Chapter 3, Utah Administrative Rulemaking Act.
+
+R657-3a-9. Request for Variance.
+
+(1) A person may request a variance to this rule for the collection, importation, propagation, or possession of an animal classified as prohibited under this rule by submitting a variance request to the division.
+
+(2) A variance request shall include the following:
+
+(a) the name, address, and phone number of the person making the request;
+
+(b) the species or subspecies of animal and associated activities for which the request is made; and
+
+(c) a statement of the facts and reasons forming the basis for the variance.
+
+(3)(a) The division shall consider the request and shall approve or deny the request based on the issuance and renewal criteria provided in Sections R657-3b-6 and R657-3c-8.
+
+(b) If the request applies to a broad class of persons and not to the unique circumstances of the applicant, the division shall consider changing the species classification before issuing a variance to this rule.
+
+(4)(a) If the request is approved, the division may impose any restrictions on the person making the request considered necessary for that person to maintain the standards upon which the variance is made.
+
+(b) Any restrictions imposed on the person making the request shall be included in writing on the certificate of registration which shall be signed by the person making the request before its issuance.
+
+R657-3a-10. Violations and Suspensions.
+
+(1) Any violation of this rule shall be punishable under Sections 23A-5-301 and 23A-5-305.
+
+(2) A certificate of registration may be suspended as provided in this rule, Section 23A-4-1106, and Rule R657-26.
+
+(3) Failure to submit the appropriate records and reports as required under this rule may result in suspension of a certificate of registration.
+
+(4) Nothing in this rule shall be construed to supersede Title 23A, the Wildlife Resources Code, which establishes a penalty greater than an infraction. Any provision of this rule which overlaps Title 23A is intended only as a clarification or to provide greater specificity needed for the administration of this rule.
+
+R657-3a-11. Administrative Appeals.
+
+(1) A person may appeal the division's denial of a certificate of registration, request for species classification and request for a variance by submitting a request for agency action consistent with Rule R657-2.
+
+(2) The request must be made within 30 days after the date of the denial.
+
+Download administrative rule R657-3a-->
+
+On this page
+
+Back to top
+
+Close
+
+Search again
+
+Search now

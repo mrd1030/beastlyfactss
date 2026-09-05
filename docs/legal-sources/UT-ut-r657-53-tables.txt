@@ -1,0 +1,243 @@
+SOURCE: Utah DWR Species Tables for Utah's Reptiles and Amphibians, under R657-53
+URL: https://wildlife.utah.gov/reptiles-amphibians/tables
+FETCHED: 2026-09-05 (The division's classification tables. Every table is about animals taken from the wild in Utah. Site chrome stripped.)
+
+Species tables for Utah's reptiles and amphibians
+Learn more about possession limits, prohibited species and mandatory reporting
+Utah has the following classifications for the collection and possession of wild reptiles and amphibians:
+Prohibited
+ — Prohibited species cannot be collected or possessed in any number without a variance (exception) obtained from the 
+Utah Wildlife Board
+.
+Non-controlled
+ — Most non-controlled species can be collected and possessed in any number, and no permit is required. (
+Important:
+ There are four native non-controlled lizard species that 
+do require a permit for collection
+ and that have bag/possession limits. See below for details.)
+Controlled
+ — Controlled species may be legally taken from the wild, up to the legal bag and possession limits, but a collection permit or certificate of registration is required.
+Important:
+ Once you remove any reptile or amphibian species from the wild — whether it's non-native or native — it may 
+not be released
+ back into the wild.
+Prohibited species (possession limit is zero)
+There are several species of reptiles and amphibians that have declining or threatened populations. The following species are classified as prohibited for any take or harvest, which means you may not collect them from the wild and keep them unless you have special approval (called a variance) from the Utah Wildlife Board:
+Collection and possession is prohibited
+Table showing reptile and amphibian species that are prohibited from being collected or possessed
+Common name
+Scientific name
+Columbia spotted frog
+Rana luteiventris
+Relict leopard frog
+Lithobates onca
+Western or boreal toad
+Anaxyrus boreas
+Arizona toad
+Anaxyrus microscaphus
+Gila monster
+Heloderma suspectum
+Mojave (or Mohave) desert tortoise
+Gopherus agassizii
+Sometimes, the DWR receives desert tortoises that other people have illegally removed from the wild, and members of the public are allowed to adopt them. 
+Learn more about this program.
+Non-controlled non-native species (possession is unlimited)
+There are several species that are not native to the state of Utah and are classified as non-controlled. Because these species are often problematic for Utah's native wildlife, they may be collected or possessed in any number without a permit. The DWR does not maintain a full list of non-native species; however, the following species are known to occur in Utah and are non-native:
+Unlimited collection, possession and harvest — no permit required
+Table showing reptile and amphibian species that are allowed unlimited collection, possession and harvest, with no permit required (unlimited collection)
+Common name
+Scientific name
+Bullfrog
+Lithobates catesbiana
+Green frog
+Lithobates clamitans
+Baja California treefrog
+Pseudacris hypochondriaca
+Pacific treefrog
+P. regilla
+Red-eared slider or pond slider
+Trachemys scripta
+Common snapping turtle
+Chelydra serpentina
+Although it is not required, you can help the DWR document the distribution of non-native reptiles and amphibians by photographing and reporting observations with the 
+iNaturalist app
+.
+Non-controlled native species — collection and possession
+Some abundant native species also fall into the non-controlled classification, but you must have a collection permit to remove them from the wild. After you 
+complete the orientation course
+ and 
+obtain your collection permit
+, you will be allowed to take — or harvest — the following legal bag and possession limits of the lizard species listed below:
+Expanded possession (25 daily/100 total, per species)
+Table showing reptile and amphibian species that are allowed to be possessed at 25 daily or 100 total, per species (expanded possession)
+Common name
+Scientific name
+Sagebrush lizard
+Sceloporus graciosus
+Side-blotched lizard
+Uta stansburiana
+Plateau fence lizard
+Sceloporus tristichus
+Western fence lizard
+Sceloporus occidentalis
+Although reporting is not mandatory for non-controlled species that fall into the Expanded possession category, we strongly encourage you to complete a 
+voluntary online report
+ if you take any of these four lizards home with you.
+Controlled species — collection and possession
+Utah has many controlled reptile and amphibian species that you can collect and remove from the wild as long as you meet certain requirements. After you 
+complete the orientation course
+ and 
+obtain your collection permit
+, you will be allowed to take — or harvest — the following legal bag and possession limits of the species listed below:
+Standard
+ — 3 daily and 9 in total possession, per species
+Limited
+ — 2 daily (and yearly) and 4 in total possession, per species
+Standard possession (3 daily/9 total, per species)
+Table showing reptile and amphibian species that are allowed to be possessed at 3 daily or 9 total, per species (standard possession)
+Common name
+Scientific name
+Boreal chorus frog
+Pseudacris maculata
+Canyon treefrog
+Hyla arenicolor
+Great Basin spadefoot
+Spea intermontana
+Great Plains toad
+Anaxyrus cognatus
+Mexican spadefoot
+Spea multiplicata
+Northern leopard frog
+Lithobates pipiens
+Plains spadefoot
+Spea bombifrons
+Red-spotted toad
+Anaxyrus punctatus
+Tiger salamander
+Ambystoma mavortium
+Woodhouse's toad
+Anaxyrus woodhousii
+Coachwhip
+Coluber flagellum
+Common gartersnake
+Thamnophis sirtalis
+Desert horned lizard
+Phrynosoma platyrhinos
+Desert night lizard
+Xantusia vigilis
+Desert nightsnake
+Hypsiglena chlorophaea
+Desert spiny lizard
+Sceloporus magister
+Eastern collared lizard
+Crotaphytus collaris
+North American racer
+Coluber constrictor
+Glossy snake
+Arizona elegans
+Gopher snake
+Pituophis catenifer
+Great Basin collared lizard
+Crotaphytus bicintores
+Greater short-horned lizard
+Phrynosoma hernandesi
+Long-nosed leopard lizard
+Gambelia wislizenii
+Long-nosed snake
+Rhinocheilus lecontei
+Many-lined skink
+Plestiodon multivirgatus
+Northern rubber boa
+Charina bottae
+Ornate tree lizard
+Urosaurus ornatus
+Plateau striped whiptail
+Aspidoscelis velox
+Ring-necked snake
+Diadophis punctatus
+Smith's black-headed snake
+Tantilla hobartsmithi
+Smooth green snake
+Opheodrys vernalis
+Striped whipsnake
+Coluber taeniatus
+Terrestrial gartersnake
+Thamnophis elegans
+Tiger whiptail
+Aspidoscelis tigris
+Western groundsnake
+Sonora semiannulata
+Western skink
+Plestiodon skiltonianus
+Limited possession (2 daily and yearly/4 total, per species)
+Table showing reptile and amphibian species that are allowed to be possessed at 2 daily/yearly or 4 total, per species (limited possession)
+Common name
+Scientific name
+Arizona mountain kingsnake
+Lampropeltis pyromelana
+Black-necked gartersnake
+Thamnophis cyrtopsis
+California kingsnake
+Lampropeltis californiae
+Common chuckwalla
+Sauromalus ater
+Common lesser earless lizard
+Holbrookia maculata
+Desert iguana
+Dipsosaurus dorsalis
+Great Plains ratsnake
+Pantherophis emoryi
+Long-tailed brush lizard
+Urosaurus graciosus
+Sonoran lyre snake
+Trimorphodon lambda
+Spotted leaf-nosed snake
+Phyllorhynchus decurtatus
+Western banded gecko
+Coleonyx variegatus
+Western milk snake
+Lampropeltis gentilis
+Western patch-nosed snake
+Salvadora hexalepis
+Western threadsnake
+Rena humilis
+Zebra-tailed lizard
+Callisaurus draconoides
+Mandatory reporting
+If you capture and take home any of the controlled reptiles or amphibians listed above, you will also need to complete the 
+mandatory online-reporting requirement
+. You must submit a report within 72 hours of taking a reptile or amphibian out of the wild. 
+Learn more about this requirement.
+Collecting and possessing rattlesnakes
+The online course and collection permit 
+do not
+ authorize you to legally collect, possess or harvest rattlesnakes. In order to remove a rattlesnake from the wild in Utah and keep it, you must have special permission from the DWR in the form of a 
+Certificate of Registration (COR)
+.
+The COR document will indicate which species you are authorized to collect and what you are allowed to do with them. The rattlesnake species listed below all require a COR:
+Table showing snake species whose possession requires a certificate of registration
+Common name
+Scientific name
+Western rattlesnake
+Crotalus oreganus
+Prairie rattlesnake
+Crotalus viridis
+Mojave (or Mohave) rattlesnake
+Crotalus scutulatus
+Sidewinder
+Crotalus cerastes
+Southwestern speckled rattlesnake
+Crotalus pyrrhus
+To learn more about obtaining a COR to collect, possess or harvest rattlesnakes, 
+see the rule for amphibian and reptile collection, importation, transportation, and possession
+ or call Anita Candelaria at 
+801-538-4701
+.
+Possessing non-native venomous species
+Non-native venomous species are prohibited. You may not possess them without first obtaining special permission (called a variance) from the 
+Utah Wildlife Board
+. If you have questions about this process, 
+see Admin. Rule R657-53-18
+ or 
+contact your local DWR office
+.

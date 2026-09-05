@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 22 (AZ, CO, CT, DE, FL, GA, HI, IL, MA, MD, MI, MN, NE, NJ, NM, NV, NY, NYC, OR, PA, TN, TX) |
-| Unread cells | 314 |
-| Cached primary sources | 51 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 23 (AZ, CO, CT, DE, FL, GA, HI, IL, MA, MD, MI, MN, NE, NJ, NM, NV, NY, NYC, OR, PA, TN, TX, UT) |
+| Unread cells | 287 |
+| Cached primary sources | 57 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
 Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts, Nebraska, Florida, New York,
-Georgia, New York City and New Jersey sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
+Georgia, New York City, New Jersey and Utah sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
 fresh branch from main once it lands.
 
 ## The loop
@@ -141,12 +141,32 @@ and the kingsnake is not even left to the catch-all because 4.3(a)3.iv names *La
 outright. In a closed-list state, an absence from the prohibited list is not a finding. Find the
 animal on the permitted list or accept that it needs a permit.
 
+**A cap read without the section that scopes it.** Utah's reptile tables put the western milk snake
+and the California kingsnake in "Limited possession", two a day and four in total, and the common
+gartersnake in "Standard", three and nine. Those phrases read like possession law, and the milk snake
+entry here said so in as many words: the wording "suggests the cap is not purely about wild
+collection". It is. R657-53-8(1) opens by saying total possession limits apply to everything acquired
+in state or imported, and then excepts animals that are captive bred and animals "legally obtained
+outside of Utah". A purchased milk snake is outside the cap entirely. The lesson generalises past
+Utah: a number in a species table is only as wide as the section that says what it applies to, and
+that section is usually somewhere else in the rule.
+
 **A rule with nothing behind it.** Minnesota's 2021 pet reptile law says the commissioner
 "must prescribe conditions and may issue permits" and then makes lawful possession turn on the
 animal having come from a permitted breeder. There is no such permit on the DNR's permits page,
 no rule chapter implements it, and the DNR's own pet-trade page never mentions it. A source
 condition with no visible machinery is still the law, but it is not the same finding as a
 working permit scheme, and the note has to say which one it is.
+
+**A rule that got split.** Utah's R657-3 does not exist any more. It was broken into R657-3a, the
+umbrella rule with the definitions and the possession sections, R657-3b for birds and mammals, and
+R657-3c for aquatic animals, with amphibians and reptiles carved out to R657-53 entirely. Four
+entries on this map cited "R657-3" and one source record was titled "R657-3 / R657-3b", which is the
+tell: a citation that hedges between two rule numbers is usually a rule that moved. Nothing was
+wrong on the substance, because the successors say the same things, but the citations pointed at
+nothing. This is the same shape as the Nebraska and Illinois problems below and wants the same
+check: before quoting a rule number that has been on the map a while, confirm the agency still
+publishes it.
 
 **A title that got renumbered.** Nebraska moved its Game and Parks wildlife regulations from Title
 163 to Title 166 and gave captive wildlife its own chapter, and Title 163 is now called
@@ -171,12 +191,17 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| UT | Utah | 27 | 5 sources on file |
 | AL | Alabama | 20 | 3 sources on file |
 | IN | Indiana | 20 | 1 source on file |
 | OK | Oklahoma | 20 | 1 source on file |
 | AR | Arkansas | 12 | 1 source on file |
 | ME | Maine | 12 | 1 source on file |
+| MO | Missouri | 11 | 2 sources on file |
+
+After those, 22 jurisdictions sit at 8 to 10 cells each and two are nearly done, Vermont at 3
+and California at 1. Those short ones are almost entirely the eight encyclopedia animals added
+late to the matrix, so they go much faster than a cold state: the sources are already cached and
+the same eight questions get asked of one rule.
 
 ## Loose ends
 
@@ -186,6 +211,25 @@ state that codifies by version. And confirm the citation itself still resolves.
   sits in Dactyloidae. On drafting-era taxonomy the green anole is prohibited; on current taxonomy
   it is not. The Code never dates its family names, and it uses them loosely elsewhere, printing
   "teiidae" in lower case and calling hedgehogs Insectivora. Recorded unclear rather than guessed.
+- **Utah has no unclear cells, and the reason is worth stealing.** It is the first state on this map
+  to answer the invertebrates at the level of the statute rather than by silence. Utah Code
+  23A-1-101(65) defines wildlife as crustaceans, molluscs, and "vertebrate animals living in nature",
+  which puts a tarantula, a scorpion, a millipede and a cockroach outside the Division of Wildlife
+  Resources entirely, and its Department of Agriculture rules at R68 are commodity quarantines for
+  named pests rather than a Florida-style arthropod permit. Where a state's wildlife definition is a
+  closed list of taxa, the invertebrate question has an answer; where it ends in an open phrase such
+  as "or other wild animal", as in New Jersey and New Mexico, it does not. That is the check to run
+  first next time.
+- **Utah has one reading that could go the other way, and it is structural rather than about a
+  species.** R657-53-7(8) says a species the division has never classified "shall be classified as a
+  Controlled species", and a controlled species is defined as one for which a certificate of
+  registration or collection permit is required before possession. Read alone, that would put a
+  captive-bred bearded dragon behind a permit. It does not, because R657-53-8(1)(a) and (c) lift
+  captive-bred and out-of-state animals out of the limits, R657-53-12 is the only certificate of
+  registration in the rule that attaches to possession and it covers native venomous reptiles, and
+  every DWR page built around the rule is written for someone going out to catch something. Twenty
+  Utah reptile cells rest on that reading. If anyone gets a straight answer from the division's
+  herpetology contact, this is the thing to ask about.
 - **New Jersey has seven unclear cells and four of them are one question.** The tarantula, the
   emperor scorpion, the giant millipede and the hissing cockroach all turn on whether subchapter 4
   reaches invertebrates, and the two readings are both textual. 7:25-4.5 requires a permit for "any
@@ -329,15 +373,15 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Sixteen animals are now at 51 of 51: hamster, gerbil, guinea pig, chinchilla, degu, ferret,
-cockatoo, hedgehog, sugar glider, garter snake, kingsnake, Bengal cat, fennec fox, serval, prairie
-dog and capybara. Eleven more are one short at 50: ball python, boa constrictor, Burmese python,
-green iguana, tokay gecko, veiled chameleon, Russian tortoise, quaker parakeet, savannah monitor,
-Nile monitor and Argentine tegu. Twenty-seven animals at or near full coverage.
+Twenty-six animals are now at 51 of 51, which is half the matrix: hamster, gerbil, guinea pig,
+chinchilla, degu, ferret, cockatoo, hedgehog, sugar glider, garter snake, kingsnake, Bengal cat,
+fennec fox, serval, prairie dog, capybara, ball python, boa constrictor, Burmese python, green
+iguana, tokay gecko, veiled chameleon, Russian tortoise, savannah monitor, Nile monitor and
+Argentine tegu. Two more are one short at 50, the ackie monitor and the quaker parakeet.
 
 The eight encyclopedia animals added recently (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
-at 22 to 23 states each and are **not** ready for guides. `check-legal-map-sync.mjs` fails a
+at 23 to 24 states each and are **not** ready for guides. `check-legal-map-sync.mjs` fails a
 guide that asserts a status for a state the map has not read, so writing one now produces a
 page the build rejects. They need map depth first.
 

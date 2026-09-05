@@ -64,6 +64,12 @@ about this species", not to claim a new verification date.
 | `NJ-nj-exempt-species.txt` | The 4.4 exempt list, closed, and the only route to a no-permit animal in New Jersey |
 | `NJ-nj-restricted-species.txt` | The notice that carries what the rule does not: the IUCN gloss, nine corn snake morphs, and the axolotl bar |
 | `NJ-njsa-23-4-63-3.txt` | The statute above subchapter 4, whose "exotic animal" is narrower than the rule's and carves out domesticated companions |
+| `UT-ut-r657-53.txt` | Utah's herp rule, written for wild collection: the bar at 53-4, what needs no document at 53-5, and the captive-bred carve-out at 53-8 |
+| `UT-ut-r657-53-tables.txt` | The division's five classification tables, all of them about animals taken from the wild in Utah |
+| `UT-ut-r657-3a.txt` | The umbrella animal rule that replaced R657-3, with the inverted default at 3a-2(20)(b) |
+| `UT-ut-r657-3b.txt` | Birds and mammals, pointing at Table 3b-1 for the domestic animals it does not govern |
+| `UT-ut-table-3b-1.txt` | Table 3b-1 itself: domestic, noncontrolled, controlled and prohibited, under a header presuming everything unlisted prohibited |
+| `UT-ut-23a-1-101.txt` | The Utah Code definitions, whose subsection (65) puts every arthropod outside the division's reach |
 
 ## Reading the awkward ones
 
@@ -186,6 +192,14 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   is open-ended, "include, but are not limited to", so absence from it proves nothing, and that the
   Division's handouts renumber nothing but do carry rules that are nowhere in the code: the corn
   snake morph list and the axolotl bar live only in `NJ-nj-restricted-species.txt`.
+- **`UT-ut-r657-53.txt`** answers most of Utah in two sections that sit 100 lines apart. The tables
+  and the Controlled tier look like possession law and are not: 53-8(1)(a) and (c) take captive-bred
+  animals and animals "legally obtained outside of Utah" out of the possession limits entirely, and
+  the only certificate of registration that attaches to possession is 53-12, for venomous reptiles
+  native to Utah. Read a cap off `UT-ut-r657-53-tables.txt` without 53-8 and you will record a
+  purchased pet as capped when it is not, which is exactly what had happened to the milk snake here.
+  The other thing to hold on to is 53-7(8): a species the division has never classified defaults to
+  Controlled at three and nine, so absence from the tables is a default rather than a silence.
 - **`CO-co-cpw-species-list.txt`** is parsed into two-line records, the species then its
   determination, so grep with `-A1`:
   `grep -A1 -i 'testudo horsfieldii' docs/legal-sources/CO-co-cpw-species-list.txt`
@@ -229,6 +243,8 @@ not on the sites, so a person with a browser can open all of them.
 | `api.gbif.org` | Works, but drops the occasional connection mid-exchange | Retry with backoff; a failed call returns non-JSON rather than an error code |
 | `web.archive.org` | Blocked by egress policy, so the Wayback fallback is not available here. `archive.org/wayback/available` does answer | Find another live reproduction instead |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
+| `adminrules.utah.gov` | React app. Every `/public/rule/<rule>/Current%20Rules` path returns a bare 404 to a fetcher, and `rules.utah.gov` now just redirects here, so the whole Utah Administrative Code is unreadable by URL | The JSON API answers without auth (`/api/public/agencies`, `/api/public/programs/<agencyId>`) but never yielded rule text. For R657 use DWR's own copies at `wildlife.utah.gov/rules/<rule>`, which serve the full rule as HTML. Other agencies' rules, R58-1 for instance, had no readable route |
+| `le.utah.gov` | The plain section page, `/xcode/Title23A/Chapter1/23A-1-S101.html`, is a shell whose body loads by jQuery | Read `versionDefault="C23A-1-S101_<version>"` out of that page, then fetch `/xcode/Title23A/Chapter1/C23A-1-S101_<version>.html`, which is static HTML with the section text |
 | `dep.nj.gov` | Incapsula. HTML pages return a 212-byte `_Incapsula_Resource` stub and PDFs return a 6183-byte "Pardon Our Interruption" page saved under the `.pdf` name | Warm a cookie jar on `https://dep.nj.gov/rules/` with a browser User-Agent, then refetch the PDF with `-b`/`-c` and a Referer, retrying up to three times. PDFs come through; the HTML pages never did. The three list PDFs and the 1.8MB `njac7-25.pdf` all worked this way |
 | `lis.njleg.state.nj.us`, `pub.njleg.gov` | New Jersey publishes its statutes through a Folio NXT viewer. The gateway answers but has no plain document URL: `&`-separated queries 302 to an empty splash and `$`-separated ones return the same 531-byte stub | No workaround found. Read the section from a reproduction, cite the official section, and say so in the source note |
 
