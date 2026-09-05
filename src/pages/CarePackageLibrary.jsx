@@ -9,9 +9,12 @@ import CarePackagesNav from '@/components/shared/CarePackagesNav';
 
 // /care-packages/library/
 //
-// Where a buyer comes back for the file. Not prerendered and noindex,nofollow:
-// it renders nothing at all without a signed-in session, same treatment as
-// /donate/success/.
+// Where a buyer comes back for the file. noindex,nofollow and out of the
+// sitemap, but prerendered anyway: with no static file Cloudflare falls
+// through to 404.html and the 404 page paints for real before the SPA boots,
+// which a buyer saw on every single visit. Same reasoning as /pack. The
+// prerender captures the loading state and never a signed-in one; see the
+// __IS_PRERENDER__ guard below.
 //
 // Sign-in is an emailed one time code, no password. There are no buyer accounts
 // at checkout - Stripe collects an email, the webhook writes it onto the
@@ -44,6 +47,14 @@ export default function CarePackageLibrary() {
   // it fires on a change, and an already-signed-in visitor arriving from a
   // bookmark has not changed anything.
   useEffect(() => {
+    // During prerender, leave `checking` true so the captured HTML is the
+    // "Checking your sign-in" state, which is also exactly what the first
+    // hydration render produces in a real browser. This page IS prerendered
+    // (see prerender.mjs) purely so Cloudflare has a file to serve instead of
+    // falling through to 404.html and flashing the 404 page on every visit.
+    // Resolving the session here would capture a signed-out page that no
+    // longer matches that first render, and hydration would mismatch.
+    if (typeof window !== 'undefined' && window.__IS_PRERENDER__) return undefined;
     if (!isSupabaseConfigured) {
       setChecking(false);
       return undefined;

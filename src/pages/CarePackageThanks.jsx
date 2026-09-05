@@ -6,9 +6,10 @@ import { CheckCircle, Download, Loader2, AlertCircle } from 'lucide-react';
 
 // /care-packages/thanks/?session_id=cs_...
 //
-// Where Stripe sends the buyer after a successful payment. Not prerendered and
-// noindex,nofollow: it renders nothing without a session id, and the copy on it
-// is for one person who just paid, same treatment as /donate/success/.
+// Where Stripe sends the buyer after a successful payment. noindex,nofollow and
+// out of the sitemap, but prerendered: without a static file Cloudflare serves
+// 404.html, so the first thing a buyer saw after paying was a flash of the 404
+// page. Same reasoning as /pack.
 //
 // The session id in the URL is what proves the purchase here. The buyer has no
 // account yet, and Stripe hands that id to their browser and to nobody else,
@@ -28,14 +29,24 @@ export default function CarePackageThanks() {
   const [params] = useSearchParams();
   const sessionId = params.get('session_id') || '';
 
-  const [state, setState] = useState(sessionId ? 'waiting' : 'no-session');
+  // 'checking' rather than branching on sessionId here, because this page is
+  // prerendered (see prerender.mjs) and the prerender visits it with no query
+  // string while a real buyer always arrives with one. Deriving the initial
+  // state from the query would make the captured HTML and the first hydration
+  // render disagree on every real visit. A single neutral first state is the
+  // same for both, and the effect below picks the real one a tick later.
+  const [state, setState] = useState('checking');
   const [purchase, setPurchase] = useState(null);
   const [downloading, setDownloading] = useState(false);
   const [error, setError] = useState('');
   const cancelled = useRef(false);
 
   useEffect(() => {
-    if (!sessionId) return undefined;
+    if (typeof window !== 'undefined' && window.__IS_PRERENDER__) return undefined;
+    if (!sessionId) {
+      setState('no-session');
+      return undefined;
+    }
     cancelled.current = false;
     const startedAt = Date.now();
     let timer;
@@ -138,7 +149,7 @@ export default function CarePackageThanks() {
           </>
         )}
 
-        {state === 'waiting' && (
+        {(state === 'waiting' || state === 'checking') && (
           <p className="inline-flex items-center gap-2 text-sm text-muted-foreground font-body">
             <Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" />
             Confirming with Stripe

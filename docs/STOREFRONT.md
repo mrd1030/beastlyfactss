@@ -279,11 +279,19 @@ here instead, change it to `payment=(self "https://js.stripe.com")`.
   `generate-sitemap.js`, so a package switched to Stripe gets its page rendered
   and submitted without anyone remembering to add it.
 - `/care-packages/thanks/` and `/care-packages/library/` are `noindex, nofollow`
-  and are in neither list. Neither has a stable default state to prerender: one
-  needs a Stripe session id, the other a signed-in buyer. This is the same
-  arrangement `/donate/success/` and `/donate/cancel/` already have, and the
-  long note at the bottom of `public/_redirects` explains what Cloudflare serves
-  for those paths.
+  and stay out of the sitemap, but they ARE prerendered. They were not at first,
+  on the reasoning that neither has a stable state to capture, and that was
+  wrong in a way a buyer could see: with no static file Cloudflare falls through
+  to `404.html`, so the 404 page painted for real before the SPA booted and
+  replaced it. That flash hit the library on every visit and the thanks page
+  immediately after paying. `/pack` was already prerendered for exactly this
+  reason; see the note above it in `prerender.mjs`.
+
+  What is captured is a loading state, never a signed-in or paid one. Both pages
+  check `window.__IS_PRERENDER__` and skip the effect that would resolve it, so
+  the static HTML matches the first hydration render exactly and the real state
+  arrives a moment later on the client. If you edit either page's initial state,
+  keep that property or hydration will mismatch.
 - Download URLs are signed, short lived and never linked, so there is nothing to
   exclude.
 

@@ -223,11 +223,22 @@ const STATIC_ROUTES = [
   // encyclopedia and guide ids above are: a package switched to Stripe would
   // otherwise have a live route that never gets a static file, which on
   // Cloudflare means a real 404 for every crawler on a page we want indexed.
-  // /care-packages/thanks/ and /care-packages/library/ are deliberately NOT
-  // here: both are noindex,nofollow and neither has a stable default state to
-  // render (one needs a Stripe session id, the other a signed-in buyer), the
-  // same reason /donate/success and /donate/cancel are left out.
   ...CARE_PACKAGES.filter(p => p.storefront === 'stripe').map(p => `/care-packages/${p.id}`),
+  // Both noindex,nofollow, and both stay out of the sitemap, but prerendered
+  // for exactly the reason /pack is (see the note above it): with no static
+  // file Cloudflare falls through to 404.html, which paints the 404 page for
+  // real before the SPA boots and swaps in the right one. A buyer saw that
+  // flash on every visit to their library, and it would also have been the
+  // first thing anyone saw after paying.
+  //
+  // Neither captures a signed-in or paid state, because neither can: the
+  // pages render a deterministic loading state during prerender (they check
+  // window.__IS_PRERENDER__ and skip the effect that would resolve it), so the
+  // captured HTML matches the first hydration render exactly and the real
+  // state arrives a moment later on the client. That is the same contract
+  // every other __IS_PRERENDER__ guard in src/components keeps.
+  '/care-packages/thanks',
+  '/care-packages/library',
 ];
 
 // Per-attempt deadlines, escalating. A flat 45s was the single biggest cost in
