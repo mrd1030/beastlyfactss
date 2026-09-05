@@ -310,17 +310,27 @@ export const fishGuides = [
     image: "/assets/guides/goldfish.jpg",
     tagline: "The pond classic that outgrows its reputation - and its bowl - in a hurry!",
     funFact: "Goldfish have real, months-long memories and can be trained to push levers, navigate mazes, and recognize shapes and colors - directly contradicting the popular '3-second memory' myth. They also grow to the size of their environment: a goldfish kept in a tiny bowl doesn't stay small because it's content, it's stunted, which is a sign of poor welfare rather than a convenient feature.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Rebuilt Sep 2026 from the itemized budget on page 29 of the Goldfish care
+    // package v2.1, which is the researched list. Setup sums to $208-$500, annual to
+    // $156-$384, which is the package's $13-$32 a month over twelve months.
     costs: {
       setup: [
-        { item: "20+ gallon tank", low: 80, high: 180 },
-        { item: "Canister filter (strong filtration)", low: 60, high: 120 },
-        { item: "Smooth gravel or sand substrate", low: 15, high: 25 },
-        { item: "Water test kit", low: 15, high: 20 },
+        { item: "20+ gallon tank", low: 40, high: 120 },
+        { item: "Canister filter (strong filtration)", low: 45, high: 130 },
+        { item: "Gentle/sponge filter", low: 20, high: 40 },
+        { item: "Smooth gravel or sand substrate", low: 15, high: 30 },
+        { item: "Water test kit", low: 25, high: 40 },
+        { item: "Water conditioner", low: 8, high: 15 },
+        { item: "Gravel vacuum and two dedicated buckets", low: 15, high: 30 },
+        { item: "Plants, hardscape and smooth decor", low: 15, high: 45 },
+        { item: "Soft rubber net, transfer container, thermometer and lid", low: 15, high: 30 },
+        { item: "First bag of sinking goldfish pellets", low: 10, high: 20 },
       ],
       annual: [
-        { item: "Goldfish pellets + blanched vegetables", low: 80, high: 250 },
-        { item: "Water conditioner and test kit", low: 40, high: 110 },
+        { item: "Goldfish pellets + blanched vegetables", low: 72, high: 180 },
+        { item: "Water conditioner and test kit", low: 36, high: 84 },
+        { item: "Filter media replacement", low: 24, high: 72 },
+        { item: "Electricity for filter and air pump", low: 24, high: 48 },
       ],
     },
     sections: {

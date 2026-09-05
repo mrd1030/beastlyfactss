@@ -80,7 +80,12 @@ Parasites are less common in AFTs than in many other gecko species but annual fe
     image: "/assets/guides/crested-gecko.jpg",
     tagline: "The velvety, fan-fringed gecko that needs no heat lamp!",
     funFact: "Crested geckos were thought to be extinct until rediscovered in 1994 during a tropical storm in New Caledonia!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Reconciled Sep 2026 against page 24 of the Crested Gecko care package v2.1,
+    // which is the researched list. Setup sums to $335-$530, matching the package.
+    // Annual sums to $387-$649, which is the package's $31-$52 a month plus the
+    // supplement line the package folds into its diet page. The old "not verified
+    // current pricing" flag had outlived two packages and is resolved rather than
+    // carried forward again.
     costs: {
       setup: [
         { item: "18x18x24 in arboreal enclosure", low: 150, high: 200 },
@@ -90,16 +95,17 @@ Parasites are less common in AFTs than in many other gecko species but annual fe
         { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
         { item: "Coconut fiber or bioactive substrate", low: 15, high: 30 },
         { item: "Cork bark tubes and branches", low: 20, high: 40 },
-        { item: "Live or artificial plants", low: 25, high: 45 },
+        { item: "Live or artificial plants", low: 25, high: 40 },
         { item: "Fine misting bottle or fogger", low: 10, high: 40 },
       ],
       annual: [
-        { item: "Commercial crested gecko diet (CGD)", low: 60, high: 90 },
+        { item: "Commercial crested gecko diet (CGD)", low: 84, high: 84 },
         { item: "Feeder insects (crickets, dubia)", low: 60, high: 120 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 45, high: 80 },
-        { item: "Electricity (lighting)", low: 25, high: 45 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+        { item: "Calcium and multivitamin supplements", low: 15, high: 25 },
+        { item: "Coconut fiber or bioactive substrate", low: 120, high: 120 },
+        { item: "UVB bulb replacement", low: 48, high: 84 },
+        { item: "Electricity (lighting)", low: 12, high: 60 },
+        { item: "Annual vet wellness check", low: 48, high: 156 },
       ],
     },
     sections: {
@@ -114,7 +120,7 @@ Temperature should stay between 72 and 80 degrees F during the day, dropping to 
 
 Supplement the CGD with live feeder insects 1 to 2 times per week. Crickets, dubia roaches, and small hornworms are excellent options. Insects add protein variety and behavioral enrichment - crested geckos actively hunt prey and this keeps them mentally stimulated. Insects must be appropriately sized (no wider than the space between the gecko's eyes) to prevent choking.
 
-All feeder insects must be gut-loaded (fed nutritious food for 24 to 48 hours before offering) and lightly dusted with calcium w/D3 supplement each time they're offered, plus a reptile multivitamin once per week. Never skip supplementation - metabolic bone disease from calcium deficiency is preventable and devastating when it occurs.
+All feeder insects must be gut-loaded (fed nutritious food for 24 to 48 hours before offering) and lightly dusted with plain calcium, without D3, each time they're offered, with calcium plus D3 once or twice a week and a reptile multivitamin once per week. Plain calcium is the right default here because the complete diet powder that makes up the bulk of this species' food already supplies D3, and D3 is fat-soluble and accumulates, so dusting it onto every insect feeding on top of the powder stacks two sources of the same vitamin. Never skip supplementation - metabolic bone disease from calcium deficiency is preventable and devastating when it occurs.
 
 Always provide fresh, dechlorinated water in a small shallow dish. Crested geckos also drink water droplets from leaves after misting, so consistent misting is a secondary hydration source. Fruit-based purees (mashed mango, banana) can be offered occasionally as a treat but should not replace CGD.`,
       enrichment: `Provide an abundance of climbing structures at varying heights: cork bark tubes, cork rounds, thick and thin branches, and dense live or artificial plants. Crested geckos need multiple perching options to thermoregulate behaviorally and to feel secure. A gecko that has nowhere to hide is a stressed gecko.

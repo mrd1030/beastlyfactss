@@ -790,7 +790,7 @@ states a thermostat probe position for an overhead basking lamp. The package hol
 its figure and page 34 carries the disagreement openly. **Settle this first in v4 if
 a veterinary source appears.**
 
-**Site work found by the Sep 2026 cross-check, not fixed there.** One item:
+**Site work found by the Sep 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** One item:
 
 - **The article's basking-surface probe claim is an extension, not a direct source.**
   `reptile-heating-thermostats-guide.mdx` states that the probe belongs on "the
@@ -800,7 +800,7 @@ a veterinary source appears.**
   honest about that in its own text, so this is not an error. But it is a thermometer
   guideline extended to a thermostat probe, and it is not strong enough to overturn a
   package that says otherwise. **Worth either finding a source that states it directly
-  or softening the article's wording to match what it can actually support.**
+  or softening the article's wording to match what it can actually support.** **Fixed 5 Sep 2026:** wording softened; no source states it directly for a thermostat probe.
 
 ### Ball Python 2.1, t3 (Sep 2026)
 
@@ -839,7 +839,7 @@ which carries a ball python temperature row. Page 20's shed cycle from
   all.** No snake equivalent exists and the September 2026 batch did not add one. The
   chelonian article does not transfer.
 
-**Site work found by the Sep 2026 cross-check, not fixed there.** One item, and it is a
+**Site work found by the Sep 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** One item, and it is a
 clearance rather than a correction:
 
 - **The adult-length check came back in the article's favor.** The cross-check flagged
@@ -848,7 +848,7 @@ clearance rather than a correction:
   foot long and grow to about 3 feet by 3 years of age. At maturity (reached in 3-5 years),
   adults reach 5-6 feet in length." The article quotes it correctly. What the check actually
   exposed is a genuine disagreement between VCA and the ReptiFiles and PetMD care sheets the
-  package uses, so page 14 now prints both. Nothing on the site needs changing.
+  package uses, so page 14 now prints both. Nothing on the site needs changing. **Closed 5 Sep 2026:** nothing to change, and the ball python humidity propagation was verified live on the site.
 
 **Source drift, resolved Sep 2026.** `snakes.js` said cool side 76 to 80&deg;F and
 humidity 50 to 60%; the MDX said 75 to 80&deg;F and 55 to 70%. Researched rather than
@@ -938,7 +938,7 @@ precedence rule, and two of the first calls were wrong.
   stability mattering more than the exact figure, so the setup guide was brought into line
   and gained the tolerance note. The package already used 6.5 to 7.5 and did not change.
 
-**Site work found by the Sep 4 2026 cross-check, not fixed there.** Three items, all in
+**Site work found by the Sep 4 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** Three items, all in
 site content rather than the package:
 
 - **The transport bag ratio in `aquarium-power-outage-and-transport-guide.mdx` is wrong,
@@ -948,15 +948,15 @@ site content rather than the package:
   on *Betta splendens* specifically, says "Ninety percent of the bag's volume is reserved
   for air to allow the betta enough oxygen to breath during shipment." Both put air well
   above water, which is the direction the packages already had. Betta page 30 and goldfish
-  page 33 were left as they are. **The article is the thing to correct.**
+  page 33 were left as they are. **The article is the thing to correct.** **Fixed 5 Sep 2026:** the article leads with air as the larger share and cites FA212.
 - **Velvet genus.** `betta-fish-health-issues-guide.mdx` names *Oodinium*. Merck's parasitic
   diseases page gives *Piscinoodinium* as the freshwater counterpart, and
   `goldfish-health-issues-guide.mdx` already uses it. The package was corrected on page 19;
-  the MDX still needs it.
+  the MDX still needs it. **Fixed 5 Sep 2026:** the MDX names *Piscinoodinium*.
 - **Columnaris is still thin.** The velvet and columnaris row above is crossed off for the
   package, but the MDX expansion only went halfway: it gained a columnaris section of one
   sentence and still does not carry the point that ich wants the temperature raised and
-  columnaris wants it lowered, which is the reason the row was logged.
+  columnaris wants it lowered, which is the reason the row was logged. **Fixed 5 Sep 2026:** the section carries the raise-for-ich, cool-for-columnaris point with Declercq et al 2013.
 
 ### Rabbit 2.1, t3 (Sep 2026)
 
@@ -1029,7 +1029,7 @@ dental mechanism.
   the feeding guide's "1 to 4 cups per several pounds depending on the source" is too
   vague to act on next to the setup guide's 1 cup per 2 lb.
 
-**Site work found by the Sep 2026 cross-check, not fixed there.** Three items, all in
+**Site work found by the Sep 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** Three items, all in
 site content rather than the package:
 
 - **The GI stasis threshold is still three numbers across three articles**, exactly as the
@@ -1037,17 +1037,17 @@ site content rather than the package:
   to 12 hours, `rabbit-gi-stasis-guide.mdx` gives 8 to 12, and
   `rabbit-health-issues-guide.mdx` gives 8 or more. Nothing has propagated in the months
   since. Package 2.1 now prints **8 to 12 hours** on all six of its pages, matching the
-  dedicated guide, so the package is internally consistent and the site is not.
+  dedicated guide, so the package is internally consistent and the site is not. **Fixed 5 Sep 2026:** 8 to 12 hours in all three articles.
 - **The broken cross-reference is still live.** `rabbit-enrichment-guide.mdx` still says
   "Our [handling guide](/blog/rabbit-handling-guide/) covers introductions."
   `rabbit-handling-guide.mdx` still contains nothing about introductions or bonding. Either
   write the bonding article the table above asks for and point at it, or fix the sentence.
-  This has now survived two cross-checks.
+  This has now survived two cross-checks. **Fixed 5 Sep 2026:** the sentence is rewritten. The bonding article is still unwritten.
 - **`rabbit-gi-stasis-guide.mdx` ships with no `<Sources>` block**, unlike every article
   written since. Pages 18, 19, 20 and 25 of the package cite it for the single most
   important number in rabbit care, and a reader who follows the link cannot trace it any
   further. `guinea-pig-scurvy-vitamin-c-guide.mdx` has the same problem and is on the
-  Guinea Pig list below.
+  Guinea Pig list below. **Fixed 5 Sep 2026:** added there and in `rabbit-health-issues-guide.mdx`.
 
 ### Hamster 2.2, t3 (Sep 2026)
 
@@ -1091,7 +1091,7 @@ hand-edit it** is for. A build script that refuses to build on a duplicate key t
 class of error into a build failure instead of six pages nobody notices until the page
 count comes in eight over. Worth having on any package long enough to be interrupted.
 
-**Site work found by the Sep 2026 cross-check, not fixed there.** One item, in site
+**Site work found by the Sep 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** One item, in site
 content rather than the package:
 
 - **`small-mammal-grooming-nails-molting-guide.mdx` omits the sand bath for hamsters.**
@@ -1100,7 +1100,7 @@ content rather than the package:
   dust-free, non-clumping sand bath is a genuine species essential for a hamster, it is
   page 8 of this package and on the never-cut list above, and an owner who reads the
   article and not the package will conclude a hamster needs nothing. The row needs a
-  hamster carve-out. Nothing in the package changed: the package is the one that is right.
+  hamster carve-out. Nothing in the package changed: the package is the one that is right. **Fixed 5 Sep 2026:** the hamster has its own table row and section, from RSPCA hamster health.
 
 Already covered, do not rewrite: the bedding-depth study is reported with all three of
 its figures on page 7 and is the package's strongest single page.
@@ -1185,7 +1185,7 @@ at the depth pages 13 and 14 needed.
   step on page 17. Page 43 now carries a callout naming both, because a figure missing on
   purpose reads like an oversight otherwise.
 
-**Site work found by the Sep 2026 cross-check, not fixed there.** One item, and it predates
+**Site work found by the Sep 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** One item, and it predates
 this cross-check rather than coming out of it:
 
 - **Five of this package's sources are hobbyist sites.** The Tarantula Collective, Tom's Big
@@ -1195,7 +1195,7 @@ this cross-check rather than coming out of it:
   branch. They were left in place, because replacing them means re-sourcing the figures
   behind them, which is a re-build rather than a cross-check. **It is the next thing this
   package needs**, and it is the reason the invertebrate set still has the thinnest
-  veterinary backing in the series: there is very little veterinary literature to draw on.
+  veterinary backing in the series: there is very little veterinary literature to draw on. **Still open 5 Sep 2026:** package work, outside the site branch's scope. Nothing on the site side to change.
 
 **Source drift found while building:** none. The tarantula guides agree with each other,
 which is worth noting because they are also unusually honest about where the underlying
@@ -1242,7 +1242,7 @@ updated Sep 4 2026 after the cross-check:
   site in `goldfish-health-issues-guide.mdx`, but the diflubenzuron figures differ between
   the two, see the site list below.
 
-**Site work found by the Sep 4 2026 cross-check, not fixed there.** The two site expansion
+**Site work found by the Sep 4 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** The two site expansion
 rows are both done, but `goldfish-health-issues-guide.mdx` and page 25 now print different
 diflubenzuron doses, and both are correctly sourced. Merck's parasitic diseases page says
 "Diflubenzuron (0.03 mg/L, once) is the most effective treatment for crustacean parasites,"
@@ -1250,13 +1250,15 @@ which is what the package prints. UF/IFAS FA185, on *Lernaea* specifically, give
 0.066 mg/L, which is what the MDX prints. This is a genuine difference between two
 published sources rather than an error in either place, so neither was changed. Somebody
 should decide which the site leads with and say so in both. The praziquantel figure,
-5 mg/L as a prolonged bath, agrees in both.
+5 mg/L as a prolonged bath, agrees in both. **Fixed 5 Sep 2026:** the MDX says the site leads
+with UF/IFAS FA185's 0.066 mg/L for *Lernaea* and names Merck's 0.03 mg/L beside it.
 
 **Source drift, unresolved.** `guides/fish.js` costs for goldfish still carry the
 `// Rough starting ranges, not verified current pricing` comment and disagree with the
 itemized budget on page 29, which sums to $208 to $500 of equipment against the JS
 block's implied $170 to $345. The PDF figures are the researched ones. Worth correcting
-`fish.js` so the two stop drifting.
+`fish.js` so the two stop drifting. **Fixed 5 Sep 2026:** `fish.js` goldfish costs rebuilt
+from the page 29 itemization, and the unverified-pricing comment removed.
 
 ### Axolotl 2.1, t3 (Sep 2026)
 
@@ -1383,7 +1385,7 @@ what people light for heat and light, not the cold.
 | Chronic egg laying and egg binding, at package depth | 17, 18 | Cross-species (hen-laying birds) | **Closed by `bird-chronic-egg-laying-guide`, Sep 2026.** Expand `lovebird-health-issues-guide.mdx`, not a new URL, and consider a cross-species article: budgerigars, cockatiels and lovebirds are the three named most often. It currently has a paragraph on each. Needs the full trigger list, the do-not-pull-the-clutch point with the 21 to 28 day incubation cycle, the 8-hour photoperiod intervention, the hormone injection and implant options, and the egg-binding sign list in order of appearance |
 | Choosing a bird: hand-raised versus parent-raised, and where from | not in 2.0 | Cross-species (birds) | **Closed by `choosing-a-pet-bird-guide`, Sep 2026.** Proposed, from the build rather than from a grep. `lovebird-cost-guide.mdx` names hand-raised versus parent-raised as the decision that sets how tame the bird becomes, then stops. Nothing covers breeder versus shop versus rescue, what to ask, or what a healthy bird looks like in the cage you are buying it from. Both mammal packages needed their own version of this page; birds need it more, because hand-raising has no mammal equivalent |
 
-**Site work found by the Sep 4 2026 cross-check, not fixed there.** The package edits are
+**Site work found by the Sep 4 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** The package edits are
 done; these are article changes the pass turned up and deliberately left alone, because the
 brief was the packages.
 
@@ -1397,7 +1399,7 @@ brief was the packages.
   prints 274 and is correct, and the vitals on Cockatiel page 19 and Cockatoo page 23 were
   checked against the same sheet during this pass and matched it. Lovebird has no vitals
   page, so this package is unaffected; the row is logged here because this is the block the
-  article's own gap row sits in.
+  article's own gap row sits in. **Fixed 5 Sep 2026:** the article prints 274 bpm.
 
 **Numbers with no site source at all.** This list was rewritten at 2.1, because most of it
 now has one. Closed since 2.0: the hazards page 8 and the PTFE figure, the 8-hour photoperiod
@@ -1437,7 +1439,7 @@ far.
   and wild numbers get mixed up in a package, which this guide has already caught four times
   in other animals. The captive figure also disagrees with the cost guide and with VCA, which
   both give 10 to 15 typical and about 20 maximum. The package uses 10 to 15, up to about 20.
-  Worth splitting that field and picking one captive range across the three files.
+  Worth splitting that field and picking one captive range across the three files. **Fixed 5 Sep 2026:** the crested gecko and African fat-tail fields both say the wild figure is not documented.
 
 ### Budgie 2.1, t3 (Sep 2026)
 
@@ -1509,7 +1511,7 @@ plus the honest line that conversion takes days, weeks or months.
 | Colony and aviary keeping | not in 2.0 | Cross-species (budgie, canary, finch) | **Closed by `bird-colony-aviary-keeping-guide`, Sep 2026.** The article establishes that no verified space-per-bird or sex-ratio figure exists in a citable source, so page 9 at 2.1 carries the principles and deliberately prints no numbers.** Originally: **Proposed.** Budgies are the one small parrot commonly kept in groups, and both the site and this package answer only one-or-two. Space per bird, sex ratios, nest-site control in a group, and the point that a mixed colony is a breeding setup whether or not you intended one |
 | Reading small-parrot body language | 24, 25 | Cross-species (birds) | **Closed by `bird-body-language-guide`, Sep 2026.** At 2.1 the cues split by meaning: the one-foot against two-foot fluff and the fanned against bobbing tail went to page 19 with the red flags, and beak grinding and eye pinning to page 24, which finally moved beak grinding off page 31.** Originally: **Proposed.** Beak grinding, eye pinning, the one-foot sleep, fluffed-relaxed against fluffed-ill, tail fanning, head bobbing. This package puts beak grinding in a callout on page 31 purely because there was nowhere else for it, and the fluffed-relaxed against fluffed-ill distinction is the one an owner most needs and most often gets wrong |
 
-**Site work found by the Sep 4 2026 cross-check, not fixed there.** As above, an article
+**Site work found by the Sep 4 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** As above, an article
 change the pass turned up and left alone.
 
 - `bird-sexing-weight-body-condition-guide.mdx`. The FAQ currently reads: "**Budgies and
@@ -1522,7 +1524,7 @@ change the pass turned up and left alone.
   orange cheeks against a duller face, the barred underwing and tail, and the point that
   lutino, pied, whiteface, albino and pearl birds cannot be sexed this way at all; or narrow
   the FAQ claim to budgies. Until one or the other happens, the **Cockatiel** block's sexing
-  row cannot close, which is why it is still open at 1.1 despite the article existing.
+  row cannot close, which is why it is still open at 1.1 despite the article existing. **Fixed 5 Sep 2026:** the cockatiel section is written from LafeberVet's cockatiel sheet, so the Cockatiel block's sexing row can close.
 
 **Numbers with no site source at all.** Rewritten at 2.1, because most of this list now has
 one. Closed: the amphotericin B protocol and the 10 to 80% mortality figure, the Lugol's
@@ -1694,7 +1696,7 @@ found in any package in this series.
   costs**, with hay at $25 to $60 and pellets at $6 to $15, and the lines sum to the totals.
   The headline and the breakdown both need fixing.
 
-**Site work found by the Sep 2026 cross-check, not fixed there.** All five drift items
+**Site work found by the Sep 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** All five drift items
 above are **still open**, unchanged since the 2.0 build. Four further items, all in site
 content rather than the package:
 
@@ -1705,23 +1707,23 @@ content rather than the package:
   **three different flat figures** and no per-kilogram one: 10 to 30 in the scurvy article,
   10 to 50 in `guinea-pig-tank-setup-guide.mdx`, and 10 to 50 again in
   `guides/smallMammals.js`. The package prints the per-kg figures and did not change. This
-  is the same drift the 2.0 build logged, one article worse.
+  is the same drift the 2.0 build logged, one article worse. **Fixed 5 Sep 2026:** per-kilogram figures everywhere, from Merck and PetMD.
 - **`small-mammal-temperature-heat-stress-guide.mdx`'s 65 to 80&deg;F is a rounding, not a
   source.** Merck's housing page reads "18-26&deg;C [65-79&deg;F]" and the article prints the
   same Celsius with a rounded Fahrenheit. It should read 65 to 79&deg;F. The package was left
   at Merck's figure. The article's 80&deg;F **danger line** is right and is what the package
-  moved to; it is only the comfortable ceiling that rounded.
+  moved to; it is only the comfortable ceiling that rounded. **Fixed 5 Sep 2026:** now 65 to 79&deg;F.
 - **`small-mammal-enterotoxemia-guide.mdx` names dihydrostreptomycin and clarithromycin**
   without support in Merck's lincosamides page, Merck's clinical techniques page, VCA's
   rodent health page or the University of Missouri reference. Either source them or drop
-  them. The package's list was built from those four and names neither.
+  them. The package's list was built from those four and names neither. **Fixed 5 Sep 2026:** both dropped.
 - **The site now has three guinea pig temperature figures.**
   `guinea-pig-tank-setup-guide.mdx` says "between 65 and 75&deg;F" with heatstroke "above
   80&deg;F", the cross-species article says 65 to 80&deg;F, and Merck says 65 to 79&deg;F. All three
-  agree on 80&deg;F as the danger point and none of them agree on the comfortable ceiling.
+  agree on 80&deg;F as the danger point and none of them agree on the comfortable ceiling. **Fixed 5 Sep 2026:** all three read 65 to 79&deg;F with 80&deg;F as the danger line.
 - **`guinea-pig-scurvy-vitamin-c-guide.mdx` ships with no `<Sources>` block**, like
   `rabbit-gi-stasis-guide.mdx` on the Rabbit list above. Page 21 of the package is sourced
-  almost entirely from it.
+  almost entirely from it. **Fixed 5 Sep 2026:** added.
 
 ### Russian Tortoise 2.0, t3 (Sep 2026)
 
@@ -1791,7 +1793,7 @@ brumation, which is what page 32 is built on.
   the dose to a vet, and a mg/kg figure aimed at owners is not something to keep printing
   once the site's own article has declined to.
 
-**Site work found by the Sep 2026 cross-check, not fixed there.** One item, in site content
+**Site work found by the Sep 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** One item, in site content
 rather than the package:
 
 - **`reptile-emergency-plan-guide.mdx` and `outdoor-reptile-housing-guide.mdx` disagree about
@@ -1801,7 +1803,7 @@ rather than the package:
   Russian or Hermann's tortoise "should come in well before conditions reach a box turtle's
   line", and it sets that line at 60&deg;F. Both cannot be right. The package was left on
   the emergency guide's figure, which is the one it has always used and the one the row was
-  written for. **The two articles are the thing to reconcile.**
+  written for. **The two articles are the thing to reconcile.** **Fixed 5 Sep 2026:** reconciled on 60&deg;F, with the outdoor guide explaining why it acts earlier.
 
 **Source drift found while building.** Four, and two of them are genuine disagreements
 between credible sources rather than errors, which is how they are printed.
@@ -1813,18 +1815,18 @@ between credible sources rather than errors, which is how they are printed.
   additional tortoise. That is a fourfold gap. Neither was picked: page 5 prints 4&times;2 ft
   as the floor and 8&times;4 ft as the target and says why, which is the treatment the
   lovebird and budgie packages gave the same kind of disagreement. The site articles would be
-  better carrying both figures too.
+  better carrying both figures too. **Fixed 5 Sep 2026:** the setup guide and `guides/turtles.js` carry both figures. ReptiFiles' own page returns 403, so the site cites the Zen Habitats republication and its at-least-12-sq-ft figure rather than the unverified 8x4 ft.
 - **Humidity, the other real disagreement.** The site gives 30 to 50% ambient and warns that
   high ambient humidity causes respiratory infection. ReptiFiles gives 40 to 75%, lower by
   day and higher at night, following what the animal experiences in a burrow. Both are
   printed on page 8, with the point that they agree on the shape of the answer even where the
   numbers differ: a dry ventilated surface with a genuinely humid microclimate underneath.
   Worth adding that framing to the site article, because "keep it dry" alone produces the
-  dehydrated, pyramided tortoise that page 18 describes.
+  dehydrated, pyramided tortoise that page 18 describes. **Fixed 5 Sep 2026:** the framing is in the setup guide, with Zen Habitats' 40 to 50% beside our 30 to 50%. The 40 to 75% figure could not be verified for the same 403 reason.
 - **Fruit.** The site says fruit should be minimal, under 5% of the diet.
   The Tortoise Trust's position is that fruits are entirely inappropriate for arid-habitat
   species. The package prints the under-5% figure with the specialist position beside it and
-  the note that zero is a defensible answer for this species.
+  the note that zero is a defensible answer for this species. **Fixed 5 Sep 2026:** `guides/turtles.js` carries the Tortoise Trust position beside the under-5% figure.
 - **Cost.** `guides/turtles.js` still carries the `// Rough starting ranges, not verified
   current pricing` comment. `russian-tortoise-cost-guide.mdx` gives $400 to $600 for setup
   and $500 to $650 a year. Page 28 itemizes to **$372 to $775 for equipment and $365 to $715
@@ -1832,7 +1834,7 @@ between credible sources rather than errors, which is how they are printed.
   which the site's list omits and which are exactly the items that prevent the conditions on
   pages 18 and 19. Also worth adding to the MDX: at those figures the animal costs roughly
   $15,000 to $30,000 over a forty-year life, which is the number that should decide the
-  purchase and appears nowhere.
+  purchase and appears nowhere. **Fixed 5 Sep 2026:** both files itemize to $372 to $775 and $365 to $715, and the MDX carries the forty-year $15,000 to $30,000 figure.
 
 ### Cockatiel 1.1, t3 (Sep 2026)
 
@@ -2168,7 +2170,7 @@ stool than a strict insectivore's, so softer is not automatically wrong; and its
 gained the kidney and gout consequence with misting named as the correction an arboreal
 species needs.
 
-**Site work found by the Sep 2026 cross-check, not fixed there.** One item, and it is a
+**Site work found by the Sep 2026 cross-check, not fixed there. Shipped on the site branch 5 September 2026 unless a bullet says otherwise.** One item, and it is a
 confirmed article error:
 
 - **`reptile-emergency-plan-guide.mdx` has a daytime figure in a nighttime row for this
@@ -2180,7 +2182,7 @@ confirmed article error:
   Page 28 of the package prints 65 to 72&deg;F and is correct; page 35 states the
   disagreement. The action figure in the same article row, sustained at or below 72&deg;F day
   and night, is right and matches the package. **The article's tolerable column is the thing
-  to correct.**
+  to correct.** **Fixed 5 Sep 2026:** the tolerable column reads 65-72&deg;F overnight.
 
 **Source drift found while building.** Three.
 
@@ -2190,14 +2192,14 @@ confirmed article error:
   itemize the same things. Page 24 rebuilds the list from the MDX plus the misting bottle
   from the JS, and the lines sum to the printed totals: $335 to $530 equipment, $400 to $740
   all in, $31 to $52 a month. That comment has now outlived two packages and should be
-  resolved rather than carried.
+  resolved rather than carried. **Fixed 5 Sep 2026:** `guides/geckos.js` and the cost guide both itemize to the package's figures, and the comment is resolved.
 - **Calcium with D3 on every insect feeding.** `guides/geckos.js` says feeder insects should
   be "lightly dusted with calcium w/D3 supplement each time they're offered", on top of a
   complete diet powder that already supplies D3. The MDX says a calcium supplement rather
   than specifying D3, which is the safer wording. D3 is fat-soluble and accumulates, so the
   package prints plain calcium on most insect feedings and D3 once or twice a week. The JS
   line is worth correcting; this is the same class of error the bearded dragon package was
-  rebuilt to fix.
+  rebuilt to fix. **Fixed 5 Sep 2026:** plain calcium on insect feedings, D3 once or twice a week.
 - **A wild lifespan field carrying a captive figure.** `encyclopedia/geckos.js` gives the
   crested gecko `bio.wildLifespan: "10-20 years"`, which is the captive range every source
   quotes, not a wild one. The leopard gecko entry in the same file gets this right and says
