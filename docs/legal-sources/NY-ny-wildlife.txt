@@ -1,0 +1,386 @@
+# New York: two mechanisms, and the one that catches natives is a definition
+
+sourceId: ny-11-0103 / ny-dangerous-animal / ny-6nycrr-3-3 / ny-part-575 / ny-endangered-list
+jurisdiction: NY
+url: https://www.nysenate.gov/legislation/laws/ENV/11-0103
+     https://extapps.dec.ny.gov/docs/wildlife_pdf/1801animaldangerhealthwelfare.pdf
+     https://govt.westlaw.com/nycrr/Document/I21bf88a2c22211ddb7c8fb397c5bd26b?viewType=FullText
+     https://dec.ny.gov/nature/animals-fish-plants/invasive-species/regulations
+     https://dec.ny.gov/nature/animals-fish-plants/biodiversity-species-conservation/endangered-species/list
+fetched: 2026-09-05
+fetch notes: The statutes are easy: nysenate.gov/legislation/laws/ENV/<section> answers plain curl.
+  DEC serves 6 NYCRR 180.1 as a clean PDF from extapps.dec.ny.gov/docs/wildlife_pdf/, and its
+  season pages and species lists are ordinary HTML on dec.ny.gov.
+  THE NYCRR IS THE HARD PART. New York publishes it only through Westlaw, at govt.westlaw.com/nycrr.
+  A plain curl gets 403; a browser User-Agent gets the real document page, and individual sections
+  render as static HTML at
+      /nycrr/Document/<guid>?viewType=FullText&contextData=(sc.Default)
+  The catch is the guid: browse and search are JS-driven and the top-level Browse page returns only
+  the title list, so you cannot walk down to a Part from here. If you have a guid it works, and if
+  you do not, that Part is unreadable. 6 NYCRR Part 175, the wildlife possession chapter, is in that
+  position and is the one open item in this state.
+
+TWO MECHANISMS, and the famous one answers fewer animals:
+  ECL 11-0103(6)(e) + 11-0512   a closed "wild animal" list, six clauses, barred as pets outright.
+                                Primates, Felidae, Canidae, Ursidae, a named set of constrictors
+                                and monitors plus all venomous reptiles, and Crocodylia. Two
+                                express carve-outs matter here: registered Felis catus hybrids five
+                                generations clear of wild parentage, and CAPTIVE BRED FENNEC FOXES.
+  6 NYCRR 180.1                 the department's dangerous animals regulation, which goes further:
+                                raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants,
+                                rhinos, more anacondas, and Python bivittatus by current name. Its
+                                exemptions are ten kinds of licensee and none is a pet keeper.
+  ECL 11-0103(2)(c) + 11-0107(2) THE ONE THAT CATCHES NATIVES, and it is a definition rather than a
+                                list. "Small game" is defined to include "native frogs, native
+                                salamanders, native turtles, native lizards, native snakes". Small
+                                game is game; game is protected wildlife under 11-0103(6)(c); and
+                                11-0107(2) bars possessing protected wildlife "whether taken within
+                                the state or coming from without the state". A captive-bred animal
+                                bought in another state is in exactly the same position.
+  ECL 11-0515                   the only possession licence, and it is issued for "propagation,
+                                banding, scientific or exhibition purposes". Not a pet. So for a
+                                native New York herptile the answer is banned, not permit.
+  6 NYCRR 3.3                   native snakes, sixteen named species, "Open season. None."
+  6 NYCRR Part 575              invasives, in TWO tiers. Regulated species "shall be legal to
+                                possess, sell, buy, propagate and transport" and may only not be
+                                released. Monk parakeet and red-eared slider are REGULATED, not
+                                prohibited, and the labelling duty falls on the seller.
+
+TRAPS:
+  Do not read "permit" into the native answer. There is a licence and it is not for pets.
+  The reptile clause of the wild animal list is species-by-species, so the Nile monitor is banned
+  and the savannah and ackie monitors need nothing; the anacondas are banned and the boa
+  constrictor needs nothing.
+  DEC says in terms: "You may not harvest, take, or possess any native snakes, lizards, or
+  salamanders at any time", and for turtles the snapping turtle is the only open season.
+  THE OPEN ITEM: the flying squirrel. It is on none of the lists above, is not small game (the
+  definition names "black, gray and fox squirrels" and stops), and is on no DEC species list. On
+  the readable law it is unregulated. DEC says a licence is required. Part 175 is where a general
+  possession rule would live and it could not be retrieved. Recorded unclear.
+
+--- ECL 11-0103, the two definitions that decide this state ---------------------------------
+2. "Game" is classified as (a) game birds; (b) big game; (c) small
+game.
+a. "Game birds" are classified as (1) migratory game birds and (2)
+upland game birds.
+(1) "Migratory game birds" means the Anatidae or waterfowl, commonly
+known as geese, brant, swans and river and sea ducks; the Rallidae,
+commonly known as rails, American coots, mud hens and gallinules; the
+Limicolae or shorebirds, commonly known as woodcock, snipe, plover,
+surfbirds, sandpipers, tattlers and curlews; the Corvidae, commonly
+known as jays, crows and magpies.
+(2) "Upland game birds" (Gallinae) means wild turkeys, grouse,
+pheasant, Hungarian or European gray-legged partridge and quail. Grouse
+means ruffed grouse and every member of the grouse family. Pheasant
+means the ring-necked, dark-necked and mutant pheasants and all species
+and subspecies of the genus Phasianus representing the true or game
+pheasants.
+b. "Big game" means deer, bear, moose, elk, except captive bred and
+raised North American elk (Cervus elaphus), caribou and antelope.
+c. "Small game" means black, gray and fox squirrels, European hares,
+varying hares, cottontail rabbits, native frogs, native salamanders,
+native turtles, native lizards, native snakes, coyotes, red fox (Vulpes
+vulpes) and gray fox (Urocyon cinereoargenteus) except captive bred red
+fox or gray fox, raccoon, opossum, or weasel, skunk, bobcat, lynx,
+muskrat, mink, except mink born in captivity, fisher, otter, beaver,
+sable and marten but does not include coydogs.
+
+6. a. "Wildlife" means wild game and all other animal life existing in
+a wild state, except fish, shellfish and crustacea.
+b. "Wild bird" means birds which are "wildlife".
+c. "Protected wildlife" means wild game, protected wild birds,
+protected insects, species of special concern and endangered and
+threatened species of wildlife designated by the department pursuant to
+section 11-0535 of this article, species listed in section 11-0536 of
+this article and species protected pursuant to section 11-0311 of this
+article.
+d. "Unprotected wildlife" means all wildlife which is not "protected
+wildlife".
+e. "Wild animal" shall not include "companion animal" as defined in
+section three hundred fifty of the agriculture and markets law. Wild
+animal includes, and is limited to, any or all of the following orders
+and families:
+(1) Nonhuman primates and prosimians,
+(2) Felidae and all hybrids thereof, with the exception of the species
+Felis catus (domesticated and feral cats, which shall mean domesticated
+cats that were formerly owned and that have been abandoned and that are
+no longer socialized, as well as offspring of such cats) and hybrids of
+Felis catus that are registered by the American Cat Fanciers Association
+or the International Cat Association provided that such cats be without
+any wild felid parentage for a minimum of five generations,
+(3) Canidae (with the exception of domesticated dogs and captive bred
+fennec foxes (vulpes zerda)),
+(4) Ursidae,
+(5) All reptiles that are venomous by nature, pursuant to department
+regulation, and the following species and orders: Burmese Python (Python
+m. bivittatus), Reticulated Python (Python reticulatus), African Rock
+Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow
+Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia
+amethistina and Morelia kinghorni), Indian Python (Python molurus),
+Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus
+nilocitus), White Throat Monitor (Varanus albigularis), Black Throat
+Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus
+salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof,
+(6) Crocodylia.
+
+--- ECL 11-0107, possession of protected wildlife -----------------------------------------
+§ 11-0107. Application of Fish and Wildlife Law.
+1. No person shall, at any time of the year, pursue, take, wound or
+kill in any manner, number or quantity, any fish protected by law, game,
+protected wildlife, shellfish, harbor seals, crustacea protected by law,
+or protected insects, except as permitted by the Fish and Wildlife Law.
+2. No person shall, at any time of the year, buy, sell, offer or
+expose for sale, transport, or have in his possession any fish protected
+by law, game, protected wildlife, shellfish, harbor seals, crustacea
+protected by law, or part thereof, or protected insect, whether taken
+within the state or coming from without the state, except as permitted
+by the Fish and Wildlife Law.
+
+--- ECL 11-0511, possession and transportation --------------------------------------------
+11-0511. Possession and transportation of wildlife.
+Subject to the provisions of section 11-0512 of this article, no
+person shall, except under a license or permit first obtained from the
+department containing the prominent warning notice specified in
+subdivision nine of section 11-0917 of this article, possess, transport
+or cause to be transported, imported or exported any live wolf, wolfdog,
+coyote, coydog, fox, skunk, raccoon, venomous reptile, endangered
+species designated pursuant to section 11-0535 of this title, species
+named in section 11-0536 of this title or other species of native or
+non-native live wildlife or fish where the department finds that
+possession, transportation, importation or exportation of such species
+of wildlife or fish would present a danger to the health or welfare of
+the people of the state, an individual resident or indigenous fish or
+wildlife population. Environmental conservation officers, forest rangers
+and members of the state police may seize every such animal possessed
+without such license or permit. No action for damages shall lie for such
+seizure, and disposition of seized animals shall be at the discretion of
+the department.
+
+--- ECL 11-0512, wild animals as pets prohibited ------------------------------------------
+11-0512. Possession, sale, barter, transfer, exchange and import of
+wild animals as pets prohibited.
+1. It shall be prohibited for any person to:
+a. knowingly possess, harbor, sell, barter, transfer, exchange or
+import any wild animal for use as a pet in New York state, except as
+provided in subdivision three of this section; or
+b. intentionally release or set at-large any wild animal, authorized
+by this section for use as a pet, from the location where the animal is
+permitted to be possessed or harbored.
+2. This section shall not apply to the following persons and entities
+with respect to wild animals owned or harbored by them solely for a
+purpose other than for use as a pet:
+a. Zoological facilities licensed pursuant to 7 USC. Sec. 2131 et
+seq.;
+b. Exhibitors licensed pursuant to the Animal Welfare Act, 7 USC.
+Sections 2132-2134 and reptile exhibitors who have demonstrated to the
+department, in accordance with regulations promulgated by the
+commissioner, that the sole purpose for which the wild animal or animals
+are used is for exhibition to the public for profit or compensation;
+c. Research facilities as defined in the Animal Welfare Act, 7 USC.
+Section 2132 (e), which are licensed by the United States Secretary of
+Agriculture;
+d. Licensed veterinarians and incorporated humane societies, animal
+shelters, societies for the prevention of cruelty to animals or animal
+welfare organizations in temporary possession of wild animals;
+e. State universities, private colleges or universities, or state
+agencies working with wild animals;
+f. Wildlife rehabilitators licensed pursuant to the provisions of
+subdivision three of section 11-0515 of this title and regulations
+promulgated thereunder, who are tending to sick or injured wild animals;
+g. A person having custody of a wild animal solely for the purpose of
+transporting it to a licensed veterinarian, wildlife rehabilitator,
+humane society or other entity authorized by this section to handle or
+treat wild animals;
+h. A wildlife sanctuary as defined in subdivision thirty-two of
+section 11-0103 of this article;
+i. A person who is not a resident of this state who is in the state
+only for the purpose of travelling between locations outside the state.
+In no event shall this time period exceed ten days;
+j. A person who is paralyzed from the neck down who possesses a new
+world monkey trained to perform tasks for its owner by an organization
+described in section 501(c) of the Internal Revenue Code of 1986 and
+dedicated to improving the quality of life of persons paralyzed from the
+neck down.
+
+--- ECL 11-0515, the only possession licence, and what it is for --------------------------
+§ 11-0515. Licenses to collect, possess or sell for propagation,
+scientific or exhibition purposes.
+1. The department may issue to any person a license revocable at its
+pleasure to collect or possess fish, wildlife, shellfish, crustacea, or
+aquatic insects, birds' nests or eggs for propagation, banding,
+scientific or exhibition purposes. The department in its discretion may
+require an applicant to pay a license fee of ten dollars, and to file a
+bond of two hundred dollars to be approved by the department that he or
+she will not violate any provisions of this article. Each licensee shall
+file with the department a report containing such information as the
+department may require. Such license shall be in force for one year only
+and shall not be transferable.
+2. The department may also issue a license revocable at its pleasure
+to possess and sell protected fish, wildlife, shellfish, crustacea or
+aquatic insects for propagation, scientific or exhibition purposes. The
+department in its discretion may require a license fee of ten dollars.
+Such license shall be in force for one year only and shall not be
+transferable. Each licensee shall file with the department a report
+containing such information as the department may require. Fish,
+wildlife, shellfish, crustacea or aquatic insects lawfully possessed
+under this section may be sold at any time by the licensee for
+propagation, scientific or exhibition purposes only.
+
+--- 6 NYCRR 3.3, native snakes ------------------------------------------------------------
+3.3 Native snakes.(a) Definitions.For purposes of this section, native snakes shall mean all life stages, including eggs, of the following species: northern water snake, queen snake, northern brown snake, northern redbelly snake, common garter snake, shorthead garter snake, ribbon snake, eastern hognose snake, northern ringneck snake, eastern worm snake, northern black racer, smooth green snake, black rat snake, eastern milk snake, northern copperhead, eastern massasauga, and timber rattlesnake.(b) Open season.None.
+
+--- 6 NYCRR 180.1, animals dangerous to health or welfare ---------------------------------
+Title 6 New York State Codes, Rules, and Regulations
+Section 180.1 Animals dangerous to health or welfare
+(a) Purpose. The purpose of this section is to list species of animals which present a danger to the
+health or welfare of the people of the State, individual residents, or indigenous wildlife populations.
+(b) Prohibitions. Notwithstanding any other provision of this Chapter, and except as provided in
+subdivision (d) of this section, no person shall import, transport, possess, purchase, barter, transfer,
+sell, offer for sale, exchange, propagate or release or cause to be released within New York State any
+of the following live native or non-native dangerous animals including those which are captive bred in
+any of the following orders, families and individual species or subspecies including all subspecies and
+hybrids thereof:
+(1) Canines in the Family Canidae (with the exception of domesticated dogs and captive bred fennec
+foxes (vulpes zerda));
+(2) Raccoon dog of the Species Nyctereutes procyonoides;
+(3) Wolverine (Gulo gulo)
+(4) Badgers in the Genus Taxidea
+(5) Raccoons in the Genus Procyon;
+(6) Skunks in the Family Mephitidae;
+(7) Bears in the Family Ursidae:
+(8) Cats in the Family Felidae with the exception of the species Felis catus (domesticated and feral
+cats, which shall mean domesticated cats that were formerly owned and that have been abandoned
+and that are no longer socialized, as well as offspring of such cats) and hybrids of Felis catus that are
+registered by the American Cat Fanciers Association or the International Cat Association provided
+that such cats be without any wild felid parentage for a minimum of five generations;
+(9) All Non-human primates and prosimians in the Order Primates;
+(10) Elephants in the Family Elephantidae:
+(11) Rhinoceroses in the Family Rhinocerotidae:
+(12) Bats in the Order Chiroptera;
+(13) Crocodilians in the Order Crocodilia:
+(14) The following species in the Family Varanidae:
+(i) Varanus salvator (Asiatic monitor, Common water monitor)
+(ii) Varanus niloticus (Nile monitor)
+(iii) Varanus albigularis (White-throat monitor)
+(iv) Varanus albigularis ionidesi (Black-throat monitor)
+(v) Varanus salvadori (Crocodile monitor)
+(vi) Varanus komodensis (Komodo dragon)
+(15) The following species in the Family Boidae:
+(i) Eunectes deschauenseei ( DeSchauensee’s anaconda)
+(ii) Eunectes murinus (Green anaconda)
+(iii) Eunectes notaeus (Yellow anaconda)
+(iv) Eunectes beniensis (Beni anaconda)
+(16) The following species in the Family Pythonidae
+(i) Morelia amethistina (Australian Amethystine python)
+(ii) Python molurus (Indian python)
+(iii) Python bivittatus (Burmese python)
+(iv) Python (Broghammerus) reticulates (Reticulated python)
+(v) Python sebae (Northern African python)
+(vi) Python natalensis (Southern African python)
+(17) All reptiles that are venomous by nature, including but not limited to the following species within
+the Families or sub-families listed:
+(i) Family Elapidae:
+(a) All species
+(ii) Family Viperidae:
+(a) All species
+(iii) Family Lamprophiidae:
+(a) Sub-family Attractaspinae:
+(1) Attractaspis spp. (Mole vipers or burrowing asps)
+(2) Homoroselaps spp (African dwarf garter snakes)
+(b) Sub-family Aparallactinae:
+(1) Macrelaps microlepidota (Natal black snake)
+(c) Sub-family Psammophiinae:
+(1) Malpolon monspessulanus (Montpellier snake)
+(iv) Family Colubridae:
+(a) Sub-family Colubrinae:
+(1) Dispholidus typus (Boomslang)
+(2) Thelotornis kirtlandii (Kirtland’s bird snake or twig snake)
+(3) Thelotornis capensis (Cape bird snake or twig snake)
+(b) Sub-family Natricinae:
+(1) Rhabdophis tigrinus (tiger keelback, Yamakagashi)
+(2) Rhabdophis subminiatus (red-necked keelback)
+(v) Family Dipsadidae:
+(a) Philodryas olfersii (Lichtenstein’s racer)
+(b) Philodryas patagoniensis (Patagonian racer)
+(vi) Venomous lizards, beaded Lizards and Gila monsters in the Family Helodermatidae:
+(c) Licenses. Licenses issued pursuant to this section may contain terms, conditions and standards
+designed to protect the public, individual residents, and indigenous wildlife populations of the State,
+as well as terms and requirements regarding food, shelter, care and caging to ensure humane
+treatment and safe captive conditions of the listed species. Such licenses may be issued only for
+scientific, educational, exhibition, zoological, or propagation purposes as defined in 6 NYCRR Part
+175, and shall be effective for one year only and shall not be transferable. Applications for, or renewal
+of, a license must be made on forms provided by the department. Each licensee shall make a report
+of his or her operations on forms provided by the department upon renewal of and prior to the
+expiration of the license.
+(d) Exemptions. The prohibitions of subdivision (b) of this section shall not apply to the following
+persons or entities with respect to dangerous animals owned or possessed by them:
+(1) a person, licensed or permitted by the department to conduct scientific research;
+(2) a person, licensed or permitted by the department to temporarily possess New York native wildlife,
+listed as dangerous animal in this section, who is providing rehabilitative care to the following species:
+(i) American Black bear (Ursus americanus)
+(ii) Bobcat (Lynx rufus)
+(iii) Coyote (Canis latrans)
+(iv) Gray fox (Urocyon cinereoargenteus)
+(v) Red fox (Vulpes vulpes)
+(vi) Bats, native to New York State, in the Order Chiroptera
+(vii) Raccoon (Procyon lotor)
+(viii) Striped skunk (Mephitis mephitis)
+(ix) Massasauga (Sistrurus catenatus)
+(x) Northern copperhead (Agkistrodon contortrix)
+(xi) Timber rattlesnake (Crotalus horridus)
+(3) a person currently licensed by the department pursuant to Environmental Conservation Law,
+subdivision (3) of section 11-0512;
+(4) a person currently licensed by the department pursuant to Environmental Conservation Law,
+section 11-1907;
+(5) a person, licensed or permitted by the department to temporarily possess New York native wildlife,
+who is conducting nuisance wildlife control activities, provided all such live dangerous animals are
+immediately euthanized or released within 24 hours of capture in compliance with all the provisions of
+the Environmental Conservation Law and regulations governing the possession of such dangerous
+animals;
+(6) a person taking destructive or menacing New York native wildlife, listed as a dangerous animal in
+this section, pursuant to Environmental Conservation Law section 11-0523 provided all such live
+dangerous animals are immediately released or disposed of in compliance with all the provisions of
+the Environmental Conservation Law and regulations governing the possession of such dangerous
+animals;
+(7) a person engaged in the agricultural pursuit of breeding, raising and production in captivity, and
+the marketing of live animals, pelts or carcasses of captive bred, domestically raised ranch fox
+pursuant to Agriculture and Markets Law section 127-a of Article 7A;
+(8) a licensed veterinarian, the Humane Society or Society for the Prevention of Cruelty to Animals in
+temporary possession of a live dangerous animal;
+(9) federal research facilities, and research facilities licensed by the United States Department of
+Agriculture, Animal and Plant Health Inspection service, pursuant to The Federal Animal Welfare Act
+(Title 7 U.S.C., Chapter 54) in possession of a live dangerous animal;
+(10) facilities operating under an Assurance from the National Institutes of Health, Office of
+Laboratory Animal Welfare pursuant to the Health Research Extension Act of 1985, in possession of
+non-mammalian, live dangerous animals.
+(e) Seizure. Environmental conservation officers, forest rangers and members of the State Police may
+seize listed species of dangerous animals possessed without permit or license. No action for
+damages will lie for such seizure, and the manner of disposition of seized animals shall be at the
+discretion of the department.
+
+--- DEC, reptile and amphibian seasons, verbatim -------------------------------------------
+Turtles: The only turtle species for which there is an open hunting season is the snapping turtle.
+You may not harvest, take, or possess any other turtle species at any time.
+A hunting license is required to take snapping turtles. The only legal implement for taking
+snapping turtles is a firearm or a bow. Open Season: July 15 through September 30. Open Area:
+Statewide. Size Limit: The upper shell (carapace) must measure 12 inches or longer in a straight
+line. Daily Bag: 5. Season Bag: 30.
+Snakes, Lizards, and Salamanders: You may not harvest, take, or possess any native snakes, lizards,
+or salamanders at any time.
+
+--- 6 NYCRR Part 575, the tier distinction, verbatim ---------------------------------------
+Prohibited invasive species cannot be knowingly possessed with the intent to sell, import,
+purchase, transport or introduce. In addition, no person shall sell, import, purchase, transport,
+introduce or propagate prohibited invasive species. Regulated invasive species, on the other hand,
+are species which cannot be knowingly introduced into a free-living state, or introduced by a means
+that one should have known would lead to such an introduction, although such species shall be legal
+to possess, sell, buy, propagate and transport.
+REGULATED animals include: African Clawed Frog, Goldfish, Koi, Lionfish (two species),
+Monk/Quaker Parakeet (Myiopsitta monachus), Red-Eared Slider (Trachemys scripta elegans).
+
+--- DEC endangered/threatened/special concern, the entries that matter here ----------------
+Eastern Tiger Salamander      Ambystoma tigrinum          ENDANGERED
+Woodland Box Turtle           Terrapene carolina carolina listed
+Eastern Hognose Snake         Heterodon platyrhinos       listed
+  (No flying squirrel appears anywhere on the list.)
+

@@ -98,35 +98,35 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 19,
+        "checked": 20,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 19,
+        "checked": 20,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 20,
+        "checked": 21,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 20,
+        "checked": 21,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 20,
+        "checked": 21,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 20,
+        "checked": 21,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 20,
+        "checked": 21,
         "of": 51
       },
       "green-anole": {
-        "checked": 20,
+        "checked": 21,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,67 +134,67 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 44,
-        "of": 51
-      },
-      "emperor-scorpion": {
-        "checked": 44,
-        "of": 51
-      },
-      "axolotl": {
-        "checked": 44,
-        "of": 51
-      },
-      "box-turtle": {
-        "checked": 44,
-        "of": 51
-      },
-      "giant-millipede": {
-        "checked": 44,
-        "of": 51
-      },
-      "red-eared-slider": {
         "checked": 45,
         "of": 51
       },
-      "sulcata-tortoise": {
-        "checked": 44,
+      "emperor-scorpion": {
+        "checked": 45,
         "of": 51
       },
-      "hognose-snake": {
-        "checked": 44,
+      "axolotl": {
+        "checked": 45,
         "of": 51
       },
-      "african-grey-parrot": {
-        "checked": 44,
+      "box-turtle": {
+        "checked": 45,
         "of": 51
       },
-      "tiger-salamander": {
+      "giant-millipede": {
+        "checked": 45,
+        "of": 51
+      },
+      "red-eared-slider": {
         "checked": 46,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 45,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 45,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 45,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 47,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 48,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "green-iguana": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "burmese-python": {
@@ -210,7 +210,7 @@
         "of": 51
       },
       "degu": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "ackie-monitor": {
@@ -218,15 +218,15 @@
         "of": 51
       },
       "hamster": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "gerbil": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "bengal-cat": {
@@ -234,7 +234,7 @@
         "of": 51
       },
       "guinea-pig": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "milk-snake": {
@@ -258,7 +258,7 @@
         "of": 51
       },
       "chinchilla": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "fennec-fox": {
@@ -600,9 +600,9 @@
       "note": "Florida's nonnative species chapter, and the rule that answers the animals Florida is famous for. 68-5.006 is the prohibited list, and its reptile section is what the 2021 rulemaking rewrote: the yellow, Beni, DeSchauensee's and green anacondas, the brown tree snake, the Burmese, reticulated, Northern African, Southern African, amethystine and scrub pythons, the Nile monitor, the green iguana and the tegus of genera Salvator and Tupinambis. Its mammal section is short and has nothing a pet keeper would want, and its bird section names four. 68-5.007 governs what a prohibited species owner can do, and the answer is close to nothing: personal possession permits are issued only to people who already held the animal before listing, for that animal's life, PIT-tagged, with no new specimens ever. 68-5.004 is the separate conditional list, which for this map means one animal, the red-eared slider."
     },
     "ny-11-0103": {
-      "title": "N.Y. Environmental Conservation Law § 11-0103(6)(e), definition of wild animal",
+      "title": "N.Y. Environmental Conservation Law §§ 11-0103, 11-0107, 11-0511, 11-0512 and 11-0515",
       "url": "https://www.nysenate.gov/legislation/laws/ENV/11-0103",
-      "note": "A closed definition: 'includes and is limited to' nonhuman primates and prosimians, Felidae and hybrids, Canidae, Ursidae, venomous reptiles plus named large pythons and monitors, and Crocodylia. § 11-0512 then bars possessing a wild animal as a pet, grandfathering animals held when the section took effect if licensed within six months."
+      "note": "New York answers exotic and native animals through two entirely separate mechanisms, and the famous one is the smaller. § 11-0103(6)(e) is a closed \"wild animal\" list, six clauses long, that § 11-0512 then bars keeping as a pet: primates, Felidae, Canidae, Ursidae, a named set of large constrictors and monitors plus all venomous reptiles, and Crocodylia. It carries two express carve-outs that decide cells on this map, for registered Felis catus hybrids five generations clear of wild parentage and for captive bred fennec foxes. The other mechanism is the one that catches natives, and it is a definition rather than a list: § 11-0103(2)(c) makes native frogs, salamanders, turtles, lizards and snakes SMALL GAME, therefore game, therefore protected wildlife under § 11-0103(6)(c), and § 11-0107(2) bars possessing protected wildlife \"whether taken within the state or coming from without the state\". The only licence, § 11-0515, is for propagation, banding, scientific or exhibition purposes, so there is no pet route behind it."
     },
     "ct-26-40a": {
       "title": "Conn. Gen. Stat. § 26-40a, Possession of potentially dangerous animal",
@@ -1029,11 +1029,6 @@
       "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_113/GS_113-272.5.html",
       "note": "North Carolina's captivity-license statute, which bars issuing a license for a wild animal acquired merely as a pet."
     },
-    "ny-11-0512": {
-      "title": "New York Environmental Conservation Law § 11-0512",
-      "url": "https://www.nysenate.gov/legislation/laws/ENV/11-0512",
-      "note": "Bars knowingly possessing, harboring, selling or importing any wild animal for use as a pet, with the special license path set out in ECL § 11-0515(1) and 6 NYCRR Part 175."
-    },
     "wi-nr-10-02": {
       "title": "Wisconsin Administrative Code NR 10.02",
       "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/10/I/02",
@@ -1057,7 +1052,7 @@
     "ny-dangerous-animal": {
       "title": "6 NYCRR § 180.1, Animals Dangerous to Health or Welfare",
       "url": "https://extapps.dec.ny.gov/docs/wildlife_pdf/1801animaldangerhealthwelfare.pdf",
-      "note": "The regulation behind DEC's Dangerous Animal License, listing canids, bears, felids, primates and venomous reptiles among others, with no parrot or cockatoo family included."
+      "note": "The department regulation behind ECL § 11-0511, and it reaches further than the statutory wild animal list. It adds the raccoon dog, the wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses, and it extends the constrictor list to the DeSchauensee's and Beni anacondas and the Southern African python while naming the Burmese by its current binomial, Python bivittatus. Its exemptions at subdivision (d) are ten kinds of licensee and institution and none of them is a pet keeper, so an animal on this list has no personal route at all. It repeats the two carve-outs from the statute word for word, for captive bred fennec foxes and for five-generation registered cat hybrids."
     },
     "wi-datcp-birds": {
       "title": "Wisconsin Statutes § 169.01(25m)",
@@ -1095,9 +1090,9 @@
       "note": "The prohibited-species list under this section names only three birds (Pink Starling/Rosy Pastor, Red-billed Dioch, Red-whiskered Bulbul); cockatoos and other companion parrots are absent."
     },
     "ny-6nycrr-3-3": {
-      "title": "6 NYCRR § 3.3, Native Snakes",
+      "title": "6 NYCRR § 3.3, Native Snakes, and DEC reptile and amphibian seasons",
       "url": "https://govt.westlaw.com/nycrr/Document/I21bf88a2c22211ddb7c8fb397c5bd26b?viewType=FullText&originationContext=documenttoc&transitionType=CategoryPageItem&contextData=(sc.Default)",
-      "note": "New York's official compilation of codes, rules and regulations (linked directly from DEC's own regulatory index page); defines native snakes by naming seventeen species by common name, each with open season 'None.'"
+      "note": "Two sentences and a list. Subdivision (a) defines native snakes as sixteen named species including the common garter snake, the eastern milk snake, the eastern hognose snake and the black rat snake, and subdivision (b) reads in its entirety \"Open season. None.\" That is what turns the small game classification into a prohibition. DEC states the result plainly in its own season summary: for turtles, \"The only turtle species for which there is an open hunting season is the snapping turtle. You may not harvest, take, or possess any other turtle species at any time\", and for the rest, \"You may not harvest, take, or possess any native snakes, lizards, or salamanders at any time.\" New York publishes the NYCRR only through Westlaw, which serves document pages to a browser User-Agent but not the Part 175 possession chapter, so the seasons and this section are the readable half of the regulation."
     },
     "ga-27-1-28": {
       "title": "O.C.G.A. § 27-1-28, Taking of Nongame Species",
@@ -1353,6 +1348,16 @@
       "title": "5B-57.004, F.A.C., Introduction, Possession or Movement of Arthropods, Plant Pests and Biological Control Agents",
       "url": "https://www.flrules.org/gateway/RuleNo.asp?id=5B-57.004",
       "note": "The rule that catches invertebrates in Florida, and it belongs to the Department of Agriculture and Consumer Services rather than to FWC, which is why reading only the wildlife chapters gets this wrong. It makes it unlawful to possess \"any arthropod ... regulated by the Department or the USDA\" without a state permit, unless a federal PPQ 526 has issued with the Department's concurrence. The test is therefore federal as much as state: an arthropod USDA treats as a plant pest is caught, and one it does not is not. That splits the four invertebrates on this map, since the giant African millipede and the Madagascar hissing cockroach are both moved under PPQ 526 and a tarantula and a scorpion are not plant pests at all. Permits turn on containment: the Department must find the animal can be contained to prevent escape."
+    },
+    "ny-part-575": {
+      "title": "6 NYCRR Part 575, Prohibited and Regulated Invasive Species",
+      "url": "https://dec.ny.gov/nature/animals-fish-plants/invasive-species/regulations",
+      "note": "A two-tier invasive species scheme that is much milder than the name suggests for two animals on this map. Prohibited species may not be possessed with intent to sell, or sold, imported, purchased, transported, introduced or propagated. REGULATED species \"shall be legal to possess, sell, buy, propagate and transport\" and may only not be knowingly introduced into a free-living state. The monk parakeet and the red-eared slider are both on the regulated list, not the prohibited one, alongside goldfish and koi. The duty the listing creates falls on the seller: a business selling a regulated species must label it as such."
+    },
+    "ny-endangered-list": {
+      "title": "NYSDEC list of endangered, threatened and special concern species (6 NYCRR Part 182)",
+      "url": "https://dec.ny.gov/nature/animals-fish-plants/biodiversity-species-conservation/endangered-species/list",
+      "note": "The list that decides which native New York herptiles are protected twice over. Three entries matter here: the eastern tiger salamander, Ambystoma tigrinum, is ENDANGERED; the woodland box turtle, Terrapene carolina carolina, is threatened or special concern; and the eastern hognose snake, Heterodon platyrhinos, is special concern. Species of special concern are named directly in the definition of protected wildlife at ECL § 11-0103(6)(c), so a listing here is a second and independent route to the same prohibition the small game definition already produces. No flying squirrel appears anywhere on the list."
     }
   },
   "animals": {
@@ -1440,8 +1445,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "Not within the closed definition of wild animal. Legal statewide, but banned in New York City under its own Health Code.",
-          "verifiedOn": "2026-08-04"
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the African pygmy hedgehog is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "legal",
@@ -1815,8 +1822,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "Mustelidae is absent from the definition. NYC bans it separately.",
-          "verifiedOn": "2026-08-04"
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the domestic ferret is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. Worth separating from New York City, which is a distinct jurisdiction on this map and bans ferrets outright under its Health Code.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "legal",
@@ -2239,8 +2248,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "Marsupials are not in the definition. NYC bans it separately.",
-          "verifiedOn": "2026-08-04"
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the sugar glider is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "legal",
@@ -2978,6 +2989,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Named at (14)(j) for possession and at 68A-6.003(12) for sale. Florida is one of the states where the hamster is answered explicitly rather than by falling outside a definition.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the golden hamster is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3374,6 +3393,14 @@
           "cite": "68A-6.003(14)(b)",
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Named at (14)(b) with the hedgehog, and named again at 68A-6.003(12), which says no permit is required for the SALE of poultry, hamsters, guinea pigs, domestic rats and mice, gerbils, or chameleons. Florida answers this animal twice, once for keeping and once for selling.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the Mongolian gerbil is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3782,6 +3809,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the entry at (14)(q), which is the single word \"Parrots\", sitting in a list that separately names shell parakeets, canaries, lovebirds, cockatiels, finches, myna birds and toucans. The monk parakeet is a parrot and is not carved back out anywhere. That is worth stating plainly, because Florida has large established monk parakeet colonies and is often assumed to restrict the species for that reason. It does not: the prohibited list at 68-5.006(5) names four birds, the dioch, the Java sparrow, the pink starling and the red-whiskered bulbul, and this is none of them.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-part-575",
+          "cite": "6 NYCRR Part 575, regulated species",
+          "quote": "Prohibited invasive species cannot be knowingly possessed with the intent to sell, import, purchase, transport or introduce. In addition, no person shall sell, import, purchase, transport, introduce or propagate prohibited invasive species. Regulated invasive species, on the other hand, are species which cannot be knowingly introduced into a free-living state, or introduced by a means that one should have known would lead to such an introduction, although such species shall be legal to possess, sell, buy, propagate and transport.",
+          "note": "The monk parakeet is on New York's invasive species list, and the tier matters more than the listing. Regulated species \"shall be legal to possess, sell, buy, propagate and transport\" and may only not be knowingly introduced into a free-living state; it is the prohibited tier that bars possession. The duty the listing creates falls on the seller rather than the keeper: a pet shop selling a regulated species must label it as one. Goldfish and koi are on the same list, which is a useful measure of how much it restricts. New York has long-established monk parakeet colonies in Brooklyn and Queens, and the state's answer to them is a labelling rule and a release prohibition rather than a possession ban, which is a real contrast with the states that ban the bird outright.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "quaker-parakeet"
@@ -3815,8 +3850,10 @@
         "NY": {
           "status": "conditional",
           "sourceId": "ny-11-0103",
-          "note": "Felidae hybrids are wild animals except registered hybrids with no wild felid ancestry for five or more generations, so an F5 or later Bengal qualifies. NYC bans all wild-cat hybrids regardless.",
-          "verifiedOn": "2026-08-04"
+          "cite": "ECL § 11-0103(6)(e)(2); 6 NYCRR § 180.1(b)(8)",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "The thirteenth Bengal answer on this map and the strictest generation rule on it. Felidae \"and all hybrids thereof\" is a wild animal, with one exit: hybrids of Felis catus \"that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations\". So F5 and later, and only with ACFA or TICA registration. Two conditions rather than one, exactly as in Massachusetts, but at five generations rather than three. 6 NYCRR § 180.1(b)(8) repeats the sentence word for word, which is unusual and useful: the regulation cannot be read as narrowing the statute here.",
+          "verifiedOn": "2026-09-05"
         },
         "MN": {
           "status": "unclear",
@@ -4270,10 +4307,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "verifiedOn": "2026-08-04",
-          "cite": "ECL § 11-0103(6)(e)",
-          "quote": "includes and is limited to",
-          "note": "New York's wild animal definition is closed by those five words. Among reptiles it reaches venomous species, named large pythons and monitors, and crocodilians. A chameleon is none of those. Note that New York City bans separately and more broadly."
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the veiled chameleon is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "legal",
@@ -4662,10 +4699,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "verifiedOn": "2026-08-04",
-          "cite": "ECL § 11-0103(6)(e)",
-          "quote": "includes and is limited to",
-          "note": "No tortoise appears in the closed definition, which among reptiles covers venomous species, named large pythons and monitors, and crocodilians."
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the Russian tortoise is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. Native turtles are small game and cannot be possessed; an Asian tortoise is not a native turtle. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         },
         "ID": {
           "status": "legal",
@@ -5070,8 +5107,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "The reptile entry names venomous species plus Burmese, reticulated and African rock pythons. Python regius is not among them.",
-          "verifiedOn": "2026-08-04"
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the ball python is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. Nine constrictors are named and Python regius is not among them. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "legal",
@@ -5462,8 +5501,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "Boidae is not named.",
-          "verifiedOn": "2026-08-04"
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the boa constrictor is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. All four anacondas are named and Boa constrictor is not, so the two are on opposite sides of the New York line. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "legal",
@@ -6191,6 +6232,14 @@
           "quote": "It is unlawful to introduce, multiply, possess, move, or release any arthropod, plant pest, biological control agent, noxious weed, or invasive plant regulated by the Department or the USDA except under permit issued by the Department unless a federal permit, PPQ 526, has been issued by the USDA with concurrence by the Department. No permit shall be issued nor concurrence with a federal permit, PPQ 526 made unless the Department has determined that the arthropod, plant pest, biological control agent, noxious weed, or invasive plant can be contained to prevent escape into the environment or that it will not pose a threat to agriculture, beneficial organisms, or the environment or become a public nuisance.",
           "note": "Florida regulates invertebrates only in water. The prohibited list reaches the zebra and quagga mussels, the mitten crab and the Australian crayfish; the conditional list reaches more crayfish and the arapaima; and every invertebrate entry across both chapters is aquatic. Nothing in either names a terrestrial arthropod, and the captive wildlife chapter answers a tarantula no better, since its no-permit list covers reptiles, amphibians, mammals and birds and its class lists name no invertebrate at all. The rule that does reach arthropods here belongs to the agriculture department: 5B-57.004(1) bars possessing any arthropod \"regulated by the Department or the USDA\" without a permit. That is a federal test as much as a state one, and it is what puts the giant African millipede and the hissing cockroach into the permit tier while leaving this animal out of it, since neither a tarantula nor a scorpion is a plant pest.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(a), (6)(e); 6 NYCRR Part 575",
+          "quote": "Prohibited invasive species cannot be knowingly possessed with the intent to sell, import, purchase, transport or introduce. In addition, no person shall sell, import, purchase, transport, introduce or propagate prohibited invasive species. Regulated invasive species, on the other hand, are species which cannot be knowingly introduced into a free-living state, or introduced by a means that one should have known would lead to such an introduction, although such species shall be legal to possess, sell, buy, propagate and transport.",
+          "note": "New York has two ways to reach an invertebrate and neither takes in a tarantula. ECL § 11-0103(6)(a) defines wildlife as \"wild game and all other animal life existing in a wild state, except fish, shellfish and crustacea\", which is wide enough to include arthropods, but the closed wild animal list at § 11-0103(6)(e) is six clauses of vertebrates and Crocodylia and the dangerous animals regulation at 6 NYCRR § 180.1 names none. The other route is Part 575, whose own definition of animal expressly includes \"arthropods, insects, and their eggs, larvae or young\", and whose invertebrate entries are the zebra mussel, the Asian longhorned beetle and their kind. Nothing on either list is a pet arthropod.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -6568,6 +6617,14 @@
           "cite": "5B-57.004(1); 68-5.006",
           "quote": "It is unlawful to introduce, multiply, possess, move, or release any arthropod, plant pest, biological control agent, noxious weed, or invasive plant regulated by the Department or the USDA except under permit issued by the Department unless a federal permit, PPQ 526, has been issued by the USDA with concurrence by the Department. No permit shall be issued nor concurrence with a federal permit, PPQ 526 made unless the Department has determined that the arthropod, plant pest, biological control agent, noxious weed, or invasive plant can be contained to prevent escape into the environment or that it will not pose a threat to agriculture, beneficial organisms, or the environment or become a public nuisance.",
           "note": "Florida regulates invertebrates only in water. The prohibited list reaches the zebra and quagga mussels, the mitten crab and the Australian crayfish; the conditional list reaches more crayfish and the arapaima; and every invertebrate entry across both chapters is aquatic. Nothing in either names a terrestrial arthropod, and the captive wildlife chapter answers the emperor scorpion no better, since its no-permit list covers reptiles, amphibians, mammals and birds and its class lists name no invertebrate at all. The rule that does reach arthropods here belongs to the agriculture department: 5B-57.004(1) bars possessing any arthropod \"regulated by the Department or the USDA\" without a permit. That is a federal test as much as a state one, and it is what puts the giant African millipede and the hissing cockroach into the permit tier while leaving this animal out of it, since neither a tarantula nor a scorpion is a plant pest.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(a), (6)(e); 6 NYCRR Part 575",
+          "quote": "Prohibited invasive species cannot be knowingly possessed with the intent to sell, import, purchase, transport or introduce. In addition, no person shall sell, import, purchase, transport, introduce or propagate prohibited invasive species. Regulated invasive species, on the other hand, are species which cannot be knowingly introduced into a free-living state, or introduced by a means that one should have known would lead to such an introduction, although such species shall be legal to possess, sell, buy, propagate and transport.",
+          "note": "New York has two ways to reach an invertebrate and neither takes in the emperor scorpion. ECL § 11-0103(6)(a) defines wildlife as \"wild game and all other animal life existing in a wild state, except fish, shellfish and crustacea\", which is wide enough to include arthropods, but the closed wild animal list at § 11-0103(6)(e) is six clauses of vertebrates and Crocodylia and the dangerous animals regulation at 6 NYCRR § 180.1 names none. The other route is Part 575, whose own definition of animal expressly includes \"arthropods, insects, and their eggs, larvae or young\", and whose invertebrate entries are the zebra mussel, the Asian longhorned beetle and their kind. Nothing on either list is a pet arthropod.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6972,6 +7029,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Salvator merianae is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the Argentine tegu is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause names monitors and constrictors and no teiid, so the tegu is untouched. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7363,6 +7428,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Varanus exanthematicus is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. The only monitor Florida prohibits is the Nile, so a savannah monitor needs nothing while its congener cannot be acquired at all.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the savannah monitor is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. Six monitors are named and Varanus exanthematicus is not one of them. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -7408,10 +7481,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "verifiedOn": "2026-08-04",
-          "cite": "ECL § 11-0103(6)(e)",
-          "quote": "includes and is limited to",
-          "note": "The closed definition runs to primates, cats and their hybrids, canids, bears, some reptiles and crocodilians. No rodent is in it."
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the prairie dog is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The constraint that actually bites is the federal CDC and FDA ban on interstate sale imposed after the 2003 monkeypox outbreak, not anything in New York law.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "banned",
@@ -7828,8 +7901,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "Rodentia is outside the definition.",
-          "verifiedOn": "2026-08-04"
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the capybara is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. No rodent appears on either list, which is what makes New York permissive on an animal several states answer through a dangerous-animal statute.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "banned",
@@ -8239,9 +8314,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "quote": "(with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda))",
-          "note": "Expressly carved out of the Canidae entry. Legal statewide, banned in NYC.",
-          "verifiedOn": "2026-08-04"
+          "cite": "ECL § 11-0103(6)(e)(3); 6 NYCRR § 180.1(b)(1)",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York bans the whole of Canidae and then names this animal as one of two exceptions: \"Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda))\". The regulation repeats it. Two things follow. The qualifier is captive bred, so a wild-caught animal is not covered. And New York is the sharpest illustration on this map of the fennec fox being answered by an express carve-out rather than by falling outside a list: the same sentence that clears it bans every other fox in the state.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "banned",
@@ -8670,8 +8746,10 @@
         "NY": {
           "status": "banned",
           "sourceId": "ny-11-0103",
-          "note": "Felidae, with no applicable exception.",
-          "verifiedOn": "2026-08-04"
+          "cite": "ECL § 11-0103(6)(e)(2); § 11-0512(1)(a)",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "Caught by the second clause of the wild animal list, which is the whole family Felidae \"and all hybrids thereof\". § 11-0512(1)(a) then makes it unlawful to knowingly possess, harbor, sell, barter, transfer, exchange or import any wild animal for use as a pet. The exemptions at § 11-0512(2) are institutional, and the only individual one is for a person paralysed from the neck down who has a trained new world monkey. 6 NYCRR § 180.1(b)(8) reaches the same animal independently and its exemptions are equally closed to a pet keeper.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "banned",
@@ -9482,6 +9560,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Named at (14)(l), with no captive-stock qualifier of the kind Massachusetts and Nebraska attach. Florida asks nothing about provenance for this animal.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the chinchilla is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9885,6 +9971,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Named at (14)(i), and again at 68A-6.003(12) for sale without a permit. The contrast with the degu, an animal of similar size and origin that is not on either list, is what makes this a naming exercise rather than a principle.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the guinea pig is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10281,6 +10375,14 @@
           "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Iguana iguana is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the green iguana is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. New York names twelve reptiles and the green iguana is not among them, which is a sharp contrast with Florida, where it was added to the prohibited list in 2021. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -10687,6 +10789,14 @@
           "quote": "(6) Turtles. (a) Take and possession ... 1. No person shall take more than one turtle per day unless authorized by permit ... 4. No person shall take Escambia map turtles (Graptemys ernsti), cooters (Pseudemys spp.), striped mud turtles (Lower Keys population) (Kinosternon baurii) or snapping turtles (Chelydra spp.) from the wild. ... 8. No person shall possess more than two Escambia map turtles (Graptemys ernsti), two box turtles of Florida native species ... or two loggerhead musk turtles (Sternotherus minor). ... (c) Sale - No person shall buy, sell, or possess for sale turtles, their eggs or parts thereof, that have been taken from the wild.",
           "note": "Wild take is barred outright. 68A-25.002(6)(a)4 says no person shall take Escambia map turtles, cooters, Lower Keys striped mud turtles \"or snapping turtles (Chelydra spp.)\" from the wild, and (6)(c) bars buying or selling any turtle taken from the wild. What is not barred is possession: the common snapping turtle is not on the imperiled list at 68A-27.003, is not among the species capped at two, and is a nonvenomous unprotected reptile for the purposes of 68A-6.003(14)(a), so a lawfully acquired captive-bred animal needs no permit. The alligator snapping turtle is the opposite: 68A-25.002(6)(a)5 bars taking, possessing, transporting or selling any Macrochelys at all.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "conditional",
+          "sourceId": "ny-6nycrr-3-3",
+          "cite": "ECL § 11-0103(2)(c); DEC reptile and amphibian seasons",
+          "quote": "\"Small game\" means black, gray and fox squirrels, European hares, varying hares, cottontail rabbits, native frogs, native salamanders, native turtles, native lizards, native snakes, coyotes, red fox (Vulpes vulpes) and gray fox (Urocyon cinereoargenteus) except captive bred red fox or gray fox, raccoon, opossum, or weasel, skunk, bobcat, lynx, muskrat, mink, except mink born in captivity, fisher, otter, beaver, sable and marten but does not include coydogs. ... No person shall, at any time of the year, buy, sell, offer or expose for sale, transport, or have in his possession any fish protected by law, game, protected wildlife ... whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law.",
+          "note": "The one native New York reptile with an open season, which is why it is the only one a private person can lawfully hold. Taking requires a hunting licence, runs 15 July to 30 September statewide, and is limited to a firearm or a bow. The carapace must measure twelve inches or longer in a straight line, the daily bag is five and the season bag is thirty. Everything else about New York natives flows from the same definition and comes out the other way: native turtles are small game, and the snapping turtle is the only one the department opened a season for.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11069,6 +11179,14 @@
           "cite": "68A-6.003(14)(a)",
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Gekko gecko is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the tokay gecko is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11465,6 +11583,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Ambystoma tigrinum is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. It occurs in north Florida and is not on the imperiled list at 68A-27.003, which carries only the frosted and reticulated flatwoods salamanders. Taking one from the wild is a separate question from keeping a lawfully acquired animal.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-6nycrr-3-3",
+          "cite": "ECL §§ 11-0103(2)(c), 11-0107(2), 11-0535; 6 NYCRR Part 182",
+          "quote": "\"Small game\" means black, gray and fox squirrels, European hares, varying hares, cottontail rabbits, native frogs, native salamanders, native turtles, native lizards, native snakes, coyotes, red fox (Vulpes vulpes) and gray fox (Urocyon cinereoargenteus) except captive bred red fox or gray fox, raccoon, opossum, or weasel, skunk, bobcat, lynx, muskrat, mink, except mink born in captivity, fisher, otter, beaver, sable and marten but does not include coydogs. ... No person shall, at any time of the year, buy, sell, offer or expose for sale, transport, or have in his possession any fish protected by law, game, protected wildlife ... whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law.",
+          "note": "The strongest of the native answers, because two independent routes reach it. Native salamanders are small game with no open season, and the eastern tiger salamander, Ambystoma tigrinum, is listed as ENDANGERED in New York, which brings ECL § 11-0535 and the endangered species branch of § 11-0103(6)(c) down on it as well. New York's population is confined to Long Island and is the reason for the listing. The chain runs through a definition nobody expects. ECL § 11-0103(2)(c) puts \"native frogs, native salamanders, native turtles, native lizards, native snakes\" inside the definition of SMALL GAME, which makes them game, which makes them protected wildlife under § 11-0103(6)(c). § 11-0107(2) then bars possessing protected wildlife \"whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law\", so a captive-bred animal bought in another state is in the same position as one caught in a New York yard. And the only possession licence, § 11-0515, is issued for \"propagation, banding, scientific or exhibition purposes\", which is not a pet.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11858,6 +11984,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Varanus niloticus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e)(5); 6 NYCRR § 180.1(b)(14)(ii)",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "Named in both the statute and the regulation. The monitor entry is six species long, the Asiatic water, Nile, white-throat, black-throat, crocodile and Komodo monitors, which means New York regulates Varanidae by species rather than by family. The savannah monitor and the ackie monitor are on neither list and need nothing, so the family a keeper is shopping in matters less here than the exact animal.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11880,8 +12014,10 @@
         "NY": {
           "status": "banned",
           "sourceId": "ny-11-0103",
-          "quote": "Burmese Python (Python m. bivittatus)",
-          "verifiedOn": "2026-08-04"
+          "cite": "ECL § 11-0103(6)(e)(5); 6 NYCRR § 180.1(b)(16)(iii)",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "Named twice. The statute lists \"Burmese Python (Python m. bivittatus)\" and separately \"Indian Python (Python molurus)\", covering the species on both sides of the split, and 6 NYCRR § 180.1(b)(16) lists Python bivittatus by its current binomial. New York is one of the few states to name the reticulated python, both African rock pythons, all four anacondas and both amethystine pythons alongside it, so the whole large-constrictor group is answered rather than just the famous one.",
+          "verifiedOn": "2026-09-05"
         },
         "OH": {
           "sourceId": "oh-935-01",
@@ -12660,6 +12796,14 @@
           "quote": "Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C. ... Hybrids resulting from the cross between wildlife and domestic animal, which are substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild animal shall be regulated as wildlife at the higher and more restricted class of the wild parent.",
           "note": "Class III in Florida is a residual category, \"all other wildlife not listed herein, except those for which a permit is not required\", and the degu lands in it by not being anywhere else. That means a Permit to Possess Class III Wildlife for Personal Use, which costs nothing, runs two years, and requires the applicant to be 16. The thing to notice is what it is not on: 68A-6.003(14) exempts 22 categories from any permit at all, and this animal is not among them. This is the sharpest illustration of how the exemption list works, because the chinchilla is on it at (l) and the degu is not. Two South American caviomorph rodents of similar size and similar husbandry, and one needs a permit because a list written years ago named the other.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the degu is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -13032,6 +13176,14 @@
           "cite": "68A-6.003(14)(a)",
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Ambystoma mexicanum is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. The two flatwoods salamanders are the only Ambystoma on Florida's imperiled list, and both are natives.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the axolotl is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The contrast with the tiger salamander is complete: the Mexican species is unregulated here and its New York relative is endangered and cannot be held at all. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13412,6 +13564,14 @@
           "cite": "68A-25.002(6)(a)1, 8, (c)",
           "quote": "(6) Turtles. (a) Take and possession ... 1. No person shall take more than one turtle per day unless authorized by permit ... 4. No person shall take Escambia map turtles (Graptemys ernsti), cooters (Pseudemys spp.), striped mud turtles (Lower Keys population) (Kinosternon baurii) or snapping turtles (Chelydra spp.) from the wild. ... 8. No person shall possess more than two Escambia map turtles (Graptemys ernsti), two box turtles of Florida native species ... or two loggerhead musk turtles (Sternotherus minor). ... (c) Sale - No person shall buy, sell, or possess for sale turtles, their eggs or parts thereof, that have been taken from the wild.",
           "note": "Florida caps this animal by number rather than by permit, and the cap is two. 68A-25.002(6)(a)8 bars possessing more than \"two box turtles of Florida native species (Florida box turtles [Terrapene bauri]; eastern, Gulf Coast, and three-toed box turtles [Terrapene carolina subsp.]; their taxonomic successors; or hybrids thereof)\", which is written wide enough to reach every box turtle a keeper is likely to have. Take from the wild is one turtle per day at (6)(a)1, by hand, baited hook, minnow seine or dip net only, and (6)(c) bars buying or selling any turtle taken from the wild. No permit is involved at any point, which is why this is easy to miss: the animal is otherwise a nonvenomous unprotected reptile needing nothing.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-6nycrr-3-3",
+          "cite": "ECL §§ 11-0103(2)(c), 11-0107(2); 6 NYCRR Part 182",
+          "quote": "\"Small game\" means black, gray and fox squirrels, European hares, varying hares, cottontail rabbits, native frogs, native salamanders, native turtles, native lizards, native snakes, coyotes, red fox (Vulpes vulpes) and gray fox (Urocyon cinereoargenteus) except captive bred red fox or gray fox, raccoon, opossum, or weasel, skunk, bobcat, lynx, muskrat, mink, except mink born in captivity, fisher, otter, beaver, sable and marten but does not include coydogs. ... No person shall, at any time of the year, buy, sell, offer or expose for sale, transport, or have in his possession any fish protected by law, game, protected wildlife ... whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law.",
+          "note": "Native turtles are small game, and DEC puts the result in one sentence: \"The only turtle species for which there is an open hunting season is the snapping turtle. You may not harvest, take, or possess any other turtle species at any time.\" The woodland box turtle, Terrapene carolina carolina, is separately on the Part 182 list, which reaches it a second time through the species of special concern branch of the protected wildlife definition. The chain runs through a definition nobody expects. ECL § 11-0103(2)(c) puts \"native frogs, native salamanders, native turtles, native lizards, native snakes\" inside the definition of SMALL GAME, which makes them game, which makes them protected wildlife under § 11-0103(6)(c). § 11-0107(2) then bars possessing protected wildlife \"whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law\", so a captive-bred animal bought in another state is in the same position as one caught in a New York yard. And the only possession licence, § 11-0515, is issued for \"propagation, banding, scientific or exhibition purposes\", which is not a pet.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13796,6 +13956,14 @@
           "quote": "Non-native turtles. Red-eared slider (Trachemys scripta elegans): red-eared sliders may be possessed only by permitted individuals or commercial import or export businesses according to the provisions of subsection 68-5.005(4), F.A.C., except as provided below: (a) Red-eared sliders in personal possession prior to July 1, 2007 may continue in the possession of the owner without a permit, except that red-eared sliders less than four inches carapace length may not be possessed after July 1, 2008 without a permit. (b) Red-eared sliders with distinctive aberrant color patterns, including albino or amelanistic specimens, may be possessed without a permit otherwise required by this rule.",
           "note": "Florida is the only state on this map that lets a colour morph out of a restriction it applies to the wild-type animal. Trachemys scripta elegans is a conditional nonnative species, which means a permit, with two exceptions written into the entry: an animal in personal possession before 1 July 2007 stays legal, and any slider \"with distinctive aberrant color patterns, including albino or amelanistic specimens\" may be kept with no permit at all. The logic is ecological rather than about the pet trade: an albino slider that escapes does not survive to establish, so the state has no reason to restrict it. The federal four-inch rule at 21 C.F.R. 1240.62 still applies on top, and Florida writes its own version of it into the grandfather clause.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-part-575",
+          "cite": "6 NYCRR Part 575, regulated species",
+          "quote": "Prohibited invasive species cannot be knowingly possessed with the intent to sell, import, purchase, transport or introduce. In addition, no person shall sell, import, purchase, transport, introduce or propagate prohibited invasive species. Regulated invasive species, on the other hand, are species which cannot be knowingly introduced into a free-living state, or introduced by a means that one should have known would lead to such an introduction, although such species shall be legal to possess, sell, buy, propagate and transport.",
+          "note": "The red-eared slider is on New York's invasive species list, and the tier matters more than the listing. Regulated species \"shall be legal to possess, sell, buy, propagate and transport\" and may only not be knowingly introduced into a free-living state; it is the prohibited tier that bars possession. The duty the listing creates falls on the seller rather than the keeper: a pet shop selling a regulated species must label it as one. Goldfish and koi are on the same list, which is a useful measure of how much it restricts. Note that the state's own native turtles are treated far more strictly: they are small game with no open season and cannot be possessed at all, while this introduced one is merely labelled.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14170,6 +14338,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Centrochelys sulcata is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the sulcata tortoise is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14543,6 +14719,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Both Nebraska hognose species are on the three-per-species list at § 001.03A4, the plains hognose Heterodon nasicus and the eastern hognose H. platirhinos. That is unusually even-handed: most states on this map treat the two differently, because the eastern is the one that tends to be listed. Nebraska caps them identically. The route that matters for a pet is § 001.03A2: an animal legally bought or consigned from outside Nebraska may be possessed without regard to numbers, provided the keeper can produce proof of lawful acquisition, a bill of sale or a consignment record. So the cap is on collecting, and the receipt is what lifts it.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-6nycrr-3-3",
+          "cite": "6 NYCRR § 3.3; ECL §§ 11-0103(2)(c), 11-0107(2); 6 NYCRR Part 182",
+          "quote": "\"Small game\" means black, gray and fox squirrels, European hares, varying hares, cottontail rabbits, native frogs, native salamanders, native turtles, native lizards, native snakes, coyotes, red fox (Vulpes vulpes) and gray fox (Urocyon cinereoargenteus) except captive bred red fox or gray fox, raccoon, opossum, or weasel, skunk, bobcat, lynx, muskrat, mink, except mink born in captivity, fisher, otter, beaver, sable and marten but does not include coydogs. ... No person shall, at any time of the year, buy, sell, offer or expose for sale, transport, or have in his possession any fish protected by law, game, protected wildlife ... whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law.",
+          "note": "Caught twice over. The eastern hognose snake is on the § 3.3 native snake list with no open season, and it is separately listed as a species of special concern on DEC's Part 182 list, which is named directly in the definition of protected wildlife at ECL § 11-0103(6)(c). The western hognose, the ordinary pet-trade animal, is not a New York species, so the answer turns on which hognose a keeper actually has, and the state list only reaches one of them. The chain runs through a definition nobody expects. ECL § 11-0103(2)(c) puts \"native frogs, native salamanders, native turtles, native lizards, native snakes\" inside the definition of SMALL GAME, which makes them game, which makes them protected wildlife under § 11-0103(6)(c). § 11-0107(2) then bars possessing protected wildlife \"whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law\", so a captive-bred animal bought in another state is in the same position as one caught in a New York yard. And the only possession licence, § 11-0515, is issued for \"propagation, banding, scientific or exhibition purposes\", which is not a pet.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14913,6 +15097,14 @@
           "cite": "166 NAC 8, definitions; § 001.08A",
           "quote": "Cage and Aviary Birds - Means those captive-reared birds, not native to Nebraska, such as parrots, exotic finches, and canaries, which are adapted to live and breed in a cage. For purposes of this regulation, the monk parakeet (Myiopsitta monachus) is not a cage and aviary bird.",
           "note": "Cleared by the last line of the importation list, \"All Cage and Aviary Birds\", which the chapter defines as captive-reared birds not native to Nebraska such as parrots, exotic finches and canaries. The African grey is squarely inside that. The definition also carries the state's one carve-out, for the monk parakeet, so the sentence that clears this bird is the same sentence that bans that one. Nebraska adds nothing to the federal position, so the constraint that actually bites is CITES Appendix I and the Wild Bird Conservation Act, which together mean a lawfully sold bird is captive-bred with paperwork.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the African grey is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The federal layer is the operative one for this species: CITES Appendix I and the Wild Bird Conservation Act mean a lawfully sold bird is captive-bred with paperwork.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15285,6 +15477,14 @@
           "quote": "It is unlawful to introduce, multiply, possess, move, or release any arthropod, plant pest, biological control agent, noxious weed, or invasive plant regulated by the Department or the USDA except under permit issued by the Department unless a federal permit, PPQ 526, has been issued by the USDA with concurrence by the Department. No permit shall be issued nor concurrence with a federal permit, PPQ 526 made unless the Department has determined that the arthropod, plant pest, biological control agent, noxious weed, or invasive plant can be contained to prevent escape into the environment or that it will not pose a threat to agriculture, beneficial organisms, or the environment or become a public nuisance.",
           "note": "Florida answers this animal through its agriculture department, not FWC, and the wildlife chapters give no hint of it. 5B-57.004(1) makes it unlawful to possess any arthropod \"regulated by the Department or the USDA\" without a permit from the Division of Plant Industry, unless a federal PPQ 526 has already issued with the Department's concurrence. Archispirostreptus gigas moves interstate under exactly that federal permit, which is what brings it inside the sentence. The permit standard is containment: the Department must find the animal can be contained to prevent escape into the environment, which in practice means secure enclosure rather than a fee. Nothing in Chapter 68-5 or Chapter 68A-6 names it, so an entry resting on those chapters alone would read this as unrestricted.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(a), (6)(e); 6 NYCRR Part 575",
+          "quote": "Prohibited invasive species cannot be knowingly possessed with the intent to sell, import, purchase, transport or introduce. In addition, no person shall sell, import, purchase, transport, introduce or propagate prohibited invasive species. Regulated invasive species, on the other hand, are species which cannot be knowingly introduced into a free-living state, or introduced by a means that one should have known would lead to such an introduction, although such species shall be legal to possess, sell, buy, propagate and transport.",
+          "note": "New York has two ways to reach an invertebrate and neither takes in the giant African millipede. ECL § 11-0103(6)(a) defines wildlife as \"wild game and all other animal life existing in a wild state, except fish, shellfish and crustacea\", which is wide enough to include arthropods, but the closed wild animal list at § 11-0103(6)(e) is six clauses of vertebrates and Crocodylia and the dangerous animals regulation at 6 NYCRR § 180.1 names none. The other route is Part 575, whose own definition of animal expressly includes \"arthropods, insects, and their eggs, larvae or young\", and whose invertebrate entries are the zebra mussel, the Asian longhorned beetle and their kind. Nothing on either list is a pet arthropod. The live constraint on this animal is a federal USDA APHIS plant pest permit rather than anything New York does.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15494,8 +15694,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "The reptile entry names venomous species plus Burmese, reticulated and African rock pythons. Corn snake is not among them.",
-          "verifiedOn": "2026-08-27"
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the corn snake is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The § 3.3 native snake list names the black rat snake, Pantherophis alleghaniensis, and not this species, which is a southeastern animal and not a New York one. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         },
         "OH": {
           "status": "legal",
@@ -15835,10 +16037,12 @@
           "verifiedOn": "2026-08-27"
         },
         "NY": {
-          "status": "legal",
-          "sourceId": "ny-11-0103",
-          "note": "The reptile entry names venomous species plus Burmese, reticulated and African rock pythons. Milk snake is not among them.",
-          "verifiedOn": "2026-08-27"
+          "status": "banned",
+          "sourceId": "ny-6nycrr-3-3",
+          "cite": "6 NYCRR § 3.3; ECL §§ 11-0103(2)(c), 11-0107(2)",
+          "quote": "\"Small game\" means black, gray and fox squirrels, European hares, varying hares, cottontail rabbits, native frogs, native salamanders, native turtles, native lizards, native snakes, coyotes, red fox (Vulpes vulpes) and gray fox (Urocyon cinereoargenteus) except captive bred red fox or gray fox, raccoon, opossum, or weasel, skunk, bobcat, lynx, muskrat, mink, except mink born in captivity, fisher, otter, beaver, sable and marten but does not include coydogs. ... No person shall, at any time of the year, buy, sell, offer or expose for sale, transport, or have in his possession any fish protected by law, game, protected wildlife ... whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law.",
+          "note": "The eastern milk snake is on the § 3.3 native snake list, which is what separates it from the corn snake and the California kingsnake in New York: those two are not New York species and nothing reaches them, while this one is small game with no open season. A pet-trade milk snake is very often Lampropeltis triangulum, so the common name is not a safe guide here. The chain runs through a definition nobody expects. ECL § 11-0103(2)(c) puts \"native frogs, native salamanders, native turtles, native lizards, native snakes\" inside the definition of SMALL GAME, which makes them game, which makes them protected wildlife under § 11-0103(6)(c). § 11-0107(2) then bars possessing protected wildlife \"whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law\", so a captive-bred animal bought in another state is in the same position as one caught in a New York yard. And the only possession licence, § 11-0515, is issued for \"propagation, banding, scientific or exhibition purposes\", which is not a pet.",
+          "verifiedOn": "2026-09-05"
         },
         "NJ": {
           "status": "permit",
@@ -16235,8 +16439,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "New York's restricted list names venomous species plus three specific large pythons. Boidae is not named as a family, confirmed directly from the boa constrictor entry for this same source.",
-          "verifiedOn": "2026-08-27"
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the rosy boa is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         },
         "NYC": {
           "status": "banned",
@@ -16467,11 +16673,12 @@
           "verifiedOn": "2026-08-27"
         },
         "NY": {
-          "status": "banned",
-          "sourceId": "ny-11-0512",
-          "cite": "ECL § 11-0512; § 11-0515(1), 6 NYCRR Part 175",
-          "note": "ECL § 11-0512 bars knowingly possessing, harboring or importing 'any wild animal for use as a pet.' DEC's own guidance names bats, large cats, owls, skunks, sugar gliders, flying squirrels and wolves as requiring the special license under § 11-0515(1)/6 NYCRR Part 175, which is issued for education, exhibition, propagation or rehabilitation, not personal pet-keeping.",
-          "verifiedOn": "2026-08-27"
+          "status": "unclear",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(2)(c), (6)(c), 11-0511, 11-0512; 6 NYCRR Part 175",
+          "quote": "\"Small game\" means black, gray and fox squirrels, European hares, varying hares, cottontail rabbits, native frogs, native salamanders, native turtles, native lizards, native snakes, coyotes, red fox (Vulpes vulpes) and gray fox (Urocyon cinereoargenteus) except captive bred red fox or gray fox, raccoon, opossum, or weasel, skunk, bobcat, lynx, muskrat, mink, except mink born in captivity, fisher, otter, beaver, sable and marten but does not include coydogs. ... No person shall, at any time of the year, buy, sell, offer or expose for sale, transport, or have in his possession any fish protected by law, game, protected wildlife ... whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law.",
+          "note": "Recorded unclear because the statutes point one way and the agency points the other, and the regulation that would settle it could not be read. Every statutory route comes up empty. The flying squirrel is not on the closed wild animal list at § 11-0103(6)(e), so § 11-0512 does not reach it. It is not on 6 NYCRR § 180.1, so the permit requirement in § 11-0511 does not attach. It is not protected wildlife: the small game definition at § 11-0103(2)(c) names \"black, gray and fox squirrels\" and no other, and no flying squirrel appears anywhere on DEC's endangered, threatened and special concern list. On the statutes alone this animal is unprotected wildlife and unregulated. DEC and every secondary source say possession requires a licence, and the place a general possession rule would live is 6 NYCRR Part 175, which New York publishes only through Westlaw. Westlaw serves individual NYCRR sections to a browser User-Agent but its document identifiers for Part 175 could not be resolved from here, so that chapter is the open item. This entry previously read as banned, which is the likely answer and is not one the readable law supports.",
+          "verifiedOn": "2026-09-05"
         },
         "NH": {
           "status": "banned",
@@ -16677,10 +16884,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "cite": "ECL § 11-0103(6)(e)",
-          "quote": "Asiatic (water) Monitor (Varanus salvator); Nile Monitor (Varanus niloticus); White Throat Monitor (Varanus albigularis); Black Throat Monitor (Varanus albigularis ionides); Crocodile Monitor (Varanus salvadori); Komodo Dragon (Varanus komodoensis)",
-          "note": "New York's closed dangerous-wild-animal definition names six specific large monitors. Varanus acanthurus is absent.",
-          "verifiedOn": "2026-08-27"
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the ackie monitor is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. Like the savannah monitor, outside a monitor list written species by species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         },
         "MA": {
           "status": "legal",
@@ -17319,13 +17526,12 @@
           "verifiedOn": "2026-08-27"
         },
         "NY": {
-          "status": "permit",
+          "status": "banned",
           "sourceId": "ny-6nycrr-3-3",
-          "cite": "6 NYCRR § 3.3",
-          "quote": "native snakes shall mean all life stages, including eggs, of the following species: ... common garter snake ... Open season: None.",
-          "permitFor": "personal",
-          "note": "New York's 2006 native-herp law classifies the common garter snake as protected native wildlife with no open season, and DEC's own published guidance says the law 'does not differentiate between wild-caught and captive-bred animals.' DEC issues a possession permit for keeping a limited number of common native herp species, but that permit doesn't allow buying, selling, or breeding, so even a pet-store garter snake sits in a different legal category here than almost anywhere else.",
-          "verifiedOn": "2026-08-27"
+          "cite": "6 NYCRR § 3.3; ECL §§ 11-0103(2)(c), 11-0107(2), 11-0515",
+          "quote": "\"Small game\" means black, gray and fox squirrels, European hares, varying hares, cottontail rabbits, native frogs, native salamanders, native turtles, native lizards, native snakes, coyotes, red fox (Vulpes vulpes) and gray fox (Urocyon cinereoargenteus) except captive bred red fox or gray fox, raccoon, opossum, or weasel, skunk, bobcat, lynx, muskrat, mink, except mink born in captivity, fisher, otter, beaver, sable and marten but does not include coydogs. ... No person shall, at any time of the year, buy, sell, offer or expose for sale, transport, or have in his possession any fish protected by law, game, protected wildlife ... whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law.",
+          "note": "The common garter snake is the fifth name on the § 3.3 list of native snakes, and subdivision (b) of that section reads in full \"Open season. None.\" This entry previously read as requiring a permit, which understates it: no licence issued under § 11-0515 covers keeping one as a pet, so there is nothing to apply for. The chain runs through a definition nobody expects. ECL § 11-0103(2)(c) puts \"native frogs, native salamanders, native turtles, native lizards, native snakes\" inside the definition of SMALL GAME, which makes them game, which makes them protected wildlife under § 11-0103(6)(c). § 11-0107(2) then bars possessing protected wildlife \"whether taken within the state or coming from without the state, except as permitted by the Fish and Wildlife Law\", so a captive-bred animal bought in another state is in the same position as one caught in a New York yard. And the only possession licence, § 11-0515, is issued for \"propagation, banding, scientific or exhibition purposes\", which is not a pet.",
+          "verifiedOn": "2026-09-05"
         },
         "OH": {
           "status": "legal",
@@ -17723,10 +17929,11 @@
         },
         "NY": {
           "status": "legal",
-          "sourceId": "ny-6nycrr-3-3",
-          "cite": "6 NYCRR § 3.3(a)",
-          "note": "New York's native-snake statute names its own indigenous species by common name, including the eastern milk snake (Lampropeltis triangulum); the California kingsnake is a Pacific coast species and isn't one of them, so it doesn't inherit the native-species possession permit that a New York garter snake needs. No other statute restricts it.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the California kingsnake is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The § 3.3 native snake list names the eastern milk snake, a Lampropeltis, and the California kingsnake is a different species that does not occur in New York. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         },
         "OH": {
           "status": "legal",
@@ -18124,9 +18331,11 @@
         },
         "NY": {
           "status": "legal",
-          "sourceId": "ny-dangerous-animal",
-          "note": "Cacatuidae does not appear on New York's Dangerous Animal License species list, which is built around big cats, bears, primates, and venomous reptiles. No New York statute or DEC regulation restricting parrot or cockatoo possession generally turned up in this research.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and a cockatoo is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. No bird appears on the wild animal list at all, and the only bird New York restricts on this map is the monk parakeet, which is regulated rather than prohibited under Part 575.",
+          "verifiedOn": "2026-09-05"
         },
         "OH": {
           "status": "legal",
@@ -18279,10 +18488,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "cite": "ECL § 11-0103(6)(e)",
-          "quote": "includes and is limited to",
-          "note": "No tortoise or Testudinidae entry appears anywhere in the closed dangerous-wild-animal definition, which among reptiles names only certain large monitors, big constrictors, venomous species and crocodilians.",
-          "verifiedOn": "2026-08-27"
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the red-footed tortoise is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         },
         "MA": {
           "status": "conditional",
@@ -18812,6 +19021,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Pogona vitticeps is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the bearded dragon is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18981,6 +19198,14 @@
           "cite": "68A-6.003(14)(a)",
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Eublepharis macularius is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the leopard gecko is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -19152,6 +19377,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Correlophus ciliatus is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. Florida attaches no conservation-status test to its clearance, so unlike Massachusetts the IUCN listing for this species does not reach it.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the crested gecko is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19321,6 +19554,14 @@
           "cite": "68A-6.003(14)(a)",
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Tiliqua scincoides is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the blue-tongue skink is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -19492,6 +19733,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Trioceros jacksonii is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and Jackson's chameleon is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19661,6 +19910,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Anolis carolinensis is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. Answered twice over, since 68A-6.003(12) separately says no permit is required for the sale of \"chameleons (Anolis)\", using the old trade name for the genus.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the green anole is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. No Anolis is a New York species, so the small game definition does not reach it either. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19824,6 +20081,14 @@
           "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
           "note": "Named at (14)(f) with no qualifier, so the entry reaches the domestic rabbit without the wild-versus-domestic sorting that Minnesota, Illinois and Massachusetts each have to do for the same species.",
           "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1",
+          "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
+          "note": "New York regulates exotic animals through a closed list rather than an open standard, and the domestic rabbit is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. New York's native lagomorphs, the cottontail and the varying hare, are small game and therefore protected wildlife, and Oryctolagus cuniculus is neither of them.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19985,6 +20250,14 @@
           "cite": "5B-57.004(1)",
           "quote": "It is unlawful to introduce, multiply, possess, move, or release any arthropod, plant pest, biological control agent, noxious weed, or invasive plant regulated by the Department or the USDA except under permit issued by the Department unless a federal permit, PPQ 526, has been issued by the USDA with concurrence by the Department. No permit shall be issued nor concurrence with a federal permit, PPQ 526 made unless the Department has determined that the arthropod, plant pest, biological control agent, noxious weed, or invasive plant can be contained to prevent escape into the environment or that it will not pose a threat to agriculture, beneficial organisms, or the environment or become a public nuisance.",
           "note": "Florida answers this animal through its agriculture department, not FWC, and the wildlife chapters give no hint of it. 5B-57.004(1) makes it unlawful to possess any arthropod \"regulated by the Department or the USDA\" without a permit from the Division of Plant Industry, unless a federal PPQ 526 has already issued with the Department's concurrence. Gromphadorhina portentosa moves interstate under exactly that federal permit, which is what brings it inside the sentence. The permit standard is containment: the Department must find the animal can be contained to prevent escape into the environment, which in practice means secure enclosure rather than a fee. Nothing in Chapter 68-5 or Chapter 68A-6 names it, so an entry resting on those chapters alone would read this as unrestricted. The same reasoning reaches it as reaches the millipede, and for the same reason: it is the federal plant-pest status that does the work, not anything Florida wrote about the species.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(a), (6)(e); 6 NYCRR Part 575",
+          "quote": "Prohibited invasive species cannot be knowingly possessed with the intent to sell, import, purchase, transport or introduce. In addition, no person shall sell, import, purchase, transport, introduce or propagate prohibited invasive species. Regulated invasive species, on the other hand, are species which cannot be knowingly introduced into a free-living state, or introduced by a means that one should have known would lead to such an introduction, although such species shall be legal to possess, sell, buy, propagate and transport.",
+          "note": "New York has two ways to reach an invertebrate and neither takes in the Madagascar hissing cockroach. ECL § 11-0103(6)(a) defines wildlife as \"wild game and all other animal life existing in a wild state, except fish, shellfish and crustacea\", which is wide enough to include arthropods, but the closed wild animal list at § 11-0103(6)(e) is six clauses of vertebrates and Crocodylia and the dangerous animals regulation at 6 NYCRR § 180.1 names none. The other route is Part 575, whose own definition of animal expressly includes \"arthropods, insects, and their eggs, larvae or young\", and whose invertebrate entries are the zebra mussel, the Asian longhorned beetle and their kind. Nothing on either list is a pet arthropod. As with the millipede, the USDA permit for interstate movement is the rule that actually applies.",
           "verifiedOn": "2026-09-05"
         }
       }

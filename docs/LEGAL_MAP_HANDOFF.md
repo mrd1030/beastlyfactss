@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 18 (AZ, CO, CT, DE, FL, HI, IL, MA, MD, MI, MN, NE, NM, NV, OR, PA, TN, TX) |
-| Unread cells | 430 |
-| Cached primary sources | 43 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 19 (AZ, CO, CT, DE, FL, HI, IL, MA, MD, MI, MN, NE, NM, NV, NY, OR, PA, TN, TX) |
+| Unread cells | 400 |
+| Cached primary sources | 44 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
-Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts, Nebraska and Florida sit on
-`claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main once it
+Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts, Nebraska, Florida and New York sit
+on `claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main once it
 lands.
 
 ## The loop
@@ -99,6 +99,17 @@ the species, and bars selling one at any number. The garter snake, the flying sq
 prairie dog all sat on this map as unrestricted with accurate notes about a statute that was never
 going to reach them.
 
+**A prohibition hidden in a definition.** New York's famous rule is the closed "wild animal" list
+that bars keeping a serval or a Burmese python as a pet, and it answers almost nothing else. What
+reaches every native snake, lizard, salamander and turtle in the state is ECL § 11-0103(2)(c), which
+puts them inside the definition of SMALL GAME. Small game is game, game is protected wildlife, and
+§ 11-0107(2) then bars possessing protected wildlife "whether taken within the state or coming from
+without the state", which closes the captive-bred-out-of-state argument in advance. The only
+possession licence is issued for propagation, science or exhibition. Nothing in that chain contains
+the word prohibited, and the animal it prohibits is a pet-store garter snake. When a state's
+possession rule seems to have no teeth, check whether its definitions section has quietly made the
+animal game.
+
 **An exception buried above the list.** Massachusetts runs a closed exemption list, and the natural
 way to read it is to find your animal's group and stop. That is wrong there, because 321 CMR 9.01(3)
 sits above every group listing and says no species may be exempted if it is federally listed, in the
@@ -140,14 +151,24 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| NY | New York | 30 | 4 sources on file |
 | GA | Georgia | 29 | 4 sources on file |
 | NYC | New York City | 29 | 1 source on file |
 | NJ | New Jersey | 28 | 3 sources on file |
 | UT | Utah | 27 | 5 sources on file |
+| AL | Alabama | 20 | 3 sources on file |
 
 ## Loose ends
 
+- **New York has one unclear cell and it is the sharpest statute-versus-practice gap on the map.**
+  The flying squirrel is on none of New York's lists. It is not a "wild animal" under ECL
+  § 11-0103(6)(e), so the pet ban at § 11-0512 misses it. It is not on 6 NYCRR § 180.1, so the
+  permit requirement at § 11-0511 does not attach. And it is not small game, because that definition
+  names "black, gray and fox squirrels" and stops, nor is it on any DEC species list. On the
+  readable law it is unregulated wildlife. DEC says a licence is required and none is issued for
+  pets. The rule that would close the gap is 6 NYCRR Part 175, and New York publishes the NYCRR only
+  through Westlaw, whose document guids for that Part could not be resolved from here. Individual
+  sections DO render with a browser User-Agent once you have the guid, so anyone who can walk the
+  Westlaw browse tree in a real browser can settle this in one fetch.
 - **Florida has no open cells, and one reading that rests on the agency rather than the rule.**
   Class II item 24 in 68A-6.002 reads "Wolves, coyotes, jackals (family Canidae)", and the
   parenthetical on its face makes every fox a $140-a-year Class II animal. FWC's own personal pet
@@ -252,10 +273,10 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Ferret, cockatoo, hedgehog, sugar glider, garter snake and kingsnake are at 51 of 51. Then Russian
-tortoise, hamster, gerbil, guinea pig, veiled chameleon, chinchilla, fennec fox and serval at 50.
-Eight animals are one jurisdiction short of complete, which is the largest article-ready batch this
-map has had.
+Ten animals are now at 51 of 51: hamster, gerbil, guinea pig, chinchilla, ferret, cockatoo,
+hedgehog, sugar glider, garter snake and kingsnake. Seven more are one short at 50: Russian
+tortoise, quaker parakeet, veiled chameleon, fennec fox, serval, prairie dog and capybara. That is
+seventeen animals at or near full coverage and the largest article-ready batch this map has had.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -297,6 +318,13 @@ Maryland is the only state that answers it by weight: § 10-621(b)(1)(iv) reache
 only "if the hybrid weighs over 30 pounds", with no generation test anywhere in the section. The
 line is drawn on the individual animal rather than its ancestry, which is the one version of
 this rule whose answer could change as a cat grows.
+
+New York is the thirteenth Bengal answer and the strictest generation rule on the map. Felidae "and
+all hybrids thereof" is a wild animal, with one exit: hybrids of Felis catus "that are registered by
+the American Cat Fanciers Association or the International Cat Association provided that such cats
+be without any wild felid parentage for a minimum of five generations". Two conditions, like
+Massachusetts, but at five generations rather than three, and 6 NYCRR § 180.1(b)(8) repeats the
+sentence word for word, which forecloses reading the regulation as narrower than the statute.
 
 Florida is the twelfth Bengal answer and the only one written as a resemblance test. 68A-6.002(1)(d)
 reaches a wildlife-domestic hybrid only where it is "substantially similar in size, characteristics
