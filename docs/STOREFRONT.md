@@ -153,6 +153,29 @@ uses for likes and comments.
    the token is still in the email, and pasting the link verifies it directly
    through `verifyOtp({ token_hash })` with no redirect involved.
 
+### Public details end up on every receipt
+
+Stripe prints the account's public business details on the receipt it emails a
+buyer. On a fresh account those default to the personal email and phone the
+account was opened with, which is not something to hand to strangers who buy a
+$8.99 PDF.
+
+Settings -> Business -> Public details:
+
+- **Support email:** a receivable address on the domain, not a personal inbox.
+  `noreply@beastlyfacts.com` is send-only and will not do. Cloudflare Email
+  Routing forwards `support@beastlyfacts.com` to wherever you actually read
+  mail, free, and the DNS is already there.
+- **Support phone:** clear it if Stripe allows. It generally wants an email or
+  a phone rather than both, so fill the email first.
+- **Support website:** `https://beastlyfacts.com/contact/`.
+
+Check this in live mode as well as the Sandbox before the first real sale. The
+two can hold different values and live is the one buyers see.
+
+Worth a look while in there: Settings -> Climate. If Stripe Climate is on, it
+takes 1% of gross revenue, roughly 9 cents per package.
+
 ### Do NOT turn off "Confirm email"
 
 Authentication -> Sign In / Providers has a **Confirm email** toggle, and it is
