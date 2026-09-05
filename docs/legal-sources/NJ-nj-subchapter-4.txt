@@ -1,0 +1,1503 @@
+SOURCE: N.J.A.C. 7:25 Subchapter 4, Endangered, Nongame and Exotic Wildlife
+URL: https://dep.nj.gov/wp-content/uploads/rules/rules/njac7-25.pdf
+FETCHED: 2026-09-05 (NJDEP courtesy copy of the whole of N.J.A.C. 7:25; this file is subchapter 4, sections 4.1 through 4.18, extracted with pypdf. Page headers and the courtesy-copy banner stripped.)
+
+7:25-4.1 Definitions
+
+The following words and terms, when used in this subchapter, shall have the following
+meanings unless the context clearly indicates otherwise.
+
+"Breeding population" means, for birds, the species' population, or assemblage of
+individuals of a species, present in the State during the nesting season (actual dates of the
+nesting season vary among species).
+
+"Butt-end band" means a band with an open seam locked around the leg of a bird of any
+age using pliers or a similar tool and which is obtained from a source approved by the
+Department, inscribed with a code approved by the Department in sizes stipulated by the
+Department for each species of bird.
+
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+"Captive-bred bird" means any bird that is hatched in captivity from eggs produced by
+captive parent birds.
+
+"Color mutation" means a color which is different and distinctive from the normal,
+natural color for that species of animal, as defined in reference texts commonly
+recognized as authoritative in the field of zoology, ornithology or aviculture, which is
+produced by breeding together animals with aberrant (mutated) color-producing genes.
+
+"Department" means the State's Department of Environmental Protection.
+
+"Director" means the Director of the Division or its successor within the Department of
+Environmental Protection.
+
+"Division" means the Division of Fish and Wildlife or its successor within the
+Department of Environmental Protection.
+
+"Endangered" (E) means a species whose prospects for survival within the State are in
+immediate danger due to one or many factors: a loss of or change in habitat,
+overexploitation, predation, competition, disease. An endangered species requires
+immediate assistance or extinction will probably follow. See N.J.A.C. 7:25-4.13(b) for
+listing.
+
+"Exotic mammal, bird, reptile or amphibian", means any nongame species or mammal,
+bird, reptile or amphibian not indigenous to New Jersey.
+
+"Non-breeding population" means, for birds, the species' population, or assemblage of
+individuals of a species, present in the State during the parts of the year outside of the
+nesting season (actual dates of the nesting season vary among species).
+
+"Nongame species" means any wildlife for which a legal hunting or trapping season has
+not been established in New Jersey or which has not been classified as an endangered
+species by statute or regulation of this State.
+
+"Person" shall be defined to include but not limited to corporations, companies,
+associations, societies including non-profit organizations, firms, partnerships, joint stock
+companies, individuals and governmental entities.
+
+"Seamless leg band" means a solid ring leg band from a source approved by the
+Department, inscribed with a code approved by the Department, in sizes stipulated by the
+Department for each species of bird, which is slipped onto the leg of a newly hatched
+captive-bred bird and which is incapable of being removed or reopened when the bird has
+reached adult size without either destroying the band or injuring the bird.
+
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+"Secure-stable" (S) means a species that appears to be secure in the State and not in any
+immediately foreseeable danger of becoming "endangered," "threatened," or "special
+concern."
+
+"Special concern" (SC) means a species that warrants special attention by the Department
+because of inherent vulnerability to environmental deterioration or habitat modification
+that would result in its becoming threatened if conditions surrounding the species begin
+or continue to deteriorate. Factors that can lead to classification as special concern
+include, but are not limited to, species rarity in the State, highly specialized food and/or
+habitat requirements, low reproductive rate, isolated populations of the species within the
+State and/or other characteristics that make the species particularly susceptible to
+environmental or habitat changes. This category includes a species that meets the
+foregoing criteria and for which there is little understanding of its current population
+status in the State.
+
+"Threatened" (T) means a species that may become endangered if conditions surrounding
+it begin to or continue to deteriorate.
+
+"Undetermined-unknown" (U) means a species that cannot be assigned a status of
+endangered, threatened, special concern or secure-stable because not enough information
+exists on which to base such a determination.
+
+"Wild bird" means any bird other than a native, introduced, or feral game bird as defined
+in N.J.S.A. 23:4-49 and other than a domesticated bird such as a chicken, turkey, guinea
+fowl, goose, duck, pigeon, or peafowl. "Wild bird" also means the egg of a wild bird
+
+7:25-4.2 Permit required
+
+(a)  Except as hereinafter provided, no person shall possess any nongame species or
+exotic species of any mammal, bird, reptile or amphibian unless such person has first
+received both the appropriate permit from the Department as listed in N.J.A.C. 7:25-
+4.6(a) as well as any other state, municipal, or Federal permits or licenses which may be
+required to possess such species. Any permit issued to an applicant by the Department for
+the possession of any animal shall not exempt that applicant from compliance with any
+other law of the State of New Jersey or any municipal or Federal law. An application to
+the Department for a permit shall be made using the form prescribed by the Department.
+Any false representation by the applicant or a permittee who knows or reasonably should
+know that the representation is false, and who has submitted the representation to induce
+the Department to issue a permit or take any other action, shall subject the applicant or
+permittee to all penalties available under State law, including revocation of any permit
+obtained based upon false information. All permits issued by the Department under this
+chapter are valid only when used by the permittee in accordance with the terms and
+conditions of the permit and the regulations governing that permit. The Department shall,
+upon written notice to the permittee, revoke any permit listed in N.J.A.C. 7:25-4.6(a)
+issued to any person who ceases to consistently meet the eligibility criteria for that
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+particular permit and may, in its discretion, seek an order from the Director or a court of
+competent jurisdiction allowing immediate removal of any animal possessed under that
+permit. Written notices of violation against a permittee shall set forth the terms of the
+permit or the regulation which the Department alleges the permittee has violated and the
+penalty sought. Notices of violation shall be brought and if not settled, contested,
+pursuant to the Administrative Procedure Act, N.J.S.A. 52:14-1 et seq., or the rules of the
+court with jurisdiction over the claim of violation. The Department may settle all claims
+for penalties pursuant to N.J.S.A. 23:2A-10. Revocation of all Department-issued permits
+for repeated violations shall occur as set forth in (c) below.
+
+(b)  No person shall liberate within this State any nongame species or exotic mammal,
+bird, reptile or amphibian unless such person has first received a permit from the
+Department which explicitly allows the release of nongame species or exotic mammals,
+birds, reptiles or amphibians.
+
+(c)  Upon written notice to the permittee, the Department may suspend any type of exotic
+or nongame species permit described in (a) above as listed in N.J.A.C. 7:25-4.6 for six
+months based upon final agency action establishing that a violation of a permit condition
+has occurred or that a violation of any regulation appearing in this subchapter has
+occurred as a result of a plea of guilt, court conviction or final agency action establishing
+guilt. A notice of suspension may be mailed to the permittee together with any
+administrative notice of violation on which it is based, but the suspension shall not take
+effect until the deadline to request a hearing concerning the notice of violation has
+elapsed. In the event of a timely request to the Department for a hearing on an
+administrative notice of violation, no proposed suspension shall take effect until final
+agency action on the notice of violation and, if appealed, until all appeals of the final
+agency action have been concluded and the violation has been affirmed. In the event of
+municipal or Superior Court conviction of a violation of any regulation in this subchapter,
+no proposed suspension mailed to the permittee shall take effect until all appeals from the
+conviction have been concluded and conviction of the violation has been affirmed. If the
+permit expires during the period of its suspension, no application for any other permit to
+reacquire possession of any animal possessed pursuant to the suspended permit may be
+made until the six month suspension period has elapsed. During the suspension period, all
+animals possessed pursuant to any suspended permit must be removed from the custody
+and control of the permittee and placed in the custody of an individual licensed by the
+Division or, as permitted by Federal law, with a person residing outside of New Jersey in
+accordance with that state's laws, at the sole expense of the permittee.
+
+(d)  Upon written notice to the permittee, the Department may revoke all Division-issued
+permits described in (a) above as listed in N.J.A.C. 7:25-4.6 upon a finding that in any
+five year period, two or more violations of any permit condition or any regulations
+appearing in this subchapter have occurred. Except by order of the Division Director as
+provided below, no permit whatsoever shall be issued by the Division to the violator of
+permit conditions or regulations within two years from the date of the final agency action
+affirming a violation or within two years of a conviction or guilty plea in municipal or
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Superior Court, whichever constitutes the second violation or within three years from the
+date of the final agency action affirming a violation or within three years of a conviction
+or guilty plea in municipal or superior court, whichever constitutes the third or
+subsequent violation. The two and three year period of disqualification above shall be
+computed beginning from the date of any court order or final agency action affirming the
+violation which is not appealed, or, if appealed, from the filing date of the order as
+entered by the last court of competent jurisdiction to which any party has appealed which
+affirms the conviction or final agency action. In the event of the imposition of a two or
+three year period of disqualification, a permittee whose violations do not arise from
+possession of animals authorized pursuant to a hobby permit previously issued to the
+now-disqualified permittee may petition the Division Director to retain the hobby permit
+and the animal specifically authorized for possession pursuant to that permit which was
+in the physical possession of the permittee prior to the date of the Notice of Revocation if
+the Director determines, in his or her sole discretion and based upon the evidence
+submitted by the permittee, that there is a high probability that the animal's well-being
+will be jeopardized or its life endangered if the animal is separated from daily contact
+with the permittee during the course of the disqualification period. In the event the
+Director denies this petition, the former permittee may petition the Director for
+permission to reapply for a hobby permit to regain possession of the animal if the
+Division Director determines that there is physical evidence verified by an affidavit from
+a licensed veterinarian submitted by the former permittee that the animal's life is plainly
+in danger or its well-being is jeopardized solely as a result of its separation from the
+former permittee. The permittee may not possess any animals under a hobby permit
+issued or extended at the discretion of the Director other than those animals authorized by
+the Director and originally possessed by the permittee and the offspring from
+interbreeding between those individual animals. No animal may be possessed pursuant to
+a hobby permit extended by discretion of the Director if possession of the animal violates
+any Federal, state or local law.
+
+1.  The violator may request a hearing to contest an administrative notice of
+violation, proposed suspension or revocation, as the case may be, in accordance
+with the Administrative Procedure Act, N.J.S.A. 52:14B-1 et seq., and the
+Uniform Administrative Procedure Rules of Practice, N.J.A.C. 1:1. No
+administrative hearing shall be afforded a violator in order to contest a notice of
+proposed suspension or revocation based upon repeated violations as set forth in
+(c) above when the objection to the proposed suspension or revocation constitutes
+a challenge to the facts underlying a violation for which an opportunity for a
+hearing and appeal has already been afforded the permittee.
+
+2.  The request for an administrative hearing must be received in writing by the
+Department within 20 days from the date of mailing of the Division's notice of violation
+or intent to suspend or revoke the permit. If a timely request for a hearing concerning any
+notice of proposed agency action is not received by the Department, any alleged violation
+contained in the notice shall be deemed admitted by the permittee and any suspension or
+revocation proposed in that notice, or in any separately-mailed notice, shall become
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+effective without further action by the agency on the date stipulated in the notice of
+suspension or revocation
+
+7:25-4.3 Exotic species and nongame species requiring a permit for possession
+
+(a)  Exotic species and nongame species requiring a permit for possession include, but
+are not limited to, the following:
+
+1.  Birds:
+
+i.  Red-fronted parrot--Amazona viridigenalis;
+
+ii.  Turquoise-fronted parrot--Amazona aestiva;
+
+iii.  Yellow-cheeked parrot--Amazona a. autumnalis;
+
+iv.  Half-moon conure--Aratinga canicularis eburnirostrum;
+
+v.  Jenday parrot--Aratinga jendays;
+
+vi.  African gray parrot--Psittacus erithacus;
+
+vii.  Macaws--Ara spp. & Anodorhynchus spp. (Except endangered
+forms).
+
+2.  Mammals:
+
+i.  Ferrets--Mustela pertorius furo;
+
+ii.  Kinkajou--Potos flavus;
+
+iii.  Coatimundi--Nasua spp.;
+
+iv.  European hedgehog--Erinaceus europeaus;
+
+v.  Exotic Sheep--Except Ovis aries;
+
+vi.  Exotic Goats--except Capra hircus.
+
+3.  Reptiles:
+
+i.  Pythons--Family Pythonidae;
+
+ii.  Rat Snakes--Elaphe spp.;
+
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+iii.  Boas--Family Boidae (other than Boa Constrictors);
+
+iv.  King Snakes--Lampropeltis spp.;
+
+v.  Racer--Coluber spp.;
+
+vi.  Ringneck Snakes--Diadophis punctatus;
+
+vii.  Green Snakes--Opheodrys spp.;
+
+viii.  Collared Lizard--Crotaphytus collaris;
+
+ix.  Monitor--Varanus spp.;
+
+x.  Skinks--Family Scincidae;
+
+xi.  Ameiva--Ameiva spp.;
+
+xii.  Chuckwalla--Sauromalus obesus;
+
+xiii.  Alligator Lizard--Gerrhonitus spp.;
+
+xiv.  Geckos-family--Gekkonidae other than Tokay Gecko;
+
+xv.  Armadillo Lizard--Cordylus cataphractus;
+
+(b)  The Department may issue a permit for the possession of the above exotic mammals,
+birds, reptiles or amphibians or nongame species provided the applicant has satisfactorily
+met the criteria contained within N.J.A.C. 7:25-4.7.
+
+7:25-4.4 Exempted species
+
+(a)  The following listed species of exotic or nongame mammals, birds, reptiles, or
+amphibians may be possessed in this State without a permit.
+
+1.  Birds:
+
+i.  Budgerigar--Melopsittacus undulatus;
+
+ii.  Cockatiel--Nymphicus hollandicus;
+
+iii.  Peafowl--Pavo cristatus;
+
+iv.  Rock dove--Columba livia;
+
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+v.  Canary--Serinus canaria;
+
+vi.  House sparrow--Passer domesticus;
+
+vii.  European starling--Sturnis vulgaris;
+
+viii.  Zebra finch--Poephila guttatus;
+
+ix.  Society finch--Lonchura domesticus;
+
+x.  Ostrich--Struthio camelus;
+
+xi.  Greater Rhea--Rhea americana;
+
+xii.  Lesser Rhea--Rhea pennata;
+
+xiii.  Emu--Dromaius novaehollandiae.
+
+2.  Mammals:
+
+i.  Hamster--Mesocricetus auratus;
+
+ii.  Gerbil--Meriones mongolinensis;
+
+iii.  Guinea pig-Cavia porcellus;
+
+iv.  Pigmy goats-Carpa hircus;
+
+v.  Mice and Rats-Mus spp. and Rattus spp.;
+
+vi.  Chipmunk-Tamias spp. & Eutamias spp.;
+
+vii.  Red Squirrel-Tamiasciurus hudsonicus & douglasii;
+
+viii.  Flying Squirrel--Glaucompys spp.;
+
+ix.  Alpaca--Vicugna pacos;
+
+x.  Guanaco--Lama guanicoe;
+
+xi.  Llama--Lama glama;
+
+xii.  Bison (American buffalo)--Bison bison.
+
+3.  Reptiles:
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+i.  American anole-Anolis carolinensis;
+
+ii.  Common iguana-Iguana iguana;
+
+iii.  Boa Constrictor-Constrictor constrictor;
+
+iv.  Eastern painted turtles-Chrysemys picta picta;
+
+v.  Snapping turtles-Chelydra serpentina;
+
+vi.  Fence lizard-Sceloporus occidentalis & undulatus;
+
+vii.  Garter snake-Thamnophia spp. (except T. sirtalis tetrataenia);
+
+viii.  Tokay gecko-Gekko gecko;
+
+ix.  Ribbon snake-Thamnophis spp. (except T. sirtalis tetrataenia).
+
+4.  Amphibians:
+
+i.  Leopard frogs-Rana pipiens;
+
+ii.  Green frogs-Rana clamitans;
+
+iii.  American toad-Bufo woodhousei americana;
+
+iv.  Fowlers toad-B.w.fowleri;
+
+v.  Bullfrogs-Rana catesbiana;
+
+vi.  Red Newts-Notophthalmus viridescens;
+
+vii.  Dusky salamanders-Desmognathus fuscus.
+
+(b)  Such exotic or nongame mammals, birds, reptiles or amphibians must be housed or
+caged in such a manner as to prevent liberation
+
+7:25-4.5 Additional species
+
+A permit shall be required for any other exotic mammals, birds, reptiles or amphibians or
+nongame species not specifically exempted by N.J.A.C. 7:25-4.4.
+
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+7:25-4.6 Categories of permits, expiration, fees, sales receipts required, records and
+reports required
+
+(a)  The Division may issue, but shall not be limited to, the following categories of
+permits:
+
+1.  Individual hobby--issued to persons holding exotic mammals, birds, reptiles or
+amphibians or nongame species for hobby purposes or as pets.
+
+2.  Scientific holding--issued to qualified persons holding exotic mammals, birds,
+reptiles or amphibians or nongame species for scientific observation, captive
+breeding attempts and other scientific or educational study.
+
+3.  Zoological holding--issued to private and public institutions which exhibit
+exotic mammals, birds, reptiles or amphibians or nongame species, including
+possession, importation, exportation and sale of species listed in the permit.
+
+4.  Pet shop--issued to individuals and establishments engaged in the retail sale of
+exotic mammals, birds, reptiles or amphibians or nongame species, including
+importation, exportation and sale of species listed in the permit.
+
+5.  Animal Dealer--issued to individuals and establishments engaged in the
+wholesale of exotic mammals, birds, reptiles or amphibians or nongame species,
+including importation, exportation and sale of species listed in the permit.
+
+6.  Animal Exhibitor--issued to exhibitors of exotic mammals, birds, reptiles or
+amphibians or nongame species other than zoos. Traveling exhibits, small
+exhibitions not qualifying as zoos, and circuses are included, including
+importation, exportation, and sale of species listed in the permit.
+
+7.  Animal Theatrical Agencies--issued to persons owning exotic mammals, birds,
+reptiles or amphibians or nongame species to be hired for advertising, acting or
+theatrical appearances, including importation, exportation and sale of species
+listed in the permit.
+
+8.  Scientific Collecting--issued to persons to collect nongame species or escaped
+exotic mammals, birds, reptiles or amphibians for scientific studies or other
+approved purposes, when such activity is shown to have a beneficial effect on the
+conservation of the species, the public welfare or the environment.
+
+9.  Special Purpose Salvage--issued to persons or institutions to salvage dead
+migratory birds or parts thereof for scientific or educational purposes.
+
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+10.  Special Wildlife Salvage--issued to persons or institutions to salvage dead
+nongame species or parts thereof, other than migratory birds, for scientific or
+educational purposes.
+
+11.  Endangered Species--issued to persons or institutions for the possession of
+endangered species for conservation or research purposes.
+
+12.  Depredation Control--issued to persons or establishments to control nongame
+species which are creating a hazard to public safety, crops, livestock or similar
+concerns.
+
+13.  Rehabilitation--issued to persons to rescue, rehabilitate and release nongame
+and endangered birds.
+
+14.  Bird Breeder--issued to persons meeting the regulatory criteria for possessing
+wild-caught bird species to acquire birds for use as new breeding stock to increase
+genetic variety (see N.J.A.C. 7:25-4.19). This permit does not authorize the resale
+of wild-caught birds acquired under this permit except with the permission of the
+Department to another holder of a bird breeder permit. Those engaged in the
+retailing or wholesaling of birds must also have a pet shop or animal dealer
+permit.
+
+(b)  All possession permits shall expire on December 31 of the year of issue, unless
+otherwise indicated.
+
+(c)  The possession permits shall require an annual application and inspection fee as
+listed:
+
+Categories of Permits Annual Application
+and Inspection Fee
+
+Individual Hobby $ 10.00
+Individual Hobby/Birds $ 20.00
+Scientific Holding $ 35.00
+Zoological Holding
+--less than 10 animals $ 60.00
+Zoological Holding
+--more than 10 animals $ 110.00
+Pet Shop $ 100.00
+Animal Dealer $ 100.00
+Animal Exhibitor
+Single Exhibit $ 35.00
+Annual $ 110.00
+Animal Theatrical Agency $ 110.00
+Scientific Collecting $ 22.00
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Special Purpose Salvage $ 7.00
+Special Wildlife Salvage $ 7.00
+Endangered Species $ 7.00
+Depredation Control $ 22.00
+Rehabilitation $ 7.00
+Bird Breeder $ 150.00
+
+(d)  Pet shop, animal dealer, zoo, nature center and animal theatrical agency possession
+permits must be displayed in a prominent place. The sale of exotic mammals, birds,
+reptiles or amphibians, or nongame species to any individual must be accompanied by an
+"Exotic or Nongame Sales Receipt" the form of which shall be prescribed by the
+Department, and an application packet. This "Exotic or Nongame Sales Receipt" will be a
+temporary possession permit valid for a period of 20 days after the date of sale.
+
+(e)  Pet shops and animal dealers shall submit to the Division an annual inventory of
+acquisitions, sales and exchanges, and white copies of temporary permits issued for sale
+of any regulated species, upon expiration or renewal of their permits.
+
+(f)  Zoos and nature centers must submit quarterly reports of birth, deaths, acquisitions
+and disposals.
+
+(g)  Periodic inspections shall be made by Division designated personnel and shall consist
+of examination of exotic mammals, birds, reptiles or amphibians or nongame species,
+their food, facilities, holding pen and exhibit area, and a review of relevant records
+pertaining to these species.
+
+(h)  Animal exhibitors and animal theatrical agencies shall notify the Division no less
+than two weeks prior to any scheduled activity in New Jersey covered by permit in order
+to permit inspection of the activity by Division personnel.
+
+(i)  Persons holding permits listed above at (a)8 to 12 shall submit reports to the Division
+of permit activities no more than one month after the expiration of their permits.
+
+(j)  Any person holding an Exotic or Nongame Species Possession Permit pursuant to this
+subchapter which expires or is revoked shall file a report with the Division within 15
+days after expiration or revocation explaining the final disposition of all animals in his or
+her possession during the calendar year of issue. The explanation shall set forth the
+following information: the species and number of individuals of each species possessed;
+the date of birth and current age of each animal; births; deaths and cause of each death;
+the complete name, address and telephone number of the person to whom an animal was
+transferred or sold; the date the animal was transferred or sold; and the current location of
+each animal's records.
+
+(k)  Pet shops or other establishments dealing in birds other than canary, budgerigar and
+cockatiel shall prominently display a sign visible to the public on the premises where
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+such birds are offered for sale, which states: After December 10, 1991, only captive-bred
+birds or birds legally in possession pursuant to New Jersey regulations prior to December
+10, 1991 may be offered for sale or purchased in New Jersey. All birds offered for sale
+except those exempted by New Jersey regulations, must also be marked with a band or
+micro-chip approved by the New Jersey Division of Fish and Wildlife. To report
+violations, or questions, call (908) 735-5450.
+
+7:25-4.7 General possession criteria
+
+(a)  Prior to the issuance of any permit permitted by these regulations, every applicant
+shall, on the forms provided by the Department, demonstrate that:
+
+1.  The animal will be fed an adequate diet; and
+
+2.  The animal is housed or caged in a manner that:
+
+i.  Allow the animal to perform the normal behavior patterns of its species;
+and
+
+ii.  Prevents disease, liberation or accidental injury to the animal and the
+public; and
+
+3.  The method of acquisition did not violate the laws and regulations of this
+State, any other state or the Federal Government; and
+
+4.  The animal shall receive prompt treatment for any illness or injury from a
+licensed veterinarian; and
+
+5.  The animal is free of infectious diseases and parasites which may be dangerous
+to the animal, livestock or people of the State, provided that the Division may
+request certification that the animal for which the permit is being sought is free
+from infectious diseases and parasites from a licensed New Jersey veterinarian or
+a person recognized as qualified to make such certification by the Director of the
+Division of Fish, Game and Shellfisheries.
+
+7:25-4.8 Potentially dangerous species
+
+(a)  "Potentially dangerous species" is defined as any exotic mammals, birds, reptiles or
+amphibians or nongame species which, in the opinion of the Division, is capable of
+inflicting serious or fatal injuries or which has the potential to become an agricultural pest
+or a menace to the public health or indigenous wildlife populations, including, but not
+limited to the following:
+
+Class/Order Family/Genus
+Primates Cebidae--New World Monkeys
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+ Cercophithecidae--Old World
+ Monkeys and Baboons
+ Pongidae--Apes
+
+Carnivora Canidae--Nondomestic dogs
+ Ursidae--Bears
+ Felidae--Nondomestic cats
+
+Saura (Venomous) Helodermatidae--Gila Monsters
+
+Serpentes (Venomous) Elapidae--Coral snakes and cobras
+ Viperidae--Vipers
+ Crotalidae--Pit Vipers
+
+Crocodilia Alligatoridae--Alligators and caiman
+ Crocodylidae--crocodiles
+ Gavialidae--gavials
+
+Psittaciformes Psittaculis spp.--Ring-necked parakeets
+ Myiopsitta spp.--Monk parakeets
+ Cyanoliseus patagonus--
+ Patagonian Conures
+
+Rodentia Cynomys spp.--Prairie dogs
+ Spermophilus spp.--Ground Squirrels
+
+(b)  The Department, in its discretion, may issue a permit for possession of a potentially
+dangerous species only after a clear showing that the criteria for the possession of such
+potentially dangerous species contained in N.J.A.C. 7:25-4.9 have been met.
+
+7:25-4.9 Criteria for the possession of potentially dangerous species
+
+(a)  In addition to the general criteria enumerated above in N.J.A.C. 7:25-4.7, every
+person applying for a permit to possess potentially dangerous species shall meet each and
+every of the following criteria to the satisfaction of the Division.
+
+1.  Education and Background: Persons wishing to apply for a permit to possess a
+potentially dangerous species must have extensive experience in maintaining the
+species desired or related species.
+
+2.  Knowledge: Persons wishing to apply for a permit to possess potentially
+dangerous species must demonstrate a working knowledge and expertise in
+handling and caring for each of the species desired.
+
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+3.  Protection of the Public: The housing facilities shall also be constructed to
+prevent public access to and contact with the animal. The potentially dangerous
+species shall not be kept as a pet, for hobby purposes or in situations, which, in
+the judgment of the Department, could adversely affect the health of the animal or
+which could constitute a hazard to the public.
+
+4.  Purpose and Intent: Persons applying to possess potentially dangerous species
+must submit a written statement of the purpose and intent of keeping the species.
+
+5.  Housing and Feeding: Persons applying for a permit to possess a potentially
+dangerous species must supply a written description of the housing and caging
+facilities for the species required. A summary must be submitted of a continuous
+source of food for the specific diet of the animals. Division personnel may inspect
+the completed facilities to determine if the facilities are suitable for the animal.
+Facilities must be constructed to prevent the possible escape of the animal.
+
+6.  Other restrictions: Under no circumstances shall a person issued a pet shop or
+animal dealer permit possess any potentially dangerous species on the commercial
+premises, except in emergencies and for a limited period of time as stipulated by
+the Department in writing and subsequently agreed to by the animal dealer or pet
+shop owner, who shall assume full responsibility for the safety and welfare of
+both the animal and the public during its temporary storage. A potentially
+dangerous animal already on display at the premises of a pet shop or animal
+dealer and already under a permit for such display as of January 17, 1995 may
+remain so displayed under the terms and conditions of that permit for the lifetime
+of that animal.
+
+7:25-4.10 Endangered species prohibited
+
+(a)  Except as specifically hereinafter provided, no permit shall be issued for the
+possession of any species designated as endangered by the U.S. Department of the
+Interior or the New Jersey Department of Environmental Protection pursuant to N.J.S.A.
+23:2A-4.
+
+(b)  The Department, in its discretion, may issue a permit for the possession of any
+designated endangered species only after a clear showing by the applicant that all the
+requirements for the possession of endangered species (N.J.A.C. 7:25-4.14) are met. If
+the designated endangered species is also designated as an exotic mammal, bird, reptile
+or amphibian or nongame species or potentially dangerous species, the criteria
+established by 7:25-4.7 and 7:25-4.9 must also be met.
+
+7:25-4.11 Miscellaneous provisions
+
+(a)  Any person who transfers possession, as distinguished from ownership, or location of
+any animal for which a permit has been issued shall, within 48 hours, report to the
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Division exactly which animals were transferred and the name and address of the person
+to whom the animals were transferred.
+
+(b)  (Reserved)
+
+(c)  Exotic mammals, birds, reptiles or amphibians, or nongame species possessed under
+these permits may be dispatched in a manner as directed by the Commissioner and
+consistent with the provisions of the permit for legitimate purposes, including, but not
+limited to, the following:
+
+1.  Euthanasia of sick, injured or surplus animals, to cull individuals to prevent
+overcrowding or spread of disease; such euthanasia can also be ordered by the
+Commissioner when necessary to prevent spread of disease;
+
+2.  To use as food, or to utilize the hide, skin, or other body parts;
+
+3.  Euthanasia by an agent of the Division or as ordered by the Commissioner;
+
+4.  When an animal creates a danger or serious threat to persons or other animals
+as determined by the Commissioner; or
+
+5.  Euthanasia of research animals held under the scientific holding permits or
+scientific collecting permit
+
+7:25-4.12 Notice of denial or permit, procedure, review, time limitations, hearing
+
+(a)  In the event of a denial of an application for any permit required by this subchapter or
+the revocation of any permit, the Division shall issue to the applicant or prior permittee a
+written statement setting forth the reasons for the denial or revocation.
+
+(b)  Any such person may request a hearing for a review of such determination within 30
+days from the date of issuance of the denial, pursuant to the applicable provisions of the
+Administrative Procedure Act. The request for a hearing shall be sent to the New Jersey
+Department of Environmental Protection, Office of Administrative Hearings and Dispute
+Resolution, ATTENTION: Adjudicatory Hearing Requests, 401 E. State Street, Mail
+Code 401-07A, PO Box 420, Trenton, New Jersey 08625-0420.
+
+(c)  Any permittee shall permit division personnel, at any reasonable time to inspect the
+housing facilities of the animal or animals to determine compliance with the permit
+requirements and criteria.
+
+7:25-4.13 List of endangered species
+
+(a)  N.J.S.A. 23:2A-4 provides that the Department shall conduct investigations
+concerning wildlife in order to develop information relating to populations, distributions,
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+habitat needs, limiting factors and other biological and ecological factors. On the basis of
+such investigations of wildlife and other available scientific and commercial data, the
+Department may by regulation promulgate a list of those species and subspecies of
+wildlife indigenous to the State which are determined to be endangered, giving their
+common and scientific names by species and subspecies.
+
+(b)  In accordance therewith, the following species are determined to be endangered:
+1.  Shortnose Sturgeon, Acipenser brevirostrum
+2.  Blue-spotted Salamander, Ambystoma laterale
+3.  Eastern Tiger Salamander, Ambystoma tigrinum tigrinum
+4.  Southern Gray Treefrog, Hyla chrysocelis
+5.  Bog Turtle, Glyptemys muhlenbergi
+6.  Timber Rattlesnake, Crotalus horridus horridus
+7.  Corn Snake, Elaphe guttata guttata
+8.  Bald Eagle, Haliaeetus leucocephalus (Breeding population)
+9.  Peregrine Falcon, Falco peregrinus (Breeding population)
+10.  Northern Goshawk, Accipiter gentilis (Breeding population)
+11.  Northern Harrier, Circus cyaneus (Breeding population)
+12.  Red-shouldered Hawk, Buteo lineatus (Breeding population)
+13.  Short-eared Owl, Asio flammeus (Breeding population)
+14.  Pied-billed Grebe, Podilymbus podiceps (Breeding population)
+15.  Upland Sandpiper, Bartramia longicauda
+16.  Sedge Wren, Cistothorus platensis
+17.  Loggerhead Shrike, Lanius ludovicianus (Non-breeding population)
+18.  Henslow's Sparrow, Ammodramus henslowii
+19.  Vesper Sparrow, Pooecetes gramineus (Breeding population)
+20.  Piping Plover, Charadrius melodus
+21.  Roseate Tern, Sterna dougallii
+22.  Least Tern, Sternula antillarum
+23.  Black Skimmer, Rynchops niger
+24.  Atlantic Hawksbill, Eretmochelys imbricata imbricata
+25.  Atlantic Loggerhead, Caretta caretta
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+26.  Atlantic Ridley, Lepidochelys kempi
+27.  Atlantic Leatherback, Dermochelys coriacea coriacea
+28.  Sperm Whale, Physeter macrocephalus
+29.  Blue Whale, Balaenoptera musculus
+30.  Finback Whale, Balaenoptera physalus
+31.  Sei Whale, Balaenoptera borealis
+32.  Humpback Whale, Megaptera novaeangliae
+33.  Northern Right Whale, Balaena glacialis
+34.  Bobcat, Lynx rufus
+35.  Eastern Woodrat, Neotoma floridana
+36.  Mitchell's Satyr, Neonympha mitchellii mitchellii
+37.  Northeastern Beach Tiger Beetle, Cicindela dorsalis dorsalis
+38.  American Burying Beetle, Nicrophorus americanus
+39.  Dwarf Wedgemussel, Alasmidonta heterodon;
+40.  American Bittern, Botaurus lentiginosus (Breeding population)
+41.  Appalachian Grizzled Skipper (butterfly), Pyrgus wyandot;
+42.  Arogos Skipper (butterfly), Atrytone arogos arogos;
+43.  Bronze Copper (butterfly), Lycaena hyllus;
+44.  Queen Snake, Regina septemvittata
+45.  Brook Floater (mussel), Alasmidonta varicosa;
+46.  Green Floater (mussel), Lasmigona subviridis.
+47.  Black Rail, Laterallus jamaicensis (Breeding population)
+48.  Golden-winged Warbler, Vermivora chrysoptera (Breeding population)
+49.  Red Knot, Calidris canutus (Non-breeding population)
+50.  Indiana Bat, Myotis sodalis
+51.  Gray Petaltail (dragonfly), Tachopteryx thoreyi.
+
+7:25-4.14 Requirements for possession of endangered wildlife species
+
+(a)  Individuals wishing to apply for a permit to possess endangered wildlife must meet
+all criteria for a Federal endangered species permit (issued by the United States Fish and
+Wildlife Service), when applicable, and for the New Jersey nongame and exotic species
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+permit pursuant to N.J.A.C. 7:25-4.7 (issued by the Division). The Department will
+require and review the Federal permit before issuing a State permit.
+
+(b)  The Division shall issue a permit for possession of specific individual animals
+classified as endangered wildlife to an applicant who fulfills the criteria in (a) above, and
+who:
+
+1.  Has obtained a sponsoring organization and designated professional who have
+submitted to the Division all information required in (a)2 and 3 below;
+
+2.  Has submitted to the Division a detailed written proposal for scientific research
+to be completed by the applicant within the time stated by the applicant which, in
+the judgment of the Division, requires use of the species in question, will not
+jeopardize the animal's health and has a reasonable probability of yielding, when
+performed by the applicant under the supervision of the Division and the sponsor
+pursuant to scientific protocol approved in writing by the Division, scientifically-
+reliable, new information of use to researchers or zoologists specializing in the
+study or conservation of the species in question;
+
+i.  All proposals shall stipulate the intervals at which the applicant shall
+submit periodic reports to the Division stating the applicant's progress
+with the research and improvements in the applicant's expertise in
+handling and caring for the animals; and
+
+3.  Has submitted to the Division written records of the applicant's relevant
+education, past and current research, publications, funding, equipment and any
+other information (including personal demonstration as may be required by the
+Division) which demonstrates to the satisfaction of the Division that the applicant
+has working knowledge and expertise in handling and caring for the species in
+question, and that it is reasonably probable that the applicant will accept guidance
+from both the sponsor and the Division to improve that expertise and that the
+applicant will accomplish the research within the time stated to the Division in
+accordance with the scientific protocol approved by the Division.
+
+(c)  Amateur attempts or intent to propagate an endangered species will not be considered
+as sufficient purpose for an individual to be issued a permit to keep an endangered
+species.
+
+(d)  Applicants for a permit to possess endangered wildlife species in New Jersey must be
+sponsored by a scientific institution, zoological society or similar organization accredited
+by its professional peers. The goal of sponsorship is to improve the applicant's expertise
+in the handling, care and breeding of the animal in question, to ensure that the applicant's
+research requires use of the species in question and has a reasonable probability of
+producing scientifically-reliable, new data useful to other researchers or zoologists
+specializing in the study and conservation of the species in question. All research
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+proposals, scientific protocols (including the frequency of reports to the Division by the
+applicant), and supervisory procedures must be described in writing to the Division by
+the applicant and receive written approval from both the Division, the sponsor, and the
+monitoring professional for a permit to be issued. Any permit issued pursuant to this
+section is conditioned upon the applicant's consistent compliance with instruction from
+the Division and the professional monitoring the applicant's research as well as the
+diligent pursuit and timely completion of the Division-approved research project by the
+applicant pursuant to the scientific protocols approved by the Division. Applicants shall
+produce their research and exhibit their animals to Division personnel on 24 hours notice.
+Should the Division determine that the applicant has failed to meet these conditions, the
+Division shall suspend or revoke the applicant's permit and place the animals possessed
+pursuant to that permit under immediate constructive seizure, pending permanent
+removal of the animals by the Division from the possession of the applicant at the
+applicant's own expense. All research by the applicant shall cease immediately upon
+receipt of a notice of suspension or revocation, except as approved in writing by the
+Division.
+
+(e)  An offer of sponsorship must contain the following:
+
+1.  An agreement to commit the organization to the responsibilities of sponsorship
+as defined in this section, executed by the president, director or other employee of
+the organization with authority to so bind the organization;
+
+2.  Confirmation that the organization is acquainted with the relevant training and
+experience of the applicant, has reviewed the applicant's proposed research and
+has determined that it is reasonably probable that the proposed research, as
+performed by the applicant pursuant to the supervision and scientific protocol
+described by the sponsor shall yield scientifically-reliable, new information which
+will be useful to other researchers or zoologists specializing in the study or
+conservation of the species in question. All scientific protocol and supervisory
+practices proposed are subject to approval by the Division. Any Division
+modification of the proposed protocol or practices shall be resubmitted to the
+sponsoring organization for its comment;
+
+3.  The name and address of a professional with well-established, recently-
+practiced expertise in the handling, care and breeding of the species at issue (or a
+species closely related) who has agreed to monitor all aspects of the applicant's
+research on behalf of the organization in accordance with the procedures
+approved in advance of commencement of the work by the Division and fulfill all
+the obligations set forth in (e)4 below. The sponsoring organization shall
+acknowledge its responsibility to locate another professional with credentials
+acceptable to the Division who shall monitor the applicant's work, report to the
+Division, and fulfill all the obligations set forth in (e)4 below in the event the
+professional initially chosen and approved by the Division is unable, for reasons
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+unrelated to the performance of the applicant, to continue in assisting the Division
+in monitoring the applicant's work;
+
+4.  A letter from the professional identified in (e)3 above which lists his or her
+professional qualifications, verifies that he or she has personally met the
+applicant, reviewed the applicant's relevant training and experience as well as the
+proposed research, finds the research meritorious and believes, based upon his or
+her experience, that it is reasonably probable that the proposed research, as
+performed by the applicant within the time stated by the applicant pursuant to the
+supervision and scientific protocol described by the professional, shall yield
+scientifically-reliable, new information which will be useful to the other
+researchers or zoologists specializing in the study or conservation of the species in
+question. All scientific protocol and supervisory practices proposed are subject to
+approval by the Division. Any Division modification of the proposed protocol or
+practices shall be resubmitted for the professional's comment. The professional
+shall agree in writing to guide the applicant in the proper handling, care and
+breeding of the animals in question and review the applicant's research protocol
+and data as frequently as needed to ensure the applicant's research meets the
+criteria for the issuance of this permit. The professional shall agree to personally
+meet with the applicant and review the applicant's work no less than once every
+three months and to submit a written report to the Division on the applicant's
+progress every three months. The applicant may prepare and submit this report as
+long as the report is approved in writing by the professional in advance of its
+submission to the Division. Reports must be submitted to the Division no later
+than the 15th day following the end of each three month reporting period;
+
+5.  A written statement that the professional agrees to notify the Division and the
+sponsoring organization in writing if the applicant fails to follow the
+professional's or the Division's guidance or the scientific protocol approved by the
+Division and the professional believes that such failure is jeopardizing the
+probability that scientifically-reliable, useful, new information shall be produced
+as a result of the applicant's research or that the research cannot be accomplished
+within the time stated by the applicant; and
+
+6.  The applicant shall execute a written acknowledgement releasing the
+Department, the sponsoring organization and any professionals monitoring the
+applicant's work from liability for any damages of whatsoever nature arising from
+the suspension of revocation of any permit issued by the Division. The applicant
+shall be solely responsible for all costs of maintaining and relocating at the
+direction of the Division all the animals possessed under this permit when a
+permit is suspended, revoked or expires.
+
+7:25-4.15 Protection of animal and welfare of public
+
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+(a)  Individuals applying for a permit to possess endangered wildlife species must supply
+a written description of the housing and caging facilities for the species requested. A
+summary must be submitted of a continuous feed source available for the specific diet of
+the animals. Department personnel will inspect the completed facilities and determine if
+the facilities are suitable for the animal. Facilities must be constructed to prevent the
+possible escape of the animal.
+
+(b)  The housing facilities must be constructed to prevent public access to and contact
+with the animal, including all animals used for exhibition purposes. The animal may not
+be kept as a pet, for hobby purposes or in situations which, in the judgment of the
+Department, could adversely affect or provide no net benefit to the health of the animal or
+the welfare of the species. The individual must demonstrate to the satisfaction of Division
+personnel that the security of the housing and caging facilities protects the animal and the
+public.
+
+(c)  Qualified veterinarian service must be readily available to the animal at all times.
+
+7:25-4.16 Violations
+
+Any person violating any provision of these rules and regulations will be subject to the
+penalties imposed by N.J.S.A. 23:2A-1 et seq.
+
+7:25-4.17 List providing conservation status of New Jersey’s indigenous nongame
+wildlife species
+
+The following table sets forth the list and conservation status of nongame wildlife species
+indigenous to New Jersey in their respective taxonomic classes. For the vertebrate classes
+of mammals, birds, reptiles, and amphibians, the list is intended to include all indigenous
+nongame species, that is, all species for which a legal hunting or trapping season has not
+been established or that have not been classified as an endangered species and that are
+native to the eastern United States and regularly and predictably occur within the State or
+its waters. Freshwater and marine fish are not included on this list because none are
+currently considered "nongame." For the invertebrate classes, the list includes only those
+species for which the Department has determined that their status is either "threatened" or
+"special concern." The list is ordered alphabetically by species' common names within
+each taxonomic class.
+Species     Scientific Name     Species
+           Status*
+BIVALVES
+Creeper Strophitus undulates SC
+Eastern Lampmussel Lampsilis radiate T
+Eastern Pondmussel Ligumia nasuta T
+
+* E means "Endangered;" S means "Secure-stable;" SC means "Special concern;" T means "Threatened;" and U means
+"Undetermined-unknown." These terms are defined in N.J.A.C. 7:25-4.1.
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Tidewater Mucket Leptodea ochracea T
+Triangle Floater Alasmidonta undulate T
+Yellow Lampmussel Lampsilis cariosa T
+
+INSECTS
+Allegheny River Cruiser Macromia alleghaniensis SC
+Arrowhead Spiketail Cordulegaster oblique SC
+Banner Clubtail Gomphus apomyius T
+Brook Snaketail Ophiogomphus asperses T
+Brush-tipped Emerald Somatochlora walshii SC
+Checkered White Pontia protodice T
+Cobra Clubtail Gomphus vastus SC
+Coppery Emerald Somatochlora Georgiana SC
+Crimson-ringed Whiteface Leucorrhinia glacialis SC
+Dotted Skipper Hesperia attalus slossonae SC
+Extra-striped Snaketail Ophiogomphus anomalus SC
+Forcipate Emerald Somatochlora forcipata SC
+Frosted Elfin Callophrys irus T
+Georgia (Lakehurst) Satyr Neonympha areolatus septentrionalis SC
+Golden-winged Skimmer Libellula auripennis SC
+Green-faced Clubtail Gomphus viridifrons SC
+Harpoon Clubtail Gomphus descriptus T
+Harris' Checkerspot Chlosyne harrisii SC
+Hessel's Hairstreak Callophrys hesseli SC
+Hoary Elfin Callophrys polios SC
+Hudsonian Whiteface Leucorrhinia hudsonica SC
+Kennedy's Emerald Somatochlora kennedyi T
+Leonard's Skipper Hesperia leonardus SC
+Maine Snaketail Ophiogomphus mainensis SC
+Midland Clubtail Gomphus fraternus SC
+New England Bluet Enallagma laterale SC
+Northern Metalmark Calephelis borealis SC
+Pine Barrens Bluet Enallagma recurvatum SC
+Rapids Clubtail Gomphus quadricolor SC
+Robust Baskettail Epitheca spinosa T
+Sable Clubtail Gomphus rogersi SC
+Scarlet Bluet Enallagma pictum SC
+Septima's Clubtail Gomphus septima SC
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Silver-bordered Fritillary Bolaria selene myrina T
+Ski-tailed Emerald Somatochlora elongate SC
+Spatterdock Darner Rhionaeschna mutate SC
+Subarctic Darner Aeshna subarctica SC
+Superb Jewelwing Calopteryx amata T
+Tiger Spiketail Cordulegaster erronea SC
+Two-spotted Skipper Euphyes bimacula SC
+Williamson's Emerald Somatochlora williamsoni SC
+Zebra Clubtail Stylurus scudderi SC
+
+AMPHIBIANS
+Allegheny Dusky Salamander Desmognathus ochrophaeus U
+Barking Treefrog Hyla gratiosa U
+Carpenter Frog Lithobates virgatipes SC
+Eastern American Toad Anaxyrus americanus americanus S
+Eastern Mud Salamander Pseudotriton m. montanus T
+Eastern Spadefoot Scaphiopus holbrookii U
+Four-toed Salamander Hemidactylium scutatum U
+Fowler's Toad Anaxyrus fowleri SC
+Jefferson Salamander Ambystoma jeffersonianum SC
+Longtail Salamander Eurycea l. longicauda T
+Marbled Salamander Ambystoma opacum SC
+New Jersey Chorus Frog Pseudacris kalmi U
+Northern Cricket Frog Acris c. crepitans S
+Northern Dusky Salamander Desmognathus fuscus S
+Northern Gray Treefrog Hyla versicolor S
+Northern Leopard Frog Lithobates pipiens U
+Northern Red Salamander Pseudotriton r. ruber S
+Northern Spring Peeper Pseudacris c. crucifer S
+Northern Spring Salamander Gyrinophilus p. porphyriticus SC
+Northern Two-lined Eurycea bislineata S
+Salamander
+Pickerel Frog Lithobates palustris S
+Pine Barrens Treefrog Hyla andersonii T
+Red-backed Salamander Plethodon cinereus S
+Red-spotted Newt Notophthalmus v. viridescens S
+Slimy Salamander Plethodon glutinosus S
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Southern Leopard Frog Lithobates spenocephala utricularia S
+Spotted Salamander Ambystoma maculatum S
+Upland Chorus Frog Pseudacris feriarum U
+Wood Frog Lithobates sylvatica S
+
+REPTILES
+Atlantic Green Turtle Chelonia mydas T
+Common Map Turtle Graptemys geographica U
+Common Musk Turtle Sternotherus odoratus S
+Eastern Box Turtle Terrapene c. Carolina SC
+Eastern Garter Snake Thamnophis s. sirtalis S
+Eastern Hognose Snake Heterodon platirhinos S
+Eastern King Snake Lampropeltis g. getula SC
+Eastern Milk Snake Lampropeltis t. triangulum S
+Eastern Mud Turtle Kinosternon s. subrubrum S
+Eastern Painted Turtle Chrysemys p. picta S
+Eastern Rat Snake Elaphe alleghaniensis U
+Eastern Redbelly Turtle Pseudemys rubriventris U
+Eastern Ribbon Snake Thamnophis s. sauritus S
+Eastern Smooth Earthsnake Virginia v. valeriae U
+Eastern Worm Snake Carphophis a. amoenus U
+Five-lined Skink Eumeces fasciatus U
+Ground Skink Scincella lateralis U
+Midland Painted Turtle Chrysemys picta marginata U
+Northern Black Racer Coluber c. constrictor U
+Northern Brown Snake Storeria d. dekayi S
+Northern Copperhead Agkistrodon contortrix mokasen SC
+Northern Fence Lizard Sceloporus undulatus hyacinthinus S
+Northern Pine Snake Pituophis m. melanoleucus T
+Northern Red-bellied Snake Storeria o. occipitomaculata S
+Northern Ringneck Snake Diadophis punctatus edwardsii S
+Northern Scarlet Snake Cemophora coccinea copei U
+Northern Water Snake Nerodia s. sipedon S
+Rough Green Snake Opheodrys aestivus S
+Smooth Green Snake Liochlorophis vernalis U
+Southern Ringneck Snake Diadophis p. punctatus S
+Spotted Turtle Clemmys guttata SC
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Wood Turtle Glyptemys insculpta T
+
+Species     Scientific Name  Breeding  Non-breeding
+        Status  Status
+
+BIRDS
+Acadian Flycatcher    Empidonax virescens S  S
+Alder Flycatcher    Empidonax alnorum S  S
+American Avocet    Recurvirostra americana   S
+American Bittern    Botaurus lentiginosus E  SC
+American Golden-Plover   Pluvialis dominica    S
+American Goldfinch   Spinus tristis  S  S
+American Kestrel    Falco sparverius  T  T
+American Oystercatcher   Haematopus palliates SC  SC
+American Pipit    Anthus rubescens    S
+American Redstart    Setophaga ruticilla  S  S
+American Robin    Turdus migratorius  S  S
+American Tree Sparrow   Spizella arborea    S
+Baird's Sandpiper    Calidris bairdii    S
+Bald Eagle    Haliaeetus leucocephalus E  T
+Baltimore Oriole    Icterus galbula  S  S
+Bank Swallow    Riparia riparia  S  S
+Barn Owl     Tyto alba   SC  SC
+Barn Swallow    Hirundo rustica  S  S
+Barred Owl    Strix varia  T  T
+Bay-breasted Warbler   Dendroica castanea    S
+Belted Kingfisher    Megaceryle alcyon  S  S
+Black-and-white Warbler   Mniotilta varia  S  S
+Black Rail    Laterallus jamaicensis E  T
+Black Vulture    Coragyps atratus  S  S
+Black-bellied Plover   Pluvialis squatarola    S
+Black-billed Cuckoo   Coccyzus erythropthalmus SC  S
+Blackburnian Warbler   Dendroica fusca  SC  S
+Black-capped Chickadee   Poecile atricapillus  S  S
+Black-crowned Night-Heron   Nycticorax nycticorax T  SC
+Black-headed Gull    Chroicocephalus ridibundus   S
+Black-legged Kittiwake   Rissa tridactyla    S
+Blackpoll Warbler    Dendroica striata    S
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Black-throated Blue   Dendroica caerulescens SC  S
+Warbler
+Black-throated Green   Dendroica virens  SC  S
+Warbler
+Blue Grosbeak    Passerina caerulea  S  S
+Blue Jay     Cyanocitta cristata  S  S
+Blue-gray Gnatcatcher   Polioptila caerulea  S  S
+Blue-headed Vireo    Vireo solitarius  SC  S
+Blue-winged Warbler   Vermivora cyanoptera S  S
+Boat-tailed Grackle    Quiscalus major  S  S
+Bobolink     Dolichonyx oryzivorus T  SC
+Bonaparte's Gull    Chroicocephalus philadelphia   S
+Boreal Chickadee    Poecile hudsonicus    S
+Broad-winged Hawk   Buteo platypterus  SC  S
+Brown Creeper    Certhia americana  S  S
+Brown Pelican    Pelecanus occidentalis   S
+Brown Thrasher    Toxostoma rufum  SC  S
+Brown-headed Cowbird   Molothrus ater  S  S
+Buff-breasted Sandpiper   Tryngites subruficollis   S
+Canada Warbler    Wilsonia canadensis SC  S
+Cape May Warbler    Dendroica tigrina    S
+Carolina Chickadee    Poecile carolinensis  S  S
+Carolina Wren    Thryothorus ludovicianus S  S
+Caspian Tern    Hydroprogne caspia SC  S
+Cattle Egret    Bubulcus ibis  T  SC
+Cedar Waxwing    Bombycilla cedrorum S  S
+Cerulean Warbler    Dendroica cerulea  SC  SC
+Chestnut-sided Warbler   Dendroica pensylvanica S  S
+Chimney Swift    Chaetura pelagica   S  S
+Chipping Sparrow    Spizella passerina  S  S
+Chuck-will's-widow   Caprimulgus carolinensis S  S
+Cliff Swallow    Petrochelidon pyrrhonota SC  S
+Common Grackle    Quiscalus quiscula  S  S
+Common Loon    Gavia immer    S
+Common Nighthawk   Chordeiles minor  SC  SC
+Common Raven    Corvus corax  S  S
+Common Redpoll    Acanthus flammea    U
+Common Tern    Sterna hirundo  SC  S
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Common Yellowthroat   Geothlypis trichas  S  S
+Connecticut Warbler   Oporornis agilis    S
+Cooper's Hawk    Accipiter cooperii  SC  S
+Cory's Shearwater    Calonectris diomedea   S
+Curlew Sandpiper    Calidris ferruginea    S
+Dark-eyed Junco    Junco hyemalis  S  S
+Dickcissel    Spiza americana    S
+Double-crested Cormorant   Phalacrocorax auritus S  S
+Dovekie     Alle alle     U
+Downy Woodpecker   Picoides pubescens  S  S
+Dunlin     Calidris alpina    S
+Eastern Bluebird    Sialia sialis  S  S
+Eastern Kingbird    Tyrannus tyrannus  S  S
+Eastern Meadowlark   Sturnella magna  SC  SC
+Eastern Phoebe    Sayornis phoebe  S  S
+Eastern Screech-Owl   Megascops asio  S  S
+Eastern Towhee    Pipilo erythrophthalmus S  S
+Eastern Whip-poor-will   Caprimulgus vociferus SC  U
+Eastern Wood Pewee   Contopus virens  S  S
+Evening Grosbeak    Coccothraustes vespertinus   S
+Field Sparrow    Spizella pusilla  S  S
+Forster's Tern    Sterna forsteri  S  S
+Fox Sparrow    Passerella iliaca    S
+Glaucous Gull    Larus hyperboreus    S
+Glossy Ibis    Plegadis falcinellus  SC  S
+Golden Eagle    Aquila chrysaetos    S
+Golden-crowned Kinglet   Regulus satrapa  S  S
+Golden-winged Warbler   Vermivora chrysoptera E  SC
+Grasshopper Sparrow   Ammodramus savannarum T  SC
+Gray Catbird    Dumetella carolinensis S  S
+Gray-cheeked Thrush   Catharus minimus    SC
+Great Black-backed Gull   Larus marinus  S  S
+Great Blue Heron    Ardea herodias  SC  S
+Great Cormorant    Phalacrocorax carbo   S
+Great Crested Flycatcher   Myiarchus crinitus  S  S
+Great Egret    Ardea alba  S  S
+Great Horned Owl    Bubo virginianus  S  S
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Greater Shearwater    Puffinus gravis    S
+Greater Yellowlegs    Tringa melanoleuca    S
+Green Heron    Butorides virescens  S  S
+Gull-billed Tern    Gelochelidon nilotica SC  SC
+Hairy Woodpecker    Picoides villosus  S  S
+Hermit Thrush    Catharus guttatus  S  S
+Herring Gull    Larus argentatus  S  S
+Hooded Warbler    Wilsonia citrina  SC  S
+Horned Grebe    Podiceps auritus    S
+Horned Lark    Eremophila alpestris T  SC
+House Finch    Carpodacus mexicanus S  S
+House Wren    Troglodytes aedon  S  S
+Hudsonian Godwit    Limosa haemastica    S
+Iceland Gull    Larus glaucoides    S
+Indigo Bunting    Passerina cyanea  S  S
+Ipswich Sparrow    Passerculus sandwichensis   SC
+ princeps
+Kentucky Warbler    Oporornis formosus SC  SC
+Killdeer     Charadrius vociferous S  S
+Lapland Longspur    Calcarius lapponicus   S
+Lark Sparrow    Chondestes grammacus   S
+Laughing Gull    Leucophaeus atricilla S  S
+Leach's Storm-petrel   Oceanodroma leucorhoa   U
+Least Bittern    Ixobrychus exilis  SC  SC
+Least Flycatcher    Empidonax minimus SC  S
+Least Sandpiper    Calidris minutilla    S
+Lesser Black-backed Gull   Larus fuscus    S
+Lesser Yellowlegs    Tringa flavipes    S
+Lincoln's Sparrow    Melospiza lincolnii    S
+Little Blue Heron    Egretta caerulea  SC  SC
+Little Gull    Hydrocoloeus minutus   S
+Long-billed Dowitcher   Limnodromus scolopaceus   S
+Long-eared Owl    Asio otus   T  T
+Long-tailed Jaeger    Stercorarius longicaudus   U
+Louisiana Waterthrush   Parkesia motacilla  S  S
+Magnolia Warbler    Dendroica magnolia S  S
+Marbled Godwit    Limosa fedoa    S
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Marsh Wren    Cistothorus palustris S  S
+Merlin     Falco columbarius    S
+Mississippi Kite    Ictinia mississippiensis   S
+Mourning Warbler    Oporornis philadelphia   S
+Nashville Warbler    Oreothlypis ruficapilla SC  S
+Northern Cardinal    Cardinalis cardinalis S  S
+Northern Flicker    Colaptes auratus  S  S
+Northern Gannet    Morus bassanus    S
+Northern Goshawk    Accipiter gentilis  E  SC
+Northern Harrier    Circus cyaneus  E  SC
+Northern Mockingbird   Mimus polyglottos  S  S
+Northern Parula    Parula americana  SC  S
+Northern Rough-winged   Stelgidopteryx serripennis S  S
+Swallow
+Northern Saw-whet Owl   Aegolius acadicus  U  S
+Northern Shrike    Lanius excubitor    S
+Northern Waterthrush   Parkesia noveboracensis S  S
+Olive-sided Flycatcher   Contopus cooperi    S
+Orange-crowned Warbler   Oreothlypis celata    S
+Orchard Oriole    Icterus spurius  S  S
+Osprey     Pandion haliaetus  T  S
+Ovenbird     Seiurus aurocapilla  S  S
+Palm Warbler    Dendroica palmarum   S
+Parasitic Jaeger    Stercorarius parasiticus   S
+Pectoral Sandpiper    Calidris melanotos    S
+Peregrine Falcon    Falco peregrines  E  SC
+Philadelphia Vireo    Vireo philadelphicus   S
+Pied-billed Grebe    Podilymbus podiceps E  SC
+Pileated Woodpecker   Dryocopus pileatus  S  S
+Pine Grosbeak    Pinicola enucleator    S
+Pine Siskin    Spinus pinus    S
+Pine Warbler    Dendroica pinus  S  S
+Pomarine Jaeger    Stercorarius pomarinus   S
+Prairie Warbler    Dendroica discolor  S  S
+Prothonotary Warbler   Protonotaria citrea  S  S
+Purple Finch    Carpodacus purpureus S  S
+Purple Martin    Progne subis  S  S
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Purple Sandpiper    Calidris maritime    S
+Razorbill     Alca torda    S
+Red Crossbill    Loxia curvirostra  U  U
+Red Phalarope    Phalaropus fulicarius   S
+Red-bellied Woodpecker   Melanerpes carolinus S  S
+Red-breasted Nuthatch   Sitta canadensis  S  S
+Red-eyed Vireo    Vireo olivaceus  S  S
+Red-headed Woodpecker   Melanerpes erythrocephalus T  T
+Red-necked Grebe    Podiceps grisegena    S
+Red-necked Phalarope   Phalaropus lobatus    S
+Red-shouldered Hawk   Buteo lineatus  E  SC
+Red-tailed Hawk    Buteo jamaicensis  S  S
+Red-throated Loon    Gavia stellata    S
+Red-winged Blackbird   Agelaius phoeniceus S  S
+Ring-billed Gull    Larus delawarensis    S
+Rose-breasted Grosbeak   Pheucticus ludovicianus S  S
+Rough-legged Hawk   Buteo lagopus    S
+Royal Tern    Sterna maxima    S
+Ruby-crowned Kinglet   Regulus calendula    S
+Ruby-throated Hummingbird   Archilochus colubris S  S
+Ruddy Turnstone    Arenaria interpres    S
+Ruff     Philomachus pugnax   S
+Rusty Blackbird    Euphagus carolinus    S
+Saltmarsh Sparrow    Ammodramus caudacutus SC  S
+Sanderling    Calidris alba    SC
+Savannah Sparrow    Passerculus sandwichensis T  S
+Scarlet Tanager    Piranga olivacea  S  S
+Seaside Sparrow    Ammodramus maritimus S  S
+Semipalmated Plover   Charadrius semipalmatus   S
+Semipalmated Sandpiper   Calidris pusilla    SC
+Sharp-shinned Hawk   Accipiter striatus  SC  SC
+Short-billed Dowitcher   Limnodromus griseus   S
+Short-eared Owl    Asio flammeus  E  SC
+Snow Bunting    Plectophenax nivalis   S
+Snowy Egret    Egretta thula  SC  S
+Snowy Owl    Nyctea scandiacus    S
+Solitary Sandpiper    Tringa solitaria    S
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Song Sparrow    Melospiza melodia  S  S
+Sooty Shearwater    Puffinus griseus    S
+Spotted Sandpiper    Actitis macularius  SC  S
+Stilt Sandpiper    Calidris Himantopus   S
+Summer Tanager    Piranga rubra  S  S
+Swainson's Thrush    Catharus ustulatus    S
+Swallow-tailed Kite   Elanoides forficatus   U
+Swamp Sparrow    Melospiza Georgiana S  S
+Tennessee Warbler    Oreothlypis peregrine   S
+Thick-billed Murre    Uria lomvia    U
+Tree Swallow    Tachycineta bicolor e  S  S
+Tricolored Heron    Egretta tricolor  SC  SC
+Tufted Titmouse    Baeolophus bicolor  S  S
+Tundra Swan    Cygnus columbianus   S
+Turkey Vulture    Cathartes aura  S  S
+Veery     Catharus fuscescens SC  S
+Vesper Sparrow    Pooecetes gramineus E  SC
+Warbling Vireo    Vireo gilvus  S  S
+Western Kingbird    Tyrannus verticalis    S
+Western Sandpiper    Calidris mauri    S
+Whimbrel    Numenius phaeopus   SC
+White-breasted Nuthatch   Sitta carolinensis  S  S
+White-crowned Sparrow   Zonotrichia leucophrys   S
+White-eyed Vireo    Vireo griseus  S  S
+White-rumped Sandpiper   Calidris fuscicollis    S
+White-throated Sparrow   Zonotrichia albicollis S  S
+White-winged Crossbill   Loxia leucoptera    U
+Willet     Tringa semipalmata  S  S
+Willow Flycatcher    Empidonax traillii  S  S
+Wilson's Phalarope    Phalaropus tricolor    S
+Wilson's Storm-petrel   Oceanites oceanicus   S
+Wilson's Warbler    Wilsonia pusilla    S
+Winter Wren    Troglodytes hiemalis SC  S
+Wood Thrush    Hylocichla mustelina SC  S
+Worm-eating Warbler   Helmitheros vermivorum SC  S
+Yellow Rail    Coturnicops noveboracensis   U
+Yellow Warbler    Dendroica petechia  S  S
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Yellow-bellied Flycatcher   Empidonax flaviventris   S
+Yellow-bellied Sapsucker   Sphyrapicus varius  S  S
+Yellow-billed Cuckoo   Coccyzus americanus S  S
+Yellow-breasted Chat   Icteria virens  SC  S
+Yellow-crowned    Nyctanassa violacea T  T
+Night-Heron
+Yellow-rumped Warbler   Dendroica coronate  S  S
+Yellow-throated Vireo   Vireo flavifrons  S  S
+Yellow-throated Warbler   Dendroica dominica S  S
+
+Species     Scientific Name     Species
+           Status*
+MAMMALS
+Atlantic Spotted Dolphin Stenella frontalis U
+Beluga Whale Delphinapterus leucas U
+Big Brown Bat Eptesicus fuscus U
+Blainville's Whale Mesoplodon densirostris U
+Bottlenose Dolphin Tursiops truncates U
+Clymene Dolphin Stenella clymene U
+Cuvier's Whale Ziphius cavirostris U
+Dwarf Sperm Whale Kogia simus U
+Eastern Chipmunk Tamias striatus U
+Eastern Mole Scalopus aquaticus U
+Gervais Beaked Whale Mesoplodon europaeus U
+Gray Seal Halichoerus grypus U
+Hairy-tailed Mole Parascalops breweri U
+Harbor Porpoise Phocoena phocoena U
+Harbor Seal Phoca vitulina U
+Harp Seal Pagophilus groenlandicus U
+Hoary Bat Lasiurus cinereus U
+Hooded Seal Cystophora cristata U
+Keen Myotis Myotis keenii U
+Killer Whale Orcinus orca U
+Least Shrew Crytotis parva U
+Little Brown Bat Myotis lucifugus U
+
+* E means "Endangered;" S means "Secure-stable;" SC means "Special concern;" T means "Threatened;" and U means
+"Undetermined-unknown." These terms are defined in N.J.A.C. 7:25-4.1.
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Long-finned Pilot Whale Globicephala melas U
+Long-tailed Shrew Sorex dispar U
+Marsh Rice Rat Oryzomys palustris U
+Masked Shrew Sorex cinereus U
+Meadow Jumping Mouse Zapus hudsonius U
+Meadow Vole Microtis pennsylvanicus U
+Melon-headed Whale Peponocephala electra U
+Minke Whale Balaenoptera acutorostrata U
+New England Cottontail Sylvilagus transitionalis U
+Northern Flying Squirrel Glaucomys sabrinus U
+Northern Yellow Bat Lasiurus intermedius U
+Pine Vole Pitymys pinetorum U
+Porcupine Erethizon dorsatum U
+Pygmy Sperm Whale Kogia breviceps U
+Red Bat Lasiurus borealis U
+Red Squirrel Tamiasciurus hudsonicus U
+Red-backed Mouse Clethrionomys gapperi U
+Risso's Dolphin Grampus griseus U
+Short-beaked Common Dolphin Delphinus delphis U
+Short-finned Pilot Whale Globicephala macrorhyncus U
+Short-tailed Shrew Blarina brevicauda U
+Silver-haired Bat Lasionycteris noctivagans U
+Small-footed Myotis Myotis subulatus U
+Smokey Shrew Sorex fumeus U
+Southern Bog Lemming Synaptomys cooperi U
+Southern Flying Squirrel Glaucomys volans U
+Star-nosed Mole Condylura cristata U
+Striped Dolphin Stenella coeruleoalba U
+Tri-colored Bat Perimyotis subflavus U
+True's Beaked Whale Mesoplodon mirus U
+Tuckahoe Masked Shrew Sorex cinereus nigriculus U
+Water Shrew Sorex palustris U
+White-footed Mouse Peromyscus leucopus U
+Woodland Jumping Mouse Napaeozapus isignis               U
+
+* E means "Endangered;" S means "Secure-stable;" SC means "Special concern;" T means "Threatened;" and U means
+"Undetermined-unknown." These terms are defined in N.J.A.C. 7:25-4.1.
+
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+7:25-4.18 Endangered and Nongame Species Advisory Committee
+
+(a)  The Endangered and Nongame Species Advisory Committee (committee) shall
+consist of 11 members appointed by the Commissioner. Prior to the making of any said
+appointments, the Commissioner shall consult with the committee as to their
+recommendations.
+1.  Members shall be reflective of various public groups concerned with, and
+supportive of, the endangered and nongame species program established by P.L.
+1973, c.309, codified at N.J.S.A. 23:2A-1 to -13, and shall possess special
+knowledge, expertise, and/or interest relating to endangered and nongame species
+of New Jersey. Member affiliation shall be as follows:
+
+   Affiliation     Number of Members
+i. Academic/research communities 4
+
+ ii. Public health/veterinary medicine 1
+
+ iii. Qualified non-profit organization (as defined 3
+ by the Internal Revenue Code at § 501(c)(3))
+ with strong interest in promoting the
+ nonconsumptive use of wildlife
+
+ iv. Public at large (that is, not in the capacity 3
+ of an organizational representative)
+
+2.  Of the 11 members to be appointed by the Commissioner, initially, two shall
+be appointed for a term of one year, three for a term of two years, three for a term
+of three years, and three for a term of four years. Thereafter, all appointments
+shall be made for terms of four years. All appointed members shall serve, after the
+expiration of their terms, until their respective successors are appointed. Any
+vacancy occurring in the appointed membership of the committee, by expiration
+of term or otherwise, shall be filled by the Commissioner in the identical manner
+as the original appointment, for the unexpired term only, notwithstanding that the
+previous incumbent may have held over and continued in office as aforesaid.
+
+3.  The Commissioner may remove any member of the committee for cause upon
+notice and opportunity to be heard.
+
+4.  The committee shall select its chairperson from its membership, subject to the
+approval of the Commissioner, for a term of four years, and consecutive terms
+shall be permitted.
+
+(b)  The committee shall advise and assist the Commissioner in matters related to the
+intent of "The Endangered and Nongame Species Act," P.L. 1973, c.309, codified at
+N.J.S.A. 23:2A-1 to -13. Notwithstanding subsequent departmental action, the
+THIS IS A COURTESY COPY OF THIS RULE.  ALL OF THE DEPARTMENT’S
+
+Commissioner shall respond in writing to all reasonable written comments on policy
+received from the committee.
+
+(c)  The committee shall transmit its business during regular meetings, held once each
+month, at a time and place designated by the committee. Adequate notice, as defined
+under the "Open Public Meetings Law," P.L. 1975, c.231, codified at N.J.S.A. 10:4-6 to -
+21, shall be given to the Secretary of State. Six members present shall constitute a
+quorum.
+
+(d)  Members of the committee shall serve without compensation, but shall be reimbursed
+for expenses actually incurred in attending committee meetings and in the performance of
+their duties as members thereof.

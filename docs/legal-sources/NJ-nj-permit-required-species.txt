@@ -1,0 +1,61 @@
+SOURCE: N.J.A.C. 7:25-4.3, Exotic Species and Nongame species requiring a permit for possession
+URL: https://www.nj.gov/dep/fgw/pdf/xotic_permreq.pdf
+FETCHED: 2026-09-05 (NJDEP Fish and Wildlife handout of the 4.3 permit list, extracted with pypdf.)
+
+7:25-4.3 Exotic Species and Nongame species requiring a permit for possession  
+ 
+(a) Exotic species and nongame species requiring a permit for possession include, but are 
+not limited to the following: 
+ 
+1. Birds: 
+i. Red-fronted parrot - Amazona viridigenalis; 
+ii. Turquoise-fronted parrot - Amazona aestiva; 
+iii. Yellow-cheeked parrot - Amazona a. autumnalis; 
+iv. Half-moon conure - Aratinga canicularis eburnirostrum 
+v. Jenday parrot - Aratinga jendays 
+vi. African gray parrot - Psittacus erithacus; 
+vii. Macaws - Ara. spp. & Anodorhynchus spp. (Except endangered forms.) 
+ 
+2. Mammals: 
+i. Ferrets - Mustela pertorius furo; 
+ii. Kinkajou - Potos flavus; 
+iii. Coatimundi – Nasua spp.; 
+iv. European hedgehog - Erinaceus europeaus; 
+v. Llama – Lama glama; 
+vi. Exotic Sheep - except Ovis aries; 
+vii. Exotic Goats - except Capra hircus. 
+ 
+3. Reptiles: 
+i. Pythons - Family Pythonidae; 
+ii. Rat Snakes - Elaphe spp.; 
+iii. Bosas- Family Boidae (other than Boa Constrictors) 
+iv. King Snakes - Lampropeltis spp.; 
+v. Racer – Coluber spp.; 
+vi. Ringneck Snakes - Diadophis punctatus; 
+vii. Green Snakes - Opheodrys spp; 
+viii. Collared Lizard - Crotaphytus collaris; 
+ix. Monitor - Varanus spp.; 
+x. Skinks - Family Scincidae; 
+xi. Ameiva - Ameiva spp; 
+xii. Chuckwalla - Sauromalus obesus; 
+xiii. Alligator Lizard – Gerrhonitus spp.; 
+xiv. Geckos - Family Gekkonidae other than Tokay Gecko; 
+xv. Armadillo Lizard - Cordylus cataphractus 
+ 
+(b) The Department may issue a permit for the possession of the above exotic mammals, 
+birds, reptiles or amphibians, or nongame species provided the applicant has satisfactorily  
+met the criteria contained within N.J.A.C. 7:25-4.7. 
+ 
+7:25-4.5 Additional Species 
+A permit shall be required for any other exotic mammals, birds, reptiles, or 
+amphibians, or nongame species not specifically exempted by Section 4.4. 
+ 
+**Please note – Emus, Ostriches, Greater Rheas, Lesser Rheas were designated as 
+agricultural livestock pursuant to P.L. 1997, c. 316 (N.J.S.A. 4:2-17) and Llamas, 
+Alpacas and Guanacos were designated as agricultural livestock pursuant to P.L. 
+1994, c. 33 (N.J.S.A. 4:2-16). Therefore, they are considered exempt species and 
+DO NOT require a permit for possession. 
+ 
+If the species you are searching for is not on this list, the Exempt Species list or the 
+Potentially Dangerous Species list, please contact the Exotic and Nongame Permits Office with 
+your questions at 609-223-6055 or e-mail EXOTICPERMITS@dep.nj.gov. 

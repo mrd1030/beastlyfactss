@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 21 (AZ, CO, CT, DE, FL, GA, HI, IL, MA, MD, MI, MN, NE, NM, NV, NY, NYC, OR, PA, TN, TX) |
-| Unread cells | 342 |
-| Cached primary sources | 46 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 22 (AZ, CO, CT, DE, FL, GA, HI, IL, MA, MD, MI, MN, NE, NJ, NM, NV, NY, NYC, OR, PA, TN, TX) |
+| Unread cells | 314 |
+| Cached primary sources | 51 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
 Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts, Nebraska, Florida, New York,
-Georgia and New York City sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
+Georgia, New York City and New Jersey sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
 fresh branch from main once it lands.
 
 ## The loop
@@ -28,7 +28,7 @@ One jurisdiction per sitting. It takes a while and that is fine.
    that explains rather than asserts, and `verifiedOn` set to today in US Eastern.
 4. Re-run `legal-gaps.mjs`, then `node scripts/check-legal-map-sync.mjs`. That script
    cross-checks every legal guide against the map and will catch guides you just made
-   wrong. It sits at 7 pre-existing errors; anything above that is yours.
+   wrong. It sits at 6 pre-existing errors; anything above that is yours.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
@@ -130,6 +130,17 @@ runs to 100 animals. None of those animals is named anywhere in the rule. The te
 a numbered subsection early in a rule that says what may NOT be listed, followed by lists that keep
 pointing back at it.
 
+**A dangerous list read as the whole law.** New Jersey runs three species lists and they answer
+three different questions. 7:25-4.8 is the potentially dangerous table, 7:25-4.4 is a closed exempt
+list, and 7:25-4.3 is a permit list that is expressly open-ended. Two entries on this map read
+`legal` for the cockatoo and the California kingsnake, both cited to 4.8, both reasoning that an
+ordinary parrot and an ordinary colubrid are not dangerous animals. That reasoning was correct and
+it answered the wrong question: being off the dangerous list only means an animal is not banned.
+Whether it is free is decided by 4.4, which names nine birds and nine reptiles and nothing else,
+and the kingsnake is not even left to the catch-all because 4.3(a)3.iv names *Lampropeltis* spp.
+outright. In a closed-list state, an absence from the prohibited list is not a finding. Find the
+animal on the permitted list or accept that it needs a permit.
+
 **A rule with nothing behind it.** Minnesota's 2021 pet reptile law says the commissioner
 "must prescribe conditions and may issue permits" and then makes lawful possession turn on the
 animal having come from a permitted breeder. There is no such permit on the DNR's permits page,
@@ -160,11 +171,12 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| NJ | New Jersey | 28 | 3 sources on file |
 | UT | Utah | 27 | 5 sources on file |
 | AL | Alabama | 20 | 3 sources on file |
 | IN | Indiana | 20 | 1 source on file |
 | OK | Oklahoma | 20 | 1 source on file |
+| AR | Arkansas | 12 | 1 source on file |
+| ME | Maine | 12 | 1 source on file |
 
 ## Loose ends
 
@@ -174,6 +186,30 @@ state that codifies by version. And confirm the citation itself still resolves.
   sits in Dactyloidae. On drafting-era taxonomy the green anole is prohibited; on current taxonomy
   it is not. The Code never dates its family names, and it uses them loosely elsewhere, printing
   "teiidae" in lower case and calling hedgehogs Insectivora. Recorded unclear rather than guessed.
+- **New Jersey has seven unclear cells and four of them are one question.** The tarantula, the
+  emperor scorpion, the giant millipede and the hissing cockroach all turn on whether subchapter 4
+  reaches invertebrates, and the two readings are both textual. 7:25-4.5 requires a permit for "any
+  other exotic mammals, birds, reptiles, or amphibians, or nongame species", and that last phrase is
+  not limited by class: 7:25-4.1 defines a nongame species as any wildlife without a hunting season,
+  the enabling act at N.J.S.A. 23:2A-3 defines wildlife to include "or other wild animal", and 4.17
+  proves the Division means it by assigning conservation status to bivalves and insects. Against
+  that, the possession statute at N.J.S.A. 23:4-63.3(j) defines an exotic animal as a mammal, bird,
+  reptile, amphibian, fish, mollusc or crustacean, which leaves arthropods out entirely, and not one
+  of the Division's three published lists names a single invertebrate. New Jersey's plant pest rules
+  sit at N.J.A.C. 2:20 under the Department of Agriculture, which is the Florida-shaped place to
+  look if anyone wants to settle these four.
+- **New Jersey's other three unclear cells are each their own problem.** The African grey is a
+  straight conflict between two documents the same agency publishes: 7:25-4.3(a)1.vi names it as a
+  permit species, and the restricted species notice says the Division treats an IUCN Red List entry
+  as an endangered listing and that endangered species may not be kept as pets for any reason.
+  *Psittacus erithacus* has been IUCN Endangered since 2016. The 4.3 list still calls macaws permit
+  species "except endangered forms", so it looks like a list nobody revisited rather than a
+  deliberate exception. The Bengal turns on the unqualified words "Felidae--Nondomestic cats" with
+  no hybrid provision anywhere in the subchapter. The rabbit is recorded legal but on a statute
+  rather than a rule: 23:4-63.3(j) excludes "domesticated companion animals ... as defined by the
+  Fish and Game Council", and the Council has never defined that term in N.J.A.C. 7:25, while 4.4
+  goes to the trouble of exempting the hamster, gerbil and guinea pig, which are domesticated pets
+  on the same footing.
 - **Georgia has no unclear cells but one thin answer.** The tiger salamander is recorded legal
   because DNR's prohibited natives list names five salamanders and not that one, and lists "spring
   lizards" among natives that may be taken. DNR says of that list that it "does not include all
@@ -283,25 +319,25 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 ## Articles
 
-Twelve matrix animals have deep coverage and no legal guide. The two best are ready now:
+Twelve matrix animals have deep coverage and no legal guide. The two best are complete now:
 
-- **capybara**, 50 of 51 states read
-- **prairie-dog**, 50 of 51
+- **capybara**, 51 of 51 states read
+- **prairie-dog**, 51 of 51
 
 Both already had a Colorado cell and both were wrong: `permit` where the answer is `banned`.
 They are corrected now, but anything drafted against the older map needs re-reading, and the
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Ten animals are at 51 of 51: hamster, gerbil, guinea pig, chinchilla, ferret, cockatoo, hedgehog,
-sugar glider, garter snake and kingsnake. Thirteen more are one short at 50, among them the ball
-python, boa constrictor, green iguana, tokay gecko, veiled chameleon, Bengal cat, degu, quaker
-parakeet, Russian tortoise, fennec fox, serval, prairie dog and capybara. Twenty-three animals at
-or near full coverage, which is comfortably the largest article-ready batch this map has had.
+Sixteen animals are now at 51 of 51: hamster, gerbil, guinea pig, chinchilla, degu, ferret,
+cockatoo, hedgehog, sugar glider, garter snake, kingsnake, Bengal cat, fennec fox, serval, prairie
+dog and capybara. Eleven more are one short at 50: ball python, boa constrictor, Burmese python,
+green iguana, tokay gecko, veiled chameleon, Russian tortoise, quaker parakeet, savannah monitor,
+Nile monitor and Argentine tegu. Twenty-seven animals at or near full coverage.
 
-The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
+The eight encyclopedia animals added recently (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
-at 4 to 11 states each and are **not** ready for guides. `check-legal-map-sync.mjs` fails a
+at 22 to 23 states each and are **not** ready for guides. `check-legal-map-sync.mjs` fails a
 guide that asserts a status for a state the map has not read, so writing one now produces a
 page the build rejects. They need map depth first.
 
@@ -339,6 +375,15 @@ Maryland is the only state that answers it by weight: § 10-621(b)(1)(iv) reache
 only "if the hybrid weighs over 30 pounds", with no generation test anywhere in the section. The
 line is drawn on the individual animal rather than its ancestry, which is the one version of
 this rule whose answer could change as a cat grows.
+
+New Jersey is the sixteenth Bengal answer and the only one recorded `unclear` for want of any
+provision at all. 7:25-4.8(a) reads "Felidae--Nondomestic cats" and stops. There is no hybrid
+clause, no generation count, no registry exit and no weight test anywhere in subchapter 4, so the
+whole question rides on a word the rule never defines, applied to an animal that is half of each
+category the word distinguishes. The statute above it does not help either, because its carve-out
+for "domesticated companion animals" is expressly one "as defined by the Fish and Game Council" and
+the Council has not defined it. Sixteen states, and this is the one where the drafters appear not
+to have considered the question.
 
 New York City is the fifteenth Bengal answer and the only one with no exit at all: "any hybrid or
 cross-breed offspring of a wild cat and domesticated or other cat", with no filial number, no weight

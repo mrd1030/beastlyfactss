@@ -98,35 +98,35 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 21,
+        "checked": 22,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 21,
+        "checked": 22,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 22,
+        "checked": 23,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 22,
+        "checked": 23,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 22,
+        "checked": 23,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 22,
+        "checked": 23,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 22,
+        "checked": 23,
         "of": 51
       },
       "green-anole": {
-        "checked": 22,
+        "checked": 23,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,47 +134,47 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 46,
-        "of": 51
-      },
-      "emperor-scorpion": {
-        "checked": 46,
-        "of": 51
-      },
-      "axolotl": {
-        "checked": 46,
-        "of": 51
-      },
-      "box-turtle": {
-        "checked": 46,
-        "of": 51
-      },
-      "giant-millipede": {
-        "checked": 46,
-        "of": 51
-      },
-      "red-eared-slider": {
         "checked": 47,
         "of": 51
       },
-      "sulcata-tortoise": {
-        "checked": 46,
+      "emperor-scorpion": {
+        "checked": 47,
         "of": 51
       },
-      "hognose-snake": {
-        "checked": 46,
+      "axolotl": {
+        "checked": 47,
         "of": 51
       },
-      "african-grey-parrot": {
-        "checked": 46,
+      "box-turtle": {
+        "checked": 47,
         "of": 51
       },
-      "tiger-salamander": {
+      "giant-millipede": {
+        "checked": 47,
+        "of": 51
+      },
+      "red-eared-slider": {
         "checked": 48,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 47,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 47,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 47,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 49,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 50,
         "of": 51
       },
       "snapping-turtle": {
@@ -186,11 +186,11 @@
         "of": 51
       },
       "nile-monitor": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "green-iguana": {
@@ -198,7 +198,7 @@
         "of": 51
       },
       "burmese-python": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "russian-tortoise": {
@@ -210,7 +210,7 @@
         "of": 51
       },
       "degu": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "ackie-monitor": {
@@ -230,7 +230,7 @@
         "of": 51
       },
       "bengal-cat": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "guinea-pig": {
@@ -262,11 +262,11 @@
         "of": 51
       },
       "fennec-fox": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "serval": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "rosy-boa": {
@@ -274,7 +274,7 @@
         "of": 51
       },
       "prairie-dog": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "ferret": {
@@ -282,7 +282,7 @@
         "of": 51
       },
       "capybara": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "cockatoo": {
@@ -578,7 +578,7 @@
     "nj-7-25-4-4": {
       "title": "N.J.A.C. 7:25-4.4 Exempted Species and 7:25-4.5 Additional Species",
       "url": "https://nj.gov/dep/fgw/pdf/xotic_exemptspp.pdf",
-      "note": "4.4 is a closed exempt list; 4.5 requires a permit for 'any other' exotic species not exempted."
+      "note": "The Division's handout of the 4.4 exempt list, which is closed, and of 4.5, which is the catch-all. Anything not named in 4.4 needs a permit, so the exempt list is the only route to a plain 'legal' in New Jersey."
     },
     "me-unrestricted": {
       "title": "Maine Department of Inland Fisheries and Wildlife, Unrestricted Species List",
@@ -905,11 +905,6 @@
       "url": "https://www.revisor.mn.gov/statutes/cite/97A.401",
       "note": "Subd. 8, added in 2021, is the pet reptile rule: the commissioner must prescribe conditions and may issue breeder permits, and a snake, lizard or salamander is possessable as a pet if it came from a permitted breeder or was held before 1 August 2021. Subd. 3 is the older, broader route, allowing special permits without a fee to possess wild animals as pets."
     },
-    "nj-7-25-4-5": {
-      "title": "N.J.A.C. 7:25-4.4 Exempted Species and 7:25-4.5 Additional Species",
-      "url": "https://nj.gov/dep/fgw/pdf/xotic_exemptspp.pdf",
-      "note": "Official NJDEP Fish & Wildlife exempted-species list; 4.5 requires a permit for any exotic reptile not named in 4.4's list, which covers Boa constrictor, garter snakes and ribbon snakes but not corn snake, milk snake, or rosy boa."
-    },
     "pa-exotic-wildlife-permit": {
       "title": "58 Pa. Code Chapter 147, Subchapter N — Exotic Wildlife Possession",
       "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter147%2FsubchapNtoc.html&d=reduce",
@@ -971,9 +966,9 @@
       "note": "Maryland's native reptile and amphibian chapter, adopted 1993 and amended through 2016, renumbered from 08.03.09. It works off three lists in Regulation .03: .03A species may be kept four per species without a permit, .03B species one only, and .03C species not at all outside a scientific collection or endangered species permit. A species on none of the three lists is not native to Maryland and the chapter does not reach it. Regulation .03D provides that where both names are given, the scientific name controls."
     },
     "nj-7-25-4-8": {
-      "title": "N.J.A.C. 7:25-4.8(a)",
+      "title": "N.J.A.C. 7:25-4.8(a) Potentially dangerous species, restricted and endangered species notice",
       "url": "https://dep.nj.gov/wp-content/uploads/njfw/restricted-species-potentially-dangerous-species-and-endangered-species.pdf",
-      "note": "NJDEP Fish and Wildlife's courtesy copy of its potentially dangerous species table, ordinary colubrid snakes such as kingsnakes and garter snakes are not on it."
+      "note": "The Division's restricted species notice. It reproduces the 4.8(a) table and then adds things that are nowhere in the rule text: that it treats an IUCN Red List entry as an endangered listing, that only nine named corn snake morphs may be kept, and that axolotls and larval salamanders may not be kept at all."
     },
     "nv-unprotected-reptiles": {
       "title": "NAC 503.090",
@@ -1349,6 +1344,21 @@
       "title": "NYSDEC list of endangered, threatened and special concern species (6 NYCRR Part 182)",
       "url": "https://dec.ny.gov/nature/animals-fish-plants/biodiversity-species-conservation/endangered-species/list",
       "note": "The list that decides which native New York herptiles are protected twice over. Three entries matter here: the eastern tiger salamander, Ambystoma tigrinum, is ENDANGERED; the woodland box turtle, Terrapene carolina carolina, is threatened or special concern; and the eastern hognose snake, Heterodon platyrhinos, is special concern. Species of special concern are named directly in the definition of protected wildlife at ECL § 11-0103(6)(c), so a listing here is a second and independent route to the same prohibition the small game definition already produces. No flying squirrel appears anywhere on the list."
+    },
+    "nj-njac-7-25": {
+      "title": "N.J.A.C. 7:25 Subchapter 4, Endangered, Nongame and Exotic Wildlife",
+      "url": "https://dep.nj.gov/wp-content/uploads/rules/rules/njac7-25.pdf",
+      "note": "NJDEP's own courtesy copy of the whole of N.J.A.C. 7:25. Subchapter 4 starts at 7:25-4.1 and carries the definitions, the permit requirement at 4.2, the three species lists at 4.3, 4.4 and 4.8, the pet bar at 4.9(a)3 and 4.15(b), and the state endangered list at 4.13. The three list PDFs the Division hands out are extracts of this."
+    },
+    "nj-7-25-4-3": {
+      "title": "N.J.A.C. 7:25-4.3 Exotic Species and Nongame species requiring a permit for possession",
+      "url": "https://www.nj.gov/dep/fgw/pdf/xotic_permreq.pdf",
+      "note": "The Division's handout of the 4.3 permit list. It is open-ended, 'include, but are not limited to', and works by family as often as by species, so Pythonidae, Boidae, Lampropeltis, Varanus, Scincidae and Gekkonidae each answer several pet species at once."
+    },
+    "nj-njsa-23-4-63-3": {
+      "title": "N.J.S.A. 23:4-63.3, Possession, release of certain animals, prohibited; terms defined",
+      "url": "https://law.onecle.com/new-jersey/title-23/23-4-63.3.html",
+      "note": "The statutory possession bar that sits above subchapter 4. New Jersey publishes its statutes through a Folio viewer that does not serve a plain document URL, so the section was read from this reproduction and is cited to the official section. Its definition of 'exotic animal' is narrower than the rule's: it reaches mammals, birds, reptiles, amphibians, fish, molluscs and crustaceans only, and it carves out domesticated companion animals."
     }
   },
   "animals": {
@@ -1407,11 +1417,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4",
-          "cite": "N.J.A.C. 7:25-4.5",
-          "note": "Absent from the 4.4 exempt list, so 4.5 requires a permit.",
-          "verifiedOn": "2026-08-04",
-          "permitFor": "personal"
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)2.iv; 7:25-4.5",
+          "quote": "Mammals: ... iv. European hedgehog - Erinaceus europeaus;",
+          "note": "The 4.3 permit list names one hedgehog, the European hedgehog, Erinaceus europaeus. The hedgehog kept as a pet is the African pygmy, Atelerix albiventris, which is not that animal and is not named anywhere in the subchapter. It reaches the same answer by the other road: 4.4 does not exempt it, so 4.5 requires a permit for it as an \"other\" exotic mammal. Worth saying plainly because the species mismatch invites the wrong conclusion in both directions, that the listing does not apply so the animal is free, or that the listing applies so the pet species is covered by it.",
+          "verifiedOn": "2026-09-05"
         },
         "ME": {
           "status": "legal",
@@ -1801,11 +1811,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4",
-          "cite": "N.J.A.C. 7:25-4.5",
-          "note": "Not on the exempt list.",
-          "verifiedOn": "2026-08-04",
-          "permitFor": "personal"
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)2.i",
+          "quote": "Mammals: i. Ferrets - Mustela pertorius furo;",
+          "note": "The domestic ferret is answered by name on the 4.3 permit list rather than by the catch-all. It is the first mammal on the list, spelled \"Mustela pertorius furo\" for Mustela putorius furo. The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. New Jersey is one of the states where the ferret is a permit animal rather than a banned one or a free one, so the answer is neither of the two extremes people expect from the ferret map.",
+          "verifiedOn": "2026-09-05"
         },
         "ME": {
           "status": "legal",
@@ -2222,10 +2232,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4",
+          "sourceId": "nj-njac-7-25",
           "cite": "N.J.A.C. 7:25-4.5",
-          "verifiedOn": "2026-08-04",
-          "permitFor": "personal"
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The sugar glider appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight.",
+          "verifiedOn": "2026-09-05"
         },
         "ME": {
           "status": "legal",
@@ -2632,9 +2643,10 @@
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "cite": "7:25-4.4(a)2",
-          "quote": "Hamster - Mesocricetus auratus",
-          "verifiedOn": "2026-08-04"
+          "cite": "N.J.A.C. 7:25-4.4(a)2.i",
+          "quote": "Mammals: i. Hamster - Mesocricetus auratus;",
+          "note": "The golden hamster is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. It is named by species, Mesocricetus auratus, so the exemption covers the pet hamster and not the dwarf species sold alongside it, which are Phodopus and reach 4.5 instead. 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\".",
+          "verifiedOn": "2026-09-05"
         },
         "MI": {
           "status": "legal",
@@ -3039,9 +3051,10 @@
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "cite": "7:25-4.4(a)2",
-          "quote": "Gerbil - Meriones mongolinensis",
-          "verifiedOn": "2026-08-04"
+          "cite": "N.J.A.C. 7:25-4.4(a)2.ii",
+          "quote": "Mammals: ... ii. Gerbil - Meriones mongolinensis;",
+          "note": "The Mongolian gerbil is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. The list spells it \"Meriones mongolinensis\", an old name for Meriones unguiculatus, which is the animal sold as a pet gerbil. 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\".",
+          "verifiedOn": "2026-09-05"
         },
         "MI": {
           "status": "legal",
@@ -3457,11 +3470,13 @@
           "verifiedOn": "2026-09-05"
         },
         "NJ": {
-          "status": "permit",
-          "sourceId": "nj-7-25-4-4",
-          "note": "Not among the nine exempt birds.",
-          "verifiedOn": "2026-08-04",
-          "permitFor": "personal"
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "Psittaciformes Psittaculis spp.--Ring-necked parakeets / Myiopsitta spp.--Monk parakeets / Cyanoliseus patagonus--Patagonian Conures ... The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "The quaker is Myiopsitta monachus and 4.8(a) puts Myiopsitta spp. in the potentially dangerous table, alongside the ring-necked parakeets and the Patagonian conure, on the agricultural pest limb of the definition rather than the dangerous animal limb. A permit exists for potentially dangerous species under 4.8(b), which is why this entry read \"permit\" before, but 4.9(a)3 says in terms that such a species \"shall not be kept as a pet, for hobby purposes\". The permit is real and it is simply not a pet permit, so for a keeper the practical answer is a ban. The Division states it flatly in its own notice: potentially dangerous species \"may not be kept as pets or for hobby purposes for any reason\".",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         },
         "ME": {
           "status": "permit",
@@ -4271,6 +4286,14 @@
           "quote": "The following wild animals are considered inherently dangerous to human beings and pursuant to O.C.G.A. Sec. 27-5-4 are subject to licensing and liability insurance requirements. (a) Mammals: ... 2. Order Carnivora: (i) Family Canidae: Genera Canis, Chrysocyon, Cuon, and Lycaon (wolves, jackals, dingos, etc.) - All species ...; (ii) Family Felidae (cats) - All species; (iii) Family Hyaenidae (hyenas) - All species; ...",
           "note": "The fourteenth Bengal answer on this map and the bluntest. Georgia has no generation rule, no weight test and no registry carve-out. The inherently dangerous list is \"Family Felidae (cats) - All species\", and DNR states the hybrid position directly: \"Hybrids or crosses between any combination of domestic animals, wildlife, or regulated wild animals and all subsequent generations are regulated in Georgia and may not be held without a license\", followed by \"Most exotic cat hybrids, such as a savannah cat, are not a legal pet in Georgia.\" The phrase \"all subsequent generations\" is what forecloses the argument every other state on this row leaves open.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "unclear",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a)",
+          "quote": "Carnivora Canidae--Nondomestic dogs / Ursidae--Bears / Felidae--Nondomestic cats",
+          "note": "New Jersey writes the cat line as \"Felidae--Nondomestic cats\" and stops there. There is no hybrid provision anywhere in subchapter 4, no generation count of the sort New York and Massachusetts use, and no filial cutoff in the Division's published notice, so the whole question is carried by the word \"nondomestic\" doing work the rule never defines. A Bengal is Felis catus crossed to Prionailurus bengalensis, which makes it half of each category the line distinguishes. The statute above the rule does not help either, because N.J.S.A. 23:4-63.3(j) excludes \"domesticated companion animals ... as defined by the Fish and Game Council\" and the Council has not defined that term by rule. Recorded as unread rather than guessed, because the two available guesses are a free pet and a species that may not be kept at all.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -4315,12 +4338,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4",
-          "verifiedOn": "2026-08-04",
-          "permitFor": "personal",
-          "cite": "N.J.A.C. 7:25-4.4, 4.5",
-          "quote": "any other exotic species not exempted",
-          "note": "New Jersey exempts a closed list of species from permitting and then requires a permit for anything else. The veiled chameleon is not exempted, so a personal possession permit from Fish and Wildlife applies before the animal arrives."
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The veiled chameleon appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. Chamaeleonidae is absent from 4.3, which does reach a long run of lizard families, so the chameleons are one of the groups that only 4.5 answers.",
+          "verifiedOn": "2026-09-05"
         },
         "ME": {
           "status": "legal",
@@ -4719,12 +4741,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4",
-          "verifiedOn": "2026-08-04",
-          "permitFor": "personal",
-          "cite": "N.J.A.C. 7:25-4.4, 4.5",
-          "quote": "any other exotic species not exempted",
-          "note": "Not on the exempt list, so the catch-all permit provision applies. This is the only permit requirement for a Russian tortoise anywhere in the country."
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The Russian tortoise appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. The only chelonians 4.4 exempts are the eastern painted turtle and the snapping turtle, so every tortoise sold as a pet in New Jersey is a permit animal.",
+          "verifiedOn": "2026-09-05"
         },
         "ME": {
           "status": "legal",
@@ -5129,10 +5150,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4",
-          "note": "Not exempt, unlike the boa constrictor.",
-          "verifiedOn": "2026-08-04",
-          "permitFor": "personal"
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.i",
+          "quote": "Reptiles: i. Pythons - Family Pythonidae;",
+          "note": "The ball python is answered by name on the 4.3 permit list rather than by the catch-all. The list takes the whole family, \"Pythons - Family Pythonidae\", so it does not matter that Python regius is never named. The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. The contrast with the boa constrictor next door is the thing to hold on to: 4.4 exempts Boa constrictor by name while 4.3 puts every python on the permit list, so two snakes of similar size and temperament get opposite answers in the same state.",
+          "verifiedOn": "2026-09-05"
         },
         "FL": {
           "status": "legal",
@@ -5533,10 +5555,10 @@
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "cite": "7:25-4.4(a)3",
-          "quote": "Boa constrictor - Constrictor constrictor",
-          "note": "New Jersey exempts the boa and requires a permit for the ball python, the reverse of most states.",
-          "verifiedOn": "2026-08-04"
+          "cite": "N.J.A.C. 7:25-4.4(a)3.iii",
+          "quote": "Reptiles: ... iii. Boa constrictor - Constrictor constrictor;",
+          "note": "The boa constrictor is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. It is listed under the disused name Constrictor constrictor. 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\". New Jersey is unusual here. Most states that name large constrictors name them to restrict them, and this is one of the few that exempts one outright while requiring a permit for every python under 4.3(a)3.i and for the rest of Boidae under 4.3(a)3.iii. The exemption is for the boa constrictor specifically and not for boas generally, so a rosy boa or a sand boa does not come with it.",
+          "verifiedOn": "2026-09-05"
         },
         "FL": {
           "status": "legal",
@@ -6306,6 +6328,14 @@
           "quote": "The following wild animals are considered inherently dangerous to human beings and pursuant to O.C.G.A. Sec. 27-5-4 are subject to licensing and liability insurance requirements. (a) Mammals: ... 2. Order Carnivora: (i) Family Canidae: Genera Canis, Chrysocyon, Cuon, and Lycaon (wolves, jackals, dingos, etc.) - All species ...; (ii) Family Felidae (cats) - All species; (iii) Family Hyaenidae (hyenas) - All species; ...",
           "note": "Georgia regulates invertebrates in three places and none of them reaches a tarantula. The prohibited list at .03(1)(d) covers dreissenid mussels, giant African land snails and the marbled crayfish. The inherently dangerous list at .04(1)(d) is scorpions only, and it is species-specific: the fattail, bark and burrowing thicktail genera, the deathstalker, and one Scorpionidae species, Opistophthalmus glabrifons. The licence list at .05(1)(f) is molluscs, crayfishes and shrimps. Every entry across all three is either aquatic or venomous.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "unclear",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.1, 4.5; N.J.S.A. 23:4-63.3(j)",
+          "quote": "\"Nongame species\" means any wildlife for which a legal hunting or trapping season has not been established in New Jersey or which has not been classified as an endangered species by statute or regulation of this State.",
+          "note": "New Jersey never says what it does about invertebrates and the two obvious readings go opposite ways. 4.5 requires a permit for \"any other exotic mammals, birds, reptiles, or amphibians, or nongame species\", and that last phrase is not limited by class: 4.1 defines a nongame species as any wildlife without a hunting season, and the enabling act at N.J.S.A. 23:2A-3 defines wildlife to include \"or other wild animal\", which reaches a spider. 4.17 confirms the Division does treat invertebrates as nongame wildlife, since it assigns conservation status to bivalves and insects. Pulling the other way, the possession statute at N.J.S.A. 23:4-63.3(j) defines an exotic animal as a mammal, bird, reptile, amphibian, fish, mollusc or crustacean, which leaves out arachnids entirely, and not one of the Division's three published lists names a single invertebrate. Left unresolved rather than called either way.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -6701,6 +6731,14 @@
           "cite": "R. 391-4-8-.03(1)(d); R. 391-4-8-.04(1)(d)",
           "quote": "The following wild animals are considered inherently dangerous to human beings and pursuant to O.C.G.A. Sec. 27-5-4 are subject to licensing and liability insurance requirements. (a) Mammals: ... 2. Order Carnivora: (i) Family Canidae: Genera Canis, Chrysocyon, Cuon, and Lycaon (wolves, jackals, dingos, etc.) - All species ...; (ii) Family Felidae (cats) - All species; (iii) Family Hyaenidae (hyenas) - All species; ...",
           "note": "Georgia regulates invertebrates in three places and none of them reaches the emperor scorpion. The prohibited list at .03(1)(d) covers dreissenid mussels, giant African land snails and the marbled crayfish. The inherently dangerous list at .04(1)(d) is scorpions only, and it is species-specific: the fattail, bark and burrowing thicktail genera, the deathstalker, and one Scorpionidae species, Opistophthalmus glabrifons. The licence list at .05(1)(f) is molluscs, crayfishes and shrimps. Every entry across all three is either aquatic or venomous. This is the one to check rather than assume, because scorpions are the only arachnids Georgia names. Pandinus imperator is a Scorpionidae, the same family as the one listed species, and it is not that species, so it falls outside.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "unclear",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.1, 4.5; N.J.S.A. 23:4-63.3(j)",
+          "quote": "\"Nongame species\" means any wildlife for which a legal hunting or trapping season has not been established in New Jersey or which has not been classified as an endangered species by statute or regulation of this State.",
+          "note": "Same unresolved question as the tarantula, and worth noting that New Jersey does not treat venom as its own trigger the way it does for reptiles. 4.8(a) lists venomous lizards and venomous snakes by family and says nothing about venomous invertebrates, so the emperor scorpion is not potentially dangerous under the rule. It then falls into the same gap: 4.5 reaches \"nongame species\", which 4.1 and the enabling act define broadly enough to include an arachnid, while the possession statute at N.J.S.A. 23:4-63.3(j) does not reach arachnids at all and no Division list names one.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -7120,6 +7158,14 @@
           "quote": "\"Wild animal\" shall not include \"companion animal\" as defined in section three hundred fifty of the agriculture and markets law. Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians, (2) Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations, (3) Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda)), (4) Ursidae, (5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus), Australian Amethystine Python (Morelia amethistina and Morelia kinghorni), Indian Python (Python molurus), Asiatic (water) Monitor (Varanus salvator), Nile Monitor (Varanus nilocitus), White Throat Monitor (Varanus albigularis), Black Throat Monitor (Varanus albigularis ionides) and Crocodile Monitor (Varanus salvadori), Komodo Dragon (Varanus komodensis) and any hybrid thereof, (6) Crocodylia.",
           "note": "New York regulates exotic animals through a closed list rather than an open standard, and the Argentine tegu is on neither version of it. The statutory wild animal list at § 11-0103(6)(e) is six clauses covering primates, Felidae, Canidae, Ursidae, a named set of constrictors and monitors plus venomous reptiles, and Crocodylia. The department's dangerous animals regulation at 6 NYCRR § 180.1 adds the raccoon dog, wolverine, badgers, raccoons, skunks, bats, elephants and rhinoceroses. Neither reaches this animal, and the native wildlife route does not either, because that one runs through the small game definition and this is not a New York species. The reptile clause names monitors and constrictors and no teiid, so the tegu is untouched. The reptile clause of the wild animal list is a named-species list, not a family one, so an unnamed reptile is simply outside it.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The Argentine black and white tegu appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. The near miss is worth flagging: 4.3(a)3.xi names Ameiva spp., which is the tegu's own family Teiidae, but the list takes that one genus rather than the family, so Salvator merianae is not on it and arrives at the same permit through 4.5 instead.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7528,6 +7574,14 @@
           "cite": "Ga. Comp. R. & Regs. Subject 391-4-8",
           "quote": "The following wild animals are subject to licensing requirements pursuant to O.C.G.A. Sec. 27-5-4. (a) Mammals ... 3. Order Carnivora (weasels, ferrets, cats, bears, wolves, etc.) - All species, except that European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 7. Orders Diprotodontia and Peramelemorphia (Marsupials) - All species except that Petaurus breviceps (sugar glider) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 8. Order Erinaceopmorpha (hedgehogs) - All species ... 10. Order Lagomorpha (Rabbits, hares, etc) - All species ... 16. Order Rodentia (rats, mice, etc.) - All species except Genera Cavia, Chinchilla, Gerbillus, Meriones, Mesocricetus, and species Mus musculus, Rattus rattus, and Rattus norvegicus",
           "note": "Georgia's three tiers are closed lists, and the savannah monitor is on none of them: not prohibited under .03, not inherently dangerous under .04, and not within any order or species licensed under .05. It is not a Georgia native either, so the separate native wildlife restriction does not reach it. The licence rule names one monitor, the Nile, so its congeners are outside the scheme.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.ix",
+          "quote": "Reptiles: ... ix. Monitor - Varanus spp.;",
+          "note": "The savannah monitor is answered by name on the 4.3 permit list rather than by the catch-all. The list takes the genus whole, \"Monitor - Varanus spp.\", so every monitor is a permit animal without any of them being named. The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -7949,6 +8003,15 @@
           "cite": "§ 70-4-403(3)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
           "note": "Tennessee's catch-all sits in the no-permit class rather than the permit class, which is the single fact that decides most questions here: an animal that appears nowhere in Classes I, II, IV or V is Class III and needs no wildlife permit. The prairie dog is not on the Class I list, is not native to Tennessee, and is not among the three Class IV species. Worth comparing across the map: the same animal is prohibited outright in Colorado, Connecticut and Oregon, and needs nothing here, because those states run closed allow-lists and Tennessee runs a closed ban-list.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-7-25-4-8",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "Rodentia Cynomys spp.--Prairie dogs / Spermophilus spp.--Ground Squirrels ... Also note: due to the possibility of Monkey Pox, a health warning restriction has been announced for the following species: prairie dog; and six types of African rodents: tree squirrels, rope squirrels, dormice, Gambian giant pouched rats, brush-tailed porcupines, and striped mice are not allowed to be possessed or sold for any reason.",
+          "note": "Two separate bars land on the same animal. 4.8(a) puts Cynomys spp. in the potentially dangerous table on the disease limb of the definition, \"a menace to the public health\", and 4.9(a)3 then says a potentially dangerous species shall not be kept as a pet. On top of that the Division's notice carries the monkeypox restriction from the 2003 outbreak, which prairie dogs actually caused, and states the prairie dog and six African rodents \"are not allowed to be possessed or sold for any reason\". Either route alone would answer the question; together they leave no pet route at all.",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -8373,6 +8436,14 @@
           "cite": "R12-4-406(F)",
           "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
           "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The capybara is Caviidae, which is not among them, so no special licence is required. Worth saying plainly, because the capybara is the largest rodent in the world and reads like something a state would regulate; Arizona's list simply does not reach its family. Squirrels and prairie dogs, much smaller animals, are restricted.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The capybara appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. The rodent entries in 4.8(a) are Cynomys and Spermophilus, both burrowing ground squirrels flagged for disease, so the capybara is not swept in by size the way it is in states that use a weight threshold.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -8807,6 +8878,15 @@
           "cite": "68A-6.002(1)(c); 68A-6.003(8), (14)",
           "quote": "Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C. ... Hybrids resulting from the cross between wildlife and domestic animal, which are substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild animal shall be regulated as wildlife at the higher and more restricted class of the wild parent.",
           "note": "Class III in Florida is a residual category, \"all other wildlife not listed herein, except those for which a permit is not required\", and the fennec fox lands in it by not being anywhere else. That means a Permit to Possess Class III Wildlife for Personal Use, which costs nothing, runs two years, and requires the applicant to be 16. The thing to notice is what it is not on: 68A-6.003(14) exempts 22 categories from any permit at all, and this animal is not among them. Worth reading carefully, because Class II item 24 says \"Wolves, coyotes, jackals (family Canidae)\" and the parenthetical would sweep in every fox. FWC does not read it that way: its own personal pet page lists \"fox\" among the common Class III species requiring a permit, alongside the raccoon, the coatimundi and the wallaby. So the answer is the free permit rather than the $140 one, on the agency's reading of its own rule.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "Carnivora Canidae--Nondomestic dogs / Ursidae--Bears / Felidae--Nondomestic cats ... The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "The fennec is Vulpes zerda, a canid and not a domestic dog, so \"Canidae--Nondomestic dogs\" takes it whole. New Jersey draws no line by size or temperament here, which matters because the fennec is a three pound animal being handled by the same clause as a wolf. The permit at 4.8(b) is not a way in: 4.9(a)3 bars keeping a potentially dangerous species as a pet or for hobby purposes, and the Division's notice says such species may only be held on zoological holding, scientific holding and animal exhibitor permits.",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -9263,6 +9343,15 @@
           "quote": "Class II: ... 15. Servals (Leptailurus serval) 16. European and Canadian lynx (Lynx lynx) 17. Bobcats (Lynx rufus) 18. Caracals (Caracal caracal) ... 24. Wolves, coyotes, jackals (family Canidae) ...",
           "note": "Named at Class II item 15, between the lynxes and the caracals, so the serval is one of the few animals Florida answers by name rather than by class. A Permit to Possess Class II Wildlife for Personal Use costs $140 a year, requires the applicant to be 18, and requires documented experience: FWC asks for a logged experience record along with facility and caging standards under 68A-6.004 and 68A-6.010. That is a real barrier rather than a fee, and it is the difference between Class II and the free Class III permit. Class I, one tier up, cannot be held as a personal pet at all.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "Carnivora Canidae--Nondomestic dogs / Ursidae--Bears / Felidae--Nondomestic cats ... The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "Leptailurus serval is a nondomestic cat and 4.8(a) takes Felidae on that basis without naming a species. What turns the listing into a ban is 4.9(a)3, which says the potentially dangerous species \"shall not be kept as a pet, for hobby purposes\", so the permit at 4.8(b) exists for zoos, researchers and exhibitors and not for keepers. The Division puts the same point in one sentence in its notice: potentially dangerous species \"may not be kept as pets or for hobby purposes for any reason\".",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/serval-legal-guide/"
@@ -9305,10 +9394,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4",
-          "note": "Not on the exempt list, unlike the hamster and gerbil.",
-          "verifiedOn": "2026-08-04",
-          "permitFor": "personal"
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The chinchilla appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. It sits awkwardly next to the exempt list, which names the hamster, the gerbil, the guinea pig and laboratory mice and rats, all farmed pet rodents of the same kind. The chinchilla was simply not added, and 4.4 is closed, so the omission decides it.",
+          "verifiedOn": "2026-09-05"
         },
         "ME": {
           "status": "legal",
@@ -9719,8 +9809,10 @@
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "quote": "Guinea pig - Cavia porcellus",
-          "verifiedOn": "2026-08-04"
+          "cite": "N.J.A.C. 7:25-4.4(a)2.iii",
+          "quote": "Mammals: ... iii. Guinea pig - Cavia porcellus;",
+          "note": "The guinea pig is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. It is named by species, Cavia porcellus, which is the domesticated animal and not one of the wild cavies. 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\".",
+          "verifiedOn": "2026-09-05"
         },
         "MI": {
           "status": "legal",
@@ -10108,8 +10200,10 @@
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "quote": "Common iguana - Iguana iguana",
-          "verifiedOn": "2026-08-04"
+          "cite": "N.J.A.C. 7:25-4.4(a)3.ii",
+          "quote": "Reptiles: ... ii. Common iguana - Iguana iguana;",
+          "note": "The green iguana is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. It is listed as the \"Common iguana - Iguana iguana\". 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\". This is the outlier on the reptile side of the exempt list. New Jersey lets the green iguana be kept freely while requiring a permit for a leopard gecko and a bearded dragon, which is the opposite of the ranking most keepers would draw by difficulty of care.",
+          "verifiedOn": "2026-09-05"
         },
         "FL": {
           "status": "banned",
@@ -10532,8 +10626,10 @@
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "quote": "Snapping turtles - Chelydra serpentina",
-          "verifiedOn": "2026-08-04"
+          "cite": "N.J.A.C. 7:25-4.4(a)3.v",
+          "quote": "Reptiles: ... v. Snapping turtles-Chelydra serpentina;",
+          "note": "The snapping turtle is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. It is one of only two turtles on the list, with the eastern painted turtle. 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\". It is exempt because it is a New Jersey animal with a harvest season rather than because it is an easy pet, and 7:25-6.22 runs that season with a twelve inch minimum carapace length and a daily limit of one. So possession is unpermitted but taking one is not unregulated.",
+          "verifiedOn": "2026-09-05"
         },
         "ID": {
           "status": "legal",
@@ -10939,8 +11035,10 @@
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "quote": "Tokay gecko - Gekko gecko",
-          "verifiedOn": "2026-08-04"
+          "cite": "N.J.A.C. 7:25-4.4(a)3.viii",
+          "quote": "Reptiles: ... viii. Tokay gecko - Gekko gecko;",
+          "note": "The tokay gecko is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. It is named by species, Gekko gecko. 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\". The pairing with 4.3 is what makes this one worth reading twice: the permit list at 4.3(a)3.xiv takes \"Geckos - Family Gekkonidae other than Tokay Gecko\", carving this one animal out of the family so that the exemption survives. Every other gecko in the trade needs a permit and the tokay does not.",
+          "verifiedOn": "2026-09-05"
         },
         "ID": {
           "status": "legal",
@@ -11754,6 +11852,15 @@
           "quote": "No person shall sell or give to another person, possess, harbor, keep, or yard wild or other animals identified in this section ... other than in: (i) a zoological park or aquarium ...; or (ii) a laboratory ...; or (iii) a veterinary hospital ...; or (iv) a temporary exhibit, performance or display that has been issued a permit by the Commissioner. ... For the purposes of this Code, a wild animal is deemed to be any animal which is naturally inclined to do harm and capable of inflicting harm upon human beings and all such animals are hereby prohibited ... Such animals shall also include: (i) any animals specified by the Commissioner in regulations ...; (ii) any native or exotic wildlife whose possession or sale is prohibited because they are designated as protected or endangered pursuant to any federal, state or local law, regulation, or rule; and (iii) any of the following animals:",
           "note": "Caught by the clause most readings of this article skip. Before its 24 numbered categories, § 161.01(b)(ii) prohibits \"any native or exotic wildlife whose possession or sale is prohibited because they are designated as protected or endangered pursuant to any federal, state or local law, regulation, or rule\". New York State makes native frogs, salamanders, turtles, lizards and snakes small game and therefore protected wildlife, and ECL § 11-0107(2) bars possessing protected wildlife whether taken in the state or brought in from outside it. The eastern tiger salamander is a New York native, so the state prohibition becomes a city one through that sentence. It is listed as ENDANGERED in New York State, which is the clearest possible trigger for a clause written around species \"designated as protected or endangered\". § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.13(b)3; 7:25-4.10(a); 7:25-4.15(b)",
+          "quote": "In accordance therewith, the following species are determined to be endangered: ... 3. Eastern Tiger Salamander, Ambystoma tigrinum tigrinum ... The animal may not be kept as a pet, for hobby purposes or in situations which, in the judgment of the Department, could adversely affect or provide no net benefit to the health of the animal or the welfare of the species.",
+          "note": "The eastern tiger salamander is third on New Jersey's own endangered list at 4.13(b), which is a state listing and not a borrowed federal one. 4.10(a) then says no permit shall issue for a species designated endangered, and the narrow exception at 4.10(b) runs through 4.15, whose subsection (b) says the animal may not be kept as a pet or for hobby purposes. The Division's notice adds a second reason on top: larval salamanders, water dogs, dino dogs and mud puppies may not be kept at all, because they cannot be told apart from one another by sight at that stage.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12174,6 +12281,14 @@
           "cite": "§ 161.01(b)(10)",
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "Named in the Varanidae clause, and caught by the family as well. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.ix",
+          "quote": "Reptiles: ... ix. Monitor - Varanus spp.;",
+          "note": "The Nile monitor is answered by name on the 4.3 permit list rather than by the catch-all. It comes in through the genus entry \"Monitor - Varanus spp.\". The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. New Jersey makes no distinction among monitors by adult size, so the Nile monitor and the ackie are on the same footing here even though one is a two foot animal and the other reaches six.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -12604,6 +12719,14 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "Named among the examples in the Pythonidae clause and caught by the family in any event. This is the one python on this row where the state and the city agree. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.i",
+          "quote": "Reptiles: i. Pythons - Family Pythonidae;",
+          "note": "The Burmese python is answered by name on the 4.3 permit list rather than by the catch-all. It is covered by the family entry \"Pythons - Family Pythonidae\". The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. New Jersey does not put the giant constrictors in a separate tier the way many states now do, so the Burmese python and the ball python are read off the same line. The federal Lacey Act injurious listing still bars importing one across state lines, which is a separate question from whether New Jersey will permit one already here.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13023,6 +13146,14 @@
           "quote": "In addition to domesticated dogs and cats, an animal may be kept, possessed, harbored or sold in the City of New York provided that possession of the animal is not otherwise prohibited by law, including federal, state and local laws regulating domestic animals and livestock or protecting wildlife and endangered species. Such animals include, but are not limited to, gerbil, hamster (Mesocricetus auratus), guinea pig, domesticated rabbit and fowl or small birds such as parakeet, parrot, canary and finch.",
           "note": "Not named anywhere in the article, and it clears the large rodent clause on the same reasoning as the chinchilla: it is a caviomorph, like the prohibited paca and viscacha, but it is rat-sized. § 161.01(c) is the article's short affirmative list, and it is written as examples rather than as a closed set: \"an animal may be kept ... provided that possession of the animal is not otherwise prohibited by law\", followed by gerbil, hamster, guinea pig, domesticated rabbit and small birds. So the question in New York City is always whether something else in § 161.01(b) reaches the animal.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The degu appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -13419,6 +13550,14 @@
           "cite": "§ 161.01(b)",
           "quote": "No person shall sell or give to another person, possess, harbor, keep, or yard wild or other animals identified in this section ... other than in: (i) a zoological park or aquarium ...; or (ii) a laboratory ...; or (iii) a veterinary hospital ...; or (iv) a temporary exhibit, performance or display that has been issued a permit by the Commissioner. ... For the purposes of this Code, a wild animal is deemed to be any animal which is naturally inclined to do harm and capable of inflicting harm upon human beings and all such animals are hereby prohibited ... Such animals shall also include: (i) any animals specified by the Commissioner in regulations ...; (ii) any native or exotic wildlife whose possession or sale is prohibited because they are designated as protected or endangered pursuant to any federal, state or local law, regulation, or rule; and (iii) any of the following animals:",
           "note": "No amphibian clause exists anywhere in § 161.01(b). The twenty-four categories cover mammals, birds, reptiles, insects, arachnids and centipedes, and skip amphibians entirely. The clause to check instead is (b)(ii), which imports species protected or endangered under federal, state or local law, and although Ambystoma mexicanum is critically endangered in the wild it is not listed under the US Endangered Species Act or by New York State, so nothing imports. Its New York relative, the eastern tiger salamander, is state-endangered and is prohibited through that route. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-7-25-4-8",
+          "cite": "N.J.A.C. 7:25-4.10(a); Division restricted species notice",
+          "quote": "Due to the difficulties in determining morphological differences among several species, the following may not be kept as pets or for hobby purposes, nor may they be sold in New Jersey: grey tree frogs (all species), larval salamanders, water dogs, dino dogs, mud puppies, axolotls.",
+          "note": "The axolotl is named outright in the Division's restricted species notice, in the sentence that bans grey tree frogs, larval salamanders, water dogs, dino dogs, mud puppies and axolotls from being kept, held for hobby purposes or sold. The reason given is enforcement rather than the animal: a neotenic salamander cannot reliably be told from the larva of a protected native one by looking at it, and New Jersey has two listed Ambystoma of its own. There is a second and independent route to the same answer, since the notice treats an IUCN Red List entry as an endangered listing and Ambystoma mexicanum is Critically Endangered there, which 4.10(a) turns into a bar on issuing a permit. Note that the express ban lives in the notice and not in the rule text, which is the sort of thing that gets missed by reading the code alone.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13823,6 +13962,14 @@
           "cite": "§ 161.01(b)(ii); N.Y. ECL §§ 11-0103(2)(c), 11-0107(2)",
           "quote": "No person shall sell or give to another person, possess, harbor, keep, or yard wild or other animals identified in this section ... other than in: (i) a zoological park or aquarium ...; or (ii) a laboratory ...; or (iii) a veterinary hospital ...; or (iv) a temporary exhibit, performance or display that has been issued a permit by the Commissioner. ... For the purposes of this Code, a wild animal is deemed to be any animal which is naturally inclined to do harm and capable of inflicting harm upon human beings and all such animals are hereby prohibited ... Such animals shall also include: (i) any animals specified by the Commissioner in regulations ...; (ii) any native or exotic wildlife whose possession or sale is prohibited because they are designated as protected or endangered pursuant to any federal, state or local law, regulation, or rule; and (iii) any of the following animals:",
           "note": "Caught by the clause most readings of this article skip. Before its 24 numbered categories, § 161.01(b)(ii) prohibits \"any native or exotic wildlife whose possession or sale is prohibited because they are designated as protected or endangered pursuant to any federal, state or local law, regulation, or rule\". New York State makes native frogs, salamanders, turtles, lizards and snakes small game and therefore protected wildlife, and ECL § 11-0107(2) bars possessing protected wildlife whether taken in the state or brought in from outside it. The eastern box turtle is a New York native, so the state prohibition becomes a city one through that sentence. It is on the state's special concern list as well as being a native turtle with no open season, so it is protected twice over before the city rule reaches it. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5; 7:25-4.17",
+          "quote": "Eastern Box Turtle Terrapene c. Carolina SC",
+          "note": "The eastern box turtle is a New Jersey animal, listed as special concern on the nongame conservation status table at 4.17, which makes it a nongame species and not an exotic one. Either way it lands in the same place, because 4.4 exempts only two turtles, the eastern painted and the snapping turtle, and 4.5 requires a permit for any other nongame species. The separate point that matters more in practice is that a permit does not authorise going and getting one: the Division states that it is illegal to take any animal from the wild, so a lawful box turtle has to have a lawful captive origin.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -14231,6 +14378,14 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "New York City draws its turtle line by size rather than by species: the reptile clause ends with \"all turtles and tortoises with a carapace length of less than four (4) inches\". The red-eared slider is not otherwise named, so an adult is lawful and a hatchling is not, and the animal grows out of the prohibition rather than into it. The four-inch figure is the same one the federal rule at 21 C.F.R. 1240.62 uses, and the reason is the same: small turtles are the ones children put in their mouths. New York State lists this species as a REGULATED invasive under 6 NYCRR Part 575, which is expressly legal to possess, so the state layer adds nothing and the city's four-inch rule is the whole answer. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The red-eared slider appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. The federal four inch rule under 21 CFR 1240.62 sits on top of this and bars the sale of hatchlings anywhere in the country, which is a distinct restriction from New Jersey's permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14629,6 +14784,14 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "New York City draws its turtle line by size rather than by species: the reptile clause ends with \"all turtles and tortoises with a carapace length of less than four (4) inches\". The sulcata tortoise is not otherwise named, so an adult is lawful and a hatchling is not, and the animal grows out of the prohibition rather than into it. The four-inch figure is the same one the federal rule at 21 C.F.R. 1240.62 uses, and the reason is the same: small turtles are the ones children put in their mouths. A sulcata passes four inches within its first year and then reaches a size no New York City apartment can hold, so the legal constraint is the least of the problems here. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The sulcata tortoise appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. 4.7 conditions the permit on housing that lets the animal \"perform the normal behavior patterns of its species\", which is a real question for an animal that reaches a hundred pounds and digs, rather than a formality.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15026,6 +15189,14 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "The one animal on this map that the Colubridae clause is plainly written for. It reaches \"all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized\", and the hognose is the textbook rear-fanged, Duvernoy-glanded colubrid whose bite produces local envenomation. The words \"even if devenomized\" show the clause is aimed at exactly this category rather than at front-fanged species, which the previous sentence already covers. The eastern hognose is also a New York species of special concern, so § 161.01(b)(ii) reaches it independently through the state's protected wildlife scheme. The western hognose, the ordinary pet-trade animal, escapes the state route and not the colubrid one. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5; 7:25-4.17",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "The two hognoses reach the permit from opposite directions. The eastern hognose, Heterodon platirhinos, is native to New Jersey and appears on the 4.17 nongame table as secure-stable, so it is a nongame species and 4.5 catches it. The western hognose, Heterodon nasicus, is not native, so it is an exotic reptile and 4.5 catches it too. Neither is on the closed exempt list at 4.4, whose only colubrids are the garter snake and the ribbon snake. For the native one there is the further point that taking it from the wild is separately illegal, so the permit has to sit on a captive-bred animal.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15420,6 +15591,14 @@
           "cite": "§ 161.01(c)",
           "quote": "In addition to domesticated dogs and cats, an animal may be kept, possessed, harbored or sold in the City of New York provided that possession of the animal is not otherwise prohibited by law, including federal, state and local laws regulating domestic animals and livestock or protecting wildlife and endangered species. Such animals include, but are not limited to, gerbil, hamster (Mesocricetus auratus), guinea pig, domesticated rabbit and fowl or small birds such as parakeet, parrot, canary and finch.",
           "note": "A parrot, and named as a permitted category in § 161.01(c). The constraint on this species is federal rather than municipal: CITES Appendix I and the Wild Bird Conservation Act. § 161.01(c) is the article's short affirmative list, and it is written as examples rather than as a closed set: \"an animal may be kept ... provided that possession of the animal is not otherwise prohibited by law\", followed by gerbil, hamster, guinea pig, domesticated rabbit and small birds. So the question in New York City is always whether something else in § 161.01(b) reaches the animal.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "unclear",
+          "sourceId": "nj-7-25-4-8",
+          "cite": "N.J.A.C. 7:25-4.3(a)1.vi; Division restricted species notice",
+          "quote": "Birds: ... vi. African gray parrot - Psittacus erithacus; ... NJ Fish & Wildlife classifies any animal as endangered when it is listed on any relevant State or Federal endangered species list, including but not limited to the US Fish and Wildlife Service Endangered Species List, IUCN Red List, and the New Jersey Endangered Species List.",
+          "note": "Two documents the Division publishes point opposite ways at this one bird. The 4.3 permit list names the African gray parrot, Psittacus erithacus, as a species a permit may be issued for, which would make it an ordinary permit animal. The restricted species notice then says the Division classifies any animal as endangered when it appears on the IUCN Red List, and Psittacus erithacus has been Endangered there since the 2016 assessment, which would put it under the notice's rule that endangered species may not be kept as pets for any reason. The 4.3 list is old enough to still call macaws permit species \"except endangered forms\", so the tension looks like a list that was never revisited rather than a deliberate exception. Recorded as unresolved because a keeper cannot tell from the published documents which one the permits office applies.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15816,6 +15995,14 @@
           "quote": "No person shall sell or give to another person, possess, harbor, keep, or yard wild or other animals identified in this section ... other than in: (i) a zoological park or aquarium ...; or (ii) a laboratory ...; or (iii) a veterinary hospital ...; or (iv) a temporary exhibit, performance or display that has been issued a permit by the Commissioner. ... For the purposes of this Code, a wild animal is deemed to be any animal which is naturally inclined to do harm and capable of inflicting harm upon human beings and all such animals are hereby prohibited ... Such animals shall also include: (i) any animals specified by the Commissioner in regulations ...; (ii) any native or exotic wildlife whose possession or sale is prohibited because they are designated as protected or endangered pursuant to any federal, state or local law, regulation, or rule; and (iii) any of the following animals:",
           "note": "The article reaches invertebrates in two clauses and both turn on venom. Clause (12) is \"All venomous insects\", with bees other than non-aggressive honey bees, hornets and wasps as its examples. Clause (13) is \"Arachnida and Chilopoda: All venomous spiders ...; scorpion; all venomous arthropods including, but not limited to, centipede\". The giant African millipede is neither venomous nor a chilopod, so neither clause applies. The distinction that saves it is a taxonomic one the Code happens to get right: centipedes are Chilopoda and venomous, millipedes are Diplopoda and defend themselves with benzoquinone secretions rather than venom. The live constraint on this animal is the federal USDA plant pest permit. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "unclear",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.1, 4.5; N.J.S.A. 23:4-63.3(j)",
+          "quote": "\"Nongame species\" means any wildlife for which a legal hunting or trapping season has not been established in New Jersey or which has not been classified as an endangered species by statute or regulation of this State.",
+          "note": "The same invertebrate gap as the tarantula: 4.5 reaches \"nongame species\", 4.1 defines that as any wildlife without a hunting season, and the enabling act's definition of wildlife ends in \"or other wild animal\", while the possession statute at N.J.S.A. 23:4-63.3(j) covers only vertebrates plus molluscs and crustaceans and no Division list names an invertebrate. Archispirostreptus gigas carries a separate federal problem regardless of how New Jersey reads its own rule, since USDA APHIS treats non-native millipedes as regulated organisms requiring a PPQ 526 permit to move interstate, which is the restriction that actually bites on this species in most states.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16015,13 +16202,12 @@
           "verifiedOn": "2026-08-27"
         },
         "NJ": {
-          "status": "permit",
-          "sourceId": "nj-7-25-4-5",
-          "cite": "N.J.A.C. 7:25-4.4/4.5",
-          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by Section 4.4.",
-          "note": "We read New Jersey's exempted-species list directly: it names Boa constrictor, garter snakes and ribbon snakes among reptiles, but not corn snake. So a permit is required. Worth flagging clearly: New Jersey also lists the corn snake as a state Endangered species (its native range barely reaches southern NJ, and the wild population was decimated by habitat loss and poaching before an endangered listing in 1984). Per NJ Fish & Wildlife's own species account, \"the collection or possession of wild corn snakes is prohibited by the New Jersey Endangered Species Act and is punishable with fines and/or imprisonment.\" A captive-bred, non-New Jersey-origin animal is a permit case under 7:25-4.5; a wild-collected New Jersey animal is a straight endangered-species violation, a much harsher regime.",
-          "permitFor": "personal",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "nj-7-25-4-8",
+          "cite": "N.J.A.C. 7:25-4.13(b)7; Division restricted species notice",
+          "quote": "Wild phase corn snakes are classified as endangered in the State of New Jersey and may not be possessed as pets or for hobby purposes, nor may they be sold, for any reason. The only corn snake color morphs that are legal to possess as pets and/or sold in New Jersey include the following: red albino (amelanistic), butter, blizzard, candy cane, creamsicle, lavender, pearl, snow, and sun glow.",
+          "note": "New Jersey is the state where the corn snake is endangered. 4.13(b)7 lists the corn snake, Elaphe guttata guttata, on the state endangered list, which under 4.10(a) means no permit may issue for it and under 4.15(b) means it may not be kept as a pet. The Division then carves out captive colour morphs, because a morph is visibly not a wild phase animal and so cannot be laundered from the Pine Barrens population. Its notice names nine that may be kept and sold: red albino, butter, blizzard, candy cane, creamsicle, lavender, pearl, snow and sun glow. That makes this conditional rather than a permit: a normal-looking corn snake is barred outright, one of the nine named morphs is allowed, and anything else in a trade that has produced hundreds of morph names is not addressed by the list. Previously recorded here as a plain permit under 4.5, which missed the endangered listing entirely.",
+          "verifiedOn": "2026-09-05"
         },
         "NY": {
           "status": "legal",
@@ -16387,12 +16573,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-5",
-          "cite": "N.J.A.C. 7:25-4.4/4.5",
-          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by Section 4.4.",
-          "note": "New Jersey's exempted-species list names Boa constrictor, garter snakes and ribbon snakes among reptiles, but not milk snake, so a permit is required. We did not find a state-endangered listing for milk snake in New Jersey the way corn snake carries one; this is the general exotic/nongame species permit only.",
-          "permitFor": "personal",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.iv",
+          "quote": "Reptiles: ... iv. King Snakes - Lampropeltis spp.;",
+          "note": "The milk snake is answered by name on the 4.3 permit list rather than by the catch-all. It is a Lampropeltis and the list takes the genus under the heading \"King Snakes - Lampropeltis spp.\", so the milk snake is covered even though the entry does not say milk snake. The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. The eastern milk snake is also native to New Jersey and appears on the 4.17 nongame table, so a wild-caught one is separately off limits.",
+          "verifiedOn": "2026-09-05"
         },
         "OH": {
           "status": "legal",
@@ -16778,12 +16963,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-5",
-          "cite": "N.J.A.C. 7:25-4.4/4.5",
-          "quote": "Boa constrictor - Constrictor constrictor",
-          "note": "New Jersey's exempted reptile list names Boa constrictor by exact genus and species, not the family Boidae generally. Rosy boa (genus Lichanura) is a different genus and is not covered by that specific exemption, so a permit is required under 7:25-4.5.",
-          "permitFor": "personal",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.iii",
+          "quote": "Reptiles: ... iii. Bosas- Family Boidae (other than Boa Constrictors)",
+          "note": "The rosy boa is answered by name on the 4.3 permit list rather than by the catch-all. The entry reads \"Bosas- Family Boidae (other than Boa Constrictors)\", a typo for boas, and the parenthesis is doing the real work. The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. The carve-out is the whole point of the line: the boa constrictor is exempt by name at 4.4(a)3.iii, so 4.3 has to exclude it when it takes the rest of the family. Lichanura trivirgata is in that rest.",
+          "verifiedOn": "2026-09-05"
         },
         "NY": {
           "status": "legal",
@@ -16976,10 +17160,10 @@
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "cite": "N.J.A.C. 7:25-4.4(a)(2)(viii)",
-          "quote": "Flying Squirrel – Glaucompys spp.",
-          "note": "Confirmed directly from the current NJDEP exempt-species PDF (the source document itself misspells the genus 'Glaucompys'). Exempt from permit alongside red squirrel, chipmunk, hamster, gerbil and guinea pig.",
-          "verifiedOn": "2026-08-27"
+          "cite": "N.J.A.C. 7:25-4.4(a)2.viii",
+          "quote": "Mammals: ... viii. Flying Squirrel – Glaucompys spp.",
+          "note": "The flying squirrel is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. The list takes the genus, spelled \"Glaucompys spp.\" for Glaucomys, so both the southern and northern flying squirrel are covered. 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\". Both are native to New Jersey and both appear on the 4.17 nongame table with an undetermined status, so the exemption is about keeping one rather than getting one: taking an animal from the wild is separately illegal, and a lawful flying squirrel has to be captive-bred.",
+          "verifiedOn": "2026-09-05"
         },
         "TN": {
           "status": "legal",
@@ -17470,11 +17654,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4",
-          "cite": "N.J.A.C. 7:25-4.4, 4.5",
-          "note": "No Varanus or Varanidae entry appears on the exempt-species list; falls to the § 4.5 catch-all permit provision.",
-          "permitFor": "personal",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.ix",
+          "quote": "Reptiles: ... ix. Monitor - Varanus spp.;",
+          "note": "The ackie monitor is answered by name on the 4.3 permit list rather than by the catch-all. Varanus acanthurus is inside the genus entry \"Monitor - Varanus spp.\". The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. The ackie is the monitor most often kept because it stays small, and New Jersey gives it the same answer as the Nile monitor, so the usual argument that a dwarf species should be treated differently has nothing to attach to in the text.",
+          "verifiedOn": "2026-09-05"
         },
         "ME": {
           "status": "permit",
@@ -17880,10 +18064,11 @@
         },
         "NJ": {
           "status": "legal",
-          "sourceId": "nj-7-25-4-8",
-          "cite": "N.J.A.C. 7:25-4.8(a)",
-          "note": "Not a potentially dangerous species; that list's only snakes are the venomous families (Elapidae, Viperidae, Crotalidae) plus boomslang, twig snakes, African kraits, and anaconda. A lawfully-acquired garter snake can be kept as a pet. Separately, New Jersey's own exotic-species guidance states plainly, 'It is illegal to take any animal from the wild,' so a wild-caught New Jersey garter snake is off the table even though owning one isn't.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "nj-7-25-4-4",
+          "cite": "N.J.A.C. 7:25-4.4(a)3.vii",
+          "quote": "Reptiles: ... vii. Garter snake-Thamnophia spp. (except T. sirtalis tetrataenia);",
+          "note": "The garter snake is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. The list takes the genus, spelled \"Thamnophia spp.\" for Thamnophis, and carves out one subspecies. 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\". The exception is the San Francisco garter snake, Thamnophis sirtalis tetrataenia, which is federally endangered and a California animal, so the carve-out is about trade rather than anything that happens in New Jersey. The previous entry here had the right answer with the wrong citation, pointing at 4.8(a), the potentially dangerous table, which does not mention garter snakes at all.",
+          "verifiedOn": "2026-09-05"
         },
         "NM": {
           "status": "legal",
@@ -18290,11 +18475,12 @@
           "verifiedOn": "2026-08-27"
         },
         "NJ": {
-          "status": "legal",
-          "sourceId": "nj-7-25-4-8",
-          "cite": "N.J.A.C. 7:25-4.8(a)",
-          "note": "Absent from the potentially dangerous species table, which limits its snakes to venomous families plus boomslang, twig snakes, African kraits, and anaconda.",
-          "verifiedOn": "2026-08-27"
+          "status": "permit",
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.iv",
+          "quote": "Reptiles: ... iv. King Snakes - Lampropeltis spp.;",
+          "note": "This entry previously read legal, cited to 4.8(a), on the reasoning that an ordinary colubrid is not a potentially dangerous species. That is true and it is not the question. New Jersey does not work by a dangerous list with everything else free; 4.2(a) bars possession of any exotic or nongame species without a permit and 4.4 is a short closed list of exemptions that does not include kingsnakes. Worse, the kingsnake is not even left to the 4.5 catch-all, because 4.3(a)3.iv names the genus outright as \"King Snakes - Lampropeltis spp.\". Lampropeltis californiae is squarely inside it.",
+          "verifiedOn": "2026-09-05"
         },
         "NM": {
           "status": "legal",
@@ -18700,12 +18886,12 @@
           "verifiedOn": "2026-08-27"
         },
         "NJ": {
-          "status": "legal",
-          "sourceId": "nj-7-25-4-8",
-          "cite": "N.J.A.C. 7:25-4.8(a)",
-          "quote": "Psittaculis spp. – Ring-necked parakeets; Myiopsitta spp. – Monk (Quaker) parakeets; Cyanoliseus patagonus – Patagonian conures",
-          "note": "New Jersey's potentially dangerous species table names exactly three psittacine groups, and Cacatua is not one of them.",
-          "verifiedOn": "2026-08-27"
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "This entry previously read legal, cited to 4.8(a), because the potentially dangerous table lists three parrots and no cockatoo among them. That reads the rule backwards. The three parrots on 4.8(a), the ring-necked parakeets, Myiopsitta and the Patagonian conure, are there as escape-and-establish agricultural pests, and being off that table only means a bird is not banned. The exempt list at 4.4 is what decides whether a bird is free, and its nine entries are the budgerigar, cockatiel, peafowl, rock dove, canary, house sparrow, European starling, zebra finch and society finch. No cockatoo, so 4.5 requires a permit. One caveat on top: the Division treats an IUCN Red List entry as an endangered listing, and several cockatoos in the trade carry one, the umbrella cockatoo as Endangered and the Moluccan as Vulnerable, so the answer may be harder than a permit depending on species.",
+          "verifiedOn": "2026-09-05"
         },
         "NM": {
           "status": "legal",
@@ -18904,11 +19090,11 @@
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4",
-          "cite": "N.J.A.C. 7:25-4.4, 4.5",
-          "note": "Not on the exempt-species list (N.J.A.C. 7:25-4.4), which names only American anole, common iguana, boa constrictor, eastern painted turtle, snapping turtle, fence lizard, garter snake, tokay gecko and ribbon snake among reptiles. Falls to the § 4.5 catch-all: 'a permit shall be required for any other exotic mammals, birds, reptiles, or amphibians... not specifically exempted.'",
-          "verifiedOn": "2026-08-27",
-          "permitFor": "personal"
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The red-footed tortoise appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight.",
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "status": "legal",
@@ -19455,6 +19641,14 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "The reptile clause is a list of families and the bearded dragon belongs to none of them: not Helodermatidae, not a venomous snake family, not Boidae, Pythonidae, Varanidae, Iguanidae, teiidae, Chelydridae or Crocodylia. Agamidae appears nowhere in the article, which is a notable gap given that Iguanidae, Varanidae and Teiidae are all taken as families.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The bearded dragon appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. Agamidae is missing from 4.3, which does list the collared lizard, the chuckwalla, the alligator lizard, the skinks and the geckos, so Pogona vitticeps ends up in the catch-all rather than on the named list. It is the single most common pet lizard in the country and New Jersey requires a permit for it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19648,6 +19842,14 @@
           "cite": "§ 161.01(b)(10), (c)",
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "The reptile clause is a list of families and the leopard gecko belongs to none of them: not Helodermatidae, not a venomous snake family, not Boidae, Pythonidae, Varanidae, Iguanidae, teiidae, Chelydridae or Crocodylia. Gekkonidae and Eublepharidae appear nowhere in the article.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.xiv",
+          "quote": "Reptiles: ... xiv. Geckos - Family Gekkonidae other than Tokay Gecko;",
+          "note": "The leopard gecko is answered by name on the 4.3 permit list rather than by the catch-all. The entry is \"Geckos - Family Gekkonidae other than Tokay Gecko\", which takes every gecko but one. The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7. Eublepharis macularius has since been moved to Eublepharidae, but the list is using Gekkonidae in the older broad sense that covered all geckos, which is the only reading on which the tokay carve-out makes sense, since the tokay would otherwise not need excluding.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -19843,6 +20045,14 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "The reptile clause is a list of families and the crested gecko belongs to none of them: not Helodermatidae, not a venomous snake family, not Boidae, Pythonidae, Varanidae, Iguanidae, teiidae, Chelydridae or Crocodylia. No gecko family is named.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.xiv; 7:25-4.5",
+          "quote": "Reptiles: ... xiv. Geckos - Family Gekkonidae other than Tokay Gecko;",
+          "note": "The crested gecko is Correlophus ciliatus, placed in Diplodactylidae under current taxonomy, so whether 4.3(a)3.xiv reaches it depends on reading Gekkonidae in the older broad sense that covered all geckos. It does not change the answer. If the entry reaches it, the permit comes from 4.3; if it does not, 4.4 has no crested gecko on it and 4.5 requires a permit for any other exotic reptile. Both roads end at the individual hobby permit under 4.6(a)1.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20036,6 +20246,14 @@
           "cite": "§ 161.01(b)(10), (c)",
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "The reptile clause is a list of families and the blue-tongue skink belongs to none of them: not Helodermatidae, not a venomous snake family, not Boidae, Pythonidae, Varanidae, Iguanidae, teiidae, Chelydridae or Crocodylia. Scincidae appears nowhere in the article.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.x",
+          "quote": "Reptiles: ... x. Skinks - Family Scincidae;",
+          "note": "The blue-tongue skink is answered by name on the 4.3 permit list rather than by the catch-all. The list takes the family whole, \"Skinks - Family Scincidae\", and Tiliqua scincoides is inside it. The list is written by family as often as by species, and 4.3 is open-ended, \"include, but are not limited to\", so being on it settles the permit question but not being on it settles nothing. The permit is the individual hobby permit at 4.6(a)1, subject to the general possession criteria at 4.7.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -20231,6 +20449,14 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "The reptile clause is a list of families and Jackson's chameleon belongs to none of them: not Helodermatidae, not a venomous snake family, not Boidae, Pythonidae, Varanidae, Iguanidae, teiidae, Chelydridae or Crocodylia. Chamaeleonidae appears nowhere in the article, and this species is not protected under any federal or state law that § 161.01(b)(ii) would import.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. Jackson's chameleon appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. Chamaeleonidae is absent from 4.3 altogether, so the chameleons all arrive through the catch-all rather than through a named family.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20424,6 +20650,14 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "This one turns entirely on which decade's taxonomy the Code is using, and the article gives no answer. The reptile clause prohibits \"any member of the family Iguanidae, including the green or common iguana\". Anolis carolinensis was placed in Iguanidae sensu lato for most of the twentieth century, was moved to Polychrotidae in the 1989 Frost and Etheridge revision, and now sits in Dactyloidae. On the taxonomy current when this list was drafted the green anole is an iguanid and prohibited; on current taxonomy it is not one and the clause does not touch it. Nothing in the article dates its family names or says whether they float with revisions, and the Code elsewhere uses family names loosely, printing \"teiidae\" in lower case and calling hedgehogs Insectivora. Recorded unclear rather than guessing, because a green anole is a five dollar pet-shop lizard whose legality in the five boroughs rests on a 1989 systematics paper.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-4",
+          "cite": "N.J.A.C. 7:25-4.4(a)3.i",
+          "quote": "Reptiles: i. American Anole - Anolis carolinensis;",
+          "note": "The green anole is on the closed exempt list at 4.4, which is the only route to keeping an animal in New Jersey with no permit at all. It heads the reptile section of the exempt list as the \"American Anole - Anolis carolinensis\". 4.4(b) attaches the one condition that survives exemption, that the animal \"must be housed or caged in such a manner as to prevent liberation\". It is one of only three lizards New Jersey lets anyone keep without a permit, with the green iguana and the tokay gecko, while the leopard gecko, the bearded dragon and the blue-tongue skink all need one.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20611,6 +20845,14 @@
           "quote": "In addition to domesticated dogs and cats, an animal may be kept, possessed, harbored or sold in the City of New York provided that possession of the animal is not otherwise prohibited by law, including federal, state and local laws regulating domestic animals and livestock or protecting wildlife and endangered species. Such animals include, but are not limited to, gerbil, hamster (Mesocricetus auratus), guinea pig, domesticated rabbit and fowl or small birds such as parakeet, parrot, canary and finch.",
           "note": "Named in § 161.01(c) as \"domesticated rabbit\", and § 161.19 separately governs keeping rabbits alongside livestock and live poultry. § 161.01(c) is the article's short affirmative list, and it is written as examples rather than as a closed set: \"an animal may be kept ... provided that possession of the animal is not otherwise prohibited by law\", followed by gerbil, hamster, guinea pig, domesticated rabbit and small birds. So the question in New York City is always whether something else in § 161.01(b) reaches the animal.",
           "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-njsa-23-4-63-3",
+          "cite": "N.J.S.A. 23:4-63.3(j); N.J.A.C. 7:25-4.1",
+          "quote": "\"Exotic animal\" means any species of mammal, bird, reptile, amphibian, fish, mollusk, or crustacean that is not indigenous to New Jersey as determined by the Fish and Game Council in rules and regulations adopted pursuant to the \"Administrative Procedure Act,\" and shall include the young or eggs of any such species, but shall not include (1) domesticated companion animals or farm livestock as defined by the Fish and Game Council, or (2) fish, shellfish, or game species not indigenous to New Jersey for which fishing, harvesting, hunting, or trapping is authorized and regulated pursuant to law, the State Fish and Game Code, or rules and regulations of the Fish and Game Council;",
+          "note": "The domestic rabbit is not on any of the Division's three lists, and in a closed-list state that would normally mean a permit under 4.5. It does not here, because the possession bar the subchapter implements is N.J.S.A. 23:4-63.3, whose definition of \"exotic animal\" excludes domesticated companion animals, and Oryctolagus cuniculus is a domesticated species rather than a wild one. Subchapter 4 is adopted under the Endangered and Nongame Species Conservation Act, which reaches wildlife, defined at N.J.S.A. 23:2A-3 as wild animals. Two loose threads are worth naming rather than hiding. The statute says domesticated companion animals are those \"defined by the Fish and Game Council\", and the Council has not defined the term anywhere in N.J.A.C. 7:25. And 4.4 goes to the trouble of exempting the hamster, the gerbil and the guinea pig, which are domesticated pets on the same footing, so the exempt list is belt and braces rather than a sign that unlisted domestic pets are caught. The native cottontail is a different animal and a game species under 7:25-5.3.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20796,6 +21038,14 @@
           "cite": "§ 161.01(b)(12), (13)",
           "quote": "No person shall sell or give to another person, possess, harbor, keep, or yard wild or other animals identified in this section ... other than in: (i) a zoological park or aquarium ...; or (ii) a laboratory ...; or (iii) a veterinary hospital ...; or (iv) a temporary exhibit, performance or display that has been issued a permit by the Commissioner. ... For the purposes of this Code, a wild animal is deemed to be any animal which is naturally inclined to do harm and capable of inflicting harm upon human beings and all such animals are hereby prohibited ... Such animals shall also include: (i) any animals specified by the Commissioner in regulations ...; (ii) any native or exotic wildlife whose possession or sale is prohibited because they are designated as protected or endangered pursuant to any federal, state or local law, regulation, or rule; and (iii) any of the following animals:",
           "note": "The article reaches invertebrates in two clauses and both turn on venom. Clause (12) is \"All venomous insects\", with bees other than non-aggressive honey bees, hornets and wasps as its examples. Clause (13) is \"Arachnida and Chilopoda: All venomous spiders ...; scorpion; all venomous arthropods including, but not limited to, centipede\". The Madagascar hissing cockroach is neither venomous nor a chilopod, so neither clause applies. It is an insect and not a venomous one, so clause (12) does not reach it. As with the millipede, the operative rule is the federal USDA permit for interstate movement. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NJ": {
+          "status": "unclear",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.1, 4.5; N.J.S.A. 23:4-63.3(j)",
+          "quote": "\"Nongame species\" means any wildlife for which a legal hunting or trapping season has not been established in New Jersey or which has not been classified as an endangered species by statute or regulation of this State.",
+          "note": "The same invertebrate gap as the tarantula and the millipede, with the same two readings and no Division list naming an insect. Gromphadorhina portentosa has an extra layer that New Jersey's wildlife rules do not speak to at all: it is a USDA-regulated organism, so moving one interstate needs a PPQ 526 permit, and several states reach it through their agriculture department rather than their wildlife agency. New Jersey's plant pest rules sit at N.J.A.C. 2:20 under the Department of Agriculture, a separate agency from the one that writes subchapter 4, which is where the answer would be if there is one.",
           "verifiedOn": "2026-09-05"
         }
       }

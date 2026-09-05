@@ -59,6 +59,11 @@ about this species", not to claim a new verification date.
 | `NY-ny-wildlife.txt` | New York's closed wild animal list, and the small game definition that reaches every native herptile |
 | `GA-ga-wild-animals.txt` | Georgia's three licence tiers, the statute that makes none of them a pet licence, and its native ban list |
 | `NYC-nyc-health-code-161.txt` | New York City's family-level ban, and the clause that imports the whole of New York State's protected wildlife |
+| `NJ-nj-subchapter-4.txt` | New Jersey's whole of subchapter 4, its two definitions, three species lists, and the clause that makes a permit not a pet permit |
+| `NJ-nj-permit-required-species.txt` | The 4.3 permit list, which answers pythons, boas, kingsnakes, monitors, skinks and geckos by family |
+| `NJ-nj-exempt-species.txt` | The 4.4 exempt list, closed, and the only route to a no-permit animal in New Jersey |
+| `NJ-nj-restricted-species.txt` | The notice that carries what the rule does not: the IUCN gloss, nine corn snake morphs, and the axolotl bar |
+| `NJ-njsa-23-4-63-3.txt` | The statute above subchapter 4, whose "exotic animal" is narrower than the rule's and carves out domesticated companions |
 
 ## Reading the awkward ones
 
@@ -173,6 +178,14 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   68/5-5 is `051000680K5-5`. Administrative rules come whole from
   `ilga.gov/agencies/JCAR/EntirePart?titlepart=0170<part>`. A repealed act answers "not
   currently available", which is how 720 ILCS 585 was confirmed dead.
+- **`NJ-nj-subchapter-4.txt`** answers almost every New Jersey question, but only if you read all
+  three lists before deciding. The dangerous list at 4.8 tells you whether an animal is banned, the
+  exempt list at 4.4 tells you whether it is free, and everything else needs a permit under 4.5.
+  Checking 4.8 alone and concluding "not listed, therefore legal" is the single mistake this state
+  invites, and it had produced two wrong entries here before this file existed. Note also that 4.3
+  is open-ended, "include, but are not limited to", so absence from it proves nothing, and that the
+  Division's handouts renumber nothing but do carry rules that are nowhere in the code: the corn
+  snake morph list and the axolotl bar live only in `NJ-nj-restricted-species.txt`.
 - **`CO-co-cpw-species-list.txt`** is parsed into two-line records, the species then its
   determination, so grep with `-A1`:
   `grep -A1 -i 'testudo horsfieldii' docs/legal-sources/CO-co-cpw-species-list.txt`
@@ -216,6 +229,8 @@ not on the sites, so a person with a browser can open all of them.
 | `api.gbif.org` | Works, but drops the occasional connection mid-exchange | Retry with backoff; a failed call returns non-JSON rather than an error code |
 | `web.archive.org` | Blocked by egress policy, so the Wayback fallback is not available here. `archive.org/wayback/available` does answer | Find another live reproduction instead |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
+| `dep.nj.gov` | Incapsula. HTML pages return a 212-byte `_Incapsula_Resource` stub and PDFs return a 6183-byte "Pardon Our Interruption" page saved under the `.pdf` name | Warm a cookie jar on `https://dep.nj.gov/rules/` with a browser User-Agent, then refetch the PDF with `-b`/`-c` and a Referer, retrying up to three times. PDFs come through; the HTML pages never did. The three list PDFs and the 1.8MB `njac7-25.pdf` all worked this way |
+| `lis.njleg.state.nj.us`, `pub.njleg.gov` | New Jersey publishes its statutes through a Folio NXT viewer. The gateway answers but has no plain document URL: `&`-separated queries 302 to an empty splash and `$`-separated ones return the same 531-byte stub | No workaround found. Read the section from a reproduction, cite the official section, and say so in the source note |
 
 When the official host is unreachable, cite the official URL anyway, verify the wording
 against two independent reproductions that agree, and say so in the source note. Do not

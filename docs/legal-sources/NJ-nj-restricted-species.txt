@@ -1,0 +1,51 @@
+SOURCE: N.J.A.C. 7:25-4.8(a) Potentially dangerous species, restricted and endangered species notice
+URL: https://dep.nj.gov/wp-content/uploads/njfw/restricted-species-potentially-dangerous-species-and-endangered-species.pdf
+FETCHED: 2026-09-05 (NJDEP Fish and Wildlife restricted species notice, extracted with pypdf. Carries the corn snake morph list and the axolotl bar, neither of which appears in the rule text.)
+
+N.J.A.C. 7:25-4.8 Potentially dangerous species
+(a) “Potentially dangerous species” is defined as any exotic mammal, birds, reptiles or amphibians, or
+nongame species which, in the opinion of the Division, is capable of inflicting serious or fatal injuries or which
+has the potential to become an agricultural pest, or a menace to the public health, or indigenous wildlife
+populations, including, but not limited to the following:
+CLASS/ORDER FAMILY
+Primates Cebidae – New World Monkeys
+Cercophithecidae – Old World Monkeys, Baboons
+Pongidae – Apes
+Carnivora Canidae – Nondomestic dogs
+Ursidae – Bears
+Felidae – Nondomestic cats
+Saura (Venomous) Helodermidatidae – Gila monsters
+Serpentes (Venomous) Elapidae – Coral snakes and cobras
+Viperidae – Vipers
+Crotalidae – Pit vipers
+Crocodilia Alligatoridae – Alligators and caiman
+Crocodylidae – crocodiles
+Gavialidae – Gavials
+Psittaciformes Psittaculis spp. – Ring-necked parakeets
+Myiopsitta spp. – Monk (Quaker) parakeets)
+Cyanoliseus patagonus – Patagonian conures
+Rodentia Cynomys spp. – Prairie dogs
+Spermophilus spp. – Ground squirrels
+NOTE: Potentially Dangerous Species and Endangered Species may not be kept as pets or for hobby purposes
+for any reason. NJ Fish & Wildlife classifies any animal as endangered when it is listed on any relevant State or
+Federal endangered species list, including but not limited to the US Fish and Wildlife Service Endangered
+Species List, IUCN Red List, and the New Jersey Endangered Species List.
+Wild phase corn snakes are classified as endangered in the State of New Jersey and may not be possessed as
+pets or for hobby purposes, nor may they be sold, for any reason. The only corn snake color morphs that are
+legal to possess as pets and/or sold in New Jersey include the following: red albino (amelanistic), butter,
+blizzard, candy cane, creamsicle, lavender, pearl, snow, and sun glow.
+Due to the difficulties in determining morphological differences among several species, the following may not
+be kept as pets or for hobby purposes, nor may they be sold in New Jersey: grey tree frogs (all species), larval
+salamanders, water dogs, dino dogs, mud puppies, axolotls.
+It is illegal to take any animal from the wild. If you see a sick, injured, or possibly orphaned wild animal, please
+contact a Wildlife Rehabilitator. A list of rehabilitators can be found here.
+The Center for Disease Control (CDC) has issued a warning restricting the possession and sales of including but
+not limited to the following species: dormice, Gambian giant pouched rats, pygmy mice, spiny mice, and zebra
+mice. Also note: due to the possibility of Monkey Pox, a health warning restriction has been announced for the
+following species: prairie dog; and six types of African rodents: tree squirrels, rope squirrels, dormice, Gambian
+giant pouched rats, brush-tailed porcupines, and striped mice are not allowed to be possessed or sold for any
+reason.
+NOTE: Potentially Dangerous Species and Endangered Species may only be possessed by those who have the
+legal qualifications to care for these animals and are limited to Zoological Holding, Scientific Holding, and
+Animal Exhibitor permit holders.
+For any questions, please call (609)292-9591 or email NJWildlifePermits@dep.nj.gov.

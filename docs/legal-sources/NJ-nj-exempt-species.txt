@@ -1,0 +1,57 @@
+SOURCE: N.J.A.C. 7:25-4.4 Exempted Species and 7:25-4.5 Additional Species
+URL: https://nj.gov/dep/fgw/pdf/xotic_exemptspp.pdf
+FETCHED: 2026-09-05 (NJDEP Fish and Wildlife handout of the closed exempt list, extracted with pypdf.)
+
+7:25-4.4 Exempted Species
+(a) The following listed species of exotic or nongame mammals, birds, reptiles or
+amphibians may be possessed in this state without a permit.
+1. Birds:
+i. Budgerigar - Melopsittacus undulatus;
+ii. Cockatiel - Nymphicus hollandicus;
+iii. Peafowl - Pavo cristatus;
+iv. Rock dove - Columba livia;
+v. Canary - Serinus canaria;
+vi. House sparrow - Passer domesticus;
+vii. European starling - Sturnis vulgaris;
+viii. Zebra finch - Poephila guttatus;
+ix. Society finch - Lonchura domesticus
+2. Mammals:
+i. Hamster - Mesocricetus auratus;
+ii. Gerbil - Meriones mongolinensis;
+iii. Guinea pig - Cavia porcellus;
+iv. Pigmy goats – Carpa hircus;
+v. Mice and Rats - Mus spp. and Rattus spp;
+vi. Chipmunk - Tamias spp. and Eutamias spp;
+vii. Red Squirrel - Tamiasciurus hudsonicus & douglasii;
+viii. Flying Squirrel – Glaucompys spp.
+3. Reptiles:
+i. American Anole - Anolis carolinensis;
+ii. Common iguana - Iguana iguana;
+iii. Boa constrictor - Constrictor constrictor;
+iv. Eastern painted turtles - Chrysemys picta picta;
+v. Snapping turtles - Chelydra serpentina;
+vi. Fence lizard - Sceloporus occidentalis & undulatus;
+vii. Garter snake - Thamnophia spp. (except T. sirtalis tetrataenia).
+viii. Tokay gecko - Gekko gecko;
+ix. Ribbon snake - Thamnophis spp. (except T. sirtalis tetrataenia).
+4. Amphibians:
+i. Leopard frogs - Rana pipiens;
+ii. Green frogs - Rana clamitans;
+iii. American toad - Bufo woodhousei americana;
+iv. Fowler’s toad - B. w. fowleri;
+v. Bullfrogs - Rana catesbiana;
+vi. Red newts - Notophthalmus viridescens;
+vii. Dusky salamanders - Desmognathus fuscus
+(b) Such exotic or nongame mammals, birds, reptiles or amphibians must be housed or
+caged in such a manner as to prevent liberation.
+7:25-4.5 Additional Species
+A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or
+nongame species not specifically exempted by Section 4.4.
+**Please note – Emus, Ostriches, Greater Rheas, Lesser Rheas were designated as
+agricultural livestock pursuant to P.L. 1997, c. 316 (N.J.S.A. 4:2-17) and Llamas,
+Alpacas and Guanacos were designated as agricultural livestock pursuant to P.L.
+1994, c. 33 (N.J.S.A. 4:2-16). Therefore, they are considered exempt species and
+DO NOT require a permit for possession.
+Also see the lists of Species Requiring Permits and Potentially Dangerous Species.
+For further information or clarification call the Exotic and Nongame Permits Office at 609-223-6055 or
+e-mail EXOTICPERMITS@dep.nj.gov.
