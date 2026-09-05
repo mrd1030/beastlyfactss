@@ -588,9 +588,474 @@ async function notifySubscriber(env) {
   }
 }
 
+
+// ===========================================================================
+// Care package storefront: Stripe Checkout, the purchase webhook, downloads
+// ===========================================================================
+// Three routes under /api/care-packages/, added to public/_routes.json so they
+// reach this Worker at all. Everything else on the site is a static file and
+// never gets here.
+//
+// Why they live in this file rather than in a functions/ directory: Cloudflare
+// Pages runs either advanced mode (this _worker.js) or a functions/ folder,
+// never both, and a functions/ directory in a project that ships a _worker.js
+// is silently ignored. This site has been in advanced mode since the RSS feeds
+// were added, so this is where server code goes.
+//
+// The consequence is that nothing here can import anything: public/ is copied
+// verbatim into dist by Vite and never bundled, which is the same constraint
+// the ANIMAL_IMAGES note near the top of this file is about. So no
+// @supabase/supabase-js and no stripe package - Stripe's REST API and
+// Supabase's REST, Auth and Storage APIs are called with plain fetch, which
+// they are all designed to support - and the small slice of the catalog these
+// routes need is mirrored below by hand.
+//
+// Environment variables (Cloudflare Pages -> Settings -> Variables and
+// Secrets). Full setup, including which values are Sandbox and which are live,
+// is in docs/STOREFRONT.md:
+//   STRIPE_SECRET_KEY           secret, sk_test_... on the Sandbox
+//   STRIPE_WEBHOOK_SECRET       secret, whsec_... for THIS endpoint
+//   SUPABASE_URL                the project URL, same one the site uses
+//   SUPABASE_SERVICE_ROLE_KEY   secret, sb_secret_... - never in the bundle
+
+// Mirrors src/lib/data/carePackages.js for the entries with
+// storefront: 'stripe'. Kept in sync by hand for the reason above, the same
+// deal as ANIMAL_IMAGES: when a package is switched to Stripe, or its `version`
+// is bumped because a corrected edition was uploaded, change it in BOTH files.
+//
+// A package missing here cannot be bought even if the catalog says it can,
+// which is the safe direction for the two to disagree in.
+//
+// priceIdLive is empty until a package actually goes on sale on the live
+// Stripe account. checkout uses it when set and falls back to the sandbox id,
+// so a deployment holding a live secret key and a package with only a sandbox
+// id gets a clean Stripe error rather than a broken sale.
+const CARE_PACKAGE_STORE = {
+  hamster: {
+    name: 'Hamster Care Package',
+    edition: '2.2',
+    priceIdSandbox: 'price_1UC9Up9qtY3Ob6vac8xRLEu2',
+    priceIdLive: '',
+  },
+};
+
+// Short on purpose. The URL goes to one browser that is about to use it, so a
+// long life buys nothing, and a signed URL is an unauthenticated link to a paid
+// file for exactly as long as it is valid.
+const SIGNED_URL_SECONDS = 300;
+const CARE_PACKAGE_BUCKET = 'care-packages';
+
+const storeJson = (body, status = 200) =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { 'content-type': 'application/json', 'cache-control': 'no-store' },
+  });
+
+// One place that knows how to talk to PostgREST/Storage as the service role.
+// The service key goes in both headers because Supabase's gateway reads apikey
+// and PostgREST reads Authorization.
+function supabaseFetch(env, path, init = {}) {
+  return fetch(`${env.SUPABASE_URL}${path}`, {
+    ...init,
+    headers: {
+      apikey: env.SUPABASE_SERVICE_ROLE_KEY,
+      Authorization: `Bearer ${env.SUPABASE_SERVICE_ROLE_KEY}`,
+      'content-type': 'application/json',
+      ...(init.headers || {}),
+    },
+  });
+}
+
+function hasSupabaseEnv(env) {
+  return Boolean(env?.SUPABASE_URL && env?.SUPABASE_SERVICE_ROLE_KEY);
+}
+
+// ---------------------------------------------------------------------------
+// POST /api/care-packages/checkout  ->  { url }
+// ---------------------------------------------------------------------------
+// Creates a hosted Stripe Checkout session and hands back the URL to send the
+// buyer to. Nothing about the price comes from the request: the body carries a
+// package id, the price id is looked up above, and the amount lives in Stripe.
+// A request that could name its own price is a request that could name $0.00.
+async function handleCarePackageCheckout(request, env) {
+  if (!env?.STRIPE_SECRET_KEY) return storeJson({ error: 'Checkout is not configured.' }, 503);
+
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return storeJson({ error: 'Expected a JSON body.' }, 400);
+  }
+
+  const packageId = typeof body?.packageId === 'string' ? body.packageId : '';
+  const pkg = CARE_PACKAGE_STORE[packageId];
+  if (!pkg) return storeJson({ error: 'This package is not sold here.' }, 404);
+
+  const priceId = pkg.priceIdLive || pkg.priceIdSandbox;
+  if (!priceId) return storeJson({ error: 'This package has no price set up yet.' }, 409);
+
+  // The request's own origin, not a hardcoded domain: the buyer has to come
+  // back to whichever deployment they started from.
+  const origin = new URL(request.url).origin;
+
+  const form = new URLSearchParams({
+    mode: 'payment',
+    'line_items[0][price]': priceId,
+    'line_items[0][quantity]': '1',
+    success_url: `${origin}/care-packages/thanks/?session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${origin}/care-packages/${packageId}/`,
+    // Checkout collects the email itself. It is the only identifier the buyer
+    // and their later library sign-in have in common, so it is what the
+    // purchase row is keyed on.
+    customer_creation: 'if_required',
+    'metadata[package_id]': packageId,
+    'metadata[edition]': pkg.edition,
+    'payment_intent_data[metadata][package_id]': packageId,
+    'payment_intent_data[description]': `${pkg.name} (PDF)`,
+  });
+
+  const res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${env.STRIPE_SECRET_KEY}`,
+      'content-type': 'application/x-www-form-urlencoded',
+    },
+    body: form,
+  });
+  const session = await res.json().catch(() => ({}));
+
+  if (!res.ok || !session?.url) {
+    // Stripe's own message is useful to us and not to a buyer, and it can name
+    // internal ids, so it goes to the log and a flat message goes back.
+    console.error('Stripe checkout session failed', session?.error?.message || res.status);
+    return storeJson({ error: 'Could not start checkout. Please try again.' }, 502);
+  }
+
+  return storeJson({ url: session.url });
+}
+
+// ---------------------------------------------------------------------------
+// POST /api/care-packages/webhook  ->  Stripe event sink
+// ---------------------------------------------------------------------------
+// The only thing that grants a package. The success redirect is a courtesy the
+// buyer can fake by typing the URL; this is the event Stripe itself sends, and
+// it is the one that writes a purchase row.
+//
+// Signature verification is done here with Web Crypto rather than
+// stripe.webhooks.constructEvent, since nothing can be imported. The scheme is
+// documented and small: the Stripe-Signature header carries a timestamp and one
+// or more v1 HMAC-SHA256 digests over "<timestamp>.<raw body>", keyed with this
+// endpoint's signing secret.
+//
+// Two things are load-bearing:
+//   1. The raw body text is hashed, never a re-serialised parse of it. JSON
+//      round-tripping reorders keys and drops whitespace, and the digest is
+//      over the exact bytes Stripe sent.
+//   2. The insert ignores conflicts on stripe_session_id. Stripe retries
+//      anything it did not get a 2xx for and can deliver the same event more
+//      than once, so "exactly once" is not a property of the delivery. It is a
+//      property of the unique constraint in supabase/care_package_store.sql.
+
+// Stripe's own default. A replayed request older than this is rejected even
+// with a valid signature, which is what stops a captured delivery being resent
+// indefinitely.
+const STRIPE_TOLERANCE_SECONDS = 300;
+
+function timingSafeEqualHex(a, b) {
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i += 1) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return diff === 0;
+}
+
+async function stripeHmacHex(secret, payload) {
+  const enc = new TextEncoder();
+  const key = await crypto.subtle.importKey(
+    'raw',
+    enc.encode(secret),
+    { name: 'HMAC', hash: 'SHA-256' },
+    false,
+    ['sign'],
+  );
+  const mac = await crypto.subtle.sign('HMAC', key, enc.encode(payload));
+  return [...new Uint8Array(mac)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+// Returns the parsed event, or null. Deliberately one undifferentiated null:
+// telling a caller which part of their forgery was wrong is free help.
+async function verifyStripeEvent(rawBody, signatureHeader, secret) {
+  if (!signatureHeader) return null;
+
+  let timestamp = '';
+  const signatures = [];
+  for (const part of signatureHeader.split(',')) {
+    const idx = part.indexOf('=');
+    if (idx === -1) continue;
+    const key = part.slice(0, idx).trim();
+    const value = part.slice(idx + 1).trim();
+    if (key === 't') timestamp = value;
+    if (key === 'v1') signatures.push(value);
+  }
+  if (!timestamp || signatures.length === 0) return null;
+
+  const age = Math.floor(Date.now() / 1000) - Number(timestamp);
+  if (!Number.isFinite(age) || Math.abs(age) > STRIPE_TOLERANCE_SECONDS) return null;
+
+  const expected = await stripeHmacHex(secret, `${timestamp}.${rawBody}`);
+  // Stripe sends every signature valid for the endpoint, which is more than one
+  // during a secret rotation. Any match is a pass.
+  if (!signatures.some(sig => timingSafeEqualHex(sig, expected))) return null;
+
+  try {
+    return JSON.parse(rawBody);
+  } catch {
+    return null;
+  }
+}
+
+async function handleCarePackageWebhook(request, env) {
+  if (!env?.STRIPE_WEBHOOK_SECRET || !hasSupabaseEnv(env)) {
+    console.error('Care package webhook env vars missing');
+    return new Response('Not configured', { status: 503 });
+  }
+
+  const rawBody = await request.text();
+  const event = await verifyStripeEvent(
+    rawBody,
+    request.headers.get('stripe-signature'),
+    env.STRIPE_WEBHOOK_SECRET,
+  );
+  if (!event) return new Response('Invalid signature', { status: 400 });
+
+  // Everything else Stripe is configured to send is acknowledged and dropped.
+  // A 2xx on an event we do not act on is correct: a 4xx would put the endpoint
+  // into Stripe's retry-then-disable path over an event that was never a
+  // problem.
+  const handled = ['checkout.session.completed', 'checkout.session.async_payment_succeeded'];
+  if (!handled.includes(event.type)) return new Response('Ignored', { status: 200 });
+
+  const session = event.data?.object || {};
+
+  // An unpaid session is not a purchase. This is the case that matters for the
+  // delayed payment methods, where completed fires before the money arrives and
+  // async_payment_succeeded is the event that counts.
+  if (session.payment_status !== 'paid') return new Response('Not paid', { status: 200 });
+
+  const packageId = session.metadata?.package_id || '';
+  const email = (session.customer_details?.email || session.customer_email || '').trim().toLowerCase();
+
+  if (!packageId || !email) {
+    console.error('Paid session missing package id or email', session.id);
+    // 200, not an error: retrying will not add the missing field. This is a row
+    // to go and look at by hand rather than a delivery to keep alive.
+    return new Response('Incomplete session', { status: 200 });
+  }
+
+  const res = await supabaseFetch(env, '/rest/v1/purchases?on_conflict=stripe_session_id', {
+    method: 'POST',
+    headers: { Prefer: 'resolution=ignore-duplicates,return=minimal' },
+    body: JSON.stringify({
+      email,
+      package_id: packageId,
+      stripe_session_id: session.id,
+      stripe_payment_intent: typeof session.payment_intent === 'string' ? session.payment_intent : null,
+      amount_cents: session.amount_total ?? 0,
+      currency: session.currency || 'usd',
+      // The edition at the moment of sale, not what they download. metadata is
+      // what checkout stamped on the session; the mirror above is the fallback
+      // if an older session predates that field.
+      edition: session.metadata?.edition || CARE_PACKAGE_STORE[packageId]?.edition || '',
+      livemode: Boolean(event.livemode),
+    }),
+  });
+
+  if (!res.ok) {
+    // A 500 here is deliberate and is the one case worth failing loudly: it
+    // makes Stripe retry, which is exactly what should happen when the database
+    // was briefly unreachable during a real sale.
+    console.error('Purchase insert failed', session.id, res.status, await res.text());
+    return new Response('Insert failed', { status: 500 });
+  }
+
+  return new Response('OK', { status: 200 });
+}
+
+// ---------------------------------------------------------------------------
+// POST /api/care-packages/download  ->  { url, edition, ... }
+// ---------------------------------------------------------------------------
+// The paywall. The bucket is private and carries no storage.objects policies
+// (see supabase/care_package_store.sql), so this route holding the service role
+// key is the only thing in the system that can produce a readable URL for a
+// package PDF, and it does so only after finding a purchase row.
+//
+// Two ways to prove a purchase, because there are two moments a buyer wants the
+// file and only one of them involves being signed in:
+//
+//   { sessionId }   the Stripe Checkout session id, which the success redirect
+//                   puts in the URL of /care-packages/thanks/. The buyer has
+//                   just paid and has no account yet. Possession of the id is
+//                   the proof: Stripe hands it to that browser and to nobody
+//                   else, and it unlocks exactly the one package it paid for.
+//
+//   Authorization: Bearer <supabase access token>   the library, after an email
+//                   OTP sign-in. The token is verified against Supabase Auth
+//                   and the address in it is matched against the purchase rows.
+//
+// { confirmOnly: true } answers "does this purchase exist" without minting a
+// URL or writing a download row. The thanks page polls that while waiting for
+// the webhook to land, and it would otherwise log a download nobody clicked.
+async function handleCarePackageDownload(request, env) {
+  if (!hasSupabaseEnv(env)) return storeJson({ error: 'Downloads are not configured.' }, 503);
+
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return storeJson({ error: 'Expected a JSON body.' }, 400);
+  }
+
+  const packageId = typeof body?.packageId === 'string' ? body.packageId : '';
+  const sessionId = typeof body?.sessionId === 'string' ? body.sessionId : '';
+  const confirmOnly = body?.confirmOnly === true;
+
+  const columns = 'select=id,email,package_id,edition';
+  let purchase = null;
+
+  if (sessionId) {
+    const res = await supabaseFetch(
+      env,
+      `/rest/v1/purchases?stripe_session_id=eq.${encodeURIComponent(sessionId)}&${columns}&limit=1`,
+    );
+    if (!res.ok) {
+      console.error('Purchase lookup by session failed', res.status);
+      return storeJson({ error: 'Could not check that purchase.' }, 500);
+    }
+    purchase = (await res.json())[0] || null;
+  } else {
+    const token = (request.headers.get('Authorization') || '').replace(/^Bearer\s+/i, '').trim();
+    if (!token) return storeJson({ error: 'Sign in to download.' }, 401);
+    if (!packageId) return storeJson({ error: 'Which package?' }, 400);
+
+    // Verified against Supabase Auth rather than decoded here. A JWT read
+    // without checking its signature is a claim, not a fact, and the claim in
+    // question is which inbox owns the purchase.
+    const userRes = await fetch(`${env.SUPABASE_URL}/auth/v1/user`, {
+      headers: { apikey: env.SUPABASE_SERVICE_ROLE_KEY, Authorization: `Bearer ${token}` },
+    });
+    const user = userRes.ok ? await userRes.json().catch(() => null) : null;
+    const email = user?.email?.trim().toLowerCase();
+    if (!email) return storeJson({ error: 'That sign-in has expired. Sign in again.' }, 401);
+
+    // ilike with no wildcards is an exact, case-insensitive match, which is
+    // what makes Sam@Example.com at checkout and sam@example.com at sign-in the
+    // same person.
+    const res = await supabaseFetch(
+      env,
+      `/rest/v1/purchases?package_id=eq.${encodeURIComponent(packageId)}`
+        + `&email=ilike.${encodeURIComponent(email)}&${columns}&order=created_at.asc&limit=1`,
+    );
+    if (!res.ok) {
+      console.error('Purchase lookup by email failed', res.status);
+      return storeJson({ error: 'Could not check that purchase.' }, 500);
+    }
+    purchase = (await res.json())[0] || null;
+  }
+
+  if (!purchase) {
+    // The same answer whether the purchase does not exist or belongs to someone
+    // else. Distinguishing them would turn this into an oracle for "has this
+    // address bought this package".
+    return storeJson({ error: 'No purchase found for this package.' }, 403);
+  }
+
+  const known = CARE_PACKAGE_STORE[purchase.package_id];
+  // The edition being served now, not the one bought. This is the whole version
+  // story: the file behind the path is current, so this number is what the
+  // buyer is about to hold.
+  const currentEdition = known?.edition || purchase.edition || '';
+  const packageName = known?.name || purchase.package_id;
+
+  if (confirmOnly) {
+    return storeJson({
+      ok: true,
+      packageId: purchase.package_id,
+      packageName,
+      email: purchase.email,
+      edition: currentEdition,
+      purchasedEdition: purchase.edition || '',
+    });
+  }
+
+  // care-packages/<package-id>.pdf. Stable for the life of the package: a
+  // corrected edition is a new file at this same path, which is what makes
+  // "buy once, every corrected edition is free" a one-step publish rather than
+  // a data migration.
+  const path = `${purchase.package_id}.pdf`;
+  const signRes = await supabaseFetch(
+    env,
+    `/storage/v1/object/sign/${CARE_PACKAGE_BUCKET}/${path}`,
+    { method: 'POST', body: JSON.stringify({ expiresIn: SIGNED_URL_SECONDS }) },
+  );
+  const signed = signRes.ok ? await signRes.json().catch(() => null) : null;
+
+  if (!signed?.signedURL) {
+    console.error('Signed URL failed', path, signRes.status);
+    return storeJson({ error: 'The file for this package is not available right now.' }, 500);
+  }
+
+  const filename = `${packageName.replace(/[^\w]+/g, '_')}_v${currentEdition || '1'}.pdf`;
+  const url = `${env.SUPABASE_URL}/storage/v1${signed.signedURL}&download=${encodeURIComponent(filename)}`;
+
+  // Logged after the URL exists, so the log records URLs actually handed out.
+  // Failing to log must never cost the buyer their download, so this is fired
+  // and its result only noted.
+  try {
+    const logRes = await supabaseFetch(env, '/rest/v1/care_package_downloads', {
+      method: 'POST',
+      headers: { Prefer: 'return=minimal' },
+      body: JSON.stringify({
+        purchase_id: purchase.id,
+        email: purchase.email,
+        package_id: purchase.package_id,
+        edition: currentEdition,
+        storage_path: path,
+      }),
+    });
+    if (!logRes.ok) console.error('Download log insert failed', logRes.status);
+  } catch (err) {
+    console.error('Download log insert threw', err?.message);
+  }
+
+  return storeJson({
+    url,
+    packageId: purchase.package_id,
+    packageName,
+    edition: currentEdition,
+    purchasedEdition: purchase.edition || '',
+    expiresInSeconds: SIGNED_URL_SECONDS,
+  });
+}
+
+// Every storefront route is POST. A GET that fell through to the RSS builder
+// below would answer a checkout request with an XML feed and a 200, so unknown
+// paths and wrong methods are answered explicitly here rather than left to it.
+async function handleCarePackageStore(request, env, pathname) {
+  if (request.method !== 'POST') {
+    return storeJson({ error: 'Method not allowed.' }, 405);
+  }
+  if (pathname === '/api/care-packages/checkout') return handleCarePackageCheckout(request, env);
+  if (pathname === '/api/care-packages/webhook') return handleCarePackageWebhook(request, env);
+  if (pathname === '/api/care-packages/download') return handleCarePackageDownload(request, env);
+  return storeJson({ error: 'Not found.' }, 404);
+}
+
 export default {
   async fetch(request, env, ctx) {
     const { pathname } = new URL(request.url);
+
+    if (pathname.startsWith('/api/care-packages/')) {
+      return handleCarePackageStore(request, env, pathname);
+    }
 
     if (pathname === '/subscribed' || pathname === '/subscribed/') {
       const alert = notifySubscriber(env);
