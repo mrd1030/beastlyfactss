@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
+import { DEEP_DIVE_LIMIT } from '@/lib/data/relatedArticles';
 
 // The "Deep Dive" sidebar block, shared by GuideDetail and EncyclopediaAnimal
 // because both built the same list from the same data and rendered it with the
@@ -13,17 +14,10 @@ import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
 // scroll past, and it pushes everything below it (short story, fun facts, care
 // package) off the screen entirely.
 //
-// Eight, chosen against the actual distribution rather than by feel. Across
-// 106 guides: min 2, p25 8, median 10, p75 13, max 26. Six would have been the
-// tidy answer (it is exactly the standard per-species set: cost, handling,
-// health-issues, tank-setup, feeding, enrichment) but it puts a button on 87%
-// of guides, hiding entries on pages that were never the problem. Eight shows
-// that standard set plus a couple of extras, leaves a third of guides with no
-// button at all, and still cuts the bird guides from 26 to 8.
-//
-// Retune by changing this one number: 6 puts a button on 87% of guides, 8 on
-// 66%, 10 on 47%, 12 on 25%.
-const DEFAULT_VISIBLE = 8;
+// Capped at DEEP_DIVE_LIMIT, the same constant getDeepDiveSiblings uses for the
+// Deep Dive block in the blog sidebar, so the same list is the same length
+// wherever a reader meets it. Imported rather than redeclared: two numbers
+// meaning "how long is a Deep Dive" would drift the first time one was tuned.
 
 // The overflow is rendered and hidden rather than left out of the tree. These
 // are internal links to the husbandry series, and dropping twenty of them from
@@ -36,8 +30,8 @@ export default function DeepDiveList({ articles, guideId }) {
 
   if (!articles || articles.length === 0) return null;
 
-  const visible = articles.slice(0, DEFAULT_VISIBLE);
-  const overflow = articles.slice(DEFAULT_VISIBLE);
+  const visible = articles.slice(0, DEEP_DIVE_LIMIT);
+  const overflow = articles.slice(DEEP_DIVE_LIMIT);
 
   const renderLink = article => (
     // Carries which guide this click came from, so the article's own Deep Dive

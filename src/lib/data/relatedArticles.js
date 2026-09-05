@@ -182,7 +182,9 @@ export function getRelatedArticleSlugs(guideId, posts) {
 // this: its quintet is at most four siblings plus the odd curated extra. The
 // cap exists for cross-species articles, where the candidate pool runs to 15
 // and the tail of it is unrelated.
-const DEEP_DIVE_LIMIT = 6;
+// Exported so the Deep Dive block on guide and encyclopedia pages caps at the
+// same number the blog sidebar does. One constant, not two that drift.
+export const DEEP_DIVE_LIMIT = 6;
 
 // Every guide that lists an article, manual entries plus the auto-detected
 // quintet. This set is the relatedness signal the ranking below runs on: two
