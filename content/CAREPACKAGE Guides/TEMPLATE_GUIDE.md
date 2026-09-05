@@ -1949,10 +1949,27 @@ carries pages 28 and 29 and has a leopard gecko row in its temperature table.
 | Morph-linked care differences in leopard geckos | 6, 7 | Leopard gecko | **Proposed.** Pigment is not cosmetic here: albino and other pale morphs burn under UVB that a normally pigmented gecko handles, which the package prints as a lower UVI target with no site article behind it. The neurological problems reported in some morph lines belong in the same article, and nothing on the site touches either |
 | Cohabitation: why one reptile per enclosure | 5 | Cross-species (reptiles) | **Proposed.** Every reptile guide on the site says "house singly" in a sentence and moves on. The article is the reasoning: resource competition at the one warm spot, the injuries that follow, why two females "getting along" is usually one female losing quietly, and the disease-transmission half that quarantine articles only half cover |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the growth table on page 14, the body-condition descriptions on page 14, the sexing
-detail on page 14, the lay-box dimensions and the under-48-hours dystocia rule on page 15,
-the itemized budget subtotals on page 24, and the bladder-stone paragraph on page 19.
+**Numbers with no site source at all**, checked Sep 5 2026 and unchanged: the growth table
+on page 14, the body-condition descriptions on page 14, the sexing detail on page 14, the
+lay-box dimensions and the under-48-hours dystocia rule on page 15, the itemized budget
+subtotals on page 24, and the bladder-stone paragraph on page 19. **None of the six rows in
+this block was in the September batch**, so all six stay open and none of these figures
+gained a source.
+
+**What the Sep 4 articles changed here anyway, at 2.1.** No row above closes, but this
+package was audited page by page because the cross-species articles touch it. Quarantine went
+from 60 to 90 days to Merck's 3 to 6 months on pages 17 and 25, with a separate room rather
+than a separate enclosure and paper substrate named as the mite-detection surface it is. Page
+7 narrowed its ceramic-emitter controller advice and gained the daily second thermometer.
+Page 8 gained the CDC's January 2026 pet-gecko outbreak, 113 cases across 36 states, which
+belongs in a gecko package more than in any other. Page 21 named the urate and kidney problem
+behind a discolored urate, and the soak moved to 15 to 20 minutes.
+
+**Page 7 is the one that needed nothing, and that is the useful finding.** Its probe
+instruction matched `reptile-heating-thermostats-guide` almost word for word, which is why
+the Bearded Dragon block's conflicting instruction is flagged against this page rather than
+the other way round. When a future reptile build needs a model for the thermostat page, this
+is it.
 
 **Source drift found while building.** Three, none serious, all worth a pass.
 

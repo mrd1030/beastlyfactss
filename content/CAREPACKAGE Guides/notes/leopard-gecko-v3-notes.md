@@ -94,3 +94,75 @@ If v3 needs to lose pages, take them in this order:
 - Page 17, cryptosporidiosis. Nothing else in the package matters if this is missed.
 - Page 14's tail-thickness framing, which is the health check the whole book leans on.
 - The both-units rule on every temperature. Gumroad buyers are global.
+
+## 5 September 2026: the cross-species article cross-check, v2.0 to v2.1
+
+2.0 merged to main the day before the Sep 4 article batch landed, so it predates
+every article it was checked against. No gap row in this block closes directly,
+so the audit ran page by page instead, on the pages those articles touch. Five
+pages changed.
+
+**Page 7 needed almost nothing, and that is worth recording.** The probe
+instruction here, flat on the warm hide floor, on the surface the gecko lies on,
+taped so it cannot move, with the explicit list of wrong places (glass wall,
+hanging in air, cool side), matched `reptile-heating-thermostats-guide.mdx` almost
+word for word. It is the only reptile package in the set that needed no correction
+on probe placement, and the bearded dragon's conflicting instruction is now
+flagged in that package against this one. Page 35 says so.
+
+**Page 7, controller type.** "An **on/off or pulse-proportional thermostat** is the
+right type for a mat or a ceramic heat emitter" became a split: on/off for a mat,
+which changes slowly, and pulse proportional or dimming for a ceramic emitter,
+which reacts fast enough to overshoot before an on/off unit cuts.
+
+**Page 7, second thermometer.** Added: keep a second thermometer away from the
+thermostat probe and read it daily, because a thermostat stuck on or a probe the
+gecko has shifted gives no other warning.
+
+**Page 8, Salmonella.** Rewritten, and this package gets the outbreak the article
+is built around, because it is a gecko outbreak: the CDC investigation into
+infections linked to pet geckos, closed January 2026, at 113 cases across 36
+states. That single fact does more for a gecko owner than any amount of general
+turtle framing. Also added: one negative test clears nothing, the bathroom sink
+and bath alongside the kitchen sink with a dedicated tub, not kissing the animal,
+adults over 65, and the CDC's actual under-five line.
+
+**Page 17, quarantine.** Three changes. "60 to 90 days" became "3 to 6 months",
+the Merck figure, with the note that 60 to 90 days is the hobby floor. "Separate
+enclosure" became "separate **room**", because two tanks on one shelf share air.
+And the paper towel substrate is now named as what it actually is: the diagnostic
+surface that makes mites, an abnormal stool and a regurgitated meal visible where
+loose substrate hides all three. The page already argued the article's central
+point correctly, that asymptomatic carriers make quarantine rather than observation
+the control, and that one clear crypto test does not rule it out.
+
+**Page 21, urates.** "Dehydration" became "Dehydration, and left uncorrected a
+urate or kidney problem", with the gout consequence in the action column. This row
+was already one of the two clean ones across the four reptile packages carrying it.
+
+**Page 21, soak.** 10 to 15 minutes became 15 to 20, which is
+`reptile-shedding-complete-guide.mdx`'s figure and the one the whole reptile set
+was aligned onto.
+
+**Page 25.** Quarantine duration updated to match page 17.
+
+**Pages 34 and 35.** The single reference page split into a sources page and a
+version history page, taking the package to 35. Sources gained Merck's husbandry
+and parasitic disease pages, the CDC gecko outbreak, and Iowa State CFSPH.
+
+**Fitting.** Page 2 gained a contents row and page 8 gained the Salmonella
+expansion, so both needed room. The contents row padding went to 1pt with
+line-height 1.26. Pages 7 and 8 gained the `.snug` rule block the other t3 guides
+carry and this one did not. Page 8 then sat at exactly -6 px through four
+successive text trims that moved it not at all, which is the tell that a
+fixed-height block rather than prose was driving it: the furnishings checklist.
+Adding `.snug .check-item{margin-bottom:4pt;font-size:9.8pt;line-height:1.38;}`
+took it from -6 to +27 in one step. **Worth remembering for the next package that
+will not budge on word cuts: check whether the page is checklist-driven before
+cutting any more words.** Final measure: 35 pages, minimum 21 px.
+
+**Still in the PDF with no site source**, unchanged: the growth table, body
+condition and sexing detail on page 14, the lay-box dimensions and the
+under-48-hours dystocia rule on page 15, the budget subtotals on page 24, and the
+bladder-stone paragraph on page 19. None of the six rows in this block was in the
+September batch, so all six stay open.
