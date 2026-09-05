@@ -28,10 +28,11 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 - Every article needs 1-2+ in-body internal links. This is enforced by scripts/check-internal-links.mjs at the front of `build`, but write the links yourself rather than relying on the check to catch it.
 - Every new article gets wired into RELATED_ARTICLES in src/lib/data/relatedArticles.js, against the guide ids it actually serves. Species articles ending in a standard suffix (cost/handling/health-issues/tank-setup/feeding/enrichment) auto-detect and need no entry. Anything else, and every cross-breed dog or cat hub, does. scripts/check-related-articles.mjs enforces this for articles tagged "Dog Health" or "Cat Health" and also fails on dead slugs and unknown guide ids, but wire it yourself when you write the article.
 - When publishing new articles, spread dates across days (max 4-5/day). Never dump a whole batch on today's date.
+- Dates in content (publish dates, lastUpdated, lastReviewed) use my local date, US Eastern, not the container clock. Cloud sessions run on UTC and tick over to tomorrow at 8pm my time; check before stamping a date after that hour.
 
 ## Technical Notes & Commands
 - Always Read a file before making changes to it.
-- "Research" means web search with real, verifiable sources. Never write research-shaped content from memory, and never hand me citations flagged as unverified. Max 4 source URLs per article.
+- "Research" means web search with real, verifiable sources. Never write research-shaped content from memory, and never hand me citations flagged as unverified. Aim for 3 to 5 source URLs per article, and go to 6 only when every source is quoted in the body and trimming one would orphan a cited claim. Never pad a Sources block to hit a number.
 - Never fetch photos or source new affiliate products yourself. Grep affiliateProducts.js for exact existing links, never from memory.
 - Infographic/content installs must stop at the image and internal-link checks. Do not run `npm run build` unless explicitly asked.
 - Content pipeline order: matrix → legal guide → encyclopedia/Beastfile → care guides.
