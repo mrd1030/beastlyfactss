@@ -98,139 +98,139 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got.",
     "perAnimal": {
       "tarantula": {
-        "checked": 25,
+        "checked": 26,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 25,
+        "checked": 26,
         "of": 51
       },
       "axolotl": {
-        "checked": 25,
+        "checked": 26,
         "of": 51
       },
       "box-turtle": {
-        "checked": 25,
+        "checked": 26,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 25,
+        "checked": 26,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 25,
+        "checked": 26,
         "of": 51
       },
       "tiger-salamander": {
-        "checked": 26,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 26,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 26,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 26,
-        "of": 51
-      },
-      "snapping-turtle": {
         "checked": 27,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 27,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 27,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 27,
+        "of": 51
+      },
+      "snapping-turtle": {
         "checked": 28,
         "of": 51
       },
-      "tokay-gecko": {
+      "savannah-monitor": {
         "checked": 29,
+        "of": 51
+      },
+      "tokay-gecko": {
+        "checked": 30,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 30,
-        "of": 51
-      },
-      "green-iguana": {
-        "checked": 30,
-        "of": 51
-      },
-      "burmese-python": {
-        "checked": 30,
-        "of": 51
-      },
-      "russian-tortoise": {
         "checked": 31,
         "of": 51
       },
-      "bengal-cat": {
+      "green-iguana": {
+        "checked": 31,
+        "of": 51
+      },
+      "burmese-python": {
+        "checked": 31,
+        "of": 51
+      },
+      "russian-tortoise": {
         "checked": 32,
+        "of": 51
+      },
+      "bengal-cat": {
+        "checked": 33,
         "of": 51
       },
       "degu": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "hamster": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "gerbil": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "veiled-chameleon": {
-        "checked": 36,
-        "of": 51
-      },
-      "ball-python": {
-        "checked": 36,
-        "of": 51
-      },
-      "boa-constrictor": {
         "checked": 37,
         "of": 51
       },
+      "ball-python": {
+        "checked": 37,
+        "of": 51
+      },
+      "boa-constrictor": {
+        "checked": 38,
+        "of": 51
+      },
       "fennec-fox": {
-        "checked": 41,
-        "of": 51
-      },
-      "chinchilla": {
-        "checked": 41,
-        "of": 51
-      },
-      "serval": {
         "checked": 42,
         "of": 51
       },
+      "chinchilla": {
+        "checked": 42,
+        "of": 51
+      },
+      "serval": {
+        "checked": 43,
+        "of": 51
+      },
       "prairie-dog": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "capybara": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "ferret": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "sugar-glider": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "hedgehog": {
@@ -238,7 +238,7 @@
         "of": 51
       },
       "corn-snake": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "milk-snake": {
@@ -246,7 +246,7 @@
         "of": 51
       },
       "rosy-boa": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "flying-squirrel": {
@@ -254,7 +254,7 @@
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "garter-snake": {
@@ -270,7 +270,7 @@
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 31,
+        "checked": 32,
         "of": 51
       }
     }
@@ -1105,6 +1105,16 @@
       "title": "O.C.G.A. § 27-1-28, Taking of Nongame Species",
       "url": "https://law.justia.com/codes/georgia/title-27/chapter-1/section-27-1-28/",
       "note": "Bars possession of nongame wildlife except a short enumerated list (rats, mice, coyotes, armadillos, groundhogs, beaver, freshwater turtles, poisonous snakes, frogs, spring lizards, fiddler crabs, freshwater crayfish, freshwater mussels, nutria); an ordinary nonvenomous native colubrid like the garter snake is not on that exception list."
+    },
+    "wi-nr40": {
+      "title": "Wis. Admin. Code ch. NR 40, Invasive Species Identification, Classification and Control",
+      "url": "https://dnr.wisconsin.gov/topic/Invasives/RegulatedSpecies",
+      "note": "DNR's regulated invasive species list. Among animals kept as pets the only terrestrial vertebrate named is the monk or Quaker parakeet (Myiopsitta monachus), Prohibited. The other terrestrial vertebrates are nutria and wild/feral swine. No pet reptile, amphibian or small mammal appears."
+    },
+    "wi-29-604": {
+      "title": "Wis. Stat. § 29.604 and Wis. Admin. Code ch. NR 27, Endangered and Threatened Species",
+      "url": "https://dnr.wisconsin.gov/topic/endangeredresources/laws",
+      "note": "Listed species may not be taken, transported, possessed, processed or sold without an endangered/threatened species permit, and DNR issues those only for education, research and conservation, not pet keeping. The ornate box turtle (Terrapene ornata), Wisconsin's only native box turtle, is state Endangered."
     }
   },
   "animals": {
@@ -1858,6 +1868,13 @@
           "quote": "Mustela putorius furo",
           "note": "Named on Part A, which is headed FOR RESEARCH AND EXHIBITION. A university or licensed exhibitor can hold one by permit; a pet keeper cannot, and no pet permit exists. This is the origin of Hawaii's well known ferret ban.",
           "verifiedOn": "2026-08-05"
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -2242,6 +2259,13 @@
           "quote": "Any animal that is not on the lists of conditionally approved, restricted, or prohibited animals shall be prohibited until the board's review and determination for placement on one of these lists",
           "note": "Petaurus appears on none of the four lists, so the default rule bars it rather than any decision about sugar gliders. The special permits the subsection goes on to describe are for medical or ecological emergencies and for filming, not for pets.",
           "verifiedOn": "2026-08-05"
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -2504,6 +2528,13 @@
           "note": "The mammal side of the statute is four orders: carnivores, rhinoceroses, primates and elephants. Rodentia is not among them.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -2759,6 +2790,13 @@
           "note": "No rodent order is listed, so gerbils are unrestricted. Worth contrasting with California, which bans them outright.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "gerbil"
@@ -3032,6 +3070,14 @@
           "note": "No bird is a potentially dangerous wild animal, and the only bird on the deleterious exotic wildlife rule is the mute swan. Washington is one of the states where the monk parakeet is simply unregulated.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-nr40",
+          "cite": "Wis. Admin. Code ch. NR 40",
+          "status": "banned",
+          "quote": "Monk or Quaker parakeet or parrot (Myiopsitta monachus) - Prohibited",
+          "note": "The one psittacine Wisconsin prohibits. NR 40 Prohibited status bars possession, transport and transfer without a permit, so this is the rare case where the parrot order's general clearance as an unregulated pet bird does not apply.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "quaker-parakeet"
@@ -3302,6 +3348,13 @@
           "note": "The word only is doing the work. Washington names eight big cats and reaches their hybrids, but Prionailurus bengalensis is not among them, so a Bengal falls outside the statute no matter what filial generation it is.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -3584,6 +3637,13 @@
           "quote": "a permit as described in § 12:68:18:03.03 is required to possess in South Dakota any nondomestic mammal, or any of its hybrids, listed in this section",
           "note": "The possession permit list covers mammals only: carnivores, hoofed mammals, tapirs, rhinos, elephants and primates. Reptiles fall under the Game, Fish and Parks rules instead, and a free entry permit still applies to importing any nondomestic animal.",
           "verifiedOn": "2026-08-05"
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -3833,6 +3893,13 @@
           "note": "The only chelonian-adjacent entry is crocodilians. No turtle or tortoise is a potentially dangerous wild animal in Washington.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/russian-tortoise-legal-guide/"
@@ -4115,6 +4182,13 @@
           "quote": "Python regius",
           "note": "Named on the unrestricted snake list. Maine lists pythons species by species rather than clearing the family, so the ball python's presence says nothing about its larger relatives.",
           "verifiedOn": "2026-08-05"
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -4409,6 +4483,13 @@
           "quote": "African rock python (Python sebae), Asiatic rock python (Python molurus), green anaconda (Eunectes murinus), reticulated python (python reticulates), and southern African python (Python natalensis).",
           "note": "Texas controls exotic snakes by a closed list of five large constrictors plus non-native venomous species. Boa constrictor is on neither part of it, so no controlled exotic snake permit applies.",
           "verifiedOn": "2026-09-05"
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -4628,6 +4709,13 @@
           "note": "The statute covers mammals and reptiles only, so no invertebrate is reached.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-nr40",
+          "cite": "Wis. Admin. Code ch. NR 40; Wis. Stat. § 169.04(4)(b)",
+          "status": "legal",
+          "note": "No invertebrate kept as a pet appears on NR 40, whose terrestrial invertebrate entries are forest and soil pests such as the emerald ash borer and jumping worm. Non-native species are outside captive wildlife licensing.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -4850,6 +4938,13 @@
           "note": "Outside both classes the statute names.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-nr40",
+          "cite": "Wis. Admin. Code ch. NR 40; Wis. Stat. § 169.04(4)(b)",
+          "status": "legal",
+          "note": "No invertebrate kept as a pet appears on NR 40, whose terrestrial invertebrate entries are forest and soil pests such as the emerald ash borer and jumping worm. Non-native species are outside captive wildlife licensing.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/emperor-scorpion-legal-guide/"
@@ -5102,6 +5197,13 @@
           "note": "Teiidae is not listed, so the tegu is unrestricted in Washington.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5335,6 +5437,13 @@
           "note": "Washington restricts exactly two monitors, both of them species that reach seven feet or more. The savannah monitor is not one of them.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -5703,6 +5812,13 @@
           "quote": "The following species are exempt from Codes 09.02 (Possession Of Non-Native Wildlife In Captivity Restricted), 09.07 (Wildlife Breeder/Dealer Permit Required), and 09.10 (Wildlife Importation Permit Required)",
           "note": "No Cynomys is on the unrestricted mammal list, so the restriction and permit codes still apply.",
           "verifiedOn": "2026-08-05"
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6065,6 +6181,13 @@
           "quote": "The following species are exempt from Codes 09.02 (Possession Of Non-Native Wildlife In Captivity Restricted), 09.07 (Wildlife Breeder/Dealer Permit Required), and 09.10 (Wildlife Importation Permit Required)",
           "note": "Not on the mammal list, which stops at the Norway rat and the chinchilla in rodent terms.",
           "verifiedOn": "2026-08-05"
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6400,6 +6523,13 @@
           "quote": "The following species are exempt from Codes 09.02 (Possession Of Non-Native Wildlife In Captivity Restricted), 09.07 (Wildlife Breeder/Dealer Permit Required), and 09.10 (Wildlife Importation Permit Required)",
           "note": "The unrestricted mammal list has one carnivore, the European domestic ferret, plus wolf and dog hybrids. The fennec is on neither.",
           "verifiedOn": "2026-08-05"
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/fennec-fox-legal-guide/"
@@ -6765,6 +6895,13 @@
           "quote": "The following species are exempt from Codes 09.02 (Possession Of Non-Native Wildlife In Captivity Restricted), 09.07 (Wildlife Breeder/Dealer Permit Required), and 09.10 (Wildlife Importation Permit Required)",
           "note": "No felid appears anywhere on the unrestricted list.",
           "verifiedOn": "2026-08-05"
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/serval-legal-guide/"
@@ -7085,6 +7222,13 @@
           "quote": "Chinchilla lanigera",
           "note": "On the conditionally approved list rather than a restricted one, so import and possession are allowed by permit subject to the conditions the Board of Agriculture attaches. One of the few mammals with a legitimate route into Hawaii.",
           "verifiedOn": "2026-08-05"
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7345,6 +7489,13 @@
           "note": "Outside the statute entirely.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7591,6 +7742,13 @@
           "note": "Iguanidae appears nowhere in the statute. The reptile side of RCW 16.30 is venomous snakes, crocodilians and two monitors.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -7826,6 +7984,14 @@
           "note": "Not a potentially dangerous wild animal. The common snapping turtle is not native to Washington and has established in a few places after releases, which the department treats as an invasive problem rather than a possession one.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-nr-16-12",
+          "cite": "Wis. Admin. Code NR 16.12(3)(h)",
+          "status": "conditional",
+          "quote": "A person may possess a live native snapping turtle for the purpose of harvest authorized under s. NR 19.275 (4), 21.13 (4), or 22.13 (4) for no more than 7 days.",
+          "note": "Wisconsin treats the snapping turtle as a harvestable native rather than a pet. Collecting or possessing native turtles requires a small game hunting or fishing approval, and the recreated rule caps live possession at 7 days tied to an authorized harvest. Wisconsin repealed and recreated NR 16.12(3) effective 1 January 2027 (CR 25-092). Until then the rule allows taking or possessing up to 5 individuals of each non-listed native species. From that date possession of live native reptiles and amphibians is prohibited outright except under narrow exemptions, of which the one that matters to keepers is NR 16.12(3)(k): captive-bred colour variants acquired from a legal source. A wild-type native animal will no longer be keepable.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8052,6 +8218,13 @@
           "note": "No gecko family appears in the statute.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8275,6 +8448,14 @@
           "note": "The statute reaches two classes, mammals and reptiles. No amphibian is covered. Ambystoma tigrinum is native to eastern Washington, so wild collection engages the department's native amphibian rules, and federal law bars shipping any Ambystoma across a state line.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-nr-16-12",
+          "cite": "Wis. Admin. Code NR 16.12(3)(e)",
+          "status": "conditional",
+          "quote": "A person may possess native northern leopard frogs of the species Lithobates pipiens, mudpuppies of the species Necturus maculosus, and eastern tiger salamanders of the species Ambystoma tigrinum provided that such species are possessed for the purpose of purchase and sale under the authority of a Class A captive wild animal farm license",
+          "note": "The eastern tiger salamander is a Wisconsin native and is singled out by name. Under the current rule it falls within the 5-per-species native cap; from 1 January 2027 the recreated rule routes it through a Class A captive wild animal farm licence instead. Wisconsin repealed and recreated NR 16.12(3) effective 1 January 2027 (CR 25-092). Until then the rule allows taking or possessing up to 5 individuals of each non-listed native species. From that date possession of live native reptiles and amphibians is prohibited outright except under narrow exemptions, of which the one that matters to keepers is NR 16.12(3)(k): captive-bred colour variants acquired from a legal source. A wild-type native animal will no longer be keepable.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8512,6 +8693,13 @@
           "note": "Varanus niloticus is not named, so it is unrestricted here, which is a sharper contrast than usual: it is the species Florida moved against hardest.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8767,6 +8955,13 @@
           "note": "Every snake family Washington restricts is venomous. Pythonidae and Boidae are absent entirely, so there is no state limit on a large constrictor, by species or by length. The federal injurious wildlife listing still bars bringing a Burmese python across a state line.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "No Wisconsin rule reaches it: not a harmful wild animal, not on NR 40, not native. The binding constraint is federal rather than state, since the Burmese python is listed as injurious wildlife under the Lacey Act, which bars importation and interstate transport.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9026,6 +9221,13 @@
           "note": "Washington keeps no approved species list, so a rodent that is not a potentially dangerous wild animal needs no clearance.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "status": "legal",
+          "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -9241,6 +9443,13 @@
           "note": "Amphibians are outside the statute. As with every state, the live constraint on the axolotl is federal: 50 CFR 16.14 lists the whole genus as injurious wildlife.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so NR 16.12's native amphibian rules do not reach it. Worth not confusing with the eastern tiger salamander, a Wisconsin native in the same genus that NR 16.12 does restrict.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9456,6 +9665,13 @@
           "note": "No Terrapene is native to Washington and none is listed, so nothing in RCW 16.30 applies.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-29-604",
+          "cite": "Wis. Stat. § 29.604; Wis. Admin. Code ch. NR 27",
+          "status": "banned",
+          "note": "Wisconsin's only native box turtle, the ornate box turtle, is a state Endangered species, so it may not be taken or possessed without an endangered and threatened species permit, and those are issued for education, research and conservation rather than pet keeping. The eastern box turtle is not a Wisconsin native and would instead be a non-native reptile under § 169.04.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9672,6 +9888,13 @@
           "note": "Unrestricted under RCW 16.30. The slider is established in western Washington ponds, so releasing one is a separate offence from keeping one.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "DNR treats the red-eared slider as non-native to Wisconsin though it is established in the south east of the state, so the native-reptile rules in NR 16.12 do not apply and NR 40 does not list it. Out-of-state animals need a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9892,6 +10115,13 @@
           "note": "Not listed. Washington's reptile concerns are venom and crocodilians rather than size.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10112,6 +10342,14 @@
           "note": "The only colubrid Washington restricts is the boomslang. The hognose is unaffected.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-nr-16-12",
+          "cite": "Wis. Admin. Code NR 16.12(3)",
+          "status": "conditional",
+          "quote": "A person may take or possess up to 5 individuals or eggs of each species of native amphibian, lizard and snake that are not endangered or threatened",
+          "note": "The eastern hognose is a Wisconsin native, listed by DNR as Common rather than threatened, so it falls under the general native-herp cap rather than the endangered species rules. Wisconsin repealed and recreated NR 16.12(3) effective 1 January 2027 (CR 25-092). Until then the rule allows taking or possessing up to 5 individuals of each non-listed native species. From that date possession of live native reptiles and amphibians is prohibited outright except under narrow exemptions, of which the one that matters to keepers is NR 16.12(3)(k): captive-bred colour variants acquired from a legal source. A wild-type native animal will no longer be keepable.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10332,6 +10570,13 @@
           "note": "Birds fall outside both the statute and the deleterious exotic wildlife rule.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-datcp-birds",
+          "cite": "Wis. Stat. § 169.01(25m)",
+          "status": "legal",
+          "note": "Meets Wisconsin's unregulated pet bird definition: psittacine, non-native, not federally endangered and not migratory. Only the monk parakeet is carved back out, by NR 40. Out-of-state birds need a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10547,6 +10792,13 @@
           "note": "Not reached by RCW 16.30 or by the deleterious exotic wildlife rule.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "WI": {
+          "sourceId": "wi-nr40",
+          "cite": "Wis. Admin. Code ch. NR 40; Wis. Stat. § 169.04(4)(b)",
+          "status": "legal",
+          "note": "No invertebrate kept as a pet appears on NR 40, whose terrestrial invertebrate entries are forest and soil pests such as the emerald ash borer and jumping worm. Non-native species are outside captive wildlife licensing.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10845,6 +11097,13 @@
           "cite": "Chapter 69, § 10(a)(i)",
           "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
           "verifiedOn": "2026-08-27"
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/corn-snake-legal-guide/"
@@ -11113,8 +11372,8 @@
           "sourceId": "wi-nr-16-12",
           "cite": "Wis. Admin. Code NR 16.12/16.13",
           "quote": "A person may take or possess up to 5 individuals... of each species of native amphibian, lizard and snake that are not endangered or threatened.",
-          "note": "Milk snake is Wisconsin native. Wild possession/take is capped at 5 individuals under NR 16.12. More notably, our research found that \"the purchase of native amphibians and reptiles is prohibited except as provided in specified exceptions,\" meaning simply buying a milk snake, even a captive-bred one, is restricted in Wisconsin because of its native status, unlike a non-native pet-trade species such as corn snake or ball python.",
-          "verifiedOn": "2026-08-27"
+          "note": "Milk snake is Wisconsin native. Wild possession/take is capped at 5 individuals under NR 16.12. More notably, our research found that \"the purchase of native amphibians and reptiles is prohibited except as provided in specified exceptions,\" meaning simply buying a milk snake, even a captive-bred one, is restricted in Wisconsin because of its native status, unlike a non-native pet-trade species such as corn snake or ball python. Wisconsin repealed and recreated NR 16.12(3) effective 1 January 2027 (CR 25-092). Until then the rule allows taking or possessing up to 5 individuals of each non-listed native species. From that date possession of live native reptiles and amphibians is prohibited outright except under narrow exemptions, of which the one that matters to keepers is NR 16.12(3)(k): captive-bred colour variants acquired from a legal source. A wild-type native animal will no longer be keepable.",
+          "verifiedOn": "2026-09-05"
         },
         "WV": {
           "status": "legal",
@@ -11456,6 +11715,13 @@
           "cite": "§ 10(a)(i)",
           "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
           "verifiedOn": "2026-08-27"
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/rosy-boa-legal-guide/"
@@ -11872,6 +12138,13 @@
           "cite": "Unrestricted Species List",
           "note": "Maine's clean list names only Varanus exanthematicus (savannah monitor) among monitors (documented in this site's savannah-monitor research). Varanus acanthurus is absent, so it falls back to Maine's general importation/possession permit requirement rather than the no-permit list. Whether an individual permit is actually issued for a pet Ackie was not separately confirmed.",
           "verifiedOn": "2026-08-27"
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -12240,8 +12513,8 @@
           "status": "conditional",
           "sourceId": "wi-nr16-12",
           "cite": "Wis. Admin. Code NR 16.12-16.15",
-          "note": "Wisconsin lets residents possess up to five individuals of each non-protected native species, garter snakes included, without a permit, but native reptiles generally may not be bought or sold within the state, so a Wisconsin-kept pet has to come from your own lawful collecting rather than a breeder or shop.",
-          "verifiedOn": "2026-08-27"
+          "note": "Wisconsin lets residents possess up to five individuals of each non-protected native species, garter snakes included, without a permit, but native reptiles generally may not be bought or sold within the state, so a Wisconsin-kept pet has to come from your own lawful collecting rather than a breeder or shop. Wisconsin repealed and recreated NR 16.12(3) effective 1 January 2027 (CR 25-092). Until then the rule allows taking or possessing up to 5 individuals of each non-listed native species. From that date possession of live native reptiles and amphibians is prohibited outright except under narrow exemptions, of which the one that matters to keepers is NR 16.12(3)(k): captive-bred colour variants acquired from a legal source. A wild-type native animal will no longer be keepable.",
+          "verifiedOn": "2026-09-05"
         },
         "WV": {
           "status": "legal",
@@ -13243,6 +13516,13 @@
           "quote": "Chelonoidis (all species in genus except C. elephantopus)",
           "note": "Confirmed directly from the HDOA conditional-animal-list PDF. Unlike the sulcata (which moved out of Geochelone entirely into the unlisted genus Centrochelys, leaving its status genuinely unclear), the red-footed tortoise's current genus Chelonoidis is named outright on this list, with only the Galapagos tortoise (C. elephantopus, separately restricted) carved out. Chelonoidis carbonarius is squarely covered.",
           "verifiedOn": "2026-08-27"
+        },
+        "WI": {
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "status": "legal",
+          "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     }
