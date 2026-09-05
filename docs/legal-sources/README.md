@@ -54,6 +54,7 @@ about this species", not to claim a new verification date.
 | `TX-tx-nongame.txt` | Texas's two nongame lists in full, the 25 cap and the 6 cap, and the taxonomy traps in both |
 | `MA-ma-exotic-wildlife.txt` | Massachusetts's closed exemption list, the categorical override that cuts across it, and the hybrid statute |
 | `MA-ma-masswildlife-pets.txt` | MassWildlife's own reading of that override, and its line that pet permits are not issued |
+| `NE-ne-captive-wildlife.txt` | Nebraska's renumbered wildlife chapters, its statutory felid ban, and the definition that decides the rest |
 
 ## Reading the awkward ones
 
@@ -78,6 +79,15 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   what selective breeding has done rather than by species, which is what makes the pet rabbit
   clean there when the same species is a hard call in Minnesota and Illinois. Read (a)(7) and
   (a)(21) before the lists.
+- **`NE-ne-captive-wildlife.txt`** is the file to read before citing anything for Nebraska, because
+  the title number changed: 163 NAC ch. 4 is now Title 166, and Title 163 is called ADMINISTRATION.
+  The old text is still served over plain HTTP from govdocs.nebraska.gov as R163.0004-2016.pdf,
+  which looks official and is nine years stale. The state's hinge is a definition rather than a
+  list: Neb. Rev. Stat. §§ 37-245 and 37-246 define wild birds and wild mammals by Nebraska
+  geography, so a native goes to the captive wildlife chapter, which is a prohibition with a closed
+  list of exceptions, and an exotic goes to the importation list, which is also closed. Two things
+  live outside both: Neb. Rev. Stat. § 37-477(2) bans all of Felidae and Ursidae by statute with no
+  permit behind it, and snapping turtles are in the fishing regulations at 164 NAC 6.
 - **The Massachusetts files** describe a closed white list with an override that cuts across every
   group listing in it. Read 321 CMR 9.01(3) BEFORE any group entry: no species may be exempted if it
   is federally listed, in the IUCN Red Book(s), or on the Massachusetts list at 321 CMR 10.90. Nearly
@@ -157,6 +167,8 @@ not on the sites, so a person with a browser can open all of them.
 | `publications.tnsosfiles.com`, `sos.tn.gov`, `tnsos.org` | 403 "Request blocked" from CloudFront on every path, with or without a browser User-Agent and Referer. This is the whole of Tennessee's rules and proclamations publishing | No workaround found. `www.tn.gov` IS reachable, so read the TWRA pages instead, and cross-check the statutes against two reproductions |
 | `statutes.capitol.texas.gov` | Angular SPA. Every `/Docs/` path returns the same 250KB shell, so a fetch looks successful and contains no law; headless Chromium cannot reach it at all | Fetch `https://tcss.legis.texas.gov/resources/<CODE>/htm/<CODE>.<CHAPTER>.htm` instead and cite the capitol URL. The base is in the SPA chunk `chunk-7GRZWKYH.js` as `TCASCore` |
 | `texreg.sos.state.tx.us` | Retired. Serves "Site Has Moved" to every path, the old `TacPage` viewer included | The TAC is on an Appian portal now: POST `{"#t":"UiConfig"}` to `texas-sos.appianportalsgov.com/rules-and-meetings/_/ui?interface=VIEW_TAC&title=..&part=..&chapter=..` with a cookie jar and `X-Client-Version: APNX-1-4105-002`. Full recipe in `TX-tx-nongame.txt` |
+| `rules.nebraska.gov` | TLS fails with "unable to get local issuer certificate": the server omits the intermediate for a genuine DigiCert `*.nebraska.gov` cert | Complete the chain instead of disabling verification. Fetch `http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt`, convert with `openssl x509 -inform DER`, concatenate onto the proxy bundle, pass with `--cacert`. Then the JSON API needs no headers: `/api/title`, `/api/chapter/GetByTitleId/<id>` returns full chapter text |
+| `outdoornebraska.gov`, `govdocs.nebraska.gov` directory listings | 403 on every path | Use `rules.nebraska.gov` per the row above. `govdocs.nebraska.gov` serves individual PDFs but only a 2016 snapshot under the retired title numbering |
 | `iucnredlist.org`, `api.iucnredlist.org` | 403 to this container, and the v4 API needs a token anyway | Use the GBIF mirror: `api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=<binomial>` returns `threatStatuses` per accepted name |
 | `api.gbif.org` | Works, but drops the occasional connection mid-exchange | Retry with backoff; a failed call returns non-JSON rather than an error code |
 | `web.archive.org` | Blocked by egress policy, so the Wayback fallback is not available here. `archive.org/wayback/available` does answer | Find another live reproduction instead |

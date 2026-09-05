@@ -98,115 +98,115 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 17,
+        "checked": 18,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 17,
+        "checked": 18,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 18,
+        "checked": 19,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 18,
+        "checked": 19,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 18,
+        "checked": 19,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 18,
+        "checked": 19,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 18,
+        "checked": 19,
         "of": 51
       },
       "green-anole": {
-        "checked": 18,
+        "checked": 19,
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 30,
+        "checked": 31,
         "of": 51
       },
       "tarantula": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "axolotl": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "box-turtle": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 43,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 43,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 43,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 43,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 44,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 44,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 44,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 44,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 45,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 46,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 47,
-        "of": 51
-      },
-      "green-iguana": {
-        "checked": 47,
-        "of": 51
-      },
-      "burmese-python": {
-        "checked": 47,
-        "of": 51
-      },
-      "russian-tortoise": {
         "checked": 48,
         "of": 51
       },
+      "green-iguana": {
+        "checked": 48,
+        "of": 51
+      },
+      "burmese-python": {
+        "checked": 48,
+        "of": 51
+      },
+      "russian-tortoise": {
+        "checked": 49,
+        "of": 51
+      },
       "red-footed-tortoise": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "degu": {
@@ -214,7 +214,7 @@
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "hamster": {
@@ -238,19 +238,19 @@
         "of": 51
       },
       "milk-snake": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "ball-python": {
-        "checked": 48,
-        "of": 51
-      },
-      "veiled-chameleon": {
         "checked": 49,
         "of": 51
       },
+      "veiled-chameleon": {
+        "checked": 50,
+        "of": 51
+      },
       "boa-constrictor": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "corn-snake": {
@@ -850,9 +850,9 @@
       "note": "Navigate to Title 800, Chapter 25, Subchapter 25, Section 800:25-25-3. One of the most permissive exemption lists in the country, and one of the very few that names the fennec fox individually. Note what the exemptions are from: permits and breeder licences, not a ban. An unexempt animal is licensable, not prohibited."
     },
     "ne-166-nac-8": {
-      "title": "166 NAC 8, Nebraska Game and Parks Commission, Keeping Wildlife in Captivity",
-      "url": "https://rules.nebraska.gov",
-      "note": "Browse to Game and Parks Commission, Title 166 Wildlife Regulations, Chapter 8. Two lists that must not be conflated. § 001.01B lists the native wild birds and mammals that may be held under a Captive Wildlife Permit. § 001.08A is a separate closed list of wildlife that may be imported into the state, and a non-native animal missing from it cannot lawfully be brought in."
+      "title": "166 Neb. Admin. Code ch. 8, Keeping Wildlife in Captivity, and ch. 10, Nongame Species In Need Of Conservation",
+      "url": "https://rules.nebraska.gov/rules/166/8",
+      "note": "Nebraska renumbered its Game and Parks regulations: what used to be 163 NAC ch. 4 is now Title 166, and captive wildlife has its own chapter 8 rather than a subsection. Anything on this map citing \"163 NAC ch. 4, § 008\" is pointing at a title that is now called ADMINISTRATION. Chapter 8 has three operative parts. § 001.01B bars retaining any WILD BIRD or WILD MAMMAL in captivity except a listed set of Nebraska natives under a Captive Wildlife Permit. § 001.07A prohibits six species outright, none of them a pet: the Asian raccoon dog, white-tailed and mule deer, red deer, wild pigs and bighorn or thinhorn sheep. And § 001.08A is a closed importation list, which is what actually answers most exotic mammals here, because they are not wild mammals and so the permit scheme never reaches them. Chapter 10 does the same job for reptiles and amphibians and is limited to species native to Nebraska."
     },
     "hi-conditional": {
       "title": "Hawaii Administrative Rules, List of Conditionally Approved Animals (Hawaii Department of Agriculture official PDF)",
@@ -908,11 +908,6 @@
       "title": "Minn. Stat. § 97A.401, Special permits",
       "url": "https://www.revisor.mn.gov/statutes/cite/97A.401",
       "note": "Subd. 8, added in 2021, is the pet reptile rule: the commissioner must prescribe conditions and may issue breeder permits, and a snake, lizard or salamander is possessable as a pet if it came from a permitted breeder or was held before 1 August 2021. Subd. 3 is the older, broader route, allowing special permits without a fee to possess wild animals as pets."
-    },
-    "ne-163-nac-4-008": {
-      "title": "Nebraska Administrative Code, Title 163, Chapter 4, § 008 — Keeping Wildlife in Captivity",
-      "url": "http://govdocs.nebraska.gov/epubs/G1000/R163.0004-2016.pdf",
-      "note": "The Captive Wildlife Permit species list in §008.01B names only wild birds and wild mammals; reptiles never appear on it, which is the basis for treating common exotic reptiles as outside this permit system."
     },
     "nj-7-25-4-5": {
       "title": "N.J.A.C. 7:25-4.4 Exempted Species and 7:25-4.5 Additional Species",
@@ -978,11 +973,6 @@
       "title": "COMAR 08.03.11, Reptile and Amphibian Possession and Permits",
       "url": "https://regs.maryland.gov/us/md/exec/comar/08.03.11/index.full.html",
       "note": "Maryland's native reptile and amphibian chapter, adopted 1993 and amended through 2016, renumbered from 08.03.09. It works off three lists in Regulation .03: .03A species may be kept four per species without a permit, .03B species one only, and .03C species not at all outside a scientific collection or endangered species permit. A species on none of the three lists is not native to Maryland and the chapter does not reach it. Regulation .03D provides that where both names are given, the scientific name controls."
-    },
-    "ne-captive-wildlife": {
-      "title": "163 Neb. Admin. Code ch. 4, § 008",
-      "url": "https://outdoornebraska.gov/wp-content/uploads/2023/03/Wildlife-Regs.pdf",
-      "note": "Nebraska Game and Parks Commission's own wildlife regulations booklet, section 008 lists which species require a Captive Wildlife Permit."
     },
     "nj-7-25-4-8": {
       "title": "N.J.A.C. 7:25-4.8(a)",
@@ -1098,11 +1088,6 @@
       "title": "Delaware Code, Title 3, Chapter 72 — Possession of Mammals or Reptiles Exotic to Delaware",
       "url": "https://delcode.delaware.gov/title3/c072/index.html",
       "note": "The permit requirement in §7201 names only wild mammals and non-native reptiles; birds are absent from the chapter's operative text despite appearing in its older title reference, so a pet cockatoo needs no permit under this chapter."
-    },
-    "ne-cage-aviary-birds": {
-      "title": "163 Neb. Admin. Code, ch. 4, § 008 — Keeping Wildlife in Captivity (Definitions)",
-      "url": "http://govdocs.nebraska.gov/epubs/G1000/R163.0004-2016.pdf",
-      "note": "Same chapter as ne-163-nac-4-008; its opening definitions section defines 'Cage and Aviary Birds' verbatim as captive-reared, non-native birds such as parrots, exotic finches, and canaries, with the monk parakeet the one species carved back out."
     },
     "nv-unprotected-birds": {
       "title": "Nevada Administrative Code § 503.110, Restrictions on Importation, Transportation and Possession of Certain Species",
@@ -1353,6 +1338,11 @@
       "title": "MassWildlife, Wildlife as pets",
       "url": "https://www.mass.gov/guides/wildlife-as-pets",
       "note": "The agency's own restatement of 321 CMR 9.00, cached because it answers two things the regulation leaves open. It reads the categorical bar the same way this map does, saying that any animal \"listed in any rarity category of the International Union for the Conservation of Nature Red List of Threatened Species, any category of federal endangered species law, or listed on the Massachusetts List of Endangered, Threatened, and Special Concern species may not be possessed without a permit\", and it paraphrases the reptile groups as \"except rare species\". And it states what a licence application actually gets you: permits \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" It carries its own disclaimer that the lists \"may not be all-inclusive\", and it is inconsistent with itself on turtles, where it omits the rarity clause it applies to snakes and geckos, so the regulation governs where the two differ."
+    },
+    "ne-37-477": {
+      "title": "Neb. Rev. Stat. §§ 37-245, 37-246, 37-247, 37-477 and 37-479",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-477",
+      "note": "The statute does two things the regulation does not. § 37-477(2) is a flat ban with no permit behind it: \"no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae\", excepting only Felis domesticus, accredited zoos and public facilities, and lynx or bobcat fur producers. And §§ 37-245 and 37-246 define wild birds and wild mammals by geography rather than by wildness, as species \"native to, migrating to or through, or having established free-ranging populations in the State of Nebraska\". That definition is the hinge of the whole state: a Nebraska native is caught by the captive wildlife scheme and an exotic is not, which sends the exotic question to the importation list instead. § 37-247 defines wildlife far more broadly, reaching every arthropod and invertebrate, and that breadth sits awkwardly with an importation list containing only mammals and birds."
     }
   },
   "animals": {
@@ -1745,10 +1735,10 @@
         "NE": {
           "status": "unclear",
           "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.08A",
-          "quote": "Eurasian Hedgehogs   Erinaceus spp.",
-          "note": "The importation list clears the Eurasian genus. The hedgehog sold as a pet is the African pygmy hedgehog, Atelerix albiventris, which is a different genus and is not named. Because § 001.08A is a closed list, the omission matters. Ask Game and Parks before buying one out of state.",
-          "verifiedOn": "2026-08-04"
+          "cite": "166 NAC 8 § 001.08A",
+          "quote": "001.08A Importation: the following wildlife may be imported: Alpaca ... Chinchilla, Chinchilla spp. ... Coatimundi ... Degu, Octodon spp. ... Fox, Vulpes spp. ... Genet ... Gerbil, Gerbillus spp. ... Guinea pig, Cavia porcellus ... Eurasian Hedgehogs, Erinaceus spp. ... Jerboa, greater ... Sugar Glider(s), Petaurus spp. ... Wallabies ... All Ratites, All Waterfowl, All Peafowl, All Game Birds, All Cage and Aviary Birds",
+          "note": "The importation list reads \"Eurasian Hedgehogs, Erinaceus spp.\" and the pet is the African pygmy hedgehog, Atelerix albiventris, which is neither Eurasian nor an Erinaceus under current taxonomy. Read strictly, the pet hedgehog cannot be imported into Nebraska. There is a real argument the other way, and it is a drafting-vintage argument rather than a wishful one: this species was classified as Erinaceus albiventris for decades, and Massachusetts still writes it that way in its own exemption list, as \"Four-toed (African pygmy) hedgehog (Erinaceus albiventris) (= Atelerix pruneri)\". So a list written when Nebraska's was may well have meant the pet. Recorded unclear because the common name in the entry, \"Eurasian\", cuts against the reading that would save it, and nothing published by the Commission resolves it.",
+          "verifiedOn": "2026-09-05"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -2116,11 +2106,11 @@
         },
         "NE": {
           "status": "legal",
-          "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.01B",
-          "quote": "Mink - (Mustela vison, except mutation)... Weasel - long-tailed (Mustela frenata)",
-          "note": "The mustelids in the captivity list are Nebraska's own wild ones. The domestic ferret is not a wild mammal under the statute the section points to.",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. §§ 37-246, 37-247",
+          "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
+          "note": "Nebraska's native mustelid of that name is the black-footed ferret, Mustela nigripes, which appears on the state endangered list at 166 NAC 4 and cannot be held at all. The domestic ferret is a different species and a domesticated one, so neither § 37-246 nor § 37-247 reaches it. The pairing is worth knowing because the two names are close enough that secondary summaries sometimes report Nebraska as a ferret ban state.",
+          "verifiedOn": "2026-09-05"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -2535,9 +2525,10 @@
         "NE": {
           "status": "legal",
           "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.08A",
-          "quote": "Sugar Glider(s)   Petaurus spp.",
-          "verifiedOn": "2026-08-04"
+          "cite": "166 NAC 8 § 001.08A; Neb. Rev. Stat. § 37-246",
+          "quote": "001.08A Importation: the following wildlife may be imported: Alpaca ... Chinchilla, Chinchilla spp. ... Coatimundi ... Degu, Octodon spp. ... Fox, Vulpes spp. ... Genet ... Gerbil, Gerbillus spp. ... Guinea pig, Cavia porcellus ... Eurasian Hedgehogs, Erinaceus spp. ... Jerboa, greater ... Sugar Glider(s), Petaurus spp. ... Wallabies ... All Ratites, All Waterfowl, All Peafowl, All Game Birds, All Cage and Aviary Birds",
+          "note": "Listed as \"Sugar Glider(s), Petaurus spp.\", one of the few marsupial entries on the list alongside the wallabies. Not a wild mammal under § 37-246, so nothing else in the chapter reaches it.",
+          "verifiedOn": "2026-09-05"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -2746,10 +2737,11 @@
         },
         "NE": {
           "status": "legal",
-          "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.08A",
-          "note": "Absent from the importation list, but that list covers wildlife and the golden hamster is a domesticated animal rather than a wild mammal under Neb. Rev. Stat. 37-246. The guinea pig appears on the list even so, which makes the list less than perfectly consistent.",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. §§ 37-246, 37-247",
+          "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
+          "note": "Two definitions clear it and the importation list is not one of them, which is worth spelling out because the list carries the guinea pig and the chinchilla and no hamster. § 37-246 makes wild mammals a matter of Nebraska geography, and Mesocricetus auratus is neither native nor established here. § 37-247 defines wildlife as \"any member of any nondomesticated species\", and the golden hamster is a domesticated animal descended from a single 1930 capture. On both routes it falls outside the chapter rather than off the end of a list.",
+          "verifiedOn": "2026-09-05"
         },
         "KS": {
           "sourceId": "ks-32-1301",
@@ -3135,10 +3127,10 @@
         "NE": {
           "status": "legal",
           "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.08A",
-          "quote": "Gerbil   Gerbillus spp.",
-          "note": "As in Alaska, the binomial given is Gerbillus, while the gerbil in the pet trade is the Mongolian gerbil, Meriones unguiculatus.",
-          "verifiedOn": "2026-08-04"
+          "cite": "166 NAC 8 § 001.08A; Neb. Rev. Stat. § 37-246",
+          "quote": "001.08A Importation: the following wildlife may be imported: Alpaca ... Chinchilla, Chinchilla spp. ... Coatimundi ... Degu, Octodon spp. ... Fox, Vulpes spp. ... Genet ... Gerbil, Gerbillus spp. ... Guinea pig, Cavia porcellus ... Eurasian Hedgehogs, Erinaceus spp. ... Jerboa, greater ... Sugar Glider(s), Petaurus spp. ... Wallabies ... All Ratites, All Waterfowl, All Peafowl, All Game Birds, All Cage and Aviary Birds",
+          "note": "Listed as \"Gerbil, Gerbillus spp.\", and the binomial does not match the animal: the pet is the Mongolian gerbil, Meriones unguiculatus, which is not a Gerbillus. Read as a common-name entry the listing plainly means the pet gerbil, and read as a scientific listing it names a genus almost nobody keeps. The common name governs here in a way it does not for the hedgehog entry two lines down, because \"Gerbil\" includes the pet species while \"Eurasian Hedgehogs\" actively excludes the African one.",
+          "verifiedOn": "2026-09-05"
         },
         "KS": {
           "sourceId": "ks-32-1301",
@@ -3549,10 +3541,10 @@
         "NE": {
           "status": "banned",
           "sourceId": "ne-166-nac-8",
-          "cite": "§ 008, § 001.08A",
+          "cite": "166 NAC 8, definitions; § 001.08A",
           "quote": "Cage and Aviary Birds - Means those captive-reared birds, not native to Nebraska, such as parrots, exotic finches, and canaries, which are adapted to live and breed in a cage. For purposes of this regulation, the monk parakeet (Myiopsitta monachus) is not a cage and aviary bird.",
-          "note": "A neat piece of drafting to watch for. The importation list ends with All Cage and Aviary Birds, and the definitions section removes the monk parakeet from that category by name, so the one bird excluded from the definition is the one bird that cannot be imported.",
-          "verifiedOn": "2026-08-04"
+          "note": "Nebraska bans this bird by writing it out of a definition, which is the only instance of that technique on this map. The importation list ends with \"All Cage and Aviary Birds\", and the chapter defines that term as captive-reared birds not native to Nebraska, such as parrots, exotic finches and canaries, and then adds one sentence: \"For purposes of this regulation, the monk parakeet (Myiopsitta monachus) is not a cage and aviary bird.\" So every other pet parrot is importable and this one is not. The reason is agricultural rather than about the pet trade, since the monk parakeet is the species that builds communal stick nests on power infrastructure, and Nebraska also keeps a separate Nuisance Birds chapter at 166 NAC 7.",
+          "verifiedOn": "2026-09-05"
         },
         "KS": {
           "sourceId": "ks-32-1301",
@@ -3957,12 +3949,12 @@
           "verifiedOn": "2026-08-04"
         },
         "NE": {
-          "status": "legal",
-          "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.01B",
-          "quote": "Bobcat* - (Lynx rufus)... Lynx* - (Lynx canadensis)",
-          "note": "The only cats in the chapter are Nebraska's two native ones, and both are marked for commercial purposes only. A domestic cat is not a wild mammal.",
-          "verifiedOn": "2026-08-04"
+          "status": "conditional",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. § 37-477(2)(a)",
+          "quote": "(1) No person shall keep in captivity in this state any wild birds, any wild mammals, any nongame wildlife in need of conservation as determined by the commission under section 37-805, or any wildlife determined to be an endangered or threatened species ... without first having obtained a permit. (2) Except as provided in subsection (3) of this section, no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae. This subsection shall not apply to (a) the species Felis domesticus, (b) any zoo, park, refuge, wildlife area, or nature center owned or operated by a city, village, state, or federal agency or any zoo accredited by the Association of Zoos and Aquariums or the Zoological Association of America, or (c) any person who holds a captive wildlife permit ... and who raises Canada Lynx (Lynx canadensis) or bobcats (Lynx rufus) solely for the purpose of producing furs.",
+          "note": "The eleventh Bengal answer on this map, and it turns on two words with no generation rule attached. Nebraska bans every member of Felidae and then excepts \"the species Felis domesticus\". A late-generation Bengal registered and sold as a domestic cat is Felis catus and clears it. An early-generation animal is a hybrid rather than a member of that species, and nothing in the statute or in 166 NAC 8 says where the line falls: the chapter defines a hybrid as \"an animal produced by crossing species or subspecies\" and then never uses the definition to answer this. So the condition is real and its threshold is not written down anywhere, which is a different problem from the states that pick a filial number and stick to it.",
+          "verifiedOn": "2026-09-05"
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -4552,6 +4544,14 @@
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Chamaeleo calyptratus is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Chamaeleo calyptratus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4943,6 +4943,14 @@
           "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
           "note": "The turtle allowance is generous and the categorical bar is what removes this species from it. Testudo horsfieldii is assessed by the IUCN as vulnerable, so 9.01(3)(b) applies and it cannot be exempted whatever the general clause says. Note that MassWildlife's own summary page lists only four tortoises as off limits and does not carry the rarity clause into its turtle table, while it does carry it into its snake and gecko tables; the regulation governs, and the page itself says its lists may not be all-inclusive. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Testudo horsfieldii is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/russian-tortoise-legal-guide/"
@@ -5330,6 +5338,14 @@
           "cite": "31 TAC § 55.651(2); Parks & Wild. Code § 43.851(a)",
           "quote": "Controlled exotic snake--Any live snake that is: (A) a venomous snake not indigenous to Texas; (B) any of the following: (i) African rock python (Python sebae); (ii) Asiatic rock python, (Python molurus); (iii) Burmese python (Python bivittatus); (iv) green anaconda, (Eunectes murinus); (v) reticulated python, (Python reticulatus); (vi) southern African python (Python natalensis); or (C) a hybrid of any species listed in this paragraph.",
           "note": "The controlled exotic snake list is six constrictors by name plus nonnative venomous species, and Python regius is not among them. Texas named three pythons and left the rest of the genus alone, which is the clearest case on this map of a state legislating by species rather than by genus. Nothing else reaches a ball python: it is not indigenous to Texas, so the nongame caps do not apply.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Python regius is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list. Nebraska has no constrictor rule of any kind, which is a real contrast with the neighbouring states that legislate by species or by length.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -5725,6 +5741,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The boa constrictor is nonvenomous and is neither a caiman nor a gavial. There is no constrictor length rule anywhere in this part.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Boa constrictor is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6083,6 +6107,14 @@
           "cite": "M.G.L. c. 131, § 23; 321 CMR 9.01(2)",
           "quote": "Species means an individual or individuals of any distinct non-domestic vertebrate animal population whose members interbreed when mature or are self-perpetuating through the production of viable offspring and can include any subspecies or variety of vertebrate animal.",
           "note": "Massachusetts is a closed-list state, so the question worth asking first is whether the list applies at all, and for a tarantula it does not. M.G.L. c. 131, § 23 reaches \"fish, birds, mammals, reptiles, or amphibians\", and 321 CMR 9.01(2) defines the species the exemption list is made of as vertebrate populations. A terrestrial arthropod is outside the licensing scheme entirely rather than unlisted within it, which is a different answer from the one the closed list gives a mammal nobody put on it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. §§ 37-247, 37-477(1); 166 NAC 8 § 001.01B",
+          "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
+          "note": "Nebraska defines wildlife broadly enough to include a tarantula, since § 37-247 reaches \"any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate\". What it does not do is regulate one. The captivity prohibition at § 37-477(1) and at 166 NAC 8 § 001.01B is written about wild birds, wild mammals, nongame species in need of conservation and listed species, none of which is an arthropod; 166 NAC 10 covers only reptiles and amphibians; and the importation list at § 001.08A contains nothing but mammals and birds. The one loose end is that the list is headed \"the following wildlife may be imported\" and wildlife on the statutory definition includes arthropods, so a very literal reading of that heading would bar importing a tarantula. Nothing in the chapter turns that heading into a prohibition, and every operative sentence in it is about birds and mammals.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6445,6 +6477,14 @@
           "cite": "M.G.L. c. 131, § 23; 321 CMR 9.01(2)",
           "quote": "Species means an individual or individuals of any distinct non-domestic vertebrate animal population whose members interbreed when mature or are self-perpetuating through the production of viable offspring and can include any subspecies or variety of vertebrate animal.",
           "note": "Massachusetts is a closed-list state, so the question worth asking first is whether the list applies at all, and for the emperor scorpion it does not. M.G.L. c. 131, § 23 reaches \"fish, birds, mammals, reptiles, or amphibians\", and 321 CMR 9.01(2) defines the species the exemption list is made of as vertebrate populations. A terrestrial arthropod is outside the licensing scheme entirely rather than unlisted within it, which is a different answer from the one the closed list gives a mammal nobody put on it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. §§ 37-247, 37-477(1); 166 NAC 8 § 001.01B",
+          "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
+          "note": "Nebraska defines wildlife broadly enough to include the emperor scorpion, since § 37-247 reaches \"any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate\". What it does not do is regulate one. The captivity prohibition at § 37-477(1) and at 166 NAC 8 § 001.01B is written about wild birds, wild mammals, nongame species in need of conservation and listed species, none of which is an arthropod; 166 NAC 10 covers only reptiles and amphibians; and the importation list at § 001.08A contains nothing but mammals and birds. The one loose end is that the list is headed \"the following wildlife may be imported\" and wildlife on the statutory definition includes arthropods, so a very literal reading of that heading would bar importing a tarantula. Nothing in the chapter turns that heading into a prohibition, and every operative sentence in it is about birds and mammals.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6840,6 +6880,14 @@
           "quote": "All Teiids (Teiidae), including Jungle Runners (Ameiva spp.) and Tegus (Tupinambis spp.), may be kept without a permit except for the following which require a permit: Species categorically non-exempt pursuant to 321 CMR 9.01(3). Desert Tegus (Dicrodon spp.)",
           "note": "This one turns on reading the sentence rather than the parenthetical. The entry clears \"All Teiids (Teiidae)\" and then gives Ameiva and Tupinambis as examples, and Salvator merianae was split out of Tupinambis in 2012, so a list-matching read would miss it. \"All Teiids\" is the operative clearance and the tegu is a teiid, so it is exempt, and it is IUCN least concern so the categorical bar does not reach it. Massachusetts is notably permissive on an animal that several southeastern states now prohibit.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Salvator merianae is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7215,6 +7263,14 @@
           "quote": "The following Monitor Lizards (Varanidae) may be kept without a permit: Spiny-tailed or Ridge-tailed Monitor (Varanus acanthurus).",
           "note": "Varanus exanthematicus is IUCN least concern and it makes no difference, because the monitor entry exempts one species and this is not it. MassWildlife states the result plainly on the other side of its own table: \"Any monitor lizards except the spiny-tailed (ridge-tailed) monitor\" cannot be kept. Nothing about the savannah monitor's size or temperament is doing the work here, only its absence from a one-line list. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Varanus exanthematicus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -7514,10 +7570,10 @@
         "NE": {
           "status": "banned",
           "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.01B",
-          "quote": "It shall be unlawful for any person or persons to retain any wild birds or wild mammals (as defined in Nebraska revised statute 37-245 and 37-246) in captivity except the following species may be kept under authority of a Captive Wildlife Permit",
-          "note": "Cynomys is a Nebraska wild mammal and is absent from the list that follows, which runs from badger to long-tailed weasel. It is also absent from the importation list.",
-          "verifiedOn": "2026-08-04"
+          "cite": "166 NAC 8 § 001.01B; Neb. Rev. Stat. §§ 37-246, 37-477(1)",
+          "quote": "It shall be unlawful for any person or persons to retain any wild birds or wild mammals (as defined in Nebraska revised statute 37-245 and 37-246) in captivity except the following species may be kept under authority of a Captive Wildlife Permit, a Controlled Shooting Area Permit, a Rehabilitation Permit or a Scientific Collectors Permit, issued by the Nebraska Game and Parks Commission ... Badger ... Beaver ... Bobcat* ... Cottontail rabbit ... Squirrel - Fox, Gray, Flying (Glaucomys volans) ...",
+          "note": "The black-tailed prairie dog is native to Nebraska, which makes it a wild mammal under § 37-246, which puts it inside the § 001.01B prohibition. What decides the answer is the list that follows: badger, beaver, bobcat, cottontail, crows, deer, ducks, foxes, geese, grouse, lynx, migratory birds, mink, muskrat, opossum, partridge, pheasant, quail, raccoon, river otter, bighorn sheep, fox and gray and flying squirrels, swans, turkey and long-tailed weasel. The prairie dog is not on it, and § 001.01B is written as a prohibition with the list as the only exception, so there is no permit to apply for. Nebraska is in the animal's core range and answers it with an omission.",
+          "verifiedOn": "2026-09-05"
         },
         "KS": {
           "sourceId": "ks-32-1301",
@@ -7957,10 +8013,10 @@
         "NE": {
           "status": "banned",
           "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.08A",
-          "quote": "Importation: the following wildlife may be imported:",
-          "note": "The list clears the chinchilla, the degu, the gerbil, the guinea pig and the greater jerboa. The capybara is not among them.",
-          "verifiedOn": "2026-08-04"
+          "cite": "166 NAC 8 § 001.08A; Neb. Rev. Stat. § 37-246",
+          "quote": "001.08A Importation: the following wildlife may be imported: Alpaca ... Chinchilla, Chinchilla spp. ... Coatimundi ... Degu, Octodon spp. ... Fox, Vulpes spp. ... Genet ... Gerbil, Gerbillus spp. ... Guinea pig, Cavia porcellus ... Eurasian Hedgehogs, Erinaceus spp. ... Jerboa, greater ... Sugar Glider(s), Petaurus spp. ... Wallabies ... All Ratites, All Waterfowl, All Peafowl, All Game Birds, All Cage and Aviary Birds",
+          "note": "Nebraska answers an exotic mammal by importation rather than by possession, and it takes two steps to see why. §§ 37-245 and 37-246 define wild birds and wild mammals as species native to, migrating through, or established in Nebraska, so the capybara is not a wild mammal and the Captive Wildlife Permit scheme in § 001.01B never reaches it. That would look like a clean yes, except that § 001.08A is a closed importation list and this animal is not on it. There is no lawful way to bring one into the state, and § 001.08E forecloses reading anything else in the chapter as authority to. The list does carry several South American mammals, the alpaca, the guanaco, the vicuna, the llama, the chinchilla and the degu, so the omission is not about the continent.",
+          "verifiedOn": "2026-09-05"
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -8359,10 +8415,10 @@
         "NE": {
           "status": "legal",
           "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.08A",
-          "quote": "Fox   Vulpes spp.",
-          "note": "Vulpes zerda is within the genus named on the importation list. The separate captivity list at § 001.01B reaches Nebraska's own gray and red foxes, which need a Captive Wildlife Permit.",
-          "verifiedOn": "2026-08-04"
+          "cite": "166 NAC 8 § 001.08A; Neb. Rev. Stat. § 37-246",
+          "quote": "001.08A Importation: the following wildlife may be imported: Alpaca ... Chinchilla, Chinchilla spp. ... Coatimundi ... Degu, Octodon spp. ... Fox, Vulpes spp. ... Genet ... Gerbil, Gerbillus spp. ... Guinea pig, Cavia porcellus ... Eurasian Hedgehogs, Erinaceus spp. ... Jerboa, greater ... Sugar Glider(s), Petaurus spp. ... Wallabies ... All Ratites, All Waterfowl, All Peafowl, All Game Birds, All Cage and Aviary Birds",
+          "note": "The importation list carries \"Fox, Vulpes spp.\", and the fennec fox is Vulpes zerda, so it clears the one rule that reaches an exotic mammal here. It is not a wild mammal under § 37-246 either, since Nebraska's native foxes are the red and the gray and neither is this species, so the Captive Wildlife Permit scheme does not apply. The genus-level listing is what makes this easy: had the entry named the red and gray foxes the way several other entries name species, the answer would flip.",
+          "verifiedOn": "2026-09-05"
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -8814,11 +8870,15 @@
         },
         "NE": {
           "status": "banned",
-          "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.08A",
-          "quote": "Importation: the following wildlife may be imported:",
-          "note": "No cat of any kind appears on the importation list, and the list is closed. The captivity list at § 001.01B covers only the bobcat and the Canada lynx, both for commercial purposes only.",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. § 37-477(2)",
+          "quote": "(1) No person shall keep in captivity in this state any wild birds, any wild mammals, any nongame wildlife in need of conservation as determined by the commission under section 37-805, or any wildlife determined to be an endangered or threatened species ... without first having obtained a permit. (2) Except as provided in subsection (3) of this section, no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae. This subsection shall not apply to (a) the species Felis domesticus, (b) any zoo, park, refuge, wildlife area, or nature center owned or operated by a city, village, state, or federal agency or any zoo accredited by the Association of Zoos and Aquariums or the Zoological Association of America, or (c) any person who holds a captive wildlife permit ... and who raises Canada Lynx (Lynx canadensis) or bobcats (Lynx rufus) solely for the purpose of producing furs.",
+          "note": "Nebraska bans the whole of Felidae by statute, not by regulation, and there is no permit behind it. The three exceptions are Felis domesticus, public and accredited zoos, and a captive wildlife permit holder raising Canada lynx or bobcats for fur, which is the only commercial route and does not reach a serval. This is one of the shortest routes to a no on this map: no list to check, no species name, just the family.",
+          "verifiedOn": "2026-09-05",
+          "grandfathered": {
+            "before": "1986-03-01",
+            "detail": "A person legally holding such an animal on 1 March 1986 may keep it for its lifetime under § 37-477(3), and may not trade, sell or dispose of it without the commission's written permission."
+          }
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -9220,9 +9280,10 @@
         "NE": {
           "status": "legal",
           "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.08A",
-          "quote": "Importation: the following wildlife may be imported: ...Chinchilla   Chinchilla spp.",
-          "verifiedOn": "2026-08-04"
+          "cite": "166 NAC 8 § 001.08A; Neb. Rev. Stat. § 37-246",
+          "quote": "001.08A Importation: the following wildlife may be imported: Alpaca ... Chinchilla, Chinchilla spp. ... Coatimundi ... Degu, Octodon spp. ... Fox, Vulpes spp. ... Genet ... Gerbil, Gerbillus spp. ... Guinea pig, Cavia porcellus ... Eurasian Hedgehogs, Erinaceus spp. ... Jerboa, greater ... Sugar Glider(s), Petaurus spp. ... Wallabies ... All Ratites, All Waterfowl, All Peafowl, All Game Birds, All Cage and Aviary Birds",
+          "note": "Listed as \"Chinchilla, Chinchilla spp.\" with no captive-stock qualifier of the kind Massachusetts attaches, so both chinchilla species are importable on the face of the entry. Not native to Nebraska, so § 001.01B does not apply.",
+          "verifiedOn": "2026-09-05"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -9479,9 +9540,10 @@
         "NE": {
           "status": "legal",
           "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.08A",
-          "quote": "Guinea pig   Cavia porcellus",
-          "verifiedOn": "2026-08-04"
+          "cite": "166 NAC 8 § 001.08A; Neb. Rev. Stat. § 37-246",
+          "quote": "001.08A Importation: the following wildlife may be imported: Alpaca ... Chinchilla, Chinchilla spp. ... Coatimundi ... Degu, Octodon spp. ... Fox, Vulpes spp. ... Genet ... Gerbil, Gerbillus spp. ... Guinea pig, Cavia porcellus ... Eurasian Hedgehogs, Erinaceus spp. ... Jerboa, greater ... Sugar Glider(s), Petaurus spp. ... Wallabies ... All Ratites, All Waterfowl, All Peafowl, All Game Birds, All Cage and Aviary Birds",
+          "note": "Listed by binomial as \"Guinea pig, Cavia porcellus\". That a fully domesticated pet needed listing at all follows from § 37-247, which defines wildlife as any nondomesticated species and leaves the Commission to sort the edge cases by naming them.",
+          "verifiedOn": "2026-09-05"
         },
         "KS": {
           "sourceId": "ks-32-1301",
@@ -10085,6 +10147,14 @@
           "quote": "The following Iguanid Lizards (Iguanidae) may be kept without a permit: Basilisks (Basiliscus spp.) Collared and Leopard Lizards (Crotaphytus spp.) Common or Green Iguanas (Iguana i. iguana) False or Spring-tailed Iguanas (Ctenosaurus spp.) Tree Iguanas (Liolaemus spp.) New World Chameleons (Anolis spp. and Ctenotus spp.) Spiny Lizards (Sceloporus spp.) Tree and Bush Lizards (Urosaurus spp.) Diving Lizards (Uranoscodon spp.) Zebra-tailed Lizards (Callisaurus spp.)",
           "note": "Named as \"Common or Green Iguanas (Iguana i. iguana)\", using the trinomial for the nominate subspecies. The iguanid entry is a closed list rather than a family clearance, so an iguanid not on it is not exempt, which makes the naming here the whole answer. Iguana iguana is IUCN least concern.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Iguana iguana is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -10474,6 +10544,14 @@
           "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
           "note": "Chelydra serpentina is not one of the five named exceptions, is IUCN least concern and is not on the Massachusetts list, so it falls under the general turtle allowance: no permit, and a cap of 100 turtles or eggs of the species in any combination. The cap is written for dealers rather than keepers and no pet owner will meet it. The separate rule to know is about acquisition: MassWildlife allows taking two snapping turtles from the wild in Massachusetts as personal pets under 321 CMR 3.05, and animals taken that way may not be sold, bartered or exchanged, or released back.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "conditional",
+          "sourceId": "ne-166-nac-8",
+          "cite": "164 NAC 6 § 003.01, § 003.05; 166 NAC 10 § 001.03",
+          "quote": "003.05 SNAPPING TURTLES: 003.05A It shall be unlawful to take snapping turtles except by hand, hand net, hook and line, bow and arrow or gaff. 003.05B It shall be unlawful to sell, offer for sale, trade or barter for any snapping turtle. ... 003.05E The take of any turtle(s) exceeding the daily bag limits shall be released immediately.",
+          "note": "Nebraska answers this animal in its fishing regulations rather than its wildlife ones, which is why it is easy to miss. 166 NAC 10 excludes game species from its herp rules, and the snapping turtle is handled at 164 NAC 6 alongside fish, bullfrogs and mussels, with a daily bag limit and a possession limit set annually by the Commission, take restricted to hand, hand net, hook and line, bow or gaff, and a fishing permit behind all of it. The clause that matters most to a keeper is § 003.05B: it is unlawful to sell, offer for sale, trade or barter any snapping turtle, so there is no lawful in-state commerce in one at any number.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10840,6 +10918,14 @@
           "cite": "321 CMR 9.01(10)(c)(6)",
           "quote": "All Geckos (Gekkonidae) may be kept without a permit except for those species categorically non-exempt pursuant to 321 CMR 9.01(3) and the Big Bend Gecko (Coleonyx reticulatus) which require a permit.",
           "note": "Cleared by the family listing. Gekko gecko is IUCN least concern, which is the point to check in this state rather than the animal's reputation for biting: the gecko clearance is subject only to the categorical bar and to the Big Bend gecko.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Gekko gecko is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11220,6 +11306,14 @@
           "quote": "List of Amphibians. All amphibians may be kept without a permit except species categorically non-exempt pursuant to 321 CMR 9.01(3).",
           "note": "The amphibian entry is one sentence and clears the whole class subject to the categorical bar. Ambystoma tigrinum is IUCN least concern and is not on the Massachusetts 321 CMR 10.90 list, which carries four other Ambystoma and Scaphiopus entries but not this one, so nothing pulls it back out. Massachusetts also allows taking two of certain native amphibians from the wild as personal pets under 321 CMR 3.05, though the tiger salamander is not among the species on that list.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "This one comes from an absence rather than a decision, and the mechanism is worth understanding because it will catch other native amphibians. 166 NAC 10 § 001.03 reaches every reptile and amphibian native to Nebraska that is not a game species, a nongame species in need of conservation, or threatened or endangered, and it makes it unlawful to take, possess, transport, export, process, sell or ship any of them except as provided in § 001.03A. The exceptions are four closed lists: two bait frogs, sixteen species at ten each, seventeen at three each, and a scientific collectors permit. The tiger salamander is on none of them, and it is on none of the other three chapters either, so there is no exception available and no permit written for a pet. The out-of-state purchase route at § 001.03A2 does not help, because it is expressly limited to \"the species listed below in 001.03A3 and 001.03A4\". One caveat on the species: Nebraska's animal is the barred tiger salamander, treated as a subspecies of Ambystoma tigrinum under the lumping this rule's vintage reflects and often split off as A. mavortium now, and an argument that A. tigrinum sensu stricto is not native to Nebraska is the only visible way out of this.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11599,6 +11693,14 @@
           "cite": "321 CMR 9.01(10)(c)(11)",
           "quote": "The following Monitor Lizards (Varanidae) may be kept without a permit: Spiny-tailed or Ridge-tailed Monitor (Varanus acanthurus).",
           "note": "Not the exempted monitor, so it is in the permit tier. Worth contrasting with the states that restrict this animal as an established invasive: Massachusetts reaches it by a closed family list that would catch a harmless monitor just as readily, and does not mention Florida populations or escape risk at all. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Varanus niloticus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11998,6 +12100,14 @@
           "quote": "All venomous snakes require a permit. The following snakes may be kept without a permit: 1. All species of boas and pythons (family Boidae), except those species categorically non-exempt pursuant to 321 CMR 9.01(3), and except the African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.), which require a permit.",
           "note": "The three pythons and anacondas named in the exemption are the African rock, the reticulated and Eunectes, and the Burmese is not among them, which makes this look like a legal state on a first read. It is not: Python bivittatus is assessed by the IUCN as vulnerable, so 9.01(3)(b) makes it categorically non-exempt and the family clearance is expressly subject to that clause. MassWildlife's summary reads the same way, clearing boas and pythons \"except rare species and those listed as unlawful\", which is two separate exclusions rather than one. Massachusetts is the state on this map where the Burmese python is restricted by a conservation listing rather than by an invasive-species rule. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Python bivittatus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list. Worth flagging because this animal is restricted in most of the states around it: Nebraska has no controlled-snake list, no size rule and no invasive-species listing that reaches it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12173,10 +12283,10 @@
         "NE": {
           "status": "legal",
           "sourceId": "ne-166-nac-8",
-          "cite": "§ 001.08A",
-          "quote": "Degu   Octodon spp.",
-          "note": "Named on the importation list, which few states do.",
-          "verifiedOn": "2026-08-04"
+          "cite": "166 NAC 8 § 001.08A; Neb. Rev. Stat. § 37-246",
+          "quote": "001.08A Importation: the following wildlife may be imported: Alpaca ... Chinchilla, Chinchilla spp. ... Coatimundi ... Degu, Octodon spp. ... Fox, Vulpes spp. ... Genet ... Gerbil, Gerbillus spp. ... Guinea pig, Cavia porcellus ... Eurasian Hedgehogs, Erinaceus spp. ... Jerboa, greater ... Sugar Glider(s), Petaurus spp. ... Wallabies ... All Ratites, All Waterfowl, All Peafowl, All Game Birds, All Cage and Aviary Birds",
+          "note": "Listed as \"Degu, Octodon spp.\" Nebraska is one of a small number of states that name this animal at all, and it matters here because the importation list is closed: an unlisted exotic rodent has no route in.",
+          "verifiedOn": "2026-09-05"
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -12742,6 +12852,14 @@
           "quote": "List of Amphibians. All amphibians may be kept without a permit except species categorically non-exempt pursuant to 321 CMR 9.01(3).",
           "note": "The class-wide amphibian clearance is subject to 9.01(3), and Ambystoma mexicanum is assessed by the IUCN as critically endangered, which makes it categorically non-exempt. The axolotl is the sharpest case for that clause anywhere on this map: the wild population is confined to the Xochimilco canals and is genuinely near extinction, while the captive population is enormous, entirely laboratory-derived and in no sense taken from the wild. The regulation draws no distinction, and unlike the chinchilla entry it writes no captive-stock exception here. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Ambystoma mexicanum is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list. The contrast with the tiger salamander is sharp and entirely about geography: the Mexican species is unregulated here and the native one cannot lawfully be possessed at all, because the chapter reaches natives and then lists the ones that may be collected.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13105,6 +13223,14 @@
           "cite": "321 CMR 9.01(3)(c), (10)(a)(1); 321 CMR 10.90",
           "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
           "note": "Caught twice by the categorical bar, which is why the general turtle allowance does not reach it. The eastern box turtle, Terrapene carolina, is listed as a species of special concern on the Massachusetts list at 321 CMR 10.90, which triggers 9.01(3)(c), and it is IUCN vulnerable, which triggers 9.01(3)(b) independently. Nothing in either turns on where the animal came from, so a captive-bred box turtle bought from an out-of-state breeder is in the same position as one found in the woods. Massachusetts joins Connecticut in answering this species through its endangered species listing rather than its pet rules, which is why it is easy to miss. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "conditional",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03, § 001.03A4",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "The ornate box turtle, Terrapene ornata, is on the three-per-species list at § 001.03A4. It is the box turtle that occurs in Nebraska; the eastern box turtle, Terrapene carolina, does not, which puts it outside 166 NAC 10 altogether since the chapter reaches only species native to Nebraska. So the answer depends on which box turtle, and for the one Nebraska has the number is three. The route that matters for a pet is § 001.03A2: an animal legally bought or consigned from outside Nebraska may be possessed without regard to numbers, provided the keeper can produce proof of lawful acquisition, a bill of sale or a consignment record. So the cap is on collecting, and the receipt is what lifts it.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13473,6 +13599,14 @@
           "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
           "note": "One of only five species pulled out of the turtle allowance by name, and the parenthetical is deliberately wide: \"Trachemys scripta, including all subspecies and forms\". So the yellow-bellied and Cumberland sliders are caught alongside the red-eared, and so is a captive-bred colour morph. The reason is ecological rather than conservation-driven, since the slider is IUCN least concern; it is on the list because an escaped one establishes. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "conditional",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03, § 001.03A4",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Trachemys scripta is on the three-per-species list at § 001.03A4, which is a mild answer by the standards of this row: several states ban the slider outright as an establishment risk, and Nebraska, where it is native, treats it as an ordinary collectible native. The route that matters for a pet is § 001.03A2: an animal legally bought or consigned from outside Nebraska may be possessed without regard to numbers, provided the keeper can produce proof of lawful acquisition, a bill of sale or a consignment record. So the cap is on collecting, and the receipt is what lifts it. The federal four-inch rule under 21 C.F.R. 1240.62 still applies to hatchlings and is untouched by any of this.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13837,6 +13971,14 @@
           "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
           "note": "Centrochelys sulcata is IUCN endangered, which makes it categorically non-exempt under 9.01(3)(b) and takes it out of the turtle allowance. Massachusetts is a genuinely unusual answer for this animal: most states that restrict the sulcata do it for size or for the burrowing, and this one does it through a conservation listing that has nothing to do with either. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Centrochelys sulcata is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14200,6 +14342,14 @@
           "quote": "Snakes of the family Colubridae, as follows: ... Garter and Ribbon Snakes (Thamnophis spp.) ... Kingsnakes and Milk Snakes (Lampropeltis spp.) ... North American Ratsnakes (Pantherophis spp.) except the Black Ratsnake (Pantherophis alleghaniensis other than albinistic and leucistic individuals) which requires a permit ... Western Hognose Snake (Heterodon nasicus)",
           "note": "Massachusetts answers the two hognose species differently, and the common name hides it. The colubrid list clears the Western Hognose Snake, Heterodon nasicus, by name and by name only, so the ordinary pet-trade hognose is exempt. The eastern hognose, Heterodon platirhinos, is a Massachusetts species of special concern on the 321 CMR 10.90 list, which makes it categorically non-exempt under 9.01(3)(c) and puts it in the permit tier that MassWildlife says is not issued for pets. Both animals are IUCN least concern, so this split comes entirely from the state list.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "conditional",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03, § 001.03A4",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Both Nebraska hognose species are on the three-per-species list at § 001.03A4, the plains hognose Heterodon nasicus and the eastern hognose H. platirhinos. That is unusually even-handed: most states on this map treat the two differently, because the eastern is the one that tends to be listed. Nebraska caps them identically. The route that matters for a pet is § 001.03A2: an animal legally bought or consigned from outside Nebraska may be possessed without regard to numbers, provided the keeper can produce proof of lawful acquisition, a bill of sale or a consignment record. So the cap is on collecting, and the receipt is what lifts it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14561,6 +14711,14 @@
           "quote": "List of Birds. (a) The following groups of birds are prohibited without a permit: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Migratory birds listed in the Code of Federal Regulations, 50 CFR 10.13. 3. Any other bird native to the United States and Canada. (b) Except for species listed in 321 CMR 9.01(11)(a), the birds or groups of birds may be kept without a permit: ... 6. Psittacidae (parrots and their allies)",
           "note": "The family exemption for Psittacidae is expressly subject to 9.01(11)(a), and clause 1 pulls out anything categorically non-exempt under 9.01(3). Psittacus erithacus is assessed by the IUCN as endangered, so it falls inside 9.01(3)(b) and outside the parrot clearance. This is the clearest illustration on this map of why the categorical bar has to be read before the group listing: on the group listing alone an African grey is an ordinary pet parrot in Massachusetts, and it is not. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8, definitions; § 001.08A",
+          "quote": "Cage and Aviary Birds - Means those captive-reared birds, not native to Nebraska, such as parrots, exotic finches, and canaries, which are adapted to live and breed in a cage. For purposes of this regulation, the monk parakeet (Myiopsitta monachus) is not a cage and aviary bird.",
+          "note": "Cleared by the last line of the importation list, \"All Cage and Aviary Birds\", which the chapter defines as captive-reared birds not native to Nebraska such as parrots, exotic finches and canaries. The African grey is squarely inside that. The definition also carries the state's one carve-out, for the monk parakeet, so the sentence that clears this bird is the same sentence that bans that one. Nebraska adds nothing to the federal position, so the constraint that actually bites is CITES Appendix I and the Wild Bird Conservation Act, which together mean a lawfully sold bird is captive-bred with paperwork.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14916,6 +15074,14 @@
           "quote": "Species means an individual or individuals of any distinct non-domestic vertebrate animal population whose members interbreed when mature or are self-perpetuating through the production of viable offspring and can include any subspecies or variety of vertebrate animal.",
           "note": "Massachusetts is a closed-list state, so the question worth asking first is whether the list applies at all, and for the giant African millipede it does not. M.G.L. c. 131, § 23 reaches \"fish, birds, mammals, reptiles, or amphibians\", and 321 CMR 9.01(2) defines the species the exemption list is made of as vertebrate populations. A terrestrial arthropod is outside the licensing scheme entirely rather than unlisted within it, which is a different answer from the one the closed list gives a mammal nobody put on it.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. §§ 37-247, 37-477(1); 166 NAC 8 § 001.01B",
+          "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
+          "note": "Nebraska defines wildlife broadly enough to include the giant African millipede, since § 37-247 reaches \"any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate\". What it does not do is regulate one. The captivity prohibition at § 37-477(1) and at 166 NAC 8 § 001.01B is written about wild birds, wild mammals, nongame species in need of conservation and listed species, none of which is an arthropod; 166 NAC 10 covers only reptiles and amphibians; and the importation list at § 001.08A contains nothing but mammals and birds. The one loose end is that the list is headed \"the following wildlife may be imported\" and wildlife on the statutory definition includes arthropods, so a very literal reading of that heading would bar importing a tarantula. Nothing in the chapter turns that heading into a prohibition, and every operative sentence in it is about birds and mammals. The restriction that does exist for this animal is federal: USDA APHIS treats it as a plant pest at the border.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15097,10 +15263,11 @@
         },
         "NE": {
           "status": "legal",
-          "sourceId": "ne-163-nac-4-008",
-          "cite": "163 NAC ch. 4, § 008",
-          "note": "Nebraska's captive wildlife rule exempts common non-dangerous exotic reptiles from its permit system; corn snakes are named as an example of a legal-to-own species in Game and Parks guidance. Corn snake is not Nebraska native.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Pantherophis guttatus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list. The distinction is real rather than semantic here. Nebraska's ratsnakes, the Great Plains ratsnake P. emoryi, the western black ratsnake P. obsoleta and the western fox snake P. ramspotti, are all on the three-per-species collecting list, and the pet corn snake is a southeastern species that is none of them.",
+          "verifiedOn": "2026-09-05"
         },
         "NH": {
           "status": "legal",
@@ -15626,6 +15793,14 @@
           "quote": "Snakes of the family Colubridae, as follows: ... Garter and Ribbon Snakes (Thamnophis spp.) ... Kingsnakes and Milk Snakes (Lampropeltis spp.) ... North American Ratsnakes (Pantherophis spp.) except the Black Ratsnake (Pantherophis alleghaniensis other than albinistic and leucistic individuals) which requires a permit ... Western Hognose Snake (Heterodon nasicus)",
           "note": "Lampropeltis is cleared as a genus, \"Kingsnakes and Milk Snakes (Lampropeltis spp.)\", with no species carved out and no cap. Massachusetts also allows taking two milksnakes from the wild as personal pets under 321 CMR 3.05, which cannot then be sold, bartered or exchanged, so the acquisition route matters more here than the possession rule.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "conditional",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03, § 001.03A4",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "The species named on the three-per-species list is the western milksnake, Lampropeltis gentilis, which is the Nebraska animal and which was split out of Lampropeltis triangulum in 2014. An eastern milksnake, L. triangulum proper, is not native to Nebraska and so falls outside 166 NAC 10 entirely. Which animal a keeper actually has therefore decides whether the cap applies at all, and a pet-trade \"milk snake\" can be either. The route that matters for a pet is § 001.03A2: an animal legally bought or consigned from outside Nebraska may be possessed without regard to numbers, provided the keeper can produce proof of lawful acquisition, a bill of sale or a consignment record. So the cap is on collecting, and the receipt is what lifts it.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/milk-snake-legal-guide/"
@@ -15826,10 +16001,11 @@
         },
         "NE": {
           "status": "legal",
-          "sourceId": "ne-163-nac-4-008",
-          "cite": "163 NAC ch. 4, § 008",
-          "note": "Nebraska's captive wildlife rule exempts common non-dangerous exotic reptiles, the same framework that clears corn snake. Rosy boa is not Nebraska native.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Lichanura trivirgata is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         },
         "NH": {
           "status": "legal",
@@ -16264,6 +16440,14 @@
           "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
           "note": "Connecticut regulates rodents the opposite way round from most states: rather than naming the ones it bars, it puts the whole order Rodentia in Category Two and then excepts nine, the guinea pig, gerbil, chinchilla, rat, mouse, hamster, dwarf hamsters, Patagonian mara and American beaver. No squirrel is among them. Connecticut has its own native southern flying squirrel, which would otherwise be a Category Three native species; the rodent entry takes precedence, because Category Three is defined as applying only to an animal that is not already Category One, Two or Four. Subsection (b)(3) allows possession of a Category Two animal only by a vet treating it, a municipal park, zoo, marine mammal park, aquarium, nature centre, museum, exhibitor, laboratory or research facility. There is no private permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "permit",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8 § 001.01B, § 001.03A; Neb. Rev. Stat. § 37-479",
+          "quote": "It shall be unlawful for any person or persons to retain any wild birds or wild mammals (as defined in Nebraska revised statute 37-245 and 37-246) in captivity except the following species may be kept under authority of a Captive Wildlife Permit, a Controlled Shooting Area Permit, a Rehabilitation Permit or a Scientific Collectors Permit, issued by the Nebraska Game and Parks Commission ... Badger ... Beaver ... Bobcat* ... Cottontail rabbit ... Squirrel - Fox, Gray, Flying (Glaucomys volans) ...",
+          "note": "The southern flying squirrel, Glaucomys volans, is named on the § 001.01B list, so unlike the prairie dog it has a route: a Captive Wildlife Permit, expiring 31 December of the year issued, with an annual report due by 15 January and a fee of not more than $30 under § 37-479. Two conditions bite harder than the fee. § 001.01D says a Captive Wildlife Permit shall not be issued for an animal taken or removed from the wild, and § 001.02A requires proof the animal came from a licensed nonresident breeder or another permittee, so the paperwork is about provenance rather than about the keeper.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -16641,6 +16825,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The ackie monitor is nonvenomous and is neither a caiman nor a gavial.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Varanus acanthurus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -16870,11 +17062,12 @@
           "verifiedOn": "2026-08-27"
         },
         "NE": {
-          "status": "legal",
-          "sourceId": "ne-captive-wildlife",
-          "cite": "163 Neb. Admin. Code, ch. 4, § 008",
-          "note": "Nebraska allows residents to keep native, non-protected wildlife such as the garter snake within possession limits; the captivity ban in this rule targets wolves, skunks, and the cat and bear families, not common native reptiles.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03, § 001.03A3",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "The common gartersnake, Thamnophis sirtalis, is on the ten-per-species list at § 001.03A3, the more generous of Nebraska's two collecting tiers. Two other Nebraska garter snakes are not there: the plains gartersnake is on the same ten list, but the western terrestrial gartersnake and the western ribbon snake are nongame species in need of conservation at § 001.02, where possession is unlawful without a scientific collection permit. Three garter snakes, two very different answers. The route that matters for a pet is § 001.03A2: an animal legally bought or consigned from outside Nebraska may be possessed without regard to numbers, provided the keeper can produce proof of lawful acquisition, a bill of sale or a consignment record. So the cap is on collecting, and the receipt is what lifts it.",
+          "verifiedOn": "2026-09-05"
         },
         "NH": {
           "status": "legal",
@@ -17271,10 +17464,11 @@
         },
         "NE": {
           "status": "legal",
-          "sourceId": "ne-captive-wildlife",
-          "cite": "163 Neb. Admin. Code, ch. 4, § 008",
-          "note": "Not endangered or threatened, and not one of the specifically prohibited carnivore families; an ordinary exotic pet reptile in Nebraska.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Lampropeltis californiae is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list. The two Nebraska kingsnakes are treated far more strictly than this one: the prairie kingsnake and the speckled kingsnake are both nongame species in need of conservation at 166 NAC 10 § 001.02, where possession without a scientific collection permit is unlawful. The California kingsnake, not being native, is untouched.",
+          "verifiedOn": "2026-09-05"
         },
         "NH": {
           "status": "legal",
@@ -17668,11 +17862,11 @@
         },
         "NE": {
           "status": "legal",
-          "sourceId": "ne-cage-aviary-birds",
-          "cite": "163 Neb. Admin. Code, ch. 4",
-          "quote": "Cage and Aviary Birds - Means those captive-reared birds, not native to Nebraska, such as parrots, exotic finches, and canaries, which are adapted to live and breed in a cage.",
-          "note": "A cockatoo fits Nebraska's cage-and-aviary-bird definition; the one psittacine carved back out of that category is the monk parakeet.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8, definitions; § 001.08A",
+          "quote": "Cage and Aviary Birds - Means those captive-reared birds, not native to Nebraska, such as parrots, exotic finches, and canaries, which are adapted to live and breed in a cage. For purposes of this regulation, the monk parakeet (Myiopsitta monachus) is not a cage and aviary bird.",
+          "note": "Cleared by the last line of the importation list, \"All Cage and Aviary Birds\", which the chapter defines as captive-reared birds not native to Nebraska such as parrots, exotic finches and canaries. A cockatoo is squarely inside that. The definition also carries the state's one carve-out, for the monk parakeet, so the sentence that clears this bird is the same sentence that bans that one. Unlike Massachusetts, Nebraska attaches no conservation-status test to the listing, so the species does not change the answer here.",
+          "verifiedOn": "2026-09-05"
         },
         "NH": {
           "status": "legal",
@@ -18216,6 +18410,14 @@
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
           "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The red-footed tortoise is nonvenomous and is neither a caiman nor a gavial.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Chelonoidis carbonarius is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18369,6 +18571,14 @@
           "cite": "321 CMR 9.01(10)(c)(8)",
           "quote": "The following Agamid Lizards (Agamidae) may be kept without a permit: Dragon Lizards (Amphibolorus spp.) Forest, Garden and Bloodsucker Lizards (Calotes spp.) Sailfin Lizards (Hydrosaurus spp.) Bearded Dragons (Pogona spp.) Water Dragon (Physignathus spp.) Frilled Lizards (Chlamydosaurus spp.) Uromastyx Lizards (Uromastyx spp.)",
           "note": "Named as a genus, \"Bearded Dragons (Pogona spp.)\". Like the iguanids, the agamid entry is a closed list rather than a family clearance, so the naming matters: an agamid outside these seven genera is not exempt. Pogona vitticeps is IUCN least concern.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Pogona vitticeps is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -18524,6 +18734,14 @@
           "quote": "All Geckos (Gekkonidae) may be kept without a permit except for those species categorically non-exempt pursuant to 321 CMR 9.01(3) and the Big Bend Gecko (Coleonyx reticulatus) which require a permit.",
           "note": "Geckos are cleared as a family with one named exception, the Big Bend gecko, plus the categorical bar. Eublepharis macularius is IUCN least concern and appears on no list, so it is exempt. The Big Bend gecko exception is a native-range conservation matter rather than a pet-trade one.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Eublepharis macularius is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18677,6 +18895,14 @@
           "cite": "321 CMR 9.01(3)(b), (10)(c)(6)",
           "quote": "All Geckos (Gekkonidae) may be kept without a permit except for those species categorically non-exempt pursuant to 321 CMR 9.01(3) and the Big Bend Gecko (Coleonyx reticulatus) which require a permit.",
           "note": "The gecko family clearance is expressly subject to 9.01(3), and Correlophus ciliatus is assessed by the IUCN as vulnerable, so it is categorically non-exempt. MassWildlife's own summary phrases the clearance as \"All geckos except rare species and the Big Bend gecko\", which is the same reading. This is the most surprising entry in Massachusetts, because the crested gecko is an ordinary captive-bred pet-shop animal whose entire trade is captive stock, and the rule that catches it turns on the wild population in New Caledonia. The regulation offers no captive-bred exception of the kind it wrote for the chinchilla. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Correlophus ciliatus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -18832,6 +19058,14 @@
           "quote": "All Skinks (Scincidae) except for the following which require a permit: Species categorically non-exempt pursuant to 321 CMR 9.01(3). Florida Sand Skinks (Neoseps spp.) Solomon Island Ground Skink (Tribolonotus spp.)",
           "note": "Skinks are cleared as a family with two named exceptions, neither of which is Tiliqua, and Tiliqua scincoides is IUCN least concern so the categorical bar does not apply. Worth noting that the exempted family includes the Solomon Island prehensile-tailed skink while excluding the Solomon Island ground skink, which is a pair of very similar names on opposite sides of the line.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Tiliqua scincoides is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list. Nebraska's own skinks go the other way: the five-lined and Great Plains skinks are nongame species in need of conservation with no take at all, and the prairie and many-lined skinks are capped at three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18986,6 +19220,14 @@
           "quote": "All true Chameleons (Chamaelenoidae) may be kept without a permit, except species categorically non-exempt pursuant to 321 CMR 9.01(3).",
           "note": "Trioceros jacksonii clears the family listing and is IUCN least concern, so the categorical bar does not apply. Massachusetts has no ecological objection of the kind Hawaii has, where this species is established in the wild and regulated hard for that reason.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Trioceros jacksonii is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19139,6 +19381,14 @@
           "quote": "The following Iguanid Lizards (Iguanidae) may be kept without a permit: ... New World Chameleons (Anolis spp. and Ctenotus spp.) ...",
           "note": "Cleared as a genus under the common name the regulation uses for it, \"New World Chameleons (Anolis spp.)\", which is an old usage worth knowing because searching the rule for \"anole\" finds nothing. MassWildlife's summary spells it out as \"New World chameleons (including green and brown anoles)\". Anolis carolinensis is IUCN least concern.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
+          "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Anolis carolinensis is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list. No Anolis is native to Nebraska, so the whole genus sits outside the chapter.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19286,6 +19536,14 @@
           "quote": "Domestic animals as listed in 321 CMR 9.02(3) shall be exempt from the provisions of M.G.L. c. 131, § 23, and may be possessed, propagated, maintained, imported, bought, sold, or otherwise disposed of ... Any vertebrate taxa not listed in 321 CMR 9.02 shall be presumed to be wild and shall be subject to the provisions of M.G.L. c. 131.",
           "note": "The domestic animal list reads \"Domestic rabbit, including breeds, varieties, and strains derived from the European rabbit (Oryctolagus cuniculus) but not including the European rabbit ferae naturae and not including the so-called 'San Juan' rabbit.\" Massachusetts is the cleanest answer on this map to a question three other states cannot settle: it names the same species Minnesota and Illinois struggle with, and disposes of it by separating the domestic strains from wild-type and San Juan stock in one sentence.",
           "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. §§ 37-246, 37-247",
+          "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
+          "note": "The cottontail, Sylvilagus floridanus, is on the § 001.01B list of native species that need a Captive Wildlife Permit, and the domestic rabbit is not that animal. Oryctolagus cuniculus is not native to Nebraska and has no established free-ranging population here, so it is not a wild mammal, and as a domesticated species it is outside § 37-247 as well. Nebraska is another state where the rabbit question is answered by the animal simply not being the one the law is about.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19431,6 +19689,14 @@
           "cite": "M.G.L. c. 131, § 23; 321 CMR 9.01(2)",
           "quote": "Species means an individual or individuals of any distinct non-domestic vertebrate animal population whose members interbreed when mature or are self-perpetuating through the production of viable offspring and can include any subspecies or variety of vertebrate animal.",
           "note": "Massachusetts is a closed-list state, so the question worth asking first is whether the list applies at all, and for the Madagascar hissing cockroach it does not. M.G.L. c. 131, § 23 reaches \"fish, birds, mammals, reptiles, or amphibians\", and 321 CMR 9.01(2) defines the species the exemption list is made of as vertebrate populations. A terrestrial arthropod is outside the licensing scheme entirely rather than unlisted within it, which is a different answer from the one the closed list gives a mammal nobody put on it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. §§ 37-247, 37-477(1); 166 NAC 8 § 001.01B",
+          "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
+          "note": "Nebraska defines wildlife broadly enough to include the Madagascar hissing cockroach, since § 37-247 reaches \"any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate\". What it does not do is regulate one. The captivity prohibition at § 37-477(1) and at 166 NAC 8 § 001.01B is written about wild birds, wild mammals, nongame species in need of conservation and listed species, none of which is an arthropod; 166 NAC 10 covers only reptiles and amphibians; and the importation list at § 001.08A contains nothing but mammals and birds. The one loose end is that the list is headed \"the following wildlife may be imported\" and wildlife on the statutory definition includes arthropods, so a very literal reading of that heading would bar importing a tarantula. Nothing in the chapter turns that heading into a prohibition, and every operative sentence in it is about birds and mammals. As with the millipede, the real constraint is the USDA permit for interstate movement rather than anything in Nebraska law.",
           "verifiedOn": "2026-09-05"
         }
       }

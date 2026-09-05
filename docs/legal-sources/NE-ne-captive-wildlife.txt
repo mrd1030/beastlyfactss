@@ -1,0 +1,428 @@
+# Nebraska: the title moved, and the definition of "wild mammal" decides everything
+
+sourceId: ne-166-nac-8 / ne-37-477
+jurisdiction: NE
+url: https://rules.nebraska.gov/rules/166/8
+     https://nebraskalegislature.gov/laws/statutes.php?statute=37-477
+fetched: 2026-09-05
+fetch notes: THE TITLE NUMBER CHANGED. What every secondary source still calls 163 NAC ch. 4 is now
+  Title 166, Wildlife Regulations, with captive wildlife as its own Chapter 8. Title 163 is now
+  called ADMINISTRATION. govdocs.nebraska.gov still serves the old R163.0004-2016.pdf over plain
+  HTTP and nothing newer, so it is a trap: it looks official, it is nine years stale, and its
+  numbering no longer exists.
+  rules.nebraska.gov is the live source and needs one fix before it will load. The server sends its
+  leaf certificate without the intermediate, so every client fails with "unable to get local issuer
+  certificate". The cert is a genuine DigiCert one for *.nebraska.gov; complete the chain rather
+  than disabling verification:
+      curl -sSL -o dg2.crt http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt
+      openssl x509 -inform DER -in dg2.crt -out dg2.pem
+      cat /root/.ccr/ca-bundle.crt dg2.pem > ne-ca.pem
+      curl --cacert ne-ca.pem https://rules.nebraska.gov/...
+  The site is a React SPA over a plain JSON API that needs no headers at all:
+      /api/title                       every title, with the database id per titleNumber
+      /api/chapter/GetByTitleId/<id>   every chapter of a title, WITH FULL TEXT in chapterHtml
+  Title 166 is id 254 and Title 164, Fisheries, is id 252. One call returns the whole title.
+  outdoornebraska.gov 403s this container on every path, so the Commission's own PDFs are out.
+
+THE HINGE, and it is a definition rather than a list:
+  Neb. Rev. Stat. §§ 37-245 and 37-246 define wild birds and wild mammals BY GEOGRAPHY, as species
+  "native to, migrating to or through, or having established free-ranging populations in the State
+  of Nebraska". So the captive wildlife scheme reaches Nebraska natives and nothing else. Ask first
+  whether the animal is native here. If it is, 166 NAC 8 § 001.01B applies and the answer is
+  usually no, because that subsection is a prohibition with a closed list of natives as its only
+  exception. If it is not, the permit scheme never reaches it, and the question moves to the
+  IMPORTATION list at § 001.08A, which is also closed.
+
+FOUR RULES, and which reaches what:
+  Neb. Rev. Stat. 37-477(2)  flat statutory ban on wolf, skunk, and ALL of Felidae and Ursidae.
+                             No permit behind it. Exceptions: Felis domesticus, public and
+                             accredited zoos, lynx/bobcat fur producers. Grandfathered 1 Mar 1986.
+  166 NAC 8 § 001.01B        wild birds and wild mammals: prohibited except a listed set of natives
+                             under a Captive Wildlife Permit. Flying squirrel is on it; prairie dog
+                             is not, and there is no route for an animal that is not.
+  166 NAC 8 § 001.08A        closed IMPORTATION list. This is what answers exotic mammals. On it:
+                             chinchilla, degu, gerbil, guinea pig, "Eurasian Hedgehogs", sugar
+                             glider, fox (Vulpes spp.), coatimundi, genet, wallabies, and All Cage
+                             and Aviary Birds. Not on it: capybara, and every felid.
+  166 NAC 10 § 001.03        reptiles and amphibians NATIVE TO NEBRASKA only. Unlawful to possess
+                             except as provided, and the exceptions are four closed lists.
+
+TRAPS:
+  The monk parakeet is banned by a definition, not a list: "For purposes of this regulation, the
+  monk parakeet (Myiopsitta monachus) is not a cage and aviary bird." That one sentence removes it
+  from the only bird entry on the importation list.
+  The hedgehog entry reads "Eurasian Hedgehogs, Erinaceus spp." and the pet is Atelerix albiventris.
+  Recorded unclear. The gerbil entry has the same shape, "Gerbil, Gerbillus spp." against a pet that
+  is Meriones unguiculatus, and is recorded legal, because the common name there includes the pet
+  while "Eurasian" excludes it.
+  A native herp on NONE of the § 001.03A lists has no exception at all, not even the out-of-state
+  purchase route at § 001.03A2, which is expressly limited to the species in A3 and A4. The tiger
+  salamander is the animal this catches on this map.
+  Snapping turtles are not in the wildlife regulations at all. They are at 164 NAC 6 § 003.05 with
+  the fish, and § 003.05B makes it unlawful to sell, offer for sale, trade or barter one.
+
+--- 166 NAC 8, Keeping Wildlife in Captivity, verbatim -------------------------------------
+Chapter 8- Keeping Wildlife in Captivity
+001 The following regulations are prescribed by the Game and Parks Commission, State of Nebraska in accordance with Neb. Rev. Stat. §§ 37-301, 37-308.01, 37-316, 37-412, 37-418, 37-463, 37-465, 37-471, 37-477 through 37-480, 37-483 through 37-485, 37-524, 37-524.01, 37-525, 37-548, 54-2317. For purposes of these regulations, unless stipulated below or context otherwise requires, the definitions found in Chapter 37, sections 202 through 247 of the Game Law, are used.
+In addition to the definitions referred to in Chapter 37, Article 2 R.R.S., the following definitions shall apply for the purposes of section 008.
+Captivity - Means a condition which limits or restricts the free egress or free range of wild birds, wild mammals or wildlife by the use of fences, barriers or restraints.
+Cage and Aviary Birds - Means those captive-reared birds, not native to Nebraska, such as parrots, exotic finches, and canaries, which are adapted to live and breed in a cage. For purposes of this regulation, the monk parakeet (Myiopsitta monachus) is not a cage and aviary bird.
+Hybrid - Means an animal produced by crossing species or subspecies.
+001.01 General Regulations and Policies:
+001.01A The commission may formulate plans for the disposition of wild cervidae found within a captive cervine facility in consultation with the Nebraska Department of Agriculture as provided for in 54-2317.
+001.01B It shall be unlawful for any person or persons to retain any wild birds or wild mammals (as defined in Nebraska revised statute 37-245 and 37-246) in captivity except the following species may be kept under authority of a Captive Wildlife Permit, a Controlled Shooting Area Permit, a Rehabilitation Permit or a Scientific Collectors Permit, issued by the Nebraska Game and Parks Commission or under a captive cervine permit issued by the Nebraska Department of Agriculture, as specified under such permits, or under provisions as provided for in 001.01A, prior to the acquisition of said wild birds or wild mammals (for exception see 001.01C, 001.08C and Chapter 1, 001.02B ). Threatened and endangered species and species in need of conservation may be kept only with special permit provisions.
+Badger - (Taxidea taxus)
+Beaver - (Castor canadensis)
+Bobcat* - (Lynx rufus)
+Cottontail rabbit - (Sylvilagus floridanus)
+Crows - (Corvus brachyrhynchos)
+Deer - White-tailed (Odocoileus virginianus)(see 001.07)
+Mule - (Odocoileus hemionus)( see 001.07)
+Ducks - All wild species protected by Federal Regulations
+Fox-Gray - (Urocyon cinereoargenteus)
+Red - (Vulpes vulpes)
+Geese - All wild species protected by Federal Regulations
+Grouse – Sharptail (Tympanuchus phasianellus)
+Prairie Chicken (Tympanuchus cupido)
+Lynx* - (Lynx canadensis)
+Migratory - All species protected by Migratory Bird Treaty Act
+Mink - (Mustela vison, except mutation)
+Muskrat - (Ondatra zibethica)
+Opossum - (Didelphis virginiana)
+Partridge – Hungarian (Perdix perdix)
+Chukar (Alectoris chukar)
+Pheasant - Ringneck or Common Pheasant (Phasianus colchicus)
+Quail - Bobwhite (Colinus virginianus)
+Raccoon - (Procyon lotor)
+River Otter - (Lutra canadensis)
+Sheep - Bighorn (Ovis canadensis) (see 001.07)
+Squirrel - Fox (Sciurus niger)
+Gray (Sciurus carolinensis)
+Flying (Glaucomys volans)
+Swan - Trumpeter (Cygnus columbianus)
+Tundra (Cygnus buccinator)
+Turkey - All wild species (Meleagris gallopavo subspecies)
+Weasel - long-tailed (Mustela frenata)
+*For commercial purposes only - See section 37-477
+001.01C It shall be unlawful to purchase or possess any species of wild birds or wild mammals protected by these regulations including eggs from these species without a permit, except that species not listed on the permit and otherwise not prohibited by these regulations may be purchased at an auction (as described in 001.04) or other sale provided that the Commission is notified within 10 days of acquisition.
+001.01D Captive Wildlife Permits shall not be issued for wild birds or wild mammals which have been taken or removed from the wild.
+001.01E If an animal held under authority of a grandfather provision escapes from captivity, the permit held by the owner shall be revoked and the animal will be destroyed or otherwise disposed of as determined by a Commission agent.
+001.01F Suspension and Revocation of Permits: It shall be unlawful for wild birds or wild mammals to be kept in captivity unless they are confined in a manner reasonably designed to prevent escape and are given humane treatment, as defined in the USDA Animal and Plant Health Inspection Service, Animal Welfare Act and Animal Welfare Regulations . A copy of the relevant section of the USDA publication will be provided upon request to any person applying to keep wild birds and wild mammals in captivity.
+001.01F1 Upon finding that a permittee has violated any of the standards applicable to the issuance or maintenance of the permits, the Game and Parks Commission shall suspend or revoke the permit.
+001.01F2 Such suspension or revocation shall not take effect until after a notice in writing has been provided to the permittee, and the permittee has been given an opportunity to reply to the notice and to correct the deficiency. Such notice must allow 30 days for reply. If the permittee cannot correct the deficiency within 30 days after the reply deadline, the animals must be moved to an adequate facility.
+001.01F3 Immediate Suspension and/or Revocation of Permit: If conditions under which animals are being kept are inhumane and their survival appears to be in jeopardy, immediate action may be taken. The permittee shall be advised that his permit is immediately revoked. If the permittee wishes to appeal the decision, he/she may request a hearing before the full body of the Commission at their next regular meeting.
+001.02 It shall be unlawful to keep wild birds or wild mammals in captivity except in accordance with section 37-479, 37-524 and in accordance with the following:
+001.02A The applicant must provide proof that the wild birds or wild mammals listed on the application are acquired from a licensed nonresident breeder or captive wildlife permittee or from the owner of a domesticated cervine herd licensed by the Department of Agriculture.
+001.02B Game birds may be obtained and held as specified in (Chapter 1, 001.02B).
+001.02C Fencing of the pasture in which ungulates are to be held must consist of a permanent sheep-tight fence at least ten (10) feet in height and constructed in such a manner as to prohibit escape of captive animals and the possible ingress of wild ungulates.
+001.02D Satisfactory assurances must be provided that the wild birds or wild mammals will not be allowed to increase to levels where overcrowding will occur. This may be accomplished by having the females spayed or the males castrated to prevent reproduction from occurring. When normal reproduction does occur, removal of surplus animals shall be the responsibility of the permit holder. Disposal of the surplus animals shall be accomplished by any of the following means:
+001.02D1 Captured alive and sold to a holder of a valid Captive Wildlife Permit which authorizes the keeping of ungulates in captivity, or, for cervidae only, captured alive and sold to a holder of a Domesticated Cervine Animal Facility Permit issued by the Department of Agriculture.
+001.02D2 Killed under humane conditions.
+001.02D3 Hunted at any time within the confines of a sheep-tight fence as described in 001.02C in accordance with the minimum weapon requirements established for the hunting of free ranging wild ungulates.
+001.02D4 Meat, hide, antlers, horns or other parts may be shipped or disposed of in accordance with sections 37-477, 37-479 and 37-480.
+001.03 Captive Wildlife Permit
+It shall be unlawful:
+001.03A to keep any wild birds or wild mammals in captivity without first obtaining a Captive Wildlife Permit from the Commission, except as provided in (Chapter 1, 001.02B) and (Chapter 8, 001.08C). Application for such permit shall be on a form prescribed by the Commission and contain the name, address, social security number of the individual applying for the permit, as well as the location of facility; numbers of wild birds or wild mammals; source location of wild birds or wild mammals; sex and age of wild birds or wild mammals, if known; disease history, if requested; and purpose of holding wild birds or wild mammals. All Captive Wildlife Permits shall expire December 31 of the year in which issued.
+001.03B to fail to file a report on forms provided by the Commission, with the Game and Parks Commission by Jan. 15 of each year listing the number and kinds of wild birds or wild mammals on hand and the number disposed of during a calendar year.
+001.03C to buy and sell wild birds or wild mammals except that a Captive Wildlife Permit allows the permit holder to possess, raise and sell those species of wild birds or wild mammals specified on the permit that have been acquired without violation of any provision of the laws or regulations.
+001.03D for a person who holds a Captive Wildlife Permit to sell live wild birds or wild mammals to any resident who does not hold a valid Captive Wildlife Permit (See 001.02D1 for exception.) or to a nonresident unless he/she has an appropriate permit from his/her state, if a permit is required by his/her state, except that such wild birds may be sold to a person in charge of an authorized field trial or for purposes of dog training as defined in (Chapter 1, 001.02B).
+001.04 Public Auctions:
+It shall be unlawful:
+001.04A for auction houses dealing in or selling captive wild birds or captive wild mammals not to record name, address, social security number and permit number of both consignor and purchaser of such wild birds or wild mammals. These records must be retained for one year following sale.
+001.04B for any person, including nonresidents, to buy, sell or traffic in wild birds or wild mammals unless the seller possesses a Captive Wildlife Auction Permit and the buyer possesses the appropriate permit (Exception: See 001.01C, 001.02D1), i.e. Captive Wildlife Permit for residents of Nebraska and the appropriate permit from his/her state of residence, if a permit is required by his/her state for nonresidents of Nebraska; except that conducting an auction for meat, hide, antlers, horns or other parts shall be exempt from provisions of this sub-section.
+001.04B1 for any person or entity, to conduct an auction for wild birds or wild mammals unless application has been made and a Captive Wildlife Auction Permit has been issued by the Commission. Such application shall state the applicant’s name, address, social security number, date(s) of auction, species, numbers and ownership of wild birds or wild mammals to be auctioned and location of auction. If said auction is to be a consignment sale, the auction permit holder shall report the numbers and ownership of wild birds or wild mammals auctioned to the Game and Parks Commission within five (5) working days from the close of said auction. Such application shall be accompanied by a fifty dollar application fee and on a form prescribed by the Commission.
+001.04C to sell or offer for sale any endangered or threatened species until a Captive-bred Wildlife Permit or Endangered Species Permit has been obtained from the U.S. Fish and Wildlife Service by all parties involved.
+001.04D to ship or transport any species of wildlife that requires a permit for consignment at an auction, unless such animals are accompanied by the appropriate permit from the state of origin, or when a permit is not required, another document such as a health certificate which gives the state of origin.
+001.04E to handle and process wild birds or wild mammals that require a permit for consignment at an auction. The Game and Parks Commission shall be notified by the permittee within 24 hours of the occurrence of any unexplained diseases or deaths occurring in animals held under a Captive Wildlife Auction Permit.
+001.05 Entry Requirements: All captive wild birds or wild mammals may be legally shipped or transported into the state under the following conditions.
+001.05A Said wild birds or wild mammals are accompanied by sufficient documentation indicating proof that such animals had been legal in state of origin (i.e., license numbers of appropriate state and federal permits).
+001.06 Tag Requirements for Purchase and Sale:
+It shall be unlawful for any person to buy or sell wild birds or wild mammals unless the two part sales tags obtained from the Game and Parks Commission bearing the name and address of the seller and the buyer together with the date, species, numbers and other pertinent data accompanies each transaction and the appropriate completed portion is returned to the Game and Parks Commission. Licensed nonresident breeders must provide an equivalent form.
+001.07 Restricted Species
+001.07A It shall be unlawful, except under provisions of 001.01A, for any person, partnership, association or corporation to import into the state, possess, retain in captivity, or release to the wild any of the species listed below, except that these species may be transported, in direct passage, through Nebraska in accordance with appropriate state and federal regulations.
+001.07A1 Asian Raccoon Dog (Nyctereutes procyonoides) constitutes both economic and ecologic threat.
+001.07A2 White-tailed Deer (Odocoileus virginianus) constitutes both economic and ecologic threat.
+001.07A3 Mule Deer (Odocoileus hemionus) constitutes both economic and ecologic threat.
+001.07A4 Red Deer (Cervus elaphus elaphus), or any of its hybrids constitute ecologic threat.
+001.07A5 Wild Pig (All wild species in the family Suidae, including any Suidae exhibiting the morphological or behavioral characteristics of a wild pig, whether raised in captivity or not, including European wild boar) constitutes both economic and ecologic threat.
+001.07A6 Bighorn and thinhorn sheep (Ovis canadensis and Ovis dalli or any of its subspecies) constitutes both economic and ecologic threat. Unlawful in Banner, Box Butte, Cheyenne, Dawes, Kimball, Morrill, Scotts Bluff, Sheridan and Sioux counties.
+001.07B The following provisions shall apply to grandfathering possession of wild pigs, and mule deer held prior to this action.
+001.07B1 Persons who possess wild pigs on October 30, 1992, may retain these animals and their progeny in captivity. It shall be unlawful to release the parent stock or the progeny to the wild. Escapes must be recaptured or otherwise destroyed within 10 days of escape. If the owner is unable to recapture the escapes, they shall be destroyed by the Game and Parks Commission at the owner’s expense. Immediate notification of escapes must be given to the Game and Parks Commission. It shall be unlawful to sell, barter or give away wild pigs within the state of Nebraska, but they may be sold outside the state of Nebraska.
+001.07B2 Persons who possess mule deer, registered with the Nebraska Department of Agriculture on July 24, 2002, may retain these animals and their progeny in captivity provided said animals are held only upon the property where they were legally held captive prior to July 24, 2002 and upon immediately adjacent additions which total no more than 25% of the original property acreage, and only as long as said animals are owned by the person or persons holding title to said original animals on July 24, 2002. It shall be unlawful to release the parent stock or the progeny to the wild. Escapes must be recaptured or otherwise destroyed within 10 days of escape. If the owner is unable to recapture the escapes, they shall be destroyed by the Game and Parks Commission at the owner’s expense. Immediate notification of escapes must be given to the Game and Parks Commission. It shall be unlawful to sell, barter or give away mule deer within the state of Nebraska, but they may be sold outside the state of Nebraska.
+001.08 Wildlife Allowed to be Imported, Exported, Released or Commercialized
+001.08A Importation: the following wildlife may be imported:
+Alpaca
+Lama pacos
+Blackbuck
+Antilope cericapra
+Camel
+Camelus dromedaries
+Chinchilla
+Chinchilla spp.
+Coatimundi
+Nasua spp.
+Degu
+Octodon spp.
+Eland
+Taurotragus spp.
+Elk
+Cervus elaphus Canadensis
+Fallow deer
+Dama dama
+Fox
+Vulpes spp.
+Genet
+Genetia spp.
+Gerbil
+Gerbillus spp.
+Goat, wild-all
+Capra aegagrus and C. hircus, or Oreamnus americanus
+Guanaco
+Lama guanicoe
+Guinea pig
+Cavia porcellus
+Eurasian Hedgehogs
+Erinaceus spp.
+Jerboa, greater
+Jaculus blandfordi
+Llama
+Lama glama
+Pere David’s deer
+Elaphurus davidianus
+Reindeer
+Rangifer tarandus
+Sheep
+Aoudad
+Bighorn
+Mouflon
+Thinhorn
+Ammotragus lervia
+Ovis candensis
+Ovis Ammon
+Ovis dalli
+Sika deer
+Cervus Nippon
+Sugar Glider(s)
+Petaurus spp.
+Tahr
+Hemitragus spp.
+Vicuna
+Vicugna vicugna
+Wallabies
+Macropus spp. & Petrogale spp.
+Water buffalo
+Bubalus bubalis
+Yak
+Bos grunniens
+All Ratites
+All Waterfowl
+All Peafowl
+All Game Birds
+All Cage and Aviary Birds
+001.08A1 In addition to the wildlife listed in 001.08A, all wildlife immediately destined for reception at an American Zoological Association accredited facility, any facility operated by a city, village, state, or federal agency, a wildlife exhibit licensed by the United States Department of Agriculture, prior to January 1, 2006, or possessed by a circus licensed by the United States Department of Agriculture, or any wildlife transported in direct passage through Nebraska in accordance with appropriate federal and state regulations may be imported.
+001.08B Exportation:
+001.08B1 All legally acquired wildlife may be exported, provided the exportation of reptiles, amphibians, fish, mollusks, and crustaceans is governed by Chapter 10 and 164 NAC-Fisheries Regulations – Chapters 2, 5, and 9 .
+001.08C Release into the wild: the following wildlife may be released into the wild:
+001.08C1 Wildlife which are intentionally or unintentionally captured by legal means may be released.
+001.08C2 Pheasants, quail, partridge and mallards may be released into the wild. All game birds purchased and released must be obtained from a Captive Wildlife Permit holder or licensed nonresident breeder. Persons may hold legally acquired birds for a period not to exceed fourteen (14) days beyond the date of purchase prior to release without a Captive Wildlife Permit. Banding of these birds is required according to provisions of (Chapter 1, 001.02B) and Chapter 15, 001.04B.
+001.08C3 Without the authorization of the Commission, it shall be unlawful to release into the wild any wildlife other than fish, mollusks and crustaceans and those listed in 001.08C2 which has been transported from one location to another over a distance exceeding 100 yards or after such wildlife has been in captivity for a time period exceeding 48 hours.
+001.08C3a Fish, mollusks and crustaceans may be released only as specified in 164 NAC, Fisheries Regulations.
+001.08D Commercial exploitation of wildlife taken from the wild. The following animals taken from the wild in Nebraska may be commercially exploited:
+001.08D1 Furbearing animals legally taken from the wild and possessed which are dead and parts thereof may be commercially exploited.
+001.08D2 Reptiles and amphibians legally taken from the wild may be commercially exploited only as specified in Chapter 10 and 164 NAC- Fisheries Regulations, Chapters 2, 5, and 9.
+001.08D3 Fish, mollusks and crustaceans legally taken from the wild may be commercially exploited only as specified in Chapter 10 and 164 NAC- Fisheries Regulations, Chapters 2, 5, and 9.
+001.08D4 Game animals and upland game birds discarded or found dead may be commercially exploited, only as specified in Chapter 13, 001.01D and 001.02.
+001.08E Nothing in this Part shall be construed to authorize importation, exportation, take from the wild, release or commercialization of any wildlife which is otherwise prohibited or further restricted by federal law, state law, or local ordinance.
+001.08F Species declared by the Commission to be an ecological and economic threat may be further restricted, see 001.07.
+
+--- 166 NAC 10, Nongame Species In Need Of Conservation, verbatim ------------------------
+Chapter 10- Nongame Species In Need Of Conservation
+001 The following regulations are prescribed by the Game and Parks Commission, State of Nebraska in accordance with Neb. Rev. Stat. §§ 37-301, 37-314, 37-4,105, 37-4,106, 37-546 through 37-549, 37-701, and 37-801 through 37-810. For purposes of these regulations, unless context otherwise requires, the definitions found in Chapter 37, sections 202 through 247 of the Game Law, are used.
+001.01 Mammals
+White-tailed jackrabbit - Lepus townsendii
+Black-tailed jackrabbit - Lepus californicus
+001.01A Jackrabbit Hunting Seasons
+001.01A1 Open Season: September 1 through the last day in February.
+001.01A2 Area Open: That area of Nebraska lying west of line extending from the South Dakota-Nebraska border south along U.S. Highway 81 to the Nebraska-Kansas border, except Federal or State Sanctuaries, unless otherwise authorized.
+001.01A3 Hours Open Each Day: 30 minutes before sunrise to sunset.
+001.01A4 Daily Bag Limit: Four (4).
+001.01A5 Possession limit at any time during or after the fourth day: Sixteen (16).
+001.02 Reptile and Amphibian Species in Need of Conservation - The following reptile and amphibian species shall be considered nongame species in need of conservation. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship nongame wildlife in need of conservation unless authorized to do so by the Commission under the authority of a scientific collection permit.
+Species with no take:
+Smallmouthed Salamander
+Ambystoma texanum
+American Toad
+Anaxyrus americanus
+Plains Narrowmouth Toad
+Gastrophryne olivacea
+Common Five-lined Skink
+Plestiodon fasciatus
+Great Plains Skink
+Plestiodon obsoletus
+Sagebrush Lizard
+Sceloporus graciosus
+Slender Glass Lizard
+Ophisaurus attenuatus
+Greater Short-horned Lizard
+Phrynosoma hernandesi
+Western Worm Snake
+Carphophis vermis
+Timber Rattlesnake
+Crotalus horridus
+Prairie Kingsnake
+Lampropeltis calligaster
+Speckled Kingsnake
+Lampropeltis holbrooki
+Glossy Snake
+Arizona elegans
+Smooth Green snake
+Opheodrys vernalis
+Graham’s Crayfish Snake
+Regina grahamii
+Plains Black-headed Snake
+Tantilla nigriceps
+Western Ribbon snake
+Thamnophis proximus
+Red-bellied Snake
+Storeria occipitomaculata S
+Eastern Copperhead
+Agkistrodon contortrix
+Western Terrestrial Gartersnake
+Thamnophis elegans
+Blanding’s Turtle
+Emydoidea blandingii
+Diamondback Water Snake
+Nerodia rhombifer
+001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. No exception to these prohibitions will be provided for export unless granted by the Commission for scientific research or education, or as may be specifically allowed in Commission regulations governing bait dealers or fish dealers as authorized in 37-4,105 and 37-4,106.
+001.03A Exceptions - The following exceptions are provided to the prohibitions outlined in 001.03.
+001.03A1 In-state transport, possession, processing, sale or offer of sale of the following species will be permitted in accordance with 37-4,105 and 37-4,106, and the regulations defined for bait and baitfish species in NAC 164, Fisheries Regulations.
+Bait Species:
+Plains Leopard Frog
+Lithobates blairi
+Northern Leopard Frog
+Lithobates pipiens
+001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.
+001.03A3 Take of individuals from the wild within Nebraska and associated in-state transport, possession, or processing will be permitted with a bag and possession limit of ten (10) individuals per species, or products derived from ten (10) individuals per species.
+Species with Take Up to 10 Individuals:
+Blanchard's Cricket Frog
+Acris blanchardi
+Boreal Chorus Frog
+Pseudacris maculata
+Great Plains Toad
+Anaxyrus cognatus
+Woodhouse’s Toad
+Anaxyrus woodhousii
+Plains Spadefoot
+Spea bombifrons
+Six-lined Racerunner
+Aspidoscelis sexlineata
+Northern Prairie Lizard
+Sceloporus consobrinus
+North American Racer
+Coluber constrictor
+Prairie Rattlesnake
+Crotalus viridis
+Ring-necked Snake
+Diadophis punctatus
+Northern Water Snake
+Nerodia sipedon
+Bullsnake
+Pituophis catenifer
+Plains Gartersnake
+Thamnophis radix
+Common Garter snake
+Thamnophis sirtalis
+Painted Turtle
+Chrysemys picta
+False Map Turtle
+Graptemys pseudogeographica
+001.03A4 Take of individuals from the wild in Nebraska, and associated in-state transport, possession, or processing will be permitted for the following species with a bag and possession limit of three (3) individuals per species, or products derived from three (3) individuals per species.
+Species with Take Up to 3 Individuals:
+Cope's Gray Treefrog
+Hyla chrysoscelis
+Gray Treefrog
+Hyla versicolr
+Northern Prairie Skink
+Plestiodon septentrionalis
+Many-lined Skink
+Plestiodon multivirgatus
+Common Lesser Earless Lizard
+Holbrookia maculata
+Great Plains Rat Snake
+Pantherophis emoryi
+Western Black Ratsnake
+Pantherophis obsoleta
+Western Fox Snake
+Pantherophis ramspotti
+Plains Hog-nosed Snake
+Heterodon nasicus
+Eastern Hog-nosed Snake
+Heterodon platirhinos
+Western Milksnake
+Lampropeltis gentilis
+Coachwhip Snake
+Coluber flagellum
+Dekay’s Brown Snake
+Storeria dekayi
+Lined Snake
+Tropidoclonion lineatum
+Yellow Mud Turtle
+Kinosternon flavescens
+Ornate Box Turtle
+Terrapene ornata
+Smooth Softshell
+Apalone mutica
+Spiny Softshell
+Apalone spinifera
+Red-Eared Slider Turtle
+Trachemys scripta
+001.03A5 Pertaining to the species identified in 001.03, the Commission may permit any act otherwise prohibited by these regulations by issuing a scientific collectors permit for scientific purposes or to enhance the propagation and survival of the affected species.
+001.04 Release of Reptiles and Amphibians - It shall be unlawful to release into the wild any live reptile or amphibian after such animal has been transported from one location to another over a distance exceeding 100 yards without the authorization of the Commission.
+
+--- 164 NAC 6 § 003.05, snapping turtles ------------------------------------------------
+003.05 SNAPPING TURTLES:
+003.05A It shall be unlawful to take snapping turtles except by hand, hand net, hook and line, bow and arrow or gaff.
+003.05B It shall be unlawful to sell, offer for sale, trade or barter for any snapping turtle.
+003.05C In waters located entirely on private land, snapping turtles may also be taken as described in Chapter 4 and with legal traps as described in Chapter 6, 003.05D .
+003.05D Legal trap(s) shall allow turtles to reach the surface to breathe; must be personally checked every 24 hours; and must be tagged with a metal tag listing the owner’s name, address, and fishing permit number or driver’s license number. Traps containing a throat or funnel shall be constructed of netting that is at least four (4) inches square mesh.
+003.05E The take of any turtle(s) exceeding the daily bag limits shall be released immediately.
+
+--- Neb. Rev. Stat. §§ 37-245, 37-246, 37-247 ---------------------------------------------
+37-245.
+Wild birds, defined.
+Wild birds means the species of birds native to, migrating to or through, or having established free-ranging populations in the State of Nebraska except the English sparrow, the European starling, and the common pigeon.
+
+37-246.
+Wild mammals, defined.
+Wild mammals means the species of mammals native to, migrating to or through, or having established free-ranging populations in the State of Nebraska except the fallow deer, the house mouse, the Norway rat, the black rat, the feral domestic dog, and the feral domestic cat.
+
+37-247.
+Wildlife, defined.
+Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.
+
+--- Neb. Rev. Stat. § 37-477 ---------------------------------------------------------------
+37-477.
+Certain animals
+kept in captivity; permit required; exceptions; rules and regulations.
+(1) No person shall keep in captivity in this state any wild
+birds, any wild mammals, any nongame wildlife in need of conservation as determined
+by the commission under section 37-805, or any wildlife determined to be an
+endangered or threatened species under the Endangered Species Act or section 37-806 without first having obtained a permit to do so as provided by section 37-478 or 37-479.
+(2) Except as provided in subsection (3) of this section,
+no person shall keep in captivity in this state any wolf, any skunk, or any
+member of the families Felidae and Ursidae. This subsection shall not apply
+to (a) the species Felis domesticus, (b) any zoo, park, refuge, wildlife area,
+or nature center owned or operated by a city, village, state, or federal agency or any zoo accredited by the Association
+of Zoos and Aquariums or the Zoological Association of America,
+or (c) any person who holds a captive wildlife permit issued pursuant to section 37-479 and who raises Canada Lynx (Lynx canadensis) or bobcats (Lynx rufus)
+solely for the purpose of producing furs for sale to individuals or businesses
+or for the purpose of producing breeding stock for sale to persons engaged
+in fur production.
+(3) Any person legally holding in captivity, on March 1,
+1986, any animal subject to the prohibition contained in subsection (2) of
+this section shall be allowed to keep the animal for the duration of its life.
+Such animal shall not be traded, sold, or otherwise disposed of without written
+permission from the commission.
+(4) The commission shall adopt and promulgate rules and regulations
+governing the purchase, possession, propagation, sale, and barter of wild
+birds, wild mammals, and wildlife in captivity.

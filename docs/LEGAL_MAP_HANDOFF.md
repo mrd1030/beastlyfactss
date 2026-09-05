@@ -8,12 +8,12 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 16 (AZ, CO, CT, DE, HI, IL, MA, MD, MI, MN, NM, NV, OR, PA, TN, TX) |
-| Unread cells | 493 |
-| Cached primary sources | 41 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 17 (AZ, CO, CT, DE, HI, IL, MA, MD, MI, MN, NE, NM, NV, OR, PA, TN, TX) |
+| Unread cells | 460 |
+| Cached primary sources | 42 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
-Oregon, Connecticut, Maryland, Tennessee, Texas and Massachusetts sit on
+Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts and Nebraska sit on
 `claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main once it
 lands.
 
@@ -109,6 +109,15 @@ no rule chapter implements it, and the DNR's own pet-trade page never mentions i
 condition with no visible machinery is still the law, but it is not the same finding as a
 working permit scheme, and the note has to say which one it is.
 
+**A title that got renumbered.** Nebraska moved its Game and Parks wildlife regulations from Title
+163 to Title 166 and gave captive wildlife its own chapter, and Title 163 is now called
+ADMINISTRATION. Three of the four Nebraska sources on this map still cited "163 NAC ch. 4, § 008",
+and the old text is still served over plain HTTP from govdocs.nebraska.gov, where it looks official
+and is nine years stale. The substance mostly survived the move, so nothing was wrong, but the
+citations pointed at a title about something else. This is the same shape as the Illinois problem
+below and worth the same check: before quoting a state regulation that has been on the map a while,
+confirm the title still contains what you think it does.
+
 **A citation that outlived its statute.** Every Illinois entry on the map cited 720 ILCS 585,
 the Dangerous Animals Act. P.A. 98-752 repealed it effective 1 January 2015 and moved it to
 720 ILCS 5/48-10. The substance survived the move, so nothing on the map was wrong, but nine
@@ -123,14 +132,23 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| NE | Nebraska | 33 | 4 sources on file |
 | FL | Florida | 30 | 2 sources on file |
 | NY | New York | 30 | 4 sources on file |
 | GA | Georgia | 29 | 4 sources on file |
 | NYC | New York City | 29 | 1 source on file |
+| NJ | New Jersey | 28 | 3 sources on file |
 
 ## Loose ends
 
+- **Nebraska has one unclear cell and one entry that rests on an absence.** The unclear one is the
+  hedgehog: the importation list at 166 NAC 8 § 001.08A reads "Eurasian Hedgehogs, Erinaceus spp."
+  and the pet is Atelerix albiventris. The vintage argument is real, since Massachusetts still
+  writes the same animal as Erinaceus albiventris, but the word "Eurasian" cuts against it. The
+  entry that rests on an absence is the tiger salamander, recorded banned: 166 NAC 10 § 001.03
+  makes it unlawful to possess any native reptile or amphibian except as provided, the exceptions
+  are four closed lists, and the tiger salamander is on none of them and on no other chapter
+  either. The only visible way out is a taxonomy argument, that Nebraska's animal is the barred
+  tiger salamander and Ambystoma tigrinum sensu stricto is not native there.
 - **Massachusetts has no open cells, and one line of text nobody has drawn.** 321 CMR 9.01(3)(b)
   bars exempting a species "listed in the Red Book(s)" of the IUCN, and M.G.L. c. 131, § 23 says
   "in any category" of the Red Data Books. Neither says whether NEAR THREATENED counts, and two
@@ -220,9 +238,9 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Cockatoo, hedgehog, sugar glider, garter snake and kingsnake are at 51 of 51, and prairie dog,
-ferret and capybara at 50. Then hamster, gerbil, guinea pig, veiled chameleon, chinchilla, fennec
-fox and serval at 49, and Russian tortoise at 48.
+Cockatoo, hedgehog, sugar glider, garter snake and kingsnake are at 51 of 51, and veiled chameleon,
+prairie dog, ferret and capybara at 50. Then Russian tortoise, hamster, gerbil, guinea pig,
+chinchilla, fennec fox and serval at 49.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -264,6 +282,14 @@ Maryland is the only state that answers it by weight: § 10-621(b)(1)(iv) reache
 only "if the hybrid weighs over 30 pounds", with no generation test anywhere in the section. The
 line is drawn on the individual animal rather than its ancestry, which is the one version of
 this rule whose answer could change as a cat grows.
+
+Nebraska is the eleventh Bengal answer and the one with the least written down. Neb. Rev. Stat.
+§ 37-477(2) bans every member of Felidae and excepts "the species Felis domesticus", with no
+generation rule, no weight test and no registry requirement anywhere near it. A late-generation
+Bengal sold as a domestic cat clears it; an early-generation hybrid is not that species. 166 NAC 8
+defines a hybrid as "an animal produced by crossing species or subspecies" and then never uses the
+definition to answer this. Eleven states, eleven approaches, and this is the one where the
+condition is obvious and the threshold is nowhere.
 
 Massachusetts is the tenth Bengal answer and the only one that makes the paperwork part of the
 test rather than evidence of it. M.G.L. c. 131, § 77A prohibits possessing a wild felid hybrid
