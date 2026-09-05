@@ -97,36 +97,36 @@
     "remaining": 0,
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
+      "rabbit": {
+        "checked": 4,
+        "of": 51
+      },
       "hissing-cockroach": {
-        "checked": 3,
+        "checked": 4,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 4,
+        "checked": 5,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 4,
+        "checked": 5,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 4,
+        "checked": 5,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 4,
+        "checked": 5,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 4,
+        "checked": 5,
         "of": 51
       },
       "green-anole": {
-        "checked": 4,
-        "of": 51
-      },
-      "rabbit": {
-        "checked": 4,
+        "checked": 5,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,38 +134,34 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 28,
+        "checked": 29,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 28,
+        "checked": 29,
         "of": 51
       },
       "axolotl": {
-        "checked": 28,
+        "checked": 29,
         "of": 51
       },
       "box-turtle": {
-        "checked": 28,
+        "checked": 29,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 28,
+        "checked": 29,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "sulcata-tortoise": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "hognose-snake": {
-        "checked": 29,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 30,
         "of": 51
       },
@@ -173,88 +169,92 @@
         "checked": 30,
         "of": 51
       },
-      "savannah-monitor": {
+      "tiger-salamander": {
         "checked": 31,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 32,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 31,
+        "checked": 32,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "green-iguana": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "burmese-python": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "degu": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "hamster": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "gerbil": {
-        "checked": 36,
-        "of": 51
-      },
-      "bengal-cat": {
-        "checked": 36,
-        "of": 51
-      },
-      "guinea-pig": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "quaker-parakeet": {
         "checked": 37,
         "of": 51
       },
+      "bengal-cat": {
+        "checked": 37,
+        "of": 51
+      },
+      "guinea-pig": {
+        "checked": 37,
+        "of": 51
+      },
       "veiled-chameleon": {
-        "checked": 39,
-        "of": 51
-      },
-      "ball-python": {
-        "checked": 39,
-        "of": 51
-      },
-      "milk-snake": {
-        "checked": 39,
-        "of": 51
-      },
-      "boa-constrictor": {
         "checked": 40,
         "of": 51
       },
+      "ball-python": {
+        "checked": 40,
+        "of": 51
+      },
+      "milk-snake": {
+        "checked": 40,
+        "of": 51
+      },
+      "boa-constrictor": {
+        "checked": 41,
+        "of": 51
+      },
       "corn-snake": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "chinchilla": {
@@ -262,15 +262,15 @@
         "of": 51
       },
       "fennec-fox": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "serval": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "rosy-boa": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "prairie-dog": {
@@ -419,7 +419,8 @@
     },
     "VT": {
       "name": "Vermont",
-      "level": "state"
+      "level": "state",
+      "scope": "An inverted three-list scheme, now readable in full. 10 V.S.A. App. § 18 and Regulation 881 make it unlawful to bring in or possess any live wild animal without a permit unless the species is on the Domestic, Unrestricted, or Domestic Pet list, and the Unrestricted list closes by saying a species on none of the lists is considered Restricted. The Restricted list is the appendix the Unrestricted list keeps pointing at, clawing families back species by species. What makes the scheme bite is Regulation 881's limit on the permit itself: the Commissioner shall not issue one for keeping a wild animal in captivity except for bona fide scientific or educational purposes, so restricted means no pet, not extra paperwork. The 2010 Domestic Species List is the one piece still unread, because its text is embedded as glyph outlines and cannot be extracted here; it is what the remaining parrot and rabbit cells depend on."
     },
     "UT": {
       "name": "Utah",
@@ -1188,6 +1189,16 @@
       "title": "Hawaii Administrative Rules Chapter 4-71, Non-Domestic Animal Import Rules, § 4-71-2 definitions and § 4-71-6.5 permitted introductions",
       "url": "https://dab.hawaii.gov/wp-content/uploads/2019/02/Chap.-4-71-HAR-Non-Domestic-Animal-Import-Rules-1.pdf",
       "note": "The rule text the three species lists hang off, and the part that explains why Hawaii answers differently from everywhere else. Two things matter. § 4-71-6.5 allows introduction only for animals on the conditionally approved or restricted lists, which is what makes an unlisted animal barred by default rather than unregulated. And § 4-71-2 defines a set of domestic animals, the European rabbit among them, then says that as used in the chapter the word animal means non-domestic animal, so the lists never reach those species at all."
+    },
+    "vt-unrestricted-list": {
+      "title": "Vermont Fish and Wildlife Department, Unrestricted Wild Animal List, July 2025",
+      "url": "https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Unrestricted_Wild_Animals_List.pdf",
+      "note": "The list the whole Vermont answer turns on, and the one earlier research could not obtain. Anything on it may be kept with no permit. Its closing line is the important part: species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted, which makes Vermont an inverted-list state like Hawaii. Several entries are marked Captive Bred Only, which is a real condition rather than a note. The site refuses automated requests without a User-Agent header."
+    },
+    "vt-restricted-list": {
+      "title": "Vermont Fish and Wildlife Department, Restricted Wild Animal List, July 2025",
+      "url": "https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Restricted_Wild%20Animals_List.pdf",
+      "note": "The appendix the Unrestricted list keeps pointing at. Headed: species below are exceptions to Unrestricted Wild Animal List status and require an importation and possession permit. It matters because several families are unrestricted as a whole and then clawed back species by species here, which is how Vermont ends up allowing a ball python and not a Burmese, a California kingsnake and not an eastern milk snake."
     }
   },
   "animals": {
@@ -1386,10 +1397,12 @@
           "verifiedOn": "2026-08-04"
         },
         "VT": {
-          "status": "unclear",
-          "sourceId": "vt-reg-881",
-          "note": "Vermont is a closed-list state and the Unrestricted Wild Animals List is held on the department website rather than in the regulation. Without it the group cannot be determined, and the default is that a permit is needed and is issued only for scientific or educational purposes.",
-          "verifiedOn": "2026-08-04"
+          "status": "conditional",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Erinaceomorpha | Erinaceidae | Atelerix | albiventris | African pygmy hedgehog (U.S. Captive Bred Only)",
+          "note": "Resolved. The previous entry was left unclear because the Unrestricted list could not be obtained; it is now in hand and the African pygmy hedgehog is on it by name. The condition is the U.S. Captive Bred Only marker, which requires a statement of origin or a certificate of veterinary inspection identifying the business of origin. A wild-caught or foreign-bred hedgehog does not qualify.",
+          "verifiedOn": "2026-09-05"
         },
         "UT": {
           "status": "legal",
@@ -2154,10 +2167,12 @@
           "verifiedOn": "2026-08-04"
         },
         "VT": {
-          "status": "unclear",
-          "sourceId": "vt-reg-881",
-          "note": "Same gap. Secondary sources openly disagree on whether Vermont requires a permit for sugar gliders, which is itself a reason not to assert one.",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Diprotodontia | Phalangeriformes | Petauridae | Petaurus | breviceps | Sugar glider",
+          "note": "Resolved. Named to the species on the Unrestricted list with no captive bred condition attached, so no permit is needed. Secondary sources disagreed on this and the list settles it.",
+          "verifiedOn": "2026-09-05"
         },
         "UT": {
           "status": "legal",
@@ -2640,6 +2655,14 @@
           "quote": "Unless otherwise provided in this section or the act, it is unlawful for a person to import, possess, sell, offer for sale or release within this Commonwealth the following wild animals or wild birds or the eggs of the birds or a crossbreed or hybrid of the wild animals or wild birds, which are similar in appearance",
           "note": "The golden hamster appears in none of the eleven categories the Game Commission prohibits, which run to cats, canids, bears, raccoons, nutria, skunks, primates, listed species, the monk parakeet, and wildlife taken from the wild or captive bred out of state. Read literally, § 137.1(a)(11) bars possessing any wildlife captive bred in another state, and 34 Pa.C.S. § 102 defines wild animals as every mammal except horses, cattle, sheep, goats and pigs, so the text reaches far wider than the Game Commission applies it. The Commission draws its line at undomesticated species, which is why hedgehogs and sugar gliders are pursued and long domesticated pets are not.",
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Rodentia | Myomorpha | Cricetidae | Mesocricetus | all species | Hamsters",
+          "note": "Named at genus level, and the list separately covers Cricetus and the dwarf hamsters in Phodopus, so every hamster in the pet trade is unrestricted and needs no permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -2917,6 +2940,14 @@
           "cite": "58 Pa. Code § 137.1(a)",
           "quote": "Unless otherwise provided in this section or the act, it is unlawful for a person to import, possess, sell, offer for sale or release within this Commonwealth the following wild animals or wild birds or the eggs of the birds or a crossbreed or hybrid of the wild animals or wild birds, which are similar in appearance",
           "note": "The Mongolian gerbil appears in none of the eleven categories the Game Commission prohibits, which run to cats, canids, bears, raccoons, nutria, skunks, primates, listed species, the monk parakeet, and wildlife taken from the wild or captive bred out of state. Read literally, § 137.1(a)(11) bars possessing any wildlife captive bred in another state, and 34 Pa.C.S. § 102 defines wild animals as every mammal except horses, cattle, sheep, goats and pigs, so the text reaches far wider than the Game Commission applies it. The Commission draws its line at undomesticated species, which is why hedgehogs and sugar gliders are pursued and long domesticated pets are not.",
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Rodentia | Myomorpha | Muridae | Meriones | unguiculatus | Gerbils",
+          "note": "Named to the species, which matters because the list also carries Gerbillus and Gerbillurus under the same common name and the pet gerbil is neither of those. Meriones unguiculatus is the one on the shelf.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3526,6 +3557,14 @@
           "note": "The Large Carnivore Act runs on a closed list, and the drafters showed how they expand it: they wrote leopard and then spelled out that snow leopards and clouded leopards count. The Asian leopard cat behind the Bengal is Prionailurus bengalensis, a small Asian cat that is not a leopard and is not one of the animals they chose to name. The hybrid clause reaches a cross with such a cat, meaning one of the listed seven, so it does not catch this cross either. Nothing else in Michigan names domestic cat hybrids.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "conditional",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Carnivora | Feliformia | Felidae | All wild-domestic hybrid cats of F4 generation or greater",
+          "note": "Vermont draws the line by generation, which is unusually precise. An F4 or later Bengal is unrestricted. An earlier generation animal is on no list and therefore restricted, and the permit that would cover it is not issued for pet keeping. Ask the breeder for the filial generation before you buy, because it is the whole answer here.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -3832,6 +3871,14 @@
           "note": "The veiled chameleon is an Arabian species and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Iguania | Chamaelonidae | all species | Chameleons",
+          "note": "The whole family is unrestricted, so no chameleon needs a permit in Vermont.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4104,6 +4151,14 @@
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "The Russian tortoise is Central Asian and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "conditional",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Testudines | Testudinidae | Testudo/Agrionemys | horsfieldii | Russian tortoise (Captive Bred Only)",
+          "note": "Named to the species and unrestricted, but the Captive Bred Only marker is a real condition rather than a footnote. The list requires captive bred animals to arrive with a statement of origin or a certificate of veterinary inspection identifying the business of origin and the number of animals imported.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4410,6 +4465,14 @@
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "The ball python is West African and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Serpentes | Boidae | All species of boas and pythons, except those listed in Appendix that require an importation and possession",
+          "note": "Boas and pythons are unrestricted as a group, and the Restricted list claws back eleven of them. The ball python is not among them.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -4729,6 +4792,14 @@
           "note": "The boa constrictor is a Central and South American species and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Serpentes | Boidae | All species of boas and pythons, except those listed in Appendix that require an importation and possession",
+          "note": "Not among the eleven boids clawed back on the Restricted list, which name the anacondas, the large Python species and a handful of sand boas and Australasian pythons.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -4971,6 +5042,14 @@
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "A tarantula is not a reptile or amphibian, so the herp order does not reach it, and it is not a cat, a bear or native game, so neither the Large Carnivore Act nor the captive game permit reaches it either. Michigan regulates terrestrial invertebrates through its invasive species list rather than any pet law, and no common pet invertebrate is on it.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "All species of Invertebrates, except those listed in Appendix that require an importation and possession permit. Note: Importation of any invertebrate species also requires compliance with USDA regulations.",
+          "note": "A tarantula is covered by the blanket invertebrate entry, and the Restricted list claws back no terrestrial invertebrate at all. The USDA condition attaches to importing rather than to keeping.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5217,6 +5296,14 @@
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "The emperor scorpion is not a reptile or amphibian, so the herp order does not reach it, and it is not a cat, a bear or native game, so neither the Large Carnivore Act nor the captive game permit reaches it either. Michigan regulates terrestrial invertebrates through its invasive species list rather than any pet law, and no common pet invertebrate is on it.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "All species of Invertebrates, except those listed in Appendix that require an importation and possession permit. Note: Importation of any invertebrate species also requires compliance with USDA regulations.",
+          "note": "The emperor scorpion is covered by the blanket invertebrate entry, and the Restricted list claws back no terrestrial invertebrate at all. The USDA condition attaches to importing rather than to keeping.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5494,6 +5581,14 @@
           "note": "The Argentine black and white tegu is South American and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Autarchoglossa | Teiidae | all species | Tegus and whiptails",
+          "note": "The whole family is unrestricted with no clawback, which makes Vermont notably more permissive on tegus than Florida.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5751,6 +5846,14 @@
           "note": "The savannah monitor is African and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Autarchoglossa | Varanidae | Varanus | exanthematicus | Savannah/Bosc's monitor",
+          "note": "Monitors are handled the other way round from most families here: only four Varanus are unrestricted and the savannah is one of them by name. Any monitor not on that short list is restricted.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -5911,12 +6014,13 @@
           "verifiedOn": "2026-08-04"
         },
         "VT": {
-          "status": "unclear",
-          "sourceId": "vt-reg-881",
-          "verifiedOn": "2026-08-04",
-          "cite": "10 V.S.A. § 4709, Reg. 881",
-          "quote": "the Commissioner shall not issue a permit for the keeping or possession of any wild animal in captivity",
-          "note": "Vermont bars bringing in, transporting or possessing any live wild bird or animal without authorisation, and the regulation then says the Commissioner shall not issue a permit for keeping a wild animal in captivity. Whether a captive bred prairie dog counts as a wild animal for that purpose is not settled in the text, which is why this reads unclear rather than banned."
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The prairie dog is on neither the Unrestricted nor the Restricted list, and Vermont treats absence as a restriction. The rodents it does allow are a specific set: guinea pigs, chinchillas, agoutis, degus, hamsters, gerbils, spiny mice, kangaroo rats and domesticated mice and rats. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in. Resolved from a previous unclear entry now that the list is in hand.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         },
         "DE": {
           "status": "banned",
@@ -6302,12 +6406,13 @@
           "verifiedOn": "2026-08-04"
         },
         "VT": {
-          "status": "unclear",
-          "sourceId": "vt-reg-881",
-          "verifiedOn": "2026-08-04",
-          "cite": "10 V.S.A. § 4709, Reg. 881",
-          "quote": "the Commissioner shall not issue a permit for the keeping or possession of any wild animal in captivity",
-          "note": "Same unresolved question as the prairie dog. The prohibition is broad and the permit route is closed by the regulation, but the text does not say whether captive bred stock of a non-native species is inside or outside it. Ask Fish and Wildlife rather than assuming."
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The capybara is on neither the Unrestricted nor the Restricted list, and Vermont treats absence as a restriction. The rodents it does allow are a specific set: guinea pigs, chinchillas, agoutis, degus, hamsters, gerbils, spiny mice, kangaroo rats and domesticated mice and rats. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in. Resolved from a previous unclear entry now that the list is in hand.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         },
         "DE": {
           "status": "banned",
@@ -6914,6 +7019,15 @@
           "note": "A neat illustration of how Michigan draws its line, because the permit list includes red and gray fox and the fennec fox is neither. Michigan regulates its own wildlife and leaves non-native exotics to the import rules, so a native red fox needs a permit to hold game in captivity and a fennec fox does not. The Large Carnivore Act reaches only the seven named cats and bears. Importing one calls for a certificate of veterinary inspection.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The fennec fox is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. No canid of any kind appears on the Unrestricted list. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/fennec-fox-legal-guide/"
@@ -7305,6 +7419,15 @@
           "note": "The Felidae line is a whole-family prohibition with one exception, house cats, and a serval is not a house cat. The route out is the exotic wildlife possession permit under 34 Pa.C.S. § 2963 and 58 Pa. Code Ch. 147 Subchapter N, and it is written around facilities rather than pet homes: a separate permit for each animal, and a new applicant must document two years of hands-on work with the species at a recognized or approved facility, with a letter of reference from its owner or manager. The 2005 Joint State Government Commission report on exotic wildlife in Pennsylvania lists the serval among the lesser cats given minimum cage specifications, which confirms the Commission treats it as exotic wildlife rather than leaving it to the catch-all.",
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The serval is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. The only cats on the Unrestricted list are wild-domestic hybrids of the fourth generation or later. A serval is not a hybrid. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/serval-legal-guide/"
@@ -7442,10 +7565,12 @@
           "verifiedOn": "2026-08-04"
         },
         "VT": {
-          "status": "unclear",
-          "sourceId": "vt-reg-881",
-          "note": "Not resolvable without the Unrestricted list.",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Rodentia | Hystricomorpha | Chinchillidae | Chinchilla | all species | Chinchillas",
+          "note": "Resolved. Named at genus level on the Unrestricted list, so no permit is needed.",
+          "verifiedOn": "2026-09-05"
         },
         "TN": {
           "status": "legal",
@@ -7931,6 +8056,14 @@
           "quote": "Unless otherwise provided in this section or the act, it is unlawful for a person to import, possess, sell, offer for sale or release within this Commonwealth the following wild animals or wild birds or the eggs of the birds or a crossbreed or hybrid of the wild animals or wild birds, which are similar in appearance",
           "note": "The guinea pig appears in none of the eleven categories the Game Commission prohibits, which run to cats, canids, bears, raccoons, nutria, skunks, primates, listed species, the monk parakeet, and wildlife taken from the wild or captive bred out of state. Read literally, § 137.1(a)(11) bars possessing any wildlife captive bred in another state, and 34 Pa.C.S. § 102 defines wild animals as every mammal except horses, cattle, sheep, goats and pigs, so the text reaches far wider than the Game Commission applies it. The Commission draws its line at undomesticated species, which is why hedgehogs and sugar gliders are pursued and long domesticated pets are not.",
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Rodentia | Hystricomorpha | Caviidae | Cavia | porcellus | Guinea pig",
+          "note": "Named to the species. No permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8201,6 +8334,15 @@
           "note": "The green iguana is Central and South American and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The green iguana is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. Vermont's Unrestricted list works through the lizard families one at a time, agamids, chameleons, geckos, skinks, teiids, anguids, lacertids, four named monitors and four iguanian families, and Iguanidae is not among them. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -8469,6 +8611,15 @@
           "note": "Not protected, and the only turtle here with an open season. The conditions are specific: the season runs July 15 to September 15, the limit is two a day and four in total, and a fishing license is required to take one. Buying one is not an option, because reptiles and amphibians may not be bought, sold or offered for sale in Michigan, so a snapping turtle has to come from your own lawful take.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The snapping turtle is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. Chelydra is on neither list, so despite being native to Vermont it cannot be kept. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8718,6 +8869,14 @@
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "The tokay gecko is Southeast Asian and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Scleroglossa | Gekkonidae | all species | Geckos",
+          "note": "Covered by the family-wide gecko entry and absent from the Restricted list.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -8974,6 +9133,15 @@
           "quote": "Reptiles and amphibians may not be bought, sold or offered for sale.",
           "note": "The eastern tiger salamander is Michigan native and, unlike the small-mouthed and marbled salamanders, is not on the protected list. So it may be taken with a fishing license, up to ten amphibians in total, but it may not be bought or sold, which rules out a shop or a breeder. Check what you are buying, because the barred tiger salamander, Ambystoma mavortium, is a western species outside this order entirely and is the one usually sold in the trade.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-restricted-list",
+          "cite": "Restricted Wild Animal List, July 2025",
+          "quote": "Amphibians | Caudata | Ambystomatidae | Ambystoma | all species | Mole salamanders",
+          "note": "The whole genus is on the Restricted list, so both the eastern tiger salamander and the barred tiger salamander sold in the trade are caught. Unlike Pennsylvania and Michigan, the species being native or not makes no difference here. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9235,6 +9403,15 @@
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "The Nile monitor is not a Michigan species, so the herp order does not reach it and Michigan itself does not restrict possession. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit. Federal law is the real constraint: this species has been listed as injurious wildlife under the Lacey Act since 2016, which bars importation and interstate transport, so it cannot lawfully cross a state line into Michigan even though keeping one here is unregulated.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The Nile monitor is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. Only four small monitors are unrestricted by name and the Nile is not among them, which is unsurprising given it is the largest of the group. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9514,6 +9691,15 @@
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "The Burmese python is not a Michigan species, so the herp order does not reach it and Michigan itself does not restrict possession. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit. Federal law is the real constraint: this species has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport, so it cannot lawfully cross a state line into Michigan even though keeping one here is unregulated.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-restricted-list",
+          "cite": "Restricted Wild Animal List, July 2025",
+          "quote": "Squamata | Serpentes | Boidae | Python | molurus | Indian/Burmese python",
+          "note": "Named on the Restricted list, which uses the older taxonomy: the Burmese python was Python molurus bivittatus before being raised to Python bivittatus, and the list's common name column says Indian/Burmese outright, so the species is covered. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in. Federal law bars interstate transport of this species anyway, since it has been listed as injurious wildlife under the Lacey Act since 2012.",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9797,6 +9983,14 @@
           "quote": "Game or wild held captive . Game or wildlife held in captivity or captive bred in another state or nation.",
           "note": "The degu is named nowhere in Pennsylvania law. What arguably reaches it is this catch-all, which bars possessing wildlife captive bred in another state, read together with 34 Pa.C.S. § 102, where wild animals means every mammal except horses, cattle, sheep, goats and pigs. That is the same reading the Game Commission uses to ban hedgehogs and sugar gliders, and it is an agency interpretation of a definition rather than a rule anyone wrote about this species. Recorded unclear rather than banned because no text names the animal.",
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Rodentia | Hystricomorpha | Octodontidae | Octodon | all species | Degus",
+          "note": "Named at genus level. Worth contrasting with Colorado, which does require a permit for a degu.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -10035,6 +10229,15 @@
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "The axolotl is Mexican and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit. The answer turns on the species and not the genus, because Michigan's own tiger salamander is covered by this order and may not be bought or sold.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-restricted-list",
+          "cite": "Restricted Wild Animal List, July 2025",
+          "quote": "Amphibians | Caudata | Ambystomatidae | Ambystoma | all species | Mole salamanders",
+          "note": "Salamanders and newts are unrestricted as a group, and then the entire genus Ambystoma is clawed back, which catches the axolotl even though it is a laboratory and pet animal that has not existed in the wild in any meaningful way for decades. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10278,6 +10481,15 @@
           "quote": "Blanding's, spotted, wood, and eastern box turtles; black rat snake, Butler's garter snake, eastern fox snake, copper-bellied water snake, Kirtland's snake, queen snake, smooth green snake, and eastern massasauga rattlesnake; boreal chorus frog, Blanchard's cricket frog, pickerel frog, and Fowler's toad; mudpuppy; small-mouthed salamander, marbled salamander, six-lined racerunner, western lesser siren, northern two-lined salamander, northern dusky salamander, and mink frog; all reptile eggs",
           "note": "The eastern box turtle is on Michigan's protected list, which means it may not be taken or possessed at all except as the DNR Director authorizes, and the Director's authorizations run to scientific and zoological purposes rather than pet keeping. The sale prohibition closes the other route, since reptiles and amphibians may not be bought or sold here. A Terrapene that is not a Michigan native, such as the ornate box turtle, is outside the order because it reaches only a state reptile from the wild.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The box turtle is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. Only three chelonians are unrestricted in Vermont, the southern painted turtle and two tortoises, all captive bred only. Terrapene is on neither list. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10527,6 +10739,15 @@
           "note": "The red-eared slider is native to the Mississippi drainage rather than Michigan, and it is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-restricted-list",
+          "cite": "Restricted Wild Animal List, July 2025",
+          "quote": "Testudines | Emydidae | Trachemys | scripta elegans | Red-eared slider",
+          "note": "Named on the Restricted list to the subspecies, along with the yellow-bellied and Cumberland sliders, so the whole Trachemys scripta complex is caught. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10770,6 +10991,15 @@
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "The sulcata is a Sahelian tortoise and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The sulcata is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. The two tortoises Vermont does allow are the Russian and the red-footed. The sulcata appears on neither list under Centrochelys or its older name Geochelone sulcata. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11015,6 +11245,14 @@
           "quote": "Reptiles and amphibians may not be bought, sold or offered for sale.",
           "note": "The eastern hog-nosed snake is Michigan native and is not on the protected list, so it may be taken, but only on conditions. A fishing license is required, the limit is three a day and six in total across snakes, lizards and turtles combined, and the quoted sale ban means you cannot lawfully buy one in Michigan or sell the one you have. Personal collection is the only lawful route. The western hognose that dominates the pet trade is not a Michigan species at all, so it sits outside this order and is simply legal, which makes the answer depend entirely on which hognose is in the tank.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Serpentes | Colubridae | All species of colubrids, except those listed in Appendix that require an importation and possession permit",
+          "note": "Heterodon appears nowhere on the Restricted list, so both the eastern and the western hognose are unrestricted.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11507,6 +11745,14 @@
           "note": "The giant African millipede is not a reptile or amphibian, so the herp order does not reach it, and it is not a cat, a bear or native game, so neither the Large Carnivore Act nor the captive game permit reaches it either. Michigan regulates terrestrial invertebrates through its invasive species list rather than any pet law, and no common pet invertebrate is on it.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "All species of Invertebrates, except those listed in Appendix that require an importation and possession permit. Note: Importation of any invertebrate species also requires compliance with USDA regulations.",
+          "note": "The giant African millipede is covered by the blanket invertebrate entry, and the Restricted list claws back no terrestrial invertebrate at all. The USDA condition attaches to importing rather than to keeping.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11823,6 +12069,14 @@
           "note": "The corn snake is a southeastern species and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Serpentes | Colubridae | All species of colubrids, except those listed in Appendix that require an importation and possession permit",
+          "note": "Colubrids are unrestricted as a group. The Restricted list reaches the North American ratsnake as Elaphe obsoleta but not the corn snake, which was Elaphe guttata and is now Pantherophis guttatus, so the corn snake stays clear.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/corn-snake-legal-guide/"
@@ -12116,6 +12370,14 @@
           "quote": "Reptiles and amphibians may not be bought, sold or offered for sale.",
           "note": "The eastern milk snake is Michigan native and is not on the protected list, so it may be taken, but only on conditions. A fishing license is required, the limit is three a day and six in total across snakes, lizards and turtles combined, and the quoted sale ban means you cannot lawfully buy one in Michigan or sell the one you have. Personal collection is the only lawful route. Michigan protects the black rat snake and the eastern fox snake but not the milk snake, so this one stays on the takeable side of the line.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "conditional",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Serpentes | Colubridae | Lampropeltis | triangulum traingulum | Eastern milk snake",
+          "note": "The condition is which milk snake. Colubrids are unrestricted as a family, and then the Restricted list claws back the eastern milk snake specifically, Vermont's own native subspecies. The Honduran, Pueblan and Nelson's milk snakes that fill the pet trade are other subspecies of Lampropeltis triangulum and are not named, so they stay unrestricted. The official list misspells the subspecies as traingulum.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -12460,6 +12722,14 @@
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "The rosy boa is a desert species of the American southwest and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Serpentes | Boidae | All species of boas and pythons, except those listed in Appendix that require an importation and possession",
+          "note": "Not among the boids clawed back on the Restricted list.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -12927,6 +13197,15 @@
           "note": "The ackie monitor is Australian and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The ackie monitor is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. Only four monitors are unrestricted by name, the short-tailed pygmy, the savannah, the dwarf and the Timor. Varanus acanthurus is not one of them. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -13277,11 +13556,13 @@
           "verifiedOn": "2026-08-27"
         },
         "VT": {
-          "status": "unclear",
-          "sourceId": "vt-10-app-18",
-          "cite": "10 V.S.A. App. § 18",
-          "note": "Vermont requires an Importation & Possession Permit for any wild animal not on its Unrestricted Wild Animals List. This research could not confirm whether the garter snake appears on that list.",
-          "verifiedOn": "2026-08-27"
+          "status": "permit",
+          "sourceId": "vt-restricted-list",
+          "cite": "Restricted Wild Animal List, July 2025",
+          "quote": "Squamata | Serpentes | Colubridae | Thamnophis | all species | Garter snakes, ribbon snakes",
+          "note": "Resolved from a previous unclear entry now that the lists are in hand. Colubrids are unrestricted as a family and then the entire genus Thamnophis is clawed back on the Restricted list, so every garter snake and ribbon snake is restricted. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         },
         "WA": {
           "status": "legal",
@@ -13659,11 +13940,12 @@
           "verifiedOn": "2026-08-27"
         },
         "VT": {
-          "status": "unclear",
-          "sourceId": "vt-10-app-18",
-          "cite": "10 V.S.A. App. § 18",
-          "note": "Vermont requires an Importation & Possession Permit for any wild animal not on its Unrestricted Wild Animals List. This research could not confirm whether the California kingsnake appears on that list.",
-          "verifiedOn": "2026-08-27"
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Serpentes | Colubridae | All species of colubrids, except those listed in Appendix that require an importation and possession permit",
+          "note": "Resolved. Colubrids are unrestricted as a family, and the only Lampropeltis on the Restricted list is the eastern milk snake subspecies. The California kingsnake is not named, so it is clear.",
+          "verifiedOn": "2026-09-05"
         },
         "WA": {
           "status": "legal",
@@ -14351,6 +14633,14 @@
           "note": "The red-footed tortoise is South American and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "conditional",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Testudines | Testudinidae | Geochelone | carbonaria | Red-footed tortoise (Captive Bred Only)",
+          "note": "Unrestricted under its older name Geochelone carbonaria, now Chelonoidis carbonarius, and subject to the same Captive Bred Only condition, which requires a statement of origin or certificate of veterinary inspection on import. Only three chelonians are on the whole Unrestricted list, so this is a narrow permission.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14387,6 +14677,14 @@
           "cite": "Fisheries Order 224.21",
           "note": "The inland bearded dragon is Australian and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Iguania | Agamidae | all species | Agamas",
+          "note": "The whole agamid family is unrestricted, so the bearded dragon needs no permit.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -14425,6 +14723,14 @@
           "note": "The leopard gecko is a Central and South Asian species and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Scleroglossa | Gekkonidae | all species | Geckos",
+          "note": "The whole family is unrestricted and the Restricted list claws back no gecko, so every pet gecko is clear here.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14461,6 +14767,14 @@
           "cite": "Fisheries Order 224.21",
           "note": "The crested gecko is a New Caledonian species and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Scleroglossa | Gekkonidae | all species | Geckos",
+          "note": "Covered by the family-wide entry, which is the opposite of Hawaii, where the crested gecko falls through the gaps of a species-by-species list and is barred by default.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -14499,6 +14813,14 @@
           "note": "The blue-tongue skink is Australian and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Autarchoglossa | Scincidae | All species of skinks, except those listed in Appendix that require an importation and possession permit",
+          "note": "Skinks are unrestricted as a family with an exception, and the exception is Eumeces, not Tiliqua. The blue-tongue skink is therefore clear.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14536,6 +14858,14 @@
           "note": "Jackson's chameleon is an East African species and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Iguania | Chamaelonidae | all species | Chameleons",
+          "note": "The whole family is unrestricted. A striking contrast with Hawaii, where this species is barred by default despite living wild on the islands.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14572,6 +14902,14 @@
           "cite": "Fisheries Order 224.21",
           "note": "The green anole is a southeastern species and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Squamata | Iguania | Polychrotidae | Anolis | all species | Anoles",
+          "note": "The genus is unrestricted in full.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -14640,6 +14978,14 @@
           "cite": "Fisheries Order 224.21",
           "note": "Not a reptile or amphibian, so the herp order does not reach it, and not a cat, a bear or native game, so the Large Carnivore Act and the captive game permit do not either. Michigan handles invertebrates through its invasive species list rather than any pet law.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "All species of Invertebrates, except those listed in Appendix that require an importation and possession permit. Note: Importation of any invertebrate species also requires compliance with USDA regulations.",
+          "note": "The Madagascar hissing cockroach is covered by the blanket invertebrate entry, and the Restricted list claws back no terrestrial invertebrate at all. The USDA condition attaches to importing rather than to keeping.",
           "verifiedOn": "2026-09-05"
         }
       }

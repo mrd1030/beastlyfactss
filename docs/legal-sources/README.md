@@ -26,6 +26,7 @@ about this species", not to claim a new verification date.
 | `CA-ca-671.txt` | 14 CCR § 671, the CDFW restricted species manual |
 | `VT-vt-unrestricted.txt` | Vermont Unrestricted Wild Animal List, raw |
 | `VT-vt-unrestricted-parsed.txt` | The same list parsed into readable rows. Start here |
+| `VT-vt-restricted-list.txt` | Vermont Restricted Wild Animal List, the appendix the other list points at |
 
 ## Reading the awkward ones
 

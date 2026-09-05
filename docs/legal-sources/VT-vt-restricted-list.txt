@@ -1,0 +1,86 @@
+# Vermont Restricted Wild Animal List, July 2025, parsed into rows
+
+sourceId: vt-restricted-list
+jurisdiction: VT
+url: https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Restricted_Wild%20Animals_List.pdf
+fetched: 2026-09-05
+fetch notes: needs curl -A "Mozilla/5.0". Note the odd path encoding, an underscore
+  after Restricted then a percent-encoded space before Animals. Restricted_Wild_Animals_List.pdf 404s.
+
+Header of the document: "Species below are exceptions to Unrestricted Wild Animal List
+status and require an importation and possession permit".
+
+Read this together with the Unrestricted list. Several families are unrestricted as a
+whole and then clawed back species by species here, which is how Vermont allows a ball
+python but not a Burmese, a California kingsnake but not an eastern milk snake, and
+every gecko but no Ambystoma salamander.
+
+Regulation 881 is what makes restricted bite: the Commissioner shall not issue a permit
+for keeping or possessing a wild animal in captivity except for bona fide scientific or
+educational purposes. Restricted therefore means no pet, not extra paperwork.
+
+STILL UNREAD: the Domestic Species List (August 2010). Its text is embedded as glyph
+outlines and could not be extracted by any method tried here, including WebFetch. The
+quaker parakeet, African grey, cockatoo and rabbit cells for Vermont depend on it.
+
+----------------------------------------------------------------------
+
+  Amphibians* | Caudata | Ambystomatidae | Ambystoma | allspecies | Molesalamanders
+  Amphibians | Caudata | Cryptobranchidae | Cryptobranchus | alleganiensis | Hellbenders
+  Amphibians | Caudata | Ambystomatidae | Dicamptodon | allspecies | Americangiantsalamanders
+  Amphibians | Caudata | Hynobiidae | Ranodon | allspecies | Asiansalamanders
+  Amphibians | Caudata | Plethodontidae | Desmognathus | fuscus | Northernduskysalamanders
+  Amphibians | Caudata | Plethodontidae | Eurycea | allspecies | Two-linedsalamanders
+  Amphibians | Caudata | Plethodontidae | Gyrinophilus | porphyriticus | Springsalamanders
+  Amphibians | Caudata | Plethodontidae | Hemidactylium | scutatum | Four-toedsalamanders
+  Amphibians | Caudata | Plethodontidae | Plethodon | allspecies | Lunglesssalamanders
+  Amphibians | Caudata | Proteidae | Necturus | maculosus | Mudpuppy
+  Amphibians | Caudata | Salamandridae | Cynops | cyanurus | Bluetailedfirebellynewt
+  Amphibians | Caudata | Salamandridae | Cynops | orphicus | Dayangnewt
+  Amphibians | Caudata | Salamandridae | Cynops | chenggongensis | Chenggongfirebellynewt
+  Amphibians | Caudata | Salamandridae | Cynops | wolterstorffi | Wolterstorff'snewt
+  Amphibians | Caudata | Salamandridae | Euproctus | allspecies | Brooksalamanders
+  Amphibians | Caudata | Salamandridae | Mertensiella | allspecies | Spine-tailedsalamanders
+  Amphibians | Caudata | Salamandridae | Notopthalmus | allspecies | Easternnewts
+  Amphibians | Caudata | Salamandridae | Taricha | rivularis | Westernnewts
+  Amphibians | Caudata | Salamandridae | Taricha | torasa | Westernnewts
+  Amphibians | Caudata | Salamandridae | Taricha | granulose | Westernnewts
+  Amphibians | Caudata | Salamandridae | Triturus | allspecies | Alpinenewts
+  Reptiles* | Squamata | Autarchoglossa | Lacertidae | Gallotia | allspecies | Canary Islandlizards
+  Reptiles | Squamata | Autarchoglossa | Lacertidae | Lacerta | monticola | Iberianmountainlizard
+  Reptiles | Squamata | Autarchoglossa | Lacertidae | Adobe UCSLacerta | strigata | Caucasiangreenlizard
+  Reptiles | Squamata | Autarchoglossa | Lacertidae | Lacerta | vivipara | Viviparouslizard
+  Reptiles | Squamata | Autarchoglossa | Scincidae | Eumeces | allspecies | Skinks
+  Reptiles | Squamata | Serpentes | Boidae | Apodora | papuana | Water/Papuanpython
+  Reptiles | Squamata | Serpentes | Boidae | Eunectes | allspecies | Anacondas
+  Reptiles | Squamata | Serpentes | Boidae | Eryx | johnii | Indiansandboa
+  Reptiles | Squamata | Serpentes | Boidae | Gongylophis | conicus | Russell'ssandboa
+  Reptiles | Squamata | Serpentes | Boidae | Liasis | olivaceous | Olivepython
+  Reptiles | Squamata | Serpentes | Boidae | Morelia | amethystina | Animal Group | Order | Suborder | Family | Genus | Species | Common Name\s\
+  Reptiles | Squamata | Serpentes | Boidae | Morelia | oenpelliensis | Oenpellipython
+  Reptiles | Squamata | Serpentes | Boidae | Python | molurus | Indian/Burmesepython
+  Reptiles | Squamata | Serpentes | Boidae | Python | reticulatus | Reticulatedpython
+  Reptiles | Squamata | Serpentes | Boidae | Python | natalensis | Southern Africanpython
+  Reptiles | Squamata | Serpentes | Boidae | Python | sebae | Northern Africapython
+  Reptiles | Squamata | Serpentes | Colubridae | Boiga | dendrophilia | Mangrovesnake
+  Reptiles | Squamata | Serpentes | Colubridae | Boiga | irregularis | Browntreesnake
+  Reptiles | Squamata | Serpentes | Colubridae | Coluber | allspecies | Racers
+  Reptiles | Squamata | Serpentes | Colubridae | Diadophis | allspecies | Ring-neckedsnakes
+  Reptiles | Squamata | Serpentes | Colubridae | Dispholidus | typus | Boomslang
+  Reptiles | Squamata | Serpentes | Colubridae | Elaphe | obsoleta | N.American/Easternratsnakes
+  Reptiles | Squamata | Serpentes | Colubridae | Elapomorphus | allspecies | Diademsnakes
+  Reptiles | Squamata | Serpentes | Colubridae | Hydrodynastes | gigas | Falsewatercobra
+  Reptiles | Squamata | Serpentes | Colubridae | Lampropeltis | triangulumtraingulum | Easternmilksnake
+  Reptiles | Squamata | Serpentes | Colubridae | Nerodia | sipedon | Northernwatersnake
+  Reptiles | Squamata | Serpentes | Colubridae | Opheodrys | allspecies | Greensnakes
+  Reptiles | Squamata | Serpentes | Colubridae | Rhabdophis | subminiatus | Red-neckedsnakes
+  Reptiles | Squamata | Serpentes | Colubridae | Rhabdophis | tigrinus | Tigerkeelbacksnakes
+  Reptiles | Squamata | Serpentes | Colubridae | Storeria | dekayi | Dekay'sbrownsnakes
+  Reptiles | Squamata | Serpentes | Colubridae | Storeria | occipitomaculata | Red-belliedsnakes
+  Reptiles | Squamata | Serpentes | Colubridae | Tachymenis | allspecies | Falsevipers
+  Reptiles | Squamata | Serpentes | Colubridae | Thamnophis | allspecies | Gartersnakes, ribbonsnakes
+  Reptiles | Squamata | Serpentes | Colubridae | Thelotornis | capensis | Twig/Birdsnake
+  Reptiles | Squamata | Serpentes | Colubridae | Thelotornis | kirtlandi | Bird/Vinesnake
+  Reptiles | Testudines | Emydidae | Trachemys | scriptaelegans | Red-earedslider
+  Reptiles | Testudines | Emydidae | Trachemys | scriptascripta | Yellow-belliedslider
+  Reptiles | Testudines | Emydidae | Trachemys | scriptatroostii | Cumberlandslider | Mussels* | Veneroida | Corbiculidae | Corbicula | allspecies | Asianclams | Mussels | Veneroida | Dreissenidae | Dreissena | polymorpha | Zebramussels | Mussels | Veneroida | Dreissenidae | Dreissena | bugensis | Quaggamussel | Mussels | Unionoida | Margaritiferidae | allspecies | Freshwatermussels | Mussels | Unionoida | Unionidae | allspecies | Animal Group | Order | Suborder | Family | Genus | Species | Common Name\s\ | Crustaceans* | Decapoda | Pleocyemata | Cambaridae | allspecies | crayfish | Crustaceans | Decapoda | Pleocyemata | Astacidae | allspecies | crayfish | Crustaceans | Decapoda | Pleocyemata | Parastacidae | allspecies | crayfish | Crustaceans | Decapoda | Pleocyemata | Varunidae | Eriocheir | allspecies | Chinesemittencrabs | Arachnids* | Araneae | Actinopodidae | Missulena | allspecies | Mousespiders | Arachnids | Araneae | Ctenidae | Phoneutria | allspecies | Wanderingspiders | Arachnids | Araneae | Hexathelidae | Hadronyche | allspecies | Funnelwebspiders | Arachnids | Araneae | Hexathelidae | Atrax | allspecies | Sydneyfunnelwebspiders | Arachnids | Araneae | Sicariidae | Loxusceles | allspecies | Reclusespiders | Arachnids | Araneae | Theridiidae | Lactrodectus | allspecies | Blackwidow/redbackspiders | Arachnids | Araneae | Theridiidae | Tegenaria | agrestis | Hobospider | Arachnids | Araneae | Theridiidae | Cheiracanthium | allspecies | Yellowsac/Longleggedspiders | Arachnids | Scorpiones | Buthidae | Androctonus | allspecies | Fat-tailedscorpions | Arachnids | Scorpiones | Buthidae | Parabuthus | allspecies | Fat-tailedscorpions | Arachnids | Scorpiones | Buthidae | Buthacus | allspecies | Arachnids | Scorpiones | Buthidae | Buthus | allspecies | Arachnids | Scorpiones | Buthidae | Compsobuthus | allspecies | Arachnids | Scorpiones | Buthidae | Hottentota | allspecies | Arachnids | Scorpiones | Buthidae | Mesobuthus | allspecies | Arachnids | Scorpiones | Buthidae | Odontobuthus | allspecies | Arachnids | Scorpiones | Buthidae | Centruroides | allspecies | Barkscorpions | Arachnids | Scorpiones | Buthidae | Leiurus | quinquestriatus | Fivekeeledgoldscorpion | Arachnids | Scorpiones | Hemiscorpiidae | Hemiscorpius | allspecies | Arachnids | Scorpiones | Scorpionidae | Opistopthalmus | glabrifons | Yellowleggedcreepingscorpion | *Taxonomybyanimalgroupsdefinedbythefollowing: | Mammals, Amphibians, Reptiles-Univ.of Michigan Museumof Zoology-Animal Diversity Web\animaldiversity.ummz.umich.edu/site/index.html\ | Birds-Integrated Taxonomic Information System | \http://www.itis.gov/\ | Invertebrates-American Arachnological Society Common Namesof Arachnids2003 | \www.americanarachnology.org/acn5.pdf\ | and Integrated Taxonomic Information System | \http://www.itis.gov/\
