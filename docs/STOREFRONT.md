@@ -134,11 +134,13 @@ uses for likes and comments.
    project's team". So sign-in works for you and fails silently for every real
    buyer. It is also rate limited to a handful of messages an hour, and it locks
    the email templates, which is why the Source tab on the Magic Link template
-   cannot be clicked and the six digit code cannot be enabled.
+   cannot be clicked and the emailed code cannot be enabled.
 
    Point Authentication -> Emails -> SMTP Settings at any SMTP provider and all
    three of those go away at once. Then, optionally, add `{{ .Token }}` to the
-   Magic Link template so the six digit code works alongside the link.
+   Magic Link template so the code works alongside the link. The code's length
+   is a project setting and is not always 6 digits, so the library accepts 6 to
+   10; do not narrow that to whatever length you happen to see.
 
    Until that is done, treat the storefront as testable but not sellable.
 6. **Email sign-in, and why the library takes a pasted link.** The library uses

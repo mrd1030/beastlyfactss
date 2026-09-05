@@ -111,17 +111,17 @@ export default function CarePackageLibrary() {
       // already sent still works.
       const raw = otpError.message || '';
       setError(/rate limit/i.test(raw)
-        ? 'Too many sign-in emails have gone out in the last hour. Wait a little and try again, or paste an earlier sign-in link below if you still have one.'
+        ? 'Too many sign-in emails have gone out in the last hour. Wait a little and try again, or use the code from an earlier email below if you still have one.'
         : raw || 'Could not send that email.');
       setCodeSent(true);
       return;
     }
     setCodeSent(true);
-    setNotice('Check your email. Click the sign-in link, or paste it into the box below if clicking it does not bring you back here.');
+    setNotice('Check your email. Click the sign-in link, or enter the code from it below.');
   };
 
   // Accepts whatever the buyer can actually get out of their email client:
-  // the whole sign-in URL, the bare token from inside it, or a six digit code.
+  // the whole sign-in URL, the bare token from inside it, or the numeric code.
   //
   // The pasted-link path is not a nicety. Clicking the link fails in more ways
   // than it looks: an Android device with an app registered for the Supabase
@@ -132,11 +132,16 @@ export default function CarePackageLibrary() {
   // on the redirect resolving at all.
   //
   // Supabase treats the `token` in that URL as a token_hash, which verifyOtp
-  // accepts directly. A six digit code is the other shape, and it goes through
+  // accepts directly. The numeric code is the other shape, and it goes through
   // the email + token form instead.
+  //
+  // 6 to 10 digits, not 6. The OTP length is a project setting and Supabase
+  // was handing out 8 digit codes here, which a strict 6 digit test rejected
+  // before it ever reached the server. Match the range the setting allows
+  // rather than the length that happened to be default.
   const parseCredential = (raw) => {
     const value = raw.trim();
-    if (/^\d{6}$/.test(value)) return { kind: 'code', token: value };
+    if (/^\d{6,10}$/.test(value)) return { kind: 'code', token: value };
 
     // A full URL, or anything carrying the query string from one.
     const match = value.match(/[?&](?:token_hash|token)=([^&\s]+)/);
@@ -157,7 +162,7 @@ export default function CarePackageLibrary() {
 
     const parsed = parseCredential(code);
     if (!parsed) {
-      setError('That does not look like a sign-in link or a six digit code. Paste the whole link from the email.');
+      setError('That does not look like a sign-in link or a code. Paste the whole link from the email, or just the code.');
       return;
     }
 
@@ -266,7 +271,7 @@ export default function CarePackageLibrary() {
             {codeSent && (
               <form onSubmit={verifyCode} className="mt-4 pt-4 border-t border-border">
                 <label htmlFor="signin-credential" className="block text-sm font-body text-muted-foreground mb-2">
-                  Link not working? In your email, hold the Sign in link, copy it, and paste it here.
+                  Link not working? Enter the code from the email, or paste the whole sign-in link here.
                 </label>
                 <div className="flex flex-col sm:flex-row gap-3">
                 <input
@@ -275,7 +280,7 @@ export default function CarePackageLibrary() {
                   required
                   value={code}
                   onChange={e => setCode(e.target.value)}
-                  placeholder="Paste the sign-in link"
+                  placeholder="Code, or the sign-in link"
                   autoComplete="one-time-code"
                   className="flex-1 bg-background border border-border rounded-full px-4 py-2.5 text-sm font-body text-foreground"
                 />
