@@ -2017,10 +2017,37 @@ around losing heat, and for this species the emergency runs the other way.
 | Bioactive setups, properly | 5, 13, 32 | Cross-species (tropical reptiles) | **Proposed.** `crested-gecko-enrichment-guide.mdx` names bioactive and says it is optional, which is true and not useful to someone deciding. The article is the drainage layer, the ABG-style mix, springtails and isopods, plant choice, the establishment period before an animal goes in, and the honest maintenance comparison against a paper-towel setup |
 | Handling a jumper | 8 | Cross-species (arboreal geckos) | **Proposed.** The handling guide has treadmilling and the tail warning, both good, but nothing on the practical problem every new crested gecko owner hits in week three: the gecko launches. Where to sit, what to do when it is on the curtain, how to catch one without grabbing it, and why the answer is never the tail |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the weight-milestone table and the sexing detail on page 14, the lay-box dimensions
-and the under-48-hours dystocia rule on page 15, the heat-stress response on page 19, the
-itemized budget subtotals on page 24, and the heatwave plan on page 28.
+**Numbers with no site source at all**, checked Sep 5 2026 and unchanged: the weight-milestone
+table and the sexing detail on page 14, the lay-box dimensions and the under-48-hours
+dystocia rule on page 15, the heat-stress response on page 19, the itemized budget subtotals
+on page 24, and the heatwave plan on page 28. **None of the seven rows in this block was in
+the September batch**, so all seven stay open. The overheating row is still the highest-value
+one here and nothing has touched it.
+
+**What the Sep 4 articles changed here anyway, at 2.1.** Page 25 carried the weakest
+quarantine instruction of the six packages: it ended the window on a clear fecal result,
+where `reptile-quarantine-guide` says a single negative sample is one snapshot of an
+intermittent process. It now runs Merck's 3 to 6 months and says why a clear test does not
+end it. Page 8 gained the CDC's January 2026 pet-gecko outbreak with the full hygiene rules.
+Page 21's normal-stool row gained the species carve-out
+`reptile-stool-urates-hydration-guide` supplies, that a fruit-powder diet makes for a softer
+stool than a strict insectivore's, so softer is not automatically wrong; and its urate row
+gained the kidney and gout consequence with misting named as the correction an arboreal
+species needs.
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item, and it is a
+confirmed article error:
+
+- **`reptile-emergency-plan-guide.mdx` has a daytime figure in a nighttime row for this
+  species.** Its temperature table lists the crested and gargoyle gecko as tolerating
+  70-75&deg;F (21-24&deg;C). The ReptiFiles care sheet both the article and this package draw
+  on, republished by Zen Habitats, gives **"Nighttime temperature: 65-72&deg;F (18-22&deg;C)"**
+  and separately **"Cool area temperature (bottom of enclosure): 70-75&deg;F (21-24&deg;C)"**.
+  The article has carried the daytime cool-area figure into a row that means night tolerance.
+  Page 28 of the package prints 65 to 72&deg;F and is correct; page 35 states the
+  disagreement. The action figure in the same article row, sustained at or below 72&deg;F day
+  and night, is right and matches the package. **The article's tolerable column is the thing
+  to correct.**
 
 **Source drift found while building.** Three.
 
