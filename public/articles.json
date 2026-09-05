@@ -342,6 +342,30 @@
       ]
     },
     {
+      "slug": "amphibian-quarantine-and-water-guide",
+      "title": "Amphibian Quarantine and Water Hardness Guide",
+      "excerpt": "A new amphibian needs a container instead of a net, a temperature match before a chemistry match, and weeks of quarantine, and the water it goes into afterward has a real, honest gap in what's actually known about hardness.",
+      "date": "2026-11-19",
+      "image": "/assets/images/amphibian-quarantine-and-water-guide.jpg",
+      "category": "Amphibians",
+      "categories": [
+        "Amphibians",
+        "Fish"
+      ]
+    },
+    {
+      "slug": "amphibian-tubbing-and-salt-baths-guide",
+      "title": "Axolotl Tubbing, Cooling & Salt Baths Guide",
+      "excerpt": "Tubbing, cooling, and salt baths are real interventions axolotl keepers reach for first, but the numbers that circulate online are rarely the ones a vet would actually use.",
+      "date": "2026-11-19",
+      "image": "/assets/images/amphibian-tubbing-and-salt-baths-guide.jpg",
+      "category": "Amphibians",
+      "categories": [
+        "Amphibians",
+        "Fish"
+      ]
+    },
+    {
       "slug": "angelfish-cost-guide",
       "title": "Angelfish Price: $3 to $50, Plus $300 to $600 Setup",
       "excerpt": "Angelfish are cheap to buy and genuinely expensive to house properly, the tank, not the fish, is where the real budget goes with this species.",
@@ -405,6 +429,42 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "aquarium-cycling-guide",
+      "title": "How to Cycle a Fish Tank: Fishless and Fish-In",
+      "excerpt": "Fishless and fish-in cycling for freshwater tanks, explained with real ammonia dosing numbers, action thresholds, and the reasons a cycle stalls or crashes.",
+      "date": "2026-11-11",
+      "image": "/assets/images/aquarium-cycling-guide.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish",
+        "Amphibians"
+      ]
+    },
+    {
+      "slug": "aquarium-filtration-guide",
+      "title": "Aquarium Filtration: Media, Turnover, Maintenance",
+      "excerpt": "What a filter actually removes, why the biological half matters most, the turnover math worked for real tank sizes, and the one maintenance mistake that wipes out the bacteria you built.",
+      "date": "2026-11-17",
+      "image": "/assets/images/aquarium-filtration-guide.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish",
+        "Amphibians"
+      ]
+    },
+    {
+      "slug": "aquarium-power-outage-and-transport-guide",
+      "title": "Aquarium Power Outage and Fish Transport Guide",
+      "excerpt": "An aquarium's biggest threat in a power outage is oxygen loss, not darkness, and the same three problems, oxygen, temperature, and a dead filter, drive safe transport and moving day too.",
+      "date": "2026-11-11",
+      "image": "/assets/images/aquarium-power-outage-and-transport-guide.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish",
+        "Amphibians"
       ]
     },
     {
@@ -482,6 +542,29 @@
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
+      ]
+    },
+    {
+      "slug": "avian-gastric-yeast-guide",
+      "title": "Avian Gastric Yeast: The Silent Weight-Loss Disease",
+      "excerpt": "Avian gastric yeast lets a budgie, cockatiel, or finch keep eating normally while it quietly loses weight, which is exactly why it's so often caught too late.",
+      "date": "2026-11-09",
+      "image": "/assets/images/avian-gastric-yeast-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
+      "slug": "avian-polyomavirus-guide",
+      "title": "Avian Polyomavirus and French Moult Explained",
+      "excerpt": "A virus that can kill an unweaned budgie chick in days and leave the survivors with feathers that never grow back right. Here's what avian polyomavirus actually does, and how to tell it apart from PBFD.",
+      "date": "2026-11-24",
+      "image": "/assets/images/avian-polyomavirus-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
       ]
     },
     {
@@ -925,6 +1008,170 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "bird-body-language-guide",
+      "title": "Bird Body Language: Fluffed Content vs. Fluffed Sick",
+      "excerpt": "A fluffed-up bird can be a content bird settling in for a nap, or a sick bird losing body heat it can't spare. Here's how to tell the two apart, plus beak grinding, eye pinning, one-foot sleep, tail fanning, and crest position.",
+      "date": "2026-11-24",
+      "image": "/assets/images/bird-body-language-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "bird-chronic-egg-laying-guide",
+      "title": "Chronic Egg Laying & Egg Binding in Pet Hens",
+      "excerpt": "A single hen with no mate in sight will still lay, and lay, and lay again. It is not a curiosity, it is a slow drain on her calcium and body reserves that ends, for some birds, in an egg that will not come out.",
+      "date": "2026-11-23",
+      "image": "/assets/images/bird-chronic-egg-laying-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "bird-colony-aviary-keeping-guide",
+      "title": "Colony & Aviary Keeping: Budgies, Canaries, Finches",
+      "excerpt": "Budgies, canaries, and finches are the small birds people actually keep in groups, and a group is not a bigger version of a single-bird cage. Space, feeding stations, sex ratios, and nest sites all change once a third bird joins.",
+      "date": "2026-11-24",
+      "image": "/assets/images/bird-colony-aviary-keeping-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "bird-droppings-guide",
+      "title": "Reading Bird Droppings: A Daily Health Check",
+      "excerpt": "A pet bird's droppings change every day, and reading them correctly is the cheapest, earliest health check any owner has.",
+      "date": "2026-11-12",
+      "image": "/assets/images/bird-droppings-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
+      "slug": "bird-emergency-travel-guide",
+      "title": "Bird Emergency Plan: Outages, Travel, Transport",
+      "excerpt": "For a reptile, a power outage means stop feeding and find heat. For a bird, it is almost the opposite, and the real danger isn't the cold, it's what people burn trying to fix it.",
+      "date": "2026-11-22",
+      "image": "/assets/images/bird-emergency-travel-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "bird-feather-dust-air-quality-guide",
+      "title": "Feather Dust, Air Quality & Bird Fancier's Lung",
+      "excerpt": "Cockatoos, African greys, and cockatiels shed keratin dust every day of the year. For a small number of owners, breathing it in for years causes a real lung disease, called bird fancier's lung, and almost nobody connects the cough to the parrot until a doctor is told about it.",
+      "date": "2026-11-25",
+      "image": "/assets/images/bird-feather-dust-air-quality-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "bird-feather-loss-and-molt-guide",
+      "title": "Bird Feather Loss: Molt vs Plucking vs PBFD",
+      "excerpt": "A normal molt, a plucking habit, PBFD, and a cockatiel-specific parasite can all look like the same bald patch. Here's how to tell them apart before you rearrange the cage.",
+      "date": "2026-11-23",
+      "image": "/assets/images/bird-feather-loss-and-molt-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "bird-first-aid-kit-and-grooming-guide",
+      "title": "Bird First Aid Kit and Grooming Guide",
+      "excerpt": "A cockatiel-sized bird first aid kit and grooming basics: the nail trim technique, the towel restraint you teach rather than impose, blood feather first aid, and the overgrown beak sign that isn't actually a grooming problem.",
+      "date": "2026-11-25",
+      "image": "/assets/images/bird-first-aid-kit-and-grooming-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "bird-household-hazards-guide",
+      "title": "Household Hazards for Pet Birds: Safety Checklist",
+      "excerpt": "A bird's respiratory system turns ordinary household fumes, from an overheated nonstick pan to a scented candle, into something that can kill it in minutes with no warning.",
+      "date": "2026-11-09",
+      "image": "/assets/images/bird-household-hazards-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
+      "slug": "bird-pellet-conversion-guide",
+      "title": "Bird Seed to Pellet Conversion Guide",
+      "excerpt": "An all-seed diet is missing enough that it can swell a bird's thyroid until it wheezes, and the fix, switching to pellets, has to be done slowly enough that the bird never stops eating.",
+      "date": "2026-11-21",
+      "image": "/assets/images/bird-pellet-conversion-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "bird-photoperiod-sleep-guide",
+      "title": "Bird Photoperiod and Sleep: The Light-Hormone Link",
+      "excerpt": "A bird's brain reads day length as a season, and an ordinary lit-up evening reads as an endless summer. That single mismatch drives chronic egg laying, aggression, and feather plucking more than owners realize.",
+      "date": "2026-11-13",
+      "image": "/assets/images/bird-photoperiod-sleep-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
+      "slug": "bird-quarantine-guide",
+      "title": "Quarantining a New Bird: The Real Timeline",
+      "excerpt": "A new bird can look perfectly healthy for weeks while carrying something contagious, which is exactly why a real quarantine, not just a few days of watching, matters before it meets your other birds.",
+      "date": "2026-11-12",
+      "image": "/assets/images/bird-quarantine-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
+      "slug": "bird-sexing-weight-body-condition-guide",
+      "title": "Bird Sexing, Weight & Body Condition Guide",
+      "excerpt": "Most parrots can't be sexed by looking at them, and most bird owners never weigh their bird at all. Here's what actually works for both, in grams, not guesswork.",
+      "date": "2026-11-22",
+      "image": "/assets/images/bird-sexing-weight-body-condition-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "bird-wing-clipping-guide",
+      "title": "Wing Clipping vs Flighted: Both Sides Explained",
+      "excerpt": "Wing clipping is genuinely contested among avian vets. Here's what a trim actually does, the case for it, the case against it, and the emergency you need to know first.",
+      "date": "2026-11-22",
+      "image": "/assets/images/bird-wing-clipping-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
       ]
     },
     {
@@ -1439,7 +1686,7 @@
     },
     {
       "slug": "cardinal-tetra-cost-guide",
-      "title": "Cardinal Tetra Price: $1 to $5 Each, Plus $65 to $230 Setup",
+      "title": "Cardinal Tetra Price: $1 to $3 Each, Plus $65 to $230 Setup",
       "excerpt": "Cardinal tetras cost about the same as their neon tetra cousins, but they're typically kept in a slightly bigger school, and a real Amazon fishery of wild-caught fish sits behind part of the price.",
       "date": "2026-09-05",
       "image": "/assets/images/cardinal-tetra-cost.jpg",
@@ -1581,6 +1828,17 @@
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
+      ]
+    },
+    {
+      "slug": "chelonian-herpesvirus-quarantine-guide",
+      "title": "Tortoise Herpesvirus: Why Quarantine Takes Months",
+      "excerpt": "Chelonian herpesvirus spreads through tortoises and box turtles that look completely healthy, has no cure, and killed 75 percent of the animals in one documented outbreak, which is why a new arrival needs months of real quarantine, not a couple of weeks.",
+      "date": "2026-11-10",
+      "image": "/assets/images/chelonian-herpesvirus-quarantine-guide.jpg",
+      "category": "Turtles & Tortoises",
+      "categories": [
+        "Turtles & Tortoises"
       ]
     },
     {
@@ -1760,6 +2018,18 @@
       ]
     },
     {
+      "slug": "choosing-a-pet-bird-guide",
+      "title": "Choosing a Pet Bird: A Buyer's Guide",
+      "excerpt": "The decision that matters most isn't the species, it's hand-raised versus parent-raised, breeder versus shop versus rescue, and whether you can actually live with the noise. Here's what to ask and what a healthy bird looks like before you commit.",
+      "date": "2026-11-23",
+      "image": "/assets/images/choosing-a-pet-bird-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
       "slug": "cockatiel-cost-guide",
       "title": "Cockatiel Price: $75 to $250, Plus $320 to $860 Setup",
       "excerpt": "Cockatiels are relatively affordable to buy, but the real budgeting story here is how long you'll be caring for one. A 15 to 20 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
@@ -1850,7 +2120,7 @@
     {
       "slug": "cockatoo-enrichment-guide",
       "title": "Cockatoo Enrichment Guide",
-      "excerpt": "A feather plucking study tried drugs, socialisation, feeding enrichment and training sessions on sulphur-crested cockatoos. Training won, and not because of the tricks.",
+      "excerpt": "Feather damaging behaviour is multifactorial, and the research on it is thinner than the confident claims suggest. What is actually supported: foraging enrichment, environmental complexity, and reinforcement-based training.",
       "date": "2026-10-30",
       "image": "/assets/images/cockatoo-enrichment.jpg",
       "category": "Enrichment",
@@ -2004,6 +2274,18 @@
       ]
     },
     {
+      "slug": "cooling-an-aquarium-without-a-chiller-guide",
+      "title": "Cooling an Aquarium Without a Chiller: What Works",
+      "excerpt": "A chiller is the real fix for an overheating tank, but most keepers need to survive this week's heat wave first. Here's every method that actually helps, ranked, and why frozen bottles shouldn't be your main plan.",
+      "date": "2026-11-19",
+      "image": "/assets/images/cooling-an-aquarium-without-a-chiller-guide.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish",
+        "Amphibians"
+      ]
+    },
+    {
       "slug": "corn-snake-cost-guide",
       "title": "Corn Snake Price: $25 to $70, Plus $250 to $600 Setup",
       "excerpt": "Corn snakes are one of the most budget-friendly beginner snakes: $250-600 for a solid setup, then genuinely low costs for the two decades after.",
@@ -2105,7 +2387,7 @@
     {
       "slug": "corydoras-catfish-enrichment-guide",
       "title": "Corydoras Catfish Enrichment Guide",
-      "excerpt": "Everyone says gravel wears down cory barbels. The better explanation is that barbel erosion is bacterial, and a dirty substrate does it whatever it is made of.",
+      "excerpt": "Everyone says gravel wears down cory barbels. No study actually establishes the cause, and substrate of any kind is a documented home for pathogenic bacteria.",
       "date": "2026-11-03",
       "image": "/assets/images/corydoras-catfish-enrichment.jpg",
       "category": "Enrichment",
@@ -2159,7 +2441,7 @@
     },
     {
       "slug": "crested-gecko-cost-guide",
-      "title": "Crested Gecko Price: $50 to $200, Plus $300 to $600 Setup",
+      "title": "Crested Gecko Price: $50 to $200, Plus $335 to $530 Setup",
       "excerpt": "Crested geckos sit near the affordable end of the reptile hobby, and unlike heat-hungry desert species, most of the ongoing cost is food and humidity, not electricity.",
       "date": "2026-07-12",
       "image": "/assets/images/crested-gecko-cost.jpg",
@@ -2802,6 +3084,18 @@
       ]
     },
     {
+      "slug": "fish-quarantine-and-treatment-guide",
+      "title": "Fish Quarantine and Treatment: Hospital Tank Guide",
+      "excerpt": "Why every new or sick fish belongs in a bare hospital tank first, how long to actually leave it there, and the real rules for aquarium salt, carbon, and aeration once you start treating.",
+      "date": "2026-11-18",
+      "image": "/assets/images/fish-quarantine-and-treatment-guide.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish",
+        "Amphibians"
+      ]
+    },
+    {
       "slug": "five-beginner-reptiles-overview",
       "title": "5 Best Beginner Reptiles, and Why Each One Works",
       "excerpt": "Bearded dragon, leopard gecko, ball python, crested gecko, corn snake, five reptiles that earn their beginner reputation honestly, each for a slightly different reason.",
@@ -2921,6 +3215,18 @@
       "category": "Dogs",
       "categories": [
         "Dogs"
+      ]
+    },
+    {
+      "slug": "freshwater-ph-gh-kh-guide",
+      "title": "Freshwater pH, GH and KH Guide for Coldwater Tanks",
+      "excerpt": "What pH, GH, and KH actually measure in a coldwater tank, why KH is the buffer holding pH in place, and why dosing pH-up or pH-down against it is how goldfish keepers crash a tank.",
+      "date": "2026-11-18",
+      "image": "/assets/images/freshwater-ph-gh-kh-guide.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish",
+        "Amphibians"
       ]
     },
     {
@@ -3917,6 +4223,18 @@
       ]
     },
     {
+      "slug": "herbivorous-reptile-safe-plants-guide",
+      "title": "Safe Weeds for Tortoises, Uromastyx and Iguanas",
+      "excerpt": "Dandelion, plantain, clover, sow thistle, hawkbit, mallow, and chickweed, with identification notes, where not to pick, and how to grow your own. The forage list this site was missing.",
+      "date": "2026-11-17",
+      "image": "/assets/images/herbivorous-reptile-safe-plants-guide.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles",
+        "Turtles & Tortoises"
+      ]
+    },
+    {
       "slug": "hermit-crab-cost-guide",
       "title": "Hermit Crab Price: $3 to $40 Each, Plus $130 to $450 Setup",
       "excerpt": "Hermit crabs are often sold as an impulse buy at beach shops and boardwalk stands, which is exactly the wrong way to think about them. Done properly, they need a real setup, and they're social animals that shouldn't be kept alone.",
@@ -4131,6 +4449,18 @@
       ]
     },
     {
+      "slug": "invertebrate-emergency-travel-shipping-guide",
+      "title": "Invertebrate Emergency Plan: Outages, Travel, Shipping",
+      "excerpt": "Power outages are mostly a non-event for a tarantula, and that's worth writing down plainly. The real risk in this corner of pet keeping is in a car, a shipping box, or a hermit crab's uniquely humidity-dependent setup.",
+      "date": "2026-11-21",
+      "image": "/assets/images/invertebrate-emergency-travel-shipping-guide.jpg",
+      "category": "Invertebrates",
+      "categories": [
+        "Invertebrates",
+        "Pet Care"
+      ]
+    },
+    {
       "slug": "invertebrate-molting-guide",
       "title": "Invertebrate Molting 101: What's Normal",
       "excerpt": "How molting works in tarantulas, hermit crabs, and jumping spiders - normal signs versus a failed molt, and why you should never disturb a molting pet.",
@@ -4139,6 +4469,30 @@
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
+      ]
+    },
+    {
+      "slug": "invertebrate-pesticide-hazards-guide",
+      "title": "Household Pesticides and Pet Invertebrate Safety",
+      "excerpt": "A tarantula, scorpion, mantis, or millipede is an arthropod, and household insecticides are built to kill arthropods. Here's why a healthy spider can die overnight with no warning, and how to actually prevent it.",
+      "date": "2026-11-20",
+      "image": "/assets/images/invertebrate-pesticide-hazards-guide.jpg",
+      "category": "Invertebrates",
+      "categories": [
+        "Invertebrates",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "invertebrate-rehousing-guide",
+      "title": "Rehousing an Invertebrate: Method and First Aid",
+      "excerpt": "Rehousing is two separate jobs, preparation and the catch-cup-and-card method itself, plus what to do if a New World tarantula flicks urticating hairs while it happens.",
+      "date": "2026-11-21",
+      "image": "/assets/images/invertebrate-rehousing-guide.jpg",
+      "category": "Invertebrates",
+      "categories": [
+        "Invertebrates",
+        "Pet Care"
       ]
     },
     {
@@ -4559,6 +4913,19 @@
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
+      ]
+    },
+    {
+      "slug": "long-lived-pet-succession-planning-guide",
+      "title": "Succession Planning for a Long-Lived Pet",
+      "excerpt": "A cockatoo can outlive the person who buys it by decades, and so can a tortoise. Here is what an actual plan for that looks like: a guardian who has agreed, a sanctuary contacted in advance, money attached to the animal, and the instrument that makes it hold up.",
+      "date": "2026-11-26",
+      "image": "/assets/images/long-lived-pet-succession-planning-guide.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Birds",
+        "Turtles & Tortoises"
       ]
     },
     {
@@ -5145,6 +5512,18 @@
       ]
     },
     {
+      "slug": "outdoor-reptile-housing-guide",
+      "title": "Outdoor Reptile Housing: Pens, Predators, Safety",
+      "excerpt": "A real outdoor pen beats any indoor setup for sunlight and space, but a badly built one is how tortoises drown, overheat, get dug out from under, or get taken by something that climbed the fence or dropped in from above.",
+      "date": "2026-11-17",
+      "image": "/assets/images/outdoor-reptile-housing-guide.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles",
+        "Turtles & Tortoises"
+      ]
+    },
+    {
       "slug": "pacman-frog-cost-guide",
       "title": "Pacman Frog Price: $15 to $100, Plus $100 to $225 Setup",
       "excerpt": "Pacman frogs are one of the more affordable amphibians to keep, sedentary, low-maintenance, and genuinely cheap to set up. The real financial risk isn't routine cost, it's a preventable vet bill.",
@@ -5219,6 +5598,18 @@
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
+      ]
+    },
+    {
+      "slug": "parrot-training-guide",
+      "title": "Parrot Training: The Behavior Ladder Explained",
+      "excerpt": "Training a parrot is not about tricks. It is a daily behavior ladder, target, step up and down, station, recall, carrier entry, and towel acceptance, and it scales from a budgie to a macaw with the same mechanics.",
+      "date": "2026-11-25",
+      "image": "/assets/images/parrot-training-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Enrichment"
       ]
     },
     {
@@ -5868,6 +6259,18 @@
       ]
     },
     {
+      "slug": "rehomed-parrot-guide",
+      "title": "Adopting a Rescue Parrot: What to Expect",
+      "excerpt": "An adopted adult parrot with a plucking history, a bond to someone else, and unknown handling is a genuinely different starting position than a weaned baby. Here's the transition period, the behaviors that show up, and what a rescue should ask you.",
+      "date": "2026-11-26",
+      "image": "/assets/images/rehomed-parrot-guide.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds",
+        "Pet Care"
+      ]
+    },
+    {
       "slug": "reptile-emergency-plan-guide",
       "title": "Reptile Emergency Plan: Outages, Travel, Pet Sitters",
       "excerpt": "What to actually do when the power goes out, you're leaving town, or you're handing your reptile off to a sitter, with species-specific cold floors in one table.",
@@ -5879,6 +6282,43 @@
       ]
     },
     {
+      "slug": "reptile-heating-thermostats-guide",
+      "title": "Reptile Heating & Thermostats: Preventing Burns",
+      "excerpt": "What a thermostat actually does, the three controller types, where the probe goes, and why wattage is a starting guess you verify, not a number you trust blindly.",
+      "date": "2026-11-15",
+      "image": "/assets/images/reptile-heating-thermostats-guide.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles",
+        "Turtles & Tortoises"
+      ]
+    },
+    {
+      "slug": "reptile-quarantine-guide",
+      "title": "Reptile Quarantine Guide: Preventing Mites and IBD",
+      "excerpt": "A new snake or lizard can look completely healthy while it is still shedding mites or a fatal virus. What a real quarantine setup, timeline, and vet workup actually involve, before it ever meets an established pet.",
+      "date": "2026-11-15",
+      "image": "/assets/images/reptile-quarantine-guide.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles",
+        "Turtles & Tortoises"
+      ]
+    },
+    {
+      "slug": "reptile-salmonella-hygiene-guide",
+      "title": "Salmonella and Reptile Hygiene: What to Know",
+      "excerpt": "Healthy reptiles and amphibians carry Salmonella as normal gut flora, no illness required. Here's the real transmission route, the four-inch rule, and the hygiene habits that actually cut risk.",
+      "date": "2026-11-15",
+      "image": "/assets/images/reptile-salmonella-hygiene-guide.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles",
+        "Turtles & Tortoises",
+        "Amphibians"
+      ]
+    },
+    {
       "slug": "reptile-shedding-complete-guide",
       "title": "Understanding Reptile Shedding (Ecdysis)",
       "excerpt": "Shedding is one of the most misunderstood aspects of reptile care. Here's what's actually happening, what's normal, and when you need to step in.",
@@ -5887,6 +6327,18 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "reptile-stool-urates-hydration-guide",
+      "title": "Reptile Stool and Urates: A Daily Health Check",
+      "excerpt": "Reptile stool and urates are a free, five-second daily health check that works across lizards, geckos, snakes, and turtles and tortoises alike. Here's what's normal by diet type, what counts as dehydrated, and what's an actual red flag.",
+      "date": "2026-11-14",
+      "image": "/assets/images/reptile-stool-urates-hydration-guide.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles",
+        "Turtles & Tortoises"
       ]
     },
     {
@@ -5968,7 +6420,7 @@
     },
     {
       "slug": "russian-tortoise-cost-guide",
-      "title": "Russian Tortoise Price: $50 to $400, Plus $400 to $600 Setup",
+      "title": "Russian Tortoise Price: $50 to $400, Plus $372 to $775 Setup",
       "excerpt": "Russian tortoises are genuinely one of the more approachable tortoises to own, both in price and, unlike the sulcata already covered on this site, in the fact that this species can live its entire life indoors.",
       "date": "2026-07-30",
       "image": "/assets/images/russian-tortoise-cost.jpg",
@@ -6179,11 +6631,68 @@
       ]
     },
     {
+      "slug": "small-mammal-enterotoxemia-guide",
+      "title": "Small Mammal Antibiotics: The Enterotoxemia Danger",
+      "excerpt": "Certain ordinary antibiotics wipe out a guinea pig, chinchilla, or rabbit's gut bacteria and let toxin-producing Clostridium take over, a reaction that can kill within days. Here's the exact drug list to raise with your vet first.",
+      "date": "2026-11-10",
+      "image": "/assets/images/small-mammal-enterotoxemia-guide.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "small-mammal-grooming-nails-molting-guide",
+      "title": "Small Mammal Grooming, Nails and Molting Guide",
+      "excerpt": "Molting, nail trims, and scent glands look like tidiness chores, but a rabbit cannot vomit swallowed fur, which is what turns a heavy molt into a genuine GI risk.",
+      "date": "2026-11-20",
+      "image": "/assets/images/small-mammal-grooming-nails-molting-guide.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets",
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "small-mammal-temperature-heat-stress-guide",
+      "title": "Small Mammal Heat Stress: Safe Temps and Signs",
+      "excerpt": "Guinea pigs, rabbits, chinchillas, and hamsters have no heat lamp and no UVB to lean on, so your room's own temperature is the whole story. Here are the real comfortable ranges, the danger thresholds, and the ordered signs of heat stress by species.",
+      "date": "2026-11-13",
+      "image": "/assets/images/small-mammal-temperature-heat-stress-guide.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "small-mammal-vet-visits-and-travel-guide",
+      "title": "Small Mammal Vet Trips: Carrier, Travel, Anesthesia",
+      "excerpt": "Getting a rabbit or guinea pig to the vet, and through a procedure, runs on different rules than a dog or cat. The right carrier, the cage mate that comes along, and why the long fast a dog gets before surgery is wrong for these species.",
+      "date": "2026-11-20",
+      "image": "/assets/images/small-mammal-vet-visits-and-travel-guide.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets",
+        "Pet Care"
+      ]
+    },
+    {
       "slug": "snake-brumation-guide",
       "title": "Brumation in Pet Snakes Explained",
       "excerpt": "What brumation is, why most pet snake keepers can safely skip it, and how to cool a ball python or corn snake properly if you plan to breed.",
       "date": "2026-07-02",
       "image": "/assets/images/snake-brumation.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "snake-sexing-growth-body-condition-guide",
+      "title": "Snake Sexing, Growth & Body Condition Guide",
+      "excerpt": "Why probing and popping are a vet or breeder's job and not a home project, why a scale beats a tape measure for tracking growth, and how to read a snake's body condition by its cross-section shape.",
+      "date": "2026-11-16",
+      "image": "/assets/images/snake-sexing-growth-body-condition-guide.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
@@ -6199,6 +6708,18 @@
       "categories": [
         "Cats",
         "Enrichment"
+      ]
+    },
+    {
+      "slug": "spotting-a-sick-fish-guide",
+      "title": "How to Tell If Your Fish Is Sick: Early Signs",
+      "excerpt": "Clamped fins, stringy white feces, gasping at the surface. What each early warning sign actually means, and why testing the water comes before anything else.",
+      "date": "2026-11-18",
+      "image": "/assets/images/spotting-a-sick-fish-guide.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish",
+        "Amphibians"
       ]
     },
     {
@@ -6782,6 +7303,30 @@
       "image": "/assets/images/tokay-gecko-tank-setup.jpg",
       "category": "Reptiles",
       "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "tortoise-brumation-guide",
+      "title": "Tortoise Brumation: What's Safe, By Species",
+      "excerpt": "Brumation done badly is one of the most common ways a healthy tortoise dies. Here's the do-not list, the fast, the real temperature band, and the weigh-ins that catch trouble early.",
+      "date": "2026-11-16",
+      "image": "/assets/images/tortoise-brumation-guide.jpg",
+      "category": "Turtles & Tortoises",
+      "categories": [
+        "Turtles & Tortoises",
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "tortoise-sexing-eggs-and-egg-binding-guide",
+      "title": "Tortoise Sexing, Eggs & Egg Binding Guide",
+      "excerpt": "Tail, vent, and plastron cues to tell a tortoise's sex, why a female with no male can still lay a full clutch, and how to tell normal nesting restlessness from true egg binding.",
+      "date": "2026-11-16",
+      "image": "/assets/images/tortoise-sexing-eggs-and-egg-binding-guide.jpg",
+      "category": "Turtles & Tortoises",
+      "categories": [
+        "Turtles & Tortoises",
         "Reptiles"
       ]
     },
