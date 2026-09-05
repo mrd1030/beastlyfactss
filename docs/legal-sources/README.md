@@ -48,6 +48,8 @@ about this species", not to claim a new verification date.
 | `CT-ct-deep-listings.txt` | The DEEP fact sheet statuses that decide which Connecticut animals are Category Four |
 | `MD-md-framework.txt` | Maryland's three rules and its three-tier native herptile chapter, with which rule reaches what |
 | `MD-md-fisheries.txt` | Where Maryland's snapping turtle went, and the nonnative list that names no reptile |
+| `TN-tn-exotic-animals-act.txt` | Tennessee's five classes, with the two clauses that make it permissive and the rule chapter that could not be read |
+| `TN-tn-twra-permits.txt` | TWRA's own permits page, which closes Class I to private keepers and names the missing rule chapter |
 
 ## Reading the awkward ones
 
@@ -72,6 +74,15 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   what selective breeding has done rather than by species, which is what makes the pet rabbit
   clean there when the same species is a hard call in Minnesota and Illinois. Read (a)(7) and
   (a)(21) before the lists.
+- **`TN-tn-exotic-animals-act.txt`** turns on two clauses that are easy to read past. The
+  catch-all sits in Class III, which "requires no permits", so an animal nobody thought about
+  needs nothing. And Class II is "native species, EXCEPT those listed in other classes", so a
+  native animal named anywhere in subdivisions (3)(A)-(Q) is not a Class II animal at all.
+  Check those subdivisions before recording any Tennessee native as a permit animal: reading a
+  native nonvenomous reptile into Class II is how the garter snake, corn snake and milk snake
+  sat wrong on this map, along with a sourcing-paperwork condition drawn from § 70-4-401(b),
+  which reaches Class I and Class II only. Tennessee has no free official code, so both files
+  quote reproductions rather than the state's own text, cross-checked against each other.
 - **The Oregon files** describe a state where absence from a list is a ban, not silence, and
   where two agencies run two separate closed lists. Before recording anything for Oregon, check
   which law reaches the animal: ORS 609.305 covers only cats, primates, non-wolf canids, bears
@@ -119,6 +130,7 @@ not on the sites, so a person with a browser can open all of them.
 | `drive.google.com` | CPW publishes its species lists here | Fetch `https://drive.google.com/uc?export=download&id=<id>`; the ids are in the accordion markup, not in any `.pdf` link |
 | `revisor.mn.gov` | Works with plain curl, occasional TLS handshake failure on the first try | Retry once. Statutes at `/statutes/cite/<section>`, rules at `/rules/<part>/`; a bare chapter number gives only the table of parts |
 | `secure.sos.state.or.us` | Rules serve fine from `view.action?ruleNumber=<rule>`; `displayDivisionRules.action` returns a near-empty page | Probe rule numbers one at a time; a missing rule answers "not found" |
+| `publications.tnsosfiles.com`, `sos.tn.gov`, `tnsos.org` | 403 "Request blocked" from CloudFront on every path, with or without a browser User-Agent and Referer. This is the whole of Tennessee's rules and proclamations publishing | No workaround found. `www.tn.gov` IS reachable, so read the TWRA pages instead, and cross-check the statutes against two reproductions |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
 
 When the official host is unreachable, cite the official URL anyway, verify the wording

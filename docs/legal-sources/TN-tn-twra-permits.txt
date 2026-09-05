@@ -1,0 +1,52 @@
+# Tennessee: what the agency says, where the statute stops short
+
+sourceId: tn-twra-permits
+jurisdiction: TN
+url: https://www.tn.gov/twra/law-enforcement/permits.html
+fetched: 2026-09-05
+fetch notes: www.tn.gov answers plain curl and is the only reachable Tennessee government host
+  in this cache. The three that are NOT reachable are publications.tnsosfiles.com,
+  sos.tn.gov and tnsos.org, all behind a CloudFront filter returning 403 "Request blocked",
+  which is where the administrative rules and the wildlife proclamations live. The page below
+  is the closest thing to those rules that could be read.
+  The page is agency guidance, not law. It is cached because it does two things a secondary
+  summary could not: it states the agency's own reading of a fee schedule that is easy to
+  misread, and it NAMES the rule chapter carrying the classification list, which is what turns
+  three map entries from a guess into a documented gap.
+
+THE TWO SENTENCES THAT MATTER:
+  "Class 1 species are considered inherently dangerous to humans and may only be possessed by
+   permitted exhibitors or commercial propagators."
+  "Personal possession of any Class 1 species is not allowed."
+  The statute agrees, at § 70-4-404(c)(1), which froze personal possession at 25 June 1991 and
+  says it "shall not be construed to authorize new personal possession of Class I wildlife".
+  Read the $150/animal personal possession fee at § 70-4-404(d)(1)(A) without that subsection
+  and Tennessee looks like an expensive permit state for Class I animals. It is not a permit
+  state for them at all.
+
+THE CHAPTER THAT COULD NOT BE READ, named here:
+  "1660-1-15 Rules and Regulations of Animal Importation"
+  "1660-01-18 Rules and Regulations of Live Wildlife"
+  linked from an index at http://publications.tnsosfiles.com/rules/1660/1660.htm, which is on
+  the blocked host. 1660-01-18 is where a commission addition to Class I, or a Class V
+  injurious designation, would sit. Serval, fennec fox and quaker parakeet are recorded unclear
+  on this gap.
+
+--- www.tn.gov/twra/law-enforcement/permits.html, the captive wildlife body -----------------
+The Tennessee Wildlife Resources Agency is responsible for the issuance of permits for certain captive wildlife species. In order to legally possess certain wildlife species, persons must do so in accordance with specific regulations:
+No one can possess a Class 1 or Class 2 species without first obtaining the appropriate permit.
+Class 1 species are considered inherently dangerous to humans and may only be possessed by permitted exhibitors or commercial propagators.
+Personal possession of any Class 1 species is not allowed.
+Class 1 species permits will only be issued if the applicant has met all requirements in T.C.A. 70-4-404 and T.C.A. 70-4-405 and has passed a Class 1 facility inspection.
+No Class 4 species are allowed for possession, including white-tailed deer, American black bear, and wild turkey, except for bona fide zoos and TWRA-authorized wildlife rehabilitators.
+Bona Fide Zoo is an institution operated wholly or in part by a political subdivision of the state to display wildlife to the public.
+Any person possessing Class 1 or 2 wildlife species must have documentation indicating the animal originated from a legal source.
+No importation permit for Class 1 or 2 species will be authorized until all information is supplied that the source is legal in the state of origin and does not pose a threat to human or animal health.
+Please reference the classification list for those species considered Class 1, 2, or 4.
+Applications
+Exhibitor Permit Application WR-0549
+Importation Permit Application WR-0547
+Possession Permit Application WR-0548
+Propagation Permit Application WR-0653
+Captive Wildlife Report of Animals Imported WR-0814
+Captive Wildlife Application for Permit Instructions

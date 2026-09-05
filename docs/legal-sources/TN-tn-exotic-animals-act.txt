@@ -1,0 +1,155 @@
+# Tennessee: the catch-all sits in Class III, and Class II excepts anything named elsewhere
+
+sourceId: tn-70-4-403 / tn-70-1-101
+jurisdiction: TN
+url: https://www.animallaw.info/statute/tn-exotic-pet-part-4-exotic-animals
+     https://www.lawserver.com/law/state/tennessee/tn-code/tennessee_code_70-4-403
+     https://www.lawserver.com/law/state/tennessee/tn-code/tennessee_code_70-1-101
+fetched: 2026-09-05
+fetch notes: Tennessee has no free official code. The state contracts publication to LexisNexis,
+  and the administrative rules live on publications.tnsosfiles.com, which returns 403 to this
+  container on every path, as do sos.tn.gov and tnsos.org (all three sit behind the same
+  CloudFront filter, answering "Request blocked" rather than 404). A browser user agent and a
+  referer header do not change it. www.tn.gov itself IS reachable, which is how the TWRA
+  permits page in the companion cache file was read.
+  Because there is no official text to fetch, the wording below was taken from TWO independent
+  reproductions and compared line by line: animallaw.info, which carries the current text
+  including 2024 Pub. Acts c. 636, and lawserver.com, whose copy is marked "Current as of: 2024".
+  They agree everywhere except the Class I snake clause, which the 2024 amendment changed from
+  "poisonous" to "venomous", and § 70-4-402 gained the (11)/(14) poisonous/venomous definitions
+  in the same act. Where they differ the animallaw text is the current one and is what is quoted
+  in the map.
+
+WHY TENNESSEE IS PERMISSIVE, in two clauses:
+  The catch-all is in Class III, not Class II. "Class III ... includes all species not listed in
+  other classes" and "requires no permits". So an animal nobody thought about needs nothing.
+  Class II is "native species, EXCEPT those listed in other classes". That exception is the
+  clause that decides every native reptile, every native rodent and the flying squirrel. Being
+  native pulls an animal toward the permit tier; being named in a Class III subdivision pulls it
+  straight back out. The mistake to avoid here is reading a native animal into Class II without
+  checking whether subdivisions (3)(A)-(Q) name it, because for most pet species they do.
+
+WHAT THE DOCUMENTATION RULE ACTUALLY REACHES:
+  § 70-4-401(b) requires supplier name, address and acquisition date for Class I or Class II
+  wildlife ONLY. It does not reach Class III, so the widely repeated claim that a Tennessee
+  keeper of a native corn snake or garter snake must hold sourcing paperwork is misplaced.
+
+CLASS I IS CLOSED TO PRIVATE KEEPERS, not merely expensive:
+  § 70-4-404(c)(1) freezes personal possession at 25 June 1991. "After June 25, 1991, no new
+  animals shall be brought into possession under authority of a personal possession permit",
+  and the subsection says it "shall not be construed to authorize new personal possession of
+  Class I wildlife". The $150/animal personal possession line in the fee schedule at (d)(1)(A)
+  is for those grandfathered animals. TWRA states the result plainly on its permits page.
+
+THE GAP THIS SITTING COULD NOT CLOSE:
+  Class I (1) and Class III (3) both give the commission, with the commissioner of agriculture,
+  power to ADD OR DELETE species by rule, and Class V (5) is nothing but rule-designated
+  species. Those rules are Tenn. Comp. R. & Regs. 1660-01-18, Rules and Regulations of Live
+  Wildlife, named as such on the TWRA permits page and hosted only on the blocked host. So
+  three entries are recorded unclear on the rule chapter rather than on the statute: serval and
+  fennec fox (neither is on the statutory Class I list, but the commission could have added
+  them) and quaker parakeet (nothing in the statute reaches it, but Class V exists precisely
+  for a bird designated injurious, and Tennessee is on most circulated monk parakeet ban lists).
+
+--- Tenn. Code Ann. § 70-1-101(40), the outer limit of the whole scheme -------------------
+(40) "Wildlife" means wild vertebrates, mollusks, crustaceans, and fish;
+
+  § 70-4-403 classifies "live wildlife", so this definition is what leaves every terrestrial
+  arthropod outside the scheme entirely: tarantula, emperor scorpion, giant millipede and
+  hissing cockroach are not wildlife in Tennessee and no class reaches them.
+
+--- Tenn. Code Ann. §§ 70-4-401 to 70-4-404, verbatim ------------------------------------
+§ 70-4-401. Crimes and offenses
+(a) It is unlawful for any person to possess, transport, import, export, buy, sell, barter, propagate or transfer any wildlife, whether indigenous to this state or not, except as provided by this part and rules and regulations promulgated by the Tennessee fish and wildlife commission pursuant to this part.
+(b) No person shall possess Class I or Class II wildlife without having documentary evidence showing the name and address of the supplier of such wildlife and date of acquisition.
+CREDIT(S)
+1991 Pub.Acts, c. 487, § 1; 2012 Pub.Acts, c. 993, § 13, eff. June 30, 2012.
+§ 70-4-402. Definitions
+As used in this part, unless the context otherwise requires:
+(1) “Agency” means the Tennessee wildlife resources agency;
+(2) “Cage” means the primary enclosure in which an animal is held;
+(3) “Circus” means a public entertainment consisting typically of a variety of performances by acrobats, clowns, and trained animals, but does not include wrestling bears or any type of show in which there is direct contact between the public and a Class I animal, except as otherwise provided for in this part;
+(4) “Commercial propagator” means any person or entity that may sell, barter, trade, propagate or transfer Class I wildlife, excluding transfers to other commercial propagators located within the boundaries of Tennessee, and that meets all other applicable license, permit, zoning and other requirements necessary to conduct business in the city, county and state where located;
+(5) “Commission” means the Tennessee fish and wildlife commission;
+(6) “Mobile facility” means a facility designed for the transporting of animals or for the holding of animals on a temporary basis;
+(7) “Native wildlife” means those species presently occurring in the wild in Tennessee and those extirpated species that could reasonably be expected to survive in the wild if reintroduced;
+(8) “Perimeter fence” means a secondary fence that prevents the public from touching the cage in which the animal is held;
+(9) “Permanent exhibitors” means those exhibits that are housed the entire year in facilities located within this state;
+(10) “Personal possession permit” means a noncommercial type permit issued to private citizens for ownership or possession of nonbreeding animals in small numbers;
+(11) “Poisonous” means any toxic substance secreted from the skin of an animal and that causes injury or death when absorbed or ingested;
+(12) “Stationary facility” means the primary holding facility, including cage and barriers that remain in a fixed location;
+(13) “Temporary exhibitors” means those transient animal acts not permanently located within the boundaries of this state; and
+(14) “Venomous” means any toxic substance that is actively injected by an animal through a bite or sting and that causes injury or death.
+Credits
+1991 Pub.Acts, c. 487, § 1; 2012 Pub.Acts, c. 993, § 13, eff. June 30, 2012; 2024 Pub.Acts, c. 636, § 2, eff. July 1, 2024.
+§ 70-4-403. Classifications
+Live wildlife, kept and maintained for any purpose, shall be classified in the following five (5) classes:
+(1) Class I--This class includes all species inherently dangerous to humans. These species may only be possessed by zoos, circuses and commercial propagators, except as otherwise provided in this part. The commission, in conjunction with the commissioner of agriculture, may add or delete species from the list of Class I wildlife by promulgating rules and regulations. The following is a listing of animals considered inherently dangerous:
+(A) Mammals:
+(i) Primates--Gorillas, orangutans, chimpanzees, gibbons, siamangs, mandrills, drills, baboons, Gelada baboons;
+(ii) Carnivores:
+(a) Wolves--All species;
+(b) Bears--All species; and
+(c) Lions, tigers, leopards, jaguars, cheetahs, cougars--All species;
+(iii) Order Proboscidia: Elephants--All species;
+(iv) Order Perissodactyla: Rhinoceroses--All species; and
+(v) Order Artiodactyla: Hippopotamus, African buffalo;
+(B) Reptiles:
+(i) Order Crocodylia: Crocodiles and alligators--All species; and
+(ii) Order Serpentes: Snakes--All venomous species; and
+(C) Amphibians: All poisonous species;
+(2) Class II--This class includes native species, except those listed in other classes;
+(3) Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). The commission, in conjunction with the commissioner of agriculture, may add or delete species from the list of Class III wildlife by promulgating rules and regulations:
+(A) Nonpoisonous reptiles and amphibians except caimans and gavials;
+(B) Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks;
+(C) Rabbits, hares, moles and shrews;
+(D) Ferrets and chinchillas;
+(E) Llamas, alpacas, guanacos, vicunas, camels, giraffes and bison;
+(F) Avian species not otherwise listed, excluding North American game birds, ostriches and cassowary;
+(G) Semi-domestic hogs, sheep and goats;
+(H) All fish held in aquaria;
+(I) Bovidae not otherwise listed;
+(J) Marsupials;
+(K) Common domestic farm animals;
+(L) Equidae;
+(M) Primates not otherwise listed;
+(N) Bobcat/domestic cat hybrids;
+(O) Hybrids resulting from a cross between a Class II species and a domestic animal or Class III species;
+(P) Cervidae except white-tailed deer and wild elk. Elk originating from a legal source while held in captivity for the purpose of farming shall be regarded as Class III wildlife. All other elk shall be wild elk and shall be regarded as Class II wildlife. No person shall possess elk in captivity within the eastern grand division of the state as defined in § 4-1-202 without having documentary evidence indicating the origin of the elk being held. This documentary evidence will be presented to the agents of the department of agriculture or the wildlife resource agency upon request. Sale documentation of offspring of purchased elk is not required; and
+(Q) Furbearing mammals, including those native to Tennessee, raised solely for the sale of fur;
+(4) Class IV--This class includes those native species that may be possessed only by zoos and temporary exhibitors; provided, that rehabilitation facilities may possess Class IV wildlife as provided by rules established by the commission if authorized by a letter from the director of the agency:
+(A) Black bear (Ursus americanus);
+(B) White-tailed deer (Odocoileus virginianus);
+(C) Wild turkey (Meleagris gallapavo), including the eggs of wild turkey;
+(D) Hybrids of a Class IV species other than bobcat shall be Class IV; and
+(E) Animals that are morphologically indistinguishable from native Class IV wildlife shall be Class IV; and
+(5) Class V--This class includes such species that the commission, in conjunction with the commissioner of agriculture, may designate by rules and regulations as injurious to the environment. Species so designated may only be held in zoos under such conditions as to prevent the release or escape of such wildlife into the environment.
+Credits
+1991 Pub.Acts, c. 487, § 1; 1996 Pub.Acts, c. 992, § 1, eff. May 13, 1996; 2001 Pub.Acts, c. 103, § 5, eff. April 18, 2001; 2024 Pub.Acts, c. 636, § 3, eff. July 1, 2024.
+§ 70-4-404. Permits; rules and regulations; fees
+(a) The agency shall issue permits for possessing live wildlife as defined in this part.
+(b)(1) The commission shall adopt reasonable rules for issuing permits to possess live wildlife and establishing the conditions of possessing wildlife. The conditions shall be directed toward assuring the health, welfare, and safety of animals, the public and, where necessary, the security of facilities in which the animals are kept.
+(2) The executive director of the agency may authorize by letter permission to possess any class of wildlife for approved research studies or for the temporary holding of animals in the interest of public safety. The executive director may exempt specific events from the caging and handling requirements established for Class I wildlife. Approval of an exemption will be based on a written request that outlines safety precautions that must be implemented during the specified activity.
+(c) Class I wildlife.
+(1) Persons legally possessing Class I wildlife prior to June 25, 1991, shall obtain annually a personal possession permit to keep such Class I wildlife. To obtain a personal possession permit, such persons shall comply with all of the provisions of this part. After June 25, 1991, no new animals shall be brought into possession under authority of a personal possession permit. Persons in legal possession of one (1) or more species of Class I wildlife as of June 25, 1991, may maintain the lineage of such species up to a maximum of three (3) animals per species. Persons in legal possession of the offspring of such Class I wildlife shall have a maximum of twelve (12) months from the date of birth of such offspring to obtain appropriate permits for such offspring, or to dispose of such offspring through an appropriate commercial propagator, or by any other manner permitted by law within the state. The provisions of this section apply solely to persons in legal possession of Class I wildlife as of June 25, 1991, and shall not be construed to authorize new personal possession of Class I wildlife.
+(2) The executive director shall issue a permit upon a satisfactory showing of qualifications to possess live wildlife under the following conditions:
+(A) The applicant must be at least twenty-one (21) years of age;
+(B) The applicant must have at least two (2) years of experience in the handling or care of the Class I species for which the applicant is applying, or, in the alternative, must take a written examination, developed and administered by the agency, evidencing basic knowledge of the habits and requirements, in regard to proper diet, health care, exercise needs and housing of the species to be covered by the permit. Experience gained while in violation of this part shall not be considered qualifying experience;
+(C) The facilities for holding Class I wildlife must be located on the premises on which the permit holder resides or shall have a full-time resident caretaker to supervise the care and security of the facilities. Facilities for Class I animals may not be on premises of less than one (1) acre for a personal possession permit and three (3) acres for a commercial propagator facility permit, and may not be located in a multi-unit dwelling or trailer park; and
+(D) The applicant must have a plan for the quick and safe recapture of the wildlife, or if recapture is impossible, for the destruction of any animal held under the permit. The applicant must have the legal authority to possess weapons or other equipment necessary to carry out the plan and, in fact, possess such weapons or other equipment.
+(3) The permittee shall control and maintain Class I wildlife at all times in such a manner as to prevent direct exposure or contact between the animal or animals and the public; provided, that a trained elephant may be brought into contact with the public under the close supervision of a qualified trainer or handler.
+(d) No person shall hold live wildlife in captivity without first obtaining the appropriate permit as provided in this part. The annual permits and fees for holding live wildlife are as follows:
+(1)(A) Personal Possession. Class I: $150/animal or $1,000/facility; and
+(B) Class II: $10.00/animal or $100/facility;
+(2) Transfer of Ownership. A permit for transferring any Class I or II animal held under a personal possession permit. If the transfer of the animal is ordered by the agency, no transfer permit is required;
+(3) Commercial Propagator. $1,000/facility for Class I wildlife;
+(4) Propagator. $25.00/facility for small game birds and waterfowl; and $100/facility for all Class II wildlife except small game birds and waterfowl;
+(5) Importation. $10.00/shipment or $100 per year;
+(6) Temporary Exhibitor. $100/30 day period;
+(7) Permanent Exhibitor. $500/year/facility;
+(8) Commercial Wildlife Preserve. $150/year for big game; and $75.00/year for small game;
+(9) Falconry. $40.00/year or other time period as might coincide with federal permit requirements;
+(10) Qualification Examination. $10.00/examination; and
+(11) Zoos, Nature Centers, Rehabilitation Centers, and Educational Exhibits Certified As Nonprofit. No charge.
+CREDIT(S)
+1991 Pub.Acts, c. 487, § 1.

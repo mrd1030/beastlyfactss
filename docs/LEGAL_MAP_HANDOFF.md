@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 13 (AZ, CO, CT, DE, HI, IL, MD, MI, MN, NM, NV, OR, PA) |
-| Unread cells | 597 |
-| Cached primary sources | 35 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 14 (AZ, CO, CT, DE, HI, IL, MD, MI, MN, NM, NV, OR, PA, TN) |
+| Unread cells | 562 |
+| Cached primary sources | 37 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
-Oregon, Connecticut and Maryland sit on `claude/legal-map-colorado-dca3og`; either continue
-there or cut a fresh branch from main once it lands.
+Oregon, Connecticut, Maryland and Tennessee sit on `claude/legal-map-colorado-dca3og`; either
+continue there or cut a fresh branch from main once it lands.
 
 ## The loop
 
@@ -67,11 +67,19 @@ the wrong one. Both animals are named on ODFW's prohibited species list, which i
 question in Oregon is actually answered. When an entry's note explains why some statute does not
 reach an animal, that is the moment to ask which statute does.
 
-That failure mode has now cost four states. Oregon's prairie dog and capybara, Connecticut's
+That failure mode has now cost five states. Oregon's prairie dog and capybara, Connecticut's
 prairie dog and capybara, Illinois's garter snake and Maryland's corn snake and garter snake all
 sat on an accurate reading of a statute that was not the one that answers the question. The
 tell is always the same: a note that explains why a list does not reach an animal, without
 naming the rule that does. Every state on this map has more than one animal law.
+
+Tennessee is the fifth, and it is the variant to watch for, because there the wrong reading came
+from the right statute. Its Class II is "native species, except those listed in other classes",
+and three native snakes had been read into Class II on the first half of that clause without the
+second half being applied. Every nonvenomous reptile is listed in Class III, so the exception
+takes them straight back out. A sourcing-paperwork condition had come along with it, drawn from
+§ 70-4-401(b), which reaches Class I and Class II wildlife only. When a definition carries an
+"except those listed elsewhere" clause, the elsewhere is the part that decides.
 
 **A rule with nothing behind it.** Minnesota's 2021 pet reptile law says the commissioner
 "must prescribe conditions and may issue permits" and then makes lawful possession turn on the
@@ -94,14 +102,24 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| TN | Tennessee | 35 | 1 source on file |
 | TX | Texas | 35 | 3 sources on file |
 | MA | Massachusetts | 34 | 3 sources on file |
 | NE | Nebraska | 33 | 4 sources on file |
 | FL | Florida | 30 | 2 sources on file |
+| NY | New York | 30 | 4 sources on file |
 
 ## Loose ends
 
+- **Tennessee has three cells left, and they are all the same chapter.** Tenn. Comp. R. & Regs.
+  1660-01-18, Rules and Regulations of Live Wildlife, is where the commission's own additions to
+  the classes live. Serval and fennec fox are on no statutory Class I list but § 70-4-403(1)
+  lets the commission add them; the quaker parakeet is untouched by the statute but Class V is
+  nothing but rule-designated injurious species, and Tennessee is on most circulated monk
+  parakeet ban lists. All three are `unclear` on that chapter alone. It is hosted only on
+  publications.tnsosfiles.com, which returns 403 to this container, as do sos.tn.gov and
+  tnsos.org. Anyone with a browser can settle three cells by opening one PDF. What rides on the
+  first two is bigger than a fee: § 70-4-404(c)(1) closed personal possession of Class I
+  wildlife in 1991, so an addition by rule means a flat no, not a permit.
 - **Vermont has three cells left**: quaker parakeet, African grey and rabbit. They depend
   on the 2010 Domestic Species List, whose text is stored as glyph outlines and could not
   be extracted by any method tried, WebFetch included. Everything else about Vermont is
@@ -160,15 +178,15 @@ state that codifies by version. And confirm the citation itself still resolves.
 Twelve matrix animals have deep coverage and no legal guide. The two best are ready now:
 
 - **capybara**, 50 of 51 states read
-- **prairie-dog**, 49 of 51
+- **prairie-dog**, 50 of 51
 
 Both already had a Colorado cell and both were wrong: `permit` where the answer is `banned`.
 They are corrected now, but anything drafted against the older map needs re-reading, and the
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Then guinea pig and gerbil at 47, quaker parakeet and ackie monitor at 46, degu and red-footed
-tortoise at 45, green iguana at 44.
+Then guinea pig, gerbil, quaker parakeet and ackie monitor at 47, degu and red-footed tortoise
+at 46, green iguana at 45.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -210,6 +228,14 @@ Maryland is the only state that answers it by weight: § 10-621(b)(1)(iv) reache
 only "if the hybrid weighs over 30 pounds", with no generation test anywhere in the section. The
 line is drawn on the individual animal rather than its ancestry, which is the one version of
 this rule whose answer could change as a cat grows.
+
+Tennessee is the eighth, and it answers by implication rather than by drafting. Nothing in the
+statute mentions the Bengal or the Asian leopard cat, so the catch-all puts both in Class III.
+What makes it more than an absence is subdivision (3)(N), which drops "Bobcat/domestic cat
+hybrids" into the no-permit class expressly, even though the bobcat itself is a native Class II
+animal. A state that deliberately frees the hybrid of its own native wildcat is not reaching an
+Asian leopard cat hybrid by silence. Where a state names one hybrid it did not have to name,
+read that as the answer for the others.
 
 Connecticut is the seventh and the cleanest: Category One is the family Felidae, "except Bengal
 cat pursuant to section 26-40a", carved out by name inside the listing, with no generation

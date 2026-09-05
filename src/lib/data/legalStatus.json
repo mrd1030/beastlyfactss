@@ -98,35 +98,35 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 14,
+        "checked": 15,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 14,
+        "checked": 15,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 15,
+        "checked": 16,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 15,
+        "checked": 16,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 15,
+        "checked": 16,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 15,
+        "checked": 16,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 15,
+        "checked": 16,
         "of": 51
       },
       "green-anole": {
-        "checked": 15,
+        "checked": 16,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,87 +134,87 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "axolotl": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "box-turtle": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 40,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 40,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 40,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 40,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 41,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 41,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 41,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 41,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 42,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 43,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "green-iguana": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "burmese-python": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "degu": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "hamster": {
@@ -226,11 +226,11 @@
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "bengal-cat": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "guinea-pig": {
@@ -242,15 +242,15 @@
         "of": 51
       },
       "ball-python": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "veiled-chameleon": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "boa-constrictor": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "corn-snake": {
@@ -274,7 +274,7 @@
         "of": 51
       },
       "prairie-dog": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "ferret": {
@@ -705,9 +705,9 @@
       "note": "An exotic animal is 'ecologically foreign to Delaware, but allowed for possession, sale, and exhibition if a permit has been issued by the Department', covering live wild mammals, hybrids of wild mammals, and live reptiles not native to the state. A prohibited sublist sits on top, barred to everyone outside parks, zoos, aquariums, museums and research facilities. Administered by the State Veterinarian."
     },
     "tn-70-4-403": {
-      "title": "Tenn. Code Ann. § 70-4-403, Classifications of wildlife",
+      "title": "Tenn. Code Ann. § 70-4-403, Classifications of wildlife, with §§ 70-4-401, 70-4-402 and 70-4-404",
       "url": "https://www.animallaw.info/statute/tn-exotic-pet-part-4-exotic-animals",
-      "note": "Three classes. Class I is 'all species inherently dangerous to humans such as wolves, bears, lions and poisonous snakes', possessable only by zoos, circuses and commercial propagators. Class II is 'native species, except those listed in other classes'. Class III is everything else and needs no wildlife permit, only whatever the Department of Agriculture requires. The catch-all sitting at Class III rather than Class II is what makes Tennessee permissive."
+      "note": "Five classes. Class I is a specific list of inherently dangerous animals, possessable only by zoos, circuses and commercial propagators. Class II is \"native species, except those listed in other classes\". Class III \"requires no permits except those required by the department of agriculture, and includes all species not listed in other classes\", followed by seventeen illustrative subdivisions. Class IV is black bear, white-tailed deer and wild turkey; Class V is whatever the commission designates as injurious. The catch-all sitting at Class III rather than Class II is what makes Tennessee permissive, and the exception clause in Class II is what keeps native reptiles out of it. Tennessee's official code is behind LexisNexis and publications.tnsosfiles.com refuses this container, so the wording here was taken from two independent reproductions that agree: animallaw.info, which carries the current post-2024 text, and lawserver.com, whose copy is marked effective until 1 July 2024 and differs only in the snake clause, which the 2024 amendment changed from \"poisonous\" to \"venomous\"."
     },
     "ar-unrestricted": {
       "title": "Arkansas Game and Fish Commission, Unrestricted Captive Wildlife Species List",
@@ -1318,6 +1318,16 @@
       "title": "COMAR 08.02.06, Snapping Turtles",
       "url": "https://regs.maryland.gov/us/md/exec/comar/08.02.06/index.full.html",
       "note": "Maryland handles the snapping turtle through the Fisheries Service rather than the wildlife rules, which is why it appears on none of the three native herptile lists in COMAR 08.03.11. This chapter governs taking one from the wild: prohibited gear, a season, a measuring method and a harvest permit card."
+    },
+    "tn-70-1-101": {
+      "title": "Tenn. Code Ann. § 70-1-101(40), definition of wildlife",
+      "url": "https://www.lawserver.com/law/state/tennessee/tn-code/tennessee_code_70-1-101",
+      "note": "Wild vertebrates, mollusks, crustaceans and fish. The classification scheme in § 70-4-403 applies to \"live wildlife\", so this definition sets its outer limit and leaves every terrestrial arthropod outside it. Same reproduction caveat as the classification statute."
+    },
+    "tn-twra-permits": {
+      "title": "Tennessee Wildlife Resources Agency, Wildlife Permits Available",
+      "url": "https://www.tn.gov/twra/law-enforcement/permits.html",
+      "note": "The agency page that administers the classification statute, useful for two things. It restates the § 70-4-404(c)(1) position in one line, \"Personal possession of any Class 1 species is not allowed\", and adds that Class I animals may be held only by permitted exhibitors and commercial propagators, which is how the agency reads a fee schedule that still lists a $150 personal possession permit for grandfathered animals. And it names the rule chapter carrying the commission's own additions to the classes, 1660-01-18, Rules and Regulations of Live Wildlife, which sits on publications.tnsosfiles.com and cannot be read from this container."
     }
   },
   "animals": {
@@ -1550,8 +1560,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "note": "Not named, so it falls to the Class III catch-all of species not listed in another class, which needs no wildlife permit.",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 70-4-403(3)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
+          "note": "Tennessee's catch-all sits in the no-permit class rather than the permit class, which is the single fact that decides most questions here: an animal that appears nowhere in Classes I, II, IV or V is Class III and needs no wildlife permit. The African pygmy hedgehog is not on the Class I list, is not native to Tennessee, and is not among the three Class IV species. No insectivore appears anywhere in the classification.",
+          "verifiedOn": "2026-09-05"
         },
         "NC": {
           "status": "legal",
@@ -1915,9 +1927,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "quote": "Ferrets and chinchillas",
-          "note": "Named in Class III, so no wildlife permit.",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 70-4-403(3)(D)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Ferrets and chinchillas",
+          "note": "Named alongside the chinchilla in its own subdivision of the no-permit class. Worth noting for a state that is otherwise strict about carnivores: the ferret is not treated as one here.",
+          "verifiedOn": "2026-09-05"
         },
         "NC": {
           "status": "legal",
@@ -2337,8 +2350,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "note": "Class III catch-all.",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 70-4-403(3)(J)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Marsupials",
+          "note": "The whole group is named as Class III, so no marsupial question arises in Tennessee.",
+          "verifiedOn": "2026-09-05"
         },
         "NC": {
           "status": "legal",
@@ -2578,8 +2593,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "quote": "Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 70-4-403(3)(B)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
+          "note": "Class III wildlife needs no wildlife permit at all, only whatever the Department of Agriculture requires. Named in the rodent subdivision, so no inference from a class definition is needed. The documentary evidence requirement in § 70-4-401(b), a supplier name, address and acquisition date, applies to Class I and Class II wildlife and not to this class.",
+          "verifiedOn": "2026-09-05"
         },
         "ID": {
           "status": "legal",
@@ -2948,8 +2965,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "quote": "Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 70-4-403(3)(B)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
+          "note": "Class III wildlife needs no wildlife permit at all, only whatever the Department of Agriculture requires. Named in the rodent subdivision. The documentary evidence requirement in § 70-4-401(b), a supplier name, address and acquisition date, applies to Class I and Class II wildlife and not to this class.",
+          "verifiedOn": "2026-09-05"
         },
         "ID": {
           "status": "legal",
@@ -3647,6 +3666,14 @@
           "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. The statute reaches no bird at all, and the monk parakeet is named nowhere in Maryland law. That is worth stating plainly, because this is the species most states single out if they single out any parrot: California, Connecticut, New Jersey and Virginia all name it, and Colorado prohibits it outright. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "unclear",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(F), (5)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Avian species not otherwise listed, excluding North American game birds, ostriches and cassowary",
+          "note": "The statute does not reach the monk parakeet. It is named nowhere in the five classes, and the avian catch-all at (3)(F) puts it in the no-permit class. What keeps this unresolved is Class V, which is not a list at all but whatever the commission designates by rule as injurious to the environment, and an agricultural pest bird is exactly what a Class V designation is for. Those designations live in Tenn. Comp. R. & Regs. 1660-01-18, Rules and Regulations of Live Wildlife, which could not be read here: publications.tnsosfiles.com, sos.tn.gov and tnsos.org all sit behind a filter that returns 403 to this container, and Tennessee's official code is behind LexisNexis. Tennessee appears on most circulated lists of states banning the monk parakeet, and if that is right the rule chapter is where it comes from. Recorded unclear rather than legal because the statute alone cannot settle a question the commission was given the power to answer elsewhere.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "quaker-parakeet"
@@ -4033,6 +4060,14 @@
           "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes; (B) A member within the family Canidae (including, but not limited to, wolf and coyote); (C) A member within the family Ursidae ...; or (D) A member within the family Hominidae ...",
           "note": "Connecticut writes the exception into the middle of the family listing: Felidae, \"except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes\". It is the only species carved out of Category One by name, and there is no generation cutoff, weight threshold or registration attached to it. The clause also opens with \"notwithstanding changes in taxonomic nomenclature\", which forecloses the argument that a reclassification could pull the animal back in. Set against Minnesota, where a carve-out and a hybrid sentence in one definition contradict each other, this is what an unambiguous answer to the hybrid question looks like.",
           "verifiedOn": "2026-09-05"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3), (3)(N), (3)(O)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Bobcat/domestic cat hybrids ... Hybrids resulting from a cross between a Class II species and a domestic animal or Class III species",
+          "note": "Two things settle this. The Class I cat entry is \"Lions, tigers, leopards, jaguars, cheetahs, cougars--All species\", and the Asian leopard cat behind the Bengal, Prionailurus bengalensis, is none of them, so it is Class III itself under the catch-all and its hybrid with a domestic cat is too. And Tennessee shows its hand two subdivisions later by putting bobcat/domestic cat hybrids in the no-permit class expressly, even though the bobcat is a native Class II animal. A state that deliberately drops a hybrid of its own native wildcat into Class III is not reaching an Asian leopard cat hybrid by implication.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -4409,6 +4444,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No chameleon is native to Maryland; the native lizards are three skinks, the eastern fence lizard and the six-lined racerunner. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The veiled chameleon is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4776,6 +4819,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No tortoise is native to Maryland; the native testudines are pond and box turtles, softshells and the terrapin. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The Russian tortoise is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/russian-tortoise-legal-guide/"
@@ -5146,6 +5197,14 @@
           "cite": "§ 97A.401, subd. 8",
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
           "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A ball python is a snake, so it needs to have come from a permitted breeder or to have been held before 1 August 2021. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The ball python is nonvenomous and is neither a caiman nor a gavial.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -5531,6 +5590,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. The four snake families Maryland names are Hydrophidae, Elapidae, Viperidae and Crotolidae, all venomous. There is no constrictor length rule anywhere in the statute. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The boa constrictor is nonvenomous and is neither a caiman nor a gavial. There is no constrictor length rule anywhere in this part.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5866,6 +5933,14 @@
           "note": "A tarantula is worth reading carefully in Maryland, because the definition is broad rather than narrow. Unlike Arizona, Nevada and Oregon, whose wildlife definitions list vertebrate groups and stop, Maryland's opening words are \"every living creature, not human, wild by nature\", with the vertebrate list following as an inclusion rather than a limit. What saves the answer is the operative section rather than the definition: § 10-902 attaches its permit only to wildlife native to Maryland, and this species is not. Section 10-903 gives the Secretary a separate power to restrict non-native wildlife by regulation, and Maryland has used it for nonnative aquatic organisms at COMAR 08.02.19, a list of fish, crustaceans, molluscs and two plants, and for nothing terrestrial. Crim. Law § 10-621 reaches no invertebrate either. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-1-101",
+          "cite": "§ 70-1-101(40); § 70-4-403",
+          "quote": "\"Wildlife\" means wild vertebrates, mollusks, crustaceans, and fish",
+          "note": "A tarantula is an arachnid, and Tennessee's definition of wildlife runs to wild vertebrates, mollusks, crustaceans and fish. Section 70-4-403 classifies \"live wildlife\", so the five classes never reach a terrestrial arthropod at all, and neither does the possession prohibition in § 70-4-401(a), which is written about wildlife. Arizona, Nevada and Colorado draw the line in almost the same words. It matters less here than in a closed-list state, since Tennessee's catch-all would have put the animal in the no-permit class in any event.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -6204,6 +6279,14 @@
           "note": "The emperor scorpion is worth reading carefully in Maryland, because the definition is broad rather than narrow. Unlike Arizona, Nevada and Oregon, whose wildlife definitions list vertebrate groups and stop, Maryland's opening words are \"every living creature, not human, wild by nature\", with the vertebrate list following as an inclusion rather than a limit. What saves the answer is the operative section rather than the definition: § 10-902 attaches its permit only to wildlife native to Maryland, and this species is not. Section 10-903 gives the Secretary a separate power to restrict non-native wildlife by regulation, and Maryland has used it for nonnative aquatic organisms at COMAR 08.02.19, a list of fish, crustaceans, molluscs and two plants, and for nothing terrestrial. Crim. Law § 10-621 reaches no invertebrate either. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-1-101",
+          "cite": "§ 70-1-101(40); § 70-4-403",
+          "quote": "\"Wildlife\" means wild vertebrates, mollusks, crustaceans, and fish",
+          "note": "The emperor scorpion is an arachnid, and Tennessee's definition of wildlife runs to wild vertebrates, mollusks, crustaceans and fish. Section 70-4-403 classifies \"live wildlife\", so the five classes never reach a terrestrial arthropod at all, and neither does the possession prohibition in § 70-4-401(a), which is written about wildlife. Arizona, Nevada and Colorado draw the line in almost the same words. It matters less here than in a closed-list state, since Tennessee's catch-all would have put the animal in the no-permit class in any event.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/emperor-scorpion-legal-guide/"
@@ -6574,6 +6657,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Teiidae is represented among Maryland natives by the eastern six-lined racerunner only, which is on the one-per-person tier. Salvator is not native, so the chapter does not reach it, and Maryland has written no tegu-specific rule. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The Argentine black and white tegu is nonvenomous and is neither a caiman nor a gavial. Tennessee has written no tegu-specific rule, and the statute names no lizard at all outside Class I.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6925,6 +7016,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No monitor is native to Maryland and none is named in the statute. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The savannah monitor is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -7334,6 +7433,14 @@
           "note": "Michigan's captive wildlife permit is a closed list of native game species and the prairie dog is not on it, nor is it native game here, so the permit regime does not reach it. The Large Carnivore Act covers only big cats and bears. Importing one calls for a certificate of veterinary inspection as a nonnative rodent under the MDARD rules.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
+          "note": "Tennessee's catch-all sits in the no-permit class rather than the permit class, which is the single fact that decides most questions here: an animal that appears nowhere in Classes I, II, IV or V is Class III and needs no wildlife permit. The prairie dog is not on the Class I list, is not native to Tennessee, and is not among the three Class IV species. Worth comparing across the map: the same animal is prohibited outright in Colorado, Connecticut and Oregon, and needs nothing here, because those states run closed allow-lists and Tennessee runs a closed ban-list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7517,8 +7624,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "note": "Class III catch-all; not a native species, so Class II does not apply.",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 70-4-403(3)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
+          "note": "Tennessee's catch-all sits in the no-permit class rather than the permit class, which is the single fact that decides most questions here: an animal that appears nowhere in Classes I, II, IV or V is Class III and needs no wildlife permit. The capybara is not on the Class I list, is not native to Tennessee, and is not among the three Class IV species. Size does no work in this statute; Class I is a named list and contains no rodent.",
+          "verifiedOn": "2026-09-05"
         },
         "ID": {
           "status": "permit",
@@ -7891,8 +8000,10 @@
         "TN": {
           "status": "unclear",
           "sourceId": "tn-70-4-403",
-          "note": "Same open-ended Class I definition.",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 70-4-403(1)(A)(ii)(a), (3); § 70-4-404(c)(1)",
+          "quote": "Class I--This class includes all species inherently dangerous to humans. ... The following is a listing of animals considered inherently dangerous: (A) Mammals: (i) Primates--Gorillas, orangutans, chimpanzees, gibbons, siamangs, mandrills, drills, baboons, Gelada baboons; (ii) Carnivores: (a) Wolves--All species; (b) Bears--All species; and (c) Lions, tigers, leopards, jaguars, cheetahs, cougars--All species;",
+          "note": "The only canids in Class I are the wolves, \"all species\", and the fennec fox is a Vulpes rather than a Canis. Tennessee names no fox anywhere in the classification, which is a real contrast with Maryland, where the bare word \"fox\" is the whole of the ban. On the statute alone the fennec fox is Class III under the catch-all and needs no permit. What could not be checked is the commission's own rules. Section 70-4-403(1) gives the commission, with the commissioner of agriculture, express power to add or delete species from the Class I list by regulation, and Tenn. Comp. R. & Regs. 1660-01-18 is where such an addition would sit. That chapter could not be read here: publications.tnsosfiles.com returns 403 to this container on every path, and Tennessee's official code is behind LexisNexis. Recorded unclear on that gap rather than on the statute, which is the improvement over the previous note here; the statute itself is readable and does not reach this animal. What rides on it is more than paperwork. Section 70-4-404(c)(1) closed personal possession of Class I wildlife in 1991: the permit it describes is for people who already held the animal on 25 June 1991, \"no new animals shall be brought into possession under authority of a personal possession permit\", and the subsection ends by saying it \"shall not be construed to authorize new personal possession of Class I wildlife\". TWRA restates it in one line on its permits page: \"Personal possession of any Class 1 species is not allowed.\" So an addition by rule would not mean a $150 permit for a private keeper. It would mean no.",
+          "verifiedOn": "2026-09-05"
         },
         "ID": {
           "status": "permit",
@@ -8336,8 +8447,10 @@
         "TN": {
           "status": "unclear",
           "sourceId": "tn-70-4-403",
-          "note": "Class I is defined by example rather than by list, 'inherently dangerous to humans such as wolves, bears, lions', so whether a serval is caught turns on a judgement the statute does not make. Not resolvable from the text.",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 70-4-403(1)(A)(ii)(c), (3); § 70-4-404(c)(1)",
+          "quote": "Class I--This class includes all species inherently dangerous to humans. ... The following is a listing of animals considered inherently dangerous: (A) Mammals: (i) Primates--Gorillas, orangutans, chimpanzees, gibbons, siamangs, mandrills, drills, baboons, Gelada baboons; (ii) Carnivores: (a) Wolves--All species; (b) Bears--All species; and (c) Lions, tigers, leopards, jaguars, cheetahs, cougars--All species;",
+          "note": "The Class I cat entry names six kinds and the serval is none of them: lions, tigers, leopards, jaguars, cheetahs and cougars, each \"all species\". Leptailurus serval is not a Panthera, an Acinonyx or a Puma, and the statute names no other felid. On the statute alone the serval is Class III under the catch-all and needs no permit, and Tennessee reinforces that reading two subdivisions later by putting bobcat hybrids in Class III expressly. What could not be checked is the commission's own rules. Section 70-4-403(1) gives the commission, with the commissioner of agriculture, express power to add or delete species from the Class I list by regulation, and Tenn. Comp. R. & Regs. 1660-01-18 is where such an addition would sit. That chapter could not be read here: publications.tnsosfiles.com returns 403 to this container on every path, and Tennessee's official code is behind LexisNexis. Recorded unclear on that gap rather than on the statute, which is the improvement over the previous note here; the statute itself is readable and does not reach this animal. What rides on it is more than paperwork. Section 70-4-404(c)(1) closed personal possession of Class I wildlife in 1991: the permit it describes is for people who already held the animal on 25 June 1991, \"no new animals shall be brought into possession under authority of a personal possession permit\", and the subsection ends by saying it \"shall not be construed to authorize new personal possession of Class I wildlife\". TWRA restates it in one line on its permits page: \"Personal possession of any Class 1 species is not allowed.\" So an addition by rule would not mean a $150 permit for a private keeper. It would mean no.",
+          "verifiedOn": "2026-09-05"
         },
         "ID": {
           "status": "permit",
@@ -8741,10 +8854,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "quote": "Ferrets and chinchillas",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 70-4-403",
-          "note": "Tennessee sorts wildlife into five classes and then names the ferret and the chinchilla together as animals needing no permit at all, rather than leaving them to be inferred from a class definition."
+          "cite": "§ 70-4-403(3)(D)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Ferrets and chinchillas",
+          "note": "Tennessee names the ferret and the chinchilla together in their own subdivision of the no-permit class, rather than leaving them to be inferred. Class III wildlife needs no wildlife permit and no supplier documentation, since § 70-4-401(b) reaches only Class I and Class II.",
+          "verifiedOn": "2026-09-05"
         },
         "NC": {
           "status": "legal",
@@ -9026,8 +9139,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "quote": "Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 70-4-403(3)(B)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
+          "note": "Class III wildlife needs no wildlife permit at all, only whatever the Department of Agriculture requires. Named in the rodent subdivision. The documentary evidence requirement in § 70-4-401(b), a supplier name, address and acquisition date, applies to Class I and Class II wildlife and not to this class.",
+          "verifiedOn": "2026-09-05"
         },
         "ID": {
           "status": "legal",
@@ -9712,6 +9827,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No iguanid is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The green iguana is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -10077,6 +10200,14 @@
           "note": "The snapping turtle is a Maryland native and appears on none of the three native herptile lists, which looks like an omission until you notice which agency has it: Maryland treats the species as a fishery, under the Fisheries Service and Natural Resources Article §§ 4-218 and 4-738 rather than the wildlife article. This chapter governs taking one from the wild, with prohibited gear, a season, a prescribed way of measuring the carapace and a harvest permit card. What it does not do is set up a pet possession permit, so a captive animal is not reached by the herptile chapter and a wild-caught one runs through the fisheries rules instead. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The snapping turtle is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. Commercial harvest from the wild is regulated separately; the classification decides possession.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10420,6 +10551,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No gecko is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The tokay gecko is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10775,6 +10914,14 @@
           "note": "Maryland puts the eastern tiger salamander on its third tier, which is a flat bar rather than a cap. The only permits that reach it are the scientific collection permit under Nat. Res. § 10-909 and the endangered species permit under § 10-2A-05, both institutional. The species is at the northern edge of its range in Maryland and is state endangered, which is the context. Note the chapter draws no captive-bred exception anywhere on this tier, and Regulation .03D makes the scientific name control, so Ambystoma tigrinum is caught however the animal was produced or wherever it came from. Oregon reaches the same result by naming every nonnative subspecies on its prohibited list; Maryland reaches it by naming its own. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The tiger salamander is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. Class I amphibians are the poisonous species only, and Ambystoma tigrinum is not one. Compare Oregon and Maryland, which each ban this animal outright to protect their own populations, and Tennessee, which reaches it through a rule about venom and so does not reach it at all.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11131,6 +11278,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No monitor is native to Maryland. Several states name this species specifically; Maryland does not. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The Nile monitor is nonvenomous and is neither a caiman nor a gavial. Several states name this species specifically. Tennessee names no monitor, because its reptile line is drawn on venom.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11505,6 +11660,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Maryland itself sets no length trigger and lists no python. Federal law is the constraint that bites, since the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport into Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The Burmese python is nonvenomous and is neither a caiman nor a gavial. Tennessee itself sets no length trigger and lists no python. Federal law is the constraint that bites, since the species has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport into Tennessee.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11876,6 +12039,14 @@
           "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. No rodent appears in the eight clauses, and the degu is not native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
+          "note": "Tennessee's catch-all sits in the no-permit class rather than the permit class, which is the single fact that decides most questions here: an animal that appears nowhere in Classes I, II, IV or V is Class III and needs no wildlife permit. The degu is not on the Class I list, is not native to Tennessee, and is not among the three Class IV species. The rodent subdivision names seven kinds and the catch-all covers the rest.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -12209,6 +12380,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Ambystoma mexicanum is not native to Maryland. Its congener the eastern tiger salamander is, and is on the tier that may not be possessed at all, so the two Ambystoma come out at opposite ends of the same chapter. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The axolotl is nonvenomous and is neither a caiman nor a gavial. Only poisonous amphibians are Class I, and the axolotl is not one.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12549,6 +12728,14 @@
           "note": "The eastern box turtle is on Maryland's middle tier, so one animal per person with no permit and no more. Two further conditions ride on the same subsection: every turtle must have a carapace of at least four inches, which is the state writing the federal small-turtle rule into its own possession law, and Regulation .16 bars using any listed species in a competition, which is aimed at turtle races. The certificate of origin requirement in the same subsection applies to wood turtles, spotted turtles and terrapins rather than to the box turtle. Above one, or to breed or sell, a reptile and amphibian permit is needed. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The eastern box turtle is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. Taking one from the wild is a separate question under the hunting and trapping rules; the classification decides possession.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12892,6 +13079,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Trachemys is absent from all three native lists; Maryland's comparable native is the northern red-bellied cooter, Pseudemys rubriventris, which is on the one-per-person tier. Nor is the slider on the nonnative aquatic organism list at COMAR 08.02.19, which is fish, crustaceans, molluscs and two plants and names no reptile. That puts Maryland at the permissive end of a question Oregon and Colorado answer sharply. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The red-eared slider is nonvenomous and is neither a caiman nor a gavial. Tennessee does not classify the species as invasive anywhere in the statute, which puts it at the permissive end of a question Oregon and Colorado answer sharply.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13232,6 +13427,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No tortoise is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The sulcata tortoise is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13571,6 +13774,14 @@
           "note": "Which hognose it is decides the answer, and Maryland makes the split a matter of degree rather than of kind. The eastern hog-nosed snake, Heterodon platirhinos, is a Maryland native on the middle tier, so one per person with no permit. The western hognose, H. nasicus, is the animal the pet trade sells, is not on any of the three native lists, and is therefore outside the chapter entirely and unrestricted. Illinois and Connecticut each list one hognose and leave the other alone too, and no two of the three states pick the same one. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The hognose snake is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. Both the eastern and the western hognose are nonvenomous, so which species it is makes no difference here. That is unusual: Illinois, Connecticut and Maryland all split the two, and no two of them split it the same way.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13908,6 +14119,14 @@
           "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. The statute reaches no bird, and the African grey is not native Maryland wildlife. Federal CITES Appendix I paperwork is the live constraint on this species and is not a Maryland matter. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(F)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Avian species not otherwise listed, excluding North American game birds, ostriches and cassowary",
+          "note": "Covered by the avian catch-all. Federal CITES Appendix I paperwork is the live constraint on this species and is not a Tennessee matter.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14239,6 +14458,14 @@
           "note": "The giant African millipede is worth reading carefully in Maryland, because the definition is broad rather than narrow. Unlike Arizona, Nevada and Oregon, whose wildlife definitions list vertebrate groups and stop, Maryland's opening words are \"every living creature, not human, wild by nature\", with the vertebrate list following as an inclusion rather than a limit. What saves the answer is the operative section rather than the definition: § 10-902 attaches its permit only to wildlife native to Maryland, and this species is not. Section 10-903 gives the Secretary a separate power to restrict non-native wildlife by regulation, and Maryland has used it for nonnative aquatic organisms at COMAR 08.02.19, a list of fish, crustaceans, molluscs and two plants, and for nothing terrestrial. Crim. Law § 10-621 reaches no invertebrate either. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-1-101",
+          "cite": "§ 70-1-101(40); § 70-4-403",
+          "quote": "\"Wildlife\" means wild vertebrates, mollusks, crustaceans, and fish",
+          "note": "The giant African millipede is a myriapod, and Tennessee's definition of wildlife runs to wild vertebrates, mollusks, crustaceans and fish. Section 70-4-403 classifies \"live wildlife\", so the five classes never reach a terrestrial arthropod at all, and neither does the possession prohibition in § 70-4-401(a), which is written about wildlife. Arizona, Nevada and Colorado draw the line in almost the same words. It matters less here than in a closed-list state, since Tennessee's catch-all would have put the animal in the no-permit class in any event.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14496,12 +14723,12 @@
           "verifiedOn": "2026-08-27"
         },
         "TN": {
-          "status": "conditional",
+          "status": "legal",
           "sourceId": "tn-70-4-403",
-          "cite": "Tenn. Code § 70-4-403(3)(A)",
-          "quote": "Nonpoisonous reptiles and amphibians except caimans and gavials",
-          "note": "Class III wildlife needs no possession permit, and this clause covers a corn snake regardless of origin. But corn snake is Tennessee native, and TWRA practice requires anyone holding a native, nonpoisonous Tennessee reptile to keep documentary evidence of the supplier's name and address and the date of acquisition, to distinguish legitimately-sourced animals from wild-collected ones.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The corn snake is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. This entry previously carried a documentation condition drawn from § 70-4-401(b). That subsection reaches Class I and Class II wildlife, and a native nonvenomous reptile is neither.",
+          "verifiedOn": "2026-09-05"
         },
         "TX": {
           "status": "legal",
@@ -14829,12 +15056,12 @@
           "verifiedOn": "2026-08-27"
         },
         "TN": {
-          "status": "conditional",
+          "status": "legal",
           "sourceId": "tn-70-4-403",
-          "cite": "Tenn. Code § 70-4-403(3)(A)",
-          "quote": "Nonpoisonous reptiles and amphibians except caimans and gavials",
-          "note": "Class III wildlife needs no possession permit, and milk snake is nonpoisonous. But it is Tennessee native, and TWRA practice requires anyone holding a native, nonpoisonous Tennessee reptile to keep documentary evidence of the supplier's name, address and acquisition date.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The milk snake is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. This entry previously carried the same documentation condition, which follows Class I and Class II and does not reach a Class III animal.",
+          "verifiedOn": "2026-09-05"
         },
         "TX": {
           "status": "legal",
@@ -15222,10 +15449,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "cite": "Tenn. Code § 70-4-403(3)(A)",
-          "quote": "Nonpoisonous reptiles and amphibians except caimans and gavials",
-          "note": "Class III wildlife needs no possession permit. Rosy boa is not Tennessee native, so the native-sourcing documentation practice that applies to corn snake and milk snake here does not apply.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The rosy boa is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         },
         "TX": {
           "status": "legal",
@@ -15338,9 +15565,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "cite": "§ 70-4-403",
-          "note": "Squirrels and chipmunks are named as Class III wildlife, which needs no TWRA possession permit. The animal must be legally sourced (i.e. not taken from the wild) for the no-permit status to apply.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 70-4-403(3)(B); § 70-4-403(2)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
+          "note": "The southern flying squirrel is native to Tennessee, which would normally put it in Class II, and the word \"squirrels\" in this subdivision is what keeps it out. Class II is defined as \"native species, except those listed in other classes\", so a native animal named in Class III is excluded from Class II and needs no permit and no supplier documentation. Taking one from the wild is a separate question governed by the hunting and trapping rules.",
+          "verifiedOn": "2026-09-05"
         },
         "TX": {
           "status": "legal",
@@ -15935,6 +16163,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No monitor is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The ackie monitor is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -16264,12 +16500,12 @@
           "verifiedOn": "2026-08-27"
         },
         "TN": {
-          "status": "permit",
+          "status": "legal",
           "sourceId": "tn-70-4-403",
-          "cite": "§ 70-4-403; Tenn. Comp. R. & Regs. 1660-01-18",
-          "permitFor": "personal",
-          "note": "Tennessee's Class II covers native wildlife and requires a Wildlife Possession Permit with microchip or tattoo identification within 30 days. A garter snake, being Tennessee-native, falls in Class II rather than the unregistered Class III that non-native pet reptiles occupy.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The garter snake is nonvenomous and is neither a caiman nor a gavial. The point that decides every native reptile in Tennessee is the exception clause in Class II, which reads \"native species, except those listed in other classes\". A native nonpoisonous reptile IS listed in another class, at (3)(A), so it is excluded from Class II and lands in Class III with no permit. The supplier documentation requirement in § 70-4-401(b) follows Class I and Class II and does not reach it either. This entry previously read as requiring a Class II wildlife possession permit. It does not: the Class II definition excepts native species listed in other classes, and every nonvenomous native reptile is listed at (3)(A). A Class II personal possession permit costs $10 an animal under § 70-4-404(d)(1)(B), and there is no Class III equivalent because none is needed.",
+          "verifiedOn": "2026-09-05"
         },
         "TX": {
           "status": "legal",
@@ -16662,9 +16898,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "cite": "§ 70-4-403; Tenn. Comp. R. & Regs. 1660-01-18",
-          "note": "Not native to Tennessee, so a California kingsnake is Class III: a nonpoisonous, non-native reptile that needs no registration.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The California kingsnake is nonvenomous and is neither a caiman nor a gavial. The California kingsnake is not a Tennessee native, so the Class II question never arises for it.",
+          "verifiedOn": "2026-09-05"
         },
         "TX": {
           "status": "legal",
@@ -17049,9 +17286,10 @@
         "TN": {
           "status": "legal",
           "sourceId": "tn-70-4-403",
-          "cite": "§ 70-4-403",
-          "note": "A non-native cockatoo is Tennessee Class III: a nonpoisonous, non-native species that needs no registration.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 70-4-403(3)(F)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Avian species not otherwise listed, excluding North American game birds, ostriches and cassowary",
+          "note": "The bird subdivision is written as a catch-all with three exclusions, none of which is a parrot. Class III needs no wildlife permit.",
+          "verifiedOn": "2026-09-05"
         },
         "TX": {
           "status": "legal",
@@ -17495,6 +17733,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No tortoise is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The red-footed tortoise is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17625,6 +17871,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Agamidae is not represented among Maryland natives. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The bearded dragon is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17755,6 +18009,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No gecko is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The leopard gecko is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17885,6 +18147,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No gecko is native to Maryland, so the family reclassification that complicates this species in Colorado and Oregon does not arise. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The crested gecko is nonvenomous and is neither a caiman nor a gavial. Tennessee names no gecko family, so the reclassification that complicates this species in Colorado and Oregon does not arise.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18015,6 +18285,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Maryland has three native skinks, the common five-lined, little brown and broad-headed, and a fourth on its prohibited tier, the northern coal skink. Tiliqua is none of them. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The blue-tongue skink is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18145,6 +18423,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. No chameleon is native to Maryland. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. Jackson's chameleon is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18274,6 +18560,14 @@
           "note": "Maryland regulates reptiles and amphibians by nativity rather than by danger. COMAR 08.03.11 lists the native species in three tiers and reaches nothing else, and the only reptiles in the Crim. Law § 10-621 list are the crocodilians and the four venomous snake families. Anolis is not among the six lizards Maryland lists as native. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(A)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Tennessee sorts reptiles by venom rather than by species: Class I takes the crocodilians and all venomous snakes, and subdivision (3)(A) puts every other reptile and amphibian in the no-permit class, with caimans and gavials carved back out. The green anole is nonvenomous and is neither a caiman nor a gavial.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18397,6 +18691,14 @@
           "note": "Maryland answers a pet question with three rules and this animal is outside all of them. Crim. Law § 10-621 is a closed list of eight clauses. Nat. Res. § 10-902 requires a permit only for wildlife native to Maryland. COMAR 08.03.11 covers native reptiles and amphibians. The pet rabbit is Oryctolagus cuniculus and is not native to Maryland, whose native lagomorph is the eastern cottontail, so the § 10-902 permit does not attach. Maryland does not adopt the federal injurious wildlife list, which is what makes this species awkward in Minnesota and Illinois. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403(3)(C)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Rabbits, hares, moles and shrews",
+          "note": "Named in its own subdivision of the no-permit class. Tennessee reaches the rabbit by common name and by group rather than by the binomial that makes this species awkward in Minnesota and Illinois, and it does not adopt the federal injurious wildlife list anywhere in this part.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18519,6 +18821,14 @@
           "note": "The Madagascar hissing cockroach is worth reading carefully in Maryland, because the definition is broad rather than narrow. Unlike Arizona, Nevada and Oregon, whose wildlife definitions list vertebrate groups and stop, Maryland's opening words are \"every living creature, not human, wild by nature\", with the vertebrate list following as an inclusion rather than a limit. What saves the answer is the operative section rather than the definition: § 10-902 attaches its permit only to wildlife native to Maryland, and this species is not. Section 10-903 gives the Secretary a separate power to restrict non-native wildlife by regulation, and Maryland has used it for nonnative aquatic organisms at COMAR 08.02.19, a list of fish, crustaceans, molluscs and two plants, and for nothing terrestrial. Crim. Law § 10-621 reaches no invertebrate either. Subsection (e) of § 10-621 preserves stricter county and municipal rules, and Maryland counties use that power, so the local ordinance is worth checking before the state list.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-1-101",
+          "cite": "§ 70-1-101(40); § 70-4-403",
+          "quote": "\"Wildlife\" means wild vertebrates, mollusks, crustaceans, and fish",
+          "note": "The Madagascar hissing cockroach is an insect, and Tennessee's definition of wildlife runs to wild vertebrates, mollusks, crustaceans and fish. Section 70-4-403 classifies \"live wildlife\", so the five classes never reach a terrestrial arthropod at all, and neither does the possession prohibition in § 70-4-401(a), which is written about wildlife. Arizona, Nevada and Colorado draw the line in almost the same words. It matters less here than in a closed-list state, since Tennessee's catch-all would have put the animal in the no-permit class in any event.",
+          "verifiedOn": "2026-09-05"
         }
       }
     }
