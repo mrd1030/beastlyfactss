@@ -95,8 +95,40 @@
       "NE"
     ],
     "remaining": 0,
-    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got.",
+    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
+      "hissing-cockroach": {
+        "checked": 3,
+        "of": 51
+      },
+      "bearded-dragon": {
+        "checked": 4,
+        "of": 51
+      },
+      "leopard-gecko": {
+        "checked": 4,
+        "of": 51
+      },
+      "crested-gecko": {
+        "checked": 4,
+        "of": 51
+      },
+      "blue-tongue-skink": {
+        "checked": 4,
+        "of": 51
+      },
+      "chameleon-jackson": {
+        "checked": 4,
+        "of": 51
+      },
+      "green-anole": {
+        "checked": 4,
+        "of": 51
+      },
+      "rabbit": {
+        "checked": 4,
+        "of": 51
+      },
       "flying-squirrel": {
         "checked": 23,
         "of": 51
@@ -1151,6 +1183,11 @@
       "title": "Mich. Comp. Laws § 287.731, Animal Industry Act, importation of animals, with the MDARD import requirements issued under it",
       "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-287-731",
       "note": "The import side, which is where most lawful Michigan exotics actually meet a rule. The director may require an entry permit for wild or exotic animals, and MDARD's published requirements call for a certificate of veterinary inspection to import exotic animals, native wild animals, nonnative rodents, nonnative reptiles and amphibians, and non-poultry birds. MDARD does not issue entry permits for exotic, circus and zoo animals, so in practice the certificate is the requirement. Large carnivores and wolf-dog crosses are barred here except as their own acts allow."
+    },
+    "hi-4-71-rule": {
+      "title": "Hawaii Administrative Rules Chapter 4-71, Non-Domestic Animal Import Rules, § 4-71-2 definitions and § 4-71-6.5 permitted introductions",
+      "url": "https://dab.hawaii.gov/wp-content/uploads/2019/02/Chap.-4-71-HAR-Non-Domestic-Animal-Import-Rules-1.pdf",
+      "note": "The rule text the three species lists hang off, and the part that explains why Hawaii answers differently from everywhere else. Two things matter. § 4-71-6.5 allows introduction only for animals on the conditionally approved or restricted lists, which is what makes an unlisted animal barred by default rather than unregulated. And § 4-71-2 defines a set of domestic animals, the European rabbit among them, then says that as used in the chapter the word animal means non-domestic animal, so the lists never reach those species at all."
     }
   },
   "animals": {
@@ -14312,6 +14349,296 @@
           "cite": "Fisheries Order 224.21",
           "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
           "note": "The red-footed tortoise is South American and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        }
+      }
+    },
+    "bearded-dragon": {
+      "name": "Bearded dragon",
+      "scientific": "Pogona vitticeps",
+      "encyclopediaId": "bearded-dragon",
+      "jurisdictions": {
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Pogona (Amphibolurus) vittaceps  dragon, inland bearded",
+          "note": "Part A is headed FOR RESEARCH AND EXHIBITION, so a listed animal has no pet route: a university or a licensed exhibitor can hold one and a private keeper cannot. The inland bearded dragon is the species the pet trade actually sells, and Hawaii names it directly, alongside the Australian and Nullarbor bearded dragons. The official list misspells the species as vittaceps for vitticeps.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "California's restricted reptile list runs to crocodilians, snapping turtles, venomous snakes and the Gila monster, and nothing else. No agamid is restricted, so the most popular pet lizard in the country is unregulated here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "note": "The inland bearded dragon is Australian and is absent from the Fish and Boat Commission's list of Pennsylvania native species. Pennsylvania's Chapter 79 regulates native reptiles and amphibians only, and the Game and Wildlife Code reaches wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so a non-native reptile falls outside both agencies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "note": "The inland bearded dragon is Australian and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        }
+      }
+    },
+    "leopard-gecko": {
+      "name": "Leopard gecko",
+      "scientific": "Eublepharis macularius",
+      "encyclopediaId": "leopard-gecko",
+      "jurisdictions": {
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Eublepharis macularius  gecko, leopard",
+          "note": "Part A is headed FOR RESEARCH AND EXHIBITION, so a listed animal has no pet route: a university or a licensed exhibitor can hold one and a private keeper cannot. Named individually in the Gekkonidae block, so there is no argument to be had about genus or family coverage.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "California's restricted reptile list runs to crocodilians, snapping turtles, venomous snakes and the Gila monster, and nothing else. No gecko appears on the restricted list; the only lizard California restricts is the reticulate Gila monster.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "note": "The leopard gecko is a Central and South Asian species and is absent from the Fish and Boat Commission's list of Pennsylvania native species. Pennsylvania's Chapter 79 regulates native reptiles and amphibians only, and the Game and Wildlife Code reaches wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so a non-native reptile falls outside both agencies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "note": "The leopard gecko is a Central and South Asian species and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        }
+      }
+    },
+    "crested-gecko": {
+      "name": "Crested gecko",
+      "scientific": "Correlophus ciliatus",
+      "encyclopediaId": "crested-gecko",
+      "jurisdictions": {
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-rule",
+          "cite": "§ 4-71-6.5",
+          "quote": "The introduction into Hawaii of live animals or live non-domestic animals as defined in this chapter is only allowed: (1) For those animals on the list designated as conditionally approved and dated November 28, 2006, or on the list designated as restricted entry, dated September 25, 2018",
+          "note": "Hawaii runs an inverted rule, and this is the clause that creates it. Introduction is allowed only for animals on the conditionally approved or restricted lists, so an animal on none of them is barred by default rather than left unregulated. The crested gecko appears on no Hawaii list under either name, Correlophus ciliatus or the older Rhacodactylus ciliatus. Its congener Rhacodactylus leachianus is on the restricted list, which shows the geckos were worked through one species at a time and this one was simply never reached, most likely because it was thought extinct until 1994 and had no pet trade when the lists were written. Absence from the lists here is a ban, not a gap.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "California's restricted reptile list runs to crocodilians, snapping turtles, venomous snakes and the Gila monster, and nothing else. No gecko appears on the restricted list.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "note": "The crested gecko is a New Caledonian species and is absent from the Fish and Boat Commission's list of Pennsylvania native species. Pennsylvania's Chapter 79 regulates native reptiles and amphibians only, and the Game and Wildlife Code reaches wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so a non-native reptile falls outside both agencies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "note": "The crested gecko is a New Caledonian species and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        }
+      }
+    },
+    "blue-tongue-skink": {
+      "name": "Blue-tongue skink",
+      "scientific": "Tiliqua scincoides",
+      "encyclopediaId": "blue-tongue-skink",
+      "jurisdictions": {
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Tiliqua scincoides  skink, blue-tongued",
+          "note": "Part A is headed FOR RESEARCH AND EXHIBITION, so a listed animal has no pet route: a university or a licensed exhibitor can hold one and a private keeper cannot. Named individually. Several other Tiliqua are listed beside it, so the whole pet-trade group is covered rather than just this species.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "California's restricted reptile list runs to crocodilians, snapping turtles, venomous snakes and the Gila monster, and nothing else. No skink is restricted.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "note": "The blue-tongue skink is Australian and is absent from the Fish and Boat Commission's list of Pennsylvania native species. Pennsylvania's Chapter 79 regulates native reptiles and amphibians only, and the Game and Wildlife Code reaches wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so a non-native reptile falls outside both agencies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "note": "The blue-tongue skink is Australian and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        }
+      }
+    },
+    "chameleon-jackson": {
+      "name": "Jackson's chameleon",
+      "scientific": "Trioceros jacksonii",
+      "encyclopediaId": "chameleon-jackson",
+      "jurisdictions": {
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-rule",
+          "cite": "§ 4-71-6.5",
+          "quote": "The introduction into Hawaii of live animals or live non-domestic animals as defined in this chapter is only allowed: (1) For those animals on the list designated as conditionally approved and dated November 28, 2006, or on the list designated as restricted entry, dated September 25, 2018",
+          "note": "Hawaii runs an inverted rule, and this is the clause that creates it. Introduction is allowed only for animals on the conditionally approved or restricted lists, so an animal on none of them is barred by default rather than left unregulated. The Chamaeleonidae block on the restricted list names only Chamaeleo chamaeleon and Furcifer oustaleti, and Jackson's chameleon appears on no Hawaii list under either Trioceros jacksonii or the older Chamaeleo jacksonii. The result reads oddly, because this is the chameleon most associated with Hawaii, having established wild populations there after escaping the pet trade, and yet keeping one is not permitted. Absence from the lists here is a ban, not a gap.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "California's restricted reptile list runs to crocodilians, snapping turtles, venomous snakes and the Gila monster, and nothing else. The only chameleons named anywhere in section 671 are absent entirely, so no chameleon is restricted.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "note": "Jackson's chameleon is an East African species and is absent from the Fish and Boat Commission's list of Pennsylvania native species. Pennsylvania's Chapter 79 regulates native reptiles and amphibians only, and the Game and Wildlife Code reaches wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so a non-native reptile falls outside both agencies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "note": "Jackson's chameleon is an East African species and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        }
+      }
+    },
+    "green-anole": {
+      "name": "Green anole",
+      "scientific": "Anolis carolinensis",
+      "encyclopediaId": "green-anole",
+      "jurisdictions": {
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-rule",
+          "cite": "§ 4-71-6.5",
+          "quote": "The introduction into Hawaii of live animals or live non-domestic animals as defined in this chapter is only allowed: (1) For those animals on the list designated as conditionally approved and dated November 28, 2006, or on the list designated as restricted entry, dated September 25, 2018",
+          "note": "Hawaii runs an inverted rule, and this is the clause that creates it. Introduction is allowed only for animals on the conditionally approved or restricted lists, so an animal on none of them is barred by default rather than left unregulated. The Iguanidae block on the restricted list names Anolis equestris, the knight anole, and stops there. The green anole appears on no Hawaii list, so it is barred by default even though it has been established in the wild across the islands for decades. Absence from the lists here is a ban, not a gap.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "California's restricted reptile list runs to crocodilians, snapping turtles, venomous snakes and the Gila monster, and nothing else. No anole is restricted.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.1",
+          "note": "The green anole is native to the southeastern United States but not to Pennsylvania, and it is absent from the Fish and Boat Commission's list of Pennsylvania native species. Pennsylvania's Chapter 79 regulates native reptiles and amphibians only, and the Game and Wildlife Code reaches wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so a non-native reptile falls outside both agencies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "note": "The green anole is a southeastern species and is not a Michigan species. Michigan's Fisheries Order 224.21 reaches only a state reptile or amphibian taken from the wild, and neither the Large Carnivore Act nor the DNR captive game permit reaches a reptile, so nothing in Michigan restricts it. Bringing one in calls for a certificate of veterinary inspection under the MDARD import rules.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        }
+      }
+    },
+    "rabbit": {
+      "name": "Rabbit",
+      "scientific": "Oryctolagus cuniculus",
+      "encyclopediaId": "rabbit",
+      "jurisdictions": {
+        "HI": {
+          "status": "legal",
+          "sourceId": "hi-4-71-rule",
+          "cite": "§ 4-71-2",
+          "quote": "domesticated races of European rabbit (Oryctolagus cuniculus)... and domestic hybrids (crosses between two domestic animals). As used in this chapter, the term or word, \"animal,\" shall mean \"non-domestic animal\"",
+          "note": "The answer that most Hawaii summaries get wrong, and the reason is structural. The domestic rabbit is not on the conditionally approved list, and in Hawaii being unlisted normally means barred. But § 4-71-2 names domesticated races of the European rabbit as a domestic animal and then says that as used in the chapter the word animal means non-domestic animal, so the lists never reach a pet rabbit in the first place. Wild hares in the genus Lepus are separately prohibited. Bringing one to the islands still needs an import permit under HRS chapter 150A.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(1)(I)",
+          "quote": "except domesticated races of rabbits and hares of the family Leporidae are not restricted",
+          "note": "California restricts the order Lagomorpha as a whole and then carves the pet rabbit straight back out by name. Wild rabbits and hares stay restricted, so the exemption turns on the animal being a domesticated race rather than on the family.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)",
+          "note": "The rabbit appears in none of the eleven categories the Game Commission prohibits. Pennsylvania's definitional chain technically makes every mammal but livestock a wild animal, and § 137.1(a)(11) reads on any wildlife captive bred out of state, but the Commission applies that to undomesticated species and the domestic rabbit is not one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "note": "The permit to hold game in captivity is a closed list of native game species and the rabbit is not on it; Michigan's native lagomorphs are the snowshoe hare and the eastern cottontail, not the European rabbit behind every pet breed. Nothing else in Michigan reaches it. Importing one calls for a certificate of veterinary inspection as a domestic rabbit.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        }
+      }
+    },
+    "hissing-cockroach": {
+      "name": "Madagascar hissing cockroach",
+      "scientific": "Gromphadorhina portentosa",
+      "encyclopediaId": "hissing-cockroach",
+      "jurisdictions": {
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-rule",
+          "cite": "§ 4-71-6.5",
+          "quote": "The introduction into Hawaii of live animals or live non-domestic animals as defined in this chapter is only allowed: (1) For those animals on the list designated as conditionally approved and dated November 28, 2006, or on the list designated as restricted entry, dated September 25, 2018",
+          "note": "Hawaii runs an inverted rule, and this is the clause that creates it. Introduction is allowed only for animals on the conditionally approved or restricted lists, so an animal on none of them is barred by default rather than left unregulated. Hawaii's insect entries across all three lists are a short list of named species, the mealworm, the pomace fly, the honey bee, a green bottle blow fly, a parasitic wasp and a few butterflies. The Madagascar hissing cockroach is on none of them, and on an island chain that quarantines insects harder than anywhere else in the country that absence is decisive. Absence from the lists here is a ban, not a gap.",
+          "verifiedOn": "2026-09-05"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-34-102",
+          "cite": "34 Pa.C.S. § 102",
+          "note": "Pennsylvania's two animal agencies divide the field and a terrestrial invertebrate falls in the gap. The Game Commission holds wildlife, defined as wild birds and wild mammals, and the Fish and Boat Commission holds reptiles and amphibians. No state possession rule applies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "note": "Not a reptile or amphibian, so the herp order does not reach it, and not a cat, a bear or native game, so the Large Carnivore Act and the captive game permit do not either. Michigan handles invertebrates through its invasive species list rather than any pet law.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
