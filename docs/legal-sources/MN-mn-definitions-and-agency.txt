@@ -1,0 +1,229 @@
+# Minnesota definitions, invasive species rule, and the DNR's own pet-trade page
+
+sourceId: mn-97a-015 / mn-84d-05 / mn-dnr-pet-trade
+jurisdiction: MN
+url: https://www.revisor.mn.gov/statutes/cite/97A.015
+     https://www.revisor.mn.gov/rules/6216.0250/
+     https://www.dnr.state.mn.us/reptiles_amphibians/sales.html
+     https://www.dnr.state.mn.us/invasives/laws.html
+fetched: 2026-09-05
+fetch notes: see the header of MN-mn-statutes.txt. The 97A.015 page is long; the two
+  subdivisions that matter are 39 (protected wild animals) and 55 (wild animals), and 45
+  (small game) settles the flying squirrel.
+
+The DNR pet-trade page is the agency reading of its own herp rules and is worth quoting for
+what it does NOT say: it never mentions 97A.401 subd. 8 or any breeder permit, and it frames
+the 2017 protected-animal change as reaching wild collected Minnesota herps. It also carries
+the two lists nothing else gives you, the native turtle list and the listed endangered and
+threatened herptiles.
+
+The invasive species laws page is the DNR restating Minn. R. 6216.0250 in plain words, which is
+where the European rabbit problem is at its sharpest: the agency itself says possession of a
+prohibited invasive species is a misdemeanour and lists permits only for disposal, control,
+research or education.
+
+=========================================================================
+Minn. Stat. § 97A.015, the subdivisions that decide things
+=========================================================================
+Subd. 39. Protected wild animals.
+"Protected wild animals" means big game, small game, game fish, native rough fish, minnows, leeches, chubs, frogs, turtles, clams, mussels, wolf, mourning doves, bats, snakes, salamanders, lizards, any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134, and wild animals that are protected by a restriction in the time or manner of taking, other than a restriction in the use of artificial lights, poison, or motor vehicles.
+§
+
+Subd. 45. Small game.
+"Small game" means game birds, gray squirrel, fox squirrel, cottontail rabbit, snowshoe hare, jack rabbit, raccoon, lynx, bobcat, short-tailed weasel, long-tailed weasel, wolf, red fox and gray fox, fisher, pine marten, opossum, badger, cougar, wolverine, muskrat, mink, otter, and beaver.
+§
+
+Subd. 53. Unprotected wild animals.
+"Unprotected wild animals" means wild animals that are not protected wild animals including coyote, plains pocket gopher, porcupine, striped skunk, and unprotected birds, except any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134.
+§
+
+Subd. 55. Wild animals.
+"Wild animals" means all creatures, whether dead or alive, not human, wild by nature, endowed with sensation and power of voluntary motion, and includes mammals, birds, fish, amphibians, reptiles, crustaceans, and mollusks.
+History:
+
+=========================================================================
+Minn. R. 6216.0250, prohibited invasive species (mammals subpart)
+=========================================================================
+Subp. 5.
+Mammals.
+The following mammals are designated as prohibited invasive species:
+§
+A.
+Asian raccoon dog, also known as finnraccoon ( Nyctereutes procyonoides );
+§
+B.
+Eurasian swine, European wild boar ( Sus scrofa scrofa ) Linnaeus;
+§
+C.
+European rabbit ( Oryctolagus cuniculus ); and
+§
+D.
+nutria, any strain ( Myocastor coypus ).
+Statutory Authority:
+MS s 14.388 ; 84.027 ; 84.9691 ; 84D.12
+History:
+20 SR 2292(NO. 43); L 1996 c 385 art 2 s 7; 22 SR 2076; 28 SR 629; L 2004 c 243 s 40; 32 SR 724; 38 SR 1706; L 2014 c 289 s 69; 41 SR 113; 43 SR 683; 48 SR 796
+Published Electronically:
+July 24, 2024
+
+=========================================================================
+Minnesota DNR, Pet-trade sales of amphibians and reptiles
+=========================================================================
+Pet-trade sales of amphibians and reptiles in Minnesota
+Endangered and Threatened Species
+A person may not take, import, transport, or sell any portion of an endangered or threatened species of amphibian or reptile, or sell or possess with the intent to sell an article made with any part of the skin, hide, or parts of an endangered or threatened species of amphibian or reptile without a special MN DNR permit ( M.S. 84.0895 ).
+The following species of amphibian and reptile are listed as endangered or threatened in Minnesota:
+Endangered
+Blanchard's cricket frog ( Acris blanchardi )
+Eastern massasauga rattlesnake ( Sistrurus catenatus )
+Threatened
+Blanding's turtle ( Emydoidea blandingii )
+timber rattlesnake ( Crotalus horridus )
+Western ratsnake ( Pantherophis obsoletus )
+wood turtle ( Glyptemys insculpta )
+Frogs and Toads
+Importation into Minnesota
+A MN DNR permit is necessary to import the following species of live frog or toad, including eggs and tadpoles, into the State of Minnesota for use or sale as pets ( MINN. R. 6256.0300 ):
+Blanchard's cricket frog ( Acris blanchardi )
+Cope's gray tree frog ( Hyla chrysoscelis )
+gray tree frog ( Hyla versicolor )
+spring peeper ( Pseudacris crucifer )
+boreal chorus frog ( Pseudacris maculata )
+bullfrog ( Lithobates catesbeianus )
+green frog ( Lithobates clamitans )
+pickerel frog ( Lithobates palustris )
+Northern leopard frog ( Lithobates pipiens )
+mink frog ( Lithobates septentrionalis )
+wood frog ( Lithobates sylvaticus )
+American toad ( Anaxyrus americanus )
+Great Plains toad ( Anaxyrus cognatus )
+Canadian toad ( Anaxyrus hemiophrys )
+Plains leopard frog ( Lithobates blairi )
+Southern leopard frog ( Lithobates sphenocephalus )
+pig frog ( Lithobates grylio )
+river frog ( Lithobates heckscheri )
+Commercial Sale
+A special MN DNR permit is required for residents to sell the frog and toad species listed above for purposes other than bait ( M.S. 97C.601 ). Non-residents may not sell these species of frog or toad in the State of Minnesota. A person possessing or selling frogs, frog eggs, or tadpoles in Minnesota must also comply with local and federal laws that regulate these activities.
+Turtles
+Importation into Minnesota
+Wild turtles native to Minnesota may be imported into the State if legally collected in their state of origin. A MN DNR permit is required to import captive raised or bred native turtles into the State of Minnesota ( MINN. R. 17.4985 ).
+Commercial Sale
+With the exception of the common snapping turtle ( Chelydra serpentina ) and painted turtle ( Chrysemys picta ), native turtles may not be sold as pets in the State of Minnesota ( MINN. R. 6256.0500 ). A turtle seller's or turtle seller's apprentice license is required to take and sell common snapping turtles or painted turtles captured in Minnesota ( MINN. R. 6256.0500 ). A person possessing or selling turtles or turtle eggs in Minnesota must also comply with local and federal laws that regulate these activities. The following turtle species are considered native to the State of Minnesota:
+Blanding's turtle ( Emydoidea blandingii )
+Eastern musk turtle ( Sternotherus odoratus )
+false map turtle ( Graptemys pseudogeographica )
+Northern map turtle ( Graptemys geographic a)
+painted turtle ( Chrysemys picta )
+snapping turtle ( Chelydra serpentina )
+smooth Softshell turtle ( Apalone mutica )
+Southern (Ouachita) map turtle ( Graptemys ouachitensis )
+spiny softshell turtle ( Apalone spinifera )
+Wood turtle ( Glyptemys insculpta )
+Lizards, Snakes, and Salamanders
+IMPORTANT LEGAL CHANGE: Snakes, lizards, and salamanders were added to the list of protected wild animals in 2017 ( MINN. STAT. 97A ). A person may not collect and/or sell wild collected Minnesota snakes, lizards, and/or salamanders unless otherwise permitted under the Fish and Game laws.
+Permits
+For frog, toad, or turtle importation or commercial sale questions or permits, please contact: [email protected]
+For information about endangered and threatened species, visit: www.dnr.state.mn.us/ets/index.html
+Additional Information
+Remember to think long term! It is important to have plans in place for animals if you or your children no longer wish to keep them.
+Animals maintained in captivity should NOT be released back into the wild. Disease and invasive species are significant problems facing wild animal populations. Animals may appear healthy while cared for in captivity but can harbor disease or parasites that would be fatal to that individual if returned to the wild, or put a wild population at significant risk. The risk of spreading disease to wild animal populations far out-weighs the possible benefit of releasing an individual or two back into the wild. Learn more about amphibian and reptile diseases.
+Releasing animals into the wild may also interfere with wild animal populations’ genetic, age, and/or gender dynamics.
+It is illegal to release non-native animals in Minnesota.
+Ideally, unwanted animals should be gifted to other pet owners or educators to use in their classroom(s), or to naturalists at regional or state parks. Alternatively, animals could be given to local humane or non-profit societies (e.g., Minnesota Herpetological Society).
+
+=========================================================================
+Minnesota DNR, invasive species laws: the animal entries
+=========================================================================
+Prohibited invasive species
+Certain invasive species that can threaten natural resources and their use have been designated as prohibited invasive species in Minnesota. It is unlawful (a misdemeanor) to possess, import, purchase, transport, or introduce these species except under a permit for disposal, control, research, or education. The prohibited invasive species in Minnesota include the following, and any hybrids, cultivars, or varieties of the species listed below:
+Aquatic Plants
+African oxygen weed ( Lagarosiphon major )
+aquarium watermoss or giant salvinia ( Salvinia molesta )
+Australian stonecrop ( Crassula helmsii )
+brittle naiad ( Najas minor )*
+common reed, nonnative subspecies ( Phragmites australis ssp. australis , not including Phragmites australis ssp. americanus )*
+curly-leaf pondweed ( Potamogeton crispus )*
+Eurasian watermilfoil ( Myriophyllum spicatum )*
+European frog-bit ( Hydrocharis morsus-ranae )
+flowering rush ( Butomus umbellatus )*
+hydrilla ( Hydrilla verticillata )
+Indian swampweed ( Hygrophila polysperma )
+purple loosestrife ( Lythrum salicaria , Lythrum virgatum , or any variety, hybrid, or cultivar thereof)*
+starry stonewort ( Nitellopsis obtusa )*
+water aloe or water soldiers ( Stratiotes aloides )
+water chestnut ( Trapa natans )
+yellow floating heart ( Nymphoides peltata )
+the aquatic plants listed in Code of Federal Regulations, title 7, section 360.200 , are designated as prohibited invasive species except for Chinese water spinach ( Ipomoea aquatica )
+Fish
+Amur sleeper ( Perccottus glenii )
+bighead carp ( Hypophthalmichthys nobilis )*
+black carp ( Mylopharyngodon piceus )
+crucian carp ( Carassius carassius )
+Eastern mosquitofish ( Gambusia holbrooki )
+Eurasian minnow ( Phoxinus phoxinus )
+European perch ( Perca fluviatilis )
+grass carp ( Ctenopharyngodon idella )*
+largescale silver carp ( Hypophthalmichthys harmandi )
+northern snakehead fish ( Channa argus )
+Oriental weatherfish ( Misgurnus anguillicaudatus ; aka: weather loach, dojo loach)
+Prussian carp ( Carassius gibelio )
+roach ( Rutilus rutilus )
+round goby ( Neogobius melanostomus )*
+rudd ( Scardinius erythrophthalmus )
+ruffe ( Gymnocephalus cernuus )*
+sea lamprey ( Petromyzon marinus )*
+silver carp ( Hypophthalmichthys molitrix )*
+stone moroko ( Pseudorasbora parva )
+tench ( Tinca tinca )
+tubenose gobies (any fish belonging to the genus Proterorhinus including Proterorhinus semilunaris or Proterorhinus marmoratus )*
+wels catfish ( Siluris glanis )
+western mosquitofish ( Gambusia affinis )
+white perch ( Morone americana )*
+zander ( Stizostedion lucioperca )
+fish listed in Code of Federal Regulations, title 50, section 16.13 , are designated as prohibited invasive species, except for salmonids listed as unregulated nonnative species in part 6216.0270 .
+Invertebrates
+faucet snail ( Bithynia tentaculata )*
+golden clam ( Corbicula fluminea ) *
+golden mussel ( Limnoperna fortunei )
+jumping worms ( Amynthas and Metaphire species)* – Effective July 1, 2024
+marbled crayfish (marmorkrebs) ( Procambarus virginalis or Procambarus fallax forma virginalis )
+New Zealand mud snail ( Potamopyrgus antipodarum )*
+quagga mussel ( Dreissena bugensis )*
+red swamp crayfish ( Procambarus clarkii )*
+yabby ( Cherax destructor )
+zebra mussel ( Dreissena spp. )*
+mollusks and crustaceans listed in Code of Federal Regulations, title 50, section 16.13 , are designated as prohibited invasive species.
+Mammals
+Asian raccoon dog ( Nyctereutes procyonoides )
+European rabbit ( Oryctolagus cuniculus )
+European wild boar ( Sus scrofa scrofa )
+nutria ( Mycocastor coypu )
+* These species are known to be in Minnesota.
+Regulated invasive species
+It is legal to possess, sell, buy, and transport regulated invasive species, but they may not be introduced into a free-living state, such as being released or planted in public waters. The regulated invasive species are:
+Aquatic plants
+Brazilian waterweed ( Egeria densa )
+Carolina fanwort or fanwort ( Cabomba caroliniana )
+Chinese water spinach ( Ipomoea aquatica )
+nonnative waterlilies ( Nymphaea spp. )*
+parrot's feather ( Myriophyllum aquaticum )
+water hyacinth ( Eichhornia crassipes )
+yellow iris or yellow flag ( Iris pseudacorus )*
+Birds
+Egyptian goose ( Alopochen aegyptiacus )
+mute swan ( Cygnus olor )*
+Sichuan pheasant ( Phasianus colchicus strachi )
+Fish
+alewife ( Alosa pseudoharengus )*
+common carp, koi ( Cyprinus carpio )*
+goldfish ( Carassius auratus )*
+rainbow smelt ( Osmerus mordax )*
+tilapia ( Oreochromis, Sarotherodon, and Tilapia spp. )
+Invertebrates
+banded mystery snail ( Viviparus georgianus )*
+Chinese mystery snail, Japanese trap door snail ( Cipangopaludina spp. )*
+rusty crayfish ( Faxonius rusticus )*
+spiny waterflea ( Bythotrephes longimanus )*
+Reptiles
+re   d-eared slider ( Trachemys scripta elegans )*
+* These species are known to be in Minnesota waters.

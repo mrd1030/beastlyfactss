@@ -39,6 +39,8 @@ about this species", not to claim a new verification date.
 | `IL-il-510-68.txt` | Illinois Herptiles-Herps Act in full, with the three clauses that get summarised backwards flagged |
 | `IL-il-statutes.txt` | Illinois dangerous animal statute, Wildlife Code and Endangered Species Act possession bar |
 | `IL-il-admin-code.txt` | Illinois Parts 885 (herptiles), 1010 (endangered and threatened) and 805 (injurious species) |
+| `MN-mn-statutes.txt` | Minnesota's five operative sections, with the 2021 reptile rule and the hole in it flagged |
+| `MN-mn-definitions-and-agency.txt` | Minnesota's definitions, its invasive species rule, and the two DNR pages that read them |
 
 ## Reading the awkward ones
 
@@ -53,6 +55,11 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   as *Geochelone*, the crested gecko would be *Rhacodactylus*, and the bearded dragon is
   printed as *vittaceps* for *vitticeps*. Search the genus and the synonym, not just the
   current name.
+- **`MN-mn-statutes.txt`** is the state where the definitions matter more than the rule.
+  `97A.015` subd. 55 makes any reptile a wild animal regardless of origin and subd. 39 makes
+  snakes, lizards, salamanders and turtles protected as categories, so the pet rule at
+  `97A.401` subd. 8 is an exception to a prohibition, not a standalone restriction. Grep the
+  definitions before reading anything else about a Minnesota reptile.
 - **The Illinois files** are three different fetch mechanisms in one state. Statutes come one
   section at a time from `ilga.gov/Legislation/ILCS/Fulltext?DocName=<doc>`, where DocName is a
   4-digit chapter, the act number times ten padded to 5, then `K`, then the section: 510 ILCS
@@ -83,6 +90,7 @@ not on the sites, so a person with a browser can open all of them.
 | `law.justia.com`, `invasive.org` | 403 | Find another reproduction |
 | `www.sos.state.co.us` | Works with curl, but PDF links are not in the HTML | Scrape `OpenRuleWindow('<id>'` off the rule page, then fetch `/CCR/GenerateRulePdf.do?ruleVersionId=<id>` |
 | `drive.google.com` | CPW publishes its species lists here | Fetch `https://drive.google.com/uc?export=download&id=<id>`; the ids are in the accordion markup, not in any `.pdf` link |
+| `revisor.mn.gov` | Works with plain curl, occasional TLS handshake failure on the first try | Retry once. Statutes at `/statutes/cite/<section>`, rules at `/rules/<part>/`; a bare chapter number gives only the table of parts |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
 
 When the official host is unreachable, cite the official URL anyway, verify the wording

@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 9 (AZ, CO, DE, HI, IL, MI, NM, NV, PA) |
-| Unread cells | 742 |
-| Cached primary sources | 26 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 10 (AZ, CO, DE, HI, IL, MI, MN, NM, NV, PA) |
+| Unread cells | 705 |
+| Cached primary sources | 28 files in `docs/legal-sources` |
 
-`main` carries everything through Delaware and is deployed. Colorado and Illinois sit on
-`claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main once
-it lands.
+`main` carries everything through Delaware and is deployed. Colorado, Illinois and Minnesota
+sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main
+once it lands.
 
 ## The loop
 
@@ -60,6 +60,13 @@ that you are reading the current one before you quote a cite that has been on th
 month. Two guides had already picked up the change without the map being updated, which is the
 same signal from the other direction.
 
+**A rule with nothing behind it.** Minnesota's 2021 pet reptile law says the commissioner
+"must prescribe conditions and may issue permits" and then makes lawful possession turn on the
+animal having come from a permitted breeder. There is no such permit on the DNR's permits page,
+no rule chapter implements it, and the DNR's own pet-trade page never mentions it. A source
+condition with no visible machinery is still the law, but it is not the same finding as a
+working permit scheme, and the note has to say which one it is.
+
 **A citation that outlived its statute.** Every Illinois entry on the map cited 720 ILCS 585,
 the Dangerous Animals Act. P.A. 98-752 repealed it effective 1 January 2015 and moved it to
 720 ILCS 5/48-10. The substance survived the move, so nothing on the map was wrong, but nine
@@ -74,10 +81,10 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| MN | Minnesota | 37 | |
-| OR | Oregon | 37 | |
-| CT | Connecticut | 36 | |
+| OR | Oregon | 37 | 2 sources on file |
+| CT | Connecticut | 36 | 2 sources on file |
 | MD | Maryland | 35 | 4 sources on file |
+| TN | Tennessee | 35 | 1 source on file |
 | TX | Texas | 35 | 3 sources on file |
 
 ## Loose ends
@@ -106,6 +113,17 @@ state that codifies by version. And confirm the citation itself still resolves.
   885.20(d) writes the same cap as reaching native taxa only. Every Illinois non-native reptile
   entry carries this in its note rather than resolving it, because the statute and the rule
   genuinely do not agree and IDNR has not published a reading either way.
+- **The Minnesota rabbit is recorded `unclear`, and it is the sharpest version of this problem
+  on the map.** Minn. R. 6216.0250 designates *Oryctolagus cuniculus* a prohibited invasive
+  species with no strain qualifier, § 84D.05 bars possession outright, and the DNR's own page
+  says possession is a misdemeanour with permits only for disposal, control, research or
+  education. No domestic carve-out exists anywhere and the DNR has published no profile for the
+  species. Illinois and Minnesota name the same animal and the map answers them differently; the
+  notes explain why.
+- **The Minnesota Bengal is `unclear` on an internal conflict**, not on a gap. § 346.155 excludes
+  cats registered and shown as a domestic breed by a multibreed registry, which the Bengal is,
+  and the same definition then sweeps in every hybrid and all subsequent generations. Both
+  sentences are in force, enforcement sits with local animal control, and nobody has resolved it.
 - **The Illinois rabbit is recorded legal on a reading, not on a carve-out.** Two provisions name
   the animal, 520 ILCS 5/3.23 barring possession of "San Juan (sometimes called European)
   rabbits" with no permit available, and 17 Ill. Adm. Code 805.20(a) listing the genus
@@ -124,8 +142,8 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Then guinea pig and gerbil at 43, quaker parakeet and ackie monitor at 42, degu and red-footed
-tortoise at 41, green iguana at 40.
+Then guinea pig and gerbil at 44, quaker parakeet and ackie monitor at 43, degu and red-footed
+tortoise at 42, green iguana at 41.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -162,6 +180,12 @@ available only for educational programmes. Read the heading and Illinois restric
 Varanus; read the definition and it restricts two, leaving the savannah, Nile and ackie monitors
 entirely unregulated. Any state that names a family and then narrows it in the same sentence
 needs the definition read before the list.
+
+Minnesota is the fifth Bengal answer and the first one that is a contradiction rather than a
+rule: the carve-out for registered domestic breeds and the all-generations hybrid sentence are
+in the same definition and point opposite ways. Where a state writes both, check whether the
+carve-out would have anything left to do under the broader reading. In Minnesota it would not,
+which is the argument for the exemption, and it is still only an argument.
 
 The rabbit is the other good probe. Hawaii, California and Arizona each carve it out by
 name in different words, Arizona going furthest by saying domestic rabbits are not wildlife

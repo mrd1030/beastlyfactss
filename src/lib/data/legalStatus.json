@@ -95,138 +95,138 @@
       "NE"
     ],
     "remaining": 0,
-    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 9 of the 52 jurisdictions have now been read for all 52 animals and 30 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
+    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 10 of the 52 jurisdictions have now been read for all 52 animals and 31 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 10,
+        "checked": 11,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 10,
+        "checked": 11,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 11,
+        "checked": 12,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 11,
+        "checked": 12,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 11,
+        "checked": 12,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 11,
+        "checked": 12,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 11,
+        "checked": 12,
         "of": 51
       },
       "green-anole": {
-        "checked": 11,
+        "checked": 12,
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 27,
+        "checked": 28,
         "of": 51
       },
       "tarantula": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "axolotl": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "box-turtle": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 36,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 36,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 36,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 36,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 37,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 37,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 37,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 37,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 38,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 39,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "green-iguana": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "burmese-python": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "degu": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "hamster": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "gerbil": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "bengal-cat": {
@@ -234,7 +234,7 @@
         "of": 51
       },
       "guinea-pig": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "milk-snake": {
@@ -242,15 +242,15 @@
         "of": 51
       },
       "ball-python": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "veiled-chameleon": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "boa-constrictor": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "corn-snake": {
@@ -661,8 +661,8 @@
     },
     "mn-346-155": {
       "title": "Minn. Stat. § 346.155, Possessing regulated animals",
-      "url": "https://www.animallaw.info/statute/mn-exotic-pet-346155-possessing-regulated-animals",
-      "note": "'Regulated animal' is all members of Felidae except the domestic cat, all bears, and all non-human primates, plus any hybrid or cross between a listed animal and a domestic animal and all subsequent generations. Possession is unlawful unless held on or before 1 January 2005 in compliance with the federal Animal Welfare Act. A knowing violation is a gross misdemeanour: up to two years imprisonment or a $5,000 fine."
+      "url": "https://www.revisor.mn.gov/statutes/cite/346.155",
+      "note": "Revisor of Statutes text. 'Regulated animal' is the whole family Felidae, bears, and all non-human primates, plus any hybrid with a domestic animal and all subsequent generations. Possession has been unlawful since 1 January 2005 except for animals already held then and brought into federal Animal Welfare Act compliance. Note the carve-out inside the Felidae clause, which excludes not only domestic cats but cats registered and shown as a domestic breed by a multibreed registry; it and the hybrid sentence pull in opposite directions."
     },
     "nv-nac-503": {
       "title": "Nev. Admin. Code § 503.110 (prohibited species) and § 503.140 (species needing no permit)",
@@ -905,9 +905,9 @@
       "note": "Official Joint Committee on Administrative Rules text, amended effective 31 July 2025. § 885.40 is the list of Illinois native herptile taxa, which decides whether the possession cap applies to a species at all; § 885.20 sets the seasons and limits; § 885.80 sets the $50 Herpetoculture Permit; and § 885.105(j), new in 2025, sweeps named corn snake morph lines into the endangered species regime."
     },
     "mn-97a-401": {
-      "title": "Minnesota Statutes 2025, Section 97A.401",
+      "title": "Minn. Stat. § 97A.401, Special permits",
       "url": "https://www.revisor.mn.gov/statutes/cite/97A.401",
-      "note": "Subd. 8 states a pet snake, lizard, or salamander must come from a permitted breeder or have been possessed before August 1, 2021; hosted on the MN Revisor of Statutes' own site."
+      "note": "Subd. 8, added in 2021, is the pet reptile rule: the commissioner must prescribe conditions and may issue breeder permits, and a snake, lizard or salamander is possessable as a pet if it came from a permitted breeder or was held before 1 August 2021. Subd. 3 is the older, broader route, allowing special permits without a fee to possess wild animals as pets."
     },
     "ne-163-nac-4-008": {
       "title": "Nebraska Administrative Code, Title 163, Chapter 4, § 008 — Keeping Wildlife in Captivity",
@@ -1263,6 +1263,31 @@
       "title": "Illinois Administrative Code, Title 17, Part 805, Injurious Species",
       "url": "https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=01700805",
       "note": "Adopts the federal injurious wildlife list at 50 CFR 16.11-15 and adds to it, then bars possession of anything on it without a permit issued only to institutions. § 805.10 excludes herptiles expressly, sending them to the Herptiles-Herps Act, so this Part never decides a reptile or amphibian question in Illinois."
+    },
+    "mn-97a-015": {
+      "title": "Minn. Stat. § 97A.015, Definitions",
+      "url": "https://www.revisor.mn.gov/statutes/cite/97A.015",
+      "note": "Two subdivisions decide most Minnesota questions. Subd. 55 defines wild animals as creatures 'wild by nature' and includes reptiles and amphibians, with no geographic limit, so a ball python is a wild animal here. Subd. 39 makes snakes, salamanders, lizards, turtles and frogs protected wild animals as categories rather than as native species lists. Invertebrates other than crustaceans and mollusks are outside the definition entirely."
+    },
+    "mn-97a-501": {
+      "title": "Minn. Stat. § 97A.501, Wild animals; general restrictions",
+      "url": "https://www.revisor.mn.gov/statutes/cite/97A.501",
+      "note": "The operative prohibition: a person may not possess a protected wild animal unless allowed by the game and fish laws, and ownership of all wild animals is in the state until lawfully acquired. It reaches protected wild animals only, which is why an unprotected native mammal sits differently from a native reptile here."
+    },
+    "mn-97c-605": {
+      "title": "Minn. Stat. § 97C.605, Turtles",
+      "url": "https://www.revisor.mn.gov/statutes/cite/97C.605",
+      "note": "Turtles are handled apart from the 2021 snake, lizard and salamander rule and were not included in it. Subd. 1 requires an angling licence plus a recreational turtle licence to take, possess or transport turtles; subd. 2c exempts, among others, buying a turtle at a retail outlet, which is what leaves a pet-shop turtle or tortoise unlicensed."
+    },
+    "mn-84d-05": {
+      "title": "Minn. Stat. § 84D.05 and Minn. R. 6216.0250, prohibited invasive species",
+      "url": "https://www.revisor.mn.gov/statutes/cite/84D.05",
+      "note": "Section 84D.05 bars possessing, importing, purchasing, selling, propagating or transporting a prohibited invasive species except under a permit, and Minn. R. 6216.0250 subp. 5 is the mammal list: Asian raccoon dog, Eurasian swine, European rabbit and nutria. No reptile or amphibian is on the prohibited list, and no bird at all."
+    },
+    "mn-dnr-pet-trade": {
+      "title": "Minnesota DNR, Pet-trade sales of amphibians and reptiles in Minnesota",
+      "url": "https://www.dnr.state.mn.us/reptiles_amphibians/sales.html",
+      "note": "The agency's own page. It gives the native turtle list, the endangered and threatened herptiles, the frog importation list, and the DNR's summary of the 2017 change, which it describes as reaching wild collected Minnesota snakes, lizards and salamanders. It does not mention the 2021 breeder-permit rule at all, which is the gap the reptile entries here flag."
     }
   },
   "animals": {
@@ -1427,8 +1452,10 @@
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "note": "Only Felidae, bears and primates are regulated.",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No insectivore is in it, and no hedgehog appears on the prohibited invasive species list.",
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "legal",
@@ -1796,10 +1823,10 @@
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 346.155",
-          "quote": "all members of the family Felidae except the domestic cat",
-          "note": "The regulated animal definition is cats, bears and non-human primates. No mustelid appears in it."
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No mustelid is in it. Minnesota's own least weasel is a species of special concern under Minn. R. 6134, but that reaches the wild native animal, not the domesticated European ferret.",
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "legal",
@@ -2207,10 +2234,10 @@
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 346.155",
-          "quote": "all members of the family Felidae except the domestic cat",
-          "note": "The regulated animal definition is cats, bears and non-human primates. No marsupial appears in it."
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No marsupial is in it.",
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "legal",
@@ -2794,6 +2821,14 @@
           "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it, and the hamster is not a native Illinois wild mammal, so neither the Wildlife Code nor this section reaches one. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it. The other place to check for a mammal here is the prohibited invasive species list at Minn. R. 6216.0250, which runs to four species, the Asian raccoon dog, Eurasian swine, European rabbit and nutria, and the hamster is not among them.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3130,6 +3165,14 @@
           "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
           "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it. The Wildlife Code reaches only wild birds and wild mammals native to or brought into Illinois and named in its § 2.2 list, and the gerbil is on neither. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it, and the gerbil is not on the prohibited invasive species list either.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3478,6 +3521,14 @@
           "note": "Illinois names the monk parakeet in statute and then stops short of the thing most states do with it. The clause bars releasing one and bars propagating one for release, and says nothing about keeping or selling. Two sentences earlier in the same section Illinois shows what a possession ban looks like when it wants one, barring anyone from holding or possessing San Juan rabbits or raccoon dogs with no permit available; the monk parakeet clause is deliberately narrower. Nor is the species on the Part 805 injurious list or the § 2.2 protected list. Illinois has a naturalized monk parakeet population on the south side of Chicago that has been there since the 1970s, which makes the restraint here more pointed, not less. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-015",
+          "cite": "§ 97A.015, subd. 39",
+          "quote": "\"Protected wild animals\" means big game, small game, game fish, native rough fish, minnows, leeches, chubs, frogs, turtles, clams, mussels, wolf, mourning doves, bats, snakes, salamanders, lizards, any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134, and wild animals that are protected by a restriction in the time or manner of taking, other than a restriction in the use of artificial lights, poison, or motor vehicles.",
+          "note": "The protected list is worth reading in full for Minnesota, because it names five herptile categories and then almost nothing among birds beyond game birds and mourning doves. The monk parakeet falls outside it, so § 97A.501's possession bar does not apply. Minnesota is one of the states that never picked this species up. It is on neither the prohibited nor the regulated invasive species list, and there is no counterpart to the release bans other states wrote for it. The reason is probably climate rather than policy: the naturalised colonies that prompted those rules are in warmer states.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "quaker-parakeet"
@@ -3515,10 +3566,12 @@
           "verifiedOn": "2026-08-04"
         },
         "MN": {
-          "status": "banned",
+          "status": "unclear",
           "sourceId": "mn-346-155",
-          "note": "The definition expressly reaches 'any hybrid or cross between an animal listed as prohibited and a domestic animal and offspring from all subsequent generations', so unlike New York there is no generation at which a Bengal falls out.",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Two sentences of the same definition point opposite ways for this animal, and Minnesota has never said which wins. The Felidae clause excludes \"domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association\", and the Bengal is registered and shown as a domestic breed by TICA. But the definition closes with a sentence providing that a regulated animal \"includes any hybrid or cross between an animal listed in clause (1), (2), or (3) and a domestic animal and offspring from all subsequent generations of those crosses or hybrids\", and the Asian leopard cat behind the Bengal is a clause (1) animal. Read the hybrid sentence alone and every Bengal is banned at every generation. Read the carve-out as doing real work and the Bengal is exempt, since the registered domestic breeds it could describe are almost all wild hybrids and the carve-out would otherwise add nothing to \"domestic cats\". This entry previously read as banned on the hybrid sentence alone, without the carve-out. Recorded unclear rather than either, because the conflict is on the face of the statute and enforcement sits with local animal control rather than one agency that could settle it.",
+          "verifiedOn": "2026-09-05"
         },
         "MD": {
           "status": "conditional",
@@ -4198,6 +4251,14 @@
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The veiled chameleon is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A veiled chameleon is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4530,6 +4591,14 @@
           "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The Russian tortoise is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97c-605",
+          "cite": "§ 97C.605, subds. 1 and 2c",
+          "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
+          "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. Whether a Russian tortoise is a \"turtle\" for this section is not spelled out, since Minnesota never defines the word and its turtle rules are plainly written around aquatic natives. It does not matter much in practice: read broadly, the retail outlet exemption in subd. 2c covers a pet-shop animal anyway, and read narrowly the section does not reach it at all. Either way no licence is needed for one bought at retail, and the species is on neither invasive species list.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4889,6 +4958,14 @@
           "quote": "Unless contrary to any other law or rule, nothing shall prohibit lawfully acquired possession of any of the Boidae family, such as boas, pythons, and anacondas, provided captive maintenance requirements from the Department as set forth in this Act are met. All boas, pythons, and anacondas referenced in this Act are exempt from the permit process, associated annual fee, and liability insurance coverage.",
           "note": "Illinois clears the boas and pythons by name in statute rather than by leaving them off a list, which is a stronger position than most species here get. There is no length threshold anywhere in it. What the Act does attach is husbandry: § 15-10 requires any boa, python or anaconda not native to the United States to be kept in a strong, impact resistant, escape-proof enclosure regardless of length, and § 15-20 requires it to be out of public sight in an escape-proof enclosure during transport. The ball python is a python and squarely inside § 15-5. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A ball python is a snake, so it needs to have come from a permitted breeder or to have been held before 1 August 2021. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -5256,6 +5333,14 @@
           "note": "Illinois clears the boas and pythons by name in statute rather than by leaving them off a list, which is a stronger position than most species here get. There is no length threshold anywhere in it. What the Act does attach is husbandry: § 15-10 requires any boa, python or anaconda not native to the United States to be kept in a strong, impact resistant, escape-proof enclosure regardless of length, and § 15-20 requires it to be out of public sight in an escape-proof enclosure during transport. Boa constrictor is the animal § 15-5 is named for. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A boa constrictor is a snake, so it needs to have come from a permitted breeder or to have been held before 1 August 2021. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5556,6 +5641,14 @@
           "quote": "This Act shall apply only to the wild birds and parts of wild birds (including, but not limited to, their nests and eggs), and wild mammals and parts of wild mammals, which shall include their green hides, in the State of Illinois, or which may be brought into the State.",
           "note": "A tarantula is an arachnid, and Illinois divides its animal law up in a way that leaves it out of every piece. The Wildlife Code says in its own words that it applies only to wild birds and wild mammals. The Herptiles-Herps Act covers reptiles and amphibians. The Fish and Aquatic Life Code covers aquatic life. The injurious species list at 17 Ill. Adm. Code 805 has a category for invertebrates, and it is headed \"Fish, Mollusks and Aquatic Invertebrates\". A terrestrial arthropod falls in the gap, the same way it does in Pennsylvania, so no state possession rule applies. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-015",
+          "cite": "§ 97A.015, subd. 55",
+          "quote": "\"Wild animals\" means all creatures, whether dead or alive, not human, wild by nature, endowed with sensation and power of voluntary motion, and includes mammals, birds, fish, amphibians, reptiles, crustaceans, and mollusks.",
+          "note": "A tarantula is an arachnid, and Minnesota's definition of wild animals lists seven groups, of which the only invertebrates are crustaceans and mollusks. That places it outside chapter 97A altogether, including the protected wild animal list and the possession bar built on it. The invasive species rules stop in the same place: the invertebrates designated under Minn. R. 6216.0250 are aquatic snails, rusty crayfish and the spiny waterflea. Minnesota is unusual in that its wild animal definition is broad enough to catch a ball python and still narrow enough to miss a tarantula.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5860,6 +5953,14 @@
           "quote": "This Act shall apply only to the wild birds and parts of wild birds (including, but not limited to, their nests and eggs), and wild mammals and parts of wild mammals, which shall include their green hides, in the State of Illinois, or which may be brought into the State.",
           "note": "The emperor scorpion is an arachnid, and Illinois divides its animal law up in a way that leaves it out of every piece. The Wildlife Code says in its own words that it applies only to wild birds and wild mammals. The Herptiles-Herps Act covers reptiles and amphibians. The Fish and Aquatic Life Code covers aquatic life. The injurious species list at 17 Ill. Adm. Code 805 has a category for invertebrates, and it is headed \"Fish, Mollusks and Aquatic Invertebrates\". A terrestrial arthropod falls in the gap, the same way it does in Pennsylvania, so no state possession rule applies. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-015",
+          "cite": "§ 97A.015, subd. 55",
+          "quote": "\"Wild animals\" means all creatures, whether dead or alive, not human, wild by nature, endowed with sensation and power of voluntary motion, and includes mammals, birds, fish, amphibians, reptiles, crustaceans, and mollusks.",
+          "note": "The emperor scorpion is an arachnid, and Minnesota's definition of wild animals lists seven groups, of which the only invertebrates are crustaceans and mollusks. That places it outside chapter 97A altogether, including the protected wild animal list and the possession bar built on it. The invasive species rules stop in the same place: the invertebrates designated under Minn. R. 6216.0250 are aquatic snails, rusty crayfish and the spiny waterflea. Minnesota is unusual in that its wild animal definition is broad enough to catch a ball python and still narrow enough to miss a tarantula.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6197,6 +6298,14 @@
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The Argentine black and white tegu is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. Illinois has not followed the states that wrote tegu-specific rules after the Florida populations established. Nothing in the Act or Part 885 names Salvator or Tupinambis at all. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A tegu is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6514,6 +6623,14 @@
           "note": "This is the definition to read before assuming Illinois restricts monitors. Article 25 puts monitor lizards under the special use permit regime, available only to residents running bona fide educational programs, and § 85-5 bars possessing a special use herptile outside it. But § 25-5 defines the term to mean two animals, the crocodile monitor and the Komodo dragon, and nothing else in Varanidae. The savannah monitor is neither, so it is an ordinary non-native herptile and needs no permit. A rule that names a family and then narrows it to two species in the same sentence is exactly the kind that gets summarised backwards. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A savannah monitor is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -6638,10 +6755,10 @@
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 346.155",
-          "quote": "all members of the family Felidae except the domestic cat",
-          "note": "The regulated animal definition is cats, bears and non-human primates. No rodent appears in it."
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it. The prairie dog is not a protected wild animal under § 97A.015, subd. 39 either, which reaches big game, small game and named categories rather than rodents generally.",
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "permit",
@@ -7043,10 +7160,10 @@
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 346.155",
-          "quote": "all members of the family Felidae except the domestic cat",
-          "note": "The regulated animal definition is cats, bears and non-human primates. No rodent appears in it."
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it, so size does not bring the capybara in. Minnesota has no weight or dangerousness trigger anywhere in this statute.",
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "permit",
@@ -7435,8 +7552,10 @@
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "note": "Canidae is absent from the definition entirely.",
-          "verifiedOn": "2026-08-04"
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. Canidae is absent from it entirely, so no fox of any kind is a regulated animal here. The one canid Minnesota does bar is the Asian raccoon dog, on the prohibited invasive species list, and the fennec fox is not it.",
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "banned",
@@ -7856,14 +7975,14 @@
         "MN": {
           "status": "banned",
           "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)(1) and subd. 2",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota names the serval in the statute, in the short list of examples inside the Felidae clause, so there is nothing to construe. Subd. 2 makes possession unlawful and bars taking possession of a regulated animal after 1 January 2005 at all. The route that remains is historical: an animal already held on 1 January 2005 and brought into federal Animal Welfare Act compliance within 90 days, with a single replacement allowed for an unlicensed keeper who registered the animal.",
           "grandfathered": {
             "before": "2005-01-01",
-            "detail": "Only if possessed on or before 1 January 2005 and brought into Animal Welfare Act compliance."
+            "detail": "Possessed on 1 January 2005 and brought into Animal Welfare Act compliance within 90 days. Breeding after that date is barred, and a non-USDA-licensed keeper may replace the animal only once."
           },
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 346.155",
-          "quote": "all members of the family Felidae except the domestic cat",
-          "note": "Minnesota bans the cat family wholesale with a single exception for Felis catus, so the serval is caught by the same words that catch a tiger. Possession has been unlawful since 2005 unless the animal was already held on 1 January of that year in compliance with the federal Animal Welfare Act."
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "legal",
@@ -8262,10 +8381,10 @@
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 346.155",
-          "quote": "all members of the family Felidae except the domestic cat",
-          "note": "The regulated animal definition is cats, bears and non-human primates. No rodent appears in it."
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it.",
+          "verifiedOn": "2026-09-05"
         },
         "NV": {
           "status": "legal",
@@ -8866,6 +8985,14 @@
           "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it. Illinois has no exotic mammal permit scheme at all for an animal off the list, so there is nothing to apply for and nothing to comply with at state level. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it. Minnesota has no general exotic mammal licence, so an animal outside those three groups and off the invasive lists is simply unregulated at state level.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9195,6 +9322,14 @@
           "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The green iguana is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A green iguana is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -9527,6 +9662,14 @@
           "note": "Illinois pulls the common snapping turtle out of the general herptile cap and gives it its own regime, the only reptile besides the bullfrog treated this way. It is a native taxon under § 885.40, and it is the only one with a closed season: a sport fishing licence, take only between 15 June and 15 October, two a day and four in possession. Bowfishing for it is barred in sixteen named southern counties, and § 30-10 bars collecting wild turtles for turtle races in the seven counties where ranavirus has been documented. The alligator snapping turtle is a different animal and is state endangered. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97c-605",
+          "cite": "§ 97C.605, subds. 1 and 2c",
+          "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
+          "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. The snapping turtle is the one animal on this map that Minnesota treats as its own harvestable native turtle. It and the western painted turtle are the only two a recreational turtle licence covers, and the only two native turtles that may be sold as pets, under a turtle seller's licence. Minn. R. 6256.0500 sets the size floor at a shell length greater than 12 inches. A retail purchase is exempt from the licence requirement, and taking one from the wild needs both an angling licence and a recreational turtle licence, for personal use only.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9835,6 +9978,14 @@
           "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The tokay gecko is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A tokay gecko is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10157,6 +10308,14 @@
           "note": "The eastern tiger salamander, Ambystoma tigrinum is on the § 885.40 list of Illinois native herptile taxa, which is what puts it inside the cap rather than outside it. No licence is needed to keep one, but three conditions ride along: no more than 4 of the species and no more than 8 indigenous herptiles in total, a sport fishing licence to collect any native taxon from the wild, and a $50 Herpetoculture Permit to breed or to sell. Non-residents may not possess herptiles collected from the wild in Illinois at all except under a scientific collection permit. It is not on the state endangered or threatened list, unlike the Jefferson, silvery and spotted dusky salamanders and the mudpuppy, so the ordinary cap is the whole of it. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. The eastern tiger salamander is a Minnesota native, and it is the animal the DNR's own summary of the rule is aimed at, since the department describes the restriction as reaching wild collected Minnesota salamanders. It is not on the state endangered or threatened list; the listed amphibian is Blanchard's cricket frog. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10478,6 +10637,14 @@
           "quote": "\"Monitor lizards\" means the following members of the Varanidae family, specifically crocodile monitors and Komodo dragons.",
           "note": "This is the definition to read before assuming Illinois restricts monitors. Article 25 puts monitor lizards under the special use permit regime, available only to residents running bona fide educational programs, and § 85-5 bars possessing a special use herptile outside it. But § 25-5 defines the term to mean two animals, the crocodile monitor and the Komodo dragon, and nothing else in Varanidae. The Nile monitor is neither, so it is an ordinary non-native herptile and needs no permit. A rule that names a family and then narrows it to two species in the same sentence is exactly the kind that gets summarised backwards. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A Nile monitor is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10819,6 +10986,14 @@
           "note": "Illinois clears the boas and pythons by name in statute rather than by leaving them off a list, which is a stronger position than most species here get. There is no length threshold anywhere in it. What the Act does attach is husbandry: § 15-10 requires any boa, python or anaconda not native to the United States to be kept in a strong, impact resistant, escape-proof enclosure regardless of length, and § 15-20 requires it to be out of public sight in an escape-proof enclosure during transport. Illinois itself does not restrict this species: no length trigger, no separate list. Federal law is the real constraint, since the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport, so one cannot lawfully cross a state line into Illinois even though keeping one here is cleared by statute. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A Burmese python is a snake and takes the same breeder-source condition. Federal law is the sharper constraint: the species has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport, so one cannot lawfully be brought into Minnesota at all. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11156,6 +11331,14 @@
           "note": "Illinois runs a closed list of 15 named mammals plus a blanket bar on primates, and it has no catch-all clause, no size test and no dangerousness test. An animal that is not on the list and is not native Illinois wildlife is simply outside the statute. No rodent appears on it. The degu is not on the Part 805 injurious species list either, which is where Illinois puts the exotic mammals it does want to keep out, among them the raccoon dog, the multimammate rat and the brushtail possum. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Minnesota's regulated animal definition is three groups and nothing else: the cat family, bears, and non-human primates. No rodent is in it, and the degu is on neither the prohibited nor the regulated invasive species list.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -11454,6 +11637,14 @@
           "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The axolotl is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. Nor is it a medically significant amphibian: § 885.48 lists those by name and they are toxic toads and frogs. Part 805 injurious species would be the other place to look, and § 805.10 excludes herptiles from that Part expressly, sending them here. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. The axolotl is a salamander, so the same condition applies. Nothing else in Minnesota reaches it: it is not on either invasive species list, and the DNR's frog importation permit list at Minn. R. 6256.0300 is frogs and toads only. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11759,6 +11950,14 @@
           "quote": "THREATENED AMPHIBIANS AND REPTILES OF ILLINOIS ... Turtles ... Ornate Box Turtle Terrapene ornata",
           "note": "Illinois splits its two box turtles. The ornate box turtle is a threatened species, so 520 ILCS 10/3 bars possessing one without a Department permit. The eastern box turtle, Terrapene carolina carolina, is on the § 885.40 native list but not on the endangered and threatened list, so it needs no permit and sits under the ordinary limits: 4 of the species, 8 indigenous herptiles in total, a sport fishing licence to collect one from the wild and a $50 Herpetoculture Permit to breed or sell. Turtles other than common snapping turtles may be taken by hand only, and § 30-5 bars commercial turtle farming in the State. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97c-605",
+          "cite": "§ 97C.605, subds. 1 and 2c",
+          "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
+          "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. Neither box turtle is on the DNR's list of native Minnesota turtles, so the ban on selling native turtles as pets, which spares only the snapping turtle and the painted turtle, does not reach one. A box turtle bought at a retail outlet is exempt from the licence requirement; there is no lawful wild-take route, since a recreational turtle licence authorises only painted and snapping turtles.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -12069,6 +12268,14 @@
           "note": "The red-eared slider, Trachemys scripta elegans is on the § 885.40 list of Illinois native herptile taxa, which is what puts it inside the cap rather than outside it. No licence is needed to keep one, but three conditions ride along: no more than 4 of the species and no more than 8 indigenous herptiles in total, a sport fishing licence to collect any native taxon from the wild, and a $50 Herpetoculture Permit to breed or to sell. Non-residents may not possess herptiles collected from the wild in Illinois at all except under a scientific collection permit. Illinois is inside the species' natural range, which is why it lands here rather than in the free non-native bucket, and it is the opposite of how states outside that range treat the animal. Turtles other than common snapping turtles may be taken only by hand, and § 30-5 bars commercial turtle farming in the State outright. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97c-605",
+          "cite": "§ 97C.605, subds. 1 and 2c",
+          "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
+          "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. The retail exemption is what makes a pet slider straightforward: buying one at a retail outlet needs no licence. Taking one from the wild is a different matter and not available, because the only turtles a recreational turtle licence authorises taking are the western painted turtle and the snapping turtle. Minnesota also designates the red-eared slider a regulated invasive species, which the DNR describes as legal to possess, sell, buy and transport but never to release into a free-living state. It is not on the DNR's list of native Minnesota turtles.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12375,6 +12582,14 @@
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The sulcata tortoise is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97c-605",
+          "cite": "§ 97C.605, subds. 1 and 2c",
+          "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
+          "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. Whether a sulcata is a \"turtle\" for this section is not spelled out, since Minnesota never defines the word and its turtle rules are plainly written around aquatic natives. It does not matter much in practice: read broadly, the retail outlet exemption in subd. 2c covers a pet-shop animal anyway, and read narrowly the section does not reach it at all. Either way no licence is needed for one bought at retail, and the species is on neither invasive species list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12680,6 +12895,14 @@
           "permitFor": "personal",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. Both hognose species are Minnesota natives, so the wild-collection reading and the breeder-source reading point the same way. Neither is listed as endangered or threatened in Minnesota; the DNR's listed snakes are the eastern massasauga, the timber rattlesnake and the western ratsnake. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12983,6 +13206,14 @@
           "note": "The Wildlife Code then lists the protected birds family by family, running from loons through finches and covering essentially the native and migratory avifauna. Psittacidae is not among them, so no parrot is a protected species in Illinois. The Part 805 injurious bird list is four species long, the pink starling, the dioch, the Java sparrow and the red-whiskered bulbul, and the African grey is not one of them. Federal CITES Appendix I paperwork is the constraint that actually bites on this species, and it is not a state matter. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-015",
+          "cite": "§ 97A.015, subd. 39",
+          "quote": "\"Protected wild animals\" means big game, small game, game fish, native rough fish, minnows, leeches, chubs, frogs, turtles, clams, mussels, wolf, mourning doves, bats, snakes, salamanders, lizards, any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134, and wild animals that are protected by a restriction in the time or manner of taking, other than a restriction in the use of artificial lights, poison, or motor vehicles.",
+          "note": "The protected list is worth reading in full for Minnesota, because it names five herptile categories and then almost nothing among birds beyond game birds and mourning doves. The African grey falls outside it, so § 97A.501's possession bar does not apply. No parrot appears on either invasive species list. Federal CITES Appendix I paperwork is the live constraint for this species and is not a Minnesota matter.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13280,6 +13511,14 @@
           "note": "The giant African millipede is a myriapod, and Illinois divides its animal law up in a way that leaves it out of every piece. The Wildlife Code says in its own words that it applies only to wild birds and wild mammals. The Herptiles-Herps Act covers reptiles and amphibians. The Fish and Aquatic Life Code covers aquatic life. The injurious species list at 17 Ill. Adm. Code 805 has a category for invertebrates, and it is headed \"Fish, Mollusks and Aquatic Invertebrates\". A terrestrial arthropod falls in the gap, the same way it does in Pennsylvania, so no state possession rule applies. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-015",
+          "cite": "§ 97A.015, subd. 55",
+          "quote": "\"Wild animals\" means all creatures, whether dead or alive, not human, wild by nature, endowed with sensation and power of voluntary motion, and includes mammals, birds, fish, amphibians, reptiles, crustaceans, and mollusks.",
+          "note": "The giant African millipede is a myriapod, and Minnesota's definition of wild animals lists seven groups, of which the only invertebrates are crustaceans and mollusks. That places it outside chapter 97A altogether, including the protected wild animal list and the possession bar built on it. The invasive species rules stop in the same place: the invertebrates designated under Minn. R. 6216.0250 are aquatic snails, rusty crayfish and the spiny waterflea. Minnesota is unusual in that its wild animal definition is broad enough to catch a ball python and still narrow enough to miss a tarantula.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13422,10 +13661,10 @@
         "MN": {
           "status": "conditional",
           "sourceId": "mn-97a-401",
-          "cite": "Minn. Stat. § 97A.401, subd. 8",
-          "quote": "A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
-          "note": "Since August 2021, Minnesota requires any pet snake to come from a permitted breeder (or be grandfathered from before that date). The rule is not limited to Minnesota-native species; it applies to snakes generally.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A corn snake is a snake, so it needs to have come from a permitted breeder or to have been held before 1 August 2021. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         },
         "MS": {
           "status": "legal",
@@ -13774,10 +14013,10 @@
         "MN": {
           "status": "conditional",
           "sourceId": "mn-97a-401",
-          "cite": "Minn. Stat. § 97A.401, subd. 8",
-          "quote": "A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
-          "note": "Since August 2021, Minnesota requires any pet snake, including a native species like milk snake, to come from a permitted breeder or be grandfathered from before that date.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A milk snake is a snake, so it needs to have come from a permitted breeder or to have been held before 1 August 2021. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         },
         "MS": {
           "status": "legal",
@@ -14115,10 +14354,10 @@
         "MN": {
           "status": "conditional",
           "sourceId": "mn-97a-401",
-          "cite": "Minn. Stat. § 97A.401, subd. 8",
-          "quote": "A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
-          "note": "Minnesota's breeder-sourcing requirement applies to snakes generally, rosy boa included.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A rosy boa is a snake, so it needs to have come from a permitted breeder or to have been held before 1 August 2021. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         },
         "MO": {
           "status": "legal",
@@ -14565,6 +14804,14 @@
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
           "note": "No Glaucomys appears on the domestic list, the unregulated list or the prohibited list, so it is regulated. Colorado has no pet licence to issue. Chapter W-11 § 1104 offers commercial wildlife park licences, which require commercial status, and a non-commercial wildlife park licence that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before 1 January 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". The squirrels § 008(B) does prohibit outright are African genera, tree or sun squirrels (Heliosciurus) and rope squirrels (Funisciurus), which is a different rule aimed at a monkeypox-era import concern rather than at this animal. Colorado also has its own native northern flying squirrel, and C.R.S. 33-6-109 bars live possession of native wildlife independently of any of this.",
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-501",
+          "cite": "§ 97A.501, subd. 1; § 97A.015, subds. 39, 45",
+          "quote": "A person may not take, buy, sell, transport, or possess a protected wild animal unless allowed by the game and fish laws.",
+          "note": "Minnesota bars possessing protected wild animals, and the flying squirrel is not one. Section 97A.015, subd. 39 lists the protected categories, and among mammals it reaches big game, small game, wolf and bats; subd. 45 defines small game and names the gray squirrel, fox squirrel, cottontail rabbit and snowshoe hare but not the flying squirrel. Minn. R. 6134 lists nineteen mammals of special concern, including two other squirrel-family animals, and no Glaucomys. That leaves it an unprotected wild animal under subd. 53, outside the § 97A.501 prohibition. Worth checking against the states either side of it: this is one of the few places a flying squirrel needs nothing at all, and the reason is a gap in a list rather than an express permission.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -14900,6 +15147,14 @@
           "note": "This is the definition to read before assuming Illinois restricts monitors. Article 25 puts monitor lizards under the special use permit regime, available only to residents running bona fide educational programs, and § 85-5 bars possessing a special use herptile outside it. But § 25-5 defines the term to mean two animals, the crocodile monitor and the Komodo dragon, and nothing else in Varanidae. The ackie monitor is neither, so it is an ordinary non-native herptile and needs no permit. A rule that names a family and then narrows it to two species in the same sentence is exactly the kind that gets summarised backwards. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A ackie monitor is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -15079,12 +15334,12 @@
           "verifiedOn": "2026-08-27"
         },
         "MN": {
-          "status": "legal",
-          "sourceId": "mn-346-155",
-          "cite": "§ 346.155",
-          "quote": "all members of the family Felidae except the domestic cat",
-          "note": "Minnesota's regulated-animal statute reaches cats, bears, and non-human primates. No reptile appears in it.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. The garter snake is also a Minnesota native, and the DNR's narrower reading of the rule, that it bars collecting and selling wild-collected Minnesota snakes, bites hardest here: on either reading of the statute, a garter snake taken from the wild in Minnesota is not lawfully possessed. This entry previously read as unrestricted on the strength of the regulated animal statute, which reaches only cats, bears and primates and was never the law that answers a reptile question here. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         },
         "MO": {
           "status": "permit",
@@ -15477,11 +15732,12 @@
           "verifiedOn": "2026-08-27"
         },
         "MN": {
-          "status": "legal",
-          "sourceId": "mn-346-155",
-          "cite": "§ 346.155",
-          "note": "Minnesota's regulated-animal statute reaches cats, bears, and non-human primates. No reptile appears in it.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A California kingsnake is a snake, so it needs to have come from a permitted breeder or to have been held before 1 August 2021. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         },
         "MO": {
           "status": "legal",
@@ -15865,10 +16121,11 @@
         },
         "MN": {
           "status": "legal",
-          "sourceId": "mn-346-155",
-          "cite": "§ 346.155",
-          "note": "Minnesota's regulated-animal statute reaches cats, bears, and non-human primates; no bird is in it.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "mn-97a-015",
+          "cite": "§ 97A.015, subd. 39",
+          "quote": "\"Protected wild animals\" means big game, small game, game fish, native rough fish, minnows, leeches, chubs, frogs, turtles, clams, mussels, wolf, mourning doves, bats, snakes, salamanders, lizards, any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134, and wild animals that are protected by a restriction in the time or manner of taking, other than a restriction in the use of artificial lights, poison, or motor vehicles.",
+          "note": "The protected list is worth reading in full for Minnesota, because it names five herptile categories and then almost nothing among birds beyond game birds and mourning doves. The cockatoo falls outside it, so § 97A.501's possession bar does not apply. The invasive species rules do not reach it either: Minn. R. 6216.0250 designates no bird as a prohibited invasive species, and the three regulated invasive birds are the Egyptian goose, mute swan and Sichuan pheasant.",
+          "verifiedOn": "2026-09-05"
         },
         "MO": {
           "status": "legal",
@@ -16405,6 +16662,14 @@
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The red-footed tortoise is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97c-605",
+          "cite": "§ 97C.605, subds. 1 and 2c",
+          "quote": "A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license. ... A person does not need the licenses specified under subdivision 1: ... (2) when buying a turtle at a retail outlet",
+          "note": "Turtles are the gap in the 2021 pet reptile rule. Section 97A.401, subd. 8 covers snakes, lizards and salamanders and stops there, so turtles stay under their own older regime, which is a licence requirement with a short list of exemptions rather than a source condition. Whether a red-footed tortoise is a \"turtle\" for this section is not spelled out, since Minnesota never defines the word and its turtle rules are plainly written around aquatic natives. It does not matter much in practice: read broadly, the retail outlet exemption in subd. 2c covers a pet-shop animal anyway, and read narrowly the section does not reach it at all. Either way no licence is needed for one bought at retail, and the species is on neither invasive species list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16500,6 +16765,14 @@
           "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The bearded dragon is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A bearded dragon is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -16597,6 +16870,14 @@
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The leopard gecko is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A leopard gecko is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16692,6 +16973,14 @@
           "quote": "The following list comprises Illinois' indigenous or native herptile taxa to the subspecies level, if applicable.",
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The crested gecko is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A crested gecko is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -16789,6 +17078,14 @@
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The blue-tongue skink is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. Illinois has native skinks, the five-lined, broad-headed and ground skinks, so the family is represented on the § 885.40 list; Tiliqua is not, and the list works to the species and subspecies level rather than by family. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A blue-tongue skink is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16885,6 +17182,14 @@
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. Jackson's chameleon is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A Jackson's chameleon is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16980,6 +17285,14 @@
           "note": "Illinois regulates herptiles through one Act, and almost everything in it turns on whether the animal is an Illinois native taxon. The green anole is not on the § 885.40 native list, so the possession cap on indigenous herptiles, the sport fishing licence needed to collect one, and the Herpetoculture permit needed to breed or sell one all fall away. It is not a special use herptile either: those are the venomous reptiles, the crocodilians, the medically significant amphibians, and monitor lizards as § 25-5 narrowly defines them. Illinois' native lizards are six species, the six-lined racerunner, slender glass lizard, five-lined and broad-headed skinks, eastern fence lizard and ground skink. Anolis is not among them. One thing to know whatever the species: 510 ILCS 68/5-5(a) sets a possession limit of \"no more than 4 total per species\" for herptiles, and § 5-5(e) says a resident over that limit needs a Herptile Scientific Collection or Herpetoculture permit \"regardless of the origin of the species\". The administrative rule at § 885.20(d) writes the same cap as applying to native taxa only. Statute and rule are not saying the same thing, and the statute is the one with the broader words, so a keeper with five of one non-native species is in an unresolved spot. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A green anole is a lizard, so the breeder-source condition applies to it as much as to a Minnesota native. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17069,6 +17382,14 @@
           "note": "Illinois is the state where the rabbit needs the most care, because two provisions name the animal and neither writes an express carve-out for domestic stock. This one bars holding or possessing San Juan rabbits with no permit available at all, and the San Juan is a feral strain of Oryctolagus cuniculus kept for dog training rather than a pet breed. The injurious species list at 17 Ill. Adm. Code 805.20(a) then names \"Any species of European rabbit of the genus Oryctolagus\", carried over from the federal injurious wildlife listing at 50 CFR 16.11. Read at face value that pair would reach a house rabbit. Read in place they do not: the Part 805 heading is \"Wild Mammals\" and the federal section it copies is titled \"Importation of live wild mammals\", the Wildlife Code says in its own words that it applies only to wild birds and wild mammals, and the Animal Welfare Act licenses Illinois pet shops to sell animals customarily obtained as pets. Recorded legal on that reading, and flagged because the wording is the kind that gets quoted out of context in both directions. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "unclear",
+          "sourceId": "mn-84d-05",
+          "cite": "Minn. R. 6216.0250, subp. 5(C); Minn. Stat. § 84D.05, subd. 1",
+          "quote": "A person may not possess, import, purchase, sell, propagate, transport, or introduce a prohibited invasive species, except: (1) under a permit issued by the commissioner under section 84D.11",
+          "note": "Minnesota designates the European rabbit, Oryctolagus cuniculus, a prohibited invasive species by rule, with no strain or domestication qualifier, and § 84D.05 then bars possessing one outright. The DNR restates that on its own invasive species page, listing the European rabbit among the prohibited mammals and saying it is a misdemeanour to possess, import, purchase, transport or introduce them except under a permit for disposal, control, research or education. None of those permit categories is pet-keeping, no carve-out for domesticated stock appears in the rule, the statute or the agency page, and the DNR has published no species profile or guidance for it at all. Against that sits the obvious: Minnesota licenses pet shops and runs county-fair rabbit shows, and the listing descends from the federal injurious wildlife entry aimed at wild-type animals. Recorded unclear because the text says one thing plainly and practice says another, and nothing published resolves it. Illinois names the same animal and lands differently, because there the possession bar is written for the San Juan strain and the injurious list is headed \"Wild Mammals\".",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17156,6 +17477,14 @@
           "quote": "This Act shall apply only to the wild birds and parts of wild birds (including, but not limited to, their nests and eggs), and wild mammals and parts of wild mammals, which shall include their green hides, in the State of Illinois, or which may be brought into the State.",
           "note": "The Madagascar hissing cockroach is an insect, and Illinois divides its animal law up in a way that leaves it out of every piece. The Wildlife Code says in its own words that it applies only to wild birds and wild mammals. The Herptiles-Herps Act covers reptiles and amphibians. The Fish and Aquatic Life Code covers aquatic life. The injurious species list at 17 Ill. Adm. Code 805 has a category for invertebrates, and it is headed \"Fish, Mollusks and Aquatic Invertebrates\". A terrestrial arthropod falls in the gap, the same way it does in Pennsylvania, so no state possession rule applies. Illinois is a home rule state, so a municipal ordinance can be stricter than anything above and is often the rule that actually decides this.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-015",
+          "cite": "§ 97A.015, subd. 55",
+          "quote": "\"Wild animals\" means all creatures, whether dead or alive, not human, wild by nature, endowed with sensation and power of voluntary motion, and includes mammals, birds, fish, amphibians, reptiles, crustaceans, and mollusks.",
+          "note": "The Madagascar hissing cockroach is an insect, and Minnesota's definition of wild animals lists seven groups, of which the only invertebrates are crustaceans and mollusks. That places it outside chapter 97A altogether, including the protected wild animal list and the possession bar built on it. The invasive species rules stop in the same place: the invertebrates designated under Minn. R. 6216.0250 are aquatic snails, rusty crayfish and the spiny waterflea. Minnesota is unusual in that its wild animal definition is broad enough to catch a ball python and still narrow enough to miss a tarantula.",
           "verifiedOn": "2026-09-05"
         }
       }

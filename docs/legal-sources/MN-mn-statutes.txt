@@ -1,0 +1,291 @@
+# Minnesota: the four statutes and one DNR page that decide a pet question
+
+sourceId: mn-346-155 / mn-97a-401 / mn-97a-015 / mn-97a-501 / mn-97c-605 / mn-84d-05
+jurisdiction: MN
+url: https://www.revisor.mn.gov/statutes/cite/<section>
+     https://www.revisor.mn.gov/rules/<part>/
+     https://www.dnr.state.mn.us/reptiles_amphibians/sales.html
+     https://www.dnr.state.mn.us/invasives/laws.html
+fetched: 2026-09-05
+fetch notes: revisor.mn.gov serves statutes at /statutes/cite/<section> and rules at
+  /rules/<part>/ with plain curl; both are the official publication. Occasional TLS handshake
+  failure on the first request, just retry. A rules chapter number alone (/rules/6256/) gives
+  the table of parts; a full part number (/rules/6256.0500/) gives the text. dnr.state.mn.us
+  works with plain curl too.
+
+READ THE DEFINITIONS FIRST. Minnesota's answer for almost every reptile is set two statutes
+away from the rule people quote.
+  97A.015 subd. 55  "Wild animals" means creatures "wild by nature" and includes reptiles and
+                    amphibians. NO geographic limit. A ball python is a wild animal in Minnesota.
+  97A.015 subd. 39  "Protected wild animals" includes frogs, TURTLES, snakes, salamanders and
+                    lizards as whole categories, again with no native limit.
+  97A.501 subd. 1   A person may not possess a protected wild animal unless allowed by the game
+                    and fish laws.
+So possessing any pet snake, lizard or salamander is unlawful in Minnesota unless something
+allows it, and 97A.401 subd. 8 is the thing that allows it, on a source condition.
+
+THE 2021 REPTILE RULE AND THE HOLE IN IT. 97A.401 subd. 8: "The commissioner must prescribe
+conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders.
+A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed
+before August 1, 2021, may be possessed as a pet." Now check whether the permit exists:
+  - the DNR permits index lists no snake, lizard or salamander breeder permit;
+  - Minnesota Rules chapter 6256 is titled FROGS AND TURTLES and has no herp parts;
+  - the DNR's own pet-trade page never mentions subd. 8, and describes the 2017 change as
+    reaching "wild collected Minnesota snakes, lizards, and/or salamanders", which is narrower
+    than the statute.
+Every Minnesota reptile entry on the map carries that gap in its note rather than resolving it.
+
+TURTLES ARE NOT IN SUBD. 8. They stay under 97C.605: an angling licence plus a recreational
+turtle licence to take, possess or transport, with subd. 2c exempting, among others, "buying a
+turtle at a retail outlet". Only the western painted turtle and the snapping turtle may be taken
+at all, and only those two native turtles may be sold as pets. The red-eared slider is a
+REGULATED invasive species, which in Minnesota means legal to possess, buy, sell and transport,
+never to release. It is not on the DNR's native turtle list.
+
+INVERTEBRATES fall out cleanly: subd. 55 lists crustaceans and mollusks and no other
+invertebrate, and the invasive invertebrates in Minn. R. 6216.0250 are aquatic snails, rusty
+crayfish and the spiny waterflea.
+
+THE RABBIT IS THE HARD ONE. Minn. R. 6216.0250 subp. 5(C) designates the European rabbit,
+Oryctolagus cuniculus, a prohibited invasive species, with no strain qualifier; 84D.05 subd. 1
+bars possession outright; and the DNR's invasive species laws page repeats that possession is a
+misdemeanour, with permits only for disposal, control, research or education. No domestic
+carve-out appears anywhere and the DNR has published no profile for the species. Recorded
+`unclear` on the map.
+
+THE BENGAL IS THE OTHER ONE. 346.155 subd. 1(e)(1) excludes "cats recognized as a domestic
+breed, registered as a domestic breed, and shown as a domestic breed by a national or
+international multibreed cat registry association", which describes the Bengal. The same
+definition then closes with a sentence sweeping in "any hybrid or cross between an animal listed
+in clause (1) ... and a domestic animal and offspring from all subsequent generations". Both are
+in force. The serval needs none of this: it is named in the list.
+
+FLYING SQUIRREL: not big game, not small game (97A.015 subd. 45 names the gray, fox and red
+squirrels and the hares, not Glaucomys), not on the subd. 39 protected list, and not in
+Minn. R. 6134. That makes it an unprotected wild animal, outside the 97A.501 bar.
+
+=========================================================================
+Minn. Stat. § 346.155  POSSESSING REGULATED ANIMALS
+=========================================================================
+346.155 POSSESSING REGULATED ANIMALS.
+§
+Subdivision 1. Definitions.
+(a) The definitions in this subdivision apply to this section.
+(b) "Person" means any natural person, firm, partnership, corporation, or association, however organized.
+(c) "Wildlife sanctuary" means a 501(c)(3) nonprofit organization that:
+(1) operates a place of refuge where abused, neglected, unwanted, impounded, abandoned, orphaned, or displaced wildlife are provided care for their lifetime;
+(2) does not conduct any commercial activity with respect to any animal of which the organization is an owner; and
+(3) does not buy, sell, trade, auction, lease, loan, or breed any animal of which the organization is an owner, except as an integral part of the species survival plan of the American Zoo and Aquarium Association.
+(d) "Possess" means to own, care for, have custody of, or control.
+(e) "Regulated animal" means:
+(1) all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association;
+(2) bears; and
+(3) all nonhuman primates, including, but not limited to, lemurs, monkeys, chimpanzees, gorillas, orangutans, marmosets, lorises, and tamarins.
+Regulated animal includes any hybrid or cross between an animal listed in clause (1), (2), or (3) and a domestic animal and offspring from all subsequent generations of those crosses or hybrids.
+(f) "Local animal control authority" means an agency of the state, county, municipality, or other governmental subdivision of the state that is responsible for animal control operations in its jurisdiction.
+(g) "Bodily harm," "substantial bodily harm," and "great bodily harm" have the meanings given them in section 609.02 .
+§
+Subd. 2. Possession of regulated animals.
+(a) Except as provided in this section, it is unlawful for a person to possess a regulated animal.
+(b) A person who possesses a regulated animal on January 1, 2005, has 90 days to come into compliance with regulations promulgated by the United States Department of Agriculture for regulated animals under the Animal Welfare Act, Public Law 89-544, and its subsequent amendments, and the regulations adopted under that act relating to facilities and operations, animal health and husbandry, and veterinary care for regulated animals.
+(c) Except as provided in paragraph (e), a person must not take possession of a regulated animal after January 1, 2005.
+(d) Except as provided in paragraph (e), a person must not allow regulated animals in their possession to breed after January 1, 2005.
+(e) Except as provided in paragraph (g), a person who possesses a valid United States Department of Agriculture license and is in compliance with the United States Department of Agriculture Animal Welfare Act regulations and standards on January 1, 2005, may breed, purchase, or otherwise acquire new regulated animals after January 1, 2005, in order to:
+(1) maintain the operating inventory of regulated animals possessed on January 1, 2005;
+(2) sell regulated animals to other United States Department of Agriculture licensed and compliant facilities within Minnesota for replacement purposes as provided in clause (1);
+(3) sell regulated animals outside Minnesota; or
+(4) sell regulated animals to persons eligible under paragraph (f). Offspring under six months of age shall not be counted for the purpose of determining the number of replacement animals that can be possessed under this paragraph.
+(f) Except as provided in paragraph (g), a person who does not hold a United States Department of Agriculture license for regulated animals, possesses a regulated animal on January 1, 2005, and has properly registered the animal may replace the regulated animal if it dies, but may replace it only once.
+(g) If a regulated animal dies of neglect or cruelty, is seized pursuant to subdivision 5, or if the person is involved in illegal activities, the person cannot acquire a replacement animal.
+§
+Subd. 3. Registration.
+(a) Within 60 days after January 1, 2005, a person who possesses a regulated animal must notify in writing the local animal control authority using a registration form prepared by the Minnesota Animal Control Association and approved by the Board of Animal Health. The notification shall include the person's name, address, telephone number, and a complete inventory of each regulated animal that the person possesses. The inventory shall include the following information: number and species of each regulated animal; the microchip number and manufacturer for each regulated animal if available; the exact location where each regulated animal is kept; and age, sex, color, weight, scars, and any distinguishing marks of each regulated animal.
+(b) If a person who possesses a regulated animal has a microchip implanted in the animal for identification, the name of the microchip manufacturer and the identification number of the microchip must be provided to the local animal control authority. If a regulated animal is sedated for any reason and the animal does not have a microchip implanted, a microchip must be implanted in the regulated animal. Within 30 days after the microchip is implanted, the name of the microchip manufacturer and the identification number of the microchip must be provided to the local animal control authority. A person selling or transferring ownership of offspring under six months of age as provided in subdivision 2, paragraph (e), is encouraged to have a microchip implanted in the animal prior to the sale or transfer. Within 30 days of acquisition, a person acquiring ownership of an offspring with a microchip implanted shall comply with microchip information reporting requirements under this section.
+(c) If a local animal control authority performs an initial site inspection, a fee of up to $50 may be charged. An annual fee of $25 per animal to register regulated animals up to a maximum of $250 annually per person may be charged. The local animal control authority may charge an additional site inspection fee of $50 if the person acquires and possesses another type of regulated animal. A certificate of registration must be issued by the local animal control authority to the person upon payment of the fee.
+§
+Subd. 4. Requirements.
+(a) A person who possesses a regulated animal must maintain health and ownership records on each animal and must maintain the records for the life of the animal. If possession of the regulated animal is transferred to another person, a copy of the health and ownership records must accompany the animal.
+(b) A person who possesses a regulated animal must maintain an ongoing program of veterinary care which includes a veterinary visit to the premises at least annually.
+(c) A person who possesses a regulated animal must notify the local animal control authority in writing within ten days of a change in address or location where the regulated animal is kept. The notification of change in address or location form must be prepared by the Minnesota Animal Control Association and approved by the Board of Animal Health.
+(d) A person with a United States Department of Agriculture license for regulated animals shall forward a copy of the United States Department of Agriculture inspection report to the local animal control authority within 30 days of receipt of the inspection report.
+(e) A person who possesses a regulated animal shall prominently display a sign on the structure where the animal is housed indicating that a dangerous regulated animal is on the premises.
+(f) A person who possesses a regulated animal must notify, as soon as practicable, local law enforcement officials of any escape of a regulated animal. The person who possesses the regulated animal is liable for any costs incurred by any person, city, county, or state agency resulting from the escape of a regulated animal unless the escape is due to a criminal act by another person or a natural event.
+(g) A person who possesses a regulated animal must maintain a written recovery plan in the event of the escape of a regulated animal. The person must maintain live traps, or other equipment necessary to assist in the recovery of the regulated animal.
+(h) A person may not move a regulated animal from its location unless the person notifies the local animal control authority prior to moving the animal. The notification must include the date and the location where the animal is to be moved. This paragraph does not apply to a regulated animal transported to a licensed veterinarian.
+(i) If a person who possesses a regulated animal can no longer care for the animal, the person shall take steps to find long-term placement for the regulated animal.
+§
+Subd. 5. Seizure.
+(a) The local animal control authority, upon issuance of a notice of inspection, must be granted access at reasonable times to sites where the local animal control authority has reason to believe a violation of this chapter is occurring or has occurred.
+(b) If a person who possesses a regulated animal is not in compliance with the requirements of this section, the local animal control authority shall take possession of the animal for custody and care, provided that the procedures in this subdivision are followed.
+(c) Upon request of a person possessing a regulated animal, the local animal control authority may allow the animal to remain in the physical custody of the owner for 30 days, during which time the owner shall take all necessary actions to come in compliance with this section. During the 30-day period, the local animal control authority may inspect, at any reasonable time, the premises where the animal is kept.
+(d) If a person who possesses a regulated animal is not in compliance with this section following the 30-day period described in paragraph (c), the local animal control authority shall seize the animal and place it in a holding facility that is appropriate for the species for up to ten days.
+(e) The authority taking custody of an animal under this section shall provide a notice of the seizure by delivering or mailing it to the owner, by posting a copy of it at the place where the animal is taken into custody, or by delivering it to a person residing on the property. The notice must include:
+(1) a description of the animal seized; the authority for and purpose of the seizure; the time, place, and circumstances under which the animal was seized; and a contact person and telephone number;
+(2) a statement that a person from whom a regulated animal was seized may post security to prevent disposition of the animal and may request a hearing concerning the seizure and that failure to do so within five business days of the date of the notice will result in disposition of the animal;
+(3) a statement that actual costs of the care, keeping, and disposal of the regulated animal are the responsibility of the person from whom the animal was seized, except to the extent that a court or hearing officer finds that the seizure or impoundment was not substantially justified by law; and
+(4) a form that can be used by a person from whom a regulated animal was seized for requesting a hearing under this subdivision.
+(f) If a person from whom the regulated animal was seized makes a request within five business days of the seizure, a hearing must be held within five business days of the request to determine the validity of the seizure and disposition of the animal. The judge or hearing officer may authorize the return of the animal to the person from whom the animal was seized if the judge or hearing officer finds:
+(1) that the person can and will provide the care required by law for the regulated animal; and
+(2) the regulated animal is physically fit.
+(g) If a judge or hearing officer orders a permanent disposition of the regulated animal, the local animal control authority may take steps to find long-term placement for the animal with a wildlife sanctuary, persons authorized by the Department of Natural Resources, or an appropriate United States Department of Agriculture licensed facility.
+(h) A person from whom a regulated animal is seized is liable for all actual costs of care, keeping, and disposal of the animal, except to the extent that a court or hearing officer finds that the seizure was not substantially justified by law. The costs must be paid in full or a mutually satisfactory arrangement for payment must be made between the local animal control authority and the person claiming an interest in the animal before return of the animal to the person.
+(i) A person from whom a regulated animal has been seized under this subdivision may prevent disposition of the animal by posting security in the amount sufficient to provide for the actual costs of care and keeping of the animal. The security must be posted within five business days of the seizure, inclusive of the day of the seizure.
+(j) If circumstances exist threatening the life of a person or the life of any animal, local law enforcement or the local animal control authority may seize a regulated animal without an opportunity for hearing or court order, or destroy the animal.
+§
+Subd. 6. Disposal of animals.
+Upon proper determination by a Minnesota licensed veterinarian, any regulated animal taken into custody under this section may be immediately disposed of when the regulated animal is suffering and is beyond cure through reasonable care and treatment. The authority taking custody of the regulated animal may recover all costs incurred under this section.
+§
+Subd. 7. Exemptions.
+This section does not apply to:
+(1) institutions accredited by the American Zoo and Aquarium Association;
+(2) a wildlife sanctuary;
+(3) fur-bearing animals, as defined in section 97A.015 , possessed by a game farm that is licensed under section 97A.105 , or bears possessed by a game farm that is licensed under section 97A.105 ;
+(4) the Department of Natural Resources, or a person authorized by permit issued by the commissioner of natural resources pursuant to section 97A.401, subdivision 3 ;
+(5) a licensed or accredited research or medical institution;
+(6) a United States Department of Agriculture licensed exhibitor of regulated animals while transporting or as part of a circus, carnival, rodeo, or fair; or
+(7) a zoo that: (i) is a United States Department of Agriculture-licensed exhibitor of regulated animals; (ii) houses animals owned by institutions accredited by the American Zoo and Aquarium Association; and (iii) participates in the American Zoo and Aquarium Association Species Survival Plan.
+§
+Subd. 8. License transfer.
+Nothing in this section precludes a person who holds a valid United States Department of Agriculture license from selling or transferring the entire business and the regulated animals covered by that license to another person who holds a valid United States Department of Agriculture license.
+§
+Subd. 9. Report to Board of Animal Health.
+By July 1 each year, a local animal control authority shall report to the Board of Animal Health on regulated animals registered with the local animal control authority. The report shall include all registration information submitted to the local animal control authority under subdivision 3, paragraph (a), and information on enforcement actions taken under this section.
+§
+Subd. 9a. Confinement and control.
+A person violates this subdivision who possesses a regulated animal and negligently fails to control the animal or keep it properly confined and as a result the animal causes bodily harm, substantial bodily harm, or great bodily harm to another person.
+§
+Subd. 10. Penalty.
+(a) A person who knowingly violates subdivision 2, 3, paragraph (b) or (c), or 4 is guilty of a misdemeanor.
+(b) A person who knowingly violates subdivision 3, paragraph (a), is guilty of a gross misdemeanor.
+(c) A person who violates subdivision 9a, resulting in bodily harm is guilty of a misdemeanor and may be sentenced to imprisonment for not more than 90 days or to payment of a fine of not more than $1,000, or both.
+(d) A person who violates subdivision 9a, resulting in substantial bodily harm is guilty of a gross misdemeanor and may be sentenced to imprisonment for not more than 364 days or to payment of a fine of not more than $3,000, or both.
+(e) A person who violates subdivision 9a, resulting in great bodily harm or death is guilty of a felony and may be sentenced to imprisonment for not more than two years or to payment of a fine of not more than $5,000, or both, unless a greater penalty is provided elsewhere.
+History:
+2004 c 264 s 1 ; 2006 c 260 art 1 s 5 -9; 2022 c 95 art 2 s 28 ; 2023 c 52 art 6 s 16
+Official Publication of the State of Minnesota
+
+=========================================================================
+Minn. Stat. § 97A.401  SPECIAL PERMITS
+=========================================================================
+97A.401 SPECIAL PERMITS.
+§
+Subdivision 1. Commissioner's authority.
+The commissioner may issue special permits for the activities in this section. A special permit may be issued in the form of a general permit to a governmental subdivision or to the general public to conduct one or more activities under subdivisions 2 to 9.
+§
+Subd. 2. Collecting zoological specimens.
+Special permits may be issued without a fee to municipalities, incorporated natural history societies, high schools, colleges, and universities that maintain a zoological collection, to collect specimens of eggs, nests, and wild animals for scientific or exhibition purposes.
+§
+Subd. 3. Taking, possessing, and transporting wild animals for certain purposes.
+(a) Except as provided in paragraph (b), special permits may be issued without a fee to take, possess, and transport wild animals as pets and for scientific, educational, rehabilitative, wildlife disease prevention and control, and exhibition purposes. The commissioner shall prescribe the conditions for taking, possessing, transporting, and disposing of the wild animals.
+(b) A special permit may not be issued to take or possess wild or native deer for exhibition, propagation, or as pets.
+(c) Nonresident professional wildlife rehabilitators with a federal rehabilitation permit may possess and transport wildlife affected by oil spills.
+§
+Subd. 4. Taking wild animals from game refuges, wildlife management, and other areas.
+Special permits may be issued, with or without a fee, to take a wild animal from game refuges, wildlife management areas, state parks, controlled hunting zones, and other areas of the state that the commissioner may open for the taking of a wild animal during a special season or subject to special restrictions. In addition, an application fee may be charged for a special permit. Local units of government may charge an administrative fee in connection with special hunts under their jurisdiction. Fees to be collected shall be based upon the estimated cost of conducting the special season or administering the special restrictions.
+§
+Subd. 5. Wild animals damaging property.
+Special permits may be issued with or without a fee to take protected wild animals or to remove or destroy their dens, nests, eggs, houses, or dams for the purpose of preventing or reducing damage or injury to people, property, agricultural crops, or other interests. The commissioner may prescribe rules for taking Canada geese and their nests and eggs, with or without a permit, consistent with federal regulations.
+§
+Subd. 6. Endangered muskrats.
+Special permits may be issued with or without a fee to take muskrats in danger of freezing out or starving in the winter.
+§
+Subd. 7. Raptors.
+The commissioner shall prescribe conditions and may issue permits for persons to breed, propagate, and sell raptors.
+§
+Subd. 8. Snakes, lizards, and salamanders.
+The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.
+§
+Subd. 9. Taking wild animals with federal incidental take permit.
+The commissioner must prescribe conditions for and may issue a permit to a person for taking wild animals during activities covered under a federal incidental take permit issued under section 10(a)(1)(B) of the federal Endangered Species Act, including to a landowner for taking wild animals during activities covered by a certificate of inclusion issued by the commissioner under Code of Federal Regulations, title 50, section 13.25 (e).
+History:
+1986 c 386 art 1 s 53 ; 1986 c 450 s 2 ; 1989 c 287 s 2 ; 1993 c 231 s 17 ; 1Sp1995 c 1 s 21 ; 1996 c 410 s 24 ; 2003 c 128 art 1 s 55 ; 2005 c 146 s 9 ; 2007 c 131 art 1 s 21 ; 2012 c 272 s 24 ; 2013 c 114 art 4 s 65 ; 1Sp2021 c 6 art 2 s 53 ,54; 2023 c 60 art 4 s 46 ,47
+Official Publication of the State of Minnesota
+
+=========================================================================
+Minn. Stat. § 97A.501  WILD ANIMALS; GENERAL RESTRICTIONS
+=========================================================================
+97A.501 WILD ANIMALS; GENERAL RESTRICTIONS.
+§
+Subdivision 1. General restrictions.
+A person may not take, buy, sell, transport, or possess a protected wild animal unless allowed by the game and fish laws. The ownership of all wild animals is in the state, unless the wild animal has been lawfully acquired under the game and fish laws. The ownership of a wild animal that is lawfully acquired reverts to the state if a law relating to sale, transportation, or possession of the wild animal is violated.
+§
+Subd. 2. Endangered species.
+A person may not take, import, transport, or sell an endangered species of wild animal, or sell, or possess with intent to sell an article made from the parts of a wild animal, except as provided in section 84.0895 .
+§
+Subd. 3. Contraceptive chemicals.
+(a) A person may not administer contraceptive chemicals to noncaptive wild animals without a permit issued by the commissioner.
+(b) The commissioner shall adopt rules establishing standards and guidelines for the administration of contraceptive chemicals to noncaptive wild animals. The rules may specify chemical delivery methods and devices and monitoring requirements.
+History:
+1986 c 386 art 1 s 71 ; 1987 c 384 art 1 s 10 ; 1994 c 623 art 1 s 26
+Official Publication of the State of Minnesota
+
+=========================================================================
+Minn. Stat. § 97C.605  TURTLES
+=========================================================================
+97C.605 TURTLES.
+§
+Subdivision 1. Taking turtles; requirements.
+(a) A person may not take, possess, or transport turtles without a resident angling license and a recreational turtle license.
+(b) Turtles taken from the wild are for personal use only and may not be resold.
+§
+Subd. 2.
+MS 2022 [Repealed, 2023 c 60 art 4 s 112 ]
+§
+Subd. 2a.
+MS 2022 [Repealed, 2023 c 60 art 4 s 112 ]
+§
+Subd. 2b.
+MS 2022 [Repealed, 2023 c 60 art 4 s 112 ]
+§
+Subd. 2c. License exemptions.
+(a) A person does not need the licenses specified under subdivision 1:
+(1) when buying turtles from a licensed aquatic farm or licensed private fish hatchery for resale at a retail outlet or restaurant;
+(2) when buying a turtle at a retail outlet;
+(3) to take, possess, and rent up to 25 turtles greater than four inches in length for the purpose of providing the turtles to participants at a nonprofit turtle race, if the person is a resident under age 18. The person is responsible for the well-being of the turtles; or
+(4) if under 16 years of age when possessing turtles. Notwithstanding any other law to the contrary, a person under the age of 16 may possess, without a license, up to three snapping or western painted turtles, provided the turtles are possessed for personal use and are within the applicable length and width requirements.
+(b) A person with an aquatic farm license with a turtle endorsement or a private fish hatchery license with a turtle endorsement may sell, obtain, possess, transport, and propagate turtles and turtle eggs without the licenses specified under subdivision 1.
+(c) Turtles possessed under this subdivision may not be released back into the wild.
+§
+Subd. 3. Taking; methods prohibited.
+A person may not take turtles by using:
+(1) explosives, drugs, poisons, lime, and other harmful substances;
+(2) traps;
+(3) nets other than anglers' fish landing nets;
+(4) commercial equipment;
+(5) firearms and ammunition;
+(6) bow and arrow or crossbow; or
+(7) spears, harpoons, or any other implements that impale turtles.
+§
+Subd. 4.
+[Repealed, 2002 c 351 s 34 ]
+§
+Subd. 5.
+MS 2022 [Repealed, 2023 c 60 art 4 s 112 ]
+§
+Subd. 6. Rules.
+The commissioner may adopt rules for taking turtles. The commissioner may prescribe seasons, limits, closed areas, and other restrictions and requirements the commissioner deems necessary for the conservation of turtles.
+History:
+1986 c 386 art 3 s 53 ; 1989 c 266 s 2 ,3; 1Sp1995 c 1 s 43 ; 2000 c 495 s 44 ,45; 2002 c 351 s 23 ; 2003 c 107 s 28 ; 2004 c 215 s 30 ,31; 1Sp2021 c 6 art 2 s 75 ; 2023 c 60 art 4 s 72 -74
+Official Publication of the State of Minnesota
+
+=========================================================================
+Minn. Stat. § 84D.05  PROHIBITED INVASIVE SPECIES
+=========================================================================
+84D.05 PROHIBITED INVASIVE SPECIES.
+§
+Subdivision 1. Prohibited activities.
+A person may not possess, import, purchase, sell, propagate, transport, or introduce a prohibited invasive species, except:
+(1) under a permit issued by the commissioner under section 84D.11 ;
+(2) in the case of purple loosestrife, as provided by sections 18.75 to 18.88 ;
+(3) under a restricted species permit issued under section 17.457 ;
+(4) when being transported to the department, or another destination as the commissioner may direct, in a sealed container for purposes of identifying the species or reporting the presence of the species;
+(5) when being transported for disposal as part of a harvest or control activity when specifically authorized under a permit issued by the commissioner according to section 103G.615 , when being transported for disposal as specified under a commercial fishing license issued by the commissioner according to section 97A.418 , 97C.801 , 97C.811 , 97C.825 , 97C.831 , or 97C.835 , or when being transported as specified by the commissioner;
+(6) when being removed from watercraft and equipment, or caught while angling, and immediately returned to the water from which they came;
+(7) when being transported from riparian property to a legal disposal site that is at least 100 feet from any surface water, ditch, or seasonally flooded land, provided the prohibited invasive species are in a covered commercial vehicle specifically designed and used for hauling trash; or
+(8) as the commissioner may otherwise prescribe by rule.
+§
+Subd. 2. Seizure.
+Under section 97A.221 , the commissioner may seize or dispose of all specimens of prohibited invasive species unlawfully possessed, imported, purchased, sold, propagated, transported, or introduced in the state.
+History:
+1996 c 385 art 1 s 5 ; 2004 c 243 s 22 ; 2012 c 272 s 9 ; 2016 c 189 art 3 s 14 ; 2017 c 93 art 2 s 24
+Official Publication of the State of Minnesota
