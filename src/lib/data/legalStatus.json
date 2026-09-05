@@ -114,7 +114,7 @@
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 26,
+        "checked": 27,
         "of": 51
       },
       "giant-millipede": {
@@ -122,7 +122,7 @@
         "of": 51
       },
       "tiger-salamander": {
-        "checked": 27,
+        "checked": 28,
         "of": 51
       },
       "sulcata-tortoise": {
@@ -134,11 +134,11 @@
         "of": 51
       },
       "african-grey-parrot": {
-        "checked": 27,
+        "checked": 28,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 28,
+        "checked": 29,
         "of": 51
       },
       "savannah-monitor": {
@@ -170,27 +170,27 @@
         "of": 51
       },
       "bengal-cat": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "degu": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "hamster": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "gerbil": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 34,
+        "checked": 35,
         "of": 51
       },
       "veiled-chameleon": {
@@ -206,27 +206,27 @@
         "of": 51
       },
       "fennec-fox": {
-        "checked": 42,
-        "of": 51
-      },
-      "chinchilla": {
-        "checked": 42,
-        "of": 51
-      },
-      "serval": {
         "checked": 43,
         "of": 51
       },
+      "chinchilla": {
+        "checked": 43,
+        "of": 51
+      },
+      "serval": {
+        "checked": 44,
+        "of": 51
+      },
       "prairie-dog": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "capybara": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "ferret": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "sugar-glider": {
@@ -250,7 +250,7 @@
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 20,
+        "checked": 21,
         "of": 51
       },
       "ackie-monitor": {
@@ -1115,6 +1115,11 @@
       "title": "Wis. Stat. § 29.604 and Wis. Admin. Code ch. NR 27, Endangered and Threatened Species",
       "url": "https://dnr.wisconsin.gov/topic/endangeredresources/laws",
       "note": "Listed species may not be taken, transported, possessed, processed or sold without an endangered/threatened species permit, and DNR issues those only for education, research and conservation, not pet keeping. The ornate box turtle (Terrapene ornata), Wisconsin's only native box turtle, is state Endangered."
+    },
+    "ut-table-3b-1": {
+      "title": "Utah DWR Bird and Mammal Classification Table 3b-1 (May 1, 2023), under Utah Admin. Code R657-3b",
+      "url": "https://wildlife.utah.gov/pdf/cor/bird_and_mammal_classification_table_3b-1.pdf",
+      "note": "R657-3b-1 governs the collection, importation, possession and propagation of BIRDS AND MAMMALS only. The table's own header sets an inverted default: 'Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.' Sections are domestic animals not covered by the rule, noncontrolled, controlled, and prohibited (the last defined as known detrimental impacts, where 'personal possession will not be authorized')."
     }
   },
   "animals": {
@@ -1875,6 +1880,14 @@
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, domestic animals",
+          "status": "legal",
+          "quote": "Ferret, European - Mustela putorius furo - domestic",
+          "note": "Listed under 'Domestic mammals and mammalian livestock not covered under this rule', so R657-3b does not reach it and no certificate of registration arises.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -2535,6 +2548,14 @@
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, domestic animals",
+          "status": "legal",
+          "quote": "Hamster, golden - Mesocricetus auratus",
+          "note": "Listed under 'Domestic mammals and mammalian livestock not covered under this rule', so R657-3b does not reach it and no certificate of registration arises.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -2796,6 +2817,14 @@
           "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, domestic animals",
+          "status": "legal",
+          "quote": "Gerbil = Mongolian jird - Meriones unguiculatus",
+          "note": "Listed under 'Domestic mammals and mammalian livestock not covered under this rule', so R657-3b does not reach it and no certificate of registration arises.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3078,6 +3107,14 @@
           "quote": "Monk or Quaker parakeet or parrot (Myiopsitta monachus) - Prohibited",
           "note": "The one psittacine Wisconsin prohibits. NR 40 Prohibited status bars possession, transport and transfer without a permit, so this is the rare case where the parrot order's general clearance as an unregulated pet bird does not apply.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-r657-3b",
+          "cite": "Table 3b-1, noncontrolled birds",
+          "status": "legal",
+          "quote": "Parrots - Family Psittacidae - All species not native to North America",
+          "note": "Utah clears the whole parrot family by one line, provided the species is not native to North America. Unlike Wisconsin and a number of other states, Utah draws no monk parakeet carve-out, so the Quaker sits in the same noncontrolled column as the African grey and the cockatoo.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "quaker-parakeet"
@@ -3354,6 +3391,14 @@
           "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, domestic animals",
+          "status": "legal",
+          "quote": "Cat - Felis catus - including breeds that are recognized by The International Cat Association as Preliminary New, Advanced New, Non-championship, and Championship Breeds",
+          "note": "Utah resolves cat hybrids by TICA recognition rather than by generation, and the Bengal is a TICA Championship breed, so it lands in the domestic column outside the rule. That is an unusually clean answer next to the generation tests used by New York and Iowa.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5819,6 +5864,14 @@
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1 header",
+          "status": "restricted",
+          "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
+          "note": "Not listed anywhere in Table 3b-1, and the table's default is inverted: unlisted birds and mammals are 'presumed prohibited' and require a division assessment before possession will be authorized. So this is neither cleared nor expressly banned, it is an application to DWR with no published answer. Utah also has its own native species, the federally threatened Utah prairie dog, which is protected separately from anything in this table.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6188,6 +6241,15 @@
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, controlled mammals",
+          "status": "permit",
+          "quote": "Capybaras - Hydrochoerus hydrochaeris, Hydrochoerus isthmus",
+          "note": "Controlled rather than prohibited, so a certificate of registration is required before collection, importation or possession, but a route exists. Same column as the bobcat and the two-toed sloth.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6529,6 +6591,15 @@
           "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, controlled mammals",
+          "status": "permit",
+          "quote": "Fennec fox - Vulpes zerda",
+          "note": "Controlled rather than prohibited, so a certificate of registration is required before collection, importation or possession, but a route exists. Same column as the bobcat and the two-toed sloth.",
+          "permitFor": "personal",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6902,6 +6973,14 @@
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1 header",
+          "status": "restricted",
+          "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
+          "note": "Not listed anywhere in Table 3b-1, and the table's default is inverted: unlisted birds and mammals are 'presumed prohibited' and require a division assessment before possession will be authorized. So this is neither cleared nor expressly banned, it is an application to DWR with no published answer. Worth noting the prohibited column's big cat entry lists Panthera, Acinonyx, Uncia and Puma by name under the federal Big Cat Public Safety Act, and the serval is not among them, so it falls to the unlisted default rather than the big cat ban.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/serval-legal-guide/"
@@ -7229,6 +7308,14 @@
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, domestic animals",
+          "status": "legal",
+          "quote": "Chinchillas - Chinchilla chinchilla, Chinchilla lanigera",
+          "note": "Listed under 'Domestic mammals and mammalian livestock not covered under this rule', so R657-3b does not reach it and no certificate of registration arises.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7495,6 +7582,14 @@
           "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, domestic animals",
+          "status": "legal",
+          "quote": "Guinea pig - Cavia porcellus",
+          "note": "Listed under 'Domestic mammals and mammalian livestock not covered under this rule', so R657-3b does not reach it and no certificate of registration arises.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -7992,6 +8087,14 @@
           "quote": "A person may possess a live native snapping turtle for the purpose of harvest authorized under s. NR 19.275 (4), 21.13 (4), or 22.13 (4) for no more than 7 days.",
           "note": "Wisconsin treats the snapping turtle as a harvestable native rather than a pet. Collecting or possessing native turtles requires a small game hunting or fishing approval, and the recreated rule caps live possession at 7 days tied to an authorized harvest. Wisconsin repealed and recreated NR 16.12(3) effective 1 January 2027 (CR 25-092). Until then the rule allows taking or possessing up to 5 individuals of each non-listed native species. From that date possession of live native reptiles and amphibians is prohibited outright except under narrow exemptions, of which the one that matters to keepers is NR 16.12(3)(k): captive-bred colour variants acquired from a legal source. A wild-type native animal will no longer be keepable.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-r657-53-tables",
+          "cite": "Utah DWR reptile and amphibian species tables, non-controlled non-native",
+          "status": "legal",
+          "quote": "Common snapping turtle - Chelydra serpentina",
+          "note": "Utah puts established non-natives in a deliberately permissive column: 'they may be collected or possessed in any number without a permit', precisely because the division treats them as problematic for native wildlife. Note the one-way rule that applies to every herp here, native or not: once removed from the wild it may not be released back.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8455,6 +8558,14 @@
           "status": "conditional",
           "quote": "A person may possess native northern leopard frogs of the species Lithobates pipiens, mudpuppies of the species Necturus maculosus, and eastern tiger salamanders of the species Ambystoma tigrinum provided that such species are possessed for the purpose of purchase and sale under the authority of a Class A captive wild animal farm license",
           "note": "The eastern tiger salamander is a Wisconsin native and is singled out by name. Under the current rule it falls within the 5-per-species native cap; from 1 January 2027 the recreated rule routes it through a Class A captive wild animal farm licence instead. Wisconsin repealed and recreated NR 16.12(3) effective 1 January 2027 (CR 25-092). Until then the rule allows taking or possessing up to 5 individuals of each non-listed native species. From that date possession of live native reptiles and amphibians is prohibited outright except under narrow exemptions, of which the one that matters to keepers is NR 16.12(3)(k): captive-bred colour variants acquired from a legal source. A wild-type native animal will no longer be keepable.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-r657-53-tables",
+          "cite": "Utah DWR species tables, controlled species",
+          "status": "conditional",
+          "quote": "Tiger salamander - Ambystoma mavortium - Standard possession (3 daily/9 total, per species)",
+          "note": "A Utah native and a controlled species. Taking one from the wild requires the orientation course and a collection permit, caps at 3 daily and 9 in total possession, and carries a mandatory online report within 72 hours.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9228,6 +9339,14 @@
           "status": "legal",
           "note": "Not a harmful wild animal under § 169.11(1)(a), which names only cougars, the bear family and wild or feral swine, and not on the NR 40 invasive list. Non-native species are exempt from captive wildlife licensing under § 169.04(4)(b). An animal brought in from out of state still needs a DATCP import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1 header",
+          "status": "restricted",
+          "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
+          "note": "Not listed anywhere in Table 3b-1, and the table's default is inverted: unlisted birds and mammals are 'presumed prohibited' and require a division assessment before possession will be authorized. So this is neither cleared nor expressly banned, it is an application to DWR with no published answer.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -9894,6 +10013,14 @@
           "cite": "Wis. Stat. § 169.04",
           "status": "legal",
           "note": "DNR treats the red-eared slider as non-native to Wisconsin though it is established in the south east of the state, so the native-reptile rules in NR 16.12 do not apply and NR 40 does not list it. Out-of-state animals need a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-r657-53-tables",
+          "cite": "Utah DWR reptile and amphibian species tables, non-controlled non-native",
+          "status": "legal",
+          "quote": "Red-eared slider or pond slider - Trachemys scripta",
+          "note": "Utah puts established non-natives in a deliberately permissive column: 'they may be collected or possessed in any number without a permit', precisely because the division treats them as problematic for native wildlife. Note the one-way rule that applies to every herp here, native or not: once removed from the wild it may not be released back.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10576,6 +10703,14 @@
           "cite": "Wis. Stat. § 169.01(25m)",
           "status": "legal",
           "note": "Meets Wisconsin's unregulated pet bird definition: psittacine, non-native, not federally endangered and not migratory. Only the monk parakeet is carved back out, by NR 40. Out-of-state birds need a DATCP import permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "UT": {
+          "sourceId": "ut-r657-3b",
+          "cite": "Table 3b-1, noncontrolled birds",
+          "status": "legal",
+          "quote": "Parrots - Family Psittacidae - All species not native to North America",
+          "note": "Utah clears the whole parrot family by one line, provided the species is not native to North America. Unlike Wisconsin and a number of other states, Utah draws no monk parakeet carve-out, so the Quaker sits in the same noncontrolled column as the African grey and the cockatoo.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11887,6 +12022,14 @@
           "note": "Vermont bars bringing in, transporting, or possessing any live wild bird or animal without authorization, and permits are described as rarely issued outside science, education, or rehabilitation purposes.",
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-08-27"
+        },
+        "UT": {
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1 header",
+          "status": "restricted",
+          "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
+          "note": "Not listed anywhere in Table 3b-1, and the table's default is inverted: unlisted birds and mammals are 'presumed prohibited' and require a division assessment before possession will be authorized. So this is neither cleared nor expressly banned, it is an application to DWR with no published answer. The northern flying squirrel is also a Utah native, which brings the state's native wildlife rules to bear on a wild-caught animal independently of this table.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
