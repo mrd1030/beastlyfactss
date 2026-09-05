@@ -96,3 +96,76 @@ before it goes into a page.
 - Page 19's permanent tail loss section. Owners coming from leopard geckos assume it grows
   back.
 - The both-units rule on every temperature. Gumroad buyers are global.
+
+## 5 September 2026: the cross-species article cross-check, v2.0 to v2.1
+
+2.0 merged to main the day before the Sep 4 article batch, so it predates every
+article it was checked against, and none of the seven rows in this block was in
+that batch. The audit therefore ran page by page rather than row by row. Four
+pages changed, and one page was checked hard and left alone.
+
+**Page 25, quarantine. This was the weakest quarantine instruction in the six
+packages.** It read: "If this gecko is joining others, quarantine it in a separate
+room with its own tools **until the fecal result is back and clear**." That ends
+the window on a test, and `reptile-quarantine-guide.mdx` is explicit that a single
+negative sample is one snapshot of an intermittent process rather than a clean bill
+of health. The leopard gecko package already said as much about crypto in its own
+words. Page 25 now runs the Merck window, 3 to 6 months, and says why a clear fecal
+does not end it on its own.
+
+**Page 8, Salmonella.** Rewritten, and like the leopard gecko it carries the
+outbreak that belongs in a gecko package: the CDC investigation into infections
+linked to pet geckos, closed January 2026, at 113 cases across 36 states. Plus one
+negative test clearing nothing, the bathroom sink and bath alongside the kitchen
+sink with a dedicated tub, not kissing the animal, and the four risk groups with
+the CDC's actual under-five line.
+
+**Page 21, the normal-stool row.** This is the species-specific finding of the
+whole cross-check. The row described normal as "a firm dark pellet".
+`reptile-stool-urates-hydration-guide.mdx` singles this species out: crested,
+gargoyle and mourning geckos eat a lot of fruit-based commercial diet alongside
+insects, "which softens their stool compared with a strict insectivore like a tokay
+or leopard gecko". An owner reading the old row would take a normal softer stool
+for a problem. The row now says so.
+
+**Page 21, the urate row.** "Dehydration" became "Dehydration, and left uncorrected
+a urate or kidney problem", with the gout consequence, and the action column now
+leads with the correction this species actually needs: for an arboreal gecko the
+answer is misting, not a water bowl. The article names crested geckos specifically
+on that point.
+
+**Page 21, soak.** The impaction row's 15 minute soak became 15 to 20 minutes,
+matching `reptile-shedding-complete-guide.mdx` and the rest of the reptile set.
+
+**Page 28 was checked and left alone, and the site article is the one that is
+wrong.** The audit flagged a discrepancy: page 28 gives the normal night low as 65
+to 72 degrees F, while `reptile-emergency-plan-guide.mdx` lists 70 to 75 for this
+species in its temperature table. The ReptiFiles care sheet that both draw on, via
+Zen Habitats, gives **nighttime 65 to 72 degrees F (18 to 22 C)** and **cool area,
+bottom of enclosure, 70 to 75 degrees F (21 to 24 C)**. The article has carried the
+daytime cool-area figure into a night row. Page 28 keeps the correct figure, page
+35 states the disagreement, and the site article is on the fix list. The action
+figure, sustained at or below 72 degrees F day and night, matches on both sides and
+did not move.
+
+**Pages 34 and 35.** The single reference page split into a sources page and a
+version history page, taking the package to 35. This was the thinnest sources page
+of the six: no VCA and no CDC at all. It gained Merck's husbandry, parasitic and
+routine-health pages, VCA's reptile gout page, the CDC gecko outbreak and Iowa
+State CFSPH.
+
+**Fitting.** Page 2 gained a contents row and page 8 took the Salmonella expansion.
+The contents padding went to 1pt at line-height 1.26. Page 8 gained the `.snug`
+block this file did not carry, and then a `.snugger` modifier for that page alone,
+because page 8 is checklist-driven and check-item spacing rather than prose was
+what moved it: `margin-bottom:2.5pt; line-height:1.34` on the check items and
+tighter callouts. This is the same finding the leopard gecko build recorded on the
+same page number, so treat it as a rule rather than a coincidence: **on a
+checklist-heavy page, cut spacing before words.** Final measure: 35 pages, minimum
+16 px on page 8.
+
+**Still in the PDF with no site source**, unchanged: the weight-milestone table and
+sexing detail on page 14, the lay-box dimensions and the under-48-hours dystocia
+rule on page 15, the heat-stress response on page 19, the budget subtotals on page
+24, and the heatwave plan on page 28. The overheating row remains the highest-value
+gap in this block and nothing in the September batch touched it.

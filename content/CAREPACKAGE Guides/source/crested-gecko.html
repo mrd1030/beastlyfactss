@@ -53,6 +53,14 @@ h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);}
 }
 .pagefoot .brand{font-family:'Fraunces',serif;font-weight:600;color:var(--faint);}
 p{line-height:1.5;font-size:10.3pt;color:var(--ink);}
+.snug p,.snug li{line-height:1.42;}
+.snug li{margin-bottom:2pt;}
+.snug h2.h{margin:9pt 0 3pt 0;}
+.snug .callout{padding:8pt 12pt;margin:7pt 0;}
+.snug table.dense td{line-height:1.32;}
+.snug .check-item{margin-bottom:4pt;font-size:9.8pt;line-height:1.38;}
+.snugger .check-item{margin-bottom:2.5pt;line-height:1.34;}
+.snugger .callout{margin:6pt 0;padding:7pt 11pt;}
 .muted{color:var(--muted);}
 ul,ol{padding-left:16pt;margin-top:4pt;}
 li{line-height:1.5;font-size:10.3pt;margin-bottom:3pt;}
@@ -91,7 +99,7 @@ h3.h{font-size:11pt;margin:10pt 0 4pt 0;color:var(--accent-dark);}
 .toc-label{font-family:'Inter',sans-serif;font-weight:700;font-size:9pt;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-top:6pt;margin-bottom:1pt;border-bottom:1pt solid var(--line);padding-bottom:3pt;}
 .toc-label:first-of-type{margin-top:10pt;}
 .toc table{margin-top:0;}
-.toc td{padding:1.4pt 0;border-bottom:none;font-size:9.2pt;line-height:1.3;}
+.toc td{padding:1pt 0;border-bottom:none;font-size:9.2pt;line-height:1.26;}
 
 /* t3 additions */
 .tier{display:inline-block;font-size:7.6pt;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;border-radius:20pt;padding:2pt 7pt;white-space:nowrap;}
@@ -146,7 +154,7 @@ table.log.tall td{height:30pt;}
       <span style="border:1pt solid #3C5C4B;color:#BFD4C8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">34 pages</span>
       <span style="border:1pt solid #3C5C4B;color:#BFD4C8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Beginner</span>
       <span style="border:1pt solid #3C5C4B;color:#BFD4C8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Print or tablet</span>
-      <span style="border:1pt solid #3C5C4B;color:#BFD4C8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Version 2.0 &middot; Sep 2026</span>
+      <span style="border:1pt solid #3C5C4B;color:#BFD4C8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Version 2.1 &middot; Sep 2026</span>
     </div>
   </div>
   <div style="width:3.9in;position:relative;flex-shrink:0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 30%);mask-image:linear-gradient(90deg,transparent 0%,#000 30%);">
@@ -220,7 +228,8 @@ table.log.tall td{height:30pt;}
     <div class="toc-label">Reference</div>
     <table>
       <tr><td>Glossary</td><td class="small" style="text-align:right;">33</td></tr>
-      <tr><td>Sources, Version History &amp; About</td><td class="small" style="text-align:right;">34</td></tr>
+      <tr><td>Sources</td><td class="small" style="text-align:right;">34</td></tr>
+      <tr><td>Version History &amp; About</td><td class="small" style="text-align:right;">35</td></tr>
     </table>
   </div>
   <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Crested Gecko Care Package</span><span>2</span></div>
@@ -441,7 +450,7 @@ table.log.tall td{height:30pt;}
 </div>
 
 <!-- PAGE 8: SUBSTRATE, FURNISHINGS & HANDLING -->
-<div class="page">
+<div class="page snug snugger">
   <div class="eyebrow">Section 02 &middot; Full Care Guide</div>
   <h1 class="section-title">Substrate, furnishings &amp; handling</h1>
 
@@ -475,7 +484,7 @@ table.log.tall td{height:30pt;}
 
   <div class="callout warn" style="margin:7pt 0;padding:8pt 13pt;font-size:9.5pt;">
     <span class="label">Salmonella</span>
-    Healthy reptiles carry <em>Salmonella</em> with no sign of it. Wash your hands with soap before and after handling, keep the animal and its gear away from food-prep areas, and never clean dishes in the kitchen sink. Children under five, pregnant people, and anyone immunocompromised should avoid handling.
+    Healthy reptiles shed <em>Salmonella</em> without being ill, and one negative test clears nothing. Not a turtle problem: a CDC investigation into pet-gecko infections, closed January 2026, counted 113 cases across 36 states. Wash with soap after every contact with the gecko or its tank. Never clean gear in a kitchen sink, a bathroom sink or a bath people use; keep a plastic tub for it. Do not kiss the gecko. Under-fives, over-65s, pregnancy and a weakened immune system are the risk groups; the CDC line for under-fives is not to handle reptiles at all.
   </div>
 
   <h2 class="h" style="margin-top:10pt;">First days in a new home</h2>
@@ -837,11 +846,11 @@ table.log.tall td{height:30pt;}
   <p class="section-sub">Stool is the earliest free health check you get. Look at it before you clean it up.</p>
   <table class="dense">
     <tr><th style="width:26%;">It looks like</th><th style="width:36%;">Usually means</th><th>Do</th></tr>
-    <tr><td>A firm dark pellet with a soft white urate attached, usually stuck to the glass or a leaf</td><td>Normal</td><td>Remove it, note it in the log, carry on</td></tr>
+    <tr><td>A dark pellet with a soft white urate attached, usually stuck to the glass or a leaf. Softer than a strict insectivore's, because the diet is mostly fruit-based powder</td><td>Normal</td><td>Remove it, note it in the log, carry on</td></tr>
     <tr><td>Runny or foul-smelling for two days or more</td><td>Parasites, a sudden diet change, or stress</td><td>Collect a fresh sample in a sealed bag and book a fecal test (page 19)</td></tr>
-    <tr><td>Nothing at all for a week or more, with a bloated abdomen</td><td>Impaction</td><td>Warm 15 minute soak; vet if it persists beyond 24 to 48 hours (page 18)</td></tr>
+    <tr><td>Nothing at all for a week or more, with a bloated abdomen</td><td>Impaction</td><td>Warm 15 to 20 minute soak; vet if it persists beyond 24 to 48 hours (page 18)</td></tr>
     <tr><td>Undigested insect parts passed whole</td><td>Food moving through too fast, or an enclosure that is too cool</td><td>Check the daily temperature range, then vet if it is correct (page 6)</td></tr>
-    <tr><td>Urate hard and yellow rather than soft and white</td><td>Dehydration</td><td>Check both humidity readings, mist on schedule, offer a hornworm (page 19)</td></tr>
+    <tr><td>Urate hard and yellow rather than soft and white</td><td>Dehydration, and left uncorrected a urate or kidney problem</td><td>For an arboreal species the correction is misting, not a water bowl: check both humidity readings, mist on schedule, offer a hornworm (page 19). Persisting is a vet visit, since the same uric acid chemistry causes gout</td></tr>
   </table>
   <h2 class="h">Hydration</h2>
   <p>A rainforest species drinks mostly by licking droplets, so hydration and humidity are the same subject here. A crested gecko can only go about three days without water, which is a much shorter clock than the two to three weeks it can manage without food.</p>
@@ -1027,7 +1036,7 @@ table.log.tall td{height:30pt;}
 
   <h2 class="h">Days 31 to 90</h2>
   <div class="check-item"><div class="box"></div><span>Book any follow-up the vet recommended, and act on the fecal result rather than filing it</span></div>
-  <div class="check-item"><div class="box"></div><span>If this gecko is joining others, quarantine it in a separate room with its own tools until the fecal result is back and clear</span></div>
+  <div class="check-item"><div class="box"></div><span>If this gecko is joining others, quarantine it in a separate room with its own tools for 3 to 6 months, the Merck figure. A clear fecal is one snapshot of an intermittent process and does not end the window on its own (page 19)</span></div>
   <div class="check-item"><div class="box"></div><span>Look back at the Owner Log for any slow drift in weight, appetite, or shed quality</span></div>
   <div class="check-item"><div class="box"></div><span>Start rotating enrichment on the monthly schedule from page 32, and fill in the pet-sitter sheet on page 29 before you need it</span></div>
   <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Crested Gecko Care Package</span><span>25</span></div>
@@ -1340,38 +1349,55 @@ table.log.tall td{height:30pt;}
 <!-- PAGE 34: SOURCES -->
 <div class="page">
   <div class="eyebrow">Reference</div>
-  <h1 class="section-title">Sources, version history &amp; about</h1>
+  <h1 class="section-title">Sources</h1>
   <p class="section-sub" style="margin-bottom:6pt;">Where the numbers in this package come from, so you can check them yourself.</p>
 
   <h2 class="h" style="margin:10pt 0 4pt 0;">Veterinary and scientific sources</h2>
   <ul class="compact" style="font-size:8.9pt;line-height:1.35;">
     <li>PetMD: Crested Gecko Care Sheet, and Egg Binding in Reptiles. Shedding frequency, common health issues, the conservative 80&deg;F caution, and the fact that females produce eggs with no male present.</li>
-    <li>Merck Veterinary Manual: Overview of Reptiles, for lizard sexing by preanal pores and hemipenal bulges.</li>
+    <li>Merck Veterinary Manual: Overview of Reptiles, for lizard sexing by preanal pores and hemipenal bulges; management and husbandry of reptiles, and the parasitic and routine health care pages, for thermostat control, the 3 to 6 month quarantine on page 25, and what urates are.</li>
+    <li>VCA Animal Hospitals: Reptiles, Gout, for what a discolored urate is warning about on page 21.</li>
     <li>LafeberVet: Reproductive Disease in Reptiles, for inadequate nesting as a cause of egg retention and the calcium demand of a reproductively active female.</li>
     <li>Chromosome-level genome assembly of the crested gecko, <em>Correlophus ciliatus</em>, a lizard incapable of tail regeneration (PMC), for permanent tail loss.</li>
+    <li>Centers for Disease Control and Prevention: reptiles and amphibians, and the <em>Salmonella</em> Muenchen outbreak linked to pet geckos, closed January 2026. Page 8.</li>
+    <li>Center for Food Security and Public Health, Iowa State University: Reptile- and Amphibian-Associated Salmonellosis.</li>
     <li>Association of Reptilian and Amphibian Veterinarians (ARAV): find-a-vet directory.</li>
   </ul>
 
   <h2 class="h" style="margin:10pt 0 4pt 0;">Husbandry references</h2>
   <ul class="compact" style="font-size:8.9pt;line-height:1.35;">
-    <li>ReptiFiles Crested Gecko Care Sheet, republished by Zen Habitats: temperatures, the humidity range and wet-dry cycle, enclosure sizing, substrate depth, feeding frequency and time to maturity.</li>
+    <li>ReptiFiles Crested Gecko Care Sheet, republished by Zen Habitats: temperatures including the 65 to 72&deg;F night range, the humidity range and wet-dry cycle, enclosure sizing, substrate depth, feeding frequency and time to maturity.</li>
     <li>ReptiFiles: Crested Gecko Temperatures and Humidity, and the crested gecko shopping list, for the 85&deg;F ceiling and setup costs.</li>
     <li>The Vet Desk: crested gecko cost breakdown.</li>
-    <li>Beastly Facts crested gecko guides: tank setup, humidity, feeding, health issues, handling, cost and enrichment, current at publication.</li>
+    <li>Beastly Facts guides, current at publication: the crested gecko tank setup, humidity, feeding, health issues, handling, cost and enrichment guides, plus the cross-species reptile quarantine, salmonella and hygiene, stool and urates, heating and thermostats, shedding and emergency plan guides.</li>
   </ul>
   <p class="small" style="margin-top:5pt;">Where sources genuinely disagree this package prints the range rather than picking a side. Adult size is the clearest case, from 5 to 8 in and 35 to 45 g in some references to 7 to 9 in and 35 to 55 g in others. The temperature ceiling is the other: 85&deg;F (29&deg;C) is the widely used hard maximum, while one veterinary care sheet warns against sustained exposure above 80&deg;F (27&deg;C). Raspberries are listed as safe by some sources and as high-oxalate by others, and page 12 says so rather than choosing.</p>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Crested Gecko Care Package</span><span>34</span></div>
+</div>
+
+<!-- PAGE 35: VERSION HISTORY & ABOUT -->
+<div class="page">
+  <div class="eyebrow">Reference</div>
+  <h1 class="section-title">Version history &amp; about</h1>
+  <p class="section-sub" style="margin-bottom:6pt;">What changed, and when, so an older printout can be placed.</p>
 
   <h2 class="h" style="margin:10pt 0 4pt 0;">Version history</h2>
   <table class="dense" style="font-size:8.5pt;">
     <tr><th style="width:16%;">Version</th><th style="width:11%;">Template</th><th>What changed</th></tr>
+    <tr><td>2.1 &middot; Sep 2026</td><td>t3</td><td>Cross-checked against the September 2026 cross-species reptile articles. Page 25 ended quarantine on a clear fecal result; it now runs the Merck window of 3 to 6 months, with the point that a single negative sample is one snapshot of an intermittent process. Page 8 carries the 2026 CDC pet-gecko outbreak and the full hygiene rules. Page 21's normal-stool row now says a fruit-powder diet makes for a softer stool than a strict insectivore's, so softer is not automatically wrong, and the discolored-urate row names the urate and kidney problem behind it with misting as the correction an arboreal species actually needs. Sources and version history split onto their own pages.</td></tr>
     <tr><td>2.0 &middot; Sep 2026</td><td>t3</td><td>Rebuilt and expanded from 21 to 34 pages. Metric units throughout, a misting and ventilation page with the humidity cycle, separate complete-diet, insect and fruit charts, sexing and growth, females and egg binding, split condition pages, poop and hydration, a heatwave and outage plan, a pet-sitter sheet, longer logs, a glossary and this page. Supplement guidance corrected so nothing is dusted into the complete diet powder.</td></tr>
     <tr><td>1.0 &middot; 2026</td><td>pre-t3</td><td>First edition, 21 pages, on the earlier layout.</td></tr>
   </table>
 
+  <div class="callout">
+    <span class="label">Where this package and the site disagree, and the package is right</span>
+    Page 28 gives the normal night low as 65 to 72&deg;F (18 to 22&deg;C). The site's reptile emergency plan guide lists 70 to 75&deg;F for this species in its temperature table. The care sheet both draw on gives 65 to 72&deg;F as the nighttime figure and 70 to 75&deg;F as the daytime cool-area figure, so the article has carried a daytime number into a night row. Page 28 keeps the correct one. The action figure, sustained at or below 72&deg;F day and night, matches on both sides.
+  </div>
+
   <div class="divider" style="margin:8pt 0;"></div>
-  <p class="small">This package is a husbandry reference compiled from the sources above and cross-checked against current veterinary guidance at the time of publication. It is not a substitute for a reptile-experienced veterinarian, and nothing in it should delay a vet visit. Free companion guides are at beastlyfacts.com.</p>
-  <p class="small" style="margin-top:6pt;">&copy; Beastly Facts &middot; Version 2.0 &middot; Template t3 &middot; September 2026 &middot; For personal use by the purchaser. Please don't redistribute.</p>
-  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Crested Gecko Care Package</span><span>34</span></div>
+  <p class="small">This package is a husbandry reference compiled from the sources on page 34 and cross-checked against current veterinary guidance at the time of publication. It is not a substitute for a reptile-experienced veterinarian, and nothing in it should delay a vet visit. Free companion guides are at beastlyfacts.com.</p>
+  <p class="small" style="margin-top:6pt;">&copy; Beastly Facts &middot; Version 2.1 &middot; Template t3 &middot; September 2026 &middot; For personal use by the purchaser. Please don't redistribute.</p>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Crested Gecko Care Package</span><span>35</span></div>
 </div>
 
 </body>

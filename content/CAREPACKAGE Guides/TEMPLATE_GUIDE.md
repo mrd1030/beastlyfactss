@@ -757,6 +757,45 @@ with internal parasites and the fecal test, mouth rot, tail rot and toe loss, ey
 problems, and burns and prolapse. `reptile-emergency-plan-guide.mdx` covers the power
 outage, travel, and pet-sitter pages for every reptile package, not just this one.
 
+**5 September 2026: what the Sep 4 cross-species articles changed here, at 3.1.** A
+closed block is not a finished package. The batch postdates this block, and the Ball
+Python block names this package as sharing its stool and urates row, so the pages
+those articles touch were audited. Four things moved. Quarantine went from 60 to 90
+days to Merck's 3 to 6 months on pages 18 and 33, the same correction made in three
+other packages. The discolored-urate row on page 21 offered "excess calcium being
+passed" as a cause, which is a mechanism error, since urates are uric acid from
+protein digestion; it now gives dehydration, then a urate or kidney problem, then
+gout. The stool row flagging undigested insect parts now distinguishes whole parts
+from the chitin fragments that are normal in an insectivore. Page 7 narrowed its
+ceramic-emitter controller advice from "on/off or pulse" to "pulse proportional or
+dimming" and gained the daily second thermometer that catches a stuck thermostat.
+The Salmonella callout was rewritten with the rest of the set.
+
+**One conflict is unresolved, and it is a safety instruction.** Page 7 puts the
+thermostat probe **beside** the basking platform, not on it.
+`reptile-heating-thermostats-guide.mdx` says the probe belongs **on** the basking
+spot itself for an overhead source. Ball Python page 7 and Leopard Gecko page 7 both
+agree with the article, which makes this package the outlier. It was researched
+rather than guessed: VCA's bearded dragon housing page covers thermometer placement
+and thermostat control but gives no probe position; Merck's husbandry page requires
+thermostat control and says nothing about probes; LafeberVet gives thermometer
+placement only, and its burns article is member-gated. No named veterinary source
+states a thermostat probe position for an overhead basking lamp. The package holds
+its figure and page 34 carries the disagreement openly. **Settle this first in v4 if
+a veterinary source appears.**
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item:
+
+- **The article's basking-surface probe claim is an extension, not a direct source.**
+  `reptile-heating-thermostats-guide.mdx` states that the probe belongs on "the
+  basking spot itself for an overhead source", and the strongest backing it claims is
+  that this "matches VCA's snake housing guidance on thermometers generally, placing
+  them at the animal's level rather than higher in the airspace". The article is
+  honest about that in its own text, so this is not an error. But it is a thermometer
+  guideline extended to a thermostat probe, and it is not strong enough to overturn a
+  package that says otherwise. **Worth either finding a source that states it directly
+  or softening the article's wording to match what it can actually support.**
+
 ### Ball Python 2.1, t3 (Sep 2026)
 
 Already covered, do not rewrite: pages 28 and 29 from `reptile-emergency-plan-guide.mdx`,
@@ -766,17 +805,44 @@ which carries a ball python temperature row. Page 20's shed cycle from
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Heating hardware: thermostats, probe placement, heat source types | 7 | Cross-species | Also page 7 of Leopard Gecko 2.0, where the same hole appears for mats rather than for snake heat sources: on/off versus pulse for a mat, the probe taped flat inside the warm hide rather than on the glass, and why an unregulated mat is the classic burn. No dedicated article. `thermostat` is mentioned in 62 files under `content/guides/` and 9 under `src/lib/data/`, but only ever as a line item in a cost or setup list, never explained. The site has three UVB articles and nothing on the device that actually prevents burns. On/off vs pulse vs dimming, probe on the surface not the mat, wattage as a guess not a target. Serves ball python, corn snake, kingsnake, hognose, garter, boa, milk snake, rosy boa |
-| Quarantine for a new reptile | 18, 31 | Cross-species | Also Leopard Gecko 2.0 pages 17 and 25, where it is the entire prevention story for cryptosporidiosis, and Crested Gecko 2.0 page 25. Zero hits. The prevention story for both mites and IBD: 60 to 90 days, separate room, paper towel, separate tools, established animals first and the new one last |
-| Snake sexing, growth &amp; body condition | 14 | Cross-species (snakes) | Nothing for any snake. Probing and popping and why an owner should not do either, weight-based growth ranges, triangular vs loaf cross-section |
-| Reading reptile stool, urates &amp; hydration | 21 | Cross-species | Nothing. Open on the bearded dragon list too, and now on both gecko lists (Leopard Gecko 2.0 page 21, Crested Gecko 2.0 page 21), so one article closes four packages. The gecko versions need a hydration half that a snake article would not: the humid hide for a leopard gecko, misted droplets for a crested one |
-| Internal parasites and the fecal test, IBD, prolapse | 19, 21 | Ball python | Expand `ball-python-health-issues-guide.mdx`, not a new URL. IBD currently exists only as a paragraph in `guides/snakes.js`, which is the secondary source |
-| Prey chart, thawing method, freezer storage | 11, 12 | Ball python | Expand `ball-python-feeding-guide.mdx`. It has schedule, prey size, and refusal reasons, but not the tier chart (ASF, day-old chicks, quail), thaw temperature and method, or storage |
+| Heating hardware: thermostats, probe placement, heat source types | 7 | Cross-species | **CLOSED Sep 5 2026 by `reptile-heating-thermostats-guide`.** Closes page 7 of Leopard Gecko 2.0 and page 7 of Bearded Dragon 3.0 in the same stroke. Ball Python 2.2 and Leopard Gecko 2.1 gained the 4 to 6 in VCA clearance figure and the daily second-thermometer check; Bearded Dragon 3.1 gained the second thermometer and narrowed its ceramic-emitter controller advice. One conflict is unresolved, see the Bearded Dragon block. Original row follows. Also page 7 of Leopard Gecko 2.0, where the same hole appears for mats rather than for snake heat sources: on/off versus pulse for a mat, the probe taped flat inside the warm hide rather than on the glass, and why an unregulated mat is the classic burn. No dedicated article. `thermostat` is mentioned in 62 files under `content/guides/` and 9 under `src/lib/data/`, but only ever as a line item in a cost or setup list, never explained. The site has three UVB articles and nothing on the device that actually prevents burns. On/off vs pulse vs dimming, probe on the surface not the mat, wattage as a guess not a target. Serves ball python, corn snake, kingsnake, hognose, garter, boa, milk snake, rosy boa |
+| Quarantine for a new reptile | 18, 31 | Cross-species | **CLOSED Sep 5 2026 by `reptile-quarantine-guide`.** The article moved the number: Merck recommends 3 to 6 months for a new reptile and calls 60 to 90 days the hobby floor. Corrected on Ball Python 2.2 pages 18, 19 and 31, Bearded Dragon 3.1 pages 18 and 33, and Leopard Gecko 2.1 pages 17 and 25. Crested Gecko 2.1 page 25 had no duration at all and ended quarantine on a clear fecal, which the article says clears nothing; it now carries the full window. Original row follows. Also Leopard Gecko 2.0 pages 17 and 25, where it is the entire prevention story for cryptosporidiosis, and Crested Gecko 2.0 page 25. Zero hits. The prevention story for both mites and IBD: 60 to 90 days, separate room, paper towel, separate tools, established animals first and the new one last |
+| Snake sexing, growth &amp; body condition | 14 | Cross-species (snakes) | **CLOSED Sep 5 2026 by `snake-sexing-growth-body-condition-guide`**, with one figure it deliberately does not carry. Ball Python 2.2 page 14 dropped the cloacal-spur clue, added ultrasound, and now prints VCA's 5 to 6 ft adult length beside the care-sheet figure. The growth **weights** stay package-only: the article states outright that no verified species-by-species snake weight ranges could be sourced, so there is nothing to check them against. Original row follows. Nothing for any snake. Probing and popping and why an owner should not do either, weight-based growth ranges, triangular vs loaf cross-section |
+| Reading reptile stool, urates &amp; hydration | 21 | Cross-species | **CLOSED Sep 5 2026 by `reptile-stool-urates-hydration-guide`.** It closed four packages as predicted, and the cross-check found the four had drifted apart: the discolored-urate row carried a different second cause in each. Ball Python and Leopard Gecko were clean, Bearded Dragon blamed excess calcium and Russian Tortoise blamed the liver, where the article gives dehydration, then a urate or kidney problem, then gout. All five reptile packages now read the same. Also closes the Russian Tortoise cloacolith row. Original row follows. Nothing. Open on the bearded dragon list too, and now on both gecko lists (Leopard Gecko 2.0 page 21, Crested Gecko 2.0 page 21), so one article closes four packages. The gecko versions need a hydration half that a snake article would not: the humid hide for a leopard gecko, misted droplets for a crested one |
+| Internal parasites and the fecal test, IBD, prolapse | 19, 21 | Ball python | **CLOSED Sep 5 2026. The expansion shipped**: `ball-python-health-issues-guide.mdx` now carries Internal Parasites, Inclusion Body Disease and Prolapse as full sections. Page 19 was corrected from arenaviruses to reptarenaviruses and gained the boa against python difference in how the disease presents, which is the practical argument for the longer quarantine. Original row follows. Expand `ball-python-health-issues-guide.mdx`, not a new URL. IBD currently exists only as a paragraph in `guides/snakes.js`, which is the secondary source |
+| Prey chart, thawing method, freezer storage | 11, 12 | Ball python | **CLOSED Sep 5 2026. The expansion shipped**: `ball-python-feeding-guide.mdx` now carries a Prey Type Chart, Thawing Method and Temperature, and Freezer Storage. The package's prey tiers matched. Two figures did not survive: the six-month freezer limit went to the FDA framing, and the 100 to 105&deg;F prey core temperature came out, because the article deliberately declines to state one. The CDC prey-handling rules were added. Original row follows. Expand `ball-python-feeding-guide.mdx`. It has schedule, prey size, and refusal reasons, but not the tier chart (ASF, day-old chicks, quail), thaw temperature and method, or storage |
 | Female ball pythons: follicles, eggs &amp; egg binding | 15 | Ball python | No snake equivalent of `bearded-dragon-eggs-and-egg-binding-guide.mdx`. The page with the least site backing in the whole package, so the one most worth grounding |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the growth table on page 14, the body-condition descriptions on page 14, the
-thermostat type guidance on page 7, and the prey tiers on page 11.
+**Numbers with no site source at all**, updated Sep 5 2026 after the cross-check:
+
+- Growth table, page 14: the **lengths** are now checkable, and page 14 prints the VCA
+  figure beside the care-sheet one because they disagree. The **weight column is still
+  package-only** and now known to be unsourceable: `snake-sexing-growth-body-condition-guide`
+  says plainly that no verified species-by-species snake weight ranges exist in the
+  veterinary or peer-reviewed literature. Page 14 says so on the page.
+- Body-condition descriptions, page 14: **now carried** by the same article, triangular
+  against loaf against round, and it confirms the block's note that the 9-point dog and cat
+  scale does not transfer.
+- Thermostat type guidance, page 7: **now carried** by `reptile-heating-thermostats-guide`,
+  with the article's own caveat that the on/off, pulse and dimming split is a manufacturer
+  distinction rather than a veterinary one.
+- Prey tiers, page 11: **now carried** by the expanded `ball-python-feeding-guide`.
+- Prey core temperature, page 12: was not on this list and should have been. Removed at 2.2
+  rather than sourced, because no veterinary source states a figure.
+- Page 15, female follicles, eggs and egg binding: **still the page with no site backing at
+  all.** No snake equivalent exists and the September 2026 batch did not add one. The
+  chelonian article does not transfer.
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item, and it is a
+clearance rather than a correction:
+
+- **The adult-length check came back in the article's favor.** The cross-check flagged
+  `snake-sexing-growth-body-condition-guide` for attributing "5 to 6 feet" to VCA against
+  the package's 5 ft top end. The VCA page was read: "Hatchling ball pythons are about a
+  foot long and grow to about 3 feet by 3 years of age. At maturity (reached in 3-5 years),
+  adults reach 5-6 feet in length." The article quotes it correctly. What the check actually
+  exposed is a genuine disagreement between VCA and the ReptiFiles and PetMD care sheets the
+  package uses, so page 14 now prints both. Nothing on the site needs changing.
 
 **Source drift, resolved Sep 2026.** `snakes.js` said cool side 76 to 80&deg;F and
 humidity 50 to 60%; the MDX said 75 to 80&deg;F and 55 to 70%. Researched rather than
@@ -1092,18 +1158,38 @@ at the depth pages 13 and 14 needed.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Household pesticides and invertebrate pets | 26 | Cross-species (invertebrates) | Nothing anywhere, and it is one of the few ways a well-kept spider dies suddenly with no warning. Bug spray, plug-in insect killers, flea and tick treatment on a pet in the same room, ant powder, and wild-caught feeders. Serves tarantula, scorpion, mantis, millipede, and every future invertebrate |
-| Rehousing an invertebrate | 18, 19 | Cross-species (invertebrates) | Nothing. The catch-cup-and-card method, working inside a larger tub, low to the ground, what to do when it bolts, and never during a molt. Two pages here because the preparation and the method are separate jobs |
-| Urticating hair first aid | 17 | Cross-species (New World species) | `tarantula-handling-guide.mdx` explains the risk and cites the eye-injury literature but gives no first aid. Tape rather than washing for skin, flush and same-day attention for eyes, ventilation and a mask for airway |
+| Household pesticides and invertebrate pets | 26 | Cross-species (invertebrates) | **CLOSED Sep 5 2026 by `invertebrate-pesticide-hazards-guide`.** The package already had the five household routes right. It gained total release foggers, which it had missed, with the EPA point that every pet leaves a treated space and a tank cannot, and the article's own caveat that the toxicology is documented in insects and extended to arachnids on shared nerve chemistry. Original row follows. Nothing anywhere, and it is one of the few ways a well-kept spider dies suddenly with no warning. Bug spray, plug-in insect killers, flea and tick treatment on a pet in the same room, ant powder, and wild-caught feeders. Serves tarantula, scorpion, mantis, millipede, and every future invertebrate |
+| Rehousing an invertebrate | 18, 19 | Cross-species (invertebrates) | **CLOSED Sep 5 2026 by `invertebrate-rehousing-guide`**, which independently split the job the same way the package did, preparation on one page and method on the other. One correction: step 4 tipped the spider out where the documented method slides the card and lets it walk. An arboreal variant and a spare cup were added. Original row follows. Nothing. The catch-cup-and-card method, working inside a larger tub, low to the ground, what to do when it bolts, and never during a molt. Two pages here because the preparation and the method are separate jobs |
+| Urticating hair first aid | 17 | Cross-species (New World species) | **CLOSED Sep 5 2026 by `invertebrate-rehousing-guide`**, which carries the first aid rather than a separate article: worth noting, since this row was logged expecting its own URL. It caught the package's worst error: page 17 said to flush a hair from the eye, and no clinical source describes a rinse for an embedded barbed hair. Corrected to shield the eye and get same-day ophthalmology, and the airway row gained the emergency trigger it lacked. Original row follows. `tarantula-handling-guide.mdx` explains the risk and cites the eye-injury literature but gives no first aid. Tape rather than washing for skin, flush and same-day attention for eyes, ventilation and a mask for airway |
 | Sexing a tarantula from the exuvia | 27 | Tarantula | Nothing. The spermatheca in the shed skin is the only reliable home method, and it decides whether the animal is a 5-year pet or a 20-year one, which makes it more consequential here than sexing is for most species |
 | Enclosure type by lifestyle | 7 | Tarantula | `tarantula-tank-setup-guide.mdx` says most pet species are terrestrial and stops there. No terrestrial versus fossorial versus arboreal table, which is the decision every other husbandry choice depends on, and getting it wrong is the commonest genuine welfare failure in the hobby |
 | Water, and reading the abdomen | 9 | Tarantula | `tarantula-health-issues-guide.mdx` covers dehydration as a condition. Nothing frames the water dish as the single most important object in the enclosure, and there is no reference for reading the abdomen from plump through premolt to death curl |
-| Invertebrate power outages, travel &amp; shipping | 35, 36 | Cross-species (invertebrates) | Nothing. Mostly reassuring, which is worth writing down: a tarantula is fine alone for two weeks. The transport and shipping half is where the real risk is |
+| Invertebrate power outages, travel &amp; shipping | 35, 36 | Cross-species (invertebrates) | **CLOSED Sep 5 2026 by `invertebrate-emergency-travel-shipping-guide`, and it withdrew this row's own headline claim.** The article declines to print a day count and explains why: no source will stand behind one, and the University of Illinois page has keepers refilling the water dish daily in a normal week. The package's trip table lost its 2 week, 2 to 4 week and over-a-month rows and was rebuilt around water as the constraint. Page 36 also gained the USPS prohibition on mailing spiders, which a package with a full legality page should always have carried. Original row follows. Nothing. Mostly reassuring, which is worth writing down: a tarantula is fine alone for two weeks. The transport and shipping half is where the real risk is |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the enclosure height ceiling and the 3&times;-leg-span floor rule on page 6, the
-substrate depths by type on page 7, the abdomen reference table on page 9, the premolt
-sign list and hardening windows on pages 13 and 14, and the sexing method on page 27.
+**Numbers with no site source at all**, updated Sep 5 2026 after the cross-check:
+
+- **Still package-only:** the enclosure height ceiling and the 3&times;-leg-span floor rule
+  on page 6, the substrate depths by type on page 7, the abdomen reference table on page 9,
+  and the sexing method on page 27. None of the four species-only rows above was in the
+  September batch.
+- **Now carried:** the premolt sign list and the hardening windows on pages 13 and 14 agree
+  with `invertebrate-molting-guide`, which was already live when this package was built and
+  has not changed since.
+- **Removed rather than sourced:** the trip-length day counts on page 36, and the eye-flush
+  step on page 17. Page 43 now carries a callout naming both, because a figure missing on
+  purpose reads like an oversight otherwise.
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item, and it predates
+this cross-check rather than coming out of it:
+
+- **Five of this package's sources are hobbyist sites.** The Tarantula Collective, Tom's Big
+  Spiders, Giant Spiders and Tarantula Heaven carry the enclosure, substrate, feeding and
+  refusal figures, and Vet Verified carries Section 03. That is the same class of source the
+  September 2026 article commit says is being removed from 21 site articles on a follow-up
+  branch. They were left in place, because replacing them means re-sourcing the figures
+  behind them, which is a re-build rather than a cross-check. **It is the next thing this
+  package needs**, and it is the reason the invertebrate set still has the thinnest
+  veterinary backing in the series: there is very little veterinary literature to draw on.
 
 **Source drift found while building:** none. The tarantula guides agree with each other,
 which is worth noting because they are also unusually honest about where the underlying
@@ -1669,25 +1755,47 @@ brumation, which is what page 32 is built on.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Chelonian herpesvirus, and quarantining a new tortoise | 19, 21 | Cross-species (chelonians) | **Proposed, and the highest-value row here.** Nothing on the site. <em>Testudo</em> tortoises are susceptible to epidemics of viral disease and should be treated as potential high-risk carriers of herpes-type organisms; an infected animal is highly contagious, can look well for long periods, and in an unquarantined group mortality can approach 100%. There is no cure and a survivor is a carrier for life. Needs the signs (runny nose, oral plaques, difficulty swallowing, neurological signs), the months-not-weeks quarantine, separate room and separate equipment, and the point that ranavirus and mycoplasma make the same argument. Serves every tortoise and box turtle on the site |
-| Reptile brumation for tortoises | 23 | Cross-species (Testudo and box turtles) | `bearded-dragon-brumation-guide.mdx` and `snake-brumation-guide.mdx` both exist and **neither transfers**: the temperatures, the fasting requirement, the duration and the method are all different, and the fridge technique has no lizard or snake equivalent. Needs the do-not-brumate list, the 2 to 4 week fast with heat still on, the 40 to 55&deg;F (4 to 13&deg;C) band for 2 to 4 months, weekly weighing with the roughly 1% a month loss limit, and the gradual warm-up and immediate soak. The site currently has a paragraph saying brumation exists and is optional |
-| Safe weeds and plants for herbivorous reptiles | 12, 13 | Cross-species (tortoises, uromastyx, iguana) | **Proposed.** Nothing on the site names a single weed. This is the page that changes a keeper's costs and the animal's diet quality more than anything else, and it is entirely absent: dandelion, plantain, clover, sow thistle, hawkbit, mallow, chickweed, with identification notes, where not to pick, and how to grow and dry forage. Pairs with a toxic-plant list, which is also missing |
-| Sexing a tortoise | 15 | Cross-species (chelonians) | Nothing. Tail length and thickness, vent position relative to the shell margin, plastron concavity, carapace profile, and the point that none of it is reliable below about 4 in of shell. Cheap to write and asked constantly |
-| Tortoise eggs and egg binding | 16 | Cross-species (chelonians) | Nothing, and `bearded-dragon-eggs-and-egg-binding-guide.mdx` does not transfer: the nest-site requirement, the depth, the digging behavior and the intervention are all different. Needs the gravid signs, the nest site provided before it is needed, the do-not-palpate warning, the dystocia sign list, and the point that a single female with no male still lays |
-| Reading reptile stool, urates and hydration | 24 | Cross-species | **Extends the row already open on the Bearded Dragon and Ball Python blocks.** This species is the strongest case for writing it: a tortoise's urates are the best hydration gauge any reptile owner gets, gritty urates are the warning that precedes a urate blockage, and the weekly soak is when you see both. Add the tortoise column when the article is written |
-| Salmonella and reptile hygiene | 10 | Cross-species (all reptiles) | **Proposed.** `salmonella` returns hits only in the three red-eared slider articles. It is the reason the federal four-inch rule exists, it is a real risk rather than a regulatory relic, and every reptile package in the series has to say something about it in a callout because there is nothing to link to. One universal article closes it for reptiles, amphibians and turtles alike: shedding by healthy animals, the hand-to-face route, no kitchen sinks, and who in a household is actually at risk |
-| Cloacoliths and urate blockage | 22 | Cross-species (reptiles) | Nothing. A hardened urate stone in the cloaca, presenting as straining while vocalizing, which is a true emergency and one of the very few sounds a tortoise makes. The underlying cause is chronic dehydration, which ties it to the soaking and urates rows above |
-| Outdoor housing for reptiles | 9 | Cross-species (tortoises, and some lizards seasonally) | Nothing. Pen construction, the buried barrier depth, permanent shade, shelter, predator cover, and the five ways an outdoor tortoise dies. The site's enrichment guide mentions outdoor pens approvingly and gives one figure |
-| Hexamita parva | 21 | Russian tortoise | **Proposed.** A parasite of the renal and urinary system identified frequently in <em>T. horsfieldii</em>, causing rapid weight loss, dehydration and terminal renal failure if untreated, with a published metronidazole dose. Belongs as a section in an expanded `russian-tortoise-health-issues-guide.mdx` rather than a new URL, alongside the other conditions that article names in a sentence each |
+| Chelonian herpesvirus, and quarantining a new tortoise | 19, 21 | Cross-species (chelonians) | **CLOSED Sep 5 2026 by `chelonian-herpesvirus-quarantine-guide`.** It moved two figures. The package printed mortality approaching 100%, from the Tortoise Trust; the article carries the only published outbreak investigation, Marenzoni et al. 2018, at 75% of twenty exposed animals. Page 19 now prints the documented figure with the Tortoise Trust's beside it, and page 38 carries the disagreement. Quarantine went from "three to six months" to the EAZWV six-month minimum, six months to a year, and from asking about screening to testing as the point of the window. Original row follows. **Proposed, and the highest-value row here.** Nothing on the site. <em>Testudo</em> tortoises are susceptible to epidemics of viral disease and should be treated as potential high-risk carriers of herpes-type organisms; an infected animal is highly contagious, can look well for long periods, and in an unquarantined group mortality can approach 100%. There is no cure and a survivor is a carrier for life. Needs the signs (runny nose, oral plaques, difficulty swallowing, neurological signs), the months-not-weeks quarantine, separate room and separate equipment, and the point that ranavirus and mycoplasma make the same argument. Serves every tortoise and box turtle on the site |
+| Reptile brumation for tortoises | 23 | Cross-species (Testudo and box turtles) | **CLOSED Sep 5 2026 by `tortoise-brumation-guide`, and it found the worst error in the series so far.** Page 23 printed 1% of body weight a month as the loss that ends a brumation early. It is the **normal** rate, and the action point is total loss past about 7%. An owner following the old page would abort a healthy brumation. Five more figures moved with it: the band to 35 to 50&deg;F with a 41&deg;F ideal, the duration to a ceiling of 10 to 14 weeks by size rather than a 2 to 4 month target, the fast to 1 to 3 weeks at 70 to 80&deg;F with a 5&deg;C-a-week ramp, the age floor to about four years, and the vet check to annual with a fecal screen. Original row follows. `bearded-dragon-brumation-guide.mdx` and `snake-brumation-guide.mdx` both exist and **neither transfers**: the temperatures, the fasting requirement, the duration and the method are all different, and the fridge technique has no lizard or snake equivalent. Needs the do-not-brumate list, the 2 to 4 week fast with heat still on, the 40 to 55&deg;F (4 to 13&deg;C) band for 2 to 4 months, weekly weighing with the roughly 1% a month loss limit, and the gradual warm-up and immediate soak. The site currently has a paragraph saying brumation exists and is optional |
+| Safe weeds and plants for herbivorous reptiles | 12, 13 | Cross-species (tortoises, uromastyx, iguana) | **CLOSED Sep 5 2026 by `herbivorous-reptile-safe-plants-guide`.** The strongest match of the whole cross-check: the article names the same seven weeds in the same order with the same identification marks and the same where-not-to-pick list. One correction went the other way, to the package: "several of them are lethal" is not a claim the reptile literature supports, since the toxicity data is from dogs, cats and horses, so page 12 now says so and carries the buttercup field marks instead. Original row follows. **Proposed.** Nothing on the site names a single weed. This is the page that changes a keeper's costs and the animal's diet quality more than anything else, and it is entirely absent: dandelion, plantain, clover, sow thistle, hawkbit, mallow, chickweed, with identification notes, where not to pick, and how to grow and dry forage. Pairs with a toxic-plant list, which is also missing |
+| Sexing a tortoise | 15 | Cross-species (chelonians) | **CLOSED Sep 5 2026 by `tortoise-sexing-eggs-and-egg-binding-guide`**, and it caught a plain error: page 15 described the male plastron as "barely convex, sometimes very slightly dished", which contradicts itself and leads with the opposite of Merck's concave. Corrected, and the plastron now leads the table as the cue Merck calls most useful. The 4 in threshold stays package-only. Original row follows. Nothing. Tail length and thickness, vent position relative to the shell margin, plastron concavity, carapace profile, and the point that none of it is reliable below about 4 in of shell. Cheap to write and asked constantly |
+| Tortoise eggs and egg binding | 16 | Cross-species (chelonians) | **CLOSED Sep 5 2026 by `tortoise-sexing-eggs-and-egg-binding-guide`.** Same article as the row above. It corrected the dystocia trigger: page 16 listed appetite loss as a sign and treated two days of unproductive nesting as a same-day case, where VCA's distinction is that a gravid female often stops eating for days or weeks and stays bright and alert, and a chelonian can hold a clutch for weeks. Rewritten around the bright-active-alert test. The 8 to 12 in nest depth came out, since the article declines to give an inch figure and explains why. Original row follows. Nothing, and `bearded-dragon-eggs-and-egg-binding-guide.mdx` does not transfer: the nest-site requirement, the depth, the digging behavior and the intervention are all different. Needs the gravid signs, the nest site provided before it is needed, the do-not-palpate warning, the dystocia sign list, and the point that a single female with no male still lays |
+| Reading reptile stool, urates and hydration | 24 | Cross-species | **CLOSED Sep 5 2026 by `reptile-stool-urates-hydration-guide`.** Page 24 attributed discolored urates to "concentration or liver involvement"; urates are uric acid from protein digestion and the chain is dehydration, then a urate or kidney problem, then gout. Corrected. The article also carries the Tortoise Trust soaking figure, which moved the package off a weekly soak onto two to three times a week indoors, across six pages. Original row follows. **Extends the row already open on the Bearded Dragon and Ball Python blocks.** This species is the strongest case for writing it: a tortoise's urates are the best hydration gauge any reptile owner gets, gritty urates are the warning that precedes a urate blockage, and the weekly soak is when you see both. Add the tortoise column when the article is written |
+| Salmonella and reptile hygiene | 10 | Cross-species (all reptiles) | **CLOSED Sep 5 2026 by `reptile-salmonella-hygiene-guide`.** Page 10 was already the best treatment in the series and needed the least: the bathroom sink and bathtub added to the sink rule, a dedicated tub named, adults over 65 and pregnancy added to the risk groups, and the point that one negative test clears nothing. The same article rewrote the shared one-liner callout in the ball python, bearded dragon and both gecko packages, which needed far more. Original row follows. **Proposed.** `salmonella` returns hits only in the three red-eared slider articles. It is the reason the federal four-inch rule exists, it is a real risk rather than a regulatory relic, and every reptile package in the series has to say something about it in a callout because there is nothing to link to. One universal article closes it for reptiles, amphibians and turtles alike: shedding by healthy animals, the hand-to-face route, no kitchen sinks, and who in a household is actually at risk |
+| Cloacoliths and urate blockage | 22 | Cross-species (reptiles) | **CLOSED Sep 5 2026 by `reptile-stool-urates-hydration-guide`**, which carries a full cloacolith section. Page 22 matched it almost word for word on the definition, the straining-while-vocalizing presentation and the treatment, so nothing needed correcting. It gained the bladder-stone material from the expanded health-issues article instead. Original row follows. Nothing. A hardened urate stone in the cloaca, presenting as straining while vocalizing, which is a true emergency and one of the very few sounds a tortoise makes. The underlying cause is chronic dehydration, which ties it to the soaking and urates rows above |
+| Outdoor housing for reptiles | 9 | Cross-species (tortoises, and some lizards seasonally) | **CLOSED Sep 5 2026 by `outdoor-reptile-housing-guide`.** The pen table had no water row at all, which is one of the article's five requirements, and it now carries VCA's actual threshold: water never higher than the tortoise's own head, with a ramp. Also gained the Segura et al. 2020 raven threshold of 75 mm carapace, raccoons, and the ornamental-plant hazard as the fifth way an outdoor tortoise dies. Original row follows. Nothing. Pen construction, the buried barrier depth, permanent shade, shelter, predator cover, and the five ways an outdoor tortoise dies. The site's enrichment guide mentions outdoor pens approvingly and gives one figure |
+| Hexamita parva | 21 | Russian tortoise | **CLOSED Sep 5 2026. The expansion shipped**: `russian-tortoise-health-issues-guide.mdx` now carries a *Hexamita parva* section and a Bladder Stones section. It deliberately prints no dose, and page 21's 260 mg/kg metronidazole figure was removed to match: it traces to the Tortoise Trust, and a mg/kg figure does not belong in a consumer package when the site's own article will not state one. The page gained the early sign it lacked, watery or jelly-like urine. Original row follows. **Proposed.** A parasite of the renal and urinary system identified frequently in <em>T. horsfieldii</em>, causing rapid weight loss, dehydration and terminal renal failure if untreated, with a published metronidazole dose. Belongs as a section in an expanded `russian-tortoise-health-issues-guide.mdx` rather than a new URL, alongside the other conditions that article names in a sentence each |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the ReptiFiles 8&times;4 ft enclosure figure and the per-additional-animal space on
-pages 4 and 5; the UVB mounting distances on page 7; the burrow temperature figures and the
-maximum verified 22 cm size on pages 4 and 6; the sexing criteria on page 15; the clutch and
-nest-site figures on page 16; the whole brumation protocol on page 23; the <em>Hexamita</em>
-dose on page 21; the herpesvirus mortality figure on page 19; the weed identification notes
-on page 12; the ninety-days-a-year wild feeding pattern on page 11; and the itemized budget
-on page 28.
+**Numbers with no site source at all**, updated Sep 5 2026 after the cross-check:
+
+- **Still package-only:** the ReptiFiles 8&times;4 ft enclosure figure and per-additional-animal
+  space on pages 4 and 5, the UVB mounting distances on page 7, the burrow temperature
+  figures and the maximum verified 22 cm size on pages 4 and 6, the 4 in threshold below
+  which sexing is unreliable on page 15, the ninety-days-a-year wild feeding pattern on page
+  11, and the itemized budget on page 28.
+- **Now carried by an article:** the whole brumation protocol on page 23, and the
+  cross-check found six figures in it that the article disagreed with. The sexing cue set on
+  page 15, where it also found a plain error. The nest-site rule on page 16, though the
+  article explicitly declines to give a depth in inches, so the 8 to 12 in figure was
+  removed rather than sourced. The weed identification notes on page 12. The herpesvirus
+  mortality figure on page 19, at a lower number than the package carried, so page 38 now
+  prints both.
+- **Removed rather than sourced:** the <em>Hexamita</em> metronidazole dose on page 21. The
+  expanded `russian-tortoise-health-issues-guide.mdx` names the drug and deliberately leaves
+  the dose to a vet, and a mg/kg figure aimed at owners is not something to keep printing
+  once the site's own article has declined to.
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item, in site content
+rather than the package:
+
+- **`reptile-emergency-plan-guide.mdx` and `outdoor-reptile-housing-guide.mdx` disagree about
+  this species' cold floor.** The emergency guide's temperature table gives the Russian
+  tortoise as tolerating 60&deg;F (16&deg;C), with the action point a sustained spell below
+  it, and page 32 of this package is built on that row. The outdoor guide says a small
+  Russian or Hermann's tortoise "should come in well before conditions reach a box turtle's
+  line", and it sets that line at 60&deg;F. Both cannot be right. The package was left on
+  the emergency guide's figure, which is the one it has always used and the one the row was
+  written for. **The two articles are the thing to reconcile.**
 
 **Source drift found while building.** Four, and two of them are genuine disagreements
 between credible sources rather than errors, which is how they are printed.
@@ -1968,10 +2076,27 @@ carries pages 28 and 29 and has a leopard gecko row in its temperature table.
 | Morph-linked care differences in leopard geckos | 6, 7 | Leopard gecko | **Proposed.** Pigment is not cosmetic here: albino and other pale morphs burn under UVB that a normally pigmented gecko handles, which the package prints as a lower UVI target with no site article behind it. The neurological problems reported in some morph lines belong in the same article, and nothing on the site touches either |
 | Cohabitation: why one reptile per enclosure | 5 | Cross-species (reptiles) | **Proposed.** Every reptile guide on the site says "house singly" in a sentence and moves on. The article is the reasoning: resource competition at the one warm spot, the injuries that follow, why two females "getting along" is usually one female losing quietly, and the disease-transmission half that quarantine articles only half cover |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the growth table on page 14, the body-condition descriptions on page 14, the sexing
-detail on page 14, the lay-box dimensions and the under-48-hours dystocia rule on page 15,
-the itemized budget subtotals on page 24, and the bladder-stone paragraph on page 19.
+**Numbers with no site source at all**, checked Sep 5 2026 and unchanged: the growth table
+on page 14, the body-condition descriptions on page 14, the sexing detail on page 14, the
+lay-box dimensions and the under-48-hours dystocia rule on page 15, the itemized budget
+subtotals on page 24, and the bladder-stone paragraph on page 19. **None of the six rows in
+this block was in the September batch**, so all six stay open and none of these figures
+gained a source.
+
+**What the Sep 4 articles changed here anyway, at 2.1.** No row above closes, but this
+package was audited page by page because the cross-species articles touch it. Quarantine went
+from 60 to 90 days to Merck's 3 to 6 months on pages 17 and 25, with a separate room rather
+than a separate enclosure and paper substrate named as the mite-detection surface it is. Page
+7 narrowed its ceramic-emitter controller advice and gained the daily second thermometer.
+Page 8 gained the CDC's January 2026 pet-gecko outbreak, 113 cases across 36 states, which
+belongs in a gecko package more than in any other. Page 21 named the urate and kidney problem
+behind a discolored urate, and the soak moved to 15 to 20 minutes.
+
+**Page 7 is the one that needed nothing, and that is the useful finding.** Its probe
+instruction matched `reptile-heating-thermostats-guide` almost word for word, which is why
+the Bearded Dragon block's conflicting instruction is flagged against this page rather than
+the other way round. When a future reptile build needs a model for the thermostat page, this
+is it.
 
 **Source drift found while building.** Three, none serious, all worth a pass.
 
@@ -2019,10 +2144,37 @@ around losing heat, and for this species the emergency runs the other way.
 | Bioactive setups, properly | 5, 13, 32 | Cross-species (tropical reptiles) | **Proposed.** `crested-gecko-enrichment-guide.mdx` names bioactive and says it is optional, which is true and not useful to someone deciding. The article is the drainage layer, the ABG-style mix, springtails and isopods, plant choice, the establishment period before an animal goes in, and the honest maintenance comparison against a paper-towel setup |
 | Handling a jumper | 8 | Cross-species (arboreal geckos) | **Proposed.** The handling guide has treadmilling and the tail warning, both good, but nothing on the practical problem every new crested gecko owner hits in week three: the gecko launches. Where to sit, what to do when it is on the curtain, how to catch one without grabbing it, and why the answer is never the tail |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the weight-milestone table and the sexing detail on page 14, the lay-box dimensions
-and the under-48-hours dystocia rule on page 15, the heat-stress response on page 19, the
-itemized budget subtotals on page 24, and the heatwave plan on page 28.
+**Numbers with no site source at all**, checked Sep 5 2026 and unchanged: the weight-milestone
+table and the sexing detail on page 14, the lay-box dimensions and the under-48-hours
+dystocia rule on page 15, the heat-stress response on page 19, the itemized budget subtotals
+on page 24, and the heatwave plan on page 28. **None of the seven rows in this block was in
+the September batch**, so all seven stay open. The overheating row is still the highest-value
+one here and nothing has touched it.
+
+**What the Sep 4 articles changed here anyway, at 2.1.** Page 25 carried the weakest
+quarantine instruction of the six packages: it ended the window on a clear fecal result,
+where `reptile-quarantine-guide` says a single negative sample is one snapshot of an
+intermittent process. It now runs Merck's 3 to 6 months and says why a clear test does not
+end it. Page 8 gained the CDC's January 2026 pet-gecko outbreak with the full hygiene rules.
+Page 21's normal-stool row gained the species carve-out
+`reptile-stool-urates-hydration-guide` supplies, that a fruit-powder diet makes for a softer
+stool than a strict insectivore's, so softer is not automatically wrong; and its urate row
+gained the kidney and gout consequence with misting named as the correction an arboreal
+species needs.
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item, and it is a
+confirmed article error:
+
+- **`reptile-emergency-plan-guide.mdx` has a daytime figure in a nighttime row for this
+  species.** Its temperature table lists the crested and gargoyle gecko as tolerating
+  70-75&deg;F (21-24&deg;C). The ReptiFiles care sheet both the article and this package draw
+  on, republished by Zen Habitats, gives **"Nighttime temperature: 65-72&deg;F (18-22&deg;C)"**
+  and separately **"Cool area temperature (bottom of enclosure): 70-75&deg;F (21-24&deg;C)"**.
+  The article has carried the daytime cool-area figure into a row that means night tolerance.
+  Page 28 of the package prints 65 to 72&deg;F and is correct; page 35 states the
+  disagreement. The action figure in the same article row, sustained at or below 72&deg;F day
+  and night, is right and matches the package. **The article's tolerable column is the thing
+  to correct.**
 
 **Source drift found while building.** Three.
 

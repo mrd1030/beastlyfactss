@@ -115,3 +115,90 @@ Do not cut: the UVB distance page, the thermostat page, the supplement schedule,
 feeder chart, the safe-foods chart, the poop and hydration page, or any owner-tool page.
 The supplement schedule and the UVB distances are the two things this package exists to
 get right, and both have already been wrong once.
+
+## 5 September 2026: the cross-species article cross-check, v3.0 to v3.1
+
+This block was marked Closed in the gap log, but the Sep 4 articles postdate it
+and the Ball Python block names this package as sharing its stool and urates row,
+so the pages those articles touch were audited anyway. Four content changes, and
+the two headroom findings this file has been carrying since it was written are
+now fixed.
+
+**Page 7, controller type.** "Use an **on/off or pulse thermostat** for a ceramic
+heat emitter or deep heat projector" became "**pulse proportional or dimming**".
+`reptile-heating-thermostats-guide.mdx` is clear that on/off suits a heat mat,
+which changes slowly, and that a fast-responding source can overshoot in the
+window before an on/off unit cuts.
+
+**Page 7, second thermometer.** Added: keep a second thermometer away from the
+thermostat probe and read it daily, because a thermostat stuck on or a probe that
+has drifted gives no other warning. The article names probe drift as the most
+common failure and the silent one.
+
+**Page 7, probe placement. Left alone, deliberately, and this is the one open
+conflict in the whole cross-check.** The page says to put the probe beside the
+basking platform, not on it. The site article says the probe belongs on the
+basking spot itself for an overhead source. Ball Python page 7 and Leopard Gecko
+page 7 both agree with the article, which makes this package the outlier. It was
+researched before deciding: VCA's bearded dragon housing page covers thermometer
+placement, one at each end, and says heating pads should be thermostat controlled,
+but gives no probe position. Merck's husbandry page requires thermostat control
+and says nothing about probes. LafeberVet gives thermometer placement, including a
+third at the basking spot, and its burns article is behind a member login. **No
+named veterinary source states a thermostat probe position for an overhead basking
+lamp.** The only sources that answer it directly are reptile retailers, which is
+below this project's bar and is the class of source the site is currently removing
+from 21 articles. A safety instruction does not move on retailer sourcing, so page
+7 keeps its figure and page 34 carries a callout stating the disagreement openly.
+If a veterinary source turns up, this is the first thing v4 should settle.
+
+**Page 8, Salmonella.** Rewritten from `reptile-salmonella-hygiene-guide.mdx`. The
+old callout already had three of the four risk groups, which is better than the
+audit first recorded, but it was missing that one negative test clears nothing,
+that the sink rule covers a bathroom sink and a bath as well as a kitchen sink
+with a dedicated tub as the answer, not kissing the animal, adults over 65, and
+the CDC's actual line for under-fives, which is not to handle reptiles or their
+environments at all rather than simply to avoid handling.
+
+**Pages 18 and 33, quarantine.** "60 to 90 days" became "3 to 6 months" in both
+the atadenovirus section and the glossary. Merck recommends 3 to 6 months for a
+new reptile and the article is explicit that 60 to 90 days is the hobby floor.
+
+**Page 21, urates.** "Dehydration, or excess calcium being passed" was a mechanism
+error: urates are uric acid made in the liver from protein digestion, not calcium.
+`reptile-stool-urates-hydration-guide.mdx` gives dehydration, then a urate or
+kidney problem, then gout, and the row now says so. Worth recording that all four
+reptile packages carrying this row had drifted apart on the second cause: ball
+python and leopard gecko were clean, this one blamed calcium and the Russian
+tortoise blamed the liver. All five now read the same.
+
+**Page 21, insect parts.** "Undigested insect parts" flagged as abnormal became
+"Whole recognizable insect parts. Chitin fragments are normal", because the
+article lists visible exoskeleton fragments as normal in an insectivore's stool
+and the old wording flagged the normal case. The tortoise and both gecko packages
+already had this right.
+
+**Page 21, soak.** No change. The 15 to 20 minutes here already matches
+`reptile-shedding-complete-guide.mdx`, and it is the figure the other three
+reptile packages were moved onto.
+
+**The two headroom findings from this file are resolved.** Page 6 was at 6 px and
+page 8 at 12 px, both under the 15 px print floor, and this file prescribed the
+fix: tighten layout first, `dense` on the tables and `compact` on the lists, and a
+callout at `margin:7pt 0`. That worked exactly as predicted. Page 6 went from 6 px
+to 77 px on the layout pass alone, with no words touched. Pages 7 and 8 also
+needed the `.snug` rule block the other t3 guides carry and this one did not: `p`
+and `li` at line-height 1.42, `li` margin 2pt, `h2.h` margins 9/3, callouts at
+8/12pt and 7pt margins, `table.dense td` at 1.32. Added to the head and applied to
+pages 7 and 8 only. Page 7 finished at 20 px and page 8 at 19 px, both carrying new
+content. **Page 8 did not need the split this file recommended as the fallback.**
+
+**Pages 34 and 35.** The single reference page split into a sources page and a
+version history page, taking the package to 35. The sources page gained Merck's
+husbandry and disease pages, Iowa State CFSPH, and the cross-species article list,
+plus the open-disagreement callout about the probe.
+
+**Parked blocks:** still none, and this pass adds none. Nothing was removed to fit;
+every page cleared on layout and word-level tightening. The trigger this file named
+for starting a parked-block section, a real fitting pass, has now happened and
+produced nothing to park, which is worth knowing.

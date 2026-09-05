@@ -219,3 +219,91 @@ The two payable parks, in the order they should be taken:
    policy, because that is the part with consequences.
 
 Do not take a third. p18+p19 and p39+p40 both fail the "nothing real" test.
+
+## 5 September 2026: the cross-species article cross-check, v2.1 to v2.2
+
+Audited against `invertebrate-rehousing-guide`, `invertebrate-pesticide-hazards-guide`
+and `invertebrate-emergency-travel-shipping-guide`, published 4 September 2026, plus
+`invertebrate-molting-guide`, which was unchanged and agreed with pages 13 and 14.
+Six pages changed. The package came out of this well: the rehousing and pesticide
+pages matched the articles almost point for point. Two things did not.
+
+**Page 17, the eye row. This was the one real error.** Old text: "Do not rub. Flush
+with saline or clean water and get seen the same day." No clinical source describes
+a rinse step for an embedded urticating hair, and the documented advice is the
+opposite instinct: shield the eye so the person cannot rub it, and get to an
+ophthalmologist or emergency department the same day. New text says so, and names
+what is actually happening, the barbed hairs migrating through ocular tissue into
+ophthalmia nodosa, with the 2012 New Zealand Medical Journal case report behind it.
+This is the most consequential fix in the package, on the page that opens by saying
+hairs in an eye are the most common real injury in the hobby.
+
+**Page 17, the airway row.** Old text ended at "Ventilate the room, and consider a
+dust mask". It had no escalation trigger at all, which reads as a nuisance. Added:
+wheezing, throat tightness or real difficulty breathing is a same-day emergency room
+visit, because severe cases have needed airway management. The skin row gained the
+detail that tape usually needs repeating.
+
+**Page 18, preparation.** The new enclosure should be running a few hours ahead
+rather than merely set up, and a spare catch cup belongs in the staged kit.
+
+**Page 19, the method.** Old step 4 read "tip it gently onto the substrate near the
+hide", then the next clause said not to shake or tap it out, which half-contradicts
+itself. The documented method is to set the sealed cup down, slide the card out, and
+let the animal walk out on its own. Corrected. Added an arboreal step: bring the cup
+to the animal at its own level on the decor, or move it already sealed in whatever it
+retreated into, rather than chasing it around open decor with the lid off.
+
+**Page 26, pesticides.** The page already had the five household routes right. It
+gained the one it was missing: a total release fogger, which fills a room with
+insecticide on the instruction that every pet leaves the space, and a tank cannot.
+The line worth keeping is that a closed lid does not help, because the room's air
+becomes the tank's air. Also added the article's own caveat, that this toxicology is
+documented in insects and extended to arachnids on shared nerve chemistry rather than
+a study anyone has run.
+
+**Page 35, the blackout page.** It gave no temperature at all, which is odd on a page
+whose whole argument is that a blackout is a temperature question. It now prints the
+package's own 70 to 80 degrees F and notes the University of Illinois figure of 70 to
+85, which is a little wider.
+
+**Page 36, leaving town. The day counts came out.** Old table: "Up to 2 weeks: fine
+completely alone", "2 to 4 weeks", "Over a month". The article that closed this row
+declines to print a figure and says why, that no source will stand behind one, and the
+University of Illinois page has keepers refilling the water dish daily in a normal
+week, which cuts against a flat fortnight alone. The table is now four rows of
+reasoning rather than three of duration: water is the binding constraint, missed meals
+are not the risk they feel like because the pre-molt fast is normal, feed before rather
+than on the day, and slings are the exception. A muted line says the omission is
+deliberate.
+
+**Page 36, transport and shipping.** Transport gained the mechanism: the abdomen is
+thin cuticle with none of the reinforcement the legs have, a fall can rupture it, and
+that is close to unsurvivable. Shipping gained the rule the page did not have, which
+is that USPS makes all spiders nonmailable with a narrow scorpion exception, plus USDA
+APHIS permits and the Lacey Act injurious wildlife list. For a package that carries a
+full legality page, omitting the one absolute shipping rule was the gap worth closing.
+
+**Pages 43 and 44.** The single reference page split into a sources page and a version
+history page, taking the package to 44. The sources page gained the NZMJ case report,
+the National Capital Poison Center, the three NPIC pesticide fact sheets, the EPA
+fogger guidance and the USPS mailing standards. It also gained a "What this package
+will not print" callout naming the two figures removed at 2.2 rather than sourced.
+
+**Fitting.** None needed. Every page cleared on the first measurement, minimum 26 px,
+which is what the 2.1 layout pass bought and why it was worth doing.
+
+**Still in the PDF with no site source**, checked and unchanged: the enclosure height
+ceiling and the 3x-leg-span floor rule on page 6, the substrate depths on page 7, the
+abdomen reference table on page 9, the sexing method on page 27, and the enclosure type
+by lifestyle on page 7. None of the four species-only rows was in the September batch.
+The premolt signs and hardening windows on pages 13 and 14 match
+`invertebrate-molting-guide` and are no longer package-only.
+
+**A note for whoever does the sourcing pass.** Four of the husbandry references on the
+old sources page are hobbyist sites: The Tarantula Collective, Tom's Big Spiders, Giant
+Spiders and Tarantula Heaven, plus Vet Verified in the veterinary list. That is the same
+class of source the September 2026 site commit says is being removed from 21 articles on
+a follow-up branch. They were left in place here because replacing them means re-sourcing
+the figures they carry, which is a bigger job than this cross-check, but it is the next
+thing this package needs.
