@@ -229,16 +229,29 @@ starts demanding a token the page is not yet sending:
 **The CSP has to allow it, and the CSP is not in this repo.** It is set as a
 Transform Rule on the Cloudflare zone; `cloudflare-csp.txt` is a local
 reference copy and is gitignored, so grepping `public/_headers` finds nothing
-and tells you nothing. Turnstile needs both of these, because it loads a script
-and renders the challenge in an iframe:
+and tells you nothing. Turnstile needs `https://challenges.cloudflare.com` in three
+directives, because it loads a script, renders the challenge in an iframe, and
+calls home from it:
 
 ```
-script-src ... https://challenges.cloudflare.com;
-frame-src  ... https://challenges.cloudflare.com;
+script-src  ... https://challenges.cloudflare.com
+connect-src ... https://challenges.cloudflare.com
+frame-src   ... https://challenges.cloudflare.com
 ```
 
-Miss `frame-src` and the script loads while the box never appears. This is what
-happened on the first attempt.
+Miss `frame-src` and the script loads while the box never appears, which reads
+like a bad key rather than a blocked frame. On the first attempt all three were
+missing.
+
+Nothing else in the storefront needs a CSP change, and the reasons are worth
+knowing rather than rediscovering. Supabase is already in `connect-src`,
+`img-src` and `media-src`, so auth, the purchases query and the PDF all pass.
+The Stripe Checkout redirect and the signed download are both script-initiated
+top-level navigations rather than form submissions, so `form-action 'self'`
+does not apply to either. That last one changes if the storefront ever moves
+from hosted Checkout to on-site Elements: that would need `js.stripe.com` in
+`script-src` and `frame-src`, alongside the `payment=(self ...)`
+Permissions-Policy change noted below.
 
 If the widget cannot load at all, the sign-in form drops the token requirement
 and sends the request anyway, so a blocked script gives a real Supabase error
