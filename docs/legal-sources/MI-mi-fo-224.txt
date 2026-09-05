@@ -1,0 +1,62 @@
+# Michigan reptile and amphibian rules, Fisheries Order 224.21
+
+sourceId: mi-fo-224
+jurisdiction: MI
+url: https://www.eregulations.com/michigan/fishing/amphibians-reptiles
+fetched: 2026-09-05
+fetch notes: michigan.gov returns 403 to curl AND to WebFetch on every path tried,
+  including the /en/ variants, the DNR, MDARD and the invasive species pages, and the
+  PDF hosts. eregulations.com publishes the official Michigan Fishing Guide and does
+  work. The statutes came from animallaw.info reproductions cross-checked against
+  search snippets of legislature.mi.gov, which is also unreachable from the container.
+
+----------------------------------------------------------------------
+
+VERBATIM, from the official guide:
+
+  "A fishing license is required to take amphibians and reptiles for personal use."
+
+  "Reptiles and amphibians may not be bought, sold or offered for sale."
+
+  Protected, may not be taken or possessed except as authorized by the DNR Director:
+  "Blanding's, spotted, wood, and eastern box turtles; black rat snake, Butler's garter
+   snake, eastern fox snake, copper-bellied water snake, Kirtland's snake, queen snake,
+   smooth green snake, and eastern massasauga rattlesnake; boreal chorus frog,
+   Blanchard's cricket frog, pickerel frog, and Fowler's toad; mudpuppy; small-mouthed
+   salamander, marbled salamander, six-lined racerunner, western lesser siren, northern
+   two-lined salamander, northern dusky salamander, and mink frog; all reptile eggs"
+
+  Possession limits:
+    Frogs, toads and salamanders: 10 combined daily and total
+    Snapping turtles, season July 15 to September 15: 2 daily, 4 total
+    Other turtles, snakes and lizards: 3 daily, 6 total, max 2 turtles daily and 4 total
+
+  Scope of the order, which is what keeps non-native pets outside it:
+  "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell,
+   barter, or attempt to take, trap, possess or barter any state reptile or amphibian
+   from the wild...except as provided within this order."
+
+OTHER MICHIGAN REGIMES, verified this session:
+
+  Large Carnivore Act, MCL 287.1102(f). A closed list:
+  "any of the following cats of the Felidae family, whether wild or captive bred,
+   including a hybrid cross with such a cat: a lion, a leopard (including a snow leopard
+   or clouded leopard), a jaguar, a tiger, a cougar, a panther, or a cheetah; or a bear
+   of a species that is native or nonnative to Michigan, whether wild or captive bred."
+  Servals and Bengal cats are NOT on it.
+
+  Permit to Hold Game in Captivity, NREPA Part 427, MCL 324.42701 et seq. Closed list,
+  captive-bred game only:
+  "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink,
+   squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail,
+   Hungarian partridge, ducks, geese and wild turkeys"
+
+  Animal Industry Act, MCL 287.731, with the MDARD import requirements:
+  "Certificate of Veterinary Inspection is required for the import of exotic, circus and
+   zoo animals, native wild animals, domestic rabbits, nonnative rodents, nonnative
+   reptiles and amphibians, and non-poultry birds"
+  MDARD does not issue entry permits for exotic, circus and zoo animals.
+
+OPEN CHECK: NREPA Part 413's prohibited and restricted species list could not be read
+from this container. It is an invasive species list and a search specific to the question
+found no pet reptile on it, but it is unverified.

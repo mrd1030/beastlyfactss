@@ -1,0 +1,120 @@
+# 58 Pa. Code § 79.3, season and daily possession limits (with the species table)
+
+sourceId: pa-58-79-3
+jurisdiction: PA
+url: https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/058/chapter79/s79.3.html&d=reduce
+fetched: 2026-09-05
+fetch notes: curl works; the limits table needs td/tr stripping to read as rows
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+ 
+ 58 Pa. Code § 79.3. Season and daily possession limits. 
+ Skip to main content 
+ HOME 
+ SEARCH 
+ Pennsylvania Bulletin 
+ Pennsylvania Code 
+ Search Tips 
+ ABOUT 
+ CONTACT 
+ FAQ 
+ ALERTS 
+ Pennsylvania Code -->
+ C OMMONWEALTH OF
+ P ENNSYLVANIA
+ C OMMONWEALTH OF
+ P ENNSYLVANIA
+ No statutes or acts will be found at this website. 
+ The Pennsylvania Code website reflects the Pennsylvania Code 
+ changes effective through 56 Pa.B. 4026 (July 4, 2026).
+ About the Pennsylvania Code & Bulletin
+ • No statutes or acts will be found at this website. 
+ The Pennsylvania Code website reflects the Pennsylvania Code changes effective through 56 Pa.B. 4026 (July 4, 2026). 
+ Previous Doc 
+ Next Doc 
+ Chapter 79 Contents 
+ Title 58 Contents 
+ Search 
+ Enter Full Screen 
+ Previous Doc 
+ Next Doc 
+ Chapter 79 Contents 
+ Title 58 Contents 
+ Search 
+ Print 
+ Enter Full Screen 
+ Title 58 Chapter 79 58 Pa. Code § 79.3. Season and daily possession limits. 
+ 58 Pa. Code § 79.3. Season and daily possession limits. 
+ § 79.3. Season and daily possession limits. 
+ (a) Except as otherwise provided in subsections (b)—(e), it is unlawful for a person to take, catch or kill more than the daily limit specified in subsection (h) in 1 calendar day or to have in possession more than the possession limit, dead or alive, in whole or in parts, specified in subsection (g) or to hunt, take, catch or kill reptiles or amphibians during the closed season. A reptile or amphibian will not be considered to be in the possession of a person if, after it is taken or caught, it is immediately released unharmed to the exact location from which it was taken and is not confined to a sack, bag or other container.
+ (b) This section does not prohibit the sponsors of an organized reptile/amphibian hunt conducted under a permit issued under § 79.7 (relating to organized reptile and amphibian hunt permits) from possessing more than the daily limit of the species of reptiles or amphibians hunted if the total number of reptiles and amphibians held in possession during each hunt does not exceed the daily limit for the species hunted times the number of registered participants in the organized hunt. This subsection applies to possession limits only. It does not permit the sponsors of a hunt or individual hunters to take, catch or kill any number of reptiles and amphibians in excess of the daily limits.
+ (c) This section does not prohibit possession of numbers of reptiles and amphibians in excess of possession limits by zoos and other accredited institutions for scientific, educational or research purposes or licensed taxidermists for the purpose of mounting for properly permitted customers, Commission-recognized rehabilitators or licensed pest control agents with the written permission of the Executive Director or a designee. These persons and institutions shall maintain a current open inventory of and report annually changes in the number of reptiles and amphibians possessed. The Executive Director may limit the number of reptiles and amphibians that a person or institution may possess when the Executive Director or a designee issues permission under this subsection.
+ (d) This section does not prohibit possession of numbers of reptiles and amphibians in excess of possession limits by persons who have obtained a permit under § 79.4 (relating to possession permits for native species).
+ (e) This section does not prohibit possession of numbers of reptiles and amphibians artificially propagated in accordance with this chapter in excess of the possession limits by artificial propagators and dealers of live reptiles and amphibians registered with the Department of Agriculture in accordance with 3 Pa.C.S. Chapter 42 (relating to aquaculture development).
+ (f) In prosecutions for violations of the possession limits, when venomous reptiles have been killed in apparent violation of the limits, it shall be a defense that the person who killed the venomous reptiles acted under a reasonable apprehension of immediate death or bodily harm to himself or other persons in his immediate vicinity, if no more venomous reptiles are killed than necessary to protect life and limb and if the person reported the kills in writing to the Natural Diversity Section Chief, Division of Environmental Services, 595 East Rolling Ridge Drive, Bellefonte, Pennsylvania 16823, within 5 business days after the kill. It is unlawful for a person to possess a venomous reptile, in whole or in parts, that was killed under this subsection.
+ (g) When season or annual limits apply, a season or annual limit has been reached once a reptile or amphibian, dead or alive, in whole or in parts, has not been immediately released to the exact location from which taken and is in the possession of a person.
+ (h) The following seasons, sizes, catch and possession limits apply to reptiles and amphibians except endangered and threatened species: 
+ | 
+ SPECIES | SEASON | DAILY LIMIT | POSSESSION LIMIT | 
+ American Bullfrog ( Lithobates catesbeianus ) | July 1 to October 31 | 10 (combined species) | 20 (combined species) | 
+ Green frog ( Lithobates clamitans ) | July 1 to October 31 | 10 (combined species) | 20 (combined species) | 
+ Common snapping turtle ( Chelydra serpentina ) | July 1 to October 31 | 15 | 30 | 
+ Blanding’s turtle ( Emydoidea blandingii ) | No open season | 0 | 0 | 
+ Spotted turtle ( Clemmys guttata ) | No open season | 0 | 0 | 
+ Wood turtle ( Glyptemys insculpta ) | No open season | 0 | 0 | 
+ Woodland box turtle ( Terrapene carolina carolina ) | No open season | 0 | 0 | 
+ Broad-headed skink ( Plestiodon laticeps ) | No open season | 0 | 0 | 
+ Northern coal skink ( Plestiodon anthracinus anthracinus ) | No open season | 0 | 0 | 
+ Common Mudpuppy ( Necturus maculosus maculosus ) | No open season | 0 | 0 | 
+ Eastern hellbender ( Cryptobranchus alleganiensis alleganiensis ) | No open season | 0 | 0 | 
+ Marbled salamander ( Ambystoma opacum ) | No open season | 0 | 0 | 
+ Jefferson salamander ( Ambystoma jeffersonianum ) | No open season | 0 | 0 | 
+ Four-toed salamander ( Hemidactylium scutatum ) | No open season | 0 | 0 | 
+ Northern ravine salamander ( Plethodon lectromorphus ) | No open season | 0 | 0 | 
+ Northern cricket frog ( Acris crepitans crepitans ) | No open season | 0 | 0 | 
+ Mountain chorus frog ( Pseudacris brachyphona ) | No open season | 0 | 0 | 
+ Upland chorus frog ( Pseudacris feriarum ) | No open season | 0 | 0 | 
+ Western chorus frog ( Pseudacris triseriata ) | No open season | 0 | 0 | 
+ Northern fence lizard ( Sceloporus undulatus ) | No open season | 0 | 0 | 
+ Queensnake ( Regina septemvittata ) | No open season | 0 | 0 | 
+ Short-headed Gartersnake ( Thamnophis rachystoma ) | No open season | 0 | 0 | 
+ Eastern Ribbonsnake ( Thamnophis saurita ) | No open season | 0 | 0 | 
+ Mountain Earthsnake ( Virginia valeriae pulchra ) | No open season | 0 | 0 | 
+ Eastern Smooth Earthsnake ( Virginia valeriae valeriae ) | No open season | 0 | 0 | 
+ Smooth Greensnake ( Opheodrys vernalis ) | No open season | 0 | 0 | 
+ Eastern Hog-nosed Snake ( Heterodon platirhinos ) | No open season | 0 | 0 | 
+ Eastern wormsnake ( Carphophis amoenus amoenus ) | No open season | 0 | 0 | 
+ Amphibian eggs and tadpoles | No closed season | 15 (combined species) | 15 (combined species) | 
+ Timber rattlesnake ( Crotalus horridus ) | Second Saturday in June to July 31* | 1 annual limit** (must be at least 42 inches in length, measured lengthwise along the dorsal surface from the snout to the tail, excluding the rattle and must possess 21 or more subcaudal scales.) 
+ | 
+ Eastern Copperhead ( Agkistrodon contortrix ) | Second Saturday in June to July 31 | 1 annual limit** | | 
+ Native species not listed in this subsection | No closed season | 1 | 1
+ * It is unlawful for a person to hunt, take, catch or kill timber rattlesnakes west of Route 15 and south of Interstate 81 to the Maryland line where there is no open season.
+ ** It is unlawful for a person to take, catch or kill more than one timber rattlesnake or copperhead per calendar year except as provided in § 79.7(f) (relating to organized reptile and amphibian hunt permits). It is unlawful for a person to possess more than one timber rattlesnake or copperhead at any time except as provided in § 79.7(f). 
+ Authority 
+ The provisions of this § 79.3 issued under the Fish and Boat Code, 30 Pa.C.S. § 2102; amended under section 506 of The Administrative Code of 1929 (71 P.S. § 186); and the Fish and Boat Code, 30 Pa.C.S. 
+ Source 
+ The provisions of this § 79.3 amended March 19, 2010, effective March 20, 2010, 40 Pa.B. 1500; amended March 23, 2018, effective March 24, 2018, 48 Pa.B. 1672; amended September 20, 2019, effective September 21, 2019, 49 Pa.B. 5450. Immediately preceding text appears at serial pages (390805) to (390808). 
+ Cross References 
+ This section cited in 58 Pa. Code § 79.7 (relating to organized reptile and amphibian hunt permits); and 58 Pa. Code § 79.12 (relating to color morphs of native species).
+ No part of the information on this site may be reproduced for profit or sold for profit. 
+This material has been drawn directly from the official Pennsylvania Code full text database. Due to the limitations of HTML or differences in display capabilities of different browsers, this version may differ slightly from the official printed version.
+ Top 
+ Bottom 
+ No part of the information on this site may be reproduced forprofit or sold for profit. Please direct comments or questions to webmaster@PaBulletin.com 
+ Accessibility 
+ Privacy 
+ Disclaimer 
+ Style Manual 
+ Code Publication Schedule 
+ Bulletin Publication Schedule 
+ Accessibility | 
+ Privacy | 
+ Disclaimer | 
+ Style Manual | 
+ Code Publication Schedule | 
+ Bulletin Publication Schedule 

@@ -1,0 +1,279 @@
+# 58 Pa. Code Ch. 137, Game Commission wildlife regulations
+
+sourceId: pa-58-137-1
+jurisdiction: PA
+url: https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter137%2Fchap137toc.html&d=
+fetched: 2026-09-05
+fetch notes: curl works
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+ 
+ 58 Pa. Code Chapter 137. Wildlife 
+ Skip to main content 
+ HOME 
+ SEARCH 
+ Pennsylvania Bulletin 
+ Pennsylvania Code 
+ Search Tips 
+ ABOUT 
+ CONTACT 
+ FAQ 
+ ALERTS 
+ Pennsylvania Code -->
+ C OMMONWEALTH OF
+ P ENNSYLVANIA
+ C OMMONWEALTH OF
+ P ENNSYLVANIA
+ No statutes or acts will be found at this website. 
+ The Pennsylvania Code website reflects the Pennsylvania Code 
+ changes effective through 56 Pa.B. 4026 (July 4, 2026).
+ About the Pennsylvania Code & Bulletin
+ • No statutes or acts will be found at this website. 
+ The Pennsylvania Code website reflects the Pennsylvania Code changes effective through 56 Pa.B. 4026 (July 4, 2026). 
+ Title 58 Contents 
+ Title 58 Contents 
+ Search 
+ Enter Full Screen 
+ Title 58 Contents 
+ Search 
+ Print 
+ Enter Full Screen 
+ Title 58 Chapter 137 
+ Pennsylvania Code 
+ CHAPTER 137. WILDLIFE 
+ Sec. 
+ 137.1. Importation, possession, sale and release of certain wildlife. 
+ 137.2. Release of animals. 
+ 137.3. [Reserved]. 
+ 137.4. [Reserved]. 
+ 137.5. [Reserved]. 
+ 137.6. [Reserved]. 
+ 137.7. [Reserved]. 
+ 137.8. [Reserved]. 
+ 137.9. [Reserved]. 
+ 137.10. [Reserved]. 
+ 137.11. [Reserved]. 
+ 137.12. [Reserved]. 
+ 137.14. [Reserved]. 
+ 137.15. [Reserved]. 
+ 137.16. [Reserved]. 
+ 137.17. [Reserved]. 
+ 137.18. [Reserved]. 
+ 137.19. [Reserved]. 
+ 137.21. [Reserved]. 
+ 137.23. [Reserved]. 
+ 137.24. [Reserved]. 
+ 137.25. [Reserved]. 
+ 137.26. [Reserved]. 
+ 137.27. [Reserved]. 
+ 137.28. [Reserved]. 
+ 137.29. [Reserved]. 
+ 137.30. [Reserved]. 
+ 137.31. Possession of live wildlife. 
+ 137.32. [Reserved]. 
+ 137.33. Feeding of certain wildlife prohibited. 
+ 137.34. Wildlife disease and emergency authority of Director. 
+ 137.35. Chronic Wasting Disease restrictions. 
+ § 137.1. Importation, possession, sale and release of certain wildlife. 
+ (a) Unless otherwise provided in this section or the act, it is unlawful for a person to import, possess, sell, offer for sale or release within this Commonwealth the following wild animals or wild birds or the eggs of the birds or a crossbreed or hybrid of the wild animals or wild birds, which are similar in appearance:
+ (1) In the family Felidae . Species and subspecies, except species which are commonly called house cats which may be possessed but not released into the wild. Lawfully acquired bobcats— Lynx rufus— may be imported or possessed, or both, by licensed propagators specifically for propagation for fur farming purposes. Importation permits and transfer permits as mentioned in subsections (d) and (e) are not required for bobcats imported for propagation for fur farming purposes. Bobcats imported under this exception and their progeny may not be sold or transferred for wildlife pet purposes or released into the wild.
+ (2) In the family Canidae . Species and subspecies of the coyote, the red and gray fox and a full-blooded wolf or crossbreed thereof not licensed by the Department of Agriculture. Lawfully acquired coyotes and red or gray foxes may be imported or possessed, or both, by licensed propagators specifically for propagation for fur farming purposes. Coyotes and red and gray foxes imported under this exception and their progeny may not be sold or transferred for wildlife pet purposes or released into the wild. This subsection does not permit the sale for release or the release of the mammals into the wild.
+ (3) In the family Ursidae. All species of the bears.
+ (4) In the family Procyonidae. All species of raccoons.
+ (5) In the family Capromyidae. The nutria.
+ (6) In the family Mustelidae. All species of the skunks.
+ (7) The order Primates. All families of nonhuman primates.
+ (8) An animal, bird or egg of a bird listed by the Commonwealth or the United States Department of the Interior as threatened, endangered or injurious.
+ (9) The Monk Parakeet, Myiopsitts monachus , sometimes referred to as the Quaker Parakeet or Gray-headed Parakeet.
+ (10) Game or wildlife taken alive from the wild, except the Commission may import wildlife taken from the wild for enhancement of this Commonwealth’s wild fauna.
+ (11) Game or wild held captive . Game or wildlife held in captivity or captive bred in another state or nation.
+ (b) Nothing in this section prevents a Nationally recognized circus from temporarily bringing wildlife into this Commonwealth in connection with presenting circus performances.
+ (c) Nothing in this section prevents zoological gardens from importing wildlife.
+ (d) A person wishing to import lawfully acquired wildlife, or parts thereof, shall first obtain an importation permit from the Commission subject to the following:
+ (1) Importation permits will be issued for a fee of $50 for each transaction.
+ (2) A person wishing to import wildlife for a menagerie, exotic wildlife possession, exotic wildlife dealer or propagation purposes shall be in possession of a menagerie, exotic wildlife possession, exotic wildlife dealer or propagation permit prior to submitting the application for an import permit. See Chapter 147 (relating to special permits).
+ (3) An application for an importation permit shall state the name and address of the applicant, name and address of the person supplying the wildlife, the common and scientific name and the number of wildlife to be covered by the permit, the purpose for which the wildlife is being imported, the qualifications of the applicant to use the wildlife for the stated purpose and the location where the wildlife will be housed or retained.
+ (4) Menagerie permittees who also possess a USDA Class C Exhibitor permit and who operate a menagerie facility as their primary means of making a livelihood, are exempt from the possession prohibition of this section, and may import lawfully acquired wildlife pursuant to an importation permit.
+ (e) Transfer of wildlife imported under subsection (d), or its progeny, or parts thereof, to a second party by sale, trade, barter or gift may only be done subject to the following:
+ (1) A permit issued by the Commission is required to transfer by sale, trade, barter or gift, wildlife or its progeny, or a part thereof.
+ (2) The fee for a transfer permit is $50.
+ (3) Transfer is limited to persons authorized to lawfully import wildlife.
+ (f) Live wildlife imported for any reason shall be accompanied by a certificate of veterinary inspection signed by an accredited veterinarian. 
+ Authority 
+ The provisions of this § 137.1 amended under the Game and Wildlife Code, 34 Pa.C.S. § § 2102(a) and (c), 2163(a), and 2901(b). 
+ Source 
+ The provisions of this § 137.1 adopted June 8, 1953; amended June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464; amended July 22, 1988, effective upon publication and applies retroactively to July 1, 1988, 18 Pa.B. 3213; amended December 8, 1989, effective December 9, 1989, 19 Pa.B. 5215; amended August 24, 1990, effective September 24, 1990, 20 Pa.B. 4488; amended May 29, 1992, effective July 1, 1992, 22 Pa.B. 2839; amended March 21, 2003, effective March 22, 2003, 33 Pa.B. 1471; amended March 23, 2007, effective March 24, 2007, 37 Pa.B. 1310; amended June 27, 2008, effective June 28, 2008, 38 Pa.B. 3499; amended January 26, 2010, effective April 3, 2010, 40 Pa.B. 1736. Immediately preceding text appears at serial pages (335303) to (335305).
+ § 137.2. Release of animals. 
+ (a) Except as otherwise provided, it is unlawful to release captive held or captive raised game or wildlife on any lands, public or private, without first securing a permit from the Commission. Lawfully acquired mallard ducks, ringneck pheasant, bobwhite quail, chukar partridge and Hungarian partridge may be released for dog training or hunting purposes.
+ (b) It is unlawful to release any animal that is a member of the suidae family into the wild.
+ (c) A person violating this section is subject to the penalties provided in the act. 
+ Authority 
+ The provisions of this § 137.2 amended under the Game and Wildlife Code, 34 Pa.C.S. § § 322(c)(8) and (9), 2101(a) and (c) and 2102(c). 
+ Source 
+ The provisions of this § 137.2 adopted January 9, 1947; amended December 18, 1958; amended June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464; amended March 10, 1989, effective March 11, 1989, 19 Pa.B. 1020; amended September 17, 2004, effective September 18, 2004, 34 Pa.B. 5155; amended June 29, 2007, effective June 30, 2007, 37 Pa.B. 2948; amended November 16, 2018, effective November 17, 2018, 48 Pa.B. 7212. Immediately preceding text appears at serial page (349001). 
+ § 137.3. [Reserved]. 
+ Source 
+ The provisions of this § 137.3 adopted January 8, 1948; amended April 23, 1976, effective April 24, 1976, 6 Pa.B. 961; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial page (63565).
+ § 137.4. [Reserved]. 
+ Source 
+ The provisions of this § 137.4 amended November 23, 1973, effective November 24, 1973, 3 Pa.B. 2728; amended November 28, 1980, effective November 29, 1980, 10 Pa.B. 4468; amended July 10, 1981, effective July 11, 1981, 11 Pa.B. 2491; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (63565) and (83613) to (83614).
+ § 137.5. [Reserved]. 
+ Source 
+ The provisions of this § 137.5 adopted December 18, 1958; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (83614) and (51542).
+ § 137.6. [Reserved]. 
+ Source 
+ The provisions of this § 137.6 adopted December 18, 1958; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial page (51542).
+ § 137.7. [Reserved]. 
+ Source 
+ The provisions of this § 137.7 adopted December 18, 1958; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (51542) to (51543). 
+ § 137.8. [Reserved]. 
+ Source 
+ The provisions of this § 137.8 adopted October 19, 1971, effective November 6, 1971, 1 Pa.B. 2080; reserved June 19, 1987, July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial page (51543).
+ § 137.9. [Reserved]. 
+ Source 
+ The provisions of this § 137.9 adopted November 23, 1979, effective November 24, 1979, 9 Pa.B. 3875; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (51543) and (71035).
+ § 137.10. [Reserved]. 
+ Source 
+ The provisions of this § 137.10 adopted April 10, 1966; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (71035) to (71036).
+ § 137.11. [Reserved]. 
+ Source 
+ The provisions of this § 137.11 adopted April 27, 1971, effective May 29, 1971, 1 Pa.B. 1314; corrected August 14, 1981, effective April 25, 1981, 11 Pa.B. 2854; amended April 30, 1982, effective May 1, 1982, 12 Pa.B. 1394; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial page (71036).
+ § 137.12. [Reserved]. 
+ Source 
+ The provisions of this § 137.12 adopted October 12, 1967; reserved December 10, 1982, effective December 11, 1982, 12 Pa.B. 4249. Immediately preceding text appears at serial page (71037).
+ § 137.14. [Reserved]. 
+ Source 
+ The provisions of this § 137.14 adopted June 2, 1970, effective June 3, 1970, 1 Pa.B. 84; amended July 5, 1974, effective July 6, 1974, 4 Pa.B. 1375; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (83615) to (83616). 
+ § 137.15. [Reserved]. 
+ Source 
+ The provisions of this § 137.15 adopted June 3, 1971, effective July 3, 1971, 1 Pa.B. 1474; amended July 6, 1979, effective September 1, 1979, 9 Pa.B. 2264; amended July 10, 1981, effective July 11, 1981, 11 Pa.B. 2491; amended September 17, 1982, effective September 18, 1982, 12 Pa.B. 3295; amended September 16, 1983, effective September 17, 1983, 13 Pa.B. 2839; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (83616) to (83620).
+ § 137.16. [Reserved]. 
+ Source 
+ The provisions of this § 137.16 adopted June 1, 1972, effective June 2, 1972, 2 Pa.B. 1075; amended June 27, 1980, effective June 28, 1980, 10 Pa.B. 2599; amended April 30, 1982, effective May 1, 1982, 12 Pa.B. 1394; amended September 17, 1982, effective September 18, 1982, 12 Pa.B. 3295; amended September 16, 1983, effective September 17, 1983, 13 Pa.B. 2840; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (83620) to (83625).
+ § 137.17. [Reserved]. 
+ Source 
+ The provisions of this § 137.17 adopted April 27, 1971, effective May 29, 1971, 1 Pa.B. 1318; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (83625) and (56184).
+ § 137.18. [Reserved]. 
+ Source 
+ The provisions of this § 137.18 adopted June 22, 1963; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial page (56184).
+ § 137.19. [Reserved]. 
+ Source 
+ The provisions of this § 137.19 adopted April 4, 1958; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (56184) to (56185).
+ § 137.21. [Reserved]. 
+ Source 
+ The provisions of this § 137.21 adopted December 18, 1958; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (56185) and (66953). 
+ § 137.23. [Reserved]. 
+ Source 
+ The provisions of this § 137.23 adopted April 27, 1971, effective May 29, 1971, 1 Pa.B. 1317; amended June 27, 1980, effective June 28, 1980, 10 Pa.B. 2599; amended December 4, 1981, effective December 5, 1981, 11 Pa.B. 4193; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (66953) to (66954).
+ § 137.24. [Reserved]. 
+ Source 
+ The provisions of this § 137.24 adopted October 21, 1960; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (66954) and (110909).
+ § 137.25. [Reserved]. 
+ Source 
+ The provisions of this § 137.25 adopted June 1, 1972, effective June 24, 1972, 2 Pa.B. 1075; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial page (110909).
+ § 137.26. [Reserved]. 
+ Source 
+ The provisions of this § 137.26 adopted October 9, 1972, effective October 28, 1972, 2 Pa.B. 2079; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial page (110909).
+ § 137.27. [Reserved]. 
+ Source 
+ The provisions of this § 137.27 adopted November 15, 1974, effective November 16, 1974, 4 Pa.B. 2379; amended November 14, 1975, effective November 15, 1975, 5 Pa.B. 2981; amended May 2, 1980, effective May 3, 1980, 10 Pa.B. 1777; amended January 23, 1981, effective January 10, 1981, 11 Pa.B. 419; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (110909) to (110910).
+ § 137.28. [Reserved]. 
+ Source 
+ The provisions of this § 137.28 adopted June 30, 1978, effective July 1, 1978, 8 Pa.B. 1765; amended April 6, 1979, effective April 7, 1979, 9 Pa.B. 1174; amended July 11, 1986, effective July 12, 1986, 16 Pa.B. 2527; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial pages (110910) to (110911).
+ § 137.29. [Reserved]. 
+ Source 
+ The provisions of this § 137.29 adopted April 4, 1958; reserved July 11, 1986, effective July 12, 1986, 16 Pa.B. 2527. Immediately preceding text appears at serial page (110911). 
+ § 137.30. [Reserved]. 
+ Source 
+ The provisions of this § 137.30 adopted May 2, 1980, effective May 3, 1980, 10 Pa.B. 1777; corrected January 23, 1981, effective January 10, 1981, 11 Pa.B. 419; reserved June 19, 1987, effective July 1, 1987, 17 Pa.B. 2464. Immediately preceding text appears at serial page (110911).
+ § 137.31. Possession of live wildlife. 
+ (a) It is unlawful for a person to possess live wildlife taken from a wild state within this Commonwealth except:
+ (1) A permit to possess no more than five live foxes may be issued to a person for the sole purpose of collecting fox urine. The permit to possess live fox will expire on the last day of the fox-trapping season. Any foxes held under the authority of this permit shall be euthanized and may be pelted and the pelt may be sold. No fox held under the authority of this permit may be released into the wild.
+ (2) A person lawfully operating under the authority of a permit issued in accordance with the act is excluded from this section.
+ (3) Sanitation and housing specifications for foxes held under authority of this permit shall be in accordance with § § 147.283 and 147.285(4)(xvii) (relating to sanitation; and specifications).
+ (b) A person violating this subchapter will be subject to the penalties provided in section 2307 of the act (relating to unlawful taking or possession of game or wildlife). 
+ Authority 
+ The provisions of this § 137.31 amended under the Game and Wildlife Code, 34 Pa.C.S. § 2901(b). 
+ Source 
+ The provisions of this § 137.31 adopted August 24, 1990, effective September 24, 1990, 20 Pa.B. 4488; amended November 2, 2001, effective November 3, 2001, 31 Pa.B. 6051. Immediately preceding text appears at serial page (202755).
+ § 137.32. [Reserved]. 
+ Source 
+ The provisions of this § 137.32 adopted October 27, 1995, effective October 28, 1995, 25 Pa.B. 4611; reserved June 16, 2006, effective June 17, 2006, 36 Pa.B. 2972. Immediately preceding text appears at serial page (316094).
+ § 137.33. Feeding of certain wildlife prohibited. 
+ It is unlawful to, except for normal or accepted farming, habitat management practices, oil and gas drilling, mining, forest management activities or other legitimate commercial or industrial practices, intentionally lay or place food, fruit, hay, grain, chemical, salt or other minerals anywhere in this Commonwealth for the purpose of feeding bear or elk, or to intentionally lay or place food, fruit, hay, grain, chemical, salt or other minerals that may cause bear or elk to congregate or habituate an area. If otherwise lawful feeding is attracting bear or elk, the Commission may provide written notice prohibiting the activity. 
+ Authority 
+ The provisions of this § 137.33 issued under the Game and Wildlife Code, 34 Pa.C.S. § 103; and amended under the Game and Wildlife Code, 34 Pa.C.S. § § 103(a) and 2102(a). 
+ Source 
+ The provisions of this § 137.33 adopted March 21, 2003, effective March 22, 2003, 33 Pa.B. 1470; amended September 17, 2004, effective September 18, 2004, 34 Pa.B. 5154; amended June 16, 2006, effective June 17, 2006, 36 Pa.B. 2972. Immediately preceeding text appears at serial pages (316094) to (316095).
+ § 137.34. Wildlife disease and emergency authority of Director. 
+ (a) The Director has emergency authority to take actions to mitigate risk factors and to determine the prevalence and geographic distribution of wildlife diseases, if the Director concludes that the introduction or spread of wildlife diseases poses a threat to human, domestic and wild animal, and environmental health and safety within or adjacent to this Commonwealth. 
+ (1) The Director has emergency authority to:
+ (i) Institute importation and exportation restrictions to mitigate disease transmission risk factors.
+ (ii) Define and designate Disease Management Areas (DMA) in this Commonwealth.
+ (2) The Director has emergency authority within designated DMAs to:
+ (i) Allow the taking of wildlife without regard to established seasons and bag limits and methods of take.
+ (ii) Require mandatory disease testing or disposal of wildlife or wildlife parts.
+ (iii) Prohibit the movement of high-risk wildlife parts.
+ (iv) Prohibit the rehabilitation of wildlife.
+ (v) Prohibit the use and possession of wildlife products.
+ (vi) Prohibit the feeding of wildlife.
+ (vii) Prohibit the issuance of new permits and allow the suspension or modification of existing permits to possess or transport live wildlife. 
+ (3) Notwithstanding paragraphs (1) and (2), the emergency authority of the Director will not be construed to extend to:
+ (i) The regulation of captive wildlife held under 3 Pa.C.S. Chapter 23 (relating to Domestic Animal Law) or the requirements of a lawful quarantine order issued by the Department of Agriculture.
+ (ii) The unilateral regulation of wildlife concurrently managed by the Commonwealth and the Federal government.
+ (b) It is unlawful for a person to violate a provision of an Executive Order issued by the Director under the authority of this section. A person violating this section will, upon conviction, be sentenced to pay the fine prescribed in the act. 
+ Authority 
+ The provisions of this § 137.34 issued under 34 Pa.C.S. § § 103(a) and 322(c)(9); and amended under 34 Pa.C.S. § 2102(a). 
+ Source 
+ The provisions of this § 137.34 adopted December 2, 2005, effective December 3, 2005, 35 Pa.B. 6526; amended December 23, 2011, effective December 24, 2011, 41 Pa.B. 6879; amended March 12, 2021, effective March 13, 2021, 51 Pa.B. 1313. Immediately preceding text appears at serial pages (360056) and (389063). 
+ Cross References 
+ This section cited in 58 Pa. Code § 137.35 (relating to Chronic Wasting Disease restrictions); and 58 Pa. Code § 141.18 (relating to permitted devices).
+ § 137.35. Chronic Wasting Disease restrictions. 
+ (a) {Reserved}.
+ (b) {Reserved}.
+ (b.1) General. 
+ (1) All cervids harvested, taken or killed within any disease management area established within this Commonwealth or imported into this Commonwealth are subject to disease testing. This test may require hunters to present cervids, or cervid parts, for checking and sampling at prescribed locations under conditions in a forthcoming notice. The submission process, if any, will be made known through public announcement, website and other means reasonably intended to reach the widest audience. The cost of testing, sampling and analysis will be borne by the Commission.
+ (2) It is unlawful to rehabilitate wild, free-ranging cervids within any disease management area established within this Commonwealth.
+ (3) {Reserved}.
+ (4) It is unlawful to directly or indirectly feed wild, free-ranging cervids within any part or portion of a disease management area designated by the Executive Director. This prohibition may not be construed to apply to normal or accepted agricultural, habitat management, oil and gas drilling, mining, forest management, or other legitimate commercial or industrial practices. If otherwise lawful feeding is attracting cervids, the Commission may provide written notice prohibiting this activity. Failure to discontinue this activity is a violation of this section.
+ (5) The Commission will not issue any new permit to possess or transport live cervids within any disease management area established within this Commonwealth.
+ (6) It is unlawful to transport or move a cervid harvested, taken or killed outside of or anywhere within this Commonwealth from the location of harvest or kill and thereafter place or dispose of any high-risk cervid parts on the landscape anywhere within this Commonwealth. High-risk cervid parts shall be disposed of only through a commercial refuse pickup service or other method approved by the Commission.
+ (c) Nonapplicability. 
+ (1) Nothing in this section shall be construed to extend to the regulation of captive cervids held under 3 Pa.C.S. Chapter 23 (relating to Domestic Animal Law) or the requirements of a lawful quarantine order issued by the Department of Agriculture.
+ (2) Nothing in this section shall be construed to limit the Commission’s authority to establish or enforce additional importation, exportation, possession, transportation, or testing requirements or restrictions on cervid parts or materials under the authority of § 137.34 (relating to wildlife disease and emergency authority of Director).
+ (d) Authority to designate. The Executive Director has the authority to designate and publish disease management areas and prohibited feeding areas established within this Commonwealth. The Executive Director will publish this list and any updates in the Pennsylvania Bulletin .
+ (e) Definitions. The following words and terms, when used in this section, have the following meanings, unless the context clearly indicates otherwise:
+ CWD—Chronic Wasting Disease —The transmissible spongiform encephalopathy of cervids.
+ Cervid —Any member of the family Cervidae (deer), specifically including, but not limited to, the following species: black-tailed deer; caribou; elk; fallow deer; moose; mule deer; red deer; sika deer; white-tailed deer; and any hybrids thereof.
+ Disease management area —Any geographic area of this Commonwealth influenced by a positive case of CWD and targeted by the Commission for CWD management activities.
+ Feeding —The act of placing any artificial or natural substance for the use or consumption of wild, free-ranging cervids on an annual, seasonal or emergency basis.
+ High-risk parts or materials —Any parts or materials, derived from cervids, which are known to accumulate abnormal prions. This includes any of the following: head (including brain, tonsils, eyes and lymph nodes); spinal cord/backbone (vertebra); spleen; skull plate with attached antlers, if visible brain or spinal cord material is present; cape, if visible brain or spinal cord material is present; upper canine teeth, if root structure or other soft material is present; any object or article containing visible brain or spinal cord material; and brain-tanned hide.
+ Non-high-risk parts or materials —Any parts or materials, derived from cervids, which are not known to accumulate abnormal prions. This includes any of the following: meat, without the backbone; skull plate with attached antlers, if no visible brain or spinal cord material is present; tanned hide or rawhide with no visible brain or spinal cord material present; cape, if no visible brain or spinal cord material is present; upper canine teeth, if no root structure or other soft material is present; and taxidermy mounts, if no visible brain or spinal cord material is present.
+ (f) Violations. A person violating a requirement or restriction in this section may be prosecuted under section 2102 or 2307 of the act (relating to regulations; and unlawful taking or possession of game or wildlife) and, upon conviction, be sentenced to pay the fine prescribed in the act. 
+ Authority 
+ The provisions of this § 137.35 issued and amended under 34 Pa.C.S. § 2102(a). 
+ Source 
+ The provisions of this § 137.35 adopted May 5, 2017, effective May 6, 2017, 47 Pa.B. 2601; amended March 12, 2021, effective March 13, 2021, 51 Pa.B. 1313; amended June 9, 2023, effective June 10, 2023, 53 Pa.B. 3088; amended May 22, 2026, effective May 23, 2026, 56 Pa.B. 3020. Immediately preceding text appears at serial pages (414489) to (414493). 
+ Cross References 
+ This section cited in 58 Pa. Code § 141.18 (relating to permitted devices).
+ No part of the information on this site may be reproduced for profit or sold for profit. 
+This material has been drawn directly from the official Pennsylvania Code full text database. Due to the limitations of HTML or differences in display capabilities of different browsers, this version may differ slightly from the official printed version.
+ Top 
+ Bottom 
+ No part of the information on this site may be reproduced forprofit or sold for profit. Please direct comments or questions to webmaster@PaBulletin.com 
+ Accessibility 
+ Privacy 
+ Disclaimer 
+ Style Manual 
+ Code Publication Schedule 
+ Bulletin Publication Schedule 
+ Accessibility | 
+ Privacy | 
+ Disclaimer | 
+ Style Manual | 
+ Code Publication Schedule | 
+ Bulletin Publication Schedule 

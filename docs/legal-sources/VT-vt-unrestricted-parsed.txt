@@ -1,0 +1,82 @@
+# Vermont Unrestricted Wild Animal List, July 2025, parsed into rows
+
+sourceId: vt-unrestricted
+jurisdiction: VT
+url: https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Unrestricted_Wild_Animals_List.pdf
+fetched: 2026-09-05
+
+This is the machine-readable version of the raw text in VT-vt-unrestricted.txt.
+Columns are animal group, order, suborder, family, genus, species, common name,
+though not every row fills every column.
+
+The rule that makes this list decisive: a species not found on the Restricted,
+Unrestricted or Domestic species lists is considered Restricted. Vermont is an
+inverted-list state like Hawaii, so absence from this list is a restriction.
+
+----------------------------------------------------------------------
+
+  Mammals* | Carnivora | Feliformia | Felidae | Allwild-domestichybridcatsof F4generationorgreater
+  Mammals | Diprotodontia | Phalangeriformes | Acrobatidae | Acorbates | pygmaeus | Feathertailglider
+  Mammals | Diprotodontia | Phalangeriformes | Petauridae | Petaurus | breviceps | Sugarglider
+  Mammals | Rodentia | Hystricomorpha | Caviidae | Cavia | porcellus | Guineapig
+  Mammals | Rodentia | Hystricomorpha | Chinchillidae | Chinchilla | allspecies | Chinchillas
+  Mammals | Rodentia | Hystricomorpha | Dasyproctidae | Dasyprota | allspecies | Agoutis
+  Mammals | Rodentia | Hystricomorpha | Octodontidae | Octodon | allspecies | Degus
+  Mammals | Rodentia | Myomorpha | Cricetidae | Mesocricetus | allspecies | Hamsters
+  Mammals | Rodentia | Myomorpha | Cricetidae | Cricetus | allspecies | Hamsters
+  Mammals | Rodentia | Myomorpha | Cricetidae | Phodopus | allspecies | Dwarfhamsters
+  Mammals | Rodentia | Castorimorpha | Heteromyidae | allspecies | Allspecieskangaroorats, pocketmice, kangaroomice
+  Mammals | Rodentia | Myomorpha | Muridae | Acomys | allspecies | Spinymice
+  Mammals | Rodentia | Myomorpha | Muridae | Gerbillus | allspecies | Gerbils
+  Mammals | Rodentia | Myomorpha | Muridae | Gerbillurus | allspecies | Gerbils
+  Mammals | Rodentia | Myomorpha | Muridae | Meriones | unguiculatus | Gerbils
+  Mammals | Rodentia | Myomorpha | Muridae | Mus | musculus | Domesticatedmice
+  Mammals | Rodentia | Myomorpha | Muridae | Rattus | norvegicus | Norwayrat
+  Mammals | Rodentia | Myomorpha | Muridae | Rattus | rattus | Domesticatedrat
+  Mammals | Erinaceomorpha | Erinaceidae | Atelerix | albiventris | Africanpygmyhedgehog\U.S.Captive Bred Only\
+  Birds* | Columbiformes | Columbidae | Columba | livia | Commonpigeon\rockdove\\Captive Bred Only]
+  Birds | Ciconiiformes | Accipitridae | Buteo | buteo | Europeanbuzzard\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Chloebia/Erythrura | gouldiae | Gouldianfinch\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Aegintha/Neochmia | modesta | Cherryfinch;Plum-Headed Finch\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Emblema/Stagonopleura | guttata | Diamondsparrow\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Emblema | pictum | Paintedfinch\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Lonchura | castaneothorax | Chestnut-breastedfinch\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Lonchura | domestica | Society\Bengalese\finch\Captive Bred Only]
+  Birds | Passeriformes | Estrildidae | Lonchura/Heteromunia | pectoralis | Pictorellafinch\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Neochmia | ruficauda | Starfinch\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Poephila | acuticauda | Long-tailedgrassfinch\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Poephila/Taeniopygia | bichenovii | Animal Group | Order | Suborder | Family | Genus | Species | Common Name\s\
+  Birds | Passeriformes | Estrildidae | Poephila | cincta | Black-throated Finch;Parsonfinch\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Poephila/Taeniopygia | guttata | Zebrafinch\Captive Bred Only\
+  Birds | Passeriformes | Estrildidae | Poephila | personata | Maskedfinch\Captive Bred Only\
+  Birds | Passeriformes | Fringillidae | Serinus | canaria | Commoncanary\Captive Bred Only\
+  Amphibians* | Anura | Discoglossidae | Bombina | bombina | Fire-belliedtoads\Captive Bred Only\
+  Amphibians | Anura | Hylidae | Hyla | cinerea | Greentreefrog\Captive Bred Only\
+  Amphibians | Anura | Hylidae | Agalychnis | callidryas | Red-eyedtreefrog\Captive Bred Only\
+  Amphibians | Anura | Hylidae | Litoria | caerulea | White'streefrog\Captive Bred Only\
+  Amphibians | Caudata | Allspeciessalamandersandnewts, exceptthose | listedin Appendixthatrequireanimportationandpossessionpermit
+  Reptiles* | Squamata | Autarchoglossa | Anguidae | allspecies | Allspeciesofalligatorlizards, glasslizards, slowworms
+  Reptiles | Squamata | Autarchoglossa | Lacertidae | Allspeciesofwalllizards, exceptthoselistedin | Appendixthatrequireanimportationandpossessionpermit
+  Reptiles | Squamata | Autarchoglossa | Scincidae | Allspeciesofskinks, exceptthoselistedin Appendix | thatrequireanimportationandpossessionpermit
+  Reptiles | Squamata | Autarchoglossa | Teiidae | allspecies | Tegusandwhiptails
+  Reptiles | Squamata | Autarchoglossa | Varanidae | Varanus | brevicauda | Short-tailedpygmymonitor
+  Reptiles | Squamata | Autarchoglossa | Varanidae | Varanus | exanthematicus | Savannah/Bosc'smonitor
+  Reptiles | Squamata | Autarchoglossa | Varanidae | Varanus | storri | Dwarfmonitor
+  Reptiles | Squamata | Autarchoglossa | Varanidae | Varanus | timorensis | Timormonitor
+  Reptiles | Squamata | Iguania | Agamidae | allspecies | Agamas
+  Reptiles | Squamata | Iguania | Chamaelonidae | allspecies | Chameleons
+  Reptiles | Squamata | Iguania | Crotaphytidae | Crotaphytus | allspecies | Collaredlizards
+  Reptiles | Squamata | Iguania | Polychrotidae | Anolis | allspecies | Anoles
+  Reptiles | Squamata | Iguania | Phrynosomatidae | Sceloporus | allspecies | Fencelizards, spinylizards
+  Reptiles | Squamata | Iguania | Tropiduridae | Leiocephalus | allspecies | Curly-tailedlizards
+  Reptiles | Squamata | Iguania | Tropiduridae | Liolaemus | allspecies | Animal | Group | Order | Suborder | Family | Genus | Species | Common Name\s\
+  Reptiles | Squamata | Scleroglossa | Gekkonidae | allspecies | Geckos
+  Reptiles | Squamata | Serpentes | Boidae | Allspeciesofboasandpythons, exceptthoselistedin | Appendixthatrequireanimportationandpossession
+  Reptiles | Squamata | Serpentes | Colubridae | Allspeciesofcolubrids, exceptthoselistedin | Appendixthatrequireanimportationandpossessionpermit
+  Reptiles | Testudines | Emydidae | Chrysemys | pictadorsalis | Southernpaintedturtle\Captive Bred Only\
+  Reptiles | Testudines | Testudinidae | Testudo/Agrionemys | horsfieldii | Russiantortoise\Captive Bred Only\
+  Reptiles | Testudines | Testudinidae | Geochelone | carbonaria | Red-footedtortoise\Captive Bred Only\
+  Invertebrates* | Allspeciesof Invertebrates, exceptthoselistedin | Appendixthatrequireanimportationandpossessionpermit.Note:Importationofanyinvertebratespeciesalsorequires | compliancewith USDAregulations. | *Taxonomybyanimalgroupsdefinedbythefollowing: | Mammals, Amphibians, Reptiles-Univ.of Michigan Museumof Zoology-Animal Diversity Web\animaldiversity.ummz.umich.edu/site/index.html\ | Birds-Integrated Taxonomic Information System | \http://www.itis.gov/\ | Invertebrates-American Arachnological Society Common Namesof Arachnids2003 | \www.americanarachnology.org/acn5.pdf\ | and Integrated Taxonomic Information System | \http://www.itis.gov/\ | Animal | Group | Order | Suborder | Family | Genus | Species | Common Name\s\
+  Invertebrates* | Allspeciesof Invertebrates, exceptthoselistedin | Appendixthatrequireanimportationandpossessionpermit.Note:Importationofanyinvertebratespeciesalsorequires | compliancewith USDAregulations. | *Taxonomybyanimalgroupsdefinedbythefollowing: | Mammals, Amphibians, Reptiles-Univ.of Michigan Museumof Zoology-Animal Diversity Web\animaldiversity.ummz.umich.edu/site/index.html\ | Birds-Integrated Taxonomic Information System | \http://www.itis.gov/\ | Invertebrates-American Arachnological Society Common Namesof Arachnids2003 | \www.americanarachnology.org/acn5.pdf\ | and Integrated Taxonomic Information System | \http://www.itis.gov/\ | Animal Group | Order | Suborder | Family | Genus | Species | Common Name\s\
+  Reptiles | Squamata | Iguania | Tropiduridae | Liolaemus | allspecies | Animal Group | Order | Suborder | Family | Genus | Species | Common Name\s\
+  Birds | Passeriformes | Estrildidae | Poephila/Taeniopygia | bichenovii

@@ -1,0 +1,297 @@
+# 58 Pa. Code Ch. 79, Reptiles and Amphibians (full chapter text)
+
+sourceId: pa-58-79
+jurisdiction: PA
+url: https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter79%2Fchap79toc.html&d=
+fetched: 2026-09-05
+fetch notes: curl works; the chapter TOC page carries the full text of every section
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+ 
+ 58 Pa. Code Chapter 79. Reptiles And Amphibians 
+ Skip to main content 
+ HOME 
+ SEARCH 
+ Pennsylvania Bulletin 
+ Pennsylvania Code 
+ Search Tips 
+ ABOUT 
+ CONTACT 
+ FAQ 
+ ALERTS 
+ Pennsylvania Code -->
+ C OMMONWEALTH OF
+ P ENNSYLVANIA
+ C OMMONWEALTH OF
+ P ENNSYLVANIA
+ No statutes or acts will be found at this website. 
+ The Pennsylvania Code website reflects the Pennsylvania Code 
+ changes effective through 56 Pa.B. 4026 (July 4, 2026).
+ About the Pennsylvania Code & Bulletin
+ • No statutes or acts will be found at this website. 
+ The Pennsylvania Code website reflects the Pennsylvania Code changes effective through 56 Pa.B. 4026 (July 4, 2026). 
+ Title 58 Contents 
+ Title 58 Contents 
+ Search 
+ Enter Full Screen 
+ Title 58 Contents 
+ Search 
+ Print 
+ Enter Full Screen 
+ Title 58 Chapter 79 
+ Pennsylvania Code 
+ CHAPTER 79. REPTILES AND AMPHIBIANS 
+ Sec. 
+ 79.1. Definitions. 
+ 79.2. Taking reptiles or amphibians. 
+ 79.3. Season and daily possession limits. 
+ 79.4. Possession permits for native species. 
+ 79.5. Snapping turtle permits. 
+ 79.6. Venomous snake permits. 
+ 79.7. Organized reptile and amphibian hunt permits. 
+ 79.8. Artificial propagation and dealers of live reptiles and amphibians. 
+ 79.9. Sale of native species. 
+ 79.10. Transportation and importation of native species. 
+ 79.11. Introduction. 
+ 79.12. Color morphs of native species. 
+ 79.13. Natural areas. 
+ Source 
+ The provisions of this Chapter 79 adopted December 22, 2006, effective January 1, 2007, 36 Pa.B. 7850, unless otherwise noted.
+ § 79.1. Definitions. 
+ The following words and terms, when used in this chapter, have the following meanings, unless the context clearly indicates otherwise:
+ Color morph —A distinct color variant form of a reptile or amphibian.
+ Hunt —The act of pursuing reptiles or amphibians in an attempt to catch, take, kill or remove them, or to catch, take, kill or remove any reptile or amphibian from any waters of this Commonwealth or other areas within this Commonwealth by any means or method for any purpose whatsoever.
+ Native species —A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth. The Commission will from time to time publish in the Pennsylvania Bulletin a list of reptile and amphibian species and subspecies, where applicable, that it has determined are native species.
+ Organized reptile and amphibian hunt —A hunt for reptiles or amphibians involving two or more persons acting in concert to seek, pursue, catch, take, kill or remove native species of reptiles or amphibians at an event where the reptiles or amphibians are hunted on a competitive basis. When one or more of the following factors are present, an event will be considered an organized reptile and amphibian hunt as the term is used in this chapter:
+ (i) The event is sponsored or promoted by a person or organization.
+ (ii) The event involves the award of trophies, prizes or other recognition to persons or groups for catching reptiles or amphibians.
+ (iii) The sponsors of the events or others publicize the event to encourage attendance of spectators.
+ (iv) The sponsors or organizers of the event have their own rules for the conduct of the hunt.
+ Sacking contest —A competition where participants place reptiles or amphibians in a sack, bag or similar container in a timed event.
+ Snake hooks or tongs —Implements used to grasp or lift snakes with minimal risk of injury to the animal.
+ Subcaudal scale —Large flat scales that are located on the rear ventral portion (underside) of a timber rattlesnake between the vent (anal scale) and the base of the rattle.
+ Turtle hooks —Hooks used for taking turtles that are at least 3 1/2 inches in total length with at least a 1 inch space between the point and the shank. 
+ Authority 
+ The provisions of this § 79.1 issued under the Fish and Boat Code, 30 Pa.C.S. § 2102. 
+ Cross References 
+ This section cited in 58 Pa. Code § 79.2 (relating to taking reptiles or amphibians).
+ § 79.2. Taking reptiles or amphibians. 
+ (a) General .
+ (1) Except as otherwise provided in this section, reptiles and amphibians may only be taken by hand, hook and line, snake hooks or tongs, turtle hooks, traps and nets less than 4 feet square or 4 feet in diameter.
+ (2) It is unlawful to take, catch or kill a reptile or amphibian through use of a firearm.
+ (3) It is unlawful to take, catch or kill a reptile or amphibian through the use of chemicals, smoke, explosives, winches, jacks or other devices or materials or manually in a manner that may disrupt, damage or destroy dens or the immediate surroundings thereof. While hunting reptiles and amphibians, it is unlawful to possess chemicals, explosives, winches, jacks or other devices or materials that may disrupt, damage or destroy dens and their immediate surroundings. It is unlawful to alter or destroy habitat in the pursuit of a reptile or amphibian.
+ (4) It is unlawful to damage or disrupt the nest or eggs of a reptile or to gather, take or possess the eggs of any reptile.
+ (b) Turtles. 
+ (1) It is unlawful to take, catch or kill a turtle by means of a hook other than a turtle hook as defined in § 79.1 (relating to definitions).
+ (2) It is unlawful for a person to leave a set line, turtle trap or other device for catching turtles unattended unless the device has attached a tag or other means of identification containing the name, address and telephone number of the owner or user of the device. Traps, nets or devices used for catching turtles must be of a floating or partially submerged design so as to allow for the release of untargeted turtles unharmed.
+ (c) Frogs. 
+ (1) Frogs may be taken with long bows and arrow, including compound bows, crossbows, spears or gigs. Spears or gigs may not be mechanically propelled, may not have more than five barbed points and may not be used in stocked trout waters.
+ (2) It is unlawful to take, catch or kill a frog by use of artificial light at night. 
+ Authority 
+ The provisions of this § 79.2 issued and amended under the Fish and Boat Code, 30 Pa.C.S. § 2102. 
+ Source 
+ The provisions of this § 79.2 amended September 25, 2015, effective January 1, 2016, 45 Pa.B. 5788. Immediately preceding text appears at serial pages (325060) and (348989).
+ § 79.3. Season and daily possession limits. 
+ (a) Except as otherwise provided in subsections (b)—(e), it is unlawful for a person to take, catch or kill more than the daily limit specified in subsection (h) in 1 calendar day or to have in possession more than the possession limit, dead or alive, in whole or in parts, specified in subsection (g) or to hunt, take, catch or kill reptiles or amphibians during the closed season. A reptile or amphibian will not be considered to be in the possession of a person if, after it is taken or caught, it is immediately released unharmed to the exact location from which it was taken and is not confined to a sack, bag or other container.
+ (b) This section does not prohibit the sponsors of an organized reptile/amphibian hunt conducted under a permit issued under § 79.7 (relating to organized reptile and amphibian hunt permits) from possessing more than the daily limit of the species of reptiles or amphibians hunted if the total number of reptiles and amphibians held in possession during each hunt does not exceed the daily limit for the species hunted times the number of registered participants in the organized hunt. This subsection applies to possession limits only. It does not permit the sponsors of a hunt or individual hunters to take, catch or kill any number of reptiles and amphibians in excess of the daily limits.
+ (c) This section does not prohibit possession of numbers of reptiles and amphibians in excess of possession limits by zoos and other accredited institutions for scientific, educational or research purposes or licensed taxidermists for the purpose of mounting for properly permitted customers, Commission-recognized rehabilitators or licensed pest control agents with the written permission of the Executive Director or a designee. These persons and institutions shall maintain a current open inventory of and report annually changes in the number of reptiles and amphibians possessed. The Executive Director may limit the number of reptiles and amphibians that a person or institution may possess when the Executive Director or a designee issues permission under this subsection.
+ (d) This section does not prohibit possession of numbers of reptiles and amphibians in excess of possession limits by persons who have obtained a permit under § 79.4 (relating to possession permits for native species).
+ (e) This section does not prohibit possession of numbers of reptiles and amphibians artificially propagated in accordance with this chapter in excess of the possession limits by artificial propagators and dealers of live reptiles and amphibians registered with the Department of Agriculture in accordance with 3 Pa.C.S. Chapter 42 (relating to aquaculture development).
+ (f) In prosecutions for violations of the possession limits, when venomous reptiles have been killed in apparent violation of the limits, it shall be a defense that the person who killed the venomous reptiles acted under a reasonable apprehension of immediate death or bodily harm to himself or other persons in his immediate vicinity, if no more venomous reptiles are killed than necessary to protect life and limb and if the person reported the kills in writing to the Natural Diversity Section Chief, Division of Environmental Services, 595 East Rolling Ridge Drive, Bellefonte, Pennsylvania 16823, within 5 business days after the kill. It is unlawful for a person to possess a venomous reptile, in whole or in parts, that was killed under this subsection.
+ (g) When season or annual limits apply, a season or annual limit has been reached once a reptile or amphibian, dead or alive, in whole or in parts, has not been immediately released to the exact location from which taken and is in the possession of a person.
+ (h) The following seasons, sizes, catch and possession limits apply to reptiles and amphibians except endangered and threatened species: 
+ SPECIES SEASON DAILY LIMIT POSSESSION LIMIT 
+ American Bullfrog ( Lithobates catesbeianus ) July 1 to October 31 10 (combined species) 20 (combined species) 
+ Green frog ( Lithobates clamitans ) July 1 to October 31 10 (combined species) 20 (combined species) 
+ Common snapping turtle ( Chelydra serpentina ) July 1 to October 31 15 30 
+ Blanding’s turtle ( Emydoidea blandingii ) No open season 0 0 
+ Spotted turtle ( Clemmys guttata ) No open season 0 0 
+ Wood turtle ( Glyptemys insculpta ) No open season 0 0 
+ Woodland box turtle ( Terrapene carolina carolina ) No open season 0 0 
+ Broad-headed skink ( Plestiodon laticeps ) No open season 0 0 
+ Northern coal skink ( Plestiodon anthracinus anthracinus ) No open season 0 0 
+ Common Mudpuppy ( Necturus maculosus maculosus ) No open season 0 0 
+ Eastern hellbender ( Cryptobranchus alleganiensis alleganiensis ) No open season 0 0 
+ Marbled salamander ( Ambystoma opacum ) No open season 0 0 
+ Jefferson salamander ( Ambystoma jeffersonianum ) No open season 0 0 
+ Four-toed salamander ( Hemidactylium scutatum ) No open season 0 0 
+ Northern ravine salamander ( Plethodon lectromorphus ) No open season 0 0 
+ Northern cricket frog ( Acris crepitans crepitans ) No open season 0 0 
+ Mountain chorus frog ( Pseudacris brachyphona ) No open season 0 0 
+ Upland chorus frog ( Pseudacris feriarum ) No open season 0 0 
+ Western chorus frog ( Pseudacris triseriata ) No open season 0 0 
+ Northern fence lizard ( Sceloporus undulatus ) No open season 0 0 
+ Queensnake ( Regina septemvittata ) No open season 0 0 
+ Short-headed Gartersnake ( Thamnophis rachystoma ) No open season 0 0 
+ Eastern Ribbonsnake ( Thamnophis saurita ) No open season 0 0 
+ Mountain Earthsnake ( Virginia valeriae pulchra ) No open season 0 0 
+ Eastern Smooth Earthsnake ( Virginia valeriae valeriae ) No open season 0 0 
+ Smooth Greensnake ( Opheodrys vernalis ) No open season 0 0 
+ Eastern Hog-nosed Snake ( Heterodon platirhinos ) No open season 0 0 
+ Eastern wormsnake ( Carphophis amoenus amoenus ) No open season 0 0 
+ Amphibian eggs and tadpoles No closed season 15 (combined species) 15 (combined species) 
+ Timber rattlesnake ( Crotalus horridus ) Second Saturday in June to July 31* 1 annual limit** (must be at least 42 inches in length, measured lengthwise along the dorsal surface from the snout to the tail, excluding the rattle and must possess 21 or more subcaudal scales.) 
+ Eastern Copperhead ( Agkistrodon contortrix ) Second Saturday in June to July 31 1 annual limit** 
+ Native species not listed in this subsection No closed season 1 1
+ * It is unlawful for a person to hunt, take, catch or kill timber rattlesnakes west of Route 15 and south of Interstate 81 to the Maryland line where there is no open season.
+ ** It is unlawful for a person to take, catch or kill more than one timber rattlesnake or copperhead per calendar year except as provided in § 79.7(f) (relating to organized reptile and amphibian hunt permits). It is unlawful for a person to possess more than one timber rattlesnake or copperhead at any time except as provided in § 79.7(f). 
+ Authority 
+ The provisions of this § 79.3 issued under the Fish and Boat Code, 30 Pa.C.S. § 2102; amended under section 506 of The Administrative Code of 1929 (71 P.S. § 186); and the Fish and Boat Code, 30 Pa.C.S. 
+ Source 
+ The provisions of this § 79.3 amended March 19, 2010, effective March 20, 2010, 40 Pa.B. 1500; amended March 23, 2018, effective March 24, 2018, 48 Pa.B. 1672; amended September 20, 2019, effective September 21, 2019, 49 Pa.B. 5450. Immediately preceding text appears at serial pages (390805) to (390808). 
+ Cross References 
+ This section cited in 58 Pa. Code § 79.7 (relating to organized reptile and amphibian hunt permits); and 58 Pa. Code § 79.12 (relating to color morphs of native species).
+ § 79.4. Possession permits for native species. 
+ (a) Application. The Commission finds, under section 2904 of the code (relating to permits for the protection and management of particular fish), that it is necessary for persons who possess a live reptile or amphibian as of January 1, 2007, in compliance with the possession limits in effect on December 31, 2006, but not in compliance with the possession limits in effect on January 1, 2007, to have a permit for the continued possession of the reptile or amphibian for the remainder of the animal’s life. Application for a one-time permit under this section must be made on a form prescribed by the Commission, must be accompanied by the appropriate fee and must be made by no later than June 30, 2007. Permits may be obtained by applying to: Bureau of Law Enforcement, 1601 Elmerton Avenue, Post Office Box 67000, Harrisburg, Pennsylvania 17106-7000. The fee is $10.
+ (b) Transfer. If a permittee gives a reptile or amphibian covered by a permit under this section to another person, the permit may be transferred to the new owner upon completion of an application on the form provided by the Commission, surrender of the original permit and payment of the appropriate fee. The new owner shall apply for transfer of the permit prior to taking possession of the animal. The fee to transfer a permit under this section is $10.
+ (c) Denial. The denial of a permit under this section is appealable in the manner provided by § § 51.41—51.46 (relating to permit procedures). A person who is denied a permit under this section shall surrender the reptile or amphibian to an officer authorized to enforce the code or provide proof that the animal was humanely euthanized or given to a person or organization that can lawfully possess it. Under no circumstances may a person who is denied a permit under this section release the animal into the wild.
+ (d) Required permit. It is unlawful to retain possession of a live reptile or amphibian possessed as of January 1, 2007, that is in compliance with the possession limits in effect on December 31, 2006, but not in compliance with the possession limits in effect on January 1, 2007, without the required permit from the Commission. A permit is required for continued possession regardless of the animal’s origin. A separate permit shall be obtained for each reptile or amphibian and shall be kept at the location where the animal is held. Upon request, the permit shall be presented to an officer authorized to enforce the code. Permittees shall comply with the terms and conditions of the permit. It is unlawful to alter, borrow or lend a permit under this section.
+ (e) Exceptions. This section does not apply to the possession of reptiles and amphibians that are covered by permissions and other permits issued under this subpart. 
+ Authority 
+ The provisions of this § 79.4 issued under the Fish and Boat Code, 30 Pa.C.S. § § 2102 and 2904. 
+ Cross References 
+ This section cited in 58 Pa. Code § 79.3 (relating to season and daily possession limits).
+ § 79.5. Snapping turtle permits. 
+ (a) The Commission finds, under section 2904 of the code (relating to permits for protection and management of particular fish), that it is necessary for the proper protection and management of the common snapping turtle ( Chelydra serpentina ) that persons who hunt, take, catch or kill this species for the purpose of sale, barter or trade have an annual permit for the activity. Application for a permit must be made on a form prescribed by the Commission and must be accompanied by the appropriate fee. Permits may be obtained by applying to the Natural Diversity Section Chief, Division of Environmental Services, 595 East Rolling Ridge Drive, Bellefonte, Pennsylvania 16823. The fee for residents is $60 per year; the fee for nonresidents is $120 per year. The denial of a permit under this section is appealable in the manner provided by Chapter 51, Subchapter E (relating to permit procedures).
+ (b) It is unlawful to hunt, take, catch, kill or possess the common snapping turtle for purposes of sale, barter or trade without first procuring the required permit. The required permit shall be in possession of the permittee at all times while hunting. Permittees shall comply with the terms and conditions of the permit and furnish the reports required thereby. It is unlawful to alter, borrow, lend or transfer a permit under this section.
+ (c) It is unlawful to sell, barter, trade or offer for sale a common snapping turtle, dead or alive, in whole or in parts, taken from lands or waters of this Commonwealth without first procuring the permit required under this section. 
+ Authority 
+ The provisions of this § 79.5 issued under the Fish and Boat Code, 30 Pa.C.S. § § 2102 and 2904; amended under section 506 of The Administrative Code of 1929 (71 P.S. § 186); and the Fish and Boat Code, 30 Pa.C.S. § 2904. 
+ Source 
+ The provisions of this § 79.5 amended March 23, 2018, effective March 24, 2018, 48 Pa.B. 1672; amended December 14, 2018, effective January 1, 2019, 48 Pa.B. 7640. Immediately preceding text appears at serial page (390810). 
+ § 79.6. Venomous snake permits. 
+ (a) Application . The Commission finds, under section 2904 of the code (relating to permits for protection and management of particular fish), that it is necessary for the proper protection and management of the timber rattlesnake ( Crotalus horridus ) and Eastern copperhead ( Agkistrodon contortrix ) that persons who hunt, take, catch or kill these species have a permit for the activity. Application for a permit must be made on a form prescribed by the Commission and accompanied by the appropriate fee. Permits may be obtained by applying to: Natural Diversity Section Chief, Division of Environmental Services, 450 Robinson Lane, Bellefonte, Pennsylvania 16823-9616. The fee for residents is $30 per year; the fee for nonresidents is $60 per year. The denial of a permit under this section is appealable in the manner provided by Chapter 51, Subchapter E (relating to permit procedures).
+ (b) Required permit . It is unlawful to hunt, take, catch, kill or possess a timber rattlesnake or Eastern copperhead, in whole or in parts, without first procuring the required permit from the Commission. The required permit shall be in the possession of the permittee at all times while hunting. Permittees shall comply with the terms and conditions of the permit and furnish the reports required thereby. It is unlawful to alter, borrow, lend or transfer a permit under this section.
+ (c) Reporting. Within 10 business days following the capture or kill, or if no snake is captured or killed, within 10 days of the conclusion of the season, the permittee shall complete a report on the form prescribed by the Commission and shall mail the report to the Commission’s Natural Diversity Section, 595 East Rolling Ridge Drive, Bellefonte, Pennsylvania 16823.
+ (d) Tagging of timber rattlesnakes. 
+ (1) A person who takes, catches, kills or possesses a timber rattlesnake shall immediately complete the possession tag that is attached to his permit and detach the tag from the permit in the field. The possession tag shall be completed in accordance with the instructions printed on the tag, and the information to be provided includes, but is not limited to, the municipality and county where the snake was captured or killed, the date of capture or kill and a description of the snake, including color phase, sex, number of subcaudal scales and length in inches. The possession tag shall be kept in a safe location so that it can be presented along with the timber rattlesnake to which it pertains upon the request of an officer authorized to enforce the code.
+ (2) After the possession tag is detached from the permit, it is unlawful to take, catch, kill or possess another timber rattlesnake except as otherwise provided in this chapter.
+ (3) It is unlawful to alter, borrow, lend or transfer possession tags under this section.
+ (4) When presenting a timber rattlesnake to a taxidermist for mounting, the tag must remain with the rattlesnake while in the possession of the taxidermist.
+ (e) Field dressing of timber rattlesnakes. A permittee may field dress a timber rattlesnake so long as the head and tail remain intact.
+ (f) Measurement of timber rattlesnakes. Upon the request of an officer authorized to enforce the code, a permittee shall measure a timber rattlesnake to determine its length. If the permittee is unable to measure the timber rattlesnake, the officer may seize the snake so that a measurement may be taken at another location. 
+ Authority 
+ The provisions of this § 79.6 issued under the Fish and Boat Code, 30 Pa.C.S. § § 2102 and 2904; amended under section 506 of The Administrative Code of 1929 (71 P. S. § 186); and the Fish and Boat Code, 30 Pa.C.S. 
+ Source 
+ The provisions of this § 79.6 amended March 19, 2010, effective March 20, 2010, 40 Pa.B. 1500; amended March 23, 2018, effective March 24, 2018, 48 Pa.B. 1672; amended December 14, 2018, effective January 1, 2019, 48 Pa.B. 7640; amended September 20, 2019, effective September 21, 2019, 49 Pa.B. 5450. Immediately preceding text appears at serial pages (395086) to (395088). 
+ Cross References 
+ This section cited in 58 Pa. Code § 79.7 (relating to organized reptile and amphibian hunt permits).
+ § 79.7. Organized reptile and amphibian hunt permits. 
+ (a) Application. The Commission finds, under section 2904 of the code (relating to permits for protection and management of particular fish), that it is necessary for the proper protection and management of reptiles and amphibians in this Commonwealth that organized reptile and amphibian hunts be conducted under permits issued under this section. The sponsor of an organized reptile and amphibian hunt shall apply for a permit by no earlier than January 1 and no later than March 1 of the year for which the hunt is proposed. Application for a permit must be made on a form prescribed by the Commission and must be accompanied by the appropriate fee. Permits may be obtained by applying to the Natural Diversity Section Chief, Division of Environmental Services, 595 East Rolling Ridge Drive, Bellefonte, Pennsylvania 16823. The fee for the permit is $120. The denial of a permit under this section is appealable in a manner provided by Chapter 51, Subchapter E (relating to permit procedures).
+ (b) Permit issuance. 
+ (1) The Executive Director will issue permits to applicants who demonstrate that they are responsible and qualified to conduct an organized reptile and amphibian hunt. In determining the qualifications of an applicant, the Executive Director, or a designee, may consider factors as deemed appropriate, including, but not limited to, the experience of the applicant in conducting the events, the responsiveness of the applicant to reporting requirements, the safety record of the applicant, the ability of the applicant to conduct educational programs, the context of the event and competing applications.
+ (2) The Executive Director may limit the number of organized reptile and amphibian hunt permits to be issued for a particular vicinity and time proximity. In general, permits will be issued to qualified applicants no earlier than March 15 of the year in which the application is submitted. If the Commission is aware of events scheduled in the vicinity of one another within 4 weeks, and the Executive Director determines that all events cannot be permitted consistent with resource management and protection, the Executive Director may designate the applicants as competing applications. If competing applications are designated, the Executive Director may, if the parties cannot agree on the withdrawal of one or more applications, award a permit on a random basis, an alternate year basis or some other rational basis as the interests of fairness may dictate.
+ (c) Required permit. It is unlawful to engage in organized reptile and amphibian hunts unless the sponsors of the hunts have first procured the required permit for each hunt. The required permits shall be held in possession of the sponsor at all times during each hunt. Permittees shall comply with the terms and conditions of each permit and furnish reports required thereby.
+ (d) Reporting. At the location of the hunt, the permittee shall complete a report on the form prescribed by the Commission that will include, at a minimum, the location of the hunt; the names of the registered participants; the species name of the reptile or amphibian that was captured or killed; a description of the reptile or amphibian that was captured or killed; the date and time the reptile or amphibian was brought to the hunt and the permit number of the person who captured or killed the reptile or amphibian. The permittee shall complete the form as registered participants deliver their reptiles or amphibians for entry into the competition. This form shall be presented upon the request of an officer authorized to enforce the code. Within 10 days following the conclusion of the event, the permittee shall submit the form to the Commission.
+ (e) Season. It is unlawful to conduct an organized reptile or amphibian hunt for any species of reptile or amphibian except during the open season for the reptile or amphibian as specified in § 79.3 (relating to season and daily possession limits).
+ (f) Provisional timber rattlesnake permits. 
+ (1) Conditions. A permitted sponsor of an organized hunt may issue provisional permits on the form prescribed by the Commission subject to the following conditions:
+ (i) A provisional permit allows the holder thereof to take, catch or possess one timber rattlesnake without tagging the snake as required by § 79.6(d) (relating to venomous snake permits).
+ (ii) Provisional permits will be issued only in connection with an organized hunt and will be valid only during the period of the organized hunt as stated in the permit.
+ (iii) Provisional permits will only be issued to holders of permits under § 79.6 who are registered participants in the organized hunt.
+ (iv) A snake caught under a provisional permit shall be entered into the hunt and shall become the possession of the permitted sponsor of the organized hunt until the permitted sponsor returns the snake to the holder of the provisional permit.
+ (v) The holder of a provisional permit shall be responsible for returning a snake caught under a provisional permit unharmed to the site from which it was taken by sunset of the last day of the organized hunt.
+ (vi) Provisional permits in no way allow the holders thereof to possess a snake beyond the period of the organized hunt. The holder of a provisional permit who wishes to retain possession of a snake caught under a provisional permit shall tag the snake in accordance with § 79.6(d). 
+ (2) Prohibited acts. The following acts are unlawful:
+ (i) A permitted sponsor of an organized hunt issues a provisional permit in violation of this subsection.
+ (ii) The holder of a provisional permit violates the terms and conditions of the provisional permit.
+ (iii) The holder of the provisional permit possesses a snake beyond the period of the organized hunt.
+ (iv) The holder of a provisional permit releases the snake to a site other than the site from which it was taken.
+ (g) Sacking contests. Sacking contests of native species regardless of origin are prohibited. It is unlawful to import timber rattlesnakes or any subspecies, hybrid or variety of Crotalus horridus , into this Commonwealth for use in connection with a sacking contest.
+ (h) Treatment of reptiles and amphibians. Reptiles and amphibians held in connection with an organized hunt may not be confined without water or shade or otherwise physically abused or handled roughly. Free-handling of native, venomous reptiles in an organized hunt is prohibited. At the conclusion of the organized hunt, the sponsor shall return the snakes to the registered participants who entered the snakes in the event. 
+ Authority 
+ The provisions of this § 79.7 issued under the Fish and Boat Code, 30 Pa.C.S. § § 2102 and 2904; amended under section 506 of The Administrative Code of 1929 (71 P.S. § 186); and the Fish and Boat Code, 30 Pa.C.S. § 2904. 
+ Source 
+ The provisions of this § 79.7 amended March 23, 2018, effective March 24, 2018, 48 Pa.B. 1672; amended December 14, 2018, effective January 1, 2019, 48 Pa.B. 7640. Immediately preceding text appears at serial pages (390812) to (390814). 
+ Cross References 
+ This section cited in 58 Pa. Code § 79.3 (relating to season and daily possession limits).
+ § 79.8. Artificial propagation and dealers of live reptiles and amphibians. 
+ (a) General. Except for hobby breeders and pet stores as defined in 3 Pa.C.S. Chapter 42 (relating to Aquaculture Development Law), it is unlawful to artificially propagate or deal in live reptiles and amphibians without being registered with the Department of Agriculture (Department) under 3 Pa.C.S. Chapter 42. It is unlawful for anyone, regardless of whether or not registered, to artificially propagate reptiles and amphibians except those species, subspecies and color morphs that the Commission has approved for artificial propagation in this Commonwealth in accordance with this section.
+ (b) Approved lists. The Bureau of Fisheries will maintain lists of species, subspecies and color morphs for which the Department may issue registrations for artificial propagation and registrations for dealers of live reptiles and amphibians. The Bureau of Fisheries will maintain two separate lists—one that the Commission has approved for artificial propagation in an open system and one that the Commission has approved for artificial propagation in a closed system. The Director of the Bureau of Fisheries may update or modify the lists of approved species, subspecies and color morphs by adding species, subspecies or color morphs to or deleting species, subspecies or color morphs from the lists as necessary for the protection and management of reptiles and amphibians in this Commonwealth. The Commission will provide the lists to the Department on or before January 31 each year and whenever the Commission updates or modifies the lists. Copies of the lists of approved species, subspecies and color morphs are available upon request from the Pennsylvania Fish and Boat Commission, Bureau of Fisheries, 595 East Rolling Ridge Drive, Bellefonte, Pennsylvania 16823.
+ (c) Open systems. Reptiles and amphibians may be artificially propagated or held by dealers in an open system only when the Commission has approved the species, subspecies or color morphs for artificial propagation in an open system.
+ (d) Closed systems. 
+ (1) Reptiles and amphibians may be artificially propagated or held by dealers in a closed system that meets the requirements of this subsection only when the Commission has approved the species, subspecies or color morphs for artificial propagation in a closed system.
+ (2) To artificially propagate or deal in live reptiles and amphibians in a closed system, an applicant for registration shall certify that the following conditions are met:
+ (i) The closed system will be constructed and operated in a manner that prevents the escape or liberation of live animals. Typically, a closed system will be housed indoors in a structure enclosed by solid walls, floor and roof. For purposes of this paragraph, a wall, floor or roof will be considered ‘‘solid’’ if it is constructed and maintained to prevent unauthorized human or animal intrusions into the closed system facility and to prevent release or escape of live reptiles or amphibians from the closed system. Other types of housing structures will be considered closed if they are appropriate for the species being held and prevent their escape or liberation onto the lands or into the waters of this Commonwealth.
+ (ii) If water will be used in the propagator’s or dealer’s normal operations, discharge or disposal of the water will be in a manner that prevents the escape or liberation of live animals onto the lands or into the waters of this Commonwealth.
+ (iii) No live reptiles or amphibians or live reptile or amphibian eggs will be permitted to escape. Accidental escape, spillage or loss of live reptiles or amphibians including their eggs will be contained within the facility in a manner that prevents the reptiles and amphibians or their eggs from escaping onto the lands or into the waters of this Commonwealth.
+ (3) The Commission may request from the Department a list of registered propagators and dealers that hold reptiles and amphibians in closed systems. The Commission, in its discretion, may inspect the closed systems to ensure that they are designed and constructed in a manner to prevent escape of live reptiles or amphibians or their live eggs onto lands or into the waters of this Commonwealth. In addition, the Commission, in its discretion, may inspect the closed systems at any time to ensure compliance with this subsection, and the Commission may issue an order to suspend operations of any of these systems when an inspection discloses that it is not in compliance with this subsection. 
+ (4) The Commission will invite the Department’s Aquaculture Advisory Committee or a subcommittee thereof to draft and periodically update construction guidelines for closed system propagators and dealers to help them ensure closed systems prevent escape of reptiles and amphibians onto the lands or into the waters of this Commonwealth. These guidelines will assist registered propagators and dealers in the design, construction and maintenance of closed systems and will assist the Commission in inspecting these systems.
+ (5) It is unlawful for an operator of a closed system to liberate or allow live reptiles or amphibians to escape onto lands or into the waters of this Commonwealth.
+ (6) A registered operator of a closed system shall develop, maintain and make available for immediate inspection by the Commission and the Department upon request a written plan for containing or recovering escaped or liberated live reptiles and amphibians in the event of a closed system failure.
+ (7) A registered operator of a closed system shall notify both the Commission’s Director of the Bureau of Fisheries and the Department’s Aquaculture Coordinator immediately in the event of an escape or liberation of live reptiles and amphibians. 
+ Authority 
+ The provisions of this § 79.8 issued under the Fish and Boat Code, 30 Pa.C.S. § 2102; amended under section 506 of The Administrative Code of 1929 (71 P.S. § 186). 
+ Source 
+ The provisions of this § 79.8 amended March 23, 2018, effective March 24, 2018, 48 Pa.B. 1672. Immediately preceding text appears at serial pages (325070) to (325072). 
+ Cross References 
+ This section cited in 58 Pa. Code § 79.12 (relting to color morphs of native species).
+ § 79.9. Sale of native species. 
+ Except as otherwise provided in the code or this chapter, it is unlawful to take, catch, kill or possess for purposes of selling or offering for sale or to sell, offer for sale, import or export for consideration, trade or barter, or purchase an amphibian or reptile that was taken from lands or waters wholly within this Commonwealth, and its progeny, whether dead or alive, in whole or in parts, including eggs or any life stage. 
+ Authority 
+ The provisions of this § 79.9 issued under the Fish and Boat Code, 30 Pa.C.S. § 2102. 
+ Cross References 
+ This section cited in 58 Pa. Code § 79.10 (relating to transportation and importation of native species).
+ § 79.10. Transportation and importation of native species. 
+ (a) It is unlawful to transport or import into or within this Commonwealth a native species from another jurisdiction.
+ (b) It is unlawful to receive a native species that was transported or imported into or within this Commonwealth from another jurisdiction.
+ (c) This section does not apply to zoos or other accredited institutions that transport and import native species for scientific, educational or research purposes and Commission-recognized rehabilitators provided that they have received the written permission of the Executive Director or a designee under § 79.3(c) (relating to season and daily possession limits). 
+ Authority 
+ The provisions of this § 79.10 issued under the Fish and Boat Code, 30 Pa.C.S. § 2102.
+ § 79.11. Introduction. 
+ (a) Nonnative species. It is unlawful to introduce a nonnative species into the natural environment of this Commonwealth. Persons who import nonnative reptiles or amphibians into this Commonwealth shall institute appropriate safeguards to prevent their introduction into the natural environment of this Commonwealth.
+ (b) Native species. 
+ (1) General rule . It is unlawful to reintroduce a native species taken from the wild into the natural environment of this Commonwealth except when the following conditions are met:
+ (i) The reptile or amphibian is released to the point of capture.
+ (ii) The reptile or amphibian is released within 30 days of capture.
+ (iii) The reptile or amphibian is released during the period, May 1 through September 31.
+ (iv) The reptile or amphibian is in good health.
+ (v) The reptile or amphibian has not been in physical contact with another reptile or amphibian while in captivity.
+ (2) Artificially propagated animals. It is unlawful to introduce or facilitate the introduction of a native species that has been artificially propagated except when the following conditions are met:
+ (i) The Commission has approved the native species for artificial propagation in an open system in accordance with § 79.8 (relating to artificial propagation and dealers of live reptiles and amphibians).
+ (ii) The native species has been propagated by a propagator registered by the Department of Agriculture in accordance with 3 Pa.C.S. Chapter 42 (relating to aquaculture development). 
+ Authority 
+ The provisions of this § 79.11 issued under the Fish and Boat Code, 30 Pa.C.S. § 2102.
+ § 79.12. Color morphs of native species. 
+ (a) For purposes of this chapter, it is presumed that color morphs of certain native species that are held in captivity were not taken from the wild. Therefore, the Commission has determined that color morphs of certain native species are exempt from the requirements of this chapter as provided in this section. The Commission will publish in the Pennsylvania Bulletin a list of color morphs of native species to which the following provisions apply:
+ (1) Color morphs of native species designated by the Commission are not subject to the possession limits of § 79.3 (relating to season and daily possession limits) provided they are not taken from the wild.
+ (2) Color morphs of native species designated by the Commission may be artificially propagated provided they are not taken from the wild and they are propagated in a closed system meeting the requirements of § 79.8 (relating to artificial propagation and dealers of live reptiles and amphibians).
+ (3) Color morphs of native species designated by the Commission may be sold by artificial propagators and dealers registered in accordance with 3 Pa.C.S. Chapter 42 (relating to Aquaculture Development Law) provided they are not taken from the wild.
+ (b) The Commission recognizes that the captive breeding of color morphs approved for propagation by the Commission in this section may result in animals that have a normal color appearance (typical phenotype). The typical phenotype progeny of these color morphs may be sold provided that the following conditions are met:
+ (1) They are sold by an artificial propagator or dealer registered in accordance with 3 Pa.C.S. Chapter 42.
+ (2) They were propagated in a closed system meeting the requirements of § 79.8 by a registered propagator.
+ (3) The artificial propagator or dealer that intends to sell them shall file an initial inventory on the form prescribed by the Commission that contains the numbers in possession as of December 31, 2006, and other information that the Commission requires. The artificial propagator or dealer shall submit the inventory to the Commission’s Natural Diversity Section Chief, Division of Environmental Services, 450 Robinson Lane, Bellefonte, Pennsylvania 16823 by no later than January 31, 2007.
+ (4) The artificial propagator or dealer selling them shall maintain a current inventory on a form prescribed by the Commission, showing their origin, numbers and other information that the Commission requires. Artificial propagators or dealers shall maintain the inventory at their place of business and shall have the inventory in their possession when selling them. The inventory shall be presented upon the request of an officer authorized to enforce the code.
+ (5) The artificial propagator or dealer selling them shall submit an annual report on the form prescribed by the Commission that includes changes in the numbers possessed (for example, gains and losses to the inventory) and other information that the Commission requires. The artificial propagator or dealer shall submit the report to the Commission’s Natural Diversity Section Chief, Division of Environmental Services, 595 East Rolling Ridge Drive, Bellefonte, Pennsylvania 16823 by no later than January 31 of the following year. 
+ Authority 
+ The provisions of this § 79.12 issued under the Fish and Boat Code, 30 Pa.C.S. § 2102; amended under section 506 of The Administrative Code of 1929 (71 P.S. § 186). 
+ Source 
+ The provisions of this § 79.12 amended March 23, 2018, effective March 24, 2018, 48 Pa.B. 1672. Immediately preceding text appears at serial pages (325073) to (325074).
+ § 79.13. Natural areas. 
+ (a) This chapter applies to all native species occurring naturally within the boundaries of selected Natural Areas of the Department of Conservation and Natural Resources.
+ (b) The taking, catching, killing or possession of individuals of any native species occurring naturally within the boundaries of designated natural areas by persons other than those possessing a valid scientific collector’s permit is prohibited.
+ (c) Notice of this section will be posted at parking lots or access areas on the fringe of each designated natural area.
+ (d) Subsections (a) and (b) apply to natural areas within State Forests posted in accordance with subsection (c). 
+ Authority 
+ The provisions of this § 79.13 issued under the Fish and Boat Code, 30 Pa.C.S. § 2102.
+ No part of the information on this site may be reproduced for profit or sold for profit. 
+This material has been drawn directly from the official Pennsylvania Code full text database. Due to the limitations of HTML or differences in display capabilities of different browsers, this version may differ slightly from the official printed version.
+ Top 
+ Bottom 
+ No part of the information on this site may be reproduced forprofit or sold for profit. Please direct comments or questions to webmaster@PaBulletin.com 
+ Accessibility 
+ Privacy 
+ Disclaimer 
+ Style Manual 
+ Code Publication Schedule 
+ Bulletin Publication Schedule 
+ Accessibility | 
+ Privacy | 
+ Disclaimer | 
+ Style Manual | 
+ Code Publication Schedule | 
+ Bulletin Publication Schedule 
