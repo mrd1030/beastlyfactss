@@ -46,6 +46,14 @@ export default function Footer() {
                 { to: '/encyclopedia/', label: 'Encyclopedia' },
                 { to: '/gear/', label: 'Recommended gear' },
                 { to: '/care-packages/', label: 'Care packages' },
+                // The way back to a bought PDF, from anywhere on the site. It
+                // has to live somewhere a buyer can reach cold, weeks later,
+                // without remembering which package page they came in through,
+                // and the footer is where people already look for an account
+                // link. Deliberately not in the header: it is meaningless to
+                // the overwhelming majority of readers, who have bought
+                // nothing.
+                { to: '/care-packages/library/', label: 'My library' },
                 { to: '/glossary/', label: 'Glossary' },
               ]
             },

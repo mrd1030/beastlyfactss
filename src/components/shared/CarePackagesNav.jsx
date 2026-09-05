@@ -6,6 +6,11 @@ const TABS = [
   { to: '/care-packages/store/', label: 'Store' },
   { to: '/care-packages/why-we-exist/', label: 'Why We Exist' },
   { to: '/care-packages/faq/', label: 'FAQ' },
+  // Last on purpose. A buyer coming back for their file is on one of these
+  // pages already, so this is the shortest path from anywhere in the care
+  // package section, but it is the least useful tab to everyone else and so
+  // it sits at the end rather than competing with Store.
+  { to: '/care-packages/library/', label: 'My Library' },
 ];
 
 export default function CarePackagesNav() {

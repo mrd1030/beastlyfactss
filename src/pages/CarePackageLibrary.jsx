@@ -5,6 +5,7 @@ import { motion } from '@/lib/motion-safe';
 import { Download, Loader2, Mail, LogOut, AlertCircle } from 'lucide-react';
 import { supabase, isSupabaseConfigured } from '@/api/supabaseClient';
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
+import CarePackagesNav from '@/components/shared/CarePackagesNav';
 
 // /care-packages/library/
 //
@@ -210,9 +211,15 @@ export default function CarePackageLibrary() {
       <div className="max-w-2xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
           <h1 className="font-display font-bold text-3xl text-foreground mb-2">Your library</h1>
-          <p className="font-body text-sm text-muted-foreground mb-8">
+          <p className="font-body text-sm text-muted-foreground">
             Every care package you have bought, always at the current edition. Corrections are free re-downloads, so this page is worth more than the file on your desktop.
           </p>
+          {/* The same tab row as every other care package page. A tab that
+              points here while this page alone has no way back to the store
+              would be a dead end for anyone who arrives and owns nothing. */}
+          <div className="mb-8">
+            <CarePackagesNav />
+          </div>
         </motion.div>
 
         {!isSupabaseConfigured && (
