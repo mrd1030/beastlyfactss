@@ -886,13 +886,14 @@ site content rather than the package:
   sentence and still does not carry the point that ich wants the temperature raised and
   columnaris wants it lowered, which is the reason the row was logged.
 
-### Rabbit 2.0, t3 (Sep 2026)
+### Rabbit 2.1, t3 (Sep 2026)
 
 The first mammal package on the t3 template, and the layout needed real surgery: the
 reptile heat, UVB, thermostat and substrate pages have no mammal equivalent, so they were
 replaced with indoors versus outdoors and temperature, flooring and litter training,
 rabbit-proofing, bonding, and spay and neuter. Section 03 went the other way and grew,
-because GI stasis needs three pages on its own. It came out at 39 pages.
+because GI stasis needs three pages on its own. It came out at 39 pages, and 40 once the
+September 2026 cross-check split sources from version history at the back.
 
 For the next mammal build: expect the health section to be the long one rather than the
 husbandry section, and expect a vet-choice page, which reptiles never need. The 38 to 40
@@ -911,18 +912,31 @@ dental mechanism.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Small-mammal temperature, heat stress &amp; cold | 7 | Cross-species (small mammals) | Nothing anywhere. The tank setup guide gives the indoor-versus-outdoor lifespan figures but no temperature ranges, no heatstroke signs, and no cooling method. Serves rabbit, guinea pig, chinchilla, hamster, and every future small mammal |
+| Small-mammal temperature, heat stress &amp; cold | 7, 26, 27 | Cross-species (small mammals) | **CLOSED Sep 4 2026 by `small-mammal-temperature-heat-stress-guide`.** Also closes the same row in the Guinea Pig block. Package rebuilt as 2.1: the comfortable band moved to Merck's 61 to 72&deg;F, the heatstroke line from an unsourced 85&deg;F to VCA's 80&deg;F, drooling was inserted into the sign order, and both the line and the cold guidance now appear on the checklist and the emergency card rather than page 7 alone. Original row follows. Nothing anywhere. The tank setup guide gives the indoor-versus-outdoor lifespan figures but no temperature ranges, no heatstroke signs, and no cooling method. Serves rabbit, guinea pig, chinchilla, hamster, and every future small mammal |
 | Bonding a pair, step by step | 15 | Rabbit | Nothing, and `rabbit-enrichment-guide.mdx` currently promises that the handling guide covers introductions when it does not (see drift below). Side-by-side pens, neutral territory, stress bonding, what is normal negotiation versus a real fight, and the weeks it actually takes |
-| Spay and neuter beyond the price | 16 | Rabbit | `rabbit-cost-guide.mdx` has the cost and the 80% uterine cancer figure. Nothing on timing, what it changes behaviorally, how to choose a clinic, or the point that rabbits must **not** be fasted before surgery, which is also the best question for vetting a practice |
+| Spay and neuter beyond the price | 16 | Rabbit | **PARTLY CLOSED Sep 4 2026 by `small-mammal-vet-visits-and-travel-guide`,** which carries the fasting rule and the post-operative eating deadline. Package rebuilt as 2.1 to Merck's figures: no fast longer than 3 hours, a short 1 to 2 hour fast to clear the mouth, and pain relief reviewed if the rabbit has not eaten within 2 to 3 hours. Timing, what it changes behaviorally and choosing a clinic are **still open**. Original row follows. `rabbit-cost-guide.mdx` has the cost and the 80% uterine cancer figure. Nothing on timing, what it changes behaviorally, how to choose a clinic, or the point that rabbits must **not** be fasted before surgery, which is also the best question for vetting a practice |
 | Rabbit-proofing a room | 6 | Rabbit | Nothing. Cables first because that is the one that kills, then plants, baseboards, carpet corners, and pairing every block with an outlet |
-| Grooming, nails &amp; molting | 24 | Cross-species (small mammals) | Nothing. Molt frequency, why a rabbit cannot cough up a hairball and what that means for GI stasis, nail trim interval and technique, scent glands, and why you never bath a rabbit |
+| Grooming, nails &amp; molting | 24, 31, 36 | Cross-species (small mammals) | **CLOSED Sep 4 2026 by `small-mammal-grooming-nails-molting-guide`.** Also closes the Guinea Pig block's grooming row. Package rebuilt as 2.1: nail and scent gland intervals moved to Lafeber's 6 to 8 weeks from 4 to 8 and "a month or two", the torch technique was corrected to a dark nail rather than a pale one, short-haired brushing moved to Merck's at least twice weekly, the molt pattern became Merck's unpredictable one, and swallowed fur stopped being described as a direct cause of stasis. Original row follows. Nothing. Molt frequency, why a rabbit cannot cough up a hairball and what that means for GI stasis, nail trim interval and technique, scent glands, and why you never bath a rabbit |
 | Reading droppings &amp; cecotropes | 25 | Rabbit | `rabbit-gi-stasis-guide.mdx` explains cecotropes in a FunFact. There is no reference for what the litter box is telling you, which is the earliest signal this species gives and the cheapest daily check in the whole package |
-| Small-mammal power outages &amp; travel | 31, 32 | Cross-species (small mammals) | Nothing, and `reptile-emergency-plan-guide.mdx` does not transfer. Note the advice inverts for a rabbit: keep feeding through an outage, because a rabbit that stops eating is in more danger than a cold one |
+| Small-mammal power outages &amp; travel | 32, 33 | Cross-species (small mammals) | **CLOSED Sep 4 2026 by `small-mammal-temperature-heat-stress-guide` (the outage half) and `small-mammal-vet-visits-and-travel-guide` (the travel half).** Also closes the same row in the Guinea Pig block. Package rebuilt as 2.1: page 32 gained the PDSA cold-outage detail, water-heavy foods, a second water container and the relocate-at-hour-two rule; page 33 gained the RSPCA carrier hide, familiar bedding, water and the direction-of-travel placement. Original row follows. Nothing, and `reptile-emergency-plan-guide.mdx` does not transfer. Note the advice inverts for a rabbit: keep feeding through an outage, because a rabbit that stops eating is in more danger than a cold one |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the temperature table and heatstroke signs on page 7, the bonding stages on page
-15, the spay and neuter timing on page 16, the nail trim interval and scent gland
-schedule on page 24, and the droppings reference table on page 25.
+**Numbers with no site source at all**, updated Sep 4 2026 after the cross-check:
+
+- Temperature table and heatstroke signs, page 7: **now carried** by
+  `small-mammal-temperature-heat-stress-guide`, though not at the package's old figures.
+  The package moved to Merck's 61 to 72&deg;F and VCA's 80&deg;F; the unsourced 85&deg;F is gone.
+- Nail trim interval and scent gland schedule, page 24: **now carried** by
+  `small-mammal-grooming-nails-molting-guide` at Lafeber's 6 to 8 weeks, which is what the
+  package now prints. The old 4 to 8 weeks was the package's own number.
+- Fasting and post-operative eating, page 16: **now carried** by
+  `small-mammal-vet-visits-and-travel-guide`, and re-sourced to Merck in the package.
+- Bathing and spinal injury, page 24: **now sourced**, to the Rabbit Welfare Association
+  and Fund rather than to any site article. Still no site article covers it.
+- Bonding stages, page 15: **still PDF only.** No article.
+- Spay and neuter timing, page 16: **still PDF only.** The fasting half of that row is
+  closed; the timing, the behavioral change and choosing a clinic are not.
+- Droppings and cecotrope reference table, page 25: **still PDF only.** No article.
+- The 70% recovery figure on page 20 is PetMD's and is attributed on the sources page.
 
 **Source drift found while building:**
 
@@ -943,7 +957,27 @@ schedule on page 24, and the droppings reference table on page 25.
   the feeding guide's "1 to 4 cups per several pounds depending on the source" is too
   vague to act on next to the setup guide's 1 cup per 2 lb.
 
-### Hamster 3.0, t3 (Sep 2026)
+**Site work found by the Sep 2026 cross-check, not fixed there.** Three items, all in
+site content rather than the package:
+
+- **The GI stasis threshold is still three numbers across three articles**, exactly as the
+  drift note above recorded when the package was built. `rabbit-feeding-guide.mdx` gives 3
+  to 12 hours, `rabbit-gi-stasis-guide.mdx` gives 8 to 12, and
+  `rabbit-health-issues-guide.mdx` gives 8 or more. Nothing has propagated in the months
+  since. Package 2.1 now prints **8 to 12 hours** on all six of its pages, matching the
+  dedicated guide, so the package is internally consistent and the site is not.
+- **The broken cross-reference is still live.** `rabbit-enrichment-guide.mdx` still says
+  "Our [handling guide](/blog/rabbit-handling-guide/) covers introductions."
+  `rabbit-handling-guide.mdx` still contains nothing about introductions or bonding. Either
+  write the bonding article the table above asks for and point at it, or fix the sentence.
+  This has now survived two cross-checks.
+- **`rabbit-gi-stasis-guide.mdx` ships with no `<Sources>` block**, unlike every article
+  written since. Pages 18, 19, 20 and 25 of the package cite it for the single most
+  important number in rabbit care, and a reader who follows the link cannot trace it any
+  further. `guinea-pig-scurvy-vitamin-c-guide.mdx` has the same problem and is on the
+  Guinea Pig list below.
+
+### Hamster 3.1, t3 (Sep 2026)
 
 The second mammal package, and the one that shows the small-mammal skeleton runs
 narrower than the rabbit's, not wider. It was first built at 42 pages and cut to 36 by
@@ -985,12 +1019,56 @@ hand-edit it** is for. A build script that refuses to build on a duplicate key t
 class of error into a build failure instead of six pages nobody notices until the page
 count comes in eight over. Worth having on any package long enough to be interrupted.
 
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item, in site
+content rather than the package:
+
+- **`small-mammal-grooming-nails-molting-guide.mdx` omits the sand bath for hamsters.**
+  Its bathing table row reads "Hamster, gerbil, rat, degu / Self-grooming, no routine
+  bathing / These species keep their own coats clean without owner intervention." A
+  dust-free, non-clumping sand bath is a genuine species essential for a hamster, it is
+  page 8 of this package and on the never-cut list above, and an owner who reads the
+  article and not the package will conclude a hamster needs nothing. The row needs a
+  hamster carve-out. Nothing in the package changed: the package is the one that is right.
+
 Already covered, do not rewrite: the bedding-depth study is reported with all three of
 its figures on page 7 and is the package's strongest single page.
 
 Known gaps, listed in the notes file: there is no target weight anywhere despite the
 owner log asking for grams, no sexing page despite the guide telling the reader twice to
-check the sex, and nothing on cheek pouches.
+check the sex, and nothing on cheek pouches. The September 2026 cross-check reached none
+of the three.
+
+**What the Sep 2026 cross-check found here.** This block has no gap table, so the check
+ran the other way: every page the four cross-species small mammal articles could touch
+was read against them. Three of the four found something, and the package rebuilt as 3.1
+at 37 pages.
+
+- **The torpor threshold was wrong by about 24&deg;F, and it drove seven pages.** 3.0 gave
+  60 to 65&deg;F, attributed only to "sources". Merck's hamster page gives hibernation at
+  "< 5&deg;C (41&deg;F)" and LafeberVet's information sheet gives torpor "below 41&deg;F (5&deg;C),
+  particularly when exposed to short days", with both adding a thin food supply as a
+  trigger. 65&deg;F is now printed as the point to act, 41&deg;F as the veterinary figure, and
+  short days and food are named. **Closed by `small-mammal-temperature-heat-stress-guide`,
+  though the correct figure came from Merck and LafeberVet rather than from the article,
+  which gives 41&deg;F for hamsters and is right.**
+- **The package had no antibiotic warning at all**, while telling the reader twice to
+  expect antibiotics, for wet tail on page 19 and respiratory infection on page 21.
+  **Closed Sep 4 2026 by `small-mammal-enterotoxemia-guide`**: page 18 now carries the
+  class list, the never-give drugs and Merck's 3 to 5 day window, with pointers from 19
+  and 21. This was the single largest omission found in any of the three mammal packages.
+  The room came from page 18's call-checklist, which duplicated the page 26 card.
+- **VCA's 80&deg;F ceiling** was on page 9 only and is now also on the setup targets and the
+  emergency card. The package keeps its own tighter 65 to 75&deg;F range and says so.
+- **Grooming needed nothing.** The package's position, that a hamster wears its nails down
+  and only needs a check in an older or less active animal, matches
+  `small-mammal-grooming-nails-molting-guide` exactly. It is the cleanest agreement in the
+  whole cross-check.
+- **Carrier size and anesthesia were deliberately left alone**, because the vet-visits
+  article's sourcing on both is rabbit and guinea pig and does not reach a hamster. The
+  reasoning is in the notes file so the next build does not re-open it.
+- **The cover badge still read 42 pages** from the 2.0 build, three editions after the
+  merges took it to 36. Worth adding to the pre-publish checks: the cover page count is
+  the one number no page of the guide itself contradicts, so nothing catches it.
 
 ### Tarantula 2.1, t3 (Sep 2026)
 
@@ -1405,7 +1483,7 @@ is four line items no starter list carries: a gram scale, a travel carrier, a sl
 and a real veterinary line rather than an amortized annual check. The MDX first-year figure
 is the one worth revisiting.
 
-### Guinea Pig 2.0, t3 (Sep 2026)
+### Guinea Pig 2.1, t3 (Sep 2026)
 
 The third mammal package, and a rebuild rather than a new build: 1.0 was 22 pages on the
 pre-t3 layout. It came out at 39 pages, at the rabbit end of the small-mammal range rather
@@ -1416,9 +1494,12 @@ A guinea pig is smaller than a rabbit and needs the same page count, because it 
 longest health section in the series so far at ten pages. Source is fragments plus a build
 script in `source/guinea-pig-src/`, over five page files, and
 `notes/guinea-pig-v3-notes.md` carries the parked blocks, the per-page free space, seven
-undrafted page ideas and a ranked cut list.
+undrafted page ideas and a ranked cut list. 2.1 took it to 41: one page from the reference
+split at the back, and one from the antibiotic page outgrowing itself once the drug classes
+and the safer list went on it. Page numbers below are 2.1's, and they shift by one from page
+28 onward against 2.0's.
 
-Only three pages needed any trimming, which is the Budgie 2.0 head CSS doing its job. Use
+Only three pages needed any trimming in 2.0, which is the Budgie 2.0 head CSS doing its job. Use
 that head as the starting point for the next package in any class.
 
 Already covered, do not rewrite: `guinea-pig-tank-setup-guide.mdx` carries the 7.5 and
@@ -1446,25 +1527,42 @@ are the rabbit's story and consistency and count are the guinea pig's.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Antibiotic-associated enterotoxemia in small mammals | 27, 32 | Cross-species (small mammals) | **Proposed, and the highest-value row in this block by a distance.** Zero hits anywhere in `content/` or `src/`. A guinea pig's gut flora is predominantly Gram-positive, so antibiotics that target Gram-positive organisms wipe it out and let toxin-producing <em>Clostridium</em>, particularly <em>C. difficile</em>, overgrow. Penicillin, ampicillin, streptomycin, clindamycin, lincomycin, spiramycin, chlortetracycline, erythromycin and bacitracin are all implicated. Needs the list, the mechanism, the signs, and the framing that this is a question to ask rather than a prescription to refuse. Serves guinea pig, chinchilla, rabbit, hamster, degu and every future hindgut-fermenting small mammal. **Nothing else logged in this file is as likely to prevent a death caused by an ordinary vet visit** |
+| Antibiotic-associated enterotoxemia in small mammals | 26, 33 | Cross-species (small mammals) | **CLOSED Sep 4 2026 by `small-mammal-enterotoxemia-guide`.** Also closes the Hamster block's equivalent, which had no antibiotic content at all. Package rebuilt as 2.1: page 26 is rewritten by drug class, gains amoxicillin, amoxicillin-clavulanate, cephalosporins and procaine injectables, loses chlortetracycline (which Merck now places in the usable group) and spiramycin (which no current source names), and gains the drugs a vet can usually use instead, the two-toxin mechanism, the higher risk of the oral route and the 1 to 2 day onset. Original row follows. **Proposed, and the highest-value row in this block by a distance.** Zero hits anywhere in `content/` or `src/`. A guinea pig's gut flora is predominantly Gram-positive, so antibiotics that target Gram-positive organisms wipe it out and let toxin-producing <em>Clostridium</em>, particularly <em>C. difficile</em>, overgrow. Penicillin, ampicillin, streptomycin, clindamycin, lincomycin, spiramycin, chlortetracycline, erythromycin and bacitracin are all implicated. Needs the list, the mechanism, the signs, and the framing that this is a question to ask rather than a prescription to refuse. Serves guinea pig, chinchilla, rabbit, hamster, degu and every future hindgut-fermenting small mammal. **Nothing else logged in this file is as likely to prevent a death caused by an ordinary vet visit** |
 | Sexing a guinea pig, and the breeding deadline | 17, 9 | Guinea pig | **Proposed.** Nothing on the site, and mis-sexing at point of sale is common enough that surprise litters are routine. Two things belong in it. Sows can conceive from 4 to 5 weeks, so mixed litters separate at three weeks. And the pubic symphysis ossifies in a sow who has never given birth, so a first litter after about 6 to 9 months means obstructed labor and a caesarean or death, which is the concrete reason an intact boar and a sow must not share a cage. Also the four to six week post-neuter fertility window, which produces litters every year |
-| Heat stress in small mammals, as an emergency page | 7, 35 | Cross-species (small mammals) | **Extends the Rabbit block's row, which asked for temperature ranges and cooling methods and had no figures.** This build found them: comfortable at 65 to 79&deg;F (18 to 26&deg;C) with 30 to 60% humidity, dangerous above 82&deg;F (28&deg;C), and a genuinely comfortable band nearer 64 to 73&deg;F. No sweat glands. The sign order is lying stretched flat with the back feet trailing, then panting, then drooling, then weakness, then convulsions. First aid is cool but not iced water on the fur then straight to a vet, because iced water shuts the surface vessels and slows cooling. The article should carry all of it |
+| Heat stress in small mammals, as an emergency page | 7, 35 | Cross-species (small mammals) | **CLOSED Sep 4 2026 by `small-mammal-temperature-heat-stress-guide`,** and crossed off in the Rabbit block too. Package rebuilt as 2.1: the danger line moves from the RSPCA's most-commonly-seen 82&deg;F to VCA's 80&deg;F ceiling on all five pages, with 75&deg;F and 82&deg;F named alongside; Merck's 65 to 79&deg;F comfortable range is unchanged, because the article's 65 to 80&deg;F is a rounding of the same Celsius. The sign order is rebuilt on the RSPCA and VCA lists and the stretched-out posture is credited to Blue Cross as a too-warm signal rather than the head of the sequence. Original row follows. **Extends the Rabbit block's row, which asked for temperature ranges and cooling methods and had no figures.** This build found them: comfortable at 65 to 79&deg;F (18 to 26&deg;C) with 30 to 60% humidity, dangerous above 82&deg;F (28&deg;C), and a genuinely comfortable band nearer 64 to 73&deg;F. No sweat glands. The sign order is lying stretched flat with the back feet trailing, then panting, then drooling, then weakness, then convulsions. First aid is cool but not iced water on the fur then straight to a vet, because iced water shuts the surface vessels and slows cooling. The article should carry all of it |
 | Bonding two guinea pigs, step by step | 10 | Guinea pig | Nothing, and the Rabbit block's bonding row does not transfer: neutral territory and a full cage strip do most of the work here, there is no rabbit-style stress bonding, and the normal-negotiation list (rumblestrutting, mounting, teeth chattering, chasing) is different enough that borrowing the rabbit version would mislead. Needs the sequence, the separate-now list, the two-of-everything rule, and the honest note that a small number of pairings fail and that is not a reason to keep either animal alone |
 | Reading guinea pig droppings | 28 | Guinea pig | Nothing. The Rabbit block logged its own version and it does not transfer: a rabbit owner is reading cecotropes and a guinea pig owner is reading count, size and dryness as a daily proxy for gut motility and dental function. Needs the size-and-count reference, soft against truly liquid, the normal chalky calcium residue in the urine, and cecotrophy as normal behavior that an obese or long-coated pig may be unable to perform |
-| Ovarian cysts, at article depth | 25 | Guinea pig | Expand `guinea-pig-health-issues-guide.mdx`, not a new URL. It currently says "ovarian cysts, which show up in intact females" and stops. This is the most common reproductive tract disorder in sows, and the single sign that identifies it, **symmetrical flank hair loss with normal skin underneath**, is exactly what distinguishes it from mites and appears nowhere on the site. Needs that, plus the swollen abdomen, crusty nipples and temperament change, and the hormonal, draining and surgical options honestly compared |
-| Bladder stones and urinary disease, at article depth | 24 | Guinea pig | Expand the same article. One clause currently. Needs calcium carbonate as the stone type, the dietary levers (alfalfa in adults, the same high-calcium green every day, low water intake), the sign list with squeaking on urination as the memorable one, that a fully blocked bladder is fatal within a day, and that there is no dietary way to dissolve a formed stone |
+| Ovarian cysts, at article depth | 24 | Guinea pig | **CLOSED Sep 3 2026 by the in-place expansion of `guinea-pig-health-issues-guide.mdx`.** It now carries the symmetrical flank hair loss sign, the mite differential as its own table, the crusty nipples and abdominal swelling, palpation against ultrasound, and ovariohysterectomy as the definitive treatment. Page 24 of the package agrees with it and did not change. Original row follows. Expand `guinea-pig-health-issues-guide.mdx`, not a new URL. It said "ovarian cysts, which show up in intact females" and stopped. This is the most common reproductive tract disorder in sows, and the single sign that identifies it, **symmetrical flank hair loss with normal skin underneath**, is exactly what distinguishes it from mites and appears nowhere on the site. Needs that, plus the swollen abdomen, crusty nipples and temperament change, and the hormonal, draining and surgical options honestly compared |
+| Bladder stones and urinary disease, at article depth | 23 | Guinea pig | **CLOSED Sep 3 2026 by the same expansion.** It now carries calcium carbonate at roughly 90% of stones, the dietary levers, squeaking on urination, the blockage warning, and that no diet dissolves a formed stone. Page 23 of the package agrees with it and did not change. Original row follows. Expand the same article. One clause at the time. Needed calcium carbonate as the stone type, the dietary levers (alfalfa in adults, the same high-calcium green every day, low water intake), the sign list with squeaking on urination as the memorable one, that a fully blocked bladder is fatal within a day, and that there is no dietary way to dissolve a formed stone |
 | Guinea pig vocalizations and body language | 11 | Guinea pig | **Proposed.** `guides/smallMammals.js` lists five sounds in a sentence and the FAQ explains wheeking. This species is the most vocal in the whole catalogue and the sounds are genuinely diagnostic: a high tense purr means the opposite of a low slow one, and rapid teeth chattering is a warning that owners read as cute. Pairs naturally with popcorning and the freeze |
 | The rectal pouch in older boars | 16 | Guinea pig | Nothing. Boars have a rectal pouch behind the anus that becomes impacted with feces in older intact males, causing odor, irritation, infection and secondary urinary infections. It is a weekly owner task for any boar over about two, it is unpleasant enough that nobody warns buyers, and no site article mentions it. Pairs with the grease gland, which the Rabbit grooming row does not cover either |
-| Anesthesia and surgery in guinea pigs | 27 | Cross-species (small mammals) | **Proposed.** Two things that differ from a dog or a cat and that owners are never told: guinea pigs are **not fasted** before anesthesia, because they cannot vomit and a fasted herbivore arrives with a slowing gut; and the cage mate should come to the appointment, because a pig recovering alone eats less and eating is the whole game. Belongs with the antibiotics article above or beside it |
+| Anesthesia and surgery in guinea pigs | 27 | Cross-species (small mammals) | **CLOSED Sep 4 2026 by `small-mammal-vet-visits-and-travel-guide`.** Package rebuilt as 2.1 and the material got its own page, page 27: the not-fasted point gains Merck's 1 to 2 hour figure and its reason, and the cage mate gains the 2 to 3 hour post-operative eating bar. Original row follows. **Proposed.** Two things that differ from a dog or a cat and that owners are never told: guinea pigs are **not fasted** before anesthesia, because they cannot vomit and a fasted herbivore arrives with a slowing gut; and the cage mate should come to the appointment, because a pig recovering alone eats less and eating is the whole game. Belongs with the antibiotics article above or beside it |
 
 **Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the per-kilogram vitamin C figures on pages 4, 13 and 28; the 1 to 2 teaspoon pellet
-portion and the 1 to 2 cup produce figure on pages 15 and 16; adult weights split by sex,
-body temperature, heart rate and respiratory rate on pages 4 and 18; gestation, litter size,
-weaning age and the 4 to 5 week conception figure on page 17; the pubic symphysis deadline
-on page 17; the ivermectin and selamectin dosing on page 26; the 4 to 6 week dental
-recurrence interval on page 20; the antibiotic list on page 27; the whole heat-stress
-sequence on pages 7 and 35; the rectal pouch on page 16; and the itemized budget on page 30.
+updated Sep 4 2026 after the cross-check. Page numbers are 2.1's, which shift by one from
+page 28 onward because the antibiotic page split in two.
+
+- Antibiotic list, page 26: **now carried** by `small-mammal-enterotoxemia-guide`, and the
+  package's list was the one that needed correcting, not the article's.
+- Heat-stress sequence, pages 7 and 35: **now carried** by
+  `small-mammal-temperature-heat-stress-guide`, minus the stretched-out posture, which is
+  Blue Cross's and which no clinical source puts first.
+- 4 to 6 week dental recurrence interval, page 20: **now carried** by
+  `guinea-pig-health-issues-guide.mdx` after its September expansion.
+- Anesthesia and fasting, page 27: **now carried** by
+  `small-mammal-vet-visits-and-travel-guide`, and re-sourced to Merck in the package.
+- Per-kilogram vitamin C figures, pages 4, 13 and 30: **still PDF only.** The scurvy article
+  gives a flat figure and disagrees with the tank setup guide; see the site list below.
+- The 1 to 2 teaspoon pellet portion and the 1 to 2 cup produce figure, pages 14, 15 and 30:
+  **still PDF only**, and the site still prints 1/8 cup.
+- Adult weights by sex, body temperature, heart and respiratory rate, pages 4, 18 and 30:
+  **still PDF only.**
+- Gestation, litter size, weaning age and the 4 to 5 week conception figure, page 17, and
+  the pubic symphysis deadline, page 17: **still PDF only.**
+- Ivermectin and selamectin dosing, page 25: **still PDF only.**
+- The rectal pouch, page 16: **still PDF only.**
+- The itemized budget, page 31: **still PDF only**, and the cost guide still does not add
+  up against itself.
 
 **Source drift found while building.** Five, and the pellet one is the largest disagreement
 found in any package in this series.
@@ -1500,9 +1598,38 @@ found in any package in this series.
   $30 to $50 pellets plus $20 to $50 vegetables plus $40 to $60 hay, which totals $90 to
   $160 and exceeds its own stated range. The pellet line is also implausible on its own: at
   1 to 2 teaspoons per pig per day a pair gets through roughly 600 g a month, which is not
-  $30 to $50 of anything. Page 30 itemizes to **$71 to $172 a month for a pair before vet
+  $30 to $50 of anything. Page 31 itemizes to **$71 to $172 a month for a pair before vet
   costs**, with hay at $25 to $60 and pellets at $6 to $15, and the lines sum to the totals.
   The headline and the breakdown both need fixing.
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** All five drift items
+above are **still open**, unchanged since the 2.0 build. Four further items, all in site
+content rather than the package:
+
+- **`guinea-pig-scurvy-vitamin-c-guide.mdx` gives vitamin C as a flat daily figure**, "10 to
+  30 milligrams daily for a healthy adult, rising to 30 to 50 milligrams for pregnant, ill,
+  or growing guinea pigs". Merck gives 10 to 25 mg/kg for adults and 30 mg/kg or more
+  otherwise, and PetMD independently gives 10 mg/kg and 30 mg/kg. The site now carries
+  **three different flat figures** and no per-kilogram one: 10 to 30 in the scurvy article,
+  10 to 50 in `guinea-pig-tank-setup-guide.mdx`, and 10 to 50 again in
+  `guides/smallMammals.js`. The package prints the per-kg figures and did not change. This
+  is the same drift the 2.0 build logged, one article worse.
+- **`small-mammal-temperature-heat-stress-guide.mdx`'s 65 to 80&deg;F is a rounding, not a
+  source.** Merck's housing page reads "18-26&deg;C [65-79&deg;F]" and the article prints the
+  same Celsius with a rounded Fahrenheit. It should read 65 to 79&deg;F. The package was left
+  at Merck's figure. The article's 80&deg;F **danger line** is right and is what the package
+  moved to; it is only the comfortable ceiling that rounded.
+- **`small-mammal-enterotoxemia-guide.mdx` names dihydrostreptomycin and clarithromycin**
+  without support in Merck's lincosamides page, Merck's clinical techniques page, VCA's
+  rodent health page or the University of Missouri reference. Either source them or drop
+  them. The package's list was built from those four and names neither.
+- **The site now has three guinea pig temperature figures.**
+  `guinea-pig-tank-setup-guide.mdx` says "between 65 and 75&deg;F" with heatstroke "above
+  80&deg;F", the cross-species article says 65 to 80&deg;F, and Merck says 65 to 79&deg;F. All three
+  agree on 80&deg;F as the danger point and none of them agree on the comfortable ceiling.
+- **`guinea-pig-scurvy-vitamin-c-guide.mdx` ships with no `<Sources>` block**, like
+  `rabbit-gi-stasis-guide.mdx` on the Rabbit list above. Page 21 of the package is sourced
+  almost entirely from it.
 
 ### Russian Tortoise 2.0, t3 (Sep 2026)
 

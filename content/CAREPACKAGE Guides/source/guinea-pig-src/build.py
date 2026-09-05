@@ -47,7 +47,8 @@ SECTIONS = [
         ("urinary", "Bladder Stones &amp; Urinary Disease"),
         ("repro", "Ovarian Cysts &amp; Reproductive Disease"),
         ("skin", "Mites, Lice, Ringworm, Lumps &amp; Bumblefoot"),
-        ("antibiotics", "Antibiotics, Anesthesia &amp; the Vet Conversation"),
+        ("antibiotics", "Antibiotics &amp; Enterotoxemia"),
+        ("anesthesia", "Anesthesia &amp; the Vet Conversation"),
         ("droppings", "Droppings, Weight &amp; Body Condition"),
     ]),
     ("Section 04 &middot; Quick Reference", [
@@ -66,7 +67,8 @@ SECTIONS = [
     ]),
     ("Reference", [
         ("glossary", "Glossary"),
-        ("sources", "Sources, Version History &amp; About"),
+        ("sources", "Sources &amp; Further Reading"),
+        ("version", "Version History &amp; About"),
     ]),
 ]
 

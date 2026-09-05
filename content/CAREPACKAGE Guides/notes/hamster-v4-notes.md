@@ -390,3 +390,155 @@ Never cut, in any edition:
   issue and the sand bath is a species essential that gets sold as an extra.
 - **Page 10's "never house two Syrians" callout.** Silent, often fatal, and
   routinely contradicted at the point of sale.
+
+---
+
+## 3.1, September 2026: the small mammal article cross-check
+
+Written against **3.1, 37 pages, template t3**. A corrections edition. The
+hamster block in `TEMPLATE_GUIDE.md` has no gap table, so the check ran the
+other way round: every page the four September 2026 cross-species articles
+could touch was read against them.
+
+The four are `small-mammal-temperature-heat-stress-guide`,
+`small-mammal-grooming-nails-molting-guide`,
+`small-mammal-vet-visits-and-travel-guide` and
+`small-mammal-enterotoxemia-guide`. Three of the four found something. The
+grooming one confirmed the package was already right.
+
+### The torpor threshold was the biggest error in the package
+
+3.0 said torpor begins below 65&deg;F (18&deg;C) with "real risk" below 60&deg;F (15&deg;C),
+and hedged with "Sources differ slightly on where torpor begins, with 60&deg;F and
+65&deg;F both cited." Neither figure survived a look at the sources.
+
+- **Merck Veterinary Manual, Hamsters:** "Exposure to cold stimulates hamsters
+  to gather food, and they often hibernate at temperatures < 5&deg;C (41&deg;F)."
+- **LafeberVet, Basic Information Sheet: Hamster:** "Hamsters can enter torpor
+  if temperatures fall below 41&deg;F (5&deg;C), particularly when exposed to short
+  days," and separately, "Syrian hamsters will hibernate if kept in a cool area
+  with limited food."
+- **VCA's hamster page carries no temperature range at all**, only that hamsters
+  do not tolerate heat.
+
+So the two veterinary references that give a number give the same number, about
+24&deg;F below what the package printed, and both attach a second trigger the
+package never mentioned. The 65&deg;F figure does exist in owner-facing
+vet-authored writing, but there it is the bottom of the ideal range, not a
+torpor threshold, and nothing anywhere sources 60&deg;F.
+
+**What changed, and the reasoning.** The package keeps 65&deg;F as the point to
+act, because a room out of range is worth fixing whether or not it is cold
+enough to be dangerous, and it now says so in those terms instead of calling it
+a threshold. 41&deg;F is printed as the veterinary figure, and short days and a
+thin food supply are named alongside cold, because a hamster in an unheated room
+in December is exposed to all three.
+
+| Page | Was | Became |
+|---|---|---|
+| 9, table | `Below 60&deg;F (15&deg;C)` / "Real risk of torpor" | `Below 41&deg;F (5&deg;C)` / "The figure Merck and LafeberVet both give for hibernation or torpor, which is dangerous and looks alarmingly like death" |
+| 9, table | `Below 65&deg;F (18&deg;C)` / "Sources put the torpor threshold here or a little lower" | `Below 65&deg;F (18&deg;C)` / "Out of the target range. Appetite and activity drop first" |
+| 9, note | "Sources differ slightly on where torpor begins, with 60&deg;F and 65&deg;F both cited" | "Cold is not torpor's only trigger: LafeberVet adds short days and both sources add a thin food supply, so 65&deg;F is the point to act rather than where harm starts" |
+| 14 | "Below roughly 65&deg;F (18&deg;C), hamsters can enter a hibernation-like state" | "Merck and LafeberVet put this below 41&deg;F (5&deg;C), with short days and a thin food supply as further triggers" |
+| 22, intro | "Below roughly 65&deg;F (18&deg;C), and with real risk below 60&deg;F (15&deg;C)" | "Cold, short days and a thin food supply together produce a hibernation-like state... Merck and LafeberVet both put the temperature below 41&deg;F (5&deg;C)" |
+| 22, Context row | "A room that has dropped below 65&deg;F (18&deg;C)" | "A room that has dropped well below the target range... and usually a short winter day as well" |
+| 26, card | "Below 65&deg;F (18&deg;C) this is far more likely to be torpor than death" | "A cold room, a short winter day and a hamster that has been eating poorly are what produce torpor" |
+| 31, outage | "below 65&deg;F (18&deg;C) this becomes the torpor risk" | "Below 65&deg;F (18&deg;C) the room is out of range, and a room heading for the forties is torpor territory" |
+| 32, sitter | "the room is below 65&deg;F (18&deg;C)" | "the room is well below 65&deg;F (18&deg;C)" |
+
+The torpor page's premise survives intact. It is still true that a cold hamster
+looks dead, that people bury animals in torpor, and that a thermometer prevents
+it. What is no longer true in the package is the implication that a British or
+American living room at 60&deg;F does it on its own.
+
+### The antibiotic page: 36 pages that never mentioned the thing most likely to kill
+
+`small-mammal-enterotoxemia-guide` names hamsters directly, and 3.0 had
+**nothing**: no drug list, no warning, no mention of enterotoxemia anywhere.
+Meanwhile page 19 said wet tail treatment is "antibiotics plus fluids and
+supportive care" and page 21 said respiratory infection means "antibiotics and
+supportive care". The package told an owner to expect antibiotics twice and
+never told them which ones kill this species.
+
+Page 18 now carries it, sourced from the primary references rather than the
+article:
+
+- **Merck, Hamsters:** "Diarrhea in adult Syrian hamsters is associated with
+  *Clostridioides difficile* enterotoxemia... it might occur 3-5 days after
+  administration of antimicrobials such as penicillin, lincomycin, or
+  bacitracin."
+- **Merck, Lincosamides Use in Animals:** "lincosamides are contraindicated for
+  use in horses, guinea pigs, hamsters, rabbits, chinchillas, and ruminants,"
+  and the reaction "can be lethal."
+- **VCA, Health Problems in Rodents:** never give "penicillin and related drugs,
+  bacitracin, erythromycin, lincomycin, tylosin, procaine additives, and
+  streptomycin," and they are harmful given orally, topically or by injection.
+- **Merck, Clinical Techniques for Guinea Pigs**, for the class-level statement
+  that "beta lactams, lincosamides, and older macrolides pose a higher risk."
+
+Pages 19 and 21 now point at page 18 at the moment they mention antibiotics.
+Page 26's card gained "Name every drug the hamster has been given (page 18)".
+
+**Where the room came from.** Page 18's "What to have ready when you call"
+two-col was a near-verbatim duplicate of the same checklist on the page 26
+emergency card. It came out, and the two details it carried that the card did
+not, where the hamster came from and when the bedding was last changed, were
+folded into the card. Nothing was lost and page 18 gained about 110px.
+
+### Heat
+
+VCA's rodent guidance puts the enclosure ceiling at 80&deg;F (27&deg;C). 3.0 had that
+figure on page 9 only. It is now also on the setup targets (page 25) and the
+emergency card (page 26). The package keeps 65 to 75&deg;F as its own comfortable
+range rather than widening to VCA's 65 to 80, and page 9 now says so explicitly:
+"VCA's rodent range runs to 80&deg;F; 75 is the tighter line."
+
+### Outages
+
+Page 31 gained the thermometer instruction, read it rather than judging by feel,
+and a second water container in a hot outage. Both from the RSPCA guinea pig
+heat guidance behind `small-mammal-temperature-heat-stress-guide`.
+
+### Deliberately not changed, and why
+
+- **Carrier size.** Page 31 says "Small and snug travels better than roomy." The
+  vet-visits article says a carrier should be "roomy enough for the animal to lie
+  down and turn around easily," but that is the RSPCA quoted on **rabbits**, and
+  the article's carrier sourcing is rabbit and guinea pig throughout. It does not
+  reach a hamster, which travels in something closer to a nest box. Left as is.
+- **Anesthesia and fasting.** The article's fasting rules are sourced to Merck's
+  rabbit and guinea pig pages. Extending them to a hamster would be an
+  extrapolation, and the package says nothing about fasting, so there is nothing
+  to correct. If a future edition wants a hamster surgery paragraph, source it
+  from a hamster page first.
+- **Nails.** Page 30 says "Check nail length, especially in an older or less
+  active hamster" and page 23 notes longer nails in a less active animal. The
+  grooming article says hamsters "wear their nails down naturally through digging
+  and running... and generally only need a check for overgrowth in older or less
+  active animals rather than a fixed trim schedule." That is an exact match, and
+  it is the cleanest agreement found anywhere in this cross-check. No change.
+
+### The cover said 42 pages
+
+Since the 3.0 build. The badge was never updated when the six merges took it to
+36. Now 37, which is the real count.
+
+### The reference split
+
+Pages 36 and 37, sources and version history. Cockatiel 1.0's finding, and the
+sources page needed it: it gained six clinical references it did not have,
+including every source behind the new page 18.
+
+### Layout
+
+No `.snug` changes: 3.0 already has it everywhere. Minimum headroom across all 37
+pages is 17px, on page 18, which is the new antibiotic page and the tightest in
+the package. If v4 adds anything to page 18, split it rather than compress it.
+
+### Still only in the PDF
+
+Unchanged from 3.0 and untouched by this cross-check: **no target weight in
+grams** anywhere despite the owner log asking for one, **no sexing page** despite
+page 10 telling the reader twice to check the sex, and **nothing on cheek
+pouches** except the impaction line on page 14. All three are in the ideas list
+above and none of the four articles reaches them.
