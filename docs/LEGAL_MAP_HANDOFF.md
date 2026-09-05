@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 11 (AZ, CO, DE, HI, IL, MI, MN, NM, NV, OR, PA) |
-| Unread cells | 668 |
-| Cached primary sources | 31 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 12 (AZ, CO, CT, DE, HI, IL, MI, MN, NM, NV, OR, PA) |
+| Unread cells | 632 |
+| Cached primary sources | 33 files in `docs/legal-sources` |
 
-`main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota and
-Oregon sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch
-from main once it lands.
+`main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
+Oregon and Connecticut sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
+fresh branch from main once it lands.
 
 ## The loop
 
@@ -27,7 +27,7 @@ One jurisdiction per sitting. It takes a while and that is fine.
    that explains rather than asserts, and `verifiedOn` set to today in US Eastern.
 4. Re-run `legal-gaps.mjs`, then `node scripts/check-legal-map-sync.mjs`. That script
    cross-checks every legal guide against the map and will catch guides you just made
-   wrong. It sits at 15 pre-existing errors; anything above that is yours.
+   wrong. It sits at 13 pre-existing errors; anything above that is yours.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
@@ -88,11 +88,11 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| CT | Connecticut | 36 | 2 sources on file |
 | MD | Maryland | 35 | 4 sources on file |
 | TN | Tennessee | 35 | 1 source on file |
 | TX | Texas | 35 | 3 sources on file |
 | MA | Massachusetts | 34 | 3 sources on file |
+| NE | Nebraska | 33 | 4 sources on file |
 
 ## Loose ends
 
@@ -120,6 +120,13 @@ state that codifies by version. And confirm the citation itself still resolves.
   885.20(d) writes the same cap as reaching native taxa only. Every Illinois non-native reptile
   entry carries this in its note rather than resolving it, because the statute and the rule
   genuinely do not agree and IDNR has not published a reading either way.
+- **Connecticut has one open item, and it is a whole statute.** Conn. Gen. Stat. § 26-78 deals
+  with turtles separately from the regulation and is reported to bar importing, buying and
+  selling red-eared sliders. It could not be read: cga.ct.gov resets every connection from this
+  container, through curl, python and a headless Chromium, and no reproduction was reachable
+  either. The slider is recorded `unclear` and the other five Connecticut turtle and tortoise
+  entries carry the same caveat in their notes. If someone with a browser can read § 26-78, six
+  cells can be settled in ten minutes.
 - **Oregon's hamster is `unclear` on what looks like a drafting slip.** The not-wild list at
   OAR 635-056-0020(14) reads "Common Hamster — Cricetus cricetus", the wild European species,
   and the pet Syrian hamster, *Mesocricetus auratus*, appears nowhere in the division. In a
@@ -154,8 +161,8 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Then guinea pig and gerbil at 45, quaker parakeet and ackie monitor at 44, degu and red-footed
-tortoise at 43, green iguana at 42.
+Then guinea pig and gerbil at 46, quaker parakeet and ackie monitor at 45, degu and red-footed
+tortoise at 44, green iguana at 43.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -193,6 +200,12 @@ Varanus; read the definition and it restricts two, leaving the savannah, Nile an
 entirely unregulated. Any state that names a family and then narrows it in the same sentence
 needs the definition read before the list.
 
+Connecticut is the seventh and the cleanest: Category One is the family Felidae, "except Bengal
+cat pursuant to section 26-40a", carved out by name inside the listing, with no generation
+cutoff and a "notwithstanding changes in taxonomic nomenclature" opener that forecloses arguing
+the animal back in on a reclassification. Seven states, seven drafting approaches, and the
+Bengal is legal in three of them for three different reasons.
+
 Oregon is the sixth Bengal answer and the most permissive: no hybrid clause anywhere in the
 statute, domestic cat breeds declared not wild, and ORS 609.341(4)(a)(B) expressly contemplating
 breeding a small exotic feline with a domestic cat for retail sale of the offspring. A state
@@ -204,6 +217,14 @@ rule: the carve-out for registered domestic breeds and the all-generations hybri
 in the same definition and point opposite ways. Where a state writes both, check whether the
 carve-out would have anything left to do under the broader reading. In Minnesota it would not,
 which is the argument for the exemption, and it is still only an argument.
+
+Connecticut is the answer to the rabbit problem that Minnesota and Illinois pose. Its
+Category Two picks up "a species referenced as injurious wildlife in 50 CFR 16.11", which lists
+the European rabbit, so on the lists alone a house rabbit would be barred. It is not, because
+the categories only ever apply to a "wild animal", and the regulation defines "domestic animal"
+by what selective breeding has done to the animal rather than by species name. One definition,
+written once, disposes of a question two other states cannot answer. When a state names
+Oryctolagus, look for a domestication definition before reading the listing as a ban.
 
 The rabbit is the other good probe. Hawaii, California and Arizona each carve it out by
 name in different words, Arizona going furthest by saying domestic rabbits are not wildlife

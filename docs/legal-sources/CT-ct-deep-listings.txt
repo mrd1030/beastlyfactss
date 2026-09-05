@@ -1,0 +1,114 @@
+# Connecticut DEEP fact sheets: the listing statuses that decide Category Four
+
+sourceId: ct-deep-fact-sheets
+jurisdiction: CT
+url: https://portal.ct.gov/deep/wildlife/fact-sheets/eastern-box-turtle
+     https://portal.ct.gov/deep/wildlife/fact-sheets/eastern-hog-nosed-snake
+     https://portal.ct.gov/deep/wildlife/fact-sheets/common-snapping-turtle
+fetched: 2026-09-05
+fetch notes: see the header of CT-ct-26-55-6.txt. The status line sits directly under the
+  species name in the page header, so grep for 'State Species of Special Concern',
+  'State Threatened' or 'State Endangered'. A sheet with no status line is an unlisted
+  species, which is how the common snapping turtle was settled.
+
+Eastern box turtle       -> State Species of Special Concern  => Category Four, permit
+Eastern hog-nosed snake  -> State Species of Special Concern  => Category Four, permit
+Common snapping turtle   -> no status line, unlisted          => no category
+
+The box turtle sheet also gives the history, which is worth quoting: the species was added
+to the state list in 1998 after a population decline, and the sheet describes collection for
+pets as 'indiscriminate (and now illegal)'.
+
+=========================================================================
+EASTERN BOX TURTLE
+=========================================================================
+Eastern Box Turtle
+webpages
+Eastern Box Turtle
+-->
+If you are viewing this version of CT.gov, you are using an unsupported browser or you are in Internet Explorer 9 using
+compatibility mode. This means that the design and layout of the site is not fully supported, however the content of the
+site is still fully accessible and functional. For the full website experience, please update your browser to one of the
+following:
+Google Chrome ,
+Firefox ,
+Safari ,
+Internet Explorer 10 or higher.
+Skip to Content
+Skip to Chat
+Warning!
+It seems that JavaScript is not working in your browser. It could be because it is not supported, or
+that JavaScript is intentionally disabled. Some of the features on CT.gov will not function properly
+with out javascript enabled.
+×
+Settings Menu
+Language
+High Contrast
+High Contrast Mode On or Off switch
+On
+Off
+Font Size
+regular
+font size
+large font size
+Disclaimer
+Close
+Connecticut's Official
+State Website
+Search Bar for CT.gov
+Search
+Language + Settings
+Top
+Connecticut
+Department of Energy & Environmental Protection
+CT.gov Home
+Department of Energy & Environmental Protection
+Wildlife
+Current: Eastern Box Turtle
+Wildlife Main Page
+Learn About CT's Wildlife
+Habitat Management for Wildlife
+Nuisance/Distressed Wildlife
+NDDB and Environmental Reviews
+Hunting and Trapping
+Maps and Access Information
+Main Menu
+Search Department of Energy & Environmental Protection
+Search the current Agency with a Keyword
+Filtered Topic Search
+Eastern Box Turtle
+Eastern Box Turtle
+Terrapene carolina carolina
+State Species of Special Concern
+Description : The eastern box turtle is probably the most familiar of the 8 species of turtles found in Connecticut's landscape. It is known for its high-domed carapace (top shell). The carapace has irregular yellow or orange blotches on a brown to black background that mimic sunlight dappling on the forest floor. The plastron (under shell) may be brown or black and may have an irregular pattern of cream or yellow. The length of the carapace usually ranges from 4.5 to 6.5 inches, but can measure up to 8 inches long. The shell is made up of a combination of scales and bones, and it includes the ribs and much of the backbone.
+Each individual turtle has distinctive head markings. Males usually have red eyes and a concave plastron, while females have brown eyes and a flat plastron. Box turtles also have a horny beak, stout limbs, and feet that are webbed at the base. This turtle gets its name from its ability to completely withdraw into its shell, closing itself in with a hinged plastron. Box turtles are the only Connecticut turtle with this ability.
+Range: Eastern box turtles are found throughout Connecticut, except at the highest elevations. They range from southeastern Maine to southeastern New York, west to central Illinois, and south to northern Florida.
+Habitat and Diet: In Connecticut, this terrestrial turtle inhabits a variety of habitats, including woodlands, field edges, thickets, marshes, bogs, and stream banks. Typically, however, box turtles are found in well-drained forest bottomlands and open deciduous forests. They will use wetland areas at various times during the season. During the hottest part of a summer day, they will wander to find springs and seepages where they can burrow into the moist soil. Activity is restricted to mornings and evenings during summer, with little to no nighttime activity, except for egg-laying females. Box turtles have a limited home range where they spend their entire life, ranging from 0.5 to 10 acres (usually less than 2 acres).
+Box turtles are omnivorous and will feed on a variety of food items, including earthworms, slugs, snails, insects, frogs, toads, small snakes, carrion, leaves, grass, berries, fruits, and fungi.
+Life History: From October to April, box turtles hibernate by burrowing into loose soil, decaying vegetation, and mud. They tend to hibernate in woodlands, on the edge of woodlands, and sometimes near closed canopy wetlands in the forest. Box turtles may return to the same place to hibernate year after year. As soon as they come out of hibernation, box turtles begin feeding and searching for mates.
+The breeding season begins in April and may continue through fall. Box turtles usually do not breed until they are about 10 years old. This late maturity is a result of their long lifespan, which can range up to 50 to even over 100 years of age. The females do not have to mate every year to lay eggs as they can store sperm for up to 4 years. In mid-May to late June, the females will travel from a few feet to more than a mile within their home range to find a location to dig a nest and lay their eggs. The 3 to 8 eggs are covered with dirt and left to be warmed by the sun. During this vulnerable time, skunks, foxes, snakes, crows, and raccoons often raid nests. Sometimes, entire nests are destroyed. If the eggs survive, they will hatch in late summer to early fall (about 2 months after being laid). If they hatch in the fall, the young turtles may spend the winter in the nest and come out the following spring.
+As soon as the young turtles hatch, they are on their own and receive no care from the adults. This is a dangerous time for young box turtles because they do not develop the hinge for closing into their shell until they are about 4 to 5 years old. Until then, they cannot entirely retreat into their shells. Raccoons, skunks, foxes, dogs, and some birds will prey on young turtles.
+Conservation Concerns: The eastern box turtle was once common throughout the state, mostly in the central Connecticut lowlands. However, its distribution is now spotty, although where found, turtles may be locally abundant. Because of the population decline in Connecticut, the box turtle was added to the state's List of Endangered, Threatened, and Special Concern Species when it was revised in 1998. It is currently listed as a species of special concern. The box turtle also is protected from international trade by the 1994 CITES treaty. It is of conservation concern in all the states where it occurs at its northeastern range limit, which includes southern New England and southeastern New York.
+Many states have laws that protect box turtles and prohibit their collection. In Connecticut, eastern box turtles cannot be collected from the wild (DEP regulations 26-66-14A). These regulations provide some protection for the turtles, but not enough to combat some of the even bigger threats these animals face. The main threats in Connecticut (and other states) are loss and fragmentation of habitat due to deforestation and spreading suburban development; vehicle strikes on the busy roads that bisect the landscape; and indiscriminate (and now illegal) collection of individuals for pets.
+Loss of habitat is probably the greatest threat to turtles. Some turtles may be killed directly by construction activities, but many more are lost when important habitat areas for shelter, feeding, hibernation, or nesting are destroyed. As remaining habitat is fragmented into smaller pieces, turtle populations can become small and isolated.
+Adult box turtles are relatively free from predators due to their unique shells. The shell of a box turtle is extremely hard. However, the shell is not hard enough to survive being run over by a vehicle. Roads bisecting turtle habitat can seriously deplete the local population. Most vehicle fatalities are pregnant females searching for a nest site.
+How You Can Help
+Leave turtles in the wild. They should never be kept as pets. Whether collected singly or for the pet trade, turtles that are removed from the wild are no longer able to be a reproducing member of a population. Every turtle removed reduces the ability of the population to maintain itself.
+Never release a captive turtle into the wild. It probably would not survive, may not be native to the area, and could introduce diseases to wild populations.
+Do not disturb turtles nesting in yards or gardens.
+As you drive, watch out for turtles crossing the road. Turtles found crossing roads in June and July are often pregnant females and they should be helped on their way and not collected. Without creating a traffic hazard or compromising safety, drivers are encouraged to avoid running over turtles that are crossing roads. Also, still keeping safety precautions in mind, you may elect to pick up turtles from the road and move them onto the side they are headed. Never relocate a turtle to another area that is far from where you found it.
+Learn more about turtles and their conservation concerns. Spread the word to others on how they can help Connecticut's box turtle population.
+The production of this Endangered and Threatened Species Fact Sheet Series is made possible by donations to the Endangered Species-Wildlife Income Tax Checkoff Fund.
+Content last updated in November 2022.
+Policies
+Accessibility
+About CT
+Directories
+Social Media
+For State Employees
+United States
+FULL
+Connecticut
+FULL
+©
+2016 CT.gov | Connecticut's Official State Website

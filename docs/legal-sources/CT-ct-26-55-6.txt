@@ -1,0 +1,494 @@
+# Connecticut Regs. Conn. State Agencies § 26-55-6, the four-category wild animal rule
+
+sourceId: ct-26-55-6 / ct-deep-fact-sheets
+jurisdiction: CT
+url: https://eregulations.ct.gov/eRegsPortal/Browse/getDocument?guid=%7B6B566428-3A6A-452A-9E3A-7AF89D95D371%7D
+     https://portal.ct.gov/deep/wildlife/fact-sheets/eastern-box-turtle
+fetched: 2026-09-05
+fetch notes: the eRegulations portal serves this section as a PDF from that getDocument URL with
+  plain curl, despite the .html-looking path; save it as .pdf and extract with pypdf. The portal's
+  browse and search pages are JavaScript-driven behind a bot-protection script and give up
+  nothing, so a rule you do not already have a GUID for is hard to reach.
+  DEEP fact sheets are at portal.ct.gov/deep/wildlife/fact-sheets/<common-name-hyphenated> and
+  carry the state listing status in the header, but the slugs are not predictable:
+  eastern-hog-nosed-snake works, eastern-hognose-snake does not.
+
+*** cga.ct.gov IS UNREACHABLE FROM THIS CONTAINER. *** Every route was tried: curl with the
+proxy CA, curl with the system store, python urllib, and a headless Chromium, which reports
+ERR_CONNECTION_RESET. cga.state.ct.us answers but its statute search returns nothing useful.
+law.justia.com and codes.findlaw.com are 403 and animallaw.info's search is 403. So the
+Connecticut General Statutes could not be read this sitting, and every entry rests on the
+regulation instead. That matters in one place, recorded on the map as `unclear`: Conn. Gen.
+Stat. § 26-78 deals with turtles separately and is reported to bar importing, buying and selling
+red-eared sliders. Reading § 26-78 is the open item for Connecticut.
+
+HOW THE REGULATION WORKS. Four categories, and an animal in none of them is not restricted by
+this section at all:
+  Category One    four mammal families: Felidae, Canidae, Ursidae, Hominidae. Possession only by
+                  municipal parks, zoos, aquaria, nature centres, museums and USDA-registered
+                  exhibitors, labs and research facilities. No private route.
+  Category Two    a long specific list. Possession only by those bodies plus a treating vet.
+  Category Three  Connecticut's own natives. Bars import and export, NOT possession.
+  Category Four   the state endangered, threatened and special concern list under § 26-306.
+                  A real permit route, per animal, for that animal's life, non-transferable.
+
+THE DEFINITIONS DO MORE WORK THAN THE LISTS. Subsection (a):
+  (21) "Wild animal" reaches birds, mammals, reptiles, amphibians AND INVERTEBRATES. Connecticut
+       has authority over a tarantula and has simply not used it, which is a different answer
+       from the jurisdictional gap that clears the same animal in Arizona, Nevada and
+       Pennsylvania.
+  (7)  "Domestic animal" is defined by what selective breeding has done to the animal rather
+       than by species name, and expressly excludes a wild animal raised in captivity over many
+       generations that is still wild by nature. That single definition is why the pet rabbit is
+       clean here: Category Two picks up "a species referenced as injurious wildlife in
+       50 CFR 16.11", which lists the European rabbit, and the domestic animal definition takes
+       a house rabbit out of the scheme before the categories are ever reached. Minnesota and
+       Illinois name the same species with no equivalent definition and are much harder.
+
+TWO THINGS TO READ EXACTLY:
+  The rodent entry, Category Two (a)(3)(B)(xxv), puts the WHOLE ORDER Rodentia in Category Two
+  and excepts nine: guinea pig, gerbil, chinchilla, rat, mouse, hamster (Mesocricetus auratus),
+  dwarf hamsters, Patagonian mara, American beaver. So the prairie dog, capybara, degu and
+  flying squirrel are all barred to private keepers, and the Patagonian mara being excepted while
+  the capybara is not shows the line is deliberate.
+  The monitor entry, (a)(3)(B)(xxxv), names the Nile, water, black-throated, white-throated and
+  crocodile monitors. The black-throated and white-throated are subspecies of Varanus
+  albigularis, NOT the savannah monitor, which is Varanus exanthematicus and appears nowhere.
+
+THE BENGAL is carved out of Category One by name, "except Bengal cat pursuant to section 26-40a",
+with no generation cutoff, and the clause opens "notwithstanding changes in taxonomic
+nomenclature". It is the cleanest hybrid answer on the map.
+
+=========================================================================
+Sec. 26-55-6. Importation, possession or liberation of wild birds, mammals, reptiles, 
+amphibians and invertebrates 
+(a)  Definitions . As used in this section:
+(1) “Aquarium” means a facility accredited by the Association of Zoos and Aquariums,
+or the Alliance of Marine Mammal Parks and Aquariums;
+(2) “Category One Wild Animal” means, notwithstanding changes in taxonomic 
+nomenclature, any wild animal, gamete or hybrid of any of the following:
+(A) A member within the family Felidae (including, but not limited to, lion, leopard,
+cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant
+to section 26-40a of the Connecticut General Statutes;
+(B) A member within the family Canidae (including, but not limited to, wolf and coyote);
+(C) A member within the family Ursidae (including, but not limited to, black bear, grizzly 
+bear and brown bear); or
+(D) A member within the family Hominidae (including, but not limited to, gorilla,
+chimpanzee and orangutan);
+(3) “Category Two Wild Animal” means any wild animal, gamete, or hybrid thereof, as 
+follows:
+(A) That is not a Category One Wild Animal; and 
+(B) That is, notwithstanding changes in taxonomic nomenclature:
+(i) A species referenced as injurious wildlife in 50 CFR 16.11,
+(ii) A member within the family Elephantidae (including, but not limited to, African 
+elephant),
+(iii) A member within the order Primate (including, but not limited to, capuchin,
+macaque, lemur and marmoset),
+(iv) Wolverine (Gulo gulo),
+(v) A member within the family Hyaenidae (including, but not limited to, brown hyaena,
+spotted hyaena, striped hyaena and aardwolf),
+(vi) A member within the genus Dendrolagus (including, but not limited to, tree 
+kangaroos),
+(vii) A member within the genus Dorcopsis (including, but not limited to, dorcopsis and 
+New Guinea forest wallabies),
+(viii) A member within the genus Dorcopsulus (including, but not limited to, lesser forest
+wallaby),
+(ix) A member within the genus Lagorchestes (including, but not limited to, hare-
+wallabies),
+(x) A member within the subgenus Osphranter (including, but not limited to, red 
+kangaroo),
+(xi) A member within the subgenus Macropus (including, but not limited to, gray 
+kangaroo);
+(xii) A member within the genus Onychogalea (including, but not limited to, nail-tailed 
+wallaby),
+(xiii) A member within the genus Petrogale (including, but not limited to, rock wallaby),
+(xiv) Quokka (Setonix brachyurus ),
+(xv) A member within the genus Thylogale (including, but not limited to, pademelons),
+- 1-
+Regulations of C onnecticut State Agencies 
+(xvi) Swamp wallaby (W allabia bicolor );
+(xvii) A member within the family Viveridae (including, but not limited to, civets, genets,
+binturong, linsangs),
+(xviii) A member within the family Herpestidae (including, but not limited to,
+mongooses, meerkats),
+(xix) A member within the family Dasypodidae (including, but not limited to,
+armadillos),
+(xx) A member within the family Mephitidae (including, but not limited to, striped 
+skunk),
+(xxi) A member within the family Procyonidae (including, but not limited to, common 
+raccoon),
+(xxii) A member within the suborder Suiformes (including, but not limited to, wild boar,
+warthog, hippopotamus, and peccary),
+(xxiii) A member within the order Chiroptera (bats),
+(xxiv) A member within the family Rhinocerotidae (rhinoceros),
+(xxv) A member within the order Rodentia, except for guinea pig (Cavia porcellus),
+gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus),
+mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus 
+and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (C astor 
+canadensis ),
+(xxvi) Mute swan (Cygnus olor),
+(xxvii) Monk parakeet (Myiopsitta monachus),
+(xxviii) A member within the order Crocodylia (including, but not limited to, alligator,
+crocodile and caiman),
+(xxix) A member within the family Elapidae (including, but not limited to, cobra, coral
+snake, mamba, sea snake and sea krait),
+(xxx) A member within the family Viperidae (including, but not limited to, copperhead,
+rattlesnake, cottonmouth, adder, viper, pit viper and night adder),
+(xxxi) Northern African python (Python sebae), Southern African python (Python 
+natalensis), reticulated python (Python reticulates) and amethystine python (Morelia 
+amethistina),
+(xxxii) Green or common anaconda (Eunectus murinus), yellow anaconda (Eunectus 
+notaeus) and Bolivian anaconda (Eunectus beniensis),
+(xxxiii) A member within the genera Boiga, Thelotornis, Enhydris, Dispholidus, Clelia,
+Rhabdophis, Hydrodynastes, Philodryas or Malpolon (including, but not limited to,
+mangrove snake, false cobra, cat-eyed snake, false water snake, African boomslang, vine 
+snake, twig snake and bird snake),
+(xxxiv) A member within the family Helodermatidae (including, but not limited to, Gila 
+monster and beaded lizard),
+(xxxv) Nile monitor (Varanus niloticus), water monitor (Varanus salvator), black-throated 
+monitor (Varanus a. ionidesi), white-throated monitor (Varanus a. albigularis) or crocodile 
+monitor (Varanus salvadorii), or
+(xxxvi) Komodo dragon (Varanus komodoensis);
+(4) “Category Three Wild Animal” means any wild animal, gamete, or hybrid thereof,
+- 2-
+Regulations of C onnecticut State Agencies 
+as follows:
+(A) That is not a Category One, Category Two or Category Four Wild Animal; and 
+(B) That is, notwithstanding any changes to taxonomic nomenclature:
+(i) A member within the family Cervidae (including, but not limited to the, white-tailed 
+deer, elk, red deer and sika),
+(ii) American beaver (C astor canadensis ),
+(iii) A member within the family Mustelidae (including, but not limited to, short-tailed 
+weasel, long-tailed weasel, mink, fisher, otter and marten),
+(iv) Harbor seal (Phoca vitulina),
+(v) American black duck (Anas rubripes), lesser scaup (Aythya affinis), greater scaup 
+(Aythya marila), canvasback (Aythya valisineria), long-tailed duck (Clangula hyemalis),
+hooded merganser (Lophodytes cucullatus), white-winged scoter (Melanitta fusca), black 
+scoter (Melanitta nigra), surf scoter (Melanitta perspicillata) and common merganser
+(Mergus merganser),
+(vi) Ruffed grouse (Bonasa umbellus),
+(vii) Chimney swift (Chaetura pelagica) and ruby-throated hummingbird (Archilochus 
+colubris),
+(viii) Spotted sandpiper (Actitis macularius), sanderling (Calidris alba), semipalmated 
+sandpiper (Calidris pusilla), willet (Tringa semipalmata), American woodcock (Scolopax 
+minor), ruddy turnstone (Arenaria interpres) and black skimmer (Rynchops niger),
+(ix) Great blue heron (Ardea herodias), green heron (Butorides virescens) and black-
+crowned night-heron (Nycticorax nycticorax),
+(x) Belted kingfisher (Ceryle alcyon),
+(xi) Yellow-billed cuckoo (Coccyzus americanus) and black-billed cuckoo (Coccyzus 
+erythropthalmus),
+(xii) Cooper’s hawk (Accipiter cooperii ), northern goshawk (Accipiter gentilis ), red-
+shouldered hawk (Buteo lineatus ), osprey (Pandion haliaetus ) and rough-legged hawk 
+(Buteo lagopus ),
+(xiii) Red-throated loon (Gavia stellata),
+(xiv) Virginia rail (Rallus limicola), clapper rail (Rallus longirostris) and sora (Porzana 
+carolina),
+(xv) Baltimore oriole (Icterus galbula) and orchard oriole (Icterus spurius),
+(xvi) Brown creeper (Certhia Americana),
+(xvii) Purple finch (Carpodacus purpureus),
+(xviii) Rose-breasted grosbeak (Pheucticus ludovicianus),
+(xix) Gray catbird (Dumetella carolinensis),
+(xx) Red-breasted nuthatch (Sitta canadensis),
+(xxi) Cliff swallow (Petrochelidon pyrrhonota), bank swallow (Riparia riparia) and 
+northern rough-winged swallow (Stelgidopteryx serripennis),
+(xxii) Scarlet tanager (Piranga olivacea),
+(xxiii) Veery (Catharus fuscescens), hermit thrush (Catharus guttatus), gray-cheeked 
+thrush (Catharus minimus), Swainson’s thrush (Catharus ustulatus) and wood thrush 
+(Hylocichla mustelina),
+(xxiv) Blue-gray gnatcatcher (Polioptila caerulea),
+- 3-
+Regulations of C onnecticut State Agencies 
+(xxv) Golden-crowned kinglet (Regulus satrapa),
+(xxvi) Louisiana waterthrush (Seiurus motacilla), northern waterthrush (Seiurus 
+noveboracensis), black-throated blue warbler (Dendroica caerulescens), bay-breasted 
+warbler (Dendroica castanea), cerulean warbler (Dendroica cerulea), yellow-rumped warbler
+(Dendroica coronata), prairie warbler (Dendroica discolor), blackburnian warbler
+(Dendroica fusca), magnolia warbler (Dendroica magnolia), chestnut-sided warbler
+(Dendroica pensylvanica), Cape May warbler (Dendroica tigrina), black-throated green 
+warbler (Dendroica virens), worm-eating warbler (Helmitheros vermivorum), black-and-
+white warbler (Mniotilta varia), ovenbird (Seiurus aurocapilla), American redstart
+(Setophaga ruticilla), blue-winged warbler (Vermivora pinus), Canada warbler (Wilsonia 
+canadensis) and hooded warbler (Wilsonia citrina),
+(xxvii) Dark-eyed junco (Junco hyemalis), eastern towhee (Pipilo erythrophthalmus),
+field sparrow (Spizella pusilla) and indigo bunting (Passerina cyanea),
+(xxviii) Olive-sided flycatcher (Contopus cooperi), eastern wood-pewee (Contopus 
+virens), least flycatcher (Empidonax minimus), willow flycatcher (Empidonax traillii),
+acadian flycatcher (Empidonax virescens), great crested flycatcher (Myiarchus crinitus) and 
+eastern kingbird (Tyrannus tyrannus),
+(xxix) Yellow-throated vireo (Vireo flavifrons), warbling vireo (Vireo gilvus), white-
+eyed vireo (Vireo griseus) and blue-headed vireo (Vireo solitarius),
+(xxx) Marsh wren (Cistothorus palustris) and winter wren (Troglodytes troglodytes),
+(xxxi) Great cormorant (Phalacrocorax carbo),
+(xxxii) Northern flicker (Colaptes auratus) and pileated woodpecker (Dryocopus 
+pileatus),
+(xxxiii) Horned grebe (Podiceps auritus) and red-necked grebe (Podiceps grisegena),
+(xxxiv) Great horned owl (Bubo virginianus), snowy owl (Bubo scandiacus), eastern 
+screech owl (Megascops asio) and barred owl (Strix varia),
+(xxxv) Spotted turtle (Clemmys guttata),
+(xxxvi) Eastern racer (Coluber constrictor),
+(xxxvii) Diamond-backed terrapin (Malaclemys terrapin),
+(xxxviii) Fowler’s toad (Bufo fowleri),
+(xxxix) Northern dusky salamander (Desmognathus fuscus),
+(xl) Gray treefrog (Hyla versicolor),
+(xli) Eastern newt (Notophthalmus viridescens), or
+(xlii) Wood frog (Rana sylvatica);
+(5) “Category Four Wild Animal” means any wild animal or gamete thereof listed as 
+endangered, threatened, or of special concern pursuant to section 26-306 of the Connecticut
+General Statutes;
+(6) “Commissioner” means Commissioner of Energy and Environmental Protection 
+(7) “Domestic animal” means any animal that humans have selectively bred in captivity 
+to produce genetic changes affecting the temperament, color, conformation, or other
+attributes of the species to an extent that makes such animal unique and distinguishable 
+from wild individuals of the species, and that has been raised in a life intimately associated 
+with and advantageous to humans. “Domestic animal” does not include any wild animal
+raised in captivity, even over many generations, that has become accustomed to human 
+- 4-
+Regulations of C onnecticut State Agencies 
+interaction but that is still wild by nature;
+(8) “Exhibitor” means a person or organization engaged in the showing, displaying,
+exhibiting or training of wild animals for the purpose of public viewing, and who meets the 
+requirements of subsection (f) of this section;
+(9) “Exhibitor registered with the United States Department of Agriculture” means an 
+exhibitor who holds a Class C (“exhibitor’s”) license issued by the United States Department
+of Agriculture pursuant to the Animal Welfare Act (7 USC 54), and who holds a copy of
+the last inspection report signed and dated by the United States Department of Agriculture;
+(10) “Hybrid” means any animal or egg that results from the combining of a gamete of
+a wild animal with a gamete of another species;
+(11) “Import” or “importation” means bringing or causing to be transported into the state 
+wild animals or eggs of such wild animals by any means;
+(12) “Marine mammal park” means a facility accredited by the Alliance of Marine 
+Mammal Parks and Aquariums;
+(13) “Municipal park” means a facility publicly owned and operated by a municipality,
+and that is in the practice of displaying wild animals for public viewing;
+(14) “Museum” or “Nature center” means an institution devoted to the procurement,
+care, study, and public display of wild animals and that meets the requirements of subsection 
+(e) of these regulations;
+(15) “Passive Integrated Transponder Tag” means a computer microchip attached to a 
+wire antenna and encapsulated in a biologically inert glass capsule which, when passed 
+through the electromagnetic field of a detector, transmits a unique identification code to the 
+detector;
+(16) “Public nonprofit aquarium” means an aquarium that is publically held and that has 
+been issued a federal Determination Letter of exemption under section 50l(c)(3) or (13) of
+the Internal Revenue Code;
+(17) “Research facility” or “Laboratory” means a facility maintained by a scientific or
+educational institution with documented works that relate to branches of systemized 
+knowledge including, but not limited to, zoology, botany, ecology, wildlife management,
+fisheries management, medicine, psychology or veterinary medicine;
+(18) “Research facility registered with the United States Department of Agriculture” or
+“Laboratory registered with the United States Department of Agriculture” means a research 
+facility or laboratory that holds a Class C (“exhibitor’s”) license issued by the United States 
+Department of Agriculture pursuant to the Animal Welfare Act (7 USC 54) and that holds 
+a copy of the last inspection report signed and dated by the United States Department of
+Agriculture;
+(19) “School” means kindergarten and grades one to twelve, inclusive;
+(20) “Veterinarian” means a person licensed to practice veterinary medicine, surgery or
+dentistry pursuant to the provisions of chapter 384 of the Connecticut General Statutes;
+(21) “Wild animal” means any bird, mammal, reptile, amphibian, or invertebrate that is,
+or historically has been found, in the wild or in the wild state, and that is not otherwise a 
+domestic animal; and 
+(22) “Zoo” means a facility accredited by the Association of Zoos and Aquariums or the 
+Zoological Association of America.
+- 5-
+Regulations of C onnecticut State Agencies 
+(b)  Prohibitions and Exemptions .
+(1) No person, except a municipal park, zoo, public nonprofit aquarium, nature center,
+museum, exhibitor licensed or registered with the United States Department of Agriculture,
+laboratory registered with the United States Department of Agriculture, or research facility 
+registered with the United States Department of Agriculture, shall import or possess any 
+Category One Wild Animal.
+(2) A person authorized to import or possess a Category One Wild Animal as provided 
+in subdivision (1) of this subsection shall not allow such animal to be accessible for handling 
+by the general public.
+(3) No person, except a veterinarian for purposes of treatment and care, a municipal
+park, zoo, marine mammal park, aquarium, nature center, museum, exhibitor, laboratory or
+research facility, shall import or possess any Category Two Wild Animal.
+(4) No person, except a municipal park, zoo, marine mammal park, aquarium, nature 
+center, museum, exhibitor, laboratory, research facility or school, or any person otherwise 
+authorized pursuant to section 26-40, 26-54, 26-57 or 26-67e of the Connecticut General
+Statutes, shall import or export any Category Three Wild Animal.
+(5) No person shall import or possess any Category Four Wild Animal unless such person 
+has been issued a permit pursuant to subsection (d) of this section.
+(6) No person shall liberate any wild animal except as provided pursuant to sections 26-
+48, 26-48a, 26-49, 26-51, 26-52, 26-54, 26-60 or 26-67e of the Connecticut General Statutes,
+or subsection (d) of this section.
+(7) A primate that weighs less than thirty-five pounds at maturity and that was legally 
+possessed by a person in this state on or before October 1, 2003 may continue to be 
+possessed by such person provided such person complies with the provisions of subsection 
+(c) of this section.
+(c)  Registration and Transfer of Primates .
+(1) Registration. A primate that weighs less than thirty-five pounds at maturity and that
+was legally possessed by a person in this state on or before October 1, 2003 may continue 
+to be possessed by such person provided such person registers such primate in accordance 
+with the provisions of this subdivision. Such registration shall include proof of legal
+possession prior to October 1, 2003, a detailed physical description and photographs of such 
+primate, and descriptions and photographs of the enclosure in which such primate is kept.
+All required information shall be submitted on or before December 31, 2012 on forms 
+provided by the Department of Energy and Environmental Protection. A registrant shall:
+(A) Keep and handle a registered primate in such a manner as to prevent the possibility 
+of loss, breeding with other animals, or injuring persons or other animals;
+(B) Maintain a plan for the recapture or destruction of any such registered primate in the 
+event of loss;
+(C) Immediately notify the Department of Energy and Environmental Protection and the 
+local law enforcement agency in the event such registered primate is lost or injures a person 
+or other animal;
+(D) Maintain a plan for the maintenance or disposition of such registered primate in the 
+event of the owner or keeper’s absence, illness, or death;
+(E) Maintain complete and accurate records that identify:
+- 6-
+Regulations of C onnecticut State Agencies 
+(i) The species, sex, age, and lineage of such registered primate,
+(ii) Date of birth and acquisition of such registered primate,
+(iii) If applicable, the name and address of any person who has previously possessed 
+such primate and date of transfer, and 
+(iv) The date of the death, loss or transfer to another person of such registered primate;
+(F) If required by the commissioner, uniquely identify such primate with a passive 
+integrated transponder tag administered by a veterinarian;
+(G) Not breed or liberate a primate registered pursuant to this subdivision; and 
+(H) Maintain the records required pursuant to this subdivision in chronological order,
+for a minimum of five years after the date of death, loss, or transfer of such registered 
+primate and make such records available for inspection at any reasonable time upon request
+of the commissioner or the commissioner’s designee.
+(2) Such registered primate may be transferred to another individual provided that the 
+recipient has and maintains an adequate enclosure that prevents the possibility of loss or
+breeding with other animals, the transfer is registered with the Department of Energy and 
+Environmental Protection, and the transferee meets all requirements set forth in this 
+subsection.
+(3) Registered primates may be transferred to a municipal park, zoo, marine mammal
+park, aquarium, nature center, museum, exhibitor, laboratory or research facility, provided 
+the transfer is registered with the Department of Energy and Environmental Protection.
+(4) The registrant shall immediately notify the Department of Energy and Environmental
+Protection upon the death of a registered primate.
+(5) The registrant shall update the Department of Energy and Environmental Protection 
+concerning the status of such registered primate when requested by the commissioner.
+(6) Upon adequate notice, the registrant shall allow a representative of the Department
+of Energy and Environmental Protection to inspect such registered primate and the enclosure 
+in which such primate is kept.
+(d)  Permit Duration and Revocation .
+(1) The commissioner may, upon receipt of an application, issue a permit authorizing 
+the importation and possession of a Category Four Wild Animal, as follows:
+(A) The duration of an importation or possession permit shall be for the life of the 
+specific wild animal listed on the permit;
+(B) An importation and possession permit is not transferable; and 
+(C) The commissioner may at any time revoke, in accordance with the provisions of the 
+Uniform Administrative Procedure Act, an importation or possession permit for failure by 
+the permittee to comply with the terms of a permit or any statute or regulation governing 
+importation or possession of wild animals.
+(2) The commissioner may, upon receipt of an application, issue a permit authorizing 
+the liberation of wild animals. The commissioner may prescribe the location and time of
+year such liberation may occur.
+(e)  Museums and Nature Centers . In order to qualify for the exemptions provided in 
+subsection (b) of this section, the operator of a museum or nature center shall meet the 
+following minimum requirements:
+(1) For purposes of importing or possessing mammals, holds a Class C (“exhibitor’s”)
+- 7-
+Regulations of C onnecticut State Agencies 
+license issued by the United States Department of Agriculture pursuant to the Animal
+Welfare Act (7 USC 54), and a copy of the last inspection report signed and dated by the 
+United States Department of Agriculture;
+(2) Holds municipal, state, or federal permits or licenses required to possess wild 
+animals;
+(3) Complies with all applicable laws of the municipality in which the housing facility 
+is located;
+(4) Accommodates a minimum of 5,000 visitors to the facility annually;
+(5) Has regularly scheduled hours open to the public consisting of a minimum of 28 
+hours per week, and eight months within a calendar year;
+(6) Maintains the wild animal under conditions that give the owner or keeper exclusive 
+control over it at all times as to prevent loss or risk of injury to the public;
+(7) Maintains a housing facility consistent with design standards established pursuant
+to the United States Animal Welfare Act (7 USC 54) and complies with state and local health 
+and building codes;
+(8) Maintains liability insurance of a least $1 million;
+(9) Maintains a plan for the recapture or destruction of any such wild animal in the event
+of loss;
+(10) Maintains a plan for the maintenance or disposition of all wild animals in the event
+of the owner or keeper’s absence, illness, or death;
+(11) Maintains complete and accurate records for each wild animal in its possession 
+which identify:
+(A) The species, sex, age, and lineage of each wild animal;
+(B) Date of birth and acquisition of each wild animal;
+(C) If applicable, the name and address of any person who has previously possessed the 
+wild animal and date of transfer; and 
+(D) The date of the death, loss or transfer to another person of each wild animal; and 
+Maintains records required by this subsection in chronological order, for a minimum of
+five years after the date of death, loss, or transfer of any wild animal and makes such records 
+available for inspection at any reasonable time upon request of the commissioner or the 
+commissioner’s designee.
+(f)  Exhibitors . In order to qualify for the exemptions provided in subsection (b) of this 
+section, an exhibitor shall meet the following minimum requirements:
+(1) For purposes of importing or possessing mammals, holds a Class C (“exhibitor’s”)
+license issued by the United States Department of Agriculture pursuant to the Animal
+Welfare Act (7 USC 54), and a copy of the last inspection report signed and dated by the 
+United States Department of Agriculture;
+(2) Holds all municipal, state, or federal permits or licenses required to possess wild 
+animals;
+(3) Complies with all applicable laws of the municipality in which the housing facility 
+is located;
+(4) Has conducted public programs involving the exhibition of the wild animals subject
+to this section and in the exhibitor’s possession, and maintains documentation thereof. Such 
+public programs shall meet the following criteria:
+- 8-
+Regulations of C onnecticut State Agencies 
+(A) Fifty programs or before 1,000 attendees within the first two years of possession of
+a Category One or Two Wild Animal, or, in the case of mammals, attaining a Class C license 
+as described in subdivision (1) of this subsection; and 
+(B) Fifty programs or before 1,000 attendees in the third year of possession of a Category 
+One or Two Wild Animal, or, in the case of mammals, attaining a Class C license, as 
+described in subdivision (1) of this subsection, and in each calendar year thereafter;
+(5) Maintains the wild animal under conditions that give the owner or keeper exclusive 
+control over them at all times as to prevent loss or risk of injury to the public;
+(6) Maintains a housing facility consistent with the design standards established pursuant
+to the United States Animal Welfare Act (7 USC 54) and compliant with state and local
+health and building codes;
+(7) Maintains liability insurance of a least $1 million;
+(8) Maintains a plan for the recapture or destruction of any such wild animal in the event
+of loss;
+(9) Maintains a plan for the maintenance or disposition of all wild animals in the event
+of the owner or keeper’s absence, illness, or death;
+(10) Maintains documentation to verify a minimum of one year of practical husbandry 
+or a minimum of 300 hours of formalized training or apprenticeship in the care, feeding,
+handling and husbandry of the species to be possessed or of another species that is 
+substantially similar to the species to be possessed in size, characteristics, care and 
+nutritional requirements. A Bachelor of Science or higher degree in a relevant biological
+science, obtained at an accredited institution of higher learning, may be substituted for 150 
+hours of apprenticeship. Documentation shall consist of:
+(A) A description of the specific experience acquired;
+(B) The date and time the experience was obtained and the specific locations where 
+acquired; and 
+(C) A minimum of two references from a professional organization or governmental
+institution such as a university, zoological association, or federal agency;
+(11) Has not been convicted of violating wild animal laws or regulations of any state,
+the federal government or other country pertaining to the importation, possession, liberation,
+or welfare of wild animals;
+(12) Maintains complete and accurate records for each wild animal in its possession 
+which identify:
+(A) The species, sex, age, and lineage of each wild animal;
+(B) Date of birth and acquisition;
+(C) If applicable, the name and address of any person who has previously possessed the 
+wild animal and date of transfer; and 
+(D) The date of the death, loss or transfer to another person of each wild animal; and 
+(13) Maintain records required by this subsection in chronological order, for a minimum 
+of five years after the date of death, loss, or transfer of any wild animal and shall make such 
+records available for inspection at any reasonable time upon request of the commissioner
+or the commissioner’s designee.
+(g)  Notification Requirement . Any person possessing a Category One or Two Wild 
+Animal who loses such wild animal shall notify the Department of Energy and 
+- 9-
+Regulations of C onnecticut State Agencies 
+Environmental Protection upon becoming aware of the loss.
+(h)  Disease Reporting and Prevention .
+(1) Any person who possesses a wild animal showing any symptoms of illness within 
+six weeks of the importation of such wild animal shall, not later than twenty-four hours 
+after recognition of such symptoms, file a report with the commissioner on a form prescribed 
+by the commissioner. The commissioner may require that any wild animal imported into 
+the state that shows symptoms of illness or disease be quarantined for a period of time to 
+be determined by the commissioner.
+(2) Any person who possesses a wild animal that continues to show symptoms of illness 
+or disease during the quarantine period described in subdivision (1) of this subsection shall
+immediately have such animal taken to a licensed veterinarian for examination, or if the 
+animal is dead, shall have such animal taken to an animal disease laboratory, or such other
+laboratory designated by the commissioner, for examination. Such person shall request that
+a copy of the animal disease laboratory’s, or other laboratory’s, findings be sent to the 
+Department of Energy and Environmental Protection and the Department of Agriculture.
+(Effective March 5, 2012)
+- 10 -
+Regulations of C onnecticut State Agencies 

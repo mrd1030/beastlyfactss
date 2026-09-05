@@ -44,6 +44,8 @@ about this species", not to claim a new verification date.
 | `OR-or-framework.txt` | Oregon's two closed lists explained, plus the not-wild list, the default bar and the exotic animal statute |
 | `OR-or-species-lists.txt` | Oregon's Prohibited, Noncontrolled and Controlled wildlife lists in full |
 | `OR-or-invertebrates.txt` | Oregon's approved invertebrate list, the rule that answers a tarantula or roach question there |
+| `CT-ct-26-55-6.txt` | Connecticut's four-category wild animal regulation, whose definitions decide more than its lists |
+| `CT-ct-deep-listings.txt` | The DEEP fact sheet statuses that decide which Connecticut animals are Category Four |
 
 ## Reading the awkward ones
 
@@ -58,6 +60,11 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   as *Geochelone*, the crested gecko would be *Rhacodactylus*, and the bearded dragon is
   printed as *vittaceps* for *vitticeps*. Search the genus and the synonym, not just the
   current name.
+- **`CT-ct-26-55-6.txt`** is a state where the definitions in subsection (a) matter more than
+  the category lists. "Wild animal" reaches invertebrates, and "domestic animal" is defined by
+  what selective breeding has done rather than by species, which is what makes the pet rabbit
+  clean there when the same species is a hard call in Minnesota and Illinois. Read (a)(7) and
+  (a)(21) before the lists.
 - **The Oregon files** describe a state where absence from a list is a ban, not silence, and
   where two agencies run two separate closed lists. Before recording anything for Oregon, check
   which law reaches the animal: ORS 609.305 covers only cats, primates, non-wolf canids, bears
@@ -97,6 +104,8 @@ not on the sites, so a person with a browser can open all of them.
 | `apps.azsos.gov` | Cloudflare challenge | Use Cornell LII or animallaw.info, and cross-check two reproductions |
 | `regulations.delaware.gov` | Angular app, serves an empty shell to every fetcher | Use `delcode.delaware.gov` for statutes and a reproduction for regulations |
 | `law.justia.com`, `invasive.org` | 403 | Find another reproduction |
+| `cga.ct.gov` | Connection reset on every route: curl, python, headless Chromium | No workaround found. `search.cga.state.ct.us` answers but its statute search returns nothing. Connecticut statutes could not be read; the regulations at `eregulations.ct.gov` can |
+| `eregulations.ct.gov` | `Browse/getDocument?guid=<guid>` works and returns a PDF; browse and search are JS-driven behind bot protection | Keep the GUID for any section you find, because there is no way back to it |
 | `www.sos.state.co.us` | Works with curl, but PDF links are not in the HTML | Scrape `OpenRuleWindow('<id>'` off the rule page, then fetch `/CCR/GenerateRulePdf.do?ruleVersionId=<id>` |
 | `drive.google.com` | CPW publishes its species lists here | Fetch `https://drive.google.com/uc?export=download&id=<id>`; the ids are in the accordion markup, not in any `.pdf` link |
 | `revisor.mn.gov` | Works with plain curl, occasional TLS handshake failure on the first try | Retry once. Statutes at `/statutes/cite/<section>`, rules at `/rules/<part>/`; a bare chapter number gives only the table of parts |

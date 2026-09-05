@@ -95,146 +95,146 @@
       "NE"
     ],
     "remaining": 0,
-    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 11 of the 52 jurisdictions have now been read for all 52 animals and 32 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
+    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 12 of the 52 jurisdictions have now been read for all 52 animals and 33 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 12,
+        "checked": 13,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 12,
+        "checked": 13,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 13,
+        "checked": 14,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 13,
+        "checked": 14,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 13,
+        "checked": 14,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 13,
+        "checked": 14,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 13,
+        "checked": 14,
         "of": 51
       },
       "green-anole": {
-        "checked": 13,
+        "checked": 14,
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "tarantula": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "axolotl": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "box-turtle": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 38,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 38,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 38,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 38,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 39,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 39,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 39,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 39,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 40,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 41,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "green-iguana": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "burmese-python": {
-        "checked": 42,
+        "checked": 43,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "degu": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "hamster": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "gerbil": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "bengal-cat": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "milk-snake": {
@@ -258,7 +258,7 @@
         "of": 51
       },
       "chinchilla": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "fennec-fox": {
@@ -970,9 +970,9 @@
       "note": "CDFW's current Freshwater Sport Fishing Regulations booklet, which reprints Title 14 section 5.60 in full, including species bag limits and county closures."
     },
     "ct-26-55-6": {
-      "title": "Regs. Conn. State Agencies § 26-55-6",
+      "title": "Regs. Conn. State Agencies § 26-55-6, Importation, possession or liberation of wild birds, mammals, reptiles, amphibians and invertebrates",
       "url": "https://eregulations.ct.gov/eRegsPortal/Browse/getDocument?guid=%7B6B566428-3A6A-452A-9E3A-7AF89D95D371%7D",
-      "note": "Connecticut's official eRegulations portal text sorting wild animals into four possession categories by danger level."
+      "note": "Connecticut's official eRegulations text, served as a PDF. This is the operative rule for every animal on this map, and it sorts wild animals into four categories. Category One (four mammal families) and Category Two (a long specific list) may be possessed only by institutions; Category Three, which is Connecticut's own native species, bars import and export but not possession; Category Four, the state endangered, threatened and special concern species, needs a permit. An animal in none of the four is not restricted by this section. The definitions in subsection (a) do more work than the lists: 'wild animal' reaches invertebrates, and 'domestic animal' is defined in a way that takes the pet rabbit and the ferret out of the scheme entirely."
     },
     "de-native-wildlife": {
       "title": "Del. Code tit. 7, c. 7",
@@ -1313,6 +1313,11 @@
       "title": "OAR 603-052-1320, Approved Species (Non-Regulated)",
       "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=603-052-1320",
       "note": "Oregon's second closed list, run by the Department of Agriculture and covering terrestrial invertebrates, which the Fish and Wildlife rules never reach. Subsection (3) bars possessing any live invertebrate not on the list without a Department permit, and subsection (1) limits the clearance to stock collected within the continental United States. The list is long and written to species with the intended use in brackets, and most pet-trade arachnids, myriapods and roaches are on it. It does not apply to marine or aquatic invertebrates."
+    },
+    "ct-deep-fact-sheets": {
+      "title": "Connecticut DEEP wildlife fact sheets, listing status",
+      "url": "https://portal.ct.gov/deep/wildlife/fact-sheets/eastern-box-turtle",
+      "note": "DEEP's own species pages carry the state listing status in their header, which is what decides whether an animal is a Category Four Wild Animal under § 26-55-6. The eastern box turtle and the eastern hog-nosed snake are both State Species of Special Concern; the common snapping turtle is not listed. Fact sheet URLs follow the common name with hyphens, but not predictably: eastern-hog-nosed-snake works and eastern-hognose-snake does not."
     }
   },
   "animals": {
@@ -1403,9 +1408,11 @@
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a",
-          "note": "Outside the four listed families.",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Erinaceidae appears in none of them, so the African pygmy hedgehog is unrestricted.",
+          "verifiedOn": "2026-09-05"
         },
         "MA": {
           "status": "legal",
@@ -1772,11 +1779,11 @@
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 26-40a",
-          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
-          "note": "Connecticut's potentially dangerous animal list runs to four families: cats, dogs, bears and great apes. Mustelids appear nowhere in it, so the ferret is untouched by the statute."
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(7), (a)(21)",
+          "quote": "\"Domestic animal\" means any animal that humans have selectively bred in captivity to produce genetic changes affecting the temperament, color, conformation, or other attributes of the species to an extent that makes such animal unique and distinguishable from wild individuals of the species, and that has been raised in a life intimately associated with and advantageous to humans. \"Domestic animal\" does not include any wild animal raised in captivity, even over many generations, that has become accustomed to human interaction but that is still wild by nature.",
+          "note": "The domestic ferret is a domestic animal on this definition and so is not a wild animal at all, which is the cleanest of the several routes to the same answer. It matters here more than it looks: Mustelidae is a Category Three Wild Animal, listed with the weasels, mink, fisher, otter and marten, so a wild mustelid is restricted on import and export while the pet ferret sits outside the regulation. This entry previously rested on § 26-40a, which reaches four mammal families and no mustelid; true, but the regulation is the rule that would otherwise catch it.",
+          "verifiedOn": "2026-09-05"
         },
         "MA": {
           "status": "conditional",
@@ -2181,11 +2188,11 @@
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 26-40a",
-          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
-          "note": "Four families, none of them marsupial. The statute has nothing to say about a sugar glider."
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Category Two names eleven marsupial genera and subgenera, and every one of them is a macropod: tree kangaroos, forest wallabies, hare-wallabies, red and grey kangaroos, nail-tailed and rock wallabies, the quokka, pademelons and the swamp wallaby. Petaurus is not among them, so the sugar glider is unrestricted while most of the kangaroo family is barred.",
+          "verifiedOn": "2026-09-05"
         },
         "MA": {
           "status": "legal",
@@ -2869,6 +2876,14 @@
           "note": "Oregon appears to have exempted the wrong hamster. The not-wild list at OAR 635-056-0020(14) reads \"Common Hamster — Cricetus cricetus\", which is the European common hamster, a large wild burrowing rodent nobody keeps as a pet. The pet-shop animal is the Syrian or golden hamster, Mesocricetus auratus, and that binomial appears nowhere in the division: not on the not-wild list, not on the noncontrolled list, which clears the dwarf hamsters of the genus Phodopus, and not on the prohibited list, which names Calomyscus and Cricetulus. An unlisted mammal is not unregulated in Oregon; OAR 635-056-0130(1) bars possessing it. Read literally, the commonest small pet in the country cannot be kept here. Recorded unclear rather than banned because the exemption plainly means to reach the pet hamster and attaches the wrong name to it, and because pet hamsters are sold openly in Oregon. It is the clearest drafting slip found on this map, and the fix is one binomial. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxv)",
+          "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
+          "note": "Connecticut puts the whole order Rodentia in Category Two, which bars private possession, and then excepts nine species. The Syrian or golden hamster, Mesocricetus auratus is one of them, so it is named in the regulation rather than merely absent from it. Connecticut names the binomial correctly and separately excepts the dwarf hamsters of the genera Phodopus and Cricetulus, so both pet hamster groups are covered. Oregon writes the same exception with the wrong binomial and leaves the pet hamster unlisted; this is what the clause is supposed to look like.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3223,6 +3238,14 @@
           "note": "This is the strongest position an animal can hold in Oregon. ORS 496.004(19) leaves it to the commission to define which mammals count as wild, and this rule is that definition: the 32 species on it are declared not wild and fall outside the wildlife rules altogether, rather than being permitted by them. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxv)",
+          "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
+          "note": "Connecticut puts the whole order Rodentia in Category Two, which bars private possession, and then excepts nine species. The gerbil, Meriones unguiculatus is one of them, so it is named in the regulation rather than merely absent from it. Named to the species. Everything in Rodentia that is not one of the nine, the prairie dog and the degu included, is Category Two and barred to private keepers.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "gerbil"
@@ -3587,6 +3610,14 @@
           "note": "Oregon is unusual in that its parrot exemption is written at order level with no carve-out at all, so the monk parakeet sits in it alongside every other psittacine. The species is named nowhere in the division: not on the prohibited bird list, not among the controlled birds, which are the mute swan, the raptors, the game birds and three named passerines. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxvii), (b)(3)",
+          "quote": "Monk parakeet (Myiopsitta monachus)",
+          "note": "Connecticut names the monk parakeet by species in Category Two, and it is the only psittacine anywhere in the regulation. Every other parrot falls outside all four categories and is unrestricted, so this is a single-species rule sitting in the middle of an otherwise untouched order. Subsection (b)(3) allows possession of a Category Two animal only by a vet treating it, a municipal park, zoo, marine mammal park, aquarium, nature centre, museum, exhibitor, laboratory or research facility. There is no private permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "quaker-parakeet"
@@ -3960,6 +3991,14 @@
           "note": "Oregon has no hybrid clause anywhere in its exotic animal statute, which is what decides this. The definition names Felidae and excepts Felis catus, and the wildlife rules separately declare \"Cat (all domestic breeds) — Felis catus\" not wild, so a Bengal registered as a domestic breed sits on the exempt side of both. The statute goes further than silence: ORS 609.341(4)(a)(B) expressly contemplates breeding a small exotic feline with a domestic cat for retail sale of the offspring under an Agriculture permit, which is the Bengal and Savannah breeding programme described in a statute that then does nothing to the offspring. Compare Minnesota, where the same question turns on a hybrid sentence Oregon never wrote. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(A)",
+          "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes; (B) A member within the family Canidae (including, but not limited to, wolf and coyote); (C) A member within the family Ursidae ...; or (D) A member within the family Hominidae ...",
+          "note": "Connecticut writes the exception into the middle of the family listing: Felidae, \"except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes\". It is the only species carved out of Category One by name, and there is no generation cutoff, weight threshold or registration attached to it. The clause also opens with \"notwithstanding changes in taxonomic nomenclature\", which forecloses the argument that a reclassification could pull the animal back in. Set against Minnesota, where a carve-out and a hybrid sentence in one definition contradict each other, this is what an unambiguous answer to the hybrid question looks like.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -4031,11 +4070,11 @@
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 26-40a",
-          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
-          "note": "The list is entirely mammalian. Connecticut restricts no reptile under this section."
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No chameleon appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         },
         "MA": {
           "status": "legal",
@@ -4677,6 +4716,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Oregon clears the tortoises as a family with no exceptions and no range test, which is the opposite of how Colorado now does it. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No tortoise appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three. One caveat that applies to every Connecticut turtle on this map: Conn. Gen. Stat. § 26-78 addresses turtles separately from the regulation, and it could not be read this sitting because cga.ct.gov refuses every connection from this container. This entry rests on § 26-55-6, which is the comprehensive rule and mentions no turtle sale ban, and the point is flagged rather than assumed away.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/russian-tortoise-legal-guide/"
@@ -4736,11 +4783,11 @@
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 26-40a",
-          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
-          "note": "The list is entirely mammalian, so Connecticut applies no length or species test to constrictors here."
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Category Two names four pythons, the northern and southern African, the reticulated and the amethystine, and the ball python is not one of them. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         },
         "MA": {
           "status": "legal",
@@ -5099,11 +5146,11 @@
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 26-40a",
-          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
-          "note": "The list is entirely mammalian. Unlike Ohio and Louisiana, Connecticut sets no constrictor size limit in this statute."
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Category Two names three anacondas and four large pythons and no other boid, so there is no length test and no family-wide rule to catch a boa constrictor. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         },
         "MA": {
           "status": "legal",
@@ -5739,6 +5786,14 @@
           "note": "Oregon runs two closed lists, and this animal is on the second one. ORS 496.004(19) defines wildlife as fish, shellfish, amphibians, reptiles, feral swine, wild birds and wild mammals, so a terrestrial arthropod is outside the Fish and Wildlife rules entirely; the Department of Agriculture picks it up instead under its plant pest authority. Cleared at family level and marked for pet use, so no species question arises. The asterisked stock restriction on the two entries below it, the wolf spider and the orb weaver, which may come only from Pacific Northwest stock, does not apply to the tarantulas. The condition is a real one and easy to miss: the clearance applies only to stock collected within the continental United States, so an animal imported from abroad needs a Department permit even though the species is approved. Nothing on this list is unregulated; an invertebrate absent from it may not be possessed at all without a permit. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. A tarantula appears in none of them. This one is worth stating carefully, because Connecticut is unusual in that its definition of wild animal does reach invertebrates, and the section is titled importation, possession or liberation of wild birds, mammals, reptiles, amphibians and invertebrates. So the answer here is not the jurisdictional gap that clears the same animal in Arizona, Nevada and Pennsylvania; Connecticut has the authority and has simply not used it against any terrestrial arthropod. The only invertebrates that could be caught are ones on the state endangered, threatened and special concern list, which is Connecticut's own beetles, dragonflies and mussels.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -6059,6 +6114,14 @@
           "quote": "Invertebrate species listed as approved may be imported, possessed, sold, purchased, exchanged, transported, or released in Oregon without a permit from the Department. This applies only to stock collected within the continental United States. ... Emperor scorpion, Pandinus imperator (education, pet). ... Live invertebrates not on the list of approved invertebrates in any life stage may not be imported, possessed, sold, purchased, exchanged, transported, or released in the state unless a permit is first obtained from the Department.",
           "note": "Oregon runs two closed lists, and this animal is on the second one. ORS 496.004(19) defines wildlife as fish, shellfish, amphibians, reptiles, feral swine, wild birds and wild mammals, so a terrestrial arthropod is outside the Fish and Wildlife rules entirely; the Department of Agriculture picks it up instead under its plant pest authority. Named to the species and marked for pet use, in a scorpion section that runs to more than a dozen entries including the fat-tailed scorpions and the deathstalker. The condition is a real one and easy to miss: the clearance applies only to stock collected within the continental United States, so an animal imported from abroad needs a Department permit even though the species is approved. Nothing on this list is unregulated; an invertebrate absent from it may not be possessed at all without a permit. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The emperor scorpion appears in none of them. This one is worth stating carefully, because Connecticut is unusual in that its definition of wild animal does reach invertebrates, and the section is titled importation, possession or liberation of wild birds, mammals, reptiles, amphibians and invertebrates. So the answer here is not the jurisdictional gap that clears the same animal in Arizona, Nevada and Pennsylvania; Connecticut has the authority and has simply not used it against any terrestrial arthropod. The only invertebrates that could be caught are ones on the state endangered, threatened and special concern list, which is Connecticut's own beetles, dragonflies and mussels.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6413,6 +6476,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The Argentine black and white tegu was Tupinambis merianae when this entry was written and was moved to Salvator in 2012. Oregon still names the old genus, which is the taxonomy the entry has to be read in. Notable for what Oregon did not do: several states wrote tegu-specific restrictions after the Florida populations established, and this clearance is untouched. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Teiidae appears in no category. Connecticut has not followed the states that wrote tegu-specific rules after the Florida populations established. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6747,6 +6818,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The family is cleared with one exception, the desert monitor, and it is not this species. Oregon draws the line by species rather than by adult size, so the savannah and the Nile monitor land in the same place. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Read the five named monitors to the species: the Nile, water, black-throated, white-throated and crocodile monitors. The black-throated and white-throated are subspecies of Varanus albigularis, not the savannah monitor, Varanus exanthematicus, which is named nowhere. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -6797,12 +6876,12 @@
           "note": "The closed definition runs to primates, cats and their hybrids, canids, bears, some reptiles and crocodilians. No rodent is in it."
         },
         "CT": {
-          "status": "legal",
-          "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 26-40a",
-          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
-          "note": "No rodent appears on the list. The four families named are cats, dogs, bears and great apes."
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxv), (b)(3)",
+          "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
+          "note": "Connecticut regulates rodents the opposite way round from most states: rather than naming the ones it bars, it puts the whole order Rodentia in Category Two and then excepts nine, the guinea pig, gerbil, chinchilla, rat, mouse, hamster, dwarf hamsters, Patagonian mara and American beaver. The prairie dog is not among them. This entry previously read as unrestricted on the strength of § 26-40a, which lists four mammal families and reaches no rodent; that is true of the statute and beside the point, because the regulation is where a rodent question is answered here. Subsection (b)(3) allows possession of a Category Two animal only by a vet treating it, a municipal park, zoo, marine mammal park, aquarium, nature centre, museum, exhibitor, laboratory or research facility. There is no private permit.",
+          "verifiedOn": "2026-09-05"
         },
         "MA": {
           "status": "permit",
@@ -7206,12 +7285,12 @@
           "verifiedOn": "2026-08-04"
         },
         "CT": {
-          "status": "legal",
-          "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04",
-          "cite": "§ 26-40a",
-          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
-          "note": "No rodent appears on the list, so size is not the test here the way it is in states that regulate by weight."
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxv), (b)(3)",
+          "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
+          "note": "Connecticut regulates rodents the opposite way round from most states: rather than naming the ones it bars, it puts the whole order Rodentia in Category Two and then excepts nine, the guinea pig, gerbil, chinchilla, rat, mouse, hamster, dwarf hamsters, Patagonian mara and American beaver. The capybara is not among them, and note what is: the Patagonian mara, another large caviomorph, is excepted while the capybara is not. So this is a deliberate line rather than an oversight, and it is not drawn on size. This entry previously read as unrestricted on the four-family statute. Subsection (b)(3) allows possession of a Category Two animal only by a vet treating it, a municipal park, zoo, marine mammal park, aquarium, nature centre, museum, exhibitor, laboratory or research facility. There is no private permit.",
+          "verifiedOn": "2026-09-05"
         },
         "MA": {
           "status": "permit",
@@ -7617,9 +7696,11 @@
         },
         "CT": {
           "status": "banned",
-          "sourceId": "ct-26-40a",
-          "quote": "The canidae, including, but not limited to, the wolf, and coyote",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(B), (b)(1)",
+          "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes; (B) A member within the family Canidae (including, but not limited to, wolf and coyote); (C) A member within the family Ursidae ...; or (D) A member within the family Hominidae ...",
+          "note": "Connecticut draws its canid line by family, the same way it draws its cat line, so the fennec fox sits in Category One with the wolf and the coyote. Most states that ban a serval leave the fennec fox alone, because their cat rules are family-wide and their canid rules are species-specific; Connecticut and Oregon are the two on this map that write both by family. The regulation carries one grandfather clause and it is not this one: a primate under 35 pounds at maturity lawfully held on or before 1 October 2003 may be kept on registration, and nothing similar is written for any other category.",
+          "verifiedOn": "2026-09-05"
         },
         "AZ": {
           "status": "restricted",
@@ -8021,13 +8102,11 @@
         },
         "CT": {
           "status": "banned",
-          "sourceId": "ct-26-40a",
-          "quote": "The felidae, including, but not limited to, the lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat",
-          "verifiedOn": "2026-08-04",
-          "grandfathered": {
-            "before": "2010-10-01",
-            "detail": "Primates under 35 lb imported before this date are exempt; the statute grandfathers by date generally."
-          }
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(A), (b)(1)",
+          "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes; (B) A member within the family Canidae (including, but not limited to, wolf and coyote); (C) A member within the family Ursidae ...; or (D) A member within the family Hominidae ...",
+          "note": "Connecticut names Felidae as a family and lists nine examples, and the serval is caught by the family rather than by name. Subsection (b)(1) then allows possession only by a municipal park, zoo, public nonprofit aquarium, nature centre, museum, or a USDA-licensed exhibitor, laboratory or research facility, so there is no private route at all rather than a permit that is hard to get. The regulation carries one grandfather clause and it is not this one: a primate under 35 pounds at maturity lawfully held on or before 1 October 2003 may be kept on registration, and nothing similar is written for any other category.",
+          "verifiedOn": "2026-09-05"
         },
         "AZ": {
           "status": "restricted",
@@ -8775,6 +8854,14 @@
           "note": "This is the strongest position an animal can hold in Oregon. ORS 496.004(19) leaves it to the commission to define which mammals count as wild, and this rule is that definition: the 32 species on it are declared not wild and fall outside the wildlife rules altogether, rather than being permitted by them. Oregon names the domesticated chinchilla directly, and separately prohibits the Argentine plains viscacha, its wild relative in the same family. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxv)",
+          "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
+          "note": "Connecticut puts the whole order Rodentia in Category Two, which bars private possession, and then excepts nine species. The chinchilla, Chinchilla lanigera is one of them, so it is named in the regulation rather than merely absent from it. Named to the species, and to the species rather than the genus: Chinchilla chinchilla, the short-tailed chinchilla, is not excepted.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9134,6 +9221,14 @@
           "note": "This is the strongest position an animal can hold in Oregon. ORS 496.004(19) leaves it to the commission to define which mammals count as wild, and this rule is that definition: the 32 species on it are declared not wild and fall outside the wildlife rules altogether, rather than being permitted by them. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxv)",
+          "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
+          "note": "Connecticut puts the whole order Rodentia in Category Two, which bars private possession, and then excepts nine species. The guinea pig, Cavia porcellus is one of them, so it is named in the regulation rather than merely absent from it. Named to the species, and the Patagonian mara is excepted a few words later, so two caviomorphs are cleared while the capybara, a third, is not.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9481,6 +9576,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Iguana iguana is a nonnative iguanid and none of the five excepted genera, which are all Oregon natives. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Iguanidae appears in no category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -9829,6 +9932,14 @@
           "note": "The whole family is prohibited, so the alligator snapping turtle goes with the common one. Chelydridae appears nowhere on the noncontrolled list, which clears eight other turtle families. OAR 635-056-0150 allows someone who held the animal before the commission listed it to keep it for its life, on proof of lawful prior possession, with no transfer, sale or transport inside Oregon and no release. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The common snapping turtle is a Connecticut native but is not among the eight herptiles in Category Three, and DEEP's fact sheet shows it as unlisted rather than of special concern, so it is not Category Four either. Taking one from the wild is a separate question governed by DEEP's harvest regulations rather than by this section. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three. One caveat that applies to every Connecticut turtle on this map: Conn. Gen. Stat. § 26-78 addresses turtles separately from the regulation, and it could not be read this sitting because cga.ct.gov refuses every connection from this container. This entry rests on § 26-55-6, which is the comprehensive rule and mentions no turtle sale ban, and the point is flagged rather than assumed away.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10155,6 +10266,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Gekko gecko is a Gekkonidae in any taxonomy, so nothing turns on the family question here. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No gecko appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10493,6 +10612,14 @@
           "note": "Prohibited by name, and the reason is next door: eastern Oregon has its own tiger salamander population, and the rule bars the nonnative subspecies that would hybridise with it. Oregon lists nineteen caudates as prohibited and four as noncontrolled, and the axolotl is on the short list while this species is on the long one. OAR 635-056-0150 allows someone who held the animal before the commission listed it to keep it for its life, on proof of lawful prior possession, with no transfer, sale or transport inside Oregon and no release. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Ambystoma tigrinum is not a Connecticut species, so neither the Category Three native list nor the state endangered and threatened list reaches it. Connecticut is at the opposite end from Oregon here, which prohibits every nonnative subspecies of the same animal by name to protect its own population. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10832,6 +10959,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Varanus niloticus is cleared by the same family entry that clears the savannah monitor; the single exception is Varanus griseus. Several states separate these two on size or on the Florida populations, and Oregon does not. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxxv), (b)(3)",
+          "quote": "Nile monitor (Varanus niloticus), water monitor (Varanus salvator), black-throated monitor (Varanus a. ionidesi), white-throated monitor (Varanus a. albigularis) or crocodile monitor (Varanus salvadorii)",
+          "note": "Connecticut names five monitors and the Nile monitor is the first of them. Read the list to the species: the two albigularis subspecies named are the black-throated and white-throated monitors, which are a different species from the savannah monitor, so Varanus exanthematicus is not caught and neither is the ackie. Subsection (b)(3) allows possession of a Category Two animal only by a vet treating it, a municipal park, zoo, marine mammal park, aquarium, nature centre, museum, exhibitor, laboratory or research facility. There is no private permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11189,6 +11324,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Oregon itself does not restrict this species: the family entry clears it and there is no length trigger. Federal law is the constraint that bites, since the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport into Oregon. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Worth noticing what Connecticut left out: Category Two names the northern African, southern African, reticulated and amethystine pythons and stops, so Python bivittatus is not caught. The Category Two clause that picks up federal injurious wildlife refers only to 50 CFR 16.11, which is the mammals section; the Burmese python is listed at 50 CFR 16.15 and is not reached by the cross-reference. Federal law still bars importation and interstate transport of the species under that listing, so it cannot lawfully cross a state line into Connecticut. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11543,6 +11686,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Cleared at genus level. Oregon is unusually specific about which rodents it will and will not have: the same rule clears the mara, the paca, the agoutis and the dwarf hamsters, and the prohibited list names the capybara, the prairie dogs and the plains viscacha. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxv), (b)(3)",
+          "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
+          "note": "Connecticut regulates rodents the opposite way round from most states: rather than naming the ones it bars, it puts the whole order Rodentia in Category Two and then excepts nine, the guinea pig, gerbil, chinchilla, rat, mouse, hamster, dwarf hamsters, Patagonian mara and American beaver. The degu is not among them. The exception list names every small rodent that is commonly sold, including both hamster groups, which makes the degu's absence hard to read as accidental. Subsection (b)(3) allows possession of a Category Two animal only by a vet treating it, a municipal park, zoo, marine mammal park, aquarium, nature centre, museum, exhibitor, laboratory or research facility. There is no private permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -11859,6 +12010,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Oregon lists only four caudates as Noncontrolled and the axolotl is the first of them. Its close relative is on the opposite list: Ambystoma tigrinum, all nonnative subspecies, is prohibited. Two Ambystoma, one cleared by name and one banned by name, in the same division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The four amphibians in Category Three are Fowler's toad, the northern dusky salamander, the gray treefrog, the eastern newt and the wood frog, all Connecticut natives, and no amphibian appears in Category Two at all. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12181,6 +12340,15 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Terrapene is not among the nine excepted genera, so box turtles are cleared while most of the rest of the family is not. Every one of those exceptions appears on the prohibited list, so this is a clearance with real teeth around it: the red-eared slider, four lines below the box turtle in the same family, is banned outright in Oregon. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "permit",
+          "sourceId": "ct-deep-fact-sheets",
+          "cite": "§ 26-55-6(a)(5), (b)(5), (d); Conn. Gen. Stat. § 26-306",
+          "quote": "Eastern Box Turtle. Terrapene carolina carolina. State Species of Special Concern ... Because of the population decline in Connecticut, the box turtle was added to the state's List of Endangered, Threatened, and Special Concern Species when it was revised in 1998.",
+          "note": "Category Four is defined as any wild animal listed as endangered, threatened or of special concern under Conn. Gen. Stat. § 26-306, and DEEP's own fact sheet puts the eastern box turtle there. Subsection (b)(5) bars importing or possessing one without a permit, and subsection (d) makes the permit specific to the individual animal, valid for that animal's life and non-transferable. Unlike Category One and Two, this is a real permit route rather than an institutional exemption. Connecticut is not distinguishing captive-bred from wild here; the listing attaches to the species. One caveat that applies to every Connecticut turtle on this map: Conn. Gen. Stat. § 26-78 addresses turtles separately from the regulation, and it could not be read this sitting because cga.ct.gov refuses every connection from this container. This entry rests on § 26-55-6, which is the comprehensive rule and mentions no turtle sale ban, and the point is flagged rather than assumed away.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12507,6 +12675,14 @@
           "note": "Both genera are prohibited outright, and the same species is excepted by name from the Emydidae clearance on the noncontrolled list, so Oregon says it twice. This is among the firmest positions any state on this map takes on the red-eared slider: not a licence, not an invasive-species labelling rule, a flat bar on possession, import, purchase, sale, exchange and transport. OAR 635-056-0150 allows someone who held the animal before the commission listed it to keep it for its life, on proof of lawful prior possession, with no transfer, sale or transport inside Oregon and no release. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "unclear",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5); Conn. Gen. Stat. § 26-78",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "The regulation gives one answer and a statute in the same chapter may give another. Under § 26-55-6 the red-eared slider is in none of the four categories: the only turtles Connecticut names are its own spotted turtle and diamond-backed terrapin, both Category Three, and Trachemys appears nowhere, so the regulation does not restrict it. But Conn. Gen. Stat. § 26-78 deals with turtles separately, and it is reported to bar importing, buying, selling and exchanging red-eared sliders. That section could not be read here: cga.ct.gov refuses every connection from this container, through curl, through a headless browser and through the CGA's own search service, and no reproduction was reachable either. Recorded unclear rather than legal because the regulation alone is not the whole chapter, and rather than banned because the text behind that claim has not been read. Subsection (b)(6) separately bars liberating any wild animal, which is not in doubt. Reading § 26-78 is the one thing left open in Connecticut.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12830,6 +13006,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The whole family is cleared, so the sulcata needs nothing. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No tortoise appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three. One caveat that applies to every Connecticut turtle on this map: Conn. Gen. Stat. § 26-78 addresses turtles separately from the regulation, and it could not be read this sitting because cga.ct.gov refuses every connection from this container. This entry rests on § 26-55-6, which is the comprehensive rule and mentions no turtle sale ban, and the point is flagged rather than assumed away.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13152,6 +13336,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Oregon clears one hognose by species and no others. The western hognose, Heterodon nasicus, is the pet-trade animal and is named. The eastern hognose, H. platirhinos, is on no list at all, which under OAR 635-056-0130(1) means it may not be possessed. A rule written to a single binomial is one to read exactly. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "conditional",
+          "sourceId": "ct-deep-fact-sheets",
+          "cite": "§ 26-55-6(a)(5), (b)(5); Conn. Gen. Stat. § 26-306",
+          "quote": "Eastern Hog-nosed Snake ... State Species of Special Concern",
+          "note": "Which hognose it is decides the answer, and the split runs the opposite way from Illinois. Connecticut's own eastern hog-nosed snake, Heterodon platirhinos, is a State Species of Special Concern, which makes it a Category Four Wild Animal needing a permit to import or possess. The western hognose, H. nasicus, is the animal the pet trade sells, is not a Connecticut species, and appears in none of the four categories, so it is unrestricted. Illinois lists the western and leaves the eastern alone; Connecticut does the reverse.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13472,6 +13664,14 @@
           "note": "The whole order Psittaciformes is declared not wild, so the African grey is outside the wildlife rules entirely. Federal CITES Appendix I paperwork is the live constraint on this species and is not an Oregon matter. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No parrot is regulated here except the monk parakeet. Federal CITES Appendix I paperwork is the live constraint on this species and is not a Connecticut matter.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13786,6 +13986,14 @@
           "note": "Oregon runs two closed lists, and this animal is on the second one. ORS 496.004(19) defines wildlife as fish, shellfish, amphibians, reptiles, feral swine, wild birds and wild mammals, so a terrestrial arthropod is outside the Fish and Wildlife rules entirely; the Department of Agriculture picks it up instead under its plant pest authority. Named to the species and marked for pet use, alongside five other millipedes. Oregon is one of the few states that answers this animal by name in either direction. The condition is a real one and easy to miss: the clearance applies only to stock collected within the continental United States, so an animal imported from abroad needs a Department permit even though the species is approved. Nothing on this list is unregulated; an invertebrate absent from it may not be possessed at all without a permit. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The giant African millipede appears in none of them. This one is worth stating carefully, because Connecticut is unusual in that its definition of wild animal does reach invertebrates, and the section is titled importation, possession or liberation of wild birds, mammals, reptiles, amphibians and invertebrates. So the answer here is not the jurisdictional gap that clears the same animal in Arizona, Nevada and Pennsylvania; Connecticut has the authority and has simply not used it against any terrestrial arthropod. The only invertebrates that could be caught are ones on the state endangered, threatened and special concern list, which is Connecticut's own beetles, dragonflies and mussels.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13826,11 +14034,11 @@
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a",
-          "cite": "§ 26-40a",
-          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
-          "note": "The potentially dangerous animal list is entirely mammalian.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No Pantherophis appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         },
         "DC": {
           "status": "legal",
@@ -14180,11 +14388,11 @@
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a",
-          "cite": "§ 26-40a",
-          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
-          "note": "The potentially dangerous animal list is entirely mammalian.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No Lampropeltis appears in any category. The eastern milk snake is a Connecticut native, but Category Three, which is where the natives sit, names only eight herptiles and this is not one. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         },
         "DC": {
           "status": "legal",
@@ -14520,11 +14728,11 @@
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a",
-          "cite": "§ 26-40a",
-          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
-          "note": "The potentially dangerous animal list is entirely mammalian, with no length or family test for constrictors at all.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The only boids named are the three anacondas, so a rosy boa is untouched. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         },
         "DC": {
           "status": "legal",
@@ -15094,6 +15302,14 @@
           "note": "Oregon names Glaucomys volans specifically, and separately prohibits the giant flying squirrels of the genus Petaurista. Oregon has its own native flying squirrel, the northern, which is why the prohibition is written to the southern species: this is a rule about keeping a nonnative congener out rather than about the pet trade as such. OAR 635-056-0150 allows someone who held the animal before the commission listed it to keep it for its life, on proof of lawful prior possession, with no transfer, sale or transport inside Oregon and no release. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxv), (b)(3)",
+          "quote": "A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis)",
+          "note": "Connecticut regulates rodents the opposite way round from most states: rather than naming the ones it bars, it puts the whole order Rodentia in Category Two and then excepts nine, the guinea pig, gerbil, chinchilla, rat, mouse, hamster, dwarf hamsters, Patagonian mara and American beaver. No squirrel is among them. Connecticut has its own native southern flying squirrel, which would otherwise be a Category Three native species; the rodent entry takes precedence, because Category Three is defined as applying only to an animal that is not already Category One, Two or Four. Subsection (b)(3) allows possession of a Category Two animal only by a vet treating it, a municipal park, zoo, marine mammal park, aquarium, nature centre, museum, exhibitor, laboratory or research facility. There is no private permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -15446,6 +15662,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Varanus acanthurus is cleared by the family entry, the single exception being Varanus griseus. A cleaner answer than the states whose monitor rules turn on native range or adult length. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The five named monitors are the Nile, water, black-throated, white-throated and crocodile monitors, and Varanus acanthurus is not among them. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -15504,9 +15728,10 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-55-6",
-          "cite": "Regs. Conn. State Agencies § 26-55-6",
-          "note": "Falls outside all four of Connecticut's regulated wild-animal categories: Category One is four dangerous mammal families, Category Two is dangerous reptiles plus the monk parakeet, Category Three is native birds and amphibians, and Category Four is state-listed endangered/threatened/special-concern species. A common garter snake is on none of them.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Thamnophis appears in no category. The one native colubrid in Category Three is the eastern racer, and Category Three bars import and export rather than possession in any event. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         },
         "DC": {
           "status": "legal",
@@ -15907,9 +16132,10 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-55-6",
-          "cite": "Regs. Conn. State Agencies § 26-55-6",
-          "note": "Outside all four of Connecticut's wild-animal categories, which reach only specific dangerous mammals, dangerous reptiles, native birds/amphibians, and state-listed species.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No Lampropeltis appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         },
         "DC": {
           "status": "legal",
@@ -16296,9 +16522,10 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-55-6",
-          "cite": "Regs. Conn. State Agencies § 26-55-6",
-          "note": "The only psittacine Connecticut regulates under any of its four wild-animal categories is the monk parakeet. General parrots and cockatoos fall outside the regulation entirely.",
-          "verifiedOn": "2026-08-27"
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The only psittacine anywhere in the regulation is the monk parakeet, which is Category Two. Cockatoos are untouched.",
+          "verifiedOn": "2026-09-05"
         },
         "DC": {
           "status": "legal",
@@ -16981,6 +17208,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The whole family is cleared. Worth contrasting with the turtles a few lines above, where Oregon excepts nine genera from the Emydidae clearance and prohibits most of them outright. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No tortoise appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three. One caveat that applies to every Connecticut turtle on this map: Conn. Gen. Stat. § 26-78 addresses turtles separately from the regulation, and it could not be read this sitting because cga.ct.gov refuses every connection from this container. This entry rests on § 26-55-6, which is the comprehensive rule and mentions no turtle sale ban, and the point is flagged rather than assumed away.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17094,6 +17329,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Cleared at genus level. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Agamidae appears in no category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17207,6 +17450,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Eublepharidae is named in its own right, so the leopard gecko is squarely inside it. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No gecko appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17320,6 +17571,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Worth a note on taxonomy: the crested gecko is placed in Diplodactylidae today, and Oregon names only Gekkonidae and Eublepharidae. The pairing of those two families is itself pre-2008 gecko taxonomy, under which Diplodactylinae was a subfamily of Gekkonidae, so the entry reads as covering it. Colorado writes the same clearance with Diplodactylidae named, which is the version that leaves nothing to argue about. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No gecko appears in any category, so the family reclassification that complicates this species in Colorado and Oregon does not arise here. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17433,6 +17692,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. Tiliqua is a nonnative skink and not Eumeces, the genus Oregon carves out for its own natives. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No skink appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17546,6 +17813,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. The whole family is cleared at once. Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. No chameleon appears in any category. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17658,6 +17933,14 @@
           "note": "Oregon runs a closed list for nonnative wildlife: OAR 635-056-0130(1) bars possessing any species the rules do not list, so being on the Noncontrolled list is a permission rather than an absence of one. This one turns on which Iguanidae the rule means. Anolis sits in Dactyloidae today, but the five genera Oregon excepts are Crotaphytus, Gambelia, Sceloporus, Uta and Phrynosoma, which now belong to Crotaphytidae and Phrynosomatidae and were only ever grouped together inside the broad old Iguanidae. The exceptions are what date the entry, and under that taxonomy the anoles are in it. Recorded legal on that reading; the alternative would put the species outside every list and into the default bar at OAR 635-056-0130(1). Reptiles and amphibians are wildlife in Oregon by statute rather than by rule, so every pet reptile question runs through this division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. Anolis appears in no category, and neither does any broader grouping that would reach it. Connecticut regulates reptiles by naming them, and what it names is danger and its own natives: crocodilians, the elapids and viperids, four large pythons, three anacondas, nine rear-fanged colubrid genera, the helodermatids, five monitors and the Komodo dragon in Category Two, and eight native herptiles in Category Three.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17764,6 +18047,14 @@
           "note": "This is the strongest position an animal can hold in Oregon. ORS 496.004(19) leaves it to the commission to define which mammals count as wild, and this rule is that definition: the 32 species on it are declared not wild and fall outside the wildlife rules altogether, rather than being permitted by them. Oregon is the clean counter-example to the states that name this species and leave the pet unaddressed: here Oryctolagus cuniculus is declared not wild outright, with no strain qualifier needed, while nonnative hares and cottontails are prohibited by the same division. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "verifiedOn": "2026-09-05",
           "localOverride": true
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(7), (a)(21)",
+          "quote": "\"Domestic animal\" means any animal that humans have selectively bred in captivity to produce genetic changes affecting the temperament, color, conformation, or other attributes of the species to an extent that makes such animal unique and distinguishable from wild individuals of the species, and that has been raised in a life intimately associated with and advantageous to humans. \"Domestic animal\" does not include any wild animal raised in captivity, even over many generations, that has become accustomed to human interaction but that is still wild by nature.",
+          "note": "Connecticut is the state that shows how the rabbit question should be drafted. Category Two reaches \"a species referenced as injurious wildlife in 50 CFR 16.11\", and the European rabbit is on that federal list, so on the lists alone a pet rabbit would be barred outright. It is not, because the categories only ever apply to a \"wild animal\", which the regulation defines as excluding a domestic animal, and it defines a domestic animal by what selective breeding has done to it rather than by species name. A house rabbit is selectively bred to be distinguishable from wild individuals and raised in a life intimately associated with humans, so it is outside the scheme entirely. Minnesota and Illinois name the same species with no equivalent definition and end up much harder to answer.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17868,6 +18159,14 @@
           "quote": "Invertebrate species listed as approved may be imported, possessed, sold, purchased, exchanged, transported, or released in Oregon without a permit from the Department. This applies only to stock collected within the continental United States. ... Madagascar hissing cockroach, Gromphadorhina portentosa (education, pet). ... Live invertebrates not on the list of approved invertebrates in any life stage may not be imported, possessed, sold, purchased, exchanged, transported, or released in the state unless a permit is first obtained from the Department.",
           "note": "Oregon runs two closed lists, and this animal is on the second one. ORS 496.004(19) defines wildlife as fish, shellfish, amphibians, reptiles, feral swine, wild birds and wild mammals, so a terrestrial arthropod is outside the Fish and Wildlife rules entirely; the Department of Agriculture picks it up instead under its plant pest authority. Named to the species and marked for pet use, in a roach section of nearly twenty entries that separates the hissing cockroaches from the pest species listed for education and research only. The condition is a real one and easy to miss: the clearance applies only to stock collected within the continental United States, so an animal imported from abroad needs a Department permit even though the species is approved. Nothing on this list is unregulated; an invertebrate absent from it may not be possessed at all without a permit. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)-(5), (b)",
+          "quote": "\"Wild animal\" means any bird, mammal, reptile, amphibian, or invertebrate that is, or historically has been found, in the wild or in the wild state, and that is not otherwise a domestic animal",
+          "note": "Connecticut restricts only what its four categories name. Category One is four mammal families, Category Two is a long specific list running from elephants and primates through the whole order Rodentia to five monitors and the venomous snake families, Category Three is Connecticut's own native species and bars import and export rather than possession, and Category Four is the state endangered, threatened and special concern list. The Madagascar hissing cockroach appears in none of them. This one is worth stating carefully, because Connecticut is unusual in that its definition of wild animal does reach invertebrates, and the section is titled importation, possession or liberation of wild birds, mammals, reptiles, amphibians and invertebrates. So the answer here is not the jurisdictional gap that clears the same animal in Arizona, Nevada and Pennsylvania; Connecticut has the authority and has simply not used it against any terrestrial arthropod. The only invertebrates that could be caught are ones on the state endangered, threatened and special concern list, which is Connecticut's own beetles, dragonflies and mussels.",
           "verifiedOn": "2026-09-05"
         }
       }
