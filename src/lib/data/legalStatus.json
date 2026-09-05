@@ -98,94 +98,90 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got.",
     "perAnimal": {
       "flying-squirrel": {
-        "checked": 22,
+        "checked": 23,
         "of": 51
       },
       "tarantula": {
-        "checked": 27,
+        "checked": 28,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 27,
+        "checked": 28,
         "of": 51
       },
       "axolotl": {
-        "checked": 27,
+        "checked": 28,
         "of": 51
       },
       "box-turtle": {
-        "checked": 27,
+        "checked": 28,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 27,
+        "checked": 28,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 28,
+        "checked": 29,
         "of": 51
       },
       "sulcata-tortoise": {
-        "checked": 28,
+        "checked": 29,
         "of": 51
       },
       "hognose-snake": {
-        "checked": 28,
+        "checked": 29,
         "of": 51
       },
       "tiger-salamander": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "african-grey-parrot": {
-        "checked": 29,
+        "checked": 30,
         "of": 51
       },
       "savannah-monitor": {
-        "checked": 30,
+        "checked": 31,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 30,
+        "checked": 31,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 31,
+        "checked": 32,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 31,
+        "checked": 32,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "green-iguana": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "burmese-python": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 33,
-        "of": 51
-      },
-      "red-footed-tortoise": {
-        "checked": 33,
-        "of": 51
-      },
-      "ackie-monitor": {
         "checked": 34,
         "of": 51
       },
-      "bengal-cat": {
-        "checked": 35,
+      "red-footed-tortoise": {
+        "checked": 34,
         "of": 51
       },
       "degu": {
+        "checked": 35,
+        "of": 51
+      },
+      "ackie-monitor": {
         "checked": 35,
         "of": 51
       },
@@ -197,7 +193,7 @@
         "checked": 36,
         "of": 51
       },
-      "quaker-parakeet": {
+      "bengal-cat": {
         "checked": 36,
         "of": 51
       },
@@ -205,51 +201,51 @@
         "checked": 36,
         "of": 51
       },
+      "quaker-parakeet": {
+        "checked": 37,
+        "of": 51
+      },
       "veiled-chameleon": {
-        "checked": 38,
-        "of": 51
-      },
-      "ball-python": {
-        "checked": 38,
-        "of": 51
-      },
-      "milk-snake": {
-        "checked": 38,
-        "of": 51
-      },
-      "boa-constrictor": {
         "checked": 39,
         "of": 51
       },
-      "corn-snake": {
-        "checked": 41,
+      "ball-python": {
+        "checked": 39,
         "of": 51
       },
-      "fennec-fox": {
-        "checked": 44,
+      "milk-snake": {
+        "checked": 39,
+        "of": 51
+      },
+      "boa-constrictor": {
+        "checked": 40,
+        "of": 51
+      },
+      "corn-snake": {
+        "checked": 42,
         "of": 51
       },
       "chinchilla": {
         "checked": 44,
         "of": 51
       },
-      "rosy-boa": {
-        "checked": 44,
+      "fennec-fox": {
+        "checked": 45,
         "of": 51
       },
       "serval": {
         "checked": 45,
         "of": 51
       },
+      "rosy-boa": {
+        "checked": 45,
+        "of": 51
+      },
       "prairie-dog": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "capybara": {
-        "checked": 48,
-        "of": 51
-      },
-      "cockatoo": {
         "checked": 49,
         "of": 51
       },
@@ -257,11 +253,7 @@
         "checked": 50,
         "of": 51
       },
-      "garter-snake": {
-        "checked": 50,
-        "of": 51
-      },
-      "kingsnake": {
+      "cockatoo": {
         "checked": 50,
         "of": 51
       },
@@ -270,6 +262,14 @@
         "of": 51
       },
       "sugar-glider": {
+        "checked": 51,
+        "of": 51
+      },
+      "garter-snake": {
+        "checked": 51,
+        "of": 51
+      },
+      "kingsnake": {
         "checked": 51,
         "of": 51
       }
@@ -357,7 +357,8 @@
     },
     "MI": {
       "name": "Michigan",
-      "level": "state"
+      "level": "state",
+      "scope": "Four regimes, none of which is a general exotic pet law. The Large Carnivore Act at MCL 287.1101 covers seven named cats and bears. The Wolf-dog Cross Act covers wolf hybrids. The DNR's permit to hold game in captivity under NREPA Part 427 covers a closed list of native game species and captive-bred animals only. Fisheries Order 224.21 covers reptiles and amphibians, but only a state species taken from the wild. Anything outside all four meets Michigan law only at the border, through the MDARD certificate of veterinary inspection under MCL 287.731. Local override is set across this jurisdiction because Michigan preserves municipal authority in terms, a large carnivore permit being valid only in a local unit that has not prohibited possession by ordinance, and cities and townships regulate exotic keeping widely under home rule."
     },
     "IL": {
       "name": "Illinois",
@@ -1135,6 +1136,21 @@
       "title": "Pennsylvania Fish and Boat Commission, Pennsylvania Native Reptile and Amphibian Species",
       "url": "https://www.pa.gov/agencies/fishandboat/conservation/species-management/reptiles-and-amphibians/pa-native-species",
       "note": "The enforcing agency's own native species list, which is what 58 Pa. Code § 79.1 points to when it says the Commission will publish the species it has determined are native. Membership on this list is the switch that decides whether Chapter 79 reaches an animal at all."
+    },
+    "mi-fo-224": {
+      "title": "Michigan Fisheries Order 224.21, amphibians and reptiles, as published in the Michigan Fishing Guide",
+      "url": "https://www.eregulations.com/michigan/fishing/amphibians-reptiles",
+      "note": "The order that actually governs herps in Michigan, and the one most summaries miss because it sits in the fishing rules rather than the wildlife rules. Its reach is the phrase \"any state reptile or amphibian from the wild\", so it binds native species taken here and leaves captive-bred non-native pets alone. Michigan.gov blocks automated access, so this was read from the official guide as published by the state's regulations publisher."
+    },
+    "mi-captive-game": {
+      "title": "Michigan DNR Permit to Hold Game in Captivity, under NREPA Part 427, MCL 324.42701 et seq.",
+      "url": "https://www.michigan.gov/dnr/managing-resources/wildlife/wildlife-permits/captive-game-permit",
+      "note": "Michigan's route for keeping a native mammal or game bird, and it is a closed list of species rather than a general exotic pet permit. It authorizes captive-bred animals only, so a wild-caught animal cannot be brought under it. Non-native species are outside it entirely, which is why a native red fox needs this permit and a fennec fox does not."
+    },
+    "mi-287-731": {
+      "title": "Mich. Comp. Laws § 287.731, Animal Industry Act, importation of animals, with the MDARD import requirements issued under it",
+      "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-287-731",
+      "note": "The import side, which is where most lawful Michigan exotics actually meet a rule. The director may require an entry permit for wild or exotic animals, and MDARD's published requirements call for a certificate of veterinary inspection to import exotic animals, native wild animals, nonnative rodents, nonnative reptiles and amphibians, and non-poultry birds. MDARD does not issue entry permits for exotic, circus and zoo animals, so in practice the certificate is the requirement. Large carnivores and wolf-dog crosses are barred here except as their own acts allow."
     }
   },
   "animals": {
@@ -3162,6 +3178,15 @@
           "quote": "The Monk Parakeet, Myiopsitts monachus , sometimes referred to as the Quaker Parakeet or Gray-headed Parakeet.",
           "note": "Named outright, which makes this one of the few Pennsylvania exotic pet answers that needs no interpretation at all: import, possession, sale, offering for sale and release are each unlawful. The scientific name is misspelled in the official text, which prints Myiopsitts for Myiopsitta. This is the only parrot Pennsylvania designates, and the designation is what brings the species inside the Game Code, since 34 Pa.C.S. § 102 otherwise limits wild birds to federally listed migratory birds and game birds.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-287-731",
+          "cite": "MCL 287.731, MDARD import requirements",
+          "quote": "Certificate of Veterinary Inspection is required for the import of exotic, circus and zoo animals, native wild animals, domestic rabbits, nonnative rodents, nonnative reptiles and amphibians, and non-poultry birds",
+          "note": "The monk or quaker parakeet is named in no Michigan statute or order. The Large Carnivore Act covers cats and bears, the captive game permit covers native game, and the herp order covers reptiles and amphibians, so nothing reaches a pet parrot. The only requirement is the certificate of veterinary inspection for a non-poultry bird moved into the state. Worth checking against your own state, because Michigan does not follow Pennsylvania, which bans this species by name.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "quaker-parakeet"
@@ -3454,6 +3479,15 @@
           "cite": "58 Pa. Code § 137.1(a)(1)",
           "quote": "In the family Felidae . Species and subspecies, except species which are commonly called house cats which may be possessed but not released into the wild.",
           "note": "Genuinely unresolved, and the ambiguity is structural. The Bengal is a cross between the domestic cat and the Asian leopard cat, so it sits on both sides of this line at once: the opening sentence of § 137.1(a) prohibits a crossbreed or hybrid of the listed animals which are similar in appearance, while the Felidae line exempts species commonly called house cats. Nothing in the regulation names a filial generation, a percentage of wild ancestry, or the Bengal itself, so an early generation animal and a late generation one get the same silent text. Rendered grey rather than guessed.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "cite": "MCL 287.1102(f)",
+          "quote": "any of the following cats of the Felidae family, whether wild or captive bred, including a hybrid cross with such a cat: a lion, a leopard (including a snow leopard or clouded leopard), a jaguar, a tiger, a cougar, a panther, or a cheetah",
+          "note": "The Large Carnivore Act runs on a closed list, and the drafters showed how they expand it: they wrote leopard and then spelled out that snow leopards and clouded leopards count. The Asian leopard cat behind the Bengal is Prionailurus bengalensis, a small Asian cat that is not a leopard and is not one of the animals they chose to name. The hybrid clause reaches a cross with such a cat, meaning one of the listed seven, so it does not catch this cross either. Nothing else in Michigan names domestic cat hybrids.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3752,6 +3786,15 @@
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The veiled chameleon is native to the Arabian Peninsula and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The veiled chameleon is an Arabian species and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4015,6 +4058,15 @@
           "cite": "58 Pa. Code § 79.1",
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The Russian tortoise is a Central Asian species and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The Russian tortoise is Central Asian and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4312,6 +4364,15 @@
           "cite": "58 Pa. Code § 79.1",
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The ball python is West African and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The ball python is West African and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -4622,6 +4683,15 @@
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The boa constrictor is a Central and South American species and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The boa constrictor is a Central and South American species and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -4855,6 +4925,15 @@
           "cite": "34 Pa.C.S. § 102",
           "quote": "Wild birds, wild mammals and facsimiles thereof, regardless of classification, whether protected or unprotected, including any part, product, egg or offspring thereof, or the dead body or parts thereof (excluding fossils), whether or not included in a manufactured product or in a processed food product.",
           "note": "A tarantula is neither a bird nor a mammal, so it is not wildlife and the Game Commission has no authority over it. The Fish and Boat Commission's Chapter 79 covers reptiles and amphibians. Pennsylvania's two animal agencies divide the field between them and a terrestrial invertebrate falls in the gap, so no state possession rule applies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "A tarantula is not a reptile or amphibian, so the herp order does not reach it, and it is not a cat, a bear or native game, so neither the Large Carnivore Act nor the captive game permit reaches it either. Michigan regulates terrestrial invertebrates through its invasive species list rather than any pet law, and no common pet invertebrate is on it.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5092,6 +5171,15 @@
           "cite": "34 Pa.C.S. § 102",
           "quote": "Wild birds, wild mammals and facsimiles thereof, regardless of classification, whether protected or unprotected, including any part, product, egg or offspring thereof, or the dead body or parts thereof (excluding fossils), whether or not included in a manufactured product or in a processed food product.",
           "note": "The emperor scorpion is neither a bird nor a mammal, so it is not wildlife and the Game Commission has no authority over it. The Fish and Boat Commission's Chapter 79 covers reptiles and amphibians. Pennsylvania's two animal agencies divide the field between them and a terrestrial invertebrate falls in the gap, so no state possession rule applies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The emperor scorpion is not a reptile or amphibian, so the herp order does not reach it, and it is not a cat, a bear or native game, so neither the Large Carnivore Act nor the captive game permit reaches it either. Michigan regulates terrestrial invertebrates through its invasive species list rather than any pet law, and no common pet invertebrate is on it.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5360,6 +5448,15 @@
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The Argentine black and white tegu is South American and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The Argentine black and white tegu is South American and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -5607,6 +5704,15 @@
           "cite": "58 Pa. Code § 79.1",
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The savannah monitor is African and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The savannah monitor is African and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5999,6 +6105,15 @@
           "quote": "Game or wild held captive . Game or wildlife held in captivity or captive bred in another state or nation.",
           "note": "The prairie dog is named nowhere in Pennsylvania law. What arguably reaches it is this catch-all, which bars possessing wildlife captive bred in another state, read together with 34 Pa.C.S. § 102, where wild animals means every mammal except horses, cattle, sheep, goats and pigs. That is the same reading the Game Commission uses to ban hedgehogs and sugar gliders, and it is an agency interpretation of a definition rather than a rule anyone wrote about this species. Recorded unclear rather than banned because no text names the animal.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "Michigan's captive wildlife permit is a closed list of native game species and the prairie dog is not on it, nor is it native game here, so the permit regime does not reach it. The Large Carnivore Act covers only big cats and bears. Importing one calls for a certificate of veterinary inspection as a nonnative rodent under the MDARD rules.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6385,6 +6500,15 @@
           "quote": "Game or wild held captive . Game or wildlife held in captivity or captive bred in another state or nation.",
           "note": "The capybara is named nowhere in Pennsylvania law. What arguably reaches it is this catch-all, which bars possessing wildlife captive bred in another state, read together with 34 Pa.C.S. § 102, where wild animals means every mammal except horses, cattle, sheep, goats and pigs. That is the same reading the Game Commission uses to ban hedgehogs and sugar gliders, and it is an agency interpretation of a definition rather than a rule anyone wrote about this species. Recorded unclear rather than banned because no text names the animal.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "Commonly reported as needing a Michigan DNR permit, and that is wrong. The permit to hold game in captivity covers the closed list of native species quoted here and authorizes captive-bred game only; a South American rodent is not game in Michigan and cannot be permitted under it because it is not eligible in the first place. No Michigan statute names the capybara. The live requirement is the certificate of veterinary inspection to bring one in as a nonnative rodent.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6744,6 +6868,15 @@
           "quote": "In the family Canidae . Species and subspecies of the coyote, the red and gray fox and a full-blooded wolf or crossbreed thereof not licensed by the Department of Agriculture.",
           "note": "The Canidae line is species-specific and reaches only the coyote, the red fox, the gray fox and the wolf. The fennec fox is none of them. What arguably reaches it instead is the catch-all at § 137.1(a)(11) barring possession of wildlife captive bred in another state, since 34 Pa.C.S. § 102 makes every mammal but livestock a wild animal. Same agency interpretation that bans hedgehogs and sugar gliders, and no Pennsylvania text names the fennec fox, so this is recorded unclear rather than banned.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "A neat illustration of how Michigan draws its line, because the permit list includes red and gray fox and the fennec fox is neither. Michigan regulates its own wildlife and leaves non-native exotics to the import rules, so a native red fox needs a permit to hold game in captivity and a fennec fox does not. The Large Carnivore Act reaches only the seven named cats and bears. Importing one calls for a certificate of veterinary inspection.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/fennec-fox-legal-guide/"
@@ -6844,11 +6977,13 @@
           "permitFor": "personal"
         },
         "MI": {
-          "status": "banned",
+          "status": "legal",
           "sourceId": "mi-large-carnivore",
-          "note": "Large Carnivore Act covers lions, tigers, cougars, cheetahs, leopards, jaguars, panthers and hybrids, plus bears, except under narrow exemptions.",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "note": "Corrected from banned. The previous entry said the Large Carnivore Act covers servals, and it does not. The definition is a closed list of seven cats, and the serval, Leptailurus serval, is not among them; the drafters expanded leopard to snow leopard and clouded leopard and stopped there. Nothing else in Michigan reaches it: the captive game permit is a closed list of native species, and the Animal Industry Act bars only large carnivores and wolf-dog crosses by reference to their own acts. Importing one calls for a certificate of veterinary inspection. Local ordinance is the real constraint here, since Michigan municipalities may prohibit what the state allows and many ban exotic cats outright.",
+          "verifiedOn": "2026-09-05",
+          "localOverride": true,
+          "cite": "MCL 287.1102(f)",
+          "quote": "any of the following cats of the Felidae family, whether wild or captive bred, including a hybrid cross with such a cat: a lion, a leopard (including a snow leopard or clouded leopard), a jaguar, a tiger, a cougar, a panther, or a cheetah"
         },
         "IL": {
           "status": "legal",
@@ -8020,6 +8155,15 @@
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The green iguana is Central and South American and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The green iguana is Central and South American and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -8279,6 +8423,15 @@
           "quote": "Common snapping turtle ( Chelydra serpentina ) | July 1 to October 31 | 15 | 30",
           "note": "The only turtle in the table with a real open season, and personal possession of up to 30 needs no permit. Three conditions bind. The animal has to be taken in season, taking requires a fishing license, and § 79.5 requires an annual permit before anyone may take, catch, kill or possess snapping turtles for sale, barter or trade. Then § 79.10(a) bars importing a native species from another jurisdiction, so a Pennsylvania snapping turtle has to come from your own lawful take rather than a seller in another state.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "conditional",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "A fishing license is required to take amphibians and reptiles for personal use.",
+          "note": "Not protected, and the only turtle here with an open season. The conditions are specific: the season runs July 15 to September 15, the limit is two a day and four in total, and a fishing license is required to take one. Buying one is not an option, because reptiles and amphibians may not be bought, sold or offered for sale in Michigan, so a snapping turtle has to come from your own lawful take.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8519,6 +8672,15 @@
           "cite": "58 Pa. Code § 79.1",
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The tokay gecko is Southeast Asian and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The tokay gecko is Southeast Asian and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -8766,6 +8928,15 @@
           "cite": "58 Pa. Code §§ 79.3(h), 79.10(a)",
           "quote": "Native species not listed in this subsection | No closed season | 1 | 1",
           "note": "Ambystoma tigrinum sits on the Fish and Boat Commission's own native species list even though it is considered extirpated here, because § 79.1 defines a native species by whether it occurs historically in Pennsylvania rather than whether it still does. It is not tabled by name, so the catch-all line applies and the limit is one animal, and § 79.10(a) bars importing a native species from another jurisdiction. Check what you are actually buying, because most pet-trade tiger salamanders are the barred tiger salamander, Ambystoma mavortium, a western species absent from Pennsylvania's native list and therefore outside Chapter 79.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "conditional",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "Reptiles and amphibians may not be bought, sold or offered for sale.",
+          "note": "The eastern tiger salamander is Michigan native and, unlike the small-mouthed and marbled salamanders, is not on the protected list. So it may be taken with a fishing license, up to ten amphibians in total, but it may not be bought or sold, which rules out a shop or a breeder. Check what you are buying, because the barred tiger salamander, Ambystoma mavortium, is a western species outside this order entirely and is the one usually sold in the trade.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9018,6 +9189,15 @@
           "cite": "58 Pa. Code § 79.1",
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "Pennsylvania itself does not restrict the Nile monitor. It is not on the Fish and Boat Commission's native species list, so Chapter 79 does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework. The federal injurious wildlife listing under the Lacey Act, which took effect in 2016, is the constraint that actually bites, because it bars importation and interstate transport of the species.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The Nile monitor is not a Michigan species, so the herp order does not reach it and Michigan itself does not restrict possession. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit. Federal law is the real constraint: this species has been listed as injurious wildlife under the Lacey Act since 2016, which bars importation and interstate transport, so it cannot lawfully cross a state line into Michigan even though keeping one here is unregulated.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9288,6 +9468,15 @@
           "cite": "58 Pa. Code § 79.1",
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "Pennsylvania itself does not restrict the Burmese python. It is not on the Fish and Boat Commission's native species list, so Chapter 79 does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework. Federal law is the live constraint instead: the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport, so a Pennsylvania keeper cannot lawfully bring one across a state line even though possession here is unregulated.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The Burmese python is not a Michigan species, so the herp order does not reach it and Michigan itself does not restrict possession. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit. Federal law is the real constraint: this species has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport, so it cannot lawfully cross a state line into Michigan even though keeping one here is unregulated.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9801,6 +9990,15 @@
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The axolotl is Mexican and is absent from the Fish and Boat Commission's native species list, so Chapter 79 does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework. Worth noting that the answer turns on the species and not the genus, because its Pennsylvania native congener the tiger salamander is covered by that chapter and is limited to one animal.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The axolotl is Mexican and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit. The answer turns on the species and not the genus, because Michigan's own tiger salamander is covered by this order and may not be bought or sold.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10034,6 +10232,15 @@
             "before": "2007-01-01",
             "detail": "A one-time permit under § 79.4 let anyone already holding an animal on January 1, 2007 keep it for the rest of its life, but applications closed on June 30, 2007 and no ongoing permit route replaced it."
           },
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "banned",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "Blanding's, spotted, wood, and eastern box turtles; black rat snake, Butler's garter snake, eastern fox snake, copper-bellied water snake, Kirtland's snake, queen snake, smooth green snake, and eastern massasauga rattlesnake; boreal chorus frog, Blanchard's cricket frog, pickerel frog, and Fowler's toad; mudpuppy; small-mouthed salamander, marbled salamander, six-lined racerunner, western lesser siren, northern two-lined salamander, northern dusky salamander, and mink frog; all reptile eggs",
+          "note": "The eastern box turtle is on Michigan's protected list, which means it may not be taken or possessed at all except as the DNR Director authorizes, and the Director's authorizations run to scientific and zoological purposes rather than pet keeping. The sale prohibition closes the other route, since reptiles and amphibians may not be bought or sold here. A Terrapene that is not a Michigan native, such as the ornate box turtle, is outside the order because it reaches only a state reptile from the wild.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10274,6 +10481,15 @@
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The red-eared slider is native to the Mississippi drainage rather than Pennsylvania, and it does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The red-eared slider is native to the Mississippi drainage rather than Michigan, and it is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10508,6 +10724,15 @@
           "cite": "58 Pa. Code § 79.1",
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The sulcata is a Sahelian tortoise and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The sulcata is a Sahelian tortoise and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10744,6 +10969,15 @@
           "cite": "58 Pa. Code §§ 79.3(h), 79.10(a)",
           "quote": "Eastern Hog-nosed Snake ( Heterodon platirhinos ) | No open season | 0 | 0",
           "note": "The condition is which hognose. The eastern hognose is Pennsylvania native, gets no open season and a zero limit, and cannot be imported from another jurisdiction under § 79.10(a), so it can be neither taken nor bought. The western hognose, Heterodon nasicus, which is what the pet trade almost always sells, is not on the Commission's native species list and so falls outside Chapter 79 entirely. Nearly every hognose in a Pennsylvania shop is lawful and the one in the field is not.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "conditional",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "Reptiles and amphibians may not be bought, sold or offered for sale.",
+          "note": "The eastern hog-nosed snake is Michigan native and is not on the protected list, so it may be taken, but only on conditions. A fishing license is required, the limit is three a day and six in total across snakes, lizards and turtles combined, and the quoted sale ban means you cannot lawfully buy one in Michigan or sell the one you have. Personal collection is the only lawful route. The western hognose that dominates the pet trade is not a Michigan species at all, so it sits outside this order and is simply legal, which makes the answer depend entirely on which hognose is in the tank.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10988,6 +11222,15 @@
           "quote": "All migratory birds as defined in 50 CFR by the United States Fish and Wildlife Service of the Department of the Interior, game birds and any other birds designated by the commission, including, but not limited to, grouse, partridge, pheasant, quail and wild turkey.",
           "note": "The Game Code reaches a bird only if it is a wild bird, and that definition is a closed set of three: federally listed migratory birds, game birds, and any other birds the Commission designates. The African grey is none of them. The Commission has used its designation power on exactly one pet parrot, the monk parakeet at 58 Pa. Code § 137.1(a)(9), which shows it designates by name rather than by category. Parrots are not covered as a group.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-287-731",
+          "cite": "MCL 287.731, MDARD import requirements",
+          "quote": "Certificate of Veterinary Inspection is required for the import of exotic, circus and zoo animals, native wild animals, domestic rabbits, nonnative rodents, nonnative reptiles and amphibians, and non-poultry birds",
+          "note": "The African grey is named in no Michigan statute or order. The Large Carnivore Act covers cats and bears, the captive game permit covers native game, and the herp order covers reptiles and amphibians, so nothing reaches a pet parrot. The only requirement is the certificate of veterinary inspection for a non-poultry bird moved into the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11217,6 +11460,15 @@
           "cite": "34 Pa.C.S. § 102",
           "quote": "Wild birds, wild mammals and facsimiles thereof, regardless of classification, whether protected or unprotected, including any part, product, egg or offspring thereof, or the dead body or parts thereof (excluding fossils), whether or not included in a manufactured product or in a processed food product.",
           "note": "The giant African millipede is neither a bird nor a mammal, so it is not wildlife and the Game Commission has no authority over it. The Fish and Boat Commission's Chapter 79 covers reptiles and amphibians. Pennsylvania's two animal agencies divide the field between them and a terrestrial invertebrate falls in the gap, so no state possession rule applies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The giant African millipede is not a reptile or amphibian, so the herp order does not reach it, and it is not a cat, a bear or native game, so neither the Large Carnivore Act nor the captive game permit reaches it either. Michigan regulates terrestrial invertebrates through its invasive species list rather than any pet law, and no common pet invertebrate is on it.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11525,6 +11777,15 @@
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The corn snake is a southeastern species and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/corn-snake-legal-guide/"
@@ -11810,6 +12071,15 @@
           "cite": "Chapter 69, § 10(a)(i)",
           "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
           "verifiedOn": "2026-08-27"
+        },
+        "MI": {
+          "status": "conditional",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "Reptiles and amphibians may not be bought, sold or offered for sale.",
+          "note": "The eastern milk snake is Michigan native and is not on the protected list, so it may be taken, but only on conditions. A fishing license is required, the limit is three a day and six in total across snakes, lizards and turtles combined, and the quoted sale ban means you cannot lawfully buy one in Michigan or sell the one you have. Personal collection is the only lawful route. Michigan protects the black rat snake and the eastern fox snake but not the milk snake, so this one stays on the takeable side of the line.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/milk-snake-legal-guide/"
@@ -12145,6 +12415,15 @@
           "status": "legal",
           "note": "Non-native, so it sits outside Wisconsin's native reptile possession rules in NR 16.12 and outside captive wildlife licensing under § 169.04(4)(b). Nothing in NR 40 reaches it. Bringing one in from out of state calls for a DATCP animal import permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The rosy boa is a desert species of the American southwest and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/rosy-boa-legal-guide/"
@@ -12325,6 +12604,16 @@
           "cite": "58 Pa. Code §§ 137.1(a)(10), (11), 137.31(a)",
           "quote": "It is unlawful for a person to possess live wildlife taken from a wild state within this Commonwealth",
           "note": "The southern flying squirrel is a Pennsylvania native wild mammal, so it is wildlife under 34 Pa.C.S. § 102 and both routes into a home are closed. Taking one here is barred by § 137.31(a), whose only exception is a permit to hold up to five foxes for urine collection. Buying one from out of state is barred by § 137.1(a)(11), which prohibits possessing wildlife captive bred in another state, and § 137.1(a)(10) covers wildlife taken alive from the wild. Unlike the small exotic mammals, this one does not rest on an agency reading of an open-ended definition. A native squirrel is squarely what the Game Code was written for.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "permit",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "Squirrels are on the closed list of species that may be held under a permit to hold game in captivity, so Michigan's native flying squirrel needs one. Two limits matter. The permit authorizes captive-bred game, so an animal taken from the wild cannot be brought under it, and the permit is issued for the species rather than as a general exotic pet licence. This is the opposite of the answer for the non-native rodents on this map, which need no permit at all.",
+          "permitFor": "personal",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -12591,6 +12880,15 @@
           "cite": "58 Pa. Code § 79.1",
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The ackie monitor is Australian and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The ackie monitor is Australian and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       },
@@ -12978,6 +13276,15 @@
           "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
           "note": "Not venomous, and not on Wyoming's Section 8 prohibited list.",
           "verifiedOn": "2026-08-27"
+        },
+        "MI": {
+          "status": "conditional",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "Reptiles and amphibians may not be bought, sold or offered for sale.",
+          "note": "The common garter snake is Michigan native and is not on the protected list, so it may be taken, but only on conditions. A fishing license is required, the limit is three a day and six in total across snakes, lizards and turtles combined, and the quoted sale ban means you cannot lawfully buy one in Michigan or sell the one you have. Personal collection is the only lawful route. Note that Butler's garter snake, a separate Michigan species, is on the protected list and may not be taken or possessed at all, so the answer turns on which garter snake you have.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/garter-snake-legal-guide/"
@@ -13350,6 +13657,15 @@
           "cite": "Chapter 69, § 10(a)(i)",
           "note": "Not venomous, and not on Wyoming's Section 8 prohibited list.",
           "verifiedOn": "2026-08-27"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The California kingsnake is a western species and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit. Michigan's native kingsnake relative is the eastern milk snake, which is covered; the California kingsnake is not.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/kingsnake-legal-guide/"
@@ -13719,6 +14035,15 @@
           "quote": "Live warm-blooded wildlife listed in this section... may be imported, possessed or transported without a permit... (b) Birds: (i) Cage and aviary birds.",
           "note": "Chapter 10 defines cage and aviary birds as exotic captive-reared birds such as parrots that are adapted to live in a cage; a cockatoo qualifies.",
           "verifiedOn": "2026-08-27"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-287-731",
+          "cite": "MCL 287.731, MDARD import requirements",
+          "quote": "Certificate of Veterinary Inspection is required for the import of exotic, circus and zoo animals, native wild animals, domestic rabbits, nonnative rodents, nonnative reptiles and amphibians, and non-poultry birds",
+          "note": "Cockatoos is named in no Michigan statute or order. The Large Carnivore Act covers cats and bears, the captive game permit covers native game, and the herp order covers reptiles and amphibians, so nothing reaches a pet parrot. The only requirement is the certificate of veterinary inspection for a non-poultry bird moved into the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/cockatoo-legal-guide/"
@@ -13979,6 +14304,15 @@
           "cite": "58 Pa. Code § 79.1",
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
           "note": "The red-footed tortoise is South American and does not appear on the Fish and Boat Commission's published list of Pennsylvania native species, so Chapter 79, which is built entirely around native species, does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224.21",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild",
+          "note": "The red-footed tortoise is South American and is not a Michigan reptile or amphibian, so the order that governs herps here does not reach it. Michigan's herp order reaches only a state reptile or amphibian taken from the wild, so a captive-bred non-native pet falls outside it, and neither the Large Carnivore Act nor the DNR's captive game permit reaches a reptile at all. Bringing one into Michigan needs a certificate of veterinary inspection under the MDARD import rules, which is a movement formality rather than a possession permit.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
