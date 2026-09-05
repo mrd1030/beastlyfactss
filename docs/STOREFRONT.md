@@ -162,10 +162,12 @@ $8.99 PDF.
 
 Settings -> Business -> Public details:
 
-- **Support email:** a receivable address on the domain, not a personal inbox.
-  `noreply@beastlyfacts.com` is send-only and will not do. Cloudflare Email
-  Routing forwards `support@beastlyfacts.com` to wherever you actually read
-  mail, free, and the DNS is already there.
+- **Support email:** `hello@beastlyfacts.com`. Not a personal inbox, and not
+  `noreply@beastlyfacts.com`, which is send-only. `hello@` specifically,
+  because it is already the address on /contact/, in the Terms, and twice in
+  the Privacy policy including for data access and deletion requests. A
+  different address on receipts would give buyers two competing places to
+  write to and contradict those pages.
 - **Support phone:** clear it if Stripe allows. It generally wants an email or
   a phone rather than both, so fill the email first.
 - **Support website:** `https://beastlyfacts.com/contact/`.
