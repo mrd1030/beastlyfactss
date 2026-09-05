@@ -1,0 +1,102 @@
+# MassWildlife's own reading: "You will not be issued a permit for keeping a wild animal as a pet"
+
+sourceId: ma-masswildlife-pets
+jurisdiction: MA
+url: https://www.mass.gov/guides/wildlife-as-pets
+fetched: 2026-09-05
+fetch notes: Plain curl. The page carries the mass.gov site chrome plus a language picker roughly
+  1,500 lines long; slice from "Massachusetts has strict laws that limit" to "Help Us Improve".
+
+WHY THIS PAGE IS CACHED, when the regulation is the law:
+  It answers two things 321 CMR 9.00 leaves open.
+  1. It confirms the categorical bar in 9.01(3) is live and says which listings count:
+     "Any animal listed in any rarity category of the International Union for the Conservation of
+      Nature Red List of Threatened Species, any category of federal endangered species law, or
+      listed on the Massachusetts List of Endangered, Threatened, and Special Concern species may
+      not be possessed without a permit."
+     Its reptile tables paraphrase the group listings as "except rare species", twice.
+  2. It says what the permit tier is worth to a keeper:
+     "Permits in this category are issued only for certain scientific, educational, commercial, or
+      other specific reasons. ... You will not be issued a permit for keeping a wild animal as a pet."
+     M.G.L. c. 131, § 23 does contemplate an individual licence for a non-exempt animal, so this is
+     agency practice sitting on top of a statute that is more permissive than it.
+  It also states the Savannah cat test in filial terms the statute avoids: domestic "only if it can
+  be documented to be generations (F4) past the original mating with an African Serval".
+
+WHERE IT IS NOT RELIABLE: it carries its own disclaimer that the lists "may not be all-inclusive",
+  and it is inconsistent with itself. The snake and lizard tables carry the "rare species" clause;
+  the turtle table does not, listing only four tortoises plus the slider, the spotted turtle and
+  state or federally listed turtles. The regulation applies 9.01(3) to turtles in the same words it
+  uses everywhere else, so the regulation governs and the omission here is an editing gap. Recorded
+  because a later sitting will otherwise read the turtle table and think the Russian tortoise and
+  the sulcata are clear.
+
+ALSO USEFUL: the taking rule. The page lists the 22 native reptiles and amphibians that may be
+  taken from the wild, two of each, as personal pets that may never be sold, bartered or exchanged
+  or released again (321 CMR 3.05, 321 CMR 2.15, M.G.L. c. 131 § 19A). Snapping turtle, painted
+  turtle, eastern garter snake, eastern ribbonsnake and milksnake are on it.
+
+--- www.mass.gov/guides/wildlife-as-pets, body text ----------------------------------------
+Massachusetts has strict laws that limit the types of animals that can be kept as pets. These laws protect people and animals from harm. 
+Disclaimer: This page is provided for informational purposes only and is intended as a general resource regarding wildlife that may be kept as pets in Massachusetts. The species lists and regulatory information may not be all-inclusive and are subject to change. Wildlife laws and regulations may be updated periodically, and additional requirements may apply. Individuals are responsible for complying with all current state and federal laws and regulations.
+Skip table of contents
+Table of Contents
+table of contents+
+Table of Contents Hide Table of contents×
+Show More Table of contents
+top
+Table of Contents
+You skipped the table of contents section.
+Animals you can take from the wild
+The only animals you can take out of the wild in Massachusetts are certain reptiles and amphibians (321 CMR 9.00). You can keep these animals as personal pets, but you cannot sell, barter, or exchange them. If wildlife are kept as pets, they cannot be released into the wild. (321CMR 2.15, M.G.L. c. 131 S. 19A)
+You can have 2 of each of the following animals: 
+American bullfrogAmerican toadDekay's brown snakeEastern garter snakeEastern newtEastern racerEastern red-backed salamanderEastern ribbonsnakeFowler's toadGray treefrogGreen frogMilksnakeMudpuppyNorthern dusky salamanderNorthern two-lined salamanderNorthern watersnakePainted turtlePickerel frogRed-bellied snakeSmooth greensnakeSnapping turtleSpring peeper
+Permits for wild animals
+Permits in this category are issued only for certain scientific, educational, commercial, or other specific reasons. You must be able to show that you are actively engaged in the activity for which you are applying for a permit. You will not be issued a permit for keeping a wild animal as a pet. The Code of Massachusetts Regulations (321 CMR 2.12) describes these regulations in full.
+Any animal listed in any rarity category of the International Union for the Conservation of Nature Red List of Threatened Species, any category of federal endangered species law, or listed on the Massachusetts List of Endangered, Threatened, and Special Concern species may not be possessed without a permit.
+Key Organizations
+MassWildlife
+more
+less
+contact info
+Online
+mass.wildlife@mass.gov
+Wild animals you do not need a permit for
+You can keep, maintain, propagate, buy, sell, or import some wild animals without a MassWildlife permit. These animals are also exempt from most state requirements (M.G.L. Ch. 131 S. 23 and 321 CMR 9.01). In order to be exempt, the animal or group of animals have to meet the following criteria:
+Accidental release will not adversely affect the ecology of Massachusetts.
+The animal in captivity, or if escaped, poses no substantial danger to humans, either from injury or disease.
+Proper care of the animal is no more demanding that the care of common domestic animals.
+Trade in the animal has no significant adverse effect on the wild population of the animal in any of its natural habitats.
+Domestic animals
+Per the Code of Massachusetts Regulations (321 CMR 9.01), you can possess, propagate, maintain, import, buy, sell, and dispose of the animals and animal groups listed on this page without a MassWildlife permit or license.
+In some instances, you may need to comply with local or state laws regarding dog licenses (M.G.L. Ch. 140 S. 137), municipal agriculture or zoning laws, or with requirements of the Massachusetts Department of Food & Agriculture pertaining to companion pets, livestock, and farm animals.
+Domestic BirdsDomestic MammalsDomestic geese, ducks, and muscovyMallards1Common coturnix (coturnix quail)Domestic chicken(Blue) PeafowlDomestic guineafowlDomestic turkey2Common pigeon (rock dove)EmuRheaOstrichDomestic dog3Mink4Domestic ferrets5Domestic cat3Domestic horseDomestic swine6LlamaAlpacaDromedary camelDomestic water buffalo (carabao)Domestic cowDomestic yakZebu cattleAmerican bisonDomestic goat and sheepDomestic (golden) hampsterGuinea pigMongolian gerbilDomestic rabbit7Domestic ass81Mallards must be captive-reared, acquired, and properly marked in accordance with the provisions of the Code of Federal Regulations
+2Including breeds and varieties derived from wild turkey, but not including captive or captive-bred wild turkey or pen-raised or game-farm wild turkey.
+3Wolf-dog hybrids or other hybrids between domestic dogs and any wild canine species or any feline animal which is a hybrid between a domestic cat and any wild feline species, are not domestic animals. You cannot maintain, propagate, import, buy, sell, or otherwise possess hybrids in Massachusetts (M.G.L. Ch. 131 S. 77A). Certain recognized breeds of show or pet cats, which are known to be or reputed to be of hybrid origin, are considered to be domestic and may be lawfully possessed. The Savannah cat is considered a domestic breed only if it can be documented to be generations (F4) past the original mating with an African Serval.
+4Mink must be propagated in captivity for 2 or more generations (M.G.L. Ch. 128 S. 8B).
+5Domestic ferrets must be surgically neutered or spayed and rendered incapable of breeding (M.G.L. Ch. 131 S. 77).
+6Does not include captive European wild hog or free-living wild pigs or swine.
+7Does not include San Juan rabbits.
+8Includes mules, burros, and donkeys.
+Fish as pets
+Fish you can have as a petFish you cannot have as a petAny aquarium trade9 fish including
+GoldfishKoi (Japanese carp)GuppiesFathead minnow (requires a permit when sold as bait for fishing)Any native or established fish in MassachusettsTilapiaGrass carp (white amur)Piranhas & related speciesRuddWalking catfish & related speciesSnakeheadsBluntnose minnow9See 321 CMR 9.01 for definition.
+Turtles as pets
+Turtles you can have as a petTurtles you cannot have as a petPainted turtleSnapping turtleArgentine (Chaco) tortoiseGopher tortoise & related speciesPancake tortoiseRed-eared sliderSpotted turtleState listed turtlesFederally listed turtles
+Amphibians as pets
+Amphibians you can have as a petAmphibians you cannot have as a petAmerican bullfrogAmerican toadEastern newtEastern red-backed salamanderFowler's toadGray treefrogGreen frogMudpuppyNorthern dusky salamanderNorthern two-lined salamanderPickerel frogSpring peeperWood frogFour-toed salamanderNorthern leopard frogSpotted salamanderSpring salamanderState listed amphibiansFederally listed amphibians
+Snakes as pets
+Snakes you can have as a petSnakes you cannot have as a petAll species of boas & pythons (family Boidae), regardless of size, except rare species and those listed as unlawfulShield-tailed snakes, sunbeam snakes, and others in families Uropeltidae and XenopeltidaeSnakes of the family Colubridae:Asian rat snakes (Elaphe, Ptyas, and Zaocys species)Trans-Pecos rat Snake (Bogertophis subocularis)Brown and redbelly snakes (Storeria species)Diadem snakes (Spalerosophis species)Garter and ribbon snakes (Thamnophis species)Glossy snakes (Arizona species)Gopher and pine snakes (Pituophis species)Green snakes (Opheodrys species)Ground snakes (Sonora species)House snakes (Boaedon species)Kingsnakes and milk snakes (Lampropeltis species)North American rat snakes (Pantherophis species) except the black rat Snake (Pantherophis alleghaniensis)Mole snake (Pseudaspis cana)Puffing snakes (Pseustes species)Texas indigo snake (Drymarchon corais erebennus)Tropical rat snakes (Spilotes species)Water snakes (Nerodia species)Western hognose Snake (Heterodon nasicus)Any venomous (poisonous) snakesAfrican rock pythonReticulated pythonAll anaconda speciesBlack rat snakeEastern hognoseState listed snakesFederally listed snakes
+Birds as pets
+Birds you can have as a petBirds you cannot have as a petCotorunix and button quailPigeons and doves, except native speciesWaxbills and related speciesfinches and related species, except native speciesWeaver finches, except Red-billed dioch & related speciesParrots & related speciestoucans, aracaris, & toucanetsStarlins & mynahs, except the Rose-colored (pink) starlingEmu, ostrich, & rheaMigratory birds found in the United States and CanadaAny bird native to the United States or CanadaState listed birdsFederally listed birdsPermits may be issued for the aviculture of certain waterfowl and game birds.
+Mammals as pets
+You can only have the following mammals (or groups) as a pet in Massachusetts
+Sugar gliderFour-toed (African pygmy) hedgehogChinchilla, derived from captive stockDeer mouseWhite-footed mouseDeguEgyptian spiny mouseHouse mouseJerboasNorway ratPacaSouthern flying squirrelHamsterYou cannot have in your possessionany mammal not listed as legal or domestic.
+Lizards as pets
+Lizards you can have as a petLizards you cannot have as a petMost skinks, including Solomon Island prehensile-tailed tree skinkFalse club-tailed lizardsGirdle-tailed lizardsPlated lizardsRock lizardsMost teiid lizards, including jungle runners and tegussome lacertid lizardsMost lateral-fold lizards, alligator lizards, and legless lizardsAll geckos except rare species and the Big Bend geckoSeveral iquanids includingBasilisksCollared & leopard lizardsCommon (green) iguanaFalse iguanaNew World chameleons (including green and brown anoles)Spiny lizardsTree & bush lizardsSome agamid lizards includingWater dragonBearded dragonFrilled lizardUromestyxMost night lizardsSpiny-tailed (Ridge-tailed) monitorMost true chameleonsBeaded lizardGila monsterAny monitor lizards except the spiny-tailed (ridge-tailed) monitorSolomon Islands ground skinkAny lizard not listed to the leftFederally listed lizards
+Crocodilians as pets
+You cannot have any crocodilian species in your possession in Massachusetts. This includes
+Alligators
+Crocodiles
+Caimans
+Gavials

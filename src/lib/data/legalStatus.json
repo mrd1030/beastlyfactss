@@ -98,35 +98,35 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 16,
+        "checked": 17,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 16,
+        "checked": 17,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 17,
+        "checked": 18,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 17,
+        "checked": 18,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 17,
+        "checked": 18,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 17,
+        "checked": 18,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 17,
+        "checked": 18,
         "of": 51
       },
       "green-anole": {
-        "checked": 17,
+        "checked": 18,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,75 +134,75 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "axolotl": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "box-turtle": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 42,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 42,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 42,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 42,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 43,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 43,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 43,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 43,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 44,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 45,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "green-iguana": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "burmese-python": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "red-footed-tortoise": {
@@ -218,11 +218,11 @@
         "of": 51
       },
       "hamster": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "gerbil": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "quaker-parakeet": {
@@ -230,15 +230,15 @@
         "of": 51
       },
       "bengal-cat": {
-        "checked": 47,
-        "of": 51
-      },
-      "guinea-pig": {
         "checked": 48,
         "of": 51
       },
+      "guinea-pig": {
+        "checked": 49,
+        "of": 51
+      },
       "milk-snake": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "ball-python": {
@@ -254,7 +254,7 @@
         "of": 51
       },
       "corn-snake": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "chinchilla": {
@@ -262,11 +262,11 @@
         "of": 51
       },
       "fennec-fox": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "serval": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "rosy-boa": {
@@ -610,14 +610,14 @@
       "note": "Potentially dangerous animals are 'the felidae... the canidae... the ursidae... and the hominidae', or any hybrid. Narrow: no rodents, marsupials, mustelids or insectivores. Civil penalty up to $2,000 per offence and a class A misdemeanour for a wilful violation."
     },
     "ma-321-9-01": {
-      "title": "321 CMR 9.01, Exemption List",
-      "url": "https://www.law.cornell.edu/regulations/massachusetts/321-CMR-9-01",
-      "note": "A closed exemption list of wild vertebrates that may be imported, sold or possessed without a permit. Anything not exempt needs one. Criteria include no significant ecological risk if released and care no more demanding than a common domesticated pet."
+      "title": "321 CMR 9.00, Exotic Wildlife: 9.01 Exemption List and 9.02 List of Domestic Animals",
+      "url": "https://www.mass.gov/doc/321-cmr-9-exotic-wildlife/download",
+      "note": "Massachusetts runs a closed white list and says so in terms: a species not on it, or listed as requiring a permit, is not exempt from M.G.L. c. 131, § 23. Two structural points decide most of this state. First, 9.01(2) defines \"species\" as a \"distinct non-domestic VERTEBRATE animal population\", and § 23 itself reaches only fish, birds, mammals, reptiles and amphibians, so terrestrial invertebrates are outside the scheme entirely. Second, 9.01(3) is a categorical override that most readings of this rule miss: no species may be exempted if it is listed under the federal Endangered Species Act, appears in the IUCN Red Book(s), or is on the Massachusetts endangered, threatened and special concern list at 321 CMR 10.90. Nearly every group listing in 9.01 repeats the cross-reference, so it operates as a live carve-out rather than as drafting furniture, and it is what pulls the Burmese python out of Boidae, the crested gecko out of Gekkonidae and the box turtle out of the turtle allowance."
     },
     "ma-131-77": {
-      "title": "M.G.L. c. 131 § 77, and 321 CMR 9.02 List of Domestic Animals",
-      "url": "https://www.law.cornell.edu/regulations/massachusetts/321-CMR-9-02",
-      "note": "Ferrets are handled as domestic animals under 9.02 rather than on the 9.01 exemption list."
+      "title": "M.G.L. c. 131, § 77, ferrets; possession and use",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section77",
+      "note": "Massachusetts legalised the pet ferret by statute in 1996 and attached the conditions to the purchase rather than to a permit: neutered or spayed at the time of purchase, inoculated against distemper and rabies, and evidence of both kept available for inspection. 321 CMR 9.02(2)(b) points here rather than treating the ferret as an ordinary domestic animal, which is why the ferret is the one conditional entry on an otherwise binary domestic list. Breeding is a separate licence at not less than $1,000 a year under § 77(2). The section also makes merely having a ferret where birds or mammals may be found evidence of hunting with it, which is a real trap for anyone who takes one outdoors."
     },
     "co-w11": {
       "title": "Colorado 2 CCR 406-11, Chapter W-11, Wildlife Parks and Unregulated Wildlife",
@@ -973,11 +973,6 @@
       "title": "Del. Code tit. 7, c. 7",
       "url": "https://delcode.delaware.gov/title7/c007/index.html",
       "note": "Delaware Code Online's game and fish possession chapter administered by DNREC, paired with a separate exotic species permit chapter at Del. Code tit. 3, c. 72."
-    },
-    "ma-321cmr9-01": {
-      "title": "321 CMR 9.01",
-      "url": "https://www.mass.gov/doc/321-cmr-9-exotic-wildlife/download",
-      "note": "MassWildlife's official exemption list under M.G.L. c. 131, section 23, only species actually named in it may be imported, sold, or possessed without a license."
     },
     "md-native-herp": {
       "title": "COMAR 08.03.11, Reptile and Amphibian Possession and Permits",
@@ -1338,6 +1333,26 @@
       "title": "Tex. Parks & Wild. Code § 43.851 and 31 Tex. Admin. Code §§ 55.651-55.653, Controlled Exotic Snakes",
       "url": "https://statutes.capitol.texas.gov/Docs/PW/htm/PW.43.htm",
       "note": "Texas regulates six constrictors by name and every nonvenomous snake beyond them not at all. The list is in the statute at § 43.851(a)(2) and repeated in the rule at 31 TAC § 55.651(2): African rock python, Asiatic rock python, Burmese python, green anaconda, reticulated python, southern African python, plus any hybrid, plus all venomous snakes not indigenous to Texas. H.B. 2326 in 2021 added Python bivittatus by name, after the Burmese was split off from Python molurus and the older wording left it arguable. A recreational permit is available to private keepers under 31 TAC § 55.652(a)(1), which is what separates this from a ban, and § 55.653(c) makes the sales receipt a temporary permit for 21 days from purchase."
+    },
+    "ma-131-23": {
+      "title": "M.G.L. c. 131, § 23, propagation, dealing in, and possession of fish, birds, mammals, reptiles or amphibians",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section23",
+      "note": "The licensing statute behind the exemption list, and the origin of the categorical bar. It directs the director to draw up the special exemption list against four criteria and then forbids listing anything protected: \"No animal listed in any category of the International Union for Conservation of Nature and Natural Resources' Red Data Books shall be listed; no animal protected by either federal endangered species law or by section 4 of chapter 131A shall be listed.\" It also provides for individual licences: \"For the granting of an individual license for an animal that is not on the special exemption list, the applicant shall satisfy the director that he can maintain in good health, properly confine and protect the animal.\" And it grandfathers a keeper whose animal is later removed from the list, for that animal's lifetime, on evidence of when it was acquired."
+    },
+    "ma-131-77a": {
+      "title": "M.G.L. c. 131, § 77A, wild canid and felid hybrids",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section77A",
+      "note": "A flat prohibition with one exit. \"No person shall possess, sell, trade, breed, import, export or release a wild canid hybrid or wild felid hybrid, except as otherwise provided by rules and regulations of the division.\" The exit is the last paragraph: the section does not apply to \"a domesticated show or pet cat registered with a nationally or internationally recognized breeding association or registry which certifies the pedigree and registration of such cat to be without any wild felid parentage for a minimum of three generations.\" So Massachusetts writes a generation rule without using filial numbers, and 321 CMR 9.02(2)(e) points to this section by treating wild felid hybrids as the one hybrid class that is not automatically domestic."
+    },
+    "ma-321-10-90": {
+      "title": "321 CMR 10.90, Massachusetts list of endangered, threatened and special concern species",
+      "url": "https://www.mass.gov/regulations/321-CMR-1000-massachusetts-endangered-species-act",
+      "note": "The third leg of the categorical bar in 321 CMR 9.01(3)(c), and the one that catches ordinary pet-trade animals. Three entries matter for this map: the Eastern Box Turtle (Terrapene carolina), special concern; the Eastern Hog-nosed Snake (Heterodon platirhinos), special concern; and the Eastern Ratsnake (Pantherophis alleghaniensis), endangered, which the exemption list already carves out of Pantherophis by name. The tiger salamander is NOT on it, so the general amphibian clearance reaches it."
+    },
+    "ma-masswildlife-pets": {
+      "title": "MassWildlife, Wildlife as pets",
+      "url": "https://www.mass.gov/guides/wildlife-as-pets",
+      "note": "The agency's own restatement of 321 CMR 9.00, cached because it answers two things the regulation leaves open. It reads the categorical bar the same way this map does, saying that any animal \"listed in any rarity category of the International Union for the Conservation of Nature Red List of Threatened Species, any category of federal endangered species law, or listed on the Massachusetts List of Endangered, Threatened, and Special Concern species may not be possessed without a permit\", and it paraphrases the reptile groups as \"except rare species\". And it states what a licence application actually gets you: permits \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" It carries its own disclaimer that the lists \"may not be all-inclusive\", and it is inconsistent with itself on turtles, where it omits the rarity clause it applies to snakes and geckos, so the regulation governs where the two differ."
     }
   },
   "animals": {
@@ -1437,9 +1452,10 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "Four-toed (African pygmy) hedgehog (Erinaceus albiventris)",
-          "note": "Named on the exemption list. The regulation uses the older genus Erinaceus; current nomenclature is Atelerix albiventris.",
-          "verifiedOn": "2026-08-04"
+          "cite": "321 CMR 9.01(12)(a)",
+          "quote": "List of Mammals. (a) The following mammals may be kept without a permit: 1. Four-toed (African pygmy) hedgehog (Erinaceus albiventris) (= Atelerix pruneri) 2. Chinchilla (Chinchilla spp.) derived from captive stock. 3. Deer Mouse and White-footed Mouse 4. Degu (Octodon degus) 5. Egyptian Spiny Mouse 6. House Mouse 7. Jerboas 8. Norway Rat 9. Paca 10. Southern Flying Squirrel (Glaucomys volans) 11. Striped hamster ... 12. Sugar Glider (Petaurus breviceps) 13. American Bison",
+          "note": "Named at 9.01(12)(a)(1), using the older binomial Erinaceus albiventris with Atelerix pruneri given as a synonym. The mammal list is thirteen entries long and being on it is the only way a wild mammal is keepable here, so the naming is the whole answer.",
+          "verifiedOn": "2026-09-05"
         },
         "CO": {
           "status": "legal",
@@ -1811,8 +1827,10 @@
         "MA": {
           "status": "conditional",
           "sourceId": "ma-131-77",
-          "note": "Treated as a domestic animal under 321 CMR 9.02, but M.G.L. c. 131 § 77 requires it to be surgically neutered or spayed and incapable of breeding.",
-          "verifiedOn": "2026-08-04"
+          "cite": "M.G.L. c. 131, § 77(1); 321 CMR 9.02(2)(b)",
+          "quote": "A person may possess a ferret (mustela furo or mustela putorium furo) for the following purposes:— (1) As a household pet; provided, however, that such pet has been at the time of purchase neutered or spayed and has received inoculation against distemper and rabies or other inoculations that the director may require; and provided, further, that evidence of neutering, spaying and inoculation is kept available for inspection by the director.",
+          "note": "Legal as a household pet on three conditions that all attach at purchase: neutered or spayed, inoculated against distemper and rabies, and documentary evidence of both kept available for inspection. Breeding is a separate licence at not less than $1,000 a year under § 77(2). The section closes with a hunting prohibition that has teeth in an unexpected way: merely having a ferret in a place where birds or mammals may be found makes the keeper liable to its penalties.",
+          "verifiedOn": "2026-09-05"
         },
         "CO": {
           "status": "legal",
@@ -2224,10 +2242,10 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "Sugar Glider (Petaurus breviceps)",
-          "verifiedOn": "2026-08-04",
-          "cite": "321 CMR 9.01",
-          "note": "Massachusetts publishes a closed exemption list of wild vertebrates that may be kept without a permit, and the sugar glider is named on it. Anything not exempt needs a permit, so the listing is what makes this a yes."
+          "cite": "321 CMR 9.01(12)(a)",
+          "quote": "List of Mammals. (a) The following mammals may be kept without a permit: 1. Four-toed (African pygmy) hedgehog (Erinaceus albiventris) (= Atelerix pruneri) 2. Chinchilla (Chinchilla spp.) derived from captive stock. 3. Deer Mouse and White-footed Mouse 4. Degu (Octodon degus) 5. Egyptian Spiny Mouse 6. House Mouse 7. Jerboas 8. Norway Rat 9. Paca 10. Southern Flying Squirrel (Glaucomys volans) 11. Striped hamster ... 12. Sugar Glider (Petaurus breviceps) 13. American Bison",
+          "note": "Named at 9.01(12)(a)(12). Worth contrasting with the states that answer the sugar glider by silence: in a closed-list state silence is a no, so this animal is legal in Massachusetts only because someone put it on the list.",
+          "verifiedOn": "2026-09-05"
         },
         "CO": {
           "status": "legal",
@@ -2931,6 +2949,14 @@
           "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
           "note": "A domesticated rodent, and Texas restricts rodents in exactly one place: the § 65.331(d) nongame list, which names eight native squirrels, prairie dogs, kangaroo rats and jackrabbits. Mesocricetus auratus is not indigenous to Texas and is nowhere on it. The dangerous wild animal list has no rodent at all.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.02(3); 9.01(12)(a)(11)",
+          "quote": "Domestic animals as listed in 321 CMR 9.02(3) shall be exempt from the provisions of M.G.L. c. 131, § 23, and may be possessed, propagated, maintained, imported, bought, sold, or otherwise disposed of ... Any vertebrate taxa not listed in 321 CMR 9.02 shall be presumed to be wild and shall be subject to the provisions of M.G.L. c. 131.",
+          "note": "Answered twice over, which is unusual. The golden hamster, Mesocricetus auratus, is on the domestic animal list at 9.02(3), and the exemption list adds the Chinese or Siberian dwarf hamster, Cricetulus barabensis, at 9.01(12)(a)(11) with a note pointing back to the domestic list for the golden. Both routes end in no permit.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3312,6 +3338,14 @@
           "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
           "note": "Meriones unguiculatus is Mongolian, so the nongame rules, which reach only species indigenous to Texas, do not apply, and no rodent appears on the dangerous wild animal list. Nothing at state level touches a pet gerbil.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.02(3)",
+          "quote": "Domestic animals as listed in 321 CMR 9.02(3) shall be exempt from the provisions of M.G.L. c. 131, § 23, and may be possessed, propagated, maintained, imported, bought, sold, or otherwise disposed of ... Any vertebrate taxa not listed in 321 CMR 9.02 shall be presumed to be wild and shall be subject to the provisions of M.G.L. c. 131.",
+          "note": "The Mongolian gerbil, Meriones unguiculatus, is on the domestic animal list by name. That list matters more than it looks: 9.02(2)(c) provides that any vertebrate taxon not on it is PRESUMED WILD and subject to c. 131, so in Massachusetts being domestic is itself a listed status rather than a description.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "gerbil"
@@ -3362,8 +3396,10 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "Psittacidae (parrots and their allies)",
-          "verifiedOn": "2026-08-04"
+          "cite": "321 CMR 9.01(11)(b)(6)",
+          "quote": "List of Birds. (a) The following groups of birds are prohibited without a permit: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Migratory birds listed in the Code of Federal Regulations, 50 CFR 10.13. 3. Any other bird native to the United States and Canada. (b) Except for species listed in 321 CMR 9.01(11)(a), the birds or groups of birds may be kept without a permit: ... 6. Psittacidae (parrots and their allies)",
+          "note": "Psittacidae is exempt as a family, and the monk parakeet clears the three prohibitions in 9.01(11)(a) as well: it is IUCN least concern, it is not on 50 CFR 10.13, and it is not native to the United States or Canada. Massachusetts is worth flagging on this species because it is one of the states most often listed as banning it, and the regulation does not.",
+          "verifiedOn": "2026-09-05"
         },
         "CO": {
           "status": "banned",
@@ -4111,6 +4147,18 @@
           "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
           "note": "The ninth different answer to the Bengal question on this map, and it turns entirely on clause (T), which reaches a hybrid only of an animal \"listed in this subdivision\". The small cats on that list are specific: ocelot, bobcat, lynx, serval, caracal. Prionailurus bengalensis, the Asian leopard cat behind the Bengal, is none of them and appears nowhere in Texas law, so its hybrid is not caught. No generation cutoff, no weight test, no registry requirement. The sentence does catch a Savannah, because the serval is at clause (J), which puts the two hybrid breeds on opposite sides of one line.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "conditional",
+          "sourceId": "ma-131-77a",
+          "cite": "M.G.L. c. 131, § 77A; 321 CMR 9.02(2)(e)",
+          "quote": "No person shall possess, sell, trade, breed, import, export or release a wild canid hybrid or wild felid hybrid, except as otherwise provided by rules and regulations of the division. ... The provisions of this section shall not apply to an owner or person possessing a domesticated show or pet cat registered with a nationally or internationally recognized breeding association or registry which certifies the pedigree and registration of such cat to be without any wild felid parentage for a minimum of three generations.",
+          "note": "The tenth Bengal answer on this map, and the only one that requires the registry paperwork rather than merely referring to it. § 77A prohibits possessing a wild felid hybrid outright, and 321 CMR 9.02(2)(e) confirms the route by making every wild-domestic mammal hybrid domestic EXCEPT wild canid and wild felid hybrids, which it sends back to § 77A. The exit is a cat registered with a national or international registry whose pedigree certifies no wild felid parentage for at least three generations, which lands on the same animal as Iowa's fourth filial generation but reaches it by counting backwards from the cat rather than forwards from the cross. Two conditions, not one: the generations alone are not enough without the registration, and the registration alone is not enough without the certified pedigree. MassWildlife applies the same test to the Savannah, saying it is domestic \"only if it can be documented to be generations (F4) past the original mating with an African Serval\".",
+          "verifiedOn": "2026-09-05",
+          "grandfathered": {
+            "before": "1994-01-01",
+            "detail": "An owner in possession on 1 January 1994 who obtained a permit from the director on or before 31 July 1994 is outside the section."
+          }
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -4191,9 +4239,10 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "All true Chameleons (Chamaelenoidae)",
-          "note": "Except species categorically nonexempt under endangered species protections.",
-          "verifiedOn": "2026-08-04"
+          "cite": "321 CMR 9.01(10)(c)(10)",
+          "quote": "All true Chameleons (Chamaelenoidae) may be kept without a permit, except species categorically non-exempt pursuant to 321 CMR 9.01(3).",
+          "note": "The true chameleons are cleared as a family, subject to the categorical bar, and Chamaeleo calyptratus is IUCN least concern so the bar does not reach it. The family is worth checking species by species in this state rather than relying on the group, because a great many chameleons are IUCN-listed and this one is not.",
+          "verifiedOn": "2026-09-05"
         },
         "CO": {
           "status": "legal",
@@ -4886,6 +4935,14 @@
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Testudo horsfieldii is Central Asian and appears in no Texas list. The tortoise to keep it separate from is the Texas tortoise, Gopherus berlandieri, which is listed as threatened under 31 TAC § 65.175 and cannot be taken, possessed or sold at all. The nongame subchapter and the threatened species subchapter both reach only species indigenous to Texas, so neither touches this one.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(3)(b), (10)(a)(1)",
+          "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
+          "note": "The turtle allowance is generous and the categorical bar is what removes this species from it. Testudo horsfieldii is assessed by the IUCN as vulnerable, so 9.01(3)(b) applies and it cannot be exempted whatever the general clause says. Note that MassWildlife's own summary page lists only four tortoises as off limits and does not carry the rarity clause into its turtle table, while it does carry it into its snake and gecko tables; the regulation governs, and the page itself says its lists may not be all-inclusive. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/russian-tortoise-legal-guide/"
@@ -4954,9 +5011,10 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "All species of boas and pythons (family Boidae)",
-          "note": "Except African rock python, reticulated python and anacondas.",
-          "verifiedOn": "2026-08-04"
+          "cite": "321 CMR 9.01(10)(b)(1)",
+          "quote": "All venomous snakes require a permit. The following snakes may be kept without a permit: 1. All species of boas and pythons (family Boidae), except those species categorically non-exempt pursuant to 321 CMR 9.01(3), and except the African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.), which require a permit.",
+          "note": "Boas and pythons are exempt as a family with three species pulled out by name, the African rock python, the reticulated python and every anaconda, and the ball python is none of them. The one edge worth naming: Python regius is assessed by the IUCN as near threatened, and 9.01(3)(b) bars exempting a species in the Red Book(s) without saying which categories count. Near threatened is the boundary the text does not draw, and MassWildlife lists ball pythons among the snakes that may be kept, so the practical answer is settled even though the wording is not.",
+          "verifiedOn": "2026-09-05"
         },
         "OR": {
           "status": "legal",
@@ -5335,8 +5393,10 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "All species of boas and pythons (family Boidae)",
-          "verifiedOn": "2026-08-04"
+          "cite": "321 CMR 9.01(10)(b)(1)",
+          "quote": "All venomous snakes require a permit. The following snakes may be kept without a permit: 1. All species of boas and pythons (family Boidae), except those species categorically non-exempt pursuant to 321 CMR 9.01(3), and except the African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.), which require a permit.",
+          "note": "Exempt under the family clearance, and the clearance is unusually explicit about size: MassWildlife summarises it as \"All species of boas & pythons (family Boidae), regardless of size\". Boa constrictor is IUCN least concern, so the categorical bar does not reach it either. Massachusetts is therefore more permissive on this animal than several states that cap constrictors by length.",
+          "verifiedOn": "2026-09-05"
         },
         "CO": {
           "status": "legal",
@@ -6016,6 +6076,14 @@
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Texas regulates nongame wildlife through 31 TAC Chapter 65 Subchapter O, and the rule defines its own subject as \"species of vertebrate wildlife\". That is narrower than the statute it was written under: Parks & Wild. Code § 67.001 defines nongame as \"those species of vertebrate and invertebrate wildlife indigenous to Texas\". The department had the power to reach invertebrates and did not use it, so the tarantula sits outside the scheme entirely. The dangerous wild animal list is mammals only, and 31 TAC Chapter 57 Subchapter A, the harmful exotic species rule, covers fish, shellfish and aquatic plants and no terrestrial arthropod. This matters more here than in most states, because Texas has native Aphonopelma tarantulas: a native invertebrate is still outside the rule, since the vertebrate limit does the excluding rather than the origin test.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "M.G.L. c. 131, § 23; 321 CMR 9.01(2)",
+          "quote": "Species means an individual or individuals of any distinct non-domestic vertebrate animal population whose members interbreed when mature or are self-perpetuating through the production of viable offspring and can include any subspecies or variety of vertebrate animal.",
+          "note": "Massachusetts is a closed-list state, so the question worth asking first is whether the list applies at all, and for a tarantula it does not. M.G.L. c. 131, § 23 reaches \"fish, birds, mammals, reptiles, or amphibians\", and 321 CMR 9.01(2) defines the species the exemption list is made of as vertebrate populations. A terrestrial arthropod is outside the licensing scheme entirely rather than unlisted within it, which is a different answer from the one the closed list gives a mammal nobody put on it.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -6369,6 +6437,14 @@
           "cite": "31 TAC § 65.325(a); Parks & Wild. Code § 67.001",
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Texas regulates nongame wildlife through 31 TAC Chapter 65 Subchapter O, and the rule defines its own subject as \"species of vertebrate wildlife\". That is narrower than the statute it was written under: Parks & Wild. Code § 67.001 defines nongame as \"those species of vertebrate and invertebrate wildlife indigenous to Texas\". The department had the power to reach invertebrates and did not use it, so Pandinus imperator sits outside the scheme entirely. The dangerous wild animal list is mammals only, and 31 TAC Chapter 57 Subchapter A, the harmful exotic species rule, covers fish, shellfish and aquatic plants and no terrestrial arthropod.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "M.G.L. c. 131, § 23; 321 CMR 9.01(2)",
+          "quote": "Species means an individual or individuals of any distinct non-domestic vertebrate animal population whose members interbreed when mature or are self-perpetuating through the production of viable offspring and can include any subspecies or variety of vertebrate animal.",
+          "note": "Massachusetts is a closed-list state, so the question worth asking first is whether the list applies at all, and for the emperor scorpion it does not. M.G.L. c. 131, § 23 reaches \"fish, birds, mammals, reptiles, or amphibians\", and 321 CMR 9.01(2) defines the species the exemption list is made of as vertebrate populations. A terrestrial arthropod is outside the licensing scheme entirely rather than unlisted within it, which is a different answer from the one the closed list gives a mammal nobody put on it.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -6756,6 +6832,14 @@
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Salvator merianae is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. This is the notable absence in Texas. The Argentine black and white tegu is established in Florida and Georgia and is prohibited or permitted in a growing number of states, and Texas, which has suitable climate, regulates it not at all.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)(3)",
+          "quote": "All Teiids (Teiidae), including Jungle Runners (Ameiva spp.) and Tegus (Tupinambis spp.), may be kept without a permit except for the following which require a permit: Species categorically non-exempt pursuant to 321 CMR 9.01(3). Desert Tegus (Dicrodon spp.)",
+          "note": "This one turns on reading the sentence rather than the parenthetical. The entry clears \"All Teiids (Teiidae)\" and then gives Ameiva and Tupinambis as examples, and Salvator merianae was split out of Tupinambis in 2012, so a list-matching read would miss it. \"All Teiids\" is the operative clearance and the tegu is a teiid, so it is exempt, and it is IUCN least concern so the categorical bar does not reach it. Massachusetts is notably permissive on an animal that several southeastern states now prohibit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -7123,6 +7207,14 @@
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Varanus exanthematicus is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)(11)",
+          "quote": "The following Monitor Lizards (Varanidae) may be kept without a permit: Spiny-tailed or Ridge-tailed Monitor (Varanus acanthurus).",
+          "note": "Varanus exanthematicus is IUCN least concern and it makes no difference, because the monitor entry exempts one species and this is not it. MassWildlife states the result plainly on the other side of its own table: \"Any monitor lizards except the spiny-tailed (ridge-tailed) monitor\" cannot be kept. Nothing about the savannah monitor's size or temperament is doing the work here, only its absence from a one-line list. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -7183,9 +7275,10 @@
         "MA": {
           "status": "permit",
           "sourceId": "ma-321-9-01",
-          "note": "Absent from the exemption list, so a permit is required.",
-          "verifiedOn": "2026-08-04",
-          "permitFor": "personal"
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "The mammal exemption list is thirteen entries and the prairie dog is not one of them, which in a closed-list state is the whole answer. 9.01(1) says species not listed \"are not exempt from the provisions of M.G.L. c. 131, § 23\", and 9.02(2)(c) adds that any vertebrate taxon not on the domestic list is presumed wild. Note that the southern flying squirrel and the deer mouse ARE listed, so being a North American native rodent is not the obstacle; the prairie dog simply was not put on. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         },
         "CO": {
           "status": "banned",
@@ -7599,9 +7692,10 @@
         "MA": {
           "status": "permit",
           "sourceId": "ma-321-9-01",
-          "note": "Absent from the exemption list.",
-          "verifiedOn": "2026-08-04",
-          "permitFor": "personal"
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "The mammal exemption list is thirteen entries and the capybara is not one of them, which in a closed-list state is the whole answer. 9.01(1) says species not listed \"are not exempt from the provisions of M.G.L. c. 131, § 23\", and 9.02(2)(c) adds that any vertebrate taxon not on the domestic list is presumed wild. The list does include the paca, Cuniculus spp., a South American caviomorph rodent of the same general kind, which is a reminder that this list is a set of individual decisions rather than a principle. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         },
         "CO": {
           "status": "banned",
@@ -8370,6 +8464,14 @@
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
           "note": "Not on the domestic animal list, not on the unregulated wildlife list and not on the § 008(B) prohibited list either, which leaves it in the regulated middle. Colorado has no pet licence to issue. Chapter W-11 § 1104 offers commercial wildlife park licences, which require commercial status, and a non-commercial wildlife park licence that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before 1 January 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". CPW says the same thing in plainer words on its possession page, that species such as raccoons, skunks, foxes and monkeys are not allowed here even where another state permits them, and that the bar covers interstate transport through Colorado as well.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "The mammal exemption list is thirteen entries and the fennec fox is not one of them, which in a closed-list state is the whole answer. 9.01(1) says species not listed \"are not exempt from the provisions of M.G.L. c. 131, § 23\", and 9.02(2)(c) adds that any vertebrate taxon not on the domestic list is presumed wild. No canid of any kind appears on either list, wild or otherwise, apart from the domestic dog. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/fennec-fox-legal-guide/"
@@ -8800,6 +8902,14 @@
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
           "note": "The serval is a wild felid, not Felis catus, so the domestic-cat line that clears Bengal hybrids does not reach it, and Leptailurus serval appears on neither the unregulated list nor the prohibited list. That leaves it regulated. Colorado has no pet licence to issue. Chapter W-11 § 1104 offers commercial wildlife park licences, which require commercial status, and a non-commercial wildlife park licence that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before 1 January 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". The contrast inside a single sentence of § 1103(A) is the thing to notice: a serval hybrid is a domestic cat in Colorado, and a serval is not.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "The mammal exemption list is thirteen entries and the serval is not one of them, which in a closed-list state is the whole answer. 9.01(1) says species not listed \"are not exempt from the provisions of M.G.L. c. 131, § 23\", and 9.02(2)(c) adds that any vertebrate taxon not on the domestic list is presumed wild. No felid appears on the exemption list at all, and the domestic list carries only Felis catus, so Massachusetts reaches every exotic cat by omission rather than by naming one. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/serval-legal-guide/"
@@ -8853,10 +8963,12 @@
           "note": "Named by binomial on the unrestricted list."
         },
         "MA": {
-          "status": "legal",
+          "status": "conditional",
           "sourceId": "ma-321-9-01",
-          "quote": "Chinchilla (Chinchilla spp.) derived from captive stock",
-          "verifiedOn": "2026-08-04"
+          "cite": "321 CMR 9.01(12)(a)(2)",
+          "quote": "List of Mammals. (a) The following mammals may be kept without a permit: 1. Four-toed (African pygmy) hedgehog (Erinaceus albiventris) (= Atelerix pruneri) 2. Chinchilla (Chinchilla spp.) derived from captive stock. 3. Deer Mouse and White-footed Mouse 4. Degu (Octodon degus) 5. Egyptian Spiny Mouse 6. House Mouse 7. Jerboas 8. Norway Rat 9. Paca 10. Southern Flying Squirrel (Glaucomys volans) 11. Striped hamster ... 12. Sugar Glider (Petaurus breviceps) 13. American Bison",
+          "note": "The entry reads \"Chinchilla (Chinchilla spp.) derived from captive stock\", and the qualifier is doing real work. Wild chinchillas are IUCN-listed as endangered, which under 9.01(3)(b) means the species cannot be exempted at all, and the Division answered that by exempting the captive-bred form specifically. A keeper is asked for provenance rather than paperwork: there is no permit and no registry, but the animal has to be captive stock. This is also the clearest evidence on the face of the rule of how the Division reads the categorical bar, since it exempted a species whose wild population is listed by writing the captive qualifier into the entry.",
+          "verifiedOn": "2026-09-05"
         },
         "CO": {
           "status": "legal",
@@ -9577,6 +9689,14 @@
           "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
           "note": "Cavia porcellus is a domesticated South American rodent. It is not indigenous to Texas, so the nongame possession caps do not reach it, and no rodent is on the dangerous wild animal list.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.02(3)",
+          "quote": "Domestic animals as listed in 321 CMR 9.02(3) shall be exempt from the provisions of M.G.L. c. 131, § 23, and may be possessed, propagated, maintained, imported, bought, sold, or otherwise disposed of ... Any vertebrate taxa not listed in 321 CMR 9.02 shall be presumed to be wild and shall be subject to the provisions of M.G.L. c. 131.",
+          "note": "Cavia porcellus is on the domestic animal list. The presumption in 9.02(2)(c) is what makes that listing necessary rather than obvious: an unlisted vertebrate is presumed wild here, so a domesticated species that nobody listed would be in the permit tier.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9956,6 +10076,14 @@
           "cite": "31 TAC § 65.325(a)",
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Iguana iguana is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. Florida is where this animal is restricted, as an established invasive. Texas has no prohibited nonnative reptile list to put it on.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)(7)",
+          "quote": "The following Iguanid Lizards (Iguanidae) may be kept without a permit: Basilisks (Basiliscus spp.) Collared and Leopard Lizards (Crotaphytus spp.) Common or Green Iguanas (Iguana i. iguana) False or Spring-tailed Iguanas (Ctenosaurus spp.) Tree Iguanas (Liolaemus spp.) New World Chameleons (Anolis spp. and Ctenotus spp.) Spiny Lizards (Sceloporus spp.) Tree and Bush Lizards (Urosaurus spp.) Diving Lizards (Uranoscodon spp.) Zebra-tailed Lizards (Callisaurus spp.)",
+          "note": "Named as \"Common or Green Iguanas (Iguana i. iguana)\", using the trinomial for the nominate subspecies. The iguanid entry is a closed list rather than a family clearance, so an iguanid not on it is not exempt, which makes the naming here the whole answer. Iguana iguana is IUCN least concern.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -10338,6 +10466,14 @@
           "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
           "note": "The common snapping turtle, Chelydra serpentina, is on the § 65.331(e) list: six without a permit, no commercial activity. Do not read across from the alligator snapping turtle, Macrochelys temminckii, which Texas lists as threatened under 31 TAC § 65.175, where § 65.171(b)(2) bars taking, possessing, transporting, importing, exporting or selling it altogether. Two snapping turtles, two entirely different answers, and the name is what runs them together. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "conditional",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(a)",
+          "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
+          "note": "Chelydra serpentina is not one of the five named exceptions, is IUCN least concern and is not on the Massachusetts list, so it falls under the general turtle allowance: no permit, and a cap of 100 turtles or eggs of the species in any combination. The cap is written for dealers rather than keepers and no pet owner will meet it. The separate rule to know is about acquisition: MassWildlife allows taking two snapping turtles from the wild in Massachusetts as personal pets under 321 CMR 3.05, and animals taken that way may not be sold, bartered or exchanged, or released back.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10696,6 +10832,14 @@
           "cite": "31 TAC § 65.325(a)",
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Gekko gecko is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)(6)",
+          "quote": "All Geckos (Gekkonidae) may be kept without a permit except for those species categorically non-exempt pursuant to 321 CMR 9.01(3) and the Big Bend Gecko (Coleonyx reticulatus) which require a permit.",
+          "note": "Cleared by the family listing. Gekko gecko is IUCN least concern, which is the point to check in this state rather than the animal's reputation for biting: the gecko clearance is subject only to the categorical bar and to the Big Bend gecko.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11068,6 +11212,14 @@
           "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
           "note": "Ambystoma tigrinum is on the § 65.331(d) list and is native across most of Texas, so the answer is 25 without a permit and no commercial activity in them. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. Note the § 65.331(e) list names eight other Ambystoma and Eurycea salamanders at the lower cap of six, so the tiger salamander is on the more permissive of the two lists rather than outside the scheme.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(9)",
+          "quote": "List of Amphibians. All amphibians may be kept without a permit except species categorically non-exempt pursuant to 321 CMR 9.01(3).",
+          "note": "The amphibian entry is one sentence and clears the whole class subject to the categorical bar. Ambystoma tigrinum is IUCN least concern and is not on the Massachusetts 321 CMR 10.90 list, which carries four other Ambystoma and Scaphiopus entries but not this one, so nothing pulls it back out. Massachusetts also allows taking two of certain native amphibians from the wild as personal pets under 321 CMR 3.05, though the tiger salamander is not among the species on that list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11439,6 +11591,14 @@
           "cite": "31 TAC § 65.325(a)",
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Varanus niloticus is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. Another one Texas leaves open that neighbouring states do not: the Nile monitor is established in Florida and is on several prohibited lists elsewhere, and no Texas rule names it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)(11)",
+          "quote": "The following Monitor Lizards (Varanidae) may be kept without a permit: Spiny-tailed or Ridge-tailed Monitor (Varanus acanthurus).",
+          "note": "Not the exempted monitor, so it is in the permit tier. Worth contrasting with the states that restrict this animal as an established invasive: Massachusetts reaches it by a closed family list that would catch a harmless monitor just as readily, and does not mention Florida populations or escape risk at all. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11830,6 +11990,14 @@
           "quote": "Controlled exotic snake--Any live snake that is: (A) a venomous snake not indigenous to Texas; (B) any of the following: (i) African rock python (Python sebae); (ii) Asiatic rock python, (Python molurus); (iii) Burmese python (Python bivittatus); (iv) green anaconda, (Eunectes murinus); (v) reticulated python, (Python reticulatus); (vi) southern African python (Python natalensis); or (C) a hybrid of any species listed in this paragraph.",
           "note": "Python bivittatus is named in the statute and again in the rule, so a Texas keeper needs a recreational controlled exotic snake permit, renewed annually and running 1 September to 31 August. It is a permit rather than a ban, which separates Texas from the states that prohibit the species outright. Two practical details: 31 TAC § 55.653(c) makes the sales receipt a temporary permit for 21 days from the date of sale, so a buyer is not immediately in violation, and Parks & Wild. Code § 43.856(b) makes releasing one a Class A misdemeanor rather than the Class C that covers permit offences. The species was added by name in 2021 by H.B. 2326; before that it had to be read into \"Asiatic rock python, Python molurus\", which is the parent species it was split from.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(3)(b), (10)(b)(1)",
+          "quote": "All venomous snakes require a permit. The following snakes may be kept without a permit: 1. All species of boas and pythons (family Boidae), except those species categorically non-exempt pursuant to 321 CMR 9.01(3), and except the African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.), which require a permit.",
+          "note": "The three pythons and anacondas named in the exemption are the African rock, the reticulated and Eunectes, and the Burmese is not among them, which makes this look like a legal state on a first read. It is not: Python bivittatus is assessed by the IUCN as vulnerable, so 9.01(3)(b) makes it categorically non-exempt and the family clearance is expressly subject to that clause. MassWildlife's summary reads the same way, clearing boas and pythons \"except rare species and those listed as unlawful\", which is two separate exclusions rather than one. Massachusetts is the state on this map where the Burmese python is restricted by a conservation listing rather than by an invasive-species rule. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11840,10 +12008,10 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "Degu (Octodon degus)",
-          "verifiedOn": "2026-08-04",
-          "cite": "321 CMR 9.01",
-          "note": "Named on the exemption list by binomial. The criteria for getting on it include posing no significant ecological risk if released and needing no more care than a common domestic animal."
+          "cite": "321 CMR 9.01(12)(a)",
+          "quote": "List of Mammals. (a) The following mammals may be kept without a permit: 1. Four-toed (African pygmy) hedgehog (Erinaceus albiventris) (= Atelerix pruneri) 2. Chinchilla (Chinchilla spp.) derived from captive stock. 3. Deer Mouse and White-footed Mouse 4. Degu (Octodon degus) 5. Egyptian Spiny Mouse 6. House Mouse 7. Jerboas 8. Norway Rat 9. Paca 10. Southern Flying Squirrel (Glaucomys volans) 11. Striped hamster ... 12. Sugar Glider (Petaurus breviceps) 13. American Bison",
+          "note": "Named at 9.01(12)(a)(4). Massachusetts is one of the few states that thought about the degu specifically rather than leaving it to a rodent catch-all, which matters here because the list is closed and a rodent that is not on it cannot be kept.",
+          "verifiedOn": "2026-09-05"
         },
         "CO": {
           "status": "banned",
@@ -12566,6 +12734,14 @@
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Ambystoma mexicanum is endemic to the Xochimilco canals in Mexico City, so it is not indigenous to Texas and the nongame rules do not reach it, even though its close relative the tiger salamander is capped at 25. The other rule worth ruling out is 31 TAC Chapter 57 Subchapter A, the harmful or potentially harmful exotic species list, which is long but covers only fish, shellfish and aquatic plants and names no amphibian at all.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(3)(b), (9)",
+          "quote": "List of Amphibians. All amphibians may be kept without a permit except species categorically non-exempt pursuant to 321 CMR 9.01(3).",
+          "note": "The class-wide amphibian clearance is subject to 9.01(3), and Ambystoma mexicanum is assessed by the IUCN as critically endangered, which makes it categorically non-exempt. The axolotl is the sharpest case for that clause anywhere on this map: the wild population is confined to the Xochimilco canals and is genuinely near extinction, while the captive population is enormous, entirely laboratory-derived and in no sense taken from the wild. The regulation draws no distinction, and unlike the chinchilla entry it writes no captive-stock exception here. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12921,6 +13097,14 @@
           "cite": "31 TAC § 65.327(b)(3)(A); § 65.331(e)",
           "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
           "note": "Both Terrapene species that occur in Texas are on the § 65.331(e) list, the eastern box turtle and the ornate box turtle, so the cap is six per species and commercial activity is barred outright. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. Texas is a state where the box turtle question is often reported as a flat ban and it is not one; it is a low cap with no sale. The related restriction to know is § 65.331(b), which bars possessing or using a net or trap capable of catching a turtle while on or in public water, dip nets and small minnow traps excepted.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-10-90",
+          "cite": "321 CMR 9.01(3)(c), (10)(a)(1); 321 CMR 10.90",
+          "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
+          "note": "Caught twice by the categorical bar, which is why the general turtle allowance does not reach it. The eastern box turtle, Terrapene carolina, is listed as a species of special concern on the Massachusetts list at 321 CMR 10.90, which triggers 9.01(3)(c), and it is IUCN vulnerable, which triggers 9.01(3)(b) independently. Nothing in either turns on where the animal came from, so a captive-bred box turtle bought from an out-of-state breeder is in the same position as one found in the woods. Massachusetts joins Connecticut in answering this species through its endangered species listing rather than its pet rules, which is why it is easy to miss. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13281,6 +13465,14 @@
           "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
           "note": "Trachemys scripta is on the § 65.331(e) list, which is the lower tier: six without a permit and no sale, offer for sale, exchange or barter. The slider is native across most of Texas, which is what brings the rule down on it, and the same list names the Big Bend slider separately. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. The federal four-inch rule under 21 C.F.R. 1240.62 is the other half of the answer for hatchlings and is unaffected by any of this.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(a)(6)",
+          "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
+          "note": "One of only five species pulled out of the turtle allowance by name, and the parenthetical is deliberately wide: \"Trachemys scripta, including all subspecies and forms\". So the yellow-bellied and Cumberland sliders are caught alongside the red-eared, and so is a captive-bred colour morph. The reason is ecological rather than conservation-driven, since the slider is IUCN least concern; it is on the list because an escaped one establishes. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13637,6 +13829,14 @@
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Centrochelys sulcata is African. Nothing in the nongame rules reaches it, because they apply only to wildlife indigenous to Texas, and no Texas list names it. The state’s own tortoise, Gopherus berlandieri, is threatened and off limits entirely, which is a useful contrast: Texas restricts the tortoise it has and not the ones it does not.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(3)(b), (10)(a)(1)",
+          "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
+          "note": "Centrochelys sulcata is IUCN endangered, which makes it categorically non-exempt under 9.01(3)(b) and takes it out of the turtle allowance. Massachusetts is a genuinely unusual answer for this animal: most states that restrict the sulcata do it for size or for the burrowing, and this one does it through a conservation listing that has nothing to do with either. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13992,6 +14192,14 @@
           "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
           "note": "Both Texas hognose species are on the § 65.331(d) list by name, the western Heterodon nasicus and the eastern H. platirhinos, so whichever one a keeper has, the answer is 25 without a permit and no commercial activity. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. The western hognose is the ordinary pet-trade animal and is squarely native to Texas, so the captive-bred qualification is the one that matters here.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "conditional",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(b)(4), (3)(c); 321 CMR 10.90",
+          "quote": "Snakes of the family Colubridae, as follows: ... Garter and Ribbon Snakes (Thamnophis spp.) ... Kingsnakes and Milk Snakes (Lampropeltis spp.) ... North American Ratsnakes (Pantherophis spp.) except the Black Ratsnake (Pantherophis alleghaniensis other than albinistic and leucistic individuals) which requires a permit ... Western Hognose Snake (Heterodon nasicus)",
+          "note": "Massachusetts answers the two hognose species differently, and the common name hides it. The colubrid list clears the Western Hognose Snake, Heterodon nasicus, by name and by name only, so the ordinary pet-trade hognose is exempt. The eastern hognose, Heterodon platirhinos, is a Massachusetts species of special concern on the 321 CMR 10.90 list, which makes it categorically non-exempt under 9.01(3)(c) and puts it in the permit tier that MassWildlife says is not issued for pets. Both animals are IUCN least concern, so this split comes entirely from the state list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14345,6 +14553,14 @@
           "quote": "(a) Except as provided by this code, no person may: (1) catch, kill, injure, pursue, or possess, dead or alive, or purchase, sell, expose for sale, transport, ship, or receive or deliver for transportation, a bird that is not a game bird ... (d) Canaries, parrots, and other exotic nongame birds may be sold, purchased, and kept as domestic pets.",
           "note": "Psittacus erithacus is a parrot, which subsection (d) clears by name for sale, purchase and keeping. The state layer is the easy half here. The federal Wild Bird Conservation Act bars commercial import of wild-caught birds and CITES Appendix I has covered this species since 2017, so a lawfully sold African grey in Texas is a captive-bred one with paperwork, and that paperwork is what a buyer should be checking rather than a state list.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(11)(a)(1), (3)",
+          "quote": "List of Birds. (a) The following groups of birds are prohibited without a permit: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Migratory birds listed in the Code of Federal Regulations, 50 CFR 10.13. 3. Any other bird native to the United States and Canada. (b) Except for species listed in 321 CMR 9.01(11)(a), the birds or groups of birds may be kept without a permit: ... 6. Psittacidae (parrots and their allies)",
+          "note": "The family exemption for Psittacidae is expressly subject to 9.01(11)(a), and clause 1 pulls out anything categorically non-exempt under 9.01(3). Psittacus erithacus is assessed by the IUCN as endangered, so it falls inside 9.01(3)(b) and outside the parrot clearance. This is the clearest illustration on this map of why the categorical bar has to be read before the group listing: on the group listing alone an African grey is an ordinary pet parrot in Massachusetts, and it is not. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14691,6 +14907,14 @@
           "cite": "31 TAC § 65.325(a); Parks & Wild. Code § 67.001",
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Texas regulates nongame wildlife through 31 TAC Chapter 65 Subchapter O, and the rule defines its own subject as \"species of vertebrate wildlife\". That is narrower than the statute it was written under: Parks & Wild. Code § 67.001 defines nongame as \"those species of vertebrate and invertebrate wildlife indigenous to Texas\". The department had the power to reach invertebrates and did not use it, so Archispirostreptus gigas sits outside the scheme entirely. The dangerous wild animal list is mammals only, and 31 TAC Chapter 57 Subchapter A, the harmful exotic species rule, covers fish, shellfish and aquatic plants and no terrestrial arthropod. The federal layer is the one to check for this animal: giant African millipedes are restricted at the border by USDA APHIS as a plant pest, which is a separate question from Texas law.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "M.G.L. c. 131, § 23; 321 CMR 9.01(2)",
+          "quote": "Species means an individual or individuals of any distinct non-domestic vertebrate animal population whose members interbreed when mature or are self-perpetuating through the production of viable offspring and can include any subspecies or variety of vertebrate animal.",
+          "note": "Massachusetts is a closed-list state, so the question worth asking first is whether the list applies at all, and for the giant African millipede it does not. M.G.L. c. 131, § 23 reaches \"fish, birds, mammals, reptiles, or amphibians\", and 321 CMR 9.01(2) defines the species the exemption list is made of as vertebrate populations. A terrestrial arthropod is outside the licensing scheme entirely rather than unlisted within it, which is a different answer from the one the closed list gives a mammal nobody put on it.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15050,6 +15274,14 @@
           "note": "Two conditions, both real. The animal must be captive-bred, and § 703(B) requires documentation that reasonably identifies it, a receipt or bill of sale, a donation certificate, an importation health certificate or proof it was bred from lawfully possessed parents. No licence and no fee, but a wild-caught corn snake and an undocumented one are both outside the exemption. Colorado carved the Great Plains ratsnake out of the genus because it is a native species. Anyone who held a Pantherophis on 1 May 2026 could satisfy the documentation requirement instead by filing a CPW Legacy Report under § 703(C). CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(b)(4)",
+          "quote": "Snakes of the family Colubridae, as follows: ... Garter and Ribbon Snakes (Thamnophis spp.) ... Kingsnakes and Milk Snakes (Lampropeltis spp.) ... North American Ratsnakes (Pantherophis spp.) except the Black Ratsnake (Pantherophis alleghaniensis other than albinistic and leucistic individuals) which requires a permit ... Western Hognose Snake (Heterodon nasicus)",
+          "note": "The colubrid list clears \"North American Ratsnakes (Pantherophis spp.)\" with one exception, the black ratsnake, Pantherophis alleghaniensis, other than albinistic and leucistic individuals. That exception is not about the pet trade: P. alleghaniensis is listed as endangered in Massachusetts at 321 CMR 10.90, and the colour-morph carve-out is there because an albino animal is visibly not wild-caught. Pantherophis guttatus is IUCN least concern and unlisted here, so the corn snake is clear.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/corn-snake-legal-guide/"
@@ -15386,6 +15618,14 @@
           "note": "Captive-bred Lampropeltis triangulum is on Appendix B, so it needs documentation under § 703(B) but no licence. The exclusion is the part that matters for this species: the western milksnake, which Colorado writes as Lampropeltis gentilis or L. triangulum gentilis, is Colorado's own native milksnake and is left out of the exemption, so the answer depends on which milksnake it is. Anyone who held one on 1 May 2026 could file a CPW Legacy Report under § 703(C) in place of documentation. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(b)(4)",
+          "quote": "Snakes of the family Colubridae, as follows: ... Garter and Ribbon Snakes (Thamnophis spp.) ... Kingsnakes and Milk Snakes (Lampropeltis spp.) ... North American Ratsnakes (Pantherophis spp.) except the Black Ratsnake (Pantherophis alleghaniensis other than albinistic and leucistic individuals) which requires a permit ... Western Hognose Snake (Heterodon nasicus)",
+          "note": "Lampropeltis is cleared as a genus, \"Kingsnakes and Milk Snakes (Lampropeltis spp.)\", with no species carved out and no cap. Massachusetts also allows taking two milksnakes from the wild as personal pets under 321 CMR 3.05, which cannot then be sold, bartered or exchanged, so the acquisition route matters more here than the possession rule.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/milk-snake-legal-guide/"
@@ -15526,9 +15766,10 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "All species of boas and pythons (family Boidae)",
-          "note": "Massachusetts clears the whole family Boidae by name.",
-          "verifiedOn": "2026-08-27"
+          "cite": "321 CMR 9.01(10)(b)(1)",
+          "quote": "All venomous snakes require a permit. The following snakes may be kept without a permit: 1. All species of boas and pythons (family Boidae), except those species categorically non-exempt pursuant to 321 CMR 9.01(3), and except the African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.), which require a permit.",
+          "note": "A boid, so it clears under the family listing, and Lichanura trivirgata is IUCN least concern so the categorical bar does not apply. The three excepted species are all large constrictors, which is a size and escape concern the rosy boa is on the wrong end of entirely.",
+          "verifiedOn": "2026-09-05"
         },
         "MD": {
           "status": "legal",
@@ -15778,10 +16019,10 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "cite": "321 CMR 9.01(12)(a)(10)",
-          "quote": "Southern Flying Squirrel (Glaucomys volans)",
-          "note": "Named on Massachusetts's exemption list; may be kept without a MassWildlife permit. The one squirrel species on the list.",
-          "verifiedOn": "2026-08-27"
+          "cite": "321 CMR 9.01(12)(a)",
+          "quote": "List of Mammals. (a) The following mammals may be kept without a permit: 1. Four-toed (African pygmy) hedgehog (Erinaceus albiventris) (= Atelerix pruneri) 2. Chinchilla (Chinchilla spp.) derived from captive stock. 3. Deer Mouse and White-footed Mouse 4. Degu (Octodon degus) 5. Egyptian Spiny Mouse 6. House Mouse 7. Jerboas 8. Norway Rat 9. Paca 10. Southern Flying Squirrel (Glaucomys volans) 11. Striped hamster ... 12. Sugar Glider (Petaurus breviceps) 13. American Bison",
+          "note": "Named at 9.01(12)(a)(10) as the Southern Flying Squirrel, Glaucomys volans, which is the Massachusetts native and the pet-trade animal. The northern flying squirrel, Glaucomys sabrinus, is not named, and in a closed-list state that is the difference between legal and not.",
+          "verifiedOn": "2026-09-05"
         },
         "NJ": {
           "status": "legal",
@@ -16051,10 +16292,10 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "cite": "321 CMR 9.01(10)(c)",
-          "quote": "Spiny-tailed or Ridge-tailed Monitor (Varanus acanthurus)",
-          "note": "The only monitor lizard on Massachusetts's exemption list; it may be kept without a permit.",
-          "verifiedOn": "2026-08-27"
+          "cite": "321 CMR 9.01(10)(c)(11)",
+          "quote": "The following Monitor Lizards (Varanidae) may be kept without a permit: Spiny-tailed or Ridge-tailed Monitor (Varanus acanthurus).",
+          "note": "The monitor entry is one species long and this is it: \"The following Monitor Lizards (Varanidae) may be kept without a permit: Spiny-tailed or Ridge-tailed Monitor (Varanus acanthurus).\" Every other monitor needs a permit. Massachusetts is the sharpest example on this map of a state answering an entire family by naming one member of it.",
+          "verifiedOn": "2026-09-05"
         },
         "GA": {
           "status": "legal",
@@ -16557,11 +16798,11 @@
         },
         "MA": {
           "status": "legal",
-          "sourceId": "ma-321cmr9-01",
-          "cite": "321 CMR 9.01, Table 10(b)(4)",
-          "quote": "Garter and Ribbon Snakes (Thamnophis spp.)",
-          "note": "Named directly on the license-exemption list, so it may be kept without a permit under M.G.L. c. 131 § 23. Massachusetts works as an allow-list: only animals actually named on it are exempt, and this one is.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(b)(4)",
+          "quote": "Snakes of the family Colubridae, as follows: ... Garter and Ribbon Snakes (Thamnophis spp.) ... Kingsnakes and Milk Snakes (Lampropeltis spp.) ... North American Ratsnakes (Pantherophis spp.) except the Black Ratsnake (Pantherophis alleghaniensis other than albinistic and leucistic individuals) which requires a permit ... Western Hognose Snake (Heterodon nasicus)",
+          "note": "Thamnophis is cleared as a genus, \"Garter and Ribbon Snakes (Thamnophis spp.)\", so a common gartersnake needs no permit. The separate rule is acquisition: 321 CMR 3.05 allows taking two eastern garter snakes and two eastern ribbonsnakes from the wild as personal pets, and an animal taken that way may never be sold, bartered or exchanged, nor released again.",
+          "verifiedOn": "2026-09-05"
         },
         "MD": {
           "status": "conditional",
@@ -16960,11 +17201,11 @@
         },
         "MA": {
           "status": "legal",
-          "sourceId": "ma-321cmr9-01",
-          "cite": "321 CMR 9.01, Table 10(b)(4)",
-          "quote": "Kingsnakes and Milk Snakes (Lampropeltis spp.)",
-          "note": "The whole genus is named on the license-exemption list, California kingsnake included.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(b)(4)",
+          "quote": "Snakes of the family Colubridae, as follows: ... Garter and Ribbon Snakes (Thamnophis spp.) ... Kingsnakes and Milk Snakes (Lampropeltis spp.) ... North American Ratsnakes (Pantherophis spp.) except the Black Ratsnake (Pantherophis alleghaniensis other than albinistic and leucistic individuals) which requires a permit ... Western Hognose Snake (Heterodon nasicus)",
+          "note": "Cleared by the same genus-wide entry for Lampropeltis. Because the clearance is written to the genus rather than to a species list, the 2009 split of Lampropeltis californiae out of L. getula changes nothing here, which is the opposite of what the same split does in Texas, where the state list names L. getula specifically.",
+          "verifiedOn": "2026-09-05"
         },
         "MD": {
           "status": "legal",
@@ -17353,11 +17594,12 @@
           "verifiedOn": "2026-08-27"
         },
         "MA": {
-          "status": "legal",
-          "sourceId": "ma-321cmr9-01",
-          "cite": "321 CMR 9.01",
-          "note": "Parrots are on Massachusetts's license-exemption list. This research could not confirm whether Massachusetts carves specific CITES Appendix I or IUCN-Endangered cockatoo species back out the way Maine's list does, so treat that narrower point as unverified even though ordinary cockatoo ownership is clear.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(11)(a)(1), (b)(6); § 9.01(3)(b)",
+          "quote": "List of Birds. (a) The following groups of birds are prohibited without a permit: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Migratory birds listed in the Code of Federal Regulations, 50 CFR 10.13. 3. Any other bird native to the United States and Canada. (b) Except for species listed in 321 CMR 9.01(11)(a), the birds or groups of birds may be kept without a permit: ... 6. Psittacidae (parrots and their allies)",
+          "note": "Cockatoos are parrots for the purpose of the family exemption, so the answer turns entirely on the species and on 9.01(3)(b). The common pet cockatoos split both ways: the umbrella (Cacatua alba) and Moluccan (C. moluccensis) are IUCN endangered and the sulphur-crested group includes critically endangered species, all of which are categorically non-exempt, while the Major Mitchell's (C. leadbeateri) and long-billed corella (C. tenuirostris) are least concern and clear the bar. Goffin's (C. goffiniana) is near threatened, which is where the language runs out: the statute bars listing an animal \"in any category\" of the IUCN Red Data Books and MassWildlife paraphrases that as \"any rarity category\", and whether near threatened counts is not answered anywhere in the text. Check the species before assuming this is a bird question rather than a permit one.",
+          "verifiedOn": "2026-09-05"
         },
         "MD": {
           "status": "legal",
@@ -17626,11 +17868,12 @@
           "verifiedOn": "2026-08-27"
         },
         "MA": {
-          "status": "legal",
+          "status": "conditional",
           "sourceId": "ma-321-9-01",
-          "cite": "321 CMR 9.01",
-          "note": "Massachusetts allows all species of turtles (up to 100 individuals/eggs per species) without a permit except five named exceptions: Argentina/Chaco tortoise, Gopherus spp. (gopher tortoises), pancake tortoise, spotted turtle, and red-eared slider. The red-footed tortoise is not among them.",
-          "verifiedOn": "2026-08-27"
+          "cite": "321 CMR 9.01(10)(a)",
+          "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
+          "note": "Falls under the general turtle allowance: no permit, capped at 100 of the species in any combination of animals and eggs, which is a dealer-scale limit rather than a keeper-scale one. The categorical bar is worth checking here and comes out clean on the current IUCN checklist, which carries no assessment for Chelonoidis carbonarius; the older 1996 assessment was published under Geochelone carbonaria and is not on the current list. That makes this a thinner answer than the other tortoises on this row, and a reassessment would move it into the permit tier without any change to Massachusetts law.",
+          "verifiedOn": "2026-09-05"
         },
         "NJ": {
           "status": "permit",
@@ -18119,6 +18362,14 @@
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Pogona vitticeps is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)(8)",
+          "quote": "The following Agamid Lizards (Agamidae) may be kept without a permit: Dragon Lizards (Amphibolorus spp.) Forest, Garden and Bloodsucker Lizards (Calotes spp.) Sailfin Lizards (Hydrosaurus spp.) Bearded Dragons (Pogona spp.) Water Dragon (Physignathus spp.) Frilled Lizards (Chlamydosaurus spp.) Uromastyx Lizards (Uromastyx spp.)",
+          "note": "Named as a genus, \"Bearded Dragons (Pogona spp.)\". Like the iguanids, the agamid entry is a closed list rather than a family clearance, so the naming matters: an agamid outside these seven genera is not exempt. Pogona vitticeps is IUCN least concern.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18264,6 +18515,14 @@
           "cite": "31 TAC § 65.325(a)",
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Eublepharis macularius is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. The native the list does name is the Texas banded gecko, Coleonyx brevis, capped at 25, which is a different genus.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)(6)",
+          "quote": "All Geckos (Gekkonidae) may be kept without a permit except for those species categorically non-exempt pursuant to 321 CMR 9.01(3) and the Big Bend Gecko (Coleonyx reticulatus) which require a permit.",
+          "note": "Geckos are cleared as a family with one named exception, the Big Bend gecko, plus the categorical bar. Eublepharis macularius is IUCN least concern and appears on no list, so it is exempt. The Big Bend gecko exception is a native-range conservation matter rather than a pet-trade one.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -18411,6 +18670,14 @@
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Correlophus ciliatus is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(3)(b), (10)(c)(6)",
+          "quote": "All Geckos (Gekkonidae) may be kept without a permit except for those species categorically non-exempt pursuant to 321 CMR 9.01(3) and the Big Bend Gecko (Coleonyx reticulatus) which require a permit.",
+          "note": "The gecko family clearance is expressly subject to 9.01(3), and Correlophus ciliatus is assessed by the IUCN as vulnerable, so it is categorically non-exempt. MassWildlife's own summary phrases the clearance as \"All geckos except rare species and the Big Bend gecko\", which is the same reading. This is the most surprising entry in Massachusetts, because the crested gecko is an ordinary captive-bred pet-shop animal whose entire trade is captive stock, and the rule that catches it turns on the wild population in New Caledonia. The regulation offers no captive-bred exception of the kind it wrote for the chinchilla. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18556,6 +18823,14 @@
           "cite": "31 TAC § 65.325(a)",
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Tiliqua scincoides is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. Texas does list five native Eumeces skinks across its two nongame lists, so the genus matters here rather than the common name.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)(1)",
+          "quote": "All Skinks (Scincidae) except for the following which require a permit: Species categorically non-exempt pursuant to 321 CMR 9.01(3). Florida Sand Skinks (Neoseps spp.) Solomon Island Ground Skink (Tribolonotus spp.)",
+          "note": "Skinks are cleared as a family with two named exceptions, neither of which is Tiliqua, and Tiliqua scincoides is IUCN least concern so the categorical bar does not apply. Worth noting that the exempted family includes the Solomon Island prehensile-tailed skink while excluding the Solomon Island ground skink, which is a pair of very similar names on opposite sides of the line.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -18703,6 +18978,14 @@
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Trioceros jacksonii is not indigenous to Texas, so 31 TAC Chapter 65 Subchapter O does not reach it, and the dangerous wild animal list at Health & Safety Code § 822.101(4) contains no reptile. Texas has no general exotic reptile permit: the only reptiles it regulates by name are the six controlled exotic snakes, the venomous species, and its own native herpetofauna through the nongame and threatened species subchapters. Hawaii is the state that regulates this animal heavily, because it is established in the wild there. Texas has no equivalent concern and no equivalent rule.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)(10)",
+          "quote": "All true Chameleons (Chamaelenoidae) may be kept without a permit, except species categorically non-exempt pursuant to 321 CMR 9.01(3).",
+          "note": "Trioceros jacksonii clears the family listing and is IUCN least concern, so the categorical bar does not apply. Massachusetts has no ecological objection of the kind Hawaii has, where this species is established in the wild and regulated hard for that reason.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18848,6 +19131,14 @@
           "quote": "A person without a nongame or nongame dealer’s permit may: (A) possess six or fewer specimens of a species of nongame wildlife listed in §65.331(e) of this title, provided the person does not engage in commercial activity involving the nongame wildlife; and (B) possess 25 or fewer specimens of a species of nongame wildlife listed in §65.331(d) of this title, provided the person does not engage in commercial activity involving the nongame wildlife.",
           "note": "Anolis carolinensis is on the § 65.331(d) list, and it is native across the eastern half of Texas, so a keeper may hold 25 without a permit but may not sell, offer for sale, exchange or barter one. The cap reaches captive-bred animals: § 65.325(a) says nongame wildlife \"includes captive-bred nongame wildlife\", so a pet shop receipt does not lift it. This is the animal on this map where the Texas cap is most likely to surprise someone, because green anoles are sold nationally as cheap starter lizards and the buyer is the one the cap follows.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)(7)",
+          "quote": "The following Iguanid Lizards (Iguanidae) may be kept without a permit: ... New World Chameleons (Anolis spp. and Ctenotus spp.) ...",
+          "note": "Cleared as a genus under the common name the regulation uses for it, \"New World Chameleons (Anolis spp.)\", which is an old usage worth knowing because searching the rule for \"anole\" finds nothing. MassWildlife's summary spells it out as \"New World chameleons (including green and brown anoles)\". Anolis carolinensis is IUCN least concern.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18987,6 +19278,14 @@
           "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
           "note": "Two Texas rules mention rabbits and neither reaches this one. The § 65.331(d) nongame list names the black-tailed jackrabbit, a Lepus, and 31 TAC § 65.325(b)(4) expressly excepts rabbits of the genus Sylvilagus from the whole subchapter. Oryctolagus cuniculus is neither, and it is not indigenous to Texas in any event, so the definition never reaches it. That is a cleaner answer than Minnesota or Illinois manage, where the same species is named outright on an injurious species list.",
           "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.02(3)",
+          "quote": "Domestic animals as listed in 321 CMR 9.02(3) shall be exempt from the provisions of M.G.L. c. 131, § 23, and may be possessed, propagated, maintained, imported, bought, sold, or otherwise disposed of ... Any vertebrate taxa not listed in 321 CMR 9.02 shall be presumed to be wild and shall be subject to the provisions of M.G.L. c. 131.",
+          "note": "The domestic animal list reads \"Domestic rabbit, including breeds, varieties, and strains derived from the European rabbit (Oryctolagus cuniculus) but not including the European rabbit ferae naturae and not including the so-called 'San Juan' rabbit.\" Massachusetts is the cleanest answer on this map to a question three other states cannot settle: it names the same species Minnesota and Illinois struggle with, and disposes of it by separating the domestic strains from wild-type and San Juan stock in one sentence.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19124,6 +19423,14 @@
           "cite": "31 TAC § 65.325(a); Parks & Wild. Code § 67.001",
           "quote": "In this subchapter, nongame wildlife means those species of vertebrate wildlife, living or dead, that are indigenous to this state and are not classified as game animals, birds, fish, furbearing animals, endangered species, alligators, marine penaeid shrimp, or oysters. Nongame wildlife includes captive-bred nongame wildlife, parts of nongame wildlife, and the eggs of nongame wildlife.",
           "note": "Texas regulates nongame wildlife through 31 TAC Chapter 65 Subchapter O, and the rule defines its own subject as \"species of vertebrate wildlife\". That is narrower than the statute it was written under: Parks & Wild. Code § 67.001 defines nongame as \"those species of vertebrate and invertebrate wildlife indigenous to Texas\". The department had the power to reach invertebrates and did not use it, so Gromphadorhina portentosa sits outside the scheme entirely. The dangerous wild animal list is mammals only, and 31 TAC Chapter 57 Subchapter A, the harmful exotic species rule, covers fish, shellfish and aquatic plants and no terrestrial arthropod. As with the millipede, the constraint that actually exists is a federal USDA permit for interstate movement, not a Texas one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "M.G.L. c. 131, § 23; 321 CMR 9.01(2)",
+          "quote": "Species means an individual or individuals of any distinct non-domestic vertebrate animal population whose members interbreed when mature or are self-perpetuating through the production of viable offspring and can include any subspecies or variety of vertebrate animal.",
+          "note": "Massachusetts is a closed-list state, so the question worth asking first is whether the list applies at all, and for the Madagascar hissing cockroach it does not. M.G.L. c. 131, § 23 reaches \"fish, birds, mammals, reptiles, or amphibians\", and 321 CMR 9.01(2) defines the species the exemption list is made of as vertebrate populations. A terrestrial arthropod is outside the licensing scheme entirely rather than unlisted within it, which is a different answer from the one the closed list gives a mammal nobody put on it.",
           "verifiedOn": "2026-09-05"
         }
       }

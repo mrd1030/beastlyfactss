@@ -1,0 +1,419 @@
+# Massachusetts: a closed white list with an override most readings miss
+
+sourceId: ma-321-9-01 / ma-131-23 / ma-131-77 / ma-131-77a / ma-321-10-90
+jurisdiction: MA
+url: https://www.mass.gov/doc/321-cmr-9-exotic-wildlife/download
+     https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section23
+     https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section77
+     https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section77A
+     https://www.mass.gov/regulations/321-CMR-1000-massachusetts-endangered-species-act
+fetched: 2026-09-05
+fetch notes: Easy state. mass.gov serves 321 CMR 9.00 as a clean PDF from /doc/321-cmr-9-exotic-
+  wildlife/download, malegislature.gov serves the statutes as HTML with heavy site chrome around
+  a clean body, and the MESA list at 321 CMR 10.90 comes back inside the regulation page at
+  /regulations/321-CMR-1000-massachusetts-endangered-species-act as one enormous run-on line, so
+  grep it rather than trying to read it. Guessing mass.gov /doc/ paths does not work; find the real
+  ones from the regulation index or a search.
+
+READ 9.01(3) BEFORE ANY GROUP LISTING. This is the whole trick to Massachusetts:
+  9.01(1)   a species not on the list, or listed as requiring a permit, is NOT exempt. Closed list.
+  9.01(3)   "No species in any of the following categories may be exempted": federally listed under
+            the ESA, listed in the IUCN Red Book(s), or on the Massachusetts list at 321 CMR 10.90.
+  Almost every group entry repeats "except species categorically non-exempt pursuant to 321 CMR
+  9.01(3)", so it is a live carve-out, not boilerplate. It is what removes the Burmese python from
+  Boidae, the crested gecko from Gekkonidae, the African grey from Psittacidae, the axolotl from
+  the class-wide amphibian clearance, and the box turtle from the turtle allowance. Reading a group
+  listing without it is how this state gets recorded wrong.
+
+  The statute is the source of that clause and is blunter than the regulation:
+  "No animal listed in any category of the International Union for Conservation of Nature and
+   Natural Resources' Red Data Books shall be listed" (M.G.L. c. 131, § 23).
+
+WHAT THE PERMIT TIER ACTUALLY IS:
+  § 23 provides for "an individual license for an animal that is not on the special exemption list"
+  and even directs a preference for captive-bred animals where wild depletion is an issue. But
+  MassWildlife's own guidance says permits "are issued only for certain scientific, educational,
+  commercial, or other specific reasons" and "You will not be issued a permit for keeping a wild
+  animal as a pet." Statute says a licence exists; agency says not for a pet. Both go in the note.
+
+TWO THINGS OUTSIDE THE SCHEME ENTIRELY:
+  Invertebrates. § 23 reaches "fish, birds, mammals, reptiles, or amphibians", and 9.01(2) defines
+  species as a "non-domestic VERTEBRATE animal population". A tarantula is not unlisted, it is
+  out of scope, which is a different answer.
+  Domestic animals. 9.02(3) is a second list, and 9.02(2)(c) makes any vertebrate NOT on it
+  presumed wild. Guinea pig, Mongolian gerbil, golden hamster and domestic rabbit are all there
+  by name, so they are legal because someone listed them, not because they are obviously pets.
+
+HYBRIDS: 9.02(2)(e) makes every wild-domestic mammal hybrid domestic EXCEPT wild canid and wild
+  felid hybrids, which go to M.G.L. c. 131, § 77A. § 77A is a flat ban with one exit: a cat
+  registered with a national or international registry whose pedigree certifies no wild felid
+  parentage for at least three generations. That is a generation rule written without filial
+  numbers, and MassWildlife applies it to the Savannah as "generations (F4) past the original
+  mating with an African Serval".
+
+IUCN STATUS, how it was checked here: iucnredlist.org returns 403 to this container and the v4 API
+  needs a token. GBIF publishes the IUCN Red List as checklist dataset
+  19491596-35ae-4a91-9a98-85cf505f1bd3, and
+    https://api.gbif.org/v1/species/search?datasetKey=<that>&q=<binomial>
+  returns threatStatuses per accepted name. That is how every status in these entries was read.
+  What it found that matters: Python bivittatus VU, Correlophus ciliatus VU, Terrapene carolina VU,
+  Testudo horsfieldii VU, Centrochelys sulcata EN, Psittacus erithacus EN, Ambystoma mexicanum CR,
+  Cacatua alba and C. moluccensis EN. Everything else on this map came back least concern, except
+  Python regius NEAR THREATENED and Chelonoidis carbonarius, which has no assessment on the current
+  checklist at all.
+
+THE EDGE THE TEXT DOES NOT DRAW: near threatened. "Any category" of the Red Data Books, read
+  literally, includes it; the historic Red Data Book categories did include "Rare". Ball python and
+  Goffin's cockatoo sit exactly there. MassWildlife lists ball pythons among snakes that may be
+  kept, which settles the practice and not the wording.
+
+--- 321 CMR 9.00, Exotic Wildlife, verbatim ------------------------------------------------
+321 CMR 9.00: EXOTIC WILDLIFE
+Section
+9.01: Exemption List
+9.02: List of Domestic Animals
+9.01: Exemption List
+Pursuant to the authority granted in M.G.L. c. 131, § 23, herewith is established a list of
+species which are exempt from the licensing provisions of M.G.L. c. 131, § 23. This list
+includes wild ( i.e., non-domesticated) vertebrate animals which may be imported, sold or
+possessed without a permit. Note, however, that listing below does not affect other licensing
+requirements which may be applicable under Federal, State or local laws, including special
+endangered species and export restrictions of other states.
+(1) Purpose. The purpose of 321 CMR 9.01 is to list those species which are exempt from the
+licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained,
+propagated, bought, sold, exchanged or offered for sale without a license or permit from the
+Division. Species not listed, or which are expressly listed as "require(s) a permit", are not
+exempt from the provisions of M.G.L. c. 131, § 23. Notwithstanding a species being exempt
+from these licensing provisions, such species shall be kept in a manner appropriate for their
+health and safety, including being secured from escape.
+(2) Definitions. For the purposes of 321 CMR 9.01 and unless the context requires otherwise,
+the following words or phrases shall have the following meanings:
+Aquarium means an enclosed indoor facility or an outdoor holding facility that lacks an inlet or
+outlet, or such other holding facility as approved by the Director.
+Aquarium Trade Fish means those freshwater fish which cannot survive year-round in a wild
+environment above 30º north latitude (approximately from Jacksonville, FL west to Ensenada,
+CA) or below 30º south latitude (approximately from Puerto-Alegre, Brazil west to La Serena,
+Chile). Notwithstanding the foregoing, aquarium trade fish shall also include the goldfish
+(Carassius auratus), koi or Japanese carp (Cyprinus carpio), and guppies (Poecilia spp.), but
+shall not include tilapia (Tilapia spp.) which require a permit.
+Director means the Director of the Division of Fisheries and Wildlife or his or her authorized
+agent.
+Division means the Massachusetts Division of Fisheries and Wildlife, with principal offices at
+251 Causeway Street, Suite 400, Boston, MA 02114.
+Domestic or Domesticated means those species listed as domestic pursuant to 321 CMR 9.02(3).
+Exempt or Kept without a Permit means that the animal may be imported, possessed, maintained,
+propagated, bought, sold, exchanged, or offered for sale or exchange without a license or permit.
+License or Permit means a license or permit issued pursuant to the authority of M.G.L. c. 131,
+§ 23.
+Non-exempt or Require(s) a Permit means that the animal may not be imported, possessed,
+maintained, propagated, bought, sold, exchanged, or offered for sale or exchange except by a
+person holding a current and valid license or permit.
+Person means any individual, partnership, profit or non-profit corporation, firm, business, or
+other commercial or non-commercial entity, club, organization, or association.
+Species means an individual or individuals of any distinct non-domestic vertebrate animal
+population whose members interbreed when mature or are self-perpetuating through the
+production of viable offspring and can include any subspecies or variety of vertebrate animal.
+(3) Categorical Non-exemptions: No species in any of the following categories may be
+exempted:
+(a) Threatened or endangered species listed pursuant to the U.S. Endangered Species Act
+of 1973;
+(b) Species listed in the Red Book(s) of the International Union for the Conservation of
+Nature;
+(c) Species appearing on the Massachusetts list of endangered, threatened, and special
+concern species at 321 CMR 10.90: List of Endangered, Threatened, and Special Concern
+Species.
+(4) Exemption Criteria: Animals exempted below are believed to meet the following criteria:
+(a) Accidental release of the fish, amphibian, reptile, bird, or mammal will not result in an
+adverse effect on the ecology of the state;
+(b) The animal in captivity, or escaped therefrom, poses no substantial danger to humans,
+either by injury or disease;
+(c) Proper care of the animal is no more demanding in any major respect than proper care
+of domestic animals;
+(d) Trade in the fish, bird, mammal, reptile or amphibian has no significant adverse effect
+on the wild population of such animal in any of its native habitats.
+(5) Sources of Acquisition. Except as provided in 321 CMR 3.05: Hunting, Fishing, Trapping
+and Taking of Reptiles and Amphibians in All the Counties of the Commonwealth , exempt
+animals may be obtained from the following sources only:
+(a) lawfully propagated within Massachusetts, or
+(b) lawfully taken or lawfully propagated without Massachusetts, provided that the export,
+sale, or exchange of such animals is lawful in the state or country in which animals are taken
+or propagated.
+(6) Liberation. No person shall liberate or cause to be liberated any exempt animal, except in
+accordance with a liberation permit issued pursuant to 321 CMR 2.15: Importation, Liberation,
+and Transportation of Fish, Amphibians, Reptiles, Birds, and Mammals.
+.
+(7) Quarantine. Notwithstanding the provisions of 321 CMR 9.01(1), the Director may
+examine, quarantine and destroy exempt animals and may restrict or prohibit the importation
+thereof in accordance with the provisions of M.G.L. c. 131, §§ 19, 19A, 25A, and 25B, and the
+penalty for violation of such quarantine shall be as provided in M.G.L. c. 131, § 25C.
+(8) List of Fish . All aquarium trade fish may be kept without a permit except species
+categorically non-exempt pursuant to 321 CMR 9.01(3), and except that the following species
+are prohibited without a permit:
+(a) Grass Carp or White Amur (Ctenopharyngodon idella)
+(b) Piranha (Pygocentrus spp. and Serrasalmus spp.)
+(c) Rudd (Scardinius erythrophthalmus)
+(d) Walking Catfish (Clarias spp. and all members of the family Clariidae).
+Notwithstanding 321 CMR 9.01(8)(a) through (d), the fathead minnow ( Pimephales
+promelas) may be kept without a permit as a pet or for sale as a pet, but require a permit when
+sold as bait fish pursuant to 321 CMR 4.09: Artificial Propagation and Maintenance of Fish.
+(9) List of Amphibians. All amphibians may be kept without a permit except species
+categorically non-exempt pursuant to 321 CMR 9.01(3).
+(10) List of Reptiles.
+(a) Turtles. All species of turtles may be kept without a permit, up to a limit of 100 turtles
+and/or eggs, in any combination, of each species, except for the following species for which
+a permit is always required:
+1. Species categorically non-exempt pursuant to 321 CMR 9.01(3).
+2. Argentina or Chaco Tortoise (Geochelone chilensis).
+3. Gopher Tortoises ( Gopherus polyphemus ) and all other species in the genus
+Gopherus.
+4. Pancake Tortoise (Malacochersus tornieri).
+5. Spotted Turtle (Clemmys guttata).
+6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).
+(b) Snakes. All venomous snakes require a permit. The following snakes may be kept
+without a permit:
+1. All species of boas and pythons (family Boidae), except those species categorically
+non-exempt pursuant to 321 CMR 9.01(3), and except the African Rock Python (Python
+sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes
+spp.), which require a permit.
+2. Shield-tailed Snakes, Sunbeam Snakes, and others in the families Uropeltidae and
+Xenopeltidae.
+3. Worm Snakes, Thread Snakes, and others in the families Typhlopidae,
+Leptotyphlopidae, and Anomalepidae.
+4. Snakes of the family Colubridae, as follows:
+Asian Ratsnakes (Elaphe spp. and Ptyas spp. and Zaocys spp.)
+Trans-Pecos Ratsnake (Bogetophis spp.)
+Brown and Redbelly Snakes (Storeria spp.)
+Diadem Snakes (Spalerosophis spp.)
+Garter and Ribbon Snakes (Thamnophis spp.)
+Glossy Snakes (Arizona spp.)
+Gopher and Pine Snakes (Pituophis spp.)
+Green Snakes (Opheodrys spp.)
+Ground Snakes (Sonora spp.)
+House Snakes (Boaedon [Lamprophis] spp.)
+Kingsnakes and Milk Snakes (Lampropeltis spp.)
+North American Ratsnakes ( Pantherophis spp.) except the Black Ratsnake
+(Pantherophis alleghaniensis other than albinistic and leucistic individuals) which
+requires a permit.
+Mole Snake (Pseudaspis cana)
+Puffing Snakes (Pseustes spp.)
+Texas Indigo Snake (Drymarchon corais erebennus)
+Tropical Rat Snakes (Spilotes spp.)
+Water Snakes (Nerodia [Natrix] spp.)
+Western Hognose Snake (Heterodon nasicus)
+(c) Lizards: The Gila Monster and Beaded Lizard (Heloderatidae) require a permit. The
+following lizards may be kept without a permit:
+1. All Skinks ( Scincidae) except for the following which require a permit: Species
+categorically non-exempt pursuant to 321 CMR 9.01(3).
+Florida Sand Skinks (Neoseps spp.)
+Solomon Island Ground Skink (Tribolonotus spp.)
+2. The following Girdle-tailed Lizards (Cordyloidea) may be kept without a permit:
+False Club-tailed Lizards (Pseudocordylus spp.)
+Girdle-tailed Lizards (Cordylus spp.)
+Plated Lizards (Gerrhosaurus spp. and Zonosaurus spp.)
+Rock Lizards (Platysaurus spp.)
+3. All Teiids (Teiidae), including Jungle Runners (Ameiva spp.) and Tegus (Tupinambis
+spp.), may be kept without a permit except for the following which require a permit:
+Species categorically non-exempt pursuant to 321 CMR 9.01(3).
+Desert Tegus (Dicrodon spp.)
+4. The following Lacertid Lizards (Lacertidae) may be kept without a permit:
+Fringe-fingered Lizards (Acanthodactylus spp.)
+Wall Lizards (Eremias spp. and Gallotia spp.)
+Sand Lizards (Lacerta spp. and Psammodromus spp.)
+Asian Grass Lizards (Takydromus spp.)
+5. The following Lateral-fold Lizards (Anguidae) may be kept without a permit:
+Alligator Lizards (Gerrhonotus spp.)
+Glass Lizards (Ophisaurus spp.)
+Slowworm (Anguis spp.)
+European legless lizard (Pseudopus apodus)
+6. All Geckos ( Gekkonidae) may be kept without a permit except for those species
+categorically non-exempt pursuant to 321 CMR 9.01(3) and the Big Bend Gecko
+(Coleonyx reticulatus) which require a permit.
+7. The following Iguanid Lizards (Iguanidae) may be kept without a permit:
+Basilisks (Basiliscus spp.)
+Collared and Leopard Lizards (Crotaphytus spp.)
+Common or Green Iguanas (Iguana i. iguana)
+False or Spring-tailed Iguanas (Ctenosaurus spp.)
+Tree Iguanas (Liolaemus spp.)
+New World Chameleons (Anolis spp. and Ctenotus spp.)
+Spiny Lizards (Sceloporus spp.)
+Tree and Bush Lizards (Urosaurus spp.)
+Diving Lizards (Uranoscodon spp.)
+Zebra-tailed Lizards (Callisaurus spp.)
+8. The following Agamid Lizards (Agamidae) may be kept without a permit:
+Dragon Lizards (Amphibolorus spp.)
+Forest, Garden and Bloodsucker Lizards (Calotes spp.)
+Sailfin Lizards (Hydrosaurus spp.)
+Bearded Dragons (Pogona spp.)
+Water Dragon (Physignathus spp.)
+Frilled Lizards (Chlamydosaurus spp.)
+Uromastyx Lizards (Uromastyx spp.)
+9. All Night Lizards (Xanusidae, Xantusia spp.) may be kept without a permit, except
+for the Utah Night Lizard (Xantusia virgilis utahensis) which requires a permit.
+10. All true Chameleons ( Chamaelenoidae) may be kept without a permit, except
+species categorically non-exempt pursuant to 321 CMR 9.01(3).
+11. The following Monitor Lizards (Varanidae) may be kept without a permit: Spiny-
+tailed or Ridge-tailed Monitor (Varanus acanthurus).
+(11) List of Birds.
+(a) The following groups of birds are prohibited without a permit:
+1. Species categorically non-exempt pursuant to 321 CMR 9.01(3).
+2. Migratory birds listed in the Code of Federal Regulations, 50 CFR 10.13.
+3. Any other bird native to the United States and Canada.
+(b) Except for species listed in 321 CMR 9.01(11)(a), the birds or groups of birds may be
+kept without a permit:
+1. Blue or Button Quail (Coturnix chinensis)
+2. Columbidae (pigeons and doves)
+3. Estrildidae (Waxbills and allies)
+4. Fringillidae (Finches and allies)
+5. Ploceidae (Weaver Finches except the Red-billed, Black- fronted, and Sudan Diochs
+(Quelea quelea) which require a permit.
+6. Psittacidae (parrots and their allies)
+7. Ramphastidae (Toucans, Aracaris, and Toucanets)
+8. Sturnidae (Starlings and Mynahs, except the Rose-colored Starling (Pink Starling or
+Rosy Pastor) (Sturnus roseus)) which requires a permit.
+9. Emu (Dromaius novaehollanding)
+10. Rhea (Rhea spp.)
+11. Ostrich (Struthio camelus)
+(12) List of Mammals.
+(a) The following mammals may be kept without a permit:
+1. Four-toed (African pygmy) hedgehog (Erinaceus albiventris) (= Atelerix pruneri)
+2. Chinchilla (Chinchilla spp.) derived from captive stock.
+3. Deer Mouse and White-footed Mouse (Peromyscus maniculatus and P. leucopus)
+4. Degu (Octodon degus)
+5. Egyptian Spiny Mouse (Acomys cahirinus)
+6. House Mouse (Mus musculus)
+7. Jerboas (Dipus spp.)
+8. Norway Rat (Rattus norvegicus)
+9. Paca (Cuniculus spp.)
+10. Southern Flying Squirrel (Glaucomys volans)
+11. Striped hamster (Cricetulus barabensis ), also known as the Chinese or Siberian
+dwarf hamster. NOTE: the golden hamster (Mesocricetus auratus) may be kept without
+a permit pursuant to 321 CMR 9.02.
+12. Sugar Glider (Petaurus breviceps)
+13. American Bison (Bison bison)
+9.02: List of Domestic Animals
+(1) Definitions. For the purposes of 321 CMR 9.02, the following words or phrases shall have
+the following meanings.
+Director means the Director of the Massachusetts Division of Fisheries and Wildlife or his or her
+agent.
+Domestic animals means only those animals listed in 321 CMR 9.02(3), except as provided in
+321 CMR 9.02(2)(d).
+(2) Exemptions, presumption, etc.
+(a) Domestic animals as listed in 321 CMR 9.02(3) shall be exempt from the provisions of
+M.G.L. c. 131, § 23, and may be possessed, propagated, maintained, imported, bought, sold,
+or otherwise disposed of, provided that such is not contrary to any local, state, or federal law.
+(b) Ferrets (Mustela furo or Mustela putorius furo) may be possessed, bought, and sold only
+in accordance with provisions of M.G.L. c. 131, § 77 and 321 CMR 2.07.
+(c) Any vertebrate taxa not listed in 321 CMR 9.02 shall be presumed to be wild and shall
+be subject to the provisions of M.G.L. c. 131.
+(d) This list of domestic animals shall be in addition to the list of exempt wild animals
+established pursuant to 321 CMR 9.01.
+(e) Hybrids between or among wild mammals and domestic mammals, except for wild
+canid and wild felid hybrids, shall be considered domestic animals. Wild canid and wild
+felid hybrids shall be subject to the provisions of M.L. c. 131, § 77A.
+(3) List of Domestic Animals:
+Birds:
+Domestic geese derived from the greylag goose (Anser anser), including, but not restricted
+to, Emden goose, Gray African goose, Pilgrim goose, Sebastopol goose, and Toulouse goose.
+Domestic geese derived from the swan goose (Anser cygnoides), including, but not restricted
+to, the African goose and the Chinese goose.
+Domestic geese derived from the Egyptian goose (Alopochen aegyptiaca).
+Domestic ducks derived from the Mallard (Anas platyrhinos), including, but not restricted
+to, Aylesbury duck, Blue Swedish duck, Buff duck, Cayuga duck, Crested White duck,
+English call duck, Indian runner duck, Pekin duck, and Roen duck.
+Mallards (Anas platyrhinos) reared in captivity and properly marked in accordance with the
+provisions of the Code of Federal Regulations, 50 CFR 21.13.
+Domestic muscovy derived from the Muscovy duck (Cairina moschata).
+Common coturnix (Coturnix coturnix or C. japonica)
+Domestic chicken (Gallus "domesticus") derived from the red junglefowl (Gallus gallus).
+Peafowl (blue peafowl) (Pavo cristatus).
+Domestic guineafowl derived from the helmet guineafowl (Numida meleagris)
+Domestic turkey derived from the wild turkey (Meleagris gallopavo) and including breeds
+and varieties recognized by the American Poultry Association and the U.S. Department of
+Agriculture, but not including the wild turkey ferae naturae and captive or captive-bred
+individuals thereof and not including the pen-raised or game-farm non-standard variety
+"Wild Turkey".
+Common pigeon (rock dove) derived from the blue rock pigeon (Columba livia)
+Mammals:
+Domestic dog (Canis familiaris).
+Mink (Mustela vison ) propagated in captivity for two or more generations pursuant to
+provisions of M.G.L. c. 128, § 8B.
+Domestic cat (Felis catus).
+Domestic ass (Equus asinus).
+Domestic horse (Equus caballus).
+Domestic swine (Sus domesticus), including breeds and varieties derived from the wild hog
+(Sus scrofa) but not including captive European wild hog, or free-living or feral wild hogs
+or wild swine.
+Llama (Lama glama).
+Alpaca (Lama pacos).
+Dromedary (Camelus dromedarius).
+Domestic water buffalo (carabao) (Bubalis bubalis).
+Domestic cow (Bos taurus).
+Domestic yak (Bos grunniens).
+Zebu (Bos indicus).
+Domestic goat (Capra hircus), including breeds and varieties derived from the wild goat or
+bezoar (Capra aegagrus).
+Domestic sheep (Ovis aries).
+Domestic hamster derived from the golden hamster (Mesocricetus auratus).
+Mongolian gerbil (Meriones unguiculatus).
+Laboratory rat, including breeds, varieties, and strains derived from the Norway rat (Rattus
+norvegicus).
+Laboratory mouse, including breeds, varieties, and strains derived from the house mouse
+(Mus musculus).
+Guinea pig (Cavia porcellus).
+Domestic rabbit, including breeds, varieties, and strains derived from the European rabbit
+(Oryctolagus cuniculus) but not including the European rabbit ferae naturae and not includ­
+ing the so-called "San Juan" rabbit.
+(4) Quarantine. Notwithstanding the provisions of 321 CMR 9.02(2), the Director may
+examine, quarantine, and destroy domestic animals and may restrict or prohibit the importation
+thereof in accordance with provisions of M.G.L. c. 131, §§ 19 and 25A-25B.
+(5) Penalties. The penalties for violation of a quarantine as provided in 321 CMR 9.02(4) shall
+be as provided in M.G.L. c. 131, § 25C.
+(6) Liberation. No person shall liberate or cause to be liberated any domestic animal, except
+for the liberation and recapture of homing or racing pigeons.
+(7) Reimbursement of Damages. For the purposes of reimbursement of damages pursuant to
+M.G.L c. 140, § 161A, wild birds and mammals held by a person in compliance with
+M.G.L. c. 131, § 23 and 321 CMR 2.12 shall be considered domestic live stock or fowl.
+(8) Other Laws. 321 CMR 9.02 is in addition to other applicable statutes including, but not
+limited to, M.G.L. c. 59, § 8A; M.G.L. c. 64H, § 6(p); M.G.L. c. 128, § 1A; M.G.L. c. 129;
+M.G.L. c. 131; and M.G.L. c. 140, and shall be construed consistently therewith.
+REGULATORY AUTHORITY
+321 CMR 9.00: M.G.L. c. 131, § 23; c. 140, § 161A.
+
+--- M.G.L. c. 131, § 23, the licensing statute and the Red Data Books bar ------------------
+Section 23: Propagation, dealing, etc., in fish, birds, mammals, reptiles or amphibians; rules and regulations; licenses; fees
+
+Section 23. Except as otherwise provided by this section or any rule or regulation made under the authority thereof, a person shall not engage in the propagation, cultivation, or maintenance of, or the dealing in, fish, birds, mammals, reptiles, or amphibians, or parts thereof, as provided in section twenty-four, twenty-five or forty-seven, without first having obtained a propagator's license or dealer's license, as the case may be, authorizing him so to do. For the purpose of this section, birds, mammals, reptiles and amphibians shall refer to undomesticated birds, mammals, reptiles and amphibians that are wild by nature. Nothing in this section shall be construed to prohibit the propagation, disposition, sale, possession or maintenance of domesticated species. 
+
+The director, after a public hearing, shall make and may alter, amend, or repeal, rules and regulations governing the possession, propagation, maintenance, disposition, purchase, exchange, sale or offering for sale of fish, birds, mammals, reptiles or amphibians, or parts thereof, protected by this chapter, and may issue licenses in accordance with such rules and regulations. 
+
+The director shall draw up a special exemption list of fish, birds, mammals, reptiles and amphibians. Animals to be thus listed shall meet the following criteria: (1) accidental release of the fish, bird, mammal, reptile or amphibian will not result in an adverse effect on the ecology of the commonwealth; (2) the animal in captivity, or escaped therefrom poses no substantial danger to man, by either injury or disease; (3) proper care of the animal is no more demanding in any major respect than proper care of common domestic animals; and (4) trade in the fish, bird, mammal, reptile or amphibian has no significant adverse effect on the wild population of such animal in any of its natural habitats. No animal listed in any category of the International Union for Conservation of Nature and Natural Resources' Red Data Books shall be listed; no animal protected by either federal endangered species law or by section 4 of chapter 131A shall be listed. The special exemption list may be altered by the director after a public hearing. Any individual may possess as a pet, without a license, any animal on the special exemption list, and may continue to do so in case of subsequent removal of such animal from the list, for the lifetime of his animal, contingent upon evidence of acquisition of the animal while so listed.
+
+--- M.G.L. c. 131, § 77, ferrets ----------------------------------------------------------
+Section 77: Ferrets; possession and use
+
+Section 77. A person may possess a ferret (mustela furo or mustela putorium furo) for the following purposes:— 
+
+(1) As a household pet; provided, however, that such pet has been at the time of purchase neutered or spayed and has received inoculation against distemper and rabies or other inoculations that the director may require; and provided, further, that evidence of neutering, spaying and inoculation is kept available for inspection by the director. 
+
+(2) For breeding; provided, however, that no person shall possess a ferret for breeding purposes without obtaining a license from the director, which shall be renewed every year at a fee to be determined by the secretary of administration and finance which shall not be less than one thousand dollars. Breeders licensed under this section shall be allowed to offer for either wholesale or retail sale ferrets that are the offspring of animals propagated or maintained by the breeder; provided, however, that such ferrets offered for wholesale and retail sale are neutered or spayed and have received inoculations against distemper and rabies or other inoculations that the director may require, and evidence of such neutering, spaying and inoculation is kept available by the seller for inspection by said director. 
+
+(3) As required for research by a recognized research institution. Such research institutions shall be allowed to possess ferrets for breeding and research purposes and shall not be subject to the provisions of subparagraph (2); provided, however, that the offspring of such research breeding shall not be offered for sale or trade. 
+
+(4) For education by a recognized educational institution; provided, however, that such ferret at the time of purchase has been neutered or spayed and has received inoculation against distemper and rabies or other inoculations that the director may require; and provided, further, that evidence of neutering, spaying and inoculation is kept available for inspection by the director.
+
+--- M.G.L. c. 131, § 77A, wild canid and felid hybrids ------------------------------------
+Section 77A: Wild canid and felid hybrids
+
+Section 77A. No person shall possess, sell, trade, breed, import, export or release a wild canid hybrid or wild felid hybrid, except as otherwise provided by rules and regulations of the division. Any mammal which is the offspring of the reproduction between any species of wild canid or hybrid wild canid and a domestic dog or hybrid wild canid, or is represented by its owner to be a wolf hybrid, coyote hybrid, coy dog or any other kind of wild canid hybrid, or which is the offspring of the reproduction between any species of wild felid or hybrid wild felid and a domestic cat or hybrid wild felid or is represented by its owner to be a wild felid hybrid. All mammals shall be considered to be wild mammals and subject to the provisions of this chapter. 
+
+The provisions of this act shall not apply to an owner or other person possessing any such animal as of January first, nineteen hundred and ninety-four who has received a permit from the director; provided, however, that such permit has been acquired on or before July thirty-first, nineteen hundred and ninety-four. Such owner or other person shall be subject to the rules and regulations promulgated by the division. Such rules and regulations may include, but shall not be limited to, provisions for the housing of such animals. 
+
+The provisions of this section shall not apply to an owner or person possessing a domesticated show or pet cat registered with a nationally or internationally recognized breeding association or registry which certifies the pedigree and registration of such cat to be without any wild felid parentage for a minimum of three generations.
+
+--- 321 CMR 10.90, the three entries that matter for this map ------------------------------
+Eastern Box Turtle            Terrapene carolina         SC
+Eastern Hog-nosed Snake       Heterodon platirhinos      SC
+Eastern Ratsnake              Pantherophis alleghaniensis E
+  (Ambystoma tigrinum is NOT on the list. The Ambystoma entries are jeffersonianum SC,
+   laterale pop.1 SC, laterale pop.2 T and opacum T, plus Scaphiopus holbrookii T.)
+

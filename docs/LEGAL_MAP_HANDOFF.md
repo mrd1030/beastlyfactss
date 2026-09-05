@@ -8,13 +8,14 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 15 (AZ, CO, CT, DE, HI, IL, MD, MI, MN, NM, NV, OR, PA, TN, TX) |
-| Unread cells | 527 |
-| Cached primary sources | 39 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 16 (AZ, CO, CT, DE, HI, IL, MA, MD, MI, MN, NM, NV, OR, PA, TN, TX) |
+| Unread cells | 493 |
+| Cached primary sources | 41 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
-Oregon, Connecticut, Maryland, Tennessee and Texas sit on `claude/legal-map-colorado-dca3og`;
-either continue there or cut a fresh branch from main once it lands.
+Oregon, Connecticut, Maryland, Tennessee, Texas and Massachusetts sit on
+`claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main once it
+lands.
 
 ## The loop
 
@@ -27,7 +28,7 @@ One jurisdiction per sitting. It takes a while and that is fine.
    that explains rather than asserts, and `verifiedOn` set to today in US Eastern.
 4. Re-run `legal-gaps.mjs`, then `node scripts/check-legal-map-sync.mjs`. That script
    cross-checks every legal guide against the map and will catch guides you just made
-   wrong. It sits at 12 pre-existing errors; anything above that is yours.
+   wrong. It sits at 11 pre-existing errors; anything above that is yours.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
@@ -90,6 +91,17 @@ the species, and bars selling one at any number. The garter snake, the flying sq
 prairie dog all sat on this map as unrestricted with accurate notes about a statute that was never
 going to reach them.
 
+**An exception buried above the list.** Massachusetts runs a closed exemption list, and the natural
+way to read it is to find your animal's group and stop. That is wrong there, because 321 CMR 9.01(3)
+sits above every group listing and says no species may be exempted if it is federally listed, in the
+IUCN Red Book, or on the state's own endangered list. Nearly every group entry repeats the
+cross-reference, so it is operative rather than decorative, and it is what takes the Burmese python
+out of Boidae, the crested gecko out of Gekkonidae, the African grey out of Psittacidae, the axolotl
+out of a class-wide amphibian clearance and the box turtle out of a turtle allowance that otherwise
+runs to 100 animals. None of those animals is named anywhere in the rule. The tell for this shape is
+a numbered subsection early in a rule that says what may NOT be listed, followed by lists that keep
+pointing back at it.
+
 **A rule with nothing behind it.** Minnesota's 2021 pet reptile law says the commissioner
 "must prescribe conditions and may issue permits" and then makes lawful possession turn on the
 animal having come from a permitted breeder. There is no such permit on the DNR's permits page,
@@ -111,14 +123,22 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| MA | Massachusetts | 34 | 3 sources on file |
 | NE | Nebraska | 33 | 4 sources on file |
 | FL | Florida | 30 | 2 sources on file |
 | NY | New York | 30 | 4 sources on file |
 | GA | Georgia | 29 | 4 sources on file |
+| NYC | New York City | 29 | 1 source on file |
 
 ## Loose ends
 
+- **Massachusetts has no open cells, and one line of text nobody has drawn.** 321 CMR 9.01(3)(b)
+  bars exempting a species "listed in the Red Book(s)" of the IUCN, and M.G.L. c. 131, § 23 says
+  "in any category" of the Red Data Books. Neither says whether NEAR THREATENED counts, and two
+  animals on this map sit exactly there: the ball python and Goffin's cockatoo. MassWildlife lists
+  ball pythons among the snakes that may be kept, which settles the practice without settling the
+  words. Both are recorded legal with the edge named in the note. The other soft spot is the
+  red-footed tortoise, which has no assessment at all on the current IUCN checklist; a reassessment
+  would move it from the turtle allowance into the permit tier with no change to Massachusetts law.
 - **Texas has no open cells, but one thing to watch.** Its § 65.331(d) and (e) figures are the two
   attached graphics that carry the whole cap scheme, and they are served as presigned S3 links that
   expire, so they cannot be re-fetched from a stored URL. Both are transcribed in full in
@@ -200,9 +220,9 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Cockatoo, hedgehog, sugar glider, garter snake and kingsnake are now at 51 of 51, and ferret at 50,
-which makes five more animals article-ready than the two named above. Then guinea pig, gerbil and
-quaker parakeet at 48, ackie monitor and degu at 47, red-footed tortoise and green iguana at 46.
+Cockatoo, hedgehog, sugar glider, garter snake and kingsnake are at 51 of 51, and prairie dog,
+ferret and capybara at 50. Then hamster, gerbil, guinea pig, veiled chameleon, chinchilla, fennec
+fox and serval at 49, and Russian tortoise at 48.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -244,6 +264,16 @@ Maryland is the only state that answers it by weight: § 10-621(b)(1)(iv) reache
 only "if the hybrid weighs over 30 pounds", with no generation test anywhere in the section. The
 line is drawn on the individual animal rather than its ancestry, which is the one version of
 this rule whose answer could change as a cat grows.
+
+Massachusetts is the tenth Bengal answer and the only one that makes the paperwork part of the
+test rather than evidence of it. M.G.L. c. 131, § 77A prohibits possessing a wild felid hybrid
+outright, and the exit is "a domesticated show or pet cat registered with a nationally or
+internationally recognized breeding association or registry which certifies the pedigree and
+registration of such cat to be without any wild felid parentage for a minimum of three
+generations". Two conditions, not one: the generations without the registration do not help, and
+the registration without a certifying pedigree does not either. It lands on the same animal as
+Iowa's F4 rule while counting backwards from the cat instead of forwards from the cross, and
+MassWildlife applies the identical test to the Savannah.
 
 Texas is the ninth Bengal answer and the one that turns on a single cross-reference. Health & Safety
 Code § 822.101(4)(T) reaches "any hybrid of an animal listed in this subdivision", and the small cats

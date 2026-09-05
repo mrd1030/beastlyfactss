@@ -52,6 +52,8 @@ about this species", not to claim a new verification date.
 | `TN-tn-twra-permits.txt` | TWRA's own permits page, which closes Class I to private keepers and names the missing rule chapter |
 | `TX-tx-statutes.txt` | Texas's four separate animal rules and which one reaches what, with the famous one flagged as the wrong one |
 | `TX-tx-nongame.txt` | Texas's two nongame lists in full, the 25 cap and the 6 cap, and the taxonomy traps in both |
+| `MA-ma-exotic-wildlife.txt` | Massachusetts's closed exemption list, the categorical override that cuts across it, and the hybrid statute |
+| `MA-ma-masswildlife-pets.txt` | MassWildlife's own reading of that override, and its line that pet permits are not issued |
 
 ## Reading the awkward ones
 
@@ -76,6 +78,17 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   what selective breeding has done rather than by species, which is what makes the pet rabbit
   clean there when the same species is a hard call in Minnesota and Illinois. Read (a)(7) and
   (a)(21) before the lists.
+- **The Massachusetts files** describe a closed white list with an override that cuts across every
+  group listing in it. Read 321 CMR 9.01(3) BEFORE any group entry: no species may be exempted if it
+  is federally listed, in the IUCN Red Book(s), or on the Massachusetts list at 321 CMR 10.90. Nearly
+  every entry repeats the cross-reference, so it is operative, and it is what pulls the Burmese
+  python out of Boidae, the crested gecko out of Gekkonidae, the African grey out of Psittacidae,
+  the axolotl out of the class-wide amphibian clearance and the box turtle out of the turtle
+  allowance. Checking IUCN status is therefore part of reading Massachusetts, and the route that
+  works from here is the GBIF mirror of the Red List, not iucnredlist.org, which 403s. Two other
+  things: invertebrates are outside the scheme rather than unlisted within it, and a licence for a
+  non-exempt animal exists in M.G.L. c. 131, § 23 while MassWildlife says it will not issue one for
+  a pet, so both halves belong in the note.
 - **The Texas files** describe a state with four animal rules where only one is ever quoted. Before
   recording anything for Texas, ask whether the animal is INDIGENOUS. If it is, the answer is in
   `TX-tx-nongame.txt` and it is a number, 25 or 6, that follows captive-bred animals too. If it is
@@ -144,6 +157,8 @@ not on the sites, so a person with a browser can open all of them.
 | `publications.tnsosfiles.com`, `sos.tn.gov`, `tnsos.org` | 403 "Request blocked" from CloudFront on every path, with or without a browser User-Agent and Referer. This is the whole of Tennessee's rules and proclamations publishing | No workaround found. `www.tn.gov` IS reachable, so read the TWRA pages instead, and cross-check the statutes against two reproductions |
 | `statutes.capitol.texas.gov` | Angular SPA. Every `/Docs/` path returns the same 250KB shell, so a fetch looks successful and contains no law; headless Chromium cannot reach it at all | Fetch `https://tcss.legis.texas.gov/resources/<CODE>/htm/<CODE>.<CHAPTER>.htm` instead and cite the capitol URL. The base is in the SPA chunk `chunk-7GRZWKYH.js` as `TCASCore` |
 | `texreg.sos.state.tx.us` | Retired. Serves "Site Has Moved" to every path, the old `TacPage` viewer included | The TAC is on an Appian portal now: POST `{"#t":"UiConfig"}` to `texas-sos.appianportalsgov.com/rules-and-meetings/_/ui?interface=VIEW_TAC&title=..&part=..&chapter=..` with a cookie jar and `X-Client-Version: APNX-1-4105-002`. Full recipe in `TX-tx-nongame.txt` |
+| `iucnredlist.org`, `api.iucnredlist.org` | 403 to this container, and the v4 API needs a token anyway | Use the GBIF mirror: `api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=<binomial>` returns `threatStatuses` per accepted name |
+| `api.gbif.org` | Works, but drops the occasional connection mid-exchange | Retry with backoff; a failed call returns non-JSON rather than an error code |
 | `web.archive.org` | Blocked by egress policy, so the Wayback fallback is not available here. `archive.org/wayback/available` does answer | Find another live reproduction instead |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
 
