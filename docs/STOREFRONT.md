@@ -178,6 +178,29 @@ two can hold different values and live is the one buyers see.
 Worth a look while in there: Settings -> Climate. If Stripe Climate is on, it
 takes 1% of gross revenue, roughly 9 cents per package.
 
+### When a buyer asks you to delete their data
+
+The Privacy policy offers this at `hello@`, and the storefront made it harder
+to honor than it used to be: a sale writes the buyer's email into `purchases`,
+`care_package_downloads` and `auth.users`, plus Stripe's own Customer and
+charge.
+
+The runbook is at the bottom of `supabase/care_package_store.sql`, next to the
+manual grant, as copy and paste SQL. Two things it explains that are not
+obvious:
+
+- **Deleting only their account does nothing.** Their address stays in
+  `purchases`, they sign up again in thirty seconds, and everything is back.
+  Access is granted by the purchase row, not by having an account.
+- **Deleting the purchase row takes their package away for good**, from their
+  side. Their library goes empty and the download 403s however many times they
+  sign back in. That is right for a real "forget me" request and is not what
+  most people mean, so confirm before running it.
+
+Stripe's records stay, which is both required for tax and what makes this
+reversible: the payment proves the purchase, so the manual grant can put the
+row back if they change their mind.
+
 ### Do NOT turn off "Confirm email"
 
 Authentication -> Sign In / Providers has a **Confirm email** toggle, and it is

@@ -178,3 +178,57 @@ on conflict (id) do update
 -- to come from Stripe:
 --   insert into public.purchases (email, package_id, stripe_session_id, amount_cents, edition)
 --   values ('buyer@example.com', 'hamster', 'manual_' || gen_random_uuid(), 0, '2.2');
+--
+-- ---------------------------------------------------------------------------
+-- Deleting a buyer's data, when someone asks
+-- ---------------------------------------------------------------------------
+-- The Privacy policy offers this at hello@beastlyfacts.com, so it has to be
+-- answerable in minutes rather than researched with someone waiting.
+--
+-- A buyer's address is held in four places. Three are ours:
+--   public.purchases                 the sale
+--   public.care_package_downloads    a line per download
+--   auth.users                       the account they sign in to the library with
+-- The fourth is Stripe's: the Customer, the charge and the receipt.
+--
+-- Two things about that list are worth understanding before running anything.
+--
+-- Deleting only the auth user achieves nothing. Their address is still in
+-- purchases, they sign up again in thirty seconds, and everything is back. The
+-- account is the disposable half; the purchase row is the record.
+--
+-- Deleting the purchase row is what actually removes them, and it takes their
+-- package with it, permanently, from their side. The library reads purchases,
+-- so with no row their library is empty and the download route answers 403 no
+-- matter how many times they sign back in. That is the correct outcome for a
+-- real "forget me" request and is NOT what most people mean when they write
+-- in, so say it back to them and get a yes before running this.
+--
+-- Leave Stripe alone. Payment records are kept for tax and accounting, that is
+-- a legitimate basis for holding them, and Stripe is the custodian rather than
+-- us. It is also what makes this reversible: if they change their mind, the
+-- Stripe payment proves the purchase and the manual grant above puts the row
+-- back.
+--
+-- 1. Look first, so you know what you are about to remove.
+--   select package_id, edition, amount_cents, created_at
+--     from public.purchases where lower(email) = lower('buyer@example.com');
+--   select package_id, edition, created_at
+--     from public.care_package_downloads
+--     where lower(email) = lower('buyer@example.com');
+--
+-- 2. Delete our copies. Downloads first: it carries a purchase_id, and while
+--    that is on delete set null rather than cascade, clearing the child rows
+--    first keeps the log from outliving the sale it belonged to.
+--   delete from public.care_package_downloads
+--     where lower(email) = lower('buyer@example.com');
+--   delete from public.purchases
+--     where lower(email) = lower('buyer@example.com');
+--
+-- 3. Delete the account, from Dashboard -> Authentication -> Users, search the
+--    address, delete. Do this through the dashboard rather than a delete
+--    against auth.users: the dashboard clears the sessions and identities that
+--    hang off the user, which a bare row delete can leave behind.
+--
+-- 4. Reply telling them what was removed and what Stripe still holds, since
+--    the Privacy policy promises the first and honesty requires the second.
