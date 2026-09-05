@@ -223,8 +223,24 @@ function getListingGuides(slug) {
   }
   for (const suffix of STANDARD_SUFFIXES) {
     if (slug.endsWith(`-${suffix}`)) {
-      // Namespaced so an auto-detected guide can never collide with a real key
-      guides.add(`auto:${slug.slice(0, -(suffix.length + 1))}`);
+      const prefix = slug.slice(0, -(suffix.length + 1));
+      // If the stripped prefix is a real guide id, use it. The synthetic key
+      // was costing 90 articles their shared block: an entry like
+      //
+      //   'discus': ['aquarium-cycling-guide', 'freshwater-ph-gh-kh-guide', ...]
+      //
+      // lists only the cross-species pieces and leans on getAutoDetectedSlugs
+      // for the species' own six, which is the normal shape now. But
+      // 'discus-cost-guide' appears in no array, so the loop above found
+      // nothing and this branch filed it under 'auto:discus'. The caller then
+      // reads RELATED_ARTICLES['auto:discus'], gets undefined, and the six
+      // aquarium articles the discus entry does list never enter the candidate
+      // pool. Betta and goldfish were unaffected only because their entries
+      // happen to spell their own six out by hand.
+      //
+      // Namespaced only when there is no real key to collide with, which is
+      // what the namespacing was guarding against in the first place.
+      guides.add(RELATED_ARTICLES[prefix] ? prefix : `auto:${prefix}`);
       break;
     }
   }
