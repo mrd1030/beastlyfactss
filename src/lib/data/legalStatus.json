@@ -95,118 +95,118 @@
       "NE"
     ],
     "remaining": 0,
-    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
+    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 8 of the 52 jurisdictions have now been read for all 52 animals and 29 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 8,
+        "checked": 9,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 8,
+        "checked": 9,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 9,
+        "checked": 10,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 9,
+        "checked": 10,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 9,
+        "checked": 10,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 9,
+        "checked": 10,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 9,
+        "checked": 10,
         "of": 51
       },
       "green-anole": {
-        "checked": 9,
+        "checked": 10,
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 26,
+        "checked": 27,
         "of": 51
       },
       "tarantula": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "axolotl": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "box-turtle": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 33,
+        "checked": 34,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 34,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 34,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 34,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 34,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 35,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 35,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 35,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 35,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 36,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 37,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "green-iguana": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "burmese-python": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "degu": {
@@ -214,15 +214,15 @@
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "hamster": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "gerbil": {
-        "checked": 41,
+        "checked": 42,
         "of": 51
       },
       "quaker-parakeet": {
@@ -230,19 +230,19 @@
         "of": 51
       },
       "bengal-cat": {
-        "checked": 41,
-        "of": 51
-      },
-      "guinea-pig": {
-        "checked": 41,
-        "of": 51
-      },
-      "milk-snake": {
         "checked": 42,
         "of": 51
       },
-      "ball-python": {
+      "guinea-pig": {
+        "checked": 42,
+        "of": 51
+      },
+      "milk-snake": {
         "checked": 43,
+        "of": 51
+      },
+      "ball-python": {
+        "checked": 44,
         "of": 51
       },
       "veiled-chameleon": {
@@ -254,7 +254,7 @@
         "of": 51
       },
       "corn-snake": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "chinchilla": {
@@ -262,11 +262,11 @@
         "of": 51
       },
       "fennec-fox": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "serval": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "rosy-boa": {
@@ -620,9 +620,9 @@
       "note": "Ferrets are handled as domestic animals under 9.02 rather than on the 9.01 exemption list."
     },
     "co-w11": {
-      "title": "Colorado 2 CCR 406-11, Chapter W-11, Wildlife Parks and Unregulated Wildlife, § 1103(B)",
-      "url": "https://www.animallaw.info/administrative/co-exotic-pets-and-wildlife-chapter-11-wildlife-parks-and-unregulated-wildlife",
-      "note": "'No license is required for the private possession or purchase of animals, which are included on the unregulated wildlife list or the domestic animal list.' Unregulated does not mean unmonitored: importation rules and local ordinances still apply."
+      "title": "Colorado 2 CCR 406-11, Chapter W-11, Wildlife Parks and Unregulated Wildlife",
+      "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12521&fileName=2+CCR+406-11",
+      "note": "Secretary of State's official text of the current version, effective 1 May 2026. Carries the #1103(A) domestic animal list and the #1103(B) unregulated wildlife list. The 2026 version moved every reptile and amphibian provision out of #1103(B) and into Chapter W-7, so a pre-2026 copy of this chapter still shows a reptile list that is no longer here."
     },
     "az-r12-4-406": {
       "title": "Ariz. Admin. Code R12-4-406, Restricted Live Wildlife",
@@ -969,11 +969,6 @@
       "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
       "note": "CDFW's current Freshwater Sport Fishing Regulations booklet, which reprints Title 14 section 5.60 in full, including species bag limits and county closures."
     },
-    "co-unregulated-wildlife": {
-      "title": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
-      "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=6776&fileName=2+CCR+406-11",
-      "note": "Colorado Secretary of State's current codified text of CPW's Chapter W-11 rule, whose Chapter 0 general provisions define the unregulated wildlife and prohibited species lists."
-    },
     "ct-26-55-6": {
       "title": "Regs. Conn. State Agencies § 26-55-6",
       "url": "https://eregulations.ct.gov/eRegsPortal/Browse/getDocument?guid=%7B6B566428-3A6A-452A-9E3A-7AF89D95D371%7D",
@@ -1228,6 +1223,26 @@
       "title": "3 Del. Admin. Code 903, Exotic Animal Regulations, with Del. Code tit. 3 § 7201",
       "url": "https://www.animallaw.info/administrative/de-exotic-animals-chapter-903-exotic-animal-regulations",
       "note": "The regulation that actually decides Delaware, and it is much narrower than the list circulating in secondary sources. § 7201 requires a permit before anyone brings in, possesses, sells or exhibits a live wild mammal, a hybrid of a wild mammal, or a live reptile not native to Delaware, and bans non-native venomous snakes outright with no permit available. Regulation 6.1 then exempts a named list of pets from the permit entirely, and 6.2 says everything else needs one. The only species the State Veterinarian may not permit at all are at 4.7: gila monsters, beaded lizards and komodo dragons. Pythons, anacondas and boas appear only at 7.5.2.10, a restriction on what Sales Permit holders may breed, not a possession ban. The Delaware regulations site is a single-page app that serves no text to a fetcher, so this was read from a full reproduction and cross-checked against the Department of Agriculture's own exotic animals page."
+    },
+    "co-w7": {
+      "title": "Colorado 2 CCR 406-7, Chapter W-7, Herpetofauna",
+      "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12520&fileName=2+CCR+406-7",
+      "note": "Secretary of State's official text of the new herpetofauna chapter, effective 1 May 2026. A closed-list scheme: #701 makes possession of any live reptile or amphibian unlawful unless the chapter allows it, Appendix A is free possession, Appendix B is free possession with documentation, Appendix C is wild collection under a resident licence, and anything on none of them is regulated wildlife."
+    },
+    "co-w0-008": {
+      "title": "Colorado 2 CCR 406-0, Chapter W-0, § 008(B), Possession of Terrestrial Wildlife",
+      "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12599&fileName=2+CCR+406-0",
+      "note": "The Commission's prohibited species list. Nineteen entries, and the grandfather clause in the opening paragraph reaches only subsections 1 through 8, so the later additions, monk parakeet and prairie dogs among them, have no route for existing owners."
+    },
+    "co-crs-33-1-102": {
+      "title": "C.R.S. § 33-1-102(51), definition of wildlife",
+      "url": "https://leg.colorado.gov/sites/default/files/images/olls/crs2024-title-33.pdf",
+      "note": "Sets the outer boundary of what Colorado Parks and Wildlife may regulate at all. Wild vertebrates, mollusks and crustaceans, which leaves every terrestrial arthropod outside Title 33."
+    },
+    "co-cpw-species-list": {
+      "title": "Colorado Parks and Wildlife, Wildlife and Animal Possession in Colorado, species determination lists",
+      "url": "https://cpw.state.co.us/wildlife-arent-pets",
+      "note": "CPW's own page, with four downloadable lists, herpetofauna, mammals, birds, and fish and marine animals, each row giving a species and the regulation that decides it: Domestic, Unregulated, Appendix A or B, Appendix C, Regulated or Prohibited. Updated 1 May 2026. Not exhaustive, and CPW takes questions on unlisted species by email. This is the agency applying its own rule, which matters most where Appendix A turns on whether a species is native only to the tropics."
     }
   },
   "animals": {
@@ -1334,9 +1349,9 @@
           "sourceId": "co-w11",
           "cite": "§ 1103(B)",
           "quote": "African pygmy hedgehog (Atelerix albiventris, Erinaceus albiventris)",
-          "note": "On the unregulated wildlife list, so no state licence.",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "note": "Named on the unregulated wildlife list, so no CPW licence. The species matters here more than in most states: § 008(B)(9) of the prohibited list bars Erinaceus generally, along with the whole of Hemiechinus and Paraechinus, and exempts only Erinaceus albiventris and Atelerix albiventris by name. So the pet African pygmy hedgehog is cleared and the European, long-eared, desert, Brandt's, Indian and bare-bellied hedgehogs are prohibited, a split CPW's mammal list sets out row by row. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "AZ": {
           "status": "legal",
@@ -1697,9 +1712,11 @@
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
+          "cite": "§ 1103(A)",
           "quote": "Domesticated races of European ferret (Mustela putorius)",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "note": "On the domestic animal list rather than the unregulated wildlife list, which is the stronger of the two positions: a domestic animal is exempted from Parks and Wildlife Commission regulations outright. Colorado names the domesticated race of Mustela putorius, so the carve-out is for the pet ferret and not for the wild European polecat. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "AZ": {
           "status": "legal",
@@ -2103,11 +2120,11 @@
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
-          "quote": "No license is required for the private possession or purchase of animals, which are included on the unregulated wildlife list or the domestic animal list.",
-          "verifiedOn": "2026-08-04",
+          "cite": "§ 1103(B)",
+          "quote": "Sugar Gliders (Petaurus breviceps)",
+          "note": "Named to the species on the unregulated wildlife list, so no CPW licence is required. Unregulated is not unmonitored: § 1103(B) remains subject to the importation, prohibited-species and release rules in Chapter W-0, and intentionally releasing unregulated wildlife is separately unlawful. Colorado's marsupial entries are unusually generous, running to five wallabies and kangaroos alongside the short-tailed possum. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
-          "cite": "Ch. W-11",
-          "note": "Named on Colorado's unregulated wildlife list. Unregulated is not the same as unmonitored: importation rules and local ordinances still apply."
+          "verifiedOn": "2026-09-05"
         },
         "AZ": {
           "status": "legal",
@@ -2736,6 +2753,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "Hamsters appear by name on the exempt mammal list, so no permit is required.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "cite": "§ 1103(A)",
+          "quote": "Domesticated races of hamsters (Mesocricetus spp.)",
+          "note": "Colorado's domestic animal list is the shortest route through this chapter: an animal on it is exempted from Parks and Wildlife Commission regulations outright, with no licence, no possession limit and no importation approval to obtain. The Syrian hamster is named at genus level. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3055,6 +3081,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "Gerbils appear by name on the exempt mammal list, so no permit is required.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "cite": "§ 1103(A)",
+          "quote": "Domesticated races of gerbils (Meriones unguiculatus)",
+          "note": "Named to the species on the domestic animal list, so the wildlife chapters do not reach it. Colorado draws its line at the domesticated race rather than the genus, which is worth noting for anyone importing a wild-type Meriones. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "gerbil"
@@ -3109,13 +3144,12 @@
           "verifiedOn": "2026-08-04"
         },
         "CO": {
-          "status": "legal",
-          "sourceId": "co-w11",
-          "quote": "All Psitticine birds",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "cite": "Ch. W-11",
-          "note": "Colorado clears the whole parrot group on its unregulated wildlife list without carving out the monk parakeet, which most states that mention the species do."
+          "status": "banned",
+          "sourceId": "co-w0-008",
+          "cite": "§ 008(B)(11)",
+          "quote": "Monk parakeet.",
+          "note": "Two Colorado rules point in opposite directions here and the prohibited list wins. Chapter W-11 § 1103(B) clears \"All Psitticine birds\" on the unregulated wildlife list, but § 1103(B) is expressly subject to § 008 regarding prohibited terrestrial wildlife, and § 008(B)(11) names the monk parakeet. CPW resolves it the same way in public, restating the unregulated line as \"All Psitticine birds (except Monk Parakeet/Quaker Parrot)\" and saying the species is not allowed in Colorado. The grandfather clause in § 008(B) reaches only subsections 1 through 8, so it does not help an existing owner of a bird listed at 11. Reading the parrot line on its own is how this species gets recorded legal in Colorado, and it is not.",
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "status": "conditional",
@@ -3738,6 +3772,15 @@
           "note": "The Bengal is a hybrid of a wild mammal, which § 7201 names expressly alongside wild mammals themselves, and no cat appears on the exempt list. So an Individual permit is required and the filial generation does not enter into it, because the statute reaches the hybrid as such. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "cite": "§ 1103(A)",
+          "quote": "Domestic cat (Felis catus) including hybrids with wild felines",
+          "note": "Colorado disposes of the entire hybrid cat question in five words. The domestic animal list clears Felis catus \"including hybrids with wild felines\", with no generation cutoff, no weight threshold and no registration, so an F1 Bengal sits in the same place as a housecat. Arizona reaches the opposite answer on an express hybrid clause, and Pennsylvania cannot answer it at all, which makes this among the cleanest hybrid rules on the map. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -3824,10 +3867,12 @@
         },
         "CO": {
           "status": "legal",
-          "sourceId": "co-w11",
-          "quote": "All non-native tropical and subtropical species of lizards ... Chamaeleonidae (chameleons)",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Chamaeleonidae (chameleons)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Chamaeleo calyptratus against this line. This entry moved chapters in 2026: the same family listing used to sit in Chapter W-11 § 1103(B) and now lives in Chapter W-7. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "OR": {
           "status": "legal",
@@ -4401,6 +4446,14 @@
           "note": "The Russian tortoise is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. Delaware exempts no chelonian of any kind.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "Testudinidae is on Appendix A, but only for tortoises native only to the tropical and subtropical region, and the Russian tortoise is a Central Asian steppe animal ranging far north of the 26 degree line. CPW's herpetofauna list records Testudo horsfieldii against Appendix A, C, 3 with the finding \"native range is outside tropical/subtropical\", and files the Greek tortoise, Hermann's tortoise and the leopard tortoise the same way, against the sulcata and the red-footed tortoise which do clear it. A tortoise being on Appendix A's family list is therefore not the answer in Colorado; the range test is.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/russian-tortoise-legal-guide/"
@@ -4742,6 +4795,15 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The ball python is on none of it, so no special licence is required. Pythonidae appears nowhere in the rule. ",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of snake native only to the tropical and subtropical region from the following families: Pythonidae (giant snakes)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. The ball python is West and Central African and breeds nowhere outside the tropics, so it satisfies the \"native only\" qualifier that decides most of this appendix. CPW's herpetofauna list files Python regius against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -4809,10 +4871,12 @@
         },
         "CO": {
           "status": "legal",
-          "sourceId": "co-w11",
-          "quote": "All non-native tropical and subtropical species of snakes in the families: Boidae (giant snakes)",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of snake native only to the tropical and subtropical region from the following families: Boidae (giant snakes)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. Boa constrictor and Boa imperator are both filed on Appendix A by CPW. The family listing alone does not settle a boa in Colorado, since the same family line puts the rosy boa and the rubber boa outside it on native range, but this species clears the qualifier. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "OR": {
           "status": "legal",
@@ -5381,6 +5445,14 @@
           "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
           "note": "The permit requirement reaches live wild mammals, hybrids of wild mammals and non-native reptiles only. A tarantula is an arthropod and falls outside the chapter entirely, as it does outside the exotic animal regulations made under it.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-crs-33-1-102",
+          "cite": "C.R.S. § 33-1-102(51)",
+          "quote": "\"Wildlife\" means wild vertebrates, mollusks, and crustaceans, whether alive or dead, including any part, product, egg, or offspring thereof, that exist as a species in a natural wild state in their place of origin, presently or historically",
+          "note": "A tarantula is an arachnid, and Colorado's statutory definition of wildlife runs to wild vertebrates, mollusks and crustaceans and stops there. Everything CPW does about private possession, the licensing scheme in Chapter W-11, the prohibited list in Chapter W-0 and the new herpetofauna chapter, is built on that definition, so none of it reaches this animal. CPW's own species lists are divided into birds, mammals, herpetofauna and fish and marine animals, with no terrestrial invertebrate category at all, which is the same gap seen from the other side. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -5667,6 +5739,14 @@
           "cite": "Del. Code tit. 3 § 7201",
           "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
           "note": "The permit requirement reaches live wild mammals, hybrids of wild mammals and non-native reptiles only. The emperor scorpion is an arthropod and falls outside the chapter entirely, as it does outside the exotic animal regulations made under it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-crs-33-1-102",
+          "cite": "C.R.S. § 33-1-102(51)",
+          "quote": "\"Wildlife\" means wild vertebrates, mollusks, and crustaceans, whether alive or dead, including any part, product, egg, or offspring thereof, that exist as a species in a natural wild state in their place of origin, presently or historically",
+          "note": "The emperor scorpion is an arachnid, and Colorado's statutory definition of wildlife runs to wild vertebrates, mollusks and crustaceans and stops there. Everything CPW does about private possession, the licensing scheme in Chapter W-11, the prohibited list in Chapter W-0 and the new herpetofauna chapter, is built on that definition, so none of it reaches this animal. CPW's own species lists are divided into birds, mammals, herpetofauna and fish and marine animals, with no terrestrial invertebrate category at all, which is the same gap seen from the other side. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5986,6 +6066,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "The Argentine black and white tegu is covered by the entry for tegus is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Teiidae (whiptail)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Salvator merianae against this line, with the red tegu and the gold tegu beside it. Colorado does not run the tegu-specific rules several southern states have adopted; the family listing decides it. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6285,6 +6374,15 @@
           "note": "The savannah monitor is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. Varanidae is absent from the exempt reptile list, which runs to anoles, agamas, water dragons, basilisks, bearded dragons, chameleons, geckos, iguanas, skinks, swifts and tegus.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Varanidae (monitor lizard)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Varanus exanthematicus against this line, along with the black-throated, blue-spotted tree, crocodile and Asian water monitors. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -6350,12 +6448,12 @@
           "permitFor": "personal"
         },
         "CO": {
-          "status": "permit",
-          "sourceId": "co-w11",
-          "note": "Absent from the unregulated list, so it falls back to licensing. Colorado has native prairie dogs, which is likely why.",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "permitFor": "personal"
+          "status": "banned",
+          "sourceId": "co-w0-008",
+          "cite": "§ 008(B)(18)",
+          "quote": "Prairie dogs (Cynomys spp.) provided however that native prairie dogs may continue to be possessed pursuant to licenses or permits granted by the Division for scientific collection, relocation or rehabilitation purposes.",
+          "note": "Prohibited at genus level, not merely unlisted, which is the stricter of the two ways Colorado can say no. The proviso is not a pet route: it preserves scientific collection, relocation and rehabilitation permits, all of which are institutional. The § 008(B) grandfather clause covers only subsections 1 through 8 and this is 18, so there is no existing-owner exemption either. Colorado has wild black-tailed prairie dogs across its eastern plains, which is the context the rule sits in.",
+          "verifiedOn": "2026-09-05"
         },
         "AZ": {
           "status": "restricted",
@@ -6757,12 +6855,16 @@
           "permitFor": "personal"
         },
         "CO": {
-          "status": "permit",
-          "sourceId": "co-w11",
-          "note": "Absent from the unregulated list.",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "permitFor": "personal"
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "Not on the domestic animal list and not on the unregulated wildlife list, which leaves it regulated. CPW's mammal list records exactly that for Hydrochoerus hydrochaeris. Colorado has no pet licence to issue. Chapter W-11 § 1104 offers commercial wildlife park licences, which require commercial status, and a non-commercial wildlife park licence that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before 1 January 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". Recorded here as banned rather than permit: a licence exists on paper but not one a pet keeper can obtain.",
+          "verifiedOn": "2026-09-05",
+          "grandfathered": {
+            "before": "1983-01-01",
+            "detail": "Lawful non-commercial possession of exotic mammals before 1 January 1983 may continue under a non-commercial wildlife park licence, covering those animals and their progeny born after 1 January 1982. Four decades on this is a historical clause rather than a live route."
+          }
         },
         "OR": {
           "status": "legal",
@@ -7490,6 +7592,14 @@
           "note": "The fennec fox is a live wild mammal and is not on the exempt list, so regulation 6.2 requires an Individual permit. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. Delaware's outright refusals at 4.7 are only the gila monster, the beaded lizard and the komodo dragon, so no mammal is barred from permitting by name. County and municipal ordinances are the more likely obstacle for a cat or a canid of this size.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "Not on the domestic animal list, not on the unregulated wildlife list and not on the § 008(B) prohibited list either, which leaves it in the regulated middle. Colorado has no pet licence to issue. Chapter W-11 § 1104 offers commercial wildlife park licences, which require commercial status, and a non-commercial wildlife park licence that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before 1 January 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". CPW says the same thing in plainer words on its possession page, that species such as raccoons, skunks, foxes and monkeys are not allowed here even where another state permits them, and that the bar covers interstate transport through Colorado as well.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/fennec-fox-legal-guide/"
@@ -7902,6 +8012,14 @@
           "note": "The serval is a live wild mammal and is not on the exempt list, so regulation 6.2 requires an Individual permit. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. Delaware's outright refusals at 4.7 are only the gila monster, the beaded lizard and the komodo dragon, so no mammal is barred from permitting by name. County and municipal ordinances are the more likely obstacle for a cat or a canid of this size.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "The serval is a wild felid, not Felis catus, so the domestic-cat line that clears Bengal hybrids does not reach it, and Leptailurus serval appears on neither the unregulated list nor the prohibited list. That leaves it regulated. Colorado has no pet licence to issue. Chapter W-11 § 1104 offers commercial wildlife park licences, which require commercial status, and a non-commercial wildlife park licence that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before 1 January 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". The contrast inside a single sentence of § 1103(A) is the thing to notice: a serval hybrid is a domestic cat in Colorado, and a serval is not.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/serval-legal-guide/"
@@ -7963,9 +8081,11 @@
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
+          "cite": "§ 1103(A)",
           "quote": "Domesticated races of chinchillas (Chinchilla laniger)",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "note": "On the domestic animal list, so exempted from Parks and Wildlife Commission regulations outright. Colorado names the domesticated race of the long-tailed chinchilla specifically, and CPW files Chinchilla laniger against this line. Its close relative the degu is on no list at all and is regulated wildlife, so the two sit at opposite ends of this map in Colorado. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "WA": {
           "status": "legal",
@@ -8589,6 +8709,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "Guinea pigs appear by name on the exempt mammal list, so no permit is required.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "cite": "§ 1103(A)",
+          "quote": "Domesticated races of guinea pigs (Cavia porcellus)",
+          "note": "Named to the species on the domestic animal list. The capybara, its much larger relative in the same family, is not, which is why the two land on opposite sides of this map in Colorado. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8901,6 +9030,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "The green iguana is covered by the entry for iguanas is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Iguanidae (iguanas)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Iguana iguana against this line. The green iguana is neotropical from Mexico south to Paraguay, inside the band the chapter draws. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -9211,6 +9349,18 @@
           "cite": "Del. Code tit. 7, c. 7",
           "note": "The snapping turtle is native to Delaware, so it is not exotic and the Agriculture permit chapter does not reach it. What applies instead is DNREC's native wildlife regime, under which native reptiles are not available for private ownership. The narrow carve-out Delaware does allow, a captive-bred native snake in an aberrant colour morph held under permit, is written for snakes and does not help a turtle.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW herpetofauna list; 2 CCR 406-7 § 704(B)(7)(a)",
+          "quote": "W-07, Appendix A, C: Family Chelydridae not approved in regulation",
+          "note": "Chelydridae appears nowhere in Chapter W-7. Appendix A's turtle block lists five families and this is not one of them, Appendix B is three snake genera, and Appendix C, the wild-collection list, does not include it either. Under § 701 anything the chapter does not allow is unlawful to possess, so a snapping turtle is regulated wildlife with no pet licence available. The snapping turtle is native to Colorado's eastern plains, which is the context for the one route the chapter does leave: § 704(B)(7)(a) lets someone who lawfully held a snapping turtle collected on or before 1 May 2026 keep it for the animal's life, on filing a CPW Legacy Report by 30 July 2026.",
+          "grandfathered": {
+            "before": "2026-05-01",
+            "detail": "A snapping turtle legally collected on or before 1 May 2026 may be kept and transported within Colorado for the life of the animal if a CPW Legacy Report was filed by 30 July 2026. No new wild capture is allowed."
+          },
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9501,6 +9651,15 @@
           "cite": "3 Del. Admin. Code 903-6.1.2",
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "The tokay gecko is covered by the entry for geckos is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. The geckos are handled in the appendix's Other Species block, which CPW introduces as species that are not native only to tropic or subtropic regions, so the native-range qualifier that governs the family lists does not apply to them. Three gecko families are cleared with a single exception, the Mediterranean house gecko. CPW files Gekko gecko against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9799,6 +9958,20 @@
           "sourceId": "de-native-wildlife",
           "cite": "Del. Code tit. 7, c. 7",
           "note": "The eastern tiger salamander is native to Delaware and is state endangered there. Amphibians sit outside the Agriculture permit chapter, which names only mammals, their hybrids and reptiles, so DNREC's native wildlife rules are the whole answer and they do not make native wildlife available as pets. The barred tiger salamander sold in the trade is a western species and would fall outside the native rules, but it is also outside the Agriculture chapter, which is why the axolotl comes out legal here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "permit",
+          "sourceId": "co-w7",
+          "cite": "Appendix A(E)(3); Appendix C(J); § 704",
+          "quote": "Any species from the order Urodela (salamanders and newts) except tiger salamanders (Ambystoma tigrinum/mavortium)",
+          "note": "Colorado clears the salamanders at order level and then carves this one species pair straight back out, which is why the axolotl is free here and the tiger salamander is not. The route that remains is a wild-collection licence, not a pet-shop purchase: Appendix C(J) lists the western tiger salamander, and § 704 lets a Colorado resident take, possess and transport one only under a Resident Herpetofauna Collection and Possession License, which requires passing a CPW education course, is capped at four animals a year and twelve at once, bars propagation, and requires reporting each take within seven days. Non-residents have no route at all, and CPW's list records that any acquisition of a western tiger salamander other than licensed wild collection or legacy possession is not allowed. Colorado is also where the ranavirus work on the bait-salamander trade was done, which is the concern this rule sits against.",
+          "permitFor": "personal",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2026-05-01",
+            "detail": "A western tiger salamander legally collected from the wild on or before 1 May 2026 may be kept for life if a CPW Legacy Report was filed by 30 July 2026."
+          },
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10103,6 +10276,15 @@
           "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
           "note": "The Nile monitor is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. No monitor appears on the exempt list.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
           "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Varanidae (monitor lizard)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Varanus niloticus against this line. Colorado's monitor rule turns on native range rather than on adult size or on the animal's reputation, so the Nile monitor and the savannah monitor land in the same place here even though several states separate them. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10426,6 +10608,15 @@
           "note": "The Burmese python is a non-native reptile and no snake is exempt in Delaware, so an Individual permit is required. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. It is not banned here: pythons appear in these rules only at 7.5.2.10, which bars Sales Permit holders from breeding giant snakes over five feet, and that is a breeding restriction on a permit class rather than a prohibition on keeping one. Federal law is the harder constraint, since the species has been listed as injurious wildlife under the Lacey Act since 2012 and cannot lawfully cross a state line.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of snake native only to the tropical and subtropical region from the following families: Pythonidae (giant snakes)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Python bivittatus on Appendix A, and files the Indian python, Python molurus, as regulated because its range runs outside the tropics. The two decisions sit a line apart on the same list and show how narrowly the qualifier is being applied. Federal law is the real constraint here rather than Colorado: the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10442,12 +10633,16 @@
           "note": "Named on the exemption list by binomial. The criteria for getting on it include posing no significant ecological risk if released and needing no more care than a common domestic animal."
         },
         "CO": {
-          "status": "permit",
-          "sourceId": "co-w11",
-          "note": "Absent from the unregulated list.",
-          "verifiedOn": "2026-08-04",
-          "localOverride": true,
-          "permitFor": "personal"
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "Absent from both lists, so regulated. CPW's mammal list names Octodon degus and files it as regulated wildlife. Colorado has no pet licence to issue. Chapter W-11 § 1104 offers commercial wildlife park licences, which require commercial status, and a non-commercial wildlife park licence that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before 1 January 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". The chinchilla, another South American caviomorph rodent kept as a pet, is named on the domestic animal list; the degu never was.",
+          "verifiedOn": "2026-09-05",
+          "grandfathered": {
+            "before": "1983-01-01",
+            "detail": "The pre-1983 non-commercial wildlife park licence in § 1104(B)(2) is the only possession route the chapter leaves open for a regulated mammal."
+          }
         },
         "MI": {
           "status": "legal",
@@ -11031,6 +11226,15 @@
           "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
           "note": "A quirk of Delaware's drafting decides this one. The permit requirement covers wild mammals, their hybrids and reptiles, and amphibians are simply not in it. The axolotl is also not native to Delaware, so the DNREC native wildlife rules do not reach it either. It falls between the two regimes and needs no permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species from the order Urodela (salamanders and newts) except tiger salamanders (Ambystoma tigrinum/mavortium)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. The salamanders are cleared at order level in the appendix's Other Species block, which CPW introduces as species that are not native only to tropic or subtropic regions, so the axolotl does not have to satisfy the range test that governs the family lists. The single carve-out is for tiger salamanders, and the axolotl is a different Ambystoma. Its own conservation status does the rest of the work in practice: the species is CITES Appendix II and effectively extinct in the wild, so what circulates is captive stock. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11314,6 +11518,18 @@
           "sourceId": "de-native-wildlife",
           "cite": "Del. Code tit. 7, c. 7",
           "note": "The eastern box turtle is native to Delaware and is a species of greatest conservation need there, so it is not exotic and falls to DNREC rather than to the Agriculture permit. Native reptiles are not available for private ownership, and the captive-bred colour morph carve-out is written for snakes. A Terrapene that is not a Delaware native would instead need an Individual permit as a non-native reptile.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW herpetofauna list; 2 CCR 406-7 § 704(B)(7)(a)",
+          "quote": "W-07, Appendix A, C: Family Emydidae not approved in regulation",
+          "note": "Emydidae, the family that holds the box turtles and most North American pond turtles, is on none of Chapter W-7's appendices, and § 701 makes possession of any herpetofauna the chapter does not allow unlawful. CPW files the common, eastern, ornate and three-toed box turtles alike against this finding, so this is not a native-versus-imported distinction: a captive-bred eastern box turtle is in the same position as Colorado's own ornate box turtle. The one route is legacy: § 704(B)(7)(a) names the ornate box turtle among the animals a keeper could retain for life if it was legally collected on or before 1 May 2026 and reported by 30 July 2026.",
+          "grandfathered": {
+            "before": "2026-05-01",
+            "detail": "An ornate box turtle legally collected on or before 1 May 2026 may be kept and transported within Colorado for the life of the animal if a CPW Legacy Report was filed by 30 July 2026. No new wild capture is allowed."
+          },
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11607,6 +11823,14 @@
           "note": "The red-eared slider is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. Delaware exempts no chelonian of any kind.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-w7",
+          "cite": "§ 708; CPW herpetofauna list",
+          "quote": "A person may possess, transport, or export, but not propagate, a red-eared slider taken from the wild in Colorado for the life of the animal.",
+          "note": "Colorado reversed itself on this species in 2026. The red-eared slider used to be named outright on the Chapter W-11 unregulated wildlife list; Chapter W-7 § 708(A) now declares it invasive herpetofauna detrimental to Colorado wildlife and habitat, allows unlimited collection from the wild, and leaves Emydidae off every appendix. CPW's summary of the position is \"No import, no sale\". What survives is narrow and points the wrong way for a buyer: § 708(C)(1) permits keeping a slider taken from the wild in Colorado, for that animal's life, with no propagation and no release. So the pet-trade route is closed while the wild-take route is wide open, which is the opposite of how these rules usually run.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11895,6 +12119,15 @@
           "note": "The sulcata is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. Delaware exempts no chelonian of any kind. Note that giant tortoises, meaning Aldabras and Galapagos, are barred from being bred by Sales Permit holders under 7.5.2.10, but a sulcata is neither and the restriction is on breeding by permit holders rather than on possession.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of turtle native only to the tropical and subtropical region from the following families: Testudinidae (tortoises)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Centrochelys sulcata against this line. Its Sahelian range sits inside the band, unlike the Russian, Greek, Hermann's and leopard tortoises, which CPW files as regulated on the same family listing. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12181,6 +12414,15 @@
           "cite": "Del. Code tit. 7, c. 7, with Del. Code tit. 3 § 7201",
           "note": "The condition is which hognose. The eastern hognose is native to Delaware, so it is DNREC's and native reptiles are not available for private ownership, subject only to the captive-bred aberrant colour morph carve-out held under permit. The western hognose that dominates the pet trade is not a Delaware species, which makes it a non-native reptile needing an Individual permit from Agriculture instead. Neither route is simply open, but they are different routes.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "conditional",
+          "sourceId": "co-w7",
+          "cite": "Appendix B; § 703(B)",
+          "quote": "Any captive-bred species from the genus Heterodon except the Eastern hog-nosed snake (Heterodon platirhinos), Lystrophis, or Leioheterodon (hognose snakes)",
+          "note": "Captive-bred western hognose is on Appendix B, needing documentation under § 703(B) but no licence, and CPW files Heterodon nasicus (captive bred) against exactly this line. Two things fall outside it. The eastern hognose is excluded by name. And a hognose taken from the wild in Colorado is not covered: CPW files that as legacy possession only, lawful if held on or before 1 May 2026 and reported by 30 July 2026, with no new wild capture allowed. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12466,6 +12708,15 @@
           "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
           "note": "The permit requirement names live wild mammals, hybrids of wild mammals and non-native reptiles, and stops there. Birds are absent from the operative text despite the chapter's title mentioning them, and the Department of Agriculture's own guidance states that all birds and fish are exempt from the permitting process. The African grey therefore needs nothing.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "cite": "§ 1103(B)",
+          "quote": "All Psitticine birds",
+          "note": "The unregulated wildlife list clears the parrots as a group, with the regulation's own misspelling of psittacine. Unregulated means no CPW licence is required, not that nothing applies: importation and health requirements still do. One parrot is carved out elsewhere and it is not this one. The monk parakeet sits on the Chapter W-0 prohibited list, and CPW's bird list restates this line as \"All Psitticine birds (except Monk Parakeet/Quaker Parrot)\". CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12745,6 +12996,14 @@
           "cite": "Del. Code tit. 3 § 7201",
           "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
           "note": "The permit requirement reaches live wild mammals, hybrids of wild mammals and non-native reptiles only. The giant African millipede is an arthropod and falls outside the chapter entirely, as it does outside the exotic animal regulations made under it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-crs-33-1-102",
+          "cite": "C.R.S. § 33-1-102(51)",
+          "quote": "\"Wildlife\" means wild vertebrates, mollusks, and crustaceans, whether alive or dead, including any part, product, egg, or offspring thereof, that exist as a species in a natural wild state in their place of origin, presently or historically",
+          "note": "The giant African millipede is a myriapod, and Colorado's statutory definition of wildlife runs to wild vertebrates, mollusks and crustaceans and stops there. Everything CPW does about private possession, the licensing scheme in Chapter W-11, the prohibited list in Chapter W-0 and the new herpetofauna chapter, is built on that definition, so none of it reaches this animal. CPW's own species lists are divided into birds, mammals, herpetofauna and fish and marine animals, with no terrestrial invertebrate category at all, which is the same gap seen from the other side. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13087,6 +13346,15 @@
           "note": "The corn snake is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "conditional",
+          "sourceId": "co-w7",
+          "cite": "Appendix B; § 703(B)",
+          "quote": "Any captive-bred species from the genus Pantherophis (cornsnakes, ratsnakes, and foxsnakes) except the Great Plains ratsnake (Pantherophis emoryi)",
+          "note": "Two conditions, both real. The animal must be captive-bred, and § 703(B) requires documentation that reasonably identifies it, a receipt or bill of sale, a donation certificate, an importation health certificate or proof it was bred from lawfully possessed parents. No licence and no fee, but a wild-caught corn snake and an undocumented one are both outside the exemption. Colorado carved the Great Plains ratsnake out of the genus because it is a native species. Anyone who held a Pantherophis on 1 May 2026 could satisfy the documentation requirement instead by filing a CPW Legacy Report under § 703(C). CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/corn-snake-legal-guide/"
@@ -13406,6 +13674,15 @@
           "note": "The milk snake is nonvenomous and not indigenous to Nevada, so it is cleared by a single line that covers the entire pet reptile trade in one sweep and needs no Department permit.  Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "conditional",
+          "sourceId": "co-w7",
+          "cite": "Appendix B; § 703(B)",
+          "quote": "Any captive-bred species from the genus Lampropeltis (kingsnakes and milksnakes) except the Western milksnakes (Lampropeltis gentilis/Lampropeltis triangulum gentilis) and Speckled kingsnake (Lampropeltis holbrooki/Lampropeltis getula holbrooki)",
+          "note": "Captive-bred Lampropeltis triangulum is on Appendix B, so it needs documentation under § 703(B) but no licence. The exclusion is the part that matters for this species: the western milksnake, which Colorado writes as Lampropeltis gentilis or L. triangulum gentilis, is Colorado's own native milksnake and is left out of the exemption, so the answer depends on which milksnake it is. Anyone who held one on 1 May 2026 could file a CPW Legacy Report under § 703(C) in place of documentation. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/milk-snake-legal-guide/"
@@ -13445,11 +13722,12 @@
           "verifiedOn": "2026-08-27"
         },
         "CO": {
-          "status": "legal",
-          "sourceId": "co-w11",
-          "quote": "All non-native tropical and subtropical species of snakes in the families: Boidae (giant snakes)",
-          "note": "Colorado's W-11 list clears the family Boidae as a category, the same basis boa constrictor is legal here. Rosy boa falls within it.",
-          "verifiedOn": "2026-08-27"
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "Boidae is on Appendix A, but the listing covers only snakes native only to the tropical and subtropical region, and the rosy boa is a southwestern United States and Baja animal ranging north of the 26 degree line in § 700(G). CPW's herpetofauna list records Lichanura trivirgata against Appendix A, A, 3 with the finding \"native range is outside tropical/subtropical\", and files the rubber boa the same way, against Boa constrictor, the rainbow boas and the sand boas, which clear it. So the family listing that makes the boa constrictor legal in Colorado does not carry the rosy boa, and this entry read legal until the 1 May 2026 rewrite added that test.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "legal",
@@ -13996,6 +14274,14 @@
           "note": "The southern flying squirrel is a wild mammal and squirrels are not on the exempt list, which covers hamsters, gerbils, mice, Norway rats, guinea pigs, chinchillas, degus, rabbits, possums, ferrets, hedgehogs and sugar gliders. A permit is therefore required. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. Delaware's flying squirrel is also a native animal, so DNREC's native wildlife rules bear on taking one from the wild here regardless of the Agriculture permit.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "No Glaucomys appears on the domestic list, the unregulated list or the prohibited list, so it is regulated. Colorado has no pet licence to issue. Chapter W-11 § 1104 offers commercial wildlife park licences, which require commercial status, and a non-commercial wildlife park licence that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before 1 January 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". The squirrels § 008(B) does prohibit outright are African genera, tree or sun squirrels (Heliosciurus) and rope squirrels (Funisciurus), which is a different rule aimed at a monkeypox-era import concern rather than at this animal. Colorado also has its own native northern flying squirrel, and C.R.S. 33-6-109 bars live possession of native wildlife independently of any of this.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -14314,6 +14600,14 @@
           "note": "The ackie monitor is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. No monitor appears on the exempt list, and the Komodo dragon is the one varanid Delaware refuses to permit at all, so the family is treated with some care here.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "unclear",
+          "sourceId": "co-w7",
+          "cite": "Appendix A(B)(19); § 700(G)",
+          "quote": "\"Tropical and subtropical region\" means the region between 26.0 degrees north latitude and 26.0 degrees south latitude.",
+          "note": "Varanidae is on Appendix A, but only for monitors native only to the tropical and subtropical region, and § 700(G) fixes that region at 26.0 degrees north to 26.0 degrees south. The ackie monitor's range across northern and central Western Australia and inland Queensland reaches roughly that latitude, so it sits on the line the rule draws rather than clearly inside it. CPW has published determinations for six monitors, the savannah, Nile, black-throated, blue-spotted tree, crocodile and Asian water monitors, and none for Varanus acanthurus, and its list is expressly not exhaustive. Recorded unclear rather than legal because the qualifier is species-specific and this species is the one it is hardest to call. CPW takes the question by email for exactly this situation.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -14362,11 +14656,12 @@
           "verifiedOn": "2026-08-27"
         },
         "CO": {
-          "status": "legal",
-          "sourceId": "co-unregulated-wildlife",
-          "cite": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
-          "note": "Colorado's 'unregulated wildlife' category explicitly includes pet reptiles, and no license is required for private possession. Wild collection of Colorado's own native garter snakes falls under Chapter W-7 (Herpetofauna) instead.",
-          "verifiedOn": "2026-08-27"
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "Colubridae is on Appendix A, but only for snakes native only to the tropical and subtropical region, and the common garter snake is a temperate North American animal. CPW's herpetofauna list records Thamnophis sirtalis against Appendix A, A, 4 with the finding \"native range outside tropical/subtropical\", and files the checkered and plains garter snakes the same way. Nothing else in Chapter W-7 reaches it: Appendix B is three snake genera and Thamnophis is not among them. What Colorado does allow is wild collection of two of its own garter snakes, the wandering and the plains, by residents holding a Resident Herpetofauna Collection and Possession License under § 704, which is a route to a Colorado animal rather than to a pet-trade one. This entry read legal until the 1 May 2026 herpetofauna rewrite moved the reptile lists out of Chapter W-11 and attached a native-range test to them.",
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "legal",
@@ -14760,11 +15055,13 @@
           "verifiedOn": "2026-08-27"
         },
         "CO": {
-          "status": "legal",
-          "sourceId": "co-unregulated-wildlife",
-          "cite": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
-          "note": "Colorado clears the genus Lampropeltis by name except for the western milksnake and the speckled kingsnake, neither of which is the California kingsnake.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "co-w7",
+          "cite": "Appendix B; § 703(B)",
+          "quote": "Any captive-bred species from the genus Lampropeltis (kingsnakes and milksnakes) except the Western milksnakes (Lampropeltis gentilis/Lampropeltis triangulum gentilis) and Speckled kingsnake (Lampropeltis holbrooki/Lampropeltis getula holbrooki)",
+          "note": "The California kingsnake is neither of the two excluded natives, so it is on Appendix B and needs no licence, but it does now need two things it did not need before 1 May 2026: it must be captive-bred, and § 703(B) requires documentation identifying the animal, a receipt or bill of sale, a donation certificate, an importation health certificate or proof of lawful parentage. CPW files Lampropeltis californiae against this line. Anyone holding one on 1 May 2026 could file a CPW Legacy Report under § 703(C) instead. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "legal",
@@ -15144,10 +15441,12 @@
         },
         "CO": {
           "status": "legal",
-          "sourceId": "co-unregulated-wildlife",
-          "cite": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
-          "note": "Colorado's 'unregulated wildlife' category explicitly includes pet birds.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "co-w11",
+          "cite": "§ 1103(B)",
+          "quote": "All Psitticine birds",
+          "note": "The unregulated wildlife list clears the parrots as a group, so no CPW licence is required for a cockatoo. Unregulated is not unmonitored: importation and health requirements still apply, and § 1103(B) is expressly subject to the Chapter W-0 prohibited list. That list reaches exactly one parrot, the monk parakeet, and CPW restates this line as \"All Psitticine birds (except Monk Parakeet/Quaker Parrot)\". CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         },
         "CT": {
           "status": "legal",
@@ -15790,6 +16089,15 @@
           "note": "The red-footed tortoise is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. Delaware exempts no chelonian of any kind.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of turtle native only to the tropical and subtropical region from the following families: Testudinidae (tortoises)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Chelonoidis carbonarius against this line. Its South American range is entirely inside the band Chapter W-7 § 700(G) draws. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15867,6 +16175,15 @@
           "cite": "3 Del. Admin. Code 903-6.1.2",
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "The bearded dragon is covered by the entry for bearded dragons is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Agamidae (chisel-teeth lizards)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Pogona vitticeps against this line, treating the central bearded dragon's Australian interior range as falling inside the tropical and subtropical band. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15946,6 +16263,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "The leopard gecko is covered by the entry for geckos is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. Eublepharidae is cleared outright in the Other Species block rather than through the native-range test, which matters for this species: the leopard gecko's Afghanistan-to-northwest-India range would be a hard call under that test. CPW files Eublepharis macularius against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16023,6 +16349,15 @@
           "cite": "3 Del. Admin. Code 903-6.1.2",
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "The crested gecko is covered by the entry for geckos is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. Diplodactylidae is named in its own right, so the crested gecko does not depend on the older taxonomy that filed Correlophus and Rhacodactylus inside Gekkonidae. CPW files Correlophus ciliatus against this line, and the gargoyle and leachianus geckos with it. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -16102,6 +16437,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "Skinks are exempt with one carve-out, the five-lined skink, which is a Delaware native rather than a pet-trade animal. The blue-tongue skink is Australian and needs no permit. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Scincidae (skinks)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Tiliqua at genus level as well as three named forms, the Indonesian, Halmahera and northern blue-tongues, all on Appendix A. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16179,6 +16523,15 @@
           "cite": "3 Del. Admin. Code 903-6.1.2",
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "Jackson's chameleon is covered by the entry for chameleons is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "Appendix A; § 703(A)",
+          "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Chamaeleonidae (chameleons)",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a licence or documentation. CPW files Trioceros jacksonii against this line. Its native East African montane range straddles the equator. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -16258,6 +16611,14 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "The green anole is covered by the entry for anoles is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "The anoles are on Appendix A as a family, Dactyloidae, but the listing carries the same qualifier as the rest of the lizard block, native only to the tropical and subtropical region, and CPW has read Anolis carolinensis as failing it. Its herpetofauna list records the species against Appendix A, B, 8 with the finding \"native range outside tropical/subtropical\", which is a determination against, not for. The green anole breeds up the southeastern United States well north of the 26 degree line Chapter W-7 § 700(G) draws, so the family listing does not carry it. That leaves it regulated wildlife with no pet licence available. This is the clearest case on the map of a family appearing on an allow-list without the species being allowed.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16329,6 +16690,15 @@
           "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
           "note": "Rabbits appear by name on the exempt mammal list, so no permit is required.",
           "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "cite": "§ 1103(A)",
+          "quote": "Domesticated races of European rabbit (Oryctolagus cuniculus)",
+          "note": "Colorado reaches the rabbit the way most states do that address it at all, by naming the domesticated race of the European rabbit rather than the wild species. CPW's own mammal list files Oryctolagus cuniculus domesticus against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16399,6 +16769,14 @@
           "cite": "Del. Code tit. 3 § 7201",
           "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
           "note": "The permit requirement reaches live wild mammals, hybrids of wild mammals and non-native reptiles only. The Madagascar hissing cockroach is an arthropod and falls outside the chapter entirely, as it does outside the exotic animal regulations made under it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-crs-33-1-102",
+          "cite": "C.R.S. § 33-1-102(51)",
+          "quote": "\"Wildlife\" means wild vertebrates, mollusks, and crustaceans, whether alive or dead, including any part, product, egg, or offspring thereof, that exist as a species in a natural wild state in their place of origin, presently or historically",
+          "note": "The Madagascar hissing cockroach is an insect, and Colorado's statutory definition of wildlife runs to wild vertebrates, mollusks and crustaceans and stops there. Everything CPW does about private possession, the licensing scheme in Chapter W-11, the prohibited list in Chapter W-0 and the new herpetofauna chapter, is built on that definition, so none of it reaches this animal. CPW's own species lists are divided into birds, mammals, herpetofauna and fish and marine animals, with no terrestrial invertebrate category at all, which is the same gap seen from the other side. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
           "verifiedOn": "2026-09-05"
         }
       }

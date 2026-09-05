@@ -1,0 +1,661 @@
+# Colorado Parks and Wildlife species determination lists, updated 2026-05-01
+
+sourceId: co-cpw-species-list
+jurisdiction: CO
+url: https://cpw.state.co.us/wildlife-arent-pets
+     herpetofauna list: https://drive.google.com/file/d/1PATMDDHclI7mOWKy4n3euu8CYop7Y405/view
+     mammals list:      https://drive.google.com/file/d/1oBP3Q4FVP4TyhgPxuGh-BdtD5BqQt8gh/view
+     birds list:        https://drive.google.com/file/d/1S65z11jt7aWniCtz7dQg37x_dgjEj-Vm/view
+     fish & marine:     https://drive.google.com/file/d/1OhJ_Ywjlh5LGPs-HzhRjJA1PQiVqfJM1/view
+fetched: 2026-09-05
+fetch notes: cpw.state.co.us serves fine with plain curl; /herpetofauna redirects to
+  /wildlife-arent-pets. The four lists are Google Drive PDFs whose links only appear inside
+  the accordion markup, so grep the HTML for drive.google.com/file/d/ rather than for .pdf.
+  Fetch each with https://drive.google.com/uc?export=download&id=<id>. Text extracts with
+  pypdf. The fish and marine list was not needed for this sitting and is not cached here.
+
+THIS IS THE DOCUMENT THAT DECIDES COLORADO. Chapter W-7's Appendix A turns on whether a species
+is "native only to the tropical and subtropical region", which is a research question per
+species, not a lookup. These lists are CPW answering that question itself, row by row, and they
+are the agency applying its own rule rather than a secondary summary. Each row gives the
+species and the regulation that decides it. The four verdicts are Domestic, Unregulated,
+Appendix A/B, Appendix C, Regulated, and Prohibited; the regulation text in the last column
+states which, so the tick-box columns do not need to be recovered from the PDF layout.
+
+The list is expressly NOT exhaustive. CPW takes questions on unlisted species by email at
+Wildlife.SpecialLicensing@state.co.us. Species absent from it that this map needed: axolotl
+(Appendix A on the order Urodela listing), ackie monitor (recorded unclear on the map, because
+Varanus acanthurus sits on the 26 S line the rule draws and CPW has published determinations
+for five other monitors but not this one).
+
+The two sentences from the page that do the most work:
+  "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or
+   Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated
+   wildlife and a CPW license is required. CPW will not issue a license for private possession
+   (eg pet) of regulated wildlife."
+  "Monk Parakeet (aka Quaker Parrot) is a prohibited species and not allowed in Colorado."
+
+Rows below are "<species type> <scientific name> <common name> <other common names>" then the
+determination on the following line.
+
+---------- Mammal (32 rows) ----------
+Mammal Aonyx cinereus Asian small-clawed otter Oriental small-clawed otter, Small- clawed otter
+    -> W-11: Regulated Wildife - Not on Domestic (#1103,A) nor Unregulated Wildlife (#1103,B)
+Mammal Atelerix albiventris, Erinaceus albiventris Four-toed hedgehog African pygmy hedgehog
+    -> W-11, #1103, B, Mammals: African pygmy hedgehog (Atelerix albiventris, Erinaceus albiventris)
+Mammal Bassariscus astutus Ringtails Ring-tailed cat
+    -> W-11: Regulated Wildife - Not on Domestic (#1103,A) nor Unregulated Wildlife (#1103,B)
+Mammal Bradypus spp. Three-toed sloths
+    -> W-11: Regulated Wildife - Not on Domestic (#1103,A) nor Unregulated Wildlife (#1103,B)
+Mammal Chinchilla laniger Chinchilla Long-tailed chinchilla
+    -> W-11, #1103, A: Domesticated races of chinchillas (Chinchilla laniger)
+Mammal Choloepodidae spp. Two-toed sloths
+    -> W-11: Regulated Wildife - Not on Domestic (#1103,A) nor Unregulated Wildlife (#1103,B)
+Mammal Cynomys spp. Prairie dog
+    -> Prohibited species: W-00, #008, B, 18: Prairie dogs
+Mammal Equus quagga Zebra (and Zebra hybrids)
+    -> W-11, #1103, B, Mammals: Zebras and Zebra hybrids
+Mammal Erinaceus europaeus European hedgehog West European hedgehog, Common hedgehog
+    -> Prohibited species: W-00, #008, B, 9: Hedgehogs - Erinaceus spp., (except Erinaceus albiventris or Atelerix albiventris); Hemiechinus spp., and Paraechinus spp.
+Mammal Erinaceus spp. (except Erinaceus albiventris or Atelerix albiventris) European hedgehog West European hedgehog, Common hedgehog
+    -> Prohibited species: W-00, #008, B, 9: Hedgehogs - Erinaceus spp., (except Erinaceus albiventris or Atelerix albiventris); Hemiechinus spp., and Paraechinus spp.
+Mammal Hemiechinus auritus Long-eared hedgehog
+    -> Prohibited species: W-00, #008, B, 9: Hedgehogs - Erinaceus spp., (except Erinaceus albiventris or Atelerix albiventris); Hemiechinus spp., and Paraechinus spp.
+Mammal Hemiechinus collaris Indian long-eared hedgehog
+    -> Prohibited species: W-00, #008, B, 9: Hedgehogs - Erinaceus spp., (except Erinaceus albiventris or Atelerix albiventris); Hemiechinus spp., and Paraechinus spp.
+Mammal Hydrochoerus hydrochaeris Capybara Greater capybara
+    -> W-11: Regulated Wildife - Not on Domestic (#1103,A) nor Unregulated Wildlife (#1103,B)
+Mammal Macropus robustus Wallaroo
+    -> W-11, #1103, B, Mammals: Wallaroo (Macropus robustus)
+Mammal Macropus rufogriseus Red-necked wallaby Bennett's wallaby
+    -> W-11, #1103, B, Mammals: Bennet (Red-necked) Wallaby (Macropus rufogriseus)
+Mammal Macropus rufus Red kangaroo
+    -> W-11, #1103, B, Mammals: Red Kangaroo (Macropus rufus)
+Mammal Monodelphis domestica Short-tailed Possum
+    -> W-11, #1103, B, Mammals: Short-tailed Possum (Monodelphis domestica)
+Mammal Nasua nasua Coatimundi South American coati, Ring-tailed coati, Brown-nosed coati
+    -> W-11: Regulated Wildife - Not on Domestic (#1103,A) nor Unregulated Wildlife (#1103,B)
+Mammal Notamacropus eugenii Dama wallaby Darma wallaby
+    -> W-11, #1103, B, Mammals: Dama (Tammar) Wallaby (Macropus eugenii)
+Mammal Octodon degus Degu Common degu
+    -> W-11: Regulated Wildife - Not on Domestic (#1103,A) nor Unregulated Wildlife (#1103,B)
+Mammal Oryctolagus cuniculus domesticus Domestic rabbit House rabbit, Flemish giant rabbit, Angora rabbit
+    -> W-11, #1103, A: Domesticated races of European rabbit (Oryctolagus cuniculus)
+Mammal Paradoxurus hermaphroditus Asian palm civet Common palm civet, Toddy cat, Musang
+    -> W-11: Regulated Wildife - Not on Domestic (#1103,A) nor Unregulated Wildlife (#1103,B)
+Mammal Paraechinus aethiopicus Desert hedgehog
+    -> Prohibited species: W-00, #008, B, 9: Hedgehogs - Erinaceus spp., (except Erinaceus albiventris or Atelerix albiventris); Hemiechinus spp., and Paraechinus spp.
+Mammal Paraechinus hypomelas Brandt's hedgehog
+    -> Prohibited species: W-00, #008, B, 9: Hedgehogs - Erinaceus spp., (except Erinaceus albiventris or Atelerix albiventris); Hemiechinus spp., and Paraechinus spp.
+Mammal Paraechinus micropus Indian hedgehog
+    -> Prohibited species: W-00, #008, B, 9: Hedgehogs - Erinaceus spp., (except Erinaceus albiventris or Atelerix albiventris); Hemiechinus spp., and Paraechinus spp.
+Mammal Paraechinus nudiventris Bare-bellied hedgehog
+    -> Prohibited species: W-00, #008, B, 9: Hedgehogs - Erinaceus spp., (except Erinaceus albiventris or Atelerix albiventris); Hemiechinus spp., and Paraechinus spp.
+Mammal Petaurus breviceps Sugar glider
+    -> W-11, #1103, B, Mammals: Sugar Gliders (Petaurus breviceps)
+Mammal Procyon lotor Raccoon North American, Northern raccoon, Common raccoon, Racoon
+    -> Prohibited species: W-00, #008, B, 6: Raccoon
+Mammal Pteropus vampyrus Large flying fox Greater flying fox, Malayan flying fox, Malasian flying fox, Large fruit bat, Kalang, Kalong
+    -> W-11: Regulated Wildife - Not on Domestic (#1103,A) nor Unregulated Wildlife (#1103,B)
+Mammal Rattus norvegicus domestica Fancy rat
+    -> W-11, #1103, A: Domesticated races of rats (Rattus norvegicus and Rattus)
+Mammal Tolypeutes tricinctus Brazilian three-banded armadillo Tatu-bola
+    -> W-11: Regulated Wildife - Not on Domestic (#1103,A) nor Unregulated Wildlife (#1103,B)
+Mammal Wallabia bicolor Swamp wallaby Black wallaby, Black-tailed wallaby, Fern wallaby
+    -> W-11, #1103, B, Mammals: Swamp Wallaby (Wallabia bicolor)
+
+---------- Bird (35 rows) ----------
+Bird Amazona albifrons White-fronted amazon White-fronted parrot, Spectacled amazon parrot
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Amazona finschi Lilac-crowned amazon Lilac-crested amazon, Lilac-crowned parrot, Finsch's parrot, Finsch's amazon
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Amazona oratrix Yellow-headed amazon Yellow-headed parrot, double yellow-headed amazon
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Anodorhynchus hyacinthinus Hyacinth macaw Hyacinthine macaw
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Ara ararauna Blue-and-gold macaw Blue-and-yellow macaw
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Ara macao Scarlet macaw Red-and-yellow macaw, Red-and-blue macaw, Red- breastedmacaw
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Ara militaris Military macaw
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Aulacorhynchus prasinus Northern emerald toucanet Green toucanet
+    -> W-11, #1103, B: All tropical/subtropical Family Ramphastidae
+Bird Bolborhynchus lineola Barred parakeet Llineolated parakeet, Linnie, Catherine parakeet
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Cacatua alba White cockatoo Umbrella cockatoo
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Cacatua citrinocristata Citron cockatoo Citron-crested cockatoo
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Cacatua goffiniana Goffin’s cockatoo Tanimbar corella, Tanimbar cockatoo
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Cacatua moluccensis Moluccan cockatoo Salmon-crested cockatoo
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Cacatua sulphurea Yellow-crested cockatoo Lessser sulphur-crested cockatoo
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Dacelo spp. Kookaburras X CPW Special Widllife License required for possession. No private possession allowed.
+    -> 
+Bird Diopsittaca nobilis nobilis Hahn’s macaw Red-shouldered macaw
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Gallus gallus domesticus Silkie chicken Silky chicken, Chinese silk chicken
+    -> W-11, #1103, A: Domesticated races of chickens (Gallus)
+Bird Geopelia cuneata Diamond dove X CPW Special Widllife License required for possession. No private possession allowed.
+    -> 
+Bird Melopsittacus undulatus Budgie Budgerigar, Common parakeet, Shell parakeet
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Myiopsitta monachus Monk parakeet Quaker Parrot, Monk parrot
+    -> Prohibited species: W-00, #008, B, 11: Monk Parakeet, aka Quaker Parrot
+Bird Numida meleagris Helmeted guinea fowl
+    -> W-11, #1103, A: Domesticated races of guinea fowl (Numida meleagris)
+Bird Pionites leucogaster White-bellied parrot White-bellied caique
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Pionites melanocephalus Black-headed parrot Black-headed caique, Black-crowned parrot, Black- capped parrot
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Pionus menstruus Blue-headed parrot Blue-headed pionus
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Pionus senilis White-crowned parrot White-crowned pionus, White-capped pionus
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Psittacara holochlorus Green parakeet Green conure, Mexican green conure
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Psittacula eupatria Alexandrine parakeet Alexandrine parrot
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Psittacula krameri Rose-ringed parakeet Ring-necked parakeet
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Psittacula krameri manillensis Indian ring-necked parakeet Indian rose-ringed parakeet
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Psittacus erithacus African grey parrot Grey parrot, Congo grey parrot
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Serinus canaria Canary Atlantic canary, Wild canary, Island canary, Common canary
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Tauraco erythrolophus Red-crested turaco X CPW Special Widllife License required for possession. No private possession allowed.
+    -> 
+Bird Thectocercus acuticaudatus Blue-crowned parakeet Blue-crowned conure, Sharp-tailed conure
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Trichoglossus forsteni Forsten's rainbow lorikeet Sunset lorikeet, Scarlet-breasted lorikeet, Forsten's lorikeet
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+Bird Trichoglossus haematodus Green-naped rainbow lorikeet Green-naped lorikeet, Coconut lorikeet
+    -> W-11, #1103, B: All Psitticine birds (except Monk Parakeet/Quaker Parrot)
+
+---------- Snake (58 rows) ----------
+Snake Ahaetulla prasina Asian vine snake Boie's whip snake, Gunther's whip snake, Oriental whip snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes
+Snake Antaresia childreni Children's python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Aspidites ramsay Ramsay's python Sand python,Woma python, Woma
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Boa constrictor Boa constrictor Common boa, Redtail boa, Red tail boa
+    -> W-07, Appendix A, A, 3: Family Boidae (giant snakes) native to tropical/subtropical only
+Snake Boa imperator Columbian boa Central American boa, Northern boa, Colombian red- tailed boa, Common boa, Common northern boa
+    -> W-07, Appendix A, A, 3: Family Boidae (giant snakes) native to tropical/subtropical only
+Snake Boiga dendrophila Boiga Mangrove snake, Gold-ringed cat snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes
+Snake Charina bottae Rubber Boa Coastal rubber boa, Northern rubber boa
+    -> W-07, Appendix A, A, 3: Family Boidae (giant snakes) native range is outside tropical/subtropical
+Snake Chrysopelea ornata Ornate flying snake Golden tree snake, Gliding snake, Golden flying snake, Gold and black tree snake, Flying tree snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes
+Snake Chrysopelea paradisi Paradise flying snake Paradise tree snake, Garden flying snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes
+Snake Coluber constrictor (wild-caught in Colorado) North American racer
+    -> W-07, Appendix C, N: North American racer (Coluber constrictor). CPW Resident Herpetofauna Collection/Possession license required.
+Snake Coluber constrictor North American racer
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical
+Snake Crotalus atrox Western diamondback rattlesnake Western diamond-backed rattlesnake, Adobe snake, Arizona diamond rattlesnake, Coon tail, Desert diamond- back, Desert diamond rattlesnake, Sand tail, Fierce rattlesnake, Spitting rattlesnake, Buzz tail, Texan rattlesnake, Texas diamond-back, Texas bark, Texas rattler
+    -> W-07, Appendix A, A: Family Viperidae not approved in regulation
+Snake Crotalus viridis Prairie rattlesnake Great Plains rattlesnake
+    -> W-07, Appendix A, A: Family Viperidae not approved in regulation
+Snake Elaphe anomala Korean rat snake Southern Amur ratsnake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical
+Snake Epicrates cenchria Rainbow boa Brazilian rainbow boa
+    -> W-07, Appendix A, A, 3: Family Boidae (giant snakes) native to tropical/subtropical only
+Snake Epicrates maurus Brown rainbow boa
+    -> W-07, Appendix A, A, 3: Family Boidae (giant snakes) native to tropical/subtropical only
+Snake Eryx colubrinus Kenyan sand boa East African sand boa, Egyptian sand boa, Kenya sand boa, Sand boa
+    -> W-07, Appendix A, A, 3: Family Boidae (giant snakes) native to tropical/subtropical only
+Snake Eryx colubrinus loveridgei Black and white Kenyan sand boa Anery Keyan sand boa
+    -> W-07, Appendix A, A, 3: Family Boidae (giant snakes) native to tropical/subtropical only
+Snake Eryx jayakari Arabian sand boa Jayakar's sand boa, Iranian boa
+    -> W-07, Appendix A, A, 3: Family Boidae (giant snakes) native to tropical/subtropical only
+Snake Gonyosoma boulengeri Rhinoceros ratsnake Rhinoceros snake, Rhino rat snake, Vietnamese longnose snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native to tropical/subtropical only
+Snake Heterodon nasicus (captive bred) Western hognose snake
+    -> W-07, Appendix B, C: Any captive-bred species from the genus Heterodon except the Eastern hog-nosed snake (Heterodon platirhinos), Lystrophis, or Leioheterodon (hognose snakes)
+Snake Heterodon nasicus (wild caught in Colorado) Western hognose snake
+    -> W-07: possession on or before May 01, 2026 allowed with legacy reporting by July 30, 2026. No new wild capture allowed.
+Snake Hydrodynastes gigas False water cobra False cobra, South American water cobra, Brazilian smooth snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes
+Snake Lampropeltis californiae California kingsnake High white California kingsnake, Black and white California kingsnake
+    -> W-07, Appendix B, B: Any captive-bred species from the genus Lampropeltis (kingsnakes and milksnakes) except the Western milksnakes (Lampropeltis gentilis/Lampropeltis triangulum gentilis) and Speckled kingsnake (Lampropeltis holbrooki/Lampropeltis getula holbrooki)
+Snake Lampropeltis gentilis/Lampropeltis triangulum gentilis Western milksnakes
+    -> W-07, Appendix B, B: Any captive-bred species from the genus Lampropeltis (kingsnakes and milksnakes) except the Western milksnakes (Lampropeltis gentilis/Lampropeltis triangulum gentilis) and Speckled kingsnake (Lampropeltis holbrooki/Lampropeltis getula holbrooki)
+Snake Lampropeltis getula Common kingsnake Eastern kingsnake, Chain kingsnake
+    -> W-07, Appendix B, B: Any captive-bred species from the genus Lampropeltis (kingsnakes and milksnakes) except the Western milksnakes (Lampropeltis gentilis/Lampropeltis triangulum gentilis) and Speckled kingsnake (Lampropeltis holbrooki/Lampropeltis getula holbrooki)
+Snake Lampropeltis getula nigrita Mexican black kingsnake
+    -> W-07, Appendix B, B: Any captive-bred species from the genus Lampropeltis (kingsnakes and milksnakes) except the Western milksnakes (Lampropeltis gentilis/Lampropeltis triangulum gentilis) and Speckled kingsnake (Lampropeltis holbrooki/Lampropeltis getula holbrooki)
+Snake Lampropeltis holbrooki/Lampropeltis getula holbrooki Speckled kingsnakes
+    -> W-07, Appendix B, B: Any captive-bred species from the genus Lampropeltis (kingsnakes and milksnakes) except the Western milksnakes (Lampropeltis gentilis/Lampropeltis triangulum gentilis) and Speckled kingsnake (Lampropeltis holbrooki/Lampropeltis getula holbrooki)
+Snake Liasis mackloti savuensis Savu python White-eyed python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Lichanura trivirgata Desert rosy boa
+    -> W-07, Appendix A, A, 3: Family Boidae (giant snakes) native range is outside tropical/subtropical
+Snake Malayopython reticulatus Reticulated python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Morelia spilota cheynei Jungle carpet python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Morelia viridis Green tree python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Pantherophis guttatus Corn Snake Red rat snake, Ultra corn snake
+    -> W-07, Appendix B, A: Any captive-bred species from the genus Pantherophis (cornsnakes, ratsnakes, and foxsnakes) except the Great Plains ratsnake (Pantherophis emoryi)
+Snake Pantherophis obsoletus Black rat snake Western rat snake, Pilot black snake, Black snake, Gray rat snake, Black chicken snake, Black coluber, Chicken snake, Mountain black snake, Mountain pilot snake, Pilot snake, Rat snake, Rusty black snake, Scaly black snake, Cow snake, Sleepy John, White-throated racer
+    -> W-07, Appendix B, A: Any captive-bred species from the genus Pantherophis (cornsnakes, ratsnakes, and foxsnakes) except the Great Plains ratsnake (Pantherophis emoryi)
+Snake Pantherophis obsoletus lindheimeri Texas rat snake
+    -> W-07, Appendix B, A: Any captive-bred species from the genus Pantherophis (cornsnakes, ratsnakes, and foxsnakes) except the Great Plains ratsnake (Pantherophis emoryi)
+Snake Pituophis catenifer Gopher snake Bull snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical
+Snake Pituophis catenifer affinis Sonoran gopher snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical
+Snake Pituophis catenifer catenifer Pacific gopher snake Pacific pine snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical
+Snake Pituophis catenifer deserticola Great Basin gopher snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical
+Snake Pituophis catenifer deserticola/sayi (wild-caught in Colorado) Gopher snake Bull snake
+    -> W-07, Appendix C, I: Gophersnake/Bullsnake (Pituophis catenifer deserticola/sayi). CPW Resident Herpetofauna Collection/Possession license required.
+Snake Pituophis catenifer sayi Gopher snake Bull snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical
+Snake Python anchietae Angolan python Anchieta's dwarf python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Python bivittatus Burmese python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Python breitensteini Borneo python Borneo short-tailed python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Python curtus Black Blood Python Sumatran short-tailed python, Sumatra python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Python molurus Indian python Rock python, Indian rock python, Asian rock python, Black- tailed python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native range outside tropical/subtropical
+Snake Python regius Ball python Royal python
+    -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only
+Snake Thamnophis elegans vagrans (wild- caught in Colorado) Wandering gartersnake
+    -> W-07, Appendix C, K: Wandering gartersnake (Thamnophis elegans vagrans). CPW Resident Herpetofauna Collection/Possession license required.
+Snake Thamnophis marcianus Checkered garter snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical
+Snake Thamnophis radix (wild-caught in Colorado) Plains gartersnake
+    -> W-07, Appendix C, L: Plains gartersnake (Thamnophis radix). CPW Resident Herpetofauna Collection/Possession license required.
+Snake Thamnophis radix Plains gartersnake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical
+Snake Thamnophis sirtalis Common garter snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical
+Snake Typhlops spp. Blind snakes
+    -> W-07, Appendix A, A: Family Typhlopidae not approved in regulation
+Snake Xenodon dorbignyi South American hognose
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native to tropical/subtropical only
+Snake Xenodon pulcher Tricolor hognose snake Banded hognost snake, Culebra falsa, False coral snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native to tropical/subtropical only
+Snake Xenodon semicinctus Ringed hognose snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native to tropical/subtropical only
+Snake Zamenis longissimus Aesculapian snake
+    -> W-07, Appendix A, A, 4: Family Colubridae (modern snakes) except the genera Ahaetulla (vine/whip snakes), Boiga (cat snakes), Dispholidus (boomslangs), Rhabdophis (keelbacks), Thelotornis (twig snakes), or Hydrodynastes native range outside tropical/subtropical Page 10 of 11 End: Snake - continued from Page 7 Start: Turtle & Tortoise - continued through Page 10 Last Updated Species Type Scientific Name Common Name Other Common Names Regulation:
+
+---------- Lizard (76 rows) ----------
+Lizard Abronia graminea Mexican alligator lizard Arboreal Alligator Lizard
+    -> W-07, Appendix A, B, 3: Family Anguidae (glass and alligator lizards) native to tropical/subtropical only
+Lizard Aeluroscalabotes felinus Cat gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Agama mwanzae Spider-Man agama Spiderman agama, Mwanza flat-headed rock agama
+    -> W-07, Appendix A, B, 1: Family Agamidae (chisel-teeth lizards) native to tropical/subtropical only
+Lizard Anolis carolinensis Green anole Carolina anole, Carolina green anole, American anole, American green anole, North American green anole, Red- throated anole, Chameleon, American chameleon
+    -> W-07, Appendix A, B, 8: Family Dactyloidae (anoles), except the Brown anole (Anolis sagrei) native range outside tropical/subtropical
+Lizard Anolis equestris Cuban knight anole Cuban giant anole, Knight anole
+    -> W-07, Appendix A, B, 8: Family Dactyloidae (anoles), except the Brown anole (Anolis sagrei) native to tropical/subtropical only
+Lizard Aspidoscelis tigris (wild-caught in Colorado) Tiger whiptail
+    -> W-07, Appendix C, M: Tiger whiptail (Aspidoscelis tigris). CPW Resident Herpetofauna Collection/Possession license required.
+Lizard Aspidoscelis tigris Tiger whiptail
+    -> W-07, Appendix A, B, 17: Family Teiidae (whiptail) native range outside tropical/subtropical
+Lizard Basiliscus plumifrons Green basilisk Plumed basilisk, Double crested basilisk, Jesus Christ lizard
+    -> W-07, Appendix A, B, 6: Family Corytophanidae (casquehead lizards) native to tropical/subtropical only
+Lizard Broadleysaurus major Sudan plated lizard Western plated lizard, Great plated lizard, Broadley's rough-scaled plated lizard
+    -> W-07, Appendix A, B: Family Gerrhosauridae not approved in regulation
+Lizard Chalcides ocellatus Ocellated skink Eyed skink, Gongilo
+    -> W-07, Appendix A, B, 16: Family Scincidae (skinks) native range outside tropical/subtropical
+Lizard Chamaeleo calyptratus Veiled chameleon Cone-head chameleon, Yemen chameleon, Yemeni chameleon
+    -> W-07, Appendix A, B, 4: Family Chamaeleonidae (chameleons) native to tropical/subtropical only
+Lizard Chlamydosaurus kingii Frilled lizard Frilled agama, Frillneck lizard, Frill-necked lizard, Frilled dragon
+    -> W-07, Appendix A, B, 1: Family Agamidae (chisel-teeth lizards) native to tropical/subtropical only
+Lizard Coleonyx variegatus Western banded gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Correlophus ciliatus Crested gecko Eyelash gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Corucia zebrata Solomon Islands skink Zebra, Prehensile-tailed skink, Monkey-tailed skink, Giant skink, Monkey skink
+    -> W-07, Appendix A, B, 16: Family Scincidae (skinks) native to tropical/subtropical only
+Lizard Ctenosaura pectinata Black spiny-tailed iguana Western spiny-tailed iguana, Spiny-tailed iguana, Guerreran spiny-tailed iguana, Broad-ringed spiny-tailed iguana, Mexican spinytailed iguana
+    -> W-07, Appendix A, B, 11: Family Iguanidae (iguanas) native to tropical/subtropical only
+Lizard Ctenosaura similis Spiny tailed iguana Black iguana, Black spiny-tailed iguana
+    -> W-07, Appendix A, B, 11: Family Iguanidae (iguanas) native to tropical/subtropical only
+Lizard Dracaena guianensis Northern caiman lizard
+    -> W-07, Appendix A, B, 17: Family Teiidae (whiptail) native to tropical/subtropical only
+Lizard Draco volans Flying dragon Common flying dragon
+    -> W-07, Appendix A, B, 1: Family Agamidae (chisel-teeth lizards) native to tropical/subtropical only
+Lizard Eublepharis macularius Leopard gecko Common leopard gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Eumeces schneiderii Schneider's skink Berber skink
+    -> W-07, Appendix A, B, 16: Family Scincidae (skinks) native range outside tropical/subtropical
+Lizard Furcifer pardalis Panther chameleon
+    -> W-07, Appendix A, B, 4: Family Chamaeleonidae (chameleons) native to tropical/subtropical only
+Lizard Furcifer verrucosus Giant spiny chameleon Warty chameleon, Spiny chameleon, Crocodile chameleon
+    -> W-07, Appendix A, B, 4: Family Chamaeleonidae (chameleons) native to tropical/subtropical only
+Lizard Gekko gecko Tokay gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Gekko kuhli Kuhl's flying gecko Kuhl's parachute gecko, Gliding gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Goniurosaurus hainanensis Chinese cave gecko Hainan cave gecko, Cave gecko, Chinese leopard gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Heloderma horridum Mexican beaded lizard
+    -> W-07: possession on or before May 01, 2026 allowed with legacy reporting by July 30, 2026. No new possession allowed.
+Lizard Heloderma suspectum Gila monster
+    -> W-07: possession on or before May 01, 2026 allowed with legacy reporting by July 30, 2026. No new possession allowed.
+Lizard Hemidactylus turcicus Mediterranean house gecko Turkish gecko, Moon lizard
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Holbrookia maculata (wild caught in Colorado) Lesser earless lizard
+    -> W-07: possession on or before May 01, 2026 allowed with legacy reporting by July 30, 2026. No new wild capture allowed.
+Lizard Iguana iguana Iguana American iguana, Common green iguana, Green iguana, Blue axanthic iguana, Blue iguana, Red iguana
+    -> W-07, Appendix A, B, 11: Family Iguanidae (iguanas) native to tropical/subtropical only
+Lizard Kinyongia multituberculata Two horned chameleon West Usambara two-horned chameleon, West Usambara blade-horned chameleon
+    -> W-07, Appendix A, B, 4: Family Chamaeleonidae (chameleons) native to tropical/subtropical only
+Lizard Lanthanotus borneensis Earless monitor lizard
+    -> W-07, Appendix A, B, 13: Family Lanthanotidae (earless monitor) native to tropical/subtropical only
+Lizard Leiolepis belliana Butterfly lizard Butterfly agama, Common butterfly lizard
+    -> W-07, Appendix A, B, 1: Family Agamidae (chisel-teeth lizards) native to tropical/subtropical only
+Lizard Ouroborus cataphractus Armadillo girdled lizard
+    -> W-07, Appendix A, B, 5: Family Cordylidae (girdle-tailed lizards) native range outside tropical/subtropical
+Lizard Paralaudakia caucasia Caucasian agama Armenian agama
+    -> W-07, Appendix A, B, 1: Family Agamidae (chisel-teeth lizards) native range outside tropical/subtropical
+Lizard Phelsuma madagascariensis madagascariensis Madagascar day gecko Giant day gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Phrynocephalus mystaceus Toad-headed agama Secret toadhead agama
+    -> W-07, Appendix A, B, 1: Family Agamidae (chisel-teeth lizards) native range outside tropical/subtropical
+Lizard Pogona vitticeps Bearded dragon Central bearded dragon, Inland bearded dragon
+    -> W-07, Appendix A, B, 1: Family Agamidae (chisel-teeth lizards) native to tropical/subtropical only
+Lizard Pseudopus apodus European legless lizard Sheltopusik, Scheltopusik, Sheltopusick, Scheltopusick, Sheltopusic, Scheltopusi, Pallas's glass lizard, European glass lizard
+    -> W-07, Appendix A, B, 3: Family Anguidae (glass and alligator lizards) native range outside tropical/subtropical
+Lizard Rhacodactylus auriculatus Gargoyle Gecko Knob-headed giant gecko, New Caledonia bumpy gecko, New Caledonian bumpy gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Rhacodactylus leachianus New Caledonian giant gecko Leach's giant gecko, Leachianus gecko, Leachie
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Salvator merianae Black and white tegu Argentine black and white tegu, Argentine giant tegu, Blue tegu, Huge tegu
+    -> W-07, Appendix A, B, 17: Family Teiidae (whiptail) native to tropical/subtropical only
+Lizard Salvator rufescens Red tegu
+    -> W-07, Appendix A, B, 17: Family Teiidae (whiptail) native to tropical/subtropical only
+Lizard Sauromalus ater Common chuckwalla Northern chuckwalla
+    -> W-07, Appendix A, B, 11: Family Iguanidae (iguanas) native range outside tropical/subtropical
+Lizard Sceloperus consobrinus (wild-caught in Colorado) Prairie lizard
+    -> W-07, Appendix C, G: Prairie lizard (Sceloperus consobrinus). CPW Resident Herpetofauna Collection/Possession license required.
+Lizard Sceloperus consobrinus Prairie lizard
+    -> W-07, Appendix A, B, 14: Family Phrynosomatidae (earless, spiny, and horned lizards) native range outside tropical/subtropical
+Lizard Sceloporus graciosus (wild-caught in Colorado) Common sagebrush lizard
+    -> W-07, Appendix C, D: Common sagebrush lizard (Sceloporus graciosus). CPW Resident Herpetofauna Collection/Possession license required.
+Lizard Sceloporus graciosus Common sagebrush lizard
+    -> W-07, Appendix A, B, 14: Family Phrynosomatidae (earless, spiny, and horned lizards) native range outside tropical/subtropical
+Lizard Sceloporus tristichus (wild-caught in Colorado) Plateau fence lizard
+    -> W-07, Appendix C, H: Plateau fence lizard (Sceloporus tristichus). CPW Resident Herpetofauna Collection/Possession license required.
+Lizard Sceloporus tristichus Plateau fence lizard
+    -> W-07, Appendix A, B, 14: Family Phrynosomatidae (earless, spiny, and horned lizards) native range outside tropical/subtropical
+Lizard Tiliqua gigas Indonesian blue-tongued skink
+    -> W-07, Appendix A, B, 16: Family Scincidae (skinks) native to tropical/subtropical only
+Lizard Tiliqua gigas gigas Halmahera blue tongue skink Giant blue-tongued skink
+    -> W-07, Appendix A, B, 16: Family Scincidae (skinks) native to tropical/subtropical only
+Lizard Tiliqua scincoides intermedia Northern blue-tongued skink Northern blue-tongued lizard
+    -> W-07, Appendix A, B, 16: Family Scincidae (skinks) native to tropical/subtropical only
+Lizard Tiliqua spp. Blue-tongued skink Blue tongue skink, Blue-tongued lizards, Blue-tongues, Blueys, Panana
+    -> W-07, Appendix A, B, 16: Family Scincidae (skinks) native to tropical/subtropical only
+Lizard Timon lepidus Jeweled lacerta Ocellated lizard, Jeweled lizard
+    -> W-07, Appendix A, B, 13: Family Lanthanotidae (earless monitor) native range outside tropical/subtropical
+Lizard Tribolonotus gracilis Red eyed crocodile skink Red-eyed crocodile skink, New Guinea crocodile skink
+    -> W-07, Appendix A, B, 16: Family Scincidae (skinks) native to tropical/subtropical only
+Lizard Trioceros jacksonii Jackson's chameleon Jackson's horned chameleon, Three-horned chameleon, Kikuyu three-horned chameleon
+    -> W-07, Appendix A, B, 4: Family Chamaeleonidae (chameleons) native to tropical/subtropical only
+Lizard Trioceros melleri Meller's chameleon Giant one-horned chameleon
+    -> W-07, Appendix A, B, 4: Family Chamaeleonidae (chameleons) native to tropical/subtropical only
+Lizard Trioceros quadricornis Four horned chameleon Four-horned chameleon
+    -> W-07, Appendix A, B, 4: Family Chamaeleonidae (chameleons) native to tropical/subtropical only
+Lizard Tupinambis teguixin Gold tegu Common tegu, Black tegu, Colombian black and white tegu, Tiger lizard
+    -> W-07, Appendix A, B, 17: Family Teiidae (whiptail) native to tropical/subtropical only
+Lizard Underwoodisaurus milii Australian barking gecko Thick-tailed gecko, Barking gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Uromastyx benti Rainbow uromastyx Bent's mastigure, Yemeni spiny-tailed lizard
+    -> W-07, Appendix A, B, 1: Family Agamidae (chisel-teeth lizards) native to tropical/subtropical only
+Lizard Uromastyx geyri Geyr's spiny-tailed lizard Geyr's dabb lizard, Sahara mastigure, Saharan spiny-tailed lizard, Saharan yellow uromastyx, yellow Niger uromastyx, red Niger uromastyx
+    -> W-07, Appendix A, B, 1: Family Agamidae (chisel-teeth lizards) native to tropical/subtropical only
+Lizard Uroplatus phantasticus Satanic leaf-tailed gecko Eyelash leaf-tailed gecko, Phantastic leaf-tailed gecko
+    -> W-07, Appendix A, E, 6: Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)
+Lizard Urosaurus ornatus (wild-caught in Colorado) Ornate tree lizard
+    -> W-07, Appendix C, E: Ornate tree lizard (Urosaurus ornatus). CPW Resident Herpetofauna Collection/Possession license required.
+Lizard Urosaurus ornatus Ornate tree lizard
+    -> W-07, Appendix A, D, 9: Family Phrynomeridae (snake-necked frogs) native range outside tropic/subtropic
+Lizard Uta stansburiana (wild-caught in Colorado) Common side-blotched lizard
+    -> W-07, Appendix C, F: Common side-blotched lizard (Uta stansburiana). CPW Resident Herpetofauna Collection/Possession license required.
+Lizard Uta stansburiana Common side-blotched lizard
+    -> W-07, Appendix A, D, 9: Family Phrynomeridae (snake-necked frogs) native range outside tropic/subtropic
+Lizard Varanus albigularis microstictus Black-throated monitor Black throat monitor
+    -> W-07, Appendix A, B, 19: Family Varanidae (monitor lizard) native to tropical/subtropical only
+Lizard Varanus exanthematicus Savanna monitor Bosc's monitor
+    -> W-07, Appendix A, B, 19: Family Varanidae (monitor lizard) native to tropical/subtropical only
+Lizard Varanus macraei Blue-spotted tree monitor Blue tree montior
+    -> W-07, Appendix A, B, 19: Family Varanidae (monitor lizard) native to tropical/subtropical only
+Lizard Varanus niloticus Nile monitor African small-grain lizard, African small-grain iguana, Guana, Leguan, Likkewaan, Water leguaan, River leguaan
+    -> W-07, Appendix A, B, 19: Family Varanidae (monitor lizard) native to tropical/subtropical only
+Lizard Varanus salvadorii Crocodile monitor Papuan monitor, Salvadori's monitor
+    -> W-07, Appendix A, B, 19: Family Varanidae (monitor lizard) native to tropical/subtropical only
+Lizard Varanus salvator Asian water monitor Water monitor, Black dragon water monitor
+    -> W-07, Appendix A, B, 19: Family Varanidae (monitor lizard) native to tropical/subtropical only
+Lizard Xenagama taylori Shield-tailed agama Dwarf shield-tailed agama, Taylor's strange agama, Turnip- tailed agama
+    -> W-07, Appendix A, B, 1: Family Agamidae (chisel-teeth lizards) native to tropical/subtropical only Page 6 of 11 End: Lizards - continued from Page 3 Newt & Salamander Last Updated Species Type Scientific Name Common Name Other Common Names Regulation:
+
+---------- Turtle (33 rows) ----------
+Turtle & Tortoise Apalone spinifera Spiny softshell turtle
+    -> W-07, Appendix A, C, 5: Family Trionychidae (soft-shelled turtles) native range is outside tropical/subtropical
+Turtle & Tortoise Batagur borneoensis Painted terrapin Painted river terrapin, Painted batagur, Saw-jawed turtle
+    -> W-07, Appendix A, C: Family Geoemydidae not approved in regulation
+Turtle & Tortoise Carettochelys insculpta Pig-nosed turtle Fly River turtle, Pitted-shelled turtle, Warrajan
+    -> W-07, Appendix A, C, 1: Family Carettochelyidae (New Guinea softshell turtles) native to tropical/subtropical only
+Turtle & Tortoise Centrochelys sulcata African spurred tortoise Sulcata tortoise
+    -> W-07, Appendix A, C, 4: Family Testudinidae (tortoises) native to tropical/subtropical only
+Turtle & Tortoise Chelonoidis carbonarius Red-footed tortoise Red foot tortoise
+    -> W-07, Appendix A, C, 4: Family Testudinidae (tortoises) native to tropical/subtropical only
+Turtle & Tortoise Chelus fimbriata Mata mata turtle Mata-mata turtle, Matamata turtle, Amazon mata mata turtle
+    -> W-07, Appendix A, C: Family Chelidae not approved in regulation
+Turtle & Tortoise Chelydra serpentina (wild caught in Colorado) Common snapping turtle
+    -> W-07: possession on or before May 01, 2026 allowed with legacy reporting by July 30, 2026. No new wild capture allowed.
+Turtle & Tortoise Chelydra serpentina Common snapping turtle
+    -> W-07, Appendix A, C: Family Chelydridae not approved in regulation
+Turtle & Tortoise Chrysemys picta (wild caught in Colorado) Painted turtle
+    -> W-07: possession on or before May 01, 2026 allowed with legacy reporting by July 30, 2026. No new wild capture allowed.
+Turtle & Tortoise Chrysemys picta Painted turtle
+    -> W-07, Appendix A, C: Family Emydidae not approved in regulation
+Turtle & Tortoise Cyclemys dentata Asian leaf turtle
+    -> W-07, Appendix A, C: Family Geoemydidae not approved in regulation
+Turtle & Tortoise Emydura macquarii krefftii Krefft's turtle Krefft's sideneck turtle
+    -> W-07, Appendix A, C: Family Chelidae not approved in regulation
+Turtle & Tortoise Emydura subglobosa Pink-bellied side-necked turtle Red-bellied short-necked turtle, Jardine river turtle
+    -> W-07, Appendix A, C: Family Chelidae not approved in regulation
+Turtle & Tortoise Graptemys pseudogeographica kohni Mississippi map turtle Kohn's map turtle
+    -> W-07, Appendix A, C: Family Emydidae not approved in regulation
+Turtle & Tortoise Macrochelys temminckii Alligator snapping turtle
+    -> W-07, Appendix A, C: Family Chelydridae not approved in regulation
+Turtle & Tortoise Malaclemys terrapin Diamondback terrapin Terrapin
+    -> W-07, Appendix A, C: Family Emydidae not approved in regulation
+Turtle & Tortoise Mauremys reevesii Chinese pond turtle Chinese three-keeled pond turtle, Reeves' turtle
+    -> W-07, Appendix A, C: Family Geoemydidae not approved in regulation
+Turtle & Tortoise Pelomedusa subrufa African side-necked turtle African helmeted turtle, Marsh terrapin, Crocodile turtle
+    -> W-07, Appendix A, C: Family Pelomedusidae not approved in regulation
+Turtle & Tortoise Pelusios castaneus West African mud turtle West African side-necked turtle, Swamp terrapin
+    -> W-07, Appendix A, C: Family Pelomedusidae not approved in regulation
+Turtle & Tortoise Pelusios nanus African dwarf mud turtle Congo dwarf mud turtle
+    -> W-07, Appendix A, C: Family Pelomedusidae not approved in regulation
+Turtle & Tortoise Phrynops hilarii Argentine Side-necked turtle Hilaire’s side-necked turtle, Hilaire's toadhead turtle
+    -> W-07, Appendix A, C: Family Chelidae not approved in regulation
+Turtle & Tortoise Sternotherus odoratus Stinkpot turtle Common musk turtle, Eastern musk turtle
+    -> W-07, Appendix A, C, 3: Family Kinosternidae (mud and musk turtles) native range is outside tropical/subtropical
+Turtle & Tortoise Stigmochelys pardalis Leopard Tortoise
+    -> W-07, Appendix A, C, 3: Family Testudinidae (tortoises) native range is outside tropical/subtropical
+Turtle & Tortoise Terrapene carolina Common box turtle
+    -> W-07, Appendix A, C: Family Emydidae not approved in regulation
+Turtle & Tortoise Terrapene carolina carolina Eastern box turtle
+    -> W-07, Appendix A, C: Family Emydidae not approved in regulation
+Turtle & Tortoise Terrapene ornata (wild-caught in Colorado) Ornate box turtle
+    -> W-07: possession on or before May 01, 2026 allowed with legacy reporting by July 30, 2026. No new wild capture allowed.
+Turtle & Tortoise Terrapene ornata Ornate box turtle
+    -> W-07, Appendix A, C: Family Emydidae not approved in regulation
+Turtle & Tortoise Terrapene triunguis Three-toed box turtle
+    -> W-07, Appendix A, C: Family Emydidae not approved in regulation
+Turtle & Tortoise Testudo graeca Greek tortoise Moorish tortoise, Spur-thighed tortoise
+    -> W-07, Appendix A, C, 3: Family Testudinidae (tortoises) native range is outside tropical/subtropical
+Turtle & Tortoise Testudo hermanni Hermann's tortoise
+    -> W-07, Appendix A, C, 3: Family Testudinidae (tortoises) native range is outside tropical/subtropical
+Turtle & Tortoise Testudo horsfieldii Russian tortoise Central Asian tortoise, Afghan tortoise, Steppe tortoise, Horsfield's tortoise, Four-clawed tortoise, Four-toed tortoise, Russian steppe tortoise, Soviet tortoise
+    -> W-07, Appendix A, C, 3: Family Testudinidae (tortoises) native range is outside tropical/subtropical
+Turtle & Tortoise Trachemys scripta elegans Red-eared slider
+    -> INVASIVE SPECIES: See regulation W-07, #708. No import, no sale.
+Turtle & Tortoise Trachemys scripta scripta Yellow-bellied slider
+    -> W-07, Appendix A, C: Family Emydidae not approved in regulation
+
+---------- Frogs (58 rows) ----------
+Frogs & Toads Agalychnis callidryas Red-eyed tree frog Red eye tree frog, Red-eyed leaf frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Anaxyrus woodhousii (wild-caught in Colorado) Woodhouse's Toad
+    -> W-07, Appendix C, B: Woodhouse’s toad (Anaxyrus woodhousii). CPW Resident Herpetofauna Collection/Possession license required.
+Frogs & Toads Anaxyrus woodhousii Woodhouse's Toad
+    -> W-07, Appendix A, D: Family Bufonidae (true toads), native range outside tropical/subtropical
+Frogs & Toads Boana crepitans Emerald eye tree frog Emerald-eyed tree frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Boana heilprini Los Bracitos tree frog Hispaniolan green treefrog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Bombina orientallis Oriental fire-bellied toad
+    -> W-07, Appendix A, E, 1: Oriental fire-bellied toad (Bombina orientalis)
+Frogs & Toads Breviceps mossambicus Mozambique rain frog Flat-faced frog
+    -> W-07, Appendix A, D: Family Brevicipitidae not approved in regulation
+Frogs & Toads Bufotes viridis European green toad
+    -> W-07, Appendix A, D: Family Bufonidae, native range outside tropical/subtropical
+Frogs & Toads Ceratophrys aurita Brazilian horned frog
+    -> W-07, Appendix A, D: Family Ceratobatrachidae not approved in regulation
+Frogs & Toads Ceratophrys cornuta Surinam horned Frog Amazonian horned frog
+    -> W-07, Appendix A, D: Family Ceratobatrachidae not approved in regulation
+Frogs & Toads Ceratophrys cranwelli Cranwell's horned frog Chacoan horned frog, Pac-man frog
+    -> W-07, Appendix A, D: Family Ceratobatrachidae not approved in regulation
+Frogs & Toads Ceratophrys ornata Argentine horned frog Argentine wide-mouthed frog, Ornate horned frog, Ornate horned toad, Ornate pacman frog, Pacman frog
+    -> W-07, Appendix A, D: Family Ceratobatrachidae not approved in regulation
+Frogs & Toads Cornufer guentheri Solomon Island leaf frog Solomon Island eyelash frog, Gunther's triangle frog
+    -> W-07, Appendix A, D: Family Ceratobatrachidae not approved in regulation
+Frogs & Toads Dendrobates auratus Green and black poison dart frog Mint dart frog, Mint poison frog, Green poison frog, Golden poison arrow frog, Green poison arrow frog, Green and golden poison arrow frog, Gold arrow-poison frog, Green and black poison frog, Green and black poison arrow frog
+    -> W-07, Appendix A, D: Family Dendrobatidae (poison dart frogs) native to tropical/subtropical only
+Frogs & Toads Dendrobates leucomelas Bumblebee dart frog Bumblebee poison dart frog, Yellow-banded poison dart frog, Yellow-headed poison dart frog
+    -> W-07, Appendix A, D: Family Dendrobatidae (poison dart frogs) native to tropical/subtropical only
+Frogs & Toads Dendrobates tinctorius Dyeing dart frog Dyeing poison dart frog, Cobalt poison frog, Tinc
+    -> W-07, Appendix A, D: Family Dendrobatidae (poison dart frogs) native to tropical/subtropical only
+Frogs & Toads Dendrobates tinctorius azureus Blue poison dart frog Blue poison arrow frog, Blue dart frog
+    -> W-07, Appendix A, D: Family Dendrobatidae (poison dart frogs) native to tropical/subtropical only
+Frogs & Toads Dendropsophus leucophyllatus Clown treefrog Beireis' treefrog, White-leaf frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Dendropsophus marmoratus Marbled tree frog Marmorea frog, South American bird poop frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Dermatonotus muelleri Termite frog Muller's termite frog
+    -> W-07, Appendix A, D: Family Dendrobatidae (poison dart frogs) native to tropical/subtropical only
+Frogs & Toads Dryophytes cinereus American green tree frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native range outside tropical/subtropical
+Frogs & Toads Dryophytes gratiosus Barking tree frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Dryophytes squirellus Squirrel tree frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native range outside tropical/subtropical
+Frogs & Toads Dryophytes versicolor Gray treefrog Eastern gray treefrog, Northern gray treefrog, Common gray treefrog, Tetraploid gray treefrog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Duttaphrynus melanostictus Asian spiny toad Asian common toad, Asian black-spined toad, Asian toad, Black-spectacled toad, Common Sunda toad, Javanese toad
+    -> W-07, Appendix A, D: Family Bufonidae (true toads) native to tropical/subtropical only
+Frogs & Toads Dyscophus guineti Tomato frog False tomato frog, Sambava tomato frog
+    -> W-07, Appendix A, D: Family Microhylidae (narrow-mouthed toads) native to tropical/subtropical only
+Frogs & Toads Hymenochirus boettgeri African Dwarf Frog Dwarf Clawed Frog, Zaire dwarf clawed frog, Congo dwarf clawed frog
+    -> W-07, Appendix A, D: Family Pipidae (clawed frogs, Surinam toads) native to tropical/subtropical only
+Frogs & Toads Incilius alvarius Colorado river toad Sonoran Desert toad
+    -> W-07, Appendix A, D: Family Bufonidae (true toads) native range outside tropical/subtropical
+Frogs & Toads Kaloula pulchra Chubby Frog Banded bullfrog, Asian painted frog, Digging frog, Malaysian bullfrog, Common Asian frog, Painted balloon frog
+    -> W-07, Appendix A, D: Family Microhylidae (narrow-mouthed toads) native to tropical/subtropical only
+Frogs & Toads Lepidobatrachus laevis Budgett's frog Hippo frog, Freddy Krueger frog, Escuerzo de agua
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Leptopelis vermiculatus Big eye tree frog Peacock tree frog, Amani forest treefrog, Vermiculated tree frog, Big-eyed tree frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Lithobates catesbeianus American bullfrog Bullfrog
+    -> INVASIVE SPECIES: See regulation W-07, #708
+Frogs & Toads Lithobates pipiens Northern leopard frog
+    -> W-07, Appendix A, D: Family Bufonidae (true toads) native range outside tropical/subtropical
+Frogs & Toads Melanophryniscus stelzneri Bumble bee toad Redbelly toad,Yellow and black walking toad
+    -> W-07, Appendix A, D: Family Bufonidae (true toads) native to tropical/subtropical only
+Frogs & Toads Oophaga pumilio Strawberry poison dart frog Strawberry poison frog, Blue jeans poison frog
+    -> W-07, Appendix A, D: Family Dendrobatidae (poison dart frogs) native to tropical/subtropical only
+Frogs & Toads Osteopilus septentrionalis Cuban tree frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Osteopilus vastus Haitian giant tree frog Hispaniolan giant tree frog, Hispaniola tree frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Pelobatrachus nasutus Malayan leaf frog Malayan horned frog, Long-nosed horned frog
+    -> W-07, Appendix A, D: Family Microhylidae (narrow-mouthed toads) native to tropical/subtropical only
+Frogs & Toads Pelodryas caerulea Australian green tree frog Australian white tree frog, green tree frog, White's tree frog, Dumpy tree frog
+    -> W-07, Appendix A, D: Family Pelodytidae (spadefoot toads) native to tropical/subtropical only
+Frogs & Toads Phrynomantis bifasciatus Banded rubber frog Rubber banded frog
+    -> W-07, Appendix A, D: Family Microhylidae (narrow-mouthed toads) native to tropical/subtropical only
+Frogs & Toads Phyllomedusa bicolor Waxy-monkey treefrog Giant leaf frog, Bicolor tree-frog, Giant monkey frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Phyllomedusa sauvagii Waxy monkey tree frog Waxy monkey leaf frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Pithecopus hypochondrialis Tiger leg tree frog Northern orange-legged leaf frog, Tiger-legged monkey frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only
+Frogs & Toads Polypedates leucomystax Golden tree frog Common tree frog, Four-lined tree frog, Striped tree frog
+    -> W-07, Appendix A, D: Family Rhacophoridae (flying frogs) native to tropical/subtropical only
+Frogs & Toads Polypedates otilophus Borneo Eared tree frog Borneo eared frog, File-eared tree frog, Bony-headed flying frog
+    -> W-07, Appendix A, D: Family Rhacophoridae (flying frogs) native to tropical/subtropical only
+Frogs & Toads Pseudacris crucifer Spring peeper
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native range outside tropical/subtropical
+Frogs & Toads Pseudacris maculata (wild-caught in Colorado) Boreal chorus frog
+    -> W-07, Appendix C, C: Boreal chorus frog (Pseudacris maculata). CPW Resident Herpetofauna Collection/Possession license required.
+Frogs & Toads Pseudacris maculata Boreal chorus frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native range outside tropical/subtropical
+Frogs & Toads Pseudacris regilla Pacific tree frog Pacific chorus frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native range outside tropical/subtropical
+Frogs & Toads Pseudacris sierra Sierran tree frog Sierran chorus frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native range outside tropical/subtropical
+Frogs & Toads Pyxicephalus adspersus African Bullfrog Giant bullfrog, South African burrowing frog
+    -> W-07, Appendix A, D: Family Pyxicephalidae not approved in regulation
+Frogs & Toads Rhinella marina Cane toad South American giant marine toad, Giant neotropical toad, Marine toad
+    -> W-07, Appendix A, D: Family Bufonidae (true toads), except the Rhinella marina (cane toad)
+Frogs & Toads Sandyrana infrafrenata White-lipped tree frog White lipped tree frog, New Guinea treefrog, Giant tree frog, Australian giant treefrog
+    -> W-07, Appendix A, D: Family Pelodytidae (spadefoot toads) native to tropical/subtropical only
+Frogs & Toads Sclerophrys regularis African common toad Egyptian toad, Square-marked toad, African toad, African bouncing toad, Reuss's toad
+    -> W-07, Appendix A, D: Family Bufonidae (true toads) native range outside tropical/subtropical
+Frogs & Toads Spea bombifrons (wild-caught in Colorado) Plains spadefoot toad
+    -> W-07, Appendix C, A: Plains spadefoot (Spea bombifrons). CPW Resident Herpetofauna Collection/Possession license required.
+Frogs & Toads Spea bombifrons Plains spadefoot toad
+    -> W-07, Appendix A, D: Family Scaphiopodidae not approved in regulation
+Frogs & Toads Theloderma corticale Vietnamese mossy frog Mossy frog, Tonkin bug-eyed frog, Moss bug-eyed frog, Kwangsi warty treefrog
+    -> W-07, Appendix A, D: Family Rhacophoridae (flying frogs) native to tropical/subtropical only
+Frogs & Toads Trachycephalus resinifictrix Amazon milk frog Mission golden-eyed tree frog, Blue milk frog
+    -> W-07, Appendix A, D: Family Hylidae (tree frogs) native to tropical/subtropical only Page 3 of 11 End: Frogs & Toads - continued from Page 1 Start: Lizards - continued through Page 6 Last Updated Species Type Scientific Name Common Name Other Common Names Regulation:
+
+---------- Newt (6 rows) ----------
+Newt & Salamander Ambystoma maculatum Spotted salamander Yellow-spotted salamander
+    -> W-07, Appendix A, E, 3: Any species from the order Urodela (salamanders and newts) except tiger salamanders (Ambystoma tigrinum/mavortium)
+Newt & Salamander Ambystoma mavortium (any other acquistion not allowed) Western tiger salamander Barred tiger salamander
+    -> W-07, Appendix A, E, 3: Any species from the order Urodela (salamanders and newts) except tiger salamanders (Ambystoma tigrinum/mavortium)
+Newt & Salamander Ambystoma mavortium (legacy possession of wild-caught in Colorado) Western tiger salamander Barred tiger salamander
+    -> W-07: possession on or before May 01, 2026 allowed with legacy reporting by July 30, 2026. No new wild capture allowed, unless licensed per W-07, Appendix C.
+Newt & Salamander Ambystoma mavortium (wild-caught in Colorado) Western tiger salamander Barred tiger salamander
+    -> W-07, Appendix C, J: Western tiger salamander (Ambystoma mavortium). CPW Resident. CPW Resident Herpetofauna Collection/Possession license required. Herpetofauna Collection/Possession license required.
+Newt & Salamander Ambystoma melanostictum Blotched Tiger Salamander
+    -> W-07, Appendix A, E, 3: Any species from the order Urodela (salamanders and newts) except tiger salamanders (Ambystoma tigrinum/mavortium)
+Newt & Salamander Ambystoma tigrinum Tiger salamander Eastern tiger salamander
+    -> W-07, Appendix A, E, 3: Any species from the order Urodela (salamanders and newts) except tiger salamanders (Ambystoma tigrinum/mavortium)
+
+---------- Crocodilia (5 rows) ----------
+Crocodilia Alligator mississippiensis American Alligator Common alligator, gator
+    -> W-07: Not an authorized species for private possession. CPW license required.
+Crocodilia Crocodylus moreletii Morelet's crocodile Mexican crocodile, Belize crocodile
+    -> W-07: Not an authorized species for private possession. CPW license required.
+Crocodilia Crocodylus nilotcicus Nile crocodile African crocodile, Ethiopian crocodile, Common crocodile
+    -> W-07: Not an authorized species for private possession. CPW license required.
+Crocodilia Crocodylus siamensis Siamese crocodile Siamese freshwater crocodile, Singapore small-grain crocodile, Soft-belly crocodile
+    -> W-07: Not an authorized species for private possession. CPW license required.
+Crocodilia Paleosuchus palpebrosus Cuvier's dwarf caiman Musky caiman, Dwarf caiman, Cuvier's caiman, Smooth- fronted caiman, Wedge-head caiman
+    -> W-07, Appendix A, E, 5: Any species from the subfamily Caimaninae (caimans) Start: Frogs & Toads - continued through Page 3 Last Updated Species Type Scientific Name Common Name Other Common Names Regulation:

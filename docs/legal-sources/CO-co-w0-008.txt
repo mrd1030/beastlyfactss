@@ -1,0 +1,140 @@
+# Colorado 2 CCR 406-0, Chapter W-0, § 008(B) - the prohibited species list
+
+sourceId: co-w0-008
+jurisdiction: CO
+url: https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12599&fileName=2+CCR+406-0
+fetched: 2026-09-05
+fetch notes: same CCR mechanics as CO-co-w7.txt. The full chapter is 166 pages and mostly
+  fishing and aquatic rules; only §§ 007-013 bear on possession, and § 008(B) is the list.
+  Excerpted here rather than cached whole.
+
+Nineteen entries. Two matter for pet species and both are easy to miss:
+  11.  Monk parakeet.        <- overrides "All Psitticine birds" in W-11 #1103(B)
+  18.  Prairie dogs (Cynomys spp.)
+The grandfather clause in the opening paragraph of § 008(B) reaches ONLY subsections 1 through
+8, so entries 9 to 19 have no existing-owner route at all. The prairie dog proviso preserves
+scientific collection, relocation and rehabilitation permits, which are institutional, not pet
+routes.
+
+Also here: 9. hedgehogs, which bars Erinaceus, Hemiechinus and Paraechinus but exempts
+Erinaceus albiventris and Atelerix albiventris by name, so the pet African pygmy hedgehog is
+cleared and every other hedgehog is prohibited. 12. and 13. prohibit African tree/sun squirrels
+(Heliosciurus) and rope squirrels (Funisciurus) - NOT Glaucomys, so those lines do not decide
+the flying squirrel. 6. raccoon, 8. striped skunks, 19. non-human primates.
+
+#008 – POSSESSION OF TERRESTRIAL WILDLIFE 
+A. No person shall, at any time, have in possession or under control any wildlife 
+caught, taken or killed outside of this state which were caught, taken or killed at a 
+time, in a manner, or for a purpose, or in any other respect which is prohibited by 
+the laws of the state, territory or country in which the same were caught, taken or 
+killed; or which were shipped out of said state, territory or country in violation of 
+the laws thereof. 
+B. The following terrestrial wildlife species or viable gametes (eggs and sperm) are 
+hereby determined to be detrimental to existing wildlife and their habitat in 
+Colorado, and ex¬cept as authorized in writing by the Division after consideration 
+of the criteria in Commission Regulation #1102(A)(4), their possession is 
+prohibited. Persons who have proof of possession of those species listed in 
+subsections 1 through 8 of this section prior to September 1, 1990, may possess 
+the following species for the life of the animal(s). These live animals may not be 
+transported, imported, sold, bartered or traded within Colorado. They may be 
+transported out of state according to state and federal regulations. All animals 
+held under the grandfather clause must be tagged, recorded, and reported as per 
+Commission Regulations #1106, #1109, and #1110. 
+1. All species and hybrids of wild species in the subfamily Caprinae not 
+native to North America. (Exotic sheep and goats including but not limited 
+to: mouflon, barbary sheep, tahr, chamois.) 
+2. The following genera in the subfamily Hippotraginae. Oryx spp, Addax 
+spp. 
+3. The following genera in the subfamily Alcelaphinae. Wildebeest 
+(Connochaetes), Hartebeest (Alcelaphus), Damaliscus spp, Blesbok spp. 
+
+=== PAGE 30 ===
+CODE OF COLORADO REGULATIONS 2 CCR 406-0 
+Colorado Parks and Wildlife 
+ 30 
+4. All wild species and hybrids of wild species in the family Suidae (European 
+boar, Eurasian boar, Russian boar, feral hog) and the family Tayassuidae 
+(Javelina and peccary). 
+5. All species and hybrids of wild species in the family Cervidae not 
+designated as alternative livestock by §35-41.5-102 C.R.S. or as domestic 
+or unregulated wildlife by Chapter W-11 of these regulations. Only 
+commercial parks licensed for, and in possession of, authorized species 
+on or prior to March 2, 2014 will be allowed to continue possession of 
+those species, including acquisition of new individual animals of those 
+species. 
+6. Raccoon. 
+7. Nonnative species of the subfamily Tetraoninae, including but not limited 
+to red grouse, black grouse and capercaillae. 
+8. Striped skunks. 
+9. Hedgehogs - Erinaceus spp., (except Erinaceus albiventris or Atelerix 
+albiventris); Hemiechinus spp., and Paraechinus spp. 
+10. Brush-tailed opposums - Trichosurus vulpecula, Trichosurus arnhemensis, 
+and Trichosurus caninus. 
+11. Monk parakeet. 
+12. Tree or sun squirrels (Heliosciurus spp.). 
+13. Rope squirrels (Funisciurus spp.). 
+14. Dormices (Graphiurus spp.) 
+15. Gambian giant pouched rats (Cricetomys spp.) 
+16. Brush-tailed porcupines (Atherurus spp.) 
+17. Striped mice (Hybomys spp.) 
+18. Prairie dogs (Cynomys spp.) provided however that native prairie dogs 
+may continue to be possessed pursuant to licenses or permits granted by 
+the Division for scientific collection, relocation or rehabilitation purposes. 
+19. All species and hybrids of non-human primates, except as authorized by 
+§35-80-108 C.R.S. 
+C. If any diseased wildlife, which would have a significant detrimental effect on 
+Colorado's wildlife resource as determined by the Director, are found such 
+wildlife may be destroyed or held in quarantine at the owner's expense until 
+
+=== PAGE 31 ===
+CODE OF COLORADO REGULATIONS 2 CCR 406-0 
+Colorado Parks and Wildlife 
+ 31 
+disposition is determined. Possession, transfer or any other act relative to such 
+wildlife contrary to the Director's determination of disposition is prohibited. 
+1. Any occurrence of CWD in a commercial wildlife park, including the 
+detection of CWD in either a wild or private animal within the exterior 
+boundaries of the park or facility requires the immediate quarantine of the 
+facility. The quarantine shall remain in place and no re-stocking of cervids 
+including, but not limited to, stocking for the purposes of the operation of a 
+terminal facility, shall occur without written agreement of the Division and 
+the Dept. of Agriculture. In addition to required testing of all mortalities, the 
+herd shall be closely monitored and all clinically suspect animals shall also 
+be destroyed and tested. Any deer or elk brought onto a facility in violation 
+of quarantine or re-stocking plan must be immediately destroyed and 
+tested for CWD. In all such cases, there shall be no obligation for the state 
+to compensate the owner of the animals. 
+a. De-population upon a positive diagnosis of CWD shall be required if 
+the Division and the Dept. of Agriculture agree that the herd 
+presents a substantial risk, taking into consideration the size and 
+location of the facility, the presumed length of exposure, the 
+effectiveness of the fence, prevalence in surrounding free-ranging 
+cervid populations, and other relevant factors. 
+b. If the Division and Dept. of Agriculture agree that the herd does not 
+present a substantial risk, then a herd plan shall be developed and 
+approved by the Division and the Dept. of Agriculture to replace a 
+quarantine. 
+2. The Director shall determine when destruction of wildlife, a quarantine or 
+disinfection is required at any federal, state, private or commercial fish or 
+wildlife production facility. If the Director determines that either destruction, 
+quarantine or disinfection is required, he shall issue a written order to the 
+owner or operator of the facility setting forth the steps for destruction 
+and/or disinfection. Required disinfection of holding facilities will be 
+completed at the owner's expense. If the owner disagrees with the 
+Division's determination he shall have the right to appeal the decision to 
+the Wildlife Commission provided notice of such appeal is given to the 
+Director within twenty four (24) hours of receipt of the order. 
+D. Any species on the prohibited list in #008(B) that escapes the owners or 
+guardians control will be deemed to be detrimental to native wildlife and can be 
+removed from the wild by the Division as per Commission Regulation #1113(A). 
+E. All big game hunting parks as defined in Commission Regulation #1104(A)(1), 
+shall develop and submit a plan to accomplish bovine tuberculosis testing and/or 
+slaughter surveillance for captive wild ungulates beginning January 1, 1993. 
+
+=== PAGE 32 ===
+CODE OF COLORADO REGULATIONS 2 CCR 406-0 
+Colorado Parks and Wildlife 
+ 32 
+Plans must be submitted to the Division for approval by January 1, 1993, and 
+must be approved by the Director and State Veterinarian prior to implementation. 
+#009 - RELEASE OF TERRESTRIAL WILDLIFE 

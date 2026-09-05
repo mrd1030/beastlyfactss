@@ -32,6 +32,10 @@ about this species", not to claim a new verification date.
 | `NV-nv-nac-503.txt` | NAC chapter 503, Nevada's prohibited list, no-permit list and classifications |
 | `AZ-az-r12-4-406.txt` | Arizona's restricted live wildlife lists, with the 2013 PDF trap flagged |
 | `DE-de-903.txt` | Delaware's exempt list and permit scheme, with the phantom prohibited list flagged |
+| `CO-co-w7.txt` | Colorado's new herpetofauna chapter, effective 1 May 2026. Read the header before anything else about a Colorado reptile |
+| `CO-co-w11.txt` | Colorado's domestic animal and unregulated wildlife lists, current version. No reptiles in it any more |
+| `CO-co-w0-008.txt` | Colorado's prohibited species list, § 008(B), excerpted from the 166-page Chapter W-0 |
+| `CO-co-cpw-species-list.txt` | CPW's own species-by-species determinations, 303 rows. Start here for any Colorado animal |
 
 ## Reading the awkward ones
 
@@ -46,6 +50,12 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   as *Geochelone*, the crested gecko would be *Rhacodactylus*, and the bearded dragon is
   printed as *vittaceps* for *vitticeps*. Search the genus and the synonym, not just the
   current name.
+- **`CO-co-cpw-species-list.txt`** is parsed into two-line records, the species then its
+  determination, so grep with `-A1`:
+  `grep -A1 -i 'testudo horsfieldii' docs/legal-sources/CO-co-cpw-species-list.txt`
+  It is the fastest way to answer a Colorado question and usually the only one that settles
+  it, because Chapter W-7's allow-list turns on whether a species is native only to the
+  tropics and CPW has already made that call species by species.
 
 ## Hosts that block this container
 
@@ -62,6 +72,8 @@ not on the sites, so a person with a browser can open all of them.
 | `apps.azsos.gov` | Cloudflare challenge | Use Cornell LII or animallaw.info, and cross-check two reproductions |
 | `regulations.delaware.gov` | Angular app, serves an empty shell to every fetcher | Use `delcode.delaware.gov` for statutes and a reproduction for regulations |
 | `law.justia.com`, `invasive.org` | 403 | Find another reproduction |
+| `www.sos.state.co.us` | Works with curl, but PDF links are not in the HTML | Scrape `OpenRuleWindow('<id>'` off the rule page, then fetch `/CCR/GenerateRulePdf.do?ruleVersionId=<id>` |
+| `drive.google.com` | CPW publishes its species lists here | Fetch `https://drive.google.com/uc?export=download&id=<id>`; the ids are in the accordion markup, not in any `.pdf` link |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
 
 When the official host is unreachable, cite the official URL anyway, verify the wording
