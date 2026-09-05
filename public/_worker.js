@@ -707,7 +707,15 @@ async function handleCarePackageCheckout(request, env) {
     // Checkout collects the email itself. It is the only identifier the buyer
     // and their later library sign-in have in common, so it is what the
     // purchase row is keyed on.
-    customer_creation: 'if_required',
+    //
+    // 'always', not 'if_required'. With if_required a card payment creates no
+    // Customer, the address stays in customer_details on the session, and the
+    // charge is left with receipt_email null - so Stripe has nobody to send a
+    // receipt to and never sends one, however the account's email settings are
+    // configured. Creating the Customer is what gives the payment an address
+    // to receipt, and it also means a refund or a support question later has
+    // a real record to work from.
+    customer_creation: 'always',
     'metadata[package_id]': packageId,
     'metadata[edition]': pkg.edition,
     'payment_intent_data[metadata][package_id]': packageId,

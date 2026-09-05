@@ -132,7 +132,7 @@ export default function CarePackageThanks() {
             <h1 className="font-display font-bold text-2xl text-foreground mb-2">Thank you</h1>
             <p className="text-sm text-muted-foreground font-body mb-6">
               {purchase?.packageName
-                ? `${purchase.packageName}, edition ${purchase.edition}, is yours. A Stripe receipt is on its way to ${purchase.email}.`
+                ? `${purchase.packageName}, edition ${purchase.edition}, is yours, recorded against ${purchase.email}. Sign in with that address to reach it again later.`
                 : 'Your payment went through. Setting up your download now.'}
             </p>
           </>

@@ -108,7 +108,7 @@ export default function CarePackageLibrary() {
       return;
     }
     setCodeSent(true);
-    setNotice('Check your email. Click the link, or type the code from it below.');
+    setNotice('Check your email and click the sign-in link. If the email also shows a six digit code, you can type it here instead.');
   };
 
   const verifyCode = async (e) => {
@@ -187,7 +187,7 @@ export default function CarePackageLibrary() {
             <Mail className="w-6 h-6 text-secondary mb-3" aria-hidden="true" />
             <h2 className="font-display font-bold text-lg text-foreground mb-1">Sign in with your email</h2>
             <p className="text-sm text-muted-foreground font-body mb-5">
-              Use the address you paid with. We will email you a one time code. No password, and nothing to remember.
+              Use the address you paid with. We will email you a sign-in link. No password, and nothing to remember.
             </p>
 
             <form onSubmit={sendCode} className="flex flex-col sm:flex-row gap-3">
@@ -206,7 +206,7 @@ export default function CarePackageLibrary() {
                 className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-body font-bold text-sm hover:opacity-90 transition-opacity disabled:opacity-60"
               >
                 {working ? <Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> : null}
-                {codeSent ? 'Send again' : 'Email me a code'}
+                {codeSent ? 'Send again' : 'Email me a sign-in link'}
               </button>
             </form>
 

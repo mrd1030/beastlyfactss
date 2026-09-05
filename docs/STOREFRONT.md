@@ -120,12 +120,21 @@ uses for likes and comments.
    Dashboard -> Storage -> care-packages -> Upload does the same thing. The
    script only exists so the path cannot be mistyped, which would silently
    produce a package nobody can download.
-4. **Email sign-in.** The library uses `signInWithOtp`. Out of the box the
-   Supabase "Magic Link" email template sends a link, which works: clicking it
-   returns the buyer to `/care-packages/library/` already signed in. For the six
-   digit code box on that page to work too, add `{{ .Token }}` to that template
-   (Authentication -> Emails -> Magic Link). Both paths are offered, so this is
-   worth doing but is not a blocker.
+4. **Auth URL configuration. This one is a blocker.** Authentication -> URL
+   Configuration:
+
+   - **Site URL:** `https://beastlyfacts.com`
+   - **Redirect URLs:** add `https://beastlyfacts.com/**`
+
+   Supabase only honors an `emailRedirectTo` that matches the allow list. With
+   anything else it silently substitutes the Site URL instead, so a default
+   project sends sign-in links pointing at `http://localhost:3000` and every
+   buyer's link is dead. That is what happened on the first test run.
+5. **Email sign-in.** The library uses `signInWithOtp`. Out of the box the
+   "Magic Link" template sends a link only, which is fine once step 4 is done:
+   clicking it returns the buyer to `/care-packages/library/` already signed in.
+   For the six digit code box on that page to work as well, add `{{ .Token }}`
+   to that template (Authentication -> Emails -> Magic Link). Optional.
 
 ## Cloudflare Pages environment variables
 
@@ -148,6 +157,19 @@ that prefix is compiled into the site bundle by Vite.
 When a package goes live, `STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET` are
 swapped for their live equivalents and a live webhook endpoint is registered.
 Nothing else changes.
+
+### Stripe receipt emails
+
+Checkout is created with `customer_creation: 'always'`. That is deliberate and
+should not be relaxed back to `if_required`: with `if_required` a card payment
+creates no Customer, the buyer's address stays in `customer_details` on the
+session, and the charge is left with `receipt_email` null, so Stripe has nobody
+to send a receipt to no matter how the account is configured. The first test
+purchase failed exactly that way.
+
+Sending the receipt is then a dashboard setting: Stripe Settings -> Business ->
+Customer emails, turn on **Successful payments**. Do this in both test mode and
+live mode; they are separate switches.
 
 ### Not needed: the Permissions-Policy change
 
@@ -208,14 +230,37 @@ select package_id, edition, created_at
   and sitemap derive from the catalog resolves to `/care-packages/hamster/` and
   nothing else.
 
-### What has NOT been run
+### First live test run, 5 September 2026
 
-The end to end purchase has not been exercised. It needs two things this branch
-does not have: the four environment variables above (the Stripe test secret key
-and the Supabase service role key are secrets that were never in the repo), and
-a deployment, since the routes only exist once Cloudflare serves the Worker.
-Branch pushes do not build, so this can only be run after a deploy from `main`
-or from a temporarily enabled preview.
+Deployed to production and exercised with a test card. What passed:
+
+- Product page served 200 with the canonical tag and the `Product` JSON-LD in
+  the static HTML, not only after hydration.
+- Checkout created a real session and Stripe took the payment.
+- The webhook landed and wrote one `purchases` row: `hamster`, edition 2.2,
+  899 cents, `livemode` false, email lower-cased from the `Mrd103089@` the buyer
+  typed at checkout.
+- The thanks page resolved and the download worked, logging one
+  `care_package_downloads` row at `hamster.pdf`, edition 2.2.
+- Checkout refused `bearded-dragon` with a 404, so the `storefront` switch holds.
+- Download refused no credential (401), a forged session id (403) and a forged
+  bearer token (401). The bucket refused both unsigned URL forms.
+- `/feed.xml`, `/articles.xml` and `/subscribed` all still worked, and all nine
+  Gumroad links were intact on the store page.
+
+Three things failed, all fixed since:
+
+- The sign-in link pointed at `http://localhost:3000`. Supabase project config,
+  see step 4 above.
+- No receipt email. `customer_creation` was `if_required`, so the charge had a
+  null `receipt_email`. Fixed in the Worker.
+- The thanks page promised a receipt and the library promised a code, neither of
+  which the system reliably sends. Copy corrected.
+
+### Still not run
+
+Library sign-in and download, which needs step 4 done first. The idempotency
+resend and the signed URL expiry check.
 
 ### The steps to run, in order
 
