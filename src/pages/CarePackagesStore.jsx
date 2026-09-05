@@ -111,7 +111,7 @@ export default function CarePackagesStore() {
           >
             <div className="mb-4">
               <h2 className="font-display font-bold text-xl text-foreground">Next in the series</h2>
-              <p className="text-sm text-muted-foreground font-body">Rebuilt on the current template and cross-checked against the site's articles. Each one is listed once the Gumroad product is set up. The free guide for each species is live now.</p>
+              <p className="text-sm text-muted-foreground font-body">Rebuilt on the current template and cross-checked against the site's articles. Each one is listed once its product page is set up, and the ones with a buy button below are ready now. The free guide for each species is live either way.</p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {comingSoon.map(pkg => (

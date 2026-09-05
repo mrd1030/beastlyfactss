@@ -52,6 +52,9 @@ const CarePackages = hydratable('CarePackages');
 const CarePackagesStore = hydratable('CarePackagesStore');
 const CarePackagesWhyWeExist = hydratable('CarePackagesWhyWeExist');
 const CarePackagesFaq = hydratable('CarePackagesFaq');
+const CarePackageProduct = hydratable('CarePackageProduct');
+const CarePackageThanks = hydratable('CarePackageThanks');
+const CarePackageLibrary = hydratable('CarePackageLibrary');
 const Feed = hydratable('Feed');
 const Composer = hydratable('Composer');
 const ComposerLogin = hydratable('ComposerLogin');
@@ -130,6 +133,13 @@ const AuthenticatedApp = () => {
           <Route path="/care-packages/store" element={<CarePackagesStore />} />
           <Route path="/care-packages/why-we-exist" element={<CarePackagesWhyWeExist />} />
           <Route path="/care-packages/faq" element={<CarePackagesFaq />} />
+          <Route path="/care-packages/thanks" element={<CarePackageThanks />} />
+          <Route path="/care-packages/library" element={<CarePackageLibrary />} />
+          {/* Last of the /care-packages/ routes, and the only dynamic one. The
+              four static siblings above win over it either way (React Router
+              ranks a literal segment above a param), but keeping it last means
+              the file reads in the order the URLs actually resolve. */}
+          <Route path="/care-packages/:packageId" element={<CarePackageProduct />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/feed/tag/:tag" element={<Feed />} />
           <Route path="/composer/login" element={<ComposerLogin />} />

@@ -1,6 +1,6 @@
-// The printable PDF care packages sold on Gumroad. Kept manually in sync with
-// the seller dashboard (same pattern as affiliateProducts.js for gear) -
-// re-check price/page-count/cover URL here if anything changes on Gumroad.
+// The printable PDF care packages. Kept manually in sync with wherever each
+// one sells (same pattern as affiliateProducts.js for gear) - re-check
+// price/page-count/cover URL here if anything changes at the seller.
 //
 // status: 'live' has a real Gumroad product (image + gumroadUrl set) and shows
 // in the buyable grid. status: 'coming-soon' has neither yet - it renders in
@@ -12,6 +12,36 @@
 // content/CAREPACKAGE Guides/rebuilt, which is what will be listed. On a live
 // entry they describe the edition a buyer receives today, which can lag the
 // current build until the listing is refreshed.
+//
+// ---------------------------------------------------------------------------
+// storefront: where the buy button goes
+// ---------------------------------------------------------------------------
+// 'gumroad' sends the buyer to gumroadUrl. 'stripe' sells it here, through the
+// /api/care-packages/ routes in public/_worker.js and the product page at
+// /care-packages/<id>/. One field per package so the catalog moves across one
+// package at a time rather than all at once, and so a half-configured entry
+// fails loudly instead of quietly selling the wrong thing.
+//
+// Two price id fields, never one:
+//
+//   stripePriceIdSandbox   a price on the Stripe Sandbox / test mode. Test
+//                          cards only, no real money, and it is what every
+//                          test purchase runs through.
+//   stripePriceId          a price on the live Stripe account. Added ALONGSIDE
+//                          the sandbox id when a package actually goes on
+//                          sale, never in place of it.
+//
+// Keeping them in separate fields is what stops a sandbox price ever being
+// pasted into a live checkout. The Worker mirrors both ids (it cannot import
+// this file - see the note in public/_worker.js) and prefers the live one,
+// falling back to the sandbox id, so a deployment holding a live secret key
+// and a package with only a sandbox id gets a clean Stripe error rather than
+// a broken sale. Change a price id or a version in BOTH files.
+//
+// The PDF a buyer downloads lives in the private Supabase bucket at
+// care-packages/<id>.pdf, and `version` is the edition served from it. Publish
+// a correction by uploading the new file over that same path and bumping
+// `version` here in the same commit - see docs/STOREFRONT.md.
 export const CARE_PACKAGES = [
   {
     id: 'bearded-dragon',
@@ -20,6 +50,7 @@ export const CARE_PACKAGES = [
     badge: 'Reptile',
     emoji: '🦎',
     status: 'live',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 22,
     version: '2.0',
@@ -40,6 +71,7 @@ export const CARE_PACKAGES = [
     badge: 'Reptile',
     emoji: '🦎',
     status: 'live',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 22,
     version: '1.0',
@@ -60,6 +92,7 @@ export const CARE_PACKAGES = [
     badge: 'Fish',
     emoji: '🐟',
     status: 'live',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 21,
     version: '1.0',
@@ -80,6 +113,7 @@ export const CARE_PACKAGES = [
     badge: 'Amphibian',
     emoji: '🦎',
     status: 'live',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 20,
     version: '1.0',
@@ -100,6 +134,7 @@ export const CARE_PACKAGES = [
     badge: 'Bird',
     emoji: '🐦',
     status: 'live',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 20,
     version: '1.0',
@@ -120,6 +155,7 @@ export const CARE_PACKAGES = [
     badge: 'Reptile',
     emoji: '🦎',
     status: 'live',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 21,
     version: '1.0',
@@ -140,6 +176,7 @@ export const CARE_PACKAGES = [
     badge: 'Mammal',
     emoji: '🐹',
     status: 'live',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 22,
     version: '1.0',
@@ -160,6 +197,7 @@ export const CARE_PACKAGES = [
     badge: 'Bird',
     emoji: '❤️',
     status: 'live',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 21,
     version: '1.0',
@@ -180,6 +218,7 @@ export const CARE_PACKAGES = [
     badge: 'Reptile',
     emoji: '🐢',
     status: 'live',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 21,
     version: '1.0',
@@ -200,6 +239,7 @@ export const CARE_PACKAGES = [
     badge: 'Reptile',
     emoji: '🐍',
     status: 'coming-soon',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 35,
     version: '2.2',
@@ -218,6 +258,7 @@ export const CARE_PACKAGES = [
     badge: 'Fish',
     emoji: '🐠',
     status: 'coming-soon',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 37,
     version: '2.2',
@@ -236,15 +277,87 @@ export const CARE_PACKAGES = [
     badge: 'Mammal',
     emoji: '🐹',
     status: 'coming-soon',
+    // The first package on the self-hosted storefront. It stays 'coming-soon'
+    // on purpose: it has no Gumroad listing and is not in the live grid, so
+    // this is the one package where a real checkout can be exercised end to
+    // end without touching anything that is already on sale.
+    storefront: 'stripe',
+    stripePriceIdSandbox: 'price_1UC9Up9qtY3Ob6vac8xRLEu2',
     price: '$8.99',
     pages: 37,
     version: '2.2',
+    versionDate: '2026-09-05',
     cover: '/assets/guides/hamster.jpg',
-    blurb: 'Complete 22-page printable guide with the floor space and bedding depth the starter kit gets wrong, species differences, wet tail triage, and owner checklists.',
+    blurb: 'Complete 37-page printable guide with the floor space and bedding depth the starter kit gets wrong, species differences, wet tail triage, and owner checklists.',
     bullets: [
       'Enclosure size and bedding depth, the wheel and sand bath, species differences and handling, diet, and enrichment in one guide',
       'Health section with red flags, wet tail, dental disease, tumors and respiratory infection, and diabetes, torpor and cheek pouch impaction guidance',
       'Setup checklist, budget and shopping list, first 30 days checklist, symptom quick reference, owner log, and a daily and weekly routine',
+    ],
+    // The package's own contents page, section by section, for the "what is
+    // inside" block on the product page. This is the page a buyer would have
+    // seen on the Gumroad listing, so it is transcribed from the real table of
+    // contents in content/CAREPACKAGE Guides/source/hamster.html rather than
+    // written fresh. Re-transcribe it if the package is rebuilt.
+    contents: [
+      {
+        label: 'Getting started',
+        items: ['How to use this package'],
+      },
+      {
+        label: 'Quick profile',
+        items: ['Quick profile', 'Cost overview'],
+      },
+      {
+        label: 'Full care guide',
+        items: [
+          'Enclosure size and the starter-kit problem',
+          'Bedding depth, and the study behind it',
+          'The wheel, the sand bath and the rest',
+          'Temperature, torpor and lighting',
+          'Choosing a hamster, and where from',
+          'Diet and the schedule disagreement',
+          'Portions, scattering and weaning',
+          'Food chart and the never-feed list',
+          'Why a hamster stops eating',
+          'Handling: getting it right',
+          'The first week and common mistakes',
+          'Enrichment: what the research says',
+        ],
+      },
+      {
+        label: 'Health and common issues',
+        items: [
+          'Health red flags and the exotic vet',
+          'Wet tail',
+          'Overgrown incisors and tumors',
+          'Respiratory infection and diabetes',
+          'Torpor, and telling it from death',
+          'Lifespan, ageing and the end',
+          'Where hamsters are not legal',
+        ],
+      },
+      {
+        label: 'Quick reference',
+        items: ['Setup checklist and targets', 'Emergency and quick targets card'],
+      },
+      {
+        label: 'Owner tools',
+        items: [
+          'Budget and shopping list',
+          'First 30 days checklist',
+          'Symptom quick reference',
+          'Daily, weekly and seasonal routine',
+          'Power outages, travel and transport',
+          'Pet-sitter sheet',
+          'Owner log',
+          'Equipment, cleaning and vet log',
+        ],
+      },
+      {
+        label: 'Reference',
+        items: ['Glossary', 'Sources and further reading', 'Version history and about'],
+      },
     ],
   },
   {
@@ -254,6 +367,7 @@ export const CARE_PACKAGES = [
     badge: 'Mammal',
     emoji: '🐰',
     status: 'coming-soon',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 40,
     version: '2.1',
@@ -272,6 +386,7 @@ export const CARE_PACKAGES = [
     badge: 'Invertebrate',
     emoji: '🕷️',
     status: 'coming-soon',
+    storefront: 'gumroad',
     price: '$8.99',
     pages: 44,
     version: '2.2',
