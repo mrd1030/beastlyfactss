@@ -35,6 +35,16 @@ const SCRIPT_SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render
 // mounts, unmounts and remounts.
 let scriptPromise = null;
 
+// Turnstile's own theme: 'auto' follows prefers-color-scheme, which is the
+// wrong signal here. This site's dark mode is class based (tailwind.config.js
+// darkMode: ["class"], toggled on documentElement by useLocalStorage), so a
+// reader on a light OS who has chosen dark on the site would get a white
+// widget on a dark card. Read the class the site actually sets.
+const siteTheme = () =>
+  (typeof document !== 'undefined' && document.documentElement.classList.contains('dark'))
+    ? 'dark'
+    : 'light';
+
 function loadTurnstile() {
   if (window.turnstile) return Promise.resolve(window.turnstile);
   if (scriptPromise) return scriptPromise;
@@ -75,6 +85,9 @@ export default function TurnstileWidget({ onToken, onUnavailable, resetSignal = 
   onTokenRef.current = onToken;
   const onUnavailableRef = useRef(onUnavailable);
   onUnavailableRef.current = onUnavailable;
+  // Which theme the current widget was drawn in, so the observer below only
+  // redraws when it actually changed rather than on every class mutation.
+  const themeRef = useRef(null);
 
   useEffect(() => {
     if (!SITE_KEY) return undefined;
@@ -84,14 +97,42 @@ export default function TurnstileWidget({ onToken, onUnavailable, resetSignal = 
     if (typeof window === 'undefined' || window.__IS_PRERENDER__) return undefined;
 
     let cancelled = false;
+    let observer;
+
+    const draw = (turnstile) => {
+      if (cancelled || !container.current) return;
+      if (widgetId.current) {
+        turnstile.remove(widgetId.current);
+        widgetId.current = null;
+      }
+      themeRef.current = siteTheme();
+      widgetId.current = turnstile.render(container.current, {
+        sitekey: SITE_KEY,
+        theme: themeRef.current,
+        callback: token => onTokenRef.current(token),
+        'expired-callback': () => onTokenRef.current(''),
+        'error-callback': () => onTokenRef.current(''),
+      });
+    };
+
     loadTurnstile()
       .then((turnstile) => {
-        if (cancelled || !turnstile || !container.current) return;
-        widgetId.current = turnstile.render(container.current, {
-          sitekey: SITE_KEY,
-          callback: token => onTokenRef.current(token),
-          'expired-callback': () => onTokenRef.current(''),
-          'error-callback': () => onTokenRef.current(''),
+        if (cancelled || !turnstile) return;
+        draw(turnstile);
+
+        // Turnstile has no API to restyle a widget in place, so following the
+        // site's theme toggle means tearing it down and drawing it again. That
+        // discards any solved token, which is why onToken is cleared first:
+        // the caller must not be left holding a token for a widget that no
+        // longer exists.
+        observer = new MutationObserver(() => {
+          if (siteTheme() === themeRef.current) return;
+          onTokenRef.current('');
+          draw(turnstile);
+        });
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['class'],
         });
       })
       .catch(() => {
@@ -106,6 +147,7 @@ export default function TurnstileWidget({ onToken, onUnavailable, resetSignal = 
 
     return () => {
       cancelled = true;
+      if (observer) observer.disconnect();
       if (widgetId.current && window.turnstile) {
         window.turnstile.remove(widgetId.current);
         widgetId.current = null;
