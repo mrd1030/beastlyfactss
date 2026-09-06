@@ -26,7 +26,10 @@
 //   accent-ink                       text on a solid accent fill
 //   accent-soft                      a tinted surface (the "This guide" card)
 //   accent-soft-border               its border
-//   card-bg / card-border            the "What's inside" cards
+//   card-bg / card-border            the "What's inside" cards. They sit on
+//                                    accent-soft, so in dark mode card-bg has
+//                                    to be a visible step lighter than it,
+//                                    never the same value
 //   panel-bg / panel-ink / panel-muted  the dark "Who this is for" band
 //   cta-bg / cta-ink                 the final buy button
 //
@@ -160,7 +163,7 @@ export const CARE_PACKAGE_THEMES = {
       ground: '#0a1a2b', ink: '#f5efdc', muted: '#a9b9c9',
       accent: '#ffd65c', 'accent-strong': '#ffe27f', 'accent-ink': '#0a1a2b',
       'accent-soft': '#0f2a44', 'accent-soft-border': '#1b5488',
-      'card-bg': '#0f2a44', 'card-border': '#1b5488',
+      'card-bg': '#154066', 'card-border': '#2470b5',
       'panel-bg': '#050e18', 'panel-ink': '#fbf8f0', 'panel-muted': '#b8c7d6',
       'cta-bg': '#ffc933', 'cta-ink': '#0a1a2b',
     },
@@ -222,7 +225,7 @@ export const CARE_PACKAGE_THEMES = {
       ground: '#062226', ink: '#f5eedd', muted: '#9fbcc1',
       accent: '#f4c542', 'accent-strong': '#f7d46a', 'accent-ink': '#062226',
       'accent-soft': '#0b3d45', 'accent-soft-border': '#146575',
-      'card-bg': '#0b3d45', 'card-border': '#146575',
+      'card-bg': '#0f4e58', 'card-border': '#1b7f92',
       'panel-bg': '#031416', 'panel-ink': '#fbf8f1', 'panel-muted': '#adc9ce',
       'cta-bg': '#e8ac1e', 'cta-ink': '#062226',
     },
@@ -252,7 +255,7 @@ export const CARE_PACKAGE_THEMES = {
       ground: '#1c130a', ink: '#f4ebd3', muted: '#c0ae8e',
       accent: '#8fc96b', 'accent-strong': '#a6d98a', 'accent-ink': '#1c130a',
       'accent-soft': '#2b1e10', 'accent-soft-border': '#5c3f1f',
-      'card-bg': '#2b1e10', 'card-border': '#5c3f1f',
+      'card-bg': '#3a2a16', 'card-border': '#6a4c28',
       'panel-bg': '#0e0905', 'panel-ink': '#fbf7ec', 'panel-muted': '#cdbb9a',
       'cta-bg': '#6fae4c', 'cta-ink': '#ffffff',
     },
@@ -410,7 +413,7 @@ export const CARE_PACKAGE_THEMES = {
       ground: '#0a1d23', ink: '#dfeef1', muted: '#9ab9c0',
       accent: '#4fbccf', 'accent-strong': '#7fd3e0', 'accent-ink': '#0a1d23',
       'accent-soft': '#123039', 'accent-soft-border': '#24565f',
-      'card-bg': '#123039', 'card-border': '#24565f',
+      'card-bg': '#1a3d48', 'card-border': '#2f6b78',
       'panel-bg': '#050f13', 'panel-ink': '#eaf3f5', 'panel-muted': '#a9c3ca',
       'cta-bg': '#4fbccf', 'cta-ink': '#0a1d23',
     },
@@ -472,7 +475,7 @@ export const CARE_PACKAGE_THEMES = {
       ground: '#0e0c10', ink: '#e3dbe0', muted: '#a89fa7',
       accent: '#e39468', 'accent-strong': '#eeae8b', 'accent-ink': '#141216',
       'accent-soft': '#1f1c23', 'accent-soft-border': '#443c4a',
-      'card-bg': '#1f1c23', 'card-border': '#443c4a',
+      'card-bg': '#2c2830', 'card-border': '#5a5062',
       'panel-bg': '#070609', 'panel-ink': '#ede6ea', 'panel-muted': '#b3aab2',
       'cta-bg': '#cb7c4f', 'cta-ink': '#ffffff',
     },
