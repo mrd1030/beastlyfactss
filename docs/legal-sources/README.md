@@ -91,6 +91,8 @@ about this species", not to claim a new verification date.
 | `MT-mt-exotic-wildlife.txt` | Montana's white list: the three definitions, the statutory herp clearance, and the three rule lists, one of which prohibits the southern flying squirrel by binomial |
 | `WA-wa-wildlife-definitions.txt` | Washington's geographic qualifier, "exist in Washington in a wild state", the designated deleterious exotic list, and the live wildlife rule the qualifier keeps an exotic out of |
 | `VA-va-two-schemes.txt` | Virginia's two schemes and the definition that decides which one applies, the whole exotic permit table for mammals and reptiles, and the one-per-address cap on native and naturalized herps |
+| `IA-ia-wildlife-and-dangerous.txt` | Iowa's two anchors to the state itself, "found in this state" and a definition of game drawn by family, plus the whole 717F dangerous wild animal list that answers none of the tail |
+| `DC-dc-8-1808.txt` | The District's seven permitted categories in full, the one place in the country where the whole of a jurisdiction's pet law fits on a page |
 
 ## Reading the awkward ones
 
@@ -322,6 +324,8 @@ not on the sites, so a person with a browser can open all of them.
 | `le.utah.gov` | The plain section page, `/xcode/Title23A/Chapter1/23A-1-S101.html`, is a shell whose body loads by jQuery | Read `versionDefault="C23A-1-S101_<version>"` out of that page, then fetch `/xcode/Title23A/Chapter1/C23A-1-S101_<version>.html`, which is static HTML with the section text |
 | `dep.nj.gov` | Incapsula. HTML pages return a 212-byte `_Incapsula_Resource` stub and PDFs return a 6183-byte "Pardon Our Interruption" page saved under the `.pdf` name | Warm a cookie jar on `https://dep.nj.gov/rules/` with a browser User-Agent, then refetch the PDF with `-b`/`-c` and a Referer, retrying up to three times. PDFs come through; the HTML pages never did. The three list PDFs and the 1.8MB `njac7-25.pdf` all worked this way |
 | `lis.njleg.state.nj.us`, `pub.njleg.gov` | New Jersey publishes its statutes through a Folio NXT viewer. The gateway answers but has no plain document URL: `&`-separated queries 302 to an empty splash and `$`-separated ones return the same 531-byte stub | No workaround found. Read the section from a reproduction, cite the official section, and say so in the source note |
+| `legis.iowa.gov` | Works with plain curl and publishes every Code chapter and every IAC chapter as a PDF, but the extracted text comes out roughly one word per line | `/docs/code/<chapter>.pdf` and `/docs/iac/chapter/571.76.pdf`. Collapse all whitespace to single spaces before searching or no multi-word phrase matches. The chapter PDF opens with a table of contents that repeats every section heading, so anchor on a sentence from the body and take the LAST match, not the first |
+| `code.dccouncil.gov` | Works with plain curl, one section per page | `/us/dc/council/code/sections/8-1808`. The whole of the District's pet law is that one section |
 
 When the official host is unreachable, cite the official URL anyway, verify the wording
 against two independent reproductions that agree, and say so in the source note. Do not

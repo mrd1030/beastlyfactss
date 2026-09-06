@@ -1,0 +1,48 @@
+SOURCE: D.C. Code § 8-1808, Prohibited conduct
+URL: https://code.dccouncil.gov/us/dc/council/code/sections/8-1808
+FETCHED: 2026-09-05 (code.dccouncil.gov serves the section as plain HTML to curl. Read it here rather than from a reproduction: every cell in this jurisdiction turns on the exact wording of the seven categories.)
+
+READ THIS FIRST. The District is the shortest closed list in the country and the whole of it is
+subsection (j)(1). It bars importing, possessing, displaying, selling, trading or giving as a
+household pet "any living member of the animal kingdom, INCLUDING THOSE BORN OR RAISED IN
+CAPTIVITY", except seven categories.
+
+What the categories do and do not contain decides everything:
+
+  - (C) is "Domesticated rodents and rabbits". The qualifier is doing real work: it lets in the
+    guinea pig, the hamster and the domestic rabbit, and keeps out a flying squirrel, which is a
+    rodent and is not domesticated.
+  - (E) is "Non-venomous snakes, fish, and turtles". NO LIZARD appears anywhere in the seven, so
+    every pet lizard is barred, from the green iguana to the leopard gecko.
+  - No amphibian and no invertebrate fits any category either.
+  - (A) and (B) carry hybrid exclusions: dogs excluding wolf, coyote and jackal hybrids, cats
+    excluding ocelot and margay hybrids.
+
+There is no permit behind it. (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors,
+rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass and do yoga.
+Note (i) separately: no rabbit may be sold under 16 weeks old, nor a chick or duck under 8 weeks,
+except for agricultural or scientific purposes.
+
+
+==== D.C. Code 8-1808(i) and (j) in full ====
+(i) A person shall not sell or offer for sale a rabbit under the age of 16 weeks or a chick or
+duck under the age of 8 weeks except for agricultural or scientific purposes. (j) (1) Except as
+provided in this subsection, a person shall not import into the District, possess, display, offer
+for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of
+the animal kingdom, including those born or raised in captivity, except the following: (A)
+Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding
+hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of
+common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally
+kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing
+pigeons, when kept in compliance with permit requirements. (2) A person may offer any of the
+species enumerated in paragraph (1) of this subsection to a public zoo, park, or museum for
+exhibition purposes. (3) This section shall not apply to federally licensed animal exhibitors;
+provided, that the Mayor shall retain the authority to restrict the movement of any prohibited
+animal into the District and the conditions under which those movements are made. (4) The Mayor
+may allow a licensed wildlife rehabilitator, licensed veterinarian, or licensed animal shelter to
+maintain an animal prohibited in this subsection for treatment or pending appropriate disposition.
+(5) The Mayor shall allow goats and sheep to be temporarily imported into the District and
+possessed for the purposes of eating grass, milking and shearing demonstrations, participating in
+yoga or similar activities, being on display in temporary pettings zoos for the enjoyment and
+education of District youth, and any other activities approved by the Department of Health through
+regulation. The Department of Health may issue rules to protect the safety of the goats and sheep.

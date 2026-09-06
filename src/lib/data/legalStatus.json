@@ -567,8 +567,8 @@
     },
     "dc-8-1808": {
       "title": "D.C. Code § 8-1808(j), Prohibited conduct",
-      "url": "https://www.animallaw.info/statute/dc-exotic-pets-%C2%A7-8-1808-prohibited-conduct",
-      "note": "Closed list. Seven permitted categories; everything else is barred as a household pet."
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/8-1808",
+      "note": "A closed list and one of the shortest in the country. Subsection (j)(1) bars importing, possessing, displaying, selling, trading or giving as a household pet \"any living member of the animal kingdom, including those born or raised in captivity\", except seven categories: domestic dogs, domestic cats, domesticated rodents and rabbits, captive-bred common cage birds, non-venomous snakes and fish and turtles, ferrets, and racing pigeons. No lizard, no amphibian and no invertebrate fits any of them. Read from the D.C. Code rather than from a reproduction: the seven categories and their exact wording are what every cell in this jurisdiction turns on."
     },
     "nyc-161-01": {
       "title": "New York City Health Code § 161.01, Wild and other animals prohibited",
@@ -1514,6 +1514,11 @@
       "title": "4 Va. Admin. Code § 15-360-10, taking aquatic invertebrates, amphibians, reptiles, and nongame fish for private use",
       "url": "https://law.lis.virginia.gov/admincode/title4/agency15/chapter360/section10/",
       "note": "The rule the exotic permit table does not reach, and the one that answers a Virginia native or naturalized herp: one individual of any native or naturalized species of amphibian or reptile per physical address, live, for private use and not for sale or export. It covers aquatic invertebrates, amphibians, reptiles and nongame fish, and no mammal."
+    },
+    "ia-481a-definitions": {
+      "title": "Iowa Code §§ 481A.1, 481A.38, 481A.42 and 481A.60 to 481A.61",
+      "url": "https://www.legis.iowa.gov/docs/code/481A.pdf",
+      "note": "The native side of Iowa, and the half that 717F never reaches. § 481A.1(36) defines a wild animal as \"a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state\", a geographic qualifier that puts an exotic pet outside the chapter. § 481A.1(21) defines game as a closed list of taxa and (f) is \"The Sciuridae: such as gray squirrels and fox squirrels\", the family rather than the two examples. § 481A.38 then bars possessing game or protected nongame except as the chapter provides, § 481A.42 makes protected nongame \"wild fish, wild birds, wild bats, wild reptiles, and wild amphibians\" and no invertebrate, and §§ 481A.60 and 481A.61 are the game breeder licence, which is the only route by which a person may possess a live game animal."
     }
   },
   "animals": {
@@ -18186,6 +18191,23 @@
           "quote": "To hunt, trap, take, capture, kill, attempt to take, capture, or kill, possess, deliver for transportation, transport, cause to be transported, by any means whatever, receive for transportation or export, or import, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law and only by the manner or means and within the numbers stated.",
           "note": "The southern flying squirrel is a Virginia native, carried on the department's incorporated fauna list as \"Small Eastern Flying Squirrel ... Glaucomys volans volans\" and \"Southeastern Flying Squirrel ... Glaucomys volans saturatus\" with no naturalized asterisk. So it is not a nonnative (exotic) animal and the permit table at 4VAC15-30-40 is not its rule; § 29.1-521(A)(10) is, and it bars possessing a wild animal except as specifically permitted. Nothing specifically permits it. The one-per-address allowance at 4VAC15-360-10(A) covers aquatic invertebrates, amphibians, reptiles and nongame fish, and no mammal. Chapter 290 has no captive wildlife permit for a pet: 4VAC15-290-60 is for an exhibit \"educational and purposeful in nature\", 4VAC15-290-20 is scientific collection, and 4VAC15-360-50's propagation and sale permits reach amphibians and reptiles only. Recorded banned on the strength of the statute rather than on a named prohibition, which is the shape to re-check if the department ever publishes a captive wildlife permit reaching native mammals.",
           "verifiedOn": "2026-09-05"
+        },
+        "IA": {
+          "status": "permit",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(21)(f); § 481A.38; § 481A.61(1)",
+          "quote": "The Sciuridae: such as gray squirrels and fox squirrels.",
+          "permitFor": "commercial-exhibition-research",
+          "note": "Iowa defines game by family and then gives two examples, so the whole of Sciuridae is game and the southern flying squirrel, a native, is inside it. § 481A.38 then makes it unlawful \"to take, pursue, kill, trap or ensnare, buy, sell, possess, transport ... any game\" except as the chapter provides, and the only provision under which a person may hold a live game animal is § 481A.61(1): \"a licensed game breeder whose original stock is obtained from a lawful source may possess any game bird, game animal, or fur-bearing animal\". § 481A.60 requires that licence before raising or selling. Recorded permit rather than banned because the licence does authorise possession, and permitFor commercial rather than personal because it is a breeder's licence: Iowa writes no pet allowance for game anywhere in the chapter.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
+          "note": "The rodent category at (C) is qualified: \"Domesticated rodents and rabbits\". A southern flying squirrel is a rodent and is not domesticated, so it falls outside the exception the guinea pig and the hamster sit inside. This is the same qualifier that decides the rabbit the other way in the same clause. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -20646,6 +20668,22 @@
           "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
           "note": "A bearded dragon is a nonnative (exotic) animal under 4VAC15-20-50, not naturalized in Virginia, and absent from the permit table. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
           "verifiedOn": "2026-09-05"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(36); § 481A.42",
+          "quote": "\"Wild animal\" means a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state, whether game or nongame, migratory or nonmigratory, the ownership and title to which is claimed by this state.",
+          "note": "A bearded dragon is not found in Iowa, so it is not an Iowa wild animal and § 481A.38 does not reach it. Iowa's dangerous wild animal statute is the wrong rule for all nine of these animals: Iowa Code § 717F.1(5) reaches canids, hyaenids, felids, bears, rhinos, elephants, primates, crocodilians, swine and a short squamate list limited to water and crocodile monitors, helodermatids, atractaspids, venomous snakes and three large constrictors. The rule that could reach a pet is the wildlife chapter, and its two hooks both turn on Iowa: § 481A.1(36)'s \"found in this state\" and § 481A.42's protected nongame, which is wild fish, birds, bats, reptiles and amphibians.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
+          "note": "The reptile category at (E) is \"Non-venomous snakes, fish, and turtles\" and no lizard appears anywhere in the seven, which is what bars the bearded dragon, the green iguana and the veiled chameleon alike in the District. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21017,6 +21055,22 @@
           "cite": "§ 15-30-40(A)",
           "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
           "note": "A leopard gecko is a nonnative (exotic) animal, not naturalized in Virginia, and absent from the permit table. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(36); § 481A.42",
+          "quote": "\"Wild animal\" means a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state, whether game or nongame, migratory or nonmigratory, the ownership and title to which is claimed by this state.",
+          "note": "A leopard gecko is not found in Iowa, so it is not an Iowa wild animal. Iowa's dangerous wild animal statute is the wrong rule for all nine of these animals: Iowa Code § 717F.1(5) reaches canids, hyaenids, felids, bears, rhinos, elephants, primates, crocodilians, swine and a short squamate list limited to water and crocodile monitors, helodermatids, atractaspids, venomous snakes and three large constrictors. The rule that could reach a pet is the wildlife chapter, and its two hooks both turn on Iowa: § 481A.1(36)'s \"found in this state\" and § 481A.42's protected nongame, which is wild fish, birds, bats, reptiles and amphibians.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
+          "note": "No lizard fits any of the seven permitted categories. The District bans by omission rather than by naming a species, so nothing about the animal being small, captive-bred or unable to survive a Washington winter changes the answer. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -21390,6 +21444,22 @@
           "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
           "note": "A crested gecko is a nonnative (exotic) animal, not naturalized in Virginia, and absent from the permit table. Virginia attaches no conservation-status condition to the table, so the IUCN Vulnerable listing does not engage. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
           "verifiedOn": "2026-09-05"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(36); § 481A.42",
+          "quote": "\"Wild animal\" means a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state, whether game or nongame, migratory or nonmigratory, the ownership and title to which is claimed by this state.",
+          "note": "A crested gecko is not found in Iowa, so it is not an Iowa wild animal. Its IUCN Vulnerable listing is not a state or federal endangered listing and 571 IAC 77.2 names no gecko. Iowa's dangerous wild animal statute is the wrong rule for all nine of these animals: Iowa Code § 717F.1(5) reaches canids, hyaenids, felids, bears, rhinos, elephants, primates, crocodilians, swine and a short squamate list limited to water and crocodile monitors, helodermatids, atractaspids, venomous snakes and three large constrictors. The rule that could reach a pet is the wildlife chapter, and its two hooks both turn on Iowa: § 481A.1(36)'s \"found in this state\" and § 481A.42's protected nongame, which is wild fish, birds, bats, reptiles and amphibians.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
+          "note": "No lizard fits any of the seven permitted categories. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21761,6 +21831,22 @@
           "cite": "§ 15-30-40(A)",
           "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
           "note": "A blue-tongue skink is a nonnative (exotic) animal, not naturalized in Virginia, and absent from the permit table. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(36); § 481A.42",
+          "quote": "\"Wild animal\" means a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state, whether game or nongame, migratory or nonmigratory, the ownership and title to which is claimed by this state.",
+          "note": "A blue-tongue skink is not found in Iowa, so it is not an Iowa wild animal. Iowa's dangerous wild animal statute is the wrong rule for all nine of these animals: Iowa Code § 717F.1(5) reaches canids, hyaenids, felids, bears, rhinos, elephants, primates, crocodilians, swine and a short squamate list limited to water and crocodile monitors, helodermatids, atractaspids, venomous snakes and three large constrictors. The rule that could reach a pet is the wildlife chapter, and its two hooks both turn on Iowa: § 481A.1(36)'s \"found in this state\" and § 481A.42's protected nongame, which is wild fish, birds, bats, reptiles and amphibians.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
+          "note": "No lizard fits any of the seven permitted categories. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -22134,6 +22220,22 @@
           "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
           "note": "Jackson's chameleon is a nonnative (exotic) animal, not naturalized in Virginia, and absent from the permit table. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
           "verifiedOn": "2026-09-05"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(36); § 481A.42",
+          "quote": "\"Wild animal\" means a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state, whether game or nongame, migratory or nonmigratory, the ownership and title to which is claimed by this state.",
+          "note": "Jackson's chameleon is not found in Iowa, so it is not an Iowa wild animal. Iowa's dangerous wild animal statute is the wrong rule for all nine of these animals: Iowa Code § 717F.1(5) reaches canids, hyaenids, felids, bears, rhinos, elephants, primates, crocodilians, swine and a short squamate list limited to water and crocodile monitors, helodermatids, atractaspids, venomous snakes and three large constrictors. The rule that could reach a pet is the wildlife chapter, and its two hooks both turn on Iowa: § 481A.1(36)'s \"found in this state\" and § 481A.42's protected nongame, which is wild fish, birds, bats, reptiles and amphibians.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
+          "note": "No lizard fits any of the seven permitted categories, which is already why the veiled chameleon is banned here. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -22504,6 +22606,22 @@
           "cite": "§ 15-360-10(A)",
           "quote": "it shall be lawful to capture and possess live for private use and not for sale or export no more than one individual of any native or naturalized, as defined in 4VAC15-20-50, species of amphibian or reptile per physical address",
           "note": "The exotic permit table is the wrong rule for this animal. Virginia fixes native and naturalized status by an incorporated document, the department's List of Native and Naturalized Fauna of Virginia, and that list carries \"Green Anole * Anolis carolinesis *\", the asterisk denoting a naturalized species. A naturalized animal is expressly excluded from the definition of a nonnative (exotic) animal at 4VAC15-20-50, so 4VAC15-30-40 does not reach it and 4VAC15-360-10 does: one individual per physical address, live, for private use, and not for sale or export. That the cap binds a keeper rather than only a collector is confirmed from the other direction by the domestic animal list, which writes an express carve-out for \"Domesticated morphs of red cornsnake ... visibly distinguishable from native red cornsnakes\"; that exception would have nothing to do if ordinary keeping of a native herp were free.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(36); § 481A.42",
+          "quote": "\"Wild animal\" means a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state, whether game or nongame, migratory or nonmigratory, the ownership and title to which is claimed by this state.",
+          "note": "The green anole is not found in Iowa, which is well north of its range, so the protection § 481A.42 gives to wild reptiles reaches Iowa's own species and not this one. Note how narrowly that protection is drawn even for a native: 571 IAC 76.1(2)(a) declares the common garter snake unprotected nongame outright. Iowa's dangerous wild animal statute is the wrong rule for all nine of these animals: Iowa Code § 717F.1(5) reaches canids, hyaenids, felids, bears, rhinos, elephants, primates, crocodilians, swine and a short squamate list limited to water and crocodile monitors, helodermatids, atractaspids, venomous snakes and three large constrictors. The rule that could reach a pet is the wildlife chapter, and its two hooks both turn on Iowa: § 481A.1(36)'s \"found in this state\" and § 481A.42's protected nongame, which is wild fish, birds, bats, reptiles and amphibians.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
+          "note": "No lizard fits any of the seven permitted categories. The green anole is barred in the District for the same reason the leopard gecko is, and unlike New York City the District never has to reach a taxonomic question about the family Iguanidae, because it lists what is allowed rather than what is not. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -22878,6 +22996,22 @@
           "quote": "Domesticated breeds of European rabbit (Oryctolagus cuniculus) recognized by the American Rabbit Breeders Association, Inc. and any lineage resulting from crossbreeding recognized breeds.",
           "note": "Virginia is the only jurisdiction on this map to settle the rabbit by naming a breed registry. Oryctolagus cuniculus is on the permit table at 4VAC15-30-40 as a predatory or undesirable nonnative, so a wild European rabbit needs a special permit and, under 4VAC15-20-50(B), any kept without one had to be declared to the department by 1 January 2018 and may not be bred or sold. The domestic animal definition lifts the ARBA-recognised breeds and their crosses out of that, and 4VAC15-30-30 then says the chapter \"does not prohibit the possession, importation, and sale of ... those domestic animals as defined in 4VAC15-20-50\". The department publishes the recognised breed list on its website, so the line moves when ARBA's does.",
           "verifiedOn": "2026-09-05"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(36); § 481A.42",
+          "quote": "\"Wild animal\" means a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state, whether game or nongame, migratory or nonmigratory, the ownership and title to which is claimed by this state.",
+          "note": "A domestic rabbit is not found in Iowa as wildlife, and Iowa's game definition is explicit about which lagomorphs it means: § 481A.1(21)(g) is \"The Leporidae: cottontail rabbits and jackrabbits only\". Oryctolagus is neither. Iowa's dangerous wild animal statute is the wrong rule for all nine of these animals: Iowa Code § 717F.1(5) reaches canids, hyaenids, felids, bears, rhinos, elephants, primates, crocodilians, swine and a short squamate list limited to water and crocodile monitors, helodermatids, atractaspids, venomous snakes and three large constrictors. The rule that could reach a pet is the wildlife chapter, and its two hooks both turn on Iowa: § 481A.1(36)'s \"found in this state\" and § 481A.42's protected nongame, which is wild fish, birds, bats, reptiles and amphibians.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(C)",
+          "quote": "Domesticated rodents and rabbits",
+          "note": "One of the seven permitted categories, and the domestic rabbit is squarely inside it. The word doing the work is \"domesticated\", which is also what excludes a wild-caught rodent such as a flying squirrel from the same clause. Note § 8-1808(i) separately, which bars selling a rabbit under 16 weeks old except for agricultural or scientific purposes.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -23249,6 +23383,22 @@
           "cite": "§ 15-30-40(A)",
           "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
           "note": "Virginia is one of the few states whose definition of a wild animal names arthropods outright, so the cockroach is inside the scheme rather than outside it, and then it is answered by absence: the only invertebrates on the permit table are eight crayfish and a mitten crab under CRUSTACEANS and a run of freshwater molluscs. No insect appears anywhere in it. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(36); § 481A.42",
+          "quote": "\"Wild animal\" means a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state, whether game or nongame, migratory or nonmigratory, the ownership and title to which is claimed by this state.",
+          "note": "Two things put it outside. § 481A.42 defines protected nongame as wild fish, wild birds, wild bats, wild reptiles and wild amphibians, with no invertebrate anywhere in it, and § 481A.1(36) requires the animal to be found in this state in any event. Iowa's dangerous wild animal statute is the wrong rule for all nine of these animals: Iowa Code § 717F.1(5) reaches canids, hyaenids, felids, bears, rhinos, elephants, primates, crocodilians, swine and a short squamate list limited to water and crocodile monitors, helodermatids, atractaspids, venomous snakes and three large constrictors. The rule that could reach a pet is the wildlife chapter, and its two hooks both turn on Iowa: § 481A.1(36)'s \"found in this state\" and § 481A.42's protected nongame, which is wild fish, birds, bats, reptiles and amphibians.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
+          "note": "The seven permitted categories contain no invertebrate, which is what already bars the tarantula and the giant millipede here, and (j)(1) reaches \"any living member of the animal kingdom\" in terms. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
           "verifiedOn": "2026-09-05"
         }
       }

@@ -1,0 +1,205 @@
+SOURCE: Iowa: Iowa Code ch. 481A (wildlife conservation) and ch. 717F (dangerous wild animals), and 571 IAC 76
+URL: https://www.legis.iowa.gov/docs/code/481A.pdf and .../717F.pdf and https://www.legis.iowa.gov/docs/iac/chapter/571.76.pdf
+FETCHED: 2026-09-05 (legis.iowa.gov serves every code chapter and IAC chapter as a PDF to plain curl. The PDFs extract one word per line, so collapse all whitespace before searching or nothing matches.)
+
+READ THIS FIRST. 717F is the statute every summary of Iowa quotes and it answers none of the nine
+animals on the tail of this map. Its dangerous wild animal definition at 717F.1(5) is canids,
+hyaenids, felids, bears, rhinos, elephants, primates, crocodilians, swine, and a squamate list
+limited to water and crocodile monitors, helodermatids, atractaspids, venomous snakes and three
+large constrictors. It also carries an unusually precise Bengal and Savannah carve-out at fourth
+filial generation.
+
+The rule that can reach a pet is ch. 481A, and it has two hooks, both anchored to Iowa:
+
+  481A.1(36) "Wild animal" means a wild mammal, bird, fish, amphibian, reptile, or other wildlife
+  FOUND IN THIS STATE ... the ownership and title to which is claimed by this state.
+
+  481A.42 Protected nongame species include wild fish, wild birds, wild bats, wild reptiles, and
+  wild amphibians ... However, nongame does not include game, fish ..., fur-bearing animals,
+  turtles, or frogs.
+
+So an exotic pet is outside the chapter and no invertebrate is protected nongame at all. What is
+inside is Iowa's own wildlife, and the definition of game is drawn by FAMILY with examples:
+481A.1(21)(f) is "The Sciuridae: such as gray squirrels and fox squirrels", which takes in the
+flying squirrels, the chipmunks and the ground squirrels. 481A.38 then bars possessing game except
+as the chapter provides, and 481A.61(1) is the only provision under which a person may hold a live
+game animal: a licensed game breeder may possess any game animal.
+
+One rule worth knowing for how narrow Iowa's native protection is: 571 IAC 76.1(2)(a) declares the
+common garter snake unprotected nongame outright, alongside the starling and the house sparrow.
+
+
+==== Iowa Code 481A.1, definitions in full ====
+481A .1 Definitions. W ords and phrases as used in this chapter and chapters 350 , 456A , 456B ,
+457A , 461A , 461B , 461C , 462A , 462B , 464A , 465A , 465B , 465C , 481B , 482 , 483A , 484A ,
+and 484B and such other chapters as relate to the subject matter of these chapters shall be
+construed as follows: 1. " Alien " shall not be construed to mean any person who has applied for
+naturalization papers. 2. " Amphibian " means a member of the class Amphibia. 3. " Aquaculture"
+means the controlled propagation, growth, and harvest of aquatic organisms, including, but not
+limited to fish, amphibians, reptiles, mollusks, crustaceans, gastropods, algae, and other aquatic
+plants, by an aquaculturist. 4. " Aquaculture unit" means all private waters for aquaculture with
+or without buildings, used for the purpose of propagating, raising, holding, or harvesting aquatic
+organisms for commercial purposes. 5. " Aquaculturist" means an individual involved in producing,
+transporting, or marketing aquatic products from private waters for commercial purposes. 6. "Bag
+limit" or "possession limit" is the number of any kind of game, fish, bird or animal or other
+wildlife form permitted to be taken or held in a specified time. 7. "Bait" includes but is not
+limited to minnows, green sunfish, orange-spotted sunfish, gizzard shad, frogs, crayfish, and
+salamanders. 8. "Biological balance" means that condition when the number of animals present over
+the long term is at or near the number of animals of a particular species that the available
+habitat is capable of supporting. 9. "Bird" means a member of the class A ves. 10. "Buy " means to
+purchase, offer to purchase, barter for , trade for , or lease. 11. "Closed season " is that
+period of time during which hunting, fishing, trapping or taking is prohibited. 12. "Commercial
+purposes" means selling, giving, or furnishing to others. 13. "Commission " means the natural
+resource commission. 14. "Contraband" as used in the laws pertaining to the work of the commission
+shall mean anything, the possession of which was illegally procured, or the possession of which is
+unlawful. 15. "Department" means the department of natural resources. 16. "Director" means the
+director of the department or the director 's designee. 17. "F arm deer" means the same as defined
+in section 170.1 . 18. "F ish" means a member of the class Pisces. 19. "F rog" means a member of
+the order Anura. 20. "F ur -bearing animals" means the following which are declared to be fur
+-bearing animals for the purpose of regulation and protection under the Code: beaver , badger ,
+mink, otter , muskrat, raccoon, skunk, opossum, spotted skunk or civet cat, weasel, coyote,
+bobcat, wolf, groundhog, red fox, and gray fox. This chapter does not apply to domesticated fur
+-bearing animals. 21. "Game" means all of the animals specified in this subsection except those
+designated as not protected, and includes the heads, skins, and any other parts, and the nests and
+eggs of birds and their plumage. a. The Anatidae: such as swans, geese, brant, and ducks. b. The
+Rallidae: such as rails, coots, mudhens, and gallinules. c. The Limicolae: such as shorebirds,
+plovers, surfbirds, snipe, woodcock, sandpipers, tattlers, godwits, and curlews. d. The
+Galliformes: such as wild turkeys, grouse, pheasants, partridges, and quail. e. The Columbidae:
+such as mourning doves and wild rock doves only . f . The Sciuridae: such as gray squirrels and
+fox squirrels. g. The Leporidae: cottontail rabbits and jackrabbits only . T ue Dec 09 22:08:07
+2025 Iowa Code 2026, Chapter 481A (60, 1) 481A .1, WILDLIFE CONSER V A TION 4 h. The Cervidae:
+such as elk or deer , other than farm deer . 22. "Measurement of fish" is the length from end of
+nose to longest tip of tail. 23. "Minnows" means chubs, suckers, shiners, dace, stonerollers, mud
+minnows, redhorse, blunt-nose, and fathead minnows. 24. "Mussels" means the pearly fresh water
+mussels, clams or naiads, and their shells. 25. "Open season " is that period of time during which
+hunting, fishing, trapping or taking is permitted. 26. "P erson " shall mean any person, firm,
+partnership, or corporation. 27. "P ossession " is both active and constructive possession and any
+control of things referred to . 28. "P rivate waters for aquaculture" means waters confined within
+an artificial containment, such as man -made ponds, vats, tanks, raceways, and other indoor or
+outdoor facilities constructed wholly within or on the land of an owner or lessee and used for
+aquaculture. 29. "Reptile" means a member of the class Reptilia. 30. "Sell" or "sale" is selling,
+bartering, exchanging, offering or exposing for sale. 31. "Spawn " means any of the eggs of any
+fish, amphibian, or mussel. 32. " T ake" or "taking" or "attempting to take" or "hunt" is any
+pursuing, or any hunting, fishing, killing, trapping, snaring, netting, searching for or shooting
+at, or stalking or lying in wait for any game, animal, bird, or fish protected by the state laws
+or rules adopted by the commission whether or not such animal be then subsequently captured,
+killed, or injured. 33. " Transport" or "transportation " is all carrying or moving or causing to
+be carried or moved. 34. " T urtle" means any member of the order T estudines. 35. " Whitetail"
+means an animal belonging to the Cervidae family and classified as part of the V irginianus
+species of the Odocoileus genus, commonly referred to as whitetail. 36. " W ild animal" means a
+wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state, whether game
+or nongame, migratory or nonmigratory , the ownership and title to which is claimed by this state.
+37. " W ild mammal" means a member of the class Mammalia. [C39, 1703.60; C46, 50, 54, 58, 62, 66,
+71, 73, 75, 77, 79, 81, 109.1 ] 83 Acts, ch 168, 5 ; 86 Acts, ch 1245, 1850 - 1852 ; 88 Acts, ch
+1216, 1, 2 ; 92 Acts, ch 1160, 17 ; 92 Acts, ch 1186, 1 ; 92 Acts, ch 1216, 1 C93, 481A .1 93
+Acts, ch 99, 1 ; 95 Acts, ch 134, 5 ; 2003 Acts, ch 149, 14 - 16, 23 ; 2012 Acts, ch 1118, 4 ;
+2014 Acts, ch 1026, 110 ; 2021 Acts, ch 48, 4 ; 2022 Acts, ch 1021, 135 ; 2023 Acts, ch 66, 115
+Referred to in 456A .37 , 556H.1 , 717B.1 , 717B.2 , 717B.3A , 717B.6 , 717D.3
+
+==== Iowa Code 481A.38, the possession bar ====
+481A .38 P rohibited acts - restrictions on the taking of wildlife - special licenses. It is
+unlawful for a person to take, pursue, kill, trap or ensnare, buy , sell, possess, transport, or
+attempt to so take, pursue, kill, trap or ensnare, buy , sell, possess, or transport any game,
+protected nongame animals, fur -bearing animals or fur or skin of such animals, mussels, frogs,
+spawn or fish or any part thereof, except upon the terms, conditions, limitations, and T ue Dec 09
+22:08:07 2025 Iowa Code 2026, Chapter 481A (60, 1) 481A .38, WILDLIFE CONSER V A TION 14
+restrictions set forth herein, and administrative rules necessary to carry out the purposes set
+out in section 481A .39 , or as provided by the Code.
+
+==== Iowa Code 481A.42, protected nongame ====
+481A .42 Nongame protected - e x clusion. P rotected nongame species include wild fish, wild
+birds, wild bats, wild reptiles, and wild amphibians, an egg, a nest, a dead body or part of a
+dead body , and a product made from part of a body of a wild fish, wild bird, wild bat, wild
+reptile, or wild amphibian. However , nongame does not include game, fish that may be taken
+pursuant to regulations established under the Code or departmental rule, fur -bearing animals,
+turtles, or frogs, as defined in this chapter . The commission shall designate by rule those
+species of nongame which by their abundance or habits are declared a nuisance, and these species
+shall not be protected. R ules adopted shall include but are not limited to a provision that
+states that any bat, except for the Indiana bat, which is found within a building that is occupied
+by human beings is not a protected nongame species.
+
+==== Iowa Code 481A.60, game breeder licence required ====
+481A .60 Raising game - r ulemaking authority . A person shall not raise or sell game or fur
+-bearing animals of the kinds protected by this chapter , except rock doves and pigeons, without
+first procuring a game breeder 's license as provided by law . The commission may adopt rules
+which ensure that all game birds, game animals, and fur -bearing animals handled and confined by
+licensed game breeders are provided with humane care and treatment. A violation of a rule adopted
+by the commission is a cause for license revocation. This section does not apply to governmental
+zoos and exhibits.
+
+==== Iowa Code 481A.61, what a licensed game breeder may possess ====
+481A .61 Licensed game breeders - marketing game - penalty . 1. Except as otherwise provided by
+law , a licensed game breeder whose original stock is obtained from a lawful source may possess
+any game bird, game animal, or fur -bearing animal, or any of their parts. P ossession and use of
+the game birds, game animals, or fur -bearing animals obtained from a licensed game breeder are
+lawful. 2. F ur -bearing animals shall not be acquired for breeding or propagating purposes from
+any source unless they have been pen -raised for at least two successive generations. 3. A game
+breeder 's license is not a license to possess, breed, propagate, sell, or dispose of any species
+which is defined as endangered or threatened under state law unless the species is listed on the
+license. Its possession, breeding, propagation, sale, and disposal are subject to all applicable
+state and federal statutes. 4. A licensed game breeder shall not acquire protected live game
+animals, game birds, their eggs, or fur -bearing animals taken from the wild within this state. 5.
+Game birds or game animals may be sold for food only under the following conditions: a. The
+licensed game breeder shall file with the commission a facsimile of a stamp of similar type to
+that used by the United States department of agriculture in grading meat. b. Licensed game
+breeders may sell dressed game birds or game animals to markets for T ue Dec 09 22:08:07 2025 Iowa
+Code 2026, Chapter 481A (60, 1) 21 WILDLIFE CONSER V A TION, 481A .62 resale providing each game
+bird or game animal has affixed upon it in a conspicuous and legible manner the imprint of the
+game breeder 's stamp. c. The stamp shall bear the name and number of the game breeder in letters
+of at least twelve point type size. 6. Markets selling stamped game shall: a. Maintain the stamp
+on each game bird or game animal until the bird or animal is disposed of or sold. b. K eep a
+record showing the total number of game birds or game animals sold together with the name and
+address of the game breeder from whom purchased and the number of game birds and animals in each
+purchase. 7. Markets selling stamped game, together with their records, are subject to inspection
+by an authorized representative of the commission at any reasonable time. 8. V iolation of a
+provision of this section may be cause for license revocation. [C39, 1794.023; C46, 50, 54, 58,
+62, 66, 71, 73, 75, 77, 79, 81, 109.61 ] 86 Acts, ch 1245, 1854 ; 88 Acts, ch 1216, 20 C93, 481A
+.61 Referred to in 805.8B(3)(c) F or applicable scheduled fines, see 805.8B , subsection 3,
+paragraph c
+
+==== Iowa Code 717F.1(5), the dangerous wild animal definition ====
+"Dangerous wild animal" means any of the following: (1) A member of the family canidae of the
+order carnivora, including but not limited to wolves, coyotes, and jackals. However , a dangerous
+wild animal does not include a domestic dog. (2) A member of the family hyaenidae of the order of
+carnivora, including but not limited to hyenas. (3) A member of the family felidae of the order
+carnivora, including but not limited to lions, tigers, cougars, leopards, cheetahs, ocelots, and
+servals. However , a dangerous wild animal does not include a domestic cat. (4) A member of the
+family ursidae of the order carnivora, including bears and pandas. (5) A member of the family
+rhinocero tidae of the order perissodactyla, which is a rhinoceros. (6) A member of the order
+proboscidea, which are any species of elephant. (7) A member of the order of primates other than
+humans, and including the following families: callitrichiadae, cebidae, cercopithecidae,
+cheirogaleidae, daubentoniidae, galagonidae, hominidae, hylobatidae, indridae, lemuridae, loridae,
+megaladapidae, or tarsiidae. A member includes but is not limited to marmosets, tamarins, monkeys,
+lemurs, galagos, bushbabies, great apes, gibbons, lesser apes, indris, sifakas, and tarsiers. T ue
+Dec 09 21:55:53 2025 Iowa Code 2026, Chapter 717F (27, 0) 717F .1, D ANGEROUS WILD ANIMALS 2 (8) A
+member of the order crocodilia, including but not limited to alligators, caimans, crocodiles, and
+gharials. (9) A member of the order squamata which is any of the following: (a) A member of the
+family varanidae, which are limited to water monitors and crocodile monitors. (b) A member of the
+family atractaspidae, including but not limited to mole vipers and burrowing asps. (c) A member of
+the family helodermatidae, including but not limited to beaded lizards and gila monsters. (d) A
+member of the family elapidae, viperidae, crotalidae, atractaspidae, or hydrophidae which are
+venomous, including but not limited to cobras, mambas, coral snakes, kraits, adders, vipers,
+rattlesnakes, copperheads, pit vipers, keelbacks, cottonmouths, and sea snakes. (e) A member of
+the superfamily henophidia, which are limited to reticulated pythons, anacondas, and African rock
+pythons. (10) Swine which is a member of the species sus scrofa linnaeus, including but not
+limited to swine commonly known as R ussian boar or European boar of either sex. b. "Dangerous
+wild animal" includes an animal which is the offspring of an animal provided in paragraph "a" ,
+and another animal provided in that paragraph or any other animal. It also includes animals which
+are the offspring of each subsequent generation. However , a dangerous wild animal does not
+include any of the following: (1) The offspring of a domestic dog and a wolf, or the offspring
+from each subsequent generation in which at least one parent is a domestic dog. (2) (a) The
+offspring of a domestic cat and another member of the family felidae classified as a bengal with
+an ancestor classified as an Asian leopard cat which is a member of the species prionailurus
+bengalensis. The bengal must be the fourth or later filial generation of offspring with the first
+filial generation being the offspring of a domestic cat and an Asian leopard cat, and each
+subsequent generation being the offspring of a domestic cat. (b) The offspring of a domestic cat
+and another member of the family felidae classified as a savannah with an ancestor classified as a
+serval which is a member of the species leptailurus serval. The savannah must be the fourth or
+later filial generation of offspring with the first filial generation being the offspring of a
+domestic cat and a serval, and each subsequent generation being the offspring of a domestic cat.
+
+==== 571 IAC 76.1, unprotected nongame ====
+571-76.1(481A) Species. Certain species of nongame shall not be protected. 76.1(1) Birds. The
+European starling (Sturnus vulgaris) and the house sparrow (Passer domesticus) shall not be
+protected. 76.1(2) Reptiles. a. Common garter snake (Thamnophis sirtalis). b. Timber rattlesnake
+(Crotalus horridus) within 50 yards of houses actively occupied by humans.
