@@ -1499,6 +1499,21 @@
       "title": "LAC 76:V.107, Game Breeder's License",
       "url": "https://www.doa.la.gov/media/ln5kb5vu/76.docx",
       "note": "The rule that reaches a native Louisiana mammal kept as a pet. § 107(C)(2)(a): \"A game breeder's license must be issued before any game quadrupeds (deer, rabbits, squirrels, etc.) are obtained\", and § 107(C)(1)(a) bars taking them from the wild at all. § 107(B)(6) writes pen specifications for \"Squirrels (gray, fox, red, flying and others endemic to North America)\" by name, so the flying squirrel is expressly inside the scheme rather than caught by inference."
+    },
+    "wa-rcw-77-08-010": {
+      "title": "Wash. Rev. Code § 77.08.010, definitions, and WAC 220-640-200",
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=77.08.010",
+      "note": "The sentence that decides most of Washington is subsection (74): \"Wildlife means all species of the animal kingdom whose members exist in Washington in a wild state.\" The list that follows is inclusive down to invertebrates, so the taxonomic reach is total, and the qualifier is geographic: a species that does not live wild in Washington is not Washington wildlife at all. Subsection (72) does the same for \"wild animals\", class Mammalia, and expressly drops feral domestic mammals and old world rats and mice. The other half of the scheme is subsection (13), deleterious exotic wildlife, which is a designated list rather than a category: WAC 220-640-200 designates the mute swan, mongooses, wild boar, javelina, six bovid genera and a run of cervids, and nothing else."
+    },
+    "va-4vac15-20-50": {
+      "title": "4 Va. Admin. Code § 15-20-50, definitions of wild, native, naturalized, nonnative (exotic) and domestic animal",
+      "url": "https://law.lis.virginia.gov/admincode/title4/agency15/chapter20/section50/",
+      "note": "The definitions that decide which of Virginia's two schemes reaches an animal, and the one place a species can be written out of both. \"Wild animal\" is \"any member of the animal kingdom, except domestic animals\", and the list that follows names arthropods expressly. \"Nonnative (exotic) animal\" excludes domestic AND naturalized species, so a naturalized animal is not an exotic and goes to the native rules instead. The domestic animal list is closed and unusually specific: it clears \"Domesticated breeds of European rabbit (Oryctolagus cuniculus) recognized by the American Rabbit Breeders Association, Inc.\" and \"Domesticated morphs of red cornsnake (Pantherophis guttatus) visibly distinguishable from native red cornsnakes\". Native and naturalized status is fixed by the department's List of Native and Naturalized Fauna of Virginia, incorporated by reference: https://dwr.virginia.gov/wp-content/uploads/media/virginia-native-naturalized-species.pdf"
+    },
+    "va-4vac15-360-10": {
+      "title": "4 Va. Admin. Code § 15-360-10, taking aquatic invertebrates, amphibians, reptiles, and nongame fish for private use",
+      "url": "https://law.lis.virginia.gov/admincode/title4/agency15/chapter360/section10/",
+      "note": "The rule the exotic permit table does not reach, and the one that answers a Virginia native or naturalized herp: one individual of any native or naturalized species of amphibian or reptile per physical address, live, for private use and not for sale or export. It covers aquatic invertebrates, amphibians, reptiles and nongame fish, and no mammal."
     }
   },
   "animals": {
@@ -18154,6 +18169,23 @@
           "note": "Named outright, which makes Montana the only jurisdiction on this map to prohibit this animal by binomial. ARM 12.6.2201(7) defines a prohibited species as one that \"may not be possessed, sold, purchased, exchanged, or transported in Montana, except as provided in 87-5-709, MCA, or this subchapter\", and 87-5-709 is the exception for zoos, research and rehabilitation rather than for pets. The company it keeps on that list is telling: the Virginia opossum, the short-tailed opossum, the brush-tailed possum, nutria and the African soft fur rat, all animals Montana treats as escape and establishment risks rather than as dangerous ones. Montana has its own flying squirrel, the northern, and the prohibition is written for the southern species alone.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(72) and (74)",
+          "quote": "\"Wild animals\" means those species of the class Mammalia whose members exist in Washington in a wild state.",
+          "note": "This turns on which flying squirrel. Washington has the northern, Glaucomys sabrinus, and Humboldt's, Glaucomys oregonensis; the southern flying squirrel, Glaucomys volans, does not occur here in a wild state, so it is neither a wild animal under subsection (72) nor wildlife under subsection (74). That takes it out of WAC 220-450-030, whose possession, importation and acquisition-proof rules are written for live wild animals, wild birds and game fish. It is not deleterious exotic wildlife under WAC 220-640-200(1), which names no rodent, and no rodent appears in RCW 16.30.010(2) either. Taking or keeping either Washington species is a different question and is barred without a permit.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VA": {
+          "status": "banned",
+          "sourceId": "va-4vac15-20-50",
+          "cite": "Va. Code § 29.1-521(A)(10); 4VAC15-360-10(A); 4VAC15-290-60",
+          "quote": "To hunt, trap, take, capture, kill, attempt to take, capture, or kill, possess, deliver for transportation, transport, cause to be transported, by any means whatever, receive for transportation or export, or import, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law and only by the manner or means and within the numbers stated.",
+          "note": "The southern flying squirrel is a Virginia native, carried on the department's incorporated fauna list as \"Small Eastern Flying Squirrel ... Glaucomys volans volans\" and \"Southeastern Flying Squirrel ... Glaucomys volans saturatus\" with no naturalized asterisk. So it is not a nonnative (exotic) animal and the permit table at 4VAC15-30-40 is not its rule; § 29.1-521(A)(10) is, and it bars possessing a wild animal except as specifically permitted. Nothing specifically permits it. The one-per-address allowance at 4VAC15-360-10(A) covers aquatic invertebrates, amphibians, reptiles and nongame fish, and no mammal. Chapter 290 has no captive wildlife permit for a pet: 4VAC15-290-60 is for an exhibit \"educational and purposeful in nature\", 4VAC15-290-20 is scientific collection, and 4VAC15-360-50's propagation and sale permits reach amphibians and reptiles only. Recorded banned on the strength of the statute rather than on a named prohibition, which is the shape to re-check if the department ever publishes a captive wildlife permit reaching native mammals.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -20597,6 +20629,23 @@
           "note": "The bearded dragon is an agamid, and Agamidae is the first family named in the clause. Montana runs a white list and this clause is where nonvenomous lizards are let onto it. The two lists it defers to are short: ARM 12.6.2208 classifies no reptile as controlled at all, and ARM 12.6.2215(6) prohibits fifteen reptiles, all of them crocodilians, large constrictors, venomous snakes or the red-eared slider. The clause is also open, \"including but not limited to\", so a family it does not name is not thereby excluded.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(74); WAC 220-640-200(1)",
+          "quote": "\"Wildlife\" means all species of the animal kingdom whose members exist in Washington in a wild state. This includes but is not limited to mammals, birds, reptiles, amphibians, fish, and invertebrates.",
+          "note": "Pogona vitticeps does not exist in Washington in a wild state, so it is not Washington wildlife. Washington answers by a geographic qualifier rather than by a species list, which is why it is one of the shortest states to read. Three things then have to be checked and all three come back empty: the animal is not designated deleterious exotic wildlife at WAC 220-640-200(1), which is a mute swan, mongooses, wild boar, javelina, six bovid genera and a run of cervids; it is not a potentially dangerous wild animal under RCW 16.30.010(2), whose enumerated definition reaches only mammals and reptiles named in it; and WAC 220-450-030's importation and possession rules are written for \"live wild animals, wild birds, or game fish\", which are the same geographically limited terms.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
+          "note": "A bearded dragon is a nonnative (exotic) animal under 4VAC15-20-50, not naturalized in Virginia, and absent from the permit table. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20951,6 +21000,23 @@
           "quote": "unless otherwise regulated pursuant to 87-5-116, all nonnative tropical and subtropical species of nonvenomous lizards not on the controlled or prohibited lists, including but not limited to the following families or subfamilies",
           "note": "Montana names Eublepharidae (eyelid geckos) separately from Gekkonidae, so the leopard gecko is inside the clause on current taxonomy rather than on a broad reading of a family name, which is how most states reach it. Montana runs a white list and this clause is where nonvenomous lizards are let onto it. The two lists it defers to are short: ARM 12.6.2208 classifies no reptile as controlled at all, and ARM 12.6.2215(6) prohibits fifteen reptiles, all of them crocodilians, large constrictors, venomous snakes or the red-eared slider. The clause is also open, \"including but not limited to\", so a family it does not name is not thereby excluded.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(74); WAC 220-640-200(1)",
+          "quote": "\"Wildlife\" means all species of the animal kingdom whose members exist in Washington in a wild state. This includes but is not limited to mammals, birds, reptiles, amphibians, fish, and invertebrates.",
+          "note": "Eublepharis macularius does not exist in Washington in a wild state, so it is not Washington wildlife. Washington answers by a geographic qualifier rather than by a species list, which is why it is one of the shortest states to read. Three things then have to be checked and all three come back empty: the animal is not designated deleterious exotic wildlife at WAC 220-640-200(1), which is a mute swan, mongooses, wild boar, javelina, six bovid genera and a run of cervids; it is not a potentially dangerous wild animal under RCW 16.30.010(2), whose enumerated definition reaches only mammals and reptiles named in it; and WAC 220-450-030's importation and possession rules are written for \"live wild animals, wild birds, or game fish\", which are the same geographically limited terms.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
+          "note": "A leopard gecko is a nonnative (exotic) animal, not naturalized in Virginia, and absent from the permit table. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -21307,6 +21373,23 @@
           "note": "The crested gecko is a diplodactylid on current taxonomy and Montana names Gekkonidae, but the clause is expressly open, \"including but not limited to the following families or subfamilies\", so a gecko family it does not list is still a nonvenomous lizard within the head phrase. Montana runs a white list and this clause is where nonvenomous lizards are let onto it. The two lists it defers to are short: ARM 12.6.2208 classifies no reptile as controlled at all, and ARM 12.6.2215(6) prohibits fifteen reptiles, all of them crocodilians, large constrictors, venomous snakes or the red-eared slider. The clause is also open, \"including but not limited to\", so a family it does not name is not thereby excluded.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(74); WAC 220-640-200(1)",
+          "quote": "\"Wildlife\" means all species of the animal kingdom whose members exist in Washington in a wild state. This includes but is not limited to mammals, birds, reptiles, amphibians, fish, and invertebrates.",
+          "note": "Correlophus ciliatus does not exist in Washington in a wild state, so it is not Washington wildlife. Its IUCN Vulnerable listing has nothing to attach to here. Washington answers by a geographic qualifier rather than by a species list, which is why it is one of the shortest states to read. Three things then have to be checked and all three come back empty: the animal is not designated deleterious exotic wildlife at WAC 220-640-200(1), which is a mute swan, mongooses, wild boar, javelina, six bovid genera and a run of cervids; it is not a potentially dangerous wild animal under RCW 16.30.010(2), whose enumerated definition reaches only mammals and reptiles named in it; and WAC 220-450-030's importation and possession rules are written for \"live wild animals, wild birds, or game fish\", which are the same geographically limited terms.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
+          "note": "A crested gecko is a nonnative (exotic) animal, not naturalized in Virginia, and absent from the permit table. Virginia attaches no conservation-status condition to the table, so the IUCN Vulnerable listing does not engage. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21661,6 +21744,23 @@
           "quote": "unless otherwise regulated pursuant to 87-5-116, all nonnative tropical and subtropical species of nonvenomous lizards not on the controlled or prohibited lists, including but not limited to the following families or subfamilies",
           "note": "Tiliqua is a scincid and Scincidae is named. Montana runs a white list and this clause is where nonvenomous lizards are let onto it. The two lists it defers to are short: ARM 12.6.2208 classifies no reptile as controlled at all, and ARM 12.6.2215(6) prohibits fifteen reptiles, all of them crocodilians, large constrictors, venomous snakes or the red-eared slider. The clause is also open, \"including but not limited to\", so a family it does not name is not thereby excluded.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(74); WAC 220-640-200(1)",
+          "quote": "\"Wildlife\" means all species of the animal kingdom whose members exist in Washington in a wild state. This includes but is not limited to mammals, birds, reptiles, amphibians, fish, and invertebrates.",
+          "note": "Tiliqua scincoides does not exist in Washington in a wild state, so it is not Washington wildlife. Washington answers by a geographic qualifier rather than by a species list, which is why it is one of the shortest states to read. Three things then have to be checked and all three come back empty: the animal is not designated deleterious exotic wildlife at WAC 220-640-200(1), which is a mute swan, mongooses, wild boar, javelina, six bovid genera and a run of cervids; it is not a potentially dangerous wild animal under RCW 16.30.010(2), whose enumerated definition reaches only mammals and reptiles named in it; and WAC 220-450-030's importation and possession rules are written for \"live wild animals, wild birds, or game fish\", which are the same geographically limited terms.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
+          "note": "A blue-tongue skink is a nonnative (exotic) animal, not naturalized in Virginia, and absent from the permit table. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -22017,6 +22117,23 @@
           "note": "Chamaeleonidae is named, which is what already put the veiled chameleon on this map as legal in Montana; Jackson's chameleon sits in the same family. Montana runs a white list and this clause is where nonvenomous lizards are let onto it. The two lists it defers to are short: ARM 12.6.2208 classifies no reptile as controlled at all, and ARM 12.6.2215(6) prohibits fifteen reptiles, all of them crocodilians, large constrictors, venomous snakes or the red-eared slider. The clause is also open, \"including but not limited to\", so a family it does not name is not thereby excluded.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(74); WAC 220-640-200(1)",
+          "quote": "\"Wildlife\" means all species of the animal kingdom whose members exist in Washington in a wild state. This includes but is not limited to mammals, birds, reptiles, amphibians, fish, and invertebrates.",
+          "note": "Trioceros jacksonii does not exist in Washington in a wild state, so it is not Washington wildlife. Washington answers by a geographic qualifier rather than by a species list, which is why it is one of the shortest states to read. Three things then have to be checked and all three come back empty: the animal is not designated deleterious exotic wildlife at WAC 220-640-200(1), which is a mute swan, mongooses, wild boar, javelina, six bovid genera and a run of cervids; it is not a potentially dangerous wild animal under RCW 16.30.010(2), whose enumerated definition reaches only mammals and reptiles named in it; and WAC 220-450-030's importation and possession rules are written for \"live wild animals, wild birds, or game fish\", which are the same geographically limited terms.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
+          "note": "Jackson's chameleon is a nonnative (exotic) animal, not naturalized in Virginia, and absent from the permit table. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -22370,6 +22487,23 @@
           "quote": "unless otherwise regulated pursuant to 87-5-116, all nonnative tropical and subtropical species of nonvenomous lizards not on the controlled or prohibited lists, including but not limited to the following families or subfamilies: ... (xix) Polychrotidae (anoles)",
           "note": "Montana names the anoles by family, using the pre-split Polychrotidae rather than Dactyloidae. The clause carries a geographic qualifier, \"tropical and subtropical\", and the green anole is the entry on this list where that is worth stopping over: its range runs from subtropical Florida and the Gulf coast up into warm temperate North Carolina and Tennessee. It reads as satisfied, because the family Montana chose is overwhelmingly neotropical and the green anole is its only North American member, so the entry would have nothing else to do. Worth re-checking if Fish, Wildlife and Parks ever publishes a determination, because Colorado shows what a range qualifier on an allow-list can do: there Boidae is listed and the rosy boa is still banned, off the same line that clears the boa constrictor.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(74); WAC 220-640-200(1)",
+          "quote": "\"Wildlife\" means all species of the animal kingdom whose members exist in Washington in a wild state. This includes but is not limited to mammals, birds, reptiles, amphibians, fish, and invertebrates.",
+          "note": "Anolis carolinensis does not exist in Washington in a wild state, so it is not Washington wildlife. Washington is far outside its range and it is on no state list. Washington answers by a geographic qualifier rather than by a species list, which is why it is one of the shortest states to read. Three things then have to be checked and all three come back empty: the animal is not designated deleterious exotic wildlife at WAC 220-640-200(1), which is a mute swan, mongooses, wild boar, javelina, six bovid genera and a run of cervids; it is not a potentially dangerous wild animal under RCW 16.30.010(2), whose enumerated definition reaches only mammals and reptiles named in it; and WAC 220-450-030's importation and possession rules are written for \"live wild animals, wild birds, or game fish\", which are the same geographically limited terms.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VA": {
+          "status": "conditional",
+          "sourceId": "va-4vac15-360-10",
+          "cite": "§ 15-360-10(A)",
+          "quote": "it shall be lawful to capture and possess live for private use and not for sale or export no more than one individual of any native or naturalized, as defined in 4VAC15-20-50, species of amphibian or reptile per physical address",
+          "note": "The exotic permit table is the wrong rule for this animal. Virginia fixes native and naturalized status by an incorporated document, the department's List of Native and Naturalized Fauna of Virginia, and that list carries \"Green Anole * Anolis carolinesis *\", the asterisk denoting a naturalized species. A naturalized animal is expressly excluded from the definition of a nonnative (exotic) animal at 4VAC15-20-50, so 4VAC15-30-40 does not reach it and 4VAC15-360-10 does: one individual per physical address, live, for private use, and not for sale or export. That the cap binds a keeper rather than only a collector is confirmed from the other direction by the domestic animal list, which writes an express carve-out for \"Domesticated morphs of red cornsnake ... visibly distinguishable from native red cornsnakes\"; that exception would have nothing to do if ordinary keeping of a native herp were free.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -22727,6 +22861,23 @@
           "note": "Montana answers by definition rather than by list, and it has to, because the domestic rabbit appears on none of the three species lists and § 87-5-705(1) would otherwise bar an unlisted exotic outright, which is what bans the tarantula and the giant millipede here. § 87-5-702(12)(b) says wildlife \"does not include domestic animals\", and the general definition at (2) fits a domestic rabbit on its first limb. Its second limb, \"readily controllable if accidentally released into the wild\", is the soft spot, since the European rabbit is the textbook animal that is not, though the pet breeds are a poor bet in a Montana winter. The enumeration that follows, \"livestock, as defined in 81-2-702, dogs, cats, rodents, Eurasian ferrets, and poultry\", is inclusive rather than closed and does not name the rabbit, and 81-2-702(5) livestock does not either. What settles it in practice is the other agency: the Department of Livestock lists rabbits with the small rodents on its import requirements, asking for a health certificate and no import permit and no Fish, Wildlife and Parks permit at all.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(72) and (74)",
+          "quote": "The term \"wildlife\" does not include feral domestic mammals, old world rats and mice of the family Muridae of the order Rodentia, or those fish, shellfish, and marine invertebrates classified as food fish or shellfish by the director.",
+          "note": "Washington is the one state where the geographic test would otherwise catch the rabbit, because feral European rabbits do live wild here, on San Juan Island among other places. The exclusion for feral domestic mammals is what takes the species back out, and it does the same work in the parallel definition of \"wild animals\" at subsection (72). So a domestic rabbit is neither wildlife nor a wild animal, and nothing in RCW 16.30 or WAC 220-640-200 reaches it either.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-20-50",
+          "cite": "§ 15-20-50(A); § 15-30-30",
+          "quote": "Domesticated breeds of European rabbit (Oryctolagus cuniculus) recognized by the American Rabbit Breeders Association, Inc. and any lineage resulting from crossbreeding recognized breeds.",
+          "note": "Virginia is the only jurisdiction on this map to settle the rabbit by naming a breed registry. Oryctolagus cuniculus is on the permit table at 4VAC15-30-40 as a predatory or undesirable nonnative, so a wild European rabbit needs a special permit and, under 4VAC15-20-50(B), any kept without one had to be declared to the department by 1 January 2018 and may not be bred or sold. The domestic animal definition lifts the ARBA-recognised breeds and their crosses out of that, and 4VAC15-30-30 then says the chapter \"does not prohibit the possession, importation, and sale of ... those domestic animals as defined in 4VAC15-20-50\". The department publishes the recognised breed list on its website, so the line moves when ARBA's does.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -23081,6 +23232,23 @@
           "quote": "A person may not import into the state, possess, or sell any exotic wildlife unless: (a) the importation, possession, or sale of the exotic wildlife is allowed by law or commission rule",
           "note": "Montana is a white list and an insect is inside it. § 87-5-702(12)(a) defines wildlife as \"any wild mammal, bird, reptile, amphibian, fish, mollusk, crustacean, or other wild animal\", and the catch-all reaches an arthropod; § 87-5-702(3) makes anything not native to Montana exotic wildlife; and § 87-5-705(1) then bars possessing it unless a law or commission rule allows it. Nothing does. The statutory noncontrolled list at § 87-5-706 runs birds, gallinaceous birds, fish, snakes, lizards, turtles, frogs, caecilians and salamanders and contains no invertebrate. ARM 12.6.2205 clears two scorpions and a hermit crab and no insect, ARM 12.6.2208 classifies one shrimp as controlled, and ARM 12.6.2215 prohibits a crayfish and three molluscs. So the cockroach falls where the tarantula and the giant millipede already sit on this map, banned by absence. Montana is the state where clearing the emperor scorpion by name and stopping there decides every other arthropod.",
           "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(74); WAC 220-640-200(1)",
+          "quote": "\"Wildlife\" means all species of the animal kingdom whose members exist in Washington in a wild state. This includes but is not limited to mammals, birds, reptiles, amphibians, fish, and invertebrates.",
+          "note": "Invertebrates are inside the taxonomic reach of the definition, which names them, and outside its geographic reach, because Gromphadorhina portentosa does not live wild in Washington. That is the reverse of New Hampshire, where naming invertebrates in the statute is what pulls them into a closed list and bans them. Washington answers by a geographic qualifier rather than by a species list, which is why it is one of the shortest states to read. Three things then have to be checked and all three come back empty: the animal is not designated deleterious exotic wildlife at WAC 220-640-200(1), which is a mute swan, mongooses, wild boar, javelina, six bovid genera and a run of cervids; it is not a potentially dangerous wild animal under RCW 16.30.010(2), whose enumerated definition reaches only mammals and reptiles named in it; and WAC 220-450-030's importation and possession rules are written for \"live wild animals, wild birds, or game fish\", which are the same geographically limited terms.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board finds and declares to be predatory or undesirable",
+          "note": "Virginia is one of the few states whose definition of a wild animal names arthropods outright, so the cockroach is inside the scheme rather than outside it, and then it is answered by absence: the only invertebrates on the permit table are eight crayfish and a mitten crab under CRUSTACEANS and a run of freshwater molluscs. No insect appears anywhere in it. Virginia permits by table and the reptile block of that table is four entries: all alligators and caimans, all crocodiles, all gavials, and the brown tree snake. Nothing here is on it, and 4VAC15-30-20 attaches the special permit only to animals the board has classed as predatory or undesirable, which is what the table is.",
           "verifiedOn": "2026-09-05"
         }
       }

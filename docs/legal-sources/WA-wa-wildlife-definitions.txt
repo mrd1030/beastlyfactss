@@ -1,0 +1,100 @@
+SOURCE: Washington: RCW 77.08.010 (definitions), WAC 220-640-200 (deleterious exotic wildlife), WAC 220-450-030 (live wildlife), RCW 16.30 (dangerous wild animals)
+URL: https://app.leg.wa.gov/RCW/default.aspx?cite=77.08.010 and https://app.leg.wa.gov/WAC/default.aspx?cite=220-640-200 and .../?cite=220-450&full=true
+FETCHED: 2026-09-05 (app.leg.wa.gov serves both the RCW and the WAC as plain HTML to curl; add &full=true to a WAC chapter to get every section on one page.)
+
+READ THIS FIRST. Washington answers by a GEOGRAPHIC qualifier, not by a species list, and it is in
+the definition:
+
+  RCW 77.08.010(74): "Wildlife" means all species of the animal kingdom whose members exist in
+  Washington in a wild state. This includes but is not limited to mammals, birds, reptiles,
+  amphibians, fish, and invertebrates. The term ... does not include feral domestic mammals, old
+  world rats and mice ...
+
+  RCW 77.08.010(72): "Wild animals" means those species of the class Mammalia whose members exist in
+  Washington in a wild state.
+
+The taxonomic reach is total, invertebrates included. The geographic reach is not: a species that
+does not live wild in Washington is not Washington wildlife, so the whole of Title 77 and WAC
+220-450 misses it. That is why an exotic lizard, a Madagascar hissing cockroach and a SOUTHERN
+flying squirrel all come out clear, while taking or keeping Washington's own northern flying
+squirrel does not. The feral-domestic-mammal exclusion is what saves the rabbit, since feral
+European rabbits do live wild here.
+
+The other half is a designated list rather than a category. RCW 77.08.010(13) defines deleterious
+exotic wildlife as species not native to Washington AND designated as dangerous, and WAC
+220-640-200(1) is the designation: one bird, mongooses, wild boar, javelina, six bovid genera and a
+run of cervids. Nothing else.
+
+RCW 16.30.010(2), the potentially dangerous wild animal statute, is an enumerated list of mammals
+and reptiles and answers almost nothing on this map, which is the trap: it is what most summaries of
+Washington quote and it reaches no rodent, no invertebrate and no ordinary pet reptile.
+
+
+==== RCW 77.08.010(13), (72), (73) and (74) ====
+(13) "Deleterious exotic wildlife" means species of the animal kingdom not native to Washington
+and designated as dangerous to the environment or wildlife of the state.
+
+(72) "Wild animals" means those species of the class Mammalia whose members exist in Washington in
+a wild state. The term "wild animal" does not include feral domestic mammals or old world rats and
+mice of the family Muridae of the order Rodentia.
+
+(73) "Wild birds" means those species of the class Aves whose members exist in Washington in a
+wild state.
+
+(74) "Wildlife" means all species of the animal kingdom whose members exist in Washington in a
+wild state. This includes but is not limited to mammals, birds, reptiles, amphibians, fish, and
+invertebrates. The term "wildlife" does not include feral domestic mammals, old world rats and
+mice of the family Muridae of the order Rodentia, or those fish, shellfish, and marine
+invertebrates classified as food fish or shellfish by the director. The term "wildlife" includes
+all stages of development and the bodily parts of wildlife members.
+
+==== WAC 220-640-200(1) and (2), deleterious exotic wildlife ====
+(1) The following animals are hereby designated as deleterious exotic wildlife: (a) Birds: In the
+family Anatidae, the mute swan (Cygnus olor). (b) Mammals: (i) In the family Viverridae, the
+mongoose (all members of the genus Herpestes). (ii) In the family Suidae, the wild boar (Sus
+scrofa and all wild hybrids). (iii) In the family Tayassuidae, the collared peccary (javelina)
+(Tayassu tajacu). (iv) In the family Bovidae, all members and hybrids of the following genera:
+Rupicapra (Chamois); Hemitragus (Tahr); Capra (goats, ibexes except domestic goat Capra (hircus));
+Ammotragus (Barbary sheep or Aoudad); Ovis (sheep), except domestic sheep Ovis aries; Damaliscus
+(Sassabies); Alcelaphus buselaphus (Hartebeest); and Connochaetes (Wildebeests). (v) In the family
+Cervidae, the European red deer (Cervus elaphus elaphus), all nonnative subspecies of Cervus
+elaphus, and all hybrids with North American elk; Fallow deer (Dama dama), Axis deer (Axis axis),
+Rusa deer or Sambar deer (Cervus unicolor, Cervus timorensis, Cervus mariannus and Cervus
+alfredi), Sika deer (Cervus Nippon), Reindeer (all members of the genus Rangifer except Rangifer
+tarandus caribou), and Roedeer (all members of the genus Capreolus). (2) It is unlawful to import
+into the state, hold, possess, propagate, offer for sale, sell, transfer, or release live
+specimens of deleterious exotic wildlife, their gametes and/or embryo, except as provided under
+subsection (3), (4), (5), (6), or (7) of this section, and as provided in WAC 220-640-020 .
+
+==== WAC 220-450-030(1) to (6), live wildlife ====
+Taking from the wild, importation, possession, transfer, and holding in captivity. (1) It is
+unlawful to take live wildlife, wild birds, or game fish from the wild without a permit issued by
+the director except as otherwise provided by department rule. This subsection does not apply to
+starlings, house sparrows, Eurasian collared doves, and rock doves taken by falconers, or rock
+doves and Eurasian collared doves taken by bird dog trainers. (2) Notwithstanding the provisions
+of WAC 220-430-010 (1), 220-450-050 , and subsections (3) and (4) of this section, and except as
+provided under subsection (7), (8), (9), or (10) of this section, it is unlawful to import into
+the state, hold, possess, propagate, offer for sale, sell, transfer, or release live specimens of
+or the gametes and/or embryos of the following species in the family Cervidae . Common Name
+Scientific Name Roosevelt and Rocky Mountain elk Cervus canadensis Mule deer and Black-tailed deer
+Odocoileus hemionus White-tailed deer Odocoileus virginianus Moose Alces alces Caribou Rangifer
+tarandus caribou (3) It is unlawful to import into the state or to hold live wildlife taken, held,
+possessed, or transported contrary to federal or state law, local ordinance, or department rule.
+It is unlawful to import live wild animals, wild birds, or game fish without first presenting to
+the department the health certificate required by the Washington department of agriculture under
+WAC 16-54-180 . However, raptors used for falconry or propagation may be imported if the importer
+has health certificates for the raptors. Importers must produce proof of lawful importation for
+inspection if asked to do so by a department employee. (4) It is unlawful to possess or hold in
+captivity live wild animals, wild birds, or game fish unless lawfully acquired. Any person
+possessing or holding wild animals, wild birds, or game fish in captivity must provide proof of
+lawful acquisition and possession for inspection if asked to do so by a department employee. The
+proof must identify the wild animals', wild birds', or game fish's: (a) Species; (b) Age and sex;
+(c) Origin; (d) Receiving party's name; (e) Source's name and address; (f) Invoice/statement date;
+and (g) Documentation of prior transfers. (5) Live wild animals, wild birds, or game fish held in
+captivity, or their progeny or parts thereof, may not be sold or otherwise used commercially
+except as provided by department rule. (6) It is unlawful to release wildlife from captivity
+except as provided in WAC 220-450-010 . It is unlawful to release fish into any state waters,
+including private, natural, or man-made ponds, without first obtaining a fish planting permit.
+However, if a person catches game fish and keeps the fish alive on stringers, in live wells, or in
+other containers while fishing, he or she may release the fish back into the same waters that he
+or she caught the game fish in.

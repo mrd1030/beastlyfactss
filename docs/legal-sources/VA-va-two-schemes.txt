@@ -1,0 +1,156 @@
+SOURCE: Virginia: 4VAC15-20-50 (definitions), 4VAC15-30-20/30/40 (nonnative animals), 4VAC15-360-10 (native and naturalized herps), Va. Code § 29.1-521
+URL: https://law.lis.virginia.gov/admincode/title4/agency15/chapter20/section50/ and .../chapter30/section40/ and .../chapter360/section10/
+FETCHED: 2026-09-05 (law.lis.virginia.gov serves one section per page as plain HTML to curl. The department's incorporated species list is a 75-page PDF at https://dwr.virginia.gov/wp-content/uploads/media/virginia-native-naturalized-species.pdf; an asterisk beside a name denotes a naturalized species, two asterisks a species native to some areas and naturalized in others.)
+
+READ THIS FIRST. Virginia runs TWO schemes and 4VAC15-20-50 decides which one an animal is in.
+Reading only the exotic permit table is the mistake this state invites.
+
+  "Nonnative (exotic) animal" means those species and subspecies of animals not naturally occurring
+  in Virginia, EXCLUDING domestic and naturalized species.
+
+So a naturalized species is not an exotic. 4VAC15-30-40's permit table therefore does not reach it,
+and 4VAC15-360-10(A) does: "no more than one individual of any native or naturalized ... species of
+amphibian or reptile per physical address", live, for private use, not for sale or export. That
+caps the GREEN ANOLE, which the department's list carries with a naturalized asterisk. It covers
+aquatic invertebrates, amphibians, reptiles and nongame fish and NO MAMMAL, which is what leaves a
+native mammal on Va. Code § 29.1-521(A)(10), the general bar on possessing a wild animal "except as
+specifically permitted by law".
+
+That the one-per-address cap binds a keeper rather than only a collector is confirmed from the other
+direction: the domestic animal list writes an express carve-out for "Domesticated morphs of red
+cornsnake (Pantherophis guttatus) visibly distinguishable from native red cornsnakes", which would
+have nothing to do if keeping a native herp were free.
+
+"Wild animal" is "any member of the animal kingdom, except domestic animals", and the list that
+follows names ARTHROPODS expressly, so invertebrates are inside the scheme. The permit table's only
+invertebrates are eight crayfish, a mitten crab and a run of freshwater molluscs.
+
+The rabbit is the sharpest entry in the state: wild Oryctolagus cuniculus is ON the permit table,
+and the domestic animal list clears "Domesticated breeds ... recognized by the American Rabbit
+Breeders Association, Inc.", the only registry test for a rabbit anywhere on this map.
+
+
+==== 4VAC15-20-50 in full ====
+4VAC15-20-50. Definitions; "wild animal," "native animal," "naturalized animal," "nonnative
+(exotic) animal," and "domestic animal". A. In accordance with 29.1-100 of the Code of Virginia,
+the following terms shall have the meanings ascribed to them by this section when used in
+regulations of the board: "Native animal" means those species and subspecies of animals naturally
+occurring in Virginia, as included in the department's 2024 "List of Native and Naturalized Fauna
+of Virginia," with copies available in the headquarters and regional offices of the department.
+"Naturalized animal" means those species and subspecies of animals not originally native to
+Virginia that have established wild, self-sustaining populations, as included in the department's
+2024 "List of Native and Naturalized Fauna of Virginia," with copies available in the headquarters
+and regional offices of the department. "Nonnative (exotic) animal" means those species and
+subspecies of animals not naturally occurring in Virginia, excluding domestic and naturalized
+species. The following animals are defined as domestic animals: Domestic dog (Canis familiaris),
+including wolf hybrids. Domestic cat (Felis catus), including hybrids with wild felines. Domestic
+horse (Equus caballus), including hybrids with Equus asinus. Domestic ass, burro, and donkey
+(Equus asinus). Domestic cattle (Bos taurus and Bos indicus). Domestic sheep (Ovis aries),
+including hybrids with wild sheep. Domestic goat (Capra hircus). Domestic swine (Sus scrofa),
+including pot-bellied pig and excluding any swine that are wild or for which no claim of ownership
+can be made. Llama (Lama glama). Alpaca (Lama pacos). Camels (Camelus bactrianus and Camelus
+dromedarius). Domesticated races of hamsters (Mesocricetus spp.). Domesticated races of mink
+(Mustela vison) where adults are heavier than 1.15 kilograms or their coat color can be
+distinguished from wild mink. Domesticated races of guinea pigs (Cavia porcellus). Domesticated
+races of gerbils (Meriones unguiculatus). Domesticated races of chinchillas (Chinchilla laniger).
+Domesticated races of rats (Rattus norvegicus and Rattus rattus). Domesticated races of mice (Mus
+musculus). Domesticated breeds of European rabbit (Oryctolagus cuniculus) recognized by the
+American Rabbit Breeders Association, Inc. and any lineage resulting from crossbreeding recognized
+breeds. A list of recognized rabbit breeds is available on the department's website. Domesticated
+races of chickens (Gallus). Domesticated races of turkeys (Meleagris gallopavo). Domesticated
+races of ducks and geese distinguishable morphologically from wild birds. Feral pigeons (Columba
+domestica and Columba livia) and domesticated races of pigeons. Domesticated races of guinea fowl
+(Numida meleagris). Domesticated races of peafowl (Pavo cristatus). Domesticated morphs of red
+cornsnake (Pantherophis guttatus) visibly distinguishable from native red cornsnakes based on
+their unique colors and patterns. "Wild animal" means any member of the animal kingdom, except
+domestic animals, including any native, naturalized, or nonnative (exotic) mammal, fish, bird,
+amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and any hybrid of these
+animals, except as otherwise specified in regulations of the board, or part, product, egg, or
+offspring of them, or the dead body or parts thereof. B. Exception for red foxes and European
+rabbits. Domesticated red foxes (Vulpes vulpes) having coat colors distinguishable from wild red
+foxes and wild European rabbits possessed in captivity on July 1, 2017, may be maintained in
+captivity until the animal dies, but the animal may not be bred or sold without a permit from the
+department. Persons possessing domesticated red foxes or European rabbits without a permit from
+the department must declare such possession in writing to the department by January 1, 2018. This
+written declaration must include the number of individual animals in possession and date acquired,
+sex, estimated age, coloration, and a photograph of each fox or European rabbit. This written
+declaration (i) shall serve as a permit for possession only and (ii) is not transferable.
+
+==== 4VAC15-30-40(A), the permit requirement ====
+A. Permit required. A special permit is required and may be issued by the department, if
+consistent with the department's fish and wildlife management program, to import, possess, or sell
+those nonnative (exotic) animals listed in the following table and in 4VAC15-20-210 that the board
+finds and declares to be predatory or undesirable within the meaning and intent of 29.1-542 of the
+Code of Virginia, in that their introduction into the Commonwealth will be detrimental to the
+native fish and wildlife resources of Virginia.
+
+==== 4VAC15-30-40(A), MAMMALS block down to Lagomorpha ====
+MAMMALS Order Family Genus/Species Common Name Artiodactyla Suidae All Species Pigs or Hogs*
+Cervidae All Species Deer* Carnivora Canidae All Species Wild Dogs,* Wolves, Coyotes or Coyote
+hybrids, Jackals and Foxes Ursidae All Species Bears* Procyonidae All Species Raccoons and*
+Relatives Mustelidae All Species Weasels, Badgers,* Skunks and Otters (except Mustela putorius
+furo) Ferret Viverridae All Species Civets, Genets,* Lingsangs, Mongooses, and Fossas Herpestidae
+All Species Mongooses* Hyaenidae All Species Hyenas and Aardwolves* Felidae All Species Cats*
+Chiroptera All Species Bats* Lagomorpha Lepridae Brachylagus idahoensis Pygmy rabbit Lepus
+europeaeous European hare Oryctolagus cuniculus European rabbit Sylvilagus bachmani riparius
+Riparian brush rabbit Sylvilagus palustris hefneri Lower Keys marsh rabbit
+
+==== 4VAC15-30-40(A), REPTILES and the start of CRUSTACEANS ====
+REPTILES Order Family Genus/Species Common Name Crocodilia Alligatoridae All species Alligators,
+caimans* Crocodylidae All species Crocodiles* Gavialidae All species Gavials* Squamata Colubridae
+Boiga irregularis Brown tree snake* CRUSTACEANS Order Family Genus/Species Common Name
+
+==== 4VAC15-30-40(B) to (D) ====
+B. Temporary possession permit for certain animals. Notwithstanding the permitting requirements of
+subsection A of this section, a person, company, or corporation possessing any nonnative (exotic)
+animal designated with an asterisk (*) in subsection A of this section prior to July 1, 1992, must
+have proof that the animal was declared to the department in writing prior to January 1, 1993.
+This written declaration shall serve as a permit for possession only, is not transferable, and
+must be renewed every five years. This written declaration must include species name, common name,
+number of individuals, date or dates acquired, sex (if possible), estimated age, height or length,
+and other characteristics such as bands and band numbers, tattoos, registration numbers,
+coloration, and specific markings. Possession transfer will require a new permit according to the
+requirements of this subsection. C. Exception for certain monk parakeets. No permit is required
+for monk parakeets (quakers) that have been captive bred and are closed-banded with a seamless
+band. D. Exception for parts or products. No permit is required for parts or products of those
+nonnative (exotic) animals listed in subsection A of this section that may be used for personal
+use, in the manufacture of products, or in scientific research, provided that such parts or
+products are packaged outside the Commonwealth by any person, company, or corporation duly
+licensed by the state in which the parts originate. Such packages may be transported into the
+Commonwealth, consistent with other state laws and regulations, so long as the original package
+remains unbroken, unopened, and intact until its point of destination is reached. The person,
+business, or institution ordering such nonnative (exotic) animal parts shall keep documentation
+concerning the type and cost of the animal parts ordered, the purpose and date of the order, point
+and date of shipping, and date of receiving. Such documentation shall be open to inspection by a
+representative of the Department of Wildlife Resources.
+
+==== 4VAC15-30-20 ====
+4VAC15-30-20. Permit required to import, liberate or possess predatory or undesirable animals or
+birds. Under the authority of 29.1-542 of the Code of Virginia, live wolves or coyotes, or birds
+or animals otherwise classed as predatory or undesirable, may not be imported into the
+Commonwealth or liberated therein, or possessed therein, except under a special permit of the
+board. Before such permit is issued, the importer shall make application to the department, giving
+the place of origin, the name and address of the exporter and a certificate from a licensed and
+accredited practicing veterinarian, or certified fish pathologist, certifying that the animal to
+be imported is not manifesting any signs of infectious, contagious, or communicable disease.
+
+==== 4VAC15-30-30 ====
+4VAC15-30-30. Exclusions. This chapter does not prohibit the possession, importation, and sale of
+native or naturalized albino amphibians, native or naturalized albino reptiles, or those domestic
+animals as defined in 4VAC15-20-50 .
+
+==== 4VAC15-360-10(A), the one-per-address cap ====
+A. Possession limits. Except as otherwise provided for in 29.1-418 of the Code of Virginia,
+4VAC15-20-130 , 4VAC15-320-40 , and this chapter, it shall be lawful to capture and possess live
+for private use and not for sale or export no more than one individual of any native or
+naturalized, as defined in 4VAC15-20-50 , species of amphibian or reptile per physical address,
+and 20 individuals of any single native or naturalized, as defined in 4VAC15-20-50 , species of
+aquatic invertebrate and nongame fish unless specifically listed in this subsection: 1. The
+following species may be taken in unlimited numbers from inland waters statewide: carp, mullet,
+white sucker, northern hogsucker, gizzard shad, threadfin shad, blueback herring (see
+4VAC15-320-25 for anadromous blueback herring limits), white perch, yellow perch, alewife (see
+4VAC15-320-25 for anadromous alewife limits), stoneroller (hornyhead), fathead minnow, golden
+shiner, goldfish, and Asian clams. Grass carp may only be harvested in unlimited numbers from
+public inland rivers and streams of the Commonwealth. It is unlawful to harvest grass carp from
+any public inland lake and reservoir. Anglers taking grass carp must ensure that all harvested
+grass carp are dead.
