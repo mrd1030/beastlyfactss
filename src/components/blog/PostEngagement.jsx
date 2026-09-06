@@ -41,6 +41,16 @@ function getSessionKey() {
   return key;
 }
 
+// The badge that marks a comment as the site owner's. is_author arrives from
+// public_blog_comments already decided, so there is nothing to verify here.
+function AuthorBadge() {
+  return (
+    <span className="inline-flex items-center rounded-full bg-secondary/15 px-2 py-0.5 text-[10px] font-body font-bold uppercase tracking-wider text-secondary">
+      Author
+    </span>
+  );
+}
+
 export default function PostEngagement({ postId, postTitle, postSlug }) {
   const [likeCount, setLikeCount] = useState(0);
   const [hasLiked, setHasLiked] = useState(false);
@@ -102,10 +112,11 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
       // Reads the view, not the table: it exposes approved comments only and
       // omits author_email entirely. created_date is aliased so the markup
       // below is unchanged from the base44 version. parent_id is null for a
-      // top-level comment and set for a reply.
+      // top-level comment and set for a reply. is_author is the site-owner
+      // badge, derived server-side from app_admins, never client-supplied.
       supabase
         .from('public_blog_comments')
-        .select('id, parent_id, author_name, content, created_date:created_at')
+        .select('id, parent_id, author_name, content, created_date:created_at, is_author')
         .eq('post_id', postId)
         .order('created_at', { ascending: true }),
     ]);
@@ -450,6 +461,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                 >
                   <div className="flex items-center gap-2 mb-1.5">
                     <span className="font-body font-bold text-sm text-foreground">{c.author_name}</span>
+                    {c.is_author && <AuthorBadge />}
                     <span className="text-xs text-muted-foreground font-body">
                       {new Date(c.created_date).toLocaleDateString()}
                     </span>
@@ -472,6 +484,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                         <div key={r.id}>
                           <div className="flex items-center gap-2 mb-1">
                             <span className="font-body font-bold text-sm text-foreground">{r.author_name}</span>
+                            {r.is_author && <AuthorBadge />}
                             <span className="text-xs text-muted-foreground font-body">
                               {new Date(r.created_date).toLocaleDateString()}
                             </span>

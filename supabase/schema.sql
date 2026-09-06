@@ -284,10 +284,12 @@ create policy "anyone can like a comment"
 -- has no select policy on it. The view is the boundary: it exposes approved
 -- comments only, without emails. parent_id is included so the client can
 -- build the two-level comment/reply tree; it is null for top-level comments.
+-- is_author travels too: the badge has to reach the reader, and a boolean is
+-- safe to expose in a way author_email is not.
 drop view if exists public.public_blog_comments;
 create view public.public_blog_comments
   with (security_invoker = off) as
-  select id, post_id, parent_id, author_name, content, created_at
+  select id, post_id, parent_id, author_name, content, created_at, is_author
   from public.blog_comments
   where status = 'approved';
 
@@ -388,18 +390,38 @@ $vault$;
 alter table public.blog_comments
   add column if not exists moderation_token uuid;
 
+-- Marks a comment as written by the site author, so a reader can tell an
+-- owner's answer from another visitor's. Derived from app_admins on insert,
+-- never submitted, see the trigger below.
+alter table public.blog_comments
+  add column if not exists is_author boolean not null default false;
+
 -- Forced server-side, never taken from the request. Without this an attacker
 -- could insert a comment carrying a token they chose and immediately approve
 -- it, which would make the whole moderation step decorative. status is pinned
 -- here too, belt and braces with the insert policy's with check.
+--
+-- is_author is derived on the same principle: taking it from the request would
+-- let anyone badge themselves as the site owner. Matching author_email against
+-- app_admins means the badge follows whoever is actually an admin, and posting
+-- from the site's own comment form with that email is all it takes.
+--
+-- security definer is required for that lookup, not decoration: anon has no
+-- grant on app_admins (revoked in social_feed.sql), so without it every insert
+-- would fail on permissions the moment the exists() runs.
 create or replace function public.set_comment_moderation_token()
 returns trigger
 language plpgsql
+security definer
 set search_path = public, extensions
 as $fn$
 begin
   new.moderation_token := gen_random_uuid();
   new.status := 'pending';
+  new.is_author := exists (
+    select 1 from public.app_admins
+    where lower(email) = lower(nullif(btrim(new.author_email), ''))
+  );
   return new;
 end
 $fn$;
