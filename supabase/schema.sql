@@ -147,10 +147,13 @@ create index if not exists blog_comments_parent_id_idx
   on public.blog_comments (parent_id);
 
 -- Enforced here rather than left to the client: a reply must target an
--- approved, top-level comment on the same post. The parent_id is not null
--- check on the target is what actually caps nesting at one level - a reply
--- can never itself be replied to, because its own id can never pass this
--- check as someone else's parent_id.
+-- approved comment on the same post. Nesting stays capped at one level, but
+-- by coercion rather than refusal: if the target is itself a reply, the new
+-- row is re-parented onto that thread's root. This is what makes a reply to
+-- a reply possible without recursive rendering or a depth limit, and storage
+-- stays exactly one level deep so the grouping in PostEngagement is unchanged.
+-- The earlier version required "parent_id is null" on the target and so left
+-- an author unable to answer a response to their own reply.
 --
 -- security definer is load-bearing, not optional: a plain trigger function
 -- runs as the inserting role (anon), which has no select grant on
@@ -164,16 +167,30 @@ language plpgsql
 security definer
 set search_path = public, extensions
 as $fn$
+declare
+  target_parent uuid;
+  target_found boolean;
 begin
-  if new.parent_id is not null and not exists (
-    select 1 from public.blog_comments
-    where id = new.parent_id
-      and post_id = new.post_id
-      and status = 'approved'
-      and parent_id is null
-  ) then
-    raise exception 'Replies must target an approved top-level comment on the same post';
+  if new.parent_id is null then
+    return new;
   end if;
+
+  select parent_id, true
+    into target_parent, target_found
+    from public.blog_comments
+   where id = new.parent_id
+     and post_id = new.post_id
+     and status = 'approved';
+
+  if not coalesce(target_found, false) then
+    raise exception 'Replies must target an approved comment on the same post';
+  end if;
+
+  -- Target is itself a reply, so attach to that thread's root instead.
+  if target_parent is not null then
+    new.parent_id := target_parent;
+  end if;
+
   return new;
 end
 $fn$;
@@ -267,10 +284,12 @@ create policy "anyone can like a comment"
 -- has no select policy on it. The view is the boundary: it exposes approved
 -- comments only, without emails. parent_id is included so the client can
 -- build the two-level comment/reply tree; it is null for top-level comments.
+-- is_author travels too: the badge has to reach the reader, and a boolean is
+-- safe to expose in a way author_email is not.
 drop view if exists public.public_blog_comments;
 create view public.public_blog_comments
   with (security_invoker = off) as
-  select id, post_id, parent_id, author_name, content, created_at
+  select id, post_id, parent_id, author_name, content, created_at, is_author
   from public.blog_comments
   where status = 'approved';
 
@@ -371,18 +390,38 @@ $vault$;
 alter table public.blog_comments
   add column if not exists moderation_token uuid;
 
+-- Marks a comment as written by the site author, so a reader can tell an
+-- owner's answer from another visitor's. Derived from app_admins on insert,
+-- never submitted, see the trigger below.
+alter table public.blog_comments
+  add column if not exists is_author boolean not null default false;
+
 -- Forced server-side, never taken from the request. Without this an attacker
 -- could insert a comment carrying a token they chose and immediately approve
 -- it, which would make the whole moderation step decorative. status is pinned
 -- here too, belt and braces with the insert policy's with check.
+--
+-- is_author is derived on the same principle: taking it from the request would
+-- let anyone badge themselves as the site owner. Matching author_email against
+-- app_admins means the badge follows whoever is actually an admin, and posting
+-- from the site's own comment form with that email is all it takes.
+--
+-- security definer is required for that lookup, not decoration: anon has no
+-- grant on app_admins (revoked in social_feed.sql), so without it every insert
+-- would fail on permissions the moment the exists() runs.
 create or replace function public.set_comment_moderation_token()
 returns trigger
 language plpgsql
+security definer
 set search_path = public, extensions
 as $fn$
 begin
   new.moderation_token := gen_random_uuid();
   new.status := 'pending';
+  new.is_author := exists (
+    select 1 from public.app_admins
+    where lower(email) = lower(nullif(btrim(new.author_email), ''))
+  );
   return new;
 end
 $fn$;

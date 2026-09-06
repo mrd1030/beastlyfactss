@@ -1201,3 +1201,19 @@ cat furniture around it, warm domestic lighting, shallow depth of field. Engaged
 and playing, but low to the ground and unhurried. No hands, no people, the toy end
 only.
 ```
+
+## Shedding mechanism
+
+Sits beside `reptile-shedding.jpg`, which shows a clean finished shed. This one
+shows the stage before it, so the pair reads as cause and effect rather than two
+takes on the same moment.
+
+#### snake-shedding-humidity-myth.jpg
+```
+A corn snake resting on a piece of cork bark, head turned toward the camera, both
+eyes clouded a milky blue-white in the pre-shed phase. Skin dull and slightly
+matte compared to normal. Dry enclosure, aspen substrate, warm side lighting
+picking out the scale texture along the body. Shallow depth of field with the
+eye sharp. The cloudy eye is the subject and must be unmistakable. No hands, no
+people, no shed skin in frame.
+```
