@@ -583,7 +583,7 @@
     "me-unrestricted": {
       "title": "Maine Department of Inland Fisheries and Wildlife, Unrestricted Species List",
       "url": "https://www.maine.gov/ifw/docs/unrestrictedspecies.pdf",
-      "note": "Species needing no importation, exhibition or possession permit."
+      "note": "The list 12 M.R.S. § 12152(1-A) requires the department to maintain and 09-137 CMR ch. 7 § 7.06(1) describes: species needing no importation, exhibition, propagation, research or possession permit, which pet shops may also trade. Dated 11 August 2017 on every page, and this is the version IFW still serves. Three headings do most of the work: Reptilia, Serpentes and Testudines each carry \"Captive Bred Origin Only\", and an asterisk on an entry removes anything on the USFWS injurious or threatened and endangered lists, in CITES Appendix I, or on the IUCN Red List as Endangered, Critically Endangered or Extinct in the Wild."
     },
     "wi-169": {
       "title": "Wisconsin Statutes Chapter 169, Captive Wildlife",
@@ -701,9 +701,9 @@
       "note": "Five classes. Class I is a specific list of inherently dangerous animals, possessable only by zoos, circuses and commercial propagators. Class II is \"native species, except those listed in other classes\". Class III \"requires no permits except those required by the department of agriculture, and includes all species not listed in other classes\", followed by seventeen illustrative subdivisions. Class IV is black bear, white-tailed deer and wild turkey; Class V is whatever the commission designates as injurious. The catch-all sitting at Class III rather than Class II is what makes Tennessee permissive, and the exception clause in Class II is what keeps native reptiles out of it. Tennessee's official code is behind LexisNexis and publications.tnsosfiles.com refuses this container, so the wording here was taken from two independent reproductions that agree: animallaw.info, which carries the current post-2024 text, and lawserver.com, whose copy is marked effective until 1 July 2024 and differs only in the snake clause, which the 2024 amendment changed from \"poisonous\" to \"venomous\"."
     },
     "ar-unrestricted": {
-      "title": "Arkansas Game and Fish Commission, Unrestricted Captive Wildlife Species List",
-      "url": "https://www.agfc.com/wp-content/uploads/2023/04/221112_4CP-Unrestricted-Captive-Wildlife-Species-List-.pdf",
-      "note": "Species that may be held in captivity without a permit, named individually with binomials. One of the cleanest primary sources of any state for this purpose."
+      "title": "Arkansas Game and Fish Commission Code Book, Addendum R1.01, Unrestricted Captive Wildlife Species List",
+      "url": "https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf",
+      "note": "Species exempt from Codes 09.02 (possession of non-native wildlife restricted), 09.07 (breeder/dealer permit) and 09.10 (importation permit), named individually with binomials. Read it out of the codebook rather than the compiled PDF AGFC posted at agfc.com in 2022, which is the version that circulates as \"the Arkansas list\" and is two revisions behind: it lacks the rosy boa and the whole Anoline Lizards entry with its Arkansas-native exception. The compiled PDF says so itself, that the codebook lists \"take precedence\"."
     },
     "id-020427": {
       "title": "IDAPA 02.04.27, Idaho Department of Agriculture, Rules Governing Deleterious Exotic Animals",
@@ -738,7 +738,7 @@
     "nh-fis800": {
       "title": "New Hampshire Code of Administrative Rules, Fis 800, Importation and Possession of Wildlife",
       "url": "https://www.gencourt.state.nh.us/rules/state_agencies/fis800.html",
-      "note": "Fis 804.02 is the non-controlled possession list, needing no permit. Fis 804.05 is the controlled table, and the number beside each species is the permittee category allowed to hold it. Category 1 is an individual, category 5 is an exhibitor, so a species marked 5 alone cannot be kept by a private person at all."
+      "note": "Readopted in full by Document #14558, effective 21 April 2026. Four buckets and a closing rule. Fis 804.02 is the non-controlled possession list, Fis 804.03 the prohibited list, Fis 804.05 with Table 800.2 the controlled table, and Fis 804.04(b) then says \"All species not specifically listed under the categories of non-controlled, prohibited, or controlled shall be designated as prohibited.\" Fis 803 runs the same three-way split for importation against Table 800.1. The number beside a species in either table is the permittee category from Fis 802.01: 1 is an individual, 5 an exhibitor, so a species marked 5 alone cannot be held privately. Fis 802.05 is the waiver for unlisted species and subsection (c) closes it to categories 1, 2, 3, 4, 6 and 7, which leaves only exhibitors."
     },
     "mo-578-023": {
       "title": "Missouri Revised Statutes § 578.023, Keeping a dangerous wild animal",
@@ -1429,6 +1429,56 @@
       "title": "Ohio Rev. Code § 1531.01(X), definition of wild animals",
       "url": "https://codes.ohio.gov/ohio-revised-code/section-1531.01",
       "note": "Ohio defines wild animals as \"mollusks, crustaceans, aquatic insects, fish, reptiles, amphibians, wild birds, wild quadrupeds, and all other wild mammals\". The word aquatic in front of insects is the whole answer for a terrestrial invertebrate: a land insect or an arachnid is not a wild animal in Ohio and the Division of Wildlife has nothing to say about it."
+    },
+    "ar-code-0900": {
+      "title": "Arkansas Game and Fish Commission Code Book, Chapter 09.00 (Captive Wildlife) and Chapter 01.00 definitions",
+      "url": "https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf",
+      "note": "Code 09.01 makes it unlawful to hold any live wildlife captive unless otherwise specified, and its exceptions include terrestrial invertebrates. Code 09.02 conditions non-native wildlife on sourcing and veterinary certification. Code 09.14 caps native wildlife pets at six per household. Chapter 01.00 supplies the two definitions that decide the rest: WILDLIFE reaches \"all other wild animals, regardless of classification\", and WILD means \"living in a state of nature and not domesticated\". Addendum R1.02 closes with \"Species not listed in Addenda R1.01, R1.02, or R1.03 are prohibited until evaluated\", so absence is a bar rather than a silence."
+    },
+    "me-09-137-c7": {
+      "title": "09-137 CMR ch. 7, Rules for Importation, Possession, Propagation, Rehabilitation, and Exhibition of Wildlife",
+      "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/137c007.docx",
+      "note": "Maine is a closed-list state and § 7.06(4) is the sentence that makes it one: \"A person may not possess any species that has not been categorized\", and an uncategorised species \"will not be eligible for a permit under this chapter\". The four categories are the Unrestricted List, the Prohibited list at § 7.18(1), and Restricted Categories 1 and 2. Category 1 permits go only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities, so it is not a pet tier; Category 2 is open to \"an individual with demonstrated experience\". § 7.05 and § 7.06(5) are the route for getting an unlisted species classified."
+    },
+    "me-12-12152": {
+      "title": "12 M.R.S. § 12152, Permit to possess wildlife in captivity",
+      "url": "https://legislature.maine.gov/statutes/12/title12sec12152.html",
+      "note": "Subsection 1-A is the bar: \"a person may not import wildlife into or possess wildlife in the State or receive or possess wildlife imported into the State\", with the unrestricted list as the exception. Subsection 1-B is the only wild-take allowance and it reaches reptiles, amphibians and invertebrates native to Maine and nothing else: five amphibians per species, two reptiles per species, invertebrates with no limit, with importation, sale, exhibition, propagation and export all still barred without a permit. It does not reach native mammals."
+    },
+    "mo-3csr10-4": {
+      "title": "3 CSR 10-4, Missouri Wildlife Code: General Provisions",
+      "url": "https://www.sos.mo.gov/adrules/csr/current/3csr/3c10-4.pdf",
+      "note": "The general prohibition at 3 CSR 10-4.110(1) bars possessing any form of wildlife except as the Code permits, and then ends with the clause that answers every invertebrate question in the state: \"however, this Code shall not apply to other invertebrates except as specifically provided\". 3 CSR 10-4.117 is the separate prohibited species rule, which is fish, crayfish and aquatic plants."
+    },
+    "mo-252-020": {
+      "title": "Missouri Revised Statutes § 252.020, definitions",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=252.020",
+      "note": "Defines wildlife as \"all wild birds, mammals, fish and other aquatic and amphibious forms, and all other wild animals, regardless of classification\". The open catch-all is broad enough to reach an insect, which is why the disclaimer in 3 CSR 10-4.110(1) rather than the definition is what puts invertebrates outside the Code."
+    },
+    "mo-mdc-field-guides": {
+      "title": "Missouri Department of Conservation, A Guide to Missouri's Snakes and A Guide to Missouri's Lizards",
+      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/page/MissouriSnakes.pdf",
+      "note": "The agency's own species accounts, which is what \"native to Missouri\" in 3 CSR 10-9.110(2) turns on. The snake guide gives the state five Pantherophis (emoryi, obsoletus, spiloides, ramspotti, vulpinus) and no P. guttatus, and gives the eastern milksnake, Lampropeltis triangulum, a statewide distribution. The lizard guide (https://mdc.mo.gov/sites/default/files/2023-04/E00213%20A%20Guide%20to%20Missouri%27s%20Lizards.pdf) runs to eleven natives plus one introduced wall lizard and contains no anole."
+    },
+    "id-36-201-202": {
+      "title": "Idaho Code §§ 36-201 and 36-202, classifications and definitions",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title36/T36CH2/SECT36-202/",
+      "note": "§ 36-202(g) defines wildlife as \"any form of animal life, native or exotic, generally living in a state of nature\", excluding only domestic cervidae. § 36-201 then lists the eight classes the commission may sort wildlife into, all of them vertebrate groups, with predatory wildlife fixed by statute at seven named animals. IDAPA 13.01.06.250 sweeps up the remainder: \"Unprotected Wildlife includes all wildlife not classified in the preceding categories.\""
+    },
+    "id-130106": {
+      "title": "IDAPA 13.01.06, Rules Governing Classification and Protection of Wildlife",
+      "url": "https://adminrules.idaho.gov/rules/current/13/130106.pdf",
+      "note": "Section 200 is the Protected Nongame list: fourteen named mammals, all native birds except game birds, all native amphibians, all native reptiles and seven fish. Section 250 makes everything unclassified Unprotected Wildlife. Worth reading alongside 13.01.10 for two reasons: the northern flying squirrel is Protected Nongame at 200.01(j), and no invertebrate is classified anywhere in the chapter."
+    },
+    "nh-rsa-207-1": {
+      "title": "N.H. Rev. Stat. § 207:1, definitions",
+      "url": "https://www.gencourt.state.nh.us/rsa/html/XVIII/207/207-1.htm",
+      "note": "Paragraph XXXV is what Fis 800 means by wildlife, and it names invertebrates in terms: \"all species of mammals, birds, fish, mollusks, crustaceans, amphibians, invertebrates, reptiles or their progeny or eggs which, whether raised in captivity or not, are normally found in a wild state\". That is the provision that pulls a terrestrial arthropod into the Fis 804 scheme, where it is on none of the three lists."
+    },
+    "wy-23-1-101": {
+      "title": "Wyo. Stat. § 23-1-101(a)(xiii), definition of wildlife",
+      "url": "https://www.wyoleg.gov/statutes/compress/title23.pdf",
+      "note": "A closed list of taxa: \"all wild mammals, birds, fish, amphibians, reptiles, crustaceans and mollusks, and wild bison designated by the Wyoming game and fish commission and the Wyoming livestock board within Wyoming\". No insect or arachnid is in it, which is what puts a terrestrial arthropod outside both Commission regulations. Chapter 69 repeats the same closed list at Section 2(c) for cold-blooded wildlife."
     }
   },
   "animals": {
@@ -16861,6 +16911,38 @@
           "quote": "Reptiles (Reptilia). All Helodermatidae ...; all front-fanged venomous snakes, even if devenomized ...; all venomous, mid-or rear-fanged, Duvernoy-glanded members of the family Colubridae, even if devenomized; any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda; any member of the family Pythonidae, including, but not limited to, the African rock python, Indian or Burmese python, Amethystine or scrub python; any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor, Komodo monitor or dragon, Nile monitor, crocodile monitor, water monitor, Bornean earless monitor; any member of the family Iguanidae, including the green or common iguana; any member of the family teiidae, including, but not limited to, the golden, common, or black and white tegu; all members of the family Chelydridae, including snapping turtle and alligator snapping turtle; all turtles and tortoises with a carapace length of less than four (4) inches; and all members of the order Crocodylia ...",
           "note": "The reptile clause is a list of families and the corn snake belongs to none of them: not Helodermatidae, not a venomous snake family, not Boidae, Pythonidae, Varanidae, Iguanidae, teiidae, Chelydridae or Crocodylia. The only colubrid provision reaches \"all venomous, mid-or rear-fanged, Duvernoy-glanded members\" of that family, and Pantherophis guttatus is none of those things. It is not a New York native either, so the state protected wildlife route at § 161.01(b)(ii) does not reach it. That makes the corn snake one of very few snakes lawful in the five boroughs.",
           "verifiedOn": "2026-09-05"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)(2)(D)(xii)",
+          "quote": "North American Rat Snakes (Pantherophis spp.) except the Central Rat Snake (P. alleghaniensis) (other than albinistic and leucistic individuals) which requires a permit",
+          "note": "Rhode Island clears the genus and then carves out one species, its own native eastern ratsnake, so the corn snake sits inside the clearance and needs no exotic animal possession permit. It is also absent from the native-snake list at § 3.17(A)(4)(b)(3), which is what would otherwise pull it under the § 3.7(C) bar on keeping native wildlife. The parenthetical exempting albinistic and leucistic P. alleghaniensis shows the Division writes morph exceptions when it means to, so the absence of any morph condition here is deliberate.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Reptiles, Snakes",
+          "quote": "New World Colubrid Snakes (in part) (Genera: Bogertophis, Drymarchon, Drymobius, Lampropeltis, Pantherophis, Phrynonax, Pituophis, Pseudelaphe, Senticolis, Spilotes) except species native to Arkansas",
+          "note": "The genus clearance is qualified by nativity, so the answer is which Pantherophis Arkansas has. Its ratsnakes are the Great Plains and Slowinski’s complex, P. emoryi and P. slowinskii, and the western ratsnake P. obsoletus; the red cornsnake is carried in the Arkansas Herpetological Atlas only under potential occurrence, with no vouchered population. Code 01.00 defines native wildlife as species \"that have established, naturally reproducing, free-ranging, wild populations within Arkansas\", so P. guttatus is a non-native Pantherophis and stays on the unrestricted list, which lifts it out of Codes 09.02, 09.07 and 09.10 entirely.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "conditional",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Reptilia, Serpentes",
+          "quote": "All Species in Genus Pantherophis (North American Ratsnakes) Except for: Pantherophis gloydi",
+          "note": "A captive-bred corn snake needs no importation, possession, exhibition, propagation or research permit. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorised animal may not be possessed at all. The one excepted species, the eastern fox snake, is Category 2 at 09-137 CMR ch. 7 § 7.18(3)(D). The genus entry carries the asterisk that removes anything USFWS-listed as injurious or as threatened or endangered, anything in CITES Appendix I, and anything the IUCN rates Endangered, Critically Endangered or Extinct in the Wild; Pantherophis guttatus is Least Concern and on none of the others.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2)",
+          "quote": "Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: Asian clams (Corbicula species) taken from impoundments that are not waters of the state; bison; amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve; and those birds (except ring necked pheasants and gray partridge) not native to the continental United States.",
+          "note": "The Department of Conservation's A Guide to Missouri's Snakes gives the state five ratsnakes, Pantherophis emoryi, obsoletus, spiloides, ramspotti and vulpinus, and no P. guttatus, so a corn snake is a reptile not native to Missouri and the clearance applies in full: bought, sold, possessed, transported and exhibited without permit. Read the Great Plains ratsnake, P. emoryi, as the corn snake and the answer flips to the native rule at 3 CSR 10-9.110(1)(A), which is why the binomial matters here.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/corn-snake-legal-guide/"
@@ -17235,6 +17317,46 @@
           "quote": "No closed season. All reptiles except those listed in (3) and (5) of this section shall have a year-round season. (2) Bag limit. The bag limit is 6 per day or in possession for each species allowed in section (1) of this section.",
           "note": "The milk snake is an Oklahoma animal, which moves it out of the exemption at 800:25-25-3(c), since that clause is written for species \"not indigenous to Oklahoma\". What applies instead is the reptile and amphibian part at 800:25-7. Two provisions matter to a keeper. 7-7(2)(A) requires a resident or nonresident hunting licence of anyone \"taking or attempting to take reptiles and amphibians or possessing reptiles or amphibians\" that are land dwelling, which is a possession hook and not merely a collecting one. And 7-8 gives every reptile a year-round season except a closed list of twelve, with a limit of \"6 per day or in possession for each species\". Recorded as conditional on those two rather than as a permit, because there is no application and no discretion: a hunting licence is sold over the counter. 29 O.S. § 7-502(B)(4) separately exempts anyone possessing legally obtained wildlife \"from a source other than the wild, as pets\" from the statutory possession bar, which is why a captive-bred animal is not caught by the closed-season rule. Lampropeltis triangulum is native across much of Oklahoma and is on neither the closed list at 7-8(5) nor any other. The California kingsnake gets a different answer on this map for the plain reason that it is a west coast animal and 800:25-25-3(c) exempts non-indigenous reptiles as a class.",
           "verifiedOn": "2026-09-05"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)(3)(E); § 3.7(C)",
+          "quote": "The possession of native snakes is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Snakes considered native to Rhode Island and which possession as pets is prohibited include the following: ... Milksnake (Lampropeltis triangulum)",
+          "note": "Two provisions have to be read together. § 3.17(A)(4)(b)(2)(D)(x) clears \"Kingsnakes and Milk Snakes (Lampropeltis spp.), other than native species listed below\", and the list below names Lampropeltis triangulum. § 3.7(C) then confines possession of native wild animals to the Department, the USFWS, AZA-certified zoos, bona fide researchers and short-term USDA exhibitors, so there is no private permit route and captive-bred origin is no answer: § 3.6(A)(15) defines a native animal as one occurring naturally in Rhode Island \"regardless of where the animal originated\". The bar is written by binomial, so the Central and South American milk snakes that dominate the pet trade, now recognised as separate species such as L. hondurensis and L. polyzona, stay inside the genus clearance.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "conditional",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 09.14(B); Addendum R1.01",
+          "quote": "Captive born native wildlife: No more than 6 per household of any commercially obtained, captive born native wildlife not listed in Addendum R1.01 may be possessed as personal pets",
+          "note": "R1.01 clears the genus Lampropeltis \"except species native to Arkansas\", and the milksnake is native there, vouchered across the Ozark Highlands and Crowley’s Ridge, so the exception takes it off the unrestricted list and Code 09.14 takes over. No permit and no fee at six or fewer per household, but the animal must be captive born and commercially obtained, acquired either from a Commission-permitted Wildlife Breeder/Dealer or under a Wildlife Importation Permit, with acquisition records kept and produced on demand. The Commission names no binomial, so the whole Arkansas milksnake complex is caught whichever way the 2014 split between L. triangulum and L. gentilis is resolved. Code 09.14(A) is the other route, hand-capture in Arkansas, and those animals may not be sold or taken out of the state.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "conditional",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Reptilia, Serpentes; 12 M.R.S. § 12152(1-B)",
+          "quote": "All Species in Genus Lampropeltis (Kingsnakes And Milk Snakes) Except for: Lampropeltis herrerae; Lampropeltis triangulum triangulum",
+          "note": "Maine clears the genus and then excepts one subspecies, and it is the state's own: Lampropeltis triangulum triangulum, the eastern milk snake. So a captive-bred milk snake of any other form is unrestricted, subject to the section heading \"Captive Bred Origin Only\". The nominate subspecies is not, and it appears in no other category either, so 09-137 CMR ch. 7 § 7.06(4) bars possessing an imported one and no permit is available for it. What is left is 12 M.R.S. § 12152(1-B): up to two of any native reptile may be taken from the wild in Maine and possessed without a permit, provided it is not imported, exhibited, propagated, exported or sold. The other exception, L. herrerae, is Category 1.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "conditional",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(1)(A); 3 CSR 10-9.230",
+          "quote": "A maximum of five (5) specimens of any native wildlife not listed in 3 CSR 10-4.110(4) or 3 CSR 10-9.240, except endangered species, bats, dusty hog-nosed snake, Kirtland's snake, western fox snake, and alligator snapping turtles, may be taken and possessed alive by a resident of Missouri without permit, but these animals shall not be bought or sold.",
+          "note": "The Department of Conservation gives the eastern milksnake, Lampropeltis triangulum, a statewide Missouri distribution, so the non-native clearance at 3 CSR 10-9.110(2) does not reach it and it is Class I wildlife under 3 CSR 10-9.230, which covers nonvenomous reptiles native to Missouri. A Missouri resident may take and hold five alive with no permit and no fee, which is the condition recorded here; those animals may not be bought or sold and may not be transported out of the state. Buying one is the harder half: 3 CSR 10-9.353(2) lets a Class I breeder sell \"only to the holder of the appropriate permit, where required\", and the Wildlife Hobby Permit is no help because it covers game birds plus one purchased game mammal, and 3 CSR 10-20.805(33) defines game mammals as a closed list with no reptile in it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NH": {
+          "status": "conditional",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(5) and Table 800.2; Fis 803.03(b)(4)a. and Table 800.1",
+          "quote": "Indigenous reptiles listed in Table 800.2 for category 1, for up to 2 specimens of each species",
+          "note": "The eastern milk snake, Lampropeltis triangulum triangulum, is a New Hampshire native and appears in both controlled tables at \"1,5\", which means an individual as well as an exhibitor may hold a permit for it. Two specimens may be possessed with no permit at all under Fis 804.02(b)(5); above two, Fis 804.05 requires a permit to possess, available to a category 1 individual. Importation is the tighter half: Fis 803.03(b)(4)a. takes indigenous reptiles listed in Table 800.1 out of the exotic clearance, so bringing one in needs an importation permit. A milk snake of any non-indigenous form is simply an exotic reptile and free on both counts, which is the same species-versus-subspecies split Maine writes into its unrestricted list.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/milk-snake-legal-guide/"
@@ -17510,9 +17632,9 @@
           "status": "legal",
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.17(A)(4)(b)(2)(A)",
-          "quote": "All species of boas and pythons (family Boidae), may be kept without an exotic animal possession permit except those species that are endangered, and except the Emerald Tree Boa (Corallus caninus), Green Tree Python (Chondropython spp.), African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.).",
-          "note": "Rosy boa is not one of the five named exceptions and is not a listed endangered species.",
-          "verifiedOn": "2026-08-27"
+          "quote": "All species of boas and pythons (family Boidae), may be kept without an exotic animal possession permit except those species that are endangered, and except the Emerald Tree Boa (Corallus caninus), Green Tree Python (Chondropython spp.), African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.)",
+          "note": "The rule uses Boidae in the old broad sense covering pythons too, and names five exceptions. Lichanura trivirgata is none of them and is not endangered, so no permit is needed. It is not a Rhode Island native, so the § 3.7(C) bar does not reach it.",
+          "verifiedOn": "2026-09-05"
         },
         "SC": {
           "status": "legal",
@@ -17629,6 +17751,22 @@
           "cite": "Ga. Comp. R. & Regs. Subject 391-4-8",
           "quote": "The following wild animals are subject to licensing requirements pursuant to O.C.G.A. Sec. 27-5-4. (a) Mammals ... 3. Order Carnivora (weasels, ferrets, cats, bears, wolves, etc.) - All species, except that European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 7. Orders Diprotodontia and Peramelemorphia (Marsupials) - All species except that Petaurus breviceps (sugar glider) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 8. Order Erinaceopmorpha (hedgehogs) - All species ... 10. Order Lagomorpha (Rabbits, hares, etc) - All species ... 16. Order Rodentia (rats, mice, etc.) - All species except Genera Cavia, Chinchilla, Gerbillus, Meriones, Mesocricetus, and species Mus musculus, Rattus rattus, and Rattus norvegicus",
           "note": "Georgia's three tiers are closed lists, and the rosy boa is on none of them: not prohibited under .03, not inherently dangerous under .04, and not within any order or species licensed under .05. It is not a Georgia native either, so the separate native wildlife restriction does not reach it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Reptiles, Snakes",
+          "quote": "Rosy Boa (Lichanura Trivirgata)",
+          "note": "Named by species, so no possession, breeder/dealer or importation permit. This is the cell the stale copy of the list gets wrong. The compiled R1.01 PDF AGFC published at agfc.com in 2022, which is what circulates as the Arkansas list, has no rosy boa: its Small Boid Snakes entry lists eight genera and Lichanura is not among them. The 2022 addenda were also softer about absence, letting the Commission permit \"any other unlisted species upon evaluation and determination\"; the current R1.02 and R1.03 both close with \"Species not listed in Addenda R1.01, R1.02, or R1.03 are prohibited until evaluated\". So the old text left the rosy boa unlisted under a permittable default and the new text names it outright.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "conditional",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Reptilia, Serpentes",
+          "quote": "Rosy Boa Lichanur trivirgata",
+          "note": "Named by species, with the genus misprinted as Lichanur for Lichanura. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorised animal may not be possessed at all. A species-level entry carries no asterisk, so the conservation-status filter that qualifies the genus entries does not apply, and Lichanura trivirgata is IUCN Least Concern in any event.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -17920,6 +18058,47 @@
           "cite": "S.C. Code Regs. 123-150.3; § 50-16-60",
           "quote": "That a scientific collecting permit under the terms of § 50-11-2190, 1976 Code of Laws, shall be required for the collecting of all nongame species or subspecies of the Classes Pices (Fish), Amphibia (Amphibians), Reptilia (Reptiles), Aves (Birds) and Mammalia (Mammals).",
           "note": "The southern flying squirrel is a South Carolina native and a nongame mammal, and the answer turns on where an individual animal came from. Regulation 123-150.3 requires a scientific collecting permit for collecting any nongame species of the class Mammalia, so taking one from the wild is out for a keeper. Possession of a lawfully acquired captive-bred animal is a different question and South Carolina does not answer it directly: § 50-16-20(A) requires a permit for furbearers, cervids, pigs, bovids, coyote, bear and turkey, and a flying squirrel is none of those, while the pet-trade exemption at § 50-16-60 names rats, mice, rabbits, hamsters and guinea pigs and no squirrel. Recorded conditional on origin rather than as a permit, because there is no possession permit in the chapter to apply for.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "conditional",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 09.14(A)(1) and (B)",
+          "quote": "It is unlawful to possess native wildlife as pets except as follows: ... No more than 6 per household of any combination of the following animals may be possessed as pets: Hand-captured opossum, rabbit, raccoon and squirrel",
+          "note": "The southern flying squirrel is an Arkansas native and appears nowhere in Addendum R1.01, whose mammal section runs to thirteen entries and no sciurid, so it is a Code 09.14 animal rather than an unrestricted one. Six per household, by either route: hand-captured in Arkansas under (A), which bars sale and removal from the state, or commercially obtained and captive born under (B), which requires a Commission-permitted Wildlife Breeder/Dealer or a Wildlife Importation Permit and acquisition records. Recorded conditional rather than permit because nothing is issued and nothing is paid at six or fewer; above six the Wildlife Breeder/Dealer Permit at Code 09.07 is what applies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.06(4)",
+          "quote": "Unclassified Species: A person may not possess any species that has not been categorized. Any species which has not been identified as a Prohibited, Restricted, or Unrestricted species will not be eligible for a permit under this chapter, however a request may be made to review the categorization of a species subject to section 7.06(5).",
+          "note": "Glaucomys volans is in none of Maine's four buckets. The Unrestricted List's Rodentia section runs to thirteen entries, all cage rodents, and no Glaucomys. § 7.18(1) Prohibited is two species, the monk parakeet and the mute swan. Category 1 Mammalia reaches Callosciurus prevostii and Cynomys ludovicianus by name and twenty-one families wholesale, none of them Sciuridae; Category 2 Mammalia is Camelidae, the binturong, genets, three coatis and Caviidae. So § 7.06(4) applies and says in terms that the animal is not eligible for a permit, which is why this is banned rather than permit. The wild-take escape at 12 M.R.S. § 12152(1-B) covers only reptiles, amphibians and invertebrates, so it does not reach a native mammal. The live route is § 7.06(5), a request to the commissioner and the technical committee to classify the species.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "conditional",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(1)(A); 3 CSR 10-9.230",
+          "quote": "A maximum of five (5) specimens of any native wildlife not listed in 3 CSR 10-4.110(4) or 3 CSR 10-9.240, except endangered species, bats, dusty hog-nosed snake, Kirtland's snake, western fox snake, and alligator snapping turtles, may be taken and possessed alive by a resident of Missouri without permit, but these animals shall not be bought or sold.",
+          "note": "The southern flying squirrel is a Missouri native, common in forested areas statewide on the Department of Conservation's own account, so it is Class I wildlife rather than a cleared non-native mammal. Five may be taken and possessed alive by a resident without permit or fee, never bought or sold and never shipped out of the state. It is not a game mammal under 3 CSR 10-20.805(33), which names black bears, cottontail rabbit, deer, elk, fox squirrel, gray squirrel, groundhog, jackrabbit, swamp rabbit and furbearers, so the Wildlife Hobby Permit allowance for one purchased game mammal does not reach it either. Note the animal it is nearest to on that list: the fox and gray squirrels are game mammals and Glaucomys is not, which is what leaves this cell resting on the take-five rule alone.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "Section 010.06; Section 200.06",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "A southern flying squirrel is a rodent, and rodents are named in the conventional pets definition. The qualifier is the part to check and it is satisfied: the flying squirrel Idaho has is the northern flying squirrel, which IDAPA 13.01.06.200.01(j) makes a Protected Nongame Species, while Glaucomys volans does not occur in the state at all, so a captive-bred one is not \"native wildlife captured from the wild in Idaho\". On the agriculture side the deleterious exotic animal list at IDAPA 02.04.27.410 names seven rodent groups plus all South American rodents except guinea pigs and chinchillas, and no Glaucomys. Taking or keeping Idaho's own northern flying squirrel is a different question and is barred.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 3; § 13(d)",
+          "quote": "Except as otherwise specified or exempted in this regulation, a permit from the Department is required prior to importation, possession, confinement or transportation of any living warm-blooded wildlife.",
+          "permitFor": "personal",
+          "note": "Wyoming is a closed-list state on the warm-blooded side and the southern flying squirrel is on none of the lists. It is not among the eighteen animals defined as Domestic at Ch. 10 § 2(i) or the twenty-four defined as Domesticated at § 2(j); it is not prohibited under § 11, whose only rodent entry is the order Rodentia from Africa; it is not a furbearer or a game bird under § 13; and § 16, the no-permit section, covers domestic and domesticated animals plus three classes of bird and no other mammal. So § 3 applies and § 13(d) is the route: \"A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.\" Recorded permit rather than banned because that clause is a grant of discretion rather than a bar, unlike Alaska, whose rule forbids issuing a pet permit at all. Wyoming's own flying squirrel is the northern, Glaucomys sabrinus; § 15 lets a Wyoming-caught nongame mammal be possessed without a permit while still requiring one to import the same animal.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -18330,6 +18509,14 @@
           "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
           "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the ackie monitor is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Varanus acanthurus needs no species-level determination here, which is worth contrasting with Colorado, where this exact animal is the one open cell because its allow-list turns on whether a monitor is native only to the tropics. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "Section 010.06; Section 200.06",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "Varanus acanthurus is non-venomous, and at roughly 60 to 70 cm nose to tail it is not a dangerous animal, so it is a conventional pet and needs no Department permit to import, possess or sell. The rule does not define \"dangerous\", which is the soft spot: on any ordinary reading a dwarf monitor is not one, and Idaho draws its dangerous-animal line on the agriculture side, where IDAPA 02.04.27 reaches only birds and mammals and touches no reptile at all. The commission's classification chapter is no obstacle either, since IDAPA 13.01.06.200.04 protects native reptiles and the ackie is Australian.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -20267,6 +20454,62 @@
           "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
           "note": "Ohio's two restrictive schemes both miss the bearded dragon. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping.",
           "verifiedOn": "2026-09-05"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(2)(H)",
+          "quote": "The following Agamid Lizards (Agamidae) may be kept without an exotic animal possession permit: Amphibolorus spp., Calotes spp., Hydrosaurus spp., Pogona spp., Water Dragon (Physignathus spp.)",
+          "note": "The whole genus Pogona is named, so no exotic animal possession permit and no importation permit. Rhode Island reserves its lizard permits for the Gila monster, beaded lizards and all monitors at § 3.17(A)(4)(c)(1); nothing else in the lizard section needs one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Reptiles, Geckos and Lizards",
+          "quote": "Bearded Dragon (Genus Pogona)",
+          "note": "The genus is named twice over: the Austral-Asian Agamid Lizards entry also lists Pogona among Chlamydosaurus, Hydrosaurus and Intellagama. Either way it is exempt from Codes 09.02, 09.07 and 09.10, so no possession, breeding or importation permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "conditional",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Reptilia, Sauria",
+          "quote": "Bearded Dragon Pogona vitticeps",
+          "note": "Named by species rather than by genus, so no asterisk and no conservation-status filter. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorised animal may not be possessed at all.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2)",
+          "quote": "Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: Asian clams (Corbicula species) taken from impoundments that are not waters of the state; bison; amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve; and those birds (except ring necked pheasants and gray partridge) not native to the continental United States.",
+          "note": "Missouri sorts by nativity rather than by species list, and a bearded dragon is a reptile not native to Missouri, so the clearance covers buying, selling, possessing, transporting and exhibiting one without any permit. The two carve-outs from the clearance do not reach it: 3 CSR 10-4.117 is the prohibited species rule and is fish, crayfish and aquatic plants, and 3 CSR 10-9.240 Class II wildlife is the state's venomous natives plus the mountain lion, wolf and black bear.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "Section 010.06; Section 200.06",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "A bearded dragon is a non-venomous, non-dangerous reptile and is not native Idaho wildlife, so it is a conventional pet. Section 200.06 then says no Department permit is needed to import, export, transport, possess or sell a conventional pet, provided it is not intended for release into the wild. Idaho answers by category rather than by species list, which is unusual and is why so few of its cells need a species search.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4); Fis 803.03(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake",
+          "note": "A bearded dragon is an exotic, non-venomous reptile and is neither an alligator nor a crocodile, so it is non-controlled for both possession and importation. New Hampshire clears exotic reptiles as a class rather than by species, with three exceptions, and Fis 803.03(b)(4) repeats the clearance for importation, so neither possessing nor bringing one into the state needs a permit. The rule was readopted in full in April 2026 and this structure survived unchanged.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 10(a)(i)",
+          "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "note": "A bearded dragon is a reptile and appears on neither restricted list. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20532,6 +20775,62 @@
           "cite": "Ohio Rev. Code § 935.01(C), (L)",
           "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
           "note": "Ohio's two restrictive schemes both miss the leopard gecko. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping.",
+          "verifiedOn": "2026-09-05"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(2)(F)",
+          "quote": "All Gekkos (Gekkonidae) may be kept without an exotic animal possession permit except the Big Bend Gekko (Coleonyx reticulatus)",
+          "note": "The rule writes Gekkonidae, and on current taxonomy the leopard gecko is a eublepharid rather than a gekkonid. The single exception settles it: Coleonyx reticulatus is itself a eublepharid, in the same family as Eublepharis, so the family name is being used in the broad pre-split sense for all geckos. Reading it narrowly would leave the one named exception outside the clause it excepts.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Reptiles, Geckos and Lizards",
+          "quote": "Leopard Gecko (Eublepharis macularius)",
+          "note": "Named by species, and the genus is separately cleared under Eublepherine Geckos alongside Coleonyx, Goniurosaurus and Hemitheconyx. No possession, breeding or importation permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "conditional",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Reptilia, Sauria",
+          "quote": "all species in infraorder Gekkota Except for: Nephrurus deleani",
+          "note": "Maine clears geckos at infraorder rank, which sidesteps the family-splitting problem that other states run into: Eublepharidae, Diplodactylidae and Gekkonidae are all inside Gekkota. Eublepharis macularius is IUCN Least Concern, not CITES Appendix I and on neither USFWS list, so the asterisk on the entry does not remove it. The one exception, the Pernatty knob-tail, is Category 2. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorised animal may not be possessed at all.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2)",
+          "quote": "Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: Asian clams (Corbicula species) taken from impoundments that are not waters of the state; bison; amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve; and those birds (except ring necked pheasants and gray partridge) not native to the continental United States.",
+          "note": "A non-native reptile, so no permit to buy, sell, possess, transport or exhibit. Nothing in the confined wildlife chapter attaches to it: Class I at 3 CSR 10-9.230 is birds native to the continental United States plus mammals and nonvenomous reptiles and amphibians native to Missouri, and a leopard gecko is none of those.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "Section 010.06; Section 200.06",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "A leopard gecko is a non-venomous, non-dangerous reptile and is not native Idaho wildlife, so it is a conventional pet. Section 200.06 then says no Department permit is needed to import, export, transport, possess or sell a conventional pet, provided it is not intended for release into the wild. Idaho answers by category rather than by species list, which is unusual and is why so few of its cells need a species search.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4); Fis 803.03(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake",
+          "note": "A leopard gecko is an exotic, non-venomous reptile, so it is non-controlled for both possession and importation. New Hampshire clears exotic reptiles as a class rather than by species, with three exceptions, and Fis 803.03(b)(4) repeats the clearance for importation, so neither possessing nor bringing one into the state needs a permit. The rule was readopted in full in April 2026 and this structure survived unchanged.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 10(a)(i)",
+          "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "note": "A leopard gecko is a reptile and appears on neither restricted list. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -20799,6 +21098,62 @@
           "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
           "note": "Ohio's two restrictive schemes both miss the crested gecko. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping.",
           "verifiedOn": "2026-09-05"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(2)(F)",
+          "quote": "All Gekkos (Gekkonidae) may be kept without an exotic animal possession permit except the Big Bend Gekko (Coleonyx reticulatus)",
+          "note": "Correlophus ciliatus is a diplodactylid on current taxonomy, but the clause covers all geckos: its only exception, Coleonyx reticulatus, is a eublepharid, which shows Gekkonidae is being used here for the whole group rather than for one modern family. The crested gecko is IUCN Vulnerable and CITES Appendix II, and Rhode Island only excepts species that are endangered, so neither listing reaches it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Reptiles, Geckos and Lizards",
+          "quote": "Crested Gecko (Correlophus ciliates)",
+          "note": "Named by species, with the binomial misspelled as ciliates for ciliatus, and cleared a second time under Diplodactylid Geckos, whose genus list opens with Correlophus. Its IUCN Vulnerable listing is irrelevant here: unlike Maine and Massachusetts, Arkansas attaches no conservation-status condition to its unrestricted list.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "conditional",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Reptilia, Sauria",
+          "quote": "all species in infraorder Gekkota Except for: Nephrurus deleani",
+          "note": "Correlophus ciliatus is a diplodactylid and therefore inside Gekkota. The asterisk is the thing to check here rather than the taxonomy: it removes anything the IUCN rates Endangered, Critically Endangered or Extinct in the Wild, and the crested gecko is Vulnerable, one rung below the cut. Its CITES listing is Appendix II, and the filter names Appendix I. Both are close enough that a reassessment or an uplisting would move this cell without Maine changing anything, which is the same exposure Massachusetts carries for the ball python. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorised animal may not be possessed at all.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2)",
+          "quote": "Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: Asian clams (Corbicula species) taken from impoundments that are not waters of the state; bison; amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve; and those birds (except ring necked pheasants and gray partridge) not native to the continental United States.",
+          "note": "A non-native reptile and therefore outside the permit scheme entirely. Its IUCN Vulnerable listing does not matter here, because 3 CSR 10-9.110(2) excepts only federally designated endangered species, and Correlophus ciliatus has no federal listing.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "Section 010.06; Section 200.06",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "A crested gecko is a non-venomous, non-dangerous reptile and is not native Idaho wildlife, so it is a conventional pet. Its IUCN Vulnerable listing plays no part: Idaho's pet exemption carries no conservation-status filter, unlike Maine's and Massachusetts's. Section 200.06 then says no Department permit is needed to import, export, transport, possess or sell a conventional pet, provided it is not intended for release into the wild. Idaho answers by category rather than by species list, which is unusual and is why so few of its cells need a species search.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4); Fis 803.03(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake",
+          "note": "A crested gecko is an exotic, non-venomous reptile, so it is non-controlled. Its IUCN Vulnerable listing is irrelevant here: New Hampshire attaches no conservation-status filter to its non-controlled list, unlike Maine, whose asterisk removes anything the IUCN rates Endangered or worse. New Hampshire clears exotic reptiles as a class rather than by species, with three exceptions, and Fis 803.03(b)(4) repeats the clearance for importation, so neither possessing nor bringing one into the state needs a permit. The rule was readopted in full in April 2026 and this structure survived unchanged.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 10(a)(i)",
+          "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "note": "A crested gecko is a reptile and appears on neither restricted list. Its IUCN Vulnerable status does not engage Section 8(d), which reaches only wildlife listed as endangered or threatened at 50 CFR § 17.11. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21064,6 +21419,62 @@
           "cite": "Ohio Rev. Code § 935.01(C), (L)",
           "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
           "note": "Ohio's two restrictive schemes both miss the blue-tongue skink. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping.",
+          "verifiedOn": "2026-09-05"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(2)(A)",
+          "quote": "All Skinks (Scincidae) may be kept without an exotic animal possession permit except for the following: Florida Sand Skinks (Neoseps spp.), Solomon Island Ground Skink (Tribolonotus spp.)",
+          "note": "Tiliqua scincoides is a scincid and is neither exception, so no permit. Rhode Island has native skinks but names none of them in the native-reptile bar at § 3.17(A)(4), which lists only turtles and snakes, so nativity does not come into this one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Reptiles, Geckos and Lizards",
+          "quote": "Blue-tongue skinks (Genus Tiliqua)",
+          "note": "The whole genus is cleared, and the neighbouring Cyclodomorphus entry, the blue-tongue skinks’ sister genus, is spelled out species by species, so this is a considered listing rather than a loose one. No possession, breeding or importation permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "conditional",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Reptilia, Sauria",
+          "quote": "All Species in Family Scincidae (Skinks) Family Scincidae*",
+          "note": "A family-wide clearance with no species excepted. Tiliqua scincoides is IUCN Least Concern and on none of the four lists the asterisk points at. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorised animal may not be possessed at all.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2)",
+          "quote": "Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: Asian clams (Corbicula species) taken from impoundments that are not waters of the state; bison; amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve; and those birds (except ring necked pheasants and gray partridge) not native to the continental United States.",
+          "note": "A non-native reptile, cleared to be bought, sold, possessed, transported and exhibited without permit. Missouri's own skinks are Class I wildlife, but Tiliqua is Australian and the clearance turns on where the species lives rather than on what it resembles.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "Section 010.06; Section 200.06",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "A blue-tongue skink is a non-venomous, non-dangerous reptile and is not native Idaho wildlife, so it is a conventional pet. Section 200.06 then says no Department permit is needed to import, export, transport, possess or sell a conventional pet, provided it is not intended for release into the wild. Idaho answers by category rather than by species list, which is unusual and is why so few of its cells need a species search.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4); Fis 803.03(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake",
+          "note": "A blue-tongue skink is an exotic, non-venomous reptile, so it is non-controlled for both possession and importation. New Hampshire clears exotic reptiles as a class rather than by species, with three exceptions, and Fis 803.03(b)(4) repeats the clearance for importation, so neither possessing nor bringing one into the state needs a permit. The rule was readopted in full in April 2026 and this structure survived unchanged.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 10(a)(i)",
+          "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "note": "A blue-tongue skink is a reptile and appears on neither restricted list. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -21331,6 +21742,62 @@
           "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
           "note": "Ohio's two restrictive schemes both miss Jackson's chameleon. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping.",
           "verifiedOn": "2026-09-05"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(2)(J)",
+          "quote": "Old World Chameleons (Chameleonidae) may be kept without an exotic animal possession permit.",
+          "note": "A family-wide clearance with no exception at all, which is unusual in this rule: every other lizard family entry names species that are carved back out. Trioceros jacksonii is a chamaeleonid and is IUCN Least Concern, so the § 3.17(A) proviso for endangered species does not engage either.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Reptiles, Geckos and Lizards",
+          "quote": "Cameleons (in part) (Family: Chamaeleonidae: Genera: Calumma, Chameleo, Fucifer, Trioceros)",
+          "note": "The listing is by genus and Trioceros jacksonii is a Trioceros, so it is inside the clearance. The words \"in part\" matter: Chamaeleonidae genera outside those four, Bradypodion, Kinyongia, Rhampholeon and Rieppeleon among them, are not on R1.01 and fall under the closing clause at R1.02, \"Species not listed in Addenda R1.01, R1.02, or R1.03 are prohibited until evaluated\". The veiled chameleon is listed separately by species.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "conditional",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Reptilia, Sauria",
+          "quote": "Jackson's Chameleon Trioceros jacksonii",
+          "note": "Named by species. Maine does not clear Chamaeleonidae as a family: it lists ten chameleons individually, two Trioceros, two Chamaeleo, three Furcifer, Calumma parsonii, Rhampholeon spectrum and Rieppeleon brevicaudatus, so the species entry is what answers this and a chameleon outside those ten is uncategorised. All chameleons are CITES Appendix II, and the asterisk filter names Appendix I. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorised animal may not be possessed at all.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2)",
+          "quote": "Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: Asian clams (Corbicula species) taken from impoundments that are not waters of the state; bison; amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve; and those birds (except ring necked pheasants and gray partridge) not native to the continental United States.",
+          "note": "A non-native reptile, so no permit of any kind. The CITES Appendix II listing that covers all chameleons plays no part: the only conservation carve-out in the clearance is for federally designated endangered species.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "Section 010.06; Section 200.06",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "Jackson's chameleon is a non-venomous, non-dangerous reptile and is not native Idaho wildlife, so it is a conventional pet. Section 200.06 then says no Department permit is needed to import, export, transport, possess or sell a conventional pet, provided it is not intended for release into the wild. Idaho answers by category rather than by species list, which is unusual and is why so few of its cells need a species search.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4); Fis 803.03(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake",
+          "note": "Jackson's chameleon is an exotic, non-venomous reptile, so it is non-controlled for both possession and importation. New Hampshire clears exotic reptiles as a class rather than by species, with three exceptions, and Fis 803.03(b)(4) repeats the clearance for importation, so neither possessing nor bringing one into the state needs a permit. The rule was readopted in full in April 2026 and this structure survived unchanged.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 10(a)(i)",
+          "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "note": "Jackson's chameleon is a reptile and appears on neither restricted list. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21595,6 +22062,62 @@
           "cite": "Ohio Rev. Code § 935.01(C); § 1531.01(RR)",
           "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
           "note": "Ohio's two restrictive schemes both miss the green anole. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping. Nativity is worth checking because Ohio does treat it as a category, defining native wildlife at § 1531.01(RR) as \"any species of the animal kingdom indigenous to this state\". Anolis carolinensis is a southeastern animal and is not indigenous to Ohio, so the propagating licence, which is built around game and native species, is not the route either.",
+          "verifiedOn": "2026-09-05"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(2)(G)",
+          "quote": "The following Iguanid Lizards (Iguanidae) may be kept without an exotic animal possession permit: Basilisks (Basiliscus spp.), Collared and Leopard Lizards (Crotaphytus spp.), Common or Green Iguanas (Iguana i. iguana), False or Spring-tailed Iguanas (Ctenosaurus spp.), (Liolaemus spp.), New World Chameleons (Anolis spp. and Ctenotus spp.), Spiny Lizards (Sceloporus spp.), Tree and Bush Lizards (Urosaurus spp.), (Uranoscodon spp.), Zebra-tailed Lizards (Callisaurus spp.)",
+          "note": "Anolis is cleared as a genus under the old Iguanidae heading. That the rule uses drafting-era taxonomy cuts the opposite way here from New York City, whose Health Code bans \"any member of the family Iguanidae\" and leaves the anole hanging on which revision you read: Rhode Island lists the genus by name inside the family, so the taxonomy question never arises. The green anole is not native to Rhode Island, so the § 3.7(C) bar on native wildlife does not reach it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "conditional",
+          "sourceId": "ar-code-0900",
+          "cite": "Addendum R1.01, Reptiles, Geckos and Lizards; Code 09.14(B)",
+          "quote": "Anoline Lizards (Genera: Anolis, Audantia, Chamaelinorops, Ctenonotus, Dactyloa, Deiroptyx, Norops, Xiphosurus) except Brown Anoles (Anolis sagrei) or species native to Arkansas",
+          "note": "Two exceptions, and the second is written for this animal: Anolis carolinensis is the only anole native to the United States, and the Arkansas Herpetological Atlas vouchers it in 29 of the state’s 75 counties across the Ouachita Mountains and South Central Plains. Off R1.01 it becomes a Code 09.14 native pet, six per household, either hand-captured in Arkansas or commercially obtained and captive born from a Commission-permitted Wildlife Breeder/Dealer or under a Wildlife Importation Permit. The first exception, the brown anole, is an invasive rather than a native, which is why the entry needed both.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "conditional",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Reptilia, Sauria",
+          "quote": "All Species in Genus Anolis (Anoles) Anolis spp.*",
+          "note": "The genus is cleared outright. The green anole is not native to Maine, so the native-reptile provisions at 12 M.R.S. § 12152(1-B) and § 7.01 do not come into it, and Anolis carolinensis is IUCN Least Concern, so the asterisk does not remove it. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorised animal may not be possessed at all.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2)",
+          "quote": "Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: Asian clams (Corbicula species) taken from impoundments that are not waters of the state; bison; amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve; and those birds (except ring necked pheasants and gray partridge) not native to the continental United States.",
+          "note": "The whole answer is whether the green anole is a Missouri native, and the Department of Conservation's own A Guide to Missouri's Lizards settles it: the state has eleven native lizards, three collared and horned and prairie lizards, six skinks, the prairie racerunner and the western slender glass lizard, plus one introduced Italian wall lizard, and no anole. So Anolis carolinensis is a reptile not native to Missouri and needs no permit. Missouri is the northern edge of this question: the same animal is a native, and therefore a restricted one, in Arkansas next door.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "Section 010.06; Section 200.06",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "The green anole is a non-venomous, non-dangerous reptile and is nowhere near native to Idaho, so it is a conventional pet. IDAPA 13.01.06.200.04 makes all native reptiles Protected Nongame, which is the provision the qualifier \"not native wildlife captured from the wild in Idaho\" points at; it has nothing to catch here. Section 200.06 then says no Department permit is needed to import, export, transport, possess or sell a conventional pet, provided it is not intended for release into the wild. Idaho answers by category rather than by species list, which is unusual and is why so few of its cells need a species search.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4); Fis 803.03(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake",
+          "note": "The green anole is exotic to New Hampshire, whose indigenous reptiles are listed in Tables 800.1 and 800.2 and are seven turtles and ten snakes and no lizard at all, so it falls under the exotic clearance rather than the two-per-species indigenous allowance. New Hampshire clears exotic reptiles as a class rather than by species, with three exceptions, and Fis 803.03(b)(4) repeats the clearance for importation, so neither possessing nor bringing one into the state needs a permit. The rule was readopted in full in April 2026 and this structure survived unchanged.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 10(a)(i)",
+          "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "note": "The green anole is a reptile, is not indigenous to Wyoming, and appears on neither restricted list. Section 9(c) is the clause nativity would engage, and it reaches indigenous reptiles only when they are imported for commercial use. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -21863,6 +22386,62 @@
           "quote": "\"Wild animals\" includes mollusks, crustaceans, aquatic insects, fish, reptiles, amphibians, wild birds, wild quadrupeds, and all other wild mammals, but does not include domestic deer.",
           "note": "The mammal limb of § 1531.01(X) reaches \"wild quadrupeds, and all other wild mammals\", and a domestic rabbit is not a wild mammal. Ohio's wild rabbit, the eastern cottontail, is a game animal with a season and is what the chapter is written about. Nothing in the dangerous wild animal list at § 935.01(C) reaches a lagomorph either, and the propagating licence at § 1533.71 covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals, all of which are categories a pet rabbit sits outside.",
           "verifiedOn": "2026-09-05"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.6(A)(5)(o); § 3.9(C)",
+          "quote": "Domestic Rabbit, including breeds, varieties, and strains derived from the European rabbit (Oryctolagus cuniculus) but not including the European rabbit (Ferae naturae) and not including the so-called \"San Juan\" rabbit",
+          "note": "Rhode Island answers the rabbit the way Connecticut does, by defining domestication rather than by naming the species on an allow-list. A domestic rabbit is a \"domestic animal\" under § 3.6(A)(5), and § 3.9(C) says an exotic animal possession permit \"is not required for importation or possession of domestic animals\". The carve-out from the carve-out, wild-type Oryctolagus and the San Juan rabbit, is the same animal Illinois names in 520 ILCS 5/3.23 and Minnesota lists as a prohibited invasive species, and Rhode Island is the state that separates the two cleanly.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 01.00 definitions, WILD and WILDLIFE",
+          "quote": "WILD – To be living in a state of nature and not domesticated.",
+          "note": "Arkansas defines WILDLIFE as \"All wild birds, mammals, fish, reptiles, amphibians, other wild aquatic forms, and all other wild animals\", and then defines WILD by domestication, so a domestic rabbit is outside Chapter 09.00 altogether rather than exempted within it. Nothing else in the code contradicts that: Oryctolagus is absent from all three R1 addenda, and the \"rabbit\" Code 09.14 allows to be hand-captured six per household is the wild cottontail. This is the Connecticut device, one definition doing the work that Illinois and Minnesota cannot do with lists.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "legal",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Mammalia, Lagomorpha",
+          "quote": "European Rabbit Oryctolagus cuniculus",
+          "note": "Named by species, and unconditionally: the \"Captive Bred Origin Only\" heading that qualifies the reptile, turtle and lungfish sections does not appear over Mammalia, and the entry carries no asterisk. Maine answers by naming the species rather than by defining domestication, which is why it does not have to distinguish wild-type Oryctolagus the way Rhode Island and Connecticut do.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2)",
+          "quote": "Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: Asian clams (Corbicula species) taken from impoundments that are not waters of the state; bison; amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve; and those birds (except ring necked pheasants and gray partridge) not native to the continental United States.",
+          "note": "A domestic rabbit is a mammal not native to Missouri, so the clearance reaches it on its own terms and Missouri never has to decide what domestication does, which is the question that leaves the same animal unresolved in Minnesota and thin in Illinois. Missouri's own lagomorphs, the cottontail, swamp rabbit and jackrabbit, are game mammals under 3 CSR 10-20.805(33) and a different animal. The one qualifier in the clause, \"except those mammals located in a licensed big game hunting preserve\", is about where the animal is rather than what it is.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "Section 010.06; Section 200.06",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "Rabbits are named outright in the conventional pets definition, so no Department permit is needed to import, possess, transport or sell one. Idaho does not have to distinguish domestic Oryctolagus from wild-type stock the way Rhode Island and Connecticut do, because the qualifier that runs across the whole definition, \"not native wildlife captured from the wild in Idaho\", does the same job: Idaho's wild lagomorphs are cottontails, jackrabbits and the pygmy rabbit, and none of them is Oryctolagus. The Department of Agriculture's deleterious exotic animal list at IDAPA 02.04.27 contains no lagomorph.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(7)k.; Fis 803.03(b)(7)q.",
+          "quote": "Rabbits, domesticated",
+          "note": "Named on both non-controlled lists, so no possession permit and no importation permit. New Hampshire answers by the word \"domesticated\" attached to the common name rather than by binomial, so a wild-type Oryctolagus is not cleared by it; the same device covers the chinchillas, gerbils, guinea pigs, hamsters, mice, rats, ferrets and pot-bellied pigs on the same list.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 2(j); § 16(a)",
+          "quote": "domesticated European rabbit (Oryctolagus cuniculus)",
+          "note": "Wyoming runs two closed enumerations, Domestic Animals at Ch. 10 § 2(i) and Domesticated Animals at § 2(j), each introduced by \"For the purpose of this regulation, only the following animals are considered\" its category. The domesticated European rabbit is named in the second, so § 16(a) lets it be imported, possessed or transported with no permit and no certificate of veterinary inspection from the Department. The word \"domesticated\" is doing the same work it does in New Hampshire: a wild-type Oryctolagus is not what the list names.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -22128,6 +22707,62 @@
           "cite": "Ohio Rev. Code § 1531.01(X)",
           "quote": "\"Wild animals\" includes mollusks, crustaceans, aquatic insects, fish, reptiles, amphibians, wild birds, wild quadrupeds, and all other wild mammals, but does not include domestic deer.",
           "note": "Ohio settles the invertebrates with one adjective. § 1531.01(X) defines wild animals as \"mollusks, crustaceans, aquatic insects, fish, reptiles, amphibians, wild birds, wild quadrupeds, and all other wild mammals\", and the word aquatic in front of insects does the work: a terrestrial insect is not a wild animal, so the Division of Wildlife has no authority over one. An arachnid or a myriapod is not in the list at all. That is the same shape as Utah, which limits wildlife to crustaceans, molluscs and vertebrates, and California, whose restricted list is organised by a closed set of classes with no insect among them. The federal PPQ 526 permit still governs interstate movement of this species.",
+          "verifiedOn": "2026-09-05"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.8(G); § 3.17(A)(1)(a)",
+          "quote": "Nothing in this Part shall prohibit any person from possession of exotic animals or native animals of the class Insecta unless the animals of that class appear on the list of prohibited insects as is published by the USDA at the following URL: https://www.invasivespeciesinfo.gov/terrestrial/invertebrates under the heading of \"Invasive Species.\"",
+          "note": "The exemption is doing real work rather than papering over a gap. § 3.6(A)(1) defines \"animal\" to include insects and § 3.6(A)(9) defines an exotic animal as \"any vertebrate or invertebrate\", so invertebrates are inside the scheme and had to be exempted out of it. The cross-referenced USDA page is a list of forest, crop and stored-product pests and names no cockroach, and § 3.17(A)(1)(c), which is where Rhode Island writes its own invertebrate prohibitions, reaches only zebra and quagga mussels, two waterfleas, non-indigenous crayfish, the Asiatic clam and the giant African land snail. A federal listing would flip this cell without Rhode Island changing anything.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 09.01, Exceptions (E)",
+          "quote": "Persons possessing terrestrial invertebrate species not otherwise prohibited by this Code or by federal or state regulations.",
+          "note": "Arkansas is one of the states whose wildlife definition reaches an arthropod, \"all other wild animals, regardless of classification\", and whose captive wildlife chapter then bars holding any live wildlife unless otherwise specified. The express terrestrial-invertebrate exception is what settles it, and the identical exception is repeated in Code 09.07 and Code 09.10, so breeding one and bringing one into the state are free as well. Without it the Madagascar hissing cockroach would be caught by the closing clause of the species addenda, \"Species not listed in Addenda R1.01, R1.02, or R1.03 are prohibited until evaluated\", because those three lists between them contain amphibians, birds, mammals and reptiles and not one invertebrate.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ME": {
+          "status": "legal",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Insecta, Blattodea",
+          "quote": "Madagascar Hissing Cockroach Gromphadorhina portentosa",
+          "note": "Maine settles the invertebrate question by naming the animal. Invertebrates are inside the scheme rather than outside it: 09-137 CMR ch. 7 § 7.06(1) says the Unrestricted List covers \"species of fish and wildlife, including tropical fish and invertebrates\", and the list has sections for insects, worms and millipedes. Only one cockroach shares the entry, the dubia roach, so this is a considered listing. No asterisk, so no conservation-status filter, and no captive-bred condition, which the list applies only to reptiles, turtles and lungfishes.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-4",
+          "cite": "3 CSR 10-4.110(1)",
+          "quote": "No bird, fish, crayfish, mussel, amphibian, reptile, mammal, or other form of wildlife, including wildlife raised or held in captivity, or their homes, dens, nests, eggs, and larvae in Missouri shall be molested, pursued, taken, hunted, trapped, tagged, marked, enticed, poisoned, killed, transported, stored, served, bought, sold, given away, accepted, possessed, propagated, imported, exported, or liberated to the wild in any manner ... except as specifically permitted by these rules ...; however, this Code shall not apply to other invertebrates except as specifically provided.",
+          "note": "Missouri answers the invertebrate question inside its own general prohibition, which is the cleanest version of it on this map. The statute is broad enough to catch an insect: RSMo § 252.020(3) defines wildlife as \"all wild birds, mammals, fish and other aquatic and amphibious forms, and all other wild animals, regardless of classification\". The Code then disclaims it, applying to invertebrates other than crayfish and mussels only where it says so. The one place it says so is 3 CSR 10-9.110(1)(B), which reaches native invertebrates on the Missouri Species and Communities of Conservation Concern Checklist. A Madagascar hissing cockroach is neither native nor on that checklist, so no rule touches it and the non-native clearance at 10-9.110(2), which lists only amphibians, reptiles, mammals and birds, is not needed.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ID": {
+          "status": "unclear",
+          "sourceId": "id-36-201-202",
+          "cite": "§ 36-202(g); IDAPA 13.01.10.010.06 and .200",
+          "quote": "\"Wildlife\" means any form of animal life, native or exotic, generally living in a state of nature provided that domestic cervidae as defined in section 25-3701, Idaho Code, shall not be classified as wildlife.",
+          "note": "Two readings, both textual, and Idaho has published nothing that chooses between them. Read one way an insect is a form of animal life and therefore wildlife, IDAPA 13.01.10.200.01 bars possessing live wildlife without a Department licence, and the conventional pets definition at 010.06 is a closed enumeration naming mammals, birds, reptiles and amphibians and no invertebrate, so an imported cockroach would need a captive possession licence. Read the other way the commission's scheme never reaches a terrestrial invertebrate at all: the eight classes at Idaho Code § 36-201 are vertebrate groups, IDAPA 13.01.06 classifies no invertebrate anywhere, and chapter 13.01.10 opens by excluding crustaceans from its own use of the word. The agriculture side is clean either way, because the invasive insect list at IDAPA 02.06.09.146 is a closed list of three forest pests and names no cockroach. Recorded unclear rather than guessed, on the same footing as New Jersey and New Mexico.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.04(b); Fis 802.05(c)",
+          "quote": "All species not specifically listed under the categories of non-controlled, prohibited, or controlled shall be designated as prohibited.",
+          "note": "This is the strictest invertebrate answer on the map and it comes out of four provisions rather than one. RSA 207:1, XXXV defines wildlife to include invertebrates by name, so an insect is inside Fis 800. Fis 804.02, the non-controlled possession list, contains no invertebrate. Table 800.2, the controlled table, runs amphibians, reptiles, fish, birds and mammals and stops. Fis 804.03(b)(1) does have an invertebrates heading, and it names five aquatic nuisance species, which shows the Department writes invertebrate entries when it means to. Fis 804.04(b) then makes everything unlisted prohibited, and Fis 804.03(a) says no permit shall be issued for anything prohibited under it. The waiver at Fis 802.05 that would otherwise cover an unlisted species is closed to private keepers by subsection (c), which withholds it from permittee categories 1, 2, 3, 4, 6 and 7 and leaves only exhibitors. So a Madagascar hissing cockroach, a tarantula and a pet millipede are all barred in New Hampshire with no route for an individual. Recorded banned rather than unclear because the closing clause is express and the waiver exclusion is express.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-23-1-101",
+          "cite": "Wyo. Stat. § 23-1-101(a)(xiii); Ch. 69 § 2(c)",
+          "quote": "\"Wildlife\" means all wild mammals, birds, fish, amphibians, reptiles, crustaceans and mollusks, and wild bison designated by the Wyoming game and fish commission and the Wyoming livestock board within Wyoming.",
+          "note": "Wyoming answers the invertebrate question at the level of the statute, the way Utah and Alaska do, and it answers it twice. The statutory definition is a closed list of taxa with no insect or arachnid in it, and Commission Regulation Chapter 69 then repeats the closure in its own words at § 2(c): \"Cold-Blooded Wildlife means all fish, amphibians, reptiles, mollusks, crustaceans, their viable gametes ... and any transgenic product or hybrid thereof\". Chapter 10 covers only warm-blooded wildlife. A Madagascar hissing cockroach is therefore outside the Game and Fish Department entirely rather than unlisted within it, which is the distinction that decides this cell in the opposite direction from New Hampshire, where the statute names invertebrates and the closed list then swallows them.",
           "verifiedOn": "2026-09-05"
         }
       }

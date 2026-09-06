@@ -1,24 +1,32 @@
 # Legal map: where the work stands
 
-Written 2026-09-05 so a fresh session can pick this up without re-deriving anything.
-Read this, then `docs/legal-sources/README.md`, then start.
+Written 2026-09-05, revised the same evening after a seven-jurisdiction sitting, so a fresh session
+can pick this up without re-deriving anything. Read this, then `docs/legal-sources/README.md`,
+then start.
 
 ## State of play
 
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 32 (AL, AZ, CA, CO, CT, DE, FL, GA, HI, IL, IN, MA, MD, MI, MN, NC, NE, NJ, NM, NV, NY, NYC, OH, OK, OR, PA, SC, TN, TX, UT, VT, WI) |
-| Unread cells | 190 |
-| Cached primary sources | 65 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 39 (AL, AR, AZ, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, MA, MD, ME, MI, MN, MO, NC, NE, NH, NJ, NM, NV, NY, NYC, OH, OK, OR, PA, RI, SC, TN, TX, UT, VT, WI, WY) |
+| Unread cells | 117 |
+| Jurisdictions left | 13 (AK, DC, IA, KS, KY, LA, MS, MT, ND, SD, VA, WA, WV) |
+| Cached primary sources | 72 files in `docs/legal-sources` |
 
-`main` carries all 32 completed jurisdictions and is deployed, so there is nothing waiting on a
-branch any more. Cut a fresh branch from main to start the next sitting.
-`claude/legal-map-colorado-dca3og` is merged and can be ignored.
+The tail is now perfectly uniform. Every one of the thirteen remaining jurisdictions is missing the
+same nine animals and no others: the flying squirrel, the five encyclopedia lizards (bearded dragon,
+leopard gecko, crested gecko, blue-tongue skink, Jackson's chameleon), the green anole, the rabbit
+and the Madagascar hissing cockroach. Thirteen states times nine animals is the whole of what is
+left. Every snake, turtle, mammal and bird on the map is finished in all 52 jurisdictions.
+
+`main` carries everything through the 32-jurisdiction mark. Branch
+`claude/legal-map-beastlyfacts-lundsv` carries Arkansas, Maine, Missouri, Idaho, Rhode Island,
+New Hampshire and Wyoming and is not merged yet; cut the next branch from main once it is.
 
 ## The loop
 
-One jurisdiction per sitting. It takes a while and that is fine.
+Several jurisdictions per sitting now. The mechanics first:
 
 1. `node scripts/legal-gaps.mjs` regenerates `docs/LEGAL_MAP_GAPS.md`, which lists every
    unread cell grouped by jurisdiction, with the sources already on file for each.
@@ -31,6 +39,29 @@ One jurisdiction per sitting. It takes a while and that is fine.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
+
+Then the substance. Four questions answer all nine animals in most states, and a state with a
+species list answers them in one read:
+
+1. **Does the state's definition of wildlife reach a terrestrial arthropod?** That settles the
+   cockroach, and it is the question to ask first because it is the only one that can go three ways.
+   A closed list of taxa (Wyoming's statute, Utah's, Alaska's) puts an insect outside the agency
+   entirely. A definition that names invertebrates, or ends in an open catch-all such as "all other
+   wild animals, regardless of classification" (New Hampshire, Arkansas, Missouri), pulls it in, and
+   you then have to find the operative rule, which may exempt it (Arkansas, Missouri) or swallow it
+   (New Hampshire).
+2. **Is a non-native pet reptile exempt as a class, listed, or caught by a catch-all?** Five of the
+   nine animals fall out of this one question, and most states answer it in a single clause:
+   "Reptiles, exotic, except ..." or "Amphibians and reptiles not listed in Section 8 or 9".
+3. **Is the green anole native there?** It flips from the non-native answer to the native one across
+   a good part of what is left. Arkansas is the model: its list clears the genus Anolis "except
+   ... species native to Arkansas", which is written for exactly this animal.
+4. **Does the wild animal definition exclude domesticated animals, or does a list name the domestic
+   rabbit?** That settles the rabbit. Both devices are common and they give the same answer.
+
+The flying squirrel is the one that usually needs its own look, because it is a native mammal in
+most of these states, and native mammals are where the wild-take allowances stop: Maine's, Idaho's
+and Missouri's all reach reptiles, amphibians and invertebrates and not mammals.
 
 ## What actually blocks these sittings
 
@@ -59,6 +90,27 @@ stale. The Secretary of State's rule page lists every version with its effective
 that you are reading the current one before you quote a cite that has been on the map for a
 month. Two guides had already picked up the change without the map being updated, which is the
 same signal from the other direction.
+
+**A list the agency publishes about itself, two revisions behind.** Arkansas is the sharpest version
+of "a rule that moved" because the stale copy is on the agency's own domain and looks canonical. The
+map cited `agfc.com/wp-content/uploads/2023/04/221112_4CP-Unrestricted-Captive-Wildlife-Species-List-.pdf`,
+a compiled PDF of Code Addendum R1.01 dated 11/1/22, and forty Arkansas entries rested on it. The
+current codebook, as of 1 July 2025, adds the rosy boa to the unrestricted list outright and adds a
+whole Anoline Lizards entry qualified "except Brown Anoles (Anolis sagrei) or species native to
+Arkansas". Read the 2022 PDF and the rosy boa comes out prohibited and the green anole comes out
+unanswered; read the codebook and they come out legal and conditional. The compiled PDF says so
+itself, in its own header: the codebook lists "take precedence". The tell is a document that
+describes itself as a compilation, an extract or a summary of a regulation rather than as the
+regulation. Check the codebook date, not the PDF date.
+
+Arkansas had a second layer under it, and it runs both ways. The 2022 chapter PDFs on AGFC's S3
+bucket carry no express exception for terrestrial invertebrates; the current Codes 09.01, 09.07 and
+09.10 all do, which is the only reason a pet arthropod is legal there. And the closing clause of the
+addenda was rewritten: the 2022 version let the Commission permit "any other unlisted species upon
+evaluation and determination", while the current R1.02 and R1.03 both end "Species not listed in
+Addenda R1.01, R1.02, or R1.03 are prohibited until evaluated". Arkansas went from a permittable
+default to a closed list, and neither sentence is in the version that circulates.
+
 
 **The wrong statute, read correctly.** Oregon's prairie dog and capybara sat on this map as
 unrestricted, with accurate notes: rodents really are outside ORS 609.305, which reaches only
@@ -200,28 +252,85 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 ## Next up
 
-| Code | State | Unread | Note |
+Thirteen jurisdictions, nine animals each, 117 cells. Ordered by how much is already on file.
+
+| Code | State | Sources on file | What is likely to decide it |
 |---|---|---|---|
-| AR | Arkansas | 12 | 1 source on file |
-| ME | Maine | 12 | 1 source on file |
-| MO | Missouri | 11 | 2 sources on file |
-| ID | Idaho | 10 | 2 sources on file |
-| RI | Rhode Island | 10 | 1 source on file |
-
-Twenty jurisdictions left and every one asks the same short list, so they go several at a sitting
-rather than one. The core is eight animals: five encyclopedia lizards (bearded dragon, leopard
-gecko, crested gecko, blue-tongue skink, Jackson's chameleon), the green anole, the Madagascar
-hissing cockroach and the rabbit. Fifteen of the twenty add the flying squirrel, and a handful add
-a snake or two. Four questions answer all eight in most states:
-
-1. Does the state's definition of wildlife or wild animal reach a terrestrial arthropod? That
-   settles the cockroach, and it usually settles it cleanly one way or the other.
-2. Is a non-native pet reptile exempt as a class, listed, or caught by a catch-all?
-3. Is the green anole native there? Its range covers the southeast, so it flips from the
-   non-native answer to the native one across roughly a third of what is left.
-4. Does the wild animal definition exclude domesticated animals? That settles the rabbit.
+| MT | Montana | 2 | A white list. § 87-5-705(1) bars anything not allowed by law or commission rule, so read 12.6.2205 (noncontrolled), 12.6.2208 (controlled) and 12.6.2215 (prohibited) before assuming silence helps. § 87-5-702 puts rodents, cats, dogs and ferrets outside the scheme as domestic animals, which may answer both the rabbit and the flying squirrel |
+| WA | Washington | 1 | RCW 16.30 is a short enumerated dangerous-animal list and answers none of the nine. The rule that will is WAC 220-640 (deleterious exotic wildlife) plus WAC 220-450 on native wildlife. Do not stop at 16.30 |
+| VA | Virginia | 1 | 4VAC15-30-40 is a permit table for predatory or undesirable species. Virginia's native wildlife rules are elsewhere, 4VAC15-20 and 4VAC15-360; the flying squirrel and the anole will be there, not in 30-40 |
+| KY | Kentucky | 1 | 301 KAR 2:082 has three lists and a permit-exempt list at Section 7, which should answer most of the nine in one read. Check whether KRS 150.180 or 301 KAR 2:081 reaches natives |
+| IA | Iowa | 2 | 717F is a family-and-order dangerous list that answers none of the nine. Iowa Code 481A is the native side, and 571 IAC 77 and 111 are where captive wildlife actually sits |
+| LA | Louisiana | 2 | LAC 76:XV.101 was rewritten in January 2025 and is one of the strictest reptile rules in the country, so it should answer five of the nine directly. The anole is a Louisiana native |
+| AK | Alaska | 2 | Already half-answered by the sources on file: AS 16.05.940(19) defines game as birds, reptiles and mammals, so amphibians and invertebrates are outside 5 AAC 92.029 entirely, and 92.029(c) forbids issuing a pet permit for a game animal. The clean list at 92.029(b) is short. Expect several `banned` |
+| ND | North Dakota | 2 | The old nontraditional livestock category system is repealed and what replaced it is importation health chapters. Expect a thin answer; check NDCC 20.1 (Game and Fish) as well as Title 36 |
+| SD | South Dakota | 1 | 12:68:18:03 attaches possession permits to five mammal groups only, none of them Rodentia, so the flying squirrel needs only the free entry permit. The reptiles and the cockroach turn on what "nondomestic animal" means in SDCL 40-3 and 40-14, which is not in the rule itself. Fetch via `https://sdlegislature.gov/api/Rules/12:68:18`, not the web page |
+| KS | Kansas | 1 | K.S.A. 32-1301 is big cats, bears and non-native venomous snakes and answers none of the nine. Go to K.S.A. 32-701 for the definition of wildlife and K.A.R. 115-20 for possession. Classic prohibited-list-answers-nothing state |
+| MS | Mississippi | 1 | Rule 8.3 is a short inherently-dangerous list reaching nothing smaller than a hyena. The answer will be in MDWFP's other rules and Miss. Code 49-7; check whether the definition of wildlife reaches reptiles at all |
+| DC | District of Columbia | 1 | § 8-1808(j) is a closed list of seven permitted categories, so absence is a bar. Read it from the D.C. Code at code.dccouncil.gov rather than from the animallaw.info copy the map currently cites, and check DCMR Title 24 ch. 9 |
+| WV | West Virginia | 1 | § 19-34-2 defines dangerous wild animals by character and § 19-34-5 leaves the list to a legislative rule that has never been confirmed in force here. Settling whether that rule exists is the whole West Virginia sitting, and it also fixes the box turtle guide mismatch |
 
 ## Loose ends
+
+- **New Hampshire bans every pet arthropod, and it is a chain of four provisions rather than a
+  decision anyone appears to have made.** RSA 207:1, XXXV defines wildlife to include invertebrates
+  by name. Fis 804.02, the non-controlled possession list, has no invertebrate in it. Table 800.2,
+  the controlled table, runs amphibians, reptiles, fish, birds and mammals and stops. Fis 804.04(b)
+  then says "All species not specifically listed under the categories of non-controlled, prohibited,
+  or controlled shall be designated as prohibited", and Fis 804.03(a) says no permit issues for
+  anything prohibited under it. The waiver at Fis 802.05 that would cover an unlisted species is
+  closed to permittee categories 1, 2, 3, 4, 6 and 7 by subsection (c), which leaves only exhibitors.
+  What makes this more than an oversight is Fis 804.03(b)(1), which has an invertebrates heading and
+  names five aquatic nuisance species: the Department writes invertebrate entries when it means to.
+  Recorded `banned`, the first banned cockroach on the map. The whole chapter was readopted by
+  Document #14558 effective 21 April 2026, so anything written about New Hampshire before that date
+  describes a different rule.
+- **Idaho's cockroach is `unclear` and it is the cleanest two-reading case since New Jersey.**
+  Idaho Code § 36-202(g) defines wildlife as "any form of animal life, native or exotic, generally
+  living in a state of nature", which reaches an insect; IDAPA 13.01.10.200.01 bars possessing live
+  wildlife without a Department licence; and the conventional pets definition at 010.06 is a closed
+  enumeration of dogs, cats, ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and
+  amphibians, non-poultry birds, hedgehogs, tenrecs and sugar gliders, with no invertebrate in it.
+  Against that, Idaho Code § 36-201's eight classification categories are all vertebrate groups,
+  IDAPA 13.01.06 classifies no invertebrate anywhere, and 13.01.10 opens by excluding crustaceans
+  from its own use of the word, which suggests the chapter was drafted with vertebrates in view.
+  The agriculture side is clean either way: IDAPA 02.06.09.146's invasive insect list is three forest
+  pests. Anyone who gets a straight answer from IDFG's Wildlife Bureau can settle this in one call.
+- **Maine's flying squirrel is `banned` on an absence, and the absence is the rule.** 09-137 CMR
+  ch. 7 § 7.06(4) says "A person may not possess any species that has not been categorized" and that
+  an uncategorised species "will not be eligible for a permit under this chapter". Glaucomys volans
+  is in none of Maine's four buckets: the Unrestricted List's Rodentia section is thirteen cage
+  rodents, the Prohibited list is the monk parakeet and the mute swan, Category 1 Mammalia names
+  Callosciurus prevostii and Cynomys ludovicianus and eighteen families and no Sciuridae, and
+  Category 2 Mammalia is camelids, four procyonids, the binturong, genets and Caviidae. The wild-take
+  exemption at 12 M.R.S. § 12152(1-B) covers reptiles, amphibians and invertebrates and not mammals.
+  The live route is § 7.06(5), a request to the commissioner and technical committee to categorise
+  the species. Worth re-checking if anyone ever files one.
+- **The Maine cockatoo mismatch in `check-legal-map-sync` is now diagnosable and is a species
+  question, not a map error.** The guide row reads "Maine (cockatiel, galah, other smaller species) |
+  Legal, no permit" and the map says `permit`. Maine's Unrestricted Species List clears "All Species
+  in Order Psittaciformes (Parrots)" with four named exceptions and family Strigopidae, under an
+  asterisk that removes anything in CITES Appendix I or rated Endangered or worse by the IUCN. Most
+  cockatoos clear that; Cacatua sulphurea, C. goffiniana, C. haematuropygia and Probosciger aterrimus
+  are CITES Appendix I and do not. So the guide is right about cockatiels and galahs and the map is
+  right about the Appendix I species, and the fix is to split the cell or to narrow the guide row.
+  Left alone this sitting because the three pre-existing sync errors are the agreed baseline.
+- **Arkansas's corn snake rests on a nativity call the Commission has not published.** Code Addendum
+  R1.01 clears the genus Pantherophis "except species native to Arkansas", and Code 01.00 defines
+  native wildlife as species with "established, naturally reproducing, free-ranging, wild populations
+  within Arkansas". The Arkansas Herpetological Atlas carries P. guttatus only under potential
+  occurrence, with the state's own ratsnakes being the P. emoryi / P. slowinskii complex and
+  P. obsoletus, so on AGFC's own definition the corn snake is not native and stays on the unrestricted
+  list. If AGFC ever treats the Arkansas animal as P. guttatus, this cell flips to conditional under
+  Code 09.14 and the milk snake and green anole cells are the model for what it becomes.
+- **Missouri's native reptile and mammal cells rest on a take-five rule and a purchase gap nobody has
+  closed.** 3 CSR 10-9.110(1)(A) lets a resident take and possess five specimens of native wildlife
+  alive without a permit, "but these animals shall not be bought or sold". 3 CSR 10-9.353(2) lets a
+  Class I breeder sell "only to the holder of the appropriate permit, where required". Whether a
+  private person may buy a captive-bred Missouri milksnake or southern flying squirrel from a
+  permitted breeder therefore turns on what "where required" means for someone under the five-animal
+  ceiling, and MDC has published nothing on it. Both cells are recorded `conditional` on the take-five
+  route, which is the part the rule states outright.
 
 - **New York City has one unclear cell and it turns on a 1989 systematics paper.** § 161.01(b)(10)
   prohibits "any member of the family Iguanidae, including the green or common iguana". Anolis
@@ -439,19 +548,60 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Thirty-nine of the 52 animals are now at 51 of 51. One is one short at 50, the ackie monitor,
-which is missing only Idaho.
+Forty-three of the 52 animals are now at 51 of 51, including the ackie monitor, which Idaho
+completed, and the corn snake, milk snake and rosy boa, which Maine and Arkansas completed.
+Every snake, turtle, mammal and bird on the map is finished everywhere.
 
-The eight encyclopedia animals added recently (bearded dragon, leopard gecko, crested
-gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
-at 31 to 32 states each and are **not** ready for guides. `check-legal-map-sync.mjs` fails a
-guide that asserts a status for a state the map has not read, so writing one now produces a
-page the build rejects. They need map depth first.
+The nine that are not are the eight encyclopedia animals added recently (bearded dragon, leopard
+gecko, crested gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing
+cockroach) plus the flying squirrel. All nine sit at exactly 39 of 51 and all nine are missing
+exactly the same thirteen states, so they finish together. They are **not** ready for guides yet:
+`check-legal-map-sync.mjs` fails a guide that asserts a status for a state the map has not read, so
+writing one now produces a page the build rejects. Thirteen more state sittings and all nine become
+guide-ready at once.
 
 Any new legal guide needs a `RELATED_ARTICLES` entry in `src/lib/data/relatedArticles.js`.
 The auto-detect only covers standard care-guide suffixes, and `-legal-guide` is not one.
 
 ## Findings worth reusing
+
+The invertebrate question now has a fourth shape and it is the one that bites. The three known
+shapes were a closed list of taxa that leaves arthropods out, an express exemption, and a broad
+definition with no operative rule under it. The fourth is a broad definition WITH an operative rule
+under it: New Hampshire's statute names invertebrates, its three possession lists contain none, and
+Fis 804.04(b) makes everything unlisted prohibited. Same starting point as Arkansas and Missouri,
+opposite ending, because those two wrote an escape and New Hampshire did not. Arkansas's escape is
+an express exception for "terrestrial invertebrate species not otherwise prohibited", repeated in
+three separate codes; Missouri's is a disclaimer inside the general prohibition itself, "this Code
+shall not apply to other invertebrates except as specifically provided". So: find the definition,
+then find the operative rule, then look specifically for an invertebrate escape hatch before
+concluding either way.
+
+**A closed clearance with one named exception tells you how wide the clearance is.** Rhode Island
+clears "All Gekkos (Gekkonidae)" and excepts one species, Coleonyx reticulatus, which on current
+taxonomy is a eublepharid and not a gekkonid at all. The exception would sit outside the clause it
+excepts if the family name were read narrowly, so it has to be the broad pre-split sense, which puts
+the leopard gecko and the crested gecko inside. The same trick reads the other way in Maine, whose
+Lampropeltis clearance excepts "Lampropeltis triangulum triangulum", its own native subspecies:
+the exception tells you the clearance was written with natives in mind. When a list carries one odd
+exception, that exception is usually the key to the entry rather than a footnote to it.
+
+**Three states now answer the same question with the same word and different results, and the word
+is "domesticated".** Rhode Island writes a domestication definition and then names the domestic
+rabbit while expressly excluding wild-type Oryctolagus and the San Juan rabbit; Wyoming lists
+"domesticated European rabbit (Oryctolagus cuniculus)" in a closed enumeration; New Hampshire writes
+"Rabbits, domesticated" on both its non-controlled lists; Arkansas never mentions the animal and
+answers it purely by defining WILD as "living in a state of nature and not domesticated". All four
+land in the same place, which is what makes Minnesota's contradiction and Illinois's silence stand
+out rather than look normal.
+
+**Where a state's nativity qualifier does the work, the agency's own field guide is the primary
+source, not a range map.** Missouri's whole answer for the corn snake, the green anole and the
+milksnake came out of two MDC publications: A Guide to Missouri's Snakes lists five Pantherophis and
+no P. guttatus, and A Guide to Missouri's Lizards lists eleven natives and no anole. Arkansas's came
+out of the Arkansas Herpetological Atlas, which files the red cornsnake under potential occurrence.
+A state that qualifies a species list with "except species native to X" has made the checklist part
+of its law, so use the checklist the agency itself publishes.
 
 The Bengal cat has come out four different ways, which makes it a good test of whether you
 have actually read a state's hybrid rule: unclear in Pennsylvania, legal in Michigan and

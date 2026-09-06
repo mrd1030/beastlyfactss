@@ -78,6 +78,13 @@ about this species", not to claim a new verification date.
 | `NC-nc-wildlife-definitions.txt` | The one definition that answers North Carolina, plus the captivity licence it does not reach |
 | `SC-sc-wildlife-rules.txt` | South Carolina's import chapter and its 2021 native reptile rules, which override the pet-trade exemption |
 | `OH-oh-wildlife-code.txt` | Ohio's definitions, its dangerous wild animal and restricted snake lists, and the propagating licence |
+| `AR-ar-agfc-codebook.txt` | Arkansas's current Code Book: the definitions that decide wild and native, Chapter 09.00, and Addenda R1.01/R1.02/R1.03 with the clause that makes absence a bar |
+| `ME-me-captive-wildlife.txt` | Maine's three parts: § 12152, the chapter 7 rule with its uncategorised-species bar, and the Unrestricted Species List's insects, mammals and reptiles |
+| `MO-mo-wildlife-code.txt` | Missouri's whole answer in two subsections, plus the general prohibition's invertebrate disclaimer and the definitions the classes turn on |
+| `ID-id-conventional-pets.txt` | Idaho's conventional pets definition, which answers eight cells, plus the classification chapter and the deleterious exotic animal list that reaches only birds and mammals |
+| `RI-ri-250-40-05-3.txt` | Rhode Island's definitions, prohibitions, exemptions and the whole of Appendix A |
+| `NH-nh-fis800.txt` | New Hampshire's April 2026 readoption: the three lists, the clause that prohibits everything unlisted, and the waiver that is closed to private keepers |
+| `WY-wy-ch10-ch69.txt` | Wyoming's two chapters, permissive for reptiles and a closed list for mammals, and the statutory definition that leaves arthropods out |
 
 ## Reading the awkward ones
 
@@ -255,6 +262,12 @@ not on the sites, so a person with a browser can open all of them.
 
 | Host | Behavior | What to do |
 |---|---|---|
+| `agfc.com` | `apps.agfc.com/regulations/<code>/` is retired and 404s; `www.agfc.com/resources/code-of-regulations` is an Esper JS viewer whose bundle exposes no API; the per-chapter PDFs under `agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/small/` are frozen at 8 June 2022 | List the bucket, `https://agfc-omnibus.s3.amazonaws.com/?list-type=2&prefix=eregs/&max-keys=1000`, and take `eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf`, which is the whole current codebook. `codeofarrules.arkansas.gov/Rules/PartDocument?partID=1327` serves the Secretary of State's filed copy as a PDF under an `.html`-looking URL |
+| `maine.gov/sos/cec/rules/...` | Every path 404s, but the 404 page is a 90 KB search page that echoes the requested URL back, so a grep for the filename finds it and looks like a hit | Take rule links from `https://www.maine.gov/sos/rulemaking/agency-rules/department-inland-fisheries-and-wildlife-rules`; the files are `.docx` under `/sos/sites/maine.gov.sos/files/`. Extract with python `zipfile` on `word/document.xml` |
+| `sdlegislature.gov` | The site is a JS shell and `/Rules/Administrative/<article>` returns 6 KB of "please enable JavaScript" | `https://sdlegislature.gov/api/Rules/<article>` returns the full chapter as JSON with the rule text in HTML fields. Note `/api/Rules/Chapter/<article>` and `/api/Rules/Sections/<article>` return the shell instead |
+| `gencourt.state.nh.us` | Works with plain curl, but Fis 800 is one 2.3 MB Word-exported HTML page in which every space is a non-breaking space and section numbers render as `Fis 803 .03` | Strip tags, then strip non-ASCII, then collapse whitespace to a single stream before slicing. Search `804 .02`, not `804.02` |
+| `www.sos.mo.gov` | Serves each CSR chapter as a PDF and normally works, but returns an occasional 403 on a first request | Retry with a browser User-Agent rather than concluding it is blocked |
+| `mdc.mo.gov` | Field-guide slugs exist only for species Missouri actually has, so a 404 is a weak signal rather than an answer | Use MDC's own PDFs instead: `A Guide to Missouri's Snakes` and `A Guide to Missouri's Lizards` are complete state checklists and settle nativity |
 | `michigan.gov` | 403 to curl and to WebFetch, every path, including `/en/` variants and PDF hosts | `eregulations.com` publishes the official Michigan guides and works |
 | `legislature.mi.gov` | Connection fails | Use `animallaw.info` reproductions, cross-check against two sources |
 | `legis.state.pa.us`, `palegis.us` | 403 and 503 | Same, cross-check two reproductions before quoting |

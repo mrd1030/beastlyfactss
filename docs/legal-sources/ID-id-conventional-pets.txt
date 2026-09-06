@@ -1,0 +1,219 @@
+SOURCE: Idaho: IDAPA 13.01.10 (importation and possession), IDAPA 13.01.06 (classification), IDAPA 02.04.27 (deleterious exotic animals), Idaho Code §§ 36-201 and 36-202
+URL: https://adminrules.idaho.gov/rules/current/13/130110.pdf, /13/130106.pdf, /02/020427.pdf, https://legislature.idaho.gov/statutesrules/idstat/Title36/T36CH2/SECT36-202/
+FETCHED: 2026-09-05 (adminrules.idaho.gov serves every IDAPA chapter as a PDF at /rules/current/<agency>/<agencychapter>.pdf and works with plain curl. legislature.idaho.gov serves one statute section per page.)
+
+READ THIS FIRST. Idaho answers by CATEGORY, not by species list, which is why so few of its cells
+need a species search. IDAPA 13.01.10.010.06 defines "conventional pets" and 200.06 then exempts
+them from every Department permit. The definition is one sentence and it decides the reptiles, the
+rabbit and the flying squirrel in one go.
+
+The one thing it does not decide is invertebrates, and Idaho is recorded unclear there. Idaho Code
+§ 36-202(g) defines wildlife as "any form of animal life, native or exotic, generally living in a
+state of nature", which reaches an insect; 13.01.10.200.01 bars possessing live wildlife without a
+licence; and the conventional pets list is a closed enumeration with no invertebrate in it. Against
+that, § 36-201's eight classification categories are all vertebrate groups, IDAPA 13.01.06
+classifies no invertebrate anywhere, and 13.01.10 opens by excluding crustaceans from its own use of
+the word. Both readings are textual and the Department has published nothing either way.
+
+The agriculture side is clean and short: IDAPA 02.04.27 reaches BIRDS AND MAMMALS ONLY, so no
+reptile or invertebrate is a deleterious exotic animal, and IDAPA 02.06.09.146's invasive insect
+list is three forest pests.
+
+
+==== IDAPA 13.01.10.010, Definitions (the whole section) ====
+010. DEFINITIONS.
+In this chapter, “wildlife” excludes bullfrogs, fish, or crustaceans whose posse ssion, transport, release, and sale are 
+regulated by IDAPA 13.01.11 and 13.01.12 or by ISDA, unless they are or will be maintained in a zoo or aquarium 
+for live exhibit to the public. (4-6-23)
+01. Agricultural/Domestic Animals. Animals or eggs normally considered to be of agricultural or 
+domestic types currently common to Idaho that: (1) do not meet the definition of wildlife in Section 36-202, Idaho 
+Code and (2) are not intended for releas e into the wild in Idaho. These include but are not limited to livestock, 
+domestic bison, domestic cervids, and domestic furbearing animals regulated by ISDA under Title 25, Idaho Code.
+(4-6-23)
+02. Bona Fide Pet Store . Legitimate retail store that engages in the selling of conventional pets with a 
+set location and regular business hours. (4-6-23)
+03. Captive Wildlife Facility . Facility where the operator obtains, possesses, or propagates wildlife for 
+any purpose, including commercial, rehabilitation, private ownership (including private park) or sale. (4-6-23)
+04. Commercial Wildlife Facility . Facility where the operator obt ains, possesses, or propagates 
+wildlife for any commercial purpose, including exhibition, education, entertainment, or sale. (4-6-23)
+05. Commercial Wildlife Farm . Commercial wildlife facility wh ere operator propagates big game 
+animals not regulated by ISDA. (4-6-23)
+06. Conventional Pets . Privately owned companion animals not intended for research or resale that are 
+not native wildlife captured from the wild in Idaho: do gs, cats ferrets, rabbits, r odents, non-venomous or non-
+dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders. (4-6-23)
+07. CWD . Chronic Wasting Disease. (4-6-23)
+08. ISDA . Idaho State Department of Agriculture. (4-6-23)
+09. Large Commercial Wildlife Facility . Commercial wildlife facility housing three or more species 
+or encompassing display or exhibit areas larger than one (1) acre. (4-6-23)
+10. NPIP . National Poultry Improvement Program for state-federal cooperative testing and 
+certification. (4-6-23)
+11. Private Park . Facility where the owner or operator obta ins, possesses, or propagates wildlife in 
+captivity for personal pleasure and not for any commercial purpose. (4-6-23)
+12. Publicly Owned Zoo or Wildlife Exhibit . Zoo, aquarium, or similar facility exhibiting wildlife 
+owned by any municipal, county, state, or federal agency. (4-6-23)
+13. Shooting Preserve. Privately owned or leased premises operated for hunting of captively 
+IDAHO ADMINISTRATIVE CODE IDAPA 13.01.10 – Importation, Possession,
+Department of Fish and Game Release, Sale, or Salvage of Wildlife
+Section 100 Page 6 
+propagated upland game birds. (4-6-23)
+14. Traveling Circus, Menagerie, or Trained Act of Wild Animals . Mobile wildlife display or 
+exhibit maintained for instructional, educational, entertai nment, or other co mmercial purposes that is not located 
+within Idaho more than two (2) months during any calendar year. (4-6-23)
+
+==== IDAPA 13.01.10.200, Live Wildlife ====
+200. LIVE WILDLIFE.
+01. General . No perso n may import into Idaho, export from Idaho, transport, possess or otherwise hold 
+in captivity, propagate, sell or release into the wild any live wildlife, except those animals exempted by Idaho Code or 
+these rules, without a corresponding import, export, trans port, captive possession (individual animal license or 
+multiple animal license at a private, commercial or rehabilitation facility), sale or release license/permit from the 
+Department. Use of raptors in falconry is governed by IDAPA 13.01.14, Rules Governing Falconry. (4-6-23)
+02. Compliance with Othe r Agency Requirements . No person may possess, hold in captivity, or 
+propagate any wildlife without complying with relevant city or county ordinances, including any zoning and planning 
+commission approval, and any ISDA or USDA requirements. (4-6-23)
+03. Restrictions on License Issuance . The Department will not issue any license/permit for import, 
+export, transport, captive posse ssion, sale, or release of live wildlife or eg gs thereof, if the wildlife or eggs would 
+pose a threat to the state of Idaho, including public safety, threat of disease, genetic contamination or displacement or 
+of competition with existing species. Because of CWD, the Department will not issue any perm it for the import into 
+Idaho of any live cervid not regulated as a domestic cervid by ISDA. (4-6-23)
+04. Marking Big Game. All captive big game animals (excluding domestic cervids regulated by 
+ISDA) must be uniquely marked via Department-approved method and numbering. (4-6-23)
+05. Inspections and Records. As a condition to any facility or individual captive animal license, the 
+Department will be able to access for inspection at any reasonable time all records, all wildlife, and the facilities 
+where the wildlife are kept, with records maintained as specified in Section 36-709(c), Idaho Code. (4-6-23)
+06. Exemptions for Import, Export, Transport, Possession or Sale . No permit is needed from the 
+Department to import, export, transport, possess or sell the following animals, provided they are not intended for 
+release into the wild (although another state or federal agency may regulate such activity): (4-6-23)
+a. Agricultural/domestic animals. (4-6-23)
+b. Conventional pets. (4-6-23)
+07. Exemptions for Unprotect ed and Predatory Wildlife. (4-6-23)
+a. Wildlife classified as Unprotect ed Wildlife or Predatory Wildlife that are lawfully taken by a 
+person licensed or authorized to hunt or trap in accordan ce with Chapter 4, Title 36, Idaho Code, may be exported, 
+transported, possessed, or sold without additional permit fr om the Department, provided such action is not otherwise 
+in violation of federal, state, county, or city laws, rules, ordinances, or regulations. ISDA may restrict the possession, 
+sale, or import of fox, skunk, raccoon or other animals, such as restrictions under Section 25-236, Idaho Code.
+(4-6-23)
+b. Native unprotected or predatory wildlife lawfully captured alive may be released on private lands 
+in the county of origin without a Department permit in accordance with Section 36-502, Idaho Code and with written 
+landowner consent in possession while such wildlife is in transit to the release site. (4-6-23)
+08. Exemptions for Native Reptiles and Amphibians . A person licensed or authorized to hunt or trap 
+in accordance with Chapter 4, Title 36, Idaho Code, may capture alive, or hold in captivity and possess, no more than 
+fo
+ur (4) individuals per species of Idaho native reptiles or amphibians at one time, provided such action is not 
+IDAHO ADMINISTRATIVE CODE IDAPA 13.01.10 – Importation, Possession,
+Department of Fish and Game Release, Sale, or Salvage of Wildlife
+Section 201 Page 9 
+otherwise in violation of federal, stat e, county, or city laws, rules, ordina nces, or regulations. Because of disease 
+concerns, native reptiles or amphibians held in captivity with another reptile or amphibian obtained from any other 
+location may not be released back into the wild unless the Department provides advance authorization. (4-6-23)
+
+==== Idaho Code § 36-202(g) and § 36-201 ====
+(g) "Wildlife" means any form of animal life, native or exotic, generally living in a state of
+nature provided that domestic cervidae as defined in section 25-3701, Idaho Code, shall not be
+classified as wildlife.
+
+36-201. Fish and game commission authorized to classify wildlife. (1) With the exception of
+predatory animals, the Idaho fish and game commission is hereby authorized to define by
+classification or reclassification all wildlife in the state of Idaho. Such definitions and
+classifications shall include: (a) Game animals (b) Game birds (c) Game fish (d) Fur-bearing animals
+(e) Migratory birds (f) Threatened or endangered wildlife (g) Protected nongame species (h)
+Unprotected wildlife. Predatory wildlife shall include: 1. Coyote 2. Jackrabbit 3. Skunk 4. Weasel
+5. Starling 6. Raccoon 7. Rattlesnake.
+
+==== IDAPA 13.01.06.200 and .250, Protected Nongame and Unprotected Wildlife ====
+200. PROTECTED NONGAME SPECIES.
+01. Mammals . (7-1-24)
+a. American pika. (7-1-24)
+IDAHO ADMINISTRATIVE CODE IDAPA 13.01.06
+Department of Fish and Game Rules Governing Classification & Protection of Wildlife
+Section 201 Page 7 
+b. Bats – all species. (7-1-24)
+c. Chipmunks – Tamias spp. (7-1-24)
+d. Merriam’s ground squirrel – Urocitellus canus. (7-1-24)
+e. Common golden-mantled ground squirrel – Callospermophilus lateralis. (7-1-24)
+f. Piute ground squirrel – Urocitellus mollis. (7-1-24)
+g. Kit fox. (7-1-24)
+h. Wolverine. (7-1-24)
+i. Northern Idaho ground squirrel – Urocitellus brunneus. (7-1-24)
+j. Northern flying squirrel. (7-1-24)
+k. Common rock squirrel – Otospermophilus variegatus. (7-1-24)
+l. Southern Idaho ground squirrel – Urocitellus endemicus. (7-1-24)
+m. Caribou. (7-1-24)
+n. Wyoming ground squirrel – Urocitellus elegans nevadensis. (7-1-24)
+02. Birds . All native species, except game birds. (7-1-24)
+03. Amphibians . All native species. (7-1-24)
+04. Reptiles . All native species. (7-1-24)
+05. Fish . (7-1-24)
+a. Bear Lake sculpin. (7-1-24)
+b. Northern leatherside chub. (7-1-24)
+c. Pacific lamprey. (7-1-24)
+d. Sand roller. (7-1-24)
+e. Shoshone sculpin. (7-1-24)
+f. Wood River sculpin. (7-1-24)
+g. Green sucker. (7-1-24)
+
+250. UNPROTECTED WILDLIFE.
+Unprotected Wildlife includes all wildlife not classified in the preceding categories.
+
+(Note 200.01(j): the NORTHERN flying squirrel is Protected Nongame. Glaucomys volans, the southern,
+does not occur in Idaho and is not classified at all.)
+
+==== IDAPA 02.04.27, what the deleterious exotic animal list actually covers ====
+400. LIST OF DELETERIOUS EXOTIC ANIMALS.
+The Administrator may add or remove animal species to the list of deleterious exotic animals in this chapter by 
+issuin
+g a written order listing animals and the reasons for a dding them to or removing them from the list deleterious 
+exotic animals. (3-31-22)
+401. DELETERIOUS EXOTIC ANIMALS - BIRDS.
+01. Mute Swan, ( Cygn us olor). Mute swans except those that have been pinioned. (3-31-22)
+IDAHO ADMINISTRATIVE CODE IDAPA 02.04.27
+Department of Agriculture Rules Governing Deleterious Exotic Animals
+Section 402 Page 9 
+402. DELETERIOUS EXOTIC ANIMALS - MAMMALS: CANIDAE.
+01. All Non-native Canidae Species. (3-31-22)
+403. DELETERIOUS EXOTIC ANIMALS -- MAMMALS: LARGE FELIDAE.
+All deleterious exotic Large Felidae must be posses sed on a facility that is AZA accredited. (3-31-22)
+01. Caracal (Felis caracal ). (3-31-22)
+02. Cheetah ( Acinonyx jubatus). (3-31-22)
+03. Jaguar ( Panthera onca). (3-31-22)
+04. Leopard ( Panthera pardus). All leopards. (3-31-22)
+05. Lion ( Panthera leo). (3-31-22)
+06. Tiger ( Panthera tigris). All tigers and tiger-hybrids. (3-31-22)
+404. DELETERIOUS EXOTIC ANIMALS -- MAMMALS: SMALL FELIDAE.
+01. Geoffroy’s Cat ( Fel is geoffroyi). (3-31-22)
+02. Margay ( Felis wiedii). (3-31-22)
+03. Ocelot (Felis pardalis) . (3-31-22)
+04. Serval ( Felis serval). (3-31-22)
+405. DELETERIOUS EXOTIC ANIMALS - MAMMALS: INSECTIVORES.
+01. European Hedgehog ( Erinaceus euro peaus). (3-31-22)
+406. DELETERIOUS EXOTIC ANIMALS - MAM MALS: MARSUPIALS.
+01. Brush Tailed Possum ( T richsurus vulpecula). (3-31-22)
+407. DELETERIOUS EXOTIC ANIMALS - MAMMALS: NON-HUMAN PRIMATES.
+All non-human primates must be possessed on a facility that is AZA accredited. The following primate species are 
+exempt from this rule: (3-31-22)
+01. Capuchin ( Cebus spp). (3-31-22)
+02. Marmoset ( Saimiri spp). (3-31-22)
+03. Spider Monkeys ( Atleles spp). (3-31-22)
+04. Squirrel Monkeys ( Callithrix, Cebuella, Callibella, and Mico spp). (3-31-22)
+408. DELETERIOUS EXOTIC ANIMALS - MAMMALS: OVIDAE.
+01. Barbary Sheep ( Am motragus lervia). (3-31-22)
+02. Mouflon Sheep ( Ovis musimon). (3-31-22)
+409. DELETERIOUS EXOTIC ANIMALS - MAMMALS: PROCYONIDAE.
+IDAHO ADMINISTRATIVE CODE IDAPA 02.04.27
+Department of Agriculture Rules Governing Deleterious Exotic Animals
+Section 410 Page 10 
+01. Coatimundi . (3-31-22)
+02. Kinkajou . (3-31-22)
+410. DELETERIOUS EXOTIC ANIMALS - MAMMALS: RODENTIA.
+01. African Dormice ( Grap hiurus). (3-31-22)
+02. African Rope Squirrels ( Funisciurus). (3-31-22)
+03. African Striped Mice ( Hybomys). (3-31-22)
+04. African Tree Squirrels ( Heliosciurus). (3-31-22)
+05. Brush-Tailed Porcupines ( Atherurus). (3-31-22)
+06. Gambian Giant Pouched Rats (Cricetomys) . (3-31-22)
+07. Prairie Dogs ( Cynomys). (3-31-22)
+08. South American Rodents . All South American rodents except guinea pigs and chinchillas.
+(3-31-22)
+411. DELETERIOUS EXOTIC ANIMALS - MAMMALS: SUIDAE.
+01. European or Russian Wild Boar ( Sus scrofa). (3-31-22)
+412. DELETERIOUS EXOTIC ANIMALS - MAMMALS: TAYASSUIDAE.
+01. Peccary ( Di cotyles tajacu). (3-31-22)

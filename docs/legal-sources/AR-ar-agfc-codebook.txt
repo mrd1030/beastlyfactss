@@ -1,0 +1,333 @@
+SOURCE: Arkansas Game and Fish Commission Code Book, as of 1 July 2025. Chapter 01.00 definitions, Chapter 09.00 Captive Wildlife, Addenda R1.01 / R1.02 / R1.03
+URL: https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf
+FETCHED: 2026-09-05 (agfc.com no longer serves the codebook: apps.agfc.com/regulations/<code>/ is retired and 404s, and www.agfc.com/resources/code-of-regulations is an Esper JS viewer with no reachable API. AGFC's own S3 bucket serves it: list keys with https://agfc-omnibus.s3.amazonaws.com/?list-type=2&prefix=eregs/&max-keys=1000 and take eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf, which is the whole 527-page book. The per-chapter PDFs under .../small/ are frozen at 8 June 2022 and are NOT current. The Secretary of State's Code of Arkansas Rules also serves a filed copy at https://codeofarrules.arkansas.gov/Rules/PartDocument?partID=1327, which was "As of October 30, 2024"; R1.01 is identical between the two.)
+
+READ THIS FIRST. Arkansas is a closed-list state and the sentence that makes it one is easy to miss,
+because it is the last line of two different addenda: "Species not listed in Addenda R1.01, R1.02,
+or R1.03 are prohibited until evaluated." R1.01 is the unrestricted list, R1.02 the permit list,
+R1.03 the prohibited list. None of the three contains a single invertebrate, which would sweep in
+every pet arthropod were it not for the express terrestrial-invertebrate exception repeated in
+Codes 09.01, 09.07 and 09.10.
+
+The second trap is the version. The PDF that circulates as "the Arkansas unrestricted list",
+https://www.agfc.com/wp-content/uploads/2023/04/221112_4CP-Unrestricted-Captive-Wildlife-Species-List-.pdf,
+is dated 11/1/22 and is two revisions behind. It has no Anoline Lizards entry at all and no rosy
+boa. Its own header says the codebook lists "take precedence".
+
+The third is nativity. R1.01 qualifies the Anolis, Lampropeltis, Pantherophis, Elaphe, Heterodon
+and Nerodia entries with "except species native to Arkansas", and Code 01.00 defines native
+wildlife as species with "established, naturally reproducing, free-ranging, wild populations
+within Arkansas". So the corn snake (no established Arkansas population, the state's Pantherophis
+being emoryi / slowinskii / obsoletus) stays on the list, while the green anole and the milksnake
+come off it and land in Code 09.14.
+
+
+==== Chapter 01.00, the four definitions that decide things ====
+NATIVE WILDLIFE - Those species and sub-species of wildlife that have established, naturally
+reproducing, free-ranging, wild populations within Arkansas.
+
+NON-NATIVE WILDLIFE - Any wildlife not defined as native wildlife.
+
+WILD - To be living in a state of nature and not domesticated.
+
+WILDLIFE - All wild birds, mammals, fish, reptiles, amphibians, other wild aquatic forms, and all
+other wild animals, regardless of classification, whether resident, migratory or imported,
+protected or unprotected, dead or alive, and shall extend to and include any and every part of any
+individual species of wildlife, including animals living in a captive state.
+
+(WILDLIFE reaches an insect through "all other wild animals, regardless of classification". WILD is
+what puts a domestic rabbit outside the chapter, the same device Connecticut uses. NATIVE WILDLIFE
+turns on established populations, which is what answers the corn snake.)
+
+==== 09.01 Possession Of Certain Wildlife In ====
+09.01 Possession Of Certain Wildlife In
+Captivity Prohibited
+It is unlawful to possess, hold captive, confine, or enclose any live wildlife,
+whether native or non-native, migratory or imported, unless otherwise
+specified herein.
+EXCEPTIONS:
+RESERVED.
+Persons possessing and holding captive wildlife in compliance with
+Chapter 09.00.
+Persons possessing and holding captive fish, bullfrogs, mussels,
+aquatic turtles, alligators, and other aquatic wildlife in compliance
+with Chapters 12.00, 29.00, 30.00, 31.00, 32.00, 34.00, 35.00 and
+Addendum Chapter J1.00.
+RESERVED.
+Persons determined by the Commission to be involved in bona fide
+scientific research, education, or conservation efforts of significant
+benefit to wildlife or wildlife habitat in Arkansas may be permitted to
+possess and hold captive wildlife in compliance with the terms of a
+special permit issued by the Chief of Wildlife Management.
+PENALTY: Class 2
+Any wildlife possessed in violation of this regulation may be declared
+contraband and subject to immediate seizure.
+Upon conviction, or before, if so ordered by a court having legal
+jurisdiction, title to the wildlife shall be forfeited to the Commission
+and released or disposed of in compliance with Commission policy.
+Any person convicted of violating this regulation shall be liable for the
+costs accrued in the storage, care, and maintenance of any equipment
+or wildlife seized in connection with the violation.
+Any person convicted of violating this regulation shall be liable for the
+costs of any and all tests and/or examinations of the illegal wildlife
+and also shall be liable for the costs of destruction and/or disposal of
+the illegal wildlife, as deemed necessary by the Commission for the
+protection of native wildlife.
+A. 
+B. 
+C. 
+D. 
+E. 
+A. 
+B. 
+C. 
+D. 
+As of July 1, 2025
+91
+
+==== 09.02 Possession Of Non-Native Wildlife In ====
+09.02 Possession Of Non-Native Wildlife In
+Captivity Restricted
+It is unlawful to possess captive non-native wildlife except in
+accordance with the following restrictions: 
+Animals shall be acquired from either a Commission-permitted
+Wildlife Breeder/Dealer, acquired in accordance with Code 9.07
+Exception I, or have been brought into the state in accordance
+with a Commission Wildlife Importation Permit and owners shall
+maintain written records of acquisition of such animals
+including licenses, bills of sale, bills of lading, receipts, invoices
+and copies of Wildlife Importation Permits or other satisfactory
+evidence. The date of acquisition, place of origin, and the name,
+address, and telephone number of the person from whom the
+wildlife was acquired shall be recorded. Owners shall provide
+these records to the Commission upon request.
+Males and females of the same species must be kept in separate
+enclosures, or if kept in the same enclosure, the owner shall
+provide proof that all males or all females within the enclosure
+have been neutered.
+The possessor must have written documentation that such
+wildlife has been certified by an accredited veterinarian to be
+free of diseases and parasites that may pose an adverse risk to
+native wildlife.
+It is unlawful for any person to possess mountain lions (Puma
+concolor) except in compliance with Codes 09.07.
+It is unlawful to possess tigers, African lions, and all species of bears
+not in compliance with Ark. Code Ann. §§ 20-19-501 through
+20-19-511 or Code 09.07.
+It is unlawful to keep non-native wildlife under inhumane or unhealthy
+conditions.
+All non-native wildlife possessed in captivity shall be maintained in
+enclosures, pens, or cages that are sufficiently strong to prevent
+escape of the wildlife and that will protect the wildlife from injury.
+Birds, other than ratites, shall be kept in buildings or covered pens.
+Males and females of the same species must be kept in separate
+enclosures, or if kept in the same enclosure, the owner shall provide
+proof that all males or all females within the enclosure have been
+neutered.
+RESERVED.
+It is unlawful for any person to possess a primate except in
+compliance with Ark. Code Ann. §§ 20-19-601 through 20-19-610.
+Medically significant venomous reptiles must be kept in accordance
+with a Venomous Reptile Possession Permit (Code 09.17).
+EXCEPTIONS:
+Animals included on the Unrestricted Captive Wildlife Species List
+(Code Addendum R1.01) are not subject to the restrictions included in
+Part A of this Code.
+A. 
+1. 
+2. 
+3. 
+B. 
+C. 
+D. 
+E. 
+F . 
+G. 
+H. 
+I. 
+A. 
+As of July 1, 2025
+92
+Persons possessing and holding captive wildlife in compliance with
+other regulations in Code Chapter 09.00.
+Persons possessing and holding captive fish, bullfrogs, mussels,
+aquatic turtles, alligators, and other aquatic wildlife in compliance
+with Code Chapters 29.00, 30.00, 31.00, 32.00, 33.00, 34.00, 35.00
+and Addendum Chapter J1.00.
+Accredited members of the Association of Zoos and Aquariums or
+those with USDA Wildlife Exhibition Permits that are temporarily in
+Arkansas in accordance with a Commission Wildlife Importation
+Permit are not subject to the restrictions included in Part A of this
+Code.
+Persons possessing terrestrial invertebrate species not otherwise
+prohibited by this Code or by federal or state regulations.
+Persons possessing a valid U.S. Fish and Wildlife Service migratory
+bird permit may possess migratory birds in compliance with the terms
+of that permit. Holders of this permit are not exempt from other
+regulations in Code Chapter 09.00.
+PENALTY: Class 2
+Any person convicted of violating this regulation shall be liable for the
+costs incurred in the storage, care, and maintenance of any
+equipment, wildlife, and/or fish seized in connection with the
+violation.
+Any person convicted of violating this regulation shall be liable for the
+costs of any and all tests and/or examinations of the illegally
+possessed wildlife, and also shall be liable for the costs of destruction
+and/or disposal of the illegally possessed wildlife, as deemed
+necessary by the Commission for the protection of native wildlife.
+B. 
+C. 
+D. 
+E. 
+F . 
+A. 
+B. 
+As of July 1, 2025
+93
+
+==== 09.14 Native Wildlife Pets Restricted ====
+09.14 Native Wildlife Pets Restricted
+It is unlawful to possess native wildlife as pets except as follows:
+Native wildlife captured by hand (hand-held, manually-operated aids
+such as tongs and snake hooks may be utilized to capture these
+species) from the wild in Arkansas may be possessed as personal pets
+in compliance with the following restrictions: 
+No more than 6 per household of any combination of the
+following animals may be possessed as pets: 
+Hand-captured opossum, rabbit, raccoon and squirrel; and
+Deer that were captured by hand prior to July 1, 2012,
+may be retained until their death.
+Bobcat, coyote, gray fox, and red fox that were captured
+by hand prior to July 1, 2022, may be retained until their
+death.
+Hand-captured native non-game wildlife other than birds,
+bats, alligator snapping turtles, ornate box turtles,
+hellbenders, Ouachita streambed salamanders, collared
+lizards, troglodytic species (cave dwellers), or those
+animals defined as endangered species.
+It is unlawful for any person to remove such wildlife or their
+offspring from Arkansas except under the terms of a permit that
+may be issued by the Chief of Wildlife Management to persons
+who are moving to another state and have presented proof from
+that state that it is legal to import the wildlife.
+The sale or transfer of ownership of such wildlife or their
+offspring is prohibited except as provided in (A)(7) of this
+regulation.
+All wildlife possessed in captivity shall be maintained in
+enclosures, pens, or cages that are sufficiently strong to prevent
+escape of the wildlife and that will protect the wildlife from
+injury.
+All adult deer kept in compliance with (A) of this regulation shall
+be confined within an enclosure that complies with the following
+requirements: 
+Enclosures shall have a perimeter fence that is not less
+than 8 feet in height and shall be constructed so as to
+prohibit the escape of confined cervids and the ingress of
+native cervids.
+The area of the enclosure shall not be less than 200
+square feet for the first cervid and shall be increased in
+size 150 square feet for each additional cervid.
+Males and females of the same species must be kept in separate
+enclosures, or if kept in the same enclosure, the owner shall
+provide proof that all males within the enclosure have been
+neutered.
+Native wildlife, except white-tailed deer, kept as personal pets in
+compliance with this regulation may be transferred to a wildlife
+rehabilitator permitted by the Commission (Code 09.12) and
+released back into the wild in the county where they were
+A. 
+1. 
+i. 
+ii. 
+iii. 
+iv. 
+2. 
+3. 
+4. 
+5. 
+i. 
+ii. 
+6. 
+7. 
+As of July 1, 2025
+102
+captured provided such animals were not confined with
+commercially obtained, captive born wildlife of the same
+species.
+Captive born native wildlife: No more than 6 per household of any
+commercially obtained, captive born native wildlife not listed in
+Addendum R1.01 may be possessed as personal pets in compliance
+with the following restrictions: 
+Commercially obtained, captive born wildlife pets and/or their
+offspring shall not be confined with the same species of wild
+born animals and/or their offspring.
+Animals shall either be acquired from either a Commission-
+permitted Wildlife Breeder/Dealer, acquired in accordance with
+Code 9.07 Exception I, or have been brought into the state in
+accordance with a Commission Wildlife Importation Permit.
+Owners shall maintain records of proof of legal ownership of
+such animals including licenses, bills of sale, bills of lading,
+receipts, invoices and copies of Wildlife Importation Permits or
+other satisfactory evidence.The date of acquisition, place of
+origin, and the name, address, and telephone number of the
+person from whom the wildlife was acquired shall be recorded.
+Owners shall provide these records to the Commission upon
+demand.
+Commercially obtained, captive born wildlife pets or their
+offspring shall only be sold in compliance with Code 09.07.
+Males and females of the same species must be kept in separate
+enclosures, or if kept in the same enclosure, the owner shall
+provide proof that all males within the enclosure have been
+neutered.
+Owners of commercially obtained or captive born white-tailed
+deer or elk that were acquired prior to June 30, 2005, and that
+are kept as personal pets may retain ownership of such animals
+provided they registered with the Wildlife Management Division
+by June 30, 2008, and are in compliance with all provisions of
+this regulation.
+Owners must immediately test all deer and elk that die in
+captivity for CWD and forward copies of test results to the
+Commission within seven days of receipt.
+All cervids kept in compliance with (B) of this regulation shall be
+confined within an enclosure that complies with the following
+requirements: 
+Enclosures shall have a perimeter fence that is not less
+than 8feet in height and shall be constructed so as to
+prohibit the escape of confined cervids and the ingress of
+native cervids.
+The area of the enclosure shall not be less than 200
+square feet for the first cervid and shall be increased in
+size 150 square feet for each additional cervid.
+All wildlife possessed in captivity shall be maintained in
+enclosures, pens, or cages that are sufficiently strong to prevent
+escape of the wildlife and that will protect the wildlife from
+injury. Birds must be kept in buildings or covered pens.
+B. 
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+i. 
+ii. 
+8. 
+As of July 1, 2025
+103
+It is unlawful for anyone to keep a native wildlife pet under inhumane
+or unhealthy conditions.
+Beginning July 1, 2021, medically significant venomous reptiles
+allowed under this Code must be kept in accordance with Addendum 
+F1.08, Sections C and F .
+EXCEPTIONS:
+Aquatic pets taken in compliance with Code 26.26.
+Holders of a Conservation Education Permit may possess more than 6
+native wildlife hand captured from the wild in Arkansas in compliance
+with Code 09.18.
+PENALTY: Class 1
+
+==== Addenda R1.01, R1.02 and R1.03 in full ====
+R1.01 Unrestricted Captive Wildlife Species List
+R1.02 Permit Required Captive Wildlife Species List
+R1.03 Prohibited Captive Wildlife Species List

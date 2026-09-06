@@ -1,0 +1,414 @@
+SOURCE: 250-RICR-40-05-3, Rules and Regulations Governing the Importation and Possession of Wild Animals
+URL: https://rules.sos.ri.gov/regulations/part/250-40-05-3
+FETCHED: 2026-09-05 (rules.sos.ri.gov serves the whole part as static HTML and works with plain curl. Strip tags; the numbering survives.)
+
+READ THIS FIRST. Rhode Island answers almost every pet question from one appendix, § 3.17, and it is
+one of the most species-specific schemes in the country. Three things decide which way a cell goes.
+
+1. § 3.6(A)(5) is a closed list of DOMESTIC ANIMALS, and § 3.9(C) says an exotic animal possession
+   permit "is not required for importation or possession of domestic animals". The domestic rabbit
+   is on it, expressly excluding wild-type Oryctolagus and the San Juan rabbit.
+2. § 3.7(C) bars possession of NATIVE wild animals outright, restricting it to the Department, the
+   USFWS, AZA zoos, researchers and short-term USDA exhibitors. § 3.6(A)(15) defines native as
+   occurring naturally in Rhode Island "regardless of where the animal originated", so captive-bred
+   origin is no answer. § 3.17 lists the natives species by species: 18 amphibians, 7 turtles,
+   13 snakes and a long mammal list. The milksnake is on the snake list.
+3. Everything else is an EXOTIC ANIMAL and needs a possession permit unless § 3.17 exempts it. The
+   lizard section clears skinks, teiids, lacertids, anguids, "All Gekkos (Gekkonidae)", iguanids
+   including Anolis, agamids including Pogona, xantusiids and Old World chameleons, and requires a
+   permit only for helodermatids and all monitors.
+
+Two drafting points worth keeping. The gecko clearance says "Gekkonidae" but its only exception,
+Coleonyx reticulatus, is a eublepharid, so the family name is being used in the broad pre-split
+sense; that is what puts the leopard gecko and the crested gecko inside it. And the anole is cleared
+by genus under the old Iguanidae heading, which is the opposite outcome from New York City, where a
+family-level ban on Iguanidae leaves the anole hanging on which revision of the taxonomy you read.
+
+Invertebrates are settled twice over: § 3.8(G) and § 3.17(A)(1)(a) exempt the whole class Insecta
+unless the animal is on the USDA invasive terrestrial invertebrates list, and § 3.17(A)(1)(c) is
+Rhode Island's own invertebrate prohibition, which is two mussels, two waterfleas, non-indigenous
+crayfish, the Asiatic clam and the giant African land snail.
+
+
+==== § 3.6 Definitions ====
+3.6 Definitions 
+ A. Wherever used in this Part the following terms should be construed as follows: 
+ 1. "Animal" and "Animals" means every living creature including but not limited to any species of mammal, bird, fish, reptile, amphibian, insect, aquatic organisms, or other animal except a human being. 
+ 2. “Dealer” means any person who sells, exchanges, or donates, or offers to sell, exchange, or donate, animals to another dealer, pet shop, or research facility, or who breeds animals for the purpose of selling or donating to another dealer or pet shop or research facility as cited in R.I. Gen. Laws § 4-19-2(12). 
+ 3. "Department" means the Department of Environmental Management. 
+ 4. "Director" means the Director of the Department of Environmental Management, or his/her duly authorized agent or agents. 
+ 5. "Domestic animal" means any animal, which through extremely long association with humans, have been bred to a degree that has resulted in genetic changes affecting the temperament, color, conformation, or other attributes of the species to an extent that makes them unique and distinguishable from wild individuals of their species. For the purposes of this Part the term domestic animal shall apply to the following animals: 
+ a. Alpaca ( Lama pacos ), 
+ b. Common Coturnix ( Coturnix coturnix or C. japonica ), 
+ c. Common Pigeon (rock dove) derived from the blue rock pigeon ( Columba livia ), 
+ d. Domestic Camel ( Camelus dromedarius and Camelus bactrianus ), 
+ e. Domestic Cat ( Felis catus ) excluding hybrids with wild felines, 
+ f. Domestic Cattle ( Bos taurus and Bos indicus ), 
+ g. Domestic Chicken ( Gallus "domesticus" ) derived from the red junglefowl ( Gallus gallus ), 
+ h. Domestic Dog ( Canis familiaris ) excluding hybrids with wild canids, 
+ i. Domestic Ducks derived from the Mallard ( Anas platyrhynchos ), including, but not restricted to, Aylesbury duck, Blue Swedish duck, Buff duck, Cayuga duck, Crested White duck, English call duck, Indian runner duck, Pekin duck, and Roen duck, derived from the Muscovy duck ( Cairina moschata ), 
+ j. Domestic Equines ( Equus caballus, Equus asinus ) including hybrids with other domestic equines, but not hybrids with wild equines, 
+ k. Domestic Geese derived from the greylag goose ( Anser anser ), including, but not restricted to, Emden goose, Gray African goose, Pilgrim goose, Sebastopol goose, and Toulouse goose, derived from the swan goose ( Anser cygnoides ), including, but not restricted to, the African goose and the Chinese goose, derived from the Egyptian goose ( Alopochen aegyptiaca ), 
+ l. Domestic Goat ( Capra hircus ), 
+ m. Domestic Guineafowl derived from the helmet guineafowl ( Numida meleagris ), 
+ n. Domestic Hamster derived from ( Mesocricetus auratus ) and ( Phodopus sp. ), 
+ o. Domestic Rabbit, including breeds, varieties, and strains derived from the European rabbit ( Oryctolagus cuniculus ) but not including the European rabbit ( Ferae naturae ) and not including the so-called "San Juan" rabbit, 
+ p. Domestic Sheep ( Ovis aries ), 
+ q. Domestic Swine ( Sus scrofa domestica ) excluding those animals that meet the definition of wild/feral swine, as defined herein, 
+ r. Domestic Turkey derived from the wild turkey ( Meleagris gallopavo ) and including breeds and varieties recognized by the American Poultry Association and the U.S. Department of Agriculture, but not including the wild turkey ( Ferae naturae ) and captive or captive-bred individuals thereof and not including the pen-raised or game-farm non-standard variety "Wild Turkey," 
+ s. Domestic Water Buffalo ( Bubalis bubalis ), 
+ t. Domestic Yak ( Bos grunniens ), 
+ u. Guinea Pig ( Cavia porcellus ), 
+ v. Laboratory Mouse, including breeds, varieties, and strains derived from the house mouse ( Mus musculus ), 
+ w. Laboratory Rat, including breeds, varieties, and strains derived from the Norway rat ( Rattus norvegicus ), 
+ x. Llama ( Lama glama ), 
+ y. Mongolian Gerbil ( Meriones unguiculatus ), 
+ z. Peafowl (blue peafowl) ( Pavo cristatus ). 
+ 6. "Enclosure" means any structure used to immediately restrict an animal or animals to a limited amount of space, such as a room, pen, run, cage, or compartment. 
+ 7. “Endangered species” means any animal so declared by the United States Secretaries of the Interior or Commerce under the provisions of the Federal Endangered Species Conservation Act or any animal so declared by the Director of the Rhode Island Department of Environmental Management pursuant to R.I. Gen. Laws Chapter 20-37. 
+ 8. "Exempt exotic animal" means any animal that is neither listed nor defined as a domestic animal or native wild animal, but for which there is no requirement to obtain an exotic animal possession permit. The list of exotic animals that are exempt from the requirement of obtaining an exotic animal possession permit is found in § 3.17 of this Part. 
+ 9. "Exotic animal" or "Exotic wild animal" means any vertebrate or invertebrate other than those defined as domestic animals, native wildlife, or exempt exotic animals. 
+ 10. "Exotic animal possession permit" means a permit issued by the Department, in order to authorize the permittee to import and/or possess any exotic wild animal(s) specifically listed on the permit. 
+ 11. "Federally accredited veterinarian" means any veterinarian who holds a current license in good standing in any State and who is recognized by the United States Department of Agriculture as having completed the necessary requirements for Federal accreditation. 
+ 12. "Health certificate" or "Certificate of veterinary inspection" means an official form of the State of origin that states the animal(s)/bird(s) have been inspected and found free of contagious, infectious or communicable diseases, and contains the date of the veterinary inspection as well as the dates and results of all required tests, and describes the animal(s)/bird(s) by species, breed, age, sex, and any individual identification such as ear tags, tattoos, leg bands, microchip, or other means of individual identification, and contains the data for all required tests and vaccinations prior to entry into Rhode Island (including the name and address of the laboratory that performed the test), and has the complete name and address of the consignor and consignee, and contains the signature of the inspecting veterinarian as well as that of the official having jurisdiction over the disease of animals in the State of origin. 
+ 13. "Hybrid" means any animal which is a result of the cross breeding of a domestic and wild animal for which there is no USDA conditionally licensed or unconditionally licensed rabies vaccine. 
+ 14. "Native animal possession permit" means shall be issued by the Department, in order to authorize the permittee to import and/or possess any native wild animal(s) which is specifically listed on the permit. 
+ 15. "Native wildlife" or "Native animal" or "Native wild animal" means all species of animals, including all subspecies thereof, occurring naturally, either presently or historically, within the boundaries of the State of Rhode Island, regardless of where the animal originated. 
+ 16. "Person" means any individual, firm, association, organization, partnership, business trust, corporation or company including, but not limited to, educational and research institutions, zoological gardens, schools, colleges, universities, pet stores, dealers, animal care facilities, and laboratories. 
+ 17. "Pet shop" means a temporary or permanent establishment where animals are bought, sold, exchanged, or offered for sale or exchange to the general public at retail. This shall not include an establishment or person whose total sales are the offspring of canine or feline females maintained on their premises and sold from those premises. 
+ 18. "Possess" or "Possession" means to exercise dominion or control over a wild animal at any point starting from the point at which the decision is made to import, purchase, breed, keep, or otherwise manage an animal and lasting up until its ultimate disposition. 
+ 19. "Quarantine" means shall refer to the types of enclosures necessary to ensure that the confined animal will not have any contact, either directly or through fomites, with any domestic animal, wild animal, or person, other than the person(s) charged with the immediate care of the animal. 
+ 20. "RIDEM" means the Department of Environmental Management. 
+ 21. "Researcher" means someone engaged in scientific research or experimentation and who is a student, faculty member, employee or contractor at an accredited college, university, or research institution. 
+ 22. "Short-term exhibition" shall mean for a period not to exceed thirty (30) days, from the time the animal(s) in question enter the State until the time they leave. 
+ 23. "Target species" means those species that are the most common wildlife carriers of rabies including raccoons, skunks, bats, woodchucks, and foxes or other mammal species as may be determined by the Rhode Island Rabies Control Board. 
+ 24. "USDA" means the United States Department of Agriculture. 
+ 25. "USFWS" means the United States Fish and Wildlife Service. 
+ 26. "Veterinarian" means an individual currently licensed to practice veterinary medicine in the State of Rhode Island. 
+ 27. "Wild animal" means any animal other than a domestic animal and includes those animals that may be defined as exotic or native wild animals. 
+ 28. "Wild swine" or "Feral swine" means any animal of the genus and species ( Sus scrofa ) that is not intended for commercial agricultural purposes such as breeding or meat production, for pet ownership, or for biomedical research. A wild/feral swine can also refer to a domestic pig that has escaped from captivity or has been released into the wild (accidentally or otherwise), or one that is descended from such animals.
+
+==== § 3.7 General Prohibitions and § 3.8 General Exemptions ====
+3.7 General Prohibitions 
+ A. Possession of Wild Carnivores. All exotic and native wild animals and hybrids of the order Carnivora for which there is no USDA conditionally licensed or unconditionally licensed rabies vaccine are expressly prohibited from importation or possession without the issuance of a valid permit by the Department. Possession is restricted to bona fide researchers, USDA licensed exhibitors authorized to possess animals of this order for short-term exhibition purposes, and Association of Zoos and Aquariums (AZA) certified facilities. 
+ B. Possession of Non-Human Primates. All exotic wild animals of the order Primates are expressly prohibited from importation or ownership without the issuance of a valid permit by the Department. Possession is restricted to bona fide researchers, USDA licensed exhibitors authorized to possess animals of this order for short-term exhibition purposes and AZA certified facilities. 
+ C. Possession of Native Wildlife. All native wild animals are expressly prohibited from importation or ownership without the issuance of a valid permit by the Department. Possession is restricted to the Department, the USFWS, AZA certified zoos and aquariums, research institutions and researchers involved in approved bona fide research or project as determined by the Director, and USDA licensed exhibitors authorized to possess animals for short-term exhibition purposes. See § 3.17 of this Part for a listing of native species. 
+ D. Possession of Red Eared Slider Turtles. No person other than a bona fide researcher, or a licensed pet shop and their transportation carriers shall import any Red Eared Slider turtles ( Trachemys scripta elegans ). All persons other than a bona fide researcher, or a licensed pet shops and their transportation agents are prohibited from possessing Red Eared Slider turtles unless they are kept indoors as pets in a manner that will prevent their escape or liberation into the wild. Keeping of these animals in any type of outdoor enclosure is prohibited. Pet shops that sell Red Eared Slider turtles must: 
+ 1. Notify all purchasers of these turtles that they must keep them indoors and in a manner that will prevent escape or liberation into the wild; and, 
+ 2. Keep for a period of a minimum of three (3) years from the date of sale, a register of all persons who purchase these turtles to include the purchaser’s name, address, telephone number, date of purchase, signature, and a statement that purchaser acknowledges that the animal must be kept indoors and in a manner that will prevent escape or liberation into the wild. 
+ E. Possession of Mute Swans or their Eggs. The importation or possession of Mute Swans ( Cyngus olor ) or their eggs is expressly prohibited. 
+ F. Possession of Mudpuppies. The importation or possession of Mudpuppies ( Necturus spp. ) is expressly prohibited. 
+ G. Possession of American Bullfrog. The importation or possession of bullfrogs ( Lithobates catesbeianus ) is expressly prohibited, except for flesh that is cooked or frozen and intended for human consumption. 
+ H. Possession of Exotic Amphibian Species. No person other than a bona fide researcher, or a licensed pet shop and their transportation carriers shall import any species of exotic amphibians. All persons other than a bona fide researcher, or a licensed pet shops and their transportation agents are prohibited from possessing any species of exotic amphibians unless they are kept indoors as pets in a manner that will prevent their escape or liberation into the wild. Keeping of these animals in any type of outdoor enclosure is prohibited. Pet shops that sell exotic amphibians must; 
+ 1. Notify all purchasers of these animals that they must keep them indoors and in a manner that will prevent escape or liberation into the wild; and, 
+ 2. Keep for a period of a minimum of three (3) years from the date of sale, a register of all persons who purchase these amphibians to include the purchaser’s name, address, telephone number, date of purchase, species purchased, signature, and a statement that purchaser acknowledges that the animal must be kept indoors and in a manner that will prevent escape or liberation into the wild. 
+ I. Possession of Wild or Feral Swine. The importation or possession of any swine for any purpose other than the commercial raising of swine for breeding associated with agricultural purposes, for use as meat producing animals raised in an agricultural setting, for pet ownership, or for biomedical research is prohibited. The intentional liberation of such an animal is punishable under the provisions of R.I. Gen. Laws § 4-1-26 Abandonment of Animals. 
+ 3.8 General Exemptions 
+ A. General Exemption for Pet Shops and Dealers. Exemption from individual exotic animal possession permits for Pet Shops and Dealers. Pet shops and dealers that are properly licensed and in good standing pursuant to R.I. Gen. Laws § 4-19-5 and R.I. Gen. Laws § 4-19-7 may be granted by the Department a resale permit in lieu of an individual exotic animal possession permit. The resale permit will allow possession of a reasonable number of a particular species to be kept on the licensed premises for the purpose of resale. Each species will require issuance of a resale permit for that species. The application for a resale permit will be provided by the Department and the fee will be five dollars ($5.00) per permit issued. Animals held by a pet shop or dealer under a resale permit may only be sold to persons who can demonstrate lawful possession of the particular species, including an exotic animal possession permit if required. 
+ B. General Exemptions for AZA-Accredited and USDA Licensed Facilities. Nothing in this Part shall prohibit zoos, aquariums, research facilities, managed propagation facilities, or other animal care facilities that meet the exemption criteria for such facilities listed in R.I. Gen. Laws §§ 4-18-3 and 4-18-6 from importing or possessing native and exotic wild animals without a permit. Such facilities shall comply with all Department import/possession specifications identified within the subject statues and this Part, including, but not limited to, reporting, examination, and testing requirements. 
+ C. General Exemptions for Nuisance Wildlife Control Specialists. Nothing in this Part shall prohibit a person possessing a valid license as a Nuisance Wildlife Control Specialist issued by the Department from possession of native wildlife without a permit while in the execution of their professional duties and in compliance with Rules and Regulations Governing Nuisance Wildlife Control Specialists, Subchapter 00 Part 3 of this Chapter. 
+ D. General Exemption for Licensed Wildlife Rehabilitators. Nothing in this Part shall prohibit a person possessing a valid license as a Wildlife Rehabilitator issued by the Department from possession of native wildlife without a permit while in the execution of their duties and in compliance with Rules and Regulations Governing Wildlife Rehabilitation, Subchapter 00 Part 1 of this Chapter. 
+ E. General Exemption for Authorized Agents of the Department in their Official Duties. Nothing in this Part shall prohibit an agent of the Department’s Division of Agriculture, Division of Fish and Wildlife, or Division of Law Enforcement from possession of exotic wildlife or native wildlife without a permit while in the execution of his or her official duties. 
+ F. General Exemption for Agents of the Rhode Island Society for the Prevention of Cruelty to Animals. Nothing in this Part shall prohibit an agent of the Rhode Island Society for the Prevention of Cruelty to Animals from possession of exotic wildlife or native wildlife without a permit while in the execution of their law enforcement powers pursuant to R.I. Gen. Laws Chapter 4-1. 
+ G. General Exemption for Possession of Insects. Nothing in this Part shall prohibit any person from possession of exotic animals or native animals of the class Insecta unless the animals of that class appear on the list of prohibited insects as is published by the USDA at the following URL: https://www.invasivespeciesinfo.gov/terrestrial/invertebrates under the heading of “Invasive Species.” Possession of any animal on this list requires an exotic animal possession permit. 
+ H. General Exemptions for Some Species of Exotic Wild Animals. Nothing in this Part shall prohibit any person from possession of exempt exotic animals as defined herein. The list of exempt exotic animals will appear on a list published by the Department as § 3.17 of this Part. 
+ I. General Exemption for Game Bird Propagation. Nothing in this Part shall prohibit any person from possession of native wild animals as defined herein for the purpose of propagation of game birds pursuant to R.I. Gen. Laws Chapter 20-17. 
+ J. General Exemption for Licensed Falconers. Nothing in this Part shall prohibit a person possessing a valid license as a Falconer issued by the Department from possession of native wildlife without a permit while in the execution of the privileges associated with their Falconry license provided they are in compliance with the current Rhode Island Falconry Regulations, Subchapter 00 Part 7 of this Chapter. 
+ K. General Exemption for Travelers. Nothing in this Part shall prohibit any person from possession of a native or exotic wild animal, as defined herein, from traveling through the State, provided they are duly authorized to possess the animals in question under a valid Federal or State license, and that the animals are properly confined, and that they do not exhibit, offer for sale, barter, release, or otherwise transfer possession of animals to another while in Rhode Island, or stay overnight in the State while in possession of native or exotic wild animals, unless duly authorized to do so by the Department.
+
+==== § 3.9 Requirements for Permits ====
+3.9 Requirements for Permits 
+ A. A permit to import into, receive, or possess in this State animals defined as exotic wild animals or native wild animals under § 3.6 of this Part, shall be restricted to the USDA, the Department, AZA approved zoos and research institutes or other USDA approved facilities, as well as exhibitors and private persons, seeking to import or possess a wild animal for private ownership, unless expressly prohibited under § 3.7 of this Part, pursuant to the provisions of R.I. Gen. Laws §§ 4-18-3 and 4-18-6, as amended herein. Obtaining such permits does not preclude conformance with such other applicable Federal, State, or Local requirements. 
+ B. Unless exempted pursuant to R.I. Gen. Laws §§ 4-18-3 and 4-18-6, no person shall be allowed to import, or possess any animals defined as exotic wild animals or native wild animals without first obtaining a permit from the Department. In addition, no permits shall be granted by the Department to a private person authorizing the import, and/or possession of any exotic wild animals of the order Carnivora , or hybrids thereof, for which there is no USDA conditionally licensed or unconditionally licensed rabies vaccine. 
+ C. The Department, at its discretion, may issue an exotic animal possession permit to import, receive, or possess exotic animals, and native animals. An exotic animal possession permit is not required for importation or possession of domestic animals or for importation or possession of exempt exotic animals. 
+ D. Persons wishing to obtain a permit to import or possess exotic wild animals can do so through the Department, Division of Agriculture. 
+ E. Persons wishing to obtain a permit to import or possess native wildlife as defined in § 3.6(A)(14) of this Part can do so through the Department, Division of Fish and Wildlife. 
+ F. Any resident person who at the time of the adoption of these Regulations possesses a USDA Exhibitors License and currently possesses a Wild Animal Possession permit from the Department for a native or exotic animal, shall be authorized to continue to possess the animal(s) in question, in accordance with these Regulations, for the life of that animal. Any request to possess additional animals shall be subject to the requirements of these Regulations.
+
+==== § 3.17 Appendix A, List of Exempt Exotic Animals and Native Wild Animals ====
+3.17 Appendix A: List of Exempt Exotic Animals and Native Wild Animals 
+ A. This list identifies those species of wild animals which are exempt from the permit provisions of R.I. Gen. Laws Chapter 4-18, and may be kept without a possession permit from the Department provided that all provisions of applicable statutes and this Part are satisfied. Species not listed, or which are explicitly identified as requiring a possession permit from the Department, are not considered exempt and shall require a valid possession permit per the specifications of this Part. The inclusion of a species on this listing does not obviate the necessity for the obligation to comply with any applicable requirements under Federal, State, or local laws, including those pertaining to endangered species and State export restrictions. This appendix may be modified as need. 
+ 1. List of Invertebrates: 
+ a. Insects: All species of insects are exempt from the requirement for an exotic animal possession permit unless it is considered a nuisance species, invasive species, or is otherwise prohibited from importation by Federal or State laws that restrict said importation. The list of prohibited insects is published by the USDA at the following URL under the heading of “Invasive Species.” Possession of any animal on this list requires the possession of a valid exotic animal possession permit. 
+ b. Other Invertebrates: All other invertebrates except those specifically listed below are exempt from the requirement for an exotic animal possession permit unless it is considered a nuisance species, invasive species, or is otherwise prohibited from importation by Federal or State laws that restrict said importation. 
+ c. Possession of the following invertebrates is prohibited: 
+ (1) Zebra Mussels ( Dreissena polymorpha, D. bugensis ), 
+ (2) Spiny Waterflea ( Bythotrephes cederstroemi ), 
+ (3) Fishhook Waterflea ( Cercopagis pengoi ), 
+ (4) All non-indigenous crayfish, 
+ (5) Asiatic Clam ( Corbicula sp. ) Live specimens of this genus are prohibited. Specimens that are frozen, cooked, or otherwise prepared for human consumption are exempt from the permitting requirement. 
+ (6) Giant African (land) snail ( Lissachatina fulica ). 
+ 2. List of Fish: 
+ a. All aquarium trade fish, other than those listed below as prohibited, may be kept without an exotic animal possession permit except endangered species. The Division of Fish and Wildlife may have additional restrictions (via permit) if the species of fish is considered to be native or nuisance. 
+ b. Possession of the following species of fish is prohibited: 
+ (1) Grass Carp or White Amur ( Ctenopharyngdon idella ), 
+ (2) Rudd ( Scardinius erythrophthalmus ), 
+ (3) Walking Catfish ( Clarias spp. and all members of the family Clariidae ), 
+ (4) Snakeheads ( Channidae and Parachannidae ), 
+ (5) Black Carp ( Mylopharyngodaon piceus ), 
+ (6) Round Goby ( Neogobius melanostomus ), 
+ (7) Tubenose Goby ( Proterhinus marmoratus ), 
+ (8) Ruffe ( Gymnocephalus cernuus ). 
+ 3. List of Amphibians: 
+ a. The Rhode Island DEM’s Division of Fish and Wildlife considers all exotic amphibians to be a potential nuisance, vector for disease, or a threat to native fauna. All retail amphibian vendors must be in compliance with § 3.7(H) of this Part. Any person in possession of an exotic amphibian must house the animal indoors at all times and in a manner that will prevent escape or liberation into the wild. 
+ b. The possession of native amphibians is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Terrestrial amphibians considered native to Rhode Island and which possession as pets is prohibited include the following: 
+ (1) American Bullfrog ( Lithobates catesbeian us), 
+ (2) American Toad ( Anaxyrus americanus ), 
+ (3) Eastern Red-backed Salamander ( Plethodon cinereus ), 
+ (4) Eastern Spadefoot ( Scaphiopus holbrookii ), 
+ (5) Four-toed Salamander (Hemidactylium scutatum), 
+ (6) Fowler’s Toad ( Anaxyrus fowleri ), 
+ (7) Gray Treefrog ( Hyla versicolor ), 
+ (8) Marbled Salamander ( Ambystoma opacum ), 
+ (9) Northern Dusky Salamander ( Desmognathus fuscus ), 
+ (10) Green Frog ( Lithobates clamitans ), 
+ (11) Northern Leopard Frog ( Lithobates pipiens ), 
+ (12) Spring Salamander ( Gyrinophilus porphyriticus ), 
+ (13) Northern Two-lined Salamander ( Eurycea bislineata ), 
+ (14) Pickerel Frog ( Lithobates palustris ), 
+ (15) Eastern Newt ( Notophthalmus viridescens ), 
+ (16) Spotted Salamander ( Ambystoma maculatum ), 
+ (17) Spring Peeper ( Pseudacris crucifer ), 
+ (18) Wood Frog ( Lithobates sylvatica ). 
+ 4. List of Reptiles: 
+ a. Turtles: 
+ (1) All exotic species of turtles may be kept without an exotic animal possession permit, except endangered species. § 3.17(A)(4)(a)(2) of this Part for a list of native turtle species. Possession of the following species requires an exotic animal possession permit: 
+ (A) Argentina or Chaco Tortoise ( Geochelone chilensis ), 
+ (B) Gopher tortoises ( Gopherus polyphemus ) and all other species in the genus Gopherus , 
+ (C) Pancake Tortoise ( Malacochersus tornieri ). 
+ (2) The possession of native turtles is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Turtles considered native to Rhode Island and which possession as pets is prohibited include the following: 
+ (A) Box Turtle ( Terrapene carolina ), 
+ (B) Eastern Musk Turtle ( Sternotherus odoratus ), 
+ (C) Painted Turtle ( Chrysemys picta ), 
+ (D) Snapping Turtle ( Chelydra serpentina ), 
+ (E) Diamond-backed Terrapin ( Malaclemys terrapin ), 
+ (F) Spotted Turtle ( Clemmys guttata ), 
+ (G) Wood Turtle ( Glyptemys insculpta ). 
+ b. Snakes: 
+ (1) All venomous snakes require an exotic animal possession permit. Refer to § 3.17(A)(4)(a)(2) of this Part for a list of native snake species. 
+ (2) The following exotic species of snakes may be kept without an exotic animal possession permit except endangered species and the specific exceptions listed below: 
+ (A) All species of boas and pythons (family Boidae ), may be kept without an exotic animal possession permit except those species that are endangered, and except the Emerald Tree Boa ( Corallus caninus ), Green Tree Python ( Chondropython spp. ), African Rock Python ( Python sebae ), Reticulated Python ( Python reticulatus ) and all species of Anaconda ( Eunectes spp. ). 
+ (B) Shield-tailed Snakes, Sunbeam Snakes, and others in the families Uropeltidae and Xenopeltidae may be kept without an exotic animal possession permit. 
+ (C) Worm Snakes, Thread Snakes, and others in the families Typhlopidae , Leptotyphlopidae , and Anomalepidae may be kept without an exotic animal possession permit. 
+ (D) Snakes of the family Colubridae , as follows may be kept without an exotic animal possession permit: 
+ (i) Asian Rat Snakes ( Elaphe spp. and Ptyas spp. and Zaocys spp. and Bogetophis spp.), 
+ (ii) Bird Snake or Puffing Snake ( Pseustes spp .), 
+ (iii) Brown and Redbelly Snakes ( Storeria spp .), 
+ (iv) Diadem Snakes ( Spalerosophis spp .), 
+ (v) Glossy Snakes ( Arizona spp .), 
+ (vi) Gopher and Pine Snakes ( Pituophis spp .), 
+ (vii) Green Snakes ( Opheodrys spp .), 
+ (viii) Ground Snakes ( Sonora spp .), 
+ (ix) House Snakes ( Boaedon [ Lamprophis ] spp.), 
+ (x) Kingsnakes and Milk Snakes ( Lampropeltis spp .), other than native species listed below, 
+ (xi) Mole Snake ( Pseudaspis spp .), 
+ (xii) North American Rat Snakes ( Pantherophis spp .) except the Central Rat Snake ( P. alleghaniensis ) (other than albinistic and leucistic individuals) which requires a permit, 
+ (xiii) Texas Indigo Snake ( Drymarchon corais erebennus ), 
+ (xiv) Tropical Rat Snakes ( Spilotes spp .), 
+ (xv) Water Snakes ( Nerodia [Natrix] spp .), and, 
+ (xvi) Western Hognose Snake ( Heterodon nasicus ) 
+ (3) The possession of native snakes is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Snakes considered native to Rhode Island and which possession as pets is prohibited include the following: 
+ (A) Eastern Ribbonsnake ( Thamnophis sauritus ), 
+ (B) Northern Watersnake ( Nerodia sipedon ), 
+ (C) Common Gartersnake ( Thamnophis sirtalis ), 
+ (D) Eastern Hog-nosed Snake ( Heterodon platirhinos ), 
+ (E) Milksnake ( Lampropeltis triangulum ), 
+ (F) Eastern Ratsnake ( Pantherophis alleghaniensis ), 
+ (G) Common Wormsnake ( Carphophis amoenus ), 
+ (H) North American Racer ( Coluber constrictor ), 
+ (I) Dekay's Brownsnake ( Storeria dekayi ), 
+ (J) Red-bellied Snake ( Storeria occipitomaculata ), 
+ (K) Ring-necked Snake ( Diadophis punctatus), 
+ (L) Smooth Greensnake ( Opheodrys vernalis ), 
+ (M) Timber Rattlesnake ( Crotalus horridus ). 
+ c. Lizards: 
+ (1) Possession of the Gila Monster, Beaded Lizard ( Heloderatidae ), and all Monitors ( Varanidae ) requires an exotic animal possession permit. 
+ (2) The following lizards may be kept without a permit except for endangered species. The Division of Fish and Wildlife may have additional Regulations if the species of lizard is considered native or nuisance. 
+ (A) All Skinks ( Scincidae ) may be kept without an exotic animal possession permit except for the following: Florida Sand Skinks ( Neoseps spp .), Solomon Island Ground Skink ( Tribolonotus spp .). 
+ (B) The following Girdle-tailed Lizards ( Cordylidae ) may be kept without a permit: False Club-tailed Lizards ( Pseudocordylus spp .), Girdle-tailed Lizards ( Cordylus spp .), Plated Lizards ( Gerrhosaurus spp .), Rock Lizards ( Platysaurus spp .), ( Zonosaurus spp. ). 
+ (C) All Teiids ( Teiidae ) may be kept without an exotic animal possession permit except for the following: Brown Water Teiids ( Neusticurus spp .), Dicrodon spp. , Earless Teiids ( Bachia spp. ), Rough Teiids ( Echinosaura spp .), Snake Teiids ( Ophiognomon spp .), Spectacled Teiids ( Gymnophthalmus spp .), Worm Teiids ( Scolacosaurus spp .). 
+ (D) The following Lacertid Lizards ( Lacertidae ) may be kept without an exotic animal possession permit: Acanthodactylus spp. , Gallotia spp ., Lacerta spp ., Podarcis spp ., Psammodromus spp . 
+ (E) The following Lateral-fold Lizards ( Anguidae ) may be kept without an exotic animal possession permit: Alligator Lizards ( Gerrhonotus spp .), Glass Lizards ( Ophisaurus spp. ), Slowworm ( Anguis spp .). 
+ (F) All Gekkos ( Gekkonidae ) may be kept without an exotic animal possession permit except the Big Bend Gekko ( Coleonyx reticulatus ). 
+ (G) The following Iguanid Lizards ( Iguanidae ) may be kept without an exotic animal possession permit: Basilisks ( Basiliscus spp .), Collared and Leopard Lizards ( Crotaphytus spp .), Common or Green Iguanas ( Iguana i. iguana ), False or Spring-tailed Iguanas ( Ctenosaurus spp .), ( Liolaemus spp .), New World Chameleons ( Anolis spp. and Ctenotus spp .), Spiny Lizards ( Sceloporus spp .), Tree and Bush Lizards ( Urosaurus spp .), ( Uranoscodon spp .), Zebra-tailed Lizards ( Callisaurus spp .). 
+ (H) The following Agamid Lizards ( Agamidae ) may be kept without an exotic animal possession permit: Amphibolorus spp ., Calotes spp ., Hydrosaurus spp ., Pogona spp ., Water Dragon ( Physignathus spp .). 
+ (I) Night Lizards ( Xantusidae ): All Night Lizards ( Xantusia spp .) may be kept without an exotic animal possession permit, except for the Utah Night Lizard ( Xantusia virgilis utahensis ). 
+ (J) Old World Chameleons ( Chameleonidae ) may be kept without an exotic animal possession permit. 
+ 5. List of Birds: 
+ a. Possession of the following groups of birds is prohibited without a permit issued by the USFWS and if the bird is considered native, a permit issued by Rhode Island DEM Division of Fish & Wildlife: 
+ (1) Endangered species of birds, 
+ (2) Migratory birds listed in the Code of Federal Regulations, 50 C.F.R. § 10.13 (2017) (Migratory Bird Treaty Act), 
+ (3) NOTE: RIDEM Division of Fish & Wildlife Regulations prohibits the possession of mute swans or their eggs. 
+ b. The following birds or groups of birds may be kept without an exotic animal possession permit: 
+ (1) Blue or Button Quail ( Coturnix chinensis ), 
+ (2) Columbidae (Pigeons and Doves), 
+ (3) Bobwhite quail ( Colinus virginianus ), 
+ (4) Chukar partridge ( Alectoris chukar ), 
+ (5) Estrildidae (Waxbills and allies), 
+ (6) Fringillidae (Finches and allies), 
+ (7) Pheasants (the subfamily Phasianinae , of the family Phasianidae in the order Galliformes ), 
+ (8) Ploceidae (Weaver Finches except the Red-billed, Black-fronted, and Sudan Diochs, which require a permit), 
+ (9) Psittacidae (Parrots and their allies) except for Myiopsitta monachus (Monk Parakeet), which requires a permit, 
+ (10) Ramphastidae (Toucans, Aracaris, and Toucanets), 
+ (11) Sturnidae (Starlings and Mynahs), except the Rose-colored Starling (Pink Starling or Rosy Pastor, Sturnus roseus ), which requires a permit. 
+ 6. List of Mammals: 
+ a. The following mammals may be kept without an exotic animal possession permit: 
+ (1) Four-toed (African pygmy) Hedgehog ( Erinaceus albiventris ) ( Atelerix pruneri ), 
+ (2) Chinchilla ( Chinchilla spp .) derived from captive stock, 
+ (3) Degu ( Octodon degus ), 
+ (4) Egyptian Spiny Mouse ( Acomys cahirinus ), 
+ (5) House Mouse ( Mus musculus ), 
+ (6) Jerboas ( Dipus spp .), 
+ (7) Norway Rat ( Rattus norvegicus ), 
+ (8) Paca ( Cuniculus spp .), 
+ (9) Captive bred hamsters that are common pet trade species, 
+ (10) Sugar Glider ( Petaurus breviceps ), 
+ (11) Ferret ( Mustela putorius ). Note: Possession of a ferret does not require obtaining an exotic animal possession permit. Possession of a ferret does require a ferret possession permit issued through the Division of Fish & Wildlife. 
+ b. The importation and possession of native and exotic cervids by any person is prohibited without a valid permit from the Department per the Rules and Regulations Governing the Importation, Feeding, and Baiting of Cervids in Rhode Island, Part 60-00-2 of this Title. However, AZA-accredited facilities are exempt from permitting requirements pursuant to R.I. Gen. Laws §§ 4-18-3 and 4-18-6 provided compliance with all specified requirements within the statutes (also see § 3.8(B) of this Part). 
+ c. The possession of native mammals is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Terrestrial mammals considered native either currently or historically to Rhode Island and which possession as pets is prohibited include the following: 
+ (1) American Beaver ( Castor canadensis ), 
+ (2) American Mink ( Neovison vison ), 
+ (3) Big Brown Bat ( Eptesicus fuscus ), 
+ (4) Black Bear ( Ursus americana ), 
+ (5) Bobcat ( Lynx rufus ), 
+ (6) Common Muskrat ( Ondatra zibethicus ), 
+ (7) Eastern Chipmunk ( Tamias striatus ), 
+ (8) Eastern Cottontail ( Sylvilagus floridanus ), 
+ (9) Eastern Coyote ( Canis latrans ), 
+ (10) Eastern Gray Squirrel ( Sciurus carolinensis ), 
+ (11) Eastern Mole ( Scalopus aquaticus ), 
+ (12) Eastern Red Bat ( Lasiurus borealis ), 
+ (13) Fisher ( Pekania pennanti ), 
+ (14) Gray Fox ( Urocyon cinereoargenteus ), 
+ (15) Hairy-tailed Mole ( Parascalops breweri ), 
+ (16) Hoary Bat ( Lasiurus cinereus ), 
+ (17) Little Brown Bat ( Myotis lucifugus ), 
+ (18) Long-tailed Weasel ( Mustela frenata ), 
+ (19) Masked Shrew ( Sorex cinereus ), 
+ (20) Meadow Jumping Mouse ( Zapus hudsonius ), 
+ (21) Meadow Vole ( Microtus pennsylvanicus ), 
+ (22) Moose ( Alces alces ), 
+ (23) New England Cottontail ( Sylvilagus transitionalis ), 
+ (24) Northern Long-eared Bat ( Myotis septentrionalis ), 
+ (25) Northern short-tailed Shrew ( Blarina brevicauda ), 
+ (26) Porcupine ( Erethizon dorsatum ), 
+ (27) Raccoon ( Procyon lotor ), 
+ (28) Red Fox ( Vulpes vulpes ), 
+ (29) Red Squirrel ( Tamiasciurus hudsonicus ), 
+ (30) River Otter ( Lontra canadensis ), 
+ (31) Short-tailed Weasel ( Mustela erminea ), 
+ (32) Silver-haired Bat ( Lasionycteris noctivagans ), 
+ (33) Small-footed Bat ( Myotis leibii ), 
+ (34) Smoky Shrew ( Sorex fumeus ), 
+ (35) Snowshoe Hare ( Lepus americanus ), 
+ (36) Southern Bog Lemming ( Synaptomys cooperi ), 
+ (37) Southern Flying Squirrel ( Glaucomys volans ), 
+ (38) Southern Red-backed Vole ( Clethrionomys gapperi ), 
+ (39) Star-nosed Mole ( Condylura cristata ), 
+ (40) Striped Skunk ( Mephitis mephitis ), 
+ (41) Tri-colored Bat ( Perimyotis subflavus ), 
+ (42) Virginia Opossum ( Didelphis virginiana ), 
+ (43) Water Shrew ( Sorex palustris ), 
+ (44) White-footed Mouse ( Peromyscus leucopus ), 
+ (45) White-tailed Deer ( Odocoileus virginianus ), 
+ (46) Woodchuck ( Marmota monax ), 
+ (47) Woodland Jumping Mouse ( Napaeozapus insignis ), 
+ (48) Woodland Vole ( Microtus pinetorum ), 
+ (49) Mountain Lion ( Felis concolor ), 
+ (50) Wolf ( Canis lupus ). 
+ Title 
+ 250 
+ Department of Environmental Management 
+ Chapter 
+ 40 
+ Agriculture and Resource Marketing 
+ Subchapter 
+ 05 
+ Animal Health 
+ Part 
+ 3 
+ Rules and Regulations Governing Importation and Possession of Wild Animals (250-RICR-40-05-3) 
+ Type of Filing 
+Amendment 
+ Regulation Status 
+ Active 
+ Effective 
+ 07/28/2026 
+ Additional Information 
+ dem.ri.gov/natural-resources-bureau/fish-wildlife 
+ Regulation Authority: 
+R.I. Gen. Laws Chapter 4-18 and R.I. Gen. Laws §§ 20-1-18
+ 20-1-22
+ 20-37-3 and 42-17.1-2(19)
+ Purpose and Reason: 
+ This rule is being promulgated to update a exemptions for dealers and to change restrictions on African land snails, Tegus, and correct nomenclature on rat snakes. 
+ Download Regulation 
+ ACTIVE RULE 
+ Amendment 
+ - effective from 07/28/2026 
+ to Current 
+ INACTIVE RULE 
+ Technical Revision 
+ - effective from 01/04/2022 
+ to 07/28/2026 
+ INACTIVE RULE 
+ Periodic Refile 
+ - effective from 01/04/2022 
+ to 01/04/2022 
+ INACTIVE RULE 
+ Amendment 
+ - effective from 07/11/2021 
+ to 01/04/2022 
+ INACTIVE RULE 
+ Amendment 
+ - effective from 12/15/2017 
+ to 07/11/2021 
+ INACTIVE RULE 
+ Technical Revision 
+ - effective from 10/30/2016 
+ to 12/15/2017 
+ INACTIVE RULE 
+ Amendment 
+ - effective from 10/30/2016 
+ to 10/30/2016 
+ INACTIVE RULE 
+ Amendment 
+ - effective from 02/25/2016 
+ to 10/30/2016 
+ INACTIVE RULE 
+ Amendment 
+ - effective from 04/15/2010 
+ to 02/25/2016 
+ INACTIVE RULE 
+ Amendment 
+ - effective from 11/20/2006 
+ to 02/25/2016 
+ INACTIVE RULE 
+ Periodic Refile 
+ - effective from 12/31/2001 
+ to 04/15/2010 
+ INACTIVE RULE 
+ Periodic Refile 
+ - effective from 12/31/2001 
+ to 11/20/2006 
+ Rulemaking Documents are organized by document type and are part of this rule’s rulemaking record (R.I. Gen. Laws § 42-35-2.3). If multiple documents of the same type are listed below, each is a unique document.
+ If there are multiple Public Notice of Proposed Rulemaking documents, view each document to identify the most recently amended version, as it may be amended at any point during the Public Comment Period.
+ Concise Explanatory Statement 
+ Public Comment 
+ Public Hearing Documents 
+ Public Notice of Proposed Rulemaking 
+ Proposed Rule 
+ Additional Documentation 
+ 2002-Current Regulations 
+ 1950-2001 Regulations 
+ FAQs 
+ Subscribe to Notifications 
+ Return to top
+ About 
+ Contact 
+ News 
+ Notary Public 
+ Rhode Island Department of State 
+ Facebook 
+ LinkedIn 
+ Twitter

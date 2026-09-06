@@ -1,0 +1,518 @@
+SOURCE: Maine's three-part scheme: 12 M.R.S. § 12152, 09-137 CMR ch. 7, and the Unrestricted Species List
+URL: https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/137c007.docx (chapter 7) / https://www.maine.gov/ifw/docs/unrestrictedspecies.pdf (list) / https://legislature.maine.gov/statutes/12/title12sec12152.html (statute)
+FETCHED: 2026-09-05 (The chapter 7 rule is NOT at maine.gov/sos/cec/rules/09/137/, which 404s with a soft-404 search page that echoes the URL back and looks like a hit. Get the link from the SOS rulemaking index at https://www.maine.gov/sos/rulemaking/agency-rules/department-inland-fisheries-and-wildlife-rules; the files are .docx under /sos/sites/maine.gov.sos/files/. Extract with python zipfile on word/document.xml. The unrestricted list PDF extracts with common name and scientific name run together, "Bearded DragonPogona vitticeps", so search the binomial.)
+
+READ THIS FIRST. Maine is a closed-list state, and the sentence that makes it one is § 7.06(4):
+"A person may not possess any species that has not been categorized", and an uncategorised species
+"will not be eligible for a permit under this chapter". Four buckets: the Unrestricted List, the
+Prohibited list at § 7.18(1), and Restricted Categories 1 and 2 at § 7.18(2) and (3). Category 1
+permits go only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research
+facilities, so it is not a pet tier. Category 2 is open to an individual with demonstrated experience.
+
+Three things on the Unrestricted List decide most cells. The Reptilia, Testudines and Dipnoi
+sections each sit under "Captive Bred Origin Only", so a wild-caught animal of a listed species is
+not cleared. An asterisk on an entry removes anything on the USFWS injurious or threatened and
+endangered lists, in CITES Appendix I, or on the IUCN Red List as Endangered, Critically Endangered
+or Extinct in the Wild; species-level entries carry no asterisk. And the genus entries carry their
+own exceptions, which are where Maine hides its natives: Lampropeltis is cleared "Except for:
+Lampropeltis herrerae; Lampropeltis triangulum triangulum", and the second of those is Maine's own
+eastern milk snake.
+
+The list is dated 11 August 2017 on every page and that is the version IFW still serves.
+
+
+==== 12 M.R.S. § 12152(1-A) and (1-B) ====
+1-A. Permit required. Except as otherwise provided in this Part, a person may not import wildlife
+into or possess wildlife in the State or receive or possess wildlife imported into the State. The
+department shall maintain a list of unregulated fish and wildlife species for which a permit under
+this section is not required that is available to the public.
+
+1-B. Exemption. Notwithstanding subsection 1-A, a reptile, amphibian or invertebrate that is native
+to the State and not listed by the department as threatened or endangered or as a species of special
+concern may be captured from the wild in the State and possessed without a permit. Possession limits
+for each species are as follows: A. Amphibians, up to 5 specimens of each species; B. Reptiles, up to
+2 specimens of each species; and C. Invertebrates, no specimen limits. ... Importation into the State
+of a reptile, amphibian or invertebrate exempted under this subsection is prohibited without a
+permit. Exhibition, propagation or export or sale for commercial purposes is prohibited without a
+permit.
+
+(Note what 1-B does not reach: mammals. That is why a southern flying squirrel has no wild-take
+route in Maine.)
+
+==== 09-137 CMR ch. 7 § 7.06, Classification of Species ====
+7.06 Classification of Species
+
+1. Unrestricted List
+
+Pursuant to 12 M.R.S. §12152 an “Unrestricted Species List” shall be maintained by the department, be made available to the public and contain a list of species of fish and wildlife, including tropical fish and invertebrates, that do not require an importation, exhibition, propagation, research or possession permit, and may be traded by commercial pet shops. Unrestricted Species must be maintained in a humane and safe manner that does not jeopardize public health and safety, the welfare of the animal, or cause a public disturbance.
+
+2. Prohibited Species
+
+Species which the commissioner, in consultation with the technical committee have determined pose a significant risk to Maine’s native flora and fauna, to the public welfare or to domestic animals shall be designated as prohibited and no permit shall be granted, except that the department may authorize importation or possession of these species by accredited research facilities in cases where there is a significant public benefit. The Prohibited Species List is located within section 7.18. 
+
+3. Restricted Species
+
+Notwithstanding section 7.12, Restricted Species shall require a permit before the species can be possessed, imported, exhibited, propagated, or rehabilitated.
+
+A. Category 1 Restricted Species
+
+(1) Criteria: The Commissioner, in consultation with the technical committee, shall consider the following criteria to determine whether a species will be listed as a Category 1 Restricted Species: 
+
+(a) It does not meet the criteria of a Prohibited Species and when:
+
+(b) It is included on the U.S. list of endangered or threatened species, is listed in Appendix I of the Convention on International Trade in Endangered Species, is listed by the International Union for the Conservation of Nature as ‘Endangered, ‘Critically Endangered’ or Extinct in the Wild or is state listed as Endangered or Threatened across a significant portion of its native range; or
+
+(c) It is known to harbor an agent substantially harmful to humans, domestic livestock, poultry, native wildlife, other animals, or Maine flora; or
+
+(d) It has a geographic distribution and life requisites that would allow it to survive in Maine if accidentally or intentionally introduced into the wild; or
+
+(e) It is included on the USFWS list of Injurious Species; or
+
+(f) It is capable of inflicting serious bodily injury to humans; or
+
+(g) It has unique requirements for housing or care that cannot be provided outside of professionally designed and operated facilities.
+
+(2) Conditions and Restrictions: in order to import, possess, propagate, rehabilitate, or exhibit a Category 1 Restricted Species, the following conditions must be met, notwithstanding section 7.12:
+
+(a) Permit Required: An applicant for a permit pertaining to Category 1 Restricted Species must be an exhibitor, wildlife rehabilitator; laboratory registered with the United States Department of Agriculture, or accredited research facility.
+
+(b) Contact by the Public Prohibited: An applicant for a permit pertaining to Category 1 Restricted Species must not allow Category 1 Restricted Species to be accessible for handling or contact by the general public, unless specifically authorized by the department. 
+
+(c) Safety Measures: An applicant for a permit pertaining to Category 1 Restricted Species must maintain the Category 1 Restricted Species under conditions that give the owner or keeper exclusive control over them at all times as to prevent loss or risk of injury to the public; 
+
+(d) Credentials Required: An applicant for a permit pertaining to Category 1 Restricted Species must submit documentation to verify a minimum of one year of practical husbandry or a minimum of 100 hours of experience, training or apprenticeship in the care, feeding, handling and husbandry of the Category 1 Restricted Species to be possessed or of another species that is substantially similar to the species to be possessed in size, characteristics, care and nutritional requirements. A Bachelor of Science or higher degree in a relevant biological science, obtained at an accredited institution of higher learning, may be substituted for 50 hours of experience or apprenticeship. Documentation shall consist of: a description of the specific experience acquired; the date and time the experience was obtained and the specific locations where acquired; and a minimum of two references from a professional organization such as a university, zoological association, or governmental institution.
+
+(e) Emergency Plan: A written emergency plan must be submitted with the application for use in the event of occurrences such as: severe damage to enclosures due to fire, wind, or floods; animals attacking and /or injuring humans, other animals or property; the escape of any animal in captivity; and absence, illness, or death of the owner or keeper. The plan must include:
+
+(i) An updated list of the Category 1 Restricted Species in captivity;
+
+(ii) The availability of capture equipment and weapons with specific instructions as to the precise circumstances under which dangerous wildlife are to be destroyed.
+
+(iii) Contingencies for the maintenance or disposition of all Restricted Species covered by the permit in the event of the owner or keeper’s absence, illness, or death.
+
+(iv) The plan must be made available for inspection upon the request of a law enforcement officer, firefighter, department representative or Animal Control Officer. 
+
+B. Category 2 Restricted Species
+
+(1) Criteria: The commissioner, in consultation with the technical committee shall consider the following criteria to determine whether a species will be listed as a Category 2 Restricted Species: 
+
+(a) It does not meet the criteria of a Prohibited Species or Category 1 Restricted Species and when:
+
+(b) It requires special housing or care that cannot be provided by persons without training or experience; or
+
+(c) It requires a special commitment to ensure proper care and welfare.
+
+(2) Conditions and Restrictions: In order to import, possess, propagate, rehabilitate, or exhibit a Category 2 Restricted Species, the following conditions must be met, notwithstanding section 7.12: 
+
+(a) Permit Required: An applicant for a permit pertaining to a Category 2 Restricted Species must be an exhibitor, rehabilitator, laboratory registered with the United States Department of Agriculture, accredited research facility, or an individual with demonstrated experience with the care and husbandry of the species for which a permit is requested or a species which is substantially similar to the species for which a permit is requested; 
+
+(b) Safety Measures: An applicant for a permit pertaining to a Category 2 Restricted Species must maintain the animal under conditions that give the owner or keeper exclusive control over them at all times as to prevent loss or risk of injury to the public; 
+
+(c) Maintenance Plan: An applicant for a permit pertaining to a Category 2 Restricted Species must submit a plan for the maintenance or disposition of all Category 2 Restricted Species in the event of the owner or keeper’s absence, illness, or death;
+
+(d) Credentials Required: An applicant for a permit pertaining to a Category 2 Restricted Species must submit documentation to verify a minimum of one year of practical husbandry or a minimum of 100 hours of experience, training or apprenticeship in the care, feeding, handling and husbandry of the species to be possessed or of another species that is substantially similar to the species to be possessed in size, characteristics, care and nutritional requirements. A Bachelor of Science or higher degree in a relevant biological science, obtained at an accredited institution of higher learning, may be substituted for 50 hours of experience or apprenticeship. Documentation shall consist of: a description of the specific experience acquired; the date and time the experience was obtained and the specific locations where acquired; and a minimum of two personal references.
+
+4. Unclassified Species: A person may not possess any species that has not been categorized. 
+
+Any species which has not been identified as a Prohibited, Restricted, or Unrestricted species will not be eligible for a permit under this chapter, however a request may be made to review the categorization of a species subject to section 7.06(5). 
+
+5. Requests to Review or Change the Categorization of a Species: must be made on application forms provided by the department. Applicants shall bear the burden of proof in proving that a species belongs in the requested category. Applications submitted with supporting documentation are evaluated by the commissioner or commissioner’s designee and the Technical Committee. 
+
+A. Commissioner’s Evaluation Criteria for Review of Requests to Change Categorization of a Species: Considering the recommendations of the Technical Consulting Committee, which are advisory in nature, the commissioner may change the status of a species according to the criteria established in this section.
+
+B. Notification: When the commissioner approves or denies a request for review of categorization, a written notification will be sent to the applicant. When the commissioner denies a request, the department will advise the individual or entity making the request of the basis for the denial.
+
+==== 09-137 CMR ch. 7 § 7.18, Species Lists ====
+7.18 Species Lists 
+
+1. Prohibited Species: See 7.06(2) for exceptions for research institutions.
+
+A. Monk parakeet (Myiopsitta monachus);
+
+B. Mute swan (Cygnus olor);
+
+2. Category 1 Restricted Species: The following species are listed as Category 1 Restricted species, unless they are identified in another category in this Chapter or are on the Unrestricted List:
+
+A. Any wildlife listed by the USFWS as an injurious species within 50 CFR 16 Injurious Wildlife (http://www.fws.gov/injuriouswildlife/pdf_files/Current_Listed_IW.pdf)
+
+B. Any species listed in CITES Appendix I ( https://cites.org/eng/app/appendices.php )
+
+C. Any species listed as threatened or endangered by the USFWS
+
+D. Amphibia (Amphibians) - Captive Bred Origin Only
+
+Hymenochirus curtipes Western Dwarf Clawed Frog
+Mantella aurantiaca Golden Mantella
+Mantella bernhardi Bernhard's Mantella
+Mantella crocea Yellow Mantella
+Mantella viridis Green Mantella
+Xenopus laevis African Clawed Frog
+
+E. Aves (Birds) 
+
+All pet birds including federally regulated birds brought into this state, must be obtained from companies that are registered with the Maine Department of Agriculture. Birds must be identified as having a health certificate when importing the following birds from out of state, regardless of the purpose. The birds must have current VS 9-3 or VS 9-2 form certifying that the birds come from a flock participating in the Nation Poultry Improvement Plan (NPIP). For more information on importing domesticated game birds and examples of the required forms please visit the Department of Agriculture, Conservation and Forestry’s website: http://www.maine.gov/dacf/ahw/animal_health/documents/Importationoflivegamebirdsetc.pdf 
+
+Cyanoliseus patagonus Burrowing Parrot
+Dacelo novaeguineae Laughing Kookaburra
+Enicognathus ferrugineus Austral Parakeet
+Enicognathus leptorhynchus Slender-billed Parakeet
+Family Anatidae All Species in Family Anatidae (Ducks, Geese, and Swans)
+Family Bucerotidae All Species in Family Bucerotidae (Hornbills)
+Family Casuariidae All Species in Family Casuariidae (Cassowaries and Emu)
+Family Ciconiidae All Species in Family Ciconiidae (Storks)
+Family Columbidae All Species in Family Columbidae (Pigeons and Doves)
+Family Coraciidae All Species in Family Coraciidae (Rollers)
+Family Corvidae All Species in Family Corvidae (Crows, Jays, and Magpies)
+Family Cracidae All Species in Family Cracidae (Chachalacas, Curassows, Guans)
+Family Gruidae All Species in Family Gruidae (Cranes)
+Family Musophagidae All Species in Family Musophagidae (Turacos)
+Family Phasianidae All Species in Family Phasianidae (Pheasants, Grouse, and Allies)
+Family Phoenicopteridae All Species in Family Phoenicopteridae (Flamingos)
+Family Psophiidae All Species in Family Psophiidae (Trumpters)
+Family Ramphastidae All Species in Family Ramphastidae (Toucans)
+Family Spheniscidae All Species in Family Spheniscidae (Penguins)
+Family Strigopidae All Species in Family Strigopidae (New Zealand Parrots)
+Family Sturnidae All Species in Family Sturnidae (Starlings)
+Lybius dubius Bearded Barbet
+Order Accipitriformes All Species in Order Accipitriformes (Hawks, Eagles, Vultures, and Allies)
+Order Charadriiformes All Species in Order Charadriiformes (Waders, Gulls, and Auks)
+Order Falconiformes All Species in Order Falconiformes (Falcons)
+Order Otidiformes All Species in Order Otidiformes (Bustards)
+Order Pelecaniformes All Species in Order Pelecaniformes (Pelicans, Herons, Ibises, and Allies)
+Order Strigiformes All Species in Order Strigiformes (Owls)
+Struthio camelus Common Ostrich
+
+F. Mammalia (Mammals)
+
+Callosciurus prevostii Prevost's Squirrel
+Choloepus hoffmanni Hoffmann's Two-toed Sloth
+Coendou prehensilis Brazilian Porcupine
+Cynomys ludovicianus Black-tailed Prairie Dog
+Dasyprocta aguti Red-rumped Agouti
+Dasypus novemcinctus Long-nosed Armadillo
+Family Antilocapridae All Species in Family Antilocapridae (Pronghorn and Relatives)
+Family Aplodontiidae All Species in Family Aplodontiidae (Mountain Beavers)
+Family Bovidae All Species in Family Bovidae (Bovids)
+Family Canidae All Species in Family Canidae (Canids)
+Family Castoridae All Species in Family Castoridae (Beavers)
+Family Cervidae All Species in Family Cervidae (Deer)
+Family Elephantidae All Species in Family Elephantidae (Elephants)
+Family Equidae All Species in Family Equidae (Horses, Zebras, and Asses)
+Family Felidae All Species in Family Felidae (Cats)
+Family Giraffidae All Species in Family Giraffidae (Giraffids)
+Family Hippopotamidae All Species in Family Hippopotamidae (Hippopotamuses)
+Family Hyaenidae All Species in Family Hyaenidae (Hyenas)
+Family Macropodidae All Species in Family Macropodidae (Kangaroos, Wallabies, and Allies)
+Family Mustelidae All Species in Family Mustelidae (Badgers, Otters, Weasels, and Relatives)
+Family Odobenidae All Species in Family Odobenidae (Walruses)
+Family Otariidae All Species in Family Otariidae (Eared Seals)
+Family Phocidae All Species in Family Phocidae (True Seals)
+Family Rhinocerotidae All Species in Family Rhinocerotidae (Rhinoceroses)
+Family Suidae All Species in Family Suidae (Pigs, including but not limited to Eurasian Wild Boar, Sus scrofa).
+Family Tapiridae All Species in Family Tapiridae (Tapirs)
+Family Viverridae All Species in Family Viverridae (Civets and Allies)
+Hystrix cristata Crested Porcupine
+Monodelphis domestica Gray Short-tailed Opossum
+Order Cetacea All Species in Order Cetacea (Whales, Dolphins, and Porpoises)
+Order Chiroptera All Species in Order Chiroptera (Bats)
+Order Primates All Species in Order Primates (Primates)
+Order Sirenia All Species in Order Sirenia (Sea Cows)
+Orycteropus afor Aardvark
+Potos flavus Kinkajou
+Prionodon spp. All Species in Genus Prionodon (Asiatic Linsangs)
+Tamandua tetradactyla Southern Tamandua
+
+G. Reptilia (Reptiles) - Captive Bred Origin Only
+
+Boiga irregularis Brown Treesnake
+Chilabothrus inornatus Puerto Rican Boa
+Chilabothrus subflavus Jamaican Boa
+Cyclura nubila lewisi Grand Cayman Blue Iguana
+Drymarchon corais couperi Eastern indigo snake
+Eunectes spp. All Species in Genus Eunectes
+Family Elapidae All Species in Family Elapidae (Cobras, Coral Snakes, Elapids, Kraits)
+Family Helodermatidae All Species in Family Helodermatidae (Beaded Lizards)
+Family Viperidae All Species in Family Viperidae (Vipers)
+Gopherus Polyphemus Gopher Tortoise
+Lampropeltis herrerae Isla Todos Santos King Snake
+Morelia amethistina Amethystine Python
+Morelia kinghorni Scrub Python
+Nerodia clarkii Atlantic Salt Marsh Snake
+Order Crocodilia All Species in Order Crocodilia (Crocodilians)
+Pelodiscus sinensis Chinese softshell turtle
+Pituophis ruthveni Louisiana Pine Snake
+Python molurus Indian Python
+Python natalensis Southern African Rock Python
+Python reticulatus Reticulated Python
+Python sebae Northern African Rock Python
+Terrapene carolina Common Box Turtle
+Terrapene carolina major Gulf Coast Box Turtle
+Terrapene carolina triunguis Three-toed Box Turtle
+Trachemys scripta Pond Slider
+Trachemys scripta elegans Red-eared Slider
+
+3. Category 2 Restricted Species: The following species are listed as Category 2 Restricted species, unless they are identified in another category in this Chapter or are on the Unrestricted List: 
+
+Amphibia (Amphibians) - Captive Bred Origin Only
+
+Anura (Frogs and Toads)
+Phyllobates terribilis Golden Poison Frog
+Phyllobates vittatus Golfo Dulce Poison-dart Frog
+Rhinella marina Cane Toad 
+Caudata (Salamanders) 
+Ambystoma mexicanum Axolotl
+
+B. Aves (Birds) - All pet birds including federally regulated birds, including finches and parrots brought into this state, must be obtained from companies that are registered with the Maine Department of Agriculture. Birds identified with a Health certificate is required: Anyone who will be importing the following birds from out of state, regardless of the purpose must have a current VS 9-3 or VS 9-2 form certifying that the birds come from a flock participating in the Nation Poultry Improvement Plan (NPIP).
+
+Passeriformes (Perching Birds)
+Zosterops japonicas Japanese White-eye
+
+C. Mammalia (Mammals)
+
+Artiodactyla (Even-toed Ungulates)
+Family Camelidae All Species in Family Camelidae (Camels and Llamas)
+Carnivora (Carnivores)
+Arctictis binturong Binturong
+Genetta spp. All Species in Genus Genetta (Genets)
+Nasua narica White-nosed Coati
+Nasua South American Coatimundi
+Nasuella olivacea Mountain Coati
+Rodentia (Rodents)
+Family Caviidae All Species in Family Caviidae (Cavies)
+
+D. Reptilia (Reptiles) - Captive Bred Origin Only
+
+Sauria (Lizards) 
+Cyclura cornuta Rhinoceros Iguana
+Iguana Green Iguana
+Nephrurus deleani Pernatty knob-tail
+Varanus albigularis Rock Monitor
+Varanus panoptes Argus Monitor
+Varanus salvadorii Crocodile Monitor
+Varanus salvator Common Water Monitor
+Varanus togianus Togian Water Monitor
+Serpentes (Snakes) 
+Charina spp. All Species in Genus Charina (Rubber Boas)
+Elaphe schrenckii Russian ratsnake 
+Hydrodynastes gigas Brazillian Smooth Snake
+Liasis olivaceus Olive Python
+Nerodia paucimaculata Concho Water Snake
+Pantherophis gloydi Eastern Fox Snake
+Testudines (Turtles and Tortoises); must be a minimum 4" diameter.
+Geochelone sulcate African Spurred Tortoise
+Kinosternon flavescens Yellow Mud Turtle
+Macrochelys spp. All Species in Genus Macrochelys (Alligator Snapping Turtles)
+Malaclemys terrapin Northern Diamondback Terrapin
+Terrapene ornate Ornate Box Turtle
+
+==== Unrestricted Species List: Insecta ====
+Insecta (Insects)
+Blattodea (Cockroaches)
+Scientific Name Common Name
+Dubia RoachBlaptica dubia
+Madagascar Hissing CockroachGromphadorhina portentosa
+Coleoptera (Beetles)
+Scientific Name Common Name
+Black-margined Loosestrife BeetleNeogalerucella calmariensis
+Golden Loosestrife BeetleNeogalerucella pusilla
+MealwormTenebrio molitor
+SuperwormZophobas morio
+Diptera (Flies)
+Scientific Name Common Name
+Fruit FlyDrosophila hydei
+Common Fruit FlyDrosophila melanogaster
+Black Soldier FlyHermetia illucens
+Hymenoptera (Ants, Bees, Wasps And Sawflies)
+Scientific Name Common Name
+Aphidius colemani
+Aphidius ervi
+Aphidius matricariae
+Honey BeeApis mellifera
+Greenhouse Whitefly ParasiteEncarsia formosa
+Eretmocerus eremicus
+Eretmocerus mundus
+Lepidoptera (Butterflies And Moths)
+Scientific Name Common Name
+WaxwormGalleria mellonella
+Orthoptera (Grasshoppers, Locusts, Crickets, Katydids, And Allies)
+Scientific Name Common Name
+House CricketAcheta domesticus
+Tropical House CricketGryllodes sigillatus
+Friday, August 11, 2017 Page 13 of 18
+*Except if listed on:
+USFWS Injurious WildlifeUSFWS Threatened and Endangered AnimalsOR
+CITES Appendix IORIUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild)
+OR
+Unrestricted Species
+
+==== Unrestricted Species List: Mammalia ====
+Mammalia (Mammals)
+Carnivora (Carnivores)
+Scientific Name Common Name
+Domestic FerretMustela putorius furo
+Diprotodontia (Kangaroos, Possums, Wallabies, And Relatives)
+Scientific Name Common Name
+Sugar GliderPetaurus breviceps
+Erinaceomorpha (Hedgehogs And Gymnures)
+Scientific Name Common Name
+Four-toed Hedgehog, African Pygmy HedgehogAtelerix albiventris
+Lagomorpha (Hares, Pikas, And Rabbits)
+Scientific Name Common Name
+European RabbitOryctolagus cuniculus
+Rodentia (Rodents)
+Scientific Name Common Name
+Cairo Spiny MouseAcomys cahirinus
+Guinea PigCavia porcellus
+ChinchillaChinchilla lanigera
+Striped Dwarf HamsterCricetulus barabensis
+Chinese HamsterCricetulus griseus
+GerbilMeriones unguiculatus
+Golden HamsterMesocricetus auratus
+House MouseMus musculus
+DeguOctodon degu
+Campbell’s HamsterPhodopus campbelli
+Roborovski’s Desert HamsterPhodopus roborovskii
+Dzhungarian HamsterPhodopus sungorus
+Brown RatRattus norvegicus
+
+==== Unrestricted Species List: Reptilia (Sauria and Serpentes) ====
+Reptilia (Reptiles)
+Captive Bred Origin Only
+Sauria (Lizards)
+Captive Bred Origin Only
+Scientific Name Common Name
+Mountain Horned DragonAcanthosaura crucigera
+Common AgamaAgama agama
+Giant AmeivaAmeiva ameiva
+All Species in Genus Anolis (Anoles)Anolis spp.*
+All Species in Genus Basiliscus (Basilisks)Basiliscus spp.*
+All Species in Genus Callisaurus (Zebra-tailed Lizards)Callisaurus spp.*
+Friday, August 11, 2017 Page 14 of 18
+*Except if listed on:
+USFWS Injurious WildlifeUSFWS Threatened and Endangered AnimalsOR
+CITES Appendix IORIUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild)
+OR
+Unrestricted Species
+All Species in Genus Callopistes (Dwarf Tegus)Callopistes spp.*
+All Species in Genus Calotes (Forest Lizards)Calotes spp.*
+Parson's ChameleonCalumma parsonii
+Veiled ChameleonChamaeleo calyptratus
+Flap-necked ChameleonChamaeleo dilepis
+Frilled-neck LizardChlamydosaurus kingii
+All Species in Genus Cnemidophorus (Whip-tail Lizards)Cnemidophorus spp.*
+All Species in Genus Cordylus (Girdle-tail Lizards)Cordylus spp.*
+All Species in Genus Crotaphytus (Collared Lizards)Crotaphytus spp.*
+All Species in Genus Ctenosaura (Spiny-tailed Iguanas)Ctenosaura spp.*
+All Species in Family Scincidae (Skinks)Family Scincidae*
+Carpet ChameleonFurcifer lateralis
+Oustalet's ChameleonFurcifer oustaleti
+Panther ChameleonFurcifer pardalis
+All Species in Genus Gerrhonotus (Eastern Alligator Lizards)Gerrhonotus spp.*
+All Species in Genus Gerrhosaurus (Plated Lizards)Gerrhosaurus spp.*
+All Species in Genus Holbrookia (Lesser Earless Lizards)Holbrookia spp.*
+all species in infraorder Gekkota
+Except for: Nephrurus deleani
+Infraorder Gekkota*
+All Species in Genus Leiocephalus (Curly-tailed Lizards)Leiocephalus spp.*
+All Species in Genus Liolaemus (South American Swifts)Liolaemus spp.*
+All Species in Genus Ophisaurus (Glass Lizards)Ophisaurus spp.*
+All Species in Genus Petrosaurus (California Rock Lizards)Petrosaurus spp.*
+All Species in Genus Phymaturus (South American Chuckwallas)Phymaturus spp.*
+All Species in Genus Physignathus (Water Dragons)Physignathus spp.*
+Bearded DragonPogona vitticeps
+All Species in Genus Pseudocordylus (Crag Lizards)Pseudocordylus spp.*
+Spectral pygmy chameleonRhampholeon spectrum
+Bearded Pygmy ChameleonRieppeleon brevicaudatus
+All Species in Genus Sceloporus (Spiny Lizards)Sceloporus spp.*
+Jackson's ChameleonTrioceros jacksonii
+Rudis ChameleonTrioceros rudis
+All Species in Genus Tupinambis (Tegus)Tupinambis spp.*
+All Species in Genus Uromastyx (Spiny-tailed Lizards)Uromastyx spp.*
+All Species in Genus Urosaurus (Tree And Bush Lizards)Urosaurus spp.*
+All Species in Genus Uta (Side Blotched Lizards)Uta spp.*
+Spiny-tailed MonitorVaranus acanthurus
+Black Tree MonitorVaranus beccarii
+Dumeril's MonitorVaranus dumerilii
+Friday, August 11, 2017 Page 15 of 18
+*Except if listed on:
+USFWS Injurious WildlifeUSFWS Threatened and Endangered AnimalsOR
+CITES Appendix IORIUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild)
+OR
+Unrestricted Species
+Savannah MonitorVaranus exanthematicus
+Peach-throated MonitorVaranus jobiensis
+Blue Tree MonitorVaranus macraei
+Quince MonitorVaranus melinus
+Green Tree MonitorVaranus prasinus prasinus
+Storr's MonitorVaranus storri
+Timor MonitorVaranus timorensis
+All Species in Genus Xantusia (Desert Night Lizards)Xantusia spp.*
+Serpentes (Snakes)
+Captive Bred Origin Only
+Scientific Name Common Name
+Dumerils BoaAcrantophis dumerili
+Madagascar Ground BoaAcrantophis madagascariensis
+Children’s PythonAntaresia childreni
+Spotted PythonAntaresia maculosa
+Pygmy PythonAntaresia perthensis
+Stimson's PythonAntaresia stimsoni
+All Species in Genus Arizona (Glossy Snakes)Arizona spp.*
+Black-headed PythonAspidites melanocephalus
+Woma PythonAspidites ramsayi
+All Species in Genus BoaBoa constrictor spp.
+All Species in Genus Boaedon (House Snakes)Boaedon spp.*
+All Species in Genus Bogertophis (Desert Rat Snakes)Bogertophis spp.*
+Bismarck Ringed PythonBothrochilus boa
+African Burrowing PythonCalabaria reinhardtii
+All Species in Genus Candoia (Bevel-nosed Boas)Candoia spp.*
+Cuban BoaChilabothrus angulifer
+Hatian BoaChilabothrus striatus fowleri
+MussuranaClelia clelia
+Trinket SnakeCoelognathus helena helena
+Emerald Tree BoaCorallus caninus
+Garden Tree BoaCorallus hortulanus
+All Species in Genus Drymarchon (Indigo Snakes)Drymarchon spp.*
+All Species in Genus Elaphe (Ratsnakes)
+Except for: Elaphe gloydi; Elaphe schrencki
+Elaphe spp.*
+All Species in Genus Epicrates (Rainbow Boas)Epicrates spp.*
+All Species in Genus Eryx (Sandboas)Eryx spp.*
+Mandarin RatsnakeEuprepiophis mandarinus
+All Species in Genus Gongylophis (Sandboas)Gongylophis spp.*
+Friday, August 11, 2017 Page 16 of 18
+*Except if listed on:
+USFWS Injurious WildlifeUSFWS Threatened and Endangered AnimalsOR
+CITES Appendix IORIUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild)
+OR
+Unrestricted Species
+Red-tailed Green RatsnakeGonyosoma oxycephala
+Western Hognose SnakeHeterodon nasicus
+All Species in Genus Lampropeltis (Kingsnakes And Milk Snakes)
+Except for: Lampropeltis herrerae; Lampropeltis triangulum triangulum
+Lampropeltis spp.*
+Giant Madagascan Hognose SnakeLeioheterodon madagascariensis
+D’albertis' PythonLeiopython albertisii
+Macklot's PythonLiasis mackloti
+Rosy BoaLichanur trivirgata
+All Species in Genus Morelia (Australasian Pythons)
+Except for: Morelia kinghorni; Morelia amethystina
+Morelia spp.*
+All Species in Genus Nerodia (Water Snakes)
+Except for: Nerodia sipedon
+Nerodia spp.*
+Rough Green SnakeOpheodrys aestivus
+Black-banded Trinket SnakeOreocryptophis porphyraceus
+Beauty Rat SnakeOrthriophis taeniurus
+All Species in Genus Pantherophis (North American Ratsnakes)
+Except for: Pantherophis gloydi
+Pantherophis spp.*
+All Species in Genus Pituophis (Pine, Gopher, And Bullsnakes)Pituophis spp.*
+Angolan PythonPython anchietae
+Borneo Short-tailed PythonPython breitensteini
+Malaysian Blood PythonPython brongersmai
+Blood PythonPython curtus
+Ball PythonPython regius
+Timor PythonPython timoriensis
+Rhino Rat SnakeRhynchophis boulengeri
+All Species in Genus SpilotesSpilotes spp.*
+Asian Sunbeam SnakeXenopeltis unicolor

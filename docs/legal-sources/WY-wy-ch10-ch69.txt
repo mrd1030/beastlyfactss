@@ -1,0 +1,213 @@
+SOURCE: Wyoming Game and Fish Commission Regulation Chapter 10 (live warm-blooded wildlife) and Chapter 69 (live cold-blooded wildlife), and Wyo. Stat. § 23-1-101
+URL: https://wgfd.wyo.gov/sites/default/files/content/PDF/Regulations/CH-10-FINAL-CLEAN-SIGNED-03-10-2023-3.pdf and .../CH-69-06-27-2022-6-CLEAN.pdf and https://www.wyoleg.gov/statutes/compress/title23.pdf
+FETCHED: 2026-09-05 (wgfd.wyo.gov and wyoleg.gov both serve PDFs to plain curl. law.justia.com 403s, so take the statute from wyoleg's compressed title PDF.)
+
+READ THIS FIRST. Wyoming splits by body temperature and the two halves work in opposite directions.
+
+COLD-BLOODED (Chapter 69) is permissive and answers in one line. Section 10(a)(i): "Amphibians and
+reptiles not listed in Section 8 or 9 of this regulation" may be imported or possessed with no
+permit, no written authorization and no certificate of veterinary inspection. Section 8 is federal
+injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass
+carp and mosquitofish. Section 9 is venomous reptiles, herptiles that Chapter 52 puts behind a
+scientific or educational take permit, Wyoming-indigenous herptiles imported for COMMERCIAL use,
+and aquatic turtles in ornamental ponds. So an ordinary pet lizard or snake is free outright.
+
+WARM-BLOODED (Chapter 10) is a closed list and works the other way. Section 3 requires a permit for
+"any living warm-blooded wildlife" unless the regulation exempts it, and the exemptions are two
+enumerations, DOMESTIC at § 2(i) and DOMESTICATED at § 2(j), each introduced by "For the purpose of
+this regulation, ONLY the following animals are considered" its category. The domesticated European
+rabbit is on the second list. Anything on neither, a southern flying squirrel for instance, goes to
+§ 13(d): "A permit may be authorized upon approval for other warm-blooded wildlife."
+
+INVERTEBRATES are outside both, at the level of the statute. Wyo. Stat. § 23-1-101(a)(xiii) defines
+wildlife as a closed list of taxa with no insect or arachnid in it, and Chapter 69 § 2(c) repeats
+the closure in its own words. This is the Utah shape, and it is the opposite of New Hampshire, whose
+statute names invertebrates and whose closed list then swallows them.
+
+
+==== Wyo. Stat. § 23-1-101(a)(xiii) ====
+(xiii) "Wildlife" means all wild mammals, birds, fish, amphibians, reptiles, crustaceans and
+mollusks, and wild bison designated by the Wyoming game and fish commission and the Wyoming
+livestock board within Wyoming.
+
+==== Chapter 69 § 2(c), what "cold-blooded wildlife" means ====
+(c) "Cold-Blooded Wildlife" means all fish, amphibians, reptiles, mollusks, crustaceans, their
+viable gametes (eggs and sperm), fertilized eggs and any transgenic product or hybrid thereof.
+
+==== Chapter 69 §§ 8, 9 and 10 ====
+Section 8. Cold-Blooded Wildlife Prohibited from Importation or Possession. An
+importation/possession permit shall not be issued for importation or possession of the live cold-
+blooded wildlife in this section, except as otherwise specified. Commercial use of the live cold-
+blooded wildlife in this section is prohibited regardless of captive or wild origin. (a) Injurious
+wildlife listed in 50 CFR 16. (b) AIS as defined in Commission Regulation Chapter 62, Regulation
+for Aquatic Invasive Species. (c) Fish or other aquatic wildlife which originated from a water
+source classified as suspect, positive or infested with Dreissenid Mussels. (d) Endangered and
+threatened wildlife listed in 50 CFR 17.11. (e) All members of the genus Xenopus, including, but
+not limited to, African Clawed Frog (Xenopus laevis). (f) American Bullfrog (Lithobates
+catesbeianus). (g) Canadian Toad (Anaxyrus hemiophrys). (h) Green Frog (Lithobates clamitans). (i)
+Diploid Grass Carp (Ctenopharygodon idella). (j) Western Mosquitofish (Gambusia affinis). (k) Live
+baitfish that originated from outside Wyoming, unless legally obtained by the holder of a valid
+license to deal in live baitfish in accordance with Commission Regulation Chapter 46, Fishing
+Regulations. (l) Live baitfish that were obtained from any source within Wyoming that were
+transported out of state. Once live baitfish leave the state of Wyoming, the baitfish shall not be
+transported back into the state alive under any circumstance. Section 9. Cold-Blooded Wildlife
+Requiring an Importation/Possession Permit. An importation/possession permit shall be required for
+the activities listed in this section. The applicant for an importation/possession permit may be
+required to provide evidence, allow inspections, or implement procedures necessary to ensure that
+the proposed activity will not spread or introduce an AIS of concern (as defined in Commission
+Regulation Chapter 51, Private Fish Hatcheries), pathogen, disease or parasite. The Department may
+deny importation or possession if the Department determines it would pose a risk to the wildlife
+resources of the state of Wyoming. Cold-blooded wildlife imported into the state shall not be
+diverted from the destination stated on the importation/possession permit. 69-7 (a) Importation or
+possession of venomous reptiles or poisonous amphibians. A certificate of veterinary inspection is
+also required prior to importation. (b) Importation or possession of all amphibians, reptiles,
+mollusks and crustaceans listed in Commission Regulation Chapter 52, Nongame Wildlife that require
+a permit for scientific and educational take. A certificate of veterinary inspection is also
+required prior to importation. (c) Importation or possession of reptiles and amphibians indigenous
+to Wyoming imported for commercial use. A certificate of veterinary inspection is also required
+prior to importation. (d) Placing aquatic turtles in ornamental ponds designed to prevent escape.
+An importation/possession permit shall not be issued if the Department determines that escape may
+be likely. (e) Transplanting or stocking Plains Topminnow (Fundulus sciadicus), Northern Plains
+Killifish (Fundulus kansae), or Plains Killifish (Fundulus zebrinus) to control mosquitoes. These
+species may be approved only if they are known to the Department to be established in the
+drainage, stocking in the locations requested is considered by the Department to be compatible
+with aquatic species in that drainage and the source population(s) for transplant are not located
+in drainages known to contain an AIS or pathogen of concern (as defined in Commission Regulation
+Chapter 51, Private Fish Hatcheries). (f) Using nongame fish in aquaponics or displaying nongame
+fish in aquaria or ornamental ponds unless otherwise prohibited from importation or possession in
+Section 8 of this regulation or allowed without an importation/possession permit in Section 10 of
+this regulation. (g) Displaying coldwater, coolwater and warmwater fish in aquaria or ornamental
+ponds. Fish shall be legally obtained from a Department approved private fish hatchery or an
+individual or commercial operation permitted under this regulation. (h) Importing mollusks and
+crustaceans for personal use that are designated as prohibited, invasive, or nuisance by any
+state, unless imported solely for human consumption and exempted in Section 6 of this regulation.
+Section 10. Cold-Blooded Wildlife Not Requiring an Importation/Possession Permit. (a) The animals
+listed in this section may be imported or possessed without securing an importation/possession
+permit and shall not require written authorization from the Chief of Fisheries. A certificate of
+veterinary inspection or a fish health and AIS inspection are not required. 69-8 (i) Amphibians
+and reptiles not listed in Section 8 or 9 of this regulation. (ii) Mollusks and crustaceans not
+listed in Sections 8 or 9 of this regulation that are confined to aquaria. (iii) Marine fish. (iv)
+Tropical fish confined in aquaria, ornamental ponds or reared in aquaponics or other artificial
+environments not connected to the waters of this state. (v) Goldfish (Carassius auratus) and koi
+that are confined in aquaria or ornamental ponds. (vi) Live baitfish legally obtained in
+accordance with Commission Regulations Chapter 46, Fishing Regulations and Chapter 51, Private
+Fish Hatcheries. (b) The following animals may be imported or possessed without securing an
+importation/possession permit but shall require written authorization from the Chief of Fisheries.
+Importation, possession, stocking and transportation shall be conducted in accordance with
+Commission Regulations Chapter 49, Private Stocking of Cold-Blooded Wildlife and Chapter 51,
+Private Fish Hatcheries. (i) Fathead Minnow (Pimephales promelas) for stocking as fish forage or
+mosquito control that are legally obtained from a Department approved private fish hatchery in
+accordance with Commission Regulation Chapter 49, Private Stocking of Cold-Blooded Wildlife. (ii)
+Coldwater, coolwater and warmwater fish as defined in Commission Regulation Chapter 51, Private
+Fish Hatcheries for private fish stocking or use in private fish hatcheries. (iii) Nongame fish
+used in private fish hatcheries dealing primarily in marine or ornamental fish. (iv) Mollusks or
+crustaceans used in aquaponics or any aquaculture operation. AIS hatchery inspections may be
+required. Inspections shall be conducted in accordance with Commission Regulation Chapter 51,
+Private Fish Hatcheries. (c) The following requirements shall apply for fish requiring written
+authorization from the Chief of Fisheries prior to importation or possession. (i) When importing
+fish or eggs to stock directly into a Wyoming water, the fish shall be accompanied by a copy of
+the private fish stocking authorization issued by the Chief of Fisheries per Commission Regulation
+Chapter 49, Private Stocking of Cold-Blooded Wildlife authorizing the stocking of a Wyoming water.
+69-9 (A) If the fish or eggs are being transported by a broker they shall also be accompanied by a
+copy of the receipt of delivery as defined in Commission Regulation Chapter 49, Private Stocking
+of Cold-Blooded Wildlife. (ii) When an in-state Department approved private fish hatchery is
+importing fish, their viable gametes (eggs and sperm) or fertilized eggs from any out-of-state
+source, the fish shall be accompanied by a copy of the letter from the Chief of Fisheries to the
+in-state Department approved private fish hatchery authorizing the importation.
+
+==== Chapter 10 § 2(i) and § 2(j), the domestic and domesticated enumerations ====
+(i) "Domestic Animals" means those populations of animals, their viable gametes (eggs and sperm),
+fertilized eggs, or any hybrid or transgenic product thereof, which through long association with
+humans have been bred to a degree which has resulted in genetic changes of the species to an
+extent that makes them unique and distinguishable from wild individuals of their species. For the
+purpose of this regulation, only the following animals are considered domestic: 10-2 ass, burro,
+and donkey (Equus asinus), bison (Bison bison); except when classified as wild bison by the
+Wyoming Game and Fish Commission and the Wyoming Livestock, cat (Felis catus), domestic cattle
+(Bos taurus and Bos indicus), domestic chicken (Gallus gallus), dog (Canis familiaris), domestic
+ferret (Mustela furo), domestic goat (Capra hircus), domestic greylag goose (Anser anser), horse
+and pony (Equus caballus), domestic mallard (Anas platyrhynchos) distinguished morphologically
+from wild mallards and captive-reared mallard ducks, mule and hinny (Equus asinus x Equus
+caballus), domestic muscovy duck (Cairina moschata), pigeons (Columba livia), domestic sheep (Ovis
+aries), distinguished morphologically from wild sheep, domestic swan goose (Anser cygnoides),
+domestic swine (Sus domesticus), domestic turkey (Meleagris gallopavo) distinguished
+morphologically from wild turkeys. (j) "Domesticated Animals" means those individual animals,
+their viable gametes (eggs and sperm), fertilized eggs, or any hybrid or any transgenic product
+thereof, which have been made tractable (easily managed or controlled) or tame. For the purpose of
+this regulation, only the following animals are considered domesticated: domesticated alpaca (Lama
+pacos), domesticated camel (Camelus bactrianus and Camelus dromedarius), domesticated chinchilla
+(Chinchilla laniger), domesticated emu (Dromaius novaehollandiae), domesticated European rabbit
+(Oryctolagus cuniculus), domesticated Mongolian gerbil (Meriones unguiculatus), domesticated
+guinea fowl (Numida meleagris), domesticated guinea pig (Cavia porcellus), domesticated hamster
+(Mesocricetus auratus), domesticated hedgehog (Erinaceus spp.), domesticated llama (Lama glama),
+domesticated mouse (Mus musculus), domesticated ostrich (Struthio camelus), domesticated peafowl
+(Pavo cristatus), domesticated pot-bellied pig (Sus scrofa domesticus), domesticated quail, common
+(Coturnix coturnix), domesticated quail, Japanese (Coturnix japonica), domesticated rat (Rattus
+norvegicus and Rattus rattus), 10-3 domesticated sugar gliders (Petaurus breviceps), domesticated
+rhea (Rhea americana and Rhea pennata), domesticated vicuna (Vicugna vicugna), domesticated water
+buffalo (Bubalus bubalis), domesticated yak (Bos grunniens), domesticated zebra (Equus quagga).
+
+==== Chapter 10 § 3 ====
+Section 3. Importation/Possession Permit Required For Live Warm-Blooded Wildlife. Except as
+otherwise specified or exempted in this regulation, a permit from the Department is required prior
+to importation, possession, confinement or transportation of any living warm-blooded wildlife.
+
+==== Chapter 10 §§ 11 to 16 ====
+Section 11. Warm-Blooded Wildlife Prohibited from Importation and Possession. (a) There shall be
+no private ownership, private importation or private possession of live big or trophy game
+animals, except as otherwise specified in this regulation. (b) In addition, a permit shall not be
+issued for importation or possession of the following live warm-blooded wildlife in Wyoming,
+except as otherwise specified in this regulation. (i) All members of the subfamily Alcelaphinae;
+(ii) All members of the subfamily Caprinae, except those exempt in Section 16; 10-8 (iii) Monk
+parakeet (Myiopsitta monachus); (iv) All members of the order nonhuman primates; (v) All members
+of the order Rodentia from Africa; (vi) All members of the family Suidae, except those exempt in
+Section 16; (vii) All members of the family Tayassuidae; (viii) Wild turkey (meleagris gallopavo);
+(ix) Gray wolf (Canis Lupis); (x) Red wolf (Canis Rufus); (xi) Red deer (Cervus elaphus); (xii)
+Red deer hybrid (xiii) Wolf hybrid (xiv) Injurious wildlife listed in 50 CFR 16 (xv) Endangered
+and threatened wildlife listed in 50 CFR 17.11; and (xvi) Protected animals Section 12. Warm-
+Blooded Wildlife Prohibited From Importation. Warm- blooded wildlife declared as pests by W.S.
+11-5-101 through W.S. 11-5-119, and wildlife defined in W.S. 23-1-101 as predatory animals and
+predacious birds, Eurasian Collared-dove (Streptopelia decaocto), and Mute Swans (Cygnus olor) are
+prohibited from importation, except as otherwise provided. Section 13. Importation/Possession
+Permit Required. A permit is required prior to importation, possession and transportation for the
+following warm-blooded wildlife unless otherwise specified in this regulation: (a) Furbearing
+animals, except: (i) Live furbearing animals may be captured in the State under terms of W.S.
+23-2-305 for propagation only during open seasons for the trapping of furbearing animals as
+specified in Commission Regulation Chapter 4, Furbearing Animal Hunting or Trapping Seasons. 10-9
+(ii) Persons licensed to capture furbearing animals for the purpose of propagation shall be
+governed by Commission Regulation Chapter 4, Furbearing Animal Hunting or Trapping Seasons, except
+that furbearing animals do not have to be killed before leaving the trap site. (b) Pen-raised game
+birds and captive-reared mallard ducks, excluding those held under authority of W.S 23-5-102
+(licensed game bird farms). A game bird certificate of origin shall be completed as prescribed in
+Appendix I Section 3 (c) prior to said wildlife being imported into the state. (c) Nongame
+wildlife utilized for commercial use. (d) A permit may be authorized upon approval for other warm-
+blooded wildlife unless otherwise specified in this regulation. Section 14. Possession of Warm-
+Blooded Wildlife from Within Wyoming - No Possession Permit Required. The following wildlife may
+be possessed without a permit if captured in the state, but no importation is allowed. (a) All
+birds listed in Commission Regulation Chapter 52, Take of Nongame Wildlife From Within Wyoming,
+where take without a permit for personal use is allowed. (b) Mammals declared as pests by W.S.
+11-5-101 through W.S. 11-5-119, or animals defined in W.S. 23-1-101 as predatory animals. (c)
+Species listed in this section are prohibited from importation into the state. Section 15.
+Possession of Warm-Blooded Wildlife From Within Wyoming No Possession Permit Required. Importation
+Permit Required Prior to Entry Into the State. The following wildlife may be possessed without a
+permit if captured in the state, but require a permit before being imported, except as otherwise
+specified. (a) All mammals listed in Commission Regulation Chapter 52, Take of Nongame Wildlife
+From Within Wyoming, where take without a permit is allowed for personal use, except no
+importation shall be allowed for animals declared as pests by W.S. 11-5-101 through W.S. 11-5-119,
+or animals defined in W.S. 23-1-101 as predatory animals. Section 16. Possession and Importation
+of Wildlife No Possession/Importation Permit Required. Live warm-blooded wildlife listed in this
+section, unless otherwise specified or listed as prohibited from possession and importation, may
+be imported, possessed or transported without a permit. (a) For live warm-blooded wildlife defined
+as domestic or domesticated in this regulation, a certificate of veterinary inspection is not
+required by the Department; however, the Wyoming Animal Management Damage Board, the Wyoming
+Livestock Board and the Wyoming Department of Agriculture or other rules may apply. 10-10 (b)
+Birds: (i) Cage and aviary birds. A certificate of veterinary inspection is not required by the
+Department; however, the Wyoming Livestock Board, the Wyoming Animal Damage Management Board and
+the Wyoming Department of Agriculture or other rules may apply; and, (ii) Pen-raised game birds,
+captive-reared mallards and captive-bred migratory waterfowl legally imported, possessed, confined
+or transported under terms of W.S. 23-5-102 (licensed game bird farms). A certificate of
+veterinary inspection or a National Poultry Improvement Plan VS Form 9-3 shall be issued and a
+game bird certificate of origin shall be issued prior to such wildlife being imported into the
+state; and, (iii) Raptors legally imported or transported into the state under terms of W.S.
+23-2-105 (license to take falcons and hawks) and Commission Regulation Chapter 25, Falconry and
+Raptor Propagation Regulation. A certificate of veterinary inspection shall be issued prior to
+such wildlife being imported or transported into the state.

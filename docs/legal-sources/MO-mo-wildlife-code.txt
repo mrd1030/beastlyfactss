@@ -1,0 +1,191 @@
+SOURCE: Missouri Wildlife Code: 3 CSR 10-4.110 (general prohibition), 3 CSR 10-9.110 (possession), 3 CSR 10-9.230/.240/.250 (classes), 3 CSR 10-20.805 (definitions), RSMo § 252.020
+URL: https://www.sos.mo.gov/adrules/csr/current/3csr/3c10-4.pdf and .../3c10-9.pdf and .../3c10-20.pdf
+FETCHED: 2026-09-05 (sos.mo.gov serves each CSR chapter as a PDF and works with a browser User-Agent; it returned a 403 once on 3c10-4.pdf and served it on the retry, so retry rather than concluding it is blocked.)
+
+READ THIS FIRST. Missouri sorts by nativity, not by species list, and the whole state comes down to
+two subsections of one rule.
+
+3 CSR 10-9.110(2) clears "amphibians, reptiles, and mammals not native to Missouri" to be bought,
+sold, possessed, transported and exhibited WITHOUT PERMIT. That is the answer for every exotic pet.
+3 CSR 10-9.110(1)(A) covers natives: five specimens, taken and possessed alive by a Missouri
+resident, no permit, but never bought or sold and never shipped out of state.
+
+So the only real question in Missouri is whether the animal is native, and the Department of
+Conservation's own field guides are what answer it. A Guide to Missouri's Snakes gives the state
+five Pantherophis (emoryi, obsoletus, spiloides, ramspotti, vulpinus) and NO P. guttatus, and gives
+the eastern milksnake, Lampropeltis triangulum, a statewide distribution. A Guide to Missouri's
+Lizards runs to eleven natives plus the introduced Italian wall lizard and contains no anole. So the
+corn snake and the green anole are cleared non-natives and the milksnake is not.
+  https://mdc.mo.gov/sites/default/files/mo_nature/downloads/page/MissouriSnakes.pdf
+  https://mdc.mo.gov/sites/default/files/2023-04/E00213%20A%20Guide%20to%20Missouri's%20Lizards.pdf
+
+The invertebrate answer is in the general prohibition itself and it is the cleanest on this map:
+3 CSR 10-4.110(1) ends "however, this Code shall not apply to other invertebrates except as
+specifically provided", and the only place it so provides is 3 CSR 10-9.110(1)(B), native
+invertebrates on the Species and Communities of Conservation Concern Checklist. RSMo § 252.020(3)
+is broad enough to catch an insect, so the disclaimer rather than the definition is what does it.
+
+
+==== 3 CSR 10-4.110(1), General Prohibition ====
+3 CSR 10-4.110 General Prohibition; Applications
+PURPOSE: This rule prohibits the pursuit, taking, possession, or 
+any use of wildlife except as provided in the Code.
+(1) No bird, fish, crayfish, mussel, amphibian, reptile, mammal, 
+or other form of wildlife, including wildlife raised or held 
+in captivity, or their homes, dens, nests, eggs, and larvae in 
+Missouri shall be molested, pursued, taken, hunted, trapped, 
+tagged, marked, enticed, poisoned, killed, transported, 
+stored, served, bought, sold, given away, accepted, possessed, 
+propagated, imported, exported, or liberated to the wild in any 
+manner, number, part, parcel, or quantity, at any time, except 
+as specifically permitted by these rules and any laws consistent 
+with Article IV , sections 40–46 of the Constitution of Missouri ; 
+however, this Code shall not apply to other invertebrates 
+except as specifically provided.
+
+==== 3 CSR 10-9.110(1) and (2), Possession ====
+3 CSR 10-9.110 General Prohibition; Applications
+PURPOSE: This rule prohibits the pursuit, taking, possession, or 
+any use of wildlife except as provided in the Code.
+PUBLISHER’S NOTE: The secretary of state has determined that the 
+publication of the entire text of the material which is incorporated 
+by reference as a portion of this rule would be unduly cumbersome 
+or expensive. This material as incorporated by reference in this 
+rule shall be maintained by the agency at its headquarters and 
+shall be made available to the public for inspection and copying 
+at no more than the actual cost of reproduction. This note applies 
+only to the reference material. The entire text of the rule is printed 
+here.
+(1) Possession of Native Species.
+(A) A maximum of five (5) specimens of any native wildlife not 
+listed in 3 CSR 10-4.110(4) or 3 CSR 10-9.240, except endangered 
+species, bats, dusty hog-nosed snake, Kirtland’s snake, western 
+fox snake, and alligator snapping turtles, may be taken and 
+possessed alive by a resident of Missouri without permit, but 
+these animals shall not be bought or sold. Bones, skins, shells, 
+and other parts of such wildlife may be possessed for personal 
+use without permit, but these wildlife parts in any form shall 
+not be bought or sold. Wildlife held under this subsection may 
+not be transported (or shipped) from the state.
+(B) Native invertebrates listed in the current Missouri Species 
+and Communities of Conservation Concern Checklist booklet, 
+which is hereby incorporated in this Code by reference, may 
+only be collected and held by holders of a Wildlife Collector’s 
+Permit and only as prescribed in 3 CSR 10-9.425. This booklet 
+is published annually in January by, and a printed copy can 
+be obtained from, the Missouri Department of Conservation, 
+PO Box 180, Jefferson City, MO 65102-0180 and is also available 
+online at www.missouriconservation.org. This rule does not 
+incorporate any subsequent amendments or additions to the 
+Checklist.
+(2) Except for federally-designated endangered species 
+and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the 
+following may be bought, sold, possessed, transported, and 
+exhibited without permit: Asian clams (Corbicula species) taken 
+from impoundments that are not waters of the state; bison; 
+amphibians, reptiles, and mammals not native to Missouri 
+except those mammals located in a licensed big game hunting 
+preserve; and those birds (except ring necked pheasants and 
+gray partridge) not native to the continental United States.
+
+==== 3 CSR 10-9.230 / .240 / .250, the three classes ====
+3 CSR 10-9.230 Class I Wildlife
+PURPOSE: This rule establishes a new category for certain wildlife—
+wildlife inherently dangerous to humans and the provisions for 
+private ownership of these species.
+Class I wildlife shall include birds (including ring-necked 
+pheasants and gray partridge) native to the continental United 
+States, and those species of mammals (except bison and those 
+listed in 3 CSR 10-9.240 and 3 CSR 10-9.250) and nonvenomous 
+reptiles and amphibians native to Missouri. Permits to hold 
+Class I wildlife in confinement will only be issued for the 
+specific species of wildlife approved for each permit type on 
+the Approved Confined Wildlife Species List in 3 CSR 10-9.105.
+AUTHORITY: sections 40 and 45 of Art. IV, Mo. Const. Original 
+rule filed June 9, 1993, effective Jan. 31, 1994. Amended: Filed June 
+5, 1996, effective Dec. 30, 1996. Amended: Filed May 10, 1999, 
+effective March 1, 2000. Amended: Filed April 24, 2000, effective 
+March 1, 2001. Amended: Filed Dec. 26, 2002, effective May 30, 
+2003. Amended: Filed Jan. 22, 2021, effective Aug. 30, 2021.
+3 CSR 10-9.240 Class II Wildlife
+PURPOSE: This rule identifies those species that can only be held 
+under provisions of a Class II wildlife breeder permit. 
+Class II wildlife shall include copperheads, cottonmouths, 
+timber rattlesnakes, pygmy rattlesnakes, eastern massasauga, 
+prairie massasauga, mountain lions or mountain lion-hybrids, 
+wolves or wolf-hybrids, and black bears or black bear hybrids. 
+Permits to hold Class II wildlife in confinement will only be 
+issued for the specific species of wildlife approved for each 
+permit type on the Approved Confined Wildlife Species List in 
+3 CSR 10-9.105.
+AUTHORITY: sections 40 and 45 of Art. IV, Mo. Const. Original 
+rule filed Oct. 6, 1993, effective Jan. 31, 1994. Amended: Filed June 
+5, 1996, effective Dec. 30, 1996. Amended: Filed Sept. 29, 2004, 
+ CODE OF STATE REGULATIONS 15
+Denny Hoskins (11/30/25)
+Secretary of State
+ 
+3 CSR 10-9—DEPARTMENT OF CONSERVATION DIVISION 10—CONSERVATION COMMISSION
+effective Feb. 28, 2005. Amended: Filed Jan. 22, 2021, effective Aug. 
+30, 2021. Amended: Filed Feb. 10, 2023, effective Aug. 30, 2023.
+3 CSR 10-9.250 Class III Wildlife 
+PURPOSE: This rule defines Class III wildlife and clarifies that 
+permits to hold cervids in confinement will only be required for 
+those species of Class III wildlife listed on the Approved Confined 
+Wildlife Species List.
+Class III wildlife shall include all cervids as defined in 3 CSR 
+10-20.805. Permits to hold Class III wildlife in confinement are 
+only required for the specific species of wildlife approved for 
+each permit type on the Approved Confined Wildlife Species 
+List in 3 CSR 10-9.105.
+AUTHORITY: sections 40 and 45 of Art. IV, Mo. Const. Original rule 
+filed Jan. 22, 2021, effective Aug. 30, 2021.
+
+==== 3 CSR 10-9.353(2), what a Class I breeder may do ====
+(2) Such wildlife may be possessed, used, sold, given away, 
+transported, or shipped; provided, the provisions of 3 CSR 
+10-9.223 are followed and that state and federally-designated 
+endangered species may not be sold without the written 
+approval of the director; that black bears and black bear-
+hybrids, mountain lions and mountain lion-hybrids, and 
+wolves may not be sold or given away to the holder of a Class 
+II wildlife breeder permit; and that wildlife may be sold or 
+given away only to the holder of the appropriate permit, where 
+required, except as provided in section (5) of this rule.
+
+==== 3 CSR 10-9.420, Wildlife Hobby Permit ====
+3 CSR 10-9.420 Wildlife Hobby Permit
+PURPOSE: This rule establishes a permit to possess certain forms 
+of wildlife for personal use but not for sale.
+(1) Wildlife Hobby Permit. Authorizes the holder to purchase, 
+possess, and propagate not more than fifty (50) ring-necked 
+pheasants and bobwhite quail, in the aggregate, for personal 
+use only and not for sale; and to hold in captivity not more 
+than one (1) game mammal purchased from a Missouri wildlife 
+breeder permit holder, except that Class II wildlife, hoofed 
+mammals, and skunks may not be held under this permit. 
+Game mammals may be held in captivity but may not be 
+propagated or sold. This permit shall be obtained prior to 
+receipt of wildlife. The permittee must furnish proof that game 
+mammals and birds were legally obtained. Wildlife must be 
+confined in humane and sanitary facilities that meet standards 
+specified in 3 CSR 10-9.220. Wildlife may be disposed of only in 
+accordance with instructions of an agent of the department 
+but may not be released, sold, or given away. The permittee is 
+subject to all provisions of section 578.023, RSMo.
+
+==== 3 CSR 10-20.805(33) and (38), game mammals and invertebrate ====
+(33) Game mammals: Black bears, cottontail rabbit, deer, elk, 
+fox squirrel, gray squirrel, groundhog (woodchuck), jackrabbit, 
+swamp rabbit, and furbearers as defined.
+
+(38) Invertebrate: Any animal lacking a backbone; this includes 
+all animal phyla other than Chordata. (Examples include 
+insects and other arthropods, flatworms, roundworms, seg -
+mented worms, and mollusks.)
+
+==== RSMo § 252.020(3) ====
+The word "wildlife" shall mean and include all wild birds, mammals, fish and other aquatic and
+amphibious forms, and all other wild animals, regardless of classification, whether resident,
+migratory or imported, protected or unprotected, dead or alive; and shall extend to and include any
+and every part of any individual species of wildlife.
