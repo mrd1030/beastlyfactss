@@ -98,39 +98,39 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 26,
+        "checked": 31,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 26,
+        "checked": 31,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 27,
+        "checked": 31,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 27,
+        "checked": 31,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 27,
+        "checked": 31,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 27,
+        "checked": 31,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 27,
+        "checked": 31,
         "of": 51
       },
       "green-anole": {
-        "checked": 27,
+        "checked": 31,
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "tarantula": {
@@ -166,7 +166,7 @@
         "of": 51
       },
       "african-grey-parrot": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "tiger-salamander": {
@@ -226,7 +226,7 @@
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "bengal-cat": {
@@ -1404,6 +1404,31 @@
       "title": "Oklahoma Department of Wildlife Conservation, Turtle & Bullfrog Regulations",
       "url": "https://www.wildlifedepartment.com/fishing/regs/turtle-bullfrog-regulations",
       "note": "The Department's summary of the noncommercial turtle rules, which is where it states its own reading of the box turtle clause: six of each species in possession, and terrestrial turtles may not be sold. The page says outright that it is an interpretive summary and not a legal document."
+    },
+    "vt-domestic-list": {
+      "title": "Vermont Fish and Wildlife Department, Domestic Species List, August 2010",
+      "url": "https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Domestic_Species_List.pdf",
+      "note": "The third of Vermont's three lists and the one earlier sittings could not read; it extracts cleanly with pypdf from this URL, fetched with a browser User-Agent. It is what makes the domestic cat, the dog, the ferret and the domestic rabbit lawful in a state where anything unlisted is Restricted. Its bird section is a closed list of about thirty psittacines, every one marked Captive Bred Only, and it decides the parrot cells: budgerigar, cockatiel, lovebirds, rosellas and Psittacula are on it, and Cacatua, Psittacus and Myiopsitta are not."
+    },
+    "wi-169-04": {
+      "title": "Wis. Stat. § 169.04, Possession of live wild animals, with § 169.01 definitions",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/169/04",
+      "note": "The section that answers almost every pet in Wisconsin, and it answers by exempting rather than by listing. 169.04(4)(b) exempts nonnative wild animals from any licence unless they are endangered, certain hunting-preserve game birds, nonnative migratory waterfowl, or harmful wild animals. 169.04(4)(a) then exempts seventeen native groups, arthropods first among them. 169.01(37) defines a wild animal as one \"of a wild nature that is normally found in the wild and that is not a domestic animal\", which is what keeps domestic pets out of the chapter altogether."
+    },
+    "nc-113-129": {
+      "title": "N.C. Gen. Stat. § 113-129(15), definition of wild animals",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_113/GS_113-129.html",
+      "note": "The definition that decides North Carolina and is easy to miss, because the answer is not in the captivity licence section but in what that section can reach. Wild animals are game animals, fur-bearers, feral swine and other wild mammals, and then reptiles, amphibians and invertebrates only where they are on the federal endangered or threatened list. Everything else in those three groups is outside the Wildlife Resources Commission's jurisdiction, which is why North Carolina has no state reptile law worth the name."
+    },
+    "sc-123-151": {
+      "title": "S.C. Code Regs. 123-151.3 and 123-151.4, native reptiles and amphibians (Act 177)",
+      "url": "https://www.scstatehouse.gov/coderegs/Chapter%20123.pdf",
+      "note": "The 2021 native reptile rules. 123-151.3(A) bars selling, purchasing, trading, exchanging, bartering, exporting, shipping, transferring or re-homing any native reptile or amphibian, with twelve exceptions that are mostly named snakes under a size limit. 123-151.4 adds possession caps for turtles, two for the eastern box turtle with shell notching and registration. 123-151.4(I) is the clause that matters most: the pet-trade exemption at S.C. Code § 50-16-60 does not privilege a native reptile."
+    },
+    "oh-1531-01": {
+      "title": "Ohio Rev. Code § 1531.01(X), definition of wild animals",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1531.01",
+      "note": "Ohio defines wild animals as \"mollusks, crustaceans, aquatic insects, fish, reptiles, amphibians, wild birds, wild quadrupeds, and all other wild mammals\". The word aquatic in front of insects is the whole answer for a terrestrial invertebrate: a land insect or an arachnid is not a wild animal in Ohio and the Division of Wildlife has nothing to say about it."
     }
   },
   "animals": {
@@ -3899,6 +3924,15 @@
           "cite": "6 NYCRR Part 575, regulated species",
           "quote": "Prohibited invasive species cannot be knowingly possessed with the intent to sell, import, purchase, transport or introduce. In addition, no person shall sell, import, purchase, transport, introduce or propagate prohibited invasive species. Regulated invasive species, on the other hand, are species which cannot be knowingly introduced into a free-living state, or introduced by a means that one should have known would lead to such an introduction, although such species shall be legal to possess, sell, buy, propagate and transport.",
           "note": "The monk parakeet is on New York's invasive species list, and the tier matters more than the listing. Regulated species \"shall be legal to possess, sell, buy, propagate and transport\" and may only not be knowingly introduced into a free-living state; it is the prohibited tier that bars possession. The duty the listing creates falls on the seller rather than the keeper: a pet shop selling a regulated species must label it as one. Goldfish and koi are on the same list, which is a useful measure of how much it restricts. New York has long-established monk parakeet colonies in Brooklyn and Queens, and the state's answer to them is a labelling rule and a release prohibition rather than a possession ban, which is a real contrast with the states that ban the bird outright.",
+          "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "banned",
+          "sourceId": "vt-domestic-list",
+          "cite": "Vermont Domestic Species List, August 2010; Regulation 881; 10 V.S.A. § 4709",
+          "quote": "Birds Psittaciformes Psittacidae Melopsittacus undulatus Budgerigar Captive Bred Only ... Nymphicus hollandicus Cockatiel Captive Bred Only ... Psittacula krameri manillensis Indian ringneck parakeet Captive Bred Only",
+          "note": "Vermont is an inverted-list state and the quaker parakeet falls through all three of its lists. 10 V.S.A. § 4709 bars bringing in, transporting or possessing any live wild bird or animal without authorisation, and the Unrestricted Wild Animal List closes the loop by saying a species found on none of the Restricted, Unrestricted or Domestic lists is considered Restricted. the quaker parakeet is on none of them: the Unrestricted list's birds are the rock dove, the European buzzard, a run of estrildid finches and the canary, with no psittacine at all, and the Domestic Species List's psittacine section is a closed list of about thirty species that names the budgerigar, the cockatiel, the lovebirds, the rosellas, the conures and Psittacula, and stops. What makes Restricted a ban rather than paperwork is Regulation 881: \"the Commissioner shall not issue a permit for the keeping or possession of any wild animal in captivity, except for bona fide scientific or educational purposes\". There is no pet category to apply under. Worth noting how differently Vermont arrives here from the states that ban this bird. California, Connecticut, Georgia and Kentucky name Myiopsitta because it is an agricultural pest that builds nests on power infrastructure. Vermont names nothing: the quaker is banned for the same reason a Nile monitor is, which is that nobody put it on a list.",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -13875,12 +13909,12 @@
           "verifiedOn": "2026-08-05"
         },
         "SC": {
-          "sourceId": "sc-50-16",
-          "cite": "§ 50-16-60",
-          "status": "legal",
-          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...15. reptiles 16. amphibians.",
-          "note": "South Carolina exempts reptiles as a class from the import permit, and its only other exotic pet statute reaches genus Panthera, non-native bears and great apes.",
-          "verifiedOn": "2026-08-05"
+          "status": "conditional",
+          "sourceId": "sc-123-151",
+          "cite": "S.C. Code Regs. 123-151.4(D); 123-151.3(A)",
+          "quote": "A person shall not possess more than 2 eastern box turtles (Terrapene carolina).",
+          "note": "This entry read legal on § 50-16-60, which clears reptiles as a class from the import permit. Regulation 123-151.4(I) says that section does not privilege a native reptile, and the eastern box turtle gets its own subsection. 123-151.4(D) caps possession at two, and anyone who held more on 28 September 2020 had ninety days to register them by species, wild-caught and captive-born alike, with no further turtles acquirable until the number drops below the cap. Registered turtles are assigned a unique identification number and must be shell notched with it, the keeper must file an affidavit confirming the notching, and permit holders file an annual report. On top of that 123-151.3(A) bars selling, buying or re-homing one at all. Two is also the aggregate cap for diamondback terrapins, against ten for native turtles generally.",
+          "verifiedOn": "2026-09-05"
         },
         "ND": {
           "sourceId": "nd-36-01",
@@ -16002,6 +16036,15 @@
           "quote": "The following list of birds shall be exempt from import and export requirements ... (1) Cockatoos, cockatiels, canaries, macaws and exotic finches. (2) Psittacine birds (parrots, parakeets and budgerigars).",
           "note": "Oklahoma names the pet birds twice over. 800:25-25-3(b)(1) exempts \"Cockatoos, cockatiels, canaries, macaws and exotic finches\" and (b)(2) then exempts \"Psittacine birds (parrots, parakeets and budgerigars)\" as a group, which takes Psittacus erithacus. The exemption from import and export requirements is qualified for birds brought in from outside the United States, which need documentation, and the rule then says that once such a bird reaches its destination in Oklahoma it \"shall be considered a domesticated species\" and is exempt from breeder licence requirements. The IUCN Endangered listing that complicates this species in Massachusetts and New Jersey has no purchase here, because Oklahoma's bar at 29 O.S. § 7-502(A)(2) reaches endangered or threatened species as designated under state and federal law rather than by the IUCN.",
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "banned",
+          "sourceId": "vt-domestic-list",
+          "cite": "Vermont Domestic Species List, August 2010; Regulation 881; 10 V.S.A. § 4709",
+          "quote": "Birds Psittaciformes Psittacidae Agapornis personatus Masked lovebird Captive Bred Only ... Melopsittacus undulatus Budgerigar Captive Bred Only ... Psittacula eupatria Alexandrine parakeet-blue form Captive Bred Only",
+          "note": "Vermont is an inverted-list state and the African grey falls through all three of its lists. 10 V.S.A. § 4709 bars bringing in, transporting or possessing any live wild bird or animal without authorisation, and the Unrestricted Wild Animal List closes the loop by saying a species found on none of the Restricted, Unrestricted or Domestic lists is considered Restricted. the African grey is on none of them: the Unrestricted list's birds are the rock dove, the European buzzard, a run of estrildid finches and the canary, with no psittacine at all, and the Domestic Species List's psittacine section is a closed list of about thirty species that names the budgerigar, the cockatiel, the lovebirds, the rosellas, the conures and Psittacula, and stops. What makes Restricted a ban rather than paperwork is Regulation 881: \"the Commissioner shall not issue a permit for the keeping or possession of any wild animal in captivity, except for bona fide scientific or educational purposes\". There is no pet category to apply under. The Domestic list was published in August 2010, six years before the IUCN moved Psittacus erithacus to Endangered, so its absence is not a conservation judgment. It is one of the most commonly kept parrots in the country and Vermont has never listed it.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -17870,6 +17913,14 @@
           "note": "The exemption list at 800:25-25-3(a) runs to thirty-seven entries and no squirrel is among them. Mice and rats are exempt \"except those species normally found in the wild\", which is the drafting Oklahoma uses when it wants to free the pet form of a wild genus, and the southern flying squirrel is squarely a species normally found in the wild here. So a flying squirrel is not exempt, and what it is not exempt from is import and export permits and the commercial and noncommercial wildlife breeder licences. 29 O.S. § 4-121 requires the noncommercial licence of anyone who breeds or raises wildlife for noncommercial purposes, and § 7-502(E) says the applicable licence must be obtained \"if any wildlife is being propagated\". Recorded as a permit on that basis. The statutory possession bar is separately survivable, since § 7-502(B)(4) exempts a legally obtained animal from a source other than the wild kept as a pet.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
+        },
+        "SC": {
+          "status": "conditional",
+          "sourceId": "sc-123-151",
+          "cite": "S.C. Code Regs. 123-150.3; § 50-16-60",
+          "quote": "That a scientific collecting permit under the terms of § 50-11-2190, 1976 Code of Laws, shall be required for the collecting of all nongame species or subspecies of the Classes Pices (Fish), Amphibia (Amphibians), Reptilia (Reptiles), Aves (Birds) and Mammalia (Mammals).",
+          "note": "The southern flying squirrel is a South Carolina native and a nongame mammal, and the answer turns on where an individual animal came from. Regulation 123-150.3 requires a scientific collecting permit for collecting any nongame species of the class Mammalia, so taking one from the wild is out for a keeper. Possession of a lawfully acquired captive-bred animal is a different question and South Carolina does not answer it directly: § 50-16-20(A) requires a permit for furbearers, cervids, pigs, bovids, coyote, bear and turkey, and a flying squirrel is none of those, while the pet-trade exemption at § 50-16-60 names rats, mice, rabbits, hamsters and guinea pigs and no squirrel. Recorded conditional on origin rather than as a permit, because there is no possession permit in the chapter to apply for.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -19463,11 +19514,13 @@
           "verifiedOn": "2026-08-27"
         },
         "VT": {
-          "status": "unclear",
-          "sourceId": "vt-10-app-18",
-          "cite": "10 V.S.A. App. § 18",
-          "note": "Vermont requires an Importation & Possession Permit for any wild animal not on its Unrestricted Wild Animals List. This research could not confirm whether cockatoos appear on that list.",
-          "verifiedOn": "2026-08-27"
+          "status": "banned",
+          "sourceId": "vt-domestic-list",
+          "cite": "Vermont Domestic Species List, August 2010; Regulation 881; 10 V.S.A. § 4709",
+          "quote": "Birds Psittaciformes Psittacidae Nymphicus hollandicus Cockatiel Captive Bred Only",
+          "note": "Vermont is an inverted-list state and the cockatoo falls through all three of its lists. 10 V.S.A. § 4709 bars bringing in, transporting or possessing any live wild bird or animal without authorisation, and the Unrestricted Wild Animal List closes the loop by saying a species found on none of the Restricted, Unrestricted or Domestic lists is considered Restricted. the cockatoo is on none of them: the Unrestricted list's birds are the rock dove, the European buzzard, a run of estrildid finches and the canary, with no psittacine at all, and the Domestic Species List's psittacine section is a closed list of about thirty species that names the budgerigar, the cockatiel, the lovebirds, the rosellas, the conures and Psittacula, and stops. What makes Restricted a ban rather than paperwork is Regulation 881: \"the Commissioner shall not issue a permit for the keeping or possession of any wild animal in captivity, except for bona fide scientific or educational purposes\". There is no pet category to apply under. This entry read unclear because the Domestic Species List could not be read; it can be now. The list does carry one cacatuid, the cockatiel, Nymphicus hollandicus, which is in the same family as the cockatoos and is the bird people most often assume settles the question. No Cacatua appears anywhere. So Vermont allows the cockatiel and not the cockatoo, off a list that names each species individually.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         },
         "WA": {
           "status": "legal",
@@ -20182,6 +20235,38 @@
           "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
           "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and the bearded dragon is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches the bearded dragon.",
           "verifiedOn": "2026-09-05"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169-04",
+          "cite": "Wis. Stat. § 169.04(4)(b)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following: 1. Pheasants ... 2. Nonnative wild birds of the family anatidae that are migratory birds. 3. Nonnative wild animals that are harmful wild animals.",
+          "note": "Wisconsin runs its captive wildlife chapter on an exemption rather than a list, and the bearded dragon is exempt by class. 169.04(1)(b) bars possessing any live wild animal without a licence, and then 169.04(4)(b) exempts every nonnative wild animal that is not endangered or threatened, with three carve-outs: hunting-preserve game birds, nonnative migratory waterfowl, and harmful wild animals. Harmful wild animals under 169.11(1)(a) are cougars, bears, wild swine and feral swine plus anything the department adds by rule, and no lizard has been added. The other rule to know about is NR 40, the invasive species chapter, which runs on a separate authority and lists no pet reptile.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-113-129",
+          "cite": "N.C. Gen. Stat. § 113-129(15)",
+          "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The bearded dragon is not federally listed, so it is not a wild animal in North Carolina at all and the captivity licence at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "S.C. Code § 50-16-60(15); § 50-16-20(A)",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: 1. tropical fishes 2. rats and mice 3. rabbits ... 15. reptiles 16. amphibians. The provisions of this section do not privilege the import or possession of a species otherwise protected or regulated by other provisions of this title.",
+          "note": "South Carolina exempts the bearded dragon from its one import permit and then has nothing else to say. § 50-16-20(A) requires a permit only for furbearers, cervids, non-domestic pigs and bovids, coyote, bear, turkey, and marine or freshwater species not already found here. § 50-16-60 separately exempts a list of pet-trade animals from the permit requirement, and reptiles and amphibians are on it as whole classes. The one Restricted Nonnative Wildlife designation the state has made, at Regulation 123-152, is the Argentine black and white tegu.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "Ohio Rev. Code § 935.01(C), (L)",
+          "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
+          "note": "Ohio's two restrictive schemes both miss the bearded dragon. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20415,6 +20500,38 @@
           "cite": "OAC 800:25-25-3(c)",
           "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
           "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and the leopard gecko is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches the leopard gecko.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169-04",
+          "cite": "Wis. Stat. § 169.04(4)(b)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following: 1. Pheasants ... 2. Nonnative wild birds of the family anatidae that are migratory birds. 3. Nonnative wild animals that are harmful wild animals.",
+          "note": "Wisconsin runs its captive wildlife chapter on an exemption rather than a list, and the leopard gecko is exempt by class. 169.04(1)(b) bars possessing any live wild animal without a licence, and then 169.04(4)(b) exempts every nonnative wild animal that is not endangered or threatened, with three carve-outs: hunting-preserve game birds, nonnative migratory waterfowl, and harmful wild animals. Harmful wild animals under 169.11(1)(a) are cougars, bears, wild swine and feral swine plus anything the department adds by rule, and no lizard has been added. The other rule to know about is NR 40, the invasive species chapter, which runs on a separate authority and lists no pet reptile.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-113-129",
+          "cite": "N.C. Gen. Stat. § 113-129(15)",
+          "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The leopard gecko is not federally listed, so it is not a wild animal in North Carolina at all and the captivity licence at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "S.C. Code § 50-16-60(15); § 50-16-20(A)",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: 1. tropical fishes 2. rats and mice 3. rabbits ... 15. reptiles 16. amphibians. The provisions of this section do not privilege the import or possession of a species otherwise protected or regulated by other provisions of this title.",
+          "note": "South Carolina exempts the leopard gecko from its one import permit and then has nothing else to say. § 50-16-20(A) requires a permit only for furbearers, cervids, non-domestic pigs and bovids, coyote, bear, turkey, and marine or freshwater species not already found here. § 50-16-60 separately exempts a list of pet-trade animals from the permit requirement, and reptiles and amphibians are on it as whole classes. The one Restricted Nonnative Wildlife designation the state has made, at Regulation 123-152, is the Argentine black and white tegu.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "Ohio Rev. Code § 935.01(C), (L)",
+          "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
+          "note": "Ohio's two restrictive schemes both miss the leopard gecko. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -20650,6 +20767,38 @@
           "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
           "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and the crested gecko is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches the crested gecko.",
           "verifiedOn": "2026-09-05"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169-04",
+          "cite": "Wis. Stat. § 169.04(4)(b)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following: 1. Pheasants ... 2. Nonnative wild birds of the family anatidae that are migratory birds. 3. Nonnative wild animals that are harmful wild animals.",
+          "note": "Wisconsin runs its captive wildlife chapter on an exemption rather than a list, and the crested gecko is exempt by class. 169.04(1)(b) bars possessing any live wild animal without a licence, and then 169.04(4)(b) exempts every nonnative wild animal that is not endangered or threatened, with three carve-outs: hunting-preserve game birds, nonnative migratory waterfowl, and harmful wild animals. Harmful wild animals under 169.11(1)(a) are cougars, bears, wild swine and feral swine plus anything the department adds by rule, and no lizard has been added. The other rule to know about is NR 40, the invasive species chapter, which runs on a separate authority and lists no pet reptile.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-113-129",
+          "cite": "N.C. Gen. Stat. § 113-129(15)",
+          "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The crested gecko is not federally listed, so it is not a wild animal in North Carolina at all and the captivity licence at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "S.C. Code § 50-16-60(15); § 50-16-20(A)",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: 1. tropical fishes 2. rats and mice 3. rabbits ... 15. reptiles 16. amphibians. The provisions of this section do not privilege the import or possession of a species otherwise protected or regulated by other provisions of this title.",
+          "note": "South Carolina exempts the crested gecko from its one import permit and then has nothing else to say. § 50-16-20(A) requires a permit only for furbearers, cervids, non-domestic pigs and bovids, coyote, bear, turkey, and marine or freshwater species not already found here. § 50-16-60 separately exempts a list of pet-trade animals from the permit requirement, and reptiles and amphibians are on it as whole classes. The one Restricted Nonnative Wildlife designation the state has made, at Regulation 123-152, is the Argentine black and white tegu.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "Ohio Rev. Code § 935.01(C), (L)",
+          "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
+          "note": "Ohio's two restrictive schemes both miss the crested gecko. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20883,6 +21032,38 @@
           "cite": "OAC 800:25-25-3(c)",
           "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
           "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and the blue-tongue skink is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches the blue-tongue skink.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169-04",
+          "cite": "Wis. Stat. § 169.04(4)(b)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following: 1. Pheasants ... 2. Nonnative wild birds of the family anatidae that are migratory birds. 3. Nonnative wild animals that are harmful wild animals.",
+          "note": "Wisconsin runs its captive wildlife chapter on an exemption rather than a list, and the blue-tongue skink is exempt by class. 169.04(1)(b) bars possessing any live wild animal without a licence, and then 169.04(4)(b) exempts every nonnative wild animal that is not endangered or threatened, with three carve-outs: hunting-preserve game birds, nonnative migratory waterfowl, and harmful wild animals. Harmful wild animals under 169.11(1)(a) are cougars, bears, wild swine and feral swine plus anything the department adds by rule, and no lizard has been added. The other rule to know about is NR 40, the invasive species chapter, which runs on a separate authority and lists no pet reptile.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-113-129",
+          "cite": "N.C. Gen. Stat. § 113-129(15)",
+          "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The blue-tongue skink is not federally listed, so it is not a wild animal in North Carolina at all and the captivity licence at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "S.C. Code § 50-16-60(15); § 50-16-20(A)",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: 1. tropical fishes 2. rats and mice 3. rabbits ... 15. reptiles 16. amphibians. The provisions of this section do not privilege the import or possession of a species otherwise protected or regulated by other provisions of this title.",
+          "note": "South Carolina exempts the blue-tongue skink from its one import permit and then has nothing else to say. § 50-16-20(A) requires a permit only for furbearers, cervids, non-domestic pigs and bovids, coyote, bear, turkey, and marine or freshwater species not already found here. § 50-16-60 separately exempts a list of pet-trade animals from the permit requirement, and reptiles and amphibians are on it as whole classes. The one Restricted Nonnative Wildlife designation the state has made, at Regulation 123-152, is the Argentine black and white tegu.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "Ohio Rev. Code § 935.01(C), (L)",
+          "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
+          "note": "Ohio's two restrictive schemes both miss the blue-tongue skink. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -21118,6 +21299,38 @@
           "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
           "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and Jackson's chameleon is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches Jackson's chameleon.",
           "verifiedOn": "2026-09-05"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169-04",
+          "cite": "Wis. Stat. § 169.04(4)(b)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following: 1. Pheasants ... 2. Nonnative wild birds of the family anatidae that are migratory birds. 3. Nonnative wild animals that are harmful wild animals.",
+          "note": "Wisconsin runs its captive wildlife chapter on an exemption rather than a list, and Jackson's chameleon is exempt by class. 169.04(1)(b) bars possessing any live wild animal without a licence, and then 169.04(4)(b) exempts every nonnative wild animal that is not endangered or threatened, with three carve-outs: hunting-preserve game birds, nonnative migratory waterfowl, and harmful wild animals. Harmful wild animals under 169.11(1)(a) are cougars, bears, wild swine and feral swine plus anything the department adds by rule, and no lizard has been added. The other rule to know about is NR 40, the invasive species chapter, which runs on a separate authority and lists no pet reptile.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-113-129",
+          "cite": "N.C. Gen. Stat. § 113-129(15)",
+          "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". Jackson's chameleon is not federally listed, so it is not a wild animal in North Carolina at all and the captivity licence at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "S.C. Code § 50-16-60(15); § 50-16-20(A)",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: 1. tropical fishes 2. rats and mice 3. rabbits ... 15. reptiles 16. amphibians. The provisions of this section do not privilege the import or possession of a species otherwise protected or regulated by other provisions of this title.",
+          "note": "South Carolina exempts Jackson's chameleon from its one import permit and then has nothing else to say. § 50-16-20(A) requires a permit only for furbearers, cervids, non-domestic pigs and bovids, coyote, bear, turkey, and marine or freshwater species not already found here. § 50-16-60 separately exempts a list of pet-trade animals from the permit requirement, and reptiles and amphibians are on it as whole classes. The one Restricted Nonnative Wildlife designation the state has made, at Regulation 123-152, is the Argentine black and white tegu.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "Ohio Rev. Code § 935.01(C), (L)",
+          "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
+          "note": "Ohio's two restrictive schemes both miss Jackson's chameleon. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21351,6 +21564,38 @@
           "quote": "No closed season. All reptiles except those listed in (3) and (5) of this section shall have a year-round season. (2) Bag limit. The bag limit is 6 per day or in possession for each species allowed in section (1) of this section.",
           "note": "The green anole is an Oklahoma animal, which moves it out of the exemption at 800:25-25-3(c), since that clause is written for species \"not indigenous to Oklahoma\". What applies instead is the reptile and amphibian part at 800:25-7. Two provisions matter to a keeper. 7-7(2)(A) requires a resident or nonresident hunting licence of anyone \"taking or attempting to take reptiles and amphibians or possessing reptiles or amphibians\" that are land dwelling, which is a possession hook and not merely a collecting one. And 7-8 gives every reptile a year-round season except a closed list of twelve, with a limit of \"6 per day or in possession for each species\". Recorded as conditional on those two rather than as a permit, because there is no application and no discretion: a hunting licence is sold over the counter. 29 O.S. § 7-502(B)(4) separately exempts anyone possessing legally obtained wildlife \"from a source other than the wild, as pets\" from the statutory possession bar, which is why a captive-bred animal is not caught by the closed-season rule. Anolis carolinensis reaches into southeastern Oklahoma, which is what takes it out of the non-indigenous exemption. Oklahoma's closed list at 7-8(5) does close the season on four lizards, the Texas horned lizard, the side-blotched lizard, the checkered whiptail and the lesser earless lizard among them, and the anole is not one of them, so it keeps the year-round season and the six-animal cap.",
           "verifiedOn": "2026-09-05"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169-04",
+          "cite": "Wis. Stat. § 169.04(4)(b)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following: 1. Pheasants ... 2. Nonnative wild birds of the family anatidae that are migratory birds. 3. Nonnative wild animals that are harmful wild animals.",
+          "note": "Wisconsin runs its captive wildlife chapter on an exemption rather than a list, and the green anole is exempt by class. 169.04(1)(b) bars possessing any live wild animal without a licence, and then 169.04(4)(b) exempts every nonnative wild animal that is not endangered or threatened, with three carve-outs: hunting-preserve game birds, nonnative migratory waterfowl, and harmful wild animals. Harmful wild animals under 169.11(1)(a) are cougars, bears, wild swine and feral swine plus anything the department adds by rule, and no lizard has been added. Nativity is the thing to check here, because Wisconsin treats native and nonnative animals under different subsections and its native herps carry the purchase restriction at NR 16.13 that catches the milk snake and the garter snake. Anolis carolinensis is a southeastern animal whose range stops far south of Wisconsin, so it is nonnative and 169.04(4)(b) applies. The other rule to know about is NR 40, the invasive species chapter, which runs on a separate authority and lists no pet reptile.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-113-129",
+          "cite": "N.C. Gen. Stat. § 113-129(15)",
+          "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The green anole is not federally listed, so it is not a wild animal in North Carolina at all and the captivity licence at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from. This is the entry that shows how far the definition reaches. The green anole is a North Carolina native, and in most southeastern states that alone starts a problem: Georgia bans keeping a native, Alabama and Oklahoma protect natives species by species, South Carolina bars selling one. North Carolina simply does not treat a non-listed reptile as wildlife, so its own native lizard is unregulated.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SC": {
+          "status": "conditional",
+          "sourceId": "sc-123-151",
+          "cite": "S.C. Code Regs. 123-151.3(A); 123-151.4(I)",
+          "quote": "No native reptile or amphibian, including parts, products, eggs, and derivatives may be sold, purchased, traded, exchanged, bartered, exported or shipped, transferred and/or re-homed, except:",
+          "note": "The green anole is a South Carolina native, which is what takes it out of the pet-trade exemption. § 50-16-60 clears reptiles as a class from the import permit, and Regulation 123-151.4(I) then says that section \"does not privilege\" a native reptile: the 2021 rules control instead. 123-151.3(A) bars selling, purchasing, trading, exchanging, bartering, exporting, shipping, transferring and re-homing any native reptile, and its twelve exceptions do not reach a lizard. They are: transfers to the department, transfers authorised by other law, accredited zoos and research institutions, laboratory venom, non-native morphs of native snake species, three named snakes under 10 inches, three more under 20, the pine snake under 24, two named turtles from permitted sources, alligators, bullfrogs, and rehabilitators. So a green anole may be kept and may not change hands, and giving one away is expressly included in the bar.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "Ohio Rev. Code § 935.01(C); § 1531.01(RR)",
+          "quote": "\"Restricted snake\" means any of the following: ... (c) Reticulated pythons; (d) Indian pythons; (e) Burmese pythons; (f) North African rock pythons; (g) South African rock pythons; (h) Amethystine pythons.",
+          "note": "Ohio's two restrictive schemes both miss the green anole. § 935.01(C) lists the dangerous wild animals, which are big cats, bears, primates, hyenas, elephants and the like, and § 935.01(L) lists the restricted snakes, which are venomous species and six named giant pythons. Neither reaches a lizard. The other scheme is the propagating licence at § 1533.71, which covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals and is about propagating rather than keeping. Nativity is worth checking because Ohio does treat it as a category, defining native wildlife at § 1531.01(RR) as \"any species of the animal kingdom indigenous to this state\". Anolis carolinensis is a southeastern animal and is not indigenous to Ohio, so the propagating licence, which is built around game and native species, is not the route either.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21578,6 +21823,46 @@
           "quote": "(24) Rabbits (except cottontails, jackrabbits and swamp rabbits, and other such species normally found in the wild).",
           "note": "Oklahoma writes the rabbit exemption the way a careful drafter should, naming the category and then the exceptions: rabbits are exempt \"except cottontails, jackrabbits and swamp rabbits, and other such species normally found in the wild\". The domestic rabbit is Oryctolagus cuniculus and is not a species normally found in the wild here, so it is exempt from import and export permits and from both wildlife breeder licences. It is worth reading against Alabama, which bans \"San Juan Rabbits, Jack Rabbits or any other species of wild rabbit or hare\" and gets the same result by naming a feral population of the pet's own species, and against Illinois and Minnesota, which name Oryctolagus itself and reach much harder answers.",
           "verifiedOn": "2026-09-05"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-domestic-list",
+          "cite": "Vermont Domestic Species List, August 2010",
+          "quote": "Mammals Lagomorpha Leporidae Oryctolagus cuniculus Domestic rabbit  Including breeds, varieties, and strains derived from the European rabbit but not including the Eurpoean rabbit ferae naturae and not including the so-called \"San Juan\" rabbit.",
+          "note": "Vermont is the state that answers the rabbit question most carefully, and it is worth reading because three other states on this map get tangled in exactly what Vermont pins down. The Domestic Species List names Oryctolagus cuniculus and then draws the line inside the species: breeds, varieties and strains derived from the European rabbit are domestic, the European rabbit ferae naturae is not, and the San Juan rabbit is expressly not. Being on the Domestic list means the animal is outside the wild animal permit scheme entirely. Compare Alabama, which bans \"San Juan Rabbits, Jack Rabbits or any other species of wild rabbit or hare\" and leaves a reader to work out that the pet is the same species as the San Juan; and Illinois and Minnesota, which name Oryctolagus with no strain qualifier at all and produce much harder answers.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169-04",
+          "cite": "Wis. Stat. § 169.01(37), (7)",
+          "quote": "\"Wild animal\" means any animal of a wild nature that is normally found in the wild and that is not a domestic animal.",
+          "note": "The domestic rabbit never enters Wisconsin's captive wildlife chapter, because 169.01(37) defines a wild animal as one \"of a wild nature that is normally found in the wild and that is not a domestic animal\", and Oryctolagus cuniculus in its domestic form is neither of a wild nature nor normally found in the wild here. 169.01(7) then defines domestic animal to include anything the Department of Agriculture, Trade and Consumer Protection lists as one. That is a cleaner route than most states manage: Illinois and Minnesota both name Oryctolagus in an invasive or injurious rule with no domestic carve-out, and this map answers them much less comfortably.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-113-129",
+          "cite": "N.C. Gen. Stat. § 113-129(15)",
+          "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
+          "note": "The mammal limb of § 113-129(15) reaches \"game animals; fur-bearing animals; feral swine; and all other wild mammals\", and a domestic rabbit is none of those. The definition adds that wildlife includes \"species normally wild, or indistinguishable from wild species, which are raised or kept in captivity\", which is the clause that would catch a captive cottontail, and Oryctolagus cuniculus in its domestic breeds is neither normally wild nor indistinguishable from one. The captivity licence at § 113-272.5 is therefore not engaged, which matters because that section says the Executive Director must find the animal was not acquired \"merely as a pet\" before issuing one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "S.C. Code § 50-16-60(3)",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: 1. tropical fishes 2. rats and mice 3. rabbits ... 15. reptiles 16. amphibians. The provisions of this section do not privilege the import or possession of a species otherwise protected or regulated by other provisions of this title.",
+          "note": "Rabbits are the third entry on the pet-trade list at § 50-16-60, which exempts them from the import permit. The section's closing line reserves anything \"otherwise protected or regulated by other provisions of this title\", and what that reserves for reptiles is the 2021 native rules; for a domestic rabbit there is no corresponding provision, since the native lagomorph South Carolina regulates is the cottontail as a game animal.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-1531-01",
+          "cite": "Ohio Rev. Code § 1531.01(X); § 935.01(C)",
+          "quote": "\"Wild animals\" includes mollusks, crustaceans, aquatic insects, fish, reptiles, amphibians, wild birds, wild quadrupeds, and all other wild mammals, but does not include domestic deer.",
+          "note": "The mammal limb of § 1531.01(X) reaches \"wild quadrupeds, and all other wild mammals\", and a domestic rabbit is not a wild mammal. Ohio's wild rabbit, the eastern cottontail, is a game animal with a season and is what the chapter is written about. Nothing in the dangerous wild animal list at § 935.01(C) reaches a lagomorph either, and the propagating licence at § 1533.71 covers game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals, all of which are categories a pet rabbit sits outside.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21803,6 +22088,46 @@
           "cite": "29 O.S. § 7-502(A), (B)(4); OAC 800:25-25-3(a)(19)",
           "quote": "Except as otherwise provided by law, no person may possess: 1. Any wildlife or parts thereof during the closed season for that particular wildlife species; 2. Any endangered or threatened species or parts thereof at any time; or 3. Any native bear or native cat that will grow to reach the weight of fifty (50) pounds or more. B. Persons exempt from provisions of paragraphs 1 and 2 of subsection A of this section are: ... 4. Persons possessing legally obtained wildlife, from a source other than the wild, as pets or for the purpose of training hunting dogs, except as provided for by law or under rules promulgated by the Wildlife Conservation Commission;",
           "note": "Oklahoma reaches invertebrates and then lets the Madagascar hissing cockroach through. 800:25-25-3(a)(19) exempts \"native invertebrates\" from the licence requirements, carving out only crayfish and freshwater mussels, which shows the Department treats invertebrates as wildlife it could regulate. the Madagascar hissing cockroach is not native, so that clause is not the answer; the answer is that nothing else applies. The statutory possession bar at 29 O.S. § 7-502(A) reaches wildlife in a closed season, endangered and threatened species, and native bears and big cats, and a captive-bred pet is separately exempted by § 7-502(B)(4). The reptile and amphibian licence at 800:25-7-7(2) is written about reptiles and amphibians. As with the millipede the live question is federal, since Gromphadorhina portentosa is a USDA-regulated organism and interstate movement needs a PPQ 526 permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "Cal. Code Regs. tit. 14, § 671(a), (c); Fish & Game Code § 2116",
+          "quote": "It shall be unlawful to import, transport, or possess live animals restricted in subsection (c) below except under permit issued by the department.",
+          "note": "California has the longest restricted species list of any state on this map and it never reaches an insect. Both the statute and the rule are built on a closed set of taxonomic classes: Fish and Game Code § 2116 defines a wild animal by class, running through Aves, Mammalia, Amphibia, Osteichthyes, Monorhina, Reptilia, Crustacea and Gastropoda, and § 671(c)'s restricted list is organised the same way, in eleven groups from Class Aves through Class Bivalvia and transgenic aquatic animals. Insects and arachnids appear in neither. So the answer here has the same shape as Utah's: the regulated group is defined by a list of classes that leaves the animal out, rather than by an omission from a species list. One route is named but unused. Fish and Game Code § 2118(k) says classes, families, genera and species may be added to the restricted lists by commission regulation \"in cooperation with the Department of Food and Agriculture\", which is where a California restriction on a pet arthropod would have to come from, and no such addition has been made for this species.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169-04",
+          "cite": "Wis. Stat. § 169.04(4)(a)1., (4)(b)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live native wild animals if the wild animals are not endangered or threatened species and are any of the following: 1. Arthropods.",
+          "note": "Wisconsin answers the invertebrates from both directions and gets to the same place. Native arthropods are the first entry on the 169.04(4)(a) exemption list, ahead of chipmunks and pocket gophers, and nonnative wild animals are exempt as a class under 169.04(4)(b) unless endangered or designated harmful. A Madagascar hissing cockroach is nonnative and is neither. The rule that could reach it is NR 40, the invasive species chapter, which is a separate authority from the captive wildlife chapter and lists no pet arthropod.",
+          "verifiedOn": "2026-09-05"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-113-129",
+          "cite": "N.C. Gen. Stat. § 113-129(15)",
+          "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The Madagascar hissing cockroach is not federally listed, so it is not a wild animal in North Carolina at all and the captivity licence at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from. The invertebrate limb of the definition carries its own exception, for \"invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971\", which is a reminder that the pest agencies are the ones with authority over arthropods here. The federal PPQ 526 permit still governs moving this species across a state line.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "S.C. Code § 50-16-10; § 50-16-20(A)",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: 1. tropical fishes 2. rats and mice 3. rabbits ... 15. reptiles 16. amphibians. The provisions of this section do not privilege the import or possession of a species otherwise protected or regulated by other provisions of this title.",
+          "note": "South Carolina's definition of wildlife at § 50-16-10 is one of the broadest on this map, reaching \"a mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate\", so an arthropod is unambiguously wildlife here. It does not follow that it is restricted. The only permit requirement, at § 50-16-20(A), lists furbearers and other mammals in its first paragraph and then marine and freshwater invertebrates in its second and third, and a terrestrial arthropod is in none of them. The 2021 native reptile rules reach reptiles and amphibians only. The federal PPQ 526 permit governs moving this species across a state line.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-1531-01",
+          "cite": "Ohio Rev. Code § 1531.01(X)",
+          "quote": "\"Wild animals\" includes mollusks, crustaceans, aquatic insects, fish, reptiles, amphibians, wild birds, wild quadrupeds, and all other wild mammals, but does not include domestic deer.",
+          "note": "Ohio settles the invertebrates with one adjective. § 1531.01(X) defines wild animals as \"mollusks, crustaceans, aquatic insects, fish, reptiles, amphibians, wild birds, wild quadrupeds, and all other wild mammals\", and the word aquatic in front of insects does the work: a terrestrial insect is not a wild animal, so the Division of Wildlife has no authority over one. An arachnid or a myriapod is not in the list at all. That is the same shape as Utah, which limits wildlife to crustaceans, molluscs and vertebrates, and California, whose restricted list is organised by a closed set of classes with no insect among them. The federal PPQ 526 permit still governs interstate movement of this species.",
           "verifiedOn": "2026-09-05"
         }
       }

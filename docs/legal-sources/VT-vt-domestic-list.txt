@@ -1,0 +1,134 @@
+SOURCE: Vermont Fish and Wildlife Department, Domestic Species List, August 2010
+URL: https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Domestic_Species_List.pdf
+FETCHED: 2026-09-05 (The third of Vermont's three lists. Earlier sittings recorded it as unextractable; it extracts cleanly with pypdf from this URL fetched with a browser User-Agent. Underscores in the filename, unlike the Restricted list which needs a percent-encoded space.)
+
+Vermont Fish and Wildlife Department
+Wild Bird and Animal Importation and Possession
+DOMESTIC SPECIES LIST
+August 2010
+page 1 of 3
+Animal Group Orde r Family Genus Species Common Name(s) Comments
+Mammals* Artiodactyla Bovidae Bison bison American bison
+Mammals Artiodactyla Bovidae Bos indicus Zebu
+Mammals Artiodactyla Bovidae Bos grunniens Domestic yak
+Mammals Artiodactyla Bovidae Bos taurus Domestic cow
+Mammals Artiodactyla Bovidae Bubalis bubalis Domestic water buffalo
+Mammals Artiodactyla Bovidae Capra hircus Domestic goat
+Including breeds and varrieties derived from the wild 
+goat or bezoar (Capra aegagrus ).
+Mammals Artiodactyla Bovidae Ovis aries Domestic sheep
+Mammals Artiodactyla Camelidae Camelus dromedarius Dromedary
+Mammals Artiodactyla Camelidae Lama glama Llama
+Mammals Artiodactyla Camelidae Lama pacos Alpaca
+Mammals Artiodactyla Cervidae Cervus elaphus European Red Deer
+Mammals Artiodactyla Cervidae Dama dama Fallow deer
+Mammals Artiodactyla Suidae Sus domesticus Domestic swine
+Including breeds and varieties derived from the wild 
+boar (Sus scrofa ) but not including free-living or feral 
+wild boars or wild swine.
+Mammals Carnivora Canidae Canis familiaris Domestic dog
+Mammals Carnivora Felidae Felis catus Domestic cat
+Mammals Carnivora Mustelidae Mustela putorious furo European ferret
+Mammals Lagomorpha Leporidae Oryctolagus cuniculus Domestic rabbit
+Including breeds, varieties, and strains derived from 
+the European rabbit but not including the Eurpoean 
+rabbit ferae naturae  and not including the so-called 
+"San Juan" rabbit.
+Mammals Perissodactyla Equidae Equus asinus Domestic ass
+Mammals Perissodactyla Equidae Equus caballus Domestic horse
+Birds* Anseriformes Anatidae Alopochen aegyptiaca Domestic goose Derived from the Egyptian goose
+Birds Anseriformes Anatidae Anas platyrhynchos Domestic duck
+Derived from the Mallard (Anas platyrhinos ), including, 
+but not restricted to, Aylesbury duck, Blue Swedish 
+duck, Buff duck, Cayuga duck, Crested White duck, 
+English call duck, Indian runner duck, Pekin duck, and 
+Roen duck.
+Birds Anseriformes Anatidae Anas platyrhynchos Mallard
+Reared in captivity and properly marked in accordance 
+with the provisions of the Code of Federal Regulations, 
+50 CFR 23.13.
+Vermont Fish and Wildlife Department
+Wild Bird and Animal Importation and Possession
+DOMESTIC SPECIES LIST
+August 2010
+page 2 of 3
+Animal Group Orde r Family Genus Species Common Name(s) Comments
+Birds Anseriformes Anatidae Anser anser Domestic goose
+Derived from the greylag goose (Anser anser ), 
+including, but not restricted to, Emden goose, Gray 
+African goose, Pilgrim goose, Sebastopol goose, and 
+Toulouse goose.
+Birds Anseriformes Anatidae Anser cygnoides Domestic goose
+Derived from the swan goose (Anser cygnoides ), 
+including, but not restricted to, the African goose and 
+the Chinese goose.
+Birds Anseriformes Anatidae Cairina moschata Domestic muscovy Derived from the Muscovy duck (Cairina moschata ).
+Birds Galliformes Numididae Numida meleagris Domestic guineafowl
+Derived from the helmeted guineafowl (Numida 
+meleagris ).
+Birds Galliformes Phasianidae Coturnix coturnix Common Coturnix (Japanese Quail)     Japanese quail
+Birds Galliformes Phasianidae Gallus "domesticus" Domestic chicken Derived from the red junglefowl (Gallus gallus ).
+Birds Galliformes Phasianidae Meleagris gallopavo Domestic turkey
+Derived from the wild turkey (Meleagris gallopavo ), 
+including breeds and varieties recognized by the 
+American Poultry Association and the U.S. Department 
+of Agriculture, but not including the wild turkey ferae 
+naturae and captive or captive-bred individuals thereof 
+and not including the pen-raised or game-farm non-
+standard variety "Wild Turkey".
+Birds Galliformes Phasianidae Pavo cristatus Peafowl (blue peafowl) Captive Bred Only
+Birds Psittaciformes Psittacidae Agapornis personatus Masked lovebird Captive Bred Only
+Birds Psittaciformes Psittacidae Agapornis roseicollis Peach-faced lovebird Captive Bred Only
+Birds Psittaciformes Psittacidae Aratinga jandaya Jenday conure Captive Bred Only
+Birds Psittaciformes Psittacidae Barnardius zonarius barnardi Mallee ringneck parrot Captive Bred Only
+Birds Psittaciformes Psittacidae Bolborhynchus lineola
+Lineolated parakeet-white, blue, 
+or yellow form
+Captive Bred Only
+Birds Psittaciformes Psittacidae Cyanoramphus auriceps Yellow-fronted parakeet Captive Bred Only
+Birds Psittaciformes Psittacidae Cyanoramphus novaezelandiae Red-fronted parakeet Captive Bred Only
+Birds Psittaciformes Psittacidae Forpus coelestis
+Pacific parrotlet-lutino, yellow, 
+blue, and cinnamon form
+Captive Bred Only
+Birds Psittaciformes Psittacidae Melopsittacus undulatus Budgerigar Captive Bred Only
+Birds Psittaciformes Psittacidae
+Neophema 
+/Neopsephotus bourkii Bourke's parrot
+Captive Bred Only
+Birds Psittaciformes Psittacidae Neophema chrysostoma Blue-winged parrot Captive Bred Only
+Vermont Fish and Wildlife Department
+Wild Bird and Animal Importation and Possession
+DOMESTIC SPECIES LIST
+August 2010
+page 3 of 3
+Animal Group Orde r Family Genus Species Common Name(s) Comments
+Birds Psittaciformes Psittacidae Neophema elegans Elegant parrot Captive Bred Only
+Birds Psittaciformes Psittacidae Neophema splendida Scarlet-chested parrot Captive Bred Only
+Birds Psittaciformes Psittacidae Nymphicus hollandicus Cockatiel Captive Bred Only
+Birds Psittaciformes Psittacidae Platycercus "adelaidae" Adelaide rosella Captive Bred Only
+Birds Psittaciformes Psittacidae Platycercus adscitus Pale-headed rosella Captive Bred Only
+Birds Psittaciformes Psittacidae Platycercus elegans Crimson rosella Captive Bred Only
+Birds Psittaciformes Psittacidae Platycercus eximius Eastern rosella Captive Bred Only
+Birds Psittaciformes Psittacidae Platycercus icterotis Western(stanley) rosella Captive Bred Only
+Birds Psittaciformes Psittacidae Platycercus venustus Northern rosella Captive Bred Only
+Birds Psittaciformes Psittacidae Polytelis alexandrae Princess parrot Captive Bred Only
+Birds Psittaciformes Psittacidae Polytelis anthopeplus Regent parrot Captive Bred Only
+Birds Psittaciformes Psittacidae Polytelis swainsonii Superb parrot Captive Bred Only
+Birds Psittaciformes Psittacidae Psephotus haematonotus Red-rumped parakeet Captive Bred Only
+Birds Psittaciformes Psittacidae Psephotus varius Mulga parakeet Captive Bred Only
+Birds Psittaciformes Psittacidae Psittacula eupatria Alexandrine parakeet-blue form Captive Bred Only
+Birds Psittaciformes Psittacidae Psittacula eupatria Alexandrine parakeet-lutino form Captive Bred Only
+Birds Psittaciformes Psittacidae Psittacula krameri manillensis Indian ringneck parakeet Captive Bred Only
+Birds Psittaciformes Psittacidae Purpureicephalus spurius Red-capped parrot Captive Bred Only
+Birds Psittaciformes Psittacidae Trichoglossus chlorolepidotus Scaly-breasted lorikeet Captive Bred Only
+Birds Struthioniformes Dromaiidae Dromaius novaehollandiae Domestic emus Derived from the emu (Dromaius novaehollandiae)
+Birds Struthioniformes Rheidae Pterocnemia pennata Domestic rheas
+Derived from the Lesser/Darwin's rhea (Pterocnemia 
+pennata )
+Birds Struthioniformes Struthionidae Struthio camelus Domestic ostriches Derived from the ostrich (Struthio camelus )
+* Taxonomy by animal groups defined by the following:
+Mammals - Univ. of Michigan Museum of Zoology - Animal Diversity Web (animaldiversity.ummz.umich.edu/site/index.html) 
+Birds - Integrated Taxonomic Information System (http://www.itis.gov/)
+Note: All captive bred only species must be accompanied by a statement of origin or certificate of veterinary inspection identifying the business of origin and 
+the number of individual animals imported to the individual/business.

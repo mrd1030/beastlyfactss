@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 26 (AL, AZ, CO, CT, DE, FL, GA, HI, IL, IN, MA, MD, MI, MN, NE, NJ, NM, NV, NY, NYC, OK, OR, PA, TN, TX, UT) |
-| Unread cells | 227 |
-| Cached primary sources | 60 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 32 (AL, AZ, CA, CO, CT, DE, FL, GA, HI, IL, IN, MA, MD, MI, MN, NC, NE, NJ, NM, NV, NY, NYC, OH, OK, OR, PA, SC, TN, TX, UT, VT, WI) |
+| Unread cells | 190 |
+| Cached primary sources | 65 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
 Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts, Nebraska, Florida, New York,
-Georgia, New York City, New Jersey, Utah, Alabama, Indiana and Oklahoma sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
+Georgia, New York City, New Jersey, Utah, Alabama, Indiana, Oklahoma, California, Vermont, Wisconsin, North Carolina, South Carolina and Ohio sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
 fresh branch from main once it lands.
 
 ## The loop
@@ -28,7 +28,7 @@ One jurisdiction per sitting. It takes a while and that is fine.
    that explains rather than asserts, and `verifiedOn` set to today in US Eastern.
 4. Re-run `legal-gaps.mjs`, then `node scripts/check-legal-map-sync.mjs`. That script
    cross-checks every legal guide against the map and will catch guides you just made
-   wrong. It sits at 4 pre-existing errors; anything above that is yours.
+   wrong. It sits at 3 pre-existing errors; anything above that is yours.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
@@ -209,11 +209,18 @@ state that codifies by version. And confirm the citation itself still resolves.
 | ID | Idaho | 10 | 2 sources on file |
 | RI | Rhode Island | 10 | 1 source on file |
 
-The tail is now uniform. Nineteen jurisdictions sit at exactly 9 cells, two are nearly done,
-Vermont at 3 and California at 1, and every one of them is the same short list: the four
-invertebrates, the five encyclopedia lizards, the rabbit, and one or two stragglers. They go much
-faster than a cold state, because the sources are already cached and the same questions get asked
-of one rule. Three of them can probably be done in a sitting.
+Twenty jurisdictions left and every one asks the same short list, so they go several at a sitting
+rather than one. The core is eight animals: five encyclopedia lizards (bearded dragon, leopard
+gecko, crested gecko, blue-tongue skink, Jackson's chameleon), the green anole, the Madagascar
+hissing cockroach and the rabbit. Fifteen of the twenty add the flying squirrel, and a handful add
+a snake or two. Four questions answer all eight in most states:
+
+1. Does the state's definition of wildlife or wild animal reach a terrestrial arthropod? That
+   settles the cockroach, and it usually settles it cleanly one way or the other.
+2. Is a non-native pet reptile exempt as a class, listed, or caught by a catch-all?
+3. Is the green anole native there? Its range covers the southeast, so it flips from the
+   non-native answer to the native one across roughly a third of what is left.
+4. Does the wild animal definition exclude domesticated animals? That settles the rabbit.
 
 ## Loose ends
 
@@ -223,17 +230,25 @@ of one rule. Three of them can probably be done in a sitting.
   sits in Dactyloidae. On drafting-era taxonomy the green anole is prohibited; on current taxonomy
   it is not. The Code never dates its family names, and it uses them loosely elsewhere, printing
   "teiidae" in lower case and calling hedgehogs Insectivora. Recorded unclear rather than guessed.
-- **The invertebrate question now has a shape, and four states answer it cleanly.** It used to be
-  the reliable source of `unclear` cells. It is not any more, and the difference is always where the
-  answer lives. Utah settles it in the statute, defining wildlife as crustaceans, molluscs and
-  vertebrates, so an arthropod is outside the agency. Indiana settles it in the rule, and more
-  explicitly than anyone: 312 IAC 9-9-5 says "any invertebrate not identified in this rule is an
-  exempted wild animal", which 9-1-6 defines as one that "may be taken or possessed at any time".
-  Alabama has an invertebrate rule that is a closed list of protected natives, so being off it is the
-  answer. Oklahoma exempts native invertebrates by name and then has no possession bar that reaches
-  a pet. What leaves the question open, as in New Jersey and New Mexico, is a wildlife definition
-  that ends in an open phrase such as "or other wild animal" with no invertebrate rule under it.
-  Check for a dedicated invertebrate rule first; four of the last five states had one.
+- **The invertebrate question is now largely solved, and the pattern holds across nine states.**
+  It used to be the reliable source of `unclear` cells and it is not any more. The answer is always
+  in how the state defines the animals its wildlife agency can reach, and there are three shapes.
+  A closed list of taxa that leaves arthropods out: Utah (crustaceans, molluscs, vertebrates),
+  California (§ 671's eleven classes, no insect among them), Ohio (the word "aquatic" in front of
+  "insects"), North Carolina (invertebrates only where federally listed). An express exemption:
+  Indiana's 312 IAC 9-9-5, "any invertebrate not identified in this rule is an exempted wild
+  animal", and Wisconsin's 169.04(4)(a)1., which puts arthropods first on its exemption list.
+  Or a broad definition with no operative rule under it: South Carolina defines wildlife to include
+  arthropods and then never requires a permit for a terrestrial one, and Oklahoma exempts native
+  invertebrates by name. What leaves the question open, as in New Jersey and New Mexico, is a
+  definition ending in an open phrase such as "or other wild animal" with no invertebrate rule
+  beneath it. Check the definition first; it has answered this every time.
+- **North Carolina answers eight cells with one sentence and it is worth copying the check.**
+  § 113-129(15) makes a reptile, amphibian or invertebrate a wild animal only where it is on the
+  federal endangered or threatened list. That is a whole-state answer sitting in a definitions
+  section, and it means the green anole, a North Carolina native, is unregulated in a state whose
+  neighbours all restrict their natives. Before assuming a state has a reptile law, check whether
+  its definition of wildlife reaches reptiles at all.
 - **Alabama is the first state on this map where a federal listing changed a state answer.**
   220-2-.26(1) bans possessing anything the U.S. Fish and Wildlife Service lists as injurious
   wildlife under the Lacey Act, and the January 2025 salamander rule added genus Ambystoma to that
@@ -425,13 +440,12 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Thirty-seven of the 52 animals are now at 51 of 51, which includes every mammal on the matrix and
-every snake except the flying squirrel's neighbours in the late-added batch. Three more are one
-short at 50: the African grey parrot, the ackie monitor and the quaker parakeet.
+Thirty-nine of the 52 animals are now at 51 of 51. One is one short at 50, the ackie monitor,
+which is missing only Idaho.
 
 The eight encyclopedia animals added recently (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
-at 26 to 27 states each and are **not** ready for guides. `check-legal-map-sync.mjs` fails a
+at 31 to 32 states each and are **not** ready for guides. `check-legal-map-sync.mjs` fails a
 guide that asserts a status for a state the map has not read, so writing one now produces a
 page the build rejects. They need map depth first.
 

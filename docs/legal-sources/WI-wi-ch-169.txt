@@ -1,0 +1,131 @@
+SOURCE: Wis. Stat. ch. 169 (Captive Wildlife), §§ 169.01, 169.04, 169.11
+URL: https://docs.legis.wisconsin.gov/statutes/statutes/169/04
+FETCHED: 2026-09-05 (docs.legis.wisconsin.gov works with plain curl. Section pages are /statutes/statutes/<chapter>/<section>.)
+
+==== 169.01 Definitions ====
+169.01(1)(1) “Animal” means any mammal, bird, reptile, amphibian, mollusk, or arthropod or any egg of any bird, reptile, amphibian, mollusk, or arthropod except that “animal” does not include any mollusk or arthropod, or any egg of any mollusk or arthropod, if the mollusk or arthropod is regulated under s. 93.07 (12) or (13), 94.01, 94.02, 94.03, or 94.76.
+169.01(2)(2) “Captive” means any of the following:
+169.01(2)(a)(a) Restrained by a cage, pen, fence, or other enclosure.
+169.01(2)(b)(b) Restrained by physical alterations that limit movement or facilitate capture.
+169.01(2)(c)(c) Restrained by a leash or a tether or otherwise tied.
+169.01(2)(d)(d) Held in a controlled environment that is designed to prevent the departure from the controlled environment.
+169.01(3)(3) “Carcass” means the dead body of any wild animal including the head, hair, skin, plumage, skeleton, meat, or any other part thereof.
+169.01(4)(4) “Circus” means a scheduled event staged by a traveling company with mobile facilities in which entertainment consisting of a variety of performances by acrobats, clowns, or trained animals is the primary attraction or principal business.
+169.01(5)(5) “Conservation warden” means a warden appointed under s. 23.10.
+169.01(6)(6) “Department” means the department of natural resources.
+169.01(7)(7) “Domestic animal” means a farm-raised deer, a pet bird, a farm-raised game bird, or an animal that is listed as a domestic animal by rule by the department of agriculture, trade and consumer protection.
+169.01(8)(8) “Dressed fur” has the meaning given in s. 29.501 (1) (a).
+169.01(9)(9) “Endangered or threatened species” means those species of wild animals that are indigenous to the United States or Canada and are identified on the federal list of endangered and threatened species or on the Wisconsin list of endangered and threatened species.
+169.01(11)(11) “Exhibit” means to display for the purpose of public viewing, regardless of whether a fee is charged.
+169.01(12)(12) “Farm-raised deer” has the meaning given in s. 95.001 (1) (ag).
+169.01(12m)(12m) “Farm-raised game bird” means a bird of a wild nature that is not native and that is held captive, but that is not possessed under the authority of a license issued under s. 169.15, 169.19, 169.20, or 169.21.
+169.01(13)(13) “Free-roaming” means not captive.
+169.01(14)(14) “Fur-bearing wild animal” includes badger, beaver, bobcat, coyote, fisher, red fox, gray fox, lynx, marten, mink, muskrat, opossum, otter, raccoon, skunk, weasel, and wolf.
+169.01(15)(15) “Harm to the environment” includes adversely affecting the natural population dynamics of wild animals or wild plants, adversely affecting the habitat of wild animals or wild plants, or displacing wild animals or wild plants from any part of their habitat.
+169.01(15m)(15m) “Harmful wild animal” means a wild animal designated under s. 169.11 (1) (a).
+169.01(16)(16) “Humane officer” means an officer appointed under s. 173.03.
+169.01(18)(18) “Introduce” means to release for the purpose of allowing the animal to establish a population in an area in the wild where that species of animal is not naturally present at the time the wild animal is released.
+169.01(19)(19) “Law enforcement officer” has the meaning given in s. 165.85 (2) (c) and does not include a conservation warden.
+169.01(20)(20) “License year” means the year during which a license is valid.
+169.01(20m)(20m) “Migratory bird” means a bird of a species on the list in 50 CFR 10.13 that is promulgated under 16 USC 701 to 715s.
+169.01(21)(21) “Municipality” means a city, village, or town.
+169.01(22)(22) “Native” means indigenous and occurring or having occurred naturally within the boundaries of this state.
+169.01(23)(23) “Nonnative wild animal” means a wild animal that is not native.
+169.01(24)(24) “Nonresident” means a person who is not a resident of this state.
+169.01(25)(25) “Person” means any individual, partnership, firm, joint stock company, corporation, association, trust, estate, or other legal entity.
+169.01(25m)(25m) “Pet bird” means a bird that is either a psittacine or a soft bill and that is not native, not identified on the federal list of endangered and threatened species, and not a migratory bird.
+169.01(26)(26) “Possess” means to own, control, restrain, transport, or keep.
+169.01(27)(27) “Propagate” means to breed, encourage, or facilitate for the purpose of generating offspring.
+169.01(28)(28) “Public zoo or aquarium” means a zoo or aquarium that is operated by the state or by a city, village, or county or that is an accredited member of the American Zoo and Aquarium Association.
+169.01(29)(29) “Purchase” means to acquire through a sale or through an exchange for consideration.
+169.01(30)(30) “Raw fur” has the meaning given in s. 29.501 (1) (e).
+169.01(30m)(30m) “Rehabilitate” means to provide care or treatment to an orphaned, sick, or injured wild animal for the purpose of releasing it back into the wild.
+169.01(31)(31) “Sell” means to transfer or exchange for consideration.
+169.01(32)(32) “State resident” has the meaning given “resident” in s. 27.01 (10) (a).
+169.01(33)(33) “Stock” means to release for the purpose of increasing or maintaining a population of the animal.
+169.01(34)(34) “Take” means to capture, but does not include killing.
+169.01(35)(35) “Veterinarian” means either of the following:
+169.01(35)(a)(a) A veterinarian who is licensed in this state to practice veterinary medicine under ch. 89 and who is certified under rules promulgated by the department of agriculture, trade and consumer protection.
+169.01(35)(b)(b) A veterinarian who is licensed by another state to practice veterinary medicine and who is accredited under 9 CFR ch. I subch. J.
+169.01(36)(36) “Wild amphibian” means a wild animal that is an amphibian.
+169.01(37)(37) “Wild animal” means any animal of a wild nature that is normally found in the wild and that is not a domestic animal.
+169.01(38)(38) “Wild bird” means a wild animal that is a bird.
+169.01(39)(39) “Wild reptile” means a wild animal that is a reptile.
+
+==== 169.04 Possession of live wild animals ====
+169.04(1)(1) Restrictions on possession. 
+169.04(1)(a)(a) No person may possess any live wild animal unless the wild animal is legally obtained.
+169.04(1)(b)(b) No person may possess any live wild animal unless the person holds a license or other approval to possess the wild animal as required under this chapter or under s. 29.319 and the person is otherwise in compliance with this chapter and the rules promulgated under this chapter.
+169.04(2)(2) Temporary possession. 
+169.04(2)(a)(a) A person possessing a live native wild animal for a period not to exceed 24 hours is exempt from having a license or other approval as required under sub. (1) (b) if the person is possessing the wild animal for any of the following purposes:
+169.04(2)(a)1.1. To restrain or transport the wild animal for medical treatment by a veterinarian or by a person holding a rehabilitation license.
+169.04(2)(a)2.2. To remove or transport the wild animal from one location to a more appropriate location.
+169.04(2)(a)3.3. To restrain or transport the wild animal for game censuses or surveys, or other purposes authorized by the department.
+169.04(2)(b)(b) If a person possessing a live native wild animal under par. (a) determines that it is necessary to possess the wild animal for a period exceeding 24 hours after the time the wild animal was first possessed, the person shall request that the department approve an extension of the time period for the temporary possession. The department may either deny the requested extension or approve it for a specific period of time.
+169.04(2)(d)(d) If a live wild animal has been exposed to or infected with any contagious or infectious disease, as defined under rules promulgated by the department of agriculture, trade and consumer protection under s. 95.001 (2), during the time the wild animal is being temporarily possessed, the person possessing the wild animal shall ensure that a veterinarian files with the department of agriculture, trade and consumer protection a copy of a valid certificate of veterinary inspection that certifies that the wild animal is free of any such diseases before releasing it into the wild.
+169.04(2)(e)(e) No person may operate on a live skunk to remove its scent glands unless the person holds a Class A or Class B captive wild animal farm license or unless the person is a veterinarian and the person bringing the skunk to the veterinarian holds such a license. A veterinarian to whom a person brings a live skunk for removal of its scent glands shall verify whether the person holds a Class A or Class B captive wild animal farm license. If the person does not hold such a license, the veterinarian shall notify that person that possession of a live skunk is illegal and shall notify the department.
+169.04(3)(3) Wild animals under another jurisdiction. A live wild animal possessed by a nonresident under the legal authority of another state, province, or country may be possessed in this state by the nonresident for not more than 60 days from the date the wild animal enters the state if all of the following apply:
+169.04(3)(a)(a) The nonresident ensures that a veterinarian files a copy of a valid certificate of veterinary inspection for the wild animal with the department of agriculture, trade and consumer protection.
+169.04(3)(b)(b) The nonresident holds every license or other approval that is required by the other state, province, or country.
+169.04(4)(4) Exemption for certain wild animals. 
+169.04(4)(a)(a) A person is exempt from holding a license or other approval as required under this chapter to possess live native wild animals if the wild animals are not endangered or threatened species and are any of the following:
+169.04(4)(a)1.1. Arthropods.
+169.04(4)(a)2.2. Chipmunks.
+169.04(4)(a)3.3. Pocket gophers.
+169.04(4)(a)4.4. Mice.
+169.04(4)(a)5.5. Moles.
+169.04(4)(a)6.6. Mollusks.
+169.04(4)(a)7.7. Opossums.
+169.04(4)(a)8.8. Pigeons.
+169.04(4)(a)9.9. Porcupines.
+169.04(4)(a)10.10. Rats.
+169.04(4)(a)11.11. Shrews.
+169.04(4)(a)12.12. English sparrows.
+169.04(4)(a)13.13. Starlings.
+169.04(4)(a)14.14. Ground squirrels.
+169.04(4)(a)15.15. Red squirrels.
+169.04(4)(a)16.16. Voles.
+169.04(4)(a)17.17. Weasels.
+169.04(4)(b)(b) A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:
+169.04(4)(b)1.1. Pheasants of the species Phasianus colchicus or Syrmaticus reevesii, chukar partridge, gray partridge, or red-legged partridge that are possessed for use under a bird hunting preserve license, a dog training license, a hound training license, a dog club training license, a dog trial license, or a hound trial license.
+169.04(4)(b)2.2. Nonnative wild birds of the family anatidae that are migratory birds.
+169.04(4)(b)3.3. Nonnative wild animals that are harmful wild animals.
+169.04(5)(5) Exemption for certain persons and institutions. 
+169.04(5)(a)(a) Each of the following is exempt from holding a license or other approval as required under this chapter to possess any wild animal:
+169.04(5)(a)1.1. A veterinarian, for the purpose of providing medical treatment to wild animals.
+169.04(5)(a)2.2. A public zoo or aquarium.
+169.04(5)(a)3.3. A circus or the Circus World Museum located in Baraboo, Wisconsin.
+169.04(5)(a)4.4. The department.
+169.04(5)(a)5.5. A person who is licensed under s. 95.68 or 95.71 and who is possessing the wild animal under the authority of the license.
+169.04(5)(a)6.6. A person who is licensed under s. 95.69 and who possesses wild animals for 10 days or less and solely for the purpose of resale or slaughter.
+169.04(5)(b)(b) For purposes of par. (a) 1., “medical treatment” does not include rehabilitation.
+169.04(5m)(5m) Exemption for certain deer. 
+169.04(5m)(a)(a) A person holding a rehabilitation license who is rehabilitating white-tailed deer in Walworth County may possess these white-tailed deer after they have been rehabilitated without holding any other license or approval as required under this chapter and without being registered under s. 95.55 if all of the following conditions apply:
+169.04(5m)(a)1.1. The deer were taken from the wild before August 1, 2003.
+169.04(5m)(a)2.2. The license holder keeps the deer within a fenced area that has a double perimeter fence around the area and that complies with all of the requirements under the rules promulgated under s. 90.21 (6).
+169.04(5m)(a)3.3. The license holder identifies the deer by tagging or by other means as required by the department of agriculture, trade and consumer protection.
+169.04(5m)(a)4.4. The license holder does not propagate the deer or otherwise allow the deer to reproduce.
+169.04(5m)(a)5.5. The license holder does not remove, or authorize the removal of, the deer from the facilities and premises that are approved for use under the rehabilitation license.
+169.04(5m)(a)6.6. The license holder notifies the department of agriculture, trade and consumer protection of any illness found in any of the deer.
+169.04(5m)(a)7.7. If any of the deer dies, the license holder shall have the carcass tested for chronic wasting disease and shall have the test results submitted to the department of natural resources and the department of agriculture, trade and consumer protection.
+169.04(5m)(a)8.8. If any of the deer is found, as a result of testing, to have chronic wasting disease, the license holder shall have all of the deer destroyed.
+169.04(5m)(b)(b) Legal title to the white-tailed deer subject to par. (a) remains with the state.
+169.04(5m)(c)(c) The holder of the rehabilitation license who possesses the white-tailed deer as authorized under par. (a) shall immediately notify the department if any of the deer are not fenced as required under par. (a) 2., are not identified as required under par. (a) 3., reproduce, or are removed from the facilities and premises that are approved for use under the rehabilitation license.
+169.04(5m)(d)(d) Upon notification under par. (c), or if the department determines that any of the conditions under par. (a) are not met, the holder of the rehabilitation license shall no longer be authorized to possess the white-tailed deer.
+
+==== 169.11 Harmful wild animals ====
+
+
+==== 169.11 Harmful wild animals ====
+169.11(1)(1) Designation. 
+169.11(1)(a)(a) The department shall designate by rule cougars, members of the family ursidae, wild swine, and feral swine as harmful wild animals. After consulting with the department of agriculture, trade and consumer protection and the department of health services, the department of natural resources may designate by rule other species of wild animals as harmful wild animals if any of the following applies:
+169.11(1)(a)1.1. The wild animal is not a native wild animal and is capable of inflicting harm to the environment.
+169.11(1)(a)2.2. The wild animal is capable of creating a risk to public health or to the health of domestic animals.
+169.11(1)(a)3.3. The wild animal is capable of inflicting severe physical harm to humans or to domestic animals.
+169.11(1)(b)(b) No person may possess, take, propagate, sell, purchase, transfer, exhibit, or rehabilitate a live harmful wild animal unless specifically authorized to do so by the department.
+169.11(1)(c)(c) No person may introduce, stock, or release, or import into this state to introduce, stock, or release, any harmful wild animal unless specifically authorized to do so by the department under s. 169.06 (1) (c).
+169.11(3)(3) Exemptions. 
+169.11(3)(a)(a) Public zoos and aquariums are exempt from the prohibition under sub. (1) (b).
+169.11(3)(b)(b) 
+169.11(3)(b)1.1. Veterinarians are exempt from the prohibition under sub. (1) (b) for the purpose of providing medical treatment to harmful wild animals.
+169.11(3)(b)2.2. For purposes of subd. 1., “medical treatment” does not include rehabilitation.

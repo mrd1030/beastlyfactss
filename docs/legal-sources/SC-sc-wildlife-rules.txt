@@ -1,0 +1,708 @@
+SOURCE: S.C. Code Title 50 ch. 16 and S.C. Code Regs. 123-150 to 123-152
+URL: https://www.scstatehouse.gov/code/t50c016.php and https://www.scstatehouse.gov/coderegs/Chapter%20123.pdf
+FETCHED: 2026-09-05 (scstatehouse.gov works with plain curl. The regulations PDF is 102 pages; only the wildlife sections are kept here.)
+
+==== Title 50 ch. 16 ====
+SECTION 50-16-10. "Wildlife" defined.
+For the purpose of this chapter, "wildlife" means a member of the animal kingdom including without limitation a mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate.
+HISTORY: 1979 Act No. 172, SECTION 1; 1989 Act No. 41, SECTION 1.
+SECTION 50-16-20. Importation of wildlife for certain purposes prohibited; investigation; permit.
+(A) It is unlawful for a person to import, possess, or transport for the purpose of release or to introduce or bring into this State any live wildlife of the following types without a permit from the department:
+(1) a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris). Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;
+(2) a species of marine or estuarine fish, crustacean, mollusk, or other marine invertebrate not already found in the wild, or not native to this State.
+(3) a species of freshwater fish, crustacean, mollusk, or other freshwater invertebrate not already found in the wild or not native to this State.
+(B) A permit may be granted only after the investigations and inspections of the wildlife have been made as the department considers necessary and the department approves the possession, transportation, or importation into the State. The department may not issue a permit unless it finds:
+(1) the wildlife was taken lawfully in the jurisdiction in which it originated;
+(2) the importation, release, or possession of the wildlife is not reasonably expected to adversely impact the natural resources of the State or its wildlife populations.
+HISTORY: 1979 Act No. 172, SECTION 1; 1989 Act No. 41, SECTION 1; 1992 Act No. 458, SECTION 1.
+SECTION 50-16-25. Unlawful release of pigs; permit exceptions.
+(A) It is unlawful to:
+(1) import, possess, buy, sell, offer for sale, transfer, or transport a live member of the family Suidae (pig) taken from the wild; or
+(2) release a live member of the family Suidae (pig) into the wild.
+(B) Each pig imported, bought, sold, offered for sale, possessed, transferred, transported, or released in violation of this section constitutes a separate offense.
+(C) The department may seize and destroy any pig obtained pursuant to this section.
+HISTORY: 2005 Act No. 13, SECTION 1; 2010 Act No. 211, SECTION 1, eff upon approval (became law without the Governor's signature on June 8, 2010); 2021 Act No. 71 (H.3539), SECTION 2, eff May 17, 2021.
+Effect of Amendment
+The 2010 amendment rewrote the section.
+2021 Act No. 71, SECTION 2, rewrote the section.
+SECTION 50-16-30. Importation of diseased animals prohibited.
+It is unlawful for a person to possess, transport, or otherwise bring into the State or release or introduce into the State any diseased wildlife or other animal that reasonably might be expected to pose a public health or safety hazard as determined by the South Carolina Department of Health and Environmental Control after consultation with the department.
+HISTORY: 1979 Act No. 172, SECTION 1; 1989 Act No. 41, SECTION 1.
+SECTION 50-16-40. Exception to permit requirement for wildlife imported for exhibition purposes.
+Wildlife imported for exhibition purposes only by state wildlife departments, municipal zoos or parks, public museums, public zoological parks, and public scientific or educational institutions operated not for profit, and transient circuses are not required to procure a permit under Section 50-16-20. Nothing in this chapter prohibits the department or its duly authorized agents from possessing, importing, or releasing wildlife.
+HISTORY: 1979 Act No. 172, SECTION 1; 1989 Act No. 41, SECTION 1.
+SECTION 50-16-50. Authority to promulgate regulations.
+The department may promulgate regulations to effectuate the provisions of this chapter.
+HISTORY: 1979 Act No. 172, SECTION 1; 1989 Act No. 41, SECTION 1.
+SECTION 50-16-60. Exception to permit requirement for certain wildlife imported for sale as pets.
+The importation of the following wildlife for sale in the pet trade does not require a permit:
+1. tropical fishes
+2. rats and mice
+3. rabbits
+4. canaries
+5. gerbils
+6. shell parakeets
+7. love birds
+8. cockatiels
+9. parrots
+10. toucans
+11. mynah birds
+12. finches
+13. hamsters
+14. guinea pigs
+15. reptiles
+16. amphibians.
+The provisions of this section do not privilege the import or possession of a species otherwise protected or regulated by other provisions of this title.
+HISTORY: 1979 Act No. 172, SECTION 1; 1989 Act No. 41, SECTION 1.
+SECTION 50-16-70. Penalties.
+(A) A person violating the provisions of this chapter, or any condition of a permit issued pursuant to this chapter, is guilty of a misdemeanor and, upon conviction, must be fined not more than one thousand dollars or imprisoned not more than six months, or both. The department must suspend the hunting privileges of a person convicted of violating this chapter for one year from the date of the conviction.
+(B) In addition to any other penalties provided by law, a person convicted of a violation of subsection (A) is also subject to the confiscation, forfeiture, and sale provisions contained in Section 50-11-740 for any property, vehicle, trailer, or other means of conveyance utilized to import, possess, or transport the animal.
+(C) For the purposes of this section, each animal imported in violation of subsection (A) constitutes a separate offense.
+(D) Notwithstanding Chapter 3, Title 22, magistrates court shall have jurisdiction over actions arising under this section.
+HISTORY: 1979 Act No. 172, SECTION 1; 1989 Act No. 41, SECTION 1; 2010 Act No. 211, SECTION 3, eff upon approval (became law without the Governor's signature on June 8, 2010); 2012 Act No. 228, SECTION 3, eff June 18, 2012.
+Effect of Amendment
+The 2010 amendment inserted the text relating to conditions of permits issued.
+The 2012 amendment rewrote the section.
+South Carolina Legislative Services Agency * 223 Blatt Building * 1105 Pendleton Street * Columbia, SC 29201
+Disclaimer * Policies * Photo Credits * Contact Us
+Legislative Services Agency
+h t t p : / / w w w . s c s t a t e h o u s e . g o v
+
+==== Regs 123-150 to 123-152 ====
+123–150. Non-Game and Endangered Species.
+1. The following list of species or subspecies of non-game wildlife are faced with extinction in the
+foreseeable future and are added to the official State List of Endangered Wildlife Species of South
+Carolina.
+I. Birds
+1. Bachman’s Warbler (Vermivora bachmanii)
+2. Bewick’s Wren (Thryomanes bewickii)
+3. Eskimo Curlew (Numenius borealis)
+4. Kirtland’s Warbler (Dendroica kirtlandii)
+5. Piping Plover (Charadrius melodus)
+6. Red-cockaded Woodpecker (Picoides borealis)
+7. Swallow-tailed Kite (Elanoides forficatus)
+8. Wood Stork (Mycteria americana)
+II. Fish
+1. Shortnose Sturgeon (Acipenser brevirostrum)
+2. Pinewoods Darter (Etheostoma mariae)
+III. Mammals
+1. Atlantic Right Whale (Eubalaena glacialis)
+2. Blue Whale (Balaenoptera musculus)
+3. Bowhead Whale (Balaena mysticetus)
+4. Eastern Cougar (Felis concolor cougar)
+5. Finback Whale (Balaenoptera physalus)
+6. Florida Manatee (Trichechus manatus)
+7. Humpback Whale (Megaptera novaengliae)
+8. Indiana Bat (Myotis sodalis)
+9. Sei Whale (Balaenoptera borealis)
+10. Sperm Whale (Physeter catodon)
+11. Rafinesque’s Big-eared Bat (Plecotus rafinesquii)
+IV. Reptiles
+1. Atlantic Leatherback Turtle (Dermochelys c. coriacea)
+2. Atlantic Ridley Turtle (Lepidochelys kempii)
+3. Gopher Tortoise (Gopherus polyphemus)
+4. Atlantic Hawksbill Sea Turtle (Eretmochelys imbricata)
+V. Amphibians
+1. Flatwoods Salamander (Ambystoma cingulatum)
+2. Webster’s Salamander (Plethodon websteri)
+3. Carolina Gopher Frog (Rana c. capito)
+VI. Molluscs
+1. Atlantic Pigtoe Mussel (Fusconaia masoni)
+2. Brother Spike Mussel (Elliptio fraterna)
+2. It shall be unlawful for any person to take, possess, transport, export, process, sell, or offer for
+sale or ship, and for any common carrier knowingly to transport or receive for shipment any species or
+subspecies of wildlife appearing on the list of ‘‘Endangered Wildlife Species of South Carolina’’, except
+by permit for scientific and conservation purposes issued by the South Carolina Department of Natural
+Resources.
+Permits for conservation purposes shall be issued only for relocation, if warranted, and the incidental
+take of Red-cockaded Woodpeckers as part of the statewide Habitat Conservation Plan for Safe Harbor
+and for other mitigation purposes approved by the U.S. Fish and Wildlife Service.
+3. The penalty for the violation of this Rule and Regulation shall be that prescribed by 50–15–80,
+1976 S.C. Code of laws.
+HISTORY:  Amended by State Register Volume 18, Issue No. 5, eff May 27, 1994;  State Register Volume 22, Issue
+No. 4, eff April 24, 1998;  State Register Volume 26, Issue No. 6, Part 2, eff June 28, 2002;  State Register
+Volume 31, Issue No. 6, eff June 22, 2007;  State Register Volume 33, Issue No. 8, eff August 28, 2009.
+123–150.1. Cheloniidae and Dermochelyidae (Sea Turtles).
+1. The remaining species of the families Cheloniidae and Dermochelyidae (sea turtles) not listed in
+South Carolina Wildlife and Marine Resources Department Regulation 123-150 are considered
+threatened and in need of management.
+2. That is shall be unlawful for any person to take, possess, barter, trade, transport, export, process,
+sell or offer for sale or ship, and for any contract carrier knowingly to transport or receive for
+shipment any such species or products or parts or eggs thereof except by permit for scientific or
+educational purposes issued by the South Carolina Wildlife and Marine Resources Department, except
+that incidental catch of sea turtles while engaged in otherwise legal fishing, trawling or research
+activities at sea would be exempt under the taking clause of this regulation.
+3. Sea turtles captured incidentally to legal fishing and/or research activities which appear vigorous
+when removed from the net, will be immediately returned to the water, exercising due care to prevent
+injury. Release should be from a location on the vessel which will minimize the possibility of the turtle
+being damaged by the vessel’s propeller. The release will be made only when all sets of trawl doors or
+otter boards are hanging from the boom or outriggers.
+4. Sea turtles which show no sign of life or those that are obviously weak, will be turned on their
+back and held on deck until they regain their strength or it appears that the turtle is definitely dead.
+In no cases, will weakened or apparently dead turtles be released until they have been held on deck for
+30 minutes and attempts at revival have been made, i.e., pressing or pumping plastron (belly shell) to
+expel water and stimulate breathing.
+5. That the penalty for the violation of this Rule and Regulation shall be prescribed by Section
+50-15-80, 1976 South Carolina Code of Laws, as amended.
+6. That except as modified or changed hereby, all prevailing laws, rules and regulations concerning
+wildlife in South Carolina shall remain in full force and effect.
+123–150.2. Birds, Fish, Reptiles, Amphibians and Mammals.
+The following list of species or subspecies of non-game wildlife are considered to be threatened and
+are added to the official state list of Non-game Species in Need of Management.
+I. Birds
+1. American Peregrine Falcon (Falco peregrines anatum)
+2. Bald Eagle (Haliaeetus leucocephalus)
+3. Bewick’s Wren (Thryomanes bewickii)
+4. Common Ground Dove (Columbina passerina)
+5. Least Tern (Sterna albifrons)
+6. Wilson’s Plover (Charadrius wilsonia)
+II. Fish
+1. Carolina Pygmy Sunfish (Elassoma boehlkei)
+2. Broadtail Madtom (Noturus sp.)
+III. Reptiles
+1. American Alligator (Alligator mississippiensis)
+2. Atlantic Loggerhead Sea Turtle (Caretta caretta)
+3. Atlantic Green Sea Turtle (Chelonia mydas)
+4. Coal Skink (Eumeces anthracinus)
+5. Bog Turtle (Clemmys muhlenbergii)
+6. Spotted Turtle (Clemmys guttata)
+7. Southern Hognose Snake (Heterodon simus)
+IV. Amphibians
+1. Dwarf Siren (Pseudobranchus striatus)
+2. Pine Barrens Treefrog (Hyla andersonii)
+V. Mammals
+1. Small-footed Bat (Myotis leibii)
+HISTORY:  Amended by State Register Volume 18, Issue No. 5, eff May 27, 1994;  State Register Volume 26, Issue
+No. 6, Part 2, eff June 28, 2002;  State Register Volume 31, Issue No. 6, eff June 22, 2007;  State Register
+Volume 33, Issue No. 8, eff August 28, 2009.
+123–150.3. Scientific Collecting Permit Required.
+That a scientific collecting permit under the terms of § 50-11-2190, 1976 Code of Laws, shall be
+required for the collecting of all nongame species or subspecies of the Classes Pices (Fish), Amphibia
+(Amphibians), Reptilia (Reptiles), Aves (Birds) and Mammalia (Mammals).
+123–151. Regulations for Species or Subspecies of Non-game Wildlife.
+A. Alligator Harvest
+1. The size and number of all alligators to be taken will be specified by the Department on
+permits provided with harvest tags. A permit holder may only take and/or possess alligators
+identified by the Department and only in the manner specified by the Department.
+2. All who take or attempt to take an alligator must have a copy of the harvest permit along with
+an unused harvest tag with them while afield.
+3. Once an alligator is killed and before it is transported, a harvest tag must be attached and
+locked within six inches of the tip of the tail. In the event that an alligator harvest tag is defective
+and is not usable for the purpose intended, or becomes detached from the alligator hide, the
+Department must be notified immediately. The Department will be responsible for the replacement
+of defective, but not lost, tags. The alteration of harvest tags is strictly prohibited.
+4. Alligator meat may be used by the harvester but cannot be bought, sold or bartered except as
+provided in this regulation. All packages of meat not to be sold must have a tag or label with the
+name of the harvester and the harvest tag number attached.
+5. Before shipping or transporting outside of the USA, carcasses or hides must have CITES tags
+attached. Anyone desiring to ship or transport such items from the country must contact select
+Department offices for CITES validation and tagging.
+6. Any alligator carcass, hide or part that is not tagged, labeled or marked as required in this
+regulation is declared contraband and must be confiscated.
+B. Depredation Program
+1. Depredation permits for alligator removal will be issued to property owners or control agents.
+There is no fee for participation in this program.
+2. Qualifications and liability of Control Agents:
+a. Control agents must possess the experience and ability to handle alligators.
+b. Control agents must supply all equipment necessary to take alligators.
+c. Control agents assume personal liability for their health, safety and welfare and that of their
+assistants.
+d. Control agents are not employees of the Department, they are independent contractors.
+e. Applications for selection as control agents will be reviewed by the Department. The number
+of appointed control agents will be based upon the need as determined by the Department.
+3. Operation of Department designated alligator control agents:
+a. Alligators may be skinned only at designated sites and in accordance with specific instruc-
+tions provided by the Department.
+b. The meat of alligators may be used by the control agents or his/her immediate family and
+may also be given to others, but must not be bought, sold or transferred except as provided in this
+regulation. All packages of meat not to be sold, transferred or bartered must have a label attached
+that includes the name of the person who harvested the alligator and the harvest tag number.
+c. Each control agent may be assisted by not more than two assistant control agents approved
+by the Department, provided that no such assistant shall operate or conduct any alligator trapping
+or transportation activity except under supervision of the control agent.
+d. Alligator harvest tags issued to control agents are the property of the Department and shall
+remain the property of the Department.
+e. Designation as an alligator control agent is discretionary with the Department and such
+designation may be revoked at any time.
+C. Private Lands Alligator Program
+1. Alligators may be taken from lands that are in the Private Lands Alligator Program. The
+season for taking alligators under this program is from September 1 until May 31. The Department
+will establish a quota and issue tags for each specific application. Alligators taken under this program
+must be at least 4 feet in length. Alligators less than 4 feet taken incidentally must be tagged with a
+harvest tag, but cannot be disposed of commercially.
+2. Applications for participation in the Private Lands Program are due August 1 of each year for
+the subsequent September 1 to May 31 season. Applications received by the Department after August
+1st of that year may be denied participation based on the number of harvest tags available or at the
+discretion of the Department. All participants must report all harvested alligators and harvest
+information to the Department not later than the following July 1 st. No renewal application for a
+property previously enrolled in the Private Lands Alligator Program will be processed until such
+time as an accurate and complete harvest report is submitted to the Department.
+3. If the application is approved by the Department for participation in the Private Lands
+Alligator Program and a permit is issued, alligators may be taken only from that area and only by a
+licensed hunter. In order to participate in the Private Lands Alligator Program, an alligator control
+agent as defined in Section B must also be a licensed hunter. Participants in the Private Lands
+Alligator Program must maintain accurate records for inspection by Department personnel and the
+records must be made available for immediate inspection at any and all reasonable hours at the
+request of the Department.
+4. All areas identified in the Private Lands Alligator Program and facilities used for processing
+alligators must be open to Department personnel for inspection to determine compliance with the
+program and laws and regulations protecting alligators and to allow collection of biological
+information.
+5. During the designated private lands season, alligators may only be taken by firearms, hand-
+held snares, set snares, hand-held harpoons, archery equipment, crossbows, snatch hooks and as
+otherwise permitted by the Department. If devices other than firearms are used, a line must be
+securely attached to the hook, arrow or head of the device in such a manner to prevent separation
+from the hook, arrow or head until the carcass is retrieved. The other end of the line must be held
+by the hunter or be attached to a stationary or floating object capable of maintaining line above
+water when an alligator is attached. Rimfire firearms and shotguns are prohibited for taking
+alligators except that these firearms can be used to dispatch an alligator secured by a line. No
+alligator may be taken by use of baited hooks or by pole hunting. Pole hunting is defined as the act
+of taking an alligator from a den with a hook or snagging device of any type secured to the end of a
+pole and includes any device used to induce an alligator to move from a den prior to taking. All
+alligators taken under this program must be killed prior to transport off of the property named on
+the permit.
+6. No person may use alligator harvest tags issued for privately-owned habitat on publicly-owned
+property.
+7. A Department-supplied alligator harvest report form must be updated by the applicant or the
+person taking alligators on the property within 24 hours of the taking of each alligator. Alligator
+hunters, while on property designated under the Private Lands Alligator Program, must possess tags
+for that property. Completed harvest forms must be returned to the Department by July 1 st of each
+year. A participant who does not report is not eligible to participate in the program the following
+season.
+8. Unless otherwise specifically allowed by Department permit, alligator hides, parts or products
+may be retained and sold only in accordance with this regulation.
+D. Alligator Hunting Season
+1. The Department may issue a prescribed number of Alligator Hunting Season permits for the
+harvest of alligators. Those applicants randomly selected shall be issued instructions along with
+harvest tag(s). Alligators may be taken pursuant to permits from public and private areas where the
+person has legal access for the taking of alligators. Alligators taken under this program must be at
+least 4 feet in length. The season for hunting alligators under this program is from 12:00 noon on
+the 2 nd Saturday in September until 12:00 noon on the 2 nd Saturday in October and is open in
+Game Zones 3 and 4. These harvest permits cannot be used on property approved under the Private
+Lands Alligator Program. The Department may close, extend, delay or reopen the season if
+biological needs warrant.
+2. During the designated season, alligators may only be taken by hand-held snares, hand-held
+harpoons, archery equipment, crossbows, snatch hooks and as otherwise permitted by the Depart-
+ment. Any device may only be used when a line is securely attached to the hook or head of the
+device in such a manner as to prevent separation from the hook, arrow or head until the carcass is
+retrieved. The other end of the line must be held by the hunter or attached to a stationary or
+floating object capable of maintaining line above water when an alligator is attached. Only a
+handgun, a bangstick or sharp instrument used to sever the spine may be used for dispatch and only
+if a restraining line is attached to the alligator. A hand-held snare must be used to hold the alligator
+boatside or on land before it can be dispatched. Firearms may not be used to take free-swimming or
+basking alligators. The possession of a rifle or shotgun while taking or attempting to take alligators
+under this program is prohibited. All alligators taken under this program must be killed prior to
+transport by boat or vehicle. No alligator may be taken by use of baited hooks or by pole hunting.
+Pole hunting is defined as the act of taking an alligator from a den with a hook or snagging device of
+any type secured to the end of a pole and includes any devices used to induce an alligator to move
+from a den prior to taking.
+3. A Department-supplied alligator harvest report form must be updated by the person taking
+alligators within twenty-four (24) hours of taking each alligator and prior to transporting the
+alligator carcass to a processing facility. Completed harvest forms must be returned to the Depart-
+ment by November 1st of each season.
+4. A person who does not report is not eligible to participate in the program or hunt alligators
+the following season.
+5. Alligator meat may be retained by the harvester but cannot be bartered or sold. Alligator hides
+may be retained and sold only in accordance with this regulation.
+E. Sale of Alligator Meat
+1. The sale or barter of alligator meat taken under the alligator hunting season program is
+prohibited.
+2. Meat taken from alligators harvested under the authority of depredation tags and the private
+lands program tags may be sold only under the following conditions:
+a. Each package must be labeled to indicate the state, the number of pounds of meat enclosed,
+the date of packaging, the name of harvester, the processor, the State Food Inspection Depart-
+ment’s inspection number, and the tag number corresponding to the alligator hide from which the
+meat was taken.
+b. All cartons of alligator meat imported from other states shall bear an official marking from
+that state’s wildlife agency or other agency charged with food inspection.
+c. Persons handling alligator meat for human consumption must comply with the sanitation
+requirements of all applicable federal, state and local authorities.
+d. Those who harvest alligators must maintain accurate records of all alligator meat sales on
+standard forms supplied by the Department and such records shall be open to inspection by
+Department personnel.
+3. No person may bring any alligator meat into this State, or possess alligator meat unless
+authorized by this regulation.
+4. Alligator meat transported into the State must bear evidence of having been legally taken.
+5. Restaurants, canneries, nonfood meat processors and alligator meat wholesalers shall retain all
+alligator meat purchased in the original packages until the meat is prepared for consumption or
+processing. Such businesses and/or individual shall detach the original label with the accompanying
+data from each package when all meat from that carton has been prepared or processed and retain
+that label for the period of at least six months from the date of sale indicated on the label.
+F. Sale, Barter or Transfer of Alligator Hides and Other Parts
+1. Alligator skulls not discarded must be permanently marked with the alligator harvest tag
+number under which it was taken. Skulls not yet processed into a finished product may be marked
+with a temporary label denoting tag number under which it was taken. Possession of any skull
+without the tag number is prohibited. Skulls that are found may be retained, sold, bartered or
+transferred but the finder must contact the Department to obtain a tag number to permanently tag
+or mark the part. Parts other than skulls or hides may be sold, bartered or transferred, but records
+must be kept indicating to whom the parts were sold, bartered or transferred
+2. Hides or alligators taken with Department issued permits may be sold but must be properly
+tagged and reported as provided in this regulation. Alligator hides and parts transported into this
+state for sale or processing must bear evidence of having been legally taken. Parts of hides taken
+from a legally tagged alligator hide, must be tagged or packaged with a label, receipt, or other
+document indicating harvester’s name, date, and the harvest tag number and this documentation
+retained until such time as the partial hide is tanned or otherwise processed into other finished
+goods or discarded.
+3. No person shall accept or possess an untagged alligator hide or unmarked or untagged
+alligator skull for any purpose.
+G. Sale of Finished Alligator Products
+1. Products made from legally acquired crocodilians may be offered for sale in the State in
+accordance with the following:
+a. Products made from the American alligator must be visibly labeled American alligator.
+b. Products made from Caiman must be visibly labeled Caiman.
+c. Products made from other crocodilians must be visibly labeled Crocodile.
+2. Final end users of these finished products are not required to maintain this labeling
+requirement.
+H. Alligator Propagation
+1. Alligator Propagators Permit Applications.
+a. Only persons who are at least 18 years old at the time of application are eligible for an
+Alligator Propagators Permit.
+b. All applicants must submit a copy of a deed or leaseholder agreement along with a detailed
+map of the property on where the alligator propagation facility will be located. Map must show the
+boundaries of the facility, and the locations of every structure, pond, or other property feature
+used to hold, house, and or process alligators.
+c. The permit application must state the source and approximate number of alligators to be
+held at the facility. Applicant must notify the Department of any changes to the source stock and
+numbers.
+Alligator propagation facilities must meet the standards herein in order to procure or maintain
+an Alligator Propagator’s Permit. The Department has 15 business days from receipt of a new
+alligator propagator permit application to inspect the facility for initial compliance.
+d. The Department will notify the applicant in writing of any inspection deficiencies and the
+work needed to remedy the listed deficiencies.
+e. Any applicant who does not meet initial facility standards must notify the Department after
+remedying the listed deficiencies on the inspection report.
+f. The Department has 15 business days from receiving notification of these remedies to re-
+inspect the facility for compliance.
+2. Alligator Propagation Facilities
+a. The minimum setback separation distance required between an outdoor alligator holding
+tank, pen, or pond, and real property owned by another person is 1,000 feet. The minimum
+setback separation distance required between an indoor alligator holding tank or pen is 500 feet.
+Setbacks from property lines may be waived with written consent of the adjacent affected property
+owners.
+b. The minimum separation distance between an alligator facility and a public or private
+drinking water well is 500 feet.
+c. The minimum separation distance required between an alligator holding tank, pen, or pond
+and waters of the State is 1,320 feet or 1/4 mile. If the waters of the State are designated
+Outstanding Resource Waters, Critical Habitat Waters of Federally Endangered Species, or
+Shellfish Harvesting Waters, the minimum separation distance required between an alligator
+holding tank, pen, or pond, and waters of the State is 2,640 feet or 1/2 mile.
+d. The premises must be secure and have adequate barriers to prevent escape of enclosed
+alligators, entry onto the premises from alligators outside of the facility, and to deter theft of
+enclosed alligators.
+e. There must be an adequate supply of fresh water at each permitted facility, including each
+enclosure, or each holding area on the property.
+f. Except for outside pens or ponds, all holding tanks and pens shall have smooth walls.
+g. All areas where alligators are housed must contain enough water for every animal to
+completely submerge and enough area for each animal to completely exit the water.
+h. Outdoor pens, tanks, or ponds must be constructed with a fence a minimum of five feet in
+height utilizing 11 1/2 gauge chain-link fence with a minimum of 11 1/2 gauge ties secured to
+posts, rails, or other structural parts to prevent escape.
+i. All enclosures must be constructed to prevent alligators from going under or over the
+enclosure.
+j. Provisions must be made to protect alligators held outside from freezing cold temperatures
+with adequate denning space.
+k. Outside holding facilities must provide adequate covering or natural vegetation for shade as
+well as direct sunlight areas for basking to allow temperature regulation.
+l. Indoor pens and tanks.
+i. Alligator eggs located outside of a nest must be kept in an incubator with air and water
+temperature ranges between 85 and 91 degrees Fahrenheit.
+ii. Alligators less than 48 9 in total length must be kept inside in a controlled environment
+with a minimum temperature of 80 degrees Fahrenheit.
+iii. Alligators less than 48 9 in total length must be kept in rearing tanks constructed in such a
+manner to allow complete submersion or exit from the water.
+iv. All indoor facilities must have temperature monitors and a backup power system in order
+to maintain correct water and air temperatures.
+v. All rearing tanks must be constructed of fiberglass, plastic, metal, or other material
+approved by the Department to ensure secure and humane confinement. Tanks and pens must
+allow water to be readily drained to allow water changes or cleaning.
+m. Alligators must be kept segregated from other alligators by the following size classes:
+i. Less than 2 feet.
+ii. 2 to 4 feet.
+iii. 4–6 feet.
+iv. Greater than 6 feet.
+n. Minimum pen, tank, pond, or other holding area space requirements.
+i. One half (0.5) square feet of space for every alligator less than 24 inches in total length.
+ii. One and a half (1.5) square feet of space for every alligator 24 to 48 inches in total length.
+iii. Three (3) square feet of space for every alligator greater than 48 inches in total length.
+iv. For all alligator sizes, the pen, tank, or pond must allow at least the largest animal to
+orient in any direction without touching the sides of the pen, tank, or pond.
+3. Harvest and processing of alligators at a propagation facility.
+a. Any alligator killed under the authority of an alligator propagation permit or that dies at a
+permitted alligator propagation facility must be tagged with a Department supplied harvest tag
+within 24 hours or properly disposed of in accordance with local waste disposal requirements.
+b. An alligator propagation facility may process alligators reared on the facility or purchased
+from any other legal source provided:
+i. The building or structure where alligators are processed for human consumption meets
+and maintains all applicable state and federal food handling and storage requirements and are
+licensed or certified to process alligator meat.
+ii. All meat processed for consumption must be packaged in suitable containers which clearly
+identifies the package as alligator meat, and marked with the facility permit number, and as
+required by any other federal or state food labeling laws or regulations.
+iii. Records are maintained on forms provided by SCDNR in regards to the origin of the
+alligators and the associated harvest tag numbers.
+iv. A tag or label affixed to any package or container of alligators or alligator parts must
+specify the contents, quantity contained, and applicable license and permit numbers.
+c. Tagged, unskinned alligator carcasses may be sold or otherwise disposed of.
+d. All tags issued to an alligator propagation facility remain the property of the Department
+and may be revoked for violations of these regulations.
+e. Requests for CITES tags must be made to the Department at least 10 business days in
+advance.
+f. Alligators taken under the authority of the public hunting program cannot be sold or given
+to an alligator propagation facility.
+g. Alligator carcasses taken under the authority of the Private Lands Alligator Program may be
+sold or given to a propagation facility for the purpose of processing provided that the animals are
+tagged as required by the Private Lands Program.
+h. No live alligators taken under any of the State’s other alligator harvest programs can be sold
+or given to an alligator propagation facility except with a separate permit issued by the
+Department.
+4. Reporting Requirements.
+a. All alligator propagation facilities must submit an annual report on Department issued forms
+with the following information:
+i. The number of eggs purchased and their origin.
+ii. The number of alligators hatched.
+iii. The number of live alligators purchased by size class and origin.
+iv. The number of live alligators currently in possession.
+v. The number of alligators that died.
+vi. The number of alligators killed.
+vii. The disposition of alligator parts and meat sold during the year.
+viii. Names of persons or companies to whom alligators, alligator meat, or alligator parts
+were sold or otherwise transacted.
+ix. A completed record for each tag used.
+x. A record of the number of alligator carcasses purchased from others and the complete tag
+numbers from those alligator carcasses.
+b. Any tags issued and not used and accounted for on harvest reports must be returned with
+the annual report.
+c. No live alligators may be transported off of the alligator propagator facilities without a
+permit issued by the Department.
+d. Alligator propagators must follow all permit conditions printed on or accompanying the
+alligator propagator’s permit. This permit must be prominently displayed on site at the alligator
+propagation facility.
+HISTORY:  Amended by State Register Volume 20, Issue No. 5, eff May 24, 1996;  State Register Volume 22, Issue
+No. 6, Part 3, eff June 26, 1998; State Register Volume 34, Issue No. 4, eff April 23, 2010;  State Register
+Volume 39, Issue No. 7, Doc. No. 4560, eff July 24, 2015.
+123–151.1. Regulations for Spotted Turtle ( Clemmys guttata).
+A. Spotted Turtle Protection
+1. A person shall not take, possess, transport, import, export, process, sell, purchase, offer for
+sale, trade, gift, barter, ship, or receive for shipment any spotted turtle ( Clemmys guttata ) without a
+permit from the Department.
+B. Spotted Turtle Permits
+1. No new permit for the possession of spotted turtles shall be issued by the Department unless
+for scientific and/or conservation purposes pursuant to Regulation 123–150, et seq. at the discretion
+of the Department.
+2. Any person in possession of a Spotted Turtle Permit granted by the Department as of the
+adoption of this regulation has 90 days from the adoption of this regulation to register with the
+Department the current number of Spotted Turtles, both wild-caught and captive born, in their
+possession. Spotted turtles will be assigned a unique number and must be shell notched with the
+identification number provided by Department personnel.
+a. Permit applicants will shell notch spotted turtles in their possession as prescribed by the
+Department with the Department issued identification numbers. Permit applicants must provide
+evidence of applied shell notches and signed affidavit confirming all individual turtles in their
+possession were shell notched as directed by the Department and that they understand the
+regulations as they pertain to spotted turtles. Upon completion, the Department will issue a permit
+for the registered spotted turtles.
+3. Current permit holders as of the date of adoption of this regulation may not add additional
+spotted turtles to their collection or allow reproduction
+4. Current permit holders’ as of the date of adoption of this regulation permits are valid for five
+(5) years from the date of issue; however, upon completion and certification of marking, the
+Department will issue a new permit valid for 1 year. Subsequent permits will be valid for 1 year and
+may be renewed at the discretion of the Department.
+5. The Department may set permit conditions consistent with the protection of spotted turtles.
+Permit conditions include but are not limited to:
+a. Sale, purchase, trade, exchange, gift, or barter of any spotted turtles is prohibited.
+b. No wild-caught spotted turtles may be collected.
+c. All spotted turtles must be individually marked via shell notching with a unique identifica-
+tion number issued by the Department.
+d. No unmarked spotted turtles may be possessed, unless covered by a scientific collection
+permit.
+e. Reproduction of captive spotted turtles is prohibited unless authorized by the Department
+for scientific or conservation purposes. Offspring from unauthorized reproduction must be
+surrendered to the Department.
+C. Permit Reporting Requirements
+1. At the time of permit renewal, spotted turtle permit holders will report to the Department the
+number of wild-caught and captive-bred spotted turtles in their possession and provide evidence
+documenting the identification number indicated by shell notch.
+2. Any death or disposition of a spotted turtle must be reported to the Department immediately.
+D. The penalties for violation of this regulation are prescribed in Section 50–15–80. Each spotted
+turtle taken or possessed in violation of these regulations shall constitute a separate offense.
+HISTORY:  Added by State Register Volume 26, Issue No. 6, Part 2, eff June 28, 2002.  Amended by State Register
+Volume 31, Issue No. 6, eff June 22, 2007;  SCSR 45–5 Doc. No. 5007, eff May 28, 2021.
+Editor’s Note
+See SCSR 44–11 Doc. No. 5014, effective October 19, 2020 for 90 days, which promulgated emergency
+amendments to SC ADC 123–151.1 and emergency regulations SC ADC 123–151.3 and 123–151.4, providing
+immediate protection for wild native reptiles and amphibians in light of the passage of recent reptile and
+amphibian legislation in Act 177, and providing legal means for the transfer of native turtles and the ability to
+exceed the statutory limits for scientific, zoological, conservation, and other special purposes.
+123–151.2. Regulations for Southern Hognose Snake.
+1. It is unlawful for any person to take, possess, transport, import, export, process, sell, offer for
+sale, ship, or receive for shipment any southern hognose snake without a permit from the department.
+Permits will be issued only for research and educational purposes.
+HISTORY:  Added by State Register Volume 31, Issue No. 6, eff June 22, 2007.
+123–151.3. Exchange and Transfer for Certain Native Reptiles and Amphibians.
+A. No native reptile or amphibian, including parts, products, eggs, and derivatives may be sold,
+purchased, traded, exchanged, bartered, exported or shipped, transferred and/or re-homed, except:
+1. Transferring possession of a native reptile or amphibian to the Department or the Depart-
+ment’s designated recipient. The circumstances of acceptance shall be at the Department’s discretion.
+2. Transferring possession of native reptiles or amphibians when lawfully possessed and transfer
+is specifically authorized pursuant to other applicable federal or state laws, including those in Title
+50. With respect to S.C. Code Section 50–16–60 this exception shall not apply and the provisions of
+S.C. Code Section 50–15–15 and the associated regulations in 123–151.3 and 123–151.4 shall have
+priority concerning possession and transfer of reptiles and amphibians.
+3. Zoos and Aquaria maintaining accreditation or certification by the Association of Zoos and
+Aquariums, accredited research institutions under Institutional Care and Use Committees, and
+schools and educational displays open to the public may transfer and receive transferred reptiles and
+amphibians and must provide written notification to the Department specifying the number and
+species prior to transfer. Any such transfer may not be a sale, purchase, barter, or other commercial
+transaction. This exception also applies to the donor of a native reptile or amphibian to the above
+entities.
+4. Venom or venom derivatives obtained or produced by a laboratory.
+5. Any non-native phenotype ( i.e. — ‘‘morph’’ or genetic mutation) of native snake species.
+6. Any native wild phenotype of the following species reproduced in captivity and under 10
+inches in total length, eastern garter snake ( Thamnophis sirtalis ), mole king snake ( Lampropeltis
+calligaster), and eastern milksnake (Lampropeltis triangulum).
+7. Any native wild phenotype of the following species reproduced in captivity and under 20
+inches in total length, corn snake ( Pantherophis guttatus), rat snake ( Pantherophis sp.), and eastern king
+snake (Lampropeltis getula)
+8. Any native wild phenotype of the following species reproduced in captivity and, or under 24
+inches in total length, pine snake ( Pituophis melanoleucus).
+9. The yellow-bellied slider ( Trachemys scripta) species and the common snapping turtle ( Chelydra
+serpentina) species if these turtles were taken from a) a permitted aquaculture facility or b) a private
+pond pursuant to a permit issued by the Department at the request of the owner or owner’s agent.
+Any person transporting more than five yellow-bellied sliders ( Trachemys scripta) species or common
+snapping turtle ( Chelydra serpentina) species must be in possession of a permit pursuant to which the
+turtles were taken or acquired. A person selling, offering to sell, or purchasing these species must
+have documentation from the aquaculture facility or permitted private pond as to the origin of the
+turtles.
+10. American alligators ( Alligator mississippiensis ), alligator eggs, alligator parts, and alligator
+products, while subject to regulation under other provisions of Title 50.
+11. Bull Frogs Lithobates (Rana) catesbeianus.
+12. Native reptiles and amphibians may be transferred to department-permitted wildlife rehabili-
+tators for the purpose of rehabilitation and release. Any transfer may not be a sale, purchase, barter,
+or other commercial transaction. Wildlife rehabilitators may be permitted by the Department by
+demonstrating the following:
+a. All captive reptiles and amphibians must receive proper care to ensure:
+i. appropriate bedding, cover, temperature regulation, and secure shelter;
+ii. potable water is accessible at all times or sufficient to meet daily requirements;
+iii. food of a quantity and nutritive value to meet normal requirements; and
+iv. an effective program for the control of diseases, parasites, and pests is established and
+maintained.
+b. Any permitted wildlife rehabilitator must show proof of veterinary care either:
+i. by being a licensed veterinarian; or
+ii. with a letter from the treating or consulting veterinarian, or veterinary practice, listing the
+permit holder and those species for which the veterinary practice will provide treatment or
+consultation.
+c. Providing an annual report documenting all reptiles and amphibians transferred to the
+permitted individual or facility and from the permitted individual or facility and will describe the
+final disposition of each individual.
+13. Native American Indian tribes recognized Federally or by the State of South Carolina’s
+Commission for Minority Affairs, pursuant to S.C. Code Section 1–31–60, and their members may
+transfer possession of parts of dead native reptiles when such parts are or will be incorporated in
+Native American cultural items and religious items, including but not limited to regalia, decorative
+attire, religious items, and musical instruments. This exception does not apply to live animals.
+B. An otherwise lawful collection of native reptiles or amphibians may be exported from the State
+of South Carolina if an export permit is first obtained from the Department. Export permits are only
+available when an individual or legal entity is permanently relocating to another state.
+C. Temporary export permits for native reptiles and amphibians may be granted at the discretion
+of the Department for the purposes of education, rehabilitation, and conservation where the animals
+will return to their state of origin.
+D. Any state endangered or threatened and in need of management species are subject to the
+protections provided by S.C. Code Sections 50–15–10, et seq. and shall not be possessed or transferred
+except by permit issued by the Department.
+E. The penalties for violation of this regulation are prescribed in S.C. Code Section 50–15–80.
+HISTORY:  Added by SCSR 45–5 Doc. No. 5007, eff May 28, 2021.
+123–151.4. Possession Limits for Certain Native Reptiles and Amphibians.
+A. A person shall not possess any species listed as endangered or threatened and in need of
+management pursuant to S.C. Code Sections 50–15–10, et seq.  except by permit issued by the
+Department.
+B. A person shall not possess more than 10 native turtles in aggregate.
+C. Any person in possession of more than 10 native turtles and in excess of the established
+possession limits as of September 28, 2020 has 90 days from September 28, 2020 to register with the
+Department the current number by species of native turtles, both wild-caught and captive born, in
+their possession. No additional turtles may be acquired until such time as the number of turtles in
+possession is below the limit set in regulation.
+D. A person shall not possess more than 2 eastern box turtles ( Terrapene carolina ). Any person in
+possession of eastern box turtles in excess of the established possession limits as of September 28, 2020
+has 90 days from September 28, 2020 to register with the Department the current number of eastern
+box turtles, both wild-caught and captive born, in their possession. No new turtles may be acquired
+until such time as the number of turtles in possession is below the limit set in regulation. Registered
+turtles will be assigned a unique identification number and must be shell notched with the identifica-
+tion number provided.
+1. Permit applicants will shell notch turtles in their possession as prescribed by the Department
+with the Department issued identification numbers. Permit applicants must provide evidence of
+applied shell notches and signed affidavit confirming all individual turtles in their possession were
+shell notched as directed by the Department and that they understand the regulations as they
+pertain to eastern box turtles. Upon completion, the Department will issue a permit for the
+registered box turtles.
+2. Box turtle permit holders will be required to submit an annual report on the status and
+number of registered box turtles on a Department provided form.
+E. A person shall not possess more than 2 diamondback terrapins ( Malaclemys terrapin ). This
+provision does not prohibit the incidental catch of diamondback terrapins by persons engaged in a
+lawful fishery when the terrapins are returned immediately to the water.
+F. A person shall not possess more than 5 turtles total from any of the following species/subspecies:
+Florida cooter ( Pseudemys floridana), river cooter ( Pseudemys concinna), chicken turtle ( Deirochelys reticula-
+ria), eastern painted turtle ( Chrysemys picta ), spiny softshell turtle ( Apalone spinifera ), Florida softshell
+turtle (Apalone ferox), eastern mud turtle ( Kinosternon subrubrum), striped mud turtle ( Kinosternon bauri),
+common musk turtle ( Sternotherus odoratus ), yellow-bellied slider ( Trachemys scripta)  and common
+snapping turtle ( Chelydra serpentina). The above limit does not apply to the lawful possession of yellow-
+bellied slider ( Trachemys scripta)  species and the common snapping turtle ( Chelydra serpentina ) species
+pursuant to Regulation 123–151.3.
+G. The Department may issue scientific collection permits as described in Regulation 123–150.3 in
+excess of the above limits for scientific and conservation purposes.
+H. Zoos and Aquaria maintaining accreditation or certification by the Association of Zoos and
+Aquariums, accredited research institutions under Institutional Care and Use Committees, schools and
+educational displays open to the public, and Department permitted wildlife rehabilitators may request
+a permit to exceed the above listed possession limits at the discretion of the Department.
+I. Pursuant to S.C. Code Section 50–15–15(B), no native reptiles or amphibians may be possessed
+or transferred pursuant to S.C. Code Section 50–16–60 except as provided in Regulations 123–151.3
+and 123–151.4.
+J. The penalties for violation of this regulation are prescribed in S.C. Code Section 50–15–80.
+HISTORY:  Added by SCSR 45–5 Doc. No. 5007, eff May 28, 2021.
+123–152. Regulations for Nonnative Wildlife.
+A. The Department has determined that the species designated as Restricted Nonnative Wildlife
+have the potential to become established in this State in sufficient numbers so as to become a nuisance
+and pose a demonstrable deleterious and widespread threat to wildlife, agriculture, or human health
+and safety. As used in this regulation, Restricted Nonnative Wildlife and the associated Listing Date
+are:
+1. Black and White Tegu ( Salvator merianae and, as used in this regulation, their hybrids) (listing
+date: May 28, 2021)
+B. Unless otherwise authorized by the Department, no person, firm, corporation, partnership,
+association, or any other entity shall possess, sell, offer for sale, transfer possession of, import, bring,
+release, reproduce, allow to escape, or cause to be brought or imported into the State of South
+Carolina any Restricted Nonnative Wildlife. Pursuant to the Department’s authority to regulate
+nonnative wildlife under S.C. Code Section 50–15–55, the provisions of S.C. Code Section 50–16–60 do
+not apply to Restricted Nonnative Wildlife.
+C. The Department may issue a permit for the possession, import, release, reproduction, and
+transfer of Restricted Nonnative Wildlife for scientific and other special purposes at its discretion,
+provided that any such permit shall be conditioned to minimize risks of the hazardous exposure,
+release and proliferation of the Restricted Nonnative Wildlife.
+D. Additional provisions for specific Restricted Nonnative Wildlife
+1. Black and White Tegu
+i. A person, firm, corporation, partnership, association, or any other entity possessing a Black
+and White Tegu has 120 days from the listing date, the Registration Period, to register the total
+number of Black and White Tegu in their possession with the Department and obtain a permit, as
+conditioned herein, in order to retain the registered animals. During the Registration Period,
+Black and White Tegus may be possessed, bought, sold, or transferred but may not be imported,
+brought, released, reproduced, or allowed to escape in South Carolina.
+ii. All Black and White Tegus must be microchipped with a unique identification number, at
+the owner’s expense. The unique identification number must be supplied to the Department at the
+time of registration and to receive a permit.
+iii. Permits for registered animals are valid for three years and must be renewed within 30 days
+of expiration. After the Registration Period, no Black and White Tegu may be possessed without a
+permit issued by the Department. Permits may not be transferred. If Black and White Tegus are
+removed from South Carolina, the permit becomes void and must be surrendered to the
+Department within five days.
+iv. Reproduction of permitted Black and White Tegus is not allowed.
+v. Black and White Tegus must be kept indoors in escape proof enclosures, or outdoors in
+locked enclosures with primary and secondary containment barriers, each sufficient to prevent
+escape.
+vi. Escaped or missing Black and White Tegus must be reported to the Department within 24
+hours.
+vii. Upon death of the Black and White Tegu, possession permits become void and must be
+surrendered to the Department within five days.
+E. Failure to comply with permit terms and conditions is a violation of these regulations. Violations
+of these regulations are subject to the penalties and enforcement provisions of S.C. Code Section
+50–15–80.
+HISTORY:  Added by SCSR 45–5 Doc. No. 5027, eff May 28, 2021.
+123–153. Repealed.
+HISTORY:  Former Regulation, titled Sea Turtle Protection, repealed by SCSR 45–5 Doc. No. 5019, eff May 28,
+2021.
+123–160. Vultures, Kites, Hawks, Eagles, Ospreys, Falcons, and Owls.

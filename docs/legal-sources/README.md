@@ -73,6 +73,11 @@ about this species", not to claim a new verification date.
 | `AL-al-conservation-rules.txt` | Alabama's four rules in one file: the prohibited list at .26, protected nongame at .92, invertebrates at .98, turtles at .142 |
 | `IN-in-312-iac-9.txt` | Indiana's three regimes: the native herp rule at 9-5, the invertebrate exemption at 9-9-5, and the permit classes at 9-11 |
 | `OK-ok-wildlife-rules.txt` | Oklahoma's exemption list, its reptile and amphibian part, the commercial turtle rule, and the four statutes that frame them |
+| `VT-vt-domestic-list.txt` | Vermont's third list, the one earlier sittings could not read; it decides the parrots, the rabbit, the dog and the cat |
+| `WI-wi-ch-169.txt` | Wisconsin's captive wildlife chapter: the definitions, the exemptions at 169.04(4), and the harmful wild animal power at 169.11 |
+| `NC-nc-wildlife-definitions.txt` | The one definition that answers North Carolina, plus the captivity licence it does not reach |
+| `SC-sc-wildlife-rules.txt` | South Carolina's import chapter and its 2021 native reptile rules, which override the pet-trade exemption |
+| `OH-oh-wildlife-code.txt` | Ohio's definitions, its dangerous wild animal and restricted snake lists, and the propagating licence |
 
 ## Reading the awkward ones
 
@@ -226,6 +231,16 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   that reaches possession and a six-per-species cap. The provision that quietly decides the rest is
   statutory: 29 O.S. § 7-502(B)(4) exempts anyone possessing legally obtained wildlife "from a source
   other than the wild, as pets" from the possession bar.
+- **`NC-nc-wildlife-definitions.txt`** is one paragraph and it answers eight cells. § 113-129(15)
+  makes a reptile, an amphibian or an invertebrate a "wild animal" only where it is on the federal
+  endangered or threatened list, so the captivity licence at § 113-272.5 has nothing to attach to for
+  an ordinary pet. Do not go looking for a North Carolina reptile rule; there isn't one, and the place
+  local restrictions come from is § 153A-131, which lets counties regulate dangerous animals.
+- **`SC-sc-wildlife-rules.txt`** has to be read in the right order. § 50-16-60 clears reptiles and
+  amphibians as whole classes from the import permit, which looks like the answer and is not:
+  Regulation 123-151.4(I) says that section "does not privilege" a native reptile, and the 2021 rules
+  take over. 123-151.3(A) then bars selling, buying, trading, exporting and re-homing any native
+  reptile, with twelve exceptions that are mostly named snakes under a length limit.
 - **`CO-co-cpw-species-list.txt`** is parsed into two-line records, the species then its
   determination, so grep with `-A1`:
   `grep -A1 -i 'testudo horsfieldii' docs/legal-sources/CO-co-cpw-species-list.txt`
@@ -269,6 +284,8 @@ not on the sites, so a person with a browser can open all of them.
 | `api.gbif.org` | Works, but drops the occasional connection mid-exchange | Retry with backoff; a failed call returns non-JSON rather than an error code |
 | `web.archive.org` | Blocked by egress policy, so the Wayback fallback is not available here. `archive.org/wayback/available` does answer | Find another live reproduction instead |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
+| `docs.legis.wisconsin.gov`, `www.ncleg.gov`, `www.scstatehouse.gov`, `codes.ohio.gov` | All work with plain curl and serve one section per page | Wisconsin `/statutes/statutes/<ch>/<sec>` and `/code/admin_code/nr/001/<ch>/<sec>`; North Carolina `/EnactedLegislation/Statutes/HTML/BySection/Chapter_<n>/GS_<sec>.html`; South Carolina `/code/t<title>c<chapter>.php` and `/coderegs/Chapter%20<n>.pdf`; Ohio `/ohio-revised-code/section-<n>` and `/ohio-administrative-code/rule-<n>` |
+| `www.vtfishandwildlife.com` | Refuses automated requests without a User-Agent | `curl -A "Mozilla/5.0"`. Filename encoding differs per list: `Domestic_Species_List.pdf` and `Unrestricted_Wild_Animals_List.pdf` use underscores, `Restricted_Wild%20Animals_List.pdf` needs a percent-encoded space in the middle |
 | `admincode.legislature.state.al.us` | React app; every `/administrative-code/<rule>` path returns a 1855-byte shell | `/api/rule/<number>` returns the current rule as a PDF, e.g. `/api/rule/220-2-.26`. Use it rather than Cornell LII, whose Alabama copies lag by years |
 | `iar.iga.in.gov` | Returns the same 735-byte React shell for every path, its own `/static/js/` bundles included, with `x-cache: Error from cloudfront`. Nothing on the site is reachable | Read Indiana rules from Cornell LII at `/regulations/indiana/312-IAC-<section>` and cite the official section |
 | `rules.ok.gov` | 403 to plain curl and to a browser User-Agent | Cornell LII carries the Oklahoma Administrative Code at `/regulations/oklahoma/OAC-<title>-<chapter>-<subchapter>-<section>`; find section URLs from the subchapter page rather than guessing the slug |
