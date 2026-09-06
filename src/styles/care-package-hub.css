@@ -11,19 +11,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 5 / 4;
 }
 .cph-tile::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.10) 1.5px, transparent 2px);
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.16) 1.5px, transparent 2px);
   background-size: 22px 22px;
   pointer-events: none;
 }
 .cph-tile-book {
   position: relative;
-  height: 84%;
+  height: 88%;
   width: auto;
   border-radius: 4px;
   transform: rotate(3deg);

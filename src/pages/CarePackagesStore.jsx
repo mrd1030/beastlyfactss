@@ -85,7 +85,7 @@ export default function CarePackagesStore() {
               </h3>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {g.items.map(pkg => (
-                  <CarePackageCard key={pkg.id} pkg={pkg} variant="full" />
+                  <CarePackageCard key={pkg.id} pkg={pkg} />
                 ))}
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function CarePackagesStore() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {comingSoon.map(pkg => (
-                <CarePackageCard key={pkg.id} pkg={pkg} variant="full" />
+                <CarePackageCard key={pkg.id} pkg={pkg} />
               ))}
             </div>
           </motion.section>
