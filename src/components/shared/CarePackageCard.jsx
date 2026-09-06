@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import CarePackageBuyButton from '@/components/shared/CarePackageBuyButton';
 import { carePackageBookCover } from '@/lib/data/carePackages';
+import { getCarePackageCopy } from '@/lib/data/carePackageCopy';
 import { getCarePackageTheme } from '@/lib/data/carePackageThemes';
 import '@/styles/care-package-hub.css';
 
@@ -28,6 +29,10 @@ export default function CarePackageCard({ pkg }) {
   const guideHref = `/guides/${pkg.id}/`;
   const productHref = `/care-packages/${pkg.id}/`;
   const theme = getCarePackageTheme(pkg.id);
+  // The product page's hook, one line: every cover says a version of "keep
+  // your X the right way", so this is what makes fourteen cards differ by
+  // more than animal and color.
+  const hook = getCarePackageCopy(pkg.id)?.hook;
   const tileStyle = {
     '--t-from': theme.light['hero-from'],
     '--t-via': theme.light['hero-via'],
@@ -71,6 +76,7 @@ export default function CarePackageCard({ pkg }) {
         <h3 className="font-display font-bold text-base text-foreground group-hover:text-secondary transition-colors leading-snug">
           {title}
         </h3>
+        {hook && <p className="text-sm text-foreground/80 font-body leading-snug line-clamp-2">{hook}</p>}
         <p className="text-xs text-muted-foreground font-body">
           {`${pkg.pages} pages · PDF${pkg.version ? ` · edition ${pkg.version}` : ''}`}
         </p>
