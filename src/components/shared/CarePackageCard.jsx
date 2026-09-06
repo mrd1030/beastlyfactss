@@ -19,9 +19,9 @@ import '@/styles/care-package-hub.css';
 // free guide link.
 //
 // The tile shows the package's own cover page as a tilted book on the
-// species' accent color from carePackageThemes.js. Accent rather than the
-// hero gradient: the cover art is itself a dark gradient, and on the hero
-// colors it disappeared into the tile.
+// species' hero gradient from carePackageThemes.js, with a glow pooled
+// behind it and a rim on the book so it does not sink into the tile: the
+// cover art is itself a dark gradient. See .cph-tile in care-package-hub.css.
 export default function CarePackageCard({ pkg }) {
   const isStripe = pkg.storefront === 'stripe';
   const isComingSoon = pkg.status === 'coming-soon' && !isStripe;
@@ -29,7 +29,10 @@ export default function CarePackageCard({ pkg }) {
   const productHref = `/care-packages/${pkg.id}/`;
   const theme = getCarePackageTheme(pkg.id);
   const tileStyle = {
-    backgroundImage: `linear-gradient(150deg, ${theme.light.accent}, ${theme.light['accent-strong']})`,
+    '--t-from': theme.light['hero-from'],
+    '--t-via': theme.light['hero-via'],
+    '--t-to': theme.light['hero-to'],
+    '--t-glow': theme.light.glow,
   };
 
   const stretched = 'after:absolute after:inset-0 after:content-[""]';

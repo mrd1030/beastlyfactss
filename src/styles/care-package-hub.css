@@ -3,7 +3,14 @@
  * these pages hold every species at once, so the species colors appear only
  * on the tiles. */
 
-/* ---- the cover tile on every card ---------------------------------------- */
+/* ---- the cover tile on every card ---------------------------------------- *
+ *
+ * The card sets five custom properties from carePackageThemes.js: the three
+ * hero gradient stops, the glow (r, g, b) and the eyebrow color. Depth comes
+ * from three layers: a glow pooled behind the book, the hero gradient under
+ * it, and a vignette at the edges. The book itself separates from a dark
+ * tile with a thin light rim and a hard one-pixel edge, which is what the
+ * first version, cover on the bare gradient, was missing. */
 
 .cph-tile {
   position: relative;
@@ -12,28 +19,43 @@
   align-items: center;
   justify-content: center;
   aspect-ratio: 5 / 4;
+  background-image:
+    radial-gradient(ellipse 62% 58% at 50% 56%, rgba(var(--t-glow), 0.55), rgba(var(--t-glow), 0) 72%),
+    linear-gradient(135deg, var(--t-from), var(--t-via), var(--t-to));
 }
 .cph-tile::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.16) 1.5px, transparent 2px);
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.14) 1.5px, transparent 2px);
   background-size: 22px 22px;
+  pointer-events: none;
+}
+.cph-tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.42);
   pointer-events: none;
 }
 .cph-tile-book {
   position: relative;
+  z-index: 1;
   height: 88%;
   width: auto;
   border-radius: 4px;
   transform: rotate(3deg);
   transition: transform 0.4s ease;
+  outline: 2px solid rgba(255, 255, 255, 0.3);
+  outline-offset: -2px;
   box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.55),
     inset 4px 0 8px -5px rgba(0, 0, 0, 0.5),
-    0 18px 30px -12px rgba(0, 0, 0, 0.6),
-    0 6px 14px rgba(0, 0, 0, 0.3);
+    0 22px 34px -12px rgba(0, 0, 0, 0.7),
+    0 0 40px rgba(var(--t-glow), 0.35),
+    0 6px 14px rgba(0, 0, 0, 0.35);
 }
-.group:hover .cph-tile-book { transform: rotate(0deg) scale(1.02); }
+.group:hover .cph-tile-book { transform: rotate(0deg) scale(1.03); }
 
 /* ---- the hub hero ---------------------------------------------------------- */
 
