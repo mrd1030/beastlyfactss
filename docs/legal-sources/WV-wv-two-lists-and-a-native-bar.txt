@@ -1,0 +1,204 @@
+SOURCE: West Virginia: W. Va. Code §§ 20-1-2, 20-2-4, 20-2-13, 20-2-51; W. Va. C.S.R. § 58-73 (Reptile and Amphibian Rule); W. Va. C.S.R. § 74-1 (Dangerous Wild Animal); WVDNR amphibian and reptile checklist
+URL: https://code.wvlegislature.gov/20-1-2/ and https://apps.sos.wv.gov/adlaw/csr/ruleview.aspx?document=17393 and https://wvdnr.gov/plants-animals/amphibians-reptiles/
+FETCHED: 2026-09-05 (code.wvlegislature.gov and wvdnr.gov work with plain curl. The Code of State Rules search at apps.sos.wv.gov/adlaw/csr/ is an ASP.NET WebForms POST; see the README row for the recipe. Rule 58-73's PDF is a scan with no text layer, so take the WORD format instead.)
+
+READ THIS FIRST, twice, because West Virginia had two rules missing from the previous reading of
+it and they pull in opposite directions.
+
+FIRST. The Dangerous Wild Animals Act at W. Va. Code § 19-34 names no species; it told a three
+member board to write the list. The board wrote it. W. Va. C.S.R. § 74-1-3, filed and effective
+5 April 2022, sunsetting 5 April 2032. It is a mammal list plus one reptile: hyenas, gray wolves
+excluding hybrids, lions, tigers, jaguars, leopards, cheetahs, lynxes, cougars, caracals, bears
+other than the native black bear, elephants, rhinos, hippos, Cape buffalo, African wild dogs,
+Komodo dragons and non-human primates with eleven named exclusions. No snake, no bird, no
+invertebrate, and no lizard but the Komodo. Any entry here that reads "until the list is
+adopted" is out of date.
+
+SECOND, and this is the one that changes answers. West Virginia bars its OWN reptiles and
+amphibians, which is the reverse of how most states are built. § 20-1-2 defines wildlife to
+include reptiles and amphibians with no nativity qualifier, and defines "wild animals" as all
+mammals NATIVE to the State of West Virginia. § 20-2-4(a) then makes it unlawful to possess or
+maintain in captivity any live wildlife or wild animal except as the chapter or a rule provides.
+W. Va. C.S.R. § 58-73-1.1 states the consequence in one line: "The take or possession of any
+native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to
+W. Va. Code 20-2-4." Section 4 of that rule lists ten salamanders for bait, two frogs, and two
+turtles, the snapping turtle and the eastern spiny softshell. NO SNAKE AND NO LIZARD IS ON IT.
+The DNR summary of the rule opens by saying West Virginia herp regulations prohibit the
+possession of 80 species of reptiles and amphibians.
+
+So nativity decides every herp cell, and the department's own checklist is the place to settle
+it. Six lizards, none an anole. Twenty-two snakes, the cornsnake, eastern gartersnake, eastern
+milksnake and eastern kingsnake among them. Thirteen turtles and one subspecies, the woodland
+box turtle included.
+
+THIRD, a loose end rather than an answer. § 20-2-13 says no person shall transport into or have
+in his possession within this state any live wildlife from without the state except as
+authorized by an importation permit from the director. Wildlife includes reptiles with no
+nativity limit, so on its face that reaches a bearded dragon shipped in from a breeder. The
+entries here treat it as an importation requirement rather than a keeping bar and say so in the
+note, but the whole West Virginia column deserves one consistent pass on it.
+
+Two definitions worth keeping. "Wildlife" reaches mollusks, crustaceans and "all forms of
+aquatic life used as fish bait" but no terrestrial arthropod, so an insect is outside the
+chapter entirely. And § 20-2-51 is the only pet route for a native mammal: a two dollar permit
+from the director for a wild animal acquired from a commercial dealer or during the legal open
+season.
+
+
+==== W. Va. Code § 20-1-2, the two definitions everything turns on ====
+
+Wild animals: “Wild animals” means all mammals native to the State of West Virginia occurring
+either in a natural state or in captivity, except house mice or rats, and includes coyotes and
+porcupines and all species of cervids. The term “wild animals” does not include captive cervids
+owned and possessed by persons licensed pursuant to article two-h, chapter nineteen of this
+code.
+
+Wildlife: “Wildlife” means wild birds, wild animals, game and fur-bearing animals, fish
+(including minnows), reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life
+used as fish bait, whether dead or alive. The term “wildlife” does not include captive cervids
+regulated pursuant to article two-h, chapter nineteen of this code.
+
+Game animals: “Game animals” includes: (a) The elk; (b) the deer; (c) the cottontail rabbits and
+hares; (d) the fox squirrels, commonly called red squirrels, and gray squirrels and all their
+color phases - red, gray, black or albino; (e) the raccoon; (f) the black bear; (g) the wild
+boar; and (h) the marmot monax, more commonly known as woodchuck or groundhog.
+
+
+==== W. Va. Code § 20-2-4(a), the possession bar ====
+
+§20-2-4. Possession of wildlife. (a) Except for wildlife lawfully taken, killed or obtained, no
+person may have in his or her possession any wildlife, or parts thereof, during closed seasons.
+It is unlawful to possess any wildlife, or parts thereof, which have been illegally taken,
+killed or obtained. This does not include the possession of deer antlers that are naturally shed
+and collected by a person from his or her own land, from public lands unless prohibited by law,
+or from private lands with the written permission of the landowner in hand. Any wildlife
+illegally taken, killed or possessed shall be forfeited to the state and shall be counted toward
+the daily, seasonal, bag, creel and possession limit of the person in possession of, or
+responsible for, the illegal taking or killing of any wildlife. It is unlawful to take, obtain,
+purchase, possess or maintain in captivity any live wildlife, wild animals, wild birds, game or
+fur-bearing animals except as provided by this chapter or any rule promulgated thereunder.
+
+
+==== W. Va. Code § 20-2-13, the importation permit ====
+
+§20-2-13. Importation of wildlife; certification and inspection of imported wildlife. No person
+shall transport into or have in his possession within this state any live wildlife or viable
+eggs thereof from without the state, except as authorized by an importation permit issued by the
+director: Provided, That the director shall not be authorized to issue a permit to any person to
+transport into this state any coyotes (Canis latrans). The director may issue at his discretion
+such permit as he is authorized to issue, fix the terms thereof and revoke it at his pleasure.
+
+
+==== W. Va. Code § 20-2-51, the pet permit ====
+
+§20-2-51. Permit for keeping pets. The director may issue a permit to a person to keep and
+maintain in captivity as a pet, a wild animal or wild bird that has been acquired from a
+commercial dealer or during the legal open season. The fee therefor shall be $2.
+
+
+==== W. Va. C.S.R. § 58-73-1 and 58-73-2, the scope and the definition of possession ====
+
+58-73-1. General. 1.1. Scope. -- These regulations establish open seasons and possession limits
+for reptiles and amphibians in West Virginia. The take or possession of any native West Virginia
+reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.
+1.2. Authority. -- W. Va. Code 20-1-17(7). 1.3. Filing Date. -- March 23, 2021. 1.4. Effective
+Date. -- March 23, 2021. Possession Limits in General. -- All seasons and possession limits,
+unless otherwise noted, are statewide and subject to change under the provisions of W. Va. Code
+20-1-17(7). 58-73-2. Definitions. Aggregate means the total possession limit of similar kinds of
+amphibians or reptiles considered as a whole. Amphibian means salamanders, hellbenders,
+mudpuppies, frogs and toads, or any part thereof, and eggs or offspring. means a single
+reproductive body produced by any reptile or amphibian. Larvae means any juvenile salamander.
+Possession means any reptile or amphibian taken alive or dead from the wild which are in any way
+under the control of a person. Reptile means turtles, lizards and snakes, or any part thereof,
+and eggs or offspring. Tadpole means any juvenile frog or toad 2.8. All other terms shall have
+the meanings prescribed in W. Va. Code 20-1-2.
+
+
+==== W. Va. C.S.R. § 58-73-3 and 58-73-4, the requirements and the entire list of what may be possessed ====
+
+58-73-3. Requirements to take or release reptiles or amphibians. 3.1. No person may take or
+possess snake eggs, lizard eggs, skink eggs, turtle eggs, amphibian eggs, tadpoles, or larvae of
+any species. 3.2. It is unlawful to take or possess any reptile or amphibian from any area under
+agreement with, owned, controlled, or administered by the Division of Natural Resources, except
+pursuant to subsections 3.2.1. and 3.2.2. of this rule. 3.2.1. Persons who have received written
+permission from the Director, provided they carry and exhibit said permission upon request.
+3.2.2. Persons lawfully taking American bullfrogs, green frogs, snapping turtles, and eastern
+spiny softshell turtles. 3.3. No person shall release any reptile or amphibian into the wild
+that was held in captivity for more than 30 days. No person shall release at any time any
+reptile or amphibian that has been held in the same enclosure with other species of reptiles or
+amphibians. Reptiles or amphibians that may be released must be released at the location of the
+capture. 3.4. No person may take or possess reptiles or amphibians for education or scientific
+purposes without obtaining a scientific collecting permit pursuant to W. Va. Code 20-2-50. No
+person may take or possess any native reptile or amphibian for any other purpose without first
+obtaining written authorization by the Director pursuant to W. Va. Code 20-1-7. 58-73-4.
+Reptiles and Amphibians Which May Be Taken and/or Possessed. 4.1. A person may take the
+following salamanders year-round for use as fishing bait. A person may have in his or her
+possession no more than 10 of these species in aggregate. 4.1.1. northern dusky salamander
+(Desmognathus fuscus) 4.1.2. seal salamander (Desmognathus monticola) 4.1.3. Allegheny mountain
+dusky salamander (Desmognathus ochrophaeus) 4.1.4. black-bellied salamander (Desmognathus
+quadramaculatus) 4.1.5. Black Mountain salamander (Desmognathus welteri) 4.1.6. northern spring
+salamander (Gyrinophilus p. porphyriticus) 4.1.7. Kentucky spring salamander (Gyrinophilus p.
+duryi) 4.1.8. northern two-lined salamander (Eurycea bislineata) 4.1.9. southern two-lined
+salamander (Eurycea cirrigera) 4.1.10. eastern long-tailed salamander (Eurycea l. longicauda)
+4.2. A person may have in his or her possession no more than 50 salamanders which are purchased
+from a licensed dealer and accompanied by a bill of sale pursuant to W. Va. Code of State Rules,
+Title 58 Series 62, Bait Fish Rule. 4.3. Property owners, lessees, or their representative may
+destroy or relocate any snake within a place of residence, dwelling, structure used for domestic
+or commercial purposes, and outbuildings, including sheds and structures, gardens, and fields
+used for agricultural crops and livestock. 4.4. A person may possess snake skins that have been
+shed from any species and such shed snake skins will not be considered part of the possession
+limit. 4.5. A person may take and possess a daily creel limit of 10 eastern spiny softshell
+(Apalone s. spinifera) and snapping turtle (Chelydra s. serpentina) and the possession limit in
+aggregate is 20 for these species of turtles.
+
+
+==== W. Va. C.S.R. § 74-1-3, the dangerous wild animal list, in full ====
+
+74-1-3. Dangerous Wild Animal List. 3.1. The Dangerous Wild Animal List adopted by the Board is
+as follows: 3.1.a. Hyenas; 3.1.b. Gray wolves, excluding hybrids; 3.1.c. Lions; 3.1.d. Tigers;
+3.1.e. Jaguars; 3.1.f. Leopards, including clouded leopards, Sunda clouded leopards, and snow
+leopards; and 3.1.g. All of the following, including hybrids with domestic cats unless otherwise
+specified: 3.1.g.1. Cheetahs; 3.1.g.2. Lynxes, including Canadian lynxes, Eurasian lynxes, and
+Iberian lynxes; 3.1.g.3. Cougars, also known as pumas or mountain lions; and 3.1.g.4. Caracals.
+3.1.h. Bears; (excluding black bears native to this state); 3.1.i. Elephants; 3.1.j.
+Rhinoceroses; 3.1.k. Hippopotamuses; 3.1.l. Cape buffalo; 3.1.m. African wild dogs; 3.1.n.
+Komodo dragons; 3.1.o. Nonhuman primates, excluding: 3.1.o.1. Lemurs; 3.1.o.2. Golden lion,
+black faced lion, golden-rumped lion, cotton top, emperor, saddlebacked, blackmantled, and
+Geoffroys tamarins; 3.1.o.3. Southern and northern night monkeys; 3.1.o.4. Dusky titi and masked
+titi monkeys; 3.1.o.5. Muriquis; 3.1.o.6. Goeldi’s monkeys; 3.1.o.7. White-faced, black-bearded,
+white-nose bearded, and monk sakis; 3.1.o.8. Bald and black uakaris; 3.1.o.9. Black-handed,
+white-bellied, brown-headed, and black spider monkeys; 3.1.o.10. Common woolly monkeys; and
+3.1.o.11. Red, black, and mantled howler monkeys. §
+
+
+==== WVDNR checklist: the six native lizards ====
+
+Eastern Six-lined Racerunner (Aspidoscelis s. sexlineata) Northern Coal Skink (Plestiodon a.
+anthracinus) Common Five-lined Skink (Plestiodon fasciatus) Broad-headed Skink (Plestiodon
+laticeps) Eastern Fence Lizard (Sceloporus undulatus) Little Brown Skink (Scincella lateralis)
+
+
+==== WVDNR checklist: the twenty-two native snakes ====
+
+Eastern Copperhead (Agkistrodon contortrix) Eastern Wormsnake (Carphophis a. amoenus) Northern
+Black Racer (Coluber c. constrictor) Timber Rattlesnake (Crotalus horridus) Northern Ring-necked
+Snake (Diadophis punctatus edwardsii) Eastern Hog-nosed Snake (Heterodon platirhinos) Eastern
+Kingsnake (Lampropeltis nigra) Eastern Black Kingsnake (Lampropeltis g. niger) Eastern Milksnake
+(Lampropeltis t. triangulum) Common Watersnake (Nerodia s. sipedon) Northern Rough Greensnake
+(Opheodrys a. aestivus) Smooth Greensnake (Opheodrys vernalis) Eastern Ratsnake (Pantherophis
+alleghaniensis) Cornsnake (Pantherophis guttatus) Gray Ratsnake (Pantherophis spiloides)
+Northern Pinesnake (Pituophis m. melanoleucus) Queen Snake (Regina septemvittata) Dekay’s
+Brownsnake (Storeria dekayi) Red-bellied Snake (Storeria occipitomaculata) Common Ribbonsnake
+(Thamnophis s. saurita) Eastern Gartersnake (Thamnophis s. sirtalis) Mountain Earthsnake
+(Virginia valeriae pulchra) Eastern Smooth Earthsnake (Virginia v. valeriae) Rattlesnake Survey
+
+
+==== WVDNR checklist: the native turtles ====
+
+Midland Smooth Softshell (Apalone m. mutica) Eastern Spiny Softshell (Apalone s. spinifera)
+Snapping Turtle (Chelydra s. serpentine) Midland Painted Turtle (Chrysemys picta marginata)
+Eastern Painted Turtle (Chrysemys p. picta) Spotted Turtle (Clemmys guttata) Wood Turtle
+(Glyptemys insculpta) Northern Map Turtle (Grapetemys geographica) Ouachita Map Turtle
+(Grapetemys ouachitensis) Eastern River Cooter (Pseudemys c. concinna) Northern Red-bellied
+Cooter (Pseudemys rubriventris) Eastern Musk Turtle (Sternotherus odoratus) Woodland Box Turtle
+(Terrapene c. carolina) Red-eared Slider (Trachemys scripta elegans)

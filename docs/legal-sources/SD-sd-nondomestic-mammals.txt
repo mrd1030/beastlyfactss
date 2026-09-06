@@ -1,0 +1,127 @@
+SOURCE: South Dakota: SDCL 40-3-24 to 40-3-26, SDCL 41-1-1, and ARSD 12:68:18 Nondomestic Animal Control
+URL: https://sdlegislature.gov/Statutes/40-3-24 and https://sdlegislature.gov/Rules/Administrative/12:68:18
+FETCHED: 2026-09-05 (sdlegislature.gov is a JS shell. The API answers: https://sdlegislature.gov/api/Rules/12:68:18 returns the whole chapter as JSON with the text in an Html field, and https://sdlegislature.gov/api/Statutes/Statute/40-3-24 does the same for a statute section. Note that /api/Rules/Chapter/... and /api/Rules/Sections/... return the shell instead, and for statutes the field is Html, not DocumentHtml.)
+
+READ THIS FIRST. South Dakota is the easiest of the five remaining states and the reason is one
+word in the statute: MAMMAL.
+
+SDCL 40-3-24 is the whole bar. "No person may bring into the state or possess in the state any
+nondomestic mammal unless the mammal is allowed in the state pursuant to section 40-3-25." Not
+animal, mammal. SDCL 40-3-26, which authorises the permit machinery, is likewise limited to "any
+captive nondomestic animal of the mammalia class". So a reptile, an amphibian and an
+invertebrate are outside the Animal Industry Board scheme at the level of the statute, not
+merely of the rule.
+
+ARSD 12:68:18 then does two separate things that are easy to conflate:
+
+12:68:18:03, first sentence, requires an ENTRY permit from the board to import nondomestic
+animals. It is free and can be granted by telephone: see 12:68:18:03.03(1).
+
+12:68:18:03, second sentence, requires a POSSESSION permit for a listed nondomestic mammal. The
+list is five carnivore families, all Artiodactyla, two Perissodactyla families, elephants and
+primates. No rodent, no lagomorph, no marsupial.
+
+The only outright prohibition in the chapter is the raccoon dog at 12:68:18:03.01, and the only
+geographic restriction, at 12:68:18:03.02, is about deer and wild sheep east of the Missouri.
+
+The Game, Fish and Parks side adds nothing for a pet. SDCL 41-1-1 defines "Game" as all wild
+mammals or birds, which excludes reptiles and invertebrates from the start, and defines a
+domestic animal by breeding history rather than by species list. ARSD article 41:09, Special
+Permits and Licenses, runs to shooting preserves, captive game birds, bait, raptors, private
+fish hatcheries, fur dealers, taxidermists, scientific collectors and wildlife rehabilitation.
+There is no captive wildlife chapter for mammals, reptiles or invertebrates.
+
+
+==== SDCL 40-3-24 to 40-3-26, the statute and its mammal limit ====
+
+40-3-24 . Certain nondomestic mammals not allowed--Violation as misdemeanor. No person may bring
+into the state or possess in the state any nondomestic mammal unless the mammal is allowed in
+the state pursuant to § 40-3-25 . This section is effective on the date the rules promulgated
+pursuant to § 40-3-25 are effective. Any violation of this section is a Class 2 misdemeanor.
+Source: SL 1993, ch 311 , § 2. 40-3-25 . Promulgation of rules for bringing nondomestic mammals
+into state. The Animal Industry Board shall promulgate rules pursuant to chapter 1-26 to allow
+to be brought into the state any nondomestic mammals which the board determines would be safe to
+the public and to the free - roaming animals of the state. Before such rules may be adopted, the
+Animal Industry Board shall consult with the Game, Fish and Parks Commission. Source: SL 1993,
+ch 311 , § 3. 40-3-26 . Rules regulating breeding, raising, marketing, and transportation of
+certain captive nondomestic animals. The Animal Industry Board shall, by rules promulgated
+pursuant to chapter 1-26 , regulate the breeding, raising, marketing, and transportation of any
+captive nondomestic animal of the mammalia class and the products thereof which is allowed in
+the state pursuant to § 40-3-25 . The rules may provide the following: (1) Require a permit of
+any person possessing such animals; (2) Prescribe the application procedures for a permit; (3)
+Require a legal description of the premises where such animals are held; (4) Require an
+inventory of such animals at the time of application and require reports to provide for the
+continual accounting of such animals and their offspring; (5) Require the marking of such
+animals for identification purposes; (6) Require facilities and procedures to ensure such
+animals to be confined from free - roaming animals; (7) Establish facility requirements and
+procedures for identification and inspection of such animals by the board; (8) Establish the
+grounds for denial, suspension, or revocation of a permit and for the seizure and disposition of
+any unlawfully held animal; and (9) Establish a fee for a permit which may not exceed one
+hundred dollars. Source: SL 1993, ch 311 , § 4.
+
+
+==== ARSD 12:68:18:03, the entry permit and the possession permit list ====
+
+12:68:18:03. Permit required. A permit from the board is required to import nondomestic animals.
+In addition, a permit as described in § 12:68:18:03.03 is required to possess in South Dakota
+any nondomestic mammal, or any of its hybrids, listed in this section: (1) Of the order
+Carnivora, all nondomestic members of the following families: (a) Felidae; (b) Canidae; (c)
+Ursidae; (d) Mustelidae; and (e) Hyaenidae; (2) Of the order Artiodactyla, all nondomestic
+members; (3) Of the order Perissodactyla, all nondomestic members of the following families: (a)
+Tapiridae; and (b) Rhinocerotidae; and (4) Of the order Proboscidea, all members of the
+following families: (a) African elephant; and (b) Asian elephant; and (5) Of the order Primates.
+
+
+==== ARSD 12:68:18:03.01 and 03.02, the only prohibition and the only geographic limit ====
+
+12:68:18:03.01. Specifically prohibited nondomestic mammals. The board may issue only a
+temporary permit or a zoo permit for possession of the following nondomestic mammals or any of
+their hybrids. Possession of these mammals is otherwise specifically prohibited: Of the family
+Canidae, genus Nyctereutes, species procyonoides (raccoon dog). Source: 20 SDR 96, effective
+December 31, 1993; 44 SDR 47, effective September 18, 2017. General Authority: SDCL 40-3-14 ,
+40-3-25 , 40-3-26 , 40-5-8.6. Law Implemented: SDCL 40-3-24 to 40-3-26 , 40-5-8. Cross-
+Reference: Types of permits -- Fees, § 12:68:18:03.03. Rule 12:68:18:03.02 Specifically
+restricted nondomestic mammals. 12:68:18:03.02. Specifically restricted nondomestic mammals.
+Possession of the following nondomestic mammals is restricted geographically to the area of
+South Dakota east of the Missouri River: (1) Nondomestic mammals that are capable of
+crossbreeding with free-roaming wild elk, specifically including all red deer, sika deer,
+sambar, Pe're Davids deer, and axis deer and any of their hybrids; and (2) Nondomestic mammals
+that are capable of crossbreeding with free-roaming wild sheep and goats or competing
+aggressively for habitat utilized by wild sheep and goats, specifically including all mouflon,
+argali, urial, blue sheep, auodad, barbary sheep, and any of their hybrids. Source: 20 SDR 96,
+effective December 31, 1993. General Authority: SDCL 40-3-14 , 40-3-25 , 40-3-26 , 40-5-8.6. Law
+Implemented: SDCL 40-3-24 to 40-3-26.
+
+
+==== ARSD 12:68:18:03.03, the permit types and fees ====
+
+12:68:18:03.03. Types of permits -- Fees. The board shall issue the following permits to persons
+who meet the requirements of this chapter and pay the required fee: (1) Entry permit (no fee) -
+a permit allowing importation of captive nondomestic animals into South Dakota which may be
+granted by telephone; (2) Temporary permit ($10) - a permit issued to an individual to possess
+for not more than 14 days a captive nondomestic mammal specifically prohibited in §
+12:68:18:03.01 or restricted in § 12:68:18:03.02; (3) Dealer auction permit ($100) - an annual
+permit issued to an individual or a group solely for the purpose of brokering, leasing,
+purchasing, or selling mammals listed in this chapter whether or not a fee or other compensation
+is charged for such services; ( 4 ) Possession permit ($10 an animal to a maximum of $100) - a
+permit issued for the possession of mammals listed in this chapter for any reason other than the
+conditions described in subdivisions (2), (3), and (4) of this section; ( 5 ) Zoo permit ($10 an
+animal to a maximum of $100) - a permit issued to nonprofit exhibitors of nondomestic mammals. A
+zoo permit allows the possession of any class of nondomestic mammals. The board may approve the
+permit if it determines that facilities are adequate for confinement.
+
+
+==== SDCL 41-1-1, the definitions that matter ====
+
+Wild animal: "Wild animal," any mammal, bird, fish, or other creature of a wild nature endowed
+with sensation and the power of voluntary motion.
+
+Domestic animal: "Domestic animal," any animal that through long association with man, has been
+bred to a degree which has resulted in genetic changes affecting the temperament, color,
+conformation, or other attributes of the species to an extent that makes it unique and different
+from wild individuals of its kind;
+
+Game: "Game," all wild mammals or birds; (14) "Game fish," all species belonging to the
+paddlefish, sturgeon, salmon (trout), pike, catfish (including bullheads), sunfish (including
+black bass and crappies), perch (including walleye and sauger), and bass families. All species
+not included in the game fish families are rough fish;

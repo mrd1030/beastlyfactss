@@ -95,215 +95,215 @@
       "NE"
     ],
     "remaining": 0,
-    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
+    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, and as of 2026-09-05 every one of the 52 animals has been read against every one of the 52 jurisdictions. coverage.perAnimal records that per species. An entry means the jurisdiction was read for that animal and this is what it says, including a status of \"legal\", which means read and nothing found. A missing entry would mean it had NOT been read and the answer was unknown, so a missing entry must never be rendered as unrestricted. There are none at present, but the field is the guard for animals or jurisdictions added later, which start unread.",
     "perAnimal": {
-      "rabbit": {
-        "checked": 31,
-        "of": 51
-      },
-      "hissing-cockroach": {
-        "checked": 31,
-        "of": 51
-      },
-      "bearded-dragon": {
-        "checked": 31,
-        "of": 51
-      },
-      "leopard-gecko": {
-        "checked": 31,
-        "of": 51
-      },
-      "crested-gecko": {
-        "checked": 31,
-        "of": 51
-      },
-      "blue-tongue-skink": {
-        "checked": 31,
-        "of": 51
-      },
-      "chameleon-jackson": {
-        "checked": 31,
-        "of": 51
-      },
-      "green-anole": {
-        "checked": 31,
-        "of": 51
-      },
-      "flying-squirrel": {
-        "checked": 33,
-        "of": 51
-      },
-      "tarantula": {
-        "checked": 51,
-        "of": 51
-      },
-      "emperor-scorpion": {
-        "checked": 51,
-        "of": 51
-      },
-      "axolotl": {
-        "checked": 51,
-        "of": 51
-      },
-      "box-turtle": {
-        "checked": 51,
-        "of": 51
-      },
-      "giant-millipede": {
-        "checked": 51,
-        "of": 51
-      },
-      "red-eared-slider": {
-        "checked": 51,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 51,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 51,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 51,
-        "of": 51
-      },
-      "tiger-salamander": {
-        "checked": 51,
-        "of": 51
-      },
-      "savannah-monitor": {
-        "checked": 51,
-        "of": 51
-      },
-      "snapping-turtle": {
-        "checked": 51,
-        "of": 51
-      },
-      "tokay-gecko": {
-        "checked": 51,
-        "of": 51
-      },
-      "nile-monitor": {
-        "checked": 51,
-        "of": 51
-      },
-      "argentine-tegu": {
-        "checked": 51,
-        "of": 51
-      },
-      "green-iguana": {
-        "checked": 51,
-        "of": 51
-      },
-      "burmese-python": {
-        "checked": 51,
-        "of": 51
-      },
-      "russian-tortoise": {
-        "checked": 51,
-        "of": 51
-      },
-      "red-footed-tortoise": {
-        "checked": 51,
-        "of": 51
-      },
-      "degu": {
-        "checked": 51,
-        "of": 51
-      },
-      "ackie-monitor": {
-        "checked": 50,
-        "of": 51
-      },
-      "hamster": {
-        "checked": 51,
-        "of": 51
-      },
-      "gerbil": {
-        "checked": 51,
-        "of": 51
-      },
-      "quaker-parakeet": {
-        "checked": 51,
-        "of": 51
-      },
-      "bengal-cat": {
-        "checked": 51,
-        "of": 51
-      },
-      "guinea-pig": {
-        "checked": 51,
-        "of": 51
-      },
-      "milk-snake": {
-        "checked": 46,
-        "of": 51
-      },
-      "ball-python": {
-        "checked": 51,
-        "of": 51
-      },
-      "veiled-chameleon": {
-        "checked": 51,
-        "of": 51
-      },
-      "boa-constrictor": {
-        "checked": 51,
-        "of": 51
-      },
-      "corn-snake": {
-        "checked": 47,
-        "of": 51
-      },
-      "chinchilla": {
-        "checked": 51,
-        "of": 51
-      },
-      "fennec-fox": {
-        "checked": 51,
-        "of": 51
-      },
-      "serval": {
-        "checked": 51,
-        "of": 51
-      },
-      "rosy-boa": {
-        "checked": 49,
-        "of": 51
-      },
-      "prairie-dog": {
-        "checked": 51,
-        "of": 51
+      "hedgehog": {
+        "checked": 52,
+        "of": 52
       },
       "ferret": {
-        "checked": 51,
-        "of": 51
-      },
-      "capybara": {
-        "checked": 51,
-        "of": 51
-      },
-      "cockatoo": {
-        "checked": 51,
-        "of": 51
-      },
-      "hedgehog": {
-        "checked": 51,
-        "of": 51
+        "checked": 52,
+        "of": 52
       },
       "sugar-glider": {
-        "checked": 51,
-        "of": 51
+        "checked": 52,
+        "of": 52
+      },
+      "hamster": {
+        "checked": 52,
+        "of": 52
+      },
+      "gerbil": {
+        "checked": 52,
+        "of": 52
+      },
+      "quaker-parakeet": {
+        "checked": 52,
+        "of": 52
+      },
+      "bengal-cat": {
+        "checked": 52,
+        "of": 52
+      },
+      "veiled-chameleon": {
+        "checked": 52,
+        "of": 52
+      },
+      "russian-tortoise": {
+        "checked": 52,
+        "of": 52
+      },
+      "ball-python": {
+        "checked": 52,
+        "of": 52
+      },
+      "boa-constrictor": {
+        "checked": 52,
+        "of": 52
+      },
+      "tarantula": {
+        "checked": 52,
+        "of": 52
+      },
+      "emperor-scorpion": {
+        "checked": 52,
+        "of": 52
+      },
+      "argentine-tegu": {
+        "checked": 52,
+        "of": 52
+      },
+      "savannah-monitor": {
+        "checked": 52,
+        "of": 52
+      },
+      "prairie-dog": {
+        "checked": 52,
+        "of": 52
+      },
+      "capybara": {
+        "checked": 52,
+        "of": 52
+      },
+      "fennec-fox": {
+        "checked": 52,
+        "of": 52
+      },
+      "serval": {
+        "checked": 52,
+        "of": 52
+      },
+      "chinchilla": {
+        "checked": 52,
+        "of": 52
+      },
+      "guinea-pig": {
+        "checked": 52,
+        "of": 52
+      },
+      "green-iguana": {
+        "checked": 52,
+        "of": 52
+      },
+      "snapping-turtle": {
+        "checked": 52,
+        "of": 52
+      },
+      "tokay-gecko": {
+        "checked": 52,
+        "of": 52
+      },
+      "tiger-salamander": {
+        "checked": 52,
+        "of": 52
+      },
+      "nile-monitor": {
+        "checked": 52,
+        "of": 52
+      },
+      "burmese-python": {
+        "checked": 52,
+        "of": 52
+      },
+      "degu": {
+        "checked": 52,
+        "of": 52
+      },
+      "axolotl": {
+        "checked": 52,
+        "of": 52
+      },
+      "box-turtle": {
+        "checked": 52,
+        "of": 52
+      },
+      "red-eared-slider": {
+        "checked": 52,
+        "of": 52
+      },
+      "sulcata-tortoise": {
+        "checked": 52,
+        "of": 52
+      },
+      "hognose-snake": {
+        "checked": 52,
+        "of": 52
+      },
+      "african-grey-parrot": {
+        "checked": 52,
+        "of": 52
+      },
+      "giant-millipede": {
+        "checked": 52,
+        "of": 52
+      },
+      "corn-snake": {
+        "checked": 52,
+        "of": 52
+      },
+      "milk-snake": {
+        "checked": 52,
+        "of": 52
+      },
+      "rosy-boa": {
+        "checked": 52,
+        "of": 52
+      },
+      "flying-squirrel": {
+        "checked": 52,
+        "of": 52
+      },
+      "ackie-monitor": {
+        "checked": 52,
+        "of": 52
       },
       "garter-snake": {
-        "checked": 51,
-        "of": 51
+        "checked": 52,
+        "of": 52
       },
       "kingsnake": {
-        "checked": 51,
-        "of": 51
+        "checked": 52,
+        "of": 52
+      },
+      "cockatoo": {
+        "checked": 52,
+        "of": 52
+      },
+      "red-footed-tortoise": {
+        "checked": 52,
+        "of": 52
+      },
+      "bearded-dragon": {
+        "checked": 52,
+        "of": 52
+      },
+      "leopard-gecko": {
+        "checked": 52,
+        "of": 52
+      },
+      "crested-gecko": {
+        "checked": 52,
+        "of": 52
+      },
+      "blue-tongue-skink": {
+        "checked": 52,
+        "of": 52
+      },
+      "chameleon-jackson": {
+        "checked": 52,
+        "of": 52
+      },
+      "green-anole": {
+        "checked": 52,
+        "of": 52
+      },
+      "rabbit": {
+        "checked": 52,
+        "of": 52
+      },
+      "hissing-cockroach": {
+        "checked": 52,
+        "of": 52
       }
     }
   },
@@ -753,7 +753,7 @@
     "ks-32-1301": {
       "title": "K.S.A. 32-1301, Dangerous regulated animals; definitions",
       "url": "https://www.ksrevisor.gov/statutes/chapters/ch32/032_013_0001.html",
-      "note": "Kansas restricts three things and nothing else. The definition is short enough to read in full, which is what makes it useful: everything outside it is untouched by the Act."
+      "note": "Kansas restricts three things here and nothing else, and the definition is short enough to read in full. But this Act is not where a Kansas answer ends. K.S.A. 32-701 defines wildlife as any member of the animal kingdom and K.S.A. 32-1002(a)(2) makes possessing wildlife unlawful unless a rule of the secretary permits it, so the operative rules are K.A.R. 115-20-3 for anything not native and K.A.R. 115-20-2 and 115-15-2 for anything that is."
     },
     "sc-47-2": {
       "title": "S.C. Code Title 47, Chapter 2, Large Wild Cats, Non-Native Bears and Great Apes",
@@ -778,7 +778,7 @@
     "wv-19-34": {
       "title": "W. Va. Code § 19-34, Dangerous Wild Animals Act",
       "url": "https://code.wvlegislature.gov/19-34/",
-      "note": "Unusual structure, and the reason most entries here are unclear. § 19-34-4 bans possession of a dangerous wild animal, but § 19-34-2 defines the term by character rather than by species and § 19-34-5 directs a three member board to create the actual list by legislative rule. The statute itself names no animal. Until that list is confirmed in force, the ban has no species attached to it."
+      "note": "Unusual structure. § 19-34-4 bans possession of a dangerous wild animal, § 19-34-2 defines the term by character rather than by species, and § 19-34-5 directs a three member board to write the actual list by legislative rule. The statute names no animal, so it never answers anything on its own. The board did write the list: W. Va. C.S.R. § 74-1-3, effective 5 April 2022. Read that, and read W. Va. Code § 20-1-2 with § 20-2-4 for anything native, because this Act has nothing to say about a West Virginia species."
     },
     "ak-5aac92-029": {
       "title": "5 AAC 92.029, Permit for possessing live game",
@@ -803,12 +803,12 @@
     "nd-36-01": {
       "title": "North Dakota Century Code Chapter 36-01, Board of Animal Health",
       "url": "https://ndlegis.gov/cencode/t36c01.pdf",
-      "note": "The chapter names only three restrictions relevant to pets: skunks and raccoons may not be kept at all, mountain lions and wolves need a tattooed identification number, and the board is to make rules on primates. § 36-01-08.1 says the board may require a licence for nontraditional livestock, meaning any wildlife held in confinement, but the wording is permissive."
+      "note": "The chapter names only three restrictions relevant to pets: skunks and raccoons may not be kept at all, mountain lions and wolves need a tattooed identification number, and the board is to make rules on primates. § 36-01-08.1 says the board may require a licence for nontraditional livestock, meaning any wildlife held in confinement. The wording is permissive but the board has used it: see NDAC article 48.1-09 for the three categories and the licence, and § 36-01-00.1(3) for a definition of domestic animal that runs only to dogs, cats, horses, cattle, sheep, goats, bison, farmed elk, llamas, alpacas and swine."
     },
     "nd-48-1": {
       "title": "North Dakota Administrative Code Title 48.1, State Board of Animal Health",
       "url": "https://ndlegis.gov/information/acdata/pdf/48.1-13-02.pdf",
-      "note": "The old title 48, which carried the nontraditional livestock category system, is repealed. What replaced it is a set of importation health chapters. Chapter 48.1-13-02 covers everything else and asks only for a certificate of veterinary inspection and an importation permit number from the state veterinarian."
+      "note": "Title 48 was renumbered, not gutted. The nontraditional livestock category system is alive at article 48.1-09, where 48.1-09-01-02 sorts every nondomestic species held in confinement into three categories and 48.1-09-01-03 requires a licence, in hand before the animal is acquired, for categories 2 and 3. Chapter 48.1-13-02 is the catch-all importation chapter and asks for a certificate of veterinary inspection and an importation permit number from the state veterinarian."
     },
     "wy-ch10": {
       "title": "Wyoming Game and Fish Commission Regulation Chapter 10, Importation and Possession of Live Warm-Blooded Wildlife",
@@ -1519,6 +1519,56 @@
       "title": "Iowa Code §§ 481A.1, 481A.38, 481A.42 and 481A.60 to 481A.61",
       "url": "https://www.legis.iowa.gov/docs/code/481A.pdf",
       "note": "The native side of Iowa, and the half that 717F never reaches. § 481A.1(36) defines a wild animal as \"a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state\", a geographic qualifier that puts an exotic pet outside the chapter. § 481A.1(21) defines game as a closed list of taxa and (f) is \"The Sciuridae: such as gray squirrels and fox squirrels\", the family rather than the two examples. § 481A.38 then bars possessing game or protected nongame except as the chapter provides, § 481A.42 makes protected nongame \"wild fish, wild birds, wild bats, wild reptiles, and wild amphibians\" and no invertebrate, and §§ 481A.60 and 481A.61 are the game breeder licence, which is the only route by which a person may possess a live game animal."
+    },
+    "ks-32-701-1002": {
+      "title": "K.S.A. 32-701 (definitions) and K.S.A. 32-1002 (unlawful taking or dealing in wildlife)",
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/032_000_0000_chapter/032_007_0000_article/032_007_0001_section/032_007_0001_k/",
+      "note": "32-701 defines wildlife as any member of the animal kingdom, arthropods and other invertebrates included, and excludes only agricultural livestock. 32-1002(a)(2) then makes it unlawful to possess any wildlife at all except as permitted by law or by the secretary rules and regulations, which is what makes the Article 20 regulations decisive rather than the dangerous regulated animal statute."
+    },
+    "ks-115-20-3": {
+      "title": "K.A.R. 115-20-3, Exotic wildlife; possession, sale and requirements, and K.A.R. 115-20-2, Certain wildlife; legal equipment, taking methods, possession, and license requirement",
+      "url": "https://www.law.cornell.edu/regulations/kansas/K-A-R-115-20-3",
+      "note": "115-20-3 is the permission K.S.A. 32-1002 refers to for anything not native to Kansas. 115-20-2 is the parallel permission for Kansas own wildlife, and it carries caps that 115-20-3 does not: five reptiles and two of any one reptile species per person or domicile. Read from Cornell LII because ksrevisor.gov serves a bot-check loader and both ksoutdoors.gov and www.kdwp.state.ks.us refuse this container outright."
+    },
+    "ks-115-15-2": {
+      "title": "K.A.R. 115-15-2, Nongame species; general provisions",
+      "url": "https://www.law.cornell.edu/regulations/kansas/K-A-R-115-15-2",
+      "note": "The list of nongame species in need of conservation, adopted under K.S.A. 32-959. It is both a protection and a statement of nativity: a species on it exists in Kansas, which takes it out of the exotic wildlife definition in 115-20-3(d) and out of the takeable list in 115-20-2(b)."
+    },
+    "ms-40-5-2-3": {
+      "title": "40 Miss. Admin. Code Part 5, Chapter 2, Rule 2.3, Regulations Regarding Non-Game Wildlife In Need of Management",
+      "url": "https://www.mdwfp.com/sites/default/files/2024-04/w_-_23-non-game_wildlife_in_need_of_mgmt-final.pdf",
+      "note": "The rule that answers Mississippi natives, and the one the dangerous animal rule never reaches. It covers thirty-two small mammals and all native reptiles and amphibians, names each species, and requires a hunting licence to possess any of them for personal use. mdwfp.com serves a cert without its GlobalSign intermediate; complete the chain rather than skipping verification."
+    },
+    "nd-48-1-09": {
+      "title": "North Dakota Administrative Code Article 48.1-09, Nontraditional Livestock",
+      "url": "https://www.ndlegis.gov/information/acdata/pdf/48.1-09-01.pdf",
+      "note": "The nontraditional livestock category system is alive and sits here, not in the repealed title 48. 48.1-09-01-02 sorts every nondomestic species held in confinement into three categories, category 1 needing no licence and categories 2 and 3 needing one before the animal is acquired. Subsection 4 exempts arachnids and invertebrates from even the importation permit."
+    },
+    "sd-40-3-24": {
+      "title": "SDCL 40-3-24 to 40-3-26, nondomestic mammals, and SDCL 41-1-1, Game, Fish and Parks definitions",
+      "url": "https://sdlegislature.gov/Statutes/40-3-24",
+      "note": "40-3-24 is the whole of South Dakota bar and it reaches mammals only: no person may bring in or possess any nondomestic mammal unless the Animal Industry Board rules allow it. Nothing in title 40 or title 41 puts a reptile or an invertebrate under a possession permit. 41-1-1(9) defines a domestic animal by breeding history rather than by species list."
+    },
+    "wv-74-1": {
+      "title": "W. Va. Code St. R. § 74-1, Dangerous Wild Animal Board, Dangerous Wild Animal",
+      "url": "https://apps.sos.wv.gov/adlaw/csr/ruleview.aspx?document=17393",
+      "note": "The list the Dangerous Wild Animal Act pointed at, adopted 5 April 2022 and in force until 5 April 2032. It is a mammal list plus the Komodo dragon: hyenas, gray wolves, six big cats and four smaller ones, bears other than the native black bear, elephants, rhinos, hippos, Cape buffalo, African wild dogs and non-human primates with eleven named exclusions. No snake, no lizard other than the Komodo, no bird, no invertebrate."
+    },
+    "wv-20-1-2": {
+      "title": "W. Va. Code § 20-1-2 (definitions), § 20-2-4 (possession of wildlife), § 20-2-13 (importation) and § 20-2-51 (permit for keeping pets)",
+      "url": "https://code.wvlegislature.gov/20-1-2/",
+      "note": "West Virginia splits its animals by two definitions in one section. Wildlife takes in reptiles, amphibians, mollusks and crustaceans with no nativity limit and no terrestrial arthropod at all. Wild animals means all mammals native to the State of West Virginia, which is the phrase that decides every mammal here. § 20-2-4 bars possessing either except as the chapter or a rule provides, and § 20-2-51 is the only pet route, a two dollar permit from the director."
+    },
+    "wv-58-73": {
+      "title": "W. Va. Code St. R. § 58-73, Reptile and Amphibian Rule, and the DNR Reptile and Amphibian Regulations summary",
+      "url": "https://wvdnr.gov/wp-content/uploads/2026/01/Reptile.and_.Amphibian.Reg_.Summary.05.2023.pdf",
+      "note": "A closed list for natives. Section 4 names ten salamanders for bait, two frogs, and exactly two turtles. No lizard and no snake appears anywhere in it, and 58-73-1.1 says possession of any native species not listed is prohibited. The DNR summary of this rule opens by saying West Virginia herp regulations prohibit the possession of 80 species of reptiles and amphibians."
+    },
+    "wv-dnr-herps": {
+      "title": "West Virginia Division of Natural Resources, Amphibians and Reptiles of West Virginia",
+      "url": "https://wvdnr.gov/plants-animals/amphibians-reptiles/",
+      "note": "The department own checklist, which is what 58-73 nativity turns on. Six lizards, none of them an anole: eastern six-lined racerunner, northern coal skink, common five-lined skink, broad-headed skink, eastern fence lizard, little brown skink. Twenty-two snakes including the cornsnake, eastern gartersnake, eastern milksnake and eastern kingsnake. Thirteen turtles and one subspecies, the woodland box turtle among them."
     }
   },
   "animals": {
@@ -5909,12 +5959,12 @@
           "localOverride": true
         },
         "WV": {
-          "status": "unclear",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)(E)",
-          "quote": "(E) Constrictor snakes greater than six feet, and venomous snakes;",
-          "note": "Six feet is a low bar for a boa constrictor, so most adults would be caught if the list is adopted as guided.",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "wv-74-1",
+          "cite": "W. Va. C.S.R. § 74-1-3.1",
+          "quote": "The Dangerous Wild Animal List adopted by the Board is as follows: 3.1.a. Hyenas; 3.1.b. Gray wolves, excluding hybrids; 3.1.c. Lions; 3.1.d. Tigers; 3.1.e. Jaguars; 3.1.f. Leopards, including clouded leopards, Sunda clouded leopards, and snow leopards; and 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: 3.1.g.1. Cheetahs; 3.1.g.2. Lynxes ...; 3.1.g.3. Cougars ...; and 3.1.g.4. Caracals. 3.1.h. Bears; (excluding black bears native to this state); 3.1.i. Elephants; 3.1.j. Rhinoceroses; 3.1.k. Hippopotamuses; 3.1.l. Cape buffalo; 3.1.m. African wild dogs; 3.1.n. Komodo dragons; 3.1.o. Nonhuman primates ...",
+          "note": "The list the Dangerous Wild Animal Act directed a three member board to write was adopted on 5 April 2022 and runs until 2032, so the entries here no longer turn on what § 19-34-5 told the board to consider. No snake appears on the adopted list. The six-foot constrictor threshold was guidance to the board, and the board did not carry it across: the only reptile it listed is the Komodo dragon.",
+          "verifiedOn": "2026-09-05"
         },
         "AK": {
           "status": "legal",
@@ -8128,12 +8178,13 @@
           "verifiedOn": "2026-08-04"
         },
         "ND": {
-          "status": "unclear",
-          "sourceId": "nd-36-01",
-          "cite": "§ 36-01-08.1",
-          "quote": "\"Nontraditional livestock\" means any wildlife held in a cage, fence, enclosure, or other manmade means of confinement that limits its movement within definite boundaries",
-          "note": "Native to North Dakota and plainly wildlife held in confinement, so it falls inside the definition even though no rule currently attaches a licence to it.",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(2)(b); 48.1-09-01-03(1)",
+          "quote": "Category 2 species of nontraditional livestock includes ... prairie dogs, and other ground squirrels",
+          "note": "Named in category 2, so a licence from the state board of animal health is required, and 48.1-09-01-03(1) says the owner shall obtain it before acquiring the animal. The board also has to inspect and approve the premises first under 48.1-09-01-03(2)(b), and the annual fee under NDCC 36-01-08.1 is fifteen dollars for a non-bird species to a hundred dollar cap.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         },
         "WY": {
           "status": "permit",
@@ -8959,12 +9010,12 @@
           "localOverride": true
         },
         "WV": {
-          "status": "unclear",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)(C)",
-          "quote": "Create a comprehensive list of dangerous wild animals... The list may include, but not be limited to: ...(C) Canids;",
-          "note": "Canids are named as a category with no species detail, so a fennec fox is squarely within the guidance and squarely outside anything enforceable until the list exists.",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "wv-74-1",
+          "cite": "W. Va. C.S.R. § 74-1-3.1",
+          "quote": "The Dangerous Wild Animal List adopted by the Board is as follows: 3.1.a. Hyenas; 3.1.b. Gray wolves, excluding hybrids; 3.1.c. Lions; 3.1.d. Tigers; 3.1.e. Jaguars; 3.1.f. Leopards, including clouded leopards, Sunda clouded leopards, and snow leopards; and 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: 3.1.g.1. Cheetahs; 3.1.g.2. Lynxes ...; 3.1.g.3. Cougars ...; and 3.1.g.4. Caracals. 3.1.h. Bears; (excluding black bears native to this state); 3.1.i. Elephants; 3.1.j. Rhinoceroses; 3.1.k. Hippopotamuses; 3.1.l. Cape buffalo; 3.1.m. African wild dogs; 3.1.n. Komodo dragons; 3.1.o. Nonhuman primates ...",
+          "note": "The list the Dangerous Wild Animal Act directed a three member board to write was adopted on 5 April 2022 and runs until 2032, so the entries here no longer turn on what § 19-34-5 told the board to consider. The only canids the board listed are gray wolves, excluding hybrids, and African wild dogs. Vulpes zerda is neither.",
+          "verifiedOn": "2026-09-05"
         },
         "AK": {
           "status": "banned",
@@ -9435,12 +9486,12 @@
           "localOverride": true
         },
         "WV": {
-          "status": "unclear",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "Big cats are the second item the board is pointed at. Whether a serval counts as a big cat is exactly the kind of question the missing list was meant to answer.",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "wv-74-1",
+          "cite": "W. Va. C.S.R. § 74-1-3.1",
+          "quote": "The Dangerous Wild Animal List adopted by the Board is as follows: 3.1.a. Hyenas; 3.1.b. Gray wolves, excluding hybrids; 3.1.c. Lions; 3.1.d. Tigers; 3.1.e. Jaguars; 3.1.f. Leopards, including clouded leopards, Sunda clouded leopards, and snow leopards; and 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: 3.1.g.1. Cheetahs; 3.1.g.2. Lynxes ...; 3.1.g.3. Cougars ...; and 3.1.g.4. Caracals. 3.1.h. Bears; (excluding black bears native to this state); 3.1.i. Elephants; 3.1.j. Rhinoceroses; 3.1.k. Hippopotamuses; 3.1.l. Cape buffalo; 3.1.m. African wild dogs; 3.1.n. Komodo dragons; 3.1.o. Nonhuman primates ...",
+          "note": "The list the Dangerous Wild Animal Act directed a three member board to write was adopted on 5 April 2022 and runs until 2032, so the entries here no longer turn on what § 19-34-5 told the board to consider. The cats the board listed are lions, tigers, jaguars, leopards, cheetahs, lynxes, cougars and caracals, each named. The serval is absent, and the hybrid clause in 3.1.g attaches to the four species under it rather than to cats generally.",
+          "verifiedOn": "2026-09-05"
         },
         "AK": {
           "status": "banned",
@@ -9477,12 +9528,13 @@
           "verifiedOn": "2026-08-04"
         },
         "ND": {
-          "status": "unclear",
-          "sourceId": "nd-36-01",
-          "cite": "§ 36-01-08.1",
-          "quote": "The board of animal health may require a license for nontraditional livestock maintained within this state.",
-          "note": "Nontraditional livestock is defined as any wildlife held in confinement, which reaches a serval. Whether a licence is actually required turns on board rules, and the chapter of the administrative code that used to carry the species categories has been repealed. Ask the state veterinarian.",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(2)(b); 48.1-09-01-03(1)",
+          "quote": "Category 2 species of nontraditional livestock includes ... nondomestic cats not listed in category 3",
+          "note": "Category 3 names the big cats, mountain lion, jaguar, leopard, lion, tiger and cheetah, and the serval is not one of them, so it falls to category 2 as a nondomestic cat and needs a licence before it is acquired, with a premises inspection first.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         },
         "WY": {
           "status": "permit",
@@ -11041,12 +11093,12 @@
           "localOverride": true
         },
         "WV": {
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
           "status": "legal",
-          "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians. Nothing here falls in those categories.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-4.5",
+          "quote": "A person may take and possess a daily creel limit of 10 eastern spiny softshell (Apalone s. spinifera) and snapping turtle (Chelydra s. serpentina) and the possession limit in aggregate is 20 for these species of turtles.",
+          "note": "One of only two reptiles West Virginia allows anyone to take and hold. The limits are real and they are the reason this is not simply unregulated: ten a day and twenty in aggregate across the two species. 58-73-3.1 separately bars taking or possessing turtle eggs of any species, and 58-73-3.3 bars releasing back into the wild anything held more than thirty days.",
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "sourceId": "va-4vac15-30-40",
@@ -12742,12 +12794,12 @@
           "localOverride": true
         },
         "WV": {
-          "status": "unclear",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)(E)",
-          "quote": "(E) Constrictor snakes greater than six feet, and venomous snakes;",
-          "note": "An adult Burmese python is well over six feet, so it falls inside the category the board was told to consider.",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "wv-74-1",
+          "cite": "W. Va. C.S.R. § 74-1-3.1",
+          "quote": "The Dangerous Wild Animal List adopted by the Board is as follows: 3.1.a. Hyenas; 3.1.b. Gray wolves, excluding hybrids; 3.1.c. Lions; 3.1.d. Tigers; 3.1.e. Jaguars; 3.1.f. Leopards, including clouded leopards, Sunda clouded leopards, and snow leopards; and 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: 3.1.g.1. Cheetahs; 3.1.g.2. Lynxes ...; 3.1.g.3. Cougars ...; and 3.1.g.4. Caracals. 3.1.h. Bears; (excluding black bears native to this state); 3.1.i. Elephants; 3.1.j. Rhinoceroses; 3.1.k. Hippopotamuses; 3.1.l. Cape buffalo; 3.1.m. African wild dogs; 3.1.n. Komodo dragons; 3.1.o. Nonhuman primates ...",
+          "note": "The list the Dangerous Wild Animal Act directed a three member board to write was adopted on 5 April 2022 and runs until 2032, so the entries here no longer turn on what § 19-34-5 told the board to consider. No snake appears on the adopted list, the Komodo dragon being its only reptile, so the length question the statute raised never became law here.",
+          "verifiedOn": "2026-09-05"
         },
         "AK": {
           "status": "legal",
@@ -14041,12 +14093,12 @@
           "localOverride": true
         },
         "WV": {
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "status": "legal",
-          "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians. Nothing here falls in those categories.",
-          "verifiedOn": "2026-08-05"
+          "status": "banned",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-4.5; W. Va. Code § 20-2-4(a)",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia bars its own reptiles rather than exotic ones, which is the opposite of how most states are built and the reason this reads as banned while a bearded dragon here is legal. 58-73-1.1 prohibits taking or possessing any native species not listed later in the rule, and section 4 lists ten salamanders for bait, two frogs, and two turtles, the snapping turtle and the eastern spiny softshell. No snake and no lizard is anywhere in it. The DNR summary of the rule opens by saying West Virginia herp regulations prohibit the possession of 80 species of reptiles and amphibians. The DNR checklist names the Woodland Box Turtle (Terrapene c. carolina), and the two turtles 58-73-4.5 does allow are the eastern spiny softshell and the snapping turtle.",
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "sourceId": "va-4vac15-30-40",
@@ -15370,12 +15422,12 @@
           "localOverride": true
         },
         "WV": {
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "status": "legal",
-          "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians. Nothing here falls in those categories.",
-          "verifiedOn": "2026-08-05"
+          "status": "banned",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-4; W. Va. Code § 20-2-4(a)",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia bars its own reptiles rather than exotic ones, which is the opposite of how most states are built and the reason this reads as banned while a bearded dragon here is legal. 58-73-1.1 prohibits taking or possessing any native species not listed later in the rule, and section 4 lists ten salamanders for bait, two frogs, and two turtles, the snapping turtle and the eastern spiny softshell. No snake and no lizard is anywhere in it. The DNR summary of the rule opens by saying West Virginia herp regulations prohibit the possession of 80 species of reptiles and amphibians. The DNR checklist names the Eastern Hog-nosed Snake (Heterodon platirhinos) among the state twenty-two snakes.",
+          "verifiedOn": "2026-09-05"
         },
         "VA": {
           "sourceId": "va-4vac15-30-40",
@@ -16872,12 +16924,12 @@
           "verifiedOn": "2026-08-27"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)(E)",
-          "quote": "Constrictor snakes greater than six feet, and venomous snakes;",
-          "note": "A corn snake, at a couple feet, is nowhere near the six-foot constrictor threshold.",
-          "verifiedOn": "2026-08-27"
+          "status": "banned",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-4; W. Va. Code § 20-2-4(a)",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia bars its own reptiles rather than exotic ones, which is the opposite of how most states are built and the reason this reads as banned while a bearded dragon here is legal. 58-73-1.1 prohibits taking or possessing any native species not listed later in the rule, and section 4 lists ten salamanders for bait, two frogs, and two turtles, the snapping turtle and the eastern spiny softshell. No snake and no lizard is anywhere in it. The DNR summary of the rule opens by saying West Virginia herp regulations prohibit the possession of 80 species of reptiles and amphibians. The DNR checklist names the Cornsnake (Pantherophis guttatus) among the state twenty-two snakes, which is easy to miss because West Virginia is at the northern edge of its range.",
+          "verifiedOn": "2026-09-05"
         },
         "WY": {
           "status": "legal",
@@ -17269,12 +17321,12 @@
           "verifiedOn": "2026-09-05"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)(E)",
-          "quote": "Constrictor snakes greater than six feet, and venomous snakes;",
-          "note": "A milk snake, at a couple feet, is nowhere near the six-foot constrictor threshold.",
-          "verifiedOn": "2026-08-27"
+          "status": "banned",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-4; W. Va. Code § 20-2-4(a)",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia bars its own reptiles rather than exotic ones, which is the opposite of how most states are built and the reason this reads as banned while a bearded dragon here is legal. 58-73-1.1 prohibits taking or possessing any native species not listed later in the rule, and section 4 lists ten salamanders for bait, two frogs, and two turtles, the snapping turtle and the eastern spiny softshell. No snake and no lizard is anywhere in it. The DNR summary of the rule opens by saying West Virginia herp regulations prohibit the possession of 80 species of reptiles and amphibians. The DNR checklist names the Eastern Milksnake (Lampropeltis t. triangulum) among the state twenty-two snakes.",
+          "verifiedOn": "2026-09-05"
         },
         "WY": {
           "status": "legal",
@@ -18208,6 +18260,52 @@
           "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
           "note": "The rodent category at (C) is qualified: \"Domesticated rodents and rabbits\". A southern flying squirrel is a rodent and is not domesticated, so it falls outside the exception the guinea pig and the hamster sit inside. This is the same qualifier that decides the rabbit the other way in the same clause. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
           "verifiedOn": "2026-09-05"
+        },
+        "KS": {
+          "status": "banned",
+          "sourceId": "ks-115-15-2",
+          "cite": "K.A.R. 115-15-2(a)(6); K.S.A. 32-1002(a)(2)",
+          "quote": "The following species shall be designated nongame species in need of conservation within the boundaries of the state of Kansas. ... (6) Mammals ... Southern flying squirrel, Glaucomys volans (Linnaeus, 1758)",
+          "note": "Three rules have to be read together and each one closes a door. K.S.A. 32-1002(a)(2) makes it unlawful to possess any wildlife except as permitted by law or regulation. 115-20-3 permits exotic wildlife, but 115-20-3(d) defines that as species not native to Kansas, and this regulation is the state saying in terms that Glaucomys volans is a Kansas species. 115-20-2 permits taking certain Kansas wildlife for personal use, but subsection (b) excludes any species listed in K.A.R. 115-15-1 or K.A.R. 115-15-2, which is this list. Nothing is left, and the special-permit regulation at 115-15-3 covers threatened and endangered wildlife rather than nongame species in need of conservation.",
+          "grandfathered": {
+            "before": "1990-01-01",
+            "detail": "K.A.R. 115-15-2(c) lets an animal possessed before the regulation took effect be retained if an affidavit was filed with and approved by the secretary before 1 January 1990, or possession had already been approved by the department."
+          },
+          "verifiedOn": "2026-09-05"
+        },
+        "MS": {
+          "status": "permit",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "40 Miss. Admin. Code Pt. 5, R. 2.3(B), (C)(2), (F)",
+          "quote": "NONGAME MAMMALS ... SQUIRRELS Tamias striatus EASTERN CHIPMUNK Marmota monax WOODCHUCK Glaucomys volans SOUTHERN FLYING",
+          "note": "Named by binomial on the nongame mammal list, which settles both nativity and treatment. The same licence requirement in 2.3(C)(2) that covers the anole covers this animal, and 2.3(F) caps nongame mammals at ten in possession with no more than two of the same species. Selling one taken from the wild is barred by 2.3(C)(1), and captive propagation for commercial purposes needs a separate permit under 2.3(I).",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(2)(b); 48.1-09-02-01; 48.1-09-01-02(6)",
+          "quote": "Category 2 species of nontraditional livestock includes the following species and their hybrids, all nondomestic ungulates ... prairie dogs, and other ground squirrels, other species as ordered by the board",
+          "note": "The category 2 squirrel entry is written for ground squirrels, prairie dogs first among them, and a flying squirrel is arboreal rather than a ground squirrel, so the licence requirement does not reach it. Nothing in category 3 does either, and NDCC 36-01-08.4 prohibits only skunks and raccoons. What remains is the importation side: bringing one into North Dakota needs a certificate of veterinary inspection and an importation permit number under 48.1-09-02-01, since no mammal but the gerbil, guinea pig, hamster, mouse, rat and sugar glider is exempt. There is one more step for a species in no category at all: 48.1-09-01-02(6) says nontraditional livestock not otherwise referred to in the section or the Century Code must be reviewed by the board for determination of importation and licensure requirements prior to importation. That is a review before bringing one in, not a bar on keeping one already here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "ARSD 12:68:18:03; 12:68:18:03.01",
+          "quote": "a permit as described in § 12:68:18:03.03 is required to possess in South Dakota any nondomestic mammal, or any of its hybrids, listed in this section: (1) Of the order Carnivora, all nondomestic members of the following families: (a) Felidae; (b) Canidae; (c) Ursidae; (d) Mustelidae; and (e) Hyaenidae; (2) Of the order Artiodactyla, all nondomestic members; (3) Of the order Perissodactyla, all nondomestic members of the following families: (a) Tapiridae; and (b) Rhinocerotidae; and (4) Of the order Proboscidea ... and (5) Of the order Primates.",
+          "note": "This is the one animal of the nine that is a nondomestic mammal and so inside SDCL 40-3-24, and the list that would catch it does not. Rodents are absent from all five entries, the specifically prohibited list at 12:68:18:03.01 contains the raccoon dog and nothing else, and the geographic restriction at 12:68:18:03.02 is about deer and wild sheep. The free entry permit under 12:68:18:03.03(1) applies to bringing one in.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-1-2, § 20-2-4(a), § 20-2-51",
+          "quote": "The director may issue a permit to a person to keep and maintain in captivity as a pet, a wild animal or wild bird that has been acquired from a commercial dealer or during the legal open season. The fee therefor shall be $2.",
+          "permitFor": "personal",
+          "note": "A flying squirrel is a mammal native to West Virginia, so it is a wild animal under § 20-1-2 and § 20-2-4(a) makes it unlawful to maintain one in captivity except as the chapter or a rule provides. § 20-2-51 is that provision and it is unusually direct about pets: a two dollar permit from the director, for an animal acquired from a commercial dealer or taken in the open season. The DNR names the West Virginia northern flying squirrel, Glaucomys sabrinus fuscus, as a state species, and the southern flying squirrel shares the state with it. A West Virginia citation naming Glaucomys volans specifically was not found, so if the department treats only the northern species as native the analysis would need revisiting.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -19015,11 +19113,12 @@
           "verifiedOn": "2026-09-05"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "note": "The only reptiles West Virginia's dangerous-wild-animal guidance points at are large constrictors, venomous snakes, and crocodilians.",
-          "verifiedOn": "2026-08-27"
+          "status": "banned",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-4; W. Va. Code § 20-2-4(a)",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia bars its own reptiles rather than exotic ones, which is the opposite of how most states are built and the reason this reads as banned while a bearded dragon here is legal. 58-73-1.1 prohibits taking or possessing any native species not listed later in the rule, and section 4 lists ten salamanders for bait, two frogs, and two turtles, the snapping turtle and the eastern spiny softshell. No snake and no lizard is anywhere in it. The DNR summary of the rule opens by saying West Virginia herp regulations prohibit the possession of 80 species of reptiles and amphibians. The DNR checklist names the Eastern Gartersnake (Thamnophis s. sirtalis) among the state twenty-two snakes.",
+          "verifiedOn": "2026-09-05"
         },
         "WY": {
           "status": "legal",
@@ -19428,11 +19527,12 @@
           "verifiedOn": "2026-08-27"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "note": "The only reptiles West Virginia's dangerous-wild-animal guidance points at are large constrictors, venomous snakes, and crocodilians.",
-          "verifiedOn": "2026-08-27"
+          "status": "banned",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-4; W. Va. Code § 20-2-4(a)",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia bars its own reptiles rather than exotic ones, which is the opposite of how most states are built and the reason this reads as banned while a bearded dragon here is legal. 58-73-1.1 prohibits taking or possessing any native species not listed later in the rule, and section 4 lists ten salamanders for bait, two frogs, and two turtles, the snapping turtle and the eastern spiny softshell. No snake and no lizard is anywhere in it. The DNR summary of the rule opens by saying West Virginia herp regulations prohibit the possession of 80 species of reptiles and amphibians. The DNR checklist names both the Eastern Kingsnake (Lampropeltis nigra) and the Eastern Black Kingsnake (Lampropeltis g. niger).",
+          "verifiedOn": "2026-09-05"
         },
         "WY": {
           "status": "legal",
@@ -20684,6 +20784,46 @@
           "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
           "note": "The reptile category at (E) is \"Non-venomous snakes, fish, and turtles\" and no lizard appears anywhere in the seven, which is what bars the bearded dragon, the green iguana and the veiled chameleon alike in the District. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
           "verifiedOn": "2026-09-05"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d)",
+          "quote": "Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin.",
+          "note": "Kansas defines wildlife at K.S.A. 32-701 as any member of the animal kingdom and then makes possessing wildlife unlawful at K.S.A. 32-1002(a)(2) unless a regulation permits it, so the answer never sits in the dangerous regulated animal statute. This is the regulation that permits it. 115-20-3(d) reads exotic wildlife as species that are not native or indigenous to Kansas, or do not presently exist here as an established wild population, and 115-20-3(b) adds that exotic wildlife may be possessed without limit in time and number. The proviso in subsection (a) is the only condition: the animal has to have been lawfully raised or acquired where it came from, which a captive-bred Pogona from a breeder satisfies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "40 Miss. Admin. Code Pt. 5, R. 2.3(A)(1)(a)",
+          "quote": "Nongame species in need of management in Mississippi include: a. Thirty-two (32) species of small mammals, one species of freshwater fish, and all native species of reptiles and amphibians except those regulated by other rules of the Commission on Wildlife, Fisheries and Parks.",
+          "note": "Mississippi regulates its own reptiles closely and non-native ones not at all. Rule 2.3 is drawn around native species, names every one it covers, and this animal is not among them. The other rule that could reach a reptile, Rule 8.3 on animals inherently dangerous to humans, runs from apes and wolves through bears, hyenas, big cats, elephants, rhinos, hippos and African buffalo and stops there. No lizard of any kind appears in Rule 8.3, and Pogona vitticeps is Australian.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5); 48.1-09-02-01; 48.1-09-01-02(6)",
+          "quote": "Category 3 species of nontraditional livestock includes the following species and their hybrids: (1) All wild species of the family suidae ... (5) Venomous reptiles and nonvenomous injurious reptiles.",
+          "note": "North Dakota sorts every nondomestic animal held in confinement into three categories and only categories 2 and 3 need a licence, which has to be in hand before the animal is acquired. The only reptiles in either are the venomous and the nonvenomous injurious ones in category 3, so this animal needs no licence. Importing it is the part that is not free: 48.1-09-02-01 requires a certificate of veterinary inspection and an importation permit number from the state veterinarian for nontraditional livestock, and the exemption list at 48.1-09-01-02(4) covers arachnids, invertebrates, tropical fish, gerbils, guinea pigs, hamsters, mice, rats and sugar gliders but no reptile. Pogona vitticeps is neither venomous nor injurious, so category 3 does not reach it. There is one more step for a species in no category at all: 48.1-09-01-02(6) says nontraditional livestock not otherwise referred to in the section or the Century Code must be reviewed by the board for determination of importation and licensure requirements prior to importation. That is a review before bringing one in, not a bar on keeping one already here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota own bar is limited to mammals by the statute, not just by the rule that implements it, which is what makes this straightforward. ARSD 12:68:18:03 then lists the mammal families that need a possession permit and nothing else is reached. Game, Fish and Parks has no captive wildlife article for reptiles or invertebrates: ARSD article 41:09 runs to shooting preserves, captive game birds, bait, raptors, fish hatcheries, fur dealers, taxidermists, scientific collectors and rehabilitation. A free entry permit, obtainable by telephone under 12:68:18:03.03(1), still applies to importing any captive nondomestic animal.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-2; W. Va. Code § 20-2-13",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia writes its reptile rule around its own species, and 58-73-2 defines possession for the rule as reptiles or amphibians taken alive or dead from the wild. Neither limb reaches a captive-bred exotic. The dangerous wild animal list adopted in 2022 at W. Va. C.S.R. § 74-1-3 contains one reptile, the Komodo dragon. Worth knowing before shipping one in: § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except as authorized by an importation permit issued by the director, and the definition of wildlife at § 20-1-2 includes reptiles without a nativity qualifier. Pogona vitticeps is Australian and appears on no West Virginia list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21071,6 +21211,46 @@
           "cite": "§ 8-1808(j)(1)",
           "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
           "note": "No lizard fits any of the seven permitted categories. The District bans by omission rather than by naming a species, so nothing about the animal being small, captive-bred or unable to survive a Washington winter changes the answer. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
+          "verifiedOn": "2026-09-05"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d)",
+          "quote": "Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin.",
+          "note": "Kansas defines wildlife at K.S.A. 32-701 as any member of the animal kingdom and then makes possessing wildlife unlawful at K.S.A. 32-1002(a)(2) unless a regulation permits it, so the answer never sits in the dangerous regulated animal statute. This is the regulation that permits it. 115-20-3(d) reads exotic wildlife as species that are not native or indigenous to Kansas, or do not presently exist here as an established wild population, and 115-20-3(b) adds that exotic wildlife may be possessed without limit in time and number. The proviso in subsection (a) is the only condition, and a captive-bred Eublepharis satisfies it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "40 Miss. Admin. Code Pt. 5, R. 2.3(A)(1)(a)",
+          "quote": "Nongame species in need of management in Mississippi include: a. Thirty-two (32) species of small mammals, one species of freshwater fish, and all native species of reptiles and amphibians except those regulated by other rules of the Commission on Wildlife, Fisheries and Parks.",
+          "note": "Mississippi regulates its own reptiles closely and non-native ones not at all. Rule 2.3 is drawn around native species, names every one it covers, and this animal is not among them. The other rule that could reach a reptile, Rule 8.3 on animals inherently dangerous to humans, runs from apes and wolves through bears, hyenas, big cats, elephants, rhinos, hippos and African buffalo and stops there. No lizard of any kind appears in Rule 8.3, and Eublepharis macularius is south Asian.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5); 48.1-09-02-01; 48.1-09-01-02(6)",
+          "quote": "Category 3 species of nontraditional livestock includes the following species and their hybrids: (1) All wild species of the family suidae ... (5) Venomous reptiles and nonvenomous injurious reptiles.",
+          "note": "North Dakota sorts every nondomestic animal held in confinement into three categories and only categories 2 and 3 need a licence, which has to be in hand before the animal is acquired. The only reptiles in either are the venomous and the nonvenomous injurious ones in category 3, so this animal needs no licence. Importing it is the part that is not free: 48.1-09-02-01 requires a certificate of veterinary inspection and an importation permit number from the state veterinarian for nontraditional livestock, and the exemption list at 48.1-09-01-02(4) covers arachnids, invertebrates, tropical fish, gerbils, guinea pigs, hamsters, mice, rats and sugar gliders but no reptile. A six-inch insectivorous gecko is not what nonvenomous injurious was written for. There is one more step for a species in no category at all: 48.1-09-01-02(6) says nontraditional livestock not otherwise referred to in the section or the Century Code must be reviewed by the board for determination of importation and licensure requirements prior to importation. That is a review before bringing one in, not a bar on keeping one already here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota own bar is limited to mammals by the statute, not just by the rule that implements it, which is what makes this straightforward. ARSD 12:68:18:03 then lists the mammal families that need a possession permit and nothing else is reached. Game, Fish and Parks has no captive wildlife article for reptiles or invertebrates: ARSD article 41:09 runs to shooting preserves, captive game birds, bait, raptors, fish hatcheries, fur dealers, taxidermists, scientific collectors and rehabilitation. A free entry permit, obtainable by telephone, still applies to importing one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-2; W. Va. Code § 20-2-13",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia writes its reptile rule around its own species, and 58-73-2 defines possession for the rule as reptiles or amphibians taken alive or dead from the wild. Neither limb reaches a captive-bred exotic. The dangerous wild animal list adopted in 2022 at W. Va. C.S.R. § 74-1-3 contains one reptile, the Komodo dragon. Worth knowing before shipping one in: § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except as authorized by an importation permit issued by the director, and the definition of wildlife at § 20-1-2 includes reptiles without a nativity qualifier. Eublepharis macularius is south Asian and appears on no West Virginia list.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -21460,6 +21640,46 @@
           "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
           "note": "No lizard fits any of the seven permitted categories. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
           "verifiedOn": "2026-09-05"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d)",
+          "quote": "Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin.",
+          "note": "Kansas defines wildlife at K.S.A. 32-701 as any member of the animal kingdom and then makes possessing wildlife unlawful at K.S.A. 32-1002(a)(2) unless a regulation permits it, so the answer never sits in the dangerous regulated animal statute. This is the regulation that permits it. 115-20-3(d) reads exotic wildlife as species that are not native or indigenous to Kansas, or do not presently exist here as an established wild population, and 115-20-3(b) adds that exotic wildlife may be possessed without limit in time and number. Correlophus ciliatus is a New Caledonian species with no Kansas population, so it is exotic wildlife on both halves of the 115-20-3(d) test.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "40 Miss. Admin. Code Pt. 5, R. 2.3(A)(1)(a)",
+          "quote": "Nongame species in need of management in Mississippi include: a. Thirty-two (32) species of small mammals, one species of freshwater fish, and all native species of reptiles and amphibians except those regulated by other rules of the Commission on Wildlife, Fisheries and Parks.",
+          "note": "Mississippi regulates its own reptiles closely and non-native ones not at all. Rule 2.3 is drawn around native species, names every one it covers, and this animal is not among them. The other rule that could reach a reptile, Rule 8.3 on animals inherently dangerous to humans, runs from apes and wolves through bears, hyenas, big cats, elephants, rhinos, hippos and African buffalo and stops there. Correlophus ciliatus is New Caledonian, so neither rule touches it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5); 48.1-09-02-01; 48.1-09-01-02(6)",
+          "quote": "Category 3 species of nontraditional livestock includes the following species and their hybrids: (1) All wild species of the family suidae ... (5) Venomous reptiles and nonvenomous injurious reptiles.",
+          "note": "North Dakota sorts every nondomestic animal held in confinement into three categories and only categories 2 and 3 need a licence, which has to be in hand before the animal is acquired. The only reptiles in either are the venomous and the nonvenomous injurious ones in category 3, so this animal needs no licence. Importing it is the part that is not free: 48.1-09-02-01 requires a certificate of veterinary inspection and an importation permit number from the state veterinarian for nontraditional livestock, and the exemption list at 48.1-09-01-02(4) covers arachnids, invertebrates, tropical fish, gerbils, guinea pigs, hamsters, mice, rats and sugar gliders but no reptile. Correlophus ciliatus is neither venomous nor injurious. There is one more step for a species in no category at all: 48.1-09-01-02(6) says nontraditional livestock not otherwise referred to in the section or the Century Code must be reviewed by the board for determination of importation and licensure requirements prior to importation. That is a review before bringing one in, not a bar on keeping one already here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota own bar is limited to mammals by the statute, not just by the rule that implements it, which is what makes this straightforward. ARSD 12:68:18:03 then lists the mammal families that need a possession permit and nothing else is reached. Game, Fish and Parks has no captive wildlife article for reptiles or invertebrates: ARSD article 41:09 runs to shooting preserves, captive game birds, bait, raptors, fish hatcheries, fur dealers, taxidermists, scientific collectors and rehabilitation. A free entry permit, obtainable by telephone, still applies to importing one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-2; W. Va. Code § 20-2-13",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia writes its reptile rule around its own species, and 58-73-2 defines possession for the rule as reptiles or amphibians taken alive or dead from the wild. Neither limb reaches a captive-bred exotic. The dangerous wild animal list adopted in 2022 at W. Va. C.S.R. § 74-1-3 contains one reptile, the Komodo dragon. Worth knowing before shipping one in: § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except as authorized by an importation permit issued by the director, and the definition of wildlife at § 20-1-2 includes reptiles without a nativity qualifier. Correlophus ciliatus is New Caledonian and appears on no West Virginia list.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21847,6 +22067,46 @@
           "cite": "§ 8-1808(j)(1)",
           "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
           "note": "No lizard fits any of the seven permitted categories. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
+          "verifiedOn": "2026-09-05"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d)",
+          "quote": "Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin.",
+          "note": "Kansas defines wildlife at K.S.A. 32-701 as any member of the animal kingdom and then makes possessing wildlife unlawful at K.S.A. 32-1002(a)(2) unless a regulation permits it, so the answer never sits in the dangerous regulated animal statute. This is the regulation that permits it. 115-20-3(d) reads exotic wildlife as species that are not native or indigenous to Kansas, or do not presently exist here as an established wild population, and 115-20-3(b) adds that exotic wildlife may be possessed without limit in time and number. Tiliqua scincoides is Australian, so it is exotic wildlife on both halves of the 115-20-3(d) test.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "40 Miss. Admin. Code Pt. 5, R. 2.3(A)(1)(a)",
+          "quote": "Nongame species in need of management in Mississippi include: a. Thirty-two (32) species of small mammals, one species of freshwater fish, and all native species of reptiles and amphibians except those regulated by other rules of the Commission on Wildlife, Fisheries and Parks.",
+          "note": "Mississippi regulates its own reptiles closely and non-native ones not at all. Rule 2.3 is drawn around native species, names every one it covers, and this animal is not among them. The other rule that could reach a reptile, Rule 8.3 on animals inherently dangerous to humans, runs from apes and wolves through bears, hyenas, big cats, elephants, rhinos, hippos and African buffalo and stops there. Mississippi has native skinks, five of them on the Rule 2.3 list, but Tiliqua scincoides is Australian and is not one of them.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5); 48.1-09-02-01; 48.1-09-01-02(6)",
+          "quote": "Category 3 species of nontraditional livestock includes the following species and their hybrids: (1) All wild species of the family suidae ... (5) Venomous reptiles and nonvenomous injurious reptiles.",
+          "note": "North Dakota sorts every nondomestic animal held in confinement into three categories and only categories 2 and 3 need a licence, which has to be in hand before the animal is acquired. The only reptiles in either are the venomous and the nonvenomous injurious ones in category 3, so this animal needs no licence. Importing it is the part that is not free: 48.1-09-02-01 requires a certificate of veterinary inspection and an importation permit number from the state veterinarian for nontraditional livestock, and the exemption list at 48.1-09-01-02(4) covers arachnids, invertebrates, tropical fish, gerbils, guinea pigs, hamsters, mice, rats and sugar gliders but no reptile. Tiliqua scincoides is neither venomous nor injurious, and North Dakota names no lizard anywhere in the article. There is one more step for a species in no category at all: 48.1-09-01-02(6) says nontraditional livestock not otherwise referred to in the section or the Century Code must be reviewed by the board for determination of importation and licensure requirements prior to importation. That is a review before bringing one in, not a bar on keeping one already here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota own bar is limited to mammals by the statute, not just by the rule that implements it, which is what makes this straightforward. ARSD 12:68:18:03 then lists the mammal families that need a possession permit and nothing else is reached. Game, Fish and Parks has no captive wildlife article for reptiles or invertebrates: ARSD article 41:09 runs to shooting preserves, captive game birds, bait, raptors, fish hatcheries, fur dealers, taxidermists, scientific collectors and rehabilitation. A free entry permit, obtainable by telephone, still applies to importing one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-2; W. Va. Code § 20-2-13",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia writes its reptile rule around its own species, and 58-73-2 defines possession for the rule as reptiles or amphibians taken alive or dead from the wild. Neither limb reaches a captive-bred exotic. The dangerous wild animal list adopted in 2022 at W. Va. C.S.R. § 74-1-3 contains one reptile, the Komodo dragon. Worth knowing before shipping one in: § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except as authorized by an importation permit issued by the director, and the definition of wildlife at § 20-1-2 includes reptiles without a nativity qualifier. West Virginia has three native skinks, the northern coal, common five-lined and broad-headed, and Tiliqua scincoides is not one of them.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -22236,6 +22496,46 @@
           "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
           "note": "No lizard fits any of the seven permitted categories, which is already why the veiled chameleon is banned here. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
           "verifiedOn": "2026-09-05"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d)",
+          "quote": "Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin.",
+          "note": "Kansas defines wildlife at K.S.A. 32-701 as any member of the animal kingdom and then makes possessing wildlife unlawful at K.S.A. 32-1002(a)(2) unless a regulation permits it, so the answer never sits in the dangerous regulated animal statute. This is the regulation that permits it. 115-20-3(d) reads exotic wildlife as species that are not native or indigenous to Kansas, or do not presently exist here as an established wild population, and 115-20-3(b) adds that exotic wildlife may be possessed without limit in time and number. Trioceros jacksonii has no Kansas population, and Kansas has no separate chameleon rule of any kind.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "40 Miss. Admin. Code Pt. 5, R. 2.3(A)(1)(a)",
+          "quote": "Nongame species in need of management in Mississippi include: a. Thirty-two (32) species of small mammals, one species of freshwater fish, and all native species of reptiles and amphibians except those regulated by other rules of the Commission on Wildlife, Fisheries and Parks.",
+          "note": "Mississippi regulates its own reptiles closely and non-native ones not at all. Rule 2.3 is drawn around native species, names every one it covers, and this animal is not among them. The other rule that could reach a reptile, Rule 8.3 on animals inherently dangerous to humans, runs from apes and wolves through bears, hyenas, big cats, elephants, rhinos, hippos and African buffalo and stops there. Mississippi has no native chameleon and no chameleon rule.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5); 48.1-09-02-01; 48.1-09-01-02(6)",
+          "quote": "Category 3 species of nontraditional livestock includes the following species and their hybrids: (1) All wild species of the family suidae ... (5) Venomous reptiles and nonvenomous injurious reptiles.",
+          "note": "North Dakota sorts every nondomestic animal held in confinement into three categories and only categories 2 and 3 need a licence, which has to be in hand before the animal is acquired. The only reptiles in either are the venomous and the nonvenomous injurious ones in category 3, so this animal needs no licence. Importing it is the part that is not free: 48.1-09-02-01 requires a certificate of veterinary inspection and an importation permit number from the state veterinarian for nontraditional livestock, and the exemption list at 48.1-09-01-02(4) covers arachnids, invertebrates, tropical fish, gerbils, guinea pigs, hamsters, mice, rats and sugar gliders but no reptile. Trioceros jacksonii is neither venomous nor injurious. There is one more step for a species in no category at all: 48.1-09-01-02(6) says nontraditional livestock not otherwise referred to in the section or the Century Code must be reviewed by the board for determination of importation and licensure requirements prior to importation. That is a review before bringing one in, not a bar on keeping one already here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota own bar is limited to mammals by the statute, not just by the rule that implements it, which is what makes this straightforward. ARSD 12:68:18:03 then lists the mammal families that need a possession permit and nothing else is reached. Game, Fish and Parks has no captive wildlife article for reptiles or invertebrates: ARSD article 41:09 runs to shooting preserves, captive game birds, bait, raptors, fish hatcheries, fur dealers, taxidermists, scientific collectors and rehabilitation. A free entry permit, obtainable by telephone, still applies to importing one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-58-73",
+          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-2; W. Va. Code § 20-2-13",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "West Virginia writes its reptile rule around its own species, and 58-73-2 defines possession for the rule as reptiles or amphibians taken alive or dead from the wild. Neither limb reaches a captive-bred exotic. The dangerous wild animal list adopted in 2022 at W. Va. C.S.R. § 74-1-3 contains one reptile, the Komodo dragon. Worth knowing before shipping one in: § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except as authorized by an importation permit issued by the director, and the definition of wildlife at § 20-1-2 includes reptiles without a nativity qualifier. West Virginia has no native chameleon.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -22622,6 +22922,47 @@
           "cite": "§ 8-1808(j)(1)",
           "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
           "note": "No lizard fits any of the seven permitted categories. The green anole is barred in the District for the same reason the leopard gecko is, and unlike New York City the District never has to reach a taxonomic question about the family Iguanidae, because it lists what is allowed rather than what is not. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
+          "verifiedOn": "2026-09-05"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3; 115-20-2(b)(13), (e)",
+          "quote": "Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin.",
+          "note": "Legal on either branch, which is worth saying plainly because the department publishes no reachable Kansas herp checklist. If the green anole is treated as not native, 115-20-3 lets it be possessed without limit in time or number. If it is treated as Kansas wildlife, 115-20-2(b)(13) makes reptiles takeable for personal use year-round, and the only difference is the cap in 115-20-2(e): no more than five reptiles and no more than two of any one reptile species per person or domicile. Anolis carolinensis appears on neither of the two Kansas species lists that are adopted in regulation, K.A.R. 115-15-1 and 115-15-2.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MS": {
+          "status": "permit",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "40 Miss. Admin. Code Pt. 5, R. 2.3(B), (C)(2), (D)(2)",
+          "quote": "NONGAME REPTILES ... LIZARDS Anolis carolinensis GREEN ANOLE",
+          "permitFor": "personal",
+          "note": "This is the state the anole is actually from, and it is the state where keeping one costs a licence. Rule 2.3 lists Anolis carolinensis by binomial as a nongame lizard in need of management, and 2.3(C)(2) sets the licence for possessing a nongame species for personal use: a resident needs a Sportsman, All Game Hunting/Freshwater Fishing, or Small Game Hunting/Freshwater Fishing licence, a nonresident an All Game Hunting licence. 2.3(D)(2) caps possession at twenty nongame snakes and lizards together and no more than four of any one species. The rule excludes commercially recognised colour mutants at 2.3(A)(1)(b)(iv), which is a strong sign that ordinary captive-bred animals are meant to be inside it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5); 48.1-09-02-01; 48.1-09-01-02(6)",
+          "quote": "Category 3 species of nontraditional livestock includes the following species and their hybrids: (1) All wild species of the family suidae ... (5) Venomous reptiles and nonvenomous injurious reptiles.",
+          "note": "North Dakota sorts every nondomestic animal held in confinement into three categories and only categories 2 and 3 need a licence, which has to be in hand before the animal is acquired. The only reptiles in either are the venomous and the nonvenomous injurious ones in category 3, so this animal needs no licence. Importing it is the part that is not free: 48.1-09-02-01 requires a certificate of veterinary inspection and an importation permit number from the state veterinarian for nontraditional livestock, and the exemption list at 48.1-09-01-02(4) covers arachnids, invertebrates, tropical fish, gerbils, guinea pigs, hamsters, mice, rats and sugar gliders but no reptile. Anolis carolinensis is neither venomous nor injurious, and North Dakota is far north of its range, so nothing in title 20.1 reaches it either. There is one more step for a species in no category at all: 48.1-09-01-02(6) says nontraditional livestock not otherwise referred to in the section or the Century Code must be reviewed by the board for determination of importation and licensure requirements prior to importation. That is a review before bringing one in, not a bar on keeping one already here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota own bar is limited to mammals by the statute, not just by the rule that implements it, which is what makes this straightforward. ARSD 12:68:18:03 then lists the mammal families that need a possession permit and nothing else is reached. Game, Fish and Parks has no captive wildlife article for reptiles or invertebrates: ARSD article 41:09 runs to shooting preserves, captive game birds, bait, raptors, fish hatcheries, fur dealers, taxidermists, scientific collectors and rehabilitation. South Dakota is far outside the range of Anolis carolinensis, and title 41 protects natives through season and licence rules rather than a captivity bar.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-dnr-herps",
+          "cite": "W. Va. C.S.R. § 58-73-1.1; WVDNR lizard checklist",
+          "quote": "Eastern Six-lined Racerunner (Aspidoscelis s. sexlineata) Northern Coal Skink (Plestiodon a. anthracinus) Common Five-lined Skink (Plestiodon fasciatus) Broad-headed Skink (Plestiodon laticeps) Eastern Fence Lizard (Sceloporus undulatus) Little Brown Skink (Scincella lateralis)",
+          "note": "The nativity question decides this one, because 58-73-1.1 prohibits possessing native species that are not on the takeable list and no lizard at all is on that list. The department own checklist says West Virginia is home to 6 species of lizards and names them, and Anolis carolinensis is not among the six. So the rule does not reach it and the 2022 dangerous wild animal list does not either. The § 20-2-13 importation permit for live wildlife brought in from out of state applies here as it does to any reptile.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -23012,6 +23353,46 @@
           "quote": "Domesticated rodents and rabbits",
           "note": "One of the seven permitted categories, and the domestic rabbit is squarely inside it. The word doing the work is \"domesticated\", which is also what excludes a wild-caught rodent such as a flying squirrel from the same clause. Note § 8-1808(i) separately, which bars selling a rabbit under 16 weeks old except for agricultural or scientific purposes.",
           "verifiedOn": "2026-09-05"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3; K.S.A. 32-701(2)",
+          "quote": "Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin.",
+          "note": "Oryctolagus cuniculus is European and has no Kansas wild population, so it is exotic wildlife and 115-20-3 permits it without limit. K.S.A. 32-701(2) also takes agricultural livestock out of the definition of wildlife altogether. Kansas native rabbits are the cottontails and the jackrabbit, which are game animals under a different article and are not this animal.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "40 Miss. Admin. Code Pt. 5, R. 2.3(B)",
+          "quote": "Nongame species in need of management in Mississippi include: a. Thirty-two (32) species of small mammals, one species of freshwater fish, and all native species of reptiles and amphibians except those regulated by other rules of the Commission on Wildlife, Fisheries and Parks.",
+          "note": "The domestic rabbit is not on the Rule 2.3 nongame mammal list, which is the list of species Mississippi manages, and it is not in Rule 8.3. Mississippi native rabbits are cottontails and the swamp rabbit, handled as small game under Part 2, and Oryctolagus cuniculus is not one of them.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(1)(b), (c)",
+          "quote": "Category 1 species of nontraditional livestock includes turkeys, geese, and ducks morphologically distinguishable from wild turkeys, geese, ducks, pigeons, rabbits, ratites, chinchilla, Guinea fowl, ranch foxes, ranch mink, peafowl, all pheasants, quail, chukar, hedgehog, degus, and other species as ordered by the board.",
+          "note": "Named in category 1 by the word rabbits, alongside chinchilla, hedgehog and degus. 48.1-09-01-02(1)(c) says category 1 species do not require a nontraditional livestock license, and the category itself is defined as species generally considered domestic or otherwise not dangerous.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 41-1-1(9); ARSD 12:68:18:03",
+          "quote": "\"Domestic animal,\" any animal that through long association with man, has been bred to a degree which has resulted in genetic changes affecting the temperament, color, conformation, or other attributes of the species to an extent that makes it unique and different from wild individuals of its kind.",
+          "note": "South Dakota defines a domestic animal by breeding history rather than by a species list, which the domestic rabbit satisfies on every limb of the test. Even read as nondomestic it would be clear, because no lagomorph appears in the possession permit list at ARSD 12:68:18:03 and the only outright prohibition in the chapter is the raccoon dog.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-1-2",
+          "quote": "\"Wild animals\" means all mammals native to the State of West Virginia occurring either in a natural state or in captivity, except house mice or rats, and includes coyotes and porcupines and all species of cervids.",
+          "note": "Native to the State of West Virginia is the whole test for a mammal here, and the European rabbit is not. The state own rabbits are in the game animal definition in the same section, which reads the cottontail rabbits and hares, and Oryctolagus cuniculus is neither. Nothing on the 2022 dangerous wild animal list is a lagomorph.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -23399,6 +23780,46 @@
           "cite": "§ 8-1808(j)(1)",
           "quote": "Except as provided in this subsection, a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following: (A) Domestic dogs, excluding hybrids with wolves, coyotes, or jackals; (B) Domestic cats, excluding hybrids with ocelots or margays; (C) Domesticated rodents and rabbits; (D) Captive-bred species of common cage birds, including chickens; (E) Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes; (F) Ferrets; and (G) Racing pigeons, when kept in compliance with permit requirements.",
           "note": "The seven permitted categories contain no invertebrate, which is what already bars the tarantula and the giant millipede here, and (j)(1) reaches \"any living member of the animal kingdom\" in terms. The clause is a bar with seven exceptions and no permit behind it: subsections (j)(2) to (j)(5) reach public zoos, federally licensed exhibitors, rehabilitators, veterinarians, shelters, and goats and sheep brought in to eat grass. There is no route for a private keeper.",
+          "verifiedOn": "2026-09-05"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(b); 115-20-2(b)(8), (i)",
+          "quote": "Exotic wildlife may be possessed without limit in time and number.",
+          "note": "Kansas is one of the few states whose wildlife definition says arthropod out loud: K.S.A. 32-701 reaches any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod or other invertebrate. That makes a hissing cockroach wildlife and brings K.S.A. 32-1002(a)(2) into play, and then 115-20-3 permits it as exotic wildlife without limit. The native-side rule agrees: 115-20-2(b)(8) lists invertebrates among wildlife that may be taken for personal use and 115-20-2(i) says a hunting license shall not be required to take invertebrates.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "40 Miss. Admin. Code Pt. 5, R. 2.3(A)(1)(a)",
+          "quote": "Nongame species in need of management in Mississippi include: a. Thirty-two (32) species of small mammals, one species of freshwater fish, and all native species of reptiles and amphibians except those regulated by other rules of the Commission on Wildlife, Fisheries and Parks.",
+          "note": "Rule 2.3 reaches small mammals, one fish, and native reptiles and amphibians. No invertebrate is anywhere in it, and the freshwater mussel rule that does cover an invertebrate is a commercial harvest rule in Part 3. Rule 8.3 on animals inherently dangerous to humans names no invertebrate either.",
+          "verifiedOn": "2026-09-05"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(4)(a), (b)",
+          "quote": "Unless the state veterinarian determines it is necessary based on disease incidence information or human health or safety concerns, the following are exempt from the importation permit and certificate of veterinary inspection requirement: a. Arachnids. b. Invertebrates.",
+          "note": "The cleanest answer of the nine. Invertebrates are named in the exemption, so they carry neither a licence nor an importation permit. The Game and Fish definition points the same way: NDCC 20.1-01-02 defines wildlife to reach any invertebrate but then says wildlife does not include domestic animals as defined by section 36-01-00.1 or birds or animals held in private ownership.",
+          "verifiedOn": "2026-09-05"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota own bar is limited to mammals by the statute, not just by the rule that implements it, which is what makes this straightforward. ARSD 12:68:18:03 then lists the mammal families that need a possession permit and nothing else is reached. Game, Fish and Parks has no captive wildlife article for reptiles or invertebrates: ARSD article 41:09 runs to shooting preserves, captive game birds, bait, raptors, fish hatcheries, fur dealers, taxidermists, scientific collectors and rehabilitation. An insect is not a mammal on any reading, and SDCL 41-1-1 puts only wild mammals and birds inside the definition of game.",
+          "verifiedOn": "2026-09-05"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-1-2",
+          "quote": "\"Wildlife\" means wild birds, wild animals, game and fur-bearing animals, fish (including minnows), reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait, whether dead or alive.",
+          "note": "The definition stops short of a terrestrial arthropod. It picks up mollusks and crustaceans and then anything else only if it is aquatic life used as fish bait, so a cockroach is outside wildlife and outside the § 20-2-4 possession bar. It is not on the dangerous wild animal list at W. Va. C.S.R. § 74-1-3, which contains no invertebrate.",
           "verifiedOn": "2026-09-05"
         }
       }

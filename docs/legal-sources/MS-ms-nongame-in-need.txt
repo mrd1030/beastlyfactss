@@ -1,0 +1,118 @@
+SOURCE: Mississippi: 40 Miss. Admin. Code Part 5, Chapter 2, Rule 2.3, Regulations Regarding Non-Game Wildlife In Need of Management
+URL: https://www.mdwfp.com/sites/default/files/2024-04/w_-_23-non-game_wildlife_in_need_of_mgmt-final.pdf
+FETCHED: 2026-09-05 (www.mdwfp.com serves a genuine GlobalSign cert without its intermediate, so curl fails with "unable to get local issuer certificate". Complete the chain rather than skipping verification: fetch http://secure.globalsign.com/cacert/gsatlasr3ovtlsca2026q1.crt, convert with openssl x509 -inform DER, concatenate onto /root/.ccr/ca-bundle.crt and pass with --cacert. The full rule list is at https://www.mdwfp.com/rules-regulations-record.)
+
+READ THIS FIRST. Rule 8.3, animals inherently dangerous to humans, is the Mississippi rule
+everyone cites and it stops at African buffalo. It answers no native and no small exotic.
+
+The rule that answers a native is this one, and it sits in Part 5, the Museum of Natural
+Science, which is why it is easy to miss when you are reading Part 2 hunting rules. Its scope at
+2.3(A)(1)(a) is thirty-two small mammals, one freshwater fish, and ALL NATIVE SPECIES of
+reptiles and amphibians. Non-native reptiles are outside it entirely, and no invertebrate is
+inside it at all.
+
+Three things decide the cells:
+
+2.3(B) names every covered species by binomial. Anolis carolinensis GREEN ANOLE is on the lizard
+list and Glaucomys volans SOUTHERN FLYING is on the squirrel list.
+
+2.3(C)(2) requires a hunting licence to possess any of them for personal use: a resident needs a
+Sportsman, All Game Hunting/Freshwater Fishing, or Small Game Hunting/Freshwater Fishing
+licence, a nonresident an All Game Hunting licence.
+
+2.3(D) and 2.3(F) set the caps. Twenty snakes and lizards together with no more than four of any
+one species; ten nongame mammals with no more than two of the same species.
+
+One detail worth keeping. 2.3(A)(1)(b)(iv) excludes "commercially recognized genetic color
+mutants, such as albinos or other color variants" from the rule. Carving out colour morphs only
+makes sense if ordinary captive-bred animals of the same species are meant to be inside it,
+which is why the anole and the flying squirrel read as permit rather than legal here. The
+importation permit at 2.3(M) is a commercial permit at five hundred dollars and does not reach a
+private keeper.
+
+
+==== Rule 2.3(A), the scope, and what it does not cover ====
+
+A. Nongame Species In Need Of Management: Definitions. 1. Nongame species in need of management
+in Mississippi include: a. Thirty-two ( 32) species of s mall mammals, one species of freshwater
+fish, and all native species of reptiles and amphibians except those regulated by other rules of
+the Commission on Wildlife, Fisheries and Parks. b. Species not regulated by this rule include:
+i. endangered reptiles and amphibians; ii. reptiles and amphibians considered game species
+(Bullfrog, Pig Frog, Bronze Frog); iii. American Alligator; and iv. Commercially recognized
+genetic color mutants , such as albinos or other color variants, of nongame wildlife in need of
+management. 2. For the purposes of this rule, nongame species in need of management may be
+referred to as nongame reptiles, nongame turtles, nongame snakes, nongame lizards, nongame
+amphibians, nongame frogs, nongame salamand ers, nongame mammals, nongame fish, or nongame
+wildlife.
+
+
+==== Rule 2.3(B), the lizards, in full ====
+
+LIZARDS Anolis carolinensis GREEN ANOLE Sceloporus undulatus EASTERN FENCE Ophisaurus attenuatus
+SLENDER GLASS Ophisaurus mimicus MIMIC GLASS Ophisaurus ventralis EASTERN GLASS Plestiodon
+laticeps BROADHEAD SKINK Plestiodon anthracinus COAL SKINK Plestiodon fasciatus FIVE-LINED SKINK
+Plestiodon inexpectatus SOUTHEASTERN Scincella lateralis GROUND SKINK Aspidoscelis sexlineatus
+SIX-LINED RACERUNNER
+
+
+==== Rule 2.3(B), the squirrels, in full ====
+
+SQUIRRELS Tamias striatus EASTERN CHIPMUNK Marmota monax WOODCHUCK Glaucomys volans SOUTHERN
+FLYING
+
+
+==== Rule 2.3(C), possession for personal use and the licence requirement ====
+
+C. Possession of Nongame Species in Need of Management for Personal Use. 1. Nongame wildlife
+taken from the wild for personal use may not be bought, sold, offered for sale, bartered,
+exported for sale, nor exhibited except as otherwise provided by these regulations, other
+regulations of the Commission, by scientific collecting permits, or by other permits issued by
+the Mississippi Department of Wildlife, Fisheries, and Parks. 2. License requirements for
+possession of nongame species for personal use. a. Mississippi Resident - Valid Resident
+Sportsman’s License, All Game Hunting/Freshwater Fishing License, or Small Game
+Hunting/Freshwater Fishing License. b. Nonresident – Valid Nonresident All Game Hunting License.
+
+
+==== Rule 2.3(D), the reptile and amphibian caps ====
+
+D. Limits for possession of nongame species for personal use. 1. Nongame Amphibians. a.
+Possession limit of no more than twenty (20) individuals. b. Take from the wild not to exceed 20
+per license year. Pternotropis welaka BLUENOSE SHINER 4 c. Specimens in possession or taken from
+the wild not to exceed more than four (4) individuals of any species or subspecies. 2. Nongame
+Snakes and Nongame Lizards. a. Possession limit of no more than twenty (20) individuals. b. Take
+from the wild not to exceed twenty (20) per license year. c. Specimens in possession or taken
+from the wild not to exceed more than four (4) individuals of any species or subspecies. d.
+Containers or cages holding venomous snakes shall be prominently labeled with the words “DANGER”
+along with the common name of the species in a conspicuous place. 3. Nongame Turtles. a.
+Alligator Snapping Turtles (also called Loggerhead Snapping Turtles). i. Possession limit - No
+more than one (1) individual with a top shell length (carapace length) of 24 inches or greater.
+ii. Take from the wild not to exceed more than one (1) individ ual per license year. b. Common
+Snapping Turtles, Smooth Softshell Turtles, and Spiny Softshell Turtles. i. Daily bag limit of
+no more than o ne (1) individual of any of the three species. ii. Possession limit and take from
+the wild not t o exceed four (4) individuals of any of the three species per license year. c.
+All Other Nongame Turtles. i. Possession limit of no more than ten (10) individuals. ii. Take
+from the wild not to exceed ten (10) individuals per license year. iii. Specimens in possession
+or taken from the wild not to exceed more than four (4) individuals of any species or
+subspecies. 5
+
+
+==== Rule 2.3(E) and (F), the closed season and the mammal caps ====
+
+E. Seasons. No specimens of any species of nongame turtle may be taken from the wild between
+April 1st and June 30th except by permit issued by the Mississippi Department of Wildlife,
+Fisheries, and Parks. F. Nongame Mammals and Nongame Fish. 1. Possession limit of no more than
+10 nongame mammals. 2. Take from the wild of nongame mammals not to exceed 10 per license year.
+3. Specimens of mammals in possession or taken from the wild not to exceed two (2) of the same
+species. 4. Possession limit of no more than four (4) nongame fish. 5. Take from the wild of
+nongame fish not to exceed four (4) per license year.
+
+
+==== Rule 2.3(M)(1), the commercial importation permit ====
+
+M. Importation of nongame wildlife originating from outside of Mississippi for commercial
+purposes. 1. Nongame wildlife may be imported and exported for commercial purposes only under
+permit from the Department of Wildlife, Fisheries, and Parks. This permit, valid for one year
+from date of issuance and signed by the Executive Director or his designee, is subject to the
+following conditions and restrictions: a. All nongame wildlife imported or exported under an
+importer's permit must have originated outside of Mississippi or have been purchased from a
+person holding a nongame wildlife captive propagation permit. 12

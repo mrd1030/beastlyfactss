@@ -1,32 +1,35 @@
 # Legal map: where the work stands
 
-Written 2026-09-05, revised the same evening after a seven-jurisdiction sitting, so a fresh session
-can pick this up without re-deriving anything. Read this, then `docs/legal-sources/README.md`,
-then start.
+Written 2026-09-05, revised through five sittings the same evening, so a fresh session can pick
+this up without re-deriving anything. Read this, then `docs/legal-sources/README.md`, then start.
 
 ## State of play
 
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 39 (AL, AR, AZ, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, MA, MD, ME, MI, MN, MO, NC, NE, NH, NJ, NM, NV, NY, NYC, OH, OK, OR, PA, RI, SC, TN, TX, UT, VT, WI, WY) |
-| Unread cells | 117 |
-| Jurisdictions left | 13 (AK, DC, IA, KS, KY, LA, MS, MT, ND, SD, VA, WA, WV) |
-| Cached primary sources | 72 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 52, all of them |
+| Unread cells | 0 |
+| Cached primary sources | 85 files in `docs/legal-sources` |
 
-The tail is now perfectly uniform. Every one of the thirteen remaining jurisdictions is missing the
-same nine animals and no others: the flying squirrel, the five encyclopedia lizards (bearded dragon,
-leopard gecko, crested gecko, blue-tongue skink, Jackson's chameleon), the green anole, the rabbit
-and the Madagascar hissing cockroach. Thirteen states times nine animals is the whole of what is
-left. Every snake, turtle, mammal and bird on the map is finished in all 52 jurisdictions.
+`node scripts/legal-gaps.mjs` reports `0 unread cells, 0 jurisdictions`. Every one of the 52
+animals is read in every one of the 52 jurisdictions. The nine animals that were the whole of the
+tail, the flying squirrel, the five encyclopedia lizards, the green anole, the rabbit and the
+Madagascar hissing cockroach, are finished.
+
+That does not mean the map is finished. It means the gap script has nothing left to point at, and
+the work changes shape from filling cells to auditing them. The loose ends below are the backlog
+now, and three of them are corrections waiting to be made to cells that already carry a status and
+a date.
 
 `main` carries everything through the 32-jurisdiction mark. Branch
-`claude/legal-map-beastlyfacts-lundsv` carries Arkansas, Maine, Missouri, Idaho, Rhode Island,
-New Hampshire and Wyoming and is not merged yet; cut the next branch from main once it is.
+`claude/legal-map-beastlyfacts-lundsv` carries the other twenty jurisdictions and is not merged
+yet; cut the next branch from main once it is.
 
 ## The loop
 
-Several jurisdictions per sitting now. The mechanics first:
+The cells are all read, so this loop is now for audits and re-reads rather than for filling
+gaps. The mechanics are unchanged:
 
 1. `node scripts/legal-gaps.mjs` regenerates `docs/LEGAL_MAP_GAPS.md`, which lists every
    unread cell grouped by jurisdiction, with the sources already on file for each.
@@ -35,7 +38,9 @@ Several jurisdictions per sitting now. The mechanics first:
    that explains rather than asserts, and `verifiedOn` set to today in US Eastern.
 4. Re-run `legal-gaps.mjs`, then `node scripts/check-legal-map-sync.mjs`. That script
    cross-checks every legal guide against the map and will catch guides you just made
-   wrong. It sits at 3 pre-existing errors; anything above that is yours.
+   wrong. It sat at 3 pre-existing errors through most of this work and now sits at 2, because
+   the West Virginia box turtle mismatch turned out to be the map being wrong rather than the
+   guide. Anything above 2 is yours.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
@@ -252,25 +257,68 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 ## Next up
 
-Thirteen jurisdictions, nine animals each, 117 cells. Ordered by how much is already on file.
+No unread cells. What is left is auditing, and the three items worth doing first all come out of
+the last sitting, where reading past the first rule changed answers in three states at once.
 
-| Code | State | Sources on file | What is likely to decide it |
-|---|---|---|---|
-| MT | Montana | 2 | A white list. § 87-5-705(1) bars anything not allowed by law or commission rule, so read 12.6.2205 (noncontrolled), 12.6.2208 (controlled) and 12.6.2215 (prohibited) before assuming silence helps. § 87-5-702 puts rodents, cats, dogs and ferrets outside the scheme as domestic animals, which may answer both the rabbit and the flying squirrel |
-| WA | Washington | 1 | RCW 16.30 is a short enumerated dangerous-animal list and answers none of the nine. The rule that will is WAC 220-640 (deleterious exotic wildlife) plus WAC 220-450 on native wildlife. Do not stop at 16.30 |
-| VA | Virginia | 1 | 4VAC15-30-40 is a permit table for predatory or undesirable species. Virginia's native wildlife rules are elsewhere, 4VAC15-20 and 4VAC15-360; the flying squirrel and the anole will be there, not in 30-40 |
-| KY | Kentucky | 1 | 301 KAR 2:082 has three lists and a permit-exempt list at Section 7, which should answer most of the nine in one read. Check whether KRS 150.180 or 301 KAR 2:081 reaches natives |
-| IA | Iowa | 2 | 717F is a family-and-order dangerous list that answers none of the nine. Iowa Code 481A is the native side, and 571 IAC 77 and 111 are where captive wildlife actually sits |
-| LA | Louisiana | 2 | LAC 76:XV.101 was rewritten in January 2025 and is one of the strictest reptile rules in the country, so it should answer five of the nine directly. The anole is a Louisiana native |
-| AK | Alaska | 2 | Already half-answered by the sources on file: AS 16.05.940(19) defines game as birds, reptiles and mammals, so amphibians and invertebrates are outside 5 AAC 92.029 entirely, and 92.029(c) forbids issuing a pet permit for a game animal. The clean list at 92.029(b) is short. Expect several `banned` |
-| ND | North Dakota | 2 | The old nontraditional livestock category system is repealed and what replaced it is importation health chapters. Expect a thin answer; check NDCC 20.1 (Game and Fish) as well as Title 36 |
-| SD | South Dakota | 1 | 12:68:18:03 attaches possession permits to five mammal groups only, none of them Rodentia, so the flying squirrel needs only the free entry permit. The reptiles and the cockroach turn on what "nondomestic animal" means in SDCL 40-3 and 40-14, which is not in the rule itself. Fetch via `https://sdlegislature.gov/api/Rules/12:68:18`, not the web page |
-| KS | Kansas | 1 | K.S.A. 32-1301 is big cats, bears and non-native venomous snakes and answers none of the nine. Go to K.S.A. 32-701 for the definition of wildlife and K.A.R. 115-20 for possession. Classic prohibited-list-answers-nothing state |
-| MS | Mississippi | 1 | Rule 8.3 is a short inherently-dangerous list reaching nothing smaller than a hyena. The answer will be in MDWFP's other rules and Miss. Code 49-7; check whether the definition of wildlife reaches reptiles at all |
-| DC | District of Columbia | 1 | § 8-1808(j) is a closed list of seven permitted categories, so absence is a bar. Read it from the D.C. Code at code.dccouncil.gov rather than from the animallaw.info copy the map currently cites, and check DCMR Title 24 ch. 9 |
-| WV | West Virginia | 1 | § 19-34-2 defines dangerous wild animals by character and § 19-34-5 leaves the list to a legislative rule that has never been confirmed in force here. Settling whether that rule exists is the whole West Virginia sitting, and it also fixes the box turtle guide mismatch |
+| Priority | Where | What to do |
+|---|---|---|
+| 1 | Kansas, every native reptile and amphibian cell | The Kansas column was written against K.S.A. 32-1301 alone. The operative pair is K.S.A. 32-1002(a)(2), which bars possessing any wildlife unless a regulation permits it, and K.A.R. 115-20-2 and 115-20-3, which are the permissions. 115-20-2(b)(13) allows taking "reptiles, except common snapping turtles and soft-shelled turtles", so the Kansas snapping turtle is NOT on the takeable list, and 115-20-2(e) caps native reptiles at two of any one species per person or domicile. The existing Kansas entries for the snapping turtle, box turtle, garter snake, kingsnake, hognose snake, corn snake, milk snake and tiger salamander mention none of this. Cached in `KS-ks-exotic-and-native.txt` |
+| 2 | West Virginia, every exotic cell | § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except under an importation permit from the director, and § 20-1-2 defines wildlife to include reptiles with no nativity qualifier. On its face that reaches a bearded dragon shipped from a breeder. The nine cells written in the last sitting treat it as an importation requirement and say so in the note; the other 43 West Virginia cells do not mention it at all. Decide once whether it changes a status, then apply that decision to the whole column |
+| 3 | Virginia, the native herp cells | Carried over from the Washington and Virginia sitting and still open. 4VAC15-360-10(A) caps native and naturalized reptiles and amphibians at one per physical address, and the existing garter snake, corn snake, milk snake and box turtle entries rest on the exotic permit table alone. The Virginia DWR list incorporated by reference stars naturalized species, and the green anole is starred |
+| 4 | Anything with a `verifiedOn` older than a year | The oldest entries on the map now predate several of the rewrites found during this work: Arkansas's codebook, Louisiana's January 2025 reptile rule, New Hampshire's April 2026 readoption, West Virginia's April 2022 board list, North Dakota's April 2026 category amendments. A pass sorted by `verifiedOn` is the cheapest way to find the next stale one |
 
 ## Loose ends
+
+- **West Virginia bans its own snakes and lizards, and the map said the opposite for six of them
+  until the last sitting.** W. Va. C.S.R. § 58-73-1.1: "The take or possession of any native West
+  Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code
+  20-2-4." Section 4 then lists ten salamanders for bait, two frogs, and two turtles, the snapping
+  turtle and the eastern spiny softshell. No snake and no lizard is anywhere in it, and the DNR's
+  own summary of the rule opens by saying the regulations prohibit the possession of 80 species.
+  The garter snake, corn snake, milk snake, kingsnake, hognose snake and box turtle are all on the
+  department's native checklist and are now recorded `banned`. Two things are unsettled. First,
+  58-73-2 defines "possession" for the rule as animals "taken alive or dead from the wild", which
+  pulls against 1.1's flat wording for a captive-bred native bought from a dealer; the entries
+  follow 1.1 because that is the sentence the department itself repeats in its public summary.
+  Second, the box turtle legal guide says a pre-owned turtle needed a DNR authorization letter
+  filed by March 2022 to stay legal. That is a grandfather clause and it is probably right, but no
+  primary text for it was found, so the map carries no `grandfathered` field for it yet.
+- **The West Virginia dangerous wild animal list exists.** Most sources, and this handoff until the
+  last sitting, say § 19-34 left the list to a legislative rule that was never made. W. Va. C.S.R.
+  § 74-1-3 was filed and took effect 5 April 2022 and runs to 5 April 2032. It resolved four cells
+  that had been `unclear` purely because the list was thought missing: the boa constrictor and the
+  Burmese python, because no snake is on it; the fennec fox, because the only canids are gray
+  wolves and African wild dogs; and the serval, because the cats are named one by one and it is not
+  among them. Finding it needed the ASP.NET POST recipe now in the sources README, because the rule
+  sits under agency "Dangerous Wild Animal Board" at title 74, not under Agriculture at 61-30 where
+  the repealed versions are.
+- **North Dakota's nontraditional livestock categories were never repealed, only renumbered.** The
+  previous reading had title 48 repealed and replaced by importation health chapters, which made
+  North Dakota look like a state with almost no captivity rules. NDAC article 48.1-09 is alive:
+  48.1-09-01-02 sorts every nondomestic species held in confinement into three categories, and
+  48.1-09-01-03(1) requires the licence to be in hand and the premises inspected BEFORE a category
+  2 or 3 animal is acquired. That resolved the prairie dog (category 2 names "prairie dogs, and
+  other ground squirrels") and the serval (category 2 names "nondomestic cats not listed in
+  category 3") from `unclear` to `permit`. The capybara and the fennec fox stay `unclear` because
+  they are named in no category at all, and 48.1-09-01-02(6) says an unlisted species "must be
+  reviewed by the board for determination of importation requirements and licensure requirements
+  prior to importation", which is a case-by-case answer rather than a rule.
+- **Kansas bans the pet flying squirrel, and it takes three regulations read together to see it.**
+  K.S.A. 32-1002(a)(2) makes it unlawful to possess any wildlife except as permitted by law or
+  regulation. K.A.R. 115-20-3 permits exotic wildlife, but 115-20-3(d) defines exotic as not native
+  to Kansas. K.A.R. 115-20-2 permits taking certain Kansas wildlife, but 115-20-2(b) excludes
+  anything listed in 115-15-1 or 115-15-2. And K.A.R. 115-15-2(a)(6) lists "Southern flying
+  squirrel, Glaucomys volans" as a nongame species in need of conservation. Every door closes. The
+  special permit regulation at 115-15-3 covers threatened and endangered wildlife rather than
+  nongame species in need of conservation, so there is no permit route; 115-15-2(c) grandfathers
+  animals held before 1 January 1990 on an approved affidavit.
+- **The West Virginia flying squirrel rests on the genus rather than on the species.** § 20-1-2
+  defines "wild animals" as all mammals native to the State of West Virginia, and the entry reads
+  `permit` on the strength of § 20-2-51's two dollar pet permit. What could not be found was a West
+  Virginia state citation naming Glaucomys volans specifically. The DNR names Glaucomys sabrinus
+  fuscus, the West Virginia northern flying squirrel, as a state species and a near-endemic, and its
+  mammal page gives no species checklist. If the department treats only the northern species as
+  native, this cell needs revisiting.
 
 - **New Hampshire bans every pet arthropod, and it is a chain of four provisions rather than a
   decision anyone appears to have made.** RSA 207:1, XXXV defines wildlife to include invertebrates
@@ -538,32 +586,56 @@ Thirteen jurisdictions, nine animals each, 117 cells. Ordered by how much is alr
 
 ## Articles
 
-Twelve matrix animals have deep coverage and no legal guide. The two best are complete now:
+Twelve matrix animals have deep coverage and no legal guide. The two best are the capybara and
+the prairie dog, both complete. Both had a Colorado cell that was wrong, `permit` where the answer
+is `banned`, and the prairie dog has since picked up a second correction: North Dakota moved from
+`unclear` to `permit` once the nontraditional livestock categories turned out to be alive. Anything
+drafted against the older map needs re-reading, and the prairie dog in particular reads very
+differently once Colorado, its own native range, turns out to prohibit it by name.
 
-- **capybara**, 51 of 51 states read
-- **prairie-dog**, 51 of 51
+All 52 animals are now at 52 of 52. There are no unread cells anywhere on the map, so
+`check-legal-map-sync.mjs` will no longer reject a guide for asserting a status the map has not
+read. The nine that finished last, the flying squirrel, the bearded dragon, the leopard gecko, the
+crested gecko, the blue-tongue skink, Jackson's chameleon, the green anole, the rabbit and the
+hissing cockroach, are all guide-ready.
 
-Both already had a Colorado cell and both were wrong: `permit` where the answer is `banned`.
-They are corrected now, but anything drafted against the older map needs re-reading, and the
-prairie dog in particular reads very differently once Colorado, its own native range, turns out
-to prohibit it by name.
-
-Forty-three of the 52 animals are now at 51 of 51, including the ackie monitor, which Idaho
-completed, and the corn snake, milk snake and rosy boa, which Maine and Arkansas completed.
-Every snake, turtle, mammal and bird on the map is finished everywhere.
-
-The nine that are not are the eight encyclopedia animals added recently (bearded dragon, leopard
-gecko, crested gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing
-cockroach) plus the flying squirrel. All nine sit at exactly 39 of 51 and all nine are missing
-exactly the same thirteen states, so they finish together. They are **not** ready for guides yet:
-`check-legal-map-sync.mjs` fails a guide that asserts a status for a state the map has not read, so
-writing one now produces a page the build rejects. Thirteen more state sittings and all nine become
-guide-ready at once.
+Three of those nine have answers interesting enough to carry a guide on their own. The flying
+squirrel is the strongest: it is `banned` in Montana by binomial, `banned` in Kansas through three
+regulations that each close a different door, and `permit` in West Virginia, Mississippi and a
+string of others, because it is a native mammal almost everywhere it appears and native mammals are
+where the wild-take allowances stop. The green anole splits the country cleanly on nativity, legal
+and unlimited as an exotic in most states and a licensed nongame species in Mississippi and
+Louisiana where it actually lives. The hissing cockroach is the one that turns on a definition
+rather than a list, and New Hampshire bans it.
 
 Any new legal guide needs a `RELATED_ARTICLES` entry in `src/lib/data/relatedArticles.js`.
 The auto-detect only covers standard care-guide suffixes, and `-legal-guide` is not one.
 
 ## Findings worth reusing
+
+**Read the second rule even when the first one gives a clean answer.** This kept happening and it
+was never the same shape twice. Alabama, Indiana and Oklahoma each split into a prohibited-species
+rule and a native-wildlife rule and the map had read only the first. Kansas hides its real rule in
+a possession bar plus two permissive regulations while everyone quotes the dangerous regulated
+animal statute. Iowa's 717F is the dangerous wild animal list every summary quotes and it answers
+none of the nine, while 481A does. Mississippi's answer for a native sits in Part 5, the Museum of
+Natural Science, not in Part 2 where the hunting rules are. West Virginia has two lists, one under
+Agriculture at title 61-30 that is repealed and one under a board of its own at title 74 that is in
+force. The tell is always the same: a rule that names species and stops is a prohibition list, and
+a prohibition list never answers a native.
+
+**A "repealed" chapter is often a renumbered one.** North Dakota's nontraditional livestock category
+system was recorded as repealed because title 48 no longer exists. It is title 48.1 now, article
+48.1-09, amended as recently as April 2026. Before writing that a scheme was abolished, fetch the
+agency's current chapter index rather than probing the old chapter numbers, because a probe of a
+retired number and a probe of a scheme that never existed look identical.
+
+**When a state bar names a taxonomic class, that word is the whole answer.** South Dakota's SDCL
+40-3-24 reads "any nondomestic mammal", not animal, and SDCL 40-3-26 says "of the mammalia class".
+That puts every reptile, amphibian and invertebrate outside the Animal Industry Board scheme at the
+level of the statute rather than of the rule, which is stronger than an absence from a list and
+takes one line to verify. West Virginia does the reverse with "wild animals" meaning mammals native
+to the state, which makes nativity the whole question for a mammal and irrelevant for a reptile.
 
 The invertebrate question now has a fourth shape and it is the one that bites. The three known
 shapes were a closed list of taxa that leaves arthropods out, an express exemption, and a broad

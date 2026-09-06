@@ -1,0 +1,214 @@
+SOURCE: North Dakota: NDAC article 48.1-09 (nontraditional livestock), NDCC 36-01 (board of animal health) and NDCC 20.1-01-02 (game and fish definitions)
+URL: https://www.ndlegis.gov/information/acdata/pdf/48.1-09-01.pdf and https://ndlegis.gov/cencode/t36c01.pdf and https://ndlegis.gov/cencode/t20-1c01.pdf
+FETCHED: 2026-09-05 (ndlegis.gov serves every Century Code chapter and every administrative code chapter as a PDF to plain curl. The chapter index is at https://www.ndlegis.gov/agency-rules/north-dakota-administrative-code, which is a 1 MB page listing every article and chapter with links.)
+
+READ THIS FIRST, because the previous reading of North Dakota in this map was wrong in a way
+that is easy to repeat. Title 48 was renumbered to 48.1, not gutted, and the nontraditional
+livestock category system is alive at ARTICLE 48.1-09. Reading only 48.1-13-02, the catch-all
+"other animals" importation chapter, makes North Dakota look like a state with no captivity
+rules at all. It is not.
+
+NDCC 36-01-08.1 says the board of animal health "may require a license for nontraditional
+livestock". The wording is permissive and the board has used it. NDCC 36-01-00.1(4) defines
+nontraditional livestock as any wildlife held in a cage, fence, enclosure or other manmade means
+of confinement, which is every pet on this map that is not a dog, cat, horse, cow, sheep, goat,
+bison, farmed elk, llama, alpaca or pig.
+
+48.1-09-01-02 then sorts them into three categories:
+
+Category 1, no licence. Named species, rabbits and hedgehogs and chinchillas and degus among
+them, defined as generally domestic or otherwise not dangerous.
+
+Category 2, licence required. Named species: all nondomestic ungulates, nondomestic cats not in
+category 3, most furbearers, and "prairie dogs, and other ground squirrels".
+
+Category 3, licence required. Wild suidae, big cats, bears, wolves, primates, nondomestic sheep
+and goats, and "venomous reptiles and nonvenomous injurious reptiles".
+
+48.1-09-01-03(1) is the sharp end: the owner shall obtain the licence BEFORE acquiring a
+category 2 or 3 animal, and the board has to inspect and approve the premises first.
+
+For anything in no category at all, which is where an ordinary pet lizard or a flying squirrel
+lands, no licence is required but the importation rule still is. 48.1-09-02-01 requires a
+certificate of veterinary inspection and an importation permit number from the state
+veterinarian, and the exemption list at 48.1-09-01-02(4) covers arachnids, invertebrates,
+tropical fish, gerbils, guinea pigs, hamsters, mice, rats and sugar gliders and no reptile.
+
+The Game and Fish side is a dead end by design: NDCC 20.1-01-02 defines wildlife broadly and
+then says wildlife "does not include domestic animals as defined by section 36-01-00.1 or birds
+or animals held in private ownership".
+
+
+==== NDAC 48.1-09-01-02, the three categories, in full ====
+
+48.1-09-01-02. Categories of nontraditional livestock. 1. Nontraditional livestock category 1
+species: a. Category 1 species of nontraditional livestock are species generally considered
+domestic, or other species that are not inherently dangerous, that do not pose a health risk to
+humans, domestic animals, or wild animals, and do not pose a hazard to the environment, as
+determined by the board. b. Category 1 species of nontraditional livestock includes turkeys,
+geese, and ducks morphologically distinguishable from wild turkeys, geese, ducks, pigeons,
+rabbits, ratites, chinchilla, Guinea fowl, ranch foxes, ranch mink, peafowl, all pheasants,
+quail, chukar, hedgehog, degus, and other species as ordered by the board. c. Category 1 species
+of nontraditional livestock do not require a nontraditional livestock license, but owners must
+otherwise comply with the rules in this title. 2 2. Nontraditional livestock category 2 species:
+a. Category 2 species of nontraditional livestock are certain protected species or those species
+that may pose health risks to humans or animals or may be environmentally hazardous, as
+determined by the board. b. Category 2 species of nontraditional livestock includes the
+following species and their hybrids, all nondomestic ungulates, including all deer (cervidae)
+and pronghorn, zebras, nondomestic cats not listed in category 3, waterfowl, shorebirds, upland
+game birds not listed in category 1, crows, wolverines, otters, bats, martens, fishers, kit or
+swift foxes, badgers, coyotes, mink, red and gray foxes, muskrats, beavers, weasels, opossums,
+prairie dogs, and other ground squirrels, other species as ordered by the board and the
+following varieties of sheep: black Hawaiian, Corsican, painted desert, multi-horned hair, New
+Mexico dall, Texas dall, and desert sand. 3. Nontraditional livestock category 3 species: a.
+Category 3 species of nontraditional livestock are species that pose special concerns, including
+species which are inherently dangerous or environmentally hazardous. b. Category 3 species of
+nontraditional livestock includes the following species and their hybrids: (1) All wild species
+of the family suidae, except swine considered domestic in the state by the board. (2) Big cats,
+including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves. (5)
+Venomous reptiles and nonvenomous injurious reptiles. (6) Primates. (7) Nondomestic sheep and
+nondomestic goats not listed in nontraditional livestock category 2. (8) Other species as
+ordered by the board. 4. Unless the state veterinarian determines it is necessary based on
+disease incidence information or human health or safety concerns, the following are exempt from
+the importation permit and certificate of veterinary inspection requirement: a. Arachnids. b.
+Invertebrates. c. Tropical freshwater and saltwater fish. d. Gerbils. e. Guinea pigs. f.
+Hamsters. g. Mice. 3 h. Rats. i. Sugar gliders. j. Ova, semen, eggs or embryos of nontraditional
+livestock. 5. The board may prohibit, by policy or rule, ownership or possession of any animal
+deemed to be a significant threat to human or animal health in the state. a. Skunks and raccoons
+may not be imported into the state for any purpose. (1) If the state veterinarian determines
+that a skunk or raccoon is being kept in captivity in violation of North Dakota Century Code
+section 36-01-08.4, the state veterinarian may serve upon the owner or keeper of such skunk or
+raccoon a notice of intent to confiscate the animal. (2) The owner or keeper of the animal may
+request a hearing within ten days of receipt of the notice. Such a hearing, if requested, must
+be conducted by an administrative law judge, who shall make a recommended decision to the board.
+(3) If the owner or keeper of the animal does not request a hearing within the prescribed time
+period, the state veterinarian may confiscate and place the animal at a licensed zoo, if
+feasible, or have it humanely destroyed. (4) The state veterinarian may obtain the assistance of
+agents and employees of other state agencies or local law enforcement officials in carrying out
+this chapter and North Dakota Century Code section 36-01-08.4. 6. Nontraditional livestock not
+otherwise referred to in this section or Century Code must be reviewed by the board for
+determination of importation requirements and licensure requirements prior to importation. 7.
+Reclassification of any species is contingent upon scientific information indicating the risks
+posed by these species to native wildlife populations and domestic animals and must be reviewed
+by the board. History: Effective July 1, 2016; amended effective July 1, 2024; April 1, 2026.
+General Authority: NDCC 36-01-08 Law Implemented: NDCC 36-01-08, 36-01-08.4, 36-01-12
+
+
+==== NDAC 48.1-09-01-03, when the licence has to be in hand ====
+
+48.1-09-01-03. License requirements for nontraditional livestock category 2 and category 3
+species. 1. The owner shall obtain a license from the board before acquiring animals classified
+as nontraditional livestock category 2 and category 3 species. Fees must be paid under North
+Dakota Century Code section 36-01-08.1 before issuance of a license. 2. An owner, before
+acquiring or possessing category 2 or category 3 nontraditional livestock on such owner's
+premises, shall provide to the board a description and a sketch or map of the premises and
+facilities. a. The sketch or map must include, at a minimum, the proposed exterior boundary,
+location of the holding and handling facilities, the quarantine area, and the proposed location
+of all gates at the time of application for a nontraditional livestock license. The board may
+require additional information. 4 b. An owner may not acquire or possess category 2 or category
+3 nontraditional livestock on such owner's premises and facilities until the board has inspected
+and approved the facility and issued the license. 3. Upon initial application, inspection of
+premises and facilities to meet board guidelines will be conducted by an individual approved by
+the board. Subsequent inspections will be conducted as deemed necessary by the board. 4. An
+owner of nontraditional livestock shall allow inspection of inventory and health records,
+holding facilities, and licensed nontraditional livestock by the board during the term of the
+license and during normal working hours. The licensee or the licensee's agent shall accompany
+the person conducting the inspection. 5. Category 2 and category 3 species may not be
+maintained, released, imported, transported, sold, bartered, or traded within the state except
+as authorized. 6. Licenses expire on January thirty-first of each year and failure to renew a
+nontraditional livestock license within ninety days requires the owner to dispose of livestock
+as ordered by the board. 7. Inventory reports are due on January thirty-first of each year. When
+an annual inventory report is received, the board may evaluate the existing holding facility to
+determine if it is adequate to contain the number and type of nontraditional livestock for which
+applied and the purpose for which they will be held. a. Annual inventory reports must be
+recorded on the forms provided by the board and must be filled out completely and accurately. b.
+Total purchases, sales, deaths, releases or other animal transfers, and births must be reported
+on the annual inventory reports. c. Any livestock transferred, bought, or sold must include an
+itemized bill of sale, a certificate of veterinary inspection, or a manifest at transfer of
+ownership that must include individual identification, if applicable, species, age, sex, number
+of animals, buyer and seller and their respective addresses, date of sale, and available
+nontraditional livestock license numbers. All manifests and bills of sale must be submitted to
+the board within two weeks of the occurrence. d. Prior to sale of nontraditional livestock, the
+seller shall notify the buyer if a North Dakota nontraditional license is required. 8. No owner
+of category 2 or category 3 nontraditional livestock, without prior written approval from the
+board, may release or abandon livestock. Game bird releases must be stipulated in the license
+application. 9. Upon expiration or revocation of a license, all formerly licensed nontraditional
+livestock in possession must be disposed of by the licensee as ordered by the board. a. No
+formerly licensed nontraditional livestock may be abandoned, released, or removed from the
+holding facility without prior written approval of the board. b. All formerly licensed
+nontraditional livestock remaining at the holding facility, upon a reasonable period after
+expiration or revocation of the license, may be disposed of by the board. 10. The board may
+revoke any license or deny any license application and may dispose of any nontraditional
+livestock imported or transported for failing to comply with these rules or with 5 conditions
+placed on the license at the time of issuance. The board may revoke any license or deny any
+license application if the applicant, or agent, falsified information on the license application
+or on the certificate of veterinary inspection, or falsified or failed to keep or submit records
+as required by this chapter. The revocation of a license or denial of a license application must
+comply with North Dakota Century Code chapter 28-32. 11. Any animal determined by the board to
+pose a significant threat to the state's wildlife resources, domestic animals, or human health
+must be held in quarantine at the owner's expense until disposition is determined by the board
+or the state veterinarian. History: Effective July 1, 2016. General Authority: NDCC 36-01-08 Law
+Implemented: NDCC 36-01-08, 36-01-08.1, 36-01-12
+
+
+==== NDAC 48.1-09-02-01, the importation requirements ====
+
+48.1-09-02-01. Importation requirements. Nontraditional livestock may be imported into North
+Dakota only after the owner of the nontraditional livestock: 1. Obtains a certificate of
+veterinary inspection. The certificate of veterinary inspection must include specific disease
+test results, vaccinations, and health statements required by this chapter. 2. Obtains an
+importation permit number from the office of the state veterinarian. The state veterinarian may
+deny a request for an importation permit number if the state veterinarian has information that
+an animal: a. Has not met the disease testing, vaccination, or identification requirements set
+forth in North Dakota Century Code title 36 or this title, or as otherwise required by the state
+veterinarian; b. Has not met any pre-entry quarantine conditions imposed by law; c. Has been
+exposed to, may have been exposed to, is infected with, or may be infected with any contagious
+or infectious disease; d. Is or may originate from an area or premises under quarantine or other
+form of official or regulatory action relating to contagious or infectious disease; or e. May be
+a threat to the health and well-being of the human or animal population of the state, or both.
+
+
+==== NDCC 36-01-00.1, domestic animal and nontraditional livestock defined ====
+
+36-01-00.1. Definitions. In this chapter unless the context or subject matter otherwise
+requires: 1. "Board" means the state board of animal health. 2. "Commissioner" means the
+agriculture commissioner. 3. "Domestic animal" means dog, cat, horse, bovine animal, sheep,
+goat, bison, farmed elk, llama, alpaca, or swine. 4. "Nontraditional livestock" means any
+wildlife held in a cage, fence, enclosure, or other manmade means of confinement that limits its
+movement within definite boundaries or an animal that is physically altered to limit movement
+and facilitate capture.
+
+
+==== NDCC 36-01-08.1 and 36-01-08.4, the licence power and the only outright bans ====
+
+36-01-08.1. Nontraditional livestock license - Fee. The board of animal health may require a
+license for nontraditional livestock maintained within this state. The annual fee for a license
+for a bird species required to be licensed is seven dollars. The maximum amount of annual fees
+for bird species licenses to be paid by a person holding more than one bird species license is
+forty dollars. The annual fee for a license for any other species required to be licensed is
+fifteen dollars. The maximum amount of annual fees for nonbird species licenses to be paid by a
+person holding more than one nonbird species license is one hundred dollars. 36-01-08.2.
+Mountain lions, wolves, and wolf hybrids held in captivity - Identification required. Any person
+who keeps a mountain lion, wolf, or wolf hybrid in captivity must obtain an identification
+number from the board. The number must be tattooed in indelible ink inside the ear of the animal
+for permanent identification purposes. 36-01-08.3. Duties - Evaluations - Report. The board and
+the commissioner shall conduct performance evaluations of the state veterinarian and any
+assistant state veterinarians. 36-01-08.4. Ownership of skunks and raccoons prohibited -
+Exception - Rules on primates, wolves, and wolf hybrids. A person may not keep a skunk or
+raccoon in captivity. This section does not apply to a zoo licensed by the animal care program
+of the animal and plant health inspection service of the United States department of
+agriculture. The state veterinarian shall confiscate and dispose of any animal kept in violation
+of this section. The board shall adopt rules governing the keeping of a primate, wolf, or wolf
+hybrid in captivity and to implement this section. As used in this section, "primate" does not
+include a human being; "wolf" means any animal of the species canis lupus; and "wolf hybrid"
+means any animal that is any part wolf.
+
+
+==== NDCC 20.1-01-02, the definition of wildlife and its private ownership exclusion ====
+
+"Wildlife" means any member of the animal kingdom including any mammal, fish, bird (including
+any migratory, nonmigratory, or endangered bird for which protection is also afforded by treaty
+or other international agreement), amphibian, reptile, mollusk, crustacean, or other
+invertebrate, and includes any part, product, egg, or offspring thereof, or the dead body or
+parts thereof. Wildlife does not include domestic animals as defined by section 36-01-00.1 or
+birds or animals held in private ownership.

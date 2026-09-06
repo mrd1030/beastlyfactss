@@ -1,0 +1,157 @@
+SOURCE: Kansas: K.S.A. 32-701 and 32-1002, and K.A.R. 115-20-2, 115-20-3, 115-20-4, 115-18-10 and 115-15-2
+URL: https://www.kslegislature.gov/li/b2025_26/statute/032_000_0000_chapter/032_007_0000_article/032_007_0001_section/032_007_0001_k/ and https://www.law.cornell.edu/regulations/kansas/K-A-R-115-20-3
+FETCHED: 2026-09-05 (www.ksrevisor.gov serves a bot-check loader page under a 200, and both ksoutdoors.gov and www.kdwp.state.ks.us refuse this container outright, so the statutes came from kslegislature.gov with curl -L and the regulations from Cornell LII.)
+
+READ THIS FIRST. The dangerous regulated animal statute, K.S.A. 32-1301, is the rule every
+summary of Kansas quotes and it answers almost nothing. It restricts six big cats, bears and
+non-native venomous snakes, and that is the whole of it.
+
+The rule that actually decides a Kansas cell is a pair of provisions that between them cover
+every animal alive. K.S.A. 32-701 defines wildlife as any member of the animal kingdom, saying
+arthropod out loud, and excludes only agricultural livestock. K.S.A. 32-1002(a)(2) then makes it
+unlawful to possess any wildlife at all "unless and except as permitted by law or rules and
+regulations adopted by the secretary". So in Kansas the question is never what is prohibited. It
+is which regulation permits the animal.
+
+There are two permissions and they split on nativity:
+
+K.A.R. 115-20-3 permits EXOTIC wildlife, defined at (d) as species not native or indigenous to
+Kansas or not presently existing here as an established wild population, and (b) allows them
+"without limit in time and number".
+
+K.A.R. 115-20-2 permits taking certain KANSAS wildlife for personal use, reptiles and
+invertebrates among them, but (b) excludes anything listed in K.A.R. 115-15-1 or 115-15-2, and
+(e) caps possession at five reptiles and two of any one reptile species per person or domicile.
+
+That exclusion in 115-20-2(b) is the trap. K.A.R. 115-15-2 is the nongame species in need of
+conservation list, and the southern flying squirrel, Glaucomys volans, is on it by binomial. A
+Kansas native on that list is outside 115-20-3 because it is not exotic and outside 115-20-2
+because it is excluded, which leaves K.S.A. 32-1002(a)(2) with nothing to permit it. The special
+permit regulation, 115-15-3, covers threatened and endangered wildlife rather than nongame
+species in need of conservation.
+
+Two things to carry into the next Kansas sitting. 115-20-2(b)(13) allows taking "reptiles,
+except common snapping turtles and soft-shelled turtles", so the Kansas snapping turtle is NOT
+on the takeable list. And 115-20-2(e) caps native reptiles at two of any one species per
+domicile, which the existing Kansas entries for native snakes and turtles do not mention.
+
+
+==== K.S.A. 32-701, the definition of wildlife ====
+
+Wildlife" means any member of the animal kingdom, including, without limitation, any mammal,
+fish, bird, amphibian, reptile, mollusk, crustacean, arthropod or other invertebrate, and
+includes any part, product, egg or offspring thereof, or the dead body or parts thereof. (2)
+"Wildlife" does not include agricultural livestock, including, but not limited to, cattle,
+swine, sheep, goats, horses, mules and other equines, and poultry, including, but not limited
+to, domestic chickens, turkeys and guinea fowl.
+
+
+==== K.S.A. 32-1002(a) and (b), the possession bar and its exceptions ====
+
+32-1002. Unlawful taking or dealing in wildlife; penalties; exceptions; carrying a handgun; use
+of suppressing devices. (a) Unless and except as permitted by law or rules and regulations
+adopted by the secretary in accordance with K.S.A. 32-805, and amendments thereto, it is
+unlawful for any person to: (1) Hunt, fish, furharvest or take any wildlife in this state by any
+means or manner; (2) possess any wildlife, dead or alive, at any time or in any number, in this
+state; (3) purchase, sell, exchange, ship or offer for sale, exchange or shipment any wildlife
+in this state; (4) take any wildlife in this state for sale, exchange or other commercial
+purposes; (5) possess any seine, trammel net, hoop net, fyke net, fish gig, fish spear, fish
+trap or other device, contrivance or material for the purpose of taking wildlife; or (6) take or
+use, at any time or in any manner, any game bird, game animal, coyote or furbearing animal,
+whether pen-raised or wild, in any field trial or for training dogs. (b) The provisions of
+subsections (a)(2) and (a)(3) do not apply to animals sold in surplus property disposal sales of
+department exhibit herds or animals legally taken outside this state, except the provisions of
+subsection (a)(3) shall apply to: (1) The meat of game animals legally taken outside this state;
+and (2) other restrictions as provided by rule and regulation of the secretary.
+
+
+==== K.A.R. 115-20-3, exotic wildlife, in full ====
+
+(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be
+imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was
+legally captured, raised, exported, possessed, sold or purchased or any combination of these
+activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time
+and number. (c) Exotic wildlife shall be confined or controlled at all times and shall not be
+released onto the lands or into the waters of this state. (d) Exotic wildlife shall only include
+those wildlife species which are non-migratory and are not native or indigenous to Kansas, or do
+not presently exist in Kansas as an established wild population.
+
+
+==== K.A.R. 115-20-2, certain wildlife, in full ====
+
+(a) Subject to federal and state laws and regulations, wildlife listed in subsection (b) may be
+taken for personal use on a noncommercial basis. (b) For purposes of this regulation, wildlife
+shall include the following, excluding any species listed in K.A.R. 115-15-1 or K.A.R. 115-15-2
+: (1) Amphibians, except bullfrogs; (2) armadillo; (3) commensal rodents, excluding game and
+furbearing animals; (4) exotic doves; (5) feral pigeon; (6) gopher; (7) ground squirrel; (8)
+invertebrates; (9) kangaroo rat; (10) mole; (11) porcupine; (12) prairie dog; (13) reptiles,
+except common snapping turtles and soft-shelled turtles; (14) woodchuck; and (15) wood rat. (c)
+Wildlife listed in subsection (b) shall be taken only with any of the following legal equipment
+or methods: (1) Bow and arrow; (2) crossbow; (3) deadfall; (4) dogs; (5) falconry; (6) firearms,
+except fully automatic firearms; (7) glue board; (8) hand; (9) net or seine; (10) optical scopes
+or sights that project no visible light toward the target and do not electronically amplify
+visible or infrared light; (11) pellet and BB gun; (12) poison, poisonous gas, or smoke, if the
+toxicant is registered and labeled for that use and if all permit requirements for use of the
+poison, poisonous gas, or smoke have been met; (13) projectiles hand-thrown or propelled by a
+slingshot; (14) snare or noose; or (15) trap. (d) The open season for the taking of wildlife
+listed in subsection (b) shall be year-round. (e) There shall be no maximum daily bag or
+possession limit for wildlife listed in subsection (b), except that no more than five total of
+any combination of amphibian may be possessed per person or domicile, whichever is reached
+first, and no more than five reptiles and no more than two individuals of any reptile species
+per person and/or domicile, whichever is reached first. No more than five live specimens of
+mussels may be possessed. Two opposing shells shall constitute one mussel. (f) For the purpose
+of this regulation, "domicile" shall mean the address you declare in legal documents to pay
+taxes, receive social security, vote, bank, permanent abode, and register vehicles and animals.
+(g) Each exotic dove possessed in excess of the aggregate daily bag limit or aggregate
+possession limit for migratory doves during the open season for migratory doves established in
+115-25-19 shall retain a fully feathered wing. For the purpose of this regulation, "migratory
+dove" shall mean any mourning dove or white-winged dove, and "exotic dove" shall mean a Eurasian
+collared dove or ringed turtledove. (h) Legally taken wildlife listed in subsection (b) may be
+possessed without limit in time. (i) A hunting license shall not be required to take
+invertebrates.
+
+
+==== K.A.R. 115-20-4, the four species that need a possession permit ====
+
+(a) Any person possessing one of the following animals shall be required to obtain a possession
+permit: (1) mountain lion, Felis concolor Linnaeus; (2) wolf, Canis lupus Say; (3) black bear,
+Ursus americanus Pallas ; and (4) grizzly bear, Ursus arctos horribilis Ord.
+
+
+==== K.A.R. 115-15-2, the nongame mammals, and the grandfather clause ====
+
+(6) Mammals Franklin's ground squirrel, Poliocitellus franklinii (Sabine, 1822) Pallid bat,
+Antrozous pallidus (LeConte, 1856) Southern bog lemming, Synaptomys cooperi (Baird, 1858)
+Southern flying squirrel, Glaucomys volans (Linnaeus, 1758) Texas mouse, Peromyscus attwateri
+(J.A. Allen, 1895) Townsend's big-eared bat, Corynorhinus townsendii (Cooper, 1837) Northern
+long-eared bat, Myotis septentrionalis (Trouessart, 1897) (7) Turtles Alligator snapping turtle,
+Macrochelys temminckii (Troost, in Harlan, 1835) (b) Any nongame species in need of conservation
+taken during established trapping seasons, authorized commercial wildlife operations, fishing by
+hook and line, baitfish seining, or other lawful activity shall not be unlawfully taken if
+immediately released. (c) Any nongame species in need of conservation in possession before the
+effective date of this regulation and not prohibited by any previous regulation of the
+department or national listings may be retained in possession if either of the following
+conditions is met: (1) An application of affidavit to that effect has been filed with and
+approved by the secretary before January 1, 1990, that states the circumstances of how the
+species came into possession. (2) Possession of the animal has been previously approved by the
+department.
+
+
+==== K.A.R. 115-18-10(a), the prohibited species list ====
+
+(a) The importation, possession, or release in Kansas of the following live wildlife species
+shall be prohibited, except as authorized by terms of a wildlife importation permit issued by
+the secretary: (1) Walking catfish ( Clarias batrachus ); (2) silver carp ( Hypophthalmichthys
+molitrix ); (3) bighead carp ( Hypophthalmichthys nobilis ); (4) black carp ( Mylopharyngodon
+piceus ); (5) snakehead fish (all members of the family Channidae); (6) round goby ( Neogobius
+melanostomus ); (7) white perch ( Morone americana ); (8) zebra mussel ( Dreissena polymorpha );
+(9) quagga mussel ( Dreissena bugensis ); (10) New Zealand mudsnail ( Potamopyrgus antipodarum
+); (11) diploid grass carp ( Ctenopharyngodon idella); (12) marbled crayfish ( Procambarus
+virginalis ); (13) monk parakeet ( Myiopsita monachus ); (14) Asian raccoon dog ( Nyctereutes
+procyonoides ); (15) crucian carp ( Carassius carassisus ); (16) largescale silver carp (
+Hypophtalmichthys harmandi ); (17) Prussian carp ( Carassius gibelio ); (18) wels catfish (
+Silurus glanis ); (19) Eurasian minnow ( Phoxinus phoxinus ); (20) stone moroko ( Pseudorasbora
+parva ); (21) European perch ( Perca fluviatilis ); (22) Nile perch ( Lates niloticus ); (23)
+roach ( Rutilus rutilus ); (24) amur sleeper ( Perccotus glenii ); (25) zander ( Sander
+lucioperca ); (26) common yabby ( Cherax destructor ); and (27) rusty crayfish ( Orconectes
+rusticus ).
