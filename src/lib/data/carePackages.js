@@ -277,19 +277,14 @@ export const CARE_PACKAGES = [
     badge: 'Mammal',
     emoji: '🐹',
     status: 'coming-soon',
-    // Off sale again, deliberately. The Stripe storefront was proved end to end
-    // on this package in the Sandbox (see docs/STOREFRONT.md), and 'gumroad'
-    // here is what takes the buy button off the card, drops the product page,
-    // and removes it from the prerender list and the sitemap. Nothing else is
-    // torn down: the Sandbox price, the edition date and the contents list all
-    // stay, so switching this one word back to 'stripe' puts it on sale again
-    // with no other change.
-    //
-    // Do NOT flip it back before the product page is rebuilt in the landing
-    // page style, see the phase 2 section of docs/STOREFRONT.md. The page it
-    // would sell through today is the plain one, not the one the nine Gumroad
-    // listings set the bar at.
-    storefront: 'gumroad',
+    // On sale here, through Stripe, in the Sandbox until the live price id is
+    // added alongside. The product page is the landing-page one (phase 2 in
+    // docs/STOREFRONT.md, the plan in docs/SHOP_PLAN.md), skinned by
+    // carePackageThemes.js and written in carePackageCopy.js. Setting this back
+    // to 'gumroad' takes the buy button off the card, drops the product page,
+    // and removes it from the prerender list and the sitemap, with nothing
+    // else torn down.
+    storefront: 'stripe',
     stripePriceIdSandbox: 'price_1UC9Up9qtY3Ob6vac8xRLEu2',
     price: '$8.99',
     pages: 37,

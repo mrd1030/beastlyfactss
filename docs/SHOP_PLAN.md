@@ -175,14 +175,13 @@ Nothing sold here should load from `public-files.gumroad.com`.
   nine plus cockatiel and cockatoo. Copy the chosen one to
   `public/assets/care-packages/<id>/cover.jpg`. The five coming-soon packages
   already use `/assets/guides/<id>.jpg`.
-- Previews: render five interior pages per package from
-  `content/CAREPACKAGE Guides/source/<id>.html` with the headless Chromium
-  already used by `_render.mjs`, to
-  `public/assets/care-packages/<id>/page-1.jpg` through `page-5.jpg`, 1200px
-  wide, 4:3 crop of the top of the page. A short script,
-  `scripts/render-care-package-previews.mjs <id> <page> <page> ...`, so the
-  chosen pages are recorded and reproducible. Pick pages that sell: a targets
-  table, a Never callout, a checklist, the symptom table, the owner log.
+- Previews: `node scripts/render-care-package-previews.mjs <id> <page> ...`
+  renders the named pages of `content/CAREPACKAGE Guides/source/<id>.html`
+  with headless Chromium to `public/assets/care-packages/<id>/page-<N>.jpg`,
+  full letter pages at 1224px wide, around 200KB each. The carousel crops them
+  to 4:3 from the top. Record the same page numbers in the `previews` entry in
+  `carePackageCopy.js`. Pick pages that sell: a targets table, a Never
+  callout, a checklist, the symptom table, the owner log.
 - Run `scripts/check-images` or whatever the image check is called before
   committing, per CLAUDE.md. No `npm run build`.
 
@@ -248,13 +247,22 @@ After live sales are confirmed:
 - `RELATED_ARTICLES` is unaffected. Product pages are not articles.
 - The 404 for an unknown package id already works.
 
+## Open question from session 1
+
+The Hamster source HTML is now at version 2.3 (the legal edition, Oregon
+added), but the PDF in `rebuilt/` and in the bucket is v2.2 and the catalog
+says 2.2. Either render v2.3 with `_render.mjs`, upload it over
+`care-packages/hamster.pdf`, and bump `version` in both the catalog and the
+Worker, or leave 2.2 on sale. The preview images were rendered from the 2.3
+source; none of the five pages changed between the two.
+
 ## Sessions and model
 
 Four sessions, in this order. Each one ends with a branch push.
 
 | Session | Work | Model, effort |
 | --- | --- | --- |
-| 1 | Step 1 on the Hamster: template, themes module, carousel, prerender-safe reveal. Buyable in the Sandbox at the end | Opus 5 (or Fable 5.1), high effort. This is the design and architecture session; getting it right once saves it on the other thirteen |
+| 1 | **Done, 6 September 2026.** Step 1 on the Hamster: template, themes module, carousel, prerender-safe reveal. Buyable in the Sandbox | Opus 5 (or Fable 5.1), high effort. This is the design and architecture session; getting it right once saves it on the other thirteen |
 | 2 | Step 2 for the nine Gumroad packages: lift copy, fix page counts, transcribe contents, write themes. Step 3 previews and covers | Sonnet 5, medium effort. Mechanical and repetitive, and cheap to rerun on a package if one comes out wrong |
 | 3 | Step 2 for ball-python, betta-fish, rabbit, tarantula (and cockatiel, cockatoo): copy written from the source HTML. Step 3 previews for those | Opus 5, medium effort. Writing sales copy that has to be true to a 40-page PDF is where the cheaper model drifts |
 | 4 | Steps 4 to 6: Stripe prices, Worker mirror, flip each package, test each purchase. Go-live checklist | Sonnet 5, medium effort, with you at the keyboard for the service role key and the dashboard steps |

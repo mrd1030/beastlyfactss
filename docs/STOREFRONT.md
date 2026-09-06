@@ -292,11 +292,17 @@ reads like signing in rather than registering, and to add `{{ .Token }}` to it
 as well as to Magic Link. The library tries a typed code as type `email` and
 falls back to `signup`, so a code from either template works.
 
-## Phase 2, not started: product pages in the landing page style
+## Phase 2: product pages in the landing page style
 
-**The hamster is off sale until this is done.** `storefront: 'gumroad'` in
-`carePackages.js` is what holds it there. Phase 1 proved the plumbing; it did
-not produce a page worth selling through.
+**Built for the Hamster on 6 September 2026**, and it is back on sale in the
+Sandbox through the new page. The rest of the catalog follows the plan in
+`docs/SHOP_PLAN.md`. The pieces: `src/pages/CarePackageProduct.jsx` is the
+template, `src/lib/data/carePackageThemes.js` the per-package colors and
+motion, `src/lib/data/carePackageCopy.js` the per-package pitch,
+`src/styles/care-package-product.css` the one place the theme variables are
+consumed, and `scripts/render-care-package-previews.mjs` renders the carousel
+images to `public/assets/care-packages/<id>/`. The notes below were the brief
+it was built from and still apply to every package after it.
 
 `src/pages/CarePackageProduct.jsx` today is a competent spec sheet: cover,
 price, bullets, contents, buy button. The bar is set by the nine pages in
