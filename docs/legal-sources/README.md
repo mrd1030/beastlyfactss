@@ -70,6 +70,9 @@ about this species", not to claim a new verification date.
 | `UT-ut-r657-3b.txt` | Birds and mammals, pointing at Table 3b-1 for the domestic animals it does not govern |
 | `UT-ut-table-3b-1.txt` | Table 3b-1 itself: domestic, noncontrolled, controlled and prohibited, under a header presuming everything unlisted prohibited |
 | `UT-ut-23a-1-101.txt` | The Utah Code definitions, whose subsection (65) puts every arthropod outside the division's reach |
+| `AL-al-conservation-rules.txt` | Alabama's four rules in one file: the prohibited list at .26, protected nongame at .92, invertebrates at .98, turtles at .142 |
+| `IN-in-312-iac-9.txt` | Indiana's three regimes: the native herp rule at 9-5, the invertebrate exemption at 9-9-5, and the permit classes at 9-11 |
+| `OK-ok-wildlife-rules.txt` | Oklahoma's exemption list, its reptile and amphibian part, the commercial turtle rule, and the four statutes that frame them |
 
 ## Reading the awkward ones
 
@@ -200,6 +203,29 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   purchased pet as capped when it is not, which is exactly what had happened to the milk snake here.
   The other thing to hold on to is 53-7(8): a species the division has never classified defaults to
   Controlled at three and nine, so absence from the tables is a default rather than a silence.
+- **`AL-al-conservation-rules.txt`** has to be read as four rules, not one. 220-2-.26 is a prohibited
+  list, so absence from it means unrestricted, and that is where most Alabama answers stop. What it
+  does not cover is Alabama's own wildlife, which 220-2-.92 protects, and the two are easy to read in
+  isolation: the milk snake entry here said legal because a milk snake is not on the federal injurious
+  list, having never reached the line in .92 that protects "Snake, All Native King  Lampropeltis spp."
+  Two more things in this file are worth knowing. The Lacey Act clause in .26 makes the federal
+  injurious wildlife list a state possession ban by reference, so a federal listing changes Alabama
+  law without Alabama doing anything, which is what banned the axolotl here in January 2025. And .92
+  protects amphibians by genus rather than by species, so the whole of Ambystoma is in.
+- **`IN-in-312-iac-9.txt`** splits Indiana in two and the split is by nativity, not by danger. 312 IAC
+  9-11's three permit classes are a short list of mammals plus venomous reptiles and big crocodilians,
+  and stopping there makes every pet reptile look free. 312 IAC 9-5 is the rule that reaches them: it
+  bars selling any of 99 named native taxa "regardless of place of origin", so the bar follows a
+  captive-bred animal in from another state, and caps possession at four per native species. Two
+  entries here were wrong for exactly that reason. The morph exception at 9-5-7(f) is the same device
+  New Jersey uses for corn snakes.
+- **`OK-ok-wildlife-rules.txt`** answers most species from 800:25-25-3, whose exemptions are from
+  licences rather than from a ban, so an unexempt animal is licensable and not prohibited. Its
+  subsection (c) frees non-indigenous reptiles and amphibians as a class, which means the rule stops
+  answering the moment a species is native, and 800:25-7 takes over with a hunting-licence requirement
+  that reaches possession and a six-per-species cap. The provision that quietly decides the rest is
+  statutory: 29 O.S. § 7-502(B)(4) exempts anyone possessing legally obtained wildlife "from a source
+  other than the wild, as pets" from the possession bar.
 - **`CO-co-cpw-species-list.txt`** is parsed into two-line records, the species then its
   determination, so grep with `-A1`:
   `grep -A1 -i 'testudo horsfieldii' docs/legal-sources/CO-co-cpw-species-list.txt`
@@ -243,6 +269,11 @@ not on the sites, so a person with a browser can open all of them.
 | `api.gbif.org` | Works, but drops the occasional connection mid-exchange | Retry with backoff; a failed call returns non-JSON rather than an error code |
 | `web.archive.org` | Blocked by egress policy, so the Wayback fallback is not available here. `archive.org/wayback/available` does answer | Find another live reproduction instead |
 | `pacodeandbulletin.gov`, `dab.hawaii.gov`, `nrm.dfg.ca.gov` | Work with plain curl | Occasional transient 502, just retry |
+| `admincode.legislature.state.al.us` | React app; every `/administrative-code/<rule>` path returns a 1855-byte shell | `/api/rule/<number>` returns the current rule as a PDF, e.g. `/api/rule/220-2-.26`. Use it rather than Cornell LII, whose Alabama copies lag by years |
+| `iar.iga.in.gov` | Returns the same 735-byte React shell for every path, its own `/static/js/` bundles included, with `x-cache: Error from cloudfront`. Nothing on the site is reachable | Read Indiana rules from Cornell LII at `/regulations/indiana/312-IAC-<section>` and cite the official section |
+| `rules.ok.gov` | 403 to plain curl and to a browser User-Agent | Cornell LII carries the Oklahoma Administrative Code at `/regulations/oklahoma/OAC-<title>-<chapter>-<subchapter>-<section>`; find section URLs from the subchapter page rather than guessing the slug |
+| `www.oscn.net` | Works with plain curl, and is the official publisher of the Oklahoma Statutes | Browse `Index.asp?ftdb=STOKST29&level=1` for a title, scrape the `CiteID` for the section you want, then fetch `DeliverDocument.asp?CiteID=<id>`. The occasional request returns a short body; retry |
+| `law.cornell.edu` | Works with plain curl and carries most state administrative codes | Slugs differ by state: Alabama `Ala-Admin-Code-r-220-2-.26` keeps the dot, Indiana is `312-IAC-9-5-7`, Oklahoma is `OAC-800-25-25-3`. A wrong slug returns the state index at HTTP 200 rather than a 404, so check that the section heading is actually in the output. Its copies can lag the official text by years |
 | `adminrules.utah.gov` | React app. Every `/public/rule/<rule>/Current%20Rules` path returns a bare 404 to a fetcher, and `rules.utah.gov` now just redirects here, so the whole Utah Administrative Code is unreadable by URL | The JSON API answers without auth (`/api/public/agencies`, `/api/public/programs/<agencyId>`) but never yielded rule text. For R657 use DWR's own copies at `wildlife.utah.gov/rules/<rule>`, which serve the full rule as HTML. Other agencies' rules, R58-1 for instance, had no readable route |
 | `le.utah.gov` | The plain section page, `/xcode/Title23A/Chapter1/23A-1-S101.html`, is a shell whose body loads by jQuery | Read `versionDefault="C23A-1-S101_<version>"` out of that page, then fetch `/xcode/Title23A/Chapter1/C23A-1-S101_<version>.html`, which is static HTML with the section text |
 | `dep.nj.gov` | Incapsula. HTML pages return a 212-byte `_Incapsula_Resource` stub and PDFs return a 6183-byte "Pardon Our Interruption" page saved under the `.pdf` name | Warm a cookie jar on `https://dep.nj.gov/rules/` with a browser User-Agent, then refetch the PDF with `-b`/`-c` and a Referer, retrying up to three times. PDFs come through; the HTML pages never did. The three list PDFs and the 1.8MB `njac7-25.pdf` all worked this way |

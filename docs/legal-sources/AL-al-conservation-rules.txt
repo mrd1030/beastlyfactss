@@ -1,0 +1,765 @@
+SOURCE: Ala. Admin. Code r. 220-2-.26, 220-2-.92, 220-2-.98 and 220-2-.142 (Game and Fish Division)
+URL: https://admincode.legislature.state.al.us/api/rule/220-2-.26 (and /220-2-.92, /220-2-.98, /220-2-.142)
+FETCHED: 2026-09-05 (Official current text. The Alabama code site is a React app that serves nothing to a fetcher, but /api/rule/<number> returns the rule as a PDF, extracted here with pypdf. Cornell LII's copies are older: its .26 lacks the 2024 Lacey clause words 'fish, crustacea, mollusk' and its .92 still lists salamanders species by species instead of by genus.)
+
+==== 220-2-.26 ====
+ALABAMA DEPARTMENT OF CONSERVATION AND NATURAL RESOURCES
+ADMINISTRATIVE CODE 
+CHAPTER 220-2
+GAME AND FISH DIVISION
+220-2-.26 Restrictions On Possession, Sale, Importation And/Or
+Release Of Certain Animals And Fish. 
+(1) No person, firm, corporation, partnership, or association
+shall possess, sell, offer for sale, import, bring, release, or
+cause to be brought or imported into the State of Alabama any of
+the following live fish or animals:
+Any Walking Catfish or any other fish of the genus Clarias;
+Any Piranha or any fish of the genera Serrasalmus,
+Pristobrycon, Pygocentrus, Catorprion, or Pygopristus;
+Any Nile Perch, Asian Seabass, Barramundi, or any fish from
+the genus Lates or Macquaria;
+Any Giant African Snail or Giant African Land Snail
+(Lissachtina fulica or Achatina fulica);
+Any Black Carp of the genus Mylopharyngodon;
+Any species of sturgeon not native to Alabama;
+Any species of Chinese perch (Siniperca spp.);
+Any species of Snakehead fish from the family Channidae
+(Chamui spp.);
+Any species of Mud carp (Cirrhinus spp.);
+Any species of fish “rudd” (Scardinius erythrophthalmus) or
+“roach” (Rutilus rutilus) or any hybrids of either species;
+Zander (Sander lucioperca);
+European Perch (Perca fluviatilis)
+Eurasian Minnow (Phoxinus phoxinus)
+Wels Catfish (Silurus glanis);
+Prussian Carp (Carassius gibelio);
+Crucian Carp (Carassius carassisus);
+Conservation Rule 220-2-.26
+2-.26-1
+Any species of eel from the family of Anguillidae not native
+to Alabama;
+Amur Sleeper (Perccottus glenii);
+Any species of venomous reptile which has never naturally
+existed in the wild in Alabama including but not limited to
+venomous snakes of the families  Viperidae,  Atractaspididae, 
+Elapidae,  Hydrophiidae and  Colubridae, except for hognose
+snakes (genus Heterodon);
+Any  species  of  bird,  mammal,  fish,  crustacea,  mollusk,
+reptile, or amphibian listed as injurious wildlife under the
+Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife
+Service;
+Any species of Tegus (Salvator sp.);
+Any species of Mongoose;
+San Juan Rabbits, Jack Rabbits or any other species of wild
+rabbit or hare; or
+Any of the following from any area outside the state of
+Alabama; any member of the family Cervidae (to include but not
+be limited to deer, elk, moose, caribou), species of coyote,
+species of fox, species of raccoon, species of skunk, wild
+rodent,  or  strain  of  wild  turkey,  black  bear  ( Ursus
+americanus), mountain lion ( Felis concolor ), bobcat ( Felis
+rufus), Pronghorn Antelope ( Antelocapridae), any nondomestic
+member of the families Suidae (pigs), Tayassuidae (peccaries),
+or Bovidae (except bison).
+No person, firm, corporation, partnership, or association, shall
+transport within the state, any member of the above-stated species
+(whether such member originated within or without the state),
+except for properly licensed game-breeders pursuant to Section
+9-11-31, Code of Ala. 1975 , or persons engaged in the interstate
+transport of any of the above-stated species through the state who
+are otherwise specifically authorized by permit of the Director of
+the Division of Wildlife and Freshwater Fisheries or his designee.
+(2) It shall be unlawful to release any tame turkey, or any other
+turkey, whether wild or tame, into any of the wild areas of this
+State.
+The provisions of this regulation shall not apply to any turkeys
+kept  by  any  farmer  or  landowner  of  this  State  for  normal
+agricultural purposes or for personal consumption.
+(3) Except as authorized by permit issued by the Department prior
+to the date of this amendment, it shall be unlawful for any person
+to have in possession any live, protected wild bird or wild animal
+or live embryo or eggs of these protected wild birds or animals.
+Rule 220-2-.26 Conservation
+2-.26-2
+“Possession” in this section does not include deer restricted by
+natural or man-made barriers as long as the deer remain wild and
+are not subject to management practices of domesticated animals.
+(4) It shall be unlawful for any person to release any form of
+mammal, reptile, or amphibian which did not originate from this
+state, or any captive raised mammal, reptile, or amphibian other
+than those species raised under a license or permit from the
+Commissioner.
+(5) It shall be unlawful to release any non-indigenous seafoods,
+as defined by Section 9-2-80, Code of Ala. 1975 , into any public
+waters of the state.
+(6) The provisions of this regulation shall not apply to the
+exceptions provided for in Section 9-2-13(b), Code of Ala. 1975 .
+Accredited educational, research, and rehabilitation facilities
+shall  be  exempt  from  this  regulation  through  the  written
+permission of the Commissioner or his designee.
+Author: Christopher M. Blankenship
+Statutory Authority: Code of Ala. 1975, §§9-2-7, 9-2-8, 9-2-12.
+History: Filed September 30, 1982. Amended: January 17, 1985;
+September 27, 1990; January 18, 1991. Amended: Filed September
+13, 1994; effective October 19, 1994. Amended: Filed September
+13, 1995; effective October 19, 1995. Amended: Filed August 11,
+1998; September 16, 1998. Amended: Filed January 14, 1999;
+effective February 18, 1999. Amended: Filed September 13, 1999;
+effective October 18, 1999. Amended: Filed August 10, 2000;
+effective September 14, 2000. Amended: Filed June 19, 2001;
+effective July 24, 2001. Amended: Filed July 29, 2002; effective
+September 2, 2002. Amended: Filed October 18, 2005; effective
+November 22, 2005. Amended: Filed May 13, 2009; effective June
+17, 2009. Amended: Filed August 15, 2012; effective September 19,
+2012. Amended: Filed December 30, 2013; effective February 3,
+2014. Amended: Filed June 14, 2016; effective July 29, 2016. 
+Amended: Filed August 19, 2019; effective October 3, 2019. 
+Amended: Published August 31, 2020; effective October 15, 2020. 
+Amended: Published August 30, 2024; effective October 14, 2024.
+Penalty: As provided by law.
+Conservation Rule 220-2-.26
+2-.26-3
+==== 220-2-.92 ====
+ALABAMA DEPARTMENT OF CONSERVATION AND NATURAL RESOURCES
+ADMINISTRATIVE CODE 
+CHAPTER 220-2
+GAME AND FISH DIVISION
+220-2-.92 Protected Nongame Species. 
+(1) It shall be unlawful to take, capture, kill, or attempt to
+take, capture or kill; possess, sell, trade for anything of
+monetary value, or offer to sell or trade for anything of monetary
+value; or propagate the following nongame wildlife species, or any
+parts or reproductive products of such species, or any hybrids of
+such species without a scientific collection permit or written
+permit from the Commissioner, Department of Conservation and
+Natural Resources, which shall specifically state what the
+permittee may do with regard to said species:
+(a) Fishes
+Common Name Scientific Name
+• Cavefish, Alabama Speoplatyrhinus poulsoni
+• Cavefish, Southern Typhlichthys subterraneus
+• Chub, Shoal Macrhybopis hyostoma
+• Chub, Spotfin Erimonax monacus
+• Darter, Bankhead Percina sipsi
+• Darter, Blotchside Persina burtoni
+• Darter, Bluebreast Etheostoma camurum
+• Darter, Boulder Etheostoma wapiti
+• Darter, Brighteye Etheostoma lynceum
+• Darter, Coldwater Etheostoma ditrema
+• Darter, Crystal Crystallaria asprella
+• Darter, Goldline Percina aurolineata
+• Darter, Halloween Percina crypta
+• Darter, Holiday Etheostoma brevirostrum
+• Darter, Lipstick Etheostoma chuckwachatte
+• Darter, Lollipop Etheostoma neopterum
+• Darter, Rush Etheostoma phytophilum
+• Darter, Scaly Sand Ammocrypta vivax
+• Darter, Slackwater Etheostoma boschungi
+• Darter, Slenderhead Percina phoxocephala
+• Darter, Snail Percina tanasi
+• Darter, Trispot Etheostoma trisella
+• Darter, Tuscumbia Etheostoma tuscumbia
+• Darter, Vermilion Etheostoma chermocki
+• Darter, Watercress Etheostoma nuchale
+• Logperch, Blotchside Percina burtoni
+• Madtom, Frecklebelly Noturus munitus
+• Madtom, Mountain Noturus eleutherus
+Conservation Rule 220-2-.92
+2-.92-1
+• Minnow, Suckermouth Phenacobius mirabilis
+• Sculpin, Pygmy Cottus paulus
+• Shad, Alabama Alosa alabamae
+• Shiner, Blackmouth Notropis melanostomus
+• Shiner, Blue Cyprinella caerulea
+• Shiner, Bluestripe Cyprinella callitaenia
+• Shiner, Broadstripe Pteronotropis euryzonus
+• Shiner, Cahaba Notropis cahabae
+• Shiner, Dusky Notropis cummingsae
+• Shiner, Ironcolor Notropis chalybaeus
+• Shiner, Palezone Notropis albizonatus
+• Sunfish, Spring Pygmy Elassoma alabamae
+• Sturgeon, Alabama Scaphirynchus suttkusi
+• Sturgeon, Gulf Acipenser oxyrhynchus desotoi
+• Sturgeon, Lake Acipenser fulvescens
+(b) Amphibians
+Common Name Scientific Name
+• Frog, Crawfish Lithobates areolatus
+• Frog, Gopher Lithobates capito
+• Frog, Little Grass Pseudacris ocularis
+• Frog, Mississippi Gopher Lithobates sevosa
+• Frog, River Lithobates heckscheri
+• Frog, Wood Lithobates sylvaticus
+• Treefrog, Pine Barrens Hyla andersonii
+All native salamander species, including those in the genera 
+Ambystoma, Amphiuma, Aneides, Cryptobranchus, Desmognathus,
+Eurycea, Gyrinophilus, Hemidactylium, Necturus, Notophthalmus,
+Phaeognathus, Plethodon, Pseudotriton, and Siren.
+(c) Reptiles
+Common Name Scientific Name
+• Lizard, Eastern Slender Glass Ophisaurus attenuates longicaudus
+• Lizard, Mimic Glass Ophisaurus mimicus
+Rule 220-2-.92 Conservation
+2-.92-2
+• Skink, Coal Plestiodon anthracinus
+• Skink, Southeastern Five-lined Plestiodon inexpectatus
+• Snake, Pine Pituophis melanoleucus ssp.
+• Snake, Eastern Indigo Drymarchon couperi
+• Snake, Eastern Coral Micrurus fulvius
+• Snake, Gulf Salt Marsh Nerodia clarkii
+• Snake, All Native King Lampropeltis spp.
+• Snake, Rainbow Farancia erytrogramma
+• Snake, Southern Hognose Heterodon simus
+• Terrapin, Diamondback Malaclemys spp.
+• Tortoise, Gopher Gopherus polyphemus
+• Turtle, Alabama Red-bellied Pseudemys alabamensis
+• Turtle, All Map Graptemys spp.
+• Turtle, Flattened Musk Sternotherus depressus
+• Turtle, Alligator Snapping Macrochelys temminikii
+• Turtle, Razor-backed Musk Sternotherus carinatus
+Informational Note: See Section 9-11-269, Code of Ala. 1975,
+relating to protection of the flattened musk turtle
+(Sternotherus depressus).
+(d) Birds
+All nongame birds are protected under the provisions of this
+regulation except crows, and non-native species including
+starlings, house sparrows, Eurasian collared doves, rock
+pigeons.
+(e) Mammals
+Common Name Scientific Name
+• Bat, Brazilian Free-tailed Tadarida brasiliensis
+• Bat, Eastern Small-footed Myotis leibi
+• Bat, Gray Myotis grisescens
+• Bat, Indiana Myotis sodalis
+• Bat, Little Brown Myotis lucifugus
+• Bat, Northern Long-eared Myotis septentrionalis
+• Bat, Northern Yellow Lasiurus intermedius
+• Bat, Rafinesque's Big-eared Corynorhinus rafinesquii
+• Bat, Southeastern Myotis austroriparius
+• Bat, Tricolored Perimyotis subflavus
+• Gopher, Southeastern Pocket Geomys pinetis
+• Manatee, West Indian Trichechus manatus
+Conservation Rule 220-2-.92
+2-.92-3
+• Mouse, Alabama Beach Peromyscus polionotus ammobates
+• Mouse, Meadow Jumping Zapus hudsonius
+• Mouse, Perdido Key Beach Peromyscus polionotustrissylepsis
+• Shrew, Pygmy Sorex hoyi
+• Shrew, Smoky Sorex fumeus
+• Cottontail, Appalachian Sylvilagus obscurus
+• Rabbit, Marsh Sylvilagus palustris
+• Skunk, Spotted Spilogale putorius
+• Weasel, Long-tailed Neogale frenata
+• Woodrat, Allegheny Neotoma magister
+(f) Other State or Federally protected nongame species.
+(2) It shall be unlawful for any person to take, capture, kill or
+possess any bullfrog (Lithobates catesbeianus) or pig frog
+(Lithobates grylio) from the public waters of this state for
+commercial purposes. Furthermore, it shall be unlawful for any
+person to take, capture, kill or possess more than twenty (20)
+bullfrogs and pig frogs in aggregate from the public waters of
+this state during any twenty-four (24) hour period from 12 noon to
+the following 12 noon.
+(3) It shall be unlawful for any person to sell, offer for sale,
+or trade anything of value for any Eastern Diamondback Rattlesnake
+(Crotalus adamanteus), hybrid, or any parts, or possess alive any
+Eastern Diamondback Rattlesnake or hybrid without a permit from
+the Commissioner. Nothing herein is intended to prevent the
+relocation of live Eastern Diamondback Rattlesnakes (Crotalus
+adamanteus) to suitable native habitat within the county of
+capture when conducted in the same day as capture and with
+landowner permission.
+(4) It shall be unlawful to possess more than one (1) box turtle
+or to offer for sale, sell, or trade for anything of value any box
+turtle (Terrapene spp.), box turtle part, or reproductive product
+except by permit as outlined in paragraph (1).
+Author: Christopher M. Blankenship
+Statutory Authority: Code of Ala. 1975, §§9-2-7, 9-2-8, 9-2-12
+and Act No. 82-424, Acts of Alabama.
+History: Effective July 18, 1987. Amended: January 2, 1990;
+September 16, 1992. Amended: Filed: October 13, 1994; effective
+November 18, 1994. Amended: Filed September 13, 1995; effective
+October 19, 1995. Amended: Filed August 18, 1997; effective
+September 23, 1997. Amended: Filed October 28, 1998; effective
+December 3, 1998. Amended: Filed April 1, 1999; effective May 6,
+1999. Amended: Filed September 13, 1999; effective October 18,
+1999. Amended: Filed June 9, 2000; effective July 14, 2000. 
+Amended: Filed June 19, 2001; effective July 24, 2001. Amended:
+Filed July 16, 2002; effective August 20, 2002. Amended: Filed
+Rule 220-2-.92 Conservation
+2-.92-4
+June 16, 2003; effective July 20, 2003. Amended: Filed June 10,
+2004; effective July 15, 2004. Amended: Filed October 18, 2005;
+effective November 22, 2005. Amended: Filed August 10, 2006;
+effective September 14, 2006. Amended: Filed May 22, 2007;
+effective June 26, 2007. Amended: Filed September 12, 2007;
+effective October 17, 2007. Amended: Filed May 13, 2009;
+effective June 17, 2009. Amended: Filed August 26, 2011;
+effective September 30, 2011. Amended: Filed June 15, 2016;
+effective July 30, 2016. Amended: Filed May 9, 2017; effective
+June 23, 2017. Amended: Published September 30, 2022; effective
+November 14, 2022. Amended: Published February 27, 2026;
+effective April 13, 2026.
+Penalty: As provided by law.
+Conservation Rule 220-2-.92
+2-.92-5
+==== 220-2-.98 ====
+ALABAMA DEPARTMENT OF CONSERVATION AND NATURAL RESOURCES
+ADMINISTRATIVE CODE 
+CHAPTER 220-2
+GAME AND FISH DIVISION
+220-2-.98 Invertebrate Species Regulation. 
+(1) It shall be unlawful to take, capture, kill, or attempt to
+take, capture or kill; possess, sell, trade for anything of
+monetary value, or offer to sell or trade for anything of monetary
+value the following invertebrate species (or any parts or
+reproductive products of such species) without a scientific
+collection permit or written permit from the Commissioner,
+Department of Conservation and Natural Resources, which shall
+specifically state what the permittee may do with regard to said
+species:
+(a)
+ Common Name Scientific Name
+· Alabama cave crayfish     Cambarus jonesi
+· Alabama cave shrimp       Palaemonias alabamae
+· Alabama creekmussel       Strophitus connasaugaensis
+· Alabama creekshell        Anodontoides radiatus
+· Alabama hickorynut        Obovaria unicolor
+· Alabama lampmussel        Lampsilis virescens
+· Alabama moccasinshell     Medionidus acutissimus
+· Alabama pearlshell        Margaritifera marrianae
+· Alabama rainbow           Villosa nebulosa
+· Alabama spike             Elliptio arca
+· American burying beetle   Nicrophorus americanus
+· Ample elimia              Elimia ampla
+· Angled marstonia          Marstonia angulobasis
+· Angular dwarf crayfish    Cambarellus lesliei
+Conservation Rule 220-2-.98
+2-.98-1
+· Anthony’s riversnail      Athearnia anthonyi
+· Armored marstonia         Marstonia pachyta
+· Armored rocksnail         Lithasia armigera
+· Auger elimia              Elimia teretria
+· Black mudalia             Elimia melanoides
+· Black sandshell           Ligumia recta
+· Boxclaw crayfish          Cambarus distans
+· Brooch elimia             Elimia broccata
+· Burrowing bog crayfish    Creaserinus burrisi
+· Cahaba ancylid            Rhodacmea cahawbensis
+· Cahaba pebblesnail        Clappia cahabensis
+· Cajun dwarf crayfish      Cambarellus shufeldtii
+· Canoe creek clubshell     Pleurobema athearni
+· Capillaceous crayfish     Procambarus capillatus
+· Celestial crayfish        Procambarus holifieldi
+· Chattahoochee crayfish    Cambarus howardi
+· Chipola slabshell         Elliptio chipolaensis
+· Choctaw bean              Obovaria choctawensis
+· Cobble elimia             Elimia vanuxemiana
+· Cockle elimia             Elimia cochliaris
+· Cockscomb crayfish        Procambarus clemmeri
+· Coosa creekshell          Villosa umbrans
+· Coosa moccasinshell       Medionidus parvulus
+· Coosa pyrg                Marstonia hershleri
+· Coosa River spiny crayfish Faxonius spinosus
+· Corpulent hornsnail       Pleurocera corpulenta
+Rule 220-2-.98 Conservation
+2-.98-2
+· Cracking pearlymussel     Hemistena lata
+· Creeper                   Strophitus undulatus
+· Crisscross crayfish       Procambarus marthae
+· Cumberland combshell      Epioblasma brevidens
+· Cumberland moccasinshell  Medionidus conradicus
+· Cumberland monkeyface     Theliderma intermedia
+· Cylindrical lioplax       Lioplax cyclostomaformis
+· Delicate spike            Elliptio arctata
+· Depression crayfish       Cambarus rusticiformis
+· Downy rainbow             Villosa
+· Duck river dartersnapper  Epioblasma ahlstedti
+· Elktoe                    Alasmidonta marginata
+· Engraved elimia           Elimia perstriata
+· Escambia crayfish         Procambarus escambiensis
+· Etowah heelsplitter       Lasmigona etowaensis
+· Fanshell                  Cyprogenia stegaria
+· Finelined pocketbook      Hamiota altilis
+· Finerayed pigtoe          Fusconaia cuneolus
+· Fire elimia               Elimia exusta
+· Fireback crayfish         Cambarus pyronotus
+· Flat pebblesnail          Lepyrium showalteri
+· Flatnose crayfish         Procambarus planirostris
+· Flaxen elimia             Elimia boykiniana
+· Flint river crayfish      Faxonius cooperi
+· Florida floater           Utterbackia peggyae
+· Fuzzy pigtoe              Pleurobema stroadianum
+Conservation Rule 220-2-.98
+2-.98-3
+· Georgia pigtoe            Pleurobema hanleyianum
+· Greensaddle crayfish      Cambarus manningi
+· Gulf moccasinshell        Medionidus penicillatus
+· Heavy pigtoe              Pleurobema taitiana
+· Inflated heelsplitter     Potamilus inflatus
+· Inflated spike            Elliptio purpurella
+· Jacknife crayfish         Procambarus hubbelli
+· Kidneyshell               Ptychobranchus fasciolaris
+· Lacon exit cave crayfish Cambarus laconensis
+· Lacy elimia               Elimia crenatella
+· Lagniappe crayfish        Procambarus lagniappe
+· Latticed elimia           Elimia mihalcikae
+· Lavender burrowing crayfish Creaserinus byersi
+· Least crayfish            Cambarellus diminutus
+· Lilyshoals elimia         Elimia annettae
+· Linear cobalt crayfish    Cambarus gentryi
+· Longnose crayfish         Cambarus longirostris
+· Longsolid                 Fusconaia subrotunda
+· Manitou cavesnail         Antrorbis breweri
+· Mississippi pigtoe        Pleurobema beadleianum
+· Mobile crayfish           Procambarus lecontei
+· Monkeyface                Theliderma metanevra
+· Moss pyrg                 Marstonia scalariformis
+· Mountain fork crayfish    Cambarus diupalma
+· Mountain midget crayfish  Cambarus parvoculus
+· Mucket                    Actinonaias ligamentina
+· Muddy rocksnail           Lithasia salebrosa
+Rule 220-2-.98 Conservation
+2-.98-4
+· Narrow pigtoe             Fusconaia escambia
+· Oblong rocksnail          Leptoxis compacta
+· Ohio pigtoe               Pleurobema cordatum
+· Okaloosa crayfish         Procambarus okaloosae
+· Orangenacre pocketbook    Hamiota perovalis
+· Oval pigtoe               Pleurobema pyriforme
+· Ovate clubshell           Pleurobema perovatum
+· Oyster mussel             Epioblasma capsaeformis
+· Painted creekshell        Villosa taeniata
+· Painted rocksnail         Leptoxis coosaensis
+· Pale Lilliput             Toxolasma cylindrellus
+· Panhandle crayfish        Procambarus evermani
+· Peninsula crayfish        Procambarus paeninsulanus
+· Phantom cave crayfish     Cambarus pecki
+· Pheasantshell             Actinonaias pectorosa
+· Pink mucket               Lampsilis abrupta
+· Plicate rocksnail         Leptoxis plicata
+· Prickly cave crayfish     Cambarus hamulatus
+· Princess elimia           Elimia bellacrenata
+· Prominence riverlet crayfish Hobbseus prominens
+· Purple bankclimber        Elliptoideus sloatianus
+· Puzzle elimia             Elimia varians
+· Pyramid pigtoe            Pleurobema rubrum
+· Rabbitsfoot               Theliderma cylindrica
+· Rayed kidneyshell         Ptychobranchus foremanianus
+· Rough hornsnail           Pleurocera foremani
+Conservation Rule 220-2-.98
+2-.98-5
+· Rough pigtoe              Pleurobema plenum
+· Round ebonyshell          Reginaia rotulata
+· Round hickorynut          Obovaria subrotunda
+· Round pigtoe              Pleurobema sintoxia
+· Round-ribbed elimia       Elimia nassula
+· Round rocksnail           Leptoxis ampla
+· Rugged hornsnail          Pleurocera alveare
+· Saddle crayfish           Faxonius durelli
+· Salt Spring hydrob        Pseudotryonia grahamae
+· Sculpin snail             Stiobia nana
+· Sculptured pigtoe         Cyclonaias infucata
+· Sheepnose                 Plethobasus cyphyus
+· Shelta cave crayfish      Orconectes sheltae
+· Shiny pigtoe              Fusconaia cor
+· Shinyrayed pocketbook     Hamiota subangulata
+· Shrimp crayfish           Faxonius lancifer
+· Skirted hornsnail         Pleurocera pyrenella
+· Slabside pearlymussel     Pleuronaia dolabelloides
+· Slackwater crayfish       Cambarus halli
+· Slender campeloma         Campeloma decampii
+· Slenderclaw crayfish      Cambarus cracens
+· Slippershell mussel       Alasmidonta viridis
+· Smoothnose crayfish       Procambarus hybus
+· Snuffbox                  Epioblasma triquetra
+· Southeastern prairie crayfish Procambarus hagenianus
+· Southern clubshell        Pleurobema decisum
+Rule 220-2-.98 Conservation
+2-.98-6
+· Southern combshell        Epioblasma penita
+· Southern elktoe           Alasmidonta triangulata
+· Southern hickorynut       Obovaria jacksoniana
+· Southern kidneyshell      Ptychobranchus jonesi
+· Southern pigtoe           Pleurobema georgianum
+· Southern purple lilliput  Toxolasma corvunculus
+· Southern sandshell        Hamiota australis
+· Speckled burrowing crayfish Creaserinus danielae
+· Speckled crayfish         Cambarus lentiginosus
+· Spectaclecase             Margaritifera monodonta
+· Spike                     Eurynaia dilatata
+· Spindle elimia            Elimia capillaris
+· Spotted rocksnail         Leptoxis picta
+· Spur crayfish             Procambarus lewisi
+· Squat elimia              Elimia variata
+· Stately elimia            Elimia dickinsoni
+· Straightedge crayfish     Procambarus hayi
+· Striate hornsnail         Pleurocera striata
+· Sweet home Alabama cave crayfish Cambarus speleocoopi
+· Tallapoosa crayfish       Cambarus englishi
+· Tapered pigtoe            Fusconaia burkei
+· Teardrop elimia           Elimia lachryma
+· Tennessee bean            Venustaconcha trabalis
+· Tennessee bottlebrush crayfish Barbicambarus simmonsi
+· Tennessee clubshell       Pleurobema oviforme
+· Tennessee heelsplitter    Lasmigona holstonia
+Conservation Rule 220-2-.98
+2-.98-7
+· Tennessee pigtoe          Pleuronaia barnesiana
+· Triangular kidneyshell    Ptychobranchus greenii
+· Tulotoma                  Tulotoma magnifica
+· Twisted dwarf crayfish    Cambarellus rotatus
+· Vernal crayfish           Procambarus viaeviridis
+· Warrior pigtoe            Pleurobema rubellum
+· Warty rocksnail           Lithasia lima
+· Watercress Snail          Fontigens nickliniana
+· White spring cave crayfish Cambarus veitchorum
+· White wartyback           Plethobasus cicatricosus
+· Wicker ancylid            Rhodacmea elatior
+· Zebra crayfish            Cambarus clairitae
+(b) Other State or Federally protected invertebrate species.
+In addition any required federal permits for federally
+protected species must be obtained.
+Author: Christopher M. Blankenship
+Statutory Authority: Code of Ala. 1975, §§9-11-371, 9-2-7, 9-2-8,
+9-2-12.
+History: Effective June 1, 1990. Amended: Filed September 13,
+1995; effective October 19, 1995. Amended: Filed August 11, 1997;
+effective September 16, 1997. Amended: Filed July 21, 1998;
+effective August 26, 1998. Amended: Filed July 10, 2018;
+effective August 24, 2018.
+Penalty: As provided by law.
+Rule 220-2-.98 Conservation
+2-.98-8
+==== 220-2-.142 ====
+ALABAMA DEPARTMENT OF CONSERVATION AND NATURAL RESOURCES
+ADMINISTRATIVE CODE 
+CHAPTER 220-2
+GAME AND FISH DIVISION
+220-2-.142 Turtle Dealer/Farmer Regulation. 
+(1) Definitions:
+(a) “Division” - Wildlife and Freshwater Fisheries Division of
+the Alabama Department of Conservation and Natural Resources.
+(b) “Director” - The Director of the Wildlife and Freshwater
+Fisheries Division of the Alabama Department of Conservation
+and Natural Resources.
+(c) “Turtle Farmer” - Any person, firm, or corporation engaged
+in the business of propagating legally acquired captive
+indigenous turtles or turtle eggs for commercial purposes.
+(d) “Turtle Dealer” - Any person, firm, or corporation who
+purchases, imports or exports turtles or turtle eggs for
+resale or stocking purposes or who sells, offers for sale, or
+trades for anything of value legally acquired live turtles.
+(e) “Nonindigenous Animal” – A species of animal, other than
+birds, that does not exist historically and naturally in the
+wild within the state or does not exist within the state as a
+result of the natural expansion of its range. Ref. Section
+9-11-500(2)
+(2)(a) No person shall take, attempt to take, sell or possess any
+turtle egg or turtle or parts thereof from the wild in this state,
+to include public and private waters, for commercial purposes,
+except those turtle farmers who may take nuisance turtles from
+privately constructed farm ponds for use as breeder turtles only
+under specially issued permits from the Director or his designee.
+Turtles taken under the specially issued nuisance permits shall
+not be sold or bartered. This is not to prohibit the operations of
+properly permitted “Turtle Farmers” or “Turtle Dealers” as defined
+in paragraph (1) as long as those turtles are not taken from the
+wild.
+(b) Nothing in this regulation prohibits the taking for
+personal use of up to two legal turtles per day by hand, dip
+net or hook and line from the wild in this state, to include
+public and private waters.
+(3)(a) Any person, firm, or corporation engaged in the business of
+propagating captive turtles or incubating and hatching turtle eggs
+Conservation Rule 220-2-.142
+2-.142-1
+for restocking, sale, or other commercial purposes must first
+obtain a turtle farmer’s permit from the Director. Each turtle
+farmer permittee must agree to meet designated standards for
+enclosure construction and animal care prior to being permitted. 
+(b) Each permittee will file the following annual reports on
+forms provided by the Division prior to renewal of their
+farmer permit: 
+(i) Each permittee will file a WFF Turtle Farmer Inventory
+Report Form on form provided by the Division prior to renewal
+of their farmer permit. 
+(ii) All turtles imported into or exported out of the state of
+Alabama for commercial purposes shall be accompanied by a bill
+of lading which provides the following information: (1) name
+of person importing/exporting the turtles; (2) permit number
+of person importing/exporting the turtles; (3) date of
+shipment; (4) quantity and species of turtles; (5) origin
+(state and body of water) of shipment; (6) destination of
+shipment; (7) total value of shipment; and (8) signature of
+owner/transporter. A copy of the bill of lading shall remain
+with the shipment. A copy of the bill of lading or a copy of
+the WFF Bill of Lading Form must be sent to the Division.
+(iii) Each WFF Turtle Farmer Report required in this
+regulation must be filed with the Division prior to renewing
+their annual permit and must include the following and any
+other information specified by the Director: (1) permit
+holder’s name and permit number; (2) buyer/seller’s name and
+address; (3) date of transaction; (4) origin (state ) of
+turtles purchased/sold; (5) quantity and species of turtles
+purchased/sold/caught; (6) amount received/paid for turtles
+and; (7) signature of permit holder. 
+(c) No person, firm or corporation shall import or cause to be
+imported, any nonindigenous turtle species for the purpose of
+propagation. Nonindigenous turtle species may not be
+propagated within the state.
+(d) Standards of care for turtle breeder facilities.
+Outdoor facilities, including, but not limited to, breeding
+ponds, grow-out ponds, holding ponds, and nesting areas shall
+meet the following conditions:
+All facilities shall have perimeter fencing not less than
+24 inches in height from ground level and be sufficient
+to prevent egress and ingress of any turtle.
+All ponds shall be permanent earthen structures unless
+otherwise stipulated by the Director.
+Turtle nesting areas shall consist of non-compacted soil
+of sufficient depth and area to meet the reproductive
+i. 
+a. 
+b. 
+c. 
+Rule 220-2-.142 Conservation
+2-.142-2
+needs of species being bred and accommodate the density
+of the facility’s breeding stock.
+Indoor facilities shall meet the following conditions:
+All indoor facilities shall have a structurally sound
+barrier to prevent egress or ingress of any turtle.
+Suitable sanitary methods shall provide for rapid
+elimination of excess water and shall be properly
+constructed, and kept in good repair, to ensure the
+health of the turtles at all times. The method of
+drainage shall comply with applicable federal, state, and
+local laws and regulations relating to pollution control
+or the protection of the environment.
+Turtle nesting areas shall consist of non-compacted soil
+of sufficient depth and area to meet the reproductive
+needs of species being bred and accommodate the density
+of the facility’s breeding stock.
+When shipping and transporting turtles, the following
+conditions must be met:
+Containers used for live transport should be designed,
+constructed, and fitted as appropriate to the species,
+size, and weight of the animals being transported.
+Containers should have adequate ventilation for the 
+animals.
+  b. Animals may not be stacked upon one another in a         
+   container during transport.
+  c. Animals shall be protected from adverse weather         
+     conditions while transporting.
+(4)(a) Any person, firm or corporation engaged in the import,
+export, sale or trade of live turtles or turtle eggs must first
+obtain a “Turtle Dealers” permit from the Director or his
+designee. Each turtle dealer permittee must agree to meet
+designated standards for enclosure construction and animal care
+prior to being permitted.
+(b) Each permittee will file the following annual reports on forms
+provided by the Division prior to renewal of their dealer permit:
+i. Each permittee will file a WFF Turtle Dealer Inventory Report
+Form on form provided by the Division prior to renewal of their
+dealer permit.
+ii. All turtles imported into or exported out of the state shall
+be accompanied by a bill of lading which provides the following
+information: (1) name of person importing/exporting the turtles;
+(2) permit number of person importing/exporting the turtles; (3)
+date of shipment; (4) quantity and species of turtles; (5) origin
+ii. 
+a. 
+b. 
+c. 
+iii. 
+a. 
+Conservation Rule 220-2-.142
+2-.142-3
+(state and body of water) of shipment; (6) destination of
+shipment; (7) total value of shipment; and (8)  signature of
+owner/transporter. A copy of the bill of lading shall remain with
+the shipment. A copy of the bill of lading or a copy of the WFF
+Bill of Lading Form must be sent to the Division.
+iii. Each WFF Turtle Dealer Report required in this regulation
+must be filed with the Division prior to renewing their annual
+permit and must include the following and any other information
+specified by the Director: (1) Permit holder’s name and permit
+number; (2) buyer/seller’s name and address; (3) date of
+transaction; (4) origin (state and body of water) of shipment; (5)
+quantity and species of turtles purchased/sold; (6) amount
+received/paid for turtles and; (7) signature of owner/transporter.
+(c) Turtle dealers may import, export, sell, or trade live
+nonindigenous turtle species. Nonindigenous turtle species may not
+be propagated within the state.
+(d) Standards of Care for Turtle Dealer Facilities
+Outdoor facilities, including, but not limited to, grow-out
+ponds and holding ponds, shall meet the following conditions:  
+All facilities shall have perimeter fencing not less than
+24 inches in height from ground level and be sufficient
+to prevent egress and ingress of any turtle.
+All ponds shall be permanent earthen structures unless
+otherwise stipulated by the Director.
+All turtles housed in outdoor facilities should be
+segregated by sex as to not allow reproduction.
+Indoor facilities shall meet the following conditions:
+All indoor facilities shall have a structurally sound
+barrier to prevent egress or ingress of any turtle.
+Suitable sanitary methods shall provide for rapid
+elimination of excess water and shall be properly
+constructed, and kept in good repair, to ensure the
+health of the turtles at all times. The method of
+drainage shall comply with applicable federal, state, and
+local laws and regulations relating to pollution control
+or the protection of the environment.
+Indoor facilities shall provide appropriate lighting,
+temperatures, humidity, and clean water to meet the
+physical requirement of each species. Fresh food and
+clean water should be provided to turtles to fulfill
+their dietary requirements.
+Effective measures must be provided to prevent and
+control infection, disease, parasites, or vermin.
+All turtles housed in indoor facilities should be
+segregated by sex as to not allow reproduction.
+i. 
+a. 
+b. 
+c. 
+ii. 
+a. 
+b. 
+c. 
+d. 
+e. 
+Rule 220-2-.142 Conservation
+2-.142-4
+When shipping and transporting turtles, the following
+conditions must be met:
+Containers used for live transport should be designed,
+constructed, and fitted as appropriate to the species,
+size, and weight of the animals being transported.
+Containers should have adequate ventilation for the
+animals.
+Animals may not be stacked upon one another in a
+container during transport. 
+Animals shall be protected from adverse weather
+conditions while transporting. 
+(5) The Director or other persons as designated for such
+purposes shall have the power and authority to inspect
+and examine the books, records, turtles or facilities of
+each permit holder.
+Author: Christopher M. Blankenship
+Statutory Authority: Code of Ala. 1975, §§9-2-7, 9-2-8, 9-2-12.
+History: New Rule: Filed August 10, 2006; effective September 14,
+2006. Rule: Filed August 26, 2011; effective September 30, 2011. 
+Amended: Filed June 15, 2012; effective July 20, 2012. Amended:
+Filed September 9, 2013; effective October 14, 2013. Amended:
+Filed June 20, 2016; effective August 4, 2016. Amended: Filed May
+9, 2017; effective June 23, 2017. Amended: Published July 31,
+2025; effective September 14, 2025.
+Penalty: As provided by law.
+iii. 
+a. 
+b. 
+c. 
+Conservation Rule 220-2-.142
+2-.142-5

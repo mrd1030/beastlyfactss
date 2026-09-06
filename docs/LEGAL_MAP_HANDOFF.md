@@ -8,13 +8,13 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 23 (AZ, CO, CT, DE, FL, GA, HI, IL, MA, MD, MI, MN, NE, NJ, NM, NV, NY, NYC, OR, PA, TN, TX, UT) |
-| Unread cells | 287 |
-| Cached primary sources | 57 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 26 (AL, AZ, CO, CT, DE, FL, GA, HI, IL, IN, MA, MD, MI, MN, NE, NJ, NM, NV, NY, NYC, OK, OR, PA, TN, TX, UT) |
+| Unread cells | 227 |
+| Cached primary sources | 60 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
 Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts, Nebraska, Florida, New York,
-Georgia, New York City, New Jersey and Utah sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
+Georgia, New York City, New Jersey, Utah, Alabama, Indiana and Oklahoma sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
 fresh branch from main once it lands.
 
 ## The loop
@@ -28,7 +28,7 @@ One jurisdiction per sitting. It takes a while and that is fine.
    that explains rather than asserts, and `verifiedOn` set to today in US Eastern.
 4. Re-run `legal-gaps.mjs`, then `node scripts/check-legal-map-sync.mjs`. That script
    cross-checks every legal guide against the map and will catch guides you just made
-   wrong. It sits at 6 pre-existing errors; anything above that is yours.
+   wrong. It sits at 4 pre-existing errors; anything above that is yours.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
@@ -130,6 +130,18 @@ runs to 100 animals. None of those animals is named anywhere in the rule. The te
 a numbered subsection early in a rule that says what may NOT be listed, followed by lists that keep
 pointing back at it.
 
+**Two rules where you only looked at one.** Alabama, Indiana and Oklahoma all split their law the
+same way, into a rule about dangerous or prohibited species and a rule about the state's own
+wildlife, and in all three the earlier entries here had read the first and not the second. Alabama's
+milk snake was legal because it is not on the federal injurious list, which is true and is answered
+by 220-2-.26, while 220-2-.92 protects "Snake, All Native King  Lampropeltis spp." and Lampropeltis
+triangulum is an Alabama native. Indiana's milk snake and garter snake were legal on 312 IAC 9-11,
+the three permit classes, which contain no colubrid, while 312 IAC 9-5 bars selling any of 99 named
+native taxa "regardless of place of origin". Oklahoma's garter snake was legal on the exemption list
+at 800:25-25-3, whose reptile clause is expressly written for species "not indigenous to Oklahoma".
+The tell in every case is an entry whose note explains why a prohibited list does not reach an
+animal that lives in that state. A prohibited list never answers a native.
+
 **A dangerous list read as the whole law.** New Jersey runs three species lists and they answer
 three different questions. 7:25-4.8 is the potentially dangerous table, 7:25-4.4 is a closed exempt
 list, and 7:25-4.3 is a permit list that is expressly open-ended. Two entries on this map read
@@ -191,17 +203,17 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| AL | Alabama | 20 | 3 sources on file |
-| IN | Indiana | 20 | 1 source on file |
-| OK | Oklahoma | 20 | 1 source on file |
 | AR | Arkansas | 12 | 1 source on file |
 | ME | Maine | 12 | 1 source on file |
 | MO | Missouri | 11 | 2 sources on file |
+| ID | Idaho | 10 | 2 sources on file |
+| RI | Rhode Island | 10 | 1 source on file |
 
-After those, 22 jurisdictions sit at 8 to 10 cells each and two are nearly done, Vermont at 3
-and California at 1. Those short ones are almost entirely the eight encyclopedia animals added
-late to the matrix, so they go much faster than a cold state: the sources are already cached and
-the same eight questions get asked of one rule.
+The tail is now uniform. Nineteen jurisdictions sit at exactly 9 cells, two are nearly done,
+Vermont at 3 and California at 1, and every one of them is the same short list: the four
+invertebrates, the five encyclopedia lizards, the rabbit, and one or two stragglers. They go much
+faster than a cold state, because the sources are already cached and the same questions get asked
+of one rule. Three of them can probably be done in a sitting.
 
 ## Loose ends
 
@@ -211,6 +223,46 @@ the same eight questions get asked of one rule.
   sits in Dactyloidae. On drafting-era taxonomy the green anole is prohibited; on current taxonomy
   it is not. The Code never dates its family names, and it uses them loosely elsewhere, printing
   "teiidae" in lower case and calling hedgehogs Insectivora. Recorded unclear rather than guessed.
+- **The invertebrate question now has a shape, and four states answer it cleanly.** It used to be
+  the reliable source of `unclear` cells. It is not any more, and the difference is always where the
+  answer lives. Utah settles it in the statute, defining wildlife as crustaceans, molluscs and
+  vertebrates, so an arthropod is outside the agency. Indiana settles it in the rule, and more
+  explicitly than anyone: 312 IAC 9-9-5 says "any invertebrate not identified in this rule is an
+  exempted wild animal", which 9-1-6 defines as one that "may be taken or possessed at any time".
+  Alabama has an invertebrate rule that is a closed list of protected natives, so being off it is the
+  answer. Oklahoma exempts native invertebrates by name and then has no possession bar that reaches
+  a pet. What leaves the question open, as in New Jersey and New Mexico, is a wildlife definition
+  that ends in an open phrase such as "or other wild animal" with no invertebrate rule under it.
+  Check for a dedicated invertebrate rule first; four of the last five states had one.
+- **Alabama is the first state on this map where a federal listing changed a state answer.**
+  220-2-.26(1) bans possessing anything the U.S. Fish and Wildlife Service lists as injurious
+  wildlife under the Lacey Act, and the January 2025 salamander rule added genus Ambystoma to that
+  list. Nothing in Alabama changed and the axolotl became a banned animal there. The distinction
+  every other state relies on, that an injurious listing restricts importation and interstate
+  shipment rather than possession, does not survive a state adopting the list as its own possession
+  bar. Worth checking for this clause anywhere the axolotl or the tiger salamander is recorded, and
+  worth remembering that Alabama's 2024 amendment widened the clause to fish, crustacea and molluscs
+  as well.
+- **Alabama has one entry that rests on a qualifier and its neighbour rests on the same one.**
+  220-2-.92(1)(c) reads "Snake, All Native King  Lampropeltis spp." The scientific name is the whole
+  genus and the common name limits it to natives. The milk snake is native and is recorded permit;
+  the California kingsnake is a west coast animal and is recorded legal. Every other reptile on that
+  list pairs one common name with one binomial, so the qualifier looks deliberate, but the two
+  entries stand or fall together and a contrary reading would flip both.
+- **Oklahoma's box turtle is the sharpest words-versus-practice gap currently on the map.**
+  800:15-9-3(3) says "the possession, buying and/or selling of any terrestrial turtles commonly
+  known as 'box turtles', is prohibited", full stop. That section sits inside the commercial
+  aquatic-species harvest chapter, and the Wildlife Department's own noncommercial turtle page reads
+  it as a sale bar, alongside six of each species in possession. Recorded conditional on the
+  Department's reading, with the tension named. The Department's page says outright that it is an
+  interpretive summary and not a legal document, so anyone who gets a straight answer from the
+  agency should update this.
+- **Oklahoma's native reptiles rest on a licence nobody thinks of as a licence.** 800:25-7-7(2)(A)
+  requires a resident or nonresident hunting licence of anyone "taking or attempting to take
+  reptiles and amphibians or possessing reptiles or amphibians" that are land dwelling. That is a
+  possession hook, not a collecting one, and with the six-per-species cap at 800:25-7-8(2) it is
+  what makes every Oklahoma native reptile conditional here rather than legal. It is sold over the
+  counter, which is why these are conditional and not permit.
 - **Utah has no unclear cells, and the reason is worth stealing.** It is the first state on this map
   to answer the invertebrates at the level of the statute rather than by silence. Utah Code
   23A-1-101(65) defines wildlife as crustaceans, molluscs, and "vertebrate animals living in nature",
@@ -373,15 +425,13 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Twenty-six animals are now at 51 of 51, which is half the matrix: hamster, gerbil, guinea pig,
-chinchilla, degu, ferret, cockatoo, hedgehog, sugar glider, garter snake, kingsnake, Bengal cat,
-fennec fox, serval, prairie dog, capybara, ball python, boa constrictor, Burmese python, green
-iguana, tokay gecko, veiled chameleon, Russian tortoise, savannah monitor, Nile monitor and
-Argentine tegu. Two more are one short at 50, the ackie monitor and the quaker parakeet.
+Thirty-seven of the 52 animals are now at 51 of 51, which includes every mammal on the matrix and
+every snake except the flying squirrel's neighbours in the late-added batch. Three more are one
+short at 50: the African grey parrot, the ackie monitor and the quaker parakeet.
 
 The eight encyclopedia animals added recently (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
-at 23 to 24 states each and are **not** ready for guides. `check-legal-map-sync.mjs` fails a
+at 26 to 27 states each and are **not** ready for guides. `check-legal-map-sync.mjs` fails a
 guide that asserts a status for a state the map has not read, so writing one now produces a
 page the build rejects. They need map depth first.
 

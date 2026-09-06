@@ -98,79 +98,79 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 23,
+        "checked": 26,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 23,
+        "checked": 26,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 24,
+        "checked": 27,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 24,
+        "checked": 27,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 24,
+        "checked": 27,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 24,
+        "checked": 27,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 24,
+        "checked": 27,
         "of": 51
       },
       "green-anole": {
-        "checked": 24,
+        "checked": 27,
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 31,
+        "checked": 32,
         "of": 51
       },
       "tarantula": {
-        "checked": 48,
+        "checked": 51,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 48,
+        "checked": 51,
         "of": 51
       },
       "axolotl": {
-        "checked": 48,
+        "checked": 51,
         "of": 51
       },
       "box-turtle": {
-        "checked": 48,
+        "checked": 51,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 48,
+        "checked": 51,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 48,
+        "checked": 51,
         "of": 51
       },
       "sulcata-tortoise": {
-        "checked": 48,
+        "checked": 51,
         "of": 51
       },
       "hognose-snake": {
-        "checked": 48,
+        "checked": 51,
         "of": 51
       },
       "african-grey-parrot": {
-        "checked": 47,
+        "checked": 50,
         "of": 51
       },
       "tiger-salamander": {
-        "checked": 49,
+        "checked": 51,
         "of": 51
       },
       "savannah-monitor": {
@@ -178,7 +178,7 @@
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 49,
+        "checked": 51,
         "of": 51
       },
       "tokay-gecko": {
@@ -206,7 +206,7 @@
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 48,
+        "checked": 51,
         "of": 51
       },
       "degu": {
@@ -238,7 +238,7 @@
         "of": 51
       },
       "milk-snake": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "ball-python": {
@@ -792,8 +792,8 @@
     },
     "al-220-2-26": {
       "title": "Ala. Admin. Code r. 220-2-.26, Restrictions On Possession, Sale, Importation And/Or Release Of Certain Animals And Fish",
-      "url": "https://admincode.legislature.state.al.us/administrative-code/220-2-.26",
-      "note": "A prohibited list rather than a permitted one, last amended October 2024. Two clauses do most of the work for pet keepers: everything the federal government lists as injurious wildlife under the Lacey Act is banned by reference, and a group of species is banned specifically when it comes from outside Alabama."
+      "url": "https://admincode.legislature.state.al.us/api/rule/220-2-.26",
+      "note": "Alabama's prohibited list, not a permitted one, so absence from it means an animal is unrestricted. The official code site is a React app that serves nothing to a fetcher, but /api/rule/<number> returns the current rule as a PDF; use it, because Cornell LII's copy is the 2020 version and the current one differs. Two clauses do most of the work: everything the U.S. Fish and Wildlife Service lists as injurious wildlife under the Lacey Act is banned by reference, and a block of mammals is banned when it comes from outside Alabama."
     },
     "in-312-9-11": {
       "title": "312 IAC 9-11, Wild Animal Possession Permits",
@@ -837,8 +837,8 @@
     },
     "ok-800-25-25-3": {
       "title": "OAC 800:25-25-3, Exemptions",
-      "url": "https://rules.ok.gov/code",
-      "note": "Navigate to Title 800, Chapter 25, Subchapter 25, Section 800:25-25-3. One of the most permissive exemption lists in the country, and one of the very few that names the fennec fox individually. Note what the exemptions are from: permits and breeder licences, not a ban. An unexempt animal is licensable, not prohibited."
+      "url": "https://www.law.cornell.edu/regulations/oklahoma/OAC-800-25-25-3",
+      "note": "One of the most permissive exemption lists in the country, naming the fennec fox, the sugar glider, the coatimundi, the wallaby and primates individually. Note what the exemptions are from: import and export permits and commercial and noncommercial wildlife breeder licences, not a ban. Subsection (c) exempts non-indigenous reptiles and amphibians as a class, with a two-limb carve-out for species that could establish here and are injurious under federal rules. Oklahoma's own rules site, rules.ok.gov, returns 403 to this container, so this is read from Cornell LII and cited to the official section."
     },
     "ne-166-nac-8": {
       "title": "166 Neb. Admin. Code ch. 8, Keeping Wildlife in Captivity, and ch. 10, Nongame Species In Need Of Conservation",
@@ -931,9 +931,9 @@
       "note": "Official AZGFD regulations booklet effective Jan. 1, 2026; lists rosy boa (Lichanura roseofusca/trivirgata) with a take limit of 2 per year and 4 in possession under a valid hunting license."
     },
     "al-native-nongame": {
-      "title": "Ala. Admin. Code r. 220-2-.92",
-      "url": "https://admincode.legislature.state.al.us/administrative-code/220-2-.92",
-      "note": "Alabama Legislature's administrative code rule listing nongame wildlife species that cannot be taken, possessed, or sold without a permit."
+      "title": "Ala. Admin. Code r. 220-2-.92, Protected Nongame Species",
+      "url": "https://admincode.legislature.state.al.us/api/rule/220-2-.92",
+      "note": "The native side of Alabama, and the rule that catches what 220-2-.26 does not. Protection means no possession without a scientific collection permit or a written permit from the Commissioner. The reptile list is species by species, the amphibian list is not: it protects all native salamander species by genus. Cornell LII still shows the older per-species salamander list, so read the official PDF."
     },
     "az-license-take": {
       "title": "Ariz. Admin. Code R12-4-406, R12-4-407",
@@ -1364,6 +1364,46 @@
       "title": "Utah Code § 23A-1-101, Wildlife Resources Code definitions",
       "url": "https://le.utah.gov/xcode/Title23A/Chapter1/23A-1-S101.html",
       "note": "The statutory definition that decides Utah's invertebrates. Subsection (65) limits wildlife to crustaceans, molluscs and vertebrate animals living in nature, so an arachnid, an insect or a myriapod is outside the Division of Wildlife Resources' authority entirely. Note that le.utah.gov serves the section text only from the versioned URL, /xcode/Title23A/Chapter1/C23A-1-S101_<version>.html; the plain section page is a shell."
+    },
+    "al-220-2-98": {
+      "title": "Ala. Admin. Code r. 220-2-.98, Invertebrate Species Regulation",
+      "url": "https://admincode.legislature.state.al.us/api/rule/220-2-.98",
+      "note": "Alabama does have an invertebrate rule, which most states do not, and it is a closed list of protected natives: cave crayfish, mussels, snails, one beetle. It protects rather than restricts, so a pet arthropod is outside it."
+    },
+    "al-220-2-142": {
+      "title": "Ala. Admin. Code r. 220-2-.142, Turtle Dealer/Farmer Regulation",
+      "url": "https://admincode.legislature.state.al.us/api/rule/220-2-.142",
+      "note": "Commercial turtle rule. Its one provision that reaches an ordinary keeper is 2(b), which allows taking up to two turtles a day from the wild for personal use and caps it there."
+    },
+    "in-312-9-5": {
+      "title": "312 IAC 9-5, Reptiles and Amphibians",
+      "url": "https://www.law.cornell.edu/regulations/indiana/312-IAC-9-5-7",
+      "note": "The rule 312 IAC 9-11 does not reach. 9-5-1(b) makes every reptile and amphibian native to Indiana a protected wild animal, 9-5-6(f) caps possession at four per species, and 9-5-7 bars selling a native species \"regardless of place of origin\" against a list of 99 taxa given by binomial. 9-5-7(f) then exempts captive-bred albinistic, leucistic and xanthic morphs. Indiana's own rules site, iar.iga.in.gov, serves its React shell for every path including its own script bundles, so this is read from Cornell LII and cited to the official section."
+    },
+    "in-312-9-9": {
+      "title": "312 IAC 9-9, Invertebrates",
+      "url": "https://www.law.cornell.edu/regulations/indiana/312-IAC-9-9-5",
+      "note": "Five short sections covering crayfish, mussels, endangered invertebrates, and then 9-9-5, which says any invertebrate the rule does not identify is an exempted wild animal. 312 IAC 9-1-6 defines that term as a wild animal \"which is unprotected and may be taken or possessed at any time\". It is the most explicit invertebrate answer any state on this map gives."
+    },
+    "ok-800-25-7": {
+      "title": "OAC 800:25-7-7 to 800:25-7-9, Reptiles and Amphibians",
+      "url": "https://www.law.cornell.edu/regulations/oklahoma/OAC-800-25-7-7",
+      "note": "The part that reaches Oklahoma's own herps, and the one that 800:25-25-3 does not answer. 7-7(2) requires a hunting or fishing licence of anyone taking or possessing a reptile or amphibian, 7-8 gives every reptile a year-round season at six per species per day and in possession with a twelve-species closed list, and 7-9 does the same for amphibians at four. 7-7(1) separately bars commercial activity involving wild-collected indigenous species."
+    },
+    "ok-800-15-9-3": {
+      "title": "OAC 800:15-9-3, Commercial turtle harvest; general operating provisions",
+      "url": "https://www.law.cornell.edu/regulations/oklahoma/OAC-800-15-9-3",
+      "note": "Sits in the commercial aquatic species chapter, and its subsection (3) is the sentence everyone quotes about Oklahoma box turtles: possession, buying and selling of box turtles is prohibited. The Department's own noncommercial turtle page reads it more narrowly, as a sale bar sitting alongside a six-per-species possession limit."
+    },
+    "ok-29-7-502": {
+      "title": "29 O.S. § 7-502, General Prohibition on Possession of Wildlife; Exceptions",
+      "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=436630",
+      "note": "The statutory possession bar, and much narrower than its title suggests. It reaches wildlife during a closed season, endangered or threatened species, and native bears and native cats that will reach fifty pounds. Subsection (B)(4) then exempts anyone possessing legally obtained wildlife from a source other than the wild as a pet, which is the provision that decides most captive-bred animals in Oklahoma and which nothing else in the code says as plainly."
+    },
+    "ok-odwc-turtle": {
+      "title": "Oklahoma Department of Wildlife Conservation, Turtle & Bullfrog Regulations",
+      "url": "https://www.wildlifedepartment.com/fishing/regs/turtle-bullfrog-regulations",
+      "note": "The Department's summary of the noncommercial turtle rules, which is where it states its own reading of the box turtle clause: six of each species in possession, and terrestrial turtles may not be sold. The page says outright that it is an interpretive summary and not a legal document."
     }
   },
   "animals": {
@@ -6384,6 +6424,30 @@
           "quote": "\"Wildlife\" means: (a) crustaceans, including brine shrimp and crayfish; (b) mollusks; and (c) vertebrate animals living in nature, except feral animals.",
           "note": "Utah answers the invertebrates at the level of the statute rather than the rule, and it answers them cleanly. Utah Code 23A-1-101(65) defines wildlife as crustaceans, molluscs, and \"vertebrate animals living in nature, except feral animals\". A tarantula is an arachnid, and an arachnid is none of the three, so the Division of Wildlife Resources has no authority over it, and its rules divide the same way: R657-53 reaches Amphibia and Reptilia, R657-3b birds and mammals, R657-3c aquatic animals. There is a trap in R657-3a worth naming, because reading it alone gives the wrong answer. Its own definition of \"Animal\" carries no class limit, and 3a-2(20)(b) says a prohibited species \"also means a species or subspecies that has not gone through the division's species classification process\", which on its face would make every unclassified arthropod prohibited. It does not, because 3a-1(1) makes the rule under Title 23A and the rule cannot reach further than the code's definition of wildlife does. Nor does the Department of Agriculture and Food fill the gap the way Florida's does. Utah's plant industry rules at R68 are commodity quarantines aimed at named pests, the Japanese beetle, the spongy moth and firewood, rather than a general permit for possessing an arthropod.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-98",
+          "cite": "Ala. Admin. Code r. 220-2-.98(1); r. 220-2-.26(1)",
+          "quote": "It shall be unlawful to take, capture, kill, or attempt to take, capture or kill; possess, sell, trade for anything of monetary value, or offer to sell or trade for anything of monetary value the following invertebrate species (or any parts or reproductive products of such species) without a scientific collection permit or written permit from the Commissioner, Department of Conservation and Natural Resources, which shall specifically state what the permittee may do with regard to said species:",
+          "note": "Alabama is one of the few states with an invertebrate rule at all, which makes the answer better grounded here than in most. 220-2-.98 is a closed list of protected native invertebrates, cave crayfish, freshwater mussels, aquatic snails and the American burying beetle, and protection there means a scientific collection permit or a written permit from the Commissioner. A tarantula is on none of it. The prohibited list at 220-2-.26 does reach two kinds of invertebrate, the giant African land snail by name and anything the U.S. Fish and Wildlife Service lists as injurious crustacea or mollusk, a phrase the 2024 amendment added. Neither touches an arachnid.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-9",
+          "cite": "312 IAC 9-9-5; 312 IAC 9-1-6",
+          "quote": "Any invertebrate not identified in this rule is an exempted wild animal.",
+          "note": "Indiana answers this in one sentence, which no other state on this map does. 312 IAC 9-9 governs invertebrates in five short sections, covering crayfish, mussels and a list of endangered mussels and beetles, and 9-9-5 then says \"any invertebrate not identified in this rule is an exempted wild animal\". 312 IAC 9-1-6 defines an exempted wild animal as one \"which is unprotected and may be taken or possessed at any time\". A tarantula is not identified in the rule, so it is expressly unprotected rather than merely unmentioned.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-29-7-502",
+          "cite": "29 O.S. § 7-502(A), (B)(4); OAC 800:25-25-3(a)(19)",
+          "quote": "Except as otherwise provided by law, no person may possess: 1. Any wildlife or parts thereof during the closed season for that particular wildlife species; 2. Any endangered or threatened species or parts thereof at any time; or 3. Any native bear or native cat that will grow to reach the weight of fifty (50) pounds or more. B. Persons exempt from provisions of paragraphs 1 and 2 of subsection A of this section are: ... 4. Persons possessing legally obtained wildlife, from a source other than the wild, as pets or for the purpose of training hunting dogs, except as provided for by law or under rules promulgated by the Wildlife Conservation Commission;",
+          "note": "Oklahoma reaches invertebrates and then lets a pet tarantula through. 800:25-25-3(a)(19) exempts \"native invertebrates\" from the licence requirements, carving out only crayfish and freshwater mussels, which shows the Department treats invertebrates as wildlife it could regulate. a pet tarantula is not native, so that clause is not the answer; the answer is that nothing else applies. The statutory possession bar at 29 O.S. § 7-502(A) reaches wildlife in a closed season, endangered and threatened species, and native bears and big cats, and a captive-bred pet is separately exempted by § 7-502(B)(4). The reptile and amphibian licence at 800:25-7-7(2) is written about reptiles and amphibians.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -6795,6 +6859,30 @@
           "cite": "Utah Code § 23A-1-101(65)",
           "quote": "\"Wildlife\" means: (a) crustaceans, including brine shrimp and crayfish; (b) mollusks; and (c) vertebrate animals living in nature, except feral animals.",
           "note": "Utah answers the invertebrates at the level of the statute rather than the rule, and it answers them cleanly. Utah Code 23A-1-101(65) defines wildlife as crustaceans, molluscs, and \"vertebrate animals living in nature, except feral animals\". The emperor scorpion is an arachnid, and an arachnid is none of the three, so the Division of Wildlife Resources has no authority over it, and its rules divide the same way: R657-53 reaches Amphibia and Reptilia, R657-3b birds and mammals, R657-3c aquatic animals. There is a trap in R657-3a worth naming, because reading it alone gives the wrong answer. Its own definition of \"Animal\" carries no class limit, and 3a-2(20)(b) says a prohibited species \"also means a species or subspecies that has not gone through the division's species classification process\", which on its face would make every unclassified arthropod prohibited. It does not, because 3a-1(1) makes the rule under Title 23A and the rule cannot reach further than the code's definition of wildlife does. Venom changes nothing here. Utah does treat venom as a trigger, at R657-53-9(1)(a) for non-native squamates and at R657-53-12 for native venomous reptiles, but both provisions are inside the herp rule and neither reaches an invertebrate.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-98",
+          "cite": "Ala. Admin. Code r. 220-2-.98(1); r. 220-2-.26(1)",
+          "quote": "It shall be unlawful to take, capture, kill, or attempt to take, capture or kill; possess, sell, trade for anything of monetary value, or offer to sell or trade for anything of monetary value the following invertebrate species (or any parts or reproductive products of such species) without a scientific collection permit or written permit from the Commissioner, Department of Conservation and Natural Resources, which shall specifically state what the permittee may do with regard to said species:",
+          "note": "Same answer as the tarantula and for the same two rules. Worth adding that Alabama does treat venom as a trigger, at 220-2-.26(1), and the clause is written for reptiles: it bans venomous species that have never naturally existed in the wild in Alabama and then names five snake families. Nothing in it reaches an invertebrate, so the scorpion's sting is not what the rule is about.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-9",
+          "cite": "312 IAC 9-9-5; 312 IAC 9-1-6",
+          "quote": "Any invertebrate not identified in this rule is an exempted wild animal.",
+          "note": "Indiana answers this in one sentence, which no other state on this map does. 312 IAC 9-9 governs invertebrates in five short sections, covering crayfish, mussels and a list of endangered mussels and beetles, and 9-9-5 then says \"any invertebrate not identified in this rule is an exempted wild animal\". 312 IAC 9-1-6 defines an exempted wild animal as one \"which is unprotected and may be taken or possessed at any time\". The emperor scorpion is not identified in the rule, so it is expressly unprotected rather than merely unmentioned. Venom is not a trigger for an invertebrate here. 312 IAC 9-11-8(a)(4) makes venomous reptiles a Class III wild animal and 9-5-8 bars possessing a dangerous reptile outright, but both are written about reptiles and neither reaches an arachnid.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-29-7-502",
+          "cite": "29 O.S. § 7-502(A), (B)(4); OAC 800:25-25-3(a)(19)",
+          "quote": "Except as otherwise provided by law, no person may possess: 1. Any wildlife or parts thereof during the closed season for that particular wildlife species; 2. Any endangered or threatened species or parts thereof at any time; or 3. Any native bear or native cat that will grow to reach the weight of fifty (50) pounds or more. B. Persons exempt from provisions of paragraphs 1 and 2 of subsection A of this section are: ... 4. Persons possessing legally obtained wildlife, from a source other than the wild, as pets or for the purpose of training hunting dogs, except as provided for by law or under rules promulgated by the Wildlife Conservation Commission;",
+          "note": "Oklahoma reaches invertebrates and then lets the emperor scorpion through. 800:25-25-3(a)(19) exempts \"native invertebrates\" from the licence requirements, carving out only crayfish and freshwater mussels, which shows the Department treats invertebrates as wildlife it could regulate. the emperor scorpion is not native, so that clause is not the answer; the answer is that nothing else applies. The statutory possession bar at 29 O.S. § 7-502(A) reaches wildlife in a closed season, endangered and threatened species, and native bears and big cats, and a captive-bred pet is separately exempted by § 7-502(B)(4). The reptile and amphibian licence at 800:25-7-7(2) is written about reptiles and amphibians. Venom is not a trigger anywhere in the Oklahoma code for an invertebrate. Rattlesnakes get their own season, their own five-day permit and their own sale rules, and the venomous families named at 800:25-25-3(c) are all reptiles.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -11104,6 +11192,22 @@
           "quote": "The following wild animals are subject to licensing requirements pursuant to O.C.G.A. Sec. 27-5-4. (a) Mammals ... 3. Order Carnivora (weasels, ferrets, cats, bears, wolves, etc.) - All species, except that European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 7. Orders Diprotodontia and Peramelemorphia (Marsupials) - All species except that Petaurus breviceps (sugar glider) may be sold, purchased, exhibited, or held as a pet without a license or permit ... 8. Order Erinaceopmorpha (hedgehogs) - All species ... 10. Order Lagomorpha (Rabbits, hares, etc) - All species ... 16. Order Rodentia (rats, mice, etc.) - All species except Genera Cavia, Chinchilla, Gerbillus, Meriones, Mesocricetus, and species Mus musculus, Rattus rattus, and Rattus norvegicus",
           "note": "Georgia's three tiers are closed lists, and the common snapping turtle is on none of them: not prohibited under .03, not inherently dangerous under .04, and not within any order or species licensed under .05. It is not a Georgia native either, so the separate native wildlife restriction does not reach it. The turtle Georgia does protect is the alligator snapping turtle, Macrochelys, which is on the prohibited natives list; Chelydra serpentina is not, and freshwater turtles are among the natives DNR lists as takeable.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-142",
+          "cite": "Ala. Admin. Code r. 220-2-.142(2)(b); r. 220-2-.92(1)(c)",
+          "quote": "Nothing in this regulation prohibits the taking for personal use of up to two legal turtles per day by hand, dip net or hook and line from the wild in this state, to include public and private waters.",
+          "note": "Two turtles matter in Alabama and only one of them is this one. 220-2-.92(1)(c) protects the alligator snapping turtle, Macrochelys temminckii, which needs a scientific collection permit or a written permit from the Commissioner. The common snapping turtle, Chelydra serpentina, is not on that list, nor on any other. What does reach it is the turtle rule at 220-2-.142, which bars taking or possessing any wild turtle for commercial purposes and then allows taking up to two a day for personal use. That is a take limit rather than a possession cap, so a captive-bred or lawfully acquired snapping turtle is unrestricted.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "conditional",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c)(42); 9-5-6(c), (f)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "The common snapping turtle is native to Indiana, which is what decides it, and Indiana's native rule is unusual in reaching a purchased animal. 9-5-7(c) lists the eastern snapping turtle, Chelydra serpentina serpentina, among the 99 taxa whose sale it governs, and 9-5-7(a) says the section applies \"regardless of place of origin\", so a captive-bred animal from an out-of-state breeder is caught by it just as a wild-caught one is. Selling, offering for sale or transporting for sale is barred; possessing is not, subject to 9-5-6(f)'s cap of four live animals of any one native species. Two exits exist. 9-5-7(f) exempts a captive-bred animal with albinistic, leucistic or xanthic colour morphology, on the same logic New Jersey uses for corn snake morphs, that a morph is visibly not a wild-caught animal. And 9-5-9 provides a reptile captive breeding licence under which sales are lawful. Indiana adds a wild-take regime on top for this species specifically: 9-5-6(c) allows four a day of the snapping turtle and the two softshells combined, only between July 1 and March 31, and only at twelve inches or more of carapace length. The alligator snapping turtle is a separate entry on the same list and a different animal.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11948,6 +12052,23 @@
           "quote": "In accordance therewith, the following species are determined to be endangered: ... 3. Eastern Tiger Salamander, Ambystoma tigrinum tigrinum ... The animal may not be kept as a pet, for hobby purposes or in situations which, in the judgment of the Department, could adversely affect or provide no net benefit to the health of the animal or the welfare of the species.",
           "note": "The eastern tiger salamander is third on New Jersey's own endangered list at 4.13(b), which is a state listing and not a borrowed federal one. 4.10(a) then says no permit shall issue for a species designated endangered, and the narrow exception at 4.10(b) runs through 4.15, whose subsection (b) says the animal may not be kept as a pet or for hobby purposes. The Division's notice adds a second reason on top: larval salamanders, water dogs, dino dogs and mud puppies may not be kept at all, because they cannot be told apart from one another by sight at that stage.",
           "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-native-nongame",
+          "cite": "Ala. Admin. Code r. 220-2-.92(1)(b); r. 220-2-.26(1)",
+          "quote": "All native salamander species, including those in the genera Ambystoma, Amphiuma, Aneides, Cryptobranchus, Desmognathus, Eurycea, Gyrinophilus, Hemidactylium, Necturus, Notophthalmus, Phaeognathus, Plethodon, Pseudotriton, and Siren.",
+          "note": "Alabama catches this one twice, from opposite directions. 220-2-.92(1)(b) does not list amphibians species by species the way it lists reptiles; it protects \"all native salamander species\", naming fourteen genera, and Ambystoma is the first of them. The eastern tiger salamander is an Alabama animal, so it is protected wildlife and possession needs a scientific collection permit or a written permit from the Commissioner. Then 220-2-.26(1) bans by reference anything the U.S. Fish and Wildlife Service lists as injurious wildlife under the Lacey Act, and the January 2025 federal salamander rule added genus Ambystoma to that list. The second hook has no permit behind it at all, only the 220-2-.26(6) exemption for accredited educational, research and rehabilitation facilities. Note that Cornell LII still shows the older per-species amphibian list, which does not carry the genus-wide language.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "conditional",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c)(10); 9-5-6(f)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "The tiger salamander is native to Indiana, which is what decides it, and Indiana's native rule is unusual in reaching a purchased animal. 9-5-7(c) lists the eastern tiger salamander, Ambystoma tigrinum, among the 99 taxa whose sale it governs, and 9-5-7(a) says the section applies \"regardless of place of origin\", so a captive-bred animal from an out-of-state breeder is caught by it just as a wild-caught one is. Selling, offering for sale or transporting for sale is barred; possessing is not, subject to 9-5-6(f)'s cap of four live animals of any one native species. Two exits exist. 9-5-7(f) exempts a captive-bred animal with albinistic, leucistic or xanthic colour morphology, on the same logic New Jersey uses for corn snake morphs, that a morph is visibly not a wild-caught animal. And 9-5-9 provides a reptile captive breeding licence under which sales are lawful. It is one of eight Ambystoma on the list, so Indiana has thought about this genus carefully rather than sweeping it in. Note the contrast with Alabama, where the same animal is banned outright because that state adopts the federal injurious wildlife list as a possession bar and the January 2025 salamander rule put Ambystoma on it. Indiana names no federal list here.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13671,6 +13792,31 @@
           "quote": "Any amphibian or reptile listed by the U.S. Fish and Wildlife Service as endangered or threatened pursuant to the federal Endangered Species Act shall have a zero daily and total possession limit",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the axolotl is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Two things that catch this species elsewhere do not catch it here. R657-53-9(1)(d) gives a zero limit only to a species listed under the federal Endangered Species Act, and Ambystoma mexicanum is IUCN Critically Endangered without being on that list, so Utah's hook never engages. And the January 2025 federal salamander rule is an injurious wildlife listing, which restricts importation and shipment rather than possession. The one genuine add-on is R657-53-4(3)(h), which bars transporting or propagating an amphibian without complying with Title 4 Chapter 37 of the Utah Code and the Department of Agriculture and Food's rules under it, an aquaculture regime that sits outside the wildlife division entirely. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-26",
+          "cite": "Ala. Admin. Code r. 220-2-.26(1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "This is what an incorporation by reference does when the federal list moves. Alabama bans possessing any amphibian the U.S. Fish and Wildlife Service lists as injurious wildlife under the Lacey Act, and the salamander rule effective January 2025 put genus Ambystoma on that list. Nothing in Alabama changed and the answer did. The distinction that saves the axolotl in most states, that an injurious listing restricts importation and interstate shipment rather than possession, does not help here, because Alabama has adopted the federal list as its own possession bar. The state's own native protection at 220-2-.92 would not have reached this animal, since Ambystoma mexicanum is Mexican and that clause covers native salamanders.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c); 312 IAC 9-11-8(a)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana splits its reptiles cleanly and The axolotl lands on the free side of the split. 312 IAC 9-5 governs reptiles and amphibians native to Indiana, and it is the rule that does the real work: 9-5-1(b) makes every native a protected wild animal, 9-5-6(f) caps possession at four per species, and 9-5-7 bars selling one regardless of where it came from, against a list of 99 taxa named by binomial. The axolotl is on none of them. The other rule, 312 IAC 9-11, requires a permit only for Class I animals, which is the cottontail and three squirrels, Class II, which is Indiana's furbearers and a named run of small wild cats, and Class III, which is purebred wolves, bears, wild cats, venomous reptiles and crocodilians at least five feet long. Nothing there reaches it either. Worth being precise about the salamanders, because Indiana lists eight Ambystoma by binomial on its native list and Ambystoma mexicanum is not among them. Indiana also does not adopt the federal injurious wildlife list as a possession bar, which is what turns the same animal into a banned one in Alabama.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(c)",
+          "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
+          "note": "This one turns on how the carve-out in 800:25-25-3(c) is joined. Non-indigenous reptiles and amphibians are exempt except those \"which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma AND which may be potentially injurious or detrimental ... in accordance with existing USDI or APHIS regulations\". The second limb is now satisfied, because the January 2025 federal salamander rule put genus Ambystoma on the U.S. Fish and Wildlife Service injurious wildlife list, which is a Department of the Interior regulation. The first is not: Ambystoma mexicanum is an obligate neotene from two high-altitude lakes in the Valley of Mexico and could not establish in Oklahoma. Both limbs are required, so the exemption holds. Compare Alabama, which adopts the injurious list flat as its own possession bar and therefore bans the same animal outright.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14091,6 +14237,30 @@
           "quote": "It is unlawful to sell or trade any turtle, including tortoises, less than 4\" in carapace length (See Federal Register 21 CFR 1240.62).",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the box turtle is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. No Terrapene is native to Utah and none appears on any division table, which is what separates this from most states, where the box turtle is the native the rules are written about. The federal four inch rule does apply and Utah restates it in its own words at R657-53-13(5), so a hatchling cannot lawfully be sold or traded here. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "conditional",
+          "sourceId": "al-native-nongame",
+          "cite": "Ala. Admin. Code r. 220-2-.92(4)",
+          "quote": "It shall be unlawful to possess more than one (1) box turtle or to offer for sale, sell, or trade for anything of value any box turtle (Terrapene spp.), box turtle part, or reproductive product except by permit as outlined in paragraph (1).",
+          "note": "Alabama gives the box turtle its own subsection rather than putting it on the protected list, and the condition is a number: one. Possessing more than one box turtle is unlawful, and so is selling, offering for sale or trading one for anything of value, with the only exception a permit under paragraph (1), which is the scientific collection permit or a written permit from the Commissioner. The rule says Terrapene spp., so it reaches the ornate box turtle as well as the eastern, and it carries no origin qualifier, which means a captive-bred one bought out of state counts towards the one. The sale bar is the sharper half in practice: a keeper may lawfully have a box turtle and no one may lawfully sell them one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "conditional",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c)(56), (57); 9-5-11",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "The box turtle is native to Indiana, which is what decides it, and Indiana's native rule is unusual in reaching a purchased animal. 9-5-7(c) lists both the eastern box turtle, Terrapene carolina, and the ornate, Terrapene ornata, among the 99 taxa whose sale it governs, and 9-5-7(a) says the section applies \"regardless of place of origin\", so a captive-bred animal from an out-of-state breeder is caught by it just as a wild-caught one is. Selling, offering for sale or transporting for sale is barred; possessing is not, subject to 9-5-6(f)'s cap of four live animals of any one native species. Two exits exist. 9-5-7(f) exempts a captive-bred animal with albinistic, leucistic or xanthic colour morphology, on the same logic New Jersey uses for corn snake morphs, that a morph is visibly not a wild-caught animal. And 9-5-9 provides a reptile captive breeding licence under which sales are lawful. Turtles then get a rule of their own. 9-5-11 requires an Indiana resident to apply for a turtle possession permit within ten days of taking possession of a native turtle, with a receipted invoice or bill of lading showing the animal was lawfully obtained and a conservation officer inspecting the enclosure before the first permit issues. 9-5-11(b) exempts a turtle already possessed lawfully under 9-5-6, which is the four-per-species allowance, so the permit is the route for anything beyond that.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "conditional",
+          "sourceId": "ok-800-15-9-3",
+          "cite": "OAC 800:15-9-3(3); OAC 800:25-7-8(2)",
+          "quote": "The possession, buying and/or selling of any terrestrial turtles commonly known as \"box turtles\", is prohibited.",
+          "note": "The sentence people quote about Oklahoma box turtles is real and it says more than the Department applies. 800:15-9-3(3) reads \"The possession, buying and/or selling of any terrestrial turtles commonly known as 'box turtles', is prohibited\", with no qualifier. But the section sits inside Chapter 15, the commercial harvest rules for aquatic species, under a heading about the aquatic turtle harvest licence, and the Department's own noncommercial turtle page reads it as a sale bar rather than a possession bar: six turtles of each species may be kept in possession, and \"terrestrial (land) turtles may not be sold\". 800:25-7-8 backs that up, giving every reptile not on its twelve-species closed list a year-round season at six per species, and no box turtle is on that list. Recorded conditional on the Department's own reading: a keeper may lawfully have up to six and nobody may lawfully sell or buy one. The Department's page says outright that it is an interpretive summary and not a legal document, so the tension is genuine and named here rather than resolved.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14506,6 +14676,30 @@
           "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
           "note": "New Jersey is a closed-list state in the strict sense. 7:25-4.2(a) bars possession of any exotic or nongame species without a permit, 4.4 then names the handful that may be kept without one, and 4.5 sweeps everything else back in. The red-eared slider appears on none of the Division's three lists, so it is not exempt under 4.4, not one of the families singled out in 4.3, and not potentially dangerous under 4.8. That leaves 4.5, and the permit it points to is the individual hobby permit at 4.6(a)1, which 4.7 conditions on diet, caging that prevents escape, lawful acquisition, veterinary care and freedom from disease. The Division's own handout tells readers to phone the permits office for anything the lists do not name, which is a fair signal that the catch-all is where these end up rather than an oversight. The federal four inch rule under 21 CFR 1240.62 sits on top of this and bars the sale of hatchlings anywhere in the country, which is a distinct restriction from New Jersey's permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-142",
+          "cite": "Ala. Admin. Code r. 220-2-.142(2)(b); r. 220-2-.92(1)(c)",
+          "quote": "Nothing in this regulation prohibits the taking for personal use of up to two legal turtles per day by hand, dip net or hook and line from the wild in this state, to include public and private waters.",
+          "note": "The red-eared slider is native to western Alabama and is on none of the protected lists. 220-2-.92(1)(c) protects seven turtles by name, the map turtles as a genus and the diamondback terrapins as a genus, and Trachemys is not among them. The turtle rule at 220-2-.142 caps personal take from the wild at two a day and bars taking wild turtles for commercial purposes, neither of which reaches a captive-bred animal. The federal four inch rule under 21 CFR 1240.62 still bars selling a hatchling anywhere in the country, which is the restriction most people actually meet.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "conditional",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c)(58); 9-5-6(f)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "The red-eared slider is native to Indiana, which is what decides it, and Indiana's native rule is unusual in reaching a purchased animal. 9-5-7(c) lists Trachemys scripta elegans among the 99 taxa whose sale it governs, and 9-5-7(a) says the section applies \"regardless of place of origin\", so a captive-bred animal from an out-of-state breeder is caught by it just as a wild-caught one is. Selling, offering for sale or transporting for sale is barred; possessing is not, subject to 9-5-6(f)'s cap of four live animals of any one native species. Two exits exist. 9-5-7(f) exempts a captive-bred animal with albinistic, leucistic or xanthic colour morphology, on the same logic New Jersey uses for corn snake morphs, that a morph is visibly not a wild-caught animal. And 9-5-9 provides a reptile captive breeding licence under which sales are lawful. This is the one that surprises people, because the red-eared slider is the most widely sold pet turtle in the country and Indiana is inside its native range, so the sale bar reaches it. The federal four inch rule under 21 CFR 1240.62 bars hatchling sales nationwide on top of that.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "conditional",
+          "sourceId": "ok-odwc-turtle",
+          "cite": "OAC 800:25-7-8(2); OAC 800:15-9-3; 29 O.S. § 4-103A",
+          "quote": "no more than six turtles of each species may be taken per day and no more than six may be kept in possession at one time; ... terrestrial (land) turtles may not be sold; ... no aquatic turtles may be sold or purchased without the proper commercial turtle harvester or buyer's license.",
+          "note": "The red-eared slider is an Oklahoma animal and Oklahoma runs a whole commercial turtle regime around it. Three things stack. A hunting or fishing licence is required to take or possess a turtle under 800:25-7-7(2). Possession is capped at six of each species. And no aquatic turtle may be sold or purchased without a commercial turtle harvester or buyer licence, which is what makes buying one locally a conditional act rather than a free one. The species is not on the closed list at 800:25-7-8(5), which covers the alligator snapping turtle, the map turtle, the western chicken turtle and nine others, nor on the commercial prohibition list at 800:15-9-3(2). The federal four inch rule under 21 CFR 1240.62 bars hatchling sales on top of all of it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -14920,6 +15114,30 @@
           "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the sulcata tortoise is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Centrochelys sulcata is IUCN Endangered but carries no federal Endangered Species Act listing, which is what R657-53-9(1)(d) turns on when it gives a zero limit to any species the U.S. Fish and Wildlife Service has listed as endangered or threatened. Utah reads the federal list rather than the IUCN one, which is the opposite of the choice Massachusetts and New Jersey made. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "Ala. Admin. Code r. 220-2-.26(1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Alabama works from a prohibited list rather than a permitted one, so the question is only whether the sulcata tortoise is on it, and it is not. 220-2-.26(1) reaches non-native venomous reptiles, tegus, mongooses, wild rabbits and hares, a block of mammals when they come from outside the state, a run of fish, and everything the U.S. Fish and Wildlife Service has listed as injurious wildlife under the Lacey Act. The other half of Alabama is 220-2-.92, which protects native nongame species, and that one is about Alabama's own wildlife. The only tortoise Alabama protects is its own gopher tortoise, Gopherus polyphemus. Centrochelys sulcata is IUCN Endangered and carries no federal Endangered Species Act listing, and Alabama's rule reads the injurious wildlife list rather than the endangered one, so neither reaches it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c); 312 IAC 9-11-8(a)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana splits its reptiles cleanly and The sulcata tortoise lands on the free side of the split. 312 IAC 9-5 governs reptiles and amphibians native to Indiana, and it is the rule that does the real work: 9-5-1(b) makes every native a protected wild animal, 9-5-6(f) caps possession at four per species, and 9-5-7 bars selling one regardless of where it came from, against a list of 99 taxa named by binomial. The sulcata tortoise is on none of them. The other rule, 312 IAC 9-11, requires a permit only for Class I animals, which is the cottontail and three squirrels, Class II, which is Indiana's furbearers and a named run of small wild cats, and Class III, which is purebred wolves, bears, wild cats, venomous reptiles and crocodilians at least five feet long. Nothing there reaches it either. Indiana lists fifteen native turtles on the sale list and no tortoise, since it has none.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(c)",
+          "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
+          "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and the sulcata tortoise is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches the sulcata tortoise. The box turtle clause at 800:15-9-3(3) reaches terrestrial turtles \"commonly known as box turtles\", which is a common-name limit rather than a habit-based one, so an African tortoise is not swept in with it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15333,6 +15551,30 @@
           "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the hognose snake is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Neither Heterodon species appears on any Utah table, which is the point worth checking rather than assuming, because Utah does list a long run of native colubrids at Standard and Limited and a keeper could reasonably expect a hognose among them. The rear-fanged question does not arise either: R657-53-9(1)(a) reaches a venomous non-native squamate only where a bite \"may cause substantial physical injury to humans ordinarily requiring medical treatment\". The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "conditional",
+          "sourceId": "al-native-nongame",
+          "cite": "Ala. Admin. Code r. 220-2-.92(1)(c); r. 220-2-.26(1)",
+          "quote": "Snake, Southern Hognose Heterodon simus",
+          "note": "Which hognose decides this, and Alabama says so twice. 220-2-.92(1)(c) protects the southern hognose, Heterodon simus, by name, so possessing that species needs a scientific collection permit or a written permit from the Commissioner. The eastern hognose, H. platirhinos, is also an Alabama animal and is not on the list, and the western hognose, H. nasicus, is the pet trade species and is not native here at all. Both of those are unrestricted. The other half is a nice piece of drafting: 220-2-.26(1) bans venomous reptiles that have never naturally existed in the wild in Alabama and then writes an express exception, \"except for hognose snakes (genus Heterodon)\", which settles the rear-fanged argument that leaves this animal ambiguous in several other states.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "conditional",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c)(73); 9-5-6(f)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "The hognose snake is native to Indiana, which is what decides it, and Indiana's native rule is unusual in reaching a purchased animal. 9-5-7(c) lists the eastern hog-nosed snake, Heterodon platirhinos, among the 99 taxa whose sale it governs, and 9-5-7(a) says the section applies \"regardless of place of origin\", so a captive-bred animal from an out-of-state breeder is caught by it just as a wild-caught one is. Selling, offering for sale or transporting for sale is barred; possessing is not, subject to 9-5-6(f)'s cap of four live animals of any one native species. Two exits exist. 9-5-7(f) exempts a captive-bred animal with albinistic, leucistic or xanthic colour morphology, on the same logic New Jersey uses for corn snake morphs, that a morph is visibly not a wild-caught animal. And 9-5-9 provides a reptile captive breeding licence under which sales are lawful. Which hognose matters. The eastern is the Indiana animal and is on the list; the western, Heterodon nasicus, is the pet trade species, is not native here, and is not on it. The rear-fanged question never arises, because 9-5-8 and 9-11-8(a)(4) reach a venomous reptile and Indiana has not treated a hognose as one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "conditional",
+          "sourceId": "ok-800-25-7",
+          "cite": "OAC 800:25-7-7(2)(A); 800:25-7-8(1), (2)",
+          "quote": "No closed season. All reptiles except those listed in (3) and (5) of this section shall have a year-round season. (2) Bag limit. The bag limit is 6 per day or in possession for each species allowed in section (1) of this section.",
+          "note": "The hognose snake is an Oklahoma animal, which moves it out of the exemption at 800:25-25-3(c), since that clause is written for species \"not indigenous to Oklahoma\". What applies instead is the reptile and amphibian part at 800:25-7. Two provisions matter to a keeper. 7-7(2)(A) requires a resident or nonresident hunting licence of anyone \"taking or attempting to take reptiles and amphibians or possessing reptiles or amphibians\" that are land dwelling, which is a possession hook and not merely a collecting one. And 7-8 gives every reptile a year-round season except a closed list of twelve, with a limit of \"6 per day or in possession for each species\". Recorded as conditional on those two rather than as a permit, because there is no application and no discretion: a hunting licence is sold over the counter. 29 O.S. § 7-502(B)(4) separately exempts anyone possessing legally obtained wildlife \"from a source other than the wild, as pets\" from the statutory possession bar, which is why a captive-bred animal is not caught by the closed-season rule. Both the eastern and the plains hognose reach Oklahoma, so unlike most states the answer does not turn on which species you have. Neither is on the closed list at 7-8(5), and Oklahoma does not treat a rear-fanged colubrid as venomous anywhere in the part: the venomous species it does single out are the four rattlesnakes, which get their own March to June season and their own five-day permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15735,6 +15977,30 @@
           "cite": "N.J.A.C. 7:25-4.3(a)1.vi; Division restricted species notice",
           "quote": "Birds: ... vi. African gray parrot - Psittacus erithacus; ... NJ Fish & Wildlife classifies any animal as endangered when it is listed on any relevant State or Federal endangered species list, including but not limited to the US Fish and Wildlife Service Endangered Species List, IUCN Red List, and the New Jersey Endangered Species List.",
           "note": "Two documents the Division publishes point opposite ways at this one bird. The 4.3 permit list names the African gray parrot, Psittacus erithacus, as a species a permit may be issued for, which would make it an ordinary permit animal. The restricted species notice then says the Division classifies any animal as endangered when it appears on the IUCN Red List, and Psittacus erithacus has been Endangered there since the 2016 assessment, which would put it under the notice's rule that endangered species may not be kept as pets for any reason. The 4.3 list is old enough to still call macaws permit species \"except endangered forms\", so the tension looks like a list that was never revisited rather than a deliberate exception. Recorded as unresolved because a keeper cannot tell from the published documents which one the permits office applies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-native-nongame",
+          "cite": "Ala. Admin. Code r. 220-2-.92(1)(d); r. 220-2-.26(1)",
+          "quote": "All nongame birds are protected under the provisions of this regulation except crows, and non-native species including starlings, house sparrows, Eurasian collared doves, rock pigeons.",
+          "note": "Alabama protects birds by a blanket rather than a list, and the blanket is written so that it misses every pet parrot. 220-2-.92(1)(d) says all nongame birds are protected \"except crows, and non-native species including starlings, house sparrows, Eurasian collared doves, rock pigeons\". The four named non-natives are examples of the exception, not its limit, so an African grey is outside the protection as a non-native bird. On the other side, 220-2-.26(1) names no bird species at all and reaches birds only through the Lacey Act injurious list, which contains no psittacine. The species' IUCN Endangered listing has no purchase in Alabama, which reads the federal injurious list rather than any conservation list.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-6 through 9-11-8",
+          "quote": "A permit is required under this rule for the following Class III wild animals: (1) Wolves that are purebred. (2) Bears (all species). (3) Wild cats (all species), except feral cats and cats listed in section 7 of this rule. (4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "note": "Indiana's permit rule is a closed list of three classes and no bird appears in any of them. Class I is the cottontail and three squirrels, Class II is the state's furbearers plus a named run of small wild cats, and Class III is purebred wolves, bears, wild cats, venomous reptiles and crocodilians at least five feet long. 312 IAC 9-4 governs birds and is written about native and migratory species rather than the pet trade. The African grey's IUCN Endangered listing has no purchase here, since Indiana's rules turn on its own class lists and on federal endangered listings rather than on the IUCN one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(b)(1), (2)",
+          "quote": "The following list of birds shall be exempt from import and export requirements ... (1) Cockatoos, cockatiels, canaries, macaws and exotic finches. (2) Psittacine birds (parrots, parakeets and budgerigars).",
+          "note": "Oklahoma names the pet birds twice over. 800:25-25-3(b)(1) exempts \"Cockatoos, cockatiels, canaries, macaws and exotic finches\" and (b)(2) then exempts \"Psittacine birds (parrots, parakeets and budgerigars)\" as a group, which takes Psittacus erithacus. The exemption from import and export requirements is qualified for birds brought in from outside the United States, which need documentation, and the rule then says that once such a bird reaches its destination in Oklahoma it \"shall be considered a domesticated species\" and is exempt from breeder licence requirements. The IUCN Endangered listing that complicates this species in Massachusetts and New Jersey has no purchase here, because Oklahoma's bar at 29 O.S. § 7-502(A)(2) reaches endangered or threatened species as designated under state and federal law rather than by the IUCN.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -16147,6 +16413,30 @@
           "quote": "\"Wildlife\" means: (a) crustaceans, including brine shrimp and crayfish; (b) mollusks; and (c) vertebrate animals living in nature, except feral animals.",
           "note": "Utah answers the invertebrates at the level of the statute rather than the rule, and it answers them cleanly. Utah Code 23A-1-101(65) defines wildlife as crustaceans, molluscs, and \"vertebrate animals living in nature, except feral animals\". A millipede is a myriapod, and a myriapod is none of the three, so the Division of Wildlife Resources has no authority over it, and its rules divide the same way: R657-53 reaches Amphibia and Reptilia, R657-3b birds and mammals, R657-3c aquatic animals. There is a trap in R657-3a worth naming, because reading it alone gives the wrong answer. Its own definition of \"Animal\" carries no class limit, and 3a-2(20)(b) says a prohibited species \"also means a species or subspecies that has not gone through the division's species classification process\", which on its face would make every unclassified arthropod prohibited. It does not, because 3a-1(1) makes the rule under Title 23A and the rule cannot reach further than the code's definition of wildlife does. The restriction that actually bites on this species is federal rather than Utah's: USDA APHIS treats non-native millipedes as regulated organisms, so moving one across state lines needs a PPQ 526 permit whatever Utah says.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-98",
+          "cite": "Ala. Admin. Code r. 220-2-.98(1)",
+          "quote": "It shall be unlawful to take, capture, kill, or attempt to take, capture or kill; possess, sell, trade for anything of monetary value, or offer to sell or trade for anything of monetary value the following invertebrate species (or any parts or reproductive products of such species) without a scientific collection permit or written permit from the Commissioner, Department of Conservation and Natural Resources, which shall specifically state what the permittee may do with regard to said species:",
+          "note": "Not on the protected native invertebrate list at 220-2-.98 and not on the prohibited list at 220-2-.26, so Alabama has nothing to say about it. The restriction that does reach this species is federal: USDA APHIS treats non-native millipedes as regulated organisms, so moving one across a state line needs a PPQ 526 permit whatever Alabama says. Alabama's own arthropod quarantines sit with the Department of Agriculture and Industries and are aimed at named crop pests rather than at possession.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-9",
+          "cite": "312 IAC 9-9-5; 312 IAC 9-1-6",
+          "quote": "Any invertebrate not identified in this rule is an exempted wild animal.",
+          "note": "Indiana answers this in one sentence, which no other state on this map does. 312 IAC 9-9 governs invertebrates in five short sections, covering crayfish, mussels and a list of endangered mussels and beetles, and 9-9-5 then says \"any invertebrate not identified in this rule is an exempted wild animal\". 312 IAC 9-1-6 defines an exempted wild animal as one \"which is unprotected and may be taken or possessed at any time\". A millipede is not identified in the rule, so it is expressly unprotected rather than merely unmentioned. The live restriction on this species is federal rather than Indiana's: USDA APHIS treats non-native millipedes as regulated organisms, so moving one across a state line needs a PPQ 526 permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-29-7-502",
+          "cite": "29 O.S. § 7-502(A), (B)(4); OAC 800:25-25-3(a)(19)",
+          "quote": "Except as otherwise provided by law, no person may possess: 1. Any wildlife or parts thereof during the closed season for that particular wildlife species; 2. Any endangered or threatened species or parts thereof at any time; or 3. Any native bear or native cat that will grow to reach the weight of fifty (50) pounds or more. B. Persons exempt from provisions of paragraphs 1 and 2 of subsection A of this section are: ... 4. Persons possessing legally obtained wildlife, from a source other than the wild, as pets or for the purpose of training hunting dogs, except as provided for by law or under rules promulgated by the Wildlife Conservation Commission;",
+          "note": "Oklahoma reaches invertebrates and then lets the giant African millipede through. 800:25-25-3(a)(19) exempts \"native invertebrates\" from the licence requirements, carving out only crayfish and freshwater mussels, which shows the Department treats invertebrates as wildlife it could regulate. the giant African millipede is not native, so that clause is not the answer; the answer is that nothing else applies. The statutory possession bar at 29 O.S. § 7-502(A) reaches wildlife in a closed season, endangered and threatened species, and native bears and big cats, and a captive-bred pet is separately exempted by § 7-502(B)(4). The reptile and amphibian licence at 800:25-7-7(2) is written about reptiles and amphibians. The restriction that does reach this species is federal: USDA APHIS treats non-native millipedes as regulated organisms, so moving one across a state line needs a PPQ 526 permit.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16256,10 +16546,11 @@
         },
         "IN": {
           "status": "legal",
-          "sourceId": "in-312-9-11",
-          "cite": "312 IAC 9-11-8(a)",
-          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana's native list carries three Pantherophis, the gray ratsnake, the eastern foxsnake and the western foxsnake, all by binomial. Pantherophis guttatus is not among them, because the corn snake's range stops south of Indiana. So the sale bar in 9-5-7 and the four-animal cap in 9-5-6(f) both miss it, and 312 IAC 9-11's three permit classes contain no colubrid. Worth contrasting with Georgia and New Jersey, where the corn snake is native and the answer is very different.",
+          "verifiedOn": "2026-09-05"
         },
         "KS": {
           "status": "legal",
@@ -16537,12 +16828,13 @@
       "encyclopediaId": "milk-snake",
       "jurisdictions": {
         "AL": {
-          "status": "legal",
-          "sourceId": "al-220-2-26",
-          "cite": "§ (1)",
-          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
-          "note": "Milk snake is not on the federal injurious wildlife list this rule points to.",
-          "verifiedOn": "2026-08-27"
+          "status": "permit",
+          "sourceId": "al-native-nongame",
+          "cite": "Ala. Admin. Code r. 220-2-.92(1)(c)",
+          "quote": "Snake, All Native King Lampropeltis spp.",
+          "note": "This entry read legal, checked against the Lacey Act clause in 220-2-.26 and against nothing else. That clause does not reach a milk snake and it is not the rule that answers one. 220-2-.92(1)(c) protects \"Snake, All Native King\" and gives the scientific name as Lampropeltis spp., the whole genus, and Lampropeltis triangulum is native to Alabama. Protection under 220-2-.92(1) bars possessing the species without a scientific collection permit or a written permit from the Commissioner, with no carve-out for a captive-bred animal or one bought out of state. Recorded as a permit rather than a ban because the rule does provide for a Commissioner's permit and says nothing about who may hold one, but no pet category is named anywhere in it, so a keeper should not expect one. The California kingsnake gets the opposite answer on this map, and the reason is the word \"Native\" in the same line.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-09-05"
         },
         "AK": {
           "status": "legal",
@@ -16635,11 +16927,12 @@
           "verifiedOn": "2026-09-05"
         },
         "IN": {
-          "status": "legal",
-          "sourceId": "in-312-9-11",
-          "cite": "312 IAC 9-11-8(a)",
-          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c)(76); 9-5-6(f); 9-5-7(f)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "This entry read legal, checked against 312 IAC 9-11-8, the Class III list, and against nothing else. Class III is purebred wolves, bears, wild cats, venomous reptiles and crocodilians, so of course a milk snake is not on it, and that is not the rule that answers one. 312 IAC 9-5-7(c)(76) lists the eastern milksnake, Lampropeltis triangulum, among the 99 native taxa whose sale the section governs, and 9-5-7(a) applies it \"regardless of place of origin\", so a captive-bred milk snake bought from an out-of-state breeder is inside it. Selling, offering for sale or transporting for sale is barred and possession is capped at four under 9-5-6(f). The exits are 9-5-7(f), which exempts a captive-bred albinistic, leucistic or xanthic animal, and the reptile captive breeding licence at 9-5-9.",
+          "verifiedOn": "2026-09-05"
         },
         "KS": {
           "status": "legal",
@@ -16890,6 +17183,14 @@
           "cite": "§ 161.01(b)(ii); N.Y. ECL §§ 11-0103(2)(c), 11-0107(2)",
           "quote": "No person shall sell or give to another person, possess, harbor, keep, or yard wild or other animals identified in this section ... other than in: (i) a zoological park or aquarium ...; or (ii) a laboratory ...; or (iii) a veterinary hospital ...; or (iv) a temporary exhibit, performance or display that has been issued a permit by the Commissioner. ... For the purposes of this Code, a wild animal is deemed to be any animal which is naturally inclined to do harm and capable of inflicting harm upon human beings and all such animals are hereby prohibited ... Such animals shall also include: (i) any animals specified by the Commissioner in regulations ...; (ii) any native or exotic wildlife whose possession or sale is prohibited because they are designated as protected or endangered pursuant to any federal, state or local law, regulation, or rule; and (iii) any of the following animals:",
           "note": "Caught by the clause most readings of this article skip. Before its 24 numbered categories, § 161.01(b)(ii) prohibits \"any native or exotic wildlife whose possession or sale is prohibited because they are designated as protected or endangered pursuant to any federal, state or local law, regulation, or rule\". New York State makes native frogs, salamanders, turtles, lizards and snakes small game and therefore protected wildlife, and ECL § 11-0107(2) bars possessing protected wildlife whether taken in the state or brought in from outside it. The eastern milk snake is a New York native, so the state prohibition becomes a city one through that sentence. It is on 6 NYCRR § 3.3's list of native snakes with no open season, which is what makes it protected wildlife. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "conditional",
+          "sourceId": "ok-800-25-7",
+          "cite": "OAC 800:25-7-7(2)(A); 800:25-7-8(1), (2)",
+          "quote": "No closed season. All reptiles except those listed in (3) and (5) of this section shall have a year-round season. (2) Bag limit. The bag limit is 6 per day or in possession for each species allowed in section (1) of this section.",
+          "note": "The milk snake is an Oklahoma animal, which moves it out of the exemption at 800:25-25-3(c), since that clause is written for species \"not indigenous to Oklahoma\". What applies instead is the reptile and amphibian part at 800:25-7. Two provisions matter to a keeper. 7-7(2)(A) requires a resident or nonresident hunting licence of anyone \"taking or attempting to take reptiles and amphibians or possessing reptiles or amphibians\" that are land dwelling, which is a possession hook and not merely a collecting one. And 7-8 gives every reptile a year-round season except a closed list of twelve, with a limit of \"6 per day or in possession for each species\". Recorded as conditional on those two rather than as a permit, because there is no application and no discretion: a hunting licence is sold over the counter. 29 O.S. § 7-502(B)(4) separately exempts anyone possessing legally obtained wildlife \"from a source other than the wild, as pets\" from the statutory possession bar, which is why a captive-bred animal is not caught by the closed-season rule. Lampropeltis triangulum is native across much of Oklahoma and is on neither the closed list at 7-8(5) nor any other. The California kingsnake gets a different answer on this map for the plain reason that it is a west coast animal and 800:25-25-3(c) exempts non-indigenous reptiles as a class.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -17560,6 +17861,15 @@
           "quote": "No person shall sell or give to another person, possess, harbor, keep, or yard wild or other animals identified in this section ... other than in: (i) a zoological park or aquarium ...; or (ii) a laboratory ...; or (iii) a veterinary hospital ...; or (iv) a temporary exhibit, performance or display that has been issued a permit by the Commissioner. ... For the purposes of this Code, a wild animal is deemed to be any animal which is naturally inclined to do harm and capable of inflicting harm upon human beings and all such animals are hereby prohibited ... Such animals shall also include: (i) any animals specified by the Commissioner in regulations ...; (ii) any native or exotic wildlife whose possession or sale is prohibited because they are designated as protected or endangered pursuant to any federal, state or local law, regulation, or rule; and (iii) any of the following animals:",
           "note": "The whole of clause (9) is three words plus a family name: \"All squirrels (Sciuridae).\" A flying squirrel is a sciurid, so it is caught without being mentioned, and so is a chipmunk. This is the shortest clause in the article and one of the widest. § 161.01(d) is worth knowing alongside the prohibition: a prohibited animal may be seized by any authorized city employee, the owner has three business days to request a hearing, and with the Department's written consent the animal may be removed to a jurisdiction where it is not prohibited. That last provision is the closest thing to relief in the article.",
           "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a); 29 O.S. § 4-121; § 7-502(B)(4)",
+          "quote": "(24) Rabbits (except cottontails, jackrabbits and swamp rabbits, and other such species normally found in the wild).",
+          "note": "The exemption list at 800:25-25-3(a) runs to thirty-seven entries and no squirrel is among them. Mice and rats are exempt \"except those species normally found in the wild\", which is the drafting Oklahoma uses when it wants to free the pet form of a wild genus, and the southern flying squirrel is squarely a species normally found in the wild here. So a flying squirrel is not exempt, and what it is not exempt from is import and export permits and the commercial and noncommercial wildlife breeder licences. 29 O.S. § 4-121 requires the noncommercial licence of anyone who breeds or raises wildlife for noncommercial purposes, and § 7-502(E) says the applicable licence must be obtained \"if any wildlife is being propagated\". Recorded as a permit on that basis. The statutory possession bar is separately survivable, since § 7-502(B)(4) exempts a legally obtained animal from a source other than the wild kept as a pet.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -18098,12 +18408,12 @@
           "verifiedOn": "2026-09-05"
         },
         "IN": {
-          "status": "legal",
-          "sourceId": "in-312-9-11",
-          "cite": "312 IAC 9-11-6 through 9-11-8",
-          "quote": "Wolves that are purebred. Bears (all species). Wild cats (all species)... Venomous reptiles. Crocodilians that are at least five (5) feet long.",
-          "note": "Indiana's Wild Animal Possession Permit reaches venomous reptiles and large crocodilians, not ordinary nonvenomous snakes. Wild collection of Indiana's own native reptiles and amphibians is capped separately at two per day and four per year per species, with a possession limit of four.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c)(92); 9-5-6(f); 9-5-7(f)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "This entry read legal on 312 IAC 9-11-6 through 9-11-8, the three permit classes, which is the wrong rule for a snake that lives in Indiana. 312 IAC 9-5-7(c)(92) lists the eastern gartersnake, Thamnophis sirtalis sirtalis, and the section bars selling a native reptile \"regardless of place of origin\", so the bar follows a captive-bred animal in from out of state. Possession is separately capped at four of any one native species by 9-5-6(f). Indiana lists eight Thamnophis in all, including the ribbonsnakes and the plains gartersnake, and Butler's gartersnake is separately state endangered under 9-5-4. A captive-bred albino or leucistic garter snake is exempted from the sale bar by 9-5-7(f), which is how the morph trade operates here.",
+          "verifiedOn": "2026-09-05"
         },
         "KS": {
           "status": "legal",
@@ -18256,11 +18566,12 @@
           "localOverride": true
         },
         "OK": {
-          "status": "legal",
-          "sourceId": "ok-800-25-25-3",
-          "cite": "§ 800:25-25-3",
-          "note": "Non-indigenous reptiles are exempt from Oklahoma's import, breeder's-license, and permit requirements outright. Oklahoma's own native garter snake population instead falls under standard Wildlife Conservation hunting-license rules for wild take.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "ok-800-25-7",
+          "cite": "OAC 800:25-7-7(2)(A); 800:25-7-8(1), (2), (5)(G)",
+          "quote": "No closed season. All reptiles except those listed in (3) and (5) of this section shall have a year-round season. (2) Bag limit. The bag limit is 6 per day or in possession for each species allowed in section (1) of this section.",
+          "note": "This entry read legal on 800:25-25-3, the exemption list, which is the wrong rule for a snake that lives in Oklahoma: subsection (c) exempts reptiles \"not indigenous to Oklahoma\" and Thamnophis sirtalis is indigenous. What applies instead is the reptile and amphibian part at 800:25-7. Two provisions matter to a keeper. 7-7(2)(A) requires a resident or nonresident hunting licence of anyone \"taking or attempting to take reptiles and amphibians or possessing reptiles or amphibians\" that are land dwelling, which is a possession hook and not merely a collecting one. And 7-8 gives every reptile a year-round season except a closed list of twelve, with a limit of \"6 per day or in possession for each species\". Recorded as conditional on those two rather than as a permit, because there is no application and no discretion: a hunting licence is sold over the counter. 29 O.S. § 7-502(B)(4) separately exempts anyone possessing legally obtained wildlife \"from a source other than the wild, as pets\" from the statutory possession bar, which is why a captive-bred animal is not caught by the closed-season rule. One gartersnake is on the closed list and it is not this one: 7-8(5)(G) closes the season on the wandering gartersnake, Thamnophis elegans vagrans.",
+          "verifiedOn": "2026-09-05"
         },
         "OR": {
           "status": "conditional",
@@ -18408,9 +18719,10 @@
         "AL": {
           "status": "legal",
           "sourceId": "al-native-nongame",
-          "cite": "Ala. Admin. Code r. 220-2-.92",
-          "note": "Not native to Alabama, so it's an ordinary nonvenomous pet reptile rather than wildlife needing a possession-limit accounting; no restriction was found.",
-          "verifiedOn": "2026-08-27"
+          "cite": "Ala. Admin. Code r. 220-2-.92(1)(c)",
+          "quote": "Snake, All Native King Lampropeltis spp.",
+          "note": "The line to read is \"Snake, All Native King  Lampropeltis spp.\", and it is doing two things at once. The scientific name is the entire genus, which would take a California kingsnake with it; the common name limits that to native ones, and Lampropeltis californiae is a west coast animal that has never occurred in Alabama. Every other reptile on the list pairs one common name with one binomial, so the qualifier on this line is deliberate and it is what decides the answer. Recorded legal on that reading. It is worth knowing that the same line makes the milk snake a permit animal here, because Lampropeltis triangulum is native, so two snakes from one genus get opposite answers off one sentence.",
+          "verifiedOn": "2026-09-05"
         },
         "AR": {
           "status": "legal",
@@ -18517,10 +18829,11 @@
         },
         "IN": {
           "status": "legal",
-          "sourceId": "in-312-9-11",
-          "cite": "312 IAC 9-11-6 through 9-11-8",
-          "note": "Indiana's Wild Animal Possession Permit reaches venomous reptiles and large crocodilians, not ordinary nonvenomous snakes like a kingsnake.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c)(74), (75)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana lists two kingsnakes on its native sale list, the prairie kingsnake, Lampropeltis calligaster, and the eastern black kingsnake, Lampropeltis nigra, and it names them by binomial rather than taking the genus. The California kingsnake, Lampropeltis californiae, is a west coast animal and is on neither entry, so the sale bar and the four-animal possession cap in 9-5-6(f) both miss it. The eastern milksnake is on the same list and is a Lampropeltis too, which is why this map answers the two differently. Nothing in 312 IAC 9-11 reaches a colubrid either.",
+          "verifiedOn": "2026-09-05"
         },
         "KS": {
           "status": "legal",
@@ -19611,6 +19924,30 @@
           "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the red-footed tortoise is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Chelonoidis carbonarius is CITES Appendix II but not federally listed, so R657-53-9(1)(d)'s zero limit for Endangered Species Act listings does not reach it. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "Ala. Admin. Code r. 220-2-.26(1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Alabama works from a prohibited list rather than a permitted one, so the question is only whether the red-footed tortoise is on it, and it is not. 220-2-.26(1) reaches non-native venomous reptiles, tegus, mongooses, wild rabbits and hares, a block of mammals when they come from outside the state, a run of fish, and everything the U.S. Fish and Wildlife Service has listed as injurious wildlife under the Lacey Act. The other half of Alabama is 220-2-.92, which protects native nongame species, and that one is about Alabama's own wildlife. Chelonoidis carbonarius is CITES Appendix II, which governs international trade and not Alabama possession.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c); 312 IAC 9-11-8(a)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana splits its reptiles cleanly and The red-footed tortoise lands on the free side of the split. 312 IAC 9-5 governs reptiles and amphibians native to Indiana, and it is the rule that does the real work: 9-5-1(b) makes every native a protected wild animal, 9-5-6(f) caps possession at four per species, and 9-5-7 bars selling one regardless of where it came from, against a list of 99 taxa named by binomial. The red-footed tortoise is on none of them. The other rule, 312 IAC 9-11, requires a permit only for Class I animals, which is the cottontail and three squirrels, Class II, which is Indiana's furbearers and a named run of small wild cats, and Class III, which is purebred wolves, bears, wild cats, venomous reptiles and crocodilians at least five feet long. Nothing there reaches it either.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(c)",
+          "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
+          "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and the red-footed tortoise is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches the red-footed tortoise.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19820,6 +20157,30 @@
           "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
           "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the bearded dragon is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Pogona vitticeps is on none of the division's tables, which list Utah animals. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "Ala. Admin. Code r. 220-2-.26(1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Alabama works from a prohibited list rather than a permitted one, so the question is only whether the bearded dragon is on it, and it is not. 220-2-.26(1) reaches non-native venomous reptiles, tegus, mongooses, wild rabbits and hares, a block of mammals when they come from outside the state, a run of fish, and everything the U.S. Fish and Wildlife Service has listed as injurious wildlife under the Lacey Act. The other half of Alabama is 220-2-.92, which protects native nongame species, and that one is about Alabama's own wildlife.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c); 312 IAC 9-11-8(a)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana splits its reptiles cleanly and The bearded dragon lands on the free side of the split. 312 IAC 9-5 governs reptiles and amphibians native to Indiana, and it is the rule that does the real work: 9-5-1(b) makes every native a protected wild animal, 9-5-6(f) caps possession at four per species, and 9-5-7 bars selling one regardless of where it came from, against a list of 99 taxa named by binomial. The bearded dragon is on none of them. The other rule, 312 IAC 9-11, requires a permit only for Class I animals, which is the cottontail and three squirrels, Class II, which is Indiana's furbearers and a named run of small wild cats, and Class III, which is purebred wolves, bears, wild cats, venomous reptiles and crocodilians at least five feet long. Nothing there reaches it either.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(c)",
+          "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
+          "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and the bearded dragon is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches the bearded dragon.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -20031,6 +20392,30 @@
           "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the leopard gecko is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. The one native gecko Utah does regulate is the western banded gecko, Coleonyx variegatus, at Limited, two a day and four in total, so a Utah-caught gecko and a captive-bred Eublepharis macularius get very different answers. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "Ala. Admin. Code r. 220-2-.26(1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Alabama works from a prohibited list rather than a permitted one, so the question is only whether the leopard gecko is on it, and it is not. 220-2-.26(1) reaches non-native venomous reptiles, tegus, mongooses, wild rabbits and hares, a block of mammals when they come from outside the state, a run of fish, and everything the U.S. Fish and Wildlife Service has listed as injurious wildlife under the Lacey Act. The other half of Alabama is 220-2-.92, which protects native nongame species, and that one is about Alabama's own wildlife.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c); 312 IAC 9-11-8(a)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana splits its reptiles cleanly and The leopard gecko lands on the free side of the split. 312 IAC 9-5 governs reptiles and amphibians native to Indiana, and it is the rule that does the real work: 9-5-1(b) makes every native a protected wild animal, 9-5-6(f) caps possession at four per species, and 9-5-7 bars selling one regardless of where it came from, against a list of 99 taxa named by binomial. The leopard gecko is on none of them. The other rule, 312 IAC 9-11, requires a permit only for Class I animals, which is the cottontail and three squirrels, Class II, which is Indiana's furbearers and a named run of small wild cats, and Class III, which is purebred wolves, bears, wild cats, venomous reptiles and crocodilians at least five feet long. Nothing there reaches it either.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(c)",
+          "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
+          "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and the leopard gecko is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches the leopard gecko.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20240,6 +20625,30 @@
           "cite": "Utah Admin. Code R657-53-8(1); R657-53-12",
           "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the crested gecko is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Correlophus ciliatus is a New Caledonian animal and appears on none of the division's tables. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "Ala. Admin. Code r. 220-2-.26(1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Alabama works from a prohibited list rather than a permitted one, so the question is only whether the crested gecko is on it, and it is not. 220-2-.26(1) reaches non-native venomous reptiles, tegus, mongooses, wild rabbits and hares, a block of mammals when they come from outside the state, a run of fish, and everything the U.S. Fish and Wildlife Service has listed as injurious wildlife under the Lacey Act. The other half of Alabama is 220-2-.92, which protects native nongame species, and that one is about Alabama's own wildlife.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c); 312 IAC 9-11-8(a)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana splits its reptiles cleanly and The crested gecko lands on the free side of the split. 312 IAC 9-5 governs reptiles and amphibians native to Indiana, and it is the rule that does the real work: 9-5-1(b) makes every native a protected wild animal, 9-5-6(f) caps possession at four per species, and 9-5-7 bars selling one regardless of where it came from, against a list of 99 taxa named by binomial. The crested gecko is on none of them. The other rule, 312 IAC 9-11, requires a permit only for Class I animals, which is the cottontail and three squirrels, Class II, which is Indiana's furbearers and a named run of small wild cats, and Class III, which is purebred wolves, bears, wild cats, venomous reptiles and crocodilians at least five feet long. Nothing there reaches it either.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(c)",
+          "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
+          "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and the crested gecko is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches the crested gecko.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -20451,6 +20860,30 @@
           "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the blue-tongue skink is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Utah has skinks of its own, the many-lined and the western, both Controlled at Standard, but Tiliqua scincoides is not one of them. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "Ala. Admin. Code r. 220-2-.26(1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Alabama works from a prohibited list rather than a permitted one, so the question is only whether the blue-tongue skink is on it, and it is not. 220-2-.26(1) reaches non-native venomous reptiles, tegus, mongooses, wild rabbits and hares, a block of mammals when they come from outside the state, a run of fish, and everything the U.S. Fish and Wildlife Service has listed as injurious wildlife under the Lacey Act. The other half of Alabama is 220-2-.92, which protects native nongame species, and that one is about Alabama's own wildlife. Alabama protects two of its own skinks, the coal skink and the southeastern five-lined skink, both by binomial rather than by family, so Tiliqua scincoides is not swept in with them.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c); 312 IAC 9-11-8(a)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana splits its reptiles cleanly and The blue-tongue skink lands on the free side of the split. 312 IAC 9-5 governs reptiles and amphibians native to Indiana, and it is the rule that does the real work: 9-5-1(b) makes every native a protected wild animal, 9-5-6(f) caps possession at four per species, and 9-5-7 bars selling one regardless of where it came from, against a list of 99 taxa named by binomial. The blue-tongue skink is on none of them. The other rule, 312 IAC 9-11, requires a permit only for Class I animals, which is the cottontail and three squirrels, Class II, which is Indiana's furbearers and a named run of small wild cats, and Class III, which is purebred wolves, bears, wild cats, venomous reptiles and crocodilians at least five feet long. Nothing there reaches it either. Indiana has skinks of its own on the native list, the common five-lined and the broad-headed among them, but they are named by binomial rather than by family, so Tiliqua scincoides is not swept along.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(c)",
+          "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
+          "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and the blue-tongue skink is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches the blue-tongue skink.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20661,6 +21094,30 @@
           "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and Jackson's chameleon is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Trioceros jacksonii is an east African animal, absent from every division table. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "Ala. Admin. Code r. 220-2-.26(1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Alabama works from a prohibited list rather than a permitted one, so the question is only whether Jackson's chameleon is on it, and it is not. 220-2-.26(1) reaches non-native venomous reptiles, tegus, mongooses, wild rabbits and hares, a block of mammals when they come from outside the state, a run of fish, and everything the U.S. Fish and Wildlife Service has listed as injurious wildlife under the Lacey Act. The other half of Alabama is 220-2-.92, which protects native nongame species, and that one is about Alabama's own wildlife.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c); 312 IAC 9-11-8(a)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana splits its reptiles cleanly and Jackson's chameleon lands on the free side of the split. 312 IAC 9-5 governs reptiles and amphibians native to Indiana, and it is the rule that does the real work: 9-5-1(b) makes every native a protected wild animal, 9-5-6(f) caps possession at four per species, and 9-5-7 bars selling one regardless of where it came from, against a list of 99 taxa named by binomial. Jackson's chameleon is on none of them. The other rule, 312 IAC 9-11, requires a permit only for Class I animals, which is the cottontail and three squirrels, Class II, which is Indiana's furbearers and a named run of small wild cats, and Class III, which is purebred wolves, bears, wild cats, venomous reptiles and crocodilians at least five feet long. Nothing there reaches it either.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(c)",
+          "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
+          "note": "Oklahoma exempts non-indigenous reptiles and amphibians as a class rather than species by species. 800:25-25-3(c) clears them from import and export requirements and from both wildlife breeder licences, and Jackson's chameleon is squarely inside it. The carve-out at the end of the same sentence has two limbs joined by \"and\", so it bites only on a species that is biologically capable of establishing a self-sustaining population in the wild of Oklahoma AND is injurious under federal rules; neither is true here. What remains is the statutory possession bar at 29 O.S. § 7-502(A), which reaches closed-season wildlife, endangered and threatened species, and native bears and big cats. Not one of the three touches Jackson's chameleon.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20870,6 +21327,30 @@
           "quote": "Total possession limits apply to all amphibians and reptiles acquired in-state, imported into the state, or lawfully acquired by intrastate transfer, except the following do not count towards an individual's applicable limit: (a) animals and their parts that are captive bred, not classified as Prohibited or subject to certificate of registration requirements in R657-53-12, and accompanied by documentation described in R657-53-5 verifying lawful acquisition and possession; ... (c) animals and their parts that are legally obtained outside of Utah and not classified as Prohibited or subject to certificate of registration requirements in R657-53-12",
           "note": "Utah's herp rule is written for people going out and catching things, and that shape is what decides the pet question. R657-53-4(1) opens with a flat bar on possessing any reptile or amphibian \"except as provided in this rule\", and the exceptions then do the work. The only certificate of registration that attaches to possession itself is R657-53-12, which covers venomous reptiles native to Utah, and the green anole is not one. It is not Prohibited either: R657-53-9 prohibits only non-native venomous squamates and the whole of Crocodilia, and the division's published prohibited list is six declining native species. R657-53-8(1) then says animals that are captive bred, or \"legally obtained outside of Utah\", do not count towards a possession limit at all. A lawfully acquired captive-bred one therefore needs no wildlife document and carries no cap. Anolis carolinensis is not a Utah animal and appears on none of the division's tables. The catch worth knowing is R657-53-7(8): any species the division has not classified defaults to Controlled, at three a day and nine in total. That default governs an animal taken from the wild in Utah, which for a species that does not live here is a hypothetical.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-native-nongame",
+          "cite": "Ala. Admin. Code r. 220-2-.92(1)(c)",
+          "quote": "It shall be unlawful to take, capture, kill, or attempt to take, capture or kill; possess, sell, trade for anything of monetary value, or offer to sell or trade for anything of monetary value; or propagate the following nongame wildlife species, or any parts or reproductive products of such species, or any hybrids of such species without a scientific collection permit or written permit from the Commissioner, Department of Conservation and Natural Resources, which shall specifically state what the permittee may do with regard to said species:",
+          "note": "The green anole is an Alabama native, which in most of the South is the start of a problem, and here it is not. 220-2-.92(1)(c) protects reptiles species by species, and its lizards are the eastern slender glass lizard, the mimic glass lizard, the coal skink and the southeastern five-lined skink. Anolis carolinensis is on none of them, and it is on no other Alabama list either. So native status alone does not restrict a reptile in Alabama, which is worth stating plainly, because Georgia next door bans keeping any native species as a pet and readers carry that assumption across the state line.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-5",
+          "cite": "312 IAC 9-5-7(c); 312 IAC 9-11-8(a)",
+          "quote": "This section governs the: (1) sale; (2) transport for sale; or (3) offer for sale; of any reptile or amphibian native to Indiana regardless of place of origin. (b) Except as otherwise provided in this section and in section 9 of this rule, an individual must not sell, transport for sale, or offer to sell a reptile or amphibian that is native to Indiana.",
+          "note": "Indiana splits its reptiles cleanly and The green anole lands on the free side of the split. 312 IAC 9-5 governs reptiles and amphibians native to Indiana, and it is the rule that does the real work: 9-5-1(b) makes every native a protected wild animal, 9-5-6(f) caps possession at four per species, and 9-5-7 bars selling one regardless of where it came from, against a list of 99 taxa named by binomial. The green anole is on none of them. The other rule, 312 IAC 9-11, requires a permit only for Class I animals, which is the cottontail and three squirrels, Class II, which is Indiana's furbearers and a named run of small wild cats, and Class III, which is purebred wolves, bears, wild cats, venomous reptiles and crocodilians at least five feet long. Nothing there reaches it either. Anolis carolinensis is a southeastern animal whose range stops well short of Indiana, so it is not on the native list. Alabama, which is inside its range, reaches the opposite conclusion by the same method and still ends at legal, because it protects native reptiles species by species and never listed the anole.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "conditional",
+          "sourceId": "ok-800-25-7",
+          "cite": "OAC 800:25-7-7(2)(A); 800:25-7-8(1), (2)",
+          "quote": "No closed season. All reptiles except those listed in (3) and (5) of this section shall have a year-round season. (2) Bag limit. The bag limit is 6 per day or in possession for each species allowed in section (1) of this section.",
+          "note": "The green anole is an Oklahoma animal, which moves it out of the exemption at 800:25-25-3(c), since that clause is written for species \"not indigenous to Oklahoma\". What applies instead is the reptile and amphibian part at 800:25-7. Two provisions matter to a keeper. 7-7(2)(A) requires a resident or nonresident hunting licence of anyone \"taking or attempting to take reptiles and amphibians or possessing reptiles or amphibians\" that are land dwelling, which is a possession hook and not merely a collecting one. And 7-8 gives every reptile a year-round season except a closed list of twelve, with a limit of \"6 per day or in possession for each species\". Recorded as conditional on those two rather than as a permit, because there is no application and no discretion: a hunting licence is sold over the counter. 29 O.S. § 7-502(B)(4) separately exempts anyone possessing legally obtained wildlife \"from a source other than the wild, as pets\" from the statutory possession bar, which is why a captive-bred animal is not caught by the closed-season rule. Anolis carolinensis reaches into southeastern Oklahoma, which is what takes it out of the non-indigenous exemption. Oklahoma's closed list at 7-8(5) does close the season on four lizards, the Texas horned lizard, the side-blotched lizard, the checkered whiptail and the lesser earless lizard among them, and the anole is not one of them, so it keeps the year-round season and the six-animal cap.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21073,6 +21554,30 @@
           "quote": "Domestic mammals and mammalian livestock not covered under this rule ... Rabbit, European Oryctolagus cuniculus",
           "note": "Utah puts the domestic rabbit in the cleanest category it has. R657-3b-1(3) says \"domestic animals not governed by this rule are listed in Bird and Mammal Classification Table 3b-1\", and the table's first section is headed \"Domestic mammals and mammalian livestock not covered under this rule\". Oryctolagus cuniculus is on it by name. That is stronger than an exemption, because the animal is outside the rule rather than excused from it, and it matters in Utah more than it would elsewhere: the same table's header says every species not listed is \"presumed prohibited\". Utah is also the state where the domestic and the wild answers do not collide, since the native lagomorphs it excludes from protected wildlife at 23A-1-101(46)(b) are the jack rabbits, a different genus.",
           "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "Ala. Admin. Code r. 220-2-.26(1)",
+          "quote": "San Juan Rabbits, Jack Rabbits or any other species of wild rabbit or hare;",
+          "note": "Alabama bans \"San Juan Rabbits, Jack Rabbits or any other species of wild rabbit or hare\", and the San Juan rabbit is a feral population of Oryctolagus cuniculus, the same species as the pet. Read on the binomial alone that clause would ban a house rabbit. It does not, because the category the clause names is wild rabbits and hares and the two examples are given as members of it: the San Juan is on the list as a feral animal used for stocking and dog training, not as a domestic pet. The domestic rabbit is on no other Alabama list and 220-2-.92 protects native nongame, which the eastern cottontail is not, since it is a game species with a season. Illinois and Minnesota raise the same question and this map answers them differently, so the reasoning is set out rather than assumed.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-6(a)(1)",
+          "quote": "A permit is required under this rule for the following Class I wild animals: (1) Rabbit (Sylvilagus floridanus). (2) Squirrel (Sciurus carolinensis, Sciurus niger, and Glaucomys volans).",
+          "note": "Indiana names a rabbit in its permit rule and it is not this one. 312 IAC 9-11-6(a)(1) reads \"Rabbit (Sylvilagus floridanus)\", the eastern cottontail, and puts it in Class I, defined as a wild animal that \"because of its nature, habits, or status, is not a threat to personal or public safety\". A permit is still required for one, applied for within five days of taking possession. The domestic rabbit is Oryctolagus cuniculus, a different genus and not a wild animal at all, so none of this touches it. That precision is worth noting because Illinois and Minnesota name Oryctolagus itself and this map answers them very differently as a result.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)(24)",
+          "quote": "(24) Rabbits (except cottontails, jackrabbits and swamp rabbits, and other such species normally found in the wild).",
+          "note": "Oklahoma writes the rabbit exemption the way a careful drafter should, naming the category and then the exceptions: rabbits are exempt \"except cottontails, jackrabbits and swamp rabbits, and other such species normally found in the wild\". The domestic rabbit is Oryctolagus cuniculus and is not a species normally found in the wild here, so it is exempt from import and export permits and from both wildlife breeder licences. It is worth reading against Alabama, which bans \"San Juan Rabbits, Jack Rabbits or any other species of wild rabbit or hare\" and gets the same result by naming a feral population of the pet's own species, and against Illinois and Minnesota, which name Oryctolagus itself and reach much harder answers.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21274,6 +21779,30 @@
           "cite": "Utah Code § 23A-1-101(65)",
           "quote": "\"Wildlife\" means: (a) crustaceans, including brine shrimp and crayfish; (b) mollusks; and (c) vertebrate animals living in nature, except feral animals.",
           "note": "Utah answers the invertebrates at the level of the statute rather than the rule, and it answers them cleanly. Utah Code 23A-1-101(65) defines wildlife as crustaceans, molluscs, and \"vertebrate animals living in nature, except feral animals\". A cockroach is an insect, and a terrestrial insect is none of the three, so the Division of Wildlife Resources has no authority over it, and its rules divide the same way: R657-53 reaches Amphibia and Reptilia, R657-3b birds and mammals, R657-3c aquatic animals. There is a trap in R657-3a worth naming, because reading it alone gives the wrong answer. Its own definition of \"Animal\" carries no class limit, and 3a-2(20)(b) says a prohibited species \"also means a species or subspecies that has not gone through the division's species classification process\", which on its face would make every unclassified arthropod prohibited. It does not, because 3a-1(1) makes the rule under Title 23A and the rule cannot reach further than the code's definition of wildlife does. Utah does mention insects once, at 23A-1-101(4), where aquatic insects are aquatic wildlife, and then removes them again at (45)(b), which says protected aquatic wildlife does not include aquatic insects. A Madagascar hissing cockroach is not aquatic and never reaches even that. The federal PPQ 526 permit for interstate movement applies to this species regardless.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-98",
+          "cite": "Ala. Admin. Code r. 220-2-.98(1)",
+          "quote": "It shall be unlawful to take, capture, kill, or attempt to take, capture or kill; possess, sell, trade for anything of monetary value, or offer to sell or trade for anything of monetary value the following invertebrate species (or any parts or reproductive products of such species) without a scientific collection permit or written permit from the Commissioner, Department of Conservation and Natural Resources, which shall specifically state what the permittee may do with regard to said species:",
+          "note": "On neither list, so unrestricted under Alabama's wildlife rules. As with the millipede the live question is federal rather than state, since Gromphadorhina portentosa is a USDA-regulated organism and interstate movement needs a PPQ 526 permit. Note that 220-2-.26 shows Alabama will name an invertebrate when it wants to, since it bans the giant African land snail by both of its binomials, so the absence of arthropods from these rules reads as a choice rather than an oversight.",
+          "verifiedOn": "2026-09-05"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-9",
+          "cite": "312 IAC 9-9-5; 312 IAC 9-1-6",
+          "quote": "Any invertebrate not identified in this rule is an exempted wild animal.",
+          "note": "Indiana answers this in one sentence, which no other state on this map does. 312 IAC 9-9 governs invertebrates in five short sections, covering crayfish, mussels and a list of endangered mussels and beetles, and 9-9-5 then says \"any invertebrate not identified in this rule is an exempted wild animal\". 312 IAC 9-1-6 defines an exempted wild animal as one \"which is unprotected and may be taken or possessed at any time\". A cockroach is not identified in the rule, so it is expressly unprotected rather than merely unmentioned. As with the millipede, Gromphadorhina portentosa is a USDA-regulated organism and interstate movement needs a PPQ 526 permit, which is a separate question from what Indiana asks.",
+          "verifiedOn": "2026-09-05"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-29-7-502",
+          "cite": "29 O.S. § 7-502(A), (B)(4); OAC 800:25-25-3(a)(19)",
+          "quote": "Except as otherwise provided by law, no person may possess: 1. Any wildlife or parts thereof during the closed season for that particular wildlife species; 2. Any endangered or threatened species or parts thereof at any time; or 3. Any native bear or native cat that will grow to reach the weight of fifty (50) pounds or more. B. Persons exempt from provisions of paragraphs 1 and 2 of subsection A of this section are: ... 4. Persons possessing legally obtained wildlife, from a source other than the wild, as pets or for the purpose of training hunting dogs, except as provided for by law or under rules promulgated by the Wildlife Conservation Commission;",
+          "note": "Oklahoma reaches invertebrates and then lets the Madagascar hissing cockroach through. 800:25-25-3(a)(19) exempts \"native invertebrates\" from the licence requirements, carving out only crayfish and freshwater mussels, which shows the Department treats invertebrates as wildlife it could regulate. the Madagascar hissing cockroach is not native, so that clause is not the answer; the answer is that nothing else applies. The statutory possession bar at 29 O.S. § 7-502(A) reaches wildlife in a closed season, endangered and threatened species, and native bears and big cats, and a captive-bred pet is separately exempted by § 7-502(B)(4). The reptile and amphibian licence at 800:25-7-7(2) is written about reptiles and amphibians. As with the millipede the live question is federal, since Gromphadorhina portentosa is a USDA-regulated organism and interstate movement needs a PPQ 526 permit.",
           "verifiedOn": "2026-09-05"
         }
       }

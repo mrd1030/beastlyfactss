@@ -1,0 +1,752 @@
+SOURCE: OAC Title 800 (Wildlife Conservation) and 29 O.S. (Game and Fish)
+URL: https://www.law.cornell.edu/regulations/oklahoma/OAC-800-25-25-3 and https://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKST29
+FETCHED: 2026-09-05 (rules.ok.gov returns 403 to this container, so the rules are read from Cornell LII and cited to the official sections. The statutes come from OSCN, which works with plain curl; find a section's CiteID from the Title 29 index page and fetch DeliverDocument.asp?CiteID=<id>. The two wildlifedepartment.com pages at the end are the agency's own summaries and say so.)
+
+==== OAC 800:25-25-1 ====
+Okla. Admin. Code § 800:25-25-1 - Purpose | State Regulations | US Law | LII / Legal Information Institute
+
+Please help us improve our site!
+
+×
+
+No thank you
+
+Okla. Admin. Code § 800:25-25-1 - Purpose 
+
+State Regulations 
+
+Compare
+
+The purpose of this Subchapter is to establish a list of wildlife that are to be considered domesticated, and therefore exempt from licensing and permit requirements of the Department.
+
+Notes
+
+Okla. Admin. Code §
+800:25-25-1
+
+Added at 9 Ok Reg 1291, eff 11-15-91; Added at 9 Ok Reg 3075, eff 7-13-92
+
+
+==== OAC 800:25-25-2 ====
+Okla. Admin. Code § 800:25-25-2 - Definitions for classification of wildlife and domesticated species | State Regulations | US Law | LII / Legal Information Institute
+
+Please help us improve our site!
+
+×
+
+No thank you
+
+Okla. Admin. Code § 800:25-25-2 - Definitions for classification of wildlife and domesticated species 
+
+State Regulations 
+
+Compare
+
+The following are definitions for the classification of wildlife and domesticated species:
+
+(1)
+Exotic wildlife. Exotic wildlife means any and all species of wildlife that are indigenous to, occur naturally, or are characteristic of another country other than the United States, its territories, commonwealths or possessions.
+
+(2)
+Native wildlife. Native wildlife means any and all species of wildlife that are indigenous to or occur naturally within the United States, or any other territory, commonwealth, or possession of the United States.
+
+(3)
+Domesticated animals. Domesticated animal means any animal kept for pleasure or for utility, that has adapted to life in association with and to the use by human beings, and shall not include animals which normally can be found in the wild state, unless specifically so designated by the Oklahoma Wildlife Conservation Commission.
+
+Notes
+
+Okla. Admin. Code §
+800:25-25-2
+
+Added at 9 Ok Reg 1291, eff 11-15-91 (emergency); Added at 9 Ok Reg 3075, eff 7-13-92
+
+
+==== OAC 800:25-25-3 ====
+Okla. Admin. Code § 800:25-25-3 - Exemptions | State Regulations | US Law | LII / Legal Information Institute
+
+Please help us improve our site!
+
+×
+
+No thank you
+
+Okla. Admin. Code § 800:25-25-3 - Exemptions 
+
+State Regulations 
+
+Compare
+
+(a) The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements.(1) Alpacas, guanacos and vicuans (all similar to llamas).
+
+(2) Bison.
+
+(3) Camels.
+
+(4) Cats (except native cats and bears).
+
+(5) Cattle (Bos sp.)
+
+(6) Chickens (domestic fowl, including guineas).
+
+(7) Chinchillas.
+
+(8) Dogs (except coyotes and native foxes).
+
+(9) Exotic tropical fish (except those prohibited from import or possession by Commission regulation or statute)
+
+(10) Ferrets (except black-footed, Mustela nigripes).
+
+(11) Gerbils.
+
+(12) Goats
+
+(13) Guinea pigs.
+
+(14) Hamsters.
+
+(15) Hedgehogs.
+
+(16) Horse, donkeys and mules.
+
+(17) Llamas.
+
+(18) Mice (except those species normally found in the wild).
+
+(19) Native invertebrates (except crayfish and all freshwater mussels including Zebra mussel and Asian clam).
+
+(20) Peafowl.
+
+(21) Pigeons.
+
+(22) Migratory waterfowl not listed as protected by Federal Regulation 50 CFR.
+
+(23) Pigs except javelinas.
+
+(24) Rabbits (except cottontails, jackrabbits and swamp rabbits, and other such species normally found in the wild).
+
+(25) Rats (except those species normally found in the wild).
+
+(26) Salt water crustaceans and mollusks (import for human consumption).
+
+(27) Sheep (except dall and bighorn sheep, Ovis sp.).
+
+(28) Turkeys (except Rio Grande, Eastern, Merriam and Osceola or any subspecies).
+
+(29) Zebras.
+
+(30) Gerboa.
+
+(31) Sugar gliders
+
+(32) Civits.
+
+(33) Wallaby.
+
+(34) Kangaroo.
+
+(35) Fennec Fox.
+
+(36) Coatimundi.
+
+(37) Primates.
+
+(b) The following list of birds shall be exempt from import and export requirements, with the exception of those birds imported into the State of Oklahoma from countries outside the United States, its commonwealth's, territories or possessions. Upon reaching their final destination within the State of Oklahoma, such legally documented birds shall be considered a domesticated species and exempt from wildlife breeder's license requirements. (1) Cockatoos, cockatiels, canaries, macaws and exotic finches.
+
+(2) Psittacine birds (parrots, parakeets and budgerigars).
+
+(3) Ratite birds (ostriches, rheas and emus).
+
+(c) Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations. All venomous reptiles belonging to the families Elapidae (cobras, coral snakes, etc.), Hydrophiidae (sea snakes), Viperidae (vipers), Crotalidae (rattlesnakes, copperheads, cottonmouths, etc.) and the genus Dispholidus (boomslangs) and Helodermatidae(Gila monsters, beaded lizards) and are not exempt from any requirements.
+
+(d) Licensed Commercial or Noncommercial Wildlife Breeders are exempt from obtaining import/export permits for quail, chuker and pheasant or eggs of same; however, such breeders must provide a monthly report of activities.
+
+Notes
+
+Okla. Admin. Code §
+800:25-25-3
+
+Added at 9 Ok Reg 1291, eff 11-15-91 (emergency); Added at 9 Ok Reg 3075, eff 7-13-92; Amended at 14 Ok Reg 3278, eff 7-25-97; Amended at 25 Ok Reg 802, eff 3-11-08 (emergency); Amended at 26 Ok Reg 2638, eff 7-11-09
+
+
+==== OAC 800:25-7-7 ====
+Okla. Admin. Code § 800:25-7-7 - General provisions | State Regulations | US Law | LII / Legal Information Institute
+
+Please help us improve our site!
+
+×
+
+No thank you
+
+Okla. Admin. Code § 800:25-7-7 - General provisions 
+
+State Regulations 
+
+Compare
+
+The following are the general provisions for the taking and possession of reptiles and amphibians:
+
+(1) It shall be unlawful to engage in any commercial activities involving any species or subspecies, if more than one exists, of reptiles or amphibians collected from the wild that are indigenous to or whose range extends into the State of Oklahoma, except for provisions for rattlesnakes, water turtles and aquatic salamanders (Necturus and Ambystoma, except Ambystoma talpodium and Ambystoma annulatum).
+
+(2) Any person while in the act of taking or attempting to take reptiles and amphibians or possessing reptiles or amphibians must first possess:(A) A resident or nonresident hunting license, unless otherwise exempt, for land dwelling reptiles or amphibians, with the exception of (C) and (D) of this paragraph.
+
+(B) A resident or nonresident fishing license, unless otherwise exempt, for water dwelling reptiles or amphibians, with the exception of (C) and (D) of this paragraph.
+
+(C) A commercial turtle harvester license for legal water dwelling turtles if the taking or possession is for commercial purposes.
+
+(D) A commercial resident or nonresident minnow dealers license for legal aquatic salamanders if the taking is for commercial purposes.
+
+(E) The appropriate license required for the taking of bullfrogs according to current statutes and regulations.
+
+(3) Persons possessing a current resident or nonresident hunting license, unless otherwise exempt, may sell lawfully taken rattlesnakes only to those individuals holding a Commercial or Noncommercial Wildlife Breeders license during open season. A Commercial Breeders license is required of all who buy and resell live rattlesnakes.
+
+(4) The method of taking legal water turtles and aquatic salamanders for commercial purposes and the taking of bullfrogs shall be restricted to provisions in the current statutes and regulations. It shall be unlawful to introduce, deposit, place or drain any deleterious, noxious, toxic or petroleum based substance into or around any underground dens or rock crevices for the purpose of taking reptiles or amphibians. With the exception of water turtles and aquatic salamanders taken for commercial purposes and all legal species of frogs, all other reptiles and amphibians may only be taken by hand or any other legal means.
+
+(5) Nothing in this Part shall prohibit the control of reptiles other than those listed as endangered or threatened, by landowners, lessees, or occupants of such land when such reptiles are creating a nuisance.
+
+(6) All persons so licensed for reptiles and amphibians shall keep detailed breeding and hatching records in addition to those records already required by law.
+
+(7) Progeny of lawfully held reptiles may, for six months from date of birth, be held in captivity in excess of the stated limits. Before or upon reaching six months of age, such progeny must be disposed of according to the requirements of the license held, or as directed by the Department. Progeny may be retained for brood stock if replacing parent stock disposed of in the above manner so as not to exceed the stated limits.
+
+(8) It is unlawful to possess an American Alligator without appropriate permit from the Department.
+
+(9) The Director may make exception for education or research purposes to holder of Oklahoma Scientific Collector's permits for both reptiles and amphibians.
+
+Notes
+
+Okla. Admin. Code §
+800:25-7-7
+
+Amended at 9 Ok Reg 1291, eff 11-15-91 (emergency); Amended at 9 Ok Reg 3075, eff 7-13-92; Amended at 15 Ok Reg 1845, eff 5-15-98; Amended at 18 Ok Reg 2919, eff 7-1-01; Amended at 29 Ok Reg 1513, eff 7-1-12
+
+Amended by Oklahoma Register, Volume 31, Issue 24, September 2, 2014, eff. 9/15/2014
+
+
+==== OAC 800:25-7-8 ====
+Okla. Admin. Code § 800:25-7-8 - Dates and areas, legal reptiles and bag limit | State Regulations | US Law | LII / Legal Information Institute
+
+Please help us improve our site!
+
+×
+
+No thank you
+
+Okla. Admin. Code § 800:25-7-8 - Dates and areas, legal reptiles and bag limit 
+
+State Regulations 
+
+Compare
+
+The dates and open areas, and the number and species of reptiles that can be taken are as follows:
+
+(1)
+No closed season. All reptiles except those listed in (3) and (5) of this section shall have a year-round season.
+
+(2)
+Bag limit. The bag limit is 6 per day or in possession for each species allowed in section (1) of this section.
+
+(3)
+Legal reptiles. The following reptiles shall be legal to harvest during the dates of March 1-June 30:(A) Prairie Rattlesnake (Crotalus viridis).
+
+(B) Western Diamondback Rattlesnake (Crotalus atrox).
+
+(C) Timber Rattlesnake (Crotalus horridus).
+
+(D) Massasauga (Sistrurus catenatus).
+
+(4)
+Bag limit. There is no bag limit for those species listed in (3) of this section.
+
+(5)
+Closed season. There will be a statewide closed season on the following reptiles: (A) Texas Horned Lizard (Phrynosoma cornutum).
+
+(B) Desert Side Blotched Lizard (Uta stansburiana).
+
+(C) Checkered Whiptail (Cnemidophorus tesselatus).
+
+(D) American Alligator (Alligator mississippiensis).
+
+(E) Western Chicken Turtle (Deirochelys reticularia).
+
+(F) Map Turtle (Graptemys geographica).
+
+(G) Wandering Garter Snake (Thamnophis elegans vagrans).
+
+(H) Gulf Grayfish Snake (Regina rigida sinicola).
+
+(I) Alligator Snapping Turtle (Macroclemys temminckii).
+
+(J) Earless lizard (Holbrockia maculata).
+
+(K) Roundtail horned lizard (Phrynosoma modestum).
+
+(L) Western Mud Snake ( Farancia abacura).
+
+Notes
+
+Okla. Admin. Code §
+800:25-7-8
+
+Amended at 9 Ok Reg 1291, eff 11-15-91 (emergency); Amended at 9 Ok Reg 3075, eff 7-13-92; Amended at 15 Ok Reg 1845, eff 5-15-98
+
+Amended by Oklahoma Register, Volume 31, Issue 24, September 2, 2014, eff. 9/15/2014
+
+
+==== OAC 800:25-7-9 ====
+Okla. Admin. Code § 800:25-7-9 - Dates and areas, legal amphibians and bag limit | State Regulations | US Law | LII / Legal Information Institute
+
+Please help us improve our site!
+
+×
+
+No thank you
+
+Okla. Admin. Code § 800:25-7-9 - Dates and areas, legal amphibians and bag limit 
+
+State Regulations 
+
+Compare
+
+The dates and open areas, and the number and species of amphibians that can be taken are as follows:
+
+(1)
+Open season and bag limit. There will be a statewide year-round open season on the following amphibians: (A) Frogs of the genera Rana(except Ranaareolata) and Pseudacris (Leopard and Chorus frogs); and the bag limit shall be unlimited, except bullfrogs shall have a bag limit of 15, and the bag limit for Woodhouses toad Bufowoodhousii is unlimited.
+
+(B) Aquatic salamanders of the genera Necturus andAmbystoma, except Ambystoma talpodium and Ambystoma annulatum; and the bag limit shall be unlimited.
+
+(C) All other species of amphibians, except those listed in (2) of this section; and the bag limit shall be 4 per day or in possession of each species.
+
+(2)
+Closed season. There will be a statewide closed season on the following amphibians: (A) Sequoyah Slimy Salamander (Plethodon sp.).
+
+(B) Kiamichi Slimy Salamander (Plethodon sp.).
+
+(C) Western Slimy Salamander (Plethodon sp.).
+
+(D) Rich Mountain Salamander (Plethodonouachitae).
+
+(E) Ozark Zigzag Salamander (Plethodondorsalis angusticlavius).
+
+(F) Four-toed Salamander (Hemidactyliumscutatum).
+
+(G) Grotto Salamander (Typhlotriton spelaeus).
+
+(H) Oklahoma Salamander (Eurycea tynerensis).
+
+(I) Cave Salamander (Eurycea lucifuga).
+
+(J) Mole Salamander (Ambystoma talpoideum).
+
+(K) Ringed Salamander ( Ambystoma annulatum).
+
+(L) Ouachita Dusky Salamander ( Desmognathus brimleyorum).
+
+(M) Three-toed Amphiuma ( Amphiuma tridactylum).
+
+Notes
+
+Okla. Admin. Code §
+800:25-7-9
+
+Added at 9 Ok Reg 1291, eff 11-15-91 (emergency); Added at 9 Ok Reg 3075, eff 7-13-92
+
+Amended by Oklahoma Register, Volume 31, Issue 24, September 2, 2014, eff. 9/15/2014
+
+
+==== OAC 800:15-9-3 ====
+Okla. Admin. Code § 800:15-9-3 - General; operating provisions | State Regulations | US Law | LII / Legal Information Institute
+
+Please help us improve our site!
+
+×
+
+No thank you
+
+Okla. Admin. Code § 800:15-9-3 - General; operating provisions 
+
+State Regulations 
+
+Compare
+
+Harvest, sale and purchase of aquatic turtles for commercial purpose shall be in accordance with 29 O.S., Sections 4-103A, 4-103B and 6-204 and the following: 
+
+(1) The application for an aquatic turtle harvest license must be signed by a Game Warden, and must list the county or counties from which turtles will be harvested.
+
+(2) The harvest, collection, sale or purchase of the following turtle species is prohibited: (A) Alligator Snapping Turtle (Macroclemys temminckii);
+
+(B) Chicken Turtle (Deirochelys reticularia);
+
+(C) Map Turtle (Graptemys spp.);
+
+(D) Painted Turtles (Chrysemys ssp.)
+
+(E) Razor-backed Musk Turtle (Sternotherus carinatus)
+
+(F) All State and/or Federal threatened or endangered species;
+
+(G) All soft shell turtles, except as provided in Title 29 O.S., Section 4-102, greater than sixteen (16) inches in length when measuring the carapace only from the anterior (front) end to the posterior (rear) end shall not be kept in possession or sold or purchased and must be returned to the water immediately.
+
+(3) The possession, buying and/or selling of any terrestrial turtles commonly known as "box turtles", is prohibited.
+
+(4) All traps and nets used in the harvest of turtles for commercial purposes must have an identification tag with the owner's customer identification number attached and the customer identification number of all persons authorized to operate the traps and nets. All such traps and nets must be shown to the county Game Warden at the time the Game Warden signs the license application.
+
+(5) All persons licensed as a commercial turtle buyer must keep accurate records of all turtles purchased within and exported from the State of Oklahoma. These records shall be available for inspection by any agent of the Department at any time. A copy of each turtle purchase transaction must be given to the seller by the buyer at the time of the sale on forms provided by the Department. A copy of all turtle purchase transactions and turtle exports shall be submitted to the Department as follows: (A) Each turtle buyer shall complete and submit to the Department a true and accurate purchase record for each turtle purchase transaction. Each purchase record must contain: (i) the buyer's name and license number;
+
+(ii) seller's name and license number;
+
+(iii) counties from which turtles were harvested;
+
+(iv) the total number of each species purchased;
+
+(v) the total amount paid for each species;
+
+(vi) the total amount paid for the transaction.
+
+(vii) the total pounds of red-eared, common snapping and soft shell turtles purchased; 
+
+(B) A copy of each transaction along with a monthly summary must be mailed to the Department by the 15th of each month by each turtle buyer.
+
+(C) Each turtle buyer must supply to the Department shipping bills of lading of all turtles exported from the state during the monthly reporting period. A copy of all shipping bills of lading must accompany all turtle shipments from the state.
+
+(D) The shipping bill of lading must contain: (i) total number of turtles in shipment; 
+
+(ii) number of each species of turtles in shipment;
+
+(iii) date of shipment;
+
+(iv) person firm or corporation's name transporting turtles out of Oklahoma;
+
+(v) person firm or corporation's name(s) that sold or otherwise provided the turtles to be transported out of Oklahoma;
+
+(vi) total pounds of turtles in the shipment;
+
+(vii) total pounds of each species of turtles in the shipment;
+
+(viii) turtle harvest season dates and turtle species legal for harvest;
+
+(ix) state, if other than Oklahoma, were turtles were harvested;
+
+(x) destination of shipment; and
+
+(xi) total purchase price of turtles in shipment.
+
+(E) Each turtle buyer must supply to the Department an annual summary report of all turtles, by species, purchased within and exported from the State of Oklahoma. This report shall contain: (i) total number of turtles of each species purchased or received;
+
+(ii) total purchase value of turtles purchased or received;
+
+(iii) total number and pounds of turtles of each species exported from Oklahoma.
+
+(iv) total pounds of red-eared, common snapping and softshell turtles purchased or received;
+
+(6) Inaccurate or incomplete records or delinquent reports shall be violations of this rule.
+
+Notes
+
+Okla. Admin. Code §
+800:15-9-3
+
+Amended at 11 Ok Reg 4701, eff 8-31-94 (emergency); Amended at 12 Ok Reg 1525, eff 1-1-96 ; Amended at 12 Ok Reg 3476, eff 1-2-96 through 7-14-96 (emergency); Amended at 14 Ok Reg 1478, eff 1-1-98 ; Amended at 15 Ok Reg 2057, eff 7-1-98 ; Amended at 22 Ok Reg 1624, eff 7-1-05 ; Amended at 26 Ok Reg 2635, eff 1-1-10 ; Amended at 30 Ok Reg 733, eff 6-1-13
+
+Amended by Oklahoma Register, Volume 31, Issue 24, September 2, 2014, eff. 9/15/2014
+
+Amended by Oklahoma Register, Volume 38, Issue 24, September 1, 2021, eff. 9/11/2021
+
+
+==== 29 O.S. § 7-502 ====
+Cite as: O.S. �, __ __
+
+A. Except as otherwise provided by law, no person may possess:
+
+1. Any wildlife or parts thereof during the closed season for that particular 
+wildlife species;
+
+2. Any endangered or threatened species or parts thereof at any time; or
+
+3. Any native bear or native cat that will grow to reach the weight of fifty 
+(50) pounds or more.
+
+B. Persons exempt from provisions of paragraphs 1 and 2 of subsection A of 
+this section are:
+
+1. Persons storing lawfully taken wildlife in any home freezer or cold 
+storage locker;
+
+2. Persons possessing items, including but not limited to hides, heads or 
+horns as specimens or trophies;
+
+3. Persons possessing wild waterfowl taken in compliance with and under 
+provisions of federal laws pertaining thereto; 
+
+4. Persons possessing legally obtained wildlife, from a source other than the 
+wild, as pets or for the purpose of training hunting dogs, except as provided 
+for by law or under rules promulgated by the Wildlife Conservation Commission; 
+or 
+
+5. Persons possessing farmed cervidae and licensed pursuant to the Oklahoma 
+Farmed Cervidae Act.
+
+C. Persons possessing products for human consumption that have been taken, 
+processed, labeled and transported in accordance with the laws of the state of 
+origin and federal law shall be exempt from the provisions of paragraphs 1 and 2 
+of subsection A of this section. Provided:
+
+1. The person processing or offering the product for sale shall retain all 
+necessary documents to evidence the state of origin of the wildlife or farmed 
+cervidae product; and
+
+2. Nothing in this subsection shall allow a person to sell protected wildlife 
+taken in this state except as otherwise provided by law.
+
+D. It shall be unlawful for any person to have in their possession any meat, 
+head, hide, or any part of the carcass of any wildlife not legally taken.
+
+E. The applicable commercial or noncommercial wildlife breeder�s license 
+shall be obtained if any wildlife is being propagated.
+
+F. Possession of game during the closed season, except as above provided, 
+shall be prima facie evidence that the game was taken during a closed 
+season.
+
+G. Any person convicted of violating any provision of this section shall be 
+punished by a fine of not less than One Hundred Dollars ($100.00) nor more than 
+Five Hundred Dollars ($500.00), or by imprisonment in the county jail not to 
+exceed thirty (30) days, or by both.
+
+Historical Data
+
+Laws 1974, SB 144, c. 17, � 7-502, emerg. eff. April 
+8, 1974; Amended by Laws 1991, HB 1619, c. 182, � 53, eff. September 1, 1991; 
+Amended by Laws 1992, SB 714, c. 149, � 13, emerg. eff. April 30, 1992; Amended 
+by Laws 2000, HB 2179, c. 119, � 1, eff. November 1, 2000 (superseded document available); 
+Amended by Laws 2002, SB 1370, c. 346, � 3, eff. November 1, 2002 (superseded document available); 
+Amended by Laws 2003, HB 1566, c. 188, � 4, emerg. eff. July 1, 2003 (superseded document available); 
+Amended by Laws 2006, HB 2621, c. 138, � 19, eff. November 1, 2006 (superseded document 
+available).
+
+
+==== 29 O.S. § 4-107 ====
+Cite as: O.S. �, __ __
+
+A. Except as otherwise provided for in this title or in the Oklahoma Farmed 
+Cervidae Act, no person may breed, possess or raise native wildlife, except 
+fish, amphibians, aquatic reptiles, aquatic invertebrates or exotic livestock, 
+for commercial purposes without first obtaining a commercial wildlife breeder�s 
+license from the Director.
+
+B. No person licensed under this section with a commercial wildlife breeder�s 
+license may sell native cats or bears specified in subsection E of this section 
+to any person who does not possess a commercial wildlife breeder's license.
+
+C. A commercial wildlife breeder�s license may be issued to any person whom 
+the Director believes to be acting in good faith, and whom the Director believes 
+does not intend to use the license for the purpose of violating any of the laws 
+of the State of Oklahoma, and who proves that the brood stock to be used will be 
+obtained in a lawful manner.
+
+D. The fee for a commercial wildlife breeder�s license issued under this 
+section, and all renewals of the license, shall be Forty-eight Dollars ($48.00). 
+All commercial wildlife breeder�s licenses issued pursuant to this section shall 
+expire on June 30 of each year.
+
+E. Any person who keeps or maintains any native bear or native cat that will 
+grow to reach the weight of fifty (50) pounds or more shall be licensed under 
+this section with a commercial wildlife breeder�s license. Any person licensed 
+pursuant to this subsection shall at all times keep such wildlife confined to 
+the premises described in the commercial wildlife breeder application, and 
+controlled and restrained in a manner so the life, limb or property of any 
+person lawfully entering the premises shall not be endangered. Any person 
+licensed to possess native cats or bears pursuant to this subsection shall 
+control and restrain the wildlife so that there is no direct contact between the 
+public and the wildlife, and the public shall not be allowed to enter into any 
+enclosures occupied by the wildlife.
+
+F. 1. Any person who is a nonresident or entity not permanently located 
+within the state which exhibits native cats or native bears that will grow to 
+reach the weight of fifty (50) pounds or more in this state on a temporary basis 
+shall be required to obtain from the Director a nonresident cat or bear 
+temporary exhibitor�s permit. Any person with a permit issued pursuant to this 
+paragraph shall be exempt from acquiring a commercial wildlife breeder�s license 
+issued under this section and shall be exempt from the requirements set forth in 
+subsection E of this section. The fee for a nonresident cat or bear temporary 
+exhibitor�s permit shall be One Hundred Dollars ($100.00) and shall be valid for 
+thirty (30) days. To obtain a nonresident cat or bear temporary exhibitor�s 
+permit, the person shall be required to hold a valid exhibitor�s license issued 
+by the United States Department of Agriculture.
+
+2. Any resident of the state who has a commercial wildlife breeder�s license 
+issued pursuant to this section who wishes to exhibit native cats or native 
+bears that will grow to reach the weight of fifty (50) pounds or more at the 
+permanent facility described in the commercial wildlife breeder�s license or at 
+a temporary facility shall be required to obtain from the Director a resident 
+cat or bear exhibitor�s permit. Any person with a permit issued pursuant to this 
+paragraph shall be required to also have a commercial wildlife breeder�s license 
+issued under this section and shall comply with the requirements set forth in 
+subsection E of this section when not exhibiting the wildlife. The fee for a 
+resident cat or bear exhibitor�s permit shall be Fifty Dollars ($50.00) and 
+shall be valid for one (1) year. To obtain a resident cat or bear exhibitor�s 
+permit the person shall be required to hold a valid exhibitor�s license issued 
+by the United States Department of Agriculture.
+
+3. Any person with a permit to exhibit native cats or bears pursuant to 
+paragraph 1 or 2 of this subsection shall at all times keep the wildlife 
+controlled and restrained in a manner so the life, limb, or property of any 
+person lawfully entering the premises where the wildlife is being exhibited 
+shall not be endangered by the wildlife. Any person with a permit to exhibit 
+native cats or bears pursuant to paragraph 1 or 2 of this subsection shall 
+control and handle the wildlife so there is no direct contact between the public 
+and the wildlife, and the public shall not be allowed to enter into any 
+enclosures occupied by the wildlife. Any native cat or bear and any facility 
+covered under a permit issued pursuant to paragraph 1 or 2 of this subsection 
+shall be available for inspection at all reasonable times by authorized 
+representatives of the Department.
+
+G. Any person convicted of violating the provisions of this section shall be 
+punished by a fine of not less than Five Hundred Dollars ($500.00) and, if 
+applicable, shall have the wildlife license of the person revoked. No person 
+whose license has been revoked shall be eligible to obtain a new license until 
+after the date on which the revoked license would have 
+expired.
+
+Historical Data 
+
+Laws 1974, SB 144, c. 17, � 4-107, emerg. eff. April 
+8, 1974; Amended by Laws 1985, HB 1023, c. 91, � 3, eff. January 1, 1986; 
+Amended by Laws 1987, HB 1049, c. 112, � 1, eff. November 1, 1987; Amended by 
+Laws 1991, HB 1619, c. 182, � 21, eff. September 1, 1991; Amended by Laws 1992, 
+SB 715, c. 402, � 4, eff. December 1, 1992; Amended by Laws 1994, SB 792, c. 
+151, � 1, eff. September 1, 1994; Amended by Laws 1996, SB 837, c. 7, � 5, 
+emerg. eff. March 19, 1996; Amended by Laws 2003, HB 1493, c. 94, � 2 (repealed 
+by Laws 2004, HB 1882, c. 376, � 2, emerg. eff. June 3, 2004); Amended by Laws 
+2003, HB 1566, c. 188, � 2, emerg. eff. July 1, 2003 (superseded document available); 
+Amended by Laws 2004, HB 1882, c. 376, � 1, emerg. eff. June 3, 2004 (superseded document available); 
+Amended by Laws 2006, HB 2621, c. 138, � 14, eff. November 1, 2006 (superseded document 
+available).
+
+
+==== 29 O.S. § 4-121 ====
+Cite as: O.S. �, __ __
+
+A. Except as otherwise provided in this title or in the Oklahoma Farmed 
+Cervidae Act, no person may breed or raise wildlife for personal consumption or 
+noncommercial purposes without having first procured a license from the 
+Director.
+
+B. Licenses may be issued to any person that lawfully obtains wildlife, acts 
+in good faith and adheres to the laws of the State of Oklahoma.
+
+C. All licenses issued pursuant to this section shall expire on June 30 of 
+each year.
+
+Historical 
+Data 
+
+Laws 1975, SB 381, c. 
+279, � 1, emerg. eff. June 5, 1975; Amended by Laws 1987, 
+HB 1049, c. 112, � 2, eff. November 1, 1987; Amended by Laws 1991, SB 522, c. 182, 
+� 26, eff. September 1, 1991; Amended by Laws 1992, SB 715, c. 402, � 6, eff. December 
+1, 1992; Amended by Laws 2003, HB 1493, c. 94, � 3, emerg. eff. July 1, 2003 (superseded document available); Amended by Laws 2006, HB 2621, c. 138, � 
+16, eff. November 1, 2006 (superseded document available).
+
+
+==== 29 O.S. § 2-109.1 ====
+Cite as: O.S. �, __ __
+
+"Exotic wildlife" includes any and all species of 
+wildlife that are not indigenous to, or that may not be found in the wild in, 
+the continental United States. 
+
+Historical Data 
+
+Laws 1991, HB 1619, c. 182, � 5, eff. September 1, 
+1991; Amended by Laws 1993, SB 70, c. 214, � 1, eff. September 1, 1993.
+
+
+==== ODWC Reptile & Amphibian Regulations ====
+Regulations
+
+License Requirements
+
+Any person 18 or older, while in the act of taking or attempting to take reptiles and amphibians or possessing reptiles or amphibians, must first possess:
+Any resident or nonresident hunting license, unless otherwise exempt, for land-dwelling reptiles or amphibians, with the exception of (3) and (4) of this paragraph.
+A resident or nonresident fishing license, unless otherwise exempt, for water-dwelling reptiles or amphibians, with the exception of (3) and (4) of this paragraph.
+A commercial turtle harvester license for legal water-dwelling turtles if the taking or possession is for commercial purposes. Note: Not all bodies of water are open for commercial harvest.
+A commercial resident or nonresident minnow dealers license for legal aquatic salamanders if the taking is for commercial purposes.
+Bullfrogs may be taken with hook and line, gig, spear, bow and arrow or other methods except firearms under the resident or nonresident fishing license. Bullfrogs may be taken with firearms under the resident or nonresident hunting license.
+Persons possessing a current resident or nonresident hunting license, unless otherwise exempt, may sell lawfully-taken rattlesnakes only to those individuals holding a commercial or noncommercial wildlife breeders license during open season. A commercial wildlife breeders license is required of all who buy and resell live rattlesnakes.
+
+5-Day Rattlesnake Permit
+
+Any person 18 or older, hunting, pursuing, trapping, harassing, catching, killing, taking, or attempting to take in any manner any species of rattlesnake during an organized rattlesnake hunting event or festival must have a rattlesnake permit, unless exempt.
+Persons with a valid hunting license (see License Exemptions) are exempt from the rattlesnake permit.
+Permits are available online at GoOutdoorsOklahoma.com, by calling (405) 521-3852, or at any hunting or fishing license dealer.
+
+Rattlesnake Dates & Daily Limits
+
+March 1 - June 30
+The following reptiles are legal to harvest with no daily limit: prairie rattlesnake, western diamondback rattlesnake, timber rattlesnake and massasauga.
+
+Other Reptile Dates & Daily Limits
+
+There is a statewide closed season on the following reptiles: Texas horned lizard, eastern side-blotched lizard, checkered whiptail, American alligator, western chicken turtle, northern map turtle, wandering gartersnake, gulf swampsnake, alligator snapping turtle, common lesser earless lizard, round-tailed horned lizard and western mudsnake.
+
+All other reptiles, excluding rattlesnakes, have a year-round season. The limit is six (6) per day or in possession for each species.
+
+Nuisance Reptiles
+
+Nothing prohibits the control of reptiles other than those listed as endangered or threatened, by landowners, lessees, or occupants of such land when such reptiles are creating a nuisance.
+
+Legal Means of Taking
+
+It is unlawful to introduce, deposit, place or drain any deleterious, noxious, toxic or petroleum based substance into or around any underground dens or rock crevices for the purpose of taking reptiles or amphibians.
+
+The method of taking legal water turtles and aquatic salamanders for commercial purposes and the taking of bullfrogs is restricted to provisions in the current statutes and regulations. With the exception of water turtles and aquatic salamanders taken for commercial purposes (when licensed) and all legal species of frogs, all other reptiles and amphibians may only be taken by hand or any other legal means.
+
+Commercial Harvest
+
+It shall be unlawful to engage in any commercial activities involving any species or subspecies, if more than one (1) exists, of reptiles or amphibians collected from the wild that are indigenous to or whose range extends into Oklahoma, except for provisions for rattlesnakes, water turtles and aquatic salamanders (Necturus and Ambystoma, except Ambystoma talpoideum and Ambystoma annulatum).
+
+Commercial & Noncommercial Breeding
+
+All persons so licensed for captive breeding of reptiles and amphibians must keep detailed breeding and hatching records in addition to those records already required by law.
+
+The Director may make exceptions for education or research purposes to holders of Oklahoma scientific collector’s permits for reptiles and amphibians.
+
+Possession of American Alligators
+
+It is unlawful to possess an American alligator.
+
+Amphibian Dates, Areas, Legal Species & Daily Limits
+
+There will be a statewide year-round open season for all amphibians except for the following salamanders that have a statewide closed season: Sequoyah slimy salamander, Kiamichi slimy salamander, western slimy salamander, Rich Mountain salamander, Ozark zigzag salamander, four-toed salamander, grotto salamander, Oklahoma salamander, cave salamander, mole salamander, ringed salamander, Ouachita dusky salamander and three-toed amphiuma.
+
+Aquatic frogs (except bullfrog and crawfish frog), Woodhouse’s toad and aquatic salamanders of the genera Necturus and Ambystoma (except mole and ringed salamander) have no limit.
+
+The daily limit and possession limit for bullfrogs is 15. It is illegal to sell bullfrogs or ship them out-of-state at any time. Bullfrogs may not be taken in the Wichita Mountains WR.
+
+The limit for crawfish frog and all other species of amphibians, except those listed as closed, is four (4) per day or in possession of each species.
+
+This guide is not a legal document. This guide is an interpretive summary of Title 29 and Title 800 Oklahoma statutes go
+
+
+==== ODWC Turtle & Bullfrog Regulations ====
+Regulations
+
+Turtle Regulations
+
+Turtles may be taken in all waters with a resident or nonresident fishing license with the provisions listed below. Turtles taken with a firearm require a hunting license. Turtles may be taken year-round provided that:
+no more than six turtles of each species may be taken per day and no more than six may be kept in possession at one time;
+shooting of tur­tles on federal reservoirs is pro­hib­it­ed;
+terrestrial (land) turtles may not be sold;
+taking of the western chicken turtle, northern map turtle and/or al­li­ga­tor snapping turtle is pro­hib­it­ed;
+no aquatic turtles may be sold or purchased without the proper commercial turtle harvester or buyer’s license.
+Note: The above regulations apply to the noncommercial harvest of turtles. Separate regulations govern the commercial harvest of turtles.
+ 
+ 
+
+Bullfrog Regulations
+
+Bullfrogs may be taken with hook and line, gig, spear, bow and arrow or other methods, except firearms, under a res­i­dent or nonresident fishing license. Bull­frogs taken with a firearm require a hunting license. Bullfrogs may be taken year-round provided that:
+no more than 15 bull­frogs per day are taken;
+bullfrogs may not be sold or shipped out of state;
+Wichita Mountains Wildlife Refuge is closed to bullfrog harvest.
+
+This guide is not a legal document. This guide is an interpretive summary of Title 29 and Title 800 Oklahoma statutes go
