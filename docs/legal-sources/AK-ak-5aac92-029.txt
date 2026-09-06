@@ -1,0 +1,196 @@
+SOURCE: Alaska: 5 AAC 92.029 (permit for possessing live game) and AS 16.05.940(19) (definition of game)
+URL: https://www.akleg.gov/basis/aac.asp#5.92.029 and https://www.akleg.gov/basis/statutes.asp#16.05.940
+FETCHED: 2026-09-05 (THE FETCH TRICK: akleg.gov's aac.asp and statutes.asp are JavaScript shells that return the same 12 KB page for every fragment and every query string, and a headless browser gets a network error because it does not trust the agent proxy CA. The page's own script builds an embed URL, and that URL serves the text to plain curl:
+    https://www.akleg.gov/basis/aac.asp?media=js&secStart=5.92.029&secEnd=5.92.029
+    https://www.akleg.gov/basis/statutes.asp?media=js&secStart=16.05.940&secEnd=16.05.940
+It returns a document.write() wrapper: strip the prefix, unescape the backslash-quotes, strip tags.
+secStart and secEnd can span a range.)
+
+READ THIS FIRST. Alaska is the strictest live-animal state in the country and the two things that
+decide a cell here are the definition and the clean list, in that order.
+
+AS 16.05.940(19) makes game "any species of bird, reptile, and mammal". Amphibians, fish and
+invertebrates are outside it, so 5 AAC 92.029 never engages for them and they are free by default.
+That is why the axolotl, the tarantula and the hissing cockroach are legal in the state where the
+sugar glider is banned.
+
+For a bird, reptile or mammal, § 92.029(a) bars possessing or importing live game without a permit
+and § 92.029(c) then says the department "may not issue a permit ... for use as a pet". So the clean
+list at § 92.029(b) is the whole answer, and absence from it is a flat no rather than a permit. The
+route onto the list is § 92.029(h), clear and convincing evidence to the board.
+
+The clean list is a roll call of individual species with one class-wide entry, "Any nonvenomous
+reptile - Class Reptilia", which is what makes Alaska easy for a lizard or snake keeper and hard for
+everyone else. Domesticated varieties are marked "Var.": European rabbit, white rat, white mice,
+pigeon, chicken, canary, reindeer, ass.
+
+
+==== AS 16.05.940(19) ====
+(19) "game" means any species of bird, reptile, and mammal, including a feral domestic animal,
+found or introduced in the state, except domestic birds and mammals;
+
+==== 5 AAC 92.029 in full ====
+5 AAC 92.029. Permit for possessing live game. (a) Except as otherwise provided in this chapter,
+or in AS 16 , no person may possess, import, release, export, or assist in importing, releasing,
+or exporting, live game, unless the person holds a possession permit issued by the department.(b)
+The following species, not including a hybrid of a game animal and a species listed in this
+subsection, may be possessed, imported, exported, bought, sold, or traded without a permit from
+the department but may not be released into the wild:Common NameScientific NameDogCanis familiaris
+CatFelis catus SheepOvis aries GoatCapra hircus CattleBos taurus OxenBos spp.HorseEquus caballus
+Guinea pigCavia porcellus Reindeer (except feral reindeer)Rangifer tarandus Var.LlamaLama peruana
+AlpacaLama pacos One-humped camelCamelus dromedarius AssEquus asinus Var.MuleEquus asinus x
+caballus SwineSus scrofa domesticusEuropean ferretMustela putorius furo European rabbitOryctolagus
+cuniculus Var.White ratRattus norvegicus Var. albinus Mice: white, waltzing, singing,Mus musculus
+Var. shaker, piebaldFat-tailed gerbilPachyuromys duprasi GerbilGerbillus spp.Hamster
+(golden)Mesocricetus auratus ChinchillaChinchilla laniger CavyCavia aperea Hedgehog, African
+PygmyErinaceus albiventris ChickenGallus gallus Var.PigeonColumia livia Var.Any Turkey
+speciesSubfamily Meleagridinae Any Pheasant, Junglefowl orSubfamily Phasianinae Coturnix
+speciesAny Guineafowl speciesSubfamily Numidinae CanarySerinus canaria Var.Parrot, parakeet,
+cockatiel,Family Psittacidae macaw, and other members of the Family Psittacidae not prohibited by
+federal or international lawToucanFamily Ramphastidae Any New World Quail speciesSubfamily
+Odontophorinae (including Bobwhite)MynahAcridotheres spp.Any Peafowl speciesPavo spp.Any duck,
+goose, swan, or other migratory waterfowl which the U.S. Fish and Wildlife Service determines does
+not require a federal permit for private ownershipChukar partridgeAlectoris chukarButton
+"quail"Family Turnicidae in the order Gruiformes Any nonvenomous reptileClass Reptilia (crocodile,
+alligator, snake, turtle, or lizard)Members of the bird families Fringillidae, Turdidae,
+Zosteripidae, Pycnonotidae, Timaliidae, and Ploceidae of non- Holarctic origin. Members of the
+bird families Columbidae and Trogonidae of non- nearctic origin.Elk (except feral and wild
+elk)(Cervus elaphus) Bison (except feral and wild bison)(Bison bison) Muskoxen (except feral and
+wild muskoxen)(Ovibos moschatus) EmuDromaius novaehollandiae(c) The department may not issue a
+permit for the capture, possession, import, or export of any game animal, including a hybrid of a
+game animal and a species listed in (b) of this section, for use as a pet, except that a person
+that possessed a chimpanzee as a pet before January 31, 2010 may obtain a permit from the
+department before July 1, 2010, in order to maintain possession of the chimpanzee in this state.
+The propagation of chimpanzees is prohibited in this state.(d) Under this section, and in
+accordance with the definition of "game" in AS 16.05.940 (which includes feral domestic animals),
+a (1) game animal defined as deleterious exotic wildlife or nonindigenous gallinaceous bird is
+feral if the animal is not under direct control of an owner, including being confined in a cage or
+other physical structure, or being restrained on a leash; the commissioner may capture, destroy,
+or dispose of any feral deleterious exotic wildlife or feral nonindigenous gallinaceous bird in an
+appropriate manner; (2) musk oxen, bison, or reindeer that is lawfully owned, or an elk held under
+a valid game mammal farming license, that is not confined or is not under positive control is
+feral unless the animal is a free-ranging animal under a state or federal grazing lease; however,
+(A) a person who can demonstrate ownership of the animal may pursue and capture the animal within
+48 hours after the animal escapes from confinement, without needing to obtain a permit from the
+department; (B) a person who can demonstrate ownership of the animal may pursue and capture the
+animal more than 48 hours after the animal escapes from confinement only if the person obtains a
+permit from the department; (C) any free-ranging musk oxen, bison, reindeer, or elk for which
+ownership cannot be demonstrated is presumed to be game; (D) for purposes of this paragraph,
+ownership of an animal can be demonstrated only by means of a clearly visible permanent brand, ear
+tag, or owner's mark on the body of the animal.(e) Any of the above species of bird, mammal, or
+reptile that is endangered may not be held in private ownership without a permit from the United
+States Fish and Wildlife Service.(f) Notwithstanding (b) of this section, the following species
+may be temporarily released for the purpose of hunting dog or falcon training, field trials, and
+tests: (1) Pigeon (Columia livia Var.); (2) Pheasant, Jungle Fowl, or Coturnix (Subfamily
+Phasianinae); (3) any Guineafowl species (Subfamily Numidinae); (4) any New World Quail species
+(including Colinus) (Subfamily Odontophorinae); (5) any duck, goose, swan, or other migratory
+waterfowl which the U.S. Fish and Wildlife Service has determined does not require a federal
+permit for private ownership; (6) Chukar Partridge (Alectoris chukar).(g) A person using live game
+listed in (f) of this section for the purpose of hunting dog or falcon training, field trials, or
+tests (1) may release the game only on the day of use and shall make reasonable efforts to
+capture, kill, or recover the temporarily released live game; (2) may take the live game in
+connection with hunting dog or falcon training, field trial, and test activities; and (3) must
+legally acquire, hold, and dispose of the live game in accordance with all other applicable state
+statutes and regulations.(h) Upon application, the board or the department will add a species to
+the list in (b) of this section if there is clear and convincing evidence that the species (1) is
+not capable of surviving in the wild in Alaska; (2) is not capable of causing a genetic alteration
+of a species that is indigenous to Alaska; (3) is not capable of causing a significant reduction
+in the population of a species that is indigenous to Alaska; (4) is not capable of transmitting a
+disease to a species that is indigenous to Alaska; (5) does not otherwise present a threat to the
+health or population of a species that is indigenous to Alaska; (6) is not captured from the wild
+for use as a pet; (7) does not present a conservation concern in the species' native habitat
+outside of this state; (8) can be reasonably maintained in good health in private ownership; and
+(9) does not present a likelihood that concerns about, or threats to human health and safety will
+lead to adverse consequences to captive animals.(i) The board or the department will remove a
+species from the list in (b) of this section if there is a preponderance of evidence that the
+species (1) is capable of surviving in the wild in Alaska; (2) is capable of causing a genetic
+alteration of a species that is indigenous to Alaska; (3) is capable of causing a significant
+reduction in the population of a species that is indigenous to Alaska; (4) is capable of
+transmitting a disease to a species that is indigenous to Alaska; (5) otherwise presents a threat
+to the health or population of a species that is indigenous to Alaska; (6) is captured from the
+wild for use as a pet; (7) presents a conservation concern in the species' native habitat outside
+of this state; (8) cannot be reasonably maintained in good health in private ownership; or (9)
+presents a likelihood that concerns about, or threats to human health and safety will lead to
+adverse consequences to captive animals. ") 5 AAC 92.029. Permit for possessing live game. (a)
+Except as otherwise provided in this chapter, or in AS 16 , no person may possess, import,
+release, export, or assist in importing, releasing, or exporting, live game, unless the person
+holds a possession permit issued by the department. (b) The following species, not including a
+hybrid of a game animal and a species listed in this subsection, may be possessed, imported,
+exported, bought, sold, or traded without a permit from the department but may not be released
+into the wild: Common NameScientific NameDogCanis familiaris CatFelis catus SheepOvis aries
+GoatCapra hircus CattleBos taurus OxenBos spp.HorseEquus caballus Guinea pigCavia porcellus
+Reindeer (except feral reindeer)Rangifer tarandus Var.LlamaLama peruana AlpacaLama pacos One-
+humped camelCamelus dromedarius AssEquus asinus Var.MuleEquus asinus x caballus SwineSus scrofa
+domesticusEuropean ferretMustela putorius furo European rabbitOryctolagus cuniculus Var.White
+ratRattus norvegicus Var. albinus Mice: white, waltzing, singing,Mus musculus Var. shaker,
+piebaldFat-tailed gerbilPachyuromys duprasi GerbilGerbillus spp.Hamster (golden)Mesocricetus
+auratus ChinchillaChinchilla laniger CavyCavia aperea Hedgehog, African PygmyErinaceus albiventris
+ChickenGallus gallus Var.PigeonColumia livia Var.Any Turkey speciesSubfamily Meleagridinae Any
+Pheasant, Junglefowl orSubfamily Phasianinae Coturnix speciesAny Guineafowl speciesSubfamily
+Numidinae CanarySerinus canaria Var.Parrot, parakeet, cockatiel,Family Psittacidae macaw, and
+other members of the Family Psittacidae not prohibited by federal or international lawToucanFamily
+Ramphastidae Any New World Quail speciesSubfamily Odontophorinae (including
+Bobwhite)MynahAcridotheres spp.Any Peafowl speciesPavo spp.Any duck, goose, swan, or other
+migratory waterfowl which the U.S. Fish and Wildlife Service determines does not require a federal
+permit for private ownershipChukar partridgeAlectoris chukarButton "quail"Family Turnicidae in the
+order Gruiformes Any nonvenomous reptileClass Reptilia (crocodile, alligator, snake, turtle, or
+lizard)Members of the bird families Fringillidae, Turdidae, Zosteripidae, Pycnonotidae,
+Timaliidae, and Ploceidae of non- Holarctic origin. Members of the bird families Columbidae and
+Trogonidae of non- nearctic origin.Elk (except feral and wild elk)(Cervus elaphus) Bison (except
+feral and wild bison)(Bison bison) Muskoxen (except feral and wild muskoxen)(Ovibos moschatus)
+EmuDromaius novaehollandiae (c) The department may not issue a permit for the capture, possession,
+import, or export of any game animal, including a hybrid of a game animal and a species listed in
+(b) of this section, for use as a pet, except that a person that possessed a chimpanzee as a pet
+before January 31, 2010 may obtain a permit from the department before July 1, 2010, in order to
+maintain possession of the chimpanzee in this state. The propagation of chimpanzees is prohibited
+in this state. (d) Under this section, and in accordance with the definition of "game" in AS
+16.05.940 (which includes feral domestic animals), a (1) game animal defined as deleterious exotic
+wildlife or nonindigenous gallinaceous bird is feral if the animal is not under direct control of
+an owner, including being confined in a cage or other physical structure, or being restrained on a
+leash; the commissioner may capture, destroy, or dispose of any feral deleterious exotic wildlife
+or feral nonindigenous gallinaceous bird in an appropriate manner; (2) musk oxen, bison, or
+reindeer that is lawfully owned, or an elk held under a valid game mammal farming license, that is
+not confined or is not under positive control is feral unless the animal is a free-ranging animal
+under a state or federal grazing lease; however, (A) a person who can demonstrate ownership of the
+animal may pursue and capture the animal within 48 hours after the animal escapes from
+confinement, without needing to obtain a permit from the department; (B) a person who can
+demonstrate ownership of the animal may pursue and capture the animal more than 48 hours after the
+animal escapes from confinement only if the person obtains a permit from the department; (C) any
+free-ranging musk oxen, bison, reindeer, or elk for which ownership cannot be demonstrated is
+presumed to be game; (D) for purposes of this paragraph, ownership of an animal can be
+demonstrated only by means of a clearly visible permanent brand, ear tag, or owner's mark on the
+body of the animal. (e) Any of the above species of bird, mammal, or reptile that is endangered
+may not be held in private ownership without a permit from the United States Fish and Wildlife
+Service. (f) Notwithstanding (b) of this section, the following species may be temporarily
+released for the purpose of hunting dog or falcon training, field trials, and tests: (1) Pigeon
+(Columia livia Var.); (2) Pheasant, Jungle Fowl, or Coturnix (Subfamily Phasianinae); (3) any
+Guineafowl species (Subfamily Numidinae); (4) any New World Quail species (including Colinus)
+(Subfamily Odontophorinae); (5) any duck, goose, swan, or other migratory waterfowl which the U.S.
+Fish and Wildlife Service has determined does not require a federal permit for private ownership;
+(6) Chukar Partridge (Alectoris chukar). (g) A person using live game listed in (f) of this
+section for the purpose of hunting dog or falcon training, field trials, or tests (1) may release
+the game only on the day of use and shall make reasonable efforts to capture, kill, or recover the
+temporarily released live game; (2) may take the live game in connection with hunting dog or
+falcon training, field trial, and test activities; and (3) must legally acquire, hold, and dispose
+of the live game in accordance with all other applicable state statutes and regulations. (h) Upon
+application, the board or the department will add a species to the list in (b) of this section if
+there is clear and convincing evidence that the species (1) is not capable of surviving in the
+wild in Alaska; (2) is not capable of causing a genetic alteration of a species that is indigenous
+to Alaska; (3) is not capable of causing a significant reduction in the population of a species
+that is indigenous to Alaska; (4) is not capable of transmitting a disease to a species that is
+indigenous to Alaska; (5) does not otherwise present a threat to the health or population of a
+species that is indigenous to Alaska; (6) is not captured from the wild for use as a pet; (7) does
+not present a conservation concern in the species' native habitat outside of this state; (8) can
+be reasonably maintained in good health in private ownership; and (9) does not present a
+likelihood that concerns about, or threats to human health and safety will lead to adverse
+consequences to captive animals. (i) The board or the department will remove a species from the
+list in (b) of this section if there is a preponderance of evidence that the species (1) is
+capable of surviving in the wild in Alaska; (2) is capable of causing a genetic alteration of a
+species that is indigenous to Alaska; (3) is capable of causing a significant reduction in the
+population of a species that is indigenous to Alaska; (4) is capable of transmitting a disease to
+a species that is indigenous to Alaska; (5) otherwise presents a threat to the health or
+population of a species that is indigenous to Alaska; (6) is captured from the wild for use as a
+pet; (7) presents a conservation concern in the species' native habitat outside of this state; (8)
+cannot be reasonably maintained in good health in private ownership; or (9) presents a likelihood
+that concerns about, or threats to human health and safety will lead to adverse consequences to
+captive animals.

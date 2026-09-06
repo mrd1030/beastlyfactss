@@ -1,0 +1,215 @@
+SOURCE: Louisiana: La. R.S. 56:8 (definitions), LAC 76:XV.101 (reptiles and amphibians, rewritten January 2025), LAC 76:V.107 (game breeder's licence), LAC 76:V.115 (dangerous quadrupeds)
+URL: https://legis.la.gov/legis/Law.aspx?d=105616 and https://www.doa.la.gov/media/ln5kb5vu/76.docx
+FETCHED: 2026-09-05 (The Division of Administration serves the WHOLE of LAC Title 76 as one 1.2 MB .docx; extract with python zipfile on word/document.xml. legis.la.gov has no section-number URL, only opaque ids, and they are sorted as STRINGS, so 56:8 sits near the end of the title rather than the start: 56:648 is d=105485, 56:8 is d=105616, 56:800 is d=105618. Bisect on the printed section number rather than guessing.)
+
+READ THIS FIRST. Two definitions in R.S. 56:8 decide most of Louisiana.
+
+  (152) "Wildlife" means all species of wild vertebrates.
+  (151)(a)(i) Game quadrupeds: wild deer, bears, squirrels, and wild rabbits.
+
+The first puts every terrestrial arthropod outside the Department of Wildlife and Fisheries, the
+Utah and Wyoming shape. The second pulls a flying squirrel into the game breeder scheme at LAC
+76:V.107 and leaves a domestic rabbit out of it, since the pen specifications there spell the
+category out as "Rabbits (cottontail, swamp and wild hares endemic to North America)".
+
+LAC 76:XV.101 was rewritten effective January 2025 and is long, but the operative parts are short.
+K.2.a is the prohibited nonnative list, fourteen entries. K.2.c is the restricted nonnative list,
+ten entries needing a permit. K.1 is the restricted snake permit, constrictors over eight feet and
+venomous snakes. Everything else nonnative is free. G is the turtle scheme, numbers rather than
+permits. J is the native scheme: a basic recreational fishing licence for collection and possession
+for recreational purposes, a dealer's licence to sell "regardless of the number of generations
+removed from the wild", and a conservation-concern list at J.4 that may not be taken at all.
+
+H is the clause worth knowing about: a Green Anole Rule, written for the species by name, barring
+sale or purchase below 1 3/4 inches snout to vent or five inches overall. The I checklist then
+confirms the anole is a Louisiana native, listed without qualifier while the brown anole beside it
+is marked "established nonnative".
+
+
+==== La. R.S. 56:8(151) and (152) ====
+(151)(a) "Wild quadrupeds" means and includes any and all of the following: (i) Game quadrupeds:
+wild deer, bears, squirrels, and wild rabbits. (ii) Outlaw quadrupeds: coyotes, armadillos, and
+feral hogs. (iii) Protected quadrupeds: wolves, cougars, bobcats, and foxes ...
+
+(152) "Wildlife" means all species of wild vertebrates.
+
+==== LAC 76:XV.101.H, the Green Anole Rule ====
+Green Anole Rule. It shall be illegal to sell or purchase any Green Anole (Anolis carolinesis)
+with a snout-vent length of less than 1 3/4 inches or an overall length of less than 5 inches with
+the tail intact.
+
+==== LAC 76:XV.101.J.1 to J.3, native reptile and amphibian regulations ====
+J. Native Reptile and Amphibian Regulations 1. The provisions in this Subsection apply to native
+reptile and amphibians except for the American Alligator in accordance with LAC 76:V.701 and
+native turtles in accordance with LAC 76:XV.101.G.2, and the rules set forth therein. The species
+listed in Paragraph J.4 herein are considered species of conservation concern and may not be
+killed or removed from the wild without a permit issued by the department. It shall be unlawful to
+collect, possess, transport, or export reptiles or amphibians designated as endangered or
+threatened pursuant to the Endangered Species Act of 1973 as listed in Paragraph J.6 herein,
+absent a valid permit. a. The species listed in Paragraph J.4 herein may only be captured for
+research purposes deemed acceptable by the Department of Wildlife and Fisheries and immediately
+released alive without removal from the site as part of a scientific study, as permitted by the
+department via a Scientific Research and Collecting Permit. 2. License Requirements. A Reptile and
+Amphibian Collector's License is required to commercially collect and sell native reptiles and
+amphibians. A Reptile and Amphibian Wholesale/Retail Dealer's License is required for purchasing
+or acquiring native reptiles and amphibians, from within or outside the state, for sale or resale,
+or possessing native reptiles and amphibians for propagation for sale, in accordance with R.S.
+56:632.5. Reptile/Amphibian Collector and Reptile/Amphibian Wholesale/Retail Dealer licenses shall
+be acquired from the department's State Herpetologist or their designee and must comply with
+associated reporting requirements set forth by the department. Persons engaged in collection and
+possession of native reptiles and amphibians for recreational purposes shall possess a basic
+recreational fishing license. a. Commercial and recreational collection of native reptiles and
+amphibians on Department of Wildlife and Fisheries owned or managed lands requires a
+Reptile/Amphibian WMA Use permit, with mandatory reporting, acquired from the department's State
+Herpetologist or their designee. Commercial collection of native reptiles and amphibians on
+department owned or managed lands is only permitted for Louisiana residents. b. Nuisance Wildlife
+Control Operators, as permitted through the department in accordance with the LAC 76:V.127 and the
+rules therein, shall be exempt from take and possession limits. c. All persons selling native,
+captive-reared reptiles and amphibians, regardless of the number of generations removed from the
+wild, shall be required to possess a Reptile and Amphibian Wholesale/Retail Dealer's License,
+pursuant to R.S. 56:632.5.B. d. Pursuant to R.S. 56:634, bullfrogs (Lithobates catesbeianus) and
+pig frogs (Lithobates grylio) may be taken year round except during the months of April and May;
+and no person shall take or possess bullfrogs that are less than five inches in length, nor take
+or possess pig frogs that are less than three inches in length. The length is measured from the
+tip of the muzzle to the posterior end of the body between the hind legs. 3. Organized events that
+wantonly or willfully waste native amphibians or reptiles are prohibited.
+
+==== LAC 76:XV.101.K.1 and K.2.a, restricted snakes and the prohibited nonnative list ====
+K. Nonnative Amphibians and Reptiles, and All Venomous Snakes 1. Restricted Snakes. The
+importation, private possession, selling, and/or purchasing of constrictor snakes in excess of
+eight feet, which is including but not limited to the following species: Apodora papuana (Papuan
+Python), Liasis olivacea (Olive Python), Morelia spilota (Carpet or Diamond Python), Morelia
+kinghorni (Scrub Python), Morelia amethystina (Amethystine Python), Python natalensis (Southern
+African Python), Python sebae (African Rock Python), Python reticulatus (Reticulated Python), any
+species of the genus Boa (Boa Constrictors), and any species of the genus Eunectes (Anacondas),
+and venomous snakes, as defined in Subparagraph K.1.a herein, (hereinafter "restricted snakes")
+obtained in any manner, shall only be allowed via permit issued by the Department of Wildlife and
+Fisheries except for animals kept by certified zoos and aquariums, and other facilities as
+approved by the department including universities, and accredited research centers, nature
+centers, animal sanctuaries, and scientific organizations, and medical research facilities as
+defined in the Animal Welfare Act as found in the United States Code Title 7, Chapter 54, 2132(e).
+Large constrictor and venomous snake species listed within Subparagraph K.2.a herein, are
+prohibited from possession, importation, selling, and purchasing. A Restricted Snake Permit is
+required for possession of large constrictor snakes listed within Subparagraph K.2.c herein,
+regardless of size in length. a. Venomous Snakes-any species under current taxonomic standing,
+recognized to belong to the Families Viperidae (Vipers), Crotalidae (Pit Vipers), Elapidae
+(elapids), and Hydrophiidae (sea snakes), except prohibited species listed in Subparagraph K.2.a
+herein. b. Permit Requirements. Possession of restricted snakes is prohibited, except as
+authorized via a Restricted Snake Permit by the department. Restricted Snake Permits shall expire
+annually on the 31st day of December, and must be renewed within 30 days of the expiration date.
+Any individual who remains non-compliant after 30 days shall forfeit all restricted snakes to
+department personnel, who may dispose of the snakes per department policy. i. Applicant must be at
+least 18 years old at the time of application. ii. Any person requesting a permit to allow
+importation and/or private possession of venomous snakes shall demonstrate no less than one year
+of substantial, practical experience (to consist of no less than 500 hours) in the care, feeding,
+handling, and/or husbandry of the species for which the permit is sought, or other species within
+the same zoological family, which are substantially similar in size, characteristics, care, and
+nutritional requirements to the species for which the permit is sought. iii. For the purpose of
+demonstrating compliance, applicants shall submit documentation of such required experience,
+including a detailed description of the experience acquired, the dates and time frames the
+experience was obtained and the specific location(s) where it was acquired, and references of no
+less than two individuals having personal knowledge of the stated experience. Additional
+documentation may include records of prior permits for the keeping of venomous reptiles,
+employment records, or any other competent documentation of the required experience. iv.
+Documented educational experience in zoology or other relevant biological sciences obtained at the
+college or technical school level or above may substitute for up to 250 hours of the required
+experience. The Department of Wildlife and Fisheries shall be responsible for judgment of the
+adequacy of the documentation. v. Notification of relocation of facilities shall be made within 30
+days of a move, and permittee shall be allowed to keep the animals in the same setup(s) until the
+inspection of the facility and/or room and cages within which the animals are to be kept at the
+new location can be undertaken by department personnel. vi. In the event of an escape where a
+constrictor snake in excess of eight feet or a venomous snake escapes its cage and its secure
+containment room, and becomes outside the control of the permit holder and/or owner, notification
+shall immediately be made to the Department of Wildlife and Fisheries 24-hour hotline number. vii.
+Secure escape proof containers shall be required when transporting restricted snakes. viii.
+Restricted snakes shall be kept in secure, escape proof enclosures with doors that lock. Said
+enclosures shall be kept in a secure, escape proof room or outbuilding that is securely locked to
+prevent escape or unauthorized intrusion and when restricted snakes are being fed, the cages are
+being cleaned, or otherwise worked by the person trained and experienced in proper care, handling,
+and use of the species being maintained. Enclosures constructed below ground level shall be
+equipped with barriers to prevent visitors from falling into such enclosures. The possession of
+Restricted Snakes in any manner not in accordance with this Section is prohibited. ix. Facilities
+that house constrictor snakes in excess of eight feet or venomous snakes in private possession
+shall be open to inspection prior to issuance of a permit and at other times deemed necessary to
+ensure permit compliance by Department of Wildlife and Fisheries personnel or other persons
+authorized by the department to perform such inspections. c. License Requirements. A Reptile and
+Amphibian Wholesale/Retail Dealer's License is required for purchasing or acquiring Restricted
+Snakes, as defined under Paragraph K.1 herein, from within or outside the state, for sale or
+resale, or possessing Restricted Snakes for propagation for sale in accordance with R.S. 56:632.5.
+2. Prohibited and Restricted Nonnative Reptiles and Amphibians. a. The following nonnative reptile
+and amphibian species are prohibited from importation, possession, sale, attempting to sell,
+transfer, release, and reproduction in the state due to the potential risk of establishment in the
+wild and detrimental hazard to native wildlife and public health and safety. Individuals in
+possession of the species listed in Subparagraph K.2.a herein shall have 365 days from the
+effective date of this Rule to register those animals with the department and acquire a permit. i.
+All crocodilians; ii. All species in the Genera Salvator and Tupinambis, including the Argentine
+Black and White Tegu (Salvator merianae); iii. Nile Monitor (Varanus niloticus); iv. Savannah
+Monitor (Varanus exanthematicus); v. Green Iguana (Iguana iguana); vi. Brown Anole (Anolis
+sagrei); vii. Burmese Python (Python bivittatus); viii. Brown Tree Snake (Boiga irregularis); ix.
+All Genera in the Family Atractaspididae (stiletto snakes); x. All species in the Genera
+Dispholidus (boomslangs), Thelotornis (twig snakes), and Rhabdophis (keelback snakes) of the
+Family Colubridae; xi. All species in the Genera Naja, Ophiophagus, Pseudohaje, Aspidelaps, and
+Walterinnesia (cobras); Dendroaspis (mambas), Oxyuranus (taipans), and Bungarus (kraits) of the
+Family Elapidae; xii. Cuban Treefrog (Osteopilus septentrionalis); xiii. Cane Toad (Rhinella
+marina); xiv. African Clawed Frog (Xenopus laevis).
+
+==== LAC 76:XV.101.K.2.c, the restricted nonnative list ====
+c. The following restricted nonnative species may be in possession only via permit to be approved
+and monitored by the department. Facilities that house restricted nonnative species shall be open
+to inspection prior to issuance of a permit and at other times deemed necessary to ensure
+compliance with the permit by department personnel or other persons authorized by the department
+to perform such inspections. Individuals in possession of the species listed in Subparagraph K.2.c
+herein shall have 365 days from the effective date of this rule to register those animals with the
+department and acquire a permit. In the event of an escape of a restricted nonnative reptile or
+amphibian species, department personnel shall be notified immediately via the Department of
+Wildlife and Fisheries 24-hour hotline number. i. Boa constrictor (Boa constrictor); ii.
+Reticulated Python (Python reticulatus); iii. North African Python (Python sebae); iv. South
+African Python (Python natalensis); v. All species in the Genus Eunectes (Anacondas); vi. Asian
+Water Monitor (Varanus salvator); vii. Brown Basilisk (Basiliscus vittatus); viii. Gray's American
+Spiny-tailed Iguana (Ctenosaura similis); ix. Northern Curly-tailed Lizard (Leiocephalus carinatus
+armouri); x. Peter's Rock Agama (Agama picticauda). d. The Department may issue a permit for
+possession of prohibited or restricted nonnative reptile and amphibian species for approved
+scientific or research purposes. 3. No person shall possess, display or exhibit restricted snakes,
+as listed in Paragraph K.1 and Subparagraph K.1.a, or restricted nonnative species, as listed in
+Subparagraph K.2.c, in public spaces except as permitted by the department. 4. No person shall
+import or transport into the state any species of reptile or amphibian as listed as injurious
+wildlife under the U.S. Fish and Wildlife Service Lacey Act (18 U.S.C. 42), and all associated
+rules therein, except for accredited and certified facilities permitted by the department.
+
+==== LAC 76:V.107(B)(6) and (7), squirrels and rabbits under the game breeder's licence ====
+6. Squirrels (gray, fox, red, flying and others endemic to North America) a. Single Animal-3 feet
+long by 3 feet wide by 4 feet high. b. Additional Animals-add 6 inches more in length per
+additional animal; several limbs, nest box. c. Due to the inherent tendency of these animals to
+bite people, it is further required that applicants provide a certificate of good health from a
+licensed veterinarian stating that the squirrels do not show symptoms of rabies. 7. Rabbits
+(cottontail, swamp and wild hares endemic to North America) a. Single Animal-6 feet long by 3 feet
+wide by 3 feet high; gnawing logs; den or retreat. b. Additional Animals-add 1 foot in length per
+animal.
+
+==== LAC 76:V.107(C), when the licence must be held ====
+C. General Requirements 1. General Rules a. Game quadrupeds and birds cannot be taken from the
+wild, nor can domesticated game quadrupeds or birds be released into the wild except as provided
+on licensed hunting preserves, and as provided by valid bird-dog training permit, field trial
+permit or federal falconry permit. b. Game breeders can only keep those classes of animals for
+which they have been approved. If an applicant desires to keep additional classes of animals, the
+facilities for those animals must be approved prior to obtaining the new animals. 2. Application
+Requirements a. A game breeder's license must be issued before any game quadrupeds (deer, rabbits,
+squirrels, etc.) are obtained. In the case of game birds, waterfowl, or doves a buyer has 30 days
+after acquisition of the first bird to either apply for a license or slaughter all the birds. In
+either case, the buyer must possess a valid bill of sale containing the seller's permit number,
+date of sale, and number of birds sold. The buyer cannot resell live birds until a game breeder's
+license is obtained. If the application for a game breeder's license is denied, the applicant must
+dispose of any birds in possession as instructed by the department.
+
+==== LAC 76:V.115.C.1, the whole dangerous quadruped list ====
+C.1. Except as provided herein, it shall be unlawful to import into, possess, purchase or sell
+within the state of Louisiana, by any means whatsoever including but not limited to transactions
+conducted via the internet, any of the following species or its subspecies of live wild
+quadrupeds, big exotic cats, or non-human primates, domesticated or otherwise (hereinafter "listed
+animals"): a. black bear (Ursus americanus); b. grizzly bear (Ursus arctos); c. polar bear (Ursus
+maritimus); d. red wolf (Canis rufus); e. gray wolf (Canis lupus); f. wolf dog hybrid (Canis lupus
+or Canis rufus x Canis familiarus); g. all non-human primates; h. the following big exotic cats:
+i. tigers; ii. lions; iii. leopards (including, but not limited to snow leopard and clouded
+leopard); iv. jaguars; v. cheetahs; vi. cougars or mountain lions (Felis concolor); vii. all
+subspecies of the above listed exotic cats; viii. hybrids resulting from cross breeding of the
+above listed exotic cats.

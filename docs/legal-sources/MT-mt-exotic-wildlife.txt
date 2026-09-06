@@ -1,0 +1,213 @@
+SOURCE: Montana: MCA §§ 87-5-702, 87-5-705 and 87-5-706, and ARM 12.6.2201, 12.6.2205, 12.6.2208 and 12.6.2215
+URL: https://mca.legmt.gov/bills/mca/title_0870/chapter_0050/part_0070/ and https://rules.mt.gov/browse/collections/aec52c46-128e-4279-9068-8af5d5432d74
+FETCHED: 2026-09-05 (mca.legmt.gov serves one statute section per page as plain HTML and works with curl: /title_0870/chapter_0050/part_0070/section_00NN/0870-0050-0070-00NN.html. rules.mt.gov does NOT: it is an Esper single-page app on S3 that returns the same 894-byte shell for every path including the old /gateway/ URLs, its /api/policy-library needs auth, and the bundle exposes no document host. The ARM was read from Cornell LII at law.cornell.edu/regulations/montana/Mont-Admin-r-12.6.2205 and .../ARM-12-6-2215, cross-checked against the statute it implements. Cite the official rule number.)
+
+READ THIS FIRST. Montana is a WHITE LIST and the sentence that makes it one is § 87-5-705(1): "A
+person may not import into the state, possess, or sell any exotic wildlife unless ... allowed by law
+or commission rule." Absence is a bar, not a silence, which is why the tarantula and the giant
+millipede are banned here while the emperor scorpion, named at ARM 12.6.2205(3)(a), is not.
+
+Three definitions in § 87-5-702 do the sorting. (3) exotic wildlife is anything not native to
+Montana. (12)(a) wildlife is "any wild mammal, bird, reptile, amphibian, fish, mollusk, crustacean,
+or other wild animal", an open catch-all that reaches an insect. (12)(b) then says the term does not
+include domestic animals, and (2) defines those by breeding rather than by species, with an
+inclusive list naming livestock, dogs, cats, rodents, Eurasian ferrets and poultry.
+
+The herp answer is in the statute rather than the rules, and it is generous: § 87-5-706(1)(d) and
+(e) clear "all nonnative tropical and subtropical species" of nonvenomous snakes and lizards "not on
+the controlled or prohibited lists", naming twelve snake families and twenty-six lizard families
+"including but not limited to". Watch the geographic qualifier, "tropical and subtropical", which is
+the same shape as Colorado's Chapter W-7 and can decide a species off a listed family.
+
+The three rule lists are short. 12.6.2205 noncontrolled: eight mammals, four amphibians, two
+scorpions, hermit crabs, and no reptile at all. 12.6.2208 controlled: eighteen birds plus Anatidae,
+one shrimp, three fish, two mammals. 12.6.2215 prohibited: the one to read, because it names the
+SOUTHERN FLYING SQUIRREL, Glaucomys volans, at (4)(q).
+
+
+==== MCA § 87-5-702, definitions ====
+87-5-702 . Definitions. For purposes of this part, the following definitions apply: (1)
+"Controlled exotic wildlife" means species placed on the controlled exotic wildlife list under
+87-5-707 that may be imported, possessed, or sold only pursuant to commission and department rules
+and an authorization permit provided for in 87-5-705 (2). (2) "Domestic animal" means an animal
+that, through long association with humans, has been bred to a degree that has resulted in genetic
+changes affecting color, temperament, conformation, or other attributes of the species to an
+extent that makes the animal unique and distinguishable from wild individuals of the species and
+that is readily controllable if accidentally released into the wild. The term includes livestock,
+as defined in 81-2-702 , dogs, cats, rodents, Eurasian ferrets, and poultry. (3) "Exotic wildlife"
+means a wildlife species that is not native to Montana. (4) "Feral" means the appearance of an
+animal and any offspring that have escaped captivity and become wild. (5) "Importation" means the
+act of receiving, bringing or having brought, or shipping into the state for a person's temporary
+or permanent residence or domicile any wildlife from a location outside the state. (6)
+"Introduction" means the release from captivity or attempt to release from captivity, intentional
+or otherwise, wildlife from outside the state into the wild within the state. (7) "Native
+wildlife" means a species or subspecies of wildlife that historically occurred in Montana and that
+has not been introduced by humans or has not migrated into Montana as a result of human activity.
+(8) "Noncontrolled exotic wildlife" means animal species traditionally sold or kept as pets and
+includes animals listed in 87-5-706 or animals that are added to the list in 87-5-706 by
+commission rule. (9) "Possession" means to own or have control over an animal for personal use or
+resale. (10) "Prohibited exotic wildlife" means animal species placed on the list provided in
+87-5-704 (3)(a) that may not be imported, possessed, or sold. (11) "Transplantation" means the
+release of or attempt to release, intentional or otherwise, wildlife from one place within the
+state into another part of the state. (12) (a) "Wildlife" means any wild mammal, bird, reptile,
+amphibian, fish, mollusk, crustacean, or other wild animal or the egg, sperm, embryo, or offspring
+of the wild animal. (b) The term does not include domestic animals.
+
+==== MCA § 87-5-705, the white list bar and the permit fees ====
+87-5-705 . Regulation of exotic wildlife -- permit and renewal fees. (1) A person may not import
+into the state, possess, or sell any exotic wildlife unless: (a) the importation, possession, or
+sale of the exotic wildlife is allowed by law or commission rule; and (b) the person has obtained
+authorization for importation from the department of livestock pursuant to Title 81, chapter 2,
+part 7. (2) The department may issue a permit for authorizing the possession or sale of controlled
+exotic wildlife and make the permit available to persons who wish to import, possess, or sell
+controlled exotic wildlife, subject to rules of the commission and the department. (3) The
+department shall assess a fee of $125 to obtain or renew a permit to possess a controlled exotic
+wildlife species. The permit expires on February 28 of the 5th year following issuance. Renewal is
+contingent on submission of the permit fee and any required reporting of current inventory and
+changes to inventory during the preceding year. (4) The department shall assess a fee of $500 to
+obtain a permit to sell, breed, or exchange a controlled exotic wildlife species. The permit
+expires on February 28 of the 5th year following issuance. Renewal is contingent on submission of
+the permit fee and any required reporting of current inventory and changes to inventory during the
+preceding years.
+
+==== MCA § 87-5-706, the statutory noncontrolled list ====
+87-5-706 . Noncontrolled exotic wildlife authorized for possession or sale. (1) The following
+noncontrolled exotic wildlife may not be released or transplanted in the state but may be
+possessed or sold as pets in Montana without a permit: (a) tropical and subtropical birds in the
+order Passeriformes, including but not limited to birds in the families: (i) Sturnidae (mynahs);
+(ii) Ramphastidae (toucans, toucanettes); (iii) Fringillidae (siskins); (iv) Estrildidae
+(finches); (v) Emberizidae (cardinals); (vi) Ploceidae (weavers); (vii) Timaliidae (mesias);
+(viii) Viduinae (wydahs); (ix) Thraupidae (tanagers); (x) Zosteropidae (zosterops); (xi)
+Psittacidae (parrots); (xii) Loriidae (lories); and (xiii) Cacatuidae (cockatoos); (b) nonnative
+species in the subfamily Phaisianae, except: (i) chukar partridge (Alectoris chukar); (ii) gray
+(Hungarian) partridge (Perdix perdix); (iii) ring-necked pheasant (Phasianus colchicus); and (iv)
+turkey (Meleagris gallopavo); (c) all tropical fish, subtropical fish, marine fish, common
+goldfish (Carassius auratus), and koi (Cyprinus carpio) for use in residential and office
+aquariums; (d) unless otherwise regulated pursuant to 87-5-116 , all nonnative tropical and
+subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the
+families: (i) Boidae (boas); (ii) Bolyeriidae (Round Island Boas); (iii) Tropidophiidae (dwarf
+boas); (iv) Pythonidae (pythons); (v) Colubridae (modern snakes); (vi) Acrochordidae (file and
+elephant trunk snakes); (vii) Xenopeltidae (sunbeam snakes); (viii) Aniliidae (pipe snakes); (ix)
+Uropeltidae (shield-tailed snakes); (x) Anomalepididae (blind snakes); (xi) Leptotyphlopidae
+(blind snakes); and (xii) Typhlopidae (blind snakes); (e) unless otherwise regulated pursuant to
+87-5-116 , all nonnative tropical and subtropical species of nonvenomous lizards not on the
+controlled or prohibited lists, including but not limited to the following families or
+subfamilies: (i) Agamidae (chisel-teeth lizards); (ii) Amphisbaenidae (worm lizards); (iii)
+Anelytropsidae (limbless lizards); (iv) Anguidae (glass and alligator lizards); (v) Anniellidae
+(legless lizards); (vi) Chamaeleonidae (chameleons); (vii) Cordylidae (girdle-tailed lizards);
+(viii) Corytophanidae (casquehead lizards); (ix) Crotaphytidae (collared and leopard lizards); (x)
+Dibamidae (blind lizards); (xi) Eublepharidae (eyelid geckos); (xii) Feyliniidae (African snake
+skinks); (xiii) Gekkonidae (geckos); (xiv) Helodermatidae (beaded lizards and gila monsters); (xv)
+Iguanidae (iguanas); (xvi) Lacertidae (wall lizards); (xvii) Lanthanotidae (earless monitor);
+(xviii) Phrynosomatidae (earless, spiny, and horned lizards); (xix) Polychrotidae (anoles); (xx)
+Pygopodidae (snake lizards); (xxi) Scincidae (skinks); (xxii) Teiidae (whiptail); (xxiii)
+Tropiduridae (neotropical ground lizards); (xxiv) Varanidae (monitor lizard); (xxv) Xantusiidae
+(night lizards); and (xxvi) Xenosauridae (knob-scaled lizards); (f) unless otherwise regulated
+pursuant to 87-5-116 , all nonnative tropical and subtropical species of turtles with a carapace
+or shell length of more than 4 inches and not on the controlled or prohibited lists in the
+families: (i) Carettochelyidae (New Guinea softshell turtles); (ii) Chelidae (snake-necked
+turtles); (iii) Chelydridae (snapping turtles); (iv) Dermatemydidae (Central American river
+turtle); (v) Emydidae (pond turtles); (vi) Kinosternidae (mud turtles and musk turtles); (vii)
+Pelomedusidae (hidden-necked turtles); (viii) Platysternidae (big-headed turtle); (ix)
+Testudinidae (tortoises); and (x) Trionychidae (soft-shelled turtles); (g) unless otherwise
+regulated pursuant to 87-5-116 , all nonnative tropical and subtropical species of frogs and toads
+not on the controlled or prohibited lists in the families: (i) Atelopodidae (harlequin frogs);
+(ii) Bufonidae (true toads); (iii) Centrolenidae (glass frogs); (iv) Dendrobatidae (poison dart
+frogs); (v) Hylidae (tree frogs); (vi) Leptodactylidae (rain frogs); (vii) Microhylidae (narrow-
+mouthed toads); (viii) Pelobatidae (spadefoot toads); (ix) Pelodytidae (old world spadefoot
+toads); (x) Ranidae (true frogs, except bullfrogs, Rana catesbeiana); (xi) Rhacophoridae (old
+world tree frogs); and (xii) Rhinophrynidae (Mexican burrowing frog); (h) unless otherwise
+regulated pursuant to 87-5-116 , all nonnative tropical and subtropical species of limbless
+amphibians not on the controlled or prohibited lists in the families: (i) Caeciliidae
+(caecilians); (ii) Ichthyophiidae (fish caecilians); (iii) Rhinatrematidae (beaked caecilians);
+(iv) Scolecomorphidae (tropical caecilians); and (v) Uraeotyphlidae (Indian caecilians); and (i)
+unless otherwise regulated pursuant to 87-5-116 , all nonnative tropical and subtropical species
+of salamanders not on the controlled or prohibited lists in the families: (i) Ambystomatidae (mole
+salamanders); (ii) Amphiumidae (amphiumas); (iii) Cryptobranchidae (hellbenders); (iv)
+Dicamptodontidae (giant salamanders); (v) Hynobiidae (Asian salamanders); (vi) Plethodontidae
+(woodland salamanders); (vii) Proteidae (waterdogs); (viii) Salamandridae (newts, except for
+rough-skinned newt, Taricha granulosa); and (ix) Sirenidae (sirens). (2) The commission may by
+rule authorize the possession or sale of other species of noncontrolled exotic wildlife that are
+not listed in subsection (1) if it is determined that the other species present minimal disease,
+ecological, environmental, safety, or health risks.
+
+==== ARM 12.6.2201, definitions ====
+The following definitions apply to this subchapter: (1) "Condition" or "conditions" means specific
+requirements a person must abide by to receive or retain a permit. (2) "Controlled species" means
+a live, exotic wildlife species, subspecies, or hybrid of that species. (3) "Department" means the
+Montana Department of Fish, Wildlife and Parks. (4) "Exotic wildlife" means a wildlife species
+that is not native to Montana; foreign or introduced. (5) "Permit" means written authorization
+issued by the department to possess, sell, purchase, breed, or exchange a controlled or prohibited
+species in the state of Montana. (6) "Person" means any individual, corporation, association,
+firm, joint venture, partnership, municipality, school district or board, agency or political
+subdivision of the state or state-law-created special or other district. (7) "Prohibited species"
+means a live, exotic wildlife species, subspecies, or hybrid of that species, including viable
+embryos or gametes, that may not be possessed, sold, purchased, exchanged, or transported in
+Montana, except as provided in 87-5-709 , MCA, or this subchapter. (8) "Noncontrolled species"
+means a live, exotic wildlife species, subspecies, or hybrid of that species that may be
+possessed, sold, purchased or exchanged in the state without a permit, except as provided in this
+subchapter or in Montana statutes or federal statutes. A noncontrolled species may not be released
+into the wild unless authorized in writing by the department. This definition does not authorize
+the sale, possession, transportation, importation or exportation of a noncontrolled species in
+violation of any applicable federal or state statute or regulation or county or city ordinance.
+
+==== ARM 12.6.2205, noncontrolled species ====
+(1) The following mammals are classified as noncontrolled species: (a) African pygmy hedgehog -
+Atelerix albiventris and Atelerix algirus ; (b) Degu (bush-tailed rat) - Octodon degus; (c) Jungle
+cat - Felis chaus ; (d) Serval cat - Leptailurus serval ; (e) Sugar gliders - Petaurus breviceps ;
+(f) Two-toed sloth - Choloepus didoctylus ; (g) Wallaby (Bennets) - Macropus rufogriseus ; and (h)
+Wallaby (Tammar) - Macropus eugenii . (2) The following amphibians are classified as noncontrolled
+species: (a) Cameroon volcano frog - Xenopus amieti ; (b) Eritrea clawed frog - Xenopus clivii ;
+(c) Hyperoliidae family; and (d) Leptodactylidae family. (3) The following arachnids are
+classified as noncontrolled species: (a) Emperor scorpion - Pandinus imperator ; and (b) Tanzanian
+redclaw scorpion - Pandinus cavimanus . (4) The following crustaceans are classified as
+noncontrolled species: (a) Terrestrial hermit crabs - Coenobita sp .
+
+==== ARM 12.6.2208, controlled species ====
+(1) The following birds are classified as controlled species: (a) Barbary Falcon - Falco
+perigrinoides; (b) Black-Crowned Crane - Balearica pavonina; (c) Black-necked Crane - Grus
+nigricollis; (d) Blue Crane - Anthropoides paradiseus; (e) Brolga - Grus rubicunda; (f) Buff-
+banded Rail - Gallirallus philippensis; (g) Common Crane - Grus grus; (h) Demoiselle Crane -
+Anthropoides virgo; (i) Giant Wood Rail - Aramides ypecaha; (j) Grey Crowned Crane - Balearica
+regulorum; (k) Hooded Crane - Grus monacha; (l) Red-crowned Crane - Grus japonensis; (m) Sarus
+Crane - Grus antigone; (n) Siberian Crane - Grus leucogeranus; (o) Taita Falcon - Falco
+fasciinucha; (p) Wattled Crane - Grus carunculata; (q) White-breasted Waterhen - Amaurornis
+phoenicurus; (r) White-naped Crane - Grus vipio; and (s) exotic waterfowl in the family Anatidae.
+(2) The following crustaceans are classified as controlled species: (a) Pacific White Shrimp -
+Panaeus (Litopenaeus) vannamei. (3) The following fish are classified as controlled species: (a)
+coho salmon - Onocorhynchus kisutch; (b) goldfish - Carassius auratus (for use in outdoor ponds);
+and (c) koi - Cyprinus carpio (for use in outdoor ponds). (4) The following mammals are classified
+as controlled species: (a) Caracal cat - Caracal caracal; and (b) Wallaroo - Macropus robustus.
+
+==== ARM 12.6.2215, prohibited species ====
+(1) The following amphibians are classified as prohibited species: (a) African clawed frog -
+Xenopus laevis; and (b) North American bullfrog - Rana catesbeiana. (2) The following crustaceans
+are classified as prohibited species: (a) Rusty crayfish - Orconectes rusticus. (3) The following
+fish are classified as prohibited species: (a) Bighead carp - Hypophthalmichthys nobilis; (b)
+Black carp - Mylopharyngodon piceus; (c) Eurasian Ruffe - Gymnocephalus cernuus; (d) Grass carp -
+Ctenopharyngodon idella; (e) Round goby - Neogobius melanostomus; (f) Silver carp -
+Hypophthalmichthys molitrix; (g) Snakehead fish - genera Channa and Parachanna (29 species); (h)
+Walking catfish - Clarias batrachus; (i) White perch - Morone Americana; and (j) Zander (European
+pikeperch) - Sander lucioperca (4) The following mammals are classified as prohibited species: (a)
+African Soft Fur Rat/Natal Rat - Mastomys natalensis/Natal miltimammate mouse; (b) Aotidae Family
+(Night and Owl Monkeys); (c) Argali Sheep - Ovis ammon; (d) Atelidae Family (Howlers and Spider
+Monkeys); (e) Brush-tailed possum - Trichosurus vulpecula; (f) Callitrichidae Family (Marmosets
+and Tamarins); (g) Cebidae family (new world primates); (h) Cercopithecidae family (old world
+monkeys); (i) Hyaenidae family (hyenas); (j) Hylobatidae family (gibbons); (k) Natal Rat/African
+Soft Fur Rat - Natal miltimammate mouse/Mastomys natalensis; (l) Nutria - Myocastor coypus; (m)
+Pitheciidae Family (Titis and Saki Monkeys); (n) Pongidae family (apes); (o) Short-tailed opossum
+- Monodelphis domestica; (p) Small spotted genet - Genetta genetta; (q) Southern flying squirrel -
+Glaucomys volans; (r) Transcaspian urial sheep - Ovis aries vignei; and (s) Virginia opossum -
+Didelphis virginiana. (5) The following mollusks are classified as prohibited species: (a) New
+Zealand mudsnail - Potamopyrgus antipodarum; (b) Quagga mussel - Dreissena bugensis; and (c) Zebra
+mussel - Dreissena polymorpha. (6) The following reptiles are classified as prohibited: (a)
+African rock python - Python sebae; (b) Alligatoridae family; (c) Amethystine python - Morelia
+amethistina; (d) Boomslang - Dispholidus typus; (e) Burrowing asps (all species in family
+Atractaspidae); (f) Coral snakes (all species in family Elapidae); (g) Cobras (all species in
+family Elapidae); (h) Crocodylidae family; (i) Green Anaconda - Eunectes marinus; (j) Indian
+python (including the Burmese python) - Python molurus; (k) Kraits (all species in family
+Elapidae); (l) Mambas (all species in family Elapidae); (m) Pit vipers and true vipers (all
+species in family Viperidae except species indigenous to Montana); (n) Red-eared slider -
+Trachemys scripta elegans; and (o) Reticulated python - Python reticulatus. (7) The following
+birds are classified as prohibited: (a) California quail - Callipepla californica; and (b)
+Gambel's quail - Callipepla gambelii.

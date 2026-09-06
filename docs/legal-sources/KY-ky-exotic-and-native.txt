@@ -1,0 +1,208 @@
+SOURCE: Kentucky: 301 KAR 2:082 (exotic wildlife), 301 KAR 2:081 (native wildlife), KRS 150.010
+URL: https://apps.legislature.ky.gov/law/kar/titles/301/002/082/ and .../081/ and https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=55354
+FETCHED: 2026-09-05 (The KAR pages work with plain curl but carry the regulation TWICE, the engrossed version first and the pre-engrossment "alternate view" after the regulatory impact analysis, so slice the first copy. statute.aspx returns a PDF under an .aspx URL; find the id from https://apps.legislature.ky.gov/law/statutes/chapter.aspx?id=37729 rather than guessing, and KRS 150.010 is id=55354.)
+
+READ THIS FIRST. Kentucky splits by nativity and the split is total: 2:082 covers exotic wildlife,
+defined at § 1 as "wildlife species that have never naturally existed in the wild in Kentucky", and
+2:081 covers everything else. Neither reaches the other.
+
+On the exotic side there are only two possession bars, both in § 4: (1) potentially injurious
+species, thirty-two entries mostly birds and rodents, and (2) inherently dangerous species, twenty-
+two entries mostly big mammals plus crocodilians, helodermatids, the Komodo dragon and venomous
+snakes. Absence from both means possession is free. What absence does NOT mean is free importation:
+§ 2(1) requires a transportation permit for every shipment of exotic wildlife into Kentucky unless
+the species is on the § 7 permit-exempt list, which is twenty-four entries of conventional pets.
+
+On the native side the default is the other way. 2:081 § 2(3) requires a captive wildlife permit
+before acquiring, with two escapes: § 2(5), five or fewer of each native reptile or amphibian, which
+does not reach mammals, and § 2(9), captive-bred natives "legally imported or held in a temporary
+facility for ten (10) days or less". § 6 is the prohibited natives list, which is bats, bear,
+bobcat, cougar, otter, wild turkey, wolf, the six rabies vector species and three herps.
+
+The rabbit is written into both halves and is worth reading as a pair: § 4(1)(dd) of 2:082 prohibits
+a "European rabbit (Oryctolagus cuniculus) that morphologically resembles wild European rabbits",
+and § 7(9) exempts "Domesticated races of the European rabbit ... morphologically distinguishable
+from wild European rabbits". The test is what the animal looks like.
+
+For nativity, the Department's own reptile page is the checklist: it gives Kentucky ten lizards,
+five skinks, the Mediterranean house gecko, the eastern slender glass lizard, the northern fence
+lizard, the six-lined racerunner and the common wall lizard. No anole.
+https://fw.ky.gov/Wildlife/Pages/Reptiles.aspx
+
+
+==== KRS 150.010, definition of wildlife ====
+"Wildlife" means any normally undomesticated animal, alive or dead, including without limitations
+any wild mammal, bird, fish, reptile, amphibian, or other terrestrial or aquatic life, whether or
+not possessed in controlled environment, bred, hatched, or born in captivity and including any
+part, product, egg, or offspring thereof, protected or unprotected by this chapter.
+
+(The open catch-all reaches an insect. The head term, "normally undomesticated animal", is what
+puts a domestic rabbit outside before any list is reached.)
+
+==== 301 KAR 2:082 §§ 1 and 2, definition and transportation permits ====
+Definition. "Exotic wildlife" means wildlife species that have never naturally existed in the wild
+in Kentucky, including species introduced by man that have become naturalized. Section 2.
+Transportation Permits and Certificates of Veterinary Inspection. (1) Unless otherwise exempted or
+prohibited by this or another administrative regulation, a person shall apply for and obtain a
+valid transportation permit or permit authorization number from the department for all shipments
+of exotic wildlife prior to: (a) Receiving a shipment of wildlife from outside of Kentucky; (b)
+Importing exotic wildlife into Kentucky; or (c) Transporting exotic wildlife into Kentucky. (2) A
+copy of a valid transportation permit or permit authorization number shall accompany all shipments
+of wildlife into Kentucky. (3) An individual transportation permit shall be valid for one (1)
+shipment of wildlife. (4) An annual transportation permit shall be valid for multiple wildlife
+shipments for one (1) year from the date of issue. (5) All shipments of wildlife, except for
+amphibians and reptiles, shall be accompanied by a: (a) Certificate of veterinary inspection
+stating that the wildlife is free from symptoms of disease; or (b) Federal quarantine certificate.
+
+==== 301 KAR 2:082 § 4, the two prohibited lists ====
+Prohibited Species. (1) Except as established in Section 5 of this administrative regulation, a
+person shall not import, transport into Kentucky, or possess the following exotic wildlife that
+are considered potentially injurious to native ecosystems: (a) Baya weaver (Ploceus philippinus);
+(b) Blackbirds (Genus Agelaius), except native species; (c) Cape sparrow (Passer melanurus); (d)
+Cowbirds (Genus Molothrus), except native species; (e) Cuckoo (Family Cuculidae), except native
+species; (f) Dioch or red-billed quelea (Quelea quelea); (g) European blackbird (Turdus merula);
+(h) Fieldfare (Turdus pilaris); (i) Flying fox or fruit bat (Genus Pteropus); (j) Fox (Genus
+Cerdocyon, Genus Lycalopex, Genus Otocyon, Genus Urocyon, and Genus Vulpes); (k) Gambian giant
+pouched rat (Cricetomys gambianus); (l) Giant, marine, or cane toad (Rhinella marina); (m)
+Hawaiian rice bird or spotted munia (Lonchura punctulata);[ (n) Java sparrow (Padda oryzivora);
+(o) Madagascar weaver (Foudia madagascariensis); (p) Mistle thrush (Turdus viscivorus); (q) Monk
+or Quaker parakeet (Myiopsitta monachus); (r) Multimammate rat (Genus Mastomys); (s) Mute swan
+(Cygnus olor); (t) Nutria (Myocastor coypus); (u) Prairie dog (Cynomys spp.); (v) Raccoon dog
+(Nyctereutes procyonoides);[ (w) Sky lark (Alauda arvensis); (x) Song thrush (Turdus philomelus);
+(y) Starling (Family Sturnidae), including pink starlings or rosy pastors (Sturnus roseus), except
+for Indian Hill mynahs (Gracula religiosa); (z) Suricate or slender-tailed meerkat (Genus
+Suricata); (aa) Tongueless or African clawed frog (Xenopus laevis); (bb) Weaver finch (Genus
+Passer), except Passer domesticus; (cc) White eyes (Genus Zosterops); (dd) European rabbit
+(Oryctolagus cuniculus) that morphologically resembles wild European rabbits; (ee) Yellowhammer
+(Emberiza citrinella); or (ff) A member of the following families: 1. Suidae (pigs or hogs),
+except for domestic swine; 2. Viverridae (civets, genets, lingsangs, mongooses and fossas); or 3.
+Tayassuidae (peccaries and javelinas). (2) Except as established in Sections 5 and 6 of this
+administrative regulation, a person shall not import, transport, or possess the following
+inherently dangerous exotic wildlife: (a) Alligators or caimans (Family Alligatoridae); (b)
+African buffalo (Syncerus caffer); (c) Bears (Family Ursidae); (d) Cheetah (Acinonyx jubatus); (e)
+Clouded leopard (Neofelis nebulosa); (f) Crocodiles (Family Crocodylidae); (g) Elephants (Family
+Elephantidae); (h) Gavials (Family Gavialidae); (i) Gila monsters or beaded lizards (Family
+Helodermatidae); (j) Hippopotamus (Hippopotamus amphibius); (k) Honey badger or ratel (Mellivora
+capensis); (l) Hyenas (Family Hyaenidae), including all species except aardwolves (Proteles
+cristatus); (m) Komodo dragon (Varanus komodoensis); (n) Lions, jaguars, leopards, or tigers
+(Genus Panthera); (o) Lynx (Genus Lynx); (p) Old world badger (Meles meles); (q) Primates,
+nonhuman (Order Primates); (r) Rhinoceroses (Family Rhinocerotidae); (s) Snow leopard (Uncia
+uncia); (t) Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae,
+Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon); (u) Wolverine (Gulo
+gulo); or (v) Hybrids of a species listed in this subsection. (3) Except as established in
+subsection (1) of this section and Section 5 of this administrative regulation, a person may
+possess, but shall not import into or transport through Kentucky wild rabbits, hares, or pikas
+(Order Lagomorpha).
+
+==== 301 KAR 2:082 § 7, permit-exempt animals ====
+Permit-exempt Animals. The following exotic animals shall not require permits from the department
+for importation, transportation into Kentucky, or possession: (1) Alpaca (Vicugna pacos); (2)
+American bison (Bison bison); (3) Breeds and varieties of goats derived from the wild goat or
+bezoar (Capra hircus); (4) Camel (Camelus bactrianus and Camelus dromedarius); (5) Canary
+(Serinius canaria); (6) Chinchilla (Chinchilla laniger); (7) Cockatoo and cockatiel (family
+Cacatuidae); (8) Domesticated races of ducks and geese (family Anatidae) morphologically
+distinguishable from wild ducks or geese; (9) Domesticated races of the European rabbit
+(Oryctolagus cuniculus) morphologically distinguishable from wild European rabbits; (10)
+Domesticated races of mink (Mustela vison), if: (a) Adults are heavier than 1.15 kilograms; or (b)
+The fur color can be distinguished from wild mink; (11) Domesticated races of rats (Rattus
+norvegicus or Rattus rattus) or mice (Mus musculus); (12) Domesticated races of turkeys (Meleagris
+gallopavo) recognized by the American Poultry Association and the U.S. Department of Agriculture,
+but shall not include captive held or bred wild turkeys; (13) Domestic yak (Bos grunniens); (14)
+Gerbil (Meriones unguiculatus); (15) Guinea fowl (Numida meleagris); (16) Guinea pig (Cavia
+porcellus); (17) Hamster (Mesocricetus spp.); (18) Indian Hill mynah (Gracula religiosa); (19)
+Llama (Lama glama); (20) Parrot, lovebird, budgerigar, macaw, parakeet (except monk parakeet, M.
+monachus) (families Psittacidae, Psittaculidae, and Psittrichasiidae); (21) Peafowl (Pavo
+cristatus); (22) Pigeon (Columba domestica or Columba livia) or domesticated races of pigeons;
+(23) Ratite, as defined by KRS 247.870; and (24) Toucan (family Rhamphastidae).
+
+==== 301 KAR 2:081 §§ 1 and 2, definitions and taking and possessing native wildlife ====
+Definitions. (1) "Bred in captivity" or "captive bred" means wildlife, including eggs, born or
+otherwise produced in captivity from parents that mated or otherwise transferred gametes in
+captivity, if reproduction is sexual, or from parents that were in captivity when development of
+the progeny began, if development is asexual. (2) "Enhanced Rabies Surveillance Zone" means Bell,
+Boyd, Bracken, Carter, Clay, Elliot, Fleming, Floyd, Greenup, Harlan, Johnson, Knott, Knox,
+Laurel, Lawrence, Leslie, Letcher, Lewis, Martin, Mason, McCreary, Pike, Perry, Robertson, and
+Whitley counties. (3) "Native wildlife" means wildlife species that have historically existed,
+currently exist, or have naturally expanded their range: (a) In the wild into Kentucky; (b)
+Without introduction by humans; and (c) Regardless of: 1. Origin or location of an individual
+animal; and 2. Being captive-bred or taken from the wild. (4) "Rabies vector species" means a: (a)
+Coyote (Canis latrans); (b) Gray fox (Urocyon cinereoargenteus); (c) Raccoon (Procyon lotor); (d)
+Red fox (Vulpes vulpes); (e) Spotted skunk (Spilogale putorius); (f) Striped skunk (Mephitis
+mephitis); or (g) Any hybrid of paragraphs (a) through (f) of this subsection. Section 2. Taking
+and Possessing Native Wildlife. (1) A person shall not possess native wildlife that was not
+legally acquired. (2) For native wildlife obtained from the wild, a person shall not: (a) Buy; (b)
+Sell; (c) Offer to buy; (d) Offer to sell; or (e) Trade or barter. (3) Except as established in
+Sections 5(9) and 7(1) of this administrative regulation and subsections (4), (5), (6), and (9) of
+this section, a person holding native wildlife in captivity shall apply for and obtain the
+appropriate permit prior to acquiring wildlife. (4) Northern bobwhite. (a) A person may possess
+100 or fewer northern bobwhite without a captive wildlife permit, if the: 1. Birds are not
+propagated or sold; and 2. Person retains and possesses a receipt or proof of purchase. (b) A
+person possessing northern bobwhite for dog training areas, shooting areas, or a shoot-to-train
+season shall comply with all applicable requirements of 301 KAR 2:041. (c) Any confining facility
+shall comply with Sections 8 through 11 of this administrative regulation. (5) Amphibians and
+reptiles. (a) Five (5) or fewer individuals of each species of native reptile or amphibian may be
+taken year-round or possessed for personal use without a permit, except there shall be: 1. No
+limit on common snapping or softshell turtles, as established in 301 KAR 1:058; 2. A limit of
+fifteen (15) bullfrogs per night, during the bullfrog season, as established in 301 KAR 1:082; and
+3. A limit of twenty-five (25) dusky salamanders of the genus Desmognathus, as established in 301
+KAR 1:130. (b) There shall not be a limit on the number of individuals of each species possessed
+by a commercial or noncommercial captive wildlife permit holder, if the permit holder does not
+possess more than five (5) wild-caught individuals of each species of amphibian or reptile. (c) A
+captive wildlife permit shall not be required to hold reptiles with a color morphology that is
+distinctly different from the wild type of the same species of reptile. (6) A person with a valid
+falconry permit, as established in 301 KAR 2:195, shall not be required to possess a noncommercial
+captive wildlife permit or transportation permit for raptors held under the falconry permit. (7) A
+rabies vector species that is trapped in accordance with 301 KAR 2:251 shall be dispatched before
+being moved, unless immediately released at capture site, except that red foxes and coyotes
+trapped during the trapping season, as established in 301 KAR 2:251, may be: (a) Held for up to
+forty-eight (48) hours with a valid noncommercial captive wildlife permit only for the purpose of
+being transferred to a permitted foxhound training enclosure as established in 301 KAR 2:041; and
+(b) Transferred from the wild to a permitted foxhound training enclosure if the enclosure is
+located within the county of capture but shall not be transferred from one foxhound training
+enclosure to another. (8) A person shall not transport a living rabies vector species into or out
+of the Enhanced Rabies Surveillance Zone. (9) A captive wildlife permit shall not be required for
+captive-bred native wildlife legally imported or held in a temporary facility for ten (10) days or
+less. (10) A permit holder shall report all bites and exposure events, as established in KRS
+258.065, to the local county health department within twelve (12) hours. (11) If a native mammal
+in a permit holder's possession bites a person or a mammal shows symptoms of a rabies infection,
+the animal shall be dispatched immediately, as established in KRS 258.085(1)(c), and the permit
+holder shall submit its head for testing immediately to a laboratory approved by the Secretary for
+Health and Family Services to be tested for rabies, as established in 902 KAR 2:070, Section 5.
+(12) Department staff shall confiscate and dispatch any wild mammal that bites a person or shows
+symptoms of a rabies infection if the animal is not otherwise immediately dispatched pursuant to
+subsection (11) of this section.
+
+==== 301 KAR 2:081 § 3(1) and (2), the two captive wildlife permits ====
+Captive Wildlife Permits and Record Keeping. (1) Commercial captive wildlife permit. (a) A
+commercial captive wildlife permit shall be required for a person to: 1. Sell; 2. Offer to sell;
+3. Trade; 4. Barter; or 5. Profit in any way from captive native wildlife, except as authorized by
+Section 2(9) of this administrative regulation. (b) A commercial captive wildlife permit shall be
+renewable annually from the date of issue. (c) A commercial captive wildlife permit shall be valid
+for one (1) specific captive wildlife facility. (2) Noncommercial captive wildlife permit. (a) A
+noncommercial captive wildlife permit shall be required for a person possessing native wildlife,
+but not selling, offering to sell, trading, bartering, or profiting in any way from captive native
+wildlife. (b) A noncommercial captive wildlife permit shall be renewable three (3) years from the
+date of issue. (c) A noncommercial captive wildlife permit shall be valid for one (1) specific
+captive wildlife facility.
+
+==== 301 KAR 2:081 § 6, prohibited native species ====
+Prohibited Species. (1) Except as established in Sections 2(7) and 7 of this administrative
+regulation, 301 KAR 2:075, and 301 KAR 3:120, a person shall not import, transport into Kentucky,
+or possess: (a) Alligator snapping turtle (Macrochelys temminckii); (b) Bats of any species that
+are native to Kentucky, including: 1. Big Brown Bat (Eptesicus fuscus); 2. Eastern Red Bat
+(Lasiurus borealis); 3. Eastern Small-footed Myotis (Myotis leibii); 4. Evening Bat (Nycticeius
+humeralis); 5. Gray Bat (Myotis grisescens); 6. Hoary Bat (Lasiurus cinereus); 7. Indiana Bat
+(Myotis sodalis); 8. Little Brown Bat (Myotis lucifugus); 9. Northern Long-eared Bat (Myotis
+septentrionalis); 10. Rafinesque's Big-eared Bat (Corynorhinus rafinesquii); 11. Seminole Bat
+(Lasiurus seminolus); 12. Silver-haired Bat (Lasionycteris noctivagans); 13. Southeastern Myotis
+(Myotis austroriparius); 14. Tricolored Bat (Perimyotis subflavus); and 15. Virginia Big-eared Bat
+(Corynorhinus townsendii virginianus); (c) Black bear (Ursus americanus); (d) Bobcat (Lynx rufus);
+(e) Copperbelly water snake (Nerodia erythrogaster neglecta); (f) Cougar or mountain lion (Felis
+concolor); (g) Hellbender (Cryptobranchus alleganiensis); (h) Kirtland's Snake (Clonophis
+kirtlandii); (i) Otter (Lontra canadensis); (j) Rabies Vector Species: 1. Coyote (Canis latrans);
+2. Gray fox (Urocyon cinereoargenteus); 3. Raccoon (Procyon lotor); 4. Red fox (Vulpes vulpes); 5.
+Spotted skunk (Spilogale putorius); 6. Striped skunk (Mephitis mephitis); or 7. Any hybrid of
+rabies vector species. (k) Wild turkey (Meleagris gallopavo); or (l) Wolf (Canis lupus). (2)
+Except as established in Section 7 of this administrative regulation, a person may possess native
+wild rabbits of the Sylvilagus genus but shall not import or transport native wild rabbits of the
+Sylvilagus genus into Kentucky.

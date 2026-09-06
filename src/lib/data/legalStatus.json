@@ -1479,6 +1479,26 @@
       "title": "Wyo. Stat. § 23-1-101(a)(xiii), definition of wildlife",
       "url": "https://www.wyoleg.gov/statutes/compress/title23.pdf",
       "note": "A closed list of taxa: \"all wild mammals, birds, fish, amphibians, reptiles, crustaceans and mollusks, and wild bison designated by the Wyoming game and fish commission and the Wyoming livestock board within Wyoming\". No insect or arachnid is in it, which is what puts a terrestrial arthropod outside both Commission regulations. Chapter 69 repeats the same closed list at Section 2(c) for cold-blooded wildlife."
+    },
+    "ky-301-2-081": {
+      "title": "301 KAR 2:081, Transportation and holding of live native wildlife",
+      "url": "https://apps.legislature.ky.gov/law/kar/titles/301/002/081/",
+      "note": "The companion to 2:082 and the rule that reaches any Kentucky native. § 1(3) defines native wildlife as species that have historically existed, currently exist or have naturally expanded their range into Kentucky, \"regardless of ... origin or location of an individual animal\" and of \"being captive-bred or taken from the wild\", so captive breeding is no exit. § 2(3) then requires a captive wildlife permit before acquiring one, with a five-per-species free allowance for native reptiles and amphibians at § 2(5) and nothing comparable for mammals. § 3(2) is the noncommercial permit, § 4 the transportation permit, § 6 the prohibited natives."
+    },
+    "ky-krs-150-010": {
+      "title": "KRS 150.010, definitions for chapter",
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=55354",
+      "note": "Defines wildlife as \"any normally undomesticated animal, alive or dead, including without limitations any wild mammal, bird, fish, reptile, amphibian, or other terrestrial or aquatic life, whether or not possessed in controlled environment, bred, hatched, or born in captivity\". The open catch-all reaches an insect, and the head term, \"normally undomesticated animal\", is what puts a domestic rabbit outside before the exemption list is even reached."
+    },
+    "la-rs-56-8": {
+      "title": "La. R.S. 56:8, definitions",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=105616",
+      "note": "Two definitions decide most of Louisiana. Subsection (152): \"Wildlife means all species of wild vertebrates\", a closed definition that leaves every terrestrial invertebrate outside the Department of Wildlife and Fisheries. Subsection (151)(a)(i): game quadrupeds are \"wild deer, bears, squirrels, and wild rabbits\", which is what pulls a flying squirrel into the game breeder scheme and leaves a domestic rabbit out of it."
+    },
+    "la-76-v-107": {
+      "title": "LAC 76:V.107, Game Breeder's License",
+      "url": "https://www.doa.la.gov/media/ln5kb5vu/76.docx",
+      "note": "The rule that reaches a native Louisiana mammal kept as a pet. § 107(C)(2)(a): \"A game breeder's license must be issued before any game quadrupeds (deer, rabbits, squirrels, etc.) are obtained\", and § 107(C)(1)(a) bars taking them from the wild at all. § 107(B)(6) writes pen specifications for \"Squirrels (gray, fox, red, flying and others endemic to North America)\" by name, so the flying squirrel is expressly inside the scheme rather than caught by inference."
     }
   },
   "animals": {
@@ -18100,6 +18120,40 @@
           "permitFor": "personal",
           "note": "Wyoming is a closed-list state on the warm-blooded side and the southern flying squirrel is on none of the lists. It is not among the eighteen animals defined as Domestic at Ch. 10 § 2(i) or the twenty-four defined as Domesticated at § 2(j); it is not prohibited under § 11, whose only rodent entry is the order Rodentia from Africa; it is not a furbearer or a game bird under § 13; and § 16, the no-permit section, covers domestic and domesticated animals plus three classes of bird and no other mammal. So § 3 applies and § 13(d) is the route: \"A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.\" Recorded permit rather than banned because that clause is a grant of discretion rather than a bar, unlike Alaska, whose rule forbids issuing a pet permit at all. Wyoming's own flying squirrel is the northern, Glaucomys sabrinus; § 15 lets a Wyoming-caught nongame mammal be possessed without a permit while still requiring one to import the same animal.",
           "verifiedOn": "2026-09-05"
+        },
+        "KY": {
+          "status": "permit",
+          "sourceId": "ky-301-2-081",
+          "cite": "§ 2(3); § 3(2)(a)",
+          "quote": "Except as established in Sections 5(9) and 7(1) of this administrative regulation and subsections (4), (5), (6), and (9) of this section, a person holding native wildlife in captivity shall apply for and obtain the appropriate permit prior to acquiring wildlife.",
+          "permitFor": "personal",
+          "note": "The southern flying squirrel is a Kentucky native, so 301 KAR 2:082 does not reach it and 2:081 does. It is not on the § 6 prohibited natives list, which is bats, black bear, bobcat, cougar, otter, wild turkey, wolf, the rabies vector species and three herps, so a noncommercial captive wildlife permit under § 3(2)(a) is available to a private keeper and is required before acquiring the animal. Two conditions ride with it: § 2(2) bars buying or selling any native wildlife obtained from the wild, and § 5(6) limits a permit holder to a commercial permit holder, a gift, a legal trapping season or a legal out-of-state source under a transportation permit. The § 2(5) five-per-species free allowance is written for reptiles and amphibians only. § 2(9) says no captive wildlife permit is required \"for captive-bred native wildlife legally imported or held in a temporary facility for ten (10) days or less\", which on one reading would free an imported captive-bred squirrel outright; the ten-day clause reads more naturally as qualifying both limbs, so the permit is recorded as required.",
+          "verifiedOn": "2026-09-05"
+        },
+        "LA": {
+          "status": "permit",
+          "sourceId": "la-76-v-107",
+          "cite": "§ 107(B)(6); § 107(C)(1)(a) and (C)(2)(a)",
+          "quote": "A game breeder's license must be issued before any game quadrupeds (deer, rabbits, squirrels, etc.) are obtained.",
+          "note": "Louisiana names the animal. La. R.S. 56:8(151)(a)(i) makes squirrels game quadrupeds, and LAC 76:V.107(B)(6) writes pen specifications for \"Squirrels (gray, fox, red, flying and others endemic to North America)\": three feet by three by four for one animal, six more inches of length per additional animal, limbs and a nest box, plus a veterinary certificate that the animals show no symptoms of rabies, which the rule requires \"due to the inherent tendency of these animals to bite people\". The licence must be in hand before the animal is acquired, and § 107(C)(1)(a) bars taking a game quadruped from the wild at all, so a permitted animal has to be captive bred. Recorded permit rather than conditional because the licence is issued, inspected and held.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "Alaska is a clean list and Glaucomys volans is not on it. A flying squirrel is a mammal, so it is game under AS 16.05.940(19), § 92.029(a) then bars possessing or importing live game without a permit, and § 92.029(c) forbids the department from issuing that permit for a pet at all. The clean list does carry nine exotic mammals, from the chinchilla to the African pygmy hedgehog, so a mammal can get on it; the route is § 92.029(h), which requires clear and convincing evidence to the board. Alaska has its own flying squirrel, the northern, but that changes nothing here, because the bar runs on absence from the list rather than on nativity.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-arm-12-6-22",
+          "cite": "12.6.2215(4)(q); 12.6.2201(7)",
+          "quote": "The following mammals are classified as prohibited species: ... (q) Southern flying squirrel - Glaucomys volans",
+          "note": "Named outright, which makes Montana the only jurisdiction on this map to prohibit this animal by binomial. ARM 12.6.2201(7) defines a prohibited species as one that \"may not be possessed, sold, purchased, exchanged, or transported in Montana, except as provided in 87-5-709, MCA, or this subchapter\", and 87-5-709 is the exception for zoos, research and rehabilitation rather than for pets. The company it keeps on that list is telling: the Virginia opossum, the short-tailed opossum, the brush-tailed possum, nutria and the African soft fur rat, all animals Montana treats as escape and establishment risks rather than as dangerous ones. Montana has its own flying squirrel, the northern, and the prohibition is written for the southern species alone.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -20510,6 +20564,39 @@
           "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
           "note": "A bearded dragon is a reptile and appears on neither restricted list. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
           "verifiedOn": "2026-09-05"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4; § 2(1); § 7",
+          "quote": "Except as established in Section 5 of this administrative regulation, a person shall not import, transport into Kentucky, or possess the following exotic wildlife that are considered potentially injurious to native ecosystems",
+          "note": "A bearded dragon is exotic wildlife under § 1, having never naturally existed in the wild in Kentucky. Kentucky's only possession bars for an exotic are the two lists in § 4, the potentially injurious species at (1) and the inherently dangerous species at (2), and this animal is on neither. It is also not on the § 7 permit-exempt list, so a transportation permit under § 2(1) is needed to bring one into the state; possession itself is unrestricted once it is here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "quote": "The following nonnative reptile and amphibian species are prohibited from importation, possession, sale, attempting to sell, transfer, release, and reproduction in the state due to the potential risk of establishment in the wild and detrimental hazard to native wildlife and public health and safety",
+          "note": "A bearded dragon is a nonnative reptile and appears on neither list. Louisiana rewrote this rule in January 2025 and it is now one of the strictest reptile chapters in the country, but it works by two short named lists rather than by a general permit. § 101.K.2.a is the prohibited nonnative list, fourteen entries covering crocodilians, tegus, two monitors, the green iguana, the brown anole, the Burmese python, the brown tree snake, four groups of venomous snake and three amphibians. § 101.K.2.c is the restricted nonnative list, ten entries needing a permit. This animal is on neither, and § 101.K.1's restricted snake permit reaches only constrictors over eight feet and venomous snakes, so nothing attaches.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "A bearded dragon is a nonvenomous reptile, so it is on the clean list and needs no possession permit. Alaska's clean list is otherwise a roll call of individual species, so this one class-wide entry is the widest clearance in it, and it is what makes the strictest exotic pet state in the country an easy one for a lizard keeper. Subsection (e) is the only thing riding on it: a listed species that is endangered still needs a federal permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(e)(i)",
+          "quote": "unless otherwise regulated pursuant to 87-5-116, all nonnative tropical and subtropical species of nonvenomous lizards not on the controlled or prohibited lists, including but not limited to the following families or subfamilies",
+          "note": "The bearded dragon is an agamid, and Agamidae is the first family named in the clause. Montana runs a white list and this clause is where nonvenomous lizards are let onto it. The two lists it defers to are short: ARM 12.6.2208 classifies no reptile as controlled at all, and ARM 12.6.2215(6) prohibits fifteen reptiles, all of them crocodilians, large constrictors, venomous snakes or the red-eared slider. The clause is also open, \"including but not limited to\", so a family it does not name is not thereby excluded.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -20831,6 +20918,39 @@
           "cite": "Ch. 69 § 10(a)(i)",
           "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
           "note": "A leopard gecko is a reptile and appears on neither restricted list. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
+          "verifiedOn": "2026-09-05"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4; § 2(1); § 7",
+          "quote": "Except as established in Section 5 of this administrative regulation, a person shall not import, transport into Kentucky, or possess the following exotic wildlife that are considered potentially injurious to native ecosystems",
+          "note": "A leopard gecko is exotic wildlife under § 1 and appears on neither § 4 list. Kentucky restricts exactly two groups of lizard, the Helodermatidae at § 4(2)(i) and the Komodo dragon at § 4(2)(m). Kentucky's only possession bars for an exotic are the two lists in § 4, the potentially injurious species at (1) and the inherently dangerous species at (2), and this animal is on neither. It is also not on the § 7 permit-exempt list, so a transportation permit under § 2(1) is needed to bring one into the state; possession itself is unrestricted once it is here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "quote": "The following nonnative reptile and amphibian species are prohibited from importation, possession, sale, attempting to sell, transfer, release, and reproduction in the state due to the potential risk of establishment in the wild and detrimental hazard to native wildlife and public health and safety",
+          "note": "A leopard gecko is a nonnative reptile and appears on neither list. Louisiana rewrote this rule in January 2025 and it is now one of the strictest reptile chapters in the country, but it works by two short named lists rather than by a general permit. § 101.K.2.a is the prohibited nonnative list, fourteen entries covering crocodilians, tegus, two monitors, the green iguana, the brown anole, the Burmese python, the brown tree snake, four groups of venomous snake and three amphibians. § 101.K.2.c is the restricted nonnative list, ten entries needing a permit. This animal is on neither, and § 101.K.1's restricted snake permit reaches only constrictors over eight feet and venomous snakes, so nothing attaches.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "A leopard gecko is a nonvenomous reptile, so it is on the clean list and needs no possession permit. Alaska's clean list is otherwise a roll call of individual species, so this one class-wide entry is the widest clearance in it, and it is what makes the strictest exotic pet state in the country an easy one for a lizard keeper. Subsection (e) is the only thing riding on it: a listed species that is endangered still needs a federal permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(e)(xi)",
+          "quote": "unless otherwise regulated pursuant to 87-5-116, all nonnative tropical and subtropical species of nonvenomous lizards not on the controlled or prohibited lists, including but not limited to the following families or subfamilies",
+          "note": "Montana names Eublepharidae (eyelid geckos) separately from Gekkonidae, so the leopard gecko is inside the clause on current taxonomy rather than on a broad reading of a family name, which is how most states reach it. Montana runs a white list and this clause is where nonvenomous lizards are let onto it. The two lists it defers to are short: ARM 12.6.2208 classifies no reptile as controlled at all, and ARM 12.6.2215(6) prohibits fifteen reptiles, all of them crocodilians, large constrictors, venomous snakes or the red-eared slider. The clause is also open, \"including but not limited to\", so a family it does not name is not thereby excluded.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -21154,6 +21274,39 @@
           "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
           "note": "A crested gecko is a reptile and appears on neither restricted list. Its IUCN Vulnerable status does not engage Section 8(d), which reaches only wildlife listed as endangered or threatened at 50 CFR § 17.11. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
           "verifiedOn": "2026-09-05"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4; § 2(1); § 7",
+          "quote": "Except as established in Section 5 of this administrative regulation, a person shall not import, transport into Kentucky, or possess the following exotic wildlife that are considered potentially injurious to native ecosystems",
+          "note": "A crested gecko is exotic wildlife under § 1. Its IUCN Vulnerable listing plays no part: the only conservation bar in the regulation is § 3(8), which reaches federally endangered exotic species. Kentucky's only possession bars for an exotic are the two lists in § 4, the potentially injurious species at (1) and the inherently dangerous species at (2), and this animal is on neither. It is also not on the § 7 permit-exempt list, so a transportation permit under § 2(1) is needed to bring one into the state; possession itself is unrestricted once it is here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "quote": "The following nonnative reptile and amphibian species are prohibited from importation, possession, sale, attempting to sell, transfer, release, and reproduction in the state due to the potential risk of establishment in the wild and detrimental hazard to native wildlife and public health and safety",
+          "note": "A crested gecko is a nonnative reptile and appears on neither list. Its IUCN Vulnerable status does not engage § 101.J.5 or J.6, which reach federal injurious listings and the federal endangered and threatened list. Louisiana rewrote this rule in January 2025 and it is now one of the strictest reptile chapters in the country, but it works by two short named lists rather than by a general permit. § 101.K.2.a is the prohibited nonnative list, fourteen entries covering crocodilians, tegus, two monitors, the green iguana, the brown anole, the Burmese python, the brown tree snake, four groups of venomous snake and three amphibians. § 101.K.2.c is the restricted nonnative list, ten entries needing a permit. This animal is on neither, and § 101.K.1's restricted snake permit reaches only constrictors over eight feet and venomous snakes, so nothing attaches.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "A crested gecko is a nonvenomous reptile, so it is on the clean list. Its IUCN Vulnerable listing does not engage § 92.029(e), which reaches only species that are endangered and asks for a federal rather than a state permit. Alaska's clean list is otherwise a roll call of individual species, so this one class-wide entry is the widest clearance in it, and it is what makes the strictest exotic pet state in the country an easy one for a lizard keeper. Subsection (e) is the only thing riding on it: a listed species that is endangered still needs a federal permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(e)(xiii)",
+          "quote": "unless otherwise regulated pursuant to 87-5-116, all nonnative tropical and subtropical species of nonvenomous lizards not on the controlled or prohibited lists, including but not limited to the following families or subfamilies",
+          "note": "The crested gecko is a diplodactylid on current taxonomy and Montana names Gekkonidae, but the clause is expressly open, \"including but not limited to the following families or subfamilies\", so a gecko family it does not list is still a nonvenomous lizard within the head phrase. Montana runs a white list and this clause is where nonvenomous lizards are let onto it. The two lists it defers to are short: ARM 12.6.2208 classifies no reptile as controlled at all, and ARM 12.6.2215(6) prohibits fifteen reptiles, all of them crocodilians, large constrictors, venomous snakes or the red-eared slider. The clause is also open, \"including but not limited to\", so a family it does not name is not thereby excluded.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -21475,6 +21628,39 @@
           "cite": "Ch. 69 § 10(a)(i)",
           "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
           "note": "A blue-tongue skink is a reptile and appears on neither restricted list. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
+          "verifiedOn": "2026-09-05"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4; § 2(1); § 7",
+          "quote": "Except as established in Section 5 of this administrative regulation, a person shall not import, transport into Kentucky, or possess the following exotic wildlife that are considered potentially injurious to native ecosystems",
+          "note": "A blue-tongue skink is exotic wildlife under § 1 and appears on neither § 4 list. Kentucky's only possession bars for an exotic are the two lists in § 4, the potentially injurious species at (1) and the inherently dangerous species at (2), and this animal is on neither. It is also not on the § 7 permit-exempt list, so a transportation permit under § 2(1) is needed to bring one into the state; possession itself is unrestricted once it is here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "quote": "The following nonnative reptile and amphibian species are prohibited from importation, possession, sale, attempting to sell, transfer, release, and reproduction in the state due to the potential risk of establishment in the wild and detrimental hazard to native wildlife and public health and safety",
+          "note": "A blue-tongue skink is a nonnative reptile and appears on neither list. Louisiana rewrote this rule in January 2025 and it is now one of the strictest reptile chapters in the country, but it works by two short named lists rather than by a general permit. § 101.K.2.a is the prohibited nonnative list, fourteen entries covering crocodilians, tegus, two monitors, the green iguana, the brown anole, the Burmese python, the brown tree snake, four groups of venomous snake and three amphibians. § 101.K.2.c is the restricted nonnative list, ten entries needing a permit. This animal is on neither, and § 101.K.1's restricted snake permit reaches only constrictors over eight feet and venomous snakes, so nothing attaches.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "A blue-tongue skink is a nonvenomous reptile, so it is on the clean list and needs no possession permit. Alaska's clean list is otherwise a roll call of individual species, so this one class-wide entry is the widest clearance in it, and it is what makes the strictest exotic pet state in the country an easy one for a lizard keeper. Subsection (e) is the only thing riding on it: a listed species that is endangered still needs a federal permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(e)(xxi)",
+          "quote": "unless otherwise regulated pursuant to 87-5-116, all nonnative tropical and subtropical species of nonvenomous lizards not on the controlled or prohibited lists, including but not limited to the following families or subfamilies",
+          "note": "Tiliqua is a scincid and Scincidae is named. Montana runs a white list and this clause is where nonvenomous lizards are let onto it. The two lists it defers to are short: ARM 12.6.2208 classifies no reptile as controlled at all, and ARM 12.6.2215(6) prohibits fifteen reptiles, all of them crocodilians, large constrictors, venomous snakes or the red-eared slider. The clause is also open, \"including but not limited to\", so a family it does not name is not thereby excluded.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -21798,6 +21984,39 @@
           "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
           "note": "Jackson's chameleon is a reptile and appears on neither restricted list. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
           "verifiedOn": "2026-09-05"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4; § 2(1); § 7",
+          "quote": "Except as established in Section 5 of this administrative regulation, a person shall not import, transport into Kentucky, or possess the following exotic wildlife that are considered potentially injurious to native ecosystems",
+          "note": "Jackson's chameleon is exotic wildlife under § 1 and appears on neither § 4 list. Kentucky's only possession bars for an exotic are the two lists in § 4, the potentially injurious species at (1) and the inherently dangerous species at (2), and this animal is on neither. It is also not on the § 7 permit-exempt list, so a transportation permit under § 2(1) is needed to bring one into the state; possession itself is unrestricted once it is here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "quote": "The following nonnative reptile and amphibian species are prohibited from importation, possession, sale, attempting to sell, transfer, release, and reproduction in the state due to the potential risk of establishment in the wild and detrimental hazard to native wildlife and public health and safety",
+          "note": "Jackson's chameleon is a nonnative reptile and appears on neither list. Louisiana rewrote this rule in January 2025 and it is now one of the strictest reptile chapters in the country, but it works by two short named lists rather than by a general permit. § 101.K.2.a is the prohibited nonnative list, fourteen entries covering crocodilians, tegus, two monitors, the green iguana, the brown anole, the Burmese python, the brown tree snake, four groups of venomous snake and three amphibians. § 101.K.2.c is the restricted nonnative list, ten entries needing a permit. This animal is on neither, and § 101.K.1's restricted snake permit reaches only constrictors over eight feet and venomous snakes, so nothing attaches.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "Jackson's chameleon is a nonvenomous reptile, so it is on the clean list and needs no possession permit. Alaska's clean list is otherwise a roll call of individual species, so this one class-wide entry is the widest clearance in it, and it is what makes the strictest exotic pet state in the country an easy one for a lizard keeper. Subsection (e) is the only thing riding on it: a listed species that is endangered still needs a federal permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(e)(vi)",
+          "quote": "unless otherwise regulated pursuant to 87-5-116, all nonnative tropical and subtropical species of nonvenomous lizards not on the controlled or prohibited lists, including but not limited to the following families or subfamilies",
+          "note": "Chamaeleonidae is named, which is what already put the veiled chameleon on this map as legal in Montana; Jackson's chameleon sits in the same family. Montana runs a white list and this clause is where nonvenomous lizards are let onto it. The two lists it defers to are short: ARM 12.6.2208 classifies no reptile as controlled at all, and ARM 12.6.2215(6) prohibits fifteen reptiles, all of them crocodilians, large constrictors, venomous snakes or the red-eared slider. The clause is also open, \"including but not limited to\", so a family it does not name is not thereby excluded.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -22118,6 +22337,39 @@
           "cite": "Ch. 69 § 10(a)(i)",
           "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit and shall not require written authorization from the Chief of Fisheries. A certificate of veterinary inspection or a fish health and AIS inspection are not required. (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
           "note": "The green anole is a reptile, is not indigenous to Wyoming, and appears on neither restricted list. Section 9(c) is the clause nativity would engage, and it reaches indigenous reptiles only when they are imported for commercial use. Section 8, the no-permit-will-issue list, is federal injurious and endangered listings, aquatic invasive species, Xenopus, three frogs and toads, grass carp and mosquitofish. Section 9 requires a permit for venomous reptiles, for herptiles listed in Commission Regulation Chapter 52 that need a scientific or educational take permit, for Wyoming-indigenous herptiles imported for commercial use, and for aquatic turtles in ornamental ponds. Neither reaches this animal, so Section 10 applies and nothing at all is required, not even a veterinary certificate.",
+          "verifiedOn": "2026-09-05"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4; § 2(1); § 7",
+          "quote": "Except as established in Section 5 of this administrative regulation, a person shall not import, transport into Kentucky, or possess the following exotic wildlife that are considered potentially injurious to native ecosystems",
+          "note": "The green anole counts as exotic wildlife here, which is the part worth checking rather than assuming: the Department of Fish and Wildlife Resources gives Kentucky ten lizards, five skinks, the Mediterranean house gecko, the eastern slender glass lizard, the northern fence lizard, the six-lined racerunner and the common wall lizard, and no anole. So § 1 catches it, 301 KAR 2:081 does not, and neither § 4 list names it. Kentucky's only possession bars for an exotic are the two lists in § 4, the potentially injurious species at (1) and the inherently dangerous species at (2), and this animal is on neither. It is also not on the § 7 permit-exempt list, so a transportation permit under § 2(1) is needed to bring one into the state; possession itself is unrestricted once it is here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "LA": {
+          "status": "conditional",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.H; § 101.J.2",
+          "quote": "Green Anole Rule. It shall be illegal to sell or purchase any Green Anole (Anolis carolinesis) with a snout-vent length of less than 1 3/4 inches or an overall length of less than 5 inches with the tail intact.",
+          "note": "Louisiana is the only jurisdiction on this map with a rule written for the green anole by name, and it is a size rule on the transaction rather than a bar on keeping: below 1 3/4 inches snout to vent, or five inches overall, the animal may not be sold or bought. The anole is also a Louisiana native, listed without qualifier in the § 101.I checklist while the brown anole beside it is marked \"established nonnative\", so the native provisions at § 101.J apply too: a basic recreational fishing licence for \"collection and possession of native reptiles and amphibians for recreational purposes\", and a Reptile and Amphibian Wholesale/Retail Dealer's Licence for whoever sells it, \"regardless of the number of generations removed from the wild\". It is not on the § 101.J.4 conservation-concern list, so it may be taken from the wild.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "The green anole is a nonvenomous reptile, so it is on the clean list. Nativity does not come into it: AS 16.05.940(19) defines game as species \"found or introduced in the state\", and either way the class-wide reptile entry covers it. Alaska's clean list is otherwise a roll call of individual species, so this one class-wide entry is the widest clearance in it, and it is what makes the strictest exotic pet state in the country an easy one for a lizard keeper. Subsection (e) is the only thing riding on it: a listed species that is endangered still needs a federal permit.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(e)(xix)",
+          "quote": "unless otherwise regulated pursuant to 87-5-116, all nonnative tropical and subtropical species of nonvenomous lizards not on the controlled or prohibited lists, including but not limited to the following families or subfamilies: ... (xix) Polychrotidae (anoles)",
+          "note": "Montana names the anoles by family, using the pre-split Polychrotidae rather than Dactyloidae. The clause carries a geographic qualifier, \"tropical and subtropical\", and the green anole is the entry on this list where that is worth stopping over: its range runs from subtropical Florida and the Gulf coast up into warm temperate North Carolina and Tennessee. It reads as satisfied, because the family Montana chose is overwhelmingly neotropical and the green anole is its only North American member, so the entry would have nothing else to do. Worth re-checking if Fish, Wildlife and Parks ever publishes a determination, because Colorado shows what a range qualifier on an allow-list can do: there Boidae is listed and the rosy boa is still banned, off the same line that clears the boa constrictor.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
@@ -22442,6 +22694,39 @@
           "quote": "domesticated European rabbit (Oryctolagus cuniculus)",
           "note": "Wyoming runs two closed enumerations, Domestic Animals at Ch. 10 § 2(i) and Domesticated Animals at § 2(j), each introduced by \"For the purpose of this regulation, only the following animals are considered\" its category. The domesticated European rabbit is named in the second, so § 16(a) lets it be imported, possessed or transported with no permit and no certificate of veterinary inspection from the Department. The word \"domesticated\" is doing the same work it does in New Hampshire: a wild-type Oryctolagus is not what the list names.",
           "verifiedOn": "2026-09-05"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 7(9); § 4(1)(dd)",
+          "quote": "Domesticated races of the European rabbit (Oryctolagus cuniculus) morphologically distinguishable from wild European rabbits",
+          "note": "Kentucky splits the species in two and writes both halves. § 4(1)(dd) prohibits importing, transporting or possessing a \"European rabbit (Oryctolagus cuniculus) that morphologically resembles wild European rabbits\", and § 7(9) puts the domesticated races on the permit-exempt list, so a pet rabbit needs no transportation permit either. The test is what the animal looks like rather than where it came from, which is the same device Kentucky uses for mink, turkeys, ducks and geese on the same list.",
+          "verifiedOn": "2026-09-05"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-rs-56-8",
+          "cite": "§ 56:8(151)(a)(i); § 56:8(152)",
+          "quote": "Game quadrupeds: wild deer, bears, squirrels, and wild rabbits.",
+          "note": "Louisiana never mentions Oryctolagus. Its game quadrupeds are defined as a closed list ending in \"wild rabbits\", and the game breeder pen specifications at LAC 76:V.107(B)(7) spell the category out as \"Rabbits (cottontail, swamp and wild hares endemic to North America)\", which is the state's own Sylvilagus and Lepus rather than a domestic European rabbit. Nothing else reaches it: LAC 76:V.115 is three bears, two wolves, wolf-dog hybrids, all primates and six big cats.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "European rabbit   Oryctolagus cuniculus Var.",
+          "note": "Named on the clean list, and named as \"Var.\", the abbreviation Alaska uses through the list for a domesticated variety: the white rat, the white mouse, the pigeon, the chicken and the canary all carry it. So the entry is written for domestic stock rather than for wild-type Oryctolagus. Being on the list means the animal may be possessed, imported, exported, bought, sold or traded without a permit, but § 92.029(b) still bars releasing it into the wild.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-702(2) and (12)(b)",
+          "quote": "\"Domestic animal\" means an animal that, through long association with humans, has been bred to a degree that has resulted in genetic changes affecting color, temperament, conformation, or other attributes of the species to an extent that makes the animal unique and distinguishable from wild individuals of the species and that is readily controllable if accidentally released into the wild.",
+          "note": "Montana answers by definition rather than by list, and it has to, because the domestic rabbit appears on none of the three species lists and § 87-5-705(1) would otherwise bar an unlisted exotic outright, which is what bans the tarantula and the giant millipede here. § 87-5-702(12)(b) says wildlife \"does not include domestic animals\", and the general definition at (2) fits a domestic rabbit on its first limb. Its second limb, \"readily controllable if accidentally released into the wild\", is the soft spot, since the European rabbit is the textbook animal that is not, though the pet breeds are a poor bet in a Montana winter. The enumeration that follows, \"livestock, as defined in 81-2-702, dogs, cats, rodents, Eurasian ferrets, and poultry\", is inclusive rather than closed and does not name the rabbit, and 81-2-702(5) livestock does not either. What settles it in practice is the other agency: the Department of Livestock lists rabbits with the small rodents on its import requirements, asking for a health certificate and no import permit and no Fish, Wildlife and Parks permit at all.",
+          "localOverride": true,
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -22763,6 +23048,39 @@
           "cite": "Wyo. Stat. § 23-1-101(a)(xiii); Ch. 69 § 2(c)",
           "quote": "\"Wildlife\" means all wild mammals, birds, fish, amphibians, reptiles, crustaceans and mollusks, and wild bison designated by the Wyoming game and fish commission and the Wyoming livestock board within Wyoming.",
           "note": "Wyoming answers the invertebrate question at the level of the statute, the way Utah and Alaska do, and it answers it twice. The statutory definition is a closed list of taxa with no insect or arachnid in it, and Commission Regulation Chapter 69 then repeats the closure in its own words at § 2(c): \"Cold-Blooded Wildlife means all fish, amphibians, reptiles, mollusks, crustaceans, their viable gametes ... and any transgenic product or hybrid thereof\". Chapter 10 covers only warm-blooded wildlife. A Madagascar hissing cockroach is therefore outside the Game and Fish Department entirely rather than unlisted within it, which is the distinction that decides this cell in the opposite direction from New Hampshire, where the statute names invertebrates and the closed list then swallows them.",
+          "verifiedOn": "2026-09-05"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4; § 2(1); § 7",
+          "quote": "Except as established in Section 5 of this administrative regulation, a person shall not import, transport into Kentucky, or possess the following exotic wildlife that are considered potentially injurious to native ecosystems",
+          "note": "KRS 150.010 defines wildlife as \"any normally undomesticated animal ... or other terrestrial or aquatic life\", which reaches an insect, so a Madagascar hissing cockroach is exotic wildlife rather than outside the scheme. It is then answered by absence: § 4(1) is birds, rodents, foxes, a toad, a frog and three families, and § 4(2) is drawn entirely around vertebrates. Kentucky's only possession bars for an exotic are the two lists in § 4, the potentially injurious species at (1) and the inherently dangerous species at (2), and this animal is on neither. It is also not on the § 7 permit-exempt list, so a transportation permit under § 2(1) is needed to bring one into the state; possession itself is unrestricted once it is here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-rs-56-8",
+          "cite": "§ 56:8(152)",
+          "quote": "\"Wildlife\" means all species of wild vertebrates.",
+          "note": "Six words settle it. Louisiana defines wildlife as vertebrates only, so a terrestrial arthropod is outside the Department of Wildlife and Fisheries entirely rather than unlisted within it, which is the Utah and Wyoming shape. The rest of Title 76 confirms it by structure: Part V is wild quadrupeds and wild birds, Part VII is fish and other aquatic life, and Part XV is reptiles and amphibians. Nothing in the code covers a terrestrial invertebrate.",
+          "verifiedOn": "2026-09-05"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-as16-05-940",
+          "cite": "AS 16.05.940(19)",
+          "quote": "\"game\" means any species of bird, reptile, and mammal, including a feral domestic animal, found or introduced in the state, except domestic birds and mammals",
+          "note": "The strictest live-animal rule in the country reaches three classes and stops. An insect is not a bird, a reptile or a mammal, so it is not game, and 5 AAC 92.029 is a permit rule for live game, which means it never engages. Alaska is the state where the definition rather than the list does the work, and it works in the keeper's favour here in the same way it does for the axolotl and the tarantula.",
+          "verifiedOn": "2026-09-05"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-705(1); § 87-5-702(12)(a)",
+          "quote": "A person may not import into the state, possess, or sell any exotic wildlife unless: (a) the importation, possession, or sale of the exotic wildlife is allowed by law or commission rule",
+          "note": "Montana is a white list and an insect is inside it. § 87-5-702(12)(a) defines wildlife as \"any wild mammal, bird, reptile, amphibian, fish, mollusk, crustacean, or other wild animal\", and the catch-all reaches an arthropod; § 87-5-702(3) makes anything not native to Montana exotic wildlife; and § 87-5-705(1) then bars possessing it unless a law or commission rule allows it. Nothing does. The statutory noncontrolled list at § 87-5-706 runs birds, gallinaceous birds, fish, snakes, lizards, turtles, frogs, caecilians and salamanders and contains no invertebrate. ARM 12.6.2205 clears two scorpions and a hermit crab and no insect, ARM 12.6.2208 classifies one shrimp as controlled, and ARM 12.6.2215 prohibits a crayfish and three molluscs. So the cockroach falls where the tarantula and the giant millipede already sit on this map, banned by absence. Montana is the state where clearing the emperor scorpion by name and stopping there decides every other arthropod.",
+          "localOverride": true,
           "verifiedOn": "2026-09-05"
         }
       }
