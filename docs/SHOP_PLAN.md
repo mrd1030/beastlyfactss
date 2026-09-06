@@ -192,6 +192,20 @@ Nothing sold here should load from `public-files.gumroad.com`.
 - Run `scripts/check-images` or whatever the image check is called before
   committing, per CLAUDE.md. No `npm run build`.
 
+### Rebuilding one package's assets
+
+When a source is edited, in this order, from the repo root:
+
+```
+node "content/CAREPACKAGE Guides/source/_render.mjs" <id> "<Animal Name>" <version>
+node scripts/render-care-package-previews.mjs <id> cover 2 <the five pages in carePackageCopy.js>
+node scripts/build-care-package-sample.mjs <id>
+```
+
+Then the catalog: `pages`, `version`, `versionDate`, `samplePages` (printed by
+the sample script), `contents` (re-parse), and the Worker's `edition`. Then
+the bucket upload.
+
 ### 4. Stripe products and prices
 
 One product and one $8.99 one-time price per package, in the Sandbox first.
@@ -254,14 +268,25 @@ After live sales are confirmed:
 - `RELATED_ARTICLES` is unaffected. Product pages are not articles.
 - The 404 for an unknown package id already works.
 
-## After session 2
+## After session 3
 
-Everything a product page needs now exists for ten packages: hamster and the
-nine. They still sell on Gumroad because step 4 (a Sandbox price per package,
+Everything a product page needs now exists for all fourteen packages. The
+nine still sell on Gumroad, and the four others stay coming-soon, because step 4 (a Sandbox price per package,
 mirrored in the Worker) and step 5 (the PDF in the bucket) are not done for
 the nine, and step 6 says not to flip a package before both are. The pages
-were verified by flipping all ten in a scratch build and screenshotting them
-light and dark; nothing in the repo is flipped except the hamster.
+were verified by flipping all fourteen in a scratch build and screenshotting
+them light and dark; nothing in the repo is flipped except the hamster.
+
+Beyond the Gumroad skeleton, every page now has: the package's own cover page
+as a tilted book in the hero (`cover.jpg`, rendered from page 1), a lightbox
+that opens any carousel page at full size with the contents page always the
+first slide (paid pages are baked with the top third sharp and the rest
+blurred and captioned, so no full-resolution paid page exists under public/), a free sample PDF (`sample.pdf`, built by
+`scripts/build-care-package-sample.mjs`: a generated title page with the cover
+small in the middle, then the real pages 2 through the page before the first
+care guide page, the count recorded as `samplePages` in the catalog), and a
+strip of three related packages. Per package that is about 1.4MB of assets
+under `public/assets/care-packages/<id>/`, 20MB for the catalog.
 
 The Hamster bucket file is still v2.2. `rebuilt/Hamster_Care_Package_v2.3.pdf`
 is the edition the catalog and Worker now name, so upload it before the branch
@@ -279,7 +304,7 @@ Four sessions, in this order. Each one ends with a branch push.
 | --- | --- | --- |
 | 1 | **Done, 6 September 2026.** Step 1 on the Hamster: template, themes module, carousel, prerender-safe reveal. Buyable in the Sandbox | Opus 5 (or Fable 5.1), high effort. This is the design and architecture session; getting it right once saves it on the other thirteen |
 | 2 | **Done, 6 September 2026.** Step 2 for the nine Gumroad packages: copy rewritten against the rebuilt editions, contents parsed, themes written. Step 3 previews rendered for all nine | Sonnet 5, medium effort. Mechanical and repetitive, and cheap to rerun on a package if one comes out wrong |
-| 3 | Step 2 for ball-python, betta-fish, rabbit, tarantula (and cockatiel, cockatoo): copy written from the source HTML. Step 3 previews for those | Opus 5, medium effort. Writing sales copy that has to be true to a 40-page PDF is where the cheaper model drifts |
+| 3 | **Done, 6 September 2026** for ball-python, betta-fish, rabbit and tarantula: copy written from the source HTML, themes from the cover tokens, previews rendered. Cockatiel and cockatoo are not in the catalog and were not added | Opus 5, medium effort. Writing sales copy that has to be true to a 40-page PDF is where the cheaper model drifts |
 | 4 | Steps 4 to 6: Stripe prices, Worker mirror, flip each package, test each purchase. Go-live checklist | Sonnet 5, medium effort, with you at the keyboard for the service role key and the dashboard steps |
 
 Steps 5, 7 and the Gumroad retirement are yours, on a local machine, because

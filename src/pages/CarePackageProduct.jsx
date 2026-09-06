@@ -287,7 +287,7 @@ export default function CarePackageProduct() {
             </div>
             <div className="cp-reveal">
               <CarePackagePreviewCarousel packageId={pkg.id} packageName={pkg.name} previews={previews} />
-              <p className="cp-muted text-sm mt-6 text-center">Click any page to read it at full size.</p>
+              <p className="cp-muted text-sm mt-6 text-center">Click a page to see it at full size. The contents page is complete; the others fade out where the paid content starts.</p>
               {sampleHref && (
                 <div className="cp-card rounded-2xl p-5 mt-6 flex flex-wrap items-center justify-between gap-4">
                   <div>

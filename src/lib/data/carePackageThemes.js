@@ -353,6 +353,134 @@ export const CARE_PACKAGE_THEMES = {
     pattern: 'radial-gradient(circle at 0 0, transparent 13px, rgba(156, 174, 124, 0.10) 14px, rgba(156, 174, 124, 0.10) 15px, transparent 16px)',
     patternSize: '36px 36px',
   },
+  // The four below never had a Gumroad listing. Their palettes are the cover
+  // token blocks in care-packages/assets/package.css, the same skins their
+  // PDF covers wear: pineclay, blackwater, meadow and forestfloor.
+
+  // Pine clay: red clay and dry pine, hotter than the default earth.
+  'ball-python': {
+    light: {
+      'hero-from': '#351f18', 'hero-via': '#452a20', 'hero-to': '#6a3a28',
+      'hero-ink': '#f4eadb', 'hero-eyebrow': '#e4cdc0',
+      'hero-button-bg': '#d5703f', 'hero-button-ink': '#ffffff',
+      glow: '213, 112, 63',
+      ground: '#faf3ec', ink: '#251511', muted: '#6e4a3a',
+      accent: '#c25f30', 'accent-strong': '#a54c24', 'accent-ink': '#ffffff',
+      'accent-soft': '#fbe9df', 'accent-soft-border': '#efcbb8',
+      'card-bg': '#ffffff', 'card-border': '#f0dccf',
+      'panel-bg': '#251511', 'panel-ink': '#f4eadb', 'panel-muted': '#d0bcb0',
+      'cta-bg': '#d5703f', 'cta-ink': '#ffffff',
+    },
+    dark: {
+      'hero-from': '#1a0f0b', 'hero-via': '#251511', 'hero-to': '#452a20',
+      'hero-ink': '#f4eadb', 'hero-eyebrow': '#e4cdc0',
+      'hero-button-bg': '#d5703f', 'hero-button-ink': '#ffffff',
+      glow: '213, 112, 63',
+      ground: '#1a0f0b', ink: '#e6d5c9', muted: '#b89e90',
+      accent: '#e08a5c', 'accent-strong': '#eaa17c', 'accent-ink': '#251511',
+      'accent-soft': '#351f18', 'accent-soft-border': '#5a3427',
+      'card-bg': '#251511', 'card-border': '#5a3427',
+      'panel-bg': '#0f0806', 'panel-ink': '#f4eadb', 'panel-muted': '#c4ada0',
+      'cta-bg': '#d5703f', 'cta-ink': '#ffffff',
+    },
+    motion: { eyebrowIcon: '🐍', eyebrowMotion: 'cp-sway 3.6s ease-in-out infinite', coverMotion: 'cp-rise 4s ease-in-out infinite' },
+    pattern: 'radial-gradient(circle at 0 0, transparent 11px, rgba(228, 205, 192, 0.10) 12px, rgba(228, 205, 192, 0.10) 13px, transparent 14px)',
+    patternSize: '30px 30px',
+  },
+
+  // Blackwater: deep teal, for the fish. Ripple rings on the hero.
+  'betta-fish': {
+    light: {
+      'hero-from': '#123039', 'hero-via': '#1a3d48', 'hero-to': '#24565f',
+      'hero-ink': '#eaf3f5', 'hero-eyebrow': '#7fd3e0',
+      'hero-button-bg': '#4fbccf', 'hero-button-ink': '#0a1d23',
+      glow: '79, 188, 207',
+      ground: '#f1f7f8', ink: '#0a1d23', muted: '#3b5f68',
+      accent: '#1e8a9c', 'accent-strong': '#166d7c', 'accent-ink': '#ffffff',
+      'accent-soft': '#e3f2f5', 'accent-soft-border': '#b9dde4',
+      'card-bg': '#ffffff', 'card-border': '#d8e8ec',
+      'panel-bg': '#0a1d23', 'panel-ink': '#eaf3f5', 'panel-muted': '#b6cdd4',
+      'cta-bg': '#4fbccf', 'cta-ink': '#0a1d23',
+    },
+    dark: {
+      'hero-from': '#0a1d23', 'hero-via': '#123039', 'hero-to': '#1a3d48',
+      'hero-ink': '#eaf3f5', 'hero-eyebrow': '#7fd3e0',
+      'hero-button-bg': '#4fbccf', 'hero-button-ink': '#0a1d23',
+      glow: '79, 188, 207',
+      ground: '#0a1d23', ink: '#dfeef1', muted: '#9ab9c0',
+      accent: '#4fbccf', 'accent-strong': '#7fd3e0', 'accent-ink': '#0a1d23',
+      'accent-soft': '#123039', 'accent-soft-border': '#24565f',
+      'card-bg': '#123039', 'card-border': '#24565f',
+      'panel-bg': '#050f13', 'panel-ink': '#eaf3f5', 'panel-muted': '#a9c3ca',
+      'cta-bg': '#4fbccf', 'cta-ink': '#0a1d23',
+    },
+    motion: { eyebrowIcon: '🐠', eyebrowMotion: 'cp-wiggle 2.4s ease-in-out infinite', coverMotion: 'cp-rise 3.6s ease-in-out infinite' },
+    pattern: 'radial-gradient(circle at 20px 20px, transparent 16px, rgba(127, 211, 224, 0.09) 17px, rgba(127, 211, 224, 0.09) 18px, transparent 19px)',
+    patternSize: '40px 40px',
+  },
+
+  // Meadow: deep moss and hay, for the grazing herbivores. Hay lines on the hero.
+  rabbit: {
+    light: {
+      'hero-from': '#242c1d', 'hero-via': '#303a26', 'hero-to': '#46532f',
+      'hero-ink': '#eef1e4', 'hero-eyebrow': '#c6db8a',
+      'hero-button-bg': '#a9c266', 'hero-button-ink': '#171d13',
+      glow: '169, 194, 102',
+      ground: '#f7f8f0', ink: '#171d13', muted: '#55603f',
+      accent: '#6f8a2e', 'accent-strong': '#58701f', 'accent-ink': '#ffffff',
+      'accent-soft': '#eef4dc', 'accent-soft-border': '#d3e0ad',
+      'card-bg': '#ffffff', 'card-border': '#e5e9d6',
+      'panel-bg': '#171d13', 'panel-ink': '#eef1e4', 'panel-muted': '#c2ccb3',
+      'cta-bg': '#a9c266', 'cta-ink': '#171d13',
+    },
+    dark: {
+      'hero-from': '#10150c', 'hero-via': '#171d13', 'hero-to': '#303a26',
+      'hero-ink': '#eef1e4', 'hero-eyebrow': '#c6db8a',
+      'hero-button-bg': '#a9c266', 'hero-button-ink': '#171d13',
+      glow: '169, 194, 102',
+      ground: '#10150c', ink: '#e3e8d4', muted: '#a8b394',
+      accent: '#a9c266', 'accent-strong': '#c6db8a', 'accent-ink': '#171d13',
+      'accent-soft': '#242c1d', 'accent-soft-border': '#46532f',
+      'card-bg': '#171d13', 'card-border': '#46532f',
+      'panel-bg': '#080b06', 'panel-ink': '#eef1e4', 'panel-muted': '#b5c0a4',
+      'cta-bg': '#a9c266', 'cta-ink': '#171d13',
+    },
+    motion: { eyebrowIcon: '🐰', eyebrowMotion: 'cp-bob 1.6s ease-in-out infinite', coverMotion: 'cp-rise 3.4s ease-in-out infinite' },
+    pattern: 'repeating-linear-gradient(135deg, rgba(198, 219, 138, 0.07) 0 2px, transparent 2px 14px)',
+    patternSize: 'auto',
+  },
+
+  // Forest floor: the near-black of leaf litter, for the inverts. A slow crawl.
+  tarantula: {
+    light: {
+      'hero-from': '#1f1c23', 'hero-via': '#2c2830', 'hero-to': '#443c4a',
+      'hero-ink': '#ede6ea', 'hero-eyebrow': '#e3a27f',
+      'hero-button-bg': '#cb7c4f', 'hero-button-ink': '#ffffff',
+      glow: '203, 124, 79',
+      ground: '#f5f2f4', ink: '#141216', muted: '#5c5462',
+      accent: '#b8653a', 'accent-strong': '#9a5230', 'accent-ink': '#ffffff',
+      'accent-soft': '#f8e9e0', 'accent-soft-border': '#ebcbb8',
+      'card-bg': '#ffffff', 'card-border': '#e6e0e5',
+      'panel-bg': '#141216', 'panel-ink': '#ede6ea', 'panel-muted': '#c0b8bf',
+      'cta-bg': '#cb7c4f', 'cta-ink': '#ffffff',
+    },
+    dark: {
+      'hero-from': '#0e0c10', 'hero-via': '#141216', 'hero-to': '#2c2830',
+      'hero-ink': '#ede6ea', 'hero-eyebrow': '#e3a27f',
+      'hero-button-bg': '#cb7c4f', 'hero-button-ink': '#ffffff',
+      glow: '203, 124, 79',
+      ground: '#0e0c10', ink: '#e3dbe0', muted: '#a89fa7',
+      accent: '#e39468', 'accent-strong': '#eeae8b', 'accent-ink': '#141216',
+      'accent-soft': '#1f1c23', 'accent-soft-border': '#443c4a',
+      'card-bg': '#1f1c23', 'card-border': '#443c4a',
+      'panel-bg': '#070609', 'panel-ink': '#ede6ea', 'panel-muted': '#b3aab2',
+      'cta-bg': '#cb7c4f', 'cta-ink': '#ffffff',
+    },
+    motion: { eyebrowIcon: '🕷️', eyebrowMotion: 'cp-drift 3.2s ease-in-out infinite', coverMotion: 'cp-rise 4.2s ease-in-out infinite' },
+    pattern: 'radial-gradient(circle at 1px 1px, rgba(227, 162, 127, 0.10) 1.5px, transparent 2px)',
+    patternSize: '22px 22px',
+  },
+
 };
 
 const FALLBACK_ID = 'hamster';

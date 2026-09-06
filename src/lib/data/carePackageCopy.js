@@ -19,7 +19,10 @@
 //                    public/assets/care-packages/<id>/page-<N>.jpg. `page` is
 //                    the PDF's own page number, and `alt` says what is on it.
 //                    Page 2, the contents page, is always first: it is the
-//                    one page that shows a buyer everything they are getting
+//                    one page that shows a buyer everything they are getting.
+//                    Pages from the first care guide page onward are baked
+//                    with a blur below the top third, so pick pages whose
+//                    title and opening make the case on their own
 //   whoFor           three lines
 //   whatNot          three lines
 //
@@ -515,6 +518,194 @@ export const CARE_PACKAGE_COPY = {
     ],
     whatNot: [
       'Not a substitute for a reptile-experienced veterinarian',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  // The four below never had a Gumroad listing. Written from the source HTML:
+  // the cover, "How to use this package", the quick profile, and the page
+  // titles, so every claim is a page in the file.
+
+  'ball-python': {
+    hook: 'Every heat source on a thermostat. Everything else follows.',
+    heroParagraph:
+      'A 34-page printable manual with enclosure and heat, the humidity range that decides everything, a prey chart and thawing method, the seven reasons a ball python stops eating, six health pages, and the printable owner tools.',
+    heroTicks: ['34 pages, print or view', 'Beginner to intermediate', 'No external links inside the PDF'],
+    roulette: [
+      'A heat mat running bare, with no thermostat in sight',
+      'Humidity ranges that swing 20 points between care sheets',
+      'A snake that refuses food, and a forum that says it is dying',
+      'Scale rot and respiratory infection nobody described until they were advanced',
+    ],
+    answers: [
+      'Every heat source through a thermostat, with where the probe goes and why',
+      'The humidity range that decides everything, and the substrate that holds it',
+      'The seven reasons a ball python stops eating, and the one that is illness',
+      'Respiratory infection, scale rot, mouth rot, mites and burns, each described before it is advanced',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'Housing and heat', line: 'Enclosure, temperature, humidity and lighting, thermostats, probes and heat sources, substrate and furnishings.' },
+      { emoji: '🐭', title: 'Prey and feeding', line: 'Feeding by age, a full prey chart and the never-feed list, thawing, presentation and refusals.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Respiratory infection and scale rot, mouth rot, mites and thermal burns, parasites, regurgitation, obesity and IBD.' },
+      { emoji: '🐍', title: 'Shedding and behavior', line: 'Shedding, refusal and defensive behavior, and reading poop and keeping a ball python hydrated.' },
+      { emoji: '🤲', title: 'Handling, first days and eggs', line: 'Handling and the first days, common mistakes and enrichment, and females, eggs and egg binding.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The pages that stop the guessing.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 6, alt: 'Temperature, humidity and lighting' },
+      { page: 11, alt: 'Prey chart and the never-feed list' },
+      { page: 16, alt: 'Respiratory infection and scale rot' },
+      { page: 22, alt: 'Emergency and quick targets card' },
+      { page: 25, alt: 'Symptom quick reference table' },
+    ],
+    whoFor: [
+      'New ball python owners buying the enclosure before the snake',
+      'Keepers whose snake has stopped eating and want the seven reasons in order',
+      'Anyone who wants the setup audited against real targets rather than a forum average',
+    ],
+    whatNot: [
+      'Not a substitute for a reptile-experienced veterinarian',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  'betta-fish': {
+    hook: 'The tank is cycled before the fish goes in. Everything else is detail.',
+    heroParagraph:
+      'A 37-page printable manual with tank, heater and lid, a fishless cycling walkthrough, the water numbers that actually matter, feeding without overfeeding, five health pages with dosing limits, and a blackout plan.',
+    heroTicks: ['37 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A bowl on a desk, room temperature, no filter',
+      '"Add the fish and the tank will cycle itself"',
+      'Fin rot treated with whatever the pet shop had on the shelf',
+      'Flakes twice a day, and a bloated betta by month two',
+    ],
+    answers: [
+      '5 gallons minimum, heated, filtered, cycled and lidded, with the reason for each',
+      'A fishless cycling walkthrough, step by step, started while the fish is still in the shop',
+      'Fin rot, ich, velvet and columnaris, with dosing and duration limits',
+      'A pellet staple, a feeding schedule, and why a betta stops eating',
+    ],
+    inside: [
+      { emoji: '🪣', title: 'Tank, heater and lid', line: 'Tank size, the heater and the lid, and the temperature held steady, never room temperature.' },
+      { emoji: '💧', title: 'The nitrogen cycle', line: 'Filtration and the nitrogen cycle, fishless cycling step by step, water quality and testing, water changes and keeping the cycle.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Fin rot and ich, velvet and columnaris, swim bladder, dropsy and mycobacteriosis, and finding a vet.' },
+      { emoji: '🥣', title: 'Diet', line: 'The feeding schedule, why a betta stops eating, the food chart and the never-feed list.' },
+      { emoji: '🐟', title: 'Behavior and tankmates', line: 'Reading a healthy betta, stress signals and behavior, tankmates, and enrichment from the research.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist and water targets, emergency card, budget and shopping list, first 30 days, symptom reference, blackout plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The pages that keep the water at zero.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 7, alt: 'Fishless cycling, step by step' },
+      { page: 8, alt: 'Water quality and testing' },
+      { page: 18, alt: 'Fin rot and ich' },
+      { page: 24, alt: 'Emergency and quick targets card' },
+      { page: 27, alt: 'Symptom quick reference table' },
+    ],
+    whoFor: [
+      'New betta owners who have not bought the tank yet, which is the right time',
+      'Keepers with a bowl or an unheated tank who want to fix it this week',
+      'Anyone whose betta looks unwell and wants to test the water before medicating',
+    ],
+    whatNot: [
+      'Not a substitute for an aquatic-experienced veterinarian',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  rabbit: {
+    hook: 'Real space, unlimited hay, and GI stasis caught early.',
+    heroParagraph:
+      'A 40-page printable manual with the space standard the pet aisle ignores, the hay-first diet that prevents most of what goes wrong, three pages on GI stasis, bonding a pair, why spaying is not optional, and the printable owner tools.',
+    heroTicks: ['40 pages, print or view', 'Beginner to intermediate', 'No external links inside the PDF'],
+    roulette: [
+      'A hutch a fraction of the size a rabbit needs',
+      'Pellets as the meal and hay as the bedding',
+      'A rabbit off its food, and a plan to see how it looks tomorrow',
+      'An unspayed female and a cancer risk nobody mentioned',
+    ],
+    answers: [
+      '8 square feet of enclosure plus 24 of exercise, 5 hours a day, in feet and metres',
+      'Grass hay as 80 to 85 percent of the diet, unlimited, with greens and pellets by life stage',
+      'GI stasis on three pages, with the 8 to 12 hour rule that makes it an emergency and not a wait-and-see',
+      'Spay and neuter explained with the evidence, alongside bonding a companion',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'Housing and space', line: 'Housing and space, flooring, litter training and rabbit-proofing, indoors, outdoors and temperature.' },
+      { emoji: '🌾', title: 'Diet: hay first', line: 'Hay first, greens, pellets and the never-feed list, and feeding by life stage.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'GI stasis on three pages, dental disease, flystrike and snuffles, E. cuniculi, sore hocks, bladder sludge and RHDV2.' },
+      { emoji: '🤲', title: 'Handling and trust', line: 'Picking a rabbit up, building trust and reading a rabbit, common mistakes, and enrichment from the research.' },
+      { emoji: '💞', title: 'Bonding and neutering', line: 'Bonding and companionship, spay and neuter and why it is not optional, grooming, nails and molting.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, droppings reference, blackout plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The pages that catch it early.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 5, alt: 'Housing and space' },
+      { page: 8, alt: 'Diet: hay first' },
+      { page: 18, alt: 'GI stasis: recognizing it' },
+      { page: 27, alt: 'Emergency and quick targets card' },
+      { page: 30, alt: 'Symptom quick reference table' },
+    ],
+    whoFor: [
+      'New rabbit owners before the hutch and before the rabbit',
+      'Keepers who want a bonded pair and a plan to get there',
+      'Anyone who wants the emergency card on the wall and the 8 to 12 hour rule in their head',
+    ],
+    whatNot: [
+      'Not a substitute for a rabbit-savvy veterinarian',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  tarantula: {
+    hook: 'Keep it low, keep the water dish full, and leave it alone.',
+    heroParagraph:
+      'A 44-page printable manual with an enclosure built low so a fall cannot kill, substrate depth by species type, the water that prevents the most common cause of death, molting start to finish, a safe rehousing method, and where tarantulas are banned.',
+    heroTicks: ['44 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A tall glass enclosure and a heavy-bodied spider with somewhere to fall from',
+      'A spider that has not eaten in six weeks, and an owner sure it is dying',
+      'A molt that looks like death, and a hand that reaches in to check',
+      'Urticating hairs in an eye, and advice to flush it',
+    ],
+    answers: [
+      'Enclosure shape, size and the lid, floor width sized to leg span and height kept low',
+      'Why a tarantula stops eating: the fasting that is normal against the dehydration that is not',
+      'Molting on two pages, the cycle, and what to do and never do',
+      'Urticating hairs, bites and your own safety, with the first aid clinical sources actually describe',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'Enclosure and substrate', line: 'Enclosure shape, size and the lid, substrate, hide and furnishing by type, temperature, humidity and ventilation.' },
+      { emoji: '💧', title: 'Water and feeding', line: 'Water and what actually kills tarantulas, feeding by life stage, the prey chart and the never-feed list, why a tarantula stops eating.' },
+      { emoji: '🕸️', title: 'Molting and rehousing', line: 'Molting, the cycle and what to do and never do, and rehousing, when and how to prepare and the method.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Dehydration and falls, molt complications, mites and mold, nematodes, DKS and pesticides, and what is not a red flag.' },
+      { emoji: '🚫', title: 'Handling and the law', line: 'Why the answer to handling is no, what interacting actually looks like, urticating hairs and bites, and where tarantulas are not legal.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, blackout plan, pet-sitter sheet, and the molt and maintenance logs.' },
+    ],
+    previewHeadline: 'The pages that keep a spider off the floor.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 6, alt: 'Enclosure: shape, size and the lid' },
+      { page: 9, alt: 'Water, and what actually kills tarantulas' },
+      { page: 14, alt: 'Molting: what to do and never do' },
+      { page: 30, alt: 'Emergency and quick targets card' },
+      { page: 33, alt: 'Symptom quick reference table' },
+    ],
+    whoFor: [
+      'New keepers choosing the enclosure before the spider',
+      'Keepers whose tarantula has stopped eating and want to know whether to worry',
+      'Anyone facing a first molt or a first rehousing',
+    ],
+    whatNot: [
+      'Not a substitute for a vet that sees invertebrates',
       'Not a live website mirror, a clean printable package instead',
       'Not a subscription, one purchase and every corrected edition is free',
     ],
