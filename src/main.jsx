@@ -89,6 +89,17 @@ preloadForCurrentRoute().finally(() => {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js');
+    navigator.serviceWorker.register('/sw.js').then(() => {
+      // An Android WebAPK reinstalls itself whenever Chrome re-mints it, and
+      // that can wipe the push subscription while leaving the notification
+      // permission granted. Nothing tells the page it happened, so re-subscribe
+      // at launch instead of waiting for the Pack page to be opened, which is
+      // how the pings ended up silently stopping between app updates.
+      // Dynamically imported so the Supabase client stays out of the entry
+      // chunk, and a no-op unless this device actually opted in.
+      import('@/lib/pushNotifications')
+        .then((m) => m.restorePushSubscription())
+        .catch(() => {});
+    });
   });
 }
