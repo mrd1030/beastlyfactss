@@ -529,6 +529,20 @@ export default function ExoticPetLaws() {
                       : ''}`}
                   </p>
                 )}
+                {/* The written guide, offered from inside the detail card rather than
+                    only from the foot of the page. Someone who has clicked a state
+                    already has the answer they came for; this is the moment they ask
+                    why it says that, and the foot of a 52-row list is a long way from
+                    here. Outside the ternary on purpose: an unread jurisdiction is
+                    exactly when the wider write-up is most useful. */}
+                {animal.article && (
+                  <Link
+                    to={animal.article}
+                    className="mt-3 block text-xs font-body text-primary hover:underline"
+                  >
+                    {`The full ${inSentence(animal.name)} legal guide →`}
+                  </Link>
+                )}
               </div>
             )}
           </div>

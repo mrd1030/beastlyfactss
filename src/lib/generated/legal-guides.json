@@ -2,7 +2,17 @@
   {
     "slug": "bengal-cat-legal-guide",
     "title": "Are Bengal Cats Legal? The Generation Rules Explained",
-    "excerpt": "The same Bengal is a domestic cat in Indiana, a dangerous wild animal in Minnesota, and legal in Iowa only from the fourth generation. Four states draw the line four different ways, and one draws it..."
+    "excerpt": "The same Bengal is a domestic cat in Indiana, legal in Iowa only from the fourth generation, and in Minnesota caught by one sentence of a definition and exempted by another. Four states draw the line..."
+  },
+  {
+    "slug": "burmese-python-legal-guide",
+    "title": "Are Burmese Pythons Legal? The Federal Ban a Court Narrowed",
+    "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C. Circuit ruling took the interstate half of that ban away, which is why thirty..."
+  },
+  {
+    "slug": "capybara-legal-guide",
+    "title": "Are Capybaras Legal? Twelve Bans and Thirteen Permits",
+    "excerpt": "The world's largest rodent is legal in 23 US jurisdictions, banned in 12, and needs a permit in 13. Almost none of those rules mention the capybara at all: they are rules about the order Rodentia..."
   },
   {
     "slug": "emperor-scorpion-legal-guide",
@@ -15,9 +25,24 @@
     "excerpt": "A three pound desert fox gets caught by rules written about rabies vectors and coyotes. Maryland bans it with the single word fox, and Nevada names it twice under two different genus names."
   },
   {
+    "slug": "green-anole-legal-guide",
+    "title": "Are Green Anoles Legal? The Lizard That Gets Harder Where It Lives",
+    "excerpt": "In most of the country a green anole is an unregulated pet shop lizard. In the eight southeastern states it actually comes from, it is native wildlife with bag limits, license requirements and in..."
+  },
+  {
     "slug": "hamster-legal-guide",
     "title": "Are Hamsters Legal? The One State That Says No",
     "excerpt": "Exactly one state bans hamsters, and it is not the one people guess. California, which restricts more animals than anywhere else, clears both the golden hamster and the dwarfs by name, then bans the..."
+  },
+  {
+    "slug": "prairie-dog-legal-guide",
+    "title": "Are Prairie Dogs Legal? The Federal Ban Ended in 2008",
+    "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox outbreak traced to a Texas pet distributor. The FDA lifted that in 2008. Fifteen..."
+  },
+  {
+    "slug": "quaker-parakeet-legal-guide",
+    "title": "Are Quaker Parrots Legal? The Bird Banned for Nest Building",
+    "excerpt": "Thirteen states ban the quaker parrot, more than any other bird we have mapped, and not one of them does it because the bird is dangerous. Kansas puts it on a list with silver carp and zebra mussels."
   },
   {
     "slug": "russian-tortoise-legal-guide",
@@ -32,7 +57,12 @@
   {
     "slug": "serval-legal-guide",
     "title": "Are Servals Legal? The Most Restricted Pet in America",
-    "excerpt": "Thirty-one of the forty-three jurisdictions we checked restrict the serval, sixteen of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name."
+    "excerpt": "Twenty-nine of the forty-seven jurisdictions we checked restrict the serval, fifteen of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name."
+  },
+  {
+    "slug": "snapping-turtle-legal-guide",
+    "title": "Are Snapping Turtles Legal? Seasons, Creel Limits and Bans",
+    "excerpt": "The snapping turtle is the one native reptile a dozen states still let you take, and they answer it in the fishing regulations rather than the pet ones. Twelve jurisdictions attach a season and a bag..."
   },
   {
     "slug": "tarantula-legal-guide",
@@ -52,7 +82,7 @@
   {
     "slug": "boa-constrictor-legal-guide",
     "title": "Is It Legal to Own a Boa Constrictor? Federal Withdrawal and State Rules",
-    "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and one very specific New Jersey..."
+    "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and Louisiana's 2025 rewrite in..."
   },
   {
     "slug": "box-turtle-legal-guide",
@@ -87,7 +117,7 @@
   {
     "slug": "flying-squirrel-legal-guide",
     "title": "Is It Legal to Own a Flying Squirrel? State-by-State Guide",
-    "excerpt": "A flying squirrel looks like a small, easy pet, but because it's native wildlife across most of the country, most states regulate it like protected wildlife instead of exotic-pet stock. Out of the 20..."
+    "excerpt": "A flying squirrel looks like a small, easy pet, but because it's native wildlife across most of the country, most states regulate it like protected wildlife instead of exotic-pet stock. Across all 52..."
   },
   {
     "slug": "garter-snake-legal-guide",

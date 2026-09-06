@@ -902,7 +902,7 @@
     {
       "slug": "bengal-cat-legal-guide",
       "title": "Are Bengal Cats Legal? F1 to F5 Rules by State",
-      "excerpt": "The same Bengal is a domestic cat in Indiana, a dangerous wild animal in Minnesota, and legal in Iowa only from the",
+      "excerpt": "The same Bengal is a domestic cat in Indiana, legal in Iowa only from the fourth generation, and in Minnesota caught by",
       "date": "2026-08-13",
       "image": "/assets/guides/bengal-cat-legal.jpg",
       "category": "Legal",
@@ -1575,6 +1575,17 @@
       ]
     },
     {
+      "slug": "burmese-python-legal-guide",
+      "title": "Are Burmese Pythons Legal? Federal Rule vs States",
+      "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C.",
+      "date": "2026-10-02",
+      "image": "/assets/guides/burmese-python-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ]
+    },
+    {
       "slug": "california-kingsnake-cost-guide",
       "title": "California Kingsnake Price: $45 to $300, Setup $200 to $500",
       "excerpt": "California kingsnakes are one of the more affordable pet snakes, with low monthly costs and a total lifetime investment",
@@ -1682,6 +1693,17 @@
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "capybara-legal-guide",
+      "title": "Are Capybaras Legal? State Bans and Permit Rules",
+      "excerpt": "The world's largest rodent is legal in 23 US jurisdictions, banned in 12, and needs a permit in 13. Almost none of",
+      "date": "2026-10-01",
+      "image": "/assets/guides/capybara-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ]
     },
     {
@@ -3780,6 +3802,17 @@
       ]
     },
     {
+      "slug": "green-anole-legal-guide",
+      "title": "Are Green Anoles Legal? The Native State Problem",
+      "excerpt": "In most of the country a green anole is an unregulated pet shop lizard. In the eight southeastern states it actually",
+      "date": "2026-10-01",
+      "image": "/assets/guides/green-anole-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ]
+    },
+    {
       "slug": "green-anole-tank-setup-guide",
       "title": "Green Anole Enclosure Setup Guide",
       "excerpt": "Green anoles need genuinely more setup investment than their small size and low price suggest, tropical humidity, real",
@@ -5819,6 +5852,17 @@
       ]
     },
     {
+      "slug": "prairie-dog-legal-guide",
+      "title": "Are Prairie Dogs Legal? 15 States Still Say No",
+      "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox",
+      "date": "2026-09-30",
+      "image": "/assets/guides/prairie-dog-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ]
+    },
+    {
       "slug": "praying-mantis-cost-guide",
       "title": "Praying Mantis Price: $15 to $75, Plus $50 to $150 Setup",
       "excerpt": "Praying mantises are one of the most affordable exotic pets available, genuinely cheap to buy and cheap to keep, with",
@@ -5926,6 +5970,17 @@
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "quaker-parakeet-legal-guide",
+      "title": "Are Quaker Parrots Legal? 13 States Ban Them",
+      "excerpt": "Thirteen states ban the quaker parrot, more than any other bird we have mapped, and not one of them does it because the",
+      "date": "2026-09-30",
+      "image": "/assets/guides/quaker-parakeet-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ]
     },
     {
@@ -6575,8 +6630,8 @@
     },
     {
       "slug": "serval-legal-guide",
-      "title": "Are Servals Legal? Banned Outright in 16 of 43 Jurisdictions",
-      "excerpt": "Thirty-one of the forty-three jurisdictions we checked restrict the serval, sixteen of them outright. Ohio bans the cat",
+      "title": "Are Servals Legal? Banned Outright in 15 of 47 Jurisdictions",
+      "excerpt": "Twenty-nine of the forty-seven jurisdictions we checked restrict the serval, fifteen of them outright. Ohio bans the",
       "date": "2026-08-19",
       "image": "/assets/guides/serval-legal.jpg",
       "category": "Legal",
@@ -6696,6 +6751,28 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "snake-shedding-humidity-myth-guide",
+      "title": "Snake Shedding: The Humidity Myth Explained",
+      "excerpt": "The belief that a snake needs a damp enclosure to shed gets the mechanism backwards. The separation is done by a",
+      "date": "2026-10-05",
+      "image": "/assets/images/snake-shedding-humidity-myth.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "snapping-turtle-legal-guide",
+      "title": "Are Snapping Turtles Legal? Seasons and Bag Limits",
+      "excerpt": "The snapping turtle is the one native reptile a dozen states still let you take, and they answer it in the fishing",
+      "date": "2026-10-02",
+      "image": "/assets/guides/snapping-turtle-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ]
     },
     {
