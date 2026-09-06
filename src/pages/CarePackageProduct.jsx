@@ -1,12 +1,13 @@
 import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
-import { Check, ChevronDown } from 'lucide-react';
+import { Check, ChevronDown, Download } from 'lucide-react';
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
 import { getCarePackageCopy } from '@/lib/data/carePackageCopy';
 import { getCarePackageTheme, carePackageThemeCss } from '@/lib/data/carePackageThemes';
 import CarePackagesNav from '@/components/shared/CarePackagesNav';
 import CarePackageBuyButton from '@/components/shared/CarePackageBuyButton';
+import CarePackageCard from '@/components/shared/CarePackageCard';
 import CarePackagePreviewCarousel from '@/components/shared/CarePackagePreviewCarousel';
 import { useCarePackageReveal } from '@/components/shared/CarePackageReveal';
 import PageNotFound from '@/lib/PageNotFound';
@@ -57,8 +58,22 @@ export default function CarePackageProduct() {
   const url = `${BASE}/care-packages/${pkg.id}/`;
   const title = `${pkg.name} | Beastly Facts`;
   const description = pkg.blurb;
+  // Two covers. `cover` is the guide hero, landscape, and stays the OG image
+  // because link previews want 1.91:1. The hero shows the package's own cover
+  // page instead, rendered from the PDF by render-care-package-previews.mjs,
+  // as a portrait book: it is the actual product, and the edition badge sits
+  // on the thing it describes.
   const cover = pkg.image || pkg.cover;
   const coverUrl = cover?.startsWith('http') ? cover : `${BASE}${cover || '/assets/og-default.jpg'}`;
+  const bookCover = `/assets/care-packages/${pkg.id}/cover.jpg`;
+  const sampleHref = pkg.samplePages ? `/assets/care-packages/${pkg.id}/sample.pdf` : null;
+  // Three other packages for the strip at the bottom: same catalog section
+  // first, then the rest of the catalog in its own order. Only packages that
+  // can actually be bought somewhere.
+  const related = CARE_PACKAGES
+    .filter(p => p.id !== pkg.id && (p.storefront === 'stripe' || p.status === 'live'))
+    .sort((a, b) => Number(b.badge === pkg.badge) - Number(a.badge === pkg.badge))
+    .slice(0, 3);
   const editionDate = formatEditionDate(pkg.versionDate, { year: 'numeric', month: 'long', day: 'numeric' });
   const editionShort = formatEditionDate(pkg.versionDate, { year: 'numeric', month: 'short' });
   const amount = pkg.price?.replace(/[^\d.]/g, '') || '';
@@ -78,7 +93,7 @@ export default function CarePackageProduct() {
     '@type': 'Product',
     name: pkg.name,
     description: pkg.blurb,
-    image: coverUrl,
+    image: [`${BASE}${bookCover}`, coverUrl],
     brand: { '@type': 'Brand', name: 'Beastly Facts' },
     category: 'Pet care guide',
     offers: {
@@ -148,6 +163,16 @@ export default function CarePackageProduct() {
               />
               <span className="text-sm opacity-85">One time purchase · Instant PDF download</span>
             </div>
+            {sampleHref && (
+              <p className="-mt-5 mb-8 text-sm opacity-85">
+                {'Not sure yet? '}
+                <a href={sampleHref} download className="cp-hero-link underline opacity-100 inline-flex items-center gap-1">
+                  <Download className="w-3.5 h-3.5" aria-hidden="true" />
+                  {`Download the first ${pkg.samplePages} pages free`}
+                </a>
+                {', contents page included.'}
+              </p>
+            )}
             <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm opacity-85">
               {heroTicks.map(t => (
                 <li key={t} className="flex items-center gap-1.5">
@@ -158,29 +183,25 @@ export default function CarePackageProduct() {
             </ul>
           </div>
 
-          <div className="relative cp-reveal">
-            <div
-              className="cp-cover cp-cover-frame rounded-3xl overflow-hidden ring-1 ring-white/20 rotate-1 hover:rotate-0 transition-transform duration-500"
-              style={theme.motion?.coverMotion ? { animation: theme.motion.coverMotion } : undefined}
-            >
-              {cover ? (
+          <div className="relative cp-reveal flex justify-center lg:justify-end">
+            <div className="relative w-[68%] sm:w-[52%] lg:w-[64%] max-w-sm">
+              <div
+                className="cp-cover cp-book rounded-lg overflow-hidden"
+                style={theme.motion?.coverMotion ? { animation: theme.motion.coverMotion } : undefined}
+              >
                 <img
-                  src={cover}
-                  alt={`${pkg.name} cover, printable PDF owner manual`}
-                  className="w-full h-auto aspect-[3/2] object-cover"
-                  width="1600"
-                  height="1067"
+                  src={bookCover}
+                  alt={`${pkg.name}, the cover page of the printable PDF`}
+                  className="w-full h-auto block"
+                  width="1224"
+                  height="1584"
                   fetchPriority="high"
                 />
-              ) : (
-                <div className="w-full aspect-[3/2] flex items-center justify-center text-6xl bg-black/20" role="img" aria-label={pkg.animal}>
-                  {pkg.emoji || '📘'}
-                </div>
-              )}
-            </div>
-            <div className="cp-edition-badge absolute -bottom-5 -left-3 sm:-left-5 rounded-2xl shadow-xl px-4 py-3">
-              <p className="font-display font-bold text-xl leading-none">{`Edition ${pkg.version}`}</p>
-              <p className="cp-accent-text text-xs mt-1">{editionShort ? `${editionShort} · ${pkg.pages} pages` : `${pkg.pages} pages`}</p>
+              </div>
+              <div className="cp-edition-badge absolute -bottom-4 -left-6 sm:-left-8 rounded-2xl shadow-xl px-4 py-3">
+                <p className="font-display font-bold text-xl leading-none">{`Edition ${pkg.version}`}</p>
+                <p className="cp-accent-text text-xs mt-1">{editionShort ? `${editionShort} · ${pkg.pages} pages` : `${pkg.pages} pages`}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -266,6 +287,19 @@ export default function CarePackageProduct() {
             </div>
             <div className="cp-reveal">
               <CarePackagePreviewCarousel packageId={pkg.id} packageName={pkg.name} previews={previews} />
+              <p className="cp-muted text-sm mt-6 text-center">Click any page to read it at full size.</p>
+              {sampleHref && (
+                <div className="cp-card rounded-2xl p-5 mt-6 flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <p className="font-bold">{`The first ${pkg.samplePages} pages, free`}</p>
+                    <p className="cp-muted text-sm">{`Pages 1 to ${pkg.samplePages} as a PDF: the contents page and the introduction, so you can see every page the full package covers. None of the care guide itself.`}</p>
+                  </div>
+                  <a href={sampleHref} download className="cp-outline-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-sm transition-colors flex-shrink-0">
+                    <Download className="w-4 h-4" aria-hidden="true" />
+                    Download the sample
+                  </a>
+                </div>
+              )}
             </div>
           </section>
         )}
@@ -309,6 +343,22 @@ export default function CarePackageProduct() {
             {' for as long as the package exists, always as the current edition. Not a substitute for a vet.'}
           </p>
         </section>
+
+        {/* MORE PACKAGES */}
+        {related.length > 0 && (
+          <section className="max-w-5xl mx-auto px-4 sm:px-6 pb-12">
+            <div className="cp-reveal">
+              <p className="cp-label cp-accent-text mb-2">More care packages</p>
+              <h2 className="font-display font-bold text-2xl tracking-tight mb-5">Same format, other animals.</h2>
+              <div className="grid gap-4 sm:grid-cols-3">
+                {related.map(p => <CarePackageCard key={p.id} pkg={p} />)}
+              </div>
+              <p className="cp-muted text-sm mt-4">
+                <Link to="/care-packages/store/" className="underline">Every package in the store</Link>
+              </p>
+            </div>
+          </section>
+        )}
 
         {/* FREE GUIDE, FAQ, NAV */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">

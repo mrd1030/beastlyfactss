@@ -50,9 +50,17 @@
 }
 .cp-hero-btn:hover { transform: translateY(-2px); }
 
-.cp-cover-frame {
-  box-shadow: 0 30px 60px -20px rgba(var(--cp-glow), 0.55), 0 12px 30px rgba(0, 0, 0, 0.3);
+/* The hero's book: the package's own cover page, tilted like a mockup, with a
+ * spine shadow down the left edge and the theme glow underneath. */
+.cp-book {
+  transform: rotate(2deg);
+  transition: transform 0.5s ease;
+  box-shadow:
+    inset 6px 0 10px -6px rgba(0, 0, 0, 0.45),
+    0 30px 60px -20px rgba(var(--cp-glow), 0.55),
+    0 14px 30px rgba(0, 0, 0, 0.35);
 }
+.cp-book:hover { transform: rotate(0deg); }
 
 .cp-edition-badge {
   background: var(--cp-ground);
@@ -126,6 +134,17 @@
 }
 .cp-arrow:hover { background: var(--cp-accent-soft); }
 
+.cp-zoom {
+  background: var(--cp-card-bg);
+  color: var(--cp-ink);
+  border: 1px solid var(--cp-card-border);
+}
+.cp-slide button:hover .cp-zoom,
+.cp-slide button:focus-visible .cp-zoom {
+  background: var(--cp-accent);
+  color: var(--cp-accent-ink);
+}
+
 .cp-dot { background: var(--cp-card-border); }
 .cp-dot.is-active { background: var(--cp-accent); }
 
@@ -183,8 +202,8 @@
  * share one definition. */
 
 @keyframes cp-rise {
-  0%, 100% { transform: translateY(0) rotate(1deg); }
-  50% { transform: translateY(-6px) rotate(1deg); }
+  0%, 100% { transform: translateY(0) rotate(2deg); }
+  50% { transform: translateY(-6px) rotate(2deg); }
 }
 @keyframes cp-spin { to { transform: rotate(360deg); } }
 @keyframes cp-pulse {

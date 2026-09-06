@@ -14,10 +14,12 @@
 //   answers          four lines answering them one for one, same order
 //   inside           six cards: emoji, title, one line
 //   previewHeadline  the line above the carousel
-//   previews         the interior pages in the carousel, rendered by
+//   previews         the pages in the carousel and lightbox, rendered by
 //                    scripts/render-care-package-previews.mjs to
 //                    public/assets/care-packages/<id>/page-<N>.jpg. `page` is
-//                    the PDF's own page number, and `alt` says what is on it
+//                    the PDF's own page number, and `alt` says what is on it.
+//                    Page 2, the contents page, is always first: it is the
+//                    one page that shows a buyer everything they are getting
 //   whoFor           three lines
 //   whatNot          three lines
 //
@@ -81,6 +83,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'The pages you will actually print.',
     previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 6, alt: 'Enclosure size and the starter-kit problem, with the side view diagram of a deep-bedded enclosure' },
       { page: 7, alt: 'Bedding depth table, and the study behind it' },
       { page: 19, alt: 'Wet tail: cause, signs, response and recovery on one page' },
@@ -130,6 +133,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 8, alt: 'Temperature: the numbers that matter' },
       { page: 11, alt: 'Cycling, with or without an axolotl' },
       { page: 24, alt: 'Heat stress and reading the gills' },
@@ -175,6 +179,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'Bold Never rules, impossible to miss.',
     previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 6, alt: 'Temperature, UVB and humidity targets' },
       { page: 9, alt: 'Diet and feeding by age' },
       { page: 17, alt: 'Metabolic bone disease and impaction' },
@@ -220,6 +225,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 5, alt: 'Cage size, bar spacing and placement' },
       { page: 10, alt: 'Diet: pellets, seed and converting a seed eater' },
       { page: 20, alt: 'Obesity, fatty liver and tumors' },
@@ -265,6 +271,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 6, alt: 'Temperature, humidity and the 85°F ceiling' },
       { page: 9, alt: 'Complete diet powder: mixing, portions and rotation' },
       { page: 16, alt: 'Metabolic bone disease and floppy tail syndrome' },
@@ -310,6 +317,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 6, alt: 'Tank size and the bowl myth' },
       { page: 9, alt: 'Cycling the tank' },
       { page: 23, alt: 'Ammonia poisoning and ich' },
@@ -355,6 +363,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 5, alt: 'Enclosure size, shape and flooring' },
       { page: 13, alt: 'Vitamin C: the rule that makes this species different' },
       { page: 19, alt: 'GI stasis, bloat and a pig that stops eating' },
@@ -400,6 +409,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 6, alt: 'Temperature, humidity and the three hides' },
       { page: 9, alt: 'Diet and feeding by age' },
       { page: 17, alt: 'Stick tail disease and metabolic bone disease' },
@@ -445,6 +455,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 5, alt: 'Cage size, bar spacing and placement' },
       { page: 9, alt: 'One bird or two' },
       { page: 18, alt: 'Egg binding' },
@@ -490,6 +501,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 6, alt: 'Temperature, basking and night lows' },
       { page: 11, alt: 'Diet: what a steppe grazer actually eats' },
       { page: 18, alt: 'Metabolic bone disease and pyramiding' },

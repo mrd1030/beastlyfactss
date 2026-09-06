@@ -13,6 +13,11 @@
 // re-upload the PDF whenever these change. The Gumroad listings still carry the
 // first editions and are refreshed separately.
 //
+// samplePages is how many pages the free sample PDF at
+// public/assets/care-packages/<id>/sample.pdf carries, printed by
+// scripts/build-care-package-sample.mjs when it builds the file. Rebuild the
+// sample whenever the package is rebuilt, and copy the number here.
+//
 // contents is the package's own contents page, section by section, parsed from
 // the source HTML's table of contents rather than transcribed. Regenerate it
 // when a package is rebuilt (the parser is described in docs/SHOP_PLAN.md).
@@ -59,6 +64,7 @@ export const CARE_PACKAGES = [
     pages: 35,
     version: '3.1',
     versionDate: '2026-09-05',
+    samplePages: 4,
     cover: '/assets/guides/bearded-dragon.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/beardeddragoncarepackage',
     blurb: 'Complete 35-page printable guide with temperature targets, diet ratios by age, health triage, an owner log, and enrichment checklists.',
@@ -139,6 +145,7 @@ export const CARE_PACKAGES = [
     pages: 35,
     version: '2.1',
     versionDate: '2026-09-05',
+    samplePages: 4,
     cover: '/assets/guides/leopard-gecko.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/leopardgeckocarepackage',
     blurb: 'Complete 35-page printable guide with belly-heat setup, the three-hide humidity system, insect-only feeding by age, and health triage.',
@@ -219,6 +226,7 @@ export const CARE_PACKAGES = [
     pages: 40,
     version: '2.1',
     versionDate: '2026-09-05',
+    samplePages: 5,
     cover: '/assets/guides/goldfish.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/goldfishcarepackage',
     blurb: 'Complete 40-page printable guide with tank size, filtration turnover, water quality targets, swim bladder notes, and daily and weekly maintenance routines.',
@@ -303,6 +311,7 @@ export const CARE_PACKAGES = [
     pages: 42,
     version: '2.2',
     versionDate: '2026-09-06',
+    samplePages: 6,
     cover: '/assets/guides/axolotl.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/axolotlcarepackage',
     blurb: 'Complete 42-page printable guide with cold-water temps, filtration, health triage, enrichment, and owner checklists.',
@@ -388,6 +397,7 @@ export const CARE_PACKAGES = [
     pages: 40,
     version: '2.1',
     versionDate: '2026-09-05',
+    samplePages: 4,
     cover: '/assets/guides/budgie.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/budgiecarepackage',
     blurb: 'Complete 40-page printable guide with cage setup, diet ratios, health triage, enrichment, and owner checklists.',
@@ -477,6 +487,7 @@ export const CARE_PACKAGES = [
     pages: 34,
     version: '2.1',
     versionDate: '2026-09-06',
+    samplePages: 4,
     cover: '/assets/guides/crested-gecko.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/crestedgeckocarepackage',
     blurb: 'Complete 34-page printable guide with humidity cycling, CGD feeding, health triage, enrichment, and owner checklists.',
@@ -557,6 +568,7 @@ export const CARE_PACKAGES = [
     pages: 41,
     version: '2.1',
     versionDate: '2026-09-05',
+    samplePages: 4,
     cover: '/assets/guides/guinea-pig.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/guineapigcarepackage',
     blurb: 'Complete 41-page printable guide with housing space, vitamin C targets, diet ratios, health triage, and owner checklists.',
@@ -643,6 +655,7 @@ export const CARE_PACKAGES = [
     pages: 39,
     version: '2.1',
     versionDate: '2026-09-05',
+    samplePages: 4,
     cover: '/assets/guides/lovebird.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/lovebirdcarepackage',
     blurb: 'Complete 39-page printable guide with cage sizing, bar spacing, diet ratios, single-vs-pair guidance, and owner checklists.',
@@ -731,6 +744,7 @@ export const CARE_PACKAGES = [
     pages: 38,
     version: '2.2',
     versionDate: '2026-09-06',
+    samplePages: 4,
     cover: '/assets/guides/russian-tortoise.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/russiantortoisecarepackage',
     blurb: 'Complete 38-page printable guide with housing, heat and UVB targets, diet, brumation guidance, health triage, and owner checklists.',
@@ -817,6 +831,7 @@ export const CARE_PACKAGES = [
     pages: 34,
     version: '2.2',
     versionDate: '2026-09-06',
+    samplePages: 4,
     cover: '/assets/guides/ball-python.jpg',
     blurb: 'Complete 34-page printable guide with thermostat and probe placement, the humidity range that decides everything, a full prey chart, health triage, and printable owner tools.',
     bullets: [
@@ -896,6 +911,7 @@ export const CARE_PACKAGES = [
     pages: 37,
     version: '2.2',
     versionDate: '2026-09-05',
+    samplePages: 4,
     cover: '/assets/guides/betta-fish.jpg',
     blurb: 'Complete 37-page printable guide with tank and heater targets, the water numbers that actually matter, a full fishless cycling walkthrough, health triage, and owner checklists.',
     bullets: [
@@ -985,6 +1001,7 @@ export const CARE_PACKAGES = [
     pages: 37,
     version: '2.3',
     versionDate: '2026-09-06',
+    samplePages: 5,
     cover: '/assets/guides/hamster.jpg',
     blurb: 'Complete 37-page printable guide with the floor space and bedding depth the starter kit gets wrong, species differences, wet tail triage, and owner checklists.',
     bullets: [
@@ -1065,6 +1082,7 @@ export const CARE_PACKAGES = [
     pages: 40,
     version: '2.1',
     versionDate: '2026-09-05',
+    samplePages: 4,
     cover: '/assets/guides/rabbit.jpg',
     blurb: 'Complete 40-page printable guide with the real space standard, unlimited hay and why it is the whole diet, three pages on GI stasis, bonding a pair, and owner checklists.',
     bullets: [
@@ -1149,6 +1167,7 @@ export const CARE_PACKAGES = [
     pages: 44,
     version: '2.3',
     versionDate: '2026-09-06',
+    samplePages: 5,
     cover: '/assets/guides/tarantula.jpg',
     blurb: 'Complete 44-page printable guide with why the enclosure is low and wide, substrate depth by species type, the fasting that is normal, the dehydration that is not, molting start to finish, and a safe rehousing method.',
     bullets: [
