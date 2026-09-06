@@ -12,10 +12,9 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | Unread cells | 190 |
 | Cached primary sources | 65 files in `docs/legal-sources` |
 
-`main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
-Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts, Nebraska, Florida, New York,
-Georgia, New York City, New Jersey, Utah, Alabama, Indiana, Oklahoma, California, Vermont, Wisconsin, North Carolina, South Carolina and Ohio sit on `claude/legal-map-colorado-dca3og`; either continue there or cut a
-fresh branch from main once it lands.
+`main` carries all 32 completed jurisdictions and is deployed, so there is nothing waiting on a
+branch any more. Cut a fresh branch from main to start the next sitting.
+`claude/legal-map-colorado-dca3og` is merged and can be ignored.
 
 ## The loop
 
