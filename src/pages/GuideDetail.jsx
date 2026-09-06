@@ -10,7 +10,7 @@ import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import DeepDiveList from '@/components/shared/DeepDiveList';
-import { CARE_PACKAGES } from '@/lib/data/carePackages';
+import { CARE_PACKAGES, carePackageBookCover } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import SaveButton from '@/components/shared/SaveButton';
@@ -610,7 +610,7 @@ export default function GuideDetail() {
                 <Link to="/care-packages/store/" className="group block">
                   <div className="flex items-start gap-3 mb-3">
                     <img
-                      src={carePackage.thumbnail || carePackage.cover}
+                      src={carePackage.thumbnail || carePackageBookCover(carePackage)}
                       alt={`${carePackage.name} cover`}
                       loading="lazy"
                       className="w-12 h-12 object-cover rounded-lg border border-border flex-shrink-0 bg-white"

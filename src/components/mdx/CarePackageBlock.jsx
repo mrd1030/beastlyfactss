@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Printer } from 'lucide-react';
-import { CARE_PACKAGES } from '@/lib/data/carePackages';
+import { CARE_PACKAGES, carePackageBookCover } from '@/lib/data/carePackages';
 
 // Soft, in-article plug for the matching printable care package. Modeled on
 // KeyTakeaway's card shape so it reads as "related resource," not an ad.
@@ -17,7 +17,7 @@ export default function CarePackageBlock({ animal }) {
   return (
     <div className="my-8 rounded-2xl border border-secondary/30 border-l-4 border-l-secondary bg-secondary/5 p-5 flex items-center gap-4">
       <img
-        src={pkg.thumbnail || pkg.cover}
+        src={pkg.thumbnail || carePackageBookCover(pkg)}
         alt={`${pkg.name} cover`}
         loading="lazy"
         className="hidden sm:block w-16 h-16 object-cover rounded-xl border border-border flex-shrink-0 bg-white"

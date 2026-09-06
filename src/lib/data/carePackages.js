@@ -1244,3 +1244,39 @@ export const CARE_PACKAGES = [
     ],
   },
 ];
+
+// ---------------------------------------------------------------------------
+// Helpers the hub, the store and the cards share
+// ---------------------------------------------------------------------------
+
+// The catalog sections. Badge values above map onto these; a badge that is
+// not listed lands in the last group rather than vanishing.
+export const CARE_PACKAGE_GROUPS = [
+  { id: 'reptiles', label: 'Reptiles', badges: ['Reptile'] },
+  { id: 'birds', label: 'Birds', badges: ['Bird'] },
+  { id: 'fish-and-amphibians', label: 'Fish and amphibians', badges: ['Fish', 'Amphibian'] },
+  { id: 'small-mammals', label: 'Small mammals', badges: ['Mammal'] },
+  { id: 'invertebrates', label: 'Invertebrates', badges: ['Invertebrate'] },
+];
+
+export function groupCarePackages(list) {
+  const known = new Set(CARE_PACKAGE_GROUPS.flatMap(g => g.badges));
+  return CARE_PACKAGE_GROUPS.map((g, i) => ({
+    ...g,
+    items: list.filter(pkg => g.badges.includes(pkg.badge) || (i === CARE_PACKAGE_GROUPS.length - 1 && !known.has(pkg.badge))),
+  })).filter(g => g.items.length > 0);
+}
+
+// A package can be bought if it sells here or still sells on Gumroad. This,
+// not `status` alone, is what every "on sale" count and every featured row
+// keys on, so the copy stays right as packages move across one at a time.
+export function isCarePackageBuyable(pkg) {
+  return pkg.storefront === 'stripe' || pkg.status === 'live';
+}
+
+// The package's own cover page, rendered from the PDF by
+// scripts/render-care-package-previews.mjs. Portrait, letter aspect. Every
+// package in the catalog has one.
+export function carePackageBookCover(pkg) {
+  return `/assets/care-packages/${pkg.id}/cover.jpg`;
+}

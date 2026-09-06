@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import CarePackageBuyButton from '@/components/shared/CarePackageBuyButton';
+import { carePackageBookCover } from '@/lib/data/carePackages';
+import { getCarePackageTheme } from '@/lib/data/carePackageThemes';
+import '@/styles/care-package-hub.css';
 
 // Own product, not an affiliate link - no rel="sponsored" (that's reserved
 // for the paid/affiliate gear links in ProductCard.jsx). target="_blank"
@@ -22,24 +25,30 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
   const isFull = variant === 'full';
   const isStripe = pkg.storefront === 'stripe';
   const isComingSoon = pkg.status === 'coming-soon' && !isStripe;
-  const cover = pkg.image || pkg.cover;
   const guideHref = `/guides/${pkg.id}/`;
   const productHref = `/care-packages/${pkg.id}/`;
   const shopProps = { href: pkg.gumroadUrl, target: '_blank', rel: 'noopener noreferrer' };
 
-  const coverImg = cover ? (
-    <img
-      src={cover}
-      alt={`${pkg.name} cover`}
-      loading="lazy"
-      // aspect-video (16:9) matches the real Gumroad cover art (670x376)
-      // pixel-for-pixel, so object-cover trims essentially nothing on a live
-      // card. A coming-soon card shows the guide hero instead, which is a
-      // wider crop, so object-cover does real work there.
-      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
-    />
-  ) : (
-    <span className="text-4xl" role="img" aria-label={pkg.animal}>{pkg.emoji || '📘'}</span>
+  // The tile: the package's own cover page as a tilted book on a tile in the
+  // species' hero gradient from carePackageThemes.js. Fourteen of these in a
+  // grid read as a shelf rather than a list of photos, and the same cover
+  // greets the visitor again on the product page.
+  const theme = getCarePackageTheme(pkg.id);
+  const tileStyle = {
+    backgroundImage: `linear-gradient(135deg, ${theme.light['hero-from']}, ${theme.light['hero-via']}, ${theme.light['hero-to']})`,
+  };
+  const coverImg = (
+    <div className="cph-tile w-full h-full" style={tileStyle}>
+      <img
+        src={carePackageBookCover(pkg)}
+        alt={`${pkg.name} cover`}
+        loading="lazy"
+        decoding="async"
+        width="1224"
+        height="1584"
+        className="cph-tile-book"
+      />
+    </div>
   );
 
   return (
@@ -48,7 +57,7 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
         isComingSoon ? '' : 'hover:border-secondary/40 hover:shadow-md'
       }`}
     >
-      <div className="aspect-video overflow-hidden bg-muted flex items-center justify-center">
+      <div className="aspect-video overflow-hidden">
         {isStripe ? (
           <Link to={productHref} aria-label={pkg.name} className="block w-full h-full">{coverImg}</Link>
         ) : isComingSoon ? (

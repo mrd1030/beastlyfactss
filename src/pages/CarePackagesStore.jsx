@@ -2,9 +2,11 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { CARE_PACKAGES } from '@/lib/data/carePackages';
+import { CARE_PACKAGES, groupCarePackages, isCarePackageBuyable } from '@/lib/data/carePackages';
+import { getCarePackageTheme } from '@/lib/data/carePackageThemes';
 import CarePackagesNav from '@/components/shared/CarePackagesNav';
 import CarePackageCard from '@/components/shared/CarePackageCard';
+import '@/styles/care-package-hub.css';
 
 const TITLE = 'Care Package Store | Beastly Facts';
 const DESCRIPTION = 'Every Beastly Facts printable care package in one place - reptile, bird, fish, and small mammal owner manuals, $8.99 each.';
@@ -15,28 +17,13 @@ const HOW_IT_WORKS = [
   { title: 'Not a vet replacement', body: "Each package is a husbandry reference, not a substitute for a vet familiar with your pet's species." },
 ];
 
-// Badge values in carePackages.js map onto the catalog sections below. A new
-// badge that is not listed here lands in the last group rather than vanishing.
-const GROUPS = [
-  { id: 'reptiles', label: 'Reptiles', badges: ['Reptile'] },
-  { id: 'birds', label: 'Birds', badges: ['Bird'] },
-  { id: 'fish-and-amphibians', label: 'Fish and amphibians', badges: ['Fish', 'Amphibian'] },
-  { id: 'small-mammals', label: 'Small mammals', badges: ['Mammal'] },
-  { id: 'invertebrates', label: 'Invertebrates', badges: ['Invertebrate'] },
-];
-
-function groupPackages(list) {
-  const known = new Set(GROUPS.flatMap(g => g.badges));
-  return GROUPS.map((g, i) => ({
-    ...g,
-    items: list.filter(pkg => g.badges.includes(pkg.badge) || (i === GROUPS.length - 1 && !known.has(pkg.badge))),
-  })).filter(g => g.items.length > 0);
-}
-
 export default function CarePackagesStore() {
-  const live = CARE_PACKAGES.filter(pkg => pkg.status === 'live');
-  const groups = groupPackages(live);
-  const comingSoon = CARE_PACKAGES.filter(pkg => pkg.status === 'coming-soon');
+  // Buyable means sold here or still sold on Gumroad. A package that is
+  // status: 'coming-soon' but storefront: 'stripe' belongs in the catalog,
+  // not in the teaser row, which is what keyed on status alone got wrong.
+  const live = CARE_PACKAGES.filter(isCarePackageBuyable);
+  const groups = groupCarePackages(live);
+  const comingSoon = CARE_PACKAGES.filter(pkg => !isCarePackageBuyable(pkg));
 
   return (
     <div className="min-h-screen">
@@ -65,7 +52,7 @@ export default function CarePackagesStore() {
             </h1>
             <p className="font-body text-sm text-muted-foreground max-w-xl">
               Printable PDF owner manuals built from the same research standards as the rest of the site.
-              Every package links to its product page in a new tab, and to the free guide it was built from.
+              Every package has a product page with a free sample of its first pages, and links to the free guide it was built from.
             </p>
           </motion.div>
           <CarePackagesNav />
@@ -92,7 +79,10 @@ export default function CarePackagesStore() {
           </div>
           {groups.map(g => (
             <div key={g.id} id={g.id} className="mt-6 scroll-mt-24">
-              <h3 className="font-display font-bold text-base text-foreground mb-3">{g.label}</h3>
+              <h3 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
+                <span className="cph-section-swatch" style={{ background: getCarePackageTheme(g.items[0].id).light['hero-to'] }} aria-hidden="true" />
+                {g.label}
+              </h3>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {g.items.map(pkg => (
                   <CarePackageCard key={pkg.id} pkg={pkg} variant="full" />
@@ -111,7 +101,7 @@ export default function CarePackagesStore() {
           >
             <div className="mb-4">
               <h2 className="font-display font-bold text-xl text-foreground">Next in the series</h2>
-              <p className="text-sm text-muted-foreground font-body">Rebuilt on the current template and cross-checked against the site's articles. Each one is listed once its product page is set up, and the ones with a buy button below are ready now. The free guide for each species is live either way.</p>
+              <p className="text-sm text-muted-foreground font-body">Rebuilt on the current template and cross-checked against the site's articles. Each one moves up into the catalog the day it goes on sale. The free guide for each species is live either way.</p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {comingSoon.map(pkg => (
