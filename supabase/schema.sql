@@ -147,10 +147,13 @@ create index if not exists blog_comments_parent_id_idx
   on public.blog_comments (parent_id);
 
 -- Enforced here rather than left to the client: a reply must target an
--- approved, top-level comment on the same post. The parent_id is not null
--- check on the target is what actually caps nesting at one level - a reply
--- can never itself be replied to, because its own id can never pass this
--- check as someone else's parent_id.
+-- approved comment on the same post. Nesting stays capped at one level, but
+-- by coercion rather than refusal: if the target is itself a reply, the new
+-- row is re-parented onto that thread's root. This is what makes a reply to
+-- a reply possible without recursive rendering or a depth limit, and storage
+-- stays exactly one level deep so the grouping in PostEngagement is unchanged.
+-- The earlier version required "parent_id is null" on the target and so left
+-- an author unable to answer a response to their own reply.
 --
 -- security definer is load-bearing, not optional: a plain trigger function
 -- runs as the inserting role (anon), which has no select grant on
@@ -164,16 +167,30 @@ language plpgsql
 security definer
 set search_path = public, extensions
 as $fn$
+declare
+  target_parent uuid;
+  target_found boolean;
 begin
-  if new.parent_id is not null and not exists (
-    select 1 from public.blog_comments
-    where id = new.parent_id
-      and post_id = new.post_id
-      and status = 'approved'
-      and parent_id is null
-  ) then
-    raise exception 'Replies must target an approved top-level comment on the same post';
+  if new.parent_id is null then
+    return new;
   end if;
+
+  select parent_id, true
+    into target_parent, target_found
+    from public.blog_comments
+   where id = new.parent_id
+     and post_id = new.post_id
+     and status = 'approved';
+
+  if not coalesce(target_found, false) then
+    raise exception 'Replies must target an approved comment on the same post';
+  end if;
+
+  -- Target is itself a reply, so attach to that thread's root instead.
+  if target_parent is not null then
+    new.parent_id := target_parent;
+  end if;
+
   return new;
 end
 $fn$;

@@ -61,10 +61,12 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
   const [commentLikeCounts, setCommentLikeCounts] = useState({});
   const [likedCommentIds, setLikedCommentIds] = useState(() => new Set());
 
-  // Replies are one level deep only (enforced server-side too, see
-  // validate_comment_reply in schema.sql), so a single open target is enough,
-  // there is never a reply-to-a-reply form to track.
+  // Storage is one level deep (validate_comment_reply in schema.sql re-parents
+  // a reply-to-a-reply onto the thread root), so a thread only ever has one
+  // open form and a single target id is enough. Replying to a reply opens that
+  // same form, keyed to the root, with replyToName saying who it answers.
   const [replyTarget, setReplyTarget] = useState(null);
+  const [replyToName, setReplyToName] = useState('');
   const [replyName, setReplyName] = useState('');
   const [replyEmail, setReplyEmail] = useState('');
   const [replyText, setReplyText] = useState('');
@@ -303,8 +305,14 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     }
   };
 
-  const openReply = (commentId) => {
+  // commentId is always the thread ROOT, even when the Reply button sits under
+  // a reply: the server re-parents onto the root anyway, so sending the root
+  // keeps submittedReplyIds and the form's position keyed to the same thread.
+  // toName is presentation only, so the reader can see who they are answering
+  // in a thread that renders flat.
+  const openReply = (commentId, toName = '') => {
     setReplyTarget(commentId);
+    setReplyToName(toName);
     setReplyName('');
     setReplyEmail('');
     setReplyText('');
@@ -320,9 +328,10 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     setReplySubmitting(true);
     try {
       // Same status omission as the top-level insert: defaults to 'pending'
-      // and the insert policy only accepts that. validate_comment_reply on
-      // the server is what actually enforces parentId points at an approved,
-      // top-level comment on this post - not re-checked here.
+      // and the insert policy only accepts that. validate_comment_reply on the
+      // server enforces that parentId is an approved comment on this post, and
+      // re-parents onto the thread root if it is itself a reply. Neither is
+      // re-checked here.
       const { error } = await supabase.from('blog_comments').insert({
         post_id: postId,
         post_title: postTitle || '',
@@ -334,6 +343,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
       if (error) throw error;
       setSubmittedReplyIds(prev => new Set(prev).add(parentId));
       setReplyTarget(null);
+      setReplyToName('');
     } catch (err) {
       const isConstraint = /violates check constraint|blog_comments_/i.test(err?.message || '');
       toast.error(
@@ -448,7 +458,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                   <div className="flex items-center gap-4">
                     <CommentLikeButton commentId={c.id} />
                     <button
-                      onClick={() => openReply(c.id)}
+                      onClick={() => openReply(c.id, c.author_name)}
                       className="text-xs font-body font-semibold text-muted-foreground hover:text-secondary transition-colors"
                     >
                       Reply
@@ -467,7 +477,15 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                             </span>
                           </div>
                           <p className="text-sm font-body text-muted-foreground leading-relaxed mb-2">{r.content}</p>
-                          <CommentLikeButton commentId={r.id} />
+                          <div className="flex items-center gap-4">
+                            <CommentLikeButton commentId={r.id} />
+                            <button
+                              onClick={() => openReply(c.id, r.author_name)}
+                              className="text-xs font-body font-semibold text-muted-foreground hover:text-secondary transition-colors"
+                            >
+                              Reply
+                            </button>
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -486,6 +504,11 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                       onSubmit={e => handleSubmitReply(e, c.id)}
                       className="mt-3 pl-4 space-y-2 border-l-2 border-border"
                     >
+                      {replyToName && (
+                        <p className="pl-4 text-xs font-body text-muted-foreground">
+                          Replying to <span className="font-semibold text-foreground">{replyToName}</span>
+                        </p>
+                      )}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-4">
                         <Input
                           placeholder="Your name *"
@@ -523,7 +546,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                         </Button>
                         <button
                           type="button"
-                          onClick={() => setReplyTarget(null)}
+                          onClick={() => { setReplyTarget(null); setReplyToName(''); }}
                           className="text-xs font-body font-semibold text-muted-foreground hover:text-foreground"
                         >
                           Cancel
