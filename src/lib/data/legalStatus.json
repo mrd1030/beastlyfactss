@@ -1569,6 +1569,11 @@
       "title": "West Virginia Division of Natural Resources, Amphibians and Reptiles of West Virginia",
       "url": "https://wvdnr.gov/plants-animals/amphibians-reptiles/",
       "note": "The department own checklist, which is what 58-73 nativity turns on. Six lizards, none of them an anole: eastern six-lined racerunner, northern coal skink, common five-lined skink, broad-headed skink, eastern fence lizard, little brown skink. Twenty-two snakes including the cornsnake, eastern gartersnake, eastern milksnake and eastern kingsnake. Thirteen turtles and one subspecies, the woodland box turtle among them."
+    },
+    "ks-115-18-10": {
+      "title": "K.A.R. 115-18-10, Importation and possession of certain wildlife; prohibition, permit requirement, and restrictions",
+      "url": "https://www.law.cornell.edu/regulations/kansas/K-A-R-115-18-10",
+      "note": "Kansas's prohibited species list, and it is almost entirely aquatic invasives: carps, a snakehead, a goby, mussels, a mudsnail, crayfish. Two land animals are on it, the Asian raccoon dog and the monk parakeet, which is the quaker parakeet of the pet trade. The permit in subsection (c) is for experimental, scientific, display or other purposes and is not a pet route."
     }
   },
   "animals": {
@@ -3859,12 +3864,16 @@
           "verifiedOn": "2026-09-05"
         },
         "KS": {
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)",
-          "status": "legal",
-          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
-          "note": "The definition names six cats, bears and non-native venomous snakes. No bird is in it.",
-          "verifiedOn": "2026-08-05"
+          "status": "banned",
+          "sourceId": "ks-115-18-10",
+          "cite": "K.A.R. 115-18-10(a)(13), (b)(1), (c)",
+          "quote": "The importation, possession, or release in Kansas of the following live wildlife species shall be prohibited, except as authorized by terms of a wildlife importation permit issued by the secretary: ... (13) monk parakeet (Myiopsita monachus)",
+          "note": "Named by binomial on the prohibited list, and the company it keeps says what the prohibition is for: walking catfish, four carps, a snakehead, a round goby, zebra and quagga mussels, a mudsnail and three crayfish. This is an escape-and-establishment rule, not a dangerous-animal rule, which is the same reason a dozen other states bar this bird. The dangerous regulated animal statute at K.S.A. 32-1301 names no bird and has nothing to do with it. The permit that subsection (a) refers to is issued under (c) \"for experimental, scientific, display, or other purposes\", so there is no personal-pet route.",
+          "grandfathered": {
+            "before": "1978-02-01",
+            "detail": "115-18-10(b)(1) lets a bird possessed before 1 February 1978 be retained in closed confinement on an application to the secretary detailing how it came into the applicant’s possession."
+          },
+          "verifiedOn": "2026-09-05"
         },
         "NC": {
           "sourceId": "nc-14-417",

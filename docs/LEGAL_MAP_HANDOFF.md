@@ -303,6 +303,13 @@ the last sitting, where reading past the first rule changed answers in three sta
   they are named in no category at all, and 48.1-09-01-02(6) says an unlisted species "must be
   reviewed by the board for determination of importation requirements and licensure requirements
   prior to importation", which is a case-by-case answer rather than a rule.
+- **Kansas bans the quaker parakeet too, and it is on a list of carp.** K.A.R. 115-18-10(a)(13)
+  names the monk parakeet, Myiopsita monachus, on the prohibited species list, between the marbled
+  crayfish and the Asian raccoon dog and among twenty-odd aquatic invasives. The Kansas cell had
+  read the dangerous regulated animal statute, which names no bird, and recorded `legal`. It is
+  `banned` now, with the 1 February 1978 grandfather in 115-18-10(b)(1). Worth a look at whether
+  any other Kansas cell is answered by 115-18-10 rather than by 32-1301; on the current animal list
+  the monk parakeet is the only one, since the Asian raccoon dog is not on the map.
 - **Kansas bans the pet flying squirrel, and it takes three regulations read together to see it.**
   K.S.A. 32-1002(a)(2) makes it unlawful to possess any wildlife except as permitted by law or
   regulation. K.A.R. 115-20-3 permits exotic wildlife, but 115-20-3(d) defines exotic as not native
