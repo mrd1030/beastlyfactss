@@ -341,7 +341,7 @@ export const CARE_PACKAGES = [
           'Overgrown incisors and tumors',
           'Respiratory infection and diabetes',
           'Torpor, and telling it from death',
-          'Lifespan, ageing and the end',
+          'Lifespan, aging and the end',
           'Where hamsters are not legal',
         ],
       },

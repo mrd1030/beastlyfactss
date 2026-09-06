@@ -36,7 +36,7 @@ export const reptileBeastfiles = [
     habitat: 'Desert',
     group: 'Reptiles',
     overview:
-      'The thorny devil is a small lizard of the Australian arid zone, rarely longer than 20 centimetres and covered in conical spines that make it awkward to swallow. It eats almost nothing but ants, taking them one at a time at a rate of a few thousand a day. Its most remarkable trick is not the armour but the plumbing: a network of channels between its scales draws water across the body and into the corners of its mouth by capillary action alone. Standing on damp sand is enough to drink. It moves in a slow, rocking shuffle that reads less like a lizard walking than a leaf caught in a breeze.',
+      'The thorny devil is a small lizard of the Australian arid zone, rarely longer than 20 centimeters and covered in conical spines that make it awkward to swallow. It eats almost nothing but ants, taking them one at a time at a rate of a few thousand a day. Its most remarkable trick is not the armor but the plumbing: a network of channels between its scales draws water across the body and into the corners of its mouth by capillary action alone. Standing on damp sand is enough to drink. It moves in a slow, rocking shuffle that reads less like a lizard walking than a leaf caught in a breeze.',
     origin:
       'Endemic to the arid and semi-arid interior of Australia, across Western Australia, the Northern Territory, South Australia and western Queensland.',
     notableTraits: [
@@ -51,7 +51,7 @@ export const reptileBeastfiles = [
     funFacts: [
       'It can draw water from wet sand without ever lowering its head to drink.',
       'The spiny lump behind its head is a decoy: it tucks the real head down and offers the false one instead.',
-      'Despite the name and the armour, it is entirely harmless and has no venom.',
+      'Despite the name and the armor, it is entirely harmless and has no venom.',
     ],
     heroImage: '/assets/beastlypedia/thorny-devil-hero.jpg',
     heroAlt:
@@ -73,7 +73,7 @@ export const reptileBeastfiles = [
     habitat: 'Rainforest',
     group: 'Reptiles',
     overview:
-      'The panther chameleon is the one people picture when they picture a chameleon: a stocky Madagascan lizard in bands of turquoise, red and green, with independently swivelling turret eyes and a tongue it fires at prey. The color change is widely misunderstood. It is not camouflage matching a background. Chameleons shift color mainly to signal mood, temperature and readiness to breed, and they do it by rearranging nanocrystals in a layer of skin cells to change which wavelengths reflect, rather than by shuffling pigment. Males from different parts of Madagascar carry strikingly different color schemes, known as locales.',
+      'The panther chameleon is the one people picture when they picture a chameleon: a stocky Madagascan lizard in bands of turquoise, red and green, with independently swiveling turret eyes and a tongue it fires at prey. The color change is widely misunderstood. It is not camouflage matching a background. Chameleons shift color mainly to signal mood, temperature and readiness to breed, and they do it by rearranging nanocrystals in a layer of skin cells to change which wavelengths reflect, rather than by shuffling pigment. Males from different parts of Madagascar carry strikingly different color schemes, known as locales.',
     origin:
       'Endemic to northern and eastern Madagascar, in coastal lowland forest, scrub and edge habitat, including trees around cultivated land.',
     notableTraits: [
@@ -107,11 +107,11 @@ export const reptileBeastfiles = [
     habitat: 'Rainforest',
     group: 'Reptiles',
     overview:
-      'The Gaboon viper is a heavy, slow African snake that has invested everything in not being seen and then in one decisive strike. Its geometric pattern of browns, purples and creams dissolves completely into rainforest leaf litter, and it will lie motionless for days waiting for prey to walk within reach. It has the longest fangs of any snake, around five centimetres, and delivers a large volume of venom. Despite that, it is famously unaggressive: it rarely strikes at people and often gives no warning simply because it does not move at all.',
+      'The Gaboon viper is a heavy, slow African snake that has invested everything in not being seen and then in one decisive strike. Its geometric pattern of browns, purples and creams dissolves completely into rainforest leaf litter, and it will lie motionless for days waiting for prey to walk within reach. It has the longest fangs of any snake, around five centimeters, and delivers a large volume of venom. Despite that, it is famously unaggressive: it rarely strikes at people and often gives no warning simply because it does not move at all.',
     origin:
       'Rainforest and adjacent woodland across West, Central and East Africa, in leaf litter on the forest floor.',
     notableTraits: [
-      'The longest fangs of any snake, roughly five centimetres',
+      'The longest fangs of any snake, roughly five centimeters',
       'Leaf-litter camouflage that works even in the open',
       'Ambushes by lying still for days at a time',
       'A very broad, flat, triangular head with small nasal horns',

@@ -289,7 +289,7 @@ Subspecies identification matters for care. Northern blue tongue skinks and Indo
     petType: "Lizards",
     image: "/assets/guides/fire-skink.jpg",
     tagline: "Spectacular red and gold, and it will spend most of its life underground!",
-    funFact: "Fire skinks are one of the most brightly coloured lizards in the hobby and one of the most rarely seen in their own enclosure. Give one four inches of substrate and it will vanish; give it eight to ten and it will build a burrow system, come out to bask, and behave like a completely different animal.",
+    funFact: "Fire skinks are one of the most brightly colored lizards in the hobby and one of the most rarely seen in their own enclosure. Give one four inches of substrate and it will vanish; give it eight to ten and it will build a burrow system, come out to bask, and behave like a completely different animal.",
     // Labels match `covers` strings in affiliateProducts.js and the figures are those
     // products' vetted prices. See scripts/check-cost-coverage.mjs.
     costs: {
@@ -315,7 +315,7 @@ Subspecies identification matters for care. Northern blue tongue skinks and Indo
     sections: {
       housing: `A single adult wants 36x18x18 inches as a floor-space-first enclosure. Height is close to irrelevant here; fire skinks are terrestrial and fossorial, and the useful dimension is length and depth.
 
-Substrate is the whole game with this species. Use four to six inches of a mix that holds a tunnel. ReptiFiles gives 40 percent organic topsoil, 40 percent coconut fibre and 20 percent fine sand, kept slightly damp, with leaf litter on top. A fire skink in shallow bedding hides in one corner under a hide and looks permanently nervous. The same animal in deep substrate builds a burrow, uses the whole enclosure and comes out to bask.
+Substrate is the whole game with this species. Use four to six inches of a mix that holds a tunnel. ReptiFiles gives 40 percent organic topsoil, 40 percent coconut fiber and 20 percent fine sand, kept slightly damp, with leaf litter on top. A fire skink in shallow bedding hides in one corner under a hide and looks permanently nervous. The same animal in deep substrate builds a burrow, uses the whole enclosure and comes out to bask.
 
 Provide a basking surface of 92 to 96 degrees F, a cool end of 75 to 85, and a night drop to 70 to 75. Use a halogen flood on a dimmer rather than a ceramic emitter, since these animals do respond to visible basking light.
 
@@ -335,7 +335,7 @@ Keep fresh water available at all times in a dish heavy enough not to be tipped 
 
 Add cork bark tunnels, flat stones near the basking area, sphagnum-stuffed hides and a dense litter layer. Live plants such as pothos survive in a fire skink enclosure better than they do with larger lizards, though the digging will disturb roots.
 
-Feed with tongs or scatter feed into the litter. Scatter feeding gets them foraging through the leaves, which is what they do in the wild and is the easiest natural behaviour to encourage.
+Feed with tongs or scatter feed into the litter. Scatter feeding gets them foraging through the leaves, which is what they do in the wild and is the easiest natural behavior to encourage.
 
 Handling is possible but should be earned slowly. Fire skinks are fast and initially flighty, and a stressed one will drop its tail. Start with tong feeding, then short sessions low over a soft surface. Many settle into being reliably handleable; some never do.
 
@@ -344,14 +344,14 @@ Keep one per enclosure unless you have real experience. Males will fight, and mi
 
 Retained shed on the toes and tail tip is the most common minor complaint and is nearly always a humidity problem. A humid hide and a slightly damp substrate layer usually resolve it. Rings of retained skin left in place can cut off circulation.
 
-Impaction is the reason to avoid sand, gravel and any loose particulate that does not hold moisture. A soil and coco fibre mix is both better for burrowing and safer to swallow incidentally.
+Impaction is the reason to avoid sand, gravel and any loose particulate that does not hold moisture. A soil and coco fiber mix is both better for burrowing and safer to swallow incidentally.
 
-Wild-caught animals are still common in this trade and often arrive with parasite loads, dehydration and injuries. Ask about origin. A captive-bred fire skink costs more and starts far healthier, and a fresh import should have a faecal check early.
+Wild-caught animals are still common in this trade and often arrive with parasite loads, dehydration and injuries. Ask about origin. A captive-bred fire skink costs more and starts far healthier, and a fresh import should have a fecal check early.
 
 Mouth rot and respiratory infections follow from enclosures that are wet rather than humid, with no ventilation or no thermal gradient.`,
       checklist: [
         "36x18x18 in front-opening terrarium",
-        "4 to 6 inches of topsoil, coco fibre and sand",
+        "4 to 6 inches of topsoil, coco fiber and sand",
         "Leaf litter layer and cork bark cover",
         "Halogen basking bulb on a dimmer, 92 to 96 F",
         "Linear T5 UVB, 5 to 6 percent",
@@ -363,11 +363,11 @@ Mouth rot and respiratory infections follow from enclosures that are wet rather 
       ],
     },
     faqs: [
-      { q: "Why does my fire skink hide all the time?", a: "Almost always because the substrate is too shallow. Fire skinks are burrowers, and in four inches of bedding the only option is to wedge under a hide and stay there. At six to ten inches of a soil and coco fibre mix that holds a tunnel, they build a burrow system and start using the whole enclosure, basking in the open and foraging through the leaf litter. Depth of substrate changes this species more than any other single factor." },
+      { q: "Why does my fire skink hide all the time?", a: "Almost always because the substrate is too shallow. Fire skinks are burrowers, and in four inches of bedding the only option is to wedge under a hide and stay there. At six to ten inches of a soil and coco fiber mix that holds a tunnel, they build a burrow system and start using the whole enclosure, basking in the open and foraging through the leaf litter. Depth of substrate changes this species more than any other single factor." },
       { q: "Do fire skinks need UVB?", a: "Yes. They are diurnal and bask, and while some keepers raise them without UVB using heavy D3 supplementation, the results are far more consistent with it. Use a linear T5 at 5 to 6 percent over part of the enclosure rather than a compact coil, mount it at the distance the manufacturer specifies, and replace it every twelve months even though it still emits visible light." },
       { q: "Can you handle a fire skink?", a: "Some, with patience. They are fast and start out flighty, and a stressed one can drop its tail, which regrows but never matches. Build up through tong feeding first, then short sessions held low over a soft surface so a jump does not end badly. Plenty of fire skinks become reliably handleable adults, and some simply stay display animals. Buying captive bred makes a calm outcome much more likely." },
-      { q: "Is my fire skink wild caught?", a: "Quite possibly, and it is worth asking directly. A large share of fire skinks in the trade are still imported, and wild-caught animals typically arrive dehydrated, carrying parasites, and sometimes with injuries or missing toes. They can settle in well, but they need a faecal test and a quiet acclimation period. Captive-bred animals cost more and start much healthier." },
-      { q: "How big do fire skinks get?", a: "About 12 to 15 inches including the tail, with the body itself a good deal shorter than that suggests. They are heavy-bodied for their length rather than lanky. That size makes a 36x18x18 inch enclosure a comfortable adult home for one animal, prioritising floor area over height since they spend their time on and under the ground." },
+      { q: "Is my fire skink wild caught?", a: "Quite possibly, and it is worth asking directly. A large share of fire skinks in the trade are still imported, and wild-caught animals typically arrive dehydrated, carrying parasites, and sometimes with injuries or missing toes. They can settle in well, but they need a fecal test and a quiet acclimation period. Captive-bred animals cost more and start much healthier." },
+      { q: "How big do fire skinks get?", a: "About 12 to 15 inches including the tail, with the body itself a good deal shorter than that suggests. They are heavy-bodied for their length rather than lanky. That size makes a 36x18x18 inch enclosure a comfortable adult home for one animal, prioritizing floor area over height since they spend their time on and under the ground." },
     ],
   },
   {
@@ -495,7 +495,7 @@ They benefit from routine and from being able to see out. An iguana kept in a da
 
 Handling has to be built patiently and kept up. Iguanas that are handled regularly from young usually tolerate it well; those left alone for months become difficult to work with. Support the whole body and never restrain by the tail, which will drop.
 
-Be aware of seasonal aggression. Sexually mature males in breeding season can become genuinely dangerous, and they often fixate on one person in the household. Bites are serious, the tail is used as a whip, and the claws do the most damage. This is a real change in behaviour rather than a bad individual.
+Be aware of seasonal aggression. Sexually mature males in breeding season can become genuinely dangerous, and they often fixate on one person in the household. Bites are serious, the tail is used as a whip, and the claws do the most damage. This is a real change in behavior rather than a bad individual.
 
 An outdoor enclosure in a suitable climate, with unfiltered sunlight, is the single best enrichment there is for this species.`,
       health: `Metabolic bone disease is the classic and it is entirely preventable: strong UVB, high dietary calcium, correct temperatures. Look for a swollen or soft lower jaw, bowed legs, lumpy limbs, tremors and difficulty lifting the body.

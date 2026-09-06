@@ -16,7 +16,7 @@ export const amphibianBeastfiles = [
       'Bones appear green in some species',
       'Eggs laid on leaves above water so tadpoles drop in on hatching',
       'Males of many species guard the clutch',
-      'Rarely larger than three centimetres',
+      'Rarely larger than three centimeters',
     ],
     conservation:
       'Varies sharply by species; several are threatened. Glass frogs depend on clean, fast streams and intact forest, which makes them sensitive to deforestation, water pollution and the amphibian chytrid fungus.',
