@@ -23,12 +23,11 @@
  *                     Prose demotes to a warning because a passing mention of
  *                     another state ("unlike California's ferret ban") is fair.
  *
- *   MISSING-BAN (error)
- *                     The map records a jurisdiction as `banned` and the guide
- *                     never mentions that jurisdiction at all, in a table or in
- *                     prose. This is the gap the other two checks cannot see: they
- *                     compare what the guide says, and a state the guide is silent
- *                     about produces no row to disagree with.
+ *   MISSING (error)  The map records a jurisdiction as anything other than `legal`
+ *                     and the guide never mentions that jurisdiction at all, in a
+ *                     table or in prose. This is the gap the other two checks
+ *                     cannot see: they compare what the guide says, and a state the
+ *                     guide is silent about produces no row to disagree with.
  *
  *                     It was worth adding because it was not hypothetical. After
  *                     the map was completed to all 52 jurisdictions, seventeen
@@ -36,9 +35,14 @@
  *                     of those carried an "Everywhere else, generally legal" row
  *                     that turned the silence into a false statement. The box
  *                     turtle guide was missing six bans, the flying squirrel four.
- *                     Only `banned` is checked: a missing permit or conditional
- *                     state is an omission, while a missing ban tells a reader the
- *                     animal is legal where it is not.
+ *                     A further 151 permit, conditional, restricted and unclear
+ *                     cells were missing across 29 guides.
+ *
+ *                     A missing ban is the worst case, because it tells a reader
+ *                     the animal is legal where it is not, but a missing permit is
+ *                     the same failure one notch down: someone reads "generally
+ *                     legal", buys the animal, and finds out later. So every
+ *                     non-legal status is checked, and the message names which.
  *
  * Status wording in prose is looser than the map's buckets, so classification is
  * keyword-based and returns null when it cannot tell, rather than guessing. Rows it
@@ -343,23 +347,24 @@ for (const file of files) {
     });
   }
 
-  // Bans the guide never mentions anywhere. Searched against the whole file, not
-  // just the tables, so a state covered only in prose still counts as mentioned.
+  // Restrictions the guide never mentions anywhere. Searched against the whole
+  // file, not just the tables, so a state covered only in prose still counts as
+  // mentioned.
   const mentionedAnywhere = new Set([
     ...findJurisdictions(source, matchers),
     ...findJurisdictionCodesInRuns(source, new Set(Object.keys(legal.jurisdictions))),
     ...namedInTable,
   ]);
   for (const [code, entry] of Object.entries(mapped)) {
-    if (entry.status !== 'banned') continue;
+    if (entry.status === 'legal') continue;
     if (mentionedAnywhere.has(code)) continue;
     errors.push({
       file: rel,
       animalId,
-      kind: 'MISSING-BAN',
+      kind: entry.status === 'banned' ? 'MISSING-BAN' : 'MISSING',
       detail:
-        `the map records ${legal.jurisdictions[code].name} (${code}) as banned for ` +
-        `${animalId}, and the guide never mentions it`,
+        `the map records ${legal.jurisdictions[code].name} (${code}) as ` +
+        `"${entry.status}" for ${animalId}, and the guide never mentions it`,
     });
   }
 }
