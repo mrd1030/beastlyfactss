@@ -3652,6 +3652,8 @@
     "quaker-parakeet": {
       "name": "Quaker parakeet",
       "scientific": "Myiopsitta monachus",
+      "encyclopediaId": "quaker-parakeet",
+      "article": "/blog/quaker-parakeet-legal-guide/",
       "jurisdictions": {
         "CA": {
           "status": "banned",
@@ -4084,8 +4086,7 @@
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
         }
-      },
-      "encyclopediaId": "quaker-parakeet"
+      }
     },
     "bengal-cat": {
       "name": "Bengal cat",
@@ -7933,6 +7934,7 @@
     "prairie-dog": {
       "name": "Prairie dog",
       "scientific": "Cynomys",
+      "article": "/blog/prairie-dog-legal-guide/",
       "jurisdictions": {
         "CA": {
           "status": "banned",
@@ -8363,6 +8365,7 @@
     "capybara": {
       "name": "Capybara",
       "scientific": "Hydrochoerus hydrochaeris",
+      "article": "/blog/capybara-legal-guide/",
       "jurisdictions": {
         "CA": {
           "status": "banned",
@@ -10959,6 +10962,7 @@
     "snapping-turtle": {
       "name": "Snapping turtle",
       "scientific": "Chelydra serpentina",
+      "article": "/blog/snapping-turtle-legal-guide/",
       "jurisdictions": {
         "CA": {
           "status": "banned",
@@ -12698,6 +12702,7 @@
     "burmese-python": {
       "name": "Burmese python",
       "scientific": "Python bivittatus",
+      "article": "/blog/burmese-python-legal-guide/",
       "jurisdictions": {
         "FL": {
           "status": "banned",
@@ -22552,6 +22557,7 @@
       "name": "Green anole",
       "scientific": "Anolis carolinensis",
       "encyclopediaId": "green-anole",
+      "article": "/blog/green-anole-legal-guide/",
       "jurisdictions": {
         "HI": {
           "status": "banned",

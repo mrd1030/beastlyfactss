@@ -902,7 +902,7 @@
     {
       "slug": "bengal-cat-legal-guide",
       "title": "Are Bengal Cats Legal? F1 to F5 Rules by State",
-      "excerpt": "The same Bengal is a domestic cat in Indiana, a dangerous wild animal in Minnesota, and legal in Iowa only from the fourth generation. Four states draw the line four different ways, and one draws it by weight.",
+      "excerpt": "The same Bengal is a domestic cat in Indiana, legal in Iowa only from the fourth generation, and in Minnesota caught by one sentence of a definition and exempted by another. Four states draw the line four different ways, and one draws it by weight.",
       "date": "2026-08-13",
       "image": "/assets/guides/bengal-cat-legal.jpg",
       "category": "Legal",
@@ -1298,7 +1298,7 @@
     {
       "slug": "boa-constrictor-legal-guide",
       "title": "Are Boa Constrictors Legal? State Bans and Permits",
-      "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and one very specific New Jersey subspecies split, are where the real rules live.",
+      "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and Louisiana's 2025 rewrite in particular, are where the real rules live.",
       "date": "2026-07-16",
       "image": "/assets/guides/boa-constrictor-legal.jpg",
       "category": "Legal",
@@ -1575,6 +1575,17 @@
       ]
     },
     {
+      "slug": "burmese-python-legal-guide",
+      "title": "Are Burmese Pythons Legal? Federal Rule vs States",
+      "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C. Circuit ruling took the interstate half of that ban away, which is why thirty jurisdictions still have no rule of their own.",
+      "date": "2026-10-02",
+      "image": "/assets/guides/burmese-python-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ]
+    },
+    {
       "slug": "california-kingsnake-cost-guide",
       "title": "California Kingsnake Price: $45 to $300, Setup $200 to $500",
       "excerpt": "California kingsnakes are one of the more affordable pet snakes, with low monthly costs and a total lifetime investment more modest than a 20-plus year lifespan might suggest.",
@@ -1682,6 +1693,17 @@
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "capybara-legal-guide",
+      "title": "Are Capybaras Legal? State Bans and Permit Rules",
+      "excerpt": "The world's largest rodent is legal in 23 US jurisdictions, banned in 12, and needs a permit in 13. Almost none of those rules mention the capybara at all: they are rules about the order Rodentia that happen to catch a 100 pound one.",
+      "date": "2026-10-01",
+      "image": "/assets/guides/capybara-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ]
     },
     {
@@ -2343,7 +2365,7 @@
     {
       "slug": "corn-snake-legal-guide",
       "title": "Is a Corn Snake Legal in Your State? Full Guide",
-      "excerpt": "Corn snakes are the classic pet-store starter snake almost everywhere, except Georgia, where the state's own wildlife agency lists them as a native species that can't be kept as a pet at all, captive-bred or not. New Jersey, South Carolina, Illinois, Minnesota, and Tennessee all attach their own conditions too.",
+      "excerpt": "Corn snakes are the classic pet-store starter snake almost everywhere, except Georgia, where the state's own wildlife agency lists them as a native species that can't be kept as a pet at all, captive-bred or not. New Jersey, South Carolina, Illinois, Maryland, and Minnesota all attach their own conditions too, and two of them work by morph name rather than by species.",
       "date": "2026-09-26",
       "image": "/assets/guides/corn-snake-legal.jpg",
       "category": "Legal",
@@ -3164,7 +3186,7 @@
     {
       "slug": "flying-squirrel-legal-guide",
       "title": "Are Flying Squirrels Legal? The Most Restricted Small Pet",
-      "excerpt": "A flying squirrel looks like a small, easy pet, but because it's native wildlife across most of the country, most states regulate it like protected wildlife instead of exotic-pet stock. Out of the 20 states we've checked, only four are a clean yes, ten require a permit, and six are effective bans.",
+      "excerpt": "A flying squirrel looks like a small, easy pet, but because it's native wildlife across most of the country, most states regulate it like protected wildlife instead of exotic-pet stock. Across all 52 jurisdictions only nine are a clean yes, nineteen require a permit, and eighteen are effective bans.",
       "date": "2026-09-27",
       "image": "/assets/guides/flying-squirrel-legal.jpg",
       "category": "Legal",
@@ -3777,6 +3799,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "green-anole-legal-guide",
+      "title": "Are Green Anoles Legal? The Native State Problem",
+      "excerpt": "In most of the country a green anole is an unregulated pet shop lizard. In the eight southeastern states it actually comes from, it is native wildlife with bag limits, license requirements and in Mississippi a hunting license.",
+      "date": "2026-10-01",
+      "image": "/assets/guides/green-anole-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ]
     },
     {
@@ -5129,7 +5162,7 @@
     {
       "slug": "milk-snake-legal-guide",
       "title": "Is a Milk Snake Legal in Your State? Full Guide",
-      "excerpt": "Milk snakes are a common pet-trade species with one of the more tangled legal pictures out there: Georgia bans them outright as a native species, and Wisconsin restricts even buying a captive-bred one. Pennsylvania and Utah both cap possession in ways that read as applying to purchased pets, not just wild-caught animals.",
+      "excerpt": "Milk snakes are a common pet-trade species with one of the more tangled legal pictures out there: Georgia bans them outright as a native species, and Wisconsin restricts even buying a captive-bred one. Pennsylvania caps possession in a way that reads as reaching purchased pets, and Utah, which looks like it does the same, turns out not to.",
       "date": "2026-09-26",
       "image": "/assets/guides/milk-snake-legal.jpg",
       "category": "Legal",
@@ -5819,6 +5852,17 @@
       ]
     },
     {
+      "slug": "prairie-dog-legal-guide",
+      "title": "Are Prairie Dogs Legal? 15 States Still Say No",
+      "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox outbreak traced to a Texas pet distributor. The FDA lifted that in 2008. Fifteen states did not follow, and one of them is Colorado.",
+      "date": "2026-09-30",
+      "image": "/assets/guides/prairie-dog-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ]
+    },
+    {
       "slug": "praying-mantis-cost-guide",
       "title": "Praying Mantis Price: $15 to $75, Plus $50 to $150 Setup",
       "excerpt": "Praying mantises are one of the most affordable exotic pets available, genuinely cheap to buy and cheap to keep, with one important caveat about how long you'll actually have one.",
@@ -5926,6 +5970,17 @@
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "quaker-parakeet-legal-guide",
+      "title": "Are Quaker Parrots Legal? 13 States Ban Them",
+      "excerpt": "Thirteen states ban the quaker parrot, more than any other bird we have mapped, and not one of them does it because the bird is dangerous. Kansas puts it on a list with silver carp and zebra mussels.",
+      "date": "2026-09-30",
+      "image": "/assets/guides/quaker-parakeet-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ]
     },
     {
@@ -6575,8 +6630,8 @@
     },
     {
       "slug": "serval-legal-guide",
-      "title": "Are Servals Legal? Banned Outright in 16 of 43 Jurisdictions",
-      "excerpt": "Thirty-one of the forty-three jurisdictions we checked restrict the serval, sixteen of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name.",
+      "title": "Are Servals Legal? Banned Outright in 15 of 47 Jurisdictions",
+      "excerpt": "Twenty-nine of the forty-seven jurisdictions we checked restrict the serval, fifteen of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name.",
       "date": "2026-08-19",
       "image": "/assets/guides/serval-legal.jpg",
       "category": "Legal",
@@ -6696,6 +6751,28 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "snake-shedding-humidity-myth-guide",
+      "title": "Snake Shedding: The Humidity Myth Explained",
+      "excerpt": "The belief that a snake needs a damp enclosure to shed gets the mechanism backwards. The separation is done by a lymph-like fluid and enzymes released under the old skin, and humidity only matters at the very end.",
+      "date": "2026-10-05",
+      "image": "/assets/images/snake-shedding-humidity-myth.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "snapping-turtle-legal-guide",
+      "title": "Are Snapping Turtles Legal? Seasons and Bag Limits",
+      "excerpt": "The snapping turtle is the one native reptile a dozen states still let you take, and they answer it in the fishing regulations rather than the pet ones. Twelve jurisdictions attach a season and a bag limit. Eight ban it outright.",
+      "date": "2026-10-02",
+      "image": "/assets/guides/snapping-turtle-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ]
     },
     {

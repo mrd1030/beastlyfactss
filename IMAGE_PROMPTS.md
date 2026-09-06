@@ -1217,3 +1217,105 @@ picking out the scale texture along the body. Shallow depth of field with the
 eye sharp. The cloudy eye is the subject and must be unmistakable. No hands, no
 people, no shed skin in frame.
 ```
+
+---
+
+# Legal guide heroes, `public/assets/guides/`, 1168x784
+
+Six added with the legal guides dated 30 September to 2 October 2026. Each is a
+new photograph rather than a reuse: nothing here shares a file with a care guide,
+a Beastfile or another legal guide, and no two share a setting, palette or camera
+position.
+
+The house rule for this set is that the hero shows **the reason the law exists**
+where the species has one, and the healthy animal where it does not. The quaker
+parakeet shows the nest, because the nest is why thirteen states ban the bird.
+The prairie dog shows the colony landscape, because the surprise in that article
+is Colorado banning an animal that lives there. The rest show the animal.
+
+## Species accuracy
+
+Generators confuse four of these six with a near relative. Check before installing:
+
+- **Snapping turtle** must be *Chelydra serpentina*, not the alligator snapping
+  turtle. Smooth to slightly serrated carapace with no three raised keels, no
+  hooked eagle beak, long saw-toothed tail, and a head that is broad rather than
+  massive. The article turns on the difference between the two species.
+- **Burmese python** must not drift reticulated or ball. Dark brown blotches with
+  cream borders on a tan ground, an arrowhead marking on top of the head, a heavy
+  body. Not the fine diamond net of a reticulated python.
+- **Green anole** must be *Anolis carolinensis*, bright green with a pink dewlap,
+  not the brown anole that is the invasive species in the same article.
+- **Prairie dog** must be black-tailed *Cynomys*: short black-tipped tail, blunt
+  face, tan coat. Not a ground squirrel, marmot or meerkat, and not standing in a
+  meerkat sentry pose.
+
+## The prompts
+
+#### prairie-dog-legal.jpg
+```
+Photorealistic photograph of a black-tailed prairie dog sitting upright on the
+bare mound at its burrow entrance on open short-grass prairie, alert, front paws
+tucked at the chest, head turned slightly toward the camera. Tan-buff coat, blunt
+rounded face, short tail with a black tip. More burrow mounds and a second animal
+soft in the background so the colony reads. Low golden evening light raking
+across the grass, wide plains horizon, dry gold and sage palette, at the animal's
+eye level, 200mm, f/4, 3:2. Not a meerkat, not a ground squirrel, no sentry pose.
+```
+
+#### quaker-parakeet-legal.jpg
+```
+Photorealistic photograph of a single quaker parakeet perched on a bare branch in
+the foreground with a large untidy stick nest structure filling the background,
+slightly out of focus. Bright green back and wings, blue-tinged flight feathers,
+grey face, throat and breast with fine scalloped barring, pale horn-colored beak.
+The nest is bulky and woven from twigs, clearly built rather than found. Warm
+overcast daylight, subtropical green and grey palette, three-quarter view,
+135mm, f/2.8, 3:2. One bird only, no cage, no hands.
+```
+
+#### green-anole-legal.jpg
+```
+Photorealistic macro photograph of a green anole on a broad green leaf, body in
+profile, head toward the camera, pink throat dewlap fully extended. Vivid leaf
+green above with a pale cream underside, long slender tail curling off the leaf
+edge, expanded toe pads visible. Humid southeastern woodland background thrown
+fully out of focus. Bright dappled morning light, saturated green palette with
+the pink dewlap as the only warm accent, 100mm macro, f/3.5, 3:2. Green anole,
+not a brown anole.
+```
+
+#### capybara-legal.jpg
+```
+Photorealistic photograph of a single adult capybara standing in shallow water at
+a reedy bank, side on, water halfway up its legs, head turned toward the camera.
+Coarse reddish-brown shaggy coat, blunt squared muzzle, small high-set ears and
+eyes, no visible tail, partially webbed feet. Reeds and still water behind, a
+mirrored reflection under the body. Soft flat light just after sunrise, muted
+green-brown palette, low camera close to the waterline, 135mm, f/4, 3:2. One
+animal, no people, no enclosure fencing.
+```
+
+#### snapping-turtle-legal.jpg
+```
+Photorealistic photograph of a common snapping turtle at the muddy edge of a
+pond, body in profile, neck extended and head raised clear of the shell, mouth
+closed. Dark olive-brown carapace lightly serrated at the rear with no raised
+keels, thick limbs, heavily clawed feet, long tail with a saw-toothed ridge
+trailing into the water. Duckweed on the surface behind it. Flat overcast light,
+cool green and mud-brown palette, low angle from the waterline, 200mm, f/5.6,
+3:2. Common snapping turtle, not an alligator snapping turtle: no hooked beak,
+no three ridged keels.
+```
+
+#### burmese-python-legal.jpg
+```
+Photorealistic photograph of a Burmese python coiled on a bed of dry leaf litter,
+head resting on the outermost coil, facing the camera. Heavy-bodied, tan and
+cream ground color with large dark brown saddle blotches edged in cream, a
+distinct dark arrowhead marking on top of the head, iridescent sheen across the
+scales. Warm side lighting picking out the pattern, muted earth palette, shallow
+depth of field with the head sharp, slightly above the snake looking down,
+100mm, f/4, 3:2. Not a reticulated python and not a ball python: heavy build,
+blotches rather than a fine diamond net, no hands, no people.
+```

@@ -23,6 +23,27 @@
  *                     Prose demotes to a warning because a passing mention of
  *                     another state ("unlike California's ferret ban") is fair.
  *
+ *   MISSING (error)  The map records a jurisdiction as anything other than `legal`
+ *                     and the guide never mentions that jurisdiction at all, in a
+ *                     table or in prose. This is the gap the other two checks
+ *                     cannot see: they compare what the guide says, and a state the
+ *                     guide is silent about produces no row to disagree with.
+ *
+ *                     It was worth adding because it was not hypothetical. After
+ *                     the map was completed to all 52 jurisdictions, seventeen
+ *                     guides were silent about at least one outright ban, and four
+ *                     of those carried an "Everywhere else, generally legal" row
+ *                     that turned the silence into a false statement. The box
+ *                     turtle guide was missing six bans, the flying squirrel four.
+ *                     A further 151 permit, conditional, restricted and unclear
+ *                     cells were missing across 29 guides.
+ *
+ *                     A missing ban is the worst case, because it tells a reader
+ *                     the animal is legal where it is not, but a missing permit is
+ *                     the same failure one notch down: someone reads "generally
+ *                     legal", buys the animal, and finds out later. So every
+ *                     non-legal status is checked, and the message names which.
+ *
  * Status wording in prose is looser than the map's buckets, so classification is
  * keyword-based and returns null when it cannot tell, rather than guessing. Rows it
  * cannot classify are skipped and counted, not flagged.
@@ -88,6 +109,15 @@ const NEGATED_PERMIT = /\b(?:no|without(?:\s+an?)?)\s+(?:\w+\s+){0,2}?(?:permit|
 // inverts the article's actual position, so these rows are skipped.
 const MYTH_VERDICT = /^\s*(?:false|true|mostly|partly|myth|sort of)\b/i;
 
+// A jurisdiction cell that names a species subset is not a claim about the map
+// cell, which holds one status for the whole animal id. The cockatoo guide splits
+// Maine into two rows because Maine genuinely splits: the Moluccan, yellow-crested
+// and umbrella need a permit under the CITES and IUCN carve-out, the cockatiel and
+// galah do not. The map records `permit`, for the birds the carve-out catches, and
+// the "smaller species" row would otherwise read as a flat contradiction. Rows
+// qualified this way are skipped and counted rather than compared.
+const SPECIES_SUBSET = /\((?=[^)]*\b(?:species|only|except|other than|excluding)\b)[^)]*\)/i;
+
 function classify(text) {
   const cleaned = text.replace(NEGATED_PERMIT, ' ');
   for (const [re, status] of STATUS_RULES) {
@@ -128,6 +158,27 @@ const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 // Returns the jurisdiction codes named in `text`, consuming each match so a
 // longer name blocks the shorter one that sits inside it.
+// Several guides carry a summary row that lists jurisdictions as postal codes
+// rather than names: the serval guide's is `"Banned outright", "17", "GA, NY,
+// NYC, CT, OR, ..."`. Those are real mentions, so the MISSING-BAN check has to
+// see them or it reports a guide that plainly names the state.
+//
+// Bare two-letter codes are not safe to match anywhere in prose, because IN, OR,
+// ME, HI, AL, OK, MA, PA and DE are all ordinary English words. So a code counts
+// only inside a run of at least three comma-separated all-caps tokens, which is
+// the shape of a summary cell and does not occur in a sentence.
+const CODE_RUN = /\b[A-Z]{2,3}(?:\s*,\s*[A-Z]{2,3}){2,}\b/g;
+
+function findJurisdictionCodesInRuns(text, valid) {
+  const found = new Set();
+  for (const run of text.match(CODE_RUN) || []) {
+    for (const token of run.split(/\s*,\s*/)) {
+      if (valid.has(token)) found.add(token);
+    }
+  }
+  return found;
+}
+
 function findJurisdictions(text, matchers) {
   let remaining = text;
   const found = [];
@@ -227,6 +278,12 @@ for (const file of files) {
     // as "banned" on a naive whole-row read.
     const statusCell = cells[1] ?? '';
     if (MYTH_VERDICT.test(statusCell)) continue;
+    if (SPECIES_SUBSET.test(cells[0])) {
+      rowsSkipped += 1;
+      if (VERBOSE) console.log(`  skipped (species subset): ${rel} :: ${cells[0]}`);
+      for (const code of codes) namedInTable.add(code);
+      continue;
+    }
     const claimed = classify(statusCell);
     for (const code of codes) {
       namedInTable.add(code);
@@ -287,6 +344,27 @@ for (const file of files) {
       detail:
         `prose names ${legal.jurisdictions[code].name} (${code}), which the map has ` +
         `never been read for on ${animalId}`,
+    });
+  }
+
+  // Restrictions the guide never mentions anywhere. Searched against the whole
+  // file, not just the tables, so a state covered only in prose still counts as
+  // mentioned.
+  const mentionedAnywhere = new Set([
+    ...findJurisdictions(source, matchers),
+    ...findJurisdictionCodesInRuns(source, new Set(Object.keys(legal.jurisdictions))),
+    ...namedInTable,
+  ]);
+  for (const [code, entry] of Object.entries(mapped)) {
+    if (entry.status === 'legal') continue;
+    if (mentionedAnywhere.has(code)) continue;
+    errors.push({
+      file: rel,
+      animalId,
+      kind: entry.status === 'banned' ? 'MISSING-BAN' : 'MISSING',
+      detail:
+        `the map records ${legal.jurisdictions[code].name} (${code}) as ` +
+        `"${entry.status}" for ${animalId}, and the guide never mentions it`,
     });
   }
 }

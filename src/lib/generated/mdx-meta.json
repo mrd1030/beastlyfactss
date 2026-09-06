@@ -5047,7 +5047,7 @@
     "slug": "bengal-cat-legal-guide",
     "title": "Are Bengal Cats Legal? The Generation Rules Explained",
     "seoTitle": "Are Bengal Cats Legal? F1 to F5 Rules by State",
-    "excerpt": "The same Bengal is a domestic cat in Indiana, a dangerous wild animal in Minnesota, and legal in Iowa only from the fourth generation. Four states draw the line four different ways, and one draws it by weight.",
+    "excerpt": "The same Bengal is a domestic cat in Indiana, legal in Iowa only from the fourth generation, and in Minnesota caught by one sentence of a definition and exempted by another. Four states draw the line four different ways, and one draws it by weight.",
     "date": "2026-08-13",
     "category": "Legal",
     "categories": [
@@ -7271,7 +7271,7 @@
     "slug": "boa-constrictor-legal-guide",
     "title": "Is It Legal to Own a Boa Constrictor? Federal Withdrawal and State Rules",
     "seoTitle": "Are Boa Constrictors Legal? State Bans and Permits",
-    "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and one very specific New Jersey subspecies split, are where the real rules live.",
+    "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and Louisiana's 2025 rewrite in particular, are where the real rules live.",
     "date": "2026-07-16",
     "category": "Legal",
     "categories": [
@@ -7289,7 +7289,7 @@
     "image": "/assets/guides/boa-constrictor-legal.jpg",
     "imageAlt": "Boa constrictor coiled, representing its legal status across US states",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-16",
+    "lastReviewed": "2026-09-05",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -7306,16 +7306,16 @@
         "a": "Hawaii bans all snakes outright, a felony-level restriction. New York City bans the whole family Boidae at the municipal level, snakes are otherwise legal in most of New York State. Everywhere else, it comes down to permits rather than outright bans in a few states."
       },
       {
-        "q": "What's the New Jersey subspecies split?",
-        "a": "The single most important nuance for buyers. New Jersey requires a permit for Boa constrictor imperator, the common red-tail or Colombian boa that dominates the pet trade, and for B. c. ortonii, while the true B. c. constrictor subspecies is on the state's exempt list. Most pet-trade boas are imperator, meaning most New Jersey owners do need a permit."
+        "q": "Does New Jersey require a permit for a boa constrictor?",
+        "a": "No. New Jersey's exempt species list at N.J.A.C. 7:25-4.4 names the boa constrictor outright, under the older name Constrictor constrictor, and draws no subspecies distinction. Boas also appear nowhere on the potentially dangerous species list at 7:25-4.8, which reaches only venomous snake families. New Jersey does require a permit for the ball python, which is the reverse of most states and a likely source of the confusion."
       },
       {
         "q": "Do Louisiana or other states have length-based restrictions?",
-        "a": "Louisiana requires a permit specifically for constrictor snakes over 8 feet, naming genus Boa directly. Most other states either don't regulate boas at all (New York State, Connecticut, Ohio, Texas) or exempt the family entirely except for a few named large species (Massachusetts)."
+        "a": "Louisiana has both, and the species rule is the one that matters. Its January 2025 rewrite of LAC 76:XV.101 names Boa constrictor individually on the restricted nonnative species list, so a Restricted Snake Permit is required at any length, on top of a separate general rule for constrictors over eight feet. Missouri's is a true length rule: a dangerous reptile over eight feet must be registered with the county sheriff. Ohio sets its restricted-snake line at twelve feet and lists only pythons and anacondas there, so boas fall outside it. Most other states don't regulate boas at all (New York State, Connecticut, Texas) or exempt the family except for a few named large species (Massachusetts, Rhode Island)."
       },
       {
         "q": "Is Florida's rule on boa constrictors settled?",
-        "a": "Not fully confirmed. Secondary sources report post-2020 Florida rule changes adding some boa species to permit or microchip requirements, but this hasn't been verified against a primary FWC source. If you're in Florida, check the current FWC Prohibited and Conditional species lists directly before relying on any secondhand summary, including this one."
+        "a": "Yes, and the answer is that Florida does not restrict them. Boa constrictor appears on neither of FWC's lists under Chapter 68-5, F.A.C. The Prohibited list of snakes covers the brown tree snake, four Eunectes anacondas, four Python species and two Morelia species; the Conditional list's only reptile is the red-eared slider. The February 2021 rule change that added 16 high-risk reptiles did not add the boa. Claims that Florida bans boa constrictors, which circulate on secondary sites, are wrong."
       }
     ],
     "relatedProducts": [],
@@ -7323,8 +7323,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
-    "headingCount": 7,
+    "sourceCount": 6,
+    "headingCount": 10,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -7816,7 +7816,7 @@
     "faqs": [
       {
         "q": "Is it legal to keep a box turtle I found in my backyard?",
-        "a": "In most states, no, or only with a permit. Indiana, North Carolina, Connecticut, Texas, and West Virginia all restrict or ban taking a box turtle from the wild, with West Virginia going furthest by requiring even pre-owned turtles to be registered with the state."
+        "a": "In most states, no, or only with a permit. Indiana, North Carolina, Connecticut, Texas, and West Virginia all restrict or ban taking a box turtle from the wild, and Texas requires a hunting licence for the take on top of a cap of six. Connecticut and West Virginia go furthest: Connecticut lists the eastern box turtle as a Species of Special Concern, which puts it in a permit category that covers possession as well as collection, and West Virginia required even pre-owned turtles to be registered with the state."
       },
       {
         "q": "If I buy a captive-bred box turtle, is ownership completely unrestricted?",
@@ -7832,8 +7832,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 7,
+    "sourceCount": 9,
+    "headingCount": 10,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -8835,8 +8835,62 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 2,
     "headingCount": 12,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/burmese-python-legal-guide.mdx",
+    "slug": "burmese-python-legal-guide",
+    "title": "Are Burmese Pythons Legal? The Federal Ban a Court Narrowed",
+    "seoTitle": "Are Burmese Pythons Legal? Federal Rule vs States",
+    "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C. Circuit ruling took the interstate half of that ban away, which is why thirty jurisdictions still have no rule of their own.",
+    "date": "2026-10-02",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Burmese Python",
+      "Legal",
+      "Exotic Pet Laws",
+      "Snake Care",
+      "State Laws"
+    ],
+    "readTime": 8,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/burmese-python-legal.jpg",
+    "imageAlt": "Coiled Burmese python showing its patterned tan and brown markings",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-02",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it illegal to own a Burmese python in the US?",
+        "a": "Not federally. The species has been listed as injurious wildlife under the Lacey Act since January 2012, but that statute reaches importation and certain shipments, not ownership. In 2017 the D.C. Circuit held in USARK v. Zinke that the shipment clause does not prohibit transport between states within the continental US. Ownership is a state question, and ten jurisdictions ban it."
+      },
+      {
+        "q": "What did the 2017 court ruling actually change?",
+        "a": "It removed the interstate transport prohibition among the 49 continental states. FWS's own implementation guidance says importing an injurious species into the United States is still illegal without a permit, and shipment between the continental US, DC, Hawaii, Puerto Rico and US possessions is still barred, so Hawaii to California remains prohibited. Moving a listed snake from Texas to Oklahoma is not."
+      },
+      {
+        "q": "Which states ban the Burmese python?",
+        "a": "Ten: Florida, New York, Montana, Alabama, Wyoming, Louisiana, Hawaii, New Mexico, Georgia and New York City. Eight require a permit, three attach a condition, Idaho is unclear, and thirty have no rule reaching the species."
+      },
+      {
+        "q": "Why does Ohio measure the snake instead of naming it?",
+        "a": "Ohio defines a restricted snake as a listed constrictor 'twelve feet or longer,' and the Burmese python is on that list. So a young animal needs nothing and the same animal a few years later needs a restricted snake permit, liability insurance and compliant caging. It is a deadline rather than an exemption."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 9,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -9494,6 +9548,60 @@
     "truth": null,
     "sourceCount": 0,
     "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/capybara-legal-guide.mdx",
+    "slug": "capybara-legal-guide",
+    "title": "Are Capybaras Legal? Twelve Bans and Thirteen Permits",
+    "seoTitle": "Are Capybaras Legal? State Bans and Permit Rules",
+    "excerpt": "The world's largest rodent is legal in 23 US jurisdictions, banned in 12, and needs a permit in 13. Almost none of those rules mention the capybara at all: they are rules about the order Rodentia that happen to catch a 100 pound one.",
+    "date": "2026-10-01",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Capybara",
+      "Legal",
+      "Exotic Pet Laws",
+      "Small & Exotic Pets",
+      "State Laws"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/capybara-legal.jpg",
+    "imageAlt": "Adult capybara resting at the edge of shallow water with reeds behind it",
+    "emoji": "🦫",
+    "lastReviewed": "2026-10-01",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Which states ban capybaras?",
+        "a": "Twelve jurisdictions: California, Georgia, Colorado, Connecticut, Oregon, New Mexico, Alaska, Alabama, Nebraska, Hawaii, the District of Columbia and New York City. Thirteen more require a permit, four are unresolved, and in the remaining 23 nothing reaches the animal."
+      },
+      {
+        "q": "Is a capybara legal in Texas or Florida?",
+        "a": "Texas has no rule that reaches it, so yes. Florida is a yes with paperwork: a capybara falls into Class III, the residual category, which needs a Permit to Possess Class III Wildlife for Personal Use. That permit costs nothing, runs two years, and requires the applicant to be at least 16."
+      },
+      {
+        "q": "Why do so many states regulate an animal they never mention?",
+        "a": "Because they regulate by taxonomic order. Connecticut puts the whole order Rodentia in a restricted category and then excepts nine species by name. Georgia licenses the whole order and excepts six genera. A capybara is not on either exception list, so it is caught without ever being named."
+      },
+      {
+        "q": "Do I need a permit for a capybara in Utah?",
+        "a": "Yes, and it is a real route rather than a closed door. Utah classifies the capybara as a controlled mammal, naming both Hydrochoerus hydrochaeris and Hydrochoerus isthmius, which means a certificate of registration before collection, importation or possession. It sits in the same column as the bobcat and the two-toed sloth."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 8,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -12181,7 +12289,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3,
-    "headingCount": 7,
+    "headingCount": 9,
     "imageWidth": 2400,
     "imageHeight": 1792
   },
@@ -13131,7 +13239,7 @@
     "slug": "corn-snake-legal-guide",
     "title": "Is It Legal to Own a Corn Snake? State-by-State Guide",
     "seoTitle": "Is a Corn Snake Legal in Your State? Full Guide",
-    "excerpt": "Corn snakes are the classic pet-store starter snake almost everywhere, except Georgia, where the state's own wildlife agency lists them as a native species that can't be kept as a pet at all, captive-bred or not. New Jersey, South Carolina, Illinois, Minnesota, and Tennessee all attach their own conditions too.",
+    "excerpt": "Corn snakes are the classic pet-store starter snake almost everywhere, except Georgia, where the state's own wildlife agency lists them as a native species that can't be kept as a pet at all, captive-bred or not. New Jersey, South Carolina, Illinois, Maryland, and Minnesota all attach their own conditions too, and two of them work by morph name rather than by species.",
     "date": "2026-09-26",
     "category": "Legal",
     "categories": [
@@ -13159,7 +13267,7 @@
       },
       {
         "q": "Can I own a captive-bred corn snake in New Jersey?",
-        "a": "You can, but you need a permit. New Jersey's exempted-species list under N.J.A.C. 7:25-4.4 doesn't include corn snake, so a captive-bred or non-New Jersey animal requires a possession permit under 7:25-4.5. That's separate from New Jersey's rule on wild corn snakes, which are a state Endangered species and cannot legally be collected or possessed from the wild at all."
+        "a": "Only if it is one of nine named color morphs. The corn snake is on New Jersey's own endangered species list at N.J.A.C. 7:25-4.13(b), which under 7:25-4.10(a) means no permit may be issued for it and under 7:25-4.15(b) means it may not be kept as a pet. Fish and Wildlife then carves out captive morphs, because a morph is visibly not a wild-phase animal, and names nine that may be kept and sold: red albino, butter, blizzard, candy cane, creamsicle, lavender, pearl, snow, and sun glow. A normal-looking corn snake is barred whatever its paperwork says."
       },
       {
         "q": "Is there a size limit on corn snakes in South Carolina?",
@@ -13171,8 +13279,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 8,
+    "sourceCount": 8,
+    "headingCount": 10,
     "imageWidth": 1200,
     "imageHeight": 896
   },
@@ -17618,7 +17726,7 @@
     "slug": "flying-squirrel-legal-guide",
     "title": "Is It Legal to Own a Flying Squirrel? State-by-State Guide",
     "seoTitle": "Are Flying Squirrels Legal? The Most Restricted Small Pet",
-    "excerpt": "A flying squirrel looks like a small, easy pet, but because it's native wildlife across most of the country, most states regulate it like protected wildlife instead of exotic-pet stock. Out of the 20 states we've checked, only four are a clean yes, ten require a permit, and six are effective bans.",
+    "excerpt": "A flying squirrel looks like a small, easy pet, but because it's native wildlife across most of the country, most states regulate it like protected wildlife instead of exotic-pet stock. Across all 52 jurisdictions only nine are a clean yes, nineteen require a permit, and eighteen are effective bans.",
     "date": "2026-09-27",
     "category": "Legal",
     "categories": [
@@ -17642,7 +17750,7 @@
     "faqs": [
       {
         "q": "Can I legally own a pet flying squirrel?",
-        "a": "It depends heavily on the state. Of the 20 states checked so far, only four, Massachusetts, New Jersey, Tennessee, and Texas, are a clean legal yes with no permit needed. Ten more require a permit, and in several of those, including Georgia and North Carolina, the license statute explicitly excludes an application filed 'merely as a pet.' The remaining six are effective bans."
+        "a": "It depends heavily on the state, and we have now read all 52 jurisdictions. Nine are a clean legal yes with no permit needed: Massachusetts, New Jersey, Tennessee, Florida, Minnesota, Idaho, Washington, North Dakota and South Dakota. Four more are legal with a cap or a sourcing condition attached, Texas, South Carolina, Arkansas and Missouri. Nineteen require a permit, and in several of those, including North Carolina, the license statute explicitly excludes an application filed 'merely as a pet.' Eighteen are effective bans, Utah is presumed prohibited pending a division assessment, and New York remains unresolved."
       },
       {
         "q": "Why is a flying squirrel treated differently than a hamster or gerbil?",
@@ -17658,7 +17766,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 7,
     "headingCount": 7,
     "imageWidth": 1200,
     "imageHeight": 896
@@ -17837,7 +17945,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 2,
     "headingCount": 12,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -18806,7 +18914,7 @@
       },
       {
         "q": "Do I need a permit for a pet-store garter snake in New York?",
-        "a": "Yes, and this is the real surprise. New York's 2006 native-species law classifies the common garter snake as protected wildlife with no open season, and the state's own published guidance says the law does not differentiate between wild-caught and captive-bred animals. That means even a garter snake bought at a pet store needs a state possession permit in New York, a category almost no other state puts pet-store garter snakes into."
+        "a": "There is no permit to get, and that is the real surprise. New York's 2006 native-species law classifies the common garter snake as protected wildlife with no open season, and the state's own published guidance says the law does not differentiate between wild-caught and captive-bred animals. The chain is worth following: ECL 11-0103(2)(c) puts native snakes inside the definition of small game, which makes them protected wildlife, and 11-0107(2) then bars possessing protected wildlife whether it was taken in the state or came from outside it. The only possession licence, ECL 11-0515, is issued for propagation, banding, scientific or exhibition purposes, so a pet-store garter snake in New York has no lawful route at all."
       },
       {
         "q": "Is a garter snake illegal anywhere?",
@@ -18818,7 +18926,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "imageWidth": 1200,
     "imageHeight": 896
@@ -20149,7 +20257,7 @@
       },
       {
         "q": "Can I legally own one in Florida?",
-        "a": "Yes, but only with a conditional permit and secure, locked, double-contained caging. Florida's invertebrate import guidelines name this species directly as requiring that permit."
+        "a": "Yes, but only with a permit from the Department of Agriculture, not from the wildlife agency. Rule 5B-57.004(1) makes it unlawful to possess any arthropod regulated by the Department or the USDA except under a state permit, unless a federal PPQ 526 has issued with the state's concurrence, and the department issues one only where it finds the animal can be contained to prevent escape."
       }
     ],
     "relatedProducts": [],
@@ -21093,6 +21201,60 @@
     "truth": null,
     "sourceCount": 0,
     "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/green-anole-legal-guide.mdx",
+    "slug": "green-anole-legal-guide",
+    "title": "Are Green Anoles Legal? The Lizard That Gets Harder Where It Lives",
+    "seoTitle": "Are Green Anoles Legal? The Native State Problem",
+    "excerpt": "In most of the country a green anole is an unregulated pet shop lizard. In the eight southeastern states it actually comes from, it is native wildlife with bag limits, license requirements and in Mississippi a hunting license.",
+    "date": "2026-10-01",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Green Anole",
+      "Legal",
+      "Exotic Pet Laws",
+      "Reptile Care",
+      "State Laws"
+    ],
+    "readTime": 8,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/green-anole-legal.jpg",
+    "imageAlt": "Green anole with extended pink dewlap perched on a leafy branch",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-01",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are green anoles legal to own?",
+        "a": "In 38 of the 52 jurisdictions we have read, yes, with no rule reaching them at all. Four ban them: Hawaii, Colorado, Georgia and the District of Columbia. Mississippi requires a hunting license. Eight more allow them on conditions such as bag limits or sourcing rules, and New York City is unresolved on a taxonomy question."
+      },
+      {
+        "q": "Why is a green anole restricted in the South but not the North?",
+        "a": "Because Anolis carolinensis is the only anole native to the United States, and its range covers the southeastern states. Northern states regulate it, if at all, as an exotic, and most do not regulate exotics at this size. Southeastern states regulate their own wildlife, and native wildlife rules routinely reach captive-bred animals bought in a shop."
+      },
+      {
+        "q": "Does Louisiana really have a rule about anole size?",
+        "a": "Yes, and it is the only rule on this map written for the species by name. LAC 76:XV.101 makes it illegal to sell or buy a green anole with a snout-vent length under 1 3/4 inches, or under five inches overall with the tail intact. It restricts the transaction, not the keeping."
+      },
+      {
+        "q": "Can I keep a green anole in Georgia?",
+        "a": "No. Georgia DNR lists the green anole among native species that may not be held as pets, and its guidance says the restrictions apply 'regardless of the origin or morphology,' so a captive-bred animal from an out-of-state breeder is in the same position as one caught in a Georgia yard."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 9,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -22770,7 +22932,7 @@
     "image": "/assets/images/hamster-health-issues.jpg",
     "imageAlt": "Hamster being examined by an exotic veterinarian",
     "emoji": "🌰",
-    "lastReviewed": "2026-07-14",
+    "lastReviewed": "2026-09-05",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -22805,7 +22967,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 9,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -24220,8 +24382,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 8,
+    "sourceCount": 6,
+    "headingCount": 9,
     "imageWidth": 1200,
     "imageHeight": 896
   },
@@ -25726,7 +25888,7 @@
       },
       {
         "q": "Is a kingsnake banned anywhere in the US?",
-        "a": "Yes. Hawaii bans the entire snake suborder Serpentes outright, with no pet-keeping permit available, so a California kingsnake is illegal there the same as any other snake. Delaware doesn't ban it but does require a permit, since it's a reptile not native to or generally found in the state. New Mexico and Vermont's rules for this species weren't clearly confirmed either way in this research."
+        "a": "Yes. Hawaii bans the entire snake suborder Serpentes outright, with no pet-keeping permit available, so a California kingsnake is illegal there the same as any other snake. Delaware doesn't ban it but does require a permit, since it's a reptile not native to or generally found in the state. Those are the only two states that stand in the way anywhere in the country."
       }
     ],
     "relatedProducts": [],
@@ -25734,8 +25896,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 6,
+    "sourceCount": 5,
+    "headingCount": 7,
     "imageWidth": 2400,
     "imageHeight": 1792
   },
@@ -28389,7 +28551,7 @@
     "slug": "milk-snake-legal-guide",
     "title": "Is It Legal to Own a Milk Snake? State-by-State Guide",
     "seoTitle": "Is a Milk Snake Legal in Your State? Full Guide",
-    "excerpt": "Milk snakes are a common pet-trade species with one of the more tangled legal pictures out there: Georgia bans them outright as a native species, and Wisconsin restricts even buying a captive-bred one. Pennsylvania and Utah both cap possession in ways that read as applying to purchased pets, not just wild-caught animals.",
+    "excerpt": "Milk snakes are a common pet-trade species with one of the more tangled legal pictures out there: Georgia bans them outright as a native species, and Wisconsin restricts even buying a captive-bred one. Pennsylvania caps possession in a way that reads as reaching purchased pets, and Utah, which looks like it does the same, turns out not to.",
     "date": "2026-09-26",
     "category": "Legal",
     "categories": [
@@ -28429,8 +28591,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 8,
+    "sourceCount": 8,
+    "headingCount": 9,
     "imageWidth": 1200,
     "imageHeight": 896
   },
@@ -30775,6 +30937,10 @@
         "a": "Because they will eat anything presented, indefinitely, with no self-regulation to speak of. Obesity and impaction are the two most common captive problems in this species, and both come from a keeper interpreting an ambush predator's feeding response as hunger."
       },
       {
+        "q": "How do I know if my pacman frog is happy?",
+        "a": "You cannot, and the research is blunt about it. A 2023 systematic review of anuran welfare concluded that the indicators in use only detect compromised welfare, the states that show up once an animal is ill or failing. What you can assess is whether needs are met: a round, steady body condition, burrowing to the eyes, a reliable feeding strike, and no interest in the glass. In this species stillness is correct and restlessness is the warning sign."
+      },
+      {
         "q": "Can pacman frogs live together?",
         "a": "No. They are cannibalistic and will attempt to eat anything that fits in their mouth, including another pacman frog of similar size. Solo housing is not a preference, it is the only option."
       }
@@ -30788,8 +30954,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 10,
+    "sourceCount": 6,
+    "headingCount": 14,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -32266,6 +32432,60 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/prairie-dog-legal-guide.mdx",
+    "slug": "prairie-dog-legal-guide",
+    "title": "Are Prairie Dogs Legal? The Federal Ban Ended in 2008",
+    "seoTitle": "Are Prairie Dogs Legal? 15 States Still Say No",
+    "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox outbreak traced to a Texas pet distributor. The FDA lifted that in 2008. Fifteen states did not follow, and one of them is Colorado.",
+    "date": "2026-09-30",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Prairie Dog",
+      "Legal",
+      "Exotic Pet Laws",
+      "Small & Exotic Pets",
+      "State Laws"
+    ],
+    "readTime": 8,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/prairie-dog-legal.jpg",
+    "imageAlt": "Black-tailed prairie dog standing upright at a burrow entrance on short-grass prairie",
+    "emoji": "🐾",
+    "lastReviewed": "2026-09-30",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it still federally illegal to own a prairie dog?",
+        "a": "No. The FDA removed its restriction effective September 8, 2008, in a final rule that said the measures were 'no longer needed to prevent the further introduction, transmission, or spread of monkeypox.' The companion CDC regulation at 42 CFR 71.56 is still in force, but it bans importing African rodents, and a prairie dog is a North American animal. Federal law has nothing to say about owning one."
+      },
+      {
+        "q": "Why did prairie dogs get banned in the first place?",
+        "a": "A 2003 monkeypox outbreak, the first ever reported in the United States. The virus reached people through pet prairie dogs that had been housed with imported Gambian pouched rats at an Illinois distributor. On June 11, 2003, the CDC Director and the FDA Commissioner issued a joint order barring interstate transport and commercial distribution of prairie dogs and six African rodent genera."
+      },
+      {
+        "q": "Which states ban prairie dogs?",
+        "a": "Fifteen: California, Georgia, Colorado, Connecticut, Oregon, New Mexico, Kentucky, New Hampshire, Alaska, Alabama, Nebraska, Hawaii, New Jersey, the District of Columbia and New York City. Thirteen more require a permit, Arizona and Utah restrict them, and Texas allows up to 25 without a permit but forbids selling one."
+      },
+      {
+        "q": "Can you own a prairie dog in Colorado?",
+        "a": "No, and it is the most surprising entry on the list. Colorado's prohibited terrestrial wildlife rule names 'Prairie dogs (Cynomys spp.)' at the genus level. The proviso that follows preserves scientific collection, relocation and rehabilitation permits, all institutional, so there is no pet route in a state where the animal is native and abundant."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/praying-mantis-cost-guide.mdx",
     "slug": "praying-mantis-cost-guide",
     "title": "How Much Does a Praying Mantis Really Cost?",
@@ -32814,7 +33034,7 @@
       },
       {
         "q": "Which states commonly ban Quaker parakeets outright?",
-        "a": "California, Georgia, Hawaii, Kansas, Kentucky, Maine, Pennsylvania, Rhode Island, Tennessee, and Wyoming are the most consistently cited outright bans. Colorado, Connecticut, and Wisconsin impose bans with exceptions, and New Jersey, Virginia, New York, and Ohio allow ownership under specific conditions like permits or banding."
+        "a": "California, Georgia, Hawaii, Kansas, Kentucky, Maine, Pennsylvania, Rhode Island, Tennessee, and Wyoming are the most consistently cited outright bans, and New Jersey belongs with them rather than with the permit states. Colorado, Connecticut, and Wisconsin impose bans with exceptions, and Virginia, New York, and Ohio allow ownership under specific conditions like banding or feather clipping."
       },
       {
         "q": "Are Quaker parakeets good talkers?",
@@ -32897,6 +33117,60 @@
     "headingCount": 8,
     "imageWidth": 512,
     "imageHeight": 382
+  },
+  {
+    "path": "/content/guides/quaker-parakeet-legal-guide.mdx",
+    "slug": "quaker-parakeet-legal-guide",
+    "title": "Are Quaker Parrots Legal? The Bird Banned for Nest Building",
+    "seoTitle": "Are Quaker Parrots Legal? 13 States Ban Them",
+    "excerpt": "Thirteen states ban the quaker parrot, more than any other bird we have mapped, and not one of them does it because the bird is dangerous. Kansas puts it on a list with silver carp and zebra mussels.",
+    "date": "2026-09-30",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Quaker Parakeet",
+      "Legal",
+      "Exotic Pet Laws",
+      "Bird Care",
+      "State Laws"
+    ],
+    "readTime": 8,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/quaker-parakeet-legal.jpg",
+    "imageAlt": "Green and grey quaker parakeet perched on a branch with a stick nest structure behind it",
+    "emoji": "🦜",
+    "lastReviewed": "2026-09-30",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Which states ban quaker parrots?",
+        "a": "Thirteen: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Maine, Rhode Island and Arkansas require a permit, Virginia allows them on a condition, and Tennessee is unresolved. In the remaining 34 jurisdictions on our map, including New York City, nothing reaches the species."
+      },
+      {
+        "q": "Why do so many states ban a small parrot?",
+        "a": "Because of what it builds. The quaker is the only parrot that does not nest in a cavity. It weaves a bulky stick nest, often on electrical infrastructure, and the nest material arcs the current. In the first five months of 2001 alone, Florida Power and Light logged 498 outages attributed to the birds, affecting more than 21,000 customers. Every state ban is an escape-and-establishment rule, not a dangerous-animal rule."
+      },
+      {
+        "q": "Can I own a quaker parrot in Virginia?",
+        "a": "Yes, if the bird is captive bred and wears a seamless closed band. Virginia lists Myiopsitta monachus in its permit table and then writes an exception: 'No permit is required for monk parakeets (quakers) that have been captive bred and are closed-banded with a seamless band.' A seamless band can only go on a chick, so it is proof the bird was not wild caught. Keep the paperwork."
+      },
+      {
+        "q": "Is the quaker parrot legal in New York?",
+        "a": "Yes, in both the state and New York City, which is unusual because the city bans far more than the state does. Established quaker colonies have lived in Brooklyn for decades. The bird is banned in neighboring Connecticut, New Jersey and Pennsylvania."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/quaker-parakeet-tank-setup-guide.mdx",
@@ -34154,13 +34428,13 @@
     "image": "/assets/images/red-eared-slider-health-issues.jpg",
     "imageAlt": "Red-eared slider turtle being examined for shell and skin health",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-30",
+    "lastReviewed": "2026-09-05",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What causes metabolic bone disease and soft shell in red-eared sliders?",
-        "a": "Insufficient UVB lighting, a calcium or vitamin D3 imbalance, or both together. Watch for a soft or deformed shell, lethargy, swollen limbs, difficulty swimming or walking, and pyramiding, a bumpy, raised growth pattern on the shell scutes. Early cases can improve with corrected lighting and diet plus veterinary care, but advanced cases can be permanent or fatal."
+        "a": "Insufficient UVB lighting, a calcium or vitamin D3 imbalance, or both together. Watch for a soft or misshapen shell, deformed leg bones, lethargy, swollen limbs, and difficulty swimming or walking. Early cases can improve with corrected lighting and diet plus veterinary care, but advanced cases can be permanent or fatal. Pyramiding is a separate problem with different causes, covered below."
       },
       {
         "q": "What is shell rot and how serious is it?",
@@ -34189,8 +34463,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 9,
+    "sourceCount": 6,
+    "headingCount": 10,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -35086,20 +35360,22 @@
       "Reptile Shedding",
       "Ecdysis",
       "Reptile Care",
-      "Skin Health"
+      "Skin Health",
+      "Turtles",
+      "Tortoises"
     ],
-    "readTime": 5,
+    "readTime": 8,
     "difficulty": "Beginner",
     "image": "/assets/images/reptile-shedding.jpg",
     "imageAlt": "Healthy leopard gecko during a clean shed with perfect skin coming off",
     "emoji": "🦎",
-    "lastReviewed": "2026-06-19",
+    "lastReviewed": "2026-09-05",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Is it normal for my reptile to stop eating before a shed?",
-        "a": "Yes, this is common during the pre-shed (dyscratic) phase, which can last 5 to 14 days. Appetite typically returns to normal once the shed is complete."
+        "a": "Yes, refusing food in the run-up to a shed is common. A snake typically stays opaque for about 4 to 7 days, with the shed itself following roughly 4 to 7 days after the eyes clear, so the whole cycle is a week or two. Appetite usually returns once the shed is complete."
       },
       {
         "q": "How often should a healthy reptile shed?",
@@ -35111,11 +35387,11 @@
       },
       {
         "q": "Does low humidity always cause stuck shed?",
-        "a": "It's the most common cause, but not the only one. Missing rough surfaces to initiate the peel, nutritional deficiencies, and underlying health issues can all cause dysecdysis even when humidity looks adequate on paper."
+        "a": "It's the most common cause, but not the only one. The Merck Veterinary Manual also lists skin parasites, nutritional deficiencies, infectious disease, a lack of suitable abrasive surfaces, and reduced thyroid function. An animal with nothing rough to rub against can fail to start the peel in a perfectly humid enclosure."
       },
       {
         "q": "How long should a soak be for helping with a stuck shed?",
-        "a": "15 to 20 minutes in shallow, warm water is typical, always supervised. This softens retained shed enough to gently assist its removal without stressing or injuring the animal."
+        "a": "Published recommendations vary by how stubborn the retained shed is. Kevin Wright, DVM, DABVP describes a 30 minute soak in chin-deep water at cage temperature before manual removal. The Merck Veterinary Manual describes a longer soak, several hours in warm water at 77 to 85 degrees Fahrenheit, for retained skin. Supervise throughout either way."
       }
     ],
     "relatedProducts": [
@@ -35127,8 +35403,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 4,
+    "sourceCount": 5,
+    "headingCount": 7,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -35556,8 +35832,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 8,
+    "sourceCount": 6,
+    "headingCount": 9,
     "imageWidth": 1200,
     "imageHeight": 896
   },
@@ -35843,7 +36119,7 @@
     "image": "/assets/images/russian-tortoise-health-issues.jpg",
     "imageAlt": "Russian tortoise undergoing a vet exam to check its shell and limbs",
     "emoji": "🐢",
-    "lastReviewed": "2026-09-03",
+    "lastReviewed": "2026-09-05",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -35861,7 +36137,7 @@
       },
       {
         "q": "What causes pyramiding in Russian tortoises?",
-        "a": "Excess dietary protein, overfeeding, insufficient hydration or humidity, or a calcium deficiency. It's manageable and preventable through correct diet and hydration, but once it's happened, it isn't reversible."
+        "a": "VCA Animal Hospitals is direct that the condition is not completely understood, but notes it occurs commonly in young tortoises when environmental temperature and humidity are not optimal, or when calcium, phosphorus or protein intake is imbalanced. Correct humidity, temperature and a properly paced diet through the growing years are the practical defense, and it is not reversible once it has happened."
       },
       {
         "q": "Do Russian tortoises get parasites?",
@@ -36462,8 +36738,8 @@
     "path": "/content/guides/serval-legal-guide.mdx",
     "slug": "serval-legal-guide",
     "title": "Are Servals Legal? The Most Restricted Pet in America",
-    "seoTitle": "Are Servals Legal? Banned Outright in 16 of 43 Jurisdictions",
-    "excerpt": "Thirty-one of the forty-three jurisdictions we checked restrict the serval, sixteen of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name.",
+    "seoTitle": "Are Servals Legal? Banned Outright in 15 of 47 Jurisdictions",
+    "excerpt": "Twenty-nine of the forty-seven jurisdictions we checked restrict the serval, fifteen of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name.",
     "date": "2026-08-19",
     "category": "Legal",
     "categories": [
@@ -37056,6 +37332,123 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/snake-shedding-humidity-myth-guide.mdx",
+    "slug": "snake-shedding-humidity-myth-guide",
+    "title": "How Snakes Actually Shed, and Why Humidity Is Not the Engine",
+    "seoTitle": "Snake Shedding: The Humidity Myth Explained",
+    "excerpt": "The belief that a snake needs a damp enclosure to shed gets the mechanism backwards. The separation is done by a lymph-like fluid and enzymes released under the old skin, and humidity only matters at the very end.",
+    "date": "2026-10-05",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Shedding",
+      "Ecdysis",
+      "Humidity",
+      "Snake Care",
+      "Reptile Care",
+      "Care Tips",
+      "Myths"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/snake-shedding-humidity-myth.jpg",
+    "imageAlt": "Corn snake in the blue phase with cloudy opaque eyes before shedding",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-05",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do snakes need high humidity to shed?",
+        "a": "Not to start the process. The separation between old and new skin is done internally by a lymph-like fluid and enzymes that form a cleavage zone, and that happens regardless of how damp the room is. Humidity matters at the final stage, when the loosened skin has to come away in one piece, and for that a humid hide is usually enough."
+      },
+      {
+        "q": "Why do my snake's eyes turn blue before a shed?",
+        "a": "That cloudy blue-white color is the fluid itself. It accumulates between the old spectacle covering the eye and the newly formed layer beneath it, which scatters light and turns a normally transparent scale opaque. The eyes clear again in the days before the shed because the fluid gets reabsorbed, not because anything dried out."
+      },
+      {
+        "q": "Is it the snake's natural oils that lubricate the shed?",
+        "a": "Close, but the veterinary literature describes it as a lymph-like fluid carrying enzymes rather than an oil. Lipids do exist in snake skin and form its water barrier, but the thing doing the separating during a shed is diffused lymph plus enzymes that break down the material cementing the two layers together."
+      },
+      {
+        "q": "My snake had a bad shed even though humidity was correct. Why?",
+        "a": "Humidity is one cause among several. The Merck Veterinary Manual lists skin parasites, nutritional deficiencies, infectious disease, a lack of suitable abrasive surfaces, and reduced thyroid function alongside low humidity. A snake with nothing rough to rub against can fail to start the peel in a perfectly humid enclosure."
+      },
+      {
+        "q": "Can a desert snake shed properly in a dry enclosure?",
+        "a": "Yes, and rosy boas are the standing proof. They are kept at a dry baseline year round and shed normally, with a temporary humid hide offered only during the shed cycle itself. Keeping an arid species permanently damp to help it shed trades a minor problem for respiratory infection and scale rot."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "sphagnum-moss"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1600,
+    "imageHeight": 1067
+  },
+  {
+    "path": "/content/guides/snapping-turtle-legal-guide.mdx",
+    "slug": "snapping-turtle-legal-guide",
+    "title": "Are Snapping Turtles Legal? Seasons, Creel Limits and Bans",
+    "seoTitle": "Are Snapping Turtles Legal? Seasons and Bag Limits",
+    "excerpt": "The snapping turtle is the one native reptile a dozen states still let you take, and they answer it in the fishing regulations rather than the pet ones. Twelve jurisdictions attach a season and a bag limit. Eight ban it outright.",
+    "date": "2026-10-02",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Snapping Turtle",
+      "Legal",
+      "Exotic Pet Laws",
+      "Reptile Care",
+      "State Laws"
+    ],
+    "readTime": 8,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/snapping-turtle-legal.jpg",
+    "imageAlt": "Common snapping turtle at the muddy edge of a pond with its head raised",
+    "emoji": "🐢",
+    "lastReviewed": "2026-10-02",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to keep a snapping turtle you found?",
+        "a": "It depends on the state and it is not the same question as whether you may own one. Twelve jurisdictions set an open season and a bag limit for taking one from the wild, usually under a fishing license: New York runs 15 July to 30 September with a twelve-inch minimum, Michigan 15 July to 15 September at two a day, Illinois 15 June to 15 October at two a day. Eight jurisdictions ban possession entirely."
+      },
+      {
+        "q": "Why is a snapping turtle in the fishing regulations?",
+        "a": "Because several states treat it as a fishery rather than as wildlife. Maryland handles the species under its Fisheries Service, and Nebraska puts it alongside fish, bullfrogs and mussels with a daily bag limit set annually by the Commission. If you look only in the exotic pet chapter you will find nothing."
+      },
+      {
+        "q": "Is there a federal rule on baby snapping turtles?",
+        "a": "Yes. 21 CFR 1240.62 bars the sale or commercial distribution of any live turtle with a carapace under four inches, and hatchling snapping turtles are well under that. The rule carries exceptions for scientific, educational and exhibitional purposes, for export, and for sales 'not in connection with a business.'"
+      },
+      {
+        "q": "Which states ban snapping turtles outright?",
+        "a": "Eight: California, Nevada, Oregon, Colorado, Delaware, Rhode Island, Hawaii and New York City. Arizona, Iowa and Louisiana restrict them, six require a permit, and twelve allow them with a season or a limit attached."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 8,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -38200,7 +38593,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 7,
     "imageWidth": 512,
     "imageHeight": 382
@@ -38327,7 +38720,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
+    "sourceCount": 2,
     "headingCount": 9,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -39922,7 +40315,7 @@
       },
       {
         "q": "Is there a state where tiger salamanders are protected as native wildlife?",
-        "a": "Yes. The eastern tiger salamander is listed as state-endangered in New Jersey, meaning taking or possessing the wild native population there is independently prohibited under state endangered-species law, a third regime distinct from both the federal rule and bait regulations."
+        "a": "Yes, and in New Jersey the protection reaches captive animals too. The eastern tiger salamander is third on the state endangered list at N.J.A.C. 7:25-4.13(b). Under 7:25-4.10(a) no permit may be issued for a species designated endangered, and under 7:25-4.15(b) such an animal may not be kept as a pet or for hobby purposes, so the bar does not turn on where the animal came from. Fish and Wildlife separately bars keeping larval salamanders, water dogs, dino dogs, and mud puppies, because they cannot be told apart by sight at that stage."
       },
       {
         "q": "So is it actually legal to own a pet tiger salamander?",
@@ -39934,7 +40327,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
+    "sourceCount": 3,
     "headingCount": 6,
     "imageWidth": 1168,
     "imageHeight": 784
