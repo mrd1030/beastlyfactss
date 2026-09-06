@@ -610,7 +610,7 @@ export default function GuideDetail() {
                 <Link to="/care-packages/store/" className="group block">
                   <div className="flex items-start gap-3 mb-3">
                     <img
-                      src={carePackage.thumbnail}
+                      src={carePackage.thumbnail || carePackage.cover}
                       alt={`${carePackage.name} cover`}
                       loading="lazy"
                       className="w-12 h-12 object-cover rounded-lg border border-border flex-shrink-0 bg-white"

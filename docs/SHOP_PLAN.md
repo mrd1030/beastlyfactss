@@ -45,24 +45,31 @@ Decision taken for this plan: sell the rebuilt editions, update `pages` and
 preview images from the `source/` HTML. Do not reuse the Gumroad preview
 images.
 
-Rebuilt editions and page counts, from the PDFs themselves:
+Current editions, from the source HTML, which is what `rebuilt/` now holds
+for every package (six were re-rendered on 6 September 2026 because the source
+had moved past the PDF):
 
 | Package | File | Pages |
 | --- | --- | --- |
-| axolotl | Axolotl_Care_Package_v2.1.pdf | 42 |
-| ball-python | Ball_Python_Care_Package_v2.2.pdf | 35 |
+| axolotl | Axolotl_Care_Package_v2.2.pdf | 42 |
+| ball-python | Ball_Python_Care_Package_v2.2.pdf | 34 |
 | bearded-dragon | Bearded_Dragon_Care_Package_v3.1.pdf | 35 |
 | betta-fish | Betta_Fish_Care_Package_v2.2.pdf | 37 |
 | budgie | Budgie_Care_Package_v2.1.pdf | 40 |
-| crested-gecko | Crested_Gecko_Care_Package_v2.1.pdf | 35 |
+| crested-gecko | Crested_Gecko_Care_Package_v2.1.pdf | 34 |
 | goldfish | Goldfish_Care_Package_v2.1.pdf | 40 |
 | guinea-pig | Guinea_Pig_Care_Package_v2.1.pdf | 41 |
-| hamster | Hamster_Care_Package_v2.2.pdf | 37 |
+| hamster | Hamster_Care_Package_v2.3.pdf | 37 |
 | leopard-gecko | Leopard_Gecko_Care_Package_v2.1.pdf | 35 |
 | lovebird | Lovebird_Care_Package_v2.1.pdf | 39 |
 | rabbit | Rabbit_Care_Package_v2.1.pdf | 40 |
-| russian-tortoise | Russian_Tortoise_Care_Package_v2.1.pdf | 38 |
-| tarantula | Tarantula_Care_Package_v2.2.pdf | 44 |
+| russian-tortoise | Russian_Tortoise_Care_Package_v2.2.pdf | 38 |
+| tarantula | Tarantula_Care_Package_v2.3.pdf | 44 |
+
+The catalog carries these numbers. When a source is edited again, re-render
+with `_render.mjs`, move the old PDF to `rebuilt/past versions/` with a row in
+its README, update `pages`, `version` and `versionDate` in the catalog, the
+`edition` in the Worker's mirror, and re-upload the bucket file.
 
 Two more exist as finished PDFs with cover art but are not in the catalog at
 all: cockatiel (v1.1, 40 pages) and cockatoo (v1.1, 45 pages). Adding them is
@@ -133,9 +140,9 @@ Per package:
 | `inside` (6 cards: emoji, title, line) | Same, check against the rebuilt contents page |
 | `previewHeadline` | Same |
 | `whoFor` (3) and `whatNot` (3) | Same |
-| `contents` (section by section) | Transcribe from `content/CAREPACKAGE Guides/source/<id>.html`, like the Hamster |
+| `contents` (section by section) | Parsed from the `.toc` block on page 2 of `content/CAREPACKAGE Guides/source/<id>.html`: each `toc-label` is a section (drop the "Section 0N ·" prefix), each table row an item. Done for all 14 |
 | `pages`, `version`, `versionDate` | From the rebuilt PDF |
-| `image` | Self-hosted cover, see step 3 |
+| `cover` | `/assets/guides/<id>.jpg`, the guide hero. The Gumroad `image` and `thumbnail` fields are gone from the catalog; the guide page and article block fall back to `cover` |
 | `previews` (5 paths) | Self-hosted, see step 3 |
 | `stripePriceIdSandbox` | Step 4 |
 
@@ -171,10 +178,10 @@ top of each Gumroad HTML file. The cover tokens are in
 
 Nothing sold here should load from `public-files.gumroad.com`.
 
-- Covers: `content/CAREPACKAGE Guides/images/<id>-cover-1.jpg` exists for the
-  nine plus cockatiel and cockatoo. Copy the chosen one to
-  `public/assets/care-packages/<id>/cover.jpg`. The five coming-soon packages
-  already use `/assets/guides/<id>.jpg`.
+- Covers: every package uses `/assets/guides/<id>.jpg`, the same hero the free
+  guide uses, so nothing loads from Gumroad's CDN. The portrait photos in
+  `content/CAREPACKAGE Guides/images/` are the PDF cover candidates, not
+  product art.
 - Previews: `node scripts/render-care-package-previews.mjs <id> <page> ...`
   renders the named pages of `content/CAREPACKAGE Guides/source/<id>.html`
   with headless Chromium to `public/assets/care-packages/<id>/page-<N>.jpg`,
@@ -247,14 +254,22 @@ After live sales are confirmed:
 - `RELATED_ARTICLES` is unaffected. Product pages are not articles.
 - The 404 for an unknown package id already works.
 
-## Open question from session 1
+## After session 2
 
-The Hamster source HTML is now at version 2.3 (the legal edition, Oregon
-added), but the PDF in `rebuilt/` and in the bucket is v2.2 and the catalog
-says 2.2. Either render v2.3 with `_render.mjs`, upload it over
-`care-packages/hamster.pdf`, and bump `version` in both the catalog and the
-Worker, or leave 2.2 on sale. The preview images were rendered from the 2.3
-source; none of the five pages changed between the two.
+Everything a product page needs now exists for ten packages: hamster and the
+nine. They still sell on Gumroad because step 4 (a Sandbox price per package,
+mirrored in the Worker) and step 5 (the PDF in the bucket) are not done for
+the nine, and step 6 says not to flip a package before both are. The pages
+were verified by flipping all ten in a scratch build and screenshotting them
+light and dark; nothing in the repo is flipped except the hamster.
+
+The Hamster bucket file is still v2.2. `rebuilt/Hamster_Care_Package_v2.3.pdf`
+is the edition the catalog and Worker now name, so upload it before the branch
+merges:
+
+```
+node scripts/upload-care-package.mjs hamster "content/CAREPACKAGE Guides/rebuilt/Hamster_Care_Package_v2.3.pdf"
+```
 
 ## Sessions and model
 
@@ -263,7 +278,7 @@ Four sessions, in this order. Each one ends with a branch push.
 | Session | Work | Model, effort |
 | --- | --- | --- |
 | 1 | **Done, 6 September 2026.** Step 1 on the Hamster: template, themes module, carousel, prerender-safe reveal. Buyable in the Sandbox | Opus 5 (or Fable 5.1), high effort. This is the design and architecture session; getting it right once saves it on the other thirteen |
-| 2 | Step 2 for the nine Gumroad packages: lift copy, fix page counts, transcribe contents, write themes. Step 3 previews and covers | Sonnet 5, medium effort. Mechanical and repetitive, and cheap to rerun on a package if one comes out wrong |
+| 2 | **Done, 6 September 2026.** Step 2 for the nine Gumroad packages: copy rewritten against the rebuilt editions, contents parsed, themes written. Step 3 previews rendered for all nine | Sonnet 5, medium effort. Mechanical and repetitive, and cheap to rerun on a package if one comes out wrong |
 | 3 | Step 2 for ball-python, betta-fish, rabbit, tarantula (and cockatiel, cockatoo): copy written from the source HTML. Step 3 previews for those | Opus 5, medium effort. Writing sales copy that has to be true to a 40-page PDF is where the cheaper model drifts |
 | 4 | Steps 4 to 6: Stripe prices, Worker mirror, flip each package, test each purchase. Go-live checklist | Sonnet 5, medium effort, with you at the keyboard for the service role key and the dashboard steps |
 

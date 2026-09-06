@@ -9,14 +9,15 @@ import { CARE_PACKAGES } from '@/lib/data/carePackages';
 // wants to look never leaves the site to do it.
 export default function CarePackageBlock({ animal }) {
   const pkg = CARE_PACKAGES.find(p => p.id === animal);
-  // Coming-soon packages have no Gumroad listing or cover yet - stay silent
-  // in the article until the status flips to 'live'.
-  if (!pkg || pkg.status === 'coming-soon') return null;
+  // A package sold here (storefront: 'stripe') shows whatever its status
+  // says; a coming-soon package with no listing anywhere stays silent in the
+  // article until the status flips to 'live'.
+  if (!pkg || (pkg.status === 'coming-soon' && pkg.storefront !== 'stripe')) return null;
 
   return (
     <div className="my-8 rounded-2xl border border-secondary/30 border-l-4 border-l-secondary bg-secondary/5 p-5 flex items-center gap-4">
       <img
-        src={pkg.thumbnail}
+        src={pkg.thumbnail || pkg.cover}
         alt={`${pkg.name} cover`}
         loading="lazy"
         className="hidden sm:block w-16 h-16 object-cover rounded-xl border border-border flex-shrink-0 bg-white"
@@ -30,7 +31,7 @@ export default function CarePackageBlock({ animal }) {
               inside articles, and text beside {expressions} renders as several
               nodes that the captured HTML merges, failing hydration. See main.jsx. */}
           {'Want this as a printable reference? The '}
-          <Link to="/care-packages/store/" className="font-semibold underline decoration-secondary/40 hover:decoration-secondary">
+          <Link to={pkg.storefront === 'stripe' ? `/care-packages/${pkg.id}/` : '/care-packages/store/'} className="font-semibold underline decoration-secondary/40 hover:decoration-secondary">
             {pkg.name}
           </Link>
           {` turns this guide into a ${pkg.pages}-page PDF you can keep by the enclosure, ${pkg.price}.`}

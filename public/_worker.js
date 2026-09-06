@@ -633,7 +633,7 @@ async function notifySubscriber(env) {
 const CARE_PACKAGE_STORE = {
   hamster: {
     name: 'Hamster Care Package',
-    edition: '2.2',
+    edition: '2.3',
     priceIdSandbox: 'price_1UC9Up9qtY3Ob6vac8xRLEu2',
     priceIdLive: '',
   },

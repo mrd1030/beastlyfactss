@@ -93,6 +93,10 @@ own field:
 | Goldfish | 3.0 | 2.0 | t3 |
 | Hamster | 3.0 | 2.1, reversed 5 Sep 2026, see below | t3 |
 | Bearded Dragon | 3.0 | 3.0, correct already | t3 |
+| `Axolotl_Care_Package_v2.1.pdf` | 2.2 | Legal edition. Every jurisdiction re-read against the primary rule: Washington DC and New Mexico moved to banned, Maine rewritten, and Wyoming, Alabama, Vermont, Massachusetts, Hawaii, Rhode Island, Minnesota and Arkansas added, with the federal injurious listing's effect in Wyoming and Alabama now stated |
+| `Russian_Tortoise_Care_Package_v2.1.pdf` | 2.2 | Legal edition, cut from the same source pass as the other September 2026 legal editions |
+| `Hamster_Care_Package_v2.2.pdf` | 2.3 | Legal edition. Oregon added to the legality table: a white list with no hamster on it, and a default rule that bars an unlisted species by silence |
+| `Tarantula_Care_Package_v2.2.pdf` | 2.3 | Legal edition. Oregon, New Mexico and New Jersey added to the legality table |
 
 Hamster and Bearded Dragon reached a genuine third edition on their own count,
 so their numbers stood. Hamster's version history had picked up a line claiming
