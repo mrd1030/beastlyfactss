@@ -95,3 +95,6 @@ frontpage trials/
 
 # care package render cache (fonts re-downloaded on demand by source/_render.mjs)
 content/CAREPACKAGE Guides/source/.fonts/
+
+# voice batch working files
+.voice-batch/
