@@ -12,6 +12,8 @@
 //   node scripts/check-voice.mjs --since 2026-09-07 only articles dated on/after
 //   node scripts/check-voice.mjs --json out.json    write findings for voice-batch.mjs
 //   node scripts/check-voice.mjs --slug betta-fish-cost-guide
+//   node scripts/check-voice.mjs --match cost-guide   slugs matching a regex
+//   node scripts/check-voice.mjs --limit 20          first N after filtering
 //   node scripts/check-voice.mjs --write-baseline   snapshot today's failures
 //
 // `build` runs it with --strict. Articles listed in scripts/voice-baseline.json
@@ -33,6 +35,8 @@ const STRICT = flag('--strict');
 const SINCE = opt('--since');
 const JSON_OUT = opt('--json');
 const ONLY_SLUG = opt('--slug');
+const MATCH = opt('--match') ? new RegExp(opt('--match')) : null;
+const LIMIT = Number(opt('--limit') || 0);
 const WRITE_BASELINE = flag('--write-baseline');
 const BASELINE_FILE = 'scripts/voice-baseline.json';
 const BASELINE = new Set(fs.existsSync(BASELINE_FILE) ? JSON.parse(fs.readFileSync(BASELINE_FILE, 'utf8')) : []);
@@ -186,6 +190,7 @@ const results = [];
 for (const f of files) {
   const r = check(f);
   if (ONLY_SLUG && r.slug !== ONLY_SLUG) continue;
+  if (MATCH && !MATCH.test(r.slug)) continue;
   if (SINCE && (!r.date || r.date < SINCE)) continue;
   results.push(r);
 }
@@ -197,6 +202,7 @@ if (WRITE_BASELINE) {
   process.exit(0);
 }
 
+if (LIMIT) results.splice(LIMIT);
 const withErrors = results.filter((r) => r.errors.length && !(STRICT && BASELINE.has(r.slug)));
 const skipped = STRICT ? results.filter((r) => r.errors.length && BASELINE.has(r.slug)).length : 0;
 const withWarnings = results.filter((r) => r.warnings.length && !r.errors.length);
