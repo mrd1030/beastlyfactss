@@ -28,15 +28,15 @@ The two oldest hub guides and the two thinnest health guides.
 
 ## Batch 2: cost guides without a number (7)
 
-A cost query wants a table and a monthly figure. These lack one or both.
+A cost query wants a table and a monthly figure. Three of these have no table at all (fire skink, quaker parakeet, green iguana); the other four have a setup table but no monthly number.
 
 | Slug | Words | Sources | Add |
 |---|---|---|---|
 | fire-skink-cost-guide | 442 | 2 | A setup cost table (enclosure, heat, UVB, substrate, hides, thermostat, hygrometer) with a total. A real monthly figure in the ongoing section instead of "modest." |
 | quaker-parakeet-cost-guide | 463 | 2 | A setup cost table. Vet cost ranges (wellness exam, blood panel, emergency). |
 | green-iguana-cost-guide | 560 | 3 | A setup cost table split into hatchling enclosure and adult enclosure, since the second purchase is the trap. |
-| corn-snake-cost-guide | 411 | 1 | A monthly figure and what it is made of (feeders, substrate, electricity). A setup table. Sources to at least 3. |
-| box-turtle-cost-guide | 591 | 0 | A monthly figure. A setup table split indoor vs outdoor. Sources block from scratch. |
+| corn-snake-cost-guide | 411 | 1 | A monthly figure and what it is made of (feeders, substrate, electricity). The setup table exists; add an ongoing-cost table beside it. Sources to at least 3. |
+| box-turtle-cost-guide | 591 | 0 | A monthly figure and an ongoing-cost table. The setup table exists. Sources block from scratch. |
 | rosy-boa-cost-guide | 732 | 4 | A monthly figure in the ongoing section instead of "low." |
 | sulcata-tortoise-cost-guide | 764 | 2 | A monthly figure by life stage (hatchling indoors, juvenile, adult outdoors with winter heating). Winter electricity as its own line. |
 

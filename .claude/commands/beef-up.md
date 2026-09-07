@@ -45,9 +45,11 @@ PHASE 2: one article at a time
      section. No em or en dashes: split the sentence or use a colon. US
      spelling.
    - Numbers go in a table when there are more than three of them. Tables
-     use the site's markdown table shape already used elsewhere in the
-     series (cost guides use the same columns as the nearest sibling cost
-     guide; find one with `grep -l "^|" content/guides/*-cost-guide.mdx`).
+     are the `<ComparisonTable headers={[...]} rows={[[...], ...]} />`
+     component, not markdown pipes. Copy the exact shape from the nearest
+     sibling guide (cost guides use headers `["Item", "Cost Range"]` for
+     setup and `["Item", "Annual Cost"]` or `["Item", "Monthly Cost"]` for
+     ongoing; see content/guides/sulcata-tortoise-cost-guide.mdx).
    - "See a vet today if" lists are bullet lists, one sign per line, no
      intensifiers, no reassurance.
    - Stress-sign sections give the sign, what it means, and what to do, in
