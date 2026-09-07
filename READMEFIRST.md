@@ -41,18 +41,24 @@ over anything here.
 | Firsthand byline notes | src/lib/data/firsthand.js |
 | Care package sources | content/CAREPACKAGE Guides/source/*.html |
 
-## State as of 2026-09-07
+## State as of 2026-09-07 (evening)
 
 - Voice pass: done across every series (handling, enrichment, tank setup,
   cost, health, feeding, legal, overview, vs, 10-surprising). The strict
   gate passes. The 111 baseline slugs are one-off blog posts; they are the
   only articles still failing, and nobody has decided whether to pass them.
-- Beef-up: batch 1 (crested gecko humidity, leopard gecko temperature,
-  tokay and uromastyx health) is on main, fact-checked against every cited
-  source. Batches 2 to 5 are scoped in docs/BEEF_UP_PLAN.md and not started.
-- Care packages: analyzed, not edited. They are already leaner than the
-  site on intensifiers (1.2 per 1,000 words). Their one tic is "X, not Y"
-  cadence. No action planned.
+- Display fixes: done and on main. The body H1 renders nothing
+  (src/components/mdx/DemotedH1.jsx), the excerpt block is skipped when the
+  lede repeats it (`ledeMatchesExcerpt` from scripts/sync-articles.js), and
+  FAQ answers cannot carry a markdown link (`faq-link` checker rule).
+- Beef-up: batches 1 and 2 are on main, each fact-checked against every
+  cited source in two rounds. Batches 3 to 5 (handling guides) are scoped
+  in docs/BEEF_UP_PLAN.md and not started.
+- Sources rule: retailer product pages never go in Sources. Cost guides
+  carry one plain "Prices last checked <Month Year> at ..." line under the
+  last cost table instead.
+- Care packages: analyzed, not edited. Leaner than the site on
+  intensifiers (1.2 per 1,000 words). No action planned.
 
 ## How a batch gets verified (do this every time)
 
@@ -73,52 +79,14 @@ catches the defects the commands produce. Per batch:
 5. Read three articles yourself, before and after, as a stranger would.
 6. Commit per batch, push the branch, report, and wait for "merge".
 
-## Known display problems, not yet fixed
-
-These were spotted on the live site on 2026-09-07 and are the next job.
-They are rendering and data problems, not writing problems.
-
-### 1. Title and lede shown twice at the top of most articles
-
-Two separate causes, both in how the page renders:
-
-- **Duplicate title.** 709 of 772 MDX bodies begin with `# <Title>`. The
-  page already renders `post.title` as the H1 (src/pages/Blog.jsx, around
-  line 860), and the body's H1 is passed through
-  src/components/mdx/DemotedH1.jsx, which turns it into an H2. So the title
-  appears twice: once in the header, once as a styled H2 above the body.
-  Fix: make DemotedH1 return `null` (one line, no content churn), then check
-  the "On This Page" table of contents still builds from H2s in the body
-  and does not list the demoted title. Stripping the `# ` lines from the
-  709 files is the alternative if the component route breaks something.
-- **Duplicate lede.** In 232 articles the body's first paragraph is the
-  same sentence as the `excerpt` field, and Blog.jsx renders the excerpt as
-  an italic block with an orange bar right above the body. Fix at sync
-  time: in scripts/sync-articles.js, compare the normalized first body
-  paragraph to the excerpt and emit a flag (for example
-  `ledeMatchesExcerpt: true`) into the generated article data; then in
-  Blog.jsx skip the italic excerpt block when the flag is set. Do not
-  rewrite 232 excerpts by hand; the cards and meta descriptions still use
-  them.
-
-### 2. FAQ answers show raw markdown links
-
-Blog.jsx renders each FAQ answer as plain text (`<p>{faq.a}</p>`), so a
-markdown link in an answer prints as `[text](/url/)`. Five answers carry
-one: aquarium-filtration-guide, bird-sexing-weight-body-condition-guide,
-discus-handling-guide, outdoor-reptile-housing-guide,
-zebra-danio-feeding-guide. Fix: strip those five links to their anchor text
-(the FAQ schema text should be plain anyway), and add an error rule to
-scripts/check-voice.mjs (`faq-link`) so no FAQ answer carries `](` again.
-Do not add a markdown renderer to the FAQ block.
-
 ## Next jobs, in order
 
-1. The two display fixes above (one session, small code change plus a
-   checker rule, verify on a local build with `npm run dev` screenshots).
-2. `/beef-up 2 go` (seven cost guides), then verify per the loop above.
-3. `/beef-up 3 go` and `/beef-up 4 go` (handling guides).
+1. `/beef-up 3 go` (tokay, savannah monitor, kingsnake, ackie handling).
+2. `/beef-up 4 go` (cockatoo, blue-tongue skink, tegu, boa handling).
+3. `/beef-up 5 go` (the six hands-off species), optional.
 4. Decide what to do with the 111 baseline blog posts.
+5. Consider moving the closing "For more, see the ..." link sentences into
+   the related-articles component so articles stop ending on a nav line.
 
 ## The prompt to paste into a new session
 
@@ -129,22 +97,20 @@ Mike will say "merge" when a piece is done.
 
 ```
 Read READMEFIRST.md, then CLAUDE.md, then the "Writing an article" section
-of docs/RULES.md. Work on a new branch from main. Never push main unless I
-say merge. Max two agents at a time.
+of docs/RULES.md, then .claude/commands/beef-up.md. Work on a new branch
+from main named claude/beef-up-batch-3. Never push main unless I say
+merge. Max two agents at a time.
 
-Job 1: fix the two display problems in READMEFIRST.md, section "Known
-display problems". Duplicate title: make DemotedH1 render nothing and
-confirm the On This Page list still works. Duplicate lede: add a sync-time
-flag in scripts/sync-articles.js and hide the excerpt block in Blog.jsx
-when the lede matches it. FAQ links: strip the markdown links out of the
-five FAQ answers listed there to plain text, and add a faq-link error rule
-to scripts/check-voice.mjs. Run the strict voice check, the link check,
-and the related-articles check. Start the dev server and screenshot the
-goldfish tank setup guide and the discus handling guide top and FAQ,
-before and after, so I can see it. Push the branch and stop.
-
-Job 2, after I say merge: run /beef-up 2 go on a new branch, then verify
-it the way READMEFIRST.md describes, including one fact-check agent that
-opens every cited source. Fix what it finds, push the branch, report the
-before and after word counts and anything you left unfixed, and stop.
+Run /beef-up 3 go. Then verify it the way READMEFIRST.md describes:
+checker on every slug plus the strict, link, and related-articles gates;
+diff each file against main so no link target, affiliate link, component,
+date, or existing number changed; compare every rewritten FAQ answer to
+the old one for lost hedges or figures the body does not carry; then run
+one fact-check agent that opens every cited URL and classifies each added
+claim as supported, unsupported, misattributed, or contradicted, and
+checks that any pre-existing number in the article was not changed. Fix
+everything it finds and run it once more. Sources hold facts only: no
+retailer product pages. Push the branch and report the before and after
+word counts per article, the sources added, and anything left unfixed.
+Then stop and wait for me to say merge.
 ```
