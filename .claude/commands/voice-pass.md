@@ -67,8 +67,18 @@ For each article in the findings, in order:
      sentence already used. "Other small mammals with bonding routines of
      their own" was invented, and "The species away from its care sheet" is
      not a sentence. When in doubt: "More on X is in the [Y guide]."
-   - Comma-as-dash and "X, not Y" warnings: vary the shape. Period first,
-     colon second. Do not swap every instance for the same new shape.
+   - Warnings (contrast-cadence, comma-splice, faq-long, intensifier-title)
+     are for a human read, not for you. Do not act on them. In particular,
+     never touch "rather than": swapping it for "not" or "never" turns a
+     preference into a prohibition, which is how "released rather than
+     presented" became "released, never presented".
+   - Only edit a sentence that contains a flagged word or is one of the
+     named structural moves. A sentence with no trigger keeps its wording
+     and its punctuation, comma splices included. You are not here to
+     standardize phrasing.
+   - When rewriting an FAQ answer that reports results, keep the original
+     order of findings. Never move a null or unflattering result behind a
+     positive one.
    - First person on a documentary page: make it third person. Do not add a
      disclosure line.
 3. Never touch: dates, slug, tags, category, image fields, any markdown link
