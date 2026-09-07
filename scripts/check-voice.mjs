@@ -82,6 +82,10 @@ const fmField = (fm, key) => {
 function faqAnswers(fm) {
   return [...fm.matchAll(/^\s+a:\s*"((?:[^"\\]|\\.)*)"\s*$/gm)].map((m) => m[1]);
 }
+function faqQuestions(fm) {
+  return [...fm.matchAll(/^\s+-\s+q:\s*"((?:[^"\\]|\\.)*)"\s*$/gm)].map((m) => m[1]);
+}
+const MAX_FAQ_WORDS = 70;
 
 // Body prose only: no Sources block, no components, no code, no link URLs.
 function prose(body) {
@@ -156,9 +160,26 @@ function check(file) {
   const splices = text.match(COMMA_SPLICE) || [];
   if (splices.length > MAX_SPLICE_WARN) add(warnings, 'comma-splice', `${splices.length} comma-as-dash clauses (${splices.slice(0, 3).map((s) => s.trim()).join(' | ')})`);
 
-  // Opener: first sentence is about the animal, not a link to the guide.
-  const rawLede = firstSentence(body.replace(/<[^>]+>/g, ' ').replace(/^import .*$/gm, ''));
-  if (OPENER_LINK.test(rawLede)) add(errors, 'opener-link', `"${rawLede.slice(0, 140)}"`);
+  // Opener and closer. The first paragraph is about the animal, with no link
+  // in it: the care-guide link moves to the end of the first section. The
+  // last paragraph is not a link dump: three or more links in it, or the
+  // "browse the rest of our" sentence, is the site talking to itself. In
+  // September 2026 this was 561 openers and 423 closers. Links are never
+  // removed to satisfy either rule, only moved and given a sentence each.
+  const paras = body
+    .replace(/<Sources>[\s\S]*?<\/Sources>/g, '')
+    .replace(/^## Sources[\s\S]*$/m, '')
+    .split(/\n\s*\n/)
+    .map((x) => x.trim())
+    .filter((x) => x && !/^(#|<|import |---|!\[)/.test(x));
+  if (paras.length) {
+    const first = paras[0];
+    const last = paras[paras.length - 1];
+    if (OPENER_LINK.test(first)) add(errors, 'opener-link', `first paragraph carries a link: "${first.slice(0, 120)}"`);
+    const closerLinks = (last.match(/\]\(\//g) || []).length;
+    if (closerLinks >= 3) add(errors, 'closer-dump', `${closerLinks} links in the closing paragraph`);
+    if (/browse the (rest of our|full)/i.test(last)) add(errors, 'closer-dump', '"browse the rest of our" closer');
+  }
 
   // FAQ that photocopies the body.
   const answers = faqAnswers(fm);
@@ -173,6 +194,18 @@ function check(file) {
       if (total && hit / total > FAQ_OVERLAP) copied += 1;
     }
     if (copied) add(errors, 'faq-copied', `${copied} of ${answers.length} FAQ answers repeat the body`);
+  }
+
+  // FAQ hygiene: no intensifiers in a question or answer (a 40-word answer
+  // has no room for filler), and answers that run long are usually a rewrite
+  // that grew instead of answering. The first batch grew every rewritten
+  // answer by 40 to 70 percent and smuggled in unsourced claims doing it.
+  for (const q of faqQuestions(fm)) {
+    if (q.match(INTENSIFIER)) add(errors, 'intensifier-faq', `question "${q.slice(0, 100)}"`);
+  }
+  for (const a of answers) {
+    if (a.match(INTENSIFIER)) add(errors, 'intensifier-faq', `answer "${a.slice(0, 100)}"`);
+    if (words(a).length > MAX_FAQ_WORDS) add(warnings, 'faq-long', `${words(a).length} words: "${a.slice(0, 80)}"`);
   }
 
   // First person on a species nobody here has kept.
