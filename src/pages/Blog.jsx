@@ -19,6 +19,7 @@ import buildStamp from '@/lib/generated/build-stamp.json';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import { AUTHOR, PUBLISHER, authorSchema } from '@/lib/data/author';
+import { firsthandNote } from '@/lib/data/firsthand';
 import { ArticleMetaProvider } from '@/lib/articleMeta';
 import PostEngagement from '@/components/blog/PostEngagement';
 import SaveButton from '@/components/shared/SaveButton';
@@ -495,7 +496,7 @@ export default function Blog() {
   );
 }
 
-function AuthorBio() {
+function AuthorBio({ firsthand }) {
   return (
     <div className="mt-10 mb-2 flex items-start gap-4 bg-card border border-border rounded-2xl p-5">
       {AUTHOR.image ? (
@@ -514,6 +515,15 @@ function AuthorBio() {
       )}
       <div>
         <p className="font-body font-bold text-sm text-foreground mb-1">{`Written by ${AUTHOR.name}`}</p>
+        {/* Only species Mike has lived with get a line here (see
+            src/lib/data/firsthand.js). Everything else says nothing, on
+            purpose: the general method is disclosed once on /about/. */}
+        {firsthand && (
+          <p className="text-xs font-body font-semibold text-primary leading-relaxed mb-1.5 flex items-start gap-1.5">
+            <span aria-hidden="true">🐾</span>
+            <span>{firsthand}</span>
+          </p>
+        )}
         <p className="text-xs text-muted-foreground font-body leading-relaxed mb-2">
           {AUTHOR.bio}
         </p>
@@ -956,7 +966,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               </div>
             )}
 
-            <AuthorBio />
+            <AuthorBio firsthand={firsthandNote(postSlug)} />
 
             <PostEngagement postId={post._id || post.id} postTitle={post.title} postSlug={post.slug?.current || post.id} />
 

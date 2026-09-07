@@ -43,6 +43,19 @@ working checklist.
   section, never in a heading, never in the first sentence of an article, and
   never two in one paragraph. If the sentence dies without it, the sentence
   had no claim.
+- Two voices, chosen by whether Mike has lived with the animal. Firsthand
+  species (bearded dragon, rabbit, golden retriever, guinea pig, cockatoo,
+  budgie, lovebird, chinchilla; the list is src/lib/data/firsthand.js) may use
+  first person, one concrete beat per article, and the byline shows a note
+  automatically. Every other species is documentary voice: third person, the
+  sources carry the weight, no warmth about an animal nobody here has held.
+  Never write "I keep" or "in my experience" on a documentary page. A line
+  like "I would not handle a mourning gecko" is allowed anywhere because it
+  is a recommendation, not a claim of experience. Legal pieces and the
+  Chronicles keep their own voices.
+- The first sentence of an article is about the animal. The care-guide link
+  moves to the end of the first section. "For everything else, see our full
+  guide" as an opener is a nav bar pretending to be a sentence.
 - "X, not Y" and "X rather than Y" are one move, not a paragraph closer. Use
   each at most twice per article. A section that ends on that cadence every
   time reads as assembled.
