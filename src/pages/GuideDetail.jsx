@@ -5,6 +5,7 @@ import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen, Calculator, HelpCircle, BookMarked } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
+import { firsthandNote } from '@/lib/data/firsthand';
 import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { relatedPosts } from '@/lib/relatedPosts';
@@ -329,6 +330,7 @@ export default function GuideDetail() {
   }
 
   const diffClass = difficultyColor[guide.difficulty] || 'text-muted-foreground bg-muted';
+  const firsthand = firsthandNote(guide.id);
 
   const ogImage = guide.image
     ? `https://beastlyfacts.com${guide.image}`
@@ -466,6 +468,12 @@ export default function GuideDetail() {
             </button>
           </div>
           <p className="text-base text-foreground font-body italic mb-4">{guide.tagline}</p>
+          {firsthand && (
+            <p className="text-xs font-body font-semibold text-primary mb-4 flex items-start gap-1.5">
+              <span aria-hidden="true">🐾</span>
+              <span>{firsthand}</span>
+            </p>
+          )}
 
           {/* Mobile-only: the sidebar's TOC (below) sits in a column that
               collapses to the bottom of the page once the grid drops to a
