@@ -114,3 +114,32 @@ retailer product pages. Push the branch and report the before and after
 word counts per article, the sources added, and anything left unfixed.
 Then stop and wait for me to say merge.
 ```
+
+## The check prompt, for a fresh session after a batch is pushed
+
+```
+Read READMEFIRST.md, then CLAUDE.md, then the "Writing an article" section
+of docs/RULES.md. Fetch origin and check out branch claude/beef-up-batch-3.
+Do not push main. Max two agents at a time.
+
+You are the second pair of eyes on a batch another session wrote. Verify
+it the way READMEFIRST.md describes, in this order:
+1. node scripts/check-voice.mjs --slug on every changed guide, then
+   --strict, check-internal-links.mjs, check-related-articles.mjs,
+   check-affiliate-mdx.mjs, check-seo-tags.mjs.
+2. Diff every changed file against main: link targets, AffiliateLink
+   hrefs, component names, dates, tags, and every pre-existing number must
+   be unchanged. Sources may only gain entries, and none may be a retailer
+   product or listing page. No em or en dashes anywhere in the diff.
+3. For every rewritten FAQ answer, compare old and new: no hedge lost, no
+   figure the body does not carry, no growth, no near-verbatim body copy.
+4. Run one agent that opens every cited URL and classifies each added
+   claim as supported, unsupported, misattributed, or contradicted, checks
+   arithmetic in any table, and flags any pre-existing number that
+   changed.
+5. Read two of the guides yourself, before and after, as a stranger.
+Fix every defect on the branch, rerun step 1, commit "Beef up: batch 3
+check", push the branch, and report: what the batch got right, what you
+fixed with before and after quotes, and anything you left because it was
+in Mike's original text. Then stop and wait for me to say merge.
+```
