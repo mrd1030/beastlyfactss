@@ -102,7 +102,9 @@ function buildRequest(r) {
 // ---------- validation of a returned file ----------
 const fmOf = (s) => (s.match(/^---\r?\n([\s\S]*?)\r?\n---/) || [, ''])[1];
 const bodyOf = (s) => s.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, '');
-const stripFaqs = (fm) => fm.replace(/^faqs:[\s\S]*?(?=^\S|\Z)/m, '');
+// Drop the faqs block: everything from `faqs:` to the next top-level key or
+// the end of the frontmatter. (JS has no \Z, hence the end-of-input lookahead.)
+const stripFaqs = (fm) => fm.replace(/^faqs:[\s\S]*?(?=\n[A-Za-z#]|(?![\s\S]))/m, '');
 const linkSet = (s) => new Set([...s.matchAll(/\]\(([^)]+)\)/g)].map((m) => m[1]).sort());
 const componentSig = (s) => (s.match(/<[A-Z][A-Za-z]*/g) || []).sort().join(',');
 const affiliateSig = (s) => (s.match(/href="[^"]+"/g) || []).sort().join(',');
