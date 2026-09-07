@@ -235,7 +235,13 @@ if (WRITE_BASELINE) {
   process.exit(0);
 }
 
-if (LIMIT) results.splice(LIMIT);
+// --limit counts articles that still fail, so repeated runs on one series
+// walk through it instead of returning the same already-clean files.
+if (LIMIT) {
+  const failing = results.filter((r) => r.errors.length).slice(0, LIMIT);
+  results.length = 0;
+  results.push(...failing);
+}
 const withErrors = results.filter((r) => r.errors.length && !(STRICT && BASELINE.has(r.slug)));
 const skipped = STRICT ? results.filter((r) => r.errors.length && BASELINE.has(r.slug)).length : 0;
 const withWarnings = results.filter((r) => r.warnings.length && !r.errors.length);
