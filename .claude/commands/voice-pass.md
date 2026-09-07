@@ -48,14 +48,25 @@ For each article in the findings, in order:
      flagged alone.
    - Never open an answer with a rhetorical beat ("No, and nothing sold as
      one changes that"). Answer, then the reason, then stop.
+   - Hedges and qualifiers are facts, not filler. "can be", "may", "a real
+     chance of", "tends to", "usually", "generally", "roughly", "often",
+     "sometimes" carry over verbatim into any rewrite. "Can bite" never
+     becomes "will bite". If dropping a hedge is the only way to make an
+     answer shorter, leave the answer alone.
+   - Never delete a clause that has no flagged word in it. A sentence that
+     is not named in the findings is not yours to touch, even to tidy it.
    - Opener link: the first paragraph is about the animal and carries no link.
-     Move the care-guide link sentence to the end of the first section, same
-     targets, as its own short paragraph that says why the reader would go
-     there ("What all of this costs is in the cost guide.").
+     Move the care-guide link sentence to the end of the intro, as the last
+     paragraph before the first H2, so it never lands inside a section the
+     reader came for. Same targets, its own short paragraph, with a reason
+     ("What all of this costs is in the cost guide.").
    - Closer dump: a closing paragraph with three or more links, or one ending
      in "browse the rest of our", becomes two plain sentences. Each link gets
      a reason. Every link stays, every target stays. Never delete a link to
-     satisfy this rule.
+     satisfy this rule. Describe a linked page only in words the original
+     sentence already used. "Other small mammals with bonding routines of
+     their own" was invented, and "The species away from its care sheet" is
+     not a sentence. When in doubt: "More on X is in the [Y guide]."
    - Comma-as-dash and "X, not Y" warnings: vary the shape. Period first,
      colon second. Do not swap every instance for the same new shape.
    - First person on a documentary page: make it third person. Do not add a
