@@ -39,9 +39,15 @@ For each article in the findings, in order:
      the sentence to make one. Headings lose the word or get a new heading
      that names the point. The first sentence of the article never carries one.
    - FAQ copied from the body: rewrite that answer as two or three sentences
-     that answer what the worried owner is asking. It may use a fact from the
-     body. It may not reuse the body's sentences. Leave answers that were not
+     that answer what the worried owner is asking. Every fact in the new
+     answer must already appear in the body of the same article. Add no
+     mechanism, transmission route, product name, cause, or outcome that is
+     not written above. The new answer may not be longer than the one it
+     replaces. Keep the one sign the owner can act on tonight. Strip
+     intensifiers from the FAQ question too. Leave answers that were not
      flagged alone.
+   - Never open an answer with a rhetorical beat ("No, and nothing sold as
+     one changes that"). Answer, then the reason, then stop.
    - Opener link: the first sentence becomes a sentence about the animal. Move
      the care-guide link sentence to the end of the first section, same target.
    - Comma-as-dash and "X, not Y" warnings: vary the shape. Period first,
@@ -52,7 +58,9 @@ For each article in the findings, in order:
    target, any <AffiliateLink>, any component, the <Sources> block. Do not add
    warmth, jokes, first person, or new claims. Do not add em or en dashes.
 4. Re-run `node scripts/check-voice.mjs --slug <slug>` and confirm 0 errors
-   before moving on. If a rule cannot be satisfied without changing a fact,
+   before moving on. Then re-read every FAQ answer you rewrote against the
+   body and delete any claim the body does not make. The first batch put an
+   airborne transmission route into an adenovirus answer this way. If a rule cannot be satisfied without changing a fact,
    leave that finding and say so in the final list.
 5. Move to the next article. Do not stop to ask between articles.
 

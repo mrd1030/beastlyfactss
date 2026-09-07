@@ -82,6 +82,10 @@ const fmField = (fm, key) => {
 function faqAnswers(fm) {
   return [...fm.matchAll(/^\s+a:\s*"((?:[^"\\]|\\.)*)"\s*$/gm)].map((m) => m[1]);
 }
+function faqQuestions(fm) {
+  return [...fm.matchAll(/^\s+-\s+q:\s*"((?:[^"\\]|\\.)*)"\s*$/gm)].map((m) => m[1]);
+}
+const MAX_FAQ_WORDS = 70;
 
 // Body prose only: no Sources block, no components, no code, no link URLs.
 function prose(body) {
@@ -173,6 +177,18 @@ function check(file) {
       if (total && hit / total > FAQ_OVERLAP) copied += 1;
     }
     if (copied) add(errors, 'faq-copied', `${copied} of ${answers.length} FAQ answers repeat the body`);
+  }
+
+  // FAQ hygiene: no intensifiers in a question or answer (a 40-word answer
+  // has no room for filler), and answers that run long are usually a rewrite
+  // that grew instead of answering. The first batch grew every rewritten
+  // answer by 40 to 70 percent and smuggled in unsourced claims doing it.
+  for (const q of faqQuestions(fm)) {
+    if (q.match(INTENSIFIER)) add(errors, 'intensifier-faq', `question "${q.slice(0, 100)}"`);
+  }
+  for (const a of answers) {
+    if (a.match(INTENSIFIER)) add(errors, 'intensifier-faq', `answer "${a.slice(0, 100)}"`);
+    if (words(a).length > MAX_FAQ_WORDS) add(warnings, 'faq-long', `${words(a).length} words: "${a.slice(0, 80)}"`);
   }
 
   // First person on a species nobody here has kept.
