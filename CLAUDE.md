@@ -20,7 +20,7 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 
 ## Writing & Content Rules
 - The full consolidated rulebook is docs/RULES.md. Read it before writing or editing content. The rules below are the non-negotiables.
-- Never use em or en dashes. Use commas or periods instead.
+- Never use em or en dashes. Say it another way: split the sentence, use a colon, or cut the aside. A comma is not a dash substitute.
 - Use US spelling in prose. British variants are fine in SEO tags. Prefer the spelling "grey".
 - Keep the existing split structure for care guides (cost / handling / health / tank setup). Do not turn them into long-form pillar pages.
 - Never renumber facts. Removing a fact must leave an id gap (favorites are keyed by id).

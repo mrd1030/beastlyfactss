@@ -30,8 +30,22 @@ working checklist.
   e.g. `categories: ["Pet Care", "Dogs", "Cats"]`, or it never appears under
   the species pills on /blog/. The blog filters on the array when present.
   Ten dog/cat health guides shipped invisible to both pills before this rule.
-- No em or en dashes anywhere. US spelling, "grey" preferred. No AI-tell
-  phrasing ("nature's ultimate X", "let that sink in", "delve into").
+- No em or en dashes anywhere. When a draft reaches for a dash, say it another
+  way: split it into two sentences, use a colon, or cut the aside. A comma is
+  not a dash substitute. "Round fish gulp air, it is how they fail" is a comma
+  splice wearing a dash's job, and 900 of them in a row is a fingerprint. If
+  both halves are full clauses, they get a period.
+- US spelling, "grey" preferred. No AI-tell phrasing ("nature's ultimate X",
+  "let that sink in", "delve into").
+- Intensifiers are rationed, not banned. "genuinely", "actually", "really",
+  and "the real X" are fine in Mike's mouth once in a while. They are not
+  fine as the thing that makes a claim sound credible. Limits: at most one per
+  section, never in a heading, never in the first sentence of an article, and
+  never two in one paragraph. If the sentence dies without it, the sentence
+  had no claim.
+- "X, not Y" and "X rather than Y" are one move, not a paragraph closer. Use
+  each at most twice per article. A section that ends on that cadence every
+  time reads as assembled.
 - Deliver the structure the lead-in promises: "six surprising facts" means an
   actual numbered list, numbered consistently.
 - Care guides keep the split structure (cost / handling / health / tank setup),
