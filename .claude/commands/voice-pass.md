@@ -81,6 +81,13 @@ For each article in the findings, in order:
      positive one.
    - First person on a documentary page: make it third person. Do not add a
      disclosure line.
+   - Hedges are facts. "can", "may", "often", "typically", "usually",
+     "many", "some" survive every rewrite, and "should" never becomes "needs"
+     or "must". Do not swap "recommending" for "push", "commonly recommended"
+     for "the common recommendation", or "many keepers" for "most keepers".
+   - Warnings are for humans. Never touch "rather than", comma-splice, or
+     "X, not Y" sentences unless the finding is an error. Never touch a
+     sentence no finding names, and never delete a clause to shorten one.
 3. Never touch: dates, slug, tags, category, image fields, any markdown link
    target, any <AffiliateLink>, any component, the <Sources> block. Do not add
    warmth, jokes, first person, or new claims. Do not add em or en dashes.

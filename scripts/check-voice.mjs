@@ -208,6 +208,11 @@ function check(file) {
     if (words(a).length > MAX_FAQ_WORDS) add(warnings, 'faq-long', `${words(a).length} words: "${a.slice(0, 80)}"`);
   }
 
+  // The excerpt is the card and meta text: an intensifier there is filler in
+  // the one line that has the least room for it.
+  const excerpt = fmField(fm, 'excerpt');
+  if (excerpt && excerpt.match(INTENSIFIER)) add(errors, 'intensifier-excerpt', `"${excerpt.slice(0, 100)}"`);
+
   // First person on a species nobody here has kept.
   if (!firsthandNote(slug)) {
     const fp = text.match(FIRST_PERSON_KEEPER);
