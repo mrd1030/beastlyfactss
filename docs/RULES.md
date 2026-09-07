@@ -86,6 +86,15 @@ working checklist.
   traits get scoped, figures must be current. Arithmetic-check the title,
   excerpt, and meta description last and deliberately, they are the most shared.
 
+### Sources are for facts, not prices
+
+A `<Sources>` entry is a vet, university, government, manufacturer spec, or
+established husbandry reference. Never a retailer product page or a
+for-sale listing. When a cost guide quotes retail prices, put one plain
+line under the last cost table, no links: "Prices last checked <Month
+Year> at <retailer names>. Retail prices move; treat the table as a
+snapshot, not a quote."
+
 ## Linking: everything to and from somewhere
 
 - Every article carries 1 to 2+ in-body internal links, written by hand. The

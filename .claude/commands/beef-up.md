@@ -67,7 +67,12 @@ PHASE 2: one article at a time
    no copied sentence. Do not add FAQs. Do not touch FAQs the section does
    not bear on.
 5. Sources: add each source you used to the existing `<Sources>` block in
-   the same list shape. If the file has no Sources block, add one after the
+   the same list shape. Sources are for facts: vet, university, government,
+   manufacturer spec sheets, and established husbandry references. Never a
+   retailer product or listing page. Prices come from retailers, but they
+   go in one plain-text line under the last cost table, "Prices last
+   checked <Month Year> at <retailer names>. Retail prices move; treat the
+   table as a snapshot, not a quote.", with no links. If the file has no Sources block, add one after the
    last body paragraph, before any closing component, in the shape used by
    the nearest sibling guide. Three to five sources per article. Never pad
    to hit a number.

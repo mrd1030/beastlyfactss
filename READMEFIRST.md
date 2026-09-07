@@ -20,7 +20,9 @@ over anything here.
 - Content dates use US Eastern. Cloud sessions run UTC and tick over at
   8pm Eastern: `TZ=America/New_York date +%F`.
 - Research means web search with sources you opened. Three to five per
-  article. Never cite a page you did not load.
+  article. Never cite a page you did not load. Sources are for facts;
+  retailer product pages never go in Sources. Retail prices get one plain
+  "Prices last checked <Month Year> at ..." line under the last cost table.
 
 ## Where things live
 
