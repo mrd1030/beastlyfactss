@@ -9,7 +9,7 @@ export const mammalBeastfiles = [
     habitat: 'Forest',
     group: 'Mammals',
     overview:
-      'A pangolin is a mammal wearing armour made of the same protein as your fingernails. Its overlapping keratin scales cover everything but the face and belly, and when threatened it rolls into a ball so tight that big cats generally give up. It has no teeth at all. Instead it tears open ant and termite nests with heavy front claws and collects insects on a tongue that, in the largest species, is longer than its own body and anchors near the pelvis rather than in the mouth. Eight species survive, four in Africa and four in Asia.',
+      'A pangolin is a mammal wearing armor made of the same protein as your fingernails. Its overlapping keratin scales cover everything but the face and belly, and when threatened it rolls into a ball so tight that big cats generally give up. It has no teeth at all. Instead it tears open ant and termite nests with heavy front claws and collects insects on a tongue that, in the largest species, is longer than its own body and anchors near the pelvis rather than in the mouth. Eight species survive, four in Africa and four in Asia.',
     origin:
       'Sub-Saharan Africa and across South and Southeast Asia, from savannah and open woodland to tropical forest, with some species largely arboreal and others burrowing.',
     notableTraits: [
@@ -45,7 +45,7 @@ export const mammalBeastfiles = [
     origin:
       'The Sahara and the arid belt across North Africa, east into the Sinai and Arabian deserts, in sandy country stable enough to hold a burrow.',
     notableTraits: [
-      'Ears up to around 15 centimetres, used to shed body heat',
+      'Ears up to around 15 centimeters, used to shed body heat',
       'Thick fur on the soles of the feet for walking on hot sand',
       'Can survive long periods without drinking free water',
       'Nocturnal, sheltering in sand burrows through the day',
@@ -106,13 +106,13 @@ export const mammalBeastfiles = [
     habitat: 'Arctic',
     group: 'Mammals',
     overview:
-      'The narwhal is a medium-sized whale of the high Arctic, and the tusk is the thing everyone knows about it. It is not a horn: it is a canine tooth, almost always the left one, that grows straight through the upper lip and can pass three metres. It spirals, always counter-clockwise. Mostly males carry one. The tusk is dense with nerve endings, which has led to the idea that it works as a sensor sampling the water, though narwhals have also been filmed using it to stun fish. They dive extremely deep beneath sea ice and spend their entire lives in Arctic water.',
+      'The narwhal is a medium-sized whale of the high Arctic, and the tusk is the thing everyone knows about it. It is not a horn: it is a canine tooth, almost always the left one, that grows straight through the upper lip and can pass three meters. It spirals, always counter-clockwise. Mostly males carry one. The tusk is dense with nerve endings, which has led to the idea that it works as a sensor sampling the water, though narwhals have also been filmed using it to stun fish. They dive extremely deep beneath sea ice and spend their entire lives in Arctic water.',
     origin:
       'The Arctic waters of Canada, Greenland, Norway and Russia, following seasonal sea ice and wintering in deep, densely iced offshore areas.',
     notableTraits: [
       'The tusk is an elongated left canine tooth, not a horn',
       'It always spirals counter-clockwise',
-      'Dives beyond 1,500 metres, among the deepest of any marine mammal',
+      'Dives beyond 1,500 meters, among the deepest of any marine mammal',
       'Has no dorsal fin, which suits life under sea ice',
       'The tusk carries millions of nerve connections to its surface',
     ],
@@ -169,7 +169,7 @@ export const mammalBeastfiles = [
     habitat: 'Savannah',
     group: 'Mammals',
     overview:
-      'Everyone is taught that a giraffe needs an enormous heart to push blood two metres uphill to its brain, usually quoted at around 11 kilograms. Measured properly, a giraffe heart is 0.5 to 0.6 percent of body mass, which is an ordinary mammalian heart. The pressure it generates is genuinely extreme, roughly twice ours, but it comes from a thick-walled left ventricle with a small chamber rather than sheer size. The rest of the system is the interesting part: tight skin on the legs acting like a compression stocking, and a mesh of vessels at the base of the skull that buffers the pressure change when the head goes down to drink.',
+      'Everyone is taught that a giraffe needs an enormous heart to push blood two meters uphill to its brain, usually quoted at around 11 kilograms. Measured properly, a giraffe heart is 0.5 to 0.6 percent of body mass, which is an ordinary mammalian heart. The pressure it generates is genuinely extreme, roughly twice ours, but it comes from a thick-walled left ventricle with a small chamber rather than sheer size. The rest of the system is the interesting part: tight skin on the legs acting like a compression stocking, and a mesh of vessels at the base of the skull that buffers the pressure change when the head goes down to drink.',
     origin:
       'Fragmented populations across sub-Saharan Africa, in savannah, open woodland and scrub where acacia and similar trees grow.',
     notableTraits: [
@@ -236,11 +236,11 @@ export const mammalBeastfiles = [
     habitat: 'Savannah',
     group: 'Mammals',
     overview:
-      'Elephants talk mostly in frequencies below human hearing. Their rumbles run down to around 14 hertz, low enough that the sound carries for kilometres across open country instead of dissipating, and part of it travels through the ground as well as the air. Elephants pick up those vibrations through their feet and trunk and can orient toward a call from far outside sight. The trunk itself is a boneless structure of tens of thousands of muscle units, precise enough to pick up a single seed and strong enough to break a branch. Herds are matriarchies led by the oldest female, whose memory of water in a drought year is a survival asset for everyone.',
+      'Elephants talk mostly in frequencies below human hearing. Their rumbles run down to around 14 hertz, low enough that the sound carries for kilometers across open country instead of dissipating, and part of it travels through the ground as well as the air. Elephants pick up those vibrations through their feet and trunk and can orient toward a call from far outside sight. The trunk itself is a boneless structure of tens of thousands of muscle units, precise enough to pick up a single seed and strong enough to break a branch. Herds are matriarchies led by the oldest female, whose memory of water in a drought year is a survival asset for everyone.',
     origin:
       'Sub-Saharan Africa, in savannah, open woodland, marsh and semi-desert, with the largest remaining populations in southern and eastern Africa.',
     notableTraits: [
-      'Rumbles below human hearing that carry for kilometres',
+      'Rumbles below human hearing that carry for kilometers',
       'Detects ground vibration through its feet',
       'A trunk with tens of thousands of muscle units and no bone',
       'Matriarchal herds led by the oldest female',
@@ -280,7 +280,7 @@ export const mammalBeastfiles = [
       'Can turn its head roughly 270 degrees',
     ],
     conservation:
-      'Least Concern for this species, though other sloths are not so lucky. Road building and forest fragmentation are the practical threats, because a sloth crossing open ground is nearly defenceless.',
+      'Least Concern for this species, though other sloths are not so lucky. Road building and forest fragmentation are the practical threats, because a sloth crossing open ground is nearly defenseless.',
     funFacts: [
       'The weekly descent accounts for a large share of all sloth predation deaths.',
       'Moths live in the fur and lay their eggs in the dung during that trip.',
@@ -298,7 +298,7 @@ export const mammalBeastfiles = [
     factAnimal: 'Wolf',
     name: 'Gray Wolf',
     scientific: 'Canis lupus',
-    tagline: 'There is no alpha wolf. The researcher who popularised the idea spent years retracting it.',
+    tagline: 'There is no alpha wolf. The researcher who popularized the idea spent years retracting it.',
     habitat: 'Forest',
     group: 'Mammals',
     overview:
@@ -307,8 +307,8 @@ export const mammalBeastfiles = [
       'Forest, tundra, mountain and grassland across North America, Europe and Asia, in what remains of a range that once covered most of the northern hemisphere.',
     notableTraits: [
       'Packs are families, not ranked strangers',
-      'Howls carry for several kilometres',
-      'Can cover tens of kilometres in a day while hunting',
+      'Howls carry for several kilometers',
+      'Can cover tens of kilometers in a day while hunting',
       'Bite force among the strongest of any canid',
       'Breeding pair usually leads because they are the parents',
     ],
@@ -342,7 +342,7 @@ export const mammalBeastfiles = [
       'Prides are built around related females who stay for life',
       'Males hold tenure in coalitions for only a few years',
       'Females nurse each other’s cubs',
-      'A roar audible from around eight kilometres away',
+      'A roar audible from around eight kilometers away',
     ],
     conservation:
       'Vulnerable, with the population down substantially over recent decades. The pressures are habitat loss, declining prey, and conflict with livestock farmers.',
@@ -398,7 +398,7 @@ export const mammalBeastfiles = [
     habitat: 'Savannah',
     group: 'Mammals',
     overview:
-      'The serval is a medium sized African cat that has specialised almost entirely in one thing: finding rodents it cannot see. It has the longest legs of any cat relative to body size and ears large enough to look borrowed, and it hunts in tall wetland grass by standing still, listening, and then launching itself at a sound. That combination makes it one of the most successful hunters in the cat family, taking prey on roughly half its attempts, a strike rate most big cats never approach. Almost everything about its shape follows from hunting by ear in grass too dense to see through.',
+      'The serval is a medium sized African cat that has specialized almost entirely in one thing: finding rodents it cannot see. It has the longest legs of any cat relative to body size and ears large enough to look borrowed, and it hunts in tall wetland grass by standing still, listening, and then launching itself at a sound. That combination makes it one of the most successful hunters in the cat family, taking prey on roughly half its attempts, a strike rate most big cats never approach. Almost everything about its shape follows from hunting by ear in grass too dense to see through.',
     origin:
       'Sub-Saharan Africa, concentrated in well watered grassland and the reedy margins of wetlands rather than open dry savanna, with a small remnant population in Morocco.',
     notableTraits: [
@@ -412,7 +412,7 @@ export const mammalBeastfiles = [
       'Least Concern overall, with the population considered stable across most of its African range. The exception is the north: the species is effectively gone from most of North Africa, and the small Moroccan population is the last remnant there.',
     funFacts: [
       'Its ears are large enough to hear rodents moving underground and in thick grass, and it will hunt with its eyes closed to concentrate on the sound.',
-      'A serval can jump around three metres straight up to knock a bird out of the air.',
+      'A serval can jump around three meters straight up to knock a bird out of the air.',
       'It has the highest hunting success rate of any wild cat, several times that of a lion.',
     ],
     heroImage: '/assets/beastlypedia/serval-hero.jpg',
@@ -442,7 +442,7 @@ export const mammalBeastfiles = [
       'Regrows after being cut above the growth plate',
       'Poor eyesight offset by excellent hearing and smell',
       'Five surviving species, two of them nearly gone',
-      'Can reach around 50 kilometres an hour despite its bulk',
+      'Can reach around 50 kilometers an hour despite its bulk',
     ],
     conservation:
       'Severe and uneven. White and greater one-horned rhinos have recovered substantially from very low numbers, while the Javan and Sumatran species are Critically Endangered with populations counted in dozens.',
@@ -467,7 +467,7 @@ export const mammalBeastfiles = [
     habitat: 'Forest',
     group: 'Mammals',
     overview:
-      'The wombat is the only animal known to produce cubic faeces, and the mechanism was worked out only recently. The last stretch of intestine has walls of varying stiffness, so as the very dry contents are squeezed along, the flexible sections push outward and the rigid sections hold, forming flat faces and corners. The point appears to be that cubes do not roll: a wombat marks territory by leaving droppings on rocks and logs, and a round one would fall off. The rest of the animal is built for digging, including a rump reinforced with cartilage that it uses to block a burrow entrance and crush anything that follows it in.',
+      'The wombat is the only animal known to produce cubic feces, and the mechanism was worked out only recently. The last stretch of intestine has walls of varying stiffness, so as the very dry contents are squeezed along, the flexible sections push outward and the rigid sections hold, forming flat faces and corners. The point appears to be that cubes do not roll: a wombat marks territory by leaving droppings on rocks and logs, and a round one would fall off. The rest of the animal is built for digging, including a rump reinforced with cartilage that it uses to block a burrow entrance and crush anything that follows it in.',
     origin:
       'Forest, heath and mountain country in southeastern Australia and Tasmania, in extensive burrow systems.',
     notableTraits: [
@@ -475,7 +475,7 @@ export const mammalBeastfiles = [
       'A cartilage-reinforced rump used to block burrows',
       'A backward-facing pouch so digging does not fill it with soil',
       'Digests for up to two weeks, producing very dry waste',
-      'Burrow systems that can run tens of metres',
+      'Burrow systems that can run tens of meters',
     ],
     conservation:
       'Least Concern for the common wombat, though the northern hairy-nosed wombat is Critically Endangered and confined to a tiny area. Vehicle strikes and mange are the practical pressures.',
@@ -532,7 +532,7 @@ export const mammalBeastfiles = [
     habitat: 'Freshwater',
     group: 'Mammals',
     overview:
-      'The platypus was assumed to be a hoax when the first specimen reached Britain, and the animal has kept adding to the case ever since. It is a mammal that lays eggs. It hunts with its eyes, ears and nostrils shut, navigating entirely by electroreceptors in its bill that pick up the muscle activity of prey buried in silt. Males carry a venomous spur on each hind ankle, capable of causing pain severe enough to resist morphine. It has no stomach, so the oesophagus runs straight to the intestine. Its fur fluoresces blue-green under ultraviolet light, and nobody yet knows why.',
+      'The platypus was assumed to be a hoax when the first specimen reached Britain, and the animal has kept adding to the case ever since. It is a mammal that lays eggs. It hunts with its eyes, ears and nostrils shut, navigating entirely by electroreceptors in its bill that pick up the muscle activity of prey buried in silt. Males carry a venomous spur on each hind ankle, capable of causing pain severe enough to resist morphine. It has no stomach, so the esophagus runs straight to the intestine. Its fur fluoresces blue-green under ultraviolet light, and nobody yet knows why.',
     origin:
       'Freshwater rivers, streams and lakes in eastern Australia and Tasmania, denning in burrows dug into the bank.',
     notableTraits: [
@@ -565,13 +565,13 @@ export const mammalBeastfiles = [
     habitat: 'Arctic',
     group: 'Mammals',
     overview:
-      'The wolverine is the largest land-dwelling member of the weasel family and weighs about as much as a mid-sized dog, which makes its reputation for driving wolves and bears off carcasses look absurd until you see the skull. It has a specialised upper molar rotated sideways, letting it shear through meat and bone frozen solid, which is the difference between finding a winter carcass and being able to eat one. Individuals range enormously, hundreds of square kilometres each, and females need deep spring snowpack to den, which ties the species directly to a warming climate in a way that is hard to design around.',
+      'The wolverine is the largest land-dwelling member of the weasel family and weighs about as much as a mid-sized dog, which makes its reputation for driving wolves and bears off carcasses look absurd until you see the skull. It has a specialized upper molar rotated sideways, letting it shear through meat and bone frozen solid, which is the difference between finding a winter carcass and being able to eat one. Individuals range enormously, hundreds of square kilometers each, and females need deep spring snowpack to den, which ties the species directly to a warming climate in a way that is hard to design around.',
     origin:
       'Boreal forest, tundra and mountains across northern North America, Scandinavia, Russia and parts of central Asia.',
     notableTraits: [
       'A sideways-rotated molar for shearing frozen meat and bone',
       'Drives larger predators off carcasses despite its size',
-      'Individual ranges covering hundreds of square kilometres',
+      'Individual ranges covering hundreds of square kilometers',
       'Females need deep spring snow to den',
       'Broad feet that work like snowshoes',
     ],

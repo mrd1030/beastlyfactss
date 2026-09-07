@@ -5,7 +5,7 @@ export const birdBeastfiles = [
     name: 'Shoebill',
     scientific: 'Balaeniceps rex',
     alsoKnownAs: ['Whalehead', 'Shoebill Stork'],
-    tagline: 'A metre-tall bird that hunts by standing perfectly still for hours.',
+    tagline: 'A meter-tall bird that hunts by standing perfectly still for hours.',
     habitat: 'Wetlands',
     group: 'Birds',
     overview:
@@ -16,7 +16,7 @@ export const birdBeastfiles = [
       'A broad shoe-shaped bill with hooked tip and cutting edges',
       'Hunts by standing motionless, sometimes for hours',
       'Takes large prey including lungfish and young crocodiles',
-      'Stands up to around 1.4 metres tall',
+      'Stands up to around 1.4 meters tall',
       'Clatters its bill loudly as a display, like a machine gun',
     ],
     conservation:
@@ -108,18 +108,18 @@ export const birdBeastfiles = [
     habitat: 'Forest',
     group: 'Birds',
     overview:
-      'Crows recognise individual human faces and remember them for years. In the experiments that established this, researchers wearing a particular mask trapped and released crows; birds later scolded that mask on sight, including birds that had never been caught, which means the information spread socially. They make and modify tools, solve multi-step puzzles that require doing something useless-looking first, and drop hard-shelled food onto roads for cars to crack. Several species gather around a dead crow in a way that looks ceremonial and appears to be about learning what killed it.',
+      'Crows recognize individual human faces and remember them for years. In the experiments that established this, researchers wearing a particular mask trapped and released crows; birds later scolded that mask on sight, including birds that had never been caught, which means the information spread socially. They make and modify tools, solve multi-step puzzles that require doing something useless-looking first, and drop hard-shelled food onto roads for cars to crack. Several species gather around a dead crow in a way that looks ceremonial and appears to be about learning what killed it.',
     origin:
       'Almost everywhere. Forest, farmland, coast and city across Europe, Asia, Africa, the Americas and Australia, with cities suiting them particularly well.',
     notableTraits: [
-      'Recognises and remembers individual human faces',
+      'Recognizes and remembers individual human faces',
       'Passes information about specific people to other crows',
       'Makes and modifies tools',
       'Solves puzzles requiring several steps in order',
       'Gathers around dead crows, apparently to learn the danger',
     ],
     conservation:
-      'Least Concern for most species and increasing in many places. Crows adapt to human landscapes better than almost any other bird, which is why they are one of very few animals doing well out of urbanisation.',
+      'Least Concern for most species and increasing in many places. Crows adapt to human landscapes better than almost any other bird, which is why they are one of very few animals doing well out of urbanization.',
     funFacts: [
       'Crows that were never trapped will still scold the mask, so the grudge is being passed on.',
       'Some have been recorded dropping nuts onto pedestrian crossings and waiting for the lights.',

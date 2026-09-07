@@ -78,7 +78,7 @@ Fur ring - a constricting ring of fur around the penis in males - can develop du
     petType: "Small Mammals",
     image: "/assets/guides/degu.jpg",
     tagline: "The daytime rodent that cannot eat sugar and will not live alone!",
-    funFact: "Degus are one of the few mammals that cannot metabolise dietary sugar properly. They have an unusual insulin structure and develop diabetes and cataracts on a diet most other rodents handle fine, which is why a single grape can matter here in a way it never would for a hamster.",
+    funFact: "Degus are one of the few mammals that cannot metabolize dietary sugar properly. They have an unusual insulin structure and develop diabetes and cataracts on a diet most other rodents handle fine, which is why a single grape can matter here in a way it never would for a hamster.",
     // Labels match `covers` strings in affiliateProducts.js and the figures are those
     // products' vetted prices. See scripts/check-cost-coverage.mjs. Note there is no
     // degu-specific pellet product wired up yet, so that line stays unmatched.
@@ -111,7 +111,7 @@ Give them a deep substrate layer to dig in. Degus are burrowers and a cage with 
 Everything wooden will be destroyed. Degu incisors are open-rooted and grow for life, and they chew structurally rather than idly. Plastic shelves, plastic hides and plastic wheels last days. Use ceramic, metal and untreated hardwood, and expect to replace chew wood weekly.
 
 Keep them at 60 to 72 degrees F. Like chinchillas they overheat easily and cannot cope above about 80, and a degu breathing rapidly with a wet chin in a warm room is in trouble.`,
-      diet: `Unlimited grass hay is the base of the diet and must be there all the time. It supplies the fibre that keeps the gut moving and the abrasion that keeps continuously growing teeth worn down.
+      diet: `Unlimited grass hay is the base of the diet and must be there all the time. It supplies the fiber that keeps the gut moving and the abrasion that keeps continuously growing teeth worn down.
 
 Pellets must be sugar-free, and the RSPCA is clear that hay matters more than the pellets do. Use a dedicated degu pellet, or a guinea pig or chinchilla nugget provided it contains no molasses, at roughly a tablespoon per degu per day. Foods formulated for rabbits, hamsters and gerbils are not suitable, and neither are chinchilla mixes with dried fruit in them.
 
@@ -119,7 +119,7 @@ No fruit, no honey sticks, no yoghurt drops. This is not a general caution about
 
 Let them eat their own droppings. Degus are coprophagic and the RSPCA treats this as a nutritional requirement rather than a habit to discourage: they need it to get essential nutrients and keep the gut working.
 
-Healthy adult degus have orange incisors. White or very pale teeth in an adult are a sign of poor health, not good hygiene, and teeth should be checked weekly for colour, length and shape.`,
+Healthy adult degus have orange incisors. White or very pale teeth in an adult are a sign of poor health, not good hygiene, and teeth should be checked weekly for color, length and shape.`,
       enrichment: `Degus are diurnal, which is the main reason people choose them: they are awake and interactive during the day rather than at two in the morning. That also means they need genuine daytime stimulation.
 
 They must be kept in at least a pair, and preferably a same-sex group from the same litter. A lone degu is a welfare problem, not a preference. Introducing unfamiliar adults is difficult and often fails, so buy littermates or an already-bonded group rather than planning to add later.
@@ -128,12 +128,12 @@ Provide a solid running wheel of 12 inches or more, tunnels, ceramic hides, plat
 
 They need a dust bath two or three times a week for ten to fifteen minutes, using chinchilla dust rather than sand. Their coat goes greasy and matted without it.
 
-Never pick a degu up by the tail. The skin sheds away as a predator defence, the exposed section is then lost, and it does not grow back.`,
+Never pick a degu up by the tail. The skin sheds away as a predator defense, the exposed section is then lost, and it does not grow back.`,
       health: `Diabetes and cataracts are the signature problem and are almost entirely dietary. Watch for cloudy eyes, drinking far more than usual, and weight loss on a normal appetite. Opaque whitening of the eye is on the RSPCA's daily check list for exactly this reason.
 
-Dental disease is the other common one. Open-rooted teeth that are not worn down overgrow, and the first signs are drooling, wetness around the mouth, dropping food, weight loss and a preference for softer items. Only a vet should correct overgrown or misaligned teeth. This needs a proper oral examination, usually under anaesthetic, not a visual check of the front teeth alone.
+Dental disease is the other common one. Open-rooted teeth that are not worn down overgrow, and the first signs are drooling, wetness around the mouth, dropping food, weight loss and a preference for softer items. Only a vet should correct overgrown or misaligned teeth. This needs a proper oral examination, usually under anesthetic, not a visual check of the front teeth alone.
 
-Vitamin A deficiency and liver disease both appear on the RSPCA's list of conditions degu keepers should learn to recognise, alongside diabetes, tail loss, heat stroke and respiratory infection. Degus are a relatively new pet species and the veterinary picture is still filling in, which is a good argument for registering with an exotics vet who actually sees them.
+Vitamin A deficiency and liver disease both appear on the RSPCA's list of conditions degu keepers should learn to recognize, alongside diabetes, tail loss, heat stroke and respiratory infection. Degus are a relatively new pet species and the veterinary picture is still filling in, which is a good argument for registering with an exotics vet who actually sees them.
 
 Bumblefoot comes from wire flooring and dirty bedding. Respiratory infections come from dusty bedding and poor ventilation, and a degu with laboured breathing or a discharge from the nose needs seeing quickly.
 
@@ -155,8 +155,8 @@ Find an exotics vet before you need one. Degus are not a species every small ani
     },
     faqs: [
       { q: "Can degus eat fruit?", a: "No. Degus have an unusual insulin structure and cannot process dietary sugar the way most rodents can, so fruit, carrot, sweetcorn, honey treats and yoghurt drops all carry a real risk of diabetes and the cataracts that follow it. This is not the usual advice to go easy on treats; it is a species-level metabolic limitation. Safe extras are leafy greens, dandelion, plantain and the occasional plain oat or single sunflower seed." },
-      { q: "Can I keep a single degu?", a: "You should not. Degus live in colonies of up to a hundred animals in the wild with cooperative burrowing and sentry duty, and a lone degu shows real distress: repetitive behaviour, bar chewing and lethargy. Keep at least two. The practical catch is that introducing unfamiliar adults frequently fails, so buy littermates or an established same-sex group rather than planning to add a companion later." },
-      { q: "Why are my degu's teeth orange?", a: "That is what a healthy adult degu's teeth look like. The enamel takes on an orange to deep yellow colour as the animal matures. It is white or very pale teeth in an adult that signal a problem, usually a diet short on the minerals and fibre the species needs." },
+      { q: "Can I keep a single degu?", a: "You should not. Degus live in colonies of up to a hundred animals in the wild with cooperative burrowing and sentry duty, and a lone degu shows real distress: repetitive behavior, bar chewing and lethargy. Keep at least two. The practical catch is that introducing unfamiliar adults frequently fails, so buy littermates or an established same-sex group rather than planning to add a companion later." },
+      { q: "Why are my degu's teeth orange?", a: "That is what a healthy adult degu's teeth look like. The enamel takes on an orange to deep yellow color as the animal matures. It is white or very pale teeth in an adult that signal a problem, usually a diet short on the minerals and fiber the species needs." },
       { q: "Are degus awake during the day?", a: "Yes, and it is the main reason people pick them over hamsters. Degus are diurnal, so they are active and sociable during normal waking hours instead of starting at midnight. They do take naps through the day, and they are noisy: the species has a large vocal repertoire and a bonded pair chatters constantly." },
       { q: "What happens if a degu's tail comes off?", a: "The skin of the tail is designed to strip away if a predator grabs it, leaving the animal free but exposing the vertebrae, which then die back and are lost. It does not regrow. Never lift or restrain a degu by the tail, and scoop from underneath with both hands instead." },
     ],
@@ -473,7 +473,7 @@ All ferrets should be vaccinated against canine distemper (fatal in ferrets) and
     sections: {
       housing: `Depth matters more than floor plan. Gerbils are burrowing animals and the single biggest improvement you can make is eight to twelve inches of substrate they can tunnel through. A 20 gallon long tank with a mesh lid suits them better than most wire cages, because a wire cage cannot hold deep bedding and gerbils kick it out.
 
-Mix paper-based bedding with hay or shredded paper so the tunnels hold their shape. Pure fluffy bedding collapses; a mix binds. Once a pair has built a burrow system they will maintain and remodel it for months, and that is the behaviour the species is really about.
+Mix paper-based bedding with hay or shredded paper so the tunnels hold their shape. Pure fluffy bedding collapses; a mix binds. Once a pair has built a burrow system they will maintain and remodel it for months, and that is the behavior the species is really about.
 
 Bar spacing on any wire section must be half an inch or less. Gerbils are small, determined and good climbers, and a mesh lid needs to be secured rather than rested on top.
 
@@ -482,13 +482,13 @@ Keep them at 65 to 75 degrees F, out of direct sun. A glass tank in a sunny wind
 Keep the humidity low, which is the one environmental number that really matters for this species. Merck advises staying below 40 percent, because above 50 percent gerbils develop nasal dermatitis, the sore-nose condition described in the health section. A gerbil setup in a damp room or a poorly ventilated tank is asking for it.
 
 Skip the plastic. Tubes, wheels and hides in plastic get chewed through fast, and swallowed fragments cause impactions.`,
-      diet: `Feed a pelleted diet labelled for gerbils specifically, at 18 to 20 percent protein and roughly 5 to 8 grams per gerbil per day. Merck is unusually direct about this: gerbils fed standard rat or mouse diets develop insidious periodontal disease, obesity, reduced glucose tolerance and diabetic changes in the pancreas, and its stated rule is to always feed diets labelled for the species.
+      diet: `Feed a pelleted diet labeled for gerbils specifically, at 18 to 20 percent protein and roughly 5 to 8 grams per gerbil per day. Merck is unusually direct about this: gerbils fed standard rat or mouse diets develop insidious periodontal disease, obesity, reduced glucose tolerance and diabetic changes in the pancreas, and its stated rule is to always feed diets labeled for the species.
 
 Sunflower seed is the specific thing to keep out. It is high in fat and low in calcium, gerbils will pick it out first given the chance, and on diets above about 4 percent fat they develop raised blood cholesterol, more so in males. Seed mixes are a treat rather than a staple.
 
 Provide hay alongside it, both to eat and to build with.
 
-Fresh food is a small supplement rather than a food group: a little broccoli, carrot, cucumber, apple or dandelion a few times a week is plenty. Too much fresh food causes diarrhoea in a species adapted to a dry diet.
+Fresh food is a small supplement rather than a food group: a little broccoli, carrot, cucumber, apple or dandelion a few times a week is plenty. Too much fresh food causes diarrhea in a species adapted to a dry diet.
 
 Water from a bottle, checked daily. Gerbils drink very little, which makes it easy to miss a bottle that has stopped flowing.
 
@@ -504,11 +504,11 @@ A sand bath, not a dust bath, keeps the coat in order. Use chinchilla sand rathe
 Handle low over a surface, scooped in cupped hands. If you must steady a gerbil by the tail, take it at the base only. Merck is explicit that a gerbil lifted by the tail tip degloves: the skin slips off, leaving exposed tissue that goes necrotic and sloughs, and the treatment is prompt amputation of the bare section.`,
       health: `Nasal dermatitis, called sore nose or facial eczema, is the condition Merck describes as common in pet gerbils. It starts as redness around the nostrils and can progress to hair loss and a spreading moist dermatitis, and if it reaches the sinuses it causes appetite loss, weight loss and can kill. The cause is not an infection to begin with: it is porphyrin secretion from the Harderian gland irritating the skin, driven by humidity above 50 percent, overcrowding, or being unable to sand bathe. Fix the environment as well as treating the skin.
 
-Tyzzer's disease is the one that kills fastest. Merck calls it the most frequently described fatal infectious disease of gerbils. It spreads by the faecal-oral route from contaminated bedding, and it presents as sudden death or a very short illness with diarrhoea. A hunched, lethargic gerbil with diarrhoea needs a vet the same day.
+Tyzzer's disease is the one that kills fastest. Merck calls it the most frequently described fatal infectious disease of gerbils. It spreads by the fecal-oral route from contaminated bedding, and it presents as sudden death or a very short illness with diarrhea. A hunched, lethargic gerbil with diarrhea needs a vet the same day.
 
 Aural cholesteatoma is the one nobody warns you about. Merck records it in 50 percent of gerbils over two years old: a growth in the ear canal that pushes the eardrum inward, with head tilt as the visible sign, leading to bone damage and inner ear destruction.
 
-Tumours are common with age, at a 25 to 40 percent incidence past two or three years. Scent gland carcinomas in males and ovarian tumours in females account for around 80 percent of them. The scent gland sits as a bare orange-tan oval on the belly, so any lump, ulceration or bleeding there is worth checking early, since marking gland tumours can spread.
+Tumors are common with age, at a 25 to 40 percent incidence past two or three years. Scent gland carcinomas in males and ovarian tumors in females account for around 80 percent of them. The scent gland sits as a bare orange-tan oval on the belly, so any lump, ulceration or bleeding there is worth checking early, since marking gland tumors can spread.
 
 Seizures occur in some lines and can look alarming. They typically pass in a few minutes and leave no lasting effects, and anticonvulsants are not usually needed. Merck notes that frequency and severity often decrease with age, but is careful to add that a subset of adults instead get progressively worse, so a gerbil whose seizures are becoming more frequent is not simply growing out of it. Handling gently and often in the first weeks of life suppresses them in predisposed animals.
 
@@ -533,7 +533,7 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
       { q: "Do gerbils smell?", a: "Barely, and it is the main reason people pick them. Gerbils evolved in the Mongolian desert with a physiology built around conserving water, so they produce only a few drops of very concentrated urine a day. A tank with deep bedding, spot-cleaned regularly and fully changed every few weeks, stays far fresher than the equivalent setup for a mouse or a rat." },
       { q: "How deep should gerbil bedding be?", a: "Eight to twelve inches if you can manage it. Gerbils are burrowers and a shallow tray gives them nothing to do, which shows up as bar chewing and digging obsessively in one corner. Mix paper bedding with hay or shredded paper so the tunnels hold rather than collapse. A deep setup is the single biggest quality of life change you can make for this species." },
       { q: "Can gerbils live alone?", a: "They should not. Gerbils are social and a lone animal does poorly. The complication is that they are also territorial: unfamiliar adults often fight, and even an established pair can suddenly fall out, which keepers call declanning. Buy littermates where possible, introduce unfamiliar animals only with the split-cage method over one to two weeks, and separate permanently if a pair breaks down." },
-      { q: "Why does my gerbil have a bald orange patch on its belly?", a: "That is the scent gland, and it is normal on both sexes, more prominent in males. Gerbils rub it on objects to mark territory. It is worth checking now and then, because scent gland tumours are one of the more common problems in older gerbils and are usually treatable when found early. Any lump, ulcer or bleeding there needs a vet." },
+      { q: "Why does my gerbil have a bald orange patch on its belly?", a: "That is the scent gland, and it is normal on both sexes, more prominent in males. Gerbils rub it on objects to mark territory. It is worth checking now and then, because scent gland tumors are one of the more common problems in older gerbils and are usually treatable when found early. Any lump, ulcer or bleeding there needs a vet." },
       { q: "Why is my gerbil having seizures?", a: "Some gerbil lines carry an inherited tendency to brief seizures, usually set off by stress, a sudden noise, or rough handling, and often in younger animals that grow out of it. An episode typically passes in under a minute. Keep the animal somewhere quiet, keep handling sessions short and gentle, and see a vet if seizures are frequent, long, or start in an adult that never had them before." },
       { q: "Should I get a gerbil or a mouse?", a: "Odor is the most practical difference. Gerbils evolved in the Mongolian desert to conserve water and produce only a few drops of concentrated urine a day, making them one of the least smelly small pets you can keep. [Mice](/guides/mouse/), especially males, are near the opposite end of the spectrum: male mouse urine contains trimethylamine, a compound that gives it a distinctly strong smell, so a mouse cage needs more frequent cleaning than a gerbil tank of the same size. Gerbils are also generally the calmer, less easily startled of the two once tame, while mice are smaller, faster, and quicker to bolt. If odor and steadier handling matter most, lean gerbil; if you specifically want the smallest, quickest small mammal on this site, a mouse is that animal." },
     ],
