@@ -176,8 +176,11 @@ function check(file) {
     const first = paras[0];
     const last = paras[paras.length - 1];
     if (OPENER_LINK.test(first)) add(errors, 'opener-link', `first paragraph carries a link: "${first.slice(0, 120)}"`);
+    // A pill row ("[Cost](/..) · [Handling](/..) · ...") is navigation, not a
+    // prose closer, so it is exempt from the link count.
+    const pillRow = /^(\[[^\]]+\]\([^)]+\)\s*(·\s*)?)+$/.test(last);
     const closerLinks = (last.match(/\]\(\//g) || []).length;
-    if (closerLinks >= 3) add(errors, 'closer-dump', `${closerLinks} links in the closing paragraph`);
+    if (closerLinks >= 3 && !pillRow) add(errors, 'closer-dump', `${closerLinks} links in the closing paragraph`);
     if (/browse the (rest of our|full)/i.test(last)) add(errors, 'closer-dump', '"browse the rest of our" closer');
   }
 
@@ -207,6 +210,11 @@ function check(file) {
     if (a.match(INTENSIFIER)) add(errors, 'intensifier-faq', `answer "${a.slice(0, 100)}"`);
     if (words(a).length > MAX_FAQ_WORDS) add(warnings, 'faq-long', `${words(a).length} words: "${a.slice(0, 80)}"`);
   }
+
+  // The excerpt is the card and meta text: an intensifier there is filler in
+  // the one line that has the least room for it.
+  const excerpt = fmField(fm, 'excerpt');
+  if (excerpt && excerpt.match(INTENSIFIER)) add(errors, 'intensifier-excerpt', `"${excerpt.slice(0, 100)}"`);
 
   // First person on a species nobody here has kept.
   if (!firsthandNote(slug)) {
