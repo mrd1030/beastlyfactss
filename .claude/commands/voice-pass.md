@@ -48,8 +48,14 @@ For each article in the findings, in order:
      flagged alone.
    - Never open an answer with a rhetorical beat ("No, and nothing sold as
      one changes that"). Answer, then the reason, then stop.
-   - Opener link: the first sentence becomes a sentence about the animal. Move
-     the care-guide link sentence to the end of the first section, same target.
+   - Opener link: the first paragraph is about the animal and carries no link.
+     Move the care-guide link sentence to the end of the first section, same
+     targets, as its own short paragraph that says why the reader would go
+     there ("What all of this costs is in the cost guide.").
+   - Closer dump: a closing paragraph with three or more links, or one ending
+     in "browse the rest of our", becomes two plain sentences. Each link gets
+     a reason. Every link stays, every target stays. Never delete a link to
+     satisfy this rule.
    - Comma-as-dash and "X, not Y" warnings: vary the shape. Period first,
      colon second. Do not swap every instance for the same new shape.
    - First person on a documentary page: make it third person. Do not add a
