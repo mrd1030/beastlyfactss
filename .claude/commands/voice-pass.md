@@ -58,15 +58,25 @@ For each article in the findings, in order:
    - Opener link: the first paragraph is about the animal and carries no link.
      Move the care-guide link sentence to the end of the intro, as the last
      paragraph before the first H2, so it never lands inside a section the
-     reader came for. Same targets, its own short paragraph, with a reason
-     ("What all of this costs is in the cost guide.").
+     reader came for. Same targets, its own short paragraph, in the
+     original "see our" shape: "For what all of this costs, see our [cost
+     guide]." Never the directory shape "What it costs is in the cost
+     guide." The tank-setup series wrote that 51 times and every one read
+     flat.
    - Closer dump: a closing paragraph with three or more links, or one ending
      in "browse the rest of our", becomes two plain sentences. Each link gets
      a reason. Every link stays, every target stays. Never delete a link to
      satisfy this rule. Describe a linked page only in words the original
      sentence already used. "Other small mammals with bonding routines of
      their own" was invented, and "The species away from its care sheet" is
-     not a sentence. When in doubt: "More on X is in the [Y guide]."
+     not a sentence. The shape is imperative: "For the rest of their setup,
+     see our [cost guide] and [handling guide]. For their health, see the
+     [health issues guide]." Never "X is in the [guide]", "X is covered in
+     the [guide]", "The rest of our [category] is there for more", or "There
+     is more on the species in the [profile]". Keep every conjunction so no
+     list dangles.
+   - Excerpt: if the excerpt carries an intensifier, delete the word or trim
+     the clause. Do not rewrite the excerpt beyond that.
    - Warnings (contrast-cadence, comma-splice, faq-long, intensifier-title)
      are for a human read, not for you. Do not act on them. In particular,
      never touch "rather than": swapping it for "not" or "never" turns a
