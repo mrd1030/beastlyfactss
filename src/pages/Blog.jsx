@@ -869,9 +869,15 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               />
             </div>
 
-            <p className="text-sm text-muted-foreground font-body mb-8 leading-relaxed border-l-4 border-secondary pl-4 italic">
-              {post.excerpt}
-            </p>
+            {/* Skipped when the body opens with the excerpt word for word
+                (sync-articles.js sets the flag on 232 posts), so the lede is
+                not printed twice. The excerpt itself is untouched for cards
+                and meta descriptions. */}
+            {post.excerpt && !post.ledeMatchesExcerpt && (
+              <p className="text-sm text-muted-foreground font-body mb-8 leading-relaxed border-l-4 border-secondary pl-4 italic">
+                {post.excerpt}
+              </p>
+            )}
 
             {/* Mobile-only: the sticky sidebar (below) sits in a column that
                 collapses to the bottom of the page once the grid drops to a

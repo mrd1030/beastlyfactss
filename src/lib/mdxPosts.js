@@ -113,6 +113,10 @@ function toPost(meta) {
     truth: meta.truth || null,
     sourceCount: meta.sourceCount || 0,
     headingCount: meta.headingCount || 0,
+    // Set at sync time when the body's opening paragraph is the excerpt, so
+    // Blog.jsx can skip its italic excerpt block instead of printing the
+    // same sentence twice.
+    ledeMatchesExcerpt: Boolean(meta.ledeMatchesExcerpt),
   };
 }
 

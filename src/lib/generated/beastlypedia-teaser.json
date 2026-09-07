@@ -74,7 +74,7 @@
   {
     "id": "gray-wolf",
     "name": "Gray Wolf",
-    "tagline": "There is no alpha wolf. The researcher who popularised the idea spent years retracting it.",
+    "tagline": "There is no alpha wolf. The researcher who popularized the idea spent years retracting it.",
     "group": "Mammals",
     "heroImage": "/assets/beastlypedia/gray-wolf-hero.jpg",
     "heroAlt": "A grey wolf standing in snow at the edge of conifer forest, looking directly toward the camera"
@@ -202,7 +202,7 @@
   {
     "id": "shoebill",
     "name": "Shoebill",
-    "tagline": "A metre-tall bird that hunts by standing perfectly still for hours.",
+    "tagline": "A meter-tall bird that hunts by standing perfectly still for hours.",
     "group": "Birds",
     "heroImage": "/assets/beastlypedia/shoebill-hero.jpg",
     "heroAlt": "A shoebill standing among African wetland reeds with its enormous shoe-shaped bill in profile"
@@ -242,7 +242,7 @@
   {
     "id": "manta-ray",
     "name": "Giant Manta Ray",
-    "tagline": "Seven metres across, filter-feeding, and one of the few fish to pass a mirror test.",
+    "tagline": "Seven meters across, filter-feeding, and one of the few fish to pass a mirror test.",
     "group": "Marine Life",
     "heroImage": "/assets/beastlypedia/manta-ray-hero.jpg",
     "heroAlt": "A giant manta ray gliding through open blue water seen from below with sunlight above"
@@ -314,7 +314,7 @@
   {
     "id": "cuttlefish",
     "name": "Cuttlefish",
-    "tagline": "It puts on the best colour display in the ocean and probably cannot see colour.",
+    "tagline": "It puts on the best color display in the ocean and probably cannot see color.",
     "group": "Marine Life",
     "heroImage": "/assets/beastlypedia/cuttlefish-hero.jpg",
     "heroAlt": "A cuttlefish hovering above sand with its arms held forward and a rippling pattern across its skin"

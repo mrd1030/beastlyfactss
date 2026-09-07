@@ -51,6 +51,7 @@ const COMMA_SPLICE = /,\s+(it is|it's|that is|that's|they are|they're|this is|th
 const DASH = /[\u2013\u2014]/g;
 const FIRST_PERSON_KEEPER = /\b(I keep|I've kept|I have kept|I raised|in my experience|my own (dragons?|rabbits?|dogs?|cats?|snakes?|geckos?|birds?|tank|enclosure))\b/gi;
 const OPENER_LINK = /\]\(\//;
+const FAQ_LINK = /\]\(/;
 const MAX_CONTRAST = 2;
 const MAX_SPLICE_WARN = 2;
 const FAQ_OVERLAP = 0.3;
@@ -207,6 +208,10 @@ function check(file) {
     if (q.match(INTENSIFIER)) add(errors, 'intensifier-faq', `question "${q.slice(0, 100)}"`);
   }
   for (const a of answers) {
+    // Blog.jsx prints FAQ answers as plain text and the FAQPage schema takes
+    // the same string, so a markdown link renders as "[text](/url/)" on the
+    // page. Keep the anchor text, put the link in the body instead.
+    if (FAQ_LINK.test(a)) add(errors, 'faq-link', `answer carries a markdown link: "${a.slice(0, 100)}"`);
     if (a.match(INTENSIFIER)) add(errors, 'intensifier-faq', `answer "${a.slice(0, 100)}"`);
     if (words(a).length > MAX_FAQ_WORDS) add(warnings, 'faq-long', `${words(a).length} words: "${a.slice(0, 80)}"`);
   }
