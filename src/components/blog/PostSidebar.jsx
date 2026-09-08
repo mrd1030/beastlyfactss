@@ -166,8 +166,9 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
           show, and the same component, so clicking through from one of those
           doesn't strand a reader with no way to keep following the thread. */}
       {/* The species list is hidden below lg: MoreOnSpecies renders it after
-          the FAQ, and on a phone the sidebar stacks right under that. The
-          shared Health and More list has no in-body copy, so it always shows. */}
+          the FAQ on phones, where the sidebar stacks right under that. On
+          desktop this is the only copy. The shared Health and More list has
+          no in-body copy, so it always shows. */}
       <div className="hidden lg:block">
         <DeepDiveList
           articles={deepDiveArticles}

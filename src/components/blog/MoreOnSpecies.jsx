@@ -3,7 +3,10 @@ import DeepDiveList from '@/components/shared/DeepDiveList';
 import { getListingGuides } from '@/lib/data/relatedArticles';
 
 // The curated same-species list (own articles only; the shared "Health and
-// More" material stays in the sidebar), rendered after the FAQ so an article ends on
+// More" material stays in the sidebar), rendered after the FAQ below lg. On
+// desktop the sticky sidebar's Deep Dive shows the same list beside the
+// article, so this block is hidden there rather than shown twice. It stays
+// in the DOM at every width, so the links are in the prerendered HTML. so an article ends on
 // its own series instead of a paragraph of "see our cost guide" sentences.
 //
 // This is the first place the list appears in the prerendered HTML: the
@@ -43,7 +46,7 @@ function speciesLabel(slug) {
 export default function MoreOnSpecies({ currentSlug, articles, onSelectPost }) {
   if (!articles || articles.length === 0) return null;
   return (
-    <div className="mt-8 space-y-5">
+    <div className="mt-8 space-y-5 lg:hidden">
       <DeepDiveList
         articles={articles}
         onSelect={onSelectPost}
