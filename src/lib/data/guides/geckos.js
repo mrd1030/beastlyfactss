@@ -283,66 +283,77 @@ Temperature spikes above 80 degrees F cause acute heat stress. In summer, this r
     image: "/assets/guides/leopard-gecko.jpg",
     tagline: "The smiling gecko that's perfect for first-time reptile parents!",
     funFact: "Unlike most geckos, leopard geckos have eyelids and can blink and wink at you! They also store fat in their chunky tails for energy reserves.",
-    // Costs cross-checked against the leopard-gecko-cost-guide.mdx blog post (reviewed 2026-07-06, cited sources).
-    costs: {
-      setup: [
-        { item: "36x18x18 in enclosure", low: 120, high: 220 },
-        { item: "Under-tank heater with thermostat", low: 40, high: 70 },
-        { item: "Substrate (paper towel or tile)", low: 10, high: 25 },
-        { item: "3 hides (warm, cool, moist)", low: 20, high: 35 },
-        { item: "Sphagnum moss for moist hide", low: 5, high: 10 },
-        { item: "Digital thermometer (IR gun recommended)", low: 15, high: 30 },
-        { item: "Shallow water dish", low: 8, high: 15 },
-        { item: "Feeding tongs", low: 5, high: 10 },
-        { item: "Low-output UVB (optional but beneficial)", low: 20, high: 50 },
-      ],
-      annual: [
-        { item: "Live insects (crickets, dubia, mealworms)", low: 100, high: 180 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement (if used)", low: 45, high: 80 },
-        { item: "Electricity (heat)", low: 30, high: 50 },
-        { item: "Annual vet wellness check", low: 85, high: 105 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Lifespan and adult size come from the
+    // encyclopedia entry, which no deep dive repeats. Day one, hygiene, and
+    // power outage cite the shared reptile guides in the sidebar's Health
+    // and More list. Reconciled 2026-09-08 after the leopard gecko set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new gecko is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "36x18x18 inches is the adult minimum, well past the old 20-gallon-long standard. A hatchling can start in a 10-gallon. Floor space counts for more than height.", source: "leopard-gecko-tank-setup-guide" },
+        { label: "Heat", value: "A heat mat under the warm hide, always on a thermostat, with the probe inside the warm hide and the mat's surface checked with an infrared gun. Skip overhead heat lamps as the primary source.", source: "leopard-gecko-temperature-guide" },
+        { label: "Temperatures", value: "Warm hide floor 88 to 92°F, warm side air 80 to 84°F, cool side 70 to 77°F. Nights in the 70s, with 65°F the floor.", source: "leopard-gecko-temperature-guide" },
+        { label: "Hides", value: "Three, not one: a warm dry hide, a cool dry hide, and a humid hide lined with damp substrate on the cool or middle side.", source: "leopard-gecko-tank-setup-guide" },
+        { label: "Humidity", value: "30 to 40% in the enclosure, 70 to 80% inside the humid hide only. Raising the whole enclosure to hit that number is a respiratory infection risk.", source: "leopard-gecko-tank-setup-guide" },
+        { label: "UVB", value: "Optional but worth doing, kept low: a UVI of 0.5 to 1.5 at the basking spot for normally pigmented geckos, 0.5 to 0.7 or lower for albino and other pale morphs.", source: "leopard-gecko-tank-setup-guide" },
+        { label: "Floor", value: "Paper towel or tile. Never calcium sand.", source: "leopard-gecko-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Hatchlings daily, juveniles daily or every 1 to 2 days, adults every 2 to 4 days once the tail is as thick as the neck.", source: "leopard-gecko-feeding-guide" },
+        { label: "Calcium", value: "Gut-load feeders for 24 to 48 hours, dust with plain calcium at most feedings for juveniles and breeding females and 2 to 3 times a week for adults, calcium with D3 a couple of times a week if there is no UVB, a multivitamin about once a week.", source: "leopard-gecko-feeding-guide" },
+        { label: "Not eating", value: "A healthy adult with a plump tail can go a couple of weeks. A visibly thinning tail is the signal to stop waiting and see a reptile vet.", source: "leopard-gecko-feeding-guide" },
+        { label: "Handling", value: "Wait one to two weeks, and until it eats normally and stops fleeing. Then 5-minute sessions every other day, building to 10 to 20 minutes. Never by the tail, never during a shed.", source: "leopard-gecko-handling-guide" },
+        { label: "Budget", value: "$250 to $400 to set up, $20 to $50 a month. An annual wellness exam runs $85 to $105; sick visits $100 to $800 or more.", source: "leopard-gecko-cost-guide" },
+        { label: "Adult size", value: "7 to 11 inches." },
+        { label: "Lifespan", value: "15 to 20 years in captivity, some longer." },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "70°F is the normal night low. Below 60°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `A 36x18x18" enclosure is the current minimum recommendation for a single adult leopard gecko. The old standard of a 20-gallon tank is now considered inadequate by most experienced keepers and veterinarians. Larger enclosures allow for better thermal gradients and more enrichment opportunities, both of which are critical for long-term health. Paper towel or tile is the safest substrate for beginners; never use calcium sand or other loose sand products.
-
-The thermal gradient is essential: provide a warm hide with a belly-heat surface temperature of 88 to 92 degrees F on one end, and a cool hide at 72 to 78 degrees F on the other. Leopard geckos are behavioral thermoregulators - they actively regulate their body temperature by moving between warm and cool zones rather than simply matching ambient temperature. Without a proper gradient, they cannot digest food efficiently or support immune function.
-
-An under-tank heater (UTH) on a quality thermostat is the preferred heat source. Place it under one-third of the enclosure and verify temperatures with an infrared temperature gun, not a stick-on thermometer. Accurate temperature measurement is one of the most important aspects of leopard gecko husbandry.
-
-A third hide - the moist hide - is critical for shedding. Fill a hide box with damp sphagnum moss and place it at the warm end. Leopard geckos will use it during pre-shed to soften their skin and ensure a complete, clean shed. Without a moist hide, stuck shed on toes and the tail tip is common and can become a serious welfare issue. Keep overall enclosure humidity around 30 to 40%, the moist hide itself runs much higher, roughly 70 to 80%, but only inside the hide, not the whole tank.
-
-Low-output UVB lighting (T5 HO 5% or 6%, on a 10 to 12 hour cycle) is now recommended by the leading reptile veterinary community. While leopard geckos survived for decades without UVB, research shows they use and benefit from low-level exposure, particularly for calcium metabolism and circadian rhythm support.`,
-      diet: `Leopard geckos are strict insectivores - they eat live invertebrates exclusively. The core of a healthy diet includes dubia roaches, crickets, and black soldier fly larvae (BSFL/CalciWorms). Mealworms can be offered but should not be the primary feeder due to their high fat content and chitinous exoskeleton, which some geckos have difficulty digesting in large quantities.
-
-Hatchlings and young juveniles eat daily, older juveniles can move to daily or every 1 to 2 days, and adults, once the tail is about as thick as the neck, do best every 2 to 4 days, adjusted by body condition. Offer only as many insects as they'll clear in about 15 minutes, and always use feeding tongs to avoid accidentally training the gecko to associate your fingers with food.
-
-Gut-loading feeder insects is non-negotiable. Feed insects a nutritious diet (fresh vegetables, commercial gut-load powder) for 24 to 48 hours before offering them. A gut-loaded cricket is dramatically more nutritious than one kept on cardboard. The gecko's nutrition is only as good as what its prey was eating.
-
-Dust with plain calcium at most feedings, more often for juveniles than adults. Add calcium with D3 only a couple of times a week, and only if the setup doesn't include meaningful UVB exposure, since a gecko getting UVB is already synthesizing its own D3 and doesn't need it piled on through diet as well. A reptile multivitamin should be added once per week. A small calcium dish placed inside the enclosure allows self-supplementation between feedings. Fresh, dechlorinated water in a shallow dish must always be available.`,
-      enrichment: `Provide a minimum of three hides: one at the warm end, one at the cool end, and the moist hide. Hides should be snug - leopard geckos feel secure when the hide walls touch their sides. An overly large hide does not provide the psychological security a snug one does.
-
-Cork bark flats and pieces, slate tiles, and textured stone provide natural-feeling surfaces for walking, exploring, and thermoregulating. Leopard geckos investigate their entire enclosure and will benefit from varied textures and objects to explore and move around.
-
-Leopard geckos are crepuscular, most active at dusk and dawn. The best time for interaction and feeding is in the evening. During the day, they typically rest in their hides. Disturbing them frequently during daylight hours causes unnecessary stress.
-
-Handle regularly for taming, starting with 5-minute sessions and building to 10 to 20 minutes as the gecko becomes comfortable. Never handle during shed (you can identify pre-shed by a dull, grayish skin tone). Never handle within 48 hours of feeding. Most leopard geckos become quite relaxed and personable with consistent gentle handling.`,
-      health: `Stuck shed is among the most common and preventable health problems. It most often affects the toes, tail tip, and eye caps. A properly maintained moist hide prevents most stuck shed. If shed remains after 24 hours, soak the gecko in shallow lukewarm water and gently remove with a damp cotton swab. Never force shed off dry - this can tear the underlying skin.
-
-Metabolic Bone Disease (MBD) results from chronic calcium or vitamin D3 deficiency. Early signs include trembling limbs, difficulty walking, rubber jaw, and lethargy. Advanced MBD causes permanent skeletal deformities. Consistent supplementation and UVB exposure prevent it entirely.
-
-Cryptosporidiosis (Crypto) is a parasitic infection, most often caused by Cryptosporidium varanii in this species. It causes severe weight loss despite normal or increased appetite. There is no reliable cure. It is highly contagious between geckos. Always quarantine new animals for 60 to 90 days in a separate room before any contact with existing geckos.
-
-Obesity is common in adult leopard geckos fed primarily mealworms or waxworms. A plump tail is healthy; fat deposits around the neck and armpits are a sign of obesity. Feed a varied diet and avoid waxworms as more than an occasional treat. Annual fecal exams and wellness checks with a reptile vet are recommended - especially for any gecko that stops eating or shows behavioral changes.`,
-      checklist: ["36x18x18\" enclosure", "Under-tank heater (UTH) with thermostat", "3 hides (warm, cool, moist)", "Sphagnum moss for moist hide", "Digital thermometer (infrared gun recommended)", "Calcium w/D3 supplement", "Multivitamin supplement", "Shallow water dish", "Live insects (crickets, dubia, mealworms)", "Low-output UVB (optional but beneficial)"],
+    emergencyCard: {
+      source: "leopard-gecko-health-issues-guide",
+      callNow: [
+        "A thinning \"stick\" tail combined with weight loss",
+        "Jaw softness or visible deformity",
+        "Tremors",
+        "Any breathing difficulty",
+        "Drooling or pus around the mouth",
+        "Appetite loss that persists more than a few days",
+        "Prolapse",
+        "Retained shed that's swollen, darkened, or won't clear from the eyes or toes",
+      ],
+      vetLine: "A reptile-experienced vet, found before you need one. A tail thinning to a stick is cryptosporidiosis until a fecal PCR says otherwise, and it has no cure.",
     },
+    routes: [
+      { slug: "leopard-gecko-cost-guide", line: "$20 to $45 for the gecko, $250 to $400 for the setup, $20 to $50 a month, and what a sick visit really costs." },
+      { slug: "leopard-gecko-tank-setup-guide", line: "The 36x18x18 minimum, belly heat on a thermostat, the three-hide system, and the humid hide that prevents most shedding problems." },
+      { slug: "leopard-gecko-temperature-guide", line: "Every zone's target, mat versus overhead, the thermostat rule, night temperatures, and the signs the numbers are wrong." },
+      { slug: "leopard-gecko-feeding-guide", line: "Schedule by age, gut-loading and dusting, safe and unsafe feeders, and the honest range of reasons a gecko stops eating." },
+      { slug: "leopard-gecko-handling-guide", line: "Settling-in time, the two-handed scoop, the stress signs, and why you never grab the tail." },
+      { slug: "leopard-gecko-health-issues-guide", line: "Metabolic bone disease, cryptosporidiosis, impaction, stuck shed, egg binding, prolapse, and the list that means the vet today." },
+      { slug: "leopard-gecko-enrichment-guide", line: "What the research says, why the three hides come first, hunting presentation, climbing and dig options, and a priority order." },
+    ],
+    buyList: [
+      "36x18x18 inch enclosure",
+      "Under-tank heat mat and an on/off probe thermostat",
+      "Three hides: warm dry, cool dry, and a humid hide",
+      "Damp substrate for the humid hide (not loose sphagnum moss)",
+      "Digital thermometer and hygrometer",
+      "Infrared temp gun for the mat's surface",
+      "Paper towel or tile for the floor",
+      "Shallow water dish and a small calcium dish",
+      "Feeding tongs",
+      "Plain calcium, calcium with D3, and a multivitamin",
+      "Feeder insects: dubia roaches, crickets, black soldier fly larvae",
+      "Optional low-output T5 UVB",
+    ],
     faqs: [
-      { q: "How long do leopard geckos live?", a: "Well-cared-for leopard geckos regularly live 15 to 20 years, with some reaching 25 or more. Males typically outlive females. The biggest factors in longevity are a correct thermal gradient, consistent supplementation, and avoiding obesity from overfeeding high-fat feeders like mealworms." },
-      { q: "What do leopard geckos eat?", a: "Leopard geckos are strict insectivores. The best staple feeders are dubia roaches, crickets, and black soldier fly larvae (CalciWorms). Mealworms can be offered occasionally but should not be the primary diet due to their high fat content. All feeders must be gut-loaded for 24 to 48 hours and dusted with calcium and vitamins before every feeding." },
-      { q: "Do leopard geckos need a heat lamp?", a: "No. Leopard geckos thermoregulate via belly heat, not basking. An under-tank heater (UTH) on a quality thermostat is the preferred heat source, targeting a warm-side surface temperature of 88 to 92 degrees F. Overhead heat lamps can supplement ambient temperature if the room is cold, but they are not the primary heat source for this species." },
-      { q: "How do I know if my leopard gecko is sick?", a: "Key warning signs include significant weight loss (weigh weekly on a kitchen scale), lethargy during their active evening hours, refusal to eat for more than two weeks, stuck shed on toes or tail tip, cloudy eyes outside of pre-shed, or any respiratory sounds like clicking or wheezing. Locate a reptile-experienced vet before an emergency arises." },
-      { q: "Can I keep two leopard geckos together?", a: "Same-sex females can sometimes cohabit in a large enclosure with multiple hides and feeding stations, but conflicts are still common. Two males must never be housed together. Males and females should not be housed together outside of brief, supervised breeding sessions. Most experienced keepers recommend one gecko per enclosure to eliminate competition stress entirely." },
+      { q: "What's the one setup detail people get wrong most often?", a: "Humidity. Keep the general enclosure at 30 to 40%, but separately provide a dedicated humid hide at 70 to 80% humidity. Raising humidity across the whole enclosure to hit that number instead just creates a respiratory infection risk." },
+      { q: "Why has my leopard gecko stopped eating?", a: "Most of the time it's normal: a shed cycle, brumation in cooler months, a recent move, or just a temperature that's a little too low for proper digestion. Check the warm side of the enclosure first, that's the single most common fixable cause. It only becomes a concern if it's paired with visible weight loss, a thinning tail, lethargy, or it drags on for weeks with no improvement." },
+      { q: "What is stick tail disease in leopard geckos?", a: "It's the common name for cryptosporidiosis, a severe and highly contagious parasite with no cure. Around half of captive leopard geckos may carry it, and it causes the tail to thin out to a stick shape along with emaciation and appetite loss. Symptomatic cases have a mortality rate around 50%." },
     ],
   },
   {
