@@ -34,7 +34,7 @@ export const turtleEncyclopedia = [
       habitat: "Tropical rainforest, dry forest, savanna, and humid forest edges",
       adultSize: "11-16 inches (28-41 cm); exceptional individuals up to 20 inches (51 cm)",
       wildDiet: "Omnivore - fruit, flowers, foliage, fungi, carrion, and invertebrates",
-      wildLifespan: "50-70+ years (up to 90 documented in captivity)",
+      wildLifespan: "Not documented in the wild; 50 to 70+ years in captivity, with up to 90 reported",
       conservation: "Vulnerable (IUCN Tortoise & Freshwater Turtle Specialist Group); CITES Appendix II",
     },
   },

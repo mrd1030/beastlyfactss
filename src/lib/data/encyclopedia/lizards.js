@@ -64,7 +64,7 @@ export const lizardEncyclopedia = [
       habitat: "Tropical forest floor and forest edge, in leaf litter and self-dug burrows",
       adultSize: "12-15 inches (30-38 cm) including tail",
       wildDiet: "Insects, worms, snails, and occasional fruit or small vertebrates",
-      wildLifespan: "15-20 years in captivity",
+      wildLifespan: "Not documented in the wild; 15 to 20 years commonly reported in captivity",
       conservation: "Not evaluated (IUCN)",
     },
   },

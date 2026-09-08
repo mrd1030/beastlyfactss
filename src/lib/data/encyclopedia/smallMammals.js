@@ -151,7 +151,7 @@ export const smallMammalEncyclopedia = [
       habitat: "Tropical and temperate forest and woodland",
       adultSize: "5-6 inches (13-15 cm) body; 4-5.5 oz",
       wildDiet: "Nectar, pollen, tree sap, insects, and small vertebrates",
-      wildLifespan: "3-9 years (up to 12-15 years in captivity)",
+      wildLifespan: "Not well documented in the wild; up to 17.8 years recorded in captivity",
       conservation: "Least Concern (IUCN)",
     },
   },

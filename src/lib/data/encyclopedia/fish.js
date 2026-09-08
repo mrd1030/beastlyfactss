@@ -21,7 +21,7 @@ export const fishEncyclopedia = [
       habitat: "Shallow rice paddies, floodplains, and slow-moving streams",
       adultSize: "2.5-3 inches (6-7.5 cm)",
       wildDiet: "Small insects and insect larvae taken from the water's surface",
-      wildLifespan: "2-4 years (up to 5 in captivity with excellent care)",
+      wildLifespan: "Not separately documented in the wild; 2 to 4 years in an aquarium, up to 5 with excellent care",
       conservation: "Vulnerable (IUCN, wild populations)",
     },
   },

@@ -57,7 +57,7 @@ const INTENSIFIER = /\b(genuinely|actually|really|truly|incredibly|extremely|rem
 // A wildLifespan is honest when it names a wild figure, or says plainly that
 // the wild figure is not known. "12-15 years (up to 20+ in captivity)" does
 // neither: the reader has to assume the bare number is the wild one.
-const NAMES_WILD = /\(wild\)|in the wild|wild lifespan|wild longevity|not documented|not well documented|undocumented|not been studied/i;
+const NAMES_WILD = /\(wild\)|in the wild|wild lifespan|wild longevity|wild figure|not documented|not well documented|undocumented|not been studied|domesticated/i;
 const NAMES_CAPTIVE = /captiv|pet fancy|as a pet/i;
 
 const errors = [];

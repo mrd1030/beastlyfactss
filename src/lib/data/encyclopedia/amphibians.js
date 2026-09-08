@@ -21,7 +21,7 @@ export const amphibianEncyclopedia = [
       habitat: "Mountain streams, ponds, marshes, and wet meadows",
       adultSize: "1.5-2 inches (4-5 cm)",
       wildDiet: "Insects, worms, small crustaceans, and aquatic invertebrates",
-      wildLifespan: "12-15 years (up to 20+ years in captivity)",
+      wildLifespan: "Maximum longevity in the wild is estimated at 20 years; up to 30 years in captivity",
       conservation: "Least Concern (IUCN)",
     },
   },
