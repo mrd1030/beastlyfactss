@@ -878,6 +878,75 @@ guide. Fixing it means editing src/lib/data/relatedArticles.js, out of
 scope for this pass; left for Mike. Also left for Mike: the cohousing
 disagreement above, and cost guide's link (before the first H2).
 
+## Axolotl (2026-09-08, second pass, after the fixes)
+
+Same nine-page set, re-extracted after the first pass fixes landed.
+One Sonnet agent, about 98k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A | The fastest way to get the whole picture, actionable buy list and first-week numbers. |
+| Encyclopedia | B | Scientific name, wild range, and conservation status, no care instructions of its own. |
+| Cost | B- | Real dollar ranges, but the setup table showed as unparseable and the water-temperature line had no link. |
+| Handling | A- | The submerged-container method and drip-matching, honest that this isn't a hands-on pet. |
+| Health | A- | Exact 48-hour and 5-day vet thresholds. |
+| Tank setup | A | Everything to buy and the temperature to set it to. |
+| Feeding | A | The life-stage table and the foods-to-avoid list. |
+| Enrichment | B+ | Good ideas, undercut by its own body and FAQ giving different hide counts. |
+| Legal | B | The state table is useful, but its own opening line undercounted what the table shows. |
+
+Set grade: B+. "The core husbandry pages are consistent with each
+other on every number that matters, but a broken table, a
+self-contradicting count, and a mismatched hide count keep it off an
+A."
+
+Real findings:
+
+- Legal guide, same-article contradiction: the opening line said "four
+  jurisdictions restrict them," while its own table, titled "Where
+  Axolotls Are Restricted," lists twelve. The Takeaway section's own
+  four-state list (California, New Jersey, Maine, DC) is a narrower
+  claim, "not worth testing the boundaries on," not a total count, so
+  the opening line undersold the table it introduces. Fixed to "about
+  a dozen jurisdictions restrict them in some way," a count taken
+  directly from the table's own rows.
+- Enrichment guide, same-article contradiction: the body says
+  "Provide at least 2 hides per adult, ideally 3 to 4," its own FAQ
+  said "Keep 2 to 3 stable hides that never move." Fixed the FAQ to
+  read off the body's own 3 to 4 figure rather than stating a third,
+  unreconciled number.
+- Checked and left alone, not a bug: the hub's heat-wave row (source
+  aquarium-power-outage-and-transport-guide) mentions ascites and a
+  75°F danger point, which the health issues guide's own Heat Stress
+  section doesn't use in those words. The hub row is correctly copied
+  from the shared guide's own citation (a vet's WSAVA presentation on
+  the outage-specific danger point), which is more specific than the
+  health guide's general heat-stress description, not a copying error.
+  Both are accurately sourced to what they cite.
+
+Two more recommended links added: cost guide to tank setup (the cool
+water sentence), legal guide to the encyclopedia profile (the
+endangered-status aside, inside a FunFact box). Not added: cost
+guide's cost-guide-to-tank-setup link was the only one available in
+that budget; tank setup's, feeding's, and enrichment's suggested links
+all target a sibling guide those three articles are already at their
+one-per-article sibling cap for (tank setup already links handling;
+feeding and enrichment already link each other and health issues from
+the first pass).
+
+Gaps, checked against the Health and More list before calling them
+real: what a vet visit for an axolotl actually costs (the cost guide
+prices the animal, the tank, and food, never a vet visit), and how to
+evaluate a seller or pick a healthy axolotl at purchase. Neither is
+covered anywhere in the set or the shared guides. Filed in
+docs/READER_LOG.md.
+
+Fixed the same day: the legal guide's jurisdiction count, the
+enrichment guide's hide-count FAQ, two more links.
+
+Open: `why-axolotls-need-cold-clean-water`'s missing RELATED_ARTICLES
+wiring (first pass), still left for Mike.
+
 ## Single-article reads (2026-09-08, text only)
 
 Earlier single-page reads, kept for the record. Grades: tegu handling A-,
@@ -955,4 +1024,9 @@ unsourced "about half of captive leopard geckos may carry it."
   added to the hub. Found but not fixed: `why-axolotls-need-cold-clean-water`
   is linked four times across the set but not wired into
   RELATED_ARTICLES, the same bug class as leopard gecko's temperature
-  guide, left for Mike.
+  guide, left for Mike. Second pass: caught two same-article
+  contradictions, the legal guide's opening line undercounted its own
+  twelve-row table ("four jurisdictions" fixed to "about a dozen"),
+  and the enrichment guide's body and FAQ gave two different hide
+  counts (FAQ fixed to read off the body's own number). Two more links
+  added.

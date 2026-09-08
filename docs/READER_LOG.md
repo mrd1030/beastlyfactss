@@ -220,6 +220,79 @@ disputed one; five of six recommended links added; the tank setup
 guide's cycling sentence now links the shared cycling guide, with a
 matching hub row.
 
+## Axolotl (2026-09-08, second pass)
+
+Same nine-page set, re-extracted after the first pass fixes landed.
+One Sonnet agent, about 98k tokens. Full agent output below, unedited.
+
+---
+
+1. One line per page
+
+Hub (00): I would finish it, it is the fastest way to get the whole picture, and I could act on the buy list and first-week numbers immediately. Grade A.
+Encyclopedia (01): Quick read, gives scientific name, wild range, and conservation status that nothing else covers, but no care instructions of its own. Grade B.
+Cost (02): I would finish it despite the broken "[table could not be parsed]" line sitting in the middle of the setup-cost section, and I could act on real dollar ranges for the axolotl, the tank, and monthly food. Grade B-.
+Handling (03): I could act on the submerged-container method and drip-matching today, and it is honest that this is not a hands-on pet. Grade A-.
+Health (04): I could act on the exact 48-hour and 5-day thresholds for calling a vet. Grade A-.
+Tank setup (05): Everything I need to buy and the temperature to set it to is here, plainly stated. Grade A.
+Feeding (06): The life-stage feeding table and the list of foods to avoid are both things I could use tonight. Grade A.
+Enrichment (07): Good practical ideas, but the body says 2 to 4 hides and the FAQ says 2 to 3, which cost it a notch. Grade B+.
+Legal (08): I could act on checking my state against the table before buying, but its own opening line undercounts what the table actually shows. Grade B.
+
+2. Hub and encyclopedia
+
+Both earn their place. The hub is not a rehash, it pulls the one number I need from each deep dive into one page with a link back to the source, which is exactly what a router page should do. The encyclopedia adds things no deep dive covers: scientific name, wild range, and the wild-versus-captive lifespan gap (5-6 years wild against 10-15 in captivity).
+
+One disagreement I caught. The hub's heat-wave line says: "Sustained water above about 75°F causes reduced appetite, ascites, and uncontrollable floating." The health guide it links to, describing the same condition, says: "Watch for curled or forward-facing gill tips, appetite loss, floating, and pale patches on the skin. Extended exposure above roughly 72°F starts to suppress the immune system, and temperatures above about 75°F can be fatal." The hub introduces "ascites" and pins appetite loss and floating specifically to 75°F, while the linked article ties those same symptoms to heat stress generally and never uses the word ascites at all.
+
+3. The set as a whole
+
+Yes, I could set up a tank, buy the axolotl, feed it on schedule, and recognize the difference between a normal day and a vet day. What's missing: what a vet visit actually costs (the cost guide only prices the animal, the tank, and food), and how to pick a healthy animal or vet a seller before buying, which none of these nine pages touch.
+
+The clearest unanswered question sitting inside the set: the handling guide tells me to drip-match a new arrival straight into acclimation, but never says whether it should sit in quarantine first or how long. The hub answers this, 6 to 8 weeks, with the clock resetting on illness, but the handling article does not point there or mention quarantine at all.
+
+4. Overlap and conflict across the deep dives
+
+Read twice, consistently: the gravel-causes-impaction warning appears in tank setup, feeding, health, and enrichment, with the same numbers each time (fine sand under 1mm, or bare bottom). The 60-68°F range with the 72°F stress and mid-70s fatal thresholds repeats in tank setup and health, matching exactly.
+
+One real conflict, inside a single article rather than between two: enrichment's body says "Provide at least 2 hides per adult, ideally 3 to 4," and its own FAQ says "Keep 2 to 3 stable hides that never move." Those don't describe the same number.
+
+5. One link per page
+
+Hub: none needed, every claim already carries its own link.
+Encyclopedia: "the axolotl is Critically Endangered in the wild with fewer than 1,000 individuals estimated remaining" should link to the legal guide (08), since that guide goes out of its way to say the pet-trade restrictions are ecological, not about this endangered status, and a reader could otherwise assume the two are connected.
+Cost: "Axolotls need cool water, ideally 60 to 68°F" has no link at all, and should point to the tank setup guide (05), which has the full temperature and chiller detail this sentence only gestures at.
+Handling: none needed, it already links out for the health check and the water parameters.
+Health: none needed, its links already cover feeding and water quality.
+Tank setup: "Provide hides for security" should link to the enrichment guide (07) for hide count and type.
+Feeding: "swallowed gravel causes intestinal blockage that can require surgery and can be fatal" should link to the health guide's impaction section (04) for symptoms and treatment.
+Enrichment: "axolotls will bite at limbs and gills, especially around feeding time or if sizes are mismatched" should link to the health guide (04) so an injury has a next step.
+Legal: "that taxonomic relationship, not anything about axolotls being rare or endangered themselves, is the actual reason behind every restriction on this list" should link to the encyclopedia (01), which is where the endangered status this line is contrasting against actually lives.
+
+6. Trust
+
+Two things made me doubt this set. The cost guide's setup-cost table renders as literal text, "[table could not be parsed]." And the legal guide opens with "four jurisdictions restrict them," then lists twelve states in its own table, several with real restrictions like Wyoming and Alabama. That is not a small rounding error, it is the article disagreeing with its own table.
+
+The sentence that most convinced me someone who actually keeps these animals wrote this: "Test any new item by running your hand over it, if it scratches you, it can injure the axolotl." That is a field test, not something copied from a fact sheet.
+
+7. Grade: B+. The core husbandry pages (cost, handling, health, tank setup, feeding) are consistent with each other on every number that matters, but a broken table, a self-contradicting legal count, and a mismatched hide count keep it off an A.
+
+Two fixes first: reconcile the legal guide's opening claim with its own table, and fix the cost guide's broken table while adding a link from it to the tank setup guide.
+
+Not covered anywhere: what a vet visit for an axolotl actually costs. How to evaluate a seller or pick a healthy axolotl at the time of purchase.
+
+---
+
+Fixed the same day (docs/READER_REVIEWS.md has the full write-up): the
+legal guide's jurisdiction count ("four" to "about a dozen," matching
+its own table), the enrichment guide's FAQ hide count (reconciled to
+the body's 3 to 4), two more links (cost to tank setup, legal to the
+encyclopedia). Checked and left alone: the hub's heat-wave row versus
+the health guide's Heat Stress section, both correctly sourced to
+different, more specific material, not a copying error. Left open:
+the cost guide's AffiliateLink-in-cell table, the same
+scripts/reader-extract.mjs limitation goldfish's second pass found.
+
 ## Items no guide covers (all species, running list)
 
 - **Leopard gecko:** what a respiratory infection actually is or how it
@@ -239,3 +312,9 @@ matching hub row.
   real drug and dose in the health issues guide; the shared quarantine
   and hospital tank guide covers salt, carbon, and aeration rules
   generally, not disease-specific treatment.
+- **Axolotl:** what a vet visit actually costs. The cost guide prices the
+  animal, the tank, and food, never a vet visit, and no shared guide
+  covers it either.
+- **Axolotl:** how to evaluate a seller or pick a healthy axolotl at the
+  time of purchase. Not covered anywhere in the set or the Health and
+  More list.
