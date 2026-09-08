@@ -72,11 +72,15 @@ over anything here.
   contents card highlights the current section. Subscribe is last on
   phones, You Might Also Like is desktop only, Random Fact draws from
   facts under 50 words.
-- Linking rule, decided 2026-09-08 (RULES, Linking): no same-species
-  sibling links, no care-guide sentence, no link-only sentences in prose;
-  the Deep Dive carries those. Done on the six flying squirrel guides as
-  the pilot (links per guide 11 to 16 down to 2 to 6). The other 526
-  species guides still carry the old shape: next job 2.
+- Linking pass, done 2026-09-08 across all 532 species series guides
+  (RULES, Linking): no same-species sibling links, no care-guide sentence,
+  no link-only sentences, no site self-reference in prose; the Deep Dive
+  carries the care guide and every sibling. In-body links across the
+  series went from 4,339 to 1,251, all of them cross-species, encyclopedia,
+  overview, or the one allowed sibling with a reason. sibling-link is now a
+  checker error. Every edit to Mike's original text is listed in the
+  commit messages of the linking-pass branches (small mammals, reptiles,
+  birds, rest).
 - Date rule, decided 2026-09-08: navigation-only and FunFact edits do not
   bump lastUpdated or lastReviewed. Only a fact added or reviewed does.
 - The 111 baseline blog posts: noted, left alone for now.
@@ -112,17 +116,14 @@ catches the defects the commands produce. Per batch:
    verbatim. Prompt at the end of this file.
 3. `/beef-up 6 go` through `/beef-up 9 go` (pick-up sections). Prompt at
    the end of this file. Batch 10 is optional.
-4. Linking pass, by series (the flying squirrel six are the model, commit
-   f34db42e and 88014141): delete every sentence that exists only to link
-   a same-species sibling guide, the care guide hub, or a category page;
-   cut "covered in our X guide" clauses inside content sentences and
-   keep the point; keep cross-species, encyclopedia, and overview links.
-   Before the first series, add legal to STANDARD_SUFFIXES and wire each
-   species' overview, vs, and 10-surprising posts into RELATED_ARTICLES so
-   the Deep Dive carries them, then tighten the checker: no link in the
-   first section, no same-species sibling link anywhere, no article ending
-   on a link sentence. No date bumps. Roughly 1,400 link-only sentences go
-   by script; about 600 embedded clauses need a reading pass.
+4. Linking pass, remainder: 48 self-reference and 82 section-link
+   warnings are left, all on articles outside the species series (vs
+   guides, overviews, cross-species guides, standalone posts). The vs and
+   overview pieces link both species early by design, so decide the rule
+   for them before a pass, then flip those two warnings to errors. The
+   enrichment series' "borrowed evidence, covered in full in our X
+   enrichment guide" provenance lines were left as cross-species links
+   with a reason; normalize them if the phrasing bothers you.
 5. The 111 baseline blog posts: noted.
 
 ## The prompt to paste into a new session

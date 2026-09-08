@@ -186,8 +186,10 @@ function check(file) {
     if (/browse the (rest of our|full)/i.test(last)) add(errors, 'closer-dump', '"browse the rest of our" closer');
   }
 
-  // Linking (RULES, Linking, 2026-09-08). Warnings while the series pass
-  // runs; flip to errors once it is done.
+  // Linking (RULES, Linking, 2026-09-08). The series pass is done: sibling-link
+  // is an error. self-reference and section-link stay warnings because the vs
+  // guides, overviews, and cross-species guides still trip them by design;
+  // flip each once its pass is done.
   //   self-reference: the site talking about itself.
   //   sibling-link: more than one link to the same species' own guides or hub;
   //     the Deep Dive carries those, prose gets one only when it is the answer.
@@ -200,7 +202,7 @@ function check(file) {
     const prefix = suffixMatch[1];
     const sib = new RegExp(`\\]\\((?:/blog/${prefix}-(?:cost|handling|health-issues|tank-setup|feeding|enrichment|legal)-guide/?|/guides/${prefix}/?)\\)`, 'g');
     const sibCount = (body.match(sib) || []).length;
-    if (sibCount > 1) add(warnings, 'sibling-link', `${sibCount} links to the species' own guides or hub (limit 1)`);
+    if (sibCount > 1) add(errors, 'sibling-link', `${sibCount} links to the species' own guides or hub (limit 1)`);
   }
   const firstSection = body.split(/\n## /)[0];
   const firstLinks = (firstSection.match(/\]\(\//g) || []).length;
