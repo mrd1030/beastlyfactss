@@ -41,7 +41,7 @@ over anything here.
 | Firsthand byline notes | src/lib/data/firsthand.js |
 | Care package sources | content/CAREPACKAGE Guides/source/*.html |
 
-## State as of 2026-09-07 (evening)
+## State as of 2026-09-08
 
 - Voice pass: done across every series (handling, enrichment, tank setup,
   cost, health, feeding, legal, overview, vs, 10-surprising). The strict
@@ -51,9 +51,10 @@ over anything here.
   (src/components/mdx/DemotedH1.jsx), the excerpt block is skipped when the
   lede repeats it (`ledeMatchesExcerpt` from scripts/sync-articles.js), and
   FAQ answers cannot carry a markdown link (`faq-link` checker rule).
-- Beef-up: batches 1 and 2 are on main, each fact-checked against every
-  cited source in two rounds. Batches 3 to 5 (handling guides) are scoped
-  in docs/BEEF_UP_PLAN.md and not started.
+- Beef-up: batches 1 to 4 are on main, each fact-checked against every
+  cited source and checked by a second session. Batch 5 (the six
+  hands-off species) is written on branch claude/beef-up-batch-5 and is
+  being checked on claude/beef-up-batch-5-check, waiting for merge.
 - Sources rule: retailer product pages never go in Sources. Cost guides
   carry one plain "Prices last checked <Month Year> at ..." line under the
   last cost table instead.
@@ -81,11 +82,9 @@ catches the defects the commands produce. Per batch:
 
 ## Next jobs, in order
 
-1. `/beef-up 3 go` (tokay, savannah monitor, kingsnake, ackie handling).
-2. `/beef-up 4 go` (cockatoo, blue-tongue skink, tegu, boa handling).
-3. `/beef-up 5 go` (the six hands-off species), optional.
-4. Decide what to do with the 111 baseline blog posts.
-5. Consider moving the closing "For more, see the ..." link sentences into
+1. Merge claude/beef-up-batch-5-check once Mike says merge.
+2. Decide what to do with the 111 baseline blog posts.
+3. Consider moving the closing "For more, see the ..." link sentences into
    the related-articles component so articles stop ending on a nav line.
 
 ## The prompt to paste into a new session
@@ -98,10 +97,10 @@ Mike will say "merge" when a piece is done.
 ```
 Read READMEFIRST.md, then CLAUDE.md, then the "Writing an article" section
 of docs/RULES.md, then .claude/commands/beef-up.md. Work on a new branch
-from main named claude/beef-up-batch-3. Never push main unless I say
+from main named claude/beef-up-batch-5. Never push main unless I say
 merge. Max two agents at a time.
 
-Run /beef-up 3 go. Then verify it the way READMEFIRST.md describes:
+Run /beef-up 5 go. Then verify it the way READMEFIRST.md describes:
 checker on every slug plus the strict, link, and related-articles gates;
 diff each file against main so no link target, affiliate link, component,
 date, or existing number changed; compare every rewritten FAQ answer to
@@ -119,7 +118,7 @@ Then stop and wait for me to say merge.
 
 ```
 Read READMEFIRST.md, then CLAUDE.md, then the "Writing an article" section
-of docs/RULES.md. Fetch origin and check out branch claude/beef-up-batch-3.
+of docs/RULES.md. Fetch origin and check out branch claude/beef-up-batch-5.
 Do not push main. Max two agents at a time.
 
 You are the second pair of eyes on a batch another session wrote. Verify
@@ -138,7 +137,7 @@ it the way READMEFIRST.md describes, in this order:
    arithmetic in any table, and flags any pre-existing number that
    changed.
 5. Read two of the guides yourself, before and after, as a stranger.
-Fix every defect on the branch, rerun step 1, commit "Beef up: batch 3
+Fix every defect on the branch, rerun step 1, commit "Beef up: batch 5
 check", push the branch, and report: what the batch got right, what you
 fixed with before and after quotes, and anything you left because it was
 in Mike's original text. Then stop and wait for me to say merge.
