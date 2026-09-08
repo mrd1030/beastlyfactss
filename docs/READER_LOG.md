@@ -414,6 +414,101 @@ different, more specific material, not a copying error. Left open:
 the cost guide's AffiliateLink-in-cell table, the same
 scripts/reader-extract.mjs limitation goldfish's second pass found.
 
+## Ball python (2026-09-08)
+
+One Opus agent, eleven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, vs boa constrictor, vs
+corn snake), about 92k tokens. Read against the old legacy hub. Full
+agent output below, unedited.
+
+---
+
+# Ball Python Set: Reader Review
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Act on: the shopping checklist. But it is the deep dives restated at about 80 percent fidelity. **C**
+- **01 Encyclopedia.** Finished in thirty seconds. Act on: nothing except "20 to 30 years." **C**
+- **02 Cost.** Finished. Act on: budget $500 to $1,500 for year one. **B**
+- **03 Handling.** Finished. Act on: settle 1 to 2 weeks, 48 to 72 hours post-feed, never in shed. **A**
+- **04 Health.** Finished. Act on: a real go-to-the-vet-now list. **A**
+- **05 Tank setup.** Finished. Act on: this is my build sheet. **A-**
+- **06 Feeding.** Finished. Act on: thawing and freezer storage, the best section in the set. **B+**
+- **07 Enrichment.** Finished. Act on: the priority order, and its honesty about what the study did not test. **A**
+- **08 Legal.** Finished. Act on: checked my state in one table. **A**
+- **09 vs Boa.** Finished. Act on: size reality. The enclosure row is wrong. **C+**
+- **10 vs Corn.** Finished. Act on: it made the choice for me. **B**
+
+## 2. Hub and encyclopedia
+
+The hub does not earn its place. Everything on it exists downstream in more usable form, and the disagreements are largely its own:
+
+- **Fasting.** Hub fun fact: "Ball pythons can go up to 6 months without eating." Hub diet: "A healthy adult ball python can safely fast for 6 to 8 weeks." Feeding guide: "A healthy adult ball python can go 3-6 months without eating."
+- **Humidity.** Hub housing: "Ambient humidity should stay at 55 to 65%." Hub FAQ: "Ball pythons require 60 to 80% ambient humidity." Tank setup: "Keep ambient humidity at 55 to 65%."
+- **Adult schedule.** Hub: "Adults eat every 10 to 14 days." Hub FAQ and tank setup: "adults every 7 to 14 days."
+- **Thawing.** Hub: "in warm water for 20 to 30 minutes until it reaches 100 to 105 degrees F at the core." Feeding: "submerge it in cool to lukewarm water."
+- **Handling.** Hub: "2 to 3 times per week for 15 to 20 minutes... usually 2 to 4 weeks after acquisition." Handling guide: "up to 3 to 5 for a snake that handles well... 15 to 30 minutes," starting after "the first one to two weeks."
+- **Costs.** Nearly every hub line differs from the cost guide: electricity $50 to $90 vs $20 to $80, vet $50 to $90 vs $50 to $150, substrate $30 to $50 vs $40 to $120.
+
+The encyclopedia earns a small place: origin, wild diet, morph count, the 48-year record. But "Wild Lifespan: 20-30 years (up to 48 years recorded in captivity)" is mislabeled, and "Wild populations face pressure from over-collection" sits oddly beside "Least Concern (IUCN)."
+
+## 3. The set as a whole
+
+Yes, I could buy legally, build it, wire the heat, feed it, and recognize the common illnesses. Questions raised on one page whose answer sits on another, unsignposted:
+
+- Health says quarantine "several weeks to months," hub says 60 to 90 days. The Reptile Quarantine guide is a sidebar title only.
+- Tank setup warns "obesity is a real and common issue" without saying how to tell. Sexing, Growth, and Body Condition covers it.
+- Feeding says worry at "rapid weight loss" but never says to own a scale. Same guide.
+- Nothing in the eleven pages mentions a power failure. Reptile Emergency Plan is sidebar-only.
+
+Still open after all eleven: choosing a seller and a healthy animal, routine cleaning cadence and disinfectant, finding a reptile vet, and whether the morphs the cost guide prices carry health baggage.
+
+## 4. Overlap and conflict across deep dives
+
+Read twice or more: humidity 55 to 65 rising to 70 to 80 (tank, health, vs corn), frozen/thawed over live (hub, tank, feeding), two snug hides (hub, tank, enrichment), the 48-hour post-feed rule (hub, handling, feeding), thermostat mandatory (cost, tank, health, enrichment).
+
+Conflicts:
+
+- **Enclosure size.** Tank setup: "The current standard for an adult is a 4x2x2 ft... roughly 120 gallons." vs Boa: "Adult enclosure | 40-50 gallon range," and "stay comfortable in roughly a 50-gallon enclosure for the rest of their life." That is the size the tank guide says the hobby moved away from.
+- **Escape risk.** Handling: "They're skilled escape artists." vs Corn: "Escape risk | Low - calmer, less driven."
+- **Climbing.** Hub: "ball pythons are semi-arboreal, especially juveniles." Enrichment: "The point is not that ball pythons are secretly arboreal."
+- **Biting.** Handling devotes a section to it. vs Corn: "Balls up, essentially never bites."
+- **Prey size.** Tank setup adds "or about 10% of body weight," which no other page says and which is a very large rat for a 1,500 gram female.
+- **Thaw temperature.** Three answers: hub's 100 to 105 F core, feeding's "cool to lukewarm," feeding FAQ's "warm - not hot - water... 15 to 20 minutes."
+
+## 5. The one link each page needed
+
+- **Hub:** "Thaw prey fully by placing it in a zip-lock bag in warm water for 20 to 30 minutes." Point to the Feeding guide.
+- **Encyclopedia:** "hundreds of color morphs developed through selective breeding." Point to the Cost guide.
+- **Cost:** "The thermostat is not optional." Point to Reptile Heating and Thermostats.
+- **Handling:** "You'll know your snake is heading into a shed cycle when its eyes turn cloudy or blue." Point to Understanding Reptile Shedding.
+- **Health:** "quarantining any new snake for several weeks to months... isn't optional." Point to Reptile Quarantine.
+- **Tank setup:** "sized to roughly the width of the snake at its thickest point, or about 10% of body weight." Point to Feeding.
+- **Feeding:** "A healthy adult ball python can go 3-6 months without eating." Point to Health Issues.
+- **Enrichment:** "Two secure hides, one on the warm side and one on the cool side, remain the baseline." Point to Tank Setup.
+- **Legal:** none needed.
+- **vs Boa:** "stay comfortable in roughly a 50-gallon enclosure for the rest of their life." Point to Tank Setup, which contradicts it.
+- **vs Corn:** "need enclosure humidity in the 55 to 65% range." Point to Tank Setup.
+
+## 6. Trust
+
+Doubts: the 50-gallon claim, the 10 percent body weight prey rule, three thawing answers, and the enrichment line "This is reasoning from natural history, and the guide should say so," which reads like an editor's note left in the text.
+
+The sentence that convinced me a keeper wrote this: "Keep it stable enough that it cannot be tipped, and clean, since a soaking snake will also defecate in it."
+
+## 7. Set grade: B-
+
+Strong individual articles undermined by a hub that contradicts them and by numbers that drift between pages.
+
+First two fixes: one source of truth for enclosure size, humidity, fasting window, feeding interval, and thaw method, with the hub rendering from it. Then cut the hub to a router that links into each deep dive at the claim, instead of restating it.
+
+## Not covered anywhere
+
+- How to choose a seller and assess a healthy animal before buying.
+- Routine cleaning cadence and what disinfectant is safe on a snake enclosure.
+- How to find and vet a qualified reptile veterinarian before you need one.
+- Whether specific morphs carry health problems, given the cost guide prices them by genetics.
+
 ## Items no guide covers (all species, running list)
 
 - **Leopard gecko:** what a respiratory infection actually is or how it
@@ -452,3 +547,13 @@ scripts/reader-extract.mjs limitation goldfish's second pass found.
 - **Axolotl:** how to evaluate a seller or pick a healthy axolotl at the
   time of purchase. Not covered anywhere in the set or the Health and
   More list.
+
+- **Ball python:** how to choose a seller and assess a healthy animal
+  before buying.
+- **Ball python:** routine cleaning cadence for an established enclosure
+  and what disinfectant is safe. The shared quarantine guide covers
+  end-of-quarantine disinfection only.
+- **Ball python:** how to find and vet a qualified reptile veterinarian
+  before you need one.
+- **Ball python:** whether specific morphs carry health problems, given
+  that the cost guide prices them by genetics.
