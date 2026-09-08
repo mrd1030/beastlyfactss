@@ -1562,6 +1562,66 @@ docs/READER_LOG.md for Mike. Not added: cost guide's suggested link
 deep-dives-only pass); enrichment's suggested link (already at its one
 sibling cap, used on health issues in the first pass this guide had).
 
+## Betta fish (2026-09-08, second pass, after the fixes)
+
+Same nine-page set, re-extracted after the first-pass fixes landed. One
+Sonnet agent, about 98k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A | Puts the whole first week in one place with real numbers pulled from each deep dive, not a rewrite of them. |
+| Encyclopedia | C | Origin, wild diet, and conservation status, no care advice at all. |
+| Cost | A- | Real budget numbers. |
+| Handling | A | Know exactly how to move the fish. |
+| Health issues | A | The columnaris-vs-ich temperature reversal alone is worth the read. |
+| Tank setup | A- | Buy list is clear. |
+| Feeding | A | Honest about disagreement, still gives you a number to use. |
+| Enrichment | A | Reorders what you'd buy first. |
+| Vs. Goldfish | A- | Useful if deciding between the two. |
+| Water parameters | A | The testing schedule is the most useful table in the set. |
+
+Set grade: A- (up from B+). "Deep, specific, mostly self-consistent, let
+down by the encyclopedia's thinness and the missing cycling and
+quarantine links."
+
+No numeric hub-versus-deep-dive disagreement found this pass; the
+reader specifically checked tank size, temperature, pH, feeding
+portion, cost, lifespan, and quarantine and found the hub matching
+each deep dive word for word. The pellet-portion softness (hub/tank
+setup "2 to 4" against feeding's fuller "2 to 3 up to 6 to 7") is the
+same non-conflict noted in the first pass, left alone.
+
+New findings, both fixed: tank setup's cycling sentence ("Cycle the
+tank... before adding your betta") never linked the actual cycling
+instructions, so a reader starting on tank setup or water parameters
+instead of the hub had no path to them; now links
+[aquarium-cycling-guide]. The handling guide mentioned watching water
+parameters "for a day or two after any addition" without ever naming
+quarantine, so a reader could easily mistake that for the whole
+answer on introducing a new fish; now names and links the fish
+quarantine guide instead of repeating the water-parameters plug it
+carried before.
+
+Gaps, checked against the Health and More list before calling them
+real: tank lighting or a photoperiod schedule, tankmate compatibility
+(snails, shrimp, corydoras) for a single male betta, and how to
+actually set up and stock a sorority tank. All three repeat or extend
+the first pass's list and none are covered by the shared aquarium
+guides; filed in docs/READER_LOG.md.
+
+Trust: the cost guide's "[table could not be parsed]" flagged again,
+still the known AffiliateLink-in-cell extractor limitation, not a site
+defect. The sentence that most convinced the reader, from health
+issues: "The thing to know if you have already treated ich is that the
+temperature move is the opposite one," backed by the cited columnaris
+mortality figures.
+
+Fixed the same day: the two links above (tank setup to cycling,
+handling to quarantine).
+
+Open: lighting/photoperiod, tankmate compatibility, and sorority setup
+gaps filed in docs/READER_LOG.md for Mike.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a

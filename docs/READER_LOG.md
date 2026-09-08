@@ -665,6 +665,72 @@ First two changes:
 - **Betta fish:** the actual target temperature for treating ich once
   it's diagnosed (the health issues guide names warming the tank but
   never states the target).
+- **Betta fish (second pass):** tank lighting or a photoperiod schedule.
+- **Betta fish (second pass):** tankmate compatibility (snails, shrimp,
+  corydoras) for a single male betta.
+- **Betta fish (second pass):** how to actually set up and stock a
+  sorority tank (the hub and enrichment guide both mention one is
+  possible, neither says how).
+
+## Betta fish (2026-09-08, second pass)
+
+One Sonnet agent, same nine pages re-extracted after the first-pass
+fixes, about 98k tokens. Full agent output below, unedited.
+
+---
+
+# Betta Fish Content Review
+
+**1. Page by page**
+
+- 00 Hub: Finish it, act on every bullet immediately. A.
+- 01 Encyclopedia: Skim it, nothing actionable beyond origin/lifespan. C.
+- 02 Cost guide: Finish it, budget with real numbers. A-.
+- 03 Handling guide: Finish it, know exactly how to move the fish. A.
+- 04 Health issues: Finish it, the columnaris-vs-ich temperature reversal alone is worth the read. A.
+- 05 Tank setup: Finish it, buy list is clear (one stray double comma typo). A-.
+- 06 Feeding guide: Finish it, honest about disagreement, still gives you a number to use. A.
+- 07 Enrichment guide: Finish it, reorders what you'd buy first. A.
+- 08 Vs. Goldfish: Finish it if deciding between the two, otherwise skip. A-.
+- 09 Water parameters: Finish it, the testing schedule is the most useful table in the set. A.
+
+**2. Hub and encyclopedia**
+
+The hub earns its place: it's the only page that puts the whole first week in one place with real numbers pulled from each deep dive, not a rewrite of them. The encyclopedia does not earn much: origin, wild diet, and conservation status aren't duplicated anywhere else, but there's no care advice in it at all, so it reads as a stub next to the hub.
+
+I checked every shared number (tank size, temperature, pH, feeding portion, cost, lifespan, quarantine) and found no disagreement between the hub and any deep dive. The hub's "$5 to $30 for the fish... $100 to $300 for a full setup" matches the cost guide word for word, and "76 to 82°F, 78 to 80°F the sweet spot" matches the tank setup guide exactly. That consistency is itself notable given how often this kind of set drifts.
+
+**3. Could I set up, buy, feed, and keep this fish healthy?**
+
+Mostly yes. What's missing: nobody tells me how to actually run a fishless cycle step by step. The tank setup guide says "Cycle the tank... before adding your betta" and the water parameters guide describes the ammonia-nitrite-nitrate pattern, but neither links to the actual cycling instructions; only the hub does. If I'd started on 05 or 09 instead of the hub, I'd be stuck. Same problem with the 30-day quarantine rule: it appears only on the hub, and the handling guide's line about watching "water parameters... for a day or two after any addition" could easily be mistaken for the whole answer on introducing a new fish, since it never mentions quarantine at all.
+
+**4. Overlap and conflict across the deep dives**
+
+Tank size, temperature, water change percentage, and portion size are repeated on nearly every page, consistently. One real soft conflict: the hub and tank setup guide both give "2 to 4 pellets," but the feeding guide expands that to "anywhere from 2 to 3 up to 6 to 7 depending on the pellet size and brand." Not contradictory, but a reader who only sees the hub's "2 to 4" gets a narrower number than the article that actually specializes in it. The feeding guide is also the one page honest about its own uncertainty: "Sources don't fully agree here... There's no single correct number." That's a good instinct, but it means the hub's confident "once or twice a day" line overstates a schedule the source article calls unsettled.
+
+**5. One link per page**
+
+- 00: "Check the heater is holding steady at 78 to 80°F first... then evaluate water quality and recent tank changes." Should point to the feeding guide's "Why Bettas Stop Eating" section.
+- 01: "...intense aggression toward other male bettas - a trait that led to organized fighting matches in Thailand." Should point to the enrichment guide's rearing research.
+- 02: "Most betta health issues are managed through water quality correction rather than veterinary treatment." Should point to the health issues guide.
+- 03: "keep an eye on water parameters... for a day or two after any addition." Should point to the quarantine guide.
+- 04: "Fasting the fish for 2 to 3 days often resolves mild cases... a single cooked, de-shelled pea." Should point to the feeding guide.
+- 05: "Cycle the tank... before adding your betta, rather than adding the fish to unestablished water." Should point to the cycling guide. This is the biggest gap in the set.
+- 06: "Watch for... a bloated belly, stringy feces, or buoyancy problems." Should point to the health issues guide.
+- 07: "Larger tanks promoted natural, active behavior... restricted conditions produced the hiding and inactivity pattern." Should point to the tank setup guide.
+- 08: "will fight other male bettas, often fatally, which is exactly where the name... comes from." Should point to the enrichment guide's aggression research.
+- 09: "This whole process typically takes 4 to 6 weeks without a fish in the tank." Should point to the cycling guide.
+
+**6. Trust**
+
+The cost guide has a placeholder reading "[table could not be parsed]," which is a rendering flaw rather than a content one, but it's the kind of thing that makes you check everything else twice. What convinced me most that a real keeper wrote this: "The thing to know if you have already treated ich is that the temperature move is the opposite one," followed by cited mortality figures from a peer-reviewed columnaris study. That's the sentence that catches an actual mistake a returning keeper would make.
+
+**7. Grade: A-.** Deep, specific, mostly self-consistent, let down by the encyclopedia's thinness and the missing cycling/quarantine links. First two changes: link every mention of tank cycling to the cycling guide, and add a one-line quarantine mention to the handling guide.
+
+**Not covered anywhere**
+- Lighting or photoperiod for the tank.
+- Compatible tankmates for a single male betta (snails, shrimp, corydoras).
+- How to actually set up and stock a sorority tank.
 
 ## Betta fish (2026-09-08)
 
