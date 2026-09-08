@@ -148,6 +148,73 @@ setup-cost and feeding-schedule conflicts by construction; the
 65-72°F FAQ answer corrected to 65-75°F; a link-only sentence pointing
 at the care guide hub cut; five of eight recommended links added.
 
+## Goldfish (2026-09-08, second pass)
+
+Same nine-page set, re-extracted after the first pass fixes landed.
+One Sonnet agent, about 94k tokens. Full agent output below, unedited.
+
+---
+
+1. One line per page
+
+Hub: I would finish it, it is a fast, useful index with real numbers, but one of its own numbers is wrong elsewhere on the site. Grade B+.
+Encyclopedia: I would skim it, mostly natural history I do not need to buy or feed a fish, the one useful line is a near-duplicate of the hub's fun fact. Grade C+.
+Cost guide: I would finish it, the budget breakdown is actionable, but the setup-cost table is broken ("[table could not be parsed]"). Grade B-.
+Handling guide: I would finish it, short and immediately actionable (net, wet hands, minimize time out of water). Grade A.
+Health issues guide: I would finish it, dense but organized by symptom, sourced to Merck and IFAS, and honest about a dosing conflict. Grade A.
+Tank setup guide: I would finish it, gives me the exact numbers I need to shop and cycle. Grade A-.
+Feeding guide: I would finish it, thorough on schedule, tiers of food, and reasons for appetite loss, but its own FAQ contradicts its own body text on how long a fast is safe. Grade B+.
+Enrichment guide: I would finish it, cites specific research and stays disciplined about not letting decor substitute for tank size. Grade A-.
+Bowl myth guide: I would finish it, this is the strongest page in the set, myth then mechanism then fix. Grade A.
+
+2. Hub and encyclopedia
+
+The hub earns its place: it is a router with real numbers and links, not filler. The encyclopedia mostly repeats the hub and the bowl-myth article's core point ("goldfish grow to the size of their environment... they retain memories for months") almost word for word, with no new number attached. It is not wasted space, but it adds little beyond the scientific name and wild lifespan.
+
+They do disagree. The hub's FAQ says "Goldfish need cooler water (65-72°F) than bettas (78-80°F)." The bowl myth guide's FAQ says "Goldfish need cooler water (65-75°F) than bettas (78-80°F)," and the tank setup guide independently states goldfish are "comfortable in the 65 to 75°F range." Two pages agree on 65 to 75, the hub alone says 65 to 72.
+
+3. The set as a whole
+
+Yes, I could set up, buy, feed, and keep a goldfish healthy from this set alone. Tank size, filtration turnover, water parameters, cycling, diet, feeding schedule, handling, and disease signs are all here with real numbers. What is missing: how to actually acclimate a new fish into the tank (temperature matching, drip acclimation) is never explained, only how to net and carry one. The health guide raises "test your water" as the first response to almost every symptom but the actual cycling procedure lives only in the sidebar's "How to Cycle a Fish Tank" guide, never in this set, so a reader following only these nine pages knows to cycle but not how.
+
+4. Overlap and conflict across the deep dives
+
+Tank size and filtration turnover are repeated near-identically in the hub, tank setup guide, and bowl myth guide, with no numeric conflict there, that repetition is reassuring rather than wasteful. The one real conflict is internal to the feeding guide itself: the body says "Beyond about 5 days, effects on health may start to show," while its own FAQ says "A healthy adult... can typically go up to about a week to 10 days without real concern." Those two claims, on the same page, do not agree with each other. The health issues guide also flags its own conflict on anchor worm dosing: "UF/IFAS FA185... gives 0.066 mg/L, while the Merck Veterinary Manual's general figure... is 0.03 mg/L," and states which one to follow. That is a conflict handled openly rather than hidden, which is more reassuring than most sites manage.
+
+5. One link per page
+
+Hub: "Cycling: Cycle the tank fully before adding any fish, the same as any other species." should link to "How to Cycle a Fish Tank," not just the tank setup guide.
+Encyclopedia: "Goldfish grow to the size of their environment... contrary to popular myth" should link to the bowl myth guide.
+Cost guide: "Substrate, decor, a dechlorinator, and a test kit together add another $30 to $60" should link to the tank setup guide, which explains what that gear actually does.
+Handling guide: "Whatever method you use, minimize the time the fish spends out of water" would benefit from a link to the power outage and transport guide.
+Health issues guide: "a new pond addition or a fish sourced from a crowded holding tank is worth a closer look before it goes in with established stock" should link to the quarantine guide.
+Tank setup guide: "Cycle the tank before adding any fish... an established beneficial bacteria colony is what actually processes the waste" should link to the cycling guide.
+Feeding guide: "A new tank, incompatible tank mates, bullying, or an undersized enclosure are repeatedly named triggers" should link to the enrichment guide's social stocking section.
+Enrichment guide: "This only works if filtration and tank volume genuinely support the combined bioload of everyone in the tank" should link to the tank setup guide's filtration math.
+Bowl myth guide: needs none, its links are already well placed.
+
+6. Trust
+
+The self-flagged dosing conflict on anchor worm treatment, naming both numbers and saying which to follow and why, is the strongest trust signal in the set. The broken cost table and the feeding guide contradicting itself on fasting duration are the two things that made me doubt the editing process, not the content. The sentence that most convinced me a real keeper wrote this: "rinse it in removed tank water only, never tap water, chlorine and temperature shock kill off the beneficial bacteria living in it," that is a specific, hard-won detail, not something copied from a spec sheet.
+
+7. Grade and two changes
+
+Grade: B+. Deep, sourced, mostly consistent, let down by one broken table and one self-contradicting FAQ. First change: fix the betta temperature number on the hub to match the rest of the site (65-75, not 65-72). Second change: fix the feeding guide's FAQ so it matches its own body text on how long a fast is safe.
+
+Not covered anywhere:
+Acclimating a new goldfish to the tank (drip acclimation, temperature matching before release) has no guide anywhere in this set or the Health and More list.
+Medication names and dosages for ich, fin rot, ulcers, or fungal infections, the health guide names causes and prevention but only anchor worm gets an actual treatment dose, and no guide in the Health and More list covers goldfish medications specifically.
+Breeding and spawning, mentioned only as a cause of appetite loss, with no guide anywhere in the set or sidebar explaining the process itself.
+
+---
+
+Fixed the same day (docs/READER_REVIEWS.md has the full write-up): the
+hub's stale betta-temperature FAQ (65-72°F to 65-75°F), the feeding
+guide's self-contradicting FAQ on fasting duration, five of six
+recommended links. Left open: the cost guide's AffiliateLink-in-cell
+table, which the extractor can't parse (a tooling limitation, not a
+site defect).
+
 ## Items no guide covers (all species, running list)
 
 - **Leopard gecko:** what a respiratory infection actually is or how it
@@ -167,3 +234,10 @@ at the care guide hub cut; five of eight recommended links added.
   real drug and dose in the health issues guide; the shared quarantine
   and hospital tank guide covers salt, carbon, and aeration rules
   generally, not disease-specific treatment.
+- **Goldfish:** acclimating a new fish to the tank (drip acclimation,
+  temperature matching before release). No page in the set or the
+  Health and More list explains it; only how to net and carry a fish
+  is covered.
+- **Goldfish:** breeding and spawning. Mentioned only as a cause of
+  appetite loss in the feeding guide, with no guide anywhere explaining
+  the process itself.

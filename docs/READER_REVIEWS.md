@@ -758,6 +758,79 @@ doses beyond anchor worm and flukes, both filed in docs/READER_LOG.md
 as items no guide covers. The encyclopedia's "4-12+ inches" floor is
 out of scope for a deep-dives-only fix pass; left for Mike.
 
+## Goldfish (2026-09-08, second pass, after the fixes)
+
+Same nine-page extractor set, re-extracted from the fixed content (no
+change since the extractor bug fix, the bowl myth piece was already
+included). One Sonnet agent, about 94k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | A fast, useful index with real numbers, but one of its own numbers was wrong elsewhere on the site. |
+| Encyclopedia | C+ | Mostly natural history, the one useful line near-duplicates the hub's fun fact. |
+| Cost | B- | Actionable budget breakdown, but the setup table showed as unparseable to the extractor. |
+| Handling | A | Short and immediately actionable. |
+| Health issues | A | Dense, sourced to Merck and IFAS, honest about a dosing conflict. |
+| Tank setup | A- | Exact numbers to shop and cycle from. |
+| Feeding | B+ | Thorough, but its own FAQ contradicted its own body text on fasting duration. |
+| Enrichment | A- | Cites specific research, disciplined about decor not substituting for tank size. |
+| Tank size and bowl myth | A | The strongest page in the set, myth then mechanism then fix. |
+
+Set grade: B+. "Deep, sourced, mostly consistent, let down by one
+broken table and one self-contradicting FAQ."
+
+Real findings, both confirmed and fixed:
+
+- The router hub's own FAQ still read "Goldfish need cooler water
+  (65-72°F) than bettas," left over from before the first pass fixed
+  that number on the bowl myth piece. The hub's FAQ is copied
+  verbatim from a deep dive at build time, not re-synced automatically,
+  so a source fix after the copy was made doesn't propagate. Fixed to
+  65-75°F to match the bowl myth piece and tank setup, both of which
+  already agreed.
+- The feeding guide contradicted itself on the same page: its body
+  says "Beyond about 5 days, effects on health may start to show," its
+  own FAQ said a goldfish "can typically go up to about a week to 10
+  days without real concern." Fixed the FAQ to carry the same staged
+  thresholds the body already states (3 to 4 days fine, 5 days
+  effects may show, a week to 10 days worth arranging a feeder),
+  reworded rather than copied to avoid tripping the FAQ-copies-body
+  checker rule.
+- The cost guide's "[table could not be parsed]" is a
+  scripts/reader-extract.mjs limitation, not a site defect: that
+  table's first-column cells are `<AffiliateLink>` elements rather
+  than plain strings, which the extractor's regex-based table parser
+  doesn't handle. The live page renders it fine. Left as a known
+  extractor gap, not fixed this pass; noted for Mike since a second
+  species (leopard gecko's SHORT_LABELS pattern aside) has now hit an
+  extractor limitation.
+
+Six more recommended links from this pass, five added: cost guide to
+tank setup (the substrate/decor/test-kit sentence), handling guide to
+the power outage and transport guide (minimize time out of water),
+health issues guide to the quarantine guide (crowded holding tank
+sentence), tank setup guide to the cycling guide (cycle the tank
+sentence). Not added: feeding guide's suggested link to enrichment's
+social stocking section, feeding guide already carries its one
+allowed sibling link (to health issues, added in the first pass).
+Enrichment's suggested link to tank setup's filtration math was
+already satisfied, that sentence already links "filtration" to the
+shared aquarium filtration guide.
+
+Gaps, checked against the Health and More list before calling them
+real: acclimating a new goldfish to the tank (drip acclimation,
+temperature matching) has no page anywhere in the set or the sidebar;
+breeding and spawning is mentioned only as a cause of appetite loss,
+with no guide explaining the process. Both filed in docs/READER_LOG.md.
+Medication names and doses beyond anchor worm repeat from the first
+pass, already filed.
+
+Fixed the same day: the hub's stale betta-temperature FAQ, the feeding
+guide's self-contradicting FAQ, five of six recommended links.
+
+Open: the extractor's inability to render an AffiliateLink-in-cell
+table, left for Mike as a tooling note rather than a content fix.
+
 ## Single-article reads (2026-09-08, text only)
 
 Earlier single-page reads, kept for the record. Grades: tegu handling A-,
