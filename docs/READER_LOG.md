@@ -687,6 +687,75 @@ First two changes:
   pair.
 - **Guinea pig:** litter training method (only "a litter corner" is
   named anywhere in the set).
+- **Guinea pig (second pass):** breeding and gestation basics (heat
+  cycle, gestation length, litter size), despite pregnancy toxemia and
+  pregnant-sow vitamin C needs being mentioned twice in the set.
+
+## Guinea pig (2026-09-08, second pass)
+
+One Sonnet agent, same nine pages re-extracted after the first-pass
+fixes, about 90k tokens. Full agent output below, unedited.
+
+---
+
+# Guinea Pig Care Set Review
+
+## 1. Page by page
+
+- 00 Hub: Finish it, yes. Numbers to act on immediately. Grade A.
+- 01 Encyclopedia: Finish it, but nothing to act on beyond size and lifespan already in the hub. Grade C.
+- 02 Cost guide: Finish it, clear numbers for budgeting. Grade A-.
+- 03 Handling guide: Finish it, the two-hand pickup is genuinely useful. Grade A.
+- 04 Health issues guide: Finish it, the mites-versus-cysts table is the most useful single thing in the set. Grade A.
+- 05 Tank setup guide: Finish it, but a diet table failed to render, so I'm missing whatever it held. Grade B.
+- 06 Feeding guide: Finish it, but its own FAQ admits two of its sources disagree on alfalfa. Grade A-.
+- 07 Enrichment guide: Finish it, practical and short. Grade A-.
+- 08 Scurvy guide: Finish it, the best-sourced page in the set. Grade A.
+
+## 2. Hub and encyclopedia
+
+The hub earns its place: it's a router with the first-week numbers pulled straight from each deep dive, not a rewrite of them. The encyclopedia does not earn its place next to the deep dives. Its only load-bearing facts, size and lifespan, are already on the hub, and its history section (Andes, 1570s Europe, lab animal by the 1700s) has no home elsewhere, so it's neither redundant nor useful for setup.
+
+No hub-versus-deep-dive numbers disagree. Enclosure size, temperature, vitamin C, and the "call a vet" clock all match word for word between the hub and their source articles.
+
+## 3. Could I actually do this after reading all nine
+
+Yes for setup, feeding, and vitamin C. Yes for handling and recognizing an emergency. Not fully for two things the hub raises and never resolves: nail trims (hub says trim every 6-8 weeks with styptic powder ready, but the actual how-to lives in a shared guide not in this set) and vet visits (hub says don't fast a guinea pig like a dog, bring the cage mate, but again the mechanics are one click away, not here).
+
+A question answered elsewhere without the text saying so: the handling guide says "Most guinea pigs need only minimal restraint for basic handling and exams" but never links to the vet-visit guide that actually covers exams and carriers, even though the hub links there for a different reason.
+
+Still missing after reading everything, including the shared list: how to introduce two unfamiliar guinea pigs (the hub's FAQ says a pair from day one is easier than introducing one later, but never explains how to do the harder version), and anything on breeding or gestation, despite pregnancy toxemia and pregnant-sow vitamin C needs being mentioned twice.
+
+## 4. Overlap and conflicts across deep dives
+
+Read twice or more, consistently: the vitamin C dosing numbers (hub, tank setup, scurvy guide all give the same Merck/PetMD figures), bell pepper as the top source (tank setup and scurvy guide), and the 90-day pellet freshness window (tank setup and feeding guide). None of these disagree.
+
+One real conflict, and the feeding guide flags it against itself. The tank setup guide's FAQ states alfalfa for adults is "too high in calcium, appropriate only for very young guinea pigs," a flat no. The feeding guide's own FAQ answer then says: "One source says avoid it outright for healthy adults, another allows it as an occasional treat, but grass hay... should be the adult staple." So the set contains two positions on adult alfalfa and admits it in one spot but not the other.
+
+## 5. One link per page
+
+- 00 Hub: "Getting a Small Mammal to the Vet" is already linked from the vet-trips line, so it needs none.
+- 01 Encyclopedia: none needed, it's pure background.
+- 02 Cost guide: "Sick or emergency visits run $100 to $300 or more, and complex issues like GI stasis can push well past that" would benefit from linking GI stasis to the health issues guide instead of leaving that link only on the earlier mention.
+- 03 Handling guide: "Most guinea pigs need only minimal restraint for basic handling and exams" should link to the small mammal vet guide.
+- 04 Health issues guide: none needed, its own links are already thorough.
+- 05 Tank setup guide: "Heatstroke becomes a real risk above 80°F" should link to the small mammal heat stress guide, the way the health issues guide does.
+- 06 Feeding guide: none needed.
+- 07 Enrichment guide: "A guinea pig that stays hidden constantly... is signaling that something in the current setup isn't working... an underlying health issue" should link to the health issues guide, not only the vet-visit guide.
+- 08 Scurvy guide: none needed.
+
+## 6. Trust
+
+Nothing raised real doubt except the unrendered table on the tank setup page and the alfalfa contradiction above, both of which are honest gaps rather than fabrication; the feeding guide even names the disagreement instead of hiding it. The sentence that most convinced me an actual keeper wrote this: "A single hide in a shared space tends to become something one animal guards rather than something everyone can use." That's a specific, unglamorous detail nobody invents from a spec sheet.
+
+## 7. Overall grade
+
+A-. Deep, consistent, well-sourced, let down only by one internal contradiction and one broken table. First two fixes: resolve the alfalfa conflict into one answer, and repair the tank setup diet table.
+
+## Not covered anywhere
+
+- How to introduce two unfamiliar guinea pigs to each other.
+- Breeding and gestation basics (heat cycle, gestation length, litter size).
 
 ## Guinea pig (2026-09-08)
 

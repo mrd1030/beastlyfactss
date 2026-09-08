@@ -1902,6 +1902,74 @@ and litter training method filed in docs/READER_LOG.md for Mike. The
 feeding guide's self-acknowledged alfalfa disagreement left as is,
 since the page already states the tension between its two sources.
 
+## Guinea pig (2026-09-08, second pass, after the fixes)
+
+Same nine-page set, re-extracted after the first-pass fixes landed. One
+Sonnet agent, about 90k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A | Numbers to act on immediately. |
+| Encyclopedia | C | Nothing to act on beyond size and lifespan already on the hub. |
+| Cost | A- | Clear numbers for budgeting. |
+| Handling | A | The two-hand pickup is genuinely useful. |
+| Health issues | A | The mites-versus-cysts table is the most useful single thing in the set. |
+| Tank setup | B | A diet table failed to render. |
+| Feeding | A- | Its own FAQ admits two sources disagree on alfalfa. |
+| Enrichment | A- | Practical and short. |
+| Scurvy | A | The best-sourced page in the set. |
+
+Set grade: A- (up from B+). "Deep, consistent, well-sourced, let down
+only by one internal contradiction and one broken table."
+
+No hub-versus-deep-dive numeric disagreement found this pass; enclosure
+size, temperature, vitamin C, and the "call a vet" clock all matched
+word for word between the hub and their source articles.
+
+One same-set contradiction, which the feeding guide already flags
+against itself: tank setup's FAQ states adult alfalfa is "too high in
+calcium, appropriate only for very young guinea pigs," a flat no.
+Feeding's own FAQ answer says "One source says avoid it outright for
+healthy adults, another allows it as an occasional treat, but grass
+hay... should be the adult staple." Both pages agree grass hay is the
+adult staple and alfalfa isn't a regular feed; the only daylight is
+whether an occasional-treat exception exists, and feeding-guide already
+states that tension transparently rather than hiding it. Left as is,
+same treatment as the betta feeding guide's fasting hedge and the
+bearded dragon's brumation-length pages: a hedge two sources genuinely
+disagree on, not a number either page misstates.
+
+Checked and not a bug: the reviewer suggested linking the cost guide's
+FAQ at "complex issues like GI stasis can push well past that," the
+same sentence already linked in the body. FAQ answers cannot carry a
+markdown link on this site (the `faq-link` rule), so the FAQ's copy of
+that sentence is correctly plain text; nothing to fix.
+
+Three more recommended links added: handling to the small mammal vet
+guide (the minimal-restraint sentence), tank setup to the small mammal
+heat stress guide (the heatstroke sentence), enrichment to health
+issues (the bar-chewing/withdrawal sentence).
+
+Gaps, checked against the Health and More list before calling them
+real: how to introduce two unfamiliar guinea pigs (repeats the first
+pass), and breeding and gestation basics (heat cycle, gestation length,
+litter size), a new item this pass. Neither is covered anywhere in the
+set or the shared small mammal guides; filed in docs/READER_LOG.md.
+
+Trust: the unrendered diet table (the same AffiliateLink-in-cell
+extractor limitation noted in the first pass, not a site defect) and
+the alfalfa tension (examined, left as an honest hedge). The sentence
+that most convinced the reader, from enrichment: "A single hide in a
+shared space tends to become something one animal guards rather than
+something everyone can use."
+
+Fixed the same day: three more links (handling to vet visits, tank
+setup to heat stress, enrichment to health issues).
+
+Open: guinea pig introductions and breeding/gestation basics filed in
+docs/READER_LOG.md; the alfalfa hedge and the extractor's table
+limitation both left as is.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
