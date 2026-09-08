@@ -515,6 +515,131 @@ shows the two lists separately with each shared title's excerpt, and the
 hub's first-week card carries a heat, nails, molting, and vet trips row
 sourced to those guides.
 
+## Leopard gecko (2026-09-08, first pass, after the router hub)
+
+Extractor set of ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, temperature, vs crested gecko).
+One Sonnet agent, about 102k tokens. The hub was already reconciled to
+the router shape before this pass; this is the first review filed to
+this doc for the species.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A | The only page that hands you a first-week checklist, an emergency card, and a buy list without hunting across seven articles. |
+| Encyclopedia | B | Readable, but nothing here changes what I do. |
+| Cost | A | The page I'd screenshot before buying anything. |
+| Handling | A | The tail-drop section alone justifies the page. |
+| Health issues | A | The crypto section is the single most important thing in the set. |
+| Tank setup | A- | The humidity split (30-40% ambient, 70-80% in one hide) is the detail I'd have gotten wrong without it. |
+| Feeding | A | Honest that sources disagree on the adult schedule instead of faking a precise number. |
+| Enrichment | B+ | A "do this once the basics are right" page, not a setup page. |
+| Temperature | A- | The most rigorous page in the set, names LafeberVet, Zen Habitats, and Merck where they disagree, but wasn't listed as a Deep Dive on any other page. |
+| vs crested gecko | B+ | Useful for deciding, but its own table and body text didn't agree with each other. |
+
+Set grade: B+. "The numbers are trustworthy and the site is genuinely
+useful end to end, but two small cross-page number conflicts and a
+temperature guide that's the most-cited page in the whole set yet
+excluded from every Deep Dive list undercut the polish."
+
+Hub versus the set, both sides quoted:
+
+- Night floor versus outage threshold. The hub's "Temperatures" row
+  reads "Nights in the 70s, with 65°F the floor," sourced to the
+  temperature guide, which says "Temperatures can safely drop to 65°F
+  at night... If your home drops below this, use a ceramic heat
+  emitter." The hub's separate "Power outage" row reads "70°F is the
+  normal night low. Below 60°F, add heat, move the animal, or call the
+  sitter," sourced to the reptile emergency plan guide, whose own
+  species table gives the leopard gecko a normal night low of 70°F and
+  an "act below this" of 60°F. Both rows are copied correctly from
+  their named sources, and the two guides answer different questions
+  (the nightly floor to provide versus the outage threshold to act on),
+  but the hub never says so, so a reader sees 65°F in one place and
+  60°F in the other with nothing bridging them. Left for Mike: this is
+  a hub row, out of scope for a deep-dive-only fix pass.
+- Otherwise the hub agrees with the set: enclosure, temperatures,
+  hides, humidity, feeding schedule, calcium, and budget all match the
+  deep dive each row cites.
+
+The set as a whole: a reader could set up, buy, feed, and keep a gecko
+healthy from this set. The core numbers (36x18x18, 88 to 92°F warm
+floor, 70 to 77°F cool side, three hides, the calcium/D3 schedule)
+repeat across four or five pages and agree every time. Two gaps, both
+checked against the sidebar's Health and More list before being called
+real (neither is covered by quarantine, hygiene, or the emergency
+plan guide): no page explains what a respiratory infection actually is
+or how it presents, even though the temperature guide and the humidity
+sections both warn that getting the numbers wrong causes one; and the
+tank setup guide says to house the gecko alone, "they're not a social
+species and don't do well cohabitating," without ever saying why. A
+stranded question: the health guide says crypto is "diagnosed through
+a fecal PCR test," and the cost guide separately prices "Initial vet
+exam and fecal test: $150-215," but neither page connects the two
+facts for the reader.
+
+Deep dives against each other: temperature, humidity, quarantine
+length, and the hide system repeat across four or five pages and stay
+consistent, which reads as reassuring rather than sloppy. Three hub
+FAQs are copied verbatim from the deep dives, expected for a router
+page. One real conflict: the vs crested gecko guide's own comparison
+table read "Supplemental heat needed: Yes - belly heat mat, ~88-90°F,"
+while its own body text read "88 to 92 degrees F" twice, a same-page
+mismatch a prior fix pass had corrected in the body but missed in the
+table cell and the seoDescription tag.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | "cryptosporidiosis, a severe and highly contagious parasite with no cure" | Health issues guide (hub out of scope this pass) |
+| Encyclopedia | "over 100 recognized color morphs in captivity" | Cost guide (encyclopedia out of scope this pass) |
+| Cost | "The thermostat isn't optional, it's what keeps the heat mat from overheating and burning your gecko." | Temperature guide |
+| Handling | "they're not a species that craves interaction the way a bearded dragon might" | Bearded Dragon vs Leopard Gecko guide |
+| Health issues | "low-level UVB is worth providing even though it's technically optional for this species" | Tank setup guide's UVB section |
+| Tank setup | "house your gecko alone, they're not a social species and don't do well cohabitating" | nothing in this set covers it |
+| Feeding | "that points to a medical cause rather than a normal cycle" | Health issues guide |
+| Enrichment | "give a gecko something closer to natural hunting behavior than a bowl of static food" | Feeding guide |
+| Temperature | none needed, already the best-linked page in the set | |
+| vs crested gecko | "near the very top of every 'best first reptile' list" | Five Reptiles roundup |
+
+Trust: the 60°F/65°F reading and the 88-90/88-92°F mismatch both read
+as editing slips rather than invented numbers, small but exactly the
+kind of thing a reader checks against in an emergency. The sentence
+that most convinced the reader a keeper wrote this, from handling: "A
+dropped gecko tail can keep twitching on its own for a minute or more
+after it detaches... a wriggling tail draws a predator's attention
+while the rest of the gecko escapes."
+
+Reader's two changes: reconcile the 60°F/65°F night threshold and the
+88-90/88-92°F range, then add the temperature guide to the species'
+own Deep Dive list plus the five missing cross-links above.
+
+Fixed the same day: the vs crested gecko guide's comparison table cell
+and seoDescription both changed from 88-90°F to 88-92°F to match its
+own body text and the temperature guide; two link-only sentences that
+pointed at the care guide hub (forbidden by RULES, Linking) were cut
+from the temperature guide and the vs crested gecko guide rather than
+redirected; two of the eight recommended links added (cost guide to
+temperature guide, feeding guide to health issues guide). Not added:
+the health issues guide's UVB link (the guide already carries its one
+allowed sibling link, to tank setup on shed) and the enrichment
+guide's feeding link (already carries its one allowed sibling link, to
+health issues on substrate); the handling guide's link (the sentence
+sits before the first H2); the hub and encyclopedia links (out of
+scope, not deep dives).
+
+Open: the temperature guide's absence from the Deep Dive sidebar on
+every other leopard gecko page is a wiring gap, not a content gap.
+`leopard-gecko-temperature-guide` was never added to the `leopard-gecko`
+entry in src/lib/data/relatedArticles.js, so it doesn't auto-detect
+(temperature is not a standard suffix) and has no manual entry either.
+Fixing that means editing a src/ file outside the guide data file and
+the SHORT_LABELS line, out of scope for this pass; left for Mike.
+Also left for Mike: the hub's 65°F/60°F night-threshold rows (both
+sourced), the respiratory infection and cohabitation content gaps, and
+the crypto/fecal-test stranded question, none of which are fixable
+with a link or a number correction.
+
 ## Single-article reads (2026-09-08, text only)
 
 Earlier single-page reads, kept for the record. Grades: tegu handling A-,
@@ -553,3 +678,9 @@ unsourced "about half of captive leopard geckos may carry it."
   alone, both sourced: brumation 1 to 3 months (brumation guide) against
   1 to 4 (feeding), and the adult food-refusal window, where feeding
   already states the tension between its two sources.
+- 2026-09-08, leopard gecko (branch claude/hub-leopard-gecko): hub already
+  reconciled to the router shape; first reader pass filed, the vs crested
+  gecko guide's table cell and seoDescription reconciled to 88-92°F, two
+  link-only sentences pointing at the care guide hub cut, two of the
+  eight recommended links added (cost to temperature, feeding to health
+  issues).
