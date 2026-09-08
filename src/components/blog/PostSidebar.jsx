@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Clock, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { matchesAnimal } from '@/lib/utils/matchAnimal';
-import { getDeepDiveSiblings } from '@/lib/data/relatedArticles';
+import { getDeepDiveSiblings, primaryGuideId, speciesNameFor } from '@/lib/data/relatedArticles';
 import DeepDiveList from '@/components/shared/DeepDiveList';
 import { readDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import { themedQuizzes } from '@/lib/data/quizzes';
@@ -36,6 +36,12 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
   // Same curated same-species list Guide/Encyclopedia pages show as "Deep
   // Dive" - without this, a reader who clicks a Deep Dive link to get here
   // has no way to keep following that same thread once they've landed.
+  const hub = useMemo(() => {
+    const slug = currentPost.slug?.current || currentPost._id || currentPost.id;
+    const id = primaryGuideId(slug);
+    return id ? { id, name: speciesNameFor(slug) || id } : null;
+  }, [currentPost]);
+
   const deepDiveArticles = useMemo(() => {
     const currentSlug = currentPost.slug?.current || currentPost._id || currentPost.id;
     // A bigger pool than fits, so DeepDiveList has something to put behind
@@ -180,6 +186,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
           guideId={fromGuideId}
           onSelect={onSelectPost}
           show="own"
+          hub={hub}
         />
       </div>
       <DeepDiveList

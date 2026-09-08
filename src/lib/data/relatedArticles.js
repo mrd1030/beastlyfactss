@@ -1,3 +1,4 @@
+import guideIds from '../generated/guide-ids.js';
 // Maps a guide's `id` to deep-dive MDX article slugs (content/guides/*.mdx)
 // that cover the same animal in more depth than the structured care guide -
 // lets GuideDetail.jsx surface them as further reading instead of leaving
@@ -214,6 +215,43 @@ export function isSharedDeepDiveArticle(slug) {
     }
   }
   return (listingCounts.get(slug) || 0) > 1;
+}
+
+const GUIDE_IDS = new Set(guideIds);
+
+// The one real guide a species article belongs to, or null when it belongs to
+// several (the shared quarantine and hygiene pieces) or none. Used for the
+// "<Species> care guide" row and label on the Deep Dive lists.
+export function primaryGuideId(slug) {
+  const ids = [...getListingGuides(slug)];
+  const real = ids.filter((id) => !id.startsWith('auto:'));
+  if (real.length === 1) return real[0];
+  if (real.length > 1) return null;
+  // No RELATED_ARTICLES entry: the species lives on auto-detect alone. Its
+  // prefix is the hub id when a guide page exists for it.
+  const auto = ids.find((id) => id.startsWith('auto:'));
+  const id = auto ? auto.slice(5) : null;
+  return id && GUIDE_IDS.has(id) ? id : null;
+}
+
+// Display name for a species, from the slug's own species prefix when it has
+// one (argentine-tegu beats the guide id tegu) and the guide id otherwise.
+// Title-cased with a few fixes, because the blog route does not import the
+// guide index for a label (see DeepDiveList's heading note).
+const NAME_FIXES = {
+  'jacksons-chameleon': "Jackson's Chameleon",
+  'whites-tree-frog': "White's Tree Frog",
+  'african-grey': 'African Grey',
+  'african-fat-tail': 'African Fat-Tailed Gecko',
+  'blue-tongue-skink': 'Blue-Tongued Skink',
+  'hissing-cockroach': 'Madagascar Hissing Cockroach',
+};
+export function speciesNameFor(slug) {
+  const ids = [...getListingGuides(slug)];
+  const auto = ids.find((id) => id.startsWith('auto:'));
+  const id = auto ? auto.slice(5) : primaryGuideId(slug);
+  if (!id) return null;
+  return NAME_FIXES[id] || id.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 
 export function getListingGuides(slug) {
