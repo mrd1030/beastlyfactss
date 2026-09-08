@@ -124,7 +124,23 @@ catches the defects the commands produce. Per batch:
    enrichment series' "borrowed evidence, covered in full in our X
    enrichment guide" provenance lines were left as cross-species links
    with a reason; normalize them if the phrasing bothers you.
-5. The 111 baseline blog posts: noted.
+5. Reader set tests, one species at a time (docs/READER_REVIEWS.md). Run
+   `node scripts/reader-extract.mjs <species> <out-dir>`, hand the files to
+   one Opus agent with the set test prompt at the end of this file, paste
+   the review into READER_REVIEWS.md under the species, then fix what it
+   found: conflicting numbers between hub and deep dives (pick the sourced
+   value, make the hub agree), one link per page where the reader was
+   stranded (the sibling-link exception in RULES), fragments and
+   placeholder cells, unsourced claims. About 70k tokens per species. Do
+   the bearded dragon and rabbit findings first, they are already in the
+   file.
+6. Hub reconciliation, site-wide: every care guide hub carries numbers
+   (cost tables, hay share, vet triggers, exercise hours) written before
+   the deep dives and never checked against them. The rabbit hub's cost
+   data even says so in a code comment. Either the hub takes its numbers
+   from the deep dives or it stops carrying numbers and routes. Data, not
+   MDX: src/lib/data/guides/*.js.
+7. The 111 baseline blog posts: noted.
 
 ## The prompt to paste into a new session
 
@@ -245,5 +261,42 @@ Run node scripts/check-voice.mjs --slug on each, then --strict. Commit
 "FunFact repeats: 22 boxes", push the branch, and report each file as
 rewritten or cut with the old and new text. Then stop and wait for me to
 say merge.
+```
+
+## The set test prompt (one Opus agent, run_in_background, about 70k tokens)
+
+Extract first: `node scripts/reader-extract.mjs <species> /tmp/<species>`.
+Then:
+
+```
+You are someone about to get a <animal> who reads care websites carefully
+and has no patience for filler. Read the plain-text pages in /tmp/<species>/
+with `cat`, in filename order: 00 is the species' care guide hub (the page
+the site's navigation lands on first), 01 the encyclopedia entry, then the
+deep-dive articles. Each file ends with the internal links its body carries
+and the Deep Dive list the page shows in its sidebar (on phones, after the
+FAQ), so treat those as real, clickable navigation. Do not look at anything
+else, do not run git, do not search the web. You know nothing about who
+wrote them or how.
+
+Review the set, under 900 words, plain prose with short lists, no em or en
+dashes:
+1. One line per page: would you finish it, what you can act on, grade A to F.
+2. The hub and the encyclopedia: do they earn their place next to the deep
+   dives, or repeat them? Does anything on the hub disagree with a deep dive
+   (numbers, sizes, costs, schedules)? Quote both sides where they disagree.
+3. The set as a whole: after all of them, could you set up, buy, feed, and
+   keep a <animal> healthy, and what is still missing? Where did a page
+   raise a question whose answer is on another page in this set, without
+   the text saying so?
+4. Overlap and conflict across the deep dives: what did you read twice, and
+   do any numbers or instructions disagree? Quote both sides.
+5. One link per page: for each page, name the single sentence where a link
+   to another page in this set would have helped you most, quote it, and say
+   which page it should point to. If a page needs none, say so.
+6. Trust: anything that made you doubt them, and the one sentence across the
+   set that most convinced you a person who keeps these animals wrote it.
+7. Grade the set A to F with one line of reason, and the two changes you
+   would make first.
 ```
 

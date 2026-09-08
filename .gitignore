@@ -98,3 +98,4 @@ content/CAREPACKAGE Guides/source/.fonts/
 
 # voice batch working files
 .voice-batch/
+.reader/
