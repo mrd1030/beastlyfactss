@@ -455,3 +455,78 @@ editing any file in src/ other than the guide data file and the
 SHORT_LABELS line; deleting a FunFact, a Sources entry, or an affiliate
 link; anything not covered above.
 ```
+
+## The species check prompt, for a fresh session after Sonnet pushed a species
+
+Read-only until Mike confirms. Paste it with the species list filled in.
+
+```
+Read READMEFIRST.md, docs/RULES.md (Hubs and Linking sections, and the
+Writing rules on FAQs), and the species prompt at the end of READMEFIRST.
+Then check the leopard gecko, goldfish, and axolotl work, which a Sonnet
+session did from that prompt. Make no edits, run no agents, do not run
+npm run build, do not re-run the reader. Read diffs, not whole files.
+Report findings, then stop and wait for me to confirm before touching
+anything.
+
+1. Find the work. `git fetch origin` and `git branch -r | grep hub-`;
+   for each species, find its branch and whether it is merged
+   (`git log --oneline main | head -40`, `git branch -r --merged main`).
+   For each, list the commits with `git log --oneline main..<branch>`
+   (or the merged range on main) and the files they touched with
+   `git diff --stat <base>..<head>`. Flag any file outside: that species'
+   entry in src/lib/data/guides/*.js, that species' MDX in content/,
+   docs/READER_REVIEWS.md, READMEFIRST.md, and the SHORT_LABELS line in
+   src/pages/GuideDetail.jsx.
+
+2. Hub. `node scripts/check-species-numbers.mjs <species>`: every line
+   marked `hub` must appear word for word, numbers unchanged, in the
+   deep dive its row names. Open the hub entry and, for each firstWeek
+   row, grep its key number in the source article. Count the emergency
+   card bullets against the health guide's call-the-vet list. Confirm
+   routes cover every own deep dive and nothing shared, the buy list has
+   no prices, the three FAQs are verbatim copies of deep-dive frontmatter
+   FAQs (grep the question text), and difficulty equals the encyclopedia
+   entry's.
+
+3. Deep dives. `git diff <base>..<head> -- content/` and read every hunk:
+   - Any edit the prompt did not ask for: a rewritten FAQ, a reworded
+     body sentence with no number or link change, a cut or added
+     paragraph, a Sources change, an affiliate link removed. FAQs in
+     particular: the prompt never asked for FAQ rewrites, and a FAQ
+     answer that photocopies a body paragraph is the `faq-copied` rule
+     (RULES, Writing an article).
+   - Every number changed: find the same figure on the other page and in
+     that page's Sources block; the page that cites it must be the one
+     that stayed. A number changed where both pages cite a source, or
+     where neither does, is a finding.
+   - Links added: at most one per article to the same species' suffix
+     guides (`grep -o "](/blog/<species>-[a-z-]*-guide/)" | sort | uniq
+     -c`), none before the first H2, none inside ComparisonTable cells,
+     the sentence about the animal not the site.
+   - lastUpdated bumped only where a fact or number changed, never for a
+     link only; not bumped where one did change.
+   - Run `node scripts/check-voice.mjs --slug <slug>` on every changed
+     MDX and compare against `git stash`-free baseline by checking the
+     same slug on main (`git show main:<file> > /tmp/x.mdx` is not
+     needed: the checker takes --slug, so check out main in a worktree
+     only if a warning count went up).
+
+4. Review file. The species section in docs/READER_REVIEWS.md exists,
+   follows the rabbit and leopard gecko shape, quotes both sides of each
+   conflict, and its "fixed" notes match what the diff actually did.
+
+5. Gates once, on the branch head: check-internal-links,
+   check-related-articles, check-affiliate-mdx, check-cost-coverage,
+   check-seo-tags, check-voice --strict, `npx eslint . --quiet`.
+
+Report per species, in this order: anything outside scope (file, line,
+what was done, what the prompt said); hub rows that do not match their
+source (row, hub text, source text); number changes that broke the
+citation rule (both sides, which page cites); links that break a limit;
+date bumps wrong either way; FAQ or sentence rewrites the prompt did not
+ask for (before and after); review-file mismatches; gate results. Then a
+one-line verdict per species: merge as is, merge after fixes, or redo.
+Propose the fix for each finding in one line but change nothing. End
+with "Waiting for your confirmation on which to apply."
+```
