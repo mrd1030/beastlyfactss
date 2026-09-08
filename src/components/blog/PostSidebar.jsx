@@ -117,7 +117,12 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
     setDisplayRelated(finalRelated);
 
     // Pick a random fact
-    const randomF = facts[Math.floor(Math.random() * facts.length)];
+    // Short facts only. The card sits at the end of a long article; a
+    // 60-plus word fact there reads as another article. Median in the pool
+    // is 44 words, so the cap keeps about four in five.
+    const shortFacts = facts.filter((f) => String(f.fact || '').split(/\s+/).length <= 50);
+    const pool = shortFacts.length ? shortFacts : facts;
+    const randomF = pool[Math.floor(Math.random() * pool.length)];
     setDisplayFact(randomF);
   }, [matches, nonMatches]); // Re-run if the buckets change
 

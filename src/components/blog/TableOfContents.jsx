@@ -7,6 +7,10 @@ import { slugify } from '@/lib/utils/slugify';
 // separately - works uniformly regardless of where the post came from.
 export default function TableOfContents({ contentRef, watch, skipText, collapsible = false, expectHeadings = true }) {
   const [headings, setHeadings] = useState([]);
+  // Id of the section the reader is in: the last heading whose top has
+  // passed the navbar line. Empty during prerender and before the first
+  // scroll pass, so the static HTML and the hydration render agree.
+  const [activeId, setActiveId] = useState('');
 
   useEffect(() => {
     // Skipped during prerendering: this effect populates `headings` (which
@@ -76,6 +80,41 @@ export default function TableOfContents({ contentRef, watch, skipText, collapsib
     return () => observer.disconnect();
   }, [contentRef, watch, skipText]);
 
+  // Active section. A scroll listener rather than an IntersectionObserver:
+  // the answer wanted is "which heading did the reader most recently pass",
+  // and an observer only reports which ones intersect a band, which goes
+  // blank inside a long section. Throttled to one read per animation frame.
+  useEffect(() => {
+    if (window.__IS_PRERENDER__ || headings.length === 0) return;
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const line = 56 + 24; // fixed navbar plus the scrollMarginTop breathing room
+      let current = '';
+      for (const h of headings) {
+        const node = document.getElementById(h.id);
+        if (!node) continue;
+        if (node.getBoundingClientRect().top - line <= 1) current = h.id;
+        else break;
+      }
+      // Past the last heading with the page bottom in view, the last section
+      // is still the one being read; nothing above the first heading is.
+      setActiveId(current);
+    };
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, [headings]);
+
   // Below this, it's not worth a nav card - e.g. fact-list articles that only
   // have the trailing Sources heading(s) and no real section structure.
   //
@@ -102,7 +141,8 @@ export default function TableOfContents({ contentRef, watch, skipText, collapsib
           key={h.id}
           href={`#${h.id}`}
           onClick={(e) => handleClick(e, h.id)}
-          className={`block text-xs font-body text-muted-foreground hover:text-secondary transition-colors leading-snug ${h.level === 3 ? 'pl-3' : ''}`}
+          aria-current={h.id === activeId ? 'location' : undefined}
+          className={`block text-xs font-body transition-colors leading-snug ${h.id === activeId ? 'text-secondary font-bold' : 'text-muted-foreground hover:text-secondary'} ${h.level === 3 ? 'pl-3' : ''}`}
         >
           {h.text}
         </a>
