@@ -85,6 +85,113 @@ test.
 
 Open. Nothing fixed yet.
 
+## Bearded dragon (2026-09-08, second pass, after the router hub)
+
+Extractor set of thirteen pages (hub, encyclopedia, eleven guides including
+brumation, eggs, growth, safe foods, and the leopard gecko comparison; the
+shopping list has no -guide suffix and was not in the set). One Opus agent,
+about 107k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | A router; the whole first week in numbers plus a buy list, each figure attributed to a deep dive. |
+| Encyclopedia | C+ | Natural history, nothing to act on, no body links. |
+| Cost | B- | A budget, but the tables do not sum to the headline. |
+| Handling | B+ | Wait 7 to 14 days, scoop from below, the stop-signal list. |
+| Health issues | A- | Symptom-to-action for eleven conditions plus a vet-now list. |
+| Tank setup | A | Could build the enclosure from this page alone. |
+| Feeding | A- | Schedule, ratios, dusting, eight reasons for refusal. |
+| Enrichment | B+ | Dig box spec, free-roam rules, a priority order that says what to skip. |
+| Brumation | A | The weekly routine and the 3.5-month and 10 percent thresholds. |
+| Eggs and egg binding | A | Lay box build and a gravid-vs-dystocia table. |
+| Growth and weight checks | A | Weigh-in method, growth table, stool table, hydration signs. |
+| Safe foods | A | Could shop from the tiers today. |
+| vs leopard gecko | B | A real decision. |
+
+Set grade: B+ (first pass, five pages, B+). "Deep, honestly sourced, and
+genuinely usable, held back by numbers that disagree across pages and by
+a hub that summarizes without always reconciling."
+
+Hub versus the set, both sides quoted:
+
+- Emergency card. The hub dropped the last four items of the health
+  guide's vet-now list, including "Tissue protruding from the vent",
+  which the guide calls "always treated as an emergency". My copying
+  error; fixed the same day, the card now carries all fifteen.
+- Adult size. Hub "18 to 22 inches nose to tail tip" (growth guide);
+  encyclopedia "16-24 inches (40-60 cm) including tail". The growth guide
+  reconciles them, the hub does not.
+- Lifespan. Hub and encyclopedia "10 to 15 years"; the comparison guide
+  "Bearded dragons typically live 8 to 12 years."
+- UVB product. Hub buy list (from the shopping list) "Arcadia 14% Dragon
+  or ReptiSun 10.0"; tank setup "ReptiSun 10.0 or Arcadia 12% Desert".
+  "I am at the store holding two different Arcadia tubes."
+- The diet-ratio row cites tank setup rather than feeding (feeding gives
+  no percentages, so tank setup is the only page with the number).
+
+Deep dives against each other:
+
+- Brumation length. Feeding "not eating for 1 to 4 months is expected";
+  brumation "typically runs 1 to 3 months... past about three and a half
+  months". Both sourced, left as they are on the first pass too.
+- Adult calcium. Feeding (after the second-pass move) "near-daily for
+  juveniles and 2 to 3 times a week for adults"; eggs, of an adult
+  female, "plain calcium dusted daily, calcium with D3 a couple times a
+  week". A third page to reconcile.
+- Food refusal. Feeding states the tension between its two sources;
+  health flattens it to "An adult refusing food for 1 to 2 weeks outside
+  brumation."
+- Cost arithmetic. Upfront table sums to roughly $510 to $1,380 against
+  "$400 to $800"; monthly table $63 to $117 against "$50 to $108". The
+  tables and the headline are not the same budget.
+
+Gaps: enclosure cleaning and disinfection, day one (transport,
+quarantine, first vet appointment), how to find a reptile vet, and
+shedding, which three pages cite as a cause and no page explains.
+
+Stranded: handling's "don't pull at loose skin" (health explains tail
+rot); feeding's brumation reason (never points at the brumation guide);
+enrichment's gravid females (never points at eggs); the comparison's
+"setup cost: Higher" (never points at cost, though cost points back).
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | "Lifespan: 10 to 15 years in captivity." (the one row with no source) | Encyclopedia |
+| Encyclopedia | "Adult Size: 16-24 inches (40-60 cm) including tail." | Growth guide |
+| Cost | "A single impaction surgery runs $800 to $2,500." | Health issues guide |
+| Handling | "If your dragon is mid-shed, don't pull at loose skin." | Health issues guide |
+| Health issues | "If your dragon hasn't defecated in five or more days, it's time to see a vet." | Growth guide's stool table |
+| Tank setup | "Skip hot rocks entirely, they're a common cause of thermal burns." | Health issues guide |
+| Feeding | "A seasonal dormancy most captive dragons can enter, typically starting between 1 and 3 years old, commonly lasting 1 to 3 months." | Brumation guide |
+| Enrichment | "...a real husbandry requirement for gravid females who need somewhere to dig a lay site." | Eggs guide |
+| Brumation | "Weigh the dragon. A kitchen scale that reads in grams is enough." | Growth guide |
+| Eggs | "Substrate depth: 6 to 12 in (15 to 30 cm) of a 50/50 mix..." | Enrichment guide's dig box |
+| Growth | none needed | |
+| Safe foods | none needed | |
+| vs leopard gecko | "Approx. setup cost: Higher / Lower" | Cost guide |
+
+Trust: the cost tables; the lifespan split; two Arcadia percentages; a
+brumation guide sentence that ends in a colon and delivers nothing ("For
+owners who want the brumation routine, the pre-brumation vet checklist,
+and a full year of husbandry in one printable reference:", the care
+package block under it does not render in the extract); safe foods
+calling the eggs guide "upcoming" when it is published; two pages
+pitching a care package inside the advice. The sentence that convinced
+the reader, from handling, same as the first pass: "if even one foot is
+unsupported, the dragon feels off balance and will scramble to
+compensate, which reads as 'difficult to handle' when it's really just a
+support problem."
+
+Reader's two changes: make the cost tables and the headline budget agree,
+and settle lifespan, adult size, and the Arcadia bulb to one figure each
+across hub, encyclopedia, and comparison; then the four cross-links
+(feeding to brumation, enrichment to eggs, handling to health, comparison
+to cost).
+
+Open: everything above except the emergency card.
+
 ## Rabbit (2026-09-08, first pass, before the extractor existed)
 
 Pages: hub, encyclopedia, cost, handling, health issues, tank setup, feeding,
