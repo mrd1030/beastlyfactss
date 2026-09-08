@@ -424,14 +424,30 @@ take screenshots unless you changed src/pages/GuideDetail.jsx.
    Commit: "<Animal>: reader fixes", with every original sentence you
    changed listed before and after in the commit message.
 
-5. Push the branch (`git push -u origin claude/hub-<species>`) and report
-   in one message: the set grade and hub grade, every number you
-   changed with both sides, every original sentence changed (before and
-   after), the links added and the ones skipped with the reason, the
-   items you left for Mike (both-sourced conflicts, difficulty, anything
-   in a component), and the branch name. End with "Ready for your review;
-   nothing merged." Then stop and wait. Do not merge, do not start a
-   second species, do not re-run the reader after the fixes.
+5. Second reader pass. Extract again (`node scripts/reader-extract.mjs
+   <species> <out-dir>`) and launch one more reader agent, same model,
+   same prompt, on the now-fixed set. This is the same pattern the
+   bearded dragon and rabbit sets used (docs/READER_REVIEWS.md, their
+   "second pass" and "third pass" sections) and it is not optional: a
+   fix pass earns its own check. Paste the raw output into
+   docs/READER_LOG.md and file the review into docs/READER_REVIEWS.md
+   under "## <Animal> (date, second pass, after the fixes)", same shape
+   as step 3. Fix anything new it finds under the same step 4 rules
+   (deep dives only, same ask-before-doing list). Commit: "<Animal>:
+   second pass fixes" if anything changed; if nothing needed fixing,
+   say so in the review and skip the commit.
+
+6. Push the branch (`git push -u origin claude/hub-<species>`) and report
+   in one message: the set grade and hub grade from both passes, every
+   number you changed with both sides, every original sentence changed
+   (before and after), the links added and the ones skipped with the
+   reason, the items you left for Mike (both-sourced conflicts,
+   difficulty, anything in a component), and the branch name. End with
+   "Ready for your review; nothing merged." Then stop and wait. Do not
+   merge under any circumstances, not even if I said merge on a
+   previous species. Wait for me to say merge on this one by name. Do
+   not start a second species, do not run a third reader pass without
+   me asking.
 
 Ask Mike before doing any of these, and wait for the answer: changing a
 number where both pages cite a source; changing a difficulty label;
