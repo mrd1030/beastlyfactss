@@ -1788,6 +1788,120 @@ Open: sexing, gravid-female care, grow-out dimensions, and safe
 disinfectants filed in docs/READER_LOG.md; the unsourced "30s" longevity
 claim left for Mike.
 
+## Guinea pig (2026-09-08, first pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, scurvy). One Sonnet agent,
+about 105k tokens. The hub still carried the old legacy prose when
+this review was filed; the router hub was built from its findings the
+same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A | Checklist and cost tables read like a shopping list; the FAQ answers real decisions. |
+| Encyclopedia | B | Good background, nothing that changes tomorrow's care. |
+| Cost | A | Real dollar ranges, and forces the "budget for two" point before you buy one animal. |
+| Handling | A | The side approach, two-hand hold, and stay-low rule are things to do on day one. |
+| Health issues | A | The ovarian cyst versus mites table alone is worth bookmarking. |
+| Tank setup | B | Good numbers, but the vegetable table failed to render. |
+| Feeding | A | The schedule, toxic list, and "why they stop eating" list are exactly what to act on. |
+| Enrichment | A | Hideout and foraging advice with a clear reason why. |
+| Scurvy | A | The per-kilogram math and the stage table make this the most rigorous page in the set. |
+
+Set grade: B+. "Deep and internally consistent on the numbers that
+matter, let down by one broken table and a few missing cross links."
+
+Hub versus the set, both sides quoted (both resolved by the router
+rebuild, which cites each deep dive's own figure instead of restating
+it):
+
+- Bedding. The old hub said "Avoid cedar and pine shavings," banning
+  pine outright. Tank setup says "Paper-based bedding, kiln-dried pine,
+  or fleece liners all work well. Avoid cedar, raw pine, and sawdust,"
+  meaning kiln-dried pine is fine and only raw pine is the problem. The
+  router hub now quotes tank setup's own distinction.
+- Enclosure size. The old hub said "The minimum is 7.5 square feet...
+  the same whether it's one guinea pig or a pair" and separately
+  "recommend[ed] at least 10.5 square feet for a pair" as if 10.5 were
+  a bonus on top of a shared floor. Tank setup states 10.5 as the
+  minimum for a pair outright. The router hub now states it tank
+  setup's way.
+- Cage cost. The old hub's own setup line ("$80 to $180") didn't match
+  the cost guide's cage line ("$100 to $140"). The router hub's Budget
+  row now quotes the cost guide's own setup total instead of a separate
+  cage figure.
+
+Deep dives against each other: the 65 to 79°F range and its "single
+degree" gap to the 80°F danger line repeat, consistently, between the
+hub and tank setup. The vitamin C mg/kg figures (Merck and PetMD, both
+giving 30+ for growing, pregnant, or ill animals) repeat consistently
+across tank setup and the scurvy guide. One real, self-acknowledged
+disagreement: the feeding guide's own FAQ on adult alfalfa says "One
+source says avoid it outright for healthy adults, another allows it as
+an occasional treat," an open disagreement the page states rather than
+hides, left as is.
+
+The set as a whole: buyable, houseable, feedable, and handleable from
+this set alone. Two pages raise a question another page answers
+without saying so: health issues says a guinea pig that stops eating
+"needs urgent veterinary attention" with no time frame, while feeding
+has the actual figure (8 to 12 hours); feeding names "dental disease"
+as the top reason guinea pigs stop eating in one line, while health
+issues is where the actual signs live, with neither page pointing at
+the other. Both fixed this pass with a link each way.
+
+Four gaps, checked against the Health and More list before being
+called real: how to introduce and bond two guinea pigs (the hub says
+adopting a pair from the start beats introducing one later, but never
+explains introductions), spay or neuter guidance and cost for a mixed-
+sex pair, and litter training method (only "a litter corner" is named).
+The reader's fourth flagged item, grooming for long-haired breeds
+(Peruvian, Silkie, Abyssinian), is actually covered: the shared small
+mammal grooming guide has a dedicated "Matting: Long-Coated Guinea Pigs
+and Angora Rabbits" section and a guinea-pig-specific grease gland
+section, so it is struck rather than filed. The other three are real
+and filed in docs/READER_LOG.md.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | none, already links the full deep dive list | |
+| Encyclopedia | none needed this pass | |
+| Cost | "complex issues like GI stasis can push well past that" | Health issues guide |
+| Handling | "A well set up enclosure gives your guinea pig the secure home base" | Tank setup guide |
+| Health issues | "needs urgent veterinary attention, not a wait-and-see approach" (GI stasis) | Feeding guide |
+| Tank setup | "Bell pepper is a particularly good vegetable choice" | Feeding guide |
+| Feeding | "Dental disease. The single most commonly cited cause" | Health issues guide |
+| Enrichment | "develops repetitive bar-chewing is signaling that something in the current setup isn't working" | already covered, enrichment already carries its one allowed sibling link (the vet visit guide) |
+| Scurvy | "Daily fresh vegetables, led by bell pepper, are the actual prevention here" | already covered, scurvy already links the tank setup guide's diet section |
+
+Trust: a literal "[table could not be parsed]" sitting where the tank
+setup guide's vegetable table should be, the same AffiliateLink-in-cell
+extractor limitation goldfish and betta fish hit, not a site defect.
+The sentence that most convinced the reader a real keeper wrote this,
+from enrichment: "a single hide in a shared space tends to become
+something one animal guards rather than something everyone can use."
+
+Reader's two changes: repair the vegetable table (a known extractor
+gap, not a site defect, left as is) and clarify whether the annual cost
+table prices one guinea pig or a pair (the router hub's Budget row now
+states both figures explicitly, from the cost guide).
+
+Fixed the same day: the router hub rebuild, which resolves the bedding,
+enclosure-size, and cage-cost conflicts by construction; a link-only
+opener sentence on the scurvy guide pointing at the care guide hub cut,
+and its closing paragraph's second link (browsing the Small Mammals
+category) trimmed, both per RULES, Linking; four of seven recommended
+links added (cost to health issues, handling to tank setup, health
+issues to feeding, tank setup to feeding, feeding to health issues,
+five not four).
+
+Open: guinea pig introductions, spay/neuter guidance for a mixed pair,
+and litter training method filed in docs/READER_LOG.md for Mike. The
+feeding guide's self-acknowledged alfalfa disagreement left as is,
+since the page already states the tension between its two sources.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a

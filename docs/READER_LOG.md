@@ -680,6 +680,72 @@ First two changes:
   dimensions (only "smaller" is given anywhere in the set).
 - **Crested gecko (second pass):** safe disinfectants or cleaning
   products for the enclosure during substrate changes.
+- **Guinea pig:** how to introduce and bond two guinea pigs (the hub
+  says adopting a pair from the start beats introducing one later, but
+  never explains introductions).
+- **Guinea pig:** spay or neuter guidance and cost for a mixed-sex
+  pair.
+- **Guinea pig:** litter training method (only "a litter corner" is
+  named anywhere in the set).
+
+## Guinea pig (2026-09-08)
+
+One Sonnet agent, nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, scurvy), about 105k tokens.
+Full agent output below, unedited.
+
+---
+
+# Guinea Pig Care Set Review
+
+## 1. Page by page
+
+- **00 Hub:** A. The checklist and cost tables read like a shopping list, and the FAQ answers real decisions (pairs, bedding, lifespan).
+- **01 Encyclopedia:** B. Good background (Andean domestication, 1570s European remains) but nothing here changes what I'd do tomorrow.
+- **02 Cost guide:** A. Real dollar ranges for setup, monthly, and vet costs, and it forces the "budget for two" point before you buy one animal.
+- **03 Handling guide:** A. The side approach, two hand hold, and stay low rule are things I could do on day one.
+- **04 Health issues:** A. The ovarian cyst versus mites table alone is worth bookmarking.
+- **05 Tank/diet setup:** B. Good numbers, but the vegetable table failed to render, "[table could not be parsed]," so part of the actual diet content is missing.
+- **06 Feeding:** A. The schedule, toxic list, and "why they stop eating" list are exactly what I'd act on.
+- **07 Enrichment:** A. Hideout and foraging advice with a clear reason why, easy to implement same day.
+- **08 Scurvy:** A. The per kilogram math and the stage table make this the most rigorous page in the set.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: it's the only page with domestication history and wild lifespan, covered nowhere else. The hub is more borderline: its Housing, Diet, Enrichment, and Health sections are a compressed rerun of the deep dives, but the checklist and combined cost table are genuinely new.
+
+Two disagreements. On bedding, the hub says "Avoid cedar and pine shavings," while the tank setup guide says "Paper-based bedding, kiln-dried pine, or fleece liners all work well. Avoid cedar, raw pine, and sawdust." The hub bans pine outright; the deep dive says kiln-dried pine is fine and only raw pine is the problem. On cage size, the hub says "The minimum is 7.5 square feet of unobstructed floor space, the same whether it's one guinea pig or a pair," and recommends "at least 10.5 square feet for a pair," while the tank guide says "Minimum footprint is about 7.5 square feet for one guinea pig, and 10.5 square feet for a pair." One treats 10.5 as a recommendation on top of a shared minimum, the other calls 10.5 the minimum for a pair. Cage cost is also slightly off between them: the hub's line is "$80 to $180," the cost guide's is "$100 to $140."
+
+## 3. Could I actually keep one healthy
+
+Yes, for the core loop: cage size, bedding, temperature range, unlimited hay plus pellets plus daily vegetables, vitamin C math, handling technique, and the short list of true emergencies. Missing: how to introduce two guinea pigs to each other (the hub says adopting a bonded pair beats introducing one later, but never explains introductions), whether or when to neuter a mixed sex pair, and litter training, only named as "a litter corner."
+
+Two pages raise a question another page answers without saying so. Health issues (04) says a guinea pig that stops eating "needs urgent veterinary attention" with no time frame; feeding (06) has the actual figure, "8 to 12 hours without eating or producing droppings." Feeding (06) names "dental disease" as the top reason guinea pigs stop eating in one line; health issues (04) is where the signs (drooling, small droppings, molar spurs) actually live, and neither page links to the other on this point.
+
+## 4. Overlap and conflict across deep dives
+
+Read twice, nearly verbatim: the 65 to 79°F range and "the gap between the comfortable ceiling and the danger line is a single degree" appears in both the hub and the tank setup guide. The vitamin C mg/kg figures (Merck 10 to 25, PetMD 10, both giving 30 or more for growing, pregnant, or ill animals) repeat consistently across the tank setup and scurvy guides. Pellet freshness ("use within 90 days") repeats consistently across tank setup and feeding.
+
+One real conflict, flagged by the set itself: the feeding guide's own FAQ on alfalfa for adults says "One source says avoid it outright for healthy adults, another allows it as an occasional treat." That's two sources disagreeing inside one answer, left unresolved.
+
+## 5. One link per page
+
+Hub and encyclopedia need none, both already link the full deep dive list. Cost guide: "complex issues like GI stasis can push well past that" should link to the health issues guide. Handling: "A well set up enclosure gives your guinea pig the secure home base" should link to the tank setup guide. Health issues: "needs urgent veterinary attention, not a wait-and-see approach" (GI stasis) should link to feeding, which has the 8 to 12 hour threshold. Tank setup: "Bell pepper is a particularly good vegetable choice" should link to feeding's full vegetable list, especially since this page's own table is broken. Feeding: "Dental disease. The single most commonly cited cause" should link to health issues' dental section. Enrichment: "develops repetitive bar-chewing is signaling that something in the current setup isn't working" should link to health issues, since those are also illness signs there. Scurvy: "Daily fresh vegetables, led by bell pepper, are the actual prevention here" should link to feeding's full rotation list.
+
+## 6. Trust
+
+What made me doubt them: a literal broken table, "[table could not be parsed]," sitting where the vegetable list should be in the tank setup guide. A production error, but it's the one spot the page looks unfinished. The sentence that most convinced me a real keeper wrote this: "a single hide in a shared space tends to become something one animal guards rather than something everyone can use." That's a specific, unglamorous behavioral detail no one invents without watching it happen.
+
+## 7. Overall grade
+
+B+. Deep and internally consistent on the numbers that matter, let down by one broken table and a few missing cross links. First two fixes: repair the vegetable table in the tank setup guide, and clarify whether the hub's annual cost table prices one guinea pig or a pair, since that same page insists on keeping pairs.
+
+## Not covered anywhere
+
+- How to introduce and bond two guinea pigs; only "adopt a pair from the start" is offered.
+- Spay or neuter guidance and cost for a mixed sex pair.
+- Litter training method, only "a litter corner" is named.
+- Grooming needs specific to long haired breeds (Peruvian, Silkie, Abyssinian) named in the cost guide; the shared grooming guide's summary is written around rabbit fur risk, not guinea pig coat care.
 
 ## Crested gecko (2026-09-08, second pass)
 
