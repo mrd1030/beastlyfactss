@@ -153,13 +153,14 @@ catches the defects the commands produce. Per batch:
    the bearded dragon and rabbit findings first, they are already in the
    file. Bearded dragon and rabbit: done 2026-09-08, next is any species
    with a care package (leopard gecko, goldfish, axolotl, ...).
-6. Hub reconciliation, one species at a time, after its set test: rewrite
-   the hub entry in src/lib/data/guides/*.js to the router shape (RULES,
-   Hubs; the rabbit and bearded dragon entries are the model), with
-   every number copied from the deep dive it cites. Run
-   `node scripts/check-species-numbers.mjs <species>` before and after.
-   Legacy hubs keep rendering the old care sheet until then. Dogs and
-   cats last. Rabbit difficulty settled at Beginner/Intermediate on the
+6. Hub reconciliation, one species per session, with its set test and
+   fixes in the same session: the species prompt at the end of this file
+   (Sonnet, default effort). Rabbit, bearded dragon done and on main;
+   leopard gecko on branch claude/hub-leopard-gecko (hub and fixes
+   pushed, review not filed, not merged). Next: goldfish, axolotl, then
+   the rest of the species with a care package, then the others. Legacy
+   hubs keep rendering the old care sheet until then. Dogs and cats
+   last. Rabbit difficulty settled at Beginner/Intermediate on the
    site's legend and rabbit lifespan at 8 to 12 years indoors (House
    Rabbit Society, VCA, RSPCA), 2026-09-08. Open question Mike has not
    answered: whether the legacy hubs should lose their print button
@@ -325,3 +326,108 @@ dashes:
    would make first.
 ```
 
+
+## The species prompt, for a fresh session (Sonnet, default effort)
+
+One species per session. Paste this, replacing <species> with the guide id
+(the folder prefix in content/guides, for example leopard-gecko) and
+<Animal> with the name. Leopard gecko is mid-flight on branch
+claude/hub-leopard-gecko: hub and fixes are pushed, the review is not yet
+filed in docs/READER_REVIEWS.md, nothing is merged.
+
+```
+Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
+and Linking sections twice), and the "How a test runs" and "What the
+tests changed so far" sections of docs/READER_REVIEWS.md. Then do the
+<Animal> set, on a new branch claude/hub-<species> from main. Stop and
+report at the end; never merge to main. Never use a second agent for
+anything but the one reader test below, never run npm run build, never
+take screenshots unless you changed src/pages/GuideDetail.jsx.
+
+1. Baseline. Run `node scripts/check-species-numbers.mjs <species>` and
+   save the output to the scratchpad. Run
+   `node scripts/reader-extract.mjs <species> .reader/<species>`. Launch
+   one reader agent (run_in_background) with the set test prompt from
+   READMEFIRST, the same model as you, on that folder. While it runs, do
+   step 2.
+
+2. Hub. Rewrite the <species> entry in src/lib/data/guides/*.js to the
+   router shape. The rabbit (smallMammals.js), bearded dragon
+   (lizards.js), and leopard gecko (geckos.js) entries are the template;
+   copy their structure exactly (layout, firstWeek, emergencyCard,
+   routes, buyList, faqs) and drop costs, sections, and the old faqs.
+   Rules, none optional:
+   - Every first-week row's value is copied from the deep dive named in
+     its `source`, in that article's words, with its numbers unchanged.
+     No figure of your own. Rows the deep dives do not cover (lifespan,
+     adult size) may use the encyclopedia entry with no source.
+   - Add rows sourced to the shared Health and More guides that apply
+     (reptiles: quarantine, hygiene, emergency plan; small mammals: heat
+     stress, grooming, vet trips). The extract shows that list with
+     excerpts.
+   - The emergency card copies the health guide's call-the-vet list in
+     full. Count the bullets in the guide and count them in your card.
+   - One route per own deep dive (not the shared ones, not vs pieces),
+     one plain sentence each saying what is on the page.
+   - Buy list without prices, from the cost guide's setup table and the
+     tank setup guide.
+   - Three FAQs copied verbatim from the deep dives' frontmatter.
+   - Difficulty stays what the encyclopedia entry says.
+   - If a source slug ends in a suffix not in SHORT_LABELS in
+     src/pages/GuideDetail.jsx, add it there. Nothing else in that file.
+   Then `node -e` import the file to confirm it parses, run
+   `npx eslint src/pages/GuideDetail.jsx`, and run the numbers checker
+   again: no line marked `hub` may disagree with a deep dive. Commit:
+   "<Animal> hub: router shape".
+
+3. Review. When the reader returns, paste its review into
+   docs/READER_REVIEWS.md under a "## <Animal> (date, first pass)"
+   heading in the same shape as the leopard gecko and rabbit sections:
+   the grade table, set grade, hub conflicts quoted both sides, deep
+   dives against each other, gaps (checked against the Health and More
+   list before you call one real), stranded questions, the
+   one-link-per-page table, trust, the reader's two changes. Commit:
+   "Reader reviews: <animal> first pass".
+
+4. Fixes, in the deep dives only, from the review and the numbers
+   checker:
+   - Two pages disagree on a number: the page whose Sources cite it wins,
+     and the other page changes to match. If both cite a source, change
+     nothing and list it for Mike. Never invent a number. Never change a
+     hedge.
+   - A schedule or diet aside repeated on two pages (calcium by age, the
+     diet section in a tank setup guide): one page keeps it, the other
+     becomes a one-sentence pointer with a link, and the affiliate link
+     in the cut paragraph moves into the pointer.
+   - Recommended links: add each one only if it passes all of these: at
+     most one link per article to the same species' cost, handling,
+     health-issues, tank-setup, feeding, enrichment, or legal guide (the
+     checker errors on two); no link before the first H2; no link inside
+     a ComparisonTable cell (cells do not take markdown); the sentence is
+     about the animal, not about the site. Skip the rest and list them.
+   - Fragments, placeholder cells, "upcoming" references to published
+     pages: fix.
+   - lastUpdated bumps only when a fact or number changed, never for a
+     link. Use the US Eastern date.
+   Run `node scripts/check-voice.mjs --slug <slug>` on every file you
+   touched (zero errors; warnings that were there before you may stay),
+   then check-internal-links, check-related-articles, check-affiliate-mdx,
+   check-cost-coverage, check-seo-tags, and `npx eslint . --quiet`.
+   Commit: "<Animal>: reader fixes", with every original sentence you
+   changed listed before and after in the commit message.
+
+5. Push the branch (`git push -u origin claude/hub-<species>`) and report
+   in one message: the set grade and hub grade, every number you
+   changed with both sides, every original sentence changed (before and
+   after), the links added and the ones skipped with the reason, the
+   items you left for Mike (both-sourced conflicts, difficulty, anything
+   in a component), and the branch name. End with "Ready for your review;
+   nothing merged." Then stop and wait. Do not merge, do not start a
+   second species, do not re-run the reader after the fixes.
+
+Ask Mike before doing any of these, and wait for the answer: changing a
+number where both pages cite a source; changing a difficulty label;
+editing any file in src/ other than the guide data file and the
+SHORT_LABELS line; deleting a FunFact, a Sources entry, or an affiliate
+link; anything not covered above.
+```
