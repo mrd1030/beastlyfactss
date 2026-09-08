@@ -41,7 +41,7 @@ over anything here.
 | Firsthand byline notes | src/lib/data/firsthand.js |
 | Care package sources | content/CAREPACKAGE Guides/source/*.html |
 
-## State as of 2026-09-07 (late evening)
+## State as of 2026-09-08
 
 - Voice pass: done across every series (handling, enrichment, tank setup,
   cost, health, feeding, legal, overview, vs, 10-surprising). The strict
@@ -51,12 +51,10 @@ over anything here.
   (src/components/mdx/DemotedH1.jsx), the excerpt block is skipped when the
   lede repeats it (`ledeMatchesExcerpt` from scripts/sync-articles.js), and
   FAQ answers cannot carry a markdown link (`faq-link` checker rule).
-- Beef-up: batches 1 to 3 are on main, each fact-checked against every
-  cited source in two rounds. Batch 4 (cockatoo, blue-tongued skink,
-  tegu, boa handling) is written, checked by a second session, and
-  pushed on branch claude/beef-up-batch-4-check-vv1uw2, waiting for
-  merge. Batch 5 (the six hands-off species) is scoped in
-  docs/BEEF_UP_PLAN.md and not started.
+- Beef-up: batches 1 to 4 are on main, each fact-checked against every
+  cited source and checked by a second session. Batch 5 (the six
+  hands-off species) is written on branch claude/beef-up-batch-5 and is
+  being checked on claude/beef-up-batch-5-check, waiting for merge.
 - Sources rule: retailer product pages never go in Sources. Cost guides
   carry one plain "Prices last checked <Month Year> at ..." line under the
   last cost table instead.
@@ -84,10 +82,9 @@ catches the defects the commands produce. Per batch:
 
 ## Next jobs, in order
 
-1. Merge claude/beef-up-batch-4-check-vv1uw2 once Mike says merge.
-2. `/beef-up 5 go` (the six hands-off species), optional.
-3. Decide what to do with the 111 baseline blog posts.
-4. Consider moving the closing "For more, see the ..." link sentences into
+1. Merge claude/beef-up-batch-5-check once Mike says merge.
+2. Decide what to do with the 111 baseline blog posts.
+3. Consider moving the closing "For more, see the ..." link sentences into
    the related-articles component so articles stop ending on a nav line.
 
 ## The prompt to paste into a new session
