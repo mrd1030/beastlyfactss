@@ -640,6 +640,124 @@ sourced), the respiratory infection and cohabitation content gaps, and
 the crypto/fecal-test stranded question, none of which are fixable
 with a link or a number correction.
 
+## Goldfish (2026-09-08, first pass, after the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, the tank size and bowl myth
+piece). One Sonnet agent, about 100k tokens. The extractor had a bug
+before this run: it only globbed `<species>-*-guide.mdx`, so the bowl
+myth piece (no `-guide` suffix) never reached a reader even though it
+is wired into RELATED_ARTICLES as goldfish's own content. Fixed in
+scripts/reader-extract.mjs before this pass; see "What the tests
+changed so far". The hub was rebuilt to the router shape after this
+review came back, using its findings.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | A fast checklist and cost table to act on right away. |
+| Encyclopedia | B | Thin, but it has origin and wild lifespan nothing else repeats. |
+| Cost | B+ | Honest that the fish is cheap and the tank is not, but its dollar range didn't match the hub's own table. |
+| Handling | A- | Short, with an actual net-versus-hands routine. |
+| Health issues | A | Dense but the most rigorously sourced page in the set, with real doses and named vets. |
+| Tank setup | A- | Solid numbers for size, filtration, and water, though it repeats the hub and the bowl myth piece closely. |
+| Feeding | A | The most complete page, and it admits when sources disagree instead of hiding it. |
+| Enrichment | B | Useful, but the cited research is never named so it can't be checked. |
+| Tank size and bowl myth | A- | The strongest argument in the set with a real numbers table, though one of its own FAQ answers contradicted a number used elsewhere. |
+
+Set grade: B+. "Thorough and unusually honest about disputed numbers
+where it counts, but small unreconciled figures between pages chip
+away at that credibility."
+
+Hub versus the set, both sides quoted (both since fixed by the router
+rebuild, which cites the deep dive's own figure instead of restating
+it):
+
+- Setup cost. The old hub's own setup table, built around the canister
+  filter it listed, summed to roughly $460 at the high end. The cost
+  guide states flatly: "a complete setup lands in the $150 to $400
+  range." The router hub's Budget row now quotes the cost guide's
+  $150 to $400 figure directly instead of summing a separate table.
+- Feeding schedule certainty. The old hub stated "Feed small portions
+  once or twice a day" as settled, while the feeding guide says
+  "Sources genuinely diverge... There's no single settled number."
+  The router hub's Feeding schedule row now carries the feeding
+  guide's own hedge instead of flattening it.
+
+Deep dives against each other:
+
+- Read twice with no disagreement: tank size across tank setup, the
+  bowl myth piece, and enrichment (20 gallons for one fancy, 10 more
+  per fish, 55+ for common or comet); overfeeding as the driver behind
+  both ammonia spikes and swim bladder trouble (health issues, tank
+  setup, feeding, enrichment); peas for constipation (health issues,
+  feeding); sinking pellets over floating flakes to cut air-gulping
+  (tank setup, feeding, enrichment).
+- One real conflict: temperature. Tank setup says goldfish are
+  "comfortable in the 65 to 75°F range." An FAQ on the bowl myth piece
+  said goldfish need "cooler water (65-72°F) than bettas (78-80°F)."
+  Tank setup cites PetMD and Advanced Aquarium Concepts in its Sources
+  block for the water section this number comes from; the bowl myth
+  piece carries no Sources block at all. Fixed to 65-75°F on the bowl
+  myth piece to match the sourced page.
+
+Gaps, checked against the Health and More list before calling them
+real: how to pick a healthy goldfish or spot a "feeder" goldfish at
+the store (the hub says to avoid them, no page or shared guide
+explains how to tell); real medication names and doses for anything
+besides anchor worm and flukes (the quarantine and hospital tank guide
+covers salt, carbon, and aeration rules generally, not disease-specific
+treatment). Both real, both content gaps rather than link gaps, filed
+in docs/READER_LOG.md.
+
+Stranded questions: handling's "some of the fungal and bacterial
+issues... trace back to exactly this kind of opening" never pointed at
+health issues' actual Fungal Infections section; feeding's swim-bladder
+line never pointed at health issues' Swim Bladder Disorder section;
+tank setup's sinking-pellet recommendation never pointed at feeding's
+pellet-versus-gel-versus-flake breakdown.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | none needed | |
+| Encyclopedia | none needed | |
+| Cost | "proper goldfish keeping requires a large tank and serious filtration, exactly the part the classic fish-in-a-bowl image leaves out entirely" | Tank setup guide (sentence sits before the first H2) |
+| Handling | "Some of the fungal and bacterial issues goldfish pick up trace back to exactly this kind of opening" | Health issues guide |
+| Health issues | "The first response is measured portions, sinking pellets instead of floating flakes, and a short fast with a single cooked, de-shelled pea" | Feeding guide |
+| Tank setup | "Avoid overfeeding, it's one of the most common mistakes and a direct contributor to the waste load your filtration has to handle" | Feeding guide |
+| Feeding | "Excess or low-fiber food causes gas buildup that presses on the swim bladder" | Health issues guide |
+| Enrichment | "Correct tank volume, filtration, and a fully cycled tank come before plants, toys, or tankmates" | Tank setup guide (sentence sits before the first H2, inside the key takeaway box) |
+| Tank size and bowl myth | "a tank that's technically 'big enough' by volume can still develop dangerous ammonia levels without a filter rated well above the tank's actual size" | Tank setup guide |
+
+Trust: the hub-versus-cost-guide setup total gap, and the
+encyclopedia's stated size floor of 4 inches, which matches no variety
+in the bowl myth piece's table (fancy starts at 6). The sentence that
+most convinced the reader a real keeper wrote this, from health
+issues: "Both are correctly published, and where our care package
+prints Merck's number this article's 0.066 mg/L is the one to follow
+for anchor worm, because it is the species-and-parasite-specific
+figure."
+
+Reader's two changes: reconcile the hub's setup-cost table with the
+cost guide's $150 to $400 figure (done by the router rebuild), and fix
+the 65-75°F versus 65-72°F conflict between tank setup and the bowl
+myth piece's FAQ (done).
+
+Fixed the same day: the extractor bug that hid the bowl myth piece
+from every reader run; the hub rebuilt to router shape, which resolves
+the setup-cost and feeding-schedule-certainty conflicts above by
+construction; the 65-72°F FAQ answer on the bowl myth piece corrected
+to 65-75°F to match tank setup's sourced number; a link-only sentence
+on the bowl myth piece that pointed at the care guide hub, cut rather
+than redirected; five of the eight recommended links added (cost and
+enrichment skipped, both sentences sit before the first H2).
+
+Open: how to pick a healthy goldfish and disease-specific medication
+doses beyond anchor worm and flukes, both filed in docs/READER_LOG.md
+as items no guide covers. The encyclopedia's "4-12+ inches" floor is
+out of scope for a deep-dives-only fix pass; left for Mike.
+
 ## Single-article reads (2026-09-08, text only)
 
 Earlier single-page reads, kept for the record. Grades: tegu handling A-,
@@ -683,4 +801,18 @@ unsourced "about half of captive leopard geckos may carry it."
   gecko guide's table cell and seoDescription reconciled to 88-92°F, two
   link-only sentences pointing at the care guide hub cut, two of the
   eight recommended links added (cost to temperature, feeding to health
-  issues).
+  issues). Also: `leopard-gecko-temperature-guide` wired into
+  src/lib/data/relatedArticles.js, docs/READER_LOG.md added (raw reader
+  output per species plus a running "not covered anywhere" list), and the
+  set test prompt gets a closing "Not covered anywhere" section so future
+  reviews are easy to harvest into it.
+- 2026-09-08, goldfish (branch claude/hub-goldfish): scripts/reader-extract.mjs
+  fixed first, it only globbed `<species>-*-guide.mdx` and silently
+  dropped goldfish-tank-size-bowl-myth.mdx from every set test despite
+  the file being wired into RELATED_ARTICLES; now unions the suffix glob
+  with a species' own non-shared RELATED_ARTICLES entries. Hub rebuilt to
+  router shape, which resolved the hub-versus-cost-guide setup total gap
+  and the feeding-schedule-certainty conflict the reader flagged, by
+  construction. Fixes: the bowl myth piece's 65-72°F FAQ answer corrected
+  to 65-75°F to match tank setup's sourced number, its link-only
+  care-guide-hub sentence cut, five of eight recommended links added.

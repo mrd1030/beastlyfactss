@@ -70,6 +70,84 @@ hub, two of the five links, and the temperature guide's Deep Dive wiring
 (added to `leopard-gecko` in src/lib/data/relatedArticles.js). The
 60°F/65°F hub mismatch is both sourced and left for Mike.
 
+## Goldfish (2026-09-08)
+
+One Sonnet agent, nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, the tank size and bowl myth
+piece), about 100k tokens. Extracted after fixing a bug in
+scripts/reader-extract.mjs that had silently dropped the bowl myth
+piece from the set (it doesn't end in `-guide.mdx`). Full agent output
+below, unedited.
+
+---
+
+1. One line per page, would I finish it, what I can act on, grade.
+
+00 Care guide hub: finish it, a fast checklist and cost table I can act on right away. B+.
+01 Encyclopedia: finish it, thin but it has origin and wild lifespan nothing else repeats. B.
+02 Cost guide: finish it, honest that the fish is cheap and the tank is not, but its dollar range doesn't match the hub's own table. B+.
+03 Handling: finish it, short and gives me an actual net-versus-hands routine. A-.
+04 Health issues: finish it, dense but the most rigorously sourced page in the set, with real doses and named vets. A.
+05 Tank setup: finish it, solid numbers for size, filtration, and water, though it repeats 00 and 08 closely. A-.
+06 Feeding: finish it, the most complete page, and it admits when sources disagree instead of hiding it. A.
+07 Enrichment: finish it, useful but the cited research is never named so I can't check it. B.
+08 Bowl myth: finish it, the strongest argument in the set with a real numbers table, though one of its own FAQ answers contradicts a number used elsewhere. A-.
+
+2. Hub and encyclopedia.
+
+The encyclopedia earns its place. It has the wild origin (China, over a thousand years of breeding), habitat, and scientific name, none of which show up anywhere else. The hub mostly doesn't add anything new: nearly every fact in it, tank size, filtration turnover, water change percentage, also appears in 05, 06, or 08. It works fine as a landing page and checklist, but it's an index, not new information.
+
+They do disagree on cost. The hub's setup table, built with the canister filter it lists as the "strong filtration" option, adds up to roughly $460 at the high end across tank, filter, substrate, test kit, conditioner, vacuum, decor, and net kit. The cost guide states flatly: "a complete setup lands in the $150 to $400 range." Build the setup the hub's own table describes and those two numbers don't meet.
+
+3. The set as a whole.
+
+Yes, after all nine pages I could buy, cycle, set up, feed, and do basic troubleshooting on a goldfish. What's still missing: how to actually pick a healthy fish at the store (the hub says "avoid cheap 'feeder' goldfish" but no page explains what that means or how to spot one), and real medication names and doses for anything besides anchor worm and flukes.
+
+Places where one page raises a question another page answers, uncredited: page 03 says "some of the fungal and bacterial issues goldfish pick up trace back to exactly this kind of opening" but never points to 04, which has the actual Fungal Infections section. Page 06 blames appetite loss on gas that "presses on the swim bladder" but the pea-and-fast fix and the fuller mechanism live in 04's Swim Bladder Disorder section, not linked from 06. Page 05 recommends sinking pellets or gel for fancy varieties "which reduce swim bladder issues," but the actual pellet-versus-gel-versus-flake breakdown is 06's, and 05 doesn't send you there.
+
+4. Overlap and conflict across the deep dives.
+
+Read twice with no disagreement: tank size numbers (05, 07, 08, and the hub all agree on 20 gallons for one fancy, 10 more per fish, 55+ for common or comet); overfeeding as the main driver of both ammonia spikes and swim bladder trouble (04, 05, 06, 07); peas for constipation (04, 06); sinking pellets over floating flakes to cut air-gulping (05, 06, 07).
+
+One real conflict: temperature. Page 05 says goldfish are "comfortable in the 65 to 75°F range." An FAQ on page 08 says goldfish need "cooler water (65-72°F) than bettas (78-80°F)." Same species, two ceilings three degrees apart.
+
+A softer one: the hub states plainly, "Feed small portions once or twice a day," while 06 says "Sources genuinely diverge... There's no single settled number." Same practical advice, but the hub presents as settled what 06 explicitly says isn't.
+
+5. One link per page.
+
+00 and 01: already link every title in both sidebar lists, nothing else needed.
+02: "proper goldfish keeping requires a large tank and serious filtration, exactly the part the classic fish-in-a-bowl image leaves out entirely" should point to the tank setup guide (05), not just the bowl myth piece it already links.
+03: "Some of the fungal and bacterial issues goldfish pick up trace back to exactly this kind of opening" should point to the health issues guide (04).
+04: "The first response is measured portions, sinking pellets instead of floating flakes, and a short fast with a single cooked, de-shelled pea" should point to the feeding guide (06).
+05: "Avoid overfeeding, it's one of the most common mistakes and a direct contributor to the waste load your filtration has to handle" should point to the feeding guide (06).
+06: "Excess or low-fiber food causes gas buildup that presses on the swim bladder" should point to the health issues guide's swim bladder section (04).
+07: "Correct tank volume, filtration, and a fully cycled tank come before plants, toys, or tankmates" should point to the tank setup guide (05).
+08: "a tank that's technically 'big enough' by volume can still develop dangerous ammonia levels without a filter rated well above the tank's actual size" should point to the tank setup guide (05) for the actual turnover numbers.
+
+6. Trust.
+
+What made me doubt them: the setup cost gap between the hub and page 02, and page 01's stated size floor of 4 inches, which doesn't match any variety in 08's table (fancy starts at 6). Small, but the kind of thing that makes me wonder if anyone cross-checked the numbers between pages.
+
+The sentence that most convinced me a real keeper wrote this, from 04: "Both are correctly published, and where our care package prints Merck's number this article's 0.066 mg/L is the one to follow for anchor worm, because it is the species-and-parasite-specific figure." That's someone who found two real veterinary sources disagreeing and made a documented, reasoned call instead of quietly picking one.
+
+7. Grade and two changes.
+
+Grade: B+. Thorough, well sourced, and unusually honest about disputed numbers where it counts, but small unreconciled figures between pages chip away at that credibility.
+
+First two changes: reconcile the hub's setup cost table with the $150 to $400 figure in the cost guide, or explain why the canister-filter route runs higher. Then fix the 65-75°F versus 65-72°F conflict between the tank setup guide and the bowl myth FAQ.
+
+Not covered anywhere:
+- How to pick a healthy goldfish or spot a "feeder" goldfish at the store: the hub says to avoid them, but no page in the set, and nothing in the Health and More list, explains how.
+- Actual medication names and doses for ich, fin rot, dropsy, ulcers, popeye, or fungal infections: only anchor worm and flukes get a real drug and dose. The Quarantine and Hospital Tank guide in Health and More covers salt, carbon, and aeration rules generally, but not disease-specific treatment.
+
+---
+
+Fixed the same day (docs/READER_REVIEWS.md has the full write-up): the
+extractor bug; the hub rebuilt to router shape, which resolved the
+setup-cost and feeding-schedule conflicts by construction; the
+65-72°F FAQ answer corrected to 65-75°F; a link-only sentence pointing
+at the care guide hub cut; five of eight recommended links added.
+
 ## Items no guide covers (all species, running list)
 
 - **Leopard gecko:** what a respiratory infection actually is or how it
@@ -81,3 +159,11 @@ hub, two of the five links, and the temperature guide's Deep Dive wiring
   together. The tank setup guide states the rule ("they're not a social
   species and don't do well cohabitating") but never the reason, and
   nothing else in the set or the shared guides covers it either.
+- **Goldfish:** how to pick a healthy goldfish or spot a "feeder" goldfish
+  at the store. The hub says to avoid them, but no page in the set, and
+  nothing in the Health and More list, explains how to tell.
+- **Goldfish:** medication names and doses for ich, fin rot, dropsy,
+  ulcers, popeye, or fungal infections. Only anchor worm and flukes get a
+  real drug and dose in the health issues guide; the shared quarantine
+  and hospital tank guide covers salt, carbon, and aeration rules
+  generally, not disease-specific treatment.
