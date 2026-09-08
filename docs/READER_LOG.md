@@ -658,3 +658,79 @@ First two changes:
   not the feeding restart.
 - **Ball python (second pass):** what to do if the snake gets out of the
   enclosure and into the room.
+- **Betta fish:** how to pick a healthy betta at the store before buying.
+- **Betta fish:** tank lighting or a day/night light schedule.
+- **Betta fish:** whether snails, shrimp, or other tankmates are
+  compatible.
+- **Betta fish:** the actual target temperature for treating ich once
+  it's diagnosed (the health issues guide names warming the tank but
+  never states the target).
+
+## Betta fish (2026-09-08)
+
+One Sonnet agent, ten pages named in the sidebar (hub, encyclopedia,
+cost, handling, health issues, tank setup, feeding, enrichment, vs
+goldfish, water parameters); nine were actually in the extracted set,
+the "10 Surprising Betta Fish Facts" page named on every sidebar was not
+extracted since it carries no `-guide` suffix and isn't unioned into the
+extractor's glob the way goldfish's bowl myth piece is. About 100k tokens.
+Full agent output below, unedited.
+
+---
+
+# Betta Fish Care Set: A Reader's Review
+
+## 1. Page by page
+
+- Hub (00): Finish it, act on the checklist immediately. Grade B+.
+- Encyclopedia (01): Finish it fast, nothing to act on, background only. Grade B.
+- Cost guide (02): Finish it, but the setup table is broken. Grade B-.
+- Handling guide (03): Finish it, changes how you treat the fish from day one. Grade A-.
+- Health issues guide (04): Finish it, the columnaris/ich temperature warning alone is worth the read. Grade A.
+- Tank setup guide (05): Finish it, buy list in hand. Grade A-.
+- Feeding guide (06): Finish it, sets a real schedule. Grade A-.
+- Enrichment guide (07): Finish it, reshapes what you put in the tank. Grade A.
+- Vs. Goldfish guide (08): Finish it if deciding between the two. Grade B+.
+- Water parameters guide (09): Finish it, the numbers you'll actually test against. Grade A.
+
+(A "10 Surprising Betta Fish Facts" page is named on every sidebar but wasn't in this file set, so I can't grade it.)
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: scientific name, wild habitat, adult size, and wild diet appear nowhere else. The hub is thinner justification, it's mostly a compressed version of the five deep dives, plus a checklist and FAQ that aren't duplicated elsewhere. It does disagree with the deep dives on two numbers. Hub: "Water temperature should stay between 78 and 80 degrees F." Tank setup guide: "Target a stable temperature of 76 to 82°F, with 78 to 80°F being the sweet spot." Vs. Goldfish guide gives a third range: "around 75 to 80 degrees F." Also, hub: "Weekly water changes of 25 to 30 percent." Tank setup guide: "Do a 20 to 30% water change weekly."
+
+## 3. The whole set
+
+Yes, I could set up, cycle, buy, feed, and maintain a betta after reading all ten. The gaps: no page tells you how to choose a healthy fish at the store, nothing addresses tank lighting or a day/night cycle, and no page says whether snails or shrimp can share the tank. One quiet dependency: the cost guide's own setup-cost table is missing ("[table could not be parsed]"), and the real itemized numbers only exist on the hub page, without the cost guide pointing there. The health issues guide also raises "an adjustable aquarium heater makes this easy to control precisely" for ich without ever stating the target treatment temperature.
+
+## 4. Overlap and conflict in the deep dives
+
+Read at least three times each, consistently: overfeeding causes bloating/swim bladder, tank size minimum is 5 gallons, and the fasting-day rule. One real conflict beyond temperature: pellet portions. Tank setup guide says "2 to 4 small, high-protein betta pellets." Feeding guide widens that to "anywhere from 2 to 3 up to 6 to 7 depending on the pellet size and brand." Not contradictory so much as the feeding guide admitting more nuance the tank setup guide flattens.
+
+## 5. One link per page
+
+- Hub: "a second cycled tank standing by" -> tank setup guide.
+- Encyclopedia: "intense aggression toward other male bettas" -> enrichment guide.
+- Cost guide: "A proper setup costs more than a lot of first-time buyers expect" -> hub (for the actual table).
+- Handling guide: "Float the sealed bag in your tank for about 15 minutes" -> tank setup guide (heater target).
+- Health issues guide: "offering a single cooked, de-shelled pea afterward" -> feeding guide.
+- Tank setup guide: "Frozen or freeze-dried bloodworms and brine shrimp make good occasional treats" -> feeding guide (frequency limits).
+- Feeding guide: "a recent move, handling, or an aggressive tankmate can suppress appetite" -> handling guide.
+- Enrichment guide: "housed in groups since hatching under enriched conditions" -> hub (sorority specifics).
+- Vs. Goldfish guide: "they need at least a heated, filtered 5-gallon tank" -> tank setup guide, not just the hub.
+- Water parameters guide: "very soft, poorly buffered water ... can allow pH to crash suddenly after a water change" -> tank setup guide's water-change section.
+
+## 6. Trust
+
+The broken cost table and the three-way temperature mismatch made me trust the numbers less than the writing. What convinced me a real keeper wrote this: "Reaching for the heater because that is what worked on the white spots last time is the single worst thing you can do to a betta with columnaris." That's a specific, cited, mistake someone has actually seen happen.
+
+## 7. Overall grade
+
+B+. Well-sourced and genuinely useful, undercut by numbers that don't match each other and a cost page missing its own table. First two fixes: pick one temperature range and one water-change percentage and use them everywhere, and restore the cost guide's setup table so it doesn't quietly depend on the hub.
+
+## Not covered anywhere
+
+- How to pick a healthy betta at the store before buying.
+- Tank lighting or a day/night light schedule.
+- Whether snails, shrimp, or other tankmates are compatible.
+- The actual target temperature for treating ich once it's diagnosed.

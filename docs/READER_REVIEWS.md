@@ -1450,6 +1450,118 @@ guide's cage row with no price and a Sources block that does not name the
 VCA and PetMD pages the body cites, the leopard gecko health guide's
 unsourced "about half of captive leopard geckos may carry it."
 
+## Betta fish (2026-09-08, first pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, water parameters; vs goldfish
+wasn't in the extracted file set and the fact page has no `-guide`
+suffix). One Sonnet agent, about 100k tokens. The hub still carried the
+old legacy prose when this review was filed; the router hub was built
+from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | A fast checklist, but a stale copy of the deep dives on two numbers. |
+| Encyclopedia | B | Scientific name, wild habitat, size, and diet nothing else repeats. |
+| Cost | B- | Honest cost breakdown, but its own setup table wouldn't parse. |
+| Handling | A- | The slime-coat rule alone changes how you'd touch the fish. |
+| Health issues | A | The columnaris-versus-ich temperature warning is the single most useful thing in the set. |
+| Tank setup | A- | Buy list in hand, though its Diet section duplicated the feeding guide. |
+| Feeding | A- | A real schedule, honest that sources disagree on frequency. |
+| Enrichment | A | Three named studies, not vague filler. |
+| Water parameters | A | The numbers you'd actually test against. |
+
+Set grade: B+. "Well-sourced and genuinely useful, undercut by numbers
+that don't match each other and a cost page missing its own table."
+
+Hub versus the set, both sides quoted (both resolved by the router
+rebuild, which cites each deep dive's own figure instead of restating
+it):
+
+- Temperature. The old hub said "Water temperature should stay between
+  78 and 80 degrees F." Tank setup: "Target a stable temperature of 76
+  to 82°F, with 78 to 80°F being the sweet spot." The vs goldfish guide
+  gave a third figure, "around 75 to 80 degrees F," not read by this
+  pass but caught and reconciled to 76-82°F the same day since it's the
+  same disagreement.
+- Water change percentage. The old hub said "Weekly water changes of 25
+  to 30 percent." Tank setup said "Do a 20 to 30% water change weekly."
+  Neither page's Sources block states the number specifically; the
+  water parameters guide (whose whole subject is the water itself)
+  carries the same 25 to 30% figure in its own FAQ, so tank setup's 20
+  to 30% was the outlier and moved to match.
+
+Deep dives against each other:
+
+- Pellet portions. Tank setup: "2 to 4 small, high-protein betta
+  pellets." Feeding: "anywhere from 2 to 3 up to 6 to 7 depending on the
+  pellet size and brand." Not a real contradiction, feeding's fuller
+  figure already contains tank setup's range and explains the variance;
+  left alone rather than flattened, same treatment as the bearded
+  dragon's brumation-length pages.
+- Read three or more times with no disagreement: overfeeding causing
+  bloating and swim bladder problems, the 5-gallon tank minimum, and the
+  weekly fasting day.
+
+The set as a whole: buyable, cyclable, feedable, and troubleshootable
+from this set alone. Four gaps, all checked against the Health and More
+list before being called real (none of them covered by the shared
+aquarium quarantine, cycling, filtration, pH/GH/KH, spotting-a-sick-fish,
+or cooling guides): how to pick a healthy betta at the store, tank
+lighting or a day/night cycle, snail or shrimp tankmate compatibility,
+and the actual target temperature for treating ich (the health guide
+says warming the tank helps but never states the number). All four filed
+in docs/READER_LOG.md.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | "a second cycled tank standing by" | Tank setup guide (hub out of scope this pass) |
+| Encyclopedia | "intense aggression toward other male bettas" | Enrichment guide (encyclopedia out of scope this pass) |
+| Cost | "A proper setup costs more than a lot of first-time buyers expect" | already the hub's own table; no fix available in a deep-dives-only pass |
+| Handling | "Float the sealed bag in your tank for about 15 minutes" | Tank setup guide (heater target) |
+| Health issues | "offering a single cooked, de-shelled pea afterward" | Feeding guide |
+| Tank setup | "Frozen or freeze-dried bloodworms and brine shrimp make good occasional treats" | Feeding guide |
+| Feeding | "a recent move, handling, or an aggressive tankmate can suppress appetite" | Handling guide |
+| Enrichment | "housed in groups since hatching under enriched conditions" | already covered, enrichment already carries its one sibling link to health issues |
+| Water parameters | "very soft, poorly buffered water ... can allow pH to crash suddenly after a water change" | Tank setup guide's water-change section |
+
+Trust: the cost guide's unparseable setup table and the three-way
+temperature mismatch. The sentence that most convinced the reader a
+keeper wrote this, from health issues: "Reaching for the heater because
+that is what worked on the white spots last time is the single worst
+thing you can do to a betta with columnaris."
+
+Reader's two changes: pick one temperature range and one water-change
+percentage and use them everywhere (done by the router rebuild plus the
+vs goldfish and tank setup fixes), and restore the cost guide's setup
+table so it doesn't quietly depend on the hub.
+
+Fixed the same day: the router hub rebuild, which resolves the
+temperature and water-change conflicts by construction; tank setup's
+water change corrected from 20-30% to 25-30%; tank setup's Diet section
+(a full duplicate of the feeding guide, the same pattern as the rabbit
+and ball python tank setup pages) cut to a one-sentence pointer at the
+feeding guide; the vs goldfish guide's three betta-temperature mentions
+(FAQ, table cell, body) corrected from 75-80°F to 76-82°F to match tank
+setup and water parameters; two link-only sentences on the water
+parameters guide that pointed at the care guide hub and at three more
+site pages in its closing paragraph, cut per RULES, Linking, rather than
+redirected; three of the eight recommended links added (handling to
+tank setup, health issues to feeding, feeding to handling, water
+parameters to tank setup - four, not three).
+
+Open: the cost guide's setup-cost table is built from
+`<AffiliateLink>` elements in its first column, the same
+scripts/reader-extract.mjs limitation goldfish's cost guide hit
+("[table could not be parsed]"), not a site defect; left as a known
+extractor gap. The four content gaps above are filed in
+docs/READER_LOG.md for Mike. Not added: cost guide's suggested link
+(the sentence names the hub's own table, not a fixable target from a
+deep-dives-only pass); enrichment's suggested link (already at its one
+sibling cap, used on health issues in the first pass this guide had).
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -1576,3 +1688,19 @@ unsourced "about half of captive leopard geckos may carry it."
   boa constrictor enclosure row and prose reconciled to the two tank
   setup guides (4x2x2 ft for the ball python, 6 to 8 ft long for the
   boa) with the affiliate links moved to those guides' products.
+- 2026-09-08, betta fish (batch A, branch claude/readmefirst-batch-a-9opaeb):
+  hub rebuilt to router shape, which resolved a temperature conflict
+  (78-80°F flat versus tank setup's 76-82°F range) and a water-change
+  conflict (25-30% versus tank setup's 20-30%) by construction. Tank
+  setup's own 20-30% corrected to 25-30% to match water parameters (the
+  page whose subject is the water itself); its Diet section, a full
+  duplicate of the feeding guide, cut to a one-sentence pointer. The vs
+  goldfish guide's three betta-temperature mentions corrected from
+  75-80°F to 76-82°F. Two link-only sentences on the water parameters
+  guide (one pointing at the care guide hub, one dumping three more
+  links in the closing paragraph) cut per RULES, Linking. Four of nine
+  recommended links added. Four content gaps (picking a healthy fish at
+  the store, tank lighting, tankmate compatibility, the ich treatment
+  temperature) filed in docs/READER_LOG.md. `water-parameters-guide` and
+  `cycling-guide` added to SHORT_LABELS in src/pages/GuideDetail.jsx
+  since the hub cites both as first-week row sources.
