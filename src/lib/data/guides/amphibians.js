@@ -8,51 +8,70 @@ export const amphibianGuides = [
     image: "/assets/guides/axolotl.jpg",
     tagline: "The 'forever larva' with feathery gills and superhero-level regeneration!",
     funFact: "Axolotls are neotenic, meaning they retain their larval (juvenile) features throughout their entire adult life and never undergo full metamorphosis. They keep their feathery external gills, tail fins, and aquatic lifestyle permanently. Scientists study them intensively because they can regenerate not just limbs but heart tissue, spinal cord sections, and parts of their brain with zero scarring.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "20-gallon long+ aquarium", low: 50, high: 150 },
-        { item: "Aquarium chiller (keeps water 60-68°F)", low: 150, high: 350 },
-        { item: "Gentle sponge or baffled canister filter", low: 20, high: 120 },
-        { item: "Substrate (fine sand, or bare bottom)", low: 0, high: 25 },
-        { item: "Caves, PVC pipes, and hides", low: 20, high: 40 },
-        { item: "Digital thermometer", low: 10, high: 15 },
-        { item: "Water test kit", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Nightcrawlers and carnivore pellets", low: 100, high: 180 },
-        { item: "Electricity (chiller running cost)", low: 100, high: 200 },
-        { item: "Water conditioner", low: 15, high: 25 },
-      ],
-    },
-    sections: {
-      housing: "Axolotls are fully aquatic. A 20-gallon long aquarium is the minimum for one adult (40 gallons preferred). Tank length matters more than height. Water temperature must stay between 60 and 68 degrees F. This is critical. Axolotls above 72 degrees F develop severe stress, immune failure, and fungal infections. In warm climates, a chiller is necessary. Use a gentle, low-flow filter (sponge filter or output baffled canister) as axolotls have delicate gills that are stressed by strong currents. Bare-bottom tanks or large river rocks (too big to swallow) are safest as substrates. Fine gravel is dangerous as axolotls can ingest it while eating, causing lethal impaction. Perform 20 to 25% water changes weekly.",
-      diet: `Axolotls eat a carnivorous diet. The single best food for most axolotls is nightcrawlers (large earthworms from a bait shop or garden, provided they come from a pesticide-free source). Nightcrawlers are nutritionally complete, naturally scented, and accepted by virtually all axolotls. Cut to appropriate size for juveniles.
-
-High-quality carnivore pellets (Hikari Carnivore Pellets or Repashy Grub Pie gel food) are an excellent primary or supplemental diet. Drop pellets directly in front of the axolotl using tongs. Remove any pellets not eaten within 20 minutes to prevent water quality degradation.
-
-Occasional variety with frozen bloodworms (thawed), brine shrimp, daphnia, or silkworm larvae provides dietary enrichment. Feed juveniles daily, adults every other day to 3 times per week. Axolotls have poor eyesight and hunt primarily by scent and water movement - target feeding with tongs directly in front of the axolotl is more efficient than broadcast feeding, which wastes food and fouls the water.`,
-      enrichment: "Axolotls are surprisingly interactive. Many learn to associate their keeper with food and will swim to the front of the tank at feeding time. Provide caves, PVC pipe sections, and terracotta pots as hides (they prefer to feel sheltered). Live or silk plants (never sharp plastic) provide cover. Dim lighting is preferred as axolotls have no eyelids. Avoid placing the tank in direct sunlight. They are social enough to house in pairs if the tank is large enough, but monitor for nipping (bite off each other's gills, which do regrow).",
-      health: "Fungal infections (white cotton-like growths on the gills or body) are the most common health issue and are almost always caused by water temperatures above 72 degrees F or poor water quality. Treat with cold water changes, salt baths, or methylene blue under vet guidance. Impaction from substrate ingestion is common and often fatal. Never use gravel smaller than a golf ball. Floating is a serious symptom of intestinal blockage or gas. Water quality issues (ammonia, nitrites) cause gill regression and wasting. Test water weekly. Axolotls can live 10 to 15 years with proper care.",
-      checklist: [
-        "20-gallon long+ aquarium (40 gallons preferred)",
-        "Aquarium chiller or cool room (60 to 68 degrees F water)",
-        "Gentle sponge or baffled canister filter",
-        "Bare bottom or large river rock substrate (no small gravel)",
-        "Caves, PVC pipes, and terracotta pots for hiding",
-        "Nightcrawlers (earthworms) as primary food",
-        "High-quality axolotl or carnivore pellets",
-        "Water test kit (ammonia, nitrite, nitrate, pH)",
-        "Weekly 20 to 25% water changes",
-        "Aquatic veterinarian or exotic vet contact",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size and lifespan come from the
+    // encyclopedia entry, which no deep dive repeats. Quarantine and the
+    // heat-wave power-outage row cite the shared aquarium and amphibian guides
+    // in the sidebar's Health and More list. Built 2026-09-08 for the axolotl
+    // set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal check", value: "Banned or effectively banned in California, New Jersey, and Maine, and reported banned in Washington, D.C.; several other states require a permit rarely issued for pets. Legal in Virginia since August 2021, despite widely repeated claims otherwise. Check your state before buying.", source: "axolotl-legal-guide" },
+        { label: "Tank size", value: "A 20-gallon long tank is the minimum for one axolotl, with a 40-gallon breeder better if keeping two.", source: "axolotl-tank-setup-guide" },
+        { label: "Water temperature", value: "Between 60 and 68°F. Above 72°F starts to cause chronic stress, and it can become fatal in the mid-70s. Never use a heater, plan for an aquarium chiller.", source: "axolotl-tank-setup-guide" },
+        { label: "Water parameters", value: "Ammonia and nitrite at 0, nitrate ideally under 10 ppm, pH around 7.4 to 7.8.", source: "axolotl-tank-setup-guide" },
+        { label: "Cycling", value: "The tank needs to be fully cycled before an axolotl goes in, this isn't a species that tolerates an uncycled tank while it establishes itself.", source: "axolotl-tank-setup-guide" },
+        { label: "Substrate", value: "Fine sand with grains under 1mm, or bare-bottom. Never gravel or small rocks, axolotls gulp their food and swallow loose substrate along with it.", source: "axolotl-tank-setup-guide" },
+        { label: "Filtration", value: "Low flow only, a gentle sponge filter or a canister filter with the output diffused through a spray bar. Axolotls dislike current.", source: "axolotl-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Hatchlings eat live food 2 to 3 times daily, juveniles about once a day, sub-adults every 1 to 3 days, adults every 2 to 3 days.", source: "axolotl-feeding-guide" },
+        { label: "Diet", value: "Earthworms or nightcrawlers as the gold-standard staple, paired with a quality sinking pellet formulated for axolotls. Size each meal to roughly the axolotl's head, remove anything uneaten after 15 to 30 minutes.", source: "axolotl-feeding-guide" },
+        { label: "Handling", value: "Minimal, reserved for genuine necessity. Guide it into a submerged container rather than lifting it out by hand or using a net, and keep it in water at all times.", source: "axolotl-handling-guide" },
+        { label: "Not eating / floating", value: "See a vet promptly for fungal growth that hasn't improved within 48 hours of correcting water quality, suspected impaction, red streaking or open wounds, or appetite loss lasting 5 days or more.", source: "axolotl-health-issues-guide" },
+        { label: "Budget", value: "$30 to $100 for the axolotl itself, $200 to $500 for a basic setup or $450 to $900 with a chiller, and $15 to $45 a month after that.", source: "axolotl-cost-guide" },
+        { label: "Adult size", value: "9 to 12 inches." },
+        { label: "Lifespan", value: "10 to 15 years typical in captivity." },
+        { label: "Quarantine", value: "6 to 8 weeks per general veterinary guidance, landing closer to the 8-week end than the shortest end. The clock resets, not just pauses, if the animal shows illness partway through.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Heat wave / power outage", value: "The emergency runs in reverse for axolotls: heat is the danger, not cold. Sustained water above about 75°F causes reduced appetite, ascites, and uncontrollable floating. Insulate against heat, float sealed frozen water bottles rather than loose ice, and as a stopgap move the axolotl to a dish in the refrigerator.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
+    emergencyCard: {
+      source: "axolotl-health-issues-guide",
+      callNow: [
+        "Fungal growth that hasn't improved within 48 hours of correcting water quality",
+        "Suspected impaction",
+        "Red streaking or open wounds",
+        "Appetite loss lasting 5 days or more",
+      ],
+      vetLine: "An aquatic or exotic-amphibian vet, found before you need one. General small-animal clinics often aren't equipped for this species.",
+    },
+    routes: [
+      { slug: "axolotl-cost-guide", line: "The axolotl itself $30 to $100, why the chiller can double your setup cost, and the real monthly budget." },
+      { slug: "axolotl-tank-setup-guide", line: "Cold water 60 to 68°F, no gravel ever, low-flow filtration, and the water parameters that matter." },
+      { slug: "axolotl-feeding-guide", line: "Schedule by life stage, the gold-standard nightcrawler diet, and why gravel is the mistake that sends axolotls to surgery." },
+      { slug: "axolotl-handling-guide", line: "Why hands-off is the default, the submerged-container method, and drip-matching a new arrival in without touching it." },
+      { slug: "axolotl-health-issues-guide", line: "Fungal infection, impaction, ammonia burns, heat stress, and the signs that mean a vet visit." },
+      { slug: "axolotl-enrichment-guide", line: "Hides and structure, foraging that isn't a static food pile, and why every item in the tank has to be smooth." },
+      { slug: "axolotl-legal-guide", line: "Which states restrict axolotls, the Virginia myth corrected, and what the 2025 federal salamander rule actually changes." },
+    ],
+    buyList: [
+      "20-gallon long tank (40-gallon breeder if keeping two)",
+      "Aquarium chiller, or fan-based cooling in cooler climates",
+      "Gentle sponge filter or a canister filter with the output diffused through a spray bar",
+      "Fine sand under 1mm, or no substrate at all (never gravel)",
+      "Digital thermometer",
+      "Water test kit",
+      "Water conditioner/dechlorinator",
+      "Caves, PVC pipes, and hides",
+      "Secure lid",
+      "Nightcrawlers and a sinking pellet formulated for axolotls",
+    ],
     faqs: [
-      { q: "What water temperature does an axolotl need?", a: "60 to 68 degrees F is the target range. This is significantly cooler than typical room temperature and is the single most important and frequently violated care requirement for axolotls. Water above 72 degrees F causes immune system failure, stress-related disease, and dramatically increases susceptibility to fungal infections. Water above 75 degrees F can be fatal within days. In warm climates or during summer months, an aquarium chiller is not optional - it is essential. Ambient room air conditioning alone is often insufficient to keep the water cool enough." },
-      { q: "Can axolotls really regenerate?", a: "Yes - axolotls have the most extensive regenerative capability of any vertebrate animal studied. They can fully regenerate: amputated limbs including bone, muscle, and nerve tissue; significant portions of the heart muscle; sections of the spinal cord; and portions of the brain - all without scarring. The regenerated tissue is functionally indistinguishable from the original. Scientists study axolotl regeneration intensively because the mechanisms involved may have implications for understanding wound healing and tissue repair in mammals. A gill nipped off by a tank mate will typically regrow fully within weeks." },
-      { q: "What should axolotls eat?", a: "Nightcrawlers (large earthworms from a bait shop or pesticide-free garden source) are the single best staple food. They are nutritionally complete, naturally scented, eagerly accepted by virtually all axolotls, and available year-round. High-quality carnivore pellets (Hikari Carnivore Pellets, Repashy Grub Pie) are an excellent primary or supplemental option. Offer pellets with feeding tongs directly in front of the axolotl and remove uneaten food within 20 minutes. Supplement occasionally with frozen bloodworms, brine shrimp, or daphnia. Feed juveniles daily and adults every 2 to 3 days." },
-      { q: "Why is my axolotl floating?", a: "Floating at the surface or inability to swim down is a serious symptom, most commonly caused by intestinal gas (from ingesting air or a substrate particle) or intestinal impaction (substrate blockage - fine gravel is the most common cause). A mildly gassy axolotl may resolve with a brief cold water bath in a separate container. Persistent floating, loss of balance, or visible bloating requires veterinary consultation. This is why fine gravel is so dangerous: axolotls vacuum up substrate while eating and fine gravel impactions are often fatal. Always use bare bottom or river rocks too large to swallow." },
-      { q: "How long do axolotls live?", a: "10 to 15 years with proper care - considerably longer than most people expect from an aquatic animal of this size. The most common reasons axolotls fall short of their potential lifespan are: water temperature too warm (the single most impactful variable), substrate impaction from fine gravel, fungal infections from poor water quality, and lack of veterinary care for early illness signs. Axolotls that receive appropriate temperatures, weekly water changes, a proper diet, and veterinary attention when needed regularly reach 10 to 12 years and beyond." },
+      { q: "Is it legal to own an axolotl in Virginia?", a: "Yes, and this corrects a widely repeated mistake. As of August 1, 2021, the Virginia Department of Wildlife Resources confirms it is legal to import, export, sell, and possess axolotls in Virginia, no permit required. Many hobbyist sites still incorrectly list Virginia as banned." },
+      { q: "What is heat stress in axolotls and how serious is it?", a: "It's the condition most axolotl health problems trace back to. Watch for curled or forward-facing gill tips, appetite loss, floating, and pale patches, extended exposure above roughly 72°F suppresses the immune system, and temperatures above about 75°F can be fatal, so dropping the water temperature immediately is the priority." },
+      { q: "Why is gravel substrate dangerous for axolotls?", a: "They gulp food instead of picking it out, so gravel goes down with the meal. That blockage in the intestine can require surgery and can be fatal. Use fine sand under about 1mm, or run the tank bare-bottom." },
     ],
   },
   {
