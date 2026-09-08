@@ -310,54 +310,67 @@ export const fishGuides = [
     image: "/assets/guides/goldfish.jpg",
     tagline: "The pond classic that outgrows its reputation - and its bowl - in a hurry!",
     funFact: "Goldfish have real, months-long memories and can be trained to push levers, navigate mazes, and recognize shapes and colors - directly contradicting the popular '3-second memory' myth. They also grow to the size of their environment: a goldfish kept in a tiny bowl doesn't stay small because it's content, it's stunted, which is a sign of poor welfare rather than a convenient feature.",
-    // Rebuilt Sep 2026 from the itemized budget on page 29 of the Goldfish care
-    // package v2.1, which is the researched list. Setup sums to $208-$500, annual to
-    // $156-$384, which is the package's $13-$32 a month over twelve months.
-    costs: {
-      setup: [
-        { item: "20+ gallon tank", low: 40, high: 120 },
-        { item: "Canister filter (strong filtration)", low: 45, high: 130 },
-        { item: "Gentle/sponge filter", low: 20, high: 40 },
-        { item: "Smooth gravel or sand substrate", low: 15, high: 30 },
-        { item: "Water test kit", low: 25, high: 40 },
-        { item: "Water conditioner", low: 8, high: 15 },
-        { item: "Gravel vacuum and two dedicated buckets", low: 15, high: 30 },
-        { item: "Plants, hardscape and smooth decor", low: 15, high: 45 },
-        { item: "Soft rubber net, transfer container, thermometer and lid", low: 15, high: 30 },
-        { item: "First bag of sinking goldfish pellets", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Goldfish pellets + blanched vegetables", low: 72, high: 180 },
-        { item: "Water conditioner and test kit", low: 36, high: 84 },
-        { item: "Filter media replacement", low: 24, high: 72 },
-        { item: "Electricity for filter and air pump", low: 24, high: 48 },
-      ],
-    },
-    sections: {
-      housing: "A single fancy goldfish needs at least 20 gallons, with 10 additional gallons for each fish added. Common and comet goldfish grow considerably larger, need at least 55 gallons for one and more for each additional, and are much better suited to an outdoor pond long term. Goldfish are cold-water fish and generally do not need a heater at typical room temperatures, comfortable in the 65 to 75 degree F range, though they should never be mixed with tropical species that require heat. Because goldfish produce a lot of waste, strong filtration is essential regardless of tank size, ideally a canister filter turning over the tank's full volume at least 4 times an hour. Fully cycle the tank before adding fish, ammonia and nitrite both need to read 0 before goldfish go in. Bowls should never be used under any circumstances.",
-      diet: "Goldfish are omnivores and do best on a high-quality sinking goldfish-specific pellet as their staple food. Blanched vegetables - shelled peas, zucchini, and leafy greens - are important for digestion and help prevent the swim bladder problems goldfish are prone to. Occasional treats of bloodworms or brine shrimp add variety. Feed small portions once or twice a day; goldfish will beg constantly but are prone to overeating, bloating, and constipation if fed too much or given only low-quality flake food.",
-      enrichment: "Goldfish are highly food-motivated and genuinely trainable - many keepers teach them tricks like pushing a mini soccer ball, swimming through hoops, or following a finger around the glass. They enjoy foraging for pellets among smooth river rock and will happily graze on live plants as part of their natural feeding behavior (choose either plastic decor or plant varieties you don't mind them nibbling). Fancy varieties with rounded bodies are comparatively poor swimmers, so generous open swimming space matters more than clutter. Goldfish are also social and do well kept in same-species groups.",
-      health: "Swim bladder disorder is especially common in round-bodied fancy varieties and is often linked to diet and genetics. Ammonia and nitrite poisoning from undersized, under-filtered tanks is the single most common cause of premature goldfish death, since keepers frequently underestimate how much waste they produce. Ich and fin rot both follow poor water quality. Avoid cheap 'feeder' goldfish, which are typically bred for low cost rather than health or longevity. Weekly water testing and 25 to 50 percent water changes are essential maintenance, not optional extras.",
-      checklist: [
-        "20+ gallon tank per fancy goldfish (55+ gallons or a pond for common/comet)",
-        "Strong filtration, at least 4x turnover per hour (canister filter recommended)",
-        "No heater needed (cold-water fish)",
-        "Smooth gravel or sand substrate",
-        "Sinking goldfish-specific pellets",
-        "Blanched vegetables (peas, zucchini, leafy greens)",
-        "Occasional bloodworms or brine shrimp",
-        "Water test kit and dechlorinator",
-        "Weekly 25-50% water changes",
-        "Net for safe transfers",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Lifespan comes from the encyclopedia
+    // entry, which no deep dive repeats as a single figure. Quarantine and
+    // power outage cite the shared aquarium guides in the sidebar's Health and
+    // More list. Built 2026-09-08 for the goldfish set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "20+ gallons for one fancy goldfish (29+ gallons is the better setup), plus 10 more gallons per additional fish. 55 gallons minimum for one common or comet, more per additional fish, better in an outdoor pond. 40 gallons minimum for a shubunkin, 55+ gallons or a pond better.", source: "goldfish-tank-size-bowl-myth" },
+        { label: "Filtration", value: "Process the tank's total volume at least 4 times an hour, ideally 5 to 10 times. Running two filters on one goldfish tank is common practice among experienced keepers, not overkill.", source: "goldfish-tank-setup-guide" },
+        { label: "Water temperature", value: "A coldwater species, comfortable in the 65 to 75°F range. No heater strictly required.", source: "goldfish-tank-setup-guide" },
+        { label: "Water parameters", value: "Ammonia and nitrite at 0, nitrate under roughly 20 ppm. Weekly water changes of 25 to 50%, always with a dechlorinator treating the new water first.", source: "goldfish-tank-setup-guide" },
+        { label: "Cycling", value: "Cycle the tank fully before adding any fish, the same as any other species.", source: "goldfish-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Juveniles get 2 to 3 small feedings a day. For adults, sources genuinely diverge, so treat 1 to 2 small meals a day as the safe range, feeding only what's eaten in about 30 seconds to 2 minutes.", source: "goldfish-feeding-guide" },
+        { label: "Diet", value: "A quality sinking pellet formulated specifically for goldfish as the base, not tropical fish flake. Supplement 2 to 3 times a week with blanched vegetables and high-protein treats in moderation.", source: "goldfish-feeding-guide" },
+        { label: "Not eating", value: "Short gaps of 3 to 4 days are fine for a healthy adult in an established tank. The trigger to seek help is 24 to 48 hours of refusal combined with lethargy, pineconing scales, clamped fins, abnormal floating or sinking, gasping at the surface, visible wounds or white spots, cotton-like growths, or a visibly thinning body.", source: "goldfish-feeding-guide" },
+        { label: "Handling", value: "Guide it into a container of tank water rather than lifting it out by hand. If a net is needed, wet it first and use soft rubber, never knotted nylon. Keep the fish out of water as briefly as possible.", source: "goldfish-handling-guide" },
+        { label: "Budget", value: "The fish itself often costs less than $10. A complete setup typically runs $150 to $400. Ongoing costs run $10 to $30 a month.", source: "goldfish-cost-guide" },
+        { label: "Adult size", value: "6 to 8 inches for a fancy goldfish, 10 to 14+ inches for a common or comet, 10 to 12 inches for a shubunkin.", source: "goldfish-tank-size-bowl-myth" },
+        { label: "Lifespan", value: "10 to 15 years typical; 20 to 30+ years in spacious, well-kept ponds." },
+        { label: "Quarantine", value: "At least 30 days in a bare hospital tank before joining others, per the Merck Veterinary Manual. Thirty days is the floor, not the target, and a full two months is reasonable for a fish you especially don't want to lose.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "Oxygen loss is the fast danger, not the cold or the dark. Aerate right away with a battery air pump, or agitate the surface by hand every 10 to 30 minutes. Don't feed, and don't restart a filter that's been off for hours without checking it first.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
+    emergencyCard: {
+      source: "goldfish-health-issues-guide",
+      callNow: [
+        "Persistent loss of buoyancy",
+        "Severe fin damage",
+        "Visible ulcers",
+        "Ongoing lethargy or appetite refusal",
+        "An over-the-counter treatment that isn't working",
+      ],
+      vetLine: "An aquatic vet, found before you need one. Most of what's on the health issues list is prevented, not treated, through consistent water quality, quarantining new fish, and appropriate feeding.",
+    },
+    routes: [
+      { slug: "goldfish-cost-guide", line: "The fish itself under $10, a $150 to $400 setup where filtration is the real cost, and $10 to $30 a month after that." },
+      { slug: "goldfish-tank-setup-guide", line: "The real tank size, filtration turnover math, water parameters, and cycling before the fish goes in." },
+      { slug: "goldfish-tank-size-bowl-myth", line: "Why goldfish don't grow to fit their tank, the real space requirements by variety, and what self-cleaning bowl kits get wrong." },
+      { slug: "goldfish-feeding-guide", line: "Schedule by life stage, pellets versus flakes versus gel, safe foods by tier, and the honest range of reasons a goldfish stops eating." },
+      { slug: "goldfish-handling-guide", line: "Why the slime coat matters, the net-and-container method, and what to do when bare hands are unavoidable." },
+      { slug: "goldfish-health-issues-guide", line: "Ich, flukes, anchor worm, velvet, fin rot, swim bladder disorder, dropsy, popeye, ulcers, and the signs that mean a vet visit." },
+      { slug: "goldfish-enrichment-guide", line: "What the research actually shows about plants and substrate, space and layout, and social stocking done right." },
+    ],
+    buyList: [
+      "20+ gallon tank (55+ gallons or a pond for common/comet varieties)",
+      "Canister filter or a strong hang-on-back filter, rated well above the tank's actual size",
+      "Water test kit",
+      "Water conditioner/dechlorinator",
+      "Gravel vacuum and two dedicated buckets",
+      "Smooth gravel or sand substrate",
+      "Plants, hardscape, and smooth decor, nothing sharp or fin-trapping",
+      "Soft rubber net, transfer container, thermometer, and lid",
+      "Sinking goldfish-specific pellets",
+    ],
     faqs: [
-      { q: "Do goldfish really only remember 3 seconds?", a: "No, this is a widespread myth. Research has shown goldfish retain memories for months, can learn to navigate mazes, associate feeding times with cues, and be trained to perform simple tricks. The 3-second myth likely persists partly to excuse keeping them in inadequate, unstimulating bowls." },
-      { q: "How big of a tank does a goldfish need?", a: "At minimum, 20 gallons for a single fancy goldfish, with 10 more gallons for each additional fish. Common and comet goldfish grow much larger, need at least 55 gallons for one and more per additional fish, and are better suited to a pond long term rather than a standard aquarium." },
-      { q: "Can goldfish live in a bowl?", a: "No. Bowls lack adequate oxygen exchange, filtration, and swimming space, and a goldfish kept in one will become stunted and stressed rather than staying conveniently small. This is one of the most damaging misconceptions in pet care and a major cause of shortened goldfish lifespans." },
-      { q: "What do goldfish eat?", a: "A high-quality goldfish pellet should form the base of their diet, supplemented regularly with blanched vegetables like peas and zucchini, which support healthy digestion. Occasional bloodworms or brine shrimp add variety. Avoid overfeeding, since goldfish beg constantly regardless of how full they are." },
-      { q: "How long do goldfish live?", a: "10 to 15 years is typical in a well-maintained tank, and goldfish kept in spacious outdoor ponds with excellent water quality have been documented living 20 to 30 years or more. Tank size and water quality are the two biggest factors separating a short goldfish lifespan from a long one." },
-      { q: "Are goldfish good pets for beginners?", a: "Yes, but the bowl reputation is exactly backwards. A goldfish kept in a bowl isn't a beginner setup, it's a welfare problem that produces a stunted, stressed fish. A properly filtered 20+ gallon tank makes goldfish a genuinely easy, long-lived, trainable first fish." },
+      { q: "Can I keep a goldfish and a betta together?", a: "Not recommended. Goldfish need cooler water (65-72°F) than bettas (78-80°F), and goldfish are voracious fin-nippers that will target a betta's long fins. The temperature mismatch alone makes this pairing a poor fit for either species." },
+      { q: "How do I know if my current goldfish tank is too small?", a: "Test the water. If ammonia or nitrite ever reads above zero between water changes, or if you're doing water changes more than twice a week just to keep the fish alive, the tank is undersized for the bioload it's carrying - regardless of what the fish looks like." },
+      { q: "Why has my goldfish stopped eating?", a: "Water quality problems are the single most commonly cited cause, ammonia or nitrite spikes especially in a newer tank. Overfeeding-driven constipation, stress from tank mates or a small enclosure, and early disease are the other common culprits. Seasonal pond dormancy and spawning behavior can also reduce appetite normally." },
     ],
   },
   {
