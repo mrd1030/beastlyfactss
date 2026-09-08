@@ -216,7 +216,7 @@ export function isSharedDeepDiveArticle(slug) {
   return (listingCounts.get(slug) || 0) > 1;
 }
 
-function getListingGuides(slug) {
+export function getListingGuides(slug) {
   const guides = new Set();
   for (const [guideId, articles] of Object.entries(RELATED_ARTICLES)) {
     if (articles.includes(slug)) guides.add(guideId);

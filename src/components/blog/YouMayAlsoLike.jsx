@@ -40,7 +40,7 @@ function tagsOf(post) {
 // shuffled before it is sorted by shared-tag count, and Array.sort is stable,
 // so posts of equal similarity stay in random order rather than always
 // resolving to the same ones.
-function selectRelated({ currentPostId, categorySlug, cutoff, seed, factFilesOnly = false }) {
+function selectRelated({ currentPostId, categorySlug, cutoff, seed, factFilesOnly = false, excludeIds = null }) {
   const current = mdxPosts.find((p) => idOf(p) === currentPostId);
 
   // Arriving from Fact Files narrows the pool to Fact Files. This is not just
@@ -50,6 +50,7 @@ function selectRelated({ currentPostId, categorySlug, cutoff, seed, factFilesOnl
   const pool = mdxPosts.filter(
     (p) =>
       idOf(p) !== currentPostId &&
+      !(excludeIds && excludeIds.has(idOf(p))) &&
       !isChroniclesPost(p) &&
       dayOf(p) <= cutoff &&
       (!factFilesOnly || (p.factFile && p.myth && p.truth))
@@ -96,7 +97,9 @@ function selectRelated({ currentPostId, categorySlug, cutoff, seed, factFilesOnl
   return picked;
 }
 
-export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPost, factFilesMode = false }) {
+// excludeIds: posts already shown by MoreOnSpecies just above, so a reader
+// does not meet the same title twice in one scroll.
+export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPost, factFilesMode = false, excludeIds = null }) {
   // Two passes on purpose.
   //
   // The first render has to be byte-identical between prerender.mjs's capture
@@ -127,8 +130,9 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPo
       cutoff: runtime?.cutoff ?? buildStamp.generatedAt,
       seed: runtime?.seed ?? hashString(String(currentPostId)),
       factFilesOnly: factFilesMode,
+      excludeIds,
     });
-  }, [currentPostId, categorySlug, runtime, factFilesMode]);
+  }, [currentPostId, categorySlug, runtime, factFilesMode, excludeIds]);
 
   if (related.length === 0) return null;
 

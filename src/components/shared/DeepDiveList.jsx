@@ -81,7 +81,12 @@ function Section({ title, articles, renderLink }) {
 // rather than routing, so it needs a plain anchor whose default is prevented.
 // Guide and encyclopedia pages pass nothing and get a real router Link. Both
 // render identically; only the navigation differs.
-export default function DeepDiveList({ articles, guideId, onSelect }) {
+// ownTitle lets the after-article block on blog posts label the species list
+// "More on the Argentine Tegu" while the sidebars keep "Deep Dive".
+// show: 'both' (default), 'own' or 'shared', so a caller can place the two
+// sections in different spots (the blog puts the species list after the FAQ
+// on phones and keeps the shared list in the sidebar).
+export default function DeepDiveList({ articles, guideId, onSelect, ownTitle = OWN_TITLE, show = 'both' }) {
   if (!articles || articles.length === 0) return null;
 
   const slugOf = article => article.slug?.current || article._id || article.id;
@@ -120,8 +125,8 @@ export default function DeepDiveList({ articles, guideId, onSelect }) {
 
   return (
     <>
-      <Section title={OWN_TITLE} articles={own} renderLink={renderLink} />
-      <Section title={SHARED_TITLE} articles={shared} renderLink={renderLink} />
+      {show !== 'shared' && <Section title={ownTitle} articles={own} renderLink={renderLink} />}
+      {show !== 'own' && <Section title={SHARED_TITLE} articles={shared} renderLink={renderLink} />}
     </>
   );
 }

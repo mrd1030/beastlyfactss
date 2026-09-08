@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
@@ -32,6 +32,8 @@ import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import Pagination from '@/components/shared/Pagination';
 import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
+import MoreOnSpecies from '@/components/blog/MoreOnSpecies';
+import { getDeepDiveSiblings } from '@/lib/data/relatedArticles';
 import ProductCard from '@/components/shared/ProductCard';
 import ProductModal from '@/components/shared/ProductModal';
 import { AFFILIATE_PRODUCTS } from '@/lib/data/affiliateProducts';
@@ -555,6 +557,20 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   }, [post.publishedAt]);
   const postSlug = post.slug?.current || post._id || post.id;
 
+  // Same curated same-species list the sidebar shows, computed once here so
+  // the after-FAQ block and You May Also Like's exclusion agree. Context-free
+  // on purpose (no fromGuideId): this has to match the prerendered HTML.
+  const moreOnArticles = useMemo(() => {
+    const slugs = getDeepDiveSiblings(postSlug, allPosts, { limit: 24 });
+    return slugs
+      .map((slug) => allPosts.find((p) => (p.slug?.current || p._id || p.id) === slug))
+      .filter(Boolean);
+  }, [postSlug, allPosts]);
+  const moreOnIds = useMemo(
+    () => new Set(moreOnArticles.map((p) => p._id || p.slug?.current || p.id)),
+    [moreOnArticles]
+  );
+
   // Resets both the page scroll and the sidebar's own scroll whenever the
   // displayed post changes. Needed for two separate reasons: React Router's
   // <Link> (what in-article MDX links render as, see MdxLink.jsx) doesn't
@@ -956,6 +972,8 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               </div>
             )}
 
+            <MoreOnSpecies currentSlug={postSlug} articles={moreOnArticles} onSelectPost={onSelectPost} />
+
             {relatedProducts.length > 0 && (
               <div className="mt-8">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
@@ -984,6 +1002,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               categorySlug={post.categorySlug || post.category}
               onSelectPost={onSelectPost}
               factFilesMode={factFilesMode}
+              excludeIds={moreOnIds}
             />
           </div>
 
@@ -997,7 +1016,10 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               end - reaches it. That release is native browser behavior,
               nothing JS-driven about it. */}
           <div ref={sidebarWrapperRef}>
-            <div className="lg:sticky lg:top-16 max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5" ref={sidebarRef}>
+            {/* The scroll box is desktop-only. Below lg the sidebar stacks under the
+                article, and an inner scroll there hid everything past the second
+                card (Random Fact, and Subscribe once it moved to the end). */}
+            <div className="lg:sticky lg:top-16 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto custom-scrollbar-hide pb-4 space-y-5" ref={sidebarRef}>
               {/* Hidden below lg: the collapsible instance above the article
                   already covers mobile. */}
               <div className="hidden lg:block">

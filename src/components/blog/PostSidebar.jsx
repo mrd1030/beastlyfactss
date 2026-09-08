@@ -121,10 +121,13 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
     setDisplayFact(randomF);
   }, [matches, nonMatches]); // Re-run if the buckets change
 
-  // 3. Loading Guard to prevent Hydration Errors
-  if (!displayFact || displayRelated.length === 0) {
-    return <div className="space-y-5 animate-pulse opacity-50">Loading...</div>;
-  }
+  // 3. Loading Guard to prevent Hydration Errors. Only the two random blocks
+  // (You Might Also Like, Random Fact) depend on the effect above, so only
+  // they wait. Subscribe, Deep Dive and the quiz backlinks are deterministic
+  // and render on first paint, which is what puts the curated species links
+  // into the prerendered HTML. Before this split the whole sidebar was the
+  // string "Loading..." in every static article page.
+  const randomReady = Boolean(displayFact) && displayRelated.length > 0;
 
   // Picks a post's emoji by finding a fact about the same animal.
   //
@@ -150,11 +153,10 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
   };
 
   return (
-    <div className="space-y-5">
-      {/* ... KEEP YOUR EXISTING SUBSCRIBE, RELATED, AND FACT JSX BELOW ... */}
-      
-      {/* Subscribe */}
-      <div className="bg-card border border-border rounded-2xl p-5">
+    <div className="flex flex-col gap-5">
+      {/* Subscribe: first in the desktop sidebar, last on a phone, where the
+          sidebar stacks under the article and the ask belongs at the end. */}
+      <div className="bg-card border border-border rounded-2xl p-5 order-last lg:order-none">
         <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe - it's free</h3>
         <p className="text-xs text-muted-foreground font-body mb-4">An occasional email when something new is worth your time. No spam. 🐾</p>
         <BeehiivSubscribe />
@@ -163,10 +165,22 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
       {/* Deep Dive: the same curated same-species list Guide/Encyclopedia pages
           show, and the same component, so clicking through from one of those
           doesn't strand a reader with no way to keep following the thread. */}
+      {/* The species list is hidden below lg: MoreOnSpecies renders it after
+          the FAQ, and on a phone the sidebar stacks right under that. The
+          shared Health and More list has no in-body copy, so it always shows. */}
+      <div className="hidden lg:block">
+        <DeepDiveList
+          articles={deepDiveArticles}
+          guideId={fromGuideId}
+          onSelect={onSelectPost}
+          show="own"
+        />
+      </div>
       <DeepDiveList
         articles={deepDiveArticles}
         guideId={fromGuideId}
         onSelect={onSelectPost}
+        show="shared"
       />
 
       {/* Quiz backlink: this article is a question source in these quizzes */}
@@ -190,8 +204,12 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
         </div>
       )}
 
-      {/* Related Posts */}
-      <div className="bg-card border border-border rounded-2xl p-5">
+      {!randomReady && <div className="space-y-5 animate-pulse opacity-50">Loading...</div>}
+
+      {/* Related Posts. Hidden below lg: on a phone the sidebar stacks right
+          under YouMayAlsoLike, which already covers this. */}
+      {randomReady && (
+      <div className="bg-card border border-border rounded-2xl p-5 hidden lg:block">
         <h3 className="font-display font-bold text-sm text-foreground mb-4">You Might Also Like</h3>
         <div className="space-y-3">
           {displayRelated.map(post => {
@@ -226,7 +244,10 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
         </div>
       </div>
 
+      )}
+
       {/* Random Fact */}
+      {randomReady && (
       <div className="bg-card border border-border rounded-2xl p-5">
         <h3 className="font-display font-bold text-sm text-foreground mb-3">🐾 Random Fact</h3>
         <div className="text-center mb-3">
@@ -247,6 +268,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
           {isFavorite(displayFact.id) ? 'Saved to Pack 🐾' : 'Save to My Pack'}
         </button>
       </div>
+      )}
     </div>
   );
 }

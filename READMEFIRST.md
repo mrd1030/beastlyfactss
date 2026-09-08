@@ -41,7 +41,7 @@ over anything here.
 | Firsthand byline notes | src/lib/data/firsthand.js |
 | Care package sources | content/CAREPACKAGE Guides/source/*.html |
 
-## State as of 2026-09-08
+## State as of 2026-09-08 (evening)
 
 - Voice pass: done across every series (handling, enrichment, tank setup,
   cost, health, feeding, legal, overview, vs, 10-surprising). The strict
@@ -51,10 +51,22 @@ over anything here.
   (src/components/mdx/DemotedH1.jsx), the excerpt block is skipped when the
   lede repeats it (`ledeMatchesExcerpt` from scripts/sync-articles.js), and
   FAQ answers cannot carry a markdown link (`faq-link` checker rule).
-- Beef-up: all five batches are on main, each fact-checked against every
-  cited source and checked by a second session. docs/BEEF_UP_PLAN.md is
-  done. Three batch 5 articles (toad, millipede, cockroach) carry two
-  sources, not three; every claim is covered, nothing was padded.
+- Beef-up: batches 1 to 5 are on main, each fact-checked against every
+  cited source and checked by a second session. Three batch 5 articles
+  (toad, millipede, cockroach) carry two sources, not three, by decision.
+  Batches 6 to 10 (pick-up sections for the hands-on handling guides) are
+  scoped in docs/BEEF_UP_PLAN.md and not started.
+- Article endings: branch claude/more-on-block adds a "More on the <animal>"
+  block after the FAQ (src/components/blog/MoreOnSpecies.jsx), rendered
+  from RELATED_ARTICLES so it is in the prerendered HTML, and fixes the
+  sidebar so Deep Dive and Health and More prerender too (before this the
+  whole sidebar was the string "Loading..." in every static page). You May
+  Also Like excludes what the block shows; on phones the sidebar hides its
+  copy of the species list. No MDX was touched. Prose closers stay as they
+  are until the closer rule is tightened (next jobs).
+- Date rule, decided 2026-09-08: navigation-only and FunFact edits do not
+  bump lastUpdated or lastReviewed. Only a fact added or reviewed does.
+- The 111 baseline blog posts: noted, left alone for now.
 - Sources rule: retailer product pages never go in Sources. Cost guides
   carry one plain "Prices last checked <Month Year> at ..." line under the
   last cost table instead.
@@ -82,9 +94,18 @@ catches the defects the commands produce. Per batch:
 
 ## Next jobs, in order
 
-1. Decide what to do with the 111 baseline blog posts.
-2. Consider moving the closing "For more, see the ..." link sentences into
-   the related-articles component so articles stop ending on a nav line.
+1. Merge claude/more-on-block once Mike says merge.
+2. FunFact repeats: 22 FunFact boxes restate a body sentence nearly
+   verbatim. Prompt at the end of this file.
+3. `/beef-up 6 go` through `/beef-up 9 go` (pick-up sections). Prompt at
+   the end of this file. Batch 10 is optional.
+4. Tighten the closer rule in scripts/check-voice.mjs (count the last two
+   paragraphs, and no article ends on a link sentence), then one pass by
+   series that keeps the sibling sentence with a reason and drops the
+   category and overview sentences the new block now carries. The pill row
+   shape (`[Cost](/..) · [Handling](/..)`) is the fallback where no closing
+   sentence earns its place; allow `•` as well as `·` in the checker first.
+5. The 111 baseline blog posts: noted.
 
 ## The prompt to paste into a new session
 
@@ -141,3 +162,69 @@ check", push the branch, and report: what the batch got right, what you
 fixed with before and after quotes, and anything you left because it was
 in Mike's original text. Then stop and wait for me to say merge.
 ```
+
+## The pick-up prompt, for a fresh session (Opus, medium effort)
+
+Writing and fact-checking here are mechanical against named sources, so
+Opus at medium effort does the batch and its own fact-check agent. Use
+Fable only for the second-eyes check prompt above, and only after the
+batch is pushed.
+
+```
+Read READMEFIRST.md, then CLAUDE.md, then the "Writing an article" section
+of docs/RULES.md, then .claude/commands/beef-up.md. Work on a new branch
+from main named claude/beef-up-batch-6. Never push main unless I say
+merge. Max two agents at a time, one at a time where you can.
+
+Run /beef-up 6 go. The section is "How to pick one up", described per slug
+in the batch 6 table of docs/BEEF_UP_PLAN.md: approach, where the hands
+go, how the body is supported, how the animal goes back down. 120 to 180
+words. Do not repeat the stress signs or session lengths already on the
+page. Ceiling 1,000 body words, 1,100 for the slugs the table marks.
+Verify the way READMEFIRST.md describes: checker on every slug plus the
+strict, link, related-articles, affiliate, and SEO gates; diff each file
+against main so no link target, affiliate link, component, date, tag, or
+existing number changed; then one fact-check agent (Opus) that opens every
+cited URL and classifies each added claim as supported, unsupported,
+misattributed, or contradicted. Fix everything it finds. Sources hold
+facts only: no retailer pages. Push the branch and report before and
+after word counts, sources added, and anything left unfixed. Then stop
+and wait for me to say merge.
+```
+
+Then the same prompt with 7, 8, 9 in place of 6.
+
+## The FunFact prompt, for a fresh session (Opus, low effort)
+
+```
+Read READMEFIRST.md, then CLAUDE.md, then the "Writing an article" section
+of docs/RULES.md. Work on a new branch from main named claude/funfact-repeats.
+Never push main unless I say merge. No agents.
+
+These 22 files carry a <FunFact> box that restates a body sentence nearly
+word for word, which a reader review called the thing that made the page
+look unread:
+
+guides/african-grey-parrot-cost-guide, guides/african-grey-parrot-tank-setup-guide,
+guides/argentine-tegu-cost-guide, guides/bird-pellet-conversion-guide,
+guides/cockatoo-handling-guide, guides/cockatoo-health-issues-guide,
+guides/corydoras-catfish-health-issues-guide, guides/fire-bellied-toad-tank-setup-guide,
+guides/giant-millipede-cost-guide, guides/green-anole-cost-guide,
+guides/herbivorous-reptile-safe-plants-guide, guides/jumping-spider-health-issues-guide,
+guides/milk-snake-handling-guide, guides/oscar-fish-handling-guide,
+guides/red-footed-tortoise-health-issues-guide, guides/russian-tortoise-tank-setup-guide,
+guides/savannah-monitor-cost-guide, guides/savannah-monitor-health-issues-guide,
+guides/stick-insect-cost-guide, guides/stick-insect-tank-setup-guide,
+guides/uromastyx-tank-setup-guide, guides/veiled-chameleon-handling-guide.
+
+For each: read the whole article, then rewrite the FunFact so it carries an
+angle the body does not already state in those words, using only facts
+the body or its Sources already carry. Two sentences, under 50 words, no
+intensifiers, no dashes, no links. If the body leaves nothing to say, cut
+the FunFact. Never edit the body. Do not bump lastUpdated or lastReviewed.
+Run node scripts/check-voice.mjs --slug on each, then --strict. Commit
+"FunFact repeats: 22 boxes", push the branch, and report each file as
+rewritten or cut with the old and new text. Then stop and wait for me to
+say merge.
+```
+

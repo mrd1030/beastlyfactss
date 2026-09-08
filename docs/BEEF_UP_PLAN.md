@@ -76,6 +76,77 @@ them has.
 | giant-millipede-handling-guide | 553 | 0 | Stress signs (curling, secreting, refusing to move). Sources block. |
 | madagascar-hissing-cockroach-handling-guide | 558 | 0 | Stress signs (hissing on approach, fleeing, refusing food). Sources block. |
 
+## Batches 6 to 10: pick-up sections for the hands-on handling guides
+
+An outside reader review of batch 4 said the handling titles promise
+"how to handle" and the pages deliver reading, not holding. A grep for a
+pick-up, scoop, step-up, or lift passage found none in these guides. The
+gap is one section, "How to pick one up": approach, where the hands go,
+how the body is supported, how it goes back down. Sourced the same way as
+batches 1 to 5 (ReptiFiles, LafeberVet, VCA, state agencies), 120 to 180
+words, no repeat of the stress signs the earlier batches added.
+
+Ceiling: 1,000 body words as before, except the four already at the
+ceiling from batch 3 and 4 (cockatoo, ackie, tegu, garter snake), which
+get 1,100. Nothing in those sections was padding, so the section is added,
+not swapped in.
+
+### Batch 6: parrots (4)
+
+| Slug | Words | Sources | Add |
+|---|---|---|---|
+| african-grey-parrot-handling-guide | 498 | 2 | Step-up cue on a finger or perch, never a grab from above. Sources to at least 3. |
+| conure-handling-guide | 682 | 3 | Step-up, where the other hand goes, shoulder rule. |
+| quaker-parakeet-handling-guide | 725 | 2 | Step-up, cage-territorial bird: perch or hand out of the cage first. Sources to at least 3. |
+| cockatoo-handling-guide | 1003 | 6 | Step-up and the toweling a vet uses, when a hand is not the tool. Ceiling 1,100. |
+
+### Batch 7: snakes (5)
+
+| Slug | Words | Sources | Add |
+|---|---|---|---|
+| ball-python-handling-guide | 674 | 1 | Hook tap, lift from mid-body, two points of support, back in tail first. Sources to at least 3. |
+| corn-snake-handling-guide | 577 | 2 | Same shape for a fast juvenile: scoop from below, let it move hand to hand. Sources to at least 3. |
+| milk-snake-handling-guide | 576 | 2 | Scoop from below, musk in the first weeks, the loose grip that keeps it from thrashing. Sources to at least 3. |
+| hognose-snake-handling-guide | 653 | 3 | Pick-up around the bluff: wait out the hiss, lift from mid-body, never from the front. |
+| garter-snake-handling-guide | 901 | 4 | Scoop and support; the musk-and-writhe pick-up and how to hold through it. Ceiling 1,100. |
+
+### Batch 8: lizards (6)
+
+| Slug | Words | Sources | Add |
+|---|---|---|---|
+| ackie-monitor-handling-guide | 994 | 5 | Hand flat in the enclosure, let it climb on, the hand-behind-the-shoulders support. Ceiling 1,100. |
+| argentine-tegu-handling-guide | 999 | 4 | Adult lift: one arm under the chest, one under the pelvis, body against yours, tail free. Ceiling 1,100. |
+| fire-skink-handling-guide | 486 | 1 | Cupped hands low over the substrate for a fast, fossorial skink. Sources to at least 3. |
+| green-iguana-handling-guide | 521 | 2 | Support from below with the tail along the forearm; the whip and the grip that avoids it. Sources to at least 3. |
+| jacksons-chameleon-handling-guide | 515 | 0 | Never pull from a branch: offer a hand or stick and let it walk on. Sources block from scratch. |
+| leaf-tailed-gecko-handling-guide | 499 | 0 | Mostly hands-off: cup, never grab, tail drop risk. Sources block from scratch. |
+
+### Batch 9: shelled and small mammals (7)
+
+| Slug | Words | Sources | Add |
+|---|---|---|---|
+| box-turtle-handling-guide | 578 | 3 | Two hands under the shell, low over a surface, never by a limb or the hinge. |
+| russian-tortoise-handling-guide | 369 | 0 | Two hands under the shell, keep it level, never by a leg. Sources block from scratch. |
+| red-footed-tortoise-handling-guide | 735 | 3 | Same shape for a heavier tortoise; where an adult becomes a two-hand job. |
+| ferret-handling-guide | 722 | 2 | One hand under the chest, one under the hips; when a scruff is and is not appropriate. Sources to at least 3. |
+| flying-squirrel-handling-guide | 739 | 4 | Cupped hands or a bonding pouch, never by the tail. |
+| sugar-glider-handling-guide | 513 | 2 | Cupped hands, pouch, the crab-and-bite phase. Sources to at least 3. |
+| mouse-handling-guide | 862 | 5 | Cup or tunnel, base of the tail only for a second, never the tip. |
+
+### Batch 10: maybe (5, optional)
+
+Species where a keeper does sometimes pick the animal up but the page may
+be right to say not to. Read the page first and skip any where the answer
+is "you do not".
+
+| Slug | Words | Sources | Add |
+|---|---|---|---|
+| hermit-crab-handling-guide | 567 | 3 | Flat palm, shell held by the back, never a claw. |
+| jumping-spider-handling-guide | 414 | 2 | Let it walk on; the tether line and why a fall matters. |
+| whites-tree-frog-handling-guide | 571 | 0 | Wet hands or gloves, cup, minutes not sessions. Sources block from scratch. |
+| pacman-frog-handling-guide | 643 | 3 | Gloves, from behind, the feeding bite. |
+| green-anole-handling-guide | 558 | 0 | Mostly hands-off: cup low, tail drop. Sources block from scratch. |
+
 ## Not in scope, and why
 
 - 10-surprising and fun-facts posts: the format is the length.
