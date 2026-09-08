@@ -1728,6 +1728,66 @@ suggested link to the encyclopedia (no natural sentence slot found this
 pass without adding new prose, which is out of scope for a links-and-
 numbers-only fix).
 
+## Crested gecko (2026-09-08, second pass, after the fixes)
+
+Same nine-page set, re-extracted after the first-pass fixes landed. One
+Sonnet agent, about 93k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | A real command center, actionable, though nearly every line duplicates a deep-dive FAQ. |
+| Encyclopedia | B+ | The rediscovery history earns a read. |
+| Cost | A- | Clear tables, budget numbers to act on today. |
+| Handling | B+ | A real technique and a hard rule. |
+| Health issues | A | Would bookmark it. |
+| Tank setup | B | One number made the reader stop and reread. |
+| Feeding | A- | Honest about what's unsettled. |
+| Enrichment | B+ | Useful but the least urgent page. |
+| Humidity | A- | The most carefully sourced page in the set. |
+
+Set grade: B+. "Deep, mostly consistent, undercut by one internal
+contradiction and a real gap in breeding-adjacent care."
+
+The tank setup guide's own basking-area table cell contradicted itself:
+"82 - 85°F (some sources: 72-75°F to be safe)" gave two unresolved
+target zones in one cell, in an article that elsewhere calls 85°F "a
+hard ceiling with zero exceptions." Fixed to a single reading: 72 to
+75°F as the conservative target, with a note that 82-85°F sits too
+close to the hard ceiling to be the number this article leads with.
+
+No hub-versus-deep-dive numeric disagreement found this pass. One
+unsourced claim repeated twice, "the earliest known captive individuals
+have lived well into their 30s" on both the hub and the cost guide, with
+nothing backing it in either page's Sources block; flagged for Mike as a
+fact-check item rather than fixed (no source to correct it against).
+
+New findings, both fixed: the health issues guide's MBD prevention
+sentence named "a complete crested gecko diet powder" without linking
+the feeding guide that explains it; the handling guide's tail-loss
+prevention sentence mentioned housing crested geckos "singly or in
+carefully matched groups" without linking the tank setup guide's actual
+housing rules. Both now link their sibling guide.
+
+Gaps, checked against the Health and More list before calling them
+real: how to sex a crested gecko (still needed to follow the "never
+house two males" rule), care for a gravid, unmated female beyond "see a
+vet if egg-bound" (no nesting setup or infertile-egg guidance), hatchling
+grow-out enclosure dimensions (only "smaller" is given), and safe
+disinfectants for substrate changes. None are covered anywhere in the
+set or the shared reptile guides; filed in docs/READER_LOG.md.
+
+Trust: the self-contradicting basking cell (fixed) and the unsourced
+"30s" longevity claim (flagged, not fixed). The sentence that most
+convinced the reader, from feeding: "one specific flavor, watermelon, is
+called out as having unusually high acceptance among fussy eaters."
+
+Fixed the same day: the basking-temperature table cell, and two more
+recommended links (health issues to feeding, handling to tank setup).
+
+Open: sexing, gravid-female care, grow-out dimensions, and safe
+disinfectants filed in docs/READER_LOG.md; the unsourced "30s" longevity
+claim left for Mike.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a

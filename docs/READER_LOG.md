@@ -676,6 +676,72 @@ First two changes:
 - **Crested gecko:** what to do about a solitary female laying
   infertile eggs, including whether a lay box is needed.
 - **Crested gecko:** how to choose a healthy individual at purchase.
+- **Crested gecko (second pass):** hatchling grow-out enclosure
+  dimensions (only "smaller" is given anywhere in the set).
+- **Crested gecko (second pass):** safe disinfectants or cleaning
+  products for the enclosure during substrate changes.
+
+## Crested gecko (2026-09-08, second pass)
+
+One Sonnet agent, same nine pages re-extracted after the first-pass
+fixes, about 93k tokens. Full agent output below, unedited.
+
+---
+
+# Crested Gecko Care Set Review
+
+## 1. Page by page
+
+- 00 Hub: Finish it, very actionable, a real command center. B+.
+- 01 Encyclopedia: Finish it, mostly background not action, but the history section earns a read. B+.
+- 02 Cost guide: Finish it, clear tables, budget numbers I can act on today. A-.
+- 03 Handling guide: Finish it, gives me a real technique and a hard rule. B+.
+- 04 Health issues: Finish it, this is the page I'd bookmark. A.
+- 05 Tank setup: Finish it, but one number in it made me stop and reread. B.
+- 06 Feeding guide: Finish it, honest about what's unsettled. A-.
+- 07 Enrichment guide: Finish it, useful but the least urgent page. B+.
+- 08 Humidity guide: Finish it, the most carefully sourced page in the set. A-.
+
+## 2. Hub and encyclopedia
+
+The hub earns its place: it's a router with real numbers pulled straight from each deep dive, useful as a first-week cheat sheet even though nearly every line duplicates a deep-dive FAQ almost word for word. The encyclopedia earns its place too, for different reasons: the rediscovery history (Seipp and Henkel, the Isle of Pines sighting, the founder-population detail) and the wild diet and conservation status appear nowhere else in the set.
+
+One real disagreement: the hub and cost guide both give lifespan flatly as "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s." The encyclopedia hedges the same number: "Wild Lifespan: Not documented (the widely quoted 10-20 years is a captive range; wild longevity for this species has not been studied)." So the encyclopedia's own aside calls the commonly cited range "10-20 years" in the same breath the hub and cost guide assert "15 to 20 years" as settled fact. Nobody sources either number.
+
+## 3. Could I actually keep one after reading all of this
+
+Mostly yes: enclosure, temperature, humidity, feeding schedule, handling timeline, and red-flag symptoms are all here and consistent with each other. Two real gaps remain. First, the tank setup guide says "never house two males together" and "house crested geckos singly or in carefully matched groups," and the feeding guide talks about gravid females laying eggs, but nothing anywhere explains how to sex a crested gecko or what "carefully matched" even means in practice. Second, gravidity is treated only as a reason a healthy female stops eating; there's no page on preparing an unmated female for egg-laying (a nesting substrate, what to do with infertile eggs), even though the set clearly expects this to happen to a solitary pet.
+
+## 4. Overlap and conflict across the deep dives
+
+Temperature, humidity numbers, and the rediscovery story are told three or four times each (hub, encyclopedia, cost guide, handling guide all repeat the 1994 rediscovery). No numbers actually clash between separate deep dives. But the tank setup guide contradicts itself internally: its table lists "Basking area (top of enclosure): 82-85°F (some sources: 72-75°F to be safe)." That's two different target zones sitting in one cell with no resolution, in an article that elsewhere calls 85°F "a hard ceiling with zero exceptions." I'd genuinely not know what number to aim for. The humidity guide does something similar but more honestly: it states its own target as "60 to 80%," then adds "PetMD's care sheet puts the ideal band at 70 to 80%," attributing the second number instead of just dropping it in unlabeled.
+
+## 5. One link per page
+
+- 00 Hub: needs none, it already links everything.
+- 01 Encyclopedia: "Wild Diet: Fruit, nectar, pollen, and small invertebrates" should link to the feeding guide, since I immediately want to know how that becomes captive care.
+- 02 Cost guide: "A hatchling can start smaller in a basic faunarium for around $20 before moving up" should link to the tank setup guide's grow-out section.
+- 03 Handling guide: "house crested geckos singly or in carefully matched groups to avoid cagemate aggression" should link to the tank setup guide's housing rules.
+- 04 Health issues: "feed a complete crested gecko diet powder (Pangea or Repashy are widely used)" should link to the feeding guide.
+- 05 Tank setup: "Not strictly required, since a complete diet powder already supplies vitamin D3" should link to the feeding guide.
+- 06 Feeding guide: "Shedding. Energy-intensive and uncomfortable, appetite commonly dips for a few days" should link to the shared shedding guide.
+- 07 Enrichment guide: "Live insects offered once or twice a week bring out active hunting" should link to the feeding guide's insect schedule.
+- 08 Humidity guide: "Screen tops release humidity quickly" should link to the tank setup guide's enclosure section.
+
+## 6. Trust
+
+The self-contradicting basking range in the tank setup guide is the one thing that made me doubt the set. So did the confident, unsourced "living into their 30s" claim repeated twice with nothing behind it. What convinced me a real keeper wrote parts of this: "one specific flavor, watermelon, is called out as having unusually high acceptance among fussy eaters." Nobody invents that detail; it reads like something learned by trial and error.
+
+## 7. Grade and two fixes
+
+Grade: B+. Deep, mostly consistent, undercut by one internal contradiction and a real gap in breeding-adjacent care. First fix: resolve the basking temperature cell in the tank setup guide to one number. Second fix: add a short section (or a shared-guide entry) on sexing and on caring for a gravid, unmated female.
+
+## Not covered anywhere
+
+- How to sex a crested gecko, needed to follow the "never house two males" rule.
+- Care for a gravid, unmated female beyond "see a vet if egg-bound": no nesting setup or infertile-egg guidance.
+- Dimensions for a hatchling grow-out enclosure (only "smaller" is given).
+- Safe disinfectants or cleaning products for the enclosure during substrate changes.
 
 ## Crested gecko (2026-09-08)
 
