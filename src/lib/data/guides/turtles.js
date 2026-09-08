@@ -214,73 +214,63 @@ Red-footed tortoises do not need to brumate and should not be allowed to get col
     image: "/assets/guides/russian-tortoise.jpg",
     tagline: "The compact, hardy tortoise that can live over 50 years with proper care!",
     funFact: "Russian tortoises are one of the world's most cold-tolerant tortoise species. They can survive sub-zero temperatures in the wild by hibernating (brumating) deep underground for months at a time!",
-    // Rebuilt Sep 2026 from the itemized budget on page 28 of the Russian Tortoise
-    // care package v2.1, which is the researched list. Setup sums to $372-$775 and
-    // annual to $365-$715. The thermostat, the infrared gun and the gram scale are
-    // the lines the old list omitted, and they are exactly the equipment that
-    // prevents the respiratory and shell problems in the health guide.
-    costs: {
-      setup: [
-        { item: "Tortoise table or outdoor pen", low: 95, high: 190 },
-        { item: "Secure high walls (escape-proof)", low: 30, high: 60 },
-        { item: "Strong UVB (T5 HO Arcadia 12%)", low: 60, high: 130 },
-        { item: "Basking bulb", low: 20, high: 40 },
-        { item: "Dimming thermostat, lamp fixture and timer", low: 40, high: 85 },
-        { item: "Infrared temperature gun", low: 18, high: 30 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 30 },
-        { item: "Deep substrate (topsoil/sand or coir/sand mix)", low: 25, high: 60 },
-        { item: "3 hides (warm, cool, moist)", low: 30, high: 70 },
-        { item: "Shallow water dish", low: 10, high: 20 },
-        { item: "Digital gram scale and feeding tile", low: 14, high: 30 },
-        { item: "Calcium and multivitamin supplements (herbivore, no added phosphorus)", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Dark leafy greens and edible weeds", low: 100, high: 200 },
-        { item: "Grass hay (unlimited access)", low: 40, high: 80 },
-        { item: "Supplement replacement (calcium and multivitamin)", low: 20, high: 35 },
-        { item: "Deep substrate replacement (topsoil/sand or coir/sand mix)", low: 40, high: 90 },
-        { item: "UVB bulb replacement", low: 45, high: 90 },
-        { item: "Electricity (heat and lighting)", low: 60, high: 120 },
-        { item: "Annual vet wellness check with fecal test", low: 60, high: 100 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Hygiene and the safe-
+    // plants diet row cite the shared reptile guides in the sidebar's Health
+    // and More list. Reconciled 2026-09-08 after the Russian tortoise set
+    // test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "Colorado bans the species outright, and several other states require a permit. Not banned or restricted almost everywhere else, including Hawaii.", source: "russian-tortoise-legal-guide" },
+        { label: "Enclosure", value: "A 4x2x2 ft tortoise table, about 8 square feet, is the absolute indoor minimum, genuinely a minimum rather than a goal. Sources disagree on the target: at least 12 square feet, or our own functional recommendation of roughly 7x3.5 ft, about 24 square feet.", source: "russian-tortoise-tank-setup-guide" },
+        { label: "Temperature", value: "Basking 95 to 100°F at the surface, cool side in the 70s°F. Night drops to about 60°F are fine, and most homes need no supplemental night heat.", source: "russian-tortoise-tank-setup-guide" },
+        { label: "Humidity", value: "Ambient 30 to 50%, low and dry for this arid species, but a moist hide lined with peat moss for a humid microclimate to hydrate and shed in.", source: "russian-tortoise-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO tube (Arcadia 12% or Zoo Med ReptiSun 10.0), covering a third to half the enclosure, for a basking-area UVI near 3.0 to 4.0. Coil and compact bulbs aren't adequate.", source: "russian-tortoise-tank-setup-guide" },
+        { label: "Substrate", value: "A 50/50 topsoil and coconut coir mix, or a similar sand and loam blend, deep enough to burrow in and kept slightly damp. No pure sand.", source: "russian-tortoise-tank-setup-guide" },
+        { label: "Diet", value: "Unlimited grass hay and a rotation of wild weeds (dandelion, plantain, clover) as the staple, not cultivated grocery greens. Avoid high-oxalate staples like spinach and chard. Fruit minimal to none.", source: "herbivorous-reptile-safe-plants-guide" },
+        { label: "Brumation", value: "Physiologically programmed to brumate 2 to 4 months over winter at 40 to 55°F, but indoor keepers can skip it entirely by maintaining full lighting, heat, and feeding year-round.", source: "russian-tortoise-tank-setup-guide" },
+        { label: "Handling", value: "An observation pet, not one built for regular handling. House males separately, they ram and bully other tortoises. Skilled climber and digger, more of an escape risk than it looks.", source: "russian-tortoise-handling-guide" },
+        { label: "Budget", value: "$50 to $150 for a hatchling ($225 to $400 older captive-bred). $372 to $775 to set up. $365 to $715 a year.", source: "russian-tortoise-cost-guide" },
+        { label: "Adult size", value: "5 to 10 inches." },
+        { label: "Lifespan", value: "40 years or more typical, some individuals reaching 50-plus.", source: "russian-tortoise-cost-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the tortoise out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
-    sections: {
-      housing: "A 4x2 ft indoor tortoise table, about 8 square feet, is the commonly quoted floor for one adult, and a 4x4 ft outdoor enclosure the equivalent outdoors. It is a floor rather than a target, and the sources disagree about how far above it you should aim: ReptiFiles, republished by Zen Habitats, asks for at least 12 square feet of floor space at least a foot high, and our own enclosure guide puts the functional size nearer 7 ft by 3.5 ft. Build to the largest of those you can house, because this is an active species that walks the whole enclosure daily. Outdoor enclosures with burrowing barriers (sunk 12 inches or more underground) are ideal in warm climates. Indoor setups need a strong UVB lamp (T5 HO Arcadia 12%) and a basking spot of 95 to 100 degrees F. Cool ambient of 68 to 78 degrees F. Deep substrate (6 inches or more of a 50/50 topsoil/sand or coconut coir/sand mix) is essential for natural burrowing behavior. Russian tortoises are notorious escape and climb artists. Secure walls 12 inches or more high.",
-      diet: `Russian tortoises are almost entirely herbivorous. The foundation of the diet is unlimited grass hay (Timothy, orchard, or meadow) and a wide variety of dark leafy greens and edible weeds: dandelion greens and flowers, clover, plantain weed, endive, escarole, mustard greens, and collard greens. Weeds and fibrous leafy greens are the most nutritionally appropriate foods and should dominate the diet.
-
-Avoid high-oxalate foods (spinach, beet greens) as staples, high-protein foods (commercial tortoise pellets should not be primary), and all animal protein. Fruits should be minimal, less than 5% of the diet, as high sugar disrupts gut flora and can cause loose droppings and digestive issues. Specialist opinion goes further: the Tortoise Trust's guidance on Mediterranean tortoises, which covers the same arid-habitat pattern, says fruit "should not be given as it frequently leads to digestive upset, intestinal parasite proliferation, and colic," and adds that fruit is high in phosphorus and poor in calcium, the opposite of what this animal needs. Zero fruit is a defensible answer for a Russian tortoise, and under 5% is the outer limit rather than a target.
-
-Dust food with calcium without D3 at most feedings, calcium with D3 twice weekly. Fresh water should always be accessible in a shallow dish - many Russian tortoises appear to drink little but they appreciate the option and some drink more than keepers expect. Weekly soaking in shallow warm water for 20 to 30 minutes supports hydration.`,
-      enrichment: `Russian tortoises are among the most active and personality-rich tortoise species. They explore their entire enclosure and available territory daily, pushing through obstacles, rearranging items, and investigating everything. An enclosure that was "organized" the day before is typically rearranged by the next morning.
-
-Provide varied terrain: rocks, cork bark, logs, slopes, and burrowing opportunities. Outdoor enclosures with natural grass, plantain weed, dandelion, and clover provide the richest diet and enrichment simultaneously - the tortoise grazes throughout the day in a naturalistic setting.
-
-Russian tortoises recognize their keepers and respond to their presence. Many approach confidently for food or interaction. Supervised outdoor free-roaming on pesticide-free grass in warm weather is excellent enrichment and provides invaluable natural sunlight (far superior to any UVB bulb for vitamin D3 synthesis).`,
-      health: `Respiratory infections are one of the most common health problems in Russian tortoises kept in inappropriate conditions - particularly cold, damp indoor setups without adequate UVB or heat. Signs include nasal discharge, open-mouth breathing, and lethargy. Respiratory infections require veterinary antibiotic treatment.
-
-Pyramiding of the shell (raised, bumpy scutes) results from poor diet (excessive protein or fruit), incorrect humidity, and rapid growth rates. Once pyramiding occurs, it is irreversible. Correct diet - primarily hay and fibrous weeds - prevents it.
-
-Hibernation (brumation) is natural for Russian tortoises, though indoor keepers who maintain full lighting, heat, and feeding year-round can choose to keep their tortoise active through winter instead of brumating it. If you do brumate, consult a tortoise-experienced reptile vet for safe hibernation protocols first. Annual veterinary wellness checks are essential - Russian tortoises can live 40 years or more, with some individuals reaching 50-plus, and deserve proactive healthcare for that lifetime.`,
-      checklist: [
-        "4x4 ft outdoor OR 4x2 ft indoor tortoise table",
-        "Strong UVB (T5 HO Arcadia 12%)",
-        "Basking bulb (95 to 100 degrees F hot spot)",
-        "Deep substrate (6 inch+ topsoil/sand or coir/sand mix)",
-        "Secure 12 inch+ high walls (escape and climb-proof)",
-        "Calcium + multivitamin supplements",
-        "Dark leafy greens + edible weeds daily",
-        "Unlimited grass hay",
-        "Shallow water dish (changed weekly)",
-        "Reptile vet with tortoise experience",
+    emergencyCard: {
+      source: "russian-tortoise-health-issues-guide",
+      callNow: [
+        "Wheezing, nasal discharge, open-mouth breathing, or lethargy (respiratory infection, does not resolve on its own)",
+        "Soft, discolored, or foul-smelling patches on the shell (shell rot, can progress to life-threatening septicemia)",
+        "Watery, jelly-like urine, or straining to urinate",
+        "A soft or deformed shell with weak limbs",
       ],
+      vetLine: "A reptile-experienced vet, found before you need one. Run a fecal test on any newly acquired tortoise regardless of symptoms; respiratory infection needs antibiotics and doesn't wait.",
     },
+    routes: [
+      { slug: "russian-tortoise-cost-guide", line: "$50 to $400 for the tortoise, $372 to $775 to set up, and why the 40-plus year lifespan should decide the purchase." },
+      { slug: "russian-tortoise-tank-setup-guide", line: "The real floor target beyond the 8 sq ft minimum, the 95-100°F basking spot, low ambient humidity with a moist hide, and the brumation decision indoor keepers get to make." },
+      { slug: "russian-tortoise-handling-guide", line: "Why this is an observation pet, the talented climbing and digging that makes escapes easy, and why males need separate enclosures." },
+      { slug: "russian-tortoise-health-issues-guide", line: "Metabolic bone disease, respiratory infection, shell rot, pyramiding, parasites, and the kidney infection specific to this genus." },
+      { slug: "russian-tortoise-enrichment-guide", line: "Deep diggable substrate, scatter feeding over a bowl, and why secure outdoor time is the richest enrichment available." },
+    ],
+    buyList: [
+      "4x2 ft (or larger) open-top tortoise table",
+      "T5 HO UVB fixture and bulb (Arcadia 12% or Zoo Med ReptiSun 10.0)",
+      "Halogen basking bulb and a dimming thermostat",
+      "Infrared temperature gun",
+      "Digital probe thermometer and hygrometer",
+      "Deep topsoil/coconut coir substrate",
+      "3 hides (warm, cool, moist)",
+      "Shallow water dish, feeding tile, and a digital gram scale",
+      "Calcium (no added phosphorus) and multivitamin supplements",
+    ],
     faqs: [
-      { q: "How long do Russian tortoises live?", a: "40 years or more in captivity, with some individuals reaching 50-plus. This is one of the most important facts to understand before acquiring one - a Russian tortoise purchased today may still be alive when passed down to the next generation. Annual wellness checks with a tortoise-experienced veterinarian are essential for this level of commitment." },
-      { q: "What do Russian tortoises eat?", a: "Dark leafy greens and edible weeds form the dietary core: dandelion greens and flowers, clover, plantain weed, endive, escarole, mustard greens, and collard greens. Unlimited grass hay should always be available. Avoid high-protein foods, excessive fruit, and commercial tortoise pellets as primary food. The diet should be high-fiber and very low in protein and sugar." },
       { q: "Do Russian tortoises need to hibernate?", a: "It's natural for them, but not mandatory for an indoor pet - keepers who maintain full lighting, heat, and feeding year-round can choose to keep their tortoise active through winter instead. If you do brumate, the dormancy period typically runs 2 to 4 months over winter. Consult a tortoise-experienced reptile veterinarian for safe hibernation protocols before your tortoise's first winter." },
-      { q: "How big do Russian tortoises get?", a: "5 to 10 inches shell length, making them one of the smaller tortoise species commonly kept as pets. Males are usually smaller than females. Their relatively modest size makes them more manageable than larger species like sulcatas, but they still require spacious outdoor enclosures with deep burrowing substrate in warm climates." },
       { q: "Can Russian tortoises live outdoors?", a: "Yes, in appropriate climates - and for many keepers, outdoor housing is the ideal long-term solution. They need an outdoor enclosure with walls buried 12 inches or more underground (they burrow and escape constantly), natural sunlight (far superior to any UVB bulb for vitamin D3 synthesis), access to edible weeds, and a sheltered area for cool or wet weather." },
-      { q: "Are Russian tortoises good pets for beginners?", a: "Among the more manageable tortoises for a first-timer, since they stay a relatively compact 5 to 10 inches, but this is still a 40-plus year commitment that needs real outdoor space in a warm climate or a substantial indoor tortoise table. Go in expecting to plan for decades, not a starter pet in the usual sense." },
       { q: "How does a Russian tortoise compare to other pet tortoises like the sulcata or red-footed?", a: "Russian tortoises are the smallest and hardiest of the three, built for cold, dry steppe and needing real brumation most winters. The [red-footed tortoise](/guides/red-footed-tortoise/) is a size step up and comes from humid tropical South America instead, so it wants high humidity rather than a hibernation box. The [sulcata tortoise](/guides/sulcata-tortoise/) dwarfs both, eventually needing a yard rather than a tortoise table. If a Russian tortoise's small size appeals but you'd rather skip winter brumation, a red-footed tortoise is worth a look." },
     ],
   },
