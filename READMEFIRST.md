@@ -48,9 +48,10 @@ over anything here.
   gate passes. The 111 baseline slugs are one-off blog posts; they are the
   only articles still failing, and nobody has decided whether to pass them.
 - Display fixes: done and on main. The body H1 renders nothing
-  (src/components/mdx/DemotedH1.jsx), the excerpt block is skipped when the
-  lede repeats it (`ledeMatchesExcerpt` from scripts/sync-articles.js), and
-  FAQ answers cannot carry a markdown link (`faq-link` checker rule).
+  (src/components/mdx/DemotedH1.jsx), the excerpt block no longer renders
+  on article pages at all (branch claude/more-on-block; the
+  `ledeMatchesExcerpt` skip caught 196 of 435 near-copies, so the block
+  went), and FAQ answers cannot carry a markdown link (`faq-link` rule).
 - Beef-up: batches 1 to 5 are on main, each fact-checked against every
   cited source and checked by a second session. Three batch 5 articles
   (toad, millipede, cockroach) carry two sources, not three, by decision.
