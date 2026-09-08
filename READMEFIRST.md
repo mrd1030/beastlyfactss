@@ -46,6 +46,8 @@ over anything here.
 | Related-links wiring | src/lib/data/relatedArticles.js, enforced by scripts/check-related-articles.mjs |
 | Firsthand byline notes | src/lib/data/firsthand.js |
 | Care package sources | content/CAREPACKAGE Guides/source/*.html |
+| Reader set test write-ups, per species | docs/READER_REVIEWS.md |
+| Reader set test raw output and the running "not covered anywhere" list | docs/READER_LOG.md |
 
 ## State as of 2026-09-08 (evening)
 
@@ -151,14 +153,15 @@ catches the defects the commands produce. Per batch:
    stranded (the sibling-link exception in RULES), fragments and
    placeholder cells, unsourced claims. About 70k tokens per species. Do
    the bearded dragon and rabbit findings first, they are already in the
-   file. Bearded dragon and rabbit: done 2026-09-08, next is any species
-   with a care package (leopard gecko, goldfish, axolotl, ...).
+   file. Bearded dragon, rabbit, and leopard gecko: done 2026-09-08, next
+   is any species with a care package (goldfish, axolotl, ...). Raw
+   reader output and the running "not covered anywhere" list are in
+   docs/READER_LOG.md, one entry per species.
 6. Hub reconciliation, one species per session, with its set test and
    fixes in the same session: the species prompt at the end of this file
-   (Sonnet, default effort). Rabbit, bearded dragon done and on main;
-   leopard gecko on branch claude/hub-leopard-gecko (hub and fixes
-   pushed, review not filed, not merged). Next: goldfish, axolotl, then
-   the rest of the species with a care package, then the others. Legacy
+   (Sonnet, default effort). Rabbit, bearded dragon, and leopard gecko
+   done and on main. Next: goldfish, axolotl, then the rest of the
+   species with a care package, then the others. Legacy
    hubs keep rendering the old care sheet until then. Dogs and cats
    last. Rabbit difficulty settled at Beginner/Intermediate on the
    site's legend and rabbit lifespan at 8 to 12 years indoors (House
@@ -324,6 +327,12 @@ dashes:
    set that most convinced you a person who keeps these animals wrote it.
 7. Grade the set A to F with one line of reason, and the two changes you
    would make first.
+8. Last, a separate section labeled "Not covered anywhere": anything you
+   flagged as missing in question 3 that still has no answer after you
+   check it against the Health and More list in the sidebar (the shared
+   class guides, not just this species' own pages). List each one in one
+   line. If everything you flagged is actually covered somewhere in the
+   set, say "None" here rather than skip the section.
 ```
 
 
@@ -331,9 +340,8 @@ dashes:
 
 One species per session. Paste this, replacing <species> with the guide id
 (the folder prefix in content/guides, for example leopard-gecko) and
-<Animal> with the name. Leopard gecko is mid-flight on branch
-claude/hub-leopard-gecko: hub and fixes are pushed, the review is not yet
-filed in docs/READER_REVIEWS.md, nothing is merged.
+<Animal> with the name. Rabbit, bearded dragon, and leopard gecko are done
+and merged to main. Next up: goldfish.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
