@@ -153,12 +153,16 @@ These are powerful animals. A tame adult tegu can still cause injury unintention
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
     // hub keeps no number of its own. Lifespan is the exception: it comes
-    // from the encyclopedia entry, which no deep dive repeats. Reconciled
+    // from the encyclopedia entry, which no deep dive repeats. Day one,
+    // shedding, hygiene, and power outage cite the shared reptile guides in
+    // the sidebar's Health and More list, which the set test reported as
+    // gaps because the reader never opened them. Reconciled
     // 2026-09-08 after the bearded dragon set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
+        { label: "Day one", value: "A new dragon is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "4x2x2 ft, about 120 gallons, and that is the adult minimum, not an upgrade for later.", source: "bearded-dragon-tank-setup-guide" },
         { label: "Basking surface", value: "95 to 110°F for adults, 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the surface itself.", source: "bearded-dragon-tank-setup-guide" },
         { label: "Rest of the gradient", value: "Warm side air about 90°F, cool side 75 to 85°F, nights 65 to 75°F. Heat overnight only if the room falls below 65°F, with a ceramic heat emitter.", source: "bearded-dragon-tank-setup-guide" },
@@ -173,6 +177,9 @@ These are powerful animals. A tame adult tegu can still cause injury unintention
         { label: "Budget", value: "$400 to $800 to set up, $50 to $108 a month, and an emergency fund of a few hundred dollars.", source: "bearded-dragon-cost-guide" },
         { label: "Adult size", value: "18 to 22 inches nose to tail tip.", source: "bearded-dragon-growth-weight-checks-guide" },
         { label: "Lifespan", value: "10 to 15 years in captivity." },
+        { label: "Shedding", value: "Raise humidity toward the high end during the shed, give rough surfaces to rub on, and never pull loose skin. A 30-minute chin-deep soak at cage temperature loosens retained shed.", source: "reptile-shedding-complete-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the dragon out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "65°F is the normal night low. Below 60°F for more than a day or two, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {

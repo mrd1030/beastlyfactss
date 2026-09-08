@@ -16,7 +16,7 @@
 // of the stripping, not the pages.
 import fs from 'node:fs';
 import path from 'node:path';
-import { getDeepDiveSiblings, getRelatedArticleSlugs } from '../src/lib/data/relatedArticles.js';
+import { getDeepDiveSiblings, getRelatedArticleSlugs, isSharedDeepDiveArticle } from '../src/lib/data/relatedArticles.js';
 
 const species = process.argv[2];
 if (!species) { console.error('usage: node scripts/reader-extract.mjs <species-id> [out-dir]'); process.exit(1); }
@@ -26,6 +26,20 @@ fs.mkdirSync(outDir, { recursive: true });
 const meta = JSON.parse(fs.readFileSync('src/lib/generated/mdx-meta.json', 'utf8')).filter((p) => p.slug);
 const posts = meta.map((p) => ({ ...p, _id: p.slug, id: p.slug }));
 const titleOf = (slug) => posts.find((p) => p.slug === slug)?.title || slug;
+// The sidebar is two lists: Deep Dive (this species' own articles) and
+// Health and More (guides shared across the class: quarantine, shedding,
+// heat stress, vet trips). Two set tests reported gaps that the shared list
+// covered, because it was rendered as bare titles inside one list and the
+// reader never opened them. Each shared title now carries its excerpt.
+function renderLists(slugs) {
+  const own = slugs.filter((s) => !isSharedDeepDiveArticle(s));
+  const shared = slugs.filter((s) => isSharedDeepDiveArticle(s));
+  const excerptOf = (slug) => posts.find((p) => p.slug === slug)?.excerpt || '';
+  return '\n\nDeep Dive list shown on this page (sidebar on desktop, after the FAQ on phones), this species\' own articles:\n'
+    + (own.length ? own.map((sl) => '- ' + titleOf(sl)).join('\n') : '- none')
+    + '\n\nHealth and More list shown on this page (sidebar, under the Deep Dive), guides shared across the class, each with the one-line summary the site shows:\n'
+    + (shared.length ? shared.map((sl) => `- ${titleOf(sl)}${excerptOf(sl) ? ': ' + excerptOf(sl) : ''}`).join('\n') : '- none');
+}
 
 // ---------- MDX body to reader text ----------
 const stripTags = (s) => s.replace(/<[^>]+>/g, '');
@@ -65,10 +79,10 @@ function renderBody(body, slug) {
   text = text.replace(/^---$/gm, '');
   text = text.replace(/<[^>]+>/g, '');
   text = text.replace(/\n{3,}/g, '\n\n').trim();
-  const dd = getDeepDiveSiblings(slug, posts, { limit: 24 }).map(titleOf);
+  const dd = getDeepDiveSiblings(slug, posts, { fromGuideId: species, limit: 40 });
   return text
     + '\n\n---\nInternal links in the body (anchor -> page):\n' + (links.length ? links.map((l) => '- ' + l).join('\n') : '- none')
-    + '\n\nDeep Dive list shown on this page (sidebar on desktop, after the FAQ on phones):\n' + (dd.length ? dd.map((t) => '- ' + t).join('\n') : '- none');
+    + renderLists(dd);
 }
 
 function frontmatterFaqs(fm) {
@@ -128,20 +142,20 @@ function renderRouterHub(h) {
 }
 
 if (hub) {
-  const dd = getRelatedArticleSlugs(species, posts).map(titleOf);
+  const dd = getRelatedArticleSlugs(species, posts);
   const text = `CARE GUIDE HUB PAGE: ${hub.name}\n(the page the site's Guides navigation lands on; cards, tables, and short sections rendered from structured data${hub.layout === 'router' ? '; a router hub: first-week numbers, emergency card, one line per deep dive, buy list' : ''})\n\n`
     + (hub.layout === 'router' ? renderRouterHub(hub) : renderValue(hub))
-    + '\n\n---\nDeep Dive list shown on this page (sidebar on desktop):\n' + (dd.length ? dd.map((t) => '- ' + t).join('\n') : '- none')
-    + (enc ? `\n\nLinks on this page: the ${hub.name} encyclopedia page, every Deep Dive title above.` : '');
+    + '\n\n---' + renderLists(dd)
+    + (enc ? `\n\nLinks on this page: the ${hub.name} encyclopedia page, every title in both lists above.` : '');
   fs.writeFileSync(path.join(outDir, '00-care-guide-hub.txt'), text + '\n');
   written.push('00-care-guide-hub.txt');
 }
 if (enc) {
-  const dd = getRelatedArticleSlugs(enc.guideId || species, posts).map(titleOf);
+  const dd = getRelatedArticleSlugs(enc.guideId || species, posts);
   const text = `ENCYCLOPEDIA PAGE: ${enc.name || species}\n(natural history and quick facts, rendered from structured data)\n\n`
     + renderValue(enc)
-    + '\n\n---\nDeep Dive list shown on this page (sidebar on desktop):\n' + (dd.length ? dd.map((t) => '- ' + t).join('\n') : '- none')
-    + (hub ? `\n\nLinks on this page: the ${hub.name} care guide hub, every Deep Dive title above.` : '');
+    + '\n\n---' + renderLists(dd)
+    + (hub ? `\n\nLinks on this page: the ${hub.name} care guide hub, every title in both lists above.` : '');
   fs.writeFileSync(path.join(outDir, '01-encyclopedia.txt'), text + '\n');
   written.push('01-encyclopedia.txt');
 }

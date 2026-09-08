@@ -782,9 +782,10 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
     funFact: "Rabbits can jump up to 4 feet high and run up to 25 mph. They're surprisingly athletic!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
-    // hub keeps no number of its own. The one exception is the heat row: no
-    // rabbit deep dive covers heat yet, so it carries the old hub line with
-    // no source until one does. Reconciled 2026-09-08 after the rabbit set
+    // hub keeps no number of its own. The last four rows cite the shared
+    // small-mammal guides in the sidebar's Health and More list (heat,
+    // nails, molting, vet trips), which the set tests kept reporting as
+    // gaps because the reader never opened them. Reconciled 2026-09-08 after the rabbit set
     // test (docs/READER_REVIEWS.md) found the old hub contradicting the deep
     // dives on the vet clock, greens, hay share, lifespan, and vet schedule.
     layout: "router",
@@ -802,7 +803,10 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
         { label: "Spay or neuter", value: "$150 to $500 or more, budgeted separately. Adoption fees often include it.", source: "rabbit-cost-guide" },
         { label: "Budget", value: "$150 to $600 to set up, $60 to $100 a month, and a $500 to $1,000 emergency fund.", source: "rabbit-cost-guide" },
         { label: "Lifespan", value: "7 to 10 years indoors. Outdoor rabbits average about 2.", source: "rabbit-tank-setup-guide" },
-        { label: "Heat", value: "Rabbits can die of heatstroke above 85 degrees F. Keep them out of direct sun and drafts." },
+        { label: "Heat", value: "Comfortable at 61 to 72°F. Risk climbs once the room passes about 80°F. Indoors, a draft or damp bedding causes more trouble than a cool room.", source: "small-mammal-temperature-heat-stress-guide" },
+        { label: "Nails", value: "A trim roughly every 6 to 8 weeks, with styptic powder within reach before you start, one or two nails per sitting for a rabbit that fights it.", source: "small-mammal-grooming-nails-molting-guide" },
+        { label: "Molting", value: "A rabbit cannot vomit swallowed fur, so a heavy molt is a GI risk: brush through it and keep the hay in front of them.", source: "small-mammal-grooming-nails-molting-guide" },
+        { label: "Vet trips", value: "A sturdy hard-sided carrier the rabbit cannot chew through, secured in the car, with the cage mate along and food in front of them.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
     emergencyCard: {

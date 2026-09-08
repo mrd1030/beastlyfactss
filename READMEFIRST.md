@@ -102,7 +102,11 @@ over anything here.
   set tests asked for (tank setup diet sections cut to pointers, the
   calcium schedule by age moved into the bearded dragon feeding guide,
   the eight recommended links, the two enrichment fragments, the cost
-  table cell).
+  table cell). Both hubs also carry rows sourced to the shared Health and
+  More guides (heat, nails, molting, vet trips; quarantine, shedding,
+  hygiene, power outage), because both set tests reported those as gaps
+  the sidebar already covered; the extractor now shows that list with
+  excerpts so the next reader sees it.
 
 ## How a batch gets verified (do this every time)
 

@@ -7,6 +7,12 @@ at the bottom of that animal's section with the commit that fixed them.
 
 ## How a test runs
 
+The extract shows the sidebar as two lists, Deep Dive (the species' own
+articles) and Health and More (shared class guides, each with its excerpt).
+The first three set tests showed one list of bare titles, and every reader
+reported gaps the shared guides already covered. Read the gaps section of a
+review against the Health and More list before treating a gap as real.
+
 - Extract the set with `node scripts/reader-extract.mjs <species-id> <out-dir>`.
   It writes the care guide hub, the encyclopedia entry, and every
   `<species>-*-guide.mdx` as plain text, with ComparisonTable rows as a
@@ -190,7 +196,13 @@ across hub, encyclopedia, and comparison; then the four cross-links
 (feeding to brumation, enrichment to eggs, handling to health, comparison
 to cost).
 
-Open: everything above except the emergency card.
+Open: everything above except the emergency card, and the gaps: day one
+and quarantine, shedding, cleaning and hygiene, and the power-outage
+floor are all covered by the shared reptile guides in the sidebar's
+Health and More list. Same extractor blind spot as the rabbit third pass,
+same fix: the extractor shows the shared list with excerpts, and the hub's
+first-week card carries a day one, shedding, hygiene, and power outage row
+sourced to those guides. Finding a reptile vet is still uncovered.
 
 ## Rabbit (2026-09-08, first pass, before the extractor existed)
 
@@ -464,7 +476,14 @@ Reader's two changes: reconcile the alfalfa cutoff, lifespan, difficulty,
 and the emergency fund against the $1,500 workup; then cover what the buy
 list already sold (nails, carrier, molting, heat).
 
-Open: everything above except the hub source slip.
+Open: everything above except the hub source slip, and the gaps: nails,
+carrier and car travel, molting, and heat are all covered by the shared
+small-mammal guides in the sidebar's Health and More list (grooming, vet
+trips, heat stress). The reader never opened them because the extract
+listed them as bare titles inside one Deep Dive list. The extractor now
+shows the two lists separately with each shared title's excerpt, and the
+hub's first-week card carries a heat, nails, molting, and vet trips row
+sourced to those guides.
 
 ## Single-article reads (2026-09-08, text only)
 

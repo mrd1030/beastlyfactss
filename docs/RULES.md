@@ -147,7 +147,11 @@ third care sheet.
   No housing, diet, enrichment, or health prose, no cost tables. The hub
   keeps no figure of its own; a number changes in the deep dive and the
   hub follows. The rare row no deep dive covers (rabbit heat, lifespan)
-  carries no source and is a gap to fill in the deep dives.
+  carries no source and is a gap to fill in the deep dives. Rows may cite
+  the shared class guides in the sidebar's Health and More list (heat
+  stress, grooming, vet trips, quarantine, shedding, hygiene, the
+  emergency plan) the same way: those pages answer what every set test
+  reported as a gap, and a hub row is how a reader finds out they exist.
 - `node scripts/check-species-numbers.mjs <species>` lists every topic
   where the hub, encyclopedia entry, and deep dives state different
   figures, each with its sentence. Run it before and after touching a
