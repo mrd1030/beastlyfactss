@@ -1378,6 +1378,66 @@ reptile vet) and two are new:
   quarantine guide covers isolation, not the feeding restart.
 - What to do if the snake gets out of the enclosure and into the room.
 
+## Ball Python (2026-09-08, species check)
+
+The check prompt run on branch claude/hub-ball-python against main
+before merging. Hub: every first-week row's numbers are in the source
+it names (the Temperatures row reads the tank setup table's "88 - 92°F",
+"75 - 80°F", and "72 - 75°F" rows), the emergency card is the health
+guide's five bullets, seven own routes and no shared ones, no prices in
+the buy list, three FAQs verbatim, Intermediate on both the hub and the
+encyclopedia. Voice warnings unchanged on all seven touched slugs;
+every gate and eslint pass. The encyclopedia checker commit on the
+branch was left out of the merge, since the encyclopedia session
+carries a newer version of the same file.
+
+Fixed before merging, before and after:
+
+- Cost guide FAQ. The second pass had turned "A 40-gallon glass minimum
+  runs $70 to $200, while a 4x2x2 ft PVC enclosure runs $100 to $450"
+  into "A 4x2x2 ft enclosure, the adult standard, runs $70 to $200 in
+  glass and $100 to $450 in PVC", which moved the 40-gallon price onto
+  a 4x2x2 glass build the cost table does not price. Now: "A 40-gallon
+  glass tank runs $70 to $200 but is sized for a juvenile; the 4x2x2 ft
+  PVC enclosure an adult needs runs $100 to $450" (tank setup gives
+  36x18x18 as the juvenile size).
+- Cost guide: "[What that enclosure has to hold], and how big the adult
+  standard is, decides which of these lines you pay." existed to carry
+  a link and talked about the table. Cut; the link now sits on the
+  existing "humidity is the detail that makes or breaks a ball python
+  setup".
+- Enrichment guide: "What those hides sit inside, and the [temperatures
+  they need to bracket], is the other half of the same decision." Same
+  problem, cut; the link now sits on "warm side and one on the cool
+  side". And "Water matters at the end of the shed cycle more than
+  through it" became "Humidity matters at the very end of a shed, not
+  all the way through it", which is what the linked shedding guide
+  says.
+- Health guide: "which is why a respiratory infection almost always
+  has an enclosure problem behind it" was a stronger claim than the
+  page's own cause list (low temperature, humidity, a dirty enclosure,
+  or stress). Cut.
+- vs boa constrictor, the conflict both passes left open. Table row
+  "40-50 gallon range" and "75+ gallons, as long as the snake" became
+  "4x2x2 ft (roughly 120 gallons), the current standard" and "6 to 8 ft
+  long, 2 to 3 ft wide, about 10 square feet of floor"; the prose
+  "stay comfortable in roughly a 50-gallon enclosure for the rest of
+  their life" became "are done growing inside a 4x2x2 ft enclosure, the
+  current adult standard, for the rest of their life", and the boa's
+  "something closer to a 120-gallon enclosure" became "an enclosure 6
+  to 8 feet long and 2 to 3 feet wide". Both figures come from the two
+  tank setup guides, each sourced to ReptiFiles; PetMD's ball python
+  care sheet (in this guide's Sources) gives 40 gallons as a floor
+  with "the largest habitat possible", not a standard, so the pages do
+  not disagree. The two affiliate links moved to the products those
+  guides already use (the 4x2x2 PVC enclosure, the 6x2x2 PVC
+  enclosure); the 36x18x18 and 48x24x24 products are no longer linked
+  from this page. lastUpdated bumped.
+
+Kept: the health guide's "several weeks to months" to "for months",
+sourced through the quarantine guide to Merck's 3 to 6 months. Verdict:
+fixed on the branch, merged.
+
 ## Single-article reads (2026-09-08, text only)
 
 Earlier single-page reads, kept for the record. Grades: tegu handling A-,
@@ -1509,3 +1569,10 @@ unsourced "about half of captive leopard geckos may carry it."
   enrichment guide's seoDescription reads 3 to 4 hides like its FAQ.
   Left as Sonnet wrote them: the goldfish feeding FAQ and the axolotl
   enrichment FAQ.
+- 2026-09-08, ball python species check (merged with the branch): the
+  cost FAQ's enclosure prices back on the sizes the cost table prices,
+  two link-only sentences cut with their links moved onto existing
+  sentences, one overstated respiratory-infection claim cut, and the vs
+  boa constrictor enclosure row and prose reconciled to the two tank
+  setup guides (4x2x2 ft for the ball python, 6 to 8 ft long for the
+  boa) with the affiliate links moved to those guides' products.
