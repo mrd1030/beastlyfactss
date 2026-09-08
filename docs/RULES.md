@@ -132,6 +132,37 @@ snapshot, not a quote."
 - The inbound-link audit is a ratchet: the thin-page budget only goes down, so
   no new page ships that nothing links to.
 
+## Hubs: the deep dives own the numbers
+
+Decided 2026-09-08 after the rabbit set test found the care guide hub
+contradicting its own deep dives on the vet clock, greens, hay share,
+lifespan, and vet schedule. The hub is a router and a storefront, not a
+third care sheet.
+
+- A reconciled hub (`layout: "router"` in src/lib/data/guides/*.js) carries:
+  a first-week card of numbers, each copied word for word from the deep
+  dive named in its `source` and linked to it; an emergency card copied
+  from the health guide's call-the-vet list; one routing sentence per deep
+  dive; a buy list with no prices; three FAQs copied from the deep dives.
+  No housing, diet, enrichment, or health prose, no cost tables. The hub
+  keeps no figure of its own; a number changes in the deep dive and the
+  hub follows. The rare row no deep dive covers (rabbit heat, lifespan)
+  carries no source and is a gap to fill in the deep dives.
+- `node scripts/check-species-numbers.mjs <species>` lists every topic
+  where the hub, encyclopedia entry, and deep dives state different
+  figures, each with its sentence. Run it before and after touching a
+  species set. Advisory: a minimum and an exercise space are two figures,
+  not a conflict, and the reviewer decides.
+- Care packages are sold ($8.99) and never printed free. The hub's print
+  icon prints two free cards only, the emergency card and the setup
+  checklist (buy list plus first-week numbers), with the package name and
+  price in the footer. It only appears on hubs that have an emergency
+  card. The package sell card sits at the top of a router hub's main
+  column; legacy hubs keep it in the sidebar.
+- Legacy hubs (every species not yet reconciled) still render the old
+  care sheet and have no print button. Reconcile one species at a time,
+  after its set test, and dogs and cats last.
+
 ## Affiliate
 
 - Grep affiliateProducts.js for the exact existing link, never from memory.

@@ -89,6 +89,20 @@ over anything here.
   last cost table instead.
 - Care packages: analyzed, not edited. Leaner than the site on
   intensifiers (1.2 per 1,000 words). No action planned.
+- Hubs, 2026-09-08 (branch claude/hub-rabbit-bd, on top of
+  claude/reader-tests): the rabbit and bearded dragon hubs are router
+  hubs (RULES, Hubs): first-week numbers copied from the deep dives with
+  a link per row, emergency card from the health guide, one line per
+  deep dive, buy list without prices, three copied FAQs, package sell
+  card at the top. The whole-guide print modal is gone from every hub;
+  the print icon (router hubs only) prints the emergency card and the
+  setup checklist. src/pages/GuideDetail.jsx renders both shapes.
+  scripts/check-species-numbers.mjs lists conflicting figures per
+  species. The rabbit and bearded dragon deep dives got the fixes the
+  set tests asked for (tank setup diet sections cut to pointers, the
+  calcium schedule by age moved into the bearded dragon feeding guide,
+  the eight recommended links, the two enrichment fragments, the cost
+  table cell).
 
 ## How a batch gets verified (do this every time)
 
@@ -133,13 +147,19 @@ catches the defects the commands produce. Per batch:
    stranded (the sibling-link exception in RULES), fragments and
    placeholder cells, unsourced claims. About 70k tokens per species. Do
    the bearded dragon and rabbit findings first, they are already in the
-   file.
-6. Hub reconciliation, site-wide: every care guide hub carries numbers
-   (cost tables, hay share, vet triggers, exercise hours) written before
-   the deep dives and never checked against them. The rabbit hub's cost
-   data even says so in a code comment. Either the hub takes its numbers
-   from the deep dives or it stops carrying numbers and routes. Data, not
-   MDX: src/lib/data/guides/*.js.
+   file. Bearded dragon and rabbit: done 2026-09-08, next is any species
+   with a care package (leopard gecko, goldfish, axolotl, ...).
+6. Hub reconciliation, one species at a time, after its set test: rewrite
+   the hub entry in src/lib/data/guides/*.js to the router shape (RULES,
+   Hubs; the rabbit and bearded dragon entries are the model), with
+   every number copied from the deep dive it cites. Run
+   `node scripts/check-species-numbers.mjs <species>` before and after.
+   Legacy hubs keep rendering the old care sheet until then. Dogs and
+   cats last. Open questions Mike has not answered: whether the rabbit
+   difficulty label should read Intermediate (changed from
+   Beginner/Intermediate on the reader's finding; easy to revert), and
+   whether the legacy hubs should lose their print button before they
+   are reconciled (they have, since the whole-guide print is gone).
 7. The 111 baseline blog posts: noted.
 
 ## The prompt to paste into a new session

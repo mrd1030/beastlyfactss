@@ -115,10 +115,22 @@ const hub = guides.find((g) => g.id === species);
 const enc = animals.find((a) => a.id === species || a.guideId === species);
 const written = [];
 
+function renderRouterHub(h) {
+  const out = [];
+  const base = Object.fromEntries(Object.entries(h).filter(([k]) => !['layout', 'firstWeek', 'emergencyCard', 'routes', 'buyList', 'faqs'].includes(k)));
+  out.push(renderValue(base));
+  out.push('\nThe first week:\n' + (h.firstWeek.intro || '') + '\n' + h.firstWeek.rows.map((r) => `- ${r.label}: ${r.value}${r.source ? ` (link: ${titleOf(r.source)})` : ''}`).join('\n'));
+  if (h.emergencyCard) out.push('\nEmergency card (call the vet now if you see any of these):\n' + h.emergencyCard.callNow.map((x) => '- ' + x).join('\n') + (h.emergencyCard.vetLine ? '\n' + h.emergencyCard.vetLine : '') + (h.emergencyCard.source ? `\n(link: ${titleOf(h.emergencyCard.source)}; a Print button prints this card and the setup checklist)` : ''));
+  out.push('\nWhere to go next (each title is a link):\n' + h.routes.map((r) => `- ${titleOf(r.slug)}: ${r.line}`).join('\n'));
+  if (h.buyList) out.push('\nWhat to buy (no prices; the cost guide is linked under the list):\n' + h.buyList.map((x) => '- ' + x).join('\n'));
+  if (h.faqs) out.push('\nFAQ:\n' + h.faqs.map((f) => `Q: ${f.q}\nA: ${f.a}`).join('\n\n'));
+  return out.join('\n');
+}
+
 if (hub) {
   const dd = getRelatedArticleSlugs(species, posts).map(titleOf);
-  const text = `CARE GUIDE HUB PAGE: ${hub.name}\n(the page the site's Guides navigation lands on; cards, tables, and short sections rendered from structured data)\n\n`
-    + renderValue(hub)
+  const text = `CARE GUIDE HUB PAGE: ${hub.name}\n(the page the site's Guides navigation lands on; cards, tables, and short sections rendered from structured data${hub.layout === 'router' ? '; a router hub: first-week numbers, emergency card, one line per deep dive, buy list' : ''})\n\n`
+    + (hub.layout === 'router' ? renderRouterHub(hub) : renderValue(hub))
     + '\n\n---\nDeep Dive list shown on this page (sidebar on desktop):\n' + (dd.length ? dd.map((t) => '- ' + t).join('\n') : '- none')
     + (enc ? `\n\nLinks on this page: the ${hub.name} encyclopedia page, every Deep Dive title above.` : '');
   fs.writeFileSync(path.join(outDir, '00-care-guide-hub.txt'), text + '\n');

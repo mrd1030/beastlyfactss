@@ -150,67 +150,80 @@ These are powerful animals. A tame adult tegu can still cause injury unintention
       slug: "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
       title: "Chronicles of Dex: The Sun, the Glass, and the Cricket That Got Away",
     },
-    // Rough starting ranges, not verified current pricing - reviewed by
-    // Mike before treating these as accurate for readers.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft enclosure (PVC or wood/glass)", low: 200, high: 400 },
-        { item: "T5 HO UVB fixture + bulb", low: 60, high: 100 },
-        { item: "Basking bulb + fixture", low: 20, high: 40 },
-        { item: "Thermostat", low: 40, high: 80 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 30 },
-        { item: "Infrared thermometer gun", low: 15, high: 30 },
-        { item: "Substrate (tile)", low: 20, high: 40 },
-        { item: "Branches, hides, and decor", low: 30, high: 60 },
-        { item: "Food and water dishes", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "UVB bulb replacement (every 6-12 months)", low: 60, high: 100 },
-        { item: "Basking bulb replacement", low: 15, high: 25 },
-        { item: "Feeder insects (dubia, BSFL, crickets)", low: 200, high: 400 },
-        { item: "Leafy greens and vegetables", low: 150, high: 250 },
-        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
-        { item: "Electricity (heat and lighting)", low: 80, high: 150 },
-        { item: "Annual vet wellness check", low: 50, high: 100 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Lifespan is the exception: it comes
+    // from the encyclopedia entry, which no deep dive repeats. Reconciled
+    // 2026-09-08 after the bearded dragon set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure", value: "4x2x2 ft, about 120 gallons, and that is the adult minimum, not an upgrade for later.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Basking surface", value: "95 to 110°F for adults, 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the surface itself.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Rest of the gradient", value: "Warm side air about 90°F, cool side 75 to 85°F, nights 65 to 75°F. Heat overnight only if the room falls below 65°F, with a ceramic heat emitter.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "UVB", value: "A linear T5 HO tube over about two-thirds of the enclosure, 12 to 18 inches from the basking surface, never behind glass. 10 to 14 hours a day, replaced every 6 to 12 months.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Humidity", value: "30 to 40%.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Floor", value: "Paper towel, newspaper, or tile. No loose sand, calcium sand included.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Diet ratio", value: "Juveniles roughly 80% insects and 20% greens. Adults flip to about 80% greens.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Hatchlings 2 to 3 times daily, 1 to 4 months twice daily, juveniles once daily, adults once daily or every other day with greens daily and insects a few times a week.", source: "bearded-dragon-feeding-guide" },
+        { label: "Calcium", value: "Gut-load the feeders, then dust with plain calcium: near-daily for juveniles, 2 to 3 times a week for adults, calcium with D3 a couple of times a week, a multivitamin once or twice a week.", source: "bearded-dragon-feeding-guide" },
+        { label: "Handling", value: "Wait 7 to 14 days before the first session. Scoop from below with all four feet supported. A black beard means the session is over.", source: "bearded-dragon-handling-guide" },
+        { label: "Vet", value: "An annual fecal exam with a sample less than 24 hours old, and a vet check before brumation season.", source: "bearded-dragon-health-issues-guide" },
+        { label: "Budget", value: "$400 to $800 to set up, $50 to $108 a month, and an emergency fund of a few hundred dollars.", source: "bearded-dragon-cost-guide" },
+        { label: "Adult size", value: "18 to 22 inches nose to tail tip.", source: "bearded-dragon-growth-weight-checks-guide" },
+        { label: "Lifespan", value: "10 to 15 years in captivity." },
       ],
     },
-    sections: {
-      housing: `Adult bearded dragons need a minimum 4x2x2 ft enclosure, and larger is always better. Juveniles can start smaller but reach their adult size relatively quickly, so investing in the correct adult enclosure from the start makes practical sense. PVC or wooden enclosures with glass fronts retain heat better than glass tanks and are widely preferred by experienced keepers.
-
-The basking spot is the most critical element of a bearded dragon setup. A surface temperature of 95 to 110 degrees F for adults (105 to 115 degrees F for juveniles) is required under the basking light - this is not optional. Bearded dragons are ectotherms that need intense heat to digest food properly, support their immune system, and regulate their metabolism. Without an adequate basking spot, food sits undigested and the dragon becomes chronically ill. Measure the basking surface with an infrared temperature gun, not a stick-on thermometer.
-
-A strong full-spectrum desert UVB light is non-negotiable. Use a T5 HO UVB bulb - the Arcadia Dragon 14% or Zoo Med T5 HO Reptisun 10.0 are current industry standards. Bearded dragons need intense UVB for vitamin D3 synthesis and calcium metabolism. Compact or coil UVB bulbs are inadequate. Replace UVB bulbs every 6 to 12 months even if they still appear to emit light, as UV output degrades before visible light does.
-
-Substrate should be easy to clean and safe if accidentally ingested. Ceramic tile or paper towels work well for juveniles. Adults can be kept on a sand-soil mix (ReptiSand or a DIY 50/50 topsoil and playsand) if the enclosure is set up correctly and the dragon is well-fed. Loose calcium sand should be avoided entirely.`,
-      diet: `Bearded dragons are omnivores with age-dependent dietary requirements. Juveniles (under 12 months) should eat approximately 70 to 80% live insects and 20 to 30% leafy greens and vegetables. As they approach adulthood, the ratio flips: adults thrive on 70 to 80% leafy greens and vegetables with 20 to 30% insects. This shift mirrors their natural dietary habits in the wild.
-
-Staple insect feeders include dubia roaches (the gold standard), black soldier fly larvae (BSFL/CalciWorms), and crickets. Mealworms can be offered occasionally as a treat. Waxworms should be strictly limited - they are extremely high in fat and act like candy. Hornworms are excellent for hydration and variety. Always gut-load insects 24 to 48 hours before feeding, then dust with plain calcium at every juvenile feeding (3 to 4 times per week for adults), and add calcium with D3 just 2 to 3 times per week regardless of age, too much D3 on top of proper UVB exposure risks toxicity.
-
-Staple greens include collard greens, mustard greens, dandelion greens (pesticide-free), turnip greens, and endive. These are nutrient-dense and form the backbone of an adult's vegetable intake. Offer a variety and rotate frequently. Kale and spinach are fine in moderation but should not be the only green. Avoid iceberg lettuce (no nutritional value) and avocado (toxic).
-
-Fresh water in a shallow dish should always be available. Bearded dragons often bathe rather than drink from a dish - a 15-minute warm bath 2 to 3 times per week provides supplemental hydration and helps with shedding. Multivitamin supplementation once per week in addition to calcium is recommended.`,
-      enrichment: `Bearded dragons are one of the most interactive and personable reptiles available in the hobby. Many individuals become genuinely tame and seek out interaction with their keepers. Consistent, gentle handling from a young age is the most important factor in producing a calm, social adult.
-
-Provide climbing structures - thick branches, cork bark platforms, and rock formations - that allow the dragon to bask at different heights. A dig box filled with moist coconut fiber or organic topsoil gives them an outlet for their natural digging behavior. Many bearded dragons enjoy supervised free-roam time in a safe, warm room.
-
-Bearded dragons have been observed enjoying watching television, following the movements of animals on screen, and interacting with mirrors. While these are anecdotal, they suggest a cognitive engagement with their environment that is worth supporting. Novel objects, different safe foods offered as enrichment, and changes to the enclosure layout all provide mental stimulation.
-
-Shedding is a natural process that should not require intervention when husbandry is correct. Ensure adequate hydration through bathing during shed periods. Juvenile bearded dragons shed frequently (every few weeks) as they grow rapidly. Adults shed less often. Never peel or force shed off - this damages the underlying skin.`,
-      health: `Metabolic Bone Disease (MBD) is the most common serious health problem in bearded dragons and is entirely preventable. It results from inadequate UVB lighting, insufficient calcium supplementation, or both. Early signs include leg trembling, difficulty walking, soft or rubbery jaw, lethargy, and loss of appetite. Advanced MBD causes permanent skeletal deformities. Invest in quality UVB lighting and maintain a consistent supplementation schedule.
-
-Impaction occurs when a bearded dragon ingests substrate material that forms a blockage in the intestinal tract. Loose particulate substrates (especially calcium sand) are the primary cause. Signs include straining to defecate, a hard swollen abdomen, lethargy, and hind leg weakness. Treatment requires veterinary intervention. Using tile or paper substrate for juveniles eliminates this risk.
-
-Parasites - particularly pinworms and coccidia - are very common in bearded dragons, including those from reputable breeders. Annual fecal exams are strongly recommended even for apparently healthy animals. Many parasitic infections are subclinical (the dragon appears healthy) but cause chronic stress on the immune system.
-
-Yellow Fungal Disease (CANV, caused by Nannizziopsis guarroi) is a serious and often fatal fungal infection that presents as yellow, discolored, necrotic skin lesions. Any unusual skin lesion warrants immediate veterinary assessment. Adenovirus (Atadenovirus) is a common and poorly understood viral infection that can cause neurological symptoms, failure to thrive, and immunosuppression. Annual wellness visits with a reptile-experienced veterinarian are essential.`,
-      checklist: ["4x2x2 ft enclosure", "High-output desert UVB (T5 HO)", "Powerful basking bulb (95 to 110 degrees F adults, 105 to 115 for juveniles)", "Digital thermometer (infrared gun recommended)", "Calcium w/D3 + multivitamin", "Ceramic food and water dishes", "Juvenile insects (dubia, BSFL, crickets)", "Leafy greens daily", "Tile substrate", "Branches and hides for enrichment"],
+    emergencyCard: {
+      source: "bearded-dragon-health-issues-guide",
+      callNow: [
+        "Tremors or muscle twitching",
+        "Swelling in the jaw or limbs",
+        "A juvenile refusing food for 2 to 3 days",
+        "An adult refusing food for 1 to 2 weeks outside brumation, or any refusal with lethargy, abnormal stool, or a swollen abdomen",
+        "No stool for five or more days",
+        "A beard that stays dark for extended periods",
+        "Difficulty moving or climbing",
+        "Labored or open-mouth breathing",
+        "Diarrhea, or stool that's runny or foul-smelling for more than 2 days",
+        "Stargazing: the head held tilted up and back",
+        "Any skin lesions or discoloration",
+        "Swollen or bleeding gums, or cheesy material in the mouth",
+      ],
+      vetLine: "A reptile vet, not a general clinic. Never dose an over-the-counter dewormer blind: get a fecal exam and treat what it finds.",
     },
+    routes: [
+      { slug: "bearded-dragon-cost-guide", line: "$40 to $100 for the dragon, $400 to $800 for the setup around it, and the surgery bill correct husbandry prevents." },
+      { slug: "bearded-dragon-shopping-list", line: "Every item in the cart with a price range and the reason it is there." },
+      { slug: "bearded-dragon-tank-setup-guide", line: "The full temperature table, UVB distance and replacement, humidity, and the substrate that will not impact." },
+      { slug: "bearded-dragon-feeding-guide", line: "Schedule by age, the insect-to-greens flip, gut-loading and dusting, and eight reasons a dragon stops eating." },
+      { slug: "bearded-dragon-safe-foods-guide", line: "Staple greens, occasional foods, the daily salad, and the never-feed list." },
+      { slug: "bearded-dragon-handling-guide", line: "Wait 7 to 14 days, scoop from below, and the signals that end a session." },
+      { slug: "bearded-dragon-health-issues-guide", line: "Metabolic bone disease, impaction, parasites, yellow fungus, atadenovirus, and the list that means the vet today." },
+      { slug: "bearded-dragon-brumation-guide", line: "How to tell brumation from illness, the pre-brumation vet check, and what a normal three months looks like." },
+      { slug: "bearded-dragon-growth-weight-checks-guide", line: "Weekly weigh-ins, the growth reference by age, and the 10 percent drop that means a vet." },
+      { slug: "bearded-dragon-eggs-and-egg-binding-guide", line: "Females lay without a male: the lay box, the digging window, and when it has become egg binding." },
+      { slug: "bearded-dragon-enrichment-guide", line: "Climbing, the dig box, foraging, supervised free-roam, and the priority order." },
+    ],
+    buyList: [
+      "4x2x2 ft PVC enclosure",
+      "Linear T5 HO UVB kit (Arcadia 14% Dragon or ReptiSun 10.0)",
+      "75W basking bulb and a ceramic dome fixture",
+      "Dimming thermostat",
+      "Digital thermometer and hygrometer for the cool side",
+      "Infrared temp gun for the basking surface",
+      "Paper towel or tile for the floor",
+      "Cork bark hide for the cool end, and a basking platform",
+      "Hammock",
+      "Dubia roaches or crickets, and feeding tongs",
+      "Plain calcium, calcium with D3, and a multivitamin",
+      "Shallow water dish",
+    ],
     faqs: [
-      { q: "How big do bearded dragons get?", a: "Adult bearded dragons (Pogona vitticeps) reach 16 to 24 inches total length and 300 to 500 grams, with males typically larger than females. Most reach adult size by 12 to 18 months, though they continue filling out through their second year." },
-      { q: "What do bearded dragons eat?", a: "Juveniles (under 12 months) eat roughly 70% live insects and 30% leafy greens daily. Adults flip this ratio to 70% leafy greens and 30% insects every other day. Staple feeders include dubia roaches, black soldier fly larvae, and crickets. Staple greens include collard greens, mustard greens, and dandelion greens. Avocado, fireflies, and rhubarb are toxic and must be avoided." },
-      { q: "Do bearded dragons need UVB?", a: "Yes, absolutely - this is non-negotiable. Bearded dragons require strong desert UVB lighting (T5 HO Arcadia Dragon 14% or equivalent) on a 12-hour cycle. Without adequate UVB they cannot metabolize calcium, which causes Metabolic Bone Disease (MBD). Replace UVB bulbs every 6 to 12 months even if they still emit visible light, as UV output degrades before the visible light does." },
-      { q: "What is brumation in bearded dragons?", a: "Brumation is a hibernation-like state triggered by shorter days and cooler temperatures, typically in autumn and winter. Signs include prolonged sleep, reduced appetite, and decreased activity lasting weeks to months. A healthy dragon in brumation should still drink water when offered. Always have a vet rule out illness before assuming brumation, as the two can look identical." },
-      { q: "How long do bearded dragons live?", a: "Bearded dragons typically live 10 to 15 years in captivity with proper care. Key longevity factors are correct UVB, a varied diet, regular parasite screening via annual fecal exams with a reptile vet, and avoiding obesity. Females may have shorter lifespans than males if allowed to produce eggs frequently without adequate calcium reserves." },
+      { q: "How hot does the basking spot need to be?", a: "95 to 110°F on the basking surface for adults, and 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the actual surface rather than the air. That heat comes from a separate basking bulb, not the UVB tube, which supplies UV but little usable heat on its own." },
+      { q: "Why has my bearded dragon stopped eating?", a: "Often it's brumation, a shed, or, in females, a gravid cycle before laying, all normal. It becomes a concern when the enclosure's temperature isn't letting the dragon digest, or when refusal comes with lethargy, abnormal stool, or a swollen abdomen." },
+      { q: "What is the most common health problem in pet bearded dragons?", a: "Metabolic bone disease. It comes from too little calcium, inadequate or incorrect UVB, or a diet too high in phosphorus relative to calcium, and juveniles under two years old are hit hardest. Almost every case is preventable with correct lighting and supplementation." },
     ],
   },
   {

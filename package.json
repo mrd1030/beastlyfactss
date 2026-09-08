@@ -21,7 +21,8 @@
     "check:voice": "node scripts/check-voice.mjs",
     "voice:batch": "node scripts/voice-batch.mjs",
     "check:legal-sync": "node scripts/check-legal-map-sync.mjs",
-    "check:images": "node scripts/check-images.mjs"
+    "check:images": "node scripts/check-images.mjs",
+    "check:numbers": "node scripts/check-species-numbers.mjs"
   },
   "dependencies": {
     "@mdx-js/rollup": "^3.1.1",

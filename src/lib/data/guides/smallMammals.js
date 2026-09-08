@@ -775,80 +775,75 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
     id: "rabbit",
     name: "Rabbit",
     emoji: "🐰",
-    difficulty: "Beginner/Intermediate",
+    difficulty: "Intermediate",
     petType: "Small Mammals",
     image: "/assets/guides/rabbit.jpg",
     tagline: "The gentle, litter-trainable companion that loves to binky!",
     funFact: "Rabbits can jump up to 4 feet high and run up to 25 mph. They're surprisingly athletic!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "Exercise pen or C&C condo", low: 60, high: 150 },
-        { item: "Litter box + litter", low: 15, high: 25 },
-        { item: "Hideouts and tunnels", low: 20, high: 40 },
-        { item: "Chew toys (larger, tougher)", low: 15, high: 30 },
-        { item: "Food and water dishes", low: 10, high: 20 },
-        { item: "Nail clippers + styptic powder", low: 10, high: 15 },
-        { item: "Spay/neuter", low: 150, high: 400 },
-      ],
-      annual: [
-        { item: "Grass hay (unlimited)", low: 150, high: 250 },
-        { item: "Rabbit pellets", low: 40, high: 70 },
-        { item: "Fresh leafy greens daily", low: 150, high: 250 },
-        { item: "Litter/bedding", low: 60, high: 100 },
-        { item: "Annual vet wellness check", low: 50, high: 100 },
-      ],
-    },
-    sections: {
-      housing: `Rabbits need far more space than most people expect. A minimum of 8 to 10 square feet of living space for a single rabbit, with at least 24 square feet of daily exercise space, is the current recommended standard. Many experienced rabbit owners and welfare organizations now advocate for free-roaming setups or very large enclosures, as rabbits confined to small hutches develop severe physical and psychological problems over time.
-
-Use an exercise pen (X-pen), a large C&C condo, or a bunny-proofed room as the primary living space. Wire-bottom cages must be avoided entirely - wire floors cause pressure sores on the hocks (feet) that are painful, difficult to heal, and sometimes lead to serious infection. Always use solid flooring with appropriate soft bedding.
-
-Provide a litter box with paper-based litter and a layer of hay on top, a cozy hideout or tunnel, and multiple safe chew toys. Rabbits have continuously growing teeth and must gnaw to keep them worn down. Apple wood sticks, willow balls, untreated wicker, and cardboard are all safe options.
-
-Temperature should stay between 60 and 72 degrees F. Rabbits are sensitive to heat and can die of heatstroke above 85 degrees F. Keep them away from drafts, direct sunlight, and extreme temperatures.`,
-      diet: `Hay is the single most important food in a rabbit's diet and should make up 80 to 90% of everything they eat, with unlimited access at all times. Timothy, orchard grass, and meadow hay are the best choices for adult rabbits. Fresh hay stimulates the gut, wears down teeth naturally, and prevents the life-threatening condition GI stasis.
-
-Supplement with high-quality pellets: 1/8 to 1/4 cup per day for most adult rabbits, scaled to body weight. Choose pellets with high fiber content and no added seeds, nuts, or colored pieces. Pellets are a supplement, not a replacement for hay.
-
-Fresh leafy greens should be offered daily: 1 to 2 cups per 4 pounds of body weight. Excellent choices include romaine lettuce, cilantro, flat-leaf parsley, dandelion greens, arugula, and basil. Introduce new greens gradually to avoid digestive upset. Avoid iceberg lettuce (nutritionally empty) and excess spinach (high oxalates).
-
-Treats like carrots, fruit, and commercial bunny treats should be limited to a thumbnail-sized piece a few times per week at most. These are high-sugar foods that can disrupt gut flora. Fresh water in a heavy ceramic bowl must always be available and changed daily.`,
-      enrichment: `Rabbits are intelligent, curious, and naturally active animals that need at minimum 3 to 4 hours of free-roaming time in a bunny-proofed space every day. Without adequate space and enrichment, rabbits develop behavioral problems including aggression, destructiveness, and depression.
-
-Provide cardboard boxes with multiple holes cut in them, paper bags filled with hay for foraging, willow balls and tunnels, digging boxes filled with shredded paper, and puzzle feeders with pellets or herbs. Rotate enrichment items regularly to maintain interest. Rabbits are highly food-motivated and foraging enrichment is particularly effective at keeping them mentally engaged.
-
-Rabbits are social animals and generally do best in bonded pairs or groups. A bonded pair provides constant companionship, play, and mutual grooming. Solo rabbits require more human interaction to compensate for the absence of a companion. Bonding takes patience with a slow, neutral-space introduction process, but the result is two dramatically happier animals.
-
-Rabbits can be litter-trained much like cats. Place the litter box in the corner they naturally use and reward correct behavior. Most rabbits are fully litter-trained within a few weeks, making free-roaming setups practical and clean.`,
-      health: `GI stasis is the most serious and common rabbit emergency. It occurs when the digestive tract slows down or stops completely, usually caused by stress, pain, low fiber intake, or dehydration. Signs include small or absent droppings, hunched posture, refusal to eat, and a distended or hard abdomen. GI stasis requires immediate veterinary attention. A rabbit that has not eaten or produced droppings for 12 hours is an emergency.
-
-Dental disease is the second most common serious health problem. Rabbit teeth grow continuously and must be worn down through constant hay chewing. Without adequate hay, molars overgrow and cause pain, drooling, and weight loss. Annual veterinary dental exams are recommended for all rabbits.
-
-Uterine cancer (uterine adenocarcinoma) affects the majority of unspayed female rabbits by age 4 to 5 and is one of the most preventable causes of early death in pet rabbits. Spaying is strongly recommended before 2 years of age. Neutering males reduces territorial behavior, spraying, and testicular cancer risk.
-
-Flystrike (myiasis) occurs in warm months when flies lay eggs near the rabbit's hindquarters and maggots emerge. Check the hindquarters daily in summer. Annual wellness visits with a rabbit-savvy veterinarian are essential for all rabbits.`,
-      checklist: [
-        "Minimum 8 sq ft enclosure or exercise pen",
-        "Grass hay (Timothy or Orchard), unlimited",
-        "High-quality rabbit pellets (1/8 to 1/4 cup daily)",
-        "Fresh leafy greens (romaine, parsley, cilantro)",
-        "Litter box + litter (paper-based or aspen)",
-        "Coconut fiber or safe bedding",
-        "Multiple hideouts and tunnels",
-        "Safe chew toys (apple wood, willow, cardboard)",
-        "Nail clippers and styptic powder",
-        "Rabbit-savvy veterinarian contact"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. The one exception is the heat row: no
+    // rabbit deep dive covers heat yet, so it carries the old hub line with
+    // no source until one does. Reconciled 2026-09-08 after the rabbit set
+    // test (docs/READER_REVIEWS.md) found the old hub contradicting the deep
+    // dives on the vet clock, greens, hay share, lifespan, and vet schedule.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Space", value: "8 square feet of enclosure plus 24 square feet of exercise space. In practice a foldable metal exercise pen, 4 feet by 4 feet or bigger.", source: "rabbit-tank-setup-guide" },
+        { label: "Time out", value: "At least 5 hours a day to run. Permanent access to a run or a rabbit-proofed room is what the welfare research points at.", source: "rabbit-enrichment-guide" },
+        { label: "Floor", value: "No wire flooring. Vinyl or linoleum over plywood, washable rugs, or fleece.", source: "rabbit-tank-setup-guide" },
+        { label: "Hay", value: "Unlimited grass hay, 80 to 85% of the diet. Alfalfa is for babies, juveniles, and nursing does, not healthy adults.", source: "rabbit-feeding-guide" },
+        { label: "Pellets and greens", value: "Roughly 1/8 to 1/4 cup of high-fiber timothy pellets per 5 to 6 lbs of body weight daily, and chopped vegetables scaled to body weight with at least 3 varieties of leafy greens.", source: "rabbit-feeding-guide" },
+        { label: "Litter", value: "A large cat-litter-box style box with paper-based or wood-pellet litter and hay in or over it. Never clumping litter, pine, or cedar.", source: "rabbit-tank-setup-guide" },
+        { label: "Company", value: "A neutered, opposite-sex pair close in age. Solitary rabbits showed less behavior of every kind.", source: "rabbit-enrichment-guide" },
+        { label: "Vet", value: "A rabbit-savvy exotic vet, found before you need one. Twice-yearly wellness exams, and ask about the RHDV2 vaccine.", source: "rabbit-health-issues-guide" },
+        { label: "Spay or neuter", value: "$150 to $500 or more, budgeted separately. Adoption fees often include it.", source: "rabbit-cost-guide" },
+        { label: "Budget", value: "$150 to $600 to set up, $60 to $100 a month, and a $500 to $1,000 emergency fund.", source: "rabbit-cost-guide" },
+        { label: "Lifespan", value: "7 to 10 years indoors. Outdoor rabbits average about 2.", source: "rabbit-tank-setup-guide" },
+        { label: "Heat", value: "Rabbits can die of heatstroke above 85 degrees F. Keep them out of direct sun and drafts." },
       ],
     },
+    emergencyCard: {
+      source: "rabbit-health-issues-guide",
+      callNow: [
+        "No food or droppings for 8 hours. Twelve is already an emergency.",
+        "A bloated or tense abdomen",
+        "Hunched posture, or teeth grinding at a harsh, audible pitch",
+        "Visible fly eggs or maggots in fur",
+        "Open-mouth breathing or persistent discharge",
+        "Sudden lethargy or hiding",
+      ],
+      vetLine: "Rabbits need a rabbit-savvy exotic vet, not a standard small-animal clinic. Find one before you need one.",
+    },
+    routes: [
+      { slug: "rabbit-cost-guide", line: "What the pen, the spay, and the first year really cost, and why the emergency fund is not optional." },
+      { slug: "rabbit-tank-setup-guide", line: "The space standard, why indoors nearly doubles the lifespan, flooring, and litter training in one move." },
+      { slug: "rabbit-feeding-guide", line: "Hay, pellets, and greens by life stage, the toxic list, and the reasons a rabbit stops eating." },
+      { slug: "rabbit-gi-stasis-guide", line: "The emergency itself: what normal droppings look like, the early signs, and why waiting is dangerous." },
+      { slug: "rabbit-health-issues-guide", line: "Dental disease, flystrike, uterine cancer, RHDV2, and the list of signs that mean the vet today." },
+      { slug: "rabbit-handling-guide", line: "The two-hand lift, the football hold, why trancing is fear and not calm, and the stress signs." },
+      { slug: "rabbit-enrichment-guide", line: "Why a bonded pair and a permanent run change more than any toy, then the dig box and the rest." },
+    ],
+    buyList: [
+      "Foldable metal exercise pen, 4 by 4 feet or bigger",
+      "Large cat-litter-box style litter box",
+      "Paper-based or compressed wood-pellet litter",
+      "Grass hay (timothy, orchard, or meadow) and a hay feeder",
+      "Plain timothy-based pellets",
+      "Heavy food and water dishes, or a bottle",
+      "Washable flooring: vinyl, rugs, or fleece, with a tarp under the pen",
+      "Hides, tunnels, and cardboard boxes to shred",
+      "A dig box",
+      "Nail clippers",
+      "A carrier",
+      "Bunny-proofing: cord covers and baseboard protection",
+    ],
     faqs: [
-      { q: "Do rabbits need a companion?", a: "Yes, for most rabbits. Rabbits are highly social animals that live in groups in the wild, and a solitary rabbit is generally an anxious, understimulated animal. Bonded pairs groom each other, sleep together, and communicate in ways no amount of human interaction fully replicates. Same-sex pairs (particularly two spayed or neutered animals) work well when properly introduced. Single rabbits can still thrive with extensive human interaction, but a bonded pair is the gold standard." },
-      { q: "What do rabbits eat?", a: "The foundation of a rabbit's diet is unlimited grass hay - Timothy, orchard grass, or meadow grass - which should make up 80 to 90% of total intake. Hay provides the indigestible fiber essential for healthy gut motility and wears down continuously growing teeth. Supplement with a daily cup of fresh leafy greens per 5 pounds of body weight: romaine lettuce, cilantro, parsley, and dandelion greens are excellent choices. High-quality pellets can be offered in small amounts. Avoid sugary treats and commercial treat sticks - these cause gut flora disruption and dental disease." },
-      { q: "Can rabbits be litter trained?", a: "Yes, and they learn remarkably quickly. Rabbits naturally choose one or two corners for elimination. Place a litter box with paper-based litter (never clay or clumping cat litter) where the rabbit already goes. Hay placed at one end of the litter box encourages consistent use, as rabbits like to eat while they eliminate. Spaying or neutering significantly improves litter habits. Most rabbits are reliably litter trained within a few weeks of consistent reinforcement." },
-      { q: "Is a bunny the same as a rabbit?", a: "Yes, \"bunny\" is just an informal, affectionate name for the same animal, there's no distinction in species or care between the two words. \"Bunny\" is sometimes used more specifically for a young rabbit, but in everyday use they're interchangeable." },
-      { q: "What's the difference between a rabbit and a hare?", a: "They're different species, not just different names for the same animal. Hares are larger, longer-eared, and are born fully furred and mobile (precocial), while domestic rabbits are born hairless and helpless (altricial) and are a genuinely different, domesticated lineage. Hares are also essentially never kept as pets, they're wild animals with very different needs than a domestic rabbit." },
-      { q: "How long do rabbits live?", a: "Domestic rabbits commonly live 8 to 12 years with good care, and some individuals reach 14 or more years. Life expectancy has improved dramatically as knowledge of proper diet (hay-based, not pellet-heavy), spacious housing, spay/neuter practices, and exotic veterinary care has become more widely available. The old paradigm of small hutches and pellet-only diets produced lifespans of 5 to 6 years; modern care standards produce much longer, healthier lives." },
-      { q: "Do rabbits need veterinary care?", a: "Yes. Rabbits need annual wellness examinations with a veterinarian experienced in exotic small mammals. They are prey animals that instinctively hide illness - by the time a rabbit shows obvious signs of being sick, the problem is usually already serious. Spaying female rabbits before age 2 is critical, as uterine cancer affects the majority of unspayed females by age 4 to 5. Finding a rabbit-savvy exotic vet before an emergency arises is one of the most important things a new rabbit owner can do." },
+      { q: "What is the most common rabbit emergency?", a: "GI stasis, where a rabbit's gut slows down or stops entirely, allowing gas to build up. A rabbit that hasn't eaten or passed stool in 8 to 12 hours is an emergency, not a wait-and-see situation, with eight hours the point to call a vet and twelve the point it is already urgent." },
+      { q: "How much space does a rabbit need?", a: "The House Rabbit Society puts it at 8 square feet of enclosure plus 24 square feet of exercise space for one or two rabbits, with at least 5 hours a day to run in it. In practice that means a foldable metal pen, 4x4 feet or bigger." },
+      { q: "How should I choose a companion rabbit?", a: "Neutered, opposite sex is the usual recommendation, and the research adds a detail worth knowing: a larger age difference was associated with a lower friendship index, so pairing animals closer in age is the better bet." },
     ],
   },
   {

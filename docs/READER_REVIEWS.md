@@ -295,3 +295,20 @@ unsourced "about half of captive leopard geckos may carry it."
   itself, Mike's original text is editable when it helps the reader.
 - The linking pass across all 532 series guides.
 - This file and scripts/reader-extract.mjs.
+- 2026-09-08, rabbit and bearded dragon (branch claude/hub-rabbit-bd):
+  both hubs rebuilt as router hubs (RULES, Hubs), every number copied from
+  a deep dive and linked to it, emergency card from the health guide,
+  buy list without prices, the package sell card at the top, two free
+  print cards instead of the whole guide. scripts/check-species-numbers.mjs
+  written to list the conflicts by topic. Rabbit deep dives: tank setup's
+  diet section cut to a pointer at the feeding guide (its FAQ with the
+  1/4 cup per 5 pounds figure went with it), the cost table's "The rest of
+  your budget" cell reworded, enrichment's two stray fragments cut, and
+  six of the eight recommended links added (hub and GI stasis needed
+  none; the encyclopedia entry is structured data with no link slot).
+  Bearded dragon deep dives: feeding links tank setup at the basking
+  sentence, tank setup's calcium schedule by age moved into feeding so
+  one page carries it, tank setup's diet aside cut to a pointer. Left
+  alone, both sourced: brumation 1 to 3 months (brumation guide) against
+  1 to 4 (feeding), and the adult food-refusal window, where feeding
+  already states the tension between its two sources.

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen, Calculator, HelpCircle, BookMarked } from 'lucide-react';
+import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen, ArrowUpRight } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { firsthandNote } from '@/lib/data/firsthand';
@@ -38,15 +38,24 @@ export default function GuideDetail() {
   const [isLegendOpen, setIsLegendOpen] = useState(false);
   const legendTriggerRef = useRef(null);
   const legendModalRef = useRef(null);
-  const [isPrintOpen, setIsPrintOpen] = useState(false);
-  const [printOptions, setPrintOptions] = useState({ encyclopedia: false, cost: false, faq: false });
-  const printTriggerRef = useRef(null);
-  const printModalRef = useRef(null);
   const contentRef = useRef(null);
 
-  const hasCost = !!(guide?.costs && ((guide.costs.setup?.length || 0) + (guide.costs.annual?.length || 0) > 0));
-  const hasFaq = !!guide?.faqs?.length;
-  const hasEncyclopedia = !!encAnimal?.bio;
+  // Two hub shapes (docs/RULES.md, Hubs). A router hub (layout: 'router')
+  // carries a first-week card of numbers copied from its deep dives, an
+  // emergency card, one routing line per deep dive, a buy list without
+  // prices, and three copied FAQs; the deep dives are the source of every
+  // figure. The legacy shape is the old full care sheet (housing, diet,
+  // enrichment, health, checklist, cost builder, FAQ) and still renders for
+  // every species that has not been reconciled yet.
+  const isRouter = guide?.layout === 'router';
+  const titleOf = (slug) => relatedPosts.find(p => p._id === slug)?.title || slug;
+  // The first-week rows cite their source as a short tag ("Feeding guide")
+  // rather than the full article title, which runs to a line on its own.
+  const SHORT_LABELS = { 'cost-guide': 'Cost guide', 'tank-setup-guide': 'Setup guide', 'feeding-guide': 'Feeding guide', 'health-issues-guide': 'Health guide', 'handling-guide': 'Handling guide', 'enrichment-guide': 'Enrichment guide', 'growth-weight-checks-guide': 'Growth guide', 'shopping-list': 'Shopping list' };
+  const shortLabel = (slug) => {
+    const hit = Object.keys(SHORT_LABELS).find(k => slug.endsWith(`-${k}`));
+    return hit ? SHORT_LABELS[hit] : titleOf(slug).split(':')[0];
+  };
 
   const handleBack = () => {
     const returnTo = location.state?.returnTo;
@@ -113,192 +122,65 @@ export default function GuideDetail() {
     };
   }, [isLegendOpen]);
 
-  // Same modal keyboard handling as the difficulty legend above, kept as a
-  // separate effect (rather than generalized) since the two modals never
-  // open at the same time and each has its own trigger/ref to restore focus to.
-  useEffect(() => {
-    if (!isPrintOpen) return;
-
-    const modal = printModalRef.current;
-    const focusables = modal
-      ? modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
-      : [];
-    if (focusables.length) focusables[0].focus();
-
-    const handleKeyDown = (e) => {
-      if (e.key === 'Escape') {
-        setIsPrintOpen(false);
-        return;
-      }
-      if (e.key === 'Tab' && focusables.length) {
-        const first = focusables[0];
-        const last = focusables[focusables.length - 1];
-        if (e.shiftKey && document.activeElement === first) {
-          e.preventDefault();
-          last.focus();
-        } else if (!e.shiftKey && document.activeElement === last) {
-          e.preventDefault();
-          first.focus();
-        }
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      printTriggerRef.current?.focus();
-    };
-  }, [isPrintOpen]);
-
-  const formatRange = (r) => (r.low === r.high ? `$${r.low}` : `$${r.low}-$${r.high}`);
-
-  const handlePrint = (options = {}) => {
-    const sections = [
-      { title: '🏠 Housing', content: guide.sections.housing },
-      { title: '🥗 Diet', content: guide.sections.diet },
-      { title: '🎮 Enrichment', content: guide.sections.enrichment },
-      { title: '💊 Health', content: guide.sections.health },
-    ];
-
-    const checklistHTML = guide.sections.checklist
-      .map(item => `☐  ${item}`)
-      .join('<br>');
-
-    const encyclopediaHTML = options.encyclopedia && hasEncyclopedia ? `
-      <div class="section encyclopedia-section">
-        <h2>📚 ${encAnimal.name} - Encyclopedia Overview</h2>
-        ${encAnimal.bio.overview ? `<p class="overview-text">${encAnimal.bio.overview}</p>` : ''}
-        <table class="quick-facts-table">
-          ${[
-            ['Native Range', encAnimal.bio.origin],
-            ['Natural Habitat', encAnimal.bio.habitat],
-            ['Adult Size', encAnimal.bio.adultSize],
-            ['Wild Diet', encAnimal.bio.wildDiet],
-            ['Wild Lifespan', encAnimal.bio.wildLifespan],
-            ['Conservation Status', encAnimal.bio.conservation],
-          ].filter(([, value]) => value).map(([label, value]) => `<tr><td class="qf-label">${label}</td><td>${value}</td></tr>`).join('')}
-        </table>
-      </div>
-    ` : '';
-
-    const costHTML = options.cost && hasCost ? `
-      <div class="section cost-section">
-        <h2>💰 Cost Breakdown</h2>
-        ${['setup', 'annual'].map(key => {
-          const items = guide.costs[key] || [];
-          if (!items.length) return '';
-          const total = items.reduce((acc, i) => ({ low: acc.low + i.low, high: acc.high + i.high }), { low: 0, high: 0 });
-          return `
-            <h3>${key === 'setup' ? 'One-Time Setup' : 'Ongoing (Per Year)'}</h3>
-            <table class="cost-table">
-              ${items.map(i => `<tr><td>${i.item}</td><td>${formatRange(i)}</td></tr>`).join('')}
-              <tr class="cost-total"><td>Total</td><td>${formatRange(total)}</td></tr>
-            </table>
-          `;
-        }).join('')}
-        <p class="cost-note">Rough estimates - actual prices vary by region and retailer.</p>
-      </div>
-    ` : '';
-
-    const faqHTML = options.faq && hasFaq ? `
-      <div class="section">
-        <h2>❓ Frequently Asked Questions</h2>
-        ${guide.faqs.map(faq => `
-          <div class="faq-item">
-            <p class="faq-q">${faq.q}</p>
-            <p class="faq-a">${faq.a}</p>
-          </div>
-        `).join('')}
-      </div>
-    ` : '';
-
+  // The print icon prints two free cards and nothing else: the emergency
+  // card (the health guide's call-the-vet list) and the setup checklist (the
+  // buy list plus the first-week numbers). The full care sheet is the paid
+  // care package (docs/STOREFRONT.md), so the old print-the-whole-guide
+  // modal is gone and the button only appears once a species has an
+  // emergency card, which only router hubs carry.
+  const canPrintCards = !!(guide?.emergencyCard && guide?.firstWeek);
+  const handlePrintCards = () => {
+    const esc = (v) => String(v ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const card = guide.emergencyCard;
+    const rows = guide.firstWeek?.rows || [];
+    const buy = guide.buyList || [];
+    const packageLine = carePackage
+      ? (carePackage.status === 'live'
+        ? `The full ${esc(carePackage.name)} (${carePackage.pages} pages, ${esc(carePackage.price)}) is at beastlyfacts.com/care-packages/.`
+        : `The full ${esc(carePackage.name)} (${carePackage.pages} pages, ${esc(carePackage.price)}) is coming to beastlyfacts.com/care-packages/.`)
+      : '';
+    const footer = `<div class="footer">Free from BeastlyFacts.com &bull; ${new Date().toLocaleDateString()}${packageLine ? ' &bull; ' + packageLine : ''}</div>`;
     const printHTML = `
       <html>
         <head>
-          <title>${guide.emoji} ${guide.name} - Care Guide</title>
+          <title>${esc(guide.emoji)} ${esc(guide.name)} care cards</title>
           <style>
-            @media print {
-              .section {
-                page-break-inside: avoid;
-                break-inside: avoid;
-              }
-              .checklist-section {
-                page-break-inside: avoid;
-                break-inside: avoid;
-              }
-            }
-            body {
-              font-family: system-ui, -apple-system, sans-serif;
-              padding: 32px 40px;
-              line-height: 1.65;
-              color: #222;
-              max-width: 820px;
-              margin: 0 auto;
-            }
-            h1 { font-size: 24px; margin-bottom: 4px; }
-            h2 { font-size: 17px; margin-top: 26px; margin-bottom: 10px; border-bottom: 1.5px solid #eee; padding-bottom: 6px; }
-            h3 { font-size: 14px; margin-top: 14px; margin-bottom: 6px; color: #444; }
-            .section { margin-bottom: 22px; }
-            .checklist {
-              font-size: 13.5px;
-              line-height: 2;
-              background: #f8f9fa;
-              padding: 20px 22px;
-              border-radius: 10px;
-              margin-top: 12px;
-            }
-            .footer {
-              margin-top: 40px;
-              font-size: 10.5px;
-              color: #888;
-              border-top: 1px solid #ddd;
-              padding-top: 14px;
-            }
-            .tagline {
-              font-style: italic;
-              color: #444;
-              margin: 16px 0 24px;
-            }
-            table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
-            .cost-table td, .quick-facts-table td { padding: 5px 4px; border-bottom: 1px solid #eee; }
-            .cost-table td:last-child { text-align: right; color: #555; white-space: nowrap; }
-            .cost-total td { font-weight: 700; border-top: 1.5px solid #ccc; border-bottom: none; }
-            .cost-note { font-size: 10.5px; color: #888; font-style: italic; margin-top: 4px; }
-            .qf-label { font-weight: 600; color: #555; width: 40%; }
-            .overview-text { font-size: 13.5px; color: #333; margin-bottom: 10px; }
-            .encyclopedia-section { background: #f8f9fa; padding: 18px 20px; border-radius: 10px; }
-            .faq-item { margin-bottom: 12px; }
-            .faq-q { font-weight: 700; font-size: 13.5px; margin-bottom: 2px; }
-            .faq-a { font-size: 13px; color: #444; }
+            body { font-family: system-ui, -apple-system, sans-serif; padding: 28px 36px; line-height: 1.55; color: #222; max-width: 760px; margin: 0 auto; }
+            .card { page-break-after: always; break-after: page; }
+            .card:last-child { page-break-after: auto; break-after: auto; }
+            h1 { font-size: 22px; margin: 0 0 2px; }
+            h2 { font-size: 15px; margin: 22px 0 8px; border-bottom: 1.5px solid #eee; padding-bottom: 5px; }
+            .sub { color: #555; font-size: 13px; margin: 0 0 14px; }
+            ul { padding-left: 20px; margin: 0 0 14px; font-size: 14px; }
+            li { margin-bottom: 5px; }
+            .vet { font-size: 13.5px; background: #f8f9fa; border-radius: 10px; padding: 12px 14px; margin: 0 0 16px; }
+            .fill { font-size: 13px; line-height: 2.2; margin-bottom: 8px; }
+            .fill span { display: inline-block; min-width: 200px; border-bottom: 1px solid #999; margin-left: 6px; }
+            .checklist { font-size: 13.5px; line-height: 2; background: #f8f9fa; padding: 14px 18px; border-radius: 10px; }
+            table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+            td { padding: 5px 4px; border-bottom: 1px solid #eee; vertical-align: top; }
+            td:first-child { font-weight: 600; color: #555; width: 30%; white-space: nowrap; }
+            .from { font-size: 11px; color: #777; margin-top: 10px; }
+            .footer { margin-top: 26px; font-size: 10.5px; color: #888; border-top: 1px solid #ddd; padding-top: 10px; }
           </style>
         </head>
         <body>
-          ${encyclopediaHTML}
-          <h1>${guide.emoji} ${guide.name}</h1>
-          <p style="color: #555; font-size: 13.5px; margin-top: -4px;">${guide.petType} • ${guide.difficulty} level</p>
-          <p class="tagline">${guide.tagline}</p>
-
-          ${sections.map(section => `
-            <div class="section">
-              <h2>${section.title}</h2>
-              <div style="white-space: pre-wrap; font-size: 14px; color: #333;">
-                ${section.content}
-              </div>
-            </div>
-          `).join('')}
-
-          <div class="checklist-section">
-            <h2>✅ Complete Care Checklist</h2>
-            <div class="checklist">
-              ${checklistHTML}
-            </div>
+          <div class="card">
+            <h1>${esc(guide.emoji)} ${esc(guide.name)} emergency card</h1>
+            <p class="sub">Call the vet now if you see any of these.</p>
+            <ul>${card.callNow.map(item => `<li>${esc(item)}</li>`).join('')}</ul>
+            ${card.vetLine ? `<p class="vet">${esc(card.vetLine)}</p>` : ''}
+            <div class="fill">Vet:<span></span><br>Phone:<span></span><br>Emergency clinic:<span></span></div>
+            ${card.source ? `<p class="from">From ${esc(titleOf(card.source))}, beastlyfacts.com/blog/${esc(card.source)}/</p>` : ''}
+            ${footer}
           </div>
-
-          ${costHTML}
-          ${faqHTML}
-
-          <div class="footer">
-            Printed from BeastlyFacts.com • ${new Date().toLocaleDateString()} • Keep this guide handy! 🐾
+          <div class="card">
+            <h1>${esc(guide.emoji)} ${esc(guide.name)} setup checklist</h1>
+            <p class="sub">What to have before the animal arrives, then the first-week numbers.</p>
+            <div class="checklist">${buy.map(item => `&#9744;&nbsp; ${esc(item)}`).join('<br>')}</div>
+            <h2>First week numbers</h2>
+            <table>${rows.map(r => `<tr><td>${esc(r.label)}</td><td>${esc(r.value)}</td></tr>`).join('')}</table>
+            ${footer}
           </div>
         </body>
       </html>
@@ -368,11 +250,18 @@ export default function GuideDetail() {
     "name": `How to Care for a ${guide.name}`,
     "description": guideDescription,
     "image": ogImage,
-    "step": sectionMeta.map(({ key, label }) => ({
-      "@type": "HowToStep",
-      "name": label,
-      "text": guide.sections[key],
-    })),
+    "step": isRouter
+      ? guide.routes.map(({ slug, line }) => ({
+        "@type": "HowToStep",
+        "name": titleOf(slug),
+        "text": line,
+        "url": `https://beastlyfacts.com/blog/${slug}/`,
+      }))
+      : sectionMeta.map(({ key, label }) => ({
+        "@type": "HowToStep",
+        "name": label,
+        "text": guide.sections[key],
+      })),
   };
 
   return (
@@ -448,13 +337,16 @@ export default function GuideDetail() {
                 url={`/guides/${guide.id}/`}
                 iconOnly
               />
-              <button
-                ref={printTriggerRef}
-                onClick={() => setIsPrintOpen(true)}
-                className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 p-3 sm:px-3 sm:py-2 rounded-xl transition-colors"
-              >
-                <Printer className="w-4 h-4" /> <span className="hidden sm:inline">Print Checklist</span>
-              </button>
+              {canPrintCards && (
+                <button
+                  type="button"
+                  onClick={handlePrintCards}
+                  title="Print the emergency card and setup checklist"
+                  className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 p-3 sm:px-3 sm:py-2 rounded-xl transition-colors"
+                >
+                  <Printer className="w-4 h-4" /> <span className="hidden sm:inline">Print care cards</span>
+                </button>
+              )}
             </div>
           </div>
           <p className="text-sm text-muted-foreground font-body mt-2">{guide.petType}</p>
@@ -508,8 +400,146 @@ export default function GuideDetail() {
               </div>
             )}
 
-            {/* Sections */}
-            {sectionMeta.map(({ key, icon, label }) => (
+            {/* Router hub: package card, first week, emergency card, routes, buy list */}
+            {isRouter && carePackage && (
+              <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row gap-4 items-start">
+                {(carePackage.image || carePackage.cover) && (
+                  <img
+                    src={carePackage.image || carePackage.cover}
+                    alt={`${carePackage.name} cover`}
+                    loading="lazy"
+                    className="w-full sm:w-36 aspect-video object-cover rounded-lg border border-border bg-white flex-shrink-0"
+                  />
+                )}
+                <div className="min-w-0 flex-1">
+                  <p className="text-xs font-body font-semibold text-secondary uppercase tracking-wide mb-1">🖨️ Printable care package</p>
+                  <p className="font-display font-bold text-base text-foreground leading-snug">{carePackage.name}</p>
+                  <p className="text-xs text-muted-foreground font-body mt-0.5">{`${carePackage.pages} pages · PDF · ${carePackage.price}`}</p>
+                  <p className="text-sm text-muted-foreground font-body mt-2">{carePackage.blurb}</p>
+                  <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
+                    {carePackage.storefront === 'stripe' ? (
+                      <Link to={`/care-packages/${carePackage.id}/`} className="inline-flex items-center gap-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-xl text-sm font-body font-semibold hover:opacity-90 transition-opacity">
+                        {`Get the guide, ${carePackage.price}`} <ChevronRight className="w-3.5 h-3.5" />
+                      </Link>
+                    ) : carePackage.status === 'live' && carePackage.gumroadUrl ? (
+                      <a href={carePackage.gumroadUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-xl text-sm font-body font-semibold hover:opacity-90 transition-opacity">
+                        {`Get the guide, ${carePackage.price}`} <ArrowUpRight className="w-3.5 h-3.5" />
+                      </a>
+                    ) : (
+                      <span className="text-sm font-body font-semibold text-muted-foreground">{`Listing soon at ${carePackage.price}`}</span>
+                    )}
+                    <Link to="/care-packages/" className="text-xs font-body font-semibold text-muted-foreground hover:text-foreground hover:underline">
+                      All care packages
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {isRouter && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
+                  🗓️ The first week
+                </h2>
+                {guide.firstWeek.intro && (
+                  <p className="text-sm text-muted-foreground font-body mb-4">{guide.firstWeek.intro}</p>
+                )}
+                <dl className="divide-y divide-border/60">
+                  {guide.firstWeek.rows.map((row) => (
+                    <div key={row.label} className="py-2.5 grid grid-cols-1 sm:grid-cols-[9rem_1fr] gap-x-4 gap-y-0.5">
+                      <dt className="text-xs font-body font-bold text-foreground uppercase tracking-wide pt-0.5">{row.label}</dt>
+                      <dd className="text-sm text-muted-foreground font-body leading-relaxed">
+                        {row.value}
+                        {row.source && (
+                          <Link to={`/blog/${row.source}/`} className="ml-1.5 whitespace-nowrap text-xs font-semibold text-secondary hover:underline">
+                            {`${shortLabel(row.source)} →`}
+                          </Link>
+                        )}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            )}
+
+            {isRouter && guide.emergencyCard && (
+              <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-5">
+                <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
+                  🚨 Emergency card
+                </h2>
+                <p className="text-sm text-muted-foreground font-body mb-3">Call the vet now if you see any of these.</p>
+                <ul className="space-y-1.5 mb-4">
+                  {guide.emergencyCard.callNow.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-foreground font-body">
+                      <span aria-hidden="true" className="mt-2 w-1.5 h-1.5 rounded-full bg-destructive flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                {guide.emergencyCard.vetLine && (
+                  <p className="text-sm text-foreground font-body font-semibold mb-3">{guide.emergencyCard.vetLine}</p>
+                )}
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-body">
+                  {guide.emergencyCard.source && (
+                    <Link to={`/blog/${guide.emergencyCard.source}/`} className="font-semibold text-secondary hover:underline">
+                      {`From ${titleOf(guide.emergencyCard.source)} →`}
+                    </Link>
+                  )}
+                  {canPrintCards && (
+                    <button type="button" onClick={handlePrintCards} className="inline-flex items-center gap-1 font-semibold text-muted-foreground hover:text-foreground">
+                      <Printer className="w-3.5 h-3.5" /> Print this card
+                    </button>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {isRouter && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
+                  📰 Where to go next
+                </h2>
+                <div className="divide-y divide-border/60">
+                  {guide.routes.map(({ slug, line }) => (
+                    <Link key={slug} to={`/blog/${slug}/`} className="group block py-3">
+                      <p className="text-sm font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug flex items-start gap-1.5">
+                        <span className="flex-1">{titleOf(slug)}</span>
+                        <ChevronRight className="w-4 h-4 flex-shrink-0 mt-0.5 text-muted-foreground group-hover:text-secondary" />
+                      </p>
+                      <p className="text-sm text-muted-foreground font-body mt-0.5">{line}</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {isRouter && guide.buyList?.length > 0 && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <h2 className="font-display font-bold text-sm text-foreground mb-4 flex items-center gap-2">
+                  🛒 What to buy
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {guide.buyList.map((item) => (
+                    <div key={item} className="flex items-start gap-2.5 text-xs text-muted-foreground font-body bg-muted/50 rounded-xl p-2.5">
+                      <Check className="w-3.5 h-3.5 text-primary mt-0.5 flex-shrink-0" />
+                      {item}
+                    </div>
+                  ))}
+                </div>
+                {(() => {
+                  const costRoute = guide.routes.find(r => /-(cost-guide|shopping-list)$/.test(r.slug));
+                  return costRoute ? (
+                    <p className="text-xs text-muted-foreground font-body mt-4">
+                      Prices and the reasoning behind each item are in{' '}
+                      <Link to={`/blog/${costRoute.slug}/`} className="font-semibold text-secondary hover:underline">{titleOf(costRoute.slug)}</Link>.
+                    </p>
+                  ) : null;
+                })()}
+              </div>
+            )}
+
+            {/* Legacy hub: the full care sheet */}
+            {!isRouter && sectionMeta.map(({ key, icon, label }) => (
               <div key={key} className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
                   {`${icon} ${label}`}
@@ -523,6 +553,7 @@ export default function GuideDetail() {
             ))}
 
             {/* Checklist */}
+            {!isRouter && (
             <div className="bg-card border border-border rounded-2xl p-5">
               <h2 className="font-display font-bold text-sm text-foreground mb-4 flex items-center gap-2">
                 ✅ Complete Care Checklist
@@ -536,9 +567,10 @@ export default function GuideDetail() {
                 ))}
               </div>
             </div>
+            )}
 
             {/* Cost builder */}
-            <CostBuilder guide={guide} />
+            {!isRouter && <CostBuilder guide={guide} />}
 
             {/* FAQ */}
             {guide.faqs?.length > 0 && (
@@ -609,8 +641,9 @@ export default function GuideDetail() {
               <BeehiivSubscribe />
             </div>
 
-            {/* Printable care package - only for the 3 animals that have one */}
-            {carePackage && (
+            {/* Printable care package. Router hubs carry the sell card at the
+                top of the page instead, so this one is for legacy hubs only. */}
+            {!isRouter && carePackage && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
                 <p className="text-xs font-body font-semibold text-secondary uppercase tracking-wide mb-3 flex items-center gap-1.5">
                   🖨️ Printable Guide
@@ -759,101 +792,6 @@ export default function GuideDetail() {
         </div>
       )}
 
-      {/* Print Options Popup Modal */}
-      {isPrintOpen && (
-        <div
-          onClick={() => setIsPrintOpen(false)}
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fade-in"
-        >
-          <div
-            ref={printModalRef}
-            role="dialog"
-            aria-modal="true"
-            aria-label="Print options"
-            onClick={(e) => e.stopPropagation()}
-            className="bg-card border border-border p-6 rounded-2xl max-w-md w-full shadow-2xl relative landscape:max-h-[85dvh] landscape:overflow-y-auto"
-          >
-            <h2 className="text-lg font-bold mb-1 font-display text-foreground flex items-center gap-2">
-              <Printer className="w-4 h-4" /> Print Options
-            </h2>
-            <p className="text-xs text-muted-foreground font-body mb-4">
-              Housing, diet, enrichment, health &amp; the checklist are always included. Add anything else below.
-            </p>
-
-            <div className="space-y-2 mb-5">
-              {hasEncyclopedia && (
-                <label className="flex items-start gap-2.5 text-sm font-body bg-muted/50 rounded-xl px-3 py-2.5 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={printOptions.encyclopedia}
-                    onChange={() => setPrintOptions(p => ({ ...p, encyclopedia: !p.encyclopedia }))}
-                    className="accent-secondary w-4 h-4 mt-0.5 flex-shrink-0"
-                  />
-                  <span>
-                    <span className="font-body font-semibold text-foreground flex items-center gap-1.5">
-                      <BookMarked className="w-3.5 h-3.5" /> Encyclopedia Overview
-                    </span>
-                    <span className="text-xs text-muted-foreground block mt-0.5">
-                      Species overview &amp; quick facts - added to the top of the printout
-                    </span>
-                  </span>
-                </label>
-              )}
-              {hasCost && (
-                <label className="flex items-start gap-2.5 text-sm font-body bg-muted/50 rounded-xl px-3 py-2.5 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={printOptions.cost}
-                    onChange={() => setPrintOptions(p => ({ ...p, cost: !p.cost }))}
-                    className="accent-secondary w-4 h-4 mt-0.5 flex-shrink-0"
-                  />
-                  <span>
-                    <span className="font-body font-semibold text-foreground flex items-center gap-1.5">
-                      <Calculator className="w-3.5 h-3.5" /> Cost Builder
-                    </span>
-                    <span className="text-xs text-muted-foreground block mt-0.5">
-                      Full one-time &amp; ongoing price breakdown
-                    </span>
-                  </span>
-                </label>
-              )}
-              {hasFaq && (
-                <label className="flex items-start gap-2.5 text-sm font-body bg-muted/50 rounded-xl px-3 py-2.5 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={printOptions.faq}
-                    onChange={() => setPrintOptions(p => ({ ...p, faq: !p.faq }))}
-                    className="accent-secondary w-4 h-4 mt-0.5 flex-shrink-0"
-                  />
-                  <span>
-                    <span className="font-body font-semibold text-foreground flex items-center gap-1.5">
-                      <HelpCircle className="w-3.5 h-3.5" /> FAQ
-                    </span>
-                    <span className="text-xs text-muted-foreground block mt-0.5">
-                      Frequently asked questions
-                    </span>
-                  </span>
-                </label>
-              )}
-            </div>
-
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setIsPrintOpen(false)}
-                className="flex-1 border border-border text-foreground px-4 py-2 rounded-xl font-body font-semibold text-sm transition-colors hover:bg-muted"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={() => { handlePrint(printOptions); setIsPrintOpen(false); }}
-                className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-xl font-body font-semibold text-sm transition-colors hover:opacity-90"
-              >
-                Print
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
