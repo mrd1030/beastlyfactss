@@ -154,17 +154,17 @@ catches the defects the commands produce. Per batch:
    placeholder cells, unsourced claims. About 70k tokens per species. Do
    the bearded dragon and rabbit findings first, they are already in the
    file. Bearded dragon, rabbit, leopard gecko, goldfish, axolotl, and
-   ball python: done 2026-09-08. Next is the rest of the species with a
-   care package: betta fish, corn snake, hamster, tarantula.
+   ball python: done 2026-09-08, next is any species with a care package.
    Raw reader output and the running "not covered anywhere" list are in
    docs/READER_LOG.md, one entry per species.
-6. Hub reconciliation, one species per session, with its set test and
-   fixes in the same session: the species prompt at the end of this file
-   (Sonnet, default effort). Rabbit, bearded dragon, leopard gecko,
-   goldfish, and axolotl done and on main; ball python on branch
-   claude/hub-ball-python, not merged. Next: the rest of the species
-   with a care package (betta fish, corn snake, hamster, tarantula),
-   then the others. Legacy
+6. Hub reconciliation, five species per session, one branch each, with
+   the set test, fixes, and a Fable check per species: the batch prompt
+   at the end of this file (Sonnet, default effort). Rabbit, bearded
+   dragon, leopard gecko, goldfish, axolotl, and ball python done and on
+   main; leopard gecko, goldfish, axolotl, and ball python passed the
+   species check on 2026-09-08. Next: batch A (betta fish, crested gecko, guinea pig,
+   hamster, russian tortoise), then batch B (budgie, cockatiel, cockatoo,
+   lovebird, tarantula), then the others. Legacy
    hubs keep rendering the old care sheet until then. Dogs and cats
    last. Rabbit difficulty settled at Beginner/Intermediate on the
    site's legend and rabbit lifespan at 8 to 12 years indoors (House
@@ -339,200 +339,290 @@ dashes:
 ```
 
 
-## The species prompt, for a fresh session (Sonnet, default effort)
+## The batch prompt, for a fresh session (Sonnet, default effort): five species, one branch each, a Fable check after each
 
-One species per session. Paste this, replacing <species> with the guide id
-(the folder prefix in content/guides, for example leopard-gecko) and
-<Animal> with the name. Rabbit, bearded dragon, leopard gecko,
-goldfish, and axolotl are done and merged to main. Ball python is done
-on branch claude/hub-ball-python, not merged. Next up: any of betta
-fish, corn snake, hamster, or tarantula, the care-package species that
-are left.
+Replaces the one-species prompt and the separate check session
+(2026-09-08). The worker decides from the sources instead of asking; Mike
+reads the reports afterwards. Species with a care package still to do:
+betta-fish, crested-gecko, guinea-pig, hamster, russian-tortoise (batch A),
+then budgie, cockatiel, cockatoo, lovebird, tarantula (batch B). Paste
+this with the five species filled in.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
-and Linking sections twice), and the "How a test runs" and "What the
-tests changed so far" sections of docs/READER_REVIEWS.md. Then do the
-<Animal> set, on a new branch claude/hub-<species> from main. Stop and
-report at the end; never merge to main. Never use a second agent for
-anything but the one reader test below, never run npm run build, never
-take screenshots unless you changed src/pages/GuideDetail.jsx.
+and Linking sections twice), the "How a test runs" and "What the tests
+changed so far" sections of docs/READER_REVIEWS.md, and the leopard
+gecko, goldfish, and axolotl sections of the same file (they show what
+the check catches). Then do these five species, in this order, one at
+a time, each on its own branch: <species-1>, <species-2>, <species-3>,
+<species-4>, <species-5>. Never merge to main. Do not stop between
+species for my confirmation, and do not ask me questions: decide from
+the sources by the rules below, record the decision, and move on. I
+read the reports afterwards. Two agents at once at most: the reader
+agent while you work, then the Fable check agent after you push. Never
+run npm run build, never take screenshots.
 
-1. Baseline. Run `node scripts/check-species-numbers.mjs <species>` and
-   save the output to the scratchpad. Run
-   `node scripts/reader-extract.mjs <species> .reader/<species>`. Launch
-   one reader agent (run_in_background) with the set test prompt from
-   READMEFIRST, the same model as you, on that folder. While it runs, do
-   step 2.
+Another session is editing the encyclopedia entries
+(src/lib/data/encyclopedia/*.js) and adding a history section. Never
+touch those files. Where the encyclopedia disagrees with a deep dive,
+the deep dive's sourced figure is what the hub carries, and the
+disagreement goes in the review file under "Encyclopedia".
+
+Branches. Species 1's branch is claude/hub-<species-1> from main.
+Each later species branches from the previous species' branch head,
+so every branch carries the ones before it and any of them can be
+merged on its own. A branch is pushed twice: once after step 6 (before
+the check) and once after step 8. If the session's context runs low,
+finish the species in progress through step 8, push, write the batch
+report for the species done, and stop; the next session starts this
+prompt again with the species left.
+
+Per species:
+
+1. Baseline. Run `node scripts/check-species-numbers.mjs <species>`
+   and save the output to the scratchpad. Run
+   `node scripts/reader-extract.mjs <species> .reader/<species>`.
+   Launch one reader agent (run_in_background, the same model as you)
+   with the set test prompt from READMEFIRST on that folder. While it
+   runs, do step 2.
 
 2. Hub. Rewrite the <species> entry in src/lib/data/guides/*.js to the
    router shape. The rabbit (smallMammals.js), bearded dragon
-   (lizards.js), and leopard gecko (geckos.js) entries are the template;
-   copy their structure exactly (layout, firstWeek, emergencyCard,
-   routes, buyList, faqs) and drop costs, sections, and the old faqs.
-   Rules, none optional:
+   (lizards.js), leopard gecko (geckos.js), goldfish (fish.js), and
+   axolotl (amphibians.js) entries are the template; copy their
+   structure exactly (layout, firstWeek, emergencyCard, routes, buyList,
+   faqs) and drop costs, sections, and the old faqs. Rules, none
+   optional:
    - Every first-week row's value is copied from the deep dive named in
-     its `source`, in that article's words, with its numbers unchanged.
-     No figure of your own. Rows the deep dives do not cover (lifespan,
-     adult size) may use the encyclopedia entry with no source.
+     its `source`, in that article's words, numbers unchanged. A source
+     sentence with two ranges keeps both ranges in the row; never merge
+     them into one. No figure of your own. Rows the deep dives do not
+     cover (lifespan, adult size) may use the encyclopedia entry with
+     no source.
    - Add rows sourced to the shared Health and More guides that apply
-     (reptiles: quarantine, hygiene, emergency plan; small mammals: heat
-     stress, grooming, vet trips). The extract shows that list with
-     excerpts.
+     (reptiles: quarantine, hygiene, emergency plan; small mammals:
+     heat stress, grooming, vet trips; fish and amphibians: quarantine,
+     cycling, power outage; birds: whatever the extract's Health and
+     More list shows). The extract shows that list with excerpts.
    - The emergency card copies the health guide's call-the-vet list in
-     full. Count the bullets in the guide and count them in your card.
+     full, bullet for bullet; when the guide states the list as a
+     sentence, one bullet per item in that sentence. Count both. The
+     vetLine keeps every hedge the health guide uses.
    - One route per own deep dive (not the shared ones, not vs pieces),
-     one plain sentence each saying what is on the page.
+     one plain sentence each saying what is on the page. An article
+     whose slug starts with <species>- and that is not a vs piece is an
+     own deep dive even without a -guide suffix.
    - Buy list without prices, from the cost guide's setup table and the
      tank setup guide.
    - Three FAQs copied verbatim from the deep dives' frontmatter.
-   - Difficulty stays what the encyclopedia entry says.
+   - Difficulty is the encyclopedia entry's. If the old hub disagreed,
+     the hub changes.
    - If a source slug ends in a suffix not in SHORT_LABELS in
-     src/pages/GuideDetail.jsx, add it there. Nothing else in that file.
+     src/pages/GuideDetail.jsx, add it there. If one of the species'
+     own articles is missing from its entry in
+     src/lib/data/relatedArticles.js (the extract will not show it in
+     the Deep Dive list), add it there. Those two lines and the guide
+     data file are the only src edits; nothing else in src/.
    Then `node -e` import the file to confirm it parses, run
-   `npx eslint src/pages/GuideDetail.jsx`, and run the numbers checker
-   again: no line marked `hub` may disagree with a deep dive. Commit:
-   "<Animal> hub: router shape".
+   `npx eslint src/pages/GuideDetail.jsx src/lib/data/relatedArticles.js`,
+   and run the numbers checker again: no line marked `hub` may disagree
+   with a deep dive. Commit: "<Animal> hub: router shape".
 
-3. Review. When the reader returns, paste its review into
-   docs/READER_REVIEWS.md under a "## <Animal> (date, first pass)"
-   heading in the same shape as the leopard gecko and rabbit sections:
-   the grade table, set grade, hub conflicts quoted both sides, deep
-   dives against each other, gaps (checked against the Health and More
-   list before you call one real), stranded questions, the
+3. Review. When the reader returns, paste its raw output into
+   docs/READER_LOG.md under "## <Animal> (date)" and file the review in
+   docs/READER_REVIEWS.md under "## <Animal> (date, first pass)" in the
+   same shape as the leopard gecko and axolotl sections: the grade
+   table, set grade, hub conflicts quoted both sides, deep dives
+   against each other, gaps (checked against the Health and More list
+   before you call one real), stranded questions, the
    one-link-per-page table, trust, the reader's two changes. Commit:
    "Reader reviews: <animal> first pass".
 
 4. Fixes, in the deep dives only, from the review and the numbers
-   checker:
-   - Two pages disagree on a number: the page whose Sources cite it wins,
-     and the other page changes to match. If both cite a source, change
-     nothing and list it for Mike. Never invent a number. Never change a
-     hedge.
-   - A schedule or diet aside repeated on two pages (calcium by age, the
-     diet section in a tank setup guide): one page keeps it, the other
-     becomes a one-sentence pointer with a link, and the affiliate link
-     in the cut paragraph moves into the pointer.
-   - Recommended links: add each one only if it passes all of these: at
-     most one link per article to the same species' cost, handling,
+   checker. Decide every one; nothing waits for Mike.
+   - Two pages disagree on a number. Read both pages' Sources blocks.
+     The page whose cited source actually states the figure wins; when
+     the Sources block alone does not settle it, open the source URLs
+     with WebFetch and check. If each page's source states its own
+     figure, rank the sources by RULES, Sources: a peer-reviewed paper,
+     then a .gov agency, then a veterinary manual or hospital (Merck,
+     VCA, LafeberVet, a university vet school), then a museum or
+     university, then an established husbandry reference (Zen Habitats,
+     ReptiFiles, the RSPCA), then everything else. Higher tier wins;
+     same tier, the species-specific source beats the general one;
+     still tied, the page whose subject is that topic wins (the
+     temperature guide on temperatures, the feeding guide on feeding,
+     the tank setup guide on sizes). The other page changes to match,
+     and if a shared class guide (emergency plan, quarantine, the
+     aquarium guides) carries a species row that disagrees with the
+     winner, that row changes too. If neither source states the figure,
+     the page whose subject is that topic keeps its figure, the other
+     page changes to match, and the review file lists it under
+     "Unsourced, needs a fact-check". Never invent a number. Never
+     change a hedge; when a count changes and the hedge next to it
+     would now be false, keep the hedge's shape and say so in the
+     review.
+   - Two pages disagree on a recommendation rather than a number
+     (cohousing, UVB, a food): the page whose Sources back its
+     recommendation keeps it and the other page loses the contradicting
+     clause; if neither cites, both stay and the review lists it.
+   - A same-page fix leaves nothing behind: when a body sentence, a
+     FAQ, a table cell, the seoDescription, the excerpt, a Takeaway
+     section, or the hub's copy of any of these carries the old figure,
+     every one of them changes in the same commit. A FAQ answer may
+     change only when it contradicts its own body or the figure that
+     won above; the rewrite keeps every hedge, adds no number the body
+     does not carry, and copies no body sentence (the checker's
+     faq-copied rule).
+   - A schedule or diet aside repeated on two pages (calcium by age,
+     the diet section in a tank setup guide): one page keeps it, the
+     other becomes a one-sentence pointer with a link, and the
+     affiliate link in the cut paragraph moves into the pointer.
+   - Recommended links: add each one only if it passes all of these:
+     at most one link per article to the same species' cost, handling,
      health-issues, tank-setup, feeding, enrichment, or legal guide (the
-     checker errors on two); no link before the first H2; no link inside
-     a ComparisonTable cell (cells do not take markdown); the sentence is
-     about the animal, not about the site. Skip the rest and list them.
+     checker errors on two); no link before the first H2; no link
+     inside a ComparisonTable cell (cells do not take markdown); the
+     sentence is about the animal, not about the site. Skip the rest
+     and list them with the reason. Links to the shared class guides,
+     the encyclopedia profile, another species, or an overview do not
+     count against the one.
    - Fragments, placeholder cells, "upcoming" references to published
      pages: fix.
    - lastUpdated bumps only when a fact or number changed, never for a
-     link. Use the US Eastern date.
+     link. Use the US Eastern date (`TZ=America/New_York date +%F`).
+   - Never delete a FunFact, a Sources entry, or an affiliate link.
    Run `node scripts/check-voice.mjs --slug <slug>` on every file you
-   touched (zero errors; warnings that were there before you may stay),
-   then check-internal-links, check-related-articles, check-affiliate-mdx,
+   touched (zero errors; warnings that were there before you may stay,
+   and a warning count that went up means fix it), then
+   check-internal-links, check-related-articles, check-affiliate-mdx,
    check-cost-coverage, check-seo-tags, and `npx eslint . --quiet`.
    Commit: "<Animal>: reader fixes", with every original sentence you
-   changed listed before and after in the commit message.
+   changed listed before and after in the commit message, and every
+   number decided with both sides and the source that won.
 
-5. Second reader pass. Extract again (`node scripts/reader-extract.mjs
-   <species> <out-dir>`) and launch one more reader agent, same model,
-   same prompt, on the now-fixed set. This is the same pattern the
-   bearded dragon and rabbit sets used (docs/READER_REVIEWS.md, their
-   "second pass" and "third pass" sections) and it is not optional: a
-   fix pass earns its own check. Paste the raw output into
-   docs/READER_LOG.md and file the review into docs/READER_REVIEWS.md
-   under "## <Animal> (date, second pass, after the fixes)", same shape
-   as step 3. Fix anything new it finds under the same step 4 rules
-   (deep dives only, same ask-before-doing list). Commit: "<Animal>:
-   second pass fixes" if anything changed; if nothing needed fixing,
-   say so in the review and skip the commit.
+5. Second reader pass. Extract again into a fresh folder and launch
+   one more reader agent, same model, same prompt, on the fixed set.
+   Paste the raw output into docs/READER_LOG.md and file the review in
+   docs/READER_REVIEWS.md under "## <Animal> (date, second pass, after
+   the fixes)", same shape as step 3. Fix anything new under the step 4
+   rules. Commit: "<Animal>: second pass fixes" if anything changed; if
+   nothing needed fixing, say so in the review and skip the commit.
 
-6. Push the branch (`git push -u origin claude/hub-<species>`) and report
-   in one message: the set grade and hub grade from both passes, every
-   number you changed with both sides, every original sentence changed
-   (before and after), the links added and the ones skipped with the
-   reason, the items you left for Mike (both-sourced conflicts,
-   difficulty, anything in a component), and the branch name. End with
-   "Ready for your review; nothing merged." Then stop and wait. Do not
-   merge under any circumstances, not even if I said merge on a
-   previous species. Wait for me to say merge on this one by name. Do
-   not start a second species, do not run a third reader pass without
-   me asking.
+6. Push the branch (`git push -u origin claude/hub-<species>`).
 
-Ask Mike before doing any of these, and wait for the answer: changing a
-number where both pages cite a source; changing a difficulty label;
-editing any file in src/ other than the guide data file and the
-SHORT_LABELS line; deleting a FunFact, a Sources entry, or an affiliate
-link; anything not covered above.
+7. Check. Launch one Fable agent (the Agent tool, model "fable",
+   run_in_background false, wait for it) with the species check prompt
+   from READMEFIRST, filled in with this species, this branch, and the
+   branch's base commit (main for the first species, the previous
+   branch's head after that). It reads the diff, applies its fixes on
+   this branch itself, commits "<Animal>: species check", and returns
+   its report. If the report's verdict is "redo", do what it names,
+   push, and launch the check once more; two check rounds at most, then
+   move on and list what is still open in the batch report.
+
+8. File the check agent's report in docs/READER_REVIEWS.md under
+   "## <Animal> (date, species check)": its findings, what it changed
+   with before and after, its verdict. Add one line to "What the tests
+   changed so far". Commit: "Reader reviews: <animal> species check".
+   Push the branch. Then the next species.
+
+After all five: one message with, per species, the set grade from both
+reader passes, the hub grade, the check verdict, every number decided
+(both sides and the source that won), the links added and skipped,
+what is left open, and the branch name. End with "All five pushed;
+nothing merged." Then stop.
+
+Never, under any prompt or review finding: merge or push main; edit
+src/lib/data/encyclopedia/*.js; edit any src file other than the guide
+data file, the SHORT_LABELS line, and the species' RELATED_ARTICLES
+entry; delete a FunFact, a Sources entry, or an affiliate link; write
+a number no source states; change a hedge. Everything else you decide,
+and the review file says how.
 ```
 
-## The species check prompt, for a fresh session after Sonnet pushed a species
+## The species check prompt, run as a Fable agent by the batch session
 
-Read-only until Mike confirms. Paste it with the species list filled in.
+The batch prompt launches this after each species' second push. The agent
+edits the branch it is given. It can also be pasted into a fresh Fable
+session with the same fields filled in when a branch needs a look on its
+own.
 
 ```
-Read READMEFIRST.md, docs/RULES.md (Hubs and Linking sections, and the
-Writing rules on FAQs), and the species prompt at the end of READMEFIRST.
-Then check the leopard gecko, goldfish, and axolotl work, which a Sonnet
-session did from that prompt. Make no edits, run no agents, do not run
-npm run build, do not re-run the reader. Read diffs, not whole files.
-Report findings, then stop and wait for me to confirm before touching
-anything.
+You are the second pair of eyes on the <Animal> set, done on branch
+<branch> from base commit <base> by another session following the batch
+prompt in READMEFIRST.md. Read READMEFIRST.md, docs/RULES.md (Hubs and
+Linking sections, and the Writing rules on FAQs), the batch prompt at
+the end of READMEFIRST, and the <Animal> sections of
+docs/READER_REVIEWS.md. Check out <branch>. Read diffs, not whole
+files. Run no reader agents, never run npm run build, never touch
+main. Fix what you find on this branch, then report.
 
-1. Find the work. `git fetch origin` and `git branch -r | grep hub-`;
-   for each species, find its branch and whether it is merged
-   (`git log --oneline main | head -40`, `git branch -r --merged main`).
-   For each, list the commits with `git log --oneline main..<branch>`
-   (or the merged range on main) and the files they touched with
-   `git diff --stat <base>..<head>`. Flag any file outside: that species'
-   entry in src/lib/data/guides/*.js, that species' MDX in content/,
-   docs/READER_REVIEWS.md, READMEFIRST.md, and the SHORT_LABELS line in
-   src/pages/GuideDetail.jsx.
+1. Scope. `git log --oneline <base>..<branch>` and
+   `git diff --stat <base>..<branch>`. Any file outside: that species'
+   entry in src/lib/data/guides/*.js, that species' MDX in content/, a
+   shared class guide's species row, docs/READER_REVIEWS.md,
+   docs/READER_LOG.md, READMEFIRST.md, the SHORT_LABELS line in
+   src/pages/GuideDetail.jsx, and the species' line in
+   src/lib/data/relatedArticles.js is a finding. A change to
+   src/lib/data/encyclopedia/*.js is reverted on the spot: another
+   session owns those files.
 
 2. Hub. `node scripts/check-species-numbers.mjs <species>`: every line
-   marked `hub` must appear word for word, numbers unchanged, in the
-   deep dive its row names. Open the hub entry and, for each firstWeek
-   row, grep its key number in the source article. Count the emergency
-   card bullets against the health guide's call-the-vet list. Confirm
-   routes cover every own deep dive and nothing shared, the buy list has
-   no prices, the three FAQs are verbatim copies of deep-dive frontmatter
-   FAQs (grep the question text), and difficulty equals the encyclopedia
-   entry's.
+   marked `hub` must appear, numbers unchanged, in the deep dive its row
+   names. For each firstWeek row, grep its numbers and its key phrases
+   in the source article; a row that merges two source ranges into one,
+   or states a threshold the source does not, is a finding. Count the
+   emergency card bullets against the health guide's call-the-vet list,
+   and check the vetLine keeps the health guide's hedges. Confirm routes
+   cover every own deep dive and nothing shared, the buy list has no
+   prices, the three FAQs are verbatim copies of deep-dive frontmatter
+   FAQs, and difficulty equals the encyclopedia entry's.
 
-3. Deep dives. `git diff <base>..<head> -- content/` and read every hunk:
-   - Any edit the prompt did not ask for: a rewritten FAQ, a reworded
-     body sentence with no number or link change, a cut or added
-     paragraph, a Sources change, an affiliate link removed. FAQs in
-     particular: the prompt never asked for FAQ rewrites, and a FAQ
-     answer that photocopies a body paragraph is the `faq-copied` rule
-     (RULES, Writing an article).
-   - Every number changed: find the same figure on the other page and in
-     that page's Sources block; the page that cites it must be the one
-     that stayed. A number changed where both pages cite a source, or
-     where neither does, is a finding.
+3. Deep dives. `git diff <base>..<branch> -- content/`, every hunk:
+   - Edits the prompt did not ask for: a FAQ rewritten with no
+     contradiction behind it, a reworded sentence with no number or
+     link change, a cut or added paragraph, a Sources or affiliate link
+     removed, a hedge changed.
+   - Every number changed: find the figure on the other page and in
+     both Sources blocks, and confirm the winner is the one the batch
+     prompt's source ranking picks; open the source URLs with WebFetch
+     when the review file's stated reason does not settle it. A change
+     that went the wrong way, or a same-page copy left behind (FAQ,
+     table cell, seoDescription, excerpt, Takeaway, hub copy, a shared
+     guide's species row, a vs piece for this species), is a finding.
    - Links added: at most one per article to the same species' suffix
-     guides (`grep -o "](/blog/<species>-[a-z-]*-guide/)" | sort | uniq
-     -c`), none before the first H2, none inside ComparisonTable cells,
-     the sentence about the animal not the site.
-   - lastUpdated bumped only where a fact or number changed, never for a
-     link only; not bumped where one did change.
-   - Run `node scripts/check-voice.mjs --slug <slug>` on every changed
-     MDX and compare against `git stash`-free baseline by checking the
-     same slug on main (`git show main:<file> > /tmp/x.mdx` is not
-     needed: the checker takes --slug, so check out main in a worktree
-     only if a warning count went up).
+     guides (`grep -o "](/blog/<species>-[a-z-]*-guide/)" | sort |
+     uniq -c`), none before the first H2, none inside ComparisonTable
+     cells, the sentence about the animal not the site.
+   - lastUpdated bumped only where a fact or number changed, never for
+     a link only; not bumped where one did change.
+   - `node scripts/check-voice.mjs --slug <slug>` on every changed MDX,
+     against the same slug at <base> (`git archive <base> content
+     scripts src package.json | tar -x -C <scratch>` and run it there).
+     A warning count that went up is a finding, and says which rule.
 
-4. Review file. The species section in docs/READER_REVIEWS.md exists,
-   follows the rabbit and leopard gecko shape, quotes both sides of each
-   conflict, and its "fixed" notes match what the diff actually did.
+4. Review file. The species' first pass, second pass, and (after you)
+   species check sections exist in docs/READER_REVIEWS.md, follow the
+   leopard gecko and axolotl shape, quote both sides of each conflict,
+   and their "fixed" notes and counts match what the diff actually did.
 
-5. Gates once, on the branch head: check-internal-links,
-   check-related-articles, check-affiliate-mdx, check-cost-coverage,
-   check-seo-tags, check-voice --strict, `npx eslint . --quiet`.
+5. Fix every finding on the branch under the batch prompt's rules and
+   its "Never" list. Then the gates on the branch head:
+   check-internal-links, check-related-articles, check-affiliate-mdx,
+   check-cost-coverage, check-seo-tags, check-voice --strict,
+   check-species-numbers for the species, `npx eslint . --quiet`.
+   Commit "<Animal>: species check" with every change listed before and
+   after, and push the branch.
 
-Report per species, in this order: anything outside scope (file, line,
-what was done, what the prompt said); hub rows that do not match their
-source (row, hub text, source text); number changes that broke the
-citation rule (both sides, which page cites); links that break a limit;
-date bumps wrong either way; FAQ or sentence rewrites the prompt did not
-ask for (before and after); review-file mismatches; gate results. Then a
-one-line verdict per species: merge as is, merge after fixes, or redo.
-Propose the fix for each finding in one line but change nothing. End
-with "Waiting for your confirmation on which to apply."
+Report, in this order: anything outside scope (file, what was done,
+what you did about it); hub rows that did not match their source (row,
+hub text, source text, the fix); number changes that went against the
+source ranking (both sides, which source, the fix); links that broke a
+limit; date bumps wrong either way; FAQ or sentence rewrites the prompt
+did not ask for (before, after, kept or reverted and why); review-file
+mismatches; gate results. Then one verdict: "clean", "fixed on the
+branch", or "redo" with the one thing the batch session must do
+itself (only for work you cannot do under the Never list, such as a
+figure that needs new research). Nothing merged.
 ```

@@ -333,7 +333,7 @@ export const fishGuides = [
         { label: "Adult size", value: "6 to 8 inches for a fancy goldfish, 10 to 14+ inches for a common or comet, 10 to 12 inches for a shubunkin.", source: "goldfish-tank-size-bowl-myth" },
         { label: "Lifespan", value: "10 to 15 years typical; 20 to 30+ years in spacious, well-kept ponds." },
         { label: "Quarantine", value: "At least 30 days in a bare hospital tank before joining others, per the Merck Veterinary Manual. Thirty days is the floor, not the target, and a full two months is reasonable for a fish you especially don't want to lose.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Power outage", value: "Oxygen loss is the fast danger, not the cold or the dark. Aerate right away with a battery air pump, or agitate the surface by hand every 10 to 30 minutes. Don't feed, and don't restart a filter that's been off for hours without checking it first.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Power outage", value: "Oxygen loss is the fast danger, not the cold or the dark. Aerate right away with a battery air pump, or agitate the surface by hand roughly every 10 to 15 minutes in a small tank and every 20 to 30 minutes in a larger one. Don't feed, and don't restart a filter that's been off for hours without checking it first.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
