@@ -758,6 +758,126 @@ doses beyond anchor worm and flukes, both filed in docs/READER_LOG.md
 as items no guide covers. The encyclopedia's "4-12+ inches" floor is
 out of scope for a deep-dives-only fix pass; left for Mike.
 
+## Axolotl (2026-09-08, first pass, after the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal). One Sonnet agent,
+about 92k tokens. The review below reads the old legacy hub (housing
+prose, a cost table, a checklist); the router hub was built from its
+findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A- | The fastest path to a checklist and a budget. |
+| Encyclopedia | B | Under a minute, origin and conservation status, nothing to act on. |
+| Cost | B- | Useful ranges, but its own math didn't match the hub's table. |
+| Handling | A | Clear and specific about drip acclimation. |
+| Health issues | A | Real vet thresholds instead of vague warnings. |
+| Tank setup | A | The one page a reader would actually shop from. |
+| Feeding | A | The age-based schedule is exactly what a new owner needs. |
+| Enrichment | B+ | Useful but padded with fun facts repeated elsewhere in the set. |
+| Legal | B+ | The Virginia correction is genuinely useful. |
+
+Set grade: B. "Individually strong, technically consistent on the
+numbers that matter most, undercut by a hub that contradicted a deep
+dive on cohousing and cost math that didn't reconcile with its own
+table."
+
+Hub versus the set, both sides quoted (all against the old legacy
+hub, resolved by the router rebuild):
+
+- Cohousing. The old hub said: "They are social enough to house in
+  pairs if the tank is large enough, but monitor for nipping." The
+  enrichment guide says: "Cohousing isn't enrichment for this species
+  and carries real risk, axolotls will bite at limbs and gills,
+  especially around feeding time or if sizes are mismatched. Housing
+  separately is the safer default." Two different recommendations,
+  not two phrasings of one. The router hub states neither; it has no
+  cohousing row, since no single deep dive gives one clean recommendation
+  to copy and the two existing statements disagree. Left for Mike:
+  writing an actual cohousing row means resolving this tension in the
+  enrichment guide first, out of scope for a deep-dives-only pass
+  focused on links and numbers, not new content.
+- Tank size. The old hub said a 20-gallon "is the minimum for one
+  adult (40 gallons preferred)," implying 40 gallons was the real
+  target even for one axolotl. Tank setup says: "A 20-gallon long
+  tank is the minimum for one axolotl, with a 40-gallon breeder
+  better if you're keeping two," tying 40 gallons specifically to a
+  pair. The router hub's Tank size row now quotes tank setup's own
+  sentence, so the 40-gallon figure is correctly tied to keeping two.
+- Setup cost. The old hub's own setup table summed to roughly $265 to
+  $725 including the chiller. The cost guide states "$200 to $500 for
+  a basic setup, or $450 to $900" with a chiller. The router hub's
+  Budget row now quotes the cost guide's own figures directly instead
+  of summing a separate table.
+
+The set as a whole: buyable, houseable, feedable, and basic
+troubleshooting is all here. Two real gaps, both checked against the
+Health and More list before being called real: how to actually cycle
+the tank before the axolotl arrives (tank setup says it "needs to be
+fully cycled" but three separate deep dives point to an unwired
+article, "why axolotls need cold, clean water," for the how; that
+article is not reachable from the Deep Dive sidebar at all, see
+below), and a new-arrival quarantine length (the handling guide skips
+straight to drip-matching with no window given; the shared amphibian
+quarantine guide has the real number, 6 to 8 weeks, and it is now a
+router hub row).
+
+Deep dives against each other: temperature numbers (60 to 68°F,
+trouble above 72, danger above 75) repeat with no conflict across the
+set. Substrate rules (fine sand under 1mm or bare bottom, never
+gravel) repeat word for word across tank setup, feeding, and
+enrichment with no disagreement. Adult feeding frequency is stated
+three slightly different ways (the old hub's "every other day to 3
+times per week", tank setup and feeding's FAQ "every 2 to 3 days",
+and feeding's fuller age table) close enough to be the same rule
+stated loosely, not a real conflict; the router hub's Feeding schedule
+row now quotes the feeding guide's own age table.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | none needed | |
+| Encyclopedia | none needed | |
+| Cost | "Worth checking before you buy though: this species is banned in a handful of states." | Legal guide (sentence sits before the first H2) |
+| Handling | "or a health check" | Health issues guide |
+| Health issues | "Overfeeding and the wrong food are common triggers too." | Feeding guide |
+| Tank setup | "day-to-day handling should stay minimal" | Handling guide |
+| Feeding | "never use gravel or small rocks as substrate" | Tank setup guide |
+| Enrichment | "Tong-feeding or scattering nightcrawler pieces" | Feeding guide |
+| Legal | none needed, already well linked | |
+
+Trust: the regeneration and neoteny fun facts repeat almost verbatim
+across three separate pages, which reads as padding rather than
+knowledge. The sentence that most convinced the reader a real keeper
+wrote this, from cost: "This is one of the smaller pieces of the
+overall cost picture, the tank and temperature control matter a lot
+more."
+
+Reader's two changes: make the hub's cohousing line match the
+enrichment guide, or explain the disagreement (the router rebuild
+sidesteps this by dropping the claim rather than resolving it, left
+for Mike); add the missing links named above, especially cost guide
+to the legal guide (skipped, before the first H2, see below).
+
+Fixed the same day: the router hub rebuild resolves the tank-size and
+setup-cost conflicts by construction and drops the cohousing claim
+rather than restate a disputed one; five of the eight recommended
+links added (cost guide's is disqualified by position, not skipped
+by choice). The tank setup guide's cycling sentence now also links
+the shared aquarium cycling guide directly, since the reader flagged
+cycling as a real, unanswered "how" question; a matching Cycling row
+was added to the router hub.
+
+Open: `why-axolotls-need-cold-clean-water` is linked four times across
+the set (cost, handling, health issues, tank setup) but is not wired
+into RELATED_ARTICLES for axolotl and is invisible in every Deep Dive
+sidebar on the site, the same bug class as leopard gecko's temperature
+guide. Fixing it means editing src/lib/data/relatedArticles.js, out of
+scope for this pass; left for Mike. Also left for Mike: the cohousing
+disagreement above, and cost guide's link (before the first H2).
+
 ## Single-article reads (2026-09-08, text only)
 
 Earlier single-page reads, kept for the record. Grades: tegu handling A-,
@@ -816,3 +936,23 @@ unsourced "about half of captive leopard geckos may carry it."
   construction. Fixes: the bowl myth piece's 65-72°F FAQ answer corrected
   to 65-75°F to match tank setup's sourced number, its link-only
   care-guide-hub sentence cut, five of eight recommended links added.
+  Second pass (branch claude/hub-goldfish-second-pass, not merged):
+  caught a stale copy, the router hub's own FAQ still had the pre-fix
+  65-72°F betta number since the hub copies a deep dive's FAQ at build
+  time rather than staying synced to it; and a same-page contradiction,
+  the feeding guide's FAQ said a fast was fine through 10 days while its
+  own body said effects may start at 5. Both fixed, five more links
+  added, one extractor limitation (AffiliateLink cells in a
+  ComparisonTable) noted rather than fixed.
+- 2026-09-08, axolotl (branch claude/hub-axolotl): hub rebuilt to router
+  shape, resolving the old hub's tank-size (40 gallons wrongly implied
+  as the target for one animal, not a pair) and setup-cost ($265-725
+  summed versus the cost guide's $200-500/$450-900) conflicts by
+  construction, and dropping a cohousing claim that contradicted the
+  enrichment guide rather than restating either side. Five of six
+  recommended links added; the tank setup guide's cycling sentence now
+  links the shared cycling guide directly, with a matching Cycling row
+  added to the hub. Found but not fixed: `why-axolotls-need-cold-clean-water`
+  is linked four times across the set but not wired into
+  RELATED_ARTICLES, the same bug class as leopard gecko's temperature
+  guide, left for Mike.

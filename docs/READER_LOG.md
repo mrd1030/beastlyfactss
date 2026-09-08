@@ -148,6 +148,78 @@ setup-cost and feeding-schedule conflicts by construction; the
 65-72°F FAQ answer corrected to 65-75°F; a link-only sentence pointing
 at the care guide hub cut; five of eight recommended links added.
 
+## Axolotl (2026-09-08)
+
+One Sonnet agent, nine pages (hub, encyclopedia, cost, handling,
+health issues, tank setup, feeding, enrichment, legal), about 92k
+tokens. Read the old legacy hub, before the router rebuild. Full agent
+output below, unedited.
+
+---
+
+One line per page
+
+00 Hub: I would finish it, it is the fastest path to a checklist and a budget, grade A minus.
+01 Encyclopedia: I would finish it in under a minute, it gives origin and conservation status but nothing to act on, grade B.
+02 Cost guide: I would finish it, useful ranges, but its own math does not match the hub's table, grade B minus.
+03 Handling guide: I would finish it, clear and specific about drip acclimation, grade A.
+04 Health guide: I would finish it, gives real vet thresholds instead of vague warnings, grade A.
+05 Tank setup guide: I would finish it, this is the one I would actually shop from, grade A.
+06 Feeding guide: I would finish it, the age-based schedule is exactly what I needed, grade A.
+07 Enrichment guide: I would finish it, useful but padded with fun facts I already read twice, grade B plus.
+08 Legal guide: I would finish it, the Virginia correction is genuinely useful, grade B plus.
+
+Hub and encyclopedia versus the deep dives
+
+The encyclopedia earns its place, it is the only page with origin, wild diet, and conservation status, none of which repeats elsewhere. The hub is mostly a compressed rerun of the deep dives with no new information, which is fine as a landing page but it does disagree with them in two places.
+
+First, cohousing. The hub says: "They are social enough to house in pairs if the tank is large enough, but monitor for nipping." The enrichment guide says: "Cohousing isn't enrichment for this species and carries real risk, axolotls will bite at limbs and gills, especially around feeding time or if sizes are mismatched. Housing separately is the safer default." Those are two different recommendations, not two phrasings of one.
+
+Second, the 40 gallon tank. The hub says a 20 gallon is "the minimum for one adult (40 gallons preferred)," implying 40 gallons is the real target even for a single animal. The tank setup guide says: "A 20-gallon long tank is the minimum for one axolotl, with a 40-gallon breeder better if you're keeping two," tying the 40 gallon size specifically to a pair. A reader following only the hub would think they underbought at 20 gallons for a single axolotl.
+
+Third, the money does not add up. The hub's own setup table sums to roughly $265 to $725 including the chiller. The cost guide states "$200 to $500 for a basic setup, or $450 to $900" with a chiller. Subtracting the hub's chiller line from its own total gives a basic setup of about $115 to $375, not $200 to $500.
+
+The set as a whole
+
+After all nine pages I could buy, house, feed, and do basic troubleshooting on an axolotl. What is missing: how to actually cycle a tank before the axolotl arrives (the tank setup guide insists it "needs to be fully cycled" but never says how), and a quarantine period for a new arrival, which the handling guide skips straight past with drip-matching alone. Both are named in the Health and More sidebar list but never linked from the body text that raises the need. Three articles (handling, health, tank setup) all point readers to a page called "why axolotls need cold, clean water" for the nitrogen cycle and hardness numbers, but that page is not in this set and not in either sidebar list, so the question it is supposed to answer has no answer here.
+
+Overlap and conflict across the deep dives
+
+Temperature numbers repeat identically everywhere (60 to 68°F, trouble above 72, danger above 75) with no conflict. Feeding frequency for adults is given three ways: "every other day to 3 times per week" (hub), "every 2 to 3 days" (tank setup and feeding guide FAQ), and a fuller age table in the feeding guide. These are close enough to be the same rule stated loosely, not a real conflict. Substrate rules (fine sand under 1mm or bare bottom, never gravel) repeat word for word across tank setup, feeding, and enrichment, with no disagreement.
+
+One link per page
+
+00: none needed, the sidebar already links every title in prose form.
+01: none needed, same reason.
+02: "Worth checking before you buy though: this species is banned in a handful of states." should link to the legal guide, it currently does not.
+03: "Sometimes a move is genuinely necessary: tank maintenance, a water change that requires temporarily relocating the axolotl, or a health check." the words "health check" should link to the health issues guide.
+04: "Overfeeding and the wrong food are common triggers too." should link to the feeding guide.
+05: "Once this setup is in place, day-to-day handling should stay minimal." should link to the handling guide.
+06: "never use gravel or small rocks as substrate" should link to the tank setup guide's substrate section.
+07: "Tong-feeding or scattering nightcrawler pieces so the axolotl has to locate them is a simple upgrade." should link to the feeding guide.
+08: none needed, already well linked.
+
+Trust
+
+Two things read as generic filler rather than specific knowledge: the "fun fact" boxes repeat the same regeneration and neoteny facts across three separate pages almost verbatim. The sentence that most convinced me a real keeper wrote this: "This is one of the smaller pieces of the overall cost picture, the tank and temperature control matter a lot more," because it is the kind of correction someone gives after watching new owners fixate on the wrong line item.
+
+Grade and two fixes
+
+Grade: B. Individually strong, technically consistent on the numbers that matter most, undercut by a hub that contradicts a deep dive on cohousing and cost math that does not reconcile with its own table. First fix: make the hub's cohousing line match the enrichment guide, or explain the disagreement. Second fix: add the missing links named above, especially cost guide to legal guide.
+
+Not covered anywhere
+
+How to cycle the tank before adding the axolotl is not answered in this set, though "How to Cycle a Fish Tank" exists in the Health and More list, it is never linked from the tank setup page that raises the need. New-arrival quarantine length is likewise named only in "Amphibian Quarantine, Acclimation, and Water Hardness" in that same list, never linked from the handling guide's acclimation section.
+
+---
+
+Fixed the same day (docs/READER_REVIEWS.md has the full write-up): the
+router hub rebuild resolves the tank-size and setup-cost conflicts by
+construction and drops the cohousing claim instead of restating a
+disputed one; five of six recommended links added; the tank setup
+guide's cycling sentence now links the shared cycling guide, with a
+matching hub row.
+
 ## Items no guide covers (all species, running list)
 
 - **Leopard gecko:** what a respiratory infection actually is or how it
