@@ -274,6 +274,91 @@ greens and pellet rule across every page.
 
 Open. Nothing fixed yet.
 
+## Rabbit (2026-09-08, third pass, after the router hub)
+
+Same extractor, same prompt, one Opus agent, about 74k tokens. Run after
+the hub was rebuilt as a router (RULES, Hubs) and the second-pass fixes
+landed in the deep dives.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A- | The only page that says what to do in week one and what to buy: pen size, litter type, the 8 hour call, the budget. A router, not a rerun. |
+| Encyclopedia | C- | Thirty seconds, nothing to act on, and its difficulty and lifespan numbers fight the hub. |
+| Cost | A- | Can build a real budget from it. |
+| Handling | A | Two-hand lift, football hold, what to stop doing. |
+| Health issues | A- | The vet-today list and the spay argument. |
+| Tank setup | B+ | Pen, flooring, litter box, done. |
+| Feeding | A- | Best page for daily decisions, apart from one age conflict. |
+| Enrichment | A | Changed the plan to two rabbits. |
+| GI stasis | A- | The dropping-check habit is the one thing the reader will do daily. |
+
+Set grade: A- (from B). "Genuinely useful, well cross-linked, and honest
+about uncertainty, held back by an encyclopedia that fights the hub and a
+handful of numbers that do not reconcile."
+
+Hub versus the set: one slip, the hub credited "At least 5 hours a day to
+run" to the enrichment guide when the figure is tank setup's, and
+enrichment argues against a daily allowance. Fixed the same day (source
+changed to tank setup). Otherwise the hub agrees with every deep dive.
+
+Encyclopedia versus hub, both sides quoted:
+
+- Difficulty. Encyclopedia "Beginner/Intermediate", hub "Intermediate"
+  (the hub label was changed on the second-pass finding; Mike decides
+  which one stands, then both match).
+- Lifespan. Encyclopedia "5-12 years (wild); up to 12+ years in
+  captivity", hub and tank setup "7 to 10 years indoors".
+
+Deep dives against each other:
+
+- Alfalfa, inside feeding: "Juveniles (7 weeks to 7 months): Unlimited
+  alfalfa hay" against "Transition to adult (roughly 4 to 6 months):
+  Alfalfa is phased out." The reader cannot do both at five months.
+- Hay share, softer: GI stasis "80% or more", hub and feeding "80 to 85%".
+  Enrichment "Timothy hay should be the bulk of the diet"; feeding allows
+  orchard, oat, or brome equally.
+- Read four times: the 8 to 12 hour rule. Three times: continuously
+  growing teeth. Defensible for the emergency, tedious for the teeth.
+
+Gaps: nail trimming (the buy list sells clippers, no page shows how),
+carrier use and the car trip, brushing during a molt (feeding names fur
+ingestion as a stasis cause), heat beyond "above 85 degrees F", the cost
+of the RHDV2 vaccine health calls near-mandatory.
+
+Stranded: handling's teeth grinding (only GI stasis explains the
+difference from tooth-purring); cost's uterine cancer (only health gives
+the age-two onset); tank setup's "spaying improves litter habits" (only
+cost says what it costs).
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | none needed, every line carries one | |
+| Encyclopedia | "Adult Size: Highly variable; 2.5-20+ lbs depending on breed" | Feeding guide |
+| Cost | "Rabbits need an exotic or rabbit-savvy vet, not a standard small-animal clinic, and a single serious illness can be expensive." | Health issues guide |
+| Handling | "Most rabbits are calmest with all four feet on the ground, and many never come to love being picked up..." | Enrichment guide |
+| Health issues | "Annual vaccination is recommended in the US and is genuinely worth discussing with your vet, not an optional extra." | Cost guide |
+| Tank setup | "Spaying or neutering also meaningfully improves litter habits." | Cost guide |
+| Feeding | "GI stasis. A slowdown or stoppage of normal gut motility..." (named five times, never linked) | GI stasis guide |
+| Enrichment | "Neuter both, bond them properly instead of putting two rabbits in a room." | Cost guide |
+| GI stasis | trigger table row "Low-fiber diet" | Feeding guide |
+
+Trust: the unsourced "Roughly 70% of rabbits recover with prompt
+veterinary treatment" (feeding, flagged in the second pass too); the
+"$1,500 workup" beside a "$500 to $1,000 emergency fund"; the housing
+article's URL saying tank setup. The sentence that convinced the reader,
+from enrichment: "Bonding takes weeks and going too fast is how it fails:
+short supervised sessions on ground neither rabbit has claimed, ended
+before either animal is tired of it, repeated daily until they rest in
+contact."
+
+Reader's two changes: reconcile the alfalfa cutoff, lifespan, difficulty,
+and the emergency fund against the $1,500 workup; then cover what the buy
+list already sold (nails, carrier, molting, heat).
+
+Open: everything above except the hub source slip.
+
 ## Single-article reads (2026-09-08, text only)
 
 Earlier single-page reads, kept for the record. Grades: tegu handling A-,
