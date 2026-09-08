@@ -153,14 +153,14 @@ catches the defects the commands produce. Per batch:
    stranded (the sibling-link exception in RULES), fragments and
    placeholder cells, unsourced claims. About 70k tokens per species. Do
    the bearded dragon and rabbit findings first, they are already in the
-   file. Bearded dragon, rabbit, and leopard gecko: done 2026-09-08, next
-   is any species with a care package (goldfish, axolotl, ...). Raw
-   reader output and the running "not covered anywhere" list are in
+   file. Bearded dragon, rabbit, leopard gecko, and goldfish: done
+   2026-09-08, next is any species with a care package (axolotl, ...).
+   Raw reader output and the running "not covered anywhere" list are in
    docs/READER_LOG.md, one entry per species.
 6. Hub reconciliation, one species per session, with its set test and
    fixes in the same session: the species prompt at the end of this file
-   (Sonnet, default effort). Rabbit, bearded dragon, and leopard gecko
-   done and on main. Next: goldfish, axolotl, then the rest of the
+   (Sonnet, default effort). Rabbit, bearded dragon, leopard gecko, and
+   goldfish done and on main. Next: axolotl, then the rest of the
    species with a care package, then the others. Legacy
    hubs keep rendering the old care sheet until then. Dogs and cats
    last. Rabbit difficulty settled at Beginner/Intermediate on the
@@ -340,8 +340,8 @@ dashes:
 
 One species per session. Paste this, replacing <species> with the guide id
 (the folder prefix in content/guides, for example leopard-gecko) and
-<Animal> with the name. Rabbit, bearded dragon, and leopard gecko are done
-and merged to main. Next up: goldfish.
+<Animal> with the name. Rabbit, bearded dragon, leopard gecko, and
+goldfish are done and merged to main. Next up: axolotl.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
