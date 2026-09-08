@@ -2079,6 +2079,101 @@ hamster-proofing specifics filed in docs/READER_LOG.md for Mike. Not
 added: cost guide's suggested link (no natural sentence slot without
 adding new prose, out of scope for a links-and-numbers-only pass).
 
+## Russian tortoise (2026-09-08, first pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, legal; this species has no dedicated
+feeding guide, its diet lives in the tank setup guide's Diet Basics
+section and the shared herbivorous reptile safe plants guide). One
+Sonnet agent, about 97k tokens. The hub still carried the old legacy
+prose when this review was filed; the router hub was built from its
+findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A | Fully actionable, numbers and buy list up front. |
+| Encyclopedia | B+ | Real complementary content: range, CITES, wild-caught risk. |
+| Cost | B- | Actionable, but its own FAQ contradicted its own body. |
+| Handling | B+ | Short and actionable: table not aquarium, no two males. |
+| Health issues | A | The best page in the set. |
+| Tank setup | A | The core how-to page, sourced and specific. |
+| Enrichment | B+ | Useful and concrete, clearly secondary to setup and health. |
+| Legal | A | Genuinely surprising and well sourced (four-inch rule, Colorado, Hawaii). |
+
+Set grade: B+. "Deep, sourced, mostly consistent, let down by one
+article contradicting itself and by missing a few cheap cross-links
+between pages that clearly needed each other."
+
+No hub-versus-deep-dive disagreement this pass; the one real conflict
+was internal to the cost guide itself, both fixed the same day:
+
+- Setup total. Body and table: "$372 to $775." FAQ: "Roughly $400 to
+  $600 total." Fixed the FAQ to read off the body's own subtotal.
+- Annual cost. Body: "Ongoing Costs: $365 to $715 a Year." FAQ:
+  "Roughly $500 to $650 a year." Fixed the FAQ to match.
+- Also caught and fixed the same day, found while verifying the above:
+  the cost guide's own body claimed "No state bans this species, and
+  New Jersey is the only place that wants a permit," directly
+  contradicted by the legal guide, the actual subject-matter authority,
+  which documents Colorado's outright ban and four states that require
+  a permit. Corrected to defer to the legal guide.
+
+Deep dives against each other: substrate (50/50 topsoil and coconut
+coir), the sulcata size comparison, and the diet staples (dandelion,
+plantain, clover) all repeat consistently between tank setup and
+enrichment with no disagreement, just overlap.
+
+The set as a whole: buyable, legally checkable, houseable, and
+health-checkable from this set alone. Diet is adequately covered
+across the tank setup guide's Diet Basics section and the shared safe
+plants guide, per the reviewer's explicit check. Two gaps, checked
+against the Health and More list before being called real (neither
+covered by the shared reptile guides, including the brumation and
+sexing guides): a calcium/multivitamin dusting schedule (both are on
+the buy list with no application frequency attached), and a proactive
+hydration routine such as regular soaking, as distinct from reading
+urates after dehydration has already happened. Both filed in
+docs/READER_LOG.md.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | "They need an outdoor enclosure with walls buried 12 inches or more underground" | Outdoor reptile housing guide (hub out of scope this pass) |
+| Encyclopedia | "wild-caught tortoises arrive stressed and carrying parasites and die at a higher rate" | Health issues guide's Parasites section (encyclopedia out of scope this pass) |
+| Cost | "a federal rule bars selling any turtle with a shell under four inches" | already fixed this pass with a legal guide link, addressing the same underlying gap |
+| Handling | "House males separately from each other" | Tortoise sexing, eggs, and egg binding guide |
+| Health issues | "treat consistent UVB exposure plus a calcium source like cuttlebone as essential" | Tank setup guide's Lighting section |
+| Tank setup | "a pre-brumation vet health check is worth doing first" | Tortoise brumation guide |
+| Enrichment | "placing dandelion, plantain, clover, endive, or other safe weeds in multiple spots" | Herbivorous reptile safe plants guide |
+| Legal | "they live long enough that rehoming is a real possibility" | already covered, legal gets its own card, out of scope for a deep-dives-only pass |
+
+Trust: the cost guide contradicting its own FAQ twice. The sentence
+that most convinced the reader, from cost: "The wide top end is not
+padding. Three of those lines, the dimming thermostat, the infrared
+temperature gun and the gram scale, are the ones most first setups
+leave out, and they are exactly the equipment that prevents the
+thermal burns and the slow weight loss."
+
+Reader's two changes: fix the cost guide's FAQ numbers to match its
+own body and the hub (done), and add the sexing and brumation-protocol
+links identified above (done).
+
+Fixed the same day: the router hub rebuild; the cost guide's two
+self-contradicting FAQ answers corrected to match its own body, and
+its "no state bans this species" claim corrected against the legal
+guide; the tank-setup-guide's two duplicate "Enclosure Size" sections
+merged into one; a short Diet Basics section added to tank-setup-guide
+so its own Tortoise Trust fruit-avoidance citation, present in Sources
+but unused in the body, actually backs a claim; the enrichment guide's
+FAQ decor-rotation interval corrected to match its body; five
+recommended links added (handling to sexing, health issues to tank
+setup, tank setup to brumation, enrichment to safe plants, plus the
+cost-to-legal link from the earlier fix).
+
+Open: a calcium dusting schedule and a proactive hydration/soaking
+routine filed in docs/READER_LOG.md for Mike.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a

@@ -695,6 +695,84 @@ First two changes:
 - **Hamster:** cage cleaning frequency or schedule.
 - **Hamster:** what "hamster-proofing" a free-roam space concretely
   requires.
+- **Russian tortoise:** a calcium and multivitamin dusting schedule
+  (both are on the buy list with no application frequency attached).
+- **Russian tortoise:** a proactive hydration routine such as regular
+  soaking, distinct from reading urates after dehydration has already
+  happened.
+
+## Russian tortoise (2026-09-08)
+
+One Sonnet agent, eight pages (hub, encyclopedia, cost, handling,
+health issues, tank setup, enrichment, legal; no dedicated feeding
+guide for this species), about 97k tokens. Full agent output below,
+unedited.
+
+---
+
+# Russian Tortoise Care Set: Review
+
+## 1. Page by page
+
+- 00 Care guide hub: Finish it, fully actionable, numbers and buy list up front. Grade A.
+- 01 Encyclopedia: Finish it, low action but real complementary content (range, CITES, wild-caught risk). Grade B+.
+- 02 Cost guide: Finish it, actionable, but its own FAQ contradicts its own body. Grade B-.
+- 03 Handling guide: Short, finish it, actionable (table not aquarium, no two males). Grade B+.
+- 04 Health issues guide: Finish it, sourced, actionable, the best page in the set. Grade A.
+- 05 Enclosure setup guide: Finish it, the core how-to page, sourced and specific. Grade A.
+- 06 Enrichment guide: Finish it, useful and concrete, clearly secondary to setup and health. Grade B+.
+- 07 Legal guide: Finish it, genuinely surprising and well sourced (four-inch rule, Colorado, Hawaii). Grade A.
+
+## 2. Hub and encyclopedia
+
+Both earn their place. The hub is a compressed index with numbers pulled from each deep dive, not a rewrite. The encyclopedia covers taxonomy, wild range, and the wild-caught trade, none of which the deep dives touch. Neither repeats a deep dive's actual content.
+
+One disagreement, but it is inside the cost guide, not between hub and deep dive. The hub says "$372 to $775" to set up and "$365 to $715 a year," matching the cost guide's own body and table. But the cost guide's FAQ says setup is "Roughly $400 to $600 total" and yearly cost is "Roughly $500 to $650 a year." Three numbers, one topic, one article.
+
+## 3. The set as a whole
+
+Yes, mostly. Buying (cost, legal), setup (size, temperature, humidity, substrate, UVB), and health (MBD, respiratory infection, shell rot, pyramiding, parasites, kidney infection, bladder stones) are all covered with specifics I could act on. Diet is covered adequately across the tank setup guide's "Diet Basics" and the shared weeds guide, per the note.
+
+Two things a new owner needs are missing set-wide: how often to dust food with calcium and multivitamin (both are on the buy list with no schedule attached), and a proactive hydration routine (soaking), as opposed to just reading urates to catch dehydration after the fact.
+
+Questions raised but answered elsewhere without the text saying so:
+- The handling guide says "House males separately from each other" and the tank setup guide allows "two females together" with caution, but neither links to the shared "Tortoise Sexing" guide that would let a new owner actually tell the sexes apart.
+- The tank setup guide's brumation section says "a pre-brumation vet health check is worth doing first" but never points to the shared "Tortoise Brumation" guide, which is where the actual protocol (temperatures, weigh-ins, do-not list) lives.
+- The cost guide raises the four-inch rule in one sentence but the full explanation is three pages away in the legal guide, linked elsewhere in the same article for a different claim.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice, consistently: substrate (50/50 topsoil/coconut coir, deep enough to burrow) appears in both the tank setup and enrichment guides; the sulcata comparison ("stays small, lives indoors its whole life") appears nearly verbatim in the cost guide and handling guide; diet staples (dandelion, plantain, clover) appear in both the tank setup and enrichment guides. None of these conflict, they just repeat.
+
+The only real numeric conflict is internal to the cost guide, described above: "Upfront Setup: $372 to $775" (body) versus "Roughly $400 to $600 total" (FAQ), and "Ongoing Costs: $365 to $715 a Year" (body) versus "Roughly $500 to $650 a year" (FAQ).
+
+## 5. One link per page
+
+- Hub: "They need an outdoor enclosure with walls buried 12 inches or more underground" should link to the Outdoor Reptile Housing guide.
+- Encyclopedia: "wild-caught tortoises arrive stressed and carrying parasites and die at a higher rate than captive-bred ones" should link to the health guide's Parasites section.
+- Cost guide: "A federal rule bars selling any turtle with a shell under four inches commercially" should link straight to the legal guide's four-inch rule section.
+- Handling guide: "House males separately from each other" should link to the Tortoise Sexing guide.
+- Health guide: "treat consistent UVB exposure plus a calcium source like cuttlebone as essential" should link to the enclosure guide's Lighting section.
+- Enclosure guide: "a pre-brumation vet health check is worth doing first" should link to the Tortoise Brumation guide.
+- Enrichment guide: "placing dandelion, plantain, clover, endive, or other safe weeds in multiple spots" should link to the Safe Weeds guide (the tank setup guide does this, enrichment doesn't).
+- Legal guide: "they live long enough that rehoming is a real possibility rather than a hypothetical" should link to the Succession Planning guide.
+
+## 6. Trust
+
+Doubt: the cost guide contradicting its own FAQ is the thing that would make me stop trusting the numbers on that page specifically. A duplicated link entry in the health guide's link list (the stool guide linked twice) suggests a production seam, not a content problem, but it's a tell.
+
+Most convincing sentence: "The wide top end is not padding. Three of those lines, the dimming thermostat, the infrared temperature gun and the gram scale, are the ones most first setups leave out, and they are exactly the equipment that prevents the thermal burns and the slow weight loss."
+
+## 7. Overall grade
+
+B+. Deep, sourced, mostly consistent, let down by one article contradicting itself and by missing a few cheap cross-links between pages that clearly needed each other.
+
+Two changes first: fix the cost guide's FAQ numbers to match its own body and the hub, and add the sexing and brumation-protocol links identified above.
+
+## Not covered anywhere
+
+- How often to dust food with calcium and multivitamin (both are purchase items with no application schedule, and no page in the Health and More list covers it either).
+- A proactive hydration routine such as regular soaking, as distinct from reading urates to catch dehydration after it has already happened.
 
 ## Hamster (2026-09-08)
 
