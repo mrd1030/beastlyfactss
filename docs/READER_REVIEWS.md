@@ -634,7 +634,9 @@ every other leopard gecko page is a wiring gap, not a content gap.
 entry in src/lib/data/relatedArticles.js, so it doesn't auto-detect
 (temperature is not a standard suffix) and has no manual entry either.
 Fixing that means editing a src/ file outside the guide data file and
-the SHORT_LABELS line, out of scope for this pass; left for Mike.
+the SHORT_LABELS line, outside the prompt's file list; done anyway
+the same day (commit "Leopard gecko: wire the temperature guide into
+the Deep Dive list") because the guide was one of the hub's own routes.
 Also left for Mike: the hub's 65°F/60°F night-threshold rows (both
 sourced), the respiratory infection and cohabitation content gaps, and
 the crypto/fecal-test stranded question, none of which are fixable
@@ -880,7 +882,7 @@ Real findings, both confirmed and fixed:
   species (leopard gecko's SHORT_LABELS pattern aside) has now hit an
   extractor limitation.
 
-Six more recommended links from this pass, five added: cost guide to
+Six more recommended links from this pass, four added: cost guide to
 tank setup (the substrate/decor/test-kit sentence), handling guide to
 the power outage and transport guide (minimize time out of water),
 health issues guide to the quarantine guide (crowded holding tank
@@ -901,7 +903,7 @@ Medication names and doses beyond anchor worm repeat from the first
 pass, already filed.
 
 Fixed the same day: the hub's stale betta-temperature FAQ, the feeding
-guide's self-contradicting FAQ, five of six recommended links.
+guide's self-contradicting FAQ, four of six recommended links.
 
 Open: the extractor's inability to render an AffiliateLink-in-cell
 table, left for Mike as a tooling note rather than a content fix.
@@ -1074,13 +1076,11 @@ Real findings:
 
 Two more recommended links added: cost guide to tank setup (the cool
 water sentence), legal guide to the encyclopedia profile (the
-endangered-status aside, inside a FunFact box). Not added: cost
-guide's cost-guide-to-tank-setup link was the only one available in
-that budget; tank setup's, feeding's, and enrichment's suggested links
-all target a sibling guide those three articles are already at their
-one-per-article sibling cap for (tank setup already links handling;
-feeding and enrichment already link each other and health issues from
-the first pass).
+endangered-status aside, inside a FunFact box). Not added: tank
+setup's, feeding's, and enrichment's suggested links, each of which
+targets a sibling guide when the article is already at its one
+sibling link (tank setup links handling; feeding links tank setup;
+enrichment links feeding, all from the first pass).
 
 Gaps, checked against the Health and More list before calling them
 real: what a vet visit for an axolotl actually costs (the cost guide
@@ -1185,3 +1185,20 @@ unsourced "about half of captive leopard geckos may carry it."
   and the enrichment guide's body and FAQ gave two different hide
   counts (FAQ fixed to read off the body's own number). Two more links
   added.
+- 2026-09-08, species check of the leopard gecko, goldfish, and axolotl
+  sets (branch claude/review-species-sonnet-wewmck, the check prompt in
+  READMEFIRST): the leopard gecko night floor is 65°F everywhere, the
+  emergency plan guide's leopard gecko "act below" row and the hub's
+  power outage row moved from 60°F to match the temperature guide; the
+  hub vetLine now keeps the health guide's hedge that one clear PCR
+  doesn't rule crypto out. Goldfish: the betta vs goldfish guide's
+  65 to 72°F became 65 to 75°F to match tank setup, the bowl myth
+  piece got a Sources block (PetMD, the Oxford distance study), and the
+  hub's power outage row carries the source's two ranges (10 to 15
+  minutes in a small tank, 20 to 30 in a larger one) instead of one.
+  Axolotl: the legal guide's FAQ, Takeaway, and hub row now include
+  Wyoming and Alabama, which its own table lists as banned; the intro
+  keeps the "if narrow" hedge next to the dozen-jurisdiction count; the
+  enrichment guide's seoDescription reads 3 to 4 hides like its FAQ.
+  Left as Sonnet wrote them: the goldfish feeding FAQ and the axolotl
+  enrichment FAQ.

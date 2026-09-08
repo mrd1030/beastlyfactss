@@ -153,14 +153,16 @@ catches the defects the commands produce. Per batch:
    stranded (the sibling-link exception in RULES), fragments and
    placeholder cells, unsourced claims. About 70k tokens per species. Do
    the bearded dragon and rabbit findings first, they are already in the
-   file. Bearded dragon, rabbit, leopard gecko, and goldfish: done
-   2026-09-08, next is any species with a care package (axolotl, ...).
+   file. Bearded dragon, rabbit, leopard gecko, goldfish, and axolotl:
+   done 2026-09-08, next is any species with a care package.
    Raw reader output and the running "not covered anywhere" list are in
    docs/READER_LOG.md, one entry per species.
 6. Hub reconciliation, one species per session, with its set test and
    fixes in the same session: the species prompt at the end of this file
-   (Sonnet, default effort). Rabbit, bearded dragon, leopard gecko, and
-   goldfish done and on main. Next: axolotl, then the rest of the
+   (Sonnet, default effort). Rabbit, bearded dragon, leopard gecko,
+   goldfish, and axolotl done and on main; leopard gecko, goldfish, and
+   axolotl passed the species check (below) on 2026-09-08, fixes on
+   branch claude/review-species-sonnet-wewmck. Next: the rest of the
    species with a care package, then the others. Legacy
    hubs keep rendering the old care sheet until then. Dogs and cats
    last. Rabbit difficulty settled at Beginner/Intermediate on the
@@ -340,8 +342,9 @@ dashes:
 
 One species per session. Paste this, replacing <species> with the guide id
 (the folder prefix in content/guides, for example leopard-gecko) and
-<Animal> with the name. Rabbit, bearded dragon, leopard gecko, and
-goldfish are done and merged to main. Next up: axolotl.
+<Animal> with the name. Rabbit, bearded dragon, leopard gecko, goldfish,
+and axolotl are done, merged to main, and checked. Next up: the next
+species with a care package.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
@@ -459,6 +462,11 @@ link; anything not covered above.
 ## The species check prompt, for a fresh session after Sonnet pushed a species
 
 Read-only until Mike confirms. Paste it with the species list filled in.
+Run on leopard gecko, goldfish, and axolotl 2026-09-08; the findings and
+what was applied are the last bullet of "What the tests changed so far"
+in docs/READER_REVIEWS.md. Two things the check should keep catching:
+a hub row that merges two source ranges into one, and a same-page fix
+that leaves the FAQ, Takeaway, seoDescription, or hub copy behind.
 
 ```
 Read READMEFIRST.md, docs/RULES.md (Hubs and Linking sections, and the

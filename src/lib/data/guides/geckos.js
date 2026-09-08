@@ -310,7 +310,7 @@ Temperature spikes above 80 degrees F cause acute heat stress. In summer, this r
         { label: "Adult size", value: "7 to 11 inches." },
         { label: "Lifespan", value: "15 to 20 years in captivity, some longer." },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Power outage", value: "70°F is the normal night low. Below 60°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
+        { label: "Power outage", value: "70°F is the normal night low. Below 65°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {
@@ -325,7 +325,7 @@ Temperature spikes above 80 degrees F cause acute heat stress. In summer, this r
         "Prolapse",
         "Retained shed that's swollen, darkened, or won't clear from the eyes or toes",
       ],
-      vetLine: "A reptile-experienced vet, found before you need one. A tail thinning to a stick is cryptosporidiosis until a fecal PCR says otherwise, and it has no cure.",
+      vetLine: "A reptile-experienced vet, found before you need one. Treat a tail thinning to a stick as cryptosporidiosis until a fecal PCR says otherwise: one clear test doesn't fully rule it out, and there is no cure.",
     },
     routes: [
       { slug: "leopard-gecko-cost-guide", line: "$20 to $45 for the gecko, $250 to $400 for the setup, $20 to $50 a month, and what a sick visit really costs." },
