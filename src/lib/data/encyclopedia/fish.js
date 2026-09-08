@@ -10,6 +10,7 @@ export const fishEncyclopedia = [
       wildDiet: "Small insects, crustaceans, zooplankton, and occasionally small fish",
       wildLifespan: "10-12 years",
       conservation: "Not evaluated (widespread and common)",
+      history: "The species reached print long before it reached aquariums. Ferdinand Schultze described it in 1823 from a specimen catalogued at the zoological museum of the Royal University of Berlin, filing it as Zeus scalaris among the marine dories, and it was shuffled through several other genera before Pterophyllum stuck. Live fish did not arrive in Europe until 1909, when C. Ziggelkow of Hamburg brought the first import into Germany. The angelfish then spent more than a century as a fixture of the hobby with its genome unread, until a high school student named Indeever Madireddy sequenced and assembled it on a community lab bench and published the result in October 2022.",
     },
   },
   {
@@ -23,6 +24,7 @@ export const fishEncyclopedia = [
       wildDiet: "Small insects and insect larvae taken from the water's surface",
       wildLifespan: "Not separately documented in the wild; 2 to 4 years in an aquarium, up to 5 with excellent care",
       conservation: "Vulnerable (IUCN, wild populations)",
+      history: "The fish entered Western science as a diplomatic gift. In 1840 the king of Siam handed breeding stock to Theodore Edward Cantor, a Danish physician, and nine years later Cantor published the first scientific account of them under the name Macropodus pugnax. That name was already taken, and in 1909 the ichthyologist Charles Tate Regan corrected it to Betta splendens, the binomial still in use. The hobby spread on its own track: Pierre Carbonnier was importing and breeding them in France by 1874, Paul Matte brought the first specimens into Germany from Moscow in 1896, and importers in California appear to have received them around 1910.",
     },
   },
   {
@@ -36,6 +38,7 @@ export const fishEncyclopedia = [
       wildDiet: "Algae and biofilm grazed from rocks and wood, plus wood fiber rasped from driftwood and roots and some detritus",
       wildLifespan: "5-10 years typical in the aquarium; up to 12-15 years with excellent care",
       conservation: "Not evaluated (IUCN); the aquarium strain's mixed ancestry makes a species-level assessment difficult, though wild Ancistrus species are generally widespread",
+      history: "Rudolf Kner erected the genus Ancistrus in 1854, and it has been a taxonomic headache ever since. Roughly 69 species are currently recognized, and a 2017 study of the Parana basin using molecular and chromosome data concluded that at least four further candidate species were hiding inside what had been called Ancistrus cirrhosus. The aquarium trade ran into its own version of that problem and answered it in 1988, when the German magazine DATZ began assigning L-numbers to undescribed suckermouth catfish so importers and keepers had a stable label for fish that science had not yet named. An L-number is retired once a species receives a formal description.",
     },
   },
   {
@@ -49,6 +52,7 @@ export const fishEncyclopedia = [
       wildDiet: "Small insects, worms, crustaceans, and zooplankton",
       wildLifespan: "Often under 1 year (seasonal pools frequently strand and dry out); commonly 4-5 years, up to 10, in a stable aquarium",
       conservation: "Not evaluated (widespread; sustainable wild-harvest fishery supports conservation in parts of its range)",
+      history: "Its scientific name comes out of one of the odder priority races in ichthyology. In 1956 George Myers and Stanley Weitzman were preparing to describe the fish as Hyphessobrycon cardinalis, but Leonard Schultz published his own description first, in the hobbyist magazine Tropical Fish Hobbyist, and named it Cheirodon axelrodi after the magazine's founder Herbert R. Axelrod. Schultz won on priority, and the species is now Paracheirodon axelrodi. Myers and Weitzman lost the binomial and kept everything else, because their proposed epithet survives, in English, as the common name every shop uses.",
     },
   },
   {
@@ -62,6 +66,7 @@ export const fishEncyclopedia = [
       wildDiet: "Insect larvae, worms, small crustaceans, and organic detritus",
       wildLifespan: "5-10 years; up to 15 years with excellent care",
       conservation: "Least Concern (IUCN)",
+      history: "Theodore Gill described the bronze cory in 1858 from a single Trinidad specimen, calling it Hoplosoma aeneum, and it spent most of the following century and a half filed under the catch-all genus Corydoras with hundreds of relatives. In June 2024 a Brazilian-led team published a phylogenomic revision in the Zoological Journal of the Linnean Society that broke the subfamily Corydoradinae into seven genera, resurrecting names including Hoplisoma, Brochis and Osteogaster, and the bronze cory moved to Osteogaster. Even that is provisional, since the fish is now treated as a species complex awaiting further review. Commercial breeding in the United States, Europe and Singapore supplies almost every one sold.",
     },
   },
   {
@@ -75,6 +80,7 @@ export const fishEncyclopedia = [
       wildDiet: "Insect larvae, small invertebrates, and plant matter",
       wildLifespan: "10-13 years",
       conservation: "Not evaluated (widespread in trade; wild populations locally affected by collection and habitat change)",
+      history: "Johann Jakob Heckel coined the genus name Symphysodon in 1840, for the unusual joint where the teeth meet, and the fish then stayed a museum specimen for the better part of a century. Dealers only began importing discus into Europe and the United States in the 1930s and 1940s, and nobody spawned them dependably until the late 1950s, when Jack Wattley in the United States and Eduard Schmidt-Focke in Germany worked out how. Into the 1970s the palette was limited to wild blue, green, brown and Heckel forms, after which American breeders produced the turquoise and then the cobalt lines. Most strains in shops now, pigeon blood and blue diamond among them, appeared in Asia during the late 1980s and 1990s.",
     },
   },
   {
@@ -88,6 +94,7 @@ export const fishEncyclopedia = [
       wildDiet: "Omnivorous - plant matter, insects, crustaceans, and detritus",
       wildLifespan: "10-15 years typical; 20-30+ years in spacious, well-kept ponds",
       conservation: "Domesticated (not evaluated; wild ancestor Least Concern)",
+      history: "Chinese sources put dates on each stage of the domestication. Color mutations in pond carp were noted as early as the Jin dynasty, between 266 and 420, and in 1162 a Song empress ordered a pond built to hold the red and gold fish, while yellow specimens were restricted because yellow was the imperial color. Moving the fish indoors during the Ming dynasty is what let breeders keep the fragile fancy-tailed mutations that would not have survived an outdoor pond. Goldfish reached Japan in 1603 and Portugal in 1611, spreading through Europe as a status object, and arrived in North America around 1850, where Henry Bishop of Baltimore built what was reckoned the largest goldfish operation in the world.",
     },
   },
   {
@@ -101,6 +108,7 @@ export const fishEncyclopedia = [
       wildDiet: "Mosquito larvae, algae, small invertebrates, and detritus",
       wildLifespan: "2-3 years",
       conservation: "Least Concern (IUCN)",
+      history: "The common name honors a man whose scientific name lost. Wilhelm Peters had already described the species from Venezuela as Poecilia reticulata in 1859, seven years before Albert Gunther coined Girardinus guppii, so the honorific was a junior synonym almost from the start. The fish also passed through Lebistes reticulatus, assigned by Charles Tate Regan in 1913, before Rosen and Bailey restored the original name in 1963. In the late 1970s John Endler moved guppies from a predator-heavy stretch of Trinidad's Aripo River to a site upstream that predators could not reach, and the color patterns of the transplanted population shifted measurably, giving field biology one of its standard demonstrations of selection at work.",
     },
   },
   {
@@ -114,6 +122,7 @@ export const fishEncyclopedia = [
       wildDiet: "Omnivorous bottom feeder - aquatic plants, insects, and crustaceans",
       wildLifespan: "25-35 years typical; some documented individuals far longer",
       conservation: "Domesticated (not evaluated; wild ancestor Least Concern)",
+      history: "The founding mutations turned up in an unlikely place: the snowbound villages of Nijuumura, in what is now Nagaoka and Ojiya in Niigata Prefecture, where farmers kept carp through the winter as a food supply. The fish stayed a local curiosity until the Tokyo Taisho Exposition of 1914, where about twenty of them were shown under the older name kawarigoi, won a silver medal, and were seen by some of the roughly 7.5 million people who attended. Crown Prince Hirohito, later Emperor Showa, had them brought to the Imperial Palace, which is what turned a regional farm product into a national art form. Japan set a formal agricultural standard for nishikigoi only in 2022.",
     },
   },
   {
@@ -127,6 +136,7 @@ export const fishEncyclopedia = [
       wildDiet: "Algae, plant matter, and small invertebrates",
       wildLifespan: "3-5 years",
       conservation: "Least Concern (IUCN, for wild Poecilia sphenops)",
+      history: "The common name is a fossil of an obsolete genus. Charles Alexandre Lesueur coined Mollienesia in 1821 in honor of Nicholas Francois, Count Mollien, one of Napoleon's finance ministers, and although a 1963 revision folded the genus into Poecilia, the shortened form stayed attached to the fish. Mollies entered the aquarium hobby around 1905, and the black molly has a contested origin: one account credits a single breeder with seven years of selective work, while another holds that several American breeders arrived at it independently during the 1920s and 1930s, among them Bill Schomberg of Crescent Fish Farm in New Orleans. Today's fancy mollies draw on at least four wild species, which is why their pedigree resists tidy description.",
     },
   },
   {
@@ -140,6 +150,7 @@ export const fishEncyclopedia = [
       wildDiet: "Small insects, worms, crustaceans, and zooplankton",
       wildLifespan: "5-8 years",
       conservation: "Not evaluated (widespread and common)",
+      history: "Few aquarium fish arrived with as much theater. Auguste Rabaut carried thirteen live specimens out of the Amazon to the Paris firm Lepant, where they were christened the neon fish, and in 1935 the stock changed hands for 6,500 dollars to two Hamburg dealers, Hugo Schnell and Walter Griem. In July 1936 five neons were flown to the Shedd Aquarium in Chicago aboard the airship Hindenburg at a transport cost of 3,000 dollars, and only one survived the trip. George S. Myers described the species that same year as Hyphessobrycon innesi, honoring the American aquarium publisher William T. Innes, who had supplied the preserved material. Roughly two million are now sold in the United States each month, nearly all farm raised in Southeast Asia.",
     },
   },
   {
@@ -153,6 +164,7 @@ export const fishEncyclopedia = [
       wildDiet: "Fish, insects, crustaceans, and worms",
       wildLifespan: "10-20 years",
       conservation: "Least Concern (IUCN)",
+      history: "Louis Agassiz named the species in 1831 and got it badly wrong. Believing his specimen had come from the Atlantic Ocean, he filed it as Lobotes ocellatus, in a genus of marine tripletails, and the correction to the South American cichlid genus Astronotus came later. The Florida record is unusually specific: the breeding populations in the south of the state trace to a deliberate stocking by aquarium fish farms in Dade County in the late 1950s, and the fish has since turned up in at least six counties and inside Everglades National Park. In its native rivers the oscar is not a curiosity but a food fish, taken and sold by artisanal fishers.",
     },
   },
   {
@@ -166,6 +178,7 @@ export const fishEncyclopedia = [
       wildDiet: "Small crustaceans, insects, annelid worms, algae, and plant matter",
       wildLifespan: "3-5 years",
       conservation: "Data Deficient (IUCN, X. maculatus); Least Concern (X. variatus)",
+      history: "The platy has a second career with nothing to do with ornamental color. Between 1928 and 1931, working independently, Haussler, Kosswig and Myron Gordon each found that crossing a platy with a swordtail and then backcrossing the hybrids produced offspring that developed malignant melanoma, about a quarter of the backcross fish in the classic scheme. That cross, now known as the Gordon-Kosswig cross, became one of the oldest animal systems for cancer research still in use. In 1989 Wittbrodt and colleagues traced the tumors to Xmrk, a mutated and duplicated copy of the epidermal growth factor receptor gene.",
     },
   },
   {
@@ -179,6 +192,7 @@ export const fishEncyclopedia = [
       wildDiet: "Aquatic and terrestrial invertebrates, detritus, algae, and plant matter (a generalist omnivore)",
       wildLifespan: "3-5 years",
       conservation: "Least Concern (IUCN)",
+      history: "The species epithet records a collector. Karl Bartholomaeus Heller, an Austrian naturalist, traveled through Mexico between 1845 and 1848 and brought back the specimens from Orizaba that Johann Jakob Heckel used to describe Xiphophorus hellerii in 1848. Live stocks of the genus have been curated almost continuously since Myron Gordon, who had begun working on these fish at Cornell in 1924, mounted collecting expeditions to Mexico from 1930 onward and founded a dedicated Xiphophorus stock center in 1939, run out of the New York Aquarium and then the American Museum of Natural History. Klaus Kallman took the collection over after Gordon's death in 1959, and it moved to Texas in 1992, where it still maintains pedigreed lines.",
     },
   },
   {
@@ -192,6 +206,7 @@ export const fishEncyclopedia = [
       wildDiet: "Zooplankton, aquatic and terrestrial insects, and mosquito larvae, taken from open water and the surface",
       wildLifespan: "Around 1 year in the wild; 3.5 years average in captivity, with documented individuals living to 5.5 years",
       conservation: "Least Concern (IUCN)",
+      history: "Francis Hamilton, a Scottish physician working under the East India Company, described the fish in 1822 from specimens collected in Bihar, calling it a beautiful fish with blue and silver stripes along each side. Its second life began at the University of Oregon, where George Streisinger spent the 1970s adapting a pet shop fish to genetics work. In 1981 he published a paper in Nature reporting the first large-scale production of genetically uniform clones of a vertebrate. Early laboratory strains were founded with animals bought from the pet trade or collected in the wild, and Streisinger's methods went on to spread to more than 500 labs in 32 countries.",
     },
   },
 ];
