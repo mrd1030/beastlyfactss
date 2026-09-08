@@ -15,6 +15,12 @@ over anything here.
 - Never change a fact, number, hedge, link target, component, affiliate
   link, date, tag, or Sources entry unless the task is that change. Hedges
   ("can", "may", "often", "should") are facts.
+- Mike's original sentences are not sacred (decided 2026-09-08). If an
+  edit makes the article better for a reader, make it: cut a section that
+  restates an earlier one, cut a warning said three times, cut the site
+  talking about itself, tighten a sentence. The line above still holds
+  (facts, numbers, hedges, links, dates), and every original sentence
+  changed gets reported with before and after so Mike can veto.
 - At most two agents running at once. Opus for mechanical rewrites, Fable
   for judgment, research, and reading. One series or batch per session.
 - Content dates use US Eastern. Cloud sessions run UTC and tick over at

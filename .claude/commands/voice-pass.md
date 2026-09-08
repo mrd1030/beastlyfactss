@@ -53,8 +53,11 @@ For each article in the findings, in order:
      "sometimes" carry over verbatim into any rewrite. "Can bite" never
      becomes "will bite". If dropping a hedge is the only way to make an
      answer shorter, leave the answer alone.
-   - Never delete a clause that has no flagged word in it. A sentence that
-     is not named in the findings is not yours to touch, even to tidy it.
+   - An unflagged sentence may be cut or tightened when that makes the
+     article read better: a section restating an earlier one, a warning
+     repeated three times, the site talking about itself. Never to satisfy
+     the checker, never a fact, number, or hedge, and every such edit goes
+     in the report with before and after.
    - Opener link: the first paragraph is about the animal and carries no link,
      and neither does the rest of the first section. A care-guide sentence
      or a "companion guides on cost, feeding, handling, and cage setup"

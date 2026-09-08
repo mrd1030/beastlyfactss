@@ -112,6 +112,15 @@ snapshot, not a quote."
   is deleted, not moved. A content sentence that carried one ("covered in
   our health guide") loses the clause and keeps the point. Decided
   2026-09-08 on the flying squirrel set; the rest of the series follow.
+  One exception: when a sibling guide is the direct answer to the question
+  the article raised (the health guide says diet drives everything, the
+  feeding guide has the bowl), one sentence with a reason may link it. At
+  most one such link per article, and the sentence says what is there.
+- The site never talks about itself. No "on this site", "this site's",
+  "covered elsewhere", "already covered", "our X guide covers". A
+  sentence that compares two articles is an editor's note, not something
+  a keeper says about the animal; cut it or say the thing about the animal.
+  The checker warns on the phrases (`self-reference`).
 - Articles end on the animal: the last body paragraph is a point, not a
   list of places to go next. One encyclopedia or overview sentence is fine.
 - Navigation-only edits (links added, moved, or removed) and FunFact

@@ -18,7 +18,9 @@ ROLE
 You are expanding thin articles for BeastlyFacts. Mike wrote them. Each one
 in the batch is missing a specific section the search query wants, and the
 plan names it. Your job is to add that section with researched facts, in
-Mike's voice, without touching what is already there. Read docs/RULES.md
+Mike's voice. The original text may be cut or tightened where the new
+section makes an old paragraph redundant, or where it repeats itself;
+report every such edit. Read docs/RULES.md
 first, the "Writing an article" section in full, and read
 .claude/commands/voice-pass.md so the same voice rules apply to every
 sentence you write.
@@ -80,8 +82,9 @@ PHASE 2: one article at a time
 6. Dates: set `lastUpdated` and `lastReviewed` to today's US Eastern date
    (`TZ=America/New_York date +%F`). Never touch `date`.
 7. Run `node scripts/check-voice.mjs --slug <slug>` and fix every error in
-   your own sentences before moving on. Never edit an original sentence to
-   satisfy the checker; if the original trips a rule, leave it and say so.
+   your own sentences before moving on. Never edit an original sentence
+   only to satisfy the checker; if an original trips a rule, fix it when
+   the fix reads better and say so, leave it and say so otherwise.
 8. Re-read the new section against its sources one more time. Delete any
    claim you cannot point to a source for.
 9. Move to the next article. Do not stop to ask between articles.

@@ -45,6 +45,7 @@ const CONTENT_DIRS = ['content/blog', 'content/guides', 'content/fun-facts'];
 
 // ---------- rules ----------
 const INTENSIFIER = /\b(genuinely|actually|really|the real)\b/gi;
+const SELF_REFERENCE = /\b(on this site|this site's|elsewhere on this site|already covered|covered (?:in|by) our|covered here|covered on this site|our \w+(?: \w+)? guide covers|as covered in)\b/gi;
 const CONTRAST_CLOSER = /\b(rather than|,\s*not\s+(just\s+)?(a|an|the|because|what|whether|how|which|when|if)\b)/gi;
 // Comma doing a dash's job: a comma followed by a fresh clause subject.
 const COMMA_SPLICE = /,\s+(it is|it's|that is|that's|they are|they're|this is|there is|there's)\b/gi;
@@ -184,6 +185,26 @@ function check(file) {
     if (closerLinks >= 3 && !pillRow) add(errors, 'closer-dump', `${closerLinks} links in the closing paragraph`);
     if (/browse the (rest of our|full)/i.test(last)) add(errors, 'closer-dump', '"browse the rest of our" closer');
   }
+
+  // Linking (RULES, Linking, 2026-09-08). Warnings while the series pass
+  // runs; flip to errors once it is done.
+  //   self-reference: the site talking about itself.
+  //   sibling-link: more than one link to the same species' own guides or hub;
+  //     the Deep Dive carries those, prose gets one only when it is the answer.
+  //   section-link: a link before the first H2; the first section is about
+  //     the animal.
+  const selfRefs = text.match(SELF_REFERENCE) || [];
+  if (selfRefs.length) add(warnings, 'self-reference', `${selfRefs.length}: ${[...new Set(selfRefs.map((x) => x.toLowerCase()))].slice(0, 3).join(' | ')}`);
+  const suffixMatch = slug.match(/^(.*)-(cost|handling|health-issues|tank-setup|feeding|enrichment|legal)-guide$/);
+  if (suffixMatch) {
+    const prefix = suffixMatch[1];
+    const sib = new RegExp(`\\]\\((?:/blog/${prefix}-(?:cost|handling|health-issues|tank-setup|feeding|enrichment|legal)-guide/?|/guides/${prefix}/?)\\)`, 'g');
+    const sibCount = (body.match(sib) || []).length;
+    if (sibCount > 1) add(warnings, 'sibling-link', `${sibCount} links to the species' own guides or hub (limit 1)`);
+  }
+  const firstSection = body.split(/\n## /)[0];
+  const firstLinks = (firstSection.match(/\]\(\//g) || []).length;
+  if (firstLinks) add(warnings, 'section-link', `${firstLinks} link(s) before the first H2`);
 
   // FAQ that photocopies the body.
   const answers = faqAnswers(fm);
