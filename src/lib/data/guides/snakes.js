@@ -7,65 +7,82 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/ball-python.jpg",
     tagline: "The gentle noodle that curls into a perfect ball when shy!",
-    funFact: "Ball pythons can go up to 6 months without eating (though they shouldn't have to). When scared, they curl into a tight ball to protect their head, hence the name!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft PVC or wood enclosure", low: 150, high: 300 },
-        { item: "Under-tank heater + thermostat", low: 40, high: 70 },
-        { item: "Two snug hides", low: 15, high: 30 },
-        { item: "Large soak-able water dish", low: 15, high: 25 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Infrared thermometer gun", low: 15, high: 30 },
-        { item: "Coconut fiber or cypress mulch substrate", low: 20, high: 30 },
-        { item: "Spray bottle", low: 5, high: 10 },
-        { item: "Cork bark and branches", low: 20, high: 40 },
-        { item: "Feeding tongs", low: 5, high: 10 },
-      ],
-      annual: [
-        { item: "Frozen/thawed rats or mice", low: 100, high: 180 },
-        { item: "Substrate replacement", low: 30, high: 50 },
-        { item: "Electricity (heat)", low: 50, high: 90 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+    funFact: "Ball pythons can go 3 to 6 months without eating (though they shouldn't have to). When scared, they curl into a tight ball to protect their head, hence the name!",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size and lifespan come from the
+    // encyclopedia entry, which no deep dive repeats in full. Quarantine, the
+    // thermostat probe, hygiene, the power-outage floor, winter appetite, and
+    // weight checks cite the shared reptile and snake guides in the sidebar's
+    // Health and More list. Built 2026-09-08 for the ball python set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal check", value: "Broadly legal across the US, and the federal rules aimed at invasive constrictors were written to exclude them. Hawaii bans every snake species statewide and New York City bans the entire family Pythonidae. New Jersey and Delaware require a permit, and Minnesota allows one from a permitted breeder. Check city and county ordinances everywhere else.", source: "ball-python-legal-guide" },
+        { label: "Enclosure", value: "The current standard for an adult is a 4x2x2 ft (48x24x24 inches, roughly 120 gallons, about 8 square feet of floor space) setup, with the enclosure at least as long as the snake itself. Hatchlings up to about 300 grams do well in a 10-gallon or 20x11x13 inch enclosure, and juveniles under 3 feet can move into a 36x18x18 inch setup. PVC holds humidity far more effectively than glass. House one snake per enclosure.", source: "ball-python-tank-setup-guide" },
+        { label: "Temperatures", value: "Warm side and basking 88 to 92°F, with air temp not exceeding 95°F anywhere. Cool side 75 to 80°F. Nighttime 72 to 75°F.", source: "ball-python-tank-setup-guide" },
+        { label: "Heat", value: "Every single heat source needs to run through a thermostat, no exceptions. It is what prevents burns and fire hazards. Skip hot rocks entirely.", source: "ball-python-tank-setup-guide" },
+        { label: "Thermostat probe", value: "For an under-tank mat the probe goes on the floor of the warm hide, the surface the animal actually lies on, held down with foil tape so it can't drift. The probe reads at the animal's level, not up in the airspace near the fixture.", source: "reptile-heating-thermostats-guide" },
+        { label: "Humidity", value: "Ambient 55 to 65%, raised to 70 to 80% specifically during shedding cycles. Too dry leads to bad sheds and raises respiratory infection risk. Too wet without adequate ventilation swings toward scale rot. Check it with a real digital hygrometer, not a cheap analog dial.", source: "ball-python-tank-setup-guide" },
+        { label: "Substrate", value: "Cypress mulch or coconut coir/husk, 3 to 4 inches deep. Avoid aspen entirely, it tends to mold at the humidity level ball pythons require, and never use pine or cedar.", source: "ball-python-tank-setup-guide" },
+        { label: "Hides and water", value: "At least two hides, one on the warm side and one on the cool side, sized snugly so the snake's body touches the sides at multiple points. Add a heavy, tip-resistant water bowl large enough for the snake to soak in.", source: "ball-python-tank-setup-guide" },
+        { label: "Cover", value: "The whole floor should offer cover, so the snake can be somewhere other than inside a box without being exposed: cork bark tubes and flats, leaf litter, and enough plant cover to break up sightlines. Add a sturdy climbing branch braced firmly at both ends and it will use it.", source: "ball-python-enrichment-guide" },
+        { label: "Feeding schedule", value: "Hatchlings (0-6 months) every 5-7 days, juveniles (6-18 months) every 7-10 days, adults (18+ months) every 10-14 days.", source: "ball-python-feeding-guide" },
+        { label: "Prey size", value: "Prey roughly the same width as the widest point of the snake's body. For most adult ball pythons, that's a medium rat. Too large means regurgitation, too small means nutritional inadequacy.", source: "ball-python-feeding-guide" },
+        { label: "Thawing", value: "Refrigerate until fully thawed, or seal it in a bag and submerge it in cool to lukewarm water. Never thaw on a counter for hours and never use a microwave. Don't feed it straight from the refrigerator: prey should not be fed cold but at room temperature, or preferably warmer.", source: "ball-python-feeding-guide" },
+        { label: "Not eating", value: "A healthy adult ball python can go 3-6 months without eating. Worry if rapid weight loss, lethargy plus refusal, mucus around the mouth, or wheezing accompanies the fast.", source: "ball-python-feeding-guide" },
+        { label: "Winter appetite", value: "Most pet-only keepers can skip brumation, it is primarily a breeder's tool. Ball pythons especially show a natural seasonal dip in appetite from roughly October through March even without any deliberate cooling.", source: "snake-brumation-guide" },
+        { label: "Handling", value: "Don't handle a newly acquired snake for the first one to two weeks, and don't start until it's eating regularly. Then 2 to 3 sessions a week, up to 3 to 5 for a snake that handles well, 15 to 30 minutes at most. Wait 48 to 72 hours after feeding, and never during a shed.", source: "ball-python-handling-guide" },
+        { label: "Weight checks", value: "Weigh rather than measure. Monthly is a reasonable default for a growing juvenile, less often once an adult has leveled off. A well-conditioned snake reads as a rounded loaf in cross-section, and a triangular cross-section with a visible ridge down the spine points to underweight.", source: "snake-sexing-growth-body-condition-guide" },
+        { label: "Budget", value: "A standard or wild-type ball python runs $40 to $100. Total setup typically lands at $300 to $800. Most owners land around $200 to $500 a year in ongoing costs once the setup is finished.", source: "ball-python-cost-guide" },
+        { label: "Adult size", value: "3 to 5 feet, females significantly larger." },
+        { label: "Lifespan", value: "20 to 30 years, up to 48 years recorded in captivity." },
+        { label: "Quarantine", value: "The Merck Veterinary Manual's husbandry guidance recommends quarantine periods of 3 to 6 months for new reptiles. Mites usually show themselves within weeks, while inclusion body disease can sit with no visible signs for months to years, and pythons are one of the two groups it affects.", source: "reptile-quarantine-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact with the animal, its enclosure, its water, or anything that's touched either. Never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "72-75°F is the cold floor. Below this range for more than a day or two is the classic winter trigger for respiratory infection.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `Adult ball pythons require a minimum 4x2x2 ft enclosure (approximately 120 gallons equivalent). Smaller enclosures are frequently cited as the cause of the most common ball python husbandry problems: feeding refusals, chronic stress, and poor immune health. Despite their reputation as small snakes, ball pythons are muscular, heavy-bodied animals that need room to move, explore, and thermoregulate.
-
-The thermal gradient is essential. Provide a warm side with belly heat of 88 to 92 degrees F (measured at the floor under the warm hide) using an under-tank heater on a thermostat, and an ambient cool side of 75 to 80 degrees F. The basking air temperature directly above the warm hide can reach 88 to 95 degrees F. An infrared temperature gun is the most accurate tool for measuring surface temperatures.
-
-Humidity is a critical and frequently neglected parameter. Ambient humidity should stay at 55 to 65% and rise to 70 to 80% before and during shed. Low humidity causes retained shed, dehydration, and respiratory stress. Cypress mulch, coconut fiber, or a topsoil mix are all excellent substrate choices that hold humidity well. Avoid dry substrates like aspen for tropical species like ball pythons.
-
-Two hides - one at the warm end and one at the cool end - are the minimum. Hides should be snug, sized so the snake just fits inside. A hide where the snake rattles around provides no security. Ball pythons in open, exposed spaces are chronically stressed animals, which is the root cause of the majority of feeding refusals in the hobby.`,
-      diet: `Ball pythons eat appropriately sized frozen/thawed rodents. Prey should be approximately the same width as the snake's widest mid-body point. Feeding prey that is too large causes regurgitation, which is stressful and damages the esophagus if it happens repeatedly.
-
-Always feed frozen/thawed prey, not live. Live rodents are dangerous - even mice have bitten and injured snakes during feeding. Thaw prey fully by placing it in a zip-lock bag in warm water for 20 to 30 minutes until it reaches 100 to 105 degrees F at the core. Use feeding tongs for every feeding. This builds the association between tongs and food in the snake's mind, not your hand.
-
-Feeding schedule depends on age and size. Juveniles (under 300 grams) should eat every 5 to 7 days. Sub-adults eat every 7 to 10 days. Adults eat every 10 to 14 days. After feeding, leave the snake undisturbed for 48 to 72 hours to allow complete digestion. Handling within 48 hours of feeding risks regurgitation.
-
-Feeding refusals are common in ball pythons, especially during winter months or breeding season, and do not automatically indicate illness. A healthy adult ball python can safely fast for 6 to 8 weeks. Before assuming illness, check temperatures, humidity, hide quality, and whether the snake recently shed. Offering a different prey type (e.g., switching from mouse to rat) sometimes resolves refusals.`,
-      enrichment: `Ball pythons are more active and exploratory than their reputation suggests. When housed in correctly sized enclosures with proper thermal gradients, they regularly move between hides, investigate their environment, and soak in their water dish. Enrichment that supports these natural behaviors dramatically improves their wellbeing.
-
-Provide branches for climbing - ball pythons are semi-arboreal, especially juveniles, and will use elevated branches when provided. Cork bark hides and rounds create varied hiding opportunities. A large water dish that the snake can fully coil in is essential for both hydration and thermoregulation. Many ball pythons spend extended time soaking before and during shed.
-
-Leaf litter and varied substrate depths add texture to the enclosure floor and allow the snake to partially burrow, which is a natural behavior. A bioactive setup with live plants (pothos, bromeliads) is possible with ball pythons and creates a highly enriching environment.
-
-Handle 2 to 3 times per week for 15 to 20 minutes once the snake is fully settled in its new home (usually 2 to 4 weeks after acquisition). Move slowly, support the body, and avoid rapid movements. Most ball pythons become remarkably calm and handleable with consistent, gentle interaction. Never handle within 48 hours of feeding or during shed.`,
-      health: `Respiratory infections (RI) are one of the most common serious health problems in ball pythons and are almost always caused by temperatures that are too low or humidity that is too high without adequate ventilation. Signs include wheezing, clicking breathing sounds, mucus from the mouth or nostrils, open-mouth breathing, and head tilting (in severe cases). A respiratory infection requires veterinary treatment - typically antibiotics. Address the husbandry cause simultaneously or the infection will recur.
-
-Mites are tiny external parasites (Ophionyssus natricis) that feed on the snake's blood. Signs include unusual soaking behavior, tiny black or red dots on the snake or in the water dish, and general restlessness. Mites spread rapidly between animals and require both enclosure decontamination and direct treatment of the snake. A reptile veterinarian can prescribe appropriate treatment. Quarantine any new snake for 60 to 90 days before introducing it to a collection.
-
-Retained shed (dysecdysis) occurs when humidity is too low during shed. The most dangerous retained shed is on the eye caps (spectacles) - retained eye caps can cause permanent eye damage if not addressed. A humid hide (a hide with damp sphagnum moss) prevents most retained shed. Soak the snake in shallow lukewarm water for 20 to 30 minutes if retained shed is present, then gently roll the shed off.
-
-Inclusion Body Disease (IBD) is a serious and fatal viral disease in boas and pythons caused by arenaviruses. Signs include neurological symptoms (head wobbling, inability to right itself, stargazing), regurgitation, and progressive neurological decline. There is no cure. It can spread to other boids through mites. Always quarantine new animals and source from reputable captive breeders.`,
-      checklist: ["4x2x2 ft PVC or wood enclosure", "Under-tank heater + quality thermostat", "Two snug hides (warm and cool)", "Large water/soak dish", "Digital thermometer and hygrometer", "Coconut fiber or cypress mulch substrate", "Frozen/thawed rats or mice", "Feeding tongs", "Spray bottle for humidity boosts", "Cork bark and branches"],
+    emergencyCard: {
+      source: "ball-python-health-issues-guide",
+      callNow: [
+        "Any wheezing, open-mouth breathing, or visible mucus, this one is urgent",
+        "Belly scale discoloration that's spreading or blistering",
+        "Signs of mouth rot",
+        "A prolapse (keep the area moist and get to a vet as soon as possible)",
+        "Visible mites",
+      ],
+      vetLine: "A reptile-experienced vet, found before you need one. Respiratory infection needs vet-prescribed antibiotics, not a wait-and-see approach, and left untreated it can progress to pneumonia and become fatal.",
     },
+    routes: [
+      { slug: "ball-python-cost-guide", line: "$40 to $100 for a standard snake, $300 to $800 for the setup, and what the first year and a sick visit really cost." },
+      { slug: "ball-python-tank-setup-guide", line: "The 4x2x2 standard, the temperature gradient, why PVC beats glass, and the humidity range that decides how this goes." },
+      { slug: "ball-python-feeding-guide", line: "Schedule by age, prey size and type, how to thaw and warm a rodent properly, and the honest list of reasons one stops eating." },
+      { slug: "ball-python-handling-guide", line: "The settling-in weeks, the two timing rules around feeding and shed, how to support the body, and the stress signs." },
+      { slug: "ball-python-health-issues-guide", line: "Respiratory infection, scale rot, mouth rot, mites, parasites, retained shed, thermal burns, IBD, prolapse, and the list that means the vet today." },
+      { slug: "ball-python-enrichment-guide", line: "What a 35-snake housing study actually found, cover across the whole floor, climbing structure, and a priority order." },
+      { slug: "ball-python-legal-guide", line: "Why the federal python ban never touched this species, the two places it is banned outright, and the states that want a permit." },
+    ],
+    buyList: [
+      "4x2x2 ft enclosure, secure and locking, PVC preferred over glass",
+      "Heat source: under-tank heater, heat tape, ceramic heat emitter, or radiant panel",
+      "Thermostat, one for every heat source",
+      "Digital thermometer and hygrometer",
+      "Infrared temperature gun for surface readings",
+      "Cypress mulch or coconut coir substrate, 3 to 4 inches deep",
+      "Two snug hides, one warm side and one cool side",
+      "Humid hide packed with damp sphagnum moss",
+      "Heavy, tip-resistant water bowl big enough to soak in",
+      "Cork bark, sturdy branches, leaf litter, and plants for cover",
+      "Feeding tongs",
+      "Frozen-thawed rats or mice",
+      "Optional low-level UVB and a photoperiod LED on a timer",
+    ],
     faqs: [
-      { q: "How big do ball pythons get?", a: "Female ball pythons typically reach 4 to 5 feet and 1,200 to 1,800 grams. Males are smaller, usually 3 to 3.5 feet and 800 to 1,200 grams. They are fully grown by 3 to 5 years of age and are one of the smallest python species, making them a manageable pet snake for most keepers." },
-      { q: "How often do ball pythons eat?", a: "Feed juveniles (under 1 year) every 5 to 7 days and adults every 7 to 14 days. Ball pythons should eat frozen and thawed (pre-killed) rodents sized no wider than the thickest part of the snake. Always feed inside the enclosure and avoid handling within 48 hours of a meal to prevent regurgitation." },
-      { q: "Why is my ball python not eating?", a: "Ball pythons are notorious for food refusals, which are often temporary and not medically concerning. Common causes include pre-shed (look for dull or bluish skin), breeding season from October through March (males especially), enclosure stress from incorrect temperatures or hides, or a prey-type change. A refusal of 2 to 4 weeks in an otherwise healthy adult is normal. Consult a vet if weight loss accompanies a refusal longer than 6 to 8 weeks." },
-      { q: "Do ball pythons need humidity?", a: "Yes. Ball pythons require 60 to 80% ambient humidity to support healthy sheds and respiratory health. Humidity below 50% causes stuck shed and, over time, respiratory problems. A humid hide packed with damp sphagnum moss is essential. A sealed substrate like cypress mulch or coconut fiber helps maintain ambient humidity between mistings." },
-      { q: "Are ball pythons good beginner snakes?", a: "Yes. Ball pythons are widely considered one of the best beginner snakes due to their small to medium size, slow movement, and generally calm temperament once acclimated. Their main challenge is occasional food refusals, which can worry new keepers but are usually not medically significant. Correct enclosure temperatures and hides resolve most husbandry-related behavioral issues." },
+      { q: "What humidity level does a ball python need?", a: "Ambient 55 to 65%, raised to 70 to 80% while the snake is in shed. Dry air gives bad sheds and raises respiratory infection risk; too wet without ventilation goes the other way, toward scale rot." },
+      { q: "Is it normal for a ball python to refuse food?", a: "Yes. Ball pythons are famous for hunger strikes, and a snake in good body condition that turns down a meal or two isn't automatically an emergency. With temperature, humidity, and everything else checking out, offering again in a couple of weeks is often reasonable." },
+      { q: "How long should I wait to handle after feeding?", a: "48 to 72 hours. Picking a snake up on a full stomach is one of the most common ways keepers cause a regurgitation, and that is hard on the digestive system and slow to recover from." },
     ],
   },
   {
