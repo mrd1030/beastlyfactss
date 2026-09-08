@@ -157,8 +157,7 @@ third care sheet.
   icon prints two free cards only, the emergency card and the setup
   checklist (buy list plus first-week numbers), with the package name and
   price in the footer. It only appears on hubs that have an emergency
-  card. The package sell card sits at the top of a router hub's main
-  column; legacy hubs keep it in the sidebar.
+  card. The package card stays in the sidebar on every hub.
 - Legacy hubs (every species not yet reconciled) still render the old
   care sheet and have no print button. Reconcile one species at a time,
   after its set test, and dogs and cats last.

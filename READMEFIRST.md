@@ -93,8 +93,8 @@ over anything here.
   claude/reader-tests): the rabbit and bearded dragon hubs are router
   hubs (RULES, Hubs): first-week numbers copied from the deep dives with
   a link per row, emergency card from the health guide, one line per
-  deep dive, buy list without prices, three copied FAQs, package sell
-  card at the top. The whole-guide print modal is gone from every hub;
+  deep dive, buy list without prices, three copied FAQs; the package
+  card stays in the sidebar. The whole-guide print modal is gone from every hub;
   the print icon (router hubs only) prints the emergency card and the
   setup checklist. src/pages/GuideDetail.jsx renders both shapes.
   scripts/check-species-numbers.mjs lists conflicting figures per

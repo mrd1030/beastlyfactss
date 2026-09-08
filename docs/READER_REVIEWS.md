@@ -298,7 +298,7 @@ unsourced "about half of captive leopard geckos may carry it."
 - 2026-09-08, rabbit and bearded dragon (branch claude/hub-rabbit-bd):
   both hubs rebuilt as router hubs (RULES, Hubs), every number copied from
   a deep dive and linked to it, emergency card from the health guide,
-  buy list without prices, the package sell card at the top, two free
+  buy list without prices, the package card in the sidebar, two free
   print cards instead of the whole guide. scripts/check-species-numbers.mjs
   written to list the conflicts by topic. Rabbit deep dives: tank setup's
   diet section cut to a pointer at the feeding guide (its FAQ with the

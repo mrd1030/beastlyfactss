@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen, ArrowUpRight } from 'lucide-react';
+import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { firsthandNote } from '@/lib/data/firsthand';
@@ -135,9 +135,7 @@ export default function GuideDetail() {
     const rows = guide.firstWeek?.rows || [];
     const buy = guide.buyList || [];
     const packageLine = carePackage
-      ? (carePackage.status === 'live'
-        ? `The full ${esc(carePackage.name)} (${carePackage.pages} pages, ${esc(carePackage.price)}) is at beastlyfacts.com/care-packages/.`
-        : `The full ${esc(carePackage.name)} (${carePackage.pages} pages, ${esc(carePackage.price)}) is coming to beastlyfacts.com/care-packages/.`)
+      ? `${esc(carePackage.name)}: ${carePackage.pages} pages, PDF, ${esc(carePackage.price)}${carePackage.status === 'live' ? '' : ', listing soon'}, at beastlyfacts.com/care-packages/`
       : '';
     const footer = `<div class="footer">Free from BeastlyFacts.com &bull; ${new Date().toLocaleDateString()}${packageLine ? ' &bull; ' + packageLine : ''}</div>`;
     const printHTML = `
@@ -400,42 +398,7 @@ export default function GuideDetail() {
               </div>
             )}
 
-            {/* Router hub: package card, first week, emergency card, routes, buy list */}
-            {isRouter && carePackage && (
-              <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row gap-4 items-start">
-                {(carePackage.image || carePackage.cover) && (
-                  <img
-                    src={carePackage.image || carePackage.cover}
-                    alt={`${carePackage.name} cover`}
-                    loading="lazy"
-                    className="w-full sm:w-36 aspect-video object-cover rounded-lg border border-border bg-white flex-shrink-0"
-                  />
-                )}
-                <div className="min-w-0 flex-1">
-                  <p className="text-xs font-body font-semibold text-secondary uppercase tracking-wide mb-1">🖨️ Printable care package</p>
-                  <p className="font-display font-bold text-base text-foreground leading-snug">{carePackage.name}</p>
-                  <p className="text-xs text-muted-foreground font-body mt-0.5">{`${carePackage.pages} pages · PDF · ${carePackage.price}`}</p>
-                  <p className="text-sm text-muted-foreground font-body mt-2">{carePackage.blurb}</p>
-                  <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
-                    {carePackage.storefront === 'stripe' ? (
-                      <Link to={`/care-packages/${carePackage.id}/`} className="inline-flex items-center gap-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-xl text-sm font-body font-semibold hover:opacity-90 transition-opacity">
-                        {`Get the guide, ${carePackage.price}`} <ChevronRight className="w-3.5 h-3.5" />
-                      </Link>
-                    ) : carePackage.status === 'live' && carePackage.gumroadUrl ? (
-                      <a href={carePackage.gumroadUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-xl text-sm font-body font-semibold hover:opacity-90 transition-opacity">
-                        {`Get the guide, ${carePackage.price}`} <ArrowUpRight className="w-3.5 h-3.5" />
-                      </a>
-                    ) : (
-                      <span className="text-sm font-body font-semibold text-muted-foreground">{`Listing soon at ${carePackage.price}`}</span>
-                    )}
-                    <Link to="/care-packages/" className="text-xs font-body font-semibold text-muted-foreground hover:text-foreground hover:underline">
-                      All care packages
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            )}
-
+            {/* Router hub: first week, emergency card, routes, buy list */}
             {isRouter && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
@@ -641,17 +604,17 @@ export default function GuideDetail() {
               <BeehiivSubscribe />
             </div>
 
-            {/* Printable care package. Router hubs carry the sell card at the
-                top of the page instead, so this one is for legacy hubs only. */}
-            {!isRouter && carePackage && (
+            {/* Printable care package, sold, never printed free. The price
+                line is the same shape CarePackageCard uses on the store page. */}
+            {carePackage && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
                 <p className="text-xs font-body font-semibold text-secondary uppercase tracking-wide mb-3 flex items-center gap-1.5">
                   🖨️ Printable Guide
                 </p>
-                <Link to="/care-packages/store/" className="group block">
+                <Link to={carePackage.status === 'live' ? '/care-packages/store/' : '/care-packages/'} className="group block">
                   <div className="flex items-start gap-3 mb-3">
                     <img
-                      src={carePackage.thumbnail}
+                      src={carePackage.thumbnail || carePackage.cover}
                       alt={`${carePackage.name} cover`}
                       loading="lazy"
                       className="w-12 h-12 object-cover rounded-lg border border-border flex-shrink-0 bg-white"
@@ -660,11 +623,13 @@ export default function GuideDetail() {
                       <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {carePackage.name}
                       </p>
-                      <p className="text-xs text-muted-foreground font-body mt-0.5">{`${carePackage.pages} pages · ${carePackage.price}`}</p>
+                      <p className="text-xs text-muted-foreground font-body mt-0.5">
+                        {`${carePackage.pages} pages · PDF · ${carePackage.price}${carePackage.status === 'live' ? '' : ' · listing soon'}`}
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-1 text-xs font-body font-semibold text-secondary">
-                    Get the printable PDF <ChevronRight className="w-3.5 h-3.5" />
+                    {carePackage.status === 'live' ? 'Get the printable PDF' : 'See all care packages'} <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
               </div>
