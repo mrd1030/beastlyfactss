@@ -162,7 +162,18 @@ if (enc) {
 }
 
 const order = ['cost', 'handling', 'health-issues', 'tank-setup', 'feeding', 'enrichment', 'legal'];
-const files = fs.readdirSync('content/guides').filter((f) => f.startsWith(species + '-') && f.endsWith('-guide.mdx'));
+const bySuffix = fs.readdirSync('content/guides').filter((f) => f.startsWith(species + '-') && f.endsWith('-guide.mdx'));
+// Some of a species' own deep-dive articles don't end in -guide.mdx (a
+// myth-busting piece, for example) but are still wired into RELATED_ARTICLES
+// as this species' own, non-shared content, and the live Deep Dive sidebar
+// shows them same as the rest. The suffix glob alone missed
+// goldfish-tank-size-bowl-myth.mdx, so a reader never saw it even though it
+// was the page the size numbers actually came from.
+const wired = getRelatedArticleSlugs(species, posts)
+  .filter((slug) => slug.startsWith(species + '-') && !isSharedDeepDiveArticle(slug))
+  .map((slug) => slug + '.mdx')
+  .filter((f) => fs.existsSync(path.join('content/guides', f)));
+const files = Array.from(new Set([...bySuffix, ...wired]));
 files.sort((a, b) => {
   const ia = order.findIndex((o) => a.endsWith(`-${o}-guide.mdx`)); const ib = order.findIndex((o) => b.endsWith(`-${o}-guide.mdx`));
   return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib) || a.localeCompare(b);
