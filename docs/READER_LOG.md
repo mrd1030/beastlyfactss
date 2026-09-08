@@ -700,6 +700,151 @@ First two changes:
 - **Russian tortoise:** a proactive hydration routine such as regular
   soaking, distinct from reading urates after dehydration has already
   happened.
+- **Hamster (second pass):** how to sex a hamster before pairing
+  dwarfs (not on the Health and More list either).
+- **Russian tortoise (second pass):** feeding portions and frequency
+  (how much hay and weeds, how often); neither the tank setup guide's
+  Diet Basics nor the shared safe plants guide states amounts.
+- **Russian tortoise (second pass):** hatchling and juvenile-specific
+  husbandry differences (humidity, UVB, feeding) are never addressed.
+
+## Hamster (2026-09-08, second pass)
+
+One Sonnet agent, same ten pages re-extracted after the first-pass
+fixes, about 95k tokens. Full agent output below, unedited.
+
+---
+
+# Hamster Care Set Review
+
+## 1. Page by page
+
+- **00 Hub:** Finish it, act on it immediately (buy list, emergency card). Grade A-.
+- **01 Encyclopedia:** Finish it for the Aleppo-to-pet-store history, but nothing actionable. Grade B.
+- **02 Cost guide:** Finish it, exact dollar ranges to budget against. Grade A.
+- **03 Handling guide:** Finish it, the scoop-from-below technique and species warning are exactly what I needed before touching one. Grade A.
+- **04 Health guide:** Finish it, wet tail alone justifies reading before day one. Grade A.
+- **05 Tank setup guide:** Finish it, the size/bedding/wheel numbers are the whole shopping list. Grade A-.
+- **06 Feeding guide:** Finish it, though the "pick one schedule" shrug on free-feeding vs measured feeding leaves me to guess. Grade B+.
+- **07 Enrichment guide:** Finish it, the bedding study is the most convincing thing in the whole set. Grade A.
+- **08 Legal guide:** Skimmable unless you live in Hawaii or keep a dwarf in Alaska/Wyoming. Grade B+.
+- **09 vs. Guinea Pig guide:** Finish it if still deciding, but its own numbers disagree with the rest of the set (below). Grade C+.
+
+## 2. Do the hub and encyclopedia earn their place?
+
+The encyclopedia is worth keeping separate: it's the only place with the 1930 founder-litter story and the 1839-to-1930 research gap, nothing a deep dive repeats. The hub earns its place too, it's the only page that compresses seven articles into one first-week checklist.
+
+But the hub disagrees with a deep dive. The hub and the enclosure guide both give the enclosure as "roughly 700 to 775 square inches of unbroken floor for a Syrian, around 600 for dwarf species." The vs. guinea pig comparison table instead says "Minimum space: 450+ sq in cage" and its body claims "a hamster's whole world can fit in 450 to 800 square inches." A reader following the hub's buy list would size a cage nearly double what the comparison table implies is the floor. Nothing on either page flags the gap.
+
+## 3. Could I actually do this?
+
+Yes, mostly. Between the hub, enclosure guide, feeding guide, and health guide I could set up, feed, and recognize the one true emergency (wet tail) without guessing. Three questions came up that no page answers, and no page admits it should:
+
+- The handling guide tells me how to pick up a hamster, but not how many days to leave a brand-new hamster alone in its cage before the first handling attempt, even though the health guide names "transport" and "stress" as wet-tail triggers, which makes this a safety question, not just a comfort one.
+- The hub's FAQ says dwarf same-sex pairs must be "introduced young," implying I need to know the hamsters' sexes, but nothing tells me how to sex a hamster.
+- No page gives a routine cage-cleaning schedule (spot-clean vs full change), despite bedding cost being called out explicitly in the cost guide.
+
+## 4. Overlap and conflict across deep dives
+
+Read twice, consistently: Syrian solitary housing (hub, handling, enrichment, vs. guinea pig all agree, no conflict), temperature thresholds of 65-75°F comfortable, under 60°F torpor, over 80°F heat stress (hub, tank setup, feeding all match exactly), and wet tail's 24-to-48-hour fatality window (hub, cost, health, feeding all match).
+
+One real conflict beyond the space issue above: lifespan. The cost guide and hub cite a veterinary study's "median age at death of just 1.75 years." The vs. guinea pig guide instead states flatly "Lifespan: 2-3 years" and "a hamster typically lives 2 to 3 years," never mentioning the 1.75-year median or the shorter dwarf range the rest of the set uses.
+
+## 5. One link per page
+
+- 00 Hub: "Some dwarf species (Campbell's, Winter White) can occasionally be kept in same-sex pairs introduced young" should link to the handling guide's species breakdown.
+- 01 Encyclopedia: needs none, it's origin material with nowhere to send you.
+- 02 Cost: "Wet tail specifically is a same-day emergency" should link to the health guide.
+- 03 Handling: "Reaching into the cage during the day while your hamster is deeply asleep is one of the single most common ways new owners get bitten" should link to the tank setup guide's temperature/light section on nocturnal cycles.
+- 04 Health: "Sugary treats, honey sticks, and fruit-heavy diets are the typical culprits" should link to the feeding guide (it links "the diet base" elsewhere but not this sentence).
+- 05 Tank setup: needs none, it already links the enrichment study directly where it's raised.
+- 06 Feeding: "12 to 24 hours...warrants a vet call" should link to the health guide's wet tail section.
+- 07 Enrichment: needs none, well linked already.
+- 08 Legal: "if you keep dwarf hamsters rather than a Syrian" should link to the handling guide's species section.
+- 09 vs. Guinea Pig: "Minimum space: 450+ sq in cage" should link to the enclosure guide, which would have caught the number mismatch.
+
+## 6. Trust
+
+The Oregon legal entry, admitting the state "appears to have exempted the wrong hamster" rather than papering over an ambiguous statute, reads like someone who actually checked the primary source instead of aggregating other sites. The line that most convinced me a keeper wrote this: "some hamsters can go 3 to 4 days relying on a pre-provisioned hoard," a specific, slightly surprising claim that only comes from having watched a hamster do exactly that.
+
+## 7. Overall grade: B+
+
+The husbandry content is rigorous and internally consistent almost everywhere; the two number conflicts above are the only real dents. First changes: fix the 450 sq in vs 700-775 sq in enclosure mismatch in the vs. guinea pig guide, and reconcile the 1.75-year median with the flat "2-3 years" claim there.
+
+## Not covered anywhere
+
+- How long to leave a newly-arrived hamster undisturbed before first handling.
+- How to sex a hamster before pairing dwarfs. Not on the Health and More list either.
+- Nail trimming for hamsters specifically: the shared grooming guide's own summary names only rabbits.
+- Carrier and vet-travel specifics for hamsters: the shared vet-transport guide's summary names only "a rabbit or guinea pig."
+- Routine cage-cleaning frequency (spot-clean vs full change).
+
+## Russian tortoise (2026-09-08, second pass)
+
+One Sonnet agent, same eight pages re-extracted after the first-pass
+fixes, about 97k tokens. Full agent output below, unedited.
+
+---
+
+# Russian Tortoise Content Review
+
+## 1. Page by page
+
+- 00 Hub: Would finish it. Actionable emergency card and buy list. Grade A.
+- 01 Encyclopedia: Would finish it, adds range and CITES context nothing else covers. Grade B+.
+- 02 Cost guide: Would finish it, real numbers and a clear buy/don't-buy table. Grade A.
+- 03 Handling guide: Would finish it, short but says what it needs to. Grade B+.
+- 04 Health issues guide: Would finish it, cited studies, clear emergency signs. Grade A.
+- 05 Tank setup guide: Would finish it, most useful page in the set. Grade A.
+- 06 Enrichment guide: Would finish it, practical and specific. Grade A-.
+- 07 Legal guide: Would finish it, unusually well sourced for a legal page. Grade A.
+
+## 2. Hub and encyclopedia
+
+Neither is filler. The hub is a router that pulls its numbers straight from the deep dives, so it does not compete with them, it previews them. The encyclopedia earns its place with things no deep dive covers: scientific name, CITES Appendix II status, the wild-caught-versus-captive-bred trade history, and a wild lifespan figure.
+
+That last item is where they disagree. The encyclopedia says "Wild Lifespan: 40-80 years." The cost guide (and the hub, copying it) says "40 years or more is typical, with some individuals reaching 50-plus." Those are two different upper bounds for the same species, one unsourced and 60% higher than the other, and nothing in the set explains whether "wild" and "well-kept pet" lifespans are actually meant to differ that much, or whether one number is just wrong.
+
+## 3. The set as a whole
+
+Setup, buying, and disease recognition are covered well enough to act on immediately: enclosure size and disagreement between sources, temperature, humidity, substrate, UVB spec, the full buy list, and the emergency card all line up with each other. Diet is thin but not empty: the tank setup guide's Diet Basics gives the staple (hay plus wild weeds, no high-oxalate greens, minimal fruit) and points to the safe-plants guide for the full list. That is adequate for "what to feed," but it never says how much or how often, and neither does anything else in the set.
+
+Two things a page raises without saying where the answer lives: the tank setup guide says "House alone, or with caution, two females together, but not multiple males," but the handling guide, which is otherwise the place for cohabitation questions, only discusses male aggression and never mentions females can cohabit at all. And the health guide's Hexamita section tells you to watch for "watery, jelly-like urine," which only makes sense if you already know what normal urine looks like, a question the reptile stool and urates guide answers, credited by a link right there, so this one is actually handled well rather than left hanging.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice, consistently: the 50/50 topsoil-coconut-coir substrate mix, the UVI target of 3.0 to 4.0, and the "better climber than it looks" line, which appears in the hub, the handling guide, the tank setup guide, and the enrichment guide.
+
+The sulcata comparison is copied almost sentence for sentence into two separate articles. Cost guide: "Sulcatas grow enormous and need real outdoor space within a few years." Handling guide: "The sulcata is a genuine giant that must have outdoor space as it grows and simply cannot be kept indoors long-term." Same claim, same conclusion, no numbers disagree, but it reads like a template swapped between two pages rather than two people writing independently.
+
+No hard numeric conflicts turned up between the deep dives themselves; the lifespan mismatch above is the one that matters, and it sits between the encyclopedia and a deep dive, not between two deep dives.
+
+## 5. One link per page
+
+- Hub: "Adult size: 5 to 10 inches." has no link and should point to the encyclopedia, since that page is where the figure actually comes from.
+- Encyclopedia: no sentence needs a link it doesn't already have.
+- Cost guide: "our legal guide has the full state-by-state picture" already links, but stops short, it should point specifically to the four-inch-rule section of the legal guide rather than the guide generally.
+- Handling guide: "Male Russian tortoises are territorial and will ram and bully other tortoises" should link to the tank setup guide's cohabitation line about housing females together.
+- Health guide: needs none, its cross-links are already the strongest in the set.
+- Tank setup guide: "Fruit should be minimal to none" should link to the Diet Basics claim back to the safe-plants guide's portion guidance, if that guide has any.
+- Enrichment guide: needs none.
+- Legal guide: "our interactive map of russian tortoise laws" already covers it well.
+
+## 6. Trust
+
+The lifespan mismatch and the copy-pasted sulcata paragraph both read as generated rather than lived-in. What convinced me otherwise: "An enclosure that is dry everywhere, with no damp retreat and no depth to dig into, is what produces a dehydrated, pyramided tortoise, and it is a more common failure in this species than an enclosure that is too wet." That is a specific failure mode, stated as a ranked frequency, the kind of detail that comes from having actually seen it happen.
+
+## 7. Grade and two fixes
+
+Grade: A-. Deep, sourced, internally consistent almost everywhere, undercut by one real numeric conflict and a missing feeding schedule.
+
+First fix: resolve or source the 40-80 year wild lifespan figure against the 40-to-50-plus figure used everywhere else. Second fix: add feeding amounts and frequency, not just what to feed, either into Diet Basics or the safe-plants guide.
+
+## Not covered anywhere
+
+- Feeding portions and frequency (how much hay and weeds, how often) are absent from Diet Basics and the safe-plants guide's own summary never promises them either.
+- A soaking or drinking-water routine, distinct from reading hydration in urates, has no guide anywhere in the sidebar.
+- Hatchling and juvenile-specific husbandry differences (humidity, UVB, feeding) are never addressed; the brumation guide's weigh-ins cover only that one context, not general growth tracking.
 
 ## Russian tortoise (2026-09-08)
 

@@ -2174,6 +2174,128 @@ cost-to-legal link from the earlier fix).
 Open: a calcium dusting schedule and a proactive hydration/soaking
 routine filed in docs/READER_LOG.md for Mike.
 
+## Hamster (2026-09-08, second pass, after the fixes)
+
+Same ten-page set, re-extracted after the first-pass fixes landed. One
+Sonnet agent, about 95k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A- | The only page that compresses seven articles into one first-week checklist. |
+| Encyclopedia | B | The founder-litter history, nothing actionable. |
+| Cost | A | Exact dollar ranges to budget against. |
+| Handling | A | The scoop-from-below technique and species warning are exactly what's needed before touching one. |
+| Health issues | A | Wet tail alone justifies reading before day one. |
+| Tank setup | A- | The size, bedding, and wheel numbers are the whole shopping list. |
+| Feeding | B+ | Honest that free-feeding versus measured feeding is a real, unresolved disagreement. |
+| Enrichment | A | The bedding study is the most convincing thing in the set. |
+| Legal | B+ | Skimmable unless you keep a dwarf somewhere specific. |
+| vs Guinea Pig | C+ | Its own numbers disagreed with the rest of the set. |
+
+Set grade: B+. "The husbandry content is rigorous and internally
+consistent almost everywhere; two number conflicts, both in the vs
+guinea pig comparison, are the only real dents."
+
+New finding, fixed: the vs guinea pig guide never got the cage-size fix
+from the first pass. Its table still read "450+ sq in cage," its body
+said "A hamster's whole world can fit in 450 to 800 square inches," and
+its FunFact derived a "2 to 3 times larger" ratio from that stale
+number. All three corrected to the current 700-775 sq in (Syrian) / 600
+sq in (dwarf) figure, with the ratio re-derived to 1.4 to 1.8x.
+
+Checked and left as is: the vs guinea pig guide's flat "2-3 years"
+hamster lifespan, against the rest of the set's "median age at death of
+1.75 years, Syrians toward 2 to 3, dwarves 1.5 to 2.5." For a
+Syrian-centric two-species comparison table, "2-3 years" isn't wrong,
+just less granular than the fuller figure elsewhere; not a number
+conflict to fix, a simplification appropriate to the format.
+
+One more link added: cost guide to health issues at the wet-tail
+same-day-emergency sentence.
+
+Gaps, checked against the Health and More list before calling them
+real: how to sex a hamster before pairing dwarfs (not covered anywhere,
+including the Health and More list), and routine cage-cleaning
+frequency (repeats the first pass). Two more, worth noting rather than
+filing as content gaps: the shared grooming guide's own summary names
+only rabbits, and the shared vet-transport guide's summary names only
+"a rabbit or guinea pig," so a hamster owner following either link from
+this species' sidebar may reasonably expect hamster coverage that
+isn't there. Both are wiring/scope questions for Mike, not something a
+deep-dives-only pass can fix.
+
+Trust: the Oregon legal entry's own admission that the state "appears
+to have exempted the wrong hamster" reads like someone who checked the
+primary source. The sentence that most convinced the reader: "some
+hamsters can go 3 to 4 days relying on a pre-provisioned hoard."
+
+Fixed the same day: the vs guinea pig guide's three stale cage-size
+figures, and one more link (cost to health issues).
+
+Open: sexing, cage-cleaning frequency, and the two shared-guide scope
+notes above, all in docs/READER_LOG.md for Mike.
+
+## Russian tortoise (2026-09-08, second pass, after the fixes)
+
+Same eight-page set, re-extracted after the first-pass fixes landed.
+One Sonnet agent, about 97k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A | Actionable emergency card and buy list. |
+| Encyclopedia | B+ | Range and CITES context nothing else covers. |
+| Cost | A | Real numbers and a clear buy/don't-buy table. |
+| Handling | B+ | Short but says what it needs to. |
+| Health issues | A | Cited studies, clear emergency signs. |
+| Tank setup | A | The most useful page in the set. |
+| Enrichment | A- | Practical and specific. |
+| Legal | A | Unusually well sourced for a legal page. |
+
+Set grade: A-. "Deep, sourced, internally consistent almost everywhere,
+undercut by one real numeric conflict and a missing feeding schedule."
+
+Encyclopedia versus a deep dive, left as is per the batch rule (the
+encyclopedia is out of scope for this pass; the deep dive's sourced
+figure is what the hub carries, and the disagreement is recorded here):
+the encyclopedia's "Wild Lifespan: 40-80 years" against the cost
+guide's "40 years or more is typical, with some individuals reaching
+50-plus." The hub already carries the cost guide's figure, not the
+encyclopedia's, so nothing to fix on this pass; flagged for whoever
+next touches the encyclopedia entry.
+
+No conflict between deep dives; the sulcata comparison sentence in the
+cost guide and the handling guide reads near-identical in both
+("Sulcatas grow enormous and need real outdoor space within a few
+years" / "The sulcata is a genuine giant that must have outdoor space
+as it grows and simply cannot be kept indoors long-term"), which the
+reader flagged as reading like a template rather than two independent
+passages, but the two sentences don't disagree on anything, so nothing
+to fix under the numbers-and-links rules.
+
+Gaps, checked against the Health and More list before calling them
+real: feeding portions and frequency, how much hay and weeds and how
+often, are absent from both the tank setup guide's Diet Basics and the
+shared safe plants guide (a new, more specific version of the
+first pass's diet-schedule gap); hatchling and juvenile-specific
+husbandry differences (humidity, UVB, feeding) are never addressed
+anywhere in the set. Both filed in docs/READER_LOG.md. The soaking/
+hydration gap repeats from the first pass.
+
+Trust: the lifespan mismatch and the near-identical sulcata paragraph
+both read as a production seam rather than a factual problem. The
+sentence that most convinced the reader: "An enclosure that is dry
+everywhere, with no damp retreat and no depth to dig into, is what
+produces a dehydrated, pyramided tortoise, and it is a more common
+failure in this species than an enclosure that is too wet."
+
+Fixed the same day: nothing required a content fix this pass; the
+encyclopedia/deep-dive lifespan gap is recorded, not fixed, since it's
+out of scope.
+
+Open: feeding portions/frequency, hatchling-specific husbandry, and the
+soaking routine gap filed in docs/READER_LOG.md; the encyclopedia
+lifespan figure flagged for whoever next touches that file.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
