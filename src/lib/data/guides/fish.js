@@ -368,7 +368,7 @@ export const fishGuides = [
       "Sinking goldfish-specific pellets",
     ],
     faqs: [
-      { q: "Can I keep a goldfish and a betta together?", a: "Not recommended. Goldfish need cooler water (65-72°F) than bettas (78-80°F), and goldfish are voracious fin-nippers that will target a betta's long fins. The temperature mismatch alone makes this pairing a poor fit for either species." },
+      { q: "Can I keep a goldfish and a betta together?", a: "Not recommended. Goldfish need cooler water (65-75°F) than bettas (78-80°F), and goldfish are voracious fin-nippers that will target a betta's long fins. The temperature mismatch alone makes this pairing a poor fit for either species." },
       { q: "How do I know if my current goldfish tank is too small?", a: "Test the water. If ammonia or nitrite ever reads above zero between water changes, or if you're doing water changes more than twice a week just to keep the fish alive, the tank is undersized for the bioload it's carrying - regardless of what the fish looks like." },
       { q: "Why has my goldfish stopped eating?", a: "Water quality problems are the single most commonly cited cause, ammonia or nitrite spikes especially in a newer tank. Overfeeding-driven constipation, stress from tank mates or a small enclosure, and early disease are the other common culprits. Seasonal pond dormancy and spawning behavior can also reduce appetite normally." },
     ],
