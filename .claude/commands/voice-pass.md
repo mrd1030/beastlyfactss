@@ -55,18 +55,18 @@ For each article in the findings, in order:
      answer shorter, leave the answer alone.
    - Never delete a clause that has no flagged word in it. A sentence that
      is not named in the findings is not yours to touch, even to tidy it.
-   - Opener link: the first paragraph is about the animal and carries no link.
-     Move the care-guide link sentence to the end of the intro, as the last
-     paragraph before the first H2, so it never lands inside a section the
-     reader came for. Same targets, its own short paragraph, in the
-     original "see our" shape: "For what all of this costs, see our [cost
-     guide]." Never the directory shape "What it costs is in the cost
-     guide." The tank-setup series wrote that 51 times and every one read
-     flat.
+   - Opener link: the first paragraph is about the animal and carries no link,
+     and neither does the rest of the first section. A care-guide sentence
+     or a "companion guides on cost, feeding, handling, and cage setup"
+     list under the opener is deleted, not moved (RULES, Linking). The Deep
+     Dive list carries the care guide and every sibling guide.
    - Closer dump: a closing paragraph with three or more links, or one ending
-     in "browse the rest of our", becomes two plain sentences. Each link gets
-     a reason. Every link stays, every target stays. Never delete a link to
-     satisfy this rule. Describe a linked page only in words the original
+     in "browse the rest of our", loses every sentence that exists only to
+     link a same-species sibling guide, the care guide hub, or a category
+     page; the Deep Dive carries those. What remains (an encyclopedia,
+     overview, or cross-species sentence) stays as one plain paragraph with
+     a reason per link. Inside content sentences, a "covered in our X guide"
+     clause is cut and the point kept. Describe a linked page only in words the original
      sentence already used. "Other small mammals with bonding routines of
      their own" was invented, and "The species away from its care sheet" is
      not a sentence. The shape is imperative: "For the rest of their setup,

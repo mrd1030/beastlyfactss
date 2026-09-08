@@ -53,9 +53,12 @@ working checklist.
   like "I would not handle a mourning gecko" is allowed anywhere because it
   is a recommendation, not a claim of experience. Legal pieces and the
   Chronicles keep their own voices.
-- The first sentence of an article is about the animal. The care-guide link
-  moves to the end of the first section. "For everything else, see our full
-  guide" as an opener is a nav bar pretending to be a sentence.
+- The first sentence of an article is about the animal, and so is the first
+  section. No care-guide sentence, no "companion guides on cost, feeding,
+  handling, and cage setup" list. "For everything else, see our full guide"
+  is a nav bar pretending to be a sentence, wherever it sits. The Deep Dive
+  list (sidebar on desktop, the block after the FAQ on phones) carries the
+  care guide and every sibling guide on every page, in the prerendered HTML.
 - "X, not Y" and "X rather than Y" are one move, not a paragraph closer. Use
   each at most twice per article. A section that ends on that cadence every
   time reads as assembled.
@@ -99,6 +102,21 @@ snapshot, not a quote."
 
 - Every article carries 1 to 2+ in-body internal links, written by hand. The
   build gates on this, but the check is a net, not the author.
+- In-body links point somewhere the Deep Dive does not: another species
+  ("the same calcium problem sugar gliders have"), a cross-species guide
+  (quarantine, UVB, gut-loading), the encyclopedia profile, an overview or
+  vs piece. Never a link to the same species' cost, handling, health,
+  setup, feeding, enrichment, or legal guide, and never to the care guide
+  hub: the Deep Dive lists all of those on every page. A sentence that
+  exists only to carry a link ("For what it costs, see our cost guide")
+  is deleted, not moved. A content sentence that carried one ("covered in
+  our health guide") loses the clause and keeps the point. Decided
+  2026-09-08 on the flying squirrel set; the rest of the series follow.
+- Articles end on the animal: the last body paragraph is a point, not a
+  list of places to go next. One encyclopedia or overview sentence is fine.
+- Navigation-only edits (links added, moved, or removed) and FunFact
+  rewrites do not bump lastUpdated or lastReviewed. Only a fact added or
+  reviewed does.
 - Every article must be reachable from a guide. Standard species suffixes
   (cost, handling, health-issues, tank-setup, feeding, enrichment) auto-wire;
   everything else gets a RELATED_ARTICLES entry against the guide ids it serves.

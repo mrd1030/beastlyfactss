@@ -57,14 +57,20 @@ over anything here.
   (toad, millipede, cockroach) carry two sources, not three, by decision.
   Batches 6 to 10 (pick-up sections for the hands-on handling guides) are
   scoped in docs/BEEF_UP_PLAN.md and not started.
-- Article endings: branch claude/more-on-block adds a "More on the <animal>"
-  block after the FAQ (src/components/blog/MoreOnSpecies.jsx), rendered
-  from RELATED_ARTICLES so it is in the prerendered HTML, and fixes the
-  sidebar so Deep Dive and Health and More prerender too (before this the
-  whole sidebar was the string "Loading..." in every static page). You May
-  Also Like excludes what the block shows; on phones the sidebar hides its
-  copy of the species list. No MDX was touched. Prose closers stay as they
-  are until the closer rule is tightened (next jobs).
+- Article pages, 2026-09-08 (branch claude/more-on-block, merged): the
+  Deep Dive list prerenders (the sidebar used to be the string
+  "Loading..." in every static page) and opens with a "<Species> care
+  guide" row; on phones it renders as "More on the <Species>" after the
+  FAQ (src/components/blog/MoreOnSpecies.jsx), on desktop only in the
+  sticky sidebar. The excerpt block is gone from article pages. The
+  contents card highlights the current section. Subscribe is last on
+  phones, You Might Also Like is desktop only, Random Fact draws from
+  facts under 50 words.
+- Linking rule, decided 2026-09-08 (RULES, Linking): no same-species
+  sibling links, no care-guide sentence, no link-only sentences in prose;
+  the Deep Dive carries those. Done on the six flying squirrel guides as
+  the pilot (links per guide 11 to 16 down to 2 to 6). The other 526
+  species guides still carry the old shape: next job 2.
 - Date rule, decided 2026-09-08: navigation-only and FunFact edits do not
   bump lastUpdated or lastReviewed. Only a fact added or reviewed does.
 - The 111 baseline blog posts: noted, left alone for now.
@@ -100,12 +106,17 @@ catches the defects the commands produce. Per batch:
    verbatim. Prompt at the end of this file.
 3. `/beef-up 6 go` through `/beef-up 9 go` (pick-up sections). Prompt at
    the end of this file. Batch 10 is optional.
-4. Tighten the closer rule in scripts/check-voice.mjs (count the last two
-   paragraphs, and no article ends on a link sentence), then one pass by
-   series that keeps the sibling sentence with a reason and drops the
-   category and overview sentences the new block now carries. The pill row
-   shape (`[Cost](/..) · [Handling](/..)`) is the fallback where no closing
-   sentence earns its place; allow `•` as well as `·` in the checker first.
+4. Linking pass, by series (the flying squirrel six are the model, commit
+   f34db42e and 88014141): delete every sentence that exists only to link
+   a same-species sibling guide, the care guide hub, or a category page;
+   cut "covered in our X guide" clauses inside content sentences and
+   keep the point; keep cross-species, encyclopedia, and overview links.
+   Before the first series, add legal to STANDARD_SUFFIXES and wire each
+   species' overview, vs, and 10-surprising posts into RELATED_ARTICLES so
+   the Deep Dive carries them, then tighten the checker: no link in the
+   first section, no same-species sibling link anywhere, no article ending
+   on a link sentence. No date bumps. Roughly 1,400 link-only sentences go
+   by script; about 600 embedded clauses need a reading pass.
 5. The 111 baseline blog posts: noted.
 
 ## The prompt to paste into a new session

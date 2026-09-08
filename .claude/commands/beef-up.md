@@ -57,11 +57,12 @@ PHASE 2: one article at a time
    - Do not repeat anything the article already says. Add, do not restate.
    - Target 700 to 1,000 body words total. If the section pushes past
      1,000, cut the section, not the original.
-   - One to two in-body internal links inside the new section only if a
-     sibling guide covers the point (the tank setup guide for a humidity
-     number, the health guide for a condition). Same slug shape as the
-     existing links in the file. Never add a link to a page you have not
-     confirmed exists with `ls content/*/<slug>.mdx`.
+   - Links inside the new section only to another species or a
+     cross-species guide that carries the point (the reptile quarantine
+     guide, the sugar glider's calcium problem). Never to the same species'
+     sibling guides or care guide hub; the Deep Dive list carries those.
+     Same slug shape as the existing links in the file. Never add a link
+     to a page you have not confirmed exists with `ls content/*/<slug>.mdx`.
 4. FAQs: if the new section answers an existing FAQ better, rewrite that
    answer from the new body text, two or three sentences, under 70 words,
    no copied sentence. Do not add FAQs. Do not touch FAQs the section does
