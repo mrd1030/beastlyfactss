@@ -71,6 +71,7 @@ function renderBody(body, slug) {
   text = text.replace(/<FunFact>([\s\S]*?)<\/FunFact>/g, (_, inner) => '\nFun fact box: ' + inner.trim() + '\n');
   text = text.replace(/<KeyTakeaway>([\s\S]*?)<\/KeyTakeaway>/g, (_, inner) => '\nKey takeaway box: ' + inner.trim() + '\n');
   text = text.replace(/<Figure[^>]*caption="([^"]*)"[^>]*\/>/g, '\n[photo: $1]\n');
+  text = text.replace(/<CarePackageBlock[^>]*\/>/g, '\n[card: the printable care package for this species, with its price and a link to the store]\n');
   text = text.replace(/<AffiliateLink[^>]*>([\s\S]*?)<\/AffiliateLink>/g, '$1');
   text = text.replace(/<(VetDisclaimer|LegalDisclaimer|AffiliateDisclosure)[^>]*\/>/g, (m) =>
     m.includes('Vet') ? '[Not veterinary advice notice]' : m.includes('Legal') ? '[Legal disclaimer notice]' : '[Affiliate disclosure notice]');

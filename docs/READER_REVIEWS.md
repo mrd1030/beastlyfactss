@@ -196,7 +196,22 @@ across hub, encyclopedia, and comparison; then the four cross-links
 (feeding to brumation, enrichment to eggs, handling to health, comparison
 to cost).
 
-Open: everything above except the emergency card, and the gaps: day one
+Fixed the same day: the cost guide's sum sentence now reads off its own
+table (near $400 with budget picks, past $1,100 premium, $400 to $800 the
+realistic middle, the vet exam on top); lifespan 10 to 15 in the leopard
+gecko comparison; adult size 16 to 24 inches on the hub with 18 to 22
+typical (Mike's call: up to 24); tank setup names both Arcadia tubes;
+the eggs guide's adult calcium matches feeding's 2 to 3 times a week;
+the health guide's adult refusal bullet carries the lethargy, stool, and
+abdomen clause; safe foods links the eggs guide instead of calling it
+upcoming; eight of the thirteen links (cost, handling, health, feeding,
+enrichment, brumation, eggs; hub lifespan has no link slot to the
+encyclopedia). Not added: tank setup to health (second suffix link), the
+comparison table cell (no markdown in cells). Brumation 1 to 3 against 1
+to 4 months left, both sourced. The brumation guide's colon sentence
+introduces a care package card the extractor now renders as a card.
+
+Open: the rest of the above, and the gaps: day one
 and quarantine, shedding, cleaning and hygiene, and the power-outage
 floor are all covered by the shared reptile guides in the sidebar's
 Health and More list. Same extractor blind spot as the rabbit third pass,
@@ -476,7 +491,17 @@ Reader's two changes: reconcile the alfalfa cutoff, lifespan, difficulty,
 and the emergency fund against the $1,500 workup; then cover what the buy
 list already sold (nails, carrier, molting, heat).
 
-Open: everything above except the hub source slip, and the gaps: nails,
+Fixed the same day: the alfalfa cutoff (juveniles to about 6 months, the
+transition 4 to 7 months and said to overlap), the emergency fund line
+now says more if you can since one workup can exceed it, and three of the
+nine links (cost to health, handling to enrichment, feeding to GI
+stasis). Not added: health, tank setup, and enrichment to cost, each of
+which would be a second same-species suffix link and trip the checker;
+the GI stasis table row, since table cells do not take markdown links;
+the encyclopedia, which is structured data. Encyclopedia lifespan and
+difficulty left for Mike.
+
+Open: the rest of the above, and the gaps: nails,
 carrier and car travel, molting, and heat are all covered by the shared
 small-mammal guides in the sidebar's Health and More list (grooming, vet
 trips, heat stress). The reader never opened them because the extract
