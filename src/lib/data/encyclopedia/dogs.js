@@ -27,7 +27,7 @@ export const dogEncyclopedia = [
   },
   {
     id: "bulldog", name: "Bulldog", scientific: "Canis lupus familiaris",
-    category: "Dogs", emoji: "🐶", difficulty: "Intermediate", guideId: "dog-bulldog", available: true, image: "/assets/guides/dog-bulldog.jpg",
+    category: "Dogs", emoji: "🐶", difficulty: "Advanced", guideId: "dog-bulldog", available: true, image: "/assets/guides/dog-bulldog.jpg",
     bio: {
       overview: "The Bulldog was created in medieval England for bull-baiting, and its ancestors were selected for huge jaws and a high pain threshold. When England banned blood sports in 1835 the breed lost its job and nearly died out, so admirers spent decades reworking it into a companion, refining its contours and breeding away the aggression. That reshaping came at a documented cost: a study of 2,662 English Bulldogs found 2.04 times the odds of being diagnosed with at least one disorder compared with other dogs, with raised odds for 24 of 43 specific disorders, and its authors called for immediate redefinition of the breed toward a moderate conformation. A separate survey of 102 breeding Bulldogs found one paternal haplotype in 93% of dogs. None of this makes the Bulldog a bad dog, and it is genuinely docile and fond of children, but it is a dog that will need active medical management.",
       origin: "Breed origin: England (bred for bull-baiting from the 13th century, then reworked into a companion after Britain's 1835 blood-sports ban)",
