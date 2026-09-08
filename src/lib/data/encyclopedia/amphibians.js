@@ -10,6 +10,7 @@ export const amphibianEncyclopedia = [
       wildDiet: "Worms, mollusks, insects, small fish, and aquatic invertebrates",
       wildLifespan: "5-6 years (habitat degradation and predation cut wild lifespans well short of the 10-15 years typical in captivity)",
       conservation: "Critically Endangered (IUCN)",
+      history: "The name comes from Nahuatl, joining atl for water with the name of Xolotl, the dog-headed Aztec god who, in Bernardino de Sahagun's account, took this form to escape sacrifice. The laboratory animal begins with a single shipment: in 1864, 34 live axolotls were sent from Mexico City to Paris and split between the Jardin d'Acclimatation and the Museum d'Histoire Naturelle, where six went to Auguste Dumeril. They bred so freely that Dumeril counted about 800 within a year, and their offspring went out to institutions across Europe, which is why most laboratory axolotls descend from those six. The albinism behind the pink-eyed white form came later, from a wild albino tiger salamander found in Minnesota and crossed in, work documented by Humphrey in 1967.",
     },
   },
   {
@@ -21,8 +22,9 @@ export const amphibianEncyclopedia = [
       habitat: "Mountain streams, ponds, marshes, and wet meadows",
       adultSize: "1.5-2 inches (4-5 cm)",
       wildDiet: "Insects, worms, small crustaceans, and aquatic invertebrates",
-      wildLifespan: "12-15 years (up to 20+ years in captivity)",
+      wildLifespan: "Maximum longevity in the wild is estimated at 20 years; up to 30 years in captivity",
       conservation: "Least Concern (IUCN)",
+      history: "George Albert Boulenger described the species in 1890 as Bombinator orientalis, working from specimens held at the British Museum. It went on to become the most commonly kept member of its genus, exported from Korea and China in large numbers. That volume turned out to matter: a study published in Science in May 2018 and led by Imperial College London traced the amphibian-killing chytrid fungus Batrachochytrium dendrobatidis to East Asia, found its most genetically diverse lineage confined to the Korean peninsula, and dated the pathogen's global expansion to the past 50 to 120 years. Asian strains of that fungus were recovered from pet oriental fire-bellied toads, direct evidence that the trade carried it. The IUCN assessed the species as Least Concern in 2020.",
     },
   },
   {
@@ -36,6 +38,7 @@ export const amphibianEncyclopedia = [
       wildDiet: "Insects, worms, mice, other frogs, and small vertebrates",
       wildLifespan: "6-15 years",
       conservation: "Least Concern (IUCN)",
+      history: "The species entered science through Darwin's voyage. Thomas Bell described it in 1843 as Uperodon ornatum, in the reptiles volume of the Zoology of the Voyage of H.M.S. Beagle, from a specimen labeled Buenos Ayres, with syntypes catalogued at the British Museum; the genus Ceratophrys, where it eventually landed, had been erected by Wied-Neuwied in 1824. Modern keeping rests on two species rather than one, since Cranwell's horned frog, Ceratophrys cranwelli, is bred and sold alongside the ornate. Breeders also cross Ceratophrys cranwelli with the Surinam horned frog to produce the captive hybrid marketed as the fantasy frog.",
     },
   },
   {
@@ -49,6 +52,7 @@ export const amphibianEncyclopedia = [
       wildDiet: "Worms, insects, slugs, frogs, small mice, and other salamanders",
       wildLifespan: "12-16 years",
       conservation: "Least Concern (IUCN)",
+      history: "Jacob Green described the species in 1825, but its most consequential history has been commercial. Larvae are sold across the United States as fishing bait under the name waterdogs, and West Coast populations exist because bait animals were released there rather than because the species spread on its own. In California that trade produced a genetic emergency: barred tiger salamanders introduced into central California ponds in the middle of the twentieth century interbred with the federally endangered California tiger salamander, and work by Benjamin Fitzpatrick and Bradley Shaffer published in the Proceedings of the National Academy of Sciences in September 2007 found the hybrids unexpectedly vigorous. The same trade moves Ambystoma tigrinum virus, a ranavirus common in bait shop stock.",
     },
   },
   {
@@ -62,6 +66,7 @@ export const amphibianEncyclopedia = [
       wildDiet: "Insects, moths, cockroaches, crickets, and occasionally small lizards",
       wildLifespan: "7-20 years (up to 21 years recorded)",
       conservation: "Least Concern (IUCN)",
+      history: "The species was the first Australian frog to be described scientifically. John White, a surgeon and naturalist, published it in 1790 in his Journal of a Voyage to New South Wales as Rana caerulea, Latin for blue, because the preserved specimens he shipped to England had turned that color: the frog's green comes from a blue pigment under a yellow layer, and the preservative destroyed the yellow. The type specimen passed into Sir Joseph Banks's collection and was destroyed when the Hunterian Museum in London was bombed during the Second World War. The misleading name has stuck through every later change of genus.",
     },
   },
 ];
