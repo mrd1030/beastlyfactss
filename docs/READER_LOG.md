@@ -70,6 +70,60 @@ hub, two of the five links, and the temperature guide's Deep Dive wiring
 (added to `leopard-gecko` in src/lib/data/relatedArticles.js). The
 60°F/65°F hub mismatch is both sourced and left for Mike.
 
+## Leopard gecko (2026-09-08, second pass)
+
+Same ten-page set, re-extracted after the first pass fixes landed.
+One Sonnet agent, about 98k tokens. Full agent output below, unedited.
+
+---
+
+1. Page by page, would I finish it and could I act on it:
+- Hub: yes, finish and act. Grade A. It is a router with real numbers, not just cards.
+- Encyclopedia: yes, quick read. Grade B. Nothing to act on, but it is not trying to be.
+- Cost guide: yes. Grade A-. Tables I would actually budget from.
+- Handling guide: yes. Grade A. The tail warning alone justifies the page.
+- Health issues guide: yes, and I would bookmark it. Grade A-.
+- Tank setup guide: yes. Grade A.
+- Feeding guide: yes. Grade A. Honest about where sources disagree.
+- Enrichment guide: yes. Grade A-. Cites two named studies, not vague "enrichment is good" filler.
+- Temperature guide: yes, most useful single page. Grade A.
+- Vs. crested gecko guide: yes, but only useful before I've already picked. Grade B+.
+
+2. The hub and encyclopedia do earn their place. The hub's numbers are a faithful summary, not padding, matching the deep dives exactly on temperature, budget, and feeding schedule. The encyclopedia adds wild-range, wild diet, and conservation content none of the deep dives repeat. I found no numeric disagreement between the hub and any deep dive. The one thing the hub does duplicate verbatim is the emergency symptom list, which appears identically in the health issues guide, word for word, down to the bullet order.
+
+3. After reading all nine, I could set up, buy, feed, and handle a gecko with confidence. What's still open: nothing tells me how to prevent or handle egg binding beyond "same-day vet situation" in the health guide, no nesting box or gravid-female setup is described anywhere. Brumation gets named as a cause of appetite loss in the feeding guide, but no page gives target temperatures or a duration for managing it safely. Two places raise a question the text doesn't point to an answer for: the handling guide's settling benchmark ("stops fleeing or hiding when you approach") depends on the three-hide setup from the tank guide, but handling never links there. And the health guide says "an annual wellness exam is worth doing" without saying what it costs, while the cost guide has the exact number ($85 to $105) with no link back.
+
+4. Overlap: the temperature range (88-92°F warm floor, 70-77°F cool) is repeated near-verbatim across the hub, tank setup, feeding, temperature, and vs-crested guides, and it's consistent every time, which reads as care rather than sloppiness. The humidity rule (30-40% general, 70-80% in the humid hide) is repeated across the hub, tank setup, and enrichment guides, also consistent. One real tension: the tank setup guide frames UVB as optional, saying geckos "don't strictly require UVB the way bearded dragons do," while the health issues guide says geckos "appear to rely heavily on UVB and correct basking temperature to process calcium properly, not diet supplementation alone." Both are trying to say the same thing (UVB helps more than people think) but one calls it optional and the other calls it something the animal relies on heavily, and a new owner deciding whether to spend $20-50 on a UVB fixture would feel that contradiction.
+
+5. One link per page:
+- Hub: none needed, it already links everywhere.
+- Encyclopedia: "with over 100 recognized color morphs in captivity" should link to the cost guide, which is the page that actually prices morphs.
+- Cost guide: "sick or emergency visits run $100 to $800 or more" should link to the health issues guide, which is what those visits are usually for.
+- Handling guide: "don't start until it stops fleeing or hiding when you approach" should link to the tank setup guide, since the three-hide setup is what lets a gecko stop hiding in the first place.
+- Health issues guide: "an annual wellness exam is worth doing" should link to the cost guide for the $85-$105 figure.
+- Tank setup guide: none needed, it already links to feeding, temperature, and UVB.
+- Feeding guide: "never feed wild-caught insects of any kind" duplicates ground the health issues guide covers on impaction risk; a link there would help.
+- Enrichment guide: "never use wild-caught insects or fireflies" should link to the feeding guide, which owns this exact rule.
+- Temperature guide: none needed, it links out well already.
+- Vs-crested guide: "both species can drop their tails defensively if grabbed or badly startled" should link to the handling guide, which has the real detail on autotomy.
+
+6. What raised doubt: the crypto stat ("around half of captive leopard geckos may carry it") is stated flatly in three places with no source named, which is a big number to hang unqualified. The UVB framing tension above also cost some trust. What convinced me a real keeper wrote this: the temperature guide's line, "The sources do not all agree with each other, let alone with this table," followed by naming LafeberVet, Zen Habitats, and Merck by name and picking a number in between. That is not something a content farm writes.
+
+7. Grade: A-. Deeply consistent numbers, honest about disagreement instead of hiding it, and organized around what a new owner actually needs first. First fix: resolve the UVB "optional" versus "relies heavily on" contradiction into one consistent stance. Second fix: add a short egg-binding/nesting section and a brumation temperature note, since both are named as risks but neither gets real guidance anywhere in the set.
+
+Not covered anywhere:
+- Prevention or setup guidance for egg binding in gravid females (a nesting box, warning signs before it becomes an emergency). Not in the health guide, not in the shared Health and More list.
+- Brumation-specific temperature targets or expected duration. Named as a cause of appetite loss in the feeding guide, but no page, species-specific or shared, gives numbers for managing it.
+
+---
+
+Fixed the same day (docs/READER_REVIEWS.md has the full write-up): two
+more links (cost to health issues, handling to tank setup). Checked the
+UVB framing tension closely: both pages already end their claim with
+"technically optional," so it's read-in-isolation tension, not a
+factual conflict, left alone. Left open: the crypto statistic's
+missing source, egg-binding and brumation-temperature content gaps.
+
 ## Goldfish (2026-09-08)
 
 One Sonnet agent, nine pages (hub, encyclopedia, cost, handling, health
@@ -159,6 +213,12 @@ at the care guide hub cut; five of eight recommended links added.
   together. The tank setup guide states the rule ("they're not a social
   species and don't do well cohabitating") but never the reason, and
   nothing else in the set or the shared guides covers it either.
+- **Leopard gecko:** egg-binding prevention or setup for gravid females
+  (a nesting box, warning signs before it becomes an emergency). Not in
+  the health guide or any shared reptile guide.
+- **Leopard gecko:** brumation-specific temperature targets or expected
+  duration. Named as a cause of appetite loss in the feeding guide, but
+  no page, species-specific or shared, gives numbers for managing it.
 - **Goldfish:** how to pick a healthy goldfish or spot a "feeder" goldfish
   at the store. The hub says to avoid them, but no page in the set, and
   nothing in the Health and More list, explains how to tell.
