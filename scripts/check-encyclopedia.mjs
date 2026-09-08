@@ -114,7 +114,11 @@ for (const a of animals) {
   else {
     const sentences = history.split(/[.!?]+\s/).filter((x) => x.trim().length > 20).length;
     if (sentences < 2 || sentences > 6) warn(a.id, 'history-length', `${sentences} sentence(s), the shape is 3 to 5`);
-    const person = history.match(/\b(I|we|our|you|your)\b/i);
+    // A bare capital I is usually a CITES Appendix or a Type/Phase number, so
+    // first person is matched only where a verb follows it.
+    const person = history.match(/\bI\s+(?:am|was|have|had|think|found|would|will|can|do|did)\b/)
+      || history.match(/\b(we|our|you|your)\b/i)
+      || history.match(/\bus\b/);
     if (person) warn(a.id, 'history-voice', `first or second person: "${person[0]}"`);
   }
 }

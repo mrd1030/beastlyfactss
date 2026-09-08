@@ -38,6 +38,7 @@ export const turtleEncyclopedia = [
       wildDiet: "Omnivore - fruit, flowers, foliage, fungi, carrion, and invertebrates",
       wildLifespan: "Not documented in the wild; 50 to 70+ years in captivity, with up to 90 reported",
       conservation: "Vulnerable (IUCN Tortoise & Freshwater Turtle Specialist Group); CITES Appendix II",
+      history: "Johann Baptist von Spix described the species in 1824 as Testudo carbonaria. The name was rebuilt twice after that: Roger Bour and Charles Crumly moved the South American tortoises into Chelonoidis in 1982, and the Turtle Taxonomy Working Group corrected the mismatched feminine ending to carbonarius in 2017. Long before any of that the tortoise had a place at the table, because the Roman Catholic church counted it as permissible during fasting periods, and pastel de morrocoy, baked and served in the shell, remains a Lenten dish that animals are still traded across borders to supply. Officially declared CITES exports between 2000 and 2005 came to roughly 35,565 tortoises, and smuggling is thought to account for well over twice that.",
     },
   },
   {

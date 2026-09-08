@@ -10,6 +10,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Algae and organic biofilm grazed from rocks and streambeds in fast-flowing water",
       wildLifespan: "No biological study of wild lifespan exists for dwarf shrimp; 2 to 3 years in an aquarium, occasionally up to 5 with excellent, stable conditions",
       conservation: "Least Concern (IUCN)",
+      history: "William Stimpson described the shrimp in 1860, but his specimens and most of the North Pacific Exploring Expedition collection he had brought to Chicago burned in the Great Chicago Fire of October 1871, and he died nine months later. With the types gone, the same animal was described again as Caridina japonica by De Man in 1892, and that name held for over a century. In 2006 a team led by Yixiong Cai collected fresh material at Stimpson's original localities, showed the two names covered one species, and restored the older multidentata. Takashi Amano, who founded his aquarium company in 1982 and whose Nature Aquarium World books began appearing in 1994, died in 2015.",
     },
   },
   {
@@ -23,6 +24,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Biofilm, algae, and detritus grazed from submerged surfaces (does not eat live plants)",
       wildLifespan: "1-2 years",
       conservation: "Not formally assessed (IUCN); wild populations not considered at risk",
+      history: "Eugène-Louis Bouvier described the shrimp in 1904 as Caridina davidi, from Chinese material, naming it for Armand David, the French missionary naturalist who collected widely across China. For most of the following century it was buried under other names: Caridina denticulata sinensis in 1918, then Neocaridina denticulata sinensis, then Neocaridina heteropoda in 2002, which is the label the first wave of Western keepers knew it by. Taxonomic work in the 2010s established Bouvier's davidi as the valid name, which is why older aquarium books and current stock lists disagree. Aquarium releases have since seeded the shrimp into waterways well outside Asia, and the feral animals often carry the same selectively bred colors sold in shops.",
     },
   },
   {
@@ -36,6 +38,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Insects, worms, small lizards, and small mammals",
       wildLifespan: "Not documented in the wild, and likely shorter there; 5 to 8 years in captivity",
       conservation: "Appendix II (CITES)",
+      history: "Carl Ludwig Koch described the species in 1842. Collection for the pet trade eventually drew in regulators, and it was placed on CITES Appendix II, a rare step for an arachnid and rarer still for a scorpion. The permits that came with the listing turned the trade into a matter of public record: Benin's quota for 2001 alone ran to 42,781 ranched specimens, and Togo was allotted 13,500 ranched plus 1,000 taken from the wild. Ranching, in which gravid females are collected and their young reared for export, has been the main legal supply route out of West Africa ever since.",
     },
   },
   {
@@ -49,6 +52,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Algae, detritus, small aquatic invertebrates, and plant matter (omnivorous scavenger)",
       wildLifespan: "About 1 year in the wild (6-13 months); commonly 1-2 years in captivity",
       conservation: "Not formally assessed (IUCN); secure and widespread in its native range",
+      history: "Lewis Reeve Gibbes described the species most often sold under the name in 1850. It spent most of the following century in Palaemonetes, a genus that no longer exists: molecular work by Ashelby and colleagues in 2012 showed Palaemonetes was nested inside Palaemon, and De Grave and Ashelby formally sank it the year after, making the correct name Palaemon paludosus. Almost none of the trade has caught up. The animals are still pulled out of southeastern waterways, mostly in Florida, instead of being produced in hatcheries, which is unusual for a creature moved in these numbers.",
     },
   },
   {
@@ -62,6 +66,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Decaying plant matter, leaf litter, fungi, and minerals from soil",
       wildLifespan: "5-10 years",
       conservation: "Least Concern (IUCN)",
+      history: "Wilhelm Peters described the species in 1855. Its path into captivity has been shaped less by hobbyists than by agricultural regulators, because the United States treats giant millipedes as a potential plant pest and requires a federal permit to import them; shipments arriving without one are seized, as happened at San Francisco International Airport in 2014. Much of that caution traces to the mites that ride on the millipede's exoskeleton, which appear to clean their host in exchange for food and shelter but are difficult to screen at a border. The result is an animal that is straightforward to keep and awkward to move across a national line.",
     },
   },
   {
@@ -75,6 +80,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Decaying plant and animal matter, fruit, and organic debris (omnivorous scavenger)",
       wildLifespan: "20-30+ years in the wild",
       conservation: "Not evaluated; regional populations pressured by coastal development and the pet trade",
+      history: "The species entered the American pet market in 1953, sold to tourists at a souvenir shop in West Palm Beach. It went mass market in the 1970s, when one company branded it the Crazy Crab and pitched it as a moving Pet Rock, and by 2000 a single wholesaler was reported to be moving more than a million a year. Nearly all of those animals were taken from the wild, because the larvae spend about a month drifting as plankton in salt water and captive rearing had defeated everyone who tried it. Mary Akers finally managed it in 2018, raising two crabs to land and then 204 in a later attempt that year, against a previous record of 24 set by a German hobbyist.",
     },
   },
   {
@@ -88,6 +94,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Flies, moths, and other small insects, caught by active stalking and pouncing",
       wildLifespan: "1-2 years",
       conservation: "Not evaluated (widespread and common)",
+      history: "Carl Ludwig Koch described the species in 1846, and it remains the largest jumping spider in eastern North America. Exotic pet keepers have worked with it since the 1970s, but for decades it stayed a niche animal traded among specialists. That changed after 2017, when the animated series Lucas the Spider and a wave of social media accounts turned jumping spiders into a mainstream pet, and the regal, already the largest of the North American species, became the default choice. It is now stocked by chain pet stores across the United States and Canada, an unusual place for a spider to end up.",
     },
   },
   {
@@ -101,6 +108,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Decaying plant matter, leaf litter, and fruit",
       wildLifespan: "2-5 years",
       conservation: "Not formally assessed (IUCN); considered stable",
+      history: "Hermann Schaum named the species Hormetica portentosa in 1853, working from material Wilhelm Peters had collected and deposited in Berlin, and describing it from a specimen taken at Madagascar's Bay of Saint-Augustin. Carl Brunner von Wattenwyl decided in 1865 that it warranted a genus of its own and built Gromphadorhina around it. Its second career came through television and classrooms: it appeared on Late Night with David Letterman in 1984 and later on Fear Factor, and the Bronx Zoo has run a Valentine's Day cockroach naming fundraiser since 2011. Whether any given colony holds that species at all is another question, since dealers routinely mix it with two Madagascan lookalikes, Gromphadorhina oblongonota and Gromphadorhina picea.",
     },
   },
   {
@@ -114,6 +122,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Insects, spiders, small frogs, lizards, and hummingbirds (large species)",
       wildLifespan: "6-18 months (annual life cycle)",
       conservation: "Most species Least Concern; some poorly assessed",
+      history: "The mantis most Americans meet outdoors is not a native one. The Chinese mantis, named by Henri de Saussure in 1871, arrived accidentally in 1896 with a nursery tender at Mount Airy in Philadelphia and spread across the eastern United States from there. Its egg cases have been sold through garden centers as living pest control ever since, a market that still runs in the United States and Canada, though an ambush predator that sits and waits makes a poor tool for clearing one specific pest. That commercial supply is also why the Chinese mantis is the usual first species for keepers: the oothecae are cheap, legal and easy to find.",
     },
   },
   {
@@ -127,6 +136,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Leaves of various plants (highly species-specific)",
       wildLifespan: "6 months-2 years depending on species",
       conservation: "Varies; some island species Critically Endangered (IUCN)",
+      history: "One species carried the whole order into laboratories. Carausius morosus, named by de Sinéty in 1901, traces its culture stock to a collection from Tamil Nadu and consists entirely of parthenogenetic females, which is why generations of students have reared it under the name Indian or laboratory stick insect. The order also produced one of the more improbable conservation stories on record: Dryococelus australis, the Lord Howe Island stick insect, was written off as extinct by 1920 until a February 2001 survey of Ball's Pyramid found roughly two dozen animals on a single terrace. Two breeding pairs were collected in 2003, one going to a private breeder in Sydney and the other to Melbourne Zoo, which built a captive population from them.",
     },
   },
   {
@@ -140,6 +150,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Insects, small lizards, frogs, mice, and birds (large species)",
       wildLifespan: "5-30 years; females live far longer than males",
       conservation: "Varies; many species listed in Appendix II (CITES); some Endangered",
+      history: "The family's regulatory history starts in 1985, when the Mexican redknee became the first spider of any kind listed by CITES, after wild collection for the pet trade had been running into the thousands a year. The rest of the genus Brachypelma followed onto Appendix II in 1994. The next major step came in 2019, when the parties added all fifteen Asian ornamental tarantulas in the genus Poecilotheria, whose United States imports had climbed from about 2,700 specimens across 1995 to 1999 to more than 16,500 across 2013 to 2017. Both listings followed one pattern: a spider becomes fashionable, wild populations are stripped to supply the demand, and regulation arrives afterward.",
     },
   },
 ];

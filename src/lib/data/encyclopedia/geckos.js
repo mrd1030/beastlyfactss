@@ -10,6 +10,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Insects, worms, and small invertebrates",
       wildLifespan: "Not documented (the widely quoted 10-20 years is a captive range; wild longevity for this species has not been studied)",
       conservation: "Least Concern (IUCN)",
+      history: "Auguste Duméril described the species in 1851 from West African material. It reached Western collections through the same export pipeline that supplied ball pythons and savannah monitors, moving out through Ghana, Togo and Benin, and for years most animals offered for sale were wild caught adults. Captive breeding caught up slowly, and selective work in the trade has since produced a long run of color and pattern variants. It remains the second most widely kept member of the eyelid gecko subfamily, well behind the leopard gecko despite filling much the same role.",
     },
   },
   {
@@ -37,6 +38,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Fruit, nectar, small insects, and invertebrates",
       wildLifespan: "15-20 years",
       conservation: "Vulnerable (IUCN)",
+      history: "Arthur Bavay described the species in 1869. For more than a century it sat in Rhacodactylus alongside the crested gecko and the mossy prehensile-tailed gecko, until a 2012 revision by Aaron Bauer, Anthony Whitaker, Ross Sadlier and Todd Jackman broke that genus apart: the crested gecko moved to Correlophus and the mossy species to Mniarogekko, while the gargoyle gecko kept the original name and now shares Rhacodactylus with the giant leachianus and the rough-snouted geckos. New Caledonia stopped issuing export permits for its endemic geckos, so captive animals descend from founders exported decades ago. The IUCN still rates the species Least Concern, though deforestation across its range in the south of the island is listed as the main threat.",
     },
   },
   {
@@ -50,6 +52,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Insects, snails, and small invertebrates",
       wildLifespan: "5-10 years",
       conservation: "Ranges from Least Concern to Endangered depending on species (IUCN)",
+      history: "André Marie Constant Duméril erected the genus in 1806. Protection came from the range state itself: Madagascar submitted the technical case for including the whole genus on CITES Appendix II in 2004, and WWF has since flagged leaf-tailed geckos among the animals most exposed to illegal wildlife trade. The taxonomy is far from settled, and new species keep emerging from surveys of the remaining forest, including Uroplatus finaritra from Marojejy National Park in the northeast. The count of recognized species has climbed even as the forest holding them has shrunk.",
     },
   },
   {
@@ -77,6 +80,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Small invertebrates, fruit juice, and nectar",
       wildLifespan: "5-10 years",
       conservation: "Least Concern (IUCN)",
+      history: "Auguste Duméril and Gabriel Bibron named the species in 1836, but the work that made it a laboratory animal came much later: Orlando Cuellar and Arnold Kluge documented natural parthenogenesis in it in 1972, and it has been a standard subject for cytogenetics ever since. Later chromosome work showed the species is not one clone but many. Each lineage appears to descend from a separate hybridization between Lepidodactylus moestus and a still undescribed relative, producing diploid animals with 44 chromosomes and triploids with 66. Developmental biologists adopted it because no pairing is needed, every individual lays, and clonemates are genetically identical, and those same traits are what let one stray animal found a colony.",
     },
   },
   {

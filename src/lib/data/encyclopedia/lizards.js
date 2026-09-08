@@ -10,6 +10,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Insects, spiders, scorpions, small lizards, and eggs",
       wildLifespan: "15-20 years",
       conservation: "Least Concern (IUCN)",
+      history: "George Albert Boulenger described the species in 1885 in the second volume of his catalogue of the lizards held by the British Museum, naming all three currently recognized subspecies in the same work. Australia banned the commercial export of live native animals in 1982, so nothing has legally left the country for the trade since, and foreign stock descends from a small pool of earlier founders. The species turned out to breed freely in captivity, with clutches of up to 18 eggs, and that output is what carried it from specialist rarity to a fixture of the reptile hobby. Ridge-tailed monitors nevertheless remain among the Australian reptiles most often found for sale on overseas websites, which keeps smuggling out of Australia a live enforcement problem.",
     },
   },
   {
@@ -23,6 +24,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Omnivore - small mammals, eggs, birds, insects, fruits, and carrion",
       wildLifespan: "15-20 years",
       conservation: "Least Concern (IUCN)",
+      history: "Auguste Duméril and Gabriel Bibron described the species in 1839, and the name merianae honors Maria Sibylla Merian, the German naturalist and illustrator who documented South American insects and reptiles in the early eighteenth century. The pet trade later carried it to Florida, where the first free-living population was found in 2006 in Hillsborough and Polk counties, seeded by escapes and deliberate releases. Nearly 3,300 tegus have since been pulled out of Miami-Dade County alone, and sightings have reached South Carolina. On April 29, 2021 the Florida Fish and Wildlife Conservation Commission added the genera Salvator and Tupinambis to its prohibited list, ending routine sale of the animal in the state that had done most to popularize it.",
     },
   },
   {
@@ -40,6 +42,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Omnivore - insects, vegetation, flowers, and small vertebrates",
       wildLifespan: "5-8 years (predation and disease cut wild lifespans well short of the 10-15 years typical in captivity)",
       conservation: "Least Concern (IUCN)",
+      history: "Australia banned the commercial export of live native animals in 1982, and no legal supply has left the country since. Every bearded dragon abroad therefore descends from stock that got out before or around that line, and large-scale breeding only took hold in Europe and the United States during the 1990s, which is when the species reached the American pet market in quantity. The ban did not end the traffic. A study in Conservation Biology surveying 152 websites and 27 social media pages found 163 Australian reptile species offered for sale overseas, more than one in six of the country's reptile fauna, with bearded dragons among the most commonly listed, and seizure records name at least 58 reptile species targeted for illegal export since the ban took effect.",
     },
   },
   {
@@ -53,6 +56,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Omnivore - berries, fruits, flowers, snails, insects, and carrion",
       wildLifespan: "15-20 years",
       conservation: "Varies by species; most Least Concern (IUCN)",
+      history: "John White, surgeon general to the First Fleet, published the first description of a blue-tongued skink in 1790 in his Journal of a Voyage to New South Wales, illustrated with a color plate. Australia's 1982 ban on commercial wildlife export means the animals sold abroad today are largely Indonesian and New Guinean species taken from the wild, while Australian keepers work from separate domestic stock. The genus also produced one of herpetology's better rediscovery stories: Tiliqua adelaidensis, the pygmy bluetongue, was written off as extinct until 1992, when a researcher near Burra in South Australia opened a dead brown snake and found one in its stomach.",
     },
   },
   {
@@ -66,6 +70,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Insects, worms, snails, and occasional fruit or small vertebrates",
       wildLifespan: "Not documented in the wild; 15 to 20 years commonly reported in captivity",
       conservation: "Not evaluated (IUCN)",
+      history: "Edward Burton described the fire skink in 1836 as Tiliqua fernandi, from a specimen taken on Fernando Po, the island off West Africa now called Bioko. It then spent nearly two centuries being shuffled between genera: Lygosoma, then Lepidothyris under Cope in 1892, then Riopa under Loveridge in 1936, then Mochlus under Mittleman in 1952, which is why old care sheets and new ones rarely agree on the name. A 2009 review led by Philipp Wagner went further and split what keepers had treated as one animal into three species, restricting the true fire skink to tropical West Africa and the western edge of Central Africa. Most animals in the trade are still wild collected and shipped out through Ghana and Togo.",
     },
   },
   {
@@ -79,6 +84,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Insects, spiders, and small invertebrates",
       wildLifespan: "3-7 years",
       conservation: "Least Concern (IUCN)",
+      history: "Friedrich Siegmund Voigt gave the species its scientific name in 1832, but its place in science was settled much later. On August 31, 2011 a Broad Institute team with Jessica Alföldi and Federica Di Palma as lead authors published the green anole genome in Nature, the first reptile genome sequenced and assembled: until then the only amniote genomes available came from mammals and three birds. The 1.78 gigabase draft, with roughly 17,472 predicted protein-coding genes, gave researchers a reptile reference point for reading bird and mammal evolution. The anole was chosen because the lizard branch had never been sampled and because anoles carry enough ecological and morphological variety to be interesting without becoming unwieldy.",
     },
   },
   {
@@ -92,6 +98,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Leaves, flowers and fruit; almost entirely herbivorous",
       wildLifespan: "15-20 years",
       conservation: "Least Concern (IUCN), listed on CITES Appendix II",
+      history: "The green iguana was placed on CITES Appendix II on February 4, 1977, which means the decades that followed are documented in permit records. Commercial farms in Honduras, El Salvador, Colombia and Panama scaled up through the 1980s and 1990s to supply the American market, and imports peaked at more than 800,000 animals in 1995 and roughly a million the year after. Iguana imports accounted for roughly a third of all reptiles brought into the United States in 1997. Between 1996 and 2012 the species made up close to half of the country's entire live reptile trade, making it the most heavily traded reptile in the world.",
     },
   },
   {
@@ -105,6 +112,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Insects, worms, snails, and small invertebrates",
       wildLifespan: "5-10 years",
       conservation: "Least Concern (IUCN)",
+      history: "George Albert Boulenger described the species in 1896. The animals in the hobby belong to a single subspecies, Trioceros jacksonii xantholophus, from the Mount Kenya region, and the Hawaiian population dates from one introduction in 1972. For years those Hawaiian animals, rather than imports from East Africa, supplied most of the American pet trade, which turned an ecological problem into a commercial resource. Hawaii eventually made exporting them illegal, partly to stop opportunists from deliberately seeding new colonies they could harvest later.",
     },
   },
   {
@@ -118,6 +126,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Insects, snails, scorpions, frogs, small mammals, and eggs",
       wildLifespan: "10-20 years",
       conservation: "Least Concern (IUCN)",
+      history: "The French naturalist Louis Augustin Guillaume Bosc named the species Lacerta exanthematica in 1792. Two centuries later it had become one of the highest volume reptiles in the world pet trade, drawn almost entirely from West Africa: CITES records show Ghana exporting 235,903 live animals between 2000 and 2010, Togo 188,110 and Benin 72,964. The United States absorbed most of that supply, importing 325,480 live savannah monitors over the same decade, an average of about 30,574 a year. Declared worldwide exports of skins and other products across that period came to 37,506, a fraction of the trade in living animals.",
     },
   },
   {
@@ -131,6 +140,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Seeds, leaves, flowers, grasses, and occasional insects",
       wildLifespan: "15-25 years",
       conservation: "Varies by species; many Near Threatened (IUCN)",
+      history: "Blasius Merrem erected the genus in 1820. Every species in it now sits on CITES Appendix II, listed as a whole genus rather than piecemeal, which is the standard approach when lookalike animals make shipments hard to tell apart at a border. That paperwork has not translated into protection at the source. In Morocco the lizards are still taken from the wild in unregulated numbers for the pet and medicinal trades despite holding national protected status, and the animals offered for sale in markets there are frequently overcrowded and in poor condition.",
     },
   },
   {
@@ -144,6 +154,7 @@ export const lizardEncyclopedia = [
       wildDiet: "Insects, with some opportunistic feeding on leaves and flowers",
       wildLifespan: "5-8 years (males often longer than females)",
       conservation: "Not evaluated (widespread and common)",
+      history: "Auguste Duméril and Gabriel Bibron named the species in 1851. It reached the pet trade late and then reshaped it: where most chameleons of the era arrived as wild caught imports that died quickly, this one bred willingly in captivity, and it went on to become the most widely kept and captive bred chameleon in the hobby. That productivity had a side effect. Escaped and released pets have founded breeding populations in both Florida and Hawaii, an unusual outcome for a family that rarely establishes itself outside its native range.",
     },
   },
 ];
