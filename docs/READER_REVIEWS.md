@@ -498,8 +498,13 @@ nine links (cost to health, handling to enrichment, feeding to GI
 stasis). Not added: health, tank setup, and enrichment to cost, each of
 which would be a second same-species suffix link and trip the checker;
 the GI stasis table row, since table cells do not take markdown links;
-the encyclopedia, which is structured data. Encyclopedia lifespan and
-difficulty left for Mike.
+the encyclopedia, which is structured data. Lifespan settled 2026-09-08 against the House Rabbit Society, VCA, and
+the RSPCA: 8 to 12 years indoors, some to 14 or beyond, about 3 to 5
+outdoors, 1 to 2 wild. The tank setup guide's 7 to 10 and the
+encyclopedia's "5-12 years (wild)" were the outliers and now match.
+Difficulty settled at Beginner/Intermediate on the site's own legend (a
+real learning curve, no environmental parameters to balance), one notch
+above the guinea pig; hub and encyclopedia agree.
 
 Open: the rest of the above, and the gaps: nails,
 carrier and car travel, molting, and heat are all covered by the shared

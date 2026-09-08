@@ -125,7 +125,7 @@ export const smallMammalEncyclopedia = [
       habitat: "Grassland, meadow, farmland, and forest edge",
       adultSize: "Highly variable; 2.5-20+ lbs depending on breed",
       wildDiet: "Grasses, hay, herbs, root vegetables, and bark",
-      wildLifespan: "5-12 years (wild); up to 12+ years in captivity",
+      wildLifespan: "1-2 years (wild); 8-12 years indoors as a pet, some to 14 or beyond",
       conservation: "Endangered (wild European rabbit, IUCN)",
     },
   },

@@ -775,7 +775,13 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
     id: "rabbit",
     name: "Rabbit",
     emoji: "🐰",
-    difficulty: "Intermediate",
+    // Beginner/Intermediate by the site's own legend (DifficultyLegend):
+    // routine husbandry, no heat or UVB to balance, a hay-first diet, but a
+    // real learning curve most beginner species lack (the exotic vet, the
+    // eight-hour stasis clock, the near-mandatory spay, the space). One
+    // notch above the guinea pig, which is Beginner. Settled 2026-09-08
+    // after a set test had it at Intermediate for a day.
+    difficulty: "Beginner/Intermediate",
     petType: "Small Mammals",
     image: "/assets/guides/rabbit.jpg",
     tagline: "The gentle, litter-trainable companion that loves to binky!",
@@ -802,7 +808,7 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
         { label: "Vet", value: "A rabbit-savvy exotic vet, found before you need one. Twice-yearly wellness exams, and ask about the RHDV2 vaccine.", source: "rabbit-health-issues-guide" },
         { label: "Spay or neuter", value: "$150 to $500 or more, budgeted separately. Adoption fees often include it.", source: "rabbit-cost-guide" },
         { label: "Budget", value: "$150 to $600 to set up, $60 to $100 a month, and a $500 to $1,000 emergency fund.", source: "rabbit-cost-guide" },
-        { label: "Lifespan", value: "7 to 10 years indoors. Outdoor rabbits average about 2.", source: "rabbit-tank-setup-guide" },
+        { label: "Lifespan", value: "8 to 12 years indoors, some to 14 or beyond. Outdoor rabbits average about 3 to 5.", source: "rabbit-tank-setup-guide" },
         { label: "Heat", value: "Comfortable at 61 to 72°F. Risk climbs once the room passes about 80°F. Indoors, a draft or damp bedding causes more trouble than a cool room.", source: "small-mammal-temperature-heat-stress-guide" },
         { label: "Nails", value: "A trim roughly every 6 to 8 weeks, with styptic powder within reach before you start, one or two nails per sitting for a rabbit that fights it.", source: "small-mammal-grooming-nails-molting-guide" },
         { label: "Molting", value: "A rabbit cannot vomit swallowed fur, so a heavy molt is a GI risk: brush through it and keep the hay in front of them.", source: "small-mammal-grooming-nails-molting-guide" },

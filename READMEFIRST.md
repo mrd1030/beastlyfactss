@@ -159,11 +159,12 @@ catches the defects the commands produce. Per batch:
    every number copied from the deep dive it cites. Run
    `node scripts/check-species-numbers.mjs <species>` before and after.
    Legacy hubs keep rendering the old care sheet until then. Dogs and
-   cats last. Open questions Mike has not answered: whether the rabbit
-   difficulty label should read Intermediate (changed from
-   Beginner/Intermediate on the reader's finding; easy to revert), and
-   whether the legacy hubs should lose their print button before they
-   are reconciled (they have, since the whole-guide print is gone).
+   cats last. Rabbit difficulty settled at Beginner/Intermediate on the
+   site's legend and rabbit lifespan at 8 to 12 years indoors (House
+   Rabbit Society, VCA, RSPCA), 2026-09-08. Open question Mike has not
+   answered: whether the legacy hubs should lose their print button
+   before they are reconciled (they have, since the whole-guide print is
+   gone).
 7. The 111 baseline blog posts: noted.
 
 ## The prompt to paste into a new session
