@@ -10,6 +10,7 @@ export const turtleEncyclopedia = [
       wildDiet: "Omnivore - earthworms, insects, berries, mushrooms, and plants",
       wildLifespan: "50-100+ years",
       conservation: "Vulnerable (IUCN); threatened in many US states",
+      history: "Box turtles were common across the eastern United States through most of the twentieth century, and their decline owes as much to collection as to roads and lost habitat. Documented population declines have run between 70 and 74 percent, and in the late 1990s more than 30,000 box turtles were removed from Louisiana alone over a 41 month period for the pet trade. The United States proposed the genus for a CITES listing in 1994 on the strength of numbers like that, and Terrapene now sits on Appendix II. The wild-caught animal that was once the default is exactly why the species needed the protection.",
     },
   },
   {
@@ -23,6 +24,7 @@ export const turtleEncyclopedia = [
       wildDiet: "Omnivore - aquatic plants, fish, insects, and carrion",
       wildLifespan: "20-40 years",
       conservation: "Least Concern (IUCN); invasive outside native range",
+      history: "Baby red-eared sliders were a dime-store staple in the 1960s, sold cheap and small on the promise that they were easy, and mass collected from ponds across the South. The public health cost was measured: pet turtles were once linked to roughly 280,000 Salmonella infections a year in the United States, and in 1975 the FDA banned the sale of turtles with a shell under four inches, on the reasoning that a larger turtle will not fit in a small child's mouth. That rule does not touch exports, so the farms that had supplied the domestic dime-store trade turned to shipping hatchlings overseas instead. The species is now established as an invasive on every continent except Antarctica.",
     },
   },
   {
@@ -34,8 +36,9 @@ export const turtleEncyclopedia = [
       habitat: "Tropical rainforest, dry forest, savanna, and humid forest edges",
       adultSize: "11-16 inches (28-41 cm); exceptional individuals up to 20 inches (51 cm)",
       wildDiet: "Omnivore - fruit, flowers, foliage, fungi, carrion, and invertebrates",
-      wildLifespan: "50-70+ years (up to 90 documented in captivity)",
+      wildLifespan: "Not documented in the wild; 50 to 70+ years in captivity, with up to 90 reported",
       conservation: "Vulnerable (IUCN Tortoise & Freshwater Turtle Specialist Group); CITES Appendix II",
+      history: "Johann Baptist von Spix described the species in 1824 as Testudo carbonaria. The name was rebuilt twice after that: Roger Bour and Charles Crumly moved the South American tortoises into Chelonoidis in 1982, and the Turtle Taxonomy Working Group corrected the mismatched feminine ending to carbonarius in 2017. Long before any of that the tortoise had a place at the table, because the Roman Catholic church counted it as permissible during fasting periods, and pastel de morrocoy, baked and served in the shell, remains a Lenten dish that animals are still traded across borders to supply. Officially declared CITES exports between 2000 and 2005 came to roughly 35,565 tortoises, and smuggling is thought to account for well over twice that.",
     },
   },
   {
@@ -49,6 +52,7 @@ export const turtleEncyclopedia = [
       wildDiet: "Grasses, leaves, flowers, and plant matter",
       wildLifespan: "40-80 years",
       conservation: "Vulnerable (IUCN)",
+      history: "The Russian tortoise has been traded heavily for the global pet market since the mid-1970s, long enough that a wild-caught animal was the norm for most of that history. It sits on CITES Appendix II, where trade runs on export quotas the range states set for themselves, and the IUCN lists it as vulnerable. Uzbekistan is the main exporter today and Ukraine supplies a smaller share, with captive breeding running alongside a continuing wild-caught supply. The difference matters to a buyer, since wild-caught tortoises arrive stressed and carrying parasites and die at a higher rate than captive-bred ones.",
     },
   },
   {
@@ -62,6 +66,7 @@ export const turtleEncyclopedia = [
       wildDiet: "Grasses, hay, succulent plants, and cactus pads",
       wildLifespan: "70-150+ years",
       conservation: "Vulnerable (IUCN)",
+      history: "Large numbers of sulcata tortoises were exported to the United States and Europe between the early 1970s and the 1990s, which is how a Sahelian species became a common American pet. Wild populations are reported to be declining across the range under two separate pressures: competition with domestic livestock for food and space, and collection for the trade. The captive population that resulted carries its own problem, because a hatchling sold in a plastic cup grows into an animal that can outgrow a yard and outlive its owner. Rescues take in the difference.",
     },
   },
 ];

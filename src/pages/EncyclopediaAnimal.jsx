@@ -222,6 +222,16 @@ export default function EncyclopediaAnimal() {
               </div>
             </div>
 
+            {/* History: how the animal reached people, after the facts table.
+                Optional, so an entry without one simply renders one card fewer
+                rather than a "coming soon" placeholder. */}
+            {bio.history && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <h2 className="font-display font-bold text-base text-foreground mb-3">📜 History</h2>
+                <p className="text-sm font-body text-muted-foreground leading-relaxed">{bio.history}</p>
+              </div>
+            )}
+
             {/* Compare */}
             <AnimalCompare animal={animal} key={`compare-${animal.id}`} />
 
