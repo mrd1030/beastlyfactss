@@ -640,6 +640,81 @@ sourced), the respiratory infection and cohabitation content gaps, and
 the crypto/fecal-test stranded question, none of which are fixable
 with a link or a number correction.
 
+## Leopard gecko (2026-09-08, second pass, after the fixes)
+
+Same ten-page set, re-extracted after the first pass fixes landed
+(the temperature guide's Deep Dive wiring fix included). One Sonnet
+agent, about 98k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A | A router with real numbers, not padding. |
+| Encyclopedia | B | Wild-range and conservation content nothing else repeats. |
+| Cost | A- | Tables to actually budget from. |
+| Handling | A | The tail warning alone justifies the page. |
+| Health issues | A- | Would bookmark it. |
+| Tank setup | A | Everything needed to build the enclosure. |
+| Feeding | A | Honest about where sources disagree. |
+| Enrichment | A- | Cites two named studies, not vague filler. |
+| Temperature | A | The most useful single page in the set. |
+| vs crested gecko | B+ | Useful only before the decision is made. |
+
+Set grade: A-. "Deeply consistent numbers, honest about disagreement
+instead of hiding it, organized around what a new owner actually
+needs first."
+
+No numeric hub-versus-deep-dive disagreement found this pass, the
+first pass's fixes held. One duplication noted, by design and not a
+bug: the hub's emergency card matches the health issues guide's
+vet-now list word for word, which is exactly how an emergency card
+copied in full is supposed to work.
+
+Checked and left alone, not a bug: tank setup calls UVB "not
+strictly required... the way bearded dragons do," while health issues
+says geckos "appear to rely heavily on UVB... to process calcium
+properly, not diet supplementation alone." Read in full, both
+sentences already carry the same hedge, health issues' own line ends
+"...even though it's technically optional for this species." The two
+pages agree; the tension is in how each excerpt reads in isolation,
+not a factual or numeric conflict, so nothing to fix under the
+deep-dives-only rules (no number to correct, no hedge to change,
+both already say "optional").
+
+Gaps, checked against the Health and More list before calling them
+real: egg-binding prevention or setup (a nesting box, warning signs
+before it becomes an emergency) is not in the health guide or any
+shared reptile guide; brumation-specific temperature targets or
+duration are named as a cause of appetite loss in the feeding guide,
+but no page anywhere gives numbers for managing it. Both filed in
+docs/READER_LOG.md.
+
+Stranded questions, now linked: handling's settling benchmark
+("stops fleeing or hiding when you approach") never pointed to tank
+setup's three-hide system, which is what actually lets a gecko settle;
+cost's "sick or emergency visits run $100 to $800 or more" never
+pointed to the health issues guide, which is what those visits are
+usually for. Both fixed this pass.
+
+Two more recommended links added: cost guide to health issues (the
+emergency-visits sentence), handling guide to tank setup (the settling
+sentence). Not added: health issues' suggested link to cost guide
+(already at its one-sibling cap, used on tank setup for the humid-hide
+line), feeding's and enrichment's suggested links (both already at
+cap from the first pass), vs crested gecko's suggested link to
+handling (already at cap, used on cost guide).
+
+Trust: the "about half of captive leopard geckos may carry it" crypto
+statistic is repeated in three places with no source named, noted in
+this file's older single-article read too and still unresolved,
+that's a fact-check task (open a source or hedge the claim), not a
+link or number fix; left for Mike.
+
+Fixed the same day: two more links (cost to health issues, handling
+to tank setup).
+
+Open: the crypto statistic's missing source, filed for Mike; the
+egg-binding and brumation-temperature gaps in docs/READER_LOG.md.
+
 ## Goldfish (2026-09-08, first pass, after the router hub)
 
 Extractor set of nine pages (hub, encyclopedia, cost, handling, health
@@ -1067,7 +1142,14 @@ unsourced "about half of captive leopard geckos may carry it."
   src/lib/data/relatedArticles.js, docs/READER_LOG.md added (raw reader
   output per species plus a running "not covered anywhere" list), and the
   set test prompt gets a closing "Not covered anywhere" section so future
-  reviews are easy to harvest into it.
+  reviews are easy to harvest into it. Second pass (branch
+  claude/hub-leopard-gecko-second-pass, not merged): no numeric
+  hub-versus-deep-dive disagreement left; two more links added (cost to
+  health issues, handling to tank setup); checked the UVB
+  "optional"-versus-"relies heavily on" framing across two pages and
+  found both already hedge the same way, not a bug; two content gaps
+  (egg binding, brumation temperature) and an unsourced crypto
+  statistic left for Mike.
 - 2026-09-08, goldfish (branch claude/hub-goldfish): scripts/reader-extract.mjs
   fixed first, it only globbed `<species>-*-guide.mdx` and silently
   dropped goldfish-tank-size-bowl-myth.mdx from every set test despite
