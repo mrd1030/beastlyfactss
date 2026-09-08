@@ -547,73 +547,69 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
     image: "/assets/guides/guinea-pig.jpg",
     tagline: "The vocal, social little veggie lover that needs a friend!",
     funFact: "Guinea pigs have over 11 different vocalizations. They 'wheek' when excited about food and 'purr' when content (similar to cats but much louder)!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "C&C cage (7.5 sq ft+)", low: 80, high: 180 },
-        { item: "Hideouts and tunnels", low: 20, high: 40 },
-        { item: "Chew toys (smaller, softer)", low: 15, high: 25 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Nail clippers + styptic powder", low: 10, high: 15 },
-        { item: "Water bottle and food dishes", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Grass hay (unlimited)", low: 120, high: 200 },
-        { item: "Guinea pig pellets", low: 40, high: 70 },
-        { item: "Fresh vegetables (especially bell peppers)", low: 150, high: 250 },
-        { item: "Vitamin C supplement (if needed)", low: 8, high: 15 },
-        { item: "Bedding", low: 60, high: 100 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `Guinea pigs need significantly more space than pet store cages typically provide. The minimum is 7.5 square feet of unobstructed floor space, the same whether it's one guinea pig or a pair (and guinea pigs should almost always be kept in pairs or groups). The Humane Society and most cavy welfare organizations recommend at least 10.5 square feet for a pair, and more for larger groups. Solitary guinea pigs are stressed, lonely animals - they need companions of their own species.
-
-C&C (Cubes and Coroplast) cages are the gold standard for guinea pig housing. They are affordable, customizable to any size, easy to clean, and provide adequate ventilation. Never use wire-bottom cages - they cause painful pressure sores (bumblefoot) and impair natural movement. Use solid flooring covered with appropriate bedding.
-
-Fleece liners (washed regularly) or paper-based bedding (Carefresh or similar) work well. Avoid cedar and pine shavings. Provide multiple hideouts (at least one per guinea pig plus one extra), a hay rack or large hay pile, a water bottle or bowl, food dishes, and a litter corner.
-
-Temperature should stay between 65 and 79 degrees F, which is the 18 to 26 degrees C the Merck Veterinary Manual gives for guinea pig housing. Guinea pigs are sensitive to drafts and temperature extremes. They can overheat quickly above 80 degrees F and can develop respiratory infections in cold, drafty conditions, so the gap between the comfortable ceiling and the danger line is a single degree.`,
-      diet: `Unlimited grass hay is the most important part of a guinea pig's diet. Timothy hay is the standard for adult guinea pigs. Orchard grass and meadow hay are good alternatives. Hay should make up 70 to 80% of their total daily intake - it keeps the continuously growing teeth worn properly and the gut moving. A hay rack or corner holder keeps the hay clean and accessible throughout the day.
-
-Guinea pigs cannot synthesize Vitamin C. This is the most critical dietary distinction that separates them from other small mammals and many other pets. Vitamin C deficiency (scurvy) causes rough coat, lethargy, swollen joints, bleeding gums, and weight loss. The best way to ensure adequate Vitamin C is through fresh vegetables daily. Bell peppers (all colors) are the single best Vitamin C source - a quarter of a medium bell pepper daily for one guinea pig provides sufficient Vitamin C. The requirement itself scales with body weight rather than being a flat daily figure: Merck gives 10 to 25 mg/kg a day for a healthy adult and 30 mg/kg or more for a growing, pregnant, lactating or ill one, which works out to roughly 20 to 25 mg a day for a typical adult. Kale, parsley, cilantro, and leafy romaine are also excellent choices.
-
-High-quality guinea pig pellets (vitamin C-fortified, Timothy-based) should be provided in small amounts: 1/8 cup per guinea pig per day. Avoid pellets with added seeds, dried fruit, or colorful mixed pieces. Pellets are a supplement to hay, not a replacement.
-
-Fresh water must always be available. Change it daily and clean the water bottle or bowl weekly to prevent bacterial growth.`,
-      enrichment: `Guinea pigs are active, social, vocal animals that communicate extensively through a variety of sounds including wheeks (excitement), purrs (contentment), rumbles (dominance or mating), and chutts (annoyance). Understanding their vocalizations helps you respond to their needs appropriately.
-
-Provide tunnels (cardboard rolls, plastic tubes, fabric tunnels), cardboard boxes with multiple entrances, various safe chew toys (apple wood, willow, dried herbs, cardboard), and foraging toys where pellets or small veggie pieces are hidden. Rotate enrichment regularly to maintain interest. Guinea pigs investigate new items with enthusiastic popcorning (joyful jumps and twists) when they are happy.
-
-Daily floor time outside the cage - in a guinea pig-proofed area or a large playpen - provides crucial exercise, mental stimulation, and social bonding time. Guinea pigs enjoy exploring new environments and benefit from supervised outdoor grazing on pesticide-free grass in warm weather.
-
-Social interaction is the most important enrichment. A pair of bonded guinea pigs chases, grooms, follows, and communicates with each other throughout the day. A solo guinea pig sits quietly and waits. Always house guinea pigs with at least one companion.`,
-      health: `Scurvy (Vitamin C deficiency) is the most common nutritional disease in guinea pigs and the most preventable. Fresh bell peppers and leafy greens provided daily prevent it entirely. Signs of developing scurvy include rough, puffed coat, reluctance to move, swollen joints, weight loss, and eventually bleeding gums. Do not rely on Vitamin C added to water - it degrades rapidly with light and oxygen. Fresh vegetables are the most reliable source.
-
-Dental disease is very common in guinea pigs, particularly malocclusion of the cheek teeth (molars and premolars). Guinea pig teeth grow continuously and the cheek teeth especially can develop spurs that cut into the tongue and cheeks, causing pain and refusal to eat. Unlimited hay is the best prevention. Signs of dental problems include drooling, dropping food, reduced appetite, and weight loss. Annual dental checks with a cavy-savvy exotic veterinarian are strongly recommended.
-
-Respiratory infections (particularly bacterial pneumonia) are common and serious in guinea pigs. Signs include labored breathing, nasal discharge, lethargy, and loss of appetite. Respiratory infections in guinea pigs progress quickly - seek veterinary care promptly. Keep guinea pigs away from drafts and other sick animals.
-
-GI stasis (slow gut motility) and bloat can be life-threatening. Signs include a distended abdomen, absence of droppings, and obvious discomfort. Unlimited hay is the primary prevention. Any guinea pig that stops eating or producing droppings warrants immediate veterinary assessment.`,
-      checklist: [
-        "Minimum 7.5 sq ft enclosure (C&C recommended)",
-        "Unlimited grass hay (Timothy or Orchard)",
-        "High-quality guinea pig pellets",
-        "Daily fresh vegetables (especially bell peppers)",
-        "Vitamin C supplement if needed",
-        "Multiple hideouts and tunnels",
-        "Safe chew toys (willow, apple wood)",
-        "Digital thermometer and hygrometer",
-        "Nail clippers and styptic powder",
-        "Guinea pig-savvy veterinarian"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size and lifespan come from
+    // the encyclopedia entry, which no deep dive repeats. Nails and vet trips
+    // cite the shared small mammal guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-08 after the guinea pig set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure", value: "7.5 square feet minimum for one, 10.5 for a pair (and a pair is the recommended minimum), more for a larger group. Solid floor, never wire.", source: "guinea-pig-tank-setup-guide" },
+        { label: "Temperature", value: "65 to 79°F. Heatstroke becomes a real risk above 80°F, so the gap between the comfortable ceiling and the danger line is a single degree.", source: "guinea-pig-tank-setup-guide" },
+        { label: "Bedding", value: "Paper-based bedding, kiln-dried pine, or fleece liners. Never cedar, raw pine, or sawdust.", source: "guinea-pig-tank-setup-guide" },
+        { label: "Company", value: "Pairs or small groups, not solitary. Guinea pigs housed alone tend to become withdrawn or depressed.", source: "guinea-pig-tank-setup-guide" },
+        { label: "Diet", value: "Grass hay unlimited (70 to 80% of intake), about 1/8 cup of vitamin-C-fortified pellets per guinea pig daily, and roughly 1 cup of fresh leafy greens.", source: "guinea-pig-feeding-guide" },
+        { label: "Vitamin C", value: "10 to 25 mg/kg a day for a healthy adult, 30 mg/kg or more if growing, pregnant, lactating, or ill, roughly 20 to 25 mg a day for a typical adult. A quarter of a medium bell pepper covers it.", source: "guinea-pig-scurvy-vitamin-c-guide" },
+        { label: "Not eating", value: "Call a vet at 8 to 12 hours without eating or producing droppings. Once GI stasis sets in, it can become life-threatening within 24 to 48 hours.", source: "guinea-pig-feeding-guide" },
+        { label: "Handling", value: "Approach from the side, never above. One hand under the chest behind the front legs, the other supporting the hindquarters. Stay low, a fall can be fatal.", source: "guinea-pig-handling-guide" },
+        { label: "Budget", value: "$10 to $60 from a shelter, around $50 at a pet store. $100 to $250 to set up. $33 to $70 a month for one, $60 to $135 for a pair.", source: "guinea-pig-cost-guide" },
+        { label: "Adult size", value: "8 to 12 inches, 1.5 to 2.6 lbs." },
+        { label: "Lifespan", value: "4 to 8 years." },
+        { label: "Nails", value: "A trim roughly every 6 to 8 weeks, with styptic powder within reach before you start, a flashlight held behind dark nails to find the quick.", source: "small-mammal-grooming-nails-molting-guide" },
+        { label: "Vet trips", value: "Don't withhold food the way you would for a dog or cat, guinea pigs and rabbits can't vomit and don't need a long pre-op fast. Bring the cage mate along when the visit allows it.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "guinea-pig-health-issues-guide",
+      callNow: [
+        "Refusal to eat",
+        "Drooling",
+        "Labored breathing",
+        "Diarrhea",
+        "Lethargy",
+        "A hunched posture",
+      ],
+      vetLine: "A cavy-savvy exotic vet, found before you need one. Guinea pigs hide illness well, so an annual wellness exam matters even when everything looks fine.",
+    },
+    routes: [
+      { slug: "guinea-pig-cost-guide", line: "$10 to $60 for the animal, $100 to $250 to set up, and why the budget really needs to plan for two." },
+      { slug: "guinea-pig-tank-setup-guide", line: "The 7.5 to 10.5 square foot minimum, temperature, bedding, and why vitamin C makes this diet different from a rabbit's or hamster's." },
+      { slug: "guinea-pig-scurvy-vitamin-c-guide", line: "What scurvy actually looks like by stage, why fortified pellets alone aren't enough, and the real daily numbers." },
+      { slug: "guinea-pig-feeding-guide", line: "Schedule, life-stage differences, safe and toxic foods, and the honest range of reasons a guinea pig stops eating." },
+      { slug: "guinea-pig-handling-guide", line: "The correct two-handed pickup, why staying low matters, and the stress signs that mean the session is over." },
+      { slug: "guinea-pig-health-issues-guide", line: "Respiratory infection, dental disease, GI stasis, bladder stones, and ovarian cysts, with what to watch for and when to call." },
+      { slug: "guinea-pig-enrichment-guide", line: "Hideouts, foraging enrichment that replaces up to 80% of a wild guinea pig's day, and supervised floor time." },
+    ],
+    buyList: [
+      "C&C cage or similar (7.5 sq ft minimum, 10.5 for a pair)",
+      "Paper-based bedding, kiln-dried pine, or fleece liners",
+      "Multiple hideouts and tunnels",
+      "Hay rack and unlimited grass hay",
+      "Vitamin-C-fortified guinea pig pellets",
+      "Fresh vegetables, bell pepper especially",
+      "Vitamin C supplement (backup, not a replacement for fresh food)",
+      "Water bottle and food dishes",
+      "Nail clippers and styptic powder",
+      "Safe chew toys",
+    ],
     faqs: [
       { q: "Do guinea pigs need to be in pairs?", a: "Yes, for almost all guinea pigs. Guinea pigs are highly social herd animals, a trait inherited from the wild cavies they were domesticated from, which lived in groups. A solo guinea pig is an anxious, understimulated animal prone to stress and depression. They communicate through a rich vocabulary of sounds and physical behaviors that require another guinea pig to engage with. Bonded pairs are happier, healthier, and more active than solitary animals. Adopting a pair from the start is far easier than introducing a new companion to an established solo guinea pig." },
       { q: "Do guinea pigs need Vitamin C?", a: "Yes - and this is the most critical dietary distinction for guinea pigs. Unlike most mammals, guinea pigs cannot synthesize Vitamin C internally and must obtain it entirely from diet. Deficiency causes scurvy: rough coat, reluctance to move, swollen painful joints, weight loss, and eventually internal bleeding. The most reliable source is fresh bell peppers daily - a quarter of a medium bell pepper provides sufficient Vitamin C for one guinea pig. Do not rely on Vitamin C in water bottles, as it degrades rapidly when exposed to light and oxygen." },
       { q: "Why do guinea pigs wheek?", a: "Wheeking is the distinctive high-pitched squeal guinea pigs make when excited - typically in anticipation of food. Many learn to wheek at the sound of the refrigerator door opening or their owner's footsteps. Beyond wheeking, guinea pigs have an extensive vocal repertoire: purring (contentment), rumbling (dominance), chutting (annoyance), teeth chattering (warning), and quiet cooing between bonded pairs. Their expressiveness is one of the reasons they are such engaging companion animals." },
-      { q: "How long do guinea pigs live?", a: "Guinea pigs typically live 4 to 8 years in captivity, with an average around 5 to 7 years under good care. Lifespan depends significantly on diet (Vitamin C adequacy, hay access), companionship (solitary guinea pigs have shorter, lower-quality lives), and access to veterinary care. Regular exams with a cavy-savvy exotic veterinarian are recommended - dental disease and respiratory infections are common and progress quickly if not caught early." },
-      { q: "What bedding is best for guinea pigs?", a: "Fleece liners (washed every 2 to 3 days) or paper-based bedding like Carefresh are the top recommendations. Fleece provides a soft, clean surface and is economical long-term. Paper-based bedding offers excellent odor absorption and is more forgiving for owners who cannot clean as frequently. Never use cedar or pine shavings - the aromatic oils are toxic to guinea pigs and cause respiratory disease and liver damage. Avoid wire-bottom cage floors, which cause painful pressure sores (bumblefoot) on guinea pig feet." },
     ],
   },
   {
