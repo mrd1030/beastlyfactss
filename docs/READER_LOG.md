@@ -690,6 +690,83 @@ First two changes:
 - **Guinea pig (second pass):** breeding and gestation basics (heat
   cycle, gestation length, litter size), despite pregnancy toxemia and
   pregnant-sow vitamin C needs being mentioned twice in the set.
+- **Hamster:** how long to leave a new hamster alone before first
+  handling (the hub just says "once settled").
+- **Hamster:** cage cleaning frequency or schedule.
+- **Hamster:** what "hamster-proofing" a free-roam space concretely
+  requires.
+
+## Hamster (2026-09-08)
+
+One Sonnet agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, vs guinea pig), about
+102k tokens. Full agent output below, unedited.
+
+---
+
+# Hamster Care Set Review
+
+## 1. Page by page
+
+- 00 Hub: B+. Finish it. The checklist and cost tables are immediately actionable, but two of its numbers disagree with the deep dives that are supposed to back it up.
+- 01 Encyclopedia: B. Finish it. Good history (the Aleppo founder female, the 91 year gap), nothing to act on beyond the scientific name.
+- 02 Cost guide: B. Finish it, though two tables read "[table could not be parsed]" and never render, which is a real gap in a page whose whole job is numbers.
+- 03 Handling guide: A-. Finish it. The cupping technique and the Syrian-versus-dwarf temperament split are usable the day the hamster comes home.
+- 04 Health issues: A. Finish it. The wet tail section, with real mortality percentages and a same-day-vet rule, is the single most useful paragraph in the set.
+- 05 Tank setup: B. Finish it. Specific and confident, but contradicts the hub on cage size, wheel size, and the torpor temperature.
+- 06 Feeding: A-. Finish it. Rare honesty about a real disagreement in feeding schedules, plus firm numbers for treats and a clear toxic list.
+- 07 Enrichment: A. Finish it. One actual study with three numbers that reorders what you spend money on.
+- 08 Legal: B+. Finish it. Answers the only question most readers have (Hawaii) in the first section; the state-by-state table is extra credit.
+- 09 vs Guinea Pig: B+. Finish it. The comparison table is genuinely useful before you commit to either animal.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place, it's the only page with origin, wild diet, and history, none of which the deep dives repeat. The hub is mostly a compressed rehash of the deep dives, which is expected of a hub, but it disagrees with them on two load-bearing numbers.
+
+Cage size. Hub: "450 square inches... with 600 to 800+ square inches strongly preferred." Tank setup guide: "Current welfare guidance calls for... roughly 700 to 775 square inches for a Syrian, around 600 square inches for dwarf species." The hub's "preferred" range and the tank guide's stated minimum overlap, but the hub's actual floor (450) is well below what the tank guide calls current guidance.
+
+Wheel size. Hub: "11 to 12 inches in diameter is the current minimum recommendation" for a Syrian. Tank setup guide: "Syrians need at least an 8 to 11 inch wheel." The hub's minimum is above the tank guide's maximum.
+
+## 3. The set as a whole
+
+Yes, mostly. Between these pages you could pick a species, size a cage, pick bedding and a wheel, feed it correctly, and recognize wet tail fast enough to save the animal's life. What's missing: how long to leave a new hamster alone before first handling (the hub just says "once settled"), how often to actually clean the cage, and what "hamster-proofed" concretely means for free-roam time.
+
+Unstated cross-references I noticed: the feeding guide names 65°F as the torpor threshold but never points to the tank setup guide's own temperature section, where the number is different. The cost guide cites the O'Neill study for lifespan but never sends the reader to the health guide, where the same study's wet tail percentages live. The handling guide flags dwarf species as harder to handle but doesn't point forward to the tank setup guide's dwarf-specific cage and wheel numbers.
+
+## 4. Overlap and conflict among the deep dives
+
+Wet tail is covered in the cost, health, and feeding guides, consistently: 24 to 48 hours to fatal, same-day vet. Solitary Syrian housing is repeated in handling, enrichment, and the guinea pig comparison, consistently. Bedding depth actually agrees well: the enrichment guide's study gives 40 and 80 cm, and the tank setup guide's "15 to 30 inches" converts to almost exactly that.
+
+The torpor temperature does not agree. Tank setup guide: "Below 60°F risks torpor." Feeding guide: "Below roughly 65°F, hamsters can enter a hibernation-like state." That's a 5 degree gap on a warning sign that can look like the animal has died.
+
+Cheek pouch capacity is also inconsistent. Hub: pouches hold "a volume close to the size of the hamster's own body." Feeding guide: pouches hold "roughly a fifth of its own body weight." Those are very different pictures of the same trivia fact.
+
+## 5. One link per page
+
+- 00 Hub: "Any hamster showing diarrhea and lethargy needs an exotic vet the same day" should link to the Health Issues guide.
+- 01 Encyclopedia: "a trait that carries directly into captivity and is the reason Syrians must be housed alone as adults" should link to the Handling guide.
+- 02 Cost: "a median age at death of just 1.75 years" should link to the Health Issues guide, which cites the same study.
+- 03 Handling: "often better enjoyed as an observation pet than a hold-and-pet one" should link to the Tank Setup guide.
+- 04 Health: "Sticking with a plain, formulated hamster pellet or lab block as the diet base" should link to the Feeding guide.
+- 05 Tank setup: "bedding depths of roughly 15 to 30 inches enhance welfare" should link to the Enrichment guide's study.
+- 06 Feeding: "Below roughly 65°F, hamsters can enter a hibernation-like state" should link to the Tank Setup guide's temperature section.
+- 07 Enrichment: "A 10 inch silent wheel lets a Syrian run with a flat back" should link to the Tank Setup guide's wheel section.
+- 08 Legal: "whether your state's rule names Phodopus or only Mesocricetus auratus" should link to the Handling guide.
+- 09 vs Guinea Pig: "A hamster's 2 to 3 year lifespan is short enough that it's worth stating plainly" should link to the Cost guide.
+
+## 6. Trust
+
+Two broken tables in the cost guide, and three different torpor temperatures across three pages, are the kind of thing that makes me want a second source before trusting the numbers. What convinced me someone who actually keeps these animals wrote parts of this: "The caveat comes straight from the study: the hamsters on shallow bedding ran more. Heavy wheel use is not automatically a sign of a happy animal, and it can accompany the same setup that produces bar-chewing." That's a specific, counterintuitive, correct piece of husbandry knowledge, not filler.
+
+## 7. Overall grade
+
+B. Well-sourced and genuinely actionable on health and enrichment, undercut by the hub disagreeing with its own deep dives on the two numbers (cage size, wheel size) a new owner needs most. First fixes: reconcile the cage/wheel/torpor numbers between the hub and the deep dives into one consistent set, and fix the two unparsed tables in the cost guide.
+
+## Not covered anywhere
+
+- How long to leave a new hamster alone before first handling.
+- Cage cleaning frequency or schedule.
+- What hamster-proofing a free-roam space actually requires in practice.
 
 ## Guinea pig (2026-09-08, second pass)
 

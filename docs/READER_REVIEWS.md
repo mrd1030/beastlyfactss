@@ -1970,6 +1970,115 @@ Open: guinea pig introductions and breeding/gestation basics filed in
 docs/READER_LOG.md; the alfalfa hedge and the extractor's table
 limitation both left as is.
 
+## Hamster (2026-09-08, first pass, before the router hub)
+
+Extractor set of ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, vs guinea pig). One
+Sonnet agent, about 102k tokens. The hub still carried the old legacy
+prose when this review was filed; the router hub was built from its
+findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | Immediately actionable, but two of its numbers disagree with the deep dives behind it. |
+| Encyclopedia | B | Good history, nothing to act on beyond the scientific name. |
+| Cost | B | Two tables failed to render. |
+| Handling | A- | The cupping technique and the Syrian-versus-dwarf split are usable day one. |
+| Health issues | A | The wet tail section is the single most useful paragraph in the set. |
+| Tank setup | B | Specific and confident, but contradicted the hub on cage size, wheel size, and the torpor temperature. |
+| Feeding | A- | Rare honesty about a real schedule disagreement, firm treat numbers, a clear toxic list. |
+| Enrichment | A | One study with three numbers that reorders what you spend money on. |
+| Legal | B+ | Answers the only question most readers have (Hawaii) up front. |
+| vs Guinea Pig | B+ | Genuinely useful before committing to either animal. |
+
+Set grade: B. "Well-sourced and genuinely actionable on health and
+enrichment, undercut by the hub disagreeing with its own deep dives on
+the two numbers a new owner needs most."
+
+Hub versus the set, both sides quoted (all resolved by the router
+rebuild, which cites each deep dive's own figure instead of restating
+it):
+
+- Cage size. The old hub said "450 square inches... with 600 to 800+
+  square inches strongly preferred." Tank setup says "roughly 700 to
+  775 square inches for a Syrian, around 600 square inches for dwarf
+  species." The hub's actual floor (450) sat well below current
+  welfare guidance; the cost guide's own cage line item repeated the
+  same stale 450+ figure and is fixed too.
+- Wheel size. The old hub said "11 to 12 inches in diameter is the
+  current minimum recommendation" for a Syrian. Tank setup says
+  "Syrians need at least an 8 to 11 inch wheel." The hub's stated
+  minimum was above tank setup's maximum. The cost guide's own wheel
+  line item compounded this: its anchor text read "11-12 in solid
+  exercise wheel" while linking a product literally named "10 inch,"
+  now corrected to match both the product and tank setup.
+- Cheek pouch capacity. The hub's funFact said pouches hold "a volume
+  close to the size of the hamster's own body," while the feeding
+  guide states "roughly a fifth of its own body weight." Different
+  claims about the same trivia fact; the hub's funFact now matches
+  feeding's figure.
+
+Deep dives against each other: wet tail's 24-to-48-hour fatality window
+repeats consistently across cost, health, and feeding. Solitary Syrian
+housing repeats consistently across handling, enrichment, and the vs
+guinea pig comparison. One real numeric conflict: the torpor
+temperature. Tank setup said "Below 60°F risks torpor." Feeding said
+"Below roughly 65°F, hamsters can enter a hibernation-like state," a 5
+degree gap on a warning sign that can look like the animal has died.
+Neither page's Sources block specifically earmarks this number to one
+citation; tank setup is the subject-matter page (its whole job is the
+temperature section), so feeding's two mentions were corrected to 60°F.
+
+The set as a whole: buyable, houseable, feedable, and troubleshootable
+from this set alone. Three gaps, checked against the Health and More
+list before being called real (none of them covered by the shared
+small mammal enterotoxemia, temperature and heat stress, vet visits, or
+grooming guides): how long to leave a new hamster alone before first
+handling, cage cleaning frequency, and what "hamster-proofing" a
+free-roam space concretely requires. All three filed in
+docs/READER_LOG.md.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | "Any hamster showing diarrhea and lethargy needs an exotic vet the same day" | Health issues guide (hub out of scope this pass) |
+| Encyclopedia | "the reason Syrians must be housed alone as adults" | Handling guide (encyclopedia out of scope this pass) |
+| Cost | "a median age at death of just 1.75 years" | Health issues guide, which cites the same study (no natural sentence slot found without adding new prose) |
+| Handling | "often better enjoyed as an observation pet than a hold-and-pet one" | Tank setup guide |
+| Health issues | "Sticking with a plain, formulated hamster pellet or lab block as the diet base" | Feeding guide |
+| Tank setup | "bedding depths of roughly 15 to 30 inches enhance welfare" | Enrichment guide, which covers the actual study |
+| Feeding | "Below roughly 65°F [now 60°F], hamsters can enter a hibernation-like state" | Tank setup guide's temperature section |
+| Enrichment | "A 10 inch silent wheel lets a Syrian run with a flat back" | already covered, tank setup's own wheel section is one click away via the Deep Dive |
+| Legal | "whether your state's rule names Phodopus or only Mesocricetus auratus" | already covered, out of scope for a deep-dives-only pass (legal gets its own card, not a route) |
+| vs Guinea Pig | "A hamster's 2 to 3 year lifespan is short enough" | already covered, out of scope (vs pieces are not fixed for links this pass) |
+
+Trust: two unparsed cost-guide tables (the same AffiliateLink-in-cell
+extractor limitation noted for goldfish and betta fish, not a site
+defect) and the three-way cage/wheel/torpor mismatch. The sentence that
+most convinced the reader a keeper wrote this, from enrichment: "The
+caveat comes straight from the study: the hamsters on shallow bedding
+ran more. Heavy wheel use is not automatically a sign of a happy
+animal, and it can accompany the same setup that produces bar-chewing."
+
+Reader's two changes: reconcile the cage, wheel, and torpor numbers
+into one consistent set (done by the router rebuild plus the feeding
+and cost guide fixes) and fix the two unparsed cost-guide tables (left
+as a known extractor gap, not a site defect).
+
+Fixed the same day: the router hub rebuild, which resolves the cage and
+wheel conflicts by construction; the cost guide's cage and wheel line
+items corrected to match tank setup and the linked product; feeding's
+torpor threshold corrected from 65°F to 60°F (twice); the hub's
+cheek-pouch funFact corrected to match feeding's body-weight figure;
+four of ten recommended links added (handling to tank setup, health
+issues to feeding, tank setup to enrichment, feeding to tank setup).
+
+Open: how long to wait before first handling, cleaning frequency, and
+hamster-proofing specifics filed in docs/READER_LOG.md for Mike. Not
+added: cost guide's suggested link (no natural sentence slot without
+adding new prose, out of scope for a links-and-numbers-only pass).
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
