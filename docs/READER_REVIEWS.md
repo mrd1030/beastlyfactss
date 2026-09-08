@@ -1622,6 +1622,112 @@ handling to quarantine).
 Open: lighting/photoperiod, tankmate compatibility, and sorority setup
 gaps filed in docs/READER_LOG.md for Mike.
 
+## Crested gecko (2026-09-08, first pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, humidity). One Sonnet agent,
+about 97k tokens. The hub still carried the old legacy prose when this
+review was filed; the router hub was built from its findings the same
+day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | Buy list, cost tables, and checklist in one place, I'd read it before buying anything. |
+| Encyclopedia | B | Thin but honest, including admitting wild lifespan isn't documented. |
+| Cost | B- | Detailed, but its own FAQ contradicted its own body on monthly cost. |
+| Handling | A- | Specific ages, weights, and times up front; the most actionable page in the set. |
+| Health issues | B | Good symptom lists, but its cause for Floppy Tail Syndrome disagreed with the hub's. |
+| Tank setup | B- | Strong on the temperature ceiling, but never mentions a thermostat despite that being the whole point of holding one. |
+| Feeding | A- | Admits an open disagreement about raspberries instead of faking certainty. |
+| Enrichment | A- | Practical, consistent with tank setup. |
+| Humidity | A- for content, C for placement | The best-sourced page in the set (PetMD, Zen Habitats, Merck), but wired into no Deep Dive or Health and More list at all. |
+
+Set grade: B. "Individually strong pages, undermined by numbers that
+don't match each other and one orphaned article."
+
+Hub versus the set, both sides quoted (both resolved by the router
+rebuild, which cites each deep dive's own figure instead of restating
+it):
+
+- Floppy Tail Syndrome cause. The old hub said it "is thought to result
+  from insufficient calcium and phosphorus balance over time, causing
+  changes in the pelvis and tail base." Health issues says it comes
+  "typically from chronic upside-down resting against glass over
+  time," and that it's "sometimes associated with calcium or pelvic
+  issues" but "isn't diagnostic of it on its own." Two different root
+  causes for the same condition; the router hub's emergency card
+  doesn't restate FTS at all, since it isn't a call-the-vet item on its
+  own.
+- Enclosure upgrade size. The old hub suggested "18x18x36\" or
+  24x24x48\"" as the step up from the 18x18x24 minimum; tank setup's
+  own upgrade recommendation is "a 2x2x2 foot enclosure." The router
+  hub now quotes tank setup's own figure.
+
+Deep dives against each other: the tail-loss fact (permanent, "frogbutt"
+is fine) repeats consistently across the hub, handling guide, and cost
+guide. One same-page contradiction: the cost guide's body states
+"Ongoing Costs: $31 to $52 a Month" while its own FAQ said "Roughly $20
+to $30 a month," an older figure that never got updated when the table
+was built.
+
+The set as a whole: buyable, houseable, feedable, and handleable from
+this set alone. Three gaps, all checked against the Health and More
+list before being called real (none of them covered by the shared
+reptile quarantine, hygiene, emergency plan, heating and thermostats,
+or stool/hydration guides): how to sex a crested gecko (relevant since
+males can't be housed together), what to do about a solitary female
+laying infertile eggs, and how to choose a healthy individual at
+purchase. All three filed in docs/READER_LOG.md.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | "Low-output UVB lighting... is now recommended" | T5 vs Compact UVB (hub out of scope this pass) |
+| Encyclopedia | "the widely quoted 10-20 years is a captive range" | Cost guide (encyclopedia out of scope this pass) |
+| Cost | "the earliest known captive individuals have lived well into their 30s" | Encyclopedia (skipped, no reciprocal slot available this pass) |
+| Handling | "crested geckos can carry Salmonella" | Reptile hygiene guide |
+| Health issues | "Weigh your gecko weekly" | Reptile stool, urates, and hydration guide |
+| Tank setup | "this is the detail that trips up owners coming from bearded dragons" | Reptile heating and thermostats guide |
+| Feeding | "metabolic bone disease from inadequate calcium are all real medical causes" | already covered, feeding already links the gut-loading guide and the humidity guide |
+| Enrichment | "A well-established bioactive enclosure... adds ongoing low-level stimulation" | already covered, tank setup's own substrate section is one click away via the Deep Dive |
+| Humidity | none needed, already the best-linked page in the set | |
+
+Trust: the cost guide contradicting its own FAQ, and the Floppy Tail
+Syndrome cause disagreement, both read like nobody proofread across
+pages. The sentence that most convinced the reader a keeper wrote this,
+from feeding: "Raspberries are a real point of disagreement, some
+sources list them as a safe treat, others flag them as high-oxalate,
+worth knowing rather than presenting either way as settled."
+
+Reader's two changes: fix the cost guide's self-contradiction first,
+then wire the humidity guide into the Deep Dive list, since it's
+better sourced than most pages that made the cut.
+
+Fixed the same day: `crested-gecko-humidity-guide` wired into
+src/lib/data/relatedArticles.js; the router hub rebuild, which resolves
+the FTS-cause and enclosure-upgrade conflicts by construction; the cost
+guide's FAQ corrected from $20-30 to $31-52 a month to match its own
+table; tank setup's Humidity section (a full duplicate of the humidity
+guide, the same pattern as several other species' tank setup pages)
+cut to a one-sentence pointer with its two affiliate links preserved in
+the pointer; a link-only opener sentence on the humidity guide pointing
+at the care guide hub cut, and its closing paragraph's second link
+(browsing the Geckos category) trimmed, both per RULES, Linking; a new
+sentence added to tank setup's Temperature section linking the reptile
+heating and thermostats guide, since the reader correctly flagged that
+the article discusses a strict temperature ceiling without ever saying
+what actually holds it there; two more recommended links added
+(handling to the hygiene guide, health issues to the stool/hydration
+guide).
+
+Open: how to sex a crested gecko, the infertile-egg question for a
+solitary female, and how to choose a healthy individual at purchase are
+filed in docs/READER_LOG.md for Mike. Not added: the cost guide's
+suggested link to the encyclopedia (no natural sentence slot found this
+pass without adding new prose, which is out of scope for a links-and-
+numbers-only fix).
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a

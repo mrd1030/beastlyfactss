@@ -671,6 +671,75 @@ First two changes:
 - **Betta fish (second pass):** how to actually set up and stock a
   sorority tank (the hub and enrichment guide both mention one is
   possible, neither says how).
+- **Crested gecko:** how to sex a crested gecko (relevant since males
+  can't be housed together, and no page explains how to tell).
+- **Crested gecko:** what to do about a solitary female laying
+  infertile eggs, including whether a lay box is needed.
+- **Crested gecko:** how to choose a healthy individual at purchase.
+
+## Crested gecko (2026-09-08)
+
+One Sonnet agent, nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, humidity), about 97k tokens.
+Full agent output below, unedited.
+
+---
+
+# Crested Gecko Care Set: A Reader's Review
+
+## 1. Page by page
+
+- Hub (00): I'd read the whole thing before buying anything. Buy list, cost tables, checklist, FAQ. Grade: B+.
+- Encyclopedia (01): Thin but honest, including admitting wild lifespan isn't documented. Not much to act on. Grade: B.
+- Cost guide (02): Detailed and useful, but its own FAQ contradicts its own body on monthly cost. Grade: B-.
+- Handling guide (03): Specific ages, weights, times, and the tail warning up front. The most actionable page in the set. Grade: A-.
+- Health issues (04): Good symptom lists and a "when to worry" section, but its cause for Floppy Tail Syndrome disagrees with the hub's. Grade: B.
+- Tank setup (05): Strong on the temperature ceiling, but sets a basking target that touches the stated lethal limit and never mentions a thermostat despite that being the whole point of hitting a ceiling. Grade: B-.
+- Feeding guide (06): The most trustworthy page in the set, it admits an open disagreement about raspberries instead of faking certainty. Grade: A-.
+- Enrichment guide (07): Practical, consistent with tank setup, no red flags. Grade: A-.
+- Humidity guide (08): The best-sourced page (PetMD, Zen Habitats, Merck), but it's cut off from the site's own navigation, no Deep Dive or Health and More list at all. Grade: A- for content, C for placement.
+
+## 2. Hub and encyclopedia
+
+The hub earns its place: it's the only page with the buy list, checklist, and full cost tables in one spot. The encyclopedia earns its place too, it's the only page that gives origin, wild diet, and honestly flags that wild lifespan "has not been studied," which nothing else in the set says.
+
+They do disagree with a deep dive. On Floppy Tail Syndrome, the hub says it "is thought to result from insufficient calcium and phosphorus balance over time, causing changes in the pelvis and tail base." The health issues guide says it comes "typically from chronic upside-down resting against glass over time," and that it's "sometimes associated with calcium or pelvic issues" but "isn't diagnostic of it on its own." Those are two different root causes for the same condition.
+
+## 3. The set as a whole
+
+Yes, you could set up, feed, and handle a crested gecko competently from this set. What's missing: how to tell males from females (relevant since you're told never to house two males together), what to do about a solitary female laying infertile eggs, and how to pick a healthy individual at purchase.
+
+Several questions get answered, just not where they're asked. The tank setup guide leans on a thermostat's whole job (never exceed 85°F) without once using the word "thermostat," that answer is on the shared Reptile Heating and Thermostats guide, unlinked. The handling guide mentions Salmonella in one line with no detail, the shared Salmonella guide has it. Health issues lists parasites and never mentions quarantining a new arrival, that's the shared Quarantine guide.
+
+## 4. Overlap and conflict across the deep dives
+
+I read the FTS cause conflict above, and the tail-loss fact (drop is permanent, "frogbutt" is fine) three times, in the hub, handling guide, and cost guide, consistently. Enclosure upgrade advice differs: the hub suggests "18x18x36" or 24x24x48"," the tank setup guide suggests "a 2x2x2 foot enclosure," a smaller and less tall step than the hub's own recommendation. And the cost guide contradicts itself: the body states "Ongoing Costs: $31 to $52 a Month," but its own FAQ says "Roughly $20 to $30 a month."
+
+## 5. One link per page
+
+- Hub: "Low-output UVB lighting (T5 HO 5% or a compact 5.0 bulb)... is now recommended" should point to T5 vs Compact UVB.
+- Encyclopedia: "the widely quoted 10-20 years is a captive range" should point to the cost guide's lifespan section.
+- Cost guide: "the earliest known captive individuals have lived well into their 30s" should point to the encyclopedia.
+- Handling: "crested geckos can carry Salmonella" should point to the Salmonella guide.
+- Health issues: "Weigh your gecko weekly" should point to Reading Reptile Stool, Urates, and Hydration, its natural companion check.
+- Tank setup: "this is the detail that trips up owners coming from bearded dragons" should point to Reptile Heating and Thermostats.
+- Feeding: "metabolic bone disease from inadequate calcium are all real medical causes" should point to the health issues guide.
+- Enrichment: "A well-established bioactive enclosure... adds ongoing low-level stimulation" should point to tank setup's substrate section.
+- Humidity: none needed, already the best-linked page in the set.
+
+## 6. Trust
+
+What made me doubt them: the cost guide contradicting its own FAQ, and the FTS cause disagreement, both read like nobody proofread across pages. What convinced me most that a real keeper wrote this: the feeding guide saying raspberries are "a real point of disagreement, some sources list them as a safe treat, others flag them as high-oxalate, worth knowing rather than presenting either way as settled."
+
+## 7. Grade and two fixes
+
+Grade: B. Individually strong pages, undermined by numbers that don't match each other and one orphaned article. Fix the cost guide's self-contradiction first. Second, wire the humidity guide into the Deep Dive list, it's better sourced than most pages that made the cut.
+
+## Not covered anywhere
+
+- How to tell a male crested gecko from a female.
+- What to do about a solitary female laying infertile eggs, including a lay box.
+- How to choose a healthy individual at purchase.
 
 ## Betta fish (2026-09-08, second pass)
 
