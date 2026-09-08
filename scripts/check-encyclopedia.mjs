@@ -27,6 +27,16 @@
 //                     figure is not documented, then give the captive range.
 //   intensifier       "genuinely", "actually", "really" and friends, rationed
 //                     the same way RULES rations them in articles.
+//   no-history        no bio.history yet. Optional by design: the page drops
+//                     the card rather than printing a placeholder, so this
+//                     warning is the coverage counter while the field fills
+//                     in one group at a time.
+//   history-length    a history that is one sentence or runs past six, where
+//                     the shape is 3 to 5 like the Beastfile overviews.
+//   self-reference    the site talking about itself ("on this site", "this
+//                     site's"). RULES bans it in prose and the linking pass
+//                     stripped it from all 532 series guides; the encyclopedia
+//                     was never swept, and four entries still carried it.
 //
 // Nothing is written back. Written 2026-09-08 alongside the ball python hub
 // reconciliation (READMEFIRST, next jobs).
@@ -53,6 +63,7 @@ const guides = await loadAll('src/lib/data/guides');
 const BIO_FIELDS = ['overview', 'origin', 'habitat', 'adultSize', 'wildDiet', 'wildLifespan', 'conservation'];
 const DASH = /[–—]/g;
 const INTENSIFIER = /\b(genuinely|actually|really|truly|incredibly|extremely|remarkably|absolutely|literally)\b/gi;
+const SELF_REF = /on this site|this site's|this site |covered elsewhere|already covered|our [a-z]+ guide/i;
 
 // A wildLifespan is honest when it names a wild figure, or says plainly that
 // the wild figure is not known. "12-15 years (up to 20+ in captivity)" does
@@ -75,7 +86,7 @@ for (const a of animals) {
     if (!bio[f] || !String(bio[f]).trim()) err(a.id, 'missing-field', f);
   }
 
-  const text = [a.name, a.scientific, a.difficulty, ...BIO_FIELDS.map((f) => bio[f] || '')].join(' ');
+  const text = [a.name, a.scientific, a.difficulty, bio.history || '', ...BIO_FIELDS.map((f) => bio[f] || '')].join(' ');
   const dashes = (text.match(DASH) || []).length;
   if (dashes) err(a.id, 'dash', `${dashes} em/en dash(es)`);
 
@@ -92,6 +103,16 @@ for (const a of animals) {
 
   const ints = (bio.overview || '').match(INTENSIFIER);
   if (ints && ints.length > 1) warn(a.id, 'intensifier', `${ints.length} in the overview (${ints.join(', ')})`);
+
+  const selfRef = Object.entries(bio).find(([, v]) => typeof v === 'string' && SELF_REF.test(v));
+  if (selfRef) warn(a.id, 'self-reference', `${selfRef[0]}: ${SELF_REF.exec(selfRef[1])[0]}`);
+
+  const history = (bio.history || '').trim();
+  if (!history) warn(a.id, 'no-history', 'no bio.history yet');
+  else {
+    const sentences = history.split(/[.!?]+\s/).filter((x) => x.trim().length > 20).length;
+    if (sentences < 2 || sentences > 6) warn(a.id, 'history-length', `${sentences} sentence(s), the shape is 3 to 5`);
+  }
 }
 
 const byId = (list) => {
