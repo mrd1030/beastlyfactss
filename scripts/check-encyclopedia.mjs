@@ -33,6 +33,8 @@
 //                     in one group at a time.
 //   history-length    a history that is one sentence or runs past six, where
 //                     the shape is 3 to 5 like the Beastfile overviews.
+//   history-voice     first or second person in a history. The encyclopedia is
+//                     documentary throughout: no I, we, our, you, your.
 //   self-reference    the site talking about itself ("on this site", "this
 //                     site's"). RULES bans it in prose and the linking pass
 //                     stripped it from all 532 series guides; the encyclopedia
@@ -112,6 +114,8 @@ for (const a of animals) {
   else {
     const sentences = history.split(/[.!?]+\s/).filter((x) => x.trim().length > 20).length;
     if (sentences < 2 || sentences > 6) warn(a.id, 'history-length', `${sentences} sentence(s), the shape is 3 to 5`);
+    const person = history.match(/\b(I|we|our|you|your)\b/i);
+    if (person) warn(a.id, 'history-voice', `first or second person: "${person[0]}"`);
   }
 }
 

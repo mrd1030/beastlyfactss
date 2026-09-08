@@ -23,6 +23,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Fruit, nectar, pollen, and small invertebrates",
       wildLifespan: "Not documented (the widely quoted 10-20 years is a captive range; wild longevity for this species has not been studied)",
       conservation: "Vulnerable (IUCN)",
+      history: "The crested gecko was considered extinct for much of the twentieth century. It was rediscovered in 1994 on a private expedition by Robert Seipp and Friedrich Wilhelm Henkel, after a tropical cyclone that year led to a sighting on the Isle of Pines, and a small number of animals were exported for study before New Caledonia stopped issuing permits. Every crested gecko in the hobby descends from those few founders, bred out through separate lines in Europe and the United States. The species turned out to breed readily in a terrarium, which closed off the pressure to keep collecting more.",
     },
   },
   {
@@ -62,6 +63,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Insects, scorpions, small lizards, and worms",
       wildLifespan: "6-8 years (predation, parasites, and harsh conditions cut wild lifespans well short of the 15-20+ years typical in captivity)",
       conservation: "Least Concern (IUCN)",
+      history: "Leopard geckos were imported into the United States and Europe from Pakistan, Afghanistan, and India through the 1960s and 1970s, and were being bred in the United States by the early 1970s. Large-scale breeding did not start until the late 1980s, and the color morphs followed in the 1990s through breeders including Ron Tremper, Mark and Kim Bell, and John Mack, whose lines still carry their names in the trade. The result is unusual among reptiles: essentially every leopard gecko sold today is captive-bred, with no wild-collected supply sitting behind the pet market.",
     },
   },
   {
@@ -88,6 +90,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Insects, small mammals, birds, lizards, and eggs",
       wildLifespan: "10-15 years",
       conservation: "Least Concern (IUCN)",
+      history: "The tokay gecko is traded at a scale that has little to do with the pet market. Indonesia is the largest known exporter and reported roughly 5 million individuals in each of 2021 and 2022, about 99 percent of them bound for mainland China and overwhelmingly for traditional medicine rather than as pets. One Indonesian quota split 1.8 million animals into 21,250 for the pet trade and 1,778,750 for consumption. Almost all are taken from the wild, and investigations into the commercial breeding facilities that are supposed to supply them have questioned whether the captive-bred paperwork reflects any captive breeding at all.",
     },
   },
 ];
