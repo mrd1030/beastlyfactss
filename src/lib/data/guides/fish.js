@@ -57,46 +57,67 @@ export const fishGuides = [
     image: "/assets/guides/betta-fish.jpg",
     tagline: "The flowing-finned solo showoff that thrives in its own space and recognizes its keeper!",
     funFact: "Wild betta fish live in shallow rice paddies and slow-moving water that can run low on oxygen, so they evolved a labyrinth organ that lets them gulp air directly from the surface. Males also build floating bubble nests out of saliva-coated air bubbles to hold their eggs - a behavior captive males will still perform even without a female present.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "5+ gallon tank", low: 30, high: 60 },
-        { item: "Aquarium heater", low: 15, high: 25 },
-        { item: "Gentle/sponge filter", low: 15, high: 25 },
-        { item: "Substrate (sand or smooth gravel)", low: 10, high: 20 },
-        { item: "Live or silk plants", low: 15, high: 25 },
-        { item: "Water test kit", low: 15, high: 20 },
-      ],
-      annual: [
-        { item: "Betta pellets + frozen/freeze-dried variety", low: 30, high: 50 },
-        { item: "Water conditioner", low: 10, high: 15 },
-      ],
-    },
-    sections: {
-      housing: "A heated, filtered tank of at least 5 gallons is the real minimum for a betta - not the bowls or unheated cups they are often sold in. Water temperature should stay between 78 and 80 degrees F, which requires a small aquarium heater in almost every home. Bettas have long, delicate fins, so filtration should produce gentle flow (a sponge filter or a baffled outflow works well) rather than a strong current that exhausts them. Always use a tight-fitting lid, since bettas are surprisingly capable jumpers. Choose live or silk plants over stiff plastic ones, which can tear their fins.",
-      diet: "Bettas are carnivores and do best on a high-quality betta-specific pellet as their staple diet. Rotate in freeze-dried or frozen bloodworms, brine shrimp, and daphnia for variety and enrichment. Feed only what your betta can finish in 1 to 2 minutes, once or twice a day - overfeeding is one of the most common mistakes and leads to bloating and constipation. Skipping food one day a week gives their digestive system a break and is a normal part of a healthy feeding routine.",
-      enrichment: "Bettas are solitary and often aggressive toward their own kind - hence the name fighting fish - so they should not be housed with other bettas. A sorority of five or more females is possible but is an experienced-keeper project, not a beginner one: it needs 20 gallons or more, heavy planting and visual barriers, females ideally raised together, and a second cycled tank standing by, and it still fails often enough that plenty of keepers who have tried one advise against it. A mirror is not enrichment either. Flaring at a reflection is a threat display, and research measuring plasma hormones in male bettas found cortisol and androgens rose to a mirror image much as they did to a live rival, so what looks like exercise is a stress response. Seconds at a time at most, and never a mirror left in place. A floating leaf hammock near the surface gives them a natural resting spot, since they periodically rise to breathe air through their labyrinth organ. Many bettas learn to recognize their keeper and will swim to the front of the tank at feeding time.",
-      health: "Fin rot (a bacterial or fungal infection usually triggered by poor water quality) and ich (visible as small white spots) are the two most common betta health problems, and both are far easier to prevent than treat. Swim bladder issues, often from overfeeding or bloating, cause a betta to struggle swimming upright or float sideways. Dropsy, a swollen, pinecone-like appearance, signals serious internal illness and needs prompt attention. A heater is not optional - cold water suppresses a betta's immune system and is a major contributor to illness. Weekly water changes of 25 to 30 percent, always with a dechlorinator, are the single best preventive measure.",
-      checklist: [
-        "5+ gallon tank (never a bowl or unheated cup)",
-        "Aquarium heater set to 78-80°F",
-        "Gentle filter or sponge filter",
-        "Tight-fitting lid (bettas jump)",
-        "Soft substrate (sand or smooth gravel)",
-        "Live or silk plants (no sharp plastic)",
-        "Betta-specific pellets",
-        "Freeze-dried or frozen bloodworms/brine shrimp for variety",
-        "Water conditioner/dechlorinator",
-        "Water test kit and weekly 25-30% water changes",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Lifespan comes from the deep dives
+    // (no single figure disagreed once tank setup's temperature/change-percent
+    // numbers were reconciled). Quarantine, cycling, and power outage cite the
+    // shared aquarium guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-08 after the betta fish set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "5 gallons, heated and filtered, is the real minimum. Not the bowls or unheated cups bettas are often sold in.", source: "betta-fish-tank-setup-guide" },
+        { label: "Heater and filter", value: "A 15 to 25 watt adjustable heater holding a stable 76 to 82°F, 78 to 80°F the sweet spot. A gentle, low-flow filter such as a sponge filter, since a betta's long fins can't handle strong current.", source: "betta-fish-tank-setup-guide" },
+        { label: "Water parameters", value: "Ammonia and nitrite at 0 ppm with no safe nonzero reading for either, nitrate under 20 ppm, pH 6.5 to 7.5. Weekly water changes of 25 to 30%, always with a dechlorinator.", source: "betta-fish-water-parameters-guide" },
+        { label: "Cycling", value: "Cycle the tank before adding the fish. A fishless cycle typically takes 4 to 6 weeks at a stable warm temperature.", source: "aquarium-cycling-guide" },
+        { label: "Feeding schedule", value: "2 to 4 small, high-protein betta pellets, once or twice a day, no more than would fit in the size of the fish's eye. Fast one day a week.", source: "betta-fish-feeding-guide" },
+        { label: "Not eating", value: "A healthy adult can physically survive up to about two weeks, but that's an emergency ceiling, not a target. Start investigating around 5 to 7 days of refused food, sooner with a swollen belly, clamped fins, or lethargy.", source: "betta-fish-feeding-guide" },
+        { label: "Handling", value: "Never bare hands, it strips the protective slime coat on contact. Move the fish with a net or a cup. Float a new bag about 15 minutes before release so temperatures can equalize.", source: "betta-fish-handling-guide" },
+        { label: "Budget", value: "$5 to $30 for the fish, up to about $55 for rare varieties. $100 to $300 for a full setup. $10 to $25 a month after that.", source: "betta-fish-cost-guide" },
+        { label: "Adult size", value: "2.5 to 3 inches." },
+        { label: "Lifespan", value: "2 to 4 years typical, up to 5 years in captivity with excellent care." },
+        { label: "Quarantine", value: "At least 30 days in a bare hospital tank before joining others, per the Merck Veterinary Manual. Thirty days is the floor, not the target.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "Oxygen loss is the fast danger, not the cold or the dark. Aerate right away with a battery air pump, or agitate the surface by hand roughly every 10 to 15 minutes in a small tank. A betta's transport bag needs far more air than a typical fish bag, since it breathes air directly through its labyrinth organ.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
+    emergencyCard: {
+      source: "betta-fish-health-issues-guide",
+      callNow: [
+        "Raised, pinecone-like scales (dropsy), usually a poor prognosis but worth same-day vet contact",
+        "Pale or greyish saddle-shaped patches, ragged fin edges, or a cottony fuzz (columnaris), one to act on the same day you see it",
+        "A fine gold or rust-colored dusty sheen (velvet), which moves fast and can be fatal quickly",
+        "Buoyancy problems (floating, sinking, or swimming at odd angles) that don't clear after a 2 to 3 day fast",
+        "Any illness that doesn't improve once water quality and temperature are corrected",
+      ],
+      vetLine: "An aquatic vet, found before you need one. Most of what's on this list is prevented, not treated, through consistent water quality, temperature, and a proper heated, filtered, cycled tank; aquatic vets are the exception, reserved for genuinely serious or unclear cases.",
+    },
+    routes: [
+      { slug: "betta-fish-cost-guide", line: "$5 to $30 for the fish, a $100 to $300 setup, and $10 to $25 a month after that." },
+      { slug: "betta-fish-tank-setup-guide", line: "The 5-gallon minimum, the heater and sponge filter that actually fit a betta's fins, and cycling before the fish goes in." },
+      { slug: "betta-fish-water-parameters-guide", line: "The target ranges for temperature, pH, ammonia, nitrite, and nitrate, and the testing schedule that actually catches trouble early." },
+      { slug: "betta-fish-feeding-guide", line: "Portion size relative to the fish's own eye, safe treats and foods to avoid, and the honest range of reasons a betta stops eating." },
+      { slug: "betta-fish-handling-guide", line: "Why bare hands strip the slime coat, safe net and cup transfers, and how to read stress signs from a distance instead." },
+      { slug: "betta-fish-health-issues-guide", line: "Fin rot, ich, velvet, columnaris, swim bladder disorder, dropsy, and why water quality is almost always the first fix." },
+      { slug: "betta-fish-enrichment-guide", line: "What three published studies say about space and planting, and why a mirror is a stress test, not a toy." },
+    ],
+    buyList: [
+      "5+ gallon tank with a tight-fitting lid (bettas jump)",
+      "Aquarium heater sized for the tank",
+      "Gentle sponge filter",
+      "Soft substrate (sand or smooth gravel)",
+      "Live or silk plants (no sharp plastic)",
+      "Water conditioner/dechlorinator",
+      "Liquid-reagent water test kit",
+      "Net and a transfer cup",
+      "Betta-specific pellets",
+      "Freeze-dried or frozen bloodworms/brine shrimp for variety",
+    ],
     faqs: [
       { q: "Can bettas live in bowls?", a: "No - this is one of the most persistent myths in the fishkeeping hobby. Small, unheated, unfiltered bowls cause chronic stress from poor water quality and cold temperatures, and they dramatically shorten a betta's lifespan. A betta needs at least 5 gallons with a heater and filter to genuinely thrive, not just survive." },
       { q: "Can two bettas live together?", a: "Male bettas will fight, often fatally, if housed together, which is exactly why they're called fighting fish. A single male should always be kept alone. Female bettas can sometimes be kept in groups of five or more (a sorority) in a large, heavily planted tank with careful monitoring, but this setup carries real risk of aggression and isn't recommended for beginners." },
-      { q: "Why is my betta not eating?", a: "The most common causes are constipation from overfeeding, stress from recent water changes or new tankmates, water temperature that's too cold, or the early stages of illness. Check your heater is holding steady at 78-80°F first, since a chilled betta commonly refuses food, then evaluate water quality and recent tank changes." },
-      { q: "How long do bettas live?", a: "2 to 4 years is typical, with some bettas reaching 5 years under excellent care. Consistent warm water temperature, a properly cycled and filtered tank, and a varied diet are the biggest factors in reaching the upper end of that range." },
-      { q: "Do bettas need a heater?", a: "Yes, without exception. Bettas are tropical fish native to warm Southeast Asian waters, and room temperature in most homes is too cold for them. A stable 78-80°F is essential for their immune function, digestion, and overall activity level." },
-      { q: "Are betta fish good pets for beginners?", a: "Yes, but not the way they're usually sold. A betta kept in an unheated bowl is a stressed, short-lived fish, the beginner-friendly reputation only holds true with a real 5+ gallon heated, filtered tank. Get that right and bettas are genuinely low-maintenance, colorful, and interactive." },
+      { q: "Why is my betta not eating?", a: "The most common causes are constipation from overfeeding, stress from recent water changes or new tankmates, water temperature that's too cold, or the early stages of illness. Check the heater is holding steady at 78 to 80°F first, since a chilled betta commonly refuses food, then evaluate water quality and recent tank changes." },
     ],
   },
   {
