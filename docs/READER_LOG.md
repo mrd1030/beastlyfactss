@@ -509,6 +509,102 @@ First two fixes: one source of truth for enclosure size, humidity, fasting windo
 - How to find and vet a qualified reptile veterinarian before you need one.
 - Whether specific morphs carry health problems, given the cost guide prices them by genetics.
 
+## Ball python (2026-09-08, second pass)
+
+Same eleven pages re-extracted after the router hub and the first-pass
+fixes. One Opus agent, same prompt, about 95k tokens. Full agent output
+below, unedited.
+
+---
+
+# Ball Python page set, read as a buyer
+
+## 1. One line per page
+
+- **00 Hub:** Finished it. Every first-week number I need with the page it came from; I could buy and build from this alone. **A**
+- **01 Encyclopedia:** Finished it in under a minute. Nothing to act on: origin, size, lifespan, conservation. **C**
+- **02 Cost:** Finished it. I can budget $500 to $1,500 for year one and $200 to $500 after. **B**
+- **03 Handling:** Finished it. I know when to start, how often, and the two hard timing rules. **A**
+- **04 Health:** Finished it. I can recognize, triage, and know what is vet-today. **A**
+- **05 Tank setup:** Finished it. Buildable from this page alone. **A**
+- **06 Feeding:** Finished it. Schedule, prey size, thawing, freezer safety, all actionable. **B+**
+- **07 Enrichment:** Finished it. The priority order is the most usable list in the set. **A**
+- **08 Legal:** Finished it. Found my situation in one table with the reason behind it. **A**
+- **09 vs Boa:** Finished it. Decision content only, and one number is wrong. **C+**
+- **10 vs Corn:** Finished it. Useful humidity and lifespan contrast, one claim contradicts the care pages. **B**
+
+## 2. Hub and encyclopedia
+
+The hub earns its place completely. It is not a summary, it is a router: every line is a number plus the page that owns it, so I never had to guess where to go. The emergency card and buy list are the two things I would actually print.
+
+The encyclopedia does not repeat the deep dives, but it barely earns a click either. Wild diet and range are the only things nowhere else, and nothing on it changes what I do.
+
+Hub versus deep dive disagreements: none. I checked the enclosure, temperatures, humidity, substrate, feeding schedule, prey size, thawing, handling frequency, and budget lines against their source pages and every figure matches, including the wording. That is rarer than it should be.
+
+## 3. The set as a whole
+
+Yes. After these I could set up the enclosure, buy the right animal, feed it correctly, spot the five things that mean a vet, and know what a year costs. That is a genuinely complete package.
+
+Questions raised on one page and answered on another without saying so:
+
+- Health guide: "raise the enclosure temperature and check humidity immediately." It never gives the target numbers; the tank setup page has them and is not linked.
+- Health guide: "weight loss in a snake that's still eating normally." How I would notice is in the sidebar's Sexing, Growth, and Body Condition guide.
+- Feeding guide: "Breeding season (Oct-March): Males especially go off food." The brumation guide explains that and is not linked.
+- Tank setup: "Paper towels work fine temporarily, for quarantine setups, for example." Nothing tells me what quarantine is; the quarantine guide is sidebar-only.
+- Cost guide: "Initial vet exam $50 - $150." Why that first visit matters, the fecal exam, is in the health guide, unlinked. The cost guide links no other ball python page at all.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice, but usefully: the humidity range and the thermostat rule appear on four pages each. That is fine; both are the things that kill snakes. Read twice with no payoff: the hunger strike explanation appears nearly word for word in the health guide, the feeding guide, the hub FAQ, and both comparisons.
+
+Real conflicts:
+
+**Enclosure size.** Tank setup: "The current standard for an adult is a 4x2x2 ft (48x24x24 inches, roughly 120 gallons...)". Boa comparison: "Adult enclosure | 40-50 gallon range" and "most adults settle in at 3 to 5 feet and stay comfortable in roughly a 50-gallon enclosure for the rest of their life." The cost FAQ adds a third: "A 40-gallon glass minimum runs $70 to $200." That is a 3x difference in the biggest purchase I make.
+
+**Escape risk.** Handling guide: "They're skilled escape artists. Always use a secure, locking, front-opening enclosure." Corn comparison: "Escape risk | Low - calmer, less driven."
+
+**Thawing water.** Feeding guide, early: "Thaw in warm (not hot) water or a bag submerged in warm water." Same page, later: "seal it in a bag and submerge it in cool to lukewarm water."
+
+**Post-feed wait.** Handling guide and hub: "48 to 72 hours." Feeding FAQ: "wait at least 48 hours."
+
+**Quarantine length.** Hub: "quarantine periods of 3 to 6 months." Health guide: "quarantining any new snake for several weeks to months."
+
+## 5. One link per page
+
+- **Hub:** none needed, it is all links.
+- **Encyclopedia:** "Adult Size: 3-5 feet (90-150 cm)" should link to the tank setup guide.
+- **Cost:** "PVC costs more than glass but holds humidity far better" should link to the tank setup guide.
+- **Handling:** "Ball pythons also carry Salmonella like most reptiles, so wash your hands before and after handling" should link to the Salmonella and hygiene guide.
+- **Health:** "raise the enclosure temperature and check humidity immediately" should link to the tank setup guide.
+- **Tank setup:** "Paper towels work fine temporarily, for quarantine setups, for example" should link to the quarantine guide.
+- **Feeding:** "Breeding season (Oct-March): Males especially go off food during this period" should link to the brumation guide.
+- **Enrichment:** "A dish the snake can fully enter supports shedding" should link to How Snakes Actually Shed.
+- **Legal:** none needed.
+- **vs Boa:** "stay comfortable in roughly a 50-gallon enclosure for the rest of their life" should link to the tank setup guide, after the number is fixed.
+- **vs Corn:** "Ball pythons are calmer and less motivated to search for a way out" should link to the handling guide.
+
+## 6. Trust
+
+What made me doubt them: the enclosure conflict, because the comparison pages read like they were written against an older standard the care pages have since replaced, and nobody went back. Also the feeding page contradicting itself on thaw water within 300 words.
+
+What convinced me a keeper wrote this: "Add sturdy, well-anchored branches too, braced firmly enough that a snake can push against one without it shifting, and they will use them." Nobody writes "push against one without it shifting" without having watched a heavy snake pull a branch down.
+
+## 7. Set grade: B+
+
+The care spine is excellent and internally consistent; the comparison pages and one cost FAQ drag it down with stale numbers a new buyer would act on.
+
+First two changes:
+1. Fix the enclosure number everywhere. Make 4x2x2 the only figure on the site and delete the 40-gallon and 50-gallon lines.
+2. Add the seven in-body links from question 5, starting with health to tank setup and feeding to brumation.
+
+## Not covered anywhere
+
+- How often to spot clean, disinfect, and do a full substrate change. Only the cost table's "every 4-8 weeks" hints at it.
+- How to choose a healthy animal and where to buy it: breeder, expo, or pet store, and what to check before paying.
+- How to find a reptile-experienced vet, which the hub tells me to do "before you need one."
+- When to offer the first meal after bringing the snake home. Quarantine covers isolation, not the feeding restart.
+- What to do if the snake gets out of the enclosure and into the room.
+
 ## Items no guide covers (all species, running list)
 
 - **Leopard gecko:** what a respiratory infection actually is or how it
@@ -557,3 +653,8 @@ First two fixes: one source of truth for enclosure size, humidity, fasting windo
   before you need one.
 - **Ball python:** whether specific morphs carry health problems, given
   that the cost guide prices them by genetics.
+- **Ball python (second pass):** when to offer the first meal after
+  bringing the snake home. The shared quarantine guide covers isolation,
+  not the feeding restart.
+- **Ball python (second pass):** what to do if the snake gets out of the
+  enclosure and into the room.

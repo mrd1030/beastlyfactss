@@ -1280,6 +1280,104 @@ Open, left for Mike: the vs boa enclosure conflict and its affiliate
 product; the encyclopedia's "Wild Lifespan" label and the Least
 Concern line; the enrichment guide's editor's-note sentence.
 
+## Ball Python (2026-09-08, second pass, after the fixes)
+
+Same eleven pages, re-extracted after the router hub and the first-pass
+fixes, one Opus agent, same prompt, about 95k tokens.
+
+| Page | First pass | Second pass |
+|---|---|---|
+| Care guide hub | C | A |
+| Encyclopedia | C | C |
+| Cost | B | B |
+| Handling | A | A |
+| Health issues | A | A |
+| Tank setup | A- | A |
+| Feeding | B+ | B+ |
+| Enrichment | A | A |
+| Legal | A | A |
+| vs Boa constrictor | C+ | C+ |
+| vs Corn snake | B | B |
+
+Set grade: B- to B+. "The care spine is excellent and internally
+consistent; the comparison pages and one cost FAQ drag it down with
+stale numbers a new buyer would act on."
+
+Hub: no disagreement left. "I checked the enclosure, temperatures,
+humidity, substrate, feeding schedule, prey size, thawing, handling
+frequency, and budget lines against their source pages and every figure
+matches, including the wording. That is rarer than it should be." The
+reader also named the emergency card and the buy list as the two things
+it would print, which is what the print icon prints.
+
+New defects this pass found, all inside a single article, all fixed:
+
+- Thaw water, feeding guide against itself. The early section said
+  "Thaw in warm (not hot) water or a bag submerged in warm water"; the
+  later, Merck-sourced section says "seal it in a bag and submerge it in
+  cool to lukewarm water." The first pass caught the same contradiction
+  in that page's FAQ and the fix missed this third statement of it. The
+  early section now matches the sourced method and keeps the two steps
+  distinct, thaw cool, then warm before offering.
+- Post-feed wait. Handling guide and hub: "48 to 72 hours." Feeding
+  guide FAQ: "wait at least 48 hours." The handling guide is the page
+  that owns handling; the FAQ now says 48 to 72.
+- Quarantine window. Hub, sourced to the shared quarantine guide and
+  through it to Merck: "3 to 6 months." Health guide: "several weeks to
+  months." Narrowed to "for months," which is the direction the source
+  supports; the quarantine guide's whole argument is that the informally
+  repeated two to four weeks is too short. A hedge changed deliberately,
+  flagged here for veto.
+- A third enclosure figure, in the cost guide's own FAQ: "A 40-gallon
+  glass minimum runs $70 to $200." The tank setup guide recognizes no
+  40-gallon adult minimum at all (4x2x2 ft is the adult standard,
+  36x18x18 is for juveniles under 3 feet). The FAQ now prices the same
+  4x2x2 enclosure in both materials instead of inventing a smaller one.
+
+Stranded questions this pass, each fixed with the link the reader named:
+
+- Health issues said "raise the enclosure temperature and check humidity
+  immediately" without saying to what. Now points at tank setup, without
+  restating a temperature the health guide's own Sources do not carry.
+- Tank setup said "for quarantine setups, for example" with nothing
+  telling a first-time keeper what one is. Now links the quarantine guide.
+- Feeding's "Breeding season (Oct-March)" now links the shared brumation
+  guide, which is where that seasonal dip is explained.
+- Handling's Salmonella sentence now links the shared hygiene guide.
+- Enrichment's soak-dish sentence now links How Snakes Actually Shed.
+- vs Corn's escape-risk claim now links the handling guide, which carries
+  the instruction the comparison implies.
+- Cost's PVC sentence now links tank setup. The reader noted the cost
+  guide "links no other ball python page at all"; it does now.
+
+Left open, unchanged from the first pass: the vs boa constrictor guide's
+"40-50 gallon range" and "roughly a 50-gallon enclosure for the rest of
+their life." The reader called it out again and its verdict is the
+sharper one: "the comparison pages read like they were written against
+an older standard the care pages have since replaced, and nobody went
+back." Still not fixed here for the reasons in the first-pass section
+(AffiliateLink anchor text, a ComparisonTable cell, and the boa's own
+row goes incoherent if only the ball python side moves). The reader's
+first change would be to "make 4x2x2 the only figure on the site and
+delete the 40-gallon and 50-gallon lines," which needs Mike's call on
+the affiliate product.
+
+Trust: "Nobody writes 'push against one without it shifting' without
+having watched a heavy snake pull a branch down." That sentence is one
+the first-pass fix wrote, replacing the unsourced "they're semi-arboreal"
+claim, which is a useful signal that reconciling to the sourced page did
+not cost the voice anything. The reader's remaining doubt is the
+enclosure conflict and, before it was fixed, the feeding page
+contradicting itself "within 300 words."
+
+Not covered anywhere, second pass. Three repeat from the first pass
+(cleaning cadence, choosing a healthy animal and where to buy, finding a
+reptile vet) and two are new:
+
+- When to offer the first meal after bringing the snake home. The
+  quarantine guide covers isolation, not the feeding restart.
+- What to do if the snake gets out of the enclosure and into the room.
+
 ## Single-article reads (2026-09-08, text only)
 
 Earlier single-page reads, kept for the record. Grades: tegu handling A-,
@@ -1353,6 +1451,30 @@ unsourced "about half of captive leopard geckos may carry it."
   own body said effects may start at 5. Both fixed, five more links
   added, one extractor limitation (AffiliateLink cells in a
   ComparisonTable) noted rather than fixed.
+- 2026-09-08, ball python (branch claude/hub-ball-python): hub rebuilt
+  to router shape, 22 rows, which resolved six hub-versus-deep-dive
+  conflicts by construction (fasting window, humidity, adult feeding
+  interval, thaw method, handling frequency, and a cost table whose
+  every line differed from the cost guide). Six rows cite the shared
+  reptile and snake guides: quarantine, thermostat probe placement,
+  hygiene, the power-outage cold floor, winter appetite, and weight
+  checks. Deep dive fixes: the tank setup guide's diet aside cut to a
+  pointer, taking with it the set's only "adults every 7 to 14 days"
+  and an unsourced "about 10% of body weight" prey rule; its unsourced
+  "semi-arboreal" claim reconciled to the enrichment guide's
+  PLOS ONE-sourced framing, which the second-pass reader then named as
+  the sentence that most convinced it a keeper wrote the set. Second
+  pass (B- to B+, hub C to A, "hub versus deep dive disagreements:
+  none"): the feeding guide stated its thaw method three ways on one
+  page, two of them wrong, and the first-pass fix caught only the FAQ;
+  the cost guide's FAQ carried a fourth enclosure figure, a "40-gallon
+  glass minimum" the tank setup guide does not recognize for an adult;
+  the health guide's quarantine window narrowed to the sourced one.
+  Thirteen links added across the two passes. Left for Mike: the vs boa
+  constrictor guide's 40-50 gallon adult figure against tank setup's
+  sourced 4x2x2 standard, unfixed because the number is AffiliateLink
+  anchor text for a juvenile-sized enclosure and the boa's own row goes
+  incoherent if only the ball python side moves.
 - 2026-09-08, axolotl (branch claude/hub-axolotl): hub rebuilt to router
   shape, resolving the old hub's tank-size (40 gallons wrongly implied
   as the target for one animal, not a pair) and setup-cost ($265-725
