@@ -170,7 +170,109 @@ Open. Nothing fixed yet.
 
 ## Rabbit (2026-09-08, second pass, with the extractor)
 
-Pending: the review is appended below when the run completes.
+Pages: hub, encyclopedia, cost, handling, health issues, tank setup, feeding,
+enrichment, GI stasis (nine). 77,000 Opus tokens. Everything below is real
+page content; no extraction artifacts this time.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | Repeats the deep dives more than it routes to them, and where it differs it is the one that is wrong. |
+| Encyclopedia | C | Warrens, Iberian origin, breed size range; not care content and does not pretend to be. |
+| Cost | B+ | Budget $150 to $600 setup, $60 to $100 a month, $500 to $1,000 emergency fund, adopt already altered. |
+| Handling | A- | Best written: two-hand lift, football hold, no trancing, stress signs. |
+| Health issues | A- | Find an exotic vet first, call at eight hours, ask about RHDV2, check hindquarters. |
+| Tank setup | B | 4x4 pen minimum, no wire floor; the diet section does not belong here. |
+| Feeding | A- | Life stage schedule, toxic list, seven reasons for appetite loss. |
+| Enrichment | A- | Changed the reader's plan to two rabbits; priority list, dig box, bonding method. |
+| GI stasis | A | What normal droppings look like, no pineapple juice, syringe feeding only under a vet. The only page that links out properly. |
+
+Set grade: B. The deep dives are strong, sourced, and honest about
+uncertainty; the hub in front of them is stale and contradicts them on the
+numbers that matter most.
+
+Hub versus deep dives, both sides quoted:
+
+- Vet trigger. Hub: "A rabbit that has not eaten or produced droppings for
+  12 hours is an emergency." Health: "so treat eight as when you pick up the
+  phone."
+- Exercise. Hub: "at minimum 3 to 4 hours of free-roaming time." Tank setup:
+  "for a minimum of 5 hours a day." Enrichment: permanent access, scheduled
+  hours are the wrong model.
+- Greens. Hub body: "1 to 2 cups per 4 pounds of body weight." Hub FAQ: "a
+  daily cup of fresh leafy greens per 5 pounds of body weight." Tank setup:
+  "roughly 1 cup per 2 pounds of body weight daily." Feeding: "roughly 1 to 4
+  cups per several pounds of body weight depending on the source."
+- Hay share. Hub: "80 to 90%." Tank setup and feeding: "80 to 85%."
+- Vet schedule and cost. Hub annual table: "Annual vet wellness check | $50 |
+  $100." Health: "a twice-yearly wellness exam." Cost: "$60 to $100 per
+  visit, with twice-yearly wellness checks recommended."
+- Companions. Hub: "Same-sex pairs (particularly two spayed or neutered
+  animals) work well when properly introduced." Enrichment FAQ: "Neutered,
+  opposite sex is the usual recommendation."
+- Lifespan. Hub: "8 to 12 years with good care." Tank setup: "Indoor rabbits
+  typically live 7 to 10 years."
+- Costs. Hub pen $60 to $150 vs cost $40 to $100; hub spay or neuter tops
+  out at $400, cost guide "$500 or more."
+- Difficulty. Hub grades the animal "Beginner/Intermediate"; the deep dives
+  describe an exotic-vet patient with an eight hour emergency clock.
+
+Deep dives against each other:
+
+- Pellets. Tank setup: "about 1/4 cup per 5 pounds of body weight." Feeding:
+  "roughly 1/8 to 1/4 cup ... per 5 to 6 lbs of body weight daily, sources
+  vary."
+- Alfalfa. Tank setup: "alfalfa is appropriate only for rabbits under about
+  6 months old." Feeding: "Juveniles (7 weeks to 7 months): Unlimited
+  alfalfa hay."
+- Uterine cancer. Health: "aged 5 and older." Hub: "by age 4 to 5."
+- Space. Tank setup gives 8 plus 24 square feet and five hours; enrichment
+  says permanent access is the finding. Nobody reconciles them.
+- Feeding and GI stasis agree on the eight to twelve hour window in the same
+  words. The one number the set has settled.
+
+Gaps: nail trimming technique (clippers are on the buy list), cecotropes
+explained only inside the emergency article, bunny-proofing (cords,
+baseboards), litter change frequency, heat and cold beyond one hub line,
+carrier and car travel, RHDV2 cost, where to get a rabbit.
+
+Stranded questions (answer exists in the set, text does not say where):
+cost's "A GI stasis workup alone can exceed $1,500"; handling's "Teeth
+grinding, a pain signal, not contentment"; feeding's fur ingestion and
+brushing (no page covers brushing); enrichment's "bond them properly" and
+the hub's bonding basics; health's sore hocks and tank setup's flooring.
+
+Read twice or more: hay share, pellet amounts, GI stasis signs, the 80
+percent uterine cancer figure, litter training via hay over the box, dental
+overgrowth. Tank setup's diet section duplicates and contradicts feeding.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | "A rabbit that has not eaten or produced droppings for 12 hours is an emergency." (and fix the number) | GI stasis guide |
+| Encyclopedia | "In the wild they live in large, complex underground warrens with strict social hierarchies." | Enrichment guide |
+| Cost | "A GI stasis workup alone can exceed $1,500." | GI stasis guide |
+| Handling | "Teeth grinding, a pain signal, not contentment" | GI stasis guide |
+| Health issues | "Sore hocks (pododermatitis), from wire flooring or inadequate bedding, another reason flooring choice matters." | Tank setup guide |
+| Tank setup | "Hay should make up about 80 to 85% of a rabbit's diet, unlimited access, not a side item." | Feeding guide |
+| Feeding | "Stress. New housing, a new pet in the household, loud noises, or handling changes are real triggers." | Handling guide |
+| Enrichment | "Permanent access to a run, or free range of a rabbit-proofed room, is what the corticosterone result is pointing at." | Tank setup guide |
+| GI stasis | none needed | |
+
+Trust: enrichment's stranded fragment "and other sizes are available" and a
+line about "the reptile half of this series"; feeding's "Roughly 70% of
+rabbits recover" with no source; the tank setup URL calling a rabbit pen a
+tank setup. The sentence that convinced the reader, from GI stasis: "Teeth
+grinding (bruxism) at a harsh, audible pitch - distinct from the soft,
+contented tooth-purring rabbits do when relaxed." (That sentence carries a
+hyphen used as a dash; the checker allows hyphens.)
+
+Reader's two changes: make the hub the shortest page on the site (buy list,
+emergency card, one line per topic linking the deep dive, no duplicated
+figures); cut the diet section from tank setup and link feeding, then one
+greens and pellet rule across every page.
+
+Open. Nothing fixed yet.
 
 ## Single-article reads (2026-09-08, text only)
 
