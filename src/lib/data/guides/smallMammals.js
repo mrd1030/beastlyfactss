@@ -620,7 +620,7 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
     petType: "Small Mammals",
     image: "/assets/guides/hamster.jpg",
     tagline: "The pouch-stuffing solo escape artist that needs way more space than the pet store box!",
-    funFact: "A hamster's cheek pouches can stretch back past its shoulders when fully packed with food, holding a volume close to the size of the hamster's own body.",
+    funFact: "A hamster's cheek pouches can stretch back past its shoulders when fully packed with food, holding roughly a fifth of the hamster's own body weight.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
