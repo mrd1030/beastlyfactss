@@ -1095,6 +1095,191 @@ enrichment guide's hide-count FAQ, two more links.
 Open: `why-axolotls-need-cold-clean-water`'s missing RELATED_ARTICLES
 wiring (first pass), still left for Mike.
 
+## Ball Python (2026-09-08, first pass)
+
+Extractor set of eleven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, vs boa constrictor, vs
+corn snake). One Opus agent, about 92k tokens. The review reads the old
+legacy hub (housing and diet prose, a cost table, five FAQs); the router
+hub was built from the same baseline the same day, before the review
+came back.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | The deep dives restated at about 80 percent fidelity. |
+| Encyclopedia | C | Thirty seconds, nothing to act on except "20 to 30 years". |
+| Cost | B | Budget $500 to $1,500 for year one. |
+| Handling | A | Settle 1 to 2 weeks, 48 to 72 hours post-feed, never in shed. |
+| Health issues | A | A real go-to-the-vet-now list. |
+| Tank setup | A- | This is my build sheet. |
+| Feeding | B+ | Thawing and freezer storage, the best section in the set. |
+| Enrichment | A | The priority order, and its honesty about what the study did not test. |
+| Legal | A | Checked my state in one table. |
+| vs Boa constrictor | C+ | Size reality, but the enclosure row is wrong. |
+| vs Corn snake | B | It made the choice for me. |
+
+Set grade: B-. "Strong individual articles undermined by a hub that
+contradicts them and by numbers that drift between pages." The reader's
+first fix, unprompted, was the router shape: "cut the hub to a router
+that links into each deep dive at the claim, instead of restating it."
+
+Hub versus the set, both sides quoted (all against the old legacy hub,
+resolved by the router rebuild):
+
+- Fasting. Old hub funFact: "Ball pythons can go up to 6 months without
+  eating." Old hub diet prose: "A healthy adult ball python can safely
+  fast for 6 to 8 weeks." Feeding guide: "A healthy adult ball python
+  can go 3-6 months without eating." Three windows on two pages. The
+  router hub's Not eating row now quotes the feeding guide, and the
+  funFact was changed to 3 to 6 months to match it.
+- Humidity. Old hub housing prose: "Ambient humidity should stay at 55
+  to 65%." Old hub FAQ: "Ball pythons require 60 to 80% ambient
+  humidity." Tank setup: "Keep ambient humidity at 55 to 65%." The hub
+  disagreed with itself and with the deep dive. The router hub's
+  Humidity row and its copied FAQ both read 55 to 65%.
+- Adult feeding interval. Old hub prose: "Adults eat every 10 to 14
+  days." Old hub FAQ and tank setup: "adults every 7 to 14 days."
+  Feeding guide: "Adults (18+ months): Every 10-14 days." The feeding
+  guide owns the schedule and is the page whose Sources cite it, so the
+  hub now quotes it and the tank setup aside was cut (below).
+- Thawing. Old hub: "in warm water for 20 to 30 minutes until it reaches
+  100 to 105 degrees F at the core." Feeding guide: "submerge it in cool
+  to lukewarm water." The router hub's Thawing row quotes the feeding
+  guide, which sources the method to the Merck Veterinary Manual.
+- Handling. Old hub: "2 to 3 times per week for 15 to 20 minutes...
+  usually 2 to 4 weeks after acquisition." Handling guide: "up to 3 to 5
+  for a snake that handles well... 15 to 30 minutes," starting after
+  "the first one to two weeks." The router hub's Handling row quotes the
+  handling guide.
+- Costs. "Nearly every hub line differs from the cost guide: electricity
+  $50 to $90 vs $20 to $80, vet $50 to $90 vs $50 to $150, substrate $30
+  to $50 vs $40 to $120." The hub's cost table is gone; the Budget row
+  and the buy list carry the cost guide's own figures, and the buy list
+  carries no prices at all.
+
+The encyclopedia earns a smaller place than the hub does: origin, wild
+diet, morph count, the 48-year record. The reader flagged two things in
+it, both outside a deep-dives-only pass and left for Mike: "Wild
+Lifespan: 20-30 years (up to 48 years recorded in captivity)" labels a
+captivity figure as a wild one, and "Wild populations face pressure from
+over-collection" sits oddly beside "Least Concern (IUCN)".
+
+Deep dives against each other, both sides quoted:
+
+- Adult enclosure size, the one real conflict left. Tank setup: "The
+  current standard for an adult is a 4x2x2 ft... roughly 120 gallons,"
+  explicitly "replacing the old advice about keeping them in small
+  tubs." vs Boa constrictor table row: "Adult enclosure | 40-50 gallon
+  range," and in prose, ball pythons "stay comfortable in roughly a
+  50-gallon enclosure for the rest of their life." Tank setup is the
+  page whose Sources cite it (ReptiFiles' terrarium size and lighting
+  page, plus the Zen Habitats reprint); the vs boa guide's sources are
+  general care sheets that do not carry an enclosure standard. Not fixed
+  in this pass and left for Mike, because the 50-gallon figure is the
+  anchor text of an AffiliateLink for a 36x18x18 enclosure (which tank
+  setup gives as the juvenile size, not the adult one), the 40-50 figure
+  sits in a ComparisonTable cell that cannot take markdown, and
+  correcting the ball python side to 120 gallons makes the boa's own
+  "75+ gallons" row read smaller than the ball python's. Fixing it
+  properly means re-choosing the affiliate product and re-sourcing the
+  boa figure, which is new content rather than reconciliation.
+- Prey size. Tank setup added "or about 10% of body weight," which no
+  other page in the set states and which the reader called out as a very
+  large rat for a 1,500 gram female. Unsourced anywhere in the set. Cut
+  with the diet aside (below).
+- Climbing. Tank setup: "Add sturdy, well-anchored branches too, they're
+  semi-arboreal and will use them." Enrichment: "The point is not that
+  ball pythons are secretly arboreal, it is that vertical structure adds
+  usable space." The enrichment guide cites Kaufmann et al. in PLOS ONE
+  for the housing study behind the claim; tank setup cites no source for
+  "semi-arboreal." Tank setup changed to match.
+- Thaw temperature, same page. Feeding guide body: "submerge it in cool
+  to lukewarm water," then warm gently afterward. Feeding guide FAQ:
+  "submerge it in warm - not hot - water until it feels warm all the way
+  through, usually 15 to 20 minutes for a medium rat." The FAQ collapsed
+  two steps into one and carried a figure the body does not. Fixed by
+  making the FAQ read off the body.
+- Escape risk. Handling: "They're skilled escape artists." vs Corn
+  snake: "Escape risk | Low - calmer, less driven." Checked and left
+  alone: the vs guide's claim is comparative, and it already lands on
+  the same instruction ("neither snake should be kept in anything with a
+  loose-fitting top"). Not a conflict, the same way the leopard gecko
+  UVB framing was not.
+- Biting. Handling gives it a section; vs corn says "Balls up,
+  essentially never bites." Both say bites are rare and defensive. Not
+  a conflict.
+
+Read twice or more across the set, with no disagreement: humidity 55 to
+65 rising to 70 to 80 (tank setup, health, vs corn), frozen-thawed over
+live (tank setup, feeding), two snug hides (tank setup, enrichment), the
+post-feed handling wait (handling, feeding), and the thermostat rule
+(cost, tank setup, health, enrichment).
+
+Stranded questions, each checked against the Health and More list before
+being called real:
+
+- Health issues says quarantine is "several weeks to months" and names
+  no window; the shared Reptile Quarantine guide has the number (3 to 6
+  months, Merck) and was reachable only as a sidebar title. Fixed: the
+  health guide now links it in the IBD transmission paragraph, and the
+  router hub carries a Quarantine row sourced to it.
+- Tank setup warns "obesity is a real and common issue" without saying
+  how a keeper would tell; the shared Sexing, Growth, and Body Condition
+  guide has the cross-section test and the weigh-in habit. Fixed: tank
+  setup now links it on that sentence, and the hub carries a Weight
+  checks row sourced to it.
+- Feeding says to worry at "rapid weight loss" but never says to own a
+  scale. Same guide; covered by the hub's Weight checks row rather than
+  a second link in that short section.
+- Nothing in the eleven pages mentioned a power failure; the shared
+  Reptile Emergency Plan guide has a ball python row (72-75°F cold
+  floor). Fixed: the hub carries a Power outage row sourced to it.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Thaw prey fully by placing it in a zip-lock bag in warm water for 20 to 30 minutes." | Feeding guide | Moot, the sentence is gone with the router rebuild; the Thawing row links the feeding guide |
+| Encyclopedia | "hundreds of color morphs developed through selective breeding." | Cost guide | Skipped, the encyclopedia entry is structured data with no link slot |
+| Cost | "The thermostat is not optional." | Reptile Heating and Thermostats | Added on the following sentence, since "thermostat" itself is AffiliateLink anchor text |
+| Handling | "its eyes turn cloudy or blue" | Understanding Reptile Shedding | Added |
+| Health issues | "quarantining any new snake... isn't optional" | Reptile Quarantine | Added, in the body prose above that KeyTakeaway rather than inside it (no precedent anywhere for a markdown link in that component) |
+| Tank setup | "or about 10% of body weight" | Feeding guide | Added, as the sibling pointer that replaced the diet aside |
+| Feeding | "A healthy adult ball python can go 3-6 months without eating." | Health issues guide | Added |
+| Enrichment | "Two secure hides, one on the warm side and one on the cool side, remain the baseline." | Tank setup guide | Added |
+| Legal | none needed | | |
+| vs Boa | "stay comfortable in roughly a 50-gallon enclosure for the rest of their life." | Tank setup guide | Skipped, linking a page that contradicts the sentence is not the fix; see the enclosure conflict above |
+| vs Corn | "need enclosure humidity in the 55 to 65% range" | Tank setup guide | Skipped, the quoted phrase is AffiliateLink anchor text and the pages agree on the number anyway |
+
+Trust: the reader doubted the 50-gallon claim, the 10 percent body weight
+prey rule, and the three thawing answers, and singled out one line in the
+enrichment guide as an editor's note left in the text, "This is reasoning
+from natural history, and the guide should say so." The sentence that
+most convinced the reader a keeper wrote this, from enrichment: "Keep it
+stable enough that it cannot be tipped, and clean, since a soaking snake
+will also defecate in it."
+
+Reader's two changes: one source of truth for enclosure size, humidity,
+fasting window, feeding interval, and thaw method, with the hub rendering
+from it; then cut the hub to a router. Both are what the router rebuild
+does, except for enclosure size, where the vs boa guide is still the
+outlier.
+
+Not covered anywhere, checked against the Health and More list:
+
+- How to choose a seller and assess a healthy animal before buying.
+- Routine cleaning cadence for an established enclosure, and what
+  disinfectant is safe. The quarantine guide covers end-of-quarantine
+  disinfection only.
+- How to find and vet a qualified reptile veterinarian before you need
+  one.
+- Whether specific morphs carry health problems, given that the cost
+  guide prices them by genetics.
+
+Open, left for Mike: the vs boa enclosure conflict and its affiliate
+product; the encyclopedia's "Wild Lifespan" label and the Least
+Concern line; the enrichment guide's editor's-note sentence.
+
 ## Single-article reads (2026-09-08, text only)
 
 Earlier single-page reads, kept for the record. Grades: tegu handling A-,
