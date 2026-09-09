@@ -198,13 +198,25 @@ catches the defects the commands produce. Per batch:
    verified-correct October 2, 2016, both in the legal guide and the
    encyclopedia) plus two hubs still carrying old FAQs instead of
    verbatim deep-dive copies. Pass grade B-, all fixed on the branch
-   before merge. Next: batch D (green iguana, conure, rat, hermit crab,
-   box turtle), spanning lizards, birds, small mammals, invertebrates,
-   and turtles. None of the 63 remaining legacy species carry a
-   sellable care package (all 13 care-package species are already
-   reconciled across batches A to C plus the ad-hoc set), so batch D is
-   picked on popularity and class spread instead. Then the remaining
-   species, then dogs and cats last. Legacy hubs keep rendering the old
+   before merge. Batch D (green iguana, conure, rat, hermit crab, box
+   turtle) done, checked, and merged to main 2026-09-09 on branch
+   claude/batch-d-opus-agents-7jgjwi: five router hubs, every
+   hub-versus-deep-dive conflict resolved, and four number decisions made
+   against opened sources (LafeberVet and Chicago Exotics on green iguana
+   adult length, Animal Diversity Web on its wild lifespan, PetMD on the
+   rat cage minimum, and for box turtle VCA's 60 F outdoor floor and 90
+   to 100 F basking zone plus Indiana DNR's documented 60-plus year
+   lifespan). Every species finished at pass grade A-. No Fable check ran
+   on batch D by Mike's decision; an extra Opus check took its place, and
+   docs/NOTES.md carries the standing question of whether Fable returns
+   for later batches. Next: batch E (red-eared slider, guppy,
+   blue-tongue skink, hognose snake, White's tree frog), spanning
+   turtles, fish, lizards, snakes, and amphibians, five different classes.
+   None of the 58 remaining legacy species carry a sellable care package
+   (all 13 care-package species are already reconciled across batches A to
+   C plus the ad-hoc set), so batches D and E are picked on popularity and
+   class spread instead. Then the remaining species, then dogs and cats
+   last. Legacy hubs keep rendering the old
    care sheet until then. Rabbit
    difficulty settled at Beginner/Intermediate on the
    site's legend and rabbit lifespan at 8 to 12 years indoors (House
@@ -403,10 +415,15 @@ boa constrictor, african grey, chinchilla, ferret) done, checked, and
 merged to main 2026-09-09 on branch claude/batch-c-setup-kgvj92,
 spanning reptiles, birds, and small mammals rather than staying inside
 one class the way batch B did; pass grade B-, see the species-check
-section of docs/READER_REVIEWS.md for what the check caught. Next up
-is batch D (green iguana, conure, rat, hermit crab, box turtle),
-spanning lizards, birds, small mammals, invertebrates, and turtles.
-None of the 63 species still on the legacy hub carry a sellable care
+section of docs/READER_REVIEWS.md for what the check caught. Batch D
+(green iguana, conure, rat, hermit crab, box turtle) done, checked and
+merged to main 2026-09-09 on branch claude/batch-d-opus-agents-7jgjwi,
+every species at pass grade A-, with an extra Opus check standing in for
+the Fable one. Next up is batch E (red-eared slider, guppy, blue-tongue
+skink, hognose snake, White's tree frog), spanning turtles, fish,
+lizards, snakes and amphibians, five different classes, where batch D
+spanned lizards, birds, small mammals, invertebrates and turtles.
+None of the 58 species still on the legacy hub carry a sellable care
 package (every care-package species is reconciled as of batch C), so
 this batch and the ones after it are picked for popularity and class
 spread rather than the old care-package priority. Paste this with the
