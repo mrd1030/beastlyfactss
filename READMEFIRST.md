@@ -168,10 +168,30 @@ catches the defects the commands produce. Per batch:
    Fable agent covering all five, since the session was pinned to a
    single branch rather than five, so it ran the check once against the
    whole batch instead of once per species); not yet merged to main.
-   Next: batch B (budgie, cockatiel, cockatoo,
-   lovebird, tarantula), then the others. Legacy
-   hubs keep rendering the old care sheet until then. Dogs and cats
-   last. Rabbit difficulty settled at Beginner/Intermediate on the
+   Batch B (budgie, cockatiel, cockatoo, lovebird, tarantula) done and
+   checked 2026-09-09 on branch claude/batch-b-startup-ve7avl; not yet
+   merged. Budgie and cockatiel got the full two-pass treatment with a
+   Fable check each; cockatoo, lovebird, and tarantula got a leaner
+   single-pass treatment (one reader test, fixes folded into one pass)
+   to spend less per species, with one Fable agent covering all three
+   in a single combined check rather than three separate ones, the same
+   cost-saving batch A used for its five-species check. That
+   single-pass-plus-one-combined-check shape worked well enough on cost
+   that it is now the batch prompt's default for every future batch, not
+   just a one-off: one reader pass per species, no second pass unless
+   the check agent's redo verdict calls for one, and one Fable check
+   after all five species are done and pushed rather than one per
+   species. The Fable check also now grades the batch session's own
+   execution, not just the content, so a sloppy pass gets flagged even
+   when every individual fix looks fine. Every reader report and the
+   closing Fable report now get shown to Mike in chat in full as soon
+   as they come back, not just filed and summarized at the end. Next:
+   batch C (corn snake, boa
+   constrictor, african grey, chinchilla, ferret), spanning reptiles,
+   birds, and small mammals since batch B stayed inside birds and one
+   invertebrate. Then the remaining species, then dogs and cats last.
+   Legacy hubs keep rendering the old care sheet until then. Rabbit
+   difficulty settled at Beginner/Intermediate on the
    site's legend and rabbit lifespan at 8 to 12 years indoors (House
    Rabbit Society, VCA, RSPCA), 2026-09-08. Open question Mike has not
    answered: whether the legacy hubs should lose their print button
@@ -344,15 +364,30 @@ dashes:
 ```
 
 
-## The batch prompt, for a fresh session (Sonnet, default effort): five species, one branch each, a Fable check after each
+## The batch prompt, for a fresh session (Sonnet, default effort): five species, one branch, one reader pass each, one Fable check at the end
 
 Replaces the one-species prompt and the separate check session
 (2026-09-08). The worker decides from the sources instead of asking; Mike
 reads the reports afterwards. Batch A (betta-fish, crested-gecko,
 guinea-pig, hamster, russian-tortoise) done and checked 2026-09-08 on
-branch claude/readmefirst-batch-a-9opaeb, not yet merged. Species with a
-care package still to do: budgie, cockatiel, cockatoo, lovebird, tarantula
-(batch B). Paste this with the five species filled in.
+branch claude/readmefirst-batch-a-9opaeb, not yet merged. Batch B
+(budgie, cockatiel, cockatoo, lovebird, tarantula) done and checked
+2026-09-09 on branch claude/batch-b-startup-ve7avl, not yet merged.
+Batch B started as the five-species-five-branches-five-checks shape
+below, then switched mid-batch to one reader pass per species and one
+combined Fable check for the last three species to spend less; that
+worked well enough that it is now the default for every batch, not a
+one-off, and the prompt below reflects it: one reader pass per
+species (a second pass only if the closing Fable check's verdict says
+redo), and the Fable check runs once, after all five species are
+pushed, not once per species. Also new: every reader report and the
+closing Fable check's report get shown to Mike in chat in full, as
+their own message, the moment they come back, not just filed into
+docs/READER_REVIEWS.md and summarized at the end. Next up is batch C
+(corn snake, boa constrictor, african grey, chinchilla, ferret),
+spanning reptiles, birds, and small mammals rather than staying inside
+one class the way batch B did. Paste this with the next five species
+filled in when picking up the remaining care-package species.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
@@ -360,13 +395,17 @@ and Linking sections twice), the "How a test runs" and "What the tests
 changed so far" sections of docs/READER_REVIEWS.md, and the leopard
 gecko, goldfish, and axolotl sections of the same file (they show what
 the check catches). Then do these five species, in this order, one at
-a time, each on its own branch: <species-1>, <species-2>, <species-3>,
+a time, on one shared branch: <species-1>, <species-2>, <species-3>,
 <species-4>, <species-5>. Never merge to main. Do not stop between
 species for my confirmation, and do not ask me questions: decide from
 the sources by the rules below, record the decision, and move on. I
-read the reports afterwards. Two agents at once at most: the reader
-agent while you work, then the Fable check agent after you push. Never
-run npm run build, never take screenshots.
+read the reports afterwards. One reader agent at a time, run in the
+background while you work the current species; do not run a second
+reader pass on a species unless the closing Fable check calls for one.
+Save real money: no Fable agent runs until every species below is
+done and pushed, then exactly one Fable check covers the whole batch
+(see "After all five" below). Never run npm run build, never take
+screenshots.
 
 A separate session added history sections to every encyclopedia entry
 (src/lib/data/encyclopedia/*.js) through batch A; that pass is done.
@@ -387,14 +426,15 @@ entry already does for its own undocumented wild lifespan. Record what
 was found and changed in the review file under "Encyclopedia" either
 way.
 
-Branches. Species 1's branch is claude/hub-<species-1> from main.
-Each later species branches from the previous species' branch head,
-so every branch carries the ones before it and any of them can be
-merged on its own. A branch is pushed twice: once after step 6 (before
-the check) and once after step 8. If the session's context runs low,
-finish the species in progress through step 8, push, write the batch
-report for the species done, and stop; the next session starts this
-prompt again with the species left.
+Branches. One branch for the whole batch, claude/hub-<species-1> from
+main (or whatever branch name the session was actually given; some
+sessions are pinned to a pre-created branch instead of choosing this
+one, follow that instead when it applies). Push after every species'
+step 5, so work is never sitting unpushed. If the session's context
+runs low, finish the species in progress through step 5, push, note
+where the batch stands, and stop; the next session starts this prompt
+again with the species left, then runs the closing Fable check once
+all five are actually done.
 
 Per species:
 
@@ -447,15 +487,17 @@ Per species:
    and run the numbers checker again: no line marked `hub` may disagree
    with a deep dive. Commit: "<Animal> hub: router shape".
 
-3. Review. When the reader returns, paste its raw output into
-   docs/READER_LOG.md under "## <Animal> (date)" and file the review in
-   docs/READER_REVIEWS.md under "## <Animal> (date, first pass)" in the
-   same shape as the leopard gecko and axolotl sections: the grade
-   table, set grade, hub conflicts quoted both sides, deep dives
-   against each other, gaps (checked against the Health and More list
-   before you call one real), stranded questions, the
-   one-link-per-page table, trust, the reader's two changes. Commit:
-   "Reader reviews: <animal> first pass".
+3. Review. When the reader returns, show me its full report in chat,
+   as its own message, before doing anything else with it, every time,
+   not summarized and not folded silently into a commit. Then paste its
+   raw output into docs/READER_LOG.md under "## <Animal> (date)" and
+   file the review in docs/READER_REVIEWS.md under "## <Animal> (date,
+   first pass)" in the same shape as the leopard gecko and axolotl
+   sections: the grade table, set grade, hub conflicts quoted both
+   sides, deep dives against each other, gaps (checked against the
+   Health and More list before you call one real), stranded questions,
+   the one-link-per-page table, trust, the reader's two changes.
+   Commit: "Reader reviews: <animal> first pass".
 
 4. Fixes, in the deep dives only, from the review and the numbers
    checker. Decide every one; nothing waits for Mike.
@@ -520,37 +562,43 @@ Per species:
    changed listed before and after in the commit message, and every
    number decided with both sides and the source that won.
 
-5. Second reader pass. Extract again into a fresh folder and launch
-   one more reader agent, same model, same prompt, on the fixed set.
-   Paste the raw output into docs/READER_LOG.md and file the review in
-   docs/READER_REVIEWS.md under "## <Animal> (date, second pass, after
-   the fixes)", same shape as step 3. Fix anything new under the step 4
-   rules. Commit: "<Animal>: second pass fixes" if anything changed; if
-   nothing needed fixing, say so in the review and skip the commit.
+5. Push the branch (`git push -u origin claude/hub-<species-1>`, or the
+   branch this session was actually given). Then the next species,
+   starting again from step 1. Do not run a second reader pass here by
+   default; that only happens if the closing Fable check's verdict
+   says redo, and only for the species it names.
 
-6. Push the branch (`git push -u origin claude/hub-<species>`).
+After all five species have gone through steps 1 to 5 and are pushed:
 
-7. Check. Launch one Fable agent (the Agent tool, model "fable",
-   run_in_background false, wait for it) with the species check prompt
-   from READMEFIRST, filled in with this species, this branch, and the
-   branch's base commit (main for the first species, the previous
-   branch's head after that). It reads the diff, applies its fixes on
-   this branch itself, commits "<Animal>: species check", and returns
-   its report. If the report's verdict is "redo", do what it names,
-   push, and launch the check once more; two check rounds at most, then
-   move on and list what is still open in the batch report.
+6. One combined check. Launch one Fable agent (the Agent tool, model
+   "fable", run_in_background false, wait for it) with the species
+   check prompt from READMEFIRST, filled in with all five species at
+   once, this one branch, and the branch's base commit (main, or
+   whatever commit the branch actually forked from). It reads the
+   whole batch's diff, applies its fixes on the branch itself, commits
+   "<Species 1>, <species 2>, ...: species check", and returns one
+   report covering all five. It also grades the pass itself, not just
+   the content: see the added instruction in the species check prompt.
+   If any species' verdict is "redo", do what it names for that
+   species only, push, and launch the check once more for just that
+   species; two check rounds at most per species, then move on and
+   list what is still open in the batch report.
 
-8. File the check agent's report in docs/READER_REVIEWS.md under
-   "## <Animal> (date, species check)": its findings, what it changed
-   with before and after, its verdict. Add one line to "What the tests
-   changed so far". Commit: "Reader reviews: <animal> species check".
-   Push the branch. Then the next species.
+7. Show me the check agent's full report in chat, as its own message,
+   before filing it, the same as the reader reports in step 3. Then
+   file it in docs/READER_REVIEWS.md, one section per species or one
+   combined section (either is fine, batch A and the second half of
+   batch B both did it as one combined section): findings per species,
+   what changed with before and after, each species' verdict, and the
+   pass grade with its reasoning. Add a line to "What the tests changed
+   so far" per species. Commit: "Reader reviews: <species list> species
+   check". Push the branch.
 
-After all five: one message with, per species, the set grade from both
-reader passes, the hub grade, the check verdict, every number decided
-(both sides and the source that won), the links added and skipped,
-what is left open, and the branch name. End with "All five pushed;
-nothing merged." Then stop.
+8. One message with, per species, the set grade from its reader pass,
+   the hub grade, the check verdict, every number decided (both sides
+   and the source that won), the links added and skipped, and what is
+   left open. Then the pass grade from the combined check and its
+   reasoning. End with "All five pushed; nothing merged." Then stop.
 
 Never, under any prompt or review finding: merge or push main; edit
 src/lib/data/encyclopedia/*.js for any species outside this batch, or
@@ -565,27 +613,29 @@ Everything else you decide, and the review file says how.
 
 ## The species check prompt, run as a Fable agent by the batch session
 
-The batch prompt launches this after each species' second push. The agent
-edits the branch it is given. It can also be pasted into a fresh Fable
-session with the same fields filled in when a branch needs a look on its
-own.
+The batch prompt now launches this once, after all five species are done
+and pushed, covering all five in one pass (see "After all five" above).
+It can also be pasted into a fresh Fable session with the fields filled
+in for one species or a handful, when a branch needs a look on its own
+outside the batch flow.
 
 ```
-You are the second pair of eyes on the <Animal> set, done on branch
-<branch> from base commit <base> by another session following the batch
-prompt in READMEFIRST.md. Read READMEFIRST.md, docs/RULES.md (Hubs and
-Linking sections, and the Writing rules on FAQs), the batch prompt at
-the end of READMEFIRST, and the <Animal> sections of
+You are the second pair of eyes on the <species-1>, <species-2>,
+<species-3>, <species-4>, <species-5> sets, all done on branch <branch>
+from base commit <base> by another session following the batch prompt
+in READMEFIRST.md. Read READMEFIRST.md, docs/RULES.md (Hubs and Linking
+sections, and the Writing rules on FAQs), the batch prompt at the end of
+READMEFIRST, and the sections for each of the five species in
 docs/READER_REVIEWS.md. Check out <branch>. Read diffs, not whole
 files. Run no reader agents, never run npm run build, never touch
 main. Fix what you find on this branch, then report.
 
 1. Scope. `git log --oneline <base>..<branch>` and
-   `git diff --stat <base>..<branch>`. Any file outside: that species'
-   entry in src/lib/data/guides/*.js, that species' MDX in content/, a
+   `git diff --stat <base>..<branch>`. Any file outside: each species'
+   entry in src/lib/data/guides/*.js, each species' MDX in content/, a
    shared class guide's species row, docs/READER_REVIEWS.md,
    docs/READER_LOG.md, READMEFIRST.md, the SHORT_LABELS line in
-   src/pages/GuideDetail.jsx, and the species' line in
+   src/pages/GuideDetail.jsx, and each species' line in
    src/lib/data/relatedArticles.js is a finding. An encyclopedia edit
    (src/lib/data/encyclopedia/*.js) is in scope only from batch B on,
    only for a species in this batch, and only on a field the review
@@ -594,18 +644,20 @@ main. Fix what you find on this branch, then report.
    sources) rather than trusting the diff alone, and revert anything
    wider (another species, a history section, an untraced change).
 
-2. Hub. `node scripts/check-species-numbers.mjs <species>`: every line
-   marked `hub` must appear, numbers unchanged, in the deep dive its row
-   names. For each firstWeek row, grep its numbers and its key phrases
-   in the source article; a row that merges two source ranges into one,
-   or states a threshold the source does not, is a finding. Count the
-   emergency card bullets against the health guide's call-the-vet list,
-   and check the vetLine keeps the health guide's hedges. Confirm routes
-   cover every own deep dive and nothing shared, the buy list has no
-   prices, the three FAQs are verbatim copies of deep-dive frontmatter
-   FAQs, and difficulty equals the encyclopedia entry's.
+2. Hub, per species. `node scripts/check-species-numbers.mjs <species>`:
+   every line marked `hub` must appear, numbers unchanged, in the deep
+   dive its row names. For each firstWeek row, grep its numbers and its
+   key phrases in the source article; a row that merges two source
+   ranges into one, or states a threshold the source does not, is a
+   finding. Count the emergency card bullets against the health guide's
+   call-the-vet list, and check the vetLine keeps the health guide's
+   hedges. Confirm routes cover every own deep dive and nothing shared,
+   the buy list has no prices, the three FAQs are verbatim copies of
+   deep-dive frontmatter FAQs, and difficulty equals the encyclopedia
+   entry's.
 
-3. Deep dives. `git diff <base>..<branch> -- content/`, every hunk:
+3. Deep dives, per species. `git diff <base>..<branch> -- content/`,
+   every hunk:
    - Edits the prompt did not ask for: a FAQ rewritten with no
      contradiction behind it, a reworded sentence with no number or
      link change, a cut or added paragraph, a Sources or affiliate link
@@ -617,7 +669,7 @@ main. Fix what you find on this branch, then report.
      that went the wrong way, or a same-page copy left behind (FAQ,
      table cell, seoDescription, excerpt, Takeaway, hub copy, a shared
      guide's species row, a vs piece for this species), is a finding.
-   - Links added: at most one per article to the same species' suffix
+   - Links added: at most one per article to that species' suffix
      guides (`grep -o "](/blog/<species>-[a-z-]*-guide/)" | sort |
      uniq -c`), none before the first H2, none inside ComparisonTable
      cells, the sentence about the animal not the site.
@@ -628,27 +680,45 @@ main. Fix what you find on this branch, then report.
      scripts src package.json | tar -x -C <scratch>` and run it there).
      A warning count that went up is a finding, and says which rule.
 
-4. Review file. The species' first pass, second pass, and (after you)
-   species check sections exist in docs/READER_REVIEWS.md, follow the
-   leopard gecko and axolotl shape, quote both sides of each conflict,
-   and their "fixed" notes and counts match what the diff actually did.
+4. Review file. Each species' pass section (and, after you, its species
+   check section) exists in docs/READER_REVIEWS.md, follows the leopard
+   gecko and axolotl shape, quotes both sides of each conflict, and its
+   "fixed" notes and counts match what the diff actually did. A species
+   that only got one reader pass (the new default) needs no second-pass
+   section; do not flag that as missing on its own.
 
-5. Fix every finding on the branch under the batch prompt's rules and
-   its "Never" list. Then the gates on the branch head:
-   check-internal-links, check-related-articles, check-affiliate-mdx,
-   check-cost-coverage, check-seo-tags, check-voice --strict,
-   check-species-numbers for the species, `npx eslint . --quiet`.
-   Commit "<Animal>: species check" with every change listed before and
+5. Grade the pass itself, not just the content. Separately from each
+   species' set grade (which grades the site's writing), give the batch
+   session one grade for how well it executed this process: did it
+   follow the router-hub rules exactly, cite real sources for every
+   number it changed rather than asserting a fix, avoid touching
+   anything outside scope, keep hedges intact, and file the review
+   sections completely and accurately. A session that made a few
+   findings you had to fix here is not automatically a bad grade; a
+   session that skipped steps, faked research, or left the review file
+   inconsistent with the diff is. State the grade (A to F) with the one
+   or two sentences that justify it, the same register as a reader's
+   set grade.
+
+6. Fix every finding on the branch under the batch prompt's rules and
+   its "Never" list. Then the gates on the branch head, once for the
+   whole branch: check-internal-links, check-related-articles,
+   check-affiliate-mdx, check-cost-coverage, check-seo-tags,
+   check-voice --strict, check-species-numbers for each of the five
+   species, `npx eslint . --quiet`. Commit
+   "<species list>: species check" with every change listed before and
    after, and push the branch.
 
-Report, in this order: anything outside scope (file, what was done,
-what you did about it); hub rows that did not match their source (row,
-hub text, source text, the fix); number changes that went against the
-source ranking (both sides, which source, the fix); links that broke a
-limit; date bumps wrong either way; FAQ or sentence rewrites the prompt
-did not ask for (before, after, kept or reverted and why); review-file
-mismatches; gate results. Then one verdict: "clean", "fixed on the
-branch", or "redo" with the one thing the batch session must do
-itself (only for work you cannot do under the Never list, such as a
-figure that needs new research). Nothing merged.
+Report, in this order, per species: anything outside scope (file, what
+was done, what you did about it); hub rows that did not match their
+source (row, hub text, source text, the fix); number changes that went
+against the source ranking (both sides, which source, the fix); links
+that broke a limit; date bumps wrong either way; FAQ or sentence
+rewrites the prompt did not ask for (before, after, kept or reverted
+and why); review-file mismatches; that species' verdict ("clean",
+"fixed on the branch", or "redo" with the one thing the batch session
+must do itself, only for work you cannot do under the Never list, such
+as a figure that needs new research). Then, once, for the whole batch:
+gate results and the pass grade from step 5 with its reasoning.
+Nothing merged.
 ```
