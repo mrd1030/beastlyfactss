@@ -202,71 +202,64 @@ Annual avian veterinary exams including complete blood panel are essential. Find
     image: "/assets/guides/cockatiel.jpg",
     tagline: "The whistling, crested charmer that's the perfect first parrot!",
     funFact: "Cockatiels are masters of mimicry. Males especially love to learn whistled tunes and will serenade you (and any reflective surface) for hours. Many can even learn short phrases!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x30 in cage (larger preferred)", low: 80, high: 160 },
-        { item: "Perches of varied diameters", low: 20, high: 35 },
-        { item: "Food and water dishes", low: 10, high: 20 },
-        { item: "Nightlight (prevents night frights)", low: 10, high: 15 },
-        { item: "Cuttlebone and mineral block", low: 5, high: 10 },
-        { item: "Foraging and shreddable toys", low: 20, high: 40 },
-      ],
-      annual: [
-        { item: "Cockatiel pellets", low: 70, high: 110 },
-        { item: "Fresh vegetables", low: 80, high: 130 },
-        { item: "Toys (rotating)", low: 40, high: 70 },
-        { item: "Annual avian vet check", low: 60, high: 100 },
-      ],
-    },
-    sections: {
-      housing: `A minimum cage of 24x24x30 inches is required for a cockatiel, though 30x24x36 inches or larger is strongly preferred. Cockatiels are active climbers and benefit from vertical space. Bar spacing of 1/2 to 3/4 inch is appropriate - never wider, which risks head entrapment.
-
-Position the cage at eye level, against a wall (for psychological security), away from the kitchen, drafts, and direct sunlight. Kitchen fumes - particularly from overheated non-stick (PTFE/Teflon) cookware - are instantly lethal to all birds. Cooking with non-stick in a home with birds requires replacing non-stick with stainless steel or cast iron.
-
-Provide a variety of perch types and diameters (1/2 to 3/4 inch): natural wood (manzanita, dragonwood, natural branch), rope, and a cement perch for nail maintenance. Varying perch diameter prevents the foot fatigue and pressure sores that occur when birds grip the same diameter all day. Offer a swing - cockatiels frequently sleep on swings.
-
-A nightlight in the bird's room is strongly recommended to prevent night frights (sudden terrified thrashing in complete darkness that can cause injuries). A sleep cage in a quiet room with a consistent 10 to 12 hour dark period supports healthy sleep and hormonal regulation.`,
-      diet: `High-quality cockatiel pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries) should constitute 60 to 70% of a cockatiel's diet. Seed-only diets cause fatty liver disease, vitamin A and D deficiency, and significantly shortened lifespan. The pellet transition from seeds is often a weeks-long process - mix pellets gradually into seed while monitoring weight, and offer both in separate dishes initially.
-
-Fresh vegetables should be offered daily: leafy greens (kale, chard, romaine, dandelion), broccoli, carrots, bell peppers, cooked sweet potato, and snap peas. Rotate variety to provide diverse micronutrients. Many cockatiels initially refuse vegetables - offer consistently, with persistence, alongside their regular food. Eating alongside the bird and pretending to eat the same vegetables often encourages them to try.
-
-Seed mix in small amounts (about 1 teaspoon per day) can serve as enrichment offered in a foraging toy rather than in a dish. Millet spray is a high-value treat to be used sparingly. Provide a cuttlebone and mineral block at all times for calcium and trace minerals - especially important for females who can develop egg-binding without adequate calcium.
-
-Fresh water changed daily (cockatiels frequently bathe in their water dish, contaminating it quickly). A separate shallow bathing dish offered several times per week is appreciated.`,
-      enrichment: `Cockatiels are social, affectionate, and highly communicative birds that need meaningful daily interaction. Plan for a minimum of 2 hours of supervised out-of-cage time in a bird-safe room. A cockatiel that is cage-confined all day will become stressed, loud, and eventually develop behavioral problems or feather destructive behavior.
-
-Male cockatiels are natural musicians - they learn and endlessly perform whistled tunes and songs. Whistling with your cockatiel, playing music, and teaching simple songs are among the most rewarding interactions with this species. Many males also learn phrases and words, particularly in quiet environments where they bond closely with one person.
-
-Provide foraging toys, shreddable toys (paper, palm leaf, soft wood), bells, swings, and a mirror if the bird is kept alone (mirrors provide company but prevent bonding with humans in some individuals). Rotate toys weekly to maintain novelty.
-
-Cockatiels do best with a companion - either another cockatiel or a very attentive human who provides several hours of interaction daily. Solitary cockatiels that receive inadequate social contact develop chronic stress that manifests as excessive screaming, feather problems, and illness.`,
-      health: `Night frights are a distinctive cockatiel health concern: a nocturnal disturbance (a car headlight sweeping across the wall, a loud noise, a moth bumping against the window) causes sudden terrified thrashing and wing-beating in the dark. The bird can injure itself severely on cage bars, perches, and toys. A nightlight prevents night frights by ensuring the bird can orient itself if startled. A calm owner response - quietly turning on a light and speaking soothingly - helps the bird settle.
-
-Respiratory infections present as tail bobbing with each breath, labored breathing, nasal discharge, voice changes, and lethargy. Any difficulty breathing is an avian emergency - birds deteriorate rapidly when respiratory function is compromised. Seek veterinary care the same day.
-
-Egg binding (a retained, stuck, or abnormally positioned egg) is an emergency in female cockatiels. Chronic egg laying exhausts the female's calcium reserves and can cause severe metabolic depletion. Minimize hormonal triggers: 10 to 12 hours of darkness per night, limit handling of the lower back and vent area, remove nesting materials, and do not provide enclosed hiding spaces. A cuttlebone and mineral block provide calcium to support egg shell formation when laying does occur.
-
-Feather destructive behavior and chronic screaming indicate inadequate enrichment, social needs, or medical problems. Annual avian veterinary exams are essential. Cockatiels can live 15 to 25 years with excellent care - this is a genuine long-term commitment.`,
-      checklist: [
-        "Minimum 24x24x30\" cage (larger preferred)",
-        "High-quality cockatiel pellets (Harrison's or Roudybush)",
-        "Fresh vegetables and limited fruit daily",
-        "Variety of natural wood and rope perches",
-        "Cuttlebone and mineral block",
-        "Foraging toys and shreddable toys",
-        "Nightlight (to prevent night frights)",
-        "Misting bottle or shower perch for bathing",
-        "Sleep cover or sleep cage",
-        "Avian veterinarian experienced with parrots",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Day one and power
+    // outage cite the shared bird guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the cockatiel set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV and VCA both put the floor at 30 days, up to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Enclosure", value: "Reference tables put the minimum near 20 by 20 by 30 inches for one bird, and many keepers go to 24 by 24 by 30 for easier movement. Width matters more than height, since cockatiels are horizontal flyers.", source: "cockatiel-tank-setup-guide" },
+        { label: "Bar spacing", value: "Half an inch or smaller. Wider spacing creates a genuine and avoidable risk of head entrapment.", source: "cockatiel-tank-setup-guide" },
+        { label: "Sleep", value: "10 to 12 hours of quiet, dark sleep every night. Cockatiels are prone to night frights, sudden panicked flapping in the dark, so a cage cover or a small night light can help prevent injuries during these episodes.", source: "cockatiel-tank-setup-guide" },
+        { label: "Diet", value: "Pellets should make up roughly 75 to 80% of daily intake, with fresh vegetables and fruit filling another 20 to 25% and seeds kept to a small minority. All-seed diets are a well-documented cause of malnutrition in pet cockatiels.", source: "cockatiel-feeding-guide" },
+        { label: "Feeding style", value: "Free-choice, not scheduled: refresh the base pellet bowl in the morning when they're hungriest and top it up if it empties before evening, it should never sit empty for long.", source: "cockatiel-feeding-guide" },
+        { label: "Handling", value: "Give a new bird 7 to 14 days with no handling attempts. Build trust with treats through the bars, then a hand inside the cage, before offering a flat palm (not a single finger) for step-up training, in sessions of 10 to 15 minutes.", source: "cockatiel-handling-guide" },
+        { label: "Budget", value: "$75 to $250 for the bird, $320 to $860 for a complete starter setup, and $200 to $350 a year after that. An initial or annual avian exam runs $85 to $200; reproductive emergencies like egg binding can run $300 to $800 or more.", source: "cockatiel-cost-guide" },
+        { label: "Adult size", value: "12 to 13 inches (30 to 33 cm) including tail; 2.5 to 3.5 oz." },
+        { label: "Lifespan", value: "10 to 15 years is typical.", source: "cockatiel-cost-guide" },
+        { label: "Zoonotic risk", value: "Psittacosis, caused by Chlamydia psittaci, is zoonotic, meaning it can pass to people in the household.", source: "cockatiel-health-issues-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a small bird carries almost no fat reserve. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "cockatiel-health-issues-guide",
+      callNow: [
+        "Discharge from the eyes, nose, or mouth",
+        "Bleeding",
+        "Changes in droppings",
+        "Sitting on the cage floor instead of perching",
+        "Persistently fluffed feathers",
+        "Tail-bobbing or labored breathing",
+        "Any sudden change in appetite or behavior",
+      ],
+      vetLine: "An avian vet, found before you need one. Cockatiels hide illness so effectively that these signs usually mean the problem is already advanced, so none of them should wait.",
+    },
+    routes: [
+      { slug: "cockatiel-cost-guide", line: "$75 to $250 for the bird, $320 to $860 for a starter setup, and the avian vet cost that catches people off guard." },
+      { slug: "cockatiel-tank-setup-guide", line: "The 20x20x30 minimum, why width beats height, bar spacing, and the kitchen danger worth repeating." },
+      { slug: "cockatiel-handling-guide", line: "Building trust before you touch, the flat-palm step-up, and reading a stressed versus comfortable crest." },
+      { slug: "cockatiel-health-issues-guide", line: "Nutritional disease, reproductive disease, the kitchen danger, and the signs that mean an avian vet now." },
+      { slug: "cockatiel-feeding-guide", line: "Free-choice feeding, the safe and toxic food lists, and six honest reasons a cockatiel stops eating." },
+      { slug: "cockatiel-enrichment-guide", line: "What two real studies found, why foraging comes first, and a priority order for everything else." },
+    ],
+    buyList: [
+      "20x20x30 inch cage or larger, wider rather than taller (24x24x30 for easier movement)",
+      "Perches of varied diameter and texture",
+      "Food and water dishes",
+      "Cuttlebone or mineral block",
+      "Foraging and shreddable toys",
+      "Nightlight or cage cover (night frights)",
+    ],
     faqs: [
-      { q: "Do cockatiels talk or just whistle?", a: "Males are more whistlers than talkers, and many never speak a clear word - but what they do instead is extraordinary. Male cockatiels learn and endlessly perform complex whistled tunes, songs, and melodic phrases with remarkable fidelity. Females very rarely talk or whistle to any significant degree. Males in households where they hear consistent speech can learn words and phrases, particularly if kept as a single bird bonded to one person. The 'Happy Birthday' melody and the Andy Griffith Show theme are infamous for becoming permanent fixtures in many cockatiel households." },
-      { q: "What are night frights in cockatiels?", a: "Night frights are a distinctive cockatiel behavior where a sudden disturbance in darkness - a car headlight sweeping across the wall, a loud noise, a moth hitting the window - triggers terrified, violent thrashing and wing-beating inside the cage. The bird can seriously injure itself on cage bars, perches, and toys. Cockatiels are significantly more prone to this than most parrots. Prevention: a nightlight in the bird's room eliminates the problem almost entirely. Response: calmly turn on a light and speak soothingly until the bird settles." },
-      { q: "How long do cockatiels live?", a: "15 to 25 years with excellent care - a lifespan frequently shortened by seed-only diets, respiratory infections, and untreated illness that could have been caught at an annual avian vet exam. Many cockatiels bought as children's starter pets outlive the child's time at home. This is a legitimate long-term commitment. Establishing an avian veterinary relationship, converting to a pellet-based diet, and committing to the bird's social needs for its entire life are the foundational requirements for a long-lived cockatiel." },
-      { q: "Do cockatiels need a companion?", a: "They benefit significantly from companionship. A bonded pair of cockatiels preens each other, communicates constantly, and shows far greater engagement and activity than a solo bird. A solo cockatiel that receives insufficient daily human interaction develops chronic stress: excessive screaming, feather problems, and immune suppression. The minimum for a solo cockatiel is 2+ hours of direct daily interaction. If your schedule is unpredictable, a bonded pair of cockatiels is the more humane choice." },
-      { q: "What should I do if my female cockatiel keeps laying eggs?", a: "Chronic egg laying is medically serious. Each egg depletes significant calcium reserves, and birds that lay repeatedly without adequate calcium develop metabolic bone disease, muscle weakness, and are at risk of egg binding - a life-threatening emergency. To reduce laying: provide 14 to 16 hours of darkness per night, avoid handling the lower back and vent area (this is a mating trigger), remove all nesting materials and enclosed hiding spaces, and keep a cuttlebone and mineral block available at all times. Consult an avian vet if laying is frequent and persistent." },
+      { q: "How much does a cockatiel cost upfront?", a: "The bird itself runs $75 to $250 depending on color mutation, with normal grey typically the cheapest. A complete starter setup, cage, perches, dishes, and toys, brings most first-time owners to $320 to $860 total." },
+      { q: "What size cage does a cockatiel need?", a: "Reference tables put the minimum near 20 by 20 by 30 inches for one bird, and many keepers go to 24 by 24 by 30 for easier movement. Width matters more than height, since cockatiels are horizontal flyers." },
+      { q: "What symptoms mean I should call an avian vet right away?", a: "Discharge from the eyes, nose, or mouth, bleeding, a change in droppings, sitting on the cage floor instead of perching, feathers fluffed for long stretches, tail-bobbing or labored breathing, or any sudden shift in appetite or behavior. Cockatiels hide illness so effectively that these signs usually mean the problem is already advanced, so none of them should wait." },
     ],
   },
   {
