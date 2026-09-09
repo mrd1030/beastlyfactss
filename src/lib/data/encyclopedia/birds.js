@@ -22,7 +22,7 @@ export const birdEncyclopedia = [
       habitat: "Open grassland, scrubland, and open woodland",
       adultSize: "7 inches (18 cm); 1-1.4 oz",
       wildDiet: "Grass seeds, berries, and plant matter",
-      wildLifespan: "Not well documented in the wild; up to 21 years recorded in captivity",
+      wildLifespan: "Not well documented in the wild; typically 7 to 15 years in captivity, with the oldest documented individual living 29 years, 2 months (Guinness World Records)",
       conservation: "Least Concern (IUCN)",
       history: "George Shaw described the species in 1805, and John Gould gave it the binomial Melopsittacus undulatus in 1840, the same year he carried four live birds home to Britain from his Australian expedition. Most of what Gould brought back survived the voyage only as stuffed specimens; the budgerigar was hardy enough to arrive alive. Aviculturists had it breeding in captivity by the 1850s, and blue birds soon turned up in continental collections, fetching a steep premium once they reached British keepers. The Budgerigar Club formed in 1925 and staged its first show the year after, setting the exhibition standards that produced the heavy show type kept alongside the ordinary pet bird.",
     },
