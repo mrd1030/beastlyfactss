@@ -64,7 +64,7 @@ export const amphibianEncyclopedia = [
       habitat: "Forest, woodland, and near human habitation (attracted to lit areas at night)",
       adultSize: "3-4.5 inches (7-11 cm)",
       wildDiet: "Insects, moths, cockroaches, crickets, and occasionally small lizards",
-      wildLifespan: "7-20 years (up to 21 years recorded)",
+      wildLifespan: "Not well documented in the wild; the quoted figures are captive, an average of about 16 years with one individual recorded at 21 years in human care",
       conservation: "Least Concern (IUCN)",
       history: "The species was the first Australian frog to be described scientifically. John White, a surgeon and naturalist, published it in 1790 in his Journal of a Voyage to New South Wales as Rana caerulea, Latin for blue, because the preserved specimens he shipped to England had turned that color: the frog's green comes from a blue pigment under a yellow layer, and the preservative destroyed the yellow. The type specimen passed into Sir Joseph Banks's collection and was destroyed when the Hunterian Museum in London was bombed during the Second World War. The misleading name has stuck through every later change of genus.",
     },

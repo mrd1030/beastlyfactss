@@ -26,8 +26,8 @@ export const turtleGuides = [
         { label: "Legal", value: "Several states genuinely restrict or ban this outright, and a legally purchased, captive-bred box turtle does not come with zero conditions either: Florida, West Virginia, and a handful of other states attach real caps or paperwork requirements even to turtles you bought fair and square.", source: "box-turtle-legal-guide" },
         { label: "Quarantine", value: "A minimum of six months, kept completely separate from any other chelonian in the house, with lab testing during it. A two or three week quarantine, common advice for other reptiles, is not long enough for this specific disease.", source: "chelonian-herpesvirus-quarantine-guide" },
         { label: "Enclosure", value: "36 by 18 inches is a workable minimum, but larger is considerably better, closer to 5.5 feet by 3 feet for an eastern box turtle, or around 4 feet by 2 feet for the somewhat smaller ornate box turtle. Floor space matters far more than height.", source: "box-turtle-tank-setup-guide" },
-        { label: "Outdoor pen", value: "VCA Animal Hospitals' box turtle housing guidance calls for burying fencing 6 to 12 inches deep around the perimeter, or a solid barrier of brick or rock laid along it as an alternative to buried mesh.", source: "outdoor-reptile-housing-guide" },
-        { label: "Temperature", value: "VCA puts the basking zone at 90 to 100°F and the cooler end at roughly 70 to 75°F, and says extra heat and light are not necessary overnight as long as the enclosure holds 65 to 70°F.", source: "box-turtle-tank-setup-guide" },
+        { label: "Outdoor pen", value: "Bury fencing 6 to 12 inches deep around the perimeter, or lay a solid barrier of brick or rock along it as an alternative to buried mesh.", source: "outdoor-reptile-housing-guide" },
+        { label: "Temperature", value: "Basking zone 90 to 100°F, cooler end roughly 70 to 75°F. Extra heat and light are not necessary overnight as long as the enclosure holds 65 to 70°F.", source: "box-turtle-tank-setup-guide" },
         { label: "Outdoors", value: "Bring a box turtle indoors once the temperature drops below 60°F.", source: "box-turtle-tank-setup-guide" },
         { label: "Humidity", value: "Relatively humid, 60 to 80%. Mist daily and provide a shallow water dish large enough for your turtle to genuinely soak in. Hatchlings and young turtles dehydrate especially easily and need consistently moist substrate.", source: "box-turtle-tank-setup-guide" },
         { label: "Substrate", value: "Wood chips or a topsoil and coconut fiber mix, at least 2 to 3 inches deep to support burrowing. Avoid gravel, sand, additive-laden potting soil, crushed walnut shells, and cat litter entirely.", source: "box-turtle-tank-setup-guide" },
@@ -61,6 +61,7 @@ export const turtleGuides = [
       { slug: "box-turtle-tank-setup-guide", line: "The 36x18 inch minimum and the sizes worth building to instead, the basking and cool-end targets, 60 to 80% humidity, burrowable substrate, T5 HO UVB, and why land and water are both non-negotiable." },
       { slug: "box-turtle-handling-guide", line: "Why this is a limited-handling species, the two-handed support, the hinged plastron that gives the animal its name, telling males from females, and shyness against actual illness." },
       { slug: "box-turtle-health-issues-guide", line: "Metabolic bone disease, vitamin A deficiency and the respiratory infection it sets up, shell rot, internal parasites, and why the annual exam matters on a turtle that looks fine." },
+      { slug: "box-turtle-feeding-guide", line: "The plant and animal split and how it shifts with age, how often an adult eats, the greens to keep off the base, and two calcium schedules." },
       { slug: "box-turtle-enrichment-guide", line: "The study that put 38 eastern box turtles on newspaper or on mulch and measured the difference in their blood, and the priority order it argues for." },
       { slug: "box-turtle-legal-guide", line: "State by state, where a box turtle is banned, capped, or permitted, why captive-bred does not always help, and the conditions that follow a turtle you already own." },
     ],
@@ -90,64 +91,88 @@ export const turtleGuides = [
     image: "/assets/guides/red-eared-slider.jpg",
     tagline: "The iconic pet turtle that grows much larger than the pet store suggests!",
     funFact: "Red-eared sliders are one of the world's most invasive species. Released or escaped pets have established populations on every continent except Antarctica!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "100+ gallon enclosure or pond setup", low: 300, high: 700 },
-        { item: "Powerful canister filter (2-3x tank volume)", low: 120, high: 250 },
-        { item: "Large basking platform", low: 25, high: 50 },
-        { item: "Strong UVB (T5 HO)", low: 60, high: 100 },
-        { item: "Basking heat lamp", low: 20, high: 40 },
-        { item: "Submersible water heater", low: 30, high: 60 },
-        { item: "Water quality test kit", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Commercial turtle pellets", low: 40, high: 80 },
-        { item: "Dark leafy greens", low: 60, high: 100 },
-        { item: "UVB bulb replacement", low: 60, high: 100 },
-        { item: "Filter media replacement", low: 40, high: 80 },
-        { item: "Electricity (filter, heat, lighting)", low: 100, high: 180 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. The cold-water line, the daily
+    // health check, and hygiene cite the shared reptile guides in the
+    // sidebar's Health and More list. Reconciled 2026-09-09 after the
+    // red-eared slider set test (docs/READER_REVIEWS.md). The old hub's
+    // 100-gallon adult minimum, 72 to 78°F water (which disagreed with its
+    // own checklist's 75 to 80°F), every-other-day adult feeding, 50% pellet
+    // share, 20 to 40 year captive lifespan, the glass-approach claim the
+    // enrichment guide argues against, and the cost tables all contradicted
+    // the deep dives; they are gone rather than moved. The old hub's nitrate
+    // ceiling (under 40 ppm) is dropped too: no deep dive and no source on
+    // the site states it.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "Since 1975, the FDA has banned the sale of viable turtle eggs and live turtles with a shell under 4 inches, under 21 C.F.R. § 1240.62. The rule regulates commercial sale and distribution, not private ownership. What restricts red-eared sliders is a patchwork of state invasive-species laws, so check your specific state before you buy.", source: "red-eared-slider-legal-guide" },
+        { label: "Tank size", value: "Roughly 10 gallons of water per inch of shell length is the rule of thumb for an aquatic turtle. In practice that means a practical adult minimum of 75 to 100 gallons for one turtle, with many experienced keepers recommending 100 to 125 gallons or more for better water quality and swimming room.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Water temperature", value: "Water temperature should sit at 72 to 82°F, though stability matters more than hitting an exact number.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Basking temperature", value: "Basking surface temperature should reach 85 to 95°F per that same guidance. Ambient air on the cool side runs mid-70s to low 80s during the day, with a nighttime drop into the mid-60s to mid-70s being acceptable.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Water depth", value: "Water depth should be at least 1.5 to 2 times the shell length, enough for the turtle to right itself if flipped, but not so deep that a weak or sick animal struggles to reach the surface.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "UVB", value: "Mandatory for this species. Sliders fall into Ferguson Zone 3, which puts the target UV index at roughly 2.0 to 3.0 at the basking surface, using a linear T5 HO fluorescent bulb rather than a compact coil bulb, run 10 to 12 hours a day. Replace UVB bulbs on schedule, typically every 6 to 12 months, even if they still visibly light up.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Filtration", value: "Filtration needs to be powerful, sliders produce a lot of waste, and over-filtering, using a canister filter rated well above your actual tank volume, is a common and reasonable recommendation, not overkill.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Water changes", value: "A filter is not a substitute for changing the water. Change the tank water at least once weekly, or more often if it becomes dirty.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Basking platform", value: "The basking platform must allow full drying, not just a place to climb partway out of the water.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Substrate", value: "Many keepers prefer bare bottom, it's the easiest to clean and carries no ingestion risk. Large river rock or gravel bigger than the turtle's head is an acceptable alternative. Avoid fine sand or small gravel entirely, both can be ingested.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Lid", value: "A secure lid matters, red-eared sliders are surprisingly capable climbers and genuine escape artists.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Nesting site", value: "Gravid females need a nesting option, without a suitable place to lay, a female risks egg-binding, a serious complication.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Adult size", value: "Females grow noticeably larger than males, Animal Diversity Web (University of Michigan) puts the average adult female shell at 25.4 cm (about 10 inches) against 17.78 cm (about 7 inches) for males.", source: "red-eared-slider-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Juveniles eat daily, adults move to every 2 to 3 days rather than daily. Offer as much as the turtle can finish in about 15 to 20 minutes, then remove any uneaten food.", source: "red-eared-slider-feeding-guide" },
+        { label: "Diet split", value: "Sliders are omnivores whose protein-to-plant ratio shifts with age, young turtles need proportionally more animal protein, adults shift toward being mostly herbivorous. Adult ratios run from about half protein and half plant down to as little as a quarter protein. Treat the exact split as a guideline; the shift toward plants with age is the part that matters.", source: "red-eared-slider-feeding-guide" },
+        { label: "Feeding in water", value: "Sliders have no salivary glands and can only eat while at least partially submerged, always offer food in the water, never on the basking dock.", source: "red-eared-slider-feeding-guide" },
+        { label: "Supplements", value: "A balanced reptile multivitamin about once a week, plus an added calcium source like a calcium block or cuttlebone about twice a week, is commonly recommended.", source: "red-eared-slider-feeding-guide" },
+        { label: "Brumation", value: "A natural cold-season slowdown, roughly October through March, during which appetite drops even though the turtle stays otherwise responsive. Indoor sliders kept warm often don't fully brumate, so refusal in a consistently warm tank is more likely something else.", source: "red-eared-slider-feeding-guide" },
+        { label: "Handling", value: "Scoop from underneath, supporting the full body and limbs, never grab from above. Support the entire weight of the animal throughout the pickup, a drop can cause serious injury or even be fatal for a turtle this size.", source: "red-eared-slider-handling-guide" },
+        { label: "Cohabiting", value: "Housing multiple sliders without enough space and basking spots leads to aggression, stacking, and injuries between animals.", source: "red-eared-slider-handling-guide" },
+        { label: "Enrichment", value: "Water volume sized for the adult and not for the hatchling comes first, then a dry basking platform with correct heat and UVB, then swimming depth with submerged structure to move around. If your turtle is working the front glass constantly, take the escape-behavior finding seriously before you buy a colored object.", source: "red-eared-slider-enrichment-guide" },
+        { label: "Budget", value: "Roughly $550 to $1,250 or more upfront and roughly $380 to $720 a year. Routine wellness exams often run $80 to $180, and emergency or treatment visits start around $150 to $400 for the exam alone.", source: "red-eared-slider-cost-guide" },
+        { label: "Lifespan", value: "20 to 30 years with good care is the consensus range, with 20 to 25 cited as typical.", source: "red-eared-slider-cost-guide" },
+        { label: "Cold water floor", value: "Water below 65 to 70°F (18 to 21°C) overnight is when bacterial infection risk and appetite loss start.", source: "reptile-emergency-plan-guide" },
+        { label: "Daily health check", value: "A red-eared slider defecates directly into the water it lives in, so judge hydration and gut health by proxy instead: watch water clarity between changes, confirm the turtle is eating and basking normally, and check right after a scheduled water change, when a fresh dropping is briefly visible and easier to actually evaluate.", source: "reptile-stool-urates-hydration-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact with the animal, its enclosure, its water, or anything that's touched either, and never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
-    sections: {
-      housing: `The standard rule for red-eared slider housing is 10 gallons of water capacity per inch of shell length. A 10-inch adult female (females grow significantly larger than males) needs a 100-gallon or larger aquarium or stock tank. Many experienced keepers house adults in outdoor ponds in appropriate climates, which is close to ideal. The pet store 10-gallon starter kits sold with hatchlings are inadequate within months.
-
-A large, elevated basking platform that allows the turtle to completely exit the water and dry off fully is essential. Turtles that cannot dry off completely develop shell rot and skin infections. Position a basking light over the platform to create a basking spot of 85 to 95 degrees F.
-
-Water filtration is critically important. Red-eared sliders are extremely messy - they defecate in the water they eat in. A powerful canister filter rated for 2 to 3 times the tank volume is the minimum. Even with strong filtration, weekly 25 to 30% water changes are required. Water temperature should be maintained at 72 to 78 degrees F with a submersible aquarium heater.
-
-Strong UVB lighting (T5 HO Reptisun 10.0 or equivalent) positioned over the basking platform is mandatory. UVB is essential for vitamin D3 synthesis and calcium metabolism. Without adequate UVB, turtles develop soft shell syndrome and metabolic bone disease over time.`,
-      diet: `A varied, balanced diet is essential for long-term health. High-quality commercial turtle pellets (Mazuri Aquatic Turtle Diet, Zoo Med Natural Aquatic Turtle Food) should form the nutritional foundation - approximately 50% of the diet. These pellets are scientifically formulated to meet the turtle's nutrient requirements.
-
-Supplement with dark leafy greens and aquatic vegetation: romaine lettuce (not iceberg - no nutrition), dandelion greens, kale, water hyacinth, duckweed, and aquatic plants. Plant matter becomes increasingly important as the turtle matures; adult sliders are significantly more herbivorous than juveniles.
-
-Protein supplements include occasional feeder fish (small goldfish, guppies), cooked shrimp, earthworms, and mealworms. Juveniles benefit from more protein; limit protein for adults to prevent kidney stress. Feed juveniles daily and adults every other day.
-
-Calcium supplementation: cuttlebone in the water and calcium-dusted food provides supplemental calcium. Vitamin A deficiency is common in sliders fed primarily pellets without vegetables - dark greens prevent this. Fresh water (changed at water changes) must always be available.`,
-      enrichment: `Red-eared sliders are more intelligent than most people expect and will learn to associate their keeper with feeding time. Many sliders track movement outside their tank and approach the glass when they see their keeper - this is associative learning and a sign of normal, healthy cognitive engagement.
-
-Provide underwater hiding spots: clay pots, PVC pipes, and smooth river rocks create visual cover and security. Vary the substrate (large smooth pebbles or bare bottom - avoid small gravel that can be ingested). Live or plastic aquatic plants provide cover and environmental complexity.
-
-Target training using a small target stick tapped on the glass, with food as a reward, teaches the slider to touch the target voluntarily and can make veterinary handling much easier. Novel foods offered in different locations and ways provide foraging enrichment.
-
-Outdoor pond time or pond housing in appropriate climates provides the richest possible environment: natural sunlight (the most effective UVB source), live aquatic prey, natural plant matter, and environmental complexity that indoor setups cannot replicate.`,
-      health: `Water quality is the single most critical factor in red-eared slider health. Poor water quality causes the majority of health problems in captive sliders: shell rot (bacterial and fungal infection of the shell and skin), respiratory infections, eye infections, and general immune suppression. Test water weekly for ammonia, nitrite, nitrate, and pH. Ammonia and nitrite should always read zero. Nitrate should stay below 40 ppm. Weekly water changes and monthly deep cleans are minimum maintenance.
-
-Shell rot begins as soft, discolored, or pitting areas on the shell. Early detection and treatment (cleaning, antifungal/antibacterial ointment under veterinary guidance, improved water quality, and adequate drying time on the basking platform) can resolve mild cases. Advanced shell rot penetrates the shell and bloodstream and requires aggressive veterinary treatment.
-
-Vitamin A deficiency is common in sliders fed primarily commercial pellets without adequate vegetable variety. Signs include swollen, closed eyes (ear abscesses are a classic presentation), nasal discharge, and lethargy. Treatment requires veterinary vitamin A injection - never self-treat with over-the-counter supplements, as vitamin A overdose is toxic.
-
-Metabolic bone disease from inadequate UVB causes soft shell and skeletal deformities. Annual wellness visits with a reptile vet experienced in chelonians (turtles and tortoises) are strongly recommended.`,
-      checklist: ["100+ gallon enclosure (or pond)", "Powerful canister filter (2 to 3x tank volume)", "Large basking platform", "Strong UVB bulb (T5 HO)", "Basking heat lamp (85 to 95 degrees F)", "Water heater (75 to 80 degrees F)", "Commercial turtle pellets", "Dark leafy greens", "Water quality test kit", "Aquarium vacuum for substrate cleaning"],
+    emergencyCard: {
+      source: "red-eared-slider-health-issues-guide",
+      callNow: [
+        "Difficulty breathing",
+        "Severe lethargy",
+        "An inability to dive or swim properly",
+        "Deep shell lesions",
+        "Large abscesses",
+        "A complete refusal to eat for more than a few days",
+      ],
+      vetLine: "A reptile vet. Respiratory infections can progress quickly, so treat one as urgent and see a reptile vet promptly rather than waiting to see if it resolves, and an aural abscess almost always requires surgical drainage and antibiotics rather than being something that resolves at home. Annual or semi-annual wellness exams catch most of this early.",
     },
+    routes: [
+      { slug: "red-eared-slider-cost-guide", line: "What the turtle costs against what it grows into: the adult-sized setup, the yearly running total, routine and emergency vet prices, and why the lifespan is the real budgeting number." },
+      { slug: "red-eared-slider-tank-setup-guide", line: "The 10 gallons per inch rule and the adult minimum it produces, water and basking temperatures, water depth, Ferguson Zone 3 UVB, substrate, and the filtration that has to keep up." },
+      { slug: "red-eared-slider-handling-guide", line: "Why brief and necessary handling suits this species, the scoop from underneath, the bite and the beak behind it, hand-feeding, and what housing two sliders together costs." },
+      { slug: "red-eared-slider-health-issues-guide", line: "Metabolic bone disease against pyramiding, which are not the same problem, shell rot, respiratory infection, aural abscesses, vitamin A deficiency, and what counts as an emergency." },
+      { slug: "red-eared-slider-feeding-guide", line: "The schedule by age, the portion cue, the protein-to-plant shift no source will put an exact number on, safe and unsafe foods, and seven reasons a slider stops eating." },
+      { slug: "red-eared-slider-enrichment-guide", line: "The pond slider study that measured escape behavior, the priority order it argues for, and why water volume comes before any object you can buy." },
+      { slug: "red-eared-slider-legal-guide", line: "The 1975 federal sale rule that never banned ownership, the states that do restrict one, Colorado's 2026 invasive classification, and why release is illegal nearly everywhere." },
+    ],
+    buyList: [
+      "An adult-sized enclosure or pond setup, planned for the adult rather than the hatchling",
+      "Canister filter rated well above the actual tank volume",
+      "Large basking platform that lets the turtle dry off completely",
+      "Linear T5 HO UVB fixture and bulb",
+      "Basking heat lamp and dome fixture",
+      "Submersible water heater",
+      "Water quality test kit",
+      "A secure lid",
+      "Commercial aquatic turtle pellets and dark leafy greens",
+      "Calcium block or cuttlebone, and a reptile multivitamin",
+    ],
     faqs: [
-      { q: "How big do red-eared sliders get?", a: "Females typically reach 10 to 12 inches shell length; males stay at 6 to 8 inches. This size is dramatically larger than the 4-inch hatchlings sold in pet stores. An adult female slider needs a minimum 100-gallon tank - the 10-gallon starter kits sold with hatchlings become inadequate within months. Research adult size requirements before acquiring any slider." },
-      { q: "How long do red-eared sliders live?", a: "20 to 40 years in captivity with appropriate care - proper water quality, strong UVB, a balanced diet, and regular veterinary attention. This is a multi-decade commitment. Many sliders end up in rescue because their owners underestimated their adult size and lifespan. Outdoor pond housing in appropriate climates is often the best long-term solution for adults." },
-      { q: "What do red-eared sliders eat?", a: "High-quality commercial aquatic turtle pellets should form about 50% of the diet. Supplement with dark leafy greens (romaine, dandelion greens, kale), aquatic plants, and occasional protein (feeder fish, cooked shrimp, earthworms). Juveniles eat more protein; adults become significantly more herbivorous. Feed in the water, where they naturally eat." },
-      { q: "Do red-eared sliders need a filter?", a: "Yes - a powerful one. Red-eared sliders are extremely messy, defecating heavily in the water where they eat. A canister filter rated for 2 to 3 times the tank volume is the minimum. Even with strong filtration, weekly 25 to 30% water changes are required. Poor water quality causes the majority of health problems in captive sliders." },
-      { q: "Are red-eared sliders legal to own?", a: "In many regions yes, but check local regulations carefully. They are one of the world's most invasive species - released or escaped pets have established wild populations on every continent except Antarctica. It is illegal to release them into the wild anywhere in the US. Some areas have restrictions on ownership. Sale of sliders with shells under 4 inches is illegal in the US under federal law." },
-      { q: "Are red-eared sliders good pets for beginners?", a: "Despite being the most commonly sold pet turtle, not really. The 4-inch hatchlings in pet stores grow into 10 to 12 inch adults that need a 100+ gallon setup with serious filtration, and most of the sliders that end up surrendered to rescues got there because an owner didn't expect the adult size or the decades-long lifespan." },
+      { q: "How big of a tank does an adult red-eared slider need?", a: "A practical minimum of 75 to 100 gallons for one turtle, with many experienced keepers recommending 100 to 125 gallons or more. The rule of thumb is roughly 10 gallons of water per inch of shell length, and females, which commonly reach 10 to 12 inches or more, need proportionally more space than males." },
+      { q: "How long do red-eared sliders live, and why does that matter for budgeting?", a: "20 to 30 years is the consensus range, with a handful of far less documented claims reaching 40 to 70 years. This is a multi-decade commitment, and the setup you buy for a palm-sized hatchling needs to work for an animal that will eventually need a 75 to 100-plus gallon home." },
+      { q: "Does the federal 4-inch turtle rule mean it's illegal to own a red-eared slider?", a: "No. The 1975 FDA rule only bans selling turtles with a shell under 4 inches, to cut down on salmonella exposure in young kids. It has never applied to owning one, buying an adult-sized turtle, or keeping one you already have." },
     ],
   },
   {
@@ -269,6 +294,7 @@ Red-footed tortoises do not need to brumate and should not be allowed to get col
       { slug: "russian-tortoise-tank-setup-guide", line: "The real floor target beyond the 8 sq ft minimum, the 95-100°F basking spot, low ambient humidity with a moist hide, and the brumation decision indoor keepers get to make." },
       { slug: "russian-tortoise-handling-guide", line: "Why this is an observation pet, the talented climbing and digging that makes escapes easy, and why males need separate enclosures." },
       { slug: "russian-tortoise-health-issues-guide", line: "Metabolic bone disease, respiratory infection, shell rot, pyramiding, parasites, and the kidney infection specific to this genus." },
+      { slug: "russian-tortoise-feeding-guide", line: "Why grazing and fiber beat a bowl of salad, the calcium ceiling as well as the floor, and the test for a tortoise carrying too much." },
       { slug: "russian-tortoise-enrichment-guide", line: "Deep diggable substrate, scatter feeding over a bowl, and why secure outdoor time is the richest enrichment available." },
     ],
     buyList: [

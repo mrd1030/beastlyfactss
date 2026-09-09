@@ -126,8 +126,17 @@ catches the defects the commands produce. Per batch:
 4. For any new researched text, run one agent that opens every cited URL
    and classifies each claim as supported, unsupported, misattributed, or
    contradicted. Fix everything it finds. Batch 1 needed two rounds.
-5. Read three articles yourself, before and after, as a stranger would.
-6. Commit per batch, push the branch, report, and wait for "merge".
+5. Grep every changed file and every new hub row for source names in the
+   body prose: VCA, Merck, LafeberVet, Lafeber, RSPCA, PetMD, AZA,
+   NASPHV, Smithsonian, Wildwood. The `<Sources>` block is where they
+   belong. Watch the router step especially, since it copies deep-dive
+   wording into hub rows verbatim and will carry a name across with it.
+   Batch D's check graded all five species A- with this defect in every
+   one, because it verified the numbers were right and never asked
+   whether the source name belonged in the sentence. See "The source goes
+   in the block, not the sentence" in docs/RULES.md.
+6. Read three articles yourself, before and after, as a stranger would.
+7. Commit per batch, push the branch, report, and wait for "merge".
 
 ## Next jobs, in order
 
@@ -198,13 +207,64 @@ catches the defects the commands produce. Per batch:
    verified-correct October 2, 2016, both in the legal guide and the
    encyclopedia) plus two hubs still carrying old FAQs instead of
    verbatim deep-dive copies. Pass grade B-, all fixed on the branch
-   before merge. Next: batch D (green iguana, conure, rat, hermit crab,
-   box turtle), spanning lizards, birds, small mammals, invertebrates,
-   and turtles. None of the 63 remaining legacy species carry a
-   sellable care package (all 13 care-package species are already
-   reconciled across batches A to C plus the ad-hoc set), so batch D is
-   picked on popularity and class spread instead. Then the remaining
-   species, then dogs and cats last. Legacy hubs keep rendering the old
+   before merge. Batch D (green iguana, conure, rat, hermit crab, box
+   turtle) done, checked, and merged to main 2026-09-09 on branch
+   claude/batch-d-opus-agents-7jgjwi: five router hubs, every
+   hub-versus-deep-dive conflict resolved, and four number decisions made
+   against opened sources (LafeberVet and Chicago Exotics on green iguana
+   adult length, Animal Diversity Web on its wild lifespan, PetMD on the
+   rat cage minimum, and for box turtle VCA's 60 F outdoor floor and 90
+   to 100 F basking zone plus Indiana DNR's documented 60-plus year
+   lifespan). Every species finished at pass grade A-, and that grade did
+   not hold up: the check confirmed the numbers and never asked whether
+   the source name belonged in the sentence, so it passed source
+   narration through on all five species. The router step then copied it
+   into 28 hub rows that had been clean (turtles 0 to 8, smallMammals 0
+   to 10, amphibians 0 to 4). Fixed 2026-09-09 on the batch D branch,
+   after the merge, so main carries it until that branch lands. The rule
+   was not missing at the time: "cut the site talking about itself" is in
+   the ground rules above. No Fable check ran
+   on batch D by Mike's decision; an extra Opus check took its place, and
+   docs/NOTES.md carries the standing question of whether Fable returns
+   for later batches. Batch E (red-eared slider, guppy, blue-tongue skink,
+   hognose snake, White's tree frog), spanning turtles, fish, lizards,
+   snakes and amphibians, five different classes: written,
+   reader-passed, and species-checked 2026-09-09 on the same branch, not
+   yet merged. Pass grade B. All four of its husbandry number changes
+   held up against opened sources: skink setup $400-800 to $330-635
+   (main's header never matched its own table, the new one sums exactly,
+   and to $430-1,335 with the animal), skink UVB 10.0-12% to 5-12% (both
+   cited sources list Reptisun 5.0 and Arcadia Forest 6% through Desert
+   12%, so the old range excluded the 6% bulb that article's own
+   affiliate link sells), guppy ideal temp 73-79 F to 76-78 F (Aquarium
+   Co-Op gives exactly that), and slider basking 85-90 F to 85-95 F (the
+   LafeberVet aquatic turtle handout gives 85-95 F basking and 72-82 F
+   water). Two apparent losses cleared: the Weinstein & Keyler bite
+   citation was upgraded from a plain-text PubMed ID to a linked DOI, and
+   the removed Zen Habitats source was a bare homepage replaced with the
+   specific care page. Four defects fixed: "faecal" twice in the skink
+   health guide against "fecal" seven times elsewhere in that same set; a
+   White's tree frog ongoing-cost heading claiming $13 to $24 a month
+   while the paragraph under it said substrate and power sit on top; a
+   water-change line naming its source in the sentence; and 13 hub rows
+   carrying the unnamed form of the source habit ("sources give a real
+   range", "most sources recommend", "depending on where you look"). The
+   worst of those was the red-eared slider Diet split row, which narrated
+   the disagreement and gave no ratio at all, so a reader consulting the
+   hub for a protein-to-plant split got a paragraph about sources instead
+   of a number. The router step is where this batch consistently leaked,
+   which is the same finding as batch D.
+   Open, found by the batch E check and not fixed: only 7 of 84 cost
+   guides carry the "Prices last checked <Month Year> at ..." line
+   RULES asks for. Batch D added it to 2 of its 5 species, batch E to
+   none. Writing the line without a real price pass would assert a check
+   nobody performed, so it needs one, and it is a corpus-wide gap rather
+   than a batch E defect.
+   None of the 58 remaining legacy species carry a sellable care package
+   (all 13 care-package species are already reconciled across batches A to
+   C plus the ad-hoc set), so batches D and E are picked on popularity and
+   class spread instead. Then the remaining species, then dogs and cats
+   last. Legacy hubs keep rendering the old
    care sheet until then. Rabbit
    difficulty settled at Beginner/Intermediate on the
    site's legend and rabbit lifespan at 8 to 12 years indoors (House
@@ -403,10 +463,15 @@ boa constrictor, african grey, chinchilla, ferret) done, checked, and
 merged to main 2026-09-09 on branch claude/batch-c-setup-kgvj92,
 spanning reptiles, birds, and small mammals rather than staying inside
 one class the way batch B did; pass grade B-, see the species-check
-section of docs/READER_REVIEWS.md for what the check caught. Next up
-is batch D (green iguana, conure, rat, hermit crab, box turtle),
-spanning lizards, birds, small mammals, invertebrates, and turtles.
-None of the 63 species still on the legacy hub carry a sellable care
+section of docs/READER_REVIEWS.md for what the check caught. Batch D
+(green iguana, conure, rat, hermit crab, box turtle) done, checked and
+merged to main 2026-09-09 on branch claude/batch-d-opus-agents-7jgjwi,
+every species at pass grade A-, with an extra Opus check standing in for
+the Fable one. Next up is batch E (red-eared slider, guppy, blue-tongue
+skink, hognose snake, White's tree frog), spanning turtles, fish,
+lizards, snakes and amphibians, five different classes, where batch D
+spanned lizards, birds, small mammals, invertebrates and turtles.
+None of the 58 species still on the legacy hub carry a sellable care
 package (every care-package species is reconciled as of batch C), so
 this batch and the ones after it are picked for popularity and class
 spread rather than the old care-package priority. Paste this with the

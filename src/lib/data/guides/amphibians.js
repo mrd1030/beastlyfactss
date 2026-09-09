@@ -95,7 +95,7 @@ export const amphibianGuides = [
       annual: [
         { item: "Small live feeder insects", low: 60, high: 110 },
         { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "Dechlorinated/RO water treatment", low: 15, high: 30 },
+        { item: "Dechlorinated water treatment", low: 15, high: 30 },
       ],
     },
     sections: {
@@ -103,7 +103,7 @@ export const amphibianGuides = [
 
 Temperature is critically important: fire-bellied toads prefer 65 to 75 degrees F and are distinctly cool-temperature amphibians. Temperatures above 80 degrees F cause significant and rapid heat stress. In warm climates, keeping them cool requires an air-conditioned room or a small fan directed at the tank. They do not require supplemental heating in most temperate home environments.
 
-Humidity of 70 to 80% is appropriate. The water section naturally maintains this. Mist the land section lightly in the evenings. Use only dechlorinated or reverse-osmosis water for both the water section and misting - frogs absorb everything through their permeable skin.`,
+Humidity of 70 to 80% is appropriate. The water section naturally maintains this. Mist the land section lightly in the evenings. Use only dechlorinated tap water for both the water section and misting, never distilled or reverse-osmosis water, which carries none of the electrolytes an amphibian needs and can be fatal without rebalancing. Frogs absorb everything through their permeable skin.`,
       diet: `Fire-bellied toads eat small live insects. Appropriately-sized crickets (no larger than the space between the toad's eyes) are the most practical staple feeder. Fruit flies are appropriate for juveniles and very small adults. Dubia roaches, small mealworms, and black soldier fly larvae add variety. Waxworms are an occasional treat - too high in fat for regular feeding.
 
 Feed every 2 to 3 days. Dust all feeders with calcium w/D3 powder at every other feeding session, and with a reptile multivitamin once weekly. Gut-load insects 24 to 48 hours before offering: feed the crickets or roaches collard greens, carrot, and commercial gut-load powder so the nutritional value is passed to the toad.
@@ -116,13 +116,13 @@ Provide floating cork bark platforms and submerged branches at different heights
 They are social and do well in same-species groups of 3 to 6 individuals. Their characteristic "unken" warning-display behavior (arching the back to show the red belly) is one of the most distinctive behaviors in amphibian keeping. They live 10 to 15 years with good care, making them a long-term companion species.`,
       health: `Fire-bellied toads produce mild skin toxins (pumiliotoxins) - not dangerous in normal contact, but always wash hands thoroughly after handling and before touching eyes, mouth, or face. They should not be housed with other amphibian species: not with fire-bellied newts (common mistake, different care requirements and potential toxin incompatibility), not with tree frogs, and not with any species that might be a prey item.
 
-Water quality is the primary health variable. The aquatic section must be filtered and changed regularly: perform 25% water changes weekly using dechlorinated or RO water. Dirty water causes red-leg syndrome (bacterial infection causing redness, lethargy, and ulceration of the legs and belly). Treat red-leg under veterinary guidance with antibiotics and improved water quality.
+Water quality is the primary health variable. The aquatic section must be filtered and changed regularly: perform 25% water changes weekly using dechlorinated tap water. Dirty water causes red-leg syndrome (bacterial infection causing redness, lethargy, and ulceration of the legs and belly). Treat red-leg under veterinary guidance with antibiotics and improved water quality.
 
 Chytrid fungus (Bd) quarantine protocols apply to all new animals: quarantine any new toad for 30 to 60 days in a separate enclosure before introduction. Watch for lethargy, excessive skin shedding, and loss of appetite as early illness signs. An exotic/amphibian vet should be identified before acquiring this species.`,
       checklist: [
         "20-gallon paludarium (land and water sections)",
         "Aquarium filter for water section",
-        "Dechlorinated or RO water only",
+        "Dechlorinated tap water only",
         "Moist coconut fiber and moss on land section",
         "Live or quality artificial plants",
         "Cork bark for basking",
@@ -137,7 +137,7 @@ Chytrid fungus (Bd) quarantine protocols apply to all new animals: quarantine an
       { q: "What is the unken reflex?", a: "The unken reflex (Unkenreflex in German, where the behavior was first scientifically named) is the defensive posture fire-bellied toads perform when threatened: they arch their back upward and flip their feet and hands outward to expose the bright red and black warning coloration on their belly. This is a textbook example of aposematism - advertising toxicity through conspicuous coloration. It tells predators 'I taste terrible and will make you sick.' A fire-bellied toad performing the unken reflex in captivity usually means it has been startled by a sudden reach or movement." },
       { q: "What temperature do fire-bellied toads need?", a: "65 to 75 degrees F is the ideal range - they are distinctly cool-temperature amphibians. Temperatures above 80 degrees F cause rapid and serious heat stress: hyperactivity, labored breathing, attempting to climb out of the enclosure, and deteriorating health. In warm climates, keeping fire-bellied toads requires either air conditioning or a cool basement. They typically do not need supplemental heating in temperate home environments. Never use under-tank heaters, heat lamps, or place the enclosure in direct sunlight." },
       { q: "Can fire-bellied toads be kept in groups?", a: "Yes - they are one of the few social frog species that genuinely benefit from group housing. A group of 3 to 6 same-species individuals in a proper paludarium setup is natural and engaging. Do not mix them with other frog or amphibian species: not with fire-bellied newts (common mistake, different care requirements and potential toxin incompatibility), not with tree frogs, not with any species that could be perceived as prey or competition. Within-species, same-size groups are stable and actively enjoyable to observe." },
-      { q: "How long do fire-bellied toads live?", a: "10 to 15 years with proper care - a significantly longer lifespan than many keepers expect. The key factors for longevity are: consistent cool temperature (never above 80°F), pristine water quality in the aquatic section (25% water changes weekly using dechlorinated or RO water), a varied gut-loaded insect diet with calcium supplementation, and prompt attention to any signs of red-leg syndrome or other illness. Annual exotic vet checkups are worthwhile given their long potential lifespan." },
+      { q: "How long do fire-bellied toads live?", a: "10 to 15 years with proper care - a significantly longer lifespan than many keepers expect. The key factors for longevity are: consistent cool temperature (never above 80°F), pristine water quality in the aquatic section (25% water changes weekly using dechlorinated tap water), a varied gut-loaded insect diet with calcium supplementation, and prompt attention to any signs of red-leg syndrome or other illness. Annual exotic vet checkups are worthwhile given their long potential lifespan." },
     ],
   },
   {
@@ -177,7 +177,7 @@ Gut-load all feeder insects 24 to 48 hours before offering. Remove uneaten prey 
 Provide a small, shallow water dish large enough to soak in, and a hide for when the frog is not buried. Some leaf litter on the substrate surface adds natural texture and aesthetics. The frog will rearrange and bury through it naturally.
 
 Observe rather than handle. Pacman frogs are display animals - watching them hunt prey and seeing them emerge during their active periods (usually at night) is the primary enrichment for the keeper. Handle very minimally and only with feeding tongs within arm's reach at all times. Their bite can draw blood and they hold on tenaciously.`,
-      health: "Toxic out syndrome (TOS): this happens when a Pacman frog is kept on unsafe substrate (gravel, artificial turf with dyes, paper towels with chemicals). The frog absorbs toxins through the skin, causing neurological symptoms (spinning, thrashing, paralysis). Only use chemical-free substrates. Metabolic bone disease from lack of supplementation causes jaw deformities over time. Red-leg syndrome (bacterial infection) results from unsanitary water. Change the substrate monthly and use only dechlorinated or RO water.",
+      health: "Toxic out syndrome (TOS): this happens when a Pacman frog is kept on unsafe substrate (gravel, artificial turf with dyes, paper towels with chemicals). The frog absorbs toxins through the skin, causing neurological symptoms (spinning, thrashing, paralysis). Only use chemical-free substrates. Metabolic bone disease from lack of supplementation causes jaw deformities over time. Red-leg syndrome (bacterial infection) results from unsanitary water. Change the substrate monthly and use only dechlorinated tap water, never distilled or reverse-osmosis water, which lacks the electrolytes an amphibian needs.",
       checklist: [
         "10 to 20 gallon terrarium",
         "3 to 4 inch deep damp coconut fiber or organic topsoil substrate",
@@ -185,7 +185,7 @@ Observe rather than handle. Pacman frogs are display animals - watching them hun
         "Calcium w/D3 + multivitamin supplements",
         "Gut-loaded live insects (dubia, crickets, earthworms)",
         "Feeding tongs (mandatory, they bite hard)",
-        "Dechlorinated or RO water for substrate moisture and dish",
+        "Dechlorinated tap water for substrate moisture and dish",
         "Small shallow water dish",
         "Low-wattage heat lamp or under-enclosure mat with thermostat",
         "Monthly full substrate replacement",
@@ -221,7 +221,7 @@ Observe rather than handle. Pacman frogs are display animals - watching them hun
       annual: [
         { item: "Nightcrawlers, crickets, and dubia roaches", low: 70, high: 130 },
         { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "Dechlorinated/RO water treatment", low: 15, high: 30 },
+        { item: "Dechlorinated water treatment", low: 15, high: 30 },
         { item: "Annual vet check (exotic/amphibian)", low: 50, high: 90 },
       ],
     },
@@ -241,7 +241,7 @@ Feed juveniles every other day, adults 2 to 3 times per week. Prey should be no 
 Provide burrowing substrate deep enough to disappear completely. Varied hides at the surface (cork bark, flat stones, commercial reptile hides) supplement the burrowing option and allow the salamander to choose its comfort level. A shallow soaking dish large enough for the whole body is important - tiger salamanders soak regularly, especially before and after shedding.
 
 Handle with clean, slightly damp, chemical-free hands only. They tolerate brief, calm handling better than most salamander species. Keep sessions short (under 10 minutes) and allow the salamander to move voluntarily rather than restraining it. Observe for stress signs: rapid or labored breathing, excessive squirming, or mucus secretion indicate the salamander should be returned to its enclosure.`,
-      health: `The most pervasive health risk for tiger salamanders - and all amphibians - is chemical exposure through their highly permeable skin. Never handle after applying lotion, sunscreen, insect repellent, or hand sanitizer. Even trace amounts of these substances are toxic. Always rinse and dampen hands with dechlorinated or RO water immediately before handling. Use only dechlorinated or RO water for the soaking dish and substrate misting - tap water chlorine is absorbed directly through the skin.
+      health: `The most pervasive health risk for tiger salamanders - and all amphibians - is chemical exposure through their highly permeable skin. Never handle after applying lotion, sunscreen, insect repellent, or hand sanitizer. Even trace amounts of these substances are toxic. Always rinse and dampen hands with dechlorinated tap water immediately before handling. Use only dechlorinated tap water for the soaking dish and substrate misting, never distilled or reverse-osmosis water, which carries none of the electrolytes an amphibian needs. Tap water chlorine is absorbed directly through the skin, which is what dechlorinating removes.
 
 Chytrid fungus (Bd) is the most serious amphibian disease globally and is present in wild populations. Quarantine any new salamander for 30 to 60 days in a separate enclosure before introducing it near other amphibians. Watch for lethargy, reddening of the skin (especially the underside and limbs), excessive skin shedding, loss of righting response, and refusal to eat as symptoms of Bd or other illness.
 
@@ -255,7 +255,7 @@ Annual health checks with an exotic or amphibian veterinarian are strongly recom
         "Calcium w/D3 + reptile multivitamin",
         "Gut-loaded live insects and nightcrawlers",
         "Feeding tongs",
-        "Dechlorinated or RO water only",
+        "Dechlorinated tap water only",
         "Exotic/amphibian vet contact",
       ],
     },
@@ -277,54 +277,78 @@ Annual health checks with an exotic or amphibian veterinarian are strongly recom
     image: "/assets/guides/whites-tree-frog.jpg",
     tagline: "The chubby, chilled-out tree frog with a permanent smile and incredible tolerability!",
     funFact: "White's tree frogs are also called 'dumpy tree frogs' because they develop adorable fat rolls (parotoid glands and lipid ridges) as adults. These rolly features are a sign of a well-fed, healthy frog, not obesity!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "18x18x24 in+ arboreal terrarium", low: 100, high: 200 },
-        { item: "Broad-leafed plants or artificial foliage", low: 25, high: 45 },
-        { item: "Cork bark and PVC pipe hides", low: 15, high: 30 },
-        { item: "Low-output UVB (T5 HO 5%)", low: 45, high: 80 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Gut-loaded live insect feeders", low: 80, high: 150 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 45, high: 80 },
-        { item: "Dechlorinated/RO water treatment", low: 15, high: 30 },
-      ],
-    },
-    sections: {
-      housing: "A tall 18x18x24 inch or larger arboreal terrarium suits one to two adults. Provide plenty of broad-leafed plants or artificial foliage, cork bark, and PVC pipe sections for perching and hiding. These frogs like to perch up high during the day. Temperature should stay between 75 and 85 degrees F during the day, dropping to 65 to 75 degrees F at night. Never let temperatures exceed 90 degrees F. A low-output UVB (T5 HO 5% or Zoo Med 5.0 compact) is now strongly recommended by amphibian veterinarians and improves bone density and health outcomes. Humidity should be maintained at 50 to 70% during the day and 80 to 100% at night (mist in the evening to simulate natural humidity cycles).",
-      diet: `White's tree frogs are insectivores. Feed live insects sized appropriately - no wider than the space between the frog's eyes. Dubia roaches are an excellent staple. Crickets, hornworms, silkworms, and black soldier fly larvae provide variety and different nutritional profiles. Waxworms are extremely high in fat and should be used only as occasional treats.
-
-Adults eat every other day to 3 times per week. Juveniles eat daily. Gut-load all insects 24 to 48 hours before offering - feed them collard greens, carrot, sweet potato, and commercial gut-load powder so the frog receives that nutrition. Dust feeders with calcium w/D3 at every other feeding and a reptile multivitamin once weekly.
-
-Always use dechlorinated or reverse-osmosis water for the water dish and for misting. Tap water treated with a reptile dechlorinator (not just a generic aquarium dechlorinator) is appropriate. Frogs absorb everything through their skin - water quality matters as much as food quality.`,
-      enrichment: `White's tree frogs are one of the most handleable amphibian species. They are notably calm, curious, and tolerant of gentle interaction. Handle with clean, slightly damp hands - never with dry hands or hands that have any residue of soap, lotion, hand sanitizer, or any chemical. Frogs absorb substances through their skin and even trace amounts of common household chemicals are toxic to them.
-
-Allow the frog to climb voluntarily onto your hand rather than grabbing it. Most White's tree frogs sit contentedly on hands, fingers, and shoulders and rarely make sudden jumps. They are most active and alert in the evening - plan handling sessions at dusk for the most relaxed interactions.
-
-Provide broad-leafed plants or quality artificial foliage at different heights, cork bark, PVC pipe sections, and a shallow water dish. Rotate the positions of enrichment items occasionally to provide environmental novelty. Evening misting creates the rain-like conditions that trigger natural activity.`,
-      health: "The most common health issues are chytridiomycosis (Bd fungus, a devastating amphibian disease preventable through quarantine and hygiene), red-leg syndrome (bacterial infection causing redness on the legs, from poor water quality or substrate), and obesity from overfeeding waxworms. Never handle a frog immediately after using hand sanitizer, lotion, or any chemical. Always use dechlorinated or RO water for misting and water dishes. Quarantine any new frog for 30 to 60 days before introducing it near other amphibians.",
-      checklist: [
-        "18x18x24 inch+ arboreal terrarium",
-        "Coconut fiber or bioactive substrate",
-        "Broad-leafed plants or quality artificial foliage",
-        "Cork bark and PVC pipe hides",
-        "Low-output UVB (T5 HO 5%) strongly recommended",
-        "Digital thermometer and hygrometer",
-        "Automatic mister or evening misting routine",
-        "Calcium w/D3 + reptile multivitamin",
-        "Gut-loaded live insect feeders",
-        "Dechlorinated or RO water only (misting and dishes)",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Quarantine, the water rule, the
+    // container-not-a-net move, and hygiene cite the shared amphibian and
+    // reptile guides in the sidebar's Health and More list. Built 2026-09-09 for
+    // the White's tree frog set test (docs/READER_REVIEWS.md), which found the
+    // old hub telling readers to mist with reverse-osmosis water while the tank
+    // setup guide told them never to; the deep dive was right and the hub's
+    // instruction is gone.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure size", value: "18 inches long by 18 inches wide by 24 inches tall is the standard minimum for one adult, sized for a vertical, arboreal species. A 20-gallon-equivalent enclosure is comfortable for a single frog, and 24x18x24 inches works well for a small group of two to four.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "Temperature", value: "Keep a gradient: cool side around 70 to 75°F, a basking area around 80 to 85°F, dropping into the mid-70s at night. This species doesn't need intense heat, just a gentle, reliable gradient.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "Humidity", value: "A baseline around 50 to 60% with misting spikes up to 70 to 80% once or twice daily, then letting it drop back down between mistings. Constant, unbroken high humidity is directly linked to bacterial and red-leg issues.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "Water", value: "Use only dechlorinated tap water or spring water for misting and drinking, never distilled or reverse-osmosis water.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "Why not RO or distilled", value: "Distilled and RO water are usually not electrolyte-balanced and can be fatal to an amphibian without rebalancing with buffers, electrolytes, and pH adjustment. Dechlorinated tap water, checked with a test kit, is the more practical starting point for most home keepers.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Substrate", value: "Coarse orchid bark, coco fiber or coco husk, or a bioactive soil mix, kept lightly moist rather than soggy. Avoid fine, loose substrate that's easy to accidentally ingest during feeding.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "UVB", value: "Low-level UVB is recommended, this species survives without it but genuinely does better with it. A low-output T5 bulb in the 5 to 7% range works well, positioned so the basking branch sits at least 6 inches below the fixture, and the bulb gets replaced every 9 to 12 months on a schedule, regardless of whether it still looks like it's working.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "Feeding", value: "Keep adult feeding to roughly 3 to 4 appropriately sized insects, 2 to 3 times a week, rather than free-feeding, and limit high-fat feeders like waxworms and superworms to once a week at most.", source: "whites-tree-frog-health-issues-guide" },
+        { label: "Obesity check", value: "Fat deposits build up visibly over the tympanum (the external eardrum) and in the armpit area. The line between the breed's natural \"dumpy\" look and genuine obesity comes down to fat visibly bulging over the tympanum and armpits, not the frog's general roundness.", source: "whites-tree-frog-health-issues-guide" },
+        { label: "Handling", value: "Keep sessions short, roughly 5 to 15 minutes, and don't handle more than about twice a week. Wash your hands thoroughly with plain water only, no soap, immediately before handling, or wear powder-free nitrile gloves lightly wetted with dechlorinated water.", source: "whites-tree-frog-handling-guide" },
+        { label: "Cover", value: "Live planting with broad leaves at several heights, so a frog can sit supported and out of sight at any level. If the frog is always immediately visible, there is not enough in there.", source: "whites-tree-frog-enrichment-guide" },
+        { label: "Group housing", value: "They tolerate company well and can be kept in groups, provided every animal is a similar size. A White's tree frog will swallow anything that fits, including a smaller frog, and a mixed-size group is a feeding accident waiting to happen.", source: "whites-tree-frog-enrichment-guide" },
+        { label: "Budget", value: "$20 to $60 for a standard animal, most complete setups landing in the $200 to $400 range, and roughly $13 to $24 a month in consumables after that, before substrate and power.", source: "whites-tree-frog-cost-guide" },
+        { label: "Vet costs", value: "An exotic or amphibian-experienced vet exam commonly runs $50 to $150. A dedicated exotic emergency visit fee alone often starts around $250 at specialty hospitals, before any treatment.", source: "whites-tree-frog-cost-guide" },
+        { label: "Lifespan", value: "The average lifespan is about 16 years, with one individual recorded living 21 years in human care. More conservative figures put it at 10 to 15-plus years with excellent care.", source: "whites-tree-frog-cost-guide" },
+        { label: "Adult size", value: "3 to 4.5 inches (7 to 11 cm)." },
+        { label: "Quarantine", value: "Six to eight weeks is typically adequate for a new amphibian. Zoo and aquarium practice runs a 30-day minimum with 60 days preferred before release from quarantine. The clock should reset, not just pause, if the animal shows any illness partway through.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Moving a new arrival", value: "A container, not a net. Move the animal with some of its own tank water into a small, clear, water-tight container, which lets you view it from any angle without ever needing to touch it directly or force it through mesh.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Hygiene", value: "A completely healthy-looking reptile or amphibian can carry and shed Salmonella with no outward sign of illness at all, and the route is hands and surfaces to mouth rather than bites. The CDC's wording is that children younger than 5 years old should not handle or touch reptiles or amphibians or their environments.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
+    emergencyCard: {
+      source: "whites-tree-frog-health-issues-guide",
+      callNow: [
+        "Lethargy and weight loss, especially in a new or suspect animal (chytridiomycosis). This is a genuine emergency, quarantine any new or suspect animal immediately and get to a vet right away",
+        "Redness on the belly and legs, lethargy, and loss of appetite (red-leg syndrome). This needs a vet",
+        "Signs of a bacterial or skin infection, which enclosures kept too humid without adequate ventilation invite. Always see a vet if signs appear",
+        "Inadequate calcium supplementation or missing UVB catching up with the frog (metabolic bone disease). This needs a vet",
+        "Advanced obesity with liver involvement. Advanced cases with liver involvement need a vet",
+      ],
+      vetLine: "An exotic or amphibian-experienced vet, found before you need one. Amphibian veterinary care has real limitations, and prevention through correct husbandry does more work here than treatment ever will.",
+    },
+    routes: [
+      { slug: "whites-tree-frog-cost-guide", line: "The frog at $20 to $60, a $200 to $400 setup, the recurring lines that add up to $13 to $24 a month, and what a 16-year average lifespan does to the budget." },
+      { slug: "whites-tree-frog-tank-setup-guide", line: "The 18x18x24 minimum, the temperature gradient, the humidity that dips instead of sitting high, substrate, UVB, and the water that is safe to mist with." },
+      { slug: "whites-tree-frog-handling-guide", line: "Why plain water beats soap, when gloves are the safer option, how long a session runs, and why the risk points at the frog rather than at you." },
+      { slug: "whites-tree-frog-health-issues-guide", line: "Obesity as the signature risk, chytridiomycosis, red-leg syndrome, bacterial and skin infections, metabolic bone disease, and the husbandry pattern behind all of them." },
+      { slug: "whites-tree-frog-feeding-guide", line: "The insects worth offering, how often by size and age, gut loading and dusting, and the ridge test that says whether the frog is too heavy." },
+      { slug: "whites-tree-frog-enrichment-guide", line: "The red-eyed tree frog plant study and what it actually measured, dense layered planting, broad perches near the top, prey released into cover, and the one rule for group housing." },
+    ],
+    buyList: [
+      "18x18x24 in+ arboreal terrarium (24x18x24 for a small group of two to four)",
+      "Coarse orchid bark, coco husk, or a bioactive soil mix",
+      "Broad-leafed live plants, with artificial foliage filling out the dense parts",
+      "Cork bark and PVC pipe hides",
+      "Sturdy climbing branches and broad leaves or platforms, mounted high",
+      "Shallow water dish that's easy to keep clean",
+      "Low-output UVB (T5 HO in the 5 to 7% range)",
+      "Low-wattage bulb or side-mounted heat mat",
+      "Digital thermometer and hygrometer",
+      "Water conditioner/dechlorinator",
+      "Calcium w/D3 and a reptile multivitamin",
+      "Gut-loaded live insect feeders",
+    ],
     faqs: [
-      { q: "Are White's tree frogs' fat rolls normal?", a: "Yes - the fat ridges (lipid reserves and parotoid gland folds) that develop on well-fed adult White's tree frogs are completely normal and are actually a sign of a healthy, thriving animal. They are often called 'dumpy tree frogs' precisely because of these characteristic rolls. True obesity in White's tree frogs comes from overfeeding waxworms and other high-fat insects, and presents as a dramatically swollen, pendulous abdomen rather than simply the natural folds that develop with age and good nutrition." },
-      { q: "How long do White's tree frogs live?", a: "15 to 20 years with excellent care - one of the longer lifespans in the pet frog hobby. The keys to reaching this lifespan are: a varied diet of gut-loaded live insects with proper calcium supplementation, UVB lighting (strongly recommended by amphibian vets), consistent humidity cycling, and dechlorinated water for all contact. Frogs that develop metabolic bone disease from insufficient calcium or UVB rarely reach their potential lifespan." },
-      { q: "Can White's tree frogs be handled?", a: "Yes - they are one of the most handleable amphibian species available. They are calm, curious, and tolerant of gentle interaction in a way that most frog species are not. The mandatory rule is: always handle with clean, slightly damp, chemical-free hands. Even trace amounts of soap, lotion, hand sanitizer, or sunscreen absorbed through their permeable skin are toxic. Rinse hands with dechlorinated water before every session. Evening is the best time as they are naturally active and most relaxed then." },
-      { q: "What should White's tree frogs eat?", a: "Live insects sized no wider than the space between the frog's eyes. Dubia roaches are the best staple - nutritionally excellent and easy to gut-load. Crickets, hornworms, silkworms, and black soldier fly larvae provide variety. Waxworms are extremely high in fat and should be used only as rare treats. Gut-load all insects 24 to 48 hours before feeding (collard greens, carrot, commercial gut-load powder). Dust with calcium w/D3 at every other feeding and a multivitamin once weekly." },
-      { q: "Do White's tree frogs need UVB lighting?", a: "UVB is now strongly recommended by amphibian veterinarians, even though White's tree frogs are nocturnal. Field studies show they receive measurable UV exposure during dawn/dusk activity periods. A low-output T5 HO 5% or Zoo Med 5.0 compact bulb positioned appropriately within or above the enclosure meaningfully improves bone density, calcium metabolism, and immune function. This is one of the most impactful single care upgrades for long-term frog health - the evidence for amphibian UVB benefits has grown significantly in recent years." },
+      { q: "What humidity level is correct for a White's tree frog?", a: "Hold a baseline of 50 to 60% and let misting push it to 70 to 80% once or twice a day, then let it fall. Humidity that never drops is linked to bacterial and red-leg issues, so damp around the clock is the thing to avoid." },
+      { q: "How long do White's tree frogs live, and how does that affect budgeting?", a: "The average is about 16 years, and one individual reached 21 in human care. More conservative figures run 10 to 15-plus years. Either way, plan on well over a decade of ongoing care." },
+      { q: "Is it safe to handle a White's tree frog?", a: "Yes, more so than the great majority of frog and toad species kept as pets. They're docile, slow-moving, and tolerate handling well once they're used to it. The risk isn't the frog hurting you, it's accidentally harming the frog through chemical exposure on your hands." },
     ],
   },
 ];

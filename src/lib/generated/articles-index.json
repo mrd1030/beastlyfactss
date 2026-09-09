@@ -69,7 +69,7 @@
     {
       "slug": "ackie-monitor-handling-guide",
       "title": "How to Handle an Ackie Monitor Safely",
-      "excerpt": "Ackie monitors are a different kind of lizard to interact with compared to the sit-and-bask species already covered on",
+      "excerpt": "Ackie monitors are a different kind of lizard to interact with compared to the sit-and-bask lizards most keepers start",
       "date": "2026-07-16",
       "image": "/assets/images/ackie-monitor-handling.jpg",
       "category": "Reptiles",
@@ -179,7 +179,7 @@
     {
       "slug": "african-grey-parrot-cost-guide",
       "title": "African Grey Price: $1,000 to $4,000, Plus $500+ Setup",
-      "excerpt": "African grey parrots are one of the most expensive pets covered on this site, and the purchase price is just the entry",
+      "excerpt": "An African grey parrot is an expensive bird to buy, and the purchase price is just the entry fee for a decades-long",
       "date": "2026-07-17",
       "image": "/assets/images/african-grey-parrot-cost.jpg",
       "category": "Birds",
@@ -470,7 +470,7 @@
     {
       "slug": "argentine-tegu-cost-guide",
       "title": "Argentine Tegu Price: $200 to $1,200, Plus $1,000+ Setup",
-      "excerpt": "Argentine tegus are one of the more expensive lizards on this site to set up properly, a direct consequence of just how",
+      "excerpt": "Argentine tegus are one of the more expensive lizards in the pet trade to set up properly, a direct consequence of just",
       "date": "2026-07-24",
       "image": "/assets/images/argentine-tegu-cost.jpg",
       "category": "Reptiles",
@@ -525,7 +525,7 @@
     {
       "slug": "argentine-tegu-tank-setup-guide",
       "title": "Argentine Tegu Enclosure Setup Guide",
-      "excerpt": "Argentine tegu husbandry operates at a different scale than every other lizard covered on this site, this is a big",
+      "excerpt": "Argentine tegu husbandry operates at a different scale than most pet lizards, this is a big bodied, high energy animal,",
       "date": "2026-07-24",
       "image": "/assets/images/argentine-tegu-tank-setup.jpg",
       "category": "Reptiles",
@@ -1176,7 +1176,7 @@
     },
     {
       "slug": "blue-tongue-skink-cost-guide",
-      "title": "Blue Tongue Skink Price: $100 to $700+, Setup $400 to $800",
+      "title": "Blue Tongue Skink Price: $100 to $700+, Setup $330 to $635",
       "excerpt": "Blue-tongued skinks split into two very different price and risk categories depending on where they come from, Northern",
       "date": "2026-07-13",
       "image": "/assets/images/blue-tongue-skink-cost.jpg",
@@ -1363,6 +1363,17 @@
       ]
     },
     {
+      "slug": "box-turtle-feeding-guide",
+      "title": "What Do Box Turtles Eat? Diet, Portions, Calcium",
+      "excerpt": "A box turtle starts life as a hunter and finishes it mostly eating plants, which means the diet that keeps a hatchling",
+      "date": "2026-09-18",
+      "image": "/assets/images/box-turtle-feeding.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "box-turtle-handling-guide",
       "title": "How to Handle a Box Turtle Safely",
       "excerpt": "Box turtles are shy and better observed than handled, though with patience, they can become surprisingly personable",
@@ -1455,7 +1466,7 @@
     {
       "slug": "bristlenose-pleco-handling-guide",
       "title": "Bristlenose Pleco Behavior and Handling Guide",
-      "excerpt": "A bristlenose pleco is an observation animal like every fish on this site, but this species adds a wrinkle: it's",
+      "excerpt": "A bristlenose pleco is an observation animal, not one you handle, but this species adds a wrinkle: it's difficult to",
       "date": "2026-09-15",
       "image": "/assets/images/bristlenose-pleco-handling.jpg",
       "category": "Fish",
@@ -1516,6 +1527,17 @@
       "category": "Enrichment",
       "categories": [
         "Enrichment"
+      ]
+    },
+    {
+      "slug": "budgie-feeding-guide",
+      "title": "Budgie Feeding: Pellets, Seed, Iodine and Grit",
+      "excerpt": "A budgie on seed will pick out the millet and leave the rest, and the deficiency that follows has a sound: a click or a",
+      "date": "2026-10-03",
+      "image": "/assets/images/budgie-feeding.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
       ]
     },
     {
@@ -1665,7 +1687,7 @@
     {
       "slug": "canary-handling-guide",
       "title": "Canary Handling: Why This Bird Isn't Hands-On",
-      "excerpt": "Every other bird covered on this site, budgie, cockatiel, green-cheeked conure, lovebird, African grey, cockatoo, can",
+      "excerpt": "Budgies, cockatiels, green-cheeked conures, lovebirds, African greys, and cockatoos can all potentially be hand-tamed",
       "date": "2026-07-26",
       "image": "/assets/images/canary-handling.jpg",
       "category": "Birds",
@@ -1877,7 +1899,7 @@
     {
       "slug": "cherry-shrimp-cost-guide",
       "title": "Cherry Shrimp Price: $4 to $8 Each, Plus $45 to $110 Setup",
-      "excerpt": "Cherry shrimp are one of the cheapest animals on this site to buy, but the cost story isn't the shrimp, it's how fast a",
+      "excerpt": "Cherry shrimp are cheap to buy, but the cost story isn't the shrimp, it's how fast a starting group turns into a colony",
       "date": "2026-09-16",
       "image": "/assets/images/cherry-shrimp-cost.jpg",
       "category": "Invertebrates",
@@ -2054,7 +2076,7 @@
     {
       "slug": "cockatiel-cost-guide",
       "title": "Cockatiel Price: $75 to $250, Plus $320 to $860 Setup",
-      "excerpt": "Cockatiels are relatively affordable to buy, but the budgeting story here is how long you'll be caring for one. A 15 to",
+      "excerpt": "Cockatiels are relatively affordable to buy, but the budgeting story here is how long you'll be caring for one. A 10 to",
       "date": "2026-07-15",
       "image": "/assets/images/cockatiel-cost.jpg",
       "category": "Birds",
@@ -2175,7 +2197,7 @@
     {
       "slug": "cockatoo-health-issues-guide",
       "title": "Cockatoo Health Issues: Signs & Causes",
-      "excerpt": "Cockatoo health problems split fairly evenly between physical and behavioral, and this is one of the few species on",
+      "excerpt": "Cockatoo health problems split fairly evenly between physical and behavioral, and the behavioral issue is common enough",
       "date": "2026-07-26",
       "image": "/assets/images/cockatoo-health-issues.jpg",
       "category": "Birds",
@@ -2260,6 +2282,17 @@
       "category": "Enrichment",
       "categories": [
         "Enrichment"
+      ]
+    },
+    {
+      "slug": "conure-feeding-guide",
+      "title": "What Do Conures Eat? Pellets, Veg and Portions",
+      "excerpt": "A conure will pick the sunflower seeds out of a mixed dish and leave the rest, which is the whole problem in one",
+      "date": "2026-09-15",
+      "image": "/assets/images/conure-feeding.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
       ]
     },
     {
@@ -2921,7 +2954,7 @@
     {
       "slug": "ferret-cost-guide",
       "title": "Ferret Price: $75 to $400, Plus $300 to $700 Setup",
-      "excerpt": "Ferrets are moderately priced to buy, but they're the most expensive long-term pet on this site, driven almost entirely",
+      "excerpt": "Ferrets are moderately priced to buy, but expensive to keep long-term, driven almost entirely by a near-inevitable",
       "date": "2026-07-13",
       "image": "/assets/images/ferret-cost.jpg",
       "category": "Small & Exotic Pets",
@@ -2954,7 +2987,7 @@
     {
       "slug": "ferret-handling-guide",
       "title": "How to Handle a Ferret Correctly",
-      "excerpt": "Ferrets are playful, curious, and intensely social, one of the more interactive pets on this site once socialized. The",
+      "excerpt": "Ferrets are playful, curious, and intensely social, one of the more interactive small pets once socialized. The catch",
       "date": "2026-07-13",
       "image": "/assets/images/ferret-handling.jpg",
       "category": "Small & Exotic Pets",
@@ -3042,7 +3075,7 @@
     {
       "slug": "fire-bellied-toad-tank-setup-guide",
       "title": "Fire-Bellied Toad Tank Setup Guide",
-      "excerpt": "Fire-bellied toads need a different kind of setup than most amphibians on this site, real aquatic filtration matters",
+      "excerpt": "Fire-bellied toads need a different kind of setup than most amphibians, real aquatic filtration matters here in a way",
       "date": "2026-07-27",
       "image": "/assets/images/fire-bellied-toad-tank-setup.jpg",
       "category": "Amphibians",
@@ -3419,7 +3452,7 @@
     {
       "slug": "gerbil-cost-guide",
       "title": "Gerbil Price: $5 to $50 Each, Plus $150 to $350 Setup",
-      "excerpt": "Gerbils are one of the more affordable small pets on this site, with one important caveat: like the degu also covered",
+      "excerpt": "Gerbils are one of the more affordable small pets, with one important caveat: like the degu, you're budgeting for two",
       "date": "2026-08-09",
       "image": "/assets/images/gerbil-cost.jpg",
       "category": "Small & Exotic Pets",
@@ -3452,7 +3485,7 @@
     {
       "slug": "gerbil-handling-guide",
       "title": "How to Handle a Gerbil Safely",
-      "excerpt": "Gerbils are gentle, curious, and easy to tame, and like the degu also covered on this site, they break from the hamster",
+      "excerpt": "Gerbils are gentle, curious, and easy to tame, and like the degu, they break from the hamster in two specific ways",
       "date": "2026-08-09",
       "image": "/assets/images/gerbil-handling.jpg",
       "category": "Small & Exotic Pets",
@@ -3562,7 +3595,7 @@
     {
       "slug": "ghost-shrimp-health-issues-guide",
       "title": "Ghost Shrimp Health Issues: Signs & Causes",
-      "excerpt": "Ghost shrimp are among the hardiest animals on this site, but 'hardy' hides a real caveat: a lot of what goes wrong",
+      "excerpt": "Ghost shrimp are hardy, but 'hardy' hides a real caveat: a lot of what goes wrong traces back to the crowded feeder",
       "date": "2026-09-18",
       "image": "/assets/images/ghost-shrimp-health-issues.jpg",
       "category": "Invertebrates",
@@ -3782,7 +3815,7 @@
     {
       "slug": "green-anole-handling-guide",
       "title": "How to Handle a Green Anole Safely",
-      "excerpt": "Green anoles are delicate compared to the larger lizards already covered on this site, and that size difference should",
+      "excerpt": "Green anoles are delicate compared to the larger pet lizards, and that size difference should shape how you think about",
       "date": "2026-07-28",
       "image": "/assets/images/green-anole-handling.jpg",
       "category": "Reptiles",
@@ -3843,6 +3876,17 @@
       "category": "Enrichment",
       "categories": [
         "Enrichment"
+      ]
+    },
+    {
+      "slug": "green-iguana-feeding-guide",
+      "title": "What Do Green Iguanas Eat? Diet and Feeding Guide",
+      "excerpt": "A green iguana is a folivore with an enlarged cecum built to ferment leaves, which is the whole reason a bowl of the",
+      "date": "2026-09-12",
+      "image": "/assets/images/green-iguana-feeding.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
       ]
     },
     {
@@ -4290,6 +4334,17 @@
       ]
     },
     {
+      "slug": "hermit-crab-feeding-guide",
+      "title": "What Do Hermit Crabs Eat? Diet, Calcium, Safe Foods",
+      "excerpt": "A land hermit crab in the wild is a scavenger working a beach, taking fruit, fallen leaves, seeds and carrion, which is",
+      "date": "2026-09-21",
+      "image": "/assets/images/hermit-crab-feeding.jpg",
+      "category": "Invertebrates",
+      "categories": [
+        "Invertebrates"
+      ]
+    },
+    {
       "slug": "hermit-crab-handling-guide",
       "title": "How to Handle a Hermit Crab Safely",
       "excerpt": "Hermit crabs are prey animals, and they're not a pet built for regular handling the way a guinea pig or a chinchilla",
@@ -4354,6 +4409,17 @@
       "category": "Enrichment",
       "categories": [
         "Enrichment"
+      ]
+    },
+    {
+      "slug": "hognose-snake-feeding-guide",
+      "title": "Hognose Snake Feeding: Prey Size and Schedule",
+      "excerpt": "A western hognose hatchling can weigh three grams, which is small enough that the correct first meal is a piece of a",
+      "date": "2026-09-24",
+      "image": "/assets/images/hognose-snake-feeding.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
       ]
     },
     {
@@ -4543,7 +4609,7 @@
     {
       "slug": "jacksons-chameleon-cost-guide",
       "title": "Jackson's Chameleon Price: $50 to $250, Setup $400 to $525",
-      "excerpt": "Jackson's chameleons sit in a comparable price range to the veiled chameleon already covered on this site, but the two",
+      "excerpt": "Jackson's chameleons sit in a comparable price range to the veiled chameleon, but the two species diverge in some",
       "date": "2026-07-29",
       "image": "/assets/images/jacksons-chameleon-cost.jpg",
       "category": "Reptiles",
@@ -4565,7 +4631,7 @@
     {
       "slug": "jacksons-chameleon-handling-guide",
       "title": "How to Handle a Jackson's Chameleon Correctly",
-      "excerpt": "Jackson's chameleons are among the more docile chameleons kept as pets, more laid-back than the veiled chameleon",
+      "excerpt": "Jackson's chameleons are among the more docile chameleons kept as pets, more laid-back than the veiled chameleon, but",
       "date": "2026-07-29",
       "image": "/assets/images/jacksons-chameleon-handling.jpg",
       "category": "Reptiles",
@@ -4576,7 +4642,7 @@
     {
       "slug": "jacksons-chameleon-health-issues-guide",
       "title": "Jackson's Chameleon Health Issues: Signs & Causes",
-      "excerpt": "Jackson's chameleons face many of the same core reptile health risks as the veiled chameleon already covered on this",
+      "excerpt": "Jackson's chameleons face many of the same core reptile health risks as the veiled chameleon, with a couple of details",
       "date": "2026-07-29",
       "image": "/assets/images/jacksons-chameleon-health-issues.jpg",
       "category": "Reptiles",
@@ -4786,7 +4852,7 @@
     {
       "slug": "leaf-tailed-gecko-cost-guide",
       "title": "Leaf-Tailed Gecko Price: $250 to $800+, Setup $300 to $600",
-      "excerpt": "Leaf-tailed geckos are the most expensive gecko covered on this site, and the price reflects both their striking",
+      "excerpt": "Leaf-tailed geckos are among the most expensive geckos in the pet trade, and the price reflects both their striking",
       "date": "2026-07-29",
       "image": "/assets/images/leaf-tailed-gecko-cost.jpg",
       "category": "Reptiles",
@@ -4808,7 +4874,7 @@
     {
       "slug": "leaf-tailed-gecko-handling-guide",
       "title": "Leaf-Tailed Gecko Handling: What to Expect",
-      "excerpt": "Leaf-tailed geckos are the most advanced-keeper gecko covered on this site, and unlike the tokay gecko, this isn't",
+      "excerpt": "Leaf-tailed geckos are the most advanced-keeper gecko commonly kept, and unlike the tokay gecko, this isn't about",
       "date": "2026-07-29",
       "image": "/assets/images/leaf-tailed-gecko-handling.jpg",
       "category": "Reptiles",
@@ -4981,6 +5047,17 @@
       "category": "Enrichment",
       "categories": [
         "Enrichment"
+      ]
+    },
+    {
+      "slug": "lovebird-feeding-guide",
+      "title": "Lovebird Feeding: Pellets, Calcium and Vitamin A",
+      "excerpt": "A lone female lovebird will often lay clutch after clutch with no mate in sight, and every egg is built out of calcium",
+      "date": "2026-10-06",
+      "image": "/assets/images/lovebird-feeding.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
       ]
     },
     {
@@ -5272,7 +5349,7 @@
     {
       "slug": "mourning-gecko-enrichment-guide",
       "title": "Mourning Gecko Enrichment Guide",
-      "excerpt": "An all-female parthenogenetic species that lives in colonies. Every other gecko guide argues about whether to pair",
+      "excerpt": "An all-female parthenogenetic species that lives in colonies. With most geckos the question is whether to pair them.",
       "date": "2026-10-22",
       "image": "/assets/images/mourning-gecko-enrichment.jpg",
       "category": "Enrichment",
@@ -5327,7 +5404,7 @@
     {
       "slug": "mouse-cost-guide",
       "title": "Pet Mouse Price: $5 to $20 Each, Plus $100 to $210 Setup",
-      "excerpt": "A pet mouse is one of the cheapest animals on this site to buy, but it's a group animal with a real housing complexity",
+      "excerpt": "A pet mouse is one of the cheapest animals to buy, but it's a group animal with a real housing complexity of its own,",
       "date": "2026-09-22",
       "image": "/assets/images/mouse-cost.jpg",
       "category": "Small & Exotic Pets",
@@ -5360,7 +5437,7 @@
     {
       "slug": "mouse-handling-guide",
       "title": "How to Handle a Pet Mouse Safely",
-      "excerpt": "A mouse is the smallest, fastest, and most easily startled small mammal on this site, and treating it like a slower,",
+      "excerpt": "A mouse is the smallest, fastest, and most easily startled of the common pet small mammals, and treating it like a",
       "date": "2026-09-22",
       "image": "/assets/images/mouse-handling.jpg",
       "category": "Small & Exotic Pets",
@@ -5382,7 +5459,7 @@
     {
       "slug": "mouse-tank-setup-guide",
       "title": "Mouse Enclosure Setup Guide",
-      "excerpt": "Mouse housing runs on the opposite logic from a lot of the small-mammal advice elsewhere on this site: the glass tank",
+      "excerpt": "Mouse housing runs on the opposite logic from a lot of small-mammal advice: the glass tank that's the right call for a",
       "date": "2026-09-22",
       "image": "/assets/images/mouse-tank-setup.jpg",
       "category": "Small & Exotic Pets",
@@ -5514,7 +5591,7 @@
     {
       "slug": "oscar-fish-handling-guide",
       "title": "Oscar Fish Behavior and Handling Guide",
-      "excerpt": "Every other fish on this site is an observation animal built around feeding and water care. Oscars are different,",
+      "excerpt": "Most fish are observation animals built around feeding and water care. Oscars are different, intelligent enough to",
       "date": "2026-07-30",
       "image": "/assets/images/oscar-fish-handling.jpg",
       "category": "Fish",
@@ -5536,7 +5613,7 @@
     {
       "slug": "oscar-fish-tank-setup-guide",
       "title": "Oscar Fish Tank Setup Guide",
-      "excerpt": "Oscars are the largest, messiest fish covered here, and the setup needs to reflect that from day one, not grow into it",
+      "excerpt": "Oscars get large and messy, and the setup needs to reflect that from day one, not grow into it gradually.",
       "date": "2026-07-30",
       "image": "/assets/images/oscar-fish-tank-setup.jpg",
       "category": "Fish",
@@ -5570,7 +5647,7 @@
     {
       "slug": "pacman-frog-enrichment-guide",
       "title": "Pacman Frog Enrichment Guide",
-      "excerpt": "This is the hardest species on the site to write an enrichment guide for, because sitting motionless in one spot is not",
+      "excerpt": "This is the hardest species to write an enrichment guide for, because sitting motionless in one spot is not a symptom.",
       "date": "2026-10-26",
       "image": "/assets/images/pacman-frog-enrichment.jpg",
       "category": "Enrichment",
@@ -5931,7 +6008,7 @@
     {
       "slug": "quaker-parakeet-cost-guide",
       "title": "Quaker Parakeet Price: $250 to $500, Plus $300 to $800 Setup",
-      "excerpt": "Quaker parakeets sit in the middle of the pet-bird price range, and one detail matters more here than with almost any",
+      "excerpt": "Quaker parakeets sit in the middle of the pet-bird price range, and one detail has to be settled before you buy at all:",
       "date": "2026-08-11",
       "image": "/assets/images/quaker-parakeet-cost.jpg",
       "category": "Birds",
@@ -5953,7 +6030,7 @@
     {
       "slug": "quaker-parakeet-handling-guide",
       "title": "Quaker Parakeet Legality and Handling Guide",
-      "excerpt": "Quaker parakeets are intelligent, social, gifted talkers, and also the one bird on this site where a real legal check",
+      "excerpt": "Quaker parakeets are intelligent, social, gifted talkers, and also a bird where a legal check needs to happen before",
       "date": "2026-08-11",
       "image": "/assets/images/quaker-parakeet-handling.jpg",
       "category": "Birds",
@@ -6118,7 +6195,7 @@
     {
       "slug": "rat-handling-guide",
       "title": "How to Handle a Pet Rat Safely",
-      "excerpt": "Rats are, by a wide margin, one of the most hands-on and trainable small pets on this site, and genuine biting is rare",
+      "excerpt": "Rats are, by a wide margin, one of the most hands-on and trainable small pets there is, and genuine biting is rare",
       "date": "2026-09-21",
       "image": "/assets/images/rat-handling.jpg",
       "category": "Small & Exotic Pets",
@@ -6261,7 +6338,7 @@
     {
       "slug": "red-footed-tortoise-feeding-guide",
       "title": "What Do Red-Footed Tortoises Eat? Diet and Feeding Schedule",
-      "excerpt": "Red-footed tortoises need a different diet than the other tortoises on this site, real omnivores that need real fruit",
+      "excerpt": "Red-footed tortoises need a different diet than the other commonly kept tortoises, real omnivores that need real fruit",
       "date": "2026-09-23",
       "image": "/assets/images/red-footed-tortoise-feeding.jpg",
       "category": "Turtles & Tortoises",
@@ -6476,7 +6553,7 @@
     {
       "slug": "russian-tortoise-cost-guide",
       "title": "Russian Tortoise Price: $50 to $400, Plus $372 to $775 Setup",
-      "excerpt": "Russian tortoises are one of the more approachable tortoises to own, both in price and, unlike the sulcata already",
+      "excerpt": "Russian tortoises are one of the more approachable tortoises to own, both in price and, unlike the sulcata, in the fact",
       "date": "2026-07-30",
       "image": "/assets/images/russian-tortoise-cost.jpg",
       "category": "Turtles & Tortoises",
@@ -6493,6 +6570,17 @@
       "category": "Enrichment",
       "categories": [
         "Enrichment"
+      ]
+    },
+    {
+      "slug": "russian-tortoise-feeding-guide",
+      "title": "Russian Tortoise Feeding: Diet, Calcium, Portions",
+      "excerpt": "A Russian tortoise is built to graze its way through fibrous weeds all day, which is a very different job from clearing",
+      "date": "2026-09-30",
+      "image": "/assets/images/russian-tortoise-feeding.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
       ]
     },
     {
@@ -6553,7 +6641,7 @@
     {
       "slug": "savannah-monitor-enrichment-guide",
       "title": "Savannah Monitor Enrichment Guide",
-      "excerpt": "The monitor problem-solving research is a closer fit here than for any other lizard on this site, because savannahs are",
+      "excerpt": "The monitor problem-solving research is a closer fit here than for most lizards, because savannahs are in the same",
       "date": "2026-10-20",
       "image": "/assets/images/savannah-monitor-enrichment.jpg",
       "category": "Enrichment",
@@ -6575,7 +6663,7 @@
     {
       "slug": "savannah-monitor-health-issues-guide",
       "title": "Savannah Monitor Health Issues: Signs & Causes",
-      "excerpt": "Nearly everything on this list traces back to one root cause more than any other pet reptile covered on this site: a",
+      "excerpt": "Nearly everything on this list traces back to one root cause more than in almost any other pet reptile: a genuine",
       "date": "2026-07-31",
       "image": "/assets/images/savannah-monitor-health-issues.jpg",
       "category": "Reptiles",
@@ -6802,7 +6890,7 @@
     {
       "slug": "stick-insect-cost-guide",
       "title": "Stick Insect Price: A Few Dollars, Plus $30 to $100 Setup",
-      "excerpt": "Stick insects are one of the cheapest pets covered on this site, but before any cost discussion, there's a legal detail",
+      "excerpt": "Stick insects are cheap to buy and cheap to keep, but before any cost discussion, there's a legal detail worth",
       "date": "2026-07-31",
       "image": "/assets/images/stick-insect-cost.jpg",
       "category": "Invertebrates",
@@ -6846,7 +6934,7 @@
     {
       "slug": "stick-insect-tank-setup-guide",
       "title": "Stick Insect Enclosure Setup Guide",
-      "excerpt": "Stick insect care is refreshingly simple once the enclosure height and humidity balance are right, this is one of the",
+      "excerpt": "Stick insect care is refreshingly simple once the enclosure height and humidity balance are right, this is a forgiving",
       "date": "2026-07-31",
       "image": "/assets/images/stick-insect-tank-setup.jpg",
       "category": "Invertebrates",
@@ -7033,7 +7121,7 @@
     {
       "slug": "swordtail-cost-guide",
       "title": "Swordtail Price: $3 to $25 Each, Plus $115 to $190 Setup",
-      "excerpt": "Swordtails cost about the same per fish as a molly, but of the three common livebearers on this site, they're the one",
+      "excerpt": "Swordtails cost about the same per fish as a molly, but they're the common livebearer that outgrows a 20-gallon",
       "date": "2026-09-11",
       "image": "/assets/images/swordtail-cost.jpg",
       "category": "Fish",
@@ -7353,7 +7441,7 @@
     {
       "slug": "tokay-gecko-handling-guide",
       "title": "Tokay Gecko Handling: What to Actually Expect",
-      "excerpt": "Every other gecko covered on this site, crested, leopard, gargoyle, mourning, and African fat-tailed, ranges from calm",
+      "excerpt": "Every other commonly kept gecko, crested, leopard, gargoyle, mourning, and African fat-tailed, ranges from calm to",
       "date": "2026-07-23",
       "image": "/assets/images/tokay-gecko-handling.jpg",
       "category": "Reptiles",
@@ -7375,7 +7463,7 @@
     {
       "slug": "tokay-gecko-tank-setup-guide",
       "title": "Tokay Gecko Enclosure Setup Guide",
-      "excerpt": "Tokay gecko care runs warm and humid, closer to a rainforest setup than the arid conditions many other geckos on this",
+      "excerpt": "Tokay gecko care runs warm and humid, closer to a rainforest setup than the arid conditions many other geckos prefer.",
       "date": "2026-07-23",
       "image": "/assets/images/tokay-gecko-tank-setup.jpg",
       "category": "Reptiles",
@@ -7663,6 +7751,17 @@
       "category": "Enrichment",
       "categories": [
         "Enrichment"
+      ]
+    },
+    {
+      "slug": "whites-tree-frog-feeding-guide",
+      "title": "White's Tree Frog Feeding: Diet and Portions",
+      "excerpt": "This is a sedentary frog with a strong appetite, a combination that makes overfeeding the default outcome unless",
+      "date": "2026-09-27",
+      "image": "/assets/images/whites-tree-frog-feeding.jpg",
+      "category": "Amphibians",
+      "categories": [
+        "Amphibians"
       ]
     },
     {

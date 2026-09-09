@@ -403,46 +403,78 @@ export const fishGuides = [
     image: "/assets/guides/guppy.jpg",
     tagline: "The colorful, prolific livebearer that turns a starter tank into a thriving colony fast!",
     funFact: "Guppies are livebearers, meaning females give birth to free-swimming fry rather than laying eggs, and a single female can store sperm from one mating to produce several broods of 20 to 50+ fry over the following months. The species is named after Robert John Lechmere Guppy, who submitted specimens from Trinidad to the British Museum in the 1860s.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "10+ gallon tank", low: 40, high: 80 },
-        { item: "Aquarium heater", low: 15, high: 25 },
-        { item: "Gentle filter", low: 15, high: 25 },
-        { item: "Dense live or silk plants", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Flake/micro-pellet food + frozen brine shrimp", low: 35, high: 60 },
-        { item: "Water conditioner", low: 10, high: 15 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own, which is why there is no feeding frequency
+    // here: the feeding guide says outright that sources disagree, so the hub
+    // carries that disagreement instead of picking a side. Quarantine, cycling,
+    // and power outage cite the shared aquarium guides in the sidebar's Health
+    // and More list. Built 2026-09-09 for the guppy set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "5 gallons works as a bare minimum for a small trio, but 10 gallons is the more practical beginner starting point for a group of 5 or 6. Given how readily guppies breed, a 20-gallon tank is a better long-term choice if you're not actively separating males and females.", source: "guppy-tank-setup-guide" },
+        { label: "Water temperature", value: "A genuinely tropical species, comfortable in the 72 to 82°F range, with 76 to 78°F as a solid target. A heater is necessary unless your room stays consistently warm year-round, budget roughly 3 to 5 watts per gallon, so a 25 to 50 watt heater for a 10-gallon tank.", source: "guppy-tank-setup-guide" },
+        { label: "Water chemistry", value: "Guppies do best with a pH of 7.0 or above and moderately hard water, good calcium and magnesium content. If your tap water runs soft, a mineral supplement can help buffer it into a more suitable range.", source: "guppy-tank-setup-guide" },
+        { label: "Filtration", value: "Keep the flow gentle. A sponge filter works well and is the safer choice if you're allowing breeding, since it won't pull fry into strong current. A hang-on-back filter with adjustable flow also works well for a non-breeding setup.", source: "guppy-tank-setup-guide" },
+        { label: "Substrate", value: "Fine gravel or sand both work well, and darker substrate colors tend to make guppy coloring stand out more. Avoid sharp or coarse gravel, which can damage delicate fins.", source: "guppy-tank-setup-guide" },
+        { label: "Lighting", value: "A basic LED light on an 8 to 10 hour daily cycle is sufficient.", source: "guppy-tank-setup-guide" },
+        { label: "Sex ratio", value: "Two to three females per male minimum, and more females is better still. Six or more females per male is a common recommendation and there is nothing wrong with it. Or keep males only, which avoids the harassment question entirely, avoids the endless fry, and keeps the color.", source: "guppy-enrichment-guide" },
+        { label: "Feeding schedule", value: "Adults: once to three times a day. The portion rule matters more than the count, whichever frequency you settle on: feed only what's fully cleared within about 1 to 2 minutes.", source: "guppy-feeding-guide" },
+        { label: "Feeding fry and juveniles", value: "Fry, newborn to roughly 2 to 4 weeks, take the highest feeding frequency of any stage: 3 to 5 times a day, up to every 2 to 3 hours in the earliest days. Juveniles, roughly 1 to 3 to 4 months, get around 3 to 4 meals a day.", source: "guppy-feeding-guide" },
+        { label: "Diet", value: "The base diet should be a high-quality tropical fish flake or small pellet formulated for community fish, not goldfish food, which has a different, lower-protein profile. Rotate in protein-rich live, frozen, or freeze-dried foods, and add vegetable matter too, blanched and cut small.", source: "guppy-feeding-guide" },
+        { label: "Population plan", value: "Keep males and females in separate tanks if you want to avoid breeding entirely. Keep males only for a colorful, breeding-free tank. Let it happen and plan for it, rehoming or selling fry as they mature, or allowing natural predation to control numbers if you're not removing fry deliberately.", source: "guppy-handling-guide" },
+        { label: "Handling", value: "Guppies are an observation and enjoyment pet, not a hands-on one. If you need to move one, guide it with a net rather than touching it directly.", source: "guppy-handling-guide" },
+        { label: "Adult size", value: "Males are the smaller, more colorful sex, around an inch and a half, while females run larger and comparatively plain, up to about 2.4 inches.", source: "guppy-handling-guide" },
+        { label: "Budget", value: "Standard, wild-type guppies run $2 to $5 each, and fancy varieties $10 to $20 per pair. A basic 10-gallon starter kit, tank, filter, heater, water conditioner, and substrate, commonly runs $30 to $100 depending on the brand and size you choose.", source: "guppy-cost-guide" },
+        { label: "Lifespan", value: "2 to 3 years on average, up to 4 or 5 with excellent care. Female fertility drops off after around age 2.", source: "guppy-cost-guide" },
+        { label: "Cycling", value: "Most fishless cycles run four to six weeks at a warm, stable temperature, though real tanks have taken anywhere from about three weeks to two months. Treat any reading above zero as a signal to test again soon, and act with a water change once ammonia or nitrite climbs past roughly 0.1 to 0.25 ppm.", source: "aquarium-cycling-guide" },
+        { label: "Quarantine", value: "At least 30 days in a bare hospital tank before joining others, and 30 to 60 days for a fish you want to be genuinely sure about. Thirty days is the floor, not the target, since some parasites and infections take that long to show themselves.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "Aerate right away. A battery-powered air pump with an airstone is the cleanest fix. With no battery pump on hand, agitate the surface by hand roughly every 10 to 15 minutes in a small tank and every 20 to 30 minutes in a larger one.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
-    sections: {
-      housing: "A 10-gallon tank is a reasonable minimum for a small group of guppies, and they need warm, heated water between 72 and 82 degrees F, with about 78 degrees F being ideal. Gentle filtration suits them well, and dense live or silk planting gives both adults and fry places to hide, which matters if you want any fry to survive to adulthood. A lid is a good idea since guppies can occasionally jump. They are peaceful community fish, but avoid pairing them with fin-nipping species, since a guppy's flowing tail is an easy target.",
-      diet: "Guppies are omnivores that do well on a high-quality flake or micro-pellet food as their staple diet. Supplementing with frozen or live baby brine shrimp and daphnia adds valuable variety and encourages natural hunting behavior. Occasional spirulina-based flakes support healthy color. Feed small amounts once or twice a day. If you're intentionally raising fry, they need very fine food like infusoria, crushed flake, or baby brine shrimp until they're large enough for standard flake.",
-      enrichment: "Guppies are strongly social schooling fish and do best in groups of six or more, ideally with two to three females for every male to reduce the stress of constant mating pursuit on individual females. They're active, colorful swimmers that appreciate a mix of open swimming space and planted cover. Their breeding behavior is itself a form of ongoing enrichment for the keeper to observe - from courtship displays to the birth of live fry - though a dedicated breeding box or heavily planted nursery area is needed if you want fry to survive, since adult guppies (including the mother) will readily eat them.",
-      health: "Fin rot from poor water quality and ich are the two most common issues. Because guppies breed so readily, overpopulation is a genuine and common problem - plan ahead for population control, whether that means separating sexes, accepting natural predation of fry, or having a rehoming plan in place. The bioload from a rapidly growing colony makes consistent water quality maintenance especially important; weekly 20 to 25 percent water changes help keep pace with a growing population.",
-      checklist: [
-        "10+ gallon heated tank",
-        "Heater set to 76-80°F",
-        "Gentle filter",
-        "Dense live or silk plants",
-        "Tight-fitting lid",
-        "High-quality flake or micro-pellet food",
-        "Frozen baby brine shrimp for variety",
-        "Water conditioner and test kit",
-        "Plan for managing fry population growth",
+    emergencyCard: {
+      // The health issues guide carries no call-the-vet list of its own; the
+      // feeding guide's "When to Worry" section is the only one in the set, so
+      // the card copies that list bullet for bullet.
+      source: "guppy-feeding-guide",
+      callNow: [
+        "Appetite loss combined with lethargy, hiding, or erratic swimming",
+        "Gasping at the surface",
+        "Clamped or discolored fins",
+        "Cloudy eyes",
+        "Visible injuries",
+        "White spots",
+        "A swollen pinecone-like body",
       ],
+      vetLine: "Any of these, especially if spreading to other fish, is a signal to test water parameters immediately and consider a fish-health specialist rather than waiting. There's no single, universally agreed number for how long a guppy can safely go without food: a vet-affiliated source recommends contacting a vet if decreased appetite lasts more than one day, notably stricter than hobbyist consensus.",
     },
+    routes: [
+      { slug: "guppy-cost-guide", line: "$2 to $5 for a standard fish, $10 to $20 a pair for fancy strains, a modest setup, and the cost nobody budgets for: more guppies than you started with." },
+      { slug: "guppy-tank-setup-guide", line: "Tank size by group, the temperature target and heater math, water chemistry, gentle filtration, and cycling before the fish go in." },
+      { slug: "guppy-feeding-guide", line: "Frequency by life stage, the 1 to 2 minute portion rule, what to feed and what to skip, and six reasons a guppy stops eating." },
+      { slug: "guppy-handling-guide", line: "Why this is a watching pet rather than a handling one, how livebearer breeding actually works, and the four ways to manage the population." },
+      { slug: "guppy-health-issues-guide", line: "Ich, velvet, fin and tail rot, dropsy, and swim bladder disorder, each with its visible signs and treatment, plus why heavy salting is a bad idea with this species." },
+      { slug: "guppy-enrichment-guide", line: "What the harassment research says about sex ratio, why dense cover is a social tool rather than decor, and the priority order that follows from both." },
+    ],
+    buyList: [
+      "10 gallon tank, or 20 gallons if you're not separating the sexes",
+      "Aquarium heater sized to the tank",
+      "Sponge filter, or a hang-on-back filter with adjustable flow",
+      "Dense live or silk plants, floating plants included",
+      "Fine gravel or sand substrate",
+      "Tight-fitting lid",
+      "Water conditioner",
+      "Water test kit",
+      "High-quality tropical flake or micro-pellet food",
+      "Frozen or live brine shrimp and daphnia for variety",
+    ],
     faqs: [
-      { q: "How often do guppies have babies?", a: "Females can give birth roughly every 4 weeks and are able to store sperm from a single mating to produce multiple broods afterward, typically 20 to 50 or more fry per birth." },
-      { q: "Do guppies eat their babies?", a: "Yes - adult guppies, including the mother, will eat fry given the opportunity. If you want fry to survive to adulthood, use dense live plants, a breeding box, or a separate nursery tank to protect them." },
-      { q: "How many guppies should I keep together?", a: "At least 6, with a ratio of about 2 to 3 females for every male. This ratio reduces the constant mating pursuit that a 1:1 or male-heavy ratio puts on individual females, which can otherwise cause visible stress." },
-      { q: "What water temperature do guppies need?", a: "72 to 82°F, with roughly 78°F being ideal. Guppies are tropical fish and need a heater in the vast majority of home aquariums." },
-      { q: "How long do guppies live?", a: "2 to 3 years is typical with good water quality, appropriate temperature, and a varied diet." },
-      { q: "Are guppies good pets for beginners?", a: "Yes, they're one of the easiest community fish to keep. The one thing beginners underestimate is how fast they breed, a single female can produce a new brood roughly every four weeks, so have a population plan before you start." },
-      { q: "What's the difference between a guppy and a molly?", a: "Size and salt, mainly. [Mollies](/guides/molly/) run noticeably larger, 3 to 4.5 inches versus a guppy's 1 to 2.4 inches, and genuinely benefit from a bit of aquarium salt in a way guppies don't need. Both are prolific livebearers in the same family with otherwise very similar easy-beginner care." },
-      { q: "What's the difference between a guppy and a platy?", a: "Fins and body shape, mainly. Guppies are prized for their long, flowing tails in countless finnage varieties, while [platies](/guides/platy/) have a stockier, more torpedo-shaped body and lean more on solid color and pattern variety than fin shape. Platies also run a bit larger, 2 to 3 inches versus a guppy's 1 to 2.4 inches, but both are easy, similarly-kept Poeciliidae livebearers otherwise." },
-      { q: "What's the difference between a guppy and a zebra danio?", a: "Breeding method, mainly. Guppies are livebearers that give birth to free-swimming fry with no eggs involved, while a [zebra danio](/guides/zebra-danio/) is an egg-scatterer that lays and abandons eggs with no parental care at all. Both are cheap, hardy, classic first fish, but a danio school swims noticeably faster and needs more horizontal room than a calmer guppy group." },
+      { q: "What size tank does a guppy need?", a: "5 gallons is the bare minimum for a trio; 10 gallons is the practical starting point for a group of 5 or 6. Guppies breed readily, so a 20-gallon holds up better long term unless you separate males and females." },
+      { q: "How do I manage guppy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, a ratio of roughly one male to two or three females reduces females getting harassed too heavily by mating attempts." },
+      { q: "How often should I feed my guppy?", a: "Adults land somewhere between once and three times a day. The portion rule is the part that does not vary: only offer what's fully cleared in about 1 to 2 minutes. Overfeeding, not underfeeding, is the more common real mistake, guppies beg regardless of actual hunger." },
     ],
   },
   {

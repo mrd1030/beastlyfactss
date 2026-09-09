@@ -324,6 +324,7 @@ Their enrichment needs are simple: fresh substrate, fresh food, and the right co
       { slug: "hermit-crab-tank-setup-guide", line: "Humidity, temperature, substrate depth, the two water dishes, and the shells that go in the tank." },
       { slug: "hermit-crab-handling-guide", line: "Why handling stays minimal, the open-palm method, and how long a buried crab can stay down." },
       { slug: "hermit-crab-health-issues-guide", line: "Post-purchase stress, dehydration and gill suffocation, bad molts, and what seeking help looks like when there's almost no vet care." },
+      { slug: "hermit-crab-feeding-guide", line: "What to feed and how often, calcium going into a molt, the two additives toxic to invertebrates, and why one commercial food is not the diet." },
       { slug: "hermit-crab-enrichment-guide", line: "What the shell research actually found, how many shells a group needs, and the priority order for everything else." },
     ],
     buyList: [

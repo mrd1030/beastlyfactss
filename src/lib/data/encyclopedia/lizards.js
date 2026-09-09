@@ -54,7 +54,7 @@ export const lizardEncyclopedia = [
       habitat: "Open woodland, grassland, and scrubland",
       adultSize: "17-24 inches (43-60 cm)",
       wildDiet: "Omnivore - berries, fruits, flowers, snails, insects, and carrion",
-      wildLifespan: "15-20 years",
+      wildLifespan: "Not reported in the wild, though thought to be long-lived (San Diego Zoo Wildlife Alliance); the widely quoted 15-20 years is a captive figure",
       conservation: "Varies by species; most Least Concern (IUCN)",
       history: "John White, surgeon general to the First Fleet, published the first description of a blue-tongued skink in 1790 in his Journal of a Voyage to New South Wales, illustrated with a color plate. Australia's 1982 ban on commercial wildlife export means the animals sold abroad today are largely Indonesian and New Guinean species taken from the wild, while Australian keepers work from separate domestic stock. The genus also produced one of herpetology's better rediscovery stories: Tiliqua adelaidensis, the pygmy bluetongue, was written off as extinct until 1992, when a researcher near Burra in South Australia opened a dead brown snake and found one in its stomach.",
     },

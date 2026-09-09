@@ -22,7 +22,7 @@ export const turtleEncyclopedia = [
       habitat: "Slow-moving freshwater - ponds, lakes, marshes, and rivers",
       adultSize: "5-12 inches (13-30 cm); females significantly larger",
       wildDiet: "Omnivore - aquatic plants, fish, insects, and carrion",
-      wildLifespan: "20-40 years",
+      wildLifespan: "Up to 30 years (Animal Diversity Web, University of Michigan, which puts captive sliders at up to 41.3 years and notes average longevity is not well documented for either)",
       conservation: "Least Concern (IUCN); invasive outside native range",
       history: "Baby red-eared sliders were a dime-store staple in the 1960s, sold cheap and small on the promise that they were easy, and mass collected from ponds across the South. The public health cost was measured: pet turtles were once linked to roughly 280,000 Salmonella infections a year in the United States, and in 1975 the FDA banned the sale of turtles with a shell under four inches, on the reasoning that a larger turtle will not fit in a small child's mouth. That rule does not touch exports, so the farms that had supplied the domestic dime-store trade turned to shipping hatchlings overseas instead. The species is now established as an invasive on every continent except Antarctica.",
     },

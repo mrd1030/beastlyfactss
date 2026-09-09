@@ -78,7 +78,7 @@ export const snakeEncyclopedia = [
       habitat: "Sandy soil areas, prairies, woodland edges, and coastal plains",
       adultSize: "1.5-3.5 feet (45-107 cm) depending on species",
       wildDiet: "Toads, frogs, salamanders, and occasionally small rodents",
-      wildLifespan: "10-18 years",
+      wildLifespan: "9-19 years in the wild, averaging 14; 15-20 years in human care",
       conservation: "Least Concern (most species); some state-level protections",
       history: "The western hognose was a marginal animal in the trade for decades, the kind of snake that turned up under the Miscellaneous heading of a pre-Internet reptile price list, interesting to watch but too plain to sell. What changed was a combination of better husbandry information, wider availability, and color and pattern variants that gave breeders something to work toward. Its smaller size, milder bluffing, and flexible diet made it the species the hobby settled on out of the three North American hognoses. Most animals sold now are captive-bred rather than collected.",
     },

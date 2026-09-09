@@ -118,6 +118,7 @@ export const birdGuides = [
       { slug: "budgie-tank-setup-guide", line: "The 18x18x18 minimum, why width beats height, bar spacing, and the pellet-first diet." },
       { slug: "budgie-handling-guide", line: "Letting a new bird settle, the taming progression from hand-in-cage to step-up, and why punishing a bite backfires." },
       { slug: "budgie-health-issues-guide", line: "Fatty liver disease, the tumor that can look like a limp, egg binding, and the signs that mean a vet the same day." },
+      { slug: "budgie-feeding-guide", line: "How much of the diet is pellets, the iodine deficiency budgies are prone to and the breathing sound it makes, and why grit is a risk." },
       { slug: "budgie-enrichment-guide", line: "Foraging first, destructible toys, and the difference between a resting bird and a bored one." },
       { slug: "budgie-cere-color-guide", line: "Reading the cere to sex a budgie, and when a color change means more than hormones." },
     ],
@@ -350,8 +351,8 @@ export const birdGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV puts the floor at 30 days and VCA gives 30 to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
-        { label: "Cage size", value: "24x24x30 inches is the minimum most sources list for a single adult, but treat that as a floor, not a target. Bigger is always better, aim for 30 to 36 inches or more in multiple dimensions, or a genuine flight cage if you can manage it. Your bird should be able to fully stretch and flap its wings without touching the sides.", source: "conure-tank-setup-guide" },
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. Thirty days is the floor, published guidance runs 30 to 45, and a multi-bird household is safer nearer the 90 days recommended for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Cage size", value: "24x24x30 inches is the common minimum for a single adult, but treat that as a floor, not a target. Bigger is always better, aim for 30 to 36 inches or more in multiple dimensions, or a genuine flight cage if you can manage it. Your bird should be able to fully stretch and flap its wings without touching the sides.", source: "conure-tank-setup-guide" },
         { label: "Bar spacing", value: "Bar spacing should be 1/2 to 5/8 inch maximum to prevent head entrapment or escape.", source: "conure-tank-setup-guide" },
         { label: "Temperature", value: "Normal household temperatures of 65 to 80°F work well. Avoid drafts, direct air-conditioning vents, and sudden temperature swings. No supplemental heating is needed in a typical indoor environment.", source: "conure-tank-setup-guide" },
         { label: "Lighting and sleep", value: "Full-spectrum UV lighting made for birds (UVB 5.0 or a similar avian-specific bulb) is recommended by multiple care sources for 10 to 12 hours daily, supporting vitamin D synthesis, especially important for indoor birds with limited natural sunlight. Maintain a consistent day and night photoperiod, covering the cage at night gives 10 to 12 hours of real darkness.", source: "conure-tank-setup-guide" },
@@ -359,7 +360,7 @@ export const birdGuides = [
         { label: "Placement", value: "Never use non-stick or Teflon cookware near the bird, the fumes are highly toxic. For placement, a family living area helps the bird feel like part of the flock, but keep one side of the cage against a wall for security, and stay well away from the kitchen, both the fumes and the heat are risks there.", source: "conure-tank-setup-guide" },
         { label: "Out-of-cage time", value: "Out-of-cage time, several hours of supervised free time daily, isn't optional, it's essential for both physical and mental health.", source: "conure-tank-setup-guide" },
         { label: "Diet", value: "Fatty liver disease and vitamin A deficiency both stem from the same root cause: an all-seed or high-fat diet with too little vegetable variety and not enough exercise. Caught early, this is manageable with diet correction, feeding a quality pelleted diet alongside fresh vegetables instead of a seed-only bowl. Seed-only diets are one of the most common, and most preventable, causes of chronic illness in this species.", source: "conure-health-issues-guide" },
-        { label: "Pellet conversion", value: "VCA Animal Hospitals lays out two workable methods, both built around gradual substitution rather than an abrupt swap: \"Offer 75% seed and 25% pellets in the food dish for 3 days, then a 50/50 mix for 3 days, then 25% seed and 75% pellets until your conure is fully converted,\" or a daily taper from 90% seed down to 0% seed on day 10. VCA is blunt about how long that can take: \"It may take days, weeks, or months to modify a bird's diet.\"", source: "bird-pellet-conversion-guide" },
+        { label: "Pellet conversion", value: "Two workable methods, both built around gradual substitution rather than an abrupt swap: 75% seed and 25% pellets for 3 days, then a 50/50 mix for 3 days, then 25% seed and 75% pellets until the bird is fully converted; or a daily taper from 90% seed down to 0% on day 10. Either one can take days, weeks or months.", source: "bird-pellet-conversion-guide" },
         { label: "Feeding style", value: "Wild parrots spend up to six hours a day searching for, selecting and manipulating food. A conure with a full bowl is finished in minutes, and everything that goes wrong behaviorally with parrots tends to grow in that empty stretch. Stop using a bowl as the primary delivery method.", source: "conure-enrichment-guide" },
         { label: "Handling", value: "Genuine nippiness shows up more in young birds, especially under one to two years old, and in hormonal adults. Watch for warning signs before a bite happens: pinned eyes, flared tail feathers, or lunging.", source: "conure-handling-guide" },
         { label: "Sexing", value: "Green cheek conures are sexually monomorphic, males and females look the same, so there's no reliable visual test, despite claims floating around about head shape or foot color. If you actually need to know, DNA testing is the standard.", source: "conure-handling-guide" },
@@ -387,6 +388,7 @@ export const birdGuides = [
       { slug: "conure-tank-setup-guide", line: "Cage size and bar spacing, temperature and humidity, UV lighting, perches, and the safety list for a room a bird flies in." },
       { slug: "conure-handling-guide", line: "Why most beak contact is balance rather than biting, building trust with a step-up cue, and why you cannot sex one by looking." },
       { slug: "conure-health-issues-guide", line: "Fatty liver and vitamin A deficiency, feather-destructive behavior, respiratory infection and aspergillosis, and the viruses to know." },
+      { slug: "conure-feeding-guide", line: "How much of the diet is pellets, what the fresh share should be, the four things an all-seed diet breaks, and the foods that are toxic." },
       { slug: "conure-enrichment-guide", line: "The parrot foraging studies that measured an outcome, why a food bowl is the problem, and the priority order to work through." },
     ],
     buyList: [
@@ -402,7 +404,7 @@ export const birdGuides = [
     ],
     faqs: [
       { q: "How much does a green cheek conure cost?", a: "$250 to $500 from a breeder for a normal (green) color, with common listings around $275 to $400. Common morphs like Pineapple, Yellow-Sided, and Cinnamon run $350 to $600, and high-red or combination morphs can reach $450 to $700 or more. Pet store pricing is often $600 to $1,300, noticeably higher than buying direct from a breeder for what you get." },
-      { q: "What size cage does a green cheek conure need?", a: "24x24x30 inches is the minimum most sources list for one adult, and it is a floor rather than a target: go to 30 to 36 inches or more in multiple dimensions where you can. Bar spacing tops out at 1/2 to 5/8 inch, to prevent head entrapment or escape." },
+      { q: "What size cage does a green cheek conure need?", a: "24x24x30 inches is the common minimum for one adult, and it is a floor rather than a target: go to 30 to 36 inches or more in multiple dimensions where you can. Bar spacing tops out at 1/2 to 5/8 inch, to prevent head entrapment or escape." },
       { q: "Are conures as demanding as bigger parrots?", a: "Behaviorally, close to it. They are full parrots in a small body: intelligent, social, destructive and loud for their size. Buying one expecting a budgie with more color is how conures end up rehomed." },
     ],
   },
@@ -456,6 +458,7 @@ export const birdGuides = [
       { slug: "lovebird-handling-guide", line: "Why the name is misleading, exterior food dishes over reaching in, and stick-training a defensive bird." },
       { slug: "lovebird-health-issues-guide", line: "PBFD, egg binding, feather plucking, and when a change in behavior means the vet." },
       { slug: "lovebird-tank-setup-guide", line: "The 18x18x24 minimum, bar spacing as a safety issue, and why the nest box has to wait." },
+      { slug: "lovebird-feeding-guide", line: "The pellet and vegetable split, the vitamin A and calcium gaps this species runs into, what chronic laying costs a hen, and why dusting seed fails." },
       { slug: "lovebird-enrichment-guide", line: "Contra-freeloading, the toy count that actually works, and the signs enrichment isn't covering current needs." },
     ],
     buyList: [

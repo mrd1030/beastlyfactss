@@ -5297,3 +5297,1544 @@ iguana 70% first-year mortality figure, sourced to Wikipedia citing a 1992
 book on the cost guide and then repeated on the health guide as a fact box
 without that hedge; and the rat enrichment guide citing an unnamed study and
 using the spelling "centrepiece" in a set that is otherwise US.
+
+## Blue-Tongue Skink (2026-09-09, first pass)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, feeding, enrichment). Batch E. One independent Opus reader, run
+against the pre-rewrite extract in `.reader/blue-tongue-skink/`, so the hub
+conflicts below are against the legacy care-sheet shape and were resolved by the
+router rewrite in the same pass. Raw output in docs/READER_LOG.md under the same
+heading.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub (legacy shape) | D+ | The weakest page in the set, a lower resolution copy of the deep dives, and some of it is wrong. |
+| Encyclopedia | B | Nothing husbandry, but the 1982 export ban and the pygmy bluetongue rediscovery are the frame for the whole set. |
+| Cost | B+ | A budget and a real buying recommendation, captive-bred Northern, with two internal number problems. |
+| Handling | A | The 2 to 3 week settle, the huff scale, side approach, never by the tail. Best page in the set. |
+| Health issues | B | MBD signs, fenbendazole and praziquantel, shed versus scale rot. Thin on numbers, no humidity targets, no way to score body condition. |
+| Tank setup | A- | The page I would build from. |
+| Feeding | A | Schedule by age, skull-sized portion, toxic list, weekly gram weighing, the 7 to 10% loss threshold. |
+| Enrichment | B+ | Scatter feed, dig box tub, hides at both ends, priority order. |
+
+Set grade: B-. "Strong deep dives dragged down by a hub that contradicts them on
+temperature, UVB, and substrate depth."
+
+Hub grade D+ is the lowest hub grade any reader has given across these batches.
+
+### Hub versus the set, both sides quoted (all against the legacy hub, all fixed by the router rewrite)
+
+- **Basking.** Hub: "Surface temperatures of 95 to 110 degrees F are required
+  under the basking area, with the exact target depending on subspecies."
+  Tank setup guide: "Northern basking surface: 105 to 115°F. Indonesian basking
+  surface: slightly cooler, 100 to 105°F." The hub gestured at the subspecies
+  split and then printed one band that sits below the Northern range and starts
+  five degrees under the Indonesian one. Fixed: the router hub's Basking surface
+  row is the tank setup sentence verbatim, both ranges kept, not merged.
+- **UVB strength.** Hub: "Moderate UVB (T5 HO 5 to 6%, or Arcadia 6% Forest
+  Bulb) is strongly recommended," repeated in the hub's cost table
+  ("Moderate UVB (T5 HO Arcadia 6%): $50 to $90"), its checklist, and its own
+  FAQ. Tank setup guide: "A T5 HO bulb in the 10.0 to 12% range." Those are
+  different bulbs and the hub had the disagreement in the thing a reader buys
+  from. Settled against the sources rather than by picking a side: see
+  "Deep dives against themselves" below. Fixed: the tank setup guide now states
+  the 5 to 12% both its sources give, and the hub's UVB row copies it.
+- **Photoperiod.** Hub: "Run UVB on a 10 to 12 hour cycle." Tank setup guide:
+  "Run a photoperiod of roughly 11 to 13 hours depending on season for either
+  type." Fixed: hub row copied from the tank setup guide.
+- **Substrate depth.** Hub: "Substrate should be 3 to 4 inches deep." Tank setup
+  guide: "Keep it 4 to 6 inches deep." Fixed: hub Floor row copied from the tank
+  setup guide, and the buy list says 4 to 6 inches.
+- **Cool side.** Hub: "The ambient warm side should be 80 to 85 degrees F, and
+  the cool side 70 to 75 degrees F." Tank setup guide: "Cool side (both): 70 to
+  80°F." The 80 to 85°F warm-side ambient figure appears on no deep dive at all.
+  Fixed: the hub's Rest of the gradient row is the tank setup sentence, and the
+  unsupported warm-side ambient figure is gone.
+- **Diet ratio, the hub against itself.** Hub body: "approximately 40 to 60%
+  vegetables and leafy greens, 30 to 40% protein sources, and no more than 5 to
+  10% fruit." Hub FAQ, two screens later: "A good adult diet is roughly 60%
+  animal protein and 40% vegetables and greens." The two flip which half of the
+  diet is the majority. Feeding guide: "Mature adults shift toward plant-heavy,
+  roughly 40 to 60% animal protein and 45 to 60% leafy greens and vegetables,
+  with about 5 to 10% fruit as treats." Fixed: the hub's Diet ratio row is the
+  feeding guide sentence, both the age flip and the adult ratio, and the old
+  FAQs are gone.
+- **Lifespan.** Hub FAQ: "commonly live 15 to 25 years in captivity, with some
+  individuals exceeding 25 years." Cost guide: "15 to 20 years is the commonly
+  cited average, with well-documented cases living past 30." Neither the hub's
+  15 to 25 nor its "exceeding 25" appears on any deep dive; the cost guide's
+  figure is the one PetMD states. Fixed: the hub's Lifespan row is the cost
+  guide sentence.
+- **Adult size.** Hub funFact: "Adults can reach 18 to 24 inches!" Hub FAQ:
+  "Adults reach 18 to 24 inches in total length and typically weigh 400 to 600
+  grams." Encyclopedia: "17-24 inches (43-60 cm)." No deep dive states an adult
+  size at all, so the encyclopedia is the only figure with a home. Fixed: the
+  Adult size row is the encyclopedia's, carried with no `source` the way the
+  rabbit and bearded dragon hubs carry their sourceless rows; the funFact was
+  rewritten to keep the live-birth point and drop the number; the weight figure
+  went with the old FAQs, and no deep dive states one, which is listed as a gap
+  below.
+
+After the rewrite, `check-species-numbers.mjs blue-tongue-skink` shows every line
+marked `hub` appearing verbatim in the deep dive its row names. The remaining
+CONFLICT groups are the checker grouping a hub row with the identical source
+sentence, plus cost-guide-internal groupings, plus the encyclopedia adult-size
+line the hub now copies.
+
+### The subspecies split, handled deliberately
+
+This species is not one animal for husbandry purposes, and the hub's central
+failure was flattening that. Every row whose deep dive distinguishes Northern
+from Indonesian keeps both figures in one row rather than being averaged:
+basking surface (105 to 115°F against 100 to 105°F), humidity (around 40%
+against 60 to 80%), substrate (the 60/40 topsoil and play sand mix for
+Northerns, moisture-retentive additions for Indonesians), and the buy list's
+"Leaf litter or sphagnum moss, for an Indonesian setup." A first row, "Which
+skink is it", sourced to the health issues guide, states the wild-caught versus
+captive-bred divide before any number is given, so a reader knows which column
+of every following row applies to them.
+
+### Deep dives against each other, and against themselves
+
+- **The burn ceiling, inside the tank setup guide.** Same page: "Northern
+  basking surface: 105 to 115°F" against "with a safe ceiling around 110°F to
+  avoid burns." One of these had to give, and the page's own Sources settle it.
+  Both cited sources state the higher range and neither states a ceiling.
+  ReptiFiles' temperature page gives Northern 105 to 115°F and Indonesian 100 to
+  105°F; Zen Habitats' lighting and heating guide gives "Basking surface:
+  105-115°F (40-46°C)" for Australian and Indonesian animals alike. A 110°F
+  ceiling would forbid the top five degrees of what both sources call correct,
+  and it is a number no source on the page states. Fixed: the ceiling clause is
+  cut and the point it was carrying, that unregulated heat burns skinks, moves
+  into the thermostat requirement, which is the mechanism the shared heating
+  guide covers. Before: "A heat source (halogen or a deep heat projector) on a
+  thermostat is required, mounted with a basking dome fixture, with a safe
+  ceiling around 110°F to avoid burns." After: "A heat source (halogen or a deep
+  heat projector) is required, mounted with a basking dome fixture and run on a
+  thermostat, which is what holds the surface inside those ranges instead of
+  letting an unregulated bulb climb past them and burn the animal."
+- **UVB strength, inside the tank setup guide and against the hub.** The guide
+  said "A T5 HO bulb in the 10.0 to 12% range," narrower than either of its own
+  sources and excluding the Arcadia Forest 6% bulb the site's own cost table and
+  buy list carry. ReptiFiles states skinks "should have anywhere from a 5% to 12%
+  UVB output T5 lamp, depending on the setup." Zen Habitats lists both options
+  and separates them by mounting height, not by correctness: Arcadia T5 HO Forest
+  6% or Zoo Med Reptisun 5.0 at 6 to 9 inches through mesh, Arcadia T5 HO Desert
+  12% or Reptisun 10.0 at 12 to 15 inches, targeting a UVI of 3.0 to 4.0 at the
+  basking area. So neither the hub's 5 to 6% nor the guide's 10 to 12% was wrong;
+  the guide had narrowed a range its sources state as a choice made against
+  distance. Fixed in the tank setup guide's body and its FAQ, and the hub's UVB
+  row copies the corrected sentence. Before: "A T5 HO bulb in the 10.0 to 12%
+  range, spanning at least half the enclosure on the warm side." After: "A T5 HO
+  bulb anywhere from 5 to 12% output, picked against how high above the basking
+  area it will hang, spanning at least half the enclosure on the warm side."
+  The affiliate product on that sentence, the Arcadia Forest 6% kit, is now
+  inside the range the sentence gives, which it was not before.
+- **Vet exam price, inside the cost guide.** Table: "Annual vet wellness check |
+  $50 - $90." Body, three sections later: "A routine exam runs roughly $100 to
+  $150, with annual checkups recommended for any skink." Neither of the page's
+  two sources states an exam price: PetMD's species guide gives lifespan and
+  husbandry only, and the ReptiFiles subspecies page prices nothing. Settled
+  against a published fee schedule instead: Colorado Exotic Animal Hospital lists
+  "Wellness Exam (30 min) $115.00," which sits inside the body's range and
+  outside the table's. Fixed: the table row becomes $100 - $150, the body sentence
+  and its hedge are untouched, and the hospital's pricing page is added to
+  Sources. The annual total below the table was recomputed from its own rows,
+  $440 to $770 becoming $490 to $830, and $35 to $65 a month becoming $41 to $69.
+- **Setup total against the setup table, inside the cost guide.** The heading read
+  "Upfront Setup: Roughly $400 to $800" over a table whose seven rows summed to
+  $290 to $555, and the paragraph under it said "A thermostat is essential, not
+  optional" for a piece of equipment on no table and no checklist. Neither cited
+  source states a setup total, so no total was invented: the heading now sums the
+  table. Fixed: a `["Thermostat", "$40 - $80"]` row was added next to the basking
+  bulb, using the range this site already publishes for the same item on the
+  bearded dragon and ackie monitor cost guides rather than a new figure; the
+  table now sums to $330 to $635; the heading, the setup FAQ, the seoTitle, the
+  seoDescription and the `description` all state $330 to $635; and the
+  total-initial-investment sentence, which was $550 to $1,400 against nothing,
+  becomes $430 to $1,335, which is the page's own animal range ($100 to $700)
+  plus its own setup range. The thermostat is on the hub's buy list too.
+- **Not conflicts, left alone:** the feeding guide's honest split on the adult
+  schedule ("Veterinary sources say every 1 to 3 days ... a cluster of widely
+  used pet-industry care sheets instead say adults only need feeding once or
+  twice a WEEK. That's a real disagreement, not a phrasing difference") is the
+  page doing the right thing, and the hub row keeps both halves; the handling
+  guide's "2 to 3 weeks" settling window and the feeding guide's "about 2 weeks
+  ... up to 2 months" acclimation window answer different questions (when to
+  start handling, when to expect eating) and are now linked rather than merged.
+
+### Gaps, checked against the sidebar's Health and More list first
+
+The list on every page of this set is: reptile emergency plan, reptile stool and
+urates, salmonella and reptile hygiene, reptile heating and thermostats, reptile
+quarantine, reptile shedding, and two cross-species overviews. Checked against
+it, these are real:
+
+- **Cohabitation.** No page anywhere says whether two blue tongue skinks can
+  share an enclosure. Every keeper considering a second animal hits this, and
+  none of the shared guides answers it. Real gap, and the largest one open.
+- **Brumation husbandry.** The feeding guide names a 3 to 4 month November-to-March
+  slowdown and says a skink loses little to no weight "if temperatures are
+  managed correctly," and then never says to what. No temperature, no
+  photoperiod, no cooling schedule anywhere in the set. Real gap.
+- **Enclosure cleaning.** Spot-clean frequency and full substrate change
+  interval appear nowhere. The quarantine guide covers disinfection at the end of
+  a quarantine, not a maintenance schedule. Real gap.
+- **Inspecting an animal before buying.** The cost guide makes a genuine buying
+  recommendation (captive-bred Northern) and never says what a healthy skink
+  looks like at a shop or an expo. Real gap.
+- **Basking bulb wattage and mounting height.** The tank setup guide says "no
+  closer than about 10 inches" for the UVB bulb and gives nothing for the heat
+  bulb. The shared heating and thermostats guide covers wattage as "a starting
+  guess you verify," which is the honest general answer, so this is
+  half-covered; the species-specific number for a 4x2x2 is not there. Now linked
+  from the tank setup guide's temperature section.
+- **Adult weight.** The old hub FAQ's "typically weigh 400 to 600 grams" was the
+  only weight figure in the set, and it went with the rewrite because no deep
+  dive states one. The feeding guide tells a keeper to weigh weekly on a
+  gram-accurate scale and to act on a 7 to 10% loss, which is a relative
+  threshold and works without an absolute, but there is no number to check a new
+  animal against. New gap opened by the rewrite, listed rather than papered over.
+- **Not a gap:** the reader asked for humidity targets on the health issues page.
+  The tank setup guide carries them, the hub's Humidity row now carries them, and
+  the health guide's retained-shed and scale-rot section reads correctly without
+  them.
+
+### Stranded questions (a page raises it, another page in the set answers it, neither says so)
+
+- Handling: "Leave a new skink alone for 2 to 3 weeks before attempting to handle
+  it," while the feeding guide holds the real acclimation window, much longer for
+  a wild-caught animal. Fixed with the handling guide's one allowed sibling link.
+- Health issues: obesity "is manageable at home through portion control rather
+  than free-feeding," and the portion that does it, about the size of the skink's
+  own skull, is only in the feeding guide. Fixed with the health guide's one
+  allowed sibling link.
+- Cost: "wild-caught Indonesian skinks frequently need a fecal exam and deworming
+  treatment right after purchase," and the health guide is where the drugs are
+  named. Fixed with the cost guide's one allowed sibling link.
+- Feeding: "Inadequate basking temperature or UVB" as a reason a skink stops
+  eating, with the actual basking targets, and their subspecies split, on the
+  tank setup guide. Fixed with the feeding guide's one allowed sibling link.
+- Cost: "A thermostat is essential, not optional," and the page never says what
+  one does. The shared heating and thermostats guide does, and the tank setup
+  guide now carries that link on its own thermostat sentence. Not added to the
+  cost guide as well, since the cost guide has spent its sibling link and the
+  point is now made where the equipment is specified.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Subspecies identification matters for care." | Tank setup guide | Not applicable, the prose is gone and the router rows link their own sources |
+| Encyclopedia | "Australia's 1982 ban on commercial wildlife export means the animals sold abroad today are largely Indonesian and New Guinean species taken from the wild." | Health issues guide | Skipped, the encyclopedia is out of scope for links |
+| Cost | "wild-caught Indonesian skinks frequently need a fecal exam and deworming treatment right after purchase" | Health issues guide | Added, the one sibling link this article is allowed |
+| Handling | "Leave a new skink alone for 2 to 3 weeks before attempting to handle it" | Feeding guide | Added, the one sibling link this article is allowed |
+| Health issues | "This is manageable at home through portion control rather than free-feeding." | Feeding guide | Added, the one sibling link this article is allowed |
+| Tank setup | "A heat source (halogen or a deep heat projector) on a thermostat is required." | Reptile heating and thermostats guide | Added, a shared class guide, does not count against the cap |
+| Feeding | "Inadequate basking temperature or UVB." | Tank setup guide | Added, the one sibling link this article is allowed |
+| Enrichment | "Do not overfeed while making food more interesting." | Feeding guide | Added, the one sibling link this article is allowed |
+
+### Trust
+
+The doubt was all on the hub, which the reader said "reads like it was written
+from a different sourceset than the deep dives and never reconciled, and it is
+the page navigation lands on first." Nothing in the deep dives read as invented,
+but two things read as unbacked and both are now settled: the "safe ceiling
+around 110°F," which no source on its page states and which contradicted the same
+page two sentences earlier, and the 93% parasite figure cited to "a peer-reviewed
+study" with no name.
+
+That study is identified. It is Wolf D, Vrhovec MG, Failing K, Rossier C,
+Hermosilla C, Pantchev N, "Diagnosis of gastrointestinal parasites in reptiles:
+comparison of two coprological methods," Acta Veterinaria Scandinavica, 2014,
+which reports "Analyzed reptile faecal samples contained a broad spectrum of
+parasites (total occurence 93.2%, n = 55)" across 59 samples from 20 lizards, 22
+snakes and 17 tortoises drawn from a diagnostic lab, a rescue centre holding
+recently imported animals, and privately kept animals pre-selected as
+wild-caught, which is exactly the wild-origin population the health guide is
+describing. The FunFact and the FAQ both name it now, the percentage is stated as
+the paper states it (93.2%), and the paper is in Sources.
+
+The sentence that most convinced the reader a keeper wrote this, from handling:
+"Wash your hands first, so they do not smell like a food item."
+
+### The reader's two changes
+
+1. "Make the hub inherit its numbers from the tank setup and feeding guides, or
+   cut the duplicated sections entirely." Done, both: the housing, diet,
+   enrichment and health prose and the cost tables are gone, and every remaining
+   figure is copied from the deep dive its row names.
+2. "Fix 02 so the setup table includes the thermostat, sums to the stated total,
+   and states one vet exam price." Done, all three.
+
+### Unsourced, needs a fact-check
+
+- The cost guide's setup and annual figures are retail ranges with no "Prices
+  last checked <Month Year> at ..." line, which RULES requires under the last cost
+  table. The line was not added because this pass did not check retail prices at
+  a retailer; it corrected the table's internal arithmetic only. Someone should
+  price the table and add the line.
+- The added thermostat row's $40 to $80 is this site's own published range for
+  the same item on the bearded dragon and ackie monitor cost guides, not a figure
+  checked for this article.
+- The health issues guide's second source is a bare homepage
+  (`https://treeoflifeexotics.vet/`), which RULES forbids. It was left in place
+  rather than deleted, since a Sources entry is never deleted, but it needs
+  pointing at the actual care page or replacing.
+
+### Encyclopedia
+
+One field conflicted with a deep dive's sourced figure and was researched with
+real opened sources before changing.
+
+- `wildLifespan` read "15-20 years", which is the same number the cost guide gives
+  for a captive animal ("15 to 20 years is the commonly cited average") and which
+  PetMD gives explicitly as a captive figure ("The normal life expectancy of a
+  captive skink is anywhere between fifteen and twenty years"). A captive number
+  sitting in a wild field, the same failure batch A found on Russian tortoise and
+  batch D found on green iguana. Four sources were opened looking for a real wild
+  figure and none gives one. The San Diego Zoo Wildlife Alliance library fact
+  sheet states wild longevity as "Not reported, though thought to be long-lived"
+  and managed care as "About 20 years" (Slavens and Slavens 2000; Koenig et al.
+  2001). The Australian Museum's Eastern blue-tongue page says only "Several
+  captive animals have lived for 20 years, and they may live much longer."
+  The Smithsonian National Zoo gives "about 15 years in human care." Animal
+  Diversity Web lists captive averages (14.3 years overall, 9.0 for females) and
+  no wild figure at all. Changed to "Not reported in the wild, though thought to
+  be long-lived (San Diego Zoo Wildlife Alliance); the widely quoted 15-20 years
+  is a captive figure", the same shape the crested gecko and green iguana entries
+  already use.
+- Checked and left alone: `adultSize` "17-24 inches (43-60 cm)". The old hub said
+  18 to 24 and no deep dive states a size, so there was no deep-dive conflict to
+  resolve, and the encyclopedia figure is well supported anyway. The Smithsonian
+  National Zoo gives the Northern "up to 22 inches (56 cm), and average about 17
+  inches (45 cm)"; the Australian Museum gives the Eastern "almost 600 mm in
+  total length"; PetMD gives "up to 20 inches and sometimes more" with Meraukes
+  at 25 to 30. The hub's Adult size row copies this field.
+
+### Dates
+
+`lastUpdated` and `lastReviewed` bumped to 2026-09-09 on the cost, tank setup and
+health issues guides, where numbers or facts changed. Not bumped on handling,
+feeding or enrichment, which took link-only edits.
+
+### Fixed the same day
+
+The hub rebuilt to the router shape (27 first-week rows, an 11 bullet emergency
+card off the health guide's four call-the-vet passages, 6 routes, a 13 item buy
+list with no prices, 3 FAQs copied verbatim from deep-dive frontmatter,
+difficulty Beginner/Intermediate matching the encyclopedia, costs and sections
+dropped); the tank setup guide's unsourced 110°F burn ceiling cut and its UVB
+range widened to what its sources state, in body and FAQ; the cost guide's
+thermostat row added, setup heading and FAQ and SEO fields resummed, vet table
+row aligned to the body, annual total recomputed; the health issues guide's 93%
+study named in the FunFact, the FAQ and Sources; five links added as listed
+above; the tank setup guide's Zen Habitats Sources entry repointed from the
+site's homepage to the lighting and heating guide actually opened for it; one
+encyclopedia field corrected against opened sources.
+
+### Open
+
+Cohabitation, brumation husbandry, the cleaning schedule, how to inspect an
+animal before buying, basking bulb wattage for a 4x2x2, and the adult weight
+figure the rewrite removed. The cost guide's missing retail price-check line.
+The health guide's homepage Sources entry.
+
+## White's Tree Frog (2026-09-09, first pass)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment). One independent Opus reader, run from
+the session against the pre-rewrite extract in `.reader/whites-tree-frog/`.
+The review below reads the old legacy hub (housing prose, a cost table, a
+checklist, five FAQs); the router hub was built from its findings the same
+day. There is no feeding guide and no legal guide in this set.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | A shopping checklist, a gut-load list, a supplement schedule and a quarantine window, and three of its numbers fight the deep dives. |
+| Encyclopedia | B | Thirty seconds, adult size and a lifespan range, and the 1790 naming story is the best writing in the set. |
+| Cost | B- | Useful ranges, but the monthly figure and the annual table do not agree. |
+| Handling | A- | Plain water only, nitrile gloves after lotion, 5 to 15 minutes, twice a week max. |
+| Health issues | A- | 3 to 4 insects 2 to 3 times a week, and fat over the tympanum and armpits as the obesity test. |
+| Tank setup | A- | 18x18x24, the temperature gradient, 50 to 60% baseline, branch 6 inches under the T5, bulb swap 9 to 12 months. |
+| Enrichment | A | The best page here, and honest that its evidence is red-eyed tree frogs rather than this species. |
+
+Set grade: B-. "The five deep dives are specific and usable; the hub,
+which is the page I land on first, contradicts them on water, humidity,
+and night temperature."
+
+### Hub versus the set, both sides quoted
+
+- **Water. The clinical one, and the hub was wrong.** The old hub said,
+  in its diet section: "Always use dechlorinated or reverse-osmosis water
+  for the water dish and for misting." Its checklist repeated
+  "Dechlorinated or RO water only (misting and dishes)", its health
+  section repeated "Always use dechlorinated or RO water for misting and
+  water dishes", and its cost table billed the reader for
+  "Dechlorinated/RO water treatment". The tank setup guide says: "Use
+  only dechlorinated tap water or spring water for misting and drinking,
+  never distilled or reverse-osmosis water." The reader's verdict was
+  "One of these is wrong and I cannot tell which," and a keeper following
+  the wrong one harms the animal, so this was researched rather than
+  reconciled by dropping hub prose.
+
+  Sources opened, ranked by RULES:
+  - Peer-reviewed: Dale DeNardo, "Amphibians as Laboratory Animals," ILAR
+    Journal 37(4), 1995, which calls water quality "probably the most
+    critical component of amphibian housing" and states: "Distilled and
+    deionized water is extremely hypo-osmotic, it should never be used
+    without the addition of salts," and "Hypo-osmotic conditions can cause
+    bloating and death in amphibians." For delicate species it names
+    "either commercially available spring water or ionically balanced
+    solutions made in-house from distilled water."
+  - Veterinary manual: the Merck Veterinary Manual's amphibian
+    environment and husbandry page, which requires water "clean and free
+    of toxins such as chlorine, ammonia, nitrite, pesticides, and heavy
+    metals" and describes removing chlorine by carbon filtration and
+    splitting the chloramine bond with a dechlorinating agent. It makes no
+    case for RO or distilled water at all.
+  - Established husbandry reference: Jennifer Macke's Caudata Culture
+    article on bottled water for amphibians, which quotes Wright and
+    Whitaker's *Amphibian Medicine and Captive Husbandry*: "Distilled and
+    reverse osmosis water contain none of the elements required by
+    amphibians and should not be used without modification," and adds that
+    RO or distilled water "has virtually no ions in it, so it causes more
+    work for the amphibian's kidneys."
+  - The site's own shared guide, `amphibian-quarantine-and-water-guide`,
+    already carried the same finding from the AZA Amphibian Husbandry
+    Resource Guide: "distilled water and reverse-osmosis (RO) water are
+    usually not electrolyte-balanced, and using either without rebalancing
+    through added buffers, electrolytes, and pH adjustment can be fatal to
+    amphibians."
+
+  The one source pulling the other way, recorded because it is real:
+  F. Harvey Pough, "Amphibian Biology and Husbandry," ILAR Journal 48(3),
+  2007, says "distilled, deionized, or spring water is preferable to
+  chlorinated tap water." That compares purified water against *untreated,
+  chlorinated* tap water, not against dechlorinated tap water, and it does
+  not survive DeNardo in the same journal on the hypo-osmotic point.
+
+  **The tank setup guide wins and did not change.** Every copy of the
+  hub's instruction is gone with the router rewrite (diet prose, health
+  prose, checklist line, and the `costs` block). The one surviving copy in
+  a deep dive, the cost guide's annual table cell, changed from
+  "Dechlorinated/RO water treatment" to "Dechlorinated water treatment".
+  The tank setup guide's sentence gained the reason and a link to the
+  shared water guide. A new hub row, sourced to that shared guide, now
+  states the AZA finding outright, so the hub says why rather than
+  restating the rule.
+
+- **Humidity.** The old hub said: "Humidity should be maintained at 50 to
+  70% during the day and 80 to 100% at night (mist in the evening to
+  simulate natural humidity cycles)." The tank setup guide says: "a
+  baseline around 50 to 60% with misting spikes up to 70 to 80% once or
+  twice daily, then letting it drop back down between mistings. Constant,
+  unbroken high humidity is directly linked to bacterial and red-leg
+  issues." The health guide independently blames "enclosures kept too
+  humid without adequate ventilation" for bacterial and skin infections,
+  so the hub was, as the reader put it, arguably prescribing the disease.
+  The hub's figure is retired by the rewrite; the router hub's Humidity
+  row quotes the tank setup guide's own sentence. Checked for surviving
+  copies across all five deep dives and the encyclopedia: none. 80 to 100%
+  appears nowhere else in the set.
+
+- **Night temperature.** The old hub said "dropping to 65 to 75 degrees F
+  at night" (and "Temperature should stay between 75 and 85 degrees F
+  during the day", and "Never let temperatures exceed 90 degrees F"). The
+  tank setup guide says "cool side around 70 to 75°F, a basking area
+  around 80 to 85°F, dropping into the mid-70s at night." The hub's
+  figures die with the rewrite. Checked for other copies: 65 to 75, 75 to
+  85, and 90 appear on no other page in the set.
+
+- **Feeding.** The old hub said "Adults eat every other day to 3 times per
+  week." The health guide says "keep adult feeding to roughly 3 to 4
+  appropriately sized insects, 2 to 3 times a week, rather than
+  free-feeding." The router hub's Feeding row now quotes the health
+  guide. No other copy of "every other day to 3 times per week" survives.
+
+- **Lifespan.** The old hub's FAQ said "15 to 20 years with excellent
+  care." The cost guide says "The Smithsonian's National Zoo states the
+  average lifespan is about 16 years, with one individual recorded living
+  21 years in human care. Other sources cite a slightly more conservative
+  10 to 15-plus years with excellent care." The cost guide names its
+  source and the hub named none, so the hub's figure is gone; the router
+  hub's Lifespan row keeps both of the cost guide's ranges, and the cost
+  guide's own lifespan FAQ is one of the hub's three FAQs.
+
+- **UVB.** The old hub said UVB is "now strongly recommended by amphibian
+  veterinarians" and its FAQ added claims about field studies, bone
+  density, calcium metabolism and immune function that no deep dive
+  carries. The tank setup guide says "Recommended, though not strictly
+  required: the species survives without UVB and does better with it."
+  Neither page's Sources block states the stronger claim, and the tank
+  setup guide is the lighting page, so its hedge wins and the hub's
+  stronger claim is gone rather than restated.
+
+### Deep dives against each other
+
+- **Group size, fixed.** Tank setup: "18 inches long by 18 inches wide by
+  24 inches tall is the standard minimum for one adult... and 24x18x24
+  inches works well for a small group of two to four." Enrichment: "A tall
+  18x18x24 terrarium is a workable footprint for one or two adults."
+  Neither Sources block states an enclosure dimension: the enrichment
+  guide's four sources are all enrichment research (Michaels/Antwis/
+  Preziosi 2014 in PLoS ONE, the 2014 amphibian enrichment review, Hurme
+  et al. on dendrobatids, Burghardt 2013), and the tank setup guide cites
+  two husbandry references, one of them species-and-topic specific
+  (Vision Products, "White's Tree Frog Enclosure Requirements"). Same
+  tier, so the page whose subject is the topic wins: enclosure size
+  belongs to the tank setup guide. Enrichment changed to "one adult".
+
+- **The cost guide fought itself, fixed.** Prose and H2: "Ongoing Costs:
+  Roughly $20 to $60 a Month." Its own annual table totals $155 to $285,
+  which is about $13 to $24 a month. Nothing sources either figure, and
+  this is a same-page contradiction rather than a cross-page one, so it is
+  resolved the way the axolotl legal guide's jurisdiction count was: the
+  prose is corrected to read off the article's own table. The heading, the
+  body sentence, and the monthly-cost FAQ all now say $13 to $24, and a
+  sentence under the table shows the arithmetic.
+
+- **The cost guide's setup table, fixed.** The prose said the table
+  "covers the largest single expense, the terrarium itself, plus a heat
+  source, thermometer and hygrometer, a low-level UVB fixture and bulb,
+  substrate, climbing branches, and decor," while the table has no heat
+  source line and no substrate line. Rewritten to name what the table
+  actually lists and to say plainly that a heat source, substrate and
+  climbing branches sit on top of those line items. No price was invented
+  and no row was added.
+
+- **Left alone, not a conflict.** The cost table's "Low-output UVB (T5 HO
+  5%)" against the tank setup guide's "5 to 7% range": 5% is a product
+  inside the range, not a competing figure. The Pacman frog contrast
+  (handling, cost, tank setup, health) and the obesity material (health
+  and enrichment) repeat across pages usefully rather than redundantly.
+  The dechlorination rule repeats on handling, tank setup and enrichment
+  and now agrees everywhere.
+
+- **Noted, not fixed.** The enrichment guide says "do not treat handling
+  as enrichment for an amphibian, because for this class it mostly is
+  not," while the old hub filed all its handling advice under Enrichment.
+  The router hub has no enrichment prose at all, so the tension is gone by
+  construction rather than resolved.
+
+### Gaps, checked against the Health and More list first
+
+The sidebar's Health and More list for this species is: Salmonella and
+Reptile Hygiene; Tubbing, Cooling, and Salt Baths for Sick Axolotls;
+Amphibian Quarantine, Acclimation, and Water Hardness; and Four Pets, Four
+Different Lessons.
+
+Covered by a shared guide, so not real gaps, and each is now a hub row:
+quarantine duration (the amphibian quarantine guide has Merck's 6 to 8
+weeks and the AZA's 30-day minimum with 60 days preferred), how to move a
+new animal (a container, not a net), what counts as safe water, and the
+hygiene protocol.
+
+Genuinely not covered anywhere in the set or the shared guides:
+
+- **A feeding guide.** There is none. The species has no feeding article,
+  and the health guide's portion line is the only feeding schedule left in
+  the set.
+- **The supplement schedule.** "Dust feeders with calcium w/D3 at every
+  other feeding and a reptile multivitamin once weekly" and the gut-load
+  list (collard greens, carrot, sweet potato, commercial gut-load powder,
+  24 to 48 hours before offering) existed **only on the hub**, with no
+  deep dive behind them. They are gone with the hub prose and nothing was
+  invented to replace them. The buy list still names calcium w/D3 and a
+  reptile multivitamin, which the cost guide's annual table also carries,
+  so a reader still knows to buy them; nobody now tells them how often to
+  dust. This is the largest real loss of the rewrite and it needs a
+  feeding guide, not a hub row.
+- **Enclosure cleaning frequency and full substrate change interval**,
+  even though the health guide blames red-leg on "a dirty or poorly
+  ventilated enclosure".
+- **Water dish depth and how often it is changed**, though the health
+  guide names "an infrequently cleaned water dish" as a cause.
+- **A power outage or vacation plan.** There is no amphibian power-outage
+  guide wired to this species (the aquarium one is for aquatic setups and
+  is not in this sidebar), so there is no row to add and no page to point
+  at.
+- How to choose a healthy frog and where to buy one; male calling and how
+  loud; sexing, and what to do if a group breeds; a body condition test
+  more precise than fat bulging over the tympanum and armpits; normal
+  skin sloughing and appetite pauses.
+
+### Stranded questions, raised on one page and answered on another
+
+- Handling says "dechlorinating" without saying what counts. The tank
+  setup guide and the shared water guide both do. Fixed with a link.
+- Health blames constant humidity with no numbers; tank setup has them.
+  Now bridged by the hub's Humidity row.
+- Health names MBD and UVB with no bulb spec; tank setup has it. Now
+  bridged by the hub's UVB row.
+- Cost lists bulb replacement every 9 to 12 months with no reason; the
+  tank setup guide's fun fact is the reason. Now in the hub's UVB row.
+- Enrichment says "watch the weight" with no threshold; the health guide
+  has the test. Fixed with a link.
+- Health says quarantine with no duration; the shared quarantine guide has
+  it. Fixed with a link, and it is a hub row.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done? |
+|---|---|---|---|
+| Hub | "Humidity should be maintained at 50 to 70%..." | Tank setup guide | n/a, the sentence no longer exists; the router hub links every row to its source |
+| Encyclopedia | "They are one of the most docile frog species..." | Handling guide | Not added: the encyclopedia is structured data with no in-body link slot |
+| Cost | "That covers the largest single expense, the terrarium itself, plus a heat source" | Tank setup guide | Added, on the rewritten sentence, as the article's one sibling link |
+| Handling | "Using tap water straight from the faucet on hands or gloves without dechlorinating it first" | Amphibian Quarantine, Acclimation, and Water Hardness | Added |
+| Health | "quarantine any new or suspect animal immediately" | Same quarantine guide, which is where the duration lives | Added, on the following sentence's "quarantine of new frogs", which is where the clause about the window fits |
+| Tank setup | "Use only dechlorinated tap water or spring water" | Same quarantine and water guide | Added, with the AZA reason |
+| Enrichment | "Watch the weight" | Health issues guide | Added, as the article's one sibling link |
+
+Five of the seven added. Both skips are structural, not choices. Every
+article is at or under one sibling link, and no link sits before the first
+H2 or inside a ComparisonTable cell.
+
+### Trust
+
+The three things that cost the reader trust were the RO water
+contradiction, the hub's 80 to 100% night humidity against its own health
+section, and a monthly cost figure roughly double its own table. All three
+are now gone. What won the reader back, from enrichment: "Michaels, Antwis
+and Preziosi ran the study on red-eyed tree frogs... Not this species, but
+another arboreal tree frog, which makes it the closest usable evidence by a
+wide margin." Most convincing single sentence in the set, from the same
+page: "A White's tree frog will swallow anything that fits, including a
+smaller frog, and a mixed-size group is a feeding accident waiting to
+happen."
+
+### The reader's two changes
+
+1. "Make the hub copy its numbers from the deep dives rather than restate
+   them, starting with water and humidity." Done: the hub is a router,
+   every row is copied from the deep dive named in its `source`, and it
+   keeps no figure of its own.
+2. "Then write a feeding guide and move the supplement schedule into it."
+   Not done, and out of scope for a pass that may not create articles. The
+   schedule is recorded above as lost, in the reader's own words, so it
+   can be recovered when the feeding guide is written.
+
+### Unsourced, needs a fact-check
+
+- The cost guide's Sources block is two bare homepages
+  (`https://nationalzoo.si.edu/` and `https://treeoflifeexotics.vet/`),
+  which RULES forbids as sources. The Smithsonian page that actually
+  states "The average life span is about 16 years, but one is recorded to
+  have lived 21 years in human care" is
+  `https://nationalzoo.si.edu/animals/whites-tree-frog`, opened and
+  confirmed during this pass. Not changed here, because replacing a
+  Sources entry is a deletion under the pass's rules; flagged for Mike.
+- The monthly cost figure, $13 to $24, is the cost guide's own table
+  arithmetic and nothing more. No source states a monthly cost for this
+  species.
+- The setup total, $200 to $400, and every retail range in both tables are
+  unsourced snapshots. The cost guide also carries no "Prices last checked"
+  line, which RULES asks for under the last cost table.
+
+### Encyclopedia
+
+The `whites-tree-frog` entry's `wildLifespan` read "7-20 years (up to 21
+years recorded)". The "21 years recorded" is the Smithsonian's captive
+record, presented in a field labelled wild, which is the same failure the
+Russian tortoise entry had in batch A. Researched:
+
+- Smithsonian's National Zoo, White's tree frog: "The average life span is
+  about 16 years, but one is recorded to have lived 21 years in human
+  care." Human care, not wild.
+- Animal Diversity Web (University of Michigan Museum of Zoology),
+  *Litoria caerulea*: gives "Average lifespan 16.0 years" and "Average
+  lifespan 8.5 years", both labelled **captivity**, and "one is recorded
+  to have lived 21 years" in captivity. It states no wild lifespan.
+- The Australian Museum's Green Tree Frog page gives size and breeding
+  biology and no lifespan figure at all.
+
+No source found gives a wild lifespan for this species. The field now
+reads: "Not well documented in the wild; the quoted figures are captive,
+an average of about 16 years with one individual recorded at 21 years in
+human care." That is the same shape the crested gecko entry already uses
+for its own undocumented wild lifespan. Nothing else in the entry was
+touched. `difficulty` is "Beginner" and the hub already matched it, so the
+hub did not change.
+
+### Dates
+
+`lastUpdated` bumped to 2026-09-09 on the cost guide (three figures
+changed) and the tank setup guide (a sourced clause added). Not bumped on
+the handling guide or the health issues guide, where only a link changed.
+Not bumped on the enrichment guide: a number did change there, but its
+`date` is 2026-10-26 and it has not published yet, so a `lastUpdated` of
+2026-09-09 would sit before its own publish date. Flagged rather than
+guessed at. No `lastReviewed` was touched.
+
+### Open
+
+- No feeding guide, and with it the supplement schedule and the gut-load
+  list, both of which existed only on the old hub. This is the one real
+  content loss in the rewrite.
+- No power outage or vacation plan reachable from this species, and no
+  shared amphibian guide covers it.
+- The cost guide's two homepage Sources entries, and its missing "Prices
+  last checked" line.
+- The enrichment guide's `lastUpdated`, held at its future publish date.
+- Three other amphibian legacy hubs in the same data file (fire-bellied
+  toad, Pacman frog, tiger salamander) still tell readers to use RO water
+  on an amphibian, the same error this pass corrected here. Out of scope
+  for batch E; listed in the batch's shared-edits notes.
+
+## Red-Eared Slider (2026-09-09, first pass)
+
+Batch E. Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal). One independent Opus reader,
+run against `.reader/red-eared-slider/` before the rewrite, under the READMEFIRST
+set test prompt; the raw output is in the reader log entry for this date. The
+review below reads the old legacy hub (housing, diet, enrichment and health
+prose, two cost tables, a ten-item checklist, six FAQs); the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | A compressed rerun of five deep dives, and it contradicts them. |
+| Encyclopedia | B | The 1975 FDA history and the export loophole are real content. |
+| Cost | B | Useful ranges, and one page quoting two different vet prices. |
+| Handling | B- | Finished, thin. Scoop from underneath, both hands, no hand-feeding. |
+| Health issues | A | The MBD versus pyramiding split is the best thing in the set. |
+| Tank setup | A | 10 gal per inch, depth 1.5 to 2x shell, Ferguson Zone 3, 10 to 12 hr photoperiod. |
+| Feeding | A | Schedule, portion, no salivary glands, seven reasons for refusal. |
+| Enrichment | A- | A priority order that follows from the study, with escape behavior as the metric. |
+| Legal | A- | My state's rule and the release ban, docked for a stale clock. |
+
+Set grade: B. "The deep dives are genuinely good and sourced; the hub drags the
+set down by contradicting them."
+
+Hub grade after the rebuild: A-. Twenty-six first-week rows, every one copied
+from the deep dive named in its source, seven routes, six emergency bullets, a
+ten-item buy list with no prices, three verbatim FAQs. Held back from an A
+because two rows (Cold water floor, Daily health check) are the only places a
+reader meets those figures at all, and because the old hub's nitrate ceiling
+left the site rather than moving into a deep dive.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, all resolved by the router rebuild.
+
+- Tank size. Old hub, in the housing prose and again in the checklist and two
+  FAQs: "A 10-inch adult female (females grow significantly larger than males)
+  needs a 100-gallon or larger aquarium or stock tank." Tank setup guide:
+  "Roughly 10 gallons of water per inch of shell length is the rule of thumb VCA
+  Animal Hospitals gives for housing aquatic turtles. In practice, that means a
+  practical adult minimum of 75 to 100 gallons for one turtle, with many
+  experienced keepers recommending 100 to 125 gallons or more." The tank setup
+  guide is the subject page and its cited source (VCA Animal Hospitals, housing
+  aquatic turtles) states the rule; Tree of Life Exotic Pet Medical Center,
+  opened this pass, independently gives "for most adult turtles this results in
+  75-100 gallons PER turtle." The hub's Tank size row now quotes the tank setup
+  sentence, both ranges kept.
+- Water temperature, hub against itself. Old hub housing prose: "Water
+  temperature should be maintained at 72 to 78 degrees F with a submersible
+  aquarium heater." Old hub checklist, eight lines later: "Water heater (75 to
+  80 degrees F)." Tank setup guide: "Water temperature should sit at 72 to 82°F,
+  the range LafeberVet's aquatic turtle care sheet gives, though stability
+  matters more than hitting an exact number." Two hub figures, neither matching
+  the deep dive or each other. The hub keeps no figure of its own now; its Water
+  temperature row quotes the tank setup sentence.
+- Adult feeding interval. Old hub: "Feed juveniles daily and adults every other
+  day." Feeding guide: "Juveniles eat daily, adults move to every 2 to 3 days
+  rather than daily." The feeding guide's phrasing is an explicit correction of
+  the every-other-day rule, so the hub was repeating the thing the deep dive
+  exists to fix. The hub's Feeding schedule row now quotes the feeding guide.
+- The pellet percentage. Old hub, in the diet prose and again in a FAQ:
+  commercial pellets "should form the nutritional foundation - approximately 50%
+  of the diet." Feeding guide: "Sources disagree meaningfully on the exact
+  percentage split (see the FAQ above), so treat any specific number as a rough
+  guideline, not a settled figure, the direction is what matters." The deep dive
+  refuses to give a number and says why; the hub gave one anyway. The hub's Diet
+  split row now quotes the refusal, including the hedge.
+- Lifespan. Old hub FAQ: "20 to 40 years in captivity with appropriate care."
+  Cost guide: "20 to 30 years with good care is the consensus range, with 20 to
+  25 cited as typical," and its FunFact adds "a handful of far less consistently
+  documented claims put the ceiling as high as 40 to 70 years." The cost guide's
+  cited source, Tree of Life Exotic Pet Medical Center, says "average 20-30
+  years, rarely up to 70 years," which supports the deep dive and not the hub's
+  40-year captive ceiling. The hub's Lifespan row now quotes the cost guide.
+- Glass behavior. Old hub enrichment prose: "Many sliders track movement outside
+  their tank and approach the glass when they see their keeper - this is
+  associative learning and a sign of normal, healthy cognitive engagement."
+  Enrichment guide, "What Not to Do": "Do not treat constant glass-working as a
+  personality trait," and, in the body, "If your turtle is working the front
+  glass constantly, take the escape-behavior finding seriously before you buy a
+  colored object." A recommendation conflict, not a number: the hub read the
+  behavior as a good sign, the deep dive reads it as a welfare signal. The
+  enrichment guide cites the pond slider study for it and is the subject page,
+  so it keeps its position; the hub's claim is gone rather than moved, and the
+  hub's Enrichment row now quotes the escape-behavior sentence.
+- Costs, line by line. The old hub carried the cost guide's entire setup and
+  annual tables as its own `costs` block, including "Annual vet wellness check:
+  $60 to $100," which was the figure the cost guide's own body contradicted (see
+  below). The router hub has no cost table; its Budget row quotes the cost
+  guide's totals and vet prices.
+
+Also gone with the old hub, and deliberately not moved into a deep dive: the
+weekly 25 to 30% water change and the "nitrate should stay below 40 ppm"
+ceiling. The reader named those as the hub's uniquely-owned, actionable content,
+so the water-change half was replaced with a sourced sentence in the tank setup
+guide (VCA Animal Hospitals: "the tank water must be changed at least once
+weekly, or more frequently if it becomes dirty") and is now a hub row. The 40
+ppm nitrate ceiling is not stated by any source this pass opened and is not on
+any deep dive, so it left the site rather than being rehomed. Listed under
+"Unsourced, needs a fact-check".
+
+### Deep dives against each other
+
+- Basking temperature. Tank setup guide: "Basking surface temperature should
+  reach 85 to 95°F per that same guidance," the guidance being LafeberVet's
+  aquatic turtle care sheet, which is in its Sources. Feeding guide: "Target
+  roughly 75 to 80°F water with an 85 to 90°F basking spot." None of the feeding
+  guide's four sources states 85 to 90; the tank setup guide is the subject page
+  for temperature and its source states its figure, and Tree of Life, opened
+  this pass, independently gives "a bask spot of 85-95 degrees F." Feeding
+  changed to 85 to 95°F. The water half of that same feeding sentence (75 to
+  80°F) sits inside the tank setup guide's 72 to 82°F range and is framed as a
+  target rather than a limit, so it was left alone; the shared reptile emergency
+  plan guide gives the same 75 to 80°F as the slider's normal water band.
+- Water volume. Tank setup guide: "a practical adult minimum of 75 to 100
+  gallons for one turtle, with many experienced keepers recommending 100 to 125
+  gallons or more." Enrichment guide, twice (body and FAQ): "An adult needs water
+  volume in the low hundreds of gallons." The tank setup guide owns sizes and
+  cites VCA for the rule of thumb the number comes from; the enrichment guide
+  cites the pond slider study and Case et al., neither of which gives a volume.
+  Both enrichment sentences changed to carry the tank setup figures, both ranges
+  kept.
+- Portion, inside the feeding guide. "Offer as much as the turtle can finish in
+  about 15 to 20 minutes," then, one sentence later, "A juvenile-specific
+  portion cue some sources use: roughly the size of the turtle's own head, or
+  whatever it clears in 10 to 15 minutes." Reading it cold, that is one page
+  giving two portion windows. It is really a general rule and a juvenile-only
+  cue, so no number changed: the second sentence now says so out loud ("For
+  juveniles specifically, some sources use a tighter cue instead"). Both figures
+  and the "some sources use" hedge survive.
+- Vet cost, inside the cost guide. Table: "Annual vet wellness check | $60 -
+  $100." Body: "Routine wellness exams often run $80 to $180." FAQ, agreeing
+  with the body: "Routine wellness exams run $80 to $180." The page's only
+  source, Tree of Life Exotic Pet Medical Center, was opened this pass and states
+  no prices at all, so nothing settles it from outside. Two of the three
+  statements say $80 to $180 and it is the more specific claim, so the table cell
+  changed to "$80 - $180". That moves the annual sum from $360 to $640 (which the
+  page rounded to "Roughly $350 to $650 a Year") to $380 to $720, so the section
+  heading, the FAQ, and the seoDescription all changed to $380 to $720 in the
+  same commit. Listed under "Unsourced, needs a fact-check", because neither
+  vet figure is attributable.
+
+Read twice or more with no conflict: adult size, UVB being mandatory,
+over-filtering, the fully drying basking platform, and never releasing a slider.
+Four pages saying the same three things reads as reinforcement here rather than
+padding, because each page says it for a different reason.
+
+### Gaps, checked against the Health and More list first
+
+Real:
+- Choosing a healthy hatchling at purchase, quarantine on arrival, transport,
+  and acclimation. The reptile guides in the Health and More list cover hygiene,
+  stool, shedding, thermostats and the emergency plan, but no quarantine guide
+  is listed for this species and no deep dive covers buying. Still open.
+- What a monthly deep clean involves, and how to swap filter media without
+  crashing the biofilter. Nothing in the list covers it. Still open, and note the
+  old hub's "monthly deep cleans are minimum maintenance" left the site with the
+  hub prose, so nothing now asserts it.
+- Outdoor pond specifics: depth, overwintering, predator-proofing. Four pages
+  call a pond ideal or excellent. The shared outdoor reptile housing guide is not
+  in this species' Health and More list. Still open.
+- Space and basking-spot allowance per additional slider. The handling guide
+  warns that "housing multiple sliders without enough space and basking spots"
+  causes aggression, stacking and injuries, and no page says how much is enough.
+  Still open; the warning is now a hub row so at least a reader meets it.
+
+Not real, covered by the sidebar already or closed this pass:
+- Cycling a tank before the turtle arrives. The reader's biggest gap. The shared
+  aquarium cycling guide is not in this species' Health and More list, but it
+  exists and covers the nitrogen cycle in full, so the tank setup guide now links
+  it in the filtration paragraph. Closed with a link, not new content.
+- Salmonella and hygiene, and the daily health check on a species whose waste
+  disperses into the water. Both shared guides in the list, and both are now hub
+  rows.
+- What to do when the water goes cold. Shared reptile emergency plan guide, whose
+  cold-floor table carries a slider row. Now a hub row.
+- Brumation protocol and egg binding. The shared tortoise brumation guide and the
+  shared tortoise sexing, eggs and egg binding guide both scope themselves out of
+  aquatic species in their own words ("that's a different species than the ones
+  this guide covers"; "treat this as a tortoise and box turtle guide rather than
+  a universal chelonian one"), so neither became a hub row and neither got an
+  in-body link. The feeding guide's own brumation entry and the tank setup
+  guide's nesting sentence are the only coverage, and both are now hub rows.
+
+### Stranded questions
+
+- The handling guide warns about housing multiple sliders and never points at the
+  tank setup guide for volume. Both are in the Deep Dive list on every page, so no
+  in-body link was added; the hub's Cohabiting and Tank size rows now sit two rows
+  apart.
+- The feeding guide lists gravidity as a reason for refusal; the tank setup guide
+  separately says gravid females need a nesting site or risk egg binding. Neither
+  mentioned the other. Both are now hub rows, adjacent in the card.
+- The feeding guide says digestion stops below about 72°F; the tank setup guide
+  owns the heater spec. Same reason, no link added, both are hub rows.
+- The old hub told a reader ammonia must read zero and never said how to get
+  there. Answered by the tank setup guide's new cycling link.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Sale of sliders with shells under 4 inches is illegal in the US under federal law." | Legal guide | Yes, as a route and a Legal row; the prose is gone |
+| Encyclopedia | "in 1975 the FDA banned the sale of turtles with a shell under four inches" | Legal guide | Skipped: the encyclopedia is not a deep dive and is out of scope for this pass |
+| Cost | "Federal law actually restricts the sale of turtles under 4 inches, not ownership." | Legal guide | Yes. The one sibling link this article is allowed, and the legal guide is the direct answer to the sentence's own question |
+| Handling | "Skipping thorough hand-washing before and after contact, Salmonella risk with aquatic turtles is real, not theoretical" | Salmonella and reptile hygiene guide | Yes |
+| Health issues | "A canister filter that's genuinely powerful enough for your tank volume, paired with a water test kit" | Tank setup guide | Skipped, and a better target used instead: the page's UVB sentence now links the cross-species UVB lighting guide, which does not count against the one-sibling limit and answers the question the MBD section raises |
+| Tank setup | "Gravid females need a nesting option, without a suitable place to lay, a female risks egg-binding" | Tortoise sexing, eggs and egg binding guide | Skipped: that guide explicitly scopes itself to land tortoises and box turtles and says an aquatic species "nests in a different way entirely". The page instead gained a link to the aquarium cycling guide, which closes a real gap |
+| Feeding | "Brumation. A natural cold-season slowdown, roughly October through March." | Tortoise brumation guide | Skipped: the brumation guide says outright that aquatic turtles are "a different species than the ones this guide covers" |
+| Enrichment | "An adult needs water volume in the low hundreds of gallons." | Tank setup guide | Skipped: the sentence now carries the tank setup figures directly, so the conflict is gone and a link is not needed |
+| Legal | none needed, it links out well already | | |
+
+Four links added. Three go to cross-species or shared guides (hygiene, UVB
+lighting, aquarium cycling) and do not count against the one-sibling-link limit;
+the fourth is the cost guide's single allowed sibling link. None sits before a
+first H2, none is inside a ComparisonTable cell, and each sentence is about the
+animal.
+
+### Trust
+
+What made the reader doubt the set: the hub disagreeing with its own checklist
+on water temperature and with four deep dives on everything else; the cost guide
+quoting two vet prices on one page; and the legal guide saying "That deadline is
+days away as of this writing" about a July 30, 2026 filing, with no date on the
+page. Reading it in September 2026, that sentence is wrong, and the reader said
+so directly: "I cannot tell how much else is stale."
+
+Most convincing, from the feeding guide: "sliders have no salivary glands and can
+only eat while at least partially submerged, always offer food in the water,
+never on the basking dock." Runner-up, from enrichment: "If your turtle is
+working the front glass constantly, take the escape-behavior finding seriously
+before you buy a colored object."
+
+### The reader's two changes
+
+1. Strip the hub to routing plus the water-maintenance schedule it uniquely owns,
+   and reconcile tank size, water temperature, feeding interval and vet cost to
+   one figure each. Done by the router rebuild: the hub now keeps no figure of
+   its own, the water-change half of the maintenance schedule moved into the tank
+   setup guide with a VCA citation and came back as a hub row, and all four
+   numbers resolve to the deep dive that owns them.
+2. Date-stamp the legal guide. Done, and better than a stamp: the relative clock
+   is gone. "That deadline is days away as of this writing" became "That date has
+   now passed: the filing window closed on July 30, 2026, and CPW has published no
+   extension, so an owner who never filed should contact CPW directly instead of
+   assuming the legacy route is still open." The section heading, the intro, the excerpt, the seoDescription,
+   the description, the state table's Colorado cell and the Colorado FAQ all
+   changed with it, so nothing on the page still reads as if the deadline is
+   ahead. Checked against Colorado Parks and Wildlife's approved Chapter W-7
+   (March 4, 2026), read in full: red-eared sliders are listed as invasive
+   herpetofauna under #708, the Basis and Purpose says "Legacy reporting is
+   required for possession of species noted in the Chapter acquired prior to May
+   1, 2026," and July 30, 2026 is the chapter's legacy filing date. No statute
+   citation, jurisdiction, date or hedge was changed.
+
+### Unsourced, needs a fact-check
+
+- Vet costs. The cost guide's only source states no prices, so both the $80 to
+  $180 exam range that won and the $150 to $400 emergency range beside it are
+  unattributed. The whole cost guide runs on one Sources entry and carries no
+  "Prices last checked" line under its tables, which RULES asks for whenever a
+  cost guide quotes retail prices. Out of scope for a links-and-numbers pass.
+- Nitrate under 40 ppm. Carried only by the old hub, stated by no deep dive and
+  by no source opened this pass. Dropped rather than rehomed. If it is right, it
+  belongs in the health guide with a citation.
+- The cost guide's $10 to $30 a month food line and $10 to $25 a month
+  electricity line, and the whole setup table, are equally unattributed.
+
+### Encyclopedia
+
+Checked the red-eared slider entry in `src/lib/data/encyclopedia/turtles.js`
+against the deep dives' sourced figures. One field changed.
+
+- Wild Lifespan, "20-40 years", against the cost guide's sourced captive figure
+  of "20 to 30 years with good care." A wild range that tops a captive range is
+  the same shape of problem batch A found on the Russian tortoise, so it was
+  researched rather than assumed. Animal Diversity Web (University of Michigan),
+  already the tank setup guide's source for adult size, states: "Slider turtles
+  can live up to 30 years in the wild" and "Captive sliders can live up to 41.3
+  years," and adds that average longevity is not well documented for either.
+  Changed to "Up to 30 years (Animal Diversity Web, University of Michigan, which
+  puts captive sliders at up to 41.3 years and notes average longevity is not
+  well documented for either)". Only that field was touched.
+- Adult Size, "5-12 inches (13-30 cm); females significantly larger." Animal
+  Diversity Web puts the average adult female at about 10 inches and the male at
+  about 7, which the tank setup guide quotes. Both sit inside the encyclopedia
+  range, so there is nothing to reconcile. Left alone.
+- Difficulty, "Advanced". The hub already matched. Unchanged.
+- Conservation, "Least Concern (IUCN); invasive outside native range", and the
+  history section's 280,000 Salmonella infections, the 1975 FDA rule and the
+  export loophole. All consistent with the legal guide and the tank setup guide's
+  PLOS ONE FunFact. No statute, date or jurisdiction touched.
+
+### Dates
+
+`lastUpdated` and `lastReviewed` bumped to 2026-09-09 on the cost, feeding, tank
+setup and legal guides, all of which had a number or a fact change. Not bumped on
+the handling and health guides, which only gained a link. Not bumped on the
+enrichment guide either: its `date` is 2026-10-26, so it has not published yet
+and a 2026-09-09 review stamp would sit before its own publish date.
+
+### Open
+
+- The four real gaps above: buying and quarantine, deep cleaning and filter
+  media, outdoor pond build, and per-turtle space when cohabiting.
+- The cost guide's single Sources entry and missing "Prices last checked" line.
+- The hub's Cold water floor row (65 to 70°F, from the shared emergency plan
+  guide) sits four rows above the Water temperature row (72 to 82°F, from the
+  tank setup guide). They answer different questions, a threshold to act on
+  versus a range to provide, and the labels say so, but this is the same shape as
+  the leopard gecko hub's 65°F/60°F pair that a reader flagged. Worth a look.
+
+## Hognose Snake (2026-09-09, first pass)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment, legal). One independent Opus reader on the pre-rewrite
+set; raw output filed separately. The router hub was built from its findings the
+same day. This species has no feeding guide, and that shapes most of what
+follows.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | The only page carrying feeding at all, and the single biggest source of conflict in the set. |
+| Encyclopedia | C- | Ninety seconds, and nothing to act on except that most animals sold are captive-bred. |
+| Cost | A- | Morph price tiers, $200 to $500 setup, $10 to $25 a month, vet line items. |
+| Handling | B- | Wash hands, don't handle after feeding, don't panic at the hood. No actual technique. |
+| Health issues | B+ | Five named conditions with causes and prevention. |
+| Tank setup | A- | Sizes by sex, temps, humidity, substrate ratio, lighting. |
+| Enrichment | A | Best-written page here: deep substrate on the cool end, and a priority order. |
+| Legal | A | A state table with citations and an honest unverified section. |
+
+Set grade: B-. "Four excellent deep dives undermined by a hub that disagrees
+with them on humidity, temperature, and day cycle."
+
+Hub grade: C, and it earned it. The old hub was an unreconciled older draft
+sitting on the page navigation lands on first.
+
+### Hub versus the set, both sides quoted (all resolved by the router rebuild)
+
+- **Humidity, the one that mattered.** Old hub: "Ambient humidity of 40 to 60%
+  is appropriate, rising during shed." Tank setup: "30 to 50% ambient humidity,
+  genuinely on the dry side compared to many other pet snakes." The health
+  guide blames both of the species' top two conditions on the same variable
+  ("respiratory infection and scale rot, both trace back to the exact same root
+  cause: humidity or dampness running too high"), so a hub telling a new keeper
+  to run wetter than the setup guide was the worst possible disagreement to
+  leave standing. Tank setup wins: it is the subject-matter page, and its cited
+  source (ReptiFiles, Western Hognose Snake Care) states the low range, with The
+  Bio Dude's care sheet independently giving "average of 30-50% humidity" when
+  opened for this pass. The old hub's 40 to 60% was unsourced on the page. The
+  router hub now copies the tank setup guide's sentence and its own humidity FAQ
+  verbatim, so 40 to 60% survives nowhere on the site for this species: the
+  hub's second copy of it (the "Do hognose snakes need a humid hide?" FAQ) went
+  with the old FAQ block, no shared reptile guide carries a hognose humidity
+  row, and the corn snake vs hognose guide already said 30 to 50%.
+- **Activity pattern, because the lighting rests on it.** Old hub: "Hognose
+  snakes are crepuscular, most active in the morning and evening." Tank setup:
+  "genuinely diurnal, active during the day rather than at night or dusk," and
+  its whole lighting section follows from that ("a low-output linear T5 bulb
+  spanning part of the enclosure is increasingly recommended for this diurnal
+  species"), as does the enrichment guide's basking-surface placement. Diurnal
+  wins on sources: ReptiFiles calls the species diurnal and most active in the
+  morning and late afternoon, and The Bio Dude describes it as "diurnal which
+  means they can also be found occasionally aboveground basking or hunting". The
+  old hub's crepuscular line cited nothing. This was resolved rather than
+  dropped: the router hub carries a Lighting row copied from the tank setup
+  guide that states the diurnal reading and the 12-hour cycle it justifies, and
+  the hub comment records which figure was retired and why.
+- **Heat.** Old hub: "a warm hide with a belly-heat surface temperature of 85 to
+  90 degrees F on an under-tank heater with a thermostat, a cool hide at 72 to
+  76 degrees F." Tank setup: "Basking area around 90 to 95°F on one end, cool
+  side 70 to 75°F, with a night temperature around 75 to 78°F," with a halogen
+  basking bulb over the substrate preferred and the heat mat named as the older
+  advice. Tank setup wins by construction (the hub keeps no figure of its own);
+  the Bio Dude care sheet opened for this pass gives the same 90-95°F basking
+  and 70-75°F cool zone. The hub's Heat row keeps the setup guide's hedge that
+  the mat-versus-halogen question is a genuine point of disagreement.
+- **Substrate depth.** Old hub: "4 to 6 inches." Tank setup: "3 to 6 inches of
+  loose, dry, diggable substrate." Hub now copies 3 to 6 inches with the 70/30
+  soil-to-sand ratio the setup guide states.
+- **Enclosure.** Old hub gave one adult size ("A 36x18x18\" or 36x18x12\"
+  enclosure"). Tank setup splits by sex: males a 20-gallon equivalent "around
+  30x13x13 inches", females a 40-gallon equivalent "36x18x16 inches", with a
+  2x2x2 foot PVC enclosure working for either. The split is kept in the hub row,
+  not flattened.
+- **Venom and bite severity, the reader's safety question.** Old hub FAQ: bites
+  "cause minimal local irritation at most", and the venom is "entirely harmless
+  to humans". Legal guide: "A real medical case report on a keeper bitten by a
+  Western hognose during feeding documented local swelling, bruising, and mild
+  cellulitis, with a full recovery in about five months and no systemic
+  effects." The old hub loses outright; see the deep-dive section below for how
+  the handling guide was reconciled to the legal guide.
+- **Feeding place.** Old hub treated a separate feeding container as a
+  picky-eater trick; the health guide calls it "the single most effective
+  prevention" for impaction and the tank setup guide states it flatly ("Feed
+  your snake off the substrate, in a separate container, to prevent impaction").
+  The hub's Where to feed row now copies the health guide.
+
+`node scripts/check-species-numbers.mjs hognose-snake` after the rebuild: no
+line marked `hub` disagrees with the deep dive its row names. The humidity
+conflict group is gone entirely. What remains flagged is grouping noise (a
+sentence carrying two ranges, cost-table line items, the route line quoting the
+cost guide's own $200 to $500) plus one genuine encyclopedia item, below.
+
+### Deep dives against each other
+
+- **Bite severity, handling versus legal.** Handling said "A documented bite
+  case in the scientific literature caused local swelling and bruising with no
+  wider health effects" and closed "a hognose bite is not something to be
+  genuinely afraid of." Legal said "local swelling, bruising, and mild
+  cellulitis, with a full recovery in about five months and no systemic
+  effects." Both describe the same paper. Weinstein and Keyler (2009), *Toxicon*
+  54(3), 354-360, the case report the handling guide already cited in its own
+  Sources, was opened for this pass: the bite produced marked edema, ecchymoses,
+  lymphadenopathy and cutaneous signs suggestive of mild cellulitis with blister
+  formation, no systemic effects, and recovery complete after approximately five
+  months, with the authors concluding the species should not be considered
+  dangerous but handled thoughtfully. The legal guide's version is the accurate
+  one and it wins; the handling guide changed to match, keeping every hedge it
+  had ("not considered medically significant to a healthy person", "Rare
+  allergic reactions are possible, as with any bite") and keeping the authors'
+  own conclusion. The handling FAQ and seoDescription that carried the old
+  characterization changed in the same pass. The handling guide's Sources entry
+  for the paper also had the wrong title and no link; corrected to the real
+  title with its DOI.
+- **Displays as temperament, handling versus enrichment.** Enrichment: "Do not
+  read the hooding display as personality, because it is a threat response," and
+  a snake performing them constantly "is reporting something". The
+  build-trust framing the reader flagged ("Handle regularly and gently to build
+  trust... Many hognoses go through an initial defensive phase that diminishes
+  significantly with consistent calm handling") lived in the old hub's
+  enrichment prose, not in the handling deep dive, so the rebuild retires it by
+  construction. Enrichment keeps its clause: its Sources back it (Nagabaskaran,
+  Skinner and Miller 2022; Hoehfurtner et al. 2021; Burghardt 2013), and the
+  handling guide cited nothing for the trust framing. The handling guide's
+  closing line, which the reader called a stranded pointer with no link, was
+  rewritten to say the enrichment thing directly and carry the link.
+- **Not a conflict, on inspection.** The cost guide prices "a 2x2x2 foot or
+  36x18x18 inch PVC or glass enclosure" while the setup guide's minimums are
+  30x13x13 (males) and 36x18x16 (females). 36x18x18 exceeds both minimums and is
+  the product actually being priced, so the two pages agree.
+- **Not a conflict.** The cost guide's "10 to 15 years commonly cited, 15 to 20
+  achievable under excellent husbandry" is a captive figure and the encyclopedia
+  field it was flagged against is a wild one. See Encyclopedia below.
+
+### Gaps, checked against the Health and More list first
+
+The sidebar's shared guides cover quarantine, hygiene, the power-outage floor,
+the daily stool and urates check, shedding (twice), heating and thermostats, and
+sexing, growth and body condition. Checked against that list, these are real:
+
+- **Feeding has no home at all.** This is the one the rebuild makes worse before
+  it makes it better, and it is worth stating precisely. The old hub's diet
+  prose was the only feeding content on the site for this species, and the
+  router shape deletes hub prose. Lost with it: the adult and juvenile schedule
+  ("Adults should eat every 7 to 14 days. Juveniles every 5 to 7 days"), the
+  48 to 72 hour post-feeding handling wait, prey sizing ("Prey size should match
+  the snake's widest mid-body point"), frozen-thawed only and never live, tongs
+  at every feeding and never by hand, and the entire hatchling picky-eater
+  section: scenting prey with toad or frog shed, offering a smaller item,
+  feeding in a separate enclosure, offering at night in a completely dark
+  environment, leaving pre-killed prey overnight, and the reassurance that most
+  hognoses that refuse initially convert to unscented mice within a few
+  attempts. Also lost: the hub FAQ's version of the same schedule and the
+  scenting tip. What was routed instead of invented: the health guide's
+  separate-container rule and its portion-versus-activity rule are now hub rows
+  (Where to feed, How much to feed), the shared body condition guide supplies a
+  Weight checks row, and the shared stool guide supplies a Daily check row that
+  names hognose specifically. None of that replaces a schedule, a prey size, or
+  a thawing procedure. No number was moved into a deep dive to save it, because
+  none of those figures is sourced anywhere on the site.
+  `content/_scheduled-feeding-guides/BACKLOG.md` already lists `hognose-snake`
+  unchecked; that is the fix, and it needs real sources rather than a copy of
+  the deleted prose.
+- **Hatchling housing.** Every enclosure figure in the set is an adult figure,
+  and hatchlings are what almost everyone buys.
+- **Thawing and prep of frozen rodents.** Absent from the species pages and from
+  the shared list.
+- **Choosing a breeder and health-checking the animal at purchase.** Quarantine
+  starts after you own it.
+- **Cleaning cadence and full substrate change interval.** The stool guide is a
+  daily observation check, not a cleaning schedule.
+- **Brumation.** Not mentioned once for this species, and the shared snake
+  brumation guide is not in this species' Health and More list.
+
+### Stranded questions
+
+- The cost guide's heat-mat-versus-halogen hedge is settled on the tank setup
+  guide. Now signposted: the cost guide's halogen sentence links there.
+- The health guide's "feed in a separate container" only makes sense once the
+  setup guide explains the deep loose substrate. Now signposted, same pass.
+- The enrichment guide's cool-side rule is the missing half of the setup guide's
+  substrate section. Now signposted from the setup guide.
+- The hub's wild-caught parasite warning went out with the hub prose; the legal
+  guide is where collection rules actually live, and the captive-bred point is
+  in the encyclopedia's history paragraph.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Wild-caught hognose snakes frequently carry internal parasites" | Legal guide | No: hub prose deleted, and hub rows are not link slots |
+| Encyclopedia | "Most animals sold now are captive-bred rather than collected." | Legal guide | No: structured data, no link slot |
+| Cost | the halogen basking bulb hedge | Tank setup guide | Yes |
+| Handling | the stranded closing sentence | Enrichment guide | Yes, sentence rewritten to say the thing about the animal |
+| Health | "Feeding in a separate container away from the loose substrate" | Tank setup guide | Yes |
+| Tank setup | "Provide 3 to 6 inches of loose, dry, diggable substrate" | Enrichment guide | Yes |
+| Enrichment | "Other quantities are available, and a proper depth needs more than one bag" | Cost guide | No: the sentence was a retail fragment and is now about the animal; a shopping link there would be an aside, not the animal's question, and the Deep Dive already carries the cost guide |
+| Legal | the case report sentence | Handling guide | Yes |
+
+Every page ends at one same-species sibling link, the cap. No link sits before a
+first H2 or inside a ComparisonTable cell.
+
+### Trust
+
+The reader's doubt was that "the hub reads like an older draft nobody
+reconciled, and it is the page the navigation lands on first". That is exactly
+what it was, and it is gone. Two smaller trust items are fixed: the enrichment
+guide cited one study by three surnames with no year or journal, now named as
+Nagabaskaran, Skinner and Miller's 2022 preference test in *Animals* (the
+Sources entry now carries the volume and article number, Animals 12(23), 3347);
+and "Other quantities are available, and a proper depth needs more than one bag"
+was a leftover retail line, the same template artifact batch D found on box
+turtle, now rewritten to be about the snake. The sentence the reader found most
+convincing stays untouched: "Do not handle a hognose that is mid-dig, which
+interrupts the behavior the enclosure exists to allow."
+
+One thing left standing deliberately: the handling guide still calls this "a
+small, harmless animal" in its opening bluff paragraph and its temperament FAQ
+still ends "Both are harmless." Both sentences are about aggression and
+temperament, not about what a bite does, and the venom section they sit around
+now states the case report in full. Flagged rather than swept.
+
+### The reader's two changes
+
+1. "Rewrite the hub from the deep dives so every number matches." Done: router
+   shape, 22 first-week rows each copied from the article named in its source, a
+   4-bullet emergency card from the health guide, 6 routes, a price-free buy
+   list, 3 FAQs copied verbatim from deep-dive frontmatter, difficulty matching
+   the encyclopedia entry. Old costs, sections and the seven-FAQ block dropped.
+2. "Add a feeding guide covering hatchlings, prey weight, and thawing." Not
+   done, and out of scope for a fix pass: writing it means real research, not
+   recycling the deleted hub prose. Filed above with the exact list of what the
+   guide has to cover.
+
+### Encyclopedia
+
+Researched, one field changed. The entry's `wildLifespan` read "10-18 years",
+unsourced and flagged by the numbers checker against the cost guide's sourced
+"10 to 15 years commonly cited, 15 to 20 achievable under excellent husbandry".
+Cosley Zoo's western hognose page, opened for this pass, states: "In the wild,
+western hognose snakes have a lifespan of 9 to 19 years, with an average of 14
+years. In human care, their lifespan ranges from 15 to 20 years." That is a real
+institutional source that separates the two figures, which the old field did
+not. `wildLifespan` is now "9-19 years in the wild, averaging 14; 15-20 years in
+human care", which agrees with the cost guide's captive range instead of
+contradicting it. Nothing else in the entry changed: difficulty was already
+"Intermediate" and the hub matches it, and `adultSize` ("1.5-3.5 feet (45-107
+cm) depending on species") conflicts with no deep dive, since no deep dive
+states an adult length at all. The numbers checker still groups the entry's wild
+9 to 19 against the cost guide's captive 10 to 15, but those are two different
+quantities now that the field says which is which, the same advisory case the
+rulebook describes rather than a conflict to resolve.
+
+### Open
+
+- The feeding guide, as scoped above. Biggest single item in the set.
+- Two shared-file edits written up but not applied (I could not edit either
+  file): the corn snake vs hognose guide's "at most minor local swelling" line,
+  which understates the case report its own Sources cite, and the veiled
+  chameleon / ferret / hognose overview's unhedged "a venom that's harmless".
+  Both with exact strings in the batch scratch file.
+- Hatchling housing, thawing, breeder selection, cleaning cadence and brumation,
+  all named above, none of them fixable with a link or a number.
+- Dates: the handling guide's `lastUpdated` and `lastReviewed` moved to
+  2026-09-09 because its bite-case facts changed. The enrichment guide's were
+  left at 2026-10-16, its own publish date, which is still in the future: moving
+  them to today would put the article's last update before it exists. The other
+  four touched files changed links or wording only, so their dates stand.
+- The tank setup guide runs two `<Sources>` entries where the rulebook targets
+  four to five. Not touched here (nothing may be deleted, and adding sources is
+  research, not a fix), but the health guide (two, one of them unlinked) and the
+  cost guide (two, one unlinked) are in the same position.
+
+## Hognose Snake (2026-09-09, first pass)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment, legal). One independent Opus reader on the pre-rewrite
+set; raw output filed separately. The router hub was built from its findings the
+same day. This species has no feeding guide, and that shapes most of what
+follows.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | The only page carrying feeding at all, and the single biggest source of conflict in the set. |
+| Encyclopedia | C- | Ninety seconds, and nothing to act on except that most animals sold are captive-bred. |
+| Cost | A- | Morph price tiers, $200 to $500 setup, $10 to $25 a month, vet line items. |
+| Handling | B- | Wash hands, don't handle after feeding, don't panic at the hood. No actual technique. |
+| Health issues | B+ | Five named conditions with causes and prevention. |
+| Tank setup | A- | Sizes by sex, temps, humidity, substrate ratio, lighting. |
+| Enrichment | A | Best-written page here: deep substrate on the cool end, and a priority order. |
+| Legal | A | A state table with citations and an honest unverified section. |
+
+Set grade: B-. "Four excellent deep dives undermined by a hub that disagrees
+with them on humidity, temperature, and day cycle."
+
+Hub grade: C, and it earned it. The old hub was an unreconciled older draft
+sitting on the page navigation lands on first.
+
+### Hub versus the set, both sides quoted (all resolved by the router rebuild)
+
+- **Humidity, the one that mattered.** Old hub: "Ambient humidity of 40 to 60%
+  is appropriate, rising during shed." Tank setup: "30 to 50% ambient humidity,
+  genuinely on the dry side compared to many other pet snakes." The health
+  guide blames both of the species' top two conditions on the same variable
+  ("respiratory infection and scale rot, both trace back to the exact same root
+  cause: humidity or dampness running too high"), so a hub telling a new keeper
+  to run wetter than the setup guide was the worst possible disagreement to
+  leave standing. Tank setup wins: it is the subject-matter page, and its cited
+  source (ReptiFiles, Western Hognose Snake Care) states the low range, with The
+  Bio Dude's care sheet independently giving "average of 30-50% humidity" when
+  opened for this pass. The old hub's 40 to 60% was unsourced on the page. The
+  router hub now copies the tank setup guide's sentence and its own humidity FAQ
+  verbatim, so 40 to 60% survives nowhere on the site for this species: the
+  hub's second copy of it (the "Do hognose snakes need a humid hide?" FAQ) went
+  with the old FAQ block, no shared reptile guide carries a hognose humidity
+  row, and the corn snake vs hognose guide already said 30 to 50%.
+- **Activity pattern, because the lighting rests on it.** Old hub: "Hognose
+  snakes are crepuscular, most active in the morning and evening." Tank setup:
+  "genuinely diurnal, active during the day rather than at night or dusk," and
+  its whole lighting section follows from that ("a low-output linear T5 bulb
+  spanning part of the enclosure is increasingly recommended for this diurnal
+  species"), as does the enrichment guide's basking-surface placement. Diurnal
+  wins on sources: ReptiFiles calls the species diurnal and most active in the
+  morning and late afternoon, and The Bio Dude describes it as "diurnal which
+  means they can also be found occasionally aboveground basking or hunting". The
+  old hub's crepuscular line cited nothing. This was resolved rather than
+  dropped: the router hub carries a Lighting row copied from the tank setup
+  guide that states the diurnal reading and the 12-hour cycle it justifies, and
+  the hub comment records which figure was retired and why.
+- **Heat.** Old hub: "a warm hide with a belly-heat surface temperature of 85 to
+  90 degrees F on an under-tank heater with a thermostat, a cool hide at 72 to
+  76 degrees F." Tank setup: "Basking area around 90 to 95°F on one end, cool
+  side 70 to 75°F, with a night temperature around 75 to 78°F," with a halogen
+  basking bulb over the substrate preferred and the heat mat named as the older
+  advice. Tank setup wins by construction (the hub keeps no figure of its own);
+  the Bio Dude care sheet opened for this pass gives the same 90-95°F basking
+  and 70-75°F cool zone. The hub's Heat row keeps the setup guide's hedge that
+  the mat-versus-halogen question is a genuine point of disagreement.
+- **Substrate depth.** Old hub: "4 to 6 inches." Tank setup: "3 to 6 inches of
+  loose, dry, diggable substrate." Hub now copies 3 to 6 inches with the 70/30
+  soil-to-sand ratio the setup guide states.
+- **Enclosure.** Old hub gave one adult size ("A 36x18x18\" or 36x18x12\"
+  enclosure"). Tank setup splits by sex: males a 20-gallon equivalent "around
+  30x13x13 inches", females a 40-gallon equivalent "36x18x16 inches", with a
+  2x2x2 foot PVC enclosure working for either. The split is kept in the hub row,
+  not flattened.
+- **Venom and bite severity, the reader's safety question.** Old hub FAQ: bites
+  "cause minimal local irritation at most", and the venom is "entirely harmless
+  to humans". Legal guide: "A real medical case report on a keeper bitten by a
+  Western hognose during feeding documented local swelling, bruising, and mild
+  cellulitis, with a full recovery in about five months and no systemic
+  effects." The old hub loses outright; see the deep-dive section below for how
+  the handling guide was reconciled to the legal guide.
+- **Feeding place.** Old hub treated a separate feeding container as a
+  picky-eater trick; the health guide calls it "the single most effective
+  prevention" for impaction and the tank setup guide states it flatly ("Feed
+  your snake off the substrate, in a separate container, to prevent impaction").
+  The hub's Where to feed row now copies the health guide.
+
+`node scripts/check-species-numbers.mjs hognose-snake` after the rebuild: no
+line marked `hub` disagrees with the deep dive its row names. The humidity
+conflict group is gone entirely. What remains flagged is grouping noise (a
+sentence carrying two ranges, cost-table line items, the route line quoting the
+cost guide's own $200 to $500) plus one genuine encyclopedia item, below.
+
+### Deep dives against each other
+
+- **Bite severity, handling versus legal.** Handling said "A documented bite
+  case in the scientific literature caused local swelling and bruising with no
+  wider health effects" and closed "a hognose bite is not something to be
+  genuinely afraid of." Legal said "local swelling, bruising, and mild
+  cellulitis, with a full recovery in about five months and no systemic
+  effects." Both describe the same paper. Weinstein and Keyler (2009), *Toxicon*
+  54(3), 354-360, the case report the handling guide already cited in its own
+  Sources, was opened for this pass: the bite produced marked edema, ecchymoses,
+  lymphadenopathy and cutaneous signs suggestive of mild cellulitis with blister
+  formation, no systemic effects, and recovery complete after approximately five
+  months, with the authors concluding the species should not be considered
+  dangerous but handled thoughtfully. The legal guide's version is the accurate
+  one and it wins; the handling guide changed to match, keeping every hedge it
+  had ("not considered medically significant to a healthy person", "Rare
+  allergic reactions are possible, as with any bite") and keeping the authors'
+  own conclusion. The handling FAQ and seoDescription that carried the old
+  characterization changed in the same pass. The handling guide's Sources entry
+  for the paper also had the wrong title and no link; corrected to the real
+  title with its DOI.
+- **Displays as temperament, handling versus enrichment.** Enrichment: "Do not
+  read the hooding display as personality, because it is a threat response," and
+  a snake performing them constantly "is reporting something". The
+  build-trust framing the reader flagged ("Handle regularly and gently to build
+  trust... Many hognoses go through an initial defensive phase that diminishes
+  significantly with consistent calm handling") lived in the old hub's
+  enrichment prose, not in the handling deep dive, so the rebuild retires it by
+  construction. Enrichment keeps its clause: its Sources back it (Nagabaskaran,
+  Skinner and Miller 2022; Hoehfurtner et al. 2021; Burghardt 2013), and the
+  handling guide cited nothing for the trust framing. The handling guide's
+  closing line, which the reader called a stranded pointer with no link, was
+  rewritten to say the enrichment thing directly and carry the link.
+- **Not a conflict, on inspection.** The cost guide prices "a 2x2x2 foot or
+  36x18x18 inch PVC or glass enclosure" while the setup guide's minimums are
+  30x13x13 (males) and 36x18x16 (females). 36x18x18 exceeds both minimums and is
+  the product actually being priced, so the two pages agree.
+- **Not a conflict.** The cost guide's "10 to 15 years commonly cited, 15 to 20
+  achievable under excellent husbandry" is a captive figure and the encyclopedia
+  field it was flagged against is a wild one. See Encyclopedia below.
+
+### Gaps, checked against the Health and More list first
+
+The sidebar's shared guides cover quarantine, hygiene, the power-outage floor,
+the daily stool and urates check, shedding (twice), heating and thermostats, and
+sexing, growth and body condition. Checked against that list, these are real:
+
+- **Feeding has no home at all.** This is the one the rebuild makes worse before
+  it makes it better, and it is worth stating precisely. The old hub's diet
+  prose was the only feeding content on the site for this species, and the
+  router shape deletes hub prose. Lost with it: the adult and juvenile schedule
+  ("Adults should eat every 7 to 14 days. Juveniles every 5 to 7 days"), the
+  48 to 72 hour post-feeding handling wait, prey sizing ("Prey size should match
+  the snake's widest mid-body point"), frozen-thawed only and never live, tongs
+  at every feeding and never by hand, and the entire hatchling picky-eater
+  section: scenting prey with toad or frog shed, offering a smaller item,
+  feeding in a separate enclosure, offering at night in a completely dark
+  environment, leaving pre-killed prey overnight, and the reassurance that most
+  hognoses that refuse initially convert to unscented mice within a few
+  attempts. Also lost: the hub FAQ's version of the same schedule and the
+  scenting tip. What was routed instead of invented: the health guide's
+  separate-container rule and its portion-versus-activity rule are now hub rows
+  (Where to feed, How much to feed), the shared body condition guide supplies a
+  Weight checks row, and the shared stool guide supplies a Daily check row that
+  names hognose specifically. None of that replaces a schedule, a prey size, or
+  a thawing procedure. No number was moved into a deep dive to save it, because
+  none of those figures is sourced anywhere on the site.
+  `content/_scheduled-feeding-guides/BACKLOG.md` already lists `hognose-snake`
+  unchecked; that is the fix, and it needs real sources rather than a copy of
+  the deleted prose.
+- **Hatchling housing.** Every enclosure figure in the set is an adult figure,
+  and hatchlings are what almost everyone buys.
+- **Thawing and prep of frozen rodents.** Absent from the species pages and from
+  the shared list.
+- **Choosing a breeder and health-checking the animal at purchase.** Quarantine
+  starts after you own it.
+- **Cleaning cadence and full substrate change interval.** The stool guide is a
+  daily observation check, not a cleaning schedule.
+- **Brumation.** Not mentioned once for this species, and the shared snake
+  brumation guide is not in this species' Health and More list.
+
+### Stranded questions
+
+- The cost guide's heat-mat-versus-halogen hedge is settled on the tank setup
+  guide. Now signposted: the cost guide's halogen sentence links there.
+- The health guide's "feed in a separate container" only makes sense once the
+  setup guide explains the deep loose substrate. Now signposted, same pass.
+- The enrichment guide's cool-side rule is the missing half of the setup guide's
+  substrate section. Now signposted from the setup guide.
+- The hub's wild-caught parasite warning went out with the hub prose; the legal
+  guide is where collection rules actually live, and the captive-bred point is
+  in the encyclopedia's history paragraph.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Wild-caught hognose snakes frequently carry internal parasites" | Legal guide | No: hub prose deleted, and hub rows are not link slots |
+| Encyclopedia | "Most animals sold now are captive-bred rather than collected." | Legal guide | No: structured data, no link slot |
+| Cost | the halogen basking bulb hedge | Tank setup guide | Yes |
+| Handling | the stranded closing sentence | Enrichment guide | Yes, sentence rewritten to say the thing about the animal |
+| Health | "Feeding in a separate container away from the loose substrate" | Tank setup guide | Yes |
+| Tank setup | "Provide 3 to 6 inches of loose, dry, diggable substrate" | Enrichment guide | Yes |
+| Enrichment | "Other quantities are available, and a proper depth needs more than one bag" | Cost guide | No: the sentence was a retail fragment and is now about the animal; a shopping link there would be an aside, not the animal's question, and the Deep Dive already carries the cost guide |
+| Legal | the case report sentence | Handling guide | Yes |
+
+Every page ends at one same-species sibling link, the cap. No link sits before a
+first H2 or inside a ComparisonTable cell.
+
+### Trust
+
+The reader's doubt was that "the hub reads like an older draft nobody
+reconciled, and it is the page the navigation lands on first". That is exactly
+what it was, and it is gone. Two smaller trust items are fixed: the enrichment
+guide cited one study by three surnames with no year or journal, now named as
+Nagabaskaran, Skinner and Miller's 2022 preference test in *Animals* (the
+Sources entry now carries the volume and article number, Animals 12(23), 3347);
+and "Other quantities are available, and a proper depth needs more than one bag"
+was a leftover retail line, the same template artifact batch D found on box
+turtle, now rewritten to be about the snake. The sentence the reader found most
+convincing stays untouched: "Do not handle a hognose that is mid-dig, which
+interrupts the behavior the enclosure exists to allow."
+
+One thing left standing deliberately: the handling guide still calls this "a
+small, harmless animal" in its opening bluff paragraph and its temperament FAQ
+still ends "Both are harmless." Both sentences are about aggression and
+temperament, not about what a bite does, and the venom section they sit around
+now states the case report in full. Flagged rather than swept.
+
+### The reader's two changes
+
+1. "Rewrite the hub from the deep dives so every number matches." Done: router
+   shape, 22 first-week rows each copied from the article named in its source, a
+   4-bullet emergency card from the health guide, 6 routes, a price-free buy
+   list, 3 FAQs copied verbatim from deep-dive frontmatter, difficulty matching
+   the encyclopedia entry. Old costs, sections and the seven-FAQ block dropped.
+2. "Add a feeding guide covering hatchlings, prey weight, and thawing." Not
+   done, and out of scope for a fix pass: writing it means real research, not
+   recycling the deleted hub prose. Filed above with the exact list of what the
+   guide has to cover.
+
+### Encyclopedia
+
+Researched, one field changed. The entry's `wildLifespan` read "10-18 years",
+unsourced and flagged by the numbers checker against the cost guide's sourced
+"10 to 15 years commonly cited, 15 to 20 achievable under excellent husbandry".
+Cosley Zoo's western hognose page, opened for this pass, states: "In the wild,
+western hognose snakes have a lifespan of 9 to 19 years, with an average of 14
+years. In human care, their lifespan ranges from 15 to 20 years." That is a real
+institutional source that separates the two figures, which the old field did
+not. `wildLifespan` is now "9-19 years in the wild, averaging 14; 15-20 years in
+human care", which agrees with the cost guide's captive range instead of
+contradicting it. Nothing else in the entry changed: difficulty was already
+"Intermediate" and the hub matches it, and `adultSize` ("1.5-3.5 feet (45-107
+cm) depending on species") conflicts with no deep dive, since no deep dive
+states an adult length at all. The numbers checker still groups the entry's wild
+9 to 19 against the cost guide's captive 10 to 15, but those are two different
+quantities now that the field says which is which, the same advisory case the
+rulebook describes rather than a conflict to resolve.
+
+### Open
+
+- The feeding guide, as scoped above. Biggest single item in the set.
+- Two shared-file edits written up but not applied (I could not edit either
+  file): the corn snake vs hognose guide's "at most minor local swelling" line,
+  which understates the case report its own Sources cite, and the veiled
+  chameleon / ferret / hognose overview's unhedged "a venom that's harmless".
+  Both with exact strings in the batch scratch file.
+- Hatchling housing, thawing, breeder selection, cleaning cadence and brumation,
+  all named above, none of them fixable with a link or a number.
+- Dates: the handling guide's `lastUpdated` and `lastReviewed` moved to
+  2026-09-09 because its bite-case facts changed. The enrichment guide's were
+  left at 2026-10-16, its own publish date, which is still in the future: moving
+  them to today would put the article's last update before it exists. The other
+  four touched files changed links or wording only, so their dates stand.
+- The tank setup guide runs two `<Sources>` entries where the rulebook targets
+  four to five. Not touched here (nothing may be deleted, and adding sources is
+  research, not a fix), but the health guide (two, one of them unlinked) and the
+  cost guide (two, one unlinked) are in the same position.
