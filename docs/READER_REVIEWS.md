@@ -6566,3 +6566,275 @@ rulebook describes rather than a conflict to resolve.
   four to five. Not touched here (nothing may be deleted, and adding sources is
   research, not a fix), but the health guide (two, one of them unlinked) and the
   cost guide (two, one unlinked) are in the same position.
+
+## Hognose Snake (2026-09-09, first pass)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment, legal). One independent Opus reader on the pre-rewrite
+set; raw output filed separately. The router hub was built from its findings the
+same day. This species has no feeding guide, and that shapes most of what
+follows.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | The only page carrying feeding at all, and the single biggest source of conflict in the set. |
+| Encyclopedia | C- | Ninety seconds, and nothing to act on except that most animals sold are captive-bred. |
+| Cost | A- | Morph price tiers, $200 to $500 setup, $10 to $25 a month, vet line items. |
+| Handling | B- | Wash hands, don't handle after feeding, don't panic at the hood. No actual technique. |
+| Health issues | B+ | Five named conditions with causes and prevention. |
+| Tank setup | A- | Sizes by sex, temps, humidity, substrate ratio, lighting. |
+| Enrichment | A | Best-written page here: deep substrate on the cool end, and a priority order. |
+| Legal | A | A state table with citations and an honest unverified section. |
+
+Set grade: B-. "Four excellent deep dives undermined by a hub that disagrees
+with them on humidity, temperature, and day cycle."
+
+Hub grade: C, and it earned it. The old hub was an unreconciled older draft
+sitting on the page navigation lands on first.
+
+### Hub versus the set, both sides quoted (all resolved by the router rebuild)
+
+- **Humidity, the one that mattered.** Old hub: "Ambient humidity of 40 to 60%
+  is appropriate, rising during shed." Tank setup: "30 to 50% ambient humidity,
+  genuinely on the dry side compared to many other pet snakes." The health
+  guide blames both of the species' top two conditions on the same variable
+  ("respiratory infection and scale rot, both trace back to the exact same root
+  cause: humidity or dampness running too high"), so a hub telling a new keeper
+  to run wetter than the setup guide was the worst possible disagreement to
+  leave standing. Tank setup wins: it is the subject-matter page, and its cited
+  source (ReptiFiles, Western Hognose Snake Care) states the low range, with The
+  Bio Dude's care sheet independently giving "average of 30-50% humidity" when
+  opened for this pass. The old hub's 40 to 60% was unsourced on the page. The
+  router hub now copies the tank setup guide's sentence and its own humidity FAQ
+  verbatim, so 40 to 60% survives nowhere on the site for this species: the
+  hub's second copy of it (the "Do hognose snakes need a humid hide?" FAQ) went
+  with the old FAQ block, no shared reptile guide carries a hognose humidity
+  row, and the corn snake vs hognose guide already said 30 to 50%.
+- **Activity pattern, because the lighting rests on it.** Old hub: "Hognose
+  snakes are crepuscular, most active in the morning and evening." Tank setup:
+  "genuinely diurnal, active during the day rather than at night or dusk," and
+  its whole lighting section follows from that ("a low-output linear T5 bulb
+  spanning part of the enclosure is increasingly recommended for this diurnal
+  species"), as does the enrichment guide's basking-surface placement. Diurnal
+  wins on sources: ReptiFiles calls the species diurnal and most active in the
+  morning and late afternoon, and The Bio Dude describes it as "diurnal which
+  means they can also be found occasionally aboveground basking or hunting". The
+  old hub's crepuscular line cited nothing. This was resolved rather than
+  dropped: the router hub carries a Lighting row copied from the tank setup
+  guide that states the diurnal reading and the 12-hour cycle it justifies, and
+  the hub comment records which figure was retired and why.
+- **Heat.** Old hub: "a warm hide with a belly-heat surface temperature of 85 to
+  90 degrees F on an under-tank heater with a thermostat, a cool hide at 72 to
+  76 degrees F." Tank setup: "Basking area around 90 to 95°F on one end, cool
+  side 70 to 75°F, with a night temperature around 75 to 78°F," with a halogen
+  basking bulb over the substrate preferred and the heat mat named as the older
+  advice. Tank setup wins by construction (the hub keeps no figure of its own);
+  the Bio Dude care sheet opened for this pass gives the same 90-95°F basking
+  and 70-75°F cool zone. The hub's Heat row keeps the setup guide's hedge that
+  the mat-versus-halogen question is a genuine point of disagreement.
+- **Substrate depth.** Old hub: "4 to 6 inches." Tank setup: "3 to 6 inches of
+  loose, dry, diggable substrate." Hub now copies 3 to 6 inches with the 70/30
+  soil-to-sand ratio the setup guide states.
+- **Enclosure.** Old hub gave one adult size ("A 36x18x18\" or 36x18x12\"
+  enclosure"). Tank setup splits by sex: males a 20-gallon equivalent "around
+  30x13x13 inches", females a 40-gallon equivalent "36x18x16 inches", with a
+  2x2x2 foot PVC enclosure working for either. The split is kept in the hub row,
+  not flattened.
+- **Venom and bite severity, the reader's safety question.** Old hub FAQ: bites
+  "cause minimal local irritation at most", and the venom is "entirely harmless
+  to humans". Legal guide: "A real medical case report on a keeper bitten by a
+  Western hognose during feeding documented local swelling, bruising, and mild
+  cellulitis, with a full recovery in about five months and no systemic
+  effects." The old hub loses outright; see the deep-dive section below for how
+  the handling guide was reconciled to the legal guide.
+- **Feeding place.** Old hub treated a separate feeding container as a
+  picky-eater trick; the health guide calls it "the single most effective
+  prevention" for impaction and the tank setup guide states it flatly ("Feed
+  your snake off the substrate, in a separate container, to prevent impaction").
+  The hub's Where to feed row now copies the health guide.
+
+`node scripts/check-species-numbers.mjs hognose-snake` after the rebuild: no
+line marked `hub` disagrees with the deep dive its row names. The humidity
+conflict group is gone entirely. What remains flagged is grouping noise (a
+sentence carrying two ranges, cost-table line items, the route line quoting the
+cost guide's own $200 to $500) plus one genuine encyclopedia item, below.
+
+### Deep dives against each other
+
+- **Bite severity, handling versus legal.** Handling said "A documented bite
+  case in the scientific literature caused local swelling and bruising with no
+  wider health effects" and closed "a hognose bite is not something to be
+  genuinely afraid of." Legal said "local swelling, bruising, and mild
+  cellulitis, with a full recovery in about five months and no systemic
+  effects." Both describe the same paper. Weinstein and Keyler (2009), *Toxicon*
+  54(3), 354-360, the case report the handling guide already cited in its own
+  Sources, was opened for this pass: the bite produced marked edema, ecchymoses,
+  lymphadenopathy and cutaneous signs suggestive of mild cellulitis with blister
+  formation, no systemic effects, and recovery complete after approximately five
+  months, with the authors concluding the species should not be considered
+  dangerous but handled thoughtfully. The legal guide's version is the accurate
+  one and it wins; the handling guide changed to match, keeping every hedge it
+  had ("not considered medically significant to a healthy person", "Rare
+  allergic reactions are possible, as with any bite") and keeping the authors'
+  own conclusion. The handling FAQ and seoDescription that carried the old
+  characterization changed in the same pass. The handling guide's Sources entry
+  for the paper also had the wrong title and no link; corrected to the real
+  title with its DOI.
+- **Displays as temperament, handling versus enrichment.** Enrichment: "Do not
+  read the hooding display as personality, because it is a threat response," and
+  a snake performing them constantly "is reporting something". The
+  build-trust framing the reader flagged ("Handle regularly and gently to build
+  trust... Many hognoses go through an initial defensive phase that diminishes
+  significantly with consistent calm handling") lived in the old hub's
+  enrichment prose, not in the handling deep dive, so the rebuild retires it by
+  construction. Enrichment keeps its clause: its Sources back it (Nagabaskaran,
+  Skinner and Miller 2022; Hoehfurtner et al. 2021; Burghardt 2013), and the
+  handling guide cited nothing for the trust framing. The handling guide's
+  closing line, which the reader called a stranded pointer with no link, was
+  rewritten to say the enrichment thing directly and carry the link.
+- **Not a conflict, on inspection.** The cost guide prices "a 2x2x2 foot or
+  36x18x18 inch PVC or glass enclosure" while the setup guide's minimums are
+  30x13x13 (males) and 36x18x16 (females). 36x18x18 exceeds both minimums and is
+  the product actually being priced, so the two pages agree.
+- **Not a conflict.** The cost guide's "10 to 15 years commonly cited, 15 to 20
+  achievable under excellent husbandry" is a captive figure and the encyclopedia
+  field it was flagged against is a wild one. See Encyclopedia below.
+
+### Gaps, checked against the Health and More list first
+
+The sidebar's shared guides cover quarantine, hygiene, the power-outage floor,
+the daily stool and urates check, shedding (twice), heating and thermostats, and
+sexing, growth and body condition. Checked against that list, these are real:
+
+- **Feeding has no home at all.** This is the one the rebuild makes worse before
+  it makes it better, and it is worth stating precisely. The old hub's diet
+  prose was the only feeding content on the site for this species, and the
+  router shape deletes hub prose. Lost with it: the adult and juvenile schedule
+  ("Adults should eat every 7 to 14 days. Juveniles every 5 to 7 days"), the
+  48 to 72 hour post-feeding handling wait, prey sizing ("Prey size should match
+  the snake's widest mid-body point"), frozen-thawed only and never live, tongs
+  at every feeding and never by hand, and the entire hatchling picky-eater
+  section: scenting prey with toad or frog shed, offering a smaller item,
+  feeding in a separate enclosure, offering at night in a completely dark
+  environment, leaving pre-killed prey overnight, and the reassurance that most
+  hognoses that refuse initially convert to unscented mice within a few
+  attempts. Also lost: the hub FAQ's version of the same schedule and the
+  scenting tip. What was routed instead of invented: the health guide's
+  separate-container rule and its portion-versus-activity rule are now hub rows
+  (Where to feed, How much to feed), the shared body condition guide supplies a
+  Weight checks row, and the shared stool guide supplies a Daily check row that
+  names hognose specifically. None of that replaces a schedule, a prey size, or
+  a thawing procedure. No number was moved into a deep dive to save it, because
+  none of those figures is sourced anywhere on the site.
+  `content/_scheduled-feeding-guides/BACKLOG.md` already lists `hognose-snake`
+  unchecked; that is the fix, and it needs real sources rather than a copy of
+  the deleted prose.
+- **Hatchling housing.** Every enclosure figure in the set is an adult figure,
+  and hatchlings are what almost everyone buys.
+- **Thawing and prep of frozen rodents.** Absent from the species pages and from
+  the shared list.
+- **Choosing a breeder and health-checking the animal at purchase.** Quarantine
+  starts after you own it.
+- **Cleaning cadence and full substrate change interval.** The stool guide is a
+  daily observation check, not a cleaning schedule.
+- **Brumation.** Not mentioned once for this species, and the shared snake
+  brumation guide is not in this species' Health and More list.
+
+### Stranded questions
+
+- The cost guide's heat-mat-versus-halogen hedge is settled on the tank setup
+  guide. Now signposted: the cost guide's halogen sentence links there.
+- The health guide's "feed in a separate container" only makes sense once the
+  setup guide explains the deep loose substrate. Now signposted, same pass.
+- The enrichment guide's cool-side rule is the missing half of the setup guide's
+  substrate section. Now signposted from the setup guide.
+- The hub's wild-caught parasite warning went out with the hub prose; the legal
+  guide is where collection rules actually live, and the captive-bred point is
+  in the encyclopedia's history paragraph.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Wild-caught hognose snakes frequently carry internal parasites" | Legal guide | No: hub prose deleted, and hub rows are not link slots |
+| Encyclopedia | "Most animals sold now are captive-bred rather than collected." | Legal guide | No: structured data, no link slot |
+| Cost | the halogen basking bulb hedge | Tank setup guide | Yes |
+| Handling | the stranded closing sentence | Enrichment guide | Yes, sentence rewritten to say the thing about the animal |
+| Health | "Feeding in a separate container away from the loose substrate" | Tank setup guide | Yes |
+| Tank setup | "Provide 3 to 6 inches of loose, dry, diggable substrate" | Enrichment guide | Yes |
+| Enrichment | "Other quantities are available, and a proper depth needs more than one bag" | Cost guide | No: the sentence was a retail fragment and is now about the animal; a shopping link there would be an aside, not the animal's question, and the Deep Dive already carries the cost guide |
+| Legal | the case report sentence | Handling guide | Yes |
+
+Every page ends at one same-species sibling link, the cap. No link sits before a
+first H2 or inside a ComparisonTable cell.
+
+### Trust
+
+The reader's doubt was that "the hub reads like an older draft nobody
+reconciled, and it is the page the navigation lands on first". That is exactly
+what it was, and it is gone. Two smaller trust items are fixed: the enrichment
+guide cited one study by three surnames with no year or journal, now named as
+Nagabaskaran, Skinner and Miller's 2022 preference test in *Animals* (the
+Sources entry now carries the volume and article number, Animals 12(23), 3347);
+and "Other quantities are available, and a proper depth needs more than one bag"
+was a leftover retail line, the same template artifact batch D found on box
+turtle, now rewritten to be about the snake. The sentence the reader found most
+convincing stays untouched: "Do not handle a hognose that is mid-dig, which
+interrupts the behavior the enclosure exists to allow."
+
+One thing left standing deliberately: the handling guide still calls this "a
+small, harmless animal" in its opening bluff paragraph and its temperament FAQ
+still ends "Both are harmless." Both sentences are about aggression and
+temperament, not about what a bite does, and the venom section they sit around
+now states the case report in full. Flagged rather than swept.
+
+### The reader's two changes
+
+1. "Rewrite the hub from the deep dives so every number matches." Done: router
+   shape, 22 first-week rows each copied from the article named in its source, a
+   4-bullet emergency card from the health guide, 6 routes, a price-free buy
+   list, 3 FAQs copied verbatim from deep-dive frontmatter, difficulty matching
+   the encyclopedia entry. Old costs, sections and the seven-FAQ block dropped.
+2. "Add a feeding guide covering hatchlings, prey weight, and thawing." Not
+   done, and out of scope for a fix pass: writing it means real research, not
+   recycling the deleted hub prose. Filed above with the exact list of what the
+   guide has to cover.
+
+### Encyclopedia
+
+Researched, one field changed. The entry's `wildLifespan` read "10-18 years",
+unsourced and flagged by the numbers checker against the cost guide's sourced
+"10 to 15 years commonly cited, 15 to 20 achievable under excellent husbandry".
+Cosley Zoo's western hognose page, opened for this pass, states: "In the wild,
+western hognose snakes have a lifespan of 9 to 19 years, with an average of 14
+years. In human care, their lifespan ranges from 15 to 20 years." That is a real
+institutional source that separates the two figures, which the old field did
+not. `wildLifespan` is now "9-19 years in the wild, averaging 14; 15-20 years in
+human care", which agrees with the cost guide's captive range instead of
+contradicting it. Nothing else in the entry changed: difficulty was already
+"Intermediate" and the hub matches it, and `adultSize` ("1.5-3.5 feet (45-107
+cm) depending on species") conflicts with no deep dive, since no deep dive
+states an adult length at all. The numbers checker still groups the entry's wild
+9 to 19 against the cost guide's captive 10 to 15, but those are two different
+quantities now that the field says which is which, the same advisory case the
+rulebook describes rather than a conflict to resolve.
+
+### Open
+
+- The feeding guide, as scoped above. Biggest single item in the set.
+- Two shared-file edits written up but not applied (I could not edit either
+  file): the corn snake vs hognose guide's "at most minor local swelling" line,
+  which understates the case report its own Sources cite, and the veiled
+  chameleon / ferret / hognose overview's unhedged "a venom that's harmless".
+  Both with exact strings in the batch scratch file.
+- Hatchling housing, thawing, breeder selection, cleaning cadence and brumation,
+  all named above, none of them fixable with a link or a number.
+- Dates: the handling guide's `lastUpdated` and `lastReviewed` moved to
+  2026-09-09 because its bite-case facts changed. The enrichment guide's were
+  left at 2026-10-16, its own publish date, which is still in the future: moving
+  them to today would put the article's last update before it exists. The other
+  four touched files changed links or wording only, so their dates stand.
+- The tank setup guide runs two `<Sources>` entries where the rulebook targets
+  four to five. Not touched here (nothing may be deleted, and adding sources is
+  research, not a fix), but the health guide (two, one of them unlinked) and the
+  cost guide (two, one unlinked) are in the same position.

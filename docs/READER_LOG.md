@@ -2894,3 +2894,71 @@ Four excellent deep dives undermined by a hub that disagrees with them on humidi
 - Choosing a breeder and health-checking the animal at purchase: quarantine starts after you own it.
 - Enclosure cleaning cadence and full substrate change interval: the stool guide is a daily observation check, not a cleaning schedule.
 - Brumation: not mentioned once.
+
+## Hognose Snake (2026-09-09)
+
+Independent Opus reader, launched from the session against the pre-rewrite
+extract in .reader/hognose-snake/. Raw output, unedited.
+
+# Hognose Snake Set Review
+
+**1. Page by page**
+
+- **00 hub**: finished it; I can act on the cost tables, the shopping checklist, and the picky-hatchling feeding fixes. It is also the single biggest source of conflict in the set. **C.**
+- **01 encyclopedia**: finished it, ninety seconds. Actionable: nothing, except that most animals sold are captive-bred. **C-.**
+- **02 cost**: finished it. Actionable: morph price tiers, $200 to $500 setup, $10 to $25 a month, vet line items. **A-.**
+- **03 handling**: finished it. Actionable: wash hands, do not handle after feeding, do not panic at the hood. No actual technique. **B-.**
+- **04 health**: finished it. Actionable: five named conditions with causes and prevention. **B+.**
+- **05 tank setup**: finished it. Actionable: sizes by sex, temps, humidity, substrate ratio, lighting. **A-.**
+- **06 enrichment**: finished it, best-written page here. Actionable: deep substrate on the cool end, priority order. **A.**
+- **07 legal**: finished it. Actionable: a state table with citations and an honest unverified section. **A.**
+
+**2. Hub and encyclopedia**
+
+The encyclopedia barely earns its slot: adult size, wild diet, and a good paragraph on how the western hognose went from Miscellaneous to hobby staple. Everything else is recycled bluffing description. The hub does earn a place, because it is the only page carrying feeding at all, but it contradicts the deep dives:
+
+- Humidity. Hub: "Ambient humidity of 40 to 60% is appropriate." Setup: "30 to 50% ambient humidity, genuinely on the dry side." For a species whose top two illnesses are blamed on dampness, that is the worst possible place to disagree.
+- Heat. Hub: "a warm hide with a belly-heat surface temperature of 85 to 90 degrees F on an under-tank heater with a thermostat, a cool hide at 72 to 76 degrees F." Setup: "Basking area around 90 to 95 F on one end, cool side 70 to 75 F," with halogen over substrate preferred and heat mats called the older advice.
+- Activity. Hub: "Hognose snakes are crepuscular, most active in the morning and evening." Setup: "genuinely diurnal, active during the day." The lighting recommendation rests on this.
+- Substrate depth. Hub: "4 to 6 inches." Setup: "3 to 6 inches."
+- Enclosure. Hub gives one size for adults; setup splits it by sex, males at "30x13x13 inches," females at "36x18x16."
+- Venom. Hub: bites "cause minimal local irritation at most." Legal: "local swelling, bruising, and mild cellulitis, with a full recovery in about five months."
+- Feeding place. Hub treats a separate container as a picky-eater trick; health and setup both call it standard impaction prevention.
+
+**3. The set as a whole**
+
+I could buy, set up, and legally site this animal. Feeding I could scrape by on, from the hub alone. Still missing: how to house a hatchling, which is what almost everyone actually buys, since every size here is an adult figure; prey size in grams and a weight-based feeding target, when obesity is called a lifespan issue; thawing procedure; how to pick a breeder and what to check on the animal; cleaning cadence; brumation; whether a female needs anything different beyond space.
+
+Questions answered on another page with no signpost: the cost guide's heat-mat-versus-halogen hedge is settled in the setup guide; the health guide's "feed in a separate container" makes sense only once the setup guide explains the deep loose substrate; the hub's wild-caught parasite warning is unresolved until the legal guide explains where collection is even allowed; the enrichment guide's cool-side rule is the missing half of the setup guide's substrate section.
+
+**4. Overlap and conflict across the deep dives**
+
+Read twice: the play-dead display (hub, encyclopedia, handling, enrichment, four times), the dry-not-damp rule (setup, health), feeding off-substrate (setup, health), and the bite case report (handling, legal). Deep-dive-to-deep-dive numbers mostly hold. Two frictions: handling says "Handle regularly and gently to build trust" in spirit, while enrichment says "Do not read the hooding display as personality, because it is a threat response" and treats frequent displays as a husbandry failure. And the handling guide calls the bite "not something to be genuinely afraid of" against the legal guide's five-month recovery.
+
+**5. One link per page**
+
+- Hub: "Wild-caught hognose snakes frequently carry internal parasites (pinworms, nematodes, coccidia)." Point to the legal guide.
+- Encyclopedia: "Most animals sold now are captive-bred rather than collected." Point to the legal guide.
+- Cost: "current specialist guidance increasingly favors swapping the mat for a low-wattage halogen basking bulb on that same thermostat." Point to the tank setup guide.
+- Handling: "Once you're comfortable reading your hognose's body language, the setup behind that calm behavior matters just as much." Point to the enrichment guide.
+- Health: "Feeding in a separate container away from the loose substrate ... is the single most effective prevention." Point to the tank setup guide.
+- Tank setup: "Provide 3 to 6 inches of loose, dry, diggable substrate." Point to the enrichment guide.
+- Enrichment: "Other quantities are available, and a proper depth needs more than one bag." Point to the cost guide.
+- Legal: "A real medical case report on a keeper bitten by a Western hognose during feeding documented local swelling, bruising, and mild cellulitis." Point to the handling guide.
+
+**6. Trust**
+
+Doubts: the hub reads like an older draft nobody reconciled, and it is the page the navigation lands on first. The enrichment guide cites one study by three surnames with no year or journal. "Other quantities are available" is a leftover product line. Most convincing sentence: "Do not handle a hognose that is mid-dig, which interrupts the behavior the enclosure exists to allow."
+
+**7. Set grade: B-**
+
+Four excellent deep dives undermined by a hub that disagrees with them on humidity, temperature, and day cycle. First two changes: rewrite the hub from the deep dives so every number matches, and add a feeding guide covering hatchlings, prey weight, and thawing.
+
+## Not covered anywhere
+
+- Hatchling housing: no page or shared guide sizes an enclosure for a baby.
+- Prey size in grams and weight-based feeding targets: the body condition guide covers reading condition, not portioning.
+- Thawing and prep of frozen rodents: absent from species pages and the shared list.
+- Choosing a breeder and health-checking the animal at purchase: quarantine starts after you own it.
+- Enclosure cleaning cadence and full substrate change interval: the stool guide is a daily observation check, not a cleaning schedule.
+- Brumation: not mentioned once.
