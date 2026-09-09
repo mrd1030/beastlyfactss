@@ -2921,8 +2921,10 @@ outperformed the rest" claim isn't verifiable and "this guide does not
 make it," then the very next FAQ question is "Why did training work
 best?" answered as though it were settled. Both fixed to match the
 body's own honest hedge rather than restating the disclaimed claims:
-the heading reworded, the "six hours" FAQ answer given no number, and
-the training FAQ rewritten to say the evidence doesn't clearly say so.
+the heading reworded, the "six hours" FAQ answer given no number, the
+training FAQ rewritten to say the evidence doesn't clearly say so, and
+the What Not to Do paragraph's "when the tested winner was structured
+time" clause, the same disclaimed claim, reworded to match.
 
 Also fixed: `cockatoo-legal-guide` was missing from
 src/lib/data/relatedArticles.js entirely, the same wiring-bug class as
@@ -2950,9 +2952,13 @@ that contradicts it and a cost page whose arithmetic does not close."
 Real conflicts, all resolved by construction in the router rebuild:
 diet, cage price, and the old hub's rosy "a bonded pair is happier and
 healthier, less aggressive toward humans" against the handling guide's
-documented real aggression risk between mismatched pairs (the router
-hub's "One bird or two" row carries handling's framing, including the
-aggression risk, not the old hub's).
+"a bonded pair bonds to each other instead, largely ignores its
+keeper, and is closer to keeping a pair of finches, entertaining but
+rarely tame" (the router hub's "One bird or two" row carries
+handling's framing, not the old hub's). The mismatched-pair aggression
+risk is stated only in lovebird-vs-budgie-guide.mdx, not in the
+handling guide, so the species check pulled that clause out of the
+handling-sourced row.
 
 Two real arithmetic bugs, both researched and fixed:
 - The cost guide's own headline, "Roughly $70 to $125 a month," didn't
@@ -3378,8 +3384,9 @@ sling-specific housing. None covered by a shared guide.
 - 2026-09-09, lovebird (batch B, single pass, branch
   claude/batch-b-startup-ve7avl): hub rebuilt to router shape,
   resolving diet, cage-price, and pairs-framing conflicts by
-  construction (the router hub keeps handling's real aggression-risk
-  framing, not the old hub's "happier and healthier" claim). Two real
+  construction (the router hub keeps handling's "bonds to each other
+  instead, largely ignores its keeper" framing, not the old hub's
+  "happier and healthier" claim). Two real
   arithmetic bugs fixed: the cost guide's own monthly headline didn't
   match its own annual table (corrected to the table's real $260-430 a
   year), and a four-way lifespan conflict (hub, encyclopedia, cost
