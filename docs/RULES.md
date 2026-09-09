@@ -89,6 +89,31 @@ working checklist.
   traits get scoped, figures must be current. Arithmetic-check the title,
   excerpt, and meta description last and deliberately, they are the most shared.
 
+### The source goes in the block, not the sentence
+
+This site is where a keeper gets the answer, not a survey of where the answer
+lives. The `<Sources>` block exists so a reader can verify a figure. The body
+exists to state it.
+
+- Give the number, not the provenance. "Dark leafy greens run 80 to 90% of the
+  diet", not "VCA gives 80 to 90% while LafeberVet says the majority."
+- Never make disagreement between sources the subject of a section or a heading.
+  When published guidance splits, state the range in one line, say which end to
+  use and why, then move on. A reader following the recommendation should never
+  have to arbitrate between two vets.
+- Cut the sentences that narrate the research: "both bounds are worth knowing",
+  "the honest reading is", "the sources are thinner here", "the gap is worth
+  seeing", "this is the part most care sheets skip". They show the working, and
+  they push the actual instruction further down the page.
+- Name a source in the body only when the name is the fact: a legal citation, a
+  named study whose authors carry the claim, or a manufacturer's spec for its
+  own product.
+- De-attributing is not de-quoting. Stripping a source name from around wording
+  that is still the source's wording leaves an unmarked lift. Rewrite the claim
+  in your own words instead.
+- The models for how this should read are `bearded-dragon-feeding-guide.mdx` and
+  `goldfish-feeding-guide.mdx`.
+
 ### Sources are for facts, not prices
 
 A `<Sources>` entry is a vet, university, government, manufacturer spec, or
