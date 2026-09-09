@@ -168,10 +168,16 @@ catches the defects the commands produce. Per batch:
    Fable agent covering all five, since the session was pinned to a
    single branch rather than five, so it ran the check once against the
    whole batch instead of once per species); not yet merged to main.
-   Next: batch B (budgie, cockatiel, cockatoo,
-   lovebird, tarantula), then the others. Legacy
-   hubs keep rendering the old care sheet until then. Dogs and cats
-   last. Rabbit difficulty settled at Beginner/Intermediate on the
+   Batch B (budgie, cockatiel, cockatoo, lovebird, tarantula) done and
+   checked 2026-09-09 on branch claude/batch-b-startup-ve7avl; not yet
+   merged. Budgie and cockatiel got the full two-pass treatment with a
+   Fable check each; cockatoo, lovebird, and tarantula got a leaner
+   single-pass treatment (one reader test, fixes folded into one pass)
+   to spend less per species, with one Fable agent covering all three
+   in a single combined check rather than three separate ones, the same
+   cost-saving batch A used for its five-species check. Next: the
+   remaining species, then dogs and cats last. Legacy hubs keep
+   rendering the old care sheet until then. Rabbit difficulty settled at Beginner/Intermediate on the
    site's legend and rabbit lifespan at 8 to 12 years indoors (House
    Rabbit Society, VCA, RSPCA), 2026-09-08. Open question Mike has not
    answered: whether the legacy hubs should lose their print button
@@ -350,9 +356,11 @@ Replaces the one-species prompt and the separate check session
 (2026-09-08). The worker decides from the sources instead of asking; Mike
 reads the reports afterwards. Batch A (betta-fish, crested-gecko,
 guinea-pig, hamster, russian-tortoise) done and checked 2026-09-08 on
-branch claude/readmefirst-batch-a-9opaeb, not yet merged. Species with a
-care package still to do: budgie, cockatiel, cockatoo, lovebird, tarantula
-(batch B). Paste this with the five species filled in.
+branch claude/readmefirst-batch-a-9opaeb, not yet merged. Batch B
+(budgie, cockatiel, cockatoo, lovebird, tarantula) done and checked
+2026-09-09 on branch claude/batch-b-startup-ve7avl, not yet merged.
+Paste this with the next five species filled in when picking up the
+remaining care-package species.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
