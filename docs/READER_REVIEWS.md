@@ -3256,7 +3256,7 @@ else (handling guide: "Wait at least 48 hours after feeding"; old hub:
 feeding before handling." Corrected to match the specific, sourced
 figure used everywhere else on the site.
 
-Recommended links, six added: cost guide's illness-cost sentence now
+Recommended links, five added: cost guide's illness-cost sentence now
 points to health issues; handling's 48-hour wait sentence now points
 to feeding; health issues' and tank setup's thermostat sentences now
 point to the shared reptile heating and thermostats guide (no
@@ -3360,6 +3360,17 @@ release directly to confirm: "adopted in a vote with 95 countries in
 support, 35 opposed, and five abstentions" on October 3. Corrected
 both instances in the legal guide to match its own source and the
 encyclopedia.
+
+[Reversed by the species check, 2026-09-09: the USFWS release is dated
+October 3 but never states a vote date, and the Committee I secret
+ballot it describes took place on Sunday, October 2, 2016 (WCS release
+dated October 2, 2016, "intervening on behalf of the African grey
+parrot at CITES CoP17 Oct. 2, 2016"; the ENB daily report for 2
+October 2016 covers the Prop. 19 vote). The legal guide's original
+October 2 was right; restored, with its lastUpdated returned to
+2026-07-13 since the page now carries no change. The encyclopedia's
+history section, which says October 3, is outside what this pass may
+edit; left for Mike.]
 
 Recommended links, six added: cost guide's emergency-cost sentence to
 health issues; handling's sleep-mention to cage setup; cage setup's
@@ -3552,6 +3563,87 @@ cost coverage, SEO tags, voice --strict, species numbers, eslint on
 the touched data file). One legacy baseline failure (ferret-adrenal-
 disease-guide, pre-existing, unrelated to this pass's edits) skipped
 by the strict gate as before.
+
+## Corn snake, boa constrictor, african grey, chinchilla, ferret (2026-09-09, batch C species check)
+
+One Fable check over the whole batch, branch claude/batch-c-setup-kgvj92
+from base d1ee1a5, fifteen commits. Scope clean: every file in the diff
+is a guide data file, a species MDX, the review and log files, or the
+one chinchilla encyclopedia field, and that field's research is real
+(Merck's chinchilla page, opened again here: "Chinchillas live about
+10-15 years, on average, but some pet chinchillas have lived up to 20
+years," no wild figure anywhere on the page). All 63 sourced hub rows
+carry numbers that appear in the deep dive they name; routes cover
+every own deep dive and nothing shared; no buy-list prices; every
+difficulty matches the encyclopedia. Voice counts unchanged on every
+touched MDX except one, below. Gates green after the fixes.
+
+Corn snake: clean apart from one word. The vs hognose FAQ's new
+"with most sources citing a 40 to 60% baseline" claimed a majority the
+tank setup guide never states ("Many other sources and vets cite a
+lower 40 to 60% baseline"); "most" changed to "many". The 3.5-5 ft
+and 40-60% corrections themselves stand: no deep dive states adult
+length, the encyclopedia is the only page that does, and tank setup
+owns humidity. Fixed on the branch.
+
+Boa constrictor: the feeding FAQ's "a few days" to "48 hours" matches
+the handling guide's figure, which owns the topic and cites ReptiFiles
+and LafeberVet (ReptiFiles returned 403 to this check, so the figure
+was not re-opened, but it was not changed either). Review file said
+"six" links added where the diff shows five (cost, handling, health
+issues, tank setup, enrichment); corrected. Fixed on the branch.
+
+African grey: the feeding fix is right, verified by opening VCA
+directly: "Pellets ... approximately 75-80%," "Vegetables, legumes,
+and greens ... approximately 20-25%," "Fruits ... 10% or less," and
+"Seeds should only be 20-40% of a balanced diet." The legal fix went
+the wrong way. The USFWS release is dated October 3, 2016 but never
+states when the vote happened; the Committee I secret ballot it
+describes was held Sunday, October 2, 2016 (WCS release dated
+October 2, "at CITES CoP17 Oct. 2, 2016"; ENB daily report for 2
+October 2016). The batch session's review says the release confirms
+October 3, which it does not. October 2 restored in the body and FAQ,
+lastUpdated and lastReviewed returned to 2026-07-13. The encyclopedia
+history section's "October 3" is now the wrong side of that conflict
+and is outside this pass's edit rights; left for Mike. The hub's
+"How intelligent" FAQ was the old hub's answer, not the handling
+guide's frontmatter; replaced with the verbatim copy. Fixed on the
+branch.
+
+Chinchilla: the emergency card did not copy the health guide's
+call-the-vet sentence ("drooling, changes in appetite or stool,
+diarrhea, any respiratory signs, or any indication of heat stress"),
+and its first bullet, "No droppings at all for 12 hours," is a
+feeding-guide figure the health guide never states. Rebuilt as the
+five items of that sentence. Fixed on the branch.
+
+Ferret: PubMed 10649752 is real (Shoemaker, Schuurmans, Moorman,
+Lumeij, JAVMA 2000;216(2):195-7, Utrecht): 50 affected Dutch ferrets,
+median 3.5 years from neutering to diagnosis, "a significant linear
+correlation between age at neutering and age at time of diagnosis,"
+conclusion "age at neutering may be associated with age at development
+of hyperadrenocorticism." The adrenal guide's rewrite mirrors the
+health guide's sourced framing and keeps its "appears to" hedge, a
+fair reading. Two fixes: the rewritten FAQ ran 84 words against the
+checker's 70 (a new faq-long warning) and had dropped the original
+"an association, not a guaranteed cause" hedge; trimmed to 69 words
+with the hedge back. The emergency card's fourth bullet (hypoglycemic
+crisis) and the vetLine's Karo syrup line come from the feeding guide,
+not the health guide the card names; cut, vetLine now carries the
+health guide's own "immediate veterinary care, not a wait-and-see
+approach." Two of three hub FAQs ("Do ferrets smell?", "Is a ferret a
+type of weasel?") were the old hub's, not deep-dive copies; replaced
+with the tank setup cage FAQ and the health guide's emergency FAQ,
+verbatim. Note for Mike: the adrenal guide carries no Sources block at
+all, so its Dutch-study paragraph is sourced only by way of the health
+guide. Fixed on the branch.
+
+Pass grade: B-. The router hubs are mostly right and the VCA and
+Merck checks were real, but the session asserted a source said
+something it does not (the USFWS date), let two hubs keep old-hub
+FAQs against an explicit rule, built two emergency cards from pages
+other than the health guide they name, and miscounted its own links
+in one review section.
 
 ## What the tests changed so far
 
@@ -3976,7 +4068,9 @@ by the strict gate as before.
   produce split (vegetables 20-25%, fruit 10% or less); the legal
   guide stated the CITES CoP17 vote date as October 2, 2016 against
   its own cited USFWS press release and the encyclopedia, both of
-  which say October 3, corrected to match. Six links added (cost to
+  which say October 3, corrected to match (reversed by the species
+  check: the release is dated October 3 but the vote was October 2;
+  see that section). Six links added (cost to
   health issues, handling to cage setup, cage setup to enrichment,
   feeding to the shared pellet-conversion guide, health issues to
   enrichment, enrichment to health issues). Left as sourced: Alex's
@@ -4040,3 +4134,18 @@ by the strict gate as before.
   feeding to health issues). One legacy voice-baseline failure on the
   adrenal disease guide, pre-existing and unrelated to this pass,
   confirmed still tolerated by the strict gate.
+- 2026-09-09, batch C species check (corn snake, boa constrictor,
+  african grey, chinchilla, ferret, branch claude/batch-c-setup-kgvj92):
+  scope, hub numbers, routes, buy lists, and difficulties all clean.
+  Fixed: corn snake vs hognose "most sources" to "many"; boa review
+  link count six to five; african grey CITES vote date restored to
+  October 2, 2016 (the USFWS release is dated October 3 but the
+  Committee I ballot was October 2 per WCS and ENB; encyclopedia's
+  October 3 left for Mike) with the legal guide's date bump reverted,
+  and the hub's old-hub intelligence FAQ replaced with the handling
+  guide's verbatim; chinchilla emergency card rebuilt from the health
+  guide's own call-the-vet sentence; ferret adrenal FAQ trimmed to 69
+  words with its "association, not a guaranteed cause" hedge restored,
+  emergency card's feeding-guide bullet and Karo line cut, and two
+  old-hub FAQs replaced with deep-dive copies. VCA feeding split and
+  PubMed 10649752 both verified real. Pass grade B-. Nothing merged.

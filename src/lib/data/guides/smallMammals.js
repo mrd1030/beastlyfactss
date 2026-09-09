@@ -38,11 +38,11 @@ export const smallMammalGuides = [
     emergencyCard: {
       source: "chinchilla-health-issues-guide",
       callNow: [
-        "No droppings at all for 12 hours",
-        "Lethargy, drooling, panting, or bright red mucous membranes (heat stroke)",
-        "Drooling, a wet chin, dropped food, or weight loss (dental disease)",
-        "A bloated or tense abdomen",
-        "Fur ring in males: shed fur constricting around the penis",
+        "Drooling",
+        "Changes in appetite or stool",
+        "Diarrhea",
+        "Any respiratory signs",
+        "Any indication of heat stress (lethargy, panting, bright red mucous membranes)",
       ],
       vetLine: "An exotic vet experienced with chinchillas, found before you need one. This species masks illness well and can decline fast once symptoms become visible, so call sooner rather than waiting to see if things improve.",
     },
@@ -351,9 +351,8 @@ Older rats are also prone to pituitary tumors (more common in females on high-ca
         "Urinary blockage in males (a hormone-driven enlarged prostate)",
         "Sudden collapse or seizure (insulinoma)",
         "Vomiting, appetite loss, and lethargy after swallowing rubber or foam (GI blockage)",
-        "Weakness, wobbling, a glazed stare, or drooling (hypoglycemic crisis)",
       ],
-      vetLine: "A ferret-experienced exotic vet, found before you need one. For a suspected hypoglycemic crisis, a small amount of Karo syrup or honey rubbed on the gums is emergency first aid on the way to a vet, not a substitute for one.",
+      vetLine: "A ferret-experienced exotic vet, found before you need one. All three are genuine emergencies that need immediate veterinary care, not a wait-and-see approach.",
     },
     routes: [
       { slug: "ferret-cost-guide", line: "$75 to $400 for the ferret, $300 to $700 for the setup, and the $3,000 to $8,000 lifetime vet cost most owners don't budget for." },
@@ -376,8 +375,8 @@ Older rats are also prone to pituitary tumors (more common in females on high-ca
       "A ferret-proofed free-roam room",
     ],
     faqs: [
-      { q: "Do ferrets smell?", a: "Yes, to varying degrees. Ferrets have musk glands and produce a natural musky scent. Most pet ferrets in North America are descented (musk glands removed), which reduces but does not eliminate the scent - the skin and fur themselves produce a natural oil-based smell. Regular bathing reduces the odor temporarily but too-frequent bathing stimulates more oil production. Good litter box hygiene and regular bedding washing manage most of the smell." },
-      { q: "Is a ferret a type of weasel?", a: "Yes, biologically. Ferrets belong to the weasel family (Mustelidae), the same family as mink, stoats, otters, and polecats, and a domestic ferret is believed to descend specifically from the European polecat. That said, \"weasel\" in everyday speech usually means a specific set of smaller wild Mustela species, not a pet ferret, so the two words aren't interchangeable in casual use even though they're taxonomic relatives." },
+      { q: "What size cage does a ferret need?", a: "For a pair, at least 30 by 24 by 48 inches, plus about 4 square feet of floor for each ferret beyond two. Experienced owners and exotic vets point to the double-unit multi-level cage with solid levels and a covered ramp. Bar spacing: one inch or less." },
+      { q: "What ferret health issues count as a real emergency?", a: "A urinary blockage in males from an adrenal-related enlarged prostate, a sudden collapse or seizure from insulinoma, and a GI blockage from swallowed rubber or foam are all genuine emergencies that need immediate veterinary care, not a wait-and-see approach." },
       { q: "Is adrenal disease curable in ferrets?", a: "It's treatable and often manageable long-term, but not always fully curable, especially if both adrenal glands are affected or if surgery isn't a safe option. Many ferrets live comfortably for years with appropriate medical management even without a full cure." },
     ],
   },

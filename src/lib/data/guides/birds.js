@@ -64,7 +64,7 @@ export const birdGuides = [
       "A gram scale",
     ],
     faqs: [
-      { q: "How intelligent are African grey parrots?", a: "African greys are widely considered the most cognitively sophisticated parrots, with the intellectual capacity equivalent to a 5-year-old human child. The famous research parrot Alex demonstrated the ability to identify colors, shapes, and materials, count small quantities, and understand the concept of same and different - all in response to open-ended questions, not fixed cues. Most pet African greys do not reach Alex's level, but they demonstrate extraordinary contextual understanding that consistently surprises their keepers." },
+      { q: "How intelligent are African grey parrots?", a: "Very. Alex, the grey at the center of the landmark peer-reviewed work, labeled 50 objects, 7 colors, and 5 shapes, counted quantities to six, and grasped the concept of none." },
       { q: "What is the most common health issue in African grey parrots?", a: "Hypocalcemia, low blood calcium. Veterinary sources call it the most common cause of central nervous system disease in greys, and the signs are muscle tremors, weakness, and seizures in serious cases." },
       { q: "Is an African grey a reasonable first parrot?", a: "For most people, no. This is a long-lived, highly intelligent species with a documented vulnerability to feather-damaging behavior when under-occupied, and the enrichment workload is a daily commitment rather than a one-time purchase." },
     ],
