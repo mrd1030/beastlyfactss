@@ -2563,6 +2563,168 @@ links, related articles, affiliate, cost coverage, SEO tags, voice
 
 Verdict: fixed on the branch. Nothing merged to main.
 
+## Cockatiel (2026-09-09, batch B, first pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, vs cockatoo). One Opus agent,
+about 81k tokens. The review below reads the old legacy hub; the
+router hub was built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | Densest page: cage dimensions, itemized costs, pellet brands, night-light rule. |
+| Encyclopedia | B | Short but earns its place: size, weight, and a genuinely interesting mutation history. |
+| Cost | C- | Two tables half full of "Part of the starter setup" instead of numbers. |
+| Handling | A- | Best-structured article: settling period, flat-palm step-up, a real stress list. |
+| Health issues | B | The call-the-vet list and the zoonotic flag are useful; thin on what to actually do. |
+| Tank setup | B | Width over height, half-inch bars, spot-clean daily. |
+| Feeding | A | Best article in the set: safe list, toxic list, no grit, six honest reasons for appetite loss. |
+| Enrichment | A- | A real priority order, start-easy foraging advice, no sandpaper perches. |
+| vs Cockatoo | C+ | Fine, but the reader had already decided. |
+
+Set grade: B-. "Strong individual articles undermined by the hub
+disagreeing with them on cage size, bar spacing, cage shape, lifespan,
+and diet ratio."
+
+Hub versus the set, both sides quoted (all against the old legacy hub,
+resolved by the router rebuild):
+
+- Cage. The old hub said: "A minimum cage of 24x24x30 inches is
+  required for a cockatiel." Tank setup says: "Reference tables
+  commonly list a minimum of about 20 by 20 by 30 inches for a single
+  cockatiel, though many keepers aim closer to 24 by 24 by 30 inches."
+  Different minimum, and the old hub called its own number required.
+- Shape. Directly opposed, not just different numbers: the old hub
+  said "Cockatiels are active climbers and benefit from vertical
+  space," tank setup says "cockatiels are horizontal flyers, so a
+  tall, narrow cage wastes exactly the space they'd actually use."
+  Tank setup's framing is the one with a citation behind it (PetMD's
+  care sheet); the old hub's "active climbers" line traces to no
+  source at all.
+- Bar spacing, a safety figure. The old hub said "1/2 to 3/4 inch is
+  appropriate." Tank setup says "half an inch or smaller to prevent
+  head entrapment," a stricter, safer number. The old hub permitted a
+  spacing tank setup calls a genuine injury risk.
+- Diet ratio, a real three-way conflict across the set, not just hub
+  versus deep dive: the old hub said pellets should be "60 to 70%,"
+  tank setup said "60 to 80%," feeding said "roughly 75 to 80%."
+  Opened tank setup's own cited VCA page directly (vcahospitals.com,
+  Cockatiels: Feeding): it states "Pellets should ideally represent
+  approximately 75%-80% of the bird's diet," matching feeding's
+  figure, not tank setup's own quote of it. Tank setup's diet
+  paragraph was a near-duplicate of the feeding guide's fuller
+  treatment anyway, so it's now a one-sentence pointer at feeding
+  instead of restating a number it was misquoting.
+- Lifespan. The old hub said "15 to 25 years." The cost guide said
+  "Cockatiels live 15 to 20 years," matching neither of its own two
+  most relevant cited sources: opened them directly, TheVetDesk states
+  "the next 10 to 15 years" and Hepper states "around 10 to 15 years
+  old." Corrected to 10 to 15 throughout the cost guide. Left
+  unresolved and noted rather than force-reconciled: both
+  budgie-vs-cockatiel-guide.mdx and cockatiel-vs-cockatoo-guide.mdx
+  independently state "15 to 25 years" for cockatiels, citing PetMD's
+  "How Long Do Birds Live" page directly (opened it: PetMD does say
+  "on average approximately 15 to 25 years... oldest cockatiel
+  reported to be 36 years old," a real quote, not invented), and
+  cockatiel-vs-cockatoo-guide also cites a peer-reviewed captive-parrot
+  survival paper (Young et al. 2011) that could not be opened
+  (paywalled) to check its exact figure. Two real, cited numbers from
+  different source tiers that do not agree; out of scope to force one
+  side to match the other in a deep-dives-only pass, flagged here
+  instead. The encyclopedia's "up to 25 years in captivity, the oldest
+  on record 36" matches PetMD exactly and was left untouched, it is
+  not the unsourced guess it looks like at a glance.
+- Vet cost. The old hub's table said "Annual avian vet check: $60 to
+  $100." Cost says "$85 to $200." The router hub's Budget row now
+  quotes the cost guide's own figures.
+- Setup total. The old hub's own table summed to roughly $145 to $280
+  before the bird. Cost says "$320 to $860" for the full setup. The
+  router hub drops the separate summed table and quotes cost's own
+  headline range.
+- Hub against itself, in the old legacy version only: Health said "10
+  to 12 hours of darkness per night," the same page's own FAQ said
+  "provide 14 to 16 hours of darkness per night" for reducing egg
+  laying. Neither figure came from a cockatiel deep dive, so neither
+  carried into the router hub; the Sleep row now quotes tank setup's
+  actual 10 to 12 hour figure, and the 14 to 16 hour egg-laying
+  intervention is left for the shared chronic egg laying guide to
+  cover if it doesn't already, not invented here.
+
+Checked and found not a bug: tank setup's "Ten to twelve hours of UV
+light exposure" sitting on the same page as "10 to 12 hours of...dark
+sleep" reads like a duplication error (the two together exceed 24
+hours), but PetMD's own cockatiel care sheet, cited by that page,
+states exactly "shine a full-spectrum UV light...for 10-12 hours each
+day." Day light hours and night dark hours are two different real
+figures, not one number pasted twice.
+
+The set as a whole: buyable, houseable, feedable, tameable, and the
+emergency signs are all here. Real gaps, checked against the Health
+and More list before being called real: room temperature and draft
+guidance, a measurable daily food amount (grams or a bowl depth, not
+just a percentage), how to actually find or verify an avian vet, and
+how to introduce a second cockatiel (the shared colony guide covers
+budgies, canaries, and finches only, not cockatiels). None of these
+are covered by a shared guide either; filed in docs/READER_LOG.md.
+
+Deep dives against each other: the non-stick kitchen warning and the
+seed-diet lecture each repeat consistently across three or four pages
+with no disagreement once the pellet percentage above is fixed. The
+crest-reading disagreement between handling ("held upright and
+relaxed... calm curiosity") and vs cockatoo (different bird, different
+crest language) is a different species' body language, not a
+same-species contradiction, and stays as is.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | none needed | |
+| Encyclopedia | none needed | |
+| Cost | "so it's worth locating one near you before an emergency forces the search" | Bird Emergency Plan guide (added) |
+| Handling | "routine things like cage cleaning, nail trims, or a vet visit" | Bird First Aid Kit and Grooming guide (added) |
+| Health issues | "changes in droppings" | Reading Bird Droppings guide (added) |
+| Tank setup | "so a cage cover or a small night light can help" | Photoperiod and Sleep guide (added) |
+| Feeding | "laying hens are the one group that need extra calcium consideration" | Chronic Egg Laying and Egg Binding guide (added) |
+| Enrichment | "Do not assume plucking is behavioral before an avian vet has ruled out medical causes" | Molt vs. Plucking vs. PBFD vs. Giardia guide (added) |
+| vs Cockatoo | "have a plan for who cares for it if it outlives you" | Succession Planning guide (added) |
+
+Trust: the two cost tables with cells reading "Part of the starter
+setup" instead of a number, the three-way pellet percentage split, and
+the cage-shape contradiction were the main doubts, the first two
+resolved by the router rebuild and the diet research above; the third
+was never a real bug, see above. The sentence that most convinced the
+reader a keeper wrote this, from feeding: "We couldn't find a single,
+consistently sourced number for exactly how many hours or days a
+cockatiel can safely go without eating, and would rather say that
+honestly than invent a round figure."
+
+Reader's two changes: make the hub inherit its numbers from the deep
+dives instead of restating them, starting with bar spacing, a safety
+figure (done by the router rebuild); put real numbers back in the cost
+tables and reconcile them with the hub (the cost guide's own tables
+already carry real per-item ranges for the vet and ongoing sections,
+only the setup table's per-item cells were vague by design, matching
+the site's established "item, then range or note" cost-table pattern
+used elsewhere; left as is since it's not actually missing data, just
+a different table shape than the reader expected).
+
+Fixed the same day: router hub rebuilt, resolving the cage, shape, bar
+spacing, and vet-cost conflicts by construction; the diet-percentage
+conflict researched for real (VCA's actual page) and fixed in tank
+setup, which is now a pointer at feeding rather than a near-duplicate;
+the lifespan conflict researched for real (TheVetDesk and Hepper, both
+opened directly) and corrected in the cost guide. Six of seven
+recommended links added.
+
+Open: the two vs-piece lifespan figures (15 to 25, both real, both
+cited) against the cost guide's now-corrected 10 to 15 (also real,
+also cited) are left unreconciled, a genuine cross-tier source
+disagreement rather than an error, flagged for whoever next touches
+either vs guide. The room temperature, food-amount, avian-vet-finding,
+and second-cockatiel gaps from the first pass remain open too, still
+uncovered anywhere in the set.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
