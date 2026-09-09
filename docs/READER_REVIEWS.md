@@ -4955,3 +4955,240 @@ the Fluker's substrate) are now reachable only from /gear and from the
 prose links that already carry them. `check-cost-coverage` does not fail
 on it, and the same is true of every species reconciled in batches A to
 C, so it is recorded rather than treated as a defect.
+
+## Box Turtle (2026-09-09, first pass)
+
+Batch D. Extractor set of eight pages (hub, encyclopedia, cost, handling,
+health issues, tank setup, enrichment, legal). Read against the old legacy
+hub (housing and diet prose, a cost table, a checklist, eight FAQs); the
+router hub was built from its findings the same day. No Agent tool was
+available in this session, so the set test was run in-session against
+.reader/box-turtle/ under the READMEFIRST set test prompt rather than
+delegated to a background agent; the raw output is in the reader log entry
+for this date.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | A full care sheet where a router should be, and it changes the numbers when it repeats them. |
+| Encyclopedia | B+ | The history section is the best writing in the set. |
+| Cost | B+ | Real arithmetic you can check, and one lifespan claim you cannot. |
+| Handling | B+ | Careful about sexing in a way the hub is not. |
+| Health issues | B- | Good causal structure, no sources at all under a page about antibiotics. |
+| Tank setup | C+ | The page most needed on day one, and its Temperature section has no degrees in it. |
+| Enrichment | A- | One study, honestly described, with a priority order that follows from it. |
+| Legal | A | Statute by statute, and it says when a rule is unsettled. |
+
+Set grade: B-. "The deep dives are good to very good and the legal and
+enrichment guides are better than most of what is online. The hub drags it
+down by contradicting them in public on price, temperature, substrate, UVB,
+and lifespan, and the tank setup guide leaves out the one number a new keeper
+needs on day one."
+
+Hub grade after the rebuild: A-. Twenty first-week rows, every one copied
+from the deep dive named in its source, six routes, five emergency bullets,
+a nine-item buy list with no prices, three verbatim FAQs. Held back from an A
+only because two rows (Adult size, and the Outdoor pen row sourced to a
+shared guide) are the only places a reader meets those figures at all.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, all resolved by the router rebuild.
+
+- Substrate depth. Old hub: "deep, moist substrate (coconut coir/topsoil mix,
+  6 inches or more deep)", and the checklist item "OR large indoor tortoise
+  table with 6 inch+ moist substrate". Tank setup guide: "Wood chips or a
+  topsoil and coconut fiber mix, at least 2 to 3 inches deep to support
+  burrowing." The tank setup guide is the subject page and keeps its figure;
+  the hub's Substrate row now quotes that sentence.
+- UVB strength. Old hub: "UVB (T5 HO Arcadia 6 to 12%)", twice. Tank setup
+  guide: "A T5 HO bulb (6% strength or the equivalent Zoo Med ReptiSun 5.0 T5
+  HO) in a reflective fixture, targeting a basking-area UV index of 3.0 to
+  4.0." The cost guide's Sources already carry the Zoo Med ReptiSun 5.0 spec
+  sheet and no source anywhere supports 12%. The hub's UVB row now quotes the
+  tank setup guide.
+- Basking temperature. Old hub: "a basking spot (85 to 88 degrees F)", in the
+  housing prose and again in the checklist. Tank setup guide: "Provide a clear
+  warm basking zone with a gradient down to a cooler area, using an indoor
+  heat source", with no number anywhere on the page. A two-degree-wide
+  precision resting on nothing. Resolved by researching it and putting a
+  sourced number in the deep dive, see the numbers section below; the hub's
+  Temperature row now quotes the tank setup guide's corrected sentence and the
+  85 to 88 figure is gone rather than moved.
+- Captive lifespan. Old hub: "captive animals routinely live into their 50s
+  and 60s with good care." Cost guide: "30 to 40-plus years in captivity, with
+  wild box turtles averaging around 50 years." Neither is supported by either
+  page's sources, and the cost guide's version has captivity costing a box
+  turtle a decade against the wild. Resolved against Indiana DNR, below.
+- Juvenile protein. Old hub, in the diet prose and again in a FAQ: "Juveniles
+  need more protein (60 to 70%) for growth." No deep dive states it. VCA's box
+  turtle feeding page, already cited by the cost guide, says only that "Young,
+  growing box turtles, up to four to six years of age, tend to be primarily
+  carnivores." The percentage is invented precision. Dropped with the hub and
+  deliberately not moved into a deep dive, because no source states a number.
+- Costs, line by line. Old hub setup table: outdoor enclosure or tortoise
+  table $150 to $400, UVB $60 to $100, basking bulb $20 to $40, substrate $25
+  to $45, soak dish $10 to $20. Cost guide: "Enclosure, 36x18x18 inch minimum
+  | $202 - $258", "T5 HO UVB fixture and bulb | $95 - $115", "a basking bulb
+  runs roughly $8 to $14, with a basking dome fixture adding another $12 to
+  $20", "Coconut fiber substrate | $10 - $16", "Large soak-able water dish |
+  $18 - $30". The hub's basking bulb was triple the deep dive's. Annually the
+  hub billed "UVB bulb replacement: $60 to $100" against the cost guide's "so
+  a $25 tube is $2 to $4 a month", and "Annual vet wellness check: $60 to
+  $100" against "A routine exotic exam runs $60 to $135". The router hub has
+  no cost table; its Budget row quotes the cost guide's own totals.
+- Sexing. Old hub FAQ: "Eye color is the fastest tell in most North American
+  box turtles." Handling guide: "Eye color gets mentioned constantly, red or
+  orange in males versus brown in females, and it does hold for eastern and
+  three-toed box turtles, but it isn't universal across every box turtle
+  subspecies, so treat it as a supporting clue rather than the deciding one."
+  A recommendation conflict, not a number. The handling guide cites a source
+  for it and is the subject page, so it keeps its position; the hub's FAQ is
+  replaced by three verbatim deep-dive FAQs.
+
+### Deep dives against each other
+
+One real disagreement, and it is with a shared guide rather than inside the
+species set.
+
+- Outdoor temperature floor. Box turtle tank setup guide: "This species
+  shouldn't be kept outdoors once temperatures drop below about 70°F", with no
+  source on the page at all. Shared outdoor reptile housing guide: "VCA's box
+  turtle housing guidance sets the line at 60°F (16°C) for that species
+  specifically." Shared reptile emergency plan guide, cold-floor table: ["Box
+  turtle", "N/A, keep indoors below this", "70°F (21°C)"]. VCA Animal
+  Hospitals' box turtle housing page, opened for this pass, states: "Bring the
+  box turtle indoors if the temperature drops below 60°F (16°C)." A veterinary
+  hospital, species-specific, beats an unsourced sentence, and the shared
+  outdoor housing guide already agrees with it. The tank setup guide changed
+  to 60°F. The emergency plan guide's row is the last copy of the old figure
+  and is written up for the parent to apply, since shared guides were out of
+  scope for this agent.
+
+Read twice, no conflict: the half-animal-half-plant diet (cost guide's monthly
+section and the tank setup guide's own section, both short and both earning
+their place, so neither was collapsed to a pointer); the semi-terrestrial
+land-and-water argument (handling and tank setup, both good); the outdoor pen
+(tank setup body, tank setup FunFact, enrichment guide).
+
+Advisory, not a conflict: substrate depth read across three pages. Tank setup
+"at least 2 to 3 inches deep", cost guide "a 4 inch layer in a 36x18 inch
+indoor enclosure", enrichment "do not use a shallow scattering of substrate
+and call it deep." Four inches satisfies "at least 2 to 3", so there is no
+contradiction to fix, but 2 to 3 inches is the number a new keeper will build
+to and a 4.5 to 7 inch turtle cannot get under it. ReptiFiles, the cost
+guide's source for the depth math, returned 403 to every fetch this pass, so
+the figure could not be checked and nothing was changed. Listed under
+"Unsourced, needs a fact-check".
+
+### Gaps, checked against the Health and More list first
+
+Real:
+- A basking surface temperature for a box turtle, from any source. The shared
+  reptile heating and thermostats guide covers what a thermostat does and
+  where the probe goes, not this species' target. Fixed this pass: VCA's
+  numbers are now in the tank setup guide.
+- How much an adult box turtle eats in one sitting. The cost guide's "adults
+  eat daily or every other day" is the only feeding frequency in the set, and
+  it sits inside a paragraph about grocery bills. There is no box turtle
+  feeding guide and no shared guide covers portioning. Still open.
+- What the homing instinct means in practice after an escape or a move. The
+  old hub warned that "even a few miles can disorient them fatally" and
+  nothing follows it. Not covered by any shared guide. Still open, and note
+  the claim left the site with the old hub prose, so nothing now asserts it.
+
+Not real, covered by the sidebar already:
+- Brumation protocol. Shared tortoise brumation guide, which covers North
+  American box turtles explicitly with their own numbers. Now a hub row.
+- New-arrival quarantine. Shared chelonian herpesvirus guide, six months
+  minimum. Now a hub row.
+- Outdoor pen construction and buried fencing depth. Shared outdoor reptile
+  housing guide. Now a hub row.
+- Salmonella and hygiene, daily stool checks, shedding, succession planning
+  for a pet that outlives you. All shared guides in the list.
+
+### Stranded questions
+
+- Old hub told the reader to "consult a chelonian-experienced vet for safe
+  hibernation protocols" and stopped; the shared brumation guide had the
+  protocol. Answered by the hub's new Brumation row.
+- Handling guide says a box turtle needs "regular access to shallow water for
+  soaking"; the tank setup guide has the dish. Neither pointed at the other.
+  Both are in the Deep Dive list on every page, so no in-body link was added.
+- Cost guide summarizes state rules in a paragraph while the legal guide has
+  the state-by-state table, and never says so. Same reason, no link added.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "consult a chelonian-experienced vet for safe hibernation protocols" | Tortoise brumation guide | Yes, as a hub row rather than prose (the prose is gone) |
+| Encyclopedia | none needed | | |
+| Cost | "Wild collection of box turtles is illegal or heavily restricted across most of their native range in the US." | Legal guide | Skipped: the sentence sits before the first H2 |
+| Handling | none needed, already links out three times | | |
+| Health issues | "Often found incidentally on a routine fecal exam even without obvious symptoms, heavier loads cause diarrhea and weight loss." | Reptile stool and urates guide | Yes |
+| Tank setup | "though an outdoor pen is genuinely excellent where your climate allows" | Outdoor reptile housing guide | Skipped: the page already carries three in-body links and the enrichment guide now carries this target |
+| Enrichment | "a secure outdoor enclosure in suitable weather is the highest-quality enrichment available for a box turtle" | Outdoor reptile housing guide | Yes |
+| Legal | none needed | | |
+
+All three added links go to shared class guides, so none of them count against
+the one-sibling-link-per-article limit, none sit before a first H2, none are
+inside a ComparisonTable cell, and each sentence is about the animal.
+
+### Trust
+
+What made the reader doubt them: the old hub's cost table against the cost
+guide's, most of all a basking bulb at $20 to $40 against $8 to $14, because
+the hub reads like it is selling and the deep dive shows its work. The health
+issues guide carrying no Sources block under a page about antibiotics and
+metabolic bone disease. The tank setup guide carrying none either. And the
+hub's "85 to 88 degrees F", a two-degree precision on a number nothing else in
+the set repeats.
+
+The sentence that most convinced the reader a real person wrote this, from the
+legal guide on Oklahoma: "The Department's page says outright that it is an
+interpretive summary and not a legal document, so this is a genuine gap
+between the words and the practice rather than a settled six."
+
+### Reader's two changes
+
+1. Put real temperature numbers in the tank setup guide, from a source, and
+   delete the hub's 85 to 88 rather than move it. Done: VCA's 90 to 100°F
+   basking zone, 70 to 75°F cool end, and 65 to 70°F overnight are in the tank
+   setup guide with a new Sources block, and the hub carries no figure of its
+   own.
+2. Make the hub stop repeating the deep dives. Done by the router rebuild.
+
+### Unsourced, needs a fact-check
+
+- Substrate depth. Tank setup "at least 2 to 3 inches", cost guide "a 4 inch
+  layer", enrichment arguing for deeper. ReptiFiles 403'd on every attempt.
+- Humidity, 60 to 80%, tank setup guide only, no source states it.
+- The health issues guide has no Sources block at all. Every claim on it
+  (metabolic bone disease causes, the vitamin A to respiratory infection link,
+  shell rot, Baytril by implication from the cost guide) is unattributed.
+  Out of scope for this pass, which was links and numbers, not new research.
+
+### Encyclopedia
+
+Checked the box turtle entry in src/lib/data/encyclopedia/turtles.js against
+the deep dives' sourced figures. Nothing changed, and here is why.
+
+- Wild Lifespan, "50-100+ years", and the Overview's "They can live over 100
+  years". Indiana DNR: "Eastern box turtles have been documented to exceed 60
+  years of age. Very old specimens may reach ages of more than 100."
+  Smithsonian National Zoo: "Box turtles generally live for 25-35 years but
+  have been known to survive to over 100 years old!" The top of the
+  encyclopedia's range is directly supported by both, and its floor of 50 sits
+  inside what Indiana DNR documents rather than against it. Not a conflict, so
+  under the narrow encyclopedia rule the field was left alone. The
+  disagreement was on the cost guide's side and was fixed there.
+- Adult Size, "4.5-7 inches (11-18 cm)". No deep dive states an adult size, so
+  there is nothing to conflict with. Smithsonian gives "4 inches by 6 inches"
+  for eastern box turtles specifically, which is inside the genus range the
+  encyclopedia gives. Left alone, and it is the source for the hub's Adult
+  size row.
+- Conservation, "Vulnerable (IUCN); threatened in many US states", and the
+  history section's 70 to 74 percent declines, 30,000 turtles from Louisiana
+  in 41 months, and the CITES Appendix II listing. All consistent with the
+  legal guide, which independently reports 70 to 80 percent crashes in
+  intensively studied areas. No statute, date, or jurisdiction touched.

@@ -8,62 +8,77 @@ export const turtleGuides = [
     image: "/assets/guides/box-turtle.jpg",
     tagline: "The self-closing, woodland wanderer that can live for over 100 years!",
     funFact: "Box turtles have a hinged plastron (lower shell) that closes so tightly that no predator can get in. They are the only turtles that can completely seal themselves inside their shell!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "Outdoor enclosure or large tortoise table", low: 150, high: 400 },
-        { item: "UVB (T5 HO Arcadia 6-12%)", low: 60, high: 100 },
-        { item: "Basking bulb", low: 20, high: 40 },
-        { item: "Deep moist substrate (coconut coir/topsoil)", low: 25, high: 45 },
-        { item: "Shallow soak dish", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Earthworms, insects, and produce", low: 100, high: 180 },
-        { item: "Calcium and multivitamin supplements (herbivore, no added phosphorus)", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 60, high: 100 },
-        { item: "Electricity (heat and lighting)", low: 50, high: 90 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
-      ],
-    },
-    sections: {
-      housing: "Box turtles do best in large outdoor enclosures with natural soil, plants, and varied terrain. A minimum 4x8 ft for one adult, bigger is always better. Walls must be buried 6 to 12 inches underground. Provide a shallow water dish they can soak in (but not deep enough to drown), hiding spots under logs and leaf litter, and moist areas for burrowing. Indoor setups require a large tortoise table with UVB (T5 HO Arcadia 6 to 12%), a basking spot (85 to 88 degrees F), and deep, moist substrate (coconut coir/topsoil mix, 6 inches or more deep).",
-      diet: `Box turtles are true omnivores with broad dietary needs. A balanced diet consists of roughly 50% animal protein sources and 50% plant matter. Protein sources include earthworms (the single best protein for most turtles), crickets, dubia roaches, slugs, occasional cooked lean meat, and feeder fish. Plant matter includes dark leafy greens, various berries, mushrooms, flowers, and soft fruits.
-
-Juveniles need more protein (60 to 70%) for growth. Adults shift toward more plant matter. Vary the diet as much as possible - wild box turtles eat dozens of different food items throughout the year, and dietary variety in captivity produces healthier, more vibrant animals.
-
-Calcium dusting 2 to 3 times per week is important, particularly for females during egg production. Fresh, dechlorinated water always available in a shallow dish they can soak in. Change water daily as turtles defecate in their water frequently.`,
-      enrichment: `Box turtles thrive in naturalistic outdoor setups with varied terrain, deep leaf litter for burrowing, plants to navigate through, logs to hide under, and natural prey to forage for. The richer the environment, the more natural behavior is expressed. Watching a box turtle hunt earthworms after rain or forage through leaf litter is genuinely rewarding.
-
-Box turtles have excellent homing instincts and will persistently try to return to their territory if released or escape. Never release a captive box turtle outside its precise local area - even a few miles can disorient them fatally. They also should not be removed from the wild (wild populations are declining significantly).
-
-They recognize their keepers over time and approach for food. Annual hibernation (brumation) is natural and important for adult box turtles - consult a chelonian-experienced vet for safe hibernation protocols specific to your climate.`,
-      health: `Wild-caught box turtles frequently carry parasites (internal worms, protozoa), herpesvirus (Ranavirus or Testudinid herpesvirus), and are heavily stressed from capture and transport. Only acquire captive-bred animals from reputable breeders. Any wild-caught box turtle should receive a full veterinary workup including fecal exam upon acquisition.
-
-Herpesvirus infection is common in wild populations and causes nasal discharge, eye swelling, lethargy, and loss of appetite. There is no cure - affected animals are managed with supportive care and antiviral treatment under veterinary supervision. Respiratory infections from cold, damp conditions are also common.
-
-Shell injuries (from dog attacks, lawn mowers, and vehicles) are unfortunately frequent in outdoor turtles. Secure outdoor enclosures with buried walls prevent escapes. Annual wellness checks with a chelonian-experienced reptile vet are essential for all box turtles.`,
-      checklist: [
-        "4x8 ft+ outdoor enclosure (walls buried 6 to 12 inch)",
-        "OR large indoor tortoise table with 6 inch+ moist substrate",
-        "UVB T5 HO (Arcadia 6 to 12%)",
-        "Basking spot (85 to 88 degrees F)",
-        "Shallow soak dish (changed daily)",
-        "Deep leaf litter and hiding spots",
-        "Earthworms, dubia roaches, dark greens, berries",
-        "Calcium + multivitamin supplements",
-        "Reptile vet with chelonian (turtle) experience",
-        "Hibernation safety protocol (consult vet)",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Quarantine, outdoor
+    // fencing, brumation, hygiene, and the cold-stress line cite the shared
+    // reptile and chelonian guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-09 after the box turtle set test
+    // (docs/READER_REVIEWS.md). The old hub's basking spot (85 to 88°F),
+    // UVB strength (6 to 12%), 6 inch substrate, juvenile protein share
+    // (60 to 70%), and cost tables were all figures no deep dive carried;
+    // they are gone rather than moved.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "Several states genuinely restrict or ban this outright, and a legally purchased, captive-bred box turtle does not come with zero conditions either: Florida, West Virginia, and a handful of other states attach real caps or paperwork requirements even to turtles you bought fair and square.", source: "box-turtle-legal-guide" },
+        { label: "Quarantine", value: "A minimum of six months, kept completely separate from any other chelonian in the house, with lab testing during it. A two or three week quarantine, common advice for other reptiles, is not long enough for this specific disease.", source: "chelonian-herpesvirus-quarantine-guide" },
+        { label: "Enclosure", value: "36 by 18 inches is a workable minimum, but larger is considerably better, closer to 5.5 feet by 3 feet for an eastern box turtle, or around 4 feet by 2 feet for the somewhat smaller ornate box turtle. Floor space matters far more than height.", source: "box-turtle-tank-setup-guide" },
+        { label: "Outdoor pen", value: "VCA Animal Hospitals' box turtle housing guidance calls for burying fencing 6 to 12 inches deep around the perimeter, or a solid barrier of brick or rock laid along it as an alternative to buried mesh.", source: "outdoor-reptile-housing-guide" },
+        { label: "Temperature", value: "VCA puts the basking zone at 90 to 100°F and the cooler end at roughly 70 to 75°F, and says extra heat and light are not necessary overnight as long as the enclosure holds 65 to 70°F.", source: "box-turtle-tank-setup-guide" },
+        { label: "Outdoors", value: "Bring a box turtle indoors once the temperature drops below 60°F.", source: "box-turtle-tank-setup-guide" },
+        { label: "Humidity", value: "Relatively humid, 60 to 80%. Mist daily and provide a shallow water dish large enough for your turtle to genuinely soak in. Hatchlings and young turtles dehydrate especially easily and need consistently moist substrate.", source: "box-turtle-tank-setup-guide" },
+        { label: "Substrate", value: "Wood chips or a topsoil and coconut fiber mix, at least 2 to 3 inches deep to support burrowing. Avoid gravel, sand, additive-laden potting soil, crushed walnut shells, and cat litter entirely.", source: "box-turtle-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO bulb (6% strength or the equivalent Zoo Med ReptiSun 5.0 T5 HO) in a reflective fixture, targeting a basking-area UV index of 3.0 to 4.0. Run a longer photoperiod in summer, around 14 hours, tapering to about 10 hours in winter.", source: "box-turtle-tank-setup-guide" },
+        { label: "Land and water", value: "Both land and shallow water access, non-negotiable for this species, a dry-only or water-only setup doesn't match how box turtles actually live. A 4 to 5 inch opaque barrier along the front glass helps curb the stress-driven pacing that clear-walled enclosures can cause.", source: "box-turtle-tank-setup-guide" },
+        { label: "Diet", value: "Roughly half animal matter and half plant matter. Earthworms, insects, and occasional lean protein alongside leafy greens and vegetables make up a balanced diet for this species.", source: "box-turtle-tank-setup-guide" },
+        { label: "Feeding and calcium", value: "Adults eat daily or every other day. Calcium with D3 is dusted on food two or three times a week.", source: "box-turtle-cost-guide" },
+        { label: "Handling", value: "Support the full body with both hands, keep sessions short, and never drop, shake, or flip a box turtle upside down, this causes real stress and can interfere with normal breathing.", source: "box-turtle-handling-guide" },
+        { label: "Enrichment", value: "Deep substrate that can be burrowed and pushed through first, then multiple hides and cover throughout, then floor space and outdoor time where climate and security allow. Do not keep a box turtle on newspaper or bare liner.", source: "box-turtle-enrichment-guide" },
+        { label: "Brumation", value: "Box turtles run their own protocol rather than a tortoise's: a shorter 10 to 14 day fast and a band a touch warmer at 45 to 50 degrees Fahrenheit, both per Chicago Exotics Animal Hospital, with a vet exam before anything else changes.", source: "tortoise-brumation-guide" },
+        { label: "Budget", value: "Roughly $345 to $453 upfront and roughly $40 to $70 monthly. A routine exotic exam runs $60 to $135, and an emergency visit starts around $150 and can reach $500 or more with treatment.", source: "box-turtle-cost-guide" },
+        { label: "Adult size", value: "4.5 to 7 inches (11 to 18 cm)." },
+        { label: "Lifespan", value: "Documented past 60 years of age, with very old individuals reaching more than 100.", source: "box-turtle-cost-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact, and never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Cold stress", value: "The signs that mean stop managing it yourself and call a vet are open-mouth breathing, audible wheezing or clicking, mucus around the nose or mouth, and any animal that stays limp or unresponsive once it's back in a normal temperature range.", source: "reptile-emergency-plan-guide" },
       ],
     },
+    emergencyCard: {
+      source: "box-turtle-health-issues-guide",
+      callNow: [
+        "A misshapen shell, deformed legs, and slow or stunted growth (metabolic bone disease). Always see a vet",
+        "Swollen, puffy eyes, sometimes sealed shut entirely, along with eye or nasal discharge and occasionally ear abscesses (vitamin A deficiency). See a vet",
+        "Nasal discharge, mucus bubbles, wheezing, open-mouth breathing, and lethargy (respiratory infection). Always see a vet, this will not resolve without antibiotic treatment",
+        "Discolored patches on the shell with a foul odor (shell rot). See a vet",
+        "Diarrhea and weight loss, which a heavier internal parasite load causes. A vet is required for diagnosis and treatment",
+      ],
+      vetLine: "A reptile-experienced vet with chelonian experience, found before you need one. Because box turtles hide illness so effectively, an annual wellness exam is genuinely worth doing even when your turtle seems completely healthy, and vitamin A deficiency often sets the stage for a respiratory infection, so treating one without addressing the other doesn't fully solve the problem.",
+    },
+    routes: [
+      { slug: "box-turtle-cost-guide", line: "The $345 to $453 setup where lighting and heating dominate, the $40 to $70 month, what an exotic exam and an emergency visit cost, and the sourcing question that comes before any of it." },
+      { slug: "box-turtle-tank-setup-guide", line: "The 36x18 inch minimum and the sizes worth building to instead, the basking and cool-end targets, 60 to 80% humidity, burrowable substrate, T5 HO UVB, and why land and water are both non-negotiable." },
+      { slug: "box-turtle-handling-guide", line: "Why this is a limited-handling species, the two-handed support, the hinged plastron that gives the animal its name, telling males from females, and shyness against actual illness." },
+      { slug: "box-turtle-health-issues-guide", line: "Metabolic bone disease, vitamin A deficiency and the respiratory infection it sets up, shell rot, internal parasites, and why the annual exam matters on a turtle that looks fine." },
+      { slug: "box-turtle-enrichment-guide", line: "The study that put 38 eastern box turtles on newspaper or on mulch and measured the difference in their blood, and the priority order it argues for." },
+      { slug: "box-turtle-legal-guide", line: "State by state, where a box turtle is banned, capped, or permitted, why captive-bred does not always help, and the conditions that follow a turtle you already own." },
+    ],
+    buyList: [
+      "36x18x18 inch enclosure, or an outdoor pen with the fencing buried",
+      "T5 HO UVB fixture and bulb (6% strength, or a Zoo Med ReptiSun 5.0 T5 HO)",
+      "Basking bulb and a basking dome fixture",
+      "Deep topsoil and coconut fiber substrate, or wood chips",
+      "Large soak-able water dish",
+      "Hides, cork, and leaf litter for cover",
+      "A 4 to 5 inch opaque barrier for the front glass",
+      "Calcium with D3",
+      "Earthworms, mealworms, dark leafy greens, and berries",
+    ],
     faqs: [
-      { q: "How long do box turtles live?", a: "50 to 100+ years - some wild box turtles have been documented exceeding 100 years, and captive animals routinely live into their 50s and 60s with good care. This is a genuinely multi-generational commitment. Always source captive-bred box turtles from reputable breeders, never from wild collection, as wild populations are declining significantly." },
-      { q: "What do box turtles eat?", a: "True omnivores with broad needs. A balanced diet is approximately 50% animal protein (earthworms are the single best protein source) and 50% plant matter - dark greens, various berries, mushrooms, flowers, and soft fruits. Juveniles need more protein (60 to 70%) for growth. Vary the diet as much as possible; dietary variety produces healthier, more vibrant animals." },
-      { q: "Can I pick up a box turtle I find in the wild and keep it as a pet?", a: "No - do not collect box turtles from the wild. Wild populations are declining seriously across North America from habitat loss, vehicle strikes, and collection. Removing a box turtle from its territory is also directly harmful to that individual, as they have strong homing instincts and attempt to return. Source only captive-bred animals from reputable breeders." },
-      { q: "Do box turtles need to hibernate?", a: "Annual brumation is natural and important for adult box turtles in most of their range. Animals prevented from hibernating long-term can develop reproductive issues and shortened lifespans. Consult a chelonian-experienced veterinarian for safe hibernation protocols tailored to your climate and the specific subspecies you are keeping before the first winter." },
-      { q: "What kind of outdoor enclosure do box turtles need?", a: "A minimum 4x8 ft outdoor enclosure with walls buried 6 to 12 inches underground is appropriate for one adult. Box turtles are persistent diggers and climbers. Provide deep leaf litter for burrowing, a shallow water dish large enough to soak in (changed daily), varied terrain including logs and plants, and moist areas in one section of the enclosure." },
-      { q: "Are box turtles good pets for beginners?", a: "Not the easiest first reptile, despite looking like a simple backyard turtle. Box turtles need real outdoor space, can live 50 to 100+ years, and have such strong homing instincts that a released or escaped turtle will try to walk back to its old territory, sometimes fatally. They're a better fit for someone ready for a genuinely multi-generational commitment." },
-      { q: "Is a box turtle a tortoise or a turtle?", a: "Technically a turtle. Box turtles (genus Terrapene) belong to the pond turtle family, not the true tortoise family, even though they're fully terrestrial and look and act more like a tortoise day to day. They're also not the same as a snapping turtle or a painted turtle - both are aquatic species with very different care needs, and a box turtle should never be housed in a full-water setup the way those species are." },
-      { q: "How can I tell if my box turtle is male or female?", a: "Eye color is the fastest tell in most North American box turtles: adult males typically have red or orange eyes, while females usually have brown or yellowish-brown eyes. Males also have a slightly concave plastron and a thicker, longer tail with the vent positioned farther from the body, compared to a female's flat plastron and shorter tail. These traits aren't reliable in juveniles, only in mature adults." },
+      { q: "What size enclosure does a box turtle need?", a: "36 by 18 inches is the workable minimum, though bigger is considerably better: near 5.5 by 3 feet for an eastern, around 4 by 2 feet for the smaller ornate. Height barely matters for a ground-dwelling, burrowing animal." },
+      { q: "Why do annual checkups matter for a box turtle that seems healthy?", a: "Box turtles hide illness well, so a yearly wellness exam with a reptile-experienced vet is worth doing on a turtle that looks fine. Catching something early, the vitamin A and respiratory infection pair especially, makes a real difference in outcome." },
+      { q: "Is it legal to collect a box turtle from the wild?", a: "In most of their native US range, no, or only with heavy restriction. Several states prohibit wild collection entirely, with fines running into the thousands of dollars per animal. Both major box turtle species groups are also CITES Appendix II listed, and wild populations are generally declining." },
     ],
   },
   {
