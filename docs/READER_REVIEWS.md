@@ -2999,6 +2999,60 @@ foraging plus sleep); no food-quantity, bathing, or cage-cleaning
 guidance; no guidance for introducing a second lovebird beyond "do it
 slowly." None covered by a shared guide.
 
+## Tarantula (2026-09-09, batch B, single pass, before the router hub)
+
+One Opus agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, vs emperor scorpion),
+about 88k tokens. Set grade: B, "the deep dives are unusually honest,
+especially enrichment and legal, and the hub undercuts them at the
+exact point a new keeper is most likely to hurt the animal."
+
+The single most important finding: the old legacy hub's own FAQ said
+"Docile New World species like the Chilean Rose Hair...tolerate calm,
+gentle handling," directly contradicting the handling guide's "a
+tarantula, including the Chilean rose hair, is probably the wrong
+choice" and the enrichment guide's "do not handle." That is the
+question a first-time reader lands on the hub to ask, and the old hub
+answered it backwards. The router hub carries the handling guide's
+real answer (a Handling row: "Mostly, no"), not the old hub's.
+
+Everything else the reader flagged as a hub-versus-deep-dive
+disagreement (enclosure floor space, substrate depth, temperature,
+adult and juvenile feeding intervals, mites, annual cost, lifespan)
+resolved by construction, since the router hub copies every figure
+from the deep dive that states it rather than restating its own.
+
+One real same-article duplicate, not a conflict: tank setup's Diet
+section was a near-copy of the feeding guide's much fuller treatment
+("Adults typically eat every 1 to 2 weeks" stated as flat fact where
+feeding guide gives the honest species-dependent range). Cut to a
+one-sentence pointer, the affiliate link moved into it.
+
+Checked and left as is, real disagreements between named or
+implied different species rather than a contradiction: cost guide's
+male/female Chilean rose hair lifespan (4-7 / 15-20+) against
+tarantula-vs-emperor-scorpion-guide's general "popular species" figure
+(3-6 / 15-30); the encyclopedia's broad 5-30 year range covers both.
+Health issues' "wait about a week" for post-molt feeding against
+feeding guide's stage-specific "3 to 7 days for slings and juveniles,
+7 to 14 for adults" is compatible (a week falls inside both ranges),
+not contradictory, so neither was changed.
+
+`tarantula-legal-guide` was missing from relatedArticles.js entirely,
+the same wiring-bug class as leopard gecko's temperature guide and
+cockatoo's legal guide, invisible in every Deep Dive sidebar despite
+being one of the hub's own routes; added.
+
+Three links added (health issues to the setup guide's humidity
+section, handling to the setup guide's low-and-wide design rationale,
+tank setup's new feeding pointer); the reader's other six suggestions
+left for a future pass.
+
+Open: how to sex or confirm a female before buying, despite the hub
+recommending one for longevity; what to do if a tarantula escapes
+during cleaning; a substrate-change schedule; how to choose a seller;
+sling-specific housing. None covered by a shared guide.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3336,3 +3390,16 @@ slowly." None covered by a shared guide.
   budgie's batch, since only budgie-vs-cockatiel-guide.mdx was touched
   then) brought up to budgie's already-corrected 7 to 15 years too.
   Recommended links deferred this pass to keep it lighter.
+- 2026-09-09, tarantula (batch B, single pass, branch
+  claude/batch-b-startup-ve7avl): hub rebuilt to router shape. The
+  critical fix: the old hub's own FAQ told readers docile species
+  "tolerate calm, gentle handling," directly contradicting the
+  handling and enrichment guides' "don't handle this species." The
+  router hub carries the real answer instead. Enclosure size,
+  substrate depth, temperature, feeding intervals, mites, cost, and
+  lifespan conflicts all resolved by construction. Tank setup's Diet
+  section, a near-duplicate of the feeding guide, cut to a pointer
+  with its affiliate link moved in. `tarantula-legal-guide` was
+  missing from relatedArticles.js entirely, the same wiring-bug class
+  as leopard gecko's temperature guide; added. Three links added,
+  batch B's fifth and final species.

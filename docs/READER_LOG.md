@@ -1733,3 +1733,15 @@ Set grade: B. Strong, sourced health and setup work sitting under a hub that con
 Real conflicts found: pairs (hub "a bonded pair is happier and healthier, less aggressive toward humans" vs handling/vs-budgie's documented real aggression risk between mismatched pairs); lifespan, four different values across hub, encyclopedia, cost guide, and the vs-budgie guide; cost guide's own monthly headline ($70-125/month) not matching its own annual table ($260-430/year, about $22-36/month); cage price (hub table caps the cage at $150, cost guide prose says $80-200).
 
 Not covered anywhere: how to introduce and bond a second lovebird beyond "do it slowly"; daily food quantity in grams or portions; bathing or misting routine despite a "bath option" in a cost FAQ; cage cleaning schedule beyond changing the paper liner.
+
+## Tarantula (2026-09-09, batch B, single pass)
+
+One Opus agent, ten pages, about 88k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B. The deep dives are unusually honest, especially enrichment and legal, and the hub undercuts them at the exact point a new keeper is most likely to hurt the animal.
+
+The critical finding: the old hub's FAQ said docile New World species "tolerate calm, gentle handling," directly contradicting the handling guide ("probably the wrong choice") and the enrichment guide ("do not handle"). Everything else flagged (enclosure floor space, substrate depth, temperature, feeding intervals, mites, annual cost, lifespan) was the hub restating deep-dive numbers with different figures. Tank setup's Diet section duplicates the feeding guide closely enough to be a liability, stating "adults typically eat every 1 to 2 weeks" as flat fact where feeding guide gives an honest species-dependent range.
+
+Not covered anywhere: how to confirm a female before buying; what to do if the spider escapes during cleaning; substrate-change schedule; how to choose a seller; sling-specific housing.
