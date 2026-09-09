@@ -126,8 +126,17 @@ catches the defects the commands produce. Per batch:
 4. For any new researched text, run one agent that opens every cited URL
    and classifies each claim as supported, unsupported, misattributed, or
    contradicted. Fix everything it finds. Batch 1 needed two rounds.
-5. Read three articles yourself, before and after, as a stranger would.
-6. Commit per batch, push the branch, report, and wait for "merge".
+5. Grep every changed file and every new hub row for source names in the
+   body prose: VCA, Merck, LafeberVet, Lafeber, RSPCA, PetMD, AZA,
+   NASPHV, Smithsonian, Wildwood. The `<Sources>` block is where they
+   belong. Watch the router step especially, since it copies deep-dive
+   wording into hub rows verbatim and will carry a name across with it.
+   Batch D's check graded all five species A- with this defect in every
+   one, because it verified the numbers were right and never asked
+   whether the source name belonged in the sentence. See "The source goes
+   in the block, not the sentence" in docs/RULES.md.
+6. Read three articles yourself, before and after, as a stranger would.
+7. Commit per batch, push the branch, report, and wait for "merge".
 
 ## Next jobs, in order
 
@@ -206,10 +215,21 @@ catches the defects the commands produce. Per batch:
    adult length, Animal Diversity Web on its wild lifespan, PetMD on the
    rat cage minimum, and for box turtle VCA's 60 F outdoor floor and 90
    to 100 F basking zone plus Indiana DNR's documented 60-plus year
-   lifespan). Every species finished at pass grade A-. No Fable check ran
+   lifespan). Every species finished at pass grade A-, and that grade did
+   not hold up: the check confirmed the numbers and never asked whether
+   the source name belonged in the sentence, so it passed source
+   narration through on all five species. The router step then copied it
+   into 28 hub rows that had been clean (turtles 0 to 8, smallMammals 0
+   to 10, amphibians 0 to 4). Fixed 2026-09-09 on the batch D branch,
+   after the merge, so main carries it until that branch lands. The rule
+   was not missing at the time: "cut the site talking about itself" is in
+   the ground rules above. No Fable check ran
    on batch D by Mike's decision; an extra Opus check took its place, and
    docs/NOTES.md carries the standing question of whether Fable returns
-   for later batches. Next: batch E (red-eared slider, guppy,
+   for later batches. Batch E (red-eared slider, guppy, blue-tongue skink,
+   hognose snake, White's tree frog) is written and reader-passed on the
+   same branch but has had no species check at all, so it is not merged
+   and its grades are unknown. Batch E (red-eared slider, guppy,
    blue-tongue skink, hognose snake, White's tree frog), spanning
    turtles, fish, lizards, snakes, and amphibians, five different classes.
    None of the 58 remaining legacy species carry a sellable care package
