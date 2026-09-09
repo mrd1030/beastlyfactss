@@ -3305,6 +3305,91 @@ Full gate suite green (internal links, related articles, affiliate,
 cost coverage, SEO tags, voice --strict, species numbers, eslint on
 the touched data file).
 
+## African grey (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, cage setup, feeding, enrichment, legal, vs cockatoo), about
+106k tokens. Single-pass review, the batch's default shape.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | Dense but scannable, though its numbers drift from the deep dives it summarizes. |
+| Encyclopedia | A- | Short and adds real history, wild size, wild lifespan, CITES background. |
+| Cost | A- | Clear dollar ranges across the whole ownership span. |
+| Handling | A | Honest about what's proven versus anecdotal (Alex versus N'kisi). |
+| Health issues | A | Tight and actionable. |
+| Cage setup | A- | Practical, buildable. |
+| Feeding | A- | Detailed, though its own numbers disagreed with the hub. |
+| Enrichment | A | The most rigorous page in the set. |
+| Legal | A | Genuinely interesting and well sourced. |
+| vs Cockatoo | B+ | A useful decision aid. |
+
+Set grade: B+. "Deep, well-sourced content undercut by unreconciled
+numbers between the hub/encyclopedia and the deep dives."
+
+Hub versus the set, both sides quoted (resolved by the router
+rebuild): pellet percentage, old hub "60 to 70%" against the feeding
+guide's VCA-cited "75 to 80%"; cage upgrade size, old hub "48x36x60
+inches or larger is strongly preferred" against tank setup's real
+veterinary figure "closer to 40 by 30 by 60 inches"; bar spacing, old
+hub "3/4 to 1 inch" against tank setup's real "no more than 1 inch,"
+dropping the floor entirely. All now resolved by construction: the
+router hub copies each figure from its deep dive verbatim.
+
+A real same-page error caught inside the feeding guide itself, not a
+hub-versus-deep-dive conflict: its own body read "Fresh fruits and
+vegetables fill out most of the rest, limited to roughly 20 to 40% of
+total intake, with fruit specifically capped closer to 10%," which
+doesn't reconcile against the same sentence's "pellets make up 75 to
+80%" (75-80% pellets plus up to 40% produce oversums past 100%).
+Opened the cited VCA source directly
+(https://vcahospitals.com/know-your-pet/african-grey-feeding): pellets
+75-80%, vegetables 20-25%, fruit 10% or less, and seeds (not fruits
+and vegetables) are the category VCA caps at "20-40% if included at
+all." The article had misattributed VCA's seed-inclusion figure to
+fruits and vegetables. Corrected throughout (body and FAQ) to
+vegetables 20-25%, fruit 10% or less.
+
+A real fact error in the legal guide, checked against its own cited
+source: the body and FAQ both stated the CITES CoP17 vote moving the
+African grey to Appendix I happened "October 2, 2016," while the
+guide's own cited USFWS press release
+(https://www.fws.gov/press-release/2016-10/strongest-cites-protections-signal-hopeful-future-african-grey-parrots)
+and the encyclopedia entry both say October 3, 2016. Opened the press
+release directly to confirm: "adopted in a vote with 95 countries in
+support, 35 opposed, and five abstentions" on October 3. Corrected
+both instances in the legal guide to match its own source and the
+encyclopedia.
+
+Recommended links, six added: cost guide's emergency-cost sentence to
+health issues; handling's sleep-mention to cage setup; cage setup's
+plucking-risk sentence to enrichment; feeding's supplement sentence to
+the shared bird-pellet-conversion-guide (no same-species cap, it's a
+shared class guide); health issues' plucking-cause sentence to
+enrichment; enrichment's medical-rule-out sentence to health issues.
+Not added: the hub's and encyclopedia's suggested links (out of
+scope, not deep dives, and the encyclopedia is structured data with
+no link slot).
+
+Left as sourced, not a bug: Alex's documented abilities read two ways
+across the set, handling guide's "labeled 50 objects, 7 colors, and 5
+shapes... grasp the concept of 'none'" against the encyclopedia and vs
+cockatoo guide's "working vocabulary of over 150 words... understood
+the concept of 'zero.'" Both describe the same real research from
+different angles (the peer-reviewed count-and-label study versus the
+plainer-language summary of his overall vocabulary), not a numeric
+disagreement to reconcile; left as is since neither figure contradicts
+the other, they answer different questions.
+
+Not covered anywhere: exact daily feeding portions in cups or grams
+for pellets and vegetables; what a baseline avian vet exam should
+include beyond bloodwork and PBFD testing. Both filed in
+docs/READER_LOG.md.
+
+Full gate suite green (internal links, related articles, affiliate,
+cost coverage, SEO tags, voice --strict, species numbers, eslint on
+the touched data file).
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3714,3 +3799,27 @@ the touched data file).
   already-reconciled species, axolotl and rabbit); a real fix means
   renaming files or changing the checker, left for Mike as a separate
   cleanup rather than forced into this species' pass.
+- 2026-09-09, african grey (batch C, single pass, branch
+  claude/batch-c-setup-kgvj92): hub rebuilt to router shape, resolving
+  a pellet-percentage conflict (old hub 60-70%, feeding guide's
+  VCA-cited 75-80%), a cage-upgrade-size conflict (old hub "48x36x60
+  or larger," tank setup's real veterinary "40 by 30 by 60"), and a
+  bar-spacing conflict (old hub "3/4 to 1 inch," tank setup's real
+  "no more than 1 inch," which drops the floor entirely), all by
+  construction. Two real fact errors caught and fixed, both verified
+  by opening the cited source directly: the feeding guide's own body
+  had misattributed VCA's seed-inclusion figure ("20 to 40% if
+  included at all") to fruits and vegetables, corrected to VCA's real
+  produce split (vegetables 20-25%, fruit 10% or less); the legal
+  guide stated the CITES CoP17 vote date as October 2, 2016 against
+  its own cited USFWS press release and the encyclopedia, both of
+  which say October 3, corrected to match. Six links added (cost to
+  health issues, handling to cage setup, cage setup to enrichment,
+  feeding to the shared pellet-conversion guide, health issues to
+  enrichment, enrichment to health issues). Left as sourced: Alex's
+  documented abilities read two different but non-contradicting ways
+  across handling ("labeled 50 objects... concept of none") and the
+  encyclopedia/vs-cockatoo guide ("vocabulary of over 150 words...
+  concept of zero"), the peer-reviewed specifics versus a plainer
+  vocabulary summary of the same real research, not a numeric
+  disagreement.

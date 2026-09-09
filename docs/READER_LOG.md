@@ -1769,3 +1769,15 @@ Set grade: B+. Deep, honest, and mostly consistent, undercut by the hub's intern
 Real conflicts found: the old hub's own body text ("Humidity should be maintained at 50 to 70%") disagreed with its own FAQ ("Boa constrictors require 60 to 80% ambient humidity"), and neither matched the tank setup guide's sourced 60 to 70%; the old hub's temperatures (warm side 80-84°F, cool side 76-80°F) drifted slightly from tank setup's 80-85°F and 75-80°F. The feeding guide's own FAQ softened the 48-hour post-feeding handling wait, stated precisely everywhere else, to a vague "at least a few days."
 
 Not covered anywhere: what to do about a healthy adult boa refusing food for an extended stretch; how to actually build a bioactive substrate setup, mentioned as an option but never explained; care specifics for the roughly 1-to-3-year sub-adult stage the old hub named but never defined; UVB bulb type, wattage, or placement beyond "recommended."
+
+## African grey (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages, about 106k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B+. Deep, well-sourced content undercut by unreconciled numbers between the hub/encyclopedia and the deep dives.
+
+Real conflicts found: pellet percentage (old hub 60-70%, feeding guide's VCA-cited 75-80%, and the feeding guide's own "20 to 40%" produce figure was actually VCA's seed-inclusion figure misattributed to fruits and vegetables, whose real produce split is 20-25% veg, 10% or less fruit); cage upgrade size (old hub "48x36x60 or larger," tank setup's real veterinary figure "closer to 40 by 30 by 60"); bar spacing (old hub "3/4 to 1 inch," tank setup's real "no more than 1 inch," dropping the floor); a CITES vote date error in the legal guide itself against its own cited USFWS press release (guide said October 2, 2016, the source and the encyclopedia both say October 3, 2016, verified by opening the source directly).
+
+Not covered anywhere: exact daily feeding portions in cups or grams for pellets and vegetables; what a baseline avian vet exam/workup should include beyond bloodwork and PBFD testing.
