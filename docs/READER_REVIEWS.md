@@ -4149,3 +4149,203 @@ in one review section.
   emergency card's feeding-guide bullet and Karo line cut, and two
   old-hub FAQs replaced with deep-dive copies. VCA feeding split and
   PubMed 10649752 both verified real. Pass grade B-. Nothing merged.
+
+## Green Iguana (2026-09-09, first pass)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment). Batch D. The hub was still the legacy care sheet when
+the set was extracted, so the hub conflicts below are against the old shape and
+were resolved by the router rewrite in the same pass.
+
+Process note: this session had no Agent tool, so the set test was run
+first-party by the batch worker against `.reader/green-iguana/` using the
+READMEFIRST set test prompt, rather than by a separate Opus reader agent. Raw
+output is in docs/READER_LOG.md under the same heading. Treat the grades as a
+first-party read.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub (legacy shape) | C+ | A third care sheet, and where it differs from the deep dives it is wrong. |
+| Encyclopedia | B- | The CITES and import history is the best thing on it; the size and lifespan lines do not match the deep dives. |
+| Cost | A | The only page anywhere that admits you cannot buy an enclosure meeting the published minimum, then prices the three ways out. |
+| Handling | A- | Short, and every line changes what you do: approach from the side, never the tail, expect the male to change in season. |
+| Health issues | B+ | Organized around husbandry and unambiguous about the vet, thin on what any of it looks like day to day. |
+| Tank setup | A- | The three numbers that matter, on a very short page for the most consequential subject in the set. |
+| Enrichment | A | The only page built on named field research, and honest that the sociality finding does not license cohousing adults. |
+
+Set grade: B. "The deep dives are strong and the cost guide is genuinely
+excellent, but the hub contradicts them on the two numbers a new keeper is most
+likely to get wrong, and the whole diet subject has no article of its own."
+
+Hub versus the set, both sides quoted (all against the legacy hub, all fixed by
+the router rewrite):
+
+- Basking. Hub: "Basking surface temperature should be around 120 degrees F."
+  Tank setup guide: "Basking area 100 to 120°F, cool end around 80°F,
+  nighttime not dropping below the low 70s°F." The hub printed the top of the
+  range as the target. Fixed: the router hub's Temperature row is the tank
+  setup sentence verbatim.
+- UVB replacement. Hub annual cost row: "UVB bulb replacement (every 6-12
+  months): $111 to $141." Tank setup guide: "replaced every 12 months
+  regardless of whether the bulb still produces visible light." The hub's own
+  housing prose said "Replace it every twelve months," so it disagreed with
+  itself as well. Fixed: costs dropped, UVB row copied from the tank setup
+  guide.
+- Adult size. Hub FAQ: "Four to six feet including the tail, and ten to twenty
+  pounds." Hub housing prose: "becomes a five to six foot lizard." Handling
+  guide: "An adult male green iguana reaches 6 to 7 feet including tail and up
+  to 20 pounds." Fixed: the hub's Adult size row is the handling guide's
+  sentence verbatim, and the old FAQs are gone.
+- Night humidity. Hub: "Humidity of 60 to 80 percent through the day, rising
+  toward 100 at night." Tank setup guide: "60 to 80%." No deep dive supports
+  the night figure. Fixed: prose dropped, Humidity row copied from the tank
+  setup guide.
+- Enclosure. Hub setup table: "Custom PVC/wood enclosure, 8x4x4ft: $650 to
+  $730," two lines under the hub's own checklist item "Adult enclosure plan,
+  10x5x6 ft minimum, before purchase," and against the cost guide's "nothing
+  ready made reaches the ReptiFiles number, which is walk-in territory."
+  Fixed: costs dropped; the buy list carries no prices and names the juvenile
+  box plus "A plan and a budget for the walk-in adult enclosure."
+
+After the rewrite, `check-species-numbers.mjs green-iguana` shows every line
+marked `hub` appearing verbatim in the deep dive its row names. The remaining
+CONFLICT groups are the checker grouping a hub row with the identical source
+sentence, plus cost-guide-internal groupings, plus the encyclopedia lines
+handled below.
+
+Deep dives against each other:
+
+- Adult length. Enrichment guide: "A green iguana reaches five to six feet, and
+  the animal is sold at six inches to people who buy a tank," repeated in its
+  FAQ. Handling guide: "An adult male green iguana reaches 6 to 7 feet
+  including tail and up to 20 pounds," repeated in its FAQ. Cost guide, citing
+  a third source: "LafeberVet puts an adult at 6 feet or more including the
+  tail." Decided for the handling guide. Its Sources carry both figures:
+  LafeberVet's basic information sheet states "Including the tail, adults can
+  reach 1.8 m (6 feet) or more," and Chicago Exotics states "Recorded weights
+  and lengths of adult male iguanas have been as much as 20 pounds and 7 feet
+  respectively." Both opened with WebFetch. The enrichment guide's four sources
+  are the Burghardt sociality papers and the welfare assessment, none of which
+  state a length. Fixed in the enrichment guide, body and FAQ.
+- Not conflicts, left alone: the cost guide's section heading "Lifespan: 15 to
+  25 years, if the iguana survives its first year" over a body that says "15 to
+  20 years, sometimes 25" (the heading is the envelope of the body figure), and
+  the cost guide's $60 to $150 monthly total over its own itemized $30 to $50
+  produce plus $20 to $50 electricity (supplements and substrate are named in
+  the same sentence).
+
+Gaps, checked against the sidebar's Health and More list before being called
+real:
+
+- The diet. This species has no feeding guide. The 60/30/10 greens, vegetables
+  and fruit ratio, the greens to build on, the avoid list (spinach, kale in
+  quantity, beet greens, chard, iceberg) and the calcium and multivitamin
+  schedule existed only in the legacy hub's diet prose, which the router
+  rewrite removes. The health guide carries the no-protein rule and the
+  enrichment guide carries the foraging method, and both are now hub rows, but
+  no page states the ratio or the schedule. The shared safe weeds and wild
+  plants guide covers what is safe to forage, not what a daily salad is. Real
+  gap, and the largest thing open on this species.
+- Cold floor in an outage. The reptile emergency plan guide's species table
+  does not list the green iguana. Its stated fallback is to use the species'
+  tank setup guide nighttime low, which here is "the low 70s°F." Covered by
+  inference only; the hub's Power outage row now says exactly that, quoting the
+  emergency plan guide's own rule.
+- Time alone and sitter instructions for an animal this size. The emergency
+  plan guide answers generically for lizards, never for a six foot herbivore
+  needing daily fresh produce. Open.
+
+Stranded questions (a page raises it, another page in the set answers it,
+neither says so):
+
+- Health guide: kidney disease follows "chronic dehydration from low humidity,"
+  and the page never says what humidity is. The tank setup guide's "60 to 80%
+  ... Chronically low humidity is directly linked to dehydration and kidney
+  disease" is the same sentence from the other end. Not linked: the health
+  guide's one allowed sibling link is better spent, and the hub's Humidity and
+  Diet rows now sit next to each other. Listed here rather than fixed.
+- Health guide: burns come from "heat sources positioned where the iguana can
+  contact them directly," which is the entire subject of the shared reptile
+  heating and thermostats guide. Fixed with a link.
+- Cost guide: "produce alone commonly runs $30 to $50 a month," with a shared
+  safe weeds and wild plants guide covering iguanas by name. Fixed with a link.
+- Handling guide: "Housing two males together, expect real fighting," full
+  stop, while the enrichment guide has the field research on why. Fixed with
+  the article's one allowed sibling link.
+- Enrichment guide: "Do not skip parasite screening," with the shared
+  quarantine guide holding the fecal screen and the intake workup. Fixed with a
+  link.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Kidney disease and gout follow from animal protein and chronic dehydration." | Health issues guide | Not applicable, the prose is gone and the router rows link their own sources |
+| Encyclopedia | "the classic mistakes are protein and insufficient calcium" | Health issues guide | Skipped, encyclopedia is out of scope for links |
+| Cost | "produce alone commonly runs $30 to $50 a month, with electricity adding another $20 to $50." | Safe weeds and wild plants guide | Added |
+| Handling | "Housing two males together, expect real fighting." | Enrichment guide | Added, the one sibling link this article is allowed |
+| Health issues | "burns come from heat sources positioned where the iguana can contact them directly" | Reptile heating and thermostats guide | Added |
+| Tank setup | "Glass blocks UVB entirely, so a sunny window is never an adequate substitute." | UVB lighting guide | Added |
+| Enrichment | "Do not skip parasite screening, given what the captive welfare assessment found." | Reptile quarantine guide | Added |
+
+Trust: the doubt was all on the hub, a page printing 120°F as the basking
+target while its own setup guide gives a 100 to 120°F band, and pricing an
+8x4x4 box two lines under a checklist demanding 10x5x6. Nothing in the deep
+dives read as invented. The sentence that most convinced the reader a keeper
+wrote this, from the cost guide: "The two ready made boxes on that table reach
+6 or 8 feet long but stop at 2 feet deep and 4 feet tall, so they are a
+compromise on even the LafeberVet floor. That is what 'no commercial tank is
+large enough' means above: you can buy a box, but not one that meets the
+minimum."
+
+Reader's two changes: rebuild the hub so every number comes from the deep dive
+that owns it (done), and write a green iguana feeding guide so the diet ratio,
+the greens list, the avoid list and the calcium schedule live on a page the
+Deep Dive list shows (open, out of scope for this pass).
+
+Encyclopedia: two fields conflicted with a deep dive's sourced figure, both
+researched with real opened sources before changing.
+
+- `adultSize` read "4-6 feet (1.2-1.8 m) including tail; 10-20 lbs" against the
+  handling guide's sourced "6 to 7 feet including tail and up to 20 pounds."
+  LafeberVet's basic information sheet ("Including the tail, adults can reach
+  1.8 m (6 feet) or more") and Chicago Exotics Animal Hospital ("Recorded
+  weights and lengths of adult male iguanas have been as much as 20 pounds and
+  7 feet respectively") both open on the figure. Changed to "4-6 feet (1.2-1.8
+  m) including tail, adult males recorded to 7 feet; 10-20 lbs", which keeps
+  the existing typical range and adds the sourced male maximum instead of
+  replacing a figure wholesale.
+- `wildLifespan` read "15-20 years", which is the same number the cost guide
+  gives for a well-kept captive animal ("With excellent care, green iguanas
+  live 15 to 20 years, sometimes 25") and which LafeberVet also gives as a
+  captive figure ("Green iguanas can live up to 15-20 years when cared for
+  properly"). A captive number in a wild field. Animal Diversity Web (Michigan
+  Museum of Zoology) states "wild iguanas are thought to live only about 8
+  years" and that iguanas "can live for more than 20 years in captivity."
+  Changed to "About 8 years in the wild (Animal Diversity Web); the widely
+  quoted 15-20 years is a captive figure", the same shape the crested gecko and
+  other entries already use.
+- Left alone deliberately: the entry's `overview` still says "An adult is five
+  to six feet long ... and lives twenty years." It carries the same two
+  looseness's as the fields above, but the batch prompt scopes encyclopedia
+  edits to the field that conflicts, and the overview is prose that would need
+  rewriting rather than a field correction. Flagged for the species check.
+
+Fixed the same day: the hub rebuilt to the router shape (21 first-week rows, a
+12 bullet emergency card off the health guide's four call-the-vet passages, 5
+routes, an 11 item buy list with no prices, 3 FAQs copied verbatim from
+deep-dive frontmatter, difficulty Advanced matching the encyclopedia); the
+enrichment guide's "five to six feet" corrected to "six feet or more" in body
+and FAQ; five links added as listed above; two encyclopedia fields corrected
+against opened sources.
+
+Not fixed, and why: no lastUpdated bump on the enrichment guide even though a
+number changed, because that article's `date` and `lastUpdated` are both
+2026-10-23 and bumping to 2026-09-09 would date the revision before the
+article's own publication. The other four green iguana articles took link-only
+edits, which by the 2026-09-08 date rule do not bump.
+
+Open: the missing feeding guide; sitter and time-alone guidance for an animal
+this size; the encyclopedia overview's "five to six feet" and "lives twenty
+years"; and the hub's `funFact` still repeating the handling guide's FunFact
+box nearly word for word, which is a hub field rather than a deep dive edit.
