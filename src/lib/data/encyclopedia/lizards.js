@@ -91,10 +91,10 @@ export const lizardEncyclopedia = [
     id: "green-iguana", name: "Green Iguana", scientific: "Iguana iguana",
     category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "green-iguana", available: true, image: "/assets/guides/green-iguana.jpg",
     bio: {
-      overview: "Green iguanas are large arboreal herbivores from Central and South America, and the gap between what they are sold as and what they become is the widest of any pet reptile. A hatchling is six inches and costs very little. An adult is five to six feet long, weighs up to twenty pounds, needs a custom enclosure the size of a wardrobe, and lives twenty years. They are strict herbivores whose gut relies on fermenting leafy greens, so the classic mistakes are protein and insufficient calcium, both of which produce metabolic bone disease. Males in breeding condition can become genuinely aggressive. Escaped and released animals have established breeding populations in Florida, Hawaii and Puerto Rico.",
+      overview: "Green iguanas are large arboreal herbivores from Central and South America, and the gap between what they are sold as and what they become is the widest of any pet reptile. A hatchling is six inches and costs very little. An adult reaches six feet or more, weighs up to twenty pounds, needs a custom enclosure the size of a wardrobe, and lives twenty years in captivity. They are strict herbivores whose gut relies on fermenting leafy greens, so the classic mistakes are protein and insufficient calcium, both of which produce metabolic bone disease. Males in breeding condition can become genuinely aggressive. Escaped and released animals have established breeding populations in Florida, Hawaii and Puerto Rico.",
       origin: "Central and South America, from Mexico to Paraguay, plus many introduced populations",
       habitat: "Rainforest canopy and riverside trees, rarely far from water",
-      adultSize: "4-6 feet (1.2-1.8 m) including tail, adult males recorded to 7 feet; 10-20 lbs",
+      adultSize: "6 feet (1.8 m) or more including tail, adult males recorded to 7 feet; 10-20 lbs",
       wildDiet: "Leaves, flowers and fruit; almost entirely herbivorous",
       wildLifespan: "About 8 years in the wild (Animal Diversity Web); the widely quoted 15-20 years is a captive figure",
       conservation: "Least Concern (IUCN), listed on CITES Appendix II",

@@ -3654,6 +3654,31 @@ in one review section.
   itself, Mike's original text is editable when it helps the reader.
 - The linking pass across all 532 series guides.
 - This file and scripts/reader-extract.mjs.
+- 2026-09-09, batch D, five species in parallel (branch
+  claude/batch-d-opus-agents-7jgjwi). Green iguana: enrichment's "five to six
+  feet" corrected to LafeberVet's "six feet or more" against handling's 6 to 7,
+  encyclopedia adultSize and overview brought to the same figure, wildLifespan
+  moved off a captive number to Animal Diversity Web's "about 8 years" in the
+  wild, five links added. Conure: the cost guide's setup FAQ reconciled to its
+  own table on cage, perches and toys, six links added, SHORT_LABELS gained
+  pellet-conversion-guide. Rat: an unsourced 24x24x36 cage dimension dropped
+  from a cost table cell in favor of the setup guide's sourced PetMD 24x24x24,
+  the shared heat and cold guide wired into the rat entry so it reaches the
+  sidebar, four links added. Hermit crab: four hub conflicts resolved by
+  retiring hub prose rather than editing a sourced deep dive, and the
+  enrichment guide's "most common way these animals die" superlative given up
+  to the health guide's sourced PPS claim. Box turtle: VCA's 60 F outdoor floor
+  replacing an unsourced 70 F on the deep dive and in the shared reptile
+  emergency plan guide's species row, VCA's 90 to 100 F basking zone added to a
+  temperature section that carried no number at all, and Indiana DNR's
+  documented 60-plus year lifespan replacing a figure that had captivity
+  costing a turtle a decade against the wild, corrected in all five places it
+  appeared.
+- 2026-09-09, batch D process: the species workers had no Agent tool, so none
+  could launch its own reader and each read its own set. Five independent Opus
+  readers were run afterwards from the session against the same pre-rewrite
+  extracts, then five Opus check agents, one per species, report-only with the
+  parent applying every fix. Every species checked out at pass grade A-.
 - 2026-09-08, rabbit and bearded dragon (branch claude/hub-rabbit-bd):
   both hubs rebuilt as router hubs (RULES, Hubs), every number copied from
   a deep dive and linked to it, emergency card from the health guide,
@@ -4332,7 +4357,9 @@ researched with real opened sources before changing.
   rewriting rather than a field correction. Flagged for the species check.
 
 Fixed the same day: the hub rebuilt to the router shape (21 first-week rows, a
-12 bullet emergency card off the health guide's four call-the-vet passages, 5
+12 bullet emergency card, 10 bullets off the health guide's four call-the-vet
+passages plus burns and impaction, which that guide calls preventable rather
+than a vet call, 5
 routes, an 11 item buy list with no prices, 3 FAQs copied verbatim from
 deep-dive frontmatter, difficulty Advanced matching the encyclopedia); the
 enrichment guide's "five to six feet" corrected to "six feet or more" in body
@@ -4459,6 +4486,14 @@ Unsourced, needs a fact-check:
   with proper care", Lafeber says "up to 25 years or more with proper
   care" and lists "Up to 20 years" in its quick facts. The number is
   hedged and pre-existing, so it stays, but it needs a source or a cut.
+- The cost guide's setup table sums to $230 to $470 across its six
+  non-bird rows, against the "Roughly $400 to $900 or more" the page
+  states in its H2, its closing line, its seoTitle, the setup FAQ, and
+  the hub's Budget row. Reconciling the FAQ to the table put both
+  figures in one sentence, so the gap is now visible in a single
+  reader-facing line. Neither cited source states any price, so nothing
+  was changed here; the total needs either a source or a table that
+  reaches it.
 - The cost guide carries two sources for a page built on dollar figures
   and no "Prices last checked <Month Year>" line under its last cost
   table, which RULES, Sources requires of a cost guide quoting retail
@@ -4669,10 +4704,13 @@ vet trips guide, the grooming guide, and the three-rodent roundup.
   becomes a real risk above about 86°F" and never says what it looks like.
   The shared small mammal heat and cold guide covers exactly this, in order,
   with the do-not-use-ice-water rule, but it is not wired into the rat entry
-  in relatedArticles.js, so it is not in this species' sidebar. Half fixed
-  in scope: the setup guide now links it in body and the hub carries a Heat
-  stress signs row sourced to it. The relatedArticles line is written up for
-  the parent to apply (scratch shared-edits file).
+  in relatedArticles.js, so it was not in this species' sidebar. Fixed in
+  scope: the setup guide now links it in body, the hub carries a Heat stress
+  signs row sourced to it, and the guide is wired into the rat entry in
+  src/lib/data/relatedArticles.js so it shows in the sidebar. Note the
+  commit message's claim that every other small mammal already carried it is
+  wrong: ferret, hedgehog, sugar glider, flying squirrel and mouse all lack
+  it too, and wiring those is another species' work.
 - How to introduce two rats to each other. Real gap. No page in the set and
   no shared small mammal guide covers introductions, for a species four
   pages tell the reader must never live alone. Not fixable with a link.
@@ -4758,7 +4796,7 @@ published yet. Recorded here rather than dated.
 ### Fixed the same day
 
 Hub rebuilt to the router shape: 22 first-week rows, each copied from the
-deep dive it names (16 from the six rat guides, 1 from the encyclopedia for
+deep dive it names (18 from the six rat guides, 1 from the encyclopedia for
 adult size, 3 from the shared grooming, heat and cold, and vet trips
 guides), the emergency card copying the health guide's "When to See a Vet"
 list bullet for bullet with its hedges in the vetLine, six routes for the
@@ -4773,9 +4811,6 @@ feeding to health issues, enrichment to setup).
 
 - No page covers introducing two rats to each other.
 - No page covers whether to neuter a pet rat or what it costs.
-- `small-mammal-temperature-heat-stress-guide` still needs adding to the rat
-  entry in src/lib/data/relatedArticles.js before the shared guide shows in
-  this species' sidebar.
 
 ## Hermit Crab (2026-09-09, first pass)
 
@@ -4940,8 +4975,7 @@ contradicts. Nothing was changed in the encyclopedia file.
 Fixed the same day: the hub rewritten to the router shape (four hub
 figures retired, none of them the winner in any conflict); four links
 added as listed above; one self-reference clause removed from the health
-guide; one "actually" cut from a cost guide sentence the new link
-lengthened, so the intensifier-per-section limit still holds. No
+guide. No
 lastUpdated bumps: every deep-dive edit was a link or a self-reference
 removal, and no fact or number in any deep dive changed.
 
@@ -5009,9 +5043,15 @@ All against the old legacy hub, all resolved by the router rebuild.
 - Basking temperature. Old hub: "a basking spot (85 to 88 degrees F)", in the
   housing prose and again in the checklist. Tank setup guide: "Provide a clear
   warm basking zone with a gradient down to a cooler area, using an indoor
-  heat source", with no number anywhere on the page. A two-degree-wide
-  precision resting on nothing. Resolved by researching it and putting a
-  sourced number in the deep dive, see the numbers section below; the hub's
+  heat source", with no number anywhere on the page. The 85 to 88 figure is not
+  invented, it is Wildwood Veterinary Hospital's daytime ambient range for US
+  box turtles ("85-88 F/day, 70-75 F/night"), mislabeled on the old hub as a
+  basking spot. The hub keeps no figure of its own either way. Resolved by
+  putting a sourced number in the deep dive, from VCA, whose 90 to 100 F
+  basking zone contains Wildwood's 90 to 94 F basking area. Note Wildwood is
+  cited on the tank setup guide for substrate depth only, and its temperature
+  figures are deliberately not the ones that page uses, so do not later
+  reconcile the page to them. See the numbers section below; see the numbers section below; the hub's
   Temperature row now quotes the tank setup guide's corrected sentence and the
   85 to 88 figure is gone rather than moved.
 - Captive lifespan. Old hub: "captive animals routinely live into their 50s
@@ -5060,9 +5100,11 @@ species set.
   box turtle indoors if the temperature drops below 60°F (16°C)." A veterinary
   hospital, species-specific, beats an unsourced sentence, and the shared
   outdoor housing guide already agrees with it. The tank setup guide changed
-  to 60°F. The emergency plan guide's row is the last copy of the old figure
-  and is written up for the parent to apply, since shared guides were out of
-  scope for this agent.
+  to 60°F. The emergency plan guide's row carried the last copy of the old
+  figure and was fixed in the same commit, since it is a single species row on
+  a shared guide: ["Box turtle", "65-70°F (18-21°C) overnight indoors, per
+  VCA", "60°F (16°C), the outdoor line VCA gives for this species"], with VCA's
+  box turtle housing page added to that guide's Sources.
 
 Read twice, no conflict: the half-animal-half-plant diet (cost guide's monthly
 section and the tank setup guide's own section, both short and both earning
@@ -5221,7 +5263,11 @@ most common way these animals die in captivity." After: "Do not let
 substrate depth slip, since substrate that is too shallow is one of the
 causes of a bad molt, and a bad molt is frequently fatal." No link added:
 the enrichment guide already carries its one sibling link, to the tank setup
-guide.
+guide. No lastUpdated bump either, and the first pass's "no fact changed" line
+above does not cover this one: the claim did change, but that guide's date and
+lastUpdated are both 2026-10-15, a scheduled future publish date, so stamping
+today's 2026-09-09 would put lastUpdated two months before the article
+publishes.
 
 Box turtle, substrate depth. Tank setup: "at least 2 to 3 inches deep to
 support burrowing." Enrichment: "do not use a shallow scattering of
