@@ -94,66 +94,67 @@ export const snakeGuides = [
     image: "/assets/guides/boa-constrictor.jpg",
     tagline: "The powerful, graceful heavyweight of the pet snake world!",
     funFact: "Boa constrictors can sense the heartbeat of their prey using heat-sensitive pits. They literally feel your pulse!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "6x3x3 ft+ PVC or wood enclosure", low: 300, high: 600 },
-        { item: "Heat source + quality thermostat", low: 50, high: 90 },
-        { item: "Multiple large hides", low: 30, high: 60 },
-        { item: "Large soak-able water dish", low: 25, high: 40 },
-        { item: "Cypress mulch or coconut fiber substrate", low: 30, high: 50 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Sturdy climbing branches", low: 30, high: 50 },
-        { item: "Mist system or spray bottle", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Frozen/thawed large prey items", low: 150, high: 300 },
-        { item: "Substrate replacement", low: 50, high: 80 },
-        { item: "Electricity (heat)", low: 70, high: 120 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Quarantine, hygiene, and power
+    // outage cite the shared reptile guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 for batch C (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new snake is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window. Boas specifically can carry inclusion body disease for months to years with no visible signs, which is exactly why the window runs this long.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "Adults typically need somewhere around 6 to 8 feet long, 2 to 3 feet wide, and 3 to 4 feet tall, roughly 10 square feet of floor space at minimum. A 6ft+ adult PVC enclosure is a solid way to build for that final size from the start. House boas individually, never together.", source: "boa-constrictor-tank-setup-guide" },
+        { label: "Security", value: "A heat source is required and must be genuinely inaccessible to direct contact, no exposed heating elements a snake this size and strength could reach. A thermostat is essential, not optional, for a heat source powering an enclosure this large.", source: "boa-constrictor-tank-setup-guide" },
+        { label: "Temperatures", value: "Basking area 88 to 92°F, occasionally up to 95°F, ambient warm side 80 to 85°F, cool side 75 to 80°F, nighttime 70 to 80°F.", source: "boa-constrictor-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 70%, higher during shedding cycles. A large water bowl, regular misting, moisture-retentive substrate, and a dedicated humid hide hold it there.", source: "boa-constrictor-tank-setup-guide" },
+        { label: "Hides", value: "Two, not one: a snug hide on the warm side and a separate one on the cool side, so the boa can thermoregulate while always having cover.", source: "boa-constrictor-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Babies (0 to 6 months) every 5 to 7 days, juveniles (6 to 12 months) every 7 to 10 days, adults (3-plus years) every 10 to 14 days, extending to every 2 to 4 weeks for mature animals. Offer prey no wider than your boa's body at its widest point.", source: "boa-constrictor-feeding-guide" },
+        { label: "Handling", value: "Once a boa exceeds about 6 feet, handle it with a second person. Wait at least 48 hours after feeding, and never let a boa form a complete loop around your neck.", source: "boa-constrictor-handling-guide" },
+        { label: "Budget", value: "$400 to $1,200 to set up. A routine wellness exam runs $50 to $135, a fecal parasite check adds $25 to $90. Budgeting around $200 a year for vet care is a reasonable planning figure.", source: "boa-constrictor-cost-guide" },
+        { label: "Adult size", value: "5 to 13 feet, with females significantly larger than males." },
+        { label: "Lifespan", value: "20 to 30 years is typical, and boas can exceed 40 with excellent care.", source: "boa-constrictor-cost-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "70 to 80°F is the normal night low. Below 70°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `Adult boa constrictors require a minimum 6x3x3 ft enclosure, and many adults - particularly female Colombian boas, which regularly exceed 8 ft - will benefit from 8x4x4 ft or larger. Boa constrictors are heavy-bodied, powerful snakes that deserve generous space. PVC or wooden enclosures retain heat and humidity far better than glass and are strongly preferred.
-
-The thermal gradient is critical: a warm side with a basking spot of 88 to 92 degrees F (measured at the surface via infrared gun), an ambient warm-side air temperature of 80 to 84 degrees F, and a cool side of 76 to 80 degrees F. Use a quality thermostat on all heat sources. Never use heat rocks - they cause severe burns.
-
-Humidity should be maintained at 50 to 70% in ambient conditions and raised to 70 to 80% during pre-shed periods. Cypress mulch, coconut fiber, and bioactive soil mixes are excellent substrates that hold humidity well. The substrate should be dry at the surface but retain moisture slightly deeper to allow humidity wicking.
-
-Provide at least two hides large enough for the snake to fully conceal itself - a snake that cannot fully hide in its hide is a stressed snake. Juveniles are somewhat semi-arboreal and will use sturdy branches; adults are primarily terrestrial but appreciate elevated surfaces. A water dish large enough to soak in must always be available.`,
-      diet: `Boa constrictors eat frozen/thawed prey exclusively - live prey is dangerous to the snake and ethically unnecessary. Juveniles eat appropriately sized mice, progressing to small rats, then large rats, and eventually to appropriately sized rabbits or large rats for adults. Prey should match the snake's widest mid-body diameter.
-
-Feed juveniles every 7 to 10 days. Sub-adults every 10 to 14 days. Adults every 14 to 21 days. Boas have slower metabolisms than many snakes and do not need frequent feeding. Overfeeding leads to obesity, which stresses the cardiovascular system and shortens lifespan.
-
-Always use feeding tongs and maintain the association between tongs and food. Allow 48 to 72 hours after feeding before handling to prevent regurgitation. Regurgitation is stressful and damages the esophagus. If a boa regurgitates, wait 2 weeks before attempting to feed again and reassess temperatures and prey size.
-
-Fresh water in a large, clean dish must always be available. Change it at minimum twice per week. Many boas soak in their water dish, especially before shedding - this is normal and beneficial.`,
-      enrichment: `Boa constrictors are often described as some of the most personable and manageable large snakes in the hobby. With consistent, calm handling from a young age, many individuals become genuinely relaxed and confident animals that seem comfortable with human interaction.
-
-Provide sturdy branches for juvenile boas - they are significantly more arboreal as young animals. Large cork bark hides, varied substrate textures, and a water dish large enough to soak in constitute the core enrichment. Adults become increasingly terrestrial as they grow.
-
-Handle regularly and with confidence. A bored, tense keeper makes a nervous snake. Move smoothly and support the full body length. Young boas may musque (release a foul-smelling secretion) initially - this reduces significantly with consistent handling. Most adult boas become very calm and curious animals.
-
-Thermal enrichment - providing multiple temperature zones that the snake can choose between - is important. A snake that cannot regulate its own temperature is a stressed, immunosuppressed animal. Ensure the thermal gradient spans from 76 to 92 degrees F to give the boa full control over its thermoregulation.`,
-      health: `Scale rot (necrotic dermatitis) is caused by chronic exposure to damp substrate or inadequate temperatures. It begins as discolored, soft, blistered scales and progresses to deep tissue infection if untreated. Keep substrate dry at the surface and temperatures correct. Any scale rot that does not respond to husbandry corrections within days requires veterinary antibiotics.
-
-Respiratory infections result from temperatures that are too low, excess humidity without adequate ventilation, or both. Signs include wheezing, mucus from the mouth and nostrils, labored breathing, and lethargy. Respiratory infections in boas require veterinary antibiotics. Address the husbandry issue that caused the infection simultaneously.
-
-Inclusion Body Disease (IBD) is a serious and fatal viral disease in boas and pythons caused by arenaviruses. It presents as neurological symptoms (head wobbling, stargazing, inability to right itself), chronic regurgitation, and progressive decline. There is no treatment. IBD spreads through mites. Source only from reputable captive breeders, quarantine all new animals for 60 to 90 days, and control mites aggressively.
-
-Annual veterinary wellness checks are strongly recommended, particularly for adults. A reptile vet with experience in large snakes should be identified before acquisition. Boas can live 20 to 30 years - this is a multi-decade commitment.`,
-      checklist: ["6x3x3 ft+ PVC or wood enclosure", "Heat source with quality thermostat", "Multiple large hides", "Large water dish (soak-able)", "Cypress mulch or coconut fiber substrate", "Frozen/thawed large prey items", "Digital thermometer and hygrometer", "Sturdy climbing branches", "Feeding tongs", "Quality mist system or spray bottle"],
+    emergencyCard: {
+      source: "boa-constrictor-health-issues-guide",
+      callNow: [
+        "Wheezing, nasal discharge, or open-mouth breathing",
+        "Discolored, soft, or blistered belly scales",
+        "Swollen gums or visible pus in the mouth",
+        "Head tilting, corkscrewing movements, or staring off into space",
+        "Chronic regurgitation paired with weight loss",
+        "Weight loss and lethargy, or small dark specks resembling tiny ticks",
+      ],
+      vetLine: "A reptile-experienced vet familiar with large snakes, found before you need one. A severe respiratory infection can progress to septicemia, and inclusion body disease has no cure, so prevention is buying captive-bred from a reputable breeder and quarantining every new snake.",
     },
+    routes: [
+      { slug: "boa-constrictor-cost-guide", line: "$50 to $200 for the snake, $400 to $1,200 for the setup, and what vet care and the decades-long commitment really run." },
+      { slug: "boa-constrictor-tank-setup-guide", line: "Sizing the enclosure for the adult it will become, the thermostat that's non-negotiable, and why height matters as much as floor space." },
+      { slug: "boa-constrictor-feeding-guide", line: "The schedule by age, prey sizing, and why adults eat so rarely compared to other snakes." },
+      { slug: "boa-constrictor-handling-guide", line: "The second-handler rule past 6 feet, why a boa should never loop around your neck, and how to read one before you reach in." },
+      { slug: "boa-constrictor-health-issues-guide", line: "Respiratory infection, scale rot, mouth rot, inclusion body disease, and parasites, with what causes each." },
+      { slug: "boa-constrictor-enrichment-guide", line: "Why a big snake in a box is still a snake in a box, and what the ball python housing study implies for this species." },
+      { slug: "boa-constrictor-legal-guide", line: "Withdrawn from the federal injurious-wildlife list, banned in Hawaii and NYC, and permit rules in a handful of other states." },
+    ],
+    buyList: [
+      "6ft+ adult PVC enclosure",
+      "Thermostat",
+      "Supplemental heat source",
+      "Two snug hides (warm side and cool side)",
+      "Large soak-able water dish",
+      "Coconut fiber, cypress mulch, or reptile-specific soil substrate",
+      "Digital thermometer and hygrometer",
+      "Frozen/thawed rodents (mice progressing to rats)",
+      "Feeding tongs",
+    ],
     faqs: [
-      { q: "How big do boa constrictors get?", a: "Common boas (Boa imperator) typically reach 5 to 8 feet as adults, with females growing significantly larger than males. Females commonly reach 6 to 8 feet; males stay at 5 to 6 feet. At maturity, common boas are muscular and heavy-bodied - a 7-foot female can weigh 15 to 20 pounds. True South American Boa constrictor constrictors grow larger still, commonly reaching 8 to 10 feet. Their adult size is the primary reason prospective owners must research carefully before committing." },
-      { q: "Are boa constrictors dangerous?", a: "Healthy adult boas command respect but are not inherently dangerous to experienced adult keepers. Bites from large individuals can cause significant lacerations from their many small, recurved teeth, and any large constrictor should never be handled alone. They do not attack people - bites almost always result from feeding responses or defensive reactions. Children and solo adult handling are the main risk scenarios. As constrictors, boas should never be draped unsupported around the neck." },
-      { q: "How long do boa constrictors live?", a: "Boa constrictors are a long-term commitment. Well-cared-for boas routinely live 20 to 30 years in captivity, with documented individuals reaching 40 years. When acquiring a boa, you are making a multi-decade commitment. Their longevity makes proper research, appropriate housing investment, and a relationship with a reptile-experienced veterinarian especially important from day one." },
-      { q: "How often do boa constrictors eat?", a: "Feed juvenile boas every 7 days and adults every 10 to 21 days depending on size. Adults commonly do well on a meal every 2 to 3 weeks. Always feed frozen and thawed prey - live rodents can seriously injure large constricting snakes. Prey should be no wider than the widest part of the snake's body. After a meal, avoid handling for 48 to 72 hours to prevent regurgitation." },
-      { q: "Do boa constrictors need high humidity?", a: "Yes. Boa constrictors require 60 to 80% ambient humidity to support healthy sheds and respiratory health. A large water dish big enough to soak in helps maintain humidity and provides hydration. Cypress mulch and coconut fiber substrates retain moisture well. A humid hide packed with damp sphagnum moss is especially important during the shedding cycle. Humidity consistently below 50% causes stuck shed and contributes to respiratory infections over time." },
-      { q: "What's the difference between a boa and a python?", a: "They're different families entirely, despite both being large, non-venomous constrictors that are frequently confused for each other. The clearest distinction: boas give live birth (the babies emerge fully formed), while pythons lay eggs and often coil around the clutch to incubate them. Geographically, boas are native to the Americas (plus Madagascar and a few Pacific islands), while pythons are native to Africa, Asia, and Australia - the two families never naturally overlapped until the exotic pet trade and reptile keeping brought them together. Ball Pythons and Burmese Pythons are pythons; the Boa Constrictor and Red-Tailed Boa are boas." },
-      { q: "Are boa constrictors good pets for beginners?", a: "Not usually a first snake. Boas are powerful, heavy-bodied animals that need a 6x3x3 ft or larger enclosure as adults and can live 20 to 30+ years, a real step up from the ball pythons, corn snakes, and kingsnakes this site generally recommends starting with. They're a great second snake for someone who already has husbandry basics down." },
-      { q: "Is a boa constrictor a python?", a: "No. Boas and pythons are entirely separate families that both happen to be large, non-venomous constrictors, which is exactly why the two get confused. A quick tell: boas give live birth, while pythons lay eggs. [Ball pythons](/guides/ball-python/), the site's other common large constrictor, are true pythons, not boas." },
-      { q: "Is a Boa constrictor related to the rosy boa?", a: "Yes - both are true boas in the family Boidae and both give live birth, but the resemblance mostly ends there. A Boa constrictor can reach 8 to 10+ feet, while the [rosy boa](/guides/rosy-boa/), native to the desert Southwest US and Baja California, rarely passes 3 feet and is one of the most docile, low-maintenance boas in the hobby. Anyone drawn to the boa temperament but not to housing an 8-foot snake should take a look at the rosy boa instead." },
+      { q: "What does the upfront setup cost for a boa constrictor?", a: "Roughly $400 to $1,200. That covers a proper adult PVC enclosure (the largest single expense by far), a thermostat, a heat source, hides, a water bowl, substrate, and a thermometer and hygrometer. The thermostat isn't optional for a snake this size." },
+      { q: "What temperature does a boa constrictor enclosure need?", a: "Basking 88 to 92°F, occasionally to 95°F, warm side 80 to 85°F, cool side 75 to 80°F, nights 70 to 80°F. The heat source has to sit where the snake cannot reach it: no exposed heating elements. Run it on a thermostat." },
+      { q: "At what size does a boa constrictor need a second handler?", a: "About 6 feet. Exotic veterinary guidance works from roughly one handler per 3 to 4 feet of snake, and extends that to routine jobs like cleaning the enclosure. A boa that size is strong enough that a second set of hands is basic safety." },
     ],
   },
   {
