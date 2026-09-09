@@ -3478,6 +3478,81 @@ Full gate suite green (internal links, related articles, affiliate,
 cost coverage, SEO tags, voice --strict, species numbers, eslint on
 the touched data files).
 
+## Ferret (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, cage setup, feeding, enrichment, legal, adrenal disease), about
+92k tokens. Single-pass review, the batch's default shape.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A- | Only page with the full checklist and both cost tables in one place. |
+| Encyclopedia | B | Taxonomy, wild diet, and the 1933 influenza history; nothing to act on. |
+| Cost | A | Act on the budget numbers directly. |
+| Handling | A | Act on the no-pop-the-nose rule. |
+| Health issues | A | Act on the emergency list. |
+| Cage setup | B | Good on temperature, but cage size conflicts with the hub. |
+| Feeding | A | Act on the same-day vet rule for appetite loss. |
+| Enrichment | A- | The priority order list is directly actionable. |
+| Legal | A | Act on checking your state before buying. |
+| Adrenal disease | B+ | The hair-loss pattern table is useful, but it contradicts the health guide on neuter age. |
+
+Set grade: A-. "Deep, specific, appropriately urgent about
+emergencies, let down by two unreconciled numeric conflicts."
+
+Hub versus the set, both sides quoted (resolved by the router
+rebuild): cage size, old hub "a multi-level cage (minimum 3x2x2 ft
+with solid ramps and platforms)," 36 by 24 by 24 inches, against the
+cage setup guide's real "For a pair, aim for at least 30 inches long
+by 24 inches wide by 48 inches tall"; lifespan, old hub FAQ "6 to 10
+years in captivity" against the cost guide's real, explicitly
+researched "5 to 9 years on average in the US," which argues the
+older 10 to 15 year figure reflects a healthier population than
+today's pet ferrets. Both resolved by construction: the router hub
+copies the cage setup and cost guides' real figures verbatim. The
+cost guide's own setup table also still named a "3x2x2 ft multi-level
+cage" line item for the same Critter Nation product the cage setup
+guide describes as 30x24x48 for a pair; corrected the cell label to
+match rather than leaving two dimensions for one product on the site.
+
+A real cross-guide factual contradiction, not a hub issue: the health
+issues guide cites a real, peer-reviewed 2000 study (Schoemaker et
+al., PubMed 10649752) on Dutch ferrets neutered at 12 to 18 months
+instead of as kits, which still developed adrenal disease at a gap to
+diagnosis nearly identical to early-neutered US ferrets, concluding
+"neutering itself, combined with prolonged indoor light exposure and
+genetic factors, appears to drive the disease more than the exact age
+at which a ferret is neutered." The adrenal disease guide's own
+FunFact claimed the reverse: "Ferrets kept in countries where later
+spay/neuter ages are more standard report meaningfully lower rates of
+adrenal disease, which is one of the stronger pieces of evidence
+supporting the early-neuter theory," with no source cited anywhere in
+that article. Per the source-ranking rule, the page backed by a real
+peer-reviewed citation wins: rewrote the adrenal disease guide's body
+paragraph, FunFact, and FAQ answer to state the same Dutch-study
+finding and conclusion the health issues guide already gives, rather
+than the unsourced opposite claim.
+
+Recommended links, three added: handling's out-of-cage-time bullet to
+enrichment; tank setup's artificial-light sentence to adrenal disease;
+feeding's insulinoma list item to health issues. Not added: health
+issues' suggested link to feeding (already at its one-sibling cap,
+spent on the adrenal disease guide); the hub's and encyclopedia's
+suggested links (out of scope, not deep dives, and the encyclopedia is
+structured data with no link slot).
+
+Not covered anywhere: lymphoma, named as one of the three major
+ferret diseases but never explained on any page or shared guide; the
+actual litter-training method (a litter box is specified, training it
+is not); a canine distemper vaccine dosing schedule for kits; what
+descenting actually involves. All filed in docs/READER_LOG.md.
+
+Full gate suite green (internal links, related articles, affiliate,
+cost coverage, SEO tags, voice --strict, species numbers, eslint on
+the touched data file). One legacy baseline failure (ferret-adrenal-
+disease-guide, pre-existing, unrelated to this pass's edits) skipped
+by the strict gate as before.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3941,3 +4016,27 @@ the touched data files).
   Merck citation of "up to 15 minutes" is a genuine minor mismatch
   between one species deep dive and a shared class guide, left for
   Mike since fixing it means editing content outside this species.
+- 2026-09-09, ferret (batch C, single pass, branch
+  claude/batch-c-setup-kgvj92): hub rebuilt to router shape, resolving
+  a cage-size conflict (old hub "3x2x2 ft," 36x24x24 inches, cage
+  setup guide's real "30 long by 24 wide by 48 tall" for a pair) and a
+  lifespan conflict (old hub "6 to 10 years," cost guide's real,
+  researched "5 to 9 years on average for US pet ferrets today") by
+  construction. The cost guide's own setup table still named the same
+  Critter Nation product at the old "3x2x2 ft" dimension; corrected
+  the cell label to 30x24x48 to match the cage setup guide. A genuine
+  cross-guide factual contradiction found and fixed, not a hub issue:
+  the health issues guide cites a real 2000 peer-reviewed study
+  (Schoemaker et al., PubMed 10649752) showing ferrets neutered at 12
+  to 18 months still developed adrenal disease at the same rate as
+  ferrets neutered as kits, concluding neutering itself, light
+  exposure, and genetics drive the disease more than the specific
+  neuter age; the adrenal disease guide's own unsourced FunFact
+  claimed the opposite, that later-neutering countries show
+  meaningfully lower rates, calling it strong evidence for the
+  early-neuter theory. Rewrote the adrenal disease guide's body,
+  FunFact, and FAQ to match the peer-reviewed position. Three links
+  added (handling to enrichment, tank setup to adrenal disease,
+  feeding to health issues). One legacy voice-baseline failure on the
+  adrenal disease guide, pre-existing and unrelated to this pass,
+  confirmed still tolerated by the strict gate.

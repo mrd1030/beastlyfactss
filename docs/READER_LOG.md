@@ -1793,3 +1793,15 @@ Set grade: B+. Deep, well-sourced, occasionally sloppy about keeping its own num
 Real conflicts found: wheel size (old hub "12-14 in," housing guide's real "15 inches or larger," matching the cost guide's own line item); cage height (old hub "24x24x48," housing guide's real "24 by 24 by 36"); fur density, same site two numbers (old hub funFact "up to 60 hairs per follicle, humans have only 1," encyclopedia and the vs-guinea-pig guide's own FunFact both say "up to 80 hairs per follicle, versus 2 to 3 for humans," confirmed the encyclopedia's number is the one two independent site sources agree on); ideal room temperature stated three ways (old hub "60-72°F," housing guide's real "50-68°F" plus the 150 rule, feeding guide's own aside "60-70°F, above 75°F risky"). A wildLifespan field error found independent of the deep dives: the encyclopedia's `wildLifespan: "10-20 years"` is actually the captive range (confirmed against Merck Veterinary Manual, which gives "up to 20 years" for captivity and no wild figure at all), corrected to the site's established "not documented in the wild" phrasing used for other species with the same gap (crested gecko, leopard gecko).
 
 Not covered anywhere: where to find and vet a reputable breeder or rescue; how to safely introduce two chinchillas to each other; the correct minimum cage dimensions (resolved by the router rebuild).
+
+## Ferret (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages, about 92k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: A-. Deep, specific, appropriately urgent about emergencies, let down by two unreconciled numeric conflicts.
+
+Real conflicts found: cage size (old hub "3x2x2 ft," i.e. 36x24x24 inches, cage setup guide's real "30 long by 24 wide by 48 tall" for a pair); lifespan (old hub "6 to 10 years," cost guide's real, explicitly-researched "5 to 9 years on average for US pet ferrets today," which argues the older 10-15 year figure no longer reflects the population). A genuine cross-guide factual contradiction, not just a hub issue: the health issues guide cites a real 2000 peer-reviewed study (Schoemaker et al., PubMed 10649752) showing ferrets neutered late still developed adrenal disease at the same rate, arguing neutering itself (not the specific age) plus light exposure and genetics drives the disease; the adrenal disease guide's own FunFact claimed the opposite, that countries with later neuter ages show meaningfully lower rates, calling it "one of the stronger pieces of evidence supporting the early-neuter theory," with no source cited anywhere in that article. Corrected the adrenal disease guide's body, FunFact, and FAQ to match the peer-reviewed position.
+
+Not covered anywhere: lymphoma, named as one of the three major ferret diseases but never explained on any page or shared guide; the actual litter-training method (a litter box is specified, training it is not); a canine distemper vaccine dosing schedule for kits; what descenting actually involves.
