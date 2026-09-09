@@ -4,6 +4,13 @@ Notes on animal facts that were drafted but did NOT make it into `src/lib/data/f
 
 ## Guide heroes still needed
 
+**2026-09-09: conure-feeding.jpg.** The conure feeding guide is written and
+wired (hub route added, RELATED_ARTICLES auto-detects the -feeding-guide
+suffix). Needs a 1600x1067 3:2 hero at mozjpeg quality 80. Prompt was given in
+chat: a green cheek conure on the rim of a steel bowl of pellets, one foot
+lifted holding a pellet, chopped vegetables beside it, cool window light.
+
+
 **2026-09-09: green-iguana-feeding.jpg.** The green iguana feeding guide is
 written and wired (hub route, RELATED_ARTICLES auto-detects the -feeding-guide
 suffix), and every gate passes except the image check, which reports
