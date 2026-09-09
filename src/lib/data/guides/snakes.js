@@ -231,64 +231,71 @@ Escape prevention is a practical safety issue - an escaped kingsnake faces cold,
     image: "/assets/guides/corn-snake.jpg",
     tagline: "The curious, colorful beginner snake that never stops exploring!",
     funFact: "Corn snakes are named for their distinctive belly pattern that resembles Indian corn kernels, not because they're found in corn fields (though they are)!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft escape-proof enclosure", low: 130, high: 250 },
-        { item: "Heat source with thermostat", low: 35, high: 60 },
-        { item: "Two hides", low: 15, high: 25 },
-        { item: "Soak-able water dish", low: 10, high: 15 },
-        { item: "Aspen or coconut fiber substrate", low: 15, high: 25 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 30 },
-        { item: "Branches for climbing", low: 15, high: 25 },
-        { item: "Feeding tongs", low: 5, high: 10 },
-      ],
-      annual: [
-        { item: "Frozen/thawed mice and small rats", low: 80, high: 150 },
-        { item: "Substrate replacement", low: 25, high: 40 },
-        { item: "Electricity (heat)", low: 40, high: 70 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Quarantine, hygiene, and power
+    // outage cite the shared reptile guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 for batch C (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new snake is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "A 40-gallon breeder (36x18x18 inches) is the adult minimum, with 4x2x2 feet (48x24x24 inches) as the preferred size for a fully grown adult. Front-opening PVC enclosures are generally preferred over glass. House corn snakes singly.", source: "corn-snake-tank-setup-guide" },
+        { label: "Security", value: "Every heat source must run through a thermostat, with zero exceptions. An unregulated heat mat can climb to around 120°F, hot enough to cause a serious burn. Corn snakes are notorious escape artists, so confirm the enclosure locks or latches securely before your snake ever goes in.", source: "corn-snake-tank-setup-guide" },
+        { label: "Temperatures", value: "Warm/basking side 85 to 88°F (some sources say 80 to 85°F is acceptable), cool side 72 to 78°F, overall ambient 75 to 82°F, nighttime 65 to 75°F.", source: "corn-snake-tank-setup-guide" },
+        { label: "Humidity", value: "Sources disagree, some recommend 65 to 75%, others cite 40 to 60% as sufficient, raised to 60 to 70% during shedding. Either range works in practice; what matters more is a dedicated humid hide with damp sphagnum moss during shed cycles.", source: "corn-snake-tank-setup-guide" },
+        { label: "UVB", value: "Not required. Corn snakes have been kept for decades without it, though it is increasingly seen as beneficial long term. If you add one, use a low-output T5 targeting a UVI around 2.0 to 3.0.", source: "corn-snake-tank-setup-guide" },
+        { label: "Substrate", value: "Aspen shavings are the classic choice. Keep it 3 to 4 inches deep to allow natural burrowing behavior. Avoid pine or cedar entirely, both contain oils that are toxic to reptiles.", source: "corn-snake-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Hatchlings under about 3 months eat every 5 to 7 days, working down to every 14 to 21 days for a fully mature adult. Size prey at roughly 1 to 1.5 times the width of the snake's body at its widest point.", source: "corn-snake-feeding-guide" },
+        { label: "Not eating", value: "A healthy adult can physically survive roughly 2 to 3 months without food thanks to a slow reptile metabolism. A hatchling going without food for over about a week is already worth taking seriously and may need veterinary attention.", source: "corn-snake-feeding-guide" },
+        { label: "Handling", value: "Give it time to acclimate and eat successfully 3 to 4 times, roughly one to two weeks at minimum, before handling. Then 5 or 10 minute sessions a couple of times a week, building up gradually. Wait 48 to 72 hours after feeding and skip handling during a shed.", source: "corn-snake-handling-guide" },
+        { label: "Budget", value: "$250 to $600 to set up, up to $1,150 fully equipped. Most owners land around $200 to $500 a year. An initial vet exam runs $50 to $160.", source: "corn-snake-cost-guide" },
+        { label: "Adult size", value: "3.5 to 5 feet." },
+        { label: "Lifespan", value: "15 to 20 years in captivity, with the oldest verified individual reaching 32.", source: "corn-snake-cost-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "65 to 75°F is the normal night low. Below 65°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `A 4x2x2 ft enclosure is appropriate for most adult corn snakes. Despite being considered a beginner species, corn snakes benefit from generous space - they are active, curious, and will use every inch of an enriched enclosure. Corn snakes are notorious and highly capable escape artists. Ensure every single seam, lid hinge, and ventilation gap is secured. They can compress their bodies and squeeze through openings that seem impossibly small.
-
-Provide a warm end with a surface temperature of 85 to 88 degrees F using an under-tank heater on a thermostat, and a cool end at approximately 72 to 75 degrees F. Corn snakes originate from the eastern United States, where temperatures are moderate, and they do not require the extreme heat that tropical or desert species need. A simple warm/cool gradient with two hides - one at each end - meets their thermoregulatory needs.
-
-Humidity should stay at 40 to 60%. This is generally achievable at ambient room humidity in most homes. During shed, raise humidity slightly by adding a moist hide (a hide box with damp sphagnum moss). Aspen shavings are an excellent substrate: they hold burrow tunnels, are affordable, easy to spot-clean, and maintain appropriate humidity levels when not over-misted.
-
-Corn snakes are semi-arboreal and will use elevated branches and perches, especially juveniles. Providing height and branching in the enclosure gives them an outlet for this natural behavior and makes the enclosure more enriching.`,
-      diet: `Corn snakes eat appropriately sized frozen/thawed mice, or small rats as they grow. Prey should roughly match the widest point of the snake's mid-body - a slight bulge after feeding is normal and healthy; a dramatically distended body indicates prey is too large.
-
-Feed juveniles every 5 to 7 days, sub-adults every 7 to 10 days, and adults every 10 to 14 days. Always thaw frozen prey fully in warm water until the core reaches approximately 100 degrees F before offering. Always use feeding tongs - every single feeding. This prevents the snake from associating your hand with food and dramatically reduces the chance of accidental strikes during handling.
-
-Corn snakes are generally reliable, enthusiastic feeders. If a corn snake refuses food, consider whether it is in pre-shed (the skin and eyes will appear dull and bluish), whether it is cold (check temperatures), or whether the prey is too warm or too cold. Most refusals in otherwise healthy corn snakes resolve without intervention. Allow 48 to 72 hours after feeding before handling.
-
-Fresh water in a clean, soak-able dish must be available at all times. Corn snakes drink regularly and often soak before shedding. Change the water at least twice per week and clean the dish thoroughly with a reptile-safe disinfectant weekly.`,
-      enrichment: `Corn snakes are one of the most active and exploratory snakes in captivity. Given appropriate space, they investigate every corner of their enclosure, climb branches, burrow through substrate, and soak in their water dish. Enriching their environment significantly improves their quality of life compared to a bare enclosure with only a hide.
-
-Provide branches at varying heights for climbing, multiple hides of different sizes and shapes, cork bark for climbing and hiding, and a water dish large enough to coil in. Covering the exterior walls of the enclosure with backgrounds gives the snake a greater sense of security and reduces stress from seeing movement outside the enclosure constantly.
-
-Corn snakes tame exceptionally well with consistent handling. Start with brief 5-minute sessions after the snake has been allowed to settle for 2 weeks following acquisition. Build up gradually to 15 to 30 minute sessions. Most corn snakes become remarkably calm and interactive - comfortable exploring their keeper's arms and shoulders without any defensiveness.
-
-Substrate enrichment is underutilized. Providing aspen shavings deep enough to burrow in (3 to 4 inches), adding dried leaves on top, and hiding prey items in the substrate creates a more naturalistic and stimulating environment that supports natural foraging behavior.`,
-      health: `Corn snakes are among the hardiest and most disease-resistant snakes available as pets. When husbandry is correct, they rarely develop serious health problems. The most common issues are all preventable with proper setup.
-
-Respiratory infections result from temperatures that are too low, humidity that is too high without adequate ventilation, or both. Signs include wheezing, mucus from the mouth and nostrils, open-mouth breathing, and lethargy. Any suspected respiratory infection requires veterinary treatment. Address the underlying husbandry cause simultaneously to prevent recurrence.
-
-Retained shed is caused by low humidity and/or lack of a moist hide. A complete shed should come off in one piece. Retained shed on the eye caps is the most serious - it blurs vision and if left in place can cause eye damage. Soaking in shallow lukewarm water for 20 to 30 minutes softens retained shed for gentle removal.
-
-Escape prevention is not a health issue per se, but an escaped corn snake is at serious risk from dehydration, temperature extremes, household hazards, and being stepped on. Check the enclosure for gaps regularly. A corn snake that escapes and is not found within 24 to 48 hours has a dramatically reduced chance of being recovered safely.`,
-      checklist: ["4x2x2 ft escape-proof enclosure", "Heat source with thermostat (85 to 88 degrees F warm end)", "Two hides (warm and cool)", "Water dish (soak-able size)", "Aspen or coconut fiber substrate", "Frozen/thawed mice and small rats", "Feeding tongs", "Branches for climbing", "Digital thermometer", "Secure, lockable lid"],
+    emergencyCard: {
+      source: "corn-snake-health-issues-guide",
+      callNow: [
+        "Open-mouth breathing or wheezing",
+        "Visible mites",
+        "Discolored or soft belly scales",
+        "Repeated regurgitation",
+        "Any mouth swelling or discharge",
+        "Neurological symptoms (star-gazing or corkscrewing movements)",
+      ],
+      vetLine: "A reptile-experienced vet, found through the Association of Reptilian and Amphibian Veterinarians before you need one. Get a new corn snake checked within the first few weeks of ownership, then an annual wellness exam with a fecal test after that.",
     },
+    routes: [
+      { slug: "corn-snake-cost-guide", line: "$25 to $70 for the snake, $250 to $600 for the setup, $200 to $500 a year, and what it costs over a two-decade lifespan." },
+      { slug: "corn-snake-tank-setup-guide", line: "The 40-gallon breeder minimum, the one non-negotiable thermostat rule, and the genuine humidity disagreement worth knowing about." },
+      { slug: "corn-snake-feeding-guide", line: "The age and weight based schedule, prey sizing, and the honest range of reasons a corn snake stops eating." },
+      { slug: "corn-snake-handling-guide", line: "Settling-in time, the two-handed support, the timing rules around feeding and shedding, and the stress signs." },
+      { slug: "corn-snake-health-issues-guide", line: "Respiratory infection, scale rot, mites, retained shed, mouth rot, and the list that means the vet today." },
+      { slug: "corn-snake-enrichment-guide", line: "The 2021 studies on enclosure size and odor discrimination, and why floor space is the enrichment for this species." },
+      { slug: "corn-snake-legal-guide", line: "Banned in Georgia as a native species, restricted morphs in New Jersey and Illinois, and where it's legal outright." },
+    ],
+    buyList: [
+      "40-gallon breeder or 4x2x2 ft PVC enclosure",
+      "Heat source (under-tank heater or overhead halogen)",
+      "Thermostat",
+      "At least two hides",
+      "Soak-able water bowl",
+      "Aspen shavings or other suitable substrate",
+      "Digital thermometer and hygrometer",
+      "Branches or cork bark for climbing",
+      "Feeding tongs",
+      "Frozen/thawed mice or small rats",
+      "Optional low-output T5 UVB",
+    ],
     faqs: [
-      { q: "How big do corn snakes get?", a: "Adult corn snakes typically reach 4 to 5 feet, with females often slightly larger than males. They are slender snakes and never feel heavy or cumbersome at full size. Juveniles hatch at about 8 to 12 inches and reach adult size by 2 to 3 years, though they continue filling out slowly until age 4 to 5." },
-      { q: "Are corn snakes good beginner snakes?", a: "Yes - corn snakes are widely regarded as one of the best beginner snakes available. They are active and curious rather than sedentary, which makes them more engaging to watch than many other colubrids. They feed reliably, tolerate handling well with regular interaction, and have straightforward temperature and humidity requirements. The main challenge is their legendary escape-artist reputation - every gap in a corn snake enclosure will eventually be found." },
-      { q: "How often do corn snakes eat?", a: "Feed juvenile corn snakes every 5 to 7 days and adults every 10 to 14 days. Always feed frozen and thawed prey sized to the widest part of the snake's body. Corn snakes are enthusiastic feeders and food-motivated, which also means they may strike at your hand if they smell prey - always wash hands before handling." },
-      { q: "How long do corn snakes live?", a: "Corn snakes commonly live 15 to 20 years in captivity with proper care, and some individuals exceed 20 years. They are one of the longer-lived colubrid species. Longevity depends on consistent appropriate temperatures, annual fecal checks for parasites, and prompt veterinary care for any health concerns." },
-      { q: "Do corn snakes need humidity?", a: "Corn snakes do well at 40 to 60% ambient humidity, which is achievable in most homes without additional measures. The most important provision is a humid hide - a box packed with damp sphagnum moss - available at all times and especially during the shedding cycle. Dry sheds from insufficient humidity are one of the most common corn snake health issues and can result in retained eye caps and constricting shed on the tail tip." },
-      { q: "Is a corn snake dangerous to confuse with a copperhead?", a: "It's a real concern outdoors, not just an academic question. Corn snakes and copperheads share a similar reddish, blotched pattern and range, and corn snakes are genuinely, frequently mistaken for copperheads (and killed as a result) in the wild. A pet corn snake in an enclosure isn't the risk; misidentifying a wild snake in your yard is. When in doubt outdoors, leave any snake alone rather than trying to identify it by pattern alone." },
-      { q: "How is a corn snake different from a coral snake?", a: "Completely unrelated and easy to tell apart once you know the pattern rule. Coral snakes are venomous with red bands bordered by yellow; corn snakes are non-venomous colubrids with a blotched, saddle-like pattern that doesn't follow that banding at all. Corn snakes are sometimes confused with venomous species in casual conversation, but coral snake mimicry is really a milk snake and kingsnake story, not a corn snake one." },
+      { q: "How much does a corn snake itself cost?", a: "A normal morph runs $25 to $70. Rare or designer morphs climb into the hundreds or occasionally low thousands, but the animal itself is the cheap part of ownership either way." },
+      { q: "What humidity level does a corn snake need?", a: "Sources disagree, some recommend 65-75%, others cite 40-60% as sufficient, raised to 60-70% during shedding. Either range works in practice, what matters more is consistency and a dedicated humid hide with damp sphagnum moss during shed cycles." },
+      { q: "Why has my corn snake stopped eating?", a: "Most commonly it's shedding, brumation, or, in males especially, breeding-season restlessness, all normal. It becomes a concern when it's paired with weight loss, lethargy, respiratory signs, or when the enclosure's warm side isn't warm enough for the snake to digest food safely." },
     ],
   },
   {
