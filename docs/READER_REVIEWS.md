@@ -2684,7 +2684,7 @@ Recommended links, one per page:
 | Cost | "so it's worth locating one near you before an emergency forces the search" | Bird Emergency Plan guide (added) |
 | Handling | "routine things like cage cleaning, nail trims, or a vet visit" | Bird First Aid Kit and Grooming guide (added) |
 | Health issues | "changes in droppings" | Reading Bird Droppings guide (added) |
-| Tank setup | "so a cage cover or a small night light can help" | Photoperiod and Sleep guide (added) |
+| Tank setup | "Cockatiels need 10 to 12 hours of quiet, dark sleep every night" | Photoperiod and Sleep guide (added in the species check; the first-pass commit never added it, and the reader's night-fright sentence is not something the photoperiod guide covers, so the link sits on the sleep-hours sentence that guide actually answers) |
 | Feeding | "laying hens are the one group that need extra calcium consideration" | Chronic Egg Laying and Egg Binding guide (added) |
 | Enrichment | "Do not assume plucking is behavioral before an avian vet has ruled out medical causes" | Molt vs. Plucking vs. PBFD vs. Giardia guide (added) |
 | vs Cockatoo | "have a plan for who cares for it if it outlives you" | Succession Planning guide (added) |
@@ -2715,7 +2715,8 @@ conflict researched for real (VCA's actual page) and fixed in tank
 setup, which is now a pointer at feeding rather than a near-duplicate;
 the lifespan conflict researched for real (TheVetDesk and Hepper, both
 opened directly) and corrected in the cost guide. Six of seven
-recommended links added.
+recommended links added in the first pass; the seventh (tank setup)
+landed in the species check.
 
 Open: the two vs-piece lifespan figures (15 to 25, both real, both
 cited) against the cost guide's now-corrected 10 to 15 (also real,
@@ -2728,7 +2729,21 @@ uncovered anywhere in the set.
 ## Cockatiel (2026-09-09, batch B, second pass, after the fixes)
 
 One Opus agent, the same nine pages re-extracted after the first-pass
-fixes, about 82k tokens. Set grade held at B+, same shape as before:
+fixes, about 82k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A- | The page I would print: cage 20x20x30, half-inch bars, 30-day quarantine, the vet-now list. |
+| Encyclopedia | C+ | Good history, wrong lifespan for a buyer. |
+| Cost | B | Budgetable, but four setup-table rows say "part of the starter setup." |
+| Handling | B+ | 7 to 14 days hands-off, flat palm, 10 to 15 minute sessions, the stress list. |
+| Health issues | A- | Cuttlebone in permanently, no kitchen, the call-now list. |
+| Tank setup | A- | Everything to buy and place, plus spot-clean daily, deep clean weekly. |
+| Feeding | A | Best page here; read it twice. |
+| Enrichment | A- | The priority order, and rotate. |
+| vs Cockatoo | B+ | Skimmed; for someone earlier in the decision. |
+
+Set grade held at B+, same shape as before:
 "genuinely useful, specific, and honest about what it does not know,
 but the lifespan number changes depending on which page I am standing
 on."
@@ -2759,10 +2774,19 @@ Real issues the second pass caught that the first pass didn't:
   isn't going to invent that granularity where the documentation
   doesn't support it." The handling guide's "upright = calm" claim,
   the one with no source of its own and the one that actively
-  contradicts the site's shared reference, was cut; it keeps the two
-  positions Lafeber can support existing without contradiction
-  (flattened tight = fear, forward = alertness) and now links the
-  shared body language guide. The vs cockatoo guide's more granular
+  contradicts the site's shared reference, was cut from the FunFact;
+  the box keeps the flattened and forward readings and now links the
+  shared body language guide. Species check correction: handling's
+  own two sources back only the flattened reading (SpectrumCare:
+  "flattens its crest tightly... back up and slow down"); Lafeber's
+  behavior page, cited by the vs guide, says only that a raised or
+  lowered crest indicates emotional state, "excited, fearful or
+  happy." So "swept forward = startled alertness" is Mike's original,
+  unsourced, hedged with "can mean," and left. The body's comfort
+  list still reads "A relaxed, upright crest," left too: Lafeber lists
+  "happy" among raised-crest states, so it is incomplete rather than
+  contradicted, the same way the vs guide's "straight up = excitement
+  or alarm" is. The vs cockatoo guide's more granular
   claim was left as is, it no longer conflicts with anything on this
   page, though it runs a little ahead of what that same shared page
   considers verified, noted for whoever next touches it.
@@ -2778,8 +2802,15 @@ Real issues the second pass caught that the first pass didn't:
   reader as flatly disagreeing with the encyclopedia's "up to 25 years
   in captivity." Not a numeric conflict (typical and maximum are
   different claims, and both are separately sourced), but the hub row
-  now adds "though some live considerably longer with excellent care"
-  so it reads as compatible rather than contradictory.
+  was given "though some live considerably longer with excellent care"
+  so it read as compatible rather than contradictory. Reverted in the
+  species check: the cost guide never says that, and a hub row is a
+  copy of its source (RULES, Hubs). The row now carries the cost
+  guide's own FAQ sentence, "Cockatiels live 10 to 15 years, so this
+  is a long-term financial commitment even though the entry cost is
+  modest." The typical-versus-maximum gap against the encyclopedia is
+  a wording gap for the cost guide to close if Mike wants it closed,
+  not for the hub to paper over.
 
 The set as a whole and deep-dive overlap otherwise unchanged from the
 first pass; the "24-hour day" UV-versus-darkness question the second
@@ -2787,7 +2818,7 @@ pass raised again was already checked in the first pass and is real,
 sourced, non-conflicting content (day UV hours, night dark hours), not
 re-litigated here.
 
-Recommended links: three more added (handling to the shared bird body
+Recommended links: two more added (handling to the shared bird body
 language guide, enrichment to the health issues guide, both above),
 the rest already covered in the first pass.
 
