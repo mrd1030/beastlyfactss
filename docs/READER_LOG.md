@@ -2268,3 +2268,125 @@ roundup.
 - How to introduce two rats to each other.
 - Whether to neuter, and what it costs.
 - What to do for a pair in a heatwave or a power outage.
+
+## Hermit Crab (2026-09-09)
+
+Process note, recorded because it changes how this entry should be read:
+this session had no Agent/Task tool available, so no reader subagent could
+be launched. The set test prompt from READMEFIRST.md was run in-session by
+the species agent itself against the seven plain-text pages in
+/home/user/beastlyfactss/.reader/hermit-crab/, read in filename order,
+before the hub was rewritten. The text below is that pass, unedited.
+
+---
+
+1. One line per page.
+
+00 Care guide hub, grade B-. I would finish it, and it is the only page
+that gives me a shopping list and a checklist in one place, but it reads
+as a third care sheet rather than a front door, and three of its numbers
+do not match the setup guide it is sitting on top of.
+
+01 Encyclopedia, grade B+. Short and I finished it. The history is the
+only thing in the set I could not get anywhere else: 1953, a souvenir
+shop in West Palm Beach, the Crazy Crab pitched as a moving Pet Rock,
+and Mary Akers raising 204 crabs to land in 2018. Nothing here changes
+what I buy.
+
+02 Cost, grade B+. Actionable. I know the crab is the cheap part and the
+tank is not. The table's tank line and the stated total sit oddly next to
+each other, and the page tells me to buy at least two crabs without
+pricing a tank that holds a group comfortably.
+
+03 Handling, grade A-. The section on how long a crab stays buried is the
+most useful paragraph in the whole set. Days to over a week for a new
+crab, several weeks up to around three months for a molt, and a plain
+statement that a still crab is almost always alive. That is the thing
+that stops a beginner from digging one up.
+
+04 Health, grade A-. The framing is honest: essentially no vet care, so
+husbandry does the work. Post purchase stress is explained well enough
+that I would recognize it. It names mites and mold and then tells me
+nothing about what to do.
+
+05 Tank setup, grade A. The numbers page. Humidity, temperature,
+substrate ratio and depth, two water dishes, shells, lighting. I would
+print this one.
+
+06 Enrichment, grade A. Unexpected. It cites Elwood and Appel on crabs
+abandoning a shell to escape a shock, and shows Briffa disagreeing with
+Elwood instead of pretending the question is settled. The priority order
+at the end is the single most useful list in the set.
+
+2. Hub and encyclopedia. The encyclopedia earns its place on history
+alone. The hub does not: it restates housing, diet, enrichment, and
+health in full, and where it restates them it gets three numbers wrong.
+Hub: "Humidity must stay at 70 to 80%." Tank setup: "Maintain 75 to 85%
+relative humidity." Hub: "always have 2 to 3 spare empty shells per
+crab." Tank setup: "Offer multiple natural, unpainted shells per crab,
+ideally 3 to 5 or more." Hub: "a sand and coconut fiber mix at least
+three times the crab's body length." Tank setup: "at least 6 inches, or
+about 3 times the height of your largest crab." Body length and height
+are not the same measurement on an animal that lives sideways in a
+shell. Also hub cost table: "10-20+ gallon tank (for a group) $60 to
+$120" against the cost guide's "10-gallon tank (2 to 3 small crabs) $30
+- $100."
+
+3. The set as a whole. Yes, I could set up, buy, feed, and keep these
+animals. What is missing: the health guide says to "quarantine and
+isolate new crabs" and never says for how long, in what, or how I know
+it is over. Every crab is wild caught, per that same page, so the
+quarantine question is not a small one. Nothing tells me how to mix the
+saltwater to strength beyond "an aquarium salt mix, never table salt."
+Nothing tells me what to look at when choosing a crab in a shop, which
+matters more here than for a captive bred animal. And mites get named as
+a problem with no treatment.
+
+4. Overlap and conflict across the deep dives. Diet appears in the tank
+setup guide and again in the enrichment guide, but they say different
+things and both are worth reading: one is what to feed, the other is to
+scatter it rather than bowl it. Substrate depth appears three times and
+agrees each time. Shell counts agree: 3 to 5 or more, several per crab.
+Molt duration agrees across handling, health, and the shared molting
+guide. I found no number that two deep dives disagree on. The
+disagreements are all hub against setup guide.
+
+5. One link per page.
+
+Hub: "Molting is a vulnerable, weeks-long underground process" should go
+to the handling guide, which is where the actual duration lives.
+Encyclopedia: "they can live for decades with proper care" should go to
+the cost guide, which is where the lifespan figure sits.
+Cost: "Most hermit crab health problems trace straight back to that
+gap." should go to the health issues guide. That sentence names a whole
+page and then leaves me nowhere.
+Handling: none needed, it is the best linked page here.
+Health: "matter so much in this species' housing, covered in more detail
+in the tank setup guide." names the guide and does not link it, which is
+worse than saying nothing.
+Tank setup: "a crab that's buried or molting underneath" should go to
+the molting guide.
+Enrichment: "Depth should let the largest crab bury completely with room
+to spare." should go to the tank setup guide, which turns that into
+inches.
+
+6. Trust. The 70 to 80 against 75 to 85 is the thing that bothers me,
+because humidity is the number this whole species hangs on and the hub
+is the first page I landed on. Nothing reads as invented. The sentence
+that most convinced me a keeper wrote this, from enrichment: "Do not
+supply one spare shell for a group, because that creates competition
+over a resource the research shows they weigh heavily."
+
+7. Set grade B+. Everything a keeper needs is here, and the setup and
+enrichment pages are better than most of what is online, but the hub
+contradicts the setup guide on three of the four numbers that matter
+most. Two changes first: make the hub stop restating the setup guide's
+numbers, and give the health guide's quarantine advice a duration.
+
+Not covered anywhere:
+- How long a new hermit crab should be quarantined, in what, and how you
+  know the period is over.
+- What to do about mites once they appear, beyond correcting hygiene.
+- How to mix marine saltwater to the right strength.
+- What to look at when choosing a crab in a shop, given every one is
+  wild caught.

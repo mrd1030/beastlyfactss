@@ -277,50 +277,73 @@ Their enrichment needs are simple: fresh substrate, fresh food, and the right co
     image: "/assets/guides/hermit-crab.jpg",
     tagline: "The shell-swapping beach scavenger whose 'easy starter pet' reputation badly undersells what it actually needs!",
     funFact: "Hermit crabs don't grow their own shells - they spend their entire lives searching for, trying on, and trading empty snail shells as they grow, and will even form an orderly 'vacancy chain,' lining up by size to swap shells in turn when a larger one becomes available. In the wild, land hermit crabs can live 20 to 30+ years, though most pet hermit crabs sold in beach-town gift shops die within their first year from incorrect humidity and being kept alone.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a small group (2-3 crabs), since solo housing isn't appropriate.
-    costs: {
-      setup: [
-        { item: "10-20+ gallon tank (for a group)", low: 60, high: 120 },
-        { item: "Heat mat (side-mounted)", low: 10, high: 20 },
-        { item: "Hygrometer and thermometer", low: 15, high: 25 },
-        { item: "Deep sand/coconut fiber substrate", low: 20, high: 40 },
-        { item: "Large soak-able water dish", low: 10, high: 15 },
-        { item: "Spare shells (2-3 per crab)", low: 15, high: 30 },
-        { item: "Climbing branches and cork bark", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Hermit crab food + varied fresh food", low: 30, high: 60 },
-        { item: "Substrate replacement", low: 20, high: 40 },
-        { item: "Marine salt mix (saltwater pool)", low: 10, high: 20 },
-      ],
-    },
-    sections: {
-      housing: "A 10-gallon tank is an absolute floor, but 20 gallons or more is far more appropriate - and necessary for a group, since hermit crabs are social and should be kept with at least 2 to 3 others, not alone. This is one of the most under-communicated requirements in the pet trade. Humidity must stay at 70 to 80%, measured with a hygrometer rather than guessed, since hermit crabs breathe through modified gills that need consistently moist air; a secure lid, substrate misting, and a mostly covered tank all help maintain this. Deep substrate - a sand and coconut fiber mix at least three times the crab's body length - is essential, since crabs burrow completely underground to molt, sometimes for weeks at a time. Provide both a freshwater pool and a marine saltwater pool, each deep enough to submerge in but with an easy exit ramp to prevent drowning, using only dechlorinated water. Keep temperatures at 75 to 85 degrees F, and always have 2 to 3 spare empty shells per crab, slightly larger than their current one, available so they can upgrade as they grow.",
-      diet: "Hermit crabs are omnivorous scavengers. A commercial hermit crab food can form a base, but a genuinely varied diet of fresh fruit, vegetables, unseasoned meat, and calcium sources like cuttlebone or crushed eggshell makes a real difference in health and molt success. Avoid pre-packaged shells or substrate treated with paint, dye, or chemicals, and never offer any food that has been near soap, pesticides, or copper-based products - all are toxic to hermit crabs. Feed daily in a shallow dish and remove uneaten fresh food within a day to prevent mold in the humid enclosure.",
-      enrichment: "Hermit crabs are highly social, and keeping a single crab alone is a well-documented contributor to poor health and a shortened lifespan - groups of several allow the natural social interaction this species needs. Climbing branches, cork bark, and fishnet or plastic mesh support their active, exploratory nature. Always keep several appropriately sized spare shells available so crabs can choose and switch between them, which is itself a form of enrichment as much as a physical necessity. A crab that suddenly burrows and disappears for weeks is very likely beginning to molt, not sick or dead - resist the urge to dig them up to check.",
-      health: "Incorrect humidity is the single leading cause of death in pet hermit crabs - too dry an enclosure causes their gills to dry out and the crab to slowly suffocate. Molting is a vulnerable, weeks-long underground process, and a buried, motionless crab should never be dug up or disturbed. Shell shortage stress occurs when no appropriately sized replacement shells are available, forcing crabs to fight over shells or remain in an outgrown one that restricts their growth. Isolation stress from being kept alone is a well-documented contributor to premature death. Avoid painted, glued, or otherwise 'decorative' shells sometimes sold in stores, which can be toxic or physically restrictive.",
-      checklist: [
-        "10-20+ gallon tank for a group of 2-3+ crabs",
-        "Secure lid to retain humidity",
-        "Hygrometer and thermometer",
-        "70-80% humidity, 75-85°F temperature",
-        "Deep sand/coconut fiber substrate (3x crab body length)",
-        "Freshwater and marine saltwater pools with exit ramps (dechlorinated)",
-        "2-3 extra appropriately sized shells per crab",
-        "Climbing branches and cork bark",
-        "Calcium sources (cuttlebone, crushed eggshell)",
-        "Varied fresh food; avoid painted shells and chemical-treated decor",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Molting, pesticides, and
+    // the power outage row cite the shared invertebrate guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-09 after the hermit crab set
+    // test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank", value: "Use a glass terrarium, roughly a 10-gallon tank for 2 to 3 small crabs, more for larger crabs or bigger groups. The lid needs to seal in humidity, glass or acrylic works best; if you're using a screen lid, cover part of it with plastic wrap or tape to help retain moisture.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Group size", value: "Keep at least two crabs together, they're a genuinely social species.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Temperature", value: "Aim for 75 to 85°F, with the warm side around 80°F. Use a side- or back-mounted heat mat. Never place a heat mat under the tank, heat rising up through deep substrate can be dangerous, even fatal, to a crab that's buried or molting underneath.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Humidity", value: "Maintain 75 to 85% relative humidity. Monitor with a hygrometer, and maintain the range through a combination of moist substrate, a well-sealed lid, and a dedicated moss pit.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Substrate", value: "Mix play sand and coconut fiber at roughly a 5:1 ratio, aiming for a 'sandcastle consistency' that holds a tunnel shape when packed. Depth is at least 6 inches, or about 3 times the height of your largest crab, since hermit crabs burrow to molt and need genuine room to do it.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Water", value: "Two separate soakable water dishes, one with dechlorinated fresh water, one with marine saltwater made from an aquarium salt mix, never table salt. Both should be deep enough for a crab to fully submerge but include an easy way to climb back out, hermit crabs can and do drown if they can't exit.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Shells", value: "Offer multiple natural, unpainted shells per crab, ideally 3 to 5 or more, spanning a range of sizes so your crab has room to size up as it grows. Painted shells are toxic and should never go in the enclosure.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Diet", value: "Offer a varied diet with calcium sources like cuttlebone, fresh fruit and vegetables, protein like dried shrimp or insects, and leaf litter. Feed in the evening, since they're most active at night, and remove leftovers the next morning.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Lighting", value: "A standard 12-hour light, 12-hour dark cycle works well. Hermit crabs are nocturnal, and there's no established UVB requirement for this species.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Handling", value: "Let the crab sit on a flat, open palm instead of closing your hand around it. If you need to move it, lift from the back of the shell, not by grabbing at the legs or claws directly. Keep sessions brief.", source: "hermit-crab-handling-guide" },
+        { label: "Buried and out of sight", value: "A newly disturbed crab, or one that's just arrived in a new home, commonly digs down and stays out of sight for days, sometimes over a week, while it settles in. A molting crab can stay buried considerably longer, anywhere from several weeks up to around three months, and should not be dug up or disturbed during that time no matter how long it's been.", source: "hermit-crab-handling-guide" },
+        { label: "The first molt", value: "Every pet hermit crab is wild-caught, not captive-bred, and this adjustment period is where most hermit crab deaths actually happen. Quarantine and isolate new crabs, and improve humidity and temperature gradually rather than making sudden changes. A hermit crab generally isn't considered past the PPS risk period until it has successfully molted once in your care.", source: "hermit-crab-health-issues-guide" },
+        { label: "Budget", value: "$3 to $40 per crab, roughly $130 to $450 for a complete setup, and around $10 to $30 a month after that.", source: "hermit-crab-cost-guide" },
+        { label: "Lifespan", value: "10 to 20 years or more when kept well.", source: "hermit-crab-cost-guide" },
+        { label: "Adult size", value: "Up to 4 inches (10 cm) across, including legs." },
+        { label: "Molting", value: "Burrowing completely underground and disappearing from view is the sign, and several weeks buried, depending on size, is the normal duration. Never disturb a molting invertebrate, which here means no digging up a buried hermit crab to check on it.", source: "invertebrate-molting-guide" },
+        { label: "Household pesticides", value: "Every insecticide sold for use inside a home is designed to kill arthropods, and an invertebrate pet has none of the safety margin a dog or cat gets. A can of ant spray used in the kitchen, a plug-in device switched on in the hallway, or a dog treated for fleas on the living room rug are all routes into an enclosure.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "Power outage", value: "Hermit crabs are the real exception in this group. They're actively heated and humidified rather than kept at a comfortable room temperature, which puts their outage risk much closer to a reptile's or a fish's than to a tarantula's. A battery-powered backup for the heat source and a plan for holding humidity, a sealed lid and damp substrate, belongs in your outage kit.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
+    emergencyCard: {
+      source: "hermit-crab-health-issues-guide",
+      callNow: [
+        "Lethargy, burrowing and staying hidden, refusing food, and rapid loss of multiple limbs, which is a particularly strong indicator of advanced post-purchase stress",
+        "An ashy appearance, lethargy, and an inability to fully retract into the shell, the signs of dehydration and gill suffocation",
+        "A molt that was interrupted, or one happening in substrate that's too shallow or dry, which is frequently fatal",
+        "Limb loss from stress, fights with cage-mates, mites, or generally wrong conditions",
+        "Mites and mold, generally traceable to poor hygiene or inadequate ventilation in the enclosure",
+      ],
+      vetLine: "There's essentially no practical veterinary care available for this species, so the real response to a sick or stressed hermit crab is correcting the husbandry issue behind it, and isolating any crab that's aggressive, injured, or showing PPS signs from the rest of the group while it recovers.",
+    },
+    routes: [
+      { slug: "hermit-crab-cost-guide", line: "$3 to $40 for the crab itself, why the setup is the part that actually costs money, and the monthly budget after that." },
+      { slug: "hermit-crab-tank-setup-guide", line: "Humidity, temperature, substrate depth, the two water dishes, and the shells that go in the tank." },
+      { slug: "hermit-crab-handling-guide", line: "Why handling stays minimal, the open-palm method, and how long a buried crab can stay down." },
+      { slug: "hermit-crab-health-issues-guide", line: "Post-purchase stress, dehydration and gill suffocation, bad molts, and what seeking help looks like when there's almost no vet care." },
+      { slug: "hermit-crab-enrichment-guide", line: "What the shell research actually found, how many shells a group needs, and the priority order for everything else." },
+    ],
+    buyList: [
+      "Glass terrarium, roughly 10 gallons for 2 to 3 small crabs and larger for a bigger group",
+      "A glass or acrylic lid that seals humidity in",
+      "Play sand and coconut fiber for substrate",
+      "Side- or back-mounted heat mat",
+      "Thermometer and hygrometer",
+      "Two soakable water dishes, ceramic or otherwise non-metal",
+      "Dechlorinator",
+      "Marine aquarium salt mix",
+      "Natural unpainted shells in a range of sizes, several per crab",
+      "Climbing branches and cork bark",
+      "Cuttlebone or another calcium source",
+      "Hermit crab food plus fresh fruit, vegetables, and protein",
+    ],
     faqs: [
-      { q: "Can hermit crabs live alone?", a: "They shouldn't, long term. Hermit crabs are social animals, and isolation is a well-documented contributor to stress and shortened lifespan. Keep at least 2 to 3 together, and preferably more." },
-      { q: "Why is my hermit crab buried and not moving?", a: "Almost always molting - a normal process that can take several weeks underground. Never dig up a buried crab to check on it; disturbing a molting hermit crab can be fatal." },
-      { q: "How long do hermit crabs live?", a: "In the wild, land hermit crabs can live 20 to 30 years or more. Sadly, most pet hermit crabs die within their first year due to incorrect humidity and being kept alone. With proper humidity, a social group, and appropriately sized spare shells, captive lifespans of a decade or more are genuinely achievable." },
-      { q: "Do hermit crabs need salt water?", a: "Yes, along with fresh water - both pools should be available at all times, deep enough to submerge in but with an easy exit ramp, using only dechlorinated water for each." },
-      { q: "Why does my hermit crab need extra shells?", a: "As they grow, hermit crabs need to move into progressively larger shells. Without 2 to 3 appropriately sized spares always available, they can become stressed, fight with tankmates over shells, or be forced to stay in a restrictive shell that stunts their growth." },
-      { q: "Are hermit crabs good pets for beginners?", a: "The reputation says yes; the reality says be careful. Hermit crabs are sold as a simple starter pet, but they're social animals that need to be kept in groups, require humidity precise enough to need an actual hygrometer, and most pet-store hermit crabs die within their first year from exactly those two things being skipped. Done right, they're rewarding; done the way they're usually sold, they aren't the easy pet the packaging suggests." },
-      { q: "How can I tell if my hermit crab is male or female?", a: "It's genuinely hard without close inspection. Hermit crabs are sexed by checking for gonopores, small paired openings at the base of certain walking legs, present on females and absent on males, but they're small and easy to miss unless you know exactly where to look. Most keepers don't reliably sex their hermit crabs, and it doesn't affect care either way." },
+      { q: "What humidity level do hermit crabs need?", a: "75 to 85% relative humidity, checked on a hygrometer. It isn't optional: the modified gills a hermit crab breathes through must stay moist to work, and humidity below that range leads directly to dehydration and gill suffocation." },
+      { q: "When should I never handle my hermit crab?", a: "Never handle a crab that's molting, has recently changed shells, or is buried in the substrate. Molting crabs are extremely vulnerable, and disturbing one during this time can be fatal, it's one of the clearest rules in hermit crab care." },
+      { q: "What's the leading cause of death in pet hermit crabs?", a: "Post-purchase stress, since every pet hermit crab is wild-caught rather than captive-bred and goes through real shock from capture, shipping, and a new environment. Watch for lethargy, burrowing, refusing food, and rapid loss of multiple limbs, and know that a crab generally isn't past the risk period until it has molted once successfully in your care." },
     ],
   },
   {

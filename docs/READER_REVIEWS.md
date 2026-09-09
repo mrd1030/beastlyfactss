@@ -4776,3 +4776,182 @@ feeding to health issues, enrichment to setup).
 - `small-mammal-temperature-heat-stress-guide` still needs adding to the rat
   entry in src/lib/data/relatedArticles.js before the shared guide shows in
   this species' sidebar.
+
+## Hermit Crab (2026-09-09, first pass)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment). No reader subagent: this session had no
+Agent/Task tool, so the set test prompt was run in-session by the species
+agent against `.reader/hermit-crab/` before the hub was rewritten. Raw
+output is in the reader log entry for the same date. The hub was the
+legacy care-sheet shape when the pass ran; it is a router hub now.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The only page with a checklist and a shopping list, but it is a third care sheet and three of its numbers do not match the setup guide. |
+| Encyclopedia | B+ | The history is the only thing in the set you cannot get elsewhere, and nothing here changes what you buy. |
+| Cost | B+ | You learn the crab is the cheap part and the tank is not; the table's tank line and the stated total sit oddly together. |
+| Handling | A- | The section on how long a crab stays buried is the most useful paragraph in the set. |
+| Health issues | A- | Honest that there is essentially no vet care, so husbandry does the work; names mites and then says nothing about them. |
+| Tank setup | A | The numbers page, and the one to print. |
+| Enrichment | A | Cites Elwood and Appel, shows Briffa disagreeing rather than resolving it, and ends on the best list in the set. |
+
+Set grade: B+. "Everything a keeper needs is here and the setup and
+enrichment pages are better than most of what is online, but the hub
+contradicts the setup guide on three of the four numbers that matter
+most."
+
+Hub grade after the rewrite: A-. Router shape, 18 first-week rows, a
+five-bullet emergency card, five routes, a twelve-line buy list with no
+prices, three verbatim deep-dive FAQs. Marked down only because the
+species has no feeding or legal guide, so two rows a reader would expect
+to route somewhere land on the tank setup guide instead.
+
+Hub versus the set, both sides quoted (all four resolved by the router
+rewrite, since the hub now copies the deep dive named in each row):
+
+- Humidity. Hub: "Humidity must stay at 70 to 80%, measured with a
+  hygrometer rather than guessed," and its checklist line "70-80%
+  humidity, 75-85°F temperature." Tank setup guide: "Maintain 75 to 85%
+  relative humidity," and its FAQ "75 to 85% relative humidity, checked
+  on a hygrometer." Neither page's Sources block states a figure that
+  settles it: the tank setup guide cites the Land Hermit Crab Owners
+  Society basics page, which was opened and gives no numeric humidity
+  range at all, and Crab Street Journal's humidity article, which
+  returns 403 to a fetch. A search of the wider husbandry literature
+  puts the consensus at roughly 70 to 85% with a floor around 65%, which
+  contains both figures and contradicts neither. Decided by topic
+  ownership under the batch prompt's tiebreak: the tank setup guide is
+  the page whose subject is humidity, so 75 to 85% wins and the hub
+  follows. No deep dive changed. Nothing to fact-check further.
+- Spare shells. Hub: "always have 2 to 3 spare empty shells per crab,"
+  repeated in the checklist and in a hub FAQ. Tank setup guide: "Offer
+  multiple natural, unpainted shells per crab, ideally 3 to 5 or more."
+  Enrichment guide: "Provide several shells per crab, across a range of
+  sizes and opening shapes." The two deep dives agree with each other
+  and only the hub disagreed. Tank setup wins on topic ownership; hub
+  now copies it.
+- Substrate depth. Hub: "a sand and coconut fiber mix at least three
+  times the crab's body length," and the checklist "(3x crab body
+  length)." Tank setup guide: "at least 6 inches, or about 3 times the
+  height of your largest crab." Body length and height are different
+  measurements on this animal. Tank setup wins; hub now copies both
+  halves of that sentence, the inches and the multiple, rather than
+  merging them.
+- Tank price. Hub cost table: "10-20+ gallon tank (for a group) $60 to
+  $120." Cost guide table: "10-gallon tank (2 to 3 small crabs) | $30 -
+  $100." The hub's cost tables are gone with the router rewrite, so the
+  cost guide's figures are now the only ones on the site.
+- Lifespan, not a real conflict. Hub FAQ: "In the wild, land hermit
+  crabs can live 20 to 30 years or more... captive lifespans of a decade
+  or more are genuinely achievable." Cost guide: "Hermit crabs can live
+  10 to 20 years or more when kept well." One is a wild figure and one
+  is a captive figure. `check-species-numbers` groups them under
+  `lifespan | years` and flags them; they answer different questions.
+  The hub's Lifespan row now carries the cost guide's captive figure
+  with a source, and the wild figure stays where it belongs, in the
+  encyclopedia entry and the hub's funFact.
+
+Deep dives against each other: no number disagreements. Substrate depth
+appears on three pages and agrees each time. Shell counts agree between
+tank setup and enrichment. Molt duration agrees across handling ("several
+weeks up to around three months"), health ("weeks-long"), and the shared
+invertebrate molting guide ("Several weeks buried, depending on size").
+Diet appears in both the tank setup guide and the enrichment guide, but
+they are not the same aside: tank setup says what to feed, enrichment
+says to scatter it rather than bowl it. The species has no feeding guide
+to move either into, so both stay and no pointer was created.
+
+Gaps, each checked against the sidebar's Health and More list (the
+invertebrate molting guide, the invertebrate pesticide hazards guide,
+the invertebrate emergency and travel guide, and the four unusual pets
+overview) before being called real:
+
+- Quarantine. The health guide says to "quarantine and isolate new
+  crabs" and never gives a duration, a container, or a criterion for
+  ending it. Every pet hermit crab is wild-caught by that page's own
+  account, so this is the gap that matters most. There is no invertebrate
+  quarantine guide in the shared list. Real gap, not fixable with a link.
+- Mites. The health guide names mites and mold and gives no procedure.
+  Not covered by any shared guide. Real gap.
+- Saltwater strength. The tank setup guide says "marine saltwater made
+  from an aquarium salt mix, never table salt" with no ratio or target.
+  Real gap, minor.
+- Choosing a crab in a shop. Nothing in the set says what to look at.
+  Real gap, given the wild-caught framing.
+- Sexing. The legacy hub carried a FAQ on gonopores; the router rewrite
+  drops the old FAQs by rule, and no deep dive covers it. Now uncovered
+  anywhere in the set. Noted rather than fixed, since inventing a sexing
+  section is outside a fix pass.
+- Not real: molting duration (handling guide plus the shared molting
+  guide), power outages and travel (the shared invertebrate emergency
+  guide, whose hermit crab row calls this species "the real exception in
+  the group"), household pesticides (the shared pesticide guide).
+
+Stranded questions, where a page raised something another page answers
+without saying so:
+
+- The health guide's dehydration section ended "covered in more detail in
+  the tank setup guide," naming a page and not linking it. Fixed.
+- The cost guide's "Most hermit crab health problems trace straight back
+  to that gap." named a whole page and went nowhere. Fixed.
+- The enrichment guide's "Depth should let the largest crab bury
+  completely with room to spare." leaves the reader without a number the
+  tank setup guide states in inches. Fixed.
+- The tank setup guide's heat mat warning turns on a crab "buried or
+  molting underneath" without saying how long that lasts. Fixed with a
+  link to the shared molting guide rather than to the handling guide,
+  because the tank setup guide's one allowed sibling link is spent.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Molting is a vulnerable, weeks-long underground process" | Handling guide | Rewritten to the router shape instead; the routes carry it |
+| Encyclopedia | "they can live for decades with proper care" | Cost guide | Skipped, encyclopedia out of scope |
+| Cost | "Most hermit crab health problems trace straight back to that gap." | Health issues guide | Added |
+| Handling | "The real warning signs of a genuine problem are a strong, rotten odor, or a body that's gone limp or fallen out of the shell entirely." | Health issues guide | Skipped: the page already carries three in-body links and the sentence sits in the Takeaway, where a link reads as a nav bar |
+| Health issues | "matter so much in this species' housing, covered in more detail in the tank setup guide." | Tank setup guide | Added, and the self-reference clause went with it |
+| Tank setup | "a crab that's buried or molting underneath" | Invertebrate molting guide | Added (shared class guide, does not count against the sibling limit) |
+| Enrichment | "Depth should let the largest crab bury completely with room to spare." | Tank setup guide | Added |
+
+Trust: nothing read as invented. The 70-to-80 against 75-to-85 split was
+the one that mattered, because humidity is the number this species hangs
+on and the hub was the first page a reader lands on. The sentence that
+most convinced the reader a keeper wrote this, from the enrichment guide:
+"Do not supply one spare shell for a group, because that creates
+competition over a resource the research shows they weigh heavily."
+
+Reader's two changes: stop the hub restating the setup guide's numbers
+(done, router rewrite), and give the health guide's quarantine advice a
+duration (open, needs research and new sourced text, not a fix-pass edit).
+
+Encyclopedia: checked the hermit crab entry in
+src/lib/data/encyclopedia/invertebrates.js against every deep-dive
+figure. Adult size "Up to 4 inches (10 cm) across, including legs" is
+not stated by any deep dive, so the hub's Adult size row cites it with
+no source, as the rules allow. Wild lifespan "20-30+ years in the wild"
+does not conflict with the cost guide's captive "10 to 20 years or more
+when kept well"; they are different questions and both stand. Difficulty
+is "Intermediate", which the hub now matches. Scientific name, origin,
+habitat, wild diet, and the history section carry nothing a deep dive
+contradicts. Nothing was changed in the encyclopedia file.
+
+Fixed the same day: the hub rewritten to the router shape (four hub
+figures retired, none of them the winner in any conflict); four links
+added as listed above; one self-reference clause removed from the health
+guide; one "actually" cut from a cost guide sentence the new link
+lengthened, so the intensifier-per-section limit still holds. No
+lastUpdated bumps: every deep-dive edit was a link or a self-reference
+removal, and no fact or number in any deep dive changed.
+
+Open: the quarantine duration, the mite procedure, the saltwater ratio,
+what to look at when buying a crab, and sexing, all of which need
+research and new sourced text rather than a link or a number correction.
+Also noted: the router rewrite drops the hub's `costs` block, so the
+three affiliate products whose `covers` strings matched the old hub cost
+table ("Marine salt mix (saltwater pool)", "Spare shells (2-3 per crab)",
+the Fluker's substrate) are now reachable only from /gear and from the
+prose links that already carry them. `check-cost-coverage` does not fail
+on it, and the same is true of every species reconciled in batches A to
+C, so it is recorded rather than treated as a defect.
