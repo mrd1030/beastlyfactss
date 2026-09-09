@@ -340,7 +340,7 @@
     "slug": "ackie-monitor-handling-guide",
     "title": "How to Handle an Ackie Monitor",
     "seoTitle": "How to Handle an Ackie Monitor Safely",
-    "excerpt": "Ackie monitors are a different kind of lizard to interact with compared to the sit-and-bask species already covered on this site, expect a completely different level of energy than a bearded dragon or blue-tongued skink.",
+    "excerpt": "Ackie monitors are a different kind of lizard to interact with compared to the sit-and-bask lizards most keepers start with, expect a completely different level of energy than a bearded dragon or blue-tongued skink.",
     "date": "2026-07-16",
     "category": "Reptiles",
     "categories": [
@@ -358,7 +358,7 @@
     "image": "/assets/images/ackie-monitor-handling.jpg",
     "imageAlt": "Ackie monitor confidently climbing onto an owner's hand during a tong-feeding session",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-16",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -388,8 +388,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 6,
+    "sourceCount": 5,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -436,7 +436,7 @@
       },
       {
         "q": "What causes impaction in ackie monitors?",
-        "a": "Inappropriate substrate ingestion or temperatures too low to support proper digestion. It can become a genuine emergency if severe, and it connects directly to the substrate and temperature choices covered in the tank setup guide."
+        "a": "Inappropriate substrate ingestion or temperatures too low to support proper digestion. It can become a genuine emergency if severe, and it connects directly to the substrate and temperature choices."
       },
       {
         "q": "What causes respiratory infection in ackie monitors?",
@@ -666,7 +666,7 @@
     "faqs": [
       {
         "q": "Is there enrichment research on African fat-tailed geckos?",
-        "a": "No. Nothing has been published on Hemitheconyx caudicinctus. The nearest evidence is the leopard gecko work, and the two are eublepharids, the same family, which makes this one of the shorter borrows on this site."
+        "a": "No. Nothing has been published on Hemitheconyx caudicinctus. The nearest evidence is the leopard gecko work, and the two are eublepharids, the same family, which makes this one of the shorter borrows anyone has to make."
       },
       {
         "q": "What did the leopard gecko study rank?",
@@ -968,7 +968,7 @@
     "slug": "african-grey-parrot-cost-guide",
     "title": "How Much Does an African Grey Parrot Really Cost?",
     "seoTitle": "African Grey Price: $1,000 to $4,000, Plus $500+ Setup",
-    "excerpt": "African grey parrots are one of the most expensive pets covered on this site, and the purchase price is just the entry fee for a decades-long commitment.",
+    "excerpt": "An African grey parrot is an expensive bird to buy, and the purchase price is just the entry fee for a decades-long commitment.",
     "date": "2026-07-17",
     "category": "Birds",
     "categories": [
@@ -1127,13 +1127,13 @@
     "image": "/assets/images/african-grey-parrot-feeding.jpg",
     "imageAlt": "African grey parrot eating formulated pellets and fresh vegetables",
     "emoji": "🦜",
-    "lastReviewed": "2026-08-10",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What should make up most of an African grey's diet?",
-        "a": "Pellets, at 75 to 80% of daily intake per VCA Animal Hospitals. Fresh fruit and vegetables make up most of the remaining 20 to 40%, with fruit itself held closer to 10%. Dark leafy greens, broccoli, squash, and peppers are good choices."
+        "a": "Pellets, at 75 to 80% of daily intake per VCA Animal Hospitals. Fresh vegetables make up most of the remaining 20 to 25%, with fruit held to 10% or less. Dark leafy greens, broccoli, squash, and peppers are good choices."
       },
       {
         "q": "How often should I feed my African grey parrot?",
@@ -1238,7 +1238,7 @@
     "slug": "african-grey-parrot-health-issues-guide",
     "title": "Common African Grey Parrot Health Issues and What Causes Them",
     "seoTitle": "African Grey Parrot Health Issues: Signs & Causes",
-    "excerpt": "African greys face a mix of nutritional, behavioral, and infectious health risks, and this species is more prone to a couple of specific conditions than the smaller parrots already covered on this site.",
+    "excerpt": "African greys face a mix of nutritional, behavioral, and infectious health risks, and this species is more prone to a couple of specific conditions than smaller parrots are.",
     "date": "2026-07-17",
     "category": "Birds",
     "categories": [
@@ -1843,7 +1843,7 @@
       },
       {
         "q": "Do amano shrimp get parasites or infections the way fish do?",
-        "a": "It happens, but it's less common and less often the explanation than keepers assume. Because invertebrates rely on innate rather than adaptive immunity, stress from poor water quality is usually what allows an opportunistic infection to take hold in the first place, rather than a healthy shrimp simply catching something. Quarantining new wild-caught arrivals, covered in our handling guide, is still the most useful prevention available."
+        "a": "It happens, but it's less common and less often the explanation than keepers assume. Because invertebrates rely on innate rather than adaptive immunity, stress from poor water quality is usually what allows an opportunistic infection to take hold in the first place, rather than a healthy shrimp simply catching something. Quarantining new wild-caught arrivals is still the most useful prevention available."
       }
     ],
     "relatedProducts": [
@@ -1900,7 +1900,7 @@
       },
       {
         "q": "Does a tank need to be full of algae to keep amano shrimp?",
-        "a": "No, and it's the opposite problem that trips people up: a very clean, heavily planted, or newly set up tank often doesn't have enough algae to sustain a group without supplemental feeding from day one. Algae is a starting food supply the shrimp work through, not an unlimited one, our feeding guide covers exactly how to tell when it's running low."
+        "a": "No, and it's the opposite problem that trips people up: a very clean, heavily planted, or newly set up tank often doesn't have enough algae to sustain a group without supplemental feeding from day one. Algae is a starting food supply the shrimp work through, not an unlimited one."
       },
       {
         "q": "What kind of filter is best for amano shrimp?",
@@ -2329,7 +2329,7 @@
     "slug": "angelfish-health-issues-guide",
     "title": "Common Angelfish Health Issues (And What Actually Prevents Them)",
     "seoTitle": "Angelfish Health Issues: Signs & Causes",
-    "excerpt": "Angelfish are hardy in a properly sized, well-maintained tank, and most health problems trace back to water quality and stress, a pattern that holds true across nearly every fish covered on this site.",
+    "excerpt": "Angelfish are hardy in a properly sized, well-maintained tank, and most health problems trace back to water quality and stress.",
     "date": "2026-07-17",
     "category": "Fish",
     "categories": [
@@ -2660,7 +2660,7 @@
     "slug": "argentine-tegu-cost-guide",
     "title": "How Much Does an Argentine Black and White Tegu Really Cost?",
     "seoTitle": "Argentine Tegu Price: $200 to $1,200, Plus $1,000+ Setup",
-    "excerpt": "Argentine tegus are one of the more expensive lizards on this site to set up properly, a direct consequence of just how large this species grows.",
+    "excerpt": "Argentine tegus are one of the more expensive lizards in the pet trade to set up properly, a direct consequence of just how large this species grows.",
     "date": "2026-07-24",
     "category": "Reptiles",
     "categories": [
@@ -2689,11 +2689,11 @@
       },
       {
         "q": "What does the upfront enclosure setup cost?",
-        "a": "Often exceeding $1,000 to $3,000, one of the most expensive setups on this site. The adult enclosure alone is custom built at 8 by 4 by 4 feet minimum and routinely runs into the thousands, then add powerful basking and radiant heat, a thermostat, high output UVB, and 12 to 18 inches of deep substrate."
+        "a": "Often exceeding $1,000 to $3,000. The adult enclosure alone is custom built at 8 by 4 by 4 feet minimum and routinely runs into the thousands, then add powerful basking and radiant heat, a thermostat, high output UVB, and 12 to 18 inches of deep substrate."
       },
       {
         "q": "What are the ongoing monthly costs for an Argentine tegu?",
-        "a": "Roughly $40 to $100 or more a month. The varied omnivore diet runs to rodents, insects, eggs, ground meats, fruit, and vegetables, and heating and lighting a large enclosure takes meaningful electricity. That is considerably more than any other lizard covered on this site."
+        "a": "Roughly $40 to $100 or more a month. The varied omnivore diet runs to rodents, insects, eggs, ground meats, fruit, and vegetables, and heating and lighting a large enclosure takes meaningful electricity."
       },
       {
         "q": "What does vet care cost for an Argentine tegu?",
@@ -2705,7 +2705,7 @@
       },
       {
         "q": "Can I save money with a smaller enclosure?",
-        "a": "No. Undersizing the enclosure compromises the health and behavior of an animal prized for how well it does with proper space and socialization. Our handling guide covers that side of it."
+        "a": "No. Undersizing the enclosure compromises the health and behavior of an animal prized for how well it does with proper space and socialization."
       }
     ],
     "relatedProducts": [
@@ -2816,7 +2816,7 @@
     "image": "/assets/images/argentine-tegu-handling.jpg",
     "imageAlt": "Large black and white Argentine tegu being handled calmly by its owner outside its spacious custom enclosure",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-24",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -2850,8 +2850,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 5,
+    "sourceCount": 4,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -2906,7 +2906,7 @@
       },
       {
         "q": "What's the underlying pattern behind most Argentine tegu health issues?",
-        "a": "Weak UVB and calcium cause MBD, poor temperature or humidity control causes respiratory infection, and keeping a juvenile feeding schedule into adulthood causes obesity. Getting a large scale setup right and adjusting diet as the tegu matures matter more here than with almost any smaller lizard on this site."
+        "a": "Weak UVB and calcium cause MBD, poor temperature or humidity control causes respiratory infection, and keeping a juvenile feeding schedule into adulthood causes obesity. Getting a large scale setup right and adjusting diet as the tegu matures matter more here than with almost any smaller lizard."
       }
     ],
     "relatedProducts": [],
@@ -2969,7 +2969,7 @@
       },
       {
         "q": "Does this affect where I can buy a tegu from?",
-        "a": "Yes, indirectly. With Florida's commercial breeding pipeline now closed off and the acquisition ban in place, prospective Florida owners have no legal path to a new pet tegu. Elsewhere, sourcing follows the same captive-bred-is-better guidance covered in our cost guide."
+        "a": "Yes, indirectly. With Florida's commercial breeding pipeline now closed off and the acquisition ban in place, prospective Florida owners have no legal path to a new pet tegu. Elsewhere, captive-bred stock is still the better buy."
       }
     ],
     "relatedProducts": [],
@@ -2988,7 +2988,7 @@
     "slug": "argentine-tegu-tank-setup-guide",
     "title": "Argentine Tegu Enclosure Setup",
     "seoTitle": "Argentine Tegu Enclosure Setup Guide",
-    "excerpt": "Argentine tegu husbandry operates at a different scale than every other lizard covered on this site, this is a big bodied, high energy animal, and the setup needs to reflect that from the start.",
+    "excerpt": "Argentine tegu husbandry operates at a different scale than most pet lizards, this is a big bodied, high energy animal, and the setup needs to reflect that from the start.",
     "date": "2026-07-24",
     "category": "Reptiles",
     "categories": [
@@ -3327,7 +3327,7 @@
       },
       {
         "q": "How often should I rearrange an axolotl's tank?",
-        "a": "Rarely for anything load-bearing. Keep 2 to 3 stable hides that never move, and limit changes to occasionally introducing one new smooth item, or a mild rearrange of non-critical decor about once a month. Frequent full overhauls remove the security the tank is supposed to provide."
+        "a": "Rarely for anything load-bearing. Of the 3 to 4 hides in the tank, keep most of them stable and never moving, and limit changes to occasionally introducing one new smooth item, or a mild rearrange of non-critical decor about once a month. Frequent full overhauls remove the security the tank is supposed to provide."
       },
       {
         "q": "Can axolotls be kept together for enrichment?",
@@ -3564,7 +3564,7 @@
       },
       {
         "q": "Which states ban axolotls?",
-        "a": "California bans them outright under a detrimental-species regulation, with no pet permits issued. New Jersey effectively bans them, listing axolotls among species that may not be kept as pets or sold. Maine requires a permit that isn't typically issued for pet ownership. Washington DC also reportedly bans them under its prohibited-animals rules."
+        "a": "California bans them outright under a detrimental-species regulation, with no pet permits issued. New Jersey effectively bans them, listing axolotls among species that may not be kept as pets or sold. Maine requires a permit that isn't typically issued for pet ownership. Washington DC also reportedly bans them under its prohibited-animals rules. Wyoming and Alabama ban them via the 2025 federal injurious wildlife listing."
       },
       {
         "q": "Why is California so strict about axolotls specifically?",
@@ -3696,7 +3696,7 @@
       },
       {
         "q": "Why does the enclosure material affect the price so much?",
-        "a": "PVC costs more than glass but holds humidity far better, which matters a lot for this species. A 40-gallon glass minimum runs $70 to $200, while a 4x2x2 ft PVC enclosure runs $100 to $450, the difference is worth it for how much easier PVC makes maintaining correct humidity."
+        "a": "PVC costs more than glass but holds humidity far better, which matters a lot for this species. A 40-gallon glass tank runs $70 to $200 but is sized for a juvenile; the 4x2x2 ft PVC enclosure an adult needs runs $100 to $450, and the difference is worth it for how much easier PVC makes maintaining correct humidity."
       },
       {
         "q": "What does routine vet care cost for a ball python?",
@@ -3820,7 +3820,7 @@
     "faqs": [
       {
         "q": "How do I safely thaw frozen prey for my ball python?",
-        "a": "Seal the frozen rodent in a bag and submerge it in warm - not hot - water until it feels warm all the way through, usually 15 to 20 minutes for a medium rat. Never microwave prey: it heats unevenly, which can leave hot spots that burn a snake's mouth while the inside stays frozen."
+        "a": "Thaw it first, either in the refrigerator or sealed in a bag in cool to lukewarm water, changing the water until there is no frozen core left. Then warm it gently before offering, since prey should not be fed cold. Never microwave prey: it heats unevenly, which can leave hot spots that burn a snake's mouth while the inside stays frozen."
       },
       {
         "q": "Is frozen/thawed prey better than live prey?",
@@ -3828,7 +3828,7 @@
       },
       {
         "q": "Is it safe to handle my ball python right after it eats?",
-        "a": "No - wait at least 48 hours before handling. Handling too soon after a meal is one of the most common causes of regurgitation, which is stressful for the snake and nutritionally costly, and repeated episodes can lead to more serious digestive issues over time."
+        "a": "No - wait 48 to 72 hours before handling. Handling too soon after a meal is one of the most common causes of regurgitation, which is stressful for the snake and nutritionally costly, and repeated episodes can lead to more serious digestive issues over time."
       },
       {
         "q": "What size prey should I feed an adult ball python?",
@@ -5031,7 +5031,7 @@
       },
       {
         "q": "Which lives longer, a bearded dragon or a leopard gecko?",
-        "a": "Leopard geckos, somewhat surprisingly given their smaller size - 15 to 20 years is common, sometimes more. Bearded dragons typically live 8 to 12 years, occasionally reaching the high teens with excellent care. Both are a real long-term commitment, but the gecko is the longer one."
+        "a": "Leopard geckos, somewhat surprisingly given their smaller size - 15 to 20 years is common, sometimes more. Bearded dragons typically live 10 to 15 years, occasionally reaching the high teens with excellent care. Both are a real long-term commitment, but the gecko is the longer one."
       },
       {
         "q": "Can a bearded dragon and a leopard gecko be housed together?",
@@ -5495,7 +5495,7 @@
     "image": "/assets/images/betta-fish-tank-setup.jpg",
     "imageAlt": "Heated five gallon betta tank with a sponge filter, plants, and a hide",
     "emoji": "🐠",
-    "lastReviewed": "2026-07-14",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -5558,7 +5558,7 @@
     "image": "/assets/images/betta-fish-vs-goldfish.jpg",
     "imageAlt": "A betta fish and a goldfish side by side for comparison",
     "emoji": "🐠",
-    "lastReviewed": "2026-07-08",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -5568,7 +5568,7 @@
       },
       {
         "q": "Do betta fish and goldfish need the same water temperature?",
-        "a": "No, and the requirements point in opposite directions. Betta fish are tropical and need heated water around 75 to 80 degrees F. Goldfish are coldwater fish that do best around 65 to 72 degrees F and can be stressed by a heater running too warm."
+        "a": "No, and the requirements point in opposite directions. Betta fish are tropical and need heated water around 76 to 82 degrees F. Goldfish are coldwater fish that do best around 65 to 75 degrees F and can be stressed by a heater running too warm."
       },
       {
         "q": "Can I keep two betta fish or two goldfish together?",
@@ -6661,7 +6661,7 @@
     "path": "/content/guides/blue-tongue-skink-cost-guide.mdx",
     "slug": "blue-tongue-skink-cost-guide",
     "title": "How Much Does a Blue-Tongued Skink Really Cost?",
-    "seoTitle": "Blue Tongue Skink Price: $100 to $700+, Setup $400 to $800",
+    "seoTitle": "Blue Tongue Skink Price: $100 to $700+, Setup $330 to $635",
     "excerpt": "Blue-tongued skinks split into two very different price and risk categories depending on where they come from, Northern versus Indonesian, and that gap matters more here than with almost any other reptile.",
     "date": "2026-07-13",
     "category": "Reptiles",
@@ -6681,7 +6681,7 @@
     "image": "/assets/images/blue-tongue-skink-cost.jpg",
     "imageAlt": "Northern and Indonesian blue-tongued skinks illustrating the price and care difference between the two types",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -6699,7 +6699,7 @@
       },
       {
         "q": "What does the upfront setup cost?",
-        "a": "Roughly $400 to $800 for a 4x2x2 ft enclosure (PVC preferred for humidity control), UVB lighting, a heat source and thermostat, substrate, hides, and a water dish. Total initial investment, animal plus setup, commonly lands between $550 and $1,400 depending on which type you choose."
+        "a": "Roughly $330 to $635 for a 4x2x2 ft enclosure (PVC preferred for humidity control), UVB lighting, a heat source and thermostat, substrate, hides, and a water dish. Total initial investment, animal plus setup, commonly lands between $430 and $1,335 depending on which type you choose."
       },
       {
         "q": "How long do blue-tongued skinks live, and how does that affect budgeting?",
@@ -6717,7 +6717,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -6882,7 +6882,7 @@
     "image": "/assets/images/blue-tongue-skink-handling.jpg",
     "imageAlt": "Blue-tongued skink calmly resting across an owner's open hands",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -6904,7 +6904,7 @@
       },
       {
         "q": "What handling mistakes do first-time owners make?",
-        "a": "Reaching in too early, before the skink has acclimated. Touching the head over and over, which makes many skinks defensive. And reading a food-motivated lunge from an enthusiastic eater as aggression."
+        "a": "Reaching in too early, before the skink has acclimated. Grabbing from above, or lifting by the tail, which it can drop. Touching the head repeatedly, which makes many skinks defensive. And reading a food-motivated lunge as aggression."
       }
     ],
     "relatedProducts": [],
@@ -6912,8 +6912,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 7,
+    "sourceCount": 6,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -6942,7 +6942,7 @@
     "image": "/assets/images/blue-tongue-skink-health-issues.jpg",
     "imageAlt": "Blue-tongued skink undergoing a vet exam to check for signs of illness",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -6952,7 +6952,7 @@
       },
       {
         "q": "Why do Indonesian blue-tongued skinks get parasites so often?",
-        "a": "Most Indonesian skinks in the US pet trade are wild-caught, and animals that come in that way commonly arrive carrying parasites. One peer-reviewed study of reptile fecal samples found parasites in over 93% of the animals tested. Northerns are almost all captive-bred, so the risk there is far lower."
+        "a": "Most Indonesian skinks in the US pet trade are wild-caught, and animals that come in that way commonly arrive carrying parasites. Wolf and colleagues, publishing in Acta Veterinaria Scandinavica in 2014, reported a total parasite occurrence of 93.2% across the reptile faecal samples they examined. Northerns are almost all captive-bred, so the risk there is far lower."
       },
       {
         "q": "What treatment do wild-caught skinks need for parasites?",
@@ -6978,7 +6978,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -7008,7 +7008,7 @@
     "image": "/assets/images/blue-tongue-skink-tank-setup.jpg",
     "imageAlt": "Blue-tongued skink enclosure with basking area, hide, and moisture-retentive substrate",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -7026,7 +7026,7 @@
       },
       {
         "q": "Does a blue-tongued skink need UVB?",
-        "a": "Yes, to thrive rather than just survive. A T5 HO bulb in the 10.0 to 12% range across at least half the warm side, swapped every 12 months even while it still lights up, with the skink kept no closer than about 10 inches to it."
+        "a": "Yes, to thrive rather than just survive. A T5 HO bulb anywhere from 5 to 12% output, picked against how high it hangs above the basking area, across at least half the warm side, swapped every 12 months even while it still lights up, with the skink kept no closer than about 10 inches to it."
       },
       {
         "q": "Do I need to quarantine a new blue-tongued skink?",
@@ -7211,7 +7211,7 @@
     "image": "/assets/images/boa-constrictor-feeding.jpg",
     "imageAlt": "A boa constrictor coiled around a frozen-thawed rat offered with feeding tongs",
     "emoji": "🐍",
-    "lastReviewed": "2026-08-14",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -7233,7 +7233,7 @@
       },
       {
         "q": "How soon can I handle my boa after feeding?",
-        "a": "Wait at least a few days after feeding before handling. Disturbance during digestion is a real trigger for regurgitation, a traumatic event that can injure or kill a boa."
+        "a": "Wait at least 48 hours after feeding before handling. Disturbance during digestion is a real trigger for regurgitation, a traumatic event that can injure or kill a boa."
       },
       {
         "q": "Do boa constrictors need vitamin or calcium supplements?",
@@ -7258,7 +7258,7 @@
     "slug": "boa-constrictor-handling-guide",
     "title": "How to Handle a Boa Constrictor Safely: Size Changes Everything",
     "seoTitle": "How to Handle a Boa Constrictor Correctly",
-    "excerpt": "Captive-bred boas are generally docile, and the handling story with this species isn't temperament, it's size, and getting the safety rules right matters more here than with almost any other pet reptile on this site.",
+    "excerpt": "Captive-bred boas are generally docile, and the handling story with this species isn't temperament, it's size, and getting the safety rules right matters more here than with almost any other pet reptile.",
     "date": "2026-07-18",
     "category": "Reptiles",
     "categories": [
@@ -7277,7 +7277,7 @@
     "image": "/assets/images/boa-constrictor-handling.jpg",
     "imageAlt": "Boa constrictor supported across both arms during a handling session",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-18",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -7311,8 +7311,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
-    "headingCount": 7,
+    "sourceCount": 5,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -7666,13 +7666,13 @@
     "image": "/assets/images/box-turtle-cost.jpg",
     "imageAlt": "Eastern box turtle on forest substrate with its shell partly closed, beside enclosure setup gear",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-25",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Is it legal to collect a box turtle from the wild?",
-        "a": "In most of their native US range, no, or only with heavy restriction. Several states prohibit wild collection entirely, with fines running into the thousands of dollars per animal. Both major box turtle species groups are also CITES Appendix II listed, and wild populations are generally declining. For the full state-by-state breakdown, see our dedicated Box Turtle legal guide."
+        "a": "In most of their native US range, no, or only with heavy restriction. Several states prohibit wild collection entirely, with fines running into the thousands of dollars per animal. Both major box turtle species groups are also CITES Appendix II listed, and wild populations are generally declining."
       },
       {
         "q": "How much does the turtle itself cost?",
@@ -7684,7 +7684,7 @@
       },
       {
         "q": "What are the ongoing costs like?",
-        "a": "Moderate. A varied omnivore diet of leafy greens, vegetables, fruit, insects, and earthworms, plus calcium and vitamin supplements and periodic substrate refreshing, makes up the ongoing cost, reasonable relative to the setup investment."
+        "a": "Roughly $40 to $70 monthly: $5 to $11 in greens, $10 to $20 in mealworms and earthworms, a $6 tub of calcium, $10 to $20 in substrate, $2 to $4 toward the next UVB tube, and $8 electricity."
       },
       {
         "q": "What do vet visits typically cost?",
@@ -7692,7 +7692,7 @@
       },
       {
         "q": "How long do box turtles live, and why does that matter for budgeting?",
-        "a": "30 to 40-plus years in captivity, and wild box turtles average around 50. That makes it a multi-decade, potentially lifelong commitment, worth weighing as carefully as the legal sourcing question."
+        "a": "Documented past 60 years of age, with very old individuals reaching more than 100. That makes it a multi-decade, potentially lifelong commitment, worth weighing as carefully as the legal sourcing question."
       }
     ],
     "relatedProducts": [
@@ -7705,8 +7705,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -7775,6 +7775,63 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/box-turtle-feeding-guide.mdx",
+    "slug": "box-turtle-feeding-guide",
+    "title": "Box Turtle Feeding: The Diet That Changes With Age",
+    "seoTitle": "What Do Box Turtles Eat? Diet, Portions, Calcium",
+    "excerpt": "A box turtle starts life as a hunter and finishes it mostly eating plants, which means the diet that keeps a hatchling alive is the wrong diet for the same animal ten years later.",
+    "date": "2026-09-18",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Box Turtle",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Omnivore",
+      "Turtle Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/box-turtle-feeding.jpg",
+    "imageAlt": "A box turtle eating chopped greens and an earthworm from a flat feeding stone",
+    "emoji": "🐢",
+    "lastReviewed": "2026-09-18",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does a box turtle eat?",
+        "a": "Both plants and animals, in a mix that shifts with age. Young turtles up to about four to six years are primarily carnivores, and adults tend to be herbivorous. Veterinary guidance puts the adult split anywhere from about half and half to 60 or 70% dark leafy greens with animal protein making up the rest."
+      },
+      {
+        "q": "How often should a box turtle be fed?",
+        "a": "Juveniles daily, adults less often, though veterinary sources differ on how much less. One allows adults daily or every other day; another gives every two to three days. Every other day is the interval both permit."
+      },
+      {
+        "q": "How much calcium does a box turtle need?",
+        "a": "The two published schedules differ. One dusts vegetables with calcium powder two to three times per week plus a reptile multivitamin-mineral powder weekly. The other dusts once weekly, and asks for a supplement with a minimum 2:1 calcium to phosphorus ratio and no added vitamin D."
+      },
+      {
+        "q": "Which greens should not be the base of a box turtle's salad?",
+        "a": "Two groups, for two different reasons. Swiss chard, spinach and beet greens carry oxalates that inhibit mineral absorption. Cabbage, kale and mustard greens in excess carry goitrogens. Iceberg lettuce and celery sit apart from both, as poor nutritional content. None is banned outright, but none belongs as the staple green."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -7986,7 +8043,7 @@
     "image": "/assets/images/box-turtle-tank-setup.jpg",
     "imageAlt": "Box turtle enclosure with a basking light, deep burrowable substrate, and a soaking dish",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-25",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -7996,7 +8053,7 @@
       },
       {
         "q": "What temperature does a box turtle enclosure need?",
-        "a": "An indoor heat source giving a warm basking zone and a gradient down to a cool end. Below about 70°F outdoors, this species should come inside."
+        "a": "An indoor heat source giving a warm basking zone and a gradient down to a cool end. VCA puts the basking zone at 90 to 100°F, the cooler end near 70 to 75°F, and 65 to 70°F overnight with no added heat or light. Below 60°F outdoors, this species should come inside."
       },
       {
         "q": "How humid should a box turtle enclosure be?",
@@ -8027,8 +8084,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 7,
+    "sourceCount": 4,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -8299,7 +8356,7 @@
     "slug": "bristlenose-pleco-handling-guide",
     "title": "Bristlenose Plecos Aren't Handled, and They're Genuinely Hard to Catch",
     "seoTitle": "Bristlenose Pleco Behavior and Handling Guide",
-    "excerpt": "A bristlenose pleco is an observation animal like every fish on this site, but this species adds a wrinkle: it's difficult to catch when you need to, which is worth knowing before you buy one.",
+    "excerpt": "A bristlenose pleco is an observation animal, not one you handle, but this species adds a wrinkle: it's difficult to catch when you need to, which is worth knowing before you buy one.",
     "date": "2026-09-15",
     "category": "Fish",
     "categories": [
@@ -8324,7 +8381,7 @@
     "faqs": [
       {
         "q": "Do you handle a bristlenose pleco?",
-        "a": "No. Like every fish covered on this site, a bristlenose pleco is an observation animal, not one you handle. What matters with this species is understanding its role in a tank, a quiet, nocturnal bottom dweller, and knowing how to move it safely on the rare occasions you need to."
+        "a": "No. A bristlenose pleco is an observation animal, not one you handle. What matters with this species is understanding its role in a tank, a quiet, nocturnal bottom dweller, and knowing how to move it safely on the rare occasions you need to."
       },
       {
         "q": "Can you catch a bristlenose pleco with a regular fish net?",
@@ -8656,7 +8713,7 @@
       },
       {
         "q": "Is a single budgie okay without a cage mate?",
-        "a": "It can be, provided the owner supplies the social interaction a cage mate would otherwise cover, daily out-of-cage time, talking, and hands-on engagement. A cage mate helps with loneliness specifically but doesn't substitute for foraging or destructible enrichment either way."
+        "a": "Not especially well on its own. A solo budgie needs the owner to supply substantial daily interaction, out-of-cage time, talking, and hands-on engagement, to make up for the flock companion it's missing. A cage mate helps with loneliness specifically but doesn't substitute for foraging or destructible enrichment either way."
       }
     ],
     "relatedProducts": [
@@ -8671,6 +8728,63 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1600,
     "imageHeight": 1200
+  },
+  {
+    "path": "/content/guides/budgie-feeding-guide.mdx",
+    "slug": "budgie-feeding-guide",
+    "title": "Budgie Feeding: The Squeak That Means Iodine",
+    "seoTitle": "Budgie Feeding: Pellets, Seed, Iodine and Grit",
+    "excerpt": "A budgie on seed will pick out the millet and leave the rest, and the deficiency that follows has a sound: a click or a squeak on every breath, in and out.",
+    "date": "2026-10-03",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Budgie",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Bird Diet",
+      "Iodine",
+      "Pellets"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/budgie-feeding.jpg",
+    "imageAlt": "A budgie eating pellets from a ceramic dish with leafy greens clipped to the cage bars",
+    "emoji": "🦜",
+    "lastReviewed": "2026-10-03",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much of a budgie's diet should be pellets?",
+        "a": "Most of it. Veterinary guidance puts a formulated pellet at 60 to 80% of daily intake, with vegetables and a little fruit making up 20 to 25% at most. Seed is the part that shrinks, not the part everything else supplements."
+      },
+      {
+        "q": "Why do budgies get goiter?",
+        "a": "Because many seeds are low in iodine, and iodine is a building block of thyroid hormone. Budgies are unusually prone to thyroid trouble compared with other pet birds, so a seed-fed budgie with no supplement is the classic case. Formulated diets supply iodine in adequate amounts, which is why the diet itself is the prevention."
+      },
+      {
+        "q": "What does budgie goiter sound like?",
+        "a": "A click, a wheeze, or persistent squeaking heard on both the in-breath and the out-breath. The enlarged thyroid sits where the windpipe branches and presses on it, so the noise comes from the airway rather than the voice. Any budgie wheezing on both breaths is worth a vet visit."
+      },
+      {
+        "q": "Do budgies need grit?",
+        "a": "No. A budgie shells a seed and swallows only the kernel, so it has no use for grit in the way a bird that swallows seed whole does. Offered freely, grit can be eaten in quantity and cause a dangerous gastrointestinal obstruction."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/budgie-handling-guide.mdx",
@@ -8876,7 +8990,7 @@
     "image": "/assets/images/budgie-vs-cockatiel.jpg",
     "imageAlt": "A budgie and a cockatiel side by side for comparison",
     "emoji": "🦜",
-    "lastReviewed": "2026-07-08",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -8894,7 +9008,7 @@
       },
       {
         "q": "Which lives longer, a budgie or a cockatiel?",
-        "a": "Cockatiels, usually by a decade or more. A well-kept budgie typically lives 5 to 10 years. A well-kept cockatiel commonly lives 15 to 25 years, which is a meaningfully bigger long-term commitment to weigh before choosing."
+        "a": "Cockatiels, usually. A well-kept budgie typically lives 7 to 15 years. A well-kept cockatiel commonly lives 15 to 25 years, which is a meaningfully bigger long-term commitment to weigh before choosing."
       },
       {
         "q": "Which bird needs a bigger cage, budgie or cockatiel?",
@@ -9074,7 +9188,7 @@
       },
       {
         "q": "What are the ongoing monthly costs?",
-        "a": "Roughly $15 to $30 a month. That is one appropriately sized rodent a week, substrate, and modest electricity. Few reptiles on this site are cheaper to feed."
+        "a": "Roughly $15 to $30 a month. That is one appropriately sized rodent a week, substrate, and modest electricity. Few reptiles are cheaper to feed."
       },
       {
         "q": "How much does vet care cost for a California kingsnake?",
@@ -9135,7 +9249,7 @@
     "faqs": [
       {
         "q": "Is there research on kingsnake enrichment?",
-        "a": "No. Nothing has been published on Lampropeltis californiae. The closest evidence is the corn snake work, which is the same family, and the ratsnake enrichment study, which is closer still in the older taxonomy. Both are covered in our corn snake enrichment guide."
+        "a": "No. Nothing has been published on Lampropeltis californiae. The closest evidence is the corn snake work, which is the same family, and the ratsnake enrichment study, which is closer still in the older taxonomy."
       },
       {
         "q": "What does the corn snake research show?",
@@ -9151,7 +9265,7 @@
       },
       {
         "q": "Should kingsnakes be housed together?",
-        "a": "Never. California kingsnakes are ophiophagous, meaning they eat other snakes, including their own species. This is one of the few animals on this site where cohabitation is a genuine safety issue rather than a welfare preference."
+        "a": "Never. California kingsnakes are ophiophagous, meaning they eat other snakes, including their own species. This is one of the few pet reptiles where cohabitation is a genuine safety issue rather than a welfare preference."
       },
       {
         "q": "What is the cheapest enrichment for a kingsnake?",
@@ -9197,7 +9311,7 @@
     "image": "/assets/images/california-kingsnake-handling.jpg",
     "imageAlt": "California kingsnake with banded pattern coiled on aspen substrate",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-25",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -9231,8 +9345,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 5,
+    "sourceCount": 5,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -9512,7 +9626,7 @@
     "slug": "canary-handling-guide",
     "title": "Canaries Aren't Really Handled, and That's the Point",
     "seoTitle": "Canary Handling: Why This Bird Isn't Hands-On",
-    "excerpt": "Every other bird covered on this site, budgie, cockatiel, green-cheeked conure, lovebird, African grey, cockatoo, can potentially be hand-tamed to some degree. Canaries break that pattern entirely, and it's worth understanding why before you bring one home expecting a different kind of pet.",
+    "excerpt": "Budgies, cockatiels, green-cheeked conures, lovebirds, African greys, and cockatoos can all potentially be hand-tamed to some degree. Canaries break that pattern entirely, and it's worth understanding why before you bring one home expecting a different kind of pet.",
     "date": "2026-07-26",
     "category": "Birds",
     "categories": [
@@ -9531,7 +9645,7 @@
     "image": "/assets/images/canary-handling.jpg",
     "imageAlt": "Yellow male canary singing while perched in a wide flight cage",
     "emoji": "🐤",
-    "lastReviewed": "2026-07-26",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -9565,9 +9679,9 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 4,
-    "ledeMatchesExcerpt": false,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -10646,7 +10760,7 @@
     "slug": "cherry-shrimp-cost-guide",
     "title": "How Much Does Cherry Shrimp Ownership Really Cost?",
     "seoTitle": "Cherry Shrimp Price: $4 to $8 Each, Plus $45 to $110 Setup",
-    "excerpt": "Cherry shrimp are one of the cheapest animals on this site to buy, but the cost story isn't the shrimp, it's how fast a starting group turns into a colony you never budgeted for.",
+    "excerpt": "Cherry shrimp are cheap to buy, but the cost story isn't the shrimp, it's how fast a starting group turns into a colony you never budgeted for.",
     "date": "2026-09-16",
     "category": "Invertebrates",
     "categories": [
@@ -10817,11 +10931,11 @@
       },
       {
         "q": "Is it that easy to overfeed cherry shrimp?",
-        "a": "Yes, more than almost any other animal on this site. Cherry shrimp themselves won't overeat, but their stomachs are tiny, so it takes very little uneaten food to start decomposing and spiking ammonia and nitrite, both of which are highly toxic to shrimp even in small amounts. When in doubt, underfeed rather than overfeed."
+        "a": "Yes, more than most animals. Cherry shrimp themselves won't overeat, but their stomachs are tiny, so it takes very little uneaten food to start decomposing and spiking ammonia and nitrite, both of which are highly toxic to shrimp even in small amounts. When in doubt, underfeed rather than overfeed."
       },
       {
         "q": "Why do cherry shrimp need calcium in their diet?",
-        "a": "To build a solid new shell after every molt, which for an adult happens roughly every 3 to 4 weeks according to Shrimp Science, more often for younger, faster-growing shrimp. A calcium- or protein-poor diet weakens the new exoskeleton and is one of the more common causes of a failed molt, covered in more detail in our health issues guide."
+        "a": "To build a solid new shell after every molt, which for an adult happens roughly every 3 to 4 weeks according to Shrimp Science, more often for younger, faster-growing shrimp. A calcium- or protein-poor diet weakens the new exoskeleton and is one of the more common causes of a failed molt."
       },
       {
         "q": "Should I remove a shrimp's shed shell after it molts?",
@@ -11196,7 +11310,7 @@
     "image": "/assets/images/chinchilla-feeding.jpg",
     "imageAlt": "Chinchilla eating hay and a pellet from a small dish",
     "emoji": "🐹",
-    "lastReviewed": "2026-08-01",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -11676,7 +11790,7 @@
     "slug": "cockatiel-cost-guide",
     "title": "How Much Does a Cockatiel Really Cost?",
     "seoTitle": "Cockatiel Price: $75 to $250, Plus $320 to $860 Setup",
-    "excerpt": "Cockatiels are relatively affordable to buy, but the budgeting story here is how long you'll be caring for one. A 15 to 20 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
+    "excerpt": "Cockatiels are relatively affordable to buy, but the budgeting story here is how long you'll be caring for one. A 10 to 15 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
     "date": "2026-07-15",
     "category": "Birds",
     "categories": [
@@ -11695,7 +11809,7 @@
     "image": "/assets/images/cockatiel-cost.jpg",
     "imageAlt": "Cockatiel perched beside its cage and food dishes",
     "emoji": "🦜",
-    "lastReviewed": "2026-07-15",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -11713,7 +11827,7 @@
       },
       {
         "q": "Why does a cockatiel's cost add up more over time than the purchase price suggests?",
-        "a": "Cockatiels live 15 to 20 years, so this is a long-term financial commitment even though the entry cost is modest. The cage quality you invest in upfront and how seriously you take avian vet care matter far more to lifetime cost than the price of the bird itself."
+        "a": "Cockatiels live 10 to 15 years, so this is a long-term financial commitment even though the entry cost is modest. The cage quality you invest in upfront and how seriously you take avian vet care matter far more to lifetime cost than the price of the bird itself."
       }
     ],
     "relatedProducts": [
@@ -11835,7 +11949,7 @@
       },
       {
         "q": "Should a cockatiel's diet be mostly seeds or pellets?",
-        "a": "Pellets. A formulated pellet diet making up roughly 75 to 80% of intake is the figure most veterinary sources point to, with fresh vegetables and fruit filling another 20 to 25% and seeds kept to a small minority. All-seed diets are a well-documented cause of malnutrition in pet cockatiels."
+        "a": "Pellets. A formulated pellet diet making up roughly 75 to 80% of intake is the figure most veterinary sources point to, with fresh vegetables and fruit filling no more than another 20 to 25% and seeds kept to a small minority on top of that. All-seed diets are a well-documented cause of malnutrition in pet cockatiels."
       },
       {
         "q": "What foods are toxic to cockatiels?",
@@ -12010,7 +12124,7 @@
     "image": "/assets/images/cockatiel-tank-setup.jpg",
     "imageAlt": "Cockatiel cage with varied perches and feeding dishes",
     "emoji": "🦜",
-    "lastReviewed": "2026-07-15",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -12024,7 +12138,7 @@
       },
       {
         "q": "What's the ideal diet balance for a cockatiel?",
-        "a": "Pellets should make up 60 to 80% of the diet, fresh vegetables another 20 to 30%, and seeds 10% or less as an occasional treat rather than the foundation. A seed-only diet is directly linked to the nutritional diseases covered in our health issues guide."
+        "a": "Pellets should make up roughly 75 to 80% of the diet, fresh vegetables and fruit no more than another 20 to 25%, and seeds a small minority rather than the foundation. A seed-only diet is directly linked to nutritional disease."
       },
       {
         "q": "Why is the kitchen dangerous for a pet cockatiel?",
@@ -12137,7 +12251,7 @@
     "image": "/assets/images/cockatoo-cost.jpg",
     "imageAlt": "Umbrella cockatoo perched near its cage, illustrating the scale of investment this species requires",
     "emoji": "🦜",
-    "lastReviewed": "2026-07-26",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -12163,7 +12277,7 @@
       },
       {
         "q": "How long do cockatoos live, and why does that matter for cost?",
-        "a": "40 to 70-plus years, and Umbrella cockatoos commonly live 50 to 70. That is a lifelong commitment that may need planning across more than one owner's lifetime, and the number worth sitting with before any other cost."
+        "a": "40 to 60 years is typical, with some individuals living into their 70s or beyond. That is a lifelong commitment that may need planning across more than one owner's lifetime, and the number worth sitting with before any other cost."
       }
     ],
     "relatedProducts": [
@@ -12215,12 +12329,12 @@
         "a": "Partly, and less definitively than is often claimed. Van Zeeland and colleagues, reviewing the field in Applied Animal Behaviour Science, list environmental enrichment, foraging enrichment and positive and negative reinforcement together among the behavioral interventions for feather damaging behavior. They do not rank one above the others. A 2014 study on sulphur-crested cockatoos did compare medication, socialization, training and feeding enrichment, but its full text is not openly available, so this guide does not repeat the claim that training outperformed the rest."
       },
       {
-        "q": "Why did training work best?",
-        "a": "The authors put it down to the social attention and mental stimulation the sessions provided, rather than anything about the specific behaviors being taught. For a species this social and this intelligent, structured one-to-one time appears to be the active ingredient."
+        "q": "Does training work better than other enrichment for plucking?",
+        "a": "The evidence doesn't clearly say so. A widely repeated 2014 study reportedly found training more effective than medication, socialization, or feeding enrichment, but its full text isn't openly available to verify that claim, so treat it as unconfirmed rather than settled. What the accessible research agrees on is that environmental enrichment, foraging enrichment, and reinforcement-based training are all legitimate interventions, without one proven best."
       },
       {
         "q": "How long do wild parrots spend feeding?",
-        "a": "Up to six hours a day searching for, selecting and manipulating food. A captive bird with a full bowl finishes in minutes, which leaves a very large hole in the day that has to be filled with something."
+        "a": "Long enough that a captive bird with a full bowl, finished in minutes, is left with a very large hole in the day. The specific hour figures that circulate for wild foraging time don't trace to a source worth citing, so this guide isn't putting a number on it, but the shape of the gap between a wild day and a bowl-fed one is real and well documented."
       },
       {
         "q": "Does foraging enrichment improve feathers?",
@@ -12275,13 +12389,13 @@
     "image": "/assets/images/cockatoo-feeding.jpg",
     "imageAlt": "A cockatoo eating fresh vegetables and pellets from a food dish",
     "emoji": "🦜",
-    "lastReviewed": "2026-08-15",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What should make up most of a cockatoo's diet?",
-        "a": "Pellets, at 75 to 80% of the daily diet. Fresh fruits and vegetables cover the other 20 to 40%: dark leafy greens, carrots, bell peppers, broccoli, squash, and peas. Seeds and nuts are high-fat treats, not the foundation."
+        "a": "Pellets, at 75 to 80% of the daily diet. Fresh fruits and vegetables cover no more than another 20 to 40%: dark leafy greens, carrots, bell peppers, broccoli, squash, and peas. Seeds and nuts are high-fat treats, not the foundation."
       },
       {
         "q": "How much food does a cockatoo need daily?",
@@ -12336,7 +12450,7 @@
     "image": "/assets/images/cockatoo-handling.jpg",
     "imageAlt": "Cockatoo perched on an owner's arm during a calm handling session",
     "emoji": "🦜",
-    "lastReviewed": "2026-07-26",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -12366,8 +12480,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
-    "headingCount": 7,
+    "sourceCount": 5,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -12377,7 +12491,7 @@
     "slug": "cockatoo-health-issues-guide",
     "title": "Common Cockatoo Health Issues and What Causes Them",
     "seoTitle": "Cockatoo Health Issues: Signs & Causes",
-    "excerpt": "Cockatoo health problems split fairly evenly between physical and behavioral, and this is one of the few species on this site where the behavioral issue is common enough to belong right alongside the medical ones.",
+    "excerpt": "Cockatoo health problems split fairly evenly between physical and behavioral, and the behavioral issue is common enough to belong right alongside the medical ones.",
     "date": "2026-07-26",
     "category": "Birds",
     "categories": [
@@ -12757,7 +12871,7 @@
     "image": "/assets/images/conure-cost.jpg",
     "imageAlt": "Green cheek conure perched beside its cage and foraging toys",
     "emoji": "🦜",
-    "lastReviewed": "2026-07-29",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -12771,7 +12885,7 @@
       },
       {
         "q": "What does a full conure setup cost upfront?",
-        "a": "Roughly $400 to $900 or more, covering a cage (minimum 24x24x30 inches, $150 to $450), perches ($30 to $80), toys and foraging items ($40 to $120), full-spectrum avian UV lighting ($40 to $100), and dishes, cage cover, initial food, and cuttlebone ($30 to $70)."
+        "a": "Roughly $400 to $900 or more, covering a cage (minimum 24x24x30 inches, $100 to $180), perches ($20 to $40), toys and foraging items ($30 to $60), a snuggle pouch or bird tent ($10 to $20), full-spectrum avian UV lighting ($40 to $100), and dishes, water bottle, cage cover, initial food, and cuttlebone ($30 to $70)."
       },
       {
         "q": "What are the ongoing costs for a green cheek conure?",
@@ -12867,6 +12981,63 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 11,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/conure-feeding-guide.mdx",
+    "slug": "conure-feeding-guide",
+    "title": "Conure Feeding: Why the Seed Dish Is the Problem",
+    "seoTitle": "What Do Conures Eat? Pellets, Veg and Portions",
+    "excerpt": "A conure will pick the sunflower seeds out of a mixed dish and leave the rest, which is the whole problem in one behavior: the bird chooses the fattiest, least complete thing in front of it.",
+    "date": "2026-09-15",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Conure",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Bird Diet",
+      "Pellets",
+      "Parrot Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/conure-feeding.jpg",
+    "imageAlt": "A green cheek conure eating pellets from a steel bowl beside a dish of chopped vegetables",
+    "emoji": "🦜",
+    "lastReviewed": "2026-09-15",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much of a conure's diet should be pellets?",
+        "a": "Most of it. VCA Animal Hospitals puts pellets at approximately 75 to 80% of the bird's diet, and Lafeber gives 80% for a green cheek specifically, counting foraging formats like Nutri-Berries and Avi-Cakes as the same nutritionally balanced base. Both leave the remainder to fresh vegetables and greens with a smaller share of fruit."
+      },
+      {
+        "q": "What vegetables should a conure eat every day?",
+        "a": "Dark leafy greens and vegetables should be offered daily, not saved for a weekend treat. VCA gives vegetables and greens 20 to 40% of daily intake and caps fruit at around 10%, so the fresh share leans heavily toward vegetables. Bell pepper, broccoli, carrot, cooked sweet potato, snap peas and leafy greens are the usual working list."
+      },
+      {
+        "q": "What foods are toxic to a conure?",
+        "a": "Avocado and onion top the list, and veterinary guidance rules both out entirely for any parrot. Then chocolate, alcohol, anything containing caffeine, and very salty foods such as chips, pretzels and popcorn."
+      },
+      {
+        "q": "What goes wrong on an all-seed diet?",
+        "a": "Four separate things, all named by the Merck Veterinary Manual: vitamin A deficiency, metabolic bone disease from a diet short on calcium and vitamin D and heavy on phosphorus, goiter from iodine deficiency, and obesity. Four mechanisms, one shared cause, which is why the fix is dietary."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -13159,7 +13330,7 @@
     "image": "/assets/images/corn-snake-cost.jpg",
     "imageAlt": "Corn snake in a fully equipped enclosure with hides and branches",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-11",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -13189,8 +13360,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
-    "headingCount": 5,
+    "sourceCount": 3,
+    "headingCount": 6,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1280,
     "imageHeight": 720
@@ -13521,7 +13692,7 @@
     "image": "/assets/images/corn-snake-tank-setup.jpg",
     "imageAlt": "Corn snake enclosure with hides, water bowl, and climbing branches",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-11",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -13585,13 +13756,13 @@
     "image": "/assets/images/corn-snake-vs-hognose-snake.jpg",
     "imageAlt": "A corn snake and a hognose snake side by side for comparison",
     "emoji": "🐍",
-    "lastReviewed": "2026-08-26",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Are hognose snakes venomous, and is that dangerous to keep as a pet?",
-        "a": "Technically yes, but not in any way that matters for a pet owner. Hognoses have small rear fangs and a mild venom evolved to subdue toads, their main prey in the wild. It's not considered medically significant to humans, typically causing at most minor local swelling on the rare occasion a bite breaks skin, and captive-bred hognoses very rarely bite at all."
+        "a": "Technically yes, but not in any way that matters for a pet owner. Hognoses have small rear fangs and a mild venom evolved to subdue toads, their main prey in the wild. It's not considered medically significant to humans, and captive-bred hognoses very rarely bite at all. The one documented bite case in the literature stayed local: swelling, bruising and mild cellulitis, with no systemic effects."
       },
       {
         "q": "Which is easier to feed, a corn snake or a hognose snake?",
@@ -13599,7 +13770,7 @@
       },
       {
         "q": "Which snake stays smaller, corn snake or hognose?",
-        "a": "Hognose snakes, noticeably. Adult hognoses typically reach 2 to 3.5 feet, while adult corn snakes commonly reach 3 to 5 feet. That size difference also means a hognose can be housed comfortably in a smaller adult enclosure, especially adult males, which stay on the smaller end of that range."
+        "a": "Hognose snakes, noticeably. Adult hognoses typically reach 2 to 3.5 feet, while adult corn snakes commonly reach 3.5 to 5 feet. That size difference also means a hognose can be housed comfortably in a smaller adult enclosure, especially adult males, which stay on the smaller end of that range."
       },
       {
         "q": "Why does my hognose snake play dead?",
@@ -13611,7 +13782,7 @@
       },
       {
         "q": "Do corn snakes or hognose snakes need higher humidity?",
-        "a": "Hognoses run drier. They're an arid-preferring species at 30 to 50% ambient humidity, with just one dedicated humid hide for shedding. Corn snakes sit a bit higher at 40 to 50%. Neither is a high-humidity species compared to something like a ball python, but a hognose is the drier of the two by design, reflecting its native prairie and scrubland habitat."
+        "a": "Hognoses run drier. They're an arid-preferring species at 30 to 50% ambient humidity, with just one dedicated humid hide for shedding. Corn snakes sit a bit higher, with many sources citing a 40 to 60% baseline. Neither is a high-humidity species compared to something like a ball python, but a hognose is the drier of the two by design, reflecting its native prairie and scrubland habitat."
       }
     ],
     "relatedProducts": [
@@ -14058,7 +14229,7 @@
     "image": "/assets/images/crested-gecko-cost.jpg",
     "imageAlt": "Crested gecko in a fully equipped vertical arboreal enclosure",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-12",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -14072,7 +14243,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for a crested gecko?",
-        "a": "Roughly $20 to $30 a month. A complete crested gecko diet powder runs about $20 per bag and typically lasts a single adult around three months, plus modest substrate replacement and minimal electricity."
+        "a": "Roughly $31 to $52 a month. A complete crested gecko diet powder runs about $7 a month averaged out (one $20 bag lasts about three months), plus occasional live insects, substrate replacement, electricity, and amortized UVB bulb and vet costs."
       },
       {
         "q": "How long do crested geckos live, and how does that affect budgeting?",
@@ -14430,7 +14601,7 @@
     "image": "/assets/images/crested-gecko-tank-setup.jpg",
     "imageAlt": "Vertical crested gecko enclosure with branches, vines, and foliage",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-12",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -14444,7 +14615,7 @@
       },
       {
         "q": "What humidity does a crested gecko need?",
-        "a": "60 to 80%, with a daily swing: let it rise at night and drop to around 40 to 50% during the day. That swing prevents mold while still giving your gecko what it needs, maintained with a daily evening misting session."
+        "a": "60 to 80%, with a daily swing: it spikes to 80% or higher right after the evening mist and dries to around 45 to 50% by late afternoon. That swing prevents mold while still giving your gecko what it needs, maintained with a daily evening misting session."
       },
       {
         "q": "Does a crested gecko need UVB?",
@@ -14658,7 +14829,7 @@
       },
       {
         "q": "How long do degus live, and how does that affect the cost math?",
-        "a": "5 to 8 years is typical, and some degus reach 10 to 13. That's longer than many small rodents, the hamster already covered on this site included, so treat a pair as a multi-year and possibly decade-long commitment."
+        "a": "5 to 8 years is typical, and some degus reach 10 to 13. That's longer than many small rodents, the hamster included, so treat a pair as a multi-year and possibly decade-long commitment."
       }
     ],
     "relatedProducts": [
@@ -14874,7 +15045,7 @@
     "slug": "degu-handling-guide",
     "title": "How to Handle a Degu (And Why It Needs a Friend)",
     "seoTitle": "How to Handle a Degu Safely",
-    "excerpt": "Degus are curious, intelligent, social animals, and two facts about this species stand in direct contrast to the hamster already covered on this site, worth understanding clearly before you bring one home.",
+    "excerpt": "Degus are curious, intelligent, social animals, and two facts about this species stand in direct contrast to the hamster, worth understanding clearly before you bring one home.",
     "date": "2026-08-08",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -15156,7 +15327,7 @@
       },
       {
         "q": "What does a proper discus tank setup cost?",
-        "a": "Roughly $600 to $800 for a real 55-gallon setup, tank, strong filtration, heater, substrate, driftwood, and plants, and more once you add an RO/DI unit for hard tap water or step up to a 75-gallon-plus tank. This is one of the pricier community fish setups on this site."
+        "a": "Roughly $600 to $800 for a real 55-gallon setup, tank, strong filtration, heater, substrate, driftwood, and plants, and more once you add an RO/DI unit for hard tap water or step up to a 75-gallon-plus tank."
       },
       {
         "q": "What are the ongoing monthly costs for a discus?",
@@ -15390,7 +15561,7 @@
     "slug": "discus-health-issues-guide",
     "title": "Common Discus Health Issues (And What Actually Prevents Them)",
     "seoTitle": "Discus Health Issues: Signs & Causes",
-    "excerpt": "Discus have a real reputation for being delicate, and most of what backs that up traces to water quality and stress, the same pattern behind most fish health problems on this site, just with a narrower margin for error.",
+    "excerpt": "Discus have a real reputation for being delicate, and most of what backs that up traces to water quality and stress, just with a narrower margin for error than most fish.",
     "date": "2026-09-08",
     "category": "Fish",
     "categories": [
@@ -15415,7 +15586,7 @@
     "faqs": [
       {
         "q": "What causes most discus health problems?",
-        "a": "Water quality and stress, the same pattern behind most fish health issues on this site, just with less margin for error. Discus are more sensitive to ammonia, nitrite, and unstable conditions than a lot of hardier community fish, which is why this isn't a species for an uncycled or newly established tank."
+        "a": "Water quality and stress, the same pattern behind most fish health issues, just with less margin for error. Discus are more sensitive to ammonia, nitrite, and unstable conditions than a lot of hardier community fish, which is why this isn't a species for an uncycled or newly established tank."
       },
       {
         "q": "What is hole-in-the-head disease in discus?",
@@ -16435,7 +16606,7 @@
     "image": "/assets/images/ferret-adrenal-disease.jpg",
     "imageAlt": "Ferret in a cozy indoor habitat, alert and healthy",
     "emoji": "🦡",
-    "lastReviewed": "2026-07-01",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -16449,7 +16620,7 @@
       },
       {
         "q": "Does neutering age really affect adrenal disease risk?",
-        "a": "Research points to a strong association between very early spay or neuter (common in mass pet-trade ferrets) and higher rates of adrenal disease later in life, likely due to how removing gonads early disrupts the hormonal feedback loop. It's an association, not a guaranteed cause, but it's a widely discussed risk factor among exotic vets."
+        "a": "Less than the exact age. Neutering is believed to disrupt the adrenal glands' hormonal feedback loop, and early spay or neuter is the most discussed version of that risk. But Dutch ferrets neutered later, at 12 to 18 months, still developed the disease at a similar gap after neutering, so neutering itself, with light exposure and genetics, appears to matter more than age. An association, not a guaranteed cause."
       },
       {
         "q": "Can male and female ferrets both get adrenal disease?",
@@ -16476,7 +16647,7 @@
     "slug": "ferret-cost-guide",
     "title": "How Much Does a Ferret Really Cost?",
     "seoTitle": "Ferret Price: $75 to $400, Plus $300 to $700 Setup",
-    "excerpt": "Ferrets are moderately priced to buy, but they're the most expensive long-term pet on this site, driven almost entirely by a near-inevitable pattern of costly age-related illness rather than day-to-day care.",
+    "excerpt": "Ferrets are moderately priced to buy, but expensive to keep long-term, driven almost entirely by a near-inevitable pattern of costly age-related illness rather than day-to-day care.",
     "date": "2026-07-13",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -16495,7 +16666,7 @@
     "image": "/assets/images/ferret-cost.jpg",
     "imageAlt": "Ferret sitting next to its cage and everyday supplies",
     "emoji": "🦡",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -16675,7 +16846,7 @@
     "slug": "ferret-handling-guide",
     "title": "How to Handle a Ferret",
     "seoTitle": "How to Handle a Ferret Correctly",
-    "excerpt": "Ferrets are playful, curious, and intensely social, one of the more interactive pets on this site once socialized. The catch is that they explore the world with their mouths.",
+    "excerpt": "Ferrets are playful, curious, and intensely social, one of the more interactive small pets once socialized. The catch is that they explore the world with their mouths.",
     "date": "2026-07-13",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -16919,7 +17090,7 @@
     "slug": "fire-bellied-toad-cost-guide",
     "title": "How Much Does a Fire-Bellied Toad Really Cost?",
     "seoTitle": "Fire-Bellied Toad Price: $10 to $25, Plus $150 to $300 Setup",
-    "excerpt": "Fire-bellied toads are inexpensive, and the setup cost here goes toward something a bit different than most amphibians on this site, real aquatic filtration, not just humidity control.",
+    "excerpt": "Fire-bellied toads are inexpensive, and the setup cost here goes toward something a bit different than most amphibians need, real aquatic filtration, not just humidity control.",
     "date": "2026-07-27",
     "category": "Amphibians",
     "categories": [
@@ -17075,7 +17246,7 @@
     "image": "/assets/images/fire-bellied-toad-handling.jpg",
     "imageAlt": "Oriental fire-bellied toad displaying its red-orange warning belly at the water's edge of a paludarium",
     "emoji": "🐸",
-    "lastReviewed": "2026-07-27",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17109,8 +17280,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 5,
+    "sourceCount": 2,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -17184,7 +17355,7 @@
     "slug": "fire-bellied-toad-tank-setup-guide",
     "title": "Fire-Bellied Toad Enclosure Setup: Half Fish Tank, Half Terrarium",
     "seoTitle": "Fire-Bellied Toad Tank Setup Guide",
-    "excerpt": "Fire-bellied toads need a different kind of setup than most amphibians on this site, real aquatic filtration matters here in a way it doesn't for a more purely terrestrial species.",
+    "excerpt": "Fire-bellied toads need a different kind of setup than most amphibians, real aquatic filtration matters here in a way it doesn't for a more purely terrestrial species.",
     "date": "2026-07-27",
     "category": "Amphibians",
     "categories": [
@@ -17272,7 +17443,7 @@
     "image": "/assets/images/fire-skink-cost.jpg",
     "imageAlt": "Fire skink showing its red, black, and gold banding beside enclosure setup materials",
     "emoji": "🦎",
-    "lastReviewed": "2026-08-11",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17282,11 +17453,11 @@
       },
       {
         "q": "What does a fire skink enclosure setup cost?",
-        "a": "A moderate reptile cost, more affordable than the larger lizards on this site. The list runs to a 36x18x18 inch enclosure, a UVB kit, a heat lamp with thermostat, deep moisture-retentive substrate, hides, and a hygrometer."
+        "a": "Roughly $660 to $720: a 36x18x18 inch enclosure, T5 UVB kit, basking bulb and dome, dimming thermostat, eight or nine bags of coconut fiber, two hides, and a hygrometer. The enclosure and thermostat dominate."
       },
       {
         "q": "What are the ongoing costs of keeping a fire skink?",
-        "a": "Modest. The recurring items are live insects, commonly crickets, roaches, and worms, a calcium and D3 supplement, and periodic substrate replacement. This stays a low-maintenance species to feed month to month."
+        "a": "Roughly $40 to $65 a month: $10 to $25 in feeder insects, a $6 calcium tub every few months, and $22 to $33 for substrate, replaced every three to four months."
       },
       {
         "q": "Should I pay more for a captive-bred fire skink instead of wild-caught?",
@@ -17306,8 +17477,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 8,
+    "sourceCount": 3,
+    "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1600,
     "imageHeight": 1244
@@ -17385,7 +17556,7 @@
     "slug": "fire-skink-handling-guide",
     "title": "How to Handle a Fire Skink (This Isn't the Blue-Tongued Skink)",
     "seoTitle": "How to Handle a Fire Skink Safely",
-    "excerpt": "Fire skinks and blue-tongued skinks share a family name and not much else temperamentally. If you've kept the docile, handleable blue-tongued skink already covered on this site, expect something different here.",
+    "excerpt": "Fire skinks and blue-tongued skinks share a family name and not much else temperamentally. If you've kept the docile, handleable blue-tongued skink, expect something different here.",
     "date": "2026-08-11",
     "category": "Reptiles",
     "categories": [
@@ -17425,7 +17596,7 @@
       },
       {
         "q": "Should I buy a wild-caught or captive-bred fire skink?",
-        "a": "Captive-bred if you can find and afford one. Wild-caught animals are notably skittish and stay flighty longer, while captive-bred individuals tame more readily with patient, gradual handling, covered in more detail in the cost guide."
+        "a": "Captive-bred if you can find and afford one. Wild-caught animals are notably skittish and stay flighty longer, while captive-bred individuals tame more readily with patient, gradual handling."
       }
     ],
     "relatedProducts": [],
@@ -18925,7 +19096,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 3,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -19309,7 +19480,7 @@
     "slug": "gerbil-cost-guide",
     "title": "How Much Does Gerbil Ownership Really Cost?",
     "seoTitle": "Gerbil Price: $5 to $50 Each, Plus $150 to $350 Setup",
-    "excerpt": "Gerbils are one of the more affordable small pets on this site, with one important caveat: like the degu also covered here, you're budgeting for two animals, not one.",
+    "excerpt": "Gerbils are one of the more affordable small pets, with one important caveat: like the degu, you're budgeting for two animals, not one.",
     "date": "2026-08-09",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -19350,7 +19521,7 @@
       },
       {
         "q": "How long do gerbils live?",
-        "a": "2 to 5 years, most often 3 to 4. Shorter than the degu also covered on this site, but a gerbil bought as a starter pet is still a multi-year commitment."
+        "a": "2 to 5 years, most often 3 to 4. Shorter than a degu, but a gerbil bought as a starter pet is still a multi-year commitment."
       }
     ],
     "relatedProducts": [
@@ -19513,7 +19684,7 @@
     "slug": "gerbil-handling-guide",
     "title": "How to Handle a Gerbil (And Why It Needs a Companion)",
     "seoTitle": "How to Handle a Gerbil Safely",
-    "excerpt": "Gerbils are gentle, curious, and easy to tame, and like the degu also covered on this site, they break from the hamster in two specific ways worth understanding before you buy.",
+    "excerpt": "Gerbils are gentle, curious, and easy to tame, and like the degu, they break from the hamster in two specific ways worth understanding before you buy.",
     "date": "2026-08-09",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -20151,7 +20322,7 @@
     "slug": "ghost-shrimp-health-issues-guide",
     "title": "Common Ghost Shrimp Health Issues (Most Trace Back to Where They Came From)",
     "seoTitle": "Ghost Shrimp Health Issues: Signs & Causes",
-    "excerpt": "Ghost shrimp are among the hardiest animals on this site, but 'hardy' hides a real caveat: a lot of what goes wrong traces back to the crowded feeder tank a shrimp sat in before you ever bought it, not to the species itself.",
+    "excerpt": "Ghost shrimp are hardy, but 'hardy' hides a real caveat: a lot of what goes wrong traces back to the crowded feeder tank a shrimp sat in before you ever bought it, not to the species itself.",
     "date": "2026-09-18",
     "category": "Invertebrates",
     "categories": [
@@ -20315,7 +20486,7 @@
       },
       {
         "q": "How much does a giant millipede cost upfront?",
-        "a": "The millipede itself typically runs $75 to $150 or more, a real step up from other invertebrates on this site, driven entirely by the supply situation rather than anything about the animal's care difficulty. Setup, tank, substrate, leaf litter, a hygrometer, and a spray bottle, adds roughly another $75 to $150."
+        "a": "The millipede itself typically runs $75 to $150 or more, a real step up in price for an invertebrate, driven entirely by the supply situation rather than anything about the animal's care difficulty. Setup, tank, substrate, leaf litter, a hygrometer, and a spray bottle, adds roughly another $75 to $150."
       },
       {
         "q": "What are the ongoing costs of keeping a giant millipede?",
@@ -20327,7 +20498,7 @@
       },
       {
         "q": "How long do giant millipedes live?",
-        "a": "5 to 7 years in the wild, up to 10 in captivity. That is remarkable longevity for an invertebrate, well past the praying mantis, jumping spider, or hissing cockroach also covered on this site, so treat it as a multi-year commitment and not a short-lived novelty pet."
+        "a": "5 to 7 years in the wild, up to 10 in captivity. That is remarkable longevity for an invertebrate, well past a praying mantis, jumping spider, or hissing cockroach, so treat it as a multi-year commitment and not a short-lived novelty pet."
       },
       {
         "q": "Are there legal restrictions that affect price or availability?",
@@ -20442,7 +20613,7 @@
     "image": "/assets/images/giant-millipede-handling.jpg",
     "imageAlt": "Giant African millipede curled defensively on a keeper's palm above soft substrate",
     "emoji": "🪱",
-    "lastReviewed": "2026-07-28",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -20476,8 +20647,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 5,
+    "sourceCount": 2,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -21020,7 +21191,7 @@
       },
       {
         "q": "How long can a goldfish survive without eating?",
-        "a": "A healthy adult in a mature, well-maintained tank can typically go up to about a week to 10 days without real concern, and outright survivability is commonly cited around 1 to 2 weeks thanks to a slow cold-water metabolism, though that's an upper bound, not a target. The bigger trigger to worry is 24 to 48 hours of refusal combined with lethargy, clamped fins, pineconing scales, or abnormal floating or sinking."
+        "a": "A healthy adult in a mature, well-maintained tank can go 3 to 4 days with no real concern. Health effects can start to appear past about the 5-day mark, and if it stretches past a week to 10 days, lining up a feeder is worth doing. Outright survivability is commonly cited around 1 to 2 weeks thanks to a slow cold-water metabolism, though that's an upper bound, not a target. The bigger trigger to worry is 24 to 48 hours of refusal combined with lethargy, clamped fins, pineconing scales, or abnormal floating or sinking."
       }
     ],
     "relatedProducts": [
@@ -21257,7 +21428,7 @@
       },
       {
         "q": "Can I keep a goldfish and a betta together?",
-        "a": "Not recommended. Goldfish need cooler water (65-72°F) than bettas (78-80°F), and goldfish are voracious fin-nippers that will target a betta's long fins. The temperature mismatch alone makes this pairing a poor fit for either species."
+        "a": "Not recommended. Goldfish need cooler water (65-75°F) than bettas (78-80°F), and goldfish are voracious fin-nippers that will target a betta's long fins. The temperature mismatch alone makes this pairing a poor fit for either species."
       },
       {
         "q": "What's the real minimum tank size for two goldfish?",
@@ -21273,8 +21444,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1620,
     "imageHeight": 1080
@@ -21423,7 +21594,7 @@
     "slug": "green-anole-handling-guide",
     "title": "How to Handle a Green Anole (Carefully, and Rarely)",
     "seoTitle": "How to Handle a Green Anole Safely",
-    "excerpt": "Green anoles are delicate compared to the larger lizards already covered on this site, and that size difference should shape how you think about handling this species from the start.",
+    "excerpt": "Green anoles are delicate compared to the larger pet lizards, and that size difference should shape how you think about handling this species from the start.",
     "date": "2026-07-28",
     "category": "Reptiles",
     "categories": [
@@ -21448,7 +21619,7 @@
     "faqs": [
       {
         "q": "How big does a green anole get, and does that affect handling?",
-        "a": "6 to 8 inches, among the smallest reptiles on this site, and considerably more fragile than larger relatives like the bearded dragon or blue-tongued skink. ReptiFiles is direct about it, green anoles generally make better display animals than a pet you take out and handle regularly."
+        "a": "6 to 8 inches, among the smallest reptiles in the pet trade, and considerably more fragile than larger relatives like the bearded dragon or blue-tongued skink. ReptiFiles is direct about it, green anoles generally make better display animals than a pet you take out and handle regularly."
       },
       {
         "q": "Is a green anole a chameleon?",
@@ -21696,7 +21867,7 @@
     "image": "/assets/images/green-iguana-cost.jpg",
     "imageAlt": "Green iguana hatchling beside a custom-built walk-in enclosure under construction",
     "emoji": "🦎",
-    "lastReviewed": "2026-08-11",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -21706,7 +21877,7 @@
       },
       {
         "q": "What does the upfront setup cost?",
-        "a": "$700 to $2,500 or more, and this is where iguana ownership gets real. No commercial enclosure is large enough for an adult, so a custom or walk-in build is mandatory, on top of high-output UVB, a cluster of halogen basking bulbs, a misting system, and a large soaking tub."
+        "a": "$700 to $2,500 or more, and it is two purchases. A 4x2x4 foot juvenile setup runs roughly $985 to $1,000. The adult enclosure comes a year or two later: a walk-in build is several hundred dollars in materials, a custom builder $1,000 and up, and a made to order 6x3x6 foot box $3,740."
       },
       {
         "q": "What are the ongoing monthly costs?",
@@ -21731,8 +21902,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
-    "headingCount": 8,
+    "sourceCount": 5,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 512,
     "imageHeight": 382
@@ -21779,7 +21950,7 @@
       },
       {
         "q": "What is the biggest enrichment problem with this species?",
-        "a": "Space, and it is not close. A green iguana reaches five to six feet and needs an enclosure or room measured in feet rather than gallons. Almost every welfare problem in captive iguanas traces back to an animal bought at six inches and housed as though it will stay that size."
+        "a": "Space, and it is not close. A green iguana reaches six feet or more and needs an enclosure or room measured in feet rather than gallons. Almost every welfare problem in captive iguanas traces back to an animal bought at six inches and housed as though it will stay that size."
       },
       {
         "q": "Do iguanas need climbing structure?",
@@ -21801,6 +21972,63 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 11,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/green-iguana-feeding-guide.mdx",
+    "slug": "green-iguana-feeding-guide",
+    "title": "Green Iguana Feeding: Building the Salad and the Protein Mistake",
+    "seoTitle": "What Do Green Iguanas Eat? Diet and Feeding Guide",
+    "excerpt": "A green iguana is a folivore with an enlarged cecum built to ferment leaves, which is the whole reason a bowl of the wrong greens does damage slowly enough that nobody notices until the jaw is soft.",
+    "date": "2026-09-12",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Green Iguana",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Herbivore",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/green-iguana-feeding.jpg",
+    "imageAlt": "A green iguana feeding on a pile of chopped dark leafy greens",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-12",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should a green iguana eat every day?",
+        "a": "Dark leafy greens, as the clear majority of the bowl. One veterinary source puts it at 80 to 90% dark green leafy vegetables with under 20% of the diet as fruit; another is stricter on fruit, capping it at 5%. Build the greens on collard, mustard, turnip and dandelion greens, escarole and romaine, and treat squash, parsnip, green beans and bell pepper as the vegetable share."
+      },
+      {
+        "q": "Can green iguanas eat insects, eggs, or dog food?",
+        "a": "They should not be fed as part of the diet. Green iguanas are herbivores with enlarged ceca adapted for hindgut fermentation, and diets high in protein may predispose reptiles to uric acid accumulation, which can cause gout. Some veterinary guidance does allow foods high in animal protein at under 5% of an adult's diet, but nothing a plant eater needs requires them, so the safer plan is to leave them out."
+      },
+      {
+        "q": "Why are spinach and kale a problem for iguanas?",
+        "a": "For two different reasons. Swiss chard, spinach and beet greens block the uptake of dietary calcium and trace minerals, so they should never be the only greens on offer. Cabbage, kale and mustard greens separately carry goitrogens, which in quantity push the thyroid toward goiter. Neither group is banned outright, but neither belongs at the base of the salad."
+      },
+      {
+        "q": "How often should a green iguana get calcium?",
+        "a": "It depends on age, and the two veterinary schedules differ. One gives young iguanas a reptile calcium powder every other day, about 4 to 5 times a week, plus a vitamin D multivitamin twice a week, dropping adults to a light dusting once or twice a week with a multivitamin twice a month. The other dusts a non-breeding adult once weekly, and asks for a supplement low in phosphorus at a minimum 2:1 calcium to phosphorus ratio."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -22576,7 +22804,7 @@
       },
       {
         "q": "What are the ongoing costs of keeping guppies?",
-        "a": "Low, one of the cheapest pets to maintain covered on this site. The monthly total is food, water conditioner, occasional filter media, and a little electricity for the heater and filter. Vet visits are rare, most health issues get handled with over-the-counter medication and water quality correction."
+        "a": "Low. The monthly total is food, water conditioner, occasional filter media, and a little electricity for the heater and filter. Vet visits are rare, most health issues get handled with over-the-counter medication and water quality correction."
       },
       {
         "q": "How long do guppies live?",
@@ -22772,7 +23000,7 @@
       },
       {
         "q": "How do guppies breed?",
-        "a": "As livebearers. A female drops free-swimming young instead of laying eggs, and she can hold sperm from one mating for 5 to 10 months, producing up to about 8 broods from that single encounter with no male present again. Fry survival in a community tank runs high."
+        "a": "As livebearers. A female drops free-swimming young instead of laying eggs, and she can hold sperm from one mating for 5 to 10 months, producing up to about 8 broods from that single encounter with no male present again. Fry survival runs high wherever there is cover for them to hide in."
       },
       {
         "q": "How do I manage guppy population if I don't want constant breeding?",
@@ -22828,7 +23056,7 @@
     "faqs": [
       {
         "q": "What's the most common cause of guppy health problems?",
-        "a": "Water quality. Guppies are hardy fish, but stressed, poorly maintained water, whether that's ammonia buildup, temperature swings, or overcrowding, opens the door to nearly every condition covered here."
+        "a": "Water quality. Guppies are hardy fish, but stressed, poorly maintained water, whether that's ammonia buildup, temperature swings, or overcrowding, opens the door to nearly every condition on this list."
       },
       {
         "q": "What is ich and how do you treat it in guppies?",
@@ -22844,7 +23072,7 @@
       },
       {
         "q": "How do I prevent most guppy health issues in the first place?",
-        "a": "A properly cycled tank, steady temperature, and regular partial water changes prevent far more than medication does after the fact. Quarantine new fish 2 to 3 weeks before they join an established tank, which catches most problems before they spread."
+        "a": "A properly cycled tank, steady temperature, and regular partial water changes prevent far more than medication does after the fact. Quarantine new fish at least 30 days before they join an established tank, which catches most problems before they spread."
       }
     ],
     "relatedProducts": [
@@ -22909,7 +23137,7 @@
       },
       {
         "q": "Do I need to cycle a guppy tank before adding fish?",
-        "a": "Yes. A fishless cycle takes 2 to 4 weeks to establish the bacteria colony that processes waste, less with a bottled bacteria product. Skipping it is among the most common beginner mistakes in the hobby, guppies or not."
+        "a": "Yes. A fishless cycle takes four to six weeks to establish the bacteria colony that processes waste, less with a bottled bacteria product. Skipping it is among the most common beginner mistakes in the hobby, guppies or not."
       }
     ],
     "relatedProducts": [
@@ -23040,7 +23268,7 @@
     "image": "/assets/images/hamster-cost.jpg",
     "imageAlt": "Hamster sitting beside its cage next to a small stack of coins",
     "emoji": "🌰",
-    "lastReviewed": "2026-07-14",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -23178,7 +23406,7 @@
     "image": "/assets/images/hamster-feeding.jpg",
     "imageAlt": "Hamster eating pellets and fresh vegetables from a small dish",
     "emoji": "🐹",
-    "lastReviewed": "2026-08-01",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -23192,7 +23420,7 @@
       },
       {
         "q": "Why has my hamster stopped eating?",
-        "a": "Dental problems, overgrown or broken teeth, are cited as the single most common cause, hamster incisors grow continuously and pain makes chewing something they avoid even when hungry. Stress from a new environment, cold-induced torpor below about 65°F, and simple pickiness in a mixed-food bowl are other common explanations."
+        "a": "Dental problems, overgrown or broken teeth, are cited as the single most common cause, hamster incisors grow continuously and pain makes chewing something they avoid even when hungry. Stress from a new environment, cold-induced torpor below about 60°F, and simple pickiness in a mixed-food bowl are other common explanations."
       },
       {
         "q": "Is it normal not to see my hamster eat for a whole day?",
@@ -23529,7 +23757,7 @@
     "image": "/assets/images/hamster-vs-guinea-pig.jpg",
     "imageAlt": "A hamster and a guinea pig side by side for size comparison",
     "emoji": "🐹",
-    "lastReviewed": "2026-07-09",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24234,6 +24462,63 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/hermit-crab-feeding-guide.mdx",
+    "slug": "hermit-crab-feeding-guide",
+    "title": "Hermit Crab Feeding: Scatter It, Vary It, and Watch the Label",
+    "seoTitle": "What Do Hermit Crabs Eat? Diet, Calcium, Safe Foods",
+    "excerpt": "A land hermit crab in the wild is a scavenger working a beach, taking fruit, fallen leaves, seeds and carrion, which is a diet no single tub of pellets reproduces.",
+    "date": "2026-09-21",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
+    "tags": [
+      "Hermit Crab",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Care",
+      "Calcium",
+      "Molting"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/hermit-crab-feeding.jpg",
+    "imageAlt": "Two land hermit crabs feeding on food scattered across sand and coconut fibre substrate",
+    "emoji": "🦀",
+    "lastReviewed": "2026-09-21",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do hermit crabs eat?",
+        "a": "They are omnivorous scavengers, taking close to anything edible in the wild. In captivity that means commercial hermit crab diets, fruits, vegetables, nuts and brine shrimp, with vegetables offered most days and fruit a few times a week."
+      },
+      {
+        "q": "How often should hermit crabs be fed?",
+        "a": "Once daily. They are most active after dark, so putting food out in the evening matches when they come out for it."
+      },
+      {
+        "q": "How do hermit crabs get enough calcium?",
+        "a": "Through the diet, and it matters most around a molt, when the exoskeleton is rebuilt. Use a powdered calcium supplement added to food, or a crab-safe natural source such as crushed cuttlebone. Skip calcium products with added vitamin D unless a vet recommends one."
+      },
+      {
+        "q": "Which additives are dangerous in hermit crab food?",
+        "a": "Two: copper sulfate, which is toxic to invertebrates, and ethoxyquin, a synthetic preservative also toxic to invertebrates that can be present in fish meal without appearing separately on a label. Both turn up in commercial pet foods, so the ingredient panel is worth reading."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/hermit-crab-handling-guide.mdx",
     "slug": "hermit-crab-handling-guide",
     "title": "How to Handle a Hermit Crab (Minimally, and On Its Terms)",
@@ -24568,7 +24853,7 @@
     "faqs": [
       {
         "q": "Is there research on hognose enrichment specifically?",
-        "a": "Yes. Nagabaskaran, Skinner and Miller ran a preference test on western hognose snakes, offering an enriched side with burrowing substrate, interactive stimuli and a large water dish against a standard side with paper towel and a small dish. Both sides had shelters and a thermal gradient, so the comparison was enrichment rather than basic husbandry. The snakes preferred the enriched side, and the preference strengthened over time."
+        "a": "Yes. Nagabaskaran, Skinner and Miller ran a 2022 preference test in Animals, offering western hognose snakes an enriched side with burrowing substrate, interactive stimuli and a large water dish against a standard side with paper towel and a small dish. Both sides had shelters and a thermal gradient, so the comparison was enrichment rather than basic husbandry. The snakes preferred the enriched side, and the preference strengthened over time."
       },
       {
         "q": "Why does it matter that the preference got stronger?",
@@ -24607,6 +24892,63 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/hognose-snake-feeding-guide.mdx",
+    "slug": "hognose-snake-feeding-guide",
+    "title": "Hognose Snake Feeding: Prey Size, Schedules, and the Picky Hatchling",
+    "seoTitle": "Hognose Snake Feeding: Prey Size and Schedule",
+    "excerpt": "A western hognose hatchling can weigh three grams, which is small enough that the correct first meal is a piece of a pinky mouse, not a whole one.",
+    "date": "2026-09-24",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Hognose Snake",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Snake Care",
+      "Frozen Thawed"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/hognose-snake-feeding.jpg",
+    "imageAlt": "A western hognose snake taking a thawed mouse from feeding tongs in a plain feeding container",
+    "emoji": "🐍",
+    "lastReviewed": "2026-09-24",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size prey does a hognose snake need?",
+        "a": "Sized to the snake, and for hatchlings that means by gram weight: a small pinky head for hogs 3 grams and under, extra small pinks at 4 to 6 grams, small to medium pinks at 7 to 9 grams, then large pinks, peach fuzzies and fuzzies. The general rule at any age is a prey item slightly thicker than the snake's center mass."
+      },
+      {
+        "q": "How often should a hognose snake be fed?",
+        "a": "Often as a hatchling, much less as an adult, and the sources differ on exactly how much less. Reptiles Magazine feeds young snakes every 5 to 7 days and mature females every 10 to 14 days, with some large females at every 14 to 21. The Reptile Centre feeds hatchlings weekly and adults once every two weeks, warning that they can become overweight if fed weekly as adults."
+      },
+      {
+        "q": "Should hognose snakes be fed frozen thawed or live?",
+        "a": "Frozen thawed. It removes the risk of a live rodent injuring the snake, and it is standard practice for pet colubrids."
+      },
+      {
+        "q": "What do I do if my hognose refuses to eat?",
+        "a": "Refusal is common in this species and usually not an emergency. Try scenting the prey if a snake refuses its first three offerings, using sardine, tuna, salmon, chicken bone broth, or frog, toad, lizard or gecko scent. A male ready to breed, or seasonal change heading toward brumation, can also put a snake off food on its own."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/hognose-snake-handling-guide.mdx",
     "slug": "hognose-snake-handling-guide",
     "title": "How to Handle a Western Hognose Snake (And Why the Drama Is Mostly Bluff)",
@@ -24630,7 +24972,7 @@
     "image": "/assets/images/hognose-snake-handling.jpg",
     "imageAlt": "Western hognose snake with its neck flattened into a defensive hood display",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-14",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24644,7 +24986,7 @@
       },
       {
         "q": "Are Western hognose snakes dangerous to handle?",
-        "a": "No. The rear-fanged venom isn't considered medically significant to a healthy person. A documented bite case in the literature produced local swelling and bruising with no wider effects, and the researchers concluded the species isn't dangerous, only worth handling thoughtfully."
+        "a": "The rear-fanged venom isn't considered medically significant to a healthy person, and the researchers behind the one documented bite case in the literature concluded the species isn't dangerous, only worth handling thoughtfully. That case is still worth knowing about: swelling, bruising, and mild cellulitis at the bite site, no systemic effects, and a recovery that ran about five months."
       },
       {
         "q": "What causes a hognose snake to bite?",
@@ -24660,7 +25002,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -25492,7 +25834,7 @@
     "slug": "jacksons-chameleon-cost-guide",
     "title": "How Much Does a Jackson's Chameleon Really Cost?",
     "seoTitle": "Jackson's Chameleon Price: $50 to $250, Setup $400 to $525",
-    "excerpt": "Jackson's chameleons sit in a comparable price range to the veiled chameleon already covered on this site, but the two species diverge in some important ways worth understanding before you buy.",
+    "excerpt": "Jackson's chameleons sit in a comparable price range to the veiled chameleon, but the two species diverge in some important ways worth understanding before you buy.",
     "date": "2026-07-29",
     "category": "Reptiles",
     "categories": [
@@ -25631,7 +25973,7 @@
     "slug": "jacksons-chameleon-handling-guide",
     "title": "How to Handle a Jackson's Chameleon",
     "seoTitle": "How to Handle a Jackson's Chameleon Correctly",
-    "excerpt": "Jackson's chameleons are among the more docile chameleons kept as pets, more laid-back than the veiled chameleon already covered on this site, but docile for a chameleon still means minimal handling.",
+    "excerpt": "Jackson's chameleons are among the more docile chameleons kept as pets, more laid-back than the veiled chameleon, but docile for a chameleon still means minimal handling.",
     "date": "2026-07-29",
     "category": "Reptiles",
     "categories": [
@@ -25695,7 +26037,7 @@
     "slug": "jacksons-chameleon-health-issues-guide",
     "title": "Common Jackson's Chameleon Health Issues",
     "seoTitle": "Jackson's Chameleon Health Issues: Signs & Causes",
-    "excerpt": "Jackson's chameleons face many of the same core reptile health risks as the veiled chameleon already covered on this site, with a couple of details specific to this species worth knowing.",
+    "excerpt": "Jackson's chameleons face many of the same core reptile health risks as the veiled chameleon, with a couple of details specific to this species worth knowing.",
     "date": "2026-07-29",
     "category": "Reptiles",
     "categories": [
@@ -25750,7 +26092,7 @@
     "truth": null,
     "sourceCount": 0,
     "headingCount": 6,
-    "ledeMatchesExcerpt": false,
+    "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -25919,7 +26261,7 @@
       },
       {
         "q": "What does a complete jumping spider setup cost upfront?",
-        "a": "Roughly $50 to $120, covering a small vertical arboreal enclosure, coconut fiber substrate, artificial plants or cork bark for climbing, a fine mister, and a digital hygrometer. It's one of the cheapest complete setups covered on this site."
+        "a": "Roughly $50 to $120, covering a small vertical arboreal enclosure, coconut fiber substrate, artificial plants or cork bark for climbing, a fine mister, and a digital hygrometer."
       },
       {
         "q": "What are the ongoing monthly costs of keeping a jumping spider?",
@@ -26907,7 +27249,7 @@
     "slug": "leaf-tailed-gecko-cost-guide",
     "title": "How Much Does a Leaf-Tailed Gecko Really Cost?",
     "seoTitle": "Leaf-Tailed Gecko Price: $250 to $800+, Setup $300 to $600",
-    "excerpt": "Leaf-tailed geckos are the most expensive gecko covered on this site, and the price reflects both their striking camouflage and the skill involved in breeding them successfully.",
+    "excerpt": "Leaf-tailed geckos are among the most expensive geckos in the pet trade, and the price reflects both their striking camouflage and the skill involved in breeding them successfully.",
     "date": "2026-07-29",
     "category": "Reptiles",
     "categories": [
@@ -26924,7 +27266,7 @@
     "readTime": 6,
     "difficulty": "Advanced",
     "image": "/assets/images/leaf-tailed-gecko-cost.jpg",
-    "imageAlt": "Satanic leaf-tailed gecko camouflaged against bark, the priciest gecko species covered on this site",
+    "imageAlt": "Satanic leaf-tailed gecko camouflaged against bark, one of the priciest geckos in the pet trade",
     "emoji": "🦎",
     "lastReviewed": "2026-07-29",
     "author": "Michael Ryan",
@@ -27044,7 +27386,7 @@
     "slug": "leaf-tailed-gecko-handling-guide",
     "title": "Should You Handle a Leaf-Tailed Gecko? Almost Never",
     "seoTitle": "Leaf-Tailed Gecko Handling: What to Expect",
-    "excerpt": "Leaf-tailed geckos are the most advanced-keeper gecko covered on this site, and unlike the tokay gecko, this isn't about aggression or a defensive bite. It's about fragility.",
+    "excerpt": "Leaf-tailed geckos are the most advanced-keeper gecko commonly kept, and unlike the tokay gecko, this isn't about aggression or a defensive bite. It's about fragility.",
     "date": "2026-07-29",
     "category": "Reptiles",
     "categories": [
@@ -27085,10 +27427,10 @@
       },
       {
         "q": "Is a leaf-tailed gecko a good choice if I want a handleable pet?",
-        "a": "No. This is the most advanced-keeper gecko covered on this site, best enjoyed as a striking, living piece of camouflage art you observe rather than one you interact with physically."
+        "a": "No. This is the most advanced-keeper gecko commonly kept, best enjoyed as a striking, living piece of camouflage art you observe rather than one you interact with physically."
       },
       {
-        "q": "How does the leaf-tailed gecko compare to other geckos on this site?",
+        "q": "How does the leaf-tailed gecko compare to other geckos?",
         "a": "Every other gecko here ranges from handleable, such as the crested, leopard, gargoyle, and African fat-tailed, to defensive but tolerant of occasional interaction, such as the tokay. The leaf-tailed gecko sits in a category of its own, neither handleable nor simply defensive, just fragile."
       }
     ],
@@ -27108,7 +27450,7 @@
     "slug": "leaf-tailed-gecko-health-issues-guide",
     "title": "Common Leaf-Tailed Gecko Health Issues",
     "seoTitle": "Leaf-Tailed Gecko Health Issues: Signs & Causes",
-    "excerpt": "Leaf-tailed geckos are delicate, and dehydration specifically deserves more attention with this species than with almost any other reptile on this site.",
+    "excerpt": "Leaf-tailed geckos are delicate, and dehydration specifically deserves more attention with this species than with almost any other reptile.",
     "date": "2026-07-29",
     "category": "Reptiles",
     "categories": [
@@ -27715,7 +28057,7 @@
       },
       {
         "q": "Do leopard gecko temperature needs change at night?",
-        "a": "Yes. LafeberVet puts nights in the 70s, and this guide keeps 65°F as the floor. Below that, a ceramic heat emitter on a thermostat gives heat without light and leaves the nocturnal schedule alone."
+        "a": "Yes. LafeberVet puts nights in the 70s, and this guide keeps 65°F as the floor. Below that, a ceramic heat emitter on a thermostat gives heat without light and leaves the evening schedule alone."
       },
       {
         "q": "What's the biggest temperature mistake new keepers make?",
@@ -27773,7 +28115,7 @@
       },
       {
         "q": "Which gecko needs supplemental heating, leopard or crested?",
-        "a": "Leopard geckos do - they need a warm belly-heat zone around 88 to 90 degrees F, usually from an under-tank heat mat. Crested geckos are unusual among pet reptiles in that they do best at normal room temperature, roughly 72 to 78 degrees F, and can become stressed or ill above about 85 degrees F."
+        "a": "Leopard geckos do - they need a warm belly-heat zone around 88 to 92 degrees F, usually from an under-tank heat mat. Crested geckos are unusual among pet reptiles in that they do best at normal room temperature, roughly 72 to 78 degrees F, and can become stressed or ill above about 85 degrees F."
       },
       {
         "q": "Can a crested gecko regrow its tail if it drops it?",
@@ -27934,7 +28276,7 @@
     "image": "/assets/images/lovebird-cost.jpg",
     "imageAlt": "Peach-faced lovebird perched beside its cage with food dishes and toys",
     "emoji": "❤️",
-    "lastReviewed": "2026-07-20",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -27948,7 +28290,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for a lovebird?",
-        "a": "Roughly $70 to $125 a month: $20 to $30 in quality pellets, $10 to $15 in fresh produce, toys (lovebirds chew through them fast), and an amortized share of annual vet care."
+        "a": "Roughly $20 to $35 a month once you average out the annual pellet, produce, toy, and vet-care costs, which run $260 to $430 a year total. Toys are the wild card, lovebirds are aggressive chewers and go through them fast."
       },
       {
         "q": "How much does avian vet care cost for a lovebird?",
@@ -28036,6 +28378,63 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1600,
     "imageHeight": 1200
+  },
+  {
+    "path": "/content/guides/lovebird-feeding-guide.mdx",
+    "slug": "lovebird-feeding-guide",
+    "title": "Lovebird Feeding: Calcium, Vitamin A, and the Hen That Keeps Laying",
+    "seoTitle": "Lovebird Feeding: Pellets, Calcium and Vitamin A",
+    "excerpt": "A lone female lovebird will often lay clutch after clutch with no mate in sight, and every egg is built out of calcium she has to get from somewhere.",
+    "date": "2026-10-06",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Lovebird",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Bird Diet",
+      "Calcium",
+      "Vitamin A"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/lovebird-feeding.jpg",
+    "imageAlt": "Two lovebirds sharing a wooden dish of chopped vegetables and pellets",
+    "emoji": "🦜",
+    "lastReviewed": "2026-10-06",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much of a lovebird's diet should be pellets?",
+        "a": "Around 75 to 80%, with the remaining 20 to 25% as vegetables and a small amount of fruit. A bird eating that much formulated food does not need a general supplement on top of it."
+      },
+      {
+        "q": "Which deficiencies are lovebirds prone to?",
+        "a": "Vitamin A and calcium in particular. Both track back to a seed-heavy diet, and both are avoidable with formulated food and dark leafy greens instead of a bottle of something added later."
+      },
+      {
+        "q": "Does a female lovebird laying eggs need extra calcium?",
+        "a": "Yes, and it is one of the few times supplementation is clearly indicated. Lone female lovebirds are among the species that commonly become chronic layers, and each egg draws on calcium stores for the shell and for the muscle contractions that move it. On a seed diet those stores are not replaced fast enough."
+      },
+      {
+        "q": "Why is dusting seed with vitamin powder pointless?",
+        "a": "Because the bird throws the powder away with the husk. A lovebird hulls a seed and eats the kernel, so anything coating the outside never reaches it. If a powdered supplement is being used during a pellet conversion, it belongs on moist food instead."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/lovebird-handling-guide.mdx",
@@ -28252,7 +28651,7 @@
     "image": "/assets/images/lovebird-vs-budgie.jpg",
     "imageAlt": "A lovebird and a budgie side by side for comparison",
     "emoji": "🦜",
-    "lastReviewed": "2026-09-03",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -28270,7 +28669,7 @@
       },
       {
         "q": "Which lives longer, a lovebird or a budgie?",
-        "a": "Lovebirds typically live a bit longer. A lovebird's life expectancy is commonly cited at 7 to 15 years. A budgie commonly lives 5 to 10 years, occasionally up to 15. Both are shorter-lived than larger parrots, but lovebirds tend to edge out budgies on the high end."
+        "a": "Lovebirds typically live a bit longer. A lovebird's life expectancy is commonly cited at 10 to 15 years, with a maximum around 20. A budgie commonly lives 7 to 15 years. Both are shorter-lived than larger parrots, but lovebirds tend to edge out budgies on the high end."
       },
       {
         "q": "Are lovebirds and budgies similar in size?",
@@ -28512,7 +28911,7 @@
     "image": "/assets/images/madagascar-hissing-cockroach-handling.jpg",
     "imageAlt": "Madagascar hissing cockroach being gently held around the thorax",
     "emoji": "🪳",
-    "lastReviewed": "2026-07-20",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -28542,8 +28941,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 5,
+    "sourceCount": 2,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -28849,7 +29248,7 @@
     "faqs": [
       {
         "q": "Is there research on milk snake enrichment?",
-        "a": "No. Nothing has been published on Lampropeltis triangulum. The nearest evidence is the corn snake enclosure-size and enrichment work, both North American colubrids of similar build, covered in full in our corn snake enrichment guide."
+        "a": "No. Nothing has been published on Lampropeltis triangulum. The nearest evidence is the corn snake enclosure-size and enrichment work, both North American colubrids of similar build."
       },
       {
         "q": "My milk snake hides all the time. Does it need a smaller enclosure?",
@@ -29255,7 +29654,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 4,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -29380,7 +29779,7 @@
       },
       {
         "q": "Can I overfeed a molly?",
-        "a": "Easily, and it's a more common real mistake than underfeeding. Overfeeding drives constipation and swim bladder problems directly, and uneaten food rotting in the tank fouls water quality, which then opens the door to most of the other health issues covered in our molly health issues guide."
+        "a": "Easily, and it's a more common real mistake than underfeeding. Overfeeding drives constipation and swim bladder problems directly, and uneaten food rotting in the tank fouls water quality, which then opens the door to most other molly health issues."
       }
     ],
     "relatedProducts": [],
@@ -29572,7 +29971,7 @@
       },
       {
         "q": "Do mollies need aquarium salt in their tank setup?",
-        "a": "Not strictly, and this is more debated than most molly care advice lets on. Mollies are a real brackish-tolerant species biologically, but whether a healthy freshwater tank needs salt added is disputed among experienced keepers, some argue good water changes and stable parameters do the same job without the downsides salt carries for live plants and snails. Our molly health issues guide covers the full case for and against."
+        "a": "Not strictly, and this is more debated than most molly care advice lets on. Mollies are a real brackish-tolerant species biologically, but whether a healthy freshwater tank needs salt added is disputed among experienced keepers, some argue good water changes and stable parameters do the same job without the downsides salt carries for live plants and snails."
       },
       {
         "q": "What kind of filtration is best for a molly tank?",
@@ -29673,7 +30072,7 @@
     "slug": "mourning-gecko-enrichment-guide",
     "title": "Mourning Gecko Enrichment: The Only One You Should Keep in Groups",
     "seoTitle": "Mourning Gecko Enrichment Guide",
-    "excerpt": "An all-female parthenogenetic species that lives in colonies. Every other gecko guide argues about whether to pair them. This one starts from a group.",
+    "excerpt": "An all-female parthenogenetic species that lives in colonies. With most geckos the question is whether to pair them. This one starts from a group.",
     "date": "2026-10-22",
     "category": "Enrichment",
     "categories": [
@@ -29829,7 +30228,7 @@
     "image": "/assets/images/mourning-gecko-handling.jpg",
     "imageAlt": "Tiny mourning gecko resting on a leaf inside a planted vivarium",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-25",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -29863,8 +30262,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 3,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -30005,7 +30404,7 @@
     "slug": "mouse-cost-guide",
     "title": "How Much Does a Pet Mouse Really Cost?",
     "seoTitle": "Pet Mouse Price: $5 to $20 Each, Plus $100 to $210 Setup",
-    "excerpt": "A pet mouse is one of the cheapest animals on this site to buy, but it's a group animal with a real housing complexity of its own, and that changes the honest budget more than the sticker price suggests.",
+    "excerpt": "A pet mouse is one of the cheapest animals to buy, but it's a group animal with a real housing complexity of its own, and that changes the honest budget more than the sticker price suggests.",
     "date": "2026-09-22",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -30098,7 +30497,7 @@
     "faqs": [
       {
         "q": "Is there enrichment research on mice?",
-        "a": "More than on almost any other pet on this site, because mice are the most-used laboratory animal in the world. The most useful thread for a pet keeper is Brianna Gaskill's work on nesting material and thermal comfort."
+        "a": "More than on almost any other pet, because mice are the most-used laboratory animal in the world. The most useful thread for a pet keeper is Brianna Gaskill's work on nesting material and thermal comfort."
       },
       {
         "q": "What did the nesting material research find?",
@@ -30204,7 +30603,7 @@
     "slug": "mouse-handling-guide",
     "title": "How to Handle a Pet Mouse (Faster, Jumpier, and Easy to Underestimate)",
     "seoTitle": "How to Handle a Pet Mouse Safely",
-    "excerpt": "A mouse is the smallest, fastest, and most easily startled small mammal on this site, and treating it like a slower, calmer rat is the single most common way new owners end up chasing one across the room.",
+    "excerpt": "A mouse is the smallest, fastest, and most easily startled of the common pet small mammals, and treating it like a slower, calmer rat is the single most common way new owners end up chasing one across the room.",
     "date": "2026-09-22",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -30328,7 +30727,7 @@
     "slug": "mouse-tank-setup-guide",
     "title": "Mouse Enclosure Setup: Why a Wire Cage Beats a Glass Tank Here",
     "seoTitle": "Mouse Enclosure Setup Guide",
-    "excerpt": "Mouse housing runs on the opposite logic from a lot of the small-mammal advice elsewhere on this site: the glass tank that's the right call for a gerbil is specifically the wrong one for a mouse.",
+    "excerpt": "Mouse housing runs on the opposite logic from a lot of small-mammal advice: the glass tank that's the right call for a gerbil is specifically the wrong one for a mouse.",
     "date": "2026-09-22",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -30357,11 +30756,11 @@
       },
       {
         "q": "Is a glass tank a good enclosure for a pet mouse?",
-        "a": "No, and this is a real difference from the gerbil housing covered elsewhere on this site. The Merck Veterinary Manual states plainly that aquariums are not suitable for mice because air circulation is inadequate, which lets ammonia build up. A well-ventilated wire cage is the better choice for mice specifically."
+        "a": "No, and this is a real difference from gerbil housing. The Merck Veterinary Manual states plainly that aquariums are not suitable for mice because air circulation is inadequate, which lets ammonia build up. A well-ventilated wire cage is the better choice for mice specifically."
       },
       {
         "q": "How tight does the bar spacing need to be for a mouse cage?",
-        "a": "No more than about a quarter inch (6mm), and some welfare-focused sources recommend going even tighter, to 5mm. That's tighter than any other small pet cage covered on this site, mice can squeeze through gaps that would safely contain a hamster."
+        "a": "No more than about a quarter inch (6mm), and some welfare-focused sources recommend going even tighter, to 5mm. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster."
       },
       {
         "q": "How deep should mouse bedding be?",
@@ -31068,7 +31467,7 @@
     "slug": "oscar-fish-handling-guide",
     "title": "Oscar Fish Aren't Handled, But They're the Closest Thing to a Pet Dog in Your Tank",
     "seoTitle": "Oscar Fish Behavior and Handling Guide",
-    "excerpt": "Every other fish on this site is an observation animal built around feeding and water care. Oscars are different, intelligent enough to recognize their keeper and develop real individual personality.",
+    "excerpt": "Most fish are observation animals built around feeding and water care. Oscars are different, intelligent enough to recognize their keeper and develop real individual personality.",
     "date": "2026-07-30",
     "category": "Fish",
     "categories": [
@@ -31093,7 +31492,7 @@
     "faqs": [
       {
         "q": "Can you handle an oscar fish like a pet?",
-        "a": "Not physically. Despite their reputation, oscars aren't a hands-on pet the way a dog is, the relationship lives entirely at the glass and through feeding, not through touch. What sets them apart is a level of apparent awareness and individual personality no other fish on this site offers."
+        "a": "Not physically. Despite their reputation, oscars aren't a hands-on pet the way a dog is, the relationship lives entirely at the glass and through feeding, not through touch. What sets them apart is a level of apparent awareness and individual personality few other fish offer."
       },
       {
         "q": "Why are oscars called water puppies?",
@@ -31192,9 +31591,9 @@
   {
     "path": "/content/guides/oscar-fish-tank-setup-guide.mdx",
     "slug": "oscar-fish-tank-setup-guide",
-    "title": "Oscar Fish Tank Setup: Bigger and More Filtered Than Any Other Fish on This Site",
+    "title": "Oscar Fish Tank Setup: Bigger and More Filtered Than You Expect",
     "seoTitle": "Oscar Fish Tank Setup Guide",
-    "excerpt": "Oscars are the largest, messiest fish covered here, and the setup needs to reflect that from day one, not grow into it gradually.",
+    "excerpt": "Oscars get large and messy, and the setup needs to reflect that from day one, not grow into it gradually.",
     "date": "2026-07-30",
     "category": "Fish",
     "categories": [
@@ -31357,7 +31756,7 @@
       },
       {
         "q": "How much does a full Pacman frog setup cost to start?",
-        "a": "Roughly $100 to $225 for the frog and everything it needs, a modest terrarium, heat mat and thermostat, thermometer and hygrometer, low-level lighting, and a hide. This is one of the more affordable full setups among the exotic pets covered on this site, since the species is sedentary and doesn't need much floor space."
+        "a": "Roughly $100 to $225 for the frog and everything it needs, a modest terrarium, heat mat and thermostat, thermometer and hygrometer, low-level lighting, and a hide. This is one of the more affordable full setups among exotic pets, since the species is sedentary and doesn't need much floor space."
       },
       {
         "q": "What are the ongoing monthly costs for a Pacman frog?",
@@ -31394,7 +31793,7 @@
     "slug": "pacman-frog-enrichment-guide",
     "title": "Pacman Frog Enrichment: An Animal Built to Do Nothing",
     "seoTitle": "Pacman Frog Enrichment Guide",
-    "excerpt": "This is the hardest species on the site to write an enrichment guide for, because sitting motionless in one spot is not a symptom. It is the entire hunting strategy.",
+    "excerpt": "This is the hardest species to write an enrichment guide for, because sitting motionless in one spot is not a symptom. It is the entire hunting strategy.",
     "date": "2026-10-26",
     "category": "Enrichment",
     "categories": [
@@ -32578,7 +32977,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -33058,7 +33457,7 @@
       },
       {
         "q": "How long do praying mantises live, and how does that affect budgeting?",
-        "a": "Just 6 to 12 months for most kept species: Chinese mantises toward 8 to 12, African mantises closer to 6 to 9, with females typically outliving males. A few species reach around 18 months under excellent care. That makes it one of the shortest-lived pets on this site, closer to a garden project in commitment length."
+        "a": "Just 6 to 12 months for most kept species: Chinese mantises toward 8 to 12, African mantises closer to 6 to 9, with females typically outliving males. A few species reach around 18 months under excellent care. That makes it a very short commitment, closer to a garden project in length."
       }
     ],
     "relatedProducts": [
@@ -33407,7 +33806,7 @@
     "slug": "quaker-parakeet-cost-guide",
     "title": "How Much Does a Quaker Parakeet Really Cost?",
     "seoTitle": "Quaker Parakeet Price: $250 to $500, Plus $300 to $800 Setup",
-    "excerpt": "Quaker parakeets sit in the middle of the pet-bird price range, and one detail matters more here than with almost any other bird on this site before you buy at all: whether it's even legal where you live.",
+    "excerpt": "Quaker parakeets sit in the middle of the pet-bird price range, and one detail has to be settled before you buy at all: whether it's even legal where you live.",
     "date": "2026-08-11",
     "category": "Birds",
     "categories": [
@@ -33427,7 +33826,7 @@
     "image": "/assets/images/quaker-parakeet-cost.jpg",
     "imageAlt": "Quaker parakeet perched beside its cage and accessories, representing the total cost of ownership",
     "emoji": "🦜",
-    "lastReviewed": "2026-08-11",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -33437,7 +33836,7 @@
       },
       {
         "q": "What does a starter Quaker setup cost?",
-        "a": "Roughly $300 to $800. A quality flight cage is the biggest expense on its own, often $150 to $300 or more, plus an initial vet visit, toys, perches, and dishes."
+        "a": "Roughly $300 to $800. A worked example lands at $400 to $590: a $190 to $286 flight cage, three or four perches, two cups, a pound of pellets, a few toys, and the first avian exam."
       },
       {
         "q": "What are the ongoing monthly costs for a Quaker parakeet?",
@@ -33461,8 +33860,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 8,
+    "sourceCount": 5,
+    "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 512,
     "imageHeight": 382
@@ -33540,7 +33939,7 @@
     "slug": "quaker-parakeet-handling-guide",
     "title": "Is It Legal to Own a Quaker Parakeet? And How to Handle One",
     "seoTitle": "Quaker Parakeet Legality and Handling Guide",
-    "excerpt": "Quaker parakeets are intelligent, social, gifted talkers, and also the one bird on this site where a real legal check needs to happen before anything else.",
+    "excerpt": "Quaker parakeets are intelligent, social, gifted talkers, and also a bird where a legal check needs to happen before anything else.",
     "date": "2026-08-11",
     "category": "Birds",
     "categories": [
@@ -34218,8 +34617,7 @@
       "Housing",
       "Litter Training",
       "Care Tips",
-      "Small Mammal Care",
-      "Diet"
+      "Small Mammal Care"
     ],
     "readTime": 6,
     "difficulty": "Beginner/Intermediate",
@@ -34236,15 +34634,11 @@
       },
       {
         "q": "Should a rabbit live indoors or outdoors?",
-        "a": "Indoors, clearly. Indoor rabbits usually reach 7 to 10 years; outdoor ones average about 2, between predators, weather extremes, and health problems nobody catches without daily close contact."
+        "a": "Indoors, clearly. Indoor rabbits typically live 8 to 12 years, and some reach 14 or beyond; outdoor ones average about 3 to 5, between predators, weather extremes, and health problems nobody catches without daily close contact."
       },
       {
         "q": "How do you litter train a rabbit?",
         "a": "Put hay directly in or right over the litter box, since rabbits naturally tend to eliminate while they eat. Use a large, cat-litter-box-style container with paper-based or compressed wood-pellet litter, and avoid clumping cat litter and pine or cedar shavings entirely."
-      },
-      {
-        "q": "What should make up most of a rabbit's diet?",
-        "a": "Hay, about 80 to 85% of the diet, unlimited access, not a side item. Fresh leafy greens come next, and pellets are the smallest piece, about 1/4 cup per 5 pounds of body weight. Fruit and carrots are treats only, not a diet staple."
       }
     ],
     "relatedProducts": [
@@ -34256,7 +34650,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -34447,7 +34841,7 @@
       },
       {
         "q": "Can rats eat meat, or are they strictly plant eaters?",
-        "a": "Rats are genuine omnivores, unlike the strict herbivores also covered on this site such as chinchillas and guinea pigs. In the wild, brown rats eat insects, small vertebrates, and carrion alongside plant matter, and research on wild Norway rats has found they prefer meat when given the choice. A pet rat can have small amounts of cooked lean meat or egg a couple of times a week as a genuine, species-appropriate treat."
+        "a": "Rats are genuine omnivores, unlike strict herbivores such as chinchillas and guinea pigs. In the wild, brown rats eat insects, small vertebrates, and carrion alongside plant matter, and research on wild Norway rats has found they prefer meat when given the choice. A pet rat can have small amounts of cooked lean meat or egg a couple of times a week as a genuine, species-appropriate treat."
       }
     ],
     "relatedProducts": [],
@@ -34466,7 +34860,7 @@
     "slug": "rat-handling-guide",
     "title": "How to Handle a Rat (And Why It's the Least Likely Small Pet to Bite)",
     "seoTitle": "How to Handle a Pet Rat Safely",
-    "excerpt": "Rats are, by a wide margin, one of the most hands-on and trainable small pets on this site, and genuine biting is rare enough that most of what gets mistaken for it is something else entirely.",
+    "excerpt": "Rats are, by a wide margin, one of the most hands-on and trainable small pets there is, and genuine biting is rare enough that most of what gets mistaken for it is something else entirely.",
     "date": "2026-09-21",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -34491,7 +34885,7 @@
     "faqs": [
       {
         "q": "Are rats easy to handle?",
-        "a": "Yes, more so than most small pets on this site. With regular, gentle handling from a young age, rats become confident and seek out interaction rather than tolerating it. RSPCA behavior guidance describes them as animals that learn quickly and memorize routes and people, which is also why rats are trainable to a degree few other small mammals match."
+        "a": "Yes, more so than most small pets. With regular, gentle handling from a young age, rats become confident and seek out interaction rather than tolerating it. RSPCA behavior guidance describes them as animals that learn quickly and memorize routes and people, which is also why rats are trainable to a degree few other small mammals match."
       },
       {
         "q": "Do rats bite often?",
@@ -34526,7 +34920,7 @@
     "slug": "rat-health-issues-guide",
     "title": "Common Rat Health Issues (Respiratory Disease Is the One to Know)",
     "seoTitle": "Rat Health Issues: Signs & Causes",
-    "excerpt": "Rats are hardy for their size, but one condition affects nearly all of them to some degree, and knowing what it looks like matters more here than almost anywhere else on this site.",
+    "excerpt": "Rats are hardy for their size, but one condition affects nearly all of them to some degree, and knowing what it looks like matters more here than with most small pets.",
     "date": "2026-09-21",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -34725,7 +35119,7 @@
     "image": "/assets/images/red-eared-slider-cost.jpg",
     "imageAlt": "Red-eared slider turtle basking next to its tank setup",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-30",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -34739,7 +35133,7 @@
       },
       {
         "q": "How much does a red-eared slider cost per year?",
-        "a": "Roughly $350 to $650 a year between commercial pellets, fresh dark leafy greens, UVB bulb replacement, filter media, electricity, and an annual vet wellness check."
+        "a": "Roughly $380 to $720 a year between commercial pellets, fresh dark leafy greens, UVB bulb replacement, filter media, electricity, and an annual vet wellness check."
       },
       {
         "q": "Is a reptile vet necessary for a pet turtle?",
@@ -34809,7 +35203,7 @@
       },
       {
         "q": "How big does the tank need to be?",
-        "a": "Bigger than almost anyone plans for. Adult female sliders reach around ten to twelve inches of shell and need water volume measured in the low hundreds of gallons, or a stock tank or pond. Most welfare problems in this species trace back to a hatchling bought for a twenty gallon tank."
+        "a": "Bigger than almost anyone plans for. Adult female sliders reach around ten to twelve inches of shell and need a practical minimum of 75 to 100 gallons, with many keepers going to 100 to 125 gallons or more, or a stock tank or pond. Most welfare problems in this species trace back to a hatchling bought for a twenty gallon tank."
       },
       {
         "q": "Does basking count as enrichment?",
@@ -34860,7 +35254,7 @@
     "image": "/assets/images/red-eared-slider-feeding.jpg",
     "imageAlt": "Red-eared slider eating floating pellets while submerged in water",
     "emoji": "🐢",
-    "lastReviewed": "2026-09-03",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -35032,7 +35426,7 @@
     "slug": "red-eared-slider-legal-guide",
     "title": "Is It Legal to Own a Red-Eared Slider? State-by-State Guide",
     "seoTitle": "Is a Red-Eared Slider Legal in Your State? Full Guide",
-    "excerpt": "There's no federal ban on owning a red-eared slider, only a 1975 rule against selling tiny ones. The restrictions come from state invasive-species laws, and Colorado just added a big one with a deadline one week away.",
+    "excerpt": "There's no federal ban on owning a red-eared slider, only a 1975 rule against selling tiny ones. The restrictions come from state invasive-species laws, and Colorado added a big one in 2026 whose filing deadline has now passed.",
     "date": "2026-07-22",
     "category": "Legal",
     "categories": [
@@ -35050,7 +35444,7 @@
     "image": "/assets/guides/red-eared-slider-legal.jpg",
     "imageAlt": "Red-eared slider turtle basking on a rock",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-22",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -35060,7 +35454,7 @@
       },
       {
         "q": "I have a red-eared slider in Colorado. Do I need to do anything?",
-        "a": "Yes, and soon. Colorado's new herpetofauna rule requires existing owners to file a CPW Legacy Report by July 30, 2026 to keep their turtle legally. If you already had one before the rule took effect on May 1, 2026, this paperwork is what protects you."
+        "a": "Yes, and the window has already closed. Colorado's herpetofauna rule required existing owners to file a CPW Legacy Report by July 30, 2026 to keep their turtle legally, and that date has passed. If you already had one before the rule took effect on May 1, 2026 and never filed, contact CPW directly rather than assuming the legacy route is still open."
       },
       {
         "q": "Can I release my red-eared slider into a pond if I can't keep it anymore?",
@@ -35102,7 +35496,7 @@
     "image": "/assets/images/red-eared-slider-tank-setup.jpg",
     "imageAlt": "Red-eared slider tank setup with basking platform, UVB lighting, and canister filter",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-30",
+    "lastReviewed": "2026-09-09",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -35283,7 +35677,7 @@
     "slug": "red-footed-tortoise-feeding-guide",
     "title": "Red-Footed Tortoise Feeding: Diet, Schedule, and Why Protein Isn't Optional",
     "seoTitle": "What Do Red-Footed Tortoises Eat? Diet and Feeding Schedule",
-    "excerpt": "Red-footed tortoises need a different diet than the other tortoises on this site, real omnivores that need real fruit and real animal protein, not just a grazer with an occasional treat.",
+    "excerpt": "Red-footed tortoises need a different diet than the other commonly kept tortoises, real omnivores that need real fruit and real animal protein, not just a grazer with an occasional treat.",
     "date": "2026-09-23",
     "category": "Turtles & Tortoises",
     "categories": [
@@ -35325,7 +35719,7 @@
       },
       {
         "q": "What calcium and UVB does a red-footed tortoise need?",
-        "a": "Calcium with D3 dusted onto food several times a week, more often for fast-growing juveniles, and a cuttlebone as a free-choice source. Daily UVB is needed alongside it, at the strength the enclosure setup guide covers."
+        "a": "Calcium with D3 dusted onto food several times a week, more often for fast-growing juveniles, and a cuttlebone as a free-choice source. Daily UVB is needed alongside it."
       }
     ],
     "relatedProducts": [
@@ -35479,7 +35873,7 @@
     "faqs": [
       {
         "q": "What causes respiratory infection in red-footed tortoises?",
-        "a": "Chronically dry, cool conditions, the opposite of what causes it in the sulcata and Russian tortoises already covered on this site. Watch for wheezing, nasal discharge, lethargy, and open-mouth breathing. Always see a vet, this needs antibiotics and won't resolve on its own."
+        "a": "Chronically dry, cool conditions, the opposite of what causes it in the sulcata and Russian tortoises. Watch for wheezing, nasal discharge, lethargy, and open-mouth breathing. Always see a vet, this needs antibiotics and won't resolve on its own."
       },
       {
         "q": "What causes metabolic bone disease in red-footed tortoises?",
@@ -35706,7 +36100,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -36083,7 +36477,7 @@
       },
       {
         "q": "What are the ongoing and vet costs for a rosy boa?",
-        "a": "Ongoing costs are low even by snake standards, small frozen mice fed roughly every 10 to 14 days for an adult, plus modest substrate and electricity costs from a single under-tank heater. Vet pricing varies by clinic, but a published exotic-specialty price list currently lists an established-client wellness exam at $78 and a new-client exam at $128. Budgeting $100 to $200 a year for routine and occasional vet care is reasonable."
+        "a": "Roughly $6 to $11 a month for consumables: two or three frozen mice at under $1 each, aspen changed every three to six months, and $1 to $2 of electricity for a small heat mat. Vet care is the bigger line. A published exotic price list puts an established-client wellness exam at $78 and a new-client exam at $128, and $100 to $200 a year is a reasonable set-aside."
       },
       {
         "q": "How long do rosy boas live?",
@@ -36107,8 +36501,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 8,
+    "sourceCount": 5,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 896
@@ -36345,7 +36739,7 @@
       },
       {
         "q": "Is obesity a real health risk for rosy boas?",
-        "a": "Yes, and it's a common one. This species has a slow metabolism and spends most of its time motionless, so overfeeding catches up with it faster than with a more active snake. Obesity is linked to fatty liver disease, reproductive problems, and a shortened lifespan, our feeding guide covers the schedule that helps avoid it."
+        "a": "Yes, and it's a common one. This species has a slow metabolism and spends most of its time motionless, so overfeeding catches up with it faster than with a more active snake. Obesity is linked to fatty liver disease, reproductive problems, and a shortened lifespan."
       },
       {
         "q": "How can I tell if my rosy boa is sick if it's naturally inactive?",
@@ -36423,7 +36817,7 @@
     "slug": "rosy-boa-tank-setup-guide",
     "title": "Rosy Boa Enclosure Setup: Small, Dry, and Simple by Design",
     "seoTitle": "Rosy Boa Tank Setup Guide",
-    "excerpt": "Rosy boa housing is refreshingly modest, a small, dry, well-secured enclosure covers everything this desert species needs, a relief if you're coming to this guide after researching a full-size boa constrictor setup.",
+    "excerpt": "Rosy boa housing is refreshingly modest, a small, dry, well-secured enclosure covers everything this desert species needs, a relief if you're coming to it after researching a full-size boa constrictor setup.",
     "date": "2026-09-25",
     "category": "Reptiles",
     "categories": [
@@ -36464,7 +36858,7 @@
       },
       {
         "q": "Why does a rosy boa need such a secure lid?",
-        "a": "Rosy boas are persistent escape artists that will explore and test any gap in an enclosure. A tight-fitting, securely fastened lid is essential, and a smooth one matters too, rough or coarse screen can cause rostral abrasion from repeated rubbing against it, a real and avoidable injury covered in our health issues guide."
+        "a": "Rosy boas are persistent escape artists that will explore and test any gap in an enclosure. A tight-fitting, securely fastened lid is essential, and a smooth one matters too, rough or coarse screen can cause rostral abrasion from repeated rubbing against it, a real and avoidable injury."
       }
     ],
     "relatedProducts": [
@@ -36492,7 +36886,7 @@
     "slug": "russian-tortoise-cost-guide",
     "title": "How Much Does a Russian Tortoise Really Cost?",
     "seoTitle": "Russian Tortoise Price: $50 to $400, Plus $372 to $775 Setup",
-    "excerpt": "Russian tortoises are one of the more approachable tortoises to own, both in price and, unlike the sulcata already covered on this site, in the fact that this species can live its entire life indoors.",
+    "excerpt": "Russian tortoises are one of the more approachable tortoises to own, both in price and, unlike the sulcata, in the fact that this species can live its entire life indoors.",
     "date": "2026-07-30",
     "category": "Turtles & Tortoises",
     "categories": [
@@ -36511,7 +36905,7 @@
     "image": "/assets/images/russian-tortoise-cost.jpg",
     "imageAlt": "Russian tortoise beside an open-top tortoise table setup indoors",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-30",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -36521,11 +36915,11 @@
       },
       {
         "q": "What does the initial indoor setup cost?",
-        "a": "Roughly $400 to $600 total, covering an open-topped tortoise table, a T5 HO UVB fixture and bulb, a halogen basking bulb, substrate, hides, a water dish, and a thermometer and hygrometer. The tortoise table alone is worth $125 to $200 of that total."
+        "a": "Roughly $372 to $775 total, covering an open-topped tortoise table, a T5 HO UVB fixture and bulb, a halogen basking bulb, substrate, hides, a water dish, and a thermometer and hygrometer. The tortoise table alone is worth $125 to $250 of that total."
       },
       {
         "q": "What does a Russian tortoise cost to maintain day to day?",
-        "a": "Roughly $500 to $650 a year, covering food, substrate replacement, and electricity. Electricity can spike somewhat in winter if you're maintaining warmth in a colder climate."
+        "a": "Roughly $365 to $715 a year, covering food, substrate replacement, and electricity. Electricity can spike somewhat in winter if you're maintaining warmth in a colder climate."
       },
       {
         "q": "Are vet visits expensive for a Russian tortoise?",
@@ -36580,7 +36974,7 @@
     "image": "/assets/images/russian-tortoise-enrichment.jpg",
     "imageAlt": "A Russian tortoise grazing on scattered greens among rock hides and low obstacles",
     "emoji": "🐢",
-    "lastReviewed": "2026-08-31",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -36602,7 +36996,7 @@
       },
       {
         "q": "How often should I change the enclosure layout?",
-        "a": "Move one non-essential item every 1 to 2 weeks rather than redesigning the whole space at once. Keep hides on both the warm and cool ends in place, those provide security and shouldn't be part of the rotation."
+        "a": "Move one non-essential item roughly every 1 to 4 weeks, depending on the individual, rather than redesigning the whole space at once. Keep hides on both the warm and cool ends in place, those provide security and shouldn't be part of the rotation."
       }
     ],
     "relatedProducts": [],
@@ -36612,6 +37006,63 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 6,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/russian-tortoise-feeding-guide.mdx",
+    "slug": "russian-tortoise-feeding-guide",
+    "title": "Russian Tortoise Feeding: Fiber, Calcium, and Growing Slowly",
+    "seoTitle": "Russian Tortoise Feeding: Diet, Calcium, Portions",
+    "excerpt": "A Russian tortoise is built to graze its way through fibrous weeds all day, which is a very different job from clearing a bowl of salad in ten minutes and then waiting.",
+    "date": "2026-09-30",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Russian Tortoise",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Herbivore",
+      "Tortoise Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/russian-tortoise-feeding.jpg",
+    "imageAlt": "A Russian tortoise grazing on dandelion and broadleaf weeds in an outdoor pen",
+    "emoji": "🐢",
+    "lastReviewed": "2026-09-30",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does a Russian tortoise eat?",
+        "a": "Weeds, grasses, flowers and leaves, with the emphasis on fiber. The wild diet is soft-stemmed, water-rich plant growth, and the closer a captive diet gets to that, the better it works. Grazing on safe growing plants beats a chopped bowl whenever the setup allows it."
+      },
+      {
+        "q": "Can Russian tortoises eat meat or dog food?",
+        "a": "No. This is a herbivore, and animal protein has no place in the diet. Beyond the immediate problem, protein-rich food drives the fast growth that deforms a shell, so it does damage twice over."
+      },
+      {
+        "q": "How do I know if my tortoise is overweight?",
+        "a": "Watch what happens when it withdraws. A tortoise that looks chubby as it pulls back into its shell, with flesh crowding the openings, is carrying too much and should be fed less. Overweight is the common direction of error in this species, not underweight."
+      },
+      {
+        "q": "How much calcium does a Russian tortoise need, and can it get too much?",
+        "a": "It needs a steady supply, usually as calcium carbonate sprinkled lightly on food. It can also get too much: wild tortoise diets can run a calcium to phosphorus ratio of 4:1 or higher, but the target in captivity is around 2:1, because excess calcium causes its own medical problems."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -36805,7 +37256,7 @@
     "image": "/assets/images/russian-tortoise-tank-setup.jpg",
     "imageAlt": "Russian tortoise enclosure with an open-top tortoise table, basking light, and burrowing substrate",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-30",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -36926,7 +37377,7 @@
     "slug": "savannah-monitor-enrichment-guide",
     "title": "Savannah Monitor Enrichment: The Species That Gets Bored Fastest",
     "seoTitle": "Savannah Monitor Enrichment Guide",
-    "excerpt": "The monitor problem-solving research is a closer fit here than for any other lizard on this site, because savannahs are in the same genus as the animals tested.",
+    "excerpt": "The monitor problem-solving research is a closer fit here than for most lizards, because savannahs are in the same genus as the animals tested.",
     "date": "2026-10-20",
     "category": "Enrichment",
     "categories": [
@@ -36951,7 +37402,7 @@
     "faqs": [
       {
         "q": "How close is the research to this species?",
-        "a": "Closer than for most animals on this site. The problem-solving study was on Varanus albigularis, the black-throated monitor, and savannah monitors are Varanus exanthematicus, the same genus. That is genus-level rather than species-specific evidence, which is a real distinction but a much shorter borrow than the one tegus need."
+        "a": "Closer than for most animals. The problem-solving study was on Varanus albigularis, the black-throated monitor, and savannah monitors are Varanus exanthematicus, the same genus. That is genus-level rather than species-specific evidence, which is a real distinction but a much shorter borrow than the one tegus need."
       },
       {
         "q": "What did the monitor study show?",
@@ -37011,7 +37462,7 @@
     "image": "/assets/images/savannah-monitor-handling.jpg",
     "imageAlt": "Adult savannah monitor being supported carefully from underneath during handling",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-31",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -37045,8 +37496,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 7,
+    "sourceCount": 5,
+    "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -37056,7 +37507,7 @@
     "slug": "savannah-monitor-health-issues-guide",
     "title": "Common Savannah Monitor Health Issues (Obesity Is the Defining One)",
     "seoTitle": "Savannah Monitor Health Issues: Signs & Causes",
-    "excerpt": "Nearly everything on this list traces back to one root cause more than any other pet reptile covered on this site: a genuine mismatch between how much this species gets fed in captivity and how much it would eat and burn off in the wild.",
+    "excerpt": "Nearly everything on this list traces back to one root cause more than in almost any other pet reptile: a genuine mismatch between how much this species gets fed in captivity and how much it would eat and burn off in the wild.",
     "date": "2026-07-31",
     "category": "Reptiles",
     "categories": [
@@ -37161,7 +37612,7 @@
     "slug": "savannah-monitor-tank-setup-guide",
     "title": "Savannah Monitor Enclosure Setup: The 8x4x4 Foot Reality",
     "seoTitle": "Savannah Monitor Enclosure Setup Guide",
-    "excerpt": "A savannah monitor enclosure needs to support this species' size, digging instincts, and thermoregulation needs, cutting corners on any of these is what leads to the health and behavioral problems covered elsewhere in this series.",
+    "excerpt": "A savannah monitor enclosure needs to support this species' size, digging instincts, and thermoregulation needs, cutting corners on any of these is what leads to the health and behavioral problems this species is known for.",
     "date": "2026-07-31",
     "category": "Reptiles",
     "categories": [
@@ -38202,7 +38653,7 @@
     "slug": "stick-insect-cost-guide",
     "title": "How Much Does a Stick Insect Really Cost? (And a Legal Note to Read First)",
     "seoTitle": "Stick Insect Price: A Few Dollars, Plus $30 to $100 Setup",
-    "excerpt": "Stick insects are one of the cheapest pets covered on this site, but before any cost discussion, there's a legal detail worth understanding clearly, since it affects whether you can responsibly keep one at all.",
+    "excerpt": "Stick insects are cheap to buy and cheap to keep, but before any cost discussion, there's a legal detail worth understanding clearly, since it affects whether you can responsibly keep one at all.",
     "date": "2026-07-31",
     "category": "Invertebrates",
     "categories": [
@@ -38239,7 +38690,7 @@
       },
       {
         "q": "What are the ongoing costs of keeping a stick insect?",
-        "a": "Minimal. Host-plant cuttings can often be foraged for free, depending on what the species eats, and misting costs nothing but water. Little else recurs, which puts this among the cheapest pets to maintain on the site."
+        "a": "Minimal. Host-plant cuttings can often be foraged for free, depending on what the species eats, and misting costs nothing but water. Little else recurs."
       },
       {
         "q": "Do stick insects need vet care?",
@@ -38338,7 +38789,7 @@
     "slug": "stick-insect-handling-guide",
     "title": "How to Handle a Stick Insect (And Why You Can Keep More Than One)",
     "seoTitle": "How to Handle a Stick Insect Safely",
-    "excerpt": "Stick insects are docile, slow, and low-drama to keep, relying entirely on camouflage and stillness rather than any real defense. This makes them one of the gentler invertebrates on this site to interact with.",
+    "excerpt": "Stick insects are docile, slow, and low-drama to keep, relying entirely on camouflage and stillness rather than any real defense.",
     "date": "2026-07-31",
     "category": "Invertebrates",
     "categories": [
@@ -38357,7 +38808,7 @@
     "image": "/assets/images/stick-insect-handling.jpg",
     "imageAlt": "Stick insect calmly gripping a keeper's hand during gentle handling",
     "emoji": "🦋",
-    "lastReviewed": "2026-07-31",
+    "lastReviewed": "2026-09-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -38379,7 +38830,7 @@
       },
       {
         "q": "What are common first-timer mistakes when handling a stick insect?",
-        "a": "Grabbing by a leg instead of the body, providing an enclosure too short for a proper molt, leaving an open water dish that can drown nymphs (mist for hydration instead), and feeding the wrong host plant for your specific species."
+        "a": "Grabbing a leg rather than the body, an enclosure too short to molt in, an open water dish that can drown nymphs, and the wrong host plant for the species. Mist for hydration instead of standing water."
       }
     ],
     "relatedProducts": [],
@@ -38387,8 +38838,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 4,
+    "sourceCount": 3,
+    "headingCount": 7,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -38461,7 +38912,7 @@
     "slug": "stick-insect-tank-setup-guide",
     "title": "Stick Insect Enclosure Setup: Height, Humidity, and the Right Host Plant",
     "seoTitle": "Stick Insect Enclosure Setup Guide",
-    "excerpt": "Stick insect care is refreshingly simple once the enclosure height and humidity balance are right, this is one of the more forgiving pets on this site to house well.",
+    "excerpt": "Stick insect care is refreshingly simple once the enclosure height and humidity balance are right, this is a forgiving species to house well.",
     "date": "2026-07-31",
     "category": "Invertebrates",
     "categories": [
@@ -38733,7 +39184,7 @@
     "slug": "sugar-glider-handling-guide",
     "title": "How to Handle a Sugar Glider (It Starts With a Pouch, Not Your Hands)",
     "seoTitle": "How to Handle a Sugar Glider Correctly",
-    "excerpt": "Sugar gliders bond through scent, not quick physical familiarity, which makes their handling process different from almost every other small pet on this site.",
+    "excerpt": "Sugar gliders bond through scent, not quick physical familiarity, which makes their handling process different from almost every other small pet.",
     "date": "2026-07-22",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -39047,7 +39498,7 @@
     "image": "/assets/images/sulcata-tortoise-cost.jpg",
     "imageAlt": "Sulcata tortoise hatchling beside an outdoor enclosure under construction",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-23",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -39061,7 +39512,7 @@
       },
       {
         "q": "What does a sulcata tortoise cost to feed and maintain day to day?",
-        "a": "Low. Grass hay, weeds, and greens are cheap, more so if the tortoise grazes outdoors. Winter heating electricity for an adult housed outside is the recurring expense in anything but a warm climate."
+        "a": "Roughly $17 to $23 monthly for a hatchling indoors and $28 to $51 for a juvenile on bought hay and greens. An adult that grazes eats mostly for free; one that cannot costs more than the juvenile figure. Winter heat adds $10 to $20."
       },
       {
         "q": "Are vet bills expensive for a sulcata tortoise?",
@@ -39083,8 +39534,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 8,
+    "sourceCount": 5,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -39545,7 +39996,7 @@
     "slug": "swordtail-cost-guide",
     "title": "How Much Does Swordtail Fish Ownership Really Cost?",
     "seoTitle": "Swordtail Price: $3 to $25 Each, Plus $115 to $190 Setup",
-    "excerpt": "Swordtails cost about the same per fish as a molly, but of the three common livebearers on this site, they're the one that outgrows a 20-gallon starting point the fastest.",
+    "excerpt": "Swordtails cost about the same per fish as a molly, but they're the common livebearer that outgrows a 20-gallon starting point the fastest.",
     "date": "2026-09-11",
     "category": "Fish",
     "categories": [
@@ -39722,7 +40173,7 @@
       },
       {
         "q": "Can I overfeed a swordtail?",
-        "a": "Easily, and it's a more common real mistake than underfeeding. Overfeeding drives constipation and swim bladder problems directly, and uneaten food rotting in the tank fouls water quality, which opens the door to most of the other health issues covered in our swordtail health issues guide."
+        "a": "Easily, and it's a more common real mistake than underfeeding. Overfeeding drives constipation and swim bladder problems directly, and uneaten food rotting in the tank fouls water quality, which opens the door to most other swordtail health issues."
       }
     ],
     "relatedProducts": [],
@@ -39782,7 +40233,7 @@
       },
       {
         "q": "Do I need to quarantine a new swordtail?",
-        "a": "Yes. A separate tank for 2 to 4 weeks before adding a new fish to your established tank catches most problems before they spread, the same practice that applies across nearly every fish on this site."
+        "a": "Yes. A separate tank for 2 to 4 weeks before adding a new fish to your established tank catches most problems before they spread, the same practice that applies across nearly every aquarium fish."
       }
     ],
     "relatedProducts": [],
@@ -41269,7 +41720,7 @@
     "slug": "tokay-gecko-handling-guide",
     "title": "Should You Handle a Tokay Gecko? Probably Not Often",
     "seoTitle": "Tokay Gecko Handling: What to Actually Expect",
-    "excerpt": "Every other gecko covered on this site, crested, leopard, gargoyle, mourning, and African fat-tailed, ranges from calm to display-only. The tokay gecko breaks that pattern entirely.",
+    "excerpt": "Every other commonly kept gecko, crested, leopard, gargoyle, mourning, and African fat-tailed, ranges from calm to display-only. The tokay gecko breaks that pattern entirely.",
     "date": "2026-07-23",
     "category": "Reptiles",
     "categories": [
@@ -41287,7 +41738,7 @@
     "image": "/assets/images/tokay-gecko-handling.jpg",
     "imageAlt": "Tokay gecko in a defensive gaping posture inside its enclosure",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-23",
+    "lastReviewed": "2026-09-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -41317,8 +41768,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 6,
+    "sourceCount": 4,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -41391,7 +41842,7 @@
     "slug": "tokay-gecko-tank-setup-guide",
     "title": "Tokay Gecko Enclosure Setup: Warm, Vertical, and Genuinely Humid",
     "seoTitle": "Tokay Gecko Enclosure Setup Guide",
-    "excerpt": "Tokay gecko care runs warm and humid, closer to a rainforest setup than the arid conditions many other geckos on this site prefer.",
+    "excerpt": "Tokay gecko care runs warm and humid, closer to a rainforest setup than the arid conditions many other geckos prefer.",
     "date": "2026-07-23",
     "category": "Reptiles",
     "categories": [
@@ -42874,7 +43325,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for a White's tree frog?",
-        "a": "Roughly $20 to $60 a month, covering feeder insects, supplements, substrate, and modest electricity. This isn't a species with heavy recurring expenses once the enclosure is built."
+        "a": "Roughly $13 to $24 a month. The recurring line items, feeder insects, supplements, the UVB bulb and water conditioner, come to $155 to $285 across a year, and substrate and modest electricity go on top of that. This isn't a species with heavy recurring expenses once the enclosure is built."
       },
       {
         "q": "How much does veterinary care cost for a White's tree frog?",
@@ -42971,6 +43422,63 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/whites-tree-frog-feeding-guide.mdx",
+    "slug": "whites-tree-frog-feeding-guide",
+    "title": "White's Tree Frog Feeding: Reading the Ridges Above the Eardrum",
+    "seoTitle": "White's Tree Frog Feeding: Diet and Portions",
+    "excerpt": "This is a sedentary frog with a strong appetite, a combination that makes overfeeding the default outcome unless somebody is watching the animal's shape rather than its enthusiasm.",
+    "date": "2026-09-27",
+    "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
+    "tags": [
+      "White's Tree Frog",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Amphibian Care",
+      "Feeder Insects",
+      "Obesity"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/whites-tree-frog-feeding.jpg",
+    "imageAlt": "A White's tree frog on a branch at night facing a dusted cricket",
+    "emoji": "🐸",
+    "lastReviewed": "2026-09-27",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should a White's tree frog be fed?",
+        "a": "Crickets as the staple, with moths, beetles, cockroaches, grasshoppers and earthworms broadening it out. Dubia roaches and the occasional waxworm are common additions, and a fully grown adult may take a pinkie mouse now and then. Insects can go straight into the enclosure or be offered from blunt, round-tipped forceps."
+      },
+      {
+        "q": "How often should a White's tree frog be fed?",
+        "a": "Juveniles daily, adults every two or three days. Veterinary sources agree on the growing frog and vary slightly on the adult, with two to three times a week the usual figure. The amount matters more than the interval, and body condition is what settles it."
+      },
+      {
+        "q": "How do I tell if my frog is overweight?",
+        "a": "Look at the ridges sitting just above the eardrum. If no ridges are visible the frog is probably underweight and needs more food or more frequent meals. If the ridges are prominent and starting to sag or fold over, the frog is carrying too much and should be eating less."
+      },
+      {
+        "q": "Do feeder insects need supplements?",
+        "a": "Yes, on two fronts: gut load the insects beforehand and dust them on the way in. For this species the dusting runs about once weekly for an adult and twice weekly for a juvenile. The gut-loading guide covers the timing and why dusting does not replace it."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/whites-tree-frog-handling-guide.mdx",
     "slug": "whites-tree-frog-handling-guide",
     "title": "How to Handle a White's Tree Frog",
@@ -43016,7 +43524,7 @@
       },
       {
         "q": "Are all pet frogs okay to handle like this?",
-        "a": "No, this species is the exception. A Pacman frog, also covered on this site, is the opposite case: an ambush predator that strikes reflexively at anything finger-shaped and is never handled by hand."
+        "a": "No, this species is the exception. A Pacman frog is the opposite case: an ambush predator that strikes reflexively at anything finger-shaped and is never handled by hand."
       }
     ],
     "relatedProducts": [],
