@@ -2158,3 +2158,113 @@ hub stating numbers of its own.
   nail and beak care, sexing, body language, first aid, egg laying, household
   hazards and power outages are all covered by the shared guides in the
   sidebar, so I am not calling any of those a gap.
+
+## Rat (2026-09-09)
+
+Process note for the parent session, not part of the reader output: no Agent
+tool was exposed to this worker session (ToolSearch returns no Agent/Task
+tool), so no reader subagent could be launched. The set test prompt was run
+directly by this worker against `/home/user/beastlyfactss/.reader/rat/`,
+reading only those eight files, in filename order, before the hub was
+touched. What follows is that read, unedited.
+
+---
+
+Eight pages, read in order. The hub here is the pre-rewrite hub.
+
+**1. Page by page.**
+
+- 00 care guide hub, C+. I would skim it, not finish it. It is a fourth care
+  sheet: housing, diet, enrichment and health prose that the six deep dives
+  already carry, plus two cost tables. What I can act on is the checklist,
+  and the checklist is where its numbers stop matching the articles it sits
+  on top of.
+- 01 encyclopedia, B. Origin, adult size, the Wistar Institute history.
+  Nothing here changes what I do, but the size line and the wild lifespan
+  line are the only places on the site that carry them.
+- 02 cost, A-. The page I would screenshot. It prices the pair rather than
+  the animal, and it is honest that the cage is what swings the total.
+- 03 handling, A. The tail degloving rule and the explanation that
+  allogrooming is not biting are worth the page on their own.
+- 04 health issues, A. The 95% rattery figure and the two-year chronic
+  outlook turn cage cleaning from a chore into a lifespan decision.
+- 05 enclosure setup, A-. The tank-versus-wire-cage argument is the
+  best-reasoned thing in the set, because it names the mechanism.
+- 06 feeding, A-. Names actual guaranteed analyses instead of waving at
+  "a good quality food".
+- 07 enrichment, A. Seven categories I can audit my own cage against.
+
+**2. Hub and encyclopedia against the deep dives.** The encyclopedia earns
+its place; the hub does not, it repeats them and then disagrees with them.
+
+- Cage size. Hub: "A commonly cited minimum is 16x28x30 inches with multiple
+  levels for a rat." Setup guide: "PetMD lists 24x24x24 inches as the
+  minimum for a single rat and recommends the largest habitat possible
+  beyond that." Two different minimums, neither cross-referenced.
+- Temperature. Hub: "Keep the room roughly 65 to 80 degrees F without big
+  swings." Setup guide: "RSPCA guidance puts the ideal range at 19 to 23°C,
+  roughly 66 to 73°F, and rats generally do fine across a somewhat broader
+  64 to 79°F band."
+- Wheel. Hub: "at least 12 to 14 inches in diameter." Setup guide: "at least
+  12 inches in diameter, with many experienced keepers and rescues
+  recommending 14 to 16 inches for adult rats, especially males."
+- Cage price. Hub table: "24x24x36 in multi-level cage | $130 | $260." Cost
+  guide table: "$130 - $360" for the same cage line. Three more hub cost
+  rows are off by a few dollars against the cost guide (bedding, dishes and
+  bottle, thermometer).
+
+**3. The set as a whole.** Yes, I could set up, buy, feed and keep a pair of
+rats from these pages, and I would know which mistake matters most. What is
+missing: the setup guide tells me heat stress is a real risk above about
+86°F and never tells me what it looks like or what to do; nothing anywhere
+tells me how to introduce two rats to each other, which matters for a
+species the same set tells me four times must never live alone; and beyond
+"spaying a female before 7 months lowers her risk", nothing says whether to
+neuter, or what it costs.
+
+**4. Overlap and conflict across the deep dives.** I read the never-alone
+rule on four pages and the ammonia mechanism on three, and both agree every
+time, which reads as reassuring rather than padded. Two numbers do not
+agree. The cost guide's table sells a "24x24x36 in+ multi-level wire cage"
+while the setup guide's sourced minimum is "24x24x24 inches"; and the cost
+table's "Solid-surface exercise wheel, 12 in or larger" sits against the
+setup guide's "ideally 14 to 16 inches for an adult". Neither is a
+contradiction exactly, but I had to work that out myself.
+
+**5. One link per page.**
+
+| Page | Sentence | Should point to |
+|---|---|---|
+| Hub | "rats with chronic respiratory disease rarely live past 2 years" | health issues guide |
+| Encyclopedia | no slot for one | |
+| Cost | "mammary tumor removal is one of the more common surgical costs in this species" | health issues guide |
+| Handling | "Daily handling, playtime, and supervised time outside the cage matter for a rat's wellbeing" | enrichment guide |
+| Health issues | "a thermometer to confirm the room isn't running colder, damper, or draftier than it should" | enclosure setup guide |
+| Enclosure setup | "heat stress becomes a real risk above about 86°F" | nothing in this set covers the signs |
+| Feeding | "obesity is common in pet rats and that calorie restriction... is one of the few interventions actually shown to extend their lifespan" | health issues guide, pituitary tumors |
+| Enrichment | "a cage that fits a group is the first purchase" | enclosure setup guide |
+
+**6. Trust.** The hub is what made me doubt them: four numbers on the page
+the navigation lands on first do not match the articles underneath it. The
+deep dives themselves cite Merck, RSPCA, PDSA, VCA, PetMD and AFRMA by name
+and say when sources differ, which is the opposite problem. The sentence
+that most convinced me a keeper wrote this, from handling: "A rat's tail
+skin can shear away from the tissue underneath under pulling or grasping
+pressure, an injury called degloving or tail slip, and it's specifically
+caused by exactly this kind of handling."
+
+**7. Set grade: B+.** The deep dives are specific, sourced and consistent
+with each other; the hub sitting in front of them contradicts four of their
+numbers. Two changes first: make the hub carry the articles' numbers or
+none, and tell me what heat stress looks like on the page that warns me
+about it.
+
+**8. Not covered anywhere.** Checked against the Health and More list, which
+shows only the vet trips guide, the grooming guide and the three-rodent
+roundup.
+
+- The signs of heat stress and what to do about them. The shared small
+  mammal heat and cold guide is not in this species' sidebar.
+- How to introduce two rats to each other.
+- Whether to neuter, and what it costs.
+- What to do for a pair in a heatwave or a power outage.

@@ -4576,3 +4576,203 @@ enrichment guide's "Do not buy a conure expecting a quiet bird": both
 are scoped and hedged correctly (the enrichment guide is a genus-level
 page and names sun conures), so nothing was changed, but the router
 hub no longer carries the "apartment parrot" prose either way.
+
+## Rat (2026-09-09, first pass)
+
+Eight pages (hub, encyclopedia, cost, handling, health issues, enclosure
+setup, feeding, enrichment), read from the `.reader/rat/` extract before the
+hub was rebuilt. Single-pass review, the batch's default shape. No Agent
+tool was available in the worker session, so the set test prompt was run by
+the worker itself against the extract rather than by a separate reader
+agent; the raw output is in docs/READER_LOG.md under "Rat (2026-09-09)".
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | A fourth care sheet that repeats the deep dives and then disagrees with four of their numbers. |
+| Encyclopedia | B | Origin, adult size, and the Wistar Institute history; nothing to act on, but the only place the size line lives. |
+| Cost | A- | Prices the pair rather than the animal, and is honest that the cage swings the total. |
+| Handling | A | The tail degloving rule and the allogrooming explanation carry the page. |
+| Health issues | A | The 95% rattery figure and the two-year chronic outlook turn cage cleaning into a lifespan decision. |
+| Enclosure setup | A- | The tank-versus-wire-cage argument names the mechanism instead of asserting the rule. |
+| Feeding | A- | Names actual guaranteed analyses instead of waving at "a good quality food". |
+| Enrichment | A | Seven categories a beginner can audit their own cage against. |
+
+Set grade: B+. "The deep dives are specific, sourced and consistent with
+each other; the hub sitting in front of them contradicts four of their
+numbers."
+
+Hub grade before the rebuild: C+. After the rebuild: router shape, 22
+first-week rows, every row copied from the deep dive it names, no figure of
+its own.
+
+### Hub versus the set, both sides quoted (all resolved by the router rebuild)
+
+- Cage size. Old hub: "A commonly cited minimum is 16x28x30 inches with
+  multiple levels for a rat." Enclosure setup guide: "PetMD lists 24x24x24
+  inches as the minimum for a single rat and recommends the largest habitat
+  possible beyond that." The 16x28x30 figure appears nowhere else on the
+  site and is cited to nothing. Resolved by construction: the hub's Cage
+  size row now copies the setup guide's sentence, PetMD figure and all, and
+  the buy list carries no dimension of its own.
+- Temperature. Old hub: "Keep the room roughly 65 to 80 degrees F without
+  big swings." Enclosure setup guide: "RSPCA guidance puts the ideal range
+  at 19 to 23°C, roughly 66 to 73°F, and rats generally do fine across a
+  somewhat broader 64 to 79°F band." Resolved: the hub row keeps both
+  ranges, plus the 86°F heat stress threshold, in the setup guide's words.
+- Wheel. Old hub: "A solid-surface exercise wheel at least 12 to 14 inches
+  in diameter." Enclosure setup guide: "most sources recommend at least 12
+  inches in diameter, with many experienced keepers and rescues
+  recommending 14 to 16 inches for adult rats, especially males." The old
+  hub had merged a floor and a target into one range. Resolved: the hub row
+  keeps both figures separately, as the source states them.
+- Cage price. Old hub cost table: "24x24x36 in multi-level cage | $130 |
+  $260." Cost guide table: "$130 - $360" for the same line. Three smaller
+  rows differed too: bedding ($15-$25 hub against $18-$30 cost), dishes and
+  bottle ($10-$20 against $10-$18), thermometer ($10-$15 against $11-$19).
+  Resolved: the hub carries no prices at all now, and its one Budget row
+  copies the cost guide's own totals ($250 to $550 for a pair, about $130 to
+  $360 for the cage, $20 to $40 a month, $60 to $110 for a wellness exam).
+
+### Deep dives against each other
+
+Read four times that rats must never be kept alone (cost, setup, feeding,
+enrichment) and three times that ammonia drives chronic respiratory disease
+(cost, setup, health). Both agree everywhere, which reads as reassuring
+rather than padded, so neither was cut.
+
+One real numeric mismatch, fixed. The cost guide's setup table sold a
+"24x24x36 in+ multi-level wire cage with solid ramped shelves", a dimension
+no source in either Sources block states, against the enclosure setup
+guide's PetMD-sourced "24x24x24 inches as the minimum for a single rat".
+Neither Sources block settles it because only one of the two figures is
+sourced at all: the cost guide's block cites PDSA (cages built for ferrets
+or chinchillas) and Merck, neither of which gives 24x24x36, while the setup
+guide cites PetMD for 24x24x24. Under the batch prompt's tiebreak the page
+whose subject is that topic keeps its figure and the other changes; the
+setup guide is the size page and its figure is the sourced one. The cost
+guide's cell now reads "Multi-level wire cage with solid ramped shelves"
+with the price range untouched, so the site states one cage minimum, in one
+place, from a named source.
+
+Not a conflict, left alone: the cost table's "Solid-surface exercise wheel,
+12 in or larger" against the setup guide's "at least 12 inches in diameter,
+with many experienced keepers and rescues recommending 14 to 16 inches for
+adult rats". Both name 12 inches as the floor and the setup guide adds the
+target above it; that is a minimum and a recommendation, not two answers.
+
+### Gaps, checked against the Health and More list first
+
+The sidebar for this species shows only three shared pages: the small mammal
+vet trips guide, the grooming guide, and the three-rodent roundup.
+
+- Heat stress signs and first aid. The setup guide warns that "heat stress
+  becomes a real risk above about 86°F" and never says what it looks like.
+  The shared small mammal heat and cold guide covers exactly this, in order,
+  with the do-not-use-ice-water rule, but it is not wired into the rat entry
+  in relatedArticles.js, so it is not in this species' sidebar. Half fixed
+  in scope: the setup guide now links it in body and the hub carries a Heat
+  stress signs row sourced to it. The relatedArticles line is written up for
+  the parent to apply (scratch shared-edits file).
+- How to introduce two rats to each other. Real gap. No page in the set and
+  no shared small mammal guide covers introductions, for a species four
+  pages tell the reader must never live alone. Not fixable with a link.
+- Whether to neuter, and what it costs. Only the health guide's "spaying a
+  female rat before 7 months of age meaningfully lowers her lifetime risk"
+  touches it. Real gap.
+- What to do for a pair in a heatwave or a power outage. Partly covered by
+  the shared heat and cold guide once it is wired in.
+
+### Stranded questions
+
+- The cost guide prices "mammary tumor removal" as one of the more common
+  surgical costs in the species; the health guide explains what the tumor is
+  and that most are operable fibroadenomas. Neither pointed at the other.
+  Fixed with a link.
+- The enrichment guide says "a cage that fits a group is the first
+  purchase" and never gives a size; the setup guide has the size. Fixed
+  with a link.
+- The feeding guide says calorie restriction is one of the few interventions
+  shown to extend a rat's lifespan; the health guide is where a high-calorie
+  diet turns into pituitary tumor risk. Fixed with a link.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "rats with chronic respiratory disease rarely live past 2 years" | health issues guide | n/a, hub prose is gone; the route and the Respiratory disease row link it |
+| Encyclopedia | none possible | | structured data, no link slot |
+| Cost | "mammary tumor removal is one of the more common surgical costs in this species" | health issues guide | added |
+| Handling | "Daily handling, playtime, and supervised time outside the cage matter for a rat's wellbeing" | enrichment guide | skipped, the sentence sits in the closing paragraph, where RULES says the article ends on the animal, and the Deep Dive list already carries enrichment |
+| Health issues | "a thermometer to confirm the room isn't running colder, damper, or draftier than it should" | enclosure setup guide | skipped, the clause is one item in a four-item husbandry list and breaking it for a link reads as an editor's note |
+| Enclosure setup | "heat stress becomes a real risk above about 86°F" | shared small mammal heat and cold guide | added |
+| Feeding | "obesity is common in pet rats and that calorie restriction... is one of the few interventions actually shown to extend their lifespan" | health issues guide | added |
+| Enrichment | "a cage that fits a group is the first purchase" | enclosure setup guide | added |
+
+Every added link sits after the first H2, outside any ComparisonTable cell,
+and each article carries at most one link to a sibling suffix guide (cost
+and feeding to health issues, enrichment to enclosure setup; the setup
+guide's new link is to a shared class guide and does not count against the
+cap).
+
+### Trust
+
+What made the reader doubt the set was the hub, not the articles: four
+numbers on the page the navigation lands on first did not match the pages
+underneath it. The deep dives name Merck, RSPCA, PDSA, VCA, PetMD and AFRMA
+and say where sources differ. The sentence that most convinced the reader a
+keeper wrote this, from handling: "A rat's tail skin can shear away from the
+tissue underneath under pulling or grasping pressure, an injury called
+degloving or tail slip, and it's specifically caused by exactly this kind of
+handling."
+
+### The reader's two changes
+
+1. Make the hub carry the articles' numbers or none. Done: router rebuild.
+2. Tell the reader what heat stress looks like on the page that warns about
+   it. Done: the setup guide's 86°F sentence now links the shared heat and
+   cold guide's ordered signs, and the hub carries a Heat stress signs row.
+
+### Encyclopedia
+
+Checked, nothing changed. The entry's wild lifespan ("About 1 year on
+average in the wild, commonly 5-12 months, occasionally up to 3 years") is
+stated nowhere else in the set, so nothing contradicts it. Its pet figure,
+"pet fancy rats typically live 2-3 years, occasionally to 4", matches the
+cost guide's PDSA sentence word for word in substance; the cost guide's
+Merck figure of "18 to 36 months" sits inside that band and the cost guide
+already states both side by side, so this is two sources reported honestly
+rather than a conflict. Adult size (7-10 in body, 6-8 in tail, 0.8-1 lb
+females, 1-1.4 lb males) appears in no deep dive, so it carries no source in
+the hub row and nothing disputes it. Difficulty is "Beginner" in both the
+encyclopedia entry and the hub. No field was edited.
+
+### Dates
+
+No lastUpdated bumped. Every rat deep dive is future-dated (2026-09-21, and
+2026-10-17 for enrichment) with lastUpdated equal to date, so stamping
+today's Eastern date, 2026-09-09, would put lastUpdated before the publish
+date. The one fact-bearing edit, the cost guide's cage cell, removed an
+unsourced figure rather than adding one, on an article that has not
+published yet. Recorded here rather than dated.
+
+### Fixed the same day
+
+Hub rebuilt to the router shape: 22 first-week rows, each copied from the
+deep dive it names (16 from the six rat guides, 1 from the encyclopedia for
+adult size, 3 from the shared grooming, heat and cold, and vet trips
+guides), the emergency card copying the health guide's "When to See a Vet"
+list bullet for bullet with its hedges in the vetLine, six routes for the
+six own deep dives, a twelve-item buy list with no prices, and three FAQs
+copied verbatim from the setup, enrichment and health guides' frontmatter.
+`costs`, `sections` and the old six FAQs dropped. Deep dives: the cost
+guide's cage cell reconciled to the setup guide's sourced minimum, and four
+links added (cost to health issues, setup to the shared heat and cold guide,
+feeding to health issues, enrichment to setup).
+
+### Open
+
+- No page covers introducing two rats to each other.
+- No page covers whether to neuter a pet rat or what it costs.
+- `small-mammal-temperature-heat-stress-guide` still needs adding to the rat
+  entry in src/lib/data/relatedArticles.js before the shared guide shows in
+  this species' sidebar.
