@@ -3390,6 +3390,94 @@ Full gate suite green (internal links, related articles, affiliate,
 cost coverage, SEO tags, voice --strict, species numbers, eslint on
 the touched data file).
 
+## Chinchilla (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, eleven pages (hub, encyclopedia, cost, handling,
+health issues, housing, feeding, enrichment, legal, vs guinea pig, vs
+hamster), about 100k tokens. Single-pass review, the batch's default
+shape.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | Gives a shopping checklist and cost tables you can act on, but its numbers disagree with the deep dives. |
+| Encyclopedia | B+ | Adds real history (13 founder animals, the fur trade) with nothing to buy or do. |
+| Cost | A- | Two clean dollar ranges you can actually budget against. |
+| Handling | A- | The exact hold technique, the tail warning, fur slip explained clearly. |
+| Health issues | A- | The 150 rule and a clear vet-now list. |
+| Housing | B | Cage and dust-bath specs to shop against, but its numbers disagree with the hub. |
+| Feeding | A | A ration you can follow tonight, and it admits where sources disagree. |
+| Enrichment | A | Cites a named study and gives a priority order for building the cage. |
+| Legal | A | Fact-checks specific bans and permit myths with statute citations. |
+| vs Guinea Pig | B+ | Helped decide, though its lifespan framing clashed with the hub. |
+| vs Hamster | B+ | Same value, same size-number wobble against the encyclopedia. |
+
+Set grade: B+. "Deep, well-sourced, occasionally sloppy about keeping
+its own numbers straight."
+
+Hub versus the set, both sides quoted (resolved by the router
+rebuild): wheel size, old hub "12-14 in solid exercise wheel" against
+the housing guide's real "A solid metal wheel, 15 inches or larger,"
+which also matches the cost guide's own "15\" or larger" line item;
+cage height, old hub "24x24x48 in multi-level cage" against the
+housing guide's real "around 24 by 24 by 36 inches"; ideal room
+temperature stated three different ways, old hub "comfortable at 60 to
+72 degrees F," the housing guide's real "Ideal room temperature 50 to
+68°F" plus the 150-combined-with-humidity rule, and the feeding
+guide's own aside "roughly 60 to 70°F, with anything above about 75°F
+risky." All now resolved by construction: the router hub copies the
+housing guide's real figures verbatim, and the feeding guide's aside
+was cut to a pointer at the housing guide rather than restating a
+third version.
+
+A same-site fur-density conflict fixed independent of any single deep
+dive: the old hub's funFact and FAQ said "up to 60 hairs per follicle
+(humans have only 1)," while the encyclopedia's own overview
+("extraordinarily dense fur (up to 80 hairs per follicle, versus 2-3
+for humans)") and the vs-guinea-pig guide's own FunFact ("up to 80
+hairs growing from a single follicle compared to 2 to 3 for a human")
+independently agree on 80 versus 2 to 3. Corrected the hub's top-level
+funFact field to match the two agreeing sources.
+
+A real encyclopedia field error, researched and fixed: the
+`wildLifespan` field held "10-20 years." Opened the Merck Veterinary
+Manual's chinchilla page directly: "Chinchillas have a long lifespan,
+up to 20 years," with no wild-specific figure given anywhere in the
+source. The 10-20 year range is the captive range every deep dive and
+both vs-pieces already use for pet chinchillas; the field was
+mislabeling it as wild. Corrected to "Not documented (the widely
+quoted 10-20 years is a captive range; wild longevity for this species
+has not been studied)," the exact phrasing the leopard gecko
+encyclopedia entry already uses for the same kind of gap.
+
+Recommended links, three added: handling's fracture-risk sentence to
+health issues; health issues' antibiotic mention (GI problems section)
+to the shared antibiotic-associated-enterotoxemia-guide (no
+same-species cap, it's a shared class guide); feeding's heat-stress
+aside converted to a pointer at the housing guide instead of restating
+a third temperature range. Not added: the reader's suggested
+hub-checklist and encyclopedia links (out of scope, not deep dives).
+
+Left as sourced, not a bug: the vs-hamster guide's FAQ already
+disambiguates its own "14 to 19 inches including its tail" against the
+encyclopedia's body-only "9-15 inches," so despite reading as a size
+conflict out of context, the guide's own wording already explains the
+difference.
+
+Unsourced, needs a fact-check, left for Mike: the housing guide's own
+"10 to 30 minutes" dust-bath duration, cited in part to Merck,
+doesn't match the shared small-mammal grooming guide's own Merck
+citation of "up to 15 minutes." Both cite the same source for
+different numbers; resolving it means editing the shared guide, which
+is content outside this species' own deep dives.
+
+Not covered anywhere: where to find and vet a reputable breeder or
+rescue; how to safely introduce two chinchillas to each other. Both
+filed in docs/READER_LOG.md.
+
+Full gate suite green (internal links, related articles, affiliate,
+cost coverage, SEO tags, voice --strict, species numbers, eslint on
+the touched data files).
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3823,3 +3911,33 @@ the touched data file).
   concept of zero"), the peer-reviewed specifics versus a plainer
   vocabulary summary of the same real research, not a numeric
   disagreement.
+- 2026-09-09, chinchilla (batch C, single pass, branch
+  claude/batch-c-setup-kgvj92): hub rebuilt to router shape, resolving
+  a wheel-size conflict (old hub "12-14 in," housing guide's real "15
+  inches or larger," matching the cost guide's own line item), a
+  cage-height conflict (old hub "24x24x48," housing guide's real "24
+  by 24 by 36"), and a three-way temperature conflict (old hub
+  "60-72°F," housing guide's real "50-68°F" plus the 150 rule,
+  feeding guide's own aside "60-70°F, above 75°F risky," now cut to a
+  pointer at the housing guide), all by construction. A same-site fur-
+  density conflict fixed independent of any deep dive: the old hub's
+  funFact and FAQ said "up to 60 hairs per follicle, humans have only
+  1," while the encyclopedia and the vs-guinea-pig guide's own FunFact
+  both independently say "up to 80 hairs per follicle, versus 2 to 3
+  for humans"; corrected the hub's funFact to match the two agreeing
+  sources. A real encyclopedia field error, researched and fixed: the
+  `wildLifespan` field held "10-20 years," which is actually the
+  captive range (Merck Veterinary Manual gives "up to 20 years" for
+  captivity and states no wild figure at all); corrected to "not
+  documented in the wild," the same phrasing already used for crested
+  gecko and leopard gecko's identical gap. Three links added (handling
+  to health issues, health issues to the shared enterotoxemia guide,
+  and the feeding guide's temperature aside converted to a pointer at
+  the housing guide). Left as is: the vs-hamster guide's "14 to 19
+  inches including its tail" already disambiguates itself against the
+  encyclopedia's body-only "9-15 inches," not a real conflict despite
+  reading as one out of context; the housing guide's own "10 to 30
+  minutes" dust-bath duration against the shared grooming guide's
+  Merck citation of "up to 15 minutes" is a genuine minor mismatch
+  between one species deep dive and a shared class guide, left for
+  Mike since fixing it means editing content outside this species.

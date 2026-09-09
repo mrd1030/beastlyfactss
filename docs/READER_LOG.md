@@ -1781,3 +1781,15 @@ Set grade: B+. Deep, well-sourced content undercut by unreconciled numbers betwe
 Real conflicts found: pellet percentage (old hub 60-70%, feeding guide's VCA-cited 75-80%, and the feeding guide's own "20 to 40%" produce figure was actually VCA's seed-inclusion figure misattributed to fruits and vegetables, whose real produce split is 20-25% veg, 10% or less fruit); cage upgrade size (old hub "48x36x60 or larger," tank setup's real veterinary figure "closer to 40 by 30 by 60"); bar spacing (old hub "3/4 to 1 inch," tank setup's real "no more than 1 inch," dropping the floor); a CITES vote date error in the legal guide itself against its own cited USFWS press release (guide said October 2, 2016, the source and the encyclopedia both say October 3, 2016, verified by opening the source directly).
 
 Not covered anywhere: exact daily feeding portions in cups or grams for pellets and vegetables; what a baseline avian vet exam/workup should include beyond bloodwork and PBFD testing.
+
+## Chinchilla (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, eleven pages, about 100k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B+. Deep, well-sourced, occasionally sloppy about keeping its own numbers straight.
+
+Real conflicts found: wheel size (old hub "12-14 in," housing guide's real "15 inches or larger," matching the cost guide's own line item); cage height (old hub "24x24x48," housing guide's real "24 by 24 by 36"); fur density, same site two numbers (old hub funFact "up to 60 hairs per follicle, humans have only 1," encyclopedia and the vs-guinea-pig guide's own FunFact both say "up to 80 hairs per follicle, versus 2 to 3 for humans," confirmed the encyclopedia's number is the one two independent site sources agree on); ideal room temperature stated three ways (old hub "60-72°F," housing guide's real "50-68°F" plus the 150 rule, feeding guide's own aside "60-70°F, above 75°F risky"). A wildLifespan field error found independent of the deep dives: the encyclopedia's `wildLifespan: "10-20 years"` is actually the captive range (confirmed against Merck Veterinary Manual, which gives "up to 20 years" for captivity and no wild figure at all), corrected to the site's established "not documented in the wild" phrasing used for other species with the same gap (crested gecko, leopard gecko).
+
+Not covered anywhere: where to find and vet a reputable breeder or rescue; how to safely introduce two chinchillas to each other; the correct minimum cage dimensions (resolved by the router rebuild).
