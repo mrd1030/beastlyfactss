@@ -2594,3 +2594,79 @@ The two changes I would make first:
 - What to do about a box turtle's homing instinct in practice. The hub warns
   that "even a few miles can disorient them fatally" and nothing, shared or
   otherwise, says what that means for an escape or a move.
+
+## Blue Tongue Skink (2026-09-09)
+
+Independent Opus reader, launched from the session against the pre-rewrite
+extract in .reader/blue-tongue-skink/. Raw output, unedited.
+
+# Blue Tongue Skink set review
+
+## 1. Page by page
+
+- **00 hub**: Finished it, but it is the weakest page. Actionable: enclosure size, cost tables, shopping checklist. Everything else is a lower resolution copy of the deep dives, and some of it is wrong. **D+**
+- **01 encyclopedia**: Finished it, 675 words, no filler. Actionable: nothing husbandry, but the 1982 export ban and the pygmy bluetongue rediscovery are genuinely the frame for the whole set. **B**
+- **02 cost**: Finished. Actionable: budget, and a real buying recommendation (captive-bred Northern). Two internal number problems. **B+**
+- **03 handling**: Finished. Actionable: 2 to 3 week settle, 5 minutes building to 15, the huff scale, side approach, never by the tail. Best page in the set. **A**
+- **04 health**: Finished. Actionable: MBD signs, fenbendazole/praziquantel, shed vs scale rot. Thin on numbers, no humidity targets, no way to score body condition. **B**
+- **05 tank setup**: Finished. Actionable: everything. This is the page I would build from. **A-**
+- **06 feeding**: Finished. Actionable: schedule by age, skull-sized portion, toxic list, weekly gram weighing, 7 to 10% loss threshold. **A**
+- **07 enrichment**: Finished. Actionable: scatter feed, dig box tub, hides at both ends, priority order. **B+**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place. The hub does not. It restates housing, diet, enrichment and health at lower resolution, and it contradicts the deep dives on the numbers I would actually buy against.
+
+- Basking: hub says "Surface temperatures of 95 to 110 degrees F are required"; setup says "Northern basking surface: 105 to 115 F. Indonesian basking surface: slightly cooler, 100 to 105 F."
+- UVB strength: hub says "Moderate UVB (T5 HO 5 to 6%, or Arcadia 6% Forest Bulb)"; setup says "A T5 HO bulb in the 10.0 to 12% range." Those are different bulbs, and the hub's is in the cost table and the checklist.
+- Photoperiod: hub says "Run UVB on a 10 to 12 hour cycle"; setup says "roughly 11 to 13 hours depending on season."
+- Substrate depth: hub "3 to 4 inches deep"; setup "Keep it 4 to 6 inches deep."
+- Cool side: hub "cool side 70 to 75 degrees F"; setup "Cool side (both): 70 to 80 F."
+- Diet ratio, hub against itself: body says "approximately 40 to 60% vegetables and leafy greens, 30 to 40% protein"; its own FAQ says "roughly 60% animal protein and 40% vegetables and greens."
+- Lifespan: hub FAQ "commonly live 15 to 25 years"; cost guide "15 to 20 years is the commonly cited average."
+- Size: hub "Adults can reach 18 to 24 inches"; encyclopedia "17-24 inches."
+
+## 3. The set as a whole
+
+Yes, I could set up, buy, feed and keep this animal, on the strength of 02, 05 and 06 alone. Still missing: whether two can be housed together, how to actually run a brumation (06 says "provided temperatures are managed" and never says to what), substrate spot-clean and full-change schedule, bulb wattage and mounting height beyond "no closer than about 10 inches," and how to inspect an animal before buying.
+
+Questions answered elsewhere without the text saying so: handling says wait "2 to 3 weeks" while feeding gives the real acclimation window ("Captive-bred skinks typically acclimate within about 2 weeks, wild-caught individuals can take up to 2 months"). Health names obesity but the portion size that prevents it ("about 1 to 2 tablespoons for an adult") is only in feeding. Cost says "A thermostat is essential" and never says what one does; the shared heating guide does.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice: Northern vs Indonesian origin (cost, handling, health, setup, all four), quarantine and fecal exams (cost, health, setup), obesity (hub, health, feeding, enrichment), floor space beats height (hub, setup, enrichment).
+
+Conflicts:
+
+- Vet cost, inside 02: table says "Annual vet wellness check | $50 | $90"; body says "A routine exam runs roughly $100 to $150."
+- Setup table in 02 sums to about $290 to $555, but the heading reads "Upfront Setup: Roughly $400 to $800." The thermostat it calls essential is on no table and on no checklist.
+- Inside 05: "Northern basking surface: 105 to 115 F" against "a safe ceiling around 110 F to avoid burns."
+
+## 5. One link per page
+
+- **00**: "Subspecies identification matters for care." Point it at the tank setup guide.
+- **01**: "Australia's 1982 ban on commercial wildlife export means the animals sold abroad today are largely Indonesian and New Guinean species taken from the wild." Point it at the health issues guide.
+- **02**: "wild-caught Indonesian skinks frequently need a fecal exam and deworming treatment right after purchase." Point it at the health issues guide.
+- **03**: "Leave a new skink alone for 2 to 3 weeks before attempting to handle it." Point it at the feeding guide.
+- **04**: "This is manageable at home through portion control rather than free-feeding." Point it at the feeding guide.
+- **05**: "A heat source (halogen or a deep heat projector) on a thermostat is required." Point it at Reptile Heating and Thermostats.
+- **06**: "Inadequate basking temperature or UVB." Point it at the tank setup guide.
+- **07**: "Do not overfeed while making food more interesting." Point it at the feeding guide.
+
+## 6. Trust
+
+Doubts: the hub reads like it was written from a different sourceset than the deep dives and never reconciled, and it is the page navigation lands on first. The 93% parasite figure is cited to "a peer-reviewed study" with no name. The encyclopedia's "Wild Lifespan 15-20" gets reused as a captive figure elsewhere.
+
+The sentence that convinced me a keeper wrote this: "Wash your hands first, so they do not smell like a food item."
+
+## 7. Grade: B-
+
+Strong deep dives dragged down by a hub that contradicts them on temperature, UVB, and substrate depth. First two changes: make the hub inherit its numbers from the tank setup and feeding guides, or cut the duplicated sections entirely; then fix 02 so the setup table includes the thermostat, sums to the stated total, and states one vet exam price.
+
+## Not covered anywhere
+
+- Cohabitation: can two blue tongue skinks share an enclosure, ever.
+- Brumation husbandry: what temperature and photoperiod to hold during the 3 to 4 month slowdown.
+- Enclosure cleaning: spot-clean frequency and full substrate change interval.
+- How to inspect a skink before buying: what a healthy animal looks like at the shop or expo.
+- Basking bulb wattage and mounting distance for a 4x2x2 enclosure.
