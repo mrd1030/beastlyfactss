@@ -5981,3 +5981,316 @@ guessed at. No `lastReviewed` was touched.
   toad, Pacman frog, tiger salamander) still tell readers to use RO water
   on an amphibian, the same error this pass corrected here. Out of scope
   for batch E; listed in the batch's shared-edits notes.
+
+## Red-Eared Slider (2026-09-09, first pass)
+
+Batch E. Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal). One independent Opus reader,
+run against `.reader/red-eared-slider/` before the rewrite, under the READMEFIRST
+set test prompt; the raw output is in the reader log entry for this date. The
+review below reads the old legacy hub (housing, diet, enrichment and health
+prose, two cost tables, a ten-item checklist, six FAQs); the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | A compressed rerun of five deep dives, and it contradicts them. |
+| Encyclopedia | B | The 1975 FDA history and the export loophole are real content. |
+| Cost | B | Useful ranges, and one page quoting two different vet prices. |
+| Handling | B- | Finished, thin. Scoop from underneath, both hands, no hand-feeding. |
+| Health issues | A | The MBD versus pyramiding split is the best thing in the set. |
+| Tank setup | A | 10 gal per inch, depth 1.5 to 2x shell, Ferguson Zone 3, 10 to 12 hr photoperiod. |
+| Feeding | A | Schedule, portion, no salivary glands, seven reasons for refusal. |
+| Enrichment | A- | A priority order that follows from the study, with escape behavior as the metric. |
+| Legal | A- | My state's rule and the release ban, docked for a stale clock. |
+
+Set grade: B. "The deep dives are genuinely good and sourced; the hub drags the
+set down by contradicting them."
+
+Hub grade after the rebuild: A-. Twenty-six first-week rows, every one copied
+from the deep dive named in its source, seven routes, six emergency bullets, a
+ten-item buy list with no prices, three verbatim FAQs. Held back from an A
+because two rows (Cold water floor, Daily health check) are the only places a
+reader meets those figures at all, and because the old hub's nitrate ceiling
+left the site rather than moving into a deep dive.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, all resolved by the router rebuild.
+
+- Tank size. Old hub, in the housing prose and again in the checklist and two
+  FAQs: "A 10-inch adult female (females grow significantly larger than males)
+  needs a 100-gallon or larger aquarium or stock tank." Tank setup guide:
+  "Roughly 10 gallons of water per inch of shell length is the rule of thumb VCA
+  Animal Hospitals gives for housing aquatic turtles. In practice, that means a
+  practical adult minimum of 75 to 100 gallons for one turtle, with many
+  experienced keepers recommending 100 to 125 gallons or more." The tank setup
+  guide is the subject page and its cited source (VCA Animal Hospitals, housing
+  aquatic turtles) states the rule; Tree of Life Exotic Pet Medical Center,
+  opened this pass, independently gives "for most adult turtles this results in
+  75-100 gallons PER turtle." The hub's Tank size row now quotes the tank setup
+  sentence, both ranges kept.
+- Water temperature, hub against itself. Old hub housing prose: "Water
+  temperature should be maintained at 72 to 78 degrees F with a submersible
+  aquarium heater." Old hub checklist, eight lines later: "Water heater (75 to
+  80 degrees F)." Tank setup guide: "Water temperature should sit at 72 to 82°F,
+  the range LafeberVet's aquatic turtle care sheet gives, though stability
+  matters more than hitting an exact number." Two hub figures, neither matching
+  the deep dive or each other. The hub keeps no figure of its own now; its Water
+  temperature row quotes the tank setup sentence.
+- Adult feeding interval. Old hub: "Feed juveniles daily and adults every other
+  day." Feeding guide: "Juveniles eat daily, adults move to every 2 to 3 days
+  rather than daily." The feeding guide's phrasing is an explicit correction of
+  the every-other-day rule, so the hub was repeating the thing the deep dive
+  exists to fix. The hub's Feeding schedule row now quotes the feeding guide.
+- The pellet percentage. Old hub, in the diet prose and again in a FAQ:
+  commercial pellets "should form the nutritional foundation - approximately 50%
+  of the diet." Feeding guide: "Sources disagree meaningfully on the exact
+  percentage split (see the FAQ above), so treat any specific number as a rough
+  guideline, not a settled figure, the direction is what matters." The deep dive
+  refuses to give a number and says why; the hub gave one anyway. The hub's Diet
+  split row now quotes the refusal, including the hedge.
+- Lifespan. Old hub FAQ: "20 to 40 years in captivity with appropriate care."
+  Cost guide: "20 to 30 years with good care is the consensus range, with 20 to
+  25 cited as typical," and its FunFact adds "a handful of far less consistently
+  documented claims put the ceiling as high as 40 to 70 years." The cost guide's
+  cited source, Tree of Life Exotic Pet Medical Center, says "average 20-30
+  years, rarely up to 70 years," which supports the deep dive and not the hub's
+  40-year captive ceiling. The hub's Lifespan row now quotes the cost guide.
+- Glass behavior. Old hub enrichment prose: "Many sliders track movement outside
+  their tank and approach the glass when they see their keeper - this is
+  associative learning and a sign of normal, healthy cognitive engagement."
+  Enrichment guide, "What Not to Do": "Do not treat constant glass-working as a
+  personality trait," and, in the body, "If your turtle is working the front
+  glass constantly, take the escape-behavior finding seriously before you buy a
+  colored object." A recommendation conflict, not a number: the hub read the
+  behavior as a good sign, the deep dive reads it as a welfare signal. The
+  enrichment guide cites the pond slider study for it and is the subject page,
+  so it keeps its position; the hub's claim is gone rather than moved, and the
+  hub's Enrichment row now quotes the escape-behavior sentence.
+- Costs, line by line. The old hub carried the cost guide's entire setup and
+  annual tables as its own `costs` block, including "Annual vet wellness check:
+  $60 to $100," which was the figure the cost guide's own body contradicted (see
+  below). The router hub has no cost table; its Budget row quotes the cost
+  guide's totals and vet prices.
+
+Also gone with the old hub, and deliberately not moved into a deep dive: the
+weekly 25 to 30% water change and the "nitrate should stay below 40 ppm"
+ceiling. The reader named those as the hub's uniquely-owned, actionable content,
+so the water-change half was replaced with a sourced sentence in the tank setup
+guide (VCA Animal Hospitals: "the tank water must be changed at least once
+weekly, or more frequently if it becomes dirty") and is now a hub row. The 40
+ppm nitrate ceiling is not stated by any source this pass opened and is not on
+any deep dive, so it left the site rather than being rehomed. Listed under
+"Unsourced, needs a fact-check".
+
+### Deep dives against each other
+
+- Basking temperature. Tank setup guide: "Basking surface temperature should
+  reach 85 to 95°F per that same guidance," the guidance being LafeberVet's
+  aquatic turtle care sheet, which is in its Sources. Feeding guide: "Target
+  roughly 75 to 80°F water with an 85 to 90°F basking spot." None of the feeding
+  guide's four sources states 85 to 90; the tank setup guide is the subject page
+  for temperature and its source states its figure, and Tree of Life, opened
+  this pass, independently gives "a bask spot of 85-95 degrees F." Feeding
+  changed to 85 to 95°F. The water half of that same feeding sentence (75 to
+  80°F) sits inside the tank setup guide's 72 to 82°F range and is framed as a
+  target rather than a limit, so it was left alone; the shared reptile emergency
+  plan guide gives the same 75 to 80°F as the slider's normal water band.
+- Water volume. Tank setup guide: "a practical adult minimum of 75 to 100
+  gallons for one turtle, with many experienced keepers recommending 100 to 125
+  gallons or more." Enrichment guide, twice (body and FAQ): "An adult needs water
+  volume in the low hundreds of gallons." The tank setup guide owns sizes and
+  cites VCA for the rule of thumb the number comes from; the enrichment guide
+  cites the pond slider study and Case et al., neither of which gives a volume.
+  Both enrichment sentences changed to carry the tank setup figures, both ranges
+  kept.
+- Portion, inside the feeding guide. "Offer as much as the turtle can finish in
+  about 15 to 20 minutes," then, one sentence later, "A juvenile-specific
+  portion cue some sources use: roughly the size of the turtle's own head, or
+  whatever it clears in 10 to 15 minutes." Reading it cold, that is one page
+  giving two portion windows. It is really a general rule and a juvenile-only
+  cue, so no number changed: the second sentence now says so out loud ("For
+  juveniles specifically, some sources use a tighter cue instead"). Both figures
+  and the "some sources use" hedge survive.
+- Vet cost, inside the cost guide. Table: "Annual vet wellness check | $60 -
+  $100." Body: "Routine wellness exams often run $80 to $180." FAQ, agreeing
+  with the body: "Routine wellness exams run $80 to $180." The page's only
+  source, Tree of Life Exotic Pet Medical Center, was opened this pass and states
+  no prices at all, so nothing settles it from outside. Two of the three
+  statements say $80 to $180 and it is the more specific claim, so the table cell
+  changed to "$80 - $180". That moves the annual sum from $360 to $640 (which the
+  page rounded to "Roughly $350 to $650 a Year") to $380 to $720, so the section
+  heading, the FAQ, and the seoDescription all changed to $380 to $720 in the
+  same commit. Listed under "Unsourced, needs a fact-check", because neither
+  vet figure is attributable.
+
+Read twice or more with no conflict: adult size, UVB being mandatory,
+over-filtering, the fully drying basking platform, and never releasing a slider.
+Four pages saying the same three things reads as reinforcement here rather than
+padding, because each page says it for a different reason.
+
+### Gaps, checked against the Health and More list first
+
+Real:
+- Choosing a healthy hatchling at purchase, quarantine on arrival, transport,
+  and acclimation. The reptile guides in the Health and More list cover hygiene,
+  stool, shedding, thermostats and the emergency plan, but no quarantine guide
+  is listed for this species and no deep dive covers buying. Still open.
+- What a monthly deep clean involves, and how to swap filter media without
+  crashing the biofilter. Nothing in the list covers it. Still open, and note the
+  old hub's "monthly deep cleans are minimum maintenance" left the site with the
+  hub prose, so nothing now asserts it.
+- Outdoor pond specifics: depth, overwintering, predator-proofing. Four pages
+  call a pond ideal or excellent. The shared outdoor reptile housing guide is not
+  in this species' Health and More list. Still open.
+- Space and basking-spot allowance per additional slider. The handling guide
+  warns that "housing multiple sliders without enough space and basking spots"
+  causes aggression, stacking and injuries, and no page says how much is enough.
+  Still open; the warning is now a hub row so at least a reader meets it.
+
+Not real, covered by the sidebar already or closed this pass:
+- Cycling a tank before the turtle arrives. The reader's biggest gap. The shared
+  aquarium cycling guide is not in this species' Health and More list, but it
+  exists and covers the nitrogen cycle in full, so the tank setup guide now links
+  it in the filtration paragraph. Closed with a link, not new content.
+- Salmonella and hygiene, and the daily health check on a species whose waste
+  disperses into the water. Both shared guides in the list, and both are now hub
+  rows.
+- What to do when the water goes cold. Shared reptile emergency plan guide, whose
+  cold-floor table carries a slider row. Now a hub row.
+- Brumation protocol and egg binding. The shared tortoise brumation guide and the
+  shared tortoise sexing, eggs and egg binding guide both scope themselves out of
+  aquatic species in their own words ("that's a different species than the ones
+  this guide covers"; "treat this as a tortoise and box turtle guide rather than
+  a universal chelonian one"), so neither became a hub row and neither got an
+  in-body link. The feeding guide's own brumation entry and the tank setup
+  guide's nesting sentence are the only coverage, and both are now hub rows.
+
+### Stranded questions
+
+- The handling guide warns about housing multiple sliders and never points at the
+  tank setup guide for volume. Both are in the Deep Dive list on every page, so no
+  in-body link was added; the hub's Cohabiting and Tank size rows now sit two rows
+  apart.
+- The feeding guide lists gravidity as a reason for refusal; the tank setup guide
+  separately says gravid females need a nesting site or risk egg binding. Neither
+  mentioned the other. Both are now hub rows, adjacent in the card.
+- The feeding guide says digestion stops below about 72°F; the tank setup guide
+  owns the heater spec. Same reason, no link added, both are hub rows.
+- The old hub told a reader ammonia must read zero and never said how to get
+  there. Answered by the tank setup guide's new cycling link.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Sale of sliders with shells under 4 inches is illegal in the US under federal law." | Legal guide | Yes, as a route and a Legal row; the prose is gone |
+| Encyclopedia | "in 1975 the FDA banned the sale of turtles with a shell under four inches" | Legal guide | Skipped: the encyclopedia is not a deep dive and is out of scope for this pass |
+| Cost | "Federal law actually restricts the sale of turtles under 4 inches, not ownership." | Legal guide | Yes. The one sibling link this article is allowed, and the legal guide is the direct answer to the sentence's own question |
+| Handling | "Skipping thorough hand-washing before and after contact, Salmonella risk with aquatic turtles is real, not theoretical" | Salmonella and reptile hygiene guide | Yes |
+| Health issues | "A canister filter that's genuinely powerful enough for your tank volume, paired with a water test kit" | Tank setup guide | Skipped, and a better target used instead: the page's UVB sentence now links the cross-species UVB lighting guide, which does not count against the one-sibling limit and answers the question the MBD section raises |
+| Tank setup | "Gravid females need a nesting option, without a suitable place to lay, a female risks egg-binding" | Tortoise sexing, eggs and egg binding guide | Skipped: that guide explicitly scopes itself to land tortoises and box turtles and says an aquatic species "nests in a different way entirely". The page instead gained a link to the aquarium cycling guide, which closes a real gap |
+| Feeding | "Brumation. A natural cold-season slowdown, roughly October through March." | Tortoise brumation guide | Skipped: the brumation guide says outright that aquatic turtles are "a different species than the ones this guide covers" |
+| Enrichment | "An adult needs water volume in the low hundreds of gallons." | Tank setup guide | Skipped: the sentence now carries the tank setup figures directly, so the conflict is gone and a link is not needed |
+| Legal | none needed, it links out well already | | |
+
+Four links added. Three go to cross-species or shared guides (hygiene, UVB
+lighting, aquarium cycling) and do not count against the one-sibling-link limit;
+the fourth is the cost guide's single allowed sibling link. None sits before a
+first H2, none is inside a ComparisonTable cell, and each sentence is about the
+animal.
+
+### Trust
+
+What made the reader doubt the set: the hub disagreeing with its own checklist
+on water temperature and with four deep dives on everything else; the cost guide
+quoting two vet prices on one page; and the legal guide saying "That deadline is
+days away as of this writing" about a July 30, 2026 filing, with no date on the
+page. Reading it in September 2026, that sentence is wrong, and the reader said
+so directly: "I cannot tell how much else is stale."
+
+Most convincing, from the feeding guide: "sliders have no salivary glands and can
+only eat while at least partially submerged, always offer food in the water,
+never on the basking dock." Runner-up, from enrichment: "If your turtle is
+working the front glass constantly, take the escape-behavior finding seriously
+before you buy a colored object."
+
+### The reader's two changes
+
+1. Strip the hub to routing plus the water-maintenance schedule it uniquely owns,
+   and reconcile tank size, water temperature, feeding interval and vet cost to
+   one figure each. Done by the router rebuild: the hub now keeps no figure of
+   its own, the water-change half of the maintenance schedule moved into the tank
+   setup guide with a VCA citation and came back as a hub row, and all four
+   numbers resolve to the deep dive that owns them.
+2. Date-stamp the legal guide. Done, and better than a stamp: the relative clock
+   is gone. "That deadline is days away as of this writing" became "That date has
+   now passed: the filing window closed on July 30, 2026, and CPW has published no
+   extension, so an owner who never filed should contact CPW directly instead of
+   assuming the legacy route is still open." The section heading, the intro, the excerpt, the seoDescription,
+   the description, the state table's Colorado cell and the Colorado FAQ all
+   changed with it, so nothing on the page still reads as if the deadline is
+   ahead. Checked against Colorado Parks and Wildlife's approved Chapter W-7
+   (March 4, 2026), read in full: red-eared sliders are listed as invasive
+   herpetofauna under #708, the Basis and Purpose says "Legacy reporting is
+   required for possession of species noted in the Chapter acquired prior to May
+   1, 2026," and July 30, 2026 is the chapter's legacy filing date. No statute
+   citation, jurisdiction, date or hedge was changed.
+
+### Unsourced, needs a fact-check
+
+- Vet costs. The cost guide's only source states no prices, so both the $80 to
+  $180 exam range that won and the $150 to $400 emergency range beside it are
+  unattributed. The whole cost guide runs on one Sources entry and carries no
+  "Prices last checked" line under its tables, which RULES asks for whenever a
+  cost guide quotes retail prices. Out of scope for a links-and-numbers pass.
+- Nitrate under 40 ppm. Carried only by the old hub, stated by no deep dive and
+  by no source opened this pass. Dropped rather than rehomed. If it is right, it
+  belongs in the health guide with a citation.
+- The cost guide's $10 to $30 a month food line and $10 to $25 a month
+  electricity line, and the whole setup table, are equally unattributed.
+
+### Encyclopedia
+
+Checked the red-eared slider entry in `src/lib/data/encyclopedia/turtles.js`
+against the deep dives' sourced figures. One field changed.
+
+- Wild Lifespan, "20-40 years", against the cost guide's sourced captive figure
+  of "20 to 30 years with good care." A wild range that tops a captive range is
+  the same shape of problem batch A found on the Russian tortoise, so it was
+  researched rather than assumed. Animal Diversity Web (University of Michigan),
+  already the tank setup guide's source for adult size, states: "Slider turtles
+  can live up to 30 years in the wild" and "Captive sliders can live up to 41.3
+  years," and adds that average longevity is not well documented for either.
+  Changed to "Up to 30 years (Animal Diversity Web, University of Michigan, which
+  puts captive sliders at up to 41.3 years and notes average longevity is not
+  well documented for either)". Only that field was touched.
+- Adult Size, "5-12 inches (13-30 cm); females significantly larger." Animal
+  Diversity Web puts the average adult female at about 10 inches and the male at
+  about 7, which the tank setup guide quotes. Both sit inside the encyclopedia
+  range, so there is nothing to reconcile. Left alone.
+- Difficulty, "Advanced". The hub already matched. Unchanged.
+- Conservation, "Least Concern (IUCN); invasive outside native range", and the
+  history section's 280,000 Salmonella infections, the 1975 FDA rule and the
+  export loophole. All consistent with the legal guide and the tank setup guide's
+  PLOS ONE FunFact. No statute, date or jurisdiction touched.
+
+### Dates
+
+`lastUpdated` and `lastReviewed` bumped to 2026-09-09 on the cost, feeding, tank
+setup and legal guides, all of which had a number or a fact change. Not bumped on
+the handling and health guides, which only gained a link. Not bumped on the
+enrichment guide either: its `date` is 2026-10-26, so it has not published yet
+and a 2026-09-09 review stamp would sit before its own publish date.
+
+### Open
+
+- The four real gaps above: buying and quarantine, deep cleaning and filter
+  media, outdoor pond build, and per-turtle space when cohabiting.
+- The cost guide's single Sources entry and missing "Prices last checked" line.
+- The hub's Cold water floor row (65 to 70°F, from the shared emergency plan
+  guide) sits four rows above the Water temperature row (72 to 82°F, from the
+  tank setup guide). They answer different questions, a threshold to act on
+  versus a range to provide, and the labels say so, but this is the same shape as
+  the leopard gecko hub's 65°F/60°F pair that a reader flagged. Worth a look.

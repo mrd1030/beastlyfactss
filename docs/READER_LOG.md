@@ -2751,3 +2751,78 @@ First two changes: make the hub copy its numbers from the deep dives rather than
 - A body condition test more precise than "bulging over the tympanum."
 - Vacation cover and power outage plans.
 - Normal skin sloughing and appetite pauses.
+
+## Red-Eared Slider (2026-09-09)
+
+Independent Opus reader, launched from the session against the pre-rewrite
+extract in .reader/red-eared-slider/. Raw output, unedited.
+
+# Red-Eared Slider set: reader review
+
+## 1. Page by page
+
+- **00 hub**: Finished it, but it is a compressed rerun of five deep dives. Actionable: weekly 25-30% water change, nitrate under 40 ppm, cuttlebone. Grade C.
+- **01 encyclopedia**: Finished. Actionable: nothing husbandry, but the 1975 FDA history and export loophole are real content. Grade B.
+- **02 cost**: Finished. Actionable: $550-$1,250 setup, $350-$650/yr, vet exam $80-$180, emergency $150-$400. Grade B.
+- **03 handling**: Finished, thin. Actionable: scoop from underneath, both hands, no hand-feeding. Grade B minus.
+- **04 health**: Finished. Actionable: MBD vs pyramiding split, emergency list. Grade A.
+- **05 tank setup**: Finished. Actionable: 10 gal/inch, water depth 1.5-2x shell, Ferguson Zone 3 UVI 2.0-3.0, 10-12 hr photoperiod. Grade A.
+- **06 feeding**: Finished. Actionable: schedule, 15-20 min portion, no salivary glands, seven reasons for refusal. Grade A.
+- **07 enrichment**: Finished. Actionable: priority order, escape behavior as the metric. Grade A minus.
+- **08 legal**: Finished. Actionable: my state's rule, release ban. Grade A minus, docked for a stale clock (below).
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: the dime-store history and the export loophole appear nowhere else. The hub does not. Four of its five sections are thinner restatements of 04, 05, 06, 07, and it contradicts them.
+
+- Tank size. Hub: "A 10-inch adult female ... needs a 100-gallon or larger aquarium or stock tank." Tank setup: "a practical adult minimum of 75 to 100 gallons for one turtle."
+- Water temp, hub against itself. Hub housing: "Water temperature should be maintained at 72 to 78 degrees F." Hub checklist: "Water heater (75 to 80 degrees F)." Tank setup: "Water temperature should sit at 72 to 82 F."
+- Adult feeding. Hub: "Feed juveniles daily and adults every other day." Feeding: "adults move to every 2 to 3 days rather than daily."
+- Diet split. Hub: pellets "approximately 50% of the diet." Feeding: "Sources disagree meaningfully on the exact percentage split ... treat any specific number as a rough guideline."
+- Lifespan. Hub: "20 to 40 years in captivity." Cost: "20 to 30 years with good care is the consensus range."
+- Glass behavior. Hub: sliders "approach the glass when they see their keeper, this is associative learning and a sign of normal, healthy cognitive engagement." Enrichment: "Do not treat constant glass-working as a personality trait."
+
+## 3. Could I keep one
+
+Mostly yes. I can size the tank, light it, heat it, budget it, feed it, read the failure modes, and check my state. Missing: how to cycle a new tank before the turtle goes in (the hub tells me ammonia must read zero and never says how to get there), what a "monthly deep clean" actually involves, how to swap filter media without crashing the biofilter, outdoor pond specifics (depth, winter, predator-proofing) despite four pages calling a pond ideal, how to pick a healthy hatchling, quarantine, transport and acclimation, and how much extra space per additional turtle.
+
+Unsignposted answers inside the set: handling warns about housing multiple sliders and never points at 05 for volume; 06 lists gravidity as a reason for refusal and 05 separately says gravid females need a nesting site, neither mentions the other; 06 says digestion stops below 72 F and 05 owns the heater spec.
+
+## 4. Deep dive overlap and conflict
+
+Read twice or more: adult size, UVB mandatory, over-filter, dry basking platform, never release. That is four pages saying the same three things. Conflicts:
+
+- Basking. Tank setup: "Basking surface temperature should reach 85 to 95 F." Feeding: "Target roughly 75 to 80 F water with an 85 to 90 F basking spot."
+- Volume. Tank setup: "a practical adult minimum of 75 to 100 gallons." Enrichment: "An adult needs water volume in the low hundreds of gallons."
+- Portion, inside one page. Feeding: "Offer as much as the turtle can finish in about 15 to 20 minutes," then "or whatever it clears in 10 to 15 minutes."
+- Vet cost, inside one page. Cost table: "Annual vet wellness check | $60 - $100." Cost body: "Routine wellness exams often run $80 to $180."
+
+## 5. The one link each page needed
+
+- 00: "Sale of sliders with shells under 4 inches is illegal in the US under federal law." Point to the legal guide.
+- 01: "in 1975 the FDA banned the sale of turtles with a shell under four inches." Legal guide.
+- 02: "A 100-plus gallon enclosure is the single biggest line item here, and it's also the one first-time keepers most often try to shrink." Tank setup.
+- 03: "Skipping thorough hand-washing before and after contact, Salmonella risk with aquatic turtles is real, not theoretical." Salmonella and Reptile Hygiene.
+- 04: "A canister filter that's genuinely powerful enough for your tank volume, paired with a water test kit." Tank setup.
+- 05: "Gravid females need a nesting option, without a suitable place to lay, a female risks egg-binding, a serious complication." Tortoise Sexing, Eggs, and Egg Binding.
+- 06: "Brumation. A natural cold-season slowdown, roughly October through March." Tortoise Brumation, whose title hides that it applies here.
+- 07: "An adult needs water volume in the low hundreds of gallons." Tank setup, where the smaller number lives.
+- 08: None. It links out well already.
+
+## 6. Trust
+
+Doubts: the hub disagreeing with its own checklist and with four deep dives; the cost guide quoting two vet prices; and the legal guide saying "That deadline is days away as of this writing" about a July 30, 2026 filing, with no date on the page. Reading it in September 2026, that sentence is wrong and I cannot tell how much else is stale.
+
+Most convincing: "sliders have no salivary glands and can only eat while at least partially submerged, always offer food in the water, never on the basking dock." Runner-up, the enrichment line "If your turtle is working the front glass constantly, take the escape-behavior finding seriously before you buy a colored object."
+
+## 7. Set grade: B
+
+The deep dives are genuinely good and sourced; the hub drags the set down by contradicting them. First two changes: strip the hub to routing plus the water-maintenance schedule it uniquely owns, and reconcile the tank size, water temperature, feeding interval, and vet cost numbers to one figure each. Then date-stamp the legal guide.
+
+## Not covered anywhere
+
+- Cycling a new tank before the turtle arrives, checked against the Health and More list: no entry covers it.
+- What a monthly deep clean involves, and swapping filter media without losing the biofilter.
+- Outdoor pond build specifics: depth, overwintering, predator-proofing.
+- Choosing a healthy hatchling at purchase, quarantine, transport, and acclimation.
+- Space and basking-spot allowance per additional slider when cohabiting.
