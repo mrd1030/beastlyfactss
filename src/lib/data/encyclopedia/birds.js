@@ -65,7 +65,7 @@ export const birdEncyclopedia = [
       adultSize: "18 inches (46 cm); 1.1-1.7 lbs",
       wildDiet: "Seeds, nuts, fruit, and insects",
       wildLifespan: "40-60 years (some individuals living considerably longer)",
-      conservation: "Vulnerable (IUCN)",
+      conservation: "Endangered (IUCN)",
       history: "Philipp Ludwig Statius Muller described the species in 1776, and it went onto CITES Appendix II in 1981, a listing designed to cap exports rather than halt them. The cap leaked badly. Indonesian quotas set from 1988 were routinely overshot, and in 1991 alone trappers took at least 6,600 birds, exceeding local quotas by as much as eighteen times; researchers estimate 17 percent of the world population was removed annually between 1990 and 1993. The United States recorded 10,143 imports across the 1990s. Indonesia finally set a zero quota in 1999, and the IUCN reclassified the species as Endangered in 2018.",
     },
   },

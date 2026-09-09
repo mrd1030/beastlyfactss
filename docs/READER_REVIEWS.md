@@ -2865,6 +2865,81 @@ after the restored link.
 
 Verdict: fixed on the branch. Nothing merged to main.
 
+## Cockatoo (2026-09-09, batch B, single pass, before the router hub)
+
+One Opus agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, the screaming and
+plucking explainer), about 90k tokens. Single-pass review this
+species, to spend less per species; fixes below folded into one pass
+instead of first pass plus second pass.
+
+Set grade: B. "Strong, sourced, honest deep dives undercut by a hub
+that restates them with different numbers."
+
+Hub versus the set (all against the old legacy hub, resolved by the
+router rebuild): diet ratio (old hub 60-70% pellets against
+feeding/tank setup's sourced 75-80%), cage cost, food cost, and
+lifespan (old hub and encyclopedia agreed at 40-60; cost guide alone
+said "40 to 70-plus, Umbrella cockatoos commonly 50 to 70") all
+resolved by construction, plus one genuine philosophical conflict: the
+old hub's "most cockatoos crave cuddling and close physical contact"
+against the handling guide's cited behavior consultant, "cockatoos are
+not cuddly, we are," whose fix is cutting shoulder and lap time, not
+indulging it. The router hub carries handling's framing (a Bonding row
+warning against over-bonding), not the old hub's.
+
+Researched for real: the cost guide's "40 to 70-plus years, Umbrella
+cockatoos commonly 50 to 70" didn't match its own cited PetMD page,
+which actually says "20-40 years in the wild, and up to 70 years or
+more as pets" with no Umbrella-specific figure at all. Corrected to
+"40 to 60 years is typical, with some individuals living into their
+70s or beyond," matching the encyclopedia's own field. Feeding's diet
+percentages had the same dropped-qualifier bug found in cockatiel:
+"Pelleted food should make up 75 to 80%... the remaining 20 to 40%"
+sums past 100%; VCA's actual cited page says produce should be "no
+more than 20%-40%," restored that qualifier in the body and FAQ.
+
+A real encyclopedia error, not a deep-dive conflict: the cockatoo
+entry's own `conservation` field said "Vulnerable (IUCN)" while its
+own History paragraph said "the IUCN reclassified the species as
+Endangered in 2018," a direct self-contradiction. Checked Wikipedia's
+current IUCN listing (Endangered, 2018 assessment) directly; corrected
+the field. The legal guide's New Jersey section separately claimed
+"the Moluccan is Vulnerable" against its own Massachusetts section's
+"both assessed as endangered"; checked the Moluccan (salmon-crested)
+cockatoo's real IUCN status, also Endangered, and corrected NJ to
+match.
+
+A real same-article self-contradiction in the enrichment guide, not a
+cross-page one: the body explicitly says "we are not attaching a
+specific number of hours to [wild foraging time], because the figures
+that circulate for it do not trace to a source worth citing," then a
+heading two paragraphs later reads "Foraging, to Fill Six Hours" and
+an FAQ answer states "up to six hours a day" as fact. Separately, the
+body says a 2014 training-versus-other-treatments study's "training
+outperformed the rest" claim isn't verifiable and "this guide does not
+make it," then the very next FAQ question is "Why did training work
+best?" answered as though it were settled. Both fixed to match the
+body's own honest hedge rather than restating the disclaimed claims:
+the heading reworded, the "six hours" FAQ answer given no number, and
+the training FAQ rewritten to say the evidence doesn't clearly say so.
+
+Also fixed: `cockatoo-legal-guide` was missing from
+src/lib/data/relatedArticles.js entirely, the same wiring-bug class as
+leopard gecko's temperature guide and hamster's legal guide, invisible
+in every Deep Dive sidebar despite being cross-linked from other
+cockatoo articles and shown in the hub's own routes. Added.
+
+Left open, filed rather than fixed in a hub-and-fixes pass: no page
+reconciles 4 to 6 hours of interaction, foraging time, out-of-cage
+time, and 10 to 12 hours of sleep into one 24-hour day; no cage or
+dish cleaning routine; no bathing or misting guidance despite the
+species' heavy feather dust; no guidance on finding or vetting an
+avian veterinarian, or pricing PBFD screening before purchase; no
+noise-versus-lease-or-neighbor guidance in the legal guide; no
+introduction guidance for existing pets in the house. None of these
+are covered by a shared guide either.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3168,3 +3243,22 @@ Verdict: fixed on the branch. Nothing merged to main.
   but never made, and corrected the review file's overstated claim
   about what Lafeber's sources actually support on crest position.
   Full gate suite green.
+- 2026-09-09, cockatoo (batch B, single pass, branch
+  claude/batch-b-startup-ve7avl): hub rebuilt to router shape,
+  resolving diet-ratio, cage-cost, food-cost, and lifespan conflicts by
+  construction, and dropping the old hub's "crave cuddling" framing in
+  favor of handling's cited consultant's over-bonding warning. Cost
+  guide's lifespan researched for real (its own cited PetMD page
+  doesn't support "40 to 70-plus, Umbrella 50 to 70") and corrected to
+  match the encyclopedia. Feeding's diet percentages had the same
+  dropped-"no more than"-qualifier bug as cockatiel's, fixed the same
+  way. The encyclopedia's own conservation field contradicted its own
+  History paragraph (Vulnerable vs "reclassified Endangered in 2018");
+  checked Wikipedia's current IUCN listing and corrected the field; the
+  legal guide's NJ section had the Moluccan's status backwards for the
+  same reason, corrected. The enrichment guide's own body explicitly
+  declined to cite two figures as unverifiable, then a heading and two
+  FAQ answers stated both anyway; reworded to match the body's own
+  hedge. `cockatoo-legal-guide` was missing from relatedArticles.js
+  entirely, the same wiring-bug class as leopard gecko's temperature
+  guide, invisible in every Deep Dive sidebar; added.

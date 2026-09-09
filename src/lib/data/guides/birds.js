@@ -271,45 +271,65 @@ Annual avian veterinary exams including complete blood panel are essential. Find
     image: "/assets/guides/cockatoo.jpg",
     tagline: "The affectionate, screaming, decades-long commitment of a parrot that bonds almost too well!",
     funFact: "Cockatoos are considered the most affection-dependent parrots in aviculture. In the wild they maintain near-constant physical contact with their flock and mate, and a captive cockatoo often expects the same level of contact from its owner - which is exactly why the species has one of the highest rates of severe feather-plucking and behavioral problems of any commonly kept parrot when that need isn't met.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "3x2x4 ft heavy-gauge cage with locks", low: 500, high: 1200 },
-        { item: "Destructible wood chew toys (initial supply)", low: 60, high: 120 },
-        { item: "Foraging toys (large parrot, heavy-duty)", low: 50, high: 100 },
-        { item: "Cage-specific padlocks", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Large parrot pellets", low: 200, high: 350 },
-        { item: "Fresh vegetables, fruit, and nuts", low: 200, high: 350 },
-        { item: "Toys (rotating, heavy destruction rate)", low: 150, high: 300 },
-        { item: "Annual avian vet exam + bloodwork", low: 150, high: 300 },
-      ],
-    },
-    sections: {
-      housing: "Provide the largest cage that can reasonably fit in your home - a minimum of 3x2x4 feet, with larger strongly preferred, since cockatoos are large, powerful birds that need real room to climb, stretch, and flap. Cage bars must be heavy-gauge metal, since cockatoos have immensely strong beaks capable of bending weaker cages or working open standard latches; many owners add cage-specific padlocks for this reason. Position the cage in a social area of the home, since isolation is especially damaging to this species. Keep a constant supply of destructible wood toys available, since chewing is a critical behavioral outlet and supports beak health.",
-      diet: "A high-quality large parrot pellet should form 60 to 70% of the diet, supplemented daily with fresh vegetables, fruit, and a rotating variety of nuts (almonds and in-shell walnuts are excellent for foraging and enrichment). Seed-only diets cause the same fatty liver disease and nutritional deficiencies seen in smaller parrots, at greater scale given a cockatoo's size and long lifespan. Foraging-based feeding - food hidden in puzzle toys or wrapped in paper - is strongly recommended, both for nutritional enrichment and to occupy a bird that's otherwise prone to problem behaviors out of sheer boredom.",
-      enrichment: "This is the single most important factor in a cockatoo's long-term wellbeing. Cockatoos require hours of daily direct interaction and are widely considered unsuitable for owners who are away from home for long stretches without a plan for companionship. Without adequate attention, cockatoos are highly prone to feather-destructive behavior, self-mutilation, excessive screaming, and severe anxiety. Provide a large, rotating supply of destructible wood and foraging toys, daily supervised out-of-cage time, and consistent physical affection - most cockatoos crave cuddling and close physical contact more than almost any other parrot. A realistic, honest assessment of available daily time is essential before acquiring this species.",
-      health: "Feather-destructive behavior (plucking and self-mutilation) is extremely common in captive cockatoos and is very often behavioral or psychological - insufficient attention, boredom, or anxiety - rather than purely medical, though a vet should always rule out underlying illness or nutritional causes first. Screaming is a natural cockatoo vocalization but becomes excessive and distressing for the household when the bird's social needs aren't being met. Psittacine beak and feather disease (PBFD) is a serious viral concern in parrots, and screening new birds is recommended. Cockatoos can live 40 to 60 years or more, meaning many owners need a long-term care plan since the bird may well outlive them. Annual avian veterinary checkups are essential.",
-      checklist: [
-        "Large cage (3x2x4 ft minimum, heavy-gauge bars with secure locks)",
-        "High-quality large parrot pellets",
-        "Fresh vegetables, fruit, and nuts daily",
-        "Foraging toys",
-        "Constant supply of destructible wood chew toys",
-        "Hours of daily direct interaction",
-        "Social placement within the home",
-        "Cage-specific padlocks",
-        "Avian veterinarian contact",
-        "A realistic long-term care plan (40-60+ year lifespan)",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Day one and power
+    // outage cite the shared bird guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the cockatoo set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV and VCA both put the floor at 30 days, up to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Enclosure", value: "36 inches wide by 24 inches deep by 48 inches tall is a commonly cited minimum, with many avian vets recommending closer to 48 by 48 by 60 inches as a genuinely comfortable size. Bigger is always better with this species.", source: "cockatoo-tank-setup-guide" },
+        { label: "Bar spacing", value: "Three-quarters of an inch to 1 inch for large cockatoos. Secure, genuinely escape-proof locks matter more here than with most birds, cockatoos are notorious escape artists with the intelligence and strength to work out standard latches.", source: "cockatoo-tank-setup-guide" },
+        { label: "Cage material", value: "Stainless steel is the gold standard, rust-proof and able to withstand a beak this powerful for decades. Heavy-gauge powder-coated steel is an acceptable, more affordable alternative. Avoid galvanized or zinc-coated cages entirely, a bird that chews the bars risks metal toxicity from that coating.", source: "cockatoo-tank-setup-guide" },
+        { label: "Sleep", value: "10 to 12 hours of genuine darkness and quiet for sleep every night. Sleep deprivation in this species measurably worsens screaming and other behavioral issues.", source: "cockatoo-tank-setup-guide" },
+        { label: "Diet", value: "Pellets should make up 75 to 80% of daily intake, with fresh vegetables and fruit covering no more than another 20 to 40% and seeds and nuts kept to high-fat treats rather than the foundation.", source: "cockatoo-feeding-guide" },
+        { label: "Bonding", value: "Avoid over-bonding in the first weeks, it cements an anxious dependency rather than a healthy one. Real engagement with this species means 4 to 6 hours of interaction most days, not an occasional check-in, but consistent shoulder and lap time can itself become the problem if a cockatoo forms a pair bond with one person.", source: "cockatoo-handling-guide" },
+        { label: "Budget", value: "$700 to $3,000 for common species (rarer species run higher), $250 to $1,300 or more for a complete setup, and $20 to $50 a month for food after that. Toy replacement is the bigger recurring cost, since cockatoos destroy wooden toys fast.", source: "cockatoo-cost-guide" },
+        { label: "Adult size", value: "18 inches (46 cm); 1.1 to 1.7 lbs." },
+        { label: "Lifespan", value: "40 to 60 years is typical, with some individuals living into their 70s or beyond.", source: "cockatoo-cost-guide" },
+        { label: "Disease risk", value: "Psittacine beak and feather disease is incurable, often fatal, and highly contagious. Confirm with a vet through PCR testing, and quarantine any new bird before it meets an established one.", source: "cockatoo-health-issues-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a bird carries far less fat reserve than its size suggests. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "cockatoo-health-issues-guide",
+      callNow: [
+        "Over-preening to bare skin, or in serious cases, self-mutilation",
+        "Abnormal or clubbed feathers, or a beak that looks glossy from lost powder-down",
+        "Beak deformity",
+        "A sudden change in a previously stable bird's vocal or behavioral pattern",
+        "An enlarged liver, or changes in beak or nail keratin",
+      ],
+      vetLine: "An avian vet, found before you need one. Always start with a vet visit to rule out a medical cause before assuming plucking or screaming is purely behavioral, and confirm PBFD only through PCR testing.",
+    },
+    routes: [
+      { slug: "cockatoo-cost-guide", line: "$700 to $3,000 for the bird, $250 to $1,300 or more for setup, and the lifespan number that should drive the whole decision." },
+      { slug: "cockatoo-handling-guide", line: "Why cockatoos get surrendered so often, the over-bonding trap, and the 4 to 6 hour daily reality." },
+      { slug: "cockatoo-health-issues-guide", line: "Feather-destructive behavior, PBFD, lipomas, fatty liver disease, and when a behavior change means the vet." },
+      { slug: "cockatoo-tank-setup-guide", line: "The 36x24x48 minimum, stainless steel versus powder-coated, bar spacing, and sleep." },
+      { slug: "cockatoo-screaming-feather-plucking-explained", line: "The research behind why cockatoos scream and pluck, and what actually helps versus what doesn't." },
+      { slug: "cockatoo-feeding-guide", line: "The 75 to 80% pellet ratio, the toxic food list, and the mistakes that lead to fatty liver disease." },
+      { slug: "cockatoo-enrichment-guide", line: "What the research actually supports, foraging to fill the gap a bowl leaves, and destruction done deliberately." },
+      { slug: "cockatoo-legal-guide", line: "State by state, including the states that treat an endangered species as off-limits regardless of a permit." },
+    ],
+    buyList: [
+      "Large stainless steel cage, or a heavy-gauge powder-coated alternative",
+      "Escape-proof, cockatoo-specific locks",
+      "Perches, bowls, and dishes",
+      "Destructible foraging toys (wood, cardboard, palm fiber)",
+      "A play gym",
+      "An air purifier",
+      "Formulated large-parrot pellets",
+    ],
     faqs: [
-      { q: "Are cockatoos good pets?", a: "They can be deeply affectionate and rewarding companions, but they're widely regarded as one of the most demanding parrots to keep responsibly. They need hours of daily interaction, are prone to severe behavioral problems like screaming and feather plucking without it, and can live 40 to 60+ years - meaning the commitment often outlasts an owner's active caregiving years. They aren't recommended for first-time bird owners or households that can't offer near-daily direct attention." },
-      { q: "Why do cockatoos scream?", a: "Screaming is a natural, far-carrying flock-contact call used in the wild to locate other flock members. In captivity, it becomes excessive when a cockatoo's social and attention needs aren't being met, or as a learned behavior if screaming reliably gets a reaction from the owner." },
-      { q: "Why is my cockatoo plucking its feathers?", a: "Feather-destructive behavior is very often linked to insufficient social interaction, boredom, or anxiety, though a vet should always rule out underlying medical or nutritional causes first. It's one of the most common and serious welfare issues in captive cockatoos and is far easier to prevent than to reverse once it becomes established." },
-      { q: "How long do cockatoos live?", a: "40 to 60 years is typical, with some individuals living even longer. This exceptionally long lifespan means most people who acquire a cockatoo need a realistic plan for its care well into the future, potentially including rehoming arrangements later in life." },
-      { q: "How much attention do cockatoos need?", a: "More than almost any other commonly kept parrot. Cockatoos evolved to maintain near-constant physical contact with their flock, and captive birds often expect the same level of attention from their owner. Hours of daily direct interaction are typically necessary to prevent serious behavioral problems." },
+      { q: "How much does a cockatoo cost to buy?", a: "$700 to $3,000 for common species like Goffin's, Galah, and Umbrella cockatoos, with Umbrella cockatoos commonly running $1,000 to $3,000. Moluccan cockatoos typically run $1,400 to $3,500, and rarer species like the palm cockatoo can reach $2,000 to $16,000 or more." },
+      { q: "What size cage does a cockatoo need?", a: "36 by 24 by 48 inches is the commonly cited minimum, and many avian vets recommend closer to 48 by 48 by 60 as a comfortable size. Bigger is always better with this species." },
+      { q: "Why are cockatoos so often surrendered?", a: "The demands outrun what most owners signed up for. One parrot behavior consultant reports that cockatoos are among the most consistently relinquished parrots, and that over half her clients own one. Rescue organizations describe the same pattern." },
     ],
   },
   {
