@@ -1370,3 +1370,94 @@ B+. Well-sourced and genuinely useful, undercut by numbers that don't match each
 - Tank lighting or a day/night light schedule.
 - Whether snails, shrimp, or other tankmates are compatible.
 - The actual target temperature for treating ich once it's diagnosed.
+
+## Budgie (2026-09-08, batch B, before the router hub)
+
+One Opus agent, nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, cere color, vs cockatiel), about 82k
+tokens. The review below reads the old legacy hub; the router hub was
+built from its findings the same day. Full agent output below, unedited.
+
+---
+
+# Budgie set: reader review
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Act on: cage size, bar spacing, pellet ratio, veg list, night cover, checklist to shop from. Densest single page here. **B**
+- **01 Encyclopedia.** Finished it, fast. Act on: almost nothing. Adult size and the Gould history are genuinely interesting; the captive lifespan figure fights the rest of the set. **C**
+- **02 Cost.** Finished it. Act on: build an emergency fund, expect $175 to $475 setup, $350 to $900 first year. The setup table "could not be parsed," which is the one thing I most wanted. **B**
+- **03 Handling.** Finished it. Act on: wait one to two weeks, hand in cage, millet, step up, towel not hands, never punish a bite. Best-shaped page in the set. **A-**
+- **04 Health.** Finished it twice. Act on: the four same-day vet signs, the limp-means-tumor pattern, the male cere flag. **A**
+- **05 Cage setup.** Finished it. Act on: width over height, half-inch bars, no zinc or lead, no dowel-only perches, no sandpaper covers, dishes away from perches, 65 to 85F, no PTFE. **A-**
+- **06 Enrichment.** Finished it. Act on: move part of the daily ration into a foraging toy, rotate the hiding method every few days, buy cheap and often. **B+**
+- **07 Cere.** Finished it. Act on: sexing by cere, do not trust it under 6 to 12 months, brown crusty female is normal. **B+**
+- **08 vs Cockatiel.** Finished it. Act on: nothing new for someone already getting a budgie. **C+**
+
+## 2. Hub and encyclopedia
+
+The hub earns its place: it is the only page with a shopping checklist, a veg list, and a numbered out-of-cage figure. The encyclopedia does not. Outside the 1805/1840/1925 history it repeats the hub's framing.
+
+Conflicts, hub versus deep dives:
+
+- Cage. Hub: "A minimum cage size of 18x18x24 inches is required for a single budgie." Setup: "An absolute minimum for a single budgie is often cited around 18x18x18 inches." Different minimum, and the hub calls it "required."
+- Diet. Hub: "should make up 60 to 70% of a budgie's diet." Setup: "pellets should make up roughly 60 to 80% of a budgie's diet." Hub FAQ adds "Seed mix should be no more than 10 to 20%"; setup says "seeds treated as an occasional extra."
+- Food cost. Hub annual table totals $125 to $205 in food and treats. Cost: "Food (pellet-forward diet + fresh vegetables) | $5 - $15" monthly, which is $60 to $180.
+- Vet. Hub: "Annual avian vet check | $50 | $90." Cost FAQ: "Add an annual exotic vet checkup of $80 or more."
+- Lifespan. Hub: "7 to 12 years with proper care." Cockatiel page: "A well-kept budgie typically lives 5 to 10 years." Encyclopedia: "up to 21 years recorded in captivity." Three answers to one question.
+
+## 3. The set as a whole
+
+I could buy the cage, set it up correctly, feed it, tame it, and recognize an emergency. Still missing: a cleaning routine (what liner, how often, deep clean schedule), bathing or misting frequency despite "Shower or misting bottle" being on the checklist, a toxic-foods list, portion size for vegetables, and how to introduce a second budgie.
+
+Questions answered elsewhere in the set but never signposted:
+
+- Cost says "avian vets emphasize catching problems early." The four same-day signs are in Health, and Cost does link there, so this one works.
+- Health flags the male cere change; the whole Cere page exists and Health never points at it.
+- Cere says a male's brown cere may be "a cere tumor"; Health says testicular tumor, and Cere never links back.
+- Handling tells me to use a towel; the shared First Aid and Grooming guide teaches towel restraint, unlinked.
+- Setup says 10 to 12 hours of darkness; the shared Photoperiod guide explains why, unlinked.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: seed causes fatty liver (Hub, Setup, Health, plus three FAQs), width over height (Hub, Cost, Setup), social needs (Hub, Setup, Enrichment), prey animals hide illness (Cost, Handling, Health).
+
+Conflicts:
+
+- Millet. Hub: "a small piece 2 to 3 times per week maximum." Handling: "Millet from your fingers. Offer a favorite treat, spray millet works well for most budgies." Taming is a daily process. Nobody reconciles these.
+- Solo birds. Hub: "Budgies are highly social animals and suffer psychologically when kept alone." Enrichment FAQ: "Is a single budgie okay without a cage mate? It can be."
+- Sexing age. Cere: "somewhere between 6 and 12 months of age." Health: "their adult coloring doesn't settle in until several months old."
+- Mirrors, within the hub itself: "mirrors if kept solo" as enrichment, then "remove or cover mirrors (birds fly into them)."
+
+## 5. One link per page
+
+- Hub: "The most important dietary change for most budgies is reducing seed and adding pellets." Point to Converting a Seed-Eating Bird to Pellets.
+- Encyclopedia: "up to 21 years recorded in captivity." Point to the health issues guide.
+- Cost: "The cage is worth prioritizing width over cheapness, since budgies fly side to side rather than up and down." Point to the cage setup guide.
+- Handling: "If you need to restrain your budgie briefly, for medication or a health check, use a small towel rather than your bare hands." Point to Bird First Aid Kit and Grooming.
+- Health: "Treat a change like that as a reason to book an avian vet visit rather than a coincidence to note in passing." Point to the cere color guide.
+- Setup: "Budgies need roughly 10 to 12 hours of darkness and uninterrupted sleep every night." Point to Photoperiod and Sleep.
+- Enrichment: "Feather plucking, repetitive pacing on the same perch, and screaming beyond normal contact calls are the clearest signs enrichment isn't covering current needs." Point to Why Is My Bird Losing Feathers.
+- Cere: "That same texture change in a male is a different story." Point to the health issues guide.
+- vs Cockatiel: needs none for me. The two care guides and both encyclopedia entries are already linked.
+
+## 6. Trust
+
+Doubts: three lifespans, two cage minimums, two pellet percentages, and a cost page whose totals do not reconcile with the hub's own table. The mirrors contradiction inside one hub section. And the Cere page discussing a male's brown cere without ever naming the testicular tumor the Health page treats as the headline cause.
+
+The sentence that convinced me a keeper wrote this: "A budgie that suddenly starts limping, drags a leg, grips the perch weakly on one side, or falls off its perch is often not injured." Nobody writes that from a content brief.
+
+## 7. Set grade: B+
+
+Strong, specific, unusually honest about vet cost and solo birds, undermined by core numbers that disagree page to page.
+
+First two changes:
+1. Pick one number each for cage minimum, lifespan, pellet percentage, and monthly food, and make every page use it.
+2. Add a routine husbandry page: cleaning schedule, bathing, safe and toxic foods, veg portions. Then cross-link Health to Cere and back.
+
+## Not covered anywhere
+
+- Cage cleaning schedule, liner or substrate choice, and what a deep clean involves.
+- Bathing or misting frequency and method, despite a misting bottle being on the hub checklist.
+- Toxic foods for birds (avocado, chocolate, caffeine, onion). The Household Hazards guide is described as fumes and airborne hazards, not diet.
+- Vegetable portion size and how much a 30 gram bird should actually eat per day.

@@ -2303,6 +2303,121 @@ Open: feeding portions/frequency, hatchling-specific husbandry, and the
 soaking routine gap filed in docs/READER_LOG.md; the encyclopedia
 lifespan figure flagged for whoever next touches that file.
 
+## Budgie (2026-09-08, batch B, first pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, cere color, vs cockatiel). One Opus
+agent, about 82k tokens. The review below reads the old legacy hub; the
+router hub was built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | Densest single page: cage, bar spacing, pellet ratio, veg list, checklist. |
+| Encyclopedia | C | Fast, little to act on, and its lifespan figure fights the rest of the set. |
+| Cost | B | Useful ranges, but the setup table itself couldn't be read, and its own totals didn't reconcile with the hub's. |
+| Handling | A- | Clear taming progression, towel not hands, never punish a bite. |
+| Health issues | A | The same-day vet signs and the limp-means-tumor pattern are genuinely useful. |
+| Tank setup | A- | Width over height, half-inch bars, no zinc or lead, no dowel-only perches. |
+| Enrichment | B+ | Useful, foraging-first framing, but never signposted from the hub or the health page. |
+| Cere color | B+ | Solid sexing method, but doesn't link back to the tumor risk Health raises. |
+| vs Cockatiel | C+ | Nothing new for someone already set on a budgie. |
+
+Set grade: B+. "Strong, specific, unusually honest about vet cost and
+solo birds, undermined by core numbers that disagree page to page."
+
+Hub versus the set, both sides quoted (all against the old legacy hub,
+resolved by the router rebuild):
+
+- Cage. The old hub said: "A minimum cage size of 18x18x24 inches is
+  required for a single budgie." The tank setup guide says: "An
+  absolute minimum for a single budgie is often cited around 18x18x18
+  inches, but a wider flight-style cage serves them far better,
+  something closer to 30x18x18 inches for a pair." Different minimum,
+  and the old hub called its own number "required." The router hub's
+  Enclosure row now quotes tank setup's own sentence.
+- Diet. The old hub said: "should make up 60 to 70% of a budgie's
+  diet," with an FAQ adding "Seed mix should be no more than 10 to
+  20%." Tank setup says: "pellets should make up roughly 60 to 80% of
+  a budgie's diet, with fruits, vegetables, and greens covering
+  another 20 to 25%, and seeds treated as an occasional extra." The
+  router hub's Diet row now quotes tank setup's own figures.
+- Lifespan. Three answers to one question: the old hub's FAQ said "7
+  to 12 years with proper care" (unsourced), the vs cockatiel guide
+  said "A well-kept budgie typically lives 5 to 10 years" citing
+  PetMD, and the encyclopedia said "up to 21 years recorded in
+  captivity" (also unsourced). Opening the vs guide's own cited PetMD
+  page found it actually states 7 to 15 years for captive budgies, not
+  5 to 10; a further search found the real record holder, Charlie, a
+  budgerigar who lived 29 years and 2 months (Guinness World Records),
+  not 21. The vs cockatiel guide's body, table, FAQ, and seoDescription
+  are now corrected to 7 to 15 years, and the encyclopedia entry now
+  reads "typically 7 to 15 years in captivity, with the oldest
+  documented individual living 29 years, 2 months," which the router
+  hub's Lifespan row quotes.
+- Vet cost. The old hub's own annual table listed "Annual avian vet
+  check: $50 to $90" against the cost guide's FAQ "Add an annual
+  exotic vet checkup of $80 or more" and its table's "~$7" amortized
+  line, three numbers for the same idea. The router hub's Budget row
+  now quotes the cost guide's own headline figures instead of
+  restating a separate table.
+
+The set as a whole: buyable, houseable, feedable, tameable, and basic
+emergencies are recognizable from this set. Real gaps, checked against
+the Health and More list before being called real: a cage cleaning
+schedule, bathing or misting frequency (despite a misting bottle on
+the old hub's checklist), a toxic-foods list, and vegetable portion
+size for a 30-gram bird. None of these are covered by a shared guide
+either; filed in docs/READER_LOG.md.
+
+Deep dives against each other: seed-causes-fatty-liver, width-over-
+height, and "prey animals hide illness" each repeat consistently
+across three or more pages with no disagreement. Two soft
+inconsistencies, not true conflicts: the cere color guide's specific "6
+to 12 months" sexing window against health's vaguer "several months
+old" (compatible, just different precision), and the tank setup
+guide's "needs substantial daily interaction... close to as important
+as diet or cage size" against the enrichment guide's FAQ "it can be
+[okay alone], provided the owner supplies the social interaction" -
+both actually agree solo is fine only with heavy compensating
+interaction, just phrased from different angles. Neither needed a fix.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | none needed | |
+| Encyclopedia | "up to 21 years recorded in captivity" | Health issues guide (skipped: encyclopedia entries are structured data with no link slot) |
+| Cost | "The cage is worth prioritizing width over cheapness" | Tank setup guide (skipped: the cost guide had already spent its one allowed same-species link on the health issues guide) |
+| Handling | "use a small towel rather than your bare hands" | Bird First Aid Kit and Grooming guide (added) |
+| Health issues | "Treat a change like that as a reason to book an avian vet visit" | Cere color guide (added, using the health guide's one allowed same-species link) |
+| Tank setup | "Budgies need roughly 10 to 12 hours of darkness" | Photoperiod and Sleep guide (added) |
+| Enrichment | "the clearest signs enrichment isn't covering current needs" | Why Is My Bird Losing Feathers guide (added) |
+| Cere color | "That same texture change in a male is a different story" | Health issues guide (skipped: would be cere color's own second same-species link and the guide already has none spent, but the health guide already links back so a second is redundant) |
+| vs Cockatiel | none needed, already well linked | |
+
+Trust: three different lifespans, two cage minimums, and a cost page
+whose own math didn't reconcile with the old hub's separate table were
+the main doubts, all resolved by the router rebuild and the lifespan
+research above. The sentence that most convinced the reader a keeper
+wrote this: "A budgie that suddenly starts limping, drags a leg, grips
+the perch weakly on one side, or falls off its perch is often not
+injured."
+
+Reader's two changes: pick one number each for cage minimum, lifespan,
+pellet percentage, and monthly food, and use it everywhere (done by
+the router rebuild and the lifespan research); add a routine husbandry
+page for cleaning, bathing, and toxic foods (not done, a new-content
+gap outside a deep-dives-only pass, filed in docs/READER_LOG.md).
+
+Fixed the same day: router hub rebuilt, resolving the cage, diet, and
+vet-cost conflicts by construction; the lifespan conflict researched
+for real (PetMD's actual figure and the Guinness record holder) and
+corrected across the vs cockatiel guide and the encyclopedia entry;
+four of the eight recommended links added.
+
+Open: the cage-cleaning, bathing, toxic-foods, and vegetable-portion
+gaps filed in docs/READER_LOG.md for whoever writes new content next.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -2522,3 +2637,23 @@ lifespan figure flagged for whoever next touches that file.
   the legal guide gives a specific count of four; the betta fish first
   pass review had claimed four links that were never actually made, now
   made for real. Full gate suite green across all five species after.
+- 2026-09-09, budgie (batch B, branch claude/batch-b-startup-ve7avl):
+  hub rebuilt to router shape, resolving the old hub's cage minimum
+  (18x18x24 "required" against tank setup's sourced 18x18x18), pellet
+  percentage (60-70% against tank setup's sourced 60-80%), and vet cost
+  (three different numbers for one idea) conflicts by construction. A
+  real three-way lifespan conflict (old hub 7-12 years unsourced, the
+  vs cockatiel guide's 5-10 years citing PetMD, the encyclopedia's
+  unsourced "up to 21 years") researched for real: PetMD's own cited
+  page actually states 7 to 15 years, and the real record holder is
+  Charlie, a budgerigar who lived 29 years, 2 months (Guinness World
+  Records), not 21. The vs cockatiel guide and the encyclopedia entry
+  both corrected. Four of eight recommended links added (handling to
+  the shared first aid guide, health issues to cere color, tank setup
+  to the shared photoperiod guide, enrichment to the shared feather
+  loss guide); cost guide's link skipped since it had already spent
+  its one allowed same-species link elsewhere. `cere-color-guide`
+  added to SHORT_LABELS, the same wiring class as leopard gecko's
+  temperature guide. Left for whoever writes new content next: no
+  guide anywhere covers cage cleaning, bathing or misting frequency,
+  toxic foods, or vegetable portions.
