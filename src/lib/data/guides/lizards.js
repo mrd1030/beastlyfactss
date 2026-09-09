@@ -245,64 +245,95 @@ These are powerful animals. A tame adult tegu can still cause injury unintention
     petType: "Lizards",
     image: "/assets/guides/blue-tongue-skink.jpg",
     tagline: "The chunky, blue-tongued charmer who loves a good meal!",
-    funFact: "Blue tongue skinks give live birth and are one of the largest skink species kept as pets. Adults can reach 18 to 24 inches!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft enclosure", low: 150, high: 300 },
-        { item: "Moderate UVB (T5 HO Arcadia 6%)", low: 50, high: 90 },
-        { item: "Basking bulb + fixture", low: 20, high: 40 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Coconut fiber + topsoil substrate", low: 20, high: 35 },
-        { item: "Large water dish", low: 15, high: 25 },
-        { item: "Multiple hides and enrichment items", low: 20, high: 40 },
-      ],
-      annual: [
-        { item: "Leafy greens and vegetables", low: 150, high: 250 },
-        { item: "Insect and protein feeders", low: 100, high: 200 },
-        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
-        { item: "UVB bulb replacement", low: 60, high: 100 },
-        { item: "Electricity (heat and lighting)", low: 60, high: 100 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+    funFact: "Blue tongue skinks give live birth instead of laying eggs, and they are one of the largest skink species kept as pets.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size is the exception: it comes
+    // from the encyclopedia entry, which no deep dive repeats. Northern and
+    // Indonesian animals are two different husbandry problems under one name,
+    // so every row the tank setup guide splits by subspecies stays split here
+    // rather than being flattened into one range. Day one, shedding, hygiene,
+    // and power outage cite the shared reptile guides in the sidebar's Health
+    // and More list, which the set tests keep reporting as gaps because the
+    // reader never opens them. Reconciled 2026-09-09 after the blue tongue
+    // skink set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new lizard is quarantined 3 to 6 months away from any reptile you already keep, in a separate room on plain paper towel, with its own tools, and a vet check within two weeks of acquiring it with a fresh fecal sample.", source: "reptile-quarantine-guide" },
+        { label: "Which skink is it", value: "Most Indonesian skinks sold in the US pet trade are wild-caught, and wild-caught animals commonly carry parasite loads picked up before import. Northern skinks are almost universally captive-bred. Knowing which one you have changes almost everything below.", source: "blue-tongue-skink-health-issues-guide" },
+        { label: "Enclosure", value: "Adult minimum is 4x2x2 feet, roughly 8 square feet of floor space, for either type. Bigger is always better. Front-opening PVC enclosures are preferred over glass since they hold humidity more effectively, which matters more for Indonesian skinks specifically.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Basking surface", value: "Northern basking surface: 105 to 115°F. Indonesian basking surface: slightly cooler, 100 to 105°F.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Rest of the gradient", value: "Cool side (both): 70 to 80°F. Nighttime: stays above roughly 70°F for both types. A heat source (halogen or a deep heat projector) is required, mounted with a basking dome fixture and run on a thermostat, which is what holds the surface inside those ranges instead of letting an unregulated bulb climb past them and burn the animal.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Humidity", value: "Northerns need relatively low humidity, around 40%. Indonesians need considerably more, 60 to 80%. Achieve the higher Indonesian range through moisture-retentive substrate, regular misting, and a larger water bowl.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Floor", value: "A naturalistic soil mix works for both, roughly 60% topsoil to 40% play sand for Northerns, with Indonesian setups benefiting from added moisture-retentive elements, leaf litter, sphagnum moss, or a coco-fiber-based product. Keep it 4 to 6 inches deep.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO bulb anywhere from 5 to 12% output, picked against how high above the basking area it will hang, spanning at least half the enclosure on the warm side, replaced every 12 months regardless of whether it still visibly lights up. Keep the skink no closer than about 10 inches from the bulb.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Photoperiod", value: "Run a photoperiod of roughly 11 to 13 hours depending on season for either type.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Diet ratio", value: "Young skinks under about 12 months (some sources say 24 months) need a protein-heavy diet, roughly 70 to 80% animal matter. Mature adults shift toward plant-heavy, roughly 40 to 60% animal protein and 45 to 60% leafy greens and vegetables, with about 5 to 10% fruit as treats.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Feeding schedule", value: "Babies, hatching to 3 to 5 months, are fed daily, some sources say 2 to 3 times a day, plus one designated fasting day a week. Juveniles, roughly 3 to 10 months, 3 to 4 times a week. Subadults and adults are where sources genuinely split: veterinary sources say every 1 to 3 days, a cluster of widely used pet-industry care sheets say once or twice a week.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Portion", value: "One meal roughly the size of the skink's own skull, or about 1 to 2 tablespoons for an adult, is the commonly cited portion.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Supplements", value: "Dust feeder insects with calcium, low or no phosphorus, frequency ranges from every feeding to a few times a week depending on the product and source. A separate multivitamin is used more sparingly, once or twice a week to once or twice a month.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Weight checks", value: "Sources converge in the 7 to 10% body-weight-loss range as an urgent threshold, weighing weekly on a gram-accurate scale and keeping a log is the standard way to catch a slow decline before it becomes obvious.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Handling", value: "Leave a new skink alone for 2 to 3 weeks before attempting to handle it, giving it time to settle into its enclosure and start eating normally. Build trust gradually through food-based interaction, and let handling follow from there.", source: "blue-tongue-skink-handling-guide" },
+        { label: "Session length", value: "ReptiFiles' program is 5 minutes a day to start, adding a minute each time the skink sits still, until it holds still for at least 15 minutes. Start a juvenile or a new wild-caught Indonesian at the 5-minute end. A settled captive-bred Northern can run to the full 15 minutes.", source: "blue-tongue-skink-handling-guide" },
+        { label: "Picking one up", value: "Come in from the side, where it can see you. Slide a hand under the body and support the whole animal along your forearm, tail included. Never lift or hold one by the tail. Wash your hands first, so they do not smell like a food item.", source: "blue-tongue-skink-handling-guide" },
+        { label: "Reading the animal", value: "Short snorts or huffs mean annoyance, tail flicking or wagging means irritation, and long huffs or hisses with the body tilted and puffed up mean the skink has moved on to aggression. What to do is the same at every step: stop, take your hands out, and end the session there.", source: "blue-tongue-skink-handling-guide" },
+        { label: "Enrichment", value: "Scatter food across the substrate. Hide portions under cork and leaf litter. Vary where the food appears from day to day, so the search stays a search. Blue tongues are terrestrial and cover ground, so footprint beats height every time.", source: "blue-tongue-skink-enrichment-guide" },
+        { label: "The skink", value: "Northern (Australian) blue-tongued skinks typically run $150 for babies up to $250 for adults, with high-color or rare morphs reaching $400 to $700. Indonesian skinks are noticeably cheaper, generally $100 to $250.", source: "blue-tongue-skink-cost-guide" },
+        { label: "Budget", value: "Roughly $330 to $635 to set up, and total initial investment with the animal commonly lands between $430 and $1,335. Ongoing, roughly $490 to $830 a year, or about $41 to $69 a month once averaged out.", source: "blue-tongue-skink-cost-guide" },
+        { label: "Vet", value: "A routine exam runs roughly $100 to $150, with annual checkups recommended for any skink. Wild-caught Indonesian skinks frequently need a fecal exam and deworming treatment right after purchase, an added cost that Northern buyers usually skip entirely.", source: "blue-tongue-skink-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years is the commonly cited average, with well-documented cases living past 30.", source: "blue-tongue-skink-cost-guide" },
+        { label: "Adult size", value: "17-24 inches (43-60 cm)." },
+        { label: "Shedding", value: "Raise humidity toward the high end during the shed, give rough surfaces to rub on, and never pull loose skin. A 30-minute chin-deep soak at cage temperature loosens retained shed.", source: "reptile-shedding-complete-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact, keep reptiles out of the kitchen entirely, and never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "The normal night low stays above about 70°F. Act below 70°F: add heat, move the animal, or call ahead to a sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `A 4x2x2 ft enclosure is the minimum for a single adult blue tongue skink, though larger is always preferable. Blue tongues are terrestrial lizards - floor space matters far more than height. They are active, exploratory animals that will walk laps of their enclosure daily when conditions are correct, so generous floor space meaningfully improves their quality of life.
-
-The basking spot is critical. Surface temperatures of 95 to 110 degrees F are required under the basking area, with the exact target depending on subspecies (Northern blue tongues prefer the higher end). The ambient warm side should be 80 to 85 degrees F, and the cool side 70 to 75 degrees F. Measure with an infrared temperature gun. An under-tank heater used alongside an overhead basking light creates the most naturalistic gradient.
-
-Moderate UVB (T5 HO 5 to 6%, or Arcadia 6% Forest Bulb) is strongly recommended. While blue tongue skinks can survive without UVB when supplementation is excellent, UVB-exposed animals show better bone density, more natural behavior, and improved overall health outcomes. Run UVB on a 10 to 12 hour cycle.
-
-Substrate should be 3 to 4 inches deep and appropriate for burrowing: coconut fiber, a topsoil/coconut fiber mix, or a similar moisture-retaining substrate. Blue tongue skinks like to burrow partially and benefit from substrate depth. Provide multiple hides (at least two, warm and cool ends) and a fresh water dish large enough to soak in.`,
-      diet: `Blue tongue skinks are omnivores that require a carefully balanced diet split between animal protein and plant matter. The ideal ratio for most adult Northern blue tongue skinks (Tiliqua scincoides intermedia) is approximately 40 to 60% vegetables and leafy greens, 30 to 40% protein sources, and no more than 5 to 10% fruit.
-
-Staple vegetables and greens include collard greens, mustard greens, dandelion greens, squash, green beans, and bell peppers. Dark leafy greens should form the bulk of the plant portion. Rotate variety regularly. Avoid spinach, beet greens, and other high-oxalate foods as primary staples.
-
-Protein sources include gut-loaded insects (dubia roaches, crickets, black soldier fly larvae), lean cooked chicken or turkey, hard-boiled eggs, and high-quality low-grain cat or dog food as an occasional addition. Different subspecies have different protein needs: Northern blue tongues are higher-protein feeders from tropical, prey-rich environments, while Indonesian subspecies (Merauke, Halmahera, Kei Island) tolerate less protein and more plant matter.
-
-Dust food with calcium w/D3 powder 2 to 3 times per week and a reptile multivitamin once per week. Fresh water should always be available. Obesity from overfeeding high-fat protein sources or fruit is one of the most common husbandry mistakes - feed appropriate portions and monitor body condition (ribs should be slightly palpable but not prominently visible).`,
-      enrichment: `Blue tongue skinks are among the most interactive and personable lizards kept as pets. Many individuals become remarkably tame and genuinely seem to enjoy human interaction. Consistent, gentle handling from a young age produces calm, confident adults that tolerate and even seek out contact.
-
-Provide at least two hides (one warm, one cool), a dig area where the skink can partially burrow, and objects for exploration - cork bark, flat rocks, and varied substrate textures. Blue tongue skinks are intelligent and benefit from environmental novelty. Rearranging furniture occasionally, offering food in different locations (foraging enrichment), and introducing safe novel objects all help prevent boredom.
-
-Supervised free-roam time in a warm, safe room is excellent enrichment. Blue tongues are ground-level explorers that move with purpose and investigate new environments confidently. Many keepers allow their skinks to roam a section of floor under supervision regularly.
-
-Bathing in a shallow warm water tub for 15 to 20 minutes once or twice a week provides hydration, supports shedding, and keeps the skin healthy. Many blue tongue skinks enjoy soaking and become visibly relaxed in warm water.`,
-      health: `Obesity is the most common chronic health problem in pet blue tongue skinks. It results from overfeeding protein-rich foods (especially cat/dog food and waxworms), excessive fruit, and insufficient exercise in small enclosures. Obese blue tongue skinks develop fatty liver disease, cardiac problems, and shortened lifespans. Monitor body condition regularly - a healthy skink should feel firm and muscular, not squishy.
-
-Respiratory infections typically result from temperatures that are too low or humidity that is too high. Blue tongue skinks in cool, damp conditions develop bacterial respiratory infections that require veterinary antibiotic treatment. Ensure the basking spot is hot enough and the enclosure has appropriate ventilation.
-
-Parasites are common, particularly in animals sourced from unknown backgrounds or wild-caught situations. Annual fecal exams with a reptile vet are recommended for all blue tongue skinks. Many carry subclinical parasite loads that, when combined with stress, can become active problems.
-
-Subspecies identification matters for care. Northern blue tongue skinks and Indonesian subspecies have different temperature, humidity, and dietary requirements. Research the specific subspecies you are keeping. Annual wellness checks with a reptile-experienced veterinarian are strongly recommended.`,
-      checklist: ["4x2x2 ft enclosure", "Moderate UVB (T5 HO Arcadia 6%)", "Basking bulb (95 to 110 degrees F)", "Digital thermometer and hygrometer", "Coconut fiber + topsoil mix substrate", "Calcium and multivitamin supplements", "Leafy greens and vegetables", "Quality insect feeders", "Large water dish", "Multiple hides and enrichment items"],
+    emergencyCard: {
+      source: "blue-tongue-skink-health-issues-guide",
+      callNow: [
+        "A soft or rubbery jaw",
+        "A kinked spine",
+        "Tremors",
+        "Difficulty walking",
+        "A wild-caught or unspecified-origin skink that has not had a fecal exam and deworming",
+        "Nasal or oral discharge",
+        "Bubbling",
+        "Open-mouth breathing",
+        "Wheezing",
+        "Retained shed on the toes or tail that has progressed to infection",
+        "Scale rot on the belly that has progressed to infection",
+      ],
+      vetLine: "Metabolic bone disease is a vet situation always, and advanced cases are irreversible. Early respiratory cases often resolve once temperature and humidity are corrected, advanced cases need a vet and antibiotics. Always see a vet for a fecal exam and appropriate deworming, fenbendazole for roundworms and pinworms, praziquantel for tapeworms and flukes, if you've acquired a wild-caught or unspecified-origin skink.",
     },
+    routes: [
+      { slug: "blue-tongue-skink-cost-guide", line: "What the animal costs, why a Northern costs more than an Indonesian, the setup table, the annual running total, and vet costs." },
+      { slug: "blue-tongue-skink-tank-setup-guide", line: "The 4x2x2 ft minimum, and the temperature and humidity split that makes a Northern and an Indonesian two different setups." },
+      { slug: "blue-tongue-skink-handling-guide", line: "The bluff display, the huff scale, how to pick a heavy lizard up, and how long a session should run." },
+      { slug: "blue-tongue-skink-health-issues-guide", line: "Metabolic bone disease, the parasite load that comes with a wild-caught animal, respiratory infection, obesity, retained shed and scale rot." },
+      { slug: "blue-tongue-skink-feeding-guide", line: "Schedule by age, the protein-to-greens flip, the portion size, the toxic list, and eight reasons a skink stops eating." },
+      { slug: "blue-tongue-skink-enrichment-guide", line: "The mealworm study that reduced hiding, scatter feeding, the dig box, and the priority order to build in." },
+    ],
+    buyList: [
+      "4x2x2 ft front-opening PVC enclosure",
+      "T5 HO UVB kit spanning at least half the warm side",
+      "Halogen bulb or deep heat projector, and a basking dome fixture",
+      "Thermostat for the heat source",
+      "Digital thermometer and hygrometer",
+      "Topsoil and play sand, or a coco-fiber-based substrate, 4 to 6 inches deep",
+      "Leaf litter or sphagnum moss, for an Indonesian setup",
+      "Multiple hides, one at each end of the gradient",
+      "A water dish large enough for the skink to fully submerge in",
+      "Calcium, low or no phosphorus, and a reptile multivitamin",
+      "Gut-loaded feeder insects, and soft-tipped feeding tongs",
+      "A gram-accurate scale for weekly weigh-ins",
+      "A storage tub for a dig box",
+    ],
     faqs: [
-      { q: "What do blue-tongue skinks eat?", a: "Blue-tongue skinks are omnivores that need variety. A good adult diet is roughly 60% animal protein and 40% vegetables and greens. Protein sources include cooked turkey, chicken, low-fat dog food as an occasional base, dubia roaches, and cooked eggs. Vegetables should include collard greens, dandelion greens, squash, and bell peppers. Fruit can be offered as an occasional treat under 5% of the diet. Avoid avocado, onion, rhubarb, and high-oxalate foods like spinach in large quantities." },
-      { q: "How big do blue-tongue skinks get?", a: "Adults reach 18 to 24 inches in total length and typically weigh 400 to 600 grams. Northern blue-tongue skinks tend toward the larger end of that range. They are stocky, robust lizards with a wide blunt head and the distinctive blue tongue that flashes as a warning display. They are fully grown by 2 to 3 years of age, though they continue to fill out until age 4." },
-      { q: "Do blue-tongue skinks need UVB?", a: "Yes, and this is now the strong consensus of reptile veterinary professionals. Blue-tongue skinks benefit significantly from moderate UVB (T5 HO Arcadia 6% or equivalent). UVB supports calcium metabolism and D3 synthesis, reduces disease risk, and improves long-term health outcomes. Keepers maintained blue-tongues for years without UVB, but skeletal and immune health is measurably better with it. A 12-hour light cycle that includes UVB is considered standard modern husbandry." },
-      { q: "Are blue-tongue skinks good pets?", a: "Blue-tongue skinks are excellent pets for keepers with some reptile experience. They are diurnal (active during the day), large enough to handle comfortably, and develop recognizable personalities - many become quite bold and interactive. They are generally reluctant to bite but will hiss and display their blue tongue when threatened. Their varied omnivorous diet requires more food preparation than insect-only reptiles, but the feeding process becomes an enriching routine." },
-      { q: "How long do blue-tongue skinks live?", a: "With good care, blue-tongue skinks commonly live 15 to 25 years in captivity, with some individuals exceeding 25 years. Northern blue-tongue skinks in particular are known for their robust constitution and longevity. This makes them a genuine long-term commitment - annual wellness checks with a reptile-experienced vet are recommended, especially as the skink ages past 10 years." },
+      { q: "Do Northern and Indonesian skinks need different temperatures?", a: "Yes, slightly. Northern basking surface should run 105 to 115°F, Indonesian basking surface a bit cooler at 100 to 105°F. Both need a cool side of 70 to 80°F and nighttime temperatures staying above roughly 70°F." },
+      { q: "Is the cheaper Indonesian skink the better budget choice?", a: "Not usually. Wild-caught Indonesian skinks frequently need a fecal exam and deworming right after purchase, which Northern buyers typically skip, and they take longer to tame. For a first-time keeper, a captive-bred Northern often works out to a comparable total cost with meaningfully lower risk." },
+      { q: "What is the first sign of metabolic bone disease in a blue-tongued skink?", a: "A soft or rubbery jaw is often the first thing owners notice, followed by a kinked spine, tremors, and difficulty walking in more advanced cases. It's caused by inadequate UVB and or calcium. This is a vet situation always, and advanced cases are irreversible, which is exactly why UVB and calcium supplementation matter from day one." },
     ],
   },
   {
@@ -532,6 +563,7 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
       { slug: "green-iguana-tank-setup-guide", line: "The 10x5x6 ft adult minimum, the basking and humidity numbers, substrate, UVB, and the vertical space an arboreal lizard needs." },
       { slug: "green-iguana-handling-guide", line: "Claws, tail whipping, tail drop, how to approach, and what breeding season does to a mature male." },
       { slug: "green-iguana-health-issues-guide", line: "Metabolic bone disease, kidney disease, mouth rot, egg binding, burns, and impaction, with the husbandry failure behind each." },
+      { slug: "green-iguana-feeding-guide", line: "The greens to build the salad on, which ones block calcium, why animal protein risks gout, and the calcium schedule by age." },
       { slug: "green-iguana-enrichment-guide", line: "The hatchling sociality research, height and climbing routes, foraging for a herbivore, and why space is the whole problem." },
     ],
     buyList: [

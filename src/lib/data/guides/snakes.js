@@ -376,66 +376,82 @@ Mites and general parasite loads are worth checking for in any new garter snake,
     difficulty: "Intermediate",
     petType: "Snakes",
     image: "/assets/guides/hognose-snake.jpg",
-    tagline: "The drama queen of snakes: all bluff and zero bite!",
+    tagline: "The drama queen of snakes: the whole display is bluff!",
     funFact: "When threatened, hognose snakes will flatten their neck, hiss, lunge (mouth closed), and if that fails, flip over and play dead complete with open mouth and tongue hanging out!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "36x18x18 in enclosure", low: 100, high: 180 },
-        { item: "Under-tank heater + thermostat", low: 40, high: 70 },
-        { item: "Warm, cool, and humid hides", low: 15, high: 30 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Aspen or coconut fiber substrate", low: 15, high: 25 },
-        { item: "Water dish", low: 8, high: 15 },
-        { item: "Feeding tongs", low: 5, high: 10 },
-        { item: "Branches and cork bark", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Frozen/thawed mice", low: 60, high: 120 },
-        { item: "Substrate replacement", low: 30, high: 50 },
-        { item: "Electricity (heat)", low: 40, high: 70 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Quarantine, the thermostat probe,
+    // hygiene, the daily stool check, weight checks, and the power-outage
+    // floor cite the shared reptile and snake guides in the sidebar's Health
+    // and More list. The old hub's 40 to 60% humidity and its crepuscular
+    // activity line are both retired here: the tank setup guide's 30 to 50%
+    // and its diurnal reading are the sourced ones (ReptiFiles, The Bio Dude).
+    // Reconciled 2026-09-09 for batch E (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new snake is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Legal check", value: "Every venomous-reptile law we checked draws its line well above hognose. Georgia and West Virginia are the two states where hognose ownership itself is off the table. Colorado now allows captive-bred Western and Plains hognose snakes to be possessed, sold, and transported with documentation, effective May 1, 2026, with Eastern hognose excluded. Treat California alone as the open question, and confirm it with the state agency rather than an aggregator.", source: "hognose-snake-legal-guide" },
+        { label: "Enclosure", value: "A useful rule of thumb is roughly one square foot of floor space per foot of snake length. For adult males, a 20-gallon-equivalent enclosure (around 30x13x13 inches) works as a minimum. Females grow noticeably larger, and a 40-gallon-equivalent setup (36x18x16 inches) is a more appropriate minimum for them. A 2x2x2 foot or similarly sized front-opening PVC enclosure makes a solid adult setup for either sex. Floor space matters more than height here, this is a ground-dwelling, burrowing species, not a climber.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Temperatures", value: "Basking area around 90 to 95°F on one end, cool side 70 to 75°F, with a night temperature around 75 to 78°F.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Heat", value: "A heat source is required, and the commonly recommended choice is a low-wattage halogen basking bulb positioned over the substrate, on a thermostat or dimmer, rather than relying on a heat mat or ceramic heat emitter as the primary source. Some general care sheets still recommend an under-tank heat mat instead, a genuine point of disagreement in the hobby. Whichever heat source you choose, the thermostat itself is not optional.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Thermostat probe", value: "For an under-tank mat the probe goes on the floor of the warm hide, the surface the animal actually lies on, held down with foil tape so it can't drift. The probe reads at the animal's level, not up in the airspace near the fixture.", source: "reptile-heating-thermostats-guide" },
+        { label: "Humidity", value: "30 to 50% ambient humidity, genuinely on the dry side compared to many other pet snakes. Don't mist the whole enclosure to raise humidity, instead provide one dedicated humid hide for shedding, and only add moisture there as needed. Running the whole enclosure damp is a direct path to respiratory infection and scale rot.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Substrate", value: "3 to 6 inches of loose, dry, diggable substrate, a soil and sand mix works well, roughly 70% soil-based substrate to 30% reptile-safe sand is a common ratio. Aspen or coconut fiber substrate also works well as the soil-based component. Keep it dry.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Where the digging goes", value: "Deep substrate on the cool end, basking surface on the warm end, cover at both. The snake never has to choose between the temperature it wants and the behavior it wants. In the preference study the pull toward the enriched side was stronger still when that side was the cooler one.", source: "hognose-snake-enrichment-guide" },
+        { label: "Cover", value: "Two secure hides minimum, one warm and one cool, so being concealed never costs the snake its preferred temperature. Cork tubes and flats plus leaf litter break the floor up further, so the snake has cover everywhere and not only in two boxes.", source: "hognose-snake-enrichment-guide" },
+        { label: "Lighting", value: "Hognoses are active during the day, unlike many pet snakes, and benefit from a normal 12-hour light and dark cycle. UVB isn't strictly required by every source, but a low-output linear T5 bulb spanning part of the enclosure is increasingly recommended for this diurnal species.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Where to feed", value: "Feed your snake off the substrate, in a separate container, to prevent impaction. Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food.", source: "hognose-snake-health-issues-guide" },
+        { label: "How much to feed", value: "Match feeding frequency and portion size to your snake's actual activity level and adult size, rather than defaulting to a schedule that suited it as a fast-growing juvenile. Obesity is a real contributor to shortened lifespans in this species.", source: "hognose-snake-health-issues-guide" },
+        { label: "Daily check", value: "Snake stool is semi-formed, sometimes carrying fur, bone, or feather from whole prey, with white, chalky urates released alongside it since snakes share one cloacal opening. Garter and hognose snakes often eat amphibians, fish, or worms rather than rodents, so expect less fur and more mucus.", source: "reptile-stool-urates-hydration-guide" },
+        { label: "Weight checks", value: "Weigh rather than measure, monthly for a growing juvenile as a reasonable default. A well-conditioned snake reads as a rounded loaf or a slightly rounded rectangle in cross-section. A triangular cross-section with a visible ridge down the spine points to underweight, and a round body with skin folds or a doughy feel over the ribs points to overweight.", source: "snake-sexing-growth-body-condition-guide" },
+        { label: "Handling", value: "Real bites are rare and typically tied to a feeding response, the snake mistaking a hand for food, rather than defense. Wash your hands before handling to remove any prey scent, and avoid handling right after your snake has eaten. Panicking at the hood-and-hiss display and handling roughly or dropping the snake is the classic first-timer mistake, when calm, steady handling actually works better.", source: "hognose-snake-handling-guide" },
+        { label: "Venom", value: "Western hognoses are rear-fanged and mildly venomous, but that venom is not considered medically significant to a healthy person. The one documented bite case in the scientific literature, a keeper bitten while offering a mouse, produced local swelling, bruising, and mild cellulitis, with no systemic effects and a full recovery in about five months. The researchers still concluded hognoses shouldn't be considered dangerous, just handled thoughtfully, especially around feeding time.", source: "hognose-snake-handling-guide" },
+        { label: "Budget", value: "Normal, wild-type animals run $50 to $100. Roughly $200 to $500 for the upfront setup, and roughly $10 to $25 a month ongoing. A routine reptile wellness exam runs roughly $50 to $100, with a fecal test around $25 to $50.", source: "hognose-snake-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years is the commonly cited lifespan range for a Western hognose, with 15 to 20 years genuinely achievable under excellent husbandry.", source: "hognose-snake-cost-guide" },
+        { label: "Adult size", value: "1.5 to 3.5 feet (45 to 107 cm) depending on species." },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "75 to 78°F is the normal night low. Below 75°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `A 36x18x18" or 36x18x12" enclosure with 4 to 6 inches of deep, loose substrate is the appropriate setup for an adult western hognose snake. Hognoses are fossorial (burrowing) animals that spend significant time underground in the wild. Deep substrate is not optional - it allows natural burrowing behavior, provides thermal insulation, and gives the snake psychological security.
-
-Good substrate choices include aspen shavings, coconut fiber, organic topsoil (no fertilizers or perlite), or a mix of topsoil and playsand. The substrate should hold the shape of a burrow tunnel when the snake digs into it. Avoid sand-only substrates (too loose) and cedar or pine shavings (toxic resin).
-
-Provide a warm hide with a belly-heat surface temperature of 85 to 90 degrees F on an under-tank heater with a thermostat, a cool hide at 72 to 76 degrees F, and a humid hide (a hide box with damp sphagnum moss) for shedding support. Ambient humidity of 40 to 60% is appropriate, rising during shed.
-
-A secure, lockable lid is essential. Hognose snakes are surprisingly capable escape artists despite their stocky build. Ensure all ventilation gaps are snake-proof.`,
-      diet: `Western hognose snakes eat frozen/thawed rodents (appropriately sized mice) as adults. Prey size should match the snake's widest mid-body point. Always use feeding tongs and always feed frozen/thawed prey - live prey can injure the snake.
-
-Hatchlings and young juveniles can be notoriously reluctant feeders. In the wild, hognose snakes specialize in eating toads, and some hatchlings imprint strongly on amphibian prey. Common solutions include scenting prey with toad or frog shed, offering a smaller prey item, feeding in a separate enclosure, offering at night in a completely dark environment, and leaving pre-killed prey overnight. Most hognoses that refuse initially will convert to unscented mice within a few attempts. Patience is essential - stressing the snake by repeated handling or forcing prey makes refusals worse.
-
-Adults should eat every 7 to 14 days. Juveniles every 5 to 7 days. After feeding, allow 48 to 72 hours before handling. Always provide fresh water in a soak-able dish.
-
-Some hognose snakes are dramatic bluffers that flatten their necks, hiss loudly, and fake strike during feeding. This is normal defensive behavior. Use tongs consistently and do not offer prey by hand.`,
-      enrichment: `Deep, burrowing substrate is the single most important enrichment for hognose snakes. Providing 4 to 6 inches of appropriate substrate allows them to burrow, thermoregulate underground, and behave naturally. A hognose snake in a bare enclosure with only paper towel substrate is a deprived animal.
-
-Add cork bark hides at both temperature ends, branches for occasional climbing, and leaf litter or dried botanicals on the substrate surface for natural texture and cover. Change up the layout occasionally to provide novelty - hognose snakes investigate new objects with interest.
-
-Hognose snakes are crepuscular, most active in the morning and evening. Handle regularly and gently to build trust. Many hognoses go through an initial defensive phase (dramatic bluffing displays, flattened neck, hissing, playing dead) that diminishes significantly with consistent calm handling. Most adult western hognoses become quite calm and handleable.
-
-The famous death-feigning behavior (rolling upside down, going limp, mouth gaping) is one of the most charming and memorable aspects of this species. It is a hardwired defensive response and not a sign of illness or distress.`,
-      health: `Feeding refusals are the most common concern with new hognose snakes and are usually behavioral rather than medical. Before assuming illness, ensure temperatures are correct, the snake is not in pre-shed, and that you have tried multiple feeding strategies. An established hognose that suddenly stops eating after months of reliable feeding warrants a veterinary assessment.
-
-Retained shed - especially on the eye caps - results from low humidity. A moist hide filled with damp sphagnum moss prevents most shedding problems. If retained shed occurs, soak in shallow lukewarm water for 20 to 30 minutes before attempting gentle removal.
-
-Wild-caught hognose snakes frequently carry internal parasites (pinworms, nematodes, coccidia). Always obtain a fecal exam from a reptile vet within 30 days of acquisition for any wild-caught or unknown-origin animal. Captive-bred animals from reputable breeders are far less likely to carry significant parasite loads.
-
-Respiratory infections can result from temperatures that are too low or a substrate that is too damp without adequate ventilation. Signs include wheezing, mucus, and open-mouth breathing. Any suspected respiratory infection requires antibiotic treatment from a reptile veterinarian.`,
-      checklist: ["36x18x18\" enclosure", "Deep substrate (4 to 6 inch aspen or coconut fiber)", "Thermostat-controlled heat source", "Warm and cool hides", "Humid hide with damp sphagnum", "Digital thermometer and hygrometer", "Frozen/thawed mice", "Feeding tongs", "Water dish", "Branches and cork bark"],
+    emergencyCard: {
+      source: "hognose-snake-health-issues-guide",
+      callNow: [
+        "Open-mouth breathing, wheezing, drooling or visible mucus, and lethargy",
+        "A failure to pass waste, bloating, and lethargy that doesn't clear within a reasonable window",
+        "Discolored or blistered belly scales that progress beyond mild discoloration",
+        "Mites or internal parasites, which periodic fecal checks catch early, especially on a newly acquired snake",
+      ],
+      vetLine: "A reptile-experienced vet, found before you need one. A respiratory infection always needs a vet, since it needs antibiotics and won't resolve on its own. With impaction, mild cases sometimes resolve on their own, and anything that doesn't pass within a reasonable window needs a vet, with severe cases sometimes requiring surgery.",
     },
+    routes: [
+      { slug: "hognose-snake-cost-guide", line: "What the snake costs by morph, the $200 to $500 setup, the low monthly running cost, and what vet visits run." },
+      { slug: "hognose-snake-tank-setup-guide", line: "Enclosure size split by sex, the temperature gradient, the dry humidity range, and the deep substrate this species digs into." },
+      { slug: "hognose-snake-handling-guide", line: "The puff adder act, the death-feigning routine, what the one documented bite case actually involved, and when bites happen." },
+      { slug: "hognose-snake-health-issues-guide", line: "Respiratory infection, impaction, obesity and fatty liver, scale rot, and parasites, with the cause behind each." },
+      { slug: "hognose-snake-enrichment-guide", line: "The preference study where the snakes chose enrichment, why the digging goes on the cool side, and a priority order." },
+      { slug: "hognose-snake-legal-guide", line: "Why venomous-reptile bans exclude this genus, the two states where ownership is off the table, and Colorado's 2026 split rule." },
+    ],
+    buyList: [
+      "2x2x2 foot or 36x18x18 inch PVC or glass enclosure, front-opening and securely latching",
+      "Low-wattage halogen basking bulb, or an under-tank heat mat",
+      "Thermostat or dimmer, whichever heat source you use",
+      "Digital thermometer and hygrometer",
+      "Loose, dry, diggable substrate: soil-based mix with reptile-safe sand, aspen, or coconut fiber",
+      "Warm, cool, and humid hides",
+      "Cork bark, branches, and leaf litter for cover",
+      "Water dish big enough for the snake to get into",
+      "A separate container for feeding off the substrate",
+      "Feeding tongs",
+      "Frozen/thawed mice",
+      "Optional low-output linear T5 UVB on a 12-hour timer",
+    ],
     faqs: [
-      { q: "Do hognose snakes really play dead?", a: "Yes, and it's one of the most dramatic defense displays in the reptile world. When threatened, a hognose snake flattens its neck, hisses loudly, and lunges with a closed mouth. If that fails, it rolls onto its back, opens its mouth, lets its tongue hang out, and goes completely limp - even emitting a musky odor. Remarkably, if you flip it right-side up, it rolls back over to maintain the death display, which somewhat undermines the performance." },
-      { q: "Are hognose snakes venomous?", a: "Technically yes, but functionally no for humans. Hognose snakes produce a mild rear-fanged venom used to subdue amphibian prey, particularly toads. The venom is entirely harmless to humans - bites, which are rare and almost always defensive, cause minimal local irritation at most. A hognose snake's first line of defense is always dramatic bluffing, not biting. They are handled safely by keepers worldwide and are considered medically insignificant." },
-      { q: "How big do hognose snakes get?", a: "Western hognose snakes - the most common pet species - are modest in size. Females typically reach 2 to 3 feet; males stay at 1 to 1.5 feet. Eastern hognose snakes can reach 2 to 4 feet. Both sexes are fully grown by 2 to 3 years. The notable size difference between males and females in the western species is more pronounced than in most other pet snakes." },
-      { q: "How often should I feed my hognose snake?", a: "Feed juvenile hognose snakes every 5 to 7 days and adults every 7 to 14 days. Always offer frozen and thawed prey - live rodents can injure snakes. Prey size should not exceed the widest part of the snake's body. Western hognose snakes can be finicky eaters; scenting prey with toad or fish can encourage reluctant feeders." },
-      { q: "Do hognose snakes need a humid hide?", a: "Yes. All hognose snakes benefit from a humid hide - a box packed with damp sphagnum moss - especially during pre-shed. Western hognose snakes prefer drier ambient conditions (40 to 60% humidity) than many other colubrids, but a moist microhabitat for shedding is still essential. Without it, retained shed on the eye caps is a common and preventable problem." },
-      { q: "Are hognose snakes good pets for beginners?", a: "Mostly yes, with one real caveat: feeding. Hatchlings can be notoriously picky eaters since they specialize in toads in the wild, which takes some patience to work through. Once established, they're a manageable size, dramatically entertaining (the death-feigning display alone is worth it), and effectively harmless despite the mild rear-fanged venom." },
-      { q: "Are hognose snakes related to garter snakes?", a: "Not closely - they're different genera entirely - but the two get mentioned together for good reason: both are rear-fanged with a mild Duvernoy's-gland venom that's harmless to people, and both specialize in prey that trips up keepers expecting a standard mouse-eater. Where a hognose snake digs up toads, the [garter snake](/guides/garter-snake/) hunts fish, worms, and amphibians, and many garter snakes refuse plain mice for life. If a hognose's toad-specialist feeding habits appeal to you, a garter snake's fish-and-worm diet is a similar kind of commitment." },
+      { q: "How humid should a hognose snake enclosure be?", a: "30 to 50% ambient, dry compared with most pet snakes. Rather than misting the whole enclosure, run one dedicated humid hide for shedding and add moisture only there." },
+      { q: "Why are hognose snakes prone to impaction?", a: "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Watch for a failure to pass waste, bloating, and lethargy, and see a vet if it doesn't resolve within a reasonable window." },
+      { q: "Are Western hognose snakes dangerous to handle?", a: "The rear-fanged venom isn't considered medically significant to a healthy person, and the researchers behind the one documented bite case in the literature concluded the species isn't dangerous, only worth handling thoughtfully. That case is still worth knowing about: swelling, bruising, and mild cellulitis at the bite site, no systemic effects, and a recovery that ran about five months." },
     ],
   },
   {

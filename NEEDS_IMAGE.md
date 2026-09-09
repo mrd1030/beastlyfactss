@@ -2,6 +2,16 @@
 
 Notes on animal facts that were drafted but did NOT make it into `src/lib/data/facts.js` because a verified photo couldn't be secured. These are FYI only, not added to the live data.
 
+## Guide heroes still needed
+
+**2026-09-09: green-iguana-feeding.jpg.** The green iguana feeding guide is
+written and wired (hub route, RELATED_ARTICLES auto-detects the -feeding-guide
+suffix), and every gate passes except the image check, which reports
+`/assets/images/green-iguana-feeding.jpg` referenced by
+`content/guides/green-iguana-feeding-guide.mdx`. Needs a 1600x1067 3:2 hero at
+mozjpeg quality 80, matching the sibling green iguana series. Photos are
+site-owner-sourced, so this one is Mike's to produce.
+
 ## Completed
 
 **2026-08-24: Kea, Dachshund, Pygmy Marmoset, Barreleye Fish, Basilisk Lizard.**

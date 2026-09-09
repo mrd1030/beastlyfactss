@@ -34,6 +34,28 @@ tree frog) is running Opus-only unless you say otherwise. Whichever way you
 go, write it into READMEFIRST's batch prompt so the next session stops
 having to ask.
 
+## Standing, no date: the green iguana kidney claim cites a page that does not say it
+
+Found 2026-09-09 while researching the feeding guide. The green iguana health
+issues guide says kidney disease follows from "too much animal protein in a diet
+that should be strictly plant-based (no insects, no dog or cat food, no eggs,
+ever)", and cites VCA Animal Hospitals' Iguanas, Diseases page. That page was
+opened for this work and it does not discuss renal disease, gout, dietary
+protein, or dehydration at all. The only kidney sentence on it is about vitamin
+D: "Hypervitaminosis D often causes severe kidney damage, so a proper diet is
+essential", which the guide does use correctly.
+
+The claim itself is defensible, it just needs the right sources. The new feeding
+guide carries them: the MSD Veterinary Manual ("diets high in protein may
+predispose reptiles to uric acid accumulation, which can cause gout") and the
+1996 ARAV proceedings on green iguana nutrition, which give gout's etiology as
+inappropriate dietary nitrogen levels and dehydration. Worth noting that VCA's
+own feeding page permits animal protein at under 5% of an adult's diet, so the
+"ever" is stronger than any cited source supports even after re-sourcing.
+
+Not changed here, because re-sourcing a medical claim on a merged page deserves
+its own pass rather than a side edit during a feeding-guide write-up.
+
 ## Standing, no date: the NASPHV quarantine line on five bird hubs
 
 Batch D's conure check caught the Day one row saying "NASPHV and VCA both
