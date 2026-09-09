@@ -2831,6 +2831,40 @@ problem, both genuinely exist in that article's own Sources block
 rewritten, matching how other articles on the site cite research in
 prose.
 
+## Cockatiel (2026-09-09, batch B, species check)
+
+One Fable agent, branch claude/batch-b-startup-ve7avl, commit 3c0e03c.
+Findings, fixed on the branch:
+
+- The hub's Lifespan row added an unsourced "though some live
+  considerably longer with excellent care" clause to soften the
+  encyclopedia contrast; the cost guide never says that. Reverted to
+  the cost guide's own FAQ sentence.
+- Tank setup's diet-pointer rewrite had silently dropped the ZuPreem
+  pellet affiliate link when the paragraph was cut (a Never-list
+  item); restored, moved into the pointer sentence as the rule
+  requires.
+- Five added link sentences read as the site talking about itself
+  ("our X guide covers/flags/walks through"); reworded onto the
+  animal, same targets kept.
+- The first-pass link table had recorded a tank-setup-to-photoperiod
+  link as added that was never made; added for real, on the sleep
+  sentence.
+- The second-pass review section was missing its per-page grade table
+  (added from the raw log), and overstated Lafeber's crest-position
+  support (Lafeber's cockatiel FAQ has no crest content at all, and
+  its behavior page only says raised/lowered crests mean "excited,
+  fearful or happy," not the specific flattened/forward readings
+  attributed to it); corrected to name what each source actually
+  supports.
+
+Verified independently: TheVetDesk, Hepper, and VCA's exact wording
+all opened directly and confirmed. No scope violations. Full gate
+suite green, including affiliate coverage back to the correct count
+after the restored link.
+
+Verdict: fixed on the branch. Nothing merged to main.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3126,3 +3160,11 @@ prose.
   the unsourced side), and a soft rope-fiber-ingestion-versus-toy-
   material tension between health and enrichment. Nine links added
   across both passes.
+- 2026-09-09, cockatiel species check (branch claude/batch-b-startup-ve7avl,
+  commit 3c0e03c, one Fable agent): reverted an unsourced clause added
+  to the hub's Lifespan row, restored an affiliate link the tank setup
+  diet-pointer rewrite had dropped, reworded five links that read as
+  the site talking about itself, added one link the review had claimed
+  but never made, and corrected the review file's overstated claim
+  about what Lafeber's sources actually support on crest position.
+  Full gate suite green.
