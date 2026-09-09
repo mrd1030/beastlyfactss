@@ -5192,3 +5192,62 @@ the deep dives' sourced figures. Nothing changed, and here is why.
   in 41 months, and the CITES Appendix II listing. All consistent with the
   legal guide, which independently reports 70 to 80 percent crashes in
   intensively studied areas. No statute, date, or jurisdiction touched.
+
+## Batch D independent reader pass (2026-09-09)
+
+The five batch D species workers had no Agent tool, so each ran its own set
+test first-party. After the batch was pushed, five independent Opus readers
+were launched from the session against the same pre-rewrite extracts, one
+per species. Their set grades: green iguana B, conure B, rat A-, hermit crab
+B-, box turtle B. The first-party grades were B, B, B+, B+, B-.
+
+Nearly every conflict the independent readers listed was a hub against a
+deep dive, and all of those died when the hubs became routers. Three
+findings were new and sat between two deep dives, where the router rewrite
+does not reach.
+
+Hermit crab, leading cause of death. Health guide: "Post-Purchase Stress
+(PPS), the Leading Cause of Death", repeated in its seoDescription and its
+FAQ. Enrichment guide: "a failed molt is the most common way these animals
+die in captivity". Two superlatives about the same thing. The health guide's
+Sources carry Crab Street Journal's post-purchase death article, which is
+the subject; the enrichment guide's four sources are the Elwood and Appel
+pain and sentience papers and Wild Welfare, none of which state a cause of
+death frequency. Health wins on both tests, its source states the claim and
+it is the health page's own subject. The enrichment guide loses the
+superlative and takes the health guide's own sourced wording for the same
+fact. Before: "Do not let substrate depth slip, since a failed molt is the
+most common way these animals die in captivity." After: "Do not let
+substrate depth slip, since substrate that is too shallow is one of the
+causes of a bad molt, and a bad molt is frequently fatal." No link added:
+the enrichment guide already carries its one sibling link, to the tank setup
+guide.
+
+Box turtle, substrate depth. Tank setup: "at least 2 to 3 inches deep to
+support burrowing." Enrichment: "do not use a shallow scattering of
+substrate and call it deep, because the behavior depends on being able to
+get under it." Cost guide prices a 4 inch layer. The reader called 2 to 3
+inches too shallow for a 4.5 to 7 inch turtle. Researched: VCA's box turtle
+housing page names substrates but gives no depth at all. Wildwood Veterinary
+Hospital states it directly, "The substrate should be 2-3 inches deep
+allowing plenty of room for your turtle to burrow." Husbandry sites give 4
+to 6 and 8 to 12 inches, but a veterinary hospital outranks them and is
+species-specific, so the tank setup guide's existing figure stands and is
+now sourced rather than asserted. Wildwood added to that guide's Sources; no
+number changed. The cost guide's 4 inch layer is above a stated minimum, not
+a contradiction of it.
+
+Box turtle, handling against enrichment. Ruled not a conflict. Handling:
+"best suited to limited handling rather than frequent physical interaction",
+and the hand-feeding sentence ends "interaction on the turtle's terms".
+Enrichment: "do not handle for enrichment, since box turtles are easily
+stressed by it." A turtle choosing to approach is not handling it for
+enrichment, and the handling guide already limits handling in the same
+paragraph. Nothing changed.
+
+Open, carried from the independent pass: the conure cost guide's vet and toy
+figures (already listed under Unsourced, needs a fact-check); the green
+iguana 70% first-year mortality figure, sourced to Wikipedia citing a 1992
+book on the cost guide and then repeated on the health guide as a fact box
+without that hedge; and the rat enrichment guide citing an unnamed study and
+using the spelling "centrepiece" in a set that is otherwise US.
