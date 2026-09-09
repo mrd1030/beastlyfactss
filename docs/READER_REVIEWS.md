@@ -2513,6 +2513,56 @@ only), not a link-and-number fix. The cage-cleaning, bathing,
 toxic-foods, and vegetable-portion gaps from the first pass remain
 open too, still uncovered anywhere in the set.
 
+## Budgie (2026-09-09, batch B, species check)
+
+One Fable agent, branch claude/batch-b-startup-ve7avl against base
+773c6bf (one commit before the stated 83a3e68; the branch forked
+before that commit landed on main, not a scope problem, just a note
+for whoever merges: the branch doesn't carry that commit's sharp
+version bump).
+
+Findings, fixed on the branch (commit be2adfe):
+
+- The hub's Zoonotic risk row still carried the old legacy hub's
+  psittacosis text ("mention the possibility to your own doctor if you
+  develop flu-like symptoms") instead of the health guide's own
+  wording. Corrected to the health guide's actual Psittacosis section:
+  cause, signs, and "mention the possibility to your vet directly."
+- The enrichment guide's reworded solo-bird FAQ had picked up a tail
+  that near-copied the body's own Social Enrichment sentence on a
+  comma splice ("...either way, both birds still need those
+  individually"). Trimmed back to "...either way."
+- The second-pass review section was missing the per-page grade table
+  the leopard gecko and axolotl templates use; added from the raw
+  log. Two softer conflicts the reader named (the cere guide's "less
+  commonly, a cere tumor" against health's specific "testicular
+  tumor"; enrichment's "part of the daily seed or pellet ration"
+  against tank setup's "seeds as an occasional extra") were named by
+  the reader but never recorded as checked; recorded, correctly left
+  as different precision rather than contradiction. "Four more
+  recommended links" corrected to five, matching the actual list, in
+  both the second-pass section and the running summary.
+
+Verified independently rather than just trusted: the lifespan
+research (opened PetMD's own cited page directly: "budgies can live
+anywhere between 7-15 years"; opened the Guinness World Records page
+for Charlie, 29 years 2 months) and the extractor fix's "no
+regressions" claim (ran the parser against 12 species at both the
+base and branch commits and diffed the output: six cost or tank-setup
+tables changed, all six were "[table could not be parsed]" at base and
+all six render at the branch head, zero newly broken).
+
+Everything else checked clean: every hub row's numbers and wording
+against its named source, the emergency card against the health
+guide's list, routes and buy list and the three verbatim FAQs, the
+18x18x18 figure consistent everywhere in the hub object, no link over
+its limit, both correct and missing date bumps, no untracked hedge or
+Sources or affiliate-link changes, and the full gate suite (internal
+links, related articles, affiliate, cost coverage, SEO tags, voice
+--strict, species numbers, eslint) green.
+
+Verdict: fixed on the branch. Nothing merged to main.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -2767,3 +2817,15 @@ open too, still uncovered anywhere in the set.
   with no regressions. Open: budgie-tank-setup-guide.mdx carries no
   Sources block at all, the only budgie deep dive without one, flagged
   for a real research pass rather than fixed here.
+- 2026-09-09, budgie species check (branch claude/batch-b-startup-ve7avl,
+  commit be2adfe, one Fable agent): the hub's Zoonotic risk row still
+  carried the old legacy hub's psittacosis wording instead of the
+  health guide's own, corrected; a comma-spliced tail on the
+  enrichment guide's reworded solo-bird FAQ trimmed; independently
+  re-verified the lifespan research (opened PetMD and the Guinness
+  World Records page directly) and the extractor fix (ran both commits
+  against 12 species and diffed, confirming six previously-broken
+  tables now render and nothing else changed). Full gate suite green.
+  Note for whoever merges: this branch forked one commit before main's
+  stated batch-B base and does not carry that commit's sharp version
+  bump in package.json.
