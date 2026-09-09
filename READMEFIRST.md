@@ -227,11 +227,39 @@ catches the defects the commands produce. Per batch:
    on batch D by Mike's decision; an extra Opus check took its place, and
    docs/NOTES.md carries the standing question of whether Fable returns
    for later batches. Batch E (red-eared slider, guppy, blue-tongue skink,
-   hognose snake, White's tree frog) is written and reader-passed on the
-   same branch but has had no species check at all, so it is not merged
-   and its grades are unknown. Batch E (red-eared slider, guppy,
-   blue-tongue skink, hognose snake, White's tree frog), spanning
-   turtles, fish, lizards, snakes, and amphibians, five different classes.
+   hognose snake, White's tree frog), spanning turtles, fish, lizards,
+   snakes and amphibians, five different classes: written,
+   reader-passed, and species-checked 2026-09-09 on the same branch, not
+   yet merged. Pass grade B. All four of its husbandry number changes
+   held up against opened sources: skink setup $400-800 to $330-635
+   (main's header never matched its own table, the new one sums exactly,
+   and to $430-1,335 with the animal), skink UVB 10.0-12% to 5-12% (both
+   cited sources list Reptisun 5.0 and Arcadia Forest 6% through Desert
+   12%, so the old range excluded the 6% bulb that article's own
+   affiliate link sells), guppy ideal temp 73-79 F to 76-78 F (Aquarium
+   Co-Op gives exactly that), and slider basking 85-90 F to 85-95 F (the
+   LafeberVet aquatic turtle handout gives 85-95 F basking and 72-82 F
+   water). Two apparent losses cleared: the Weinstein & Keyler bite
+   citation was upgraded from a plain-text PubMed ID to a linked DOI, and
+   the removed Zen Habitats source was a bare homepage replaced with the
+   specific care page. Four defects fixed: "faecal" twice in the skink
+   health guide against "fecal" seven times elsewhere in that same set; a
+   White's tree frog ongoing-cost heading claiming $13 to $24 a month
+   while the paragraph under it said substrate and power sit on top; a
+   water-change line naming its source in the sentence; and 13 hub rows
+   carrying the unnamed form of the source habit ("sources give a real
+   range", "most sources recommend", "depending on where you look"). The
+   worst of those was the red-eared slider Diet split row, which narrated
+   the disagreement and gave no ratio at all, so a reader consulting the
+   hub for a protein-to-plant split got a paragraph about sources instead
+   of a number. The router step is where this batch consistently leaked,
+   which is the same finding as batch D.
+   Open, found by the batch E check and not fixed: only 7 of 84 cost
+   guides carry the "Prices last checked <Month Year> at ..." line
+   RULES asks for. Batch D added it to 2 of its 5 species, batch E to
+   none. Writing the line without a real price pass would assert a check
+   nobody performed, so it needs one, and it is a corpus-wide gap rather
+   than a batch E defect.
    None of the 58 remaining legacy species carry a sellable care package
    (all 13 care-package species are already reconciled across batches A to
    C plus the ad-hoc set), so batches D and E are picked on popularity and
