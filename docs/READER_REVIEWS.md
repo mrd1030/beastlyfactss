@@ -3059,6 +3059,51 @@ recommending one for longevity; what to do if a tarantula escapes
 during cleaning; a substrate-change schedule; how to choose a seller;
 sling-specific housing. None covered by a shared guide.
 
+## Cockatoo, lovebird, tarantula (2026-09-09, batch B, species check)
+
+One Fable agent, branch claude/batch-b-startup-ve7avl, commit 7d40c2b,
+covering all three single-pass species in one check (matching how
+batch A's check covered five species in one pass). Findings, fixed on
+the branch:
+
+- Cockatoo. The emergency card's vetLine said "confirm PBFD only
+  through PCR testing"; the health guide says "Confirm with a vet
+  through PCR testing," no "only." Removed. The What Not to Do
+  clause in the enrichment guide had been reworded without being
+  flagged as a fix at the time (still the same disclaimed training
+  claim, restated rather than left as fact); kept, now listed. Every
+  other number and framing (lifespan, IUCN status, diet percentages,
+  the crave-cuddling removal) verified directly against real sources.
+- Lovebird. The hub's "One bird or two" row claimed a specific
+  mismatched-pair injury risk and attributed it to
+  lovebird-handling-guide, which never actually makes that claim, only
+  lovebird-vs-budgie-guide does. Corrected the row to the handling
+  guide's own words. The Lifespan row's VCA phrasing swapped for the
+  cost guide's own sentence. Both date bumps had been stamped
+  2026-09-09 off the container's UTC clock; `TZ=America/New_York date`
+  read 2026-09-08 at the time, matching CLAUDE.md's Eastern-date rule
+  and the cockatiel batch's own correct 09-08 stamp 28 minutes
+  earlier; corrected to 09-08.
+- Tarantula. The Lifespan row said "a confirmed female is the
+  long-term commitment," a word the cost guide never uses; swapped for
+  the cost guide's actual sentence. Two of the three links added this
+  pass read as the site talking about itself ("our enclosure setup
+  guide has you build," "covers the actual humidity target," when the
+  guide actually says sources disagree); reworded onto the animal,
+  same targets kept. The dubia roaches affiliate link in the new diet
+  pointer had drifted to cover "crickets or dubia roaches" together;
+  narrowed back to the product it actually names.
+
+Verified independently: PetMD's cockatoo page, the current IUCN status
+for both cockatoo species, VCA's cockatoo and lovebird feeding pages,
+and the lovebird cost guide's own arithmetic, all opened directly.
+
+Full gate suite green across all three species (internal links,
+related articles, affiliate, cost coverage, SEO tags, voice --strict,
+species numbers for all three, eslint on every touched data file).
+
+Verdict, all three: fixed on the branch. Nothing merged to main.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3410,3 +3455,14 @@ sling-specific housing. None covered by a shared guide.
   missing from relatedArticles.js entirely, the same wiring-bug class
   as leopard gecko's temperature guide; added. Three links added,
   batch B's fifth and final species.
+- 2026-09-09, cockatoo/lovebird/tarantula species check (branch
+  claude/batch-b-startup-ve7avl, commit 7d40c2b, one Fable agent
+  covering all three): a stray "only" in cockatoo's vetLine removed;
+  lovebird's hub attributed a pair-injury claim to the wrong article,
+  corrected to the source that actually makes it; both lovebird date
+  bumps corrected from the container's UTC clock to Eastern (09-09 to
+  09-08); tarantula's Lifespan row and two self-referential link
+  sentences reworded to match their sources. Batch B (budgie,
+  cockatiel, cockatoo, lovebird, tarantula) is done: five router hubs
+  rebuilt, every hub-versus-deep-dive conflict resolved, every
+  species checked. Nothing merged to main.
