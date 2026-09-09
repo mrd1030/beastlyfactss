@@ -7,67 +7,70 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/chinchilla.jpg",
     tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
-    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 60 hairs per follicle (humans have only 1).",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x48 in multi-level cage", low: 150, high: 300 },
-        { item: "12-14 in solid exercise wheel", low: 50, high: 90 },
-        { item: "Dust bath house + chinchilla dust", low: 20, high: 35 },
-        { item: "Platforms and hideouts", low: 30, high: 60 },
-        { item: "Water bottle and food dishes", low: 10, high: 20 },
-        { item: "Chew toys (mineral/pumice)", low: 15, high: 30 },
-        { item: "Digital thermometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Grass hay (unlimited)", low: 120, high: 200 },
-        { item: "Chinchilla pellets", low: 30, high: 50 },
-        { item: "Chinchilla dust (ongoing)", low: 30, high: 50 },
-        { item: "Bedding", low: 50, high: 90 },
-        { item: "Electricity (cooling in warm months)", low: 80, high: 150 },
-        { item: "Annual vet check (dental, under anesthesia)", low: 80, high: 150 },
-      ],
-    },
-    sections: {
-      housing: `A minimum 24x24x48 inch multi-level cage with solid platforms (never wire grates, which injure feet) is required. Chinchillas are extraordinary athletes - they can jump 6 feet vertically and need height for exercise. The more platforms at different levels, the better. Bar spacing should be 1 inch or less for adults, 1/2 inch for juveniles.
-
-Temperature is critical. Chinchillas cannot tolerate heat above 75 to 80 degrees F. In North American summers, air conditioning is often necessary. They are comfortable at 60 to 72 degrees F and are far more cold-tolerant than heat-tolerant. A chinchilla in a warm room will show rapid, labored breathing - this is heat distress and an emergency.
-
-Use fleece liners or paper-based bedding (Carefresh). Never use cedar or pine shavings (toxic aromatic oils). Provide a dedicated dust bath house (a plastic or ceramic container large enough for full body rolling) with chinchilla-specific dust (not sand) 2 to 3 times per week for 10 to 15 minutes. Dust baths are how chinchillas maintain their impossibly dense, silky fur.`,
-      diet: `Unlimited Timothy or orchard grass hay is the foundation of the chinchilla diet - it must be available at all times. Hay provides the indigestible fiber that keeps the chinchilla's continuously moving digestive tract functional and wears down continuously growing teeth. A chinchilla without constant hay access will develop life-threatening digestive impaction and dental overgrowth.
-
-Supplement with high-quality chinchilla pellets: 1 to 2 tablespoons per day. Choose Timothy-based pellets without added seeds, dried fruit, or colorful pieces. Plain, uniform pellets are nutritionally correct. Avoid muesli-style mixed foods - chinchillas selectively eat the sugary pieces and leave the nutritious ones.
-
-Treats must be minimal. Rose hips, dried herbs (chamomile, dandelion), small pieces of apple, or a raisin once per week are appropriate. Excessive sugar disrupts gut flora, causes obesity, and can precipitate life-threatening GI problems in this highly sensitive digestive system. Fresh water in a sipper bottle changed daily is essential.`,
-      enrichment: `A 12 to 14 inch solid-surface exercise wheel (not wire or mesh, which catches legs) is essential. Chinchillas are highly active and need vigorous nightly exercise. Without a wheel, they develop obesity, boredom stereotypies, and behavioral problems. Flying Saucer-style wheels work particularly well for chinchillas.
-
-Provide platforms at multiple heights, wooden ledges, tunnels, cork bark tubes, and a variety of safe chew toys: apple wood, willow balls, rose hip pieces, and pumice blocks. Chinchillas need to gnaw continuously to maintain their constantly growing teeth, and providing appropriate gnawing material prevents them from destroying cage furniture.
-
-Supervised out-of-cage playtime in a chinchilla-proofed room (no electrical cords, no small gaps to escape into, no toxic plants) is excellent enrichment. Chinchillas explore with spectacular energy - leaping, bounding, and investigating everything. Handle gently and consistently, allowing the chinchilla to approach voluntarily rather than being grabbed.`,
-      health: `Heat stroke is the most acute and deadly risk for chinchillas. Above 75 to 80 degrees F, chinchillas begin to overheat rapidly. Signs include rapid breathing, drooling, and lethargy. Move to a cool area immediately and contact an exotic vet. Prevention through climate control (air conditioning in summer) is essential.
-
-Dental disease (malocclusion and molar spurs) is extremely common in chinchillas and is the most common cause of weight loss and anorexia in middle-aged and older animals. Because the cheek teeth are far back in the mouth and not visible without sedation and magnification, dental disease is frequently discovered only when the chinchilla has already lost significant weight. Annual dental checks under anesthesia with an exotic vet are strongly recommended.
-
-Fur ring - a constricting ring of fur around the penis in males - can develop during or after mating and causes serious tissue damage if not addressed promptly. Male owners should learn to check for fur ring monthly. GI stasis from insufficient hay is another serious risk. A chinchilla that has not produced droppings for 12 hours is an emergency.`,
-      checklist: [
-        "Minimum 24x24x48\" multi-level cage",
-        "12 to 14 inch solid exercise wheel",
-        "Unlimited grass hay (Timothy or Orchard)",
-        "High-quality chinchilla pellets",
-        "Dust bath (chinchilla dust, not sand)",
-        "Multiple platforms and hideouts",
-        "Safe chew toys (apple wood, willow, pumice)",
-        "Digital thermometer (critical, keep under 80 degrees F)",
-        "Nail clippers",
-        "Exotic veterinarian experienced with chinchillas"
+    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 80 hairs per follicle, versus 2 to 3 for humans.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size and lifespan come from the
+    // encyclopedia entry, which no deep dive repeats. The antibiotics, cold
+    // tolerance, and vet trips rows cite the shared small-mammal guides in
+    // the sidebar's Health and More list. Reconciled 2026-09-09 for batch C
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cage", value: "A reasonable minimum is around 24 by 24 by 36 inches, tall and multi-level with solid, non-wire floors and shelves. Bigger is better for a species this active. Metal beats plastic, since chinchillas chew constantly and ingested plastic can cause a fatal blockage.", source: "chinchilla-tank-setup-guide" },
+        { label: "Wheel", value: "A solid metal wheel, 15 inches or larger. Never an exercise ball, a genuine overheating and injury risk for this species specifically.", source: "chinchilla-tank-setup-guide" },
+        { label: "Temperature", value: "Ideal room temperature is 50 to 68°F, kept cool and dry. Add the Fahrenheit temperature to the humidity percentage; treat a combined total over 150 as dangerous territory.", source: "chinchilla-tank-setup-guide" },
+        { label: "Cold tolerance", value: "Far more cold-tolerant than heat-tolerant: comfortable down into the 35 to 45°F range with proper shelter.", source: "small-mammal-temperature-heat-stress-guide" },
+        { label: "Dust bath", value: "Chinchilla dust, never sand or water, 2 to 3 times a week (some owners go daily), for 10 to 30 minutes at a time, using 1 to 2 inches of dust in a shallow container. Remove the container afterward.", source: "chinchilla-tank-setup-guide" },
+        { label: "Diet", value: "Grass hay should make up 80 to 90% of the diet, available at all times. Add plain, hay-based pellets, roughly 16 to 20% protein and 15 to 35% fiber, at about 1 to 2 tablespoons a day.", source: "chinchilla-tank-setup-guide" },
+        { label: "Treats", value: "A small fraction of the diet, a few times a week rather than daily, somewhere under 5 to 10% of total intake.", source: "chinchilla-feeding-guide" },
+        { label: "Not eating", value: "A chinchilla off food for more than 12 to 24 hours should be seen the same day. No droppings at all for about 12 hours is treated as needing immediate attention.", source: "chinchilla-feeding-guide" },
+        { label: "Handling", value: "Both hands, body fully supported against your chest (a football hold). Never lift by the tail tip or grab at the fur, which can trigger fur slip.", source: "chinchilla-handling-guide" },
+        { label: "Budget", value: "$455 to $1,225 for a complete setup. Roughly $30 to $85 a month ongoing. An annual exotic vet checkup runs $50 to $100 or more.", source: "chinchilla-cost-guide" },
+        { label: "Adult size", value: "9 to 15 inches; 1 to 2 lbs." },
+        { label: "Lifespan", value: "Commonly 10 to 20 years in captivity; wild longevity for this species has not been well studied." },
+        { label: "Antibiotics", value: "Certain ordinary antibiotics can wipe out a chinchilla's gut bacteria and let toxin-producing Clostridium take over, a reaction that can kill within days. Raise the drug list with your vet before any antibiotic starts.", source: "small-mammal-enterotoxemia-guide" },
+        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "chinchilla-health-issues-guide",
+      callNow: [
+        "No droppings at all for 12 hours",
+        "Lethargy, drooling, panting, or bright red mucous membranes (heat stroke)",
+        "Drooling, a wet chin, dropped food, or weight loss (dental disease)",
+        "A bloated or tense abdomen",
+        "Fur ring in males: shed fur constricting around the penis",
+      ],
+      vetLine: "An exotic vet experienced with chinchillas, found before you need one. This species masks illness well and can decline fast once symptoms become visible, so call sooner rather than waiting to see if things improve.",
+    },
+    routes: [
+      { slug: "chinchilla-cost-guide", line: "$455 to $1,225 for a complete setup, $30 to $85 a month, and the air conditioning cost most owners don't factor in." },
+      { slug: "chinchilla-tank-setup-guide", line: "The cage, the 150 rule for heat danger, and dust baths done right." },
+      { slug: "chinchilla-feeding-guide", line: "The hay-first schedule, why cecotropes matter, and the honest list of reasons a chinchilla stops eating." },
+      { slug: "chinchilla-handling-guide", line: "The football hold, the fragile skeleton, and what fur slip actually means." },
+      { slug: "chinchilla-health-issues-guide", line: "Dental disease, heat stroke, GI problems, fur chewing, ringworm, and fur ring, with what causes each." },
+      { slug: "chinchilla-enrichment-guide", line: "The cage-complexity study that dropped fur chewing with a floor change, and the priority order that follows from it." },
+      { slug: "chinchilla-legal-guide", line: "Why the California and Texas ban claims are false, and the one real CITES detail worth knowing." },
+    ],
+    buyList: [
+      "24x24x36 inch multi-level metal cage",
+      "15 inch or larger solid exercise wheel",
+      "Dust bath house and chinchilla dust",
+      "Platforms and hideouts at varied heights",
+      "Water bottle and food dishes",
+      "Safe chew toys (mineral, pumice, untreated wood)",
+      "Digital thermometer and hygrometer",
+      "Unscented paper bedding or fleece",
+      "Timothy or orchard grass hay",
+      "Plain, chinchilla-specific pellets",
+    ],
     faqs: [
-      { q: "Why do chinchillas take dust baths?", a: "Chinchillas' extraordinary fur - up to 60 hairs per follicle compared to a human's 1 - would mat, clump, and become oily if bathed in water like most mammals. In the wild, Andean chinchillas bathe in volcanic ash to absorb oils and moisture from their dense coats. In captivity, chinchilla-specific dust replicates this. Offer a dust bath container large enough for rolling 2 to 3 times per week for 10 to 15 minutes. Never bathe a chinchilla in water - wet fur takes many hours to dry and can lead to fungal infections and life-threatening chilling." },
-      { q: "Can chinchillas be kept in warm climates?", a: "With difficulty. Chinchillas are native to the high-altitude Andes and cannot tolerate temperatures above 75 to 80 degrees F. Above this threshold they develop heat stroke rapidly - a genuine veterinary emergency. In warm climates, air conditioning is not optional but a care requirement. Signs of heat distress include rapid panting, drooling, and lethargy. If you live somewhere without reliable air conditioning, a chinchilla is not a suitable pet." },
-      { q: "How long do chinchillas live?", a: "Chinchillas are one of the longer-lived small pet mammals. With excellent care, they commonly live 10 to 15 years, and some individuals have reached 20 years. This makes a chinchilla a longer commitment than many people realize at purchase. Their longevity makes annual veterinary care, appropriate diet (unlimited hay plus quality pellets), and temperature control especially important investments." },
-      { q: "Are chinchillas good pets for children?", a: "Chinchillas are best suited to older teenagers and adults rather than young children. They are crepuscular and nocturnal - most active in the evening when children should be sleeping - and are not natural cuddlers. They are also delicate and can develop serious stress responses to rough handling, require precise temperature management (never above 75 degrees F), and need an adult-level commitment to their care." },
-      { q: "What do chinchillas eat?", a: "Unlimited Timothy or orchard grass hay is the cornerstone of the chinchilla diet and must always be available. Hay keeps continuously growing teeth worn and the sensitive digestive system moving. Supplement with 1 to 2 tablespoons of high-quality chinchilla pellets (Timothy-based, no added seeds or colored pieces) daily. Treats must be very limited: a single raisin, a small piece of dried rose hip, or a dried herb like chamomile once or twice per week. Excessive sugar causes severe gut disruption in chinchillas." },
+      { q: "Can chinchillas take water baths?", a: "No. Their fur is dense enough, among the densest of any mammal, that trapped moisture promotes fungal growth rather than washing anything away. Dust baths are the only safe option." },
+      { q: "Why does my chinchilla eat its own droppings?", a: "This is normal and necessary, not illness. Chinchillas are hindgut fermenters that produce a distinct soft dropping called a cecotrope, mostly overnight, and eat it to send food through the gut a second time. Their small intestine only captures part of the nutrients from their very fibrous diet on the first pass, and a chinchilla prevented from doing this can become nutrient deficient." },
+      { q: "What is fur slip in chinchillas?", a: "It's a protective defense mechanism where a grabbed, mishandled, or overexcited chinchilla releases a large patch of fur all at once, revealing smooth skin underneath. It's not painful and not an injury in the traditional sense, but the fur can take several months to grow back, and it often regrows a slightly different shade." },
     ],
   },
   {
