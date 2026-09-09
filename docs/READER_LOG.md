@@ -1370,3 +1370,378 @@ B+. Well-sourced and genuinely useful, undercut by numbers that don't match each
 - Tank lighting or a day/night light schedule.
 - Whether snails, shrimp, or other tankmates are compatible.
 - The actual target temperature for treating ich once it's diagnosed.
+
+## Budgie (2026-09-08, batch B, before the router hub)
+
+One Opus agent, nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, cere color, vs cockatiel), about 82k
+tokens. The review below reads the old legacy hub; the router hub was
+built from its findings the same day. Full agent output below, unedited.
+
+---
+
+# Budgie set: reader review
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Act on: cage size, bar spacing, pellet ratio, veg list, night cover, checklist to shop from. Densest single page here. **B**
+- **01 Encyclopedia.** Finished it, fast. Act on: almost nothing. Adult size and the Gould history are genuinely interesting; the captive lifespan figure fights the rest of the set. **C**
+- **02 Cost.** Finished it. Act on: build an emergency fund, expect $175 to $475 setup, $350 to $900 first year. The setup table "could not be parsed," which is the one thing I most wanted. **B**
+- **03 Handling.** Finished it. Act on: wait one to two weeks, hand in cage, millet, step up, towel not hands, never punish a bite. Best-shaped page in the set. **A-**
+- **04 Health.** Finished it twice. Act on: the four same-day vet signs, the limp-means-tumor pattern, the male cere flag. **A**
+- **05 Cage setup.** Finished it. Act on: width over height, half-inch bars, no zinc or lead, no dowel-only perches, no sandpaper covers, dishes away from perches, 65 to 85F, no PTFE. **A-**
+- **06 Enrichment.** Finished it. Act on: move part of the daily ration into a foraging toy, rotate the hiding method every few days, buy cheap and often. **B+**
+- **07 Cere.** Finished it. Act on: sexing by cere, do not trust it under 6 to 12 months, brown crusty female is normal. **B+**
+- **08 vs Cockatiel.** Finished it. Act on: nothing new for someone already getting a budgie. **C+**
+
+## 2. Hub and encyclopedia
+
+The hub earns its place: it is the only page with a shopping checklist, a veg list, and a numbered out-of-cage figure. The encyclopedia does not. Outside the 1805/1840/1925 history it repeats the hub's framing.
+
+Conflicts, hub versus deep dives:
+
+- Cage. Hub: "A minimum cage size of 18x18x24 inches is required for a single budgie." Setup: "An absolute minimum for a single budgie is often cited around 18x18x18 inches." Different minimum, and the hub calls it "required."
+- Diet. Hub: "should make up 60 to 70% of a budgie's diet." Setup: "pellets should make up roughly 60 to 80% of a budgie's diet." Hub FAQ adds "Seed mix should be no more than 10 to 20%"; setup says "seeds treated as an occasional extra."
+- Food cost. Hub annual table totals $125 to $205 in food and treats. Cost: "Food (pellet-forward diet + fresh vegetables) | $5 - $15" monthly, which is $60 to $180.
+- Vet. Hub: "Annual avian vet check | $50 | $90." Cost FAQ: "Add an annual exotic vet checkup of $80 or more."
+- Lifespan. Hub: "7 to 12 years with proper care." Cockatiel page: "A well-kept budgie typically lives 5 to 10 years." Encyclopedia: "up to 21 years recorded in captivity." Three answers to one question.
+
+## 3. The set as a whole
+
+I could buy the cage, set it up correctly, feed it, tame it, and recognize an emergency. Still missing: a cleaning routine (what liner, how often, deep clean schedule), bathing or misting frequency despite "Shower or misting bottle" being on the checklist, a toxic-foods list, portion size for vegetables, and how to introduce a second budgie.
+
+Questions answered elsewhere in the set but never signposted:
+
+- Cost says "avian vets emphasize catching problems early." The four same-day signs are in Health, and Cost does link there, so this one works.
+- Health flags the male cere change; the whole Cere page exists and Health never points at it.
+- Cere says a male's brown cere may be "a cere tumor"; Health says testicular tumor, and Cere never links back.
+- Handling tells me to use a towel; the shared First Aid and Grooming guide teaches towel restraint, unlinked.
+- Setup says 10 to 12 hours of darkness; the shared Photoperiod guide explains why, unlinked.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: seed causes fatty liver (Hub, Setup, Health, plus three FAQs), width over height (Hub, Cost, Setup), social needs (Hub, Setup, Enrichment), prey animals hide illness (Cost, Handling, Health).
+
+Conflicts:
+
+- Millet. Hub: "a small piece 2 to 3 times per week maximum." Handling: "Millet from your fingers. Offer a favorite treat, spray millet works well for most budgies." Taming is a daily process. Nobody reconciles these.
+- Solo birds. Hub: "Budgies are highly social animals and suffer psychologically when kept alone." Enrichment FAQ: "Is a single budgie okay without a cage mate? It can be."
+- Sexing age. Cere: "somewhere between 6 and 12 months of age." Health: "their adult coloring doesn't settle in until several months old."
+- Mirrors, within the hub itself: "mirrors if kept solo" as enrichment, then "remove or cover mirrors (birds fly into them)."
+
+## 5. One link per page
+
+- Hub: "The most important dietary change for most budgies is reducing seed and adding pellets." Point to Converting a Seed-Eating Bird to Pellets.
+- Encyclopedia: "up to 21 years recorded in captivity." Point to the health issues guide.
+- Cost: "The cage is worth prioritizing width over cheapness, since budgies fly side to side rather than up and down." Point to the cage setup guide.
+- Handling: "If you need to restrain your budgie briefly, for medication or a health check, use a small towel rather than your bare hands." Point to Bird First Aid Kit and Grooming.
+- Health: "Treat a change like that as a reason to book an avian vet visit rather than a coincidence to note in passing." Point to the cere color guide.
+- Setup: "Budgies need roughly 10 to 12 hours of darkness and uninterrupted sleep every night." Point to Photoperiod and Sleep.
+- Enrichment: "Feather plucking, repetitive pacing on the same perch, and screaming beyond normal contact calls are the clearest signs enrichment isn't covering current needs." Point to Why Is My Bird Losing Feathers.
+- Cere: "That same texture change in a male is a different story." Point to the health issues guide.
+- vs Cockatiel: needs none for me. The two care guides and both encyclopedia entries are already linked.
+
+## 6. Trust
+
+Doubts: three lifespans, two cage minimums, two pellet percentages, and a cost page whose totals do not reconcile with the hub's own table. The mirrors contradiction inside one hub section. And the Cere page discussing a male's brown cere without ever naming the testicular tumor the Health page treats as the headline cause.
+
+The sentence that convinced me a keeper wrote this: "A budgie that suddenly starts limping, drags a leg, grips the perch weakly on one side, or falls off its perch is often not injured." Nobody writes that from a content brief.
+
+## 7. Set grade: B+
+
+Strong, specific, unusually honest about vet cost and solo birds, undermined by core numbers that disagree page to page.
+
+First two changes:
+1. Pick one number each for cage minimum, lifespan, pellet percentage, and monthly food, and make every page use it.
+2. Add a routine husbandry page: cleaning schedule, bathing, safe and toxic foods, veg portions. Then cross-link Health to Cere and back.
+
+## Not covered anywhere
+
+- Cage cleaning schedule, liner or substrate choice, and what a deep clean involves.
+- Bathing or misting frequency and method, despite a misting bottle being on the hub checklist.
+- Toxic foods for birds (avocado, chocolate, caffeine, onion). The Household Hazards guide is described as fumes and airborne hazards, not diet.
+- Vegetable portion size and how much a 30 gram bird should actually eat per day.
+
+## Budgie (2026-09-09, batch B, second pass, after the fixes)
+
+One Opus agent, the same nine pages re-extracted after the first-pass
+fixes, about 79k tokens. Full agent output below, unedited.
+
+---
+
+## 1. Page by page
+
+- **00 Hub.** Finished it; it is the most useful page here and I can act on almost every line. Undercut by its own cage numbers. **B**
+- **01 Encyclopedia.** Finished it in a minute. Nothing to act on except lifespan and adult size, which the hub already gave me. **C+**
+- **02 Cost.** Finished it. I can budget from it, but the setup breakdown table did not render, so the $175 to $475 has no itemization behind it. **B**
+- **03 Handling.** Finished it. Clear, ordered, executable from day one. **A-**
+- **04 Health.** Finished it, twice. Best page in the set; the limp-equals-tumor section is genuinely new to me. **A**
+- **05 Cage setup.** Finished it. Buyable: dimensions, bar spacing, perch types to avoid, temperature, PTFE. **A-**
+- **06 Enrichment.** Finished it. Actionable and cheap, but it contradicts the setup page on solo birds. **B+**
+- **07 Cere.** Finished it. Useful for sexing, thinner than the health page on the same topic. **B**
+- **08 Budgie vs cockatiel.** Finished it. Decision-grade, though I had already decided. **B+**
+
+## 2. Hub and encyclopedia
+
+The hub earns its place easily: it is a router with numbers attached, and every line names the article it came from. The encyclopedia does not. Its only unique content is the Gould and Budgerigar Club history, which is pleasant and useless to me; everything else (size, lifespan, diet, difficulty) is repeated on the hub.
+
+The hub disagrees with itself and with the setup guide on cage size. First week and FAQ: "18x18x18 inches is the figure often cited as an absolute minimum for one bird." Buy list: "18x18x24 inch cage or larger, wider rather than taller," and the card blurb says "The 18x18x24 minimum." The setup guide backs the first: "An absolute minimum for a single budgie is often cited around 18x18x18 inches." That is the exact number I would type into a shopping search, and the hub gives me two.
+
+## 3. The set as a whole
+
+I could buy the cage, set it up, feed the bird, tame it, and recognize an emergency. Gaps: no cleaning routine, no bathing or misting, no safe and unsafe food list beyond "fresh vegetables," and no weighing routine even though the health page leans on weight loss as a sign.
+
+Questions raised on one page and answered on another, silently:
+
+- The setup page tells me pellets should be 60 to 80% of the diet but never says the shop bird will arrive seed-addicted. The Converting a Seed-Eating Bird to Pellets guide in the sidebar is the answer, and no budgie page points at it.
+- The health page says egg binding is life-threatening; the Chronic Egg Laying guide covers it, unlinked from that page.
+- The enrichment page says "supervised out-of-cage time in a bird-safe room" without defining bird-safe. Household Hazards answers it, unlinked.
+- The handling page opens on hand-raised versus parent-raised without saying Choosing a Pet Bird covers how to tell.
+
+## 4. Overlap and conflict across deep dives
+
+I read the same-day vet list three times (hub, health, both FAQs), the pellet percentages twice, and cere sexing twice.
+
+Real conflict, solo birds. Setup: "Can one budgie live alone happily? A: Not well." Enrichment: "Is a single budgie okay without a cage mate? A: It can be, provided the owner supplies the social interaction a cage mate would otherwise cover."
+
+Soft conflict, male cere. Health: brown hypertrophy is "classically from a testicular tumor producing estrogen." Cere guide, same symptom: "it's more often linked to an actual health issue, including scaly face mites (which cause a crusty, porous texture) or, less commonly, a cere tumor." No testicular tumor at all, which is the scarier reading.
+
+Minor: enrichment says hide "part of the daily seed or pellet ration," while setup treats seeds as "an occasional extra rather than the foundation."
+
+## 5. The one link each page needed
+
+- **Hub:** "Pellets should make up roughly 60 to 80% of the diet" should link to Converting a Seed-Eating Bird to Pellets.
+- **Encyclopedia:** "flocks of thousands are common" should link to Colony and Aviary Keeping.
+- **Cost:** "The cage is worth prioritizing width over cheapness" should link to the cage setup guide. It never does.
+- **Handling:** "A hand-raised bird is already comfortable with people and may step up on its own from day one" should link to Choosing a Pet Bird.
+- **Health:** "It's linked to calcium and vitamin D deficiency and to obesity" should link to Chronic Egg Laying and Egg Binding.
+- **Setup:** "never use nonstick or PTFE cookware anywhere near a budgie" should link to Household Hazards for Pet Birds.
+- **Enrichment:** "plus supervised out-of-cage time in a bird-safe room" should link to Household Hazards for Pet Birds.
+- **Cere:** "That same texture change in a male is a different story" should link to the budgie health issues guide.
+- **Vs cockatiel:** "often do very well in a same-species pair" should link to the cage setup guide.
+
+## 6. Trust
+
+Doubts: the two cage minimums on one page; the cost table that did not render under a heading promising a breakdown; the solo-bird contradiction. Nothing read padded or invented.
+
+The sentence that convinced me a keeper wrote this: "A budgie that suddenly starts limping, drags a leg, grips the perch weakly on one side, or falls off its perch is often not injured."
+
+## 7. Set grade: B+
+
+Strong, specific, mostly non-redundant, let down by a contradicted cage number and a sidebar of relevant guides the bodies never reach into.
+
+First two changes: pick one cage minimum and use it in all four places; add body links from the budgie pages to the pellet conversion, household hazards, and egg binding guides.
+
+## Not covered anywhere
+
+- Cage cleaning routine: what to wipe daily, what to strip weekly, what liner to use.
+- Bathing or misting, and how often a budgie needs it.
+- A safe and unsafe food list: avocado, chocolate, apple seeds, onion, plus which vegetables to actually offer.
+- Water dish hygiene and how often to change water.
+
+## Cockatiel (2026-09-09, batch B, before the router hub)
+
+One Opus agent, nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, vs cockatoo), about 81k
+tokens. The review below reads the old legacy hub; the router hub was
+built from its findings the same day. Full agent output below,
+unedited.
+
+---
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: cage dimensions, bar spacing, itemized costs, pellet brands, night-light rule, egg-laying triggers. Densest page in the set. **B+**
+- **01 Encyclopedia.** Finished it, it is short. Actionable: adult size, weight, lifespan ceiling. The mutation history is genuinely interesting, not filler. **B**
+- **02 Cost.** Finished it, annoyed. Two tables where half the cells say "Part of the starter setup" instead of a number. The vet figures are the only real content. **C-**
+- **03 Handling.** Finished it. Actionable: 7 to 14 day settling period, flat palm not a finger, 10 to 15 minute sessions, stress list. Best-structured article here. **A-**
+- **04 Health.** Finished it. Actionable: the call-the-vet symptom list, cuttlebone, psittacosis is zoonotic. Thin on what to actually do. **B**
+- **05 Cage setup.** Finished it. Actionable: width over height, half-inch bars, spot-clean daily. **B**
+- **06 Feeding.** Finished it. Best article in the set: safe list, toxic list, no grit, six named reasons for appetite loss. **A**
+- **07 Enrichment.** Finished it. Actionable: priority order, start foraging toys easy, no sandpaper perches. **A-**
+- **08 vs Cockatoo.** Finished it, did not need it. I already chose. **C+**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: nothing else gives me size, weight, or origin. The hub is the most useful page here, but it is also where the set contradicts itself most.
+
+- Cage: hub, "A minimum cage of 24x24x30 inches is required." Setup, "Reference tables commonly list a minimum of about 20 by 20 by 30 inches."
+- Shape: hub, "Cockatiels are active climbers and benefit from vertical space." Setup, "cockatiels are horizontal flyers, so a tall, narrow cage wastes exactly the space they'd actually use." Directly opposed.
+- Bars: hub, "1/2 to 3/4 inch is appropriate." Setup, "half an inch or smaller to prevent head entrapment." The hub permits a spacing the setup page calls unsafe.
+- Lifespan: hub, "15 to 25 years." Cost, "Cockatiels live 15 to 20 years."
+- Vet: hub table, "Annual avian vet check $60 $100." Cost, "commonly runs $85 to $200."
+- Setup total: hub's table sums to about $145 to $280 before the bird. Cost, "Most first-time owners land in the $320 to $860 range."
+- Hub against itself: Health says "10 to 12 hours of darkness per night," its own FAQ says "provide 14 to 16 hours of darkness per night."
+
+## 3. Could I keep one
+
+Mostly yes. I can buy the cage, spec the bars, fill the bowls, know what is poison, know the emergency signs, and know what a bad day looks like. Missing: room temperature and draft numbers, how much food per day in any measurable amount, how to find or verify an avian vet, and how to introduce a second bird after four pages told me to get one.
+
+Unanswered questions whose answer sits elsewhere in the set, unlinked: Health says watch for "changes in droppings" but never says what normal is (the Reading Bird Droppings guide). Feeding says "monitor weight" with no scale or gram figure (Sexing, Weight, and Body Condition). Feeding and the hub both discuss hens without ever telling me how to sex the bird (same guide). Health names feather destructive behavior with no way to distinguish it from a molt (Molt vs. Plucking).
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: the non-stick kitchen warning (hub, health, setup) and the seed-diet lecture (hub, health, setup, feeding). Numbers disagree each time:
+
+- Pellets: hub, "60 to 70% of a cockatiel's diet." Setup, "pellets making up 60 to 80% of the diet." Feeding, "roughly 75 to 80% of daily intake."
+- Crest: handling, "Held upright and relaxed, it signals calm curiosity." vs Cockatoo, "straight up usually signals excitement or alarm, held back and relaxed signals contentment." A beginner reading both learns nothing.
+- Night frights: hub, "A nightlight prevents night frights." Setup, "a cage cover or a small night light can help." A cover is the opposite intervention.
+
+## 5. One link per page
+
+- **Hub:** "The pellet transition from seeds is often a weeks-long process" to Converting a Seed-Eating Bird to Pellets.
+- **Encyclopedia:** none needed.
+- **Cost:** "so it's worth locating one near you before an emergency forces the search" to Bird Emergency Plan.
+- **Handling:** "routine things like cage cleaning, nail trims, or a vet visit" to Bird First Aid Kit and Grooming.
+- **Health:** "changes in droppings" to Reading Bird Droppings.
+- **Setup:** "so a cage cover or a small night light can help" to Photoperiod and Sleep.
+- **Feeding:** "laying hens are the one group that need extra calcium consideration" to Chronic Egg Laying and Egg Binding.
+- **Enrichment:** "Do not assume plucking is behavioral before an avian vet has ruled out medical causes" to Molt vs. Plucking vs. PBFD vs. Giardia.
+- **vs Cockatoo:** "have a plan for who cares for it if it outlives you" to Succession Planning.
+
+## 6. Trust
+
+Doubts: the cost tables with no costs. The four different pellet percentages. And setup's "Ten to twelve hours of UV light exposure, or safe supervised outdoor time" on the same page as ten to twelve hours of darkness, which is more than a day.
+
+What convinced me a keeper wrote this, from feeding: "We couldn't find a single, consistently sourced number for exactly how many hours or days a cockatiel can safely go without eating, and would rather say that honestly than invent a round figure." Enrichment's "Material that survives the week has not done its job" is a close second.
+
+## 7. Set grade: **B-**
+
+Strong individual articles undermined by the hub disagreeing with them on cage size, bar spacing, cage shape, lifespan, and diet ratio.
+
+First two changes: make the hub inherit its numbers from the deep dives instead of restating them, starting with bar spacing (a safety figure). Then put real numbers back in the cost tables and reconcile them with the hub.
+
+## Not covered anywhere
+
+- Room temperature and humidity range, and what counts as a draft.
+- How much food to put out per day in any measurable amount (grams, teaspoons, bowl depth).
+- How to find and verify an avian vet, and what a board-certified avian specialist actually is.
+- How to introduce a second cockatiel, after four pages recommend a pair (the colony guide covers budgies, canaries, and finches only).
+
+## Cockatiel (2026-09-09, batch B, second pass, after the fixes)
+
+One Opus agent, the same nine pages re-extracted after the first-pass
+fixes, about 82k tokens. Full agent output below, unedited.
+
+---
+
+# Cockatiel set, read as someone buying one
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, and it is the page I would print. Actionable: cage 20x20x30, half-inch bars, 30-day quarantine, $320 to $860 setup, the vet-now list. **A-**
+- **01 Encyclopedia.** Finished it, but nothing to act on. Good history, wrong lifespan for a buyer. **C+**
+- **02 Cost.** Finished it. Actionable: budget $75 to $250 plus setup, $200 to $350 a year, $85 to $200 exam, find the vet first. The cost table has two real numbers and four rows saying "part of the starter setup," which is filler in a table. **B**
+- **03 Handling.** Finished it. Actionable: 7 to 14 days hands-off, flat palm not a finger, 10 to 15 minute sessions, the stress list. **B+**
+- **04 Health.** Finished it. Actionable: cuttlebone in permanently, no kitchen, the call-now list. **A-**
+- **05 Setup.** Finished it. Actionable: everything I need to buy and place, plus spot-clean daily, deep clean weekly. **A-**
+- **06 Feeding.** Finished it, twice. Actionable: free-choice pellets, pull fresh food in two hours, the safe and toxic lists, no grit, six reasons for appetite loss. Best page here. **A**
+- **07 Enrichment.** Finished it. Actionable: the priority order, and rotate. **A-**
+- **08 vs Cockatoo.** Skimmed. I already picked the cockatiel; this page is for someone earlier than me. **B+**
+
+## 2. Hub and encyclopedia
+
+The hub earns its place. It is the only page carrying the 30-day quarantine and the power-outage rule, and every number on it names the page it came from. The encyclopedia does not: it repeats size and adds natural history I enjoyed but cannot use, and its one care-relevant number contradicts the hub.
+
+Hub: "Lifespan: 10 to 15 years is typical."
+Encyclopedia: "10 to 14 years in the wild; up to 25 years in captivity, the oldest on record 36."
+
+Those are not the same commitment, and the hub's budget line is built on the shorter one.
+
+## 3. The set as a whole
+
+I could buy, set up, feed and spot trouble. Still missing: how much food per day in an actual amount, how many hours out of the cage, how to tell if mine is a hen (the health page's biggest risks are all hen-only), what to clean the cage with, whether to clip before the first free flight, and how to offer a bath.
+
+Questions answered elsewhere in the set with no signpost:
+- Health raises feather destructive behavior from boredom; the enrichment page is the answer and is not linked.
+- Health assumes I know my bird's sex; nothing on that page points anywhere.
+- Setup mentions night frights in one line; the enrichment FAQ gives the fuller answer and neither page mentions the other.
+- Cost tells me to find an avian vet; health explains what the exam catches, unlinked.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or three times: the kitchen fume warning (hub, health, setup), the pellet ratio (hub, setup, feeding), the crest as mood dial (handling, vs-cockatoo).
+
+Lifespan, the worst one:
+- Cost: "A 10 to 15 year lifespan means this is a long-term financial commitment."
+- vs Cockatoo: "A cockatiel's 15 to 25 year lifespan is already a real commitment."
+
+Crest:
+- Handling: "Held upright and relaxed, it signals calm curiosity."
+- vs Cockatoo: "straight up usually signals excitement or alarm, held back and relaxed signals contentment."
+
+Diet math: "Pellets should make up roughly 75 to 80% of daily intake, with fresh vegetables and fruit filling another 20 to 25%" tops out at 105 percent, before the seeds the same sentence allows.
+
+Toy materials: health says cockatiels are "frequent offenders when it comes to ingesting rope fibers," while enrichment recommends "palm and untreated natural fiber" with no supervision caveat.
+
+Light: setup asks for "10 to 12 hours of quiet, dark sleep" and "Ten to twelve hours of UV light exposure," which needs a 24-hour day to satisfy both maxima.
+
+## 5. The one link each page needed
+
+- **Hub:** "Adult size: 12 to 13 inches (30 to 33 cm) including tail; 2.5 to 3.5 oz." The only unlinked bullet. Point it at the encyclopedia.
+- **Encyclopedia:** "Wild Lifespan: 10 to 14 years in the wild; up to 25 years in captivity." Point it at the cost guide, which turns years into money.
+- **Cost:** "The cage is frequently the single biggest line item in the whole setup." Point it at the cage setup guide. Nothing else on the page tells me what I am buying.
+- **Handling:** "Fluffed feathers combined with rapid breathing." Point it at the health guide, because that same sign is on its call-the-vet-now list.
+- **Health:** "Often traced back to boredom, loneliness, or stress rather than a purely medical cause." Point it at the enrichment guide.
+- **Setup:** "Include foraging toys for enrichment." Point it at the enrichment guide.
+- **Feeding:** "All-seed diets are a well-documented cause of the malnutrition commonly seen in pet cockatiels, and it's linked to fatty liver disease." Point it at the health guide.
+- **Enrichment:** "A single bird with excellent toys and no company is still a single bird." Point it at the handling guide.
+- **vs Cockatoo:** "A cockatiel's 15 to 25 year lifespan is already a real commitment." Point it at the cost guide.
+
+## 6. Trust
+
+What made me doubt: the lifespan split, the percentages over 100, and the enrichment page leaning on "a 2025 study" and "a 2020 paper" with no author, journal or title, when the whole article is built on them being real. "As one avian practice puts it plainly" is the same problem in the health page.
+
+What convinced me a keeper wrote this: "Material that survives the week has not done its job."
+
+## 7. Set grade: B+
+
+Genuinely useful, specific, and honest about what it does not know, but the lifespan number changes depending on which page I am standing on, which is the kind of thing that makes me check everything else.
+
+First two changes:
+1. Pick one lifespan figure and make all four pages say it.
+2. Fix the diet percentages so they sum to 100 with seeds included, and put an actual out-of-cage hours number in the enrichment or handling guide.
+
+## Not covered anywhere
+
+- How to bathe or mist a cockatiel, though enrichment ranks "bathing opportunity" fifth in its priority list.
+- How much food to put out per day in a real amount, in grams, teaspoons, or bowl depth.
+- What is safe to clean a cage with, after setup asks for a weekly deep clean.
+- A concrete daily out-of-cage figure. "Substantial" is the closest the set gets.
+- Which toy materials are actually safe for a cockatiel, given the rope-fiber ingestion warning in the health guide points the opposite way from the enrichment guide.
+
+## Cockatoo (2026-09-09, batch B, single pass)
+
+One Opus agent, ten pages, about 90k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B. Strong, sourced, honest deep dives undercut by a hub that restates them with different numbers.
+
+Real conflicts found: diet ratio (old hub 60-70% pellets vs feeding/setup's 75-80%); cage cost and food cost (old hub's own numbers vs cost guide's); lifespan (old hub/encyclopedia 40-60 vs cost guide's unsourced "40 to 70-plus, Umbrella 50 to 70"); affection framing (old hub "most cockatoos crave cuddling" vs handling guide's cited consultant, "cockatoos are not cuddly, we are," whose fix is less shoulder time, not more); the encyclopedia's own conservation field ("Vulnerable") contradicting its own History paragraph ("IUCN reclassified the species as Endangered in 2018"); the legal guide's New Jersey section ("the Moluccan is Vulnerable") contradicting its own Massachusetts section ("both assessed as endangered"); and a same-article contradiction inside the enrichment guide, where the body explicitly declines to cite a "six hours" foraging figure or a "training worked best" claim as unverifiable, then a heading and two FAQ answers state both as settled fact anyway.
+
+Not covered anywhere: a worked daily timetable reconciling 4-6 hours interaction, foraging, out-of-cage time, and 10-12 hours sleep in one day; cage/dish cleaning routine; bathing or misting given the dust; what bird-proofing means in practice; finding/vetting an avian vet and PBFD screening cost; noise vs leases/HOAs/neighbors; introducing a cockatoo to existing pets.
+
+## Lovebird (2026-09-09, batch B, single pass)
+
+One Opus agent, eight pages, about 91k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B. Strong, sourced health and setup work sitting under a hub that contradicts it and a cost page whose arithmetic does not close.
+
+Real conflicts found: pairs (hub "a bonded pair is happier and healthier, less aggressive toward humans" vs handling/vs-budgie's documented real aggression risk between mismatched pairs); lifespan, four different values across hub, encyclopedia, cost guide, and the vs-budgie guide; cost guide's own monthly headline ($70-125/month) not matching its own annual table ($260-430/year, about $22-36/month); cage price (hub table caps the cage at $150, cost guide prose says $80-200).
+
+Not covered anywhere: how to introduce and bond a second lovebird beyond "do it slowly"; daily food quantity in grams or portions; bathing or misting routine despite a "bath option" in a cost FAQ; cage cleaning schedule beyond changing the paper liner.
+
+## Tarantula (2026-09-09, batch B, single pass)
+
+One Opus agent, ten pages, about 88k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B. The deep dives are unusually honest, especially enrichment and legal, and the hub undercuts them at the exact point a new keeper is most likely to hurt the animal.
+
+The critical finding: the old hub's FAQ said docile New World species "tolerate calm, gentle handling," directly contradicting the handling guide ("probably the wrong choice") and the enrichment guide ("do not handle"). Everything else flagged (enclosure floor space, substrate depth, temperature, feeding intervals, mites, annual cost, lifespan) was the hub restating deep-dive numbers with different figures. Tank setup's Diet section duplicates the feeding guide closely enough to be a liability, stating "adults typically eat every 1 to 2 weeks" as flat fact where feeding guide gives an honest species-dependent range.
+
+Not covered anywhere: how to confirm a female before buying; what to do if the spider escapes during cleaning; substrate-change schedule; how to choose a seller; sling-specific housing.

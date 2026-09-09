@@ -82,75 +82,65 @@ Annual avian veterinary exams including complete blood panel are essential. Find
     image: "/assets/guides/budgie.jpg",
     tagline: "The cheerful, chatty little parakeet that's perfect for first-time bird owners!",
     funFact: "Budgies can learn to talk and have been known to learn over 1,700 words! The Guinness World Record holder was a budgie named Puck who knew 1,728 words, more than any other bird on record!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "18x18x24 in cage (larger preferred)", low: 100, high: 280 },
-        { item: "Perches of varied diameters", low: 15, high: 25 },
-        { item: "Swing", low: 6, high: 12 },
-        { item: "Ladder", low: 4, high: 8 },
-        { item: "Foraging toys (small/budgie-sized)", low: 10, high: 20 },
-        { item: "Food and water dishes", low: 10, high: 20 },
-        { item: "Cuttlebone or mineral block", low: 5, high: 12 },
-        { item: "Nail clippers", low: 8, high: 12 },
-      ],
-      annual: [
-        { item: "Budgie pellets or seed mix", low: 50, high: 80 },
-        { item: "Fresh vegetables", low: 60, high: 100 },
-        { item: "Millet sprays (treats)", low: 15, high: 25 },
-        { item: "Annual avian vet check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A minimum cage size of 18x18x24 inches is required for a single budgie, but larger is strongly preferred - budgies are active, agile flyers that need space to move. Bar spacing of 1/2 inch or less is essential; wider bars allow a budgie's head to get stuck. The cage orientation should prioritize width over height to allow lateral flight.
-
-Position the cage at eye level, away from the kitchen (cooking fumes are lethal to birds), drafts, and direct sunlight. Budgies feel secure when they can see the room from a stable, elevated position. Cover the cage at night to provide 10 to 12 hours of darkness and uninterrupted sleep.
-
-Provide multiple perches of different diameters (3/8 to 3/4 inch) and textures: natural wood, rope, and a cement perch for nail maintenance. Perches at different heights allow the bird to choose its comfort zone. Include a swing - budgies love to rock and sway.
-
-Budgies are highly social animals and suffer psychologically when kept alone. A bonded pair of budgies is far happier than a solo bird. If you want a talking budgie, keep a single male with very intensive daily interaction - but be honest about the time commitment this requires.`,
-      diet: `A high-quality small parrot pellet (Harrison's Fine, Roudybush, or Lafeber's Nutriberries) should make up 60 to 70% of a budgie's diet. Seed-only diets are nutritionally deficient - they are high in fat and carbohydrates and lack essential vitamins, minerals, and amino acids. Budgies fed seed exclusively develop fatty liver disease, nutritional deficiencies, and shortened lifespans.
-
-Supplement daily with fresh vegetables: broccoli florets, carrot strips, leafy greens (kale, spinach, dandelion), bell pepper, and cucumber. Introduce new vegetables gradually. Many budgies initially refuse new foods - persistence and offering the same food repeatedly over days or weeks usually succeeds. Offer the same foods you eat alongside them to encourage trying new things.
-
-Millet sprays are the equivalent of candy - budgies love them but they are very high in fat and should be offered as treats only (a small piece 2 to 3 times per week maximum). Fruit can be offered in tiny amounts. Fresh water changed daily is essential.
-
-Iodine deficiency (causing goiter - thyroid enlargement) is common in seed-fed budgies. Pellets prevent this. If feeding seeds, provide a cuttlebone and a mineral block which provide trace minerals including iodine.`,
-      enrichment: `Budgies are playful, curious birds that thrive with an abundance of toys and daily interaction. Rotate toys regularly to maintain novelty - a toy ignored for a week often becomes fascinating again when reintroduced after a break. Provide swings, ladders, bells, foraging toys (pellets hidden in a puzzle feeder or wrapped in paper), shreddable toys (paper strips, palm fronds, thin cardboard), and mirrors if kept solo.
-
-Daily supervised out-of-cage time in a bird-safe room is important. Bird-proof the room: remove or cover mirrors (birds fly into them), ensure ceiling fans are off, cover windows with sheer curtains, remove toxic plants, and secure all open water sources. Let the budgie fly freely for 30 to 60 minutes minimum.
-
-Male budgies are more likely to talk and vocalize extensively. With patient, consistent repetition of words and phrases during daily interaction, many males learn words, phrases, and even entire songs. Talking is not guaranteed but more common in single males who bond closely with their keeper.
-
-Budgies benefit enormously from having a companion budgie. Two budgies together play, preen each other, communicate constantly, and are dramatically more active and engaged than solo birds. If you plan to keep a single budgie, plan to spend several hours per day actively interacting.`,
-      health: `Respiratory infections are common in budgies and can progress quickly. Signs include sneezing, nasal discharge, tail bobbing with each breath (a sign of labored breathing), fluffed feathers, and voice changes. Any budgie showing labored breathing requires immediate veterinary attention. Respiratory infections are serious and respond poorly to delays in treatment.
-
-Scaly face mites (Knemidocoptes pilae) cause crusty, porous growths on the beak, cere (the fleshy area above the beak), and sometimes feet. The mites are treated with an antiparasitic medication prescribed by an avian vet. They spread between birds and should be treated promptly.
-
-Psittacosis (Chlamydiosis, parrot fever) is a bacterial infection transmissible to humans. Signs in budgies include lethargy, nasal discharge, eye discharge, and weight loss. It is treatable with antibiotics. Any new budgie should be tested for psittacosis or treated prophylactically.
-
-Obesity from seed-heavy diets leads to fatty liver disease (hepatic lipidosis), which causes lethargy, labored breathing, and abdominal distension. A pellet-based diet with limited seeds prevents this. Annual avian veterinary wellness checks are strongly recommended.`,
-      checklist: [
-        "Minimum 18x18x24\" cage (larger preferred)",
-        "High-quality budgie pellets or seed mix",
-        "Fresh vegetables (broccoli, carrots, greens)",
-        "Multiple perches of different diameters",
-        "Swings, ladders, and foraging toys",
-        "Millet sprays for treats",
-        "Shower or misting bottle",
-        "Safe shreddable toys (paper, cardboard)",
-        "Nail clippers",
-        "Avian veterinarian contact"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size and lifespan come from
+    // the encyclopedia entry, which no deep dive repeats. Day one and power
+    // outage cite the shared bird guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the budgie set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV and VCA both put the floor at 30 days, up to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Enclosure", value: "18x18x18 inches is the figure often cited as an absolute minimum for one bird, but a wider flight-style cage serves them far better, something closer to 30x18x18 inches for a pair. Width matters more than height, since budgies fly side to side rather than climbing.", source: "budgie-tank-setup-guide" },
+        { label: "Bar spacing", value: "Half an inch or less. Wider spacing risks a bird squeezing through and escaping, or getting its head caught trying.", source: "budgie-tank-setup-guide" },
+        { label: "Diet", value: "Pellets should make up roughly 60 to 80% of the diet, with fruit, vegetables, and greens at another 20 to 25%, and seeds treated as an occasional extra. A seed-only diet is directly linked to malnutrition, obesity, and fatty liver disease.", source: "budgie-tank-setup-guide" },
+        { label: "Temperature", value: "A practical ambient range is about 65 to 85°F, with 70 to 75°F ideal. Budgies have no sweat glands and are more heat-sensitive than that range might suggest.", source: "budgie-tank-setup-guide" },
+        { label: "Handling", value: "Give a new bird a week or two to settle before any taming. Then work through hand-in-the-cage, millet from the fingers, and step-up training, in that order, moving on only once the bird is calm at the current step.", source: "budgie-handling-guide" },
+        { label: "Sexing", value: "Adult males typically show a blue to purple-blue cere, adult females a tan, brown, or pale white one. Juveniles of both sexes show pink or pale purple until it settles into adult color, usually between 6 and 12 months.", source: "budgie-cere-color-guide" },
+        { label: "Budget", value: "$20 to $80 for the bird, $175 to $475 for a complete starter setup, and first-year totals (including the bird) commonly $350 to $900. Food runs $5 to $15 a month, toys and perches $10 to $30.", source: "budgie-cost-guide" },
+        { label: "Adult size", value: "7 inches (18 cm); 1 to 1.4 oz." },
+        { label: "Lifespan", value: "Not well documented in the wild; typically 7 to 15 years in captivity, with the oldest documented individual living 29 years, 2 months." },
+        { label: "Zoonotic risk", value: "Psittacosis, caused by Chlamydia psittaci, is zoonotic, meaning it can spread to people. Signs include respiratory symptoms, diarrhea, weakness, and an enlarged liver. If your budgie shows these signs, mention the possibility to your vet directly, and keep any newly introduced bird separate from the rest of your flock while you watch for signs like these.", source: "budgie-health-issues-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a budgie carries almost no fat reserve. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "budgie-health-issues-guide",
+      callNow: [
+        "Fluffed-up feathers combined with sleeping during the day",
+        "Tail-bobbing with each breath",
+        "Open-mouth breathing",
+        "Sitting on the floor of the cage instead of perching",
+      ],
+      vetLine: "An avian vet, found before you need one. Budgies mask illness well, so any of the above means a vet within 24 hours, not a few days of watching and waiting.",
+    },
+    routes: [
+      { slug: "budgie-cost-guide", line: "$20 to $80 for the bird, $175 to $475 for a starter setup, and the avian vet costs most owners underestimate." },
+      { slug: "budgie-tank-setup-guide", line: "The 18x18x18 minimum, why width beats height, bar spacing, and the pellet-first diet." },
+      { slug: "budgie-handling-guide", line: "Letting a new bird settle, the taming progression from hand-in-cage to step-up, and why punishing a bite backfires." },
+      { slug: "budgie-health-issues-guide", line: "Fatty liver disease, the tumor that can look like a limp, egg binding, and the signs that mean a vet the same day." },
+      { slug: "budgie-enrichment-guide", line: "Foraging first, destructible toys, and the difference between a resting bird and a bored one." },
+      { slug: "budgie-cere-color-guide", line: "Reading the cere to sex a budgie, and when a color change means more than hormones." },
+    ],
+    buyList: [
+      "18x18x18 inch cage or larger, wider rather than taller",
+      "Perches of varied diameters and textures, plus a swing",
+      "Cuttlebone or mineral block",
+      "High-quality small parrot pellets",
+      "Fresh vegetables",
+      "Foraging toys and puzzle feeders",
+      "Shreddable and chew toys",
+      "Food and water dishes",
+      "Nail clippers",
+      "Cage cover for nighttime darkness",
+    ],
     faqs: [
-      { q: "Can budgies learn to talk?", a: "Yes, many can - males are significantly more likely to learn words and phrases than females. The Guinness World Record for most words learned by a bird belongs to a budgie: Puck, who knew 1,728 words. A single male budgie bonded closely to one person and kept in a relatively quiet environment with consistent repetition of words is the setup most likely to produce a talking bird. Talking is never guaranteed, but males in stimulating environments frequently learn their owner's names, phrases, and full sentences over time." },
-      { q: "How long do budgies live?", a: "7 to 12 years with proper care - a lifespan commonly cut short by seed-only diets, which cause fatty liver disease, nutritional deficiencies, and immune suppression. Wild budgies are not adapted to eat seeds as their primary food; seeds are a dry-season fallback, not a dietary staple. Pellet-based diets with daily vegetables are directly linked to longer, healthier lifespans. An annual avian veterinary wellness check catches common problems early." },
-      { q: "Do budgies need a companion?", a: "They are far happier with one. Budgies are highly social flock animals - a bonded pair will preen each other, communicate constantly, sleep together, and show significantly more active and engaged behavior than a solo bird. A single budgie is not necessarily miserable, but requires several hours of intensive daily human interaction as a substitute for a flock companion. If you can't provide that reliably, a bonded pair of budgies is the far better choice for the bird's wellbeing." },
-      { q: "What is the best diet for a budgie?", a: "60 to 70% high-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries), supplemented with daily fresh vegetables. Seed mix should be no more than 10 to 20% of the diet, offered in foraging toys rather than open dishes. Millet spray is a high-fat treat to be limited to small amounts 2 to 3 times per week. A cuttlebone provides calcium and trace minerals. The most important dietary change for most budgies is reducing seed and adding pellets - this single step dramatically improves health outcomes." },
-      { q: "Are budgies as easy as they are marketed?", a: "They are one of the simpler birds to keep, but are frequently sold as minimal-care starter pets when the reality is more involved. A properly cared-for budgie needs a cage larger than typical starter cages (18x18x24 inches minimum), daily fresh vegetables, regular out-of-cage time in a bird-proofed space, an avian vet relationship, and either a companion bird or several hours of human interaction per day. Within those parameters, they are genuinely manageable and rewarding for first-time bird owners." },
-      { q: "Is a budgie the same thing as a parakeet?", a: "Yes, when Americans say \"parakeet\" they almost always mean the budgerigar (Melopsittacus undulatus) - the exact bird this guide covers. \"Budgie\" is just the informal, shortened name used more often in the UK and Australia. The confusion comes from \"parakeet\" technically being a much broader category: it describes any small parrot with a long, slender tail, which includes dozens of unrelated species (Ring-necked Parakeet, Monk Parakeet, and others). The budgerigar simply became so dominant in the American pet trade that \"parakeet\" narrowed to mean specifically this bird in everyday use." },
-      { q: "Parrotlet or budgie: which is the better first parrot?", a: "Both are excellent small first parrots, but they suit slightly different people. A budgie is generally the gentler, more forgiving choice: easier to socialize, far more likely to build a large talking vocabulary, and just as happy solo with plenty of attention or paired with another budgie. A parrotlet is smaller and quieter but has a noticeably stronger bite for its size and a bolder, more assertive personality that needs consistent handling to stay friendly rather than nippy. If you want the lower-drama, kid-friendlier option, get the budgie. If you want a bird with outsized personality and don't mind the socialization work, a parrotlet is a great alternative." },
+      { q: "How much does a budgie itself cost?", a: "$20 to $80. It's the cheapest part of ownership, the cage and long-term avian vet care are where the budget goes." },
+      { q: "What size cage does a budgie need?", a: "18x18x18 inches is the figure usually cited as an absolute minimum for one bird, but a wide flight-style cage serves them far better, nearer 30x18x18 for a pair. Width beats height, since budgies fly side to side rather than climbing." },
+      { q: "What are the signs a budgie needs to see a vet the same day?", a: "Fluffed feathers plus daytime sleeping, tail-bobbing with each breath, open-mouth breathing, or sitting on the cage floor instead of perching. Budgies mask illness well, so any of those means a vet within 24 hours, not a few days of watching." },
     ],
   },
   {
@@ -212,71 +202,64 @@ Obesity from seed-heavy diets leads to fatty liver disease (hepatic lipidosis), 
     image: "/assets/guides/cockatiel.jpg",
     tagline: "The whistling, crested charmer that's the perfect first parrot!",
     funFact: "Cockatiels are masters of mimicry. Males especially love to learn whistled tunes and will serenade you (and any reflective surface) for hours. Many can even learn short phrases!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x30 in cage (larger preferred)", low: 80, high: 160 },
-        { item: "Perches of varied diameters", low: 20, high: 35 },
-        { item: "Food and water dishes", low: 10, high: 20 },
-        { item: "Nightlight (prevents night frights)", low: 10, high: 15 },
-        { item: "Cuttlebone and mineral block", low: 5, high: 10 },
-        { item: "Foraging and shreddable toys", low: 20, high: 40 },
-      ],
-      annual: [
-        { item: "Cockatiel pellets", low: 70, high: 110 },
-        { item: "Fresh vegetables", low: 80, high: 130 },
-        { item: "Toys (rotating)", low: 40, high: 70 },
-        { item: "Annual avian vet check", low: 60, high: 100 },
-      ],
-    },
-    sections: {
-      housing: `A minimum cage of 24x24x30 inches is required for a cockatiel, though 30x24x36 inches or larger is strongly preferred. Cockatiels are active climbers and benefit from vertical space. Bar spacing of 1/2 to 3/4 inch is appropriate - never wider, which risks head entrapment.
-
-Position the cage at eye level, against a wall (for psychological security), away from the kitchen, drafts, and direct sunlight. Kitchen fumes - particularly from overheated non-stick (PTFE/Teflon) cookware - are instantly lethal to all birds. Cooking with non-stick in a home with birds requires replacing non-stick with stainless steel or cast iron.
-
-Provide a variety of perch types and diameters (1/2 to 3/4 inch): natural wood (manzanita, dragonwood, natural branch), rope, and a cement perch for nail maintenance. Varying perch diameter prevents the foot fatigue and pressure sores that occur when birds grip the same diameter all day. Offer a swing - cockatiels frequently sleep on swings.
-
-A nightlight in the bird's room is strongly recommended to prevent night frights (sudden terrified thrashing in complete darkness that can cause injuries). A sleep cage in a quiet room with a consistent 10 to 12 hour dark period supports healthy sleep and hormonal regulation.`,
-      diet: `High-quality cockatiel pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries) should constitute 60 to 70% of a cockatiel's diet. Seed-only diets cause fatty liver disease, vitamin A and D deficiency, and significantly shortened lifespan. The pellet transition from seeds is often a weeks-long process - mix pellets gradually into seed while monitoring weight, and offer both in separate dishes initially.
-
-Fresh vegetables should be offered daily: leafy greens (kale, chard, romaine, dandelion), broccoli, carrots, bell peppers, cooked sweet potato, and snap peas. Rotate variety to provide diverse micronutrients. Many cockatiels initially refuse vegetables - offer consistently, with persistence, alongside their regular food. Eating alongside the bird and pretending to eat the same vegetables often encourages them to try.
-
-Seed mix in small amounts (about 1 teaspoon per day) can serve as enrichment offered in a foraging toy rather than in a dish. Millet spray is a high-value treat to be used sparingly. Provide a cuttlebone and mineral block at all times for calcium and trace minerals - especially important for females who can develop egg-binding without adequate calcium.
-
-Fresh water changed daily (cockatiels frequently bathe in their water dish, contaminating it quickly). A separate shallow bathing dish offered several times per week is appreciated.`,
-      enrichment: `Cockatiels are social, affectionate, and highly communicative birds that need meaningful daily interaction. Plan for a minimum of 2 hours of supervised out-of-cage time in a bird-safe room. A cockatiel that is cage-confined all day will become stressed, loud, and eventually develop behavioral problems or feather destructive behavior.
-
-Male cockatiels are natural musicians - they learn and endlessly perform whistled tunes and songs. Whistling with your cockatiel, playing music, and teaching simple songs are among the most rewarding interactions with this species. Many males also learn phrases and words, particularly in quiet environments where they bond closely with one person.
-
-Provide foraging toys, shreddable toys (paper, palm leaf, soft wood), bells, swings, and a mirror if the bird is kept alone (mirrors provide company but prevent bonding with humans in some individuals). Rotate toys weekly to maintain novelty.
-
-Cockatiels do best with a companion - either another cockatiel or a very attentive human who provides several hours of interaction daily. Solitary cockatiels that receive inadequate social contact develop chronic stress that manifests as excessive screaming, feather problems, and illness.`,
-      health: `Night frights are a distinctive cockatiel health concern: a nocturnal disturbance (a car headlight sweeping across the wall, a loud noise, a moth bumping against the window) causes sudden terrified thrashing and wing-beating in the dark. The bird can injure itself severely on cage bars, perches, and toys. A nightlight prevents night frights by ensuring the bird can orient itself if startled. A calm owner response - quietly turning on a light and speaking soothingly - helps the bird settle.
-
-Respiratory infections present as tail bobbing with each breath, labored breathing, nasal discharge, voice changes, and lethargy. Any difficulty breathing is an avian emergency - birds deteriorate rapidly when respiratory function is compromised. Seek veterinary care the same day.
-
-Egg binding (a retained, stuck, or abnormally positioned egg) is an emergency in female cockatiels. Chronic egg laying exhausts the female's calcium reserves and can cause severe metabolic depletion. Minimize hormonal triggers: 10 to 12 hours of darkness per night, limit handling of the lower back and vent area, remove nesting materials, and do not provide enclosed hiding spaces. A cuttlebone and mineral block provide calcium to support egg shell formation when laying does occur.
-
-Feather destructive behavior and chronic screaming indicate inadequate enrichment, social needs, or medical problems. Annual avian veterinary exams are essential. Cockatiels can live 15 to 25 years with excellent care - this is a genuine long-term commitment.`,
-      checklist: [
-        "Minimum 24x24x30\" cage (larger preferred)",
-        "High-quality cockatiel pellets (Harrison's or Roudybush)",
-        "Fresh vegetables and limited fruit daily",
-        "Variety of natural wood and rope perches",
-        "Cuttlebone and mineral block",
-        "Foraging toys and shreddable toys",
-        "Nightlight (to prevent night frights)",
-        "Misting bottle or shower perch for bathing",
-        "Sleep cover or sleep cage",
-        "Avian veterinarian experienced with parrots",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Day one and power
+    // outage cite the shared bird guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the cockatiel set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV and VCA both put the floor at 30 days, up to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Enclosure", value: "Reference tables put the minimum near 20 by 20 by 30 inches for one bird, and many keepers go to 24 by 24 by 30 for easier movement. Width matters more than height, since cockatiels are horizontal flyers.", source: "cockatiel-tank-setup-guide" },
+        { label: "Bar spacing", value: "Half an inch or smaller. Wider spacing creates a genuine and avoidable risk of head entrapment.", source: "cockatiel-tank-setup-guide" },
+        { label: "Sleep", value: "10 to 12 hours of quiet, dark sleep every night. Cockatiels are prone to night frights, sudden panicked flapping in the dark, so a cage cover or a small night light can help prevent injuries during these episodes.", source: "cockatiel-tank-setup-guide" },
+        { label: "Diet", value: "Pellets should make up roughly 75 to 80% of daily intake, with fresh vegetables and fruit filling no more than another 20 to 25% and seeds kept to a small minority. All-seed diets are a well-documented cause of malnutrition in pet cockatiels.", source: "cockatiel-feeding-guide" },
+        { label: "Feeding style", value: "Free-choice, not scheduled: refresh the base pellet bowl in the morning when they're hungriest and top it up if it empties before evening, it should never sit empty for long.", source: "cockatiel-feeding-guide" },
+        { label: "Handling", value: "Give a new bird 7 to 14 days with no handling attempts. Build trust with treats through the bars, then a hand inside the cage, before offering a flat palm (not a single finger) for step-up training, in sessions of 10 to 15 minutes.", source: "cockatiel-handling-guide" },
+        { label: "Budget", value: "$75 to $250 for the bird, $320 to $860 for a complete starter setup, and $200 to $350 a year after that. An initial or annual avian exam runs $85 to $200; reproductive emergencies like egg binding can run $300 to $800 or more.", source: "cockatiel-cost-guide" },
+        { label: "Adult size", value: "12 to 13 inches (30 to 33 cm) including tail; 2.5 to 3.5 oz." },
+        { label: "Lifespan", value: "Cockatiels live 10 to 15 years, so this is a long-term financial commitment even though the entry cost is modest.", source: "cockatiel-cost-guide" },
+        { label: "Zoonotic risk", value: "Psittacosis, caused by Chlamydia psittaci, is zoonotic, meaning it can pass to people in the household.", source: "cockatiel-health-issues-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a small bird carries almost no fat reserve. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "cockatiel-health-issues-guide",
+      callNow: [
+        "Discharge from the eyes, nose, or mouth",
+        "Bleeding",
+        "Changes in droppings",
+        "Sitting on the cage floor instead of perching",
+        "Persistently fluffed feathers",
+        "Tail-bobbing or labored breathing",
+        "Any sudden change in appetite or behavior",
+      ],
+      vetLine: "An avian vet, found before you need one. Cockatiels hide illness so effectively that these signs usually mean the problem is already advanced, so none of them should wait.",
+    },
+    routes: [
+      { slug: "cockatiel-cost-guide", line: "$75 to $250 for the bird, $320 to $860 for a starter setup, and the avian vet cost that catches people off guard." },
+      { slug: "cockatiel-tank-setup-guide", line: "The 20x20x30 minimum, why width beats height, bar spacing, and the kitchen danger worth repeating." },
+      { slug: "cockatiel-handling-guide", line: "Building trust before you touch, the flat-palm step-up, and reading a stressed versus comfortable crest." },
+      { slug: "cockatiel-health-issues-guide", line: "Nutritional disease, reproductive disease, the kitchen danger, and the signs that mean an avian vet now." },
+      { slug: "cockatiel-feeding-guide", line: "Free-choice feeding, the safe and toxic food lists, and six honest reasons a cockatiel stops eating." },
+      { slug: "cockatiel-enrichment-guide", line: "What two real studies found, why foraging comes first, and a priority order for everything else." },
+    ],
+    buyList: [
+      "20x20x30 inch cage or larger, wider rather than taller (24x24x30 for easier movement)",
+      "Perches of varied diameter and texture",
+      "Food and water dishes",
+      "Cuttlebone or mineral block",
+      "Foraging and shreddable toys",
+      "Nightlight or cage cover (night frights)",
+    ],
     faqs: [
-      { q: "Do cockatiels talk or just whistle?", a: "Males are more whistlers than talkers, and many never speak a clear word - but what they do instead is extraordinary. Male cockatiels learn and endlessly perform complex whistled tunes, songs, and melodic phrases with remarkable fidelity. Females very rarely talk or whistle to any significant degree. Males in households where they hear consistent speech can learn words and phrases, particularly if kept as a single bird bonded to one person. The 'Happy Birthday' melody and the Andy Griffith Show theme are infamous for becoming permanent fixtures in many cockatiel households." },
-      { q: "What are night frights in cockatiels?", a: "Night frights are a distinctive cockatiel behavior where a sudden disturbance in darkness - a car headlight sweeping across the wall, a loud noise, a moth hitting the window - triggers terrified, violent thrashing and wing-beating inside the cage. The bird can seriously injure itself on cage bars, perches, and toys. Cockatiels are significantly more prone to this than most parrots. Prevention: a nightlight in the bird's room eliminates the problem almost entirely. Response: calmly turn on a light and speak soothingly until the bird settles." },
-      { q: "How long do cockatiels live?", a: "15 to 25 years with excellent care - a lifespan frequently shortened by seed-only diets, respiratory infections, and untreated illness that could have been caught at an annual avian vet exam. Many cockatiels bought as children's starter pets outlive the child's time at home. This is a legitimate long-term commitment. Establishing an avian veterinary relationship, converting to a pellet-based diet, and committing to the bird's social needs for its entire life are the foundational requirements for a long-lived cockatiel." },
-      { q: "Do cockatiels need a companion?", a: "They benefit significantly from companionship. A bonded pair of cockatiels preens each other, communicates constantly, and shows far greater engagement and activity than a solo bird. A solo cockatiel that receives insufficient daily human interaction develops chronic stress: excessive screaming, feather problems, and immune suppression. The minimum for a solo cockatiel is 2+ hours of direct daily interaction. If your schedule is unpredictable, a bonded pair of cockatiels is the more humane choice." },
-      { q: "What should I do if my female cockatiel keeps laying eggs?", a: "Chronic egg laying is medically serious. Each egg depletes significant calcium reserves, and birds that lay repeatedly without adequate calcium develop metabolic bone disease, muscle weakness, and are at risk of egg binding - a life-threatening emergency. To reduce laying: provide 14 to 16 hours of darkness per night, avoid handling the lower back and vent area (this is a mating trigger), remove all nesting materials and enclosed hiding spaces, and keep a cuttlebone and mineral block available at all times. Consult an avian vet if laying is frequent and persistent." },
+      { q: "How much does a cockatiel cost upfront?", a: "The bird itself runs $75 to $250 depending on color mutation, with normal grey typically the cheapest. A complete starter setup, cage, perches, dishes, and toys, brings most first-time owners to $320 to $860 total." },
+      { q: "What size cage does a cockatiel need?", a: "Reference tables put the minimum near 20 by 20 by 30 inches for one bird, and many keepers go to 24 by 24 by 30 for easier movement. Width matters more than height, since cockatiels are horizontal flyers." },
+      { q: "What symptoms mean I should call an avian vet right away?", a: "Discharge from the eyes, nose, or mouth, bleeding, a change in droppings, sitting on the cage floor instead of perching, feathers fluffed for long stretches, tail-bobbing or labored breathing, or any sudden shift in appetite or behavior. Cockatiels hide illness so effectively that these signs usually mean the problem is already advanced, so none of them should wait." },
     ],
   },
   {
@@ -288,45 +271,65 @@ Feather destructive behavior and chronic screaming indicate inadequate enrichmen
     image: "/assets/guides/cockatoo.jpg",
     tagline: "The affectionate, screaming, decades-long commitment of a parrot that bonds almost too well!",
     funFact: "Cockatoos are considered the most affection-dependent parrots in aviculture. In the wild they maintain near-constant physical contact with their flock and mate, and a captive cockatoo often expects the same level of contact from its owner - which is exactly why the species has one of the highest rates of severe feather-plucking and behavioral problems of any commonly kept parrot when that need isn't met.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "3x2x4 ft heavy-gauge cage with locks", low: 500, high: 1200 },
-        { item: "Destructible wood chew toys (initial supply)", low: 60, high: 120 },
-        { item: "Foraging toys (large parrot, heavy-duty)", low: 50, high: 100 },
-        { item: "Cage-specific padlocks", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Large parrot pellets", low: 200, high: 350 },
-        { item: "Fresh vegetables, fruit, and nuts", low: 200, high: 350 },
-        { item: "Toys (rotating, heavy destruction rate)", low: 150, high: 300 },
-        { item: "Annual avian vet exam + bloodwork", low: 150, high: 300 },
-      ],
-    },
-    sections: {
-      housing: "Provide the largest cage that can reasonably fit in your home - a minimum of 3x2x4 feet, with larger strongly preferred, since cockatoos are large, powerful birds that need real room to climb, stretch, and flap. Cage bars must be heavy-gauge metal, since cockatoos have immensely strong beaks capable of bending weaker cages or working open standard latches; many owners add cage-specific padlocks for this reason. Position the cage in a social area of the home, since isolation is especially damaging to this species. Keep a constant supply of destructible wood toys available, since chewing is a critical behavioral outlet and supports beak health.",
-      diet: "A high-quality large parrot pellet should form 60 to 70% of the diet, supplemented daily with fresh vegetables, fruit, and a rotating variety of nuts (almonds and in-shell walnuts are excellent for foraging and enrichment). Seed-only diets cause the same fatty liver disease and nutritional deficiencies seen in smaller parrots, at greater scale given a cockatoo's size and long lifespan. Foraging-based feeding - food hidden in puzzle toys or wrapped in paper - is strongly recommended, both for nutritional enrichment and to occupy a bird that's otherwise prone to problem behaviors out of sheer boredom.",
-      enrichment: "This is the single most important factor in a cockatoo's long-term wellbeing. Cockatoos require hours of daily direct interaction and are widely considered unsuitable for owners who are away from home for long stretches without a plan for companionship. Without adequate attention, cockatoos are highly prone to feather-destructive behavior, self-mutilation, excessive screaming, and severe anxiety. Provide a large, rotating supply of destructible wood and foraging toys, daily supervised out-of-cage time, and consistent physical affection - most cockatoos crave cuddling and close physical contact more than almost any other parrot. A realistic, honest assessment of available daily time is essential before acquiring this species.",
-      health: "Feather-destructive behavior (plucking and self-mutilation) is extremely common in captive cockatoos and is very often behavioral or psychological - insufficient attention, boredom, or anxiety - rather than purely medical, though a vet should always rule out underlying illness or nutritional causes first. Screaming is a natural cockatoo vocalization but becomes excessive and distressing for the household when the bird's social needs aren't being met. Psittacine beak and feather disease (PBFD) is a serious viral concern in parrots, and screening new birds is recommended. Cockatoos can live 40 to 60 years or more, meaning many owners need a long-term care plan since the bird may well outlive them. Annual avian veterinary checkups are essential.",
-      checklist: [
-        "Large cage (3x2x4 ft minimum, heavy-gauge bars with secure locks)",
-        "High-quality large parrot pellets",
-        "Fresh vegetables, fruit, and nuts daily",
-        "Foraging toys",
-        "Constant supply of destructible wood chew toys",
-        "Hours of daily direct interaction",
-        "Social placement within the home",
-        "Cage-specific padlocks",
-        "Avian veterinarian contact",
-        "A realistic long-term care plan (40-60+ year lifespan)",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Day one and power
+    // outage cite the shared bird guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the cockatoo set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV and VCA both put the floor at 30 days, up to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Enclosure", value: "36 inches wide by 24 inches deep by 48 inches tall is a commonly cited minimum, with many avian vets recommending closer to 48 by 48 by 60 inches as a genuinely comfortable size. Bigger is always better with this species.", source: "cockatoo-tank-setup-guide" },
+        { label: "Bar spacing", value: "Three-quarters of an inch to 1 inch for large cockatoos. Secure, genuinely escape-proof locks matter more here than with most birds, cockatoos are notorious escape artists with the intelligence and strength to work out standard latches.", source: "cockatoo-tank-setup-guide" },
+        { label: "Cage material", value: "Stainless steel is the gold standard, rust-proof and able to withstand a beak this powerful for decades. Heavy-gauge powder-coated steel is an acceptable, more affordable alternative. Avoid galvanized or zinc-coated cages entirely, a bird that chews the bars risks metal toxicity from that coating.", source: "cockatoo-tank-setup-guide" },
+        { label: "Sleep", value: "10 to 12 hours of genuine darkness and quiet for sleep every night. Sleep deprivation in this species measurably worsens screaming and other behavioral issues.", source: "cockatoo-tank-setup-guide" },
+        { label: "Diet", value: "Pellets should make up 75 to 80% of daily intake, with fresh vegetables and fruit covering no more than another 20 to 40% and seeds and nuts kept to high-fat treats rather than the foundation.", source: "cockatoo-feeding-guide" },
+        { label: "Bonding", value: "Avoid over-bonding in the first weeks, it cements an anxious dependency rather than a healthy one. Real engagement with this species means 4 to 6 hours of interaction most days, not an occasional check-in, but consistent shoulder and lap time can itself become the problem if a cockatoo forms a pair bond with one person.", source: "cockatoo-handling-guide" },
+        { label: "Budget", value: "$700 to $3,000 for common species (rarer species run higher), $250 to $1,300 or more for a complete setup, and $20 to $50 a month for food after that. Toy replacement is the bigger recurring cost, since cockatoos destroy wooden toys fast.", source: "cockatoo-cost-guide" },
+        { label: "Adult size", value: "18 inches (46 cm); 1.1 to 1.7 lbs." },
+        { label: "Lifespan", value: "40 to 60 years is typical, with some individuals living into their 70s or beyond.", source: "cockatoo-cost-guide" },
+        { label: "Disease risk", value: "Psittacine beak and feather disease is incurable, often fatal, and highly contagious. Confirm with a vet through PCR testing, and quarantine any new bird before it meets an established one.", source: "cockatoo-health-issues-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a bird carries far less fat reserve than its size suggests. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "cockatoo-health-issues-guide",
+      callNow: [
+        "Over-preening to bare skin, or in serious cases, self-mutilation",
+        "Abnormal or clubbed feathers, or a beak that looks glossy from lost powder-down",
+        "Beak deformity",
+        "A sudden change in a previously stable bird's vocal or behavioral pattern",
+        "An enlarged liver, or changes in beak or nail keratin",
+      ],
+      vetLine: "An avian vet, found before you need one. Always start with a vet visit to rule out a medical cause before assuming plucking or screaming is purely behavioral, and confirm PBFD with a vet through PCR testing.",
+    },
+    routes: [
+      { slug: "cockatoo-cost-guide", line: "$700 to $3,000 for the bird, $250 to $1,300 or more for setup, and the lifespan number that should drive the whole decision." },
+      { slug: "cockatoo-handling-guide", line: "Why cockatoos get surrendered so often, the over-bonding trap, and the 4 to 6 hour daily reality." },
+      { slug: "cockatoo-health-issues-guide", line: "Feather-destructive behavior, PBFD, lipomas, fatty liver disease, and when a behavior change means the vet." },
+      { slug: "cockatoo-tank-setup-guide", line: "The 36x24x48 minimum, stainless steel versus powder-coated, bar spacing, and sleep." },
+      { slug: "cockatoo-screaming-feather-plucking-explained", line: "The research behind why cockatoos scream and pluck, and what actually helps versus what doesn't." },
+      { slug: "cockatoo-feeding-guide", line: "The 75 to 80% pellet ratio, the toxic food list, and the mistakes that lead to fatty liver disease." },
+      { slug: "cockatoo-enrichment-guide", line: "What the research actually supports, foraging to fill the gap a bowl leaves, and destruction done deliberately." },
+      { slug: "cockatoo-legal-guide", line: "State by state, including the states that treat an endangered species as off-limits regardless of a permit." },
+    ],
+    buyList: [
+      "Large stainless steel cage, or a heavy-gauge powder-coated alternative",
+      "Escape-proof, cockatoo-specific locks",
+      "Perches, bowls, and dishes",
+      "Destructible foraging toys (wood, cardboard, palm fiber)",
+      "A play gym",
+      "An air purifier",
+      "Formulated large-parrot pellets",
+    ],
     faqs: [
-      { q: "Are cockatoos good pets?", a: "They can be deeply affectionate and rewarding companions, but they're widely regarded as one of the most demanding parrots to keep responsibly. They need hours of daily interaction, are prone to severe behavioral problems like screaming and feather plucking without it, and can live 40 to 60+ years - meaning the commitment often outlasts an owner's active caregiving years. They aren't recommended for first-time bird owners or households that can't offer near-daily direct attention." },
-      { q: "Why do cockatoos scream?", a: "Screaming is a natural, far-carrying flock-contact call used in the wild to locate other flock members. In captivity, it becomes excessive when a cockatoo's social and attention needs aren't being met, or as a learned behavior if screaming reliably gets a reaction from the owner." },
-      { q: "Why is my cockatoo plucking its feathers?", a: "Feather-destructive behavior is very often linked to insufficient social interaction, boredom, or anxiety, though a vet should always rule out underlying medical or nutritional causes first. It's one of the most common and serious welfare issues in captive cockatoos and is far easier to prevent than to reverse once it becomes established." },
-      { q: "How long do cockatoos live?", a: "40 to 60 years is typical, with some individuals living even longer. This exceptionally long lifespan means most people who acquire a cockatoo need a realistic plan for its care well into the future, potentially including rehoming arrangements later in life." },
-      { q: "How much attention do cockatoos need?", a: "More than almost any other commonly kept parrot. Cockatoos evolved to maintain near-constant physical contact with their flock, and captive birds often expect the same level of attention from their owner. Hours of daily direct interaction are typically necessary to prevent serious behavioral problems." },
+      { q: "How much does a cockatoo cost to buy?", a: "$700 to $3,000 for common species like Goffin's, Galah, and Umbrella cockatoos, with Umbrella cockatoos commonly running $1,000 to $3,000. Moluccan cockatoos typically run $1,400 to $3,500, and rarer species like the palm cockatoo can reach $2,000 to $16,000 or more." },
+      { q: "What size cage does a cockatoo need?", a: "36 by 24 by 48 inches is the commonly cited minimum, and many avian vets recommend closer to 48 by 48 by 60 as a comfortable size. Bigger is always better with this species." },
+      { q: "Why are cockatoos so often surrendered?", a: "The demands outrun what most owners signed up for. One parrot behavior consultant reports that cockatoos are among the most consistently relinquished parrots, and that over half her clients own one. Rescue organizations describe the same pattern." },
     ],
   },
   {
@@ -412,67 +415,60 @@ Annual avian veterinary wellness examinations are essential. Green cheek conures
     image: "/assets/guides/lovebird.jpg",
     tagline: "The feisty, affectionate little parrot that bonds deeply with its person!",
     funFact: "Lovebirds mate for life in the wild and are famous for their strong pair bonds. They even feed each other and sit side-by-side for hours! This is where they got their name.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "18x18x24 in+ cage (larger for a pair)", low: 80, high: 150 },
-        { item: "Perches and swings", low: 20, high: 35 },
-        { item: "Shreddable toys", low: 20, high: 40 },
-        { item: "Breathable cage cover", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Small parrot pellets", low: 70, high: 110 },
-        { item: "Fresh vegetables", low: 80, high: 130 },
-        { item: "Toys (rotating)", low: 40, high: 70 },
-        { item: "Annual avian vet check + psittacosis testing", low: 70, high: 120 },
-      ],
-    },
-    sections: {
-      housing: `Lovebirds are small but intensely active and need more cage space than their size implies. A minimum of 18x18x24 inches is required for a single bird, or 24x18x24 inches for a pair, and larger is always better. Bar spacing of 1/2 inch is appropriate. Lovebirds are powerful chewers - cage bars should be thick enough to resist their strong beaks, and any cage with powder coating should be confirmed non-toxic.
-
-Provide multiple perches at different heights and diameters (1/2 to 3/4 inch), swings, and a variety of toys. Natural wood perches are preferred over dowels for foot health. Position the cage at eye level, away from the kitchen, drafts, and direct sunlight. Lovebirds are highly alert and feel most secure when positioned at human eye level with a wall behind the cage.
-
-Provide a consistent sleep routine with 10 to 12 hours of covered darkness at night, using a plain, breathable cage cover rather than an enclosed sleeping tent or "happy hut." Those tunnel-shaped, nest-like products are a documented trigger for hormonal aggression and chronic egg-laying in this species.
-
-Lovebirds are highly social within their species. A bonded pair of lovebirds is happier and healthier than a solo bird, and bonded pairs often have less aggressive territorial behavior toward humans. Introducing a second lovebird requires a careful slow-introduction process.`,
-      diet: `High-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries) should constitute 60 to 70% of the diet. A seed-only diet causes the same nutritional deficiencies seen in other parrots: fatty liver, vitamin deficiencies, and shortened lifespan. Pellet transition from seeds is often challenging with lovebirds - they are stubborn - but persistence pays off.
-
-Fresh vegetables should be offered daily: bell peppers, leafy greens, broccoli, carrots, cooked sweet potato, and snap peas are all excellent choices. Lovebirds tend to be bolder about trying new foods than some other parrot species. Use the basket trick - weaving vegetables and herbs through the cage bars - to encourage foraging for fresh foods.
-
-Millet is a high-fat treat that lovebirds love intensely. Limit to a small piece 2 to 3 times per week. A seed mix can be offered as enrichment in a foraging toy rather than as the primary food source. Strictly avoid avocado, chocolate, caffeine, onion, garlic, and xylitol. Fresh water changed daily.`,
-      enrichment: `Lovebirds are nicknamed the "pocket parrot" - they are intensely bonded, affectionate, and active little birds with large personalities. Enrichment is not optional; without adequate stimulation, lovebirds become cage-bound, hormonal, territorial, and difficult.
-
-Shreddable toys are lovebird favorites: palm leaf mats, paper strips, thin cardboard tubes, and soft wood pieces allow them to display their natural nesting and foraging behaviors. Swings and ladders get heavy use. Provide foraging toys where food is hidden - this is a much more enriching way to offer seeds or pellets than in an open dish.
-
-Daily supervised out-of-cage time of at least 1 to 2 hours in a bird-safe space allows flying, exploring, and interaction with their keeper. Many lovebirds become remarkably affectionate and social with their primary human, seeking contact, playing peekaboo, and vocalizing extensively in response to interaction.
-
-Lovebirds can be territorial with other bird species and with other lovebirds of different sex unless properly bonded. House only with thoroughly bonded partners and never mix lovebirds with other parrot species in the same cage without extensive supervised introductions.`,
-      health: `Respiratory infections are common in lovebirds and progress rapidly. Signs include breathing with the tail bobbing, nasal discharge, fluffed feathers, and sitting low on a perch. Seek veterinary care promptly - birds mask illness and by the time symptoms are visible, the bird is usually significantly ill.
-
-Egg binding is a life-threatening emergency in female lovebirds. A hen unable to pass an egg develops rapidly worsening distress, sitting puffed on the cage floor, straining, and visibly distressed. This requires immediate emergency veterinary intervention. Minimize hormonal triggers (long daylight hours, nesting materials, excessive handling of the back) to reduce egg-laying stimulation in female lovebirds.
-
-Psittacosis (Chlamydiosis) is a bacterial infection that can spread to humans. Annual testing or monitoring for this disease is recommended. Any new lovebird should be tested or treated prophylactically.
-
-Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in other parrots. Annual avian veterinary wellness checks are strongly recommended, particularly blood panels for birds on seed-heavy diets.`,
-      checklist: [
-        "Minimum 18x18x24\" cage for one bird, 24x18x24\" for a pair (larger preferred)",
-        "High-quality lovebird or small parrot pellets",
-        "Fresh vegetables and limited fruit",
-        "Multiple perches, swings, and ladders",
-        "Lots of shreddable toys (paper, cardboard)",
-        "Foraging toys and puzzle feeders",
-        "Millet sprays for treats",
-        "Safe chew toys (bird-safe wood)",
-        "Nail clippers",
-        "Avian veterinarian experienced with lovebirds"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Day one and power
+    // outage cite the shared bird guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the lovebird set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV and VCA both put the floor at 30 days, up to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Enclosure", value: "18 by 18 by 24 inches minimum for one bird, 24 by 18 by 24 for a pair, and bigger is always better. Long, horizontal cages suit lovebirds, which fly side to side rather than climbing.", source: "lovebird-tank-setup-guide" },
+        { label: "Bar spacing", value: "Between three-eighths and five-eighths of an inch, half an inch ideally. Wider spacing lets a lovebird trap its head between the bars, which can be fatal.", source: "lovebird-tank-setup-guide" },
+        { label: "Cage material", value: "Powder-coated or stainless steel only. Avoid homemade cages, wood components, or galvanized wire, all carry a real risk of zinc or other toxic exposure, and lovebirds chew constantly.", source: "lovebird-tank-setup-guide" },
+        { label: "What to leave out", value: "No nest box or happy hut unless you're actually breeding. Nest-like furnishings, tunnel-shaped bird tents included, are one of the most common and avoidable triggers for hormonal aggression and chronic egg-laying in this species.", source: "lovebird-tank-setup-guide" },
+        { label: "One bird or two", value: "A single hand-raised lovebird bonds to you and becomes tame and interactive, but needs roughly two hours of daily interaction. A bonded pair bonds to each other instead, largely ignores its keeper, and is closer to keeping a pair of finches, entertaining but rarely tame.", source: "lovebird-handling-guide" },
+        { label: "Handling", value: "Territorial and aggressive when frightened or threatened, especially females and during hormonal periods. Reaching into the cage of a defensive bird is a reliable trigger; switching to exterior food dishes and stick-training avoids it.", source: "lovebird-handling-guide" },
+        { label: "Budget", value: "$50 to $150 for a common color, $200 to $400 or more for rare mutations. Roughly $300 for a complete starter setup, and $20 to $35 a month after that.", source: "lovebird-cost-guide" },
+        { label: "Adult size", value: "5 to 6.5 inches (13 to 17 cm); 1.5 to 2 oz." },
+        { label: "Lifespan", value: "10 to 15 years typically, up to 20 with excellent care.", source: "lovebird-cost-guide" },
+        { label: "Disease risk", value: "Psittacine beak and feather disease hits feather and beak cells and the immune system, and lovebirds are particularly susceptible. It's often fatal, has no cure, and spreads easily, so test any new bird before it meets an established one.", source: "lovebird-health-issues-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a small bird carries almost no fat reserve. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "lovebird-health-issues-guide",
+      callNow: [
+        "Lethargy or appetite loss",
+        "Feathers held fluffed for long stretches",
+        "Any shift in normal behavior",
+        "Breathing difficulty",
+        "Straining or visible abdominal swelling (possible egg binding)",
+      ],
+      vetLine: "An avian vet, found before you need one. Lovebirds mask symptoms well, so a sudden change is worth acting on rather than waiting.",
+    },
+    routes: [
+      { slug: "lovebird-cost-guide", line: "$50 to $150 for the bird, roughly $300 for setup, and the real cost decision: one bird or two." },
+      { slug: "lovebird-handling-guide", line: "Why the name is misleading, exterior food dishes over reaching in, and stick-training a defensive bird." },
+      { slug: "lovebird-health-issues-guide", line: "PBFD, egg binding, feather plucking, and when a change in behavior means the vet." },
+      { slug: "lovebird-tank-setup-guide", line: "The 18x18x24 minimum, bar spacing as a safety issue, and why the nest box has to wait." },
+      { slug: "lovebird-enrichment-guide", line: "Contra-freeloading, the toy count that actually works, and the signs enrichment isn't covering current needs." },
+    ],
+    buyList: [
+      "18x18x24 inch cage minimum, 24x18x24 for a pair",
+      "Perches of varied diameter and material",
+      "Shreddable and chew toys",
+      "A plain breathable cage cover, not an enclosed \"happy hut\"",
+      "Food and water dishes",
+    ],
     faqs: [
-      { q: "Do lovebirds need to be kept in pairs?", a: "The old myth that a solo lovebird will die of loneliness is not literally true - solo lovebirds can live long healthy lives. However, a solo lovebird requires intensive daily human interaction (roughly two hours of direct engagement) as a substitute for a flock companion. A bonded pair of lovebirds is generally healthier, happier, and easier to keep because the birds meet each other's social needs. If your schedule cannot guarantee consistent daily time with the bird, a bonded pair is the more humane choice." },
-      { q: "Can lovebirds learn to talk?", a: "Occasionally, but lovebirds are not known as talkers. Unlike budgies or African greys, speech is rare and the vocabulary stays very small when it does occur. What lovebirds excel at instead is vocalization, contact calling, and developing a strong interactive bond with their keeper. If talking ability is important to you, a budgie or a cockatiel (males) are more reliable choices. Lovebirds compensate with personality, affection, and playfulness." },
-      { q: "Do lovebirds bite?", a: "Yes - lovebirds have a strong beak for their size and will use it when frightened, territorial, or over-stimulated. Consistent calm handling from a young age, respecting the bird's signals (fluffing, lunging, eye pinning), and never reaching into the cage when the bird is in a territorial mood significantly reduces biting. Lovebirds that are handled regularly from a young age and bonded to a primary human are generally no worse than any other small parrot, and many are remarkably gentle with their person." },
-      { q: "What should lovebirds eat?", a: "60 to 70% of the diet should be high-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries). Fresh vegetables daily - leafy greens, bell peppers, broccoli, carrot, and cooked sweet potato - make up the remainder. Limit seed mix to use as enrichment in foraging toys rather than as a dietary staple. Millet is a high-fat treat to be used sparingly. Seed-only diets cause fatty liver disease, vitamin deficiencies, and significantly shortened lifespan in lovebirds just as in all parrots." },
-      { q: "How long do lovebirds live?", a: "10 to 20 years with excellent care - a lifespan that surprises many keepers who assume small birds have short lives. The full 20-year potential requires a pellet-based diet, regular avian veterinary care, adequate enrichment and social contact, and minimizing hormonal stress (particularly in egg-laying females). Lovebirds rehomed in middle age after years of poor nutrition often have reduced lifespans. Starting with proper care from day one makes a measurable difference in long-term health." },
+      { q: "How much does a lovebird cost to buy?", a: "$50 to $150 for a common peach-faced or Fischer's. Rare mutations (lutino, blue, pied, and combinations) go for $200 to $400 or more, and exceptional individuals reach $1,000. Adoption typically runs $20 to $100. A hand-raised bird costs more than a parent-raised one and is generally the better choice for a tame, interactive pet." },
+      { q: "What size cage does a lovebird need?", a: "18 by 18 by 24 inches minimum for one bird, 24 by 18 by 24 for a pair, and bigger is always better. Long, horizontal cages suit lovebirds, which fly side to side rather than climbing." },
+      { q: "When is a lovebird health issue an emergency?", a: "They mask symptoms, so a sudden change is worth acting on: lethargy, appetite loss, feathers held fluffed, or any shift in normal behavior all warrant a prompt vet visit instead of waiting. Egg-binding, breathing difficulty, and severe lethargy all mean an immediate trip to an avian vet." },
     ],
   },
   {

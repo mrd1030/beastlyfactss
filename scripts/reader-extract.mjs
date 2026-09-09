@@ -47,9 +47,24 @@ const stripTags = (s) => s.replace(/<[^>]+>/g, '');
 function renderTable(block) {
   const headers = /headers=\{\[(.*?)\]\}/s.exec(block)?.[1] || '';
   const rowsSrc = /rows=\{\[(.*)\]\}/s.exec(block)?.[1] || '';
-  const clean = (s) => s
-    .replace(/<>(.*?)<\/>/gs, (_, inner) => JSON.stringify(stripTags(inner)))
-    .replace(/<[^>]+>/g, '');
+  // A cell can be a bare JSX element used directly as a row value, not just
+  // text wrapped in a <>fragment</> - e.g. <AffiliateLink href="...">Perches</AffiliateLink>
+  // as its own array entry. Budgie's cost guide table hit this: any row with
+  // one of those failed the whole table's JS-eval parse, and every other row
+  // silently vanished behind "[table could not be parsed]" with it. Resolve
+  // innermost-first (a component nested inside a fragment) by looping until
+  // no more tag pairs remain, turning each into a quoted JS string of its
+  // stripped inner text before the final bare-tag strip.
+  const clean = (s) => {
+    let prev;
+    do {
+      prev = s;
+      s = s
+        .replace(/<>(.*?)<\/>/gs, (_, inner) => JSON.stringify(stripTags(inner)))
+        .replace(/<([A-Za-z][\w.]*)(?:\s[^>]*)?>(.*?)<\/\1>/gs, (_m, _tag, inner) => JSON.stringify(stripTags(inner)));
+    } while (s !== prev);
+    return s.replace(/<[^>]+>/g, '');
+  };
   let headerCells = [];
   let rows = [];
   try {

@@ -2303,6 +2303,807 @@ Open: feeding portions/frequency, hatchling-specific husbandry, and the
 soaking routine gap filed in docs/READER_LOG.md; the encyclopedia
 lifespan figure flagged for whoever next touches that file.
 
+## Budgie (2026-09-08, batch B, first pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, cere color, vs cockatiel). One Opus
+agent, about 82k tokens. The review below reads the old legacy hub; the
+router hub was built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | Densest single page: cage, bar spacing, pellet ratio, veg list, checklist. |
+| Encyclopedia | C | Fast, little to act on, and its lifespan figure fights the rest of the set. |
+| Cost | B | Useful ranges, but the setup table itself couldn't be read, and its own totals didn't reconcile with the hub's. |
+| Handling | A- | Clear taming progression, towel not hands, never punish a bite. |
+| Health issues | A | The same-day vet signs and the limp-means-tumor pattern are genuinely useful. |
+| Tank setup | A- | Width over height, half-inch bars, no zinc or lead, no dowel-only perches. |
+| Enrichment | B+ | Useful, foraging-first framing, but never signposted from the hub or the health page. |
+| Cere color | B+ | Solid sexing method, but doesn't link back to the tumor risk Health raises. |
+| vs Cockatiel | C+ | Nothing new for someone already set on a budgie. |
+
+Set grade: B+. "Strong, specific, unusually honest about vet cost and
+solo birds, undermined by core numbers that disagree page to page."
+
+Hub versus the set, both sides quoted (all against the old legacy hub,
+resolved by the router rebuild):
+
+- Cage. The old hub said: "A minimum cage size of 18x18x24 inches is
+  required for a single budgie." The tank setup guide says: "An
+  absolute minimum for a single budgie is often cited around 18x18x18
+  inches, but a wider flight-style cage serves them far better,
+  something closer to 30x18x18 inches for a pair." Different minimum,
+  and the old hub called its own number "required." The router hub's
+  Enclosure row now quotes tank setup's own sentence.
+- Diet. The old hub said: "should make up 60 to 70% of a budgie's
+  diet," with an FAQ adding "Seed mix should be no more than 10 to
+  20%." Tank setup says: "pellets should make up roughly 60 to 80% of
+  a budgie's diet, with fruits, vegetables, and greens covering
+  another 20 to 25%, and seeds treated as an occasional extra." The
+  router hub's Diet row now quotes tank setup's own figures.
+- Lifespan. Three answers to one question: the old hub's FAQ said "7
+  to 12 years with proper care" (unsourced), the vs cockatiel guide
+  said "A well-kept budgie typically lives 5 to 10 years" citing
+  PetMD, and the encyclopedia said "up to 21 years recorded in
+  captivity" (also unsourced). Opening the vs guide's own cited PetMD
+  page found it actually states 7 to 15 years for captive budgies, not
+  5 to 10; a further search found the real record holder, Charlie, a
+  budgerigar who lived 29 years and 2 months (Guinness World Records),
+  not 21. The vs cockatiel guide's body, table, FAQ, and seoDescription
+  are now corrected to 7 to 15 years, and the encyclopedia entry now
+  reads "typically 7 to 15 years in captivity, with the oldest
+  documented individual living 29 years, 2 months," which the router
+  hub's Lifespan row quotes.
+- Vet cost. The old hub's own annual table listed "Annual avian vet
+  check: $50 to $90" against the cost guide's FAQ "Add an annual
+  exotic vet checkup of $80 or more" and its table's "~$7" amortized
+  line, three numbers for the same idea. The router hub's Budget row
+  now quotes the cost guide's own headline figures instead of
+  restating a separate table.
+
+The set as a whole: buyable, houseable, feedable, tameable, and basic
+emergencies are recognizable from this set. Real gaps, checked against
+the Health and More list before being called real: a cage cleaning
+schedule, bathing or misting frequency (despite a misting bottle on
+the old hub's checklist), a toxic-foods list, and vegetable portion
+size for a 30-gram bird. None of these are covered by a shared guide
+either; filed in docs/READER_LOG.md.
+
+Deep dives against each other: seed-causes-fatty-liver, width-over-
+height, and "prey animals hide illness" each repeat consistently
+across three or more pages with no disagreement. Two soft
+inconsistencies, not true conflicts: the cere color guide's specific "6
+to 12 months" sexing window against health's vaguer "several months
+old" (compatible, just different precision), and the tank setup
+guide's "needs substantial daily interaction... close to as important
+as diet or cage size" against the enrichment guide's FAQ "it can be
+[okay alone], provided the owner supplies the social interaction" -
+both actually agree solo is fine only with heavy compensating
+interaction, just phrased from different angles. Neither needed a fix.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | none needed | |
+| Encyclopedia | "up to 21 years recorded in captivity" | Health issues guide (skipped: encyclopedia entries are structured data with no link slot) |
+| Cost | "The cage is worth prioritizing width over cheapness" | Tank setup guide (skipped: the cost guide had already spent its one allowed same-species link on the health issues guide) |
+| Handling | "use a small towel rather than your bare hands" | Bird First Aid Kit and Grooming guide (added) |
+| Health issues | "Treat a change like that as a reason to book an avian vet visit" | Cere color guide (added, using the health guide's one allowed same-species link) |
+| Tank setup | "Budgies need roughly 10 to 12 hours of darkness" | Photoperiod and Sleep guide (added) |
+| Enrichment | "the clearest signs enrichment isn't covering current needs" | Why Is My Bird Losing Feathers guide (added) |
+| Cere color | "That same texture change in a male is a different story" | Health issues guide (skipped: would be cere color's own second same-species link and the guide already has none spent, but the health guide already links back so a second is redundant) |
+| vs Cockatiel | none needed, already well linked | |
+
+Trust: three different lifespans, two cage minimums, and a cost page
+whose own math didn't reconcile with the old hub's separate table were
+the main doubts, all resolved by the router rebuild and the lifespan
+research above. The sentence that most convinced the reader a keeper
+wrote this: "A budgie that suddenly starts limping, drags a leg, grips
+the perch weakly on one side, or falls off its perch is often not
+injured."
+
+Reader's two changes: pick one number each for cage minimum, lifespan,
+pellet percentage, and monthly food, and use it everywhere (done by
+the router rebuild and the lifespan research); add a routine husbandry
+page for cleaning, bathing, and toxic foods (not done, a new-content
+gap outside a deep-dives-only pass, filed in docs/READER_LOG.md).
+
+Fixed the same day: router hub rebuilt, resolving the cage, diet, and
+vet-cost conflicts by construction; the lifespan conflict researched
+for real (PetMD's actual figure and the Guinness record holder) and
+corrected across the vs cockatiel guide and the encyclopedia entry;
+four of the eight recommended links added.
+
+Open: the cage-cleaning, bathing, toxic-foods, and vegetable-portion
+gaps filed in docs/READER_LOG.md for whoever writes new content next.
+
+## Budgie (2026-09-09, batch B, second pass, after the fixes)
+
+One Opus agent, the same nine pages re-extracted after the first-pass
+fixes, about 79k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | The most useful page here, undercut by its own cage numbers. |
+| Encyclopedia | C+ | Nothing to act on except lifespan and adult size, which the hub already gave. |
+| Cost | B | Budgetable, but the setup table did not render, so the $175 to $475 had no itemization behind it. |
+| Handling | A- | Clear, ordered, executable from day one. |
+| Health issues | A | Best page in the set; the limp-equals-tumor section is new to most readers. |
+| Tank setup | A- | Buyable: dimensions, bar spacing, perch types to avoid, temperature, PTFE. |
+| Enrichment | B+ | Actionable and cheap, but contradicts the setup page on solo birds. |
+| Cere color | B | Useful for sexing, thinner than the health page on the same topic. |
+| vs Cockatiel | B+ | Decision-grade, though the reader had already decided. |
+
+Set grade held at B+, same reason: "strong, specific, mostly
+non-redundant, let down by a contradicted cage number and a sidebar of
+relevant guides the bodies never reach into."
+
+One real bug the second pass caught that the first pass couldn't: the
+new router hub contradicted its own first-week row. The Enclosure row
+correctly read 18x18x18 (tank setup's real sourced minimum), but the
+buy list still said "18x18x24 inch cage or larger" and the Tank setup
+route line still said "The 18x18x24 minimum," both leftover from the
+pre-fix draft that had copied the old hub's number instead of the deep
+dive's own. Both corrected to 18x18x18 to match the first-week row and
+the source.
+
+A real conflict the reader named directly: the tank setup guide's FAQ
+says "Can one budgie live alone happily? A: Not well," while the
+enrichment guide's FAQ says "Is a single budgie okay without a cage
+mate? A: It can be, provided the owner supplies the social
+interaction." Neither page cites a source for this (the tank setup
+guide carries no Sources block at all, see below), so per the
+source-ranking rules the page whose subject is the topic wins: tank
+setup has a dedicated Social Needs section built around this exact
+question, enrichment's is a single FAQ answer. Enrichment's FAQ
+reworded to "Not especially well on its own... needs the owner to
+supply substantial daily interaction... to make up for the flock
+companion it's missing," keeping its own point about foraging and
+destructible enrichment not being substituted, while agreeing with
+tank setup's headline answer instead of contradicting it.
+
+Two softer ones the reader named, checked and left alone: the health
+guide ties a mature male's blue-to-brown cere to "a testicular tumor
+producing estrogen" while the cere color guide, on the same symptom,
+names scaly face mites or "less commonly, a cere tumor" and never the
+testicular one. Different precision, not a contradiction: the cere
+guide's list is broader and the health guide's case is the specific
+one, and the health guide now links the cere guide from that exact
+sentence. And the enrichment guide's "hide part of the daily seed or
+pellet ration" against tank setup's "seeds as an occasional extra":
+the foraging advice covers either ration, so no figure or
+recommendation is at odds.
+
+A tooling bug, not a content one, fixed at the reader's request mid
+session: the cost guide's setup table showed as "[table could not be
+parsed]" in both reader passes because one of its rows uses a bare
+`<AffiliateLink>` element directly as a cell value (`[<AffiliateLink
+...>Perches</AffiliateLink>, "$15 - $25"]`) rather than a plain string,
+and the extractor's table parser only knew how to unwrap that pattern
+inside a `<>fragment</>`, not as a raw cell on its own; the whole table
+literal failed to evaluate as JS and every row vanished behind the
+one error message. scripts/reader-extract.mjs's `clean()` now resolves
+any bare `<Tag>...</Tag>` cell value the same way it already resolved
+fragments, looping so a component nested inside a fragment resolves
+innermost-first. Verified against leopard gecko, goldfish, axolotl,
+ball python, rabbit, and bearded dragon: no table anywhere newly broke,
+and the budgie cost table now renders in full.
+
+Five more recommended links added: handling to the shared bird first
+aid and grooming guide (towel restraint), health issues to the shared
+chronic egg laying guide (egg binding's calcium and vitamin D link),
+tank setup to the shared household hazards guide (a second sentence,
+past the PTFE warning), enrichment to the same household hazards guide
+(what "bird-safe" rules out), and the vs cockatiel guide to budgie's
+own tank setup guide (its one allowed same-species link, on the
+same-species-pair sentence). One suggested link skipped for real this
+time: handling guide's hand-raised-versus-parent-raised sentence is
+its opening paragraph, and RULES bars a link before the first H2; no
+later sentence in that article revisits the topic naturally, so it's
+disqualified by position, not skipped by choice.
+
+Open, for whoever writes new content next: budgie-tank-setup-guide.mdx
+carries no Sources block at all, the only budgie deep dive missing
+one; its cage, bar spacing, and diet-percentage figures are plausible
+and match what other sites state, but none of them trace to an opened
+source the way every other budgie article's do. Flagged, not fixed:
+adding real citations is a research pass (RULES, Sources: opened pages
+only), not a link-and-number fix. The cage-cleaning, bathing,
+toxic-foods, and vegetable-portion gaps from the first pass remain
+open too, still uncovered anywhere in the set.
+
+## Budgie (2026-09-09, batch B, species check)
+
+One Fable agent, branch claude/batch-b-startup-ve7avl against base
+773c6bf (one commit before the stated 83a3e68; the branch forked
+before that commit landed on main, not a scope problem, just a note
+for whoever merges: the branch doesn't carry that commit's sharp
+version bump).
+
+Findings, fixed on the branch (commit be2adfe):
+
+- The hub's Zoonotic risk row still carried the old legacy hub's
+  psittacosis text ("mention the possibility to your own doctor if you
+  develop flu-like symptoms") instead of the health guide's own
+  wording. Corrected to the health guide's actual Psittacosis section:
+  cause, signs, and "mention the possibility to your vet directly."
+- The enrichment guide's reworded solo-bird FAQ had picked up a tail
+  that near-copied the body's own Social Enrichment sentence on a
+  comma splice ("...either way, both birds still need those
+  individually"). Trimmed back to "...either way."
+- The second-pass review section was missing the per-page grade table
+  the leopard gecko and axolotl templates use; added from the raw
+  log. Two softer conflicts the reader named (the cere guide's "less
+  commonly, a cere tumor" against health's specific "testicular
+  tumor"; enrichment's "part of the daily seed or pellet ration"
+  against tank setup's "seeds as an occasional extra") were named by
+  the reader but never recorded as checked; recorded, correctly left
+  as different precision rather than contradiction. "Four more
+  recommended links" corrected to five, matching the actual list, in
+  both the second-pass section and the running summary.
+
+Verified independently rather than just trusted: the lifespan
+research (opened PetMD's own cited page directly: "budgies can live
+anywhere between 7-15 years"; opened the Guinness World Records page
+for Charlie, 29 years 2 months) and the extractor fix's "no
+regressions" claim (ran the parser against 12 species at both the
+base and branch commits and diffed the output: six cost or tank-setup
+tables changed, all six were "[table could not be parsed]" at base and
+all six render at the branch head, zero newly broken).
+
+Everything else checked clean: every hub row's numbers and wording
+against its named source, the emergency card against the health
+guide's list, routes and buy list and the three verbatim FAQs, the
+18x18x18 figure consistent everywhere in the hub object, no link over
+its limit, both correct and missing date bumps, no untracked hedge or
+Sources or affiliate-link changes, and the full gate suite (internal
+links, related articles, affiliate, cost coverage, SEO tags, voice
+--strict, species numbers, eslint) green.
+
+Verdict: fixed on the branch. Nothing merged to main.
+
+## Cockatiel (2026-09-09, batch B, first pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, vs cockatoo). One Opus agent,
+about 81k tokens. The review below reads the old legacy hub; the
+router hub was built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | Densest page: cage dimensions, itemized costs, pellet brands, night-light rule. |
+| Encyclopedia | B | Short but earns its place: size, weight, and a genuinely interesting mutation history. |
+| Cost | C- | Two tables half full of "Part of the starter setup" instead of numbers. |
+| Handling | A- | Best-structured article: settling period, flat-palm step-up, a real stress list. |
+| Health issues | B | The call-the-vet list and the zoonotic flag are useful; thin on what to actually do. |
+| Tank setup | B | Width over height, half-inch bars, spot-clean daily. |
+| Feeding | A | Best article in the set: safe list, toxic list, no grit, six honest reasons for appetite loss. |
+| Enrichment | A- | A real priority order, start-easy foraging advice, no sandpaper perches. |
+| vs Cockatoo | C+ | Fine, but the reader had already decided. |
+
+Set grade: B-. "Strong individual articles undermined by the hub
+disagreeing with them on cage size, bar spacing, cage shape, lifespan,
+and diet ratio."
+
+Hub versus the set, both sides quoted (all against the old legacy hub,
+resolved by the router rebuild):
+
+- Cage. The old hub said: "A minimum cage of 24x24x30 inches is
+  required for a cockatiel." Tank setup says: "Reference tables
+  commonly list a minimum of about 20 by 20 by 30 inches for a single
+  cockatiel, though many keepers aim closer to 24 by 24 by 30 inches."
+  Different minimum, and the old hub called its own number required.
+- Shape. Directly opposed, not just different numbers: the old hub
+  said "Cockatiels are active climbers and benefit from vertical
+  space," tank setup says "cockatiels are horizontal flyers, so a
+  tall, narrow cage wastes exactly the space they'd actually use."
+  Tank setup's framing is the one with a citation behind it (PetMD's
+  care sheet); the old hub's "active climbers" line traces to no
+  source at all.
+- Bar spacing, a safety figure. The old hub said "1/2 to 3/4 inch is
+  appropriate." Tank setup says "half an inch or smaller to prevent
+  head entrapment," a stricter, safer number. The old hub permitted a
+  spacing tank setup calls a genuine injury risk.
+- Diet ratio, a real three-way conflict across the set, not just hub
+  versus deep dive: the old hub said pellets should be "60 to 70%,"
+  tank setup said "60 to 80%," feeding said "roughly 75 to 80%."
+  Opened tank setup's own cited VCA page directly (vcahospitals.com,
+  Cockatiels: Feeding): it states "Pellets should ideally represent
+  approximately 75%-80% of the bird's diet," matching feeding's
+  figure, not tank setup's own quote of it. Tank setup's diet
+  paragraph was a near-duplicate of the feeding guide's fuller
+  treatment anyway, so it's now a one-sentence pointer at feeding
+  instead of restating a number it was misquoting.
+- Lifespan. The old hub said "15 to 25 years." The cost guide said
+  "Cockatiels live 15 to 20 years," matching neither of its own two
+  most relevant cited sources: opened them directly, TheVetDesk states
+  "the next 10 to 15 years" and Hepper states "around 10 to 15 years
+  old." Corrected to 10 to 15 throughout the cost guide. Left
+  unresolved and noted rather than force-reconciled: both
+  budgie-vs-cockatiel-guide.mdx and cockatiel-vs-cockatoo-guide.mdx
+  independently state "15 to 25 years" for cockatiels, citing PetMD's
+  "How Long Do Birds Live" page directly (opened it: PetMD does say
+  "on average approximately 15 to 25 years... oldest cockatiel
+  reported to be 36 years old," a real quote, not invented), and
+  cockatiel-vs-cockatoo-guide also cites a peer-reviewed captive-parrot
+  survival paper (Young et al. 2011) that could not be opened
+  (paywalled) to check its exact figure. Two real, cited numbers from
+  different source tiers that do not agree; out of scope to force one
+  side to match the other in a deep-dives-only pass, flagged here
+  instead. The encyclopedia's "up to 25 years in captivity, the oldest
+  on record 36" matches PetMD exactly and was left untouched, it is
+  not the unsourced guess it looks like at a glance.
+- Vet cost. The old hub's table said "Annual avian vet check: $60 to
+  $100." Cost says "$85 to $200." The router hub's Budget row now
+  quotes the cost guide's own figures.
+- Setup total. The old hub's own table summed to roughly $145 to $280
+  before the bird. Cost says "$320 to $860" for the full setup. The
+  router hub drops the separate summed table and quotes cost's own
+  headline range.
+- Hub against itself, in the old legacy version only: Health said "10
+  to 12 hours of darkness per night," the same page's own FAQ said
+  "provide 14 to 16 hours of darkness per night" for reducing egg
+  laying. Neither figure came from a cockatiel deep dive, so neither
+  carried into the router hub; the Sleep row now quotes tank setup's
+  actual 10 to 12 hour figure, and the 14 to 16 hour egg-laying
+  intervention is left for the shared chronic egg laying guide to
+  cover if it doesn't already, not invented here.
+
+Checked and found not a bug: tank setup's "Ten to twelve hours of UV
+light exposure" sitting on the same page as "10 to 12 hours of...dark
+sleep" reads like a duplication error (the two together exceed 24
+hours), but PetMD's own cockatiel care sheet, cited by that page,
+states exactly "shine a full-spectrum UV light...for 10-12 hours each
+day." Day light hours and night dark hours are two different real
+figures, not one number pasted twice.
+
+The set as a whole: buyable, houseable, feedable, tameable, and the
+emergency signs are all here. Real gaps, checked against the Health
+and More list before being called real: room temperature and draft
+guidance, a measurable daily food amount (grams or a bowl depth, not
+just a percentage), how to actually find or verify an avian vet, and
+how to introduce a second cockatiel (the shared colony guide covers
+budgies, canaries, and finches only, not cockatiels). None of these
+are covered by a shared guide either; filed in docs/READER_LOG.md.
+
+Deep dives against each other: the non-stick kitchen warning and the
+seed-diet lecture each repeat consistently across three or four pages
+with no disagreement once the pellet percentage above is fixed. The
+crest-reading disagreement between handling ("held upright and
+relaxed... calm curiosity") and vs cockatoo (different bird, different
+crest language) is a different species' body language, not a
+same-species contradiction, and stays as is.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | none needed | |
+| Encyclopedia | none needed | |
+| Cost | "so it's worth locating one near you before an emergency forces the search" | Bird Emergency Plan guide (added) |
+| Handling | "routine things like cage cleaning, nail trims, or a vet visit" | Bird First Aid Kit and Grooming guide (added) |
+| Health issues | "changes in droppings" | Reading Bird Droppings guide (added) |
+| Tank setup | "Cockatiels need 10 to 12 hours of quiet, dark sleep every night" | Photoperiod and Sleep guide (added in the species check; the first-pass commit never added it, and the reader's night-fright sentence is not something the photoperiod guide covers, so the link sits on the sleep-hours sentence that guide actually answers) |
+| Feeding | "laying hens are the one group that need extra calcium consideration" | Chronic Egg Laying and Egg Binding guide (added) |
+| Enrichment | "Do not assume plucking is behavioral before an avian vet has ruled out medical causes" | Molt vs. Plucking vs. PBFD vs. Giardia guide (added) |
+| vs Cockatoo | "have a plan for who cares for it if it outlives you" | Succession Planning guide (added) |
+
+Trust: the two cost tables with cells reading "Part of the starter
+setup" instead of a number, the three-way pellet percentage split, and
+the cage-shape contradiction were the main doubts, the first two
+resolved by the router rebuild and the diet research above; the third
+was never a real bug, see above. The sentence that most convinced the
+reader a keeper wrote this, from feeding: "We couldn't find a single,
+consistently sourced number for exactly how many hours or days a
+cockatiel can safely go without eating, and would rather say that
+honestly than invent a round figure."
+
+Reader's two changes: make the hub inherit its numbers from the deep
+dives instead of restating them, starting with bar spacing, a safety
+figure (done by the router rebuild); put real numbers back in the cost
+tables and reconcile them with the hub (the cost guide's own tables
+already carry real per-item ranges for the vet and ongoing sections,
+only the setup table's per-item cells were vague by design, matching
+the site's established "item, then range or note" cost-table pattern
+used elsewhere; left as is since it's not actually missing data, just
+a different table shape than the reader expected).
+
+Fixed the same day: router hub rebuilt, resolving the cage, shape, bar
+spacing, and vet-cost conflicts by construction; the diet-percentage
+conflict researched for real (VCA's actual page) and fixed in tank
+setup, which is now a pointer at feeding rather than a near-duplicate;
+the lifespan conflict researched for real (TheVetDesk and Hepper, both
+opened directly) and corrected in the cost guide. Six of seven
+recommended links added in the first pass; the seventh (tank setup)
+landed in the species check.
+
+Open: the two vs-piece lifespan figures (15 to 25, both real, both
+cited) against the cost guide's now-corrected 10 to 15 (also real,
+also cited) are left unreconciled, a genuine cross-tier source
+disagreement rather than an error, flagged for whoever next touches
+either vs guide. The room temperature, food-amount, avian-vet-finding,
+and second-cockatiel gaps from the first pass remain open too, still
+uncovered anywhere in the set.
+
+## Cockatiel (2026-09-09, batch B, second pass, after the fixes)
+
+One Opus agent, the same nine pages re-extracted after the first-pass
+fixes, about 82k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A- | The page I would print: cage 20x20x30, half-inch bars, 30-day quarantine, the vet-now list. |
+| Encyclopedia | C+ | Good history, wrong lifespan for a buyer. |
+| Cost | B | Budgetable, but four setup-table rows say "part of the starter setup." |
+| Handling | B+ | 7 to 14 days hands-off, flat palm, 10 to 15 minute sessions, the stress list. |
+| Health issues | A- | Cuttlebone in permanently, no kitchen, the call-now list. |
+| Tank setup | A- | Everything to buy and place, plus spot-clean daily, deep clean weekly. |
+| Feeding | A | Best page here; read it twice. |
+| Enrichment | A- | The priority order, and rotate. |
+| vs Cockatoo | B+ | Skimmed; for someone earlier in the decision. |
+
+Set grade held at B+, same shape as before:
+"genuinely useful, specific, and honest about what it does not know,
+but the lifespan number changes depending on which page I am standing
+on."
+
+Real issues the second pass caught that the first pass didn't:
+
+- Diet arithmetic. Feeding's own sentence, "roughly 75 to 80% of daily
+  intake... with fresh vegetables and fruit filling another 20 to
+  25%," tops out at 105% before counting the seeds the same sentence
+  allows. Opened the cited VCA page again, more carefully this time:
+  it actually says fruits and vegetables "should account for no more
+  than 20%-25%," an upper-bound qualifier the site's copy had dropped.
+  Restored "no more than" in the feeding guide's body and FAQ, the
+  tank setup guide's FAQ (now a pointer at feeding, same figure), and
+  the router hub's Diet row, so the ranges read as independent ceilings
+  rather than a sum. Budgie's own tank setup guide has the identical
+  "another X%" pattern and the identical overshoot risk; left
+  untouched since it's outside this species and its own species check
+  already passed, flagged here for whoever next touches it.
+- Crest position, a real same-species contradiction, not just
+  different wording: the handling guide said "held upright and
+  relaxed, it signals calm curiosity," the vs cockatoo guide said
+  "straight up usually signals excitement or alarm." Neither
+  citation actually backs a fixed position-to-mood dictionary (checked
+  handling's own two sources, Lafeber's cockatiel FAQ page and its
+  bird behavior page directly; neither gives one), and the site's own
+  shared bird-body-language-guide.mdx says so explicitly: "this guide
+  isn't going to invent that granularity where the documentation
+  doesn't support it." The handling guide's "upright = calm" claim,
+  the one with no source of its own and the one that actively
+  contradicts the site's shared reference, was cut from the FunFact;
+  the box keeps the flattened and forward readings and now links the
+  shared body language guide. Species check correction: handling's
+  own two sources back only the flattened reading (SpectrumCare:
+  "flattens its crest tightly... back up and slow down"); Lafeber's
+  behavior page, cited by the vs guide, says only that a raised or
+  lowered crest indicates emotional state, "excited, fearful or
+  happy." So "swept forward = startled alertness" is Mike's original,
+  unsourced, hedged with "can mean," and left. The body's comfort
+  list still reads "A relaxed, upright crest," left too: Lafeber lists
+  "happy" among raised-crest states, so it is incomplete rather than
+  contradicted, the same way the vs guide's "straight up = excitement
+  or alarm" is. The vs cockatoo guide's more granular
+  claim was left as is, it no longer conflicts with anything on this
+  page, though it runs a little ahead of what that same shared page
+  considers verified, noted for whoever next touches it.
+- Toy material, a softer version of the same pattern: health's
+  "frequent offenders when it comes to ingesting rope fibers" against
+  enrichment's recommendation of "untreated natural fiber" toys with
+  no caveat. Not a hard contradiction (rope and generic natural fiber
+  aren't necessarily the same material), but close enough to read as
+  one page's warning and another page's blind spot. Enrichment now
+  flags checking rope-based toys for frayed strands and links the
+  health guide.
+- Lifespan framing. The hub's "10 to 15 years is typical" read to the
+  reader as flatly disagreeing with the encyclopedia's "up to 25 years
+  in captivity." Not a numeric conflict (typical and maximum are
+  different claims, and both are separately sourced), but the hub row
+  was given "though some live considerably longer with excellent care"
+  so it read as compatible rather than contradictory. Reverted in the
+  species check: the cost guide never says that, and a hub row is a
+  copy of its source (RULES, Hubs). The row now carries the cost
+  guide's own FAQ sentence, "Cockatiels live 10 to 15 years, so this
+  is a long-term financial commitment even though the entry cost is
+  modest." The typical-versus-maximum gap against the encyclopedia is
+  a wording gap for the cost guide to close if Mike wants it closed,
+  not for the hub to paper over.
+
+The set as a whole and deep-dive overlap otherwise unchanged from the
+first pass; the "24-hour day" UV-versus-darkness question the second
+pass raised again was already checked in the first pass and is real,
+sourced, non-conflicting content (day UV hours, night dark hours), not
+re-litigated here.
+
+Recommended links: two more added (handling to the shared bird body
+language guide, enrichment to the health issues guide, both above),
+the rest already covered in the first pass.
+
+Trust: same doubts as the grade line above, mostly resolved by the
+arithmetic and crest fixes; enrichment's uncredited "a 2025 study" and
+"a 2020 paper," and health's "as one avian practice puts it plainly,"
+were flagged by the reader as citation style rather than a factual
+problem, both genuinely exist in that article's own Sources block
+(checked), just not named inline; left as house style rather than
+rewritten, matching how other articles on the site cite research in
+prose.
+
+## Cockatiel (2026-09-09, batch B, species check)
+
+One Fable agent, branch claude/batch-b-startup-ve7avl, commit 3c0e03c.
+Findings, fixed on the branch:
+
+- The hub's Lifespan row added an unsourced "though some live
+  considerably longer with excellent care" clause to soften the
+  encyclopedia contrast; the cost guide never says that. Reverted to
+  the cost guide's own FAQ sentence.
+- Tank setup's diet-pointer rewrite had silently dropped the ZuPreem
+  pellet affiliate link when the paragraph was cut (a Never-list
+  item); restored, moved into the pointer sentence as the rule
+  requires.
+- Five added link sentences read as the site talking about itself
+  ("our X guide covers/flags/walks through"); reworded onto the
+  animal, same targets kept.
+- The first-pass link table had recorded a tank-setup-to-photoperiod
+  link as added that was never made; added for real, on the sleep
+  sentence.
+- The second-pass review section was missing its per-page grade table
+  (added from the raw log), and overstated Lafeber's crest-position
+  support (Lafeber's cockatiel FAQ has no crest content at all, and
+  its behavior page only says raised/lowered crests mean "excited,
+  fearful or happy," not the specific flattened/forward readings
+  attributed to it); corrected to name what each source actually
+  supports.
+
+Verified independently: TheVetDesk, Hepper, and VCA's exact wording
+all opened directly and confirmed. No scope violations. Full gate
+suite green, including affiliate coverage back to the correct count
+after the restored link.
+
+Verdict: fixed on the branch. Nothing merged to main.
+
+## Cockatoo (2026-09-09, batch B, single pass, before the router hub)
+
+One Opus agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, the screaming and
+plucking explainer), about 90k tokens. Single-pass review this
+species, to spend less per species; fixes below folded into one pass
+instead of first pass plus second pass.
+
+Set grade: B. "Strong, sourced, honest deep dives undercut by a hub
+that restates them with different numbers."
+
+Hub versus the set (all against the old legacy hub, resolved by the
+router rebuild): diet ratio (old hub 60-70% pellets against
+feeding/tank setup's sourced 75-80%), cage cost, food cost, and
+lifespan (old hub and encyclopedia agreed at 40-60; cost guide alone
+said "40 to 70-plus, Umbrella cockatoos commonly 50 to 70") all
+resolved by construction, plus one genuine philosophical conflict: the
+old hub's "most cockatoos crave cuddling and close physical contact"
+against the handling guide's cited behavior consultant, "cockatoos are
+not cuddly, we are," whose fix is cutting shoulder and lap time, not
+indulging it. The router hub carries handling's framing (a Bonding row
+warning against over-bonding), not the old hub's.
+
+Researched for real: the cost guide's "40 to 70-plus years, Umbrella
+cockatoos commonly 50 to 70" didn't match its own cited PetMD page,
+which actually says "20-40 years in the wild, and up to 70 years or
+more as pets" with no Umbrella-specific figure at all. Corrected to
+"40 to 60 years is typical, with some individuals living into their
+70s or beyond," matching the encyclopedia's own field. Feeding's diet
+percentages had the same dropped-qualifier bug found in cockatiel:
+"Pelleted food should make up 75 to 80%... the remaining 20 to 40%"
+sums past 100%; VCA's actual cited page says produce should be "no
+more than 20%-40%," restored that qualifier in the body and FAQ.
+
+A real encyclopedia error, not a deep-dive conflict: the cockatoo
+entry's own `conservation` field said "Vulnerable (IUCN)" while its
+own History paragraph said "the IUCN reclassified the species as
+Endangered in 2018," a direct self-contradiction. Checked Wikipedia's
+current IUCN listing (Endangered, 2018 assessment) directly; corrected
+the field. The legal guide's New Jersey section separately claimed
+"the Moluccan is Vulnerable" against its own Massachusetts section's
+"both assessed as endangered"; checked the Moluccan (salmon-crested)
+cockatoo's real IUCN status, also Endangered, and corrected NJ to
+match.
+
+A real same-article self-contradiction in the enrichment guide, not a
+cross-page one: the body explicitly says "we are not attaching a
+specific number of hours to [wild foraging time], because the figures
+that circulate for it do not trace to a source worth citing," then a
+heading two paragraphs later reads "Foraging, to Fill Six Hours" and
+an FAQ answer states "up to six hours a day" as fact. Separately, the
+body says a 2014 training-versus-other-treatments study's "training
+outperformed the rest" claim isn't verifiable and "this guide does not
+make it," then the very next FAQ question is "Why did training work
+best?" answered as though it were settled. Both fixed to match the
+body's own honest hedge rather than restating the disclaimed claims:
+the heading reworded, the "six hours" FAQ answer given no number, the
+training FAQ rewritten to say the evidence doesn't clearly say so, and
+the What Not to Do paragraph's "when the tested winner was structured
+time" clause, the same disclaimed claim, reworded to match.
+
+Also fixed: `cockatoo-legal-guide` was missing from
+src/lib/data/relatedArticles.js entirely, the same wiring-bug class as
+leopard gecko's temperature guide and hamster's legal guide, invisible
+in every Deep Dive sidebar despite being cross-linked from other
+cockatoo articles and shown in the hub's own routes. Added.
+
+Left open, filed rather than fixed in a hub-and-fixes pass: no page
+reconciles 4 to 6 hours of interaction, foraging time, out-of-cage
+time, and 10 to 12 hours of sleep into one 24-hour day; no cage or
+dish cleaning routine; no bathing or misting guidance despite the
+species' heavy feather dust; no guidance on finding or vetting an
+avian veterinarian, or pricing PBFD screening before purchase; no
+noise-versus-lease-or-neighbor guidance in the legal guide; no
+introduction guidance for existing pets in the house. None of these
+are covered by a shared guide either.
+
+## Lovebird (2026-09-09, batch B, single pass, before the router hub)
+
+One Opus agent, eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, vs budgie), about 91k tokens. Set
+grade: B, "strong, sourced health and setup work sitting under a hub
+that contradicts it and a cost page whose arithmetic does not close."
+
+Real conflicts, all resolved by construction in the router rebuild:
+diet, cage price, and the old hub's rosy "a bonded pair is happier and
+healthier, less aggressive toward humans" against the handling guide's
+"a bonded pair bonds to each other instead, largely ignores its
+keeper, and is closer to keeping a pair of finches, entertaining but
+rarely tame" (the router hub's "One bird or two" row carries
+handling's framing, not the old hub's). The mismatched-pair aggression
+risk is stated only in lovebird-vs-budgie-guide.mdx, not in the
+handling guide, so the species check pulled that clause out of the
+handling-sourced row.
+
+Two real arithmetic bugs, both researched and fixed:
+- The cost guide's own headline, "Roughly $70 to $125 a month," didn't
+  match its own itemized annual table ($70-110 pellets + $80-130
+  vegetables + $40-70 toys + $70-120 vet = $260-430/year, about $22 to
+  $36 a month), and its prose sub-figures ("$20 to $30 in quality
+  pellets" a month, "$10 to $15" produce) didn't match the table's
+  annual per-item figures either. Corrected the headline, body, and
+  FAQ to the table's own math: "$260 to $430 a year," roughly $20 to
+  $35 a month.
+- A four-way lifespan conflict: the old hub said "10 to 20 years,"
+  the encyclopedia said "typically 15 to 25 years in captivity," the
+  cost guide said "10 to 15 years typically, up to 20," and
+  lovebird-vs-budgie-guide.mdx said "7 to 15 years" (also still
+  carrying budgie's own pre-fix "5 to 10 years, occasionally up to
+  15," left over from budgie's batch since only
+  budgie-vs-cockatiel-guide.mdx was touched then). Opened the cost
+  guide's own cited VCA page directly: "Average lifespan is 10-15
+  years; maximum is around 20 years," an exact match for the cost
+  guide's figure. Corrected the encyclopedia to match VCA (the higher
+  and unsourced figure was the one wrong here, the reverse of the
+  budgie and cockatoo cases), and corrected lovebird-vs-budgie-guide.mdx
+  on both sides: lovebird to "10 to 15 years, with a maximum around
+  20," and budgie finally brought up to its own already-corrected "7
+  to 15 years."
+
+The "10 to 12 hours of covered darkness" versus "cutting exposure to
+about 8 hours a day" light-schedule question the reader raised is the
+same non-conflict pattern as cockatiel's egg-laying darkness note:
+general sleep guidance against a specific intervention for a hen
+already laying chronically, not the same claim. Tank setup itself
+never states a specific hours figure for ordinary sleep (only "genuine
+darkness at night"), so the router hub carries no Sleep row rather
+than inventing one.
+
+Recommended links: not added this pass, to keep the single-pass
+version lighter on scope; the reader's eight suggestions (mostly
+cross-links among handling, health issues, and enrichment on
+plucking, nest triggers, and boredom signs) are left for a future
+pass, filed here rather than actioned.
+
+Open: no page reconciles the daily-time math (2 hours interaction plus
+foraging plus sleep); no food-quantity, bathing, or cage-cleaning
+guidance; no guidance for introducing a second lovebird beyond "do it
+slowly." None covered by a shared guide.
+
+## Tarantula (2026-09-09, batch B, single pass, before the router hub)
+
+One Opus agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, vs emperor scorpion),
+about 88k tokens. Set grade: B, "the deep dives are unusually honest,
+especially enrichment and legal, and the hub undercuts them at the
+exact point a new keeper is most likely to hurt the animal."
+
+The single most important finding: the old legacy hub's own FAQ said
+"Docile New World species like the Chilean Rose Hair...tolerate calm,
+gentle handling," directly contradicting the handling guide's "a
+tarantula, including the Chilean rose hair, is probably the wrong
+choice" and the enrichment guide's "do not handle." That is the
+question a first-time reader lands on the hub to ask, and the old hub
+answered it backwards. The router hub carries the handling guide's
+real answer (a Handling row: "Mostly, no"), not the old hub's.
+
+Everything else the reader flagged as a hub-versus-deep-dive
+disagreement (enclosure floor space, substrate depth, temperature,
+adult and juvenile feeding intervals, mites, annual cost, lifespan)
+resolved by construction, since the router hub copies every figure
+from the deep dive that states it rather than restating its own.
+
+One real same-article duplicate, not a conflict: tank setup's Diet
+section was a near-copy of the feeding guide's much fuller treatment
+("Adults typically eat every 1 to 2 weeks" stated as flat fact where
+feeding guide gives the honest species-dependent range). Cut to a
+one-sentence pointer, the affiliate link moved into it.
+
+Checked and left as is, real disagreements between named or
+implied different species rather than a contradiction: cost guide's
+male/female Chilean rose hair lifespan (4-7 / 15-20+) against
+tarantula-vs-emperor-scorpion-guide's general "popular species" figure
+(3-6 / 15-30); the encyclopedia's broad 5-30 year range covers both.
+Health issues' "wait about a week" for post-molt feeding against
+feeding guide's stage-specific "3 to 7 days for slings and juveniles,
+7 to 14 for adults" is compatible (a week falls inside both ranges),
+not contradictory, so neither was changed.
+
+`tarantula-legal-guide` was missing from relatedArticles.js entirely,
+the same wiring-bug class as leopard gecko's temperature guide and
+cockatoo's legal guide, invisible in every Deep Dive sidebar despite
+being one of the hub's own routes; added.
+
+Three links added (health issues to the setup guide's humidity
+section, handling to the setup guide's low-and-wide design rationale,
+tank setup's new feeding pointer); the reader's other six suggestions
+left for a future pass.
+
+Open: how to sex or confirm a female before buying, despite the hub
+recommending one for longevity; what to do if a tarantula escapes
+during cleaning; a substrate-change schedule; how to choose a seller;
+sling-specific housing. None covered by a shared guide.
+
+## Cockatoo, lovebird, tarantula (2026-09-09, batch B, species check)
+
+One Fable agent, branch claude/batch-b-startup-ve7avl, commit 7d40c2b,
+covering all three single-pass species in one check (matching how
+batch A's check covered five species in one pass). Findings, fixed on
+the branch:
+
+- Cockatoo. The emergency card's vetLine said "confirm PBFD only
+  through PCR testing"; the health guide says "Confirm with a vet
+  through PCR testing," no "only." Removed. The What Not to Do
+  clause in the enrichment guide had been reworded without being
+  flagged as a fix at the time (still the same disclaimed training
+  claim, restated rather than left as fact); kept, now listed. Every
+  other number and framing (lifespan, IUCN status, diet percentages,
+  the crave-cuddling removal) verified directly against real sources.
+- Lovebird. The hub's "One bird or two" row claimed a specific
+  mismatched-pair injury risk and attributed it to
+  lovebird-handling-guide, which never actually makes that claim, only
+  lovebird-vs-budgie-guide does. Corrected the row to the handling
+  guide's own words. The Lifespan row's VCA phrasing swapped for the
+  cost guide's own sentence. Both date bumps had been stamped
+  2026-09-09 off the container's UTC clock; `TZ=America/New_York date`
+  read 2026-09-08 at the time, matching CLAUDE.md's Eastern-date rule
+  and the cockatiel batch's own correct 09-08 stamp 28 minutes
+  earlier; corrected to 09-08.
+- Tarantula. The Lifespan row said "a confirmed female is the
+  long-term commitment," a word the cost guide never uses; swapped for
+  the cost guide's actual sentence. Two of the three links added this
+  pass read as the site talking about itself ("our enclosure setup
+  guide has you build," "covers the actual humidity target," when the
+  guide actually says sources disagree); reworded onto the animal,
+  same targets kept. The dubia roaches affiliate link in the new diet
+  pointer had drifted to cover "crickets or dubia roaches" together;
+  narrowed back to the product it actually names.
+
+Verified independently: PetMD's cockatoo page, the current IUCN status
+for both cockatoo species, VCA's cockatoo and lovebird feeding pages,
+and the lovebird cost guide's own arithmetic, all opened directly.
+
+Full gate suite green across all three species (internal links,
+related articles, affiliate, cost coverage, SEO tags, voice --strict,
+species numbers for all three, eslint on every touched data file).
+
+Verdict, all three: fixed on the branch. Nothing merged to main.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -2522,3 +3323,146 @@ lifespan figure flagged for whoever next touches that file.
   the legal guide gives a specific count of four; the betta fish first
   pass review had claimed four links that were never actually made, now
   made for real. Full gate suite green across all five species after.
+- 2026-09-09, budgie (batch B, branch claude/batch-b-startup-ve7avl):
+  hub rebuilt to router shape, resolving the old hub's cage minimum
+  (18x18x24 "required" against tank setup's sourced 18x18x18), pellet
+  percentage (60-70% against tank setup's sourced 60-80%), and vet cost
+  (three different numbers for one idea) conflicts by construction. A
+  real three-way lifespan conflict (old hub 7-12 years unsourced, the
+  vs cockatiel guide's 5-10 years citing PetMD, the encyclopedia's
+  unsourced "up to 21 years") researched for real: PetMD's own cited
+  page actually states 7 to 15 years, and the real record holder is
+  Charlie, a budgerigar who lived 29 years, 2 months (Guinness World
+  Records), not 21. The vs cockatiel guide and the encyclopedia entry
+  both corrected. Four of eight recommended links added (handling to
+  the shared first aid guide, health issues to cere color, tank setup
+  to the shared photoperiod guide, enrichment to the shared feather
+  loss guide); cost guide's link skipped since it had already spent
+  its one allowed same-species link elsewhere. `cere-color-guide`
+  added to SHORT_LABELS, the same wiring class as leopard gecko's
+  temperature guide. Left for whoever writes new content next: no
+  guide anywhere covers cage cleaning, bathing or misting frequency,
+  toxic foods, or vegetable portions. Second pass caught a self-
+  contradiction the first pass introduced: the new hub's buy list and
+  a route line still said 18x18x24 after the first-week row had
+  already been fixed to 18x18x18, both now consistent; a real solo-
+  bird conflict between the tank setup and enrichment guides' FAQs
+  ("Not well" against "It can be") resolved in enrichment's favor of
+  tank setup's dedicated section, since neither page cites a source;
+  five more links added. Also fixed, at the reader's own request:
+  scripts/reader-extract.mjs's table parser choked on a bare
+  `<AffiliateLink>` used directly as a cell value instead of wrapped in
+  a `<>fragment</>`, which crashed the budgie cost guide's entire setup
+  table into "[table could not be parsed]" in both reader passes; now
+  resolves either form, verified against six other species' tables
+  with no regressions. Open: budgie-tank-setup-guide.mdx carries no
+  Sources block at all, the only budgie deep dive without one, flagged
+  for a real research pass rather than fixed here.
+- 2026-09-09, budgie species check (branch claude/batch-b-startup-ve7avl,
+  commit be2adfe, one Fable agent): the hub's Zoonotic risk row still
+  carried the old legacy hub's psittacosis wording instead of the
+  health guide's own, corrected; a comma-spliced tail on the
+  enrichment guide's reworded solo-bird FAQ trimmed; independently
+  re-verified the lifespan research (opened PetMD and the Guinness
+  World Records page directly) and the extractor fix (ran both commits
+  against 12 species and diffed, confirming six previously-broken
+  tables now render and nothing else changed). Full gate suite green.
+  Note for whoever merges: this branch forked one commit before main's
+  stated batch-B base and does not carry that commit's sharp version
+  bump in package.json.
+- 2026-09-09, cockatiel (batch B, branch claude/batch-b-startup-ve7avl):
+  hub rebuilt to router shape, resolving the old hub's cage minimum
+  (24x24x30 "required" against tank setup's sourced 20x20x30), cage
+  shape (the old hub's unsourced "active climbers, benefit from
+  vertical space" against tank setup's PetMD-cited "horizontal
+  flyers"), bar spacing, and vet-cost conflicts by construction. A real
+  diet-percentage conflict (old hub 60-70%, tank setup 60-80%, feeding
+  75-80%) researched for real: tank setup's own cited VCA page actually
+  says 75-80%, matching feeding, not the 60-80% tank setup was quoting
+  it as; tank setup's near-duplicate diet paragraph cut to a pointer at
+  feeding. A real lifespan conflict (cost guide's own "15 to 20 years"
+  matched neither of its two most relevant cited sources) researched
+  for real: TheVetDesk and Hepper, opened directly, both say "10 to 15
+  years"; corrected throughout the cost guide. Left open, flagged
+  rather than force-reconciled: two vs-pieces (budgie-vs-cockatiel and
+  cockatiel-vs-cockatoo) independently cite PetMD for "15 to 25 years,"
+  a real quote from a real page, genuinely disagreeing with the
+  now-corrected cost guide at a different source tier; the
+  encyclopedia's "up to 25 years, oldest on record 36" also matches
+  that same PetMD page exactly and was left untouched. Second pass
+  caught the diet percentages summing past 100% (VCA's own "no more
+  than 20-25%" qualifier had been dropped everywhere on the site,
+  restored), a real same-species crest-reading contradiction between
+  the handling and vs-cockatoo guides (traced to neither source
+  actually backing a fixed position-to-mood dictionary, and the site's
+  own shared bird-body-language-guide.mdx saying exactly that; trimmed
+  the unsourced side), and a soft rope-fiber-ingestion-versus-toy-
+  material tension between health and enrichment. Nine links added
+  across both passes.
+- 2026-09-09, cockatiel species check (branch claude/batch-b-startup-ve7avl,
+  commit 3c0e03c, one Fable agent): reverted an unsourced clause added
+  to the hub's Lifespan row, restored an affiliate link the tank setup
+  diet-pointer rewrite had dropped, reworded five links that read as
+  the site talking about itself, added one link the review had claimed
+  but never made, and corrected the review file's overstated claim
+  about what Lafeber's sources actually support on crest position.
+  Full gate suite green.
+- 2026-09-09, cockatoo (batch B, single pass, branch
+  claude/batch-b-startup-ve7avl): hub rebuilt to router shape,
+  resolving diet-ratio, cage-cost, food-cost, and lifespan conflicts by
+  construction, and dropping the old hub's "crave cuddling" framing in
+  favor of handling's cited consultant's over-bonding warning. Cost
+  guide's lifespan researched for real (its own cited PetMD page
+  doesn't support "40 to 70-plus, Umbrella 50 to 70") and corrected to
+  match the encyclopedia. Feeding's diet percentages had the same
+  dropped-"no more than"-qualifier bug as cockatiel's, fixed the same
+  way. The encyclopedia's own conservation field contradicted its own
+  History paragraph (Vulnerable vs "reclassified Endangered in 2018");
+  checked Wikipedia's current IUCN listing and corrected the field; the
+  legal guide's NJ section had the Moluccan's status backwards for the
+  same reason, corrected. The enrichment guide's own body explicitly
+  declined to cite two figures as unverifiable, then a heading and two
+  FAQ answers stated both anyway; reworded to match the body's own
+  hedge. `cockatoo-legal-guide` was missing from relatedArticles.js
+  entirely, the same wiring-bug class as leopard gecko's temperature
+  guide, invisible in every Deep Dive sidebar; added.
+- 2026-09-09, lovebird (batch B, single pass, branch
+  claude/batch-b-startup-ve7avl): hub rebuilt to router shape,
+  resolving diet, cage-price, and pairs-framing conflicts by
+  construction (the router hub keeps handling's "bonds to each other
+  instead, largely ignores its keeper" framing, not the old hub's
+  "happier and healthier" claim). Two real
+  arithmetic bugs fixed: the cost guide's own monthly headline didn't
+  match its own annual table (corrected to the table's real $260-430 a
+  year), and a four-way lifespan conflict (hub, encyclopedia, cost
+  guide, and lovebird-vs-budgie-guide.mdx all disagreed) resolved by
+  opening the cost guide's own cited VCA page directly ("10-15 years,
+  maximum around 20") and correcting the encyclopedia and the vs guide
+  to match; the vs guide's stale pre-fix budgie figure (left over from
+  budgie's batch, since only budgie-vs-cockatiel-guide.mdx was touched
+  then) brought up to budgie's already-corrected 7 to 15 years too.
+  Recommended links deferred this pass to keep it lighter.
+- 2026-09-09, tarantula (batch B, single pass, branch
+  claude/batch-b-startup-ve7avl): hub rebuilt to router shape. The
+  critical fix: the old hub's own FAQ told readers docile species
+  "tolerate calm, gentle handling," directly contradicting the
+  handling and enrichment guides' "don't handle this species." The
+  router hub carries the real answer instead. Enclosure size,
+  substrate depth, temperature, feeding intervals, mites, cost, and
+  lifespan conflicts all resolved by construction. Tank setup's Diet
+  section, a near-duplicate of the feeding guide, cut to a pointer
+  with its affiliate link moved in. `tarantula-legal-guide` was
+  missing from relatedArticles.js entirely, the same wiring-bug class
+  as leopard gecko's temperature guide; added. Three links added,
+  batch B's fifth and final species.
+- 2026-09-09, cockatoo/lovebird/tarantula species check (branch
+  claude/batch-b-startup-ve7avl, commit 7d40c2b, one Fable agent
+  covering all three): a stray "only" in cockatoo's vetLine removed;
+  lovebird's hub attributed a pair-injury claim to the wrong article,
+  corrected to the source that actually makes it; both lovebird date
+  bumps corrected from the container's UTC clock to Eastern (09-09 to
+  09-08); tarantula's Lifespan row and two self-referential link
+  sentences reworded to match their sources. Batch B (budgie,
+  cockatiel, cockatoo, lovebird, tarantula) is done: five router hubs
+  rebuilt, every hub-versus-deep-dive conflict resolved, every
+  species checked. Nothing merged to main.

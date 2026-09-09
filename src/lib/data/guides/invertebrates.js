@@ -563,50 +563,63 @@ After each molt, inspect the insect carefully. Missing limbs or deformed antenna
     image: "/assets/guides/tarantula.jpg",
     tagline: "The misunderstood gentle giant of the spider world, a surprisingly low-maintenance pet!",
     funFact: "Tarantulas can live extraordinarily long lives. Females of some species (like the Mexican Red Knee) can live 25 to 30 years in captivity, while males typically live only 5 to 7 years. A female tarantula may outlive your dog.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "Species-appropriate enclosure", low: 30, high: 70 },
-        { item: "Coconut fiber and peat substrate", low: 10, high: 20 },
-        { item: "Cork bark hide", low: 10, high: 20 },
-        { item: "Small water dish", low: 5, high: 10 },
-        { item: "Feeding tongs (fine-tip precision)", low: 8, high: 15 },
-        { item: "Digital thermometer", low: 10, high: 15 },
-      ],
-      annual: [
-        { item: "Live feeder insects", low: 40, high: 80 },
-        { item: "Substrate replacement (infrequent)", low: 15, high: 25 },
-      ],
-    },
-    sections: {
-      housing: "Tarantula housing is highly species-dependent. Burrowing species (like Grammostola pulchripes, the Chilean Rose Hair) need enclosures with 3 to 4 times their leg span in floor space and deep substrate (4 to 6 inches of a coconut fiber and peat mix). Arboreal species (like Avicularia avicularia, the Pink-Toe) need tall enclosures (12x12x18 inches minimum) with cross-ventilation, cork bark, and artificial plants for climbing and anchoring their tube web. All enclosures need a secure, locking lid. A small, shallow water dish (bottle cap size for spiderlings, bottlecap to small dish for adults) must always be available. Overflow the dish occasionally for terrestrial species to create a moisture gradient. Temperatures for most pet tarantulas should stay between 68 and 82 degrees F. Most species do not need supplemental heat in a typical home.",
-      diet: `Tarantulas eat live prey exclusively. Appropriately sized crickets, dubia roaches, mealworms, and superworms are standard feeder insects for most species. Prey should be no larger than the tarantula's abdomen. Larger prey items cause unnecessary stress and potential injury.
-
-Feed juveniles every 4 to 7 days, adults every 10 to 14 days. Always remove uneaten prey within 24 hours. Live crickets are particularly dangerous near a molting or freshly molted tarantula - they will attack the vulnerable spider, causing severe injury or death. Pre-kill crickets before offering if unsure about molt timing.
-
-During premolt (recognizable by a darkened, fat abdomen, and refusal of food that can last weeks or even months), do not attempt to feed. After molting, wait 7 to 14 days for the fangs to fully harden before offering food again. A freshly molted tarantula with soft fangs cannot eat safely and can be injured by prey. Provide a water overflow during premolt to ensure adequate hydration for the molt process.`,
-      enrichment: "Tarantulas are observation animals, not handling animals. Many species are defensive or fast, and stress from handling can cause them to kick urticating (itching) hairs from their abdomen. The Goliath Bird-Eater can produce a loud hissing sound by rubbing its legs together. Design the enclosure to display natural behaviors: burrowing species will excavate elaborate tunnels, arboreal species will build impressive silk tube webs. This is the enrichment. A cork bark hide or cork tube allows them to feel secure.",
-      health: "Molting is the single most important and vulnerable event in a tarantula's life. Never disturb a molting spider. Do not feed for 1 to 2 weeks before or after a molt. Common health concerns include dehydration (shriveled abdomen, keep water available and overflow occasionally), mites (tiny white dots moving in enclosure, treat with a full substrate change), and DKS (dyskinetic syndrome, a poorly understood neurological issue). Failed molts can be fatal if the spider becomes stuck. Maintaining appropriate humidity for the species during premolt reduces this risk.",
-      checklist: [
-        "Species-appropriate enclosure (terrestrial or arboreal)",
-        "Coconut fiber and peat substrate (4 to 6 inch depth for burrowers)",
-        "Secure locking lid",
-        "Cork bark hide or tube",
-        "Small shallow water dish (always available)",
-        "Live feeder insects (crickets, dubia roaches)",
-        "Feeding tongs (never hand-feed)",
-        "Digital thermometer",
-        "Spray bottle for humidity management",
-        "Escape plan: know your species' defense behaviors",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Power outage cites the
+    // shared invertebrate emergency guide in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the tarantula set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure", value: "Horizontal, wider than tall, to limit fall risk. A reasonable adult minimum is around 20x10x10 inches, roughly a 10-gallon, sized to about three times the tarantula's leg span. Keep overall height under about 12 inches.", source: "tarantula-tank-setup-guide" },
+        { label: "Substrate", value: "At least 3 inches of coconut fiber, peat, or organic pesticide-free soil, filling roughly half to two-thirds of the enclosure.", source: "tarantula-tank-setup-guide" },
+        { label: "Lid", value: "A secure lid, but never mesh, a tarantula's feet can get caught in it and cause real injury. Acrylic with drilled ventilation holes is the better choice.", source: "tarantula-tank-setup-guide" },
+        { label: "Humidity", value: "Sources genuinely disagree: some recommend a moderate 40 to 60% for dry-adapted species, others suggest 65 to 75%. A reliable water dish plus lightly moistened substrate is more consistent than heavy misting either way.", source: "tarantula-tank-setup-guide" },
+        { label: "Housing", value: "One tarantula per enclosure. Most species are solitary and cannibalistic, and cohabitation isn't workable regardless of enclosure size.", source: "tarantula-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Slings every 2 to 3 days, juveniles roughly every week to two weeks (sources disagree on the exact number), adults every 1 to 2 weeks, sometimes far less for a slow-metabolism species.", source: "tarantula-feeding-guide" },
+        { label: "Not eating", value: "Usually not an emergency. A plump, active spider refusing food for weeks is typically just in premolt. For juveniles specifically, refusing food for more than 6 to 8 weeks alongside weight loss or lethargy is worth a vet consult.", source: "tarantula-feeding-guide" },
+        { label: "Handling", value: "Mostly, no. Best kept as a look, don't touch pet: a fall can rupture the abdomen and is often fatal, and a hand, shoulder, or couch cushion is enough height for that.", source: "tarantula-handling-guide" },
+        { label: "Budget", value: "$25 to $100 for the spider (common beginner species), $70 to $300 for a complete setup, and $5 to $15 a month after that.", source: "tarantula-cost-guide" },
+        { label: "Adult size", value: "2 to 12 inch leg span, depending on species." },
+        { label: "Lifespan", value: "15 to 20 years or more for a female Chilean rose hair, typically 4 to 7 for a male. A female is a long-term commitment, though the ongoing budget stays very small the whole time.", source: "tarantula-cost-guide" },
+        { label: "Power outage", value: "A non-event for most tarantulas at home; they don't need supplemental heat in a typical room and can go without food far longer than most pets. The real risk in this corner of pet keeping is in a car or a shipping box, not a home outage.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
+    emergencyCard: {
+      source: "tarantula-health-issues-guide",
+      callNow: [
+        "A shriveled, wrinkled abdomen with lethargy or legs curling tightly under the body (dehydration)",
+        "A molt that looks stuck or incomplete",
+        "A ruptured abdomen or hemolymph visibly leaking from an injury",
+        "Refusing food for more than a month, especially alongside dehydration signs",
+      ],
+      vetLine: "Vet care for tarantulas is limited and prevention matters more than treatment. A shallow water dish and correct humidity prevent most dehydration cases; never disturb, handle, or feed a molting tarantula.",
+    },
+    routes: [
+      { slug: "tarantula-cost-guide", line: "$25 to $100 for the spider, $70 to $300 for setup, and why the ongoing budget stays small for decades." },
+      { slug: "tarantula-handling-guide", line: "Why the answer is almost always no, the real fall risk, and New World versus Old World defenses." },
+      { slug: "tarantula-health-issues-guide", line: "Dehydration, stuck molts, injury, and the difference between normal fasting and a real problem." },
+      { slug: "tarantula-tank-setup-guide", line: "Enclosure shape and size, substrate depth, the humidity debate, and why mesh lids are out." },
+      { slug: "tarantula-feeding-guide", line: "Schedule by life stage, what's actually safe to feed, and the honest range for how long a tarantula can fast." },
+      { slug: "tarantula-enrichment-guide", line: "What the research on enclosure complexity actually found, and what it didn't." },
+      { slug: "tarantula-legal-guide", line: "The species question most states never ask, and where a specific tarantula is restricted regardless of the genus." },
+    ],
+    buyList: [
+      "20x10x10 inch enclosure or larger, wider than tall",
+      "Coconut fiber, peat, or organic pesticide-free soil substrate",
+      "A secure acrylic lid with drilled ventilation (never mesh)",
+      "A hide (cork bark, half-log, or a broken terracotta pot)",
+      "A shallow water dish",
+      "Live feeder insects (crickets or dubia roaches)",
+      "Digital thermometer/hygrometer combo",
+    ],
     faqs: [
-      { q: "Are tarantulas venomous and dangerous?", a: "Yes, all tarantulas have venom used to subdue prey - but for healthy adults the bite of common pet species is medically comparable to a bee sting: painful, temporarily swollen, and rarely requiring more than basic first aid. New World species (most common in the pet trade: Brachypelma, Grammostola, Chromatopelma) have mild venom but kick urticating hairs from their abdomen as their primary defense. These hairs cause intense itching and can cause serious eye damage - never rub your eyes after handling. Old World species (Poecilotheria, Pterinochilus) have more potent venom and should not be handled at all." },
-      { q: "Can I handle my tarantula?", a: "It depends entirely on the species. Docile New World species like the Chilean Rose Hair (Grammostola rosea) or Brachypelma hamorii tolerate calm, gentle handling. Many Old World species and all Poecilotheria (ornamental tarantulas) are fast, defensive, and should be considered display-only animals. The risk of handling is less about venom and more about falls - a dropped tarantula hitting hard flooring will rupture its abdomen and die instantly. Always sit on the floor while handling." },
-      { q: "How long do tarantulas live?", a: "Dramatically different by sex. Females of many popular species live 20 to 30 years in captivity - some documented individuals of Grammostola pulchripes (Chaco Golden Knee) have exceeded 30 years. Males of the same species may live only 3 to 7 years, and often die within months of reaching sexual maturity. If longevity matters to you, acquire a confirmed female juvenile. Females from reputable breeders may cost more but represent the long-term experience of the hobby." },
-      { q: "What do tarantulas eat?", a: "Live prey exclusively. Appropriately sized crickets, dubia roaches, mealworms, and superworms are standard. Prey size should be no larger than the tarantula's abdomen. Always remove uneaten prey within 24 hours - live insects left overnight will attack a molting or freshly molted tarantula, causing severe injury or death. Never feed during premolt (when the tarantula refuses food and its abdomen appears dark and full) and wait 7 to 14 days after a molt before offering prey again." },
-      { q: "What is molting and how do I prepare for it?", a: "Molting is how tarantulas grow - they shed their entire exoskeleton, including the lining of their fangs, stomach, and book lungs. It is the most vulnerable event in a tarantula's life. Signs of premolt: refusing food for weeks or months, a fat darkened abdomen, hiding more than usual. During molt, the tarantula lies on its back and slowly works free of the old exoskeleton - this can take 15 minutes to several hours. Never disturb this process. Never attempt to help a stuck molt without expert guidance. Remove all prey insects and ensure a small water source is available." },
-      { q: "Are tarantulas good pets for beginners?", a: "Yes, if you pick the right species. Docile New World tarantulas like the Chilean Rose Hair are genuinely low-maintenance, calm, and a good beginner choice. Old World species are faster, more defensive, and better suited to experienced keepers who don't plan on handling them at all. The species matters more than the genus-level reputation." },
+      { q: "How much does a tarantula cost upfront?", a: "The spider itself runs $25 to $100 for common beginner species, a Chilean rose hair or curly hair typically lands at $20 to $50. Add the enclosure, substrate, hide, decor, and a water dish, and most first-time setups land in the $70 to $300 range before the spider itself." },
+      { q: "What size enclosure does a pet tarantula need?", a: "About 20 by 10 by 10 inches for an adult, roughly a 10-gallon, sized to around three times the leg span. Keep it low, under about 12 inches tall, since a fall is a genuine danger for most tarantulas." },
+      { q: "Can you hold a tarantula?", a: "Mostly, no. Most tarantulas, including the Chilean rose hair, are best kept as strictly look, don't touch pets, since a fall can be fatal to the spider and its defenses can hurt you." },
     ],
   },
 ];
