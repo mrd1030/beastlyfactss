@@ -319,71 +319,66 @@ Older rats are also prone to pituitary tumors (more common in females on high-ca
     image: "/assets/guides/ferret.jpg",
     tagline: "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!",
     funFact: "Ferrets do a 'war dance' when they're excited: a frenzied hopping, bouncing, and sideways leaping display also called the 'dooking.' Dooking means your ferret is having the time of their life!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "3x2x2 ft multi-level cage", low: 100, high: 200 },
-        { item: "Fleece hammocks and sleep sacks", low: 20, high: 40 },
-        { item: "Litter box", low: 10, high: 15 },
-        { item: "Toys, tunnels, and dig boxes", low: 25, high: 45 },
-        { item: "Spay/neuter + initial vaccinations (if needed)", low: 150, high: 300 },
-      ],
-      annual: [
-        { item: "High-quality ferret kibble or raw diet", low: 150, high: 250 },
-        { item: "Distemper and rabies vaccine boosters", low: 50, high: 100 },
-        { item: "Annual fecal exam and bloodwork", low: 100, high: 200 },
-        { item: "Bedding and litter", low: 50, high: 80 },
-      ],
-    },
-    sections: {
-      housing: `Ferrets need a multi-level cage (minimum 3x2x2 ft with solid ramps and platforms) as their home base, but they cannot live in a cage full-time. Ferrets require a minimum of 4 hours of free-roaming time in a ferret-proofed room every single day - this is not optional. Ferrets kept in cages all day develop significant physical and behavioral problems.
-
-Ferret-proofing is a serious undertaking. Ferrets squeeze through impossibly small gaps, chew electrical cords, steal and hide small objects (including jewelry, keys, and remote controls), fall into open toilets, and get into everything. Check every baseboard, gap under appliances, and recliner mechanism (ferrets love to climb into recliners and get crushed). Block all gaps under doors and any opening wider than 1 inch.
-
-Inside the cage: fleece hammocks, sleep sacks, and tube tunnels provide resting spots. Line the cage floor with fleece liners or paper-based bedding - never cedar or pine, which contain toxic aromatic oils. Provide a litter box with paper-based litter in one corner, and keep room temperature below 80 degrees F. Ferrets overheat easily and can die from heat stroke at temperatures that feel comfortable to humans.
-
-Multiple ferrets do significantly better together - they are social animals that wrestle, groom, and sleep in piles. A pair or trio is far preferable to a solo ferret for the animals' wellbeing.`,
-      diet: `Ferrets are obligate carnivores with a digestive tract optimized for animal protein and fat and no capacity to process plant matter. The dietary principle is simple: high protein, high fat, zero carbohydrates, zero plant fiber. The practical challenge is finding commercial foods that actually meet this standard.
-
-A high-quality, grain-free ferret kibble with a named animal protein (chicken, turkey, duck) as the first 2 to 3 ingredients, fat content above 20%, and carbohydrate content below 20% is the commercial food baseline. Multiple higher-end brands meet this standard; avoid brands containing corn, wheat, soy, or pea protein as primary ingredients.
-
-A raw meat diet (whole prey, chunks of meat and organs, or commercial raw ferret food) is arguably the most species-appropriate option and produces excellent coat condition, dental health, and energy levels in most ferrets. Transition to raw slowly if switching from kibble to avoid digestive upset.
-
-Avoid: fruits, vegetables, grains, dairy, fish-based foods, and sugary treats. Ferrets cannot digest plant matter and chronic exposure to plant carbohydrates is strongly associated with insulinoma (pancreatic cancer) development. Fresh water in a heavy bowl must always be available - bottles are difficult for ferrets to drink from adequately and often run dry unnoticed.`,
-      enrichment: `Ferrets are among the most playful and mischievous animals kept as pets. Their characteristic "dooking" (excited chattering while performing the war dance - a frenzied hopping, bouncing, sideways leaping display) is one of the most joyful sights in the exotic pet world, and it tells you your ferret is having the time of its life.
-
-Rotate enrichment items frequently - ferrets become bored with toys quickly and light up at novelty. Crinkle balls, tunnels, dig boxes (shallow bins filled with dry rice, dirt, or shredded paper), ferret-safe puzzle feeders, and "treasure stash" boxes (a container they can deposit stolen items into) are all excellent options.
-
-Daily free-roam time with human interaction is the most important enrichment. Chase games, hide-and-seek, and learning tricks (ferrets can learn to sit, come when called, and perform simple tricks) all strengthen the bond between ferret and keeper. Many ferrets will return to their cage on their own when tired if the door is left open.
-
-Ferrets sleep 16 to 18 hours per day in deep, often concerning-looking coma-like sleep. This is completely normal. Schedule free-roam time for their active periods (generally morning and early evening).`,
-      health: `Ferrets in North America have a near-universal susceptibility to three serious diseases: insulinoma (pancreatic beta cell cancer), adrenal gland disease, and lymphoma. The majority of ferrets will develop at least one of these by age 4 to 5, and many develop all three. This is not a reason to avoid ferrets - it is a reason to commit to appropriate veterinary care.
-
-Insulinoma causes low blood sugar (hypoglycemia) from excess insulin production. Signs include weakness, stumbling, drooling, glassy eyes, and in severe cases, seizures. Management includes diet modification (low carbohydrate is critical - another reason to avoid carb-heavy kibble), medications (prednisone, diazoxide), and sometimes surgery. A ferret with insulinoma needs ongoing veterinary management.
-
-Adrenal gland disease causes hair loss typically starting at the tail and progressing forward, muscle wasting, and in females, vulvar swelling (a dangerous estrogen-producing effect from adrenal tumors). It is managed with hormonal implants, medications, or surgery depending on severity.
-
-All ferrets should be vaccinated against canine distemper (fatal in ferrets) and rabies. Annual wellness exams including bloodwork starting at age 2 to 3 are essential for early disease detection. A ferret-experienced exotic veterinarian is not optional - find one before acquiring ferrets.`,
-      checklist: [
-        "Multi-level ferret cage (3x2x2 ft minimum)",
-        "Fleece hammocks and sleep sacks",
-        "Ferret-proofed free-roam room (4+ hours/day)",
-        "High-quality ferret kibble or raw meat diet",
-        "Fresh water bowl (always available)",
-        "Tunnels, dig boxes, and rotating toys",
-        "Canine distemper and rabies vaccinations",
-        "Spay/neuter (if not already done)",
-        "Annual fecal exam and bloodwork",
-        "Ferret-experienced exotic veterinarian",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Vet trips cites the shared
+    // small-mammal guide in the sidebar's Health and More list. Reconciled
+    // 2026-09-09 for batch C (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cage", value: "For a pair, at least 30 by 24 by 48 inches, adding roughly 4 additional square feet of floor space for each ferret beyond that. A double-unit multi-level cage with solid levels and a covered ramp is the most consistently recommended setup. Bar spacing one inch or less.", source: "ferret-tank-setup-guide" },
+        { label: "Temperature", value: "Keep the room in the 50 to 75°F range, and treat anything above about 80 to 85°F as a real heatstroke risk. No supplemental heat source is needed indoors.", source: "ferret-tank-setup-guide" },
+        { label: "Bedding", value: "Washable fabric hammocks and sleep sacks for sleeping. A corner litter box with non-clumping, dust-free litter, paper or pelleted. Never cedar or pine shavings.", source: "ferret-tank-setup-guide" },
+        { label: "Out-of-cage time", value: "Several hours of supervised out-of-cage play daily, during their active window, is a requirement, not a bonus. Ferrets denied playtime spent more time lying awake with their eyes open, screeched more, and sat and stood less.", source: "ferret-enrichment-guide" },
+        { label: "Ferret-proofing", value: "Block every gap larger than about one inch, secure cabinets and low openings, and remove any rubber or foam items they could chew and swallow, a direct GI blockage risk.", source: "ferret-tank-setup-guide" },
+        { label: "Diet", value: "A high-quality, ferret-specific dry kibble, roughly 32 to 40% protein, free-fed around the clock for healthy adults. Never fruits, vegetables, grains, dairy, or chocolate.", source: "ferret-feeding-guide" },
+        { label: "Not eating", value: "A healthy adult can develop dangerous blood sugar drops within a single day of not eating. Appetite loss is treated as needing same-day veterinary attention, not a few days of watching.", source: "ferret-feeding-guide" },
+        { label: "Nipping", value: "Normal in kits, usually play, teething, fear, or overstimulation, peaking around 3 to 4 months old. Never pop or flick the nose, which increases fear-based biting; redirect to a toy instead.", source: "ferret-handling-guide" },
+        { label: "Budget", value: "$300 to $700 to set up. Roughly $50 to $60 a month for a pair. Lifetime vet cost is commonly estimated at $3,000 to $8,000 or more.", source: "ferret-cost-guide" },
+        { label: "Adult size", value: "13 to 16 inches body length; males significantly larger." },
+        { label: "Lifespan", value: "5 to 9 years on average for US pet ferrets today. Older sources citing 10 to 15 years reflect a healthier population than what's typical now.", source: "ferret-cost-guide" },
+        { label: "Adrenal disease", value: "Symmetrical hair loss starting at the tail base and moving toward the head over weeks to months, skin usually healthy, is the hallmark sign, unlike normal seasonal shedding, which is diffuse and resolves within a few weeks.", source: "ferret-adrenal-disease-guide" },
+        { label: "Vaccines", value: "Canine distemper (nearly always fatal in ferrets) and rabies, plus annual bloodwork starting at age 2 to 3 for early disease detection.", source: "ferret-health-issues-guide" },
+        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "ferret-health-issues-guide",
+      callNow: [
+        "Urinary blockage in males (a hormone-driven enlarged prostate)",
+        "Sudden collapse or seizure (insulinoma)",
+        "Vomiting, appetite loss, and lethargy after swallowing rubber or foam (GI blockage)",
+        "Weakness, wobbling, a glazed stare, or drooling (hypoglycemic crisis)",
+      ],
+      vetLine: "A ferret-experienced exotic vet, found before you need one. For a suspected hypoglycemic crisis, a small amount of Karo syrup or honey rubbed on the gums is emergency first aid on the way to a vet, not a substitute for one.",
+    },
+    routes: [
+      { slug: "ferret-cost-guide", line: "$75 to $400 for the ferret, $300 to $700 for the setup, and the $3,000 to $8,000 lifetime vet cost most owners don't budget for." },
+      { slug: "ferret-tank-setup-guide", line: "Cage size for a pair, why overheating is the real danger, and the ferret-proofing that matters as much as the cage." },
+      { slug: "ferret-feeding-guide", line: "Free-feeding kibble, the fastest gut transit of any common pet mammal, and the honest list of reasons a ferret stops eating." },
+      { slug: "ferret-handling-guide", line: "Why kits nip, the right way to respond, and the coat patterns linked to congenital deafness." },
+      { slug: "ferret-health-issues-guide", line: "Adrenal disease, insulinoma, GI blockage, and canine distemper, with why middle age is the real turning point." },
+      { slug: "ferret-enrichment-guide", line: "The 2022 surveys on what ferrets actually enjoy, and the specific behavior that shows up when they don't get it." },
+      { slug: "ferret-legal-guide", line: "Banned in California and Hawaii, restricted in NYC, and the petition that could change California's ban." },
+      { slug: "ferret-adrenal-disease-guide", line: "The hair loss pattern that separates adrenal disease from normal shedding, and what the neutering-age link actually shows." },
+    ],
+    buyList: [
+      "30x24x48 inch double-unit multi-level cage",
+      "Fleece hammocks and sleep sacks",
+      "Corner litter box with paper or pelleted litter",
+      "Tunnels and a dig box",
+      "Rotating toys (never latex or foam rubber)",
+      "Sipper water bottle",
+      "High-quality, ferret-specific dry kibble",
+      "A ferret-proofed free-roam room",
+    ],
     faqs: [
       { q: "Do ferrets smell?", a: "Yes, to varying degrees. Ferrets have musk glands and produce a natural musky scent. Most pet ferrets in North America are descented (musk glands removed), which reduces but does not eliminate the scent - the skin and fur themselves produce a natural oil-based smell. Regular bathing reduces the odor temporarily but too-frequent bathing stimulates more oil production. Good litter box hygiene and regular bedding washing manage most of the smell." },
-      { q: "What do ferrets eat?", a: "Obligate carnivores requiring high protein, high fat, and zero carbohydrates. A quality grain-free ferret kibble with named animal protein as the first 2 to 3 ingredients is the commercial baseline. A raw meat diet (whole prey, raw meat and organs) is arguably the most species-appropriate option. Avoid all fruits, vegetables, grains, dairy, and sugary treats - plant carbohydrates are strongly associated with insulinoma development in ferrets." },
-      { q: "What diseases are common in ferrets?", a: "Most North American ferrets develop at least one of three serious diseases by age 4 to 5: insulinoma (pancreatic cancer causing low blood sugar), adrenal gland disease (causing hair loss starting at the tail and hormonal imbalance), and lymphoma. Annual bloodwork starting at age 2 to 3 allows early detection. A ferret-experienced exotic vet is essential from day one, not just when illness appears." },
-      { q: "How much free-roam time do ferrets need?", a: "A minimum of 4 hours per day outside their cage, in a thoroughly ferret-proofed area. Ferrets kept caged all day develop significant physical deterioration and behavioral problems. Ferret-proofing is serious: they squeeze through gaps wider than 1 inch, chew electrical cords, fall into open toilets, and get trapped in recliner mechanisms. Block all gaps under doors and secure all hazards before unsupervised roaming." },
-      { q: "How long do ferrets live?", a: "6 to 10 years in captivity, though their high disease susceptibility means dedicated veterinary management becomes part of the commitment by middle age. Ferrets are deeply social, playful, and bond strongly with their keepers - many owners describe them as the most personality-rich small pets available. The veterinary costs of managing insulinoma and adrenal disease should be budgeted for before acquiring ferrets." },
       { q: "Is a ferret a type of weasel?", a: "Yes, biologically. Ferrets belong to the weasel family (Mustelidae), the same family as mink, stoats, otters, and polecats, and a domestic ferret is believed to descend specifically from the European polecat. That said, \"weasel\" in everyday speech usually means a specific set of smaller wild Mustela species, not a pet ferret, so the two words aren't interchangeable in casual use even though they're taxonomic relatives." },
+      { q: "Is adrenal disease curable in ferrets?", a: "It's treatable and often manageable long-term, but not always fully curable, especially if both adrenal glands are affected or if surgery isn't a safe option. Many ferrets live comfortably for years with appropriate medical management even without a full cure." },
     ],
   },
   {
