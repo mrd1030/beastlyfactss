@@ -3104,6 +3104,102 @@ species numbers for all three, eslint on every touched data file).
 
 Verdict, all three: fixed on the branch. Nothing merged to main.
 
+## Corn snake (2026-09-08, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, vs hognose), about 107k
+tokens. Single-pass review this species, the batch's default shape.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | The only page with a first-week checklist and cost table without hunting seven articles. |
+| Encyclopedia | A- | Short and genuinely different content, wild range and morph history. |
+| Cost | A | Real setup and monthly budget. |
+| Handling | A- | The 48-72 hour and shed-avoidance rules are the actionable core. |
+| Health issues | A- | Symptom list and when to call a vet. |
+| Tank setup | A- | The most useful single page: temps, humidity, substrate depth. |
+| Feeding | A | The most detailed page in the set: weight-keyed schedule, prey sizing. |
+| Enrichment | A | Genuinely different, cites named studies. |
+| Legal | B+ | Useful if you live in Georgia, New Jersey, or a handful of other states; Pennsylvania left openly unresolved. |
+| vs Hognose | B | Useful for deciding, but its own humidity number didn't match the rest of the set. |
+
+Set grade: B+. "Deep, well-sourced, occasionally contradicts itself on
+basic numbers."
+
+Hub versus the set, both sides quoted (resolved by the router rebuild):
+adult size, old hub "Adult corn snakes typically reach 4 to 5 feet"
+against the encyclopedia's "3.5-5 feet (107-152 cm)"; humidity
+certainty, old hub "Humidity should stay at 40 to 60%" stated as
+settled fact against the tank setup guide's own "This is one area
+where sources don't fully agree... some specialist husbandry guides
+recommend a higher baseline around 65 to 75%." Both resolved by
+construction: the router hub now copies the encyclopedia's adult size
+with no source (no deep dive states it) and the tank setup guide's own
+hedge verbatim for humidity.
+
+Deep dives against each other, both sides quoted: adult feeding
+frequency given three ways, the old hub and feeding guide's own table
+"Adults (3+ years, 600g+): Every 14 to 21 days" against tank setup's
+"on a schedule of every 7 to 10 days for juveniles, stretching to
+every 10 to 21 days as they reach adulthood." Feeding guide is the
+subject-matter page and its own table is internally consistent across
+five age brackets; tank setup's aside was a stray, uncited duplicate.
+Fixed by cutting tank setup's aside to a one-sentence pointer at the
+feeding guide, the same pattern used on ball python and axolotl.
+
+The vs hognose guide's own comparison table read "Humidity needs:
+40-50%" for corn snake, matching neither of tank setup's two stated
+ranges (40-60% baseline, 65-75% per some specialist sources). Neither
+side states 40-50 anywhere. Tank setup is the subject-matter page on
+humidity, so vs hognose's table cell, one FAQ answer, and one body
+sentence corrected to "40-60%," the more commonly cited baseline tank
+setup itself uses first. The same page's adult-length figures ("3-5
+ft" in the table, two more instances in FAQ and body) corrected to
+"3.5-5 ft" to match the encyclopedia, the only place adult length is
+actually stated; filed below as unsourced on both sides, decided by
+which page owns the figure.
+
+Recommended links, one per page, four added: cost guide's "The
+thermostat genuinely is not optional" now points to tank setup;
+handling's "always use a secure, locking enclosure" now points to tank
+setup; feeding's "an underlying medical issue is the likely
+explanation" now points to health issues; enrichment's "comfortably
+exceeds body length for an adult" now points to tank setup. Not added:
+health issues' suggested link to tank setup (already at its one-
+sibling cap, spent on the feeding guide's diet-and-schedule sentence);
+the hub's and encyclopedia's suggested links (out of scope, not deep
+dives, and the encyclopedia is structured data with no link slot).
+
+Left as sourced, not a bug: the warm-side digestion temperature in
+feeding ("corn snakes need roughly 82 to 85°F on the warm side to
+digest food safely") reads close to but not identical to tank setup's
+table ("85 - 88°F, some sources: 80-85°F acceptable"); feeding's figure
+sits inside tank setup's own stated acceptable range, so both already
+agree once read in full.
+
+Unsourced, needs a fact-check: the vs hognose guide's corrected 3.5-5
+ft corn snake length and 40-60% humidity numbers now match the
+encyclopedia and tank setup respectively, but neither original figure
+(3-5 ft, 40-50%) traced to a cited source on either page, so this was
+a which-page-owns-it call, not a source-ranking one.
+
+Trust: the internal feeding-frequency and humidity mismatches read as
+unreconciled drafts rather than deliberate flags. The sentence that
+most convinced the reader a keeper wrote this: "A corn snake in a
+large bare enclosure will use two hides and nothing else, which looks
+like proof it wanted a small enclosure and is actually proof it wanted
+cover."
+
+Not covered anywhere: how to verify an enclosure is actually
+escape-proof (gap sizes, latch hardware, a test method); how to select
+a healthy corn snake at the point of purchase. Both filed in
+docs/READER_LOG.md. Pennsylvania's legal status is left explicitly
+unresolved by the legal guide itself, not a gap to fill.
+
+Full gate suite green (internal links, related articles, affiliate,
+cost coverage, SEO tags, voice --strict, species numbers, eslint on
+the touched data file).
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3466,3 +3562,23 @@ Verdict, all three: fixed on the branch. Nothing merged to main.
   cockatiel, cockatoo, lovebird, tarantula) is done: five router hubs
   rebuilt, every hub-versus-deep-dive conflict resolved, every
   species checked. Nothing merged to main.
+- 2026-09-08, corn snake (batch C, single pass, branch
+  claude/batch-c-setup-kgvj92): hub rebuilt to router shape, resolving
+  an adult-size conflict (old hub "4 to 5 feet" against the
+  encyclopedia's "3.5-5 feet") and a humidity-certainty conflict (old
+  hub stated 40-60% as settled fact where tank setup's own body calls
+  it a genuine source disagreement) by construction. Tank setup's own
+  stray feeding-frequency aside ("every 10 to 21 days" for adults)
+  disagreed with the feeding guide's own five-bracket table ("every 14
+  to 21 days"); cut to a one-sentence pointer at the feeding guide, the
+  same fix pattern as ball python and axolotl. The vs hognose guide's
+  comparison table carried its own humidity (40-50%) and adult-length
+  (3-5 ft) figures matching neither tank setup nor the encyclopedia;
+  corrected to 40-60% and 3.5-5 ft respectively across the table, one
+  FAQ, and the body, since neither original figure traced to a source
+  on either side. Four of eight recommended links added (cost and
+  handling to tank setup, feeding to health issues, enrichment to tank
+  setup). Left for Mike: how to verify an enclosure is actually
+  escape-proof and how to pick a healthy corn snake at purchase, both
+  filed in docs/READER_LOG.md; Pennsylvania's legal status, already
+  left unresolved by the legal guide itself.

@@ -1745,3 +1745,15 @@ Set grade: B. The deep dives are unusually honest, especially enrichment and leg
 The critical finding: the old hub's FAQ said docile New World species "tolerate calm, gentle handling," directly contradicting the handling guide ("probably the wrong choice") and the enrichment guide ("do not handle"). Everything else flagged (enclosure floor space, substrate depth, temperature, feeding intervals, mites, annual cost, lifespan) was the hub restating deep-dive numbers with different figures. Tank setup's Diet section duplicates the feeding guide closely enough to be a liability, stating "adults typically eat every 1 to 2 weeks" as flat fact where feeding guide gives an honest species-dependent range.
 
 Not covered anywhere: how to confirm a female before buying; what to do if the spider escapes during cleaning; substrate-change schedule; how to choose a seller; sling-specific housing.
+
+## Corn snake (2026-09-08, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages, about 107k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B+. Deep, well-sourced, occasionally contradicts itself on basic numbers.
+
+Real conflicts found: adult feeding frequency given three ways (old hub "every 10 to 14 days," tank setup "every 10 to 21 days," feeding guide "every 14 to 21 days" for adults); humidity given three numbers (old hub/tank setup 40-60%, tank setup's other branch 65-75%, vs-hognose comparison table "40-50%"); adult size drifting across pages (old hub "4 to 5 feet," encyclopedia "3.5-5 feet," vs-hognose table "3-5 ft"); warm-side digestion temperature close but not identical between tank setup (85-88°F) and feeding guide (82-85°F, left as is, within tank setup's own stated acceptable range).
+
+Not covered anywhere: how to verify an enclosure is actually escape-proof (gap sizes, latch hardware, a test method); how to select a healthy corn snake at the point of purchase; Pennsylvania's legal status, left explicitly unresolved by the legal guide itself.
