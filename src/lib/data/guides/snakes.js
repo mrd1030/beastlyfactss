@@ -94,66 +94,67 @@ export const snakeGuides = [
     image: "/assets/guides/boa-constrictor.jpg",
     tagline: "The powerful, graceful heavyweight of the pet snake world!",
     funFact: "Boa constrictors can sense the heartbeat of their prey using heat-sensitive pits. They literally feel your pulse!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "6x3x3 ft+ PVC or wood enclosure", low: 300, high: 600 },
-        { item: "Heat source + quality thermostat", low: 50, high: 90 },
-        { item: "Multiple large hides", low: 30, high: 60 },
-        { item: "Large soak-able water dish", low: 25, high: 40 },
-        { item: "Cypress mulch or coconut fiber substrate", low: 30, high: 50 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Sturdy climbing branches", low: 30, high: 50 },
-        { item: "Mist system or spray bottle", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Frozen/thawed large prey items", low: 150, high: 300 },
-        { item: "Substrate replacement", low: 50, high: 80 },
-        { item: "Electricity (heat)", low: 70, high: 120 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Quarantine, hygiene, and power
+    // outage cite the shared reptile guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 for batch C (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new snake is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window. Boas specifically can carry inclusion body disease for months to years with no visible signs, which is exactly why the window runs this long.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "Adults typically need somewhere around 6 to 8 feet long, 2 to 3 feet wide, and 3 to 4 feet tall, roughly 10 square feet of floor space at minimum. A 6ft+ adult PVC enclosure is a solid way to build for that final size from the start. House boas individually, never together.", source: "boa-constrictor-tank-setup-guide" },
+        { label: "Security", value: "A heat source is required and must be genuinely inaccessible to direct contact, no exposed heating elements a snake this size and strength could reach. A thermostat is essential, not optional, for a heat source powering an enclosure this large.", source: "boa-constrictor-tank-setup-guide" },
+        { label: "Temperatures", value: "Basking area 88 to 92°F, occasionally up to 95°F, ambient warm side 80 to 85°F, cool side 75 to 80°F, nighttime 70 to 80°F.", source: "boa-constrictor-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 70%, higher during shedding cycles. A large water bowl, regular misting, moisture-retentive substrate, and a dedicated humid hide hold it there.", source: "boa-constrictor-tank-setup-guide" },
+        { label: "Hides", value: "Two, not one: a snug hide on the warm side and a separate one on the cool side, so the boa can thermoregulate while always having cover.", source: "boa-constrictor-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Babies (0 to 6 months) every 5 to 7 days, juveniles (6 to 12 months) every 7 to 10 days, adults (3-plus years) every 10 to 14 days, extending to every 2 to 4 weeks for mature animals. Offer prey no wider than your boa's body at its widest point.", source: "boa-constrictor-feeding-guide" },
+        { label: "Handling", value: "Once a boa exceeds about 6 feet, handle it with a second person. Wait at least 48 hours after feeding, and never let a boa form a complete loop around your neck.", source: "boa-constrictor-handling-guide" },
+        { label: "Budget", value: "$400 to $1,200 to set up. A routine wellness exam runs $50 to $135, a fecal parasite check adds $25 to $90. Budgeting around $200 a year for vet care is a reasonable planning figure.", source: "boa-constrictor-cost-guide" },
+        { label: "Adult size", value: "5 to 13 feet, with females significantly larger than males." },
+        { label: "Lifespan", value: "20 to 30 years is typical, and boas can exceed 40 with excellent care.", source: "boa-constrictor-cost-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "70 to 80°F is the normal night low. Below 70°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `Adult boa constrictors require a minimum 6x3x3 ft enclosure, and many adults - particularly female Colombian boas, which regularly exceed 8 ft - will benefit from 8x4x4 ft or larger. Boa constrictors are heavy-bodied, powerful snakes that deserve generous space. PVC or wooden enclosures retain heat and humidity far better than glass and are strongly preferred.
-
-The thermal gradient is critical: a warm side with a basking spot of 88 to 92 degrees F (measured at the surface via infrared gun), an ambient warm-side air temperature of 80 to 84 degrees F, and a cool side of 76 to 80 degrees F. Use a quality thermostat on all heat sources. Never use heat rocks - they cause severe burns.
-
-Humidity should be maintained at 50 to 70% in ambient conditions and raised to 70 to 80% during pre-shed periods. Cypress mulch, coconut fiber, and bioactive soil mixes are excellent substrates that hold humidity well. The substrate should be dry at the surface but retain moisture slightly deeper to allow humidity wicking.
-
-Provide at least two hides large enough for the snake to fully conceal itself - a snake that cannot fully hide in its hide is a stressed snake. Juveniles are somewhat semi-arboreal and will use sturdy branches; adults are primarily terrestrial but appreciate elevated surfaces. A water dish large enough to soak in must always be available.`,
-      diet: `Boa constrictors eat frozen/thawed prey exclusively - live prey is dangerous to the snake and ethically unnecessary. Juveniles eat appropriately sized mice, progressing to small rats, then large rats, and eventually to appropriately sized rabbits or large rats for adults. Prey should match the snake's widest mid-body diameter.
-
-Feed juveniles every 7 to 10 days. Sub-adults every 10 to 14 days. Adults every 14 to 21 days. Boas have slower metabolisms than many snakes and do not need frequent feeding. Overfeeding leads to obesity, which stresses the cardiovascular system and shortens lifespan.
-
-Always use feeding tongs and maintain the association between tongs and food. Allow 48 to 72 hours after feeding before handling to prevent regurgitation. Regurgitation is stressful and damages the esophagus. If a boa regurgitates, wait 2 weeks before attempting to feed again and reassess temperatures and prey size.
-
-Fresh water in a large, clean dish must always be available. Change it at minimum twice per week. Many boas soak in their water dish, especially before shedding - this is normal and beneficial.`,
-      enrichment: `Boa constrictors are often described as some of the most personable and manageable large snakes in the hobby. With consistent, calm handling from a young age, many individuals become genuinely relaxed and confident animals that seem comfortable with human interaction.
-
-Provide sturdy branches for juvenile boas - they are significantly more arboreal as young animals. Large cork bark hides, varied substrate textures, and a water dish large enough to soak in constitute the core enrichment. Adults become increasingly terrestrial as they grow.
-
-Handle regularly and with confidence. A bored, tense keeper makes a nervous snake. Move smoothly and support the full body length. Young boas may musque (release a foul-smelling secretion) initially - this reduces significantly with consistent handling. Most adult boas become very calm and curious animals.
-
-Thermal enrichment - providing multiple temperature zones that the snake can choose between - is important. A snake that cannot regulate its own temperature is a stressed, immunosuppressed animal. Ensure the thermal gradient spans from 76 to 92 degrees F to give the boa full control over its thermoregulation.`,
-      health: `Scale rot (necrotic dermatitis) is caused by chronic exposure to damp substrate or inadequate temperatures. It begins as discolored, soft, blistered scales and progresses to deep tissue infection if untreated. Keep substrate dry at the surface and temperatures correct. Any scale rot that does not respond to husbandry corrections within days requires veterinary antibiotics.
-
-Respiratory infections result from temperatures that are too low, excess humidity without adequate ventilation, or both. Signs include wheezing, mucus from the mouth and nostrils, labored breathing, and lethargy. Respiratory infections in boas require veterinary antibiotics. Address the husbandry issue that caused the infection simultaneously.
-
-Inclusion Body Disease (IBD) is a serious and fatal viral disease in boas and pythons caused by arenaviruses. It presents as neurological symptoms (head wobbling, stargazing, inability to right itself), chronic regurgitation, and progressive decline. There is no treatment. IBD spreads through mites. Source only from reputable captive breeders, quarantine all new animals for 60 to 90 days, and control mites aggressively.
-
-Annual veterinary wellness checks are strongly recommended, particularly for adults. A reptile vet with experience in large snakes should be identified before acquisition. Boas can live 20 to 30 years - this is a multi-decade commitment.`,
-      checklist: ["6x3x3 ft+ PVC or wood enclosure", "Heat source with quality thermostat", "Multiple large hides", "Large water dish (soak-able)", "Cypress mulch or coconut fiber substrate", "Frozen/thawed large prey items", "Digital thermometer and hygrometer", "Sturdy climbing branches", "Feeding tongs", "Quality mist system or spray bottle"],
+    emergencyCard: {
+      source: "boa-constrictor-health-issues-guide",
+      callNow: [
+        "Wheezing, nasal discharge, or open-mouth breathing",
+        "Discolored, soft, or blistered belly scales",
+        "Swollen gums or visible pus in the mouth",
+        "Head tilting, corkscrewing movements, or staring off into space",
+        "Chronic regurgitation paired with weight loss",
+        "Weight loss and lethargy, or small dark specks resembling tiny ticks",
+      ],
+      vetLine: "A reptile-experienced vet familiar with large snakes, found before you need one. A severe respiratory infection can progress to septicemia, and inclusion body disease has no cure, so prevention is buying captive-bred from a reputable breeder and quarantining every new snake.",
     },
+    routes: [
+      { slug: "boa-constrictor-cost-guide", line: "$50 to $200 for the snake, $400 to $1,200 for the setup, and what vet care and the decades-long commitment really run." },
+      { slug: "boa-constrictor-tank-setup-guide", line: "Sizing the enclosure for the adult it will become, the thermostat that's non-negotiable, and why height matters as much as floor space." },
+      { slug: "boa-constrictor-feeding-guide", line: "The schedule by age, prey sizing, and why adults eat so rarely compared to other snakes." },
+      { slug: "boa-constrictor-handling-guide", line: "The second-handler rule past 6 feet, why a boa should never loop around your neck, and how to read one before you reach in." },
+      { slug: "boa-constrictor-health-issues-guide", line: "Respiratory infection, scale rot, mouth rot, inclusion body disease, and parasites, with what causes each." },
+      { slug: "boa-constrictor-enrichment-guide", line: "Why a big snake in a box is still a snake in a box, and what the ball python housing study implies for this species." },
+      { slug: "boa-constrictor-legal-guide", line: "Withdrawn from the federal injurious-wildlife list, banned in Hawaii and NYC, and permit rules in a handful of other states." },
+    ],
+    buyList: [
+      "6ft+ adult PVC enclosure",
+      "Thermostat",
+      "Supplemental heat source",
+      "Two snug hides (warm side and cool side)",
+      "Large soak-able water dish",
+      "Coconut fiber, cypress mulch, or reptile-specific soil substrate",
+      "Digital thermometer and hygrometer",
+      "Frozen/thawed rodents (mice progressing to rats)",
+      "Feeding tongs",
+    ],
     faqs: [
-      { q: "How big do boa constrictors get?", a: "Common boas (Boa imperator) typically reach 5 to 8 feet as adults, with females growing significantly larger than males. Females commonly reach 6 to 8 feet; males stay at 5 to 6 feet. At maturity, common boas are muscular and heavy-bodied - a 7-foot female can weigh 15 to 20 pounds. True South American Boa constrictor constrictors grow larger still, commonly reaching 8 to 10 feet. Their adult size is the primary reason prospective owners must research carefully before committing." },
-      { q: "Are boa constrictors dangerous?", a: "Healthy adult boas command respect but are not inherently dangerous to experienced adult keepers. Bites from large individuals can cause significant lacerations from their many small, recurved teeth, and any large constrictor should never be handled alone. They do not attack people - bites almost always result from feeding responses or defensive reactions. Children and solo adult handling are the main risk scenarios. As constrictors, boas should never be draped unsupported around the neck." },
-      { q: "How long do boa constrictors live?", a: "Boa constrictors are a long-term commitment. Well-cared-for boas routinely live 20 to 30 years in captivity, with documented individuals reaching 40 years. When acquiring a boa, you are making a multi-decade commitment. Their longevity makes proper research, appropriate housing investment, and a relationship with a reptile-experienced veterinarian especially important from day one." },
-      { q: "How often do boa constrictors eat?", a: "Feed juvenile boas every 7 days and adults every 10 to 21 days depending on size. Adults commonly do well on a meal every 2 to 3 weeks. Always feed frozen and thawed prey - live rodents can seriously injure large constricting snakes. Prey should be no wider than the widest part of the snake's body. After a meal, avoid handling for 48 to 72 hours to prevent regurgitation." },
-      { q: "Do boa constrictors need high humidity?", a: "Yes. Boa constrictors require 60 to 80% ambient humidity to support healthy sheds and respiratory health. A large water dish big enough to soak in helps maintain humidity and provides hydration. Cypress mulch and coconut fiber substrates retain moisture well. A humid hide packed with damp sphagnum moss is especially important during the shedding cycle. Humidity consistently below 50% causes stuck shed and contributes to respiratory infections over time." },
-      { q: "What's the difference between a boa and a python?", a: "They're different families entirely, despite both being large, non-venomous constrictors that are frequently confused for each other. The clearest distinction: boas give live birth (the babies emerge fully formed), while pythons lay eggs and often coil around the clutch to incubate them. Geographically, boas are native to the Americas (plus Madagascar and a few Pacific islands), while pythons are native to Africa, Asia, and Australia - the two families never naturally overlapped until the exotic pet trade and reptile keeping brought them together. Ball Pythons and Burmese Pythons are pythons; the Boa Constrictor and Red-Tailed Boa are boas." },
-      { q: "Are boa constrictors good pets for beginners?", a: "Not usually a first snake. Boas are powerful, heavy-bodied animals that need a 6x3x3 ft or larger enclosure as adults and can live 20 to 30+ years, a real step up from the ball pythons, corn snakes, and kingsnakes this site generally recommends starting with. They're a great second snake for someone who already has husbandry basics down." },
-      { q: "Is a boa constrictor a python?", a: "No. Boas and pythons are entirely separate families that both happen to be large, non-venomous constrictors, which is exactly why the two get confused. A quick tell: boas give live birth, while pythons lay eggs. [Ball pythons](/guides/ball-python/), the site's other common large constrictor, are true pythons, not boas." },
-      { q: "Is a Boa constrictor related to the rosy boa?", a: "Yes - both are true boas in the family Boidae and both give live birth, but the resemblance mostly ends there. A Boa constrictor can reach 8 to 10+ feet, while the [rosy boa](/guides/rosy-boa/), native to the desert Southwest US and Baja California, rarely passes 3 feet and is one of the most docile, low-maintenance boas in the hobby. Anyone drawn to the boa temperament but not to housing an 8-foot snake should take a look at the rosy boa instead." },
+      { q: "What does the upfront setup cost for a boa constrictor?", a: "Roughly $400 to $1,200. That covers a proper adult PVC enclosure (the largest single expense by far), a thermostat, a heat source, hides, a water bowl, substrate, and a thermometer and hygrometer. The thermostat isn't optional for a snake this size." },
+      { q: "What temperature does a boa constrictor enclosure need?", a: "Basking 88 to 92°F, occasionally to 95°F, warm side 80 to 85°F, cool side 75 to 80°F, nights 70 to 80°F. The heat source has to sit where the snake cannot reach it: no exposed heating elements. Run it on a thermostat." },
+      { q: "At what size does a boa constrictor need a second handler?", a: "About 6 feet. Exotic veterinary guidance works from roughly one handler per 3 to 4 feet of snake, and extends that to routine jobs like cleaning the enclosure. A boa that size is strong enough that a second set of hands is basic safety." },
     ],
   },
   {
@@ -231,64 +232,71 @@ Escape prevention is a practical safety issue - an escaped kingsnake faces cold,
     image: "/assets/guides/corn-snake.jpg",
     tagline: "The curious, colorful beginner snake that never stops exploring!",
     funFact: "Corn snakes are named for their distinctive belly pattern that resembles Indian corn kernels, not because they're found in corn fields (though they are)!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft escape-proof enclosure", low: 130, high: 250 },
-        { item: "Heat source with thermostat", low: 35, high: 60 },
-        { item: "Two hides", low: 15, high: 25 },
-        { item: "Soak-able water dish", low: 10, high: 15 },
-        { item: "Aspen or coconut fiber substrate", low: 15, high: 25 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 30 },
-        { item: "Branches for climbing", low: 15, high: 25 },
-        { item: "Feeding tongs", low: 5, high: 10 },
-      ],
-      annual: [
-        { item: "Frozen/thawed mice and small rats", low: 80, high: 150 },
-        { item: "Substrate replacement", low: 25, high: 40 },
-        { item: "Electricity (heat)", low: 40, high: 70 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Quarantine, hygiene, and power
+    // outage cite the shared reptile guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 for batch C (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new snake is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "A 40-gallon breeder (36x18x18 inches) is the adult minimum, with 4x2x2 feet (48x24x24 inches) as the preferred size for a fully grown adult. Front-opening PVC enclosures are generally preferred over glass. House corn snakes singly.", source: "corn-snake-tank-setup-guide" },
+        { label: "Security", value: "Every heat source must run through a thermostat, with zero exceptions. An unregulated heat mat can climb to around 120°F, hot enough to cause a serious burn. Corn snakes are notorious escape artists, so confirm the enclosure locks or latches securely before your snake ever goes in.", source: "corn-snake-tank-setup-guide" },
+        { label: "Temperatures", value: "Warm/basking side 85 to 88°F (some sources say 80 to 85°F is acceptable), cool side 72 to 78°F, overall ambient 75 to 82°F, nighttime 65 to 75°F.", source: "corn-snake-tank-setup-guide" },
+        { label: "Humidity", value: "Sources disagree, some recommend 65 to 75%, others cite 40 to 60% as sufficient, raised to 60 to 70% during shedding. Either range works in practice; what matters more is a dedicated humid hide with damp sphagnum moss during shed cycles.", source: "corn-snake-tank-setup-guide" },
+        { label: "UVB", value: "Not required. Corn snakes have been kept for decades without it, though it is increasingly seen as beneficial long term. If you add one, use a low-output T5 targeting a UVI around 2.0 to 3.0.", source: "corn-snake-tank-setup-guide" },
+        { label: "Substrate", value: "Aspen shavings are the classic choice. Keep it 3 to 4 inches deep to allow natural burrowing behavior. Avoid pine or cedar entirely, both contain oils that are toxic to reptiles.", source: "corn-snake-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Hatchlings under about 3 months eat every 5 to 7 days, working down to every 14 to 21 days for a fully mature adult. Size prey at roughly 1 to 1.5 times the width of the snake's body at its widest point.", source: "corn-snake-feeding-guide" },
+        { label: "Not eating", value: "A healthy adult can physically survive roughly 2 to 3 months without food thanks to a slow reptile metabolism. A hatchling going without food for over about a week is already worth taking seriously and may need veterinary attention.", source: "corn-snake-feeding-guide" },
+        { label: "Handling", value: "Give it time to acclimate and eat successfully 3 to 4 times, roughly one to two weeks at minimum, before handling. Then 5 or 10 minute sessions a couple of times a week, building up gradually. Wait 48 to 72 hours after feeding and skip handling during a shed.", source: "corn-snake-handling-guide" },
+        { label: "Budget", value: "$250 to $600 to set up, up to $1,150 fully equipped. Most owners land around $200 to $500 a year. An initial vet exam runs $50 to $160.", source: "corn-snake-cost-guide" },
+        { label: "Adult size", value: "3.5 to 5 feet." },
+        { label: "Lifespan", value: "15 to 20 years in captivity, with the oldest verified individual reaching 32.", source: "corn-snake-cost-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "65 to 75°F is the normal night low. Below 65°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `A 4x2x2 ft enclosure is appropriate for most adult corn snakes. Despite being considered a beginner species, corn snakes benefit from generous space - they are active, curious, and will use every inch of an enriched enclosure. Corn snakes are notorious and highly capable escape artists. Ensure every single seam, lid hinge, and ventilation gap is secured. They can compress their bodies and squeeze through openings that seem impossibly small.
-
-Provide a warm end with a surface temperature of 85 to 88 degrees F using an under-tank heater on a thermostat, and a cool end at approximately 72 to 75 degrees F. Corn snakes originate from the eastern United States, where temperatures are moderate, and they do not require the extreme heat that tropical or desert species need. A simple warm/cool gradient with two hides - one at each end - meets their thermoregulatory needs.
-
-Humidity should stay at 40 to 60%. This is generally achievable at ambient room humidity in most homes. During shed, raise humidity slightly by adding a moist hide (a hide box with damp sphagnum moss). Aspen shavings are an excellent substrate: they hold burrow tunnels, are affordable, easy to spot-clean, and maintain appropriate humidity levels when not over-misted.
-
-Corn snakes are semi-arboreal and will use elevated branches and perches, especially juveniles. Providing height and branching in the enclosure gives them an outlet for this natural behavior and makes the enclosure more enriching.`,
-      diet: `Corn snakes eat appropriately sized frozen/thawed mice, or small rats as they grow. Prey should roughly match the widest point of the snake's mid-body - a slight bulge after feeding is normal and healthy; a dramatically distended body indicates prey is too large.
-
-Feed juveniles every 5 to 7 days, sub-adults every 7 to 10 days, and adults every 10 to 14 days. Always thaw frozen prey fully in warm water until the core reaches approximately 100 degrees F before offering. Always use feeding tongs - every single feeding. This prevents the snake from associating your hand with food and dramatically reduces the chance of accidental strikes during handling.
-
-Corn snakes are generally reliable, enthusiastic feeders. If a corn snake refuses food, consider whether it is in pre-shed (the skin and eyes will appear dull and bluish), whether it is cold (check temperatures), or whether the prey is too warm or too cold. Most refusals in otherwise healthy corn snakes resolve without intervention. Allow 48 to 72 hours after feeding before handling.
-
-Fresh water in a clean, soak-able dish must be available at all times. Corn snakes drink regularly and often soak before shedding. Change the water at least twice per week and clean the dish thoroughly with a reptile-safe disinfectant weekly.`,
-      enrichment: `Corn snakes are one of the most active and exploratory snakes in captivity. Given appropriate space, they investigate every corner of their enclosure, climb branches, burrow through substrate, and soak in their water dish. Enriching their environment significantly improves their quality of life compared to a bare enclosure with only a hide.
-
-Provide branches at varying heights for climbing, multiple hides of different sizes and shapes, cork bark for climbing and hiding, and a water dish large enough to coil in. Covering the exterior walls of the enclosure with backgrounds gives the snake a greater sense of security and reduces stress from seeing movement outside the enclosure constantly.
-
-Corn snakes tame exceptionally well with consistent handling. Start with brief 5-minute sessions after the snake has been allowed to settle for 2 weeks following acquisition. Build up gradually to 15 to 30 minute sessions. Most corn snakes become remarkably calm and interactive - comfortable exploring their keeper's arms and shoulders without any defensiveness.
-
-Substrate enrichment is underutilized. Providing aspen shavings deep enough to burrow in (3 to 4 inches), adding dried leaves on top, and hiding prey items in the substrate creates a more naturalistic and stimulating environment that supports natural foraging behavior.`,
-      health: `Corn snakes are among the hardiest and most disease-resistant snakes available as pets. When husbandry is correct, they rarely develop serious health problems. The most common issues are all preventable with proper setup.
-
-Respiratory infections result from temperatures that are too low, humidity that is too high without adequate ventilation, or both. Signs include wheezing, mucus from the mouth and nostrils, open-mouth breathing, and lethargy. Any suspected respiratory infection requires veterinary treatment. Address the underlying husbandry cause simultaneously to prevent recurrence.
-
-Retained shed is caused by low humidity and/or lack of a moist hide. A complete shed should come off in one piece. Retained shed on the eye caps is the most serious - it blurs vision and if left in place can cause eye damage. Soaking in shallow lukewarm water for 20 to 30 minutes softens retained shed for gentle removal.
-
-Escape prevention is not a health issue per se, but an escaped corn snake is at serious risk from dehydration, temperature extremes, household hazards, and being stepped on. Check the enclosure for gaps regularly. A corn snake that escapes and is not found within 24 to 48 hours has a dramatically reduced chance of being recovered safely.`,
-      checklist: ["4x2x2 ft escape-proof enclosure", "Heat source with thermostat (85 to 88 degrees F warm end)", "Two hides (warm and cool)", "Water dish (soak-able size)", "Aspen or coconut fiber substrate", "Frozen/thawed mice and small rats", "Feeding tongs", "Branches for climbing", "Digital thermometer", "Secure, lockable lid"],
+    emergencyCard: {
+      source: "corn-snake-health-issues-guide",
+      callNow: [
+        "Open-mouth breathing or wheezing",
+        "Visible mites",
+        "Discolored or soft belly scales",
+        "Repeated regurgitation",
+        "Any mouth swelling or discharge",
+        "Neurological symptoms (star-gazing or corkscrewing movements)",
+      ],
+      vetLine: "A reptile-experienced vet, found through the Association of Reptilian and Amphibian Veterinarians before you need one. Get a new corn snake checked within the first few weeks of ownership, then an annual wellness exam with a fecal test after that.",
     },
+    routes: [
+      { slug: "corn-snake-cost-guide", line: "$25 to $70 for the snake, $250 to $600 for the setup, $200 to $500 a year, and what it costs over a two-decade lifespan." },
+      { slug: "corn-snake-tank-setup-guide", line: "The 40-gallon breeder minimum, the one non-negotiable thermostat rule, and the genuine humidity disagreement worth knowing about." },
+      { slug: "corn-snake-feeding-guide", line: "The age and weight based schedule, prey sizing, and the honest range of reasons a corn snake stops eating." },
+      { slug: "corn-snake-handling-guide", line: "Settling-in time, the two-handed support, the timing rules around feeding and shedding, and the stress signs." },
+      { slug: "corn-snake-health-issues-guide", line: "Respiratory infection, scale rot, mites, retained shed, mouth rot, and the list that means the vet today." },
+      { slug: "corn-snake-enrichment-guide", line: "The 2021 studies on enclosure size and odor discrimination, and why floor space is the enrichment for this species." },
+      { slug: "corn-snake-legal-guide", line: "Banned in Georgia as a native species, restricted morphs in New Jersey and Illinois, and where it's legal outright." },
+    ],
+    buyList: [
+      "40-gallon breeder or 4x2x2 ft PVC enclosure",
+      "Heat source (under-tank heater or overhead halogen)",
+      "Thermostat",
+      "At least two hides",
+      "Soak-able water bowl",
+      "Aspen shavings or other suitable substrate",
+      "Digital thermometer and hygrometer",
+      "Branches or cork bark for climbing",
+      "Feeding tongs",
+      "Frozen/thawed mice or small rats",
+      "Optional low-output T5 UVB",
+    ],
     faqs: [
-      { q: "How big do corn snakes get?", a: "Adult corn snakes typically reach 4 to 5 feet, with females often slightly larger than males. They are slender snakes and never feel heavy or cumbersome at full size. Juveniles hatch at about 8 to 12 inches and reach adult size by 2 to 3 years, though they continue filling out slowly until age 4 to 5." },
-      { q: "Are corn snakes good beginner snakes?", a: "Yes - corn snakes are widely regarded as one of the best beginner snakes available. They are active and curious rather than sedentary, which makes them more engaging to watch than many other colubrids. They feed reliably, tolerate handling well with regular interaction, and have straightforward temperature and humidity requirements. The main challenge is their legendary escape-artist reputation - every gap in a corn snake enclosure will eventually be found." },
-      { q: "How often do corn snakes eat?", a: "Feed juvenile corn snakes every 5 to 7 days and adults every 10 to 14 days. Always feed frozen and thawed prey sized to the widest part of the snake's body. Corn snakes are enthusiastic feeders and food-motivated, which also means they may strike at your hand if they smell prey - always wash hands before handling." },
-      { q: "How long do corn snakes live?", a: "Corn snakes commonly live 15 to 20 years in captivity with proper care, and some individuals exceed 20 years. They are one of the longer-lived colubrid species. Longevity depends on consistent appropriate temperatures, annual fecal checks for parasites, and prompt veterinary care for any health concerns." },
-      { q: "Do corn snakes need humidity?", a: "Corn snakes do well at 40 to 60% ambient humidity, which is achievable in most homes without additional measures. The most important provision is a humid hide - a box packed with damp sphagnum moss - available at all times and especially during the shedding cycle. Dry sheds from insufficient humidity are one of the most common corn snake health issues and can result in retained eye caps and constricting shed on the tail tip." },
-      { q: "Is a corn snake dangerous to confuse with a copperhead?", a: "It's a real concern outdoors, not just an academic question. Corn snakes and copperheads share a similar reddish, blotched pattern and range, and corn snakes are genuinely, frequently mistaken for copperheads (and killed as a result) in the wild. A pet corn snake in an enclosure isn't the risk; misidentifying a wild snake in your yard is. When in doubt outdoors, leave any snake alone rather than trying to identify it by pattern alone." },
-      { q: "How is a corn snake different from a coral snake?", a: "Completely unrelated and easy to tell apart once you know the pattern rule. Coral snakes are venomous with red bands bordered by yellow; corn snakes are non-venomous colubrids with a blotched, saddle-like pattern that doesn't follow that banding at all. Corn snakes are sometimes confused with venomous species in casual conversation, but coral snake mimicry is really a milk snake and kingsnake story, not a corn snake one." },
+      { q: "How much does a corn snake itself cost?", a: "A normal morph runs $25 to $70. Rare or designer morphs climb into the hundreds or occasionally low thousands, but the animal itself is the cheap part of ownership either way." },
+      { q: "What humidity level does a corn snake need?", a: "Sources disagree, some recommend 65-75%, others cite 40-60% as sufficient, raised to 60-70% during shedding. Either range works in practice, what matters more is consistency and a dedicated humid hide with damp sphagnum moss during shed cycles." },
+      { q: "Why has my corn snake stopped eating?", a: "Most commonly it's shedding, brumation, or, in males especially, breeding-season restlessness, all normal. It becomes a concern when it's paired with weight loss, lethargy, respiratory signs, or when the enclosure's warm side isn't warm enough for the snake to digest food safely." },
     ],
   },
   {

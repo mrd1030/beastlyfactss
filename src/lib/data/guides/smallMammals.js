@@ -7,67 +7,70 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/chinchilla.jpg",
     tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
-    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 60 hairs per follicle (humans have only 1).",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x48 in multi-level cage", low: 150, high: 300 },
-        { item: "12-14 in solid exercise wheel", low: 50, high: 90 },
-        { item: "Dust bath house + chinchilla dust", low: 20, high: 35 },
-        { item: "Platforms and hideouts", low: 30, high: 60 },
-        { item: "Water bottle and food dishes", low: 10, high: 20 },
-        { item: "Chew toys (mineral/pumice)", low: 15, high: 30 },
-        { item: "Digital thermometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Grass hay (unlimited)", low: 120, high: 200 },
-        { item: "Chinchilla pellets", low: 30, high: 50 },
-        { item: "Chinchilla dust (ongoing)", low: 30, high: 50 },
-        { item: "Bedding", low: 50, high: 90 },
-        { item: "Electricity (cooling in warm months)", low: 80, high: 150 },
-        { item: "Annual vet check (dental, under anesthesia)", low: 80, high: 150 },
-      ],
-    },
-    sections: {
-      housing: `A minimum 24x24x48 inch multi-level cage with solid platforms (never wire grates, which injure feet) is required. Chinchillas are extraordinary athletes - they can jump 6 feet vertically and need height for exercise. The more platforms at different levels, the better. Bar spacing should be 1 inch or less for adults, 1/2 inch for juveniles.
-
-Temperature is critical. Chinchillas cannot tolerate heat above 75 to 80 degrees F. In North American summers, air conditioning is often necessary. They are comfortable at 60 to 72 degrees F and are far more cold-tolerant than heat-tolerant. A chinchilla in a warm room will show rapid, labored breathing - this is heat distress and an emergency.
-
-Use fleece liners or paper-based bedding (Carefresh). Never use cedar or pine shavings (toxic aromatic oils). Provide a dedicated dust bath house (a plastic or ceramic container large enough for full body rolling) with chinchilla-specific dust (not sand) 2 to 3 times per week for 10 to 15 minutes. Dust baths are how chinchillas maintain their impossibly dense, silky fur.`,
-      diet: `Unlimited Timothy or orchard grass hay is the foundation of the chinchilla diet - it must be available at all times. Hay provides the indigestible fiber that keeps the chinchilla's continuously moving digestive tract functional and wears down continuously growing teeth. A chinchilla without constant hay access will develop life-threatening digestive impaction and dental overgrowth.
-
-Supplement with high-quality chinchilla pellets: 1 to 2 tablespoons per day. Choose Timothy-based pellets without added seeds, dried fruit, or colorful pieces. Plain, uniform pellets are nutritionally correct. Avoid muesli-style mixed foods - chinchillas selectively eat the sugary pieces and leave the nutritious ones.
-
-Treats must be minimal. Rose hips, dried herbs (chamomile, dandelion), small pieces of apple, or a raisin once per week are appropriate. Excessive sugar disrupts gut flora, causes obesity, and can precipitate life-threatening GI problems in this highly sensitive digestive system. Fresh water in a sipper bottle changed daily is essential.`,
-      enrichment: `A 12 to 14 inch solid-surface exercise wheel (not wire or mesh, which catches legs) is essential. Chinchillas are highly active and need vigorous nightly exercise. Without a wheel, they develop obesity, boredom stereotypies, and behavioral problems. Flying Saucer-style wheels work particularly well for chinchillas.
-
-Provide platforms at multiple heights, wooden ledges, tunnels, cork bark tubes, and a variety of safe chew toys: apple wood, willow balls, rose hip pieces, and pumice blocks. Chinchillas need to gnaw continuously to maintain their constantly growing teeth, and providing appropriate gnawing material prevents them from destroying cage furniture.
-
-Supervised out-of-cage playtime in a chinchilla-proofed room (no electrical cords, no small gaps to escape into, no toxic plants) is excellent enrichment. Chinchillas explore with spectacular energy - leaping, bounding, and investigating everything. Handle gently and consistently, allowing the chinchilla to approach voluntarily rather than being grabbed.`,
-      health: `Heat stroke is the most acute and deadly risk for chinchillas. Above 75 to 80 degrees F, chinchillas begin to overheat rapidly. Signs include rapid breathing, drooling, and lethargy. Move to a cool area immediately and contact an exotic vet. Prevention through climate control (air conditioning in summer) is essential.
-
-Dental disease (malocclusion and molar spurs) is extremely common in chinchillas and is the most common cause of weight loss and anorexia in middle-aged and older animals. Because the cheek teeth are far back in the mouth and not visible without sedation and magnification, dental disease is frequently discovered only when the chinchilla has already lost significant weight. Annual dental checks under anesthesia with an exotic vet are strongly recommended.
-
-Fur ring - a constricting ring of fur around the penis in males - can develop during or after mating and causes serious tissue damage if not addressed promptly. Male owners should learn to check for fur ring monthly. GI stasis from insufficient hay is another serious risk. A chinchilla that has not produced droppings for 12 hours is an emergency.`,
-      checklist: [
-        "Minimum 24x24x48\" multi-level cage",
-        "12 to 14 inch solid exercise wheel",
-        "Unlimited grass hay (Timothy or Orchard)",
-        "High-quality chinchilla pellets",
-        "Dust bath (chinchilla dust, not sand)",
-        "Multiple platforms and hideouts",
-        "Safe chew toys (apple wood, willow, pumice)",
-        "Digital thermometer (critical, keep under 80 degrees F)",
-        "Nail clippers",
-        "Exotic veterinarian experienced with chinchillas"
+    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 80 hairs per follicle, versus 2 to 3 for humans.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size and lifespan come from the
+    // encyclopedia entry, which no deep dive repeats. The antibiotics, cold
+    // tolerance, and vet trips rows cite the shared small-mammal guides in
+    // the sidebar's Health and More list. Reconciled 2026-09-09 for batch C
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cage", value: "A reasonable minimum is around 24 by 24 by 36 inches, tall and multi-level with solid, non-wire floors and shelves. Bigger is better for a species this active. Metal beats plastic, since chinchillas chew constantly and ingested plastic can cause a fatal blockage.", source: "chinchilla-tank-setup-guide" },
+        { label: "Wheel", value: "A solid metal wheel, 15 inches or larger. Never an exercise ball, a genuine overheating and injury risk for this species specifically.", source: "chinchilla-tank-setup-guide" },
+        { label: "Temperature", value: "Ideal room temperature is 50 to 68°F, kept cool and dry. Add the Fahrenheit temperature to the humidity percentage; treat a combined total over 150 as dangerous territory.", source: "chinchilla-tank-setup-guide" },
+        { label: "Cold tolerance", value: "Far more cold-tolerant than heat-tolerant: comfortable down into the 35 to 45°F range with proper shelter.", source: "small-mammal-temperature-heat-stress-guide" },
+        { label: "Dust bath", value: "Chinchilla dust, never sand or water, 2 to 3 times a week (some owners go daily), for 10 to 30 minutes at a time, using 1 to 2 inches of dust in a shallow container. Remove the container afterward.", source: "chinchilla-tank-setup-guide" },
+        { label: "Diet", value: "Grass hay should make up 80 to 90% of the diet, available at all times. Add plain, hay-based pellets, roughly 16 to 20% protein and 15 to 35% fiber, at about 1 to 2 tablespoons a day.", source: "chinchilla-tank-setup-guide" },
+        { label: "Treats", value: "A small fraction of the diet, a few times a week rather than daily, somewhere under 5 to 10% of total intake.", source: "chinchilla-feeding-guide" },
+        { label: "Not eating", value: "A chinchilla off food for more than 12 to 24 hours should be seen the same day. No droppings at all for about 12 hours is treated as needing immediate attention.", source: "chinchilla-feeding-guide" },
+        { label: "Handling", value: "Both hands, body fully supported against your chest (a football hold). Never lift by the tail tip or grab at the fur, which can trigger fur slip.", source: "chinchilla-handling-guide" },
+        { label: "Budget", value: "$455 to $1,225 for a complete setup. Roughly $30 to $85 a month ongoing. An annual exotic vet checkup runs $50 to $100 or more.", source: "chinchilla-cost-guide" },
+        { label: "Adult size", value: "9 to 15 inches; 1 to 2 lbs." },
+        { label: "Lifespan", value: "Commonly 10 to 20 years in captivity; wild longevity for this species has not been well studied." },
+        { label: "Antibiotics", value: "Certain ordinary antibiotics can wipe out a chinchilla's gut bacteria and let toxin-producing Clostridium take over, a reaction that can kill within days. Raise the drug list with your vet before any antibiotic starts.", source: "small-mammal-enterotoxemia-guide" },
+        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "chinchilla-health-issues-guide",
+      callNow: [
+        "Drooling",
+        "Changes in appetite or stool",
+        "Diarrhea",
+        "Any respiratory signs",
+        "Any indication of heat stress (lethargy, panting, bright red mucous membranes)",
+      ],
+      vetLine: "An exotic vet experienced with chinchillas, found before you need one. This species masks illness well and can decline fast once symptoms become visible, so call sooner rather than waiting to see if things improve.",
+    },
+    routes: [
+      { slug: "chinchilla-cost-guide", line: "$455 to $1,225 for a complete setup, $30 to $85 a month, and the air conditioning cost most owners don't factor in." },
+      { slug: "chinchilla-tank-setup-guide", line: "The cage, the 150 rule for heat danger, and dust baths done right." },
+      { slug: "chinchilla-feeding-guide", line: "The hay-first schedule, why cecotropes matter, and the honest list of reasons a chinchilla stops eating." },
+      { slug: "chinchilla-handling-guide", line: "The football hold, the fragile skeleton, and what fur slip actually means." },
+      { slug: "chinchilla-health-issues-guide", line: "Dental disease, heat stroke, GI problems, fur chewing, ringworm, and fur ring, with what causes each." },
+      { slug: "chinchilla-enrichment-guide", line: "The cage-complexity study that dropped fur chewing with a floor change, and the priority order that follows from it." },
+      { slug: "chinchilla-legal-guide", line: "Why the California and Texas ban claims are false, and the one real CITES detail worth knowing." },
+    ],
+    buyList: [
+      "24x24x36 inch multi-level metal cage",
+      "15 inch or larger solid exercise wheel",
+      "Dust bath house and chinchilla dust",
+      "Platforms and hideouts at varied heights",
+      "Water bottle and food dishes",
+      "Safe chew toys (mineral, pumice, untreated wood)",
+      "Digital thermometer and hygrometer",
+      "Unscented paper bedding or fleece",
+      "Timothy or orchard grass hay",
+      "Plain, chinchilla-specific pellets",
+    ],
     faqs: [
-      { q: "Why do chinchillas take dust baths?", a: "Chinchillas' extraordinary fur - up to 60 hairs per follicle compared to a human's 1 - would mat, clump, and become oily if bathed in water like most mammals. In the wild, Andean chinchillas bathe in volcanic ash to absorb oils and moisture from their dense coats. In captivity, chinchilla-specific dust replicates this. Offer a dust bath container large enough for rolling 2 to 3 times per week for 10 to 15 minutes. Never bathe a chinchilla in water - wet fur takes many hours to dry and can lead to fungal infections and life-threatening chilling." },
-      { q: "Can chinchillas be kept in warm climates?", a: "With difficulty. Chinchillas are native to the high-altitude Andes and cannot tolerate temperatures above 75 to 80 degrees F. Above this threshold they develop heat stroke rapidly - a genuine veterinary emergency. In warm climates, air conditioning is not optional but a care requirement. Signs of heat distress include rapid panting, drooling, and lethargy. If you live somewhere without reliable air conditioning, a chinchilla is not a suitable pet." },
-      { q: "How long do chinchillas live?", a: "Chinchillas are one of the longer-lived small pet mammals. With excellent care, they commonly live 10 to 15 years, and some individuals have reached 20 years. This makes a chinchilla a longer commitment than many people realize at purchase. Their longevity makes annual veterinary care, appropriate diet (unlimited hay plus quality pellets), and temperature control especially important investments." },
-      { q: "Are chinchillas good pets for children?", a: "Chinchillas are best suited to older teenagers and adults rather than young children. They are crepuscular and nocturnal - most active in the evening when children should be sleeping - and are not natural cuddlers. They are also delicate and can develop serious stress responses to rough handling, require precise temperature management (never above 75 degrees F), and need an adult-level commitment to their care." },
-      { q: "What do chinchillas eat?", a: "Unlimited Timothy or orchard grass hay is the cornerstone of the chinchilla diet and must always be available. Hay keeps continuously growing teeth worn and the sensitive digestive system moving. Supplement with 1 to 2 tablespoons of high-quality chinchilla pellets (Timothy-based, no added seeds or colored pieces) daily. Treats must be very limited: a single raisin, a small piece of dried rose hip, or a dried herb like chamomile once or twice per week. Excessive sugar causes severe gut disruption in chinchillas." },
+      { q: "Can chinchillas take water baths?", a: "No. Their fur is dense enough, among the densest of any mammal, that trapped moisture promotes fungal growth rather than washing anything away. Dust baths are the only safe option." },
+      { q: "Why does my chinchilla eat its own droppings?", a: "This is normal and necessary, not illness. Chinchillas are hindgut fermenters that produce a distinct soft dropping called a cecotrope, mostly overnight, and eat it to send food through the gut a second time. Their small intestine only captures part of the nutrients from their very fibrous diet on the first pass, and a chinchilla prevented from doing this can become nutrient deficient." },
+      { q: "What is fur slip in chinchillas?", a: "It's a protective defense mechanism where a grabbed, mishandled, or overexcited chinchilla releases a large patch of fur all at once, revealing smooth skin underneath. It's not painful and not an injury in the traditional sense, but the fur can take several months to grow back, and it often regrows a slightly different shade." },
     ],
   },
   {
@@ -316,71 +319,65 @@ Older rats are also prone to pituitary tumors (more common in females on high-ca
     image: "/assets/guides/ferret.jpg",
     tagline: "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!",
     funFact: "Ferrets do a 'war dance' when they're excited: a frenzied hopping, bouncing, and sideways leaping display also called the 'dooking.' Dooking means your ferret is having the time of their life!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "3x2x2 ft multi-level cage", low: 100, high: 200 },
-        { item: "Fleece hammocks and sleep sacks", low: 20, high: 40 },
-        { item: "Litter box", low: 10, high: 15 },
-        { item: "Toys, tunnels, and dig boxes", low: 25, high: 45 },
-        { item: "Spay/neuter + initial vaccinations (if needed)", low: 150, high: 300 },
-      ],
-      annual: [
-        { item: "High-quality ferret kibble or raw diet", low: 150, high: 250 },
-        { item: "Distemper and rabies vaccine boosters", low: 50, high: 100 },
-        { item: "Annual fecal exam and bloodwork", low: 100, high: 200 },
-        { item: "Bedding and litter", low: 50, high: 80 },
-      ],
-    },
-    sections: {
-      housing: `Ferrets need a multi-level cage (minimum 3x2x2 ft with solid ramps and platforms) as their home base, but they cannot live in a cage full-time. Ferrets require a minimum of 4 hours of free-roaming time in a ferret-proofed room every single day - this is not optional. Ferrets kept in cages all day develop significant physical and behavioral problems.
-
-Ferret-proofing is a serious undertaking. Ferrets squeeze through impossibly small gaps, chew electrical cords, steal and hide small objects (including jewelry, keys, and remote controls), fall into open toilets, and get into everything. Check every baseboard, gap under appliances, and recliner mechanism (ferrets love to climb into recliners and get crushed). Block all gaps under doors and any opening wider than 1 inch.
-
-Inside the cage: fleece hammocks, sleep sacks, and tube tunnels provide resting spots. Line the cage floor with fleece liners or paper-based bedding - never cedar or pine, which contain toxic aromatic oils. Provide a litter box with paper-based litter in one corner, and keep room temperature below 80 degrees F. Ferrets overheat easily and can die from heat stroke at temperatures that feel comfortable to humans.
-
-Multiple ferrets do significantly better together - they are social animals that wrestle, groom, and sleep in piles. A pair or trio is far preferable to a solo ferret for the animals' wellbeing.`,
-      diet: `Ferrets are obligate carnivores with a digestive tract optimized for animal protein and fat and no capacity to process plant matter. The dietary principle is simple: high protein, high fat, zero carbohydrates, zero plant fiber. The practical challenge is finding commercial foods that actually meet this standard.
-
-A high-quality, grain-free ferret kibble with a named animal protein (chicken, turkey, duck) as the first 2 to 3 ingredients, fat content above 20%, and carbohydrate content below 20% is the commercial food baseline. Multiple higher-end brands meet this standard; avoid brands containing corn, wheat, soy, or pea protein as primary ingredients.
-
-A raw meat diet (whole prey, chunks of meat and organs, or commercial raw ferret food) is arguably the most species-appropriate option and produces excellent coat condition, dental health, and energy levels in most ferrets. Transition to raw slowly if switching from kibble to avoid digestive upset.
-
-Avoid: fruits, vegetables, grains, dairy, fish-based foods, and sugary treats. Ferrets cannot digest plant matter and chronic exposure to plant carbohydrates is strongly associated with insulinoma (pancreatic cancer) development. Fresh water in a heavy bowl must always be available - bottles are difficult for ferrets to drink from adequately and often run dry unnoticed.`,
-      enrichment: `Ferrets are among the most playful and mischievous animals kept as pets. Their characteristic "dooking" (excited chattering while performing the war dance - a frenzied hopping, bouncing, sideways leaping display) is one of the most joyful sights in the exotic pet world, and it tells you your ferret is having the time of its life.
-
-Rotate enrichment items frequently - ferrets become bored with toys quickly and light up at novelty. Crinkle balls, tunnels, dig boxes (shallow bins filled with dry rice, dirt, or shredded paper), ferret-safe puzzle feeders, and "treasure stash" boxes (a container they can deposit stolen items into) are all excellent options.
-
-Daily free-roam time with human interaction is the most important enrichment. Chase games, hide-and-seek, and learning tricks (ferrets can learn to sit, come when called, and perform simple tricks) all strengthen the bond between ferret and keeper. Many ferrets will return to their cage on their own when tired if the door is left open.
-
-Ferrets sleep 16 to 18 hours per day in deep, often concerning-looking coma-like sleep. This is completely normal. Schedule free-roam time for their active periods (generally morning and early evening).`,
-      health: `Ferrets in North America have a near-universal susceptibility to three serious diseases: insulinoma (pancreatic beta cell cancer), adrenal gland disease, and lymphoma. The majority of ferrets will develop at least one of these by age 4 to 5, and many develop all three. This is not a reason to avoid ferrets - it is a reason to commit to appropriate veterinary care.
-
-Insulinoma causes low blood sugar (hypoglycemia) from excess insulin production. Signs include weakness, stumbling, drooling, glassy eyes, and in severe cases, seizures. Management includes diet modification (low carbohydrate is critical - another reason to avoid carb-heavy kibble), medications (prednisone, diazoxide), and sometimes surgery. A ferret with insulinoma needs ongoing veterinary management.
-
-Adrenal gland disease causes hair loss typically starting at the tail and progressing forward, muscle wasting, and in females, vulvar swelling (a dangerous estrogen-producing effect from adrenal tumors). It is managed with hormonal implants, medications, or surgery depending on severity.
-
-All ferrets should be vaccinated against canine distemper (fatal in ferrets) and rabies. Annual wellness exams including bloodwork starting at age 2 to 3 are essential for early disease detection. A ferret-experienced exotic veterinarian is not optional - find one before acquiring ferrets.`,
-      checklist: [
-        "Multi-level ferret cage (3x2x2 ft minimum)",
-        "Fleece hammocks and sleep sacks",
-        "Ferret-proofed free-roam room (4+ hours/day)",
-        "High-quality ferret kibble or raw meat diet",
-        "Fresh water bowl (always available)",
-        "Tunnels, dig boxes, and rotating toys",
-        "Canine distemper and rabies vaccinations",
-        "Spay/neuter (if not already done)",
-        "Annual fecal exam and bloodwork",
-        "Ferret-experienced exotic veterinarian",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Vet trips cites the shared
+    // small-mammal guide in the sidebar's Health and More list. Reconciled
+    // 2026-09-09 for batch C (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cage", value: "For a pair, at least 30 by 24 by 48 inches, adding roughly 4 additional square feet of floor space for each ferret beyond that. A double-unit multi-level cage with solid levels and a covered ramp is the most consistently recommended setup. Bar spacing one inch or less.", source: "ferret-tank-setup-guide" },
+        { label: "Temperature", value: "Keep the room in the 50 to 75°F range, and treat anything above about 80 to 85°F as a real heatstroke risk. No supplemental heat source is needed indoors.", source: "ferret-tank-setup-guide" },
+        { label: "Bedding", value: "Washable fabric hammocks and sleep sacks for sleeping. A corner litter box with non-clumping, dust-free litter, paper or pelleted. Never cedar or pine shavings.", source: "ferret-tank-setup-guide" },
+        { label: "Out-of-cage time", value: "Several hours of supervised out-of-cage play daily, during their active window, is a requirement, not a bonus. Ferrets denied playtime spent more time lying awake with their eyes open, screeched more, and sat and stood less.", source: "ferret-enrichment-guide" },
+        { label: "Ferret-proofing", value: "Block every gap larger than about one inch, secure cabinets and low openings, and remove any rubber or foam items they could chew and swallow, a direct GI blockage risk.", source: "ferret-tank-setup-guide" },
+        { label: "Diet", value: "A high-quality, ferret-specific dry kibble, roughly 32 to 40% protein, free-fed around the clock for healthy adults. Never fruits, vegetables, grains, dairy, or chocolate.", source: "ferret-feeding-guide" },
+        { label: "Not eating", value: "A healthy adult can develop dangerous blood sugar drops within a single day of not eating. Appetite loss is treated as needing same-day veterinary attention, not a few days of watching.", source: "ferret-feeding-guide" },
+        { label: "Nipping", value: "Normal in kits, usually play, teething, fear, or overstimulation, peaking around 3 to 4 months old. Never pop or flick the nose, which increases fear-based biting; redirect to a toy instead.", source: "ferret-handling-guide" },
+        { label: "Budget", value: "$300 to $700 to set up. Roughly $50 to $60 a month for a pair. Lifetime vet cost is commonly estimated at $3,000 to $8,000 or more.", source: "ferret-cost-guide" },
+        { label: "Adult size", value: "13 to 16 inches body length; males significantly larger." },
+        { label: "Lifespan", value: "5 to 9 years on average for US pet ferrets today. Older sources citing 10 to 15 years reflect a healthier population than what's typical now.", source: "ferret-cost-guide" },
+        { label: "Adrenal disease", value: "Symmetrical hair loss starting at the tail base and moving toward the head over weeks to months, skin usually healthy, is the hallmark sign, unlike normal seasonal shedding, which is diffuse and resolves within a few weeks.", source: "ferret-adrenal-disease-guide" },
+        { label: "Vaccines", value: "Canine distemper (nearly always fatal in ferrets) and rabies, plus annual bloodwork starting at age 2 to 3 for early disease detection.", source: "ferret-health-issues-guide" },
+        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "ferret-health-issues-guide",
+      callNow: [
+        "Urinary blockage in males (a hormone-driven enlarged prostate)",
+        "Sudden collapse or seizure (insulinoma)",
+        "Vomiting, appetite loss, and lethargy after swallowing rubber or foam (GI blockage)",
+      ],
+      vetLine: "A ferret-experienced exotic vet, found before you need one. All three are genuine emergencies that need immediate veterinary care, not a wait-and-see approach.",
+    },
+    routes: [
+      { slug: "ferret-cost-guide", line: "$75 to $400 for the ferret, $300 to $700 for the setup, and the $3,000 to $8,000 lifetime vet cost most owners don't budget for." },
+      { slug: "ferret-tank-setup-guide", line: "Cage size for a pair, why overheating is the real danger, and the ferret-proofing that matters as much as the cage." },
+      { slug: "ferret-feeding-guide", line: "Free-feeding kibble, the fastest gut transit of any common pet mammal, and the honest list of reasons a ferret stops eating." },
+      { slug: "ferret-handling-guide", line: "Why kits nip, the right way to respond, and the coat patterns linked to congenital deafness." },
+      { slug: "ferret-health-issues-guide", line: "Adrenal disease, insulinoma, GI blockage, and canine distemper, with why middle age is the real turning point." },
+      { slug: "ferret-enrichment-guide", line: "The 2022 surveys on what ferrets actually enjoy, and the specific behavior that shows up when they don't get it." },
+      { slug: "ferret-legal-guide", line: "Banned in California and Hawaii, restricted in NYC, and the petition that could change California's ban." },
+      { slug: "ferret-adrenal-disease-guide", line: "The hair loss pattern that separates adrenal disease from normal shedding, and what the neutering-age link actually shows." },
+    ],
+    buyList: [
+      "30x24x48 inch double-unit multi-level cage",
+      "Fleece hammocks and sleep sacks",
+      "Corner litter box with paper or pelleted litter",
+      "Tunnels and a dig box",
+      "Rotating toys (never latex or foam rubber)",
+      "Sipper water bottle",
+      "High-quality, ferret-specific dry kibble",
+      "A ferret-proofed free-roam room",
+    ],
     faqs: [
-      { q: "Do ferrets smell?", a: "Yes, to varying degrees. Ferrets have musk glands and produce a natural musky scent. Most pet ferrets in North America are descented (musk glands removed), which reduces but does not eliminate the scent - the skin and fur themselves produce a natural oil-based smell. Regular bathing reduces the odor temporarily but too-frequent bathing stimulates more oil production. Good litter box hygiene and regular bedding washing manage most of the smell." },
-      { q: "What do ferrets eat?", a: "Obligate carnivores requiring high protein, high fat, and zero carbohydrates. A quality grain-free ferret kibble with named animal protein as the first 2 to 3 ingredients is the commercial baseline. A raw meat diet (whole prey, raw meat and organs) is arguably the most species-appropriate option. Avoid all fruits, vegetables, grains, dairy, and sugary treats - plant carbohydrates are strongly associated with insulinoma development in ferrets." },
-      { q: "What diseases are common in ferrets?", a: "Most North American ferrets develop at least one of three serious diseases by age 4 to 5: insulinoma (pancreatic cancer causing low blood sugar), adrenal gland disease (causing hair loss starting at the tail and hormonal imbalance), and lymphoma. Annual bloodwork starting at age 2 to 3 allows early detection. A ferret-experienced exotic vet is essential from day one, not just when illness appears." },
-      { q: "How much free-roam time do ferrets need?", a: "A minimum of 4 hours per day outside their cage, in a thoroughly ferret-proofed area. Ferrets kept caged all day develop significant physical deterioration and behavioral problems. Ferret-proofing is serious: they squeeze through gaps wider than 1 inch, chew electrical cords, fall into open toilets, and get trapped in recliner mechanisms. Block all gaps under doors and secure all hazards before unsupervised roaming." },
-      { q: "How long do ferrets live?", a: "6 to 10 years in captivity, though their high disease susceptibility means dedicated veterinary management becomes part of the commitment by middle age. Ferrets are deeply social, playful, and bond strongly with their keepers - many owners describe them as the most personality-rich small pets available. The veterinary costs of managing insulinoma and adrenal disease should be budgeted for before acquiring ferrets." },
-      { q: "Is a ferret a type of weasel?", a: "Yes, biologically. Ferrets belong to the weasel family (Mustelidae), the same family as mink, stoats, otters, and polecats, and a domestic ferret is believed to descend specifically from the European polecat. That said, \"weasel\" in everyday speech usually means a specific set of smaller wild Mustela species, not a pet ferret, so the two words aren't interchangeable in casual use even though they're taxonomic relatives." },
+      { q: "What size cage does a ferret need?", a: "For a pair, at least 30 by 24 by 48 inches, plus about 4 square feet of floor for each ferret beyond two. Experienced owners and exotic vets point to the double-unit multi-level cage with solid levels and a covered ramp. Bar spacing: one inch or less." },
+      { q: "What ferret health issues count as a real emergency?", a: "A urinary blockage in males from an adrenal-related enlarged prostate, a sudden collapse or seizure from insulinoma, and a GI blockage from swallowed rubber or foam are all genuine emergencies that need immediate veterinary care, not a wait-and-see approach." },
+      { q: "Is adrenal disease curable in ferrets?", a: "It's treatable and often manageable long-term, but not always fully curable, especially if both adrenal glands are affected or if surgery isn't a safe option. Many ferrets live comfortably for years with appropriate medical management even without a full cure." },
     ],
   },
   {

@@ -8,7 +8,7 @@ export const smallMammalEncyclopedia = [
       habitat: "Rocky, arid Andean mountains at high altitude",
       adultSize: "9-15 inches (23-38 cm); 1-2 lbs",
       wildDiet: "Grasses, seeds, leaves, bark, and insects",
-      wildLifespan: "10-20 years",
+      wildLifespan: "Not documented (the widely quoted 10-20 years is a captive range; wild longevity for this species has not been studied)",
       conservation: "Critically Endangered (IUCN)",
       history: "Around 1900 Chile was shipping an estimated 500,000 chinchilla skins a year, a rate that stripped the mountains within a generation. Breeders had begun keeping the animals in captivity at the end of the nineteenth century, and commercial ranching started in 1920, which is when the supply shifted from hunters to farms. It grew quickly: by 1946 Life magazine reported roughly 200,000 chinchillas being raised on farms across the United States. The pet is a byproduct of that industry, since ranch-raised animals were the only chinchillas anyone could obtain.",
     },

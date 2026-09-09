@@ -1745,3 +1745,63 @@ Set grade: B. The deep dives are unusually honest, especially enrichment and leg
 The critical finding: the old hub's FAQ said docile New World species "tolerate calm, gentle handling," directly contradicting the handling guide ("probably the wrong choice") and the enrichment guide ("do not handle"). Everything else flagged (enclosure floor space, substrate depth, temperature, feeding intervals, mites, annual cost, lifespan) was the hub restating deep-dive numbers with different figures. Tank setup's Diet section duplicates the feeding guide closely enough to be a liability, stating "adults typically eat every 1 to 2 weeks" as flat fact where feeding guide gives an honest species-dependent range.
 
 Not covered anywhere: how to confirm a female before buying; what to do if the spider escapes during cleaning; substrate-change schedule; how to choose a seller; sling-specific housing.
+
+## Corn snake (2026-09-08, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages, about 107k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B+. Deep, well-sourced, occasionally contradicts itself on basic numbers.
+
+Real conflicts found: adult feeding frequency given three ways (old hub "every 10 to 14 days," tank setup "every 10 to 21 days," feeding guide "every 14 to 21 days" for adults); humidity given three numbers (old hub/tank setup 40-60%, tank setup's other branch 65-75%, vs-hognose comparison table "40-50%"); adult size drifting across pages (old hub "4 to 5 feet," encyclopedia "3.5-5 feet," vs-hognose table "3-5 ft"); warm-side digestion temperature close but not identical between tank setup (85-88°F) and feeding guide (82-85°F, left as is, within tank setup's own stated acceptable range).
+
+Not covered anywhere: how to verify an enclosure is actually escape-proof (gap sizes, latch hardware, a test method); how to select a healthy corn snake at the point of purchase; Pennsylvania's legal status, left explicitly unresolved by the legal guide itself.
+
+## Boa constrictor (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, nine pages, about 95k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B+. Deep, honest, and mostly consistent, undercut by the hub's internal humidity contradiction and an undefined sub-adult life stage.
+
+Real conflicts found: the old hub's own body text ("Humidity should be maintained at 50 to 70%") disagreed with its own FAQ ("Boa constrictors require 60 to 80% ambient humidity"), and neither matched the tank setup guide's sourced 60 to 70%; the old hub's temperatures (warm side 80-84°F, cool side 76-80°F) drifted slightly from tank setup's 80-85°F and 75-80°F. The feeding guide's own FAQ softened the 48-hour post-feeding handling wait, stated precisely everywhere else, to a vague "at least a few days."
+
+Not covered anywhere: what to do about a healthy adult boa refusing food for an extended stretch; how to actually build a bioactive substrate setup, mentioned as an option but never explained; care specifics for the roughly 1-to-3-year sub-adult stage the old hub named but never defined; UVB bulb type, wattage, or placement beyond "recommended."
+
+## African grey (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages, about 106k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B+. Deep, well-sourced content undercut by unreconciled numbers between the hub/encyclopedia and the deep dives.
+
+Real conflicts found: pellet percentage (old hub 60-70%, feeding guide's VCA-cited 75-80%, and the feeding guide's own "20 to 40%" produce figure was actually VCA's seed-inclusion figure misattributed to fruits and vegetables, whose real produce split is 20-25% veg, 10% or less fruit); cage upgrade size (old hub "48x36x60 or larger," tank setup's real veterinary figure "closer to 40 by 30 by 60"); bar spacing (old hub "3/4 to 1 inch," tank setup's real "no more than 1 inch," dropping the floor); a CITES vote date error in the legal guide itself against its own cited USFWS press release (guide said October 2, 2016, the source and the encyclopedia both say October 3, 2016, verified by opening the source directly).
+
+Not covered anywhere: exact daily feeding portions in cups or grams for pellets and vegetables; what a baseline avian vet exam/workup should include beyond bloodwork and PBFD testing.
+
+## Chinchilla (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, eleven pages, about 100k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B+. Deep, well-sourced, occasionally sloppy about keeping its own numbers straight.
+
+Real conflicts found: wheel size (old hub "12-14 in," housing guide's real "15 inches or larger," matching the cost guide's own line item); cage height (old hub "24x24x48," housing guide's real "24 by 24 by 36"); fur density, same site two numbers (old hub funFact "up to 60 hairs per follicle, humans have only 1," encyclopedia and the vs-guinea-pig guide's own FunFact both say "up to 80 hairs per follicle, versus 2 to 3 for humans," confirmed the encyclopedia's number is the one two independent site sources agree on); ideal room temperature stated three ways (old hub "60-72°F," housing guide's real "50-68°F" plus the 150 rule, feeding guide's own aside "60-70°F, above 75°F risky"). A wildLifespan field error found independent of the deep dives: the encyclopedia's `wildLifespan: "10-20 years"` is actually the captive range (confirmed against Merck Veterinary Manual, which gives "up to 20 years" for captivity and no wild figure at all), corrected to the site's established "not documented in the wild" phrasing used for other species with the same gap (crested gecko, leopard gecko).
+
+Not covered anywhere: where to find and vet a reputable breeder or rescue; how to safely introduce two chinchillas to each other; the correct minimum cage dimensions (resolved by the router rebuild).
+
+## Ferret (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages, about 92k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: A-. Deep, specific, appropriately urgent about emergencies, let down by two unreconciled numeric conflicts.
+
+Real conflicts found: cage size (old hub "3x2x2 ft," i.e. 36x24x24 inches, cage setup guide's real "30 long by 24 wide by 48 tall" for a pair); lifespan (old hub "6 to 10 years," cost guide's real, explicitly-researched "5 to 9 years on average for US pet ferrets today," which argues the older 10-15 year figure no longer reflects the population). A genuine cross-guide factual contradiction, not just a hub issue: the health issues guide cites a real 2000 peer-reviewed study (Schoemaker et al., PubMed 10649752) showing ferrets neutered late still developed adrenal disease at the same rate, arguing neutering itself (not the specific age) plus light exposure and genetics drives the disease; the adrenal disease guide's own FunFact claimed the opposite, that countries with later neuter ages show meaningfully lower rates, calling it "one of the stronger pieces of evidence supporting the early-neuter theory," with no source cited anywhere in that article. Corrected the adrenal disease guide's body, FunFact, and FAQ to match the peer-reviewed position.
+
+Not covered anywhere: lymphoma, named as one of the three major ferret diseases but never explained on any page or shared guide; the actual litter-training method (a litter box is specified, training it is not); a canine distemper vaccine dosing schedule for kits; what descenting actually involves.

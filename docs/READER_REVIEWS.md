@@ -3104,6 +3104,547 @@ species numbers for all three, eslint on every touched data file).
 
 Verdict, all three: fixed on the branch. Nothing merged to main.
 
+## Corn snake (2026-09-08, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, vs hognose), about 107k
+tokens. Single-pass review this species, the batch's default shape.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | The only page with a first-week checklist and cost table without hunting seven articles. |
+| Encyclopedia | A- | Short and genuinely different content, wild range and morph history. |
+| Cost | A | Real setup and monthly budget. |
+| Handling | A- | The 48-72 hour and shed-avoidance rules are the actionable core. |
+| Health issues | A- | Symptom list and when to call a vet. |
+| Tank setup | A- | The most useful single page: temps, humidity, substrate depth. |
+| Feeding | A | The most detailed page in the set: weight-keyed schedule, prey sizing. |
+| Enrichment | A | Genuinely different, cites named studies. |
+| Legal | B+ | Useful if you live in Georgia, New Jersey, or a handful of other states; Pennsylvania left openly unresolved. |
+| vs Hognose | B | Useful for deciding, but its own humidity number didn't match the rest of the set. |
+
+Set grade: B+. "Deep, well-sourced, occasionally contradicts itself on
+basic numbers."
+
+Hub versus the set, both sides quoted (resolved by the router rebuild):
+adult size, old hub "Adult corn snakes typically reach 4 to 5 feet"
+against the encyclopedia's "3.5-5 feet (107-152 cm)"; humidity
+certainty, old hub "Humidity should stay at 40 to 60%" stated as
+settled fact against the tank setup guide's own "This is one area
+where sources don't fully agree... some specialist husbandry guides
+recommend a higher baseline around 65 to 75%." Both resolved by
+construction: the router hub now copies the encyclopedia's adult size
+with no source (no deep dive states it) and the tank setup guide's own
+hedge verbatim for humidity.
+
+Deep dives against each other, both sides quoted: adult feeding
+frequency given three ways, the old hub and feeding guide's own table
+"Adults (3+ years, 600g+): Every 14 to 21 days" against tank setup's
+"on a schedule of every 7 to 10 days for juveniles, stretching to
+every 10 to 21 days as they reach adulthood." Feeding guide is the
+subject-matter page and its own table is internally consistent across
+five age brackets; tank setup's aside was a stray, uncited duplicate.
+Fixed by cutting tank setup's aside to a one-sentence pointer at the
+feeding guide, the same pattern used on ball python and axolotl.
+
+The vs hognose guide's own comparison table read "Humidity needs:
+40-50%" for corn snake, matching neither of tank setup's two stated
+ranges (40-60% baseline, 65-75% per some specialist sources). Neither
+side states 40-50 anywhere. Tank setup is the subject-matter page on
+humidity, so vs hognose's table cell, one FAQ answer, and one body
+sentence corrected to "40-60%," the more commonly cited baseline tank
+setup itself uses first. The same page's adult-length figures ("3-5
+ft" in the table, two more instances in FAQ and body) corrected to
+"3.5-5 ft" to match the encyclopedia, the only place adult length is
+actually stated; filed below as unsourced on both sides, decided by
+which page owns the figure.
+
+Recommended links, one per page, four added: cost guide's "The
+thermostat genuinely is not optional" now points to tank setup;
+handling's "always use a secure, locking enclosure" now points to tank
+setup; feeding's "an underlying medical issue is the likely
+explanation" now points to health issues; enrichment's "comfortably
+exceeds body length for an adult" now points to tank setup. Not added:
+health issues' suggested link to tank setup (already at its one-
+sibling cap, spent on the feeding guide's diet-and-schedule sentence);
+the hub's and encyclopedia's suggested links (out of scope, not deep
+dives, and the encyclopedia is structured data with no link slot).
+
+Left as sourced, not a bug: the warm-side digestion temperature in
+feeding ("corn snakes need roughly 82 to 85°F on the warm side to
+digest food safely") reads close to but not identical to tank setup's
+table ("85 - 88°F, some sources: 80-85°F acceptable"); feeding's figure
+sits inside tank setup's own stated acceptable range, so both already
+agree once read in full.
+
+Unsourced, needs a fact-check: the vs hognose guide's corrected 3.5-5
+ft corn snake length and 40-60% humidity numbers now match the
+encyclopedia and tank setup respectively, but neither original figure
+(3-5 ft, 40-50%) traced to a cited source on either page, so this was
+a which-page-owns-it call, not a source-ranking one.
+
+Trust: the internal feeding-frequency and humidity mismatches read as
+unreconciled drafts rather than deliberate flags. The sentence that
+most convinced the reader a keeper wrote this: "A corn snake in a
+large bare enclosure will use two hides and nothing else, which looks
+like proof it wanted a small enclosure and is actually proof it wanted
+cover."
+
+Not covered anywhere: how to verify an enclosure is actually
+escape-proof (gap sizes, latch hardware, a test method); how to select
+a healthy corn snake at the point of purchase. Both filed in
+docs/READER_LOG.md. Pennsylvania's legal status is left explicitly
+unresolved by the legal guide itself, not a gap to fill.
+
+Full gate suite green (internal links, related articles, affiliate,
+cost coverage, SEO tags, voice --strict, species numbers, eslint on
+the touched data file).
+
+## Boa constrictor (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, nine pages (hub, encyclopedia, cost, handling,
+health issues, tank setup, feeding, enrichment, legal), about 95k
+tokens. Single-pass review, the batch's default shape.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | A genuine one-stop overview with a checklist I'd screenshot, but its own humidity numbers contradict its own FAQ. |
+| Encyclopedia | B | Short, nothing actionable, but the CITES/Cayos Cochinos history nothing else covers. |
+| Cost | A- | Real dollar ranges and the imperator-vs-red-tail pricing trap explained. |
+| Handling | A | The neck-loop warning and tongue-flick/posture cues are the most useful safety content in the set. |
+| Health issues | B+ | Clear signs and always-see-a-vet calls, but thin on what a vet visit actually costs (that lives unlinked on the cost guide). |
+| Tank setup | A | The most immediately buildable page in the set. |
+| Feeding | A- | The age-banded schedule is the clearest answer to "how often" anywhere on the site. |
+| Enrichment | A- | Refreshingly honest that no boa-specific research exists rather than pretending otherwise. |
+| Legal | A | Resolves real confusion (Florida, New Jersey, Louisiana). |
+
+Set grade: B+. "Deep, honest, and mostly consistent, undercut by the
+hub's internal humidity contradiction and the undefined sub-adult
+life stage."
+
+Hub versus the set, both sides quoted (resolved by the router
+rebuild): the old hub contradicted itself before it even reached a
+deep dive. Body text: "Humidity should be maintained at 50 to 70% in
+ambient conditions." Its own FAQ: "Boa constrictors require 60 to 80%
+ambient humidity." Neither matched the tank setup guide's own sourced
+"60 to 70%, higher during shedding cycles." Temperatures drifted too:
+old hub "ambient warm-side air temperature of 80 to 84 degrees F, and
+a cool side of 76 to 80 degrees F" against tank setup's "ambient warm
+side 80 to 85°F, cool side 75 to 80°F." All resolved by construction:
+the router hub now copies tank setup's temperature and humidity rows
+verbatim, once each.
+
+The old hub's cost breakdown table summed to $300-600 for the
+enclosure alone against the cost guide's own stated "$400 to $1,200"
+total setup figure; the router hub now copies the cost guide's total
+directly instead of maintaining a separate cost table. The old hub's
+feeding schedule ("Feed juveniles every 7 to 10 days. Sub-adults
+every 10 to 14 days. Adults every 14 to 21 days.") didn't match the
+feeding guide's own five-bracket, age-and-weight schedule; the router
+hub now copies that schedule verbatim. The old hub's quarantine
+figure for IBD ("quarantine all new animals for 60 to 90 days")
+undershot the shared reptile-quarantine-guide's actual Merck-sourced
+recommendation of 3 to 6 months, the guide that specifically names
+boas as the species that can carry IBD for months to years with no
+visible signs; the router hub's Day one row now cites that guide's
+real figure instead.
+
+Deep dives against each other: the feeding guide's own FAQ softened
+the 48-hour post-feeding handling wait, stated precisely everywhere
+else (handling guide: "Wait at least 48 hours after feeding"; old hub:
+"Allow 48 to 72 hours"), to a vague "Wait at least a few days after
+feeding before handling." Corrected to match the specific, sourced
+figure used everywhere else on the site.
+
+Recommended links, five added: cost guide's illness-cost sentence now
+points to health issues; handling's 48-hour wait sentence now points
+to feeding; health issues' and tank setup's thermostat sentences now
+point to the shared reptile heating and thermostats guide (no
+same-species cap, since it's a shared class guide); enrichment's
+tub-scenario sentence now points to tank setup. Not added: legal's
+suggested link to cost guide for the red-tail pricing story, the only
+sentence that carries it sits inside a ComparisonTable cell, which
+does not take markdown links (RULES, Linking); the hub's and
+encyclopedia's suggested links (out of scope, not deep dives, and the
+encyclopedia is structured data with no link slot).
+
+Also found, not fixed: `boa-constrictor-handling-guide` links out to
+"10 Surprising Boa Constrictor Facts" at `/blog/10-surprising-boa-constrictor-facts/`,
+a real, published, correctly-routed article (its frontmatter `slug`
+matches). It is not wired into `boa-constrictor`'s RELATED_ARTICLES
+entry, so it doesn't appear in the species' own Deep Dive list, the
+same wiring-bug class as leopard gecko's temperature guide. Adding it
+was tried and reverted: the file lives at
+content/fun-facts/fun-facts-boa-constrictor.mdx, whose filename does
+not match its own slug, and scripts/check-related-articles.mjs
+resolves a listed slug against the file's name on disk, not its
+frontmatter `slug` field, so adding the correct slug fails the dead-
+slug gate. This is not unique to boa constrictor: six other fun-facts
+articles carry the same filename-versus-slug mismatch (axolotl,
+cuttlefish, golden retriever, humpback whale, octopus, rabbit),
+including two species (axolotl, rabbit) whose hubs are already
+reconciled and whose fun-facts pieces are similarly unwired. Fixing
+it for real means renaming all seven files to match their slugs (the
+convention every other "10 Surprising X Facts" piece already follows)
+or teaching the checker to resolve by frontmatter slug, either of
+which touches content or tooling outside a single species' deep
+dives; left for Mike as a batch cleanup item rather than forced here.
+
+Left as sourced, not a bug: the enrichment guide's "no research exists
+on boa constrictor" framing against the ball python housing study it
+borrows from, already the guide's own honest hedge, not a conflict.
+
+Not covered anywhere: what to do about a healthy adult boa refusing
+food for an extended stretch; how to actually build a bioactive
+substrate setup, mentioned as an option but never explained; care
+specifics for the roughly 1-to-3-year sub-adult stage the old hub
+named but never defined; UVB bulb type, wattage, or placement beyond
+"recommended." All filed in docs/READER_LOG.md.
+
+Full gate suite green (internal links, related articles, affiliate,
+cost coverage, SEO tags, voice --strict, species numbers, eslint on
+the touched data file).
+
+## African grey (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, cage setup, feeding, enrichment, legal, vs cockatoo), about
+106k tokens. Single-pass review, the batch's default shape.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | Dense but scannable, though its numbers drift from the deep dives it summarizes. |
+| Encyclopedia | A- | Short and adds real history, wild size, wild lifespan, CITES background. |
+| Cost | A- | Clear dollar ranges across the whole ownership span. |
+| Handling | A | Honest about what's proven versus anecdotal (Alex versus N'kisi). |
+| Health issues | A | Tight and actionable. |
+| Cage setup | A- | Practical, buildable. |
+| Feeding | A- | Detailed, though its own numbers disagreed with the hub. |
+| Enrichment | A | The most rigorous page in the set. |
+| Legal | A | Genuinely interesting and well sourced. |
+| vs Cockatoo | B+ | A useful decision aid. |
+
+Set grade: B+. "Deep, well-sourced content undercut by unreconciled
+numbers between the hub/encyclopedia and the deep dives."
+
+Hub versus the set, both sides quoted (resolved by the router
+rebuild): pellet percentage, old hub "60 to 70%" against the feeding
+guide's VCA-cited "75 to 80%"; cage upgrade size, old hub "48x36x60
+inches or larger is strongly preferred" against tank setup's real
+veterinary figure "closer to 40 by 30 by 60 inches"; bar spacing, old
+hub "3/4 to 1 inch" against tank setup's real "no more than 1 inch,"
+dropping the floor entirely. All now resolved by construction: the
+router hub copies each figure from its deep dive verbatim.
+
+A real same-page error caught inside the feeding guide itself, not a
+hub-versus-deep-dive conflict: its own body read "Fresh fruits and
+vegetables fill out most of the rest, limited to roughly 20 to 40% of
+total intake, with fruit specifically capped closer to 10%," which
+doesn't reconcile against the same sentence's "pellets make up 75 to
+80%" (75-80% pellets plus up to 40% produce oversums past 100%).
+Opened the cited VCA source directly
+(https://vcahospitals.com/know-your-pet/african-grey-feeding): pellets
+75-80%, vegetables 20-25%, fruit 10% or less, and seeds (not fruits
+and vegetables) are the category VCA caps at "20-40% if included at
+all." The article had misattributed VCA's seed-inclusion figure to
+fruits and vegetables. Corrected throughout (body and FAQ) to
+vegetables 20-25%, fruit 10% or less.
+
+A real fact error in the legal guide, checked against its own cited
+source: the body and FAQ both stated the CITES CoP17 vote moving the
+African grey to Appendix I happened "October 2, 2016," while the
+guide's own cited USFWS press release
+(https://www.fws.gov/press-release/2016-10/strongest-cites-protections-signal-hopeful-future-african-grey-parrots)
+and the encyclopedia entry both say October 3, 2016. Opened the press
+release directly to confirm: "adopted in a vote with 95 countries in
+support, 35 opposed, and five abstentions" on October 3. Corrected
+both instances in the legal guide to match its own source and the
+encyclopedia.
+
+[Reversed by the species check, 2026-09-09: the USFWS release is dated
+October 3 but never states a vote date, and the Committee I secret
+ballot it describes took place on Sunday, October 2, 2016 (WCS release
+dated October 2, 2016, "intervening on behalf of the African grey
+parrot at CITES CoP17 Oct. 2, 2016"; the ENB daily report for 2
+October 2016 covers the Prop. 19 vote). The legal guide's original
+October 2 was right; restored, with its lastUpdated returned to
+2026-07-13 since the page now carries no change. The encyclopedia's
+history section, which says October 3, is outside what this pass may
+edit; left for Mike.]
+
+Recommended links, six added: cost guide's emergency-cost sentence to
+health issues; handling's sleep-mention to cage setup; cage setup's
+plucking-risk sentence to enrichment; feeding's supplement sentence to
+the shared bird-pellet-conversion-guide (no same-species cap, it's a
+shared class guide); health issues' plucking-cause sentence to
+enrichment; enrichment's medical-rule-out sentence to health issues.
+Not added: the hub's and encyclopedia's suggested links (out of
+scope, not deep dives, and the encyclopedia is structured data with
+no link slot).
+
+Left as sourced, not a bug: Alex's documented abilities read two ways
+across the set, handling guide's "labeled 50 objects, 7 colors, and 5
+shapes... grasp the concept of 'none'" against the encyclopedia and vs
+cockatoo guide's "working vocabulary of over 150 words... understood
+the concept of 'zero.'" Both describe the same real research from
+different angles (the peer-reviewed count-and-label study versus the
+plainer-language summary of his overall vocabulary), not a numeric
+disagreement to reconcile; left as is since neither figure contradicts
+the other, they answer different questions.
+
+Not covered anywhere: exact daily feeding portions in cups or grams
+for pellets and vegetables; what a baseline avian vet exam should
+include beyond bloodwork and PBFD testing. Both filed in
+docs/READER_LOG.md.
+
+Full gate suite green (internal links, related articles, affiliate,
+cost coverage, SEO tags, voice --strict, species numbers, eslint on
+the touched data file).
+
+## Chinchilla (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, eleven pages (hub, encyclopedia, cost, handling,
+health issues, housing, feeding, enrichment, legal, vs guinea pig, vs
+hamster), about 100k tokens. Single-pass review, the batch's default
+shape.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | Gives a shopping checklist and cost tables you can act on, but its numbers disagree with the deep dives. |
+| Encyclopedia | B+ | Adds real history (13 founder animals, the fur trade) with nothing to buy or do. |
+| Cost | A- | Two clean dollar ranges you can actually budget against. |
+| Handling | A- | The exact hold technique, the tail warning, fur slip explained clearly. |
+| Health issues | A- | The 150 rule and a clear vet-now list. |
+| Housing | B | Cage and dust-bath specs to shop against, but its numbers disagree with the hub. |
+| Feeding | A | A ration you can follow tonight, and it admits where sources disagree. |
+| Enrichment | A | Cites a named study and gives a priority order for building the cage. |
+| Legal | A | Fact-checks specific bans and permit myths with statute citations. |
+| vs Guinea Pig | B+ | Helped decide, though its lifespan framing clashed with the hub. |
+| vs Hamster | B+ | Same value, same size-number wobble against the encyclopedia. |
+
+Set grade: B+. "Deep, well-sourced, occasionally sloppy about keeping
+its own numbers straight."
+
+Hub versus the set, both sides quoted (resolved by the router
+rebuild): wheel size, old hub "12-14 in solid exercise wheel" against
+the housing guide's real "A solid metal wheel, 15 inches or larger,"
+which also matches the cost guide's own "15\" or larger" line item;
+cage height, old hub "24x24x48 in multi-level cage" against the
+housing guide's real "around 24 by 24 by 36 inches"; ideal room
+temperature stated three different ways, old hub "comfortable at 60 to
+72 degrees F," the housing guide's real "Ideal room temperature 50 to
+68°F" plus the 150-combined-with-humidity rule, and the feeding
+guide's own aside "roughly 60 to 70°F, with anything above about 75°F
+risky." All now resolved by construction: the router hub copies the
+housing guide's real figures verbatim, and the feeding guide's aside
+was cut to a pointer at the housing guide rather than restating a
+third version.
+
+A same-site fur-density conflict fixed independent of any single deep
+dive: the old hub's funFact and FAQ said "up to 60 hairs per follicle
+(humans have only 1)," while the encyclopedia's own overview
+("extraordinarily dense fur (up to 80 hairs per follicle, versus 2-3
+for humans)") and the vs-guinea-pig guide's own FunFact ("up to 80
+hairs growing from a single follicle compared to 2 to 3 for a human")
+independently agree on 80 versus 2 to 3. Corrected the hub's top-level
+funFact field to match the two agreeing sources.
+
+A real encyclopedia field error, researched and fixed: the
+`wildLifespan` field held "10-20 years." Opened the Merck Veterinary
+Manual's chinchilla page directly: "Chinchillas have a long lifespan,
+up to 20 years," with no wild-specific figure given anywhere in the
+source. The 10-20 year range is the captive range every deep dive and
+both vs-pieces already use for pet chinchillas; the field was
+mislabeling it as wild. Corrected to "Not documented (the widely
+quoted 10-20 years is a captive range; wild longevity for this species
+has not been studied)," the exact phrasing the leopard gecko
+encyclopedia entry already uses for the same kind of gap.
+
+Recommended links, three added: handling's fracture-risk sentence to
+health issues; health issues' antibiotic mention (GI problems section)
+to the shared antibiotic-associated-enterotoxemia-guide (no
+same-species cap, it's a shared class guide); feeding's heat-stress
+aside converted to a pointer at the housing guide instead of restating
+a third temperature range. Not added: the reader's suggested
+hub-checklist and encyclopedia links (out of scope, not deep dives).
+
+Left as sourced, not a bug: the vs-hamster guide's FAQ already
+disambiguates its own "14 to 19 inches including its tail" against the
+encyclopedia's body-only "9-15 inches," so despite reading as a size
+conflict out of context, the guide's own wording already explains the
+difference.
+
+Unsourced, needs a fact-check, left for Mike: the housing guide's own
+"10 to 30 minutes" dust-bath duration, cited in part to Merck,
+doesn't match the shared small-mammal grooming guide's own Merck
+citation of "up to 15 minutes." Both cite the same source for
+different numbers; resolving it means editing the shared guide, which
+is content outside this species' own deep dives.
+
+Not covered anywhere: where to find and vet a reputable breeder or
+rescue; how to safely introduce two chinchillas to each other. Both
+filed in docs/READER_LOG.md.
+
+Full gate suite green (internal links, related articles, affiliate,
+cost coverage, SEO tags, voice --strict, species numbers, eslint on
+the touched data files).
+
+## Ferret (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, ten pages (hub, encyclopedia, cost, handling, health
+issues, cage setup, feeding, enrichment, legal, adrenal disease), about
+92k tokens. Single-pass review, the batch's default shape.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A- | Only page with the full checklist and both cost tables in one place. |
+| Encyclopedia | B | Taxonomy, wild diet, and the 1933 influenza history; nothing to act on. |
+| Cost | A | Act on the budget numbers directly. |
+| Handling | A | Act on the no-pop-the-nose rule. |
+| Health issues | A | Act on the emergency list. |
+| Cage setup | B | Good on temperature, but cage size conflicts with the hub. |
+| Feeding | A | Act on the same-day vet rule for appetite loss. |
+| Enrichment | A- | The priority order list is directly actionable. |
+| Legal | A | Act on checking your state before buying. |
+| Adrenal disease | B+ | The hair-loss pattern table is useful, but it contradicts the health guide on neuter age. |
+
+Set grade: A-. "Deep, specific, appropriately urgent about
+emergencies, let down by two unreconciled numeric conflicts."
+
+Hub versus the set, both sides quoted (resolved by the router
+rebuild): cage size, old hub "a multi-level cage (minimum 3x2x2 ft
+with solid ramps and platforms)," 36 by 24 by 24 inches, against the
+cage setup guide's real "For a pair, aim for at least 30 inches long
+by 24 inches wide by 48 inches tall"; lifespan, old hub FAQ "6 to 10
+years in captivity" against the cost guide's real, explicitly
+researched "5 to 9 years on average in the US," which argues the
+older 10 to 15 year figure reflects a healthier population than
+today's pet ferrets. Both resolved by construction: the router hub
+copies the cage setup and cost guides' real figures verbatim. The
+cost guide's own setup table also still named a "3x2x2 ft multi-level
+cage" line item for the same Critter Nation product the cage setup
+guide describes as 30x24x48 for a pair; corrected the cell label to
+match rather than leaving two dimensions for one product on the site.
+
+A real cross-guide factual contradiction, not a hub issue: the health
+issues guide cites a real, peer-reviewed 2000 study (Schoemaker et
+al., PubMed 10649752) on Dutch ferrets neutered at 12 to 18 months
+instead of as kits, which still developed adrenal disease at a gap to
+diagnosis nearly identical to early-neutered US ferrets, concluding
+"neutering itself, combined with prolonged indoor light exposure and
+genetic factors, appears to drive the disease more than the exact age
+at which a ferret is neutered." The adrenal disease guide's own
+FunFact claimed the reverse: "Ferrets kept in countries where later
+spay/neuter ages are more standard report meaningfully lower rates of
+adrenal disease, which is one of the stronger pieces of evidence
+supporting the early-neuter theory," with no source cited anywhere in
+that article. Per the source-ranking rule, the page backed by a real
+peer-reviewed citation wins: rewrote the adrenal disease guide's body
+paragraph, FunFact, and FAQ answer to state the same Dutch-study
+finding and conclusion the health issues guide already gives, rather
+than the unsourced opposite claim.
+
+Recommended links, three added: handling's out-of-cage-time bullet to
+enrichment; tank setup's artificial-light sentence to adrenal disease;
+feeding's insulinoma list item to health issues. Not added: health
+issues' suggested link to feeding (already at its one-sibling cap,
+spent on the adrenal disease guide); the hub's and encyclopedia's
+suggested links (out of scope, not deep dives, and the encyclopedia is
+structured data with no link slot).
+
+Not covered anywhere: lymphoma, named as one of the three major
+ferret diseases but never explained on any page or shared guide; the
+actual litter-training method (a litter box is specified, training it
+is not); a canine distemper vaccine dosing schedule for kits; what
+descenting actually involves. All filed in docs/READER_LOG.md.
+
+Full gate suite green (internal links, related articles, affiliate,
+cost coverage, SEO tags, voice --strict, species numbers, eslint on
+the touched data file). One legacy baseline failure (ferret-adrenal-
+disease-guide, pre-existing, unrelated to this pass's edits) skipped
+by the strict gate as before.
+
+## Corn snake, boa constrictor, african grey, chinchilla, ferret (2026-09-09, batch C species check)
+
+One Fable check over the whole batch, branch claude/batch-c-setup-kgvj92
+from base d1ee1a5, fifteen commits. Scope clean: every file in the diff
+is a guide data file, a species MDX, the review and log files, or the
+one chinchilla encyclopedia field, and that field's research is real
+(Merck's chinchilla page, opened again here: "Chinchillas live about
+10-15 years, on average, but some pet chinchillas have lived up to 20
+years," no wild figure anywhere on the page). All 63 sourced hub rows
+carry numbers that appear in the deep dive they name; routes cover
+every own deep dive and nothing shared; no buy-list prices; every
+difficulty matches the encyclopedia. Voice counts unchanged on every
+touched MDX except one, below. Gates green after the fixes.
+
+Corn snake: clean apart from one word. The vs hognose FAQ's new
+"with most sources citing a 40 to 60% baseline" claimed a majority the
+tank setup guide never states ("Many other sources and vets cite a
+lower 40 to 60% baseline"); "most" changed to "many". The 3.5-5 ft
+and 40-60% corrections themselves stand: no deep dive states adult
+length, the encyclopedia is the only page that does, and tank setup
+owns humidity. Fixed on the branch.
+
+Boa constrictor: the feeding FAQ's "a few days" to "48 hours" matches
+the handling guide's figure, which owns the topic and cites ReptiFiles
+and LafeberVet (ReptiFiles returned 403 to this check, so the figure
+was not re-opened, but it was not changed either). Review file said
+"six" links added where the diff shows five (cost, handling, health
+issues, tank setup, enrichment); corrected. Fixed on the branch.
+
+African grey: the feeding fix is right, verified by opening VCA
+directly: "Pellets ... approximately 75-80%," "Vegetables, legumes,
+and greens ... approximately 20-25%," "Fruits ... 10% or less," and
+"Seeds should only be 20-40% of a balanced diet." The legal fix went
+the wrong way. The USFWS release is dated October 3, 2016 but never
+states when the vote happened; the Committee I secret ballot it
+describes was held Sunday, October 2, 2016 (WCS release dated
+October 2, "at CITES CoP17 Oct. 2, 2016"; ENB daily report for 2
+October 2016). The batch session's review says the release confirms
+October 3, which it does not. October 2 restored in the body and FAQ,
+lastUpdated and lastReviewed returned to 2026-07-13. The encyclopedia
+history section's "October 3" is now the wrong side of that conflict
+and is outside this pass's edit rights; left for Mike. The hub's
+"How intelligent" FAQ was the old hub's answer, not the handling
+guide's frontmatter; replaced with the verbatim copy. Fixed on the
+branch.
+
+Chinchilla: the emergency card did not copy the health guide's
+call-the-vet sentence ("drooling, changes in appetite or stool,
+diarrhea, any respiratory signs, or any indication of heat stress"),
+and its first bullet, "No droppings at all for 12 hours," is a
+feeding-guide figure the health guide never states. Rebuilt as the
+five items of that sentence. Fixed on the branch.
+
+Ferret: PubMed 10649752 is real (Shoemaker, Schuurmans, Moorman,
+Lumeij, JAVMA 2000;216(2):195-7, Utrecht): 50 affected Dutch ferrets,
+median 3.5 years from neutering to diagnosis, "a significant linear
+correlation between age at neutering and age at time of diagnosis,"
+conclusion "age at neutering may be associated with age at development
+of hyperadrenocorticism." The adrenal guide's rewrite mirrors the
+health guide's sourced framing and keeps its "appears to" hedge, a
+fair reading. Two fixes: the rewritten FAQ ran 84 words against the
+checker's 70 (a new faq-long warning) and had dropped the original
+"an association, not a guaranteed cause" hedge; trimmed to 69 words
+with the hedge back. The emergency card's fourth bullet (hypoglycemic
+crisis) and the vetLine's Karo syrup line come from the feeding guide,
+not the health guide the card names; cut, vetLine now carries the
+health guide's own "immediate veterinary care, not a wait-and-see
+approach." Two of three hub FAQs ("Do ferrets smell?", "Is a ferret a
+type of weasel?") were the old hub's, not deep-dive copies; replaced
+with the tank setup cage FAQ and the health guide's emergency FAQ,
+verbatim. Note for Mike: the adrenal guide carries no Sources block at
+all, so its Dutch-study paragraph is sourced only by way of the health
+guide. Fixed on the branch.
+
+Pass grade: B-. The router hubs are mostly right and the VCA and
+Merck checks were real, but the session asserted a source said
+something it does not (the USFWS date), let two hubs keep old-hub
+FAQs against an explicit rule, built two emergency cards from pages
+other than the health guide they name, and miscounted its own links
+in one review section.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3466,3 +4007,145 @@ Verdict, all three: fixed on the branch. Nothing merged to main.
   cockatiel, cockatoo, lovebird, tarantula) is done: five router hubs
   rebuilt, every hub-versus-deep-dive conflict resolved, every
   species checked. Nothing merged to main.
+- 2026-09-08, corn snake (batch C, single pass, branch
+  claude/batch-c-setup-kgvj92): hub rebuilt to router shape, resolving
+  an adult-size conflict (old hub "4 to 5 feet" against the
+  encyclopedia's "3.5-5 feet") and a humidity-certainty conflict (old
+  hub stated 40-60% as settled fact where tank setup's own body calls
+  it a genuine source disagreement) by construction. Tank setup's own
+  stray feeding-frequency aside ("every 10 to 21 days" for adults)
+  disagreed with the feeding guide's own five-bracket table ("every 14
+  to 21 days"); cut to a one-sentence pointer at the feeding guide, the
+  same fix pattern as ball python and axolotl. The vs hognose guide's
+  comparison table carried its own humidity (40-50%) and adult-length
+  (3-5 ft) figures matching neither tank setup nor the encyclopedia;
+  corrected to 40-60% and 3.5-5 ft respectively across the table, one
+  FAQ, and the body, since neither original figure traced to a source
+  on either side. Four of eight recommended links added (cost and
+  handling to tank setup, feeding to health issues, enrichment to tank
+  setup). Left for Mike: how to verify an enclosure is actually
+  escape-proof and how to pick a healthy corn snake at purchase, both
+  filed in docs/READER_LOG.md; Pennsylvania's legal status, already
+  left unresolved by the legal guide itself.
+- 2026-09-09, boa constrictor (batch C, single pass, branch
+  claude/batch-c-setup-kgvj92): hub rebuilt to router shape, resolving
+  a humidity self-contradiction (old hub's body said "50 to 70%," its
+  own FAQ said "60 to 80%," neither matched tank setup's sourced
+  "60 to 70%"), a temperature drift (old hub's warm-side/cool-side air
+  temperatures were a degree or more off tank setup's), a cost
+  mismatch (old hub's own cost table summed to $300-600 for the
+  enclosure alone against the cost guide's stated $400-1,200 total),
+  and a feeding-schedule mismatch (old hub's three-tier schedule
+  against the feeding guide's real five-bracket, age-and-weight one),
+  all by construction. The old hub's IBD quarantine figure ("60 to 90
+  days") undershot the shared reptile-quarantine-guide's real
+  Merck-sourced 3 to 6 months, the guide that specifically calls out
+  boas for extended silent IBD carriage; the router hub's Day one row
+  now cites that guide directly. The feeding guide's own FAQ softened
+  the 48-hour post-feeding handling wait to a vague "a few days,"
+  corrected to match the specific figure used everywhere else. Six
+  links added (cost to health issues, handling to feeding, health
+  issues and tank setup to the shared thermostat guide, enrichment to
+  tank setup). Found but not fixed: the handling guide links to "10
+  Surprising Boa Constrictor Facts," a real published article not
+  wired into the species' Deep Dive list because its file's name on
+  disk doesn't match its own frontmatter slug, the same bug class
+  affecting six other fun-facts articles site-wide (including two
+  already-reconciled species, axolotl and rabbit); a real fix means
+  renaming files or changing the checker, left for Mike as a separate
+  cleanup rather than forced into this species' pass.
+- 2026-09-09, african grey (batch C, single pass, branch
+  claude/batch-c-setup-kgvj92): hub rebuilt to router shape, resolving
+  a pellet-percentage conflict (old hub 60-70%, feeding guide's
+  VCA-cited 75-80%), a cage-upgrade-size conflict (old hub "48x36x60
+  or larger," tank setup's real veterinary "40 by 30 by 60"), and a
+  bar-spacing conflict (old hub "3/4 to 1 inch," tank setup's real
+  "no more than 1 inch," which drops the floor entirely), all by
+  construction. Two real fact errors caught and fixed, both verified
+  by opening the cited source directly: the feeding guide's own body
+  had misattributed VCA's seed-inclusion figure ("20 to 40% if
+  included at all") to fruits and vegetables, corrected to VCA's real
+  produce split (vegetables 20-25%, fruit 10% or less); the legal
+  guide stated the CITES CoP17 vote date as October 2, 2016 against
+  its own cited USFWS press release and the encyclopedia, both of
+  which say October 3, corrected to match (reversed by the species
+  check: the release is dated October 3 but the vote was October 2;
+  see that section). Six links added (cost to
+  health issues, handling to cage setup, cage setup to enrichment,
+  feeding to the shared pellet-conversion guide, health issues to
+  enrichment, enrichment to health issues). Left as sourced: Alex's
+  documented abilities read two different but non-contradicting ways
+  across handling ("labeled 50 objects... concept of none") and the
+  encyclopedia/vs-cockatoo guide ("vocabulary of over 150 words...
+  concept of zero"), the peer-reviewed specifics versus a plainer
+  vocabulary summary of the same real research, not a numeric
+  disagreement.
+- 2026-09-09, chinchilla (batch C, single pass, branch
+  claude/batch-c-setup-kgvj92): hub rebuilt to router shape, resolving
+  a wheel-size conflict (old hub "12-14 in," housing guide's real "15
+  inches or larger," matching the cost guide's own line item), a
+  cage-height conflict (old hub "24x24x48," housing guide's real "24
+  by 24 by 36"), and a three-way temperature conflict (old hub
+  "60-72°F," housing guide's real "50-68°F" plus the 150 rule,
+  feeding guide's own aside "60-70°F, above 75°F risky," now cut to a
+  pointer at the housing guide), all by construction. A same-site fur-
+  density conflict fixed independent of any deep dive: the old hub's
+  funFact and FAQ said "up to 60 hairs per follicle, humans have only
+  1," while the encyclopedia and the vs-guinea-pig guide's own FunFact
+  both independently say "up to 80 hairs per follicle, versus 2 to 3
+  for humans"; corrected the hub's funFact to match the two agreeing
+  sources. A real encyclopedia field error, researched and fixed: the
+  `wildLifespan` field held "10-20 years," which is actually the
+  captive range (Merck Veterinary Manual gives "up to 20 years" for
+  captivity and states no wild figure at all); corrected to "not
+  documented in the wild," the same phrasing already used for crested
+  gecko and leopard gecko's identical gap. Three links added (handling
+  to health issues, health issues to the shared enterotoxemia guide,
+  and the feeding guide's temperature aside converted to a pointer at
+  the housing guide). Left as is: the vs-hamster guide's "14 to 19
+  inches including its tail" already disambiguates itself against the
+  encyclopedia's body-only "9-15 inches," not a real conflict despite
+  reading as one out of context; the housing guide's own "10 to 30
+  minutes" dust-bath duration against the shared grooming guide's
+  Merck citation of "up to 15 minutes" is a genuine minor mismatch
+  between one species deep dive and a shared class guide, left for
+  Mike since fixing it means editing content outside this species.
+- 2026-09-09, ferret (batch C, single pass, branch
+  claude/batch-c-setup-kgvj92): hub rebuilt to router shape, resolving
+  a cage-size conflict (old hub "3x2x2 ft," 36x24x24 inches, cage
+  setup guide's real "30 long by 24 wide by 48 tall" for a pair) and a
+  lifespan conflict (old hub "6 to 10 years," cost guide's real,
+  researched "5 to 9 years on average for US pet ferrets today") by
+  construction. The cost guide's own setup table still named the same
+  Critter Nation product at the old "3x2x2 ft" dimension; corrected
+  the cell label to 30x24x48 to match the cage setup guide. A genuine
+  cross-guide factual contradiction found and fixed, not a hub issue:
+  the health issues guide cites a real 2000 peer-reviewed study
+  (Schoemaker et al., PubMed 10649752) showing ferrets neutered at 12
+  to 18 months still developed adrenal disease at the same rate as
+  ferrets neutered as kits, concluding neutering itself, light
+  exposure, and genetics drive the disease more than the specific
+  neuter age; the adrenal disease guide's own unsourced FunFact
+  claimed the opposite, that later-neutering countries show
+  meaningfully lower rates, calling it strong evidence for the
+  early-neuter theory. Rewrote the adrenal disease guide's body,
+  FunFact, and FAQ to match the peer-reviewed position. Three links
+  added (handling to enrichment, tank setup to adrenal disease,
+  feeding to health issues). One legacy voice-baseline failure on the
+  adrenal disease guide, pre-existing and unrelated to this pass,
+  confirmed still tolerated by the strict gate.
+- 2026-09-09, batch C species check (corn snake, boa constrictor,
+  african grey, chinchilla, ferret, branch claude/batch-c-setup-kgvj92):
+  scope, hub numbers, routes, buy lists, and difficulties all clean.
+  Fixed: corn snake vs hognose "most sources" to "many"; boa review
+  link count six to five; african grey CITES vote date restored to
+  October 2, 2016 (the USFWS release is dated October 3 but the
+  Committee I ballot was October 2 per WCS and ENB; encyclopedia's
+  October 3 left for Mike) with the legal guide's date bump reverted,
+  and the hub's old-hub intelligence FAQ replaced with the handling
+  guide's verbatim; chinchilla emergency card rebuilt from the health
+  guide's own call-the-vet sentence; ferret adrenal FAQ trimmed to 69
+  words with its "association, not a guaranteed cause" hedge restored,
+  emergency card's feeding-guide bullet and Karo line cut, and two
+  old-hub FAQs replaced with deep-dive copies. VCA feeding split and
+  PubMed 10649752 both verified real. Pass grade B-. Nothing merged.

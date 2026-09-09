@@ -10,7 +10,7 @@ export const birdEncyclopedia = [
       wildDiet: "Seeds, nuts, fruits, and leafy vegetation",
       wildLifespan: "22.7 years on average in the wild (n=120); a mean of 45 years in captivity, up to 60",
       conservation: "Endangered (IUCN)",
-      history: "Legal exports moved this species out of Africa in extraordinary numbers: the US Fish and Wildlife Service counted more than 1.5 million wild greys taken from their habitats in the 25 years to 2016. Trapping and forest clearance erased the bird from much of its western range, leaving the largest populations confined to central Africa. On October 3, 2016, at the CITES conference in Johannesburg, delegates voted 95 to 35 with five abstentions to move Psittacus erithacus from Appendix II to Appendix I. The proposal was sponsored jointly by Angola, Chad, Gabon, Guinea, Nigeria, Senegal, Togo, the European Union and the United States. That listing ended commercial international trade in wild-caught birds outright.",
+      history: "Legal exports moved this species out of Africa in extraordinary numbers: the US Fish and Wildlife Service counted more than 1.5 million wild greys taken from their habitats in the 25 years to 2016. Trapping and forest clearance erased the bird from much of its western range, leaving the largest populations confined to central Africa. On October 2, 2016, at the CITES conference in Johannesburg, delegates voted 95 to 35 with five abstentions to move Psittacus erithacus from Appendix II to Appendix I. The proposal was sponsored jointly by Angola, Chad, Gabon, Guinea, Nigeria, Senegal, Togo, the European Union and the United States. That listing ended commercial international trade in wild-caught birds outright.",
     },
   },
   {

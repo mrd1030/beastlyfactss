@@ -185,12 +185,27 @@ catches the defects the commands produce. Per batch:
    execution, not just the content, so a sloppy pass gets flagged even
    when every individual fix looks fine. Every reader report and the
    closing Fable report now get shown to Mike in chat in full as soon
-   as they come back, not just filed and summarized at the end. Next:
-   batch C (corn snake, boa
-   constrictor, african grey, chinchilla, ferret), spanning reptiles,
-   birds, and small mammals since batch B stayed inside birds and one
-   invertebrate. Then the remaining species, then dogs and cats last.
-   Legacy hubs keep rendering the old care sheet until then. Rabbit
+   as they come back, not just filed and summarized at the end. Batch C
+   (corn snake, boa constrictor, african grey, chinchilla, ferret) done,
+   checked, and merged to main 2026-09-09 on branch
+   claude/batch-c-setup-kgvj92: five router hubs rebuilt, every
+   hub-versus-deep-dive conflict resolved (cage and wheel sizes, humidity
+   and temperature ranges, feeding schedules, a fur-density fact, a
+   mislabeled chinchilla wildLifespan field), one real cross-guide
+   contradiction found and fixed with a peer-reviewed source (ferret
+   adrenal disease vs. the health guide on neuter age), and the species
+   check caught a wrong CITES date correction (reverted to the
+   verified-correct October 2, 2016, both in the legal guide and the
+   encyclopedia) plus two hubs still carrying old FAQs instead of
+   verbatim deep-dive copies. Pass grade B-, all fixed on the branch
+   before merge. Next: batch D (green iguana, conure, rat, hermit crab,
+   box turtle), spanning lizards, birds, small mammals, invertebrates,
+   and turtles. None of the 63 remaining legacy species carry a
+   sellable care package (all 13 care-package species are already
+   reconciled across batches A to C plus the ad-hoc set), so batch D is
+   picked on popularity and class spread instead. Then the remaining
+   species, then dogs and cats last. Legacy hubs keep rendering the old
+   care sheet until then. Rabbit
    difficulty settled at Beginner/Intermediate on the
    site's legend and rabbit lifespan at 8 to 12 years indoors (House
    Rabbit Society, VCA, RSPCA), 2026-09-08. Open question Mike has not
@@ -383,11 +398,19 @@ redo), and the Fable check runs once, after all five species are
 pushed, not once per species. Also new: every reader report and the
 closing Fable check's report get shown to Mike in chat in full, as
 their own message, the moment they come back, not just filed into
-docs/READER_REVIEWS.md and summarized at the end. Next up is batch C
-(corn snake, boa constrictor, african grey, chinchilla, ferret),
+docs/READER_REVIEWS.md and summarized at the end. Batch C (corn snake,
+boa constrictor, african grey, chinchilla, ferret) done, checked, and
+merged to main 2026-09-09 on branch claude/batch-c-setup-kgvj92,
 spanning reptiles, birds, and small mammals rather than staying inside
-one class the way batch B did. Paste this with the next five species
-filled in when picking up the remaining care-package species.
+one class the way batch B did; pass grade B-, see the species-check
+section of docs/READER_REVIEWS.md for what the check caught. Next up
+is batch D (green iguana, conure, rat, hermit crab, box turtle),
+spanning lizards, birds, small mammals, invertebrates, and turtles.
+None of the 63 species still on the legacy hub carry a sellable care
+package (every care-package species is reconciled as of batch C), so
+this batch and the ones after it are picked for popularity and class
+spread rather than the old care-package priority. Paste this with the
+next five species filled in when picking up the batch after that.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
