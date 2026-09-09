@@ -95,7 +95,7 @@ export const amphibianGuides = [
       annual: [
         { item: "Small live feeder insects", low: 60, high: 110 },
         { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "Dechlorinated/RO water treatment", low: 15, high: 30 },
+        { item: "Dechlorinated water treatment", low: 15, high: 30 },
       ],
     },
     sections: {
@@ -103,7 +103,7 @@ export const amphibianGuides = [
 
 Temperature is critically important: fire-bellied toads prefer 65 to 75 degrees F and are distinctly cool-temperature amphibians. Temperatures above 80 degrees F cause significant and rapid heat stress. In warm climates, keeping them cool requires an air-conditioned room or a small fan directed at the tank. They do not require supplemental heating in most temperate home environments.
 
-Humidity of 70 to 80% is appropriate. The water section naturally maintains this. Mist the land section lightly in the evenings. Use only dechlorinated or reverse-osmosis water for both the water section and misting - frogs absorb everything through their permeable skin.`,
+Humidity of 70 to 80% is appropriate. The water section naturally maintains this. Mist the land section lightly in the evenings. Use only dechlorinated tap water for both the water section and misting, never distilled or reverse-osmosis water, which carries none of the electrolytes an amphibian needs and can be fatal without rebalancing. Frogs absorb everything through their permeable skin.`,
       diet: `Fire-bellied toads eat small live insects. Appropriately-sized crickets (no larger than the space between the toad's eyes) are the most practical staple feeder. Fruit flies are appropriate for juveniles and very small adults. Dubia roaches, small mealworms, and black soldier fly larvae add variety. Waxworms are an occasional treat - too high in fat for regular feeding.
 
 Feed every 2 to 3 days. Dust all feeders with calcium w/D3 powder at every other feeding session, and with a reptile multivitamin once weekly. Gut-load insects 24 to 48 hours before offering: feed the crickets or roaches collard greens, carrot, and commercial gut-load powder so the nutritional value is passed to the toad.
@@ -116,13 +116,13 @@ Provide floating cork bark platforms and submerged branches at different heights
 They are social and do well in same-species groups of 3 to 6 individuals. Their characteristic "unken" warning-display behavior (arching the back to show the red belly) is one of the most distinctive behaviors in amphibian keeping. They live 10 to 15 years with good care, making them a long-term companion species.`,
       health: `Fire-bellied toads produce mild skin toxins (pumiliotoxins) - not dangerous in normal contact, but always wash hands thoroughly after handling and before touching eyes, mouth, or face. They should not be housed with other amphibian species: not with fire-bellied newts (common mistake, different care requirements and potential toxin incompatibility), not with tree frogs, and not with any species that might be a prey item.
 
-Water quality is the primary health variable. The aquatic section must be filtered and changed regularly: perform 25% water changes weekly using dechlorinated or RO water. Dirty water causes red-leg syndrome (bacterial infection causing redness, lethargy, and ulceration of the legs and belly). Treat red-leg under veterinary guidance with antibiotics and improved water quality.
+Water quality is the primary health variable. The aquatic section must be filtered and changed regularly: perform 25% water changes weekly using dechlorinated tap water. Dirty water causes red-leg syndrome (bacterial infection causing redness, lethargy, and ulceration of the legs and belly). Treat red-leg under veterinary guidance with antibiotics and improved water quality.
 
 Chytrid fungus (Bd) quarantine protocols apply to all new animals: quarantine any new toad for 30 to 60 days in a separate enclosure before introduction. Watch for lethargy, excessive skin shedding, and loss of appetite as early illness signs. An exotic/amphibian vet should be identified before acquiring this species.`,
       checklist: [
         "20-gallon paludarium (land and water sections)",
         "Aquarium filter for water section",
-        "Dechlorinated or RO water only",
+        "Dechlorinated tap water only",
         "Moist coconut fiber and moss on land section",
         "Live or quality artificial plants",
         "Cork bark for basking",
@@ -137,7 +137,7 @@ Chytrid fungus (Bd) quarantine protocols apply to all new animals: quarantine an
       { q: "What is the unken reflex?", a: "The unken reflex (Unkenreflex in German, where the behavior was first scientifically named) is the defensive posture fire-bellied toads perform when threatened: they arch their back upward and flip their feet and hands outward to expose the bright red and black warning coloration on their belly. This is a textbook example of aposematism - advertising toxicity through conspicuous coloration. It tells predators 'I taste terrible and will make you sick.' A fire-bellied toad performing the unken reflex in captivity usually means it has been startled by a sudden reach or movement." },
       { q: "What temperature do fire-bellied toads need?", a: "65 to 75 degrees F is the ideal range - they are distinctly cool-temperature amphibians. Temperatures above 80 degrees F cause rapid and serious heat stress: hyperactivity, labored breathing, attempting to climb out of the enclosure, and deteriorating health. In warm climates, keeping fire-bellied toads requires either air conditioning or a cool basement. They typically do not need supplemental heating in temperate home environments. Never use under-tank heaters, heat lamps, or place the enclosure in direct sunlight." },
       { q: "Can fire-bellied toads be kept in groups?", a: "Yes - they are one of the few social frog species that genuinely benefit from group housing. A group of 3 to 6 same-species individuals in a proper paludarium setup is natural and engaging. Do not mix them with other frog or amphibian species: not with fire-bellied newts (common mistake, different care requirements and potential toxin incompatibility), not with tree frogs, not with any species that could be perceived as prey or competition. Within-species, same-size groups are stable and actively enjoyable to observe." },
-      { q: "How long do fire-bellied toads live?", a: "10 to 15 years with proper care - a significantly longer lifespan than many keepers expect. The key factors for longevity are: consistent cool temperature (never above 80°F), pristine water quality in the aquatic section (25% water changes weekly using dechlorinated or RO water), a varied gut-loaded insect diet with calcium supplementation, and prompt attention to any signs of red-leg syndrome or other illness. Annual exotic vet checkups are worthwhile given their long potential lifespan." },
+      { q: "How long do fire-bellied toads live?", a: "10 to 15 years with proper care - a significantly longer lifespan than many keepers expect. The key factors for longevity are: consistent cool temperature (never above 80°F), pristine water quality in the aquatic section (25% water changes weekly using dechlorinated tap water), a varied gut-loaded insect diet with calcium supplementation, and prompt attention to any signs of red-leg syndrome or other illness. Annual exotic vet checkups are worthwhile given their long potential lifespan." },
     ],
   },
   {
@@ -177,7 +177,7 @@ Gut-load all feeder insects 24 to 48 hours before offering. Remove uneaten prey 
 Provide a small, shallow water dish large enough to soak in, and a hide for when the frog is not buried. Some leaf litter on the substrate surface adds natural texture and aesthetics. The frog will rearrange and bury through it naturally.
 
 Observe rather than handle. Pacman frogs are display animals - watching them hunt prey and seeing them emerge during their active periods (usually at night) is the primary enrichment for the keeper. Handle very minimally and only with feeding tongs within arm's reach at all times. Their bite can draw blood and they hold on tenaciously.`,
-      health: "Toxic out syndrome (TOS): this happens when a Pacman frog is kept on unsafe substrate (gravel, artificial turf with dyes, paper towels with chemicals). The frog absorbs toxins through the skin, causing neurological symptoms (spinning, thrashing, paralysis). Only use chemical-free substrates. Metabolic bone disease from lack of supplementation causes jaw deformities over time. Red-leg syndrome (bacterial infection) results from unsanitary water. Change the substrate monthly and use only dechlorinated or RO water.",
+      health: "Toxic out syndrome (TOS): this happens when a Pacman frog is kept on unsafe substrate (gravel, artificial turf with dyes, paper towels with chemicals). The frog absorbs toxins through the skin, causing neurological symptoms (spinning, thrashing, paralysis). Only use chemical-free substrates. Metabolic bone disease from lack of supplementation causes jaw deformities over time. Red-leg syndrome (bacterial infection) results from unsanitary water. Change the substrate monthly and use only dechlorinated tap water, never distilled or reverse-osmosis water, which lacks the electrolytes an amphibian needs.",
       checklist: [
         "10 to 20 gallon terrarium",
         "3 to 4 inch deep damp coconut fiber or organic topsoil substrate",
@@ -185,7 +185,7 @@ Observe rather than handle. Pacman frogs are display animals - watching them hun
         "Calcium w/D3 + multivitamin supplements",
         "Gut-loaded live insects (dubia, crickets, earthworms)",
         "Feeding tongs (mandatory, they bite hard)",
-        "Dechlorinated or RO water for substrate moisture and dish",
+        "Dechlorinated tap water for substrate moisture and dish",
         "Small shallow water dish",
         "Low-wattage heat lamp or under-enclosure mat with thermostat",
         "Monthly full substrate replacement",
@@ -221,7 +221,7 @@ Observe rather than handle. Pacman frogs are display animals - watching them hun
       annual: [
         { item: "Nightcrawlers, crickets, and dubia roaches", low: 70, high: 130 },
         { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "Dechlorinated/RO water treatment", low: 15, high: 30 },
+        { item: "Dechlorinated water treatment", low: 15, high: 30 },
         { item: "Annual vet check (exotic/amphibian)", low: 50, high: 90 },
       ],
     },
@@ -241,7 +241,7 @@ Feed juveniles every other day, adults 2 to 3 times per week. Prey should be no 
 Provide burrowing substrate deep enough to disappear completely. Varied hides at the surface (cork bark, flat stones, commercial reptile hides) supplement the burrowing option and allow the salamander to choose its comfort level. A shallow soaking dish large enough for the whole body is important - tiger salamanders soak regularly, especially before and after shedding.
 
 Handle with clean, slightly damp, chemical-free hands only. They tolerate brief, calm handling better than most salamander species. Keep sessions short (under 10 minutes) and allow the salamander to move voluntarily rather than restraining it. Observe for stress signs: rapid or labored breathing, excessive squirming, or mucus secretion indicate the salamander should be returned to its enclosure.`,
-      health: `The most pervasive health risk for tiger salamanders - and all amphibians - is chemical exposure through their highly permeable skin. Never handle after applying lotion, sunscreen, insect repellent, or hand sanitizer. Even trace amounts of these substances are toxic. Always rinse and dampen hands with dechlorinated or RO water immediately before handling. Use only dechlorinated or RO water for the soaking dish and substrate misting - tap water chlorine is absorbed directly through the skin.
+      health: `The most pervasive health risk for tiger salamanders - and all amphibians - is chemical exposure through their highly permeable skin. Never handle after applying lotion, sunscreen, insect repellent, or hand sanitizer. Even trace amounts of these substances are toxic. Always rinse and dampen hands with dechlorinated tap water immediately before handling. Use only dechlorinated tap water for the soaking dish and substrate misting, never distilled or reverse-osmosis water, which carries none of the electrolytes an amphibian needs. Tap water chlorine is absorbed directly through the skin, which is what dechlorinating removes.
 
 Chytrid fungus (Bd) is the most serious amphibian disease globally and is present in wild populations. Quarantine any new salamander for 30 to 60 days in a separate enclosure before introducing it near other amphibians. Watch for lethargy, reddening of the skin (especially the underside and limbs), excessive skin shedding, loss of righting response, and refusal to eat as symptoms of Bd or other illness.
 
@@ -255,7 +255,7 @@ Annual health checks with an exotic or amphibian veterinarian are strongly recom
         "Calcium w/D3 + reptile multivitamin",
         "Gut-loaded live insects and nightcrawlers",
         "Feeding tongs",
-        "Dechlorinated or RO water only",
+        "Dechlorinated tap water only",
         "Exotic/amphibian vet contact",
       ],
     },
