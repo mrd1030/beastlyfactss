@@ -2421,9 +2421,23 @@ gaps filed in docs/READER_LOG.md for whoever writes new content next.
 ## Budgie (2026-09-09, batch B, second pass, after the fixes)
 
 One Opus agent, the same nine pages re-extracted after the first-pass
-fixes, about 79k tokens. Set grade held at B+, same reason: "strong,
-specific, mostly non-redundant, let down by a contradicted cage number
-and a sidebar of relevant guides the bodies never reach into."
+fixes, about 79k tokens.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | The most useful page here, undercut by its own cage numbers. |
+| Encyclopedia | C+ | Nothing to act on except lifespan and adult size, which the hub already gave. |
+| Cost | B | Budgetable, but the setup table did not render, so the $175 to $475 had no itemization behind it. |
+| Handling | A- | Clear, ordered, executable from day one. |
+| Health issues | A | Best page in the set; the limp-equals-tumor section is new to most readers. |
+| Tank setup | A- | Buyable: dimensions, bar spacing, perch types to avoid, temperature, PTFE. |
+| Enrichment | B+ | Actionable and cheap, but contradicts the setup page on solo birds. |
+| Cere color | B | Useful for sexing, thinner than the health page on the same topic. |
+| vs Cockatiel | B+ | Decision-grade, though the reader had already decided. |
+
+Set grade held at B+, same reason: "strong, specific, mostly
+non-redundant, let down by a contradicted cage number and a sidebar of
+relevant guides the bodies never reach into."
 
 One real bug the second pass caught that the first pass couldn't: the
 new router hub contradicted its own first-week row. The Enclosure row
@@ -2449,6 +2463,18 @@ companion it's missing," keeping its own point about foraging and
 destructible enrichment not being substituted, while agreeing with
 tank setup's headline answer instead of contradicting it.
 
+Two softer ones the reader named, checked and left alone: the health
+guide ties a mature male's blue-to-brown cere to "a testicular tumor
+producing estrogen" while the cere color guide, on the same symptom,
+names scaly face mites or "less commonly, a cere tumor" and never the
+testicular one. Different precision, not a contradiction: the cere
+guide's list is broader and the health guide's case is the specific
+one, and the health guide now links the cere guide from that exact
+sentence. And the enrichment guide's "hide part of the daily seed or
+pellet ration" against tank setup's "seeds as an occasional extra":
+the foraging advice covers either ration, so no figure or
+recommendation is at odds.
+
 A tooling bug, not a content one, fixed at the reader's request mid
 session: the cost guide's setup table showed as "[table could not be
 parsed]" in both reader passes because one of its rows uses a bare
@@ -2464,7 +2490,7 @@ innermost-first. Verified against leopard gecko, goldfish, axolotl,
 ball python, rabbit, and bearded dragon: no table anywhere newly broke,
 and the budgie cost table now renders in full.
 
-Four more recommended links added: handling to the shared bird first
+Five more recommended links added: handling to the shared bird first
 aid and grooming guide (towel restraint), health issues to the shared
 chronic egg laying guide (egg binding's calcium and vitamin D link),
 tank setup to the shared household hazards guide (a second sentence,
@@ -2732,7 +2758,7 @@ open too, still uncovered anywhere in the set.
   bird conflict between the tank setup and enrichment guides' FAQs
   ("Not well" against "It can be") resolved in enrichment's favor of
   tank setup's dedicated section, since neither page cites a source;
-  four more links added. Also fixed, at the reader's own request:
+  five more links added. Also fixed, at the reader's own request:
   scripts/reader-extract.mjs's table parser choked on a bare
   `<AffiliateLink>` used directly as a cell value instead of wrapped in
   a `<>fragment</>`, which crashed the budgie cost guide's entire setup

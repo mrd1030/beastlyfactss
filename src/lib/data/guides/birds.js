@@ -103,7 +103,7 @@ Annual avian veterinary exams including complete blood panel are essential. Find
         { label: "Budget", value: "$20 to $80 for the bird, $175 to $475 for a complete starter setup, and first-year totals (including the bird) commonly $350 to $900. Food runs $5 to $15 a month, toys and perches $10 to $30.", source: "budgie-cost-guide" },
         { label: "Adult size", value: "7 inches (18 cm); 1 to 1.4 oz." },
         { label: "Lifespan", value: "Not well documented in the wild; typically 7 to 15 years in captivity, with the oldest documented individual living 29 years, 2 months." },
-        { label: "Zoonotic risk", value: "Psittacosis is a bacterial infection transmissible to people. Watch for lethargy, nasal or eye discharge, and weight loss, and mention the possibility to your own doctor if you develop flu-like symptoms after a new bird.", source: "budgie-health-issues-guide" },
+        { label: "Zoonotic risk", value: "Psittacosis, caused by Chlamydia psittaci, is zoonotic, meaning it can spread to people. Signs include respiratory symptoms, diarrhea, weakness, and an enlarged liver. If your budgie shows these signs, mention the possibility to your vet directly, and keep any newly introduced bird separate from the rest of your flock while you watch for signs like these.", source: "budgie-health-issues-guide" },
         { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a budgie carries almost no fat reserve. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
       ],
     },
