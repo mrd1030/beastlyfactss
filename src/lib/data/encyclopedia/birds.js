@@ -92,7 +92,7 @@ export const birdEncyclopedia = [
       habitat: "Savanna, open woodland, and forest edge",
       adultSize: "5-6.5 inches (13-17 cm); 1.5-2 oz",
       wildDiet: "Seeds, grains, berries, grasses, and some insects",
-      wildLifespan: "Not known in the wild, though likely shorter than in captivity; typically 15 to 25 years in captivity",
+      wildLifespan: "Not known in the wild, though likely shorter than in captivity; typically 10 to 15 years in captivity, with a maximum around 20",
       conservation: "Most species Least Concern; Fischer's Lovebird Near Threatened (IUCN)",
       history: "Louis Pierre Vieillot described the rosy-faced lovebird in 1818, and Anton Reichenow named Fischer's lovebird in 1887 for Gustav Fischer, a German explorer of East Africa. Wild trapping supplied the trade for most of the century that followed, and it cost the birds heavily: collectors worked the black-cheeked lovebird so hard in the 1920s that it is listed as Vulnerable today across its small Zambian range. Fischer's lovebird went out of Tanzania in such volume that the country suspended export licenses in 1992. Captive stock had by then set off on its own line, with a blue Fischer's first bred by R. Horsham in South Africa in 1957.",
     },

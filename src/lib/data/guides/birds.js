@@ -415,67 +415,60 @@ Annual avian veterinary wellness examinations are essential. Green cheek conures
     image: "/assets/guides/lovebird.jpg",
     tagline: "The feisty, affectionate little parrot that bonds deeply with its person!",
     funFact: "Lovebirds mate for life in the wild and are famous for their strong pair bonds. They even feed each other and sit side-by-side for hours! This is where they got their name.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "18x18x24 in+ cage (larger for a pair)", low: 80, high: 150 },
-        { item: "Perches and swings", low: 20, high: 35 },
-        { item: "Shreddable toys", low: 20, high: 40 },
-        { item: "Breathable cage cover", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Small parrot pellets", low: 70, high: 110 },
-        { item: "Fresh vegetables", low: 80, high: 130 },
-        { item: "Toys (rotating)", low: 40, high: 70 },
-        { item: "Annual avian vet check + psittacosis testing", low: 70, high: 120 },
-      ],
-    },
-    sections: {
-      housing: `Lovebirds are small but intensely active and need more cage space than their size implies. A minimum of 18x18x24 inches is required for a single bird, or 24x18x24 inches for a pair, and larger is always better. Bar spacing of 1/2 inch is appropriate. Lovebirds are powerful chewers - cage bars should be thick enough to resist their strong beaks, and any cage with powder coating should be confirmed non-toxic.
-
-Provide multiple perches at different heights and diameters (1/2 to 3/4 inch), swings, and a variety of toys. Natural wood perches are preferred over dowels for foot health. Position the cage at eye level, away from the kitchen, drafts, and direct sunlight. Lovebirds are highly alert and feel most secure when positioned at human eye level with a wall behind the cage.
-
-Provide a consistent sleep routine with 10 to 12 hours of covered darkness at night, using a plain, breathable cage cover rather than an enclosed sleeping tent or "happy hut." Those tunnel-shaped, nest-like products are a documented trigger for hormonal aggression and chronic egg-laying in this species.
-
-Lovebirds are highly social within their species. A bonded pair of lovebirds is happier and healthier than a solo bird, and bonded pairs often have less aggressive territorial behavior toward humans. Introducing a second lovebird requires a careful slow-introduction process.`,
-      diet: `High-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries) should constitute 60 to 70% of the diet. A seed-only diet causes the same nutritional deficiencies seen in other parrots: fatty liver, vitamin deficiencies, and shortened lifespan. Pellet transition from seeds is often challenging with lovebirds - they are stubborn - but persistence pays off.
-
-Fresh vegetables should be offered daily: bell peppers, leafy greens, broccoli, carrots, cooked sweet potato, and snap peas are all excellent choices. Lovebirds tend to be bolder about trying new foods than some other parrot species. Use the basket trick - weaving vegetables and herbs through the cage bars - to encourage foraging for fresh foods.
-
-Millet is a high-fat treat that lovebirds love intensely. Limit to a small piece 2 to 3 times per week. A seed mix can be offered as enrichment in a foraging toy rather than as the primary food source. Strictly avoid avocado, chocolate, caffeine, onion, garlic, and xylitol. Fresh water changed daily.`,
-      enrichment: `Lovebirds are nicknamed the "pocket parrot" - they are intensely bonded, affectionate, and active little birds with large personalities. Enrichment is not optional; without adequate stimulation, lovebirds become cage-bound, hormonal, territorial, and difficult.
-
-Shreddable toys are lovebird favorites: palm leaf mats, paper strips, thin cardboard tubes, and soft wood pieces allow them to display their natural nesting and foraging behaviors. Swings and ladders get heavy use. Provide foraging toys where food is hidden - this is a much more enriching way to offer seeds or pellets than in an open dish.
-
-Daily supervised out-of-cage time of at least 1 to 2 hours in a bird-safe space allows flying, exploring, and interaction with their keeper. Many lovebirds become remarkably affectionate and social with their primary human, seeking contact, playing peekaboo, and vocalizing extensively in response to interaction.
-
-Lovebirds can be territorial with other bird species and with other lovebirds of different sex unless properly bonded. House only with thoroughly bonded partners and never mix lovebirds with other parrot species in the same cage without extensive supervised introductions.`,
-      health: `Respiratory infections are common in lovebirds and progress rapidly. Signs include breathing with the tail bobbing, nasal discharge, fluffed feathers, and sitting low on a perch. Seek veterinary care promptly - birds mask illness and by the time symptoms are visible, the bird is usually significantly ill.
-
-Egg binding is a life-threatening emergency in female lovebirds. A hen unable to pass an egg develops rapidly worsening distress, sitting puffed on the cage floor, straining, and visibly distressed. This requires immediate emergency veterinary intervention. Minimize hormonal triggers (long daylight hours, nesting materials, excessive handling of the back) to reduce egg-laying stimulation in female lovebirds.
-
-Psittacosis (Chlamydiosis) is a bacterial infection that can spread to humans. Annual testing or monitoring for this disease is recommended. Any new lovebird should be tested or treated prophylactically.
-
-Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in other parrots. Annual avian veterinary wellness checks are strongly recommended, particularly blood panels for birds on seed-heavy diets.`,
-      checklist: [
-        "Minimum 18x18x24\" cage for one bird, 24x18x24\" for a pair (larger preferred)",
-        "High-quality lovebird or small parrot pellets",
-        "Fresh vegetables and limited fruit",
-        "Multiple perches, swings, and ladders",
-        "Lots of shreddable toys (paper, cardboard)",
-        "Foraging toys and puzzle feeders",
-        "Millet sprays for treats",
-        "Safe chew toys (bird-safe wood)",
-        "Nail clippers",
-        "Avian veterinarian experienced with lovebirds"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Day one and power
+    // outage cite the shared bird guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the lovebird set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV and VCA both put the floor at 30 days, up to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Enclosure", value: "18 by 18 by 24 inches minimum for one bird, 24 by 18 by 24 for a pair, and bigger is always better. Long, horizontal cages suit lovebirds, which fly side to side rather than climbing.", source: "lovebird-tank-setup-guide" },
+        { label: "Bar spacing", value: "Between three-eighths and five-eighths of an inch, half an inch ideally. Wider spacing lets a lovebird trap its head between the bars, which can be fatal.", source: "lovebird-tank-setup-guide" },
+        { label: "Cage material", value: "Powder-coated or stainless steel only. Avoid homemade cages, wood components, or galvanized wire, all carry a real risk of zinc or other toxic exposure, and lovebirds chew constantly.", source: "lovebird-tank-setup-guide" },
+        { label: "What to leave out", value: "No nest box or happy hut unless you're actually breeding. Nest-like furnishings, tunnel-shaped bird tents included, are one of the most common and avoidable triggers for hormonal aggression and chronic egg-laying in this species.", source: "lovebird-tank-setup-guide" },
+        { label: "One bird or two", value: "A single hand-raised lovebird bonds to you and becomes tame and interactive, but needs roughly two hours of daily interaction. A bonded pair bonds to each other instead, largely ignoring you, and carries a real risk of one mate injuring the other if the pairing is mismatched or stressed.", source: "lovebird-handling-guide" },
+        { label: "Handling", value: "Territorial and aggressive when frightened or threatened, especially females and during hormonal periods. Reaching into the cage of a defensive bird is a reliable trigger; switching to exterior food dishes and stick-training avoids it.", source: "lovebird-handling-guide" },
+        { label: "Budget", value: "$50 to $150 for a common color, $200 to $400 or more for rare mutations. Roughly $300 for a complete starter setup, and $20 to $35 a month after that.", source: "lovebird-cost-guide" },
+        { label: "Adult size", value: "5 to 6.5 inches (13 to 17 cm); 1.5 to 2 oz." },
+        { label: "Lifespan", value: "10 to 15 years is typical, with a maximum around 20.", source: "lovebird-cost-guide" },
+        { label: "Disease risk", value: "Psittacine beak and feather disease hits feather and beak cells and the immune system, and lovebirds are particularly susceptible. It's often fatal, has no cure, and spreads easily, so test any new bird before it meets an established one.", source: "lovebird-health-issues-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a small bird carries almost no fat reserve. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "lovebird-health-issues-guide",
+      callNow: [
+        "Lethargy or appetite loss",
+        "Feathers held fluffed for long stretches",
+        "Any shift in normal behavior",
+        "Breathing difficulty",
+        "Straining or visible abdominal swelling (possible egg binding)",
+      ],
+      vetLine: "An avian vet, found before you need one. Lovebirds mask symptoms well, so a sudden change is worth acting on rather than waiting.",
+    },
+    routes: [
+      { slug: "lovebird-cost-guide", line: "$50 to $150 for the bird, roughly $300 for setup, and the real cost decision: one bird or two." },
+      { slug: "lovebird-handling-guide", line: "Why the name is misleading, exterior food dishes over reaching in, and stick-training a defensive bird." },
+      { slug: "lovebird-health-issues-guide", line: "PBFD, egg binding, feather plucking, and when a change in behavior means the vet." },
+      { slug: "lovebird-tank-setup-guide", line: "The 18x18x24 minimum, bar spacing as a safety issue, and why the nest box has to wait." },
+      { slug: "lovebird-enrichment-guide", line: "Contra-freeloading, the toy count that actually works, and the signs enrichment isn't covering current needs." },
+    ],
+    buyList: [
+      "18x18x24 inch cage minimum, 24x18x24 for a pair",
+      "Perches of varied diameter and material",
+      "Shreddable and chew toys",
+      "A plain breathable cage cover, not an enclosed \"happy hut\"",
+      "Food and water dishes",
+    ],
     faqs: [
-      { q: "Do lovebirds need to be kept in pairs?", a: "The old myth that a solo lovebird will die of loneliness is not literally true - solo lovebirds can live long healthy lives. However, a solo lovebird requires intensive daily human interaction (roughly two hours of direct engagement) as a substitute for a flock companion. A bonded pair of lovebirds is generally healthier, happier, and easier to keep because the birds meet each other's social needs. If your schedule cannot guarantee consistent daily time with the bird, a bonded pair is the more humane choice." },
-      { q: "Can lovebirds learn to talk?", a: "Occasionally, but lovebirds are not known as talkers. Unlike budgies or African greys, speech is rare and the vocabulary stays very small when it does occur. What lovebirds excel at instead is vocalization, contact calling, and developing a strong interactive bond with their keeper. If talking ability is important to you, a budgie or a cockatiel (males) are more reliable choices. Lovebirds compensate with personality, affection, and playfulness." },
-      { q: "Do lovebirds bite?", a: "Yes - lovebirds have a strong beak for their size and will use it when frightened, territorial, or over-stimulated. Consistent calm handling from a young age, respecting the bird's signals (fluffing, lunging, eye pinning), and never reaching into the cage when the bird is in a territorial mood significantly reduces biting. Lovebirds that are handled regularly from a young age and bonded to a primary human are generally no worse than any other small parrot, and many are remarkably gentle with their person." },
-      { q: "What should lovebirds eat?", a: "60 to 70% of the diet should be high-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries). Fresh vegetables daily - leafy greens, bell peppers, broccoli, carrot, and cooked sweet potato - make up the remainder. Limit seed mix to use as enrichment in foraging toys rather than as a dietary staple. Millet is a high-fat treat to be used sparingly. Seed-only diets cause fatty liver disease, vitamin deficiencies, and significantly shortened lifespan in lovebirds just as in all parrots." },
-      { q: "How long do lovebirds live?", a: "10 to 20 years with excellent care - a lifespan that surprises many keepers who assume small birds have short lives. The full 20-year potential requires a pellet-based diet, regular avian veterinary care, adequate enrichment and social contact, and minimizing hormonal stress (particularly in egg-laying females). Lovebirds rehomed in middle age after years of poor nutrition often have reduced lifespans. Starting with proper care from day one makes a measurable difference in long-term health." },
+      { q: "How much does a lovebird cost to buy?", a: "$50 to $150 for a common peach-faced or Fischer's. Rare mutations (lutino, blue, pied, and combinations) go for $200 to $400 or more, and exceptional individuals reach $1,000. Adoption typically runs $20 to $100. A hand-raised bird costs more than a parent-raised one and is generally the better choice for a tame, interactive pet." },
+      { q: "What size cage does a lovebird need?", a: "18 by 18 by 24 inches minimum for one bird, 24 by 18 by 24 for a pair, and bigger is always better. Long, horizontal cages suit lovebirds, which fly side to side rather than climbing." },
+      { q: "When is a lovebird health issue an emergency?", a: "They mask symptoms, so a sudden change is worth acting on: lethargy, appetite loss, feathers held fluffed, or any shift in normal behavior all warrant a prompt vet visit instead of waiting. Egg-binding, breathing difficulty, and severe lethargy all mean an immediate trip to an avian vet." },
     ],
   },
   {

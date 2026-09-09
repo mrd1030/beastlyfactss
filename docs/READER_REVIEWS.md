@@ -2940,6 +2940,65 @@ noise-versus-lease-or-neighbor guidance in the legal guide; no
 introduction guidance for existing pets in the house. None of these
 are covered by a shared guide either.
 
+## Lovebird (2026-09-09, batch B, single pass, before the router hub)
+
+One Opus agent, eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, vs budgie), about 91k tokens. Set
+grade: B, "strong, sourced health and setup work sitting under a hub
+that contradicts it and a cost page whose arithmetic does not close."
+
+Real conflicts, all resolved by construction in the router rebuild:
+diet, cage price, and the old hub's rosy "a bonded pair is happier and
+healthier, less aggressive toward humans" against the handling guide's
+documented real aggression risk between mismatched pairs (the router
+hub's "One bird or two" row carries handling's framing, including the
+aggression risk, not the old hub's).
+
+Two real arithmetic bugs, both researched and fixed:
+- The cost guide's own headline, "Roughly $70 to $125 a month," didn't
+  match its own itemized annual table ($70-110 pellets + $80-130
+  vegetables + $40-70 toys + $70-120 vet = $260-430/year, about $22 to
+  $36 a month), and its prose sub-figures ("$20 to $30 in quality
+  pellets" a month, "$10 to $15" produce) didn't match the table's
+  annual per-item figures either. Corrected the headline, body, and
+  FAQ to the table's own math: "$260 to $430 a year," roughly $20 to
+  $35 a month.
+- A four-way lifespan conflict: the old hub said "10 to 20 years,"
+  the encyclopedia said "typically 15 to 25 years in captivity," the
+  cost guide said "10 to 15 years typically, up to 20," and
+  lovebird-vs-budgie-guide.mdx said "7 to 15 years" (also still
+  carrying budgie's own pre-fix "5 to 10 years, occasionally up to
+  15," left over from budgie's batch since only
+  budgie-vs-cockatiel-guide.mdx was touched then). Opened the cost
+  guide's own cited VCA page directly: "Average lifespan is 10-15
+  years; maximum is around 20 years," an exact match for the cost
+  guide's figure. Corrected the encyclopedia to match VCA (the higher
+  and unsourced figure was the one wrong here, the reverse of the
+  budgie and cockatoo cases), and corrected lovebird-vs-budgie-guide.mdx
+  on both sides: lovebird to "10 to 15 years, with a maximum around
+  20," and budgie finally brought up to its own already-corrected "7
+  to 15 years."
+
+The "10 to 12 hours of covered darkness" versus "cutting exposure to
+about 8 hours a day" light-schedule question the reader raised is the
+same non-conflict pattern as cockatiel's egg-laying darkness note:
+general sleep guidance against a specific intervention for a hen
+already laying chronically, not the same claim. Tank setup itself
+never states a specific hours figure for ordinary sleep (only "genuine
+darkness at night"), so the router hub carries no Sleep row rather
+than inventing one.
+
+Recommended links: not added this pass, to keep the single-pass
+version lighter on scope; the reader's eight suggestions (mostly
+cross-links among handling, health issues, and enrichment on
+plucking, nest triggers, and boredom signs) are left for a future
+pass, filed here rather than actioned.
+
+Open: no page reconciles the daily-time math (2 hours interaction plus
+foraging plus sleep); no food-quantity, bathing, or cage-cleaning
+guidance; no guidance for introducing a second lovebird beyond "do it
+slowly." None covered by a shared guide.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3262,3 +3321,18 @@ are covered by a shared guide either.
   hedge. `cockatoo-legal-guide` was missing from relatedArticles.js
   entirely, the same wiring-bug class as leopard gecko's temperature
   guide, invisible in every Deep Dive sidebar; added.
+- 2026-09-09, lovebird (batch B, single pass, branch
+  claude/batch-b-startup-ve7avl): hub rebuilt to router shape,
+  resolving diet, cage-price, and pairs-framing conflicts by
+  construction (the router hub keeps handling's real aggression-risk
+  framing, not the old hub's "happier and healthier" claim). Two real
+  arithmetic bugs fixed: the cost guide's own monthly headline didn't
+  match its own annual table (corrected to the table's real $260-430 a
+  year), and a four-way lifespan conflict (hub, encyclopedia, cost
+  guide, and lovebird-vs-budgie-guide.mdx all disagreed) resolved by
+  opening the cost guide's own cited VCA page directly ("10-15 years,
+  maximum around 20") and correcting the encyclopedia and the vs guide
+  to match; the vs guide's stale pre-fix budgie figure (left over from
+  budgie's batch, since only budgie-vs-cockatiel-guide.mdx was touched
+  then) brought up to budgie's already-corrected 7 to 15 years too.
+  Recommended links deferred this pass to keep it lighter.

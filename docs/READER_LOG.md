@@ -1721,3 +1721,15 @@ Set grade: B. Strong, sourced, honest deep dives undercut by a hub that restates
 Real conflicts found: diet ratio (old hub 60-70% pellets vs feeding/setup's 75-80%); cage cost and food cost (old hub's own numbers vs cost guide's); lifespan (old hub/encyclopedia 40-60 vs cost guide's unsourced "40 to 70-plus, Umbrella 50 to 70"); affection framing (old hub "most cockatoos crave cuddling" vs handling guide's cited consultant, "cockatoos are not cuddly, we are," whose fix is less shoulder time, not more); the encyclopedia's own conservation field ("Vulnerable") contradicting its own History paragraph ("IUCN reclassified the species as Endangered in 2018"); the legal guide's New Jersey section ("the Moluccan is Vulnerable") contradicting its own Massachusetts section ("both assessed as endangered"); and a same-article contradiction inside the enrichment guide, where the body explicitly declines to cite a "six hours" foraging figure or a "training worked best" claim as unverifiable, then a heading and two FAQ answers state both as settled fact anyway.
 
 Not covered anywhere: a worked daily timetable reconciling 4-6 hours interaction, foraging, out-of-cage time, and 10-12 hours sleep in one day; cage/dish cleaning routine; bathing or misting given the dust; what bird-proofing means in practice; finding/vetting an avian vet and PBFD screening cost; noise vs leases/HOAs/neighbors; introducing a cockatoo to existing pets.
+
+## Lovebird (2026-09-09, batch B, single pass)
+
+One Opus agent, eight pages, about 91k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B. Strong, sourced health and setup work sitting under a hub that contradicts it and a cost page whose arithmetic does not close.
+
+Real conflicts found: pairs (hub "a bonded pair is happier and healthier, less aggressive toward humans" vs handling/vs-budgie's documented real aggression risk between mismatched pairs); lifespan, four different values across hub, encyclopedia, cost guide, and the vs-budgie guide; cost guide's own monthly headline ($70-125/month) not matching its own annual table ($260-430/year, about $22-36/month); cage price (hub table caps the cage at $150, cost guide prose says $80-200).
+
+Not covered anywhere: how to introduce and bond a second lovebird beyond "do it slowly"; daily food quantity in grams or portions; bathing or misting routine despite a "bath option" in a cost FAQ; cage cleaning schedule beyond changing the paper liner.
