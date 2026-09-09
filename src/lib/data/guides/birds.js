@@ -337,69 +337,73 @@ export const birdGuides = [
     image: "/assets/guides/conure.jpg",
     tagline: "The clownish, cuddly little conure that never stops entertaining!",
     funFact: "Green cheek conures are notorious for learning to hang upside down, play dead, and roll over on command. They're often called the 'class clown' of the parrot world and learn tricks faster than almost any other small parrot!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x30 in+ cage (larger preferred)", low: 100, high: 180 },
-        { item: "Perches of varied diameters", low: 20, high: 40 },
-        { item: "Foraging and shreddable toys", low: 30, high: 60 },
-        { item: "Snuggle pouch or bird tent", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Small parrot pellets", low: 80, high: 120 },
-        { item: "Fresh vegetables and limited fruit", low: 80, high: 140 },
-        { item: "Toys (rotating)", low: 50, high: 90 },
-        { item: "Annual avian vet check", low: 70, high: 120 },
-      ],
-    },
-    sections: {
-      housing: `A minimum cage of 24x24x30 inches is required for a green cheek conure, though 24x24x36 inches or larger is strongly preferred. Green cheeks are active and athletic birds that need room to climb, swing, and flap. Bar spacing of 1/2 to 3/4 inch prevents head entrapment. Stainless steel or powder-coated wrought iron cages from reputable manufacturers are the safest options.
-
-Position the cage at eye level against a wall, away from the kitchen (cooking fumes are lethal to birds), drafts, and direct sunlight. Conures feel most secure when perched at human eye level with a stable background. Avoid positioning the cage where foot traffic passes on all sides - birds feel exposed and stressed when movement surrounds them from every direction.
-
-Provide multiple perches of varying diameters (3/8 to 3/4 inch): natural wood perches in various sizes, a rope perch for foot exercise, and a cement perch for nail maintenance. A swing, ladders, and elevated platforms make the cage more enriching. At least one perch near the top provides the high-elevation security birds naturally prefer.
-
-Cover at night with a breathable cage cover and ensure 10 to 12 hours of darkness. Green cheeks are less prone to night frights than cockatiels but still benefit from consistent darkness for hormonal health and proper sleep. A covered sleep cage in a quiet, dark room is ideal.`,
-      diet: `High-quality small parrot pellets (Harrison's Fine, Roudybush Maintenance, or Lafeber's Nutriberries) should constitute 60 to 70% of a green cheek conure's nutritional intake. Seed-only diets cause the same pattern of nutritional deficiency seen in all parrots: fatty liver, vitamin A and D deficiency, immune suppression, and significantly shortened lifespan. Pellet transition from seeds typically takes weeks of patient gradual mixing.
-
-Fresh vegetables should be offered daily: dark leafy greens (kale, chard, romaine, dandelion), bell peppers (excellent Vitamin A source), broccoli, carrot, cooked sweet potato, and snap peas. Varied daily vegetable offerings provide comprehensive micronutrients. Many green cheeks are adventurous eaters - introduce new foods consistently and they usually adapt.
-
-Fruit in small quantities (a few blueberries, a slice of apple or mango) can be offered as enrichment treats. Seed mix in small amounts can be used in foraging toys rather than fed from an open dish. Strictly avoid avocado, chocolate, caffeine, onion, garlic, and xylitol. Fresh water changed daily (or twice daily if the bird bathes in it).`,
-      enrichment: `Green cheek conures are often described as the "apartment parrot" - quieter than most conure species, intensely affectionate, and highly playful. They earn the nickname "class clown" for their habit of hanging upside down, playing dead, rolling over, and generally making a spectacle of themselves. This playful intelligence requires significant daily enrichment.
-
-Provide a rotating selection of foraging toys, shreddable toys (palm leaf mats, paper, thin wood pieces, cork), trick training props, and a snuggle pouch or bird tent for the green cheek's characteristic love of burrowing and cuddling. Green cheeks adore being under clothing, snuggled against a warm neck, or tucked in a shirt pocket.
-
-Minimum 2 to 3 hours of supervised out-of-cage time daily in a bird-safe space is required. Green cheeks bond intensely to their primary human and will seek out contact, follow you from room to room, and vocalize to maintain contact with you. This relationship is deeply rewarding but requires consistent daily availability.
-
-Green cheeks are highly trainable using positive reinforcement. Target training (touching a target stick for a food reward), step-up training, and trick training (wave, spin, turn around, lie down) are all achievable with this intelligent species and provide excellent daily mental stimulation.`,
-      health: `Feather destructive behavior (FDB) - plucking or barbering feathers - is the most visible sign of chronic psychological distress in green cheek conures. It ranges from over-preening to complete removal of contour feathers. Causes include boredom, inadequate social contact, dietary deficiency, hormonal imbalance, infections, and allergies. Identifying the underlying cause requires veterinary and behavioral assessment. Prevention through adequate enrichment and social interaction is the best approach.
-
-Respiratory infections progress rapidly in birds. Signs include breathing with the tail visibly bobbing, nasal discharge, fluffed feathers, voice changes, and lethargy. Birds mask illness as an evolutionary defense mechanism - by the time symptoms are visible, the bird is usually significantly compromised. Seek avian veterinary care the day symptoms appear.
-
-Proventricular Dilatation Disease (PDD) - also called Avian Bornavirus disease - is a neurological disease that affects the nerves of the digestive tract, causing the proventriculus (stomach) to dilate and preventing normal digestion. Signs include weight loss, regurgitation, and neurological symptoms. It is caused by Avian Bornavirus (ABV), which can spread between birds. There is no cure, but supportive management can extend quality life.
-
-Annual avian veterinary wellness examinations are essential. Green cheek conures can live 15 to 25 years - a long-term commitment that requires a consistent relationship with an avian veterinarian.`,
-      checklist: [
-        "24x24x30\"+ cage (larger preferred)",
-        "High-quality small parrot pellets",
-        "Fresh vegetables daily (greens, peppers, broccoli)",
-        "Variety of perches (natural wood, rope, different diameters)",
-        "Foraging toys and shreddable toys",
-        "Trick training props (target stick, cups)",
-        "Snuggle pouch or bird tent",
-        "Misting bottle or shower perch for bathing",
-        "Night cover (10 to 12 hours darkness)",
-        "Avian veterinarian experienced with conures",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Day one, pellet
+    // conversion, and power outage cite the shared bird guides in the
+    // sidebar's Health and More list; this species has no feeding guide of
+    // its own, so the pellet conversion row is where a new owner finds the
+    // seed-to-pellet schedule. Reconciled 2026-09-09 for batch D
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV puts the floor at 30 days and VCA gives 30 to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Cage size", value: "24x24x30 inches is the minimum most sources list for a single adult, but treat that as a floor, not a target. Bigger is always better, aim for 30 to 36 inches or more in multiple dimensions, or a genuine flight cage if you can manage it. Your bird should be able to fully stretch and flap its wings without touching the sides.", source: "conure-tank-setup-guide" },
+        { label: "Bar spacing", value: "Bar spacing should be 1/2 to 5/8 inch maximum to prevent head entrapment or escape.", source: "conure-tank-setup-guide" },
+        { label: "Temperature", value: "Normal household temperatures of 65 to 80°F work well. Avoid drafts, direct air-conditioning vents, and sudden temperature swings. No supplemental heating is needed in a typical indoor environment.", source: "conure-tank-setup-guide" },
+        { label: "Lighting and sleep", value: "Full-spectrum UV lighting made for birds (UVB 5.0 or a similar avian-specific bulb) is recommended by multiple care sources for 10 to 12 hours daily, supporting vitamin D synthesis, especially important for indoor birds with limited natural sunlight. Maintain a consistent day and night photoperiod, covering the cage at night gives 10 to 12 hours of real darkness.", source: "conure-tank-setup-guide" },
+        { label: "Cage bottom", value: "Most keepers use a grate with paper, newspaper, or a cage liner underneath for easy daily cleaning. Avoid loose substrates like corn cob or wood chips, both can be ingested or harbor mold.", source: "conure-tank-setup-guide" },
+        { label: "Placement", value: "Never use non-stick or Teflon cookware near the bird, the fumes are highly toxic. For placement, a family living area helps the bird feel like part of the flock, but keep one side of the cage against a wall for security, and stay well away from the kitchen, both the fumes and the heat are risks there.", source: "conure-tank-setup-guide" },
+        { label: "Out-of-cage time", value: "Out-of-cage time, several hours of supervised free time daily, isn't optional, it's essential for both physical and mental health.", source: "conure-tank-setup-guide" },
+        { label: "Diet", value: "Fatty liver disease and vitamin A deficiency both stem from the same root cause: an all-seed or high-fat diet with too little vegetable variety and not enough exercise. Caught early, this is manageable with diet correction, feeding a quality pelleted diet alongside fresh vegetables instead of a seed-only bowl. Seed-only diets are one of the most common, and most preventable, causes of chronic illness in this species.", source: "conure-health-issues-guide" },
+        { label: "Pellet conversion", value: "VCA Animal Hospitals lays out two workable methods, both built around gradual substitution rather than an abrupt swap: \"Offer 75% seed and 25% pellets in the food dish for 3 days, then a 50/50 mix for 3 days, then 25% seed and 75% pellets until your conure is fully converted,\" or a daily taper from 90% seed down to 0% seed on day 10. VCA is blunt about how long that can take: \"It may take days, weeks, or months to modify a bird's diet.\"", source: "bird-pellet-conversion-guide" },
+        { label: "Feeding style", value: "Wild parrots spend up to six hours a day searching for, selecting and manipulating food. A conure with a full bowl is finished in minutes, and everything that goes wrong behaviorally with parrots tends to grow in that empty stretch. Stop using a bowl as the primary delivery method.", source: "conure-enrichment-guide" },
+        { label: "Handling", value: "Genuine nippiness shows up more in young birds, especially under one to two years old, and in hormonal adults. Watch for warning signs before a bite happens: pinned eyes, flared tail feathers, or lunging.", source: "conure-handling-guide" },
+        { label: "Sexing", value: "Green cheek conures are sexually monomorphic, males and females look the same, so there's no reliable visual test, despite claims floating around about head shape or foot color. If you actually need to know, DNA testing is the standard.", source: "conure-handling-guide" },
+        { label: "Budget", value: "$250 to $700+ for the bird itself, more at pet stores. Roughly $400 to $900 or more to set up before the bird. Roughly $250 to $500 a year after that, and a routine wellness exam commonly runs $80 to $160.", source: "conure-cost-guide" },
+        { label: "Adult size", value: "10 inches (25 cm) including tail; 2-2.5 oz." },
+        { label: "Lifespan", value: "20 to 25 years or more is the commonly cited range, with some individuals reaching 30 years under excellent care.", source: "conure-cost-guide" },
+        { label: "Disease risk", value: "Psittacine Beak and Feather Disease (PBFD), Proventricular Dilatation Disease (PDD), and polyomavirus are the ones to know. These are contagious, spreading through new birds, contaminated equipment, or breeding facilities, and there's no reliable cure for most of these.", source: "conure-health-issues-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a small bird carries almost no fat reserve. The real danger is combustion, not cold: no candles, propane heater, or gas stove used for heat in any room the bird is in, and never an indoor generator.", source: "bird-emergency-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "conure-health-issues-guide",
+      callNow: [
+        "Difficulty breathing",
+        "An inability to perch",
+        "Severe lethargy",
+        "Seizures",
+        "Significant bleeding",
+        "A sudden refusal to eat",
+      ],
+      vetLine: "An avian vet, found before you need one. Annual wellness exams remain the best early-warning system for this species, birds are good at masking illness until it's fairly advanced. A respiratory infection can progress quickly, so treat it as potentially serious and see a vet promptly.",
+    },
+    routes: [
+      { slug: "conure-cost-guide", line: "$250 to $700+ for the bird, what a full setup runs, avian vet pricing, and why the lifespan is the biggest cost driver." },
+      { slug: "conure-tank-setup-guide", line: "Cage size and bar spacing, temperature and humidity, UV lighting, perches, and the safety list for a room a bird flies in." },
+      { slug: "conure-handling-guide", line: "Why most beak contact is balance rather than biting, building trust with a step-up cue, and why you cannot sex one by looking." },
+      { slug: "conure-health-issues-guide", line: "Fatty liver and vitamin A deficiency, feather-destructive behavior, respiratory infection and aspergillosis, and the viruses to know." },
+      { slug: "conure-enrichment-guide", line: "The parrot foraging studies that measured an outcome, why a food bowl is the problem, and the priority order to work through." },
+    ],
+    buyList: [
+      "24x24x30 inch cage or larger, 30 to 36 inches preferred",
+      "Perches of varied diameters, natural wood, rope, and a concrete or grooming perch",
+      "Foraging and shreddable toys",
+      "Snuggle pouch or bird tent",
+      "Full-spectrum avian UV lighting and fixture",
+      "Dishes, water bottle, cage cover, and cuttlebone",
+      "High-quality small parrot pellets",
+      "Fresh vegetables and limited fruit",
+      "Newspaper or a cage liner for the cage bottom",
+    ],
     faqs: [
-      { q: "Are green cheek conures noisy?", a: "They are among the quietest of all conure species - which is why they are often called the 'apartment parrot.' That said, quiet is relative: green cheeks still have contact calls, alarm vocalizations, and excited chatter that can be heard across a room. They are not the piercing, apartment-wall-penetrating screaming of sun conures or nanday conures. For someone weighing noise level as a factor, green cheeks are a genuinely good middle ground: small-parrot personality without small-parrot silence." },
-      { q: "Can green cheek conures learn tricks and talk?", a: "They are exceptional trick learners - target training, wave, spin, roll over, play dead, and retrieving small objects are all achievable with consistent positive reinforcement training. Many green cheeks also learn a small vocabulary of words and phrases, though their speech is less clear and their vocabulary smaller than budgies or cockatiels. If talking is the primary goal, a budgie is a more reliable choice. If trainability and interactive play are the goal, green cheeks are excellent." },
-      { q: "How long do green cheek conures live?", a: "15 to 25 years with excellent care - a lifespan that far exceeds what many keepers expect when they first encounter this relatively small bird. The full lifespan requires high-quality nutrition (pellet-based diet, daily vegetables), regular avian veterinary care, adequate daily enrichment, and consistent social interaction with their primary human. Green cheeks form intense bonds with their person; birds that are neglected or rehomed multiple times often have significantly shortened lifespans from chronic stress." },
-      { q: "Are green cheek conures suitable for first-time bird owners?", a: "They're a reasonable step up from cockatiels and budgies but are more demanding than either. Green cheeks need a minimum of 2 to 3 hours of direct daily interaction, comprehensive bird-proofing for free-roam time, a pellet-based diet, and an avian veterinary relationship. Someone with no bird experience who genuinely commits to these requirements can keep a green cheek successfully. Someone expecting a low-maintenance pet will struggle. Previous bird experience or serious prior research makes the transition significantly smoother." },
-      { q: "Are green cheek conures affectionate?", a: "Extremely - this is their defining characteristic. Green cheeks seek physical contact constantly: burrowing under collars, riding inside shirt pockets, pressing against a warm neck, and demanding to be held during any quiet activity. They bond so intensely to their primary human that some green cheeks become jealous of attention given to other people, other pets, or even devices. Snuggle pouches (small fabric tents attached to cage or stand) are popular because green cheeks will choose to hang out inside them for hours." },
-      { q: "Is a pineapple green cheek conure a different bird?", a: "No - it's the same species (Pyrrhura molinae) with a different color mutation, the same way a black Labrador and a yellow Labrador are still both Labradors. \"Pineapple\" combines the yellow-sided and cinnamon mutations, producing a mostly yellow-olive body with an orange face, instead of the wild-type green body, gray head, and red belly patch. Care, temperament, and lifespan are identical across all green cheek color mutations - the differences are purely cosmetic." },
-      { q: "How can I tell if my green cheek conure is male or female?", a: "You can't tell by looking - green cheek conures are visually identical between sexes, with no reliable plumage, size, or behavioral difference. The only accurate methods are DNA sexing (a blood or feather sample sent to a lab, the standard and least invasive option) or surgical sexing by an avian vet. If you need to know for certain, budget for a DNA test rather than guessing from appearance or personality." },
+      { q: "How much does a green cheek conure cost?", a: "$250 to $500 from a breeder for a normal (green) color, with common listings around $275 to $400. Common morphs like Pineapple, Yellow-Sided, and Cinnamon run $350 to $600, and high-red or combination morphs can reach $450 to $700 or more. Pet store pricing is often $600 to $1,300, noticeably higher than buying direct from a breeder for what you get." },
+      { q: "What size cage does a green cheek conure need?", a: "24x24x30 inches is the minimum most sources list for one adult, and it is a floor rather than a target: go to 30 to 36 inches or more in multiple dimensions where you can. Bar spacing tops out at 1/2 to 5/8 inch, to prevent head entrapment or escape." },
+      { q: "Are conures as demanding as bigger parrots?", a: "Behaviorally, close to it. They are full parrots in a small body: intelligent, social, destructive and loud for their size. Buying one expecting a budgie with more color is how conures end up rehomed." },
     ],
   },
   {

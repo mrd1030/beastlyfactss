@@ -1805,3 +1805,792 @@ Set grade: A-. Deep, specific, appropriately urgent about emergencies, let down 
 Real conflicts found: cage size (old hub "3x2x2 ft," i.e. 36x24x24 inches, cage setup guide's real "30 long by 24 wide by 48 tall" for a pair); lifespan (old hub "6 to 10 years," cost guide's real, explicitly-researched "5 to 9 years on average for US pet ferrets today," which argues the older 10-15 year figure no longer reflects the population). A genuine cross-guide factual contradiction, not just a hub issue: the health issues guide cites a real 2000 peer-reviewed study (Schoemaker et al., PubMed 10649752) showing ferrets neutered late still developed adrenal disease at the same rate, arguing neutering itself (not the specific age) plus light exposure and genetics drives the disease; the adrenal disease guide's own FunFact claimed the opposite, that countries with later neuter ages show meaningfully lower rates, calling it "one of the stronger pieces of evidence supporting the early-neuter theory," with no source cited anywhere in that article. Corrected the adrenal disease guide's body, FunFact, and FAQ to match the peer-reviewed position.
 
 Not covered anywhere: lymphoma, named as one of the three major ferret diseases but never explained on any page or shared guide; the actual litter-training method (a litter box is specified, training it is not); a canine distemper vaccine dosing schedule for kits; what descenting actually involves.
+
+## Green Iguana (2026-09-09)
+
+NOTE FOR THE PARENT SESSION: this batch-D worker session had no Agent/Task tool
+available, so no reader subagent could be launched. The set test below was run
+by the worker itself, cold, against the seven plain-text pages in
+`.reader/green-iguana/` read in filename order, following the set test prompt in
+READMEFIRST verbatim. It is a first-party read, not a second pair of eyes, and
+should be treated as slightly weaker evidence than a real reader agent's output.
+Raw output follows, unedited.
+
+---
+
+1. One line per page.
+
+- 00 care guide hub (as extracted, before the router rewrite): grade C+. I would
+  finish it, and I could act on the checklist, but it is a third care sheet
+  rather than a router, and it contradicts the setup guide on the basking
+  target and the UVB replacement interval.
+- 01 encyclopedia: grade B-. Readable and the history section on the import
+  trade is genuinely new information, but the size and lifespan lines do not
+  match the deep dives.
+- 02 cost guide: grade A. The page I would screenshot. It is the only page on
+  any pet site I have read that admits you cannot buy an enclosure that meets
+  the published minimum and then prices the three ways out of that.
+- 03 handling guide: grade A-. Short, and every line is something I would do
+  differently tomorrow: approach from the side, never the tail, expect the
+  male to change in season.
+- 04 health issues guide: grade B+. Correctly organized around husbandry, and
+  the vet lines are unambiguous. Thin on what any of it looks like day to day.
+- 05 tank setup guide: grade A-. The 10x5x6 minimum, the 100 to 120°F basking
+  band and the humidity number are the three things I needed. It is a very
+  short page for the most consequential subject in the set.
+- 06 enrichment guide: grade A. The only page in the set built on named field
+  research, and it is honest that the sociality finding does not license
+  cohousing adults.
+
+2. The hub and the encyclopedia.
+
+The hub does not earn its place. It repeats the setup guide, the health guide
+and the cost guide at lower resolution, and where it differs it is wrong.
+
+- Basking. Hub: "Basking surface temperature should be around 120 degrees F."
+  Setup guide: "Basking area 100 to 120°F, cool end around 80°F." The hub took
+  the top of the range and printed it as the target.
+- UVB replacement. Hub annual cost row: "UVB bulb replacement (every 6-12
+  months): $111 to $141." Setup guide: "replaced every 12 months regardless of
+  whether the bulb still produces visible light." The hub's own housing section
+  says "Replace it every twelve months," so the hub disagrees with itself.
+- Adult size. Hub FAQ: "Four to six feet including the tail, and ten to twenty
+  pounds." Handling guide: "An adult male green iguana reaches 6 to 7 feet
+  including tail and up to 20 pounds." Hub housing prose: "becomes a five to
+  six foot lizard." Three numbers on two pages.
+- Humidity at night. Hub: "Humidity of 60 to 80 percent through the day, rising
+  toward 100 at night." Setup guide: "60 to 80%." Nothing in the deep dives
+  supports the night figure.
+- Enclosure. Hub cost table: "Custom PVC/wood enclosure, 8x4x4ft: $650 to
+  $730," while the hub's own checklist says "Adult enclosure plan, 10x5x6 ft
+  minimum, before purchase" and the cost guide says nothing ready made reaches
+  that. The hub sells me a box its own checklist rules out.
+
+The encyclopedia earns about half its place. Origin, habitat, wild diet, the
+CITES history and the import numbers appear nowhere else and are the best part
+of it. But "Adult Size: 4-6 feet including tail" is under the handling guide's
+6 to 7 feet, "Wild Lifespan: 15-20 years" is the same number the cost guide
+gives for a well-kept captive animal, which cannot be right for both, and the
+overview's "five to six feet" does not match its own adult size field.
+
+3. The set as a whole.
+
+Yes, I could set up, buy and keep one. Enclosure, temperature, humidity,
+substrate, lighting, cost, handling and the health list are all here and mostly
+agree. What is missing is the diet, and it is a hole in the shape of a whole
+article. There is no feeding guide. The 60/30/10 greens/vegetables/fruit ratio,
+the list of greens to build on, the calcium and multivitamin schedule and the
+avoid list (spinach, kale in quantity, beet greens, chard, iceberg) exist only
+in the hub's diet section, which is not a deep dive and is not in the Deep Dive
+list. The health guide tells me protein causes kidney disease and the
+enrichment guide tells me to scatter the leaves, but nothing tells me what goes
+in the bowl or how often.
+
+Stranded questions:
+
+- The health guide says kidney disease follows "chronic dehydration from low
+  humidity" and never says what humidity is. The setup guide has 60 to 80% and
+  says the same sentence from the other end. Neither page points at the other.
+- The health guide says burns come from "heat sources positioned where the
+  iguana can contact them directly." The sidebar's reptile heating and
+  thermostats guide is exactly that subject and the body never says so.
+- The cost guide says produce runs $30 to $50 a month. The sidebar carries a
+  safe weeds and wild plants guide covering iguanas specifically, which is the
+  direct answer to that line, and the cost guide does not mention it.
+- The handling guide says "Housing two males together, expect real fighting"
+  and stops. The enrichment guide has three paragraphs of field research on
+  exactly why.
+- The enrichment guide says "Do not skip parasite screening, given what the
+  captive welfare assessment found." The quarantine guide in the sidebar is
+  the page that says what a screening actually involves.
+
+4. Overlap and conflict across the deep dives.
+
+Read twice: the 10x5x6 minimum (setup guide and cost guide), the 70% first
+year mortality (cost guide and health guide FunFact), the surrender story
+(handling guide and enrichment guide), and "no commercial tank is large enough"
+(setup guide and cost guide). All four repeats agree, and the cost guide's
+version of the enclosure argument is better than the setup guide's, so the
+overlap reads as reinforcement.
+
+One real conflict between deep dives:
+
+- Enrichment guide: "A green iguana reaches five to six feet, and the animal is
+  sold at six inches to people who buy a tank," and its FAQ repeats "reaches
+  five to six feet."
+- Handling guide: "An adult male green iguana reaches 6 to 7 feet including
+  tail and up to 20 pounds," and its FAQ repeats it.
+- Cost guide, third party: "LafeberVet puts an adult at 6 feet or more
+  including the tail."
+
+Two near-conflicts I would not call errors: the cost guide heads a section
+"Lifespan: 15 to 25 years" and then says "15 to 20 years, sometimes 25" (the
+heading is the envelope, the body is the figure), and the cost guide's monthly
+total of $60 to $150 sits above its own itemized $30 to $50 produce plus $20 to
+$50 electricity, which is fine because supplements and substrate are named too.
+
+5. One link per page.
+
+- Hub: "Kidney disease and gout follow from animal protein and chronic
+  dehydration." Should point to the health issues guide. (Hub prose, not a deep
+  dive.)
+- Encyclopedia: "the classic mistakes are protein and insufficient calcium."
+  Should point to the health issues guide. (Encyclopedia, not a deep dive.)
+- Cost guide: "produce alone commonly runs $30 to $50 a month." Should point to
+  the safe weeds and wild plants guide.
+- Handling guide: "Housing two males together, expect real fighting." Should
+  point to the enrichment guide.
+- Health issues guide: "burns come from heat sources positioned where the
+  iguana can contact them directly." Should point to the reptile heating and
+  thermostats guide.
+- Tank setup guide: "Glass blocks UVB entirely, so a sunny window is never an
+  adequate substitute." Should point to the UVB lighting guide.
+- Enrichment guide: "Do not skip parasite screening." Should point to the
+  reptile quarantine guide.
+
+6. Trust.
+
+What made me doubt them: the hub. A page that prints 120°F as the basking
+target when its own setup guide gives a 100 to 120°F band, and prices an 8x4x4
+enclosure two lines under a checklist demanding 10x5x6, is the kind of thing I
+would notice at the worst possible moment. Nothing in the deep dives themselves
+read as invented.
+
+The sentence that most convinced me a person who keeps these wrote it, from the
+cost guide: "The two ready made boxes on that table reach 6 or 8 feet long but
+stop at 2 feet deep and 4 feet tall, so they are a compromise on even the
+LafeberVet floor. That is what 'no commercial tank is large enough' means
+above: you can buy a box, but not one that meets the minimum."
+
+7. Set grade: B.
+
+The deep dives are strong and the cost guide is genuinely excellent, but the
+hub contradicts them on the two numbers a new keeper is most likely to get
+wrong, and the whole diet subject has no article of its own.
+
+Two changes first: rebuild the hub so every number on it comes from the deep
+dive that owns it, and write a green iguana feeding guide so the 60/30/10
+ratio, the greens list, the avoid list and the calcium schedule live on a page
+the Deep Dive list actually shows.
+
+8. Not covered anywhere.
+
+- The diet itself: ratio, which greens, which to avoid, portion size, how often
+  to feed, and the calcium and multivitamin schedule. Checked against the
+  Health and More list: the safe weeds guide covers what is safe to forage, not
+  what a daily salad is or how often it is fed. No page in the set answers it.
+- What a green iguana's cold floor is in an outage. The reptile emergency plan
+  guide's species table does not list this species; its fallback rule is to use
+  the tank setup guide's documented nighttime low, which here is "the low
+  70s°F," so this is covered only by inference.
+- How long an iguana can be left alone, and what a sitter needs to be told for
+  an animal this size. The emergency plan guide answers it generically for
+  lizards and never for a six foot herbivore that needs daily fresh produce.
+
+## Conure (2026-09-09)
+
+NOTE FOR THE PARENT SESSION: no Agent/Task tool was exposed in this worker
+session (it is itself a subagent), so no separate Opus reader agent could be
+launched. The set test below was run inline against
+/home/user/beastlyfactss/.reader/conure/ using the set test prompt from
+READMEFIRST verbatim, reading the seven extract files in filename order
+before the hub was touched. It is the reader pass, not a summary of one, and
+it is reproduced here raw. Treat its independence as weaker than a real
+second-agent pass: the same session later did the fixes.
+
+---
+
+1. One line per page.
+
+- 00 care guide hub, grade B-. I would finish it, and it is the only page that
+  gives me a shopping checklist, but it is a third care sheet rather than a
+  front door: housing, diet, enrichment and health are all restated here at
+  length, and two of its numbers do not match the articles it points at.
+- 01 encyclopedia, grade B. Under a minute. The mutation history (yellow-sided
+  as a sex-linked opaline, Garvin crossing to make the pineapple) is the only
+  part I could not get elsewhere, and none of it changes what I do.
+- 02 cost guide, grade B. Useful ranges and an honest line about avian vets
+  being hard to find, but its own FAQ quotes different prices from its own
+  table for the same three items, which is exactly the page I would have
+  screenshotted before shopping.
+- 03 handling guide, grade A-. The "reading a beak, not just a bite" framing is
+  the thing I would have gotten wrong, and the sexing section is unusually
+  blunt about what does not work.
+- 04 health issues guide, grade A-. Real thresholds, a clean emergency list,
+  and a closing husbandry pattern that ties every disease back to a cause.
+- 05 tank setup guide, grade A. The page I would actually shop from. Cage size
+  stated as a floor rather than a target, bar spacing, UV hours, and a safety
+  paragraph that names Teflon.
+- 06 enrichment guide, grade A. Honest that no conure study exists and says so
+  in the first line of the research section instead of dressing up borrowed
+  evidence. The priority order at the end is the most actionable list in the set.
+
+2. The hub and the encyclopedia.
+
+The encyclopedia earns its place, barely, on natural history. The hub does not.
+Its housing, diet, enrichment and health sections restate the deep dives in
+different words, and where the words differ so do the numbers.
+
+- Bar spacing. Hub: "Bar spacing of 1/2 to 3/4 inch prevents head entrapment."
+  Tank setup: "Bar spacing should be 1/2 to 5/8 inch maximum to prevent head
+  entrapment or escape." I am buying a cage off one of these two numbers and
+  they are not the same ceiling.
+- Cage size. Hub: "A minimum cage of 24x24x30 inches is required for a green
+  cheek conure, though 24x24x36 inches or larger is strongly preferred." Tank
+  setup: "24x24x30 inches is the minimum most sources list for a single adult,
+  but treat that as a floor, not a target. Bigger is always better, aim for 30
+  to 36 inches or more in multiple dimensions." The hub's preferred size is one
+  dimension taller; the deep dive's is bigger in several. Different advice.
+- Lifespan. Hub, twice: "Green cheek conures can live 15 to 25 years" and "15
+  to 25 years with excellent care." Cost guide: "20 to 25 years or more is the
+  commonly cited range, with some individuals reaching 30 years under excellent
+  care." Encyclopedia: "25 to 30 years in the wild... though the captive
+  average is nearer 10 years." Three different bottom ends on the page I am
+  using to decide whether I can commit.
+- Setup costs. The hub's setup table has four rows. The cost guide's has seven,
+  and the two extra ones (UV lighting $40 to $100, dishes and cover $30 to $70)
+  are things I would have to buy. The hub is quietly cheaper than the truth.
+
+3. The set as a whole.
+
+I could buy, house and keep this bird from this set. I could not feed it well
+from it. There is no conure feeding guide. Daily diet exists only on the hub
+("pellets... 60 to 70% of a green cheek conure's nutritional intake", the
+vegetable list, the avocado and chocolate list), and the hub is the one page
+the deep dives do not stand behind. The health guide tells me an all-seed diet
+causes fatty liver and says to feed "a quality pelleted diet alongside fresh
+vegetables", which is a direction, not a diet.
+
+Stranded questions, answers sitting on another page in the set without either
+page saying so:
+- The health guide's whole viral section rests on "prevention through
+  quarantine" and never says how long. The sidebar's quarantine guide has the
+  number.
+- The handling guide blames nippiness partly on "hormonal adults" and stops.
+  The photoperiod and sleep guide in the sidebar says what makes a bird
+  hormonal.
+- The cost guide bills "toy and enrichment replacement... $10 to $30 a month"
+  and never says what rotation means. The enrichment guide is entirely about
+  that.
+
+4. Overlap and conflict across the deep dives.
+
+The deep dives agree with each other better than the hub agrees with any of
+them. 24x24x30, 65 to 80°F, 10 to 12 hours of dark, the snuggle pouch and the
+Teflon warning all repeat and never disagree. What I read twice: the pineapple
+mutation explanation appears as a FunFact on the cost guide and again as a
+FunFact on the tank setup guide in almost the same words, and the "a conure's
+beak is a tool, not a weapon" line is a FunFact on the handling guide and again
+a FunFact on the health guide.
+
+One real internal conflict, all inside the cost guide:
+- Its setup table says the cage is "$100 - $180", perches "$20 - $40",
+  foraging toys "$30 - $60".
+- Its own FAQ says "a cage (minimum 24x24x30 inches, $150 to $450), perches
+  ($30 to $80), toys and foraging items ($40 to $120)".
+The UV and dishes figures in that FAQ do match the table, so this reads as
+three cells copied from somewhere else rather than a considered second
+estimate.
+
+Two softer ones I would want an editor to look at:
+- The annual table prices "Annual avian vet check | $70 - $120" while the vet
+  section of the same page says "A routine wellness exam commonly runs $80 to
+  $160."
+- The annual table prices "Toys (rotating) | $50 - $90" while the paragraph
+  under it says toy replacement is "$10 to $30 a month", which is $120 to $360
+  a year.
+- Tone rather than number: the hub sells "the apartment parrot" and the
+  enrichment guide says "Do not buy a conure expecting a quiet bird" and
+  "Conures are loud for their size". Both are defensible (the enrichment guide
+  is about conures generally and names sun conures), but read back to back
+  they pull opposite ways.
+
+5. One link per page.
+
+- Hub: "Pellet transition from seeds typically takes weeks of patient gradual
+  mixing." to the pellet conversion guide.
+- Encyclopedia: none needed, it is a data page.
+- Cost: "regular rotation is a real part of keeping this bird mentally healthy,
+  not an optional extra" to the enrichment guide.
+- Handling: "and in hormonal adults" to the photoperiod and sleep guide.
+- Health issues: "Prevention through quarantine, testing new birds, and
+  sourcing from reputable breeders is critical" to the quarantine guide.
+- Tank setup: "Maintain a consistent day and night photoperiod" to the
+  photoperiod and sleep guide, and "rotate foraging toys and general toys
+  frequently" to the enrichment guide.
+- Enrichment: "Ten to twelve hours of dark quiet sleep, which is the invisible
+  cause of a lot of parrot behavior problems." to the photoperiod and sleep
+  guide.
+
+6. Trust.
+
+What made me doubt them: the cost guide quoting two different prices for the
+same cage on the same page, and the hub carrying a shorter lifespan than the
+article it links to. Neither reads as invented, both read as unedited, and both
+sit on the two pages a buyer actually reads first. The cost guide also carries
+only two sources for a page full of dollar figures, neither of which is a price
+source.
+
+The sentence that most convinced me a person who keeps these birds wrote this,
+from the enrichment guide: "Supply it deliberately and they wreck the supply.
+Do not supply it and they wreck the cage, the furniture, or their own
+feathers." Close second, from the same page, on the sleeping pouch: "Frayed
+threads and chewed holes are how birds get toes caught, and a conure will chew
+the pouch. Replace it. Do not repair it."
+
+7. Set grade: B.
+
+The deep dives are consistent, honest about what is not known, and genuinely
+useful. The hub is a fourth opinion that undercuts them, and the cost guide
+disagrees with itself on the one table a buyer prints.
+
+Two changes first: make the cost guide's FAQ quote its own table, and stop the
+hub stating numbers of its own.
+
+8. Not covered anywhere.
+
+- What a green cheek conure eats day to day, in amounts: how much pellet, how
+  much vegetable, how often fruit. Checked against the Health and More list.
+  The pellet conversion guide covers switching a bird onto pellets and the
+  droppings guide covers the output, but nothing in the set or the sidebar
+  gives a daily diet for this species, and the species has no feeding guide.
+- Nothing else. Quarantine length, hormones and photoperiod, wing clipping,
+  nail and beak care, sexing, body language, first aid, egg laying, household
+  hazards and power outages are all covered by the shared guides in the
+  sidebar, so I am not calling any of those a gap.
+
+## Rat (2026-09-09)
+
+Process note for the parent session, not part of the reader output: no Agent
+tool was exposed to this worker session (ToolSearch returns no Agent/Task
+tool), so no reader subagent could be launched. The set test prompt was run
+directly by this worker against `/home/user/beastlyfactss/.reader/rat/`,
+reading only those eight files, in filename order, before the hub was
+touched. What follows is that read, unedited.
+
+---
+
+Eight pages, read in order. The hub here is the pre-rewrite hub.
+
+**1. Page by page.**
+
+- 00 care guide hub, C+. I would skim it, not finish it. It is a fourth care
+  sheet: housing, diet, enrichment and health prose that the six deep dives
+  already carry, plus two cost tables. What I can act on is the checklist,
+  and the checklist is where its numbers stop matching the articles it sits
+  on top of.
+- 01 encyclopedia, B. Origin, adult size, the Wistar Institute history.
+  Nothing here changes what I do, but the size line and the wild lifespan
+  line are the only places on the site that carry them.
+- 02 cost, A-. The page I would screenshot. It prices the pair rather than
+  the animal, and it is honest that the cage is what swings the total.
+- 03 handling, A. The tail degloving rule and the explanation that
+  allogrooming is not biting are worth the page on their own.
+- 04 health issues, A. The 95% rattery figure and the two-year chronic
+  outlook turn cage cleaning from a chore into a lifespan decision.
+- 05 enclosure setup, A-. The tank-versus-wire-cage argument is the
+  best-reasoned thing in the set, because it names the mechanism.
+- 06 feeding, A-. Names actual guaranteed analyses instead of waving at
+  "a good quality food".
+- 07 enrichment, A. Seven categories I can audit my own cage against.
+
+**2. Hub and encyclopedia against the deep dives.** The encyclopedia earns
+its place; the hub does not, it repeats them and then disagrees with them.
+
+- Cage size. Hub: "A commonly cited minimum is 16x28x30 inches with multiple
+  levels for a rat." Setup guide: "PetMD lists 24x24x24 inches as the
+  minimum for a single rat and recommends the largest habitat possible
+  beyond that." Two different minimums, neither cross-referenced.
+- Temperature. Hub: "Keep the room roughly 65 to 80 degrees F without big
+  swings." Setup guide: "RSPCA guidance puts the ideal range at 19 to 23°C,
+  roughly 66 to 73°F, and rats generally do fine across a somewhat broader
+  64 to 79°F band."
+- Wheel. Hub: "at least 12 to 14 inches in diameter." Setup guide: "at least
+  12 inches in diameter, with many experienced keepers and rescues
+  recommending 14 to 16 inches for adult rats, especially males."
+- Cage price. Hub table: "24x24x36 in multi-level cage | $130 | $260." Cost
+  guide table: "$130 - $360" for the same cage line. Three more hub cost
+  rows are off by a few dollars against the cost guide (bedding, dishes and
+  bottle, thermometer).
+
+**3. The set as a whole.** Yes, I could set up, buy, feed and keep a pair of
+rats from these pages, and I would know which mistake matters most. What is
+missing: the setup guide tells me heat stress is a real risk above about
+86°F and never tells me what it looks like or what to do; nothing anywhere
+tells me how to introduce two rats to each other, which matters for a
+species the same set tells me four times must never live alone; and beyond
+"spaying a female before 7 months lowers her risk", nothing says whether to
+neuter, or what it costs.
+
+**4. Overlap and conflict across the deep dives.** I read the never-alone
+rule on four pages and the ammonia mechanism on three, and both agree every
+time, which reads as reassuring rather than padded. Two numbers do not
+agree. The cost guide's table sells a "24x24x36 in+ multi-level wire cage"
+while the setup guide's sourced minimum is "24x24x24 inches"; and the cost
+table's "Solid-surface exercise wheel, 12 in or larger" sits against the
+setup guide's "ideally 14 to 16 inches for an adult". Neither is a
+contradiction exactly, but I had to work that out myself.
+
+**5. One link per page.**
+
+| Page | Sentence | Should point to |
+|---|---|---|
+| Hub | "rats with chronic respiratory disease rarely live past 2 years" | health issues guide |
+| Encyclopedia | no slot for one | |
+| Cost | "mammary tumor removal is one of the more common surgical costs in this species" | health issues guide |
+| Handling | "Daily handling, playtime, and supervised time outside the cage matter for a rat's wellbeing" | enrichment guide |
+| Health issues | "a thermometer to confirm the room isn't running colder, damper, or draftier than it should" | enclosure setup guide |
+| Enclosure setup | "heat stress becomes a real risk above about 86°F" | nothing in this set covers the signs |
+| Feeding | "obesity is common in pet rats and that calorie restriction... is one of the few interventions actually shown to extend their lifespan" | health issues guide, pituitary tumors |
+| Enrichment | "a cage that fits a group is the first purchase" | enclosure setup guide |
+
+**6. Trust.** The hub is what made me doubt them: four numbers on the page
+the navigation lands on first do not match the articles underneath it. The
+deep dives themselves cite Merck, RSPCA, PDSA, VCA, PetMD and AFRMA by name
+and say when sources differ, which is the opposite problem. The sentence
+that most convinced me a keeper wrote this, from handling: "A rat's tail
+skin can shear away from the tissue underneath under pulling or grasping
+pressure, an injury called degloving or tail slip, and it's specifically
+caused by exactly this kind of handling."
+
+**7. Set grade: B+.** The deep dives are specific, sourced and consistent
+with each other; the hub sitting in front of them contradicts four of their
+numbers. Two changes first: make the hub carry the articles' numbers or
+none, and tell me what heat stress looks like on the page that warns me
+about it.
+
+**8. Not covered anywhere.** Checked against the Health and More list, which
+shows only the vet trips guide, the grooming guide and the three-rodent
+roundup.
+
+- The signs of heat stress and what to do about them. The shared small
+  mammal heat and cold guide is not in this species' sidebar.
+- How to introduce two rats to each other.
+- Whether to neuter, and what it costs.
+- What to do for a pair in a heatwave or a power outage.
+
+## Hermit Crab (2026-09-09)
+
+Process note, recorded because it changes how this entry should be read:
+this session had no Agent/Task tool available, so no reader subagent could
+be launched. The set test prompt from READMEFIRST.md was run in-session by
+the species agent itself against the seven plain-text pages in
+/home/user/beastlyfactss/.reader/hermit-crab/, read in filename order,
+before the hub was rewritten. The text below is that pass, unedited.
+
+---
+
+1. One line per page.
+
+00 Care guide hub, grade B-. I would finish it, and it is the only page
+that gives me a shopping list and a checklist in one place, but it reads
+as a third care sheet rather than a front door, and three of its numbers
+do not match the setup guide it is sitting on top of.
+
+01 Encyclopedia, grade B+. Short and I finished it. The history is the
+only thing in the set I could not get anywhere else: 1953, a souvenir
+shop in West Palm Beach, the Crazy Crab pitched as a moving Pet Rock,
+and Mary Akers raising 204 crabs to land in 2018. Nothing here changes
+what I buy.
+
+02 Cost, grade B+. Actionable. I know the crab is the cheap part and the
+tank is not. The table's tank line and the stated total sit oddly next to
+each other, and the page tells me to buy at least two crabs without
+pricing a tank that holds a group comfortably.
+
+03 Handling, grade A-. The section on how long a crab stays buried is the
+most useful paragraph in the whole set. Days to over a week for a new
+crab, several weeks up to around three months for a molt, and a plain
+statement that a still crab is almost always alive. That is the thing
+that stops a beginner from digging one up.
+
+04 Health, grade A-. The framing is honest: essentially no vet care, so
+husbandry does the work. Post purchase stress is explained well enough
+that I would recognize it. It names mites and mold and then tells me
+nothing about what to do.
+
+05 Tank setup, grade A. The numbers page. Humidity, temperature,
+substrate ratio and depth, two water dishes, shells, lighting. I would
+print this one.
+
+06 Enrichment, grade A. Unexpected. It cites Elwood and Appel on crabs
+abandoning a shell to escape a shock, and shows Briffa disagreeing with
+Elwood instead of pretending the question is settled. The priority order
+at the end is the single most useful list in the set.
+
+2. Hub and encyclopedia. The encyclopedia earns its place on history
+alone. The hub does not: it restates housing, diet, enrichment, and
+health in full, and where it restates them it gets three numbers wrong.
+Hub: "Humidity must stay at 70 to 80%." Tank setup: "Maintain 75 to 85%
+relative humidity." Hub: "always have 2 to 3 spare empty shells per
+crab." Tank setup: "Offer multiple natural, unpainted shells per crab,
+ideally 3 to 5 or more." Hub: "a sand and coconut fiber mix at least
+three times the crab's body length." Tank setup: "at least 6 inches, or
+about 3 times the height of your largest crab." Body length and height
+are not the same measurement on an animal that lives sideways in a
+shell. Also hub cost table: "10-20+ gallon tank (for a group) $60 to
+$120" against the cost guide's "10-gallon tank (2 to 3 small crabs) $30
+- $100."
+
+3. The set as a whole. Yes, I could set up, buy, feed, and keep these
+animals. What is missing: the health guide says to "quarantine and
+isolate new crabs" and never says for how long, in what, or how I know
+it is over. Every crab is wild caught, per that same page, so the
+quarantine question is not a small one. Nothing tells me how to mix the
+saltwater to strength beyond "an aquarium salt mix, never table salt."
+Nothing tells me what to look at when choosing a crab in a shop, which
+matters more here than for a captive bred animal. And mites get named as
+a problem with no treatment.
+
+4. Overlap and conflict across the deep dives. Diet appears in the tank
+setup guide and again in the enrichment guide, but they say different
+things and both are worth reading: one is what to feed, the other is to
+scatter it rather than bowl it. Substrate depth appears three times and
+agrees each time. Shell counts agree: 3 to 5 or more, several per crab.
+Molt duration agrees across handling, health, and the shared molting
+guide. I found no number that two deep dives disagree on. The
+disagreements are all hub against setup guide.
+
+5. One link per page.
+
+Hub: "Molting is a vulnerable, weeks-long underground process" should go
+to the handling guide, which is where the actual duration lives.
+Encyclopedia: "they can live for decades with proper care" should go to
+the cost guide, which is where the lifespan figure sits.
+Cost: "Most hermit crab health problems trace straight back to that
+gap." should go to the health issues guide. That sentence names a whole
+page and then leaves me nowhere.
+Handling: none needed, it is the best linked page here.
+Health: "matter so much in this species' housing, covered in more detail
+in the tank setup guide." names the guide and does not link it, which is
+worse than saying nothing.
+Tank setup: "a crab that's buried or molting underneath" should go to
+the molting guide.
+Enrichment: "Depth should let the largest crab bury completely with room
+to spare." should go to the tank setup guide, which turns that into
+inches.
+
+6. Trust. The 70 to 80 against 75 to 85 is the thing that bothers me,
+because humidity is the number this whole species hangs on and the hub
+is the first page I landed on. Nothing reads as invented. The sentence
+that most convinced me a keeper wrote this, from enrichment: "Do not
+supply one spare shell for a group, because that creates competition
+over a resource the research shows they weigh heavily."
+
+7. Set grade B+. Everything a keeper needs is here, and the setup and
+enrichment pages are better than most of what is online, but the hub
+contradicts the setup guide on three of the four numbers that matter
+most. Two changes first: make the hub stop restating the setup guide's
+numbers, and give the health guide's quarantine advice a duration.
+
+Not covered anywhere:
+- How long a new hermit crab should be quarantined, in what, and how you
+  know the period is over.
+- What to do about mites once they appear, beyond correcting hygiene.
+- How to mix marine saltwater to the right strength.
+- What to look at when choosing a crab in a shop, given every one is
+  wild caught.
+
+## Box Turtle (2026-09-09)
+
+Note on provenance: no Agent/Task tool was available in this session, so the
+set test could not be delegated to a background Opus subagent as the batch
+prompt specifies. The pass below was run in-session against
+/home/user/beastlyfactss/.reader/box-turtle/, reading 00 through 07 in
+filename order under the set test prompt from READMEFIRST.md, before any
+repo file outside the extract was opened for the hub work. It is the reader's
+output, not a summary of it.
+
+---
+
+**1. One line per page.**
+
+00 care guide hub. Finished it, and it is the page I would act on, which is
+the problem: it is a full care sheet, not a router. Housing, diet,
+enrichment, health, a checklist, a cost table, eight FAQs. Grade C.
+
+01 encyclopedia. Short, and the history section is the best thing in the set:
+70 to 74 percent declines, 30,000 turtles out of Louisiana in 41 months, the
+1994 CITES proposal. Nothing to act on, which is fine for what it is.
+Grade B+.
+
+02 cost guide. The most useful page here. Real arithmetic I can check: greens
+at USDA per-pound prices, mealworms at $7.70 per 500, 45 kWh at 18.34 cents.
+The lifespan section is the one part I do not believe. Grade B+.
+
+03 handling guide. Would finish. The sexing section is careful in a way the
+hub's is not, and the semi-terrestrial section actually explains the animal.
+Grade B+.
+
+04 health issues guide. Short but well built: it links vitamin A deficiency
+to respiratory infection twice and makes the connection the point. No sources
+at all, which for a medical page is a problem. Grade B-.
+
+05 tank setup guide. The page I most need and the one that leaves the most
+out. Not one temperature number in the Temperature section. Grade C+.
+
+06 enrichment guide. The best-argued page in the set. One study, described
+honestly, with a priority order that follows from it. One sentence is
+garbage: "Other bag sizes are available and a proper depth wants the larger
+ones." Grade A-.
+
+07 legal guide. Long and genuinely researched, statute by statute, and it
+tells me when a rule is unsettled instead of pretending. Grade A.
+
+**2. The hub and the encyclopedia.**
+
+The encyclopedia earns its place. The hub does not. It repeats the diet, the
+housing, the health list, and the enrichment argument that four deep dives
+already make, and where it repeats them it changes the numbers.
+
+Disagreements, both sides quoted:
+
+Substrate depth. Hub: "deep, moist substrate (coconut coir/topsoil mix, 6
+inches or more deep)" and the checklist item "OR large indoor tortoise table
+with 6 inch+ moist substrate". Tank setup guide: "Wood chips or a topsoil and
+coconut fiber mix, at least 2 to 3 inches deep to support burrowing." Two to
+three inches and six inches are not the same instruction.
+
+UVB strength. Hub: "UVB (T5 HO Arcadia 6 to 12%)". Tank setup guide: "A T5 HO
+bulb (6% strength or the equivalent Zoo Med ReptiSun 5.0 T5 HO)". A 12 percent
+bulb is roughly double a 6 percent one.
+
+Basking temperature. Hub: "a basking spot (85 to 88 degrees F)". Tank setup
+guide: "Provide a clear warm basking zone with a gradient down to a cooler
+area, using an indoor heat source." The deep dive gives no number at all, so
+the hub's precise 85 to 88 rests on nothing I can check.
+
+Captive lifespan. Hub: "captive animals routinely live into their 50s and
+60s with good care." Cost guide: "30 to 40-plus years in captivity, with wild
+box turtles averaging around 50 years." Those cannot both be right, and the
+cost guide's version has captivity shortening a box turtle's life by a
+decade against the wild, which reads backwards.
+
+Juvenile protein. Hub, twice: "Juveniles need more protein (60 to 70%) for
+growth." No deep dive says this. The tank setup guide only says "roughly half
+animal matter and half plant matter."
+
+Costs, line by line. Hub setup: outdoor enclosure or tortoise table $150 to
+$400, UVB $60 to $100, basking bulb $20 to $40, substrate $25 to $45, soak
+dish $10 to $20. Cost guide: enclosure $202 to $258, "T5 HO UVB fixture and
+bulb | $95 - $115", "a basking bulb runs roughly $8 to $14, with a basking
+dome fixture adding another $12 to $20", "Coconut fiber substrate | $10 -
+$16", "Large soak-able water dish | $18 - $30". The hub's basking bulb is
+triple the deep dive's. Annually the hub bills "UVB bulb replacement: $60 to
+$100" against the cost guide's "so a $25 tube is $2 to $4 a month", and
+"Annual vet wellness check: $60 to $100" against "A routine exotic exam runs
+$60 to $135".
+
+Sexing. Hub: "Eye color is the fastest tell in most North American box
+turtles." Handling guide: "Eye color gets mentioned constantly, red or orange
+in males versus brown in females, and it does hold for eastern and three-toed
+box turtles, but it isn't universal across every box turtle subspecies, so
+treat it as a supporting clue rather than the deciding one." The hub tells me
+to decide on the trait the deep dive tells me not to decide on.
+
+**3. The set as a whole.**
+
+I could buy and legally source one, and I could feed it. I could not
+confidently heat it. The tank setup guide's Temperature section is four
+sentences with no degrees in them, and the only basking number anywhere in
+the set is on the hub, unsourced, and lower than I expected. That is the
+single hole.
+
+Second hole, smaller: nothing tells me how much to feed an adult in a
+sitting. The cost guide mentions in passing that "adults eat daily or every
+other day", buried in a paragraph about grocery bills, and that is the only
+feeding frequency in the set. There is no feeding guide.
+
+Questions raised on one page and answered on another without the text saying
+so: the hub tells me to "consult a chelonian-experienced vet for safe
+hibernation protocols" and then stops, and the sidebar's tortoise brumation
+guide has the actual protocol. The handling guide says a box turtle needs
+"regular access to shallow water for soaking" and the tank setup guide has
+the dish size, but neither points at the other. The cost guide's legal
+section summarizes state rules in a paragraph while the legal guide has the
+state-by-state table, and the cost guide never says so in the body.
+
+**4. Overlap and conflict across the deep dives.**
+
+Read twice: the half-animal-half-plant diet, in the cost guide's monthly
+section and again as its own section in the tank setup guide. The
+semi-terrestrial land-and-water argument, in the handling guide and again in
+the tank setup guide, both times well. The outdoor pen, in the tank setup
+guide's body, its FunFact, and the enrichment guide.
+
+The one real number disagreement between deep dives is substrate depth read
+against itself. Tank setup guide: "at least 2 to 3 inches deep to support
+burrowing." Cost guide: "a 4 inch layer in a 36x18 inch indoor enclosure
+takes five or six 8 quart bags at $10 each." Enrichment guide: "Do not use a
+shallow scattering of substrate and call it deep, because the behavior
+depends on being able to get under it." A four-and-a-half to seven inch
+turtle cannot get under two inches. The tank setup minimum is technically
+compatible with the cost guide's four inches, but it is the number a new
+keeper will build to, and the enrichment guide is telling them not to.
+
+**5. One link per page.**
+
+Hub: "consult a chelonian-experienced vet for safe hibernation protocols
+specific to your climate." Point it at the tortoise brumation guide.
+
+Encyclopedia: none needed.
+
+Cost guide: "Wild collection of box turtles is illegal or heavily restricted
+across most of their native range in the US." Point it at the legal guide.
+
+Handling guide: none needed, it already links out three times and two of
+them are useful.
+
+Health issues guide: "Often found incidentally on a routine fecal exam even
+without obvious symptoms, heavier loads cause diarrhea and weight loss."
+Point it at the reptile stool and urates guide, which is the check I would
+run between exams.
+
+Tank setup guide: "though an outdoor pen is genuinely excellent where your
+climate allows, with walls buried deep enough and secured well enough to keep
+predators out." Point it at the outdoor reptile housing guide, which has the
+depth.
+
+Enrichment guide: "a secure outdoor enclosure in suitable weather is the
+highest-quality enrichment available for a box turtle." Same target.
+
+Legal guide: none needed.
+
+**6. Trust.**
+
+What made me doubt them: the hub's cost table against the cost guide's, most
+of all the basking bulb at $20 to $40 versus $8 to $14, because it is the hub
+that reads like it is selling me something and the deep dive that shows its
+work. The health issues guide having no sources under a page about antibiotics
+and metabolic bone disease. The tank setup guide having no sources either.
+And the hub's "85 to 88 degrees F", a two-degree-wide precision on a number
+nothing else in the set repeats.
+
+The sentence that convinced me a person wrote this: from the legal guide on
+Oklahoma, "The Department's page says outright that it is an interpretive
+summary and not a legal document, so this is a genuine gap between the words
+and the practice rather than a settled six." Nobody assembling a care site
+writes that. It costs the page its clean answer and it is the honest thing to
+say.
+
+**7. Set grade: B-.** The deep dives are good to very good and the legal and
+enrichment guides are better than most of what is online. The hub drags it
+down by contradicting them in public on price, temperature, substrate, UVB,
+and lifespan, and the tank setup guide leaves out the one number a new keeper
+needs on day one.
+
+The two changes I would make first:
+1. Put real temperature numbers in the tank setup guide, from a source, and
+   delete the hub's 85 to 88 rather than move it.
+2. Make the hub stop repeating the deep dives. Every figure on it should be
+   one the article it links to already states.
+
+**Not covered anywhere.**
+- A basking surface temperature for a box turtle, from any source. The shared
+  reptile heating and thermostats guide covers thermostats and probe
+  placement, not this species' target.
+- How much an adult box turtle eats in one sitting, and portion size at all.
+  No feeding guide exists for this species and no shared guide covers it.
+- What to do about a box turtle's homing instinct in practice. The hub warns
+  that "even a few miles can disorient them fatally" and nothing, shared or
+  otherwise, says what that means for an escape or a move.

@@ -3654,6 +3654,31 @@ in one review section.
   itself, Mike's original text is editable when it helps the reader.
 - The linking pass across all 532 series guides.
 - This file and scripts/reader-extract.mjs.
+- 2026-09-09, batch D, five species in parallel (branch
+  claude/batch-d-opus-agents-7jgjwi). Green iguana: enrichment's "five to six
+  feet" corrected to LafeberVet's "six feet or more" against handling's 6 to 7,
+  encyclopedia adultSize and overview brought to the same figure, wildLifespan
+  moved off a captive number to Animal Diversity Web's "about 8 years" in the
+  wild, five links added. Conure: the cost guide's setup FAQ reconciled to its
+  own table on cage, perches and toys, six links added, SHORT_LABELS gained
+  pellet-conversion-guide. Rat: an unsourced 24x24x36 cage dimension dropped
+  from a cost table cell in favor of the setup guide's sourced PetMD 24x24x24,
+  the shared heat and cold guide wired into the rat entry so it reaches the
+  sidebar, four links added. Hermit crab: four hub conflicts resolved by
+  retiring hub prose rather than editing a sourced deep dive, and the
+  enrichment guide's "most common way these animals die" superlative given up
+  to the health guide's sourced PPS claim. Box turtle: VCA's 60 F outdoor floor
+  replacing an unsourced 70 F on the deep dive and in the shared reptile
+  emergency plan guide's species row, VCA's 90 to 100 F basking zone added to a
+  temperature section that carried no number at all, and Indiana DNR's
+  documented 60-plus year lifespan replacing a figure that had captivity
+  costing a turtle a decade against the wild, corrected in all five places it
+  appeared.
+- 2026-09-09, batch D process: the species workers had no Agent tool, so none
+  could launch its own reader and each read its own set. Five independent Opus
+  readers were run afterwards from the session against the same pre-rewrite
+  extracts, then five Opus check agents, one per species, report-only with the
+  parent applying every fix. Every species checked out at pass grade A-.
 - 2026-09-08, rabbit and bearded dragon (branch claude/hub-rabbit-bd):
   both hubs rebuilt as router hubs (RULES, Hubs), every number copied from
   a deep dive and linked to it, emergency card from the health guide,
@@ -4149,3 +4174,1126 @@ in one review section.
   emergency card's feeding-guide bullet and Karo line cut, and two
   old-hub FAQs replaced with deep-dive copies. VCA feeding split and
   PubMed 10649752 both verified real. Pass grade B-. Nothing merged.
+
+## Green Iguana (2026-09-09, first pass)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment). Batch D. The hub was still the legacy care sheet when
+the set was extracted, so the hub conflicts below are against the old shape and
+were resolved by the router rewrite in the same pass.
+
+Process note: this session had no Agent tool, so the set test was run
+first-party by the batch worker against `.reader/green-iguana/` using the
+READMEFIRST set test prompt, rather than by a separate Opus reader agent. Raw
+output is in docs/READER_LOG.md under the same heading. Treat the grades as a
+first-party read.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub (legacy shape) | C+ | A third care sheet, and where it differs from the deep dives it is wrong. |
+| Encyclopedia | B- | The CITES and import history is the best thing on it; the size and lifespan lines do not match the deep dives. |
+| Cost | A | The only page anywhere that admits you cannot buy an enclosure meeting the published minimum, then prices the three ways out. |
+| Handling | A- | Short, and every line changes what you do: approach from the side, never the tail, expect the male to change in season. |
+| Health issues | B+ | Organized around husbandry and unambiguous about the vet, thin on what any of it looks like day to day. |
+| Tank setup | A- | The three numbers that matter, on a very short page for the most consequential subject in the set. |
+| Enrichment | A | The only page built on named field research, and honest that the sociality finding does not license cohousing adults. |
+
+Set grade: B. "The deep dives are strong and the cost guide is genuinely
+excellent, but the hub contradicts them on the two numbers a new keeper is most
+likely to get wrong, and the whole diet subject has no article of its own."
+
+Hub versus the set, both sides quoted (all against the legacy hub, all fixed by
+the router rewrite):
+
+- Basking. Hub: "Basking surface temperature should be around 120 degrees F."
+  Tank setup guide: "Basking area 100 to 120°F, cool end around 80°F,
+  nighttime not dropping below the low 70s°F." The hub printed the top of the
+  range as the target. Fixed: the router hub's Temperature row is the tank
+  setup sentence verbatim.
+- UVB replacement. Hub annual cost row: "UVB bulb replacement (every 6-12
+  months): $111 to $141." Tank setup guide: "replaced every 12 months
+  regardless of whether the bulb still produces visible light." The hub's own
+  housing prose said "Replace it every twelve months," so it disagreed with
+  itself as well. Fixed: costs dropped, UVB row copied from the tank setup
+  guide.
+- Adult size. Hub FAQ: "Four to six feet including the tail, and ten to twenty
+  pounds." Hub housing prose: "becomes a five to six foot lizard." Handling
+  guide: "An adult male green iguana reaches 6 to 7 feet including tail and up
+  to 20 pounds." Fixed: the hub's Adult size row is the handling guide's
+  sentence verbatim, and the old FAQs are gone.
+- Night humidity. Hub: "Humidity of 60 to 80 percent through the day, rising
+  toward 100 at night." Tank setup guide: "60 to 80%." No deep dive supports
+  the night figure. Fixed: prose dropped, Humidity row copied from the tank
+  setup guide.
+- Enclosure. Hub setup table: "Custom PVC/wood enclosure, 8x4x4ft: $650 to
+  $730," two lines under the hub's own checklist item "Adult enclosure plan,
+  10x5x6 ft minimum, before purchase," and against the cost guide's "nothing
+  ready made reaches the ReptiFiles number, which is walk-in territory."
+  Fixed: costs dropped; the buy list carries no prices and names the juvenile
+  box plus "A plan and a budget for the walk-in adult enclosure."
+
+After the rewrite, `check-species-numbers.mjs green-iguana` shows every line
+marked `hub` appearing verbatim in the deep dive its row names. The remaining
+CONFLICT groups are the checker grouping a hub row with the identical source
+sentence, plus cost-guide-internal groupings, plus the encyclopedia lines
+handled below.
+
+Deep dives against each other:
+
+- Adult length. Enrichment guide: "A green iguana reaches five to six feet, and
+  the animal is sold at six inches to people who buy a tank," repeated in its
+  FAQ. Handling guide: "An adult male green iguana reaches 6 to 7 feet
+  including tail and up to 20 pounds," repeated in its FAQ. Cost guide, citing
+  a third source: "LafeberVet puts an adult at 6 feet or more including the
+  tail." Decided for the handling guide. Its Sources carry both figures:
+  LafeberVet's basic information sheet states "Including the tail, adults can
+  reach 1.8 m (6 feet) or more," and Chicago Exotics states "Recorded weights
+  and lengths of adult male iguanas have been as much as 20 pounds and 7 feet
+  respectively." Both opened with WebFetch. The enrichment guide's four sources
+  are the Burghardt sociality papers and the welfare assessment, none of which
+  state a length. Fixed in the enrichment guide, body and FAQ.
+- Not conflicts, left alone: the cost guide's section heading "Lifespan: 15 to
+  25 years, if the iguana survives its first year" over a body that says "15 to
+  20 years, sometimes 25" (the heading is the envelope of the body figure), and
+  the cost guide's $60 to $150 monthly total over its own itemized $30 to $50
+  produce plus $20 to $50 electricity (supplements and substrate are named in
+  the same sentence).
+
+Gaps, checked against the sidebar's Health and More list before being called
+real:
+
+- The diet. This species has no feeding guide. The 60/30/10 greens, vegetables
+  and fruit ratio, the greens to build on, the avoid list (spinach, kale in
+  quantity, beet greens, chard, iceberg) and the calcium and multivitamin
+  schedule existed only in the legacy hub's diet prose, which the router
+  rewrite removes. The health guide carries the no-protein rule and the
+  enrichment guide carries the foraging method, and both are now hub rows, but
+  no page states the ratio or the schedule. The shared safe weeds and wild
+  plants guide covers what is safe to forage, not what a daily salad is. Real
+  gap, and the largest thing open on this species.
+- Cold floor in an outage. The reptile emergency plan guide's species table
+  does not list the green iguana. Its stated fallback is to use the species'
+  tank setup guide nighttime low, which here is "the low 70s°F." Covered by
+  inference only; the hub's Power outage row now says exactly that, quoting the
+  emergency plan guide's own rule.
+- Time alone and sitter instructions for an animal this size. The emergency
+  plan guide answers generically for lizards, never for a six foot herbivore
+  needing daily fresh produce. Open.
+
+Stranded questions (a page raises it, another page in the set answers it,
+neither says so):
+
+- Health guide: kidney disease follows "chronic dehydration from low humidity,"
+  and the page never says what humidity is. The tank setup guide's "60 to 80%
+  ... Chronically low humidity is directly linked to dehydration and kidney
+  disease" is the same sentence from the other end. Not linked: the health
+  guide's one allowed sibling link is better spent, and the hub's Humidity and
+  Diet rows now sit next to each other. Listed here rather than fixed.
+- Health guide: burns come from "heat sources positioned where the iguana can
+  contact them directly," which is the entire subject of the shared reptile
+  heating and thermostats guide. Fixed with a link.
+- Cost guide: "produce alone commonly runs $30 to $50 a month," with a shared
+  safe weeds and wild plants guide covering iguanas by name. Fixed with a link.
+- Handling guide: "Housing two males together, expect real fighting," full
+  stop, while the enrichment guide has the field research on why. Fixed with
+  the article's one allowed sibling link.
+- Enrichment guide: "Do not skip parasite screening," with the shared
+  quarantine guide holding the fecal screen and the intake workup. Fixed with a
+  link.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Kidney disease and gout follow from animal protein and chronic dehydration." | Health issues guide | Not applicable, the prose is gone and the router rows link their own sources |
+| Encyclopedia | "the classic mistakes are protein and insufficient calcium" | Health issues guide | Skipped, encyclopedia is out of scope for links |
+| Cost | "produce alone commonly runs $30 to $50 a month, with electricity adding another $20 to $50." | Safe weeds and wild plants guide | Added |
+| Handling | "Housing two males together, expect real fighting." | Enrichment guide | Added, the one sibling link this article is allowed |
+| Health issues | "burns come from heat sources positioned where the iguana can contact them directly" | Reptile heating and thermostats guide | Added |
+| Tank setup | "Glass blocks UVB entirely, so a sunny window is never an adequate substitute." | UVB lighting guide | Added |
+| Enrichment | "Do not skip parasite screening, given what the captive welfare assessment found." | Reptile quarantine guide | Added |
+
+Trust: the doubt was all on the hub, a page printing 120°F as the basking
+target while its own setup guide gives a 100 to 120°F band, and pricing an
+8x4x4 box two lines under a checklist demanding 10x5x6. Nothing in the deep
+dives read as invented. The sentence that most convinced the reader a keeper
+wrote this, from the cost guide: "The two ready made boxes on that table reach
+6 or 8 feet long but stop at 2 feet deep and 4 feet tall, so they are a
+compromise on even the LafeberVet floor. That is what 'no commercial tank is
+large enough' means above: you can buy a box, but not one that meets the
+minimum."
+
+Reader's two changes: rebuild the hub so every number comes from the deep dive
+that owns it (done), and write a green iguana feeding guide so the diet ratio,
+the greens list, the avoid list and the calcium schedule live on a page the
+Deep Dive list shows (open, out of scope for this pass).
+
+Encyclopedia: two fields conflicted with a deep dive's sourced figure, both
+researched with real opened sources before changing.
+
+- `adultSize` read "4-6 feet (1.2-1.8 m) including tail; 10-20 lbs" against the
+  handling guide's sourced "6 to 7 feet including tail and up to 20 pounds."
+  LafeberVet's basic information sheet ("Including the tail, adults can reach
+  1.8 m (6 feet) or more") and Chicago Exotics Animal Hospital ("Recorded
+  weights and lengths of adult male iguanas have been as much as 20 pounds and
+  7 feet respectively") both open on the figure. Changed to "4-6 feet (1.2-1.8
+  m) including tail, adult males recorded to 7 feet; 10-20 lbs", which keeps
+  the existing typical range and adds the sourced male maximum instead of
+  replacing a figure wholesale.
+- `wildLifespan` read "15-20 years", which is the same number the cost guide
+  gives for a well-kept captive animal ("With excellent care, green iguanas
+  live 15 to 20 years, sometimes 25") and which LafeberVet also gives as a
+  captive figure ("Green iguanas can live up to 15-20 years when cared for
+  properly"). A captive number in a wild field. Animal Diversity Web (Michigan
+  Museum of Zoology) states "wild iguanas are thought to live only about 8
+  years" and that iguanas "can live for more than 20 years in captivity."
+  Changed to "About 8 years in the wild (Animal Diversity Web); the widely
+  quoted 15-20 years is a captive figure", the same shape the crested gecko and
+  other entries already use.
+- Left alone deliberately: the entry's `overview` still says "An adult is five
+  to six feet long ... and lives twenty years." It carries the same two
+  looseness's as the fields above, but the batch prompt scopes encyclopedia
+  edits to the field that conflicts, and the overview is prose that would need
+  rewriting rather than a field correction. Flagged for the species check.
+
+Fixed the same day: the hub rebuilt to the router shape (21 first-week rows, a
+12 bullet emergency card, 10 bullets off the health guide's four call-the-vet
+passages plus burns and impaction, which that guide calls preventable rather
+than a vet call, 5
+routes, an 11 item buy list with no prices, 3 FAQs copied verbatim from
+deep-dive frontmatter, difficulty Advanced matching the encyclopedia); the
+enrichment guide's "five to six feet" corrected to "six feet or more" in body
+and FAQ; five links added as listed above; two encyclopedia fields corrected
+against opened sources.
+
+Not fixed, and why: no lastUpdated bump on the enrichment guide even though a
+number changed, because that article's `date` and `lastUpdated` are both
+2026-10-23 and bumping to 2026-09-09 would date the revision before the
+article's own publication. The other four green iguana articles took link-only
+edits, which by the 2026-09-08 date rule do not bump.
+
+Open: the missing feeding guide; sitter and time-alone guidance for an animal
+this size; the encyclopedia overview's "five to six feet" and "lives twenty
+years"; and the hub's `funFact` still repeating the handling guide's FunFact
+box nearly word for word, which is a hub field rather than a deep dive edit.
+
+## Conure (2026-09-09, first pass)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment). The review reads the old legacy hub
+(housing, diet, enrichment and health prose plus a cost table); the
+router hub was built from its findings the same day. Filed against a
+reader pass run inline rather than by a separate agent: no Agent tool
+was exposed to this worker session, so the same session that did the
+fixes also did the read. Treat its independence as weaker than the
+leopard gecko or axolotl passes. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The only page with a shopping checklist, and a third care sheet that disagrees with the articles it points at. |
+| Encyclopedia | B | Under a minute, and the mutation history is the only part not available elsewhere. |
+| Cost | B | Honest that finding an avian vet is the hard part, but its own FAQ quotes different prices from its own table. |
+| Handling | A- | Reading a beak rather than a bite is the thing a new owner gets wrong, and the sexing section is blunt about what does not work. |
+| Health issues | A- | Real thresholds, a clean emergency list, and a closing pattern that ties every disease back to a cause. |
+| Tank setup | A | The one page a reader would actually shop from. |
+| Enrichment | A | Says in its first research line that no conure study exists instead of dressing up borrowed evidence. |
+
+Set grade: B. "The deep dives are consistent, honest about what is not
+known, and genuinely useful. The hub is a fourth opinion that undercuts
+them, and the cost guide disagrees with itself on the one table a buyer
+prints."
+
+Hub versus the set, both sides quoted (all against the old legacy hub,
+resolved by the router rebuild):
+
+- Bar spacing. Old hub: "Bar spacing of 1/2 to 3/4 inch prevents head
+  entrapment." Tank setup: "Bar spacing should be 1/2 to 5/8 inch
+  maximum to prevent head entrapment or escape." Both are defensible
+  and they are not the same ceiling. PetMD, the only source either page
+  cites, says "The space between the cage's bars should be 3/4-in apart
+  or smaller," which is a maximum; the 1/2 to 5/8 inch figure is the
+  target several husbandry references give inside that maximum.
+  Decided: the tank setup guide keeps 1/2 to 5/8 inch and the router
+  hub copies its sentence. The deep dive is not loosened toward the
+  cited ceiling, because a target inside a maximum is not a
+  contradiction of it and the looser number is the one that gets a bird's head
+  stuck.
+- Cage size. Old hub: "A minimum cage of 24x24x30 inches is required
+  for a green cheek conure, though 24x24x36 inches or larger is
+  strongly preferred." Tank setup: "24x24x30 inches is the minimum most
+  sources list for a single adult, but treat that as a floor, not a
+  target. Bigger is always better, aim for 30 to 36 inches or more in
+  multiple dimensions." The hub's preferred size grew one dimension,
+  the deep dive's grows several. The router hub now quotes the tank
+  setup guide's own sentence.
+- Lifespan. Old hub, twice: "Green cheek conures can live 15 to 25
+  years" and "15 to 25 years with excellent care." Cost guide: "20 to
+  25 years or more is the commonly cited range, with some individuals
+  reaching 30 years under excellent care." The hub's 15 was unsourced
+  and lower than the article it linked to. The router hub's Lifespan
+  row now quotes the cost guide verbatim.
+- Setup cost. The old hub's setup table carried four rows; the cost
+  guide's carries seven, and the two the hub dropped (full-spectrum
+  avian UV lighting and fixture, $40 to $100; dishes, water bottle,
+  cage cover, initial food, and cuttlebone, $30 to $70) are real
+  purchases. The router hub has no cost table at all; its Budget row
+  quotes the cost guide's own headline figures and its buy list carries
+  the seven items with no prices.
+- Out-of-cage time. Old hub: "Minimum 2 to 3 hours of supervised
+  out-of-cage time daily in a bird-safe space is required." No deep
+  dive states a number; the tank setup guide says "several hours of
+  supervised free time daily." The 2 to 3 hours figure existed only on
+  the hub, so it is gone: the router hub's row quotes the tank setup
+  guide instead. Left for Mike: if 2 to 3 hours is a figure worth
+  keeping, it needs a source and a home in the tank setup or handling
+  guide, not the hub.
+
+Deep dives against each other: they agree with each other far better
+than the old hub agreed with any of them. 24x24x30, 65 to 80°F, 10 to
+12 hours of darkness, the snuggle pouch, and the Teflon warning repeat
+across pages and never disagree. Read twice: the pineapple mutation
+explanation is a FunFact on both the cost guide and the tank setup
+guide in nearly the same words, and the "a conure's beak is a tool, not
+a weapon" line is a FunFact on both the handling guide and the health
+guide. Not fixed, both are FunFact boxes and the batch prompt does not
+touch them; this is the same defect class as the 22 boxes in
+READMEFIRST's FunFact prompt, and these four belong on that list.
+
+One real conflict, entirely inside the cost guide:
+
+- Its setup table: cage "$100 - $180", perches "$20 - $40", foraging
+  toys "$30 - $60". Its own FAQ: "a cage (minimum 24x24x30 inches, $150
+  to $450), perches ($30 to $80), toys and foraging items ($40 to
+  $120)". The UV ($40 to $100) and dishes ($30 to $70) figures in the
+  same FAQ do match the table, so three cells were mis-copied rather
+  than independently estimated. Neither cited source (PetMD, Lafeber)
+  states any price at all, so the tiebreak is the same-page rule: the
+  table is the itemization the hub copied, the affiliate products hang
+  off its rows, and the FAQ changed to match it.
+
+Unsourced, needs a fact-check:
+
+- The cost guide's annual table prices "Annual avian vet check | $70 -
+  $120" while its own vet section says "A routine wellness exam
+  commonly runs $80 to $160." Both unsourced, both on the same page,
+  and no source in the block carries prices. Not touched, because
+  moving either one changes a total the page also states.
+- The same table prices "Toys (rotating) | $50 - $90" a year while the
+  paragraph under it says toy replacement runs "$10 to $30 a month",
+  which is $120 to $360 a year. Same reasoning, not touched.
+- "with some individuals reaching 30 years under excellent care" in the
+  cost guide. Neither cited source states 30: PetMD says "20+ years
+  with proper care", Lafeber says "up to 25 years or more with proper
+  care" and lists "Up to 20 years" in its quick facts. The number is
+  hedged and pre-existing, so it stays, but it needs a source or a cut.
+- The cost guide's setup table sums to $230 to $470 across its six
+  non-bird rows, against the "Roughly $400 to $900 or more" the page
+  states in its H2, its closing line, its seoTitle, the setup FAQ, and
+  the hub's Budget row. Reconciling the FAQ to the table put both
+  figures in one sentence, so the gap is now visible in a single
+  reader-facing line. Neither cited source states any price, so nothing
+  was changed here; the total needs either a source or a table that
+  reaches it.
+- The cost guide carries two sources for a page built on dollar figures
+  and no "Prices last checked <Month Year>" line under its last cost
+  table, which RULES, Sources requires of a cost guide quoting retail
+  prices. No other reconciled cost guide in the birds set carries one
+  either, so this is a series-wide gap rather than a conure one.
+
+Gaps, checked against the sidebar's Health and More list before being
+called real:
+
+- Real. What a green cheek conure eats day to day, in amounts. This
+  species has no feeding guide. Daily diet lived only on the legacy hub
+  (pellets at "60 to 70% of a green cheek conure's nutritional intake",
+  the vegetable list, the avocado and chocolate list), and the router
+  rebuild removes it by construction. The health guide gives a
+  direction ("feeding a quality pelleted diet alongside fresh
+  vegetables instead of a seed-only bowl") and no amounts. The shared
+  pellet conversion guide covers switching a bird onto pellets, not
+  portions. Partly mitigated: the router hub carries a Diet row quoting
+  the health guide and a Pellet conversion row quoting the shared
+  guide's VCA conure-specific schedules, so the seed-to-pellet
+  instructions a new owner needs are at least reachable. The real fix
+  is a conure feeding guide, out of scope here.
+- Not real, all covered by the shared guides in the sidebar: quarantine
+  length, what makes a bird hormonal, wing clipping, nail and beak
+  care, sexing, body language, first aid, chronic egg laying, household
+  hazards, power outages.
+
+Stranded questions, answer on another page in the set with neither page
+saying so, all three now linked:
+
+- The health guide's viral section rests on "Prevention through
+  quarantine" and never gives a window; the shared quarantine guide
+  has it.
+- The handling guide blames nippiness partly on "hormonal adults" and
+  stops; the shared photoperiod and sleep guide says what makes a bird
+  hormonal.
+- The cost guide bills "$10 to $30 a month" for toy and enrichment
+  replacement without saying what rotation means; the enrichment guide
+  is entirely about that.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | "Pellet transition from seeds typically takes weeks of patient gradual mixing." | Pellet conversion guide (hub out of scope; the router rebuild makes it a first-week row instead) |
+| Encyclopedia | none needed, it is structured data with no link slot | |
+| Cost | "regular rotation is a real part of keeping this bird mentally healthy, not an optional extra" | Enrichment guide |
+| Handling | "and in hormonal adults" | Photoperiod and sleep guide |
+| Health issues | "Prevention through quarantine, testing new birds, and sourcing from reputable breeders is critical" | Quarantine guide |
+| Tank setup | "Maintain a consistent day and night photoperiod" and "rotate foraging toys and general toys frequently" | Photoperiod and sleep guide, enrichment guide |
+| Enrichment | "Ten to twelve hours of dark quiet sleep, which is the invisible cause of a lot of parrot behavior problems." | Photoperiod and sleep guide |
+
+Six of the seven added. Skipped: the hub's, because the hub is not a
+deep dive and the router rebuild answers it with a Pellet conversion
+row instead; and the health guide's second candidate ("A roomy,
+well-ventilated flight cage kept clean helps reduce that risk" to the
+tank setup guide), held to keep this pass at one addition per page,
+since the quarantine link was the higher-value one on that page. Every
+link added sits after the first H2, none is inside a ComparisonTable
+cell, and no article gained a second same-species sibling link: the
+cost guide and the tank setup guide each took their one (enrichment),
+and the handling, health, tank setup and enrichment links all point at
+shared class guides, which do not count against it.
+
+Trust: the cost guide quoting two different prices for the same cage on
+the same page, and the old hub carrying a shorter lifespan than the
+article it linked to. Neither reads as invented, both read as unedited,
+and both sat on the two pages a buyer reads first. The sentence that
+most convinced the reader a keeper wrote this, from the enrichment
+guide, on destructible material: "Supply it deliberately and they wreck
+the supply. Do not supply it and they wreck the cage, the furniture, or
+their own feathers."
+
+Reader's two changes: make the cost guide's FAQ quote its own table
+(done), and stop the hub stating numbers of its own (done by the router
+rebuild).
+
+Encyclopedia: checked, nothing changed. The entry's wildLifespan reads
+"25 to 30 years in the wild, and the same is reachable in captivity,
+though the captive average is nearer 10 years, put down to poor diet
+and neglect," against the cost guide's "20 to 25 years or more is the
+commonly cited range, with some individuals reaching 30 years under
+excellent care." These answer different questions (a wild figure with a
+captive-average aside, against a captive range), so they are not the
+Russian tortoise case. Researched anyway: the published figures for
+this species scatter badly and none of them is high tier. Reported wild
+lifespans run 8 to 25, 10 to 15, and 25 to 30 depending on the site;
+the two sources the deep dives actually cite give captive figures only
+(PetMD "20+ years with proper care", Lafeber "up to 25 years or more
+with proper care" with "Up to 20 years" in its quick facts). Nothing
+turned up better than what is already there, and the existing entry
+already carries the hedge and the reason for the low captive average,
+so it stays as written. The difficulty field is "Intermediate" in the
+encyclopedia and was already "Intermediate" on the hub, so nothing
+moved there either.
+
+Fixed the same day (branch claude/batch-d-opus-agents-7jgjwi): the hub
+rebuilt to the router shape, 18 first-week rows, which resolves the bar
+spacing, cage size, lifespan, setup cost, and out-of-cage-time
+conflicts by construction; three of those rows cite the shared bird
+guides (quarantine, pellet conversion, power outage), the pellet
+conversion row standing in for the feeding guide this species does not
+have. The cost guide's setup FAQ reconciled to its own table on three
+line items. Six links added.
+
+Open: the missing conure feeding guide, and with it the daily diet
+amounts the router rebuild removed from the hub. The cost guide's
+vet-check and toy-rotation figures that disagree with its own
+paragraphs, and its unsourced "reaching 30 years", all listed above
+under "Unsourced, needs a fact-check". The four duplicated FunFact
+boxes (pineapple on cost and tank setup, beak-as-tool on handling and
+health), which belong on READMEFIRST's FunFact repeats list. And the
+tone split between the hub's "apartment parrot" framing and the
+enrichment guide's "Do not buy a conure expecting a quiet bird": both
+are scoped and hedged correctly (the enrichment guide is a genus-level
+page and names sun conures), so nothing was changed, but the router
+hub no longer carries the "apartment parrot" prose either way.
+
+## Rat (2026-09-09, first pass)
+
+Eight pages (hub, encyclopedia, cost, handling, health issues, enclosure
+setup, feeding, enrichment), read from the `.reader/rat/` extract before the
+hub was rebuilt. Single-pass review, the batch's default shape. No Agent
+tool was available in the worker session, so the set test prompt was run by
+the worker itself against the extract rather than by a separate reader
+agent; the raw output is in docs/READER_LOG.md under "Rat (2026-09-09)".
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | A fourth care sheet that repeats the deep dives and then disagrees with four of their numbers. |
+| Encyclopedia | B | Origin, adult size, and the Wistar Institute history; nothing to act on, but the only place the size line lives. |
+| Cost | A- | Prices the pair rather than the animal, and is honest that the cage swings the total. |
+| Handling | A | The tail degloving rule and the allogrooming explanation carry the page. |
+| Health issues | A | The 95% rattery figure and the two-year chronic outlook turn cage cleaning into a lifespan decision. |
+| Enclosure setup | A- | The tank-versus-wire-cage argument names the mechanism instead of asserting the rule. |
+| Feeding | A- | Names actual guaranteed analyses instead of waving at "a good quality food". |
+| Enrichment | A | Seven categories a beginner can audit their own cage against. |
+
+Set grade: B+. "The deep dives are specific, sourced and consistent with
+each other; the hub sitting in front of them contradicts four of their
+numbers."
+
+Hub grade before the rebuild: C+. After the rebuild: router shape, 22
+first-week rows, every row copied from the deep dive it names, no figure of
+its own.
+
+### Hub versus the set, both sides quoted (all resolved by the router rebuild)
+
+- Cage size. Old hub: "A commonly cited minimum is 16x28x30 inches with
+  multiple levels for a rat." Enclosure setup guide: "PetMD lists 24x24x24
+  inches as the minimum for a single rat and recommends the largest habitat
+  possible beyond that." The 16x28x30 figure appears nowhere else on the
+  site and is cited to nothing. Resolved by construction: the hub's Cage
+  size row now copies the setup guide's sentence, PetMD figure and all, and
+  the buy list carries no dimension of its own.
+- Temperature. Old hub: "Keep the room roughly 65 to 80 degrees F without
+  big swings." Enclosure setup guide: "RSPCA guidance puts the ideal range
+  at 19 to 23°C, roughly 66 to 73°F, and rats generally do fine across a
+  somewhat broader 64 to 79°F band." Resolved: the hub row keeps both
+  ranges, plus the 86°F heat stress threshold, in the setup guide's words.
+- Wheel. Old hub: "A solid-surface exercise wheel at least 12 to 14 inches
+  in diameter." Enclosure setup guide: "most sources recommend at least 12
+  inches in diameter, with many experienced keepers and rescues
+  recommending 14 to 16 inches for adult rats, especially males." The old
+  hub had merged a floor and a target into one range. Resolved: the hub row
+  keeps both figures separately, as the source states them.
+- Cage price. Old hub cost table: "24x24x36 in multi-level cage | $130 |
+  $260." Cost guide table: "$130 - $360" for the same line. Three smaller
+  rows differed too: bedding ($15-$25 hub against $18-$30 cost), dishes and
+  bottle ($10-$20 against $10-$18), thermometer ($10-$15 against $11-$19).
+  Resolved: the hub carries no prices at all now, and its one Budget row
+  copies the cost guide's own totals ($250 to $550 for a pair, about $130 to
+  $360 for the cage, $20 to $40 a month, $60 to $110 for a wellness exam).
+
+### Deep dives against each other
+
+Read four times that rats must never be kept alone (cost, setup, feeding,
+enrichment) and three times that ammonia drives chronic respiratory disease
+(cost, setup, health). Both agree everywhere, which reads as reassuring
+rather than padded, so neither was cut.
+
+One real numeric mismatch, fixed. The cost guide's setup table sold a
+"24x24x36 in+ multi-level wire cage with solid ramped shelves", a dimension
+no source in either Sources block states, against the enclosure setup
+guide's PetMD-sourced "24x24x24 inches as the minimum for a single rat".
+Neither Sources block settles it because only one of the two figures is
+sourced at all: the cost guide's block cites PDSA (cages built for ferrets
+or chinchillas) and Merck, neither of which gives 24x24x36, while the setup
+guide cites PetMD for 24x24x24. Under the batch prompt's tiebreak the page
+whose subject is that topic keeps its figure and the other changes; the
+setup guide is the size page and its figure is the sourced one. The cost
+guide's cell now reads "Multi-level wire cage with solid ramped shelves"
+with the price range untouched, so the site states one cage minimum, in one
+place, from a named source.
+
+Not a conflict, left alone: the cost table's "Solid-surface exercise wheel,
+12 in or larger" against the setup guide's "at least 12 inches in diameter,
+with many experienced keepers and rescues recommending 14 to 16 inches for
+adult rats". Both name 12 inches as the floor and the setup guide adds the
+target above it; that is a minimum and a recommendation, not two answers.
+
+### Gaps, checked against the Health and More list first
+
+The sidebar for this species shows only three shared pages: the small mammal
+vet trips guide, the grooming guide, and the three-rodent roundup.
+
+- Heat stress signs and first aid. The setup guide warns that "heat stress
+  becomes a real risk above about 86°F" and never says what it looks like.
+  The shared small mammal heat and cold guide covers exactly this, in order,
+  with the do-not-use-ice-water rule, but it is not wired into the rat entry
+  in relatedArticles.js, so it was not in this species' sidebar. Fixed in
+  scope: the setup guide now links it in body, the hub carries a Heat stress
+  signs row sourced to it, and the guide is wired into the rat entry in
+  src/lib/data/relatedArticles.js so it shows in the sidebar. Note the
+  commit message's claim that every other small mammal already carried it is
+  wrong: ferret, hedgehog, sugar glider, flying squirrel and mouse all lack
+  it too, and wiring those is another species' work.
+- How to introduce two rats to each other. Real gap. No page in the set and
+  no shared small mammal guide covers introductions, for a species four
+  pages tell the reader must never live alone. Not fixable with a link.
+- Whether to neuter, and what it costs. Only the health guide's "spaying a
+  female rat before 7 months of age meaningfully lowers her lifetime risk"
+  touches it. Real gap.
+- What to do for a pair in a heatwave or a power outage. Partly covered by
+  the shared heat and cold guide once it is wired in.
+
+### Stranded questions
+
+- The cost guide prices "mammary tumor removal" as one of the more common
+  surgical costs in the species; the health guide explains what the tumor is
+  and that most are operable fibroadenomas. Neither pointed at the other.
+  Fixed with a link.
+- The enrichment guide says "a cage that fits a group is the first
+  purchase" and never gives a size; the setup guide has the size. Fixed
+  with a link.
+- The feeding guide says calorie restriction is one of the few interventions
+  shown to extend a rat's lifespan; the health guide is where a high-calorie
+  diet turns into pituitary tumor risk. Fixed with a link.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "rats with chronic respiratory disease rarely live past 2 years" | health issues guide | n/a, hub prose is gone; the route and the Respiratory disease row link it |
+| Encyclopedia | none possible | | structured data, no link slot |
+| Cost | "mammary tumor removal is one of the more common surgical costs in this species" | health issues guide | added |
+| Handling | "Daily handling, playtime, and supervised time outside the cage matter for a rat's wellbeing" | enrichment guide | skipped, the sentence sits in the closing paragraph, where RULES says the article ends on the animal, and the Deep Dive list already carries enrichment |
+| Health issues | "a thermometer to confirm the room isn't running colder, damper, or draftier than it should" | enclosure setup guide | skipped, the clause is one item in a four-item husbandry list and breaking it for a link reads as an editor's note |
+| Enclosure setup | "heat stress becomes a real risk above about 86°F" | shared small mammal heat and cold guide | added |
+| Feeding | "obesity is common in pet rats and that calorie restriction... is one of the few interventions actually shown to extend their lifespan" | health issues guide | added |
+| Enrichment | "a cage that fits a group is the first purchase" | enclosure setup guide | added |
+
+Every added link sits after the first H2, outside any ComparisonTable cell,
+and each article carries at most one link to a sibling suffix guide (cost
+and feeding to health issues, enrichment to enclosure setup; the setup
+guide's new link is to a shared class guide and does not count against the
+cap).
+
+### Trust
+
+What made the reader doubt the set was the hub, not the articles: four
+numbers on the page the navigation lands on first did not match the pages
+underneath it. The deep dives name Merck, RSPCA, PDSA, VCA, PetMD and AFRMA
+and say where sources differ. The sentence that most convinced the reader a
+keeper wrote this, from handling: "A rat's tail skin can shear away from the
+tissue underneath under pulling or grasping pressure, an injury called
+degloving or tail slip, and it's specifically caused by exactly this kind of
+handling."
+
+### The reader's two changes
+
+1. Make the hub carry the articles' numbers or none. Done: router rebuild.
+2. Tell the reader what heat stress looks like on the page that warns about
+   it. Done: the setup guide's 86°F sentence now links the shared heat and
+   cold guide's ordered signs, and the hub carries a Heat stress signs row.
+
+### Encyclopedia
+
+Checked, nothing changed. The entry's wild lifespan ("About 1 year on
+average in the wild, commonly 5-12 months, occasionally up to 3 years") is
+stated nowhere else in the set, so nothing contradicts it. Its pet figure,
+"pet fancy rats typically live 2-3 years, occasionally to 4", matches the
+cost guide's PDSA sentence word for word in substance; the cost guide's
+Merck figure of "18 to 36 months" sits inside that band and the cost guide
+already states both side by side, so this is two sources reported honestly
+rather than a conflict. Adult size (7-10 in body, 6-8 in tail, 0.8-1 lb
+females, 1-1.4 lb males) appears in no deep dive, so it carries no source in
+the hub row and nothing disputes it. Difficulty is "Beginner" in both the
+encyclopedia entry and the hub. No field was edited.
+
+### Dates
+
+No lastUpdated bumped. Every rat deep dive is future-dated (2026-09-21, and
+2026-10-17 for enrichment) with lastUpdated equal to date, so stamping
+today's Eastern date, 2026-09-09, would put lastUpdated before the publish
+date. The one fact-bearing edit, the cost guide's cage cell, removed an
+unsourced figure rather than adding one, on an article that has not
+published yet. Recorded here rather than dated.
+
+### Fixed the same day
+
+Hub rebuilt to the router shape: 22 first-week rows, each copied from the
+deep dive it names (18 from the six rat guides, 1 from the encyclopedia for
+adult size, 3 from the shared grooming, heat and cold, and vet trips
+guides), the emergency card copying the health guide's "When to See a Vet"
+list bullet for bullet with its hedges in the vetLine, six routes for the
+six own deep dives, a twelve-item buy list with no prices, and three FAQs
+copied verbatim from the setup, enrichment and health guides' frontmatter.
+`costs`, `sections` and the old six FAQs dropped. Deep dives: the cost
+guide's cage cell reconciled to the setup guide's sourced minimum, and four
+links added (cost to health issues, setup to the shared heat and cold guide,
+feeding to health issues, enrichment to setup).
+
+### Open
+
+- No page covers introducing two rats to each other.
+- No page covers whether to neuter a pet rat or what it costs.
+
+## Hermit Crab (2026-09-09, first pass)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment). No reader subagent: this session had no
+Agent/Task tool, so the set test prompt was run in-session by the species
+agent against `.reader/hermit-crab/` before the hub was rewritten. Raw
+output is in the reader log entry for the same date. The hub was the
+legacy care-sheet shape when the pass ran; it is a router hub now.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The only page with a checklist and a shopping list, but it is a third care sheet and three of its numbers do not match the setup guide. |
+| Encyclopedia | B+ | The history is the only thing in the set you cannot get elsewhere, and nothing here changes what you buy. |
+| Cost | B+ | You learn the crab is the cheap part and the tank is not; the table's tank line and the stated total sit oddly together. |
+| Handling | A- | The section on how long a crab stays buried is the most useful paragraph in the set. |
+| Health issues | A- | Honest that there is essentially no vet care, so husbandry does the work; names mites and then says nothing about them. |
+| Tank setup | A | The numbers page, and the one to print. |
+| Enrichment | A | Cites Elwood and Appel, shows Briffa disagreeing rather than resolving it, and ends on the best list in the set. |
+
+Set grade: B+. "Everything a keeper needs is here and the setup and
+enrichment pages are better than most of what is online, but the hub
+contradicts the setup guide on three of the four numbers that matter
+most."
+
+Hub grade after the rewrite: A-. Router shape, 18 first-week rows, a
+five-bullet emergency card, five routes, a twelve-line buy list with no
+prices, three verbatim deep-dive FAQs. Marked down only because the
+species has no feeding or legal guide, so two rows a reader would expect
+to route somewhere land on the tank setup guide instead.
+
+Hub versus the set, both sides quoted (all four resolved by the router
+rewrite, since the hub now copies the deep dive named in each row):
+
+- Humidity. Hub: "Humidity must stay at 70 to 80%, measured with a
+  hygrometer rather than guessed," and its checklist line "70-80%
+  humidity, 75-85°F temperature." Tank setup guide: "Maintain 75 to 85%
+  relative humidity," and its FAQ "75 to 85% relative humidity, checked
+  on a hygrometer." Neither page's Sources block states a figure that
+  settles it: the tank setup guide cites the Land Hermit Crab Owners
+  Society basics page, which was opened and gives no numeric humidity
+  range at all, and Crab Street Journal's humidity article, which
+  returns 403 to a fetch. A search of the wider husbandry literature
+  puts the consensus at roughly 70 to 85% with a floor around 65%, which
+  contains both figures and contradicts neither. Decided by topic
+  ownership under the batch prompt's tiebreak: the tank setup guide is
+  the page whose subject is humidity, so 75 to 85% wins and the hub
+  follows. No deep dive changed. Nothing to fact-check further.
+- Spare shells. Hub: "always have 2 to 3 spare empty shells per crab,"
+  repeated in the checklist and in a hub FAQ. Tank setup guide: "Offer
+  multiple natural, unpainted shells per crab, ideally 3 to 5 or more."
+  Enrichment guide: "Provide several shells per crab, across a range of
+  sizes and opening shapes." The two deep dives agree with each other
+  and only the hub disagreed. Tank setup wins on topic ownership; hub
+  now copies it.
+- Substrate depth. Hub: "a sand and coconut fiber mix at least three
+  times the crab's body length," and the checklist "(3x crab body
+  length)." Tank setup guide: "at least 6 inches, or about 3 times the
+  height of your largest crab." Body length and height are different
+  measurements on this animal. Tank setup wins; hub now copies both
+  halves of that sentence, the inches and the multiple, rather than
+  merging them.
+- Tank price. Hub cost table: "10-20+ gallon tank (for a group) $60 to
+  $120." Cost guide table: "10-gallon tank (2 to 3 small crabs) | $30 -
+  $100." The hub's cost tables are gone with the router rewrite, so the
+  cost guide's figures are now the only ones on the site.
+- Lifespan, not a real conflict. Hub FAQ: "In the wild, land hermit
+  crabs can live 20 to 30 years or more... captive lifespans of a decade
+  or more are genuinely achievable." Cost guide: "Hermit crabs can live
+  10 to 20 years or more when kept well." One is a wild figure and one
+  is a captive figure. `check-species-numbers` groups them under
+  `lifespan | years` and flags them; they answer different questions.
+  The hub's Lifespan row now carries the cost guide's captive figure
+  with a source, and the wild figure stays where it belongs, in the
+  encyclopedia entry and the hub's funFact.
+
+Deep dives against each other: no number disagreements. Substrate depth
+appears on three pages and agrees each time. Shell counts agree between
+tank setup and enrichment. Molt duration agrees across handling ("several
+weeks up to around three months"), health ("weeks-long"), and the shared
+invertebrate molting guide ("Several weeks buried, depending on size").
+Diet appears in both the tank setup guide and the enrichment guide, but
+they are not the same aside: tank setup says what to feed, enrichment
+says to scatter it rather than bowl it. The species has no feeding guide
+to move either into, so both stay and no pointer was created.
+
+Gaps, each checked against the sidebar's Health and More list (the
+invertebrate molting guide, the invertebrate pesticide hazards guide,
+the invertebrate emergency and travel guide, and the four unusual pets
+overview) before being called real:
+
+- Quarantine. The health guide says to "quarantine and isolate new
+  crabs" and never gives a duration, a container, or a criterion for
+  ending it. Every pet hermit crab is wild-caught by that page's own
+  account, so this is the gap that matters most. There is no invertebrate
+  quarantine guide in the shared list. Real gap, not fixable with a link.
+- Mites. The health guide names mites and mold and gives no procedure.
+  Not covered by any shared guide. Real gap.
+- Saltwater strength. The tank setup guide says "marine saltwater made
+  from an aquarium salt mix, never table salt" with no ratio or target.
+  Real gap, minor.
+- Choosing a crab in a shop. Nothing in the set says what to look at.
+  Real gap, given the wild-caught framing.
+- Sexing. The legacy hub carried a FAQ on gonopores; the router rewrite
+  drops the old FAQs by rule, and no deep dive covers it. Now uncovered
+  anywhere in the set. Noted rather than fixed, since inventing a sexing
+  section is outside a fix pass.
+- Not real: molting duration (handling guide plus the shared molting
+  guide), power outages and travel (the shared invertebrate emergency
+  guide, whose hermit crab row calls this species "the real exception in
+  the group"), household pesticides (the shared pesticide guide).
+
+Stranded questions, where a page raised something another page answers
+without saying so:
+
+- The health guide's dehydration section ended "covered in more detail in
+  the tank setup guide," naming a page and not linking it. Fixed.
+- The cost guide's "Most hermit crab health problems trace straight back
+  to that gap." named a whole page and went nowhere. Fixed.
+- The enrichment guide's "Depth should let the largest crab bury
+  completely with room to spare." leaves the reader without a number the
+  tank setup guide states in inches. Fixed.
+- The tank setup guide's heat mat warning turns on a crab "buried or
+  molting underneath" without saying how long that lasts. Fixed with a
+  link to the shared molting guide rather than to the handling guide,
+  because the tank setup guide's one allowed sibling link is spent.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Molting is a vulnerable, weeks-long underground process" | Handling guide | Rewritten to the router shape instead; the routes carry it |
+| Encyclopedia | "they can live for decades with proper care" | Cost guide | Skipped, encyclopedia out of scope |
+| Cost | "Most hermit crab health problems trace straight back to that gap." | Health issues guide | Added |
+| Handling | "The real warning signs of a genuine problem are a strong, rotten odor, or a body that's gone limp or fallen out of the shell entirely." | Health issues guide | Skipped: the page already carries three in-body links and the sentence sits in the Takeaway, where a link reads as a nav bar |
+| Health issues | "matter so much in this species' housing, covered in more detail in the tank setup guide." | Tank setup guide | Added, and the self-reference clause went with it |
+| Tank setup | "a crab that's buried or molting underneath" | Invertebrate molting guide | Added (shared class guide, does not count against the sibling limit) |
+| Enrichment | "Depth should let the largest crab bury completely with room to spare." | Tank setup guide | Added |
+
+Trust: nothing read as invented. The 70-to-80 against 75-to-85 split was
+the one that mattered, because humidity is the number this species hangs
+on and the hub was the first page a reader lands on. The sentence that
+most convinced the reader a keeper wrote this, from the enrichment guide:
+"Do not supply one spare shell for a group, because that creates
+competition over a resource the research shows they weigh heavily."
+
+Reader's two changes: stop the hub restating the setup guide's numbers
+(done, router rewrite), and give the health guide's quarantine advice a
+duration (open, needs research and new sourced text, not a fix-pass edit).
+
+Encyclopedia: checked the hermit crab entry in
+src/lib/data/encyclopedia/invertebrates.js against every deep-dive
+figure. Adult size "Up to 4 inches (10 cm) across, including legs" is
+not stated by any deep dive, so the hub's Adult size row cites it with
+no source, as the rules allow. Wild lifespan "20-30+ years in the wild"
+does not conflict with the cost guide's captive "10 to 20 years or more
+when kept well"; they are different questions and both stand. Difficulty
+is "Intermediate", which the hub now matches. Scientific name, origin,
+habitat, wild diet, and the history section carry nothing a deep dive
+contradicts. Nothing was changed in the encyclopedia file.
+
+Fixed the same day: the hub rewritten to the router shape (four hub
+figures retired, none of them the winner in any conflict); four links
+added as listed above; one self-reference clause removed from the health
+guide. No
+lastUpdated bumps: every deep-dive edit was a link or a self-reference
+removal, and no fact or number in any deep dive changed.
+
+Open: the quarantine duration, the mite procedure, the saltwater ratio,
+what to look at when buying a crab, and sexing, all of which need
+research and new sourced text rather than a link or a number correction.
+Also noted: the router rewrite drops the hub's `costs` block, so the
+three affiliate products whose `covers` strings matched the old hub cost
+table ("Marine salt mix (saltwater pool)", "Spare shells (2-3 per crab)",
+the Fluker's substrate) are now reachable only from /gear and from the
+prose links that already carry them. `check-cost-coverage` does not fail
+on it, and the same is true of every species reconciled in batches A to
+C, so it is recorded rather than treated as a defect.
+
+## Box Turtle (2026-09-09, first pass)
+
+Batch D. Extractor set of eight pages (hub, encyclopedia, cost, handling,
+health issues, tank setup, enrichment, legal). Read against the old legacy
+hub (housing and diet prose, a cost table, a checklist, eight FAQs); the
+router hub was built from its findings the same day. No Agent tool was
+available in this session, so the set test was run in-session against
+.reader/box-turtle/ under the READMEFIRST set test prompt rather than
+delegated to a background agent; the raw output is in the reader log entry
+for this date.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | A full care sheet where a router should be, and it changes the numbers when it repeats them. |
+| Encyclopedia | B+ | The history section is the best writing in the set. |
+| Cost | B+ | Real arithmetic you can check, and one lifespan claim you cannot. |
+| Handling | B+ | Careful about sexing in a way the hub is not. |
+| Health issues | B- | Good causal structure, no sources at all under a page about antibiotics. |
+| Tank setup | C+ | The page most needed on day one, and its Temperature section has no degrees in it. |
+| Enrichment | A- | One study, honestly described, with a priority order that follows from it. |
+| Legal | A | Statute by statute, and it says when a rule is unsettled. |
+
+Set grade: B-. "The deep dives are good to very good and the legal and
+enrichment guides are better than most of what is online. The hub drags it
+down by contradicting them in public on price, temperature, substrate, UVB,
+and lifespan, and the tank setup guide leaves out the one number a new keeper
+needs on day one."
+
+Hub grade after the rebuild: A-. Twenty first-week rows, every one copied
+from the deep dive named in its source, six routes, five emergency bullets,
+a nine-item buy list with no prices, three verbatim FAQs. Held back from an A
+only because two rows (Adult size, and the Outdoor pen row sourced to a
+shared guide) are the only places a reader meets those figures at all.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, all resolved by the router rebuild.
+
+- Substrate depth. Old hub: "deep, moist substrate (coconut coir/topsoil mix,
+  6 inches or more deep)", and the checklist item "OR large indoor tortoise
+  table with 6 inch+ moist substrate". Tank setup guide: "Wood chips or a
+  topsoil and coconut fiber mix, at least 2 to 3 inches deep to support
+  burrowing." The tank setup guide is the subject page and keeps its figure;
+  the hub's Substrate row now quotes that sentence.
+- UVB strength. Old hub: "UVB (T5 HO Arcadia 6 to 12%)", twice. Tank setup
+  guide: "A T5 HO bulb (6% strength or the equivalent Zoo Med ReptiSun 5.0 T5
+  HO) in a reflective fixture, targeting a basking-area UV index of 3.0 to
+  4.0." The cost guide's Sources already carry the Zoo Med ReptiSun 5.0 spec
+  sheet and no source anywhere supports 12%. The hub's UVB row now quotes the
+  tank setup guide.
+- Basking temperature. Old hub: "a basking spot (85 to 88 degrees F)", in the
+  housing prose and again in the checklist. Tank setup guide: "Provide a clear
+  warm basking zone with a gradient down to a cooler area, using an indoor
+  heat source", with no number anywhere on the page. The 85 to 88 figure is not
+  invented, it is Wildwood Veterinary Hospital's daytime ambient range for US
+  box turtles ("85-88 F/day, 70-75 F/night"), mislabeled on the old hub as a
+  basking spot. The hub keeps no figure of its own either way. Resolved by
+  putting a sourced number in the deep dive, from VCA, whose 90 to 100 F
+  basking zone contains Wildwood's 90 to 94 F basking area. Note Wildwood is
+  cited on the tank setup guide for substrate depth only, and its temperature
+  figures are deliberately not the ones that page uses, so do not later
+  reconcile the page to them. See the numbers section below; see the numbers section below; the hub's
+  Temperature row now quotes the tank setup guide's corrected sentence and the
+  85 to 88 figure is gone rather than moved.
+- Captive lifespan. Old hub: "captive animals routinely live into their 50s
+  and 60s with good care." Cost guide: "30 to 40-plus years in captivity, with
+  wild box turtles averaging around 50 years." Neither is supported by either
+  page's sources, and the cost guide's version has captivity costing a box
+  turtle a decade against the wild. Resolved against Indiana DNR, below.
+- Juvenile protein. Old hub, in the diet prose and again in a FAQ: "Juveniles
+  need more protein (60 to 70%) for growth." No deep dive states it. VCA's box
+  turtle feeding page, already cited by the cost guide, says only that "Young,
+  growing box turtles, up to four to six years of age, tend to be primarily
+  carnivores." The percentage is invented precision. Dropped with the hub and
+  deliberately not moved into a deep dive, because no source states a number.
+- Costs, line by line. Old hub setup table: outdoor enclosure or tortoise
+  table $150 to $400, UVB $60 to $100, basking bulb $20 to $40, substrate $25
+  to $45, soak dish $10 to $20. Cost guide: "Enclosure, 36x18x18 inch minimum
+  | $202 - $258", "T5 HO UVB fixture and bulb | $95 - $115", "a basking bulb
+  runs roughly $8 to $14, with a basking dome fixture adding another $12 to
+  $20", "Coconut fiber substrate | $10 - $16", "Large soak-able water dish |
+  $18 - $30". The hub's basking bulb was triple the deep dive's. Annually the
+  hub billed "UVB bulb replacement: $60 to $100" against the cost guide's "so
+  a $25 tube is $2 to $4 a month", and "Annual vet wellness check: $60 to
+  $100" against "A routine exotic exam runs $60 to $135". The router hub has
+  no cost table; its Budget row quotes the cost guide's own totals.
+- Sexing. Old hub FAQ: "Eye color is the fastest tell in most North American
+  box turtles." Handling guide: "Eye color gets mentioned constantly, red or
+  orange in males versus brown in females, and it does hold for eastern and
+  three-toed box turtles, but it isn't universal across every box turtle
+  subspecies, so treat it as a supporting clue rather than the deciding one."
+  A recommendation conflict, not a number. The handling guide cites a source
+  for it and is the subject page, so it keeps its position; the hub's FAQ is
+  replaced by three verbatim deep-dive FAQs.
+
+### Deep dives against each other
+
+One real disagreement, and it is with a shared guide rather than inside the
+species set.
+
+- Outdoor temperature floor. Box turtle tank setup guide: "This species
+  shouldn't be kept outdoors once temperatures drop below about 70°F", with no
+  source on the page at all. Shared outdoor reptile housing guide: "VCA's box
+  turtle housing guidance sets the line at 60°F (16°C) for that species
+  specifically." Shared reptile emergency plan guide, cold-floor table: ["Box
+  turtle", "N/A, keep indoors below this", "70°F (21°C)"]. VCA Animal
+  Hospitals' box turtle housing page, opened for this pass, states: "Bring the
+  box turtle indoors if the temperature drops below 60°F (16°C)." A veterinary
+  hospital, species-specific, beats an unsourced sentence, and the shared
+  outdoor housing guide already agrees with it. The tank setup guide changed
+  to 60°F. The emergency plan guide's row carried the last copy of the old
+  figure and was fixed in the same commit, since it is a single species row on
+  a shared guide: ["Box turtle", "65-70°F (18-21°C) overnight indoors, per
+  VCA", "60°F (16°C), the outdoor line VCA gives for this species"], with VCA's
+  box turtle housing page added to that guide's Sources.
+
+Read twice, no conflict: the half-animal-half-plant diet (cost guide's monthly
+section and the tank setup guide's own section, both short and both earning
+their place, so neither was collapsed to a pointer); the semi-terrestrial
+land-and-water argument (handling and tank setup, both good); the outdoor pen
+(tank setup body, tank setup FunFact, enrichment guide).
+
+Advisory, not a conflict: substrate depth read across three pages. Tank setup
+"at least 2 to 3 inches deep", cost guide "a 4 inch layer in a 36x18 inch
+indoor enclosure", enrichment "do not use a shallow scattering of substrate
+and call it deep." Four inches satisfies "at least 2 to 3", so there is no
+contradiction to fix, but 2 to 3 inches is the number a new keeper will build
+to and a 4.5 to 7 inch turtle cannot get under it. ReptiFiles, the cost
+guide's source for the depth math, returned 403 to every fetch this pass, so
+the figure could not be checked and nothing was changed. Listed under
+"Unsourced, needs a fact-check".
+
+### Gaps, checked against the Health and More list first
+
+Real:
+- A basking surface temperature for a box turtle, from any source. The shared
+  reptile heating and thermostats guide covers what a thermostat does and
+  where the probe goes, not this species' target. Fixed this pass: VCA's
+  numbers are now in the tank setup guide.
+- How much an adult box turtle eats in one sitting. The cost guide's "adults
+  eat daily or every other day" is the only feeding frequency in the set, and
+  it sits inside a paragraph about grocery bills. There is no box turtle
+  feeding guide and no shared guide covers portioning. Still open.
+- What the homing instinct means in practice after an escape or a move. The
+  old hub warned that "even a few miles can disorient them fatally" and
+  nothing follows it. Not covered by any shared guide. Still open, and note
+  the claim left the site with the old hub prose, so nothing now asserts it.
+
+Not real, covered by the sidebar already:
+- Brumation protocol. Shared tortoise brumation guide, which covers North
+  American box turtles explicitly with their own numbers. Now a hub row.
+- New-arrival quarantine. Shared chelonian herpesvirus guide, six months
+  minimum. Now a hub row.
+- Outdoor pen construction and buried fencing depth. Shared outdoor reptile
+  housing guide. Now a hub row.
+- Salmonella and hygiene, daily stool checks, shedding, succession planning
+  for a pet that outlives you. All shared guides in the list.
+
+### Stranded questions
+
+- Old hub told the reader to "consult a chelonian-experienced vet for safe
+  hibernation protocols" and stopped; the shared brumation guide had the
+  protocol. Answered by the hub's new Brumation row.
+- Handling guide says a box turtle needs "regular access to shallow water for
+  soaking"; the tank setup guide has the dish. Neither pointed at the other.
+  Both are in the Deep Dive list on every page, so no in-body link was added.
+- Cost guide summarizes state rules in a paragraph while the legal guide has
+  the state-by-state table, and never says so. Same reason, no link added.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "consult a chelonian-experienced vet for safe hibernation protocols" | Tortoise brumation guide | Yes, as a hub row rather than prose (the prose is gone) |
+| Encyclopedia | none needed | | |
+| Cost | "Wild collection of box turtles is illegal or heavily restricted across most of their native range in the US." | Legal guide | Skipped: the sentence sits before the first H2 |
+| Handling | none needed, already links out three times | | |
+| Health issues | "Often found incidentally on a routine fecal exam even without obvious symptoms, heavier loads cause diarrhea and weight loss." | Reptile stool and urates guide | Yes |
+| Tank setup | "though an outdoor pen is genuinely excellent where your climate allows" | Outdoor reptile housing guide | Skipped: the page already carries three in-body links and the enrichment guide now carries this target |
+| Enrichment | "a secure outdoor enclosure in suitable weather is the highest-quality enrichment available for a box turtle" | Outdoor reptile housing guide | Yes |
+| Legal | none needed | | |
+
+All three added links go to shared class guides, so none of them count against
+the one-sibling-link-per-article limit, none sit before a first H2, none are
+inside a ComparisonTable cell, and each sentence is about the animal.
+
+### Trust
+
+What made the reader doubt them: the old hub's cost table against the cost
+guide's, most of all a basking bulb at $20 to $40 against $8 to $14, because
+the hub reads like it is selling and the deep dive shows its work. The health
+issues guide carrying no Sources block under a page about antibiotics and
+metabolic bone disease. The tank setup guide carrying none either. And the
+hub's "85 to 88 degrees F", a two-degree precision on a number nothing else in
+the set repeats.
+
+The sentence that most convinced the reader a real person wrote this, from the
+legal guide on Oklahoma: "The Department's page says outright that it is an
+interpretive summary and not a legal document, so this is a genuine gap
+between the words and the practice rather than a settled six."
+
+### Reader's two changes
+
+1. Put real temperature numbers in the tank setup guide, from a source, and
+   delete the hub's 85 to 88 rather than move it. Done: VCA's 90 to 100°F
+   basking zone, 70 to 75°F cool end, and 65 to 70°F overnight are in the tank
+   setup guide with a new Sources block, and the hub carries no figure of its
+   own.
+2. Make the hub stop repeating the deep dives. Done by the router rebuild.
+
+### Unsourced, needs a fact-check
+
+- Substrate depth. Tank setup "at least 2 to 3 inches", cost guide "a 4 inch
+  layer", enrichment arguing for deeper. ReptiFiles 403'd on every attempt.
+- Humidity, 60 to 80%, tank setup guide only, no source states it.
+- The health issues guide has no Sources block at all. Every claim on it
+  (metabolic bone disease causes, the vitamin A to respiratory infection link,
+  shell rot, Baytril by implication from the cost guide) is unattributed.
+  Out of scope for this pass, which was links and numbers, not new research.
+
+### Encyclopedia
+
+Checked the box turtle entry in src/lib/data/encyclopedia/turtles.js against
+the deep dives' sourced figures. Nothing changed, and here is why.
+
+- Wild Lifespan, "50-100+ years", and the Overview's "They can live over 100
+  years". Indiana DNR: "Eastern box turtles have been documented to exceed 60
+  years of age. Very old specimens may reach ages of more than 100."
+  Smithsonian National Zoo: "Box turtles generally live for 25-35 years but
+  have been known to survive to over 100 years old!" The top of the
+  encyclopedia's range is directly supported by both, and its floor of 50 sits
+  inside what Indiana DNR documents rather than against it. Not a conflict, so
+  under the narrow encyclopedia rule the field was left alone. The
+  disagreement was on the cost guide's side and was fixed there.
+- Adult Size, "4.5-7 inches (11-18 cm)". No deep dive states an adult size, so
+  there is nothing to conflict with. Smithsonian gives "4 inches by 6 inches"
+  for eastern box turtles specifically, which is inside the genus range the
+  encyclopedia gives. Left alone, and it is the source for the hub's Adult
+  size row.
+- Conservation, "Vulnerable (IUCN); threatened in many US states", and the
+  history section's 70 to 74 percent declines, 30,000 turtles from Louisiana
+  in 41 months, and the CITES Appendix II listing. All consistent with the
+  legal guide, which independently reports 70 to 80 percent crashes in
+  intensively studied areas. No statute, date, or jurisdiction touched.
+
+## Batch D independent reader pass (2026-09-09)
+
+The five batch D species workers had no Agent tool, so each ran its own set
+test first-party. After the batch was pushed, five independent Opus readers
+were launched from the session against the same pre-rewrite extracts, one
+per species. Their set grades: green iguana B, conure B, rat A-, hermit crab
+B-, box turtle B. The first-party grades were B, B, B+, B+, B-.
+
+Nearly every conflict the independent readers listed was a hub against a
+deep dive, and all of those died when the hubs became routers. Three
+findings were new and sat between two deep dives, where the router rewrite
+does not reach.
+
+Hermit crab, leading cause of death. Health guide: "Post-Purchase Stress
+(PPS), the Leading Cause of Death", repeated in its seoDescription and its
+FAQ. Enrichment guide: "a failed molt is the most common way these animals
+die in captivity". Two superlatives about the same thing. The health guide's
+Sources carry Crab Street Journal's post-purchase death article, which is
+the subject; the enrichment guide's four sources are the Elwood and Appel
+pain and sentience papers and Wild Welfare, none of which state a cause of
+death frequency. Health wins on both tests, its source states the claim and
+it is the health page's own subject. The enrichment guide loses the
+superlative and takes the health guide's own sourced wording for the same
+fact. Before: "Do not let substrate depth slip, since a failed molt is the
+most common way these animals die in captivity." After: "Do not let
+substrate depth slip, since substrate that is too shallow is one of the
+causes of a bad molt, and a bad molt is frequently fatal." No link added:
+the enrichment guide already carries its one sibling link, to the tank setup
+guide. No lastUpdated bump either, and the first pass's "no fact changed" line
+above does not cover this one: the claim did change, but that guide's date and
+lastUpdated are both 2026-10-15, a scheduled future publish date, so stamping
+today's 2026-09-09 would put lastUpdated two months before the article
+publishes.
+
+Box turtle, substrate depth. Tank setup: "at least 2 to 3 inches deep to
+support burrowing." Enrichment: "do not use a shallow scattering of
+substrate and call it deep, because the behavior depends on being able to
+get under it." Cost guide prices a 4 inch layer. The reader called 2 to 3
+inches too shallow for a 4.5 to 7 inch turtle. Researched: VCA's box turtle
+housing page names substrates but gives no depth at all. Wildwood Veterinary
+Hospital states it directly, "The substrate should be 2-3 inches deep
+allowing plenty of room for your turtle to burrow." Husbandry sites give 4
+to 6 and 8 to 12 inches, but a veterinary hospital outranks them and is
+species-specific, so the tank setup guide's existing figure stands and is
+now sourced rather than asserted. Wildwood added to that guide's Sources; no
+number changed. The cost guide's 4 inch layer is above a stated minimum, not
+a contradiction of it.
+
+Box turtle, handling against enrichment. Ruled not a conflict. Handling:
+"best suited to limited handling rather than frequent physical interaction",
+and the hand-feeding sentence ends "interaction on the turtle's terms".
+Enrichment: "do not handle for enrichment, since box turtles are easily
+stressed by it." A turtle choosing to approach is not handling it for
+enrichment, and the handling guide already limits handling in the same
+paragraph. Nothing changed.
+
+Open, carried from the independent pass: the conure cost guide's vet and toy
+figures (already listed under Unsourced, needs a fact-check); the green
+iguana 70% first-year mortality figure, sourced to Wikipedia citing a 1992
+book on the cost guide and then repeated on the health guide as a fact box
+without that hedge; and the rat enrichment guide citing an unnamed study and
+using the spelling "centrepiece" in a set that is otherwise US.

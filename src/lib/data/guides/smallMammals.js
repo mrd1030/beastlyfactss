@@ -245,69 +245,78 @@ Tumors, including mammary tumors, become more common as mice age, similar to rat
     image: "/assets/guides/rat.jpg",
     tagline: "The whip-smart, deeply social rodent that will learn its own name!",
     funFact: "Rats can be trained to respond to their own name, give a high-five, and fetch a ball using the same reward-based methods used on dogs. That knack for learning is also why lab rats have been the standard animal for maze and memory research for more than a century.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a pair, which is the minimum this species should be kept in.
-    costs: {
-      setup: [
-        { item: "24x24x36 in multi-level cage", low: 130, high: 260 },
-        { item: "12-14 in solid exercise wheel", low: 25, high: 45 },
-        { item: "Paper-based bedding", low: 15, high: 25 },
-        { item: "Hideouts and tunnels", low: 15, high: 30 },
-        { item: "Water bottle and food dishes", low: 10, high: 20 },
-        { item: "Chew toys and enrichment", low: 15, high: 30 },
-        { item: "Digital thermometer", low: 10, high: 15 },
-      ],
-      annual: [
-        { item: "Rat-specific pellets or lab blocks", low: 40, high: 70 },
-        { item: "Fresh vegetables and occasional protein", low: 50, high: 90 },
-        { item: "Bedding (ongoing)", low: 60, high: 100 },
-        { item: "Chew toys and enrichment refresh", low: 15, high: 25 },
-        { item: "Annual exotic vet wellness check", low: 60, high: 110 },
-      ],
-    },
-    sections: {
-      housing: `Give rats a multi-level cage with solid, ramped shelves rather than wire mesh flooring, which damages their feet over time. A commonly cited minimum is 16x28x30 inches with multiple levels for a rat, and because rats should never be housed alone, a pair or small group needs more than that bare minimum, not less. Bar spacing matters too: keep it to 1/2 inch or less, since rats are strong climbers and will test any gap they can reach.
-
-Line the cage with recycled paper bedding rather than wood shavings. Cedar and pine both contain aromatic oils that irritate a rat's sensitive respiratory tract, and ammonia buildup from infrequent cleaning is one of the biggest drivers of the chronic respiratory disease that shortens so many pet rats' lives. Clean thoroughly with a pet-safe disinfectant weekly, and change bedding at least twice a week.
-
-A solid-surface exercise wheel at least 12 to 14 inches in diameter, smooth rather than perforated inside, gives rats a safe outlet for their considerable energy without trapping toes or tails. Keep the room roughly 65 to 80 degrees F without big swings.
-
-Rats are highly social and should be kept in same-sex pairs or small groups from a young age, ideally littermates. A lone rat, even one that gets plenty of daily human attention, is at real risk of stress-related depression and abnormal behavior that human company alone doesn't fully prevent. Rescues typically rehome rats in pairs or trios for exactly this reason.`,
-      diet: `Feed a rat-specific pelleted diet or lab block as the base of the diet rather than a loose seed mix, which lets rats pick out the fattiest pieces and skip the balanced parts, the same selective-eating problem seen in several other small pets. Supplement daily with fresh vegetables, and offer fruit more sparingly since rats are prone to obesity on a diet with too many calorie-dense extras.
-
-Rats are true omnivores, and unlike the strict herbivores on this list such as chinchillas and guinea pigs, they can also have small amounts of lean cooked protein like chicken or egg a couple of times a week. Avoid chocolate, caffeine, and carbonated drinks, and keep sugary treats occasional rather than routine, since obesity and some of the tumors covered below are both linked to calorie-dense diets.
-
-Fresh water in a properly positioned sipper bottle should always be available, checked daily to make sure it's actually flowing. Rats are enthusiastic, food-motivated animals, and scatter-feeding a portion of the daily pellets so they have to forage for it is a simple way to add mental stimulation to a routine meal.`,
-      enrichment: `Rats are widely considered among the most intelligent common small pets, and they show it: positive-reinforcement training gets them responding to their own name, giving a high-five, fetching, and running obstacle courses, and they've been the classic model animal for maze and spatial-memory research for exactly this reason. A rat that only gets a cage and a wheel is an under-stimulated rat.
-
-Rotate tunnels, climbing ropes, chew blocks, and cardboard boxes with holes cut in them regularly, and use foraging toys or scatter-feeding to give a rat something to work for. Daily supervised time outside the cage, in a rat-proofed space free of chewable cords and small gaps, is valuable both for exercise and for the bond between rat and keeper.
-
-Rats that are handled gently and often from a young age typically become confident, easily-handled pets that seek out interaction, a real contrast with their skittish wild relatives. Because they're deeply social, the strongest enrichment is often another rat: a bonded pair grooms, play-fights, and sleeps in a pile together in a way no amount of solo human attention fully replaces.`,
-      health: `Chronic respiratory disease, caused by the bacterium Mycoplasma pulmonis, is the most common serious health problem in pet rats and a big part of why dirty or poorly ventilated cages shorten lives: rats with chronic respiratory disease rarely live past 2 years. Signs include sneezing, labored breathing, and a rough coat. There's no cure, but clean housing and prompt veterinary care for flare-ups make a real difference. Any rat that's wheezing, sneezing repeatedly, or breathing with visible effort needs a vet.
-
-Mammary tumors are the most frequently seen tumor in rats and affect both sexes, not just unspayed females, because rat mammary tissue extends widely across the body from chin to tail. Most are benign fibroadenomas rather than cancer, and surgical removal has a good success rate when caught early, so it's worth palpating along the belly and chest for new lumps during regular handling.
-
-Older rats are also prone to pituitary tumors (more common in females on high-calorie diets, causing head tilt and depression), chronic kidney disease, and hind-limb weakness from age-related spinal degeneration. None of these have a cure, which is part of why an experienced exotic vet and prompt attention to new symptoms matter so much for a pet with a naturally short lifespan.`,
-      checklist: [
-        "16x28x30 in minimum multi-level cage",
-        "At least two rats, ideally same-sex littermates",
-        "Bar spacing 1/2 in or less",
-        "Solid-surface exercise wheel, 12 to 14 in",
-        "Paper-based bedding (never cedar or pine)",
-        "Rat-specific pellets or lab blocks",
-        "Fresh vegetables daily",
-        "Hideouts, tunnels, and chew toys",
-        "Water bottle, checked daily",
-        "Exotic veterinarian experienced with rats"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Grooming, heat stress signs, and vet
+    // trips cite the shared small-mammal guides in the sidebar's Health and
+    // More list. Reconciled 2026-09-09 for batch D (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cage type", value: "A wire cage, never a glass tank. A tank, even a large one, traps ammonia far more effectively than an open wire cage does, and rats are unusually prone to exactly the chronic respiratory disease that kind of buildup drives. A well-built wire cage with a solid, sealed base solves this the way a tank simply cannot.", source: "rat-tank-setup-guide" },
+        { label: "Cage size", value: "PetMD lists 24x24x24 inches as the minimum for a single rat and recommends the largest habitat possible beyond that. Because rats must be kept in pairs or small groups, not alone, that minimum is a starting point rather than a target, and PDSA's practical shorthand is worth repeating: cages built for ferrets or chinchillas are usually the right size for rats too.", source: "rat-tank-setup-guide" },
+        { label: "Bar spacing", value: "About half an inch (1 to 1.5 cm) or less. The American Fancy Rat and Mouse Association is specific about why: spacing around 3/4 inch is wide enough that even an adult rat can get its head stuck trying to push through, a real injury risk rather than just an escape risk.", source: "rat-tank-setup-guide" },
+        { label: "Temperature", value: "RSPCA guidance puts the ideal range at 19 to 23°C, roughly 66 to 73°F, and rats generally do fine across a somewhat broader 64 to 79°F band. Rats cannot sweat or pant, and they regulate body heat largely through their tails, which makes them more heat-sensitive than that broader range might suggest, heat stress becomes a real risk above about 86°F.", source: "rat-tank-setup-guide" },
+        { label: "Bedding", value: "Paper-based or cellulose bedding, changed at least twice a week so ammonia does not accumulate between cleanings. Avoid dusty bedding and, per RSPCA guidance, sawdust specifically, along with cedar and pine, whose aromatic oils irritate a rat's already respiratory-sensitive system.", source: "rat-tank-setup-guide" },
+        { label: "Wheel", value: "A solid-surface exercise wheel with no wire rungs. Most sources recommend at least 12 inches in diameter, with many experienced keepers and rescues recommending 14 to 16 inches for adult rats, especially males, since a wheel that is too small forces a hunched, arched running posture that is not good for the spine over time.", source: "rat-tank-setup-guide" },
+        { label: "Company", value: "Never one. Rats are intensely social and single housing is a welfare problem no amount of enrichment fixes. Two is a minimum and a small same-sex group is better.", source: "rat-enrichment-guide" },
+        { label: "Enrichment", value: "A greater total number of enrichment types, listed as nesting material, digging substrate, foraging device, climbing structure, tube, hideaway and suspended area, was associated with more frequent digging, nesting and climbing. Work through the seven categories rather than buying more of what you already have.", source: "rat-enrichment-guide" },
+        { label: "Staple diet", value: "A nutritionally complete, rat-specific pelleted diet or lab block as the base of every meal. RSPCA guidance on this is unambiguous: always feed food designed specifically for rats, rather than pellets made for rabbits, guinea pigs, hamsters, or other herbivores.", source: "rat-feeding-guide" },
+        { label: "Portions", value: "Feed twice daily, morning and evening, per RSPCA guidance, adjusting the amount so a rat finishes what is offered and holds a healthy weight rather than free-feeding an unlimited bowl. Keep vegetables, fruit, grains, and seeds combined under about 10% of the total diet.", source: "rat-feeding-guide" },
+        { label: "Foods to avoid", value: "RSPCA guidance specifically flags onion, citrus fruit, walnuts, rhubarb, grapes, raisins, and chocolate as foods to avoid entirely. Also skip caffeine, alcohol, raw beans, unripe tomato, green or raw potato, and anything salty, sugary, or heavily processed.", source: "rat-feeding-guide" },
+        { label: "Water", value: "Fresh water should always be available in a bottle rather than an open bowl, and RSPCA guidance specifically recommends more than one bottle per cage so a blockage or a spot of competition between cage mates never leaves a rat without access.", source: "rat-feeding-guide" },
+        { label: "Handling", value: "Pick a rat up using both hands in a scooping motion, one hand under the chest, the other supporting the hindquarters, and hold it close to your body for security, never out at arm's length. Never pick a rat up by the tail: the tail skin can shear away from the tissue underneath under pulling or grasping pressure, an injury called degloving or tail slip.", source: "rat-handling-guide" },
+        { label: "Settling in", value: "Give a newly acquired rat a few days to settle into its surroundings before handling begins in earnest, and approach calmly instead of reaching in fast.", source: "rat-handling-guide" },
+        { label: "Budget", value: "Roughly $250 to $550 for a properly housed pair. The cage is by far the biggest line item, running anywhere from about $130 for a basic model to $360 for a premium unit. About $20 to $40 a month ongoing, and $60 to $110 for a routine exotic-vet wellness exam.", source: "rat-cost-guide" },
+        { label: "Adult size", value: "7 to 10 inches body, plus a 6 to 8 inch scaled tail; 0.8 to 1 lb females, 1 to 1.4 lb males." },
+        { label: "Lifespan", value: "Merck Veterinary Manual puts the average pet rat lifespan at 18 to 36 months. Most care organizations, including PDSA, describe it more simply as 2 to 3 years, with some individuals reaching 4.", source: "rat-cost-guide" },
+        { label: "Respiratory disease", value: "The one condition every rat owner needs to recognize. A survey of pet ratteries in the northwestern US found virtually all of them, 95%, positive for the bacterium behind it. There is no cure, and Merck is direct about the long-term outlook: rats with the chronic form of this disease rarely live longer than 2 years.", source: "rat-health-issues-guide" },
+        { label: "Lumps", value: "Mammary tumors are the most common tumor type in rats, affecting both males and females, not just unspayed females, because rat mammary tissue extends widely under the skin from chin to tail. Any new lump warrants a vet visit. Spaying a female rat before 7 months of age meaningfully lowers her lifetime risk, per Merck guidance.", source: "rat-health-issues-guide" },
+        { label: "Grooming", value: "Rats wear their nails down naturally through digging and running far more than rabbits or guinea pigs do, and generally only need a check for overgrowth in older or less active animals rather than a fixed trim schedule.", source: "small-mammal-grooming-nails-molting-guide" },
+        { label: "Heat stress signs", value: "Rapid or open-mouth breathing first, then excess drooling or salivation, then weakness and reluctance to move, with tremors, convulsions, collapse, or unconsciousness as the severe stage. Move the animal to the coolest available room, offer cool, not ice-cold, water, cool it gradually, and get to a vet immediately.", source: "small-mammal-temperature-heat-stress-guide" },
+        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment. For a bonded pair, the cage mate comes along when the visit or recovery allows it.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "rat-health-issues-guide",
+      callNow: [
+        "Labored or noisy breathing",
+        "Sneezing that doesn't resolve",
+        "Any new lump",
+        "Head tilt",
+        "Sudden behavior change",
+        "General lethargy",
+      ],
+      vetLine: "An exotic vet experienced with rats, found before you need one. See a vet promptly for the first three, don't wait to see if it clears up on its own given how quickly a small animal can decline. The last three are a reason to book a routine visit.",
+    },
+    routes: [
+      { slug: "rat-cost-guide", line: "Why the budget starts at two rats, what a properly sized cage actually costs, and the monthly total most first-timers underestimate." },
+      { slug: "rat-tank-setup-guide", line: "Why a wire cage beats a tank, the real minimum size, bar spacing, room temperature, and the wheel that is bigger than you think." },
+      { slug: "rat-feeding-guide", line: "Why hamster food is not rat food, the twice-daily portion rule, and the foods to keep away from a rat entirely." },
+      { slug: "rat-handling-guide", line: "Why rats rarely bite, what allogrooming looks like, the two-handed scoop, and the tail rule that never bends." },
+      { slug: "rat-health-issues-guide", line: "Chronic respiratory disease, mammary and pituitary tumors, kidney disease, and the signs that mean a vet now." },
+      { slug: "rat-enrichment-guide", line: "The pet rat study that found variety, not any one item, is what changes behavior, and the seven categories to cover." },
+    ],
+    buyList: [
+      "At least two rats, same-sex",
+      "Multi-level wire cage with solid ramped shelves",
+      "Solid-surface exercise wheel",
+      "Hammocks and suspended platforms",
+      "Hideouts, at least one per rat",
+      "Tunnels, climbing structures, and a dig box",
+      "Nesting material and things to shred",
+      "Paper-based or cellulose bedding",
+      "Food dishes and more than one water bottle",
+      "Chew toys",
+      "Rat-specific pellets or lab blocks",
+      "Digital thermometer",
+    ],
     faqs: [
-      { q: "Are pet rats the same as wild rats?", a: "Genetically yes, but behaviorally and in every practical sense, no. Fancy rats descend from wild brown rats bred specifically for temperament and color starting in Victorian England, most famously by Jack Black, Queen Victoria's official rat catcher, who sold his tamer, unusually colored rats as pets to the wealthy in the 1800s. That selective breeding produced a genuinely different animal: calm, curious, and eager to interact with people, in contrast to the wild rats most people picture. The stigma persists mostly because the two look similar at a glance, not because fancy rats behave anything like their wild relatives." },
-      { q: "Can rats live alone?", a: "No. Rats are deeply social and should be kept in same-sex pairs or small groups, ideally littermates introduced from a young age. A lone rat, even one that gets hours of daily attention from its owner, is at real risk of stress-related depression and abnormal behavior that human company alone doesn't fully prevent. Rescues typically place rats in pairs or trios for exactly this reason, and it's worth planning cage space for at least two from the start." },
-      { q: "How smart are rats, really?", a: "Genuinely very smart, among the most trainable small pets kept as companions. Using the same reward-based methods used on dogs, rats can learn to respond to their own name, give a high-five, fetch, and run obstacle courses, and they can learn and remember new tasks over time. That trainability isn't just pet-owner folklore either: rats have been the standard animal for maze and spatial-memory research in psychology and neuroscience for more than a century, precisely because they're so good at learning and mentally mapping a space rather than just memorizing a sequence of turns." },
-      { q: "How long do rats live?", a: "Pet fancy rats typically live 2 to 3 years, occasionally reaching 4, which is short for how much personality and trainability they pack in relative to their size. Chronic respiratory disease is one of the biggest factors that shortens rat lifespans in practice, since rats with the condition rarely live past 2 years, which makes clean housing and prompt vet care for any breathing symptoms genuinely lifespan-relevant rather than just a comfort issue." },
-      { q: "What health problems are common in rats?", a: "Chronic respiratory disease, caused by the bacterium Mycoplasma pulmonis, is the most common serious problem and is aggravated by ammonia buildup from infrequent cage cleaning. Mammary tumors are also very common in rats and, unlike most mammals, occur in both sexes because rat mammary tissue extends widely under the skin from chin to tail. The good news is that these tumors are usually benign fibroadenomas rather than cancer, and surgical removal has a good success rate when they're caught early through regular handling and palpation." },
-      { q: "What's the difference between a rat and a mouse?", a: "They're closely related rodents but different species, and the practical differences matter for choosing between them. [Mice](/guides/mouse/) are smaller, faster, and generally more skittish, and most keepers find them harder to hand-tame to the confident, dog-like level many rats reach. Adult male mice are also prone to fighting each other in a way male rats generally aren't, which makes group housing more complicated for mice than for rats, and mice are noticeably smellier, particularly males." },
+      { q: "What size cage does a rat need?", a: "PetMD lists 24x24x24 inches as the minimum for a single rat, recommending the largest habitat possible, and since rats must be kept in pairs or small groups, that minimum applies before adding a second or third rat, not after. PDSA guidance suggests cages built for ferrets or chinchillas are usually a good size." },
+      { q: "How many rats should be kept together?", a: "Never one. Rats are intensely social and single housing is a welfare problem no amount of enrichment fixes. Two is a minimum and a small same-sex group is better." },
+      { q: "What is the single biggest health risk for pet rats?", a: "Chronic respiratory disease caused by the bacterium Mycoplasma pulmonis. Merck Veterinary Manual calls it the most common health problem in rats, and a survey of pet ratteries in the northwestern US found 95% of them positive for it. Once a rat develops the chronic form, Merck notes it rarely lives longer than 2 years, which makes clean, well-ventilated housing a genuine lifespan issue, not just a comfort one." },
     ],
   },
   {
