@@ -1754,6 +1754,9 @@ target zones in one cell, in an article that elsewhere calls 85°F "a
 hard ceiling with zero exceptions." Fixed to a single reading: 72 to
 75°F as the conservative target, with a note that 82-85°F sits too
 close to the hard ceiling to be the number this article leads with.
+(Reversed by the species check: ReptiFiles, the article's own cited
+source, gives 82-85°F for the basking surface, so that figure leads
+again and the "some sources: 72-75°F" hedge stays as it was.)
 
 No hub-versus-deep-dive numeric disagreement found this pass. One
 unsourced claim repeated twice, "the earliest known captive individuals
@@ -2201,7 +2204,11 @@ from the first pass. Its table still read "450+ sq in cage," its body
 said "A hamster's whole world can fit in 450 to 800 square inches," and
 its FunFact derived a "2 to 3 times larger" ratio from that stale
 number. All three corrected to the current 700-775 sq in (Syrian) / 600
-sq in (dwarf) figure, with the ratio re-derived to 1.4 to 1.8x.
+sq in (dwarf) figure, with the ratio re-derived to 1.4 to 1.8x (the
+species check corrected the arithmetic to 1.4 to 1.5x, since 1,080
+over 700 to 775 is 1.39 to 1.54, and moved the guinea pig side's "the
+same whether it's one guinea pig or a pair" clause to tank setup's 7.5
+for one, 10.5 for a pair).
 
 Checked and left as is: the vs guinea pig guide's flat "2-3 years"
 hamster lifespan, against the rest of the set's "median age at death of

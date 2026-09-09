@@ -140,8 +140,8 @@ Parasites are less common in AFTs than in many other gecko species but annual fe
       "Occasional feeder insects (crickets, dubia) and a calcium supplement",
     ],
     faqs: [
-      { q: "Do crested geckos need live insects?", a: "Not strictly, but they benefit from them. A commercial crested gecko diet (CGD) like Repashy or Pangea provides complete nutrition, but live feeder insects 1 to 2 times per week add protein variety and the enrichment of active hunting that CGD alone does not replicate." },
-      { q: "Can crested geckos lose their tails?", a: "Yes. Crested geckos can drop their tails as a stress or defense response. Unlike leopard geckos, the tail does not regenerate. A tail-less crested gecko (called a frogbutt) is perfectly healthy and suffers no long-term consequences, but the tail is permanently gone." },
+      { q: "How long can a crested gecko go without eating?", a: "About 2 to 3 weeks for a healthy adult at a good weight, though a vet consult is worth considering once the second week passes, especially alongside visible weight loss. Juveniles hold far less reserve and don't get that grace period. Water runs on a shorter clock: roughly 3 days." },
+      { q: "Does a crested gecko's tail grow back if it drops?", a: "No, and this is the critical difference from species like leopard geckos. A crested gecko's tail does not grow back once dropped. The good news is a tailless gecko, often called a \"frog butt\" by keepers, lives a completely normal, healthy life." },
       { q: "What's the maximum safe temperature for a crested gecko enclosure?", a: "85°F, a hard ceiling with zero exceptions. New Caledonia, where they come from, tops out at 79-85°F in the hot season, and a long stretch above that risks fatal heat stroke. Too much heat is the bigger danger with this species." },
     ],
   },

@@ -115,9 +115,9 @@ export const fishGuides = [
       "Freeze-dried or frozen bloodworms/brine shrimp for variety",
     ],
     faqs: [
-      { q: "Can bettas live in bowls?", a: "No - this is one of the most persistent myths in the fishkeeping hobby. Small, unheated, unfiltered bowls cause chronic stress from poor water quality and cold temperatures, and they dramatically shorten a betta's lifespan. A betta needs at least 5 gallons with a heater and filter to genuinely thrive, not just survive." },
-      { q: "Can two bettas live together?", a: "Male bettas will fight, often fatally, if housed together, which is exactly why they're called fighting fish. A single male should always be kept alone. Female bettas can sometimes be kept in groups of five or more (a sorority) in a large, heavily planted tank with careful monitoring, but this setup carries real risk of aggression and isn't recommended for beginners." },
-      { q: "Why is my betta not eating?", a: "The most common causes are constipation from overfeeding, stress from recent water changes or new tankmates, water temperature that's too cold, or the early stages of illness. Check the heater is holding steady at 78 to 80°F first, since a chilled betta commonly refuses food, then evaluate water quality and recent tank changes." },
+      { q: "What size tank does a betta fish need?", a: "Five gallons is the current standard minimum, a genuine improvement over older bowl-based advice. Bettas can technically survive in smaller volumes, but bigger tanks are easier to keep stable since temperature and water chemistry swing less in more water. Always use a lid, bettas are surprisingly good jumpers." },
+      { q: "Why won't my betta eat?", a: "Most commonly it's stress from a recent move or tank change, pickiness about a new food, or water that's too cold or of poor quality. Bettas need water in the roughly 76 to 82°F range, cooler water slows their metabolism and appetite noticeably. Check water quality and temperature before assuming anything more serious." },
+      { q: "What should I do before reaching for medication?", a: "Test and correct water quality and temperature first. A heated, filtered tank on a consistent water-change schedule is what makes a huge share of betta illness resolve or never start. Aquatic vets exist for serious or unclear cases, but they're the exception rather than the norm." },
     ],
   },
   {

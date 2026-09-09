@@ -562,7 +562,7 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
         { label: "Temperature", value: "65 to 79°F. Heatstroke becomes a real risk above 80°F, so the gap between the comfortable ceiling and the danger line is a single degree.", source: "guinea-pig-tank-setup-guide" },
         { label: "Bedding", value: "Paper-based bedding, kiln-dried pine, or fleece liners. Never cedar, raw pine, or sawdust.", source: "guinea-pig-tank-setup-guide" },
         { label: "Company", value: "Pairs or small groups, not solitary. Guinea pigs housed alone tend to become withdrawn or depressed.", source: "guinea-pig-tank-setup-guide" },
-        { label: "Diet", value: "Grass hay unlimited (70 to 80% of intake), about 1/8 cup of vitamin-C-fortified pellets per guinea pig daily, and roughly 1 cup of fresh leafy greens.", source: "guinea-pig-feeding-guide" },
+        { label: "Diet", value: "Grass hay unlimited, roughly 80% of the diet. About 1/8 cup (about 2 tablespoons) of vitamin-C-fortified pellets per guinea pig, and roughly 1 cup of fresh leafy greens.", source: "guinea-pig-tank-setup-guide" },
         { label: "Vitamin C", value: "10 to 25 mg/kg a day for a healthy adult, 30 mg/kg or more if growing, pregnant, lactating, or ill, roughly 20 to 25 mg a day for a typical adult. A quarter of a medium bell pepper covers it.", source: "guinea-pig-scurvy-vitamin-c-guide" },
         { label: "Not eating", value: "Call a vet at 8 to 12 hours without eating or producing droppings. Once GI stasis sets in, it can become life-threatening within 24 to 48 hours.", source: "guinea-pig-feeding-guide" },
         { label: "Handling", value: "Approach from the side, never above. One hand under the chest behind the front legs, the other supporting the hindquarters. Stay low, a fall can be fatal.", source: "guinea-pig-handling-guide" },
@@ -607,9 +607,9 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
       "Safe chew toys",
     ],
     faqs: [
-      { q: "Do guinea pigs need to be in pairs?", a: "Yes, for almost all guinea pigs. Guinea pigs are highly social herd animals, a trait inherited from the wild cavies they were domesticated from, which lived in groups. A solo guinea pig is an anxious, understimulated animal prone to stress and depression. They communicate through a rich vocabulary of sounds and physical behaviors that require another guinea pig to engage with. Bonded pairs are happier, healthier, and more active than solitary animals. Adopting a pair from the start is far easier than introducing a new companion to an established solo guinea pig." },
-      { q: "Do guinea pigs need Vitamin C?", a: "Yes - and this is the most critical dietary distinction for guinea pigs. Unlike most mammals, guinea pigs cannot synthesize Vitamin C internally and must obtain it entirely from diet. Deficiency causes scurvy: rough coat, reluctance to move, swollen painful joints, weight loss, and eventually internal bleeding. The most reliable source is fresh bell peppers daily - a quarter of a medium bell pepper provides sufficient Vitamin C for one guinea pig. Do not rely on Vitamin C in water bottles, as it degrades rapidly when exposed to light and oxygen." },
-      { q: "Why do guinea pigs wheek?", a: "Wheeking is the distinctive high-pitched squeal guinea pigs make when excited - typically in anticipation of food. Many learn to wheek at the sound of the refrigerator door opening or their owner's footsteps. Beyond wheeking, guinea pigs have an extensive vocal repertoire: purring (contentment), rumbling (dominance), chutting (annoyance), teeth chattering (warning), and quiet cooing between bonded pairs. Their expressiveness is one of the reasons they are such engaging companion animals." },
+      { q: "How much space does a guinea pig need?", a: "About 7.5 square feet, roughly 30 by 36 inches, for one, and 10.5 for a pair, with more for a larger group. Bigger is always better: guinea pigs are active and use the room." },
+      { q: "How long can a guinea pig safely go without eating?", a: "Not long. Sources say call a vet after 8 to 12 hours with no eating and no droppings, since guinea pig digestion depends on constant food throughput. Once GI stasis sets in, it can become life-threatening inside 24 to 48 hours." },
+      { q: "Why is vitamin C such a big deal for guinea pigs specifically?", a: "Guinea pigs, like humans, can't produce their own vitamin C, which makes deficiency a species-specific concern. It weakens the immune system, slows wound healing, and disrupts normal bone and tooth development, and it's almost entirely preventable through diet." },
     ],
   },
   {
@@ -636,7 +636,7 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
         { label: "Bedding", value: "At least 6 inches of dust-free paper bedding or aspen shavings, a welfare requirement, not decoration. Never cedar or pine.", source: "hamster-tank-setup-guide" },
         { label: "Wheel", value: "Solid surface, no rungs. 8 to 11 inches for a Syrian, 6 to 8 for a dwarf. Too small forces an arched running posture that's hard on the spine.", source: "hamster-tank-setup-guide" },
         { label: "Sand bath", value: "A dust-free, non-clumping sand bath is a species essential, not an extra, for working coat and skin oils out.", source: "hamster-tank-setup-guide" },
-        { label: "Company", value: "Syrians are strictly solitary and must be housed alone. Some dwarf species can sometimes be kept in same-sex pairs introduced young, but it isn't guaranteed to work.", source: "hamster-handling-guide" },
+        { label: "Company", value: "Syrian hamsters are strictly solitary, and housing two together leads to fighting. This is one of the most common and preventable hamster-owner mistakes there is.", source: "hamster-handling-guide" },
         { label: "Diet", value: "A nutritionally complete hamster pellet or lab block as the staple, not a loose seed mix. Small daily fresh vegetables, under about 10% of the diet combined with fruit.", source: "hamster-feeding-guide" },
         { label: "Not eating", value: "6 to 12 hours without eating is worth watching, 12 to 24 hours warrants a vet call, 24+ hours is critical, 48+ life-threatening. A day of no visible eating can also just mean a hamster is working through a cheek-pouch hoard.", source: "hamster-feeding-guide" },
         { label: "Handling", value: "Let it wake up and orient itself before reaching in, never grab from above. Scoop from below with both hands. Syrians are the easiest to handle; dwarfs and Roborovski are faster and more nip-prone.", source: "hamster-handling-guide" },
@@ -649,7 +649,8 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
       source: "hamster-health-issues-guide",
       callNow: [
         "Watery diarrhea or a wet, matted rear end (wet tail, fatal within 24 to 48 hours untreated)",
-        "Dropped food, drooling, or sudden weight loss",
+        "Dropped food or drooling",
+        "Sudden weight loss",
         "A lump or growth",
         "Labored breathing",
       ],
@@ -664,7 +665,7 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
       { slug: "hamster-enrichment-guide", line: "The bedding-depth study behind the numbers above, correct wheel sizing, and what wire-gnawing actually means." },
     ],
     buyList: [
-      "600-775+ sq in cage (bin, wire with tight bar spacing, or glass tank)",
+      "700 to 775+ sq in cage for a Syrian, 600+ for a dwarf (bin, wire with tight bar spacing, or glass tank)",
       "6+ inches of paper-based or aspen bedding",
       "8 to 11 inch solid-surface exercise wheel (Syrian) or 6 to 8 inch (dwarf)",
       "Dust-free, non-clumping sand bath",
@@ -674,9 +675,9 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
       "Digital thermometer",
     ],
     faqs: [
-      { q: "Can I keep two hamsters together?", a: "Not if they're Syrian hamsters - Syrians are solitary and must be housed alone as adults; even littermates that got along as babies will eventually fight, sometimes fatally, once they reach maturity around 8 to 12 weeks old. Some dwarf species (Campbell's, Winter White) can occasionally be kept in same-sex pairs introduced young, but it's not guaranteed to work long-term and requires close monitoring, with a backup cage ready in case they need to be separated." },
-      { q: "Why does my hamster stuff its cheeks so much?", a: "Cheek-pouching is completely normal hoarding behavior, not overeating. Wild hamsters cache food in burrows for later, and pet hamsters keep the same instinct, sometimes carrying so much food their head visibly doubles in size. A hamster whose food seems to disappear is usually just stashing it in the bedding somewhere, not eating everything at once." },
-      { q: "Should I get a rat or a hamster?", a: "It mostly comes down to social needs and temperament. Syrian hamsters are solitary and must live alone as adults, so a hamster's entire social world is you, in short sessions once it wakes up for the evening. [Rats](/guides/rat/) are the opposite: they're deeply social, need to be kept in same-sex pairs or small groups rather than alone, and are widely considered the more consistently people-friendly and trainable of the two, learning tricks and responding to their own name the way a small dog might. A hamster suits someone who wants one low-maintenance animal that bonds with a single owner; a rat suits someone willing to house at least two animals who wants more interactive, dog-like engagement in return." },
+      { q: "What size enclosure does a hamster need?", a: "Current welfare guidance puts a Syrian at roughly 700 to 775 square inches of unbroken floor, and dwarf species near 600, with more always better. A 40-gallon breeder suits dwarfs; a Syrian wants something closer to a 75-gallon." },
+      { q: "What is wet tail and why is it so dangerous?", a: "Wet tail (proliferative ileitis) is a bacterial condition tied to stress that a large veterinary study found to be both the most common diagnosed condition and the leading specific cause of death in pet hamsters, present in roughly 7 to 8% of hamsters studied. It hits young Syrians between 3 and 10 weeks old hardest and can be fatal within 24 to 48 hours without treatment, making it a same-day emergency, not a wait-and-see situation." },
+      { q: "Can two Syrian hamsters be housed together so they have a friend?", a: "No. Syrian hamsters are strictly solitary, and housing two together leads to fighting. This is one of the most common and preventable hamster-owner mistakes there is." },
     ],
   },
   {

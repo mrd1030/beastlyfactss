@@ -217,21 +217,20 @@ Red-footed tortoises do not need to brumate and should not be allowed to get col
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Hygiene and the safe-
-    // plants diet row cite the shared reptile guides in the sidebar's Health
-    // and More list. Reconciled 2026-09-08 after the Russian tortoise set
-    // test (docs/READER_REVIEWS.md).
+    // encyclopedia entry, which no deep dive repeats. Hygiene cites the shared
+    // reptile hygiene guide in the sidebar's Health and More list. Reconciled
+    // 2026-09-08 after the Russian tortoise set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal", value: "Colorado bans the species outright, and several other states require a permit. Not banned or restricted almost everywhere else, including Hawaii.", source: "russian-tortoise-legal-guide" },
+        { label: "Legal", value: "One state, Colorado, bans it, four require a permit, four attach a condition, and Hawaii, which bans almost everything, expressly allows it. Forty-three states place no rule on it at all.", source: "russian-tortoise-legal-guide" },
         { label: "Enclosure", value: "A 4x2x2 ft tortoise table, about 8 square feet, is the absolute indoor minimum, genuinely a minimum rather than a goal. Sources disagree on the target: at least 12 square feet, or our own functional recommendation of roughly 7x3.5 ft, about 24 square feet.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Temperature", value: "Basking 95 to 100°F at the surface, cool side in the 70s°F. Night drops to about 60°F are fine, and most homes need no supplemental night heat.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Humidity", value: "Ambient 30 to 50%, low and dry for this arid species, but a moist hide lined with peat moss for a humid microclimate to hydrate and shed in.", source: "russian-tortoise-tank-setup-guide" },
         { label: "UVB", value: "A T5 HO tube (Arcadia 12% or Zoo Med ReptiSun 10.0), covering a third to half the enclosure, for a basking-area UVI near 3.0 to 4.0. Coil and compact bulbs aren't adequate.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Substrate", value: "A 50/50 topsoil and coconut coir mix, or a similar sand and loam blend, deep enough to burrow in and kept slightly damp. No pure sand.", source: "russian-tortoise-tank-setup-guide" },
-        { label: "Diet", value: "Unlimited grass hay and a rotation of wild weeds (dandelion, plantain, clover) as the staple, not cultivated grocery greens. Avoid high-oxalate staples like spinach and chard. Fruit minimal to none.", source: "herbivorous-reptile-safe-plants-guide" },
+        { label: "Diet", value: "Unlimited grass hay and a rotation of wild weeds, dandelion, plantain, and clover among them, as the staple, rather than cultivated grocery greens. High-oxalate greens like spinach and chard stay off the rotation. Fruit minimal to none.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Brumation", value: "Physiologically programmed to brumate 2 to 4 months over winter at 40 to 55°F, but indoor keepers can skip it entirely by maintaining full lighting, heat, and feeding year-round.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Handling", value: "An observation pet, not one built for regular handling. House males separately, they ram and bully other tortoises. Skilled climber and digger, more of an escape risk than it looks.", source: "russian-tortoise-handling-guide" },
         { label: "Budget", value: "$50 to $150 for a hatchling ($225 to $400 older captive-bred). $372 to $775 to set up. $365 to $715 a year.", source: "russian-tortoise-cost-guide" },
@@ -269,9 +268,9 @@ Red-footed tortoises do not need to brumate and should not be allowed to get col
       "Calcium (no added phosphorus) and multivitamin supplements",
     ],
     faqs: [
-      { q: "Do Russian tortoises need to hibernate?", a: "It's natural for them, but not mandatory for an indoor pet - keepers who maintain full lighting, heat, and feeding year-round can choose to keep their tortoise active through winter instead. If you do brumate, the dormancy period typically runs 2 to 4 months over winter. Consult a tortoise-experienced reptile veterinarian for safe hibernation protocols before your tortoise's first winter." },
-      { q: "Can Russian tortoises live outdoors?", a: "Yes, in appropriate climates - and for many keepers, outdoor housing is the ideal long-term solution. They need an outdoor enclosure with walls buried 12 inches or more underground (they burrow and escape constantly), natural sunlight (far superior to any UVB bulb for vitamin D3 synthesis), access to edible weeds, and a sheltered area for cool or wet weather." },
-      { q: "How does a Russian tortoise compare to other pet tortoises like the sulcata or red-footed?", a: "Russian tortoises are the smallest and hardiest of the three, built for cold, dry steppe and needing real brumation most winters. The [red-footed tortoise](/guides/red-footed-tortoise/) is a size step up and comes from humid tropical South America instead, so it wants high humidity rather than a hibernation box. The [sulcata tortoise](/guides/sulcata-tortoise/) dwarfs both, eventually needing a yard rather than a tortoise table. If a Russian tortoise's small size appeals but you'd rather skip winter brumation, a red-footed tortoise is worth a look." },
+      { q: "What size enclosure does a Russian tortoise need?", a: "4 feet by 2 by 2 is the absolute indoor minimum, though something nearer 7 feet by 3.5 is the comfortable working size. Use an open-topped tortoise table rather than a closed glass aquarium." },
+      { q: "Is a respiratory infection an emergency in a Russian tortoise?", a: "Yes. It's caused by temperatures running chronically low, excess humidity, or drafts, and it does not resolve on its own, it needs antibiotics. Always see a vet immediately, and raise temperature and ensure hydration while arranging care." },
+      { q: "Do Russian tortoises need to brumate?", a: "They're physiologically programmed to, entering roughly 2 to 4 months of dormancy over winter at 40 to 55°F. Indoor keepers have a real choice most others don't: by maintaining full lighting, heat, and feeding year-round, you can keep your tortoise active through winter instead of brumating it." },
     ],
   },
   {
