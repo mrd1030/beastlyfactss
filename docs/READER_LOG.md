@@ -1617,3 +1617,95 @@ First two changes: make the hub inherit its numbers from the deep dives instead 
 - How much food to put out per day in any measurable amount (grams, teaspoons, bowl depth).
 - How to find and verify an avian vet, and what a board-certified avian specialist actually is.
 - How to introduce a second cockatiel, after four pages recommend a pair (the colony guide covers budgies, canaries, and finches only).
+
+## Cockatiel (2026-09-09, batch B, second pass, after the fixes)
+
+One Opus agent, the same nine pages re-extracted after the first-pass
+fixes, about 82k tokens. Full agent output below, unedited.
+
+---
+
+# Cockatiel set, read as someone buying one
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, and it is the page I would print. Actionable: cage 20x20x30, half-inch bars, 30-day quarantine, $320 to $860 setup, the vet-now list. **A-**
+- **01 Encyclopedia.** Finished it, but nothing to act on. Good history, wrong lifespan for a buyer. **C+**
+- **02 Cost.** Finished it. Actionable: budget $75 to $250 plus setup, $200 to $350 a year, $85 to $200 exam, find the vet first. The cost table has two real numbers and four rows saying "part of the starter setup," which is filler in a table. **B**
+- **03 Handling.** Finished it. Actionable: 7 to 14 days hands-off, flat palm not a finger, 10 to 15 minute sessions, the stress list. **B+**
+- **04 Health.** Finished it. Actionable: cuttlebone in permanently, no kitchen, the call-now list. **A-**
+- **05 Setup.** Finished it. Actionable: everything I need to buy and place, plus spot-clean daily, deep clean weekly. **A-**
+- **06 Feeding.** Finished it, twice. Actionable: free-choice pellets, pull fresh food in two hours, the safe and toxic lists, no grit, six reasons for appetite loss. Best page here. **A**
+- **07 Enrichment.** Finished it. Actionable: the priority order, and rotate. **A-**
+- **08 vs Cockatoo.** Skimmed. I already picked the cockatiel; this page is for someone earlier than me. **B+**
+
+## 2. Hub and encyclopedia
+
+The hub earns its place. It is the only page carrying the 30-day quarantine and the power-outage rule, and every number on it names the page it came from. The encyclopedia does not: it repeats size and adds natural history I enjoyed but cannot use, and its one care-relevant number contradicts the hub.
+
+Hub: "Lifespan: 10 to 15 years is typical."
+Encyclopedia: "10 to 14 years in the wild; up to 25 years in captivity, the oldest on record 36."
+
+Those are not the same commitment, and the hub's budget line is built on the shorter one.
+
+## 3. The set as a whole
+
+I could buy, set up, feed and spot trouble. Still missing: how much food per day in an actual amount, how many hours out of the cage, how to tell if mine is a hen (the health page's biggest risks are all hen-only), what to clean the cage with, whether to clip before the first free flight, and how to offer a bath.
+
+Questions answered elsewhere in the set with no signpost:
+- Health raises feather destructive behavior from boredom; the enrichment page is the answer and is not linked.
+- Health assumes I know my bird's sex; nothing on that page points anywhere.
+- Setup mentions night frights in one line; the enrichment FAQ gives the fuller answer and neither page mentions the other.
+- Cost tells me to find an avian vet; health explains what the exam catches, unlinked.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or three times: the kitchen fume warning (hub, health, setup), the pellet ratio (hub, setup, feeding), the crest as mood dial (handling, vs-cockatoo).
+
+Lifespan, the worst one:
+- Cost: "A 10 to 15 year lifespan means this is a long-term financial commitment."
+- vs Cockatoo: "A cockatiel's 15 to 25 year lifespan is already a real commitment."
+
+Crest:
+- Handling: "Held upright and relaxed, it signals calm curiosity."
+- vs Cockatoo: "straight up usually signals excitement or alarm, held back and relaxed signals contentment."
+
+Diet math: "Pellets should make up roughly 75 to 80% of daily intake, with fresh vegetables and fruit filling another 20 to 25%" tops out at 105 percent, before the seeds the same sentence allows.
+
+Toy materials: health says cockatiels are "frequent offenders when it comes to ingesting rope fibers," while enrichment recommends "palm and untreated natural fiber" with no supervision caveat.
+
+Light: setup asks for "10 to 12 hours of quiet, dark sleep" and "Ten to twelve hours of UV light exposure," which needs a 24-hour day to satisfy both maxima.
+
+## 5. The one link each page needed
+
+- **Hub:** "Adult size: 12 to 13 inches (30 to 33 cm) including tail; 2.5 to 3.5 oz." The only unlinked bullet. Point it at the encyclopedia.
+- **Encyclopedia:** "Wild Lifespan: 10 to 14 years in the wild; up to 25 years in captivity." Point it at the cost guide, which turns years into money.
+- **Cost:** "The cage is frequently the single biggest line item in the whole setup." Point it at the cage setup guide. Nothing else on the page tells me what I am buying.
+- **Handling:** "Fluffed feathers combined with rapid breathing." Point it at the health guide, because that same sign is on its call-the-vet-now list.
+- **Health:** "Often traced back to boredom, loneliness, or stress rather than a purely medical cause." Point it at the enrichment guide.
+- **Setup:** "Include foraging toys for enrichment." Point it at the enrichment guide.
+- **Feeding:** "All-seed diets are a well-documented cause of the malnutrition commonly seen in pet cockatiels, and it's linked to fatty liver disease." Point it at the health guide.
+- **Enrichment:** "A single bird with excellent toys and no company is still a single bird." Point it at the handling guide.
+- **vs Cockatoo:** "A cockatiel's 15 to 25 year lifespan is already a real commitment." Point it at the cost guide.
+
+## 6. Trust
+
+What made me doubt: the lifespan split, the percentages over 100, and the enrichment page leaning on "a 2025 study" and "a 2020 paper" with no author, journal or title, when the whole article is built on them being real. "As one avian practice puts it plainly" is the same problem in the health page.
+
+What convinced me a keeper wrote this: "Material that survives the week has not done its job."
+
+## 7. Set grade: B+
+
+Genuinely useful, specific, and honest about what it does not know, but the lifespan number changes depending on which page I am standing on, which is the kind of thing that makes me check everything else.
+
+First two changes:
+1. Pick one lifespan figure and make all four pages say it.
+2. Fix the diet percentages so they sum to 100 with seeds included, and put an actual out-of-cage hours number in the enrichment or handling guide.
+
+## Not covered anywhere
+
+- How to bathe or mist a cockatiel, though enrichment ranks "bathing opportunity" fifth in its priority list.
+- How much food to put out per day in a real amount, in grams, teaspoons, or bowl depth.
+- What is safe to clean a cage with, after setup asks for a weekly deep clean.
+- A concrete daily out-of-cage figure. "Substantial" is the closest the set gets.
+- Which toy materials are actually safe for a cockatiel, given the rope-fiber ingestion warning in the health guide points the opposite way from the enrichment guide.

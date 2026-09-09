@@ -2725,6 +2725,81 @@ either vs guide. The room temperature, food-amount, avian-vet-finding,
 and second-cockatiel gaps from the first pass remain open too, still
 uncovered anywhere in the set.
 
+## Cockatiel (2026-09-09, batch B, second pass, after the fixes)
+
+One Opus agent, the same nine pages re-extracted after the first-pass
+fixes, about 82k tokens. Set grade held at B+, same shape as before:
+"genuinely useful, specific, and honest about what it does not know,
+but the lifespan number changes depending on which page I am standing
+on."
+
+Real issues the second pass caught that the first pass didn't:
+
+- Diet arithmetic. Feeding's own sentence, "roughly 75 to 80% of daily
+  intake... with fresh vegetables and fruit filling another 20 to
+  25%," tops out at 105% before counting the seeds the same sentence
+  allows. Opened the cited VCA page again, more carefully this time:
+  it actually says fruits and vegetables "should account for no more
+  than 20%-25%," an upper-bound qualifier the site's copy had dropped.
+  Restored "no more than" in the feeding guide's body and FAQ, the
+  tank setup guide's FAQ (now a pointer at feeding, same figure), and
+  the router hub's Diet row, so the ranges read as independent ceilings
+  rather than a sum. Budgie's own tank setup guide has the identical
+  "another X%" pattern and the identical overshoot risk; left
+  untouched since it's outside this species and its own species check
+  already passed, flagged here for whoever next touches it.
+- Crest position, a real same-species contradiction, not just
+  different wording: the handling guide said "held upright and
+  relaxed, it signals calm curiosity," the vs cockatoo guide said
+  "straight up usually signals excitement or alarm." Neither
+  citation actually backs a fixed position-to-mood dictionary (checked
+  handling's own two sources, Lafeber's cockatiel FAQ page and its
+  bird behavior page directly; neither gives one), and the site's own
+  shared bird-body-language-guide.mdx says so explicitly: "this guide
+  isn't going to invent that granularity where the documentation
+  doesn't support it." The handling guide's "upright = calm" claim,
+  the one with no source of its own and the one that actively
+  contradicts the site's shared reference, was cut; it keeps the two
+  positions Lafeber can support existing without contradiction
+  (flattened tight = fear, forward = alertness) and now links the
+  shared body language guide. The vs cockatoo guide's more granular
+  claim was left as is, it no longer conflicts with anything on this
+  page, though it runs a little ahead of what that same shared page
+  considers verified, noted for whoever next touches it.
+- Toy material, a softer version of the same pattern: health's
+  "frequent offenders when it comes to ingesting rope fibers" against
+  enrichment's recommendation of "untreated natural fiber" toys with
+  no caveat. Not a hard contradiction (rope and generic natural fiber
+  aren't necessarily the same material), but close enough to read as
+  one page's warning and another page's blind spot. Enrichment now
+  flags checking rope-based toys for frayed strands and links the
+  health guide.
+- Lifespan framing. The hub's "10 to 15 years is typical" read to the
+  reader as flatly disagreeing with the encyclopedia's "up to 25 years
+  in captivity." Not a numeric conflict (typical and maximum are
+  different claims, and both are separately sourced), but the hub row
+  now adds "though some live considerably longer with excellent care"
+  so it reads as compatible rather than contradictory.
+
+The set as a whole and deep-dive overlap otherwise unchanged from the
+first pass; the "24-hour day" UV-versus-darkness question the second
+pass raised again was already checked in the first pass and is real,
+sourced, non-conflicting content (day UV hours, night dark hours), not
+re-litigated here.
+
+Recommended links: three more added (handling to the shared bird body
+language guide, enrichment to the health issues guide, both above),
+the rest already covered in the first pass.
+
+Trust: same doubts as the grade line above, mostly resolved by the
+arithmetic and crest fixes; enrichment's uncredited "a 2025 study" and
+"a 2020 paper," and health's "as one avian practice puts it plainly,"
+were flagged by the reader as citation style rather than a factual
+problem, both genuinely exist in that article's own Sources block
+(checked), just not named inline; left as house style rather than
+rewritten, matching how other articles on the site cite research in
+prose.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -2991,3 +3066,32 @@ uncovered anywhere in the set.
   Note for whoever merges: this branch forked one commit before main's
   stated batch-B base and does not carry that commit's sharp version
   bump in package.json.
+- 2026-09-09, cockatiel (batch B, branch claude/batch-b-startup-ve7avl):
+  hub rebuilt to router shape, resolving the old hub's cage minimum
+  (24x24x30 "required" against tank setup's sourced 20x20x30), cage
+  shape (the old hub's unsourced "active climbers, benefit from
+  vertical space" against tank setup's PetMD-cited "horizontal
+  flyers"), bar spacing, and vet-cost conflicts by construction. A real
+  diet-percentage conflict (old hub 60-70%, tank setup 60-80%, feeding
+  75-80%) researched for real: tank setup's own cited VCA page actually
+  says 75-80%, matching feeding, not the 60-80% tank setup was quoting
+  it as; tank setup's near-duplicate diet paragraph cut to a pointer at
+  feeding. A real lifespan conflict (cost guide's own "15 to 20 years"
+  matched neither of its two most relevant cited sources) researched
+  for real: TheVetDesk and Hepper, opened directly, both say "10 to 15
+  years"; corrected throughout the cost guide. Left open, flagged
+  rather than force-reconciled: two vs-pieces (budgie-vs-cockatiel and
+  cockatiel-vs-cockatoo) independently cite PetMD for "15 to 25 years,"
+  a real quote from a real page, genuinely disagreeing with the
+  now-corrected cost guide at a different source tier; the
+  encyclopedia's "up to 25 years, oldest on record 36" also matches
+  that same PetMD page exactly and was left untouched. Second pass
+  caught the diet percentages summing past 100% (VCA's own "no more
+  than 20-25%" qualifier had been dropped everywhere on the site,
+  restored), a real same-species crest-reading contradiction between
+  the handling and vs-cockatoo guides (traced to neither source
+  actually backing a fixed position-to-mood dictionary, and the site's
+  own shared bird-body-language-guide.mdx saying exactly that; trimmed
+  the unsourced side), and a soft rope-fiber-ingestion-versus-toy-
+  material tension between health and enrichment. Nine links added
+  across both passes.
