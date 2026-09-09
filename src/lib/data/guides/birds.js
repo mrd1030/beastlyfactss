@@ -8,69 +8,65 @@ export const birdGuides = [
     image: "/assets/guides/african-grey.jpg",
     tagline: "The genius of the parrot world, one of the most intelligent animals on Earth!",
     funFact: "African Greys have the cognitive ability of a 5-year-old child and can learn over 1,000 words. The famous parrot Alex could identify colors, shapes, and even understand the concept of 'same' and 'different'!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "36x24x48 in cage (larger preferred)", low: 300, high: 600 },
-        { item: "Multiple textured perches", low: 30, high: 60 },
-        { item: "Full-spectrum UVB light", low: 40, high: 70 },
-        { item: "Foraging and puzzle toys", low: 40, high: 80 },
-        { item: "Sleep cage or covered area", low: 80, high: 150 },
-        { item: "Misting bottle", low: 8, high: 15 },
-      ],
-      annual: [
-        { item: "High-quality parrot pellets", low: 150, high: 250 },
-        { item: "Fresh vegetables and limited fruit", low: 150, high: 250 },
-        { item: "Rotating toys", low: 80, high: 150 },
-        { item: "Annual avian vet exam + bloodwork", low: 150, high: 300 },
-      ],
-    },
-    sections: {
-      housing: `African grey parrots require significantly more space than their body size might suggest. A minimum cage of 36x24x48 inches is required, though 48x36x60 inches or larger is strongly preferred. African greys need room to climb, flap, and move. Bar spacing of 3/4 to 1 inch. Stainless steel cages are the safest long-term investment.
-
-Position the cage at eye level against a wall (providing psychological security) and away from the kitchen, drafts, and direct sunlight. Cooking fumes - especially from overheated non-stick cookware - are instantly lethal to birds. African greys are sensitive to environmental stress and benefit from a stable, consistent location.
-
-Provide multiple perches of different diameters and textures: natural wood (manzanita, java, natural branch), rope, and cement perches help maintain foot health. Vary perch heights and placement throughout the cage. A separate sleep cage in a quiet, dark room used consistently each night provides the 10 to 12 hours of uninterrupted sleep African greys need.
-
-Full-spectrum UVB lighting during daytime hours supports vitamin D3 synthesis and healthy calcium metabolism. African greys are notably prone to calcium deficiency and UVB exposure is a meaningful preventative measure.`,
-      diet: `High-quality formulated pellets (Harrison's, Roudybush, or Lafeber's) should make up 60 to 70% of an African grey's daily intake. Pellets provide complete, balanced nutrition that seed-only diets cannot replicate. Transitioning from seeds to pellets takes patience - weeks of gradually mixing pellets into seed while monitoring weight - but is one of the most important health investments for a long-lived bird.
-
-Fresh vegetables should constitute 20 to 30% of the diet. Leafy greens (kale, chard, romaine, dandelion), bell peppers, broccoli, carrots, sweet potato, and squash are excellent choices. Rotate offerings daily. Dark leafy greens provide Vitamin A - African greys are particularly prone to Vitamin A deficiency, which suppresses the immune system and causes respiratory and skin problems.
-
-Fruit should be limited to 5 to 10% of diet (high sugar). Nuts (almond, walnut, Brazil nut) can be used as training rewards but are high in fat. Strictly avoid avocado, chocolate, caffeine, onion, garlic, alcohol, xylitol, and high-salt foods - these are toxic to birds. Fresh water changed twice daily is essential.`,
-      enrichment: `African greys are frequently cited as the most cognitively sophisticated of all parrot species, with the intellectual capacity of a 5-year-old human child. Without adequate mental stimulation and social interaction, African greys develop severe behavioral problems: feather destructive behavior, excessive screaming, self-mutilation, and stereotypic compulsive behaviors.
-
-Provide a rotating selection of foraging toys, puzzle feeders, shreddable toys, and novel objects every day. Training sessions using positive reinforcement (food rewards for tricks, words, and target behaviors) are excellent daily enrichment that strengthen the bird-keeper bond. African greys learn quickly - they need new challenges regularly.
-
-Provide a minimum of 2 to 4 hours of supervised out-of-cage time daily in a bird-safe environment. A playstand outside the cage stocked with toys and foraging opportunities extends their active territory meaningfully.
-
-Social interaction with their primary human is irreplaceable. African greys form intense pair bonds that transfer to a primary human caregiver in captivity. This requires a significant daily time commitment for the life of the bird - often 40 to 60+ years. Consider this seriously before acquiring an African grey.`,
-      health: `Feather Destructive Behavior (FDB) - feather plucking or barbering - is the most visible sign of psychological distress. Causes include boredom, loneliness, hormonal imbalance, nutritional deficiency, infections, and allergies. Addressing FDB requires identifying the underlying cause through veterinary and behavioral assessment. It is rarely simple to resolve.
-
-Psittacine Beak and Feather Disease (PBFD) is a serious viral disease that attacks feather follicles and the immune system. Symptoms include abnormal feather growth and progressive immune failure. There is no cure. Test all new birds before contact with existing birds.
-
-Calcium deficiency manifests as seizures and muscle weakness in African greys - they are metabolically predisposed to this condition more than most parrots. UVB exposure and adequate dietary calcium are preventative. Aspergillosis (fungal respiratory infection) is also common, particularly in birds with compromised immune systems.
-
-Annual avian veterinary exams including complete blood panel are essential. Find an avian vet before you need one. African greys can live 40 to 60 years - establish a long-term veterinary relationship early.`,
-      checklist: [
-        "Minimum 36x24x48\" cage (larger preferred)",
-        "High-quality parrot pellets (Harrison's or Roudybush)",
-        "Fresh vegetables and limited fruit daily",
-        "Multiple textured perches",
-        "Foraging toys and puzzle feeders",
-        "UVB light (full spectrum, 10 to 12 hours/day)",
-        "Shower or misting bottle for bathing",
-        "Safe chew toys (bird-safe wood, rope)",
-        "Sleep cage or covered area",
-        "Avian veterinarian experienced with parrots"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size and lifespan come from
+    // the encyclopedia entry, which no deep dive repeats. Day one and power
+    // outage cite the shared bird guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 for batch C (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV and VCA both put the floor at 30 days, up to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Cage size", value: "36 wide by 24 deep by 48 inches tall is a commonly cited minimum, with some veterinary guidance recommending closer to 40 by 30 by 60. Your bird needs to be able to fully extend and flap its wings without touching the bars in any direction.", source: "african-grey-parrot-tank-setup-guide" },
+        { label: "Bar spacing", value: "No more than 1 inch.", source: "african-grey-parrot-tank-setup-guide" },
+        { label: "Temperature", value: "Standard household temperatures, roughly 65 to 80°F, work well. Avoid drafts and cold spots, but no special heating or cooling is needed indoors.", source: "african-grey-parrot-tank-setup-guide" },
+        { label: "Placement", value: "Excellent ventilation without direct drafts, well away from the kitchen entirely, fumes from overheated non-stick cookware are genuinely deadly to birds, and safely separated from household cats or dogs.", source: "african-grey-parrot-tank-setup-guide" },
+        { label: "Sleep", value: "Full-spectrum or UV lighting supports vitamin D3 and calcium metabolism. Maintain 10 to 12 hours of genuine darkness for sleep every night.", source: "african-grey-parrot-tank-setup-guide" },
+        { label: "Diet", value: "Pellets make up 75 to 80% of daily intake per VCA Animal Hospitals. Fresh vegetables make up most of the remaining 20 to 25%, with fruit held to 10% or less.", source: "african-grey-parrot-feeding-guide" },
+        { label: "Interaction", value: "Roughly 4 to 5 hours of genuine daily time investment to stay well-adjusted. This isn't a bird that thrives on occasional attention.", source: "african-grey-parrot-handling-guide" },
+        { label: "Not eating", value: "African greys hide illness well. Call an avian vet the same day for any clear, noticeable drop in appetite or activity rather than waiting to see if it resolves on its own.", source: "african-grey-parrot-feeding-guide" },
+        { label: "Budget", value: "$500 to $1,500 to set up. Roughly $50 to $100 a month ongoing. An annual avian wellness exam runs $150 to $300.", source: "african-grey-parrot-cost-guide" },
+        { label: "Adult size", value: "13 inches; 14 to 21 oz." },
+        { label: "Lifespan", value: "Mean 45 years in captivity, with some individuals reaching 60 and exceptional cases living 70 to 80 years, compared to about 23 years in the wild.", source: "african-grey-parrot-cost-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; an African grey carries far less fat reserve than its size suggests. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "african-grey-parrot-health-issues-guide",
+      callNow: [
+        "Muscle tremors, weakness, or seizures (hypocalcemia)",
+        "Labored breathing, sneezing, lethargy, and weight loss (aspergillosis)",
+        "Tail-bobbing, wheezing, nasal discharge, diarrhea, or a fluffed-up appearance (psittacosis)",
+        "Abnormal feather growth with progressive immune failure (PBFD)",
+      ],
+      vetLine: "An avian vet, found before you need one. A seizure is an emergency: get to a vet immediately for injectable calcium. Psittacosis is zoonotic and can spread to people in the household.",
+    },
+    routes: [
+      { slug: "african-grey-parrot-cost-guide", line: "$1,000 to $4,000 for the bird, $500 to $1,500 for the setup, and why the lifespan changes the entire budgeting picture." },
+      { slug: "african-grey-parrot-tank-setup-guide", line: "Cage size and placement, the temperature range, and why enrichment isn't optional for this species." },
+      { slug: "african-grey-parrot-feeding-guide", line: "The pellet-first diet, why grit isn't needed, toxic foods, and the honest list of reasons a grey stops eating." },
+      { slug: "african-grey-parrot-handling-guide", line: "Just how intelligent Alex really was, why the bites happen, and how this species compares to smaller parrots." },
+      { slug: "african-grey-parrot-health-issues-guide", line: "Hypocalcemia, feather-destructive behavior, aspergillosis, psittacosis, and PBFD, with what causes each." },
+      { slug: "african-grey-parrot-enrichment-guide", line: "The foraging studies that actually measured an outcome, and why a food bowl is the enemy of this species' wellbeing." },
+      { slug: "african-grey-parrot-legal-guide", line: "CITES Appendix I explained, the captive-breeding exemption that keeps ownership legal, and Vermont's one real ban." },
+    ],
+    buyList: [
+      "36x24x48 inch cage or larger",
+      "Multiple perches of varied diameters and textures",
+      "Full-spectrum UVB light",
+      "Foraging and puzzle toys",
+      "Sleep cage or covered area",
+      "Misting bottle or shower perch",
+      "High-quality parrot pellets",
+      "Fresh vegetables and limited fruit",
+      "A gram scale",
+    ],
     faqs: [
       { q: "How intelligent are African grey parrots?", a: "African greys are widely considered the most cognitively sophisticated parrots, with the intellectual capacity equivalent to a 5-year-old human child. The famous research parrot Alex demonstrated the ability to identify colors, shapes, and materials, count small quantities, and understand the concept of same and different - all in response to open-ended questions, not fixed cues. Most pet African greys do not reach Alex's level, but they demonstrate extraordinary contextual understanding that consistently surprises their keepers." },
-      { q: "What should African grey parrots eat?", a: "60 to 70% of the diet should be high-quality formulated pellets (Harrison's, Roudybush, or Lafeber's) providing complete balanced nutrition. 20 to 30% should be fresh vegetables daily - leafy greens, bell peppers, broccoli, carrot, and sweet potato. African greys are particularly prone to Vitamin A deficiency, which suppresses immunity and causes respiratory and skin problems. Dark orange and green vegetables are the most important corrective. Limit fruit to 5 to 10% of the diet due to high sugar content." },
-      { q: "How long do African grey parrots live?", a: "40 to 60 years in captivity with excellent care, and some individuals have exceeded 70 years. This makes the African grey one of the longest-lived companion animals available. The commitment is profound - most African greys outlive their original keepers and require provisions in estate plans for their long-term care. Entering into ownership of an African grey without explicit planning for their entire lifespan is a common ethical failure that leads to rehoming trauma for an emotionally sensitive species." },
-      { q: "What causes feather plucking in African greys?", a: "Feather destructive behavior (plucking or barbering) is the most common behavioral problem in African greys and has multiple possible causes: boredom, inadequate social contact, hormonal imbalance, nutritional deficiency (especially Vitamin A), bacterial or fungal skin infections, heavy metal toxicity, and allergies. It is rarely simple to resolve and requires systematic veterinary and behavioral investigation. Prevention through adequate enrichment, social interaction, proper diet, and regular veterinary care is far more effective than treating established plucking." },
-      { q: "Are African greys prone to calcium deficiency?", a: "Yes - African greys are metabolically predisposed to calcium deficiency more than most parrot species. Calcium deficiency causes muscle tremors, weakness, and in severe cases seizures. The two key preventatives are dietary calcium (dark leafy greens, calcium-enriched pellets, and limited dairy products) and UVB lighting, which enables Vitamin D3 synthesis and calcium absorption. An avian vet-quality UV-B bulb (not a reptile basking bulb) positioned appropriately within the cage is a meaningful investment for this species." },
+      { q: "What is the most common health issue in African grey parrots?", a: "Hypocalcemia, low blood calcium. Veterinary sources call it the most common cause of central nervous system disease in greys, and the signs are muscle tremors, weakness, and seizures in serious cases." },
+      { q: "Is an African grey a reasonable first parrot?", a: "For most people, no. This is a long-lived, highly intelligent species with a documented vulnerability to feather-damaging behavior when under-occupied, and the enrichment workload is a daily commitment rather than a one-time purchase." },
     ],
   },
   {
