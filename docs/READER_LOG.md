@@ -1757,3 +1757,15 @@ Set grade: B+. Deep, well-sourced, occasionally contradicts itself on basic numb
 Real conflicts found: adult feeding frequency given three ways (old hub "every 10 to 14 days," tank setup "every 10 to 21 days," feeding guide "every 14 to 21 days" for adults); humidity given three numbers (old hub/tank setup 40-60%, tank setup's other branch 65-75%, vs-hognose comparison table "40-50%"); adult size drifting across pages (old hub "4 to 5 feet," encyclopedia "3.5-5 feet," vs-hognose table "3-5 ft"); warm-side digestion temperature close but not identical between tank setup (85-88°F) and feeding guide (82-85°F, left as is, within tank setup's own stated acceptable range).
 
 Not covered anywhere: how to verify an enclosure is actually escape-proof (gap sizes, latch hardware, a test method); how to select a healthy corn snake at the point of purchase; Pennsylvania's legal status, left explicitly unresolved by the legal guide itself.
+
+## Boa constrictor (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, nine pages, about 95k tokens. Full agent output below, unedited.
+
+---
+
+Set grade: B+. Deep, honest, and mostly consistent, undercut by the hub's internal humidity contradiction and an undefined sub-adult life stage.
+
+Real conflicts found: the old hub's own body text ("Humidity should be maintained at 50 to 70%") disagreed with its own FAQ ("Boa constrictors require 60 to 80% ambient humidity"), and neither matched the tank setup guide's sourced 60 to 70%; the old hub's temperatures (warm side 80-84°F, cool side 76-80°F) drifted slightly from tank setup's 80-85°F and 75-80°F. The feeding guide's own FAQ softened the 48-hour post-feeding handling wait, stated precisely everywhere else, to a vague "at least a few days."
+
+Not covered anywhere: what to do about a healthy adult boa refusing food for an extended stretch; how to actually build a bioactive substrate setup, mentioned as an option but never explained; care specifics for the roughly 1-to-3-year sub-adult stage the old hub named but never defined; UVB bulb type, wattage, or placement beyond "recommended."

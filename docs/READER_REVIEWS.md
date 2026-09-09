@@ -3200,6 +3200,111 @@ Full gate suite green (internal links, related articles, affiliate,
 cost coverage, SEO tags, voice --strict, species numbers, eslint on
 the touched data file).
 
+## Boa constrictor (2026-09-09, batch C, single pass, before the router hub)
+
+One Sonnet agent, nine pages (hub, encyclopedia, cost, handling,
+health issues, tank setup, feeding, enrichment, legal), about 95k
+tokens. Single-pass review, the batch's default shape.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B+ | A genuine one-stop overview with a checklist I'd screenshot, but its own humidity numbers contradict its own FAQ. |
+| Encyclopedia | B | Short, nothing actionable, but the CITES/Cayos Cochinos history nothing else covers. |
+| Cost | A- | Real dollar ranges and the imperator-vs-red-tail pricing trap explained. |
+| Handling | A | The neck-loop warning and tongue-flick/posture cues are the most useful safety content in the set. |
+| Health issues | B+ | Clear signs and always-see-a-vet calls, but thin on what a vet visit actually costs (that lives unlinked on the cost guide). |
+| Tank setup | A | The most immediately buildable page in the set. |
+| Feeding | A- | The age-banded schedule is the clearest answer to "how often" anywhere on the site. |
+| Enrichment | A- | Refreshingly honest that no boa-specific research exists rather than pretending otherwise. |
+| Legal | A | Resolves real confusion (Florida, New Jersey, Louisiana). |
+
+Set grade: B+. "Deep, honest, and mostly consistent, undercut by the
+hub's internal humidity contradiction and the undefined sub-adult
+life stage."
+
+Hub versus the set, both sides quoted (resolved by the router
+rebuild): the old hub contradicted itself before it even reached a
+deep dive. Body text: "Humidity should be maintained at 50 to 70% in
+ambient conditions." Its own FAQ: "Boa constrictors require 60 to 80%
+ambient humidity." Neither matched the tank setup guide's own sourced
+"60 to 70%, higher during shedding cycles." Temperatures drifted too:
+old hub "ambient warm-side air temperature of 80 to 84 degrees F, and
+a cool side of 76 to 80 degrees F" against tank setup's "ambient warm
+side 80 to 85°F, cool side 75 to 80°F." All resolved by construction:
+the router hub now copies tank setup's temperature and humidity rows
+verbatim, once each.
+
+The old hub's cost breakdown table summed to $300-600 for the
+enclosure alone against the cost guide's own stated "$400 to $1,200"
+total setup figure; the router hub now copies the cost guide's total
+directly instead of maintaining a separate cost table. The old hub's
+feeding schedule ("Feed juveniles every 7 to 10 days. Sub-adults
+every 10 to 14 days. Adults every 14 to 21 days.") didn't match the
+feeding guide's own five-bracket, age-and-weight schedule; the router
+hub now copies that schedule verbatim. The old hub's quarantine
+figure for IBD ("quarantine all new animals for 60 to 90 days")
+undershot the shared reptile-quarantine-guide's actual Merck-sourced
+recommendation of 3 to 6 months, the guide that specifically names
+boas as the species that can carry IBD for months to years with no
+visible signs; the router hub's Day one row now cites that guide's
+real figure instead.
+
+Deep dives against each other: the feeding guide's own FAQ softened
+the 48-hour post-feeding handling wait, stated precisely everywhere
+else (handling guide: "Wait at least 48 hours after feeding"; old hub:
+"Allow 48 to 72 hours"), to a vague "Wait at least a few days after
+feeding before handling." Corrected to match the specific, sourced
+figure used everywhere else on the site.
+
+Recommended links, six added: cost guide's illness-cost sentence now
+points to health issues; handling's 48-hour wait sentence now points
+to feeding; health issues' and tank setup's thermostat sentences now
+point to the shared reptile heating and thermostats guide (no
+same-species cap, since it's a shared class guide); enrichment's
+tub-scenario sentence now points to tank setup. Not added: legal's
+suggested link to cost guide for the red-tail pricing story, the only
+sentence that carries it sits inside a ComparisonTable cell, which
+does not take markdown links (RULES, Linking); the hub's and
+encyclopedia's suggested links (out of scope, not deep dives, and the
+encyclopedia is structured data with no link slot).
+
+Also found, not fixed: `boa-constrictor-handling-guide` links out to
+"10 Surprising Boa Constrictor Facts" at `/blog/10-surprising-boa-constrictor-facts/`,
+a real, published, correctly-routed article (its frontmatter `slug`
+matches). It is not wired into `boa-constrictor`'s RELATED_ARTICLES
+entry, so it doesn't appear in the species' own Deep Dive list, the
+same wiring-bug class as leopard gecko's temperature guide. Adding it
+was tried and reverted: the file lives at
+content/fun-facts/fun-facts-boa-constrictor.mdx, whose filename does
+not match its own slug, and scripts/check-related-articles.mjs
+resolves a listed slug against the file's name on disk, not its
+frontmatter `slug` field, so adding the correct slug fails the dead-
+slug gate. This is not unique to boa constrictor: six other fun-facts
+articles carry the same filename-versus-slug mismatch (axolotl,
+cuttlefish, golden retriever, humpback whale, octopus, rabbit),
+including two species (axolotl, rabbit) whose hubs are already
+reconciled and whose fun-facts pieces are similarly unwired. Fixing
+it for real means renaming all seven files to match their slugs (the
+convention every other "10 Surprising X Facts" piece already follows)
+or teaching the checker to resolve by frontmatter slug, either of
+which touches content or tooling outside a single species' deep
+dives; left for Mike as a batch cleanup item rather than forced here.
+
+Left as sourced, not a bug: the enrichment guide's "no research exists
+on boa constrictor" framing against the ball python housing study it
+borrows from, already the guide's own honest hedge, not a conflict.
+
+Not covered anywhere: what to do about a healthy adult boa refusing
+food for an extended stretch; how to actually build a bioactive
+substrate setup, mentioned as an option but never explained; care
+specifics for the roughly 1-to-3-year sub-adult stage the old hub
+named but never defined; UVB bulb type, wattage, or placement beyond
+"recommended." All filed in docs/READER_LOG.md.
+
+Full gate suite green (internal links, related articles, affiliate,
+cost coverage, SEO tags, voice --strict, species numbers, eslint on
+the touched data file).
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -3582,3 +3687,30 @@ the touched data file).
   escape-proof and how to pick a healthy corn snake at purchase, both
   filed in docs/READER_LOG.md; Pennsylvania's legal status, already
   left unresolved by the legal guide itself.
+- 2026-09-09, boa constrictor (batch C, single pass, branch
+  claude/batch-c-setup-kgvj92): hub rebuilt to router shape, resolving
+  a humidity self-contradiction (old hub's body said "50 to 70%," its
+  own FAQ said "60 to 80%," neither matched tank setup's sourced
+  "60 to 70%"), a temperature drift (old hub's warm-side/cool-side air
+  temperatures were a degree or more off tank setup's), a cost
+  mismatch (old hub's own cost table summed to $300-600 for the
+  enclosure alone against the cost guide's stated $400-1,200 total),
+  and a feeding-schedule mismatch (old hub's three-tier schedule
+  against the feeding guide's real five-bracket, age-and-weight one),
+  all by construction. The old hub's IBD quarantine figure ("60 to 90
+  days") undershot the shared reptile-quarantine-guide's real
+  Merck-sourced 3 to 6 months, the guide that specifically calls out
+  boas for extended silent IBD carriage; the router hub's Day one row
+  now cites that guide directly. The feeding guide's own FAQ softened
+  the 48-hour post-feeding handling wait to a vague "a few days,"
+  corrected to match the specific figure used everywhere else. Six
+  links added (cost to health issues, handling to feeding, health
+  issues and tank setup to the shared thermostat guide, enrichment to
+  tank setup). Found but not fixed: the handling guide links to "10
+  Surprising Boa Constrictor Facts," a real published article not
+  wired into the species' Deep Dive list because its file's name on
+  disk doesn't match its own frontmatter slug, the same bug class
+  affecting six other fun-facts articles site-wide (including two
+  already-reconciled species, axolotl and rabbit); a real fix means
+  renaming files or changing the checker, left for Mike as a separate
+  cleanup rather than forced into this species' pass.
