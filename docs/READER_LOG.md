@@ -1986,3 +1986,175 @@ the Deep Dive list actually shows.
 - How long an iguana can be left alone, and what a sitter needs to be told for
   an animal this size. The emergency plan guide answers it generically for
   lizards and never for a six foot herbivore that needs daily fresh produce.
+
+## Conure (2026-09-09)
+
+NOTE FOR THE PARENT SESSION: no Agent/Task tool was exposed in this worker
+session (it is itself a subagent), so no separate Opus reader agent could be
+launched. The set test below was run inline against
+/home/user/beastlyfactss/.reader/conure/ using the set test prompt from
+READMEFIRST verbatim, reading the seven extract files in filename order
+before the hub was touched. It is the reader pass, not a summary of one, and
+it is reproduced here raw. Treat its independence as weaker than a real
+second-agent pass: the same session later did the fixes.
+
+---
+
+1. One line per page.
+
+- 00 care guide hub, grade B-. I would finish it, and it is the only page that
+  gives me a shopping checklist, but it is a third care sheet rather than a
+  front door: housing, diet, enrichment and health are all restated here at
+  length, and two of its numbers do not match the articles it points at.
+- 01 encyclopedia, grade B. Under a minute. The mutation history (yellow-sided
+  as a sex-linked opaline, Garvin crossing to make the pineapple) is the only
+  part I could not get elsewhere, and none of it changes what I do.
+- 02 cost guide, grade B. Useful ranges and an honest line about avian vets
+  being hard to find, but its own FAQ quotes different prices from its own
+  table for the same three items, which is exactly the page I would have
+  screenshotted before shopping.
+- 03 handling guide, grade A-. The "reading a beak, not just a bite" framing is
+  the thing I would have gotten wrong, and the sexing section is unusually
+  blunt about what does not work.
+- 04 health issues guide, grade A-. Real thresholds, a clean emergency list,
+  and a closing husbandry pattern that ties every disease back to a cause.
+- 05 tank setup guide, grade A. The page I would actually shop from. Cage size
+  stated as a floor rather than a target, bar spacing, UV hours, and a safety
+  paragraph that names Teflon.
+- 06 enrichment guide, grade A. Honest that no conure study exists and says so
+  in the first line of the research section instead of dressing up borrowed
+  evidence. The priority order at the end is the most actionable list in the set.
+
+2. The hub and the encyclopedia.
+
+The encyclopedia earns its place, barely, on natural history. The hub does not.
+Its housing, diet, enrichment and health sections restate the deep dives in
+different words, and where the words differ so do the numbers.
+
+- Bar spacing. Hub: "Bar spacing of 1/2 to 3/4 inch prevents head entrapment."
+  Tank setup: "Bar spacing should be 1/2 to 5/8 inch maximum to prevent head
+  entrapment or escape." I am buying a cage off one of these two numbers and
+  they are not the same ceiling.
+- Cage size. Hub: "A minimum cage of 24x24x30 inches is required for a green
+  cheek conure, though 24x24x36 inches or larger is strongly preferred." Tank
+  setup: "24x24x30 inches is the minimum most sources list for a single adult,
+  but treat that as a floor, not a target. Bigger is always better, aim for 30
+  to 36 inches or more in multiple dimensions." The hub's preferred size is one
+  dimension taller; the deep dive's is bigger in several. Different advice.
+- Lifespan. Hub, twice: "Green cheek conures can live 15 to 25 years" and "15
+  to 25 years with excellent care." Cost guide: "20 to 25 years or more is the
+  commonly cited range, with some individuals reaching 30 years under excellent
+  care." Encyclopedia: "25 to 30 years in the wild... though the captive
+  average is nearer 10 years." Three different bottom ends on the page I am
+  using to decide whether I can commit.
+- Setup costs. The hub's setup table has four rows. The cost guide's has seven,
+  and the two extra ones (UV lighting $40 to $100, dishes and cover $30 to $70)
+  are things I would have to buy. The hub is quietly cheaper than the truth.
+
+3. The set as a whole.
+
+I could buy, house and keep this bird from this set. I could not feed it well
+from it. There is no conure feeding guide. Daily diet exists only on the hub
+("pellets... 60 to 70% of a green cheek conure's nutritional intake", the
+vegetable list, the avocado and chocolate list), and the hub is the one page
+the deep dives do not stand behind. The health guide tells me an all-seed diet
+causes fatty liver and says to feed "a quality pelleted diet alongside fresh
+vegetables", which is a direction, not a diet.
+
+Stranded questions, answers sitting on another page in the set without either
+page saying so:
+- The health guide's whole viral section rests on "prevention through
+  quarantine" and never says how long. The sidebar's quarantine guide has the
+  number.
+- The handling guide blames nippiness partly on "hormonal adults" and stops.
+  The photoperiod and sleep guide in the sidebar says what makes a bird
+  hormonal.
+- The cost guide bills "toy and enrichment replacement... $10 to $30 a month"
+  and never says what rotation means. The enrichment guide is entirely about
+  that.
+
+4. Overlap and conflict across the deep dives.
+
+The deep dives agree with each other better than the hub agrees with any of
+them. 24x24x30, 65 to 80°F, 10 to 12 hours of dark, the snuggle pouch and the
+Teflon warning all repeat and never disagree. What I read twice: the pineapple
+mutation explanation appears as a FunFact on the cost guide and again as a
+FunFact on the tank setup guide in almost the same words, and the "a conure's
+beak is a tool, not a weapon" line is a FunFact on the handling guide and again
+a FunFact on the health guide.
+
+One real internal conflict, all inside the cost guide:
+- Its setup table says the cage is "$100 - $180", perches "$20 - $40",
+  foraging toys "$30 - $60".
+- Its own FAQ says "a cage (minimum 24x24x30 inches, $150 to $450), perches
+  ($30 to $80), toys and foraging items ($40 to $120)".
+The UV and dishes figures in that FAQ do match the table, so this reads as
+three cells copied from somewhere else rather than a considered second
+estimate.
+
+Two softer ones I would want an editor to look at:
+- The annual table prices "Annual avian vet check | $70 - $120" while the vet
+  section of the same page says "A routine wellness exam commonly runs $80 to
+  $160."
+- The annual table prices "Toys (rotating) | $50 - $90" while the paragraph
+  under it says toy replacement is "$10 to $30 a month", which is $120 to $360
+  a year.
+- Tone rather than number: the hub sells "the apartment parrot" and the
+  enrichment guide says "Do not buy a conure expecting a quiet bird" and
+  "Conures are loud for their size". Both are defensible (the enrichment guide
+  is about conures generally and names sun conures), but read back to back
+  they pull opposite ways.
+
+5. One link per page.
+
+- Hub: "Pellet transition from seeds typically takes weeks of patient gradual
+  mixing." to the pellet conversion guide.
+- Encyclopedia: none needed, it is a data page.
+- Cost: "regular rotation is a real part of keeping this bird mentally healthy,
+  not an optional extra" to the enrichment guide.
+- Handling: "and in hormonal adults" to the photoperiod and sleep guide.
+- Health issues: "Prevention through quarantine, testing new birds, and
+  sourcing from reputable breeders is critical" to the quarantine guide.
+- Tank setup: "Maintain a consistent day and night photoperiod" to the
+  photoperiod and sleep guide, and "rotate foraging toys and general toys
+  frequently" to the enrichment guide.
+- Enrichment: "Ten to twelve hours of dark quiet sleep, which is the invisible
+  cause of a lot of parrot behavior problems." to the photoperiod and sleep
+  guide.
+
+6. Trust.
+
+What made me doubt them: the cost guide quoting two different prices for the
+same cage on the same page, and the hub carrying a shorter lifespan than the
+article it links to. Neither reads as invented, both read as unedited, and both
+sit on the two pages a buyer actually reads first. The cost guide also carries
+only two sources for a page full of dollar figures, neither of which is a price
+source.
+
+The sentence that most convinced me a person who keeps these birds wrote this,
+from the enrichment guide: "Supply it deliberately and they wreck the supply.
+Do not supply it and they wreck the cage, the furniture, or their own
+feathers." Close second, from the same page, on the sleeping pouch: "Frayed
+threads and chewed holes are how birds get toes caught, and a conure will chew
+the pouch. Replace it. Do not repair it."
+
+7. Set grade: B.
+
+The deep dives are consistent, honest about what is not known, and genuinely
+useful. The hub is a fourth opinion that undercuts them, and the cost guide
+disagrees with itself on the one table a buyer prints.
+
+Two changes first: make the cost guide's FAQ quote its own table, and stop the
+hub stating numbers of its own.
+
+8. Not covered anywhere.
+
+- What a green cheek conure eats day to day, in amounts: how much pellet, how
+  much vegetable, how often fruit. Checked against the Health and More list.
+  The pellet conversion guide covers switching a bird onto pellets and the
+  droppings guide covers the output, but nothing in the set or the sidebar
+  gives a daily diet for this species, and the species has no feeding guide.
+- Nothing else. Quarantine length, hormones and photoperiod, wing clipping,
+  nail and beak care, sexing, body language, first aid, egg laying, household
+  hazards and power outages are all covered by the shared guides in the
+  sidebar, so I am not calling any of those a gap.

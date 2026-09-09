@@ -4349,3 +4349,230 @@ Open: the missing feeding guide; sitter and time-alone guidance for an animal
 this size; the encyclopedia overview's "five to six feet" and "lives twenty
 years"; and the hub's `funFact` still repeating the handling guide's FunFact
 box nearly word for word, which is a hub field rather than a deep dive edit.
+
+## Conure (2026-09-09, first pass)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment). The review reads the old legacy hub
+(housing, diet, enrichment and health prose plus a cost table); the
+router hub was built from its findings the same day. Filed against a
+reader pass run inline rather than by a separate agent: no Agent tool
+was exposed to this worker session, so the same session that did the
+fixes also did the read. Treat its independence as weaker than the
+leopard gecko or axolotl passes. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The only page with a shopping checklist, and a third care sheet that disagrees with the articles it points at. |
+| Encyclopedia | B | Under a minute, and the mutation history is the only part not available elsewhere. |
+| Cost | B | Honest that finding an avian vet is the hard part, but its own FAQ quotes different prices from its own table. |
+| Handling | A- | Reading a beak rather than a bite is the thing a new owner gets wrong, and the sexing section is blunt about what does not work. |
+| Health issues | A- | Real thresholds, a clean emergency list, and a closing pattern that ties every disease back to a cause. |
+| Tank setup | A | The one page a reader would actually shop from. |
+| Enrichment | A | Says in its first research line that no conure study exists instead of dressing up borrowed evidence. |
+
+Set grade: B. "The deep dives are consistent, honest about what is not
+known, and genuinely useful. The hub is a fourth opinion that undercuts
+them, and the cost guide disagrees with itself on the one table a buyer
+prints."
+
+Hub versus the set, both sides quoted (all against the old legacy hub,
+resolved by the router rebuild):
+
+- Bar spacing. Old hub: "Bar spacing of 1/2 to 3/4 inch prevents head
+  entrapment." Tank setup: "Bar spacing should be 1/2 to 5/8 inch
+  maximum to prevent head entrapment or escape." Both are defensible
+  and they are not the same ceiling. PetMD, the only source either page
+  cites, says "The space between the cage's bars should be 3/4-in apart
+  or smaller," which is a maximum; the 1/2 to 5/8 inch figure is the
+  target several husbandry references give inside that maximum.
+  Decided: the tank setup guide keeps 1/2 to 5/8 inch and the router
+  hub copies its sentence. The deep dive is not loosened toward the
+  cited ceiling, because a target inside a maximum is not a
+  contradiction of it and the looser number is the one that gets a bird's head
+  stuck.
+- Cage size. Old hub: "A minimum cage of 24x24x30 inches is required
+  for a green cheek conure, though 24x24x36 inches or larger is
+  strongly preferred." Tank setup: "24x24x30 inches is the minimum most
+  sources list for a single adult, but treat that as a floor, not a
+  target. Bigger is always better, aim for 30 to 36 inches or more in
+  multiple dimensions." The hub's preferred size grew one dimension,
+  the deep dive's grows several. The router hub now quotes the tank
+  setup guide's own sentence.
+- Lifespan. Old hub, twice: "Green cheek conures can live 15 to 25
+  years" and "15 to 25 years with excellent care." Cost guide: "20 to
+  25 years or more is the commonly cited range, with some individuals
+  reaching 30 years under excellent care." The hub's 15 was unsourced
+  and lower than the article it linked to. The router hub's Lifespan
+  row now quotes the cost guide verbatim.
+- Setup cost. The old hub's setup table carried four rows; the cost
+  guide's carries seven, and the two the hub dropped (full-spectrum
+  avian UV lighting and fixture, $40 to $100; dishes, water bottle,
+  cage cover, initial food, and cuttlebone, $30 to $70) are real
+  purchases. The router hub has no cost table at all; its Budget row
+  quotes the cost guide's own headline figures and its buy list carries
+  the seven items with no prices.
+- Out-of-cage time. Old hub: "Minimum 2 to 3 hours of supervised
+  out-of-cage time daily in a bird-safe space is required." No deep
+  dive states a number; the tank setup guide says "several hours of
+  supervised free time daily." The 2 to 3 hours figure existed only on
+  the hub, so it is gone: the router hub's row quotes the tank setup
+  guide instead. Left for Mike: if 2 to 3 hours is a figure worth
+  keeping, it needs a source and a home in the tank setup or handling
+  guide, not the hub.
+
+Deep dives against each other: they agree with each other far better
+than the old hub agreed with any of them. 24x24x30, 65 to 80°F, 10 to
+12 hours of darkness, the snuggle pouch, and the Teflon warning repeat
+across pages and never disagree. Read twice: the pineapple mutation
+explanation is a FunFact on both the cost guide and the tank setup
+guide in nearly the same words, and the "a conure's beak is a tool, not
+a weapon" line is a FunFact on both the handling guide and the health
+guide. Not fixed, both are FunFact boxes and the batch prompt does not
+touch them; this is the same defect class as the 22 boxes in
+READMEFIRST's FunFact prompt, and these four belong on that list.
+
+One real conflict, entirely inside the cost guide:
+
+- Its setup table: cage "$100 - $180", perches "$20 - $40", foraging
+  toys "$30 - $60". Its own FAQ: "a cage (minimum 24x24x30 inches, $150
+  to $450), perches ($30 to $80), toys and foraging items ($40 to
+  $120)". The UV ($40 to $100) and dishes ($30 to $70) figures in the
+  same FAQ do match the table, so three cells were mis-copied rather
+  than independently estimated. Neither cited source (PetMD, Lafeber)
+  states any price at all, so the tiebreak is the same-page rule: the
+  table is the itemization the hub copied, the affiliate products hang
+  off its rows, and the FAQ changed to match it.
+
+Unsourced, needs a fact-check:
+
+- The cost guide's annual table prices "Annual avian vet check | $70 -
+  $120" while its own vet section says "A routine wellness exam
+  commonly runs $80 to $160." Both unsourced, both on the same page,
+  and no source in the block carries prices. Not touched, because
+  moving either one changes a total the page also states.
+- The same table prices "Toys (rotating) | $50 - $90" a year while the
+  paragraph under it says toy replacement runs "$10 to $30 a month",
+  which is $120 to $360 a year. Same reasoning, not touched.
+- "with some individuals reaching 30 years under excellent care" in the
+  cost guide. Neither cited source states 30: PetMD says "20+ years
+  with proper care", Lafeber says "up to 25 years or more with proper
+  care" and lists "Up to 20 years" in its quick facts. The number is
+  hedged and pre-existing, so it stays, but it needs a source or a cut.
+- The cost guide carries two sources for a page built on dollar figures
+  and no "Prices last checked <Month Year>" line under its last cost
+  table, which RULES, Sources requires of a cost guide quoting retail
+  prices. No other reconciled cost guide in the birds set carries one
+  either, so this is a series-wide gap rather than a conure one.
+
+Gaps, checked against the sidebar's Health and More list before being
+called real:
+
+- Real. What a green cheek conure eats day to day, in amounts. This
+  species has no feeding guide. Daily diet lived only on the legacy hub
+  (pellets at "60 to 70% of a green cheek conure's nutritional intake",
+  the vegetable list, the avocado and chocolate list), and the router
+  rebuild removes it by construction. The health guide gives a
+  direction ("feeding a quality pelleted diet alongside fresh
+  vegetables instead of a seed-only bowl") and no amounts. The shared
+  pellet conversion guide covers switching a bird onto pellets, not
+  portions. Partly mitigated: the router hub carries a Diet row quoting
+  the health guide and a Pellet conversion row quoting the shared
+  guide's VCA conure-specific schedules, so the seed-to-pellet
+  instructions a new owner needs are at least reachable. The real fix
+  is a conure feeding guide, out of scope here.
+- Not real, all covered by the shared guides in the sidebar: quarantine
+  length, what makes a bird hormonal, wing clipping, nail and beak
+  care, sexing, body language, first aid, chronic egg laying, household
+  hazards, power outages.
+
+Stranded questions, answer on another page in the set with neither page
+saying so, all three now linked:
+
+- The health guide's viral section rests on "Prevention through
+  quarantine" and never gives a window; the shared quarantine guide
+  has it.
+- The handling guide blames nippiness partly on "hormonal adults" and
+  stops; the shared photoperiod and sleep guide says what makes a bird
+  hormonal.
+- The cost guide bills "$10 to $30 a month" for toy and enrichment
+  replacement without saying what rotation means; the enrichment guide
+  is entirely about that.
+
+Recommended links, one per page:
+
+| Page | Sentence | Link to |
+|---|---|---|
+| Hub | "Pellet transition from seeds typically takes weeks of patient gradual mixing." | Pellet conversion guide (hub out of scope; the router rebuild makes it a first-week row instead) |
+| Encyclopedia | none needed, it is structured data with no link slot | |
+| Cost | "regular rotation is a real part of keeping this bird mentally healthy, not an optional extra" | Enrichment guide |
+| Handling | "and in hormonal adults" | Photoperiod and sleep guide |
+| Health issues | "Prevention through quarantine, testing new birds, and sourcing from reputable breeders is critical" | Quarantine guide |
+| Tank setup | "Maintain a consistent day and night photoperiod" and "rotate foraging toys and general toys frequently" | Photoperiod and sleep guide, enrichment guide |
+| Enrichment | "Ten to twelve hours of dark quiet sleep, which is the invisible cause of a lot of parrot behavior problems." | Photoperiod and sleep guide |
+
+Six of the seven added. Skipped: the hub's, because the hub is not a
+deep dive and the router rebuild answers it with a Pellet conversion
+row instead; and the health guide's second candidate ("A roomy,
+well-ventilated flight cage kept clean helps reduce that risk" to the
+tank setup guide), held to keep this pass at one addition per page,
+since the quarantine link was the higher-value one on that page. Every
+link added sits after the first H2, none is inside a ComparisonTable
+cell, and no article gained a second same-species sibling link: the
+cost guide and the tank setup guide each took their one (enrichment),
+and the handling, health, tank setup and enrichment links all point at
+shared class guides, which do not count against it.
+
+Trust: the cost guide quoting two different prices for the same cage on
+the same page, and the old hub carrying a shorter lifespan than the
+article it linked to. Neither reads as invented, both read as unedited,
+and both sat on the two pages a buyer reads first. The sentence that
+most convinced the reader a keeper wrote this, from the enrichment
+guide, on destructible material: "Supply it deliberately and they wreck
+the supply. Do not supply it and they wreck the cage, the furniture, or
+their own feathers."
+
+Reader's two changes: make the cost guide's FAQ quote its own table
+(done), and stop the hub stating numbers of its own (done by the router
+rebuild).
+
+Encyclopedia: checked, nothing changed. The entry's wildLifespan reads
+"25 to 30 years in the wild, and the same is reachable in captivity,
+though the captive average is nearer 10 years, put down to poor diet
+and neglect," against the cost guide's "20 to 25 years or more is the
+commonly cited range, with some individuals reaching 30 years under
+excellent care." These answer different questions (a wild figure with a
+captive-average aside, against a captive range), so they are not the
+Russian tortoise case. Researched anyway: the published figures for
+this species scatter badly and none of them is high tier. Reported wild
+lifespans run 8 to 25, 10 to 15, and 25 to 30 depending on the site;
+the two sources the deep dives actually cite give captive figures only
+(PetMD "20+ years with proper care", Lafeber "up to 25 years or more
+with proper care" with "Up to 20 years" in its quick facts). Nothing
+turned up better than what is already there, and the existing entry
+already carries the hedge and the reason for the low captive average,
+so it stays as written. The difficulty field is "Intermediate" in the
+encyclopedia and was already "Intermediate" on the hub, so nothing
+moved there either.
+
+Fixed the same day (branch claude/batch-d-opus-agents-7jgjwi): the hub
+rebuilt to the router shape, 18 first-week rows, which resolves the bar
+spacing, cage size, lifespan, setup cost, and out-of-cage-time
+conflicts by construction; three of those rows cite the shared bird
+guides (quarantine, pellet conversion, power outage), the pellet
+conversion row standing in for the feeding guide this species does not
+have. The cost guide's setup FAQ reconciled to its own table on three
+line items. Six links added.
+
+Open: the missing conure feeding guide, and with it the daily diet
+amounts the router rebuild removed from the hub. The cost guide's
+vet-check and toy-rotation figures that disagree with its own
+paragraphs, and its unsourced "reaching 30 years", all listed above
+under "Unsourced, needs a fact-check". The four duplicated FunFact
+boxes (pineapple on cost and tank setup, beak-as-tool on handling and
+health), which belong on READMEFIRST's FunFact repeats list. And the
+tone split between the hub's "apartment parrot" framing and the
+enrichment guide's "Do not buy a conure expecting a quiet bird": both
+are scoped and hedged correctly (the enrichment guide is a genus-level
+page and names sun conures), so nothing was changed, but the router
+hub no longer carries the "apartment parrot" prose either way.
