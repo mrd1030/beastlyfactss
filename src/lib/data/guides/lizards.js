@@ -582,7 +582,7 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
     faqs: [
       { q: "What size enclosure does an adult green iguana need?", a: "An adult needs at least 10 feet long, 5 wide, and 6 tall; some vet and husbandry sources say 12 by 6 by 6. Nothing commercial comes that big, so it is a custom walk-in build. A juvenile can start in a 4x2x4 or a 40 to 55 gallon tank, but will outgrow it inside a year." },
       { q: "What does the upfront setup cost?", a: "$700 to $2,500 or more, and it is two purchases. A 4x2x4 foot juvenile setup runs roughly $985 to $1,000. The adult enclosure comes a year or two later: a walk-in build is several hundred dollars in materials, a custom builder $1,000 and up, and a made to order 6x3x6 foot box $3,740." },
-      { q: "What is the most common health issue in green iguanas?", a: "Metabolic bone disease. VCA Animal Hospitals describes it as probably the most common medical problem of pet iguanas, and LafeberVet lists lizards among the animal groups where the disease is most commonly seen. Watch for a swollen or rubbery lower jaw, swollen or bowed hind limbs, soft bones, and tremors." },
+      { q: "What is the most common health issue in green iguanas?", a: "Metabolic bone disease, probably the most common medical problem in pet iguanas and the disease most commonly seen in lizards generally. Watch for a swollen or rubbery lower jaw, swollen or bowed hind limbs, soft bones, and tremors." },
     ],
   },
   {
