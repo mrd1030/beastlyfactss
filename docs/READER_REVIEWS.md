@@ -5640,3 +5640,344 @@ Cohabitation, brumation husbandry, the cleaning schedule, how to inspect an
 animal before buying, basking bulb wattage for a 4x2x2, and the adult weight
 figure the rewrite removed. The cost guide's missing retail price-check line.
 The health guide's homepage Sources entry.
+
+## White's Tree Frog (2026-09-09, first pass)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment). One independent Opus reader, run from
+the session against the pre-rewrite extract in `.reader/whites-tree-frog/`.
+The review below reads the old legacy hub (housing prose, a cost table, a
+checklist, five FAQs); the router hub was built from its findings the same
+day. There is no feeding guide and no legal guide in this set.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | A shopping checklist, a gut-load list, a supplement schedule and a quarantine window, and three of its numbers fight the deep dives. |
+| Encyclopedia | B | Thirty seconds, adult size and a lifespan range, and the 1790 naming story is the best writing in the set. |
+| Cost | B- | Useful ranges, but the monthly figure and the annual table do not agree. |
+| Handling | A- | Plain water only, nitrile gloves after lotion, 5 to 15 minutes, twice a week max. |
+| Health issues | A- | 3 to 4 insects 2 to 3 times a week, and fat over the tympanum and armpits as the obesity test. |
+| Tank setup | A- | 18x18x24, the temperature gradient, 50 to 60% baseline, branch 6 inches under the T5, bulb swap 9 to 12 months. |
+| Enrichment | A | The best page here, and honest that its evidence is red-eyed tree frogs rather than this species. |
+
+Set grade: B-. "The five deep dives are specific and usable; the hub,
+which is the page I land on first, contradicts them on water, humidity,
+and night temperature."
+
+### Hub versus the set, both sides quoted
+
+- **Water. The clinical one, and the hub was wrong.** The old hub said,
+  in its diet section: "Always use dechlorinated or reverse-osmosis water
+  for the water dish and for misting." Its checklist repeated
+  "Dechlorinated or RO water only (misting and dishes)", its health
+  section repeated "Always use dechlorinated or RO water for misting and
+  water dishes", and its cost table billed the reader for
+  "Dechlorinated/RO water treatment". The tank setup guide says: "Use
+  only dechlorinated tap water or spring water for misting and drinking,
+  never distilled or reverse-osmosis water." The reader's verdict was
+  "One of these is wrong and I cannot tell which," and a keeper following
+  the wrong one harms the animal, so this was researched rather than
+  reconciled by dropping hub prose.
+
+  Sources opened, ranked by RULES:
+  - Peer-reviewed: Dale DeNardo, "Amphibians as Laboratory Animals," ILAR
+    Journal 37(4), 1995, which calls water quality "probably the most
+    critical component of amphibian housing" and states: "Distilled and
+    deionized water is extremely hypo-osmotic, it should never be used
+    without the addition of salts," and "Hypo-osmotic conditions can cause
+    bloating and death in amphibians." For delicate species it names
+    "either commercially available spring water or ionically balanced
+    solutions made in-house from distilled water."
+  - Veterinary manual: the Merck Veterinary Manual's amphibian
+    environment and husbandry page, which requires water "clean and free
+    of toxins such as chlorine, ammonia, nitrite, pesticides, and heavy
+    metals" and describes removing chlorine by carbon filtration and
+    splitting the chloramine bond with a dechlorinating agent. It makes no
+    case for RO or distilled water at all.
+  - Established husbandry reference: Jennifer Macke's Caudata Culture
+    article on bottled water for amphibians, which quotes Wright and
+    Whitaker's *Amphibian Medicine and Captive Husbandry*: "Distilled and
+    reverse osmosis water contain none of the elements required by
+    amphibians and should not be used without modification," and adds that
+    RO or distilled water "has virtually no ions in it, so it causes more
+    work for the amphibian's kidneys."
+  - The site's own shared guide, `amphibian-quarantine-and-water-guide`,
+    already carried the same finding from the AZA Amphibian Husbandry
+    Resource Guide: "distilled water and reverse-osmosis (RO) water are
+    usually not electrolyte-balanced, and using either without rebalancing
+    through added buffers, electrolytes, and pH adjustment can be fatal to
+    amphibians."
+
+  The one source pulling the other way, recorded because it is real:
+  F. Harvey Pough, "Amphibian Biology and Husbandry," ILAR Journal 48(3),
+  2007, says "distilled, deionized, or spring water is preferable to
+  chlorinated tap water." That compares purified water against *untreated,
+  chlorinated* tap water, not against dechlorinated tap water, and it does
+  not survive DeNardo in the same journal on the hypo-osmotic point.
+
+  **The tank setup guide wins and did not change.** Every copy of the
+  hub's instruction is gone with the router rewrite (diet prose, health
+  prose, checklist line, and the `costs` block). The one surviving copy in
+  a deep dive, the cost guide's annual table cell, changed from
+  "Dechlorinated/RO water treatment" to "Dechlorinated water treatment".
+  The tank setup guide's sentence gained the reason and a link to the
+  shared water guide. A new hub row, sourced to that shared guide, now
+  states the AZA finding outright, so the hub says why rather than
+  restating the rule.
+
+- **Humidity.** The old hub said: "Humidity should be maintained at 50 to
+  70% during the day and 80 to 100% at night (mist in the evening to
+  simulate natural humidity cycles)." The tank setup guide says: "a
+  baseline around 50 to 60% with misting spikes up to 70 to 80% once or
+  twice daily, then letting it drop back down between mistings. Constant,
+  unbroken high humidity is directly linked to bacterial and red-leg
+  issues." The health guide independently blames "enclosures kept too
+  humid without adequate ventilation" for bacterial and skin infections,
+  so the hub was, as the reader put it, arguably prescribing the disease.
+  The hub's figure is retired by the rewrite; the router hub's Humidity
+  row quotes the tank setup guide's own sentence. Checked for surviving
+  copies across all five deep dives and the encyclopedia: none. 80 to 100%
+  appears nowhere else in the set.
+
+- **Night temperature.** The old hub said "dropping to 65 to 75 degrees F
+  at night" (and "Temperature should stay between 75 and 85 degrees F
+  during the day", and "Never let temperatures exceed 90 degrees F"). The
+  tank setup guide says "cool side around 70 to 75°F, a basking area
+  around 80 to 85°F, dropping into the mid-70s at night." The hub's
+  figures die with the rewrite. Checked for other copies: 65 to 75, 75 to
+  85, and 90 appear on no other page in the set.
+
+- **Feeding.** The old hub said "Adults eat every other day to 3 times per
+  week." The health guide says "keep adult feeding to roughly 3 to 4
+  appropriately sized insects, 2 to 3 times a week, rather than
+  free-feeding." The router hub's Feeding row now quotes the health
+  guide. No other copy of "every other day to 3 times per week" survives.
+
+- **Lifespan.** The old hub's FAQ said "15 to 20 years with excellent
+  care." The cost guide says "The Smithsonian's National Zoo states the
+  average lifespan is about 16 years, with one individual recorded living
+  21 years in human care. Other sources cite a slightly more conservative
+  10 to 15-plus years with excellent care." The cost guide names its
+  source and the hub named none, so the hub's figure is gone; the router
+  hub's Lifespan row keeps both of the cost guide's ranges, and the cost
+  guide's own lifespan FAQ is one of the hub's three FAQs.
+
+- **UVB.** The old hub said UVB is "now strongly recommended by amphibian
+  veterinarians" and its FAQ added claims about field studies, bone
+  density, calcium metabolism and immune function that no deep dive
+  carries. The tank setup guide says "Recommended, though not strictly
+  required: the species survives without UVB and does better with it."
+  Neither page's Sources block states the stronger claim, and the tank
+  setup guide is the lighting page, so its hedge wins and the hub's
+  stronger claim is gone rather than restated.
+
+### Deep dives against each other
+
+- **Group size, fixed.** Tank setup: "18 inches long by 18 inches wide by
+  24 inches tall is the standard minimum for one adult... and 24x18x24
+  inches works well for a small group of two to four." Enrichment: "A tall
+  18x18x24 terrarium is a workable footprint for one or two adults."
+  Neither Sources block states an enclosure dimension: the enrichment
+  guide's four sources are all enrichment research (Michaels/Antwis/
+  Preziosi 2014 in PLoS ONE, the 2014 amphibian enrichment review, Hurme
+  et al. on dendrobatids, Burghardt 2013), and the tank setup guide cites
+  two husbandry references, one of them species-and-topic specific
+  (Vision Products, "White's Tree Frog Enclosure Requirements"). Same
+  tier, so the page whose subject is the topic wins: enclosure size
+  belongs to the tank setup guide. Enrichment changed to "one adult".
+
+- **The cost guide fought itself, fixed.** Prose and H2: "Ongoing Costs:
+  Roughly $20 to $60 a Month." Its own annual table totals $155 to $285,
+  which is about $13 to $24 a month. Nothing sources either figure, and
+  this is a same-page contradiction rather than a cross-page one, so it is
+  resolved the way the axolotl legal guide's jurisdiction count was: the
+  prose is corrected to read off the article's own table. The heading, the
+  body sentence, and the monthly-cost FAQ all now say $13 to $24, and a
+  sentence under the table shows the arithmetic.
+
+- **The cost guide's setup table, fixed.** The prose said the table
+  "covers the largest single expense, the terrarium itself, plus a heat
+  source, thermometer and hygrometer, a low-level UVB fixture and bulb,
+  substrate, climbing branches, and decor," while the table has no heat
+  source line and no substrate line. Rewritten to name what the table
+  actually lists and to say plainly that a heat source, substrate and
+  climbing branches sit on top of those line items. No price was invented
+  and no row was added.
+
+- **Left alone, not a conflict.** The cost table's "Low-output UVB (T5 HO
+  5%)" against the tank setup guide's "5 to 7% range": 5% is a product
+  inside the range, not a competing figure. The Pacman frog contrast
+  (handling, cost, tank setup, health) and the obesity material (health
+  and enrichment) repeat across pages usefully rather than redundantly.
+  The dechlorination rule repeats on handling, tank setup and enrichment
+  and now agrees everywhere.
+
+- **Noted, not fixed.** The enrichment guide says "do not treat handling
+  as enrichment for an amphibian, because for this class it mostly is
+  not," while the old hub filed all its handling advice under Enrichment.
+  The router hub has no enrichment prose at all, so the tension is gone by
+  construction rather than resolved.
+
+### Gaps, checked against the Health and More list first
+
+The sidebar's Health and More list for this species is: Salmonella and
+Reptile Hygiene; Tubbing, Cooling, and Salt Baths for Sick Axolotls;
+Amphibian Quarantine, Acclimation, and Water Hardness; and Four Pets, Four
+Different Lessons.
+
+Covered by a shared guide, so not real gaps, and each is now a hub row:
+quarantine duration (the amphibian quarantine guide has Merck's 6 to 8
+weeks and the AZA's 30-day minimum with 60 days preferred), how to move a
+new animal (a container, not a net), what counts as safe water, and the
+hygiene protocol.
+
+Genuinely not covered anywhere in the set or the shared guides:
+
+- **A feeding guide.** There is none. The species has no feeding article,
+  and the health guide's portion line is the only feeding schedule left in
+  the set.
+- **The supplement schedule.** "Dust feeders with calcium w/D3 at every
+  other feeding and a reptile multivitamin once weekly" and the gut-load
+  list (collard greens, carrot, sweet potato, commercial gut-load powder,
+  24 to 48 hours before offering) existed **only on the hub**, with no
+  deep dive behind them. They are gone with the hub prose and nothing was
+  invented to replace them. The buy list still names calcium w/D3 and a
+  reptile multivitamin, which the cost guide's annual table also carries,
+  so a reader still knows to buy them; nobody now tells them how often to
+  dust. This is the largest real loss of the rewrite and it needs a
+  feeding guide, not a hub row.
+- **Enclosure cleaning frequency and full substrate change interval**,
+  even though the health guide blames red-leg on "a dirty or poorly
+  ventilated enclosure".
+- **Water dish depth and how often it is changed**, though the health
+  guide names "an infrequently cleaned water dish" as a cause.
+- **A power outage or vacation plan.** There is no amphibian power-outage
+  guide wired to this species (the aquarium one is for aquatic setups and
+  is not in this sidebar), so there is no row to add and no page to point
+  at.
+- How to choose a healthy frog and where to buy one; male calling and how
+  loud; sexing, and what to do if a group breeds; a body condition test
+  more precise than fat bulging over the tympanum and armpits; normal
+  skin sloughing and appetite pauses.
+
+### Stranded questions, raised on one page and answered on another
+
+- Handling says "dechlorinating" without saying what counts. The tank
+  setup guide and the shared water guide both do. Fixed with a link.
+- Health blames constant humidity with no numbers; tank setup has them.
+  Now bridged by the hub's Humidity row.
+- Health names MBD and UVB with no bulb spec; tank setup has it. Now
+  bridged by the hub's UVB row.
+- Cost lists bulb replacement every 9 to 12 months with no reason; the
+  tank setup guide's fun fact is the reason. Now in the hub's UVB row.
+- Enrichment says "watch the weight" with no threshold; the health guide
+  has the test. Fixed with a link.
+- Health says quarantine with no duration; the shared quarantine guide has
+  it. Fixed with a link, and it is a hub row.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Done? |
+|---|---|---|---|
+| Hub | "Humidity should be maintained at 50 to 70%..." | Tank setup guide | n/a, the sentence no longer exists; the router hub links every row to its source |
+| Encyclopedia | "They are one of the most docile frog species..." | Handling guide | Not added: the encyclopedia is structured data with no in-body link slot |
+| Cost | "That covers the largest single expense, the terrarium itself, plus a heat source" | Tank setup guide | Added, on the rewritten sentence, as the article's one sibling link |
+| Handling | "Using tap water straight from the faucet on hands or gloves without dechlorinating it first" | Amphibian Quarantine, Acclimation, and Water Hardness | Added |
+| Health | "quarantine any new or suspect animal immediately" | Same quarantine guide, which is where the duration lives | Added, on the following sentence's "quarantine of new frogs", which is where the clause about the window fits |
+| Tank setup | "Use only dechlorinated tap water or spring water" | Same quarantine and water guide | Added, with the AZA reason |
+| Enrichment | "Watch the weight" | Health issues guide | Added, as the article's one sibling link |
+
+Five of the seven added. Both skips are structural, not choices. Every
+article is at or under one sibling link, and no link sits before the first
+H2 or inside a ComparisonTable cell.
+
+### Trust
+
+The three things that cost the reader trust were the RO water
+contradiction, the hub's 80 to 100% night humidity against its own health
+section, and a monthly cost figure roughly double its own table. All three
+are now gone. What won the reader back, from enrichment: "Michaels, Antwis
+and Preziosi ran the study on red-eyed tree frogs... Not this species, but
+another arboreal tree frog, which makes it the closest usable evidence by a
+wide margin." Most convincing single sentence in the set, from the same
+page: "A White's tree frog will swallow anything that fits, including a
+smaller frog, and a mixed-size group is a feeding accident waiting to
+happen."
+
+### The reader's two changes
+
+1. "Make the hub copy its numbers from the deep dives rather than restate
+   them, starting with water and humidity." Done: the hub is a router,
+   every row is copied from the deep dive named in its `source`, and it
+   keeps no figure of its own.
+2. "Then write a feeding guide and move the supplement schedule into it."
+   Not done, and out of scope for a pass that may not create articles. The
+   schedule is recorded above as lost, in the reader's own words, so it
+   can be recovered when the feeding guide is written.
+
+### Unsourced, needs a fact-check
+
+- The cost guide's Sources block is two bare homepages
+  (`https://nationalzoo.si.edu/` and `https://treeoflifeexotics.vet/`),
+  which RULES forbids as sources. The Smithsonian page that actually
+  states "The average life span is about 16 years, but one is recorded to
+  have lived 21 years in human care" is
+  `https://nationalzoo.si.edu/animals/whites-tree-frog`, opened and
+  confirmed during this pass. Not changed here, because replacing a
+  Sources entry is a deletion under the pass's rules; flagged for Mike.
+- The monthly cost figure, $13 to $24, is the cost guide's own table
+  arithmetic and nothing more. No source states a monthly cost for this
+  species.
+- The setup total, $200 to $400, and every retail range in both tables are
+  unsourced snapshots. The cost guide also carries no "Prices last checked"
+  line, which RULES asks for under the last cost table.
+
+### Encyclopedia
+
+The `whites-tree-frog` entry's `wildLifespan` read "7-20 years (up to 21
+years recorded)". The "21 years recorded" is the Smithsonian's captive
+record, presented in a field labelled wild, which is the same failure the
+Russian tortoise entry had in batch A. Researched:
+
+- Smithsonian's National Zoo, White's tree frog: "The average life span is
+  about 16 years, but one is recorded to have lived 21 years in human
+  care." Human care, not wild.
+- Animal Diversity Web (University of Michigan Museum of Zoology),
+  *Litoria caerulea*: gives "Average lifespan 16.0 years" and "Average
+  lifespan 8.5 years", both labelled **captivity**, and "one is recorded
+  to have lived 21 years" in captivity. It states no wild lifespan.
+- The Australian Museum's Green Tree Frog page gives size and breeding
+  biology and no lifespan figure at all.
+
+No source found gives a wild lifespan for this species. The field now
+reads: "Not well documented in the wild; the quoted figures are captive,
+an average of about 16 years with one individual recorded at 21 years in
+human care." That is the same shape the crested gecko entry already uses
+for its own undocumented wild lifespan. Nothing else in the entry was
+touched. `difficulty` is "Beginner" and the hub already matched it, so the
+hub did not change.
+
+### Dates
+
+`lastUpdated` bumped to 2026-09-09 on the cost guide (three figures
+changed) and the tank setup guide (a sourced clause added). Not bumped on
+the handling guide or the health issues guide, where only a link changed.
+Not bumped on the enrichment guide: a number did change there, but its
+`date` is 2026-10-26 and it has not published yet, so a `lastUpdated` of
+2026-09-09 would sit before its own publish date. Flagged rather than
+guessed at. No `lastReviewed` was touched.
+
+### Open
+
+- No feeding guide, and with it the supplement schedule and the gut-load
+  list, both of which existed only on the old hub. This is the one real
+  content loss in the rewrite.
+- No power outage or vacation plan reachable from this species, and no
+  shared amphibian guide covers it.
+- The cost guide's two homepage Sources entries, and its missing "Prices
+  last checked" line.
+- The enrichment guide's `lastUpdated`, held at its future publish date.
+- Three other amphibian legacy hubs in the same data file (fire-bellied
+  toad, Pacman frog, tiger salamander) still tell readers to use RO water
+  on an amphibian, the same error this pass corrected here. Out of scope
+  for batch E; listed in the batch's shared-edits notes.

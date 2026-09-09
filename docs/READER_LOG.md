@@ -2670,3 +2670,84 @@ Strong deep dives dragged down by a hub that contradicts them on temperature, UV
 - Enclosure cleaning: spot-clean frequency and full substrate change interval.
 - How to inspect a skink before buying: what a healthy animal looks like at the shop or expo.
 - Basking bulb wattage and mounting distance for a 4x2x2 enclosure.
+
+## White's Tree Frog (2026-09-09)
+
+Independent Opus reader, launched from the session against the pre-rewrite
+extract in .reader/whites-tree-frog/. Raw output, unedited.
+
+# White's Tree Frog: reader set test
+
+## 1. Page by page
+
+- **00 hub**: Finished it. Actionable: shopping checklist, gut-load list, supplement schedule, quarantine window. Grade C, because three of its numbers fight the deep dives.
+- **01 encyclopedia**: Finished it, 30 seconds. Actionable: adult size, lifespan range for planning. Grade B. The 1790 naming story is the best writing in the set and I remembered it.
+- **02 cost**: Finished it. Actionable: frog $20 to $60, setup $200 to $400, vet exam $50 to $150, emergency from $250. Grade B minus, the monthly figure and the annual table do not agree.
+- **03 handling**: Finished it. Actionable: plain water only, nitrile gloves after lotion, 5 to 15 minutes, twice a week max. Grade A minus.
+- **04 health**: Finished it. Actionable: 3 to 4 insects 2 to 3 times a week, waxworms and superworms weekly at most, fat over tympanum and armpits as the obesity test. Grade A minus.
+- **05 tank setup**: Finished it. Actionable: 18x18x24, 70 to 75 cool / 80 to 85 basking, 50 to 60% baseline, branch 6 inches under the T5, bulb swap 9 to 12 months. Grade A minus.
+- **06 enrichment**: Finished it, best page here. Actionable: dense layered planting, wide perches high, release prey into cover, same-size groups only. Grade A.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, wild diet, conservation status, and the naming history appear nowhere else. The hub does not. It restates the deep dives in shorter form and then disagrees with them.
+
+Water. Hub: "Always use dechlorinated or reverse-osmosis water for the water dish and for misting." Tank setup: "Use only dechlorinated tap water or spring water for misting and drinking, never distilled or reverse-osmosis water." The hub checklist repeats "Dechlorinated or RO water only" and the cost table bills me for it. One of these is wrong and I cannot tell which.
+
+Humidity. Hub: "Humidity should be maintained at 50 to 70% during the day and 80 to 100% at night." Tank setup: "a baseline around 50 to 60% with misting spikes up to 70 to 80% once or twice daily." The health guide blames constant wet for red-leg, so the hub is arguably prescribing the disease.
+
+Night temperature. Hub: "dropping to 65 to 75 degrees F at night." Tank setup: "dropping into the mid-70s at night."
+
+Feeding. Hub: "Adults eat every other day to 3 times per week." Health: "roughly 3 to 4 appropriately sized insects, 2 to 3 times a week."
+
+Lifespan. Hub FAQ: "15 to 20 years with excellent care." Cost: "Other sources cite a slightly more conservative 10 to 15-plus years."
+
+UVB. Hub: "strongly recommended by amphibian veterinarians." Tank setup: "Recommended, though not strictly required."
+
+## 3. The set as a whole
+
+I could buy, build, and run this tank tomorrow, once I picked a side on water and humidity. Still missing: any feeding guide at all (the only supplement schedule in the set, calcium w/D3 every other feeding and multivitamin weekly, sits on the hub with no deep dive behind it); enclosure cleaning frequency, though red-leg is blamed on dirt; water dish depth and change interval; how to pick a healthy frog and where; whether males call at night and how loud; sexing and what happens if two frogs breed; body condition beyond "bulging over the tympanum"; day one and week one; vacations and power cuts; normal skin sloughing.
+
+Questions answered on another page without a pointer: handling says dechlorinate but never says what counts (tank setup does); health blames constant humidity with no numbers (tank setup has them); health names MBD and UVB with no bulb spec (tank setup); cost lists bulb replacement every 9 to 12 months with no reason (tank setup's fun fact); enrichment says "watch the weight" with no threshold (health guide); health says quarantine with no duration (hub says 30 to 60 days); enrichment's group housing needs tank setup's 24x18x24.
+
+## 4. Overlap and conflict across deep dives
+
+Read twice: the Pacman frog contrast (handling, cost, tank setup, health), obesity (health and enrichment), the dechlorination rule (handling, tank setup, enrichment), humidity cycling (tank setup and enrichment). Only the humidity pair is redundant rather than useful.
+
+Group size conflicts. Tank setup: "18 inches long by 18 inches wide by 24 inches tall is the standard minimum for one adult ... 24x18x24 inches works well for a small group of two to four." Enrichment: "A tall 18x18x24 terrarium is a workable footprint for one or two adults."
+
+The cost guide fights itself. Prose: "Roughly $20 to $60 a Month." Its own annual table totals $155 to $285, about $13 to $24 a month. The setup table also has no heat source or substrate line while the prose says "That covers ... plus a heat source ... substrate."
+
+Enrichment: "do not treat handling as enrichment." The hub files all its handling advice under Enrichment.
+
+## 5. One link per page
+
+- 00: "Humidity should be maintained at 50 to 70% during the day and 80 to 100% at night" should link to the tank setup guide.
+- 01: "They are one of the most docile frog species, remarkably tolerant of handling compared to most amphibians" should link to the handling guide.
+- 02: "That covers the largest single expense, the terrarium itself, plus a heat source" should link to the tank setup guide.
+- 03: "Using tap water straight from the faucet on hands or gloves without dechlorinating it first" should link to Amphibian Quarantine, Acclimation, and Water Hardness.
+- 04: "quarantine any new or suspect animal immediately" should link to that same quarantine guide, which is where the duration lives.
+- 05: "Use only dechlorinated tap water or spring water" should link to the quarantine and water hardness guide.
+- 06: "Watch the weight" should link to the health issues guide.
+
+## 6. Trust
+
+Doubts: the RO water contradiction, the hub's 80 to 100% night humidity against its own health section, and a monthly cost figure double its own table. The enrichment page's honesty won me back: "Michaels, Antwis and Preziosi ran the study on red-eyed tree frogs ... Not this species, but another arboreal tree frog, which makes it the closest usable evidence by a wide margin." Most convincing single sentence, from the same page: "A White's tree frog will swallow anything that fits, including a smaller frog, and a mixed-size group is a feeding accident waiting to happen."
+
+## 7. Set grade
+
+B minus. The five deep dives are specific and usable; the hub, which is the page I land on first, contradicts them on water, humidity, and night temperature.
+
+First two changes: make the hub copy its numbers from the deep dives rather than restate them, starting with water and humidity. Then write a feeding guide and move the supplement schedule into it.
+
+## Not covered anywhere
+
+- Enclosure cleaning schedule and full substrate change interval.
+- Water dish depth and how often it gets changed.
+- Feeder portion and supplement schedule in a dedicated guide, not just a hub paragraph.
+- How to choose a healthy frog and where to buy one.
+- Male calling at night and how loud it is.
+- Sexing, and what to do if a group breeds.
+- A body condition test more precise than "bulging over the tympanum."
+- Vacation cover and power outage plans.
+- Normal skin sloughing and appetite pauses.
