@@ -82,75 +82,65 @@ Annual avian veterinary exams including complete blood panel are essential. Find
     image: "/assets/guides/budgie.jpg",
     tagline: "The cheerful, chatty little parakeet that's perfect for first-time bird owners!",
     funFact: "Budgies can learn to talk and have been known to learn over 1,700 words! The Guinness World Record holder was a budgie named Puck who knew 1,728 words, more than any other bird on record!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "18x18x24 in cage (larger preferred)", low: 100, high: 280 },
-        { item: "Perches of varied diameters", low: 15, high: 25 },
-        { item: "Swing", low: 6, high: 12 },
-        { item: "Ladder", low: 4, high: 8 },
-        { item: "Foraging toys (small/budgie-sized)", low: 10, high: 20 },
-        { item: "Food and water dishes", low: 10, high: 20 },
-        { item: "Cuttlebone or mineral block", low: 5, high: 12 },
-        { item: "Nail clippers", low: 8, high: 12 },
-      ],
-      annual: [
-        { item: "Budgie pellets or seed mix", low: 50, high: 80 },
-        { item: "Fresh vegetables", low: 60, high: 100 },
-        { item: "Millet sprays (treats)", low: 15, high: 25 },
-        { item: "Annual avian vet check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A minimum cage size of 18x18x24 inches is required for a single budgie, but larger is strongly preferred - budgies are active, agile flyers that need space to move. Bar spacing of 1/2 inch or less is essential; wider bars allow a budgie's head to get stuck. The cage orientation should prioritize width over height to allow lateral flight.
-
-Position the cage at eye level, away from the kitchen (cooking fumes are lethal to birds), drafts, and direct sunlight. Budgies feel secure when they can see the room from a stable, elevated position. Cover the cage at night to provide 10 to 12 hours of darkness and uninterrupted sleep.
-
-Provide multiple perches of different diameters (3/8 to 3/4 inch) and textures: natural wood, rope, and a cement perch for nail maintenance. Perches at different heights allow the bird to choose its comfort zone. Include a swing - budgies love to rock and sway.
-
-Budgies are highly social animals and suffer psychologically when kept alone. A bonded pair of budgies is far happier than a solo bird. If you want a talking budgie, keep a single male with very intensive daily interaction - but be honest about the time commitment this requires.`,
-      diet: `A high-quality small parrot pellet (Harrison's Fine, Roudybush, or Lafeber's Nutriberries) should make up 60 to 70% of a budgie's diet. Seed-only diets are nutritionally deficient - they are high in fat and carbohydrates and lack essential vitamins, minerals, and amino acids. Budgies fed seed exclusively develop fatty liver disease, nutritional deficiencies, and shortened lifespans.
-
-Supplement daily with fresh vegetables: broccoli florets, carrot strips, leafy greens (kale, spinach, dandelion), bell pepper, and cucumber. Introduce new vegetables gradually. Many budgies initially refuse new foods - persistence and offering the same food repeatedly over days or weeks usually succeeds. Offer the same foods you eat alongside them to encourage trying new things.
-
-Millet sprays are the equivalent of candy - budgies love them but they are very high in fat and should be offered as treats only (a small piece 2 to 3 times per week maximum). Fruit can be offered in tiny amounts. Fresh water changed daily is essential.
-
-Iodine deficiency (causing goiter - thyroid enlargement) is common in seed-fed budgies. Pellets prevent this. If feeding seeds, provide a cuttlebone and a mineral block which provide trace minerals including iodine.`,
-      enrichment: `Budgies are playful, curious birds that thrive with an abundance of toys and daily interaction. Rotate toys regularly to maintain novelty - a toy ignored for a week often becomes fascinating again when reintroduced after a break. Provide swings, ladders, bells, foraging toys (pellets hidden in a puzzle feeder or wrapped in paper), shreddable toys (paper strips, palm fronds, thin cardboard), and mirrors if kept solo.
-
-Daily supervised out-of-cage time in a bird-safe room is important. Bird-proof the room: remove or cover mirrors (birds fly into them), ensure ceiling fans are off, cover windows with sheer curtains, remove toxic plants, and secure all open water sources. Let the budgie fly freely for 30 to 60 minutes minimum.
-
-Male budgies are more likely to talk and vocalize extensively. With patient, consistent repetition of words and phrases during daily interaction, many males learn words, phrases, and even entire songs. Talking is not guaranteed but more common in single males who bond closely with their keeper.
-
-Budgies benefit enormously from having a companion budgie. Two budgies together play, preen each other, communicate constantly, and are dramatically more active and engaged than solo birds. If you plan to keep a single budgie, plan to spend several hours per day actively interacting.`,
-      health: `Respiratory infections are common in budgies and can progress quickly. Signs include sneezing, nasal discharge, tail bobbing with each breath (a sign of labored breathing), fluffed feathers, and voice changes. Any budgie showing labored breathing requires immediate veterinary attention. Respiratory infections are serious and respond poorly to delays in treatment.
-
-Scaly face mites (Knemidocoptes pilae) cause crusty, porous growths on the beak, cere (the fleshy area above the beak), and sometimes feet. The mites are treated with an antiparasitic medication prescribed by an avian vet. They spread between birds and should be treated promptly.
-
-Psittacosis (Chlamydiosis, parrot fever) is a bacterial infection transmissible to humans. Signs in budgies include lethargy, nasal discharge, eye discharge, and weight loss. It is treatable with antibiotics. Any new budgie should be tested for psittacosis or treated prophylactically.
-
-Obesity from seed-heavy diets leads to fatty liver disease (hepatic lipidosis), which causes lethargy, labored breathing, and abdominal distension. A pellet-based diet with limited seeds prevents this. Annual avian veterinary wellness checks are strongly recommended.`,
-      checklist: [
-        "Minimum 18x18x24\" cage (larger preferred)",
-        "High-quality budgie pellets or seed mix",
-        "Fresh vegetables (broccoli, carrots, greens)",
-        "Multiple perches of different diameters",
-        "Swings, ladders, and foraging toys",
-        "Millet sprays for treats",
-        "Shower or misting bottle",
-        "Safe shreddable toys (paper, cardboard)",
-        "Nail clippers",
-        "Avian veterinarian contact"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size and lifespan come from
+    // the encyclopedia entry, which no deep dive repeats. Day one and power
+    // outage cite the shared bird guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the budgie set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. NASPHV and VCA both put the floor at 30 days, up to 45, and a multi-bird household is safer nearer the 90 days Merck recommends for an aviary.", source: "bird-quarantine-guide" },
+        { label: "Enclosure", value: "18x18x18 inches is the figure often cited as an absolute minimum for one bird, but a wider flight-style cage serves them far better, something closer to 30x18x18 inches for a pair. Width matters more than height, since budgies fly side to side rather than climbing.", source: "budgie-tank-setup-guide" },
+        { label: "Bar spacing", value: "Half an inch or less. Wider spacing risks a bird squeezing through and escaping, or getting its head caught trying.", source: "budgie-tank-setup-guide" },
+        { label: "Diet", value: "Pellets should make up roughly 60 to 80% of the diet, with fruit, vegetables, and greens at another 20 to 25%, and seeds treated as an occasional extra. A seed-only diet is directly linked to malnutrition, obesity, and fatty liver disease.", source: "budgie-tank-setup-guide" },
+        { label: "Temperature", value: "A practical ambient range is about 65 to 85°F, with 70 to 75°F ideal. Budgies have no sweat glands and are more heat-sensitive than that range might suggest.", source: "budgie-tank-setup-guide" },
+        { label: "Handling", value: "Give a new bird a week or two to settle before any taming. Then work through hand-in-the-cage, millet from the fingers, and step-up training, in that order, moving on only once the bird is calm at the current step.", source: "budgie-handling-guide" },
+        { label: "Sexing", value: "Adult males typically show a blue to purple-blue cere, adult females a tan, brown, or pale white one. Juveniles of both sexes show pink or pale purple until it settles into adult color, usually between 6 and 12 months.", source: "budgie-cere-color-guide" },
+        { label: "Budget", value: "$20 to $80 for the bird, $175 to $475 for a complete starter setup, and first-year totals (including the bird) commonly $350 to $900. Food runs $5 to $15 a month, toys and perches $10 to $30.", source: "budgie-cost-guide" },
+        { label: "Adult size", value: "7 inches (18 cm); 1 to 1.4 oz." },
+        { label: "Lifespan", value: "Not well documented in the wild; typically 7 to 15 years in captivity, with the oldest documented individual living 29 years, 2 months." },
+        { label: "Zoonotic risk", value: "Psittacosis is a bacterial infection transmissible to people. Watch for lethargy, nasal or eye discharge, and weight loss, and mention the possibility to your own doctor if you develop flu-like symptoms after a new bird.", source: "budgie-health-issues-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a budgie carries almost no fat reserve. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "budgie-health-issues-guide",
+      callNow: [
+        "Fluffed-up feathers combined with sleeping during the day",
+        "Tail-bobbing with each breath",
+        "Open-mouth breathing",
+        "Sitting on the floor of the cage instead of perching",
+      ],
+      vetLine: "An avian vet, found before you need one. Budgies mask illness well, so any of the above means a vet within 24 hours, not a few days of watching and waiting.",
+    },
+    routes: [
+      { slug: "budgie-cost-guide", line: "$20 to $80 for the bird, $175 to $475 for a starter setup, and the avian vet costs most owners underestimate." },
+      { slug: "budgie-tank-setup-guide", line: "The 18x18x24 minimum, why width beats height, bar spacing, and the pellet-first diet." },
+      { slug: "budgie-handling-guide", line: "Letting a new bird settle, the taming progression from hand-in-cage to step-up, and why punishing a bite backfires." },
+      { slug: "budgie-health-issues-guide", line: "Fatty liver disease, the tumor that can look like a limp, egg binding, and the signs that mean a vet the same day." },
+      { slug: "budgie-enrichment-guide", line: "Foraging first, destructible toys, and the difference between a resting bird and a bored one." },
+      { slug: "budgie-cere-color-guide", line: "Reading the cere to sex a budgie, and when a color change means more than hormones." },
+    ],
+    buyList: [
+      "18x18x24 inch cage or larger, wider rather than taller",
+      "Perches of varied diameters and textures, plus a swing",
+      "Cuttlebone or mineral block",
+      "High-quality small parrot pellets",
+      "Fresh vegetables",
+      "Foraging toys and puzzle feeders",
+      "Shreddable and chew toys",
+      "Food and water dishes",
+      "Nail clippers",
+      "Cage cover for nighttime darkness",
+    ],
     faqs: [
-      { q: "Can budgies learn to talk?", a: "Yes, many can - males are significantly more likely to learn words and phrases than females. The Guinness World Record for most words learned by a bird belongs to a budgie: Puck, who knew 1,728 words. A single male budgie bonded closely to one person and kept in a relatively quiet environment with consistent repetition of words is the setup most likely to produce a talking bird. Talking is never guaranteed, but males in stimulating environments frequently learn their owner's names, phrases, and full sentences over time." },
-      { q: "How long do budgies live?", a: "7 to 12 years with proper care - a lifespan commonly cut short by seed-only diets, which cause fatty liver disease, nutritional deficiencies, and immune suppression. Wild budgies are not adapted to eat seeds as their primary food; seeds are a dry-season fallback, not a dietary staple. Pellet-based diets with daily vegetables are directly linked to longer, healthier lifespans. An annual avian veterinary wellness check catches common problems early." },
-      { q: "Do budgies need a companion?", a: "They are far happier with one. Budgies are highly social flock animals - a bonded pair will preen each other, communicate constantly, sleep together, and show significantly more active and engaged behavior than a solo bird. A single budgie is not necessarily miserable, but requires several hours of intensive daily human interaction as a substitute for a flock companion. If you can't provide that reliably, a bonded pair of budgies is the far better choice for the bird's wellbeing." },
-      { q: "What is the best diet for a budgie?", a: "60 to 70% high-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries), supplemented with daily fresh vegetables. Seed mix should be no more than 10 to 20% of the diet, offered in foraging toys rather than open dishes. Millet spray is a high-fat treat to be limited to small amounts 2 to 3 times per week. A cuttlebone provides calcium and trace minerals. The most important dietary change for most budgies is reducing seed and adding pellets - this single step dramatically improves health outcomes." },
-      { q: "Are budgies as easy as they are marketed?", a: "They are one of the simpler birds to keep, but are frequently sold as minimal-care starter pets when the reality is more involved. A properly cared-for budgie needs a cage larger than typical starter cages (18x18x24 inches minimum), daily fresh vegetables, regular out-of-cage time in a bird-proofed space, an avian vet relationship, and either a companion bird or several hours of human interaction per day. Within those parameters, they are genuinely manageable and rewarding for first-time bird owners." },
-      { q: "Is a budgie the same thing as a parakeet?", a: "Yes, when Americans say \"parakeet\" they almost always mean the budgerigar (Melopsittacus undulatus) - the exact bird this guide covers. \"Budgie\" is just the informal, shortened name used more often in the UK and Australia. The confusion comes from \"parakeet\" technically being a much broader category: it describes any small parrot with a long, slender tail, which includes dozens of unrelated species (Ring-necked Parakeet, Monk Parakeet, and others). The budgerigar simply became so dominant in the American pet trade that \"parakeet\" narrowed to mean specifically this bird in everyday use." },
-      { q: "Parrotlet or budgie: which is the better first parrot?", a: "Both are excellent small first parrots, but they suit slightly different people. A budgie is generally the gentler, more forgiving choice: easier to socialize, far more likely to build a large talking vocabulary, and just as happy solo with plenty of attention or paired with another budgie. A parrotlet is smaller and quieter but has a noticeably stronger bite for its size and a bolder, more assertive personality that needs consistent handling to stay friendly rather than nippy. If you want the lower-drama, kid-friendlier option, get the budgie. If you want a bird with outsized personality and don't mind the socialization work, a parrotlet is a great alternative." },
+      { q: "How much does a budgie itself cost?", a: "$20 to $80. It's the cheapest part of ownership, the cage and long-term avian vet care are where the budget goes." },
+      { q: "What size cage does a budgie need?", a: "18x18x18 inches is the figure usually cited as an absolute minimum for one bird, but a wide flight-style cage serves them far better, nearer 30x18x18 for a pair. Width beats height, since budgies fly side to side rather than climbing." },
+      { q: "What are the signs a budgie needs to see a vet the same day?", a: "Fluffed feathers plus daytime sleeping, tail-bobbing with each breath, open-mouth breathing, or sitting on the cage floor instead of perching. Budgies mask illness well, so any of those means a vet within 24 hours, not a few days of watching." },
     ],
   },
   {
