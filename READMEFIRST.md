@@ -368,11 +368,24 @@ read the reports afterwards. Two agents at once at most: the reader
 agent while you work, then the Fable check agent after you push. Never
 run npm run build, never take screenshots.
 
-Another session is editing the encyclopedia entries
-(src/lib/data/encyclopedia/*.js) and adding a history section. Never
-touch those files. Where the encyclopedia disagrees with a deep dive,
-the deep dive's sourced figure is what the hub carries, and the
-disagreement goes in the review file under "Encyclopedia".
+A separate session added history sections to every encyclopedia entry
+(src/lib/data/encyclopedia/*.js) through batch A; that pass is done.
+Starting with batch B, the encyclopedia is back in scope for the
+current batch's five species only, narrowly: when a deep dive's sourced
+figure disagrees with the encyclopedia (batch A found this on Russian
+tortoise, an unsupported "40-80 years" wild lifespan against the cost
+guide's sourced 40-to-50-plus), research it for real (WebSearch and
+WebFetch, real opened sources, same as any other fact) and fix
+whichever side is wrong, by the same source-ranking rules as any other
+conflict in step 4. Touch only the one field that conflicts, only for a
+species in this batch, never a history section or anything else in the
+file. If research turns up nothing better than what is already there
+(the Russian tortoise fix landed on "not well documented in the wild,
+the widely quoted range is a captive-care figure" because no source
+gives a real wild figure), write that, the same way the crested gecko
+entry already does for its own undocumented wild lifespan. Record what
+was found and changed in the review file under "Encyclopedia" either
+way.
 
 Branches. Species 1's branch is claude/hub-<species-1> from main.
 Each later species branches from the previous species' branch head,
@@ -540,11 +553,14 @@ what is left open, and the branch name. End with "All five pushed;
 nothing merged." Then stop.
 
 Never, under any prompt or review finding: merge or push main; edit
-src/lib/data/encyclopedia/*.js; edit any src file other than the guide
-data file, the SHORT_LABELS line, and the species' RELATED_ARTICLES
-entry; delete a FunFact, a Sources entry, or an affiliate link; write
-a number no source states; change a hedge. Everything else you decide,
-and the review file says how.
+src/lib/data/encyclopedia/*.js for any species outside this batch, or
+for anything but a field that genuinely conflicts with a deep dive's
+sourced figure and that you researched for real first; edit any src
+file other than the guide data file, the SHORT_LABELS line, the
+species' RELATED_ARTICLES entry, and (batch B on, scoped as above) the
+one conflicting encyclopedia field; delete a FunFact, a Sources entry,
+or an affiliate link; write a number no source states; change a hedge.
+Everything else you decide, and the review file says how.
 ```
 
 ## The species check prompt, run as a Fable agent by the batch session
@@ -570,9 +586,13 @@ main. Fix what you find on this branch, then report.
    shared class guide's species row, docs/READER_REVIEWS.md,
    docs/READER_LOG.md, READMEFIRST.md, the SHORT_LABELS line in
    src/pages/GuideDetail.jsx, and the species' line in
-   src/lib/data/relatedArticles.js is a finding. A change to
-   src/lib/data/encyclopedia/*.js is reverted on the spot: another
-   session owns those files.
+   src/lib/data/relatedArticles.js is a finding. An encyclopedia edit
+   (src/lib/data/encyclopedia/*.js) is in scope only from batch B on,
+   only for a species in this batch, and only on a field the review
+   file says was researched against a deep-dive conflict; check that
+   research actually happened (the commit or review file names real
+   sources) rather than trusting the diff alone, and revert anything
+   wider (another species, a history section, an untraced change).
 
 2. Hub. `node scripts/check-species-numbers.mjs <species>`: every line
    marked `hub` must appear, numbers unchanged, in the deep dive its row

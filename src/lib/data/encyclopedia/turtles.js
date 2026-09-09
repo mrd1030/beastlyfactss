@@ -50,7 +50,7 @@ export const turtleEncyclopedia = [
       habitat: "Semi-arid steppe, rocky desert, and dry scrubland",
       adultSize: "5-10 inches (13-25 cm)",
       wildDiet: "Grasses, leaves, flowers, and plant matter",
-      wildLifespan: "40-80 years",
+      wildLifespan: "Not well documented in the wild; the widely quoted 40 to 50 years, with some individuals reported past 60, is a captive-care range",
       conservation: "Vulnerable (IUCN)",
       history: "The Russian tortoise has been traded heavily for the global pet market since the mid-1970s, long enough that a wild-caught animal was the norm for most of that history. It sits on CITES Appendix II, where trade runs on export quotas the range states set for themselves, and the IUCN lists it as vulnerable. Uzbekistan is the main exporter today and Ukraine supplies a smaller share, with captive breeding running alongside a continuing wild-caught supply. The difference matters to a buyer, since wild-caught tortoises arrive stressed and carrying parasites and die at a higher rate than captive-bred ones.",
     },
