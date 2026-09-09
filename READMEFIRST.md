@@ -162,8 +162,13 @@ catches the defects the commands produce. Per batch:
    at the end of this file (Sonnet, default effort). Rabbit, bearded
    dragon, leopard gecko, goldfish, axolotl, and ball python done and on
    main; leopard gecko, goldfish, axolotl, and ball python passed the
-   species check on 2026-09-08. Next: batch A (betta fish, crested gecko, guinea pig,
-   hamster, russian tortoise), then batch B (budgie, cockatiel, cockatoo,
+   species check on 2026-09-08. Batch A (betta fish, crested gecko,
+   guinea pig, hamster, russian tortoise) done and passed its species
+   check 2026-09-08 on branch claude/readmefirst-batch-a-9opaeb (one
+   Fable agent covering all five, since the session was pinned to a
+   single branch rather than five, so it ran the check once against the
+   whole batch instead of once per species); not yet merged to main.
+   Next: batch B (budgie, cockatiel, cockatoo,
    lovebird, tarantula), then the others. Legacy
    hubs keep rendering the old care sheet until then. Dogs and cats
    last. Rabbit difficulty settled at Beginner/Intermediate on the
@@ -343,10 +348,11 @@ dashes:
 
 Replaces the one-species prompt and the separate check session
 (2026-09-08). The worker decides from the sources instead of asking; Mike
-reads the reports afterwards. Species with a care package still to do:
-betta-fish, crested-gecko, guinea-pig, hamster, russian-tortoise (batch A),
-then budgie, cockatiel, cockatoo, lovebird, tarantula (batch B). Paste
-this with the five species filled in.
+reads the reports afterwards. Batch A (betta-fish, crested-gecko,
+guinea-pig, hamster, russian-tortoise) done and checked 2026-09-08 on
+branch claude/readmefirst-batch-a-9opaeb, not yet merged. Species with a
+care package still to do: budgie, cockatiel, cockatoo, lovebird, tarantula
+(batch B). Paste this with the five species filled in.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs

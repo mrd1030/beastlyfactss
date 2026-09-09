@@ -2445,3 +2445,80 @@ lifespan figure flagged for whoever next touches that file.
   temperature) filed in docs/READER_LOG.md. `water-parameters-guide` and
   `cycling-guide` added to SHORT_LABELS in src/pages/GuideDetail.jsx
   since the hub cites both as first-week row sources.
+- 2026-09-08, crested gecko (batch A, branch claude/readmefirst-batch-a-9opaeb):
+  hub rebuilt to router shape. `crested-gecko-humidity-guide` wired into
+  RELATED_ARTICLES, the same wiring bug as leopard gecko's temperature
+  guide: published, linked from four other articles, invisible in every
+  Deep Dive sidebar. Tank setup's Humidity section, a duplicate of the
+  humidity guide, cut to a pointer; a Diet Basics section added so the
+  guide's own ReptiFiles fruit-avoidance citation, present in Sources
+  but unused in the body, actually backs a claim. Cost guide's FAQ
+  ($20-30) corrected to $31-52 to match its table. Second pass caught a
+  same-page contradiction in tank setup's basking-temperature table cell
+  (82-85°F and 72-75°F both given with no resolution); the fix moved to
+  the conservative reading, then the species check below reversed that
+  back to 82-85°F, the article's own cited ReptiFiles figure, hedge kept
+  intact either way. `humidity-guide` added to SHORT_LABELS.
+- 2026-09-08, guinea pig (batch A, branch claude/readmefirst-batch-a-9opaeb):
+  hub rebuilt to router shape, resolving two hub-versus-deep-dive
+  conflicts by construction: the old hub banned pine bedding outright
+  where tank setup allows kiln-dried pine, and the old hub's cage-size
+  wording implied 10.5 sq ft was a bonus on top of a shared 7.5 sq ft
+  floor where tank setup states 10.5 as the pair minimum. Nine
+  recommended links added across two passes (cost to health issues,
+  handling to tank setup and to the vet guide, health issues to feeding,
+  tank setup to feeding and to the heat stress guide, feeding to health
+  issues, enrichment to health issues). A link-only opener and a
+  closing-paragraph link dump on the scurvy guide cut per RULES,
+  Linking. The feeding-versus-tank-setup alfalfa hedge left as is: both
+  pages agree grass hay is the adult staple, and feeding already states
+  the source disagreement transparently.
+- 2026-09-08, hamster (batch A, branch claude/readmefirst-batch-a-9opaeb):
+  hub rebuilt to router shape, resolving a stale 450 sq in cage floor
+  (current welfare guidance is 700-775 for a Syrian, 600 for a dwarf)
+  and an 11-12 in wheel figure that exceeded tank setup's own 8-11 in
+  Syrian maximum, both repeated in the cost guide's own line items.
+  `hamster-legal-guide` wired into RELATED_ARTICLES, the same wiring bug
+  class again. Feeding's cold-torpor threshold corrected from 65°F to
+  60°F to match tank setup, the subject-matter page. The hub's
+  cheek-pouch funFact reconciled to feeding's body-weight figure. Second
+  pass caught the vs guinea pig guide still carrying all three stale
+  cage numbers and a ratio derived from them; corrected, then the
+  re-derived ratio's own arithmetic was corrected again by the species
+  check below (1.4-1.8x was itself wrong; the real range is 1.4-1.5x).
+- 2026-09-08, Russian tortoise (batch A, branch
+  claude/readmefirst-batch-a-9opaeb): hub rebuilt to router shape. This
+  species has no feeding guide, so the hub's Diet row and a new Diet
+  Basics section added to tank setup both cite the shared herbivorous
+  reptile safe plants guide and tank setup's own content, resolving the
+  question the tank setup guide's orphaned Tortoise Trust citation
+  raised (cited in Sources, never used in the body). The cost guide's
+  own body claimed "No state bans this species," contradicted by the
+  legal guide's documented Colorado ban; corrected to defer to the legal
+  guide. Two same-page contradictions in the cost guide's FAQ (setup
+  total, annual cost, both disagreeing with the guide's own table)
+  fixed. Tank setup's two duplicate "Enclosure Size" sections merged
+  into one. Ten links added across two passes. Left as is per the batch
+  rule: the encyclopedia's 40-80 year wild lifespan against the cost
+  guide's 40-to-50-plus figure, an encyclopedia-versus-deep-dive gap
+  outside a deep-dives-only pass; the hub already carries the deep
+  dive's figure.
+- 2026-09-08, batch A species check (branch
+  claude/readmefirst-batch-a-9opaeb, one Fable agent covering all five
+  species on the shared branch rather than five separate checks, since
+  a fresh worktree per check wasn't available and running them
+  concurrently on one working tree risked git races): found that none
+  of the five hubs had copied three FAQs from their deep dives (the
+  router-hub rule from the leopard gecko and axolotl templates), all
+  had kept legacy hand-written FAQs instead; all five replaced with
+  verbatim deep-dive copies. Also found and fixed: guinea pig's Diet row
+  cited a figure the feeding guide never states (it's in tank setup's
+  table); hamster's Company row and buy list carried unsourced or
+  merged prose; the crested gecko basking-cell reversal from the second
+  pass had it backwards, restored to the sourced 82-85°F with the
+  original hedge; the hamster vs guinea pig ratio's arithmetic error and
+  a leftover "same whether it's one or a pair" clause; the Russian
+  tortoise legal row and cost guide both said "several" states where
+  the legal guide gives a specific count of four; the betta fish first
+  pass review had claimed four links that were never actually made, now
+  made for real. Full gate suite green across all five species after.
