@@ -1461,3 +1461,80 @@ First two changes:
 - Bathing or misting frequency and method, despite a misting bottle being on the hub checklist.
 - Toxic foods for birds (avocado, chocolate, caffeine, onion). The Household Hazards guide is described as fumes and airborne hazards, not diet.
 - Vegetable portion size and how much a 30 gram bird should actually eat per day.
+
+## Budgie (2026-09-09, batch B, second pass, after the fixes)
+
+One Opus agent, the same nine pages re-extracted after the first-pass
+fixes, about 79k tokens. Full agent output below, unedited.
+
+---
+
+## 1. Page by page
+
+- **00 Hub.** Finished it; it is the most useful page here and I can act on almost every line. Undercut by its own cage numbers. **B**
+- **01 Encyclopedia.** Finished it in a minute. Nothing to act on except lifespan and adult size, which the hub already gave me. **C+**
+- **02 Cost.** Finished it. I can budget from it, but the setup breakdown table did not render, so the $175 to $475 has no itemization behind it. **B**
+- **03 Handling.** Finished it. Clear, ordered, executable from day one. **A-**
+- **04 Health.** Finished it, twice. Best page in the set; the limp-equals-tumor section is genuinely new to me. **A**
+- **05 Cage setup.** Finished it. Buyable: dimensions, bar spacing, perch types to avoid, temperature, PTFE. **A-**
+- **06 Enrichment.** Finished it. Actionable and cheap, but it contradicts the setup page on solo birds. **B+**
+- **07 Cere.** Finished it. Useful for sexing, thinner than the health page on the same topic. **B**
+- **08 Budgie vs cockatiel.** Finished it. Decision-grade, though I had already decided. **B+**
+
+## 2. Hub and encyclopedia
+
+The hub earns its place easily: it is a router with numbers attached, and every line names the article it came from. The encyclopedia does not. Its only unique content is the Gould and Budgerigar Club history, which is pleasant and useless to me; everything else (size, lifespan, diet, difficulty) is repeated on the hub.
+
+The hub disagrees with itself and with the setup guide on cage size. First week and FAQ: "18x18x18 inches is the figure often cited as an absolute minimum for one bird." Buy list: "18x18x24 inch cage or larger, wider rather than taller," and the card blurb says "The 18x18x24 minimum." The setup guide backs the first: "An absolute minimum for a single budgie is often cited around 18x18x18 inches." That is the exact number I would type into a shopping search, and the hub gives me two.
+
+## 3. The set as a whole
+
+I could buy the cage, set it up, feed the bird, tame it, and recognize an emergency. Gaps: no cleaning routine, no bathing or misting, no safe and unsafe food list beyond "fresh vegetables," and no weighing routine even though the health page leans on weight loss as a sign.
+
+Questions raised on one page and answered on another, silently:
+
+- The setup page tells me pellets should be 60 to 80% of the diet but never says the shop bird will arrive seed-addicted. The Converting a Seed-Eating Bird to Pellets guide in the sidebar is the answer, and no budgie page points at it.
+- The health page says egg binding is life-threatening; the Chronic Egg Laying guide covers it, unlinked from that page.
+- The enrichment page says "supervised out-of-cage time in a bird-safe room" without defining bird-safe. Household Hazards answers it, unlinked.
+- The handling page opens on hand-raised versus parent-raised without saying Choosing a Pet Bird covers how to tell.
+
+## 4. Overlap and conflict across deep dives
+
+I read the same-day vet list three times (hub, health, both FAQs), the pellet percentages twice, and cere sexing twice.
+
+Real conflict, solo birds. Setup: "Can one budgie live alone happily? A: Not well." Enrichment: "Is a single budgie okay without a cage mate? A: It can be, provided the owner supplies the social interaction a cage mate would otherwise cover."
+
+Soft conflict, male cere. Health: brown hypertrophy is "classically from a testicular tumor producing estrogen." Cere guide, same symptom: "it's more often linked to an actual health issue, including scaly face mites (which cause a crusty, porous texture) or, less commonly, a cere tumor." No testicular tumor at all, which is the scarier reading.
+
+Minor: enrichment says hide "part of the daily seed or pellet ration," while setup treats seeds as "an occasional extra rather than the foundation."
+
+## 5. The one link each page needed
+
+- **Hub:** "Pellets should make up roughly 60 to 80% of the diet" should link to Converting a Seed-Eating Bird to Pellets.
+- **Encyclopedia:** "flocks of thousands are common" should link to Colony and Aviary Keeping.
+- **Cost:** "The cage is worth prioritizing width over cheapness" should link to the cage setup guide. It never does.
+- **Handling:** "A hand-raised bird is already comfortable with people and may step up on its own from day one" should link to Choosing a Pet Bird.
+- **Health:** "It's linked to calcium and vitamin D deficiency and to obesity" should link to Chronic Egg Laying and Egg Binding.
+- **Setup:** "never use nonstick or PTFE cookware anywhere near a budgie" should link to Household Hazards for Pet Birds.
+- **Enrichment:** "plus supervised out-of-cage time in a bird-safe room" should link to Household Hazards for Pet Birds.
+- **Cere:** "That same texture change in a male is a different story" should link to the budgie health issues guide.
+- **Vs cockatiel:** "often do very well in a same-species pair" should link to the cage setup guide.
+
+## 6. Trust
+
+Doubts: the two cage minimums on one page; the cost table that did not render under a heading promising a breakdown; the solo-bird contradiction. Nothing read padded or invented.
+
+The sentence that convinced me a keeper wrote this: "A budgie that suddenly starts limping, drags a leg, grips the perch weakly on one side, or falls off its perch is often not injured."
+
+## 7. Set grade: B+
+
+Strong, specific, mostly non-redundant, let down by a contradicted cage number and a sidebar of relevant guides the bodies never reach into.
+
+First two changes: pick one cage minimum and use it in all four places; add body links from the budgie pages to the pellet conversion, household hazards, and egg binding guides.
+
+## Not covered anywhere
+
+- Cage cleaning routine: what to wipe daily, what to strip weekly, what liner to use.
+- Bathing or misting, and how often a budgie needs it.
+- A safe and unsafe food list: avocado, chocolate, apple seeds, onion, plus which vegetables to actually offer.
+- Water dish hygiene and how often to change water.

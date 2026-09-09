@@ -2418,6 +2418,75 @@ four of the eight recommended links added.
 Open: the cage-cleaning, bathing, toxic-foods, and vegetable-portion
 gaps filed in docs/READER_LOG.md for whoever writes new content next.
 
+## Budgie (2026-09-09, batch B, second pass, after the fixes)
+
+One Opus agent, the same nine pages re-extracted after the first-pass
+fixes, about 79k tokens. Set grade held at B+, same reason: "strong,
+specific, mostly non-redundant, let down by a contradicted cage number
+and a sidebar of relevant guides the bodies never reach into."
+
+One real bug the second pass caught that the first pass couldn't: the
+new router hub contradicted its own first-week row. The Enclosure row
+correctly read 18x18x18 (tank setup's real sourced minimum), but the
+buy list still said "18x18x24 inch cage or larger" and the Tank setup
+route line still said "The 18x18x24 minimum," both leftover from the
+pre-fix draft that had copied the old hub's number instead of the deep
+dive's own. Both corrected to 18x18x18 to match the first-week row and
+the source.
+
+A real conflict the reader named directly: the tank setup guide's FAQ
+says "Can one budgie live alone happily? A: Not well," while the
+enrichment guide's FAQ says "Is a single budgie okay without a cage
+mate? A: It can be, provided the owner supplies the social
+interaction." Neither page cites a source for this (the tank setup
+guide carries no Sources block at all, see below), so per the
+source-ranking rules the page whose subject is the topic wins: tank
+setup has a dedicated Social Needs section built around this exact
+question, enrichment's is a single FAQ answer. Enrichment's FAQ
+reworded to "Not especially well on its own... needs the owner to
+supply substantial daily interaction... to make up for the flock
+companion it's missing," keeping its own point about foraging and
+destructible enrichment not being substituted, while agreeing with
+tank setup's headline answer instead of contradicting it.
+
+A tooling bug, not a content one, fixed at the reader's request mid
+session: the cost guide's setup table showed as "[table could not be
+parsed]" in both reader passes because one of its rows uses a bare
+`<AffiliateLink>` element directly as a cell value (`[<AffiliateLink
+...>Perches</AffiliateLink>, "$15 - $25"]`) rather than a plain string,
+and the extractor's table parser only knew how to unwrap that pattern
+inside a `<>fragment</>`, not as a raw cell on its own; the whole table
+literal failed to evaluate as JS and every row vanished behind the
+one error message. scripts/reader-extract.mjs's `clean()` now resolves
+any bare `<Tag>...</Tag>` cell value the same way it already resolved
+fragments, looping so a component nested inside a fragment resolves
+innermost-first. Verified against leopard gecko, goldfish, axolotl,
+ball python, rabbit, and bearded dragon: no table anywhere newly broke,
+and the budgie cost table now renders in full.
+
+Four more recommended links added: handling to the shared bird first
+aid and grooming guide (towel restraint), health issues to the shared
+chronic egg laying guide (egg binding's calcium and vitamin D link),
+tank setup to the shared household hazards guide (a second sentence,
+past the PTFE warning), enrichment to the same household hazards guide
+(what "bird-safe" rules out), and the vs cockatiel guide to budgie's
+own tank setup guide (its one allowed same-species link, on the
+same-species-pair sentence). One suggested link skipped for real this
+time: handling guide's hand-raised-versus-parent-raised sentence is
+its opening paragraph, and RULES bars a link before the first H2; no
+later sentence in that article revisits the topic naturally, so it's
+disqualified by position, not skipped by choice.
+
+Open, for whoever writes new content next: budgie-tank-setup-guide.mdx
+carries no Sources block at all, the only budgie deep dive missing
+one; its cage, bar spacing, and diet-percentage figures are plausible
+and match what other sites state, but none of them trace to an opened
+source the way every other budgie article's do. Flagged, not fixed:
+adding real citations is a research pass (RULES, Sources: opened pages
+only), not a link-and-number fix. The cage-cleaning, bathing,
+toxic-foods, and vegetable-portion gaps from the first pass remain
+open too, still uncovered anywhere in the set.
+
 ## What the tests changed so far
 
 - The article page: excerpt block removed, Deep Dive prerendered and given a
@@ -2656,4 +2725,19 @@ gaps filed in docs/READER_LOG.md for whoever writes new content next.
   added to SHORT_LABELS, the same wiring class as leopard gecko's
   temperature guide. Left for whoever writes new content next: no
   guide anywhere covers cage cleaning, bathing or misting frequency,
-  toxic foods, or vegetable portions.
+  toxic foods, or vegetable portions. Second pass caught a self-
+  contradiction the first pass introduced: the new hub's buy list and
+  a route line still said 18x18x24 after the first-week row had
+  already been fixed to 18x18x18, both now consistent; a real solo-
+  bird conflict between the tank setup and enrichment guides' FAQs
+  ("Not well" against "It can be") resolved in enrichment's favor of
+  tank setup's dedicated section, since neither page cites a source;
+  four more links added. Also fixed, at the reader's own request:
+  scripts/reader-extract.mjs's table parser choked on a bare
+  `<AffiliateLink>` used directly as a cell value instead of wrapped in
+  a `<>fragment</>`, which crashed the budgie cost guide's entire setup
+  table into "[table could not be parsed]" in both reader passes; now
+  resolves either form, verified against six other species' tables
+  with no regressions. Open: budgie-tank-setup-guide.mdx carries no
+  Sources block at all, the only budgie deep dive without one, flagged
+  for a real research pass rather than fixed here.

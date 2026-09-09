@@ -119,14 +119,14 @@ Annual avian veterinary exams including complete blood panel are essential. Find
     },
     routes: [
       { slug: "budgie-cost-guide", line: "$20 to $80 for the bird, $175 to $475 for a starter setup, and the avian vet costs most owners underestimate." },
-      { slug: "budgie-tank-setup-guide", line: "The 18x18x24 minimum, why width beats height, bar spacing, and the pellet-first diet." },
+      { slug: "budgie-tank-setup-guide", line: "The 18x18x18 minimum, why width beats height, bar spacing, and the pellet-first diet." },
       { slug: "budgie-handling-guide", line: "Letting a new bird settle, the taming progression from hand-in-cage to step-up, and why punishing a bite backfires." },
       { slug: "budgie-health-issues-guide", line: "Fatty liver disease, the tumor that can look like a limp, egg binding, and the signs that mean a vet the same day." },
       { slug: "budgie-enrichment-guide", line: "Foraging first, destructible toys, and the difference between a resting bird and a bored one." },
       { slug: "budgie-cere-color-guide", line: "Reading the cere to sex a budgie, and when a color change means more than hormones." },
     ],
     buyList: [
-      "18x18x24 inch cage or larger, wider rather than taller",
+      "18x18x18 inch cage or larger, wider rather than taller",
       "Perches of varied diameters and textures, plus a swing",
       "Cuttlebone or mineral block",
       "High-quality small parrot pellets",
