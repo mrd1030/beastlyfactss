@@ -6952,7 +6952,7 @@
       },
       {
         "q": "Why do Indonesian blue-tongued skinks get parasites so often?",
-        "a": "Most Indonesian skinks in the US pet trade are wild-caught, and animals that come in that way commonly arrive carrying parasites. Wolf and colleagues, publishing in Acta Veterinaria Scandinavica in 2014, reported a total parasite occurrence of 93.2% across the reptile faecal samples they examined. Northerns are almost all captive-bred, so the risk there is far lower."
+        "a": "Most Indonesian skinks in the US pet trade are wild-caught, and animals that come in that way commonly arrive carrying parasites. Wolf and colleagues, publishing in Acta Veterinaria Scandinavica in 2014, reported a total parasite occurrence of 93.2% across the reptile fecal samples they examined. Northerns are almost all captive-bred, so the risk there is far lower."
       },
       {
         "q": "What treatment do wild-caught skinks need for parasites?",
@@ -7814,11 +7814,11 @@
       },
       {
         "q": "How often should a box turtle be fed?",
-        "a": "Juveniles daily, adults less often, though veterinary sources differ on how much less. One allows adults daily or every other day; another gives every two to three days. Every other day is the interval both permit."
+        "a": "Juveniles daily, adults every other day to every three days. Every other day is the interval every published schedule permits, and it is the safe default for a species prone to obesity."
       },
       {
         "q": "How much calcium does a box turtle need?",
-        "a": "The two published schedules differ. One dusts vegetables with calcium powder two to three times per week plus a reptile multivitamin-mineral powder weekly. The other dusts once weekly, and asks for a supplement with a minimum 2:1 calcium to phosphorus ratio and no added vitamin D."
+        "a": "Calcium with D3, dusted on vegetables two to three times per week, plus a reptile multivitamin-mineral powder weekly. That is the schedule for an indoor turtle. One living outdoors in real sunlight can run lighter, once weekly, with a supplement at a minimum 2:1 calcium to phosphorus ratio and no added vitamin D."
       },
       {
         "q": "Which greens should not be the base of a box turtle's salad?",
@@ -8053,7 +8053,7 @@
       },
       {
         "q": "What temperature does a box turtle enclosure need?",
-        "a": "An indoor heat source giving a warm basking zone and a gradient down to a cool end. VCA puts the basking zone at 90 to 100°F, the cooler end near 70 to 75°F, and 65 to 70°F overnight with no added heat or light. Below 60°F outdoors, this species should come inside."
+        "a": "An indoor heat source giving a warm basking zone and a gradient down to a cool end. Basking zone 90 to 100°F, cooler end near 70 to 75°F, and 65 to 70°F overnight with no added heat or light. Below 60°F outdoors, this species should come inside."
       },
       {
         "q": "How humid should a box turtle enclosure be?",
@@ -8760,7 +8760,7 @@
     "faqs": [
       {
         "q": "How much of a budgie's diet should be pellets?",
-        "a": "Most of it. Veterinary guidance puts a formulated pellet at 60 to 80% of daily intake, with vegetables and a little fruit making up 20 to 25% at most. Seed is the part that shrinks, not the part everything else supplements."
+        "a": "Most of it. A formulated pellet is 60 to 80% of daily intake, with vegetables and a little fruit making up 20 to 25% at most. Seed is the part that shrinks, not the part everything else supplements."
       },
       {
         "q": "Why do budgies get goiter?",
@@ -13016,11 +13016,11 @@
     "faqs": [
       {
         "q": "How much of a conure's diet should be pellets?",
-        "a": "Most of it. VCA Animal Hospitals puts pellets at approximately 75 to 80% of the bird's diet, and Lafeber gives 80% for a green cheek specifically, counting foraging formats like Nutri-Berries and Avi-Cakes as the same nutritionally balanced base. Both leave the remainder to fresh vegetables and greens with a smaller share of fruit."
+        "a": "Most of it, at 75 to 80%. Foraging formats like Nutri-Berries and Avi-Cakes count as that same nutritionally balanced base, not as treats. The remainder goes to fresh vegetables and greens, with a smaller share of fruit."
       },
       {
         "q": "What vegetables should a conure eat every day?",
-        "a": "Dark leafy greens and vegetables should be offered daily, not saved for a weekend treat. VCA gives vegetables and greens 20 to 40% of daily intake and caps fruit at around 10%, so the fresh share leans heavily toward vegetables. Bell pepper, broccoli, carrot, cooked sweet potato, snap peas and leafy greens are the usual working list."
+        "a": "Dark leafy greens and vegetables should be offered daily, not saved for a weekend treat. Vegetables and greens take 20 to 40% of daily intake and fruit caps at around 10%, so the fresh share leans heavily toward vegetables. Bell pepper, broccoli, carrot, cooked sweet potato, snap peas and leafy greens are the usual working list."
       },
       {
         "q": "What foods are toxic to a conure?",
@@ -13028,7 +13028,7 @@
       },
       {
         "q": "What goes wrong on an all-seed diet?",
-        "a": "Four separate things, all named by the Merck Veterinary Manual: vitamin A deficiency, metabolic bone disease from a diet short on calcium and vitamin D and heavy on phosphorus, goiter from iodine deficiency, and obesity. Four mechanisms, one shared cause, which is why the fix is dietary."
+        "a": "Four separate things: vitamin A deficiency, metabolic bone disease from a diet short on calcium and vitamin D and heavy on phosphorus, goiter from iodine deficiency, and obesity. Four mechanisms, one shared cause, which is why the fix is dietary."
       }
     ],
     "relatedProducts": [],
@@ -22007,11 +22007,11 @@
     "faqs": [
       {
         "q": "What should a green iguana eat every day?",
-        "a": "Dark leafy greens, as the clear majority of the bowl. One veterinary source puts it at 80 to 90% dark green leafy vegetables with under 20% of the diet as fruit; another is stricter on fruit, capping it at 5%. Build the greens on collard, mustard, turnip and dandelion greens, escarole and romaine, and treat squash, parsnip, green beans and bell pepper as the vegetable share."
+        "a": "Dark leafy greens, at 80 to 90% of the bowl, with fruit capped at 5%. Build the greens on collard, mustard, turnip and dandelion greens, escarole and romaine, and treat squash, zucchini, sweet potato, broccoli, peas and carrots as the vegetable share."
       },
       {
         "q": "Can green iguanas eat insects, eggs, or dog food?",
-        "a": "They should not be fed as part of the diet. Green iguanas are herbivores with enlarged ceca adapted for hindgut fermentation, and diets high in protein may predispose reptiles to uric acid accumulation, which can cause gout. Some veterinary guidance does allow foods high in animal protein at under 5% of an adult's diet, but nothing a plant eater needs requires them, so the safer plan is to leave them out."
+        "a": "They should not be fed as part of the diet. Green iguanas are herbivores with enlarged ceca adapted for hindgut fermentation, and diets high in protein may predispose reptiles to uric acid accumulation, which can cause gout. There is a published tolerance of under 5% of an adult's diet, but nothing a plant eater needs requires it, so the safer plan is to leave it out."
       },
       {
         "q": "Why are spinach and kale a problem for iguanas?",
@@ -22019,7 +22019,7 @@
       },
       {
         "q": "How often should a green iguana get calcium?",
-        "a": "It depends on age, and the two veterinary schedules differ. One gives young iguanas a reptile calcium powder every other day, about 4 to 5 times a week, plus a vitamin D multivitamin twice a week, dropping adults to a light dusting once or twice a week with a multivitamin twice a month. The other dusts a non-breeding adult once weekly, and asks for a supplement low in phosphorus at a minimum 2:1 calcium to phosphorus ratio."
+        "a": "It depends on age. Young iguanas get a reptile calcium powder every other day, about 4 to 5 times a week, plus a vitamin D multivitamin twice a week. Adults drop to a light dusting once or twice a week, with a multivitamin twice a month. Either way the supplement should be low in phosphorus, at a minimum 2:1 calcium to phosphorus ratio."
       }
     ],
     "relatedProducts": [],
@@ -24926,7 +24926,7 @@
       },
       {
         "q": "How often should a hognose snake be fed?",
-        "a": "Often as a hatchling, much less as an adult, and the sources differ on exactly how much less. Reptiles Magazine feeds young snakes every 5 to 7 days and mature females every 10 to 14 days, with some large females at every 14 to 21. The Reptile Centre feeds hatchlings weekly and adults once every two weeks, warning that they can become overweight if fed weekly as adults."
+        "a": "Often as a hatchling, much less as an adult. Young snakes eat every 5 to 7 days, mature females every 10 to 14, and some large females every 14 to 21. Adults on the simpler schedule eat once every two weeks, which is the interval to default to, since an adult fed weekly gets fat."
       },
       {
         "q": "Should hognose snakes be fed frozen thawed or live?",
@@ -24986,7 +24986,7 @@
       },
       {
         "q": "Are Western hognose snakes dangerous to handle?",
-        "a": "The rear-fanged venom isn't considered medically significant to a healthy person, and the researchers behind the one documented bite case in the literature concluded the species isn't dangerous, only worth handling thoughtfully. That case is still worth knowing about: swelling, bruising, and mild cellulitis at the bite site, no systemic effects, and a recovery that ran about five months."
+        "a": "The rear-fanged venom isn't considered medically significant to a healthy person, and the one documented bite case in the literature came down the same way: not a dangerous species, just one to handle thoughtfully. That case is still worth knowing about: swelling, bruising, and mild cellulitis at the bite site, no systemic effects, and a recovery that ran about five months."
       },
       {
         "q": "What causes a hognose snake to bite?",
@@ -43456,7 +43456,7 @@
       },
       {
         "q": "How often should a White's tree frog be fed?",
-        "a": "Juveniles daily, adults every two or three days. Veterinary sources agree on the growing frog and vary slightly on the adult, with two to three times a week the usual figure. The amount matters more than the interval, and body condition is what settles it."
+        "a": "Juveniles daily, adults two or three times a week, at roughly three to four appropriately sized insects a sitting. The amount matters more than the interval, and body condition is what settles it."
       },
       {
         "q": "How do I tell if my frog is overweight?",
