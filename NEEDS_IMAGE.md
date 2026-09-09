@@ -4,20 +4,18 @@ Notes on animal facts that were drafted but did NOT make it into `src/lib/data/f
 
 ## Guide heroes still needed
 
-**2026-09-09: conure-feeding.jpg.** The conure feeding guide is written and
-wired (hub route added, RELATED_ARTICLES auto-detects the -feeding-guide
-suffix). Needs a 1600x1067 3:2 hero at mozjpeg quality 80. Prompt was given in
-chat: a green cheek conure on the rim of a steel bowl of pellets, one foot
-lifted holding a pellet, chopped vegetables beside it, cool window light.
+None outstanding. All nine feeding-guide heroes were delivered by Mike on
+2026-09-09 and installed.
 
-
-**2026-09-09: green-iguana-feeding.jpg.** The green iguana feeding guide is
-written and wired (hub route, RELATED_ARTICLES auto-detects the -feeding-guide
-suffix), and every gate passes except the image check, which reports
-`/assets/images/green-iguana-feeding.jpg` referenced by
-`content/guides/green-iguana-feeding-guide.mdx`. Needs a 1600x1067 3:2 hero at
-mozjpeg quality 80, matching the sibling green iguana series. Photos are
-site-owner-sourced, so this one is Mike's to produce.
+**2026-09-09: nine feeding guide heroes installed.** green-iguana, conure,
+box-turtle, hermit-crab, hognose-snake, whites-tree-frog, russian-tortoise,
+budgie and lovebird. Eight arrived as 1168x784 JPEG, matching the house guide
+size and the existing sibling series, and were re-encoded through mozjpeg at
+quality 80 (359KB down to 139KB on the largest, 246 to 459KB down to 85 to
+188KB across the set). The hognose frame arrived as a 1264x848 PNG at 1.4MB and
+was resized and converted to 1168x784 JPEG at quality 80, landing at 69KB.
+Derived -thumb and -card tiers are gitignored and rebuilt by
+generate-thumbnails.js, so check-images reporting those as missing is expected.
 
 ## Completed
 
