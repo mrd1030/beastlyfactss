@@ -73,15 +73,27 @@ export const birdEncyclopedia = [
     id: "conure", name: "Green Cheek Conure", scientific: "Pyrrhura molinae",
     category: "Birds", emoji: "🦜", difficulty: "Intermediate", guideId: "conure", available: true, image: "/assets/guides/conure.jpg",
     bio: {
-      overview: "Green cheek conures are small parrots native to the forests of Bolivia, Brazil, Argentina, and Paraguay, where they live in noisy flocks in the forest canopy. They are among the quietest of the conure species - making them more apartment-friendly than larger parrots - and have a reputation for playfulness and deep affection. Unlike larger parrots, they bond closely with keepers without requiring as intensive a daily time commitment.",
+      overview: "Green cheek conures are small parrots of the forest canopy in Bolivia, Brazil, Argentina, and Paraguay. Outside the breeding season they travel in flocks, often of ten to twenty birds, and they nest in tree cavities. They sit at the quieter end of the conure family, which is why they turn up in apartments more than a Sun or a Jenday. They are still a full parrot in a small body: intelligent, social, destructive, and loud for their size. Several hours of supervised time out of the cage every day is part of keeping one, not an extra.",
       origin: "South America (Bolivia, Brazil, Argentina, Paraguay)",
       habitat: "Forest, woodland, and forest edges",
       adultSize: "10 inches (25 cm) including tail; 2-2.5 oz",
       wildDiet: "Seeds, fruits, berries, and plant matter",
-      wildLifespan: "25 to 30 years in the wild, and the same is reachable in captivity, though the captive average is nearer 10 years, put down to poor diet and neglect",
-      conservation: "Least Concern (IUCN)",
-      history: "Massena and Souance described the species in 1854 and named it for Juan Ignacio Molina, the Chilean Jesuit naturalist. It stayed on the margins of aviculture for more than a century. Large shipments reached the United States in the 1980s, and among the wild-caught birds were odd individuals sold as a separate species, the yellow-sided conure; breeders later showed that yellow-sided was a sex-linked opaline mutation of the green cheek, the first color mutation established in American aviculture for this bird. A cinnamon form arrived about the same time, filed at first as fallow, and the California breeder Steve Garvin crossed the two to produce the pineapple. American opalines went out to Europe and South Africa in the late 1980s and early 1990s.",
+      wildLifespan: "25 to 30 years in the wild; 20 to 25 years or more in captivity under good care, some reaching 30",
+      conservation: "Least Concern (IUCN); CITES Appendix II",
+      history: "François Victor Masséna and Charles de Souancé described the bird in 1854 in the Revue et Magasin de Zoologie as Conurus molinae, named for Juan Ignacio Molina, the Chilean Jesuit naturalist. The type locality was given as Chile and Bolivia and later restricted to Bolivia. Six subspecies are recognized across the range. The species was almost unknown in aviculture before the 1970s. Large shipments reached the United States in the 1980s, and among the wild-caught birds were odd individuals sold as a separate species, the yellow-sided conure. Breeders later showed that yellow-sided was a sex-linked opaline mutation of the green cheek, the first color mutation established in American aviculture for this bird. A cinnamon form arrived about the same time, filed at first as fallow, and the California breeder Steve Garvin crossed the two to produce the pineapple. American opalines went out to Europe and South Africa in the late 1980s and early 1990s. A pineapple is not a different bird. Size, temperament, and day-to-day care are the same as any other green cheek. Only the plumage changes.",
     },
+    quiz: [
+      {
+        question: "How much of a green cheek conure's diet should be pellets?",
+        options: ["About 25%", "Around half seeds, half pellets", "75 to 80%", "Pellets only, no fresh food"],
+        correctIndex: 2,
+      },
+      {
+        question: "What is the floor cage size for one adult green cheek conure?",
+        options: ["18x18x18 inches", "24x24x30 inches", "36x24x48 inches", "A tall narrow cage is better than a wide one"],
+        correctIndex: 1,
+      },
+    ],
   },
   {
     id: "lovebird", name: "Lovebird", scientific: "Agapornis spp.",
