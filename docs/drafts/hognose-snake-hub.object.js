@@ -1,0 +1,40 @@
+// Splice into src/lib/data/guides/snakes.js at id: "hognose-snake". Legal not touched. No cost row until the cost guide is checked.
+{
+    id: "hognose-snake",
+    name: "Western Hognose Snake",
+    emoji: "🐍",
+    difficulty: "Intermediate",
+    petType: "Snakes",
+    image: "/assets/guides/hognose-snake.jpg",
+    tagline: "Dry, deep substrate, and the hood is a bluff.",
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure", value: "Males 20-gallon equivalent. Females 40-gallon equivalent. Floor space over height.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Heat", value: "Basking 90 to 95F. Cool side 70 to 75F. Night about 75 to 78F. Halogen over the substrate on a thermostat. Not a heat mat as the main heat.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Humidity", value: "30 to 50% ambient. One humid hide for sheds. Do not mist the whole tank.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Substrate", value: "3 to 6 inches, dry, diggable. About 70% soil to 30% sand. Feed off the substrate.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Light", value: "Diurnal. 12-hour cycle. Low-output linear T5 UVB.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Handling", value: "The hood and hiss are a bluff. Wait it out. Lift from mid-body, not the face. Wash prey scent off first.", source: "hognose-snake-handling-guide" },
+        { label: "Venom", value: "Rear-fanged. Not medically significant for a healthy person. A documented bite took months to heal locally. Still see a doctor if skin breaks.", source: "hognose-snake-handling-guide" },
+      ],
+    },
+    emergencyCard: {
+      source: "hognose-snake-health-issues-guide",
+      callNow: ["Open-mouth breathing", "Scale rot on a damp setup", "A bite that breaks skin", "Refusing food past a normal fast"],
+      vetLine: "A reptile vet. A whole-tank mist is how this species gets a respiratory infection. Keep the room dry and the humid hide wet.",
+    },
+    routes: [
+      { slug: "hognose-snake-tank-setup-guide", line: "Dry tank, 3 to 6 inches of substrate, halogen basking, one humid hide." },
+      { slug: "hognose-snake-handling-guide", line: "Wait out the hood. Mid-body lift. Wash your hands." },
+      { slug: "hognose-snake-health-issues-guide", line: "Respiratory infection and scale rot from a damp tank." },
+      { slug: "hognose-snake-feeding-guide", line: "Feed off the substrate. Toads in the wild, rodents in the tank." },
+    ],
+    buyList: ["20 or 40 gallon-class enclosure", "Halogen basking bulb on a thermostat", "Digital hygrometer", "3 to 6 inches of dry soil mix", "Humid hide", "Low-output T5 UVB"],
+    faqs: [
+      { q: "What size enclosure does a Western hognose need?", a: "Males 20-gallon equivalent. Females 40." },
+      { q: "Should I mist the tank?", a: "No. 30 to 50% ambient. Moisture only in the humid hide." },
+      { q: "Is the hood a bite?", a: "No. It is a bluff. Wait it out." },
+    ],
+  },

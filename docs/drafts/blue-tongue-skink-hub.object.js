@@ -1,0 +1,40 @@
+// Splice into src/lib/data/guides/lizards.js at id: "blue-tongue-skink". Legal not touched. No cost row until the cost guide is checked.
+{
+    id: "blue-tongue-skink",
+    name: "Blue-Tongued Skink",
+    emoji: "🦎",
+    difficulty: "Beginner/Intermediate",
+    petType: "Lizards",
+    image: "/assets/guides/blue-tongue-skink.jpg",
+    tagline: "4x2x2. Humidity splits the two types.",
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure", value: "4x2x2 feet adult minimum. Front-opening PVC holds humidity better than glass.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Basking", value: "Northern 105 to 115F. Indonesian 100 to 105F. Cool side 70 to 80F. Nights above about 70F.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Humidity", value: "Northern about 40%. Indonesian 60 to 80%.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Substrate", value: "4 to 6 inches. Northern about 60% topsoil 40% play sand. Indonesian mix holds more moisture.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "UVB", value: "T5 HO 5 to 12%, at least half the warm side, no closer than 10 inches. Replace every 12 months.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Handling", value: "Wait 2 to 3 weeks. Come in from the side. Support the body. Never the tail. The blue tongue is a bluff.", source: "blue-tongue-skink-handling-guide" },
+        { label: "Origin", value: "Captive-bred Northern tames faster. Wild-caught Indonesian starts defensive. Quarantine and a fecal if origin is uncertain.", source: "blue-tongue-skink-handling-guide" },
+      ],
+    },
+    emergencyCard: {
+      source: "blue-tongue-skink-health-issues-guide",
+      callNow: ["Open-mouth breathing", "Not eating after the settle window", "Soft jaw or swollen limbs", "A dropped tail from a grab"],
+      vetLine: "A reptile vet. Indonesian or unknown-origin animals get a fecal before they join the house collection.",
+    },
+    routes: [
+      { slug: "blue-tongue-skink-tank-setup-guide", line: "4x2x2, Northern 40% humidity, Indonesian 60 to 80%, UVB required." },
+      { slug: "blue-tongue-skink-handling-guide", line: "Wait 2 to 3 weeks. Side approach. Never the tail." },
+      { slug: "blue-tongue-skink-health-issues-guide", line: "Parasites on wild-caught animals, MBD, respiratory infection." },
+      { slug: "blue-tongue-skink-feeding-guide", line: "Omnivore mix. The settle window before you start handling." },
+    ],
+    buyList: ["4x2x2 PVC enclosure", "T5 HO UVB", "Basking lamp on a thermostat", "4 to 6 inches of soil mix", "Hide and a soak dish", "Hygrometer"],
+    faqs: [
+      { q: "What size enclosure does a blue-tongued skink need?", a: "4x2x2 feet." },
+      { q: "What's the biggest care difference between Northern and Indonesian?", a: "Humidity. About 40% versus 60 to 80%." },
+      { q: "How soon can I handle a new one?", a: "2 to 3 weeks, after it is eating." },
+    ],
+  },
