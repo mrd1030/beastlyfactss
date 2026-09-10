@@ -43,6 +43,9 @@ function uniqueValuesExcluding(animals, key, exclude) {
  * siblings first (harder, more relevant), falling back to the full animal
  * pool when a category's values are too repetitive (e.g. domesticated breeds
  * that all share "Fully domesticated" / "Not applicable").
+ *
+ * If `animal.quiz` is an array of { question, options, correctIndex }, those
+ * care questions are appended after the bio set.
  */
 export function generateAnimalQuiz(animal, questionCount = 4) {
   if (!animal?.bio) return [];
@@ -76,6 +79,19 @@ export function generateAnimalQuiz(animal, questionCount = 4) {
       correctIndex: rotated.indexOf(correct),
     });
   }
+
+  const extras = Array.isArray(animal.quiz) ? animal.quiz : [];
+  extras.forEach((extra, i) => {
+    if (!extra?.question || !Array.isArray(extra.options) || extra.options.length < 2) return;
+    const correctIndex = Number.isInteger(extra.correctIndex) ? extra.correctIndex : 0;
+    if (correctIndex < 0 || correctIndex >= extra.options.length) return;
+    questions.push({
+      id: extra.id || `${animal.id}-extra-${i}`,
+      question: extra.question,
+      options: extra.options,
+      correctIndex,
+    });
+  });
 
   return questions;
 }
