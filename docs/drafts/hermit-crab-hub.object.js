@@ -1,0 +1,41 @@
+// Splice into src/lib/data/guides/invertebrates.js at id: "hermit-crab". Legal not touched.
+{
+    id: "hermit-crab",
+    name: "Hermit Crab",
+    emoji: "🦀",
+    difficulty: "Intermediate",
+    petType: "Invertebrates",
+    image: "/assets/guides/hermit-crab.jpg",
+    tagline: "A land crab that needs a humid tank, extra shells, and no vet on call.",
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Company", value: "They live in groups. One crab is a lonely crab." },
+        { label: "Enclosure", value: "A glass tank they cannot climb out of. Bigger than the pet-store kit." },
+        { label: "Substrate", value: "Deep enough to bury for a molt. Sand and coconut fiber, kept damp." },
+        { label: "Humidity", value: "High. A dry tank is how they die after a molt." },
+        { label: "Water", value: "Two dishes: dechlorinated fresh water and marine salt water. Both shallow or with an exit." },
+        { label: "Shells", value: "Extra shells in the tank, several sizes. They will not stay in the one they arrived in." },
+        { label: "Budget", value: "The gear list on this site is about $85 to $300. The crab is cheap. The tank is the cost.", source: "hermit-crab-cost-guide" },
+        { label: "Lifespan", value: "10 to 20 years in captivity when the tank is right.", source: "hermit-crab-cost-guide" },
+      ],
+    },
+    emergencyCard: {
+      headline: "Fix the tank tonight",
+      source: "hermit-crab-health-issues-guide",
+      callNow: ["Dropped shell and no extra shells in the tank", "Dry substrate during a bury", "No salt water or no fresh water", "A crab that came out of a molt looking collapsed"],
+      vetLine: "Most towns have no vet who will see a hermit crab. The fix is humidity, two water dishes, and extra shells. Do that tonight.",
+    },
+    routes: [
+      { slug: "hermit-crab-cost-guide", line: "$85 to $300 for the gear list, and why 10 to 20 years is the real clock." },
+      { slug: "hermit-crab-tank-setup-guide", line: "Deep damp substrate, two waters, extra shells." },
+      { slug: "hermit-crab-feeding-guide", line: "What goes in the bowl and what never does." },
+    ],
+    buyList: ["Glass tank with a secure lid", "Sand and coconut fiber deep enough to bury", "Two water dishes", "Marine salt", "Extra shells in several sizes", "Hides and climbing", "Digital hygrometer"],
+    faqs: [
+      { q: "Can I keep one hermit crab?", a: "No. They live in groups." },
+      { q: "Do they need a vet?", a: "Almost never available. Fix the tank. Humidity, water, shells." },
+      { q: "How long do they live?", a: "10 to 20 years in a correct tank. The pet-store kit does not get you there." },
+    ],
+  },
