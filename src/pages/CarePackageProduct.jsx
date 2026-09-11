@@ -9,6 +9,7 @@ import CarePackagesNav from '@/components/shared/CarePackagesNav';
 import CarePackageBuyButton from '@/components/shared/CarePackageBuyButton';
 import CarePackageCard from '@/components/shared/CarePackageCard';
 import CarePackagePreviewCarousel from '@/components/shared/CarePackagePreviewCarousel';
+import CarePackageComingSoon from '@/pages/CarePackageComingSoon';
 import { useCarePackageReveal } from '@/components/shared/CarePackageReveal';
 import PageNotFound from '@/lib/PageNotFound';
 import '@/styles/care-package-product.css';
@@ -48,6 +49,13 @@ export default function CarePackageProduct() {
   const pkg = CARE_PACKAGES.find(p => p.id === packageId);
   const rootRef = useRef(null);
   useCarePackageReveal(rootRef);
+
+  // A package that is announced but not built gets the same URL and a
+  // different page, so the link in a newsletter or a card never has to change
+  // when it goes on sale. Anything else with no storefront here is still a 404.
+  if (pkg?.storefront === 'soon') {
+    return <CarePackageComingSoon pkg={pkg} />;
+  }
 
   if (!pkg || pkg.storefront !== 'stripe') {
     return <PageNotFound />;
