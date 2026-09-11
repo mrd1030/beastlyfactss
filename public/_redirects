@@ -260,3 +260,45 @@
 /critter-digest /blog/ 301
 /critter-digest/ /blog/ 301
 
+
+# Dog and cat breed guides carry a species-prefixed id (dog-/cat-) while their
+# encyclopedia entry does not. The block further up covers the ones Google
+# found live; these seven are the same mismatch and had no rule.
+
+/guides/american-shorthair /guides/cat-american-shorthair/ 301
+/guides/american-shorthair/ /guides/cat-american-shorthair/ 301
+/guides/scottish-fold /guides/cat-scottish-fold/ 301
+/guides/scottish-fold/ /guides/cat-scottish-fold/ 301
+/guides/sphynx /guides/cat-sphynx/ 301
+/guides/sphynx/ /guides/cat-sphynx/ 301
+/guides/beagle /guides/dog-beagle/ 301
+/guides/beagle/ /guides/dog-beagle/ 301
+/guides/bulldog /guides/dog-bulldog/ 301
+/guides/bulldog/ /guides/dog-bulldog/ 301
+/guides/dachshund /guides/dog-dachshund/ 301
+/guides/dachshund/ /guides/dog-dachshund/ 301
+/guides/rottweiler /guides/dog-rottweiler/ 301
+/guides/rottweiler/ /guides/dog-rottweiler/ 301
+
+# The guide id is a short form, but the animal's full name is what a person
+# types and what an inbound link uses. Each left side was confirmed 404 live
+# and each target confirmed 200 before these were added.
+
+/guides/green-cheek-conure /guides/conure/ 301
+/guides/green-cheek-conure/ /guides/conure/ 301
+/guides/african-fat-tailed-gecko /guides/african-fat-tail/ 301
+/guides/african-fat-tailed-gecko/ /guides/african-fat-tail/ 301
+/guides/giant-african-millipede /guides/millipede/ 301
+/guides/giant-african-millipede/ /guides/millipede/ 301
+/guides/madagascar-hissing-cockroach /guides/hissing-cockroach/ 301
+/guides/madagascar-hissing-cockroach/ /guides/hissing-cockroach/ 301
+/guides/argentine-black-and-white-tegu /guides/tegu/ 301
+/guides/argentine-black-and-white-tegu/ /guides/tegu/ 301
+/guides/jacksons-chameleon /guides/chameleon/ 301
+/guides/jacksons-chameleon/ /guides/chameleon/ 301
+/guides/fancy-mouse /guides/mouse/ 301
+/guides/fancy-mouse/ /guides/mouse/ 301
+/guides/fancy-rat /guides/rat/ 301
+/guides/fancy-rat/ /guides/rat/ 301
+/guides/budgie-parakeet /guides/budgie/ 301
+/guides/budgie-parakeet/ /guides/budgie/ 301
