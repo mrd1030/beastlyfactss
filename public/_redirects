@@ -260,15 +260,3 @@
 /critter-digest /blog/ 301
 /critter-digest/ /blog/ 301
 
-# /Critter and /Critter/ are not and never were real paths: nothing on the site
-# links to them (the "Back to Critter Digest" control on an article is a
-# <button onClick>, no href), and they already return a hard 404. Ahrefs reports
-# the URL ranking for a handful of unrelated keywords, most likely a leftover
-# from the era when the wildcard SPA-fallback rules above served the homepage's
-# HTML for any unmatched path. A 301 costs nothing and salvages whatever signal
-# is still attached, rather than letting it die on a 404. Cloudflare matches
-# these case-sensitively, hence the capitalized forms alongside /critter-digest.
-/Critter /blog/ 301
-/Critter/ /blog/ 301
-/critter /blog/ 301
-/critter/ /blog/ 301
