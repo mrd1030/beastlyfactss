@@ -484,6 +484,40 @@ export const CARE_PACKAGE_THEMES = {
     patternSize: '22px 22px',
   },
 
+  // Rainforest canopy rather than the blackwater used for the fish and the
+  // axolotl: a White's tree frog is arboreal and the wrong habitat reads as a
+  // mistake to anyone who keeps one. Greens off the animal itself, with the
+  // pale gold of its eye as the accent so the palette is not green on green.
+  'whites-tree-frog': {
+    light: {
+      'hero-from': '#10281c', 'hero-via': '#18402c', 'hero-to': '#24593c',
+      'hero-ink': '#f1f7f2', 'hero-eyebrow': '#ffd98a',
+      'hero-button-bg': '#f2c265', 'hero-button-ink': '#10281c',
+      glow: '242, 194, 101',
+      ground: '#f2f7f3', ink: '#0c1f16', muted: '#3f5a4c',
+      accent: '#2f7d52', 'accent-strong': '#24603f', 'accent-ink': '#ffffff',
+      'accent-soft': '#e6f2ea', 'accent-soft-border': '#c4e0d0',
+      'card-bg': '#ffffff', 'card-border': '#dbe8e0',
+      'panel-bg': '#10281c', 'panel-ink': '#f1f7f2', 'panel-muted': '#c2d6c9',
+      'cta-bg': '#f2c265', 'cta-ink': '#10281c',
+    },
+    dark: {
+      'hero-from': '#081410', 'hero-via': '#10281c', 'hero-to': '#18402c',
+      'hero-ink': '#f1f7f2', 'hero-eyebrow': '#ffd98a',
+      'hero-button-bg': '#f2c265', 'hero-button-ink': '#081410',
+      glow: '242, 194, 101',
+      ground: '#081410', ink: '#e4efe7', muted: '#9db8a8',
+      accent: '#6dbd8c', 'accent-strong': '#8ed2a7', 'accent-ink': '#081410',
+      'accent-soft': '#10281c', 'accent-soft-border': '#24593c',
+      'card-bg': '#10281c', 'card-border': '#24593c',
+      'panel-bg': '#040c09', 'panel-ink': '#f1f7f2', 'panel-muted': '#b6cdbf',
+      'cta-bg': '#f2c265', 'cta-ink': '#081410',
+    },
+    motion: { eyebrowIcon: '🐸', eyebrowMotion: 'cp-sway 3.2s ease-in-out infinite', coverMotion: 'cp-rise 4s ease-in-out infinite' },
+    pattern: 'radial-gradient(circle at 24px 24px, transparent 15px, rgba(242, 194, 101, 0.08) 16px, rgba(242, 194, 101, 0.08) 18px, transparent 19px)',
+    patternSize: '48px 48px',
+  },
+
 };
 
 const FALLBACK_ID = 'hamster';

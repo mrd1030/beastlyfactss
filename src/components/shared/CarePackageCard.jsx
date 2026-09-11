@@ -40,8 +40,13 @@ export default function CarePackageCard({ pkg }) {
     '--t-glow': theme.light.glow,
   };
 
+  // A package with storefront: 'soon' has a real landing page at its eventual
+  // product URL, so the card points there rather than at the free guide. One
+  // with no page at all still sends people somewhere useful.
+  const hasLandingPage = pkg.storefront === 'soon';
+
   const stretched = 'after:absolute after:inset-0 after:content-[""]';
-  const title = isStripe ? (
+  const title = isStripe || hasLandingPage ? (
     <Link to={productHref} className={stretched}>{pkg.name}</Link>
   ) : isComingSoon ? (
     <Link to={guideHref} className={stretched}>{pkg.name}</Link>

@@ -223,7 +223,7 @@ const STATIC_ROUTES = [
   // encyclopedia and guide ids above are: a package switched to Stripe would
   // otherwise have a live route that never gets a static file, which on
   // Cloudflare means a real 404 for every crawler on a page we want indexed.
-  ...CARE_PACKAGES.filter(p => p.storefront === 'stripe').map(p => `/care-packages/${p.id}`),
+  ...CARE_PACKAGES.filter(p => p.storefront === 'stripe' || p.storefront === 'soon').map(p => `/care-packages/${p.id}`),
   // Both noindex,nofollow, and both stay out of the sitemap, but prerendered
   // for exactly the reason /pack is (see the note above it): with no static
   // file Cloudflare falls through to 404.html, which paints the 404 page for
