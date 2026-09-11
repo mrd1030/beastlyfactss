@@ -80,6 +80,40 @@ webhook signing secret and its own products and prices, all isolated from live.
 Nothing else needs connecting: `stripePriceIdSandbox` above is the Sandbox
 price, and it is correct as recorded.
 
+### Live products and prices
+
+The whole lineup, on `acct_1Tbn669qtY3Ob6va` in **live mode**. All 14 are
+$8.99 USD, one time, and every product carries `metadata.package_id` matching
+the catalog id and a `url` pointing at its product page.
+
+| Package | Product | Price |
+| --- | --- | --- |
+| `bearded-dragon` | `prod_VEqtMFpNa8cod8` | `price_1UENBp9qtY3Ob6vamuXMA6sD` |
+| `leopard-gecko` | `prod_VEqtyweAFt4reS` | `price_1UENBs9qtY3Ob6vaOPtdFLAt` |
+| `goldfish` | `prod_VEqtVux2KGkwlY` | `price_1UENBu9qtY3Ob6vaU6oDSTyD` |
+| `axolotl` | `prod_VEqttFYQ981JPu` | `price_1UENBw9qtY3Ob6vaRVFVm391` |
+| `budgie` | `prod_VEqt4npeCcYTFf` | `price_1UENBy9qtY3Ob6vaLv2cNMGc` |
+| `crested-gecko` | `prod_VEqtOzpXmQAxHe` | `price_1UENC19qtY3Ob6vasiNmiLfX` |
+| `guinea-pig` | `prod_VEqtAfxFpPH53j` | `price_1UENC39qtY3Ob6vaks244qto` |
+| `lovebird` | `prod_VEqtuqHimmkkDw` | `price_1UENC89qtY3Ob6vav2ARp6wq` |
+| `russian-tortoise` | `prod_VEqt8Ajxtr7s3r` | `price_1UENCB9qtY3Ob6vaTvVBMark` |
+| `ball-python` | `prod_VEquzX6A9AWISg` | `price_1UENCE9qtY3Ob6vajtYqePnI` |
+| `betta-fish` | `prod_VEquJ9HcocDbFR` | `price_1UENCG9qtY3Ob6vaxKLgeXwO` |
+| `hamster` | `prod_VEqtWIdVnfJBxX` | `price_1UENBJ9qtY3Ob6vaJcPpuniM` |
+| `rabbit` | `prod_VEqumd4P1LHeHh` | `price_1UENCH9qtY3Ob6vaaasv4qjw` |
+| `tarantula` | `prod_VEquBB2Y1okeui` | `price_1UENCK9qtY3Ob6vafJILVYIP` |
+
+These ids are in `stripePriceId` in the catalog and in `priceIdLive` in the
+Worker's `CARE_PACKAGE_STORE`. All 14 packages now carry
+`storefront: 'stripe'`, so each one has a buy button pointing at the checkout
+route, a product page, a prerender entry and a sitemap entry. The one thing a
+live price does not do is put the PDF in the bucket: a package whose
+`care-packages/<id>.pdf` is missing will take money and then fail at the
+signed URL, so the upload has to land before the flip ships.
+
+Only the Hamster was ever sold in the Sandbox, so it is the only package with
+both a sandbox and a live price.
+
 ### The webhook endpoint to register
 
 Stripe Dashboard, in **test mode**, Developers -> Webhooks -> Add endpoint:
@@ -93,6 +127,24 @@ Stripe Dashboard, in **test mode**, Developers -> Webhooks -> Add endpoint:
 The signing secret is per endpoint, not per account, so a live endpoint added
 later has a different one and both have to be held by whichever deployment
 serves them.
+
+### The live webhook endpoint
+
+Already created on the live account, `we_1UENSB9qtY3Ob6vaL6uDHdKY`, enabled,
+same URL and same two events as the test-mode one above.
+
+Its signing secret is in the Stripe Dashboard with the account in **live
+mode**: Developers -> Webhooks -> the
+`https://beastlyfacts.com/api/care-packages/webhook` endpoint -> **Signing
+secret** -> Reveal. That `whsec_...` is what `STRIPE_WEBHOOK_SECRET` has to
+hold on any deployment running a `sk_live_` key. Rotating it in the dashboard
+invalidates the old one, so the Cloudflare secret has to be updated in the same
+sitting.
+
+Until that secret and a live `STRIPE_SECRET_KEY` are both in Cloudflare, live
+checkout either does not start or completes without ever writing a purchase
+row, which means a paid buyer with no download. Do not merge the storefront
+flip to main before both are set.
 
 ## Supabase
 
@@ -292,11 +344,17 @@ reads like signing in rather than registering, and to add `{{ .Token }}` to it
 as well as to Magic Link. The library tries a typed code as type `email` and
 falls back to `signup`, so a code from either template works.
 
-## Phase 2, not started: product pages in the landing page style
+## Phase 2: product pages in the landing page style
 
-**The hamster is off sale until this is done.** `storefront: 'gumroad'` in
-`carePackages.js` is what holds it there. Phase 1 proved the plumbing; it did
-not produce a page worth selling through.
+**Built for the Hamster on 6 September 2026**, and it is back on sale in the
+Sandbox through the new page. The rest of the catalog follows the plan in
+`docs/SHOP_PLAN.md`. The pieces: `src/pages/CarePackageProduct.jsx` is the
+template, `src/lib/data/carePackageThemes.js` the per-package colors and
+motion, `src/lib/data/carePackageCopy.js` the per-package pitch,
+`src/styles/care-package-product.css` the one place the theme variables are
+consumed, and `scripts/render-care-package-previews.mjs` renders the carousel
+images to `public/assets/care-packages/<id>/`. The notes below were the brief
+it was built from and still apply to every package after it.
 
 `src/pages/CarePackageProduct.jsx` today is a competent spec sheet: cover,
 price, bullets, contents, buy button. The bar is set by the nine pages in

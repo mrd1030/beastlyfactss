@@ -1,0 +1,267 @@
+/* The landing-style product page at /care-packages/<id>/.
+ *
+ * Every color here is a --cp-* custom property set on the page wrapper by the
+ * <style> block CarePackageProduct renders from carePackageThemes.js. This
+ * file never names a color of its own except the rose "care-sheet roulette"
+ * card, which is the same on every package on purpose: the frustration is
+ * always red, only the answer takes the species' color.
+ *
+ * Imported by the page component, so Vite code-splits it with the page and
+ * the rest of the site never downloads it. */
+
+.cp-page {
+  background: var(--cp-ground);
+  color: var(--cp-ink);
+}
+
+.cp-muted { color: var(--cp-muted); }
+.cp-accent-text { color: var(--cp-accent-strong); }
+
+/* ---- hero ---------------------------------------------------------------- */
+
+.cp-hero {
+  position: relative;
+  overflow: hidden;
+  color: var(--cp-hero-ink);
+  background-image: linear-gradient(135deg, var(--cp-hero-from), var(--cp-hero-via), var(--cp-hero-to));
+}
+
+.cp-hero::before,
+.cp-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: var(--cp-pattern);
+  background-size: var(--cp-pattern-size);
+}
+
+.cp-hero-eyebrow { color: var(--cp-hero-eyebrow); }
+.cp-hero-eyebrow-icon { display: inline-block; }
+
+.cp-hero-link { color: var(--cp-hero-ink); opacity: 0.8; }
+.cp-hero-link:hover { opacity: 1; text-decoration: underline; }
+
+.cp-hero-btn {
+  background: var(--cp-hero-button-bg);
+  color: var(--cp-hero-button-ink);
+  box-shadow: 0 0 30px rgba(var(--cp-glow), 0.35);
+  animation: cp-pulse 2.6s ease-in-out infinite;
+}
+.cp-hero-btn:hover { transform: translateY(-2px); }
+
+/* The hero's book: the package's own cover page, tilted like a mockup, with a
+ * spine shadow down the left edge and the theme glow underneath. */
+.cp-book {
+  transform: rotate(2deg);
+  transition: transform 0.5s ease;
+  box-shadow:
+    inset 6px 0 10px -6px rgba(0, 0, 0, 0.45),
+    0 30px 60px -20px rgba(var(--cp-glow), 0.55),
+    0 14px 30px rgba(0, 0, 0, 0.35);
+}
+.cp-book:hover { transform: rotate(0deg); }
+
+.cp-edition-badge {
+  background: var(--cp-ground);
+  color: var(--cp-ink);
+}
+
+.cp-wave { color: var(--cp-ground); }
+
+/* ---- contrast pair ------------------------------------------------------- */
+
+.cp-roulette {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #4c0519;
+}
+.cp-roulette .cp-label { color: #e11d48; }
+.dark .cp-roulette {
+  background: rgba(76, 5, 25, 0.35);
+  border-color: rgba(159, 18, 57, 0.5);
+  color: #fecdd3;
+}
+.dark .cp-roulette .cp-label { color: #fb7185; }
+
+.cp-answers {
+  background: var(--cp-accent-soft);
+  border: 1px solid var(--cp-accent-soft-border);
+  color: var(--cp-ink);
+}
+.cp-answers .cp-label { color: var(--cp-accent-strong); }
+
+.cp-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ---- what's inside ------------------------------------------------------- */
+
+.cp-band { background: var(--cp-accent-soft); }
+
+.cp-card {
+  background: var(--cp-card-bg);
+  border: 1px solid var(--cp-card-border);
+}
+
+.cp-contents summary { cursor: pointer; list-style: none; }
+.cp-contents summary::-webkit-details-marker { display: none; }
+.cp-contents[open] .cp-contents-chevron { transform: rotate(180deg); }
+.cp-contents-chevron { transition: transform 0.2s ease; }
+.cp-bullet { background: var(--cp-accent); }
+
+/* ---- preview carousel ---------------------------------------------------- */
+
+.cp-track {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.cp-track::-webkit-scrollbar { display: none; }
+
+.cp-slide {
+  border: 1px solid var(--cp-card-border);
+  background: var(--cp-card-bg);
+}
+
+.cp-arrow {
+  background: var(--cp-card-bg);
+  color: var(--cp-ink);
+  border: 1px solid var(--cp-card-border);
+}
+.cp-arrow:hover { background: var(--cp-accent-soft); }
+
+.cp-zoom {
+  background: var(--cp-card-bg);
+  color: var(--cp-ink);
+  border: 1px solid var(--cp-card-border);
+}
+.cp-slide button:hover .cp-zoom,
+.cp-slide button:focus-visible .cp-zoom {
+  background: var(--cp-accent);
+  color: var(--cp-accent-ink);
+}
+
+.cp-dot { background: var(--cp-card-border); }
+.cp-dot.is-active { background: var(--cp-accent); }
+
+/* ---- who it's for -------------------------------------------------------- */
+
+.cp-panel {
+  position: relative;
+  overflow: hidden;
+  background: var(--cp-panel-bg);
+  color: var(--cp-panel-ink);
+}
+.cp-panel-muted { color: var(--cp-panel-muted); }
+
+/* ---- final CTA ----------------------------------------------------------- */
+
+.cp-cta-btn {
+  background: var(--cp-cta-bg);
+  color: var(--cp-cta-ink);
+  box-shadow: 0 0 30px rgba(var(--cp-glow), 0.35);
+  animation: cp-pulse 2.6s ease-in-out infinite;
+}
+.cp-cta-btn:hover { transform: translateY(-2px); }
+
+.cp-outline-btn {
+  background: var(--cp-card-bg);
+  color: var(--cp-ink);
+  border: 1px solid var(--cp-card-border);
+}
+.cp-outline-btn:hover { background: var(--cp-accent-soft); }
+
+.cp-rule { border-color: var(--cp-card-border); }
+
+/* ---- reveal on scroll ---------------------------------------------------- *
+ *
+ * Content starts visible. The page is prerendered and indexed, and an
+ * opacity: 0 section in the captured HTML is a blank page to a crawler. The
+ * hook in CarePackageReveal.jsx sets data-cp-anim on the wrapper only after
+ * mount, on a real client, and only after marking everything already on
+ * screen as in, so the first paint never flashes. */
+
+[data-cp-anim] .cp-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+[data-cp-anim] .cp-reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---- shared keyframes ---------------------------------------------------- *
+ *
+ * Each theme picks from these by name in carePackageThemes.js. Add a new one
+ * here rather than in a theme, so two species that want the same movement
+ * share one definition. */
+
+@keyframes cp-rise {
+  0%, 100% { transform: translateY(0) rotate(2deg); }
+  50% { transform: translateY(-6px) rotate(2deg); }
+}
+@keyframes cp-spin { to { transform: rotate(360deg); } }
+@keyframes cp-pulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(var(--cp-glow), 0.35); }
+  50% { box-shadow: 0 0 54px rgba(var(--cp-glow), 0.65); }
+}
+@keyframes cp-sway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+@keyframes cp-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes cp-drift {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+@keyframes cp-flutter {
+  0%, 100% { transform: rotate(-8deg) translateY(0); }
+  50% { transform: rotate(8deg) translateY(-3px); }
+}
+@keyframes cp-wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+@keyframes cp-nibble {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  75% { transform: translateX(2px); }
+}
+@keyframes cp-blink {
+  0%, 92%, 100% { transform: scaleY(1); }
+  96% { transform: scaleY(0.08); }
+}
+@keyframes cp-beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+}
+@keyframes cp-plod {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cp-hero-btn,
+  .cp-cta-btn,
+  .cp-hero-eyebrow-icon,
+  .cp-cover {
+    animation: none !important;
+  }
+  .cp-hero-btn:hover,
+  .cp-cta-btn:hover { transform: none; }
+  [data-cp-anim] .cp-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .cp-track { scroll-behavior: auto; }
+}

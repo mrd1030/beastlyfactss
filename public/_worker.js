@@ -618,24 +618,105 @@ async function notifySubscriber(env) {
 //   SUPABASE_URL                the project URL, same one the site uses
 //   SUPABASE_SERVICE_ROLE_KEY   secret, sb_secret_... - never in the bundle
 
-// Mirrors src/lib/data/carePackages.js for the entries with
-// storefront: 'stripe'. Kept in sync by hand for the reason above, the same
-// deal as ANIMAL_IMAGES: when a package is switched to Stripe, or its `version`
-// is bumped because a corrected edition was uploaded, change it in BOTH files.
+// Mirrors src/lib/data/carePackages.js. Kept in sync by hand for the reason
+// above, the same deal as ANIMAL_IMAGES: when a price id changes, or a
+// `version` is bumped because a corrected edition was uploaded, change it in
+// BOTH files.
 //
 // A package missing here cannot be bought even if the catalog says it can,
-// which is the safe direction for the two to disagree in.
+// which is the safe direction for the two to disagree in. All 14 are here and
+// all 14 carry storefront: 'stripe', so the two agree; a package added to the
+// catalog and forgotten here gets a clean 404 from checkout rather than a sale
+// nobody can fulfil.
 //
-// priceIdLive is empty until a package actually goes on sale on the live
-// Stripe account. checkout uses it when set and falls back to the sandbox id,
-// so a deployment holding a live secret key and a package with only a sandbox
-// id gets a clean Stripe error rather than a broken sale.
+// checkout prefers priceIdLive and falls back to priceIdSandbox, so a
+// deployment holding a live secret key and a package with only a sandbox id
+// gets a clean Stripe error rather than a broken sale. Only hamster was ever
+// sold in the Sandbox, so it is the only entry with both.
 const CARE_PACKAGE_STORE = {
+  'bearded-dragon': {
+    name: 'Bearded Dragon Care Package',
+    edition: '3.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENBp9qtY3Ob6vamuXMA6sD',
+  },
+  'leopard-gecko': {
+    name: 'Leopard Gecko Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENBs9qtY3Ob6vaOPtdFLAt',
+  },
+  goldfish: {
+    name: 'Goldfish Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENBu9qtY3Ob6vaU6oDSTyD',
+  },
+  axolotl: {
+    name: 'Axolotl Care Package',
+    edition: '2.2',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENBw9qtY3Ob6vaRVFVm391',
+  },
+  budgie: {
+    name: 'Budgie Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENBy9qtY3Ob6vaLv2cNMGc',
+  },
+  'crested-gecko': {
+    name: 'Crested Gecko Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENC19qtY3Ob6vasiNmiLfX',
+  },
+  'guinea-pig': {
+    name: 'Guinea Pig Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENC39qtY3Ob6vaks244qto',
+  },
+  lovebird: {
+    name: 'Lovebird Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENC89qtY3Ob6vav2ARp6wq',
+  },
+  'russian-tortoise': {
+    name: 'Russian Tortoise Care Package',
+    edition: '2.2',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENCB9qtY3Ob6vaTvVBMark',
+  },
+  'ball-python': {
+    name: 'Ball Python Care Package',
+    edition: '2.2',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENCE9qtY3Ob6vajtYqePnI',
+  },
+  'betta-fish': {
+    name: 'Betta Fish Care Package',
+    edition: '2.2',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENCG9qtY3Ob6vaxKLgeXwO',
+  },
   hamster: {
     name: 'Hamster Care Package',
-    edition: '2.2',
+    edition: '2.3',
     priceIdSandbox: 'price_1UC9Up9qtY3Ob6vac8xRLEu2',
-    priceIdLive: '',
+    priceIdLive: 'price_1UENBJ9qtY3Ob6vaJcPpuniM',
+  },
+  rabbit: {
+    name: 'Rabbit Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENCH9qtY3Ob6vaaasv4qjw',
+  },
+  tarantula: {
+    name: 'Tarantula Care Package',
+    edition: '2.3',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENCK9qtY3Ob6vafJILVYIP',
   },
 };
 
@@ -680,6 +761,12 @@ function hasSupabaseEnv(env) {
 async function handleCarePackageCheckout(request, env) {
   if (!env?.STRIPE_SECRET_KEY) return storeJson({ error: 'Checkout is not configured.' }, 503);
 
+  // Trimmed, because this value goes straight into a header and a secret pasted
+  // into a dashboard field very often arrives with a trailing newline. An
+  // invalid header value does not fail at Stripe, it fails when the Request is
+  // constructed, which is a thrown TypeError rather than a response.
+  const stripeKey = env.STRIPE_SECRET_KEY.trim();
+
   let body;
   try {
     body = await request.json();
@@ -722,14 +809,27 @@ async function handleCarePackageCheckout(request, env) {
     'payment_intent_data[description]': `${pkg.name} (PDF)`,
   });
 
-  const res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${env.STRIPE_SECRET_KEY}`,
-      'content-type': 'application/x-www-form-urlencoded',
-    },
-    body: form,
-  });
+  // Wrapped, because fetch rejects rather than resolves when the request cannot
+  // be built or sent at all: a malformed key, a header value the runtime
+  // refuses, a network failure reaching Stripe. An unhandled rejection here is
+  // not our 502 with a readable body, it is Cloudflare's own HTML error page,
+  // which the buy button cannot parse and nobody can diagnose from. Every
+  // failure that reaches a buyer should look the same and say the same thing.
+  let res;
+  try {
+    res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${stripeKey}`,
+        'content-type': 'application/x-www-form-urlencoded',
+      },
+      body: form,
+    });
+  } catch (err) {
+    console.error('Stripe checkout request could not be sent', err?.message || err);
+    return storeJson({ error: 'Could not start checkout. Please try again.' }, 502);
+  }
+
   const session = await res.json().catch(() => ({}));
 
   if (!res.ok || !session?.url) {

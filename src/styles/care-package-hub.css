@@ -1,0 +1,127 @@
+/* The care package hub at /care-packages/, the store at /care-packages/store/,
+ * and the cover tile the cards share. Site tokens, not a per-package theme:
+ * these pages hold every species at once, so the species colors appear only
+ * on the tiles. */
+
+/* ---- the cover tile on every card ---------------------------------------- *
+ *
+ * The card sets five custom properties from carePackageThemes.js: the three
+ * hero gradient stops, the glow (r, g, b) and the eyebrow color. Depth comes
+ * from three layers: a glow pooled behind the book, the hero gradient under
+ * it, and a vignette at the edges. The book itself separates from a dark
+ * tile with a thin light rim and a hard one-pixel edge, which is what the
+ * first version, cover on the bare gradient, was missing. */
+
+.cph-tile {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 5 / 4;
+  background-image:
+    radial-gradient(ellipse 62% 58% at 50% 56%, rgba(var(--t-glow), 0.55), rgba(var(--t-glow), 0) 72%),
+    linear-gradient(135deg, var(--t-from), var(--t-via), var(--t-to));
+}
+.cph-tile::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.14) 1.5px, transparent 2px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+.cph-tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.42);
+  pointer-events: none;
+}
+.cph-tile-book {
+  position: relative;
+  z-index: 1;
+  height: 88%;
+  width: auto;
+  border-radius: 4px;
+  transform: rotate(3deg);
+  transition: transform 0.4s ease;
+  outline: 2px solid rgba(255, 255, 255, 0.3);
+  outline-offset: -2px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.55),
+    inset 4px 0 8px -5px rgba(0, 0, 0, 0.5),
+    0 22px 34px -12px rgba(0, 0, 0, 0.7),
+    0 0 40px rgba(var(--t-glow), 0.35),
+    0 6px 14px rgba(0, 0, 0, 0.35);
+}
+.group:hover .cph-tile-book { transform: rotate(0deg) scale(1.03); }
+
+/* ---- the hub hero ---------------------------------------------------------- */
+
+.cph-hero {
+  position: relative;
+  overflow: hidden;
+  color: hsl(41 48% 93%);
+  background-image: linear-gradient(135deg, hsl(153 27% 10%), hsl(164 56% 19%), hsl(165 45% 27%));
+}
+.cph-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.08) 1.5px, transparent 2px);
+  background-size: 26px 26px;
+  pointer-events: none;
+}
+.cph-hero-muted { color: hsl(41 30% 78%); }
+.cph-hero-eyebrow { color: hsl(39 82% 67%); }
+.cph-wave { color: hsl(var(--background)); }
+
+.cph-hero-btn {
+  background: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+  box-shadow: 0 0 30px hsl(var(--secondary) / 0.35);
+}
+.cph-hero-btn:hover { transform: translateY(-2px); }
+.cph-hero-ghost {
+  border: 1px solid hsl(41 48% 93% / 0.35);
+  color: hsl(41 48% 93%);
+}
+.cph-hero-ghost:hover { background: hsl(41 48% 93% / 0.1); }
+
+/* The fan of covers: four books, each rotated a little more than the last,
+ * overlapping so they read as one shelf. */
+.cph-fan {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.cph-fan-book {
+  width: 26%;
+  border-radius: 5px;
+  box-shadow:
+    inset 5px 0 9px -6px rgba(0, 0, 0, 0.55),
+    0 24px 40px -16px rgba(0, 0, 0, 0.7),
+    0 8px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.4s ease;
+}
+.cph-fan-book:nth-child(1) { transform: rotate(-9deg) translateY(10px); margin-right: -3%; }
+.cph-fan-book:nth-child(2) { transform: rotate(-3deg); margin-right: -3%; z-index: 1; }
+.cph-fan-book:nth-child(3) { transform: rotate(3deg); margin-right: -3%; z-index: 2; }
+.cph-fan-book:nth-child(4) { transform: rotate(9deg) translateY(10px); z-index: 3; }
+.cph-fan-book:hover { transform: rotate(0deg) translateY(-8px); z-index: 5; }
+
+/* ---- store section headers ---------------------------------------------- */
+
+.cph-section-swatch {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cph-tile-book, .cph-fan-book, .cph-hero-btn { transition: none; }
+  .group:hover .cph-tile-book { transform: rotate(3deg); }
+  .cph-hero-btn:hover { transform: none; }
+}

@@ -11,7 +11,7 @@ import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import DeepDiveList from '@/components/shared/DeepDiveList';
-import { CARE_PACKAGES } from '@/lib/data/carePackages';
+import { CARE_PACKAGES, carePackageBookCover, isCarePackageBuyable } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import SaveButton from '@/components/shared/SaveButton';
@@ -134,8 +134,10 @@ export default function GuideDetail() {
     const card = guide.emergencyCard;
     const rows = guide.firstWeek?.rows || [];
     const buy = guide.buyList || [];
+    // The package's own product page, not the hub: every package sells here
+    // now, so the footer of a printed card can name the page that sells it.
     const packageLine = carePackage
-      ? `${esc(carePackage.name)}: ${carePackage.pages} pages, PDF, ${esc(carePackage.price)}${carePackage.status === 'live' ? '' : ', listing soon'}, at beastlyfacts.com/care-packages/`
+      ? `${esc(carePackage.name)}: ${carePackage.pages} pages, PDF, ${esc(carePackage.price)}${isCarePackageBuyable(carePackage) ? '' : ', listing soon'}, at beastlyfacts.com/care-packages/${esc(carePackage.id)}/`
       : '';
     const footer = `<div class="footer">Free from BeastlyFacts.com &bull; ${new Date().toLocaleDateString()}${packageLine ? ' &bull; ' + packageLine : ''}</div>`;
     const printHTML = `
@@ -611,10 +613,10 @@ export default function GuideDetail() {
                 <p className="text-xs font-body font-semibold text-secondary uppercase tracking-wide mb-3 flex items-center gap-1.5">
                   🖨️ Printable Guide
                 </p>
-                <Link to={carePackage.status === 'live' ? '/care-packages/store/' : '/care-packages/'} className="group block">
+                <Link to={carePackage.storefront === 'stripe' ? `/care-packages/${carePackage.id}/` : '/care-packages/store/'} className="group block">
                   <div className="flex items-start gap-3 mb-3">
                     <img
-                      src={carePackage.thumbnail || carePackage.cover}
+                      src={carePackage.thumbnail || carePackageBookCover(carePackage)}
                       alt={`${carePackage.name} cover`}
                       loading="lazy"
                       className="w-12 h-12 object-cover rounded-lg border border-border flex-shrink-0 bg-white"
@@ -624,12 +626,12 @@ export default function GuideDetail() {
                         {carePackage.name}
                       </p>
                       <p className="text-xs text-muted-foreground font-body mt-0.5">
-                        {`${carePackage.pages} pages · PDF · ${carePackage.price}${carePackage.status === 'live' ? '' : ' · listing soon'}`}
+                        {`${carePackage.pages} pages · PDF · ${carePackage.price}${isCarePackageBuyable(carePackage) ? '' : ' · listing soon'}`}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-1 text-xs font-body font-semibold text-secondary">
-                    {carePackage.status === 'live' ? 'Get the printable PDF' : 'See all care packages'} <ChevronRight className="w-3.5 h-3.5" />
+                    {isCarePackageBuyable(carePackage) ? 'Get the printable PDF' : 'See all care packages'} <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
               </div>

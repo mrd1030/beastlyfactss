@@ -10,7 +10,11 @@ import { startCarePackageCheckout } from '@/lib/careCheckout';
 // A button, not a link: there is no URL to point at until the Function has
 // created a session, and creating one on hover or on a crawler's fetch would
 // mean a Stripe session per crawl.
-export default function CarePackageBuyButton({ pkg, className = '', label }) {
+//
+// appearance: 'default' is the site's secondary button, for the store card.
+// 'bare' applies only the layout classes and leaves every color to className,
+// which is how the themed product page paints it in the package's own palette.
+export default function CarePackageBuyButton({ pkg, className = '', label, appearance = 'default' }) {
   const [busy, setBusy] = useState(false);
 
   const handleClick = async () => {
@@ -33,7 +37,11 @@ export default function CarePackageBuyButton({ pkg, className = '', label }) {
       type="button"
       onClick={handleClick}
       disabled={busy}
-      className={`inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-body font-bold text-sm hover:opacity-90 transition-opacity disabled:opacity-60 ${className}`}
+      className={
+        appearance === 'bare'
+          ? `inline-flex items-center justify-center gap-2 rounded-full font-body font-bold disabled:opacity-60 ${className}`
+          : `inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-body font-bold text-sm hover:opacity-90 transition-opacity disabled:opacity-60 ${className}`
+      }
     >
       {busy ? (
         <>
