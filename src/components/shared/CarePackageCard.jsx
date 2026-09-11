@@ -78,7 +78,11 @@ export default function CarePackageCard({ pkg }) {
         </h3>
         {hook && <p className="text-sm text-foreground/80 font-body leading-snug line-clamp-2">{hook}</p>}
         <p className="text-xs text-muted-foreground font-body">
-          {`${pkg.pages} pages · PDF${pkg.version ? ` · edition ${pkg.version}` : ''}`}
+          {/* A package that is announced but not built has no page count and no
+              edition, and "undefined pages" is worse than saying nothing. */}
+          {pkg.pages
+            ? `${pkg.pages} pages · PDF${pkg.version ? ` · edition ${pkg.version}` : ''}`
+            : 'Printable PDF · in progress'}
         </p>
         <div className="mt-auto pt-2 flex items-center justify-between gap-3">
           {isStripe ? (

@@ -1263,6 +1263,30 @@ export const CARE_PACKAGES = [
       },
     ],
   },
+  {
+    id: 'whites-tree-frog',
+    animal: "White's Tree Frog",
+    name: "White's Tree Frog Care Package",
+    badge: 'Amphibian',
+    emoji: '🐸',
+    status: 'coming-soon',
+    // Announced, not written. storefront: 'soon' gives it a landing page at
+    // /care-packages/whites-tree-frog/ with no buy button and no claims a
+    // missing PDF cannot back. That is why there is no pages, version,
+    // samplePages or contents here: every one of those describes a file that
+    // does not exist, and a card that prints "undefined pages" is worse than
+    // one that says nothing. When the package is built, this becomes 'stripe'
+    // with a price id and those fields filled in, and the URL does not change.
+    storefront: 'soon',
+    price: '$8.99',
+    cover: '/assets/guides/whites-tree-frog.jpg',
+    blurb: 'In progress. The printable manual for the frog whose signature risk is being fed too well, with the humidity that dips instead of sitting high, the water that is safe to mist with, and obesity read off the tympanum rather than the waistline.',
+    bullets: [
+      'Housing and the vertical 18x18x24 minimum, the temperature gradient, the humidity cycle, substrate, UVB, and the water that is safe to mist with',
+      'Health section with obesity as the signature risk, chytridiomycosis, red-leg syndrome, bacterial and skin infections, and metabolic bone disease',
+      'Feeding by size and age, handling with plain water and no soap, group housing by size, and the printable owner tools the rest of the series carries',
+    ],
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -1298,5 +1322,9 @@ export function isCarePackageBuyable(pkg) {
 // scripts/render-care-package-previews.mjs. Portrait, letter aspect. Every
 // package in the catalog has one.
 export function carePackageBookCover(pkg) {
+  // Except a package that has not been built. There is no cover page to render
+  // when there is no PDF, so it falls back to the guide hero rather than
+  // pointing at a file that 404s on every card that shows it.
+  if (pkg.storefront === 'soon') return pkg.cover;
   return `/assets/care-packages/${pkg.id}/cover.jpg`;
 }
