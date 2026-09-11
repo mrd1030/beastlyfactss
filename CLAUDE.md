@@ -17,6 +17,7 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 - Cloud sessions lose unpushed commits when the session's machine is reclaimed, so push branch work before wrapping up.
 - Bundle related changes into fewer commits when it makes sense.
 - Don't ask for permission before acting on clear instructions.
+- All times are US Eastern unless I say otherwise. Say "12:38 Eastern", not "16:38 UTC". This covers everything you tell me and everything I tell you: scheduled check-ins, deploy windows, log timestamps you quote back, "come back in an hour". Cloud sessions run on UTC, so convert before speaking, and check whether Eastern is on EDT or EST rather than assuming an offset. Where a raw UTC value matters, give Eastern first and the UTC in parentheses.
 
 ## Writing & Content Rules
 - The full consolidated rulebook is docs/RULES.md. Read it before writing or editing content. The rules below are the non-negotiables.
