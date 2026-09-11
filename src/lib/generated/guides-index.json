@@ -712,7 +712,7 @@
       "tagline": "A six foot arboreal herbivore sold as a six inch hatchling!"
     },
     {
-      "id": "chameleon",
+      "id": "jacksons-chameleon",
       "name": "Jackson's Chameleon",
       "emoji": "🦎",
       "difficulty": "Advanced",
@@ -907,7 +907,7 @@
       "difficulty": "Intermediate",
       "petType": "Snakes",
       "image": "/assets/guides/hognose-snake.jpg",
-      "tagline": "The drama queen of snakes: all bluff and zero bite!"
+      "tagline": "The drama queen of snakes: the whole display is bluff!"
     },
     {
       "id": "milk-snake",

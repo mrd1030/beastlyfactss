@@ -667,12 +667,12 @@
       "image": "/assets/guides/green-iguana.jpg"
     },
     {
-      "id": "chameleon-jackson",
+      "id": "jacksons-chameleon",
       "name": "Jackson's Chameleon",
       "emoji": "🦎",
       "category": "Lizards",
       "difficulty": "Advanced",
-      "guideId": "chameleon",
+      "guideId": "jacksons-chameleon",
       "image": "/assets/guides/chameleon.jpg"
     },
     {

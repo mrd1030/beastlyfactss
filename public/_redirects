@@ -170,8 +170,8 @@
 /guides/border-collie/ /guides/dog-border-collie/ 301
 /guides/siberian-husky /guides/dog-siberian-husky/ 301
 /guides/siberian-husky/ /guides/dog-siberian-husky/ 301
-/guides/chameleon-jackson /guides/chameleon/ 301
-/guides/chameleon-jackson/ /guides/chameleon/ 301
+/guides/chameleon-jackson /guides/jacksons-chameleon/ 301
+/guides/chameleon-jackson/ /guides/jacksons-chameleon/ 301
 /guides/kingsnake /guides/california-kingsnake/ 301
 /guides/kingsnake/ /guides/california-kingsnake/ 301
 
@@ -294,11 +294,20 @@
 /guides/madagascar-hissing-cockroach/ /guides/hissing-cockroach/ 301
 /guides/argentine-black-and-white-tegu /guides/tegu/ 301
 /guides/argentine-black-and-white-tegu/ /guides/tegu/ 301
-/guides/jacksons-chameleon /guides/chameleon/ 301
-/guides/jacksons-chameleon/ /guides/chameleon/ 301
 /guides/fancy-mouse /guides/mouse/ 301
 /guides/fancy-mouse/ /guides/mouse/ 301
 /guides/fancy-rat /guides/rat/ 301
 /guides/fancy-rat/ /guides/rat/ 301
 /guides/budgie-parakeet /guides/budgie/ 301
 /guides/budgie-parakeet/ /guides/budgie/ 301
+
+# Jackson's Chameleon held the bare id "chameleon" while its own articles, its
+# encyclopedia NAME_FIXES entry and the veiled chameleon guide all used the
+# full form. That left the genus name pointing at one species, which blocks a
+# second chameleon from having a sensible spot. Guide and encyclopedia ids are
+# now both jacksons-chameleon, matching veiled-chameleon and the article slugs.
+# Both old URLs were live 200s, so both 301 to the new id.
+/guides/chameleon /guides/jacksons-chameleon/ 301
+/guides/chameleon/ /guides/jacksons-chameleon/ 301
+/encyclopedia/animal/chameleon-jackson /encyclopedia/animal/jacksons-chameleon/ 301
+/encyclopedia/animal/chameleon-jackson/ /encyclopedia/animal/jacksons-chameleon/ 301

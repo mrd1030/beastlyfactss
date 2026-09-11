@@ -102,8 +102,8 @@ export const lizardEncyclopedia = [
     },
   },
   {
-    id: "chameleon-jackson", name: "Jackson's Chameleon", scientific: "Trioceros jacksonii",
-    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "chameleon", available: true, image: "/assets/guides/chameleon.jpg",
+    id: "jacksons-chameleon", name: "Jackson's Chameleon", scientific: "Trioceros jacksonii",
+    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "jacksons-chameleon", available: true, image: "/assets/guides/chameleon.jpg",
     bio: {
       overview: "Named for naturalist Frederick John Jackson, Jackson's chameleons are native to the highland forests of Kenya and Tanzania. Males are unmistakable - they sport three prominent horns, resembling a miniature Triceratops. Unlike most reptiles, Jackson's chameleons give birth to live young (viviparous) rather than laying eggs. They were introduced to Hawaii in the 1970s and have established feral populations there.",
       origin: "East Africa (Kenya, Tanzania); introduced to Hawaii",

@@ -586,7 +586,7 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
     ],
   },
   {
-    id: "chameleon",
+    id: "jacksons-chameleon",
     name: "Jackson's Chameleon",
     emoji: "🦎",
     difficulty: "Advanced",
