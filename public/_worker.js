@@ -5,9 +5,7 @@ const EPOCH = Date.UTC(2026, 0, 1);
 const WINDOW = 14 * POSTS_PER_DAY; // ~14 days of backlog regardless of cadence, so a slow Publer poll never misses one
 const FALLBACK_IMAGE = 'https://beastlyfacts.com/assets/hero-1200.jpg';
 
-const SANITY_PROJECT = '7nqbs1gk';
-const SANITY_DATASET = 'production';
-const ARTICLES_WINDOW = 40; // most recent posts across MDX + Sanity combined
+const ARTICLES_WINDOW = 40; // most recent posts
 
 // Mirrors src/lib/utils/slugify.js exactly - must produce identical output,
 // since this is how /facts/:slug matches a fact by title on the frontend.
@@ -401,72 +399,22 @@ async function buildFactsFeed(request) {
 }
 
 // Chronicles live at /chronicles/<id>/<part>/, not /blog/<slug>/ - excluded by
-// slug prefix, same convention as prerender.mjs/generate-sitemap.js. They're
-// fetched separately below (fetchSanityChronicles) and merged back into the feed.
-const SANITY_ARTICLES_QUERY = `*[_type == "post" && defined(slug.current) && !(slug.current match "chronicles-of-*")] | order(publishedAt desc) [0...${ARTICLES_WINDOW}]{
-  "slug": slug.current,
-  title,
-  seoTitle,
-  "excerpt": coalesce(seoDescription, excerpt),
-  publishedAt,
-  "image": coalesce(seoImage.asset->url, mainImage.asset->url)
-}`;
+// slug prefix, same convention as prerender.mjs/generate-sitemap.js. They come
+// through /articles.json in their own `chronicles` array and are merged back
+// into the feed below.
 
 // Mirrors CHRONICLES_SERIES in src/lib/chronicles.js / CHRONICLES_PREFIXES in
 // prerender.mjs & generate-sitemap.js - stories are matched by slug prefix.
 const CHRONICLES_PREFIXES = { dex: 'chronicles-of-dex', otis: 'chronicles-of-otis' };
 
-const SANITY_CHRONICLES_QUERY = `*[_type == "post" && defined(slug.current) && slug.current match "chronicles-of-*"]{
-  "slug": slug.current,
-  title,
-  seoTitle,
-  "excerpt": coalesce(seoDescription, excerpt),
-  publishedAt,
-  "image": coalesce(seoImage.asset->url, mainImage.asset->url)
-}`;
-
-async function fetchSanityArticles() {
-  try {
-    const url = `https://${SANITY_PROJECT}.api.sanity.io/v2021-10-21/data/query/${SANITY_DATASET}?query=${encodeURIComponent(SANITY_ARTICLES_QUERY)}`;
-    const res = await fetch(url);
-    const data = await res.json();
-    return (data.result || []).map(p => ({
-      slug: p.slug,
-      title: p.seoTitle || p.title,
-      excerpt: p.excerpt || '',
-      date: p.publishedAt,
-      image: p.image || null,
-    }));
-  } catch {
-    return []; // Sanity hiccup shouldn't take down the MDX half of the feed
-  }
-}
-
-async function fetchSanityChronicles() {
-  try {
-    const url = `https://${SANITY_PROJECT}.api.sanity.io/v2021-10-21/data/query/${SANITY_DATASET}?query=${encodeURIComponent(SANITY_CHRONICLES_QUERY)}`;
-    const res = await fetch(url);
-    const data = await res.json();
-    return (data.result || []).map(p => ({
-      slug: p.slug,
-      title: p.seoTitle || p.title,
-      excerpt: p.excerpt || '',
-      date: p.publishedAt,
-      image: p.image || null,
-    }));
-  } catch {
-    return [];
-  }
-}
-
 // Assigns each chronicle its live-site link by computing its 1-based position
 // within its series, sorted by date - mirrors groupChronicles() in
 // src/lib/chronicles.js so RSS links always match the part number the site itself
-// renders. Must run over the FULL cross-source list before any date-window slicing,
-// or a story could be numbered using only a partial set of its series' parts.
+// renders. Must run over the FULL list before any date-window slicing, or a
+// story could be numbered using only a partial set of its series' parts.
 function withChroniclesLinks(chronicles) {
-  // A story can briefly exist in both MDX and Sanity mid-migration - keep
-  // whichever copy appeared first (callers always spread MDX before Sanity).
+  // Defensive dedupe: a slug should appear once, and numbering silently
+  // shifts for the whole series if one ever appears twice.
   const seenSlugs = new Set();
   const deduped = chronicles.filter(s => {
     if (seenSlugs.has(s.slug)) return false;
@@ -514,17 +462,13 @@ function hasReachedPublishDate(dateValue, today = todayInSiteZone()) {
 async function buildArticlesFeed(request) {
   const mdxRes = await fetch(new URL('/articles.json', request.url));
   const { articles: mdxArticles, chronicles: mdxChronicles = [] } = await mdxRes.json();
-  const [sanityArticles, sanityChronicles] = await Promise.all([
-    fetchSanityArticles(),
-    fetchSanityChronicles(),
-  ]);
 
-  const blogItems = [...mdxArticles, ...sanityArticles].map(a => ({
+  const blogItems = mdxArticles.map(a => ({
     ...a,
     link: `https://beastlyfacts.com/blog/${a.slug}/`,
     guid: `beastlyfacts-post-${a.slug}`,
   }));
-  const chronicleItems = withChroniclesLinks([...mdxChronicles, ...sanityChronicles]);
+  const chronicleItems = withChroniclesLinks(mdxChronicles);
 
   const merged = [...blogItems, ...chronicleItems]
     .filter(a => a.date)
