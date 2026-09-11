@@ -761,6 +761,12 @@ function hasSupabaseEnv(env) {
 async function handleCarePackageCheckout(request, env) {
   if (!env?.STRIPE_SECRET_KEY) return storeJson({ error: 'Checkout is not configured.' }, 503);
 
+  // Trimmed, because this value goes straight into a header and a secret pasted
+  // into a dashboard field very often arrives with a trailing newline. An
+  // invalid header value does not fail at Stripe, it fails when the Request is
+  // constructed, which is a thrown TypeError rather than a response.
+  const stripeKey = env.STRIPE_SECRET_KEY.trim();
+
   let body;
   try {
     body = await request.json();
@@ -803,14 +809,27 @@ async function handleCarePackageCheckout(request, env) {
     'payment_intent_data[description]': `${pkg.name} (PDF)`,
   });
 
-  const res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${env.STRIPE_SECRET_KEY}`,
-      'content-type': 'application/x-www-form-urlencoded',
-    },
-    body: form,
-  });
+  // Wrapped, because fetch rejects rather than resolves when the request cannot
+  // be built or sent at all: a malformed key, a header value the runtime
+  // refuses, a network failure reaching Stripe. An unhandled rejection here is
+  // not our 502 with a readable body, it is Cloudflare's own HTML error page,
+  // which the buy button cannot parse and nobody can diagnose from. Every
+  // failure that reaches a buyer should look the same and say the same thing.
+  let res;
+  try {
+    res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${stripeKey}`,
+        'content-type': 'application/x-www-form-urlencoded',
+      },
+      body: form,
+    });
+  } catch (err) {
+    console.error('Stripe checkout request could not be sent', err?.message || err);
+    return storeJson({ error: 'Could not start checkout. Please try again.' }, 502);
+  }
+
   const session = await res.json().catch(() => ({}));
 
   if (!res.ok || !session?.url) {
