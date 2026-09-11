@@ -158,6 +158,12 @@ export default function Encyclopedia() {
         ? `Explore all ${activeFilter} care guides on Beastly Facts - husbandry advice, feeding schedules, housing setups, and health tips for every keeper.`
         : 'Browse our complete library of reptile, bird, mammal, and exotic pet care guides on Beastly Facts. Evidence-based husbandry advice from experienced keepers.')
     : `Explore our detailed encyclopedia and care guides for ${activeCategory === 'All' ? 'all your pets' : activeCategory}. Everything you need to know about husbandry, health, and happiness.`;
+  // Same fix as Guides.jsx: the H1 was static across all 11 category pages
+  // while encTitle above already named the category. Which name applies depends
+  // on the tab, so it follows the same activeFilter/activeCategory split.
+  const encHeading = isGuides
+    ? (activeFilter === 'All' ? 'Encyclopedia & Care Guides' : `Care Guides for ${activeFilter}`)
+    : (activeCategory === 'All' ? 'Encyclopedia & Care Guides' : `Encyclopedia & Care Guides for ${activeCategory}`);
   const encCanonical = `https://beastlyfacts.com${location.pathname.replace(/\/$/, '')}/`;
   const shouldNoindex = hasNoindexStateParams(location.search);
 
@@ -187,7 +193,7 @@ export default function Encyclopedia() {
             <span className="text-3xl mb-2 block" role="img" aria-label="Books">📚</span>
             <div className="flex items-center gap-2 mb-1">
               <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground">
-                Encyclopedia & Care Guides
+                {encHeading}
               </h1>
               {/* Interactive ! Circle Icon Button */}
               <button

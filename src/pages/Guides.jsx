@@ -99,6 +99,16 @@ export default function Guides() {
     ? 'Care Guides | Beastly Facts'
     : `${activeFilter} Care Guides | Beastly Facts`;
 
+  // The visible H1 carries the category too. It used to read "Care Guides" on
+  // all 11 category pages while the title tag above already named the category,
+  // so a reader landing on /guides/category/dogs/ got a heading that could have
+  // belonged to any of them, and the 11 pages shared one H1. "for <Category>"
+  // rather than "<Category> Care Guides" because the filter labels are plurals
+  // and read wrong in front of a noun ("Dogs Care Guides", "Fish Care Guides").
+  const pageHeading = activeFilter === 'All'
+    ? 'Care Guides'
+    : `Care Guides for ${activeFilter}`;
+
   const pageDescription = activeFilter !== 'All'
     ? `Explore all ${activeFilter} care guides on Beastly Facts - husbandry advice, feeding schedules, housing setups, and health tips for every keeper.`
     : 'Browse our complete library of reptile, bird, mammal, and exotic pet care guides on Beastly Facts. Evidence-based husbandry advice from experienced keepers.';
@@ -133,7 +143,7 @@ export default function Guides() {
             <span className="text-3xl mb-2 block" role="img" aria-label="Open book">📖</span>
             <div className="flex items-center gap-2 mb-1">
               <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground">
-                Care Guides
+                {pageHeading}
               </h1>
               <button
                 onClick={() => setIsLegendOpen(true)}
