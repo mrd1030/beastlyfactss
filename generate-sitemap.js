@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { themedQuizzes } from './src/lib/data/quizzes/index.js';
 import { CARE_PACKAGES } from './src/lib/data/carePackages.js';
+import { RELOCATED_ARTICLE_SLUG_SET } from './src/lib/data/relocatedArticles.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -147,7 +148,11 @@ const notInFuture = (date) => (date && String(date).slice(0, 10) <= today ? date
 
 function getMdxPosts() {
   // Short stories live on /chronicles/, not /blog/ (old URLs 301 in _redirects)
-  return mdxMeta.filter(post => !isChroniclesSlug(post.slug)).map(post => ({
+  // Relocated articles render at their own route and 301 away from /blog/.
+  return mdxMeta
+    .filter(post => !isChroniclesSlug(post.slug))
+    .filter(post => !RELOCATED_ARTICLE_SLUG_SET.has(post.slug))
+    .map(post => ({
     path: `/blog/${post.slug}/`,
     // Only emit lastmod when the frontmatter carries a real, already-reached date - a
     // fabricated build-date lastmod is worse than none at all, and so is a future one.

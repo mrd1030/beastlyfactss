@@ -705,7 +705,7 @@ export default function ExoticPetLaws() {
             </div>
             <p className="mt-5 text-sm font-body text-foreground">
               {'For the federal layer, what the Lacey Act and CITES actually control, and how state schemes are structured, start with '}
-              <Link to="/blog/exotic-pet-legal-hub/" className="text-primary font-semibold hover:underline">
+              <Link to="/exotic-pet-laws/" className="text-primary font-semibold hover:underline">
                 the written hub
               </Link>
               .
@@ -735,7 +735,7 @@ export default function ExoticPetLaws() {
             </p>
             <p>
               {'Every entry links to the regulation it came from. None of this is legal advice, laws change without much notice, and the agency that issues the permit is always the last word. For the federal layer and how state schemes are structured, see the '}
-              <Link to="/blog/exotic-pet-legal-hub/" className="text-primary font-semibold hover:underline">
+              <Link to="/exotic-pet-laws/" className="text-primary font-semibold hover:underline">
                 exotic pet legal hub
               </Link>
               .

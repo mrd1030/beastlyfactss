@@ -12,6 +12,7 @@
 // in the shared bundle that Home, Blog, GuideDetail, etc. all loaded.
 
 import mdxMeta from './generated/mdx-meta.json';
+import { RELOCATED_ARTICLE_SLUG_SET } from './data/relocatedArticles';
 
 // Lazy loaders keyed by content path - the only reference to MDX modules in
 // the app. Keys must match the `path` field emitted by sync-articles.js.
@@ -120,7 +121,12 @@ function toPost(meta) {
   };
 }
 
-export const mdxPosts = mdxMeta.map(toPost);
+// Relocated articles are dropped from the listing only. loaderForSlug above
+// still finds them through mdxMeta, which is what keeps MdxArticleBody able to
+// render one on its new route.
+export const mdxPosts = mdxMeta
+  .filter(m => !RELOCATED_ARTICLE_SLUG_SET.has(m.slug))
+  .map(toPost);
 
 // Optional: Export a helper to get posts by category
 export function getMdxPostsByCategory(category) {

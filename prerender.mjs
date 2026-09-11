@@ -28,6 +28,8 @@ const BASE_URL = `http://localhost:${PORT}`;
 // content/ by the time this runs. It's also what src/lib/mdxPosts.js builds the
 // live site's post list from, so routes derived here can't drift from the pages
 // the app will actually render.
+import { RELOCATED_ARTICLE_SLUG_SET } from './src/lib/data/relocatedArticles.js';
+
 const MDX_META_PATH = 'src/lib/generated/mdx-meta.json';
 
 // Encyclopedia category slugs (mirrors encyclopediaCategories in encyclopedia.js)
@@ -69,6 +71,8 @@ const slugifyCategory = (text) => text.toString().toLowerCase()
 function getMdxRoutes(meta) {
   return meta
     .filter(post => !isChroniclesSlug(post.slug))
+    // Relocated articles render at their own route and 301 away from /blog/.
+    .filter(post => !RELOCATED_ARTICLE_SLUG_SET.has(post.slug))
     .map(post => `/blog/${post.slug}`);
 }
 

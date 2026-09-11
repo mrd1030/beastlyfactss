@@ -311,3 +311,9 @@
 /guides/chameleon/ /guides/jacksons-chameleon/ 301
 /encyclopedia/animal/chameleon-jackson /encyclopedia/animal/jacksons-chameleon/ 301
 /encyclopedia/animal/chameleon-jackson/ /encyclopedia/animal/jacksons-chameleon/ 301
+
+# The written hub moved out of /blog/ and became the body of /exotic-pet-laws/
+# (see ExoticPetLawsHub.jsx). It carried 40 inbound internal links, all of them
+# repointed, but the URL was indexed and is what any external link still uses.
+/blog/exotic-pet-legal-hub /exotic-pet-laws/ 301
+/blog/exotic-pet-legal-hub/ /exotic-pet-laws/ 301
