@@ -624,10 +624,10 @@ async function notifySubscriber(env) {
 // BOTH files.
 //
 // A package missing here cannot be bought even if the catalog says it can,
-// which is the safe direction for the two to disagree in. The reverse is the
-// state most of this table is in right now: every package has a live price,
-// but only the ones carrying storefront: 'stripe' in the catalog have a buy
-// button pointing here, so the rest are reachable only by a hand-made POST.
+// which is the safe direction for the two to disagree in. All 14 are here and
+// all 14 carry storefront: 'stripe', so the two agree; a package added to the
+// catalog and forgotten here gets a clean 404 from checkout rather than a sale
+// nobody can fulfil.
 //
 // checkout prefers priceIdLive and falls back to priceIdSandbox, so a
 // deployment holding a live secret key and a package with only a sandbox id

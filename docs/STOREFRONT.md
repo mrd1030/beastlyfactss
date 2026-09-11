@@ -104,11 +104,12 @@ the catalog id and a `url` pointing at its product page.
 | `tarantula` | `prod_VEquBB2Y1okeui` | `price_1UENCK9qtY3Ob6vafJILVYIP` |
 
 These ids are in `stripePriceId` in the catalog and in `priceIdLive` in the
-Worker's `CARE_PACKAGE_STORE`. Having a live price does not put a package on
-sale here: the buy button only appears for a package whose catalog entry says
-`storefront: 'stripe'`, and flipping that is a separate step that also needs
-the PDF in the Supabase bucket, a `carePackageCopy.js` entry and a
-`carePackageThemes.js` entry.
+Worker's `CARE_PACKAGE_STORE`. All 14 packages now carry
+`storefront: 'stripe'`, so each one has a buy button pointing at the checkout
+route, a product page, a prerender entry and a sitemap entry. The one thing a
+live price does not do is put the PDF in the bucket: a package whose
+`care-packages/<id>.pdf` is missing will take money and then fail at the
+signed URL, so the upload has to land before the flip ships.
 
 Only the Hamster was ever sold in the Sandbox, so it is the only package with
 both a sandbox and a live price.
