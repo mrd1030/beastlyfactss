@@ -109,8 +109,14 @@ export default function Guides() {
     ? 'Care Guides'
     : `Care Guides for ${activeFilter}`;
 
+  // "husbandry advice", "housing setups" and "keeper" are reptile-hobby words.
+  // Dogs and Cats are two of the 11 categories and nobody searching dog care
+  // calls themselves a keeper, so the shared template read wrong on those two
+  // and slightly off for birds and fish. This wording works for all 11 without
+  // a special case. "all" is gone on purpose: Dogs and Cats carry 14 and 10
+  // lighter entries, so promising the complete set oversells them.
   const pageDescription = activeFilter !== 'All'
-    ? `Explore all ${activeFilter} care guides on Beastly Facts - husbandry advice, feeding schedules, housing setups, and health tips for every keeper.`
+    ? `Care guides for ${activeFilter} on Beastly Facts. What they cost, what they eat, how to handle them, and the health problems worth knowing about first.`
     : 'Browse our complete library of reptile, bird, mammal, and exotic pet care guides on Beastly Facts. Evidence-based husbandry advice from experienced keepers.';
 
   const canonical = `https://beastlyfacts.com${location.pathname.replace(/\/$/, '')}/`;

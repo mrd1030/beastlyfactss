@@ -155,9 +155,14 @@ export default function Encyclopedia() {
     : (activeCategory === 'All' ? 'Encyclopedia & Care Guides | Beastly Facts' : `${activeCategory} Care Guides & Facts | Beastly Facts`);
   const encDescription = isGuides
     ? (activeFilter !== 'All'
-        ? `Explore all ${activeFilter} care guides on Beastly Facts - husbandry advice, feeding schedules, housing setups, and health tips for every keeper.`
+        ? `Care guides for ${activeFilter} on Beastly Facts. What they cost, what they eat, how to handle them, and the health problems worth knowing about first.`
         : 'Browse our complete library of reptile, bird, mammal, and exotic pet care guides on Beastly Facts. Evidence-based husbandry advice from experienced keepers.')
-    : `Explore our detailed encyclopedia and care guides for ${activeCategory === 'All' ? 'all your pets' : activeCategory}. Everything you need to know about husbandry, health, and happiness.`;
+    // Same rewrite as the guides tab: drops "husbandry" for language that fits
+    // dogs and cats as well as reptiles, and drops "everything you need to
+    // know", which the thinner categories do not back up.
+    : (activeCategory === 'All'
+        ? 'Species profiles and care guides on Beastly Facts. Difficulty ratings, facts, and what daily care really involves, for reptiles, birds, mammals and fish.'
+        : `Profiles and care guides for ${activeCategory} on Beastly Facts. Species facts, difficulty ratings, and what daily care really involves before you commit.`);
   // Same fix as Guides.jsx: the H1 was static across all 11 category pages
   // while encTitle above already named the category. Which name applies depends
   // on the tab, so it follows the same activeFilter/activeCategory split.
