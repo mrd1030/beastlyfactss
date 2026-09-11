@@ -14,7 +14,7 @@ const FAQS = [
   },
   {
     q: 'How long are they?',
-    a: "Each package runs 15 to 23 pages depending on species. Every one covers setup, diet, health red flags, and an owner routine - the exact page count is listed on that package's card in the store.",
+    a: "Each package runs 34 to 44 pages depending on species. Every one covers setup, diet, health red flags, and an owner routine - the exact page count is listed on that package's card in the store and on its product page.",
   },
   {
     q: 'Is this a subscription?',
@@ -25,12 +25,16 @@ const FAQS = [
     a: 'No. They are the same research and the same standards, reformatted into an offline manual. The site stays free. The packages exist for when you want a printable, all in one reference.',
   },
   {
+    q: 'How do I get the file after paying?',
+    a: 'The download is on the thank you page the moment the payment clears, and it stays available afterwards in your library. There is no account to create at checkout: the email you pay with is the one that owns the purchase.',
+  },
+  {
     q: 'What if a package gets updated later?',
-    a: 'If a package is revised, the file behind your purchase updates too. You can always re-download the current version from your Gumroad library.',
+    a: 'If a package is revised, the file behind your purchase updates too, at no extra cost. Sign in to your library with the email you bought with and download the current edition whenever you like.',
   },
   {
     q: 'What if it is not what I expected?',
-    a: 'Reach out through Gumroad and we will sort it out. These are small, honest products, not something we want you stuck with if it genuinely does not fit your situation.',
+    a: 'Email hello@beastlyfacts.com and we will sort it out. These are small, honest products, not something we want you stuck with if it genuinely does not fit your situation.',
   },
   {
     q: 'Are these a substitute for a vet?',

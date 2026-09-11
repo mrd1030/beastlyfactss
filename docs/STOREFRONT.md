@@ -128,6 +128,24 @@ The signing secret is per endpoint, not per account, so a live endpoint added
 later has a different one and both have to be held by whichever deployment
 serves them.
 
+### The live webhook endpoint
+
+Already created on the live account, `we_1UENSB9qtY3Ob6vaL6uDHdKY`, enabled,
+same URL and same two events as the test-mode one above.
+
+Its signing secret is in the Stripe Dashboard with the account in **live
+mode**: Developers -> Webhooks -> the
+`https://beastlyfacts.com/api/care-packages/webhook` endpoint -> **Signing
+secret** -> Reveal. That `whsec_...` is what `STRIPE_WEBHOOK_SECRET` has to
+hold on any deployment running a `sk_live_` key. Rotating it in the dashboard
+invalidates the old one, so the Cloudflare secret has to be updated in the same
+sitting.
+
+Until that secret and a live `STRIPE_SECRET_KEY` are both in Cloudflare, live
+checkout either does not start or completes without ever writing a purchase
+row, which means a paid buyer with no download. Do not merge the storefront
+flip to main before both are set.
+
 ## Supabase
 
 Project `ipqqeofzlwvfnunduuru` (beastlyfactss), the same one the site already

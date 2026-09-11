@@ -18,9 +18,10 @@ const HOW_IT_WORKS = [
 ];
 
 export default function CarePackagesStore() {
-  // Buyable means sold here or still sold on Gumroad. A package that is
-  // status: 'coming-soon' but storefront: 'stripe' belongs in the catalog,
-  // not in the teaser row, which is what keyed on status alone got wrong.
+  // Buyable means sold here, or still sold on Gumroad if one were ever put
+  // back. All 14 sell here, so comingSoon is empty and its section does not
+  // render. The filter stays keyed on storefront rather than status, which is
+  // what keying on status alone got wrong.
   const live = CARE_PACKAGES.filter(isCarePackageBuyable);
   const groups = groupCarePackages(live);
   const comingSoon = CARE_PACKAGES.filter(pkg => !isCarePackageBuyable(pkg));

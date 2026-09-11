@@ -1,17 +1,17 @@
-// The printable PDF care packages. Kept manually in sync with wherever each
-// one sells (same pattern as affiliateProducts.js for gear) - re-check
-// price/page-count/cover URL here if anything changes at the seller.
+// The printable PDF care packages. All 14 sell here now, through Stripe, so
+// this file is the catalog rather than a mirror of someone else's listing.
 //
-// status: 'live' has a real Gumroad product (gumroadUrl set) and shows in the
-// buyable grid. status: 'coming-soon' renders in the teaser row. Both use
-// `cover`, the guide hero under public/assets/guides, as the card and product
-// page art; nothing is loaded from Gumroad's CDN any more.
+// status records whether a package ever had a Gumroad listing, and now only
+// decides the teaser row for one that sells nowhere. Nothing sells nowhere
+// today, so the teaser row is empty and isCarePackageBuyable is true for all
+// 14. Read storefront, not status, when the question is "can this be bought".
+// Both use `cover`, the guide hero under public/assets/guides, as the card and
+// product page art; nothing is loaded from Gumroad's CDN any more.
 //
 // pages, version and versionDate describe the current build in
 // content/CAREPACKAGE Guides/rebuilt, rendered from the source HTML of the same
-// version. For a package sold here that is also the edition in the bucket, so
-// re-upload the PDF whenever these change. The Gumroad listings still carry the
-// first editions and are refreshed separately.
+// version. That is also the edition in the Supabase bucket, so re-upload the
+// PDF whenever these change.
 //
 // samplePages is how many pages the free sample PDF at
 // public/assets/care-packages/<id>/sample.pdf carries, printed by
