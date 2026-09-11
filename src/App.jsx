@@ -40,6 +40,7 @@ const Categories = hydratable('Categories');
 const Search = hydratable('Search');
 const Glossary = hydratable('Glossary');
 const ExoticPetLaws = hydratable('ExoticPetLaws');
+const ExoticPetLawsHub = hydratable('ExoticPetLawsHub');
 const EncyclopediaAnimal = hydratable('EncyclopediaAnimal');
 const Beastlypedia = hydratable('Beastlypedia');
 const BeastfileDetail = hydratable('BeastfileDetail');
@@ -127,7 +128,9 @@ const AuthenticatedApp = () => {
           <Route path="/search" element={<Search />} />
           <Route path="/search/:query" element={<Search />} />
           <Route path="/glossary" element={<Glossary />} />
-          <Route path="/exotic-pet-laws" element={<ExoticPetLaws />} />
+          <Route path="/exotic-pet-laws" element={<ExoticPetLawsHub />} />
+          {/* Declared before :animalId so "map" is not matched as an animal id. */}
+          <Route path="/exotic-pet-laws/map" element={<ExoticPetLaws />} />
           <Route path="/exotic-pet-laws/:animalId" element={<ExoticPetLaws />} />
           <Route path="/care-packages" element={<CarePackages />} />
           <Route path="/care-packages/store" element={<CarePackagesStore />} />

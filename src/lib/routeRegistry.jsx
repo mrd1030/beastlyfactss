@@ -40,6 +40,7 @@ export const ROUTE_LOADERS = {
   Search: () => import('@/pages/Search'),
   Glossary: () => import('@/pages/Glossary'),
   ExoticPetLaws: () => import('@/pages/ExoticPetLaws'),
+  ExoticPetLawsHub: () => import('@/pages/ExoticPetLawsHub'),
   EncyclopediaAnimal: () => import('@/pages/EncyclopediaAnimal'),
   Beastlypedia: () => import('@/pages/Beastlypedia'),
   BeastfileDetail: () => import('@/pages/BeastfileDetail'),

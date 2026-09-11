@@ -240,7 +240,7 @@ export default function ExoticPetLaws() {
   // of the index and out of the sitemap rather than shipped as a thin page.
   const nothingToReport = restricted.length === 0;
 
-  const canonical = isIndex ? `${SITE}/exotic-pet-laws/` : `${SITE}/exotic-pet-laws/${activeId}/`;
+  const canonical = isIndex ? `${SITE}/exotic-pet-laws/map/` : `${SITE}/exotic-pet-laws/${activeId}/`;
 
   return (
     <div className="min-h-screen bg-background">

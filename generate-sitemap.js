@@ -223,6 +223,7 @@ const staticPages = [
   ...themedQuizzes.map(q => `/quiz/${q.id}/`),
   '/glossary/',
   '/exotic-pet-laws/',
+  '/exotic-pet-laws/map/',
   '/care-packages/',
 
   // Product pages for packages sold on this site. Same list prerender.mjs

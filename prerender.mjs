@@ -213,6 +213,7 @@ const STATIC_ROUTES = [
   ...BEASTLYPEDIA.ids.map(id => `/beastlypedia/${id}`),
   ...GUIDE_IDS.map(id => `/guides/${id}`),
   '/exotic-pet-laws',
+  '/exotic-pet-laws/map',
   ...LEGAL_ANIMAL_IDS.map(id => `/exotic-pet-laws/${id}`),
   '/care-packages',
   '/care-packages/store',

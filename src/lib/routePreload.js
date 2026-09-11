@@ -62,6 +62,7 @@ const ROUTE_PRELOADS = [
   [p => pathIs(p, '/categories'), 'Categories'],
   [p => p.startsWith('/search'), 'Search'],
   [p => pathIs(p, '/glossary'), 'Glossary'],
+  [p => pathIs(p, '/exotic-pet-laws'), 'ExoticPetLawsHub'],
   [p => p.startsWith('/exotic-pet-laws'), 'ExoticPetLaws'],
   [p => p.startsWith('/beastlypedia/group/'), 'Beastlypedia'],
   [p => pathIs(p, '/beastlypedia'), 'Beastlypedia'],
@@ -99,6 +100,17 @@ export async function preloadForCurrentRoute() {
           import('@/lib/mdxPosts').then(({ preloadMdxBySlug }) => preloadMdxBySlug(slug))
         );
       }
+    }
+
+    // The exotic pet law hub renders its prose through MdxArticleBody (see
+    // ExoticPetLawsHub.jsx), so its MDX chunk needs preloading by slug for the
+    // same reason a blog post's does.
+    if (pathIs(pathname, '/exotic-pet-laws')) {
+      jobs.push(
+        import('@/lib/mdxPosts').then(({ preloadMdxBySlug }) =>
+          preloadMdxBySlug('exotic-pet-legal-hub')
+        )
+      );
     }
 
     // Chronicles reader (/chronicles/:seriesId/:part) doesn't carry a slug
