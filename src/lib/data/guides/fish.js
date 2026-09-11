@@ -57,46 +57,67 @@ export const fishGuides = [
     image: "/assets/guides/betta-fish.jpg",
     tagline: "The flowing-finned solo showoff that thrives in its own space and recognizes its keeper!",
     funFact: "Wild betta fish live in shallow rice paddies and slow-moving water that can run low on oxygen, so they evolved a labyrinth organ that lets them gulp air directly from the surface. Males also build floating bubble nests out of saliva-coated air bubbles to hold their eggs - a behavior captive males will still perform even without a female present.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "5+ gallon tank", low: 30, high: 60 },
-        { item: "Aquarium heater", low: 15, high: 25 },
-        { item: "Gentle/sponge filter", low: 15, high: 25 },
-        { item: "Substrate (sand or smooth gravel)", low: 10, high: 20 },
-        { item: "Live or silk plants", low: 15, high: 25 },
-        { item: "Water test kit", low: 15, high: 20 },
-      ],
-      annual: [
-        { item: "Betta pellets + frozen/freeze-dried variety", low: 30, high: 50 },
-        { item: "Water conditioner", low: 10, high: 15 },
-      ],
-    },
-    sections: {
-      housing: "A heated, filtered tank of at least 5 gallons is the real minimum for a betta - not the bowls or unheated cups they are often sold in. Water temperature should stay between 78 and 80 degrees F, which requires a small aquarium heater in almost every home. Bettas have long, delicate fins, so filtration should produce gentle flow (a sponge filter or a baffled outflow works well) rather than a strong current that exhausts them. Always use a tight-fitting lid, since bettas are surprisingly capable jumpers. Choose live or silk plants over stiff plastic ones, which can tear their fins.",
-      diet: "Bettas are carnivores and do best on a high-quality betta-specific pellet as their staple diet. Rotate in freeze-dried or frozen bloodworms, brine shrimp, and daphnia for variety and enrichment. Feed only what your betta can finish in 1 to 2 minutes, once or twice a day - overfeeding is one of the most common mistakes and leads to bloating and constipation. Skipping food one day a week gives their digestive system a break and is a normal part of a healthy feeding routine.",
-      enrichment: "Bettas are solitary and often aggressive toward their own kind - hence the name fighting fish - so they should not be housed with other bettas. A sorority of five or more females is possible but is an experienced-keeper project, not a beginner one: it needs 20 gallons or more, heavy planting and visual barriers, females ideally raised together, and a second cycled tank standing by, and it still fails often enough that plenty of keepers who have tried one advise against it. A mirror is not enrichment either. Flaring at a reflection is a threat display, and research measuring plasma hormones in male bettas found cortisol and androgens rose to a mirror image much as they did to a live rival, so what looks like exercise is a stress response. Seconds at a time at most, and never a mirror left in place. A floating leaf hammock near the surface gives them a natural resting spot, since they periodically rise to breathe air through their labyrinth organ. Many bettas learn to recognize their keeper and will swim to the front of the tank at feeding time.",
-      health: "Fin rot (a bacterial or fungal infection usually triggered by poor water quality) and ich (visible as small white spots) are the two most common betta health problems, and both are far easier to prevent than treat. Swim bladder issues, often from overfeeding or bloating, cause a betta to struggle swimming upright or float sideways. Dropsy, a swollen, pinecone-like appearance, signals serious internal illness and needs prompt attention. A heater is not optional - cold water suppresses a betta's immune system and is a major contributor to illness. Weekly water changes of 25 to 30 percent, always with a dechlorinator, are the single best preventive measure.",
-      checklist: [
-        "5+ gallon tank (never a bowl or unheated cup)",
-        "Aquarium heater set to 78-80°F",
-        "Gentle filter or sponge filter",
-        "Tight-fitting lid (bettas jump)",
-        "Soft substrate (sand or smooth gravel)",
-        "Live or silk plants (no sharp plastic)",
-        "Betta-specific pellets",
-        "Freeze-dried or frozen bloodworms/brine shrimp for variety",
-        "Water conditioner/dechlorinator",
-        "Water test kit and weekly 25-30% water changes",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Lifespan comes from the deep dives
+    // (no single figure disagreed once tank setup's temperature/change-percent
+    // numbers were reconciled). Quarantine, cycling, and power outage cite the
+    // shared aquarium guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-08 after the betta fish set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "5 gallons, heated and filtered, is the real minimum. Not the bowls or unheated cups bettas are often sold in.", source: "betta-fish-tank-setup-guide" },
+        { label: "Heater and filter", value: "A 15 to 25 watt adjustable heater holding a stable 76 to 82°F, 78 to 80°F the sweet spot. A gentle, low-flow filter such as a sponge filter, since a betta's long fins can't handle strong current.", source: "betta-fish-tank-setup-guide" },
+        { label: "Water parameters", value: "Ammonia and nitrite at 0 ppm with no safe nonzero reading for either, nitrate under 20 ppm, pH 6.5 to 7.5. Weekly water changes of 25 to 30%, always with a dechlorinator.", source: "betta-fish-water-parameters-guide" },
+        { label: "Cycling", value: "Cycle the tank before adding the fish. A fishless cycle typically takes 4 to 6 weeks at a stable warm temperature.", source: "aquarium-cycling-guide" },
+        { label: "Feeding schedule", value: "2 to 4 small, high-protein betta pellets, once or twice a day, no more than would fit in the size of the fish's eye. Fast one day a week.", source: "betta-fish-feeding-guide" },
+        { label: "Not eating", value: "A healthy adult can physically survive up to about two weeks, but that's an emergency ceiling, not a target. Start investigating around 5 to 7 days of refused food, sooner with a swollen belly, clamped fins, or lethargy.", source: "betta-fish-feeding-guide" },
+        { label: "Handling", value: "Never bare hands, it strips the protective slime coat on contact. Move the fish with a net or a cup. Float a new bag about 15 minutes before release so temperatures can equalize.", source: "betta-fish-handling-guide" },
+        { label: "Budget", value: "$5 to $30 for the fish, up to about $55 for rare varieties. $100 to $300 for a full setup. $10 to $25 a month after that.", source: "betta-fish-cost-guide" },
+        { label: "Adult size", value: "2.5 to 3 inches." },
+        { label: "Lifespan", value: "2 to 4 years typical, up to 5 years in captivity with excellent care." },
+        { label: "Quarantine", value: "At least 30 days in a bare hospital tank before joining others. Thirty days is the floor, not the target.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "Oxygen loss is the fast danger, not the cold or the dark. Aerate right away with a battery air pump, or agitate the surface by hand roughly every 10 to 15 minutes in a small tank. A betta's transport bag needs far more air than a typical fish bag, since it breathes air directly through its labyrinth organ.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
+    emergencyCard: {
+      source: "betta-fish-health-issues-guide",
+      callNow: [
+        "Raised, pinecone-like scales (dropsy), usually a poor prognosis but worth same-day vet contact",
+        "Pale or greyish saddle-shaped patches, ragged fin edges, or a cottony fuzz (columnaris), one to act on the same day you see it",
+        "A fine gold or rust-colored dusty sheen (velvet), which moves fast and can be fatal quickly",
+        "Buoyancy problems (floating, sinking, or swimming at odd angles) that don't clear after a 2 to 3 day fast",
+        "Any illness that doesn't improve once water quality and temperature are corrected",
+      ],
+      vetLine: "An aquatic vet, found before you need one. Most of what's on this list is prevented, not treated, through consistent water quality, temperature, and a proper heated, filtered, cycled tank; aquatic vets are the exception, reserved for genuinely serious or unclear cases.",
+    },
+    routes: [
+      { slug: "betta-fish-cost-guide", line: "$5 to $30 for the fish, a $100 to $300 setup, and $10 to $25 a month after that." },
+      { slug: "betta-fish-tank-setup-guide", line: "The 5-gallon minimum, the heater and sponge filter that actually fit a betta's fins, and cycling before the fish goes in." },
+      { slug: "betta-fish-water-parameters-guide", line: "The target ranges for temperature, pH, ammonia, nitrite, and nitrate, and the testing schedule that actually catches trouble early." },
+      { slug: "betta-fish-feeding-guide", line: "Portion size relative to the fish's own eye, safe treats and foods to avoid, and the honest range of reasons a betta stops eating." },
+      { slug: "betta-fish-handling-guide", line: "Why bare hands strip the slime coat, safe net and cup transfers, and how to read stress signs from a distance instead." },
+      { slug: "betta-fish-health-issues-guide", line: "Fin rot, ich, velvet, columnaris, swim bladder disorder, dropsy, and why water quality is almost always the first fix." },
+      { slug: "betta-fish-enrichment-guide", line: "What three published studies say about space and planting, and why a mirror is a stress test, not a toy." },
+    ],
+    buyList: [
+      "5+ gallon tank with a tight-fitting lid (bettas jump)",
+      "Aquarium heater sized for the tank",
+      "Gentle sponge filter",
+      "Soft substrate (sand or smooth gravel)",
+      "Live or silk plants (no sharp plastic)",
+      "Water conditioner/dechlorinator",
+      "Liquid-reagent water test kit",
+      "Net and a transfer cup",
+      "Betta-specific pellets",
+      "Freeze-dried or frozen bloodworms/brine shrimp for variety",
+    ],
     faqs: [
-      { q: "Can bettas live in bowls?", a: "No - this is one of the most persistent myths in the fishkeeping hobby. Small, unheated, unfiltered bowls cause chronic stress from poor water quality and cold temperatures, and they dramatically shorten a betta's lifespan. A betta needs at least 5 gallons with a heater and filter to genuinely thrive, not just survive." },
-      { q: "Can two bettas live together?", a: "Male bettas will fight, often fatally, if housed together, which is exactly why they're called fighting fish. A single male should always be kept alone. Female bettas can sometimes be kept in groups of five or more (a sorority) in a large, heavily planted tank with careful monitoring, but this setup carries real risk of aggression and isn't recommended for beginners." },
-      { q: "Why is my betta not eating?", a: "The most common causes are constipation from overfeeding, stress from recent water changes or new tankmates, water temperature that's too cold, or the early stages of illness. Check your heater is holding steady at 78-80°F first, since a chilled betta commonly refuses food, then evaluate water quality and recent tank changes." },
-      { q: "How long do bettas live?", a: "2 to 4 years is typical, with some bettas reaching 5 years under excellent care. Consistent warm water temperature, a properly cycled and filtered tank, and a varied diet are the biggest factors in reaching the upper end of that range." },
-      { q: "Do bettas need a heater?", a: "Yes, without exception. Bettas are tropical fish native to warm Southeast Asian waters, and room temperature in most homes is too cold for them. A stable 78-80°F is essential for their immune function, digestion, and overall activity level." },
-      { q: "Are betta fish good pets for beginners?", a: "Yes, but not the way they're usually sold. A betta kept in an unheated bowl is a stressed, short-lived fish, the beginner-friendly reputation only holds true with a real 5+ gallon heated, filtered tank. Get that right and bettas are genuinely low-maintenance, colorful, and interactive." },
+      { q: "What size tank does a betta fish need?", a: "Five gallons is the current standard minimum, a genuine improvement over older bowl-based advice. Bettas can technically survive in smaller volumes, but bigger tanks are easier to keep stable since temperature and water chemistry swing less in more water. Always use a lid, bettas are surprisingly good jumpers." },
+      { q: "Why won't my betta eat?", a: "Most commonly it's stress from a recent move or tank change, pickiness about a new food, or water that's too cold or of poor quality. Bettas need water in the roughly 76 to 82°F range, cooler water slows their metabolism and appetite noticeably. Check water quality and temperature before assuming anything more serious." },
+      { q: "What should I do before reaching for medication?", a: "Test and correct water quality and temperature first. A heated, filtered tank on a consistent water-change schedule is what makes a huge share of betta illness resolve or never start. Aquatic vets exist for serious or unclear cases, but they're the exception rather than the norm." },
     ],
   },
   {
@@ -310,54 +331,67 @@ export const fishGuides = [
     image: "/assets/guides/goldfish.jpg",
     tagline: "The pond classic that outgrows its reputation - and its bowl - in a hurry!",
     funFact: "Goldfish have real, months-long memories and can be trained to push levers, navigate mazes, and recognize shapes and colors - directly contradicting the popular '3-second memory' myth. They also grow to the size of their environment: a goldfish kept in a tiny bowl doesn't stay small because it's content, it's stunted, which is a sign of poor welfare rather than a convenient feature.",
-    // Rebuilt Sep 2026 from the itemized budget on page 29 of the Goldfish care
-    // package v2.1, which is the researched list. Setup sums to $208-$500, annual to
-    // $156-$384, which is the package's $13-$32 a month over twelve months.
-    costs: {
-      setup: [
-        { item: "20+ gallon tank", low: 40, high: 120 },
-        { item: "Canister filter (strong filtration)", low: 45, high: 130 },
-        { item: "Gentle/sponge filter", low: 20, high: 40 },
-        { item: "Smooth gravel or sand substrate", low: 15, high: 30 },
-        { item: "Water test kit", low: 25, high: 40 },
-        { item: "Water conditioner", low: 8, high: 15 },
-        { item: "Gravel vacuum and two dedicated buckets", low: 15, high: 30 },
-        { item: "Plants, hardscape and smooth decor", low: 15, high: 45 },
-        { item: "Soft rubber net, transfer container, thermometer and lid", low: 15, high: 30 },
-        { item: "First bag of sinking goldfish pellets", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Goldfish pellets + blanched vegetables", low: 72, high: 180 },
-        { item: "Water conditioner and test kit", low: 36, high: 84 },
-        { item: "Filter media replacement", low: 24, high: 72 },
-        { item: "Electricity for filter and air pump", low: 24, high: 48 },
-      ],
-    },
-    sections: {
-      housing: "A single fancy goldfish needs at least 20 gallons, with 10 additional gallons for each fish added. Common and comet goldfish grow considerably larger, need at least 55 gallons for one and more for each additional, and are much better suited to an outdoor pond long term. Goldfish are cold-water fish and generally do not need a heater at typical room temperatures, comfortable in the 65 to 75 degree F range, though they should never be mixed with tropical species that require heat. Because goldfish produce a lot of waste, strong filtration is essential regardless of tank size, ideally a canister filter turning over the tank's full volume at least 4 times an hour. Fully cycle the tank before adding fish, ammonia and nitrite both need to read 0 before goldfish go in. Bowls should never be used under any circumstances.",
-      diet: "Goldfish are omnivores and do best on a high-quality sinking goldfish-specific pellet as their staple food. Blanched vegetables - shelled peas, zucchini, and leafy greens - are important for digestion and help prevent the swim bladder problems goldfish are prone to. Occasional treats of bloodworms or brine shrimp add variety. Feed small portions once or twice a day; goldfish will beg constantly but are prone to overeating, bloating, and constipation if fed too much or given only low-quality flake food.",
-      enrichment: "Goldfish are highly food-motivated and genuinely trainable - many keepers teach them tricks like pushing a mini soccer ball, swimming through hoops, or following a finger around the glass. They enjoy foraging for pellets among smooth river rock and will happily graze on live plants as part of their natural feeding behavior (choose either plastic decor or plant varieties you don't mind them nibbling). Fancy varieties with rounded bodies are comparatively poor swimmers, so generous open swimming space matters more than clutter. Goldfish are also social and do well kept in same-species groups.",
-      health: "Swim bladder disorder is especially common in round-bodied fancy varieties and is often linked to diet and genetics. Ammonia and nitrite poisoning from undersized, under-filtered tanks is the single most common cause of premature goldfish death, since keepers frequently underestimate how much waste they produce. Ich and fin rot both follow poor water quality. Avoid cheap 'feeder' goldfish, which are typically bred for low cost rather than health or longevity. Weekly water testing and 25 to 50 percent water changes are essential maintenance, not optional extras.",
-      checklist: [
-        "20+ gallon tank per fancy goldfish (55+ gallons or a pond for common/comet)",
-        "Strong filtration, at least 4x turnover per hour (canister filter recommended)",
-        "No heater needed (cold-water fish)",
-        "Smooth gravel or sand substrate",
-        "Sinking goldfish-specific pellets",
-        "Blanched vegetables (peas, zucchini, leafy greens)",
-        "Occasional bloodworms or brine shrimp",
-        "Water test kit and dechlorinator",
-        "Weekly 25-50% water changes",
-        "Net for safe transfers",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Lifespan comes from the encyclopedia
+    // entry, which no deep dive repeats as a single figure. Quarantine and
+    // power outage cite the shared aquarium guides in the sidebar's Health and
+    // More list. Built 2026-09-08 for the goldfish set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "20+ gallons for one fancy goldfish (29+ gallons is the better setup), plus 10 more gallons per additional fish. 55 gallons minimum for one common or comet, more per additional fish, better in an outdoor pond. 40 gallons minimum for a shubunkin, 55+ gallons or a pond better.", source: "goldfish-tank-size-bowl-myth" },
+        { label: "Filtration", value: "Process the tank's total volume at least 4 times an hour, ideally 5 to 10 times. Running two filters on one goldfish tank is common practice among experienced keepers, not overkill.", source: "goldfish-tank-setup-guide" },
+        { label: "Water temperature", value: "A coldwater species, comfortable in the 65 to 75°F range. No heater strictly required.", source: "goldfish-tank-setup-guide" },
+        { label: "Water parameters", value: "Ammonia and nitrite at 0, nitrate under roughly 20 ppm. Weekly water changes of 25 to 50%, always with a dechlorinator treating the new water first.", source: "goldfish-tank-setup-guide" },
+        { label: "Cycling", value: "Cycle the tank fully before adding any fish, the same as any other species.", source: "goldfish-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Juveniles get 2 to 3 small feedings a day. For adults, sources genuinely diverge, so treat 1 to 2 small meals a day as the safe range, feeding only what's eaten in about 30 seconds to 2 minutes.", source: "goldfish-feeding-guide" },
+        { label: "Diet", value: "A quality sinking pellet formulated specifically for goldfish as the base, not tropical fish flake. Supplement 2 to 3 times a week with blanched vegetables and high-protein treats in moderation.", source: "goldfish-feeding-guide" },
+        { label: "Not eating", value: "Short gaps of 3 to 4 days are fine for a healthy adult in an established tank. The trigger to seek help is 24 to 48 hours of refusal combined with lethargy, pineconing scales, clamped fins, abnormal floating or sinking, gasping at the surface, visible wounds or white spots, cotton-like growths, or a visibly thinning body.", source: "goldfish-feeding-guide" },
+        { label: "Handling", value: "Guide it into a container of tank water rather than lifting it out by hand. If a net is needed, wet it first and use soft rubber, never knotted nylon. Keep the fish out of water as briefly as possible.", source: "goldfish-handling-guide" },
+        { label: "Budget", value: "The fish itself often costs less than $10. A complete setup typically runs $150 to $400. Ongoing costs run $10 to $30 a month.", source: "goldfish-cost-guide" },
+        { label: "Adult size", value: "6 to 8 inches for a fancy goldfish, 10 to 14+ inches for a common or comet, 10 to 12 inches for a shubunkin.", source: "goldfish-tank-size-bowl-myth" },
+        { label: "Lifespan", value: "10 to 15 years typical; 20 to 30+ years in spacious, well-kept ponds." },
+        { label: "Quarantine", value: "At least 30 days in a bare hospital tank before joining others. Thirty days is the floor, not the target, and a full two months is reasonable for a fish you especially don't want to lose.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "Oxygen loss is the fast danger, not the cold or the dark. Aerate right away with a battery air pump, or agitate the surface by hand roughly every 10 to 15 minutes in a small tank and every 20 to 30 minutes in a larger one. Don't feed, and don't restart a filter that's been off for hours without checking it first.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
+    emergencyCard: {
+      source: "goldfish-health-issues-guide",
+      callNow: [
+        "Persistent loss of buoyancy",
+        "Severe fin damage",
+        "Visible ulcers",
+        "Ongoing lethargy or appetite refusal",
+        "An over-the-counter treatment that isn't working",
+      ],
+      vetLine: "An aquatic vet, found before you need one. Most of what's on the health issues list is prevented, not treated, through consistent water quality, quarantining new fish, and appropriate feeding.",
+    },
+    routes: [
+      { slug: "goldfish-cost-guide", line: "The fish itself under $10, a $150 to $400 setup where filtration is the real cost, and $10 to $30 a month after that." },
+      { slug: "goldfish-tank-setup-guide", line: "The real tank size, filtration turnover math, water parameters, and cycling before the fish goes in." },
+      { slug: "goldfish-tank-size-bowl-myth", line: "Why goldfish don't grow to fit their tank, the real space requirements by variety, and what self-cleaning bowl kits get wrong." },
+      { slug: "goldfish-feeding-guide", line: "Schedule by life stage, pellets versus flakes versus gel, safe foods by tier, and the honest range of reasons a goldfish stops eating." },
+      { slug: "goldfish-handling-guide", line: "Why the slime coat matters, the net-and-container method, and what to do when bare hands are unavoidable." },
+      { slug: "goldfish-health-issues-guide", line: "Ich, flukes, anchor worm, velvet, fin rot, swim bladder disorder, dropsy, popeye, ulcers, and the signs that mean a vet visit." },
+      { slug: "goldfish-enrichment-guide", line: "What the research actually shows about plants and substrate, space and layout, and social stocking done right." },
+    ],
+    buyList: [
+      "20+ gallon tank (55+ gallons or a pond for common/comet varieties)",
+      "Canister filter or a strong hang-on-back filter, rated well above the tank's actual size",
+      "Water test kit",
+      "Water conditioner/dechlorinator",
+      "Gravel vacuum and two dedicated buckets",
+      "Smooth gravel or sand substrate",
+      "Plants, hardscape, and smooth decor, nothing sharp or fin-trapping",
+      "Soft rubber net, transfer container, thermometer, and lid",
+      "Sinking goldfish-specific pellets",
+    ],
     faqs: [
-      { q: "Do goldfish really only remember 3 seconds?", a: "No, this is a widespread myth. Research has shown goldfish retain memories for months, can learn to navigate mazes, associate feeding times with cues, and be trained to perform simple tricks. The 3-second myth likely persists partly to excuse keeping them in inadequate, unstimulating bowls." },
-      { q: "How big of a tank does a goldfish need?", a: "At minimum, 20 gallons for a single fancy goldfish, with 10 more gallons for each additional fish. Common and comet goldfish grow much larger, need at least 55 gallons for one and more per additional fish, and are better suited to a pond long term rather than a standard aquarium." },
-      { q: "Can goldfish live in a bowl?", a: "No. Bowls lack adequate oxygen exchange, filtration, and swimming space, and a goldfish kept in one will become stunted and stressed rather than staying conveniently small. This is one of the most damaging misconceptions in pet care and a major cause of shortened goldfish lifespans." },
-      { q: "What do goldfish eat?", a: "A high-quality goldfish pellet should form the base of their diet, supplemented regularly with blanched vegetables like peas and zucchini, which support healthy digestion. Occasional bloodworms or brine shrimp add variety. Avoid overfeeding, since goldfish beg constantly regardless of how full they are." },
-      { q: "How long do goldfish live?", a: "10 to 15 years is typical in a well-maintained tank, and goldfish kept in spacious outdoor ponds with excellent water quality have been documented living 20 to 30 years or more. Tank size and water quality are the two biggest factors separating a short goldfish lifespan from a long one." },
-      { q: "Are goldfish good pets for beginners?", a: "Yes, but the bowl reputation is exactly backwards. A goldfish kept in a bowl isn't a beginner setup, it's a welfare problem that produces a stunted, stressed fish. A properly filtered 20+ gallon tank makes goldfish a genuinely easy, long-lived, trainable first fish." },
+      { q: "Can I keep a goldfish and a betta together?", a: "Not recommended. Goldfish need cooler water (65-75°F) than bettas (78-80°F), and goldfish are voracious fin-nippers that will target a betta's long fins. The temperature mismatch alone makes this pairing a poor fit for either species." },
+      { q: "How do I know if my current goldfish tank is too small?", a: "Test the water. If ammonia or nitrite ever reads above zero between water changes, or if you're doing water changes more than twice a week just to keep the fish alive, the tank is undersized for the bioload it's carrying - regardless of what the fish looks like." },
+      { q: "Why has my goldfish stopped eating?", a: "Water quality problems are the single most commonly cited cause, ammonia or nitrite spikes especially in a newer tank. Overfeeding-driven constipation, stress from tank mates or a small enclosure, and early disease are the other common culprits. Seasonal pond dormancy and spawning behavior can also reduce appetite normally." },
     ],
   },
   {
@@ -369,46 +403,78 @@ export const fishGuides = [
     image: "/assets/guides/guppy.jpg",
     tagline: "The colorful, prolific livebearer that turns a starter tank into a thriving colony fast!",
     funFact: "Guppies are livebearers, meaning females give birth to free-swimming fry rather than laying eggs, and a single female can store sperm from one mating to produce several broods of 20 to 50+ fry over the following months. The species is named after Robert John Lechmere Guppy, who submitted specimens from Trinidad to the British Museum in the 1860s.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "10+ gallon tank", low: 40, high: 80 },
-        { item: "Aquarium heater", low: 15, high: 25 },
-        { item: "Gentle filter", low: 15, high: 25 },
-        { item: "Dense live or silk plants", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Flake/micro-pellet food + frozen brine shrimp", low: 35, high: 60 },
-        { item: "Water conditioner", low: 10, high: 15 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own, which is why there is no feeding frequency
+    // here: the feeding guide says outright that sources disagree, so the hub
+    // carries that disagreement instead of picking a side. Quarantine, cycling,
+    // and power outage cite the shared aquarium guides in the sidebar's Health
+    // and More list. Built 2026-09-09 for the guppy set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "5 gallons works as a bare minimum for a small trio, but 10 gallons is the more practical beginner starting point for a group of 5 or 6. Given how readily guppies breed, a 20-gallon tank is a better long-term choice if you're not actively separating males and females.", source: "guppy-tank-setup-guide" },
+        { label: "Water temperature", value: "A genuinely tropical species, comfortable in the 72 to 82°F range, with 76 to 78°F as a solid target. A heater is necessary unless your room stays consistently warm year-round, budget roughly 3 to 5 watts per gallon, so a 25 to 50 watt heater for a 10-gallon tank.", source: "guppy-tank-setup-guide" },
+        { label: "Water chemistry", value: "Guppies do best with a pH of 7.0 or above and moderately hard water, good calcium and magnesium content. If your tap water runs soft, a mineral supplement can help buffer it into a more suitable range.", source: "guppy-tank-setup-guide" },
+        { label: "Filtration", value: "Keep the flow gentle. A sponge filter works well and is the safer choice if you're allowing breeding, since it won't pull fry into strong current. A hang-on-back filter with adjustable flow also works well for a non-breeding setup.", source: "guppy-tank-setup-guide" },
+        { label: "Substrate", value: "Fine gravel or sand both work well, and darker substrate colors tend to make guppy coloring stand out more. Avoid sharp or coarse gravel, which can damage delicate fins.", source: "guppy-tank-setup-guide" },
+        { label: "Lighting", value: "A basic LED light on an 8 to 10 hour daily cycle is sufficient.", source: "guppy-tank-setup-guide" },
+        { label: "Sex ratio", value: "Two to three females per male minimum, and more females is better still. Six or more females per male is a common recommendation and there is nothing wrong with it. Or keep males only, which avoids the harassment question entirely, avoids the endless fry, and keeps the color.", source: "guppy-enrichment-guide" },
+        { label: "Feeding schedule", value: "Adults: once to three times a day. The portion rule matters more than the count, whichever frequency you settle on: feed only what's fully cleared within about 1 to 2 minutes.", source: "guppy-feeding-guide" },
+        { label: "Feeding fry and juveniles", value: "Fry, newborn to roughly 2 to 4 weeks, take the highest feeding frequency of any stage: 3 to 5 times a day, up to every 2 to 3 hours in the earliest days. Juveniles, roughly 1 to 3 to 4 months, get around 3 to 4 meals a day.", source: "guppy-feeding-guide" },
+        { label: "Diet", value: "The base diet should be a high-quality tropical fish flake or small pellet formulated for community fish, not goldfish food, which has a different, lower-protein profile. Rotate in protein-rich live, frozen, or freeze-dried foods, and add vegetable matter too, blanched and cut small.", source: "guppy-feeding-guide" },
+        { label: "Population plan", value: "Keep males and females in separate tanks if you want to avoid breeding entirely. Keep males only for a colorful, breeding-free tank. Let it happen and plan for it, rehoming or selling fry as they mature, or allowing natural predation to control numbers if you're not removing fry deliberately.", source: "guppy-handling-guide" },
+        { label: "Handling", value: "Guppies are an observation and enjoyment pet, not a hands-on one. If you need to move one, guide it with a net rather than touching it directly.", source: "guppy-handling-guide" },
+        { label: "Adult size", value: "Males are the smaller, more colorful sex, around an inch and a half, while females run larger and comparatively plain, up to about 2.4 inches.", source: "guppy-handling-guide" },
+        { label: "Budget", value: "Standard, wild-type guppies run $2 to $5 each, and fancy varieties $10 to $20 per pair. A basic 10-gallon starter kit, tank, filter, heater, water conditioner, and substrate, commonly runs $30 to $100 depending on the brand and size you choose.", source: "guppy-cost-guide" },
+        { label: "Lifespan", value: "2 to 3 years on average, up to 4 or 5 with excellent care. Female fertility drops off after around age 2.", source: "guppy-cost-guide" },
+        { label: "Cycling", value: "Most fishless cycles run four to six weeks at a warm, stable temperature, though real tanks have taken anywhere from about three weeks to two months. Treat any reading above zero as a signal to test again soon, and act with a water change once ammonia or nitrite climbs past roughly 0.1 to 0.25 ppm.", source: "aquarium-cycling-guide" },
+        { label: "Quarantine", value: "At least 30 days in a bare hospital tank before joining others, and 30 to 60 days for a fish you want to be genuinely sure about. Thirty days is the floor, not the target, since some parasites and infections take that long to show themselves.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "Aerate right away. A battery-powered air pump with an airstone is the cleanest fix. With no battery pump on hand, agitate the surface by hand roughly every 10 to 15 minutes in a small tank and every 20 to 30 minutes in a larger one.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
-    sections: {
-      housing: "A 10-gallon tank is a reasonable minimum for a small group of guppies, and they need warm, heated water between 72 and 82 degrees F, with about 78 degrees F being ideal. Gentle filtration suits them well, and dense live or silk planting gives both adults and fry places to hide, which matters if you want any fry to survive to adulthood. A lid is a good idea since guppies can occasionally jump. They are peaceful community fish, but avoid pairing them with fin-nipping species, since a guppy's flowing tail is an easy target.",
-      diet: "Guppies are omnivores that do well on a high-quality flake or micro-pellet food as their staple diet. Supplementing with frozen or live baby brine shrimp and daphnia adds valuable variety and encourages natural hunting behavior. Occasional spirulina-based flakes support healthy color. Feed small amounts once or twice a day. If you're intentionally raising fry, they need very fine food like infusoria, crushed flake, or baby brine shrimp until they're large enough for standard flake.",
-      enrichment: "Guppies are strongly social schooling fish and do best in groups of six or more, ideally with two to three females for every male to reduce the stress of constant mating pursuit on individual females. They're active, colorful swimmers that appreciate a mix of open swimming space and planted cover. Their breeding behavior is itself a form of ongoing enrichment for the keeper to observe - from courtship displays to the birth of live fry - though a dedicated breeding box or heavily planted nursery area is needed if you want fry to survive, since adult guppies (including the mother) will readily eat them.",
-      health: "Fin rot from poor water quality and ich are the two most common issues. Because guppies breed so readily, overpopulation is a genuine and common problem - plan ahead for population control, whether that means separating sexes, accepting natural predation of fry, or having a rehoming plan in place. The bioload from a rapidly growing colony makes consistent water quality maintenance especially important; weekly 20 to 25 percent water changes help keep pace with a growing population.",
-      checklist: [
-        "10+ gallon heated tank",
-        "Heater set to 76-80°F",
-        "Gentle filter",
-        "Dense live or silk plants",
-        "Tight-fitting lid",
-        "High-quality flake or micro-pellet food",
-        "Frozen baby brine shrimp for variety",
-        "Water conditioner and test kit",
-        "Plan for managing fry population growth",
+    emergencyCard: {
+      // The health issues guide carries no call-the-vet list of its own; the
+      // feeding guide's "When to Worry" section is the only one in the set, so
+      // the card copies that list bullet for bullet.
+      source: "guppy-feeding-guide",
+      callNow: [
+        "Appetite loss combined with lethargy, hiding, or erratic swimming",
+        "Gasping at the surface",
+        "Clamped or discolored fins",
+        "Cloudy eyes",
+        "Visible injuries",
+        "White spots",
+        "A swollen pinecone-like body",
       ],
+      vetLine: "Any of these, especially if spreading to other fish, is a signal to test water parameters immediately and consider a fish-health specialist rather than waiting. There's no single, universally agreed number for how long a guppy can safely go without food: a vet-affiliated source recommends contacting a vet if decreased appetite lasts more than one day, notably stricter than hobbyist consensus.",
     },
+    routes: [
+      { slug: "guppy-cost-guide", line: "$2 to $5 for a standard fish, $10 to $20 a pair for fancy strains, a modest setup, and the cost nobody budgets for: more guppies than you started with." },
+      { slug: "guppy-tank-setup-guide", line: "Tank size by group, the temperature target and heater math, water chemistry, gentle filtration, and cycling before the fish go in." },
+      { slug: "guppy-feeding-guide", line: "Frequency by life stage, the 1 to 2 minute portion rule, what to feed and what to skip, and six reasons a guppy stops eating." },
+      { slug: "guppy-handling-guide", line: "Why this is a watching pet rather than a handling one, how livebearer breeding actually works, and the four ways to manage the population." },
+      { slug: "guppy-health-issues-guide", line: "Ich, velvet, fin and tail rot, dropsy, and swim bladder disorder, each with its visible signs and treatment, plus why heavy salting is a bad idea with this species." },
+      { slug: "guppy-enrichment-guide", line: "What the harassment research says about sex ratio, why dense cover is a social tool rather than decor, and the priority order that follows from both." },
+    ],
+    buyList: [
+      "10 gallon tank, or 20 gallons if you're not separating the sexes",
+      "Aquarium heater sized to the tank",
+      "Sponge filter, or a hang-on-back filter with adjustable flow",
+      "Dense live or silk plants, floating plants included",
+      "Fine gravel or sand substrate",
+      "Tight-fitting lid",
+      "Water conditioner",
+      "Water test kit",
+      "High-quality tropical flake or micro-pellet food",
+      "Frozen or live brine shrimp and daphnia for variety",
+    ],
     faqs: [
-      { q: "How often do guppies have babies?", a: "Females can give birth roughly every 4 weeks and are able to store sperm from a single mating to produce multiple broods afterward, typically 20 to 50 or more fry per birth." },
-      { q: "Do guppies eat their babies?", a: "Yes - adult guppies, including the mother, will eat fry given the opportunity. If you want fry to survive to adulthood, use dense live plants, a breeding box, or a separate nursery tank to protect them." },
-      { q: "How many guppies should I keep together?", a: "At least 6, with a ratio of about 2 to 3 females for every male. This ratio reduces the constant mating pursuit that a 1:1 or male-heavy ratio puts on individual females, which can otherwise cause visible stress." },
-      { q: "What water temperature do guppies need?", a: "72 to 82°F, with roughly 78°F being ideal. Guppies are tropical fish and need a heater in the vast majority of home aquariums." },
-      { q: "How long do guppies live?", a: "2 to 3 years is typical with good water quality, appropriate temperature, and a varied diet." },
-      { q: "Are guppies good pets for beginners?", a: "Yes, they're one of the easiest community fish to keep. The one thing beginners underestimate is how fast they breed, a single female can produce a new brood roughly every four weeks, so have a population plan before you start." },
-      { q: "What's the difference between a guppy and a molly?", a: "Size and salt, mainly. [Mollies](/guides/molly/) run noticeably larger, 3 to 4.5 inches versus a guppy's 1 to 2.4 inches, and genuinely benefit from a bit of aquarium salt in a way guppies don't need. Both are prolific livebearers in the same family with otherwise very similar easy-beginner care." },
-      { q: "What's the difference between a guppy and a platy?", a: "Fins and body shape, mainly. Guppies are prized for their long, flowing tails in countless finnage varieties, while [platies](/guides/platy/) have a stockier, more torpedo-shaped body and lean more on solid color and pattern variety than fin shape. Platies also run a bit larger, 2 to 3 inches versus a guppy's 1 to 2.4 inches, but both are easy, similarly-kept Poeciliidae livebearers otherwise." },
-      { q: "What's the difference between a guppy and a zebra danio?", a: "Breeding method, mainly. Guppies are livebearers that give birth to free-swimming fry with no eggs involved, while a [zebra danio](/guides/zebra-danio/) is an egg-scatterer that lays and abandons eggs with no parental care at all. Both are cheap, hardy, classic first fish, but a danio school swims noticeably faster and needs more horizontal room than a calmer guppy group." },
+      { q: "What size tank does a guppy need?", a: "5 gallons is the bare minimum for a trio; 10 gallons is the practical starting point for a group of 5 or 6. Guppies breed readily, so a 20-gallon holds up better long term unless you separate males and females." },
+      { q: "How do I manage guppy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, a ratio of roughly one male to two or three females reduces females getting harassed too heavily by mating attempts." },
+      { q: "How often should I feed my guppy?", a: "Adults land somewhere between once and three times a day. The portion rule is the part that does not vary: only offer what's fully cleared in about 1 to 2 minutes. Overfeeding, not underfeeding, is the more common real mistake, guppies beg regardless of actual hunger." },
     ],
   },
   {

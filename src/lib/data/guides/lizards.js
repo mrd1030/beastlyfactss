@@ -150,67 +150,91 @@ These are powerful animals. A tame adult tegu can still cause injury unintention
       slug: "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
       title: "Chronicles of Dex: The Sun, the Glass, and the Cricket That Got Away",
     },
-    // Rough starting ranges, not verified current pricing - reviewed by
-    // Mike before treating these as accurate for readers.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft enclosure (PVC or wood/glass)", low: 200, high: 400 },
-        { item: "T5 HO UVB fixture + bulb", low: 60, high: 100 },
-        { item: "Basking bulb + fixture", low: 20, high: 40 },
-        { item: "Thermostat", low: 40, high: 80 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 30 },
-        { item: "Infrared thermometer gun", low: 15, high: 30 },
-        { item: "Substrate (tile)", low: 20, high: 40 },
-        { item: "Branches, hides, and decor", low: 30, high: 60 },
-        { item: "Food and water dishes", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "UVB bulb replacement (every 6-12 months)", low: 60, high: 100 },
-        { item: "Basking bulb replacement", low: 15, high: 25 },
-        { item: "Feeder insects (dubia, BSFL, crickets)", low: 200, high: 400 },
-        { item: "Leafy greens and vegetables", low: 150, high: 250 },
-        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
-        { item: "Electricity (heat and lighting)", low: 80, high: 150 },
-        { item: "Annual vet wellness check", low: 50, high: 100 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Lifespan is the exception: it comes
+    // from the encyclopedia entry, which no deep dive repeats. Day one,
+    // shedding, hygiene, and power outage cite the shared reptile guides in
+    // the sidebar's Health and More list, which the set test reported as
+    // gaps because the reader never opened them. Reconciled
+    // 2026-09-08 after the bearded dragon set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new dragon is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "4x2x2 ft, about 120 gallons, and that is the adult minimum, not an upgrade for later.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Basking surface", value: "95 to 110°F for adults, 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the surface itself.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Rest of the gradient", value: "Warm side air about 90°F, cool side 75 to 85°F, nights 65 to 75°F. Heat overnight only if the room falls below 65°F, with a ceramic heat emitter.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "UVB", value: "A linear T5 HO tube over about two-thirds of the enclosure, 12 to 18 inches from the basking surface, never behind glass. 10 to 14 hours a day, replaced every 6 to 12 months.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Humidity", value: "30 to 40%.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Floor", value: "Paper towel, newspaper, or tile. No loose sand, calcium sand included.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Diet ratio", value: "Juveniles roughly 80% insects and 20% greens. Adults flip to about 80% greens.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Hatchlings 2 to 3 times daily, 1 to 4 months twice daily, juveniles once daily, adults once daily or every other day with greens daily and insects a few times a week.", source: "bearded-dragon-feeding-guide" },
+        { label: "Calcium", value: "Gut-load the feeders, then dust with plain calcium: near-daily for juveniles, 2 to 3 times a week for adults, calcium with D3 a couple of times a week, a multivitamin once or twice a week.", source: "bearded-dragon-feeding-guide" },
+        { label: "Handling", value: "Wait 7 to 14 days before the first session. Scoop from below with all four feet supported. A black beard means the session is over.", source: "bearded-dragon-handling-guide" },
+        { label: "Vet", value: "An annual fecal exam with a sample less than 24 hours old, and a vet check before brumation season.", source: "bearded-dragon-health-issues-guide" },
+        { label: "Budget", value: "$400 to $800 to set up, $50 to $108 a month, and an emergency fund of a few hundred dollars.", source: "bearded-dragon-cost-guide" },
+        { label: "Adult size", value: "16 to 24 inches nose to tail tip, most adults 18 to 22.", source: "bearded-dragon-growth-weight-checks-guide" },
+        { label: "Lifespan", value: "10 to 15 years in captivity." },
+        { label: "Shedding", value: "Raise humidity toward the high end during the shed, give rough surfaces to rub on, and never pull loose skin. A 30-minute chin-deep soak at cage temperature loosens retained shed.", source: "reptile-shedding-complete-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the dragon out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "65°F is the normal night low. Below 60°F for more than a day or two, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `Adult bearded dragons need a minimum 4x2x2 ft enclosure, and larger is always better. Juveniles can start smaller but reach their adult size relatively quickly, so investing in the correct adult enclosure from the start makes practical sense. PVC or wooden enclosures with glass fronts retain heat better than glass tanks and are widely preferred by experienced keepers.
-
-The basking spot is the most critical element of a bearded dragon setup. A surface temperature of 95 to 110 degrees F for adults (105 to 115 degrees F for juveniles) is required under the basking light - this is not optional. Bearded dragons are ectotherms that need intense heat to digest food properly, support their immune system, and regulate their metabolism. Without an adequate basking spot, food sits undigested and the dragon becomes chronically ill. Measure the basking surface with an infrared temperature gun, not a stick-on thermometer.
-
-A strong full-spectrum desert UVB light is non-negotiable. Use a T5 HO UVB bulb - the Arcadia Dragon 14% or Zoo Med T5 HO Reptisun 10.0 are current industry standards. Bearded dragons need intense UVB for vitamin D3 synthesis and calcium metabolism. Compact or coil UVB bulbs are inadequate. Replace UVB bulbs every 6 to 12 months even if they still appear to emit light, as UV output degrades before visible light does.
-
-Substrate should be easy to clean and safe if accidentally ingested. Ceramic tile or paper towels work well for juveniles. Adults can be kept on a sand-soil mix (ReptiSand or a DIY 50/50 topsoil and playsand) if the enclosure is set up correctly and the dragon is well-fed. Loose calcium sand should be avoided entirely.`,
-      diet: `Bearded dragons are omnivores with age-dependent dietary requirements. Juveniles (under 12 months) should eat approximately 70 to 80% live insects and 20 to 30% leafy greens and vegetables. As they approach adulthood, the ratio flips: adults thrive on 70 to 80% leafy greens and vegetables with 20 to 30% insects. This shift mirrors their natural dietary habits in the wild.
-
-Staple insect feeders include dubia roaches (the gold standard), black soldier fly larvae (BSFL/CalciWorms), and crickets. Mealworms can be offered occasionally as a treat. Waxworms should be strictly limited - they are extremely high in fat and act like candy. Hornworms are excellent for hydration and variety. Always gut-load insects 24 to 48 hours before feeding, then dust with plain calcium at every juvenile feeding (3 to 4 times per week for adults), and add calcium with D3 just 2 to 3 times per week regardless of age, too much D3 on top of proper UVB exposure risks toxicity.
-
-Staple greens include collard greens, mustard greens, dandelion greens (pesticide-free), turnip greens, and endive. These are nutrient-dense and form the backbone of an adult's vegetable intake. Offer a variety and rotate frequently. Kale and spinach are fine in moderation but should not be the only green. Avoid iceberg lettuce (no nutritional value) and avocado (toxic).
-
-Fresh water in a shallow dish should always be available. Bearded dragons often bathe rather than drink from a dish - a 15-minute warm bath 2 to 3 times per week provides supplemental hydration and helps with shedding. Multivitamin supplementation once per week in addition to calcium is recommended.`,
-      enrichment: `Bearded dragons are one of the most interactive and personable reptiles available in the hobby. Many individuals become genuinely tame and seek out interaction with their keepers. Consistent, gentle handling from a young age is the most important factor in producing a calm, social adult.
-
-Provide climbing structures - thick branches, cork bark platforms, and rock formations - that allow the dragon to bask at different heights. A dig box filled with moist coconut fiber or organic topsoil gives them an outlet for their natural digging behavior. Many bearded dragons enjoy supervised free-roam time in a safe, warm room.
-
-Bearded dragons have been observed enjoying watching television, following the movements of animals on screen, and interacting with mirrors. While these are anecdotal, they suggest a cognitive engagement with their environment that is worth supporting. Novel objects, different safe foods offered as enrichment, and changes to the enclosure layout all provide mental stimulation.
-
-Shedding is a natural process that should not require intervention when husbandry is correct. Ensure adequate hydration through bathing during shed periods. Juvenile bearded dragons shed frequently (every few weeks) as they grow rapidly. Adults shed less often. Never peel or force shed off - this damages the underlying skin.`,
-      health: `Metabolic Bone Disease (MBD) is the most common serious health problem in bearded dragons and is entirely preventable. It results from inadequate UVB lighting, insufficient calcium supplementation, or both. Early signs include leg trembling, difficulty walking, soft or rubbery jaw, lethargy, and loss of appetite. Advanced MBD causes permanent skeletal deformities. Invest in quality UVB lighting and maintain a consistent supplementation schedule.
-
-Impaction occurs when a bearded dragon ingests substrate material that forms a blockage in the intestinal tract. Loose particulate substrates (especially calcium sand) are the primary cause. Signs include straining to defecate, a hard swollen abdomen, lethargy, and hind leg weakness. Treatment requires veterinary intervention. Using tile or paper substrate for juveniles eliminates this risk.
-
-Parasites - particularly pinworms and coccidia - are very common in bearded dragons, including those from reputable breeders. Annual fecal exams are strongly recommended even for apparently healthy animals. Many parasitic infections are subclinical (the dragon appears healthy) but cause chronic stress on the immune system.
-
-Yellow Fungal Disease (CANV, caused by Nannizziopsis guarroi) is a serious and often fatal fungal infection that presents as yellow, discolored, necrotic skin lesions. Any unusual skin lesion warrants immediate veterinary assessment. Adenovirus (Atadenovirus) is a common and poorly understood viral infection that can cause neurological symptoms, failure to thrive, and immunosuppression. Annual wellness visits with a reptile-experienced veterinarian are essential.`,
-      checklist: ["4x2x2 ft enclosure", "High-output desert UVB (T5 HO)", "Powerful basking bulb (95 to 110 degrees F adults, 105 to 115 for juveniles)", "Digital thermometer (infrared gun recommended)", "Calcium w/D3 + multivitamin", "Ceramic food and water dishes", "Juvenile insects (dubia, BSFL, crickets)", "Leafy greens daily", "Tile substrate", "Branches and hides for enrichment"],
+    emergencyCard: {
+      source: "bearded-dragon-health-issues-guide",
+      callNow: [
+        "Tremors or muscle twitching",
+        "Swelling in the jaw or limbs",
+        "A juvenile refusing food for 2 to 3 days",
+        "An adult refusing food for 1 to 2 weeks outside brumation, or any refusal with lethargy, abnormal stool, or a swollen abdomen",
+        "No stool for five or more days",
+        "A beard that stays dark for extended periods",
+        "Difficulty moving or climbing",
+        "Labored or open-mouth breathing",
+        "Diarrhea, or stool that's runny or foul-smelling for more than 2 days",
+        "Stargazing: the head held tilted up and back",
+        "Any skin lesions or discoloration",
+        "Swollen or bleeding gums, or cheesy material in the mouth",
+        "A toe or the tail tip turning dark, dry, or hard",
+        "Eyes swollen or closed for more than 2 days",
+        "Blistered, blackened, or peeling skin",
+        "Tissue protruding from the vent",
+      ],
+      vetLine: "A reptile vet, not a general clinic. Never dose an over-the-counter dewormer blind: get a fecal exam and treat what it finds.",
     },
+    routes: [
+      { slug: "bearded-dragon-cost-guide", line: "$40 to $100 for the dragon, $400 to $800 for the setup around it, and the surgery bill correct husbandry prevents." },
+      { slug: "bearded-dragon-shopping-list", line: "Every item in the cart with a price range and the reason it is there." },
+      { slug: "bearded-dragon-tank-setup-guide", line: "The full temperature table, UVB distance and replacement, humidity, and the substrate that will not impact." },
+      { slug: "bearded-dragon-feeding-guide", line: "Schedule by age, the insect-to-greens flip, gut-loading and dusting, and eight reasons a dragon stops eating." },
+      { slug: "bearded-dragon-safe-foods-guide", line: "Staple greens, occasional foods, the daily salad, and the never-feed list." },
+      { slug: "bearded-dragon-handling-guide", line: "Wait 7 to 14 days, scoop from below, and the signals that end a session." },
+      { slug: "bearded-dragon-health-issues-guide", line: "Metabolic bone disease, impaction, parasites, yellow fungus, atadenovirus, and the list that means the vet today." },
+      { slug: "bearded-dragon-brumation-guide", line: "How to tell brumation from illness, the pre-brumation vet check, and what a normal three months looks like." },
+      { slug: "bearded-dragon-growth-weight-checks-guide", line: "Weekly weigh-ins, the growth reference by age, and the 10 percent drop that means a vet." },
+      { slug: "bearded-dragon-eggs-and-egg-binding-guide", line: "Females lay without a male: the lay box, the digging window, and when it has become egg binding." },
+      { slug: "bearded-dragon-enrichment-guide", line: "Climbing, the dig box, foraging, supervised free-roam, and the priority order." },
+    ],
+    buyList: [
+      "4x2x2 ft PVC enclosure",
+      "Linear T5 HO UVB kit (Arcadia 14% Dragon or ReptiSun 10.0)",
+      "75W basking bulb and a ceramic dome fixture",
+      "Dimming thermostat",
+      "Digital thermometer and hygrometer for the cool side",
+      "Infrared temp gun for the basking surface",
+      "Paper towel or tile for the floor",
+      "Cork bark hide for the cool end, and a basking platform",
+      "Hammock",
+      "Dubia roaches or crickets, and feeding tongs",
+      "Plain calcium, calcium with D3, and a multivitamin",
+      "Shallow water dish",
+    ],
     faqs: [
-      { q: "How big do bearded dragons get?", a: "Adult bearded dragons (Pogona vitticeps) reach 16 to 24 inches total length and 300 to 500 grams, with males typically larger than females. Most reach adult size by 12 to 18 months, though they continue filling out through their second year." },
-      { q: "What do bearded dragons eat?", a: "Juveniles (under 12 months) eat roughly 70% live insects and 30% leafy greens daily. Adults flip this ratio to 70% leafy greens and 30% insects every other day. Staple feeders include dubia roaches, black soldier fly larvae, and crickets. Staple greens include collard greens, mustard greens, and dandelion greens. Avocado, fireflies, and rhubarb are toxic and must be avoided." },
-      { q: "Do bearded dragons need UVB?", a: "Yes, absolutely - this is non-negotiable. Bearded dragons require strong desert UVB lighting (T5 HO Arcadia Dragon 14% or equivalent) on a 12-hour cycle. Without adequate UVB they cannot metabolize calcium, which causes Metabolic Bone Disease (MBD). Replace UVB bulbs every 6 to 12 months even if they still emit visible light, as UV output degrades before the visible light does." },
-      { q: "What is brumation in bearded dragons?", a: "Brumation is a hibernation-like state triggered by shorter days and cooler temperatures, typically in autumn and winter. Signs include prolonged sleep, reduced appetite, and decreased activity lasting weeks to months. A healthy dragon in brumation should still drink water when offered. Always have a vet rule out illness before assuming brumation, as the two can look identical." },
-      { q: "How long do bearded dragons live?", a: "Bearded dragons typically live 10 to 15 years in captivity with proper care. Key longevity factors are correct UVB, a varied diet, regular parasite screening via annual fecal exams with a reptile vet, and avoiding obesity. Females may have shorter lifespans than males if allowed to produce eggs frequently without adequate calcium reserves." },
+      { q: "How hot does the basking spot need to be?", a: "95 to 110°F on the basking surface for adults, and 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the actual surface rather than the air. That heat comes from a separate basking bulb, not the UVB tube, which supplies UV but little usable heat on its own." },
+      { q: "Why has my bearded dragon stopped eating?", a: "Often it's brumation, a shed, or, in females, a gravid cycle before laying, all normal. It becomes a concern when the enclosure's temperature isn't letting the dragon digest, or when refusal comes with lethargy, abnormal stool, or a swollen abdomen." },
+      { q: "What is the most common health problem in pet bearded dragons?", a: "Metabolic bone disease. It comes from too little calcium, inadequate or incorrect UVB, or a diet too high in phosphorus relative to calcium, and juveniles under two years old are hit hardest. Almost every case is preventable with correct lighting and supplementation." },
     ],
   },
   {
@@ -221,64 +245,95 @@ Yellow Fungal Disease (CANV, caused by Nannizziopsis guarroi) is a serious and o
     petType: "Lizards",
     image: "/assets/guides/blue-tongue-skink.jpg",
     tagline: "The chunky, blue-tongued charmer who loves a good meal!",
-    funFact: "Blue tongue skinks give live birth and are one of the largest skink species kept as pets. Adults can reach 18 to 24 inches!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft enclosure", low: 150, high: 300 },
-        { item: "Moderate UVB (T5 HO Arcadia 6%)", low: 50, high: 90 },
-        { item: "Basking bulb + fixture", low: 20, high: 40 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Coconut fiber + topsoil substrate", low: 20, high: 35 },
-        { item: "Large water dish", low: 15, high: 25 },
-        { item: "Multiple hides and enrichment items", low: 20, high: 40 },
-      ],
-      annual: [
-        { item: "Leafy greens and vegetables", low: 150, high: 250 },
-        { item: "Insect and protein feeders", low: 100, high: 200 },
-        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
-        { item: "UVB bulb replacement", low: 60, high: 100 },
-        { item: "Electricity (heat and lighting)", low: 60, high: 100 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+    funFact: "Blue tongue skinks give live birth instead of laying eggs, and they are one of the largest skink species kept as pets.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size is the exception: it comes
+    // from the encyclopedia entry, which no deep dive repeats. Northern and
+    // Indonesian animals are two different husbandry problems under one name,
+    // so every row the tank setup guide splits by subspecies stays split here
+    // rather than being flattened into one range. Day one, shedding, hygiene,
+    // and power outage cite the shared reptile guides in the sidebar's Health
+    // and More list, which the set tests keep reporting as gaps because the
+    // reader never opens them. Reconciled 2026-09-09 after the blue tongue
+    // skink set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new lizard is quarantined 3 to 6 months away from any reptile you already keep, in a separate room on plain paper towel, with its own tools, and a vet check within two weeks of acquiring it with a fresh fecal sample.", source: "reptile-quarantine-guide" },
+        { label: "Which skink is it", value: "Most Indonesian skinks sold in the US pet trade are wild-caught, and wild-caught animals commonly carry parasite loads picked up before import. Northern skinks are almost universally captive-bred. Knowing which one you have changes almost everything below.", source: "blue-tongue-skink-health-issues-guide" },
+        { label: "Enclosure", value: "Adult minimum is 4x2x2 feet, roughly 8 square feet of floor space, for either type. Bigger is always better. Front-opening PVC enclosures are preferred over glass since they hold humidity more effectively, which matters more for Indonesian skinks specifically.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Basking surface", value: "Northern basking surface: 105 to 115°F. Indonesian basking surface: slightly cooler, 100 to 105°F.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Rest of the gradient", value: "Cool side (both): 70 to 80°F. Nighttime: stays above roughly 70°F for both types. A heat source (halogen or a deep heat projector) is required, mounted with a basking dome fixture and run on a thermostat, which is what holds the surface inside those ranges instead of letting an unregulated bulb climb past them and burn the animal.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Humidity", value: "Northerns need relatively low humidity, around 40%. Indonesians need considerably more, 60 to 80%. Achieve the higher Indonesian range through moisture-retentive substrate, regular misting, and a larger water bowl.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Floor", value: "A naturalistic soil mix works for both, roughly 60% topsoil to 40% play sand for Northerns, with Indonesian setups benefiting from added moisture-retentive elements, leaf litter, sphagnum moss, or a coco-fiber-based product. Keep it 4 to 6 inches deep.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO bulb anywhere from 5 to 12% output, picked against how high above the basking area it will hang, spanning at least half the enclosure on the warm side, replaced every 12 months regardless of whether it still visibly lights up. Keep the skink no closer than about 10 inches from the bulb.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Photoperiod", value: "Run a photoperiod of roughly 11 to 13 hours depending on season for either type.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Diet ratio", value: "Young skinks, under about 12 months and by some guidance up to 24, need a protein-heavy diet, roughly 70 to 80% animal matter. Mature adults shift toward plant-heavy, roughly 40 to 60% animal protein and 45 to 60% leafy greens and vegetables, with about 5 to 10% fruit as treats.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Feeding schedule", value: "Babies, hatching to 3 to 5 months, are fed daily, sometimes 2 to 3 times a day, plus one designated fasting day a week. Juveniles, roughly 3 to 10 months, 3 to 4 times a week. Subadults and adults eat every 1 to 3 days on veterinary guidance; leaner schedules of once or twice a week circulate widely, and the veterinary interval is the one to follow.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Portion", value: "One meal roughly the size of the skink's own skull, or about 1 to 2 tablespoons for an adult, is the commonly cited portion.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Supplements", value: "Dust feeder insects with calcium, low or no phosphorus, frequency ranges from every feeding to a few times a week depending on the product and source. A separate multivitamin is used more sparingly, once or twice a week to once or twice a month.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Weight checks", value: "Sources converge in the 7 to 10% body-weight-loss range as an urgent threshold, weighing weekly on a gram-accurate scale and keeping a log is the standard way to catch a slow decline before it becomes obvious.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Handling", value: "Leave a new skink alone for 2 to 3 weeks before attempting to handle it, giving it time to settle into its enclosure and start eating normally. Build trust gradually through food-based interaction, and let handling follow from there.", source: "blue-tongue-skink-handling-guide" },
+        { label: "Session length", value: "Start at 5 minutes a day, adding a minute each time the skink sits still, until it holds still for at least 15 minutes. Start a juvenile or a new wild-caught Indonesian at the 5-minute end. A settled captive-bred Northern can run to the full 15 minutes.", source: "blue-tongue-skink-handling-guide" },
+        { label: "Picking one up", value: "Come in from the side, where it can see you. Slide a hand under the body and support the whole animal along your forearm, tail included. Never lift or hold one by the tail. Wash your hands first, so they do not smell like a food item.", source: "blue-tongue-skink-handling-guide" },
+        { label: "Reading the animal", value: "Short snorts or huffs mean annoyance, tail flicking or wagging means irritation, and long huffs or hisses with the body tilted and puffed up mean the skink has moved on to aggression. What to do is the same at every step: stop, take your hands out, and end the session there.", source: "blue-tongue-skink-handling-guide" },
+        { label: "Enrichment", value: "Scatter food across the substrate. Hide portions under cork and leaf litter. Vary where the food appears from day to day, so the search stays a search. Blue tongues are terrestrial and cover ground, so footprint beats height every time.", source: "blue-tongue-skink-enrichment-guide" },
+        { label: "The skink", value: "Northern (Australian) blue-tongued skinks typically run $150 for babies up to $250 for adults, with high-color or rare morphs reaching $400 to $700. Indonesian skinks are noticeably cheaper, generally $100 to $250.", source: "blue-tongue-skink-cost-guide" },
+        { label: "Budget", value: "Roughly $330 to $635 to set up, and total initial investment with the animal commonly lands between $430 and $1,335. Ongoing, roughly $490 to $830 a year, or about $41 to $69 a month once averaged out.", source: "blue-tongue-skink-cost-guide" },
+        { label: "Vet", value: "A routine exam runs roughly $100 to $150, with annual checkups recommended for any skink. Wild-caught Indonesian skinks frequently need a fecal exam and deworming treatment right after purchase, an added cost that Northern buyers usually skip entirely.", source: "blue-tongue-skink-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years is the commonly cited average, with well-documented cases living past 30.", source: "blue-tongue-skink-cost-guide" },
+        { label: "Adult size", value: "17-24 inches (43-60 cm)." },
+        { label: "Shedding", value: "Raise humidity toward the high end during the shed, give rough surfaces to rub on, and never pull loose skin. A 30-minute chin-deep soak at cage temperature loosens retained shed.", source: "reptile-shedding-complete-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact, keep reptiles out of the kitchen entirely, and never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "The normal night low stays above about 70°F. Act below 70°F: add heat, move the animal, or call ahead to a sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `A 4x2x2 ft enclosure is the minimum for a single adult blue tongue skink, though larger is always preferable. Blue tongues are terrestrial lizards - floor space matters far more than height. They are active, exploratory animals that will walk laps of their enclosure daily when conditions are correct, so generous floor space meaningfully improves their quality of life.
-
-The basking spot is critical. Surface temperatures of 95 to 110 degrees F are required under the basking area, with the exact target depending on subspecies (Northern blue tongues prefer the higher end). The ambient warm side should be 80 to 85 degrees F, and the cool side 70 to 75 degrees F. Measure with an infrared temperature gun. An under-tank heater used alongside an overhead basking light creates the most naturalistic gradient.
-
-Moderate UVB (T5 HO 5 to 6%, or Arcadia 6% Forest Bulb) is strongly recommended. While blue tongue skinks can survive without UVB when supplementation is excellent, UVB-exposed animals show better bone density, more natural behavior, and improved overall health outcomes. Run UVB on a 10 to 12 hour cycle.
-
-Substrate should be 3 to 4 inches deep and appropriate for burrowing: coconut fiber, a topsoil/coconut fiber mix, or a similar moisture-retaining substrate. Blue tongue skinks like to burrow partially and benefit from substrate depth. Provide multiple hides (at least two, warm and cool ends) and a fresh water dish large enough to soak in.`,
-      diet: `Blue tongue skinks are omnivores that require a carefully balanced diet split between animal protein and plant matter. The ideal ratio for most adult Northern blue tongue skinks (Tiliqua scincoides intermedia) is approximately 40 to 60% vegetables and leafy greens, 30 to 40% protein sources, and no more than 5 to 10% fruit.
-
-Staple vegetables and greens include collard greens, mustard greens, dandelion greens, squash, green beans, and bell peppers. Dark leafy greens should form the bulk of the plant portion. Rotate variety regularly. Avoid spinach, beet greens, and other high-oxalate foods as primary staples.
-
-Protein sources include gut-loaded insects (dubia roaches, crickets, black soldier fly larvae), lean cooked chicken or turkey, hard-boiled eggs, and high-quality low-grain cat or dog food as an occasional addition. Different subspecies have different protein needs: Northern blue tongues are higher-protein feeders from tropical, prey-rich environments, while Indonesian subspecies (Merauke, Halmahera, Kei Island) tolerate less protein and more plant matter.
-
-Dust food with calcium w/D3 powder 2 to 3 times per week and a reptile multivitamin once per week. Fresh water should always be available. Obesity from overfeeding high-fat protein sources or fruit is one of the most common husbandry mistakes - feed appropriate portions and monitor body condition (ribs should be slightly palpable but not prominently visible).`,
-      enrichment: `Blue tongue skinks are among the most interactive and personable lizards kept as pets. Many individuals become remarkably tame and genuinely seem to enjoy human interaction. Consistent, gentle handling from a young age produces calm, confident adults that tolerate and even seek out contact.
-
-Provide at least two hides (one warm, one cool), a dig area where the skink can partially burrow, and objects for exploration - cork bark, flat rocks, and varied substrate textures. Blue tongue skinks are intelligent and benefit from environmental novelty. Rearranging furniture occasionally, offering food in different locations (foraging enrichment), and introducing safe novel objects all help prevent boredom.
-
-Supervised free-roam time in a warm, safe room is excellent enrichment. Blue tongues are ground-level explorers that move with purpose and investigate new environments confidently. Many keepers allow their skinks to roam a section of floor under supervision regularly.
-
-Bathing in a shallow warm water tub for 15 to 20 minutes once or twice a week provides hydration, supports shedding, and keeps the skin healthy. Many blue tongue skinks enjoy soaking and become visibly relaxed in warm water.`,
-      health: `Obesity is the most common chronic health problem in pet blue tongue skinks. It results from overfeeding protein-rich foods (especially cat/dog food and waxworms), excessive fruit, and insufficient exercise in small enclosures. Obese blue tongue skinks develop fatty liver disease, cardiac problems, and shortened lifespans. Monitor body condition regularly - a healthy skink should feel firm and muscular, not squishy.
-
-Respiratory infections typically result from temperatures that are too low or humidity that is too high. Blue tongue skinks in cool, damp conditions develop bacterial respiratory infections that require veterinary antibiotic treatment. Ensure the basking spot is hot enough and the enclosure has appropriate ventilation.
-
-Parasites are common, particularly in animals sourced from unknown backgrounds or wild-caught situations. Annual fecal exams with a reptile vet are recommended for all blue tongue skinks. Many carry subclinical parasite loads that, when combined with stress, can become active problems.
-
-Subspecies identification matters for care. Northern blue tongue skinks and Indonesian subspecies have different temperature, humidity, and dietary requirements. Research the specific subspecies you are keeping. Annual wellness checks with a reptile-experienced veterinarian are strongly recommended.`,
-      checklist: ["4x2x2 ft enclosure", "Moderate UVB (T5 HO Arcadia 6%)", "Basking bulb (95 to 110 degrees F)", "Digital thermometer and hygrometer", "Coconut fiber + topsoil mix substrate", "Calcium and multivitamin supplements", "Leafy greens and vegetables", "Quality insect feeders", "Large water dish", "Multiple hides and enrichment items"],
+    emergencyCard: {
+      source: "blue-tongue-skink-health-issues-guide",
+      callNow: [
+        "A soft or rubbery jaw",
+        "A kinked spine",
+        "Tremors",
+        "Difficulty walking",
+        "A wild-caught or unspecified-origin skink that has not had a fecal exam and deworming",
+        "Nasal or oral discharge",
+        "Bubbling",
+        "Open-mouth breathing",
+        "Wheezing",
+        "Retained shed on the toes or tail that has progressed to infection",
+        "Scale rot on the belly that has progressed to infection",
+      ],
+      vetLine: "Metabolic bone disease is a vet situation always, and advanced cases are irreversible. Early respiratory cases often resolve once temperature and humidity are corrected, advanced cases need a vet and antibiotics. Always see a vet for a fecal exam and appropriate deworming, fenbendazole for roundworms and pinworms, praziquantel for tapeworms and flukes, if you've acquired a wild-caught or unspecified-origin skink.",
     },
+    routes: [
+      { slug: "blue-tongue-skink-cost-guide", line: "What the animal costs, why a Northern costs more than an Indonesian, the setup table, the annual running total, and vet costs." },
+      { slug: "blue-tongue-skink-tank-setup-guide", line: "The 4x2x2 ft minimum, and the temperature and humidity split that makes a Northern and an Indonesian two different setups." },
+      { slug: "blue-tongue-skink-handling-guide", line: "The bluff display, the huff scale, how to pick a heavy lizard up, and how long a session should run." },
+      { slug: "blue-tongue-skink-health-issues-guide", line: "Metabolic bone disease, the parasite load that comes with a wild-caught animal, respiratory infection, obesity, retained shed and scale rot." },
+      { slug: "blue-tongue-skink-feeding-guide", line: "Schedule by age, the protein-to-greens flip, the portion size, the toxic list, and eight reasons a skink stops eating." },
+      { slug: "blue-tongue-skink-enrichment-guide", line: "The mealworm study that reduced hiding, scatter feeding, the dig box, and the priority order to build in." },
+    ],
+    buyList: [
+      "4x2x2 ft front-opening PVC enclosure",
+      "T5 HO UVB kit spanning at least half the warm side",
+      "Halogen bulb or deep heat projector, and a basking dome fixture",
+      "Thermostat for the heat source",
+      "Digital thermometer and hygrometer",
+      "Topsoil and play sand, or a coco-fiber-based substrate, 4 to 6 inches deep",
+      "Leaf litter or sphagnum moss, for an Indonesian setup",
+      "Multiple hides, one at each end of the gradient",
+      "A water dish large enough for the skink to fully submerge in",
+      "Calcium, low or no phosphorus, and a reptile multivitamin",
+      "Gut-loaded feeder insects, and soft-tipped feeding tongs",
+      "A gram-accurate scale for weekly weigh-ins",
+      "A storage tub for a dig box",
+    ],
     faqs: [
-      { q: "What do blue-tongue skinks eat?", a: "Blue-tongue skinks are omnivores that need variety. A good adult diet is roughly 60% animal protein and 40% vegetables and greens. Protein sources include cooked turkey, chicken, low-fat dog food as an occasional base, dubia roaches, and cooked eggs. Vegetables should include collard greens, dandelion greens, squash, and bell peppers. Fruit can be offered as an occasional treat under 5% of the diet. Avoid avocado, onion, rhubarb, and high-oxalate foods like spinach in large quantities." },
-      { q: "How big do blue-tongue skinks get?", a: "Adults reach 18 to 24 inches in total length and typically weigh 400 to 600 grams. Northern blue-tongue skinks tend toward the larger end of that range. They are stocky, robust lizards with a wide blunt head and the distinctive blue tongue that flashes as a warning display. They are fully grown by 2 to 3 years of age, though they continue to fill out until age 4." },
-      { q: "Do blue-tongue skinks need UVB?", a: "Yes, and this is now the strong consensus of reptile veterinary professionals. Blue-tongue skinks benefit significantly from moderate UVB (T5 HO Arcadia 6% or equivalent). UVB supports calcium metabolism and D3 synthesis, reduces disease risk, and improves long-term health outcomes. Keepers maintained blue-tongues for years without UVB, but skeletal and immune health is measurably better with it. A 12-hour light cycle that includes UVB is considered standard modern husbandry." },
-      { q: "Are blue-tongue skinks good pets?", a: "Blue-tongue skinks are excellent pets for keepers with some reptile experience. They are diurnal (active during the day), large enough to handle comfortably, and develop recognizable personalities - many become quite bold and interactive. They are generally reluctant to bite but will hiss and display their blue tongue when threatened. Their varied omnivorous diet requires more food preparation than insect-only reptiles, but the feeding process becomes an enriching routine." },
-      { q: "How long do blue-tongue skinks live?", a: "With good care, blue-tongue skinks commonly live 15 to 25 years in captivity, with some individuals exceeding 25 years. Northern blue-tongue skinks in particular are known for their robust constitution and longevity. This makes them a genuine long-term commitment - annual wellness checks with a reptile-experienced vet are recommended, especially as the skink ages past 10 years." },
+      { q: "Do Northern and Indonesian skinks need different temperatures?", a: "Yes, slightly. Northern basking surface should run 105 to 115°F, Indonesian basking surface a bit cooler at 100 to 105°F. Both need a cool side of 70 to 80°F and nighttime temperatures staying above roughly 70°F." },
+      { q: "Is the cheaper Indonesian skink the better budget choice?", a: "Not usually. Wild-caught Indonesian skinks frequently need a fecal exam and deworming right after purchase, which Northern buyers typically skip, and they take longer to tame. For a first-time keeper, a captive-bred Northern often works out to a comparable total cost with meaningfully lower risk." },
+      { q: "What is the first sign of metabolic bone disease in a blue-tongued skink?", a: "A soft or rubbery jaw is often the first thing owners notice, followed by a kinked spine, tremors, and difficulty walking in more advanced cases. It's caused by inadequate UVB and or calcium. This is a vet situation always, and advanced cases are irreversible, which is exactly why UVB and calcium supplementation matter from day one." },
     ],
   },
   {
@@ -289,7 +344,7 @@ Subspecies identification matters for care. Northern blue tongue skinks and Indo
     petType: "Lizards",
     image: "/assets/guides/fire-skink.jpg",
     tagline: "Spectacular red and gold, and it will spend most of its life underground!",
-    funFact: "Fire skinks are one of the most brightly coloured lizards in the hobby and one of the most rarely seen in their own enclosure. Give one four inches of substrate and it will vanish; give it eight to ten and it will build a burrow system, come out to bask, and behave like a completely different animal.",
+    funFact: "Fire skinks are one of the most brightly colored lizards in the hobby and one of the most rarely seen in their own enclosure. Give one four inches of substrate and it will vanish; give it eight to ten and it will build a burrow system, come out to bask, and behave like a completely different animal.",
     // Labels match `covers` strings in affiliateProducts.js and the figures are those
     // products' vetted prices. See scripts/check-cost-coverage.mjs.
     costs: {
@@ -315,7 +370,7 @@ Subspecies identification matters for care. Northern blue tongue skinks and Indo
     sections: {
       housing: `A single adult wants 36x18x18 inches as a floor-space-first enclosure. Height is close to irrelevant here; fire skinks are terrestrial and fossorial, and the useful dimension is length and depth.
 
-Substrate is the whole game with this species. Use four to six inches of a mix that holds a tunnel. ReptiFiles gives 40 percent organic topsoil, 40 percent coconut fibre and 20 percent fine sand, kept slightly damp, with leaf litter on top. A fire skink in shallow bedding hides in one corner under a hide and looks permanently nervous. The same animal in deep substrate builds a burrow, uses the whole enclosure and comes out to bask.
+Substrate is the whole game with this species. Use four to six inches of a mix that holds a tunnel. ReptiFiles gives 40 percent organic topsoil, 40 percent coconut fiber and 20 percent fine sand, kept slightly damp, with leaf litter on top. A fire skink in shallow bedding hides in one corner under a hide and looks permanently nervous. The same animal in deep substrate builds a burrow, uses the whole enclosure and comes out to bask.
 
 Provide a basking surface of 92 to 96 degrees F, a cool end of 75 to 85, and a night drop to 70 to 75. Use a halogen flood on a dimmer rather than a ceramic emitter, since these animals do respond to visible basking light.
 
@@ -335,7 +390,7 @@ Keep fresh water available at all times in a dish heavy enough not to be tipped 
 
 Add cork bark tunnels, flat stones near the basking area, sphagnum-stuffed hides and a dense litter layer. Live plants such as pothos survive in a fire skink enclosure better than they do with larger lizards, though the digging will disturb roots.
 
-Feed with tongs or scatter feed into the litter. Scatter feeding gets them foraging through the leaves, which is what they do in the wild and is the easiest natural behaviour to encourage.
+Feed with tongs or scatter feed into the litter. Scatter feeding gets them foraging through the leaves, which is what they do in the wild and is the easiest natural behavior to encourage.
 
 Handling is possible but should be earned slowly. Fire skinks are fast and initially flighty, and a stressed one will drop its tail. Start with tong feeding, then short sessions low over a soft surface. Many settle into being reliably handleable; some never do.
 
@@ -344,14 +399,14 @@ Keep one per enclosure unless you have real experience. Males will fight, and mi
 
 Retained shed on the toes and tail tip is the most common minor complaint and is nearly always a humidity problem. A humid hide and a slightly damp substrate layer usually resolve it. Rings of retained skin left in place can cut off circulation.
 
-Impaction is the reason to avoid sand, gravel and any loose particulate that does not hold moisture. A soil and coco fibre mix is both better for burrowing and safer to swallow incidentally.
+Impaction is the reason to avoid sand, gravel and any loose particulate that does not hold moisture. A soil and coco fiber mix is both better for burrowing and safer to swallow incidentally.
 
-Wild-caught animals are still common in this trade and often arrive with parasite loads, dehydration and injuries. Ask about origin. A captive-bred fire skink costs more and starts far healthier, and a fresh import should have a faecal check early.
+Wild-caught animals are still common in this trade and often arrive with parasite loads, dehydration and injuries. Ask about origin. A captive-bred fire skink costs more and starts far healthier, and a fresh import should have a fecal check early.
 
 Mouth rot and respiratory infections follow from enclosures that are wet rather than humid, with no ventilation or no thermal gradient.`,
       checklist: [
         "36x18x18 in front-opening terrarium",
-        "4 to 6 inches of topsoil, coco fibre and sand",
+        "4 to 6 inches of topsoil, coco fiber and sand",
         "Leaf litter layer and cork bark cover",
         "Halogen basking bulb on a dimmer, 92 to 96 F",
         "Linear T5 UVB, 5 to 6 percent",
@@ -363,11 +418,11 @@ Mouth rot and respiratory infections follow from enclosures that are wet rather 
       ],
     },
     faqs: [
-      { q: "Why does my fire skink hide all the time?", a: "Almost always because the substrate is too shallow. Fire skinks are burrowers, and in four inches of bedding the only option is to wedge under a hide and stay there. At six to ten inches of a soil and coco fibre mix that holds a tunnel, they build a burrow system and start using the whole enclosure, basking in the open and foraging through the leaf litter. Depth of substrate changes this species more than any other single factor." },
+      { q: "Why does my fire skink hide all the time?", a: "Almost always because the substrate is too shallow. Fire skinks are burrowers, and in four inches of bedding the only option is to wedge under a hide and stay there. At six to ten inches of a soil and coco fiber mix that holds a tunnel, they build a burrow system and start using the whole enclosure, basking in the open and foraging through the leaf litter. Depth of substrate changes this species more than any other single factor." },
       { q: "Do fire skinks need UVB?", a: "Yes. They are diurnal and bask, and while some keepers raise them without UVB using heavy D3 supplementation, the results are far more consistent with it. Use a linear T5 at 5 to 6 percent over part of the enclosure rather than a compact coil, mount it at the distance the manufacturer specifies, and replace it every twelve months even though it still emits visible light." },
       { q: "Can you handle a fire skink?", a: "Some, with patience. They are fast and start out flighty, and a stressed one can drop its tail, which regrows but never matches. Build up through tong feeding first, then short sessions held low over a soft surface so a jump does not end badly. Plenty of fire skinks become reliably handleable adults, and some simply stay display animals. Buying captive bred makes a calm outcome much more likely." },
-      { q: "Is my fire skink wild caught?", a: "Quite possibly, and it is worth asking directly. A large share of fire skinks in the trade are still imported, and wild-caught animals typically arrive dehydrated, carrying parasites, and sometimes with injuries or missing toes. They can settle in well, but they need a faecal test and a quiet acclimation period. Captive-bred animals cost more and start much healthier." },
-      { q: "How big do fire skinks get?", a: "About 12 to 15 inches including the tail, with the body itself a good deal shorter than that suggests. They are heavy-bodied for their length rather than lanky. That size makes a 36x18x18 inch enclosure a comfortable adult home for one animal, prioritising floor area over height since they spend their time on and under the ground." },
+      { q: "Is my fire skink wild caught?", a: "Quite possibly, and it is worth asking directly. A large share of fire skinks in the trade are still imported, and wild-caught animals typically arrive dehydrated, carrying parasites, and sometimes with injuries or missing toes. They can settle in well, but they need a fecal test and a quiet acclimation period. Captive-bred animals cost more and start much healthier." },
+      { q: "How big do fire skinks get?", a: "About 12 to 15 inches including the tail, with the body itself a good deal shorter than that suggests. They are heavy-bodied for their length rather than lanky. That size makes a 36x18x18 inch enclosure a comfortable adult home for one animal, prioritizing floor area over height since they spend their time on and under the ground." },
     ],
   },
   {
@@ -449,83 +504,85 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
     image: "/assets/guides/green-iguana.jpg",
     tagline: "A six foot arboreal herbivore sold as a six inch hatchling!",
     funFact: "Green iguanas have a pale scale on the top of the head called the parietal eye. It is a genuine third eye with a lens and a retina, wired to the pineal gland rather than to vision, and it detects shadow moving overhead. It is an early warning system for birds of prey.",
-    // Labels match `covers` strings in affiliateProducts.js and the figures are those
-    // products' vetted prices. See scripts/check-cost-coverage.mjs. The stocked 8x4x4
-    // enclosure is the largest wired up and is still under the 10x5x6 ft minimum this
-    // species needs, so the adult enclosure line is priced as a custom build.
-    costs: {
-      setup: [
-        { item: "Custom PVC/wood enclosure, 8x4x4ft", low: 650, high: 730 },
-        { item: "Strong desert UVB (T5 HO 12%+)", low: 55, high: 70 },
-        { item: "Halogen basking bulb + fixture", low: 18, high: 25 },
-        { item: "Branches for climbing/enrichment", low: 15, high: 30 },
-        { item: "Large water tub for soaking", low: 95, high: 120 },
-        { item: "Digital thermometer and hygrometer", low: 11, high: 19 },
-      ],
-      annual: [
-        { item: "Greens and vegetables, year round", low: 400, high: 800 },
-        { item: "Calcium and multivitamin supplements (herbivore, no added phosphorus)", low: 20, high: 28 },
-        { item: "UVB bulb replacement (every 6-12 months)", low: 111, high: 141 },
-        { item: "Electricity for heat and lighting", low: 200, high: 450 },
-        { item: "Exotic vet check, plus dental and bloodwork as needed", low: 100, high: 300 },
-      ],
-    },
-    sections: {
-      housing: `Plan the adult enclosure before buying the hatchling. This is the whole problem with the species: a six inch juvenile in a 40 gallon tank becomes a five to six foot lizard, and the published minimum for a single adult is 10 feet long, 5 deep and 6 tall. Almost nobody buys that in advance, and the result is thousands of surrendered iguanas a year.
-
-Build upward as well as outward. Green iguanas are arboreal and will use height if it exists: broad branches, shelves and platforms at basking height matter more than floor area.
-
-Basking surface temperature should be around 120 degrees F, which surprises people used to smaller lizards, with general air temperature at 75 to 88 and a night range of 73 to 84. You are heating a large-bodied animal evenly rather than warming a spot, so use a cluster of halogen floods on dimmers: at least two bulbs for a juvenile and four or more for an adult.
-
-UVB is non-negotiable and needs to be strong. A high-output linear T5 at 12 to 14 percent, mounted at the manufacturer distance from the basking branch and running the length of the basking zone. The target is a UV index of 3 to 4 measured at the branch itself. Replace it every twelve months. Coil bulbs are useless for an animal this size.
-
-Humidity of 60 to 80 percent through the day, rising toward 100 at night, which usually needs a misting system or a large evaporation surface rather than hand spraying. Provide a water basin big enough for the animal to sit in.`,
-      diet: `Green iguanas are strict herbivores and this is where most of them are damaged. The diet is leafy greens and vegetables in a roughly 60 / 30 / 10 split of greens, other vegetables and fruit.
-
-The working ratio is about 60 percent dark leafy greens, 30 percent other vegetables and 10 percent fruit. Build the greens on collard, mustard and turnip, dandelion, escarole, endive and hibiscus, and the vegetable share on squash, parsnip, green beans and bell pepper.
-
-Do not feed animal protein. No insects, no dog food, no cat food, no eggs. Iguanas fed protein develop kidney damage and gout, and it is one of the more common causes of premature death in captive animals. Ignore any older care sheet that suggests otherwise.
-
-Avoid spinach, kale in quantity, beet greens and chard, which bind calcium, and avoid iceberg lettuce, which is water with nothing in it.
-
-Dust with plain calcium several times a week and a multivitamin weekly. Adult calcium demand is high and the combination of poor UVB and low calcium is what produces the soft jaws and bowed limbs seen in so many rescued iguanas.`,
-      enrichment: `Provide a climbing structure that fills the enclosure. Broad, secure branches at different heights, a basking shelf wide enough for the whole body, and something to get away from you on.
-
-They benefit from routine and from being able to see out. An iguana kept in a dark corner is a nervous iguana, and a nervous six foot lizard is a management problem rather than a preference.
-
-Handling has to be built patiently and kept up. Iguanas that are handled regularly from young usually tolerate it well; those left alone for months become difficult to work with. Support the whole body and never restrain by the tail, which will drop.
-
-Be aware of seasonal aggression. Sexually mature males in breeding season can become genuinely dangerous, and they often fixate on one person in the household. Bites are serious, the tail is used as a whip, and the claws do the most damage. This is a real change in behaviour rather than a bad individual.
-
-An outdoor enclosure in a suitable climate, with unfiltered sunlight, is the single best enrichment there is for this species.`,
-      health: `Metabolic bone disease is the classic and it is entirely preventable: strong UVB, high dietary calcium, correct temperatures. Look for a swollen or soft lower jaw, bowed legs, lumpy limbs, tremors and difficulty lifting the body.
-
-Kidney disease and gout follow from animal protein and chronic dehydration. This is a leading cause of death in captive iguanas and it is slow, invisible early, and largely irreversible once obvious.
-
-Mouth rot, thermal burns from unguarded heat sources and retained shed round out the common list. Burns are usually from an animal sitting directly on a lamp or heat rock, which is why overhead heating and a proper distance matter.
-
-Females can become egg bound whether or not a male is present. A gravid female needs a nest box with deep substrate to dig in, and a female straining without producing eggs needs a vet quickly.
-
-Find an exotics vet who genuinely treats large lizards, and confirm they will before you need them. Not every reptile vet works on adult iguanas.`,
-      checklist: [
-        "Adult enclosure plan, 10x5x6 ft minimum, before purchase",
-        "High output linear T5 UVB, 12 to 14 percent, UVI 3 to 4",
-        "Halogen basking cluster on dimmers, around 120 F surface",
-        "Broad climbing branches and a full-body basking shelf",
-        "Water basin large enough to sit in",
-        "Roughly 60 percent greens, 30 percent veg, 10 percent fruit",
-        "No animal protein of any kind",
-        "Calcium several times a week, multivitamin weekly",
-        "Humidity 60 to 80 percent by day",
-        "Exotic veterinarian who treats adult iguanas"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Day one, hygiene, and power outage cite
+    // the shared reptile guides in the sidebar's Health and More list, which
+    // the set tests keep reporting as gaps because the reader never opens
+    // them. This species has no feeding guide, so the diet rows cite the
+    // health issues and enrichment guides, which is where the diet material
+    // actually lives. Reconciled 2026-09-09 after the green iguana set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new lizard is quarantined 3 to 6 months away from any reptile you already keep, in a separate room on plain paper towel, with its own tools, and a vet check within two weeks of acquiring it with a fresh fecal sample.", source: "reptile-quarantine-guide" },
+        { label: "Adult enclosure", value: "A single adult needs a minimum of 10 feet long by 5 feet wide by 6 feet tall, some vet and husbandry sources recommend 12 by 6 by 6. No commercial enclosure is large enough, this has to be a custom, walk-in build.", source: "green-iguana-tank-setup-guide" },
+        { label: "First enclosure", value: "A juvenile can start temporarily in something like a 4x2x4 foot enclosure or a 40 to 55 gallon tank, but outgrows it within the first year, plan for the move into adult housing rather than being surprised by it.", source: "green-iguana-tank-setup-guide" },
+        { label: "Temperature", value: "Basking area 100 to 120°F, cool end around 80°F, nighttime not dropping below the low 70s°F. Heat via a cluster of halogen bulbs, roughly six bulbs to adequately cover an adult's basking branch, positioned over a sturdy climbing perch.", source: "green-iguana-tank-setup-guide" },
+        { label: "UVB", value: "High-output T5 HO UVB is required for survival in this species, not a nice-to-have, replaced every 12 months regardless of whether the bulb still produces visible light. Glass blocks UVB entirely, so a sunny window is never an adequate substitute.", source: "green-iguana-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 80%, through misting twice daily with a pressure sprayer or an automated misting system, plus a large soaking tub the iguana can fully access. Chronically low humidity is directly linked to dehydration and kidney disease.", source: "green-iguana-tank-setup-guide" },
+        { label: "Floor", value: "2 to 4 inches of coconut husk or large-particle cypress mulch, sized specifically to reduce impaction risk. Avoid sand, gravel, corncob bedding, kitty litter, and wood shavings entirely.", source: "green-iguana-tank-setup-guide" },
+        { label: "Climbing", value: "Roughly two-thirds of an iguana's total length is tail, and this is fundamentally a climbing animal that needs genuine vertical space and sturdy branches positioned near the basking zone, not just floor area.", source: "green-iguana-tank-setup-guide" },
+        { label: "Diet", value: "Strictly plant-based: no insects, no dog or cat food, no eggs, ever. Too much animal protein in that diet is one of the husbandry failures behind kidney disease, along with chronic dehydration and over-supplementing vitamin D.", source: "green-iguana-health-issues-guide" },
+        { label: "Feeding routine", value: "Clip whole leaves at height so feeding happens where the animal already is. Put food in more than one place, rotate greens across the week so the salad is not identical every day, and dust with a plant-eater supplement.", source: "green-iguana-enrichment-guide" },
+        { label: "Handling", value: "Approaching from directly above triggers a strong defensive response, it reads as an aerial predator attack to the iguana, approach from the side instead. The tail can drop under grasping pressure, even fairly light pressure, so never grab or restrain by the tail.", source: "green-iguana-handling-guide" },
+        { label: "Breeding season", value: "Testosterone-driven aggression in mature males is real and can transform a previously calm, handleable iguana into an unpredictable one for a period each year, head-bobbing, color intensifying toward orange or red, and territorial chasing or biting.", source: "green-iguana-handling-guide" },
+        { label: "Housing together", value: "Adults are territorial. Adult males will fight each other, and a breeding-season male can be genuinely dangerous to the person keeping him.", source: "green-iguana-enrichment-guide" },
+        { label: "Parasite screening", value: "Do not skip parasite screening, given what the captive welfare assessment found: eight iguanas observed over 22 days in an exotic animal facility, and all eight carried endoparasites.", source: "green-iguana-enrichment-guide" },
+        { label: "Adult size", value: "An adult male green iguana reaches 6 to 7 feet including tail and up to 20 pounds, a completely different animal from the small, manageable baby most people bring home.", source: "green-iguana-handling-guide" },
+        { label: "Lifespan", value: "With excellent care, green iguanas live 15 to 20 years, sometimes 25.", source: "green-iguana-cost-guide" },
+        { label: "First year", value: "An estimated 70% of captive green iguanas die within their first year of life, and inadequate diet, lighting, and housing are named as the leading cause.", source: "green-iguana-health-issues-guide" },
+        { label: "The iguana", value: "Farm-raised babies are cheap, commonly $20 to $100. Morph lines cost considerably more: albino, hypomelanistic, axanthic, and purple translucent animals commonly run $300 to $1,000 or more.", source: "green-iguana-cost-guide" },
+        { label: "Budget", value: "$700 to $2,500 or more upfront, and it is two purchases. Ongoing, roughly $60 to $150 a month, covering fresh produce, calcium and multivitamin supplements, substrate, and meaningful electricity to heat and light a large enclosure.", source: "green-iguana-cost-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact, keep reptiles out of the kitchen entirely, and never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "This species is not in the guide's cold-floor table. Its rule for a species that is not listed: check its tank setup guide for the documented nighttime low and use that as your floor.", source: "reptile-emergency-plan-guide" },
       ],
     },
+    emergencyCard: {
+      source: "green-iguana-health-issues-guide",
+      callNow: [
+        "A swollen or rubbery lower jaw",
+        "Swollen or bowed hind limbs",
+        "Soft bones",
+        "Tremors",
+        "An inability to lift the trunk while walking",
+        "Signs of kidney disease, which follows chronic dehydration, animal protein in the diet, or over-supplemented vitamin D",
+        "Mouth rot",
+        "Respiratory infection",
+        "Skin or fungal infections",
+        "A female you suspect is egg bound, whether or not she has ever been near a male",
+        "Thermal burns from a heat source the iguana can contact directly",
+        "Substrate impaction",
+      ],
+      vetLine: "Always see a vet for metabolic bone disease and kidney disease: advanced cases need immediate, long-term treatment. Mouth rot, respiratory infection, and skin or fungal infections need professional treatment rather than home correction alone. Egg binding is always an emergency, get to a vet immediately if you suspect it.",
+    },
+    routes: [
+      { slug: "green-iguana-cost-guide", line: "$20 to $100 for the hatchling, $700 to $2,500 or more for the setup, and why the adult enclosure is a second purchase a year later." },
+      { slug: "green-iguana-tank-setup-guide", line: "The 10x5x6 ft adult minimum, the basking and humidity numbers, substrate, UVB, and the vertical space an arboreal lizard needs." },
+      { slug: "green-iguana-handling-guide", line: "Claws, tail whipping, tail drop, how to approach, and what breeding season does to a mature male." },
+      { slug: "green-iguana-health-issues-guide", line: "Metabolic bone disease, kidney disease, mouth rot, egg binding, burns, and impaction, with the husbandry failure behind each." },
+      { slug: "green-iguana-feeding-guide", line: "The greens to build the salad on, which ones block calcium, why animal protein risks gout, and the calcium schedule by age." },
+      { slug: "green-iguana-enrichment-guide", line: "The hatchling sociality research, height and climbing routes, foraging for a herbivore, and why space is the whole problem." },
+    ],
+    buyList: [
+      "Juvenile enclosure, 4x2x4 ft PVC",
+      "A plan and a budget for the walk-in adult enclosure",
+      "T5 HO UVB kit, 36 inch, 12% or 14% bulb",
+      "Halogen basking bulbs, 75 watt, two or three",
+      "Dimming thermostat",
+      "Misting system starter kit, or a pressure sprayer for twice-daily misting",
+      "Coconut husk or large-particle cypress mulch, 2 to 4 inches",
+      "A large soaking tub the iguana can fully access",
+      "Sturdy climbing branches positioned near the basking zone",
+      "Plain newspaper or butcher paper, if you are starting a juvenile on paper",
+      "Digital thermometer and hygrometer",
+    ],
     faqs: [
-      { q: "How big do green iguanas actually get?", a: "Four to six feet including the tail, and ten to twenty pounds, from a hatchling of about six inches. That is the central fact about keeping one and the reason so many end up in rescues. The published minimum for one adult is 10 feet long, 5 deep and 6 tall, which almost always has to be custom built, and it will live fifteen to twenty years. Work out where that enclosure is going before you buy the small one." },
-      { q: "Can green iguanas eat insects or meat?", a: "No. They are strict herbivores and animal protein damages their kidneys, causing renal failure and gout that is largely irreversible by the time it is visible. This includes insects, dog food, cat food and eggs. Some older care sheets recommend protein for juveniles; that advice is outdated and harmful. The diet is dark leafy greens with vegetables, and fruit only as an occasional garnish." },
-      { q: "Why is my iguana's jaw swollen?", a: "That is a classic sign of metabolic bone disease, where the body pulls calcium from the skeleton and replaces jaw bone with fibrous tissue, producing the rubbery look keepers call rubber jaw. It comes from inadequate UVB, inadequate dietary calcium, or temperatures too low to digest properly. It needs veterinary treatment, and it needs the underlying lighting and diet fixed or it will simply continue." },
-      { q: "Do male iguanas become aggressive?", a: "Many do, seasonally. A sexually mature male in breeding condition can become genuinely dangerous for a period of weeks to months, often fixating on one person, and a five foot lizard bites hard, whips with the tail and does most of its damage with the claws. It is a hormonal state rather than a personality flaw. Plan for handling to change during those months and take it seriously." },
-      { q: "Does a green iguana really need that much UVB?", a: "Yes. It is a large diurnal basking herbivore that synthesises vitamin D3 from UVB in order to use dietary calcium, and the requirement scales with the animal. Use a high-output linear T5 at 12 to 14 percent running the length of the basking area at the manufacturer's stated distance, aiming for a UV index of 3 to 4 at the branch. Compact and coil bulbs cannot cover an animal this size, and any bulb needs replacing at twelve months even while it still gives off visible light." },
+      { q: "What size enclosure does an adult green iguana need?", a: "An adult needs at least 10 feet long, 5 wide, and 6 tall, with 12 by 6 by 6 also recommended. Nothing commercial comes that big, so it is a custom walk-in build. A juvenile can start in a 4x2x4 or a 40 to 55 gallon tank, but will outgrow it inside a year." },
+      { q: "What does the upfront setup cost?", a: "$700 to $2,500 or more, and it is two purchases. A 4x2x4 foot juvenile setup runs roughly $985 to $1,000. The adult enclosure comes a year or two later: a walk-in build is several hundred dollars in materials, a custom builder $1,000 and up, and a made to order 6x3x6 foot box $3,740." },
+      { q: "What is the most common health issue in green iguanas?", a: "Metabolic bone disease, probably the most common medical problem in pet iguanas and the disease most commonly seen in lizards generally. Watch for a swollen or rubbery lower jaw, swollen or bowed hind limbs, soft bones, and tremors." },
     ],
   },
   {

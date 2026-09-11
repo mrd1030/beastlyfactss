@@ -7,15 +7,15 @@ export const marineBeastfiles = [
     name: 'Giant Manta Ray',
     scientific: 'Mobula birostris',
     alsoKnownAs: ['Oceanic Manta', 'Devil Ray'],
-    tagline: 'Seven metres across, filter-feeding, and one of the few fish to pass a mirror test.',
+    tagline: 'Seven meters across, filter-feeding, and one of the few fish to pass a mirror test.',
     habitat: 'Ocean',
     group: 'Marine Life',
     overview:
-      'The giant manta is the largest ray in the world, reaching around seven metres across the wings, and it eats some of the smallest food in the ocean. It swims with its mouth open, funnelling plankton in with a pair of forward-curling cephalic fins and straining it through gill plates. Despite the old name devil ray it has no sting and poses no danger to people. Mantas have the largest brain relative to body size of any fish, and one study reported behavior consistent with self-recognition in a mirror, which is rare outside a small set of mammals and birds.',
+      'The giant manta is the largest ray in the world, reaching around seven meters across the wings, and it eats some of the smallest food in the ocean. It swims with its mouth open, funnelling plankton in with a pair of forward-curling cephalic fins and straining it through gill plates. Despite the old name devil ray it has no sting and poses no danger to people. Mantas have the largest brain relative to body size of any fish, and one study reported behavior consistent with self-recognition in a mirror, which is rare outside a small set of mammals and birds.',
     origin:
       'Tropical, subtropical and warm temperate waters worldwide, mostly offshore and oceanic, gathering at coastal cleaning stations and seasonal feeding grounds.',
     notableTraits: [
-      'Wingspan up to about seven metres',
+      'Wingspan up to about seven meters',
       'Filter-feeds on plankton using cephalic fins and gill plates',
       'The largest brain-to-body ratio of any fish',
       'Has no sting, unlike stingrays',
@@ -119,7 +119,7 @@ export const marineBeastfiles = [
     notableTraits: [
       'All are born male; the dominant fish becomes female',
       'Immune to its host anemone’s sting via a mucus coat',
-      'Rarely strays more than a few metres from its anemone',
+      'Rarely strays more than a few meters from its anemone',
       'Strict size-ordered social hierarchy',
       'The change from male to female cannot be reversed',
     ],
@@ -145,13 +145,13 @@ export const marineBeastfiles = [
     habitat: 'Ocean',
     group: 'Marine Life',
     overview:
-      'A jellyfish normally goes one way: polyp fixed to the seabed, then free-swimming medusa, then death. Turritopsis dohrnii can reverse it. Injured, starved or simply stressed, an adult medusa can settle, reabsorb its own tentacles and revert to a polyp colony, its cells converting from one type directly into another. In principle it can do this indefinitely, which is where the name came from. In practice it is a four millimetre animal that gets eaten, infected and killed constantly. Biologically open-ended is not the same as immortal, and the distinction is the whole story.',
+      'A jellyfish normally goes one way: polyp fixed to the seabed, then free-swimming medusa, then death. Turritopsis dohrnii can reverse it. Injured, starved or simply stressed, an adult medusa can settle, reabsorb its own tentacles and revert to a polyp colony, its cells converting from one type directly into another. In principle it can do this indefinitely, which is where the name came from. In practice it is a four millimeter animal that gets eaten, infected and killed constantly. Biologically open-ended is not the same as immortal, and the distinction is the whole story.',
     origin:
       'Originally described from the Mediterranean and now recorded worldwide in warm and temperate coastal water, apparently spread in ships’ ballast.',
     notableTraits: [
       'Reverts from adult medusa back to polyp under stress',
       'Cells convert directly from one type to another',
-      'About four millimetres across, smaller than a fingernail',
+      'About four millimeters across, smaller than a fingernail',
       'Still dies easily to predators and disease',
       'Now found worldwide, likely carried in ballast water',
     ],
@@ -159,7 +159,7 @@ export const marineBeastfiles = [
       'Not assessed. It is small, widespread and apparently spreading, so it is not a conservation concern; the interest in it is medical rather than protective.',
     funFacts: [
       'The reversal is called transdifferentiation, and cells switching type this cleanly is rare enough that cancer researchers pay attention.',
-      'It is a few millimetres across, so most of what kills it never notices it did.',
+      'It is a few millimeters across, so most of what kills it never notices it did.',
       'A reverted polyp can bud off new medusae that are genetically identical to the original.',
     ],
     heroImage: '/assets/beastlypedia/immortal-jellyfish-hero.jpg',
@@ -177,7 +177,7 @@ export const marineBeastfiles = [
     habitat: 'Ocean',
     group: 'Marine Life',
     overview:
-      'Seahorses are fish that swim upright, badly, using a small dorsal fin beating dozens of times a second, and grip seagrass with a prehensile tail to avoid being swept away. The famous part is genuine and often undersold. The female deposits eggs into a sealed pouch on the male’s belly, where he fertilises them and then carries them through a real pregnancy: the pouch supplies oxygen, regulates salinity and provides nutrients, and he goes into labour to give birth. They have no stomach, so food passes through fast and they eat almost constantly.',
+      'Seahorses are fish that swim upright, badly, using a small dorsal fin beating dozens of times a second, and grip seagrass with a prehensile tail to avoid being swept away. The famous part is genuine and often undersold. The female deposits eggs into a sealed pouch on the male’s belly, where he fertilizes them and then carries them through a real pregnancy: the pouch supplies oxygen, regulates salinity and provides nutrients, and he goes into labor to give birth. They have no stomach, so food passes through fast and they eat almost constantly.',
     origin:
       'Shallow temperate and tropical water worldwide, in seagrass meadows, mangroves, estuaries and coral reef, usually within reach of something to hold on to.',
     notableTraits: [
@@ -190,8 +190,8 @@ export const marineBeastfiles = [
     conservation:
       'Varies sharply by species, with several listed as Vulnerable or Endangered. The pressures are trawling, habitat loss in seagrass and mangrove, and collection for traditional medicine and the aquarium trade.',
     funFacts: [
-      'The pouch is not a bag he carries. It regulates salinity and delivers oxygen, and the birth is genuine labour.',
-      'Some species pair for a season and greet each other every morning with a colour change.',
+      'The pouch is not a bag he carries. It regulates salinity and delivers oxygen, and the birth is genuine labor.',
+      'Some species pair for a season and greet each other every morning with a color change.',
       'The dwarf seahorse moves so slowly it holds a record as the slowest fish measured.',
     ],
     heroImage: '/assets/beastlypedia/seahorse-hero.jpg',
@@ -256,12 +256,12 @@ export const marineBeastfiles = [
       'Blue, copper-based blood',
       'Two thirds of its neurons are in its arms',
       'No bones, so it fits through any gap its beak clears',
-      'Changes colour and skin texture in under a second',
+      'Changes color and skin texture in under a second',
     ],
     conservation:
       'Least Concern, and heavily fished. The species is widespread and fast-growing, which buffers it, but octopus fisheries are expanding quickly and are largely unmanaged.',
     funFacts: [
-      'It is very likely colour-blind, which makes its colour-matching camouflage a genuinely open question.',
+      'It is very likely color-blind, which makes its color-matching camouflage a genuinely open question.',
       'Most species are semelparous: they breed once and die, and the female starves guarding her eggs.',
       'A severed arm keeps reacting to stimuli for a while, because the neurons to run it are already in the arm.',
     ],
@@ -284,22 +284,22 @@ export const marineBeastfiles = [
     habitat: 'Ocean',
     group: 'Marine Life',
     overview:
-      'The mantis shrimp is neither a mantis nor a shrimp, and it throws the fastest punch in the animal kingdom: a spring-loaded club that accelerates like a small-calibre bullet, fast enough to boil a bubble of water into existence beside the target and hit it a second time when the bubble collapses. The eyes are the more famous claim and the more misunderstood one. It carries twelve or more photoreceptor types against our three, and it was widely assumed to see colour in unimaginable richness. Testing it in 2014 showed the opposite: it discriminates colours worse than we do. The receptors appear to trade fineness for speed, recognising colour without much processing.',
+      'The mantis shrimp is neither a mantis nor a shrimp, and it throws the fastest punch in the animal kingdom: a spring-loaded club that accelerates like a small-caliber bullet, fast enough to boil a bubble of water into existence beside the target and hit it a second time when the bubble collapses. The eyes are the more famous claim and the more misunderstood one. It carries twelve or more photoreceptor types against our three, and it was widely assumed to see color in unimaginable richness. Testing it in 2014 showed the opposite: it discriminates colors worse than we do. The receptors appear to trade fineness for speed, recognizing color without much processing.',
     origin:
       'Shallow tropical and subtropical Indo-Pacific reefs, in burrows dug in rubble and sand.',
     notableTraits: [
       'A strike that accelerates like a bullet and cavitates the water',
       'Twelve or more photoreceptor types, against three in humans',
-      'Poorer fine colour discrimination than a human, despite that',
-      'Sees polarised light, including circular polarisation',
+      'Poorer fine color discrimination than a human, despite that',
+      'Sees polarized light, including circular polarisation',
       'Neither a mantis nor a shrimp; it is a stomatopod',
     ],
     conservation:
       'Not assessed. Reef degradation is the general pressure, and the brighter species are collected for aquariums, where they are notorious for cracking glass.',
     funFacts: [
       'The strike is so fast the water beside the club vaporises, and the collapsing bubble lands a second hit.',
-      'It is the only animal known to detect circularly polarised light.',
-      'The 2014 work that overturned the colour claim is a good reminder that more receptors does not mean better vision.',
+      'It is the only animal known to detect circularly polarized light.',
+      'The 2014 work that overturned the color claim is a good reminder that more receptors does not mean better vision.',
     ],
     heroImage: '/assets/beastlypedia/mantis-shrimp-hero.jpg',
     heroAlt:
@@ -313,25 +313,25 @@ export const marineBeastfiles = [
     name: 'Cuttlefish',
     scientific: 'Sepia officinalis',
     alsoKnownAs: ['Common Cuttlefish'],
-    tagline: 'It puts on the best colour display in the ocean and probably cannot see colour.',
+    tagline: 'It puts on the best color display in the ocean and probably cannot see color.',
     habitat: 'Ocean',
     group: 'Marine Life',
     overview:
-      'A cuttlefish changes the colour, pattern and texture of its skin faster than anything else alive, running millions of pigment cells over layers of reflective ones. It uses this to vanish against sand, to send a rippling wave of dark bands down its body while hunting, and in some species to show courtship colours on one flank and female colouring on the other at the same time. The catch is that it has one visual pigment, so by the usual definition it is colour-blind. How an animal that cannot see colour matches it so precisely is unresolved; the leading idea involves reading colour from the blur its odd W-shaped pupil creates.',
+      'A cuttlefish changes the color, pattern and texture of its skin faster than anything else alive, running millions of pigment cells over layers of reflective ones. It uses this to vanish against sand, to send a rippling wave of dark bands down its body while hunting, and in some species to show courtship colors on one flank and female coloring on the other at the same time. The catch is that it has one visual pigment, so by the usual definition it is color-blind. How an animal that cannot see color matches it so precisely is unresolved; the leading idea involves reading color from the blur its odd W-shaped pupil creates.',
     origin:
       'Coastal waters of the eastern Atlantic, North Sea, Mediterranean and Baltic, over sand and seagrass in relatively shallow water.',
     notableTraits: [
-      'Changes colour, pattern and skin texture in under a second',
-      'A single visual pigment, so effectively colour-blind',
+      'Changes color, pattern and skin texture in under a second',
+      'A single visual pigment, so effectively color-blind',
       'W-shaped pupil, unlike almost anything else',
       'An internal cuttlebone used to control buoyancy',
-      'Can display courtship and female colouring on opposite flanks at once',
+      'Can display courtship and female coloring on opposite flanks at once',
     ],
     conservation:
       'Near Threatened in parts of its range and heavily fished, particularly in the Mediterranean and the eastern Atlantic. Short lifespans mean populations swing hard year to year.',
     funFacts: [
       'The cuttlebone is a gas-filled internal shell it floods and empties to sink and rise.',
-      'Smaller males have been recorded showing female colouring on one side to slip past a larger rival.',
+      'Smaller males have been recorded showing female coloring on one side to slip past a larger rival.',
       'It has eight arms and two longer feeding tentacles it fires out to catch prey.',
     ],
     heroImage: '/assets/beastlypedia/cuttlefish-hero.jpg',

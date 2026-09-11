@@ -7,67 +7,70 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/chinchilla.jpg",
     tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
-    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 60 hairs per follicle (humans have only 1).",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x48 in multi-level cage", low: 150, high: 300 },
-        { item: "12-14 in solid exercise wheel", low: 50, high: 90 },
-        { item: "Dust bath house + chinchilla dust", low: 20, high: 35 },
-        { item: "Platforms and hideouts", low: 30, high: 60 },
-        { item: "Water bottle and food dishes", low: 10, high: 20 },
-        { item: "Chew toys (mineral/pumice)", low: 15, high: 30 },
-        { item: "Digital thermometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Grass hay (unlimited)", low: 120, high: 200 },
-        { item: "Chinchilla pellets", low: 30, high: 50 },
-        { item: "Chinchilla dust (ongoing)", low: 30, high: 50 },
-        { item: "Bedding", low: 50, high: 90 },
-        { item: "Electricity (cooling in warm months)", low: 80, high: 150 },
-        { item: "Annual vet check (dental, under anesthesia)", low: 80, high: 150 },
-      ],
-    },
-    sections: {
-      housing: `A minimum 24x24x48 inch multi-level cage with solid platforms (never wire grates, which injure feet) is required. Chinchillas are extraordinary athletes - they can jump 6 feet vertically and need height for exercise. The more platforms at different levels, the better. Bar spacing should be 1 inch or less for adults, 1/2 inch for juveniles.
-
-Temperature is critical. Chinchillas cannot tolerate heat above 75 to 80 degrees F. In North American summers, air conditioning is often necessary. They are comfortable at 60 to 72 degrees F and are far more cold-tolerant than heat-tolerant. A chinchilla in a warm room will show rapid, labored breathing - this is heat distress and an emergency.
-
-Use fleece liners or paper-based bedding (Carefresh). Never use cedar or pine shavings (toxic aromatic oils). Provide a dedicated dust bath house (a plastic or ceramic container large enough for full body rolling) with chinchilla-specific dust (not sand) 2 to 3 times per week for 10 to 15 minutes. Dust baths are how chinchillas maintain their impossibly dense, silky fur.`,
-      diet: `Unlimited Timothy or orchard grass hay is the foundation of the chinchilla diet - it must be available at all times. Hay provides the indigestible fiber that keeps the chinchilla's continuously moving digestive tract functional and wears down continuously growing teeth. A chinchilla without constant hay access will develop life-threatening digestive impaction and dental overgrowth.
-
-Supplement with high-quality chinchilla pellets: 1 to 2 tablespoons per day. Choose Timothy-based pellets without added seeds, dried fruit, or colorful pieces. Plain, uniform pellets are nutritionally correct. Avoid muesli-style mixed foods - chinchillas selectively eat the sugary pieces and leave the nutritious ones.
-
-Treats must be minimal. Rose hips, dried herbs (chamomile, dandelion), small pieces of apple, or a raisin once per week are appropriate. Excessive sugar disrupts gut flora, causes obesity, and can precipitate life-threatening GI problems in this highly sensitive digestive system. Fresh water in a sipper bottle changed daily is essential.`,
-      enrichment: `A 12 to 14 inch solid-surface exercise wheel (not wire or mesh, which catches legs) is essential. Chinchillas are highly active and need vigorous nightly exercise. Without a wheel, they develop obesity, boredom stereotypies, and behavioral problems. Flying Saucer-style wheels work particularly well for chinchillas.
-
-Provide platforms at multiple heights, wooden ledges, tunnels, cork bark tubes, and a variety of safe chew toys: apple wood, willow balls, rose hip pieces, and pumice blocks. Chinchillas need to gnaw continuously to maintain their constantly growing teeth, and providing appropriate gnawing material prevents them from destroying cage furniture.
-
-Supervised out-of-cage playtime in a chinchilla-proofed room (no electrical cords, no small gaps to escape into, no toxic plants) is excellent enrichment. Chinchillas explore with spectacular energy - leaping, bounding, and investigating everything. Handle gently and consistently, allowing the chinchilla to approach voluntarily rather than being grabbed.`,
-      health: `Heat stroke is the most acute and deadly risk for chinchillas. Above 75 to 80 degrees F, chinchillas begin to overheat rapidly. Signs include rapid breathing, drooling, and lethargy. Move to a cool area immediately and contact an exotic vet. Prevention through climate control (air conditioning in summer) is essential.
-
-Dental disease (malocclusion and molar spurs) is extremely common in chinchillas and is the most common cause of weight loss and anorexia in middle-aged and older animals. Because the cheek teeth are far back in the mouth and not visible without sedation and magnification, dental disease is frequently discovered only when the chinchilla has already lost significant weight. Annual dental checks under anesthesia with an exotic vet are strongly recommended.
-
-Fur ring - a constricting ring of fur around the penis in males - can develop during or after mating and causes serious tissue damage if not addressed promptly. Male owners should learn to check for fur ring monthly. GI stasis from insufficient hay is another serious risk. A chinchilla that has not produced droppings for 12 hours is an emergency.`,
-      checklist: [
-        "Minimum 24x24x48\" multi-level cage",
-        "12 to 14 inch solid exercise wheel",
-        "Unlimited grass hay (Timothy or Orchard)",
-        "High-quality chinchilla pellets",
-        "Dust bath (chinchilla dust, not sand)",
-        "Multiple platforms and hideouts",
-        "Safe chew toys (apple wood, willow, pumice)",
-        "Digital thermometer (critical, keep under 80 degrees F)",
-        "Nail clippers",
-        "Exotic veterinarian experienced with chinchillas"
+    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 80 hairs per follicle, versus 2 to 3 for humans.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size and lifespan come from the
+    // encyclopedia entry, which no deep dive repeats. The antibiotics, cold
+    // tolerance, and vet trips rows cite the shared small-mammal guides in
+    // the sidebar's Health and More list. Reconciled 2026-09-09 for batch C
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cage", value: "A reasonable minimum is around 24 by 24 by 36 inches, tall and multi-level with solid, non-wire floors and shelves. Bigger is better for a species this active. Metal beats plastic, since chinchillas chew constantly and ingested plastic can cause a fatal blockage.", source: "chinchilla-tank-setup-guide" },
+        { label: "Wheel", value: "A solid metal wheel, 15 inches or larger. Never an exercise ball, a genuine overheating and injury risk for this species specifically.", source: "chinchilla-tank-setup-guide" },
+        { label: "Temperature", value: "Ideal room temperature is 50 to 68°F, kept cool and dry. Add the Fahrenheit temperature to the humidity percentage; treat a combined total over 150 as dangerous territory.", source: "chinchilla-tank-setup-guide" },
+        { label: "Cold tolerance", value: "Far more cold-tolerant than heat-tolerant: comfortable down into the 35 to 45°F range with proper shelter.", source: "small-mammal-temperature-heat-stress-guide" },
+        { label: "Dust bath", value: "Chinchilla dust, never sand or water, 2 to 3 times a week (some owners go daily), for 10 to 30 minutes at a time, using 1 to 2 inches of dust in a shallow container. Remove the container afterward.", source: "chinchilla-tank-setup-guide" },
+        { label: "Diet", value: "Grass hay should make up 80 to 90% of the diet, available at all times. Add plain, hay-based pellets, roughly 16 to 20% protein and 15 to 35% fiber, at about 1 to 2 tablespoons a day.", source: "chinchilla-tank-setup-guide" },
+        { label: "Treats", value: "A small fraction of the diet, a few times a week rather than daily, somewhere under 5 to 10% of total intake.", source: "chinchilla-feeding-guide" },
+        { label: "Not eating", value: "A chinchilla off food for more than 12 to 24 hours should be seen the same day. No droppings at all for about 12 hours is treated as needing immediate attention.", source: "chinchilla-feeding-guide" },
+        { label: "Handling", value: "Both hands, body fully supported against your chest (a football hold). Never lift by the tail tip or grab at the fur, which can trigger fur slip.", source: "chinchilla-handling-guide" },
+        { label: "Budget", value: "$455 to $1,225 for a complete setup. Roughly $30 to $85 a month ongoing. An annual exotic vet checkup runs $50 to $100 or more.", source: "chinchilla-cost-guide" },
+        { label: "Adult size", value: "9 to 15 inches; 1 to 2 lbs." },
+        { label: "Lifespan", value: "Commonly 10 to 20 years in captivity; wild longevity for this species has not been well studied." },
+        { label: "Antibiotics", value: "Certain ordinary antibiotics can wipe out a chinchilla's gut bacteria and let toxin-producing Clostridium take over, a reaction that can kill within days. Raise the drug list with your vet before any antibiotic starts.", source: "small-mammal-enterotoxemia-guide" },
+        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "chinchilla-health-issues-guide",
+      callNow: [
+        "Drooling",
+        "Changes in appetite or stool",
+        "Diarrhea",
+        "Any respiratory signs",
+        "Any indication of heat stress (lethargy, panting, bright red mucous membranes)",
+      ],
+      vetLine: "An exotic vet experienced with chinchillas, found before you need one. This species masks illness well and can decline fast once symptoms become visible, so call sooner rather than waiting to see if things improve.",
+    },
+    routes: [
+      { slug: "chinchilla-cost-guide", line: "$455 to $1,225 for a complete setup, $30 to $85 a month, and the air conditioning cost most owners don't factor in." },
+      { slug: "chinchilla-tank-setup-guide", line: "The cage, the 150 rule for heat danger, and dust baths done right." },
+      { slug: "chinchilla-feeding-guide", line: "The hay-first schedule, why cecotropes matter, and the honest list of reasons a chinchilla stops eating." },
+      { slug: "chinchilla-handling-guide", line: "The football hold, the fragile skeleton, and what fur slip actually means." },
+      { slug: "chinchilla-health-issues-guide", line: "Dental disease, heat stroke, GI problems, fur chewing, ringworm, and fur ring, with what causes each." },
+      { slug: "chinchilla-enrichment-guide", line: "The cage-complexity study that dropped fur chewing with a floor change, and the priority order that follows from it." },
+      { slug: "chinchilla-legal-guide", line: "Why the California and Texas ban claims are false, and the one real CITES detail worth knowing." },
+    ],
+    buyList: [
+      "24x24x36 inch multi-level metal cage",
+      "15 inch or larger solid exercise wheel",
+      "Dust bath house and chinchilla dust",
+      "Platforms and hideouts at varied heights",
+      "Water bottle and food dishes",
+      "Safe chew toys (mineral, pumice, untreated wood)",
+      "Digital thermometer and hygrometer",
+      "Unscented paper bedding or fleece",
+      "Timothy or orchard grass hay",
+      "Plain, chinchilla-specific pellets",
+    ],
     faqs: [
-      { q: "Why do chinchillas take dust baths?", a: "Chinchillas' extraordinary fur - up to 60 hairs per follicle compared to a human's 1 - would mat, clump, and become oily if bathed in water like most mammals. In the wild, Andean chinchillas bathe in volcanic ash to absorb oils and moisture from their dense coats. In captivity, chinchilla-specific dust replicates this. Offer a dust bath container large enough for rolling 2 to 3 times per week for 10 to 15 minutes. Never bathe a chinchilla in water - wet fur takes many hours to dry and can lead to fungal infections and life-threatening chilling." },
-      { q: "Can chinchillas be kept in warm climates?", a: "With difficulty. Chinchillas are native to the high-altitude Andes and cannot tolerate temperatures above 75 to 80 degrees F. Above this threshold they develop heat stroke rapidly - a genuine veterinary emergency. In warm climates, air conditioning is not optional but a care requirement. Signs of heat distress include rapid panting, drooling, and lethargy. If you live somewhere without reliable air conditioning, a chinchilla is not a suitable pet." },
-      { q: "How long do chinchillas live?", a: "Chinchillas are one of the longer-lived small pet mammals. With excellent care, they commonly live 10 to 15 years, and some individuals have reached 20 years. This makes a chinchilla a longer commitment than many people realize at purchase. Their longevity makes annual veterinary care, appropriate diet (unlimited hay plus quality pellets), and temperature control especially important investments." },
-      { q: "Are chinchillas good pets for children?", a: "Chinchillas are best suited to older teenagers and adults rather than young children. They are crepuscular and nocturnal - most active in the evening when children should be sleeping - and are not natural cuddlers. They are also delicate and can develop serious stress responses to rough handling, require precise temperature management (never above 75 degrees F), and need an adult-level commitment to their care." },
-      { q: "What do chinchillas eat?", a: "Unlimited Timothy or orchard grass hay is the cornerstone of the chinchilla diet and must always be available. Hay keeps continuously growing teeth worn and the sensitive digestive system moving. Supplement with 1 to 2 tablespoons of high-quality chinchilla pellets (Timothy-based, no added seeds or colored pieces) daily. Treats must be very limited: a single raisin, a small piece of dried rose hip, or a dried herb like chamomile once or twice per week. Excessive sugar causes severe gut disruption in chinchillas." },
+      { q: "Can chinchillas take water baths?", a: "No. Their fur is dense enough, among the densest of any mammal, that trapped moisture promotes fungal growth rather than washing anything away. Dust baths are the only safe option." },
+      { q: "Why does my chinchilla eat its own droppings?", a: "This is normal and necessary, not illness. Chinchillas are hindgut fermenters that produce a distinct soft dropping called a cecotrope, mostly overnight, and eat it to send food through the gut a second time. Their small intestine only captures part of the nutrients from their very fibrous diet on the first pass, and a chinchilla prevented from doing this can become nutrient deficient." },
+      { q: "What is fur slip in chinchillas?", a: "It's a protective defense mechanism where a grabbed, mishandled, or overexcited chinchilla releases a large patch of fur all at once, revealing smooth skin underneath. It's not painful and not an injury in the traditional sense, but the fur can take several months to grow back, and it often regrows a slightly different shade." },
     ],
   },
   {
@@ -78,7 +81,7 @@ Fur ring - a constricting ring of fur around the penis in males - can develop du
     petType: "Small Mammals",
     image: "/assets/guides/degu.jpg",
     tagline: "The daytime rodent that cannot eat sugar and will not live alone!",
-    funFact: "Degus are one of the few mammals that cannot metabolise dietary sugar properly. They have an unusual insulin structure and develop diabetes and cataracts on a diet most other rodents handle fine, which is why a single grape can matter here in a way it never would for a hamster.",
+    funFact: "Degus are one of the few mammals that cannot metabolize dietary sugar properly. They have an unusual insulin structure and develop diabetes and cataracts on a diet most other rodents handle fine, which is why a single grape can matter here in a way it never would for a hamster.",
     // Labels match `covers` strings in affiliateProducts.js and the figures are those
     // products' vetted prices. See scripts/check-cost-coverage.mjs. Note there is no
     // degu-specific pellet product wired up yet, so that line stays unmatched.
@@ -111,7 +114,7 @@ Give them a deep substrate layer to dig in. Degus are burrowers and a cage with 
 Everything wooden will be destroyed. Degu incisors are open-rooted and grow for life, and they chew structurally rather than idly. Plastic shelves, plastic hides and plastic wheels last days. Use ceramic, metal and untreated hardwood, and expect to replace chew wood weekly.
 
 Keep them at 60 to 72 degrees F. Like chinchillas they overheat easily and cannot cope above about 80, and a degu breathing rapidly with a wet chin in a warm room is in trouble.`,
-      diet: `Unlimited grass hay is the base of the diet and must be there all the time. It supplies the fibre that keeps the gut moving and the abrasion that keeps continuously growing teeth worn down.
+      diet: `Unlimited grass hay is the base of the diet and must be there all the time. It supplies the fiber that keeps the gut moving and the abrasion that keeps continuously growing teeth worn down.
 
 Pellets must be sugar-free, and the RSPCA is clear that hay matters more than the pellets do. Use a dedicated degu pellet, or a guinea pig or chinchilla nugget provided it contains no molasses, at roughly a tablespoon per degu per day. Foods formulated for rabbits, hamsters and gerbils are not suitable, and neither are chinchilla mixes with dried fruit in them.
 
@@ -119,7 +122,7 @@ No fruit, no honey sticks, no yoghurt drops. This is not a general caution about
 
 Let them eat their own droppings. Degus are coprophagic and the RSPCA treats this as a nutritional requirement rather than a habit to discourage: they need it to get essential nutrients and keep the gut working.
 
-Healthy adult degus have orange incisors. White or very pale teeth in an adult are a sign of poor health, not good hygiene, and teeth should be checked weekly for colour, length and shape.`,
+Healthy adult degus have orange incisors. White or very pale teeth in an adult are a sign of poor health, not good hygiene, and teeth should be checked weekly for color, length and shape.`,
       enrichment: `Degus are diurnal, which is the main reason people choose them: they are awake and interactive during the day rather than at two in the morning. That also means they need genuine daytime stimulation.
 
 They must be kept in at least a pair, and preferably a same-sex group from the same litter. A lone degu is a welfare problem, not a preference. Introducing unfamiliar adults is difficult and often fails, so buy littermates or an already-bonded group rather than planning to add later.
@@ -128,12 +131,12 @@ Provide a solid running wheel of 12 inches or more, tunnels, ceramic hides, plat
 
 They need a dust bath two or three times a week for ten to fifteen minutes, using chinchilla dust rather than sand. Their coat goes greasy and matted without it.
 
-Never pick a degu up by the tail. The skin sheds away as a predator defence, the exposed section is then lost, and it does not grow back.`,
+Never pick a degu up by the tail. The skin sheds away as a predator defense, the exposed section is then lost, and it does not grow back.`,
       health: `Diabetes and cataracts are the signature problem and are almost entirely dietary. Watch for cloudy eyes, drinking far more than usual, and weight loss on a normal appetite. Opaque whitening of the eye is on the RSPCA's daily check list for exactly this reason.
 
-Dental disease is the other common one. Open-rooted teeth that are not worn down overgrow, and the first signs are drooling, wetness around the mouth, dropping food, weight loss and a preference for softer items. Only a vet should correct overgrown or misaligned teeth. This needs a proper oral examination, usually under anaesthetic, not a visual check of the front teeth alone.
+Dental disease is the other common one. Open-rooted teeth that are not worn down overgrow, and the first signs are drooling, wetness around the mouth, dropping food, weight loss and a preference for softer items. Only a vet should correct overgrown or misaligned teeth. This needs a proper oral examination, usually under anesthetic, not a visual check of the front teeth alone.
 
-Vitamin A deficiency and liver disease both appear on the RSPCA's list of conditions degu keepers should learn to recognise, alongside diabetes, tail loss, heat stroke and respiratory infection. Degus are a relatively new pet species and the veterinary picture is still filling in, which is a good argument for registering with an exotics vet who actually sees them.
+Vitamin A deficiency and liver disease both appear on the RSPCA's list of conditions degu keepers should learn to recognize, alongside diabetes, tail loss, heat stroke and respiratory infection. Degus are a relatively new pet species and the veterinary picture is still filling in, which is a good argument for registering with an exotics vet who actually sees them.
 
 Bumblefoot comes from wire flooring and dirty bedding. Respiratory infections come from dusty bedding and poor ventilation, and a degu with laboured breathing or a discharge from the nose needs seeing quickly.
 
@@ -155,8 +158,8 @@ Find an exotics vet before you need one. Degus are not a species every small ani
     },
     faqs: [
       { q: "Can degus eat fruit?", a: "No. Degus have an unusual insulin structure and cannot process dietary sugar the way most rodents can, so fruit, carrot, sweetcorn, honey treats and yoghurt drops all carry a real risk of diabetes and the cataracts that follow it. This is not the usual advice to go easy on treats; it is a species-level metabolic limitation. Safe extras are leafy greens, dandelion, plantain and the occasional plain oat or single sunflower seed." },
-      { q: "Can I keep a single degu?", a: "You should not. Degus live in colonies of up to a hundred animals in the wild with cooperative burrowing and sentry duty, and a lone degu shows real distress: repetitive behaviour, bar chewing and lethargy. Keep at least two. The practical catch is that introducing unfamiliar adults frequently fails, so buy littermates or an established same-sex group rather than planning to add a companion later." },
-      { q: "Why are my degu's teeth orange?", a: "That is what a healthy adult degu's teeth look like. The enamel takes on an orange to deep yellow colour as the animal matures. It is white or very pale teeth in an adult that signal a problem, usually a diet short on the minerals and fibre the species needs." },
+      { q: "Can I keep a single degu?", a: "You should not. Degus live in colonies of up to a hundred animals in the wild with cooperative burrowing and sentry duty, and a lone degu shows real distress: repetitive behavior, bar chewing and lethargy. Keep at least two. The practical catch is that introducing unfamiliar adults frequently fails, so buy littermates or an established same-sex group rather than planning to add a companion later." },
+      { q: "Why are my degu's teeth orange?", a: "That is what a healthy adult degu's teeth look like. The enamel takes on an orange to deep yellow color as the animal matures. It is white or very pale teeth in an adult that signal a problem, usually a diet short on the minerals and fiber the species needs." },
       { q: "Are degus awake during the day?", a: "Yes, and it is the main reason people pick them over hamsters. Degus are diurnal, so they are active and sociable during normal waking hours instead of starting at midnight. They do take naps through the day, and they are noisy: the species has a large vocal repertoire and a bonded pair chatters constantly." },
       { q: "What happens if a degu's tail comes off?", a: "The skin of the tail is designed to strip away if a predator grabs it, leaving the animal free but exposing the vertebrae, which then die back and are lost. It does not regrow. Never lift or restrain a degu by the tail, and scoop from underneath with both hands instead." },
     ],
@@ -242,69 +245,78 @@ Tumors, including mammary tumors, become more common as mice age, similar to rat
     image: "/assets/guides/rat.jpg",
     tagline: "The whip-smart, deeply social rodent that will learn its own name!",
     funFact: "Rats can be trained to respond to their own name, give a high-five, and fetch a ball using the same reward-based methods used on dogs. That knack for learning is also why lab rats have been the standard animal for maze and memory research for more than a century.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a pair, which is the minimum this species should be kept in.
-    costs: {
-      setup: [
-        { item: "24x24x36 in multi-level cage", low: 130, high: 260 },
-        { item: "12-14 in solid exercise wheel", low: 25, high: 45 },
-        { item: "Paper-based bedding", low: 15, high: 25 },
-        { item: "Hideouts and tunnels", low: 15, high: 30 },
-        { item: "Water bottle and food dishes", low: 10, high: 20 },
-        { item: "Chew toys and enrichment", low: 15, high: 30 },
-        { item: "Digital thermometer", low: 10, high: 15 },
-      ],
-      annual: [
-        { item: "Rat-specific pellets or lab blocks", low: 40, high: 70 },
-        { item: "Fresh vegetables and occasional protein", low: 50, high: 90 },
-        { item: "Bedding (ongoing)", low: 60, high: 100 },
-        { item: "Chew toys and enrichment refresh", low: 15, high: 25 },
-        { item: "Annual exotic vet wellness check", low: 60, high: 110 },
-      ],
-    },
-    sections: {
-      housing: `Give rats a multi-level cage with solid, ramped shelves rather than wire mesh flooring, which damages their feet over time. A commonly cited minimum is 16x28x30 inches with multiple levels for a rat, and because rats should never be housed alone, a pair or small group needs more than that bare minimum, not less. Bar spacing matters too: keep it to 1/2 inch or less, since rats are strong climbers and will test any gap they can reach.
-
-Line the cage with recycled paper bedding rather than wood shavings. Cedar and pine both contain aromatic oils that irritate a rat's sensitive respiratory tract, and ammonia buildup from infrequent cleaning is one of the biggest drivers of the chronic respiratory disease that shortens so many pet rats' lives. Clean thoroughly with a pet-safe disinfectant weekly, and change bedding at least twice a week.
-
-A solid-surface exercise wheel at least 12 to 14 inches in diameter, smooth rather than perforated inside, gives rats a safe outlet for their considerable energy without trapping toes or tails. Keep the room roughly 65 to 80 degrees F without big swings.
-
-Rats are highly social and should be kept in same-sex pairs or small groups from a young age, ideally littermates. A lone rat, even one that gets plenty of daily human attention, is at real risk of stress-related depression and abnormal behavior that human company alone doesn't fully prevent. Rescues typically rehome rats in pairs or trios for exactly this reason.`,
-      diet: `Feed a rat-specific pelleted diet or lab block as the base of the diet rather than a loose seed mix, which lets rats pick out the fattiest pieces and skip the balanced parts, the same selective-eating problem seen in several other small pets. Supplement daily with fresh vegetables, and offer fruit more sparingly since rats are prone to obesity on a diet with too many calorie-dense extras.
-
-Rats are true omnivores, and unlike the strict herbivores on this list such as chinchillas and guinea pigs, they can also have small amounts of lean cooked protein like chicken or egg a couple of times a week. Avoid chocolate, caffeine, and carbonated drinks, and keep sugary treats occasional rather than routine, since obesity and some of the tumors covered below are both linked to calorie-dense diets.
-
-Fresh water in a properly positioned sipper bottle should always be available, checked daily to make sure it's actually flowing. Rats are enthusiastic, food-motivated animals, and scatter-feeding a portion of the daily pellets so they have to forage for it is a simple way to add mental stimulation to a routine meal.`,
-      enrichment: `Rats are widely considered among the most intelligent common small pets, and they show it: positive-reinforcement training gets them responding to their own name, giving a high-five, fetching, and running obstacle courses, and they've been the classic model animal for maze and spatial-memory research for exactly this reason. A rat that only gets a cage and a wheel is an under-stimulated rat.
-
-Rotate tunnels, climbing ropes, chew blocks, and cardboard boxes with holes cut in them regularly, and use foraging toys or scatter-feeding to give a rat something to work for. Daily supervised time outside the cage, in a rat-proofed space free of chewable cords and small gaps, is valuable both for exercise and for the bond between rat and keeper.
-
-Rats that are handled gently and often from a young age typically become confident, easily-handled pets that seek out interaction, a real contrast with their skittish wild relatives. Because they're deeply social, the strongest enrichment is often another rat: a bonded pair grooms, play-fights, and sleeps in a pile together in a way no amount of solo human attention fully replaces.`,
-      health: `Chronic respiratory disease, caused by the bacterium Mycoplasma pulmonis, is the most common serious health problem in pet rats and a big part of why dirty or poorly ventilated cages shorten lives: rats with chronic respiratory disease rarely live past 2 years. Signs include sneezing, labored breathing, and a rough coat. There's no cure, but clean housing and prompt veterinary care for flare-ups make a real difference. Any rat that's wheezing, sneezing repeatedly, or breathing with visible effort needs a vet.
-
-Mammary tumors are the most frequently seen tumor in rats and affect both sexes, not just unspayed females, because rat mammary tissue extends widely across the body from chin to tail. Most are benign fibroadenomas rather than cancer, and surgical removal has a good success rate when caught early, so it's worth palpating along the belly and chest for new lumps during regular handling.
-
-Older rats are also prone to pituitary tumors (more common in females on high-calorie diets, causing head tilt and depression), chronic kidney disease, and hind-limb weakness from age-related spinal degeneration. None of these have a cure, which is part of why an experienced exotic vet and prompt attention to new symptoms matter so much for a pet with a naturally short lifespan.`,
-      checklist: [
-        "16x28x30 in minimum multi-level cage",
-        "At least two rats, ideally same-sex littermates",
-        "Bar spacing 1/2 in or less",
-        "Solid-surface exercise wheel, 12 to 14 in",
-        "Paper-based bedding (never cedar or pine)",
-        "Rat-specific pellets or lab blocks",
-        "Fresh vegetables daily",
-        "Hideouts, tunnels, and chew toys",
-        "Water bottle, checked daily",
-        "Exotic veterinarian experienced with rats"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Grooming, heat stress signs, and vet
+    // trips cite the shared small-mammal guides in the sidebar's Health and
+    // More list. Reconciled 2026-09-09 for batch D (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cage type", value: "A wire cage, never a glass tank. A tank, even a large one, traps ammonia far more effectively than an open wire cage does, and rats are unusually prone to exactly the chronic respiratory disease that kind of buildup drives. A well-built wire cage with a solid, sealed base solves this the way a tank simply cannot.", source: "rat-tank-setup-guide" },
+        { label: "Cage size", value: "24x24x24 inches is the minimum for a single rat, and bigger is better beyond that. Because rats must be kept in pairs or small groups, not alone, that minimum is a starting point rather than a target. The practical shorthand: cages built for ferrets or chinchillas are usually the right size for rats too.", source: "rat-tank-setup-guide" },
+        { label: "Bar spacing", value: "About half an inch (1 to 1.5 cm) or less. Spacing around 3/4 inch is wide enough that even an adult rat can get its head stuck trying to push through, a real injury risk rather than just an escape risk.", source: "rat-tank-setup-guide" },
+        { label: "Temperature", value: "The ideal range is 19 to 23°C, roughly 66 to 73°F, and rats generally do fine across a somewhat broader 64 to 79°F band. Rats cannot sweat or pant, and they regulate body heat largely through their tails, which makes them more heat-sensitive than that broader range might suggest, heat stress becomes a real risk above about 86°F.", source: "rat-tank-setup-guide" },
+        { label: "Bedding", value: "Paper-based or cellulose bedding, changed at least twice a week so ammonia does not accumulate between cleanings. Avoid dusty bedding, sawdust specifically, along with cedar and pine, whose aromatic oils irritate a rat's already respiratory-sensitive system.", source: "rat-tank-setup-guide" },
+        { label: "Wheel", value: "A solid-surface exercise wheel with no wire rungs, at least 12 inches in diameter and ideally 14 to 16 inches for adult rats, especially males, since a wheel that is too small forces a hunched, arched running posture that is not good for the spine over time.", source: "rat-tank-setup-guide" },
+        { label: "Company", value: "Never one. Rats are intensely social and single housing is a welfare problem no amount of enrichment fixes. Two is a minimum and a small same-sex group is better.", source: "rat-enrichment-guide" },
+        { label: "Enrichment", value: "A greater total number of enrichment types, listed as nesting material, digging substrate, foraging device, climbing structure, tube, hideaway and suspended area, was associated with more frequent digging, nesting and climbing. Work through the seven categories rather than buying more of what you already have.", source: "rat-enrichment-guide" },
+        { label: "Staple diet", value: "A nutritionally complete, rat-specific pelleted diet or lab block as the base of every meal. Always feed food designed specifically for rats, never pellets made for rabbits, guinea pigs, hamsters, or other herbivores.", source: "rat-feeding-guide" },
+        { label: "Portions", value: "Feed twice daily, morning and evening, adjusting the amount so a rat finishes what is offered and holds a healthy weight rather than free-feeding an unlimited bowl. Keep vegetables, fruit, grains, and seeds combined under about 10% of the total diet.", source: "rat-feeding-guide" },
+        { label: "Foods to avoid", value: "Avoid onion, citrus fruit, walnuts, rhubarb, grapes, raisins, and chocolate entirely. Also skip caffeine, alcohol, raw beans, unripe tomato, green or raw potato, and anything salty, sugary, or heavily processed.", source: "rat-feeding-guide" },
+        { label: "Water", value: "Fresh water should always be available in a bottle rather than an open bowl, and more than one bottle per cage, so a blockage or a spot of competition between cage mates never leaves a rat without access.", source: "rat-feeding-guide" },
+        { label: "Handling", value: "Pick a rat up using both hands in a scooping motion, one hand under the chest, the other supporting the hindquarters, and hold it close to your body for security, never out at arm's length. Never pick a rat up by the tail: the tail skin can shear away from the tissue underneath under pulling or grasping pressure, an injury called degloving or tail slip.", source: "rat-handling-guide" },
+        { label: "Settling in", value: "Give a newly acquired rat a few days to settle into its surroundings before handling begins in earnest, and approach calmly instead of reaching in fast.", source: "rat-handling-guide" },
+        { label: "Budget", value: "Roughly $250 to $550 for a properly housed pair. The cage is by far the biggest line item, running anywhere from about $130 for a basic model to $360 for a premium unit. About $20 to $40 a month ongoing, and $60 to $110 for a routine exotic-vet wellness exam.", source: "rat-cost-guide" },
+        { label: "Adult size", value: "7 to 10 inches body, plus a 6 to 8 inch scaled tail; 0.8 to 1 lb females, 1 to 1.4 lb males." },
+        { label: "Lifespan", value: "The average pet rat lives 18 to 36 months, usually described more simply as 2 to 3 years, with some individuals reaching 4.", source: "rat-cost-guide" },
+        { label: "Respiratory disease", value: "The one condition every rat owner needs to recognize. A survey of pet ratteries in the northwestern US found virtually all of them, 95%, positive for the bacterium behind it. There is no cure, and a rat with the chronic form rarely lives longer than 2 years.", source: "rat-health-issues-guide" },
+        { label: "Lumps", value: "Mammary tumors are the most common tumor type in rats, affecting both males and females, not just unspayed females, because rat mammary tissue extends widely under the skin from chin to tail. Any new lump warrants a vet visit. Spaying a female rat before 7 months of age meaningfully lowers her lifetime risk.", source: "rat-health-issues-guide" },
+        { label: "Grooming", value: "Rats wear their nails down naturally through digging and running far more than rabbits or guinea pigs do, and generally only need a check for overgrowth in older or less active animals rather than a fixed trim schedule.", source: "small-mammal-grooming-nails-molting-guide" },
+        { label: "Heat stress signs", value: "Rapid or open-mouth breathing first, then excess drooling or salivation, then weakness and reluctance to move, with tremors, convulsions, collapse, or unconsciousness as the severe stage. Move the animal to the coolest available room, offer cool, not ice-cold, water, cool it gradually, and get to a vet immediately.", source: "small-mammal-temperature-heat-stress-guide" },
+        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment. For a bonded pair, the cage mate comes along when the visit or recovery allows it.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "rat-health-issues-guide",
+      callNow: [
+        "Labored or noisy breathing",
+        "Sneezing that doesn't resolve",
+        "Any new lump",
+        "Head tilt",
+        "Sudden behavior change",
+        "General lethargy",
+      ],
+      vetLine: "An exotic vet experienced with rats, found before you need one. See a vet promptly for the first three, don't wait to see if it clears up on its own given how quickly a small animal can decline. The last three are a reason to book a routine visit.",
+    },
+    routes: [
+      { slug: "rat-cost-guide", line: "Why the budget starts at two rats, what a properly sized cage actually costs, and the monthly total most first-timers underestimate." },
+      { slug: "rat-tank-setup-guide", line: "Why a wire cage beats a tank, the real minimum size, bar spacing, room temperature, and the wheel that is bigger than you think." },
+      { slug: "rat-feeding-guide", line: "Why hamster food is not rat food, the twice-daily portion rule, and the foods to keep away from a rat entirely." },
+      { slug: "rat-handling-guide", line: "Why rats rarely bite, what allogrooming looks like, the two-handed scoop, and the tail rule that never bends." },
+      { slug: "rat-health-issues-guide", line: "Chronic respiratory disease, mammary and pituitary tumors, kidney disease, and the signs that mean a vet now." },
+      { slug: "rat-enrichment-guide", line: "The pet rat study that found variety, not any one item, is what changes behavior, and the seven categories to cover." },
+    ],
+    buyList: [
+      "At least two rats, same-sex",
+      "Multi-level wire cage with solid ramped shelves",
+      "Solid-surface exercise wheel",
+      "Hammocks and suspended platforms",
+      "Hideouts, at least one per rat",
+      "Tunnels, climbing structures, and a dig box",
+      "Nesting material and things to shred",
+      "Paper-based or cellulose bedding",
+      "Food dishes and more than one water bottle",
+      "Chew toys",
+      "Rat-specific pellets or lab blocks",
+      "Digital thermometer",
+    ],
     faqs: [
-      { q: "Are pet rats the same as wild rats?", a: "Genetically yes, but behaviorally and in every practical sense, no. Fancy rats descend from wild brown rats bred specifically for temperament and color starting in Victorian England, most famously by Jack Black, Queen Victoria's official rat catcher, who sold his tamer, unusually colored rats as pets to the wealthy in the 1800s. That selective breeding produced a genuinely different animal: calm, curious, and eager to interact with people, in contrast to the wild rats most people picture. The stigma persists mostly because the two look similar at a glance, not because fancy rats behave anything like their wild relatives." },
-      { q: "Can rats live alone?", a: "No. Rats are deeply social and should be kept in same-sex pairs or small groups, ideally littermates introduced from a young age. A lone rat, even one that gets hours of daily attention from its owner, is at real risk of stress-related depression and abnormal behavior that human company alone doesn't fully prevent. Rescues typically place rats in pairs or trios for exactly this reason, and it's worth planning cage space for at least two from the start." },
-      { q: "How smart are rats, really?", a: "Genuinely very smart, among the most trainable small pets kept as companions. Using the same reward-based methods used on dogs, rats can learn to respond to their own name, give a high-five, fetch, and run obstacle courses, and they can learn and remember new tasks over time. That trainability isn't just pet-owner folklore either: rats have been the standard animal for maze and spatial-memory research in psychology and neuroscience for more than a century, precisely because they're so good at learning and mentally mapping a space rather than just memorizing a sequence of turns." },
-      { q: "How long do rats live?", a: "Pet fancy rats typically live 2 to 3 years, occasionally reaching 4, which is short for how much personality and trainability they pack in relative to their size. Chronic respiratory disease is one of the biggest factors that shortens rat lifespans in practice, since rats with the condition rarely live past 2 years, which makes clean housing and prompt vet care for any breathing symptoms genuinely lifespan-relevant rather than just a comfort issue." },
-      { q: "What health problems are common in rats?", a: "Chronic respiratory disease, caused by the bacterium Mycoplasma pulmonis, is the most common serious problem and is aggravated by ammonia buildup from infrequent cage cleaning. Mammary tumors are also very common in rats and, unlike most mammals, occur in both sexes because rat mammary tissue extends widely under the skin from chin to tail. The good news is that these tumors are usually benign fibroadenomas rather than cancer, and surgical removal has a good success rate when they're caught early through regular handling and palpation." },
-      { q: "What's the difference between a rat and a mouse?", a: "They're closely related rodents but different species, and the practical differences matter for choosing between them. [Mice](/guides/mouse/) are smaller, faster, and generally more skittish, and most keepers find them harder to hand-tame to the confident, dog-like level many rats reach. Adult male mice are also prone to fighting each other in a way male rats generally aren't, which makes group housing more complicated for mice than for rats, and mice are noticeably smellier, particularly males." },
+      { q: "What size cage does a rat need?", a: "24x24x24 inches is the minimum for a single rat, with the largest habitat possible better still, and since rats must be kept in pairs or small groups that minimum applies before adding a second or third rat, not after. Cages built for ferrets or chinchillas are usually a good size." },
+      { q: "How many rats should be kept together?", a: "Never one. Rats are intensely social and single housing is a welfare problem no amount of enrichment fixes. Two is a minimum and a small same-sex group is better." },
+      { q: "What is the single biggest health risk for pet rats?", a: "Chronic respiratory disease caused by the bacterium Mycoplasma pulmonis, the most common health problem in rats. A survey of pet ratteries in the northwestern US found 95% of them positive for it. Once a rat develops the chronic form it rarely lives longer than 2 years, which makes clean, well-ventilated housing a genuine lifespan issue, not just a comfort one." },
     ],
   },
   {
@@ -316,71 +328,65 @@ Older rats are also prone to pituitary tumors (more common in females on high-ca
     image: "/assets/guides/ferret.jpg",
     tagline: "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!",
     funFact: "Ferrets do a 'war dance' when they're excited: a frenzied hopping, bouncing, and sideways leaping display also called the 'dooking.' Dooking means your ferret is having the time of their life!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "3x2x2 ft multi-level cage", low: 100, high: 200 },
-        { item: "Fleece hammocks and sleep sacks", low: 20, high: 40 },
-        { item: "Litter box", low: 10, high: 15 },
-        { item: "Toys, tunnels, and dig boxes", low: 25, high: 45 },
-        { item: "Spay/neuter + initial vaccinations (if needed)", low: 150, high: 300 },
-      ],
-      annual: [
-        { item: "High-quality ferret kibble or raw diet", low: 150, high: 250 },
-        { item: "Distemper and rabies vaccine boosters", low: 50, high: 100 },
-        { item: "Annual fecal exam and bloodwork", low: 100, high: 200 },
-        { item: "Bedding and litter", low: 50, high: 80 },
-      ],
-    },
-    sections: {
-      housing: `Ferrets need a multi-level cage (minimum 3x2x2 ft with solid ramps and platforms) as their home base, but they cannot live in a cage full-time. Ferrets require a minimum of 4 hours of free-roaming time in a ferret-proofed room every single day - this is not optional. Ferrets kept in cages all day develop significant physical and behavioral problems.
-
-Ferret-proofing is a serious undertaking. Ferrets squeeze through impossibly small gaps, chew electrical cords, steal and hide small objects (including jewelry, keys, and remote controls), fall into open toilets, and get into everything. Check every baseboard, gap under appliances, and recliner mechanism (ferrets love to climb into recliners and get crushed). Block all gaps under doors and any opening wider than 1 inch.
-
-Inside the cage: fleece hammocks, sleep sacks, and tube tunnels provide resting spots. Line the cage floor with fleece liners or paper-based bedding - never cedar or pine, which contain toxic aromatic oils. Provide a litter box with paper-based litter in one corner, and keep room temperature below 80 degrees F. Ferrets overheat easily and can die from heat stroke at temperatures that feel comfortable to humans.
-
-Multiple ferrets do significantly better together - they are social animals that wrestle, groom, and sleep in piles. A pair or trio is far preferable to a solo ferret for the animals' wellbeing.`,
-      diet: `Ferrets are obligate carnivores with a digestive tract optimized for animal protein and fat and no capacity to process plant matter. The dietary principle is simple: high protein, high fat, zero carbohydrates, zero plant fiber. The practical challenge is finding commercial foods that actually meet this standard.
-
-A high-quality, grain-free ferret kibble with a named animal protein (chicken, turkey, duck) as the first 2 to 3 ingredients, fat content above 20%, and carbohydrate content below 20% is the commercial food baseline. Multiple higher-end brands meet this standard; avoid brands containing corn, wheat, soy, or pea protein as primary ingredients.
-
-A raw meat diet (whole prey, chunks of meat and organs, or commercial raw ferret food) is arguably the most species-appropriate option and produces excellent coat condition, dental health, and energy levels in most ferrets. Transition to raw slowly if switching from kibble to avoid digestive upset.
-
-Avoid: fruits, vegetables, grains, dairy, fish-based foods, and sugary treats. Ferrets cannot digest plant matter and chronic exposure to plant carbohydrates is strongly associated with insulinoma (pancreatic cancer) development. Fresh water in a heavy bowl must always be available - bottles are difficult for ferrets to drink from adequately and often run dry unnoticed.`,
-      enrichment: `Ferrets are among the most playful and mischievous animals kept as pets. Their characteristic "dooking" (excited chattering while performing the war dance - a frenzied hopping, bouncing, sideways leaping display) is one of the most joyful sights in the exotic pet world, and it tells you your ferret is having the time of its life.
-
-Rotate enrichment items frequently - ferrets become bored with toys quickly and light up at novelty. Crinkle balls, tunnels, dig boxes (shallow bins filled with dry rice, dirt, or shredded paper), ferret-safe puzzle feeders, and "treasure stash" boxes (a container they can deposit stolen items into) are all excellent options.
-
-Daily free-roam time with human interaction is the most important enrichment. Chase games, hide-and-seek, and learning tricks (ferrets can learn to sit, come when called, and perform simple tricks) all strengthen the bond between ferret and keeper. Many ferrets will return to their cage on their own when tired if the door is left open.
-
-Ferrets sleep 16 to 18 hours per day in deep, often concerning-looking coma-like sleep. This is completely normal. Schedule free-roam time for their active periods (generally morning and early evening).`,
-      health: `Ferrets in North America have a near-universal susceptibility to three serious diseases: insulinoma (pancreatic beta cell cancer), adrenal gland disease, and lymphoma. The majority of ferrets will develop at least one of these by age 4 to 5, and many develop all three. This is not a reason to avoid ferrets - it is a reason to commit to appropriate veterinary care.
-
-Insulinoma causes low blood sugar (hypoglycemia) from excess insulin production. Signs include weakness, stumbling, drooling, glassy eyes, and in severe cases, seizures. Management includes diet modification (low carbohydrate is critical - another reason to avoid carb-heavy kibble), medications (prednisone, diazoxide), and sometimes surgery. A ferret with insulinoma needs ongoing veterinary management.
-
-Adrenal gland disease causes hair loss typically starting at the tail and progressing forward, muscle wasting, and in females, vulvar swelling (a dangerous estrogen-producing effect from adrenal tumors). It is managed with hormonal implants, medications, or surgery depending on severity.
-
-All ferrets should be vaccinated against canine distemper (fatal in ferrets) and rabies. Annual wellness exams including bloodwork starting at age 2 to 3 are essential for early disease detection. A ferret-experienced exotic veterinarian is not optional - find one before acquiring ferrets.`,
-      checklist: [
-        "Multi-level ferret cage (3x2x2 ft minimum)",
-        "Fleece hammocks and sleep sacks",
-        "Ferret-proofed free-roam room (4+ hours/day)",
-        "High-quality ferret kibble or raw meat diet",
-        "Fresh water bowl (always available)",
-        "Tunnels, dig boxes, and rotating toys",
-        "Canine distemper and rabies vaccinations",
-        "Spay/neuter (if not already done)",
-        "Annual fecal exam and bloodwork",
-        "Ferret-experienced exotic veterinarian",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Vet trips cites the shared
+    // small-mammal guide in the sidebar's Health and More list. Reconciled
+    // 2026-09-09 for batch C (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cage", value: "For a pair, at least 30 by 24 by 48 inches, adding roughly 4 additional square feet of floor space for each ferret beyond that. A double-unit multi-level cage with solid levels and a covered ramp is the most consistently recommended setup. Bar spacing one inch or less.", source: "ferret-tank-setup-guide" },
+        { label: "Temperature", value: "Keep the room in the 50 to 75°F range, and treat anything above about 80 to 85°F as a real heatstroke risk. No supplemental heat source is needed indoors.", source: "ferret-tank-setup-guide" },
+        { label: "Bedding", value: "Washable fabric hammocks and sleep sacks for sleeping. A corner litter box with non-clumping, dust-free litter, paper or pelleted. Never cedar or pine shavings.", source: "ferret-tank-setup-guide" },
+        { label: "Out-of-cage time", value: "Several hours of supervised out-of-cage play daily, during their active window, is a requirement, not a bonus. Ferrets denied playtime spent more time lying awake with their eyes open, screeched more, and sat and stood less.", source: "ferret-enrichment-guide" },
+        { label: "Ferret-proofing", value: "Block every gap larger than about one inch, secure cabinets and low openings, and remove any rubber or foam items they could chew and swallow, a direct GI blockage risk.", source: "ferret-tank-setup-guide" },
+        { label: "Diet", value: "A high-quality, ferret-specific dry kibble, roughly 32 to 40% protein, free-fed around the clock for healthy adults. Never fruits, vegetables, grains, dairy, or chocolate.", source: "ferret-feeding-guide" },
+        { label: "Not eating", value: "A healthy adult can develop dangerous blood sugar drops within a single day of not eating. Appetite loss is treated as needing same-day veterinary attention, not a few days of watching.", source: "ferret-feeding-guide" },
+        { label: "Nipping", value: "Normal in kits, usually play, teething, fear, or overstimulation, peaking around 3 to 4 months old. Never pop or flick the nose, which increases fear-based biting; redirect to a toy instead.", source: "ferret-handling-guide" },
+        { label: "Budget", value: "$300 to $700 to set up. Roughly $50 to $60 a month for a pair. Lifetime vet cost is commonly estimated at $3,000 to $8,000 or more.", source: "ferret-cost-guide" },
+        { label: "Adult size", value: "13 to 16 inches body length; males significantly larger." },
+        { label: "Lifespan", value: "5 to 9 years on average for US pet ferrets today. Older sources citing 10 to 15 years reflect a healthier population than what's typical now.", source: "ferret-cost-guide" },
+        { label: "Adrenal disease", value: "Symmetrical hair loss starting at the tail base and moving toward the head over weeks to months, skin usually healthy, is the hallmark sign, unlike normal seasonal shedding, which is diffuse and resolves within a few weeks.", source: "ferret-adrenal-disease-guide" },
+        { label: "Vaccines", value: "Canine distemper (nearly always fatal in ferrets) and rabies, plus annual bloodwork starting at age 2 to 3 for early disease detection.", source: "ferret-health-issues-guide" },
+        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "ferret-health-issues-guide",
+      callNow: [
+        "Urinary blockage in males (a hormone-driven enlarged prostate)",
+        "Sudden collapse or seizure (insulinoma)",
+        "Vomiting, appetite loss, and lethargy after swallowing rubber or foam (GI blockage)",
+      ],
+      vetLine: "A ferret-experienced exotic vet, found before you need one. All three are genuine emergencies that need immediate veterinary care, not a wait-and-see approach.",
+    },
+    routes: [
+      { slug: "ferret-cost-guide", line: "$75 to $400 for the ferret, $300 to $700 for the setup, and the $3,000 to $8,000 lifetime vet cost most owners don't budget for." },
+      { slug: "ferret-tank-setup-guide", line: "Cage size for a pair, why overheating is the real danger, and the ferret-proofing that matters as much as the cage." },
+      { slug: "ferret-feeding-guide", line: "Free-feeding kibble, the fastest gut transit of any common pet mammal, and the honest list of reasons a ferret stops eating." },
+      { slug: "ferret-handling-guide", line: "Why kits nip, the right way to respond, and the coat patterns linked to congenital deafness." },
+      { slug: "ferret-health-issues-guide", line: "Adrenal disease, insulinoma, GI blockage, and canine distemper, with why middle age is the real turning point." },
+      { slug: "ferret-enrichment-guide", line: "The 2022 surveys on what ferrets actually enjoy, and the specific behavior that shows up when they don't get it." },
+      { slug: "ferret-legal-guide", line: "Banned in California and Hawaii, restricted in NYC, and the petition that could change California's ban." },
+      { slug: "ferret-adrenal-disease-guide", line: "The hair loss pattern that separates adrenal disease from normal shedding, and what the neutering-age link actually shows." },
+    ],
+    buyList: [
+      "30x24x48 inch double-unit multi-level cage",
+      "Fleece hammocks and sleep sacks",
+      "Corner litter box with paper or pelleted litter",
+      "Tunnels and a dig box",
+      "Rotating toys (never latex or foam rubber)",
+      "Sipper water bottle",
+      "High-quality, ferret-specific dry kibble",
+      "A ferret-proofed free-roam room",
+    ],
     faqs: [
-      { q: "Do ferrets smell?", a: "Yes, to varying degrees. Ferrets have musk glands and produce a natural musky scent. Most pet ferrets in North America are descented (musk glands removed), which reduces but does not eliminate the scent - the skin and fur themselves produce a natural oil-based smell. Regular bathing reduces the odor temporarily but too-frequent bathing stimulates more oil production. Good litter box hygiene and regular bedding washing manage most of the smell." },
-      { q: "What do ferrets eat?", a: "Obligate carnivores requiring high protein, high fat, and zero carbohydrates. A quality grain-free ferret kibble with named animal protein as the first 2 to 3 ingredients is the commercial baseline. A raw meat diet (whole prey, raw meat and organs) is arguably the most species-appropriate option. Avoid all fruits, vegetables, grains, dairy, and sugary treats - plant carbohydrates are strongly associated with insulinoma development in ferrets." },
-      { q: "What diseases are common in ferrets?", a: "Most North American ferrets develop at least one of three serious diseases by age 4 to 5: insulinoma (pancreatic cancer causing low blood sugar), adrenal gland disease (causing hair loss starting at the tail and hormonal imbalance), and lymphoma. Annual bloodwork starting at age 2 to 3 allows early detection. A ferret-experienced exotic vet is essential from day one, not just when illness appears." },
-      { q: "How much free-roam time do ferrets need?", a: "A minimum of 4 hours per day outside their cage, in a thoroughly ferret-proofed area. Ferrets kept caged all day develop significant physical deterioration and behavioral problems. Ferret-proofing is serious: they squeeze through gaps wider than 1 inch, chew electrical cords, fall into open toilets, and get trapped in recliner mechanisms. Block all gaps under doors and secure all hazards before unsupervised roaming." },
-      { q: "How long do ferrets live?", a: "6 to 10 years in captivity, though their high disease susceptibility means dedicated veterinary management becomes part of the commitment by middle age. Ferrets are deeply social, playful, and bond strongly with their keepers - many owners describe them as the most personality-rich small pets available. The veterinary costs of managing insulinoma and adrenal disease should be budgeted for before acquiring ferrets." },
-      { q: "Is a ferret a type of weasel?", a: "Yes, biologically. Ferrets belong to the weasel family (Mustelidae), the same family as mink, stoats, otters, and polecats, and a domestic ferret is believed to descend specifically from the European polecat. That said, \"weasel\" in everyday speech usually means a specific set of smaller wild Mustela species, not a pet ferret, so the two words aren't interchangeable in casual use even though they're taxonomic relatives." },
+      { q: "What size cage does a ferret need?", a: "For a pair, at least 30 by 24 by 48 inches, plus about 4 square feet of floor for each ferret beyond two. Experienced owners and exotic vets point to the double-unit multi-level cage with solid levels and a covered ramp. Bar spacing: one inch or less." },
+      { q: "What ferret health issues count as a real emergency?", a: "A urinary blockage in males from an adrenal-related enlarged prostate, a sudden collapse or seizure from insulinoma, and a GI blockage from swallowed rubber or foam are all genuine emergencies that need immediate veterinary care, not a wait-and-see approach." },
+      { q: "Is adrenal disease curable in ferrets?", a: "It's treatable and often manageable long-term, but not always fully curable, especially if both adrenal glands are affected or if surgery isn't a safe option. Many ferrets live comfortably for years with appropriate medical management even without a full cure." },
     ],
   },
   {
@@ -473,7 +479,7 @@ All ferrets should be vaccinated against canine distemper (fatal in ferrets) and
     sections: {
       housing: `Depth matters more than floor plan. Gerbils are burrowing animals and the single biggest improvement you can make is eight to twelve inches of substrate they can tunnel through. A 20 gallon long tank with a mesh lid suits them better than most wire cages, because a wire cage cannot hold deep bedding and gerbils kick it out.
 
-Mix paper-based bedding with hay or shredded paper so the tunnels hold their shape. Pure fluffy bedding collapses; a mix binds. Once a pair has built a burrow system they will maintain and remodel it for months, and that is the behaviour the species is really about.
+Mix paper-based bedding with hay or shredded paper so the tunnels hold their shape. Pure fluffy bedding collapses; a mix binds. Once a pair has built a burrow system they will maintain and remodel it for months, and that is the behavior the species is really about.
 
 Bar spacing on any wire section must be half an inch or less. Gerbils are small, determined and good climbers, and a mesh lid needs to be secured rather than rested on top.
 
@@ -482,13 +488,13 @@ Keep them at 65 to 75 degrees F, out of direct sun. A glass tank in a sunny wind
 Keep the humidity low, which is the one environmental number that really matters for this species. Merck advises staying below 40 percent, because above 50 percent gerbils develop nasal dermatitis, the sore-nose condition described in the health section. A gerbil setup in a damp room or a poorly ventilated tank is asking for it.
 
 Skip the plastic. Tubes, wheels and hides in plastic get chewed through fast, and swallowed fragments cause impactions.`,
-      diet: `Feed a pelleted diet labelled for gerbils specifically, at 18 to 20 percent protein and roughly 5 to 8 grams per gerbil per day. Merck is unusually direct about this: gerbils fed standard rat or mouse diets develop insidious periodontal disease, obesity, reduced glucose tolerance and diabetic changes in the pancreas, and its stated rule is to always feed diets labelled for the species.
+      diet: `Feed a pelleted diet labeled for gerbils specifically, at 18 to 20 percent protein and roughly 5 to 8 grams per gerbil per day. Merck is unusually direct about this: gerbils fed standard rat or mouse diets develop insidious periodontal disease, obesity, reduced glucose tolerance and diabetic changes in the pancreas, and its stated rule is to always feed diets labeled for the species.
 
 Sunflower seed is the specific thing to keep out. It is high in fat and low in calcium, gerbils will pick it out first given the chance, and on diets above about 4 percent fat they develop raised blood cholesterol, more so in males. Seed mixes are a treat rather than a staple.
 
 Provide hay alongside it, both to eat and to build with.
 
-Fresh food is a small supplement rather than a food group: a little broccoli, carrot, cucumber, apple or dandelion a few times a week is plenty. Too much fresh food causes diarrhoea in a species adapted to a dry diet.
+Fresh food is a small supplement rather than a food group: a little broccoli, carrot, cucumber, apple or dandelion a few times a week is plenty. Too much fresh food causes diarrhea in a species adapted to a dry diet.
 
 Water from a bottle, checked daily. Gerbils drink very little, which makes it easy to miss a bottle that has stopped flowing.
 
@@ -504,11 +510,11 @@ A sand bath, not a dust bath, keeps the coat in order. Use chinchilla sand rathe
 Handle low over a surface, scooped in cupped hands. If you must steady a gerbil by the tail, take it at the base only. Merck is explicit that a gerbil lifted by the tail tip degloves: the skin slips off, leaving exposed tissue that goes necrotic and sloughs, and the treatment is prompt amputation of the bare section.`,
       health: `Nasal dermatitis, called sore nose or facial eczema, is the condition Merck describes as common in pet gerbils. It starts as redness around the nostrils and can progress to hair loss and a spreading moist dermatitis, and if it reaches the sinuses it causes appetite loss, weight loss and can kill. The cause is not an infection to begin with: it is porphyrin secretion from the Harderian gland irritating the skin, driven by humidity above 50 percent, overcrowding, or being unable to sand bathe. Fix the environment as well as treating the skin.
 
-Tyzzer's disease is the one that kills fastest. Merck calls it the most frequently described fatal infectious disease of gerbils. It spreads by the faecal-oral route from contaminated bedding, and it presents as sudden death or a very short illness with diarrhoea. A hunched, lethargic gerbil with diarrhoea needs a vet the same day.
+Tyzzer's disease is the one that kills fastest. Merck calls it the most frequently described fatal infectious disease of gerbils. It spreads by the fecal-oral route from contaminated bedding, and it presents as sudden death or a very short illness with diarrhea. A hunched, lethargic gerbil with diarrhea needs a vet the same day.
 
 Aural cholesteatoma is the one nobody warns you about. Merck records it in 50 percent of gerbils over two years old: a growth in the ear canal that pushes the eardrum inward, with head tilt as the visible sign, leading to bone damage and inner ear destruction.
 
-Tumours are common with age, at a 25 to 40 percent incidence past two or three years. Scent gland carcinomas in males and ovarian tumours in females account for around 80 percent of them. The scent gland sits as a bare orange-tan oval on the belly, so any lump, ulceration or bleeding there is worth checking early, since marking gland tumours can spread.
+Tumors are common with age, at a 25 to 40 percent incidence past two or three years. Scent gland carcinomas in males and ovarian tumors in females account for around 80 percent of them. The scent gland sits as a bare orange-tan oval on the belly, so any lump, ulceration or bleeding there is worth checking early, since marking gland tumors can spread.
 
 Seizures occur in some lines and can look alarming. They typically pass in a few minutes and leave no lasting effects, and anticonvulsants are not usually needed. Merck notes that frequency and severity often decrease with age, but is careful to add that a subset of adults instead get progressively worse, so a gerbil whose seizures are becoming more frequent is not simply growing out of it. Handling gently and often in the first weeks of life suppresses them in predisposed animals.
 
@@ -533,7 +539,7 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
       { q: "Do gerbils smell?", a: "Barely, and it is the main reason people pick them. Gerbils evolved in the Mongolian desert with a physiology built around conserving water, so they produce only a few drops of very concentrated urine a day. A tank with deep bedding, spot-cleaned regularly and fully changed every few weeks, stays far fresher than the equivalent setup for a mouse or a rat." },
       { q: "How deep should gerbil bedding be?", a: "Eight to twelve inches if you can manage it. Gerbils are burrowers and a shallow tray gives them nothing to do, which shows up as bar chewing and digging obsessively in one corner. Mix paper bedding with hay or shredded paper so the tunnels hold rather than collapse. A deep setup is the single biggest quality of life change you can make for this species." },
       { q: "Can gerbils live alone?", a: "They should not. Gerbils are social and a lone animal does poorly. The complication is that they are also territorial: unfamiliar adults often fight, and even an established pair can suddenly fall out, which keepers call declanning. Buy littermates where possible, introduce unfamiliar animals only with the split-cage method over one to two weeks, and separate permanently if a pair breaks down." },
-      { q: "Why does my gerbil have a bald orange patch on its belly?", a: "That is the scent gland, and it is normal on both sexes, more prominent in males. Gerbils rub it on objects to mark territory. It is worth checking now and then, because scent gland tumours are one of the more common problems in older gerbils and are usually treatable when found early. Any lump, ulcer or bleeding there needs a vet." },
+      { q: "Why does my gerbil have a bald orange patch on its belly?", a: "That is the scent gland, and it is normal on both sexes, more prominent in males. Gerbils rub it on objects to mark territory. It is worth checking now and then, because scent gland tumors are one of the more common problems in older gerbils and are usually treatable when found early. Any lump, ulcer or bleeding there needs a vet." },
       { q: "Why is my gerbil having seizures?", a: "Some gerbil lines carry an inherited tendency to brief seizures, usually set off by stress, a sudden noise, or rough handling, and often in younger animals that grow out of it. An episode typically passes in under a minute. Keep the animal somewhere quiet, keep handling sessions short and gentle, and see a vet if seizures are frequent, long, or start in an adult that never had them before." },
       { q: "Should I get a gerbil or a mouse?", a: "Odor is the most practical difference. Gerbils evolved in the Mongolian desert to conserve water and produce only a few drops of concentrated urine a day, making them one of the least smelly small pets you can keep. [Mice](/guides/mouse/), especially males, are near the opposite end of the spectrum: male mouse urine contains trimethylamine, a compound that gives it a distinctly strong smell, so a mouse cage needs more frequent cleaning than a gerbil tank of the same size. Gerbils are also generally the calmer, less easily startled of the two once tame, while mice are smaller, faster, and quicker to bolt. If odor and steadier handling matter most, lean gerbil; if you specifically want the smallest, quickest small mammal on this site, a mouse is that animal." },
     ],
@@ -547,73 +553,69 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
     image: "/assets/guides/guinea-pig.jpg",
     tagline: "The vocal, social little veggie lover that needs a friend!",
     funFact: "Guinea pigs have over 11 different vocalizations. They 'wheek' when excited about food and 'purr' when content (similar to cats but much louder)!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "C&C cage (7.5 sq ft+)", low: 80, high: 180 },
-        { item: "Hideouts and tunnels", low: 20, high: 40 },
-        { item: "Chew toys (smaller, softer)", low: 15, high: 25 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Nail clippers + styptic powder", low: 10, high: 15 },
-        { item: "Water bottle and food dishes", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Grass hay (unlimited)", low: 120, high: 200 },
-        { item: "Guinea pig pellets", low: 40, high: 70 },
-        { item: "Fresh vegetables (especially bell peppers)", low: 150, high: 250 },
-        { item: "Vitamin C supplement (if needed)", low: 8, high: 15 },
-        { item: "Bedding", low: 60, high: 100 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `Guinea pigs need significantly more space than pet store cages typically provide. The minimum is 7.5 square feet of unobstructed floor space, the same whether it's one guinea pig or a pair (and guinea pigs should almost always be kept in pairs or groups). The Humane Society and most cavy welfare organizations recommend at least 10.5 square feet for a pair, and more for larger groups. Solitary guinea pigs are stressed, lonely animals - they need companions of their own species.
-
-C&C (Cubes and Coroplast) cages are the gold standard for guinea pig housing. They are affordable, customizable to any size, easy to clean, and provide adequate ventilation. Never use wire-bottom cages - they cause painful pressure sores (bumblefoot) and impair natural movement. Use solid flooring covered with appropriate bedding.
-
-Fleece liners (washed regularly) or paper-based bedding (Carefresh or similar) work well. Avoid cedar and pine shavings. Provide multiple hideouts (at least one per guinea pig plus one extra), a hay rack or large hay pile, a water bottle or bowl, food dishes, and a litter corner.
-
-Temperature should stay between 65 and 79 degrees F, which is the 18 to 26 degrees C the Merck Veterinary Manual gives for guinea pig housing. Guinea pigs are sensitive to drafts and temperature extremes. They can overheat quickly above 80 degrees F and can develop respiratory infections in cold, drafty conditions, so the gap between the comfortable ceiling and the danger line is a single degree.`,
-      diet: `Unlimited grass hay is the most important part of a guinea pig's diet. Timothy hay is the standard for adult guinea pigs. Orchard grass and meadow hay are good alternatives. Hay should make up 70 to 80% of their total daily intake - it keeps the continuously growing teeth worn properly and the gut moving. A hay rack or corner holder keeps the hay clean and accessible throughout the day.
-
-Guinea pigs cannot synthesize Vitamin C. This is the most critical dietary distinction that separates them from other small mammals and many other pets. Vitamin C deficiency (scurvy) causes rough coat, lethargy, swollen joints, bleeding gums, and weight loss. The best way to ensure adequate Vitamin C is through fresh vegetables daily. Bell peppers (all colors) are the single best Vitamin C source - a quarter of a medium bell pepper daily for one guinea pig provides sufficient Vitamin C. The requirement itself scales with body weight rather than being a flat daily figure: Merck gives 10 to 25 mg/kg a day for a healthy adult and 30 mg/kg or more for a growing, pregnant, lactating or ill one, which works out to roughly 20 to 25 mg a day for a typical adult. Kale, parsley, cilantro, and leafy romaine are also excellent choices.
-
-High-quality guinea pig pellets (vitamin C-fortified, Timothy-based) should be provided in small amounts: 1/8 cup per guinea pig per day. Avoid pellets with added seeds, dried fruit, or colorful mixed pieces. Pellets are a supplement to hay, not a replacement.
-
-Fresh water must always be available. Change it daily and clean the water bottle or bowl weekly to prevent bacterial growth.`,
-      enrichment: `Guinea pigs are active, social, vocal animals that communicate extensively through a variety of sounds including wheeks (excitement), purrs (contentment), rumbles (dominance or mating), and chutts (annoyance). Understanding their vocalizations helps you respond to their needs appropriately.
-
-Provide tunnels (cardboard rolls, plastic tubes, fabric tunnels), cardboard boxes with multiple entrances, various safe chew toys (apple wood, willow, dried herbs, cardboard), and foraging toys where pellets or small veggie pieces are hidden. Rotate enrichment regularly to maintain interest. Guinea pigs investigate new items with enthusiastic popcorning (joyful jumps and twists) when they are happy.
-
-Daily floor time outside the cage - in a guinea pig-proofed area or a large playpen - provides crucial exercise, mental stimulation, and social bonding time. Guinea pigs enjoy exploring new environments and benefit from supervised outdoor grazing on pesticide-free grass in warm weather.
-
-Social interaction is the most important enrichment. A pair of bonded guinea pigs chases, grooms, follows, and communicates with each other throughout the day. A solo guinea pig sits quietly and waits. Always house guinea pigs with at least one companion.`,
-      health: `Scurvy (Vitamin C deficiency) is the most common nutritional disease in guinea pigs and the most preventable. Fresh bell peppers and leafy greens provided daily prevent it entirely. Signs of developing scurvy include rough, puffed coat, reluctance to move, swollen joints, weight loss, and eventually bleeding gums. Do not rely on Vitamin C added to water - it degrades rapidly with light and oxygen. Fresh vegetables are the most reliable source.
-
-Dental disease is very common in guinea pigs, particularly malocclusion of the cheek teeth (molars and premolars). Guinea pig teeth grow continuously and the cheek teeth especially can develop spurs that cut into the tongue and cheeks, causing pain and refusal to eat. Unlimited hay is the best prevention. Signs of dental problems include drooling, dropping food, reduced appetite, and weight loss. Annual dental checks with a cavy-savvy exotic veterinarian are strongly recommended.
-
-Respiratory infections (particularly bacterial pneumonia) are common and serious in guinea pigs. Signs include labored breathing, nasal discharge, lethargy, and loss of appetite. Respiratory infections in guinea pigs progress quickly - seek veterinary care promptly. Keep guinea pigs away from drafts and other sick animals.
-
-GI stasis (slow gut motility) and bloat can be life-threatening. Signs include a distended abdomen, absence of droppings, and obvious discomfort. Unlimited hay is the primary prevention. Any guinea pig that stops eating or producing droppings warrants immediate veterinary assessment.`,
-      checklist: [
-        "Minimum 7.5 sq ft enclosure (C&C recommended)",
-        "Unlimited grass hay (Timothy or Orchard)",
-        "High-quality guinea pig pellets",
-        "Daily fresh vegetables (especially bell peppers)",
-        "Vitamin C supplement if needed",
-        "Multiple hideouts and tunnels",
-        "Safe chew toys (willow, apple wood)",
-        "Digital thermometer and hygrometer",
-        "Nail clippers and styptic powder",
-        "Guinea pig-savvy veterinarian"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size and lifespan come from
+    // the encyclopedia entry, which no deep dive repeats. Nails and vet trips
+    // cite the shared small mammal guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-08 after the guinea pig set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure", value: "7.5 square feet minimum for one, 10.5 for a pair (and a pair is the recommended minimum), more for a larger group. Solid floor, never wire.", source: "guinea-pig-tank-setup-guide" },
+        { label: "Temperature", value: "65 to 79°F. Heatstroke becomes a real risk above 80°F, so the gap between the comfortable ceiling and the danger line is a single degree.", source: "guinea-pig-tank-setup-guide" },
+        { label: "Bedding", value: "Paper-based bedding, kiln-dried pine, or fleece liners. Never cedar, raw pine, or sawdust.", source: "guinea-pig-tank-setup-guide" },
+        { label: "Company", value: "Pairs or small groups, not solitary. Guinea pigs housed alone tend to become withdrawn or depressed.", source: "guinea-pig-tank-setup-guide" },
+        { label: "Diet", value: "Grass hay unlimited, roughly 80% of the diet. About 1/8 cup (about 2 tablespoons) of vitamin-C-fortified pellets per guinea pig, and roughly 1 cup of fresh leafy greens.", source: "guinea-pig-tank-setup-guide" },
+        { label: "Vitamin C", value: "10 to 25 mg/kg a day for a healthy adult, 30 mg/kg or more if growing, pregnant, lactating, or ill, roughly 20 to 25 mg a day for a typical adult. A quarter of a medium bell pepper covers it.", source: "guinea-pig-scurvy-vitamin-c-guide" },
+        { label: "Not eating", value: "Call a vet at 8 to 12 hours without eating or producing droppings. Once GI stasis sets in, it can become life-threatening within 24 to 48 hours.", source: "guinea-pig-feeding-guide" },
+        { label: "Handling", value: "Approach from the side, never above. One hand under the chest behind the front legs, the other supporting the hindquarters. Stay low, a fall can be fatal.", source: "guinea-pig-handling-guide" },
+        { label: "Budget", value: "$10 to $60 from a shelter, around $50 at a pet store. $100 to $250 to set up. $33 to $70 a month for one, $60 to $135 for a pair.", source: "guinea-pig-cost-guide" },
+        { label: "Adult size", value: "8 to 12 inches, 1.5 to 2.6 lbs." },
+        { label: "Lifespan", value: "4 to 8 years." },
+        { label: "Nails", value: "A trim roughly every 6 to 8 weeks, with styptic powder within reach before you start, a flashlight held behind dark nails to find the quick.", source: "small-mammal-grooming-nails-molting-guide" },
+        { label: "Vet trips", value: "Don't withhold food the way you would for a dog or cat, guinea pigs and rabbits can't vomit and don't need a long pre-op fast. Bring the cage mate along when the visit allows it.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "guinea-pig-health-issues-guide",
+      callNow: [
+        "Refusal to eat",
+        "Drooling",
+        "Labored breathing",
+        "Diarrhea",
+        "Lethargy",
+        "A hunched posture",
+      ],
+      vetLine: "A cavy-savvy exotic vet, found before you need one. Guinea pigs hide illness well, so an annual wellness exam matters even when everything looks fine.",
+    },
+    routes: [
+      { slug: "guinea-pig-cost-guide", line: "$10 to $60 for the animal, $100 to $250 to set up, and why the budget really needs to plan for two." },
+      { slug: "guinea-pig-tank-setup-guide", line: "The 7.5 to 10.5 square foot minimum, temperature, bedding, and why vitamin C makes this diet different from a rabbit's or hamster's." },
+      { slug: "guinea-pig-scurvy-vitamin-c-guide", line: "What scurvy actually looks like by stage, why fortified pellets alone aren't enough, and the real daily numbers." },
+      { slug: "guinea-pig-feeding-guide", line: "Schedule, life-stage differences, safe and toxic foods, and the honest range of reasons a guinea pig stops eating." },
+      { slug: "guinea-pig-handling-guide", line: "The correct two-handed pickup, why staying low matters, and the stress signs that mean the session is over." },
+      { slug: "guinea-pig-health-issues-guide", line: "Respiratory infection, dental disease, GI stasis, bladder stones, and ovarian cysts, with what to watch for and when to call." },
+      { slug: "guinea-pig-enrichment-guide", line: "Hideouts, foraging enrichment that replaces up to 80% of a wild guinea pig's day, and supervised floor time." },
+    ],
+    buyList: [
+      "C&C cage or similar (7.5 sq ft minimum, 10.5 for a pair)",
+      "Paper-based bedding, kiln-dried pine, or fleece liners",
+      "Multiple hideouts and tunnels",
+      "Hay rack and unlimited grass hay",
+      "Vitamin-C-fortified guinea pig pellets",
+      "Fresh vegetables, bell pepper especially",
+      "Vitamin C supplement (backup, not a replacement for fresh food)",
+      "Water bottle and food dishes",
+      "Nail clippers and styptic powder",
+      "Safe chew toys",
+    ],
     faqs: [
-      { q: "Do guinea pigs need to be in pairs?", a: "Yes, for almost all guinea pigs. Guinea pigs are highly social herd animals, a trait inherited from the wild cavies they were domesticated from, which lived in groups. A solo guinea pig is an anxious, understimulated animal prone to stress and depression. They communicate through a rich vocabulary of sounds and physical behaviors that require another guinea pig to engage with. Bonded pairs are happier, healthier, and more active than solitary animals. Adopting a pair from the start is far easier than introducing a new companion to an established solo guinea pig." },
-      { q: "Do guinea pigs need Vitamin C?", a: "Yes - and this is the most critical dietary distinction for guinea pigs. Unlike most mammals, guinea pigs cannot synthesize Vitamin C internally and must obtain it entirely from diet. Deficiency causes scurvy: rough coat, reluctance to move, swollen painful joints, weight loss, and eventually internal bleeding. The most reliable source is fresh bell peppers daily - a quarter of a medium bell pepper provides sufficient Vitamin C for one guinea pig. Do not rely on Vitamin C in water bottles, as it degrades rapidly when exposed to light and oxygen." },
-      { q: "Why do guinea pigs wheek?", a: "Wheeking is the distinctive high-pitched squeal guinea pigs make when excited - typically in anticipation of food. Many learn to wheek at the sound of the refrigerator door opening or their owner's footsteps. Beyond wheeking, guinea pigs have an extensive vocal repertoire: purring (contentment), rumbling (dominance), chutting (annoyance), teeth chattering (warning), and quiet cooing between bonded pairs. Their expressiveness is one of the reasons they are such engaging companion animals." },
-      { q: "How long do guinea pigs live?", a: "Guinea pigs typically live 4 to 8 years in captivity, with an average around 5 to 7 years under good care. Lifespan depends significantly on diet (Vitamin C adequacy, hay access), companionship (solitary guinea pigs have shorter, lower-quality lives), and access to veterinary care. Regular exams with a cavy-savvy exotic veterinarian are recommended - dental disease and respiratory infections are common and progress quickly if not caught early." },
-      { q: "What bedding is best for guinea pigs?", a: "Fleece liners (washed every 2 to 3 days) or paper-based bedding like Carefresh are the top recommendations. Fleece provides a soft, clean surface and is economical long-term. Paper-based bedding offers excellent odor absorption and is more forgiving for owners who cannot clean as frequently. Never use cedar or pine shavings - the aromatic oils are toxic to guinea pigs and cause respiratory disease and liver damage. Avoid wire-bottom cage floors, which cause painful pressure sores (bumblefoot) on guinea pig feet." },
+      { q: "How much space does a guinea pig need?", a: "About 7.5 square feet, roughly 30 by 36 inches, for one, and 10.5 for a pair, with more for a larger group. Bigger is always better: guinea pigs are active and use the room." },
+      { q: "How long can a guinea pig safely go without eating?", a: "Not long. Sources say call a vet after 8 to 12 hours with no eating and no droppings, since guinea pig digestion depends on constant food throughput. Once GI stasis sets in, it can become life-threatening inside 24 to 48 hours." },
+      { q: "Why is vitamin C such a big deal for guinea pigs specifically?", a: "Guinea pigs, like humans, can't produce their own vitamin C, which makes deficiency a species-specific concern. It weakens the immune system, slows wound healing, and disrupts normal bone and tooth development, and it's almost entirely preventable through diet." },
     ],
   },
   {
@@ -624,73 +626,64 @@ GI stasis (slow gut motility) and bloat can be life-threatening. Signs include a
     petType: "Small Mammals",
     image: "/assets/guides/hamster.jpg",
     tagline: "The pouch-stuffing solo escape artist that needs way more space than the pet store box!",
-    funFact: "A hamster's cheek pouches can stretch back past its shoulders when fully packed with food, holding a volume close to the size of the hamster's own body.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "450+ sq in cage (bin, wire, or glass tank)", low: 30, high: 90 },
-        { item: "11-12 in solid exercise wheel", low: 15, high: 30 },
-        { item: "6+ inches of paper-based bedding", low: 20, high: 35 },
-        { item: "Hideout", low: 10, high: 15 },
-        { item: "Food and water dishes", low: 10, high: 15 },
-        { item: "Digital thermometer", low: 10, high: 15 },
-      ],
-      annual: [
-        { item: "Hamster pellets or lab blocks", low: 30, high: 50 },
-        { item: "Fresh vegetables (small amounts)", low: 20, high: 40 },
-        { item: "Bedding replacement", low: 60, high: 100 },
-        { item: "Chew toys and wood blocks", low: 15, high: 25 },
-        { item: "Annual vet wellness check (exotic)", low: 40, high: 80 },
-      ],
-    },
-    sections: {
-      housing: `Hamsters are sold in cages far too small for them almost universally, and fixing that is one of the most important things a new owner can do. The current minimum recommended floor space is 450 square inches (roughly a 30x20 inch footprint), with 600 to 800+ square inches strongly preferred - the small wire cages and plastic habitats sold as "starter kits" in most pet stores fall dramatically short of this and are one of the leading causes of hamster stress and premature death.
-
-Bar spacing matters as much as floor space. Syrian hamsters need bars no wider than 1/2 inch apart (they escape through surprisingly small gaps), and dwarf hamster species need even tighter spacing, around 3/8 inch. Bin cages (modified ventilated storage totes) and glass tanks are popular alternatives to wire specifically because they solve both the space and the escape-gap problem at once, and they hold bedding far better than wire does.
-
-Provide at least 6 inches of loose, dust-free bedding - not the thin layer often shown in pet store displays. Hamsters are natural burrowers that dig extensive tunnel systems in the wild, and a shallow bedding layer denies them one of their most important natural behaviors. Paper-based bedding or aspen shavings work well. Never use cedar or pine shavings, which contain aromatic oils that cause respiratory irritation.
-
-Keep the enclosure in a quiet area away from direct sunlight, drafts, and household noise, at a stable temperature between 65 and 75 degrees F. Hamsters can enter a dangerous cold-induced torpor below 40 to 45 degrees F that's sometimes mistaken for death - warming them gradually and contacting an exotic vet is the correct response, not assuming the worst.`,
-      diet: `A high-quality hamster-specific pellet or lab-block style food should make up the bulk of the diet, offered in small daily amounts (about 1 to 2 tablespoons for a Syrian hamster). Pellet or block-style food is preferable to seed mixes, since hamsters selectively eat the fatty seeds and leave the more nutritionally complete pieces behind - the same selective-eating problem seen in several other small pets.
-
-Fresh vegetables can be offered in small amounts a few times a week: small pieces of broccoli, carrot, cucumber, or leafy greens work well. Fruit should be given rarely and in tiny quantities due to sugar content. Introduce any new food gradually and remove uneaten fresh food within a few hours to prevent spoilage in the cage.
-
-Hamsters are famous for cheek-pouching - stuffing food into expandable cheek pouches to carry and cache it, sometimes visibly doubling the size of their head in the process. This is completely normal hoarding behavior, not overeating, and a hamster whose food seems to "disappear" is usually just storing it somewhere in the bedding, not actually eating everything at once.
-
-Fresh water in a properly positioned sipper bottle or heavy bowl must always be available. Check daily that the sipper tube isn't clogged - a surprisingly common and easily missed cause of dehydration in small rodents.`,
-      enrichment: `A solid-surface exercise wheel is not optional. Wild hamsters travel several miles a night foraging, and a wheel is the primary way a captive hamster replicates that need. The wheel must be large enough that the hamster's back stays flat while running - a common mistake is buying a wheel sized for body length rather than for a straight spine, which causes long-term back problems. For an adult Syrian hamster, 11 to 12 inches in diameter is the current minimum recommendation; dwarf species can use a slightly smaller 8 to 9 inch wheel.
-
-Deep bedding for burrowing, chew toys (untreated wood, cardboard, or hamster-safe chew blocks) to wear down continuously growing teeth, and a variety of tunnels and hideouts round out a well-enriched habitat. Rotating and rearranging enrichment items periodically keeps a naturally curious animal engaged.
-
-Supervised free-roam time in a hamster-proofed, escape-proof space (hamsters squeeze through remarkably small gaps and will chew through most household materials) provides valuable additional exercise and mental stimulation beyond the cage.
-
-Handle gently and consistently once the hamster has settled into a new home, ideally in the evening when hamsters are naturally active - they are crepuscular to nocturnal, and interacting with a sleeping hamster during the day is a common cause of defensive nipping, not aggression.`,
-      health: `Wet tail (proliferative ileitis) is the single most notorious and time-critical hamster illness - a bacterial intestinal infection causing sudden diarrhea, lethargy, and a wet, matted tail area, most common in young hamsters recently brought home and under stress. It can be fatal within 24 to 48 hours without treatment. Any hamster showing diarrhea and lethargy needs an exotic vet the same day, not a wait-and-see approach.
-
-Respiratory infections are common in hamsters kept in drafty conditions or bedded with cedar/pine shavings. Signs include labored breathing, nasal discharge, and lethargy - these need prompt veterinary attention, since a hamster's small size means illness progresses quickly.
-
-Overgrown teeth are a recurring risk since hamster incisors grow continuously throughout life. Adequate chew material usually keeps them worn down naturally; a hamster that is dropping food, drooling, or losing weight despite a normal appetite may have overgrown or misaligned teeth requiring a vet visit for trimming.
-
-Syrian hamsters are strictly solitary - housing two together, even littermates, will eventually result in serious fighting and injury as they reach maturity, regardless of how well they got along as babies. This is one of the most common and preventable mistakes new owners make, often from assuming hamsters are social like guinea pigs or rats. Some dwarf species (Campbell's, Winter White) can sometimes be kept in same-sex pairs from a young age, but this requires careful monitoring and isn't guaranteed to work even then.`,
-      checklist: [
-        "450+ sq in cage (bin, wire with tight bar spacing, or glass tank)",
-        "6+ inches of paper-based or aspen bedding",
-        "11 to 12 inch solid-surface exercise wheel",
-        "Hamster-specific pellets or lab blocks",
-        "Fresh vegetables in small amounts",
-        "Hideout and chew toys",
-        "Food and water dishes or sipper bottle",
-        "Digital thermometer",
-        "Exotic vet experienced with hamsters",
+    funFact: "A hamster's cheek pouches can stretch back past its shoulders when fully packed with food, holding roughly a fifth of the hamster's own body weight.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Reconciled 2026-09-08
+    // after the hamster set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "Legal in every US state except Hawaii, which bans hamsters outright with no permit route.", source: "hamster-legal-guide" },
+        { label: "Enclosure", value: "Roughly 700 to 775 square inches of unbroken floor for a Syrian, around 600 for dwarf species, more always better. Bar spacing no more than 1/2 inch for Syrians, 1/4 inch for smaller species.", source: "hamster-tank-setup-guide" },
+        { label: "Temperature", value: "65 to 75°F, held steady. Under 60°F risks torpor, a hibernation-like state; over 80°F risks heat stress.", source: "hamster-tank-setup-guide" },
+        { label: "Bedding", value: "At least 6 inches of dust-free paper bedding or aspen shavings, a welfare requirement, not decoration. Never cedar or pine.", source: "hamster-tank-setup-guide" },
+        { label: "Wheel", value: "Solid surface, no rungs. 8 to 11 inches for a Syrian, 6 to 8 for a dwarf. Too small forces an arched running posture that's hard on the spine.", source: "hamster-tank-setup-guide" },
+        { label: "Sand bath", value: "A dust-free, non-clumping sand bath is a species essential, not an extra, for working coat and skin oils out.", source: "hamster-tank-setup-guide" },
+        { label: "Company", value: "Syrian hamsters are strictly solitary, and housing two together leads to fighting. This is one of the most common and preventable hamster-owner mistakes there is.", source: "hamster-handling-guide" },
+        { label: "Diet", value: "A nutritionally complete hamster pellet or lab block as the staple, not a loose seed mix. Small daily fresh vegetables, under about 10% of the diet combined with fruit.", source: "hamster-feeding-guide" },
+        { label: "Not eating", value: "6 to 12 hours without eating is worth watching, 12 to 24 hours warrants a vet call, 24+ hours is critical, 48+ life-threatening. A day of no visible eating can also just mean a hamster is working through a cheek-pouch hoard.", source: "hamster-feeding-guide" },
+        { label: "Handling", value: "Let it wake up and orient itself before reaching in, never grab from above. Scoop from below with both hands. Syrians are the easiest to handle; dwarfs and Roborovski are faster and more nip-prone.", source: "hamster-handling-guide" },
+        { label: "Budget", value: "$15 to $25 for a Syrian ($8 to $30 for dwarfs, $5 to $15 rescue). $150 to $350 to set up. $15 to $50 a month.", source: "hamster-cost-guide" },
+        { label: "Adult size", value: "5 to 7 inches, 4 to 7 oz." },
+        { label: "Lifespan", value: "A large veterinary study found a median age at death of 1.75 years. Syrians tend toward 2 to 3 years, dwarf species often 1.5 to 2.5.", source: "hamster-cost-guide" },
       ],
     },
+    emergencyCard: {
+      source: "hamster-health-issues-guide",
+      callNow: [
+        "Watery diarrhea or a wet, matted rear end (wet tail, fatal within 24 to 48 hours untreated)",
+        "Dropped food or drooling",
+        "Sudden weight loss",
+        "A lump or growth",
+        "Labored breathing",
+      ],
+      vetLine: "An exotic vet, found before you need one. Wet tail is a same-day emergency, not a wait-and-see situation; most of the rest of this list is prevented through clean, dust-free bedding and a stress-free setup.",
+    },
+    routes: [
+      { slug: "hamster-cost-guide", line: "$15 to $30 for the animal, $150 to $350 to set up, and what a median 1.75-year lifespan means for the budget." },
+      { slug: "hamster-tank-setup-guide", line: "The real floor space (bigger than any starter kit), bar spacing, bedding depth, wheel size, and the sand bath most kits skip." },
+      { slug: "hamster-feeding-guide", line: "Free-choice versus scheduled feeding, safe and toxic foods, and how to tell cheek-pouch hoarding from real appetite loss." },
+      { slug: "hamster-handling-guide", line: "Why species matters more than you'd think, the correct scoop-from-below technique, and why waking a sleeping hamster gets you bitten." },
+      { slug: "hamster-health-issues-guide", line: "Wet tail, overgrown incisors, tumors, respiratory infections, and diabetes in dwarf species." },
+      { slug: "hamster-enrichment-guide", line: "The bedding-depth study behind the numbers above, correct wheel sizing, and what wire-gnawing actually means." },
+    ],
+    buyList: [
+      "700 to 775+ sq in cage for a Syrian, 600+ for a dwarf (bin, wire with tight bar spacing, or glass tank)",
+      "6+ inches of paper-based or aspen bedding",
+      "8 to 11 inch solid-surface exercise wheel (Syrian) or 6 to 8 inch (dwarf)",
+      "Dust-free, non-clumping sand bath",
+      "Hideout and chew toys",
+      "Hamster-specific pellets or lab blocks",
+      "Food and water dishes or a sipper bottle",
+      "Digital thermometer",
+    ],
     faqs: [
-      { q: "Can I keep two hamsters together?", a: "Not if they're Syrian hamsters - Syrians are solitary and must be housed alone as adults; even littermates that got along as babies will eventually fight, sometimes fatally, once they reach maturity around 8 to 12 weeks old. Some dwarf species (Campbell's, Winter White) can occasionally be kept in same-sex pairs introduced young, but it's not guaranteed to work long-term and requires close monitoring, with a backup cage ready in case they need to be separated." },
-      { q: "What is wet tail and how serious is it?", a: "Wet tail is a bacterial intestinal infection causing sudden diarrhea, lethargy, and a wet, matted tail area, most common in young hamsters under stress shortly after coming home. It can be fatal within 24 to 48 hours without treatment, so any hamster showing diarrhea and lethargy needs an exotic vet the same day rather than a wait-and-see approach." },
-      { q: "How big of a cage does a hamster actually need?", a: "At least 450 square inches of unbroken floor space, with 600 to 800+ square inches strongly preferred - dramatically more than the small starter cages sold in most pet stores. Bin cages (modified ventilated storage totes) and large glass tanks are popular precisely because they hit this size requirement more affordably than most commercial wire cages." },
-      { q: "Why does my hamster stuff its cheeks so much?", a: "Cheek-pouching is completely normal hoarding behavior, not overeating. Wild hamsters cache food in burrows for later, and pet hamsters keep the same instinct, sometimes carrying so much food their head visibly doubles in size. A hamster whose food seems to disappear is usually just stashing it in the bedding somewhere, not eating everything at once." },
-      { q: "How long do hamsters live?", a: "Syrian hamsters typically live 2 to 3 years, and dwarf species (Campbell's, Winter White, Roborovski) often live a similar or slightly shorter 1.5 to 3 years. This is a notably short lifespan compared to most small pets, which is worth knowing upfront - a hamster is a real commitment for its size, just a shorter one than a rabbit or guinea pig." },
-      { q: "Should I get a rat or a hamster?", a: "It mostly comes down to social needs and temperament. Syrian hamsters are solitary and must live alone as adults, so a hamster's entire social world is you, in short sessions once it wakes up for the evening. [Rats](/guides/rat/) are the opposite: they're deeply social, need to be kept in same-sex pairs or small groups rather than alone, and are widely considered the more consistently people-friendly and trainable of the two, learning tricks and responding to their own name the way a small dog might. A hamster suits someone who wants one low-maintenance animal that bonds with a single owner; a rat suits someone willing to house at least two animals who wants more interactive, dog-like engagement in return." },
+      { q: "What size enclosure does a hamster need?", a: "Current welfare guidance puts a Syrian at roughly 700 to 775 square inches of unbroken floor, and dwarf species near 600, with more always better. A 40-gallon breeder suits dwarfs; a Syrian wants something closer to a 75-gallon." },
+      { q: "What is wet tail and why is it so dangerous?", a: "Wet tail (proliferative ileitis) is a bacterial condition tied to stress that a large veterinary study found to be both the most common diagnosed condition and the leading specific cause of death in pet hamsters, present in roughly 7 to 8% of hamsters studied. It hits young Syrians between 3 and 10 weeks old hardest and can be fatal within 24 to 48 hours without treatment, making it a same-day emergency, not a wait-and-see situation." },
+      { q: "Can two Syrian hamsters be housed together so they have a friend?", a: "No. Syrian hamsters are strictly solitary, and housing two together leads to fighting. This is one of the most common and preventable hamster-owner mistakes there is." },
     ],
   },
   {
@@ -775,80 +768,85 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
     id: "rabbit",
     name: "Rabbit",
     emoji: "🐰",
+    // Beginner/Intermediate by the site's own legend (DifficultyLegend):
+    // routine husbandry, no heat or UVB to balance, a hay-first diet, but a
+    // real learning curve most beginner species lack (the exotic vet, the
+    // eight-hour stasis clock, the near-mandatory spay, the space). One
+    // notch above the guinea pig, which is Beginner. Settled 2026-09-08
+    // after a set test had it at Intermediate for a day.
     difficulty: "Beginner/Intermediate",
     petType: "Small Mammals",
     image: "/assets/guides/rabbit.jpg",
     tagline: "The gentle, litter-trainable companion that loves to binky!",
     funFact: "Rabbits can jump up to 4 feet high and run up to 25 mph. They're surprisingly athletic!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "Exercise pen or C&C condo", low: 60, high: 150 },
-        { item: "Litter box + litter", low: 15, high: 25 },
-        { item: "Hideouts and tunnels", low: 20, high: 40 },
-        { item: "Chew toys (larger, tougher)", low: 15, high: 30 },
-        { item: "Food and water dishes", low: 10, high: 20 },
-        { item: "Nail clippers + styptic powder", low: 10, high: 15 },
-        { item: "Spay/neuter", low: 150, high: 400 },
-      ],
-      annual: [
-        { item: "Grass hay (unlimited)", low: 150, high: 250 },
-        { item: "Rabbit pellets", low: 40, high: 70 },
-        { item: "Fresh leafy greens daily", low: 150, high: 250 },
-        { item: "Litter/bedding", low: 60, high: 100 },
-        { item: "Annual vet wellness check", low: 50, high: 100 },
-      ],
-    },
-    sections: {
-      housing: `Rabbits need far more space than most people expect. A minimum of 8 to 10 square feet of living space for a single rabbit, with at least 24 square feet of daily exercise space, is the current recommended standard. Many experienced rabbit owners and welfare organizations now advocate for free-roaming setups or very large enclosures, as rabbits confined to small hutches develop severe physical and psychological problems over time.
-
-Use an exercise pen (X-pen), a large C&C condo, or a bunny-proofed room as the primary living space. Wire-bottom cages must be avoided entirely - wire floors cause pressure sores on the hocks (feet) that are painful, difficult to heal, and sometimes lead to serious infection. Always use solid flooring with appropriate soft bedding.
-
-Provide a litter box with paper-based litter and a layer of hay on top, a cozy hideout or tunnel, and multiple safe chew toys. Rabbits have continuously growing teeth and must gnaw to keep them worn down. Apple wood sticks, willow balls, untreated wicker, and cardboard are all safe options.
-
-Temperature should stay between 60 and 72 degrees F. Rabbits are sensitive to heat and can die of heatstroke above 85 degrees F. Keep them away from drafts, direct sunlight, and extreme temperatures.`,
-      diet: `Hay is the single most important food in a rabbit's diet and should make up 80 to 90% of everything they eat, with unlimited access at all times. Timothy, orchard grass, and meadow hay are the best choices for adult rabbits. Fresh hay stimulates the gut, wears down teeth naturally, and prevents the life-threatening condition GI stasis.
-
-Supplement with high-quality pellets: 1/8 to 1/4 cup per day for most adult rabbits, scaled to body weight. Choose pellets with high fiber content and no added seeds, nuts, or colored pieces. Pellets are a supplement, not a replacement for hay.
-
-Fresh leafy greens should be offered daily: 1 to 2 cups per 4 pounds of body weight. Excellent choices include romaine lettuce, cilantro, flat-leaf parsley, dandelion greens, arugula, and basil. Introduce new greens gradually to avoid digestive upset. Avoid iceberg lettuce (nutritionally empty) and excess spinach (high oxalates).
-
-Treats like carrots, fruit, and commercial bunny treats should be limited to a thumbnail-sized piece a few times per week at most. These are high-sugar foods that can disrupt gut flora. Fresh water in a heavy ceramic bowl must always be available and changed daily.`,
-      enrichment: `Rabbits are intelligent, curious, and naturally active animals that need at minimum 3 to 4 hours of free-roaming time in a bunny-proofed space every day. Without adequate space and enrichment, rabbits develop behavioral problems including aggression, destructiveness, and depression.
-
-Provide cardboard boxes with multiple holes cut in them, paper bags filled with hay for foraging, willow balls and tunnels, digging boxes filled with shredded paper, and puzzle feeders with pellets or herbs. Rotate enrichment items regularly to maintain interest. Rabbits are highly food-motivated and foraging enrichment is particularly effective at keeping them mentally engaged.
-
-Rabbits are social animals and generally do best in bonded pairs or groups. A bonded pair provides constant companionship, play, and mutual grooming. Solo rabbits require more human interaction to compensate for the absence of a companion. Bonding takes patience with a slow, neutral-space introduction process, but the result is two dramatically happier animals.
-
-Rabbits can be litter-trained much like cats. Place the litter box in the corner they naturally use and reward correct behavior. Most rabbits are fully litter-trained within a few weeks, making free-roaming setups practical and clean.`,
-      health: `GI stasis is the most serious and common rabbit emergency. It occurs when the digestive tract slows down or stops completely, usually caused by stress, pain, low fiber intake, or dehydration. Signs include small or absent droppings, hunched posture, refusal to eat, and a distended or hard abdomen. GI stasis requires immediate veterinary attention. A rabbit that has not eaten or produced droppings for 12 hours is an emergency.
-
-Dental disease is the second most common serious health problem. Rabbit teeth grow continuously and must be worn down through constant hay chewing. Without adequate hay, molars overgrow and cause pain, drooling, and weight loss. Annual veterinary dental exams are recommended for all rabbits.
-
-Uterine cancer (uterine adenocarcinoma) affects the majority of unspayed female rabbits by age 4 to 5 and is one of the most preventable causes of early death in pet rabbits. Spaying is strongly recommended before 2 years of age. Neutering males reduces territorial behavior, spraying, and testicular cancer risk.
-
-Flystrike (myiasis) occurs in warm months when flies lay eggs near the rabbit's hindquarters and maggots emerge. Check the hindquarters daily in summer. Annual wellness visits with a rabbit-savvy veterinarian are essential for all rabbits.`,
-      checklist: [
-        "Minimum 8 sq ft enclosure or exercise pen",
-        "Grass hay (Timothy or Orchard), unlimited",
-        "High-quality rabbit pellets (1/8 to 1/4 cup daily)",
-        "Fresh leafy greens (romaine, parsley, cilantro)",
-        "Litter box + litter (paper-based or aspen)",
-        "Coconut fiber or safe bedding",
-        "Multiple hideouts and tunnels",
-        "Safe chew toys (apple wood, willow, cardboard)",
-        "Nail clippers and styptic powder",
-        "Rabbit-savvy veterinarian contact"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. The last four rows cite the shared
+    // small-mammal guides in the sidebar's Health and More list (heat,
+    // nails, molting, vet trips), which the set tests kept reporting as
+    // gaps because the reader never opened them. Reconciled 2026-09-08 after the rabbit set
+    // test (docs/READER_REVIEWS.md) found the old hub contradicting the deep
+    // dives on the vet clock, greens, hay share, lifespan, and vet schedule.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Space", value: "8 square feet of enclosure plus 24 square feet of exercise space. In practice a foldable metal exercise pen, 4 feet by 4 feet or bigger.", source: "rabbit-tank-setup-guide" },
+        { label: "Time out", value: "At least 5 hours a day to run, and permanent access to a run or a rabbit-proofed room is what the welfare research points at.", source: "rabbit-tank-setup-guide" },
+        { label: "Floor", value: "No wire flooring. Vinyl or linoleum over plywood, washable rugs, or fleece.", source: "rabbit-tank-setup-guide" },
+        { label: "Hay", value: "Unlimited grass hay, 80 to 85% of the diet. Alfalfa is for babies, juveniles, and nursing does, not healthy adults.", source: "rabbit-feeding-guide" },
+        { label: "Pellets and greens", value: "Roughly 1/8 to 1/4 cup of high-fiber timothy pellets per 5 to 6 lbs of body weight daily, and chopped vegetables scaled to body weight with at least 3 varieties of leafy greens.", source: "rabbit-feeding-guide" },
+        { label: "Litter", value: "A large cat-litter-box style box with paper-based or wood-pellet litter and hay in or over it. Never clumping litter, pine, or cedar.", source: "rabbit-tank-setup-guide" },
+        { label: "Company", value: "A neutered, opposite-sex pair close in age. Solitary rabbits showed less behavior of every kind.", source: "rabbit-enrichment-guide" },
+        { label: "Vet", value: "A rabbit-savvy exotic vet, found before you need one. Twice-yearly wellness exams, and ask about the RHDV2 vaccine.", source: "rabbit-health-issues-guide" },
+        { label: "Spay or neuter", value: "$150 to $500 or more, budgeted separately. Adoption fees often include it.", source: "rabbit-cost-guide" },
+        { label: "Budget", value: "$150 to $600 to set up, $60 to $100 a month, and a $500 to $1,000 emergency fund.", source: "rabbit-cost-guide" },
+        { label: "Lifespan", value: "8 to 12 years indoors, some to 14 or beyond. Outdoor rabbits average about 3 to 5.", source: "rabbit-tank-setup-guide" },
+        { label: "Heat", value: "Comfortable at 61 to 72°F. Risk climbs once the room passes about 80°F. Indoors, a draft or damp bedding causes more trouble than a cool room.", source: "small-mammal-temperature-heat-stress-guide" },
+        { label: "Nails", value: "A trim roughly every 6 to 8 weeks, with styptic powder within reach before you start, one or two nails per sitting for a rabbit that fights it.", source: "small-mammal-grooming-nails-molting-guide" },
+        { label: "Molting", value: "A rabbit cannot vomit swallowed fur, so a heavy molt is a GI risk: brush through it and keep the hay in front of them.", source: "small-mammal-grooming-nails-molting-guide" },
+        { label: "Vet trips", value: "A sturdy hard-sided carrier the rabbit cannot chew through, secured in the car, with the cage mate along and food in front of them.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "rabbit-health-issues-guide",
+      callNow: [
+        "No food or droppings for 8 hours. Twelve is already an emergency.",
+        "A bloated or tense abdomen",
+        "Hunched posture, or teeth grinding at a harsh, audible pitch",
+        "Visible fly eggs or maggots in fur",
+        "Open-mouth breathing or persistent discharge",
+        "Sudden lethargy or hiding",
+      ],
+      vetLine: "Rabbits need a rabbit-savvy exotic vet, not a standard small-animal clinic. Find one before you need one.",
+    },
+    routes: [
+      { slug: "rabbit-cost-guide", line: "What the pen, the spay, and the first year really cost, and why the emergency fund is not optional." },
+      { slug: "rabbit-tank-setup-guide", line: "The space standard, why indoors nearly doubles the lifespan, flooring, and litter training in one move." },
+      { slug: "rabbit-feeding-guide", line: "Hay, pellets, and greens by life stage, the toxic list, and the reasons a rabbit stops eating." },
+      { slug: "rabbit-gi-stasis-guide", line: "The emergency itself: what normal droppings look like, the early signs, and why waiting is dangerous." },
+      { slug: "rabbit-health-issues-guide", line: "Dental disease, flystrike, uterine cancer, RHDV2, and the list of signs that mean the vet today." },
+      { slug: "rabbit-handling-guide", line: "The two-hand lift, the football hold, why trancing is fear and not calm, and the stress signs." },
+      { slug: "rabbit-enrichment-guide", line: "Why a bonded pair and a permanent run change more than any toy, then the dig box and the rest." },
+    ],
+    buyList: [
+      "Foldable metal exercise pen, 4 by 4 feet or bigger",
+      "Large cat-litter-box style litter box",
+      "Paper-based or compressed wood-pellet litter",
+      "Grass hay (timothy, orchard, or meadow) and a hay feeder",
+      "Plain timothy-based pellets",
+      "Heavy food and water dishes, or a bottle",
+      "Washable flooring: vinyl, rugs, or fleece, with a tarp under the pen",
+      "Hides, tunnels, and cardboard boxes to shred",
+      "A dig box",
+      "Nail clippers",
+      "A carrier",
+      "Bunny-proofing: cord covers and baseboard protection",
+    ],
     faqs: [
-      { q: "Do rabbits need a companion?", a: "Yes, for most rabbits. Rabbits are highly social animals that live in groups in the wild, and a solitary rabbit is generally an anxious, understimulated animal. Bonded pairs groom each other, sleep together, and communicate in ways no amount of human interaction fully replicates. Same-sex pairs (particularly two spayed or neutered animals) work well when properly introduced. Single rabbits can still thrive with extensive human interaction, but a bonded pair is the gold standard." },
-      { q: "What do rabbits eat?", a: "The foundation of a rabbit's diet is unlimited grass hay - Timothy, orchard grass, or meadow grass - which should make up 80 to 90% of total intake. Hay provides the indigestible fiber essential for healthy gut motility and wears down continuously growing teeth. Supplement with a daily cup of fresh leafy greens per 5 pounds of body weight: romaine lettuce, cilantro, parsley, and dandelion greens are excellent choices. High-quality pellets can be offered in small amounts. Avoid sugary treats and commercial treat sticks - these cause gut flora disruption and dental disease." },
-      { q: "Can rabbits be litter trained?", a: "Yes, and they learn remarkably quickly. Rabbits naturally choose one or two corners for elimination. Place a litter box with paper-based litter (never clay or clumping cat litter) where the rabbit already goes. Hay placed at one end of the litter box encourages consistent use, as rabbits like to eat while they eliminate. Spaying or neutering significantly improves litter habits. Most rabbits are reliably litter trained within a few weeks of consistent reinforcement." },
-      { q: "Is a bunny the same as a rabbit?", a: "Yes, \"bunny\" is just an informal, affectionate name for the same animal, there's no distinction in species or care between the two words. \"Bunny\" is sometimes used more specifically for a young rabbit, but in everyday use they're interchangeable." },
-      { q: "What's the difference between a rabbit and a hare?", a: "They're different species, not just different names for the same animal. Hares are larger, longer-eared, and are born fully furred and mobile (precocial), while domestic rabbits are born hairless and helpless (altricial) and are a genuinely different, domesticated lineage. Hares are also essentially never kept as pets, they're wild animals with very different needs than a domestic rabbit." },
-      { q: "How long do rabbits live?", a: "Domestic rabbits commonly live 8 to 12 years with good care, and some individuals reach 14 or more years. Life expectancy has improved dramatically as knowledge of proper diet (hay-based, not pellet-heavy), spacious housing, spay/neuter practices, and exotic veterinary care has become more widely available. The old paradigm of small hutches and pellet-only diets produced lifespans of 5 to 6 years; modern care standards produce much longer, healthier lives." },
-      { q: "Do rabbits need veterinary care?", a: "Yes. Rabbits need annual wellness examinations with a veterinarian experienced in exotic small mammals. They are prey animals that instinctively hide illness - by the time a rabbit shows obvious signs of being sick, the problem is usually already serious. Spaying female rabbits before age 2 is critical, as uterine cancer affects the majority of unspayed females by age 4 to 5. Finding a rabbit-savvy exotic vet before an emergency arises is one of the most important things a new rabbit owner can do." },
+      { q: "What is the most common rabbit emergency?", a: "GI stasis, where a rabbit's gut slows down or stops entirely, allowing gas to build up. A rabbit that hasn't eaten or passed stool in 8 to 12 hours is an emergency, not a wait-and-see situation, with eight hours the point to call a vet and twelve the point it is already urgent." },
+      { q: "How much space does a rabbit need?", a: "8 square feet of enclosure plus 24 square feet of exercise space for one or two rabbits, with at least 5 hours a day to run in it. In practice that means a foldable metal pen, 4x4 feet or bigger." },
+      { q: "How should I choose a companion rabbit?", a: "Neutered, opposite sex is the usual recommendation, and the research adds a detail worth knowing: a larger age difference was associated with a lower friendship index, so pairing animals closer in age is the better bet." },
     ],
   },
   {

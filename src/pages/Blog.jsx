@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
@@ -19,6 +19,7 @@ import buildStamp from '@/lib/generated/build-stamp.json';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import { AUTHOR, PUBLISHER, authorSchema } from '@/lib/data/author';
+import { firsthandNote } from '@/lib/data/firsthand';
 import { ArticleMetaProvider } from '@/lib/articleMeta';
 import PostEngagement from '@/components/blog/PostEngagement';
 import SaveButton from '@/components/shared/SaveButton';
@@ -31,6 +32,8 @@ import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import Pagination from '@/components/shared/Pagination';
 import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
+import MoreOnSpecies from '@/components/blog/MoreOnSpecies';
+import { getDeepDiveSiblings } from '@/lib/data/relatedArticles';
 import ProductCard from '@/components/shared/ProductCard';
 import ProductModal from '@/components/shared/ProductModal';
 import { AFFILIATE_PRODUCTS } from '@/lib/data/affiliateProducts';
@@ -495,7 +498,7 @@ export default function Blog() {
   );
 }
 
-function AuthorBio() {
+function AuthorBio({ firsthand }) {
   return (
     <div className="mt-10 mb-2 flex items-start gap-4 bg-card border border-border rounded-2xl p-5">
       {AUTHOR.image ? (
@@ -514,6 +517,15 @@ function AuthorBio() {
       )}
       <div>
         <p className="font-body font-bold text-sm text-foreground mb-1">{`Written by ${AUTHOR.name}`}</p>
+        {/* Only species Mike has lived with get a line here (see
+            src/lib/data/firsthand.js). Everything else says nothing, on
+            purpose: the general method is disclosed once on /about/. */}
+        {firsthand && (
+          <p className="text-xs font-body font-semibold text-primary leading-relaxed mb-1.5 flex items-start gap-1.5">
+            <span aria-hidden="true">🐾</span>
+            <span>{firsthand}</span>
+          </p>
+        )}
         <p className="text-xs text-muted-foreground font-body leading-relaxed mb-2">
           {AUTHOR.bio}
         </p>
@@ -544,6 +556,20 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     setDisplayDate(getDisplayDate(post.publishedAt));
   }, [post.publishedAt]);
   const postSlug = post.slug?.current || post._id || post.id;
+
+  // Same curated same-species list the sidebar shows, computed once here so
+  // the after-FAQ block and You May Also Like's exclusion agree. Context-free
+  // on purpose (no fromGuideId): this has to match the prerendered HTML.
+  const moreOnArticles = useMemo(() => {
+    const slugs = getDeepDiveSiblings(postSlug, allPosts, { limit: 24 });
+    return slugs
+      .map((slug) => allPosts.find((p) => (p.slug?.current || p._id || p.id) === slug))
+      .filter(Boolean);
+  }, [postSlug, allPosts]);
+  const moreOnIds = useMemo(
+    () => new Set(moreOnArticles.map((p) => p._id || p.slug?.current || p.id)),
+    [moreOnArticles]
+  );
 
   // Resets both the page scroll and the sidebar's own scroll whenever the
   // displayed post changes. Needed for two separate reasons: React Router's
@@ -859,9 +885,12 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               />
             </div>
 
-            <p className="text-sm text-muted-foreground font-body mb-8 leading-relaxed border-l-4 border-secondary pl-4 italic">
-              {post.excerpt}
-            </p>
+            {/* No excerpt block on the article page. The excerpt restates the
+                opening paragraph by design, and only 196 of 716 restated it
+                closely enough for the ledeMatchesExcerpt skip to catch; the
+                other 239 near-copies printed the same idea twice a screen
+                apart, which two reader reviews called out first. The excerpt
+                keeps its other jobs: cards, meta description fallback, schema. */}
 
             {/* Mobile-only: the sticky sidebar (below) sits in a column that
                 collapses to the bottom of the page once the grid drops to a
@@ -940,6 +969,8 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               </div>
             )}
 
+            <MoreOnSpecies currentSlug={postSlug} articles={moreOnArticles} onSelectPost={onSelectPost} />
+
             {relatedProducts.length > 0 && (
               <div className="mt-8">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
@@ -956,7 +987,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               </div>
             )}
 
-            <AuthorBio />
+            <AuthorBio firsthand={firsthandNote(postSlug)} />
 
             <PostEngagement postId={post._id || post.id} postTitle={post.title} postSlug={post.slug?.current || post.id} />
 
@@ -968,6 +999,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               categorySlug={post.categorySlug || post.category}
               onSelectPost={onSelectPost}
               factFilesMode={factFilesMode}
+              excludeIds={moreOnIds}
             />
           </div>
 
@@ -981,7 +1013,10 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               end - reaches it. That release is native browser behavior,
               nothing JS-driven about it. */}
           <div ref={sidebarWrapperRef}>
-            <div className="lg:sticky lg:top-16 max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5" ref={sidebarRef}>
+            {/* The scroll box is desktop-only. Below lg the sidebar stacks under the
+                article, and an inner scroll there hid everything past the second
+                card (Random Fact, and Subscribe once it moved to the end). */}
+            <div className="lg:sticky lg:top-16 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto custom-scrollbar-hide pb-4 space-y-5" ref={sidebarRef}>
               {/* Hidden below lg: the collapsible instance above the article
                   already covers mobile. */}
               <div className="hidden lg:block">

@@ -8,8 +8,9 @@ export const smallMammalEncyclopedia = [
       habitat: "Rocky, arid Andean mountains at high altitude",
       adultSize: "9-15 inches (23-38 cm); 1-2 lbs",
       wildDiet: "Grasses, seeds, leaves, bark, and insects",
-      wildLifespan: "10-20 years",
+      wildLifespan: "Not documented (the widely quoted 10-20 years is a captive range; wild longevity for this species has not been studied)",
       conservation: "Critically Endangered (IUCN)",
+      history: "Around 1900 Chile was shipping an estimated 500,000 chinchilla skins a year, a rate that stripped the mountains within a generation. Breeders had begun keeping the animals in captivity at the end of the nineteenth century, and commercial ranching started in 1920, which is when the supply shifted from hunters to farms. It grew quickly: by 1946 Life magazine reported roughly 200,000 chinchillas being raised on farms across the United States. The pet is a byproduct of that industry, since ranch-raised animals were the only chinchillas anyone could obtain.",
     },
   },
   {
@@ -23,6 +24,7 @@ export const smallMammalEncyclopedia = [
       wildDiet: "Grasses, seeds, bark, leaves, and tubers",
       wildLifespan: "1-4 years in the wild; 6-7 years in captivity",
       conservation: "Least Concern (IUCN)",
+      history: "Juan Ignacio Molina described the animal in 1782 and filed it as a squirrel, Sciurus degus; Waterhouse moved it into Octodon in 1848. Laboratory and pet degus in North America trace to one collection in 1964, when a farmer trapped 20 of them about 20 miles outside Santiago for a scientist at MIT. That colony reached 87 animals before MIT handed it to David Boraker at the University of Vermont in 1970, where it grew to some 900 head, funded partly by the National Eye Institute for cataract work, and by 1978 Vermont had supplied more than 30 US research institutions. In 2022 Patricia Cogram and colleagues showed how far separate colonies had drifted through inbreeding, which explained years of contradictory findings.",
     },
   },
   {
@@ -36,6 +38,7 @@ export const smallMammalEncyclopedia = [
       wildDiet: "Seeds, roots, leaves, stems, insects, and carrion",
       wildLifespan: "Under 18 months in the wild (commonly 12-18 months); pet fancy mice typically live 1.5-2 years",
       conservation: "Least Concern (IUCN - wild house mouse population)",
+      history: "Abbie Lathrop moved to Granby, Massachusetts in 1900, failed at poultry farming and turned to breeding mice, starting with a pair of waltzing mice. In 1902 the Harvard geneticist William Ernest Castle placed an order with her, the first time her animals went into a laboratory for genetic work, and her operation eventually held over 10,000 mice in straw-filled wooden boxes. From 1910 she investigated tumors in her own stock alongside the pathologist Leo Loeb, and between 1913 and 1919 the pair published ten papers connecting particular mouse lines to inherited cancer. Clarence Cook Little built his dba strain from her animals, which is how a hobby breeder's barn became the source of modern laboratory mice.",
     },
   },
   {
@@ -49,6 +52,7 @@ export const smallMammalEncyclopedia = [
       wildDiet: "Grain, seeds, fruit, insects, and other small animals including fish, lizards, and nestling birds",
       wildLifespan: "About 1 year on average in the wild (commonly 5-12 months, occasionally up to 3 years); pet fancy rats typically live 2-3 years, occasionally to 4",
       conservation: "Least Concern (IUCN - wild Norway rat population)",
+      history: "The laboratory line and the pet line separated early. Henry Donaldson took four pairs of albino rats with him to the Wistar Institute in Philadelphia, where from 1906 he and Helen Dean King bred them toward a standardized research animal, and in 1912 the institute began shipping rats to other laboratories; most modern laboratory strains descend from that colony. The pet side nearly lapsed instead. British shows dropped rat classes for decades before they returned in 1968 at the London and Southern Counties Mouse Club, and the National Fancy Rat Society formed on January 13, 1976, staging its first exhibition at the Bradford Championship Show a week later.",
     },
   },
   {
@@ -62,6 +66,7 @@ export const smallMammalEncyclopedia = [
       wildDiet: "(Ancestral polecat) Small mammals, birds, amphibians, and eggs",
       wildLifespan: "5-10 years",
       conservation: "Not assessed (domesticated); European polecat is Least Concern (IUCN)",
+      history: "In 1933 the ferret handed virology its first grip on human influenza. Wilson Smith, Christopher Andrewes and Patrick Laidlaw, working at the National Institute for Medical Research in London during an English epidemic, had filtered throat washings from patients and failed to infect guinea pigs, mice, rabbits, hamsters, hedgehogs or monkeys. Ferrets were on hand only because a neighboring laboratory kept them for canine distemper work. Two inoculated animals came down with a two-day incubation, a double temperature spike and streaming noses, close enough to the human illness to establish that a virus caused it. The species has been the standard influenza model ever since.",
     },
   },
   {
@@ -75,6 +80,7 @@ export const smallMammalEncyclopedia = [
       wildDiet: "Seeds, grasses, roots, and insects",
       wildLifespan: "2-3 years",
       conservation: "Least Concern (IUCN)",
+      history: "Alphonse Milne-Edwards named the species Gerbillus unguiculatus in 1867, working from specimens that Father Armand David had sent to Paris from northern China the year before. The captive population rests on a much narrower base: 20 pairs of wild-caught gerbils went to Japan in 1935, and 11 of their descendants reached Victor Schwentker's Tumblebrook Farm in Brant Lake, New York, in 1954. Schwentker had imported them as research animals and then noticed how well they took to a cage. They were selling as pets across the United States by the late 1950s and arrived in Britain in 1964.",
     },
   },
   {
@@ -88,6 +94,7 @@ export const smallMammalEncyclopedia = [
       wildDiet: "Grasses, hay, leafy plants, and vegetables",
       wildLifespan: "4-8 years",
       conservation: "Not assessed (fully domesticated species)",
+      history: "Guinea pigs crossed the Atlantic soon after the first European contact with South America, and the oldest known European remains are sixteenth century: a skeleton from Mons in Belgium dated between 1550 and 1640, and bones from Hill Hall Manor in Essex dated to 1574 or 1575. Genetic work points to Peru as the likely source of the animals shipped out. They arrived in Europe as luxuries, kept first by the upper classes and only later reaching everyone else. By the eighteenth century medical researchers had begun using them as laboratory subjects.",
     },
   },
   {
@@ -101,6 +108,7 @@ export const smallMammalEncyclopedia = [
       wildDiet: "Seeds, grains, grasses, and occasional insects",
       wildLifespan: "2-3 years",
       conservation: "Vulnerable (IUCN - wild Syrian hamster population)",
+      history: "George Robert Waterhouse presented the species to a meeting of the Zoological Society of London in 1839, and then the scientific record went quiet: there appears to be no further study of it until 1930, a gap of roughly 91 years. It was hunted down again because Saul Adler needed a breeding substitute for the Chinese hamsters he was using in leishmaniasis research. In 1931 Adler carried some to England in his coat pockets and handed them to Edward Hindle, who founded the first British colony, and stock reached the United States in 1938. Albert Marsh turned the animal into a commercial pet through his Gulf Hamstery in the 1940s, with the craze peaking between 1948 and 1951.",
     },
   },
   {
@@ -114,6 +122,7 @@ export const smallMammalEncyclopedia = [
       wildDiet: "Insects, worms, snails, small vertebrates, eggs, and some plant matter",
       wildLifespan: "3-5 years",
       conservation: "Least Concern (IUCN)",
+      history: "Hedgehog keeping took hold in the United States in the early 1980s, and the pet is probably not a pure Atelerix albiventris: it appears to descend from hybrids with the North African hedgehog, Atelerix algirus. The supply line closed almost as fast as it opened. Because African hedgehogs can carry foot-and-mouth disease, the USDA banned importing them from Africa in 1991, so every pet hedgehog in the country now comes from captive stock, and ownership remains illegal in several states. Public health agencies have watched them since: a Salmonella Typhimurium outbreak traced to pet hedgehogs sickened 54 people across 23 states between October 2018 and August 2019, hospitalizing eight.",
     },
   },
   {
@@ -125,8 +134,9 @@ export const smallMammalEncyclopedia = [
       habitat: "Grassland, meadow, farmland, and forest edge",
       adultSize: "Highly variable; 2.5-20+ lbs depending on breed",
       wildDiet: "Grasses, hay, herbs, root vegetables, and bark",
-      wildLifespan: "5-12 years (wild); up to 12+ years in captivity",
+      wildLifespan: "1-2 years (wild); 8-12 years indoors as a pet, some to 14 or beyond",
       conservation: "Endangered (wild European rabbit, IUCN)",
+      history: "For decades the textbook account had rabbits domesticated at a stroke around 600 AD, when Pope Gregory the Great supposedly ruled that newborn rabbits counted as fish and could be eaten during Lent, sending French monks to breed them behind monastery walls. Asked to find the decree so it could be set against genetic data, the Oxford graduate student Evan Irving-Pease discovered that no such ruling exists. The story traces instead to a passage written in 584 AD by Gregory of Tours about a man who ate young rabbits during Lent, misread by scholars in the mid-twentieth century. Irving-Pease and Greger Larson published the correction in Trends in Ecology and Evolution in 2018, arguing that domestication is a long process with no single starting point.",
     },
   },
   {
@@ -140,6 +150,7 @@ export const smallMammalEncyclopedia = [
       wildDiet: "Nuts, seeds, fruit, fungi, insects, and occasionally bird eggs or nestlings",
       wildLifespan: "3-6 years in the wild (sources vary); commonly around 10 years in captivity, with documented individuals living past 19",
       conservation: "Least Concern (IUCN)",
+      history: "Linnaeus described the animal in 1758 as Mus volans, and English long borrowed a Native American name for it, the assapan. Its recent trade history is less genteel. Florida wildlife officers opened an investigation on January 15, 2019 after a tip about people trapping flying squirrels in rural Marion County, and uncovered a ring that had set as many as 10,000 traps and pushed thousands of wild-caught animals through a licensed dealer in Bushnell who logged them as captive-bred. Buyers from South Korea collected the squirrels, drove them to Chicago and exported them, and the dealer took in $213,800 between November 2017 and April 2020. Seven people were charged.",
     },
   },
   {
@@ -151,8 +162,9 @@ export const smallMammalEncyclopedia = [
       habitat: "Tropical and temperate forest and woodland",
       adultSize: "5-6 inches (13-15 cm) body; 4-5.5 oz",
       wildDiet: "Nectar, pollen, tree sap, insects, and small vertebrates",
-      wildLifespan: "3-9 years (up to 12-15 years in captivity)",
+      wildLifespan: "Not well documented in the wild; up to 17.8 years recorded in captivity",
       conservation: "Least Concern (IUCN)",
+      history: "Australia has barred the export of its native wildlife under the Wildlife Protection (Regulation of Exports and Imports) Act of 1982, so the gliders that reached the American pet trade in the 1990s came from somewhere else. A 2019 genetic study in PeerJ settled where. Sequencing captive animals from across the United States turned up 23 closely related haplotypes, two of them identical to sequences from Sorong in West Papua, Indonesia, and none matching Australian or Papua New Guinean populations. The pet population therefore descends from Indonesian stock exported through licensed breeding facilities, whose output has at times been questioned against official quotas.",
     },
   },
 ];

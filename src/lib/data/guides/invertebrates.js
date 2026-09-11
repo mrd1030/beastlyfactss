@@ -277,50 +277,74 @@ Their enrichment needs are simple: fresh substrate, fresh food, and the right co
     image: "/assets/guides/hermit-crab.jpg",
     tagline: "The shell-swapping beach scavenger whose 'easy starter pet' reputation badly undersells what it actually needs!",
     funFact: "Hermit crabs don't grow their own shells - they spend their entire lives searching for, trying on, and trading empty snail shells as they grow, and will even form an orderly 'vacancy chain,' lining up by size to swap shells in turn when a larger one becomes available. In the wild, land hermit crabs can live 20 to 30+ years, though most pet hermit crabs sold in beach-town gift shops die within their first year from incorrect humidity and being kept alone.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a small group (2-3 crabs), since solo housing isn't appropriate.
-    costs: {
-      setup: [
-        { item: "10-20+ gallon tank (for a group)", low: 60, high: 120 },
-        { item: "Heat mat (side-mounted)", low: 10, high: 20 },
-        { item: "Hygrometer and thermometer", low: 15, high: 25 },
-        { item: "Deep sand/coconut fiber substrate", low: 20, high: 40 },
-        { item: "Large soak-able water dish", low: 10, high: 15 },
-        { item: "Spare shells (2-3 per crab)", low: 15, high: 30 },
-        { item: "Climbing branches and cork bark", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Hermit crab food + varied fresh food", low: 30, high: 60 },
-        { item: "Substrate replacement", low: 20, high: 40 },
-        { item: "Marine salt mix (saltwater pool)", low: 10, high: 20 },
-      ],
-    },
-    sections: {
-      housing: "A 10-gallon tank is an absolute floor, but 20 gallons or more is far more appropriate - and necessary for a group, since hermit crabs are social and should be kept with at least 2 to 3 others, not alone. This is one of the most under-communicated requirements in the pet trade. Humidity must stay at 70 to 80%, measured with a hygrometer rather than guessed, since hermit crabs breathe through modified gills that need consistently moist air; a secure lid, substrate misting, and a mostly covered tank all help maintain this. Deep substrate - a sand and coconut fiber mix at least three times the crab's body length - is essential, since crabs burrow completely underground to molt, sometimes for weeks at a time. Provide both a freshwater pool and a marine saltwater pool, each deep enough to submerge in but with an easy exit ramp to prevent drowning, using only dechlorinated water. Keep temperatures at 75 to 85 degrees F, and always have 2 to 3 spare empty shells per crab, slightly larger than their current one, available so they can upgrade as they grow.",
-      diet: "Hermit crabs are omnivorous scavengers. A commercial hermit crab food can form a base, but a genuinely varied diet of fresh fruit, vegetables, unseasoned meat, and calcium sources like cuttlebone or crushed eggshell makes a real difference in health and molt success. Avoid pre-packaged shells or substrate treated with paint, dye, or chemicals, and never offer any food that has been near soap, pesticides, or copper-based products - all are toxic to hermit crabs. Feed daily in a shallow dish and remove uneaten fresh food within a day to prevent mold in the humid enclosure.",
-      enrichment: "Hermit crabs are highly social, and keeping a single crab alone is a well-documented contributor to poor health and a shortened lifespan - groups of several allow the natural social interaction this species needs. Climbing branches, cork bark, and fishnet or plastic mesh support their active, exploratory nature. Always keep several appropriately sized spare shells available so crabs can choose and switch between them, which is itself a form of enrichment as much as a physical necessity. A crab that suddenly burrows and disappears for weeks is very likely beginning to molt, not sick or dead - resist the urge to dig them up to check.",
-      health: "Incorrect humidity is the single leading cause of death in pet hermit crabs - too dry an enclosure causes their gills to dry out and the crab to slowly suffocate. Molting is a vulnerable, weeks-long underground process, and a buried, motionless crab should never be dug up or disturbed. Shell shortage stress occurs when no appropriately sized replacement shells are available, forcing crabs to fight over shells or remain in an outgrown one that restricts their growth. Isolation stress from being kept alone is a well-documented contributor to premature death. Avoid painted, glued, or otherwise 'decorative' shells sometimes sold in stores, which can be toxic or physically restrictive.",
-      checklist: [
-        "10-20+ gallon tank for a group of 2-3+ crabs",
-        "Secure lid to retain humidity",
-        "Hygrometer and thermometer",
-        "70-80% humidity, 75-85°F temperature",
-        "Deep sand/coconut fiber substrate (3x crab body length)",
-        "Freshwater and marine saltwater pools with exit ramps (dechlorinated)",
-        "2-3 extra appropriately sized shells per crab",
-        "Climbing branches and cork bark",
-        "Calcium sources (cuttlebone, crushed eggshell)",
-        "Varied fresh food; avoid painted shells and chemical-treated decor",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Molting, pesticides, and
+    // the power outage row cite the shared invertebrate guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-09 after the hermit crab set
+    // test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank", value: "Use a glass terrarium, roughly a 10-gallon tank for 2 to 3 small crabs, more for larger crabs or bigger groups. The lid needs to seal in humidity, glass or acrylic works best; if you're using a screen lid, cover part of it with plastic wrap or tape to help retain moisture.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Group size", value: "Keep at least two crabs together, they're a genuinely social species.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Temperature", value: "Aim for 75 to 85°F, with the warm side around 80°F. Use a side- or back-mounted heat mat. Never place a heat mat under the tank, heat rising up through deep substrate can be dangerous, even fatal, to a crab that's buried or molting underneath.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Humidity", value: "Maintain 75 to 85% relative humidity. Monitor with a hygrometer, and maintain the range through a combination of moist substrate, a well-sealed lid, and a dedicated moss pit.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Substrate", value: "Mix play sand and coconut fiber at roughly a 5:1 ratio, aiming for a 'sandcastle consistency' that holds a tunnel shape when packed. Depth is at least 6 inches, or about 3 times the height of your largest crab, since hermit crabs burrow to molt and need genuine room to do it.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Water", value: "Two separate soakable water dishes, one with dechlorinated fresh water, one with marine saltwater made from an aquarium salt mix, never table salt. Both should be deep enough for a crab to fully submerge but include an easy way to climb back out, hermit crabs can and do drown if they can't exit.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Shells", value: "Offer multiple natural, unpainted shells per crab, ideally 3 to 5 or more, spanning a range of sizes so your crab has room to size up as it grows. Painted shells are toxic and should never go in the enclosure.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Diet", value: "Offer a varied diet with calcium sources like cuttlebone, fresh fruit and vegetables, protein like dried shrimp or insects, and leaf litter. Feed in the evening, since they're most active at night, and remove leftovers the next morning.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Lighting", value: "A standard 12-hour light, 12-hour dark cycle works well. Hermit crabs are nocturnal, and there's no established UVB requirement for this species.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Handling", value: "Let the crab sit on a flat, open palm instead of closing your hand around it. If you need to move it, lift from the back of the shell, not by grabbing at the legs or claws directly. Keep sessions brief.", source: "hermit-crab-handling-guide" },
+        { label: "Buried and out of sight", value: "A newly disturbed crab, or one that's just arrived in a new home, commonly digs down and stays out of sight for days, sometimes over a week, while it settles in. A molting crab can stay buried considerably longer, anywhere from several weeks up to around three months, and should not be dug up or disturbed during that time no matter how long it's been.", source: "hermit-crab-handling-guide" },
+        { label: "The first molt", value: "Every pet hermit crab is wild-caught, not captive-bred, and this adjustment period is where most hermit crab deaths actually happen. Quarantine and isolate new crabs, and improve humidity and temperature gradually rather than making sudden changes. A hermit crab generally isn't considered past the PPS risk period until it has successfully molted once in your care.", source: "hermit-crab-health-issues-guide" },
+        { label: "Budget", value: "$3 to $40 per crab, roughly $130 to $450 for a complete setup, and around $10 to $30 a month after that.", source: "hermit-crab-cost-guide" },
+        { label: "Lifespan", value: "Hermit crabs can live 10 to 20 years or more when kept well.", source: "hermit-crab-cost-guide" },
+        { label: "Adult size", value: "Up to 4 inches (10 cm) across, including legs." },
+        { label: "Molting", value: "Burrowing completely underground and disappearing from view is the sign, and several weeks buried, depending on size, is the normal duration. Never disturb a molting invertebrate, which here means no digging up a buried hermit crab to check on it.", source: "invertebrate-molting-guide" },
+        { label: "Household pesticides", value: "Every insecticide sold for use inside a home is designed to kill arthropods, and an invertebrate pet has none of the safety margin a dog or cat gets. A can of ant spray used in the kitchen, a plug-in device switched on in the hallway, or a dog treated for fleas on the living room rug are all routes into an enclosure.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "Power outage", value: "Hermit crabs are the real exception in this group. They're actively heated and humidified rather than kept at a comfortable room temperature, which puts their outage risk much closer to a reptile's or a fish's than to a tarantula's. A battery-powered backup for the heat source and a plan for holding humidity, a sealed lid and damp substrate, belongs in your outage kit.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
+    emergencyCard: {
+      source: "hermit-crab-health-issues-guide",
+      callNow: [
+        "Lethargy, burrowing and staying hidden, refusing food, and rapid loss of multiple limbs, which is a particularly strong indicator of advanced post-purchase stress",
+        "An ashy appearance, lethargy, and an inability to fully retract into the shell, the signs of dehydration and gill suffocation",
+        "A molt that was interrupted, or one happening in substrate that's too shallow or dry, which is frequently fatal",
+        "Limb loss from stress, fights with cage-mates, mites, or generally wrong conditions",
+        "Mites and mold, generally traceable to poor hygiene or inadequate ventilation in the enclosure",
+      ],
+      vetLine: "There's essentially no practical veterinary care available for this species, so the real response to a sick or stressed hermit crab is correcting the husbandry issue behind it, and isolating any crab that's aggressive, injured, or showing PPS signs from the rest of the group while it recovers.",
+    },
+    routes: [
+      { slug: "hermit-crab-cost-guide", line: "$3 to $40 for the crab itself, why the setup is the part that actually costs money, and the monthly budget after that." },
+      { slug: "hermit-crab-tank-setup-guide", line: "Humidity, temperature, substrate depth, the two water dishes, and the shells that go in the tank." },
+      { slug: "hermit-crab-handling-guide", line: "Why handling stays minimal, the open-palm method, and how long a buried crab can stay down." },
+      { slug: "hermit-crab-health-issues-guide", line: "Post-purchase stress, dehydration and gill suffocation, bad molts, and what seeking help looks like when there's almost no vet care." },
+      { slug: "hermit-crab-feeding-guide", line: "What to feed and how often, calcium going into a molt, the two additives toxic to invertebrates, and why one commercial food is not the diet." },
+      { slug: "hermit-crab-enrichment-guide", line: "What the shell research actually found, how many shells a group needs, and the priority order for everything else." },
+    ],
+    buyList: [
+      "Glass terrarium, roughly 10 gallons for 2 to 3 small crabs and larger for a bigger group",
+      "A glass or acrylic lid that seals humidity in",
+      "Play sand and coconut fiber for substrate",
+      "Side- or back-mounted heat mat",
+      "Thermometer and hygrometer",
+      "Two soakable water dishes, ceramic or otherwise non-metal",
+      "Dechlorinator",
+      "Marine aquarium salt mix",
+      "Natural unpainted shells in a range of sizes, several per crab",
+      "Climbing branches and cork bark",
+      "Cuttlebone or another calcium source",
+      "Hermit crab food plus fresh fruit, vegetables, and protein",
+    ],
     faqs: [
-      { q: "Can hermit crabs live alone?", a: "They shouldn't, long term. Hermit crabs are social animals, and isolation is a well-documented contributor to stress and shortened lifespan. Keep at least 2 to 3 together, and preferably more." },
-      { q: "Why is my hermit crab buried and not moving?", a: "Almost always molting - a normal process that can take several weeks underground. Never dig up a buried crab to check on it; disturbing a molting hermit crab can be fatal." },
-      { q: "How long do hermit crabs live?", a: "In the wild, land hermit crabs can live 20 to 30 years or more. Sadly, most pet hermit crabs die within their first year due to incorrect humidity and being kept alone. With proper humidity, a social group, and appropriately sized spare shells, captive lifespans of a decade or more are genuinely achievable." },
-      { q: "Do hermit crabs need salt water?", a: "Yes, along with fresh water - both pools should be available at all times, deep enough to submerge in but with an easy exit ramp, using only dechlorinated water for each." },
-      { q: "Why does my hermit crab need extra shells?", a: "As they grow, hermit crabs need to move into progressively larger shells. Without 2 to 3 appropriately sized spares always available, they can become stressed, fight with tankmates over shells, or be forced to stay in a restrictive shell that stunts their growth." },
-      { q: "Are hermit crabs good pets for beginners?", a: "The reputation says yes; the reality says be careful. Hermit crabs are sold as a simple starter pet, but they're social animals that need to be kept in groups, require humidity precise enough to need an actual hygrometer, and most pet-store hermit crabs die within their first year from exactly those two things being skipped. Done right, they're rewarding; done the way they're usually sold, they aren't the easy pet the packaging suggests." },
-      { q: "How can I tell if my hermit crab is male or female?", a: "It's genuinely hard without close inspection. Hermit crabs are sexed by checking for gonopores, small paired openings at the base of certain walking legs, present on females and absent on males, but they're small and easy to miss unless you know exactly where to look. Most keepers don't reliably sex their hermit crabs, and it doesn't affect care either way." },
+      { q: "What humidity level do hermit crabs need?", a: "75 to 85% relative humidity, checked on a hygrometer. It isn't optional: the modified gills a hermit crab breathes through must stay moist to work, and humidity below that range leads directly to dehydration and gill suffocation." },
+      { q: "When should I never handle my hermit crab?", a: "Never handle a crab that's molting, has recently changed shells, or is buried in the substrate. Molting crabs are extremely vulnerable, and disturbing one during this time can be fatal, it's one of the clearest rules in hermit crab care." },
+      { q: "What's the leading cause of death in pet hermit crabs?", a: "Post-purchase stress, since every pet hermit crab is wild-caught rather than captive-bred and goes through real shock from capture, shipping, and a new environment. Watch for lethargy, burrowing, refusing food, and rapid loss of multiple limbs, and know that a crab generally isn't past the risk period until it has molted once successfully in your care." },
     ],
   },
   {
@@ -563,50 +587,63 @@ After each molt, inspect the insect carefully. Missing limbs or deformed antenna
     image: "/assets/guides/tarantula.jpg",
     tagline: "The misunderstood gentle giant of the spider world, a surprisingly low-maintenance pet!",
     funFact: "Tarantulas can live extraordinarily long lives. Females of some species (like the Mexican Red Knee) can live 25 to 30 years in captivity, while males typically live only 5 to 7 years. A female tarantula may outlive your dog.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "Species-appropriate enclosure", low: 30, high: 70 },
-        { item: "Coconut fiber and peat substrate", low: 10, high: 20 },
-        { item: "Cork bark hide", low: 10, high: 20 },
-        { item: "Small water dish", low: 5, high: 10 },
-        { item: "Feeding tongs (fine-tip precision)", low: 8, high: 15 },
-        { item: "Digital thermometer", low: 10, high: 15 },
-      ],
-      annual: [
-        { item: "Live feeder insects", low: 40, high: 80 },
-        { item: "Substrate replacement (infrequent)", low: 15, high: 25 },
-      ],
-    },
-    sections: {
-      housing: "Tarantula housing is highly species-dependent. Burrowing species (like Grammostola pulchripes, the Chilean Rose Hair) need enclosures with 3 to 4 times their leg span in floor space and deep substrate (4 to 6 inches of a coconut fiber and peat mix). Arboreal species (like Avicularia avicularia, the Pink-Toe) need tall enclosures (12x12x18 inches minimum) with cross-ventilation, cork bark, and artificial plants for climbing and anchoring their tube web. All enclosures need a secure, locking lid. A small, shallow water dish (bottle cap size for spiderlings, bottlecap to small dish for adults) must always be available. Overflow the dish occasionally for terrestrial species to create a moisture gradient. Temperatures for most pet tarantulas should stay between 68 and 82 degrees F. Most species do not need supplemental heat in a typical home.",
-      diet: `Tarantulas eat live prey exclusively. Appropriately sized crickets, dubia roaches, mealworms, and superworms are standard feeder insects for most species. Prey should be no larger than the tarantula's abdomen. Larger prey items cause unnecessary stress and potential injury.
-
-Feed juveniles every 4 to 7 days, adults every 10 to 14 days. Always remove uneaten prey within 24 hours. Live crickets are particularly dangerous near a molting or freshly molted tarantula - they will attack the vulnerable spider, causing severe injury or death. Pre-kill crickets before offering if unsure about molt timing.
-
-During premolt (recognizable by a darkened, fat abdomen, and refusal of food that can last weeks or even months), do not attempt to feed. After molting, wait 7 to 14 days for the fangs to fully harden before offering food again. A freshly molted tarantula with soft fangs cannot eat safely and can be injured by prey. Provide a water overflow during premolt to ensure adequate hydration for the molt process.`,
-      enrichment: "Tarantulas are observation animals, not handling animals. Many species are defensive or fast, and stress from handling can cause them to kick urticating (itching) hairs from their abdomen. The Goliath Bird-Eater can produce a loud hissing sound by rubbing its legs together. Design the enclosure to display natural behaviors: burrowing species will excavate elaborate tunnels, arboreal species will build impressive silk tube webs. This is the enrichment. A cork bark hide or cork tube allows them to feel secure.",
-      health: "Molting is the single most important and vulnerable event in a tarantula's life. Never disturb a molting spider. Do not feed for 1 to 2 weeks before or after a molt. Common health concerns include dehydration (shriveled abdomen, keep water available and overflow occasionally), mites (tiny white dots moving in enclosure, treat with a full substrate change), and DKS (dyskinetic syndrome, a poorly understood neurological issue). Failed molts can be fatal if the spider becomes stuck. Maintaining appropriate humidity for the species during premolt reduces this risk.",
-      checklist: [
-        "Species-appropriate enclosure (terrestrial or arboreal)",
-        "Coconut fiber and peat substrate (4 to 6 inch depth for burrowers)",
-        "Secure locking lid",
-        "Cork bark hide or tube",
-        "Small shallow water dish (always available)",
-        "Live feeder insects (crickets, dubia roaches)",
-        "Feeding tongs (never hand-feed)",
-        "Digital thermometer",
-        "Spray bottle for humidity management",
-        "Escape plan: know your species' defense behaviors",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Power outage cites the
+    // shared invertebrate emergency guide in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the tarantula set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure", value: "Horizontal, wider than tall, to limit fall risk. A reasonable adult minimum is around 20x10x10 inches, roughly a 10-gallon, sized to about three times the tarantula's leg span. Keep overall height under about 12 inches.", source: "tarantula-tank-setup-guide" },
+        { label: "Substrate", value: "At least 3 inches of coconut fiber, peat, or organic pesticide-free soil, filling roughly half to two-thirds of the enclosure.", source: "tarantula-tank-setup-guide" },
+        { label: "Lid", value: "A secure lid, but never mesh, a tarantula's feet can get caught in it and cause real injury. Acrylic with drilled ventilation holes is the better choice.", source: "tarantula-tank-setup-guide" },
+        { label: "Humidity", value: "Sources genuinely disagree: some recommend a moderate 40 to 60% for dry-adapted species, others suggest 65 to 75%. A reliable water dish plus lightly moistened substrate is more consistent than heavy misting either way.", source: "tarantula-tank-setup-guide" },
+        { label: "Housing", value: "One tarantula per enclosure. Most species are solitary and cannibalistic, and cohabitation isn't workable regardless of enclosure size.", source: "tarantula-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Slings every 2 to 3 days, juveniles roughly every week to two weeks (sources disagree on the exact number), adults every 1 to 2 weeks, sometimes far less for a slow-metabolism species.", source: "tarantula-feeding-guide" },
+        { label: "Not eating", value: "Usually not an emergency. A plump, active spider refusing food for weeks is typically just in premolt. For juveniles specifically, refusing food for more than 6 to 8 weeks alongside weight loss or lethargy is worth a vet consult.", source: "tarantula-feeding-guide" },
+        { label: "Handling", value: "Mostly, no. Best kept as a look, don't touch pet: a fall can rupture the abdomen and is often fatal, and a hand, shoulder, or couch cushion is enough height for that.", source: "tarantula-handling-guide" },
+        { label: "Budget", value: "$25 to $100 for the spider (common beginner species), $70 to $300 for a complete setup, and $5 to $15 a month after that.", source: "tarantula-cost-guide" },
+        { label: "Adult size", value: "2 to 12 inch leg span, depending on species." },
+        { label: "Lifespan", value: "15 to 20 years or more for a female Chilean rose hair, typically 4 to 7 for a male. A female is a long-term commitment, though the ongoing budget stays very small the whole time.", source: "tarantula-cost-guide" },
+        { label: "Power outage", value: "A non-event for most tarantulas at home; they don't need supplemental heat in a typical room and can go without food far longer than most pets. The real risk in this corner of pet keeping is in a car or a shipping box, not a home outage.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
+    emergencyCard: {
+      source: "tarantula-health-issues-guide",
+      callNow: [
+        "A shriveled, wrinkled abdomen with lethargy or legs curling tightly under the body (dehydration)",
+        "A molt that looks stuck or incomplete",
+        "A ruptured abdomen or hemolymph visibly leaking from an injury",
+        "Refusing food for more than a month, especially alongside dehydration signs",
+      ],
+      vetLine: "Vet care for tarantulas is limited and prevention matters more than treatment. A shallow water dish and correct humidity prevent most dehydration cases; never disturb, handle, or feed a molting tarantula.",
+    },
+    routes: [
+      { slug: "tarantula-cost-guide", line: "$25 to $100 for the spider, $70 to $300 for setup, and why the ongoing budget stays small for decades." },
+      { slug: "tarantula-handling-guide", line: "Why the answer is almost always no, the real fall risk, and New World versus Old World defenses." },
+      { slug: "tarantula-health-issues-guide", line: "Dehydration, stuck molts, injury, and the difference between normal fasting and a real problem." },
+      { slug: "tarantula-tank-setup-guide", line: "Enclosure shape and size, substrate depth, the humidity debate, and why mesh lids are out." },
+      { slug: "tarantula-feeding-guide", line: "Schedule by life stage, what's actually safe to feed, and the honest range for how long a tarantula can fast." },
+      { slug: "tarantula-enrichment-guide", line: "What the research on enclosure complexity actually found, and what it didn't." },
+      { slug: "tarantula-legal-guide", line: "The species question most states never ask, and where a specific tarantula is restricted regardless of the genus." },
+    ],
+    buyList: [
+      "20x10x10 inch enclosure or larger, wider than tall",
+      "Coconut fiber, peat, or organic pesticide-free soil substrate",
+      "A secure acrylic lid with drilled ventilation (never mesh)",
+      "A hide (cork bark, half-log, or a broken terracotta pot)",
+      "A shallow water dish",
+      "Live feeder insects (crickets or dubia roaches)",
+      "Digital thermometer/hygrometer combo",
+    ],
     faqs: [
-      { q: "Are tarantulas venomous and dangerous?", a: "Yes, all tarantulas have venom used to subdue prey - but for healthy adults the bite of common pet species is medically comparable to a bee sting: painful, temporarily swollen, and rarely requiring more than basic first aid. New World species (most common in the pet trade: Brachypelma, Grammostola, Chromatopelma) have mild venom but kick urticating hairs from their abdomen as their primary defense. These hairs cause intense itching and can cause serious eye damage - never rub your eyes after handling. Old World species (Poecilotheria, Pterinochilus) have more potent venom and should not be handled at all." },
-      { q: "Can I handle my tarantula?", a: "It depends entirely on the species. Docile New World species like the Chilean Rose Hair (Grammostola rosea) or Brachypelma hamorii tolerate calm, gentle handling. Many Old World species and all Poecilotheria (ornamental tarantulas) are fast, defensive, and should be considered display-only animals. The risk of handling is less about venom and more about falls - a dropped tarantula hitting hard flooring will rupture its abdomen and die instantly. Always sit on the floor while handling." },
-      { q: "How long do tarantulas live?", a: "Dramatically different by sex. Females of many popular species live 20 to 30 years in captivity - some documented individuals of Grammostola pulchripes (Chaco Golden Knee) have exceeded 30 years. Males of the same species may live only 3 to 7 years, and often die within months of reaching sexual maturity. If longevity matters to you, acquire a confirmed female juvenile. Females from reputable breeders may cost more but represent the long-term experience of the hobby." },
-      { q: "What do tarantulas eat?", a: "Live prey exclusively. Appropriately sized crickets, dubia roaches, mealworms, and superworms are standard. Prey size should be no larger than the tarantula's abdomen. Always remove uneaten prey within 24 hours - live insects left overnight will attack a molting or freshly molted tarantula, causing severe injury or death. Never feed during premolt (when the tarantula refuses food and its abdomen appears dark and full) and wait 7 to 14 days after a molt before offering prey again." },
-      { q: "What is molting and how do I prepare for it?", a: "Molting is how tarantulas grow - they shed their entire exoskeleton, including the lining of their fangs, stomach, and book lungs. It is the most vulnerable event in a tarantula's life. Signs of premolt: refusing food for weeks or months, a fat darkened abdomen, hiding more than usual. During molt, the tarantula lies on its back and slowly works free of the old exoskeleton - this can take 15 minutes to several hours. Never disturb this process. Never attempt to help a stuck molt without expert guidance. Remove all prey insects and ensure a small water source is available." },
-      { q: "Are tarantulas good pets for beginners?", a: "Yes, if you pick the right species. Docile New World tarantulas like the Chilean Rose Hair are genuinely low-maintenance, calm, and a good beginner choice. Old World species are faster, more defensive, and better suited to experienced keepers who don't plan on handling them at all. The species matters more than the genus-level reputation." },
+      { q: "How much does a tarantula cost upfront?", a: "The spider itself runs $25 to $100 for common beginner species, a Chilean rose hair or curly hair typically lands at $20 to $50. Add the enclosure, substrate, hide, decor, and a water dish, and most first-time setups land in the $70 to $300 range before the spider itself." },
+      { q: "What size enclosure does a pet tarantula need?", a: "About 20 by 10 by 10 inches for an adult, roughly a 10-gallon, sized to around three times the leg span. Keep it low, under about 12 inches tall, since a fall is a genuine danger for most tarantulas." },
+      { q: "Can you hold a tarantula?", a: "Mostly, no. Most tarantulas, including the Chilean rose hair, are best kept as strictly look, don't touch pets, since a fall can be fatal to the spider and its defenses can hurt you." },
     ],
   },
 ];

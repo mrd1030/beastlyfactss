@@ -10,6 +10,7 @@ export const catEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "15-20 years (UK primary-care life tables put life expectancy at birth for all cats at 11.7 years)",
       conservation: "Not applicable (domesticated breed)",
+      history: "The first cat entered in the breed's records was born in England. Champion Belle of Bradford, a red tabby male born in 1900 and imported to the United States, opened the registry for a breed otherwise built on American working cats. The name moved around before it settled: the cats were shown simply as Shorthairs at first, then relabeled Domestic Shorthair around 1930 to mark them off from imported British stock. That change backfired, because it made a pedigreed animal sound like any stray, and by 1961 breeders were campaigning for a name that claimed the continent instead.",
     },
   },
   {
@@ -23,6 +24,7 @@ export const catEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "12-16 years",
       conservation: "Not applicable (domesticated breed)",
+      history: "The breed came out of a laboratory as much as a cattery. Jean Mill made the first documented cross between a domestic cat and an Asian leopard cat in 1963 in Yuma, Arizona. In 1975 the physician Willard Centerwall gave her a group of hybrids left over from his Loma Linda research into whether the leopard cat's resistance to feline leukemia virus could pass to its offspring, and those cats became the breeding base. Mill later added a spotted street tom collected from the rhinoceros enclosure at the New Delhi zoo in 1982, registered as Millwood Tory of Delhi. TICA accepted the Bengal as a new breed in 1986 and granted it championship status in 1991.",
     },
   },
   {
@@ -36,6 +38,7 @@ export const catEncyclopedia = [
       wildDiet: "(Ancestral) Small rodents, birds, insects, and lizards",
       wildLifespan: "UK primary-care records give crossbred cats a life expectancy at birth of 11.89 years, against 11.74 for all cats; females average 12.51 and males 11.18. Outdoor and feral cats fare far worse at 2-5 years",
       conservation: "Not applicable (domesticated)",
+      history: "The oldest direct evidence is a grave. Archaeologists at Shillourokambos on Cyprus found a complete cat skeleton buried beside a human around 7500 BC, which points to taming by early Neolithic farming communities. Ancient DNA work published in 2017 traced the spread that followed along shipping lanes: the Egyptian maternal lineage turns up at the Viking trading port of Ralswiek on the Baltic between the seventh and eleventh centuries AD, and medieval seafarers were required to carry cats aboard. The same study found that the blotched tabby marking now carried by most house cats appears no earlier than the medieval period, evidence that breeding cats for appearance is only a few centuries old.",
     },
   },
   {
@@ -49,6 +52,7 @@ export const catEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "12-15 years",
       conservation: "Not applicable (domesticated breed)",
+      history: "The breed had a show career, lost it, and won it back. A dozen were entered at a Boston show in January 1878, and in May 1895 a brown tabby female named Cosey took Best Cat at the Madison Square Garden national show, winning an engraved silver collar the CFA Foundation still holds. Imported longhairs then took over the ring: the last major Maine Coon win came in Portland, Oregon in 1911, and the cats drifted into the any-other-variety class and out of the registries. Declared extinct in the late 1950s, a claim the CFA calls exaggerated, they were kept in front of the public by the Central Maine Cat Club until CFA granted provisional status in 1975 and championship in 1976.",
     },
   },
   {
@@ -62,6 +66,7 @@ export const catEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "UK primary-care records give a median longevity of 13.5 years (IQR 9.9 to 16.0)",
       conservation: "Not applicable (domesticated breed)",
+      history: "The show ring made the modern Persian. The first organized cat show, at the Crystal Palace in London on July 13, 1871, drew more than 20,000 visitors and gave longhairs their own classes, and its instigator Harrison Weir published the first breed standard in 1889, separating Persians from Angoras by fuller coat and larger head. The extreme face came much later and by accident: in the late 1950s a spontaneous mutation in American red tabby litters produced the flattened peke-faced look, named for the Pekingese dog. Breeders liked it, crossed it into other colors, and within a few decades the show standard had moved to meet it.",
     },
   },
   {
@@ -75,6 +80,7 @@ export const catEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "UK primary-care records give a median age at death of 12.85 years, against 14.0 years for UK cats overall",
       conservation: "Not applicable (domesticated breed)",
+      history: "Baker did not simply breed the cats, she tried to own them. Around 1971 she set up her own registry, the International Ragdoll Cat Association, and in December 1975 she trademarked the word Ragdoll for the sale of live cats, then licensed breeders on terms she controlled. That same year Denny and Laura Dayton took a breeding pair out of the IRCA and worked instead toward recognition by the mainstream registries, and theirs is the line behind the standard used today. The CFA accepted the Ragdoll for registration in 1993 and advanced it to championship status in 2000.",
     },
   },
   {
@@ -88,6 +94,7 @@ export const catEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "14-16 years is the commonly quoted average (UK primary-care life tables put life expectancy at birth for all cats at 11.7 years)",
       conservation: "Not applicable (domesticated breed)",
+      history: "The registry that now refuses the breed once accepted it. William Ross registered his folded-ear cats with the Governing Council of the Cat Fancy in 1966, and the GCCF stopped registering them in 1971 over concerns about limb deformity, ear infection and deafness. Three kittens had already been shipped in 1970 to Neil Todd, a New England researcher studying spontaneous mutations in cats, and American breeders picked up the line from there. The CFA granted provisional status in 1977, and the breed's development has run through North American catteries ever since.",
     },
   },
   {
@@ -101,6 +108,7 @@ export const catEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "11-15 years (often 15-20 years with good care)",
       conservation: "Not applicable (domesticated breed)",
+      history: "Documented arrivals in the West are late and traceable. In 1878 the American consul in Bangkok, David Sickels, shipped a cat named Siam to First Lady Lucy Hayes; she reached the White House the following year, sickened within months despite the president's own physician trying to feed her back to health, and died there, after which her body was sent for taxidermy and lost. Britain's breeding foundation arrived in 1884, when consul-general Edward Blencowe Gould brought a pair, Pho and Mia, home for his sister Lilian Jane Gould. Their three kittens were shown with them at the Crystal Palace in 1885 and all three died soon afterward, and Gould went on to co-found the Siamese Cat Club in 1901.",
     },
   },
   {
@@ -114,6 +122,7 @@ export const catEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "8-14 years is the commonly quoted range, but UK primary-care life tables give the Sphynx the shortest life expectancy of any breed reported at 6.8 years from birth, against 11.7 for cats overall",
       conservation: "Not applicable (domesticated breed)",
+      history: "Hairless cats had appeared and vanished before. E. J. Shinick of Albuquerque acquired a hairless brother and sister, Dick and Nellie, from Pueblo neighbors around 1894 and described them in a letter printed in Frances Simpson's The Book of the Cat in 1903, where they were advertised as the last of an Aztec breed. Dick was killed by dogs within a year or two, Nellie was sent east and died soon after reaching the Smithsonian Institution, where she was mounted as a specimen, and the line ended with her. Nothing was salvaged from that mutation, so the modern breed rests entirely on the Canadian line. The CFA accepted the Sphynx for registration in 1998 and granted championship status in 2002.",
     },
   },
 ];

@@ -6,7 +6,7 @@ export const blogPosts = [
     excerpt: "Crested geckos hail from the humid rainforests of New Caledonia. Get the moisture wrong and your gecko will struggle to shed, hydrate, and thrive. Here's exactly how to nail it.",
     category: "Care Tips",
     emoji: "🦎",
-    date: "2025-05-10",
+    date: "2026-05-10",
     readTime: "4 min",
     tags: ["Crested Gecko", "Humidity", "Husbandry"],
     content: `Crested geckos (Correlophus ciliatus) are native to the tropical forests of New Caledonia, where humidity regularly exceeds 70%. Replicating this in captivity is one of the most important things you can do for your gecko's health.
@@ -37,7 +37,7 @@ Keep it moist, keep it right. Your crested gecko will thank you with years of fl
     excerpt: "Leopard geckos are ectotherms - they rely entirely on their environment to regulate body temperature. A proper thermal gradient is the foundation of their health.",
     category: "Care Tips",
     emoji: "🦎",
-    date: "2025-05-03",
+    date: "2026-05-03",
     readTime: "5 min",
     tags: ["Leopard Gecko", "Temperature", "Heating"],
     content: `As ectotherms, leopard geckos cannot generate their own body heat. They depend entirely on their environment to digest food, fight infection, and stay active. Getting temperatures right isn't optional - it's foundational.
@@ -71,7 +71,7 @@ Nail your temperatures and your leopard gecko will be a healthy, active, long-li
     excerpt: "Ball pythons are legendary for refusing food. Before you panic, here's what's actually normal - and when to actually worry.",
     category: "Feeding",
     emoji: "🐍",
-    date: "2025-04-26",
+    date: "2026-04-26",
     readTime: "6 min",
     tags: ["Ball Python", "Feeding", "Behavior"],
     content: `Ball pythons are one of the most popular pet snakes in the world - and one of the most notorious food refusers. Understanding their feeding behavior will save you a lot of stress.
@@ -106,7 +106,7 @@ Feed correctly, be patient, and trust the process.`
     excerpt: "Bioactive setups use living ecosystems to self-clean and create naturalistic environments. They're more work upfront but radically reduce maintenance long-term.",
     category: "Enclosures",
     emoji: "🌿",
-    date: "2025-04-19",
+    date: "2026-04-19",
     readTime: "7 min",
     tags: ["Bioactive", "Enclosures", "DIY"],
     content: `A bioactive enclosure is a self-sustaining ecosystem that mimics your animal's natural habitat. Instead of spot-cleaning and full substrate changes, a cleanup crew of small invertebrates breaks down waste, keeping the environment clean and balanced.
@@ -143,7 +143,7 @@ Once established, a bioactive enclosure needs only occasional top-offs of substr
     excerpt: "UVB isn't just for basking lizards anymore. Recent research has changed everything we know about reptile lighting needs - including for species we thought didn't need it.",
     category: "Lighting",
     emoji: "☀️",
-    date: "2025-04-12",
+    date: "2026-04-12",
     readTime: "5 min",
     tags: ["UVB", "Lighting", "Nutrition", "Health"],
     content: `For decades, the reptile hobby drew hard lines: desert lizards need UVB, nocturnal species don't. Emerging research, largely driven by Frances Baines' UV Tool and field studies, has upended this thinking.
@@ -177,7 +177,7 @@ Light is life. Getting it right is one of the highest-impact improvements you ca
     excerpt: "Shedding is one of the most misunderstood aspects of reptile care. Here's what's actually happening, what's normal, and when you need to step in.",
     category: "Health",
     emoji: "🩺",
-    date: "2025-04-05",
+    date: "2026-04-05",
     readTime: "5 min",
     tags: ["Shedding", "Health", "Husbandry"],
     content: `Reptiles shed their skin (a process called ecdysis) to grow and to remove parasites and old, damaged skin. Understanding this process will help you support your animal and catch problems early.

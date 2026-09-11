@@ -88,7 +88,7 @@
       {
         "id": 257,
         "title": "Ears That Work as Radiators",
-        "fact": "A fennec's ears run to about 15 centimetres on an animal that weighs under two kilograms, the largest ears relative to body size of any carnivore. They are not only for listening. They carry a dense network of shallow blood vessels, and the fox dumps heat through them into the air, which lets it hold its temperature down without panting away water it cannot spare. The hearing is real too: a fennec can track insects and small rodents moving under the sand and dig straight down onto them.",
+        "fact": "A fennec's ears run to about 15 centimeters on an animal that weighs under two kilograms, the largest ears relative to body size of any carnivore. They are not only for listening. They carry a dense network of shallow blood vessels, and the fox dumps heat through them into the air, which lets it hold its temperature down without panting away water it cannot spare. The hearing is real too: a fennec can track insects and small rodents moving under the sand and dig straight down onto them.",
         "category": "Mammals",
         "image": "/assets/facts/fennec-fox.jpg"
       },
@@ -102,7 +102,7 @@
       {
         "id": 259,
         "title": "Fur on the Soles of Its Feet",
-        "fact": "The undersides of a fennec's feet are covered in thick fur, right over the pads. It works as insulation on sand hot enough to burn an unprotected foot, and it spreads the animal's weight so it can move across a loose surface without sinking. The same feet dig fast. A fennec can put itself out of sight underground in a few seconds, and dens often run several metres with more than one way out.",
+        "fact": "The undersides of a fennec's feet are covered in thick fur, right over the pads. It works as insulation on sand hot enough to burn an unprotected foot, and it spreads the animal's weight so it can move across a loose surface without sinking. The same feet dig fast. A fennec can put itself out of sight underground in a few seconds, and dens often run several meters with more than one way out.",
         "category": "Mammals",
         "image": "/assets/facts/fennec-fox-3.jpg"
       }
@@ -235,7 +235,7 @@
       {
         "id": 212,
         "title": "Drinking Is Harder Than It Looks",
-        "fact": "When a giraffe lowers its head to drink, roughly 1.4 litres of blood, about 5% of its total supply, pools in the neck veins and the heart rate drops. The textbook explanation, a siphon effect pulling it back, was rejected by a 2025 review because a collapsed vein cannot sustain a siphon. The new proposal: swallowing itself squeezes the neck veins and pumps the blood home.",
+        "fact": "When a giraffe lowers its head to drink, roughly 1.4 liters of blood, about 5% of its total supply, pools in the neck veins and the heart rate drops. The textbook explanation, a siphon effect pulling it back, was rejected by a 2025 review because a collapsed vein cannot sustain a siphon. The new proposal: swallowing itself squeezes the neck veins and pumps the blood home.",
         "category": "Mammals",
         "image": "/assets/facts/giraffe-5.jpg"
       },
@@ -290,14 +290,14 @@
       {
         "id": 234,
         "title": "Built Like the Cat Allergen",
-        "fact": "The protein in slow loris venom structurally resembles Fel d1, the cat allergen behind most human cat allergies, sharing the same disulphide-bridged heterodimeric arrangement. That reframes the whole thing: this is less a toxin evolved to attack nerves or blood, and more an allergen weaponised. Much of the damage is done by the victim's own immune response.",
+        "fact": "The protein in slow loris venom structurally resembles Fel d1, the cat allergen behind most human cat allergies, sharing the same disulphide-bridged heterodimeric arrangement. That reframes the whole thing: this is less a toxin evolved to attack nerves or blood, and more an allergen weaponized. Much of the damage is done by the victim's own immune response.",
         "category": "Mammals",
         "image": "/assets/facts/slow-loris-3.jpg"
       },
       {
         "id": 235,
         "title": "Teeth Removed With Pliers",
-        "fact": "Because a venomous bite makes an animal unsaleable, traders cut out a slow loris's teeth before sale using nail clippers or pliers, without anaesthetic. Infection and blood loss kill many before they reach a buyer. For survivors it is permanent: a loris without teeth cannot eat its natural diet or defend itself, so even confiscated animals can never be released.",
+        "fact": "Because a venomous bite makes an animal unsaleable, traders cut out a slow loris's teeth before sale using nail clippers or pliers, without anesthetic. Infection and blood loss kill many before they reach a buyer. For survivors it is permanent: a loris without teeth cannot eat its natural diet or defend itself, so even confiscated animals can never be released.",
         "category": "Mammals",
         "image": "/assets/facts/slow-loris-4.jpg"
       }
@@ -338,14 +338,14 @@
       {
         "id": 76,
         "title": "Hear With Their Feet",
-        "fact": "Elephants communicate through seismic vibrations in the ground, detecting low-frequency rumbles with specialised receptors in their feet and trunk. They can 'hear' messages from other elephants up to 20 miles away.",
+        "fact": "Elephants communicate through seismic vibrations in the ground, detecting low-frequency rumbles with specialized receptors in their feet and trunk. They can 'hear' messages from other elephants up to 20 miles away.",
         "category": "Mammals",
         "image": "/assets/facts/elephant-2.jpg"
       },
       {
         "id": 243,
         "title": "Calls Below Human Hearing",
-        "fact": "Elephant rumbles drop to around 14 Hz, below the roughly 20 Hz floor of human hearing, so what people standing nearby actually hear is only the upper harmonics. Low frequencies bend around obstacles and lose energy slowly, letting these calls carry for kilometres. At dusk, temperature inversions channel the sound rather than letting it escape upward, and calling activity peaks.",
+        "fact": "Elephant rumbles drop to around 14 Hz, below the roughly 20 Hz floor of human hearing, so what people standing nearby actually hear is only the upper harmonics. Low frequencies bend around obstacles and lose energy slowly, letting these calls carry for kilometers. At dusk, temperature inversions channel the sound rather than letting it escape upward, and calling activity peaks.",
         "category": "Mammals",
         "image": "/assets/facts/elephant-3.jpg"
       },
@@ -362,7 +362,7 @@
         "id": "elephants-talk-below-human-hearing",
         "slug": "elephants-talk-below-human-hearing",
         "title": "Elephant Infrasound: How Elephants Talk",
-        "excerpt": "Elephants produce calls too low for people to hear, carrying for kilometres across open country. Some of that signal",
+        "excerpt": "Elephants produce calls too low for people to hear, carrying for kilometers across open country. Some of that signal",
         "category": "Wild Animals",
         "publishedAt": "2026-08-01",
         "image": "/assets/images/elephants-talk-below-human-hearing.jpg",
@@ -400,7 +400,7 @@
       {
         "id": 256,
         "title": "The Fur Is an Ecosystem",
-        "fact": "Sloth hair has grooves that trap moisture and grow algae found almost nowhere else, which tints wild sloths green. Moths live in the coat too, and lay their eggs in the dung during the weekly descent. One proposal is that the moths fertilise the algae and the sloth eats some of it, supplementing a poor leaf diet. It is contested but nothing better has replaced it.",
+        "fact": "Sloth hair has grooves that trap moisture and grow algae found almost nowhere else, which tints wild sloths green. Moths live in the coat too, and lay their eggs in the dung during the weekly descent. One proposal is that the moths fertilize the algae and the sloth eats some of it, supplementing a poor leaf diet. It is contested but nothing better has replaced it.",
         "category": "Mammals",
         "image": "/assets/facts/sloth-4.jpg"
       }
@@ -821,8 +821,8 @@
         "image": "/assets/images/chameleons-do-not-change-color-to-match-their-background.jpg",
         "imageAlt": "A male panther chameleon on a branch in Madagascan foliage, banded in turquoise, red and green",
         "animal": "Chameleon",
-        "myth": "Chameleons change colour to blend into their surroundings.",
-        "truth": "Put one on a chessboard and nothing happens. The colour signals mood and temperature, not the background.",
+        "myth": "Chameleons change color to blend into their surroundings.",
+        "truth": "Put one on a chessboard and nothing happens. The color signals mood and temperature, not the background.",
         "sourceCount": 1
       }
     ],
@@ -839,14 +839,14 @@
       {
         "id": 284,
         "title": "The Longest Fangs of Any Snake",
-        "fact": "A Gaboon viper's fangs reach around five centimetres, longer than any other snake's, folded back against the roof of the mouth until the strike swings them forward. It also delivers more venom per bite than almost anything else, a function of simply being a very large-headed, heavy-bodied snake. The venom is not the most potent by weight. The dose is what makes it serious.",
+        "fact": "A Gaboon viper's fangs reach around five centimeters, longer than any other snake's, folded back against the roof of the mouth until the strike swings them forward. It also delivers more venom per bite than almost anything else, a function of simply being a very large-headed, heavy-bodied snake. The venom is not the most potent by weight. The dose is what makes it serious.",
         "category": "Reptiles",
         "image": "/assets/facts/gaboon-viper.jpg"
       },
       {
         "id": 285,
         "title": "It Bites and Holds On",
-        "fact": "Most vipers strike, inject and let go, then track the animal down once the venom has worked. The Gaboon viper often does not let go. It bites and keeps hold, which for an ambush predator on a forest floor means prey is less likely to stagger off somewhere it cannot follow. The same behaviour is what makes a bite on a person so much worse than the fang length alone suggests.",
+        "fact": "Most vipers strike, inject and let go, then track the animal down once the venom has worked. The Gaboon viper often does not let go. It bites and keeps hold, which for an ambush predator on a forest floor means prey is less likely to stagger off somewhere it cannot follow. The same behavior is what makes a bite on a person so much worse than the fang length alone suggests.",
         "category": "Reptiles",
         "image": "/assets/facts/gaboon-viper-2.jpg"
       },
@@ -887,7 +887,7 @@
       {
         "id": 260,
         "title": "Heaviest, Not Longest",
-        "fact": "The green anaconda is the heaviest snake alive and routinely gets called the biggest, which is only half right. Reticulated pythons grow longer, past seven metres, but an anaconda is built on a completely different scale of thickness and can pass 100 kilograms where a python of similar length is nowhere near it. Reliable measurements are rarer than the stories suggest. Claims above nine metres have circulated for over a century without one being confirmed.",
+        "fact": "The green anaconda is the heaviest snake alive and routinely gets called the biggest, which is only half right. Reticulated pythons grow longer, past seven meters, but an anaconda is built on a completely different scale of thickness and can pass 100 kilograms where a python of similar length is nowhere near it. Reliable measurements are rarer than the stories suggest. Claims above nine meters have circulated for over a century without one being confirmed.",
         "category": "Reptiles",
         "image": "/assets/facts/green-anaconda.jpg"
       },
@@ -901,7 +901,7 @@
       {
         "id": 262,
         "title": "It Gives Birth, It Does Not Lay Eggs",
-        "fact": "Anacondas are viviparous. Females carry their young internally and give birth to live snakes, often twenty to forty at a time, each already around half a metre long and able to swim and hunt immediately. There is no parental care after that. Females are also far larger than males, which is unusual enough among snakes to be worth saying plainly: a big female can be several times the weight of any male she breeds with.",
+        "fact": "Anacondas are viviparous. Females carry their young internally and give birth to live snakes, often twenty to forty at a time, each already around half a meter long and able to swim and hunt immediately. There is no parental care after that. Females are also far larger than males, which is unusual enough among snakes to be worth saying plainly: a big female can be several times the weight of any male she breeds with.",
         "category": "Reptiles",
         "image": "/assets/facts/green-anaconda-3.jpg"
       }
@@ -1062,7 +1062,7 @@
       {
         "id": 266,
         "title": "A Pigeon the Size of a Turkey",
-        "fact": "The Victoria crowned pigeon is the largest pigeon in the world, around 75 centimetres long and up to roughly 2.5 kilograms, which is to say a pigeon you would notice from across a field. It is blue-grey with a maroon breast, a deep red eye, and a fan of crest feathers standing upright on its head. It spends nearly all of its time walking the forest floor of northern New Guinea, and flies up mainly to roost or to get away from something.",
+        "fact": "The Victoria crowned pigeon is the largest pigeon in the world, around 75 centimeters long and up to roughly 2.5 kilograms, which is to say a pigeon you would notice from across a field. It is blue-grey with a maroon breast, a deep red eye, and a fan of crest feathers standing upright on its head. It spends nearly all of its time walking the forest floor of northern New Guinea, and flies up mainly to roost or to get away from something.",
         "category": "Birds",
         "image": "/assets/facts/victoria-crowned-pigeon.jpg"
       },
@@ -1191,7 +1191,7 @@
       {
         "id": 283,
         "title": "Half Bird, Half Tail",
-        "fact": "A shima enaga is a genuinely tiny bird, roughly 14 centimetres from beak to tail tip, and close to half of that length is tail. Its name comes from hishaku, a long-handled ladle traditionally used in Japan, a nod to the silhouette of a small round body trailing a long, thin handle.",
+        "fact": "A shima enaga is a genuinely tiny bird, roughly 14 centimeters from beak to tail tip, and close to half of that length is tail. Its name comes from hishaku, a long-handled ladle traditionally used in Japan, a nod to the silhouette of a small round body trailing a long, thin handle.",
         "category": "Birds",
         "image": "/assets/facts/shima-enaga-3.jpg"
       }
@@ -1695,8 +1695,8 @@
         "image": "/assets/images/mantis-shrimp-16-color-vision-punch-power-0.jpg",
         "imageAlt": "A colorful peacock mantis shrimp with vivid iridescent colors perched on a coral reef",
         "animal": "Mantis Shrimp",
-        "myth": "Sixteen colour receptors means the mantis shrimp sees colours we cannot imagine.",
-        "truth": "It discriminates colour worse than we do. The receptors work as a fast lookup, not as a richer picture.",
+        "myth": "Sixteen color receptors means the mantis shrimp sees colors we cannot imagine.",
+        "truth": "It discriminates color worse than we do. The receptors work as a fast lookup, not as a richer picture.",
         "sourceCount": 3
       }
     ],
@@ -1748,7 +1748,7 @@
     "facts": [
       {
         "id": 87,
-        "title": "Sharks Can Be Chatty",
+        "title": "Singers of the Sea",
         "fact": "Humpback Whales are not just majestic giants; they're also the singers of the sea! Males produce complex songs that can last for 20 minutes and can be heard over vast distances, possibly for mating purposes or simply to communicate with their fellow swimmers.",
         "category": "Ocean",
         "image": "/assets/facts/humpback-whale.jpg"

@@ -30,8 +30,38 @@ working checklist.
   e.g. `categories: ["Pet Care", "Dogs", "Cats"]`, or it never appears under
   the species pills on /blog/. The blog filters on the array when present.
   Ten dog/cat health guides shipped invisible to both pills before this rule.
-- No em or en dashes anywhere. US spelling, "grey" preferred. No AI-tell
-  phrasing ("nature's ultimate X", "let that sink in", "delve into").
+- No em or en dashes anywhere. When a draft reaches for a dash, say it another
+  way: split it into two sentences, use a colon, or cut the aside. A comma is
+  not a dash substitute. "Round fish gulp air, it is how they fail" is a comma
+  splice wearing a dash's job, and 900 of them in a row is a fingerprint. If
+  both halves are full clauses, they get a period.
+- US spelling, "grey" preferred. No AI-tell phrasing ("nature's ultimate X",
+  "let that sink in", "delve into").
+- Intensifiers are rationed, not banned. "genuinely", "actually", "really",
+  and "the real X" are fine in Mike's mouth once in a while. They are not
+  fine as the thing that makes a claim sound credible. Limits: at most one per
+  section, never in a heading, never in the first sentence of an article, and
+  never two in one paragraph. If the sentence dies without it, the sentence
+  had no claim.
+- Two voices, chosen by whether Mike has lived with the animal. Firsthand
+  species (bearded dragon, rabbit, golden retriever, guinea pig, cockatoo,
+  budgie, lovebird, chinchilla; the list is src/lib/data/firsthand.js) may use
+  first person, one concrete beat per article, and the byline shows a note
+  automatically. Every other species is documentary voice: third person, the
+  sources carry the weight, no warmth about an animal nobody here has held.
+  Never write "I keep" or "in my experience" on a documentary page. A line
+  like "I would not handle a mourning gecko" is allowed anywhere because it
+  is a recommendation, not a claim of experience. Legal pieces and the
+  Chronicles keep their own voices.
+- The first sentence of an article is about the animal, and so is the first
+  section. No care-guide sentence, no "companion guides on cost, feeding,
+  handling, and cage setup" list. "For everything else, see our full guide"
+  is a nav bar pretending to be a sentence, wherever it sits. The Deep Dive
+  list (sidebar on desktop, the block after the FAQ on phones) carries the
+  care guide and every sibling guide on every page, in the prerendered HTML.
+- "X, not Y" and "X rather than Y" are one move, not a paragraph closer. Use
+  each at most twice per article. A section that ends on that cadence every
+  time reads as assembled.
 - Deliver the structure the lead-in promises: "six surprising facts" means an
   actual numbered list, numbered consistently.
 - Care guides keep the split structure (cost / handling / health / tank setup),
@@ -59,15 +89,107 @@ working checklist.
   traits get scoped, figures must be current. Arithmetic-check the title,
   excerpt, and meta description last and deliberately, they are the most shared.
 
+### The source goes in the block, not the sentence
+
+This site is where a keeper gets the answer, not a survey of where the answer
+lives. The `<Sources>` block exists so a reader can verify a figure. The body
+exists to state it.
+
+- Give the number, not the provenance. "Dark leafy greens run 80 to 90% of the
+  diet", not "VCA gives 80 to 90% while LafeberVet says the majority."
+- Never make disagreement between sources the subject of a section or a heading.
+  When published guidance splits, state the range in one line, say which end to
+  use and why, then move on. A reader following the recommendation should never
+  have to arbitrate between two vets.
+- Cut the sentences that narrate the research: "both bounds are worth knowing",
+  "the honest reading is", "the sources are thinner here", "the gap is worth
+  seeing", "this is the part most care sheets skip". They show the working, and
+  they push the actual instruction further down the page.
+- Name a source in the body only when the name is the fact: a legal citation, a
+  named study whose authors carry the claim, or a manufacturer's spec for its
+  own product.
+- De-attributing is not de-quoting. Stripping a source name from around wording
+  that is still the source's wording leaves an unmarked lift. Rewrite the claim
+  in your own words instead.
+- The models for how this should read are `bearded-dragon-feeding-guide.mdx` and
+  `goldfish-feeding-guide.mdx`.
+
+### Sources are for facts, not prices
+
+A `<Sources>` entry is a vet, university, government, manufacturer spec, or
+established husbandry reference. Never a retailer product page or a
+for-sale listing. When a cost guide quotes retail prices, put one plain
+line under the last cost table, no links: "Prices last checked <Month
+Year> at <retailer names>. Retail prices move; treat the table as a
+snapshot, not a quote."
+
 ## Linking: everything to and from somewhere
 
 - Every article carries 1 to 2+ in-body internal links, written by hand. The
   build gates on this, but the check is a net, not the author.
+- In-body links point somewhere the Deep Dive does not: another species
+  ("the same calcium problem sugar gliders have"), a cross-species guide
+  (quarantine, UVB, gut-loading), the encyclopedia profile, an overview or
+  vs piece. Never a link to the same species' cost, handling, health,
+  setup, feeding, enrichment, or legal guide, and never to the care guide
+  hub: the Deep Dive lists all of those on every page. A sentence that
+  exists only to carry a link ("For what it costs, see our cost guide")
+  is deleted, not moved. A content sentence that carried one ("covered in
+  our health guide") loses the clause and keeps the point. Decided
+  2026-09-08 on the flying squirrel set; the rest of the series follow.
+  One exception: when a sibling guide is the direct answer to the question
+  the article raised (the health guide says diet drives everything, the
+  feeding guide has the bowl), one sentence with a reason may link it. At
+  most one such link per article, and the sentence says what is there.
+- The site never talks about itself. No "on this site", "this site's",
+  "covered elsewhere", "already covered", "our X guide covers". A
+  sentence that compares two articles is an editor's note, not something
+  a keeper says about the animal; cut it or say the thing about the animal.
+  The checker warns on the phrases (`self-reference`).
+- Articles end on the animal: the last body paragraph is a point, not a
+  list of places to go next. One encyclopedia or overview sentence is fine.
+- Navigation-only edits (links added, moved, or removed) and FunFact
+  rewrites do not bump lastUpdated or lastReviewed. Only a fact added or
+  reviewed does.
 - Every article must be reachable from a guide. Standard species suffixes
   (cost, handling, health-issues, tank-setup, feeding, enrichment) auto-wire;
   everything else gets a RELATED_ARTICLES entry against the guide ids it serves.
 - The inbound-link audit is a ratchet: the thin-page budget only goes down, so
   no new page ships that nothing links to.
+
+## Hubs: the deep dives own the numbers
+
+Decided 2026-09-08 after the rabbit set test found the care guide hub
+contradicting its own deep dives on the vet clock, greens, hay share,
+lifespan, and vet schedule. The hub is a router and a storefront, not a
+third care sheet.
+
+- A reconciled hub (`layout: "router"` in src/lib/data/guides/*.js) carries:
+  a first-week card of numbers, each copied word for word from the deep
+  dive named in its `source` and linked to it; an emergency card copied
+  from the health guide's call-the-vet list; one routing sentence per deep
+  dive; a buy list with no prices; three FAQs copied from the deep dives.
+  No housing, diet, enrichment, or health prose, no cost tables. The hub
+  keeps no figure of its own; a number changes in the deep dive and the
+  hub follows. The rare row no deep dive covers (rabbit heat, lifespan)
+  carries no source and is a gap to fill in the deep dives. Rows may cite
+  the shared class guides in the sidebar's Health and More list (heat
+  stress, grooming, vet trips, quarantine, shedding, hygiene, the
+  emergency plan) the same way: those pages answer what every set test
+  reported as a gap, and a hub row is how a reader finds out they exist.
+- `node scripts/check-species-numbers.mjs <species>` lists every topic
+  where the hub, encyclopedia entry, and deep dives state different
+  figures, each with its sentence. Run it before and after touching a
+  species set. Advisory: a minimum and an exercise space are two figures,
+  not a conflict, and the reviewer decides.
+- Care packages are sold ($8.99) and never printed free. The hub's print
+  icon prints two free cards only, the emergency card and the setup
+  checklist (buy list plus first-week numbers), with the package name and
+  price in the footer. It only appears on hubs that have an emergency
+  card. The package card stays in the sidebar on every hub.
+- Legacy hubs (every species not yet reconciled) still render the old
+  care sheet and have no print button. Reconcile one species at a time,
+  after its set test, and dogs and cats last.
 
 ## Affiliate
 

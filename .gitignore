@@ -35,9 +35,13 @@ dist-ssr
 .dev.vars*
 !.dev.vars.example
 !.env.example
-# shared slash commands are source, everything else in .claude is local
+# shared slash commands and the session-start hook are source, everything else
+# in .claude is local. The hook has to be tracked or the cloud snapshot restore
+# wipes it every session, which is the whole point of it.
 .claude/*
 !.claude/commands/
+!.claude/hooks/
+!.claude/settings.json
 
 # regenerated keyword-research output, not source
 tools/keyword-finder/keyword-ideas.csv
@@ -95,3 +99,7 @@ frontpage trials/
 
 # care package render cache (fonts re-downloaded on demand by source/_render.mjs)
 content/CAREPACKAGE Guides/source/.fonts/
+
+# voice batch working files
+.voice-batch/
+.reader/

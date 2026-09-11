@@ -10,6 +10,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Insects, worms, and small invertebrates",
       wildLifespan: "Not documented (the widely quoted 10-20 years is a captive range; wild longevity for this species has not been studied)",
       conservation: "Least Concern (IUCN)",
+      history: "Auguste Duméril described the species in 1851 from West African material. It reached Western collections through the same export pipeline that supplied ball pythons and savannah monitors, moving out through Ghana, Togo and Benin, and for years most animals offered for sale were wild caught adults. Captive breeding caught up slowly, and selective work in the trade has since produced a long run of color and pattern variants. It remains the second most widely kept member of the eyelid gecko subfamily, well behind the leopard gecko despite filling much the same role.",
     },
   },
   {
@@ -23,6 +24,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Fruit, nectar, pollen, and small invertebrates",
       wildLifespan: "Not documented (the widely quoted 10-20 years is a captive range; wild longevity for this species has not been studied)",
       conservation: "Vulnerable (IUCN)",
+      history: "The crested gecko was considered extinct for much of the twentieth century. It was rediscovered in 1994 on a private expedition by Robert Seipp and Friedrich Wilhelm Henkel, after a tropical cyclone that year led to a sighting on the Isle of Pines, and a small number of animals were exported for study before New Caledonia stopped issuing permits. Every crested gecko in the hobby descends from those few founders, bred out through separate lines in Europe and the United States. The species turned out to breed readily in a terrarium, which closed off the pressure to keep collecting more.",
     },
   },
   {
@@ -36,6 +38,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Fruit, nectar, small insects, and invertebrates",
       wildLifespan: "15-20 years",
       conservation: "Vulnerable (IUCN)",
+      history: "Arthur Bavay described the species in 1869. For more than a century it sat in Rhacodactylus alongside the crested gecko and the mossy prehensile-tailed gecko, until a 2012 revision by Aaron Bauer, Anthony Whitaker, Ross Sadlier and Todd Jackman broke that genus apart: the crested gecko moved to Correlophus and the mossy species to Mniarogekko, while the gargoyle gecko kept the original name and now shares Rhacodactylus with the giant leachianus and the rough-snouted geckos. New Caledonia stopped issuing export permits for its endemic geckos, so captive animals descend from founders exported decades ago. The IUCN still rates the species Least Concern, though deforestation across its range in the south of the island is listed as the main threat.",
     },
   },
   {
@@ -49,6 +52,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Insects, snails, and small invertebrates",
       wildLifespan: "5-10 years",
       conservation: "Ranges from Least Concern to Endangered depending on species (IUCN)",
+      history: "André Marie Constant Duméril erected the genus in 1806. Protection came from the range state itself: Madagascar submitted the technical case for including the whole genus on CITES Appendix II in 2004, and WWF has since flagged leaf-tailed geckos among the animals most exposed to illegal wildlife trade. The taxonomy is far from settled, and new species keep emerging from surveys of the remaining forest, including Uroplatus finaritra from Marojejy National Park in the northeast. The count of recognized species has climbed even as the forest holding them has shrunk.",
     },
   },
   {
@@ -62,6 +66,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Insects, scorpions, small lizards, and worms",
       wildLifespan: "6-8 years (predation, parasites, and harsh conditions cut wild lifespans well short of the 15-20+ years typical in captivity)",
       conservation: "Least Concern (IUCN)",
+      history: "Leopard geckos were imported into the United States and Europe from Pakistan, Afghanistan, and India through the 1960s and 1970s, and were being bred in the United States by the early 1970s. Large-scale breeding did not start until the late 1980s, and the color morphs followed in the 1990s through breeders including Ron Tremper, Mark and Kim Bell, and John Mack, whose lines still carry their names in the trade. The result is unusual among reptiles: essentially every leopard gecko sold today is captive-bred, with no wild-collected supply sitting behind the pet market.",
     },
   },
   {
@@ -75,6 +80,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Small invertebrates, fruit juice, and nectar",
       wildLifespan: "5-10 years",
       conservation: "Least Concern (IUCN)",
+      history: "Auguste Duméril and Gabriel Bibron named the species in 1836, but the work that made it a laboratory animal came much later: Orlando Cuellar and Arnold Kluge documented natural parthenogenesis in it in 1972, and it has been a standard subject for cytogenetics ever since. Later chromosome work showed the species is not one clone but many. Each lineage appears to descend from a separate hybridization between Lepidodactylus moestus and a still undescribed relative, producing diploid animals with 44 chromosomes and triploids with 66. Developmental biologists adopted it because no pairing is needed, every individual lays, and clonemates are genetically identical, and those same traits are what let one stray animal found a colony.",
     },
   },
   {
@@ -88,6 +94,7 @@ export const geckoEncyclopedia = [
       wildDiet: "Insects, small mammals, birds, lizards, and eggs",
       wildLifespan: "10-15 years",
       conservation: "Least Concern (IUCN)",
+      history: "The tokay gecko is traded at a scale that has little to do with the pet market. Indonesia is the largest known exporter and reported roughly 5 million individuals in each of 2021 and 2022, about 99 percent of them bound for mainland China and overwhelmingly for traditional medicine rather than as pets. One Indonesian quota split 1.8 million animals into 21,250 for the pet trade and 1,778,750 for consumption. Almost all are taken from the wild, and investigations into the commercial breeding facilities that are supposed to supply them have questioned whether the captive-bred paperwork reflects any captive breeding at all.",
     },
   },
 ];

@@ -124,7 +124,7 @@ export const ANIMAL_EVENTS = [
     month: 9, day: 22,
     animals: ['Rhino', 'Rhinoceros'],
     categories: ['Wild Animals'],
-    blurb: 'Armoured, short-sighted, and running out of time.',
+    blurb: 'Armored, short-sighted, and running out of time.',
   },
   {
     id: 'world-animal-day', name: 'World Animal Day', emoji: '🐾',
@@ -203,7 +203,7 @@ export const ANIMAL_EVENTS = [
     month: 8, day: 13,
     animals: ['Wolf'],
     categories: ['Wild Animals'],
-    blurb: 'The alpha wolf was a captive-study artefact, not a wild fact.',
+    blurb: 'The alpha wolf was a captive-study artifact, not a wild fact.',
   },
   {
     id: 'national-honey-bee-day', name: 'National Honey Bee Day', emoji: '🐝',

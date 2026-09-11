@@ -10,6 +10,7 @@ export const dogEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "10-15 years (UK primary-care records give a median age at death of 11.28 years)",
       conservation: "Not applicable (domesticated breed)",
+      history: "American packs were built on imports. General Richard Rowett of Illinois brought hounds over from English packs around 1870, an original American standard was published in 1884, and the National Beagle Club of America organized later that decade. The club split the breed into two size varieties on the argument that a small hound had no chance of winning a field trial against a larger one, and it revised the scale of points in 1900 to weight the head less heavily. The same qualities that suited pack life, modest size and an even temper, later made the Beagle the default laboratory dog. The American Anti-Vivisection Society, working from USDA figures, counted more than 47,200 dogs in US laboratories in 2023 and names this breed as the one most used.",
     },
   },
   {
@@ -23,11 +24,12 @@ export const dogEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "12-15 years",
       conservation: "Not applicable (domesticated breed)",
+      history: "Competitive sheepdog trials shaped the breed before any registry did. The first formal trial was held in Wales in 1873, and the dog who set the modern template was Old Hemp, born in Northumberland in 1893 and bred by Adam Telfer. Hemp worked quietly where his contemporaries barked and charged, his stud services were in such demand that he left an estimated 200 or more offspring, and every winner of the International Sheep Dog Society championship between 1906 and 1951 traced back to him. The ISDS formed in 1906, and its secretary James Reid is credited with putting the name Border Collie into print around 1915 to separate working stock from the show collie. AKC recognition took far longer, arriving only in 1995 over objections from the working registries.",
     },
   },
   {
     id: "bulldog", name: "Bulldog", scientific: "Canis lupus familiaris",
-    category: "Dogs", emoji: "🐶", difficulty: "Intermediate", guideId: "dog-bulldog", available: true, image: "/assets/guides/dog-bulldog.jpg",
+    category: "Dogs", emoji: "🐶", difficulty: "Advanced", guideId: "dog-bulldog", available: true, image: "/assets/guides/dog-bulldog.jpg",
     bio: {
       overview: "The Bulldog was created in medieval England for bull-baiting, and its ancestors were selected for huge jaws and a high pain threshold. When England banned blood sports in 1835 the breed lost its job and nearly died out, so admirers spent decades reworking it into a companion, refining its contours and breeding away the aggression. That reshaping came at a documented cost: a study of 2,662 English Bulldogs found 2.04 times the odds of being diagnosed with at least one disorder compared with other dogs, with raised odds for 24 of 43 specific disorders, and its authors called for immediate redefinition of the breed toward a moderate conformation. A separate survey of 102 breeding Bulldogs found one paternal haplotype in 93% of dogs. None of this makes the Bulldog a bad dog, and it is genuinely docile and fond of children, but it is a dog that will need active medical management.",
       origin: "Breed origin: England (bred for bull-baiting from the 13th century, then reworked into a companion after Britain's 1835 blood-sports ban)",
@@ -36,6 +38,7 @@ export const dogEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "8-10 years (UK life-table data gives 7.39 years at birth against 11.23 for dogs overall)",
       conservation: "Not applicable (domesticated breed)",
+      history: "The rescue effort produced the first written breed standard for any dog. In 1865 Samuel Wickens published a set of points for the Bulldog under the pen name Philo-Kuon, a template meant to steer the animal toward the parlor. A second group formed The Bulldog Club in March 1875, issued its own standard that May, held the first Bulldog-only show the same year, and incorporated in 1894, making it the oldest single-breed kennel club in the world. The last recorded bull baiting in England took place in 1837, so the men writing those standards were describing a dog whose job had been gone for a generation.",
     },
   },
   {
@@ -49,6 +52,7 @@ export const dogEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "12-16 years",
       conservation: "Not applicable (domesticated breed)",
+      history: "Formal standardization arrived only in the late 1800s. The Deutscher Teckelklub was founded in 1888, fixed the breed's type, and still sets the international standard used today. German affection for the dog later put it at the center of an Olympic first: Waldi, mascot of the 1972 Munich Games, was the first official Olympic mascot ever produced. Otl Aicher designed him in pastel stripes and modeled him on a real dachshund named Cherie von Birkenhof, the breed picked for its Bavarian popularity and for qualities the organizers called indispensable to an athlete, namely resistance, tenacity and agility.",
     },
   },
   {
@@ -62,6 +66,7 @@ export const dogEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "10-12 years",
       conservation: "Not applicable (domesticated breed)",
+      history: "The breed's defining feature was settled by an American revolt. At the 1897 Westminster show an English judge placed rose-eared dogs over bat-eared ones, and American owners, who preferred the upright ear, founded the French Bull Dog Club of America in response. In February 1898 the club staged its own specialty in the sun parlor of the Waldorf-Astoria, open to bat-eared dogs only, and a brindle named Dimboolaa won it. French and British fanciers objected loudly, but the American standard held, and the bat ear is now the definition of the breed everywhere. The dog stayed scarce for decades: AKC registrations stood at roughly 100 in 1940.",
     },
   },
   {
@@ -75,6 +80,7 @@ export const dogEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "12-14 years per the AKC, but UK primary-care records covering 12,146 dogs give a median of 10.3 years, 11.1 for females and 9.7 for males",
       conservation: "Not applicable (domesticated breed)",
+      history: "The breed has a documented first dog. In 1899 von Stephanitz bought a four-year-old named Hektor Linksrhein at a dog show for 200 gold marks, renamed him Horand von Grafrath, and entered him as SZ1, the first record in the stud book of the breed club he founded that same year. Modern German Shepherds trace back to him, largely through his son Hektor von Schwaben. The breed also opened guide dog work in the United States: Dorothy Harrison Eustis trained a shepherd named Buddy in Switzerland for Morris Frank, who arrived in New York with her on June 11, 1928. Their street-crossing demonstration for reporters led to The Seeing Eye, incorporated in Nashville on January 29, 1929.",
     },
   },
   {
@@ -88,6 +94,7 @@ export const dogEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "10-12 years per the AKC. A UC Davis necropsy series of 655 Goldens gives a median age at death of 9.15 years, and notably 9.83 years for dogs that died of cancer against 6.93 for dogs that died of everything else",
       conservation: "Not applicable (domesticated breed)",
+      history: "For half a century the breed's official origin story was wrong. Both the English and American breed clubs endorsed a claim, promoted by Colonel W. le Poer Trench, that Goldens descended from Russian circus dogs. Lord Tweedmouth's Guisachan kennel records became available in the early 1950s, and the researcher Elma Stonex used them to demolish that account and establish the real line, which began with a yellow retriever named Nous that Tweedmouth bought from a Brighton cobbler in 1865. Four female puppies out of Nous stand behind every Golden alive, which makes this one of the few popular breeds whose founding litter can be named.",
     },
   },
   {
@@ -101,6 +108,7 @@ export const dogEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "11-13 years per the AKC; UK primary-care records covering 33,320 Labradors give a median of 12.0 years, but only 10.7 years for chocolate dogs against 12.1 for black and yellow",
       conservation: "Not applicable (domesticated breed)",
+      history: "The founding population was cut off early. Newfoundland's St. John's dogs reached Britain aboard trading ships in the 1830s, and the Earls of Malmesbury built a kennel around them at Heron Court. A meeting between the Malmesbury family and the Duke of Buccleuch in the 1880s produced the transfer of two dogs, Ned and Avon, whose descendants are the foundation of everything that followed. Then the supply closed: Newfoundland taxed dogs that were not kept for herding, and British quarantine rules on imported dogs shut the Atlantic route, leaving breeders to work with the animals already in Britain. The Kennel Club recognized the Labrador as a separate breed in 1903 and the AKC registered it in 1917.",
     },
   },
   {
@@ -114,6 +122,7 @@ export const dogEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "9-10 years (UK primary-care data give a median longevity of 9.0 years, 9.5 for females and 8.7 for males)",
       conservation: "Not applicable (domesticated breed)",
+      history: "The breed came close to disappearing at the turn of the twentieth century, and the recovery was closer to a rescue. By 1905 a single female was reported left in the town of Rottweil itself. Fanciers organized fast: the International Club for Leonberger and Rottweiler Dogs produced a first standard in 1901, the Deutscher Rottweiler Klub was founded in January 1907, and in 1910 the German police service accepted the Rottweiler as its fourth approved breed. The rival clubs merged into the Allgemeiner Deutscher Rottweiler Klub in 1921, with a third joining in 1924, and that body has written the breed's breeding rules ever since.",
     },
   },
   {
@@ -127,6 +136,7 @@ export const dogEncyclopedia = [
       wildDiet: "Fully domesticated",
       wildLifespan: "12-14 years per the AKC, though UK primary-care life tables give Huskies 9.53 years on a small sample the authors flag as low confidence",
       conservation: "Not applicable (domesticated breed)",
+      history: "The dogs arrived in Alaska as a long shot. The fur trader William Goosak brought a Siberian team to Nome in the fall of 1908, and bettors put them at 100 to 1 before they placed third in the 1909 All Alaska Sweepstakes. Fox Maule Ramsay sailed to Siberia in the summer of 1909 and came back with about 60 dogs; in 1910 a team of them driven by John Johnson won the 408-mile race in 74 hours, 14 minutes and 37 seconds, the fastest time it ever recorded. Leonhard Seppala took the Sweepstakes in 1915, 1916 and 1917, and in the 1925 relay his 12-year-old lead dog Togo ran 264 miles, the longest leg by a wide margin. The AKC recognized the breed in 1930.",
     },
   },
 ];

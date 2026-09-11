@@ -60,6 +60,49 @@ function countHeadings(body = '') {
   return md + (body.includes('<Sources') ? 1 : 0);
 }
 
+// True when the body's opening paragraph is the excerpt, word for word. 232
+// articles open that way, and Blog.jsx used to render the excerpt as an
+// italic block right above the body, so the same sentence printed twice.
+// Decided here rather than at render time so the page never has to hold the
+// body text and the excerpt side by side, and so the excerpt itself stays
+// untouched for the cards and meta descriptions that still use it.
+const normalizeLede = (s = '') => s
+  .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+  .replace(/[*_`]/g, '')
+  .replace(/[\u2018\u2019]/g, "'")
+  .replace(/[\u201C\u201D]/g, '"')
+  .replace(/\s+/g, ' ')
+  .trim()
+  .toLowerCase();
+
+function firstParagraph(body = '') {
+  const lines = body.replace(/\r\n/g, '\n').split('\n');
+  let i = 0;
+  // Skip imports, the markdown H1, component lines, and blank lines.
+  while (i < lines.length) {
+    const t = lines[i].trim();
+    if (t === '' || t.startsWith('#') || t.startsWith('<') || t.startsWith('import ')) { i++; continue; }
+    break;
+  }
+  const para = [];
+  while (i < lines.length && lines[i].trim() !== '') para.push(lines[i].trim()), i++;
+  return para.join(' ');
+}
+
+// Exact match, or one is the opening of the other: some excerpts are the
+// first sentence of a longer opening paragraph, and a few opening paragraphs
+// are a shorter cut of the excerpt. Both print the same words twice. The
+// shorter side must still be a full sentence's worth so a shared first clause
+// is not enough on its own.
+function ledeMatchesExcerpt(body, excerpt) {
+  if (!excerpt) return false;
+  const lede = normalizeLede(firstParagraph(body));
+  const ex = normalizeLede(excerpt).replace(/[.\u2026]+$/, '');
+  if (!lede || !ex) return false;
+  const shorter = Math.min(lede.length, ex.length);
+  return shorter >= 60 && (lede.startsWith(ex) || ex.startsWith(lede));
+}
+
 function countSources(body = '') {
   const block = body.match(/<Sources>([\s\S]*?)<\/Sources>/);
   if (!block) return 0;
@@ -238,6 +281,7 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       truth: fm.truth || null,
       sourceCount: countSources(body),
       headingCount: countHeadings(body),
+      ledeMatchesExcerpt: ledeMatchesExcerpt(body, fm.excerpt || fm.description || ''),
     });
   }
 }

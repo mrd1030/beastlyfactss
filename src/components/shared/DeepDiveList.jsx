@@ -81,7 +81,15 @@ function Section({ title, articles, renderLink }) {
 // rather than routing, so it needs a plain anchor whose default is prevented.
 // Guide and encyclopedia pages pass nothing and get a real router Link. Both
 // render identically; only the navigation differs.
-export default function DeepDiveList({ articles, guideId, onSelect }) {
+// ownTitle lets the after-article block on blog posts label the species list
+// "More on the Argentine Tegu" while the sidebars keep "Deep Dive".
+// show: 'both' (default), 'own' or 'shared', so a caller can place the two
+// sections in different spots (the blog puts the species list after the FAQ
+// on phones and keeps the shared list in the sidebar).
+// hub: { id, name } puts a "<Name> care guide" row at the top of the species
+// list, linking the guide hub page. Article pages have no other visible link
+// to the hub once the prose stops carrying one.
+export default function DeepDiveList({ articles, guideId, onSelect, ownTitle = OWN_TITLE, show = 'both', hub = null }) {
   if (!articles || articles.length === 0) return null;
 
   const slugOf = article => article.slug?.current || article._id || article.id;
@@ -118,10 +126,17 @@ export default function DeepDiveList({ articles, guideId, onSelect }) {
     );
   };
 
+  const hubRow = hub ? (
+    <Link key="hub" to={`/guides/${hub.id}/`} className="group block">
+      <p className={textClass}>{`📘 ${hub.name} care guide`}</p>
+    </Link>
+  ) : null;
+  const ownRows = hubRow ? [{ _hub: true }, ...own] : own;
+  const renderOwnRow = (item) => (item._hub ? hubRow : renderLink(item));
   return (
     <>
-      <Section title={OWN_TITLE} articles={own} renderLink={renderLink} />
-      <Section title={SHARED_TITLE} articles={shared} renderLink={renderLink} />
+      {show !== 'shared' && <Section title={ownTitle} articles={ownRows} renderLink={renderOwnRow} />}
+      {show !== 'own' && <Section title={SHARED_TITLE} articles={shared} renderLink={renderLink} />}
     </>
   );
 }
