@@ -250,8 +250,8 @@ export const CARE_PACKAGE_COPY = {
   'crested-gecko': {
     hook: 'Forgiving in some ways. Unforgiving in others.',
     heroParagraph:
-      'A 34-page printable manual with the humidity cycle and the 85°F ceiling a crested gecko actually needs, diet powder on a real schedule, and health triage, not a setup that quietly punishes small mistakes.',
-    heroTicks: ['34 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 35-page printable manual with the humidity cycle and the 85°F ceiling a crested gecko actually needs, diet powder on a real schedule, and health triage, not a setup that quietly punishes small mistakes.',
+    heroTicks: ['35 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'Humidity that spikes and crashes instead of cycling',
       'Diet powder treated as a rough guess, not a schedule',
@@ -530,8 +530,8 @@ export const CARE_PACKAGE_COPY = {
   'ball-python': {
     hook: 'Every heat source on a thermostat. Everything else follows.',
     heroParagraph:
-      'A 34-page printable manual with enclosure and heat, the humidity range that decides everything, a prey chart and thawing method, the seven reasons a ball python stops eating, six health pages, and the printable owner tools.',
-    heroTicks: ['34 pages, print or view', 'Beginner to intermediate', 'No external links inside the PDF'],
+      'A 35-page printable manual with enclosure and heat, the humidity range that decides everything, a prey chart and thawing method, the seven reasons a ball python stops eating, six health pages, and the printable owner tools.',
+    heroTicks: ['35 pages, print or view', 'Beginner to intermediate', 'No external links inside the PDF'],
     roulette: [
       'A heat mat running bare, with no thermostat in sight',
       'Humidity ranges that swing 20 points between care sheets',
