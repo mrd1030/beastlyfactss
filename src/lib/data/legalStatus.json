@@ -3235,6 +3235,7 @@
     },
     "gerbil": {
       "name": "Gerbil",
+      "article": "/blog/gerbil-legal-guide/",
       "scientific": "Meriones unguiculatus",
       "jurisdictions": {
         "CA": {
@@ -10535,6 +10536,7 @@
     },
     "green-iguana": {
       "name": "Green iguana",
+      "article": "/blog/green-iguana-legal-guide/",
       "scientific": "Iguana iguana",
       "jurisdictions": {
         "NYC": {
@@ -20843,6 +20845,7 @@
     },
     "leopard-gecko": {
       "name": "Leopard gecko",
+      "article": "/blog/leopard-gecko-legal-guide/",
       "scientific": "Eublepharis macularius",
       "encyclopediaId": "leopard-gecko",
       "jurisdictions": {
@@ -21271,6 +21274,7 @@
     },
     "crested-gecko": {
       "name": "Crested gecko",
+      "article": "/blog/crested-gecko-legal-guide/",
       "scientific": "Correlophus ciliatus",
       "encyclopediaId": "crested-gecko",
       "jurisdictions": {
@@ -21699,6 +21703,7 @@
     },
     "blue-tongue-skink": {
       "name": "Blue-tongue skink",
+      "article": "/blog/blue-tongue-skink-legal-guide/",
       "scientific": "Tiliqua scincoides",
       "encyclopediaId": "blue-tongue-skink",
       "jurisdictions": {

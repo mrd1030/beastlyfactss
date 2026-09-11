@@ -4,8 +4,8 @@ Notes on animal facts that were drafted but did NOT make it into `src/lib/data/f
 
 ## Guide heroes still needed
 
-None outstanding. All nine feeding-guide heroes were delivered by Mike on
-2026-09-09 and installed.
+None outstanding. The fourteen legal-guide heroes were delivered by Mike on
+2026-09-11 and installed; the nine feeding-guide heroes landed on 2026-09-09.
 
 **2026-09-09: nine feeding guide heroes installed.** green-iguana, conure,
 box-turtle, hermit-crab, hognose-snake, whites-tree-frog, russian-tortoise,
@@ -18,6 +18,22 @@ Derived -thumb and -card tiers are gitignored and rebuilt by
 generate-thumbnails.js, so check-images reporting those as missing is expected.
 
 ## Completed
+
+**2026-09-11: fourteen legal guide heroes installed.** crested-gecko,
+leopard-gecko, green-iguana, blue-tongue-skink, gerbil, bearded-dragon,
+hissing-cockroach, degu, tokay-gecko, jacksons-chameleon, guinea-pig, rabbit,
+nile-monitor and red-footed-tortoise, all at `<id>-legal.jpg`. Eleven arrived as
+1168x784 JPEG and were re-encoded through mozjpeg at quality 80. Three
+(nile-monitor, blue-tongue-skink, tokay-gecko) arrived as 1264x848 PNG and were
+resized and converted the same way the hognose frame was, landing at 148 to
+196KB. The set went from 8.9MB to 1.7MB in total. Prompts are in
+IMAGE_PROMPTS.md.
+
+Five of the fourteen had articles waiting and went live with the art: crested
+gecko, leopard gecko, green iguana, blue-tongued skink and gerbil. The other
+nine heroes are installed and unreferenced until those guides are written, which
+`check-images` does not mind.
+
 
 **2026-08-24: Kea, Dachshund, Pygmy Marmoset, Barreleye Fish, Basilisk Lizard.**
 Added as ids 292 to 296. Photos were AI-generated (Adobe Firefly, site-owner-run
