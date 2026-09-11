@@ -309,7 +309,7 @@ Annual health checks with an exotic or amphibian veterinarian are strongly recom
         { label: "Adult size", value: "3 to 4.5 inches (7 to 11 cm)." },
         { label: "Quarantine", value: "Six to eight weeks is typically adequate for a new amphibian. Zoo and aquarium practice runs a 30-day minimum with 60 days preferred before release from quarantine. The clock should reset, not just pause, if the animal shows any illness partway through.", source: "amphibian-quarantine-and-water-guide" },
         { label: "Moving a new arrival", value: "A container, not a net. Move the animal with some of its own tank water into a small, clear, water-tight container, which lets you view it from any angle without ever needing to touch it directly or force it through mesh.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Hygiene", value: "A completely healthy-looking reptile or amphibian can carry and shed Salmonella with no outward sign of illness at all, and the route is hands and surfaces to mouth rather than bites. The CDC's wording is that children younger than 5 years old should not handle or touch reptiles or amphibians or their environments.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Hygiene", value: "A completely healthy-looking reptile or amphibian can carry and shed Salmonella with no outward sign of illness at all, and the route is hands and surfaces to mouth rather than bites. Children younger than 5 years old should not handle or touch reptiles or amphibians or their environments.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
     emergencyCard: {

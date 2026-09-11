@@ -39,7 +39,7 @@ export const snakeGuides = [
         { label: "Budget", value: "A standard or wild-type ball python runs $40 to $100. Total setup typically lands at $300 to $800. Most owners land around $200 to $500 a year in ongoing costs once the setup is finished.", source: "ball-python-cost-guide" },
         { label: "Adult size", value: "3 to 5 feet, females significantly larger." },
         { label: "Lifespan", value: "20 to 30 years, up to 48 years recorded in captivity." },
-        { label: "Quarantine", value: "The Merck Veterinary Manual's husbandry guidance recommends quarantine periods of 3 to 6 months for new reptiles. Mites usually show themselves within weeks, while inclusion body disease can sit with no visible signs for months to years, and pythons are one of the two groups it affects.", source: "reptile-quarantine-guide" },
+        { label: "Quarantine", value: "A new snake is quarantined for 3 to 6 months. Mites usually show themselves within weeks, while inclusion body disease can sit with no visible signs for months to years, and pythons are one of the two groups it affects.", source: "reptile-quarantine-guide" },
         { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact with the animal, its enclosure, its water, or anything that's touched either. Never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Power outage", value: "72-75°F is the cold floor. Below this range for more than a day or two is the classic winter trigger for respiratory infection.", source: "reptile-emergency-plan-guide" },
       ],
