@@ -1319,3 +1319,41 @@ depth of field with the head sharp, slightly above the snake looking down,
 100mm, f/4, 3:2. Not a reticulated python and not a ball python: heavy build,
 blotches rather than a fine diamond net, no hands, no people.
 ```
+
+## Legal guide heroes, 14 outstanding
+
+Every species on the exotic pet law map that has no legal guide yet. Five are
+written and staged in `content/_scheduled-legal-guides/`; the other nine are
+queued behind them. All 14 need a hero at `public/assets/guides/<id>-legal.jpg`
+before the article can move into `content/guides/`.
+
+Same spec as the rest of the guide set: **3:2, 1168x784, mozjpeg quality 80.**
+Derived `-thumb` and `-card` tiers are gitignored and rebuilt by
+`generate-thumbnails.js`, so `check-images` reporting those as missing after a
+drop is expected.
+
+The legal series follows the existing legal heroes (`tarantula-legal.jpg`,
+`box-turtle-legal.jpg`, `serval-legal.jpg`): **a clean portrait of the animal in
+a believable setting, no gavels, no cages, no maps, no flags.** The article
+carries the law; the image carries the animal. No two below share a setting,
+palette or camera position.
+
+| # | File | Written? | Prompt | Alt text |
+|---|---|---|---|---|
+| 1 | `crested-gecko-legal.jpg` | staged | Crested gecko gripping a vertical cork branch at eye level, eyelash crests and fringed toes sharp, deep green foliage falling out of focus behind it, soft diffused daylight, cool green and cream palette, shallow depth of field | Crested gecko gripping a branch, showing the eyelash crests it is named for |
+| 2 | `leopard-gecko-legal.jpg` | staged | Leopard gecko standing alert on warm sand-toned slate, black spots crisp against pale yellow, low warm side light casting a long soft shadow, terracotta and amber palette, shot level with the animal | Leopard gecko standing on sand-colored substrate, showing its spotted pattern |
+| 3 | `green-iguana-legal.jpg` | staged | Large adult green iguana in profile on a thick horizontal branch, dewlap and dorsal crest clearly visible, bright humid daylight with tropical leaves behind, saturated green palette, slightly low camera angle to convey size | Adult green iguana on a branch, showing its dewlap and dorsal crest |
+| 4 | `blue-tongue-skink-legal.jpg` | staged | Blue-tongued skink on leaf litter with its blue tongue extended mid-display, glossy banded body, overcast even light, muted brown and slate palette, close three-quarter view from the front | Blue-tongued skink with its tongue extended, showing the blue coloration it is named for |
+| 5 | `gerbil-legal.jpg` | staged | Mongolian gerbil sitting upright on deep aspen bedding, forepaws tucked, tufted tail visible, bright clean high-key light, warm sandy palette, tight macro with a soft pale background | Mongolian gerbil standing upright on deep bedding |
+| 6 | `bearded-dragon-legal.jpg` | queued | Bearded dragon basking on a flat sandstone slab under warm overhead light, beard and spiny flanks textured, arid ochre and rust palette, straight side-on composition | Bearded dragon basking on a flat stone under a heat lamp |
+| 7 | `hissing-cockroach-legal.jpg` | queued | Madagascar hissing cockroach on a piece of bark, glossy chestnut carapace catching a single soft highlight, dark earthy background, low key lighting, extreme macro from just above the head | Madagascar hissing cockroach on bark, its glossy segmented back lit from one side |
+| 8 | `degu-legal.jpg` | queued | Degu perched on a wooden ledge holding a piece of dried forage in its forepaws, large dark eye catching the light, warm indoor daylight, honey and pale wood palette, eye-level close view | Degu sitting on a wooden ledge holding forage in its forepaws |
+| 9 | `tokay-gecko-legal.jpg` | queued | Tokay gecko clinging head-down to a dark tree trunk, vivid blue-grey skin with orange spots, dramatic directional light against a near-black background, high contrast, vertical body on a horizontal frame | Tokay gecko clinging head-down to a tree trunk, showing its orange-spotted blue skin |
+| 10 | `jacksons-chameleon-legal.jpg` | queued | Male Jackson's chameleon on a thin branch showing all three horns in profile, bright leafy highland green behind, cool misty morning light, fresh green palette, sharp profile silhouette | Male Jackson's chameleon in profile on a branch, all three horns visible |
+| 11 | `guinea-pig-legal.jpg` | queued | Two guinea pigs side by side on timothy hay, one mid-chew, soft window light from the left, warm straw and cream palette, low camera down at hay level | Two guinea pigs together on a bed of timothy hay |
+| 12 | `rabbit-legal.jpg` | queued | Rabbit sitting alert on a clean floor indoors, ears up, whole body in frame, bright airy daylight, soft neutral grey and white palette, calm domestic setting with no cage in view | Rabbit sitting alert indoors with its ears raised |
+| 13 | `nile-monitor-legal.jpg` | queued | Nile monitor at the edge of water, forked tongue out, powerful banded body and long claws visible, harsh midday sun, olive and wet-stone palette, wide enough to read the animal's full length | Nile monitor at the water's edge with its tongue extended |
+| 14 | `red-footed-tortoise-legal.jpg` | queued | Red-footed tortoise walking across damp forest floor, red and orange scale markings on the legs catching light, dappled shade, rich brown and leaf-green palette, low front three-quarter view | Red-footed tortoise walking on a damp forest floor, red leg scales visible |
+
+Note on 13: Nile monitor is on the law map but has no care guide, so it is the
+one entry here with no existing sibling art to sit beside.
