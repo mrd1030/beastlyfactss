@@ -638,7 +638,7 @@ const CARE_PACKAGE_STORE = {
     name: 'Bearded Dragon Care Package',
     edition: '3.1',
     priceIdSandbox: '',
-    priceIdLive: 'price_1UENBp9qtY3Ob6vamuXMA6sD',
+    priceIdLive: 'price_1UEX7j9qtY3Ob6vaWqZYC652', // TEMP $0.50 live test, revert to price_1UENBp9qtY3Ob6vamuXMA6sD
   },
   'leopard-gecko': {
     name: 'Leopard Gecko Care Package',

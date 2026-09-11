@@ -60,8 +60,15 @@ export const CARE_PACKAGES = [
     emoji: '🦎',
     status: 'live',
     storefront: 'stripe',
-    stripePriceId: 'price_1UENBp9qtY3Ob6vamuXMA6sD',
-    price: '$8.99',
+    // TEMPORARY. A 50 cent price so a real end-to-end purchase can be made
+    // cheaply. Revert to price_1UENBp9qtY3Ob6vamuXMA6sD ($8.99) as soon as the
+    // test is done, here and in CARE_PACKAGE_STORE in public/_worker.js.
+    stripePriceId: 'price_1UEX7j9qtY3Ob6vaWqZYC652',
+    // Matches the temporary price above, because this string is what the card,
+    // the product page and the Product schema advertise, and a page that says
+    // $8.99 while Stripe charges 50 cents is a lie to anyone who walks in
+    // during the test. Revert to '$8.99' with the price id.
+    price: '$0.50',
     pages: 35,
     version: '3.1',
     versionDate: '2026-09-05',
