@@ -80,6 +80,39 @@ webhook signing secret and its own products and prices, all isolated from live.
 Nothing else needs connecting: `stripePriceIdSandbox` above is the Sandbox
 price, and it is correct as recorded.
 
+### Live products and prices
+
+The whole lineup, on `acct_1Tbn669qtY3Ob6va` in **live mode**. All 14 are
+$8.99 USD, one time, and every product carries `metadata.package_id` matching
+the catalog id and a `url` pointing at its product page.
+
+| Package | Product | Price |
+| --- | --- | --- |
+| `bearded-dragon` | `prod_VEqtMFpNa8cod8` | `price_1UENBp9qtY3Ob6vamuXMA6sD` |
+| `leopard-gecko` | `prod_VEqtyweAFt4reS` | `price_1UENBs9qtY3Ob6vaOPtdFLAt` |
+| `goldfish` | `prod_VEqtVux2KGkwlY` | `price_1UENBu9qtY3Ob6vaU6oDSTyD` |
+| `axolotl` | `prod_VEqttFYQ981JPu` | `price_1UENBw9qtY3Ob6vaRVFVm391` |
+| `budgie` | `prod_VEqt4npeCcYTFf` | `price_1UENBy9qtY3Ob6vaLv2cNMGc` |
+| `crested-gecko` | `prod_VEqtOzpXmQAxHe` | `price_1UENC19qtY3Ob6vasiNmiLfX` |
+| `guinea-pig` | `prod_VEqtAfxFpPH53j` | `price_1UENC39qtY3Ob6vaks244qto` |
+| `lovebird` | `prod_VEqtuqHimmkkDw` | `price_1UENC89qtY3Ob6vav2ARp6wq` |
+| `russian-tortoise` | `prod_VEqt8Ajxtr7s3r` | `price_1UENCB9qtY3Ob6vaTvVBMark` |
+| `ball-python` | `prod_VEquzX6A9AWISg` | `price_1UENCE9qtY3Ob6vajtYqePnI` |
+| `betta-fish` | `prod_VEquJ9HcocDbFR` | `price_1UENCG9qtY3Ob6vaxKLgeXwO` |
+| `hamster` | `prod_VEqtWIdVnfJBxX` | `price_1UENBJ9qtY3Ob6vaJcPpuniM` |
+| `rabbit` | `prod_VEqumd4P1LHeHh` | `price_1UENCH9qtY3Ob6vaaasv4qjw` |
+| `tarantula` | `prod_VEquBB2Y1okeui` | `price_1UENCK9qtY3Ob6vafJILVYIP` |
+
+These ids are in `stripePriceId` in the catalog and in `priceIdLive` in the
+Worker's `CARE_PACKAGE_STORE`. Having a live price does not put a package on
+sale here: the buy button only appears for a package whose catalog entry says
+`storefront: 'stripe'`, and flipping that is a separate step that also needs
+the PDF in the Supabase bucket, a `carePackageCopy.js` entry and a
+`carePackageThemes.js` entry.
+
+Only the Hamster was ever sold in the Sandbox, so it is the only package with
+both a sandbox and a live price.
+
 ### The webhook endpoint to register
 
 Stripe Dashboard, in **test mode**, Developers -> Webhooks -> Add endpoint:

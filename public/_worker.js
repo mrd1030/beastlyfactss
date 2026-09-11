@@ -618,24 +618,105 @@ async function notifySubscriber(env) {
 //   SUPABASE_URL                the project URL, same one the site uses
 //   SUPABASE_SERVICE_ROLE_KEY   secret, sb_secret_... - never in the bundle
 
-// Mirrors src/lib/data/carePackages.js for the entries with
-// storefront: 'stripe'. Kept in sync by hand for the reason above, the same
-// deal as ANIMAL_IMAGES: when a package is switched to Stripe, or its `version`
-// is bumped because a corrected edition was uploaded, change it in BOTH files.
+// Mirrors src/lib/data/carePackages.js. Kept in sync by hand for the reason
+// above, the same deal as ANIMAL_IMAGES: when a price id changes, or a
+// `version` is bumped because a corrected edition was uploaded, change it in
+// BOTH files.
 //
 // A package missing here cannot be bought even if the catalog says it can,
-// which is the safe direction for the two to disagree in.
+// which is the safe direction for the two to disagree in. The reverse is the
+// state most of this table is in right now: every package has a live price,
+// but only the ones carrying storefront: 'stripe' in the catalog have a buy
+// button pointing here, so the rest are reachable only by a hand-made POST.
 //
-// priceIdLive is empty until a package actually goes on sale on the live
-// Stripe account. checkout uses it when set and falls back to the sandbox id,
-// so a deployment holding a live secret key and a package with only a sandbox
-// id gets a clean Stripe error rather than a broken sale.
+// checkout prefers priceIdLive and falls back to priceIdSandbox, so a
+// deployment holding a live secret key and a package with only a sandbox id
+// gets a clean Stripe error rather than a broken sale. Only hamster was ever
+// sold in the Sandbox, so it is the only entry with both.
 const CARE_PACKAGE_STORE = {
+  'bearded-dragon': {
+    name: 'Bearded Dragon Care Package',
+    edition: '3.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENBp9qtY3Ob6vamuXMA6sD',
+  },
+  'leopard-gecko': {
+    name: 'Leopard Gecko Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENBs9qtY3Ob6vaOPtdFLAt',
+  },
+  goldfish: {
+    name: 'Goldfish Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENBu9qtY3Ob6vaU6oDSTyD',
+  },
+  axolotl: {
+    name: 'Axolotl Care Package',
+    edition: '2.2',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENBw9qtY3Ob6vaRVFVm391',
+  },
+  budgie: {
+    name: 'Budgie Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENBy9qtY3Ob6vaLv2cNMGc',
+  },
+  'crested-gecko': {
+    name: 'Crested Gecko Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENC19qtY3Ob6vasiNmiLfX',
+  },
+  'guinea-pig': {
+    name: 'Guinea Pig Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENC39qtY3Ob6vaks244qto',
+  },
+  lovebird: {
+    name: 'Lovebird Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENC89qtY3Ob6vav2ARp6wq',
+  },
+  'russian-tortoise': {
+    name: 'Russian Tortoise Care Package',
+    edition: '2.2',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENCB9qtY3Ob6vaTvVBMark',
+  },
+  'ball-python': {
+    name: 'Ball Python Care Package',
+    edition: '2.2',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENCE9qtY3Ob6vajtYqePnI',
+  },
+  'betta-fish': {
+    name: 'Betta Fish Care Package',
+    edition: '2.2',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENCG9qtY3Ob6vaxKLgeXwO',
+  },
   hamster: {
     name: 'Hamster Care Package',
     edition: '2.3',
     priceIdSandbox: 'price_1UC9Up9qtY3Ob6vac8xRLEu2',
-    priceIdLive: '',
+    priceIdLive: 'price_1UENBJ9qtY3Ob6vaJcPpuniM',
+  },
+  rabbit: {
+    name: 'Rabbit Care Package',
+    edition: '2.1',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENCH9qtY3Ob6vaaasv4qjw',
+  },
+  tarantula: {
+    name: 'Tarantula Care Package',
+    edition: '2.3',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UENCK9qtY3Ob6vafJILVYIP',
   },
 };
 
