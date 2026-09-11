@@ -5,6 +5,7 @@ import { useLocation, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { ChevronRight, Info, Search } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
+import { guideCategoryDescription } from '@/lib/seo/categoryDescriptions';
 import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
 import { difficultyColor } from '@/lib/data/encyclopedia';
@@ -109,14 +110,10 @@ export default function Guides() {
     ? 'Care Guides'
     : `Care Guides for ${activeFilter}`;
 
-  // "husbandry advice", "housing setups" and "keeper" are reptile-hobby words.
-  // Dogs and Cats are two of the 11 categories and nobody searching dog care
-  // calls themselves a keeper, so the shared template read wrong on those two
-  // and slightly off for birds and fish. This wording works for all 11 without
-  // a special case. "all" is gone on purpose: Dogs and Cats carry 14 and 10
-  // lighter entries, so promising the complete set oversells them.
+  // One description per category, naming the species that category actually
+  // holds. See src/lib/seo/categoryDescriptions.js for why.
   const pageDescription = activeFilter !== 'All'
-    ? `Care guides for ${activeFilter} on Beastly Facts. What they cost, what they eat, how to handle them, and the health problems worth knowing about first.`
+    ? guideCategoryDescription(activeFilter)
     : 'Browse our complete library of reptile, bird, mammal, and exotic pet care guides on Beastly Facts. Evidence-based husbandry advice from experienced keepers.';
 
   const canonical = `https://beastlyfacts.com${location.pathname.replace(/\/$/, '')}/`;

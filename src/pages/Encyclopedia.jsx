@@ -5,6 +5,7 @@ import { useLocation, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { Search, ChevronRight, Info } from 'lucide-react';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
+import { guideCategoryDescription } from '@/lib/seo/categoryDescriptions';
 import { allGuides } from '@/lib/data/guides';
 import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
@@ -155,7 +156,7 @@ export default function Encyclopedia() {
     : (activeCategory === 'All' ? 'Encyclopedia & Care Guides | Beastly Facts' : `${activeCategory} Care Guides & Facts | Beastly Facts`);
   const encDescription = isGuides
     ? (activeFilter !== 'All'
-        ? `Care guides for ${activeFilter} on Beastly Facts. What they cost, what they eat, how to handle them, and the health problems worth knowing about first.`
+        ? guideCategoryDescription(activeFilter)
         : 'Browse our complete library of reptile, bird, mammal, and exotic pet care guides on Beastly Facts. Evidence-based husbandry advice from experienced keepers.')
     // Same rewrite as the guides tab: drops "husbandry" for language that fits
     // dogs and cats as well as reptiles, and drops "everything you need to
