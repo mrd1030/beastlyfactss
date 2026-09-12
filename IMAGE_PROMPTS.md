@@ -1791,3 +1791,49 @@ Check: flat round body, crown of horns at the back of the skull. Not a thorny
 devil, not a frilled lizard. Thin arcing stream, not a spray, predator out of
 frame.
 
+---
+
+# Colour refresh: goldfish and koi, `public/assets/guides/`, 1168x784
+
+Not species fixes. The goldfish installed 2026-09-12 is correct and the koi has
+always been correct; both are just muted, and these two animals are the most
+colour-driven species on the site. Same spec as the rest of the guide set.
+
+The pair also has to stay distinguishable, because the koi versus goldfish
+comparison guide turns on the difference: koi carry a pair of barbels at the
+corners of the mouth and goldfish have none. Saturate the colour, not the
+identification.
+
+#### goldfish.jpg
+```
+Photorealistic photograph of a single common goldfish in full side profile in a
+brightly lit planted aquarium, whole fish in frame, swimming left to right.
+Vivid tangerine to deep red-orange scales with a metallic sheen, each scale
+edge catching the light so the flank reads like hammered copper, belly fading to
+pale cream gold, fins translucent amber with orange rays. Saturated emerald stem
+plants filling the background and clean pale sand below. Strong clean daylight
+from above raking across the fish, high colour saturation and high local
+contrast, orange against deep green, camera level with the fish, 60mm macro,
+f/5.6, 3:2. A plain rounded snout with a small terminal mouth and absolutely no
+barbels or whiskers of any kind.
+```
+Check: colour rich and clearly orange, never washed pale or brown. Nothing
+whisker-like at the mouth, which would make it a koi. Single caudal fin, no
+double tail, no head growth, no telescope eyes.
+
+#### koi.jpg
+```
+Photorealistic photograph of three koi swimming just under the surface of a
+clear garden pond, seen from above at a slight angle, bodies overlapping in a
+loose diagonal, all three whole in frame. One kohaku with a brilliant white
+ground and deep lacquer-red markings, one showa with jet black over red and
+white, one solid metallic orange-gold, all with crisp saturated edges where the
+colours meet. Two short barbels at each mouth, clearly visible. Sunlight
+striking the water so the colours glow against dark green depth, water clear
+enough to read every scale, a few lily pads at the frame edge. High colour
+saturation, red and white against deep green, 100mm, f/5.6, 3:2.
+```
+Check: barbels present at the corners of each mouth, the feature that separates
+a koi from a goldfish. Colour blocks crisp and saturated, not muddy or pastel,
+and the white genuinely white rather than cream.
+
