@@ -7,6 +7,8 @@ import LEGAL from '@/lib/data/legalStatus.json';
 import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
 import { CODE_TO_SLUG } from '@/lib/data/stateSlugs';
+// Shared with the state pages, which need the same mid-sentence casing.
+import { inSentence } from '@/lib/utils/animalNames';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 import LegalStatusMap, { STATUS_BUCKETS, BUCKET_ORDER, bucketFor } from '@/components/legal/LegalStatusMap';
 
@@ -43,28 +45,6 @@ const GUIDE_TO_ANIMAL = Object.fromEntries(
 const ANIMALS_AZ = [...ANIMAL_IDS].sort((a, b) =>
   LEGAL.animals[a].name.localeCompare(LEGAL.animals[b].name),
 );
-
-// Several of the names lead with a proper noun. A blanket .toLowerCase()
-// turned those into "the bengal cat" mid-sentence and "Where Is the Bengal cat
-// Legal?" in the title, so the name is only lowered when its first word is not
-// one.
-//
-// A Set lookup on the first word rather than a regex prefix. The regex version
-// of this silently never matched: editing it through a shell heredoc left a
-// literal backspace character where \b was meant, so it required a backspace
-// after "Bengal" and every name fell through to toLowerCase().
-const PROPER_FIRST_WORDS = new Set([
-  'Bengal', 'Russian', 'Argentine', 'Nile', 'Burmese', 'Quaker', 'African', 'Asian', 'American',
-]);
-function inSentence(name) {
-  const [first, ...rest] = name.split(' ');
-  // Only the first word is lowered, and only when it is not a proper noun.
-  // Lowercasing the whole string flattened "Giant African millipede" into
-  // "giant african millipede", since the proper noun there is not the word the
-  // sentence position affects.
-  if (PROPER_FIRST_WORDS.has(first)) return name;
-  return [first.toLowerCase(), ...rest].join(' ');
-}
 
 function statusRank(status) {
   return { banned: 0, permit: 1, conditional: 2, restricted: 3, unclear: 4 }[status] ?? 5;

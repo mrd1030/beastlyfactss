@@ -89,6 +89,7 @@ const LEGAL = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/lib/data/legalStat
 // shipped, so the two are cross-checked in the test below.
 const PROPER_FIRST_WORDS = new Set([
   'Bengal', 'Russian', 'Argentine', 'Nile', 'Burmese', 'Quaker', 'African', 'Asian', 'American',
+  'California', 'Madagascar', "Jackson's",
 ]);
 const inSentence = (name) => {
   const [first, ...rest] = name.split(' ');

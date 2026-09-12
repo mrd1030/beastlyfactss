@@ -6,6 +6,7 @@ import LEGAL from '@/lib/data/legalStatus.json';
 import { STATUS_BUCKETS } from '@/components/legal/LegalStatusMap';
 import { forJurisdiction, lastVerified, TRACKED_ANIMAL_COUNT } from '@/lib/data/legalByState';
 import { SLUG_TO_CODE, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
+import { inSentence, joinList } from '@/lib/utils/animalNames';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 
 const SITE = 'https://beastlyfacts.com';
@@ -83,12 +84,16 @@ export default function ExoticPetLawsState() {
   // animals where there are few enough to list, which makes every one of these
   // 52 pages open on its own specifics rather than on the same sentence with a
   // state name swapped in.
-  const bannedNames = banned.slice(0, 4).map((r) => r.name.toLowerCase());
+  // inSentence rather than toLowerCase: several names lead with a proper noun,
+  // and "argentine black and white tegu" mid-sentence is wrong in a way a
+  // reader notices immediately.
+  const bannedNames = banned.slice(0, 3).map((r) => inSentence(r.name));
   const Place = `${inPlace.charAt(0).toUpperCase()}${inPlace.slice(1)}`;
   const opener = (() => {
     if (j.counts.banned === 0 && j.counts.permit === 0) {
       return `Nothing in ${inPlace} restricts any of the ${TRACKED_ANIMAL_COUNT} animals on this list outright, and none of them needs a permit. That is the answer rather than a gap: each one was read against ${isState ? 'the state code' : 'the code'} and nothing in it reaches them.`;
     }
+
     // plural() always prefixes the count, so anything that needs the number
     // woven into the verb ("one of them needs" / "eleven of them need") is
     // written out here rather than going through it.
@@ -99,15 +104,24 @@ export default function ExoticPetLawsState() {
       return `${Place} bans none of the ${TRACKED_ANIMAL_COUNT} animals on this list outright, but ${permitClause} a permit before the animal arrives.`;
     }
 
-    const listed = bannedNames.join(', ');
-    const andMore = j.counts.banned > 4 ? `, and ${j.counts.banned - 4} more` : '';
     const tail =
       j.counts.permit === 0
         ? 'None of the rest needs a permit.'
         : j.counts.permit === 1
           ? 'One more needs a permit.'
           : `${j.counts.permit} more need a permit.`;
-    return `${Place} bans ${plural(j.counts.banned, 'animal')} of the ${TRACKED_ANIMAL_COUNT} checked here, among them the ${listed}${andMore}. ${tail}`;
+
+    // Three shapes, because one template cannot carry a range from 1 to 40.
+    // "among them the serval" for a single ban reads as though there were
+    // others being withheld, and listing four names then saying "and 36 more"
+    // buries the number that matters behind the examples.
+    if (j.counts.banned === 1) {
+      return `${Place} bans one of the ${TRACKED_ANIMAL_COUNT} animals checked here, the ${bannedNames[0]}. ${tail}`;
+    }
+    if (j.counts.banned <= 3) {
+      return `${Place} bans ${j.counts.banned} of the ${TRACKED_ANIMAL_COUNT} animals checked here: the ${joinList(bannedNames)}. ${tail}`;
+    }
+    return `${Place} bans ${plural(j.counts.banned, 'animal')} of the ${TRACKED_ANIMAL_COUNT} checked here, the ${joinList(bannedNames)} among them. ${tail}`;
   })();
 
   return (
@@ -141,7 +155,7 @@ export default function ExoticPetLawsState() {
           </Link>
 
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
-            {`Exotic pet laws in ${j.name}`}
+            {`Exotic pet laws in ${inPlace}`}
           </h1>
           {/* Single string: see the hydration note on the index page. */}
           <p className="text-muted-foreground font-body leading-relaxed">{opener}</p>
@@ -172,7 +186,7 @@ export default function ExoticPetLawsState() {
           {restricted.length > 0 && (
             <section>
               <h2 className="font-display font-bold text-2xl text-foreground mb-1">
-                {`What ${j.name} restricts`}
+                {`What ${inPlace} restricts`}
               </h2>
               <p className="text-sm font-body text-muted-foreground mb-5">
                 {`${restricted.length} of ${TRACKED_ANIMAL_COUNT}, strictest first. Open one for the rule it comes from.`}
@@ -270,7 +284,7 @@ export default function ExoticPetLawsState() {
           {clear.length > 0 && (
             <section className="mt-12">
               <h2 className="font-display font-bold text-2xl text-foreground mb-1">
-                {`No restriction found in ${j.name}`}
+                {`No restriction found in ${inPlace}`}
               </h2>
               <p className="text-sm font-body text-muted-foreground mb-5">
                 {`${clear.length} of ${TRACKED_ANIMAL_COUNT}. Each was read against the same body of law as the entries above and nothing in it reaches them. Local ordinances and tenancy terms still apply and are not on this map.`}
@@ -318,7 +332,7 @@ export default function ExoticPetLawsState() {
               Before you rely on this
             </h2>
             <p className="text-sm font-body text-muted-foreground leading-relaxed">
-              {`This page covers ${isState ? 'state' : 'local'} law only. Cities and counties routinely prohibit what ${j.name} allows, and a lease or HOA agreement can bar an animal that every level of government permits. Check all three, and check them in that order, because the one most likely to stop you is the one closest to your front door.`}
+              {`This page covers ${isState ? 'state' : 'local'} law only. Cities and counties routinely prohibit what ${inPlace} allows, and a lease or HOA agreement can bar an animal that every level of government permits. Check all three, and check them in that order, because the one most likely to stop you is the one closest to your front door.`}
             </p>
             <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
               <Link to="/exotic-pet-laws/state/" className="text-sm font-body text-primary hover:underline">
