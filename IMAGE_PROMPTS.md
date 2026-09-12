@@ -2079,3 +2079,38 @@ shallow depth of field on the nearest fish, pale sand and green palette, 100mm
 macro, f/5.6, 3:2.
 ```
 
+## Angelfish and neon tetra, 1 file each
+
+From the second article batch. Both species' other files are correct and must
+not be regenerated.
+
+```
+angelfish-feeding.jpg
+Photorealistic underwater photograph of a freshwater angelfish rising to take a
+sinking flake just under the water surface, full side view, whole fish in frame
+including the fin tips. Tall disc-shaped body flattened side to side and taller
+than it is long, a very tall triangular dorsal fin and matching anal fin
+sweeping back to fine points, a pair of long thread-like ventral filaments
+trailing below, silver body crossed by four vertical black bars including one
+through the eye. A few flakes drifting down through the water, planted tank soft
+behind. Bright clean aquarium light from above, silver and green palette, camera
+level with the fish, 60mm macro, f/5.6, 3:2.
+```
+Check: tall thin disc with trailing filaments. Not a rounded short-finned
+cichlid, which is what the current frame shows, and not a discus.
+
+```
+neon-tetra-health-issues.jpg
+Photorealistic underwater close-up of a single healthy neon tetra in profile
+against a dark planted background, whole fish in frame, fins held open and
+undamaged. An iridescent blue-green stripe running from the eye back to the
+adipose fin along the upper half, and a red stripe that begins level with the
+middle of the body and runs back to the tail base only, leaving the front half
+of the belly plain silver-white. Small deep body, forked transparent tail. Soft
+side light against near-black, blue and red against deep green, 100mm macro,
+f/5.6, 3:2.
+```
+Check: the red must start mid-body, not at the gill. A red stripe running the
+full length from head to tail is a cardinal tetra, which is what the current
+frame shows and which the site covers separately.
+
