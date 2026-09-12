@@ -130,6 +130,27 @@ Lower confidence, worth a second opinion before spending art on them:
 - `ferret.jpg`: reads wild, in tall grass with a black-footed ferret's mask.
   Possibly fine for a sable domestic ferret, but it is not a pet photograph.
 
+Second pass, 2026-09-12, 42 more heroes opened, 103 of 183 now checked:
+
+- **`angelfish.jpg`** was a marine reef fish photographed over stony coral.
+  **Replaced 2026-09-12** with a freshwater *Pterophyllum*: tall silver disc,
+  trailing dorsal, anal and ventral fins, four vertical bars, planted tank.
+- **`oscar.jpg`** had no caudal ocellus and read closer to a spotted tilapia.
+  **Replaced 2026-09-12** with a tiger oscar carrying the orange-ringed black
+  spot at the tail base.
+- **`goldfish.jpg`** appeared to carry barbels at the mouth, which would make
+  it a koi. **Replaced 2026-09-12** with a common goldfish, plain snout, no
+  barbels, single caudal fin.
+- `neon-tetra.jpg`: the red stripe runs the full length of the body, which is a
+  cardinal tetra. On a neon the red starts mid-body. Medium confidence.
+- `guppy.jpg`: body too deep and stocky, reads closer to a platy. Low
+  confidence, the tail is plausibly a fancy guppy's.
+- `veiled-chameleon.jpg`: species correct, but the raised front foot renders as
+  a smooth stump instead of the split mitten toes. Anatomy defect, not a
+  species error.
+- `rabbit.jpg`: a wild-type agouti rabbit in a meadow, reading wild rather than
+  pet. The weakest flag here, since domestic rabbits come in that colour.
+
 Checked and correct, for the record: all six dog and cat breeds sampled,
 every parrot and finch, the turtles and tortoises, leopard gecko, gargoyle
 gecko, African fat-tail, mourning gecko, fire skink, uromastyx, green anole,
@@ -137,7 +158,13 @@ tegu, ackie monitor, leaf-tailed gecko, milk snake, corn snake, garter snake,
 rosy boa, burmese python, snapping turtle, tiger salamander, axolotl, betta,
 pacman frog, White's tree frog, hermit crab, millipede, stick insect,
 tarantula, degu, chinchilla, rat, mouse, hamster, sugar glider, flying
-squirrel.
+squirrel Second pass adds: bearded dragon, blue-tongue
+skink, green iguana, tokay gecko, the Jackson's chameleon filed as
+`chameleon.jpg`, koi, bristlenose pleco, platy, swordtail, discus, zebra danio,
+molly, guinea pig, capybara, fennec fox, serval, prairie dog, budgie,
+cockatiel, cockatoo, zebra finch, jumping spider, praying mantis, green anole
+legal, giant millipede legal, argentine tegu legal, axolotl legal, red-footed
+tortoise and sugar glider legal.
 
 When these get redone, give the prompt file a species-accuracy block for the
 hub set the way the legal set has one. Every miss above is a species the

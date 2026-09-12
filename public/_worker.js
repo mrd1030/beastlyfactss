@@ -339,6 +339,16 @@ const FACT_IMAGES = {
   294: '/assets/facts/pygmy-marmoset.jpg',
   295: '/assets/facts/barreleye-fish.jpg',
   296: '/assets/facts/basilisk-lizard.jpg',
+  315: '/assets/facts/orca.jpg',
+  316: '/assets/facts/pembroke-welsh-corgi.jpg',
+  317: '/assets/facts/short-beaked-echidna.jpg',
+  318: '/assets/facts/atlantic-puffin.jpg',
+  319: '/assets/facts/king-cobra.jpg',
+  320: '/assets/facts/satin-bowerbird.jpg',
+  321: '/assets/facts/siamese-cat.jpg',
+  322: '/assets/facts/aardvark.jpg',
+  323: '/assets/facts/dumbo-octopus.jpg',
+  324: '/assets/facts/horned-lizard.jpg',
 };
 
 function imageFor(fact) {

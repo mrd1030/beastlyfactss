@@ -80,28 +80,35 @@ directly. Each fact got its own photo in `public/assets/facts/`, with
 **2026-07-27: Toco Toucan, Beagle, Red Fox, Giant Manta Ray, Frilled-necked
 Lizard, Slow Loris.** Completed the same day, same route.
 
-## 2026-08-31 run: 5 facts drafted, awaiting images
+## Facts awaiting images
 
-Ready for the site owner to generate photos and add to facts.js.
+None. The ten facts drafted in the 2026-08-31 and 2026-09-07 runs were promoted
+to `facts.js` on 2026-09-12 as ids 315 to 324: orca, Pembroke Welsh Corgi,
+short-beaked echidna, Atlantic puffin, king cobra, satin bowerbird, Siamese cat,
+aardvark, dumbo octopus and horned lizard. Photos are in
+`public/assets/facts/` under the animal's name, and each id is wired into
+FACT_IMAGES in both `src/lib/data/factImages.js` and `public/_worker.js`.
 
-1. **Orca** (Ocean) - Killer Whale Family Trees. Orca pods are led by a matriarch, the oldest female, and her sons and daughters stay by her side for life. Each pod also has its own dialect of clicks and whistles that calves spend years learning, and these vocal traditions can stay nearly unchanged for decades. Visual hook: an orca matriarch swimming alongside two smaller orcas in tight formation.
-2. **Pembroke Welsh Corgi** (Dogs & Cats) - The Copied Gene Legs. A corgi's short legs come from an extra copy of a gene called FGF4 that got inserted into a new spot in the dog genome, causing the leg bones to stop growing early. The same duplicated gene shows up in at least 19 short legged breeds, including dachshunds and basset hounds. Visual hook: a corgi standing side on so its short legs and long body are obvious against its normal sized head.
-3. **Short-Beaked Echidna** (Weird & Wonderful) - The Land Animal That Senses Electricity. Echidnas have no teeth at all and grind up ants and termites with hard pads in their mouth after flicking a sticky tongue in and out up to 100 times a minute. Their snout is also packed with electroreceptors that pick up the faint electrical signals of prey underground, a sense usually only found in animals that live in water. Visual hook: a close up of an echidna's long snout probing into leaf litter or soil.
-4. **Atlantic Puffin** (Birds) - Same Burrow, Same Mate. Atlantic puffins come back to the exact same burrow year after year, often reuniting with the same partner for 15 to 20 years even though the pair spends most of the year apart at sea. When they find each other again they tap bills and preen each other before settling back in to raise a single chick. Visual hook: a puffin pair standing bill to bill at the mouth of a grassy cliffside burrow.
-5. **King Cobra** (Reptiles) - The Snake That Builds a Nest. The female king cobra is the only snake known to build a nest, spending days dragging leaves into a pile and compacting them into a waterproof mound that can stand almost a meter tall. She then lays her eggs inside and stays close by to guard them until they hatch. Visual hook: a king cobra coiled protectively beside a large mound of compacted leaves.
+Two of the ten were regenerated before they were accepted. The orca came back
+with a bull's tall erect dorsal fin when the fact is that the pod is led by a
+matriarch, and the satin bowerbird came back with a roofed hut, which is a
+maypole bower built by a different species, rather than the two-walled roofless
+avenue a satin builds. Both prompts in IMAGE_PROMPTS.md carry the corrected
+wording, so a future regeneration starts from the version that worked.
 
-## 2026-09-07 run: 5 facts drafted, awaiting images
-
-Ready for the site owner to generate photos and add to facts.js.
-
-1. **Bowerbird** (Birds) - The Blue Collector. Male satin bowerbirds build a twig avenue called a bower purely to impress mates, it is not a nest. They decorate it with objects and show a strong preference for blue, even stealing blue items from rival bowers, and females favor males whose bowers are bluer. Visual hook: a male satin bowerbird's twig bower scattered with blue bottle caps, flowers, and feathers.
-2. **Siamese Cat** (Dogs & Cats) - Born Blank, Colored by Cold. Siamese kittens are born nearly all white because a mutation in their pigment enzyme only works in cooler body temperatures. As the ears, face, paws, and tail cool down after birth, those extremities darken into the breed's signature points while the warmer torso stays pale. Visual hook: a Siamese kitten showing the contrast between its still-pale body and its darkening ear and paw tips.
-3. **Aardvark** (Mammals) - Teeth Like Tubes. Aardvarks are the only living species in their entire mammalian order, and their teeth are unlike any other mammal's, they have no enamel, no roots, and keep growing throughout life as bundles of tiny hexagonal tubes. At night they use a long sticky tongue, roughly a foot long, to mop up ants and termites by the thousands. Visual hook: an aardvark's long snout and tongue reaching into a torn open termite mound at night.
-4. **Dumbo Octopus** (Ocean) - The Deepest Swimmer. Dumbo octopuses get their name from the two ear like fins on their mantle that flap to propel them through the water. They live deeper than any other known octopus, with one confirmed at nearly 7,000 meters down, in the crushing cold of the hadal zone. Visual hook: a small translucent dumbo octopus with its ear-like fins spread, drifting in the dark deep sea.
-5. **Horned Lizard** (Reptiles) - The Eyes That Bleed on Command. When a coyote or other canine gets too close, a horned lizard can rupture blood vessels near its eyes and shoot a thin stream of blood several feet, loaded with chemicals from the ants it eats that canines find repulsive. The trick barely works on birds, so it is a defense aimed squarely at four legged hunters. Visual hook: a horned lizard mid-defense with a thin jet of blood arcing from near its eye toward an out of frame predator.
+The bowerbird's `animal` field reads "Satin Bowerbird" rather than the drafted
+"Bowerbird", to match the fact text, which is specifically about satin
+bowerbirds, and the photo filename. No Beastfile matches any of the ten by
+name, so nothing moved off its authored fallback.
 
 ## Related
 
 Beastlypedia has its own separate gap list in `BEASTLYPEDIA_FACT_GAPS.md`, for
-facts that are blocked on photos *and* tied to a specific Beastfile page. Three
-Gaboon viper facts are outstanding there.
+facts that are blocked on photos *and* tied to a specific Beastfile page. It has
+nothing outstanding: the three Gaboon viper facts it used to hold shipped on
+2026-08-12 as ids 282 to 286. Corrected 2026-09-12, this line still claimed they
+were waiting.
+
+Full prompts for the ten facts above are in IMAGE_PROMPTS.md under "Fact photos
+awaiting art". Eight frames were delivered and accepted 2026-09-12; the orca and
+the satin bowerbird came back wrong and their prompts carry corrected wording.

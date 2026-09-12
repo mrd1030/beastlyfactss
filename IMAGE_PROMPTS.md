@@ -1580,3 +1580,214 @@ level, 100mm macro, f/5.6, 3:2.
 Check: armoured plates and an arched stout body. Not a minnow, barb or gudgeon:
 no scaled flanks, no torpedo body, no long trailing whiskers.
 
+#### oscar.jpg
+```
+Photorealistic photograph of an adult tiger oscar hanging in midwater in a
+planted aquarium, full side profile, whole fish in frame including the tail.
+Deep oval heavy-bodied cichlid with a large blunt head and thick lips, dark
+charcoal ground marbled with irregular red-orange banding, and a black eyespot
+ringed in bright orange at the base of the tail where the caudal fin meets the
+body. Long low dorsal and anal fins running back to the tail. Driftwood and
+broad-leaved plants behind, bright clean aquarium light, bronze and green
+palette, camera level with the fish, 60mm macro, f/5.6, 3:2.
+```
+Check: the orange-ringed black spot at the tail base is the whole identification
+and must be unmistakable. Not a tilapia, which is silver-grey with vertical bars
+and no eyespot, and not a generic spotted cichlid.
+
+#### goldfish.jpg
+```
+Photorealistic photograph of a single common goldfish in full side profile in a
+bright planted aquarium, whole fish in frame, swimming left to right. Deep
+orange metallic scales grading to pale on the belly, a short single caudal fin,
+and a plain rounded snout with a small terminal mouth and no whiskers of any
+kind at the corners. Green stem plants and pale gravel behind, clean daylight
+aquarium lighting, orange and green palette, camera level with the fish,
+60mm macro, f/5.6, 3:2. Absolutely no barbels.
+```
+Check: nothing whisker-like anywhere near the mouth. A pair of barbels at the
+corners of the mouth makes it a koi, which is the exact difference the koi
+versus goldfish guide turns on, and the previous frame appeared to have them.
+Not a fancy goldfish either: no double tail, no head growth, no telescope eyes.
+
+#### angelfish.jpg
+```
+Photorealistic photograph of a single freshwater angelfish in full side profile
+in a planted freshwater aquarium, whole fish in frame including the fin tips,
+hanging almost still in midwater. Tall disc-shaped body flattened side to side
+and clearly taller than it is long, a very tall triangular dorsal fin and a
+matching anal fin sweeping back to fine points, a pair of long thread-like
+ventral filaments trailing below, and a silver body crossed by four vertical
+black bars, one running down through the eye and one at the base of the tail.
+Tall ribbon-leaved plants and a dark background behind, soft diffused aquarium
+light from above, silver and deep green palette, camera level with the fish,
+60mm macro, f/5.6, 3:2.
+```
+Check: freshwater Pterophyllum, so a tall thin disc with trailing fins and
+vertical bars in a planted tank. Never a marine angelfish, never coral, reef
+rock, open blue water or sunbeams through saltwater, which is what the previous
+frame showed. Not a discus either: a discus is a rounded disc with short fins
+and no trailing filaments, and it has its own hero.
+
+
+
+---
+
+# Fact photos awaiting art, `public/assets/facts/`, 1600x1067
+
+The ten facts drafted but held out of `facts.js` because no photo exists, listed
+in NEEDS_IMAGE.md under the 2026-08-31 and 2026-09-07 runs. Every fact needs its
+own photo, no reuse from a guide hero, a Beastfile hero or another fact: the
+photo is the whole interaction on a Beastfile page, where clicking a fact opens
+it in a lightbox.
+
+Each prompt names the identifying features in the body and carries a check line,
+the same shape the legal set uses, because the 2026-09-12 hero skim found eight
+guide images showing the wrong species. No hands, no people, no text in frame.
+
+Promotion steps once a photo lands are in BEASTLYPEDIA_FACT_GAPS.md.
+
+Status 2026-09-12: eight frames delivered and accepted. The orca came back with
+a bull's dorsal fin and the bowerbird with a maypole hut instead of an avenue;
+both prompts below carry the corrected wording.
+
+#### orca.jpg
+```
+Photorealistic photograph of an adult female orca swimming at the surface with
+two smaller orcas tucked close behind and slightly below her, all three
+travelling in the same direction in tight formation. Her dorsal fin is short and
+strongly falcate, curved backward like a sickle and no more than about half the
+height of a bull's tall erect triangular fin. Crisp white oval eye patch behind
+each eye, white lower jaw and flank patch, pale grey saddle behind the dorsal
+fin, glossy black back beaded with water. Cold open ocean, low grey daylight,
+slate and white palette, camera at water level, 200mm, f/4, 3:2.
+No tall straight dorsal fins anywhere in the frame, since that is an adult male.
+```
+Check: falcate curved fin on the lead animal, because the matriarch is female
+and the fact is that she leads. Not a false killer whale, which has no white
+patches, and not a pilot whale, which has a bulbous head and a broad low fin.
+
+#### pembroke-welsh-corgi.jpg
+```
+Photorealistic photograph of a Pembroke Welsh Corgi standing in full profile on
+short grass, side on to the camera, legs straight and body level, whole dog in
+frame. Long deep body carried on very short straight legs, normal-sized fox-like
+head with large upright pointed ears, red and white coat with a white chest
+blaze, no tail. Bright overcast daylight, green and rust palette, camera at the
+dog's chest height so the leg-to-body ratio reads, 85mm, f/4, 3:2.
+```
+Check: no tail and upright pointed ears. A Cardigan has a long bushy tail and
+rounded ears. Legs short but straight and sound, not bowed.
+
+#### short-beaked-echidna.jpg
+```
+Photorealistic photograph of a short-beaked echidna probing its snout into damp
+leaf litter and loose soil, body three-quarter on, head low and working. Short
+bare tubular snout with tiny nostrils at the tip, very small dark eye, stocky
+rounded body covered in coarse brown fur with cream-and-black tipped spines
+lying back over it, heavy clawed digging forefeet. Soft dappled forest floor
+light, brown and olive palette, camera down at ground level close to the snout,
+100mm macro, f/5.6, 3:2.
+```
+Check: spines short and interspersed with visible fur, snout bare and tubular.
+Not a porcupine, not a hedgehog.
+
+#### atlantic-puffin.jpg
+```
+Photorealistic photograph of two Atlantic puffins standing bill to bill at the
+mouth of a grassy clifftop burrow, heads angled together mid-billing, bodies
+upright. Breeding-season bill, deep and triangular and banded in orange, yellow
+and blue-grey with a fine pale line, white face with a grey eye patch and the
+red-rimmed eye ornament, black crown and back, white breast, bright orange
+webbed feet. Sea thrift and worn turf at the burrow entrance, soft coastal
+light, green and orange palette, camera at bird height, 300mm, f/5.6, 3:2.
+```
+Check: white face, banded triangular bill, orange feet. Not a tufted puffin,
+which has a dark face and straw-coloured head plumes.
+
+#### king-cobra.jpg
+```
+Photorealistic photograph of a king cobra coiled low beside a large mound of
+compacted dead leaves on a forest floor, head raised only slightly and turned
+toward the mound, hood not spread. Olive-brown to tan body with faint pale
+chevrons across the back, large smooth-scaled head noticeably wider than the
+neck with a pair of big occipital shields behind the crown, plain narrow hood,
+round eye with a round pupil. Humid lowland forest, warm filtered green light,
+olive and leaf-brown palette, camera low and level with the nest, 135mm, f/4,
+3:2.
+```
+Check: narrow plain hood and paired occipital shields. Not a spectacled cobra
+with a broad marked hood. The mound must read as deliberately piled, not as
+scattered litter.
+
+#### satin-bowerbird.jpg
+```
+Photorealistic photograph of a male satin bowerbird standing on the cleared
+court at one open end of his bower, holding a blue flower in his bill. The bower
+is an avenue: two separate parallel walls of thin vertical twigs pushed into the
+ground about a hand's width apart, forming a short roofless corridor open at
+both ends, with daylight and forest floor visible straight through the gap. The
+flat court in front of it is scattered with blue bottle caps, blue flowers, blue
+feathers and blue plastic fragments. The bird is glossy blue-black with a
+violet-blue iris and a pale horn-coloured bill. Dappled understorey light, deep
+green and blue palette, camera at ground level slightly off the corridor's axis
+so both walls and the gap between them are readable, 200mm, f/4, 3:2.
+```
+Check: two distinct walls with a see-through gap between them and no roof. Not a
+dome, hut, tunnel or teepee, which is a maypole bower built by a different
+species, and never a cup nest or anything in a tree. The glossy blue-black bird
+is the adult male; the olive-green one is the female and the wrong subject.
+
+#### siamese-cat.jpg
+```
+Photorealistic photograph of a Siamese kitten a few weeks old sitting on a pale
+blanket, front three-quarter view, one forepaw forward. Body still pale cream
+with the points only beginning to come in: ears shading to dark seal at the
+edges, a faint smudge of a mask around the nose, darkening on the paw tips and
+the tail. Deep blue almond eyes, wedge-shaped head, large ears. Soft bright
+window light, cream and taupe palette, camera at the kitten's eye level, 85mm,
+f/2.8, 3:2.
+```
+Check: the torso must read clearly paler than the ears and paws. A finished
+adult Siamese does not show the fact.
+
+#### aardvark.jpg
+```
+Photorealistic photograph of an aardvark at night with its snout pushed into a
+torn-open termite mound, long sticky tongue extended into the breach, body in
+three-quarter view. Long tubular pig-like snout, very long upright rabbit-like
+ears, arched back, thick tapering tail, sparse yellowish-grey hair over pinkish
+skin, heavy spade-like claws on the forefeet. Dry savanna at night, warm
+torchlight falling on the animal against near-black, dust and umber palette,
+camera low and ahead of the shoulder, 135mm, f/4, 3:2.
+```
+Check: long ears, arched back, thick tail, sparse hair. Not a giant anteater,
+not a pangolin.
+
+#### dumbo-octopus.jpg
+```
+Photorealistic photograph of a small dumbo octopus drifting in open black water,
+photographed from slightly below and in front, the two ear-like fins on the
+mantle held out mid-flap. Translucent pinkish gelatinous body, large dark eyes,
+short arms joined by a continuous web so the underside reads as a soft umbrella,
+no long trailing arms. Lit by a single cold ROV lamp from the upper left,
+everything beyond the animal falling to pure black, marine snow drifting through
+the beam, pink and black palette, 60mm, f/8, 3:2.
+```
+Check: paired fins above the eyes, webbed umbrella of short arms. No coral, rock
+or sand anywhere in frame, since this animal lives kilometres above any of it.
+
+#### horned-lizard.jpg
+```
+Photorealistic photograph of a Texas horned lizard on sun-baked sandy ground,
+body braced and head turned, a thin jet of blood arcing from the corner of one
+eye toward the edge of the frame. Flattened round disc-shaped body, a crown of
+two long central horns and shorter spines at the back of the head, two rows of
+fringe scales along each flank, tan and rust camouflage banding with a pale
+dorsal line. Hard midday desert light, ochre and rust palette, camera at ground
+level slightly ahead of the animal, 100mm macro, f/5.6, 3:2.
+```
+Check: flat round body, crown of horns at the back of the skull. Not a thorny
+devil, not a frilled lizard. Thin arcing stream, not a spray, predator out of
+frame.
+
