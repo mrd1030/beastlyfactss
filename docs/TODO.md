@@ -151,6 +151,29 @@ Second pass, 2026-09-12, 42 more heroes opened, 103 of 183 now checked:
 - `rabbit.jpg`: a wild-type agouti rabbit in a meadow, reading wild rather than
   pet. The weakest flag here, since domestic rabbits come in that colour.
 
+Third pass, 2026-09-12, the overview composites and more legal heroes, 133 of
+183 now checked. Every miss here is a panel inside a multi-species composite, so
+fixing one means regenerating that whole grid, not swapping a single frame:
+
+- **`five-beginner-reptiles-overview.jpg`**: the fifth panel is a banded snake,
+  a milk snake or kingsnake. The article's fifth species is the corn snake,
+  which is saddled rather than banded (verified against the H2s in the mdx).
+- **`koi-conure-slider-scorpion-overview.jpg`**: the scorpion panel has the same
+  bright orange legs as the two emperor scorpion heroes. Same fault, third file.
+- **`sulcata-hedgehog-lovebird-guppy-overview.jpg`**: the hedgehog panel is a
+  European hedgehog, the same error as the standalone hero replaced today.
+- **`gargoyle-mourning-african-fat-tail-gecko-overview.jpg`**: the third panel
+  has a knobbed head and the wrong build for an African fat-tailed gecko, which
+  is smooth-headed with a chunky banded body. Closest to a knob-tailed gecko.
+
+Worth knowing before assuming a species is cursed: the composites carry the
+**correct** version of several animals whose standalone hero was wrong. The
+freshwater angelfish in `ackie-milksnake-mhc-angelfish-overview.jpg`, the
+corydoras school in `jacksonschameleon-canary-millipede-corydoras-overview.jpg`,
+the hissing cockroach in that same ackie composite, and the hognose in
+`veiled-chameleon-ferret-hognose-overview.jpg` are all right. These are
+per-image failures, not per-species ones.
+
 Checked and correct, for the record: all six dog and cat breeds sampled,
 every parrot and finch, the turtles and tortoises, leopard gecko, gargoyle
 gecko, African fat-tail, mourning gecko, fire skink, uromastyx, green anole,
