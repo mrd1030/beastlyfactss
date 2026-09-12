@@ -44,14 +44,23 @@ export default function BrowseRow({
     </button>
   ) : null;
 
+  // The wrapper carries the size and the flex-shrink-0, not the image.
+  // LocalImage renders <picture><img/></picture>, so a class on the image lands
+  // inside the picture while the picture itself stays the flex item and is free
+  // to shrink. With a long subtitle pushing the row, that squeezed a 40px
+  // thumbnail to 22px on the guides list while the encyclopedia, whose
+  // subtitles are short scientific names, never generated enough pressure to
+  // show it.
   const thumb = image ? (
-    <LocalImage
-      src={image}
-      alt={name}
-      loading="lazy"
-      variant="card"
-      className={`w-10 h-10 rounded-lg object-cover flex-shrink-0${available ? '' : ' grayscale'}`}
-    />
+    <div className="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0">
+      <LocalImage
+        src={image}
+        alt={name}
+        loading="lazy"
+        variant="card"
+        className={`w-full h-full object-cover${available ? '' : ' grayscale'}`}
+      />
+    </div>
   ) : (
     <span className={`text-xl flex-shrink-0${available ? '' : ' grayscale'}`}>{emoji}</span>
   );
