@@ -232,18 +232,25 @@ holds 770 article heroes, about seven per species (cost, handling, health
 issues, tank setup, feeding, enrichment, plus a tank-setup infographic). Three
 species sampled first, chosen because their guide hero had already failed:
 
+**Status: hedgehog and corydoras fixed 2026-09-12, emperor scorpion still open.**
+Six replacements installed, the old frames archived in
+`public/assets/images/alternates/` with a README. The four scorpion files are
+waiting on art; prompts for all ten are in IMAGE_PROMPTS.md under "Article hero
+fixes".
+
 - **Emperor scorpion: 4 of 6 wrong.** `cost`, `handling`, `health-issues` and
   `tank-setup` all show the orange or yellow legs and, in two cases, the second
   pair of pincers no scorpion has. `feeding` and `enrichment` are correct
   glossy black animals. The infographic is fine.
-- **Hedgehog: at least 1 of 5 wrong, 2 more doubtful.** `cost` is plainly the
-  European hedgehog, dark face and dark spines. `handling` and `feeding` lean
-  the same way in dim light. `health-issues` and `enrichment` are clearly the
-  African pygmy.
-- **Corydoras: 2 of 6 wrong.** `health-issues` is a wide-mouthed catfish with
-  long whiskers, closest to a channel catfish, and `handling` is a group of
-  elongated forked-tail fish with a large catfish above them. `tank-setup`,
-  `enrichment` and `feeding` are correct, and `cost` is borderline.
+- **Hedgehog: 3 replaced.** `cost` was plainly the European hedgehog and
+  `handling` and `feeding` leaned the same way. All three now show the pygmy's
+  banded cream quills, white face and pink-brown snout. `health-issues` and
+  `enrichment` were already correct and were left alone.
+- **Corydoras: 3 replaced.** `health-issues` was a wide-mouthed catfish with
+  long whiskers and `handling` was a group of elongated forked-tail fish with a
+  large catfish above them. `feeding` was the right species but shipped at
+  512x279, so it was reshot for size at the same time. `tank-setup` and
+  `enrichment` were already correct; `cost` is borderline and was left.
 
 The important finding is that **the error is per image, not per species**. Half
 of a species' set can be right and half wrong, so there is no shortcut of
@@ -251,6 +258,10 @@ replacing a whole species at once, and no way to infer a set from its guide
 hero. Nineteen images checked so far, seven wrong.
 
 ### Separate from species: 12 badly undersized files
+
+**Deferred 2026-09-12 by Mike's call.** One of the twelve, the corydoras feeding
+frame, was reshot anyway because its species fix and its size fix were the same
+job. The other eleven stand.
 
 A dimension scan of all 778 files (cheap, no image reading) found twelve at
 512px wide, against the 1168px house size, so they upscale soft in every slot
