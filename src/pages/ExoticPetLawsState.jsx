@@ -5,6 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import { STATUS_BUCKETS } from '@/components/legal/LegalStatusMap';
 import { forJurisdiction, TRACKED_ANIMAL_COUNT } from '@/lib/data/legalByState';
+import { notesFor } from '@/lib/data/stateNotes';
 import { describeVerified, formatDay } from '@/lib/utils/verifiedDates';
 import CitationBox from '@/components/legal/CitationBox';
 import { SLUG_TO_CODE, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
@@ -91,6 +92,7 @@ export default function ExoticPetLawsState() {
   // more here than elsewhere because the citation box below puts this string
   // into text other people publish.
   const verified = describeVerified(j.rows.map((r) => r.entry?.verifiedOn));
+  const notes = notesFor(code);
 
   const isState = j.level === 'state';
   // "in Texas" works; "in New York City" works; "in the District of Columbia"
@@ -221,6 +223,23 @@ export default function ExoticPetLawsState() {
 
       <div className="px-4 sm:px-6 pb-16">
         <div className="max-w-4xl mx-auto">
+          {notes && (
+            <section className="mb-12">
+              <h2 className="font-display font-bold text-2xl text-foreground mb-4">
+                {`How ${inPlace} decides`}
+              </h2>
+              <div className="space-y-4 max-w-3xl">
+                {notes.map((para, i) => (
+                  // Index keys are safe here: the array is static content, never
+                  // reordered or filtered.
+                  <p key={i} className="font-body text-muted-foreground leading-relaxed">
+                    {para}
+                  </p>
+                ))}
+              </div>
+            </section>
+          )}
+
           {restricted.length > 0 && (
             <section>
               <h2 className="font-display font-bold text-2xl text-foreground mb-1">
