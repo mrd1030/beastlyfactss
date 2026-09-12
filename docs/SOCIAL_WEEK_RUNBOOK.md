@@ -263,6 +263,23 @@ The 9/5 to 9/11 week is uploaded and queued on all three platforms, marked in
 the ledger (X 84 facts / 48 articles, IG 21 / 60, Threads 43 / 22), with
 `nextStart` on all three at 2026-09-12.
 
+The 9/12 to 9/18 week is uploaded and queued on X and Threads, 21 posts
+each, marked in the ledger (X 98 facts / 48 articles, Threads 57 / 29),
+with `nextStart` on both at 2026-09-19.
+
+Instagram was skipped for the week of 9/12 to 9/18, deliberately, not
+missed. X and Threads ran that week and Pinterest was already queued
+through 9/18. Nothing was marked for IG, since nothing posted, so its
+whole pool is untouched, but its `nextStart` was moved forward to
+2026-09-19 anyway to line up with the other three. That is the one case
+where advancing `nextStart` without marking anything is correct: the date
+pointer tracks where the calendar resumes, the marks track what got
+consumed, and a skipped week moves one without the other.
+
+X's shape changed again that week: 2 single-liners plus 1 article thread a
+day, 21 posts. The 9/5 week ran 4 singles plus a thread at 35, which was a
+test of volume rather than the standing rate.
+
 Pinterest's first week is built for 9/12 to 9/18, 14 pins at 2 a day, batch in
 `social-batches/pinterest-week1.json`. Seven care pins drawn from tank setup
 guides, seven fact pins. Care guides were the obvious source, but the

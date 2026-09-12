@@ -226,116 +226,172 @@
         "date": "2026-09-04"
       },
       {
-        "id": 64,
+        "id": 194,
         "date": "2026-09-05"
       },
       {
-        "id": 65,
+        "id": 130,
         "date": "2026-09-05"
       },
       {
-        "id": 72,
+        "id": 177,
         "date": "2026-09-05"
       },
       {
-        "id": 77,
+        "id": 173,
         "date": "2026-09-05"
       },
       {
-        "id": 78,
+        "id": 164,
         "date": "2026-09-06"
       },
       {
-        "id": 80,
+        "id": 185,
         "date": "2026-09-06"
       },
       {
-        "id": 178,
+        "id": 152,
         "date": "2026-09-06"
       },
       {
-        "id": 101,
+        "id": 146,
         "date": "2026-09-06"
       },
       {
-        "id": 106,
+        "id": 131,
         "date": "2026-09-07"
       },
       {
-        "id": 117,
+        "id": 183,
         "date": "2026-09-07"
       },
       {
-        "id": 121,
+        "id": 291,
         "date": "2026-09-07"
       },
       {
-        "id": 122,
+        "id": 163,
         "date": "2026-09-07"
       },
       {
-        "id": 125,
+        "id": 274,
         "date": "2026-09-08"
       },
       {
-        "id": 129,
+        "id": 37,
         "date": "2026-09-08"
+      },
+      {
+        "id": 280,
+        "date": "2026-09-08"
+      },
+      {
+        "id": 172,
+        "date": "2026-09-08"
+      },
+      {
+        "id": 296,
+        "date": "2026-09-09"
+      },
+      {
+        "id": 176,
+        "date": "2026-09-09"
+      },
+      {
+        "id": 269,
+        "date": "2026-09-09"
+      },
+      {
+        "id": 155,
+        "date": "2026-09-09"
+      },
+      {
+        "id": 284,
+        "date": "2026-09-10"
+      },
+      {
+        "id": 295,
+        "date": "2026-09-10"
+      },
+      {
+        "id": 292,
+        "date": "2026-09-10"
+      },
+      {
+        "id": 103,
+        "date": "2026-09-10"
+      },
+      {
+        "id": 175,
+        "date": "2026-09-11"
+      },
+      {
+        "id": 187,
+        "date": "2026-09-11"
+      },
+      {
+        "id": 272,
+        "date": "2026-09-11"
+      },
+      {
+        "id": 278,
+        "date": "2026-09-11"
       },
       {
         "id": 132,
-        "date": "2026-09-08"
-      },
-      {
-        "id": 133,
-        "date": "2026-09-08"
+        "date": "2026-09-12"
       },
       {
         "id": 134,
-        "date": "2026-09-09"
+        "date": "2026-09-12"
       },
       {
-        "id": 135,
-        "date": "2026-09-09"
+        "id": 129,
+        "date": "2026-09-13"
+      },
+      {
+        "id": 121,
+        "date": "2026-09-13"
       },
       {
         "id": 137,
-        "date": "2026-09-09"
+        "date": "2026-09-14"
       },
       {
-        "id": 139,
-        "date": "2026-09-09"
+        "id": 122,
+        "date": "2026-09-14"
       },
       {
-        "id": 140,
-        "date": "2026-09-10"
+        "id": 64,
+        "date": "2026-09-15"
       },
       {
-        "id": 141,
-        "date": "2026-09-10"
+        "id": 78,
+        "date": "2026-09-15"
       },
       {
-        "id": 142,
-        "date": "2026-09-10"
+        "id": 72,
+        "date": "2026-09-16"
       },
       {
-        "id": 143,
-        "date": "2026-09-10"
+        "id": 86,
+        "date": "2026-09-16"
       },
       {
-        "id": 144,
-        "date": "2026-09-11"
+        "id": 117,
+        "date": "2026-09-17"
       },
       {
-        "id": 179,
-        "date": "2026-09-11"
+        "id": 108,
+        "date": "2026-09-17"
       },
       {
-        "id": 180,
-        "date": "2026-09-11"
+        "id": 74,
+        "date": "2026-09-18"
       },
       {
-        "id": 182,
-        "date": "2026-09-11"
+        "id": 62,
+        "date": "2026-09-18"
       }
     ],
     "articles": [
@@ -476,63 +532,63 @@
         "date": "2026-09-04"
       },
       {
-        "file": "content/guides/rosy-boa-health-issues-guide.mdx",
+        "file": "content/guides/ferret-cost-guide.mdx",
         "date": "2026-09-05"
       },
       {
-        "file": "content/guides/red-footed-tortoise-health-issues-guide.mdx",
-        "date": "2026-09-05"
-      },
-      {
-        "file": "content/guides/mouse-health-issues-guide.mdx",
+        "file": "content/guides/sulcata-tortoise-cost-guide.mdx",
         "date": "2026-09-06"
       },
       {
-        "file": "content/guides/rat-health-issues-guide.mdx",
-        "date": "2026-09-06"
-      },
-      {
-        "file": "content/guides/parrotlet-health-issues-guide.mdx",
+        "file": "content/guides/goldfish-health-issues-guide.mdx",
         "date": "2026-09-07"
       },
       {
-        "file": "content/guides/zebra-finch-health-issues-guide.mdx",
-        "date": "2026-09-07"
-      },
-      {
-        "file": "content/guides/cherry-shrimp-health-issues-guide.mdx",
+        "file": "content/guides/axolotl-health-issues-guide.mdx",
         "date": "2026-09-08"
       },
       {
-        "file": "content/guides/bristlenose-pleco-health-issues-guide.mdx",
-        "date": "2026-09-08"
-      },
-      {
-        "file": "content/guides/discus-health-issues-guide.mdx",
+        "file": "content/guides/tarantula-health-issues-guide.mdx",
         "date": "2026-09-09"
       },
       {
-        "file": "content/guides/flying-squirrel-health-issues-guide.mdx",
-        "date": "2026-09-09"
-      },
-      {
-        "file": "content/guides/jacksons-chameleon-health-issues-guide.mdx",
+        "file": "content/guides/hermit-crab-health-issues-guide.mdx",
         "date": "2026-09-10"
       },
       {
-        "file": "content/guides/madagascar-hissing-cockroach-health-issues-guide.mdx",
-        "date": "2026-09-10"
-      },
-      {
-        "file": "content/guides/lovebird-health-issues-guide.mdx",
+        "file": "content/guides/sugar-glider-cost-guide.mdx",
         "date": "2026-09-11"
       },
       {
-        "file": "content/guides/tokay-gecko-health-issues-guide.mdx",
-        "date": "2026-09-11"
+        "file": "content/guides/green-iguana-cost-guide.mdx",
+        "date": "2026-09-12"
+      },
+      {
+        "file": "content/guides/red-eared-slider-cost-guide.mdx",
+        "date": "2026-09-13"
+      },
+      {
+        "file": "content/guides/betta-fish-health-issues-guide.mdx",
+        "date": "2026-09-14"
+      },
+      {
+        "file": "content/guides/hamster-health-issues-guide.mdx",
+        "date": "2026-09-15"
+      },
+      {
+        "file": "content/guides/ball-python-health-issues-guide.mdx",
+        "date": "2026-09-16"
+      },
+      {
+        "file": "content/guides/chinchilla-cost-guide.mdx",
+        "date": "2026-09-17"
+      },
+      {
+        "file": "content/guides/savannah-monitor-cost-guide.mdx",
+        "date": "2026-09-18"
       }
     ],
-    "nextStart": "2026-09-12"
+    "nextStart": "2026-09-19"
   },
   "ig": {
     "facts": [
@@ -863,7 +919,7 @@
         "date": "2026-09-11"
       }
     ],
-    "nextStart": "2026-09-12"
+    "nextStart": "2026-09-19"
   },
   "threads": {
     "facts": [
@@ -1038,6 +1094,62 @@
       {
         "id": 143,
         "date": "2026-09-11"
+      },
+      {
+        "id": 1,
+        "date": "2026-09-12"
+      },
+      {
+        "id": 20,
+        "date": "2026-09-12"
+      },
+      {
+        "id": 26,
+        "date": "2026-09-13"
+      },
+      {
+        "id": 60,
+        "date": "2026-09-13"
+      },
+      {
+        "id": 63,
+        "date": "2026-09-14"
+      },
+      {
+        "id": 81,
+        "date": "2026-09-14"
+      },
+      {
+        "id": 100,
+        "date": "2026-09-15"
+      },
+      {
+        "id": 111,
+        "date": "2026-09-15"
+      },
+      {
+        "id": 115,
+        "date": "2026-09-16"
+      },
+      {
+        "id": 123,
+        "date": "2026-09-16"
+      },
+      {
+        "id": 127,
+        "date": "2026-09-17"
+      },
+      {
+        "id": 136,
+        "date": "2026-09-17"
+      },
+      {
+        "id": 112,
+        "date": "2026-09-18"
+      },
+      {
+        "id": 107,
+        "date": "2026-09-18"
       }
     ],
     "articles": [
@@ -1128,9 +1240,37 @@
       {
         "file": "content/guides/lovebird-health-issues-guide.mdx",
         "date": "2026-09-11"
+      },
+      {
+        "file": "content/guides/corn-snake-health-issues-guide.mdx",
+        "date": "2026-09-12"
+      },
+      {
+        "file": "content/guides/crested-gecko-cost-guide.mdx",
+        "date": "2026-09-13"
+      },
+      {
+        "file": "content/guides/guinea-pig-health-issues-guide.mdx",
+        "date": "2026-09-14"
+      },
+      {
+        "file": "content/guides/budgie-health-issues-guide.mdx",
+        "date": "2026-09-15"
+      },
+      {
+        "file": "content/guides/russian-tortoise-cost-guide.mdx",
+        "date": "2026-09-16"
+      },
+      {
+        "file": "content/guides/oscar-fish-cost-guide.mdx",
+        "date": "2026-09-17"
+      },
+      {
+        "file": "content/guides/tiger-salamander-cost-guide.mdx",
+        "date": "2026-09-18"
       }
     ],
-    "nextStart": "2026-09-12"
+    "nextStart": "2026-09-19"
   },
   "pinterest": {
     "facts": [
