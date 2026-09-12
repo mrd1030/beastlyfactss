@@ -103,5 +103,11 @@ Ready for the site owner to generate photos and add to facts.js.
 ## Related
 
 Beastlypedia has its own separate gap list in `BEASTLYPEDIA_FACT_GAPS.md`, for
-facts that are blocked on photos *and* tied to a specific Beastfile page. Three
-Gaboon viper facts are outstanding there.
+facts that are blocked on photos *and* tied to a specific Beastfile page. It has
+nothing outstanding: the three Gaboon viper facts it used to hold shipped on
+2026-08-12 as ids 282 to 286. Corrected 2026-09-12, this line still claimed they
+were waiting.
+
+Full prompts for the ten facts above are in IMAGE_PROMPTS.md under "Fact photos
+awaiting art". Eight frames were delivered and accepted 2026-09-12; the orca and
+the satin bowerbird came back wrong and their prompts carry corrected wording.
