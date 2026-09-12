@@ -152,19 +152,24 @@ Second pass, 2026-09-12, 42 more heroes opened, 103 of 183 now checked:
   pet. The weakest flag here, since domestic rabbits come in that colour.
 
 Third pass, 2026-09-12, the overview composites and more legal heroes, 133 of
-183 now checked. Every miss here is a panel inside a multi-species composite, so
-fixing one means regenerating that whole grid, not swapping a single frame:
+183 checked at the time. Four wrong panels found, **all four fixed the same
+day**:
 
-- **`five-beginner-reptiles-overview.jpg`**: the fifth panel is a banded snake,
-  a milk snake or kingsnake. The article's fifth species is the corn snake,
-  which is saddled rather than banded (verified against the H2s in the mdx).
-- **`koi-conure-slider-scorpion-overview.jpg`**: the scorpion panel has the same
-  bright orange legs as the two emperor scorpion heroes. Same fault, third file.
-- **`sulcata-hedgehog-lovebird-guppy-overview.jpg`**: the hedgehog panel is a
-  European hedgehog, the same error as the standalone hero replaced today.
-- **`gargoyle-mourning-african-fat-tail-gecko-overview.jpg`**: the third panel
-  has a knobbed head and the wrong build for an African fat-tailed gecko, which
-  is smooth-headed with a chunky banded body. Closest to a knob-tailed gecko.
+- `five-beginner-reptiles-overview.jpg`: the fifth panel was a banded milk or
+  kingsnake where the article's fifth species is the corn snake. Whole grid
+  regenerated, because its dividers are diagonal and a spliced rectangle would
+  cut across them.
+- `koi-conure-slider-scorpion-overview.jpg`: the scorpion panel had the orange
+  legs and second pair of pincers. New panel spliced in at 584x392.
+- `sulcata-hedgehog-lovebird-guppy-overview.jpg`: the hedgehog panel was the
+  European species. New panel spliced in at 584x392.
+- `gargoyle-mourning-african-fat-tail-gecko-overview.jpg`: the third panel was a
+  knob-headed gecko rather than an African fat-tail. New panel spliced in at
+  378x784, the width the white dividers actually leave (they sit at x384-388 and
+  x785-789, not at even thirds).
+
+Splicing rather than regenerating kept nine correct panels across those three
+grids. Divider positions were measured off the files rather than assumed.
 
 Worth knowing before assuming a species is cursed: the composites carry the
 **correct** version of several animals whose standalone hero was wrong. The
