@@ -132,17 +132,15 @@ Lower confidence, worth a second opinion before spending art on them:
 
 Second pass, 2026-09-12, 42 more heroes opened, 103 of 183 now checked:
 
-- **`angelfish.jpg`** is a marine reef fish photographed over stony coral. The
-  guide is about the freshwater angelfish, a tall triangular cichlid with
-  trailing fins and vertical bars, kept in planted tanks. Wrong fish and wrong
-  water.
-- **`oscar.jpg`** has no caudal ocellus, the black orange-ringed spot at the
-  tail base that identifies the species. Reads closer to a spotted tilapia.
-  Replacement prompt written.
-- **`goldfish.jpg`** appears to carry a pair of barbels at the mouth. Goldfish
-  have none and koi do, and that difference is what the koi versus goldfish
-  guide turns on. Replacement prompt written. Worth a human look first, the
-  filaments could be plant strands.
+- **`angelfish.jpg`** was a marine reef fish photographed over stony coral.
+  **Replaced 2026-09-12** with a freshwater *Pterophyllum*: tall silver disc,
+  trailing dorsal, anal and ventral fins, four vertical bars, planted tank.
+- **`oscar.jpg`** had no caudal ocellus and read closer to a spotted tilapia.
+  **Replaced 2026-09-12** with a tiger oscar carrying the orange-ringed black
+  spot at the tail base.
+- **`goldfish.jpg`** appeared to carry barbels at the mouth, which would make
+  it a koi. **Replaced 2026-09-12** with a common goldfish, plain snout, no
+  barbels, single caudal fin.
 - `neon-tetra.jpg`: the red stripe runs the full length of the body, which is a
   cardinal tetra. On a neon the red starts mid-body. Medium confidence.
 - `guppy.jpg`: body too deep and stocky, reads closer to a platy. Low

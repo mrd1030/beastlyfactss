@@ -1,7 +1,8 @@
 # Alternates
 
-Guide heroes that were replaced on 2026-09-12 because the animal in the frame
-was not the species the guide is about (docs/TODO.md item 5). Kept rather than
+Guide heroes replaced on 2026-09-12 because the animal in the frame was not the
+species the guide is about (docs/TODO.md item 5). Eight from the first skim
+pass, three more from the second. Kept rather than
 deleted: several are good photographs of a real animal, just the wrong one, so
 they are usable art for whatever they actually show.
 
@@ -18,6 +19,9 @@ species it is not. Read the second column before reusing one.
 | `emperor-scorpion-legal.jpg` | Emperor scorpion legal guide | Same fault as above, different frame. Not usable as any species. |
 | `corydoras-catfish.jpg` | Corydoras care hub | A scaled minnow-shaped fish with barbels, closest to a gudgeon or small barb. Not an armoured catfish. |
 | `savannah-monitor-legal.jpg` | Savannah monitor legal guide | Reads as a Nile monitor, *Varanus niloticus*: long tapering snout, yellow ocelli, slender build. The site already has a correct Nile monitor hero, so this is a spare of that species. |
+| `angelfish.jpg` | Freshwater angelfish care hub | A marine reef fish photographed over stony coral. Oval rather than the tall trailing-finned disc of *Pterophyllum*, and in saltwater. Usable for reef or saltwater content. |
+| `oscar.jpg` | Oscar care hub | A spotted cichlid with no caudal ocellus, the orange-ringed black spot at the tail base that identifies an oscar. Closest to a tilapia. |
+| `goldfish.jpg` | Goldfish care hub | A goldfish-shaped fish that appears to carry barbels at the mouth, which no goldfish has. If those are barbels it is a koi, and the site's koi versus goldfish guide turns on exactly that difference. |
 
 Nothing in `src/` or `content/` points at this folder. The files are here to be
 picked up deliberately, not to be served. The two marked not usable are kept
