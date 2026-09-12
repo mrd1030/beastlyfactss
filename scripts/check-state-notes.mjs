@@ -51,7 +51,12 @@ for (const para of paragraphs) {
     }
   }
   // British variants the rules bar in prose.
-  for (const [bad, good] of [['licence', 'license'], ['organise', 'organize'], ['gray', 'grey']]) {
+  for (const [bad, good] of [
+    ['licence', 'license'], ['organise', 'organize'], ['gray', 'grey'],
+    ['authorised', 'authorized'], ['authorisation', 'authorization'],
+    ['categorised', 'categorized'], ['labelled', 'labeled'], ['colour', 'color'],
+    ['recognised', 'recognized'], ['legalised', 'legalized'],
+  ]) {
     if (new RegExp(`\\b${bad}\\b`, 'i').test(para)) {
       failures.push(`use "${good}" not "${bad}" in: "${para.slice(0, 70)}..."`);
     }
