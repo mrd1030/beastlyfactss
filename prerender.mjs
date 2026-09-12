@@ -114,8 +114,17 @@ function getChroniclesRoutes(meta) {
 // Read straight from the dataset rather than hand-copying a list. This one
 // grows every time a species is researched, and a stale copy here would mean a
 // page that exists, renders and is linked but never gets prerendered.
-const LEGAL_ANIMAL_IDS = Object.keys(
-  JSON.parse(readFileSync(new URL('./src/lib/data/legalStatus.json', import.meta.url), 'utf8')).animals,
+const LEGAL_DATA = JSON.parse(
+  readFileSync(new URL('./src/lib/data/legalStatus.json', import.meta.url), 'utf8'),
+);
+const LEGAL_ANIMAL_IDS = Object.keys(LEGAL_DATA.animals);
+
+// The other axis of the same matrix: one page per jurisdiction, listing every
+// animal. Slugified from the jurisdiction name exactly as src/lib/data/stateSlugs.js
+// does, so the routes prerendered here and the hrefs the app renders cannot
+// drift apart.
+const LEGAL_STATE_SLUGS = Object.values(LEGAL_DATA.jurisdictions).map(j =>
+  j.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
 );
 
 // Read from the dataset rather than hand-copying a list, same reasoning as
@@ -219,6 +228,8 @@ const STATIC_ROUTES = [
   '/exotic-pet-laws',
   '/exotic-pet-laws/map',
   ...LEGAL_ANIMAL_IDS.map(id => `/exotic-pet-laws/${id}`),
+  '/exotic-pet-laws/state',
+  ...LEGAL_STATE_SLUGS.map(slug => `/exotic-pet-laws/state/${slug}`),
   '/care-packages',
   '/care-packages/store',
   '/care-packages/why-we-exist',
@@ -276,7 +287,7 @@ const STATIC_ROUTES = [
 const LEAF_PATTERNS = [
   /^\/blog\/[^/]+$/, /^\/facts\/[^/]+$/, /^\/beastlypedia\/[^/]+$/,
   /^\/guides\/[^/]+$/, /^\/encyclopedia\/animal\/[^/]+$/, /^\/chronicles\/[^/]+(\/\d+)?$/,
-  /^\/exotic-pet-laws\/[^/]+$/,
+  /^\/exotic-pet-laws\/[^/]+$/, /^\/exotic-pet-laws\/state\/[^/]+$/,
 ];
 const isLeaf = (route) =>
   LEAF_PATTERNS.some(p => p.test(route)) &&

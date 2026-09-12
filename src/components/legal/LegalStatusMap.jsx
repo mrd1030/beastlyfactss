@@ -75,11 +75,26 @@ export function bucketFor(status) {
   return 'none';
 }
 
+// The map paints two different questions from the same SVG.
+//
+// Its original job is one animal across every jurisdiction: `statuses` carries
+// that animal's entry per code and the buckets above decide the colour. The
+// state index asks the transposed question, how restrictive each jurisdiction is
+// across all 52 animals, which has no status to bucket and needs its own scale.
+//
+// Rather than fork the component (the paths, the DC marker, the keyboard
+// handling and the focus styles are the bulk of it and are identical either
+// way), the two hooks below let a caller supply its own fill and its own
+// description. Both default to the per-animal behaviour, so the animal map
+// passes neither and is unchanged.
 export default function LegalStatusMap({
   statuses = {},
   selected = null,
   onSelect,
   animalName = 'this animal',
+  paintFor = null,
+  describeFor = null,
+  ariaLabel = null,
 }) {
   // useId keeps the pattern id unique if two maps ever render on one page,
   // which would otherwise make both of them reference the same fill.
@@ -88,6 +103,7 @@ export default function LegalStatusMap({
   const dotsId = `${uid}-not-checked-dots`;
 
   const paint = (code) => {
+    if (paintFor) return paintFor(code);
     const bucket = STATUS_BUCKETS[bucketFor(statuses[code]?.status)];
     if (bucket.key === 'unclear') return `url(#${hatchId})`;
     if (bucket.key === 'notChecked') return `url(#${dotsId})`;
@@ -96,6 +112,7 @@ export default function LegalStatusMap({
   };
 
   const describe = (code, name) => {
+    if (describeFor) return describeFor(code, name);
     const bucket = STATUS_BUCKETS[bucketFor(statuses[code]?.status)];
     if (bucket.key === 'none') return `${name}: no restriction found for ${animalName}`;
     if (bucket.key === 'notChecked') return `${name}: not checked yet for ${animalName}`;
@@ -112,7 +129,7 @@ export default function LegalStatusMap({
     <svg
       viewBox={MAP_VIEWBOX}
       role="img"
-      aria-label={`Map of the United States showing where ${animalName} is restricted`}
+      aria-label={ariaLabel ?? `Map of the United States showing where ${animalName} is restricted`}
       className="w-full h-auto"
     >
       <defs>

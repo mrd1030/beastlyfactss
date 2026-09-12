@@ -6,6 +6,7 @@ import { ArrowLeft, ChevronDown, X } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
+import { CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 import LegalStatusMap, { STATUS_BUCKETS, BUCKET_ORDER, bucketFor } from '@/components/legal/LegalStatusMap';
 
@@ -541,6 +542,22 @@ export default function ExoticPetLaws() {
                     className="mt-3 block text-xs font-body text-primary hover:underline"
                   >
                     {`The full ${inSentence(animal.name)} legal guide →`}
+                  </Link>
+                )}
+                {/* Across to the other axis of the matrix. Someone who has
+                    tapped a state has already told us which jurisdiction they
+                    care about, and that is the cheapest moment to offer the
+                    rest of it: this map answers one animal everywhere, the
+                    state page answers everything in one place. Outside the
+                    ternary for the same reason the guide link is, since an
+                    unchecked jurisdiction is exactly when the wider view helps
+                    most. */}
+                {CODE_TO_SLUG[detail.code] && (
+                  <Link
+                    to={`/exotic-pet-laws/state/${CODE_TO_SLUG[detail.code]}/`}
+                    className="mt-2 block text-xs font-body text-primary hover:underline"
+                  >
+                    {`All ${ANIMAL_IDS.length} animals in ${jurisdictionName(detail.code)} →`}
                   </Link>
                 )}
               </div>

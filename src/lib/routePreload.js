@@ -63,6 +63,12 @@ const ROUTE_PRELOADS = [
   [p => p.startsWith('/search'), 'Search'],
   [p => pathIs(p, '/glossary'), 'Glossary'],
   [p => pathIs(p, '/exotic-pet-laws'), 'ExoticPetLawsHub'],
+  // Both state matchers sit above the catch-all, and the index above the leaf,
+  // for the same reason the hub does: startsWith('/exotic-pet-laws') matches
+  // every one of these and would otherwise preload the animal map's chunk for
+  // pages that never render it.
+  [p => pathIs(p, '/exotic-pet-laws/state'), 'ExoticPetLawsStateIndex'],
+  [p => p.startsWith('/exotic-pet-laws/state/'), 'ExoticPetLawsState'],
   [p => p.startsWith('/exotic-pet-laws'), 'ExoticPetLaws'],
   [p => p.startsWith('/beastlypedia/group/'), 'Beastlypedia'],
   [p => pathIs(p, '/beastlypedia'), 'Beastlypedia'],

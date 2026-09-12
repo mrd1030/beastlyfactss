@@ -1,8 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Map as MapIcon } from 'lucide-react';
+import { Map as MapIcon, MapPin } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
+import { JURISDICTIONS_AZ, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import { withBrand } from '@/lib/utils/seo';
@@ -62,16 +63,31 @@ export default function ExoticPetLawsHub() {
             entry here quotes the statute or regulation itself.
           </p>
 
-          {/* The map is its own page now. It is the heaviest thing on the
-              section and belongs behind a deliberate click, not stacked on top
-              of the reading. */}
-          <Link
-            to="/exotic-pet-laws/map/"
-            className="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-body font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            <MapIcon className="w-4 h-4" aria-hidden="true" />
-            Open the interactive map
-          </Link>
+          {/* The map is its own page. It is the heaviest thing on the section
+              and belongs behind a deliberate click, not stacked on top of the
+              reading.
+
+              Two ways in, because the dataset answers two different questions
+              and only one of them had a page. The map is animal-first ("where
+              is the serval banned?"); the state index is jurisdiction-first
+              ("what is banned in Texas?"), which is what someone moving, or
+              writing about a state, actually asks. */}
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link
+              to="/exotic-pet-laws/map/"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-body font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              <MapIcon className="w-4 h-4" aria-hidden="true" />
+              Open the interactive map
+            </Link>
+            <Link
+              to="/exotic-pet-laws/state/"
+              className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2.5 text-sm font-body font-semibold text-foreground transition-colors hover:border-primary/50"
+            >
+              <MapPin className="w-4 h-4" aria-hidden="true" />
+              Browse by state
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -104,6 +120,31 @@ export default function ExoticPetLawsHub() {
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {LEGAL.animals[id].name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Real anchors rather than a state picker. A <select> that navigates on
+            change never fires for a crawler, so the 52 state pages would be
+            reachable only from the sitemap and would inherit no internal links
+            at all. This list is what actually connects them to the site. */}
+        <section className="max-w-3xl mx-auto mt-12">
+          <h2 className="font-display font-bold text-2xl text-foreground mb-1">
+            Every state, A to Z
+          </h2>
+          <p className="text-sm font-body text-muted-foreground mb-5">
+            {`The same ${ANIMALS_AZ.length} animals read the other way round: what each of the ${JURISDICTIONS_AZ.length} jurisdictions restricts.`}
+          </p>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 list-none p-0">
+            {JURISDICTIONS_AZ.map((code) => (
+              <li key={code} className="text-sm font-body">
+                <Link
+                  to={`/exotic-pet-laws/state/${CODE_TO_SLUG[code]}/`}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {LEGAL.jurisdictions[code].name}
                 </Link>
               </li>
             ))}

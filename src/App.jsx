@@ -41,6 +41,8 @@ const Search = hydratable('Search');
 const Glossary = hydratable('Glossary');
 const ExoticPetLaws = hydratable('ExoticPetLaws');
 const ExoticPetLawsHub = hydratable('ExoticPetLawsHub');
+const ExoticPetLawsState = hydratable('ExoticPetLawsState');
+const ExoticPetLawsStateIndex = hydratable('ExoticPetLawsStateIndex');
 const EncyclopediaAnimal = hydratable('EncyclopediaAnimal');
 const Beastlypedia = hydratable('Beastlypedia');
 const BeastfileDetail = hydratable('BeastfileDetail');
@@ -129,8 +131,13 @@ const AuthenticatedApp = () => {
           <Route path="/search/:query" element={<Search />} />
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/exotic-pet-laws" element={<ExoticPetLawsHub />} />
-          {/* Declared before :animalId so "map" is not matched as an animal id. */}
+          {/* Declared before :animalId so "map" and "state" are not matched as
+              animal ids. The two-segment state route is safe either way, but the
+              bare /exotic-pet-laws/state/ index is one segment and would be
+              swallowed by :animalId exactly as /map was. */}
           <Route path="/exotic-pet-laws/map" element={<ExoticPetLaws />} />
+          <Route path="/exotic-pet-laws/state" element={<ExoticPetLawsStateIndex />} />
+          <Route path="/exotic-pet-laws/state/:stateSlug" element={<ExoticPetLawsState />} />
           <Route path="/exotic-pet-laws/:animalId" element={<ExoticPetLaws />} />
           <Route path="/care-packages" element={<CarePackages />} />
           <Route path="/care-packages/store" element={<CarePackagesStore />} />

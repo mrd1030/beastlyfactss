@@ -251,6 +251,17 @@ const staticPages = [
     .filter(([, a]) => Object.values(a.jurisdictions).some(e => e.status !== 'legal'))
     .map(([id]) => `/exotic-pet-laws/${id}/`),
 
+  // The transposed axis: one page per jurisdiction listing all 52 animals.
+  // Every one of these is indexable, including the two jurisdictions that
+  // restrict nothing: unlike an animal with no restriction anywhere, a state
+  // page still carries 52 rows naming the rule that was read for each, so
+  // "nothing here reaches these animals" is a researched finding rather than a
+  // blank page. Slugified exactly as src/lib/data/stateSlugs.js does.
+  '/exotic-pet-laws/state/',
+  ...Object.values(legalStatus.jurisdictions).map(
+    j => `/exotic-pet-laws/state/${j.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}/`,
+  ),
+
   // Encyclopedia categories
   ...encyclopediaCategories.map(s => `/encyclopedia/category/${s}/`),
 

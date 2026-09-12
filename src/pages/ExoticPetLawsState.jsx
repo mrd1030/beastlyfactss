@@ -1,0 +1,339 @@
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Link, useParams, Navigate } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
+import LEGAL from '@/lib/data/legalStatus.json';
+import { STATUS_BUCKETS } from '@/components/legal/LegalStatusMap';
+import { forJurisdiction, lastVerified, TRACKED_ANIMAL_COUNT } from '@/lib/data/legalByState';
+import { SLUG_TO_CODE, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
+import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
+
+const SITE = 'https://beastlyfacts.com';
+
+// Buckets that represent an actual restriction, in the order the page lists
+// them. `none` and `notChecked` are handled separately below: they are the long
+// tail and belong under the restrictions, not mixed in with them.
+const RESTRICTION_BUCKETS = ['banned', 'permit', 'conditions', 'unclear'];
+
+function CountPill({ bucketKey, count }) {
+  const b = STATUS_BUCKETS[bucketKey];
+  const isNone = b.key === 'none' || b.key === 'notChecked';
+  return (
+    <span
+      className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-body font-semibold border"
+      style={
+        isNone
+          ? { borderColor: 'hsl(var(--border))', color: 'hsl(var(--muted-foreground))' }
+          : { background: b.key === 'unclear' ? '#CBD5E1' : b.fill, color: b.text, borderColor: 'transparent' }
+      }
+    >
+      {`${count} ${b.label.toLowerCase()}`}
+    </span>
+  );
+}
+
+// One jurisdiction across every animal in the matrix.
+//
+// The animal pages answer "where is this restricted"; this answers "what is
+// restricted here". The second question is the one someone asks when they are
+// moving, or when they are writing about a state, and until now the site had no
+// page that answered it despite holding all the data.
+export default function ExoticPetLawsState() {
+  const { stateSlug } = useParams();
+  const code = SLUG_TO_CODE[stateSlug];
+  const j = code ? forJurisdiction(code) : null;
+
+  // An unknown slug goes to the index rather than rendering an empty shell.
+  // replace, so the bad URL does not sit in history behind the good one.
+  if (!j) return <Navigate to="/exotic-pet-laws/state/" replace />;
+
+  const restricted = j.rows.filter((r) => RESTRICTION_BUCKETS.includes(r.bucket));
+  const clear = j.rows.filter((r) => r.bucket === 'none');
+  const unchecked = j.rows.filter((r) => r.bucket === 'notChecked');
+  const banned = j.rows.filter((r) => r.bucket === 'banned');
+  const verified = lastVerified(code);
+
+  const isState = j.level === 'state';
+  // "in Texas" works; "in New York City" works; "in the District of Columbia"
+  // needs the article. Naming the two non-states rather than branching on level
+  // twice over, since there are exactly two and both are known.
+  const inPlace = code === 'DC' ? 'the District of Columbia' : j.name;
+
+  const title = pickWithinLimit(
+    [
+      `Exotic Pet Laws in ${j.name}: What Is Banned`,
+      `Exotic Pet Laws in ${j.name}: Bans and Permits`,
+      `${j.name} Exotic Pet Laws`,
+    ],
+    TITLE_MAX - ` | ${BRAND}`.length,
+  );
+
+  const description = pickWithinLimit(
+    [
+      `What exotic pets are legal in ${j.name}: ${plural(j.counts.banned, 'animal')} banned, ${plural(j.counts.permit, 'needing a permit', 'needing a permit')}, out of ${TRACKED_ANIMAL_COUNT} checked against the statutes themselves.`,
+      `Exotic pets in ${j.name}: ${plural(j.counts.banned, 'ban')} and ${plural(j.counts.permit, 'permit')} across ${TRACKED_ANIMAL_COUNT} animals, each entry citing the regulation.`,
+      `Which exotic pets are legal in ${j.name}, across ${TRACKED_ANIMAL_COUNT} animals, each citing the rule.`,
+    ],
+    DESCRIPTION_MAX,
+  );
+
+  const canonical = `${SITE}/exotic-pet-laws/state/${CODE_TO_SLUG[code]}/`;
+
+  // The opening sentence is derived, not templated: it names the actual banned
+  // animals where there are few enough to list, which makes every one of these
+  // 52 pages open on its own specifics rather than on the same sentence with a
+  // state name swapped in.
+  const bannedNames = banned.slice(0, 4).map((r) => r.name.toLowerCase());
+  const Place = `${inPlace.charAt(0).toUpperCase()}${inPlace.slice(1)}`;
+  const opener = (() => {
+    if (j.counts.banned === 0 && j.counts.permit === 0) {
+      return `Nothing in ${inPlace} restricts any of the ${TRACKED_ANIMAL_COUNT} animals on this list outright, and none of them needs a permit. That is the answer rather than a gap: each one was read against ${isState ? 'the state code' : 'the code'} and nothing in it reaches them.`;
+    }
+    // plural() always prefixes the count, so anything that needs the number
+    // woven into the verb ("one of them needs" / "eleven of them need") is
+    // written out here rather than going through it.
+    const permitClause =
+      j.counts.permit === 1 ? 'one of them needs' : `${j.counts.permit} of them need`;
+
+    if (j.counts.banned === 0) {
+      return `${Place} bans none of the ${TRACKED_ANIMAL_COUNT} animals on this list outright, but ${permitClause} a permit before the animal arrives.`;
+    }
+
+    const listed = bannedNames.join(', ');
+    const andMore = j.counts.banned > 4 ? `, and ${j.counts.banned - 4} more` : '';
+    const tail =
+      j.counts.permit === 0
+        ? 'None of the rest needs a permit.'
+        : j.counts.permit === 1
+          ? 'One more needs a permit.'
+          : `${j.counts.permit} more need a permit.`;
+    return `${Place} bans ${plural(j.counts.banned, 'animal')} of the ${TRACKED_ANIMAL_COUNT} checked here, among them the ${listed}${andMore}. ${tail}`;
+  })();
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{withBrand(title)}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:title" content={withBrand(title)} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={`${SITE}/assets/guides/exotic-pet-legal-hub.jpg`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`Exotic pet laws in ${j.name}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={`${SITE}/assets/guides/exotic-pet-legal-hub.jpg`} />
+        <meta name="twitter:title" content={withBrand(title)} />
+        <meta name="twitter:description" content={description} />
+      </Helmet>
+
+      <div className="bg-gradient-to-b from-primary/5 to-transparent pt-6 pb-8 px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto">
+          <Link
+            to="/exotic-pet-laws/state/"
+            className="inline-flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-primary transition-colors mb-3 py-3 -my-2 pr-3 -mr-3"
+          >
+            <ArrowLeft className="w-3.5 h-3.5" />
+            All states
+          </Link>
+
+          <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
+            {`Exotic pet laws in ${j.name}`}
+          </h1>
+          {/* Single string: see the hydration note on the index page. */}
+          <p className="text-muted-foreground font-body leading-relaxed">{opener}</p>
+
+          <div className="mt-5 flex flex-wrap gap-2">
+            {RESTRICTION_BUCKETS.map((key) =>
+              j.counts[key] > 0 ? <CountPill key={key} bucketKey={key} count={j.counts[key]} /> : null,
+            )}
+            {j.counts.none > 0 && <CountPill bucketKey="none" count={j.counts.none} />}
+          </div>
+
+          {verified && (
+            <p className="mt-4 text-xs font-body text-muted-foreground">
+              {`Last verified against the published rules on ${verified}. Every entry below quotes the statute or regulation it comes from.`}
+            </p>
+          )}
+
+          {j.scope && (
+            <p className="mt-2 text-xs font-body text-muted-foreground leading-relaxed">
+              {`The governing body of law here: ${j.scope}`}
+            </p>
+          )}
+        </div>
+      </div>
+
+      <div className="px-4 sm:px-6 pb-16">
+        <div className="max-w-4xl mx-auto">
+          {restricted.length > 0 && (
+            <section>
+              <h2 className="font-display font-bold text-2xl text-foreground mb-1">
+                {`What ${j.name} restricts`}
+              </h2>
+              <p className="text-sm font-body text-muted-foreground mb-5">
+                {`${restricted.length} of ${TRACKED_ANIMAL_COUNT}, strictest first. Open one for the rule it comes from.`}
+              </p>
+
+              <div className="space-y-2">
+                {restricted.map((row) => {
+                  const b = STATUS_BUCKETS[row.bucket];
+                  const source = row.entry?.sourceId ? LEGAL.sources[row.entry.sourceId] : null;
+                  return (
+                    <details key={row.id} className="group rounded-lg border border-border bg-card">
+                      <summary className="flex flex-wrap cursor-pointer list-none items-center gap-2 p-4 [&::-webkit-details-marker]:hidden">
+                        <span className="flex-1 font-body font-semibold text-foreground text-sm">
+                          {row.name}
+                        </span>
+                        <span
+                          className="rounded-full px-2.5 py-0.5 text-[11px] font-body font-semibold"
+                          style={{
+                            background: row.bucket === 'unclear' ? '#CBD5E1' : b.fill,
+                            color: b.text,
+                          }}
+                        >
+                          {b.label}
+                        </span>
+                      </summary>
+
+                      <div className="px-4 pb-4 -mt-1">
+                        {row.entry?.cite && (
+                          <p className="text-xs font-body font-semibold text-foreground">{row.entry.cite}</p>
+                        )}
+                        {row.entry?.quote && (
+                          <blockquote className="mt-2 border-l-2 border-primary/40 pl-3 text-xs font-body italic text-muted-foreground leading-relaxed">
+                            {row.entry.quote}
+                          </blockquote>
+                        )}
+                        {row.entry?.note && (
+                          <p className="mt-2 text-xs font-body text-muted-foreground leading-relaxed">
+                            {row.entry.note}
+                          </p>
+                        )}
+                        {row.entry?.grandfathered && (
+                          <p className="mt-2 text-xs font-body text-muted-foreground leading-relaxed">
+                            <span className="font-semibold text-foreground">Existing owners: </span>
+                            {row.entry.grandfathered.detail}
+                          </p>
+                        )}
+                        {row.entry?.localOverride && (
+                          <p className="mt-2 text-xs font-body text-muted-foreground leading-relaxed">
+                            Cities and counties here can prohibit what state law permits, so check your local
+                            ordinance too.
+                          </p>
+                        )}
+                        {source?.note && (
+                          <p className="mt-2 text-xs font-body text-muted-foreground leading-relaxed">
+                            <span className="font-semibold text-foreground">How this rule works: </span>
+                            {source.note}
+                          </p>
+                        )}
+
+                        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                          {source && (
+                            <a
+                              href={source.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs font-body text-primary hover:underline"
+                            >
+                              {`${source.title} →`}
+                            </a>
+                          )}
+                          {/* Back into the other axis of the matrix. These are
+                              what make the two halves cross-link densely: 52
+                              state pages times their restricted rows, all
+                              pointing at the animal pages that already rank. */}
+                          <Link
+                            to={`/exotic-pet-laws/${row.id}/`}
+                            className="text-xs font-body text-primary hover:underline"
+                          >
+                            {`${row.name} in every state →`}
+                          </Link>
+                          {row.article && (
+                            <Link to={row.article} className="text-xs font-body text-primary hover:underline">
+                              Full legal guide →
+                            </Link>
+                          )}
+                        </div>
+                      </div>
+                    </details>
+                  );
+                })}
+              </div>
+            </section>
+          )}
+
+          {clear.length > 0 && (
+            <section className="mt-12">
+              <h2 className="font-display font-bold text-2xl text-foreground mb-1">
+                {`No restriction found in ${j.name}`}
+              </h2>
+              <p className="text-sm font-body text-muted-foreground mb-5">
+                {`${clear.length} of ${TRACKED_ANIMAL_COUNT}. Each was read against the same body of law as the entries above and nothing in it reaches them. Local ordinances and tenancy terms still apply and are not on this map.`}
+              </p>
+              <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 list-none p-0">
+                {clear.map((row) => (
+                  <li key={row.id} className="text-sm font-body">
+                    <Link
+                      to={`/exotic-pet-laws/${row.id}/`}
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {row.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {unchecked.length > 0 && (
+            <section className="mt-12">
+              <h2 className="font-display font-bold text-2xl text-foreground mb-1">
+                Not checked yet
+              </h2>
+              <p className="text-sm font-body text-muted-foreground mb-5">
+                {`${unchecked.length} of ${TRACKED_ANIMAL_COUNT} have not been read for ${inPlace}. That is a gap in our work, not a clean bill of health: treat them as unknown and ask the agency before relying on it.`}
+              </p>
+              <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 list-none p-0">
+                {unchecked.map((row) => (
+                  <li key={row.id} className="text-sm font-body">
+                    <Link
+                      to={`/exotic-pet-laws/${row.id}/`}
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {row.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          <section className="mt-12 rounded-xl border border-border bg-card p-5">
+            <h2 className="font-display font-bold text-lg text-foreground mb-2">
+              Before you rely on this
+            </h2>
+            <p className="text-sm font-body text-muted-foreground leading-relaxed">
+              {`This page covers ${isState ? 'state' : 'local'} law only. Cities and counties routinely prohibit what ${j.name} allows, and a lease or HOA agreement can bar an animal that every level of government permits. Check all three, and check them in that order, because the one most likely to stop you is the one closest to your front door.`}
+            </p>
+            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
+              <Link to="/exotic-pet-laws/state/" className="text-sm font-body text-primary hover:underline">
+                Compare every state →
+              </Link>
+              <Link to="/exotic-pet-laws/map/" className="text-sm font-body text-primary hover:underline">
+                Search by animal instead →
+              </Link>
+              <Link to="/exotic-pet-laws/" className="text-sm font-body text-primary hover:underline">
+                How US exotic pet law is structured →
+              </Link>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  );
+}

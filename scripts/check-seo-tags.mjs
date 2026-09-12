@@ -133,8 +133,49 @@ for (const [id, animal] of Object.entries(LEGAL.animals)) {
   }
 }
 
-// Guard against this file drifting from the page it mirrors: both must build the
-// tag the same way, so the page's own template strings have to still be present.
+// The other axis: one page per jurisdiction, listing every animal. Same
+// hand-mirrored templates as above, guarded by the same drift test below.
+const TRACKED = Object.keys(LEGAL.animals).length;
+let jurisdictions = 0;
+for (const [code, j] of Object.entries(LEGAL.jurisdictions)) {
+  jurisdictions += 1;
+  const c = { banned: 0, permit: 0 };
+  for (const animal of Object.values(LEGAL.animals)) {
+    const e = animal.jurisdictions[code];
+    if (!e) continue;
+    if (e.status === 'banned') c.banned += 1;
+    else if (e.status === 'permit') c.permit += 1;
+  }
+
+  const title = withBrand(
+    pickWithinLimit(
+      [
+        `Exotic Pet Laws in ${j.name}: What Is Banned`,
+        `Exotic Pet Laws in ${j.name}: Bans and Permits`,
+        `${j.name} Exotic Pet Laws`,
+      ],
+      TITLE_MAX - ` | ${BRAND}`.length,
+    ),
+  );
+  if (title.length > TITLE_MAX) {
+    failures.push({ file: 'src/pages/ExoticPetLawsState.jsx', what: `title for ${code}`, len: title.length, max: TITLE_MAX, value: title });
+  }
+
+  const desc = pickWithinLimit(
+    [
+      `What exotic pets are legal in ${j.name}: ${plural(c.banned, 'animal')} banned, ${plural(c.permit, 'needing a permit', 'needing a permit')}, out of ${TRACKED} checked against the statutes themselves.`,
+      `Exotic pets in ${j.name}: ${plural(c.banned, 'ban')} and ${plural(c.permit, 'permit')} across ${TRACKED} animals, each entry citing the regulation.`,
+      `Which exotic pets are legal in ${j.name}, across ${TRACKED} animals, each citing the rule.`,
+    ],
+    DESCRIPTION_MAX,
+  );
+  if (desc.length > DESCRIPTION_MAX) {
+    failures.push({ file: 'src/pages/ExoticPetLawsState.jsx', what: `description for ${code}`, len: desc.length, max: DESCRIPTION_MAX, value: desc });
+  }
+}
+
+// Guard against this file drifting from the pages it mirrors: both must build the
+// tag the same way, so the pages' own template strings have to still be present.
 const pageSource = fs.readFileSync(path.join(ROOT, 'src/pages/ExoticPetLaws.jsx'), 'utf8');
 for (const fragment of ['Laws by State: Where It Is Banned', 'Laws by State: Bans and Permits', 'withBrand(title)']) {
   if (!pageSource.includes(fragment)) {
@@ -144,6 +185,19 @@ for (const fragment of ['Laws by State: Where It Is Banned', 'Laws by State: Ban
       len: 0,
       max: 0,
       value: `ExoticPetLaws.jsx no longer contains "${fragment}", so this check is measuring copy the site does not ship. Update both together.`,
+    });
+  }
+}
+
+const stateSource = fs.readFileSync(path.join(ROOT, 'src/pages/ExoticPetLawsState.jsx'), 'utf8');
+for (const fragment of ['Exotic Pet Laws in ${j.name}: What Is Banned', 'What exotic pets are legal in ${j.name}', 'withBrand(title)']) {
+  if (!stateSource.includes(fragment)) {
+    failures.push({
+      file: 'scripts/check-seo-tags.mjs',
+      what: 'template drift',
+      len: 0,
+      max: 0,
+      value: `ExoticPetLawsState.jsx no longer contains "${fragment}", so this check is measuring copy the site does not ship. Update both together.`,
     });
   }
 }
@@ -166,4 +220,4 @@ if (truncated.length) {
   console.log(`Note: ${truncated.length} article(s) have no seoDescription and an excerpt over ${TRUNCATE_AT} chars,`);
   console.log(`so their meta description ships truncated. Not a failure, but a wasted SERP line.`);
 }
-console.log(`SEO tags: ${articles} articles and ${animals} legal map pages inside the ${TITLE_MAX}/${DESCRIPTION_MAX} budget.`);
+console.log(`SEO tags: ${articles} articles, ${animals} legal map pages and ${jurisdictions} state pages inside the ${TITLE_MAX}/${DESCRIPTION_MAX} budget.`);
