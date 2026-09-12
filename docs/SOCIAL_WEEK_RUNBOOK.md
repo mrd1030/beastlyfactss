@@ -269,8 +269,12 @@ with `nextStart` on both at 2026-09-19.
 
 Instagram was skipped for the week of 9/12 to 9/18, deliberately, not
 missed. X and Threads ran that week and Pinterest was already queued
-through 9/18, so IG's `nextStart` still reads 2026-09-12 and its whole pool
-is untouched. Nothing needs undoing, the next IG batch just starts there.
+through 9/18. Nothing was marked for IG, since nothing posted, so its
+whole pool is untouched, but its `nextStart` was moved forward to
+2026-09-19 anyway to line up with the other three. That is the one case
+where advancing `nextStart` without marking anything is correct: the date
+pointer tracks where the calendar resumes, the marks track what got
+consumed, and a skipped week moves one without the other.
 
 X's shape changed again that week: 2 single-liners plus 1 article thread a
 day, 21 posts. The 9/5 week ran 4 singles plus a thread at 35, which was a
