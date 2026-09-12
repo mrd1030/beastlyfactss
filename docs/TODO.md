@@ -256,6 +256,28 @@ of a species' set can be right and half wrong, so there is no shortcut of
 replacing a whole species at once, and no way to infer a set from its guide
 hero. Nineteen images checked so far, seven wrong.
 
+### Second batch: the fish, 2026-09-12
+
+Four more species, 24 images. Two clear misses, two to look at:
+
+- **`angelfish-feeding.jpg`** is a rounded striped cichlid with short fins, no
+  trailing dorsal, anal or ventral filaments. Not *Pterophyllum*. The other five
+  angelfish files are correct freshwater angels in planted tanks.
+- **`neon-tetra-health-issues.jpg`** has the red stripe running from behind the
+  gill all the way to the tail, which is a cardinal tetra. On a neon the red
+  starts mid-body. The other five neon files are correct.
+- **Guppy: the set is muddled rather than plainly wrong.** `feeding` is a
+  deep-bodied spotted livebearer that reads platy, and `cost` and
+  `health-issues` mix obvious platies in among the guppies. `enrichment` is a
+  textbook fancy guppy male. Worth a human eye before spending art, since
+  platies and guppies share a tank and a body plan.
+- **Oscar: all six correct.** Worth recording, because the oscar's *guide* hero
+  was one of the wrong ones. Its article set was fine the whole time, which is
+  the per-image finding again.
+
+Running total for the article folder: 7 species checked of about 110, 43 images
+opened, 10 replaced and 4 open.
+
 ### Separate from species: 12 badly undersized files
 
 **Deferred 2026-09-12 by Mike's call.** One of the twelve, the corydoras feeding
