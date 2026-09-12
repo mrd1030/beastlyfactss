@@ -34,7 +34,7 @@ const FAQS = [
   },
   {
     q: 'What if it is not what I expected?',
-    a: 'Email hello@beastlyfacts.com and we will sort it out. These are small, honest products, not something we want you stuck with if it genuinely does not fit your situation.',
+    a: 'Refunds within 30 days of purchase, no questions asked. Email hello@beastlyfacts.com and we will process it. A refund removes the package from your library and ends your licence to it, so we ask that you delete any copy you downloaded or printed.',
   },
   {
     q: 'Are these a substitute for a vet?',
