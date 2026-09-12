@@ -1610,6 +1610,26 @@ corners of the mouth makes it a koi, which is the exact difference the koi
 versus goldfish guide turns on, and the previous frame appeared to have them.
 Not a fancy goldfish either: no double tail, no head growth, no telescope eyes.
 
+#### angelfish.jpg
+```
+Photorealistic photograph of a single freshwater angelfish in full side profile
+in a planted freshwater aquarium, whole fish in frame including the fin tips,
+hanging almost still in midwater. Tall disc-shaped body flattened side to side
+and clearly taller than it is long, a very tall triangular dorsal fin and a
+matching anal fin sweeping back to fine points, a pair of long thread-like
+ventral filaments trailing below, and a silver body crossed by four vertical
+black bars, one running down through the eye and one at the base of the tail.
+Tall ribbon-leaved plants and a dark background behind, soft diffused aquarium
+light from above, silver and deep green palette, camera level with the fish,
+60mm macro, f/5.6, 3:2.
+```
+Check: freshwater Pterophyllum, so a tall thin disc with trailing fins and
+vertical bars in a planted tank. Never a marine angelfish, never coral, reef
+rock, open blue water or sunbeams through saltwater, which is what the previous
+frame showed. Not a discus either: a discus is a rounded disc with short fins
+and no trailing filaments, and it has its own hero.
+
+
 
 ---
 
