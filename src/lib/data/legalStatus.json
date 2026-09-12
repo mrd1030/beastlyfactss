@@ -10120,6 +10120,7 @@
     },
     "guinea-pig": {
       "name": "Guinea pig",
+      "article": "/blog/guinea-pig-legal-guide/",
       "scientific": "Cavia porcellus",
       "encyclopediaId": "guinea-pig",
       "jurisdictions": {
@@ -11404,6 +11405,7 @@
     },
     "tokay-gecko": {
       "name": "Tokay gecko",
+      "article": "/blog/tokay-gecko-legal-guide/",
       "scientific": "Gekko gecko",
       "encyclopediaId": "tokay-gecko",
       "jurisdictions": {
@@ -12266,6 +12268,7 @@
     },
     "nile-monitor": {
       "name": "Nile monitor",
+      "article": "/blog/nile-monitor-legal-guide/",
       "scientific": "Varanus niloticus",
       "jurisdictions": {
         "FL": {
@@ -13149,6 +13152,7 @@
     },
     "degu": {
       "name": "Degu",
+      "article": "/blog/degu-legal-guide/",
       "scientific": "Octodon degus",
       "jurisdictions": {
         "MA": {
@@ -19994,6 +19998,7 @@
     },
     "red-footed-tortoise": {
       "name": "Red-Footed Tortoise",
+      "article": "/blog/red-footed-tortoise-legal-guide/",
       "scientific": "Chelonoidis carbonarius",
       "encyclopediaId": "red-footed-tortoise",
       "jurisdictions": {
@@ -20417,6 +20422,7 @@
     },
     "bearded-dragon": {
       "name": "Bearded dragon",
+      "article": "/blog/bearded-dragon-legal-guide/",
       "scientific": "Pogona vitticeps",
       "encyclopediaId": "bearded-dragon",
       "jurisdictions": {
@@ -22132,6 +22138,7 @@
     },
     "chameleon-jackson": {
       "name": "Jackson's chameleon",
+      "article": "/blog/jacksons-chameleon-legal-guide/",
       "scientific": "Trioceros jacksonii",
       "encyclopediaId": "jacksons-chameleon",
       "jurisdictions": {
@@ -22989,6 +22996,7 @@
     },
     "rabbit": {
       "name": "Rabbit",
+      "article": "/blog/rabbit-legal-guide/",
       "scientific": "Oryctolagus cuniculus",
       "encyclopediaId": "rabbit",
       "jurisdictions": {
@@ -23418,6 +23426,7 @@
     },
     "hissing-cockroach": {
       "name": "Madagascar hissing cockroach",
+      "article": "/blog/madagascar-hissing-cockroach-legal-guide/",
       "scientific": "Gromphadorhina portentosa",
       "encyclopediaId": "hissing-cockroach",
       "jurisdictions": {
