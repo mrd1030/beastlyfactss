@@ -7,6 +7,18 @@ file is the one that counts. Cross items off here, not in a chat window.
 
 ## 1. Write the federal law guide
 
+**Done 2026-09-12.** `content/guides/federal-exotic-pet-laws-guide.mdx`, live,
+hero installed, wired into RELATED_ARTICLES against 14 guide ids and linked
+from the hub's federal section. Voice check clean, 0 errors and 0 warnings, all
+14 sources return 200.
+
+What it covers, all against primary text: the Lacey Act's two halves, the
+injurious wildlife list and the 2017 D.C. Circuit ruling that ended the
+interstate transport ban, CITES including the CoP20 amendments that took effect
+5 March 2026 and the Chilean rose tarantula listing that takes effect 5 June
+2027, the Captive Wildlife Safety Act and the Big Cat Public Safety Act, the FDA
+four-inch turtle rule, and the Wild Bird Conservation Act.
+
 The 52 state pages and the 52 animal pages both stop at the state line, and
 every one of them has a reader who then asks "but is it legal federally."
 Nothing on the site answers that.

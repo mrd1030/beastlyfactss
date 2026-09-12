@@ -16690,6 +16690,62 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/federal-exotic-pet-laws-guide.mdx",
+    "slug": "federal-exotic-pet-laws-guide",
+    "title": "The Federal Laws That Reach a Pet Owner",
+    "seoTitle": "Federal Exotic Pet Laws: What Actually Applies",
+    "excerpt": "Six federal laws reach private exotic pet keeping in the US, and only one of them bans owning an animal. The rest decide what may cross a border, what may cross a state line, and who may sell it.",
+    "date": "2026-09-12",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Legal",
+      "Exotic Pet Laws",
+      "Federal Law",
+      "CITES",
+      "Lacey Act",
+      "Pet Ownership"
+    ],
+    "readTime": 9,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/federal-exotic-pet-laws.jpg",
+    "imageAlt": "Hatchling red-eared slider at the waterline on a wet rock",
+    "emoji": "📜",
+    "lastReviewed": "2026-09-12",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there a federal permit for owning an exotic pet?",
+        "a": "There is no federal permit for private ownership, because there is no general federal ownership rule to be permitted out of. Federal permits exist for importing a listed species, exporting one, or moving an injurious species into Hawaii or Puerto Rico. Whether you may keep the animal at home is decided by state and local law."
+      },
+      {
+        "q": "Can I drive an injurious species like a Burmese python from one state to another?",
+        "a": "Federal law does not prohibit it. In April 2017 the D.C. Circuit read the shipment clause of 18 U.S.C. 42 to cover movement between the listed jurisdictions, and the Fish and Wildlife Service now says transport of injurious wildlife between the 49 continental states is not prohibited. Import, and shipment to or from Hawaii, Puerto Rico, DC and the territories, are still barred. State law is separate."
+      },
+      {
+        "q": "Does a CITES Appendix I listing make an animal illegal to own?",
+        "a": "No. CITES is a permit system for moving specimens across national borders, and the regulations define trade as international trade. A captive-bred Appendix I animal from a breeding operation registered with the CITES Secretariat can be traded internationally under Appendix II rules, and domestic ownership is not what the treaty reaches at all."
+      },
+      {
+        "q": "Is the four-inch turtle rule a ban on owning small turtles?",
+        "a": "It bans selling and distributing them. 21 C.F.R. 1240.62 makes it unlawful to sell, hold for sale, or offer for commercial or public distribution any viable turtle egg or live turtle with a carapace under four inches. It carries exceptions for bona fide scientific, educational or exhibitional use other than as pets, for transactions not connected with a business, and for shipments labeled for export only."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 14,
+    "headingCount": 11,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/feline-kidney-disease-ckd-pkd-guide.mdx",
     "slug": "feline-kidney-disease-ckd-pkd-guide",
     "title": "Kidney Disease in Cats: What the Numbers Actually Mean",
