@@ -11,6 +11,8 @@ import {
   TRACKED_ANIMAL_COUNT,
 } from '@/lib/data/legalByState';
 import { JURISDICTIONS_AZ, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
+import { describeVerified } from '@/lib/utils/verifiedDates';
+import CitationBox from '@/components/legal/CitationBox';
 import { withBrand } from '@/lib/utils/seo';
 
 const SITE = 'https://beastlyfacts.com';
@@ -38,6 +40,13 @@ export default function ExoticPetLawsStateIndex() {
   const canonical = `${SITE}/exotic-pet-laws/state/`;
 
   const mostRestrictive = JURISDICTIONS_BY_RESTRICTION.slice(0, 10);
+
+  // Across the whole matrix here, since this page summarises all of it. The
+  // ranking is the most quotable thing on the site, so the span it rests on has
+  // to travel with it.
+  const verified = describeVerified(
+    Object.values(STATE_LEGAL).flatMap((j) => j.rows.map((r) => r.entry?.verifiedOn)),
+  );
 
   return (
     <div className="min-h-screen bg-background">
@@ -143,6 +152,12 @@ export default function ExoticPetLawsStateIndex() {
               })}
             </ol>
           </section>
+
+          <CitationBox
+            title="Exotic pet laws by state"
+            url={canonical}
+            verified={verified}
+          />
 
           {/* Real anchors, not a <select>. A dropdown that navigates on change
               is invisible to a crawler: the change handler never fires, so all

@@ -86,13 +86,8 @@ export const JURISDICTIONS_BY_RESTRICTION = Object.values(BY_CODE)
   .slice()
   .sort((a, b) => (b.gated - a.gated) || a.name.localeCompare(b.name));
 
-// The newest verification date anywhere in a jurisdiction's column, which is
-// what a "last checked" line on a state page should show. Undated entries are
-// skipped rather than counted as old.
-export function lastVerified(code) {
-  const dates = (BY_CODE[code]?.rows ?? [])
-    .map((r) => r.entry?.verifiedOn)
-    .filter(Boolean)
-    .sort();
-  return dates.length ? dates[dates.length - 1] : null;
-}
+// There was a lastVerified(code) here returning the newest date in a column.
+// It was wrong for the only thing it was used for: 36 of the 52 jurisdictions
+// carry several distinct verifiedOn values about a month apart, so the newest
+// of them presented as "last verified" overstates the older rows. Use
+// describeVerified() in src/lib/utils/verifiedDates.js, which reports the span.

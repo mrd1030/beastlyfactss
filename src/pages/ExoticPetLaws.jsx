@@ -9,6 +9,8 @@ import { STATE_NAMES } from '@/lib/data/usStatePaths';
 import { CODE_TO_SLUG, SLUG_TO_CODE } from '@/lib/data/stateSlugs';
 // Shared with the state pages, which need the same mid-sentence casing.
 import { inSentence } from '@/lib/utils/animalNames';
+import { describeVerified, formatDay } from '@/lib/utils/verifiedDates';
+import CitationBox from '@/components/legal/CitationBox';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 import LegalStatusMap, { STATUS_BUCKETS, BUCKET_ORDER, bucketFor } from '@/components/legal/LegalStatusMap';
 
@@ -221,6 +223,10 @@ export default function ExoticPetLaws() {
   const detail = selectedState
     ? { code: selectedState, entry: statuses[selectedState] }
     : null;
+
+  // The span across this animal's researched jurisdictions, not the newest of
+  // them. See src/lib/utils/verifiedDates.js for why the newest alone overstates.
+  const verified = describeVerified(Object.values(statuses).map((e) => e.verifiedOn));
 
   // Animal names here run from "Hamster" to "Argentine black and white tegu", a
   // 23 character swing, so the tags are composed from variants rather than one
@@ -522,6 +528,11 @@ export default function ExoticPetLaws() {
                         {LEGAL.sources[detail.entry.sourceId].note}
                       </p>
                     )}
+                    {formatDay(detail.entry.verifiedOn) && (
+                      <p className="mt-2 text-xs font-body text-muted-foreground">
+                        {`Checked against the published text on ${formatDay(detail.entry.verifiedOn)}.`}
+                      </p>
+                    )}
                     {LEGAL.sources[detail.entry.sourceId] && (
                       <a
                         href={LEGAL.sources[detail.entry.sourceId].url}
@@ -741,6 +752,16 @@ export default function ExoticPetLaws() {
               .
             </p>
           </section>
+        )}
+
+        {/* Not on the bare index render, which is a UI default rather than a
+            page about one animal, so there is nothing specific to cite. */}
+        {!isIndex && (
+          <CitationBox
+            title={`${animal.name} laws by state`}
+            url={canonical}
+            verified={verified}
+          />
         )}
 
         <section id="how-to-read" className="mt-12 scroll-mt-20 rounded-xl border border-border bg-muted/30 p-5">

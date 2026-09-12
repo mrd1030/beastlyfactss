@@ -4,7 +4,9 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import { STATUS_BUCKETS } from '@/components/legal/LegalStatusMap';
-import { forJurisdiction, lastVerified, TRACKED_ANIMAL_COUNT } from '@/lib/data/legalByState';
+import { forJurisdiction, TRACKED_ANIMAL_COUNT } from '@/lib/data/legalByState';
+import { describeVerified, formatDay } from '@/lib/utils/verifiedDates';
+import CitationBox from '@/components/legal/CitationBox';
 import { SLUG_TO_CODE, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import { inSentence, joinList } from '@/lib/utils/animalNames';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
@@ -83,7 +85,12 @@ export default function ExoticPetLawsState() {
   const clear = j.rows.filter((r) => r.bucket === 'none');
   const unchecked = j.rows.filter((r) => r.bucket === 'notChecked');
   const banned = j.rows.filter((r) => r.bucket === 'banned');
-  const verified = lastVerified(code);
+  // The span of the column, not its newest date. 36 of the 52 jurisdictions
+  // hold several distinct verifiedOn values about a month apart, and printing
+  // only the newest claimed freshness the older rows do not have. That matters
+  // more here than elsewhere because the citation box below puts this string
+  // into text other people publish.
+  const verified = describeVerified(j.rows.map((r) => r.entry?.verifiedOn));
 
   const isState = j.level === 'state';
   // "in Texas" works; "in New York City" works; "in the District of Columbia"
@@ -200,7 +207,7 @@ export default function ExoticPetLawsState() {
 
           {verified && (
             <p className="mt-4 text-xs font-body text-muted-foreground">
-              {`Last verified against the published rules on ${verified}. Every entry below quotes the statute or regulation it comes from.`}
+              {`Read against the published rules, ${verified}. Every entry below quotes the statute or regulation it comes from and carries the date it was last checked.`}
             </p>
           )}
 
@@ -279,6 +286,11 @@ export default function ExoticPetLawsState() {
                           <p className="mt-2 text-xs font-body text-muted-foreground leading-relaxed">
                             <span className="font-semibold text-foreground">How this rule works: </span>
                             {source.note}
+                          </p>
+                        )}
+                        {formatDay(row.entry?.verifiedOn) && (
+                          <p className="mt-2 text-xs font-body text-muted-foreground">
+                            {`Checked against the published text on ${formatDay(row.entry.verifiedOn)}.`}
                           </p>
                         )}
 
@@ -368,6 +380,12 @@ export default function ExoticPetLawsState() {
               </ul>
             </section>
           )}
+
+          <CitationBox
+            title={`Exotic pet laws in ${j.name}`}
+            url={canonical}
+            verified={verified}
+          />
 
           <section className="mt-12 rounded-xl border border-border bg-card p-5">
             <h2 className="font-display font-bold text-lg text-foreground mb-2">
