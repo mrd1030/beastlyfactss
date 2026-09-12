@@ -35,6 +35,11 @@
     "excerpt": "Exactly one state bans hamsters, and it is not the one people guess. California, which restricts more animals than anywhere else, clears both the golden hamster and the dwarfs by name, then bans the..."
   },
   {
+    "slug": "madagascar-hissing-cockroach-legal-guide",
+    "title": "Are Madagascar Hissing Cockroaches Legal to Own?",
+    "excerpt": "Most state wildlife law was written for animals with a backbone, and the hissing cockroach lands in the hole that leaves. Four jurisdictions ban it, one requires an agriculture permit, and three..."
+  },
+  {
     "slug": "prairie-dog-legal-guide",
     "title": "Are Prairie Dogs Legal? The Federal Ban Ended in 2008",
     "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox outbreak traced to a Texas pet distributor. The FDA lifted that in 2008. Fifteen..."
@@ -80,6 +85,16 @@
     "excerpt": "The federal python ban that shows up in Everglades news coverage never included ball pythons. They're legal almost everywhere, with two real exceptions: Hawaii's total snake ban, and New York City's..."
   },
   {
+    "slug": "bearded-dragon-legal-guide",
+    "title": "Is It Legal to Own a Bearded Dragon? State-by-State Guide",
+    "excerpt": "The bearded dragon is the most commonly kept pet lizard in the country and clears 47 of 52 jurisdictions without a permit. Its home country stopped exporting live native reptiles in 1982, which is..."
+  },
+  {
+    "slug": "blue-tongue-skink-legal-guide",
+    "title": "Is It Legal to Own a Blue-Tongued Skink? State Guide",
+    "excerpt": "Blue-tongued skinks are cleared in 47 of 52 jurisdictions, but every rule that does reach them reaches them as skinks rather than as this species. That single fact explains why their legal map..."
+  },
+  {
     "slug": "boa-constrictor-legal-guide",
     "title": "Is It Legal to Own a Boa Constrictor? Federal Withdrawal and State Rules",
     "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and Louisiana's 2025 rewrite in..."
@@ -110,6 +125,16 @@
     "excerpt": "Corn snakes are the classic pet-store starter snake almost everywhere, except Georgia, where the state's own wildlife agency lists them as a native species that can't be kept as a pet at all..."
   },
   {
+    "slug": "crested-gecko-legal-guide",
+    "title": "Is It Legal to Own a Crested Gecko? State-by-State Guide",
+    "excerpt": "Crested geckos clear 46 of 52 jurisdictions without a permit, which makes the six exceptions worth knowing precisely. The one most keepers never see coming is Massachusetts, where the permit is..."
+  },
+  {
+    "slug": "degu-legal-guide",
+    "title": "Is It Legal to Own a Degu? State-by-State Guide",
+    "excerpt": "The degu is the most restricted small rodent kept as a pet in the US, and the reason repeats almost word for word from state to state: the cleared-rodent list names the chinchilla, guinea pig..."
+  },
+  {
     "slug": "ferret-legal-guide",
     "title": "Is It Legal to Own a Ferret? State-by-State Guide",
     "excerpt": "Ferrets are legal pets almost everywhere in the US, with two real exceptions: California and Hawaii ban them outright, and New York City bans them locally even though the rest of New York State..."
@@ -125,9 +150,24 @@
     "excerpt": "Garter snakes are native almost everywhere, so most states regulate them as wildlife first and a pet second, often more strictly than an imported colubrid. New York is the standout: state guidance..."
   },
   {
+    "slug": "gerbil-legal-guide",
+    "title": "Is It Legal to Own a Gerbil? The California Ban Explained",
+    "excerpt": "Gerbils are legal in 50 of 52 US jurisdictions, which makes California the outlier everyone has heard about and almost nobody can cite correctly. The ban is real, and the way the regulation gets..."
+  },
+  {
     "slug": "giant-millipede-legal-guide",
     "title": "Is It Legal to Own a Giant African Millipede? State-by-State Guide",
     "excerpt": "There was never a 2006 blanket import ban on giant African millipedes, despite what hobbyist forums repeat. The rule is a standing USDA import permit, plus real state variation from Florida's named..."
+  },
+  {
+    "slug": "green-iguana-legal-guide",
+    "title": "Is It Legal to Own a Green Iguana? State-by-State Guide",
+    "excerpt": "The green iguana is the most restricted lizard in common keeping, and the map changed recently. Florida added it to the prohibited list in 2021, which means a great deal of older advice describing..."
+  },
+  {
+    "slug": "guinea-pig-legal-guide",
+    "title": "Is It Legal to Own a Guinea Pig? The Short Answer",
+    "excerpt": "The guinea pig is the least restricted animal on this entire map, cleared in all 52 jurisdictions with only Hawaii attaching a condition. The question worth answering instead is the pairs one, and..."
   },
   {
     "slug": "hedgehog-legal-guide",
@@ -140,14 +180,39 @@
     "excerpt": "Hognose snakes are mildly rear-fanged, but that doesn't make them a regulated venomous species anywhere we checked. The restriction to watch for is Georgia, which bans keeping native hognose as pets..."
   },
   {
+    "slug": "jacksons-chameleon-legal-guide",
+    "title": "Is It Legal to Own a Jackson's Chameleon? State Guide",
+    "excerpt": "Jackson's chameleons clear 47 of 52 jurisdictions, and the one that bars them is the one where they are most abundant. Hawaii's feral population descends from a single 1972 release in Kaneohe, and no..."
+  },
+  {
+    "slug": "leopard-gecko-legal-guide",
+    "title": "Is It Legal to Own a Leopard Gecko? State-by-State Guide",
+    "excerpt": "The leopard gecko is one of the least restricted reptiles in the country, cleared without a permit in 47 of 52 jurisdictions. Hawaii is the interesting exception, because it names this species..."
+  },
+  {
     "slug": "milk-snake-legal-guide",
     "title": "Is It Legal to Own a Milk Snake? State-by-State Guide",
     "excerpt": "Milk snakes are a common pet-trade species with one of the more tangled legal pictures out there: Georgia bans them outright as a native species, and Wisconsin restricts even buying a captive-bred..."
   },
   {
+    "slug": "nile-monitor-legal-guide",
+    "title": "Is It Legal to Own a Nile Monitor? State-by-State Guide",
+    "excerpt": "The Nile monitor is the only monitor named on Florida's prohibited list, and one of very few reptiles that several states bar by name rather than by family. Nine jurisdictions ban it and seven more..."
+  },
+  {
+    "slug": "rabbit-legal-guide",
+    "title": "Is It Legal to Own a Rabbit? The Two States Worth Reading",
+    "excerpt": "Rabbits are unrestricted in 50 of 52 jurisdictions, so this would be a short article if two states had not written rules that appear to reach every pet rabbit in the country without ever intending to."
+  },
+  {
     "slug": "red-eared-slider-legal-guide",
     "title": "Is It Legal to Own a Red-Eared Slider? State-by-State Guide",
     "excerpt": "There's no federal ban on owning a red-eared slider, only a 1975 rule against selling tiny ones. The restrictions come from state invasive-species laws, and Colorado added a big one in 2026 whose..."
+  },
+  {
+    "slug": "red-footed-tortoise-legal-guide",
+    "title": "Is It Legal to Own a Red-Footed Tortoise? State Guide",
+    "excerpt": "No US jurisdiction bans the red-footed tortoise outright, which makes it unusual among the reptiles on this map. What it gets instead is conditions, and the most consequential one is a rule about..."
   },
   {
     "slug": "rosy-boa-legal-guide",
@@ -168,6 +233,11 @@
     "slug": "tiger-salamander-legal-guide",
     "title": "Is It Legal to Own a Tiger Salamander? Three Separate Rules Explained",
     "excerpt": "A 2025 federal rule added tiger salamanders to an injurious wildlife list, and headlines made that sound like a ban. It isn't one. The species sits under three separate, unrelated legal regimes, and..."
+  },
+  {
+    "slug": "tokay-gecko-legal-guide",
+    "title": "Is It Legal to Own a Tokay Gecko? State-by-State Guide",
+    "excerpt": "The tokay has the worst reputation of any commonly kept gecko and the cleanest legal record. It clears 49 of 52 jurisdictions, and in New Jersey it is the one gecko that does not need a permit..."
   },
   {
     "slug": "ackie-monitor-legal-guide",

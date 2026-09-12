@@ -4810,6 +4810,61 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/bearded-dragon-legal-guide.mdx",
+    "slug": "bearded-dragon-legal-guide",
+    "title": "Is It Legal to Own a Bearded Dragon? State-by-State Guide",
+    "seoTitle": "Are Bearded Dragons Legal? Two Places Say No",
+    "excerpt": "The bearded dragon is the most commonly kept pet lizard in the country and clears 47 of 52 jurisdictions without a permit. Its home country stopped exporting live native reptiles in 1982, which is why every animal in the trade is captive-bred stock.",
+    "date": "2026-09-20",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Bearded Dragon",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/bearded-dragon-legal.jpg",
+    "imageAlt": "Bearded dragon basking on a flat stone under a heat lamp",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-20",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are bearded dragons legal in the US?",
+        "a": "In 47 of 52 jurisdictions, with no permit. Hawaii and the District of Columbia do not allow private ownership, New Jersey requires a possession permit, and Minnesota and Maine attach conditions rather than a flat clearance."
+      },
+      {
+        "q": "Why does Maine treat the bearded dragon differently from other lizards?",
+        "a": "Maine names Pogona vitticeps by species on its Unrestricted Species List rather than clearing it as part of a family or genus. That means the asterisk which strips out conservation-listed species never gets applied to it. The whole reptile section still sits under a captive bred origin only heading, which is the condition that does the work."
+      },
+      {
+        "q": "Can I bring a bearded dragon into Hawaii?",
+        "a": "No. The inland bearded dragon appears on Part A of Hawaii's Restricted Animal List, which is headed for research and exhibition. A university or licensed exhibitor can hold one; a household cannot, and captive-bred origin makes no difference."
+      },
+      {
+        "q": "Are wild-caught bearded dragons available?",
+        "a": "No. Australia banned the commercial export of live native vertebrates in 1982, and the ban continues under the EPBC Act 1999. The US trade is entirely captive-bred stock, with no lawful wild-caught supply."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/bearded-dragon-safe-foods-guide.mdx",
     "slug": "bearded-dragon-safe-foods-guide",
     "title": "Bearded Dragon Safe Foods List: Staple, Occasional, and Never Foods",
@@ -6980,6 +7035,57 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 8,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/blue-tongue-skink-legal-guide.mdx",
+    "slug": "blue-tongue-skink-legal-guide",
+    "title": "Is It Legal to Own a Blue-Tongued Skink? State Guide",
+    "seoTitle": "Are Blue-Tongued Skinks Legal? Two Places Say No",
+    "excerpt": "Blue-tongued skinks are cleared in 47 of 52 jurisdictions, but every rule that does reach them reaches them as skinks rather than as this species. That single fact explains why their legal map differs from a gecko's in places keepers assume are identical.",
+    "date": "2026-09-19",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Blue-Tongued Skink",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Lizard Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/blue-tongue-skink-legal.jpg",
+    "imageAlt": "Blue-tongued skink with its tongue extended, showing the blue coloration it is named for",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-19",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are blue-tongued skinks legal to own?",
+        "a": "In 47 of 52 US jurisdictions, with no permit. Hawaii and the District of Columbia do not allow private ownership, New Jersey requires a possession permit, and Minnesota and Maine attach conditions rather than a flat clearance."
+      },
+      {
+        "q": "Does a wild-caught blue-tongued skink have the same legal status as a captive-bred one?",
+        "a": "Not in Maine. The entire reptile section of Maine's Unrestricted Species List sits under a heading reading captive bred origin only, which is the condition that governs the clearance. A wild-caught animal of an otherwise cleared species is not cleared there."
+      },
+      {
+        "q": "Why does New Jersey treat skinks differently from geckos?",
+        "a": "They are separate entries on the same permit list. Geckos appear at N.J.A.C. 7:25-4.3(a)3.xiv and skinks at 3.x, as Family Scincidae taken whole. Both require a permit, but a keeper reading only the gecko entry would miss that their skink is covered by a different clause."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -14578,6 +14684,57 @@
     "imageHeight": 1168
   },
   {
+    "path": "/content/guides/crested-gecko-legal-guide.mdx",
+    "slug": "crested-gecko-legal-guide",
+    "title": "Is It Legal to Own a Crested Gecko? State-by-State Guide",
+    "seoTitle": "Are Crested Geckos Legal? The Six Places They Aren't",
+    "excerpt": "Crested geckos clear 46 of 52 jurisdictions without a permit, which makes the six exceptions worth knowing precisely. The one most keepers never see coming is Massachusetts, where the permit is triggered by the species' conservation status rather than by anything it does.",
+    "date": "2026-09-12",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Crested Gecko",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Gecko Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/crested-gecko-legal.jpg",
+    "imageAlt": "Crested gecko gripping a branch, showing the eyelash crests it is named for",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-12",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do I need a permit to own a crested gecko?",
+        "a": "In 46 of 52 US jurisdictions, no. Massachusetts and New Jersey both require one, Minnesota and Maine attach conditions rather than a flat clearance, and Hawaii and the District of Columbia do not allow private ownership at all. Nowhere else that was checked asks for paperwork."
+      },
+      {
+        "q": "Why does Massachusetts treat crested geckos differently from leopard geckos?",
+        "a": "Massachusetts clears the gecko family without a permit, but that clearance is expressly subject to 321 CMR 9.01(3), which pulls back out anything rare. The IUCN assesses the crested gecko as vulnerable, which makes it categorically non-exempt. The leopard gecko is assessed as least concern, so the same rule leaves it alone."
+      },
+      {
+        "q": "Is the crested gecko named in Hawaii's ban?",
+        "a": "No, and that is what makes it a ban. Hawaii allows introduction only for animals on its conditionally approved or restricted lists, so an animal on neither is barred by default. The crested gecko appears on no Hawaii list under either of its names, while a congener does appear, which suggests the geckos were worked through one at a time and this one was never reached."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/crested-gecko-tank-setup-guide.mdx",
     "slug": "crested-gecko-tank-setup-guide",
     "title": "Crested Gecko Tank Setup: Vertical Space, Humidity, and a Hard Temperature Ceiling",
@@ -15158,6 +15315,61 @@
     "sourceCount": 3,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/degu-legal-guide.mdx",
+    "slug": "degu-legal-guide",
+    "title": "Is It Legal to Own a Degu? State-by-State Guide",
+    "seoTitle": "Are Degus Legal? Banned in 8 of 52 Jurisdictions",
+    "excerpt": "The degu is the most restricted small rodent kept as a pet in the US, and the reason repeats almost word for word from state to state: the cleared-rodent list names the chinchilla, guinea pig, gerbil, hamster, mouse and rat, and stops there.",
+    "date": "2026-09-13",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Degu",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Small Mammal Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/degu-legal.jpg",
+    "imageAlt": "Degu sitting on a wooden ledge holding forage in its forepaws",
+    "emoji": "🐹",
+    "lastReviewed": "2026-09-13",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Where are degus illegal?",
+        "a": "Eight jurisdictions bar them outright: California, Colorado, Alaska, Connecticut, Georgia, New Mexico, Hawaii and the District of Columbia. Seven more require a permit, including Florida, Idaho, Wyoming, Oklahoma, Arkansas, Nevada and New Jersey. That leaves 34 where a degu is simply legal."
+      },
+      {
+        "q": "Why is the degu restricted when chinchillas and guinea pigs are not?",
+        "a": "Because most of these rules work from a list of cleared rodents rather than a list of banned ones. Alaska, Wyoming, Oklahoma, Arkansas and Connecticut all name the chinchilla, guinea pig, gerbil, hamster, mouse and rat, and the degu is absent from every one of them. In Arkansas the omission looks deliberate rather than accidental, since its close relatives are all listed."
+      },
+      {
+        "q": "Is a captive-bred degu treated differently?",
+        "a": "Rarely. The District of Columbia limits its rodent exception to domesticated species, and a degu is a wild species bred in captivity rather than a domesticated one, which puts it outside. Alabama's rule turns on the undefined phrase wild rodent and has the same problem: captive breeding does not create a domesticated lineage."
+      },
+      {
+        "q": "What does an unclear status mean here?",
+        "a": "That the rule could reach the animal but never says so. Alabama and Pennsylvania both fall here. Pennsylvania names the degu nowhere, and what arguably catches it is a catch-all about wildlife captive bred in another state. Treat unclear as a reason to ask the state directly, not as permission."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 7,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -19795,6 +20007,57 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/gerbil-legal-guide.mdx",
+    "slug": "gerbil-legal-guide",
+    "title": "Is It Legal to Own a Gerbil? The California Ban Explained",
+    "seoTitle": "Are Gerbils Legal? California and Hawaii Say No",
+    "excerpt": "Gerbils are legal in 50 of 52 US jurisdictions, which makes California the outlier everyone has heard about and almost nobody can cite correctly. The ban is real, and the way the regulation gets there is stranger than the ban itself.",
+    "date": "2026-09-22",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Gerbil",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/gerbil-legal.jpg",
+    "imageAlt": "Mongolian gerbil standing upright on deep bedding",
+    "emoji": "🐹",
+    "lastReviewed": "2026-09-22",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are gerbils illegal in California?",
+        "a": "Yes. California restricts the order Rodentia under Title 14 § 671, and gerbils are not among the small number of exceptions carved out for familiar pet rodents. The restriction means no private possession, import or sale, and it applies to captive-bred animals the same as any other."
+      },
+      {
+        "q": "Where else are gerbils banned?",
+        "a": "Hawaii, which lists both Meriones unguiculatus and Gerbillus gerbillus on Part A of its Restricted Animal List. That is the only other jurisdiction of the 52 checked with a restriction on them."
+      },
+      {
+        "q": "Why would a state ban an animal this small?",
+        "a": "Both bans are about establishment rather than danger. Gerbils are desert animals, and California and Hawaii both have climates where an escaped or released population could plausibly survive. Neither rule treats the gerbil as a threat to people."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/gerbil-tank-setup-guide.mdx",
     "slug": "gerbil-tank-setup-guide",
     "title": "Gerbil Enclosure Setup: Depth Is Everything",
@@ -22154,6 +22417,61 @@
     "imageHeight": 896
   },
   {
+    "path": "/content/guides/green-iguana-legal-guide.mdx",
+    "slug": "green-iguana-legal-guide",
+    "title": "Is It Legal to Own a Green Iguana? State-by-State Guide",
+    "seoTitle": "Are Green Iguanas Legal? Florida Banned Them in 2021",
+    "excerpt": "The green iguana is the most restricted lizard in common keeping, and the map changed recently. Florida added it to the prohibited list in 2021, which means a great deal of older advice describing Florida as the easy state for this animal is now backwards.",
+    "date": "2026-09-17",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Green Iguana",
+      "Legal",
+      "Exotic Pet Laws",
+      "Invasive Species",
+      "Lizard Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/green-iguana-legal.jpg",
+    "imageAlt": "Adult green iguana on a branch, showing its dewlap and dorsal crest",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-17",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can I still own a green iguana in Florida?",
+        "a": "Not as a new pet. Florida added Iguana iguana to its prohibited list in the 2021 rulemaking under 68-5.006(4)(m). The transitional provisions in 68-5.007 are unusually specific about this species, which matters for anyone who already held one when the rule took effect, but the species is closed to new private keepers."
+      },
+      {
+        "q": "Which places ban the green iguana outright?",
+        "a": "Five: Florida, Louisiana, New York City, the District of Columbia and Hawaii. Louisiana and New York City name the species directly. Hawaii lists the whole genus. DC bars it by omission, without ever having called it invasive the way Florida and Louisiana did."
+      },
+      {
+        "q": "Why is the green iguana restricted in Maine when other iguanas are not?",
+        "a": "Maine's Unrestricted Species List clears only the spiny-tailed iguanas, all species in genus Ctenosaura. Iguana iguana is not on the list, so the common green iguana needs a permit while its less commonly kept relative does not."
+      },
+      {
+        "q": "Is the green iguana legal in most of the country?",
+        "a": "Yes. Despite five outright bans, it is still unrestricted in 44 of 52 jurisdictions. The restrictions cluster in places where the animal can survive outdoors year-round, plus two jurisdictions that bar most wildlife regardless of climate."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 7,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/green-iguana-tank-setup-guide.mdx",
     "slug": "green-iguana-tank-setup-guide",
     "title": "Green Iguana Enclosure Setup: Plan for a Room, Not a Tank",
@@ -22638,6 +22956,61 @@
     "sourceCount": 5,
     "headingCount": 11,
     "ledeMatchesExcerpt": true,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/guinea-pig-legal-guide.mdx",
+    "slug": "guinea-pig-legal-guide",
+    "title": "Is It Legal to Own a Guinea Pig? The Short Answer",
+    "seoTitle": "Are Guinea Pigs Legal? Yes, in All 52 Jurisdictions",
+    "excerpt": "The guinea pig is the least restricted animal on this entire map, cleared in all 52 jurisdictions with only Hawaii attaching a condition. The question worth answering instead is the pairs one, and the answer is not what most people have heard.",
+    "date": "2026-09-29",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Guinea Pig",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/guinea-pig-legal.jpg",
+    "imageAlt": "Two guinea pigs together on a bed of timothy hay",
+    "emoji": "🐹",
+    "lastReviewed": "2026-09-29",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are guinea pigs legal in all 50 states?",
+        "a": "Yes, and in DC and New York City as well. Across all 52 jurisdictions checked, only Hawaii attaches anything, and what it attaches is a conditional approval rather than a restriction. No state requires a permit to keep one."
+      },
+      {
+        "q": "Is it illegal to buy only one guinea pig?",
+        "a": "Not anywhere in the United States. The rule people have in mind is Article 13 of Switzerland's Animal Protection Ordinance, in force since 2008, which requires social species including guinea pigs to be kept with a companion. It is Swiss law, not US law, and keeping a single guinea pig is lawful in every US jurisdiction."
+      },
+      {
+        "q": "Why is the guinea pig cleared when the degu and gerbil are not?",
+        "a": "Because it is domesticated and was already common when most of these lists were written. State rules that restrict rodents almost always name the guinea pig among the handful they clear, alongside the chinchilla, hamster, mouse and rat. The degu arrived in the trade later and is absent from those same lists."
+      },
+      {
+        "q": "What does Hawaii's conditional approval mean in practice?",
+        "a": "That the species is on Hawaii's list of conditionally approved animals by scientific name, Cavia porcellus, with the older synonym Cavia cobaya carried alongside it. Being listed is what makes it allowed, because Hawaii bars anything that appears on none of its lists."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -26098,6 +26471,61 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/jacksons-chameleon-legal-guide.mdx",
+    "slug": "jacksons-chameleon-legal-guide",
+    "title": "Is It Legal to Own a Jackson's Chameleon? State Guide",
+    "seoTitle": "Are Jackson's Chameleons Legal? Hawaii Is the Twist",
+    "excerpt": "Jackson's chameleons clear 47 of 52 jurisdictions, and the one that bars them is the one where they are most abundant. Hawaii's feral population descends from a single 1972 release in Kaneohe, and no private keeper there may hold one.",
+    "date": "2026-09-25",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Jackson's Chameleon",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Chameleon Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/guides/jacksons-chameleon-legal.jpg",
+    "imageAlt": "Male Jackson's chameleon in profile on a branch, all three horns visible",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-25",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Where is Jackson's chameleon illegal?",
+        "a": "Hawaii and the District of Columbia bar private ownership. New Jersey requires a possession permit, and Minnesota and Maine attach conditions. The other 47 jurisdictions place no restriction on it."
+      },
+      {
+        "q": "Why is it banned in Hawaii when it lives there?",
+        "a": "Because Hawaii's rule is about introduction rather than presence. Introduction is allowed only for animals on its conditionally approved or restricted lists, and this species is on neither, so it is barred by default. The feral population traces to a single 1972 release in Kaneohe and does not change what the lists say."
+      },
+      {
+        "q": "Does Maine clear chameleons as a family?",
+        "a": "No, and that is unusual. Maine lists ten chameleons individually, including two Trioceros, rather than clearing Chamaeleonidae whole. Jackson's chameleon is named, so it is cleared, but a chameleon keeper cannot reason from the family the way they can with geckos or skinks."
+      },
+      {
+        "q": "Are the horns treated as a dangerous feature anywhere?",
+        "a": "No. The three horns on a male are a display and sparring structure, not a defensive weapon against people, and no jurisdiction on this map regulates the species on that basis. The restrictions it does meet are all about introduction or closed permit lists."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/jacksons-chameleon-tank-setup-guide.mdx",
     "slug": "jacksons-chameleon-tank-setup-guide",
     "title": "Jackson's Chameleon Enclosure Setup: Considerably Cooler Than the Veiled Chameleon",
@@ -27954,6 +28382,57 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/leopard-gecko-legal-guide.mdx",
+    "slug": "leopard-gecko-legal-guide",
+    "title": "Is It Legal to Own a Leopard Gecko? State-by-State Guide",
+    "seoTitle": "Are Leopard Geckos Legal? Banned in Only Two Places",
+    "excerpt": "The leopard gecko is one of the least restricted reptiles in the country, cleared without a permit in 47 of 52 jurisdictions. Hawaii is the interesting exception, because it names this species individually rather than reaching it through a family.",
+    "date": "2026-09-15",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Leopard Gecko",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Gecko Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/leopard-gecko-legal.jpg",
+    "imageAlt": "Leopard gecko standing on sand-colored substrate, showing its spotted pattern",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-15",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are leopard geckos legal in every US state?",
+        "a": "Close to it. They clear 47 of 52 jurisdictions with no permit. Hawaii and the District of Columbia do not allow private ownership, New Jersey requires a possession permit, and Minnesota and Maine attach conditions rather than an outright clearance."
+      },
+      {
+        "q": "Why is the leopard gecko banned in Hawaii?",
+        "a": "It appears by scientific name, Eublepharis macularius, on Part A of Hawaii's Restricted Animal List. Part A is headed for research and exhibition, so a university or a licensed exhibitor can hold one while a private keeper cannot. Because the listing is individual rather than by family, there is no argument to be had about taxonomic coverage."
+      },
+      {
+        "q": "Does the leopard gecko need a permit in Massachusetts?",
+        "a": "No. Massachusetts exempts geckos from its permit requirement, subject to a carve-out for species carrying a rare conservation assessment. The leopard gecko is rated least concern by the IUCN, so the carve-out does not reach it. The crested gecko, rated vulnerable, is caught by that same clause."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/leopard-gecko-tank-setup-guide.mdx",
     "slug": "leopard-gecko-tank-setup-guide",
     "title": "Leopard Gecko Tank Setup: What Your Gecko Actually Needs",
@@ -29007,6 +29486,61 @@
     "truth": null,
     "sourceCount": 0,
     "headingCount": 6,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/madagascar-hissing-cockroach-legal-guide.mdx",
+    "slug": "madagascar-hissing-cockroach-legal-guide",
+    "title": "Are Madagascar Hissing Cockroaches Legal to Own?",
+    "seoTitle": "Are Hissing Cockroaches Legal? The Invertebrate Gap",
+    "excerpt": "Most state wildlife law was written for animals with a backbone, and the hissing cockroach lands in the hole that leaves. Four jurisdictions ban it, one requires an agriculture permit, and three cannot be read either way.",
+    "date": "2026-09-16",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Madagascar Hissing Cockroach",
+      "Legal",
+      "Exotic Pet Laws",
+      "Invertebrates",
+      "Pet Ownership"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/hissing-cockroach-legal.jpg",
+    "imageAlt": "Madagascar hissing cockroach on bark, its glossy segmented back lit from one side",
+    "emoji": "🪳",
+    "lastReviewed": "2026-09-16",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Where are Madagascar hissing cockroaches illegal?",
+        "a": "Four jurisdictions bar them: New Hampshire, Montana, Hawaii and the District of Columbia. Florida requires an agriculture permit rather than a wildlife one. Oregon attaches conditions. Three more, New Mexico, New Jersey and Idaho, have rules that could reach insects but never say whether they do."
+      },
+      {
+        "q": "Why do so few states regulate a pet cockroach?",
+        "a": "Because most state wildlife codes define wildlife as mammals, birds, reptiles, amphibians and fish, and stop there. An insect is outside the definition, so the rules never reach it. The states that do regulate it are the ones whose definition of wildlife explicitly includes invertebrates."
+      },
+      {
+        "q": "Which state has the strictest rule?",
+        "a": "New Hampshire, and it takes four provisions to get there. RSA 207:1, XXXV defines wildlife to include invertebrates by name, which pulls the species into a regime most states never apply to insects at all."
+      },
+      {
+        "q": "Why does Florida handle this through agriculture rather than wildlife?",
+        "a": "Because Florida's wildlife chapters give no hint of the species. Rule 5B-57.004(1) sits with the Department of Agriculture and makes it unlawful to possess certain arthropods without a permit, which is a plant-pest framework rather than a captive-wildlife one."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 7,
+    "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -31257,6 +31791,61 @@
     "sourceCount": 2,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/nile-monitor-legal-guide.mdx",
+    "slug": "nile-monitor-legal-guide",
+    "title": "Is It Legal to Own a Nile Monitor? State-by-State Guide",
+    "seoTitle": "Are Nile Monitors Legal? Banned in 9 of 52 Places",
+    "excerpt": "The Nile monitor is the only monitor named on Florida's prohibited list, and one of very few reptiles that several states bar by name rather than by family. Nine jurisdictions ban it and seven more require a permit.",
+    "date": "2026-09-14",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Nile Monitor",
+      "Legal",
+      "Exotic Pet Laws",
+      "Invasive Species",
+      "Lizard Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/guides/nile-monitor-legal.jpg",
+    "imageAlt": "Nile monitor at the water's edge with its tongue extended",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-14",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Which states ban the Nile monitor?",
+        "a": "Nine jurisdictions: Florida, Louisiana, New York, New York City, Georgia, Connecticut, New Mexico, Hawaii and the District of Columbia. Seven more require a permit, including Rhode Island, Maine, Arkansas, Vermont, Delaware, Massachusetts and New Jersey."
+      },
+      {
+        "q": "Why does Florida ban the Nile monitor but not other monitors?",
+        "a": "Because it is the only monitor on the prohibited list. Varanus niloticus is named at 68-5.006(4)(l), while the savannah and ackie monitors are untouched by that chapter and need no permit at all. Florida has established Nile monitor populations, which the other two do not."
+      },
+      {
+        "q": "Is a Nile monitor legal where the rule says water monitor?",
+        "a": "Do not assume so. Iowa's statute says water monitor with no scientific name attached. That usually means Varanus salvator, but Varanus niloticus is commonly called the African water monitor, and the statute gives no binomial to settle it. Idaho has a similar problem with an undefined non-dangerous qualifier."
+      },
+      {
+        "q": "Does Georgia allow a Nile monitor with a licence?",
+        "a": "Not as a pet. Georgia names six reptiles in its licence rule and closes the pet route on all of them in the same subparagraph: they may only be licensed for scientific, educational or public exhibition purposes."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 7,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -34603,6 +35192,61 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/rabbit-legal-guide.mdx",
+    "slug": "rabbit-legal-guide",
+    "title": "Is It Legal to Own a Rabbit? The Two States Worth Reading",
+    "seoTitle": "Are Pet Rabbits Legal? Minnesota Says Invasive",
+    "excerpt": "Rabbits are unrestricted in 50 of 52 jurisdictions, so this would be a short article if two states had not written rules that appear to reach every pet rabbit in the country without ever intending to.",
+    "date": "2026-09-18",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Rabbit",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/rabbit-legal.jpg",
+    "imageAlt": "Rabbit sitting alert indoors with its ears raised",
+    "emoji": "🐰",
+    "lastReviewed": "2026-09-18",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are pet rabbits legal in every state?",
+        "a": "In 50 of 52 jurisdictions there is no restriction at all. Minnesota and Nevada both have rules that name Oryctolagus cuniculus, the species every domestic rabbit belongs to, without saying whether domesticated animals are inside or outside them."
+      },
+      {
+        "q": "Is my pet rabbit a prohibited invasive species in Minnesota?",
+        "a": "On the face of the rule, yes. Minnesota designates the European rabbit, Oryctolagus cuniculus, a prohibited invasive species with no strain or domestication qualifier, and § 84D.05 then bars possessing one except under a permit. The DNR restates this on its own invasive species page. Whether the state applies it to house rabbits is a separate question from what the rule says."
+      },
+      {
+        "q": "What is wrong with the Nevada entry?",
+        "a": "Its two columns disagree. The scientific classification names Oryctolagus cuniculus, which covers every domestic rabbit, while the common name column says Wild European Rabbit. Other rows in the same rules carve out domesticated races explicitly, for chinchilla, mink, rat, mouse, turkey and duck. The rabbit row does not."
+      },
+      {
+        "q": "Do city rules matter more than state rules for rabbits?",
+        "a": "Usually, yes. The state answer is unrestricted almost everywhere, so the rules that reach a rabbit keeper tend to be municipal limits on animal numbers, zoning that treats rabbits as livestock rather than pets, and tenancy or HOA terms. None of those appear on a state law map."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/rabbit-tank-setup-guide.mdx",
     "slug": "rabbit-tank-setup-guide",
     "title": "Rabbit Housing: Why the Old Pet-Store Cage Isn't Enough",
@@ -35906,6 +36550,61 @@
     "sourceCount": 3,
     "headingCount": 8,
     "ledeMatchesExcerpt": true,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/red-footed-tortoise-legal-guide.mdx",
+    "slug": "red-footed-tortoise-legal-guide",
+    "title": "Is It Legal to Own a Red-Footed Tortoise? State Guide",
+    "seoTitle": "Are Red-Footed Tortoises Legal? No State Bans Them",
+    "excerpt": "No US jurisdiction bans the red-footed tortoise outright, which makes it unusual among the reptiles on this map. What it gets instead is conditions, and the most consequential one is a rule about shell size that has nothing to do with the species.",
+    "date": "2026-09-26",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Red-Footed Tortoise",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Tortoise Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/red-footed-tortoise-legal.jpg",
+    "imageAlt": "Red-footed tortoise walking on a damp forest floor, red leg scales visible",
+    "emoji": "🐢",
+    "lastReviewed": "2026-09-26",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is the red-footed tortoise banned anywhere in the US?",
+        "a": "No. It is the rare reptile on this map with no outright ban in any of the 52 jurisdictions. New Jersey, New Mexico and Delaware require a permit, and Massachusetts, Hawaii, Vermont, Minnesota and New York City attach conditions."
+      },
+      {
+        "q": "Why does New York City regulate tortoises by size?",
+        "a": "Because its reptile clause ends with all turtles and tortoises with a carapace length of less than four inches. That draws the line by shell measurement rather than by species, so a hatchling red-footed tortoise is caught and the same animal grown out is not."
+      },
+      {
+        "q": "What does Vermont's condition require?",
+        "a": "Captive-bred origin, with a statement of origin to prove it. The species sits on Vermont's Unrestricted list under its older name, Geochelone carbonaria, rather than the current Chelonoidis carbonarius, which is worth knowing if you are searching the list yourself."
+      },
+      {
+        "q": "Does Massachusetts limit how many I can keep?",
+        "a": "It caps the species at 100 in any combination of animals and eggs, with no permit needed below that. That is a dealer-scale ceiling rather than a keeper-scale one, so a household will never approach it."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 8,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
   },
@@ -41835,6 +42534,61 @@
     "sourceCount": 6,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/tokay-gecko-legal-guide.mdx",
+    "slug": "tokay-gecko-legal-guide",
+    "title": "Is It Legal to Own a Tokay Gecko? State-by-State Guide",
+    "seoTitle": "Are Tokay Geckos Legal? Only Two Places Say No",
+    "excerpt": "The tokay has the worst reputation of any commonly kept gecko and the cleanest legal record. It clears 49 of 52 jurisdictions, and in New Jersey it is the one gecko that does not need a permit, because the rule carves it out by name.",
+    "date": "2026-09-23",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Tokay Gecko",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Gecko Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/tokay-gecko-legal.jpg",
+    "imageAlt": "Tokay gecko clinging head-down to a tree trunk, showing its orange-spotted blue skin",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-23",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are tokay geckos legal in the US?",
+        "a": "In 49 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, and Minnesota attaches conditions that apply to every lizard rather than to this species specifically."
+      },
+      {
+        "q": "Is it true that New Jersey exempts the tokay gecko?",
+        "a": "Yes, and it is the only state that singles the species out in its favor. The permit entry at N.J.A.C. 7:25-4.3(a)3.xiv reads Geckos - Family Gekkonidae other than Tokay Gecko, so every other gecko needs a possession permit there and the tokay does not."
+      },
+      {
+        "q": "Does a tokay gecko bite change its legal status?",
+        "a": "No. The tokay is known for a hard bite and a reluctance to let go, but no state on this map regulates it on that basis. The states that restrict venomous or dangerous reptiles draw their lines well above a gecko."
+      },
+      {
+        "q": "Does CITES affect owning a tokay gecko?",
+        "a": "It affects moving one across an international border rather than keeping one. The species was listed on CITES Appendix II in 2019, which means import and export need documentation. Ordinary possession of an animal already in the country is a state matter."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
   },
