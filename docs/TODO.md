@@ -232,16 +232,15 @@ holds 770 article heroes, about seven per species (cost, handling, health
 issues, tank setup, feeding, enrichment, plus a tank-setup infographic). Three
 species sampled first, chosen because their guide hero had already failed:
 
-**Status: hedgehog and corydoras fixed 2026-09-12, emperor scorpion still open.**
-Six replacements installed, the old frames archived in
-`public/assets/images/alternates/` with a README. The four scorpion files are
-waiting on art; prompts for all ten are in IMAGE_PROMPTS.md under "Article hero
-fixes".
+**Status: all three sampled species fixed 2026-09-12.** Ten replacements
+installed, the old frames archived in `public/assets/images/alternates/` with a
+README. Prompts are in IMAGE_PROMPTS.md under "Article hero fixes".
 
-- **Emperor scorpion: 4 of 6 wrong.** `cost`, `handling`, `health-issues` and
-  `tank-setup` all show the orange or yellow legs and, in two cases, the second
-  pair of pincers no scorpion has. `feeding` and `enrichment` are correct
-  glossy black animals. The infographic is fine.
+- **Emperor scorpion: 4 replaced.** `cost`, `handling`, `health-issues` and
+  `tank-setup` all showed orange or yellow legs, and two of them the second pair
+  of pincers no scorpion has. All four are now glossy black throughout with one
+  pair of pincers and a single telson. `feeding` and `enrichment` were already
+  correct, and the tank-setup infographic is fine.
 - **Hedgehog: 3 replaced.** `cost` was plainly the European hedgehog and
   `handling` and `feeding` leaned the same way. All three now show the pygmy's
   banded cream quills, white face and pink-brown snout. `health-issues` and

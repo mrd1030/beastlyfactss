@@ -8,6 +8,10 @@ not.
 
 | File | Shipped as | What it actually shows |
 |---|---|---|
+| `emperor-scorpion-cost.jpg` | Emperor scorpion cost guide | A scorpion with red-brown legs. Emperors are glossy black throughout, legs included. |
+| `emperor-scorpion-handling.jpg` | Emperor scorpion handling guide | Orange-red legs and what reads as a second pair of pincers, which no scorpion has. Not usable as any species. |
+| `emperor-scorpion-health-issues.jpg` | Emperor scorpion health guide | Yellow-orange legs and the same doubled-claw problem. Not usable as any species. |
+| `emperor-scorpion-tank-setup.jpg` | Emperor scorpion tank setup guide | Orange-yellow legs on an otherwise black animal. Closest to an Asian forest scorpion, *Heterometrus*, if a use is ever wanted. |
 | `hedgehog-cost.jpg` | African pygmy hedgehog cost guide | A European hedgehog, *Erinaceus europaeus*: dark grey face, dark brown spines, heavy build. |
 | `hedgehog-handling.jpg` | African pygmy hedgehog handling guide | Curled in cupped hands, but the dark face and spines read European rather than pygmy. Lower confidence than the cost frame. |
 | `hedgehog-feeding.jpg` | African pygmy hedgehog feeding guide | Same doubt as the handling frame: a grey-brown face and dark muzzle in dim light, closer to the European species. |
