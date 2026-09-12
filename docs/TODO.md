@@ -278,6 +278,27 @@ Four more species, 24 images. Two clear misses, two to look at:
 Running total for the article folder: 7 species checked of about 110, 43 images
 opened, 10 replaced and 4 open.
 
+### Third batch: the snakes, 2026-09-12
+
+Seven species sampled across corn snake, California kingsnake, milk snake,
+hognose, ball python, boa constrictor and rosy boa, 18 images. **One miss:**
+
+- **`corn-snake-cost.jpg`** shows orange and white bands that wrap the body,
+  which is a milk snake or kingsnake pattern. A corn snake carries saddles:
+  dark-bordered blotches along the back that stop at the flanks.
+
+Everything else in the snake sets is right, including several that could easily
+have gone wrong: the hognose handling frame shows the upturned rostral scale
+clearly, the ball python set is correctly blocky-headed throughout despite its
+guide hero being one of the replaced ones, and
+`milk-snake-vs-corn-snake.jpg` gets the comparison exactly right, bands on the
+left and saddles on the right, which is the image that would have been worst to
+get wrong.
+
+Running total for the article folder: 14 species of about 110, 67 images opened,
+10 replaced, 5 open (angelfish feeding, neon tetra health, corn snake cost, plus
+the muddled guppy set).
+
 ### Separate from species: 12 badly undersized files
 
 **Deferred 2026-09-12 by Mike's call.** One of the twelve, the corydoras feeding
