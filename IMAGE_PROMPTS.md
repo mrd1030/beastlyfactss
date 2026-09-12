@@ -1837,3 +1837,82 @@ Check: barbels present at the corners of each mouth, the feature that separates
 a koi from a goldfish. Colour blocks crisp and saturated, not muddy or pastel,
 and the white genuinely white rather than cream.
 
+---
+
+# Composite panel fixes, `public/assets/guides/`
+
+Four overview grids from the 2026-09-12 skim carry one wrong panel each
+(docs/TODO.md item 5). Three have straight dividers, so the fix is a single
+replacement panel spliced into the existing file at the panel's exact size,
+which keeps the panels that are already right. The fourth has diagonal
+dividers and needs the whole grid regenerated.
+
+Each single panel must match its neighbours in the grid it is going into, so
+the lighting and palette notes below are not decoration: a panel lit differently
+from the three beside it reads as a mistake even when the animal is correct.
+
+#### koi-conure-slider-scorpion-overview.jpg, bottom-right panel only, 584x392
+Replaces a scorpion with bright orange legs and a second pair of pincers.
+```
+Photorealistic photograph of an adult emperor scorpion on dark damp soil, full
+side view, whole animal in frame, pincers forward and tail curled low over the
+back. Uniformly glossy jet black over the body, legs, pincers and tail alike,
+massive granular pincers as thick as the forearms, a single bulbous telson with
+one dark sting. Dark earth background falling away behind, hard directional
+light from the upper left picking out the gloss on the carapace, black and
+umber palette, macro, 3:2.
+```
+Check: black everywhere including the legs, one pair of pincers, eight walking
+legs. The frame must sit beside a koi, a conure and a red-eared slider without
+looking brighter or flatter than they are.
+
+#### sulcata-hedgehog-lovebird-guppy-overview.jpg, top-right panel only, 584x392
+Replaces a European hedgehog with the pet species.
+```
+Photorealistic photograph of an African pygmy hedgehog walking across the floor
+of an indoor enclosure, body in three-quarter view, whole animal in frame,
+quills relaxed. Cream quills each banded with a single brown stripe, white face
+and cheeks, white belly fur, small dark button eye, pink-brown pointed snout.
+Soft indoor light from the left, warm neutral palette, wire enclosure panel soft
+in the background, camera at floor level, 3:2.
+```
+Check: banded cream quills and a white face, small enough to sit in two hands.
+Never the European hedgehog's dark brown spines and dark grey face, which is
+what this panel currently shows.
+
+#### gargoyle-mourning-african-fat-tail-gecko-overview.jpg, right panel only, 389x784 portrait
+Replaces a knob-headed gecko that is not the species.
+```
+Photorealistic vertical photograph of an African fat-tailed gecko standing on
+warm orange sand beside a clay hide, body in three-quarter view, head toward the
+camera, whole animal in frame including the tail. Smooth rounded head with no
+crests, knobs or spines anywhere, chunky body in broad chocolate-brown and tan
+bands, a thick blunt tail as wide as the body, a narrow cream stripe running
+down the spine, vertical pupil in a dark eye. Warm low side light, terracotta
+and chocolate palette, camera at sand level, tall portrait crop, 1:2.
+```
+Check: a smooth head. Any crest, spike or knob makes it the wrong species,
+which is the current fault. Fat blunt tail, not slender or leaf-shaped, and the
+banding broad rather than speckled.
+
+#### five-beginner-reptiles-overview.jpg, whole grid, 1264x848
+The fifth panel shows a banded milk or kingsnake where the article's fifth
+species is the corn snake. Diagonal dividers mean the grid gets regenerated.
+```
+Photorealistic composite of five vertical panels separated by thin diagonal
+white dividers, one animal per panel, all five shot in the same warm low light
+against soft tan and brown backgrounds so the set reads as one series, 1264x848.
+Panel one, a bearded dragon on a branch, spiny beard and rows of lateral spines,
+head raised. Panel two, a leopard gecko on bark, plump tail and black spotting
+on cream. Panel three, a ball python coiled on wood, blocky head clearly wider
+than the neck, gold and dark brown side blotches. Panel four, a crested gecko
+gripping bark, eyelash crests over the eyes, no spines along the flanks.
+Panel five, a corn snake on bark with its head raised, orange ground carrying
+dark-bordered dorsal saddles, a spear-point marking on the crown, smooth
+unkeeled scales.
+```
+Check panel five hardest: saddles, which are blotches along the back that do not
+wrap the body, never full rings. A snake with complete bands is a milk snake or
+kingsnake, which is what the current frame shows, and both of those have their
+own heroes elsewhere in this folder.
+
