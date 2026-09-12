@@ -52,11 +52,11 @@ export const CATEGORIES = [
       { term: 'Dysecdysis', definition: 'The technical term for a shed or molt that doesn\'t come off cleanly, most often from low humidity. In reptiles, retained skin can trap around the toes, eyes, or tail tip tightly enough to cut off circulation; in molting invertebrates like spiders, a failed shed can be fatal outright. Either way, it\'s a strong signal to check humidity before anything else.', related: [{ label: 'Tokay Gecko Care Guide', to: '/guides/tokay-gecko/' }, { label: 'Jumping Spider Health Issues Guide', to: '/blog/jumping-spider-health-issues-guide/' }] },
       { term: 'Ectotherm', definition: 'An animal that relies on its environment, not its own metabolism, to regulate body temperature. This is the whole reason basking spots and heat lamps matter so much for reptiles.', related: [{ label: 'Reptile Heating & Thermostats', to: '/blog/reptile-heating-thermostats-guide/' }] },
       { term: 'Ferguson zone', definition: 'One of four categories (Zone 1 to Zone 4) used to match a reptile species\' natural UVB exposure to an appropriate bulb strength, based on research into how much sun each species basks in in the wild.', related: [{ label: 'UVB Lighting: Why It Matters More Than You Think', to: '/blog/uvb-lighting-complete-guide/' }, { label: 'Bearded Dragon Care Guide', to: '/guides/bearded-dragon/' }] },
-      { term: 'Gout', definition: 'Uric acid crystals building up in the joints or organs when a reptile cannot clear its nitrogen waste, usually from chronic dehydration or a diet too rich in protein. Watching the urate portion of the droppings every day is the early warning.', related: [{ label: 'Reading Reptile Stool, Urates, and Hydration', to: '/blog/reptile-stool-urates-hydration-guide/' }, { label: 'Jackson\'s Chameleon Care Guide', to: '/guides/chameleon/' }] },
+      { term: 'Gout', definition: 'Uric acid crystals building up in the joints or organs when a reptile cannot clear its nitrogen waste, usually from chronic dehydration or a diet too rich in protein. Watching the urate portion of the droppings every day is the early warning.', related: [{ label: 'Reading Reptile Stool, Urates, and Hydration', to: '/blog/reptile-stool-urates-hydration-guide/' }, { label: 'Jackson\'s Chameleon Care Guide', to: '/guides/jacksons-chameleon/' }] },
       { term: 'Gravid', definition: 'The reptile and amphibian equivalent of pregnant: carrying developing eggs. A gravid female often eats less, digs more, and needs extra calcium in the run-up to laying, and if she can\'t successfully pass those eggs it becomes the medical emergency known as egg-binding (dystocia).', related: [{ label: 'Bearded Dragon Care Guide', to: '/guides/bearded-dragon/' }] },
       { term: 'Gut-loading', definition: 'Feeding nutritious food to feeder insects (crickets, dubia roaches) 24-48 hours before they\'re fed to a pet, so the pet absorbs those nutrients secondhand.', related: [
         { label: 'Leopard Gecko Care Guide', to: '/guides/leopard-gecko/' },
-        { label: "Jackson's Chameleon Care Guide", to: '/guides/chameleon/' },
+        { label: "Jackson's Chameleon Care Guide", to: '/guides/jacksons-chameleon/' },
         { label: "White's Tree Frog Care Guide", to: '/guides/whites-tree-frog/' },
         { label: 'Bearded Dragon Care Guide', to: '/guides/bearded-dragon/' },
         { label: 'Gut-Loading Feeder Insects', to: '/blog/gut-loading-feeder-insects-guide/' },
@@ -72,7 +72,7 @@ export const CATEGORIES = [
       { term: 'Metabolic Bone Disease (MBD)', definition: 'A serious but preventable condition from insufficient UVB or calcium, causing soft bones, tremors, and, if untreated, permanent deformities.', related: [
         { label: 'Leopard Gecko Care Guide', to: '/guides/leopard-gecko/' },
         { label: 'Crested Gecko Care Guide', to: '/guides/crested-gecko/' },
-        { label: "Jackson's Chameleon Care Guide", to: '/guides/chameleon/' },
+        { label: "Jackson's Chameleon Care Guide", to: '/guides/jacksons-chameleon/' },
         { label: 'Red-Eared Slider Care Guide', to: '/guides/red-eared-slider/' },
         { label: 'Bearded Dragon Care Guide', to: '/guides/bearded-dragon/' },
       ] },
