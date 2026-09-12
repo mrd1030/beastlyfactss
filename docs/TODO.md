@@ -151,6 +151,60 @@ Second pass, 2026-09-12, 42 more heroes opened, 103 of 183 now checked:
 - `rabbit.jpg`: a wild-type agouti rabbit in a meadow, reading wild rather than
   pet. The weakest flag here, since domestic rabbits come in that colour.
 
+Third pass, 2026-09-12, the overview composites and more legal heroes, 133 of
+183 checked at the time. Four wrong panels found, **all four fixed the same
+day**:
+
+- `five-beginner-reptiles-overview.jpg`: the fifth panel was a banded milk or
+  kingsnake where the article's fifth species is the corn snake. Whole grid
+  regenerated, because its dividers are diagonal and a spliced rectangle would
+  cut across them.
+- `koi-conure-slider-scorpion-overview.jpg`: the scorpion panel had the orange
+  legs and second pair of pincers. New panel spliced in at 584x392.
+- `sulcata-hedgehog-lovebird-guppy-overview.jpg`: the hedgehog panel was the
+  European species. New panel spliced in at 584x392.
+- `gargoyle-mourning-african-fat-tail-gecko-overview.jpg`: the third panel was a
+  knob-headed gecko rather than an African fat-tail. New panel spliced in at
+  378x784, the width the white dividers actually leave (they sit at x384-388 and
+  x785-789, not at even thirds).
+
+Splicing rather than regenerating kept nine correct panels across those three
+grids. Divider positions were measured off the files rather than assumed.
+
+Worth knowing before assuming a species is cursed: the composites carry the
+**correct** version of several animals whose standalone hero was wrong. The
+freshwater angelfish in `ackie-milksnake-mhc-angelfish-overview.jpg`, the
+corydoras school in `jacksonschameleon-canary-millipede-corydoras-overview.jpg`,
+the hissing cockroach in that same ackie composite, and the hognose in
+`veiled-chameleon-ferret-hognose-overview.jpg` are all right. These are
+per-image failures, not per-species ones.
+
+Fourth pass, 2026-09-12. **All 183 heroes in `public/assets/guides/` are now
+checked.** The last 50 were the dog and cat breeds, the remaining legal set and
+the six generic files. Two new flags, both in the legal set, both needing a
+human eye before art is spent:
+
+Both were **replaced 2026-09-12**, the same day they were found:
+
+- **`red-eared-slider-legal.jpg`** read as a painted turtle, with red bars along
+  the shell margins and no red patch behind the eye. The new frame carries the
+  broad red temple stripe and a carapace with no red on it at all.
+- **`tiger-salamander-legal.jpg`** read as a European fire salamander, glossy
+  black with bright egg-yellow. The new frame has the dull olive-mustard
+  blotches, broad blunt head, small eyes and visible costal grooves of
+  *Ambystoma tigrinum*.
+
+Two cosmetic notes, no art needed: `ackie-monitor-legal.jpg` has a slightly long
+snout for the species but the spiny ringed tail reads correctly, and the props
+in `exotic-pet-legal-hub.jpg` (a scorpion and a tortoise beside a gavel) look
+like dried specimens rather than live animals.
+
+Everything else in the last 50 passed: all sixteen dog and cat breed heroes, the
+six generic care and legal files, and the rest of the legal set.
+
+Still unchecked: the 777 article heroes in `public/assets/images/`. Nothing in
+that folder has been looked at.
+
 Checked and correct, for the record: all six dog and cat breeds sampled,
 every parrot and finch, the turtles and tortoises, leopard gecko, gargoyle
 gecko, African fat-tail, mourning gecko, fire skink, uromastyx, green anole,

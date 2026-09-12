@@ -1791,3 +1791,171 @@ Check: flat round body, crown of horns at the back of the skull. Not a thorny
 devil, not a frilled lizard. Thin arcing stream, not a spray, predator out of
 frame.
 
+---
+
+# Colour refresh: goldfish and koi, `public/assets/guides/`, 1168x784
+
+Not species fixes. The goldfish installed 2026-09-12 is correct and the koi has
+always been correct; both are just muted, and these two animals are the most
+colour-driven species on the site. Same spec as the rest of the guide set.
+
+The pair also has to stay distinguishable, because the koi versus goldfish
+comparison guide turns on the difference: koi carry a pair of barbels at the
+corners of the mouth and goldfish have none. Saturate the colour, not the
+identification.
+
+#### goldfish.jpg
+```
+Photorealistic photograph of a single common goldfish in full side profile in a
+brightly lit planted aquarium, whole fish in frame, swimming left to right.
+Vivid tangerine to deep red-orange scales with a metallic sheen, each scale
+edge catching the light so the flank reads like hammered copper, belly fading to
+pale cream gold, fins translucent amber with orange rays. Saturated emerald stem
+plants filling the background and clean pale sand below. Strong clean daylight
+from above raking across the fish, high colour saturation and high local
+contrast, orange against deep green, camera level with the fish, 60mm macro,
+f/5.6, 3:2. A plain rounded snout with a small terminal mouth and absolutely no
+barbels or whiskers of any kind.
+```
+Check: colour rich and clearly orange, never washed pale or brown. Nothing
+whisker-like at the mouth, which would make it a koi. Single caudal fin, no
+double tail, no head growth, no telescope eyes.
+
+#### koi.jpg
+```
+Photorealistic photograph of three koi swimming just under the surface of a
+clear garden pond, seen from above at a slight angle, bodies overlapping in a
+loose diagonal, all three whole in frame. One kohaku with a brilliant white
+ground and deep lacquer-red markings, one showa with jet black over red and
+white, one solid metallic orange-gold, all with crisp saturated edges where the
+colours meet. Two short barbels at each mouth, clearly visible. Sunlight
+striking the water so the colours glow against dark green depth, water clear
+enough to read every scale, a few lily pads at the frame edge. High colour
+saturation, red and white against deep green, 100mm, f/5.6, 3:2.
+```
+Check: barbels present at the corners of each mouth, the feature that separates
+a koi from a goldfish. Colour blocks crisp and saturated, not muddy or pastel,
+and the white genuinely white rather than cream.
+
+---
+
+# Composite panel fixes, `public/assets/guides/`
+
+Four overview grids from the 2026-09-12 skim carry one wrong panel each
+(docs/TODO.md item 5). Three have straight dividers, so the fix is a single
+replacement panel spliced into the existing file at the panel's exact size,
+which keeps the panels that are already right. The fourth has diagonal
+dividers and needs the whole grid regenerated.
+
+Each single panel must match its neighbours in the grid it is going into, so
+the lighting and palette notes below are not decoration: a panel lit differently
+from the three beside it reads as a mistake even when the animal is correct.
+
+#### koi-conure-slider-scorpion-overview.jpg, bottom-right panel only, 584x392
+Replaces a scorpion with bright orange legs and a second pair of pincers.
+```
+Photorealistic photograph of an adult emperor scorpion on dark damp soil, full
+side view, whole animal in frame, pincers forward and tail curled low over the
+back. Uniformly glossy jet black over the body, legs, pincers and tail alike,
+massive granular pincers as thick as the forearms, a single bulbous telson with
+one dark sting. Dark earth background falling away behind, hard directional
+light from the upper left picking out the gloss on the carapace, black and
+umber palette, macro, 3:2.
+```
+Check: black everywhere including the legs, one pair of pincers, eight walking
+legs. The frame must sit beside a koi, a conure and a red-eared slider without
+looking brighter or flatter than they are.
+
+#### sulcata-hedgehog-lovebird-guppy-overview.jpg, top-right panel only, 584x392
+Replaces a European hedgehog with the pet species.
+```
+Photorealistic photograph of an African pygmy hedgehog walking across the floor
+of an indoor enclosure, body in three-quarter view, whole animal in frame,
+quills relaxed. Cream quills each banded with a single brown stripe, white face
+and cheeks, white belly fur, small dark button eye, pink-brown pointed snout.
+Soft indoor light from the left, warm neutral palette, wire enclosure panel soft
+in the background, camera at floor level, 3:2.
+```
+Check: banded cream quills and a white face, small enough to sit in two hands.
+Never the European hedgehog's dark brown spines and dark grey face, which is
+what this panel currently shows.
+
+#### gargoyle-mourning-african-fat-tail-gecko-overview.jpg, right panel only, 389x784 portrait
+Replaces a knob-headed gecko that is not the species.
+```
+Photorealistic vertical photograph of an African fat-tailed gecko standing on
+warm orange sand beside a clay hide, body in three-quarter view, head toward the
+camera, whole animal in frame including the tail. Smooth rounded head with no
+crests, knobs or spines anywhere, chunky body in broad chocolate-brown and tan
+bands, a thick blunt tail as wide as the body, a narrow cream stripe running
+down the spine, vertical pupil in a dark eye. Warm low side light, terracotta
+and chocolate palette, camera at sand level, tall portrait crop, 1:2.
+```
+Check: a smooth head. Any crest, spike or knob makes it the wrong species,
+which is the current fault. Fat blunt tail, not slender or leaf-shaped, and the
+banding broad rather than speckled.
+
+#### five-beginner-reptiles-overview.jpg, whole grid, 1264x848
+The fifth panel shows a banded milk or kingsnake where the article's fifth
+species is the corn snake. Diagonal dividers mean the grid gets regenerated.
+```
+Photorealistic composite of five vertical panels separated by thin diagonal
+white dividers, one animal per panel, all five shot in the same warm low light
+against soft tan and brown backgrounds so the set reads as one series, 1264x848.
+Panel one, a bearded dragon on a branch, spiny beard and rows of lateral spines,
+head raised. Panel two, a leopard gecko on bark, plump tail and black spotting
+on cream. Panel three, a ball python coiled on wood, blocky head clearly wider
+than the neck, gold and dark brown side blotches. Panel four, a crested gecko
+gripping bark, eyelash crests over the eyes, no spines along the flanks.
+Panel five, a corn snake on bark with its head raised, orange ground carrying
+dark-bordered dorsal saddles, a spear-point marking on the crown, smooth
+unkeeled scales.
+```
+Check panel five hardest: saddles, which are blotches along the back that do not
+wrap the body, never full rings. A snake with complete bands is a milk snake or
+kingsnake, which is what the current frame shows, and both of those have their
+own heroes elsewhere in this folder.
+
+---
+
+# Legal hero fixes, second round, `public/assets/guides/`, 1168x784
+
+Two from the fourth skim pass (docs/TODO.md item 5). Both are look-alike
+substitutions rather than obviously wrong animals, so each prompt leads with the
+one feature that separates the species from its double.
+
+#### red-eared-slider-legal.jpg
+Replaces a turtle that reads as a painted turtle.
+```
+Photorealistic photograph of a red-eared slider basking on a half-submerged log
+at the edge of a pond, body in three-quarter view with the head turned toward
+the camera so the side of the face is fully visible. A broad red stripe running
+back from behind each eye across the temple, thin yellow-green stripes down the
+neck and legs, an olive-brown carapace with faint yellow streaking and a
+serrated rear edge, a plain yellow plastron, webbed hind feet with long claws.
+Still green water and soft bank planting behind, warm midday light, olive and
+yellow palette, camera at water level, 200mm, f/5.6, 3:2.
+```
+Check: the red temple stripe, which is the feature the species is named for, and
+a carapace with no red anywhere on it. A turtle with red bars along the shell
+margins is a painted turtle, *Chrysemys picta*, which is what the current frame
+shows. A yellow blotch instead of a red stripe makes it a yellow-bellied slider.
+
+#### tiger-salamander-legal.jpg
+Replaces an animal that reads as a European fire salamander.
+```
+Photorealistic photograph of a tiger salamander at the mouth of its burrow in
+damp dark soil, body in three-quarter view, head low and toward the camera.
+Stocky heavy build with a broad rounded head, small dark eyes set well apart, a
+blunt snout, clear vertical costal grooves down each flank, and irregular dull
+olive to mustard blotches and bars over a dark brown ground, the markings soft
+edged rather than crisp. Damp earth and scattered leaf litter, cool overcast
+light, brown and olive palette, camera at ground level close to the snout,
+100mm macro, f/5.6, 3:2.
+```
+Check: dull olive-mustard markings on brown, a broad blunt head and visible
+costal grooves. Not a fire salamander, *Salamandra salamandra*: no glossy
+jet-black skin, no bright egg-yellow patches, and no prominent bulging parotoid
+glands behind the eyes. The standalone `tiger-salamander.jpg` is correct and is
+the reference to match.
+
