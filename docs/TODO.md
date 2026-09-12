@@ -100,27 +100,20 @@ not the alligator snapping turtle" and so on). The hub set never had one.
 Several species now carry a correct legal hero and a wrong hub hero, which is
 how most of these were caught.
 
-Replace, most wrong first:
+**Replaced 2026-09-12.** All seven (eight files, the emperor scorpion being
+wrong in both its hub and its legal hero) were reshot from prompts in
+IMAGE_PROMPTS.md under "Wrong-species replacements" and installed at the same
+filenames, so no wiring changed. Each new frame was checked against the
+identifying features before install: the pygmy hedgehog's banded cream quills
+and white face, the hisser's head tucked under a one-colour pronotum, the ball
+python's blocky head and gold side blotches, the kingsnake's bands wrapping the
+body, glossy black on both scorpions with one pair of pincers, the cory's
+armour plates and arched back, and the savannah monitor's blunt snout and
+paired ocelli.
 
-- **`hedgehog.jpg`** is a European hedgehog, dark spines and dark face. The pet
-  is the African pygmy, cream spines with brown bands and a white face.
-  `hedgehog-legal.jpg` has it right.
-- **`hissing-cockroach.jpg`** has a black head and thorax, an orange abdomen
-  and spiny legs. A hisser is uniformly glossy red-brown with the head tucked
-  under the pronotum, which `hissing-cockroach-legal.jpg` shows correctly.
-- **`california-kingsnake.jpg`** is a blotched desert snake with a red tongue,
-  closest to a gopher snake. The species is black and white banded, as in
-  `kingsnake-legal.jpg`.
-- **`ball-python.jpg`** has a slender head and banded flanks in dry scrub,
-  reading as an African rock python. `ball-python-legal.jpg` is the real thing.
-- **`emperor-scorpion.jpg`** and **`emperor-scorpion-legal.jpg`** both show
-  bright orange legs and an anatomically wrong second pair of claws. Emperors
-  are uniformly glossy black with heavy granular pincers. Both need redoing.
-- **`savannah-monitor-legal.jpg`** has the yellow ocelli and long snout of a
-  Nile monitor, and sits next to `nile-monitor-legal.jpg`, which is the same
-  animal done right. `savannah-monitor.jpg` has no dorsal ocelli at all.
-- **`corydoras-catfish.jpg`** is a scaled minnow-shaped fish with barbels. A
-  cory is armoured plated, stout and arch-backed with a downturned snout.
+The old files are in `public/assets/guides/alternates/` with a README saying
+what each one actually shows. Two of them (both scorpions) are not usable as
+any species and are kept only for the record.
 
 Lower confidence, worth a second opinion before spending art on them:
 
