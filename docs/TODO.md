@@ -224,3 +224,64 @@ When these get redone, give the prompt file a species-accuracy block for the
 hub set the way the legal set has one. Every miss above is a species the
 generator confused with a close relative, which is exactly what that block
 exists to prevent.
+
+## 6. Wrong-species article art
+
+Started 2026-09-12, after the guide folder was finished. `public/assets/images/`
+holds 770 article heroes, about seven per species (cost, handling, health
+issues, tank setup, feeding, enrichment, plus a tank-setup infographic). Three
+species sampled first, chosen because their guide hero had already failed:
+
+**Status: all three sampled species fixed 2026-09-12.** Ten replacements
+installed, the old frames archived in `public/assets/images/alternates/` with a
+README. Prompts are in IMAGE_PROMPTS.md under "Article hero fixes".
+
+- **Emperor scorpion: 4 replaced.** `cost`, `handling`, `health-issues` and
+  `tank-setup` all showed orange or yellow legs, and two of them the second pair
+  of pincers no scorpion has. All four are now glossy black throughout with one
+  pair of pincers and a single telson. `feeding` and `enrichment` were already
+  correct, and the tank-setup infographic is fine.
+- **Hedgehog: 3 replaced.** `cost` was plainly the European hedgehog and
+  `handling` and `feeding` leaned the same way. All three now show the pygmy's
+  banded cream quills, white face and pink-brown snout. `health-issues` and
+  `enrichment` were already correct and were left alone.
+- **Corydoras: 3 replaced.** `health-issues` was a wide-mouthed catfish with
+  long whiskers and `handling` was a group of elongated forked-tail fish with a
+  large catfish above them. `feeding` was the right species but shipped at
+  512x279, so it was reshot for size at the same time. `tank-setup` and
+  `enrichment` were already correct; `cost` is borderline and was left.
+
+The important finding is that **the error is per image, not per species**. Half
+of a species' set can be right and half wrong, so there is no shortcut of
+replacing a whole species at once, and no way to infer a set from its guide
+hero. Nineteen images checked so far, seven wrong.
+
+### Separate from species: 12 badly undersized files
+
+**Deferred 2026-09-12 by Mike's call.** One of the twelve, the corydoras feeding
+frame, was reshot anyway because its species fix and its size fix were the same
+job. The other eleven stand.
+
+A dimension scan of all 778 files (cheap, no image reading) found twelve at
+512px wide, against the 1168px house size, so they upscale soft in every slot
+that renders them:
+
+`ackie-monitor-feeding`, `african-grey-parrot-feeding`,
+`corydoras-catfish-feeding`, `degu-feeding`, `fire-skink-handling`,
+`fire-skink-health-issues`, `green-iguana-cost`, `quaker-parakeet-cost`,
+`quaker-parakeet-handling`, `quaker-parakeet-health-issues`,
+`quaker-parakeet-tank-setup`, `sulcata-tortoise-feeding`.
+
+The 784x1168 files in that scan are deliberate portrait art and are fine.
+`shima-enaga-snow-fairy-facts` at 800x600 is a different aspect and worth a
+look but not urgent.
+
+### Suggested order for the rest
+
+Going alphabetically through 770 images is the wrong shape of job. The species
+worth checking first are the ones with a common look-alike or an already proven
+failure: the remaining fish (neon tetra, guppy, angelfish, oscar, goldfish,
+koi, discus), the snakes that get confused with each other (corn, milk,
+kingsnake, hognose, rosy boa, ball python, boa), the small mammals that get
+swapped (gerbil, degu, chinchilla, hamster), the monitors, and the parrots that
+share a silhouette. That is roughly 25 species, about 175 images.
