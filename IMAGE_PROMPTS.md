@@ -1432,3 +1432,30 @@ floor, front three-quarter view low to the ground. Domed dark carapace with pale
 areolae, and the red and orange scales on the legs and head catching the light,
 which are the identifying feature. Dappled shade through leaves above, rich
 brown and leaf-green palette, 50mm, f/4, 3:2.
+
+---
+
+# Federal law guide hero, `public/assets/guides/`, 1168x784
+
+One image, `federal-exotic-pet-laws.jpg`, for the federal law guide dated
+2026-09-12. Same spec and the same house rule as the legal series above: no
+gavels, no flags, no documents, no rulers, no hands. The article carries the
+law.
+
+The subject is a hatchling red-eared slider, because the FDA four-inch rule is
+the federal rule the most readers have actually run into, and a hatchling is the
+animal it was written about. It must read as a hatchling: a rounded carapace a
+few inches across, the vivid juvenile green and yellow striping, the red temple
+patch, proportionally large eye and head.
+
+### federal-exotic-pet-laws.jpg
+```
+Photorealistic photograph of a single hatchling red-eared slider resting on a
+wet dark rock at the waterline, body in three-quarter view, head raised and
+turned slightly toward the camera. Small rounded carapace with fresh green and
+yellow striping and fine growth rings, bright red patch behind the eye, wet
+shell reflecting the sky. Shallow still water and soft green bank out of focus
+behind. Soft overcast morning light, cool green and slate palette, camera down
+at water level so the animal reads small in the frame, 100mm macro, f/4, 3:2.
+No hands, no ruler, no coin, no tank, no people.
+```

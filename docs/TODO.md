@@ -7,6 +7,23 @@ file is the one that counts. Cross items off here, not in a chat window.
 
 ## 1. Write the federal law guide
 
+**Written 2026-09-12, waiting on one hero image.** The guide is
+`content/_scheduled-legal-guides/federal-exotic-pet-laws-guide.mdx`, staged
+rather than live because `federal-exotic-pet-laws.jpg` does not exist yet and a
+live article pointing at a missing hero fails check-images. Voice check passes
+clean, 0 errors and 0 warnings, and all 14 sources return 200. The prompt for
+the hero is in IMAGE_PROMPTS.md and the promotion steps are in NEEDS_IMAGE.md:
+move the file, wire RELATED_ARTICLES, link it from the hub's federal section.
+Both of those wait for the move, because a RELATED_ARTICLES entry or a hub link
+pointing at a staged slug is a dead link until the file is in content/guides.
+
+What it covers, all against primary text: the Lacey Act's two halves, the
+injurious wildlife list and the 2017 D.C. Circuit ruling that ended the
+interstate transport ban, CITES including the CoP20 amendments that took effect
+5 March 2026 and the Chilean rose tarantula listing that takes effect 5 June
+2027, the Captive Wildlife Safety Act and the Big Cat Public Safety Act, the FDA
+four-inch turtle rule, and the Wild Bird Conservation Act.
+
 The 52 state pages and the 52 animal pages both stop at the state line, and
 every one of them has a reader who then asks "but is it legal federally."
 Nothing on the site answers that.
