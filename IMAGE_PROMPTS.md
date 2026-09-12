@@ -1916,3 +1916,46 @@ wrap the body, never full rings. A snake with complete bands is a milk snake or
 kingsnake, which is what the current frame shows, and both of those have their
 own heroes elsewhere in this folder.
 
+---
+
+# Legal hero fixes, second round, `public/assets/guides/`, 1168x784
+
+Two from the fourth skim pass (docs/TODO.md item 5). Both are look-alike
+substitutions rather than obviously wrong animals, so each prompt leads with the
+one feature that separates the species from its double.
+
+#### red-eared-slider-legal.jpg
+Replaces a turtle that reads as a painted turtle.
+```
+Photorealistic photograph of a red-eared slider basking on a half-submerged log
+at the edge of a pond, body in three-quarter view with the head turned toward
+the camera so the side of the face is fully visible. A broad red stripe running
+back from behind each eye across the temple, thin yellow-green stripes down the
+neck and legs, an olive-brown carapace with faint yellow streaking and a
+serrated rear edge, a plain yellow plastron, webbed hind feet with long claws.
+Still green water and soft bank planting behind, warm midday light, olive and
+yellow palette, camera at water level, 200mm, f/5.6, 3:2.
+```
+Check: the red temple stripe, which is the feature the species is named for, and
+a carapace with no red anywhere on it. A turtle with red bars along the shell
+margins is a painted turtle, *Chrysemys picta*, which is what the current frame
+shows. A yellow blotch instead of a red stripe makes it a yellow-bellied slider.
+
+#### tiger-salamander-legal.jpg
+Replaces an animal that reads as a European fire salamander.
+```
+Photorealistic photograph of a tiger salamander at the mouth of its burrow in
+damp dark soil, body in three-quarter view, head low and toward the camera.
+Stocky heavy build with a broad rounded head, small dark eyes set well apart, a
+blunt snout, clear vertical costal grooves down each flank, and irregular dull
+olive to mustard blotches and bars over a dark brown ground, the markings soft
+edged rather than crisp. Damp earth and scattered leaf litter, cool overcast
+light, brown and olive palette, camera at ground level close to the snout,
+100mm macro, f/5.6, 3:2.
+```
+Check: dull olive-mustard markings on brown, a broad blunt head and visible
+costal grooves. Not a fire salamander, *Salamandra salamandra*: no glossy
+jet-black skin, no bright egg-yellow patches, and no prominent bulging parotoid
+glands behind the eyes. The standalone `tiger-salamander.jpg` is correct and is
+the reference to match.
+
