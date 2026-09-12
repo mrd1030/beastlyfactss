@@ -1580,6 +1580,37 @@ level, 100mm macro, f/5.6, 3:2.
 Check: armoured plates and an arched stout body. Not a minnow, barb or gudgeon:
 no scaled flanks, no torpedo body, no long trailing whiskers.
 
+#### oscar.jpg
+```
+Photorealistic photograph of an adult tiger oscar hanging in midwater in a
+planted aquarium, full side profile, whole fish in frame including the tail.
+Deep oval heavy-bodied cichlid with a large blunt head and thick lips, dark
+charcoal ground marbled with irregular red-orange banding, and a black eyespot
+ringed in bright orange at the base of the tail where the caudal fin meets the
+body. Long low dorsal and anal fins running back to the tail. Driftwood and
+broad-leaved plants behind, bright clean aquarium light, bronze and green
+palette, camera level with the fish, 60mm macro, f/5.6, 3:2.
+```
+Check: the orange-ringed black spot at the tail base is the whole identification
+and must be unmistakable. Not a tilapia, which is silver-grey with vertical bars
+and no eyespot, and not a generic spotted cichlid.
+
+#### goldfish.jpg
+```
+Photorealistic photograph of a single common goldfish in full side profile in a
+bright planted aquarium, whole fish in frame, swimming left to right. Deep
+orange metallic scales grading to pale on the belly, a short single caudal fin,
+and a plain rounded snout with a small terminal mouth and no whiskers of any
+kind at the corners. Green stem plants and pale gravel behind, clean daylight
+aquarium lighting, orange and green palette, camera level with the fish,
+60mm macro, f/5.6, 3:2. Absolutely no barbels.
+```
+Check: nothing whisker-like anywhere near the mouth. A pair of barbels at the
+corners of the mouth makes it a koi, which is the exact difference the koi
+versus goldfish guide turns on, and the previous frame appeared to have them.
+Not a fancy goldfish either: no double tail, no head growth, no telescope eyes.
+
+
 ---
 
 # Fact photos awaiting art, `public/assets/facts/`, 1600x1067
