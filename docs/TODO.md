@@ -84,3 +84,62 @@ Playbook and templates are in `docs/OUTREACH.md`. The short version:
 
 Keep a list of who was contacted, when, and whether it landed. Without one you
 will re-contact people.
+
+## 5. Wrong-species guide art
+
+Skim run 2026-09-12 after the corn snake health hero turned out to be an
+albino milk-snake-looking animal. 61 of the 183 heroes in
+`public/assets/guides/` were opened and checked against the species, chosen
+for look-alike risk rather than at random. The rest of that folder, and the
+777 article heroes in `public/assets/images/`, are unchecked.
+
+The pattern: the legal heroes are almost all right and the older care-guide
+hub heroes are where the misses are. The legal set was generated against the
+species-accuracy checklist in IMAGE_PROMPTS.md ("must be Chelydra serpentina,
+not the alligator snapping turtle" and so on). The hub set never had one.
+Several species now carry a correct legal hero and a wrong hub hero, which is
+how most of these were caught.
+
+**Replaced 2026-09-12.** All seven (eight files, the emperor scorpion being
+wrong in both its hub and its legal hero) were reshot from prompts in
+IMAGE_PROMPTS.md under "Wrong-species replacements" and installed at the same
+filenames, so no wiring changed. Each new frame was checked against the
+identifying features before install: the pygmy hedgehog's banded cream quills
+and white face, the hisser's head tucked under a one-colour pronotum, the ball
+python's blocky head and gold side blotches, the kingsnake's bands wrapping the
+body, glossy black on both scorpions with one pair of pincers, the cory's
+armour plates and arched back, and the savannah monitor's blunt snout and
+paired ocelli.
+
+The old files are in `public/assets/guides/alternates/` with a README saying
+what each one actually shows. Two of them (both scorpions) are not usable as
+any species and are kept only for the record.
+
+Lower confidence, worth a second opinion before spending art on them:
+
+- `gerbil.jpg`: squirrel face, thin sparse tail, striped flank. A Mongolian
+  gerbil's tail is furred with a dark tuft, as in `gerbil-legal.jpg`.
+- `crested-gecko.jpg`: spines along the flanks a crestie does not have.
+  Off-model against `crested-gecko-legal.jpg`.
+- `boa-constrictor.jpg`: geometric netting and a head stripe that read
+  reticulated python rather than boa saddles.
+- `hognose-snake.jpg`: slender body and the upturned rostral scale, the one
+  feature that identifies the species, not readable in the frame.
+- `fire-bellied-toad.jpg`: the red and black belly pattern is painted on the
+  flank and back. It belongs on the underside; the back is green and mottled.
+- `ferret.jpg`: reads wild, in tall grass with a black-footed ferret's mask.
+  Possibly fine for a sable domestic ferret, but it is not a pet photograph.
+
+Checked and correct, for the record: all six dog and cat breeds sampled,
+every parrot and finch, the turtles and tortoises, leopard gecko, gargoyle
+gecko, African fat-tail, mourning gecko, fire skink, uromastyx, green anole,
+tegu, ackie monitor, leaf-tailed gecko, milk snake, corn snake, garter snake,
+rosy boa, burmese python, snapping turtle, tiger salamander, axolotl, betta,
+pacman frog, White's tree frog, hermit crab, millipede, stick insect,
+tarantula, degu, chinchilla, rat, mouse, hamster, sugar glider, flying
+squirrel.
+
+When these get redone, give the prompt file a species-accuracy block for the
+hub set the way the legal set has one. Every miss above is a species the
+generator confused with a close relative, which is exactly what that block
+exists to prevent.

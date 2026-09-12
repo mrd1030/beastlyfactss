@@ -4,11 +4,22 @@ Notes on animal facts that were drafted but did NOT make it into `src/lib/data/f
 
 ## Guide heroes still needed
 
-None outstanding. The federal law guide hero landed 2026-09-12, the fourteen
-legal-guide heroes on 2026-09-11, and the nine feeding-guide heroes on
-2026-09-09.
+None outstanding. The eight wrong-species replacements landed 2026-09-12
+alongside the federal law guide hero, the fourteen legal-guide heroes on
+2026-09-11, and the nine feeding-guide heroes on 2026-09-09.
 
 ## Completed
+
+**2026-09-12: eight wrong-species heroes replaced.** hedgehog,
+hissing-cockroach, ball-python, california-kingsnake, emperor-scorpion,
+emperor-scorpion-legal, corydoras-catfish and savannah-monitor-legal, all
+found by the hero skim in docs/TODO.md item 5. Each arrived as a 1264x848 PNG
+at 1.5 to 2.2MB and was resized and converted to 1168x784 JPEG at mozjpeg
+quality 80, landing at 93 to 205KB, the same treatment the hognose and tokay
+frames got. Installed at the existing filenames, so no data file, guide or
+encyclopedia entry needed rewiring. The replaced files are kept in
+`public/assets/guides/alternates/` with a README identifying what each actually
+shows.
 
 **2026-09-12: federal law guide hero installed.** `federal-exotic-pet-laws.jpg`,
 a hatchling red-eared slider at the waterline, arrived at 1168x784 JPEG already

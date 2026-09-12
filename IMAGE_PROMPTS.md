@@ -1459,3 +1459,124 @@ behind. Soft overcast morning light, cool green and slate palette, camera down
 at water level so the animal reads small in the frame, 100mm macro, f/4, 3:2.
 No hands, no ruler, no coin, no tank, no people.
 ```
+
+---
+
+# Wrong-species replacements, `public/assets/guides/`, 1168x784
+
+Eight files from the 2026-09-12 hero skim (docs/TODO.md item 5). Each one shows
+a different animal from the one its guide is about. Same spec as the rest of
+the set: 3:2, 1168x784, mozjpeg quality 80, no hands, no people.
+
+Every miss here was a close relative the generator substituted, so each prompt
+carries the identifying features in the prompt itself and a check line under it.
+Verify against the check line before installing. None of these may reuse the
+setting, palette or camera position of the species' other art.
+
+## The prompts
+
+#### hedgehog.jpg
+```
+Photorealistic photograph of an African pygmy hedgehog walking across a fleece
+blanket on a smooth indoor floor in daytime, whole animal in frame, front
+three-quarter view, quills relaxed and lying back. Cream quills each banded with
+a single brown stripe, white face and cheeks, white belly fur, small dark button
+eye, pink-brown pointed snout. Bright soft window light, warm neutral palette,
+camera at floor level, 85mm, f/2.8, 3:2.
+```
+Check: cream-and-brown banded quills, white face, small enough to sit in two
+hands. Not the European hedgehog: no dark brown spines, no dark grey face, no
+garden or leaf-litter setting.
+
+#### hissing-cockroach.jpg
+```
+Photorealistic photograph of one adult Madagascar hissing cockroach on a slab of
+cork bark over dark coconut fibre, side-on three-quarter view, antennae forward.
+Uniformly glossy chestnut red-brown carapace, wingless, head tucked out of sight
+beneath the smooth pronotal shield, two blunt bumps on the pronotum, a row of
+darker spiracle dots along each flank, stout unspined legs. Warm dim light
+raking across the shell, deep brown palette, macro at the animal's level, 100mm,
+f/5.6, 3:2.
+```
+Check: one colour from head to abdomen, head hidden under the shield. Not a
+black head and thorax with an orange abdomen, no beetle wing cases, no spiny
+cricket legs, no exposed mandibles.
+
+#### california-kingsnake.jpg
+```
+Photorealistic photograph of a California kingsnake crossing sun-warmed granite
+in open chaparral, head raised and body in a loose S, most of the length in
+frame. Crisp alternating glossy black-brown and cream bands that continue
+unbroken around the body, smooth unkeeled scales, small rounded head barely
+wider than the neck, round pupil, black tongue. Late afternoon side light, warm
+grey and cream palette, camera low at snake level, 100mm, f/5.6, 3:2.
+```
+Check: rings, not blotches. Not a gopher or bull snake: no saddled dorsal
+blotches on a pale ground, no red tongue, no dry grass prairie.
+
+#### ball-python.jpg
+```
+Photorealistic photograph of a ball python coiled on leaf litter in a planted
+enclosure, head raised and facing the camera, thick body stacked in loose coils.
+Blocky wedge-shaped head clearly wider than the neck, short heavy body, dark
+chocolate ground with gold and tan side blotches enclosing darker spots, a cream
+stripe running from the nostril through the eye, heat pits along the upper lip.
+Warm low side light, brown and gold palette, camera at head height, 85mm, f/4,
+3:2.
+```
+Check: blocky head, short heavy body, gold side blotches. Not an African rock
+python: no slender head, no arrowhead marking on the crown, no banding across
+the back, no dry scrub.
+
+#### emperor-scorpion.jpg
+```
+Photorealistic photograph of an adult emperor scorpion on damp leaf litter at
+night, side view with the whole animal in frame, pincers forward and tail curled
+low over the back. Uniformly glossy jet black over the body, legs, pincers and
+tail alike, massive granular pincers as thick as the forearms, a single bulbous
+telson with one dark sting. Cool torchlight from the upper left against near
+black, macro, 100mm, f/8, 3:2.
+```
+Check: black everywhere, one pair of pincers, eight walking legs. Never orange
+or red legs, never a second pair of claws, never a segmented tail ending in
+anything but one telson and one sting.
+
+#### emperor-scorpion-legal.jpg
+```
+Photorealistic photograph of an adult emperor scorpion standing on damp red-brown
+coconut fibre in a shaft of daylight, high three-quarter view looking down the
+length of the animal, tail low and pincers apart. Uniformly glossy jet black
+body, legs, pincers and tail, heavy granular pincers, single bulbous telson with
+one dark sting, pale comb-like pectines just visible under the body. Cool
+diffused daylight, rust and black palette, 60mm, f/8, 3:2.
+```
+Check: as above. Different light, angle and ground from `emperor-scorpion.jpg`,
+which is the night shot.
+
+#### savannah-monitor-legal.jpg
+```
+Photorealistic photograph of a savannah monitor on hard dusty ground in open
+West African scrub, body in three-quarter view, head turned toward the camera.
+Short blunt rounded snout, thick neck, heavy stocky body, grey-brown to tan
+ground colour carrying rows of paired dark-edged cream ocelli across the back,
+short blunt tail round in cross-section, pale forked tongue just out. Hard midday
+sun, dust and straw palette, camera low and ahead of the animal, 135mm, f/5.6,
+3:2.
+```
+Check: blunt snout, stocky build, rows of paired ocelli, round tail. Not a Nile
+monitor: no long tapering snout, no laterally flattened keeled tail, and not at
+a riverbank, which is `nile-monitor-legal.jpg`.
+
+#### corydoras-catfish.jpg
+```
+Photorealistic underwater photograph of a single bronze corydoras resting on pale
+fine sand in a planted aquarium, front three-quarter view, barbels spread and
+clearly visible. Stout arched back, blunt downturned snout, two overlapping rows
+of bony armour plates along each flank instead of scales, three pairs of short
+barbels at the mouth, tall triangular dorsal fin, small adipose fin, forked tail.
+Bright clean aquarium light, green and pale sand palette, camera at substrate
+level, 100mm macro, f/5.6, 3:2.
+```
+Check: armoured plates and an arched stout body. Not a minnow, barb or gudgeon:
+no scaled flanks, no torpedo body, no long trailing whiskers.
+
