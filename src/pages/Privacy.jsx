@@ -59,7 +59,7 @@ export default function Privacy() {
             <p>This Site uses cookies and similar identifiers to improve your experience:</p>
             <ul className="list-disc pl-5 space-y-1">
               <li><strong className="text-foreground">Google Analytics</strong> - used to understand how visitors use the Site. You can opt-out using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Google Analytics Opt-out Browser Add-on</a>.</li>
-              <li><strong className="text-foreground">Google AdSense & Third-Party Advertising</strong> - third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads based on your visit to this site and/or other sites on the Internet.</li>
+              <li><strong className="text-foreground">Advertising</strong> - the Site does not currently serve advertising, and no advertising cookies are set by us or by an ad network. If advertising returns through Google AdSense, third-party vendors including Google would use cookies to serve ads based on your prior visits to this and other sites, and this policy will be updated to say so before that happens.</li>
               <li><strong className="text-foreground">Affiliate Tracking</strong> - third parties, including Amazon, may place cookies on your browser to track referrals and process performance data.</li>
               <li><strong className="text-foreground">Local Storage</strong> - used to save favorite facts and quiz results locally in your browser. These stay on your device and are not sent to us. Local storage also holds the random identifier described above, which records that you have already liked or shared an article.</li>
             </ul>
@@ -75,7 +75,7 @@ export default function Privacy() {
               <li>Improve site performance and analytics through enhanced measurement features.</li>
               <li>Process donations and care package purchases securely via Stripe.</li>
               <li>Deliver purchased files, restore them to you through the library, and send you an updated file if a package is revised.</li>
-              <li>Serve personalized or non-personalized advertisements via Google AdSense.</li>
+              <li>Serve advertising, if and when the Site carries any. It does not at present.</li>
               <li>Publish approved comments, and count likes and shares on articles.</li>
               <li>Support site operations through affiliate marketing.</li>
             </ul>
@@ -89,7 +89,7 @@ export default function Privacy() {
           <Section title="5. Third-Party Services">
             <p>BeastlyFacts.com uses third-party services, each governed by their own privacy policies:</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li><strong className="text-foreground">Google Analytics & AdSense</strong> - <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
+              <li><strong className="text-foreground">Google</strong> - Analytics now, and AdSense only if advertising returns - <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Ahrefs</strong> - cookieless traffic analytics - <a href="https://ahrefs.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Cloudflare</strong> - hosts and serves the Site, and provides cookieless traffic analytics - <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Supabase</strong> - hosts the database that stores comments, likes, shares and care package purchases, and provides the emailed sign-in code for the library - <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>

@@ -18,7 +18,10 @@
          (and the FundingChoices consent popup it auto-loads) was ~290KB of
          script earning nothing, the largest weight in every PageSpeed run.
          To reapply, restore this single tag before requesting the review
-         (ads.txt in public/ is still in place):
+         (ads.txt in public/ is still in place). When you do, update the
+         Advertising bullet in src/pages/Privacy.jsx at the same time: it
+         currently states that no advertising runs and no ad cookies are set,
+         which is true only while this tag stays commented out:
          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950702470680795" crossorigin="anonymous"></script> -->
 
     <!-- Google Discover eligibility (max-image-preview:large) is delivered as
