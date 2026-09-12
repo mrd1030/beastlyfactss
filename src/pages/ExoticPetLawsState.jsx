@@ -10,6 +10,7 @@ import { describeVerified, formatDay } from '@/lib/utils/verifiedDates';
 import CitationBox from '@/components/legal/CitationBox';
 import { SLUG_TO_CODE, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import { inSentence, joinList } from '@/lib/utils/animalNames';
+import LegalDisclaimer from '@/components/mdx/LegalDisclaimer';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 
 const SITE = 'https://beastlyfacts.com';
@@ -223,6 +224,15 @@ export default function ExoticPetLawsState() {
 
       <div className="px-4 sm:px-6 pb-16">
         <div className="max-w-4xl mx-auto">
+          {/* Every written legal guide carries this. These pages state the same
+              conclusions with the same citations and shipped without it, which
+              was an oversight rather than a decision. */}
+          <div className="mb-10">
+            <LegalDisclaimer>
+              {`This is a record of what the published rules say, not legal advice. Exotic pet law changes without much notice and varies by county and city as well as by state, so treat the entries below as a starting point and confirm anything you are relying on with ${isState ? 'the state wildlife agency' : 'the relevant agency'} before you acquire an animal.`}
+            </LegalDisclaimer>
+          </div>
+
           {notes && (
             <section className="mb-12">
               <h2 className="font-display font-bold text-2xl text-foreground mb-4">

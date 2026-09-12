@@ -12,6 +12,7 @@ import {
 } from '@/lib/data/legalByState';
 import { JURISDICTIONS_AZ, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import { describeVerified } from '@/lib/utils/verifiedDates';
+import LegalDisclaimer from '@/components/mdx/LegalDisclaimer';
 import CitationBox from '@/components/legal/CitationBox';
 import { withBrand } from '@/lib/utils/seo';
 
@@ -86,6 +87,12 @@ export default function ExoticPetLawsStateIndex() {
 
       <div className="px-4 sm:px-6 pb-16">
         <div className="max-w-5xl mx-auto">
+          <div className="mb-10">
+            <LegalDisclaimer>
+              This page ranks jurisdictions by what their published rules say, not by legal advice. The counts are a research summary, they change as rules change, and county and city ordinances sit underneath all of them. Confirm anything you are relying on with the agency before you acquire an animal.
+            </LegalDisclaimer>
+          </div>
+
           <section>
             <h2 className="font-display font-bold text-2xl text-foreground mb-2">
               Where the rules are strictest
