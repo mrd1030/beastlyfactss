@@ -28,7 +28,7 @@ export default function Terms() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block" role="img" aria-label="Clipboard">📋</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Terms of Service</h1>
-            <p className="text-xs text-muted-foreground font-body">Last updated: July 7, 2026</p>
+            <p className="text-xs text-muted-foreground font-body">Last updated: September 12, 2026</p>
           </motion.div>
         </div>
       </div>
@@ -54,25 +54,33 @@ export default function Terms() {
             </ul>
           </Section>
 
-          <Section title="4. Donations & Payments">
-            <p>Donations made through BeastlyFacts.com are processed securely by Stripe. All transactions are subject to Stripe's Terms of Service. BeastlyFacts.com does not store any payment card information.</p>
-            <p>Donations are voluntary and non-refundable unless required by applicable law. Monthly recurring donations can be cancelled at any time by contacting us at hello@beastlyfacts.com.</p>
+          <Section title="4. Purchases, Donations & Payments">
+            <p>Payments on BeastlyFacts.com, whether a purchase or a donation, are processed by Stripe on Stripe's own checkout pages. All transactions are subject to Stripe's Terms of Service. We never receive or store payment card details.</p>
+            <p><strong className="text-foreground">Care packages.</strong> Care packages are digital products: a downloadable PDF, sold as a one time purchase with no recurring charge. The download is available on the confirmation page as soon as the payment clears. There is no account to create at checkout. The email address you pay with is what identifies the purchase, and signing in to the library with that address is how you reach it again later. If a package is revised, your purchase gives you the updated file at no extra cost, for as long as the library remains available.</p>
+            <p><strong className="text-foreground">Refunds on purchases.</strong> If a care package is not what you expected, email hello@beastlyfacts.com and we will sort it out. We would rather refund you than leave you holding something that does not fit your situation. Nothing here limits any refund or cancellation right you have under the consumer law that applies where you live.</p>
+            <p><strong className="text-foreground">Donations.</strong> Donations are voluntary and are not a purchase of anything. They are non-refundable unless applicable law requires otherwise. Monthly recurring donations can be cancelled at any time by contacting us at hello@beastlyfacts.com.</p>
           </Section>
 
-          <Section title="5. Disclaimer of Warranties">
+          <Section title="5. Care Package Licence & Library Access">
+            <p>Buying a care package gives you a personal, non-transferable licence to use and print it for your own pets. You may not resell it, republish it, or share the file publicly. Printing as many copies as you need for your own use is fine.</p>
+            <p>Library access depends on you being able to receive email at the address used for the purchase, because that address is the only thing linking you to it. If you lose access to that inbox, contact us and we will try to help, though we cannot always verify a purchase without it.</p>
+            <p>We intend to keep purchased files available for as long as we run the library. If we ever have to discontinue it, we will give notice by email to the addresses attached to purchases so the files can be downloaded first.</p>
+          </Section>
+
+          <Section title="6. Disclaimer of Warranties">
             <p>The information on this Site is provided "as is" without warranties of any kind. While we strive for absolute accuracy, animal care information should always be verified with qualified veterinary professionals. BeastlyFacts.com is not liable for any decisions made based on content found on this Site.</p>
           </Section>
 
-          <Section title="6. External Links & Affiliate Programs">
+          <Section title="7. External Links & Affiliate Programs">
             <p>The Site contains links to third-party websites, including affiliate links through programs like the Amazon Associates program. These links are provided for your convenience and to help fund the operations of this independent platform.</p>
             <p>We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. We strongly advise you to read the terms and privacy policies of any third-party sites you visit.</p>
           </Section>
 
-          <Section title="7. Changes to Terms">
+          <Section title="8. Changes to Terms">
             <p>We reserve the right to update these Terms at any time. Continued use of the Site after changes are posted constitutes full acceptance of the revised Terms.</p>
           </Section>
 
-          <Section title="8. Contact">
+          <Section title="9. Contact">
             <p>For any questions regarding these Terms, please contact us at <a href="mailto:hello@beastlyfacts.com" className="text-secondary hover:underline">hello@beastlyfacts.com</a>.</p>
           </Section>
         </motion.div>
