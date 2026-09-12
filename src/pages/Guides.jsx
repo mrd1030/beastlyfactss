@@ -10,6 +10,7 @@ import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
 import { difficultyColor } from '@/lib/data/encyclopedia';
 import BrowseRow from '@/components/shared/BrowseRow';
+import { groupGuides } from '@/lib/data/guideGroups';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import { trackEvent } from '@/lib/analytics';
 
@@ -95,6 +96,10 @@ export default function Guides() {
     if (!q) return base;
     return base.filter(g => g.name.toLowerCase().includes(q) || g.petType.toLowerCase().includes(q));
   }, [activeFilter, dogSize, activeSubtype, search]);
+
+  // The rows carry no picture big enough to signal what a guide is about, so
+  // the headings are what break the list up. See guideGroups.js.
+  const groupedGuides = useMemo(() => groupGuides(filteredGuides), [filteredGuides]);
 
   const pageTitle = activeFilter === 'All'
     ? 'Care Guides | Beastly Facts'
@@ -256,29 +261,36 @@ export default function Guides() {
         )}
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
-        {filteredGuides.length === 0 ? (
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 space-y-10">
+        {groupedGuides.length === 0 ? (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">🔍</span>
             <p className="font-body font-bold text-foreground">No guides found</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-            {filteredGuides.map((guide) => (
-              <BrowseRow
-                key={guide.id}
-                to={`/guides/${guide.id}/`}
-                name={guide.name}
-                subtitle={guide.tagline}
-                image={guide.image}
-                emoji={guide.emoji}
-                difficulty={guide.difficulty}
-                difficultyClass={difficultyColor[guide.difficulty]}
-                onOpenLegend={() => setIsLegendOpen(true)}
-                returnTo={activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`}
-              />
-            ))}
-          </div>
+          groupedGuides.map((group) => (
+            <motion.div key={group.name} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
+              <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
+                <span>{group.emoji}</span>{` ${group.name}`}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                {group.guides.map((guide) => (
+                  <BrowseRow
+                    key={guide.id}
+                    to={`/guides/${guide.id}/`}
+                    name={guide.name}
+                    subtitle={guide.tagline}
+                    image={guide.image}
+                    emoji={guide.emoji}
+                    difficulty={guide.difficulty}
+                    difficultyClass={difficultyColor[guide.difficulty]}
+                    onOpenLegend={() => setIsLegendOpen(true)}
+                    returnTo={activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`}
+                  />
+                ))}
+              </div>
+            </motion.div>
+          ))
         )}
       </div>
 

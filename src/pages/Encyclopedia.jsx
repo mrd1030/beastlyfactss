@@ -6,6 +6,7 @@ import { motion } from '@/lib/motion-safe';
 import { Search, Info } from 'lucide-react';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
 import BrowseRow from '@/components/shared/BrowseRow';
+import { groupGuides } from '@/lib/data/guideGroups';
 import { guideCategoryDescription } from '@/lib/seo/categoryDescriptions';
 import { allGuides } from '@/lib/data/guides';
 import { dogGuides } from '@/lib/data/guides/dogs';
@@ -376,6 +377,10 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
 } 
 
 function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides, onOpenLegend, currentListPath }) {
+  // Same headings the encyclopedia tab uses, so the two halves of this page
+  // break their lists the same way. See guideGroups.js.
+  const groups = useMemo(() => groupGuides(filteredGuides), [filteredGuides]);
+
   return (
     <div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
@@ -432,29 +437,36 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
         )}
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
-        {filteredGuides.length === 0 ? (
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 space-y-10">
+        {groups.length === 0 ? (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">🔍</span>
             <p className="font-body font-bold text-foreground">No guides found</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-            {filteredGuides.map((guide) => (
-              <BrowseRow
-                key={guide.id}
-                to={`/guides/${guide.id}/`}
-                name={guide.name}
-                subtitle={guide.tagline}
-                image={guide.image}
-                emoji={guide.emoji}
-                difficulty={guide.difficulty}
-                difficultyClass={difficultyColor[guide.difficulty]}
-                onOpenLegend={onOpenLegend}
-                returnTo={currentListPath}
-              />
-            ))}
-          </div>
+          groups.map((group) => (
+            <motion.div key={group.name} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
+              <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
+                <span>{group.emoji}</span>{` ${group.name}`}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                {group.guides.map((guide) => (
+                  <BrowseRow
+                    key={guide.id}
+                    to={`/guides/${guide.id}/`}
+                    name={guide.name}
+                    subtitle={guide.tagline}
+                    image={guide.image}
+                    emoji={guide.emoji}
+                    difficulty={guide.difficulty}
+                    difficultyClass={difficultyColor[guide.difficulty]}
+                    onOpenLegend={onOpenLegend}
+                    returnTo={currentListPath}
+                  />
+                ))}
+              </div>
+            </motion.div>
+          ))
         )}
       </div>
     </div>
