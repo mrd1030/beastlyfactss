@@ -3,14 +3,14 @@ import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { useLocation, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { ChevronRight, Info, Search } from 'lucide-react';
+import { Info, Search } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { guideCategoryDescription } from '@/lib/seo/categoryDescriptions';
 import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
 import { difficultyColor } from '@/lib/data/encyclopedia';
+import BrowseRow from '@/components/shared/BrowseRow';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
-import LocalImage from '@/components/shared/LocalImage';
 import { trackEvent } from '@/lib/analytics';
 
 const guideFilters = [
@@ -160,7 +160,7 @@ export default function Guides() {
               Evidence-based husbandry guides for reptiles, birds, mammals, and more.
             </p>
           </motion.div>
-          <div className="flex gap-2 mt-5 bg-muted/60 rounded-2xl p-1.5 max-w-sm">
+          <div className="flex gap-2 mt-5 bg-muted/60 border border-border rounded-2xl p-1.5 max-w-sm">
             {[
               { id: 'encyclopedia', label: '📚 Encyclopedia' },
               { id: 'guides', label: '📖 Care Guides' },
@@ -175,7 +175,7 @@ export default function Guides() {
                   to={destination}
                   state={{ returnTo: destination }}
                   className={`flex-1 py-2 px-3 rounded-xl text-center text-xs font-body font-bold transition-all ${
-                    tab.id === 'guides' ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
+                    tab.id === 'guides' ? 'bg-card border border-border shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
                   {tab.label}
@@ -263,9 +263,20 @@ export default function Guides() {
             <p className="font-body font-bold text-foreground">No guides found</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredGuides.map((guide, i) => (
-              <GuideCard key={guide.id} guide={guide} index={i} onOpenLegend={() => setIsLegendOpen(true)} returnTo={activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+            {filteredGuides.map((guide) => (
+              <BrowseRow
+                key={guide.id}
+                to={`/guides/${guide.id}/`}
+                name={guide.name}
+                subtitle={guide.tagline}
+                image={guide.image}
+                emoji={guide.emoji}
+                difficulty={guide.difficulty}
+                difficultyClass={difficultyColor[guide.difficulty]}
+                onOpenLegend={() => setIsLegendOpen(true)}
+                returnTo={activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`}
+              />
             ))}
           </div>
         )}
@@ -295,42 +306,3 @@ export default function Guides() {
   );
 }
 
-function GuideCard({ guide, index, onOpenLegend, returnTo }) {
-  const diffClass = difficultyColor[guide.difficulty] || 'text-muted-foreground bg-muted';
-  const isBreedQuirk = guide.name.includes('Breed Quirks') || guide.name.includes(':');
-
-  return (
-    <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(index * 0.03, 0.4) }} whileHover={{ y: -3 }}>
-      <Link to={`/guides/${guide.id}/`} state={{ returnTo }} onClick={() => trackEvent('guide_card_clicked', { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty })}>
-        <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
-          {guide.image && (
-            <div className="-mx-5 -mt-5 rounded-t-2xl overflow-hidden mb-4 aspect-video">
-              <LocalImage src={guide.image} alt={guide.name} className="w-full h-full object-cover" loading="lazy" variant="card" />
-            </div>
-          )}
-          <div className="flex items-start justify-between mb-3">
-            <span className="text-3xl">{guide.emoji}</span>
-            <div className="flex items-center gap-1.5 flex-wrap justify-end">
-              {isBreedQuirk && <span className="text-xs font-body font-semibold px-2 py-0.5 rounded-full bg-secondary/10 text-secondary">Breed Quirks</span>}
-              {guide.sizeCategory && guide.sizeCategory !== 'All Sizes' && (
-                <span className="text-xs font-body font-semibold px-2 py-0.5 rounded-full bg-muted text-muted-foreground">{guide.sizeCategory}</span>
-              )}
-              <button
-                onClick={(e) => { e.preventDefault(); e.stopPropagation(); onOpenLegend(); }}
-                className={`text-xs font-body font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
-              >
-                {guide.difficulty}
-              </button>
-            </div>
-          </div>
-          <h3 className="font-display font-bold text-base text-foreground mb-1 group-hover:text-secondary transition-colors">{guide.name}</h3>
-          <p className="text-xs text-muted-foreground font-body mb-2">{guide.petType}</p>
-          <p className="text-xs text-muted-foreground font-body leading-relaxed flex-1">{guide.tagline}</p>
-          <div className="flex items-center gap-1 mt-4 text-xs font-body font-semibold text-secondary">
-            View full guide <ChevronRight className="w-3.5 h-3.5" />
-          </div>
-        </div>
-      </Link>
-    </motion.div>
-  );
-}
