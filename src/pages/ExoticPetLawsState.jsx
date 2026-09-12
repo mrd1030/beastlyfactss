@@ -44,9 +44,40 @@ export default function ExoticPetLawsState() {
   const code = SLUG_TO_CODE[stateSlug];
   const j = code ? forJurisdiction(code) : null;
 
+  // A single cell of the matrix, addressable: /exotic-pet-laws/state/hawaii/#serval
+  // opens that row and scrolls to it. A fragment rather than a query parameter
+  // on purpose. Google ignores fragments when deciding what to index, so this
+  // cannot spawn 2,704 near-duplicate URLs the way ?animal=serval could, and a
+  // reference someone is meant to cite needs a link to the exact row rather
+  // than "go here and open the serval one".
+  //
+  // Declared above the early return below, because a hook cannot sit after one.
+  // The body no-ops for an unknown slug.
+  React.useEffect(() => {
+    if (!j || window.__IS_PRERENDER__) return;
+    const id = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+    if (!id) return;
+    const el = document.getElementById(id);
+    if (!el) return;
+    // The row is prerendered, so the browser has already done the scroll part
+    // natively on a cold load. What it cannot do is open a <details>.
+    if (el.tagName === 'DETAILS') el.open = true;
+    const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+  }, [j]);
+
   // An unknown slug goes to the index rather than rendering an empty shell.
   // replace, so the bad URL does not sit in history behind the good one.
   if (!j) return <Navigate to="/exotic-pet-laws/state/" replace />;
+
+  // Opening a row writes it into the address bar, so the URL a reader copies is
+  // the row they are looking at. replaceState rather than pushState: toggling
+  // rows open and shut should not fill the back button with fragments.
+  const syncRowHash = (event, id) => {
+    if (window.__IS_PRERENDER__) return;
+    const base = `${window.location.pathname}${window.location.search}`;
+    window.history.replaceState(null, '', event.currentTarget.open ? `${base}#${id}` : base);
+  };
 
   const restricted = j.rows.filter((r) => RESTRICTION_BUCKETS.includes(r.bucket));
   const clear = j.rows.filter((r) => r.bucket === 'none');
@@ -197,7 +228,12 @@ export default function ExoticPetLawsState() {
                   const b = STATUS_BUCKETS[row.bucket];
                   const source = row.entry?.sourceId ? LEGAL.sources[row.entry.sourceId] : null;
                   return (
-                    <details key={row.id} className="group rounded-lg border border-border bg-card">
+                    <details
+                      key={row.id}
+                      id={row.id}
+                      onToggle={(e) => syncRowHash(e, row.id)}
+                      className="group rounded-lg border border-border bg-card scroll-mt-24"
+                    >
                       <summary className="flex flex-wrap cursor-pointer list-none items-center gap-2 p-4 [&::-webkit-details-marker]:hidden">
                         <span className="flex-1 font-body font-semibold text-foreground text-sm">
                           {row.name}
@@ -272,6 +308,12 @@ export default function ExoticPetLawsState() {
                               Full legal guide →
                             </Link>
                           )}
+                          <a
+                            href={`#${row.id}`}
+                            className="text-xs font-body text-muted-foreground hover:text-foreground transition-colors"
+                          >
+                            Link to this row
+                          </a>
                         </div>
                       </div>
                     </details>
@@ -291,7 +333,7 @@ export default function ExoticPetLawsState() {
               </p>
               <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 list-none p-0">
                 {clear.map((row) => (
-                  <li key={row.id} className="text-sm font-body">
+                  <li key={row.id} id={row.id} className="text-sm font-body scroll-mt-24">
                     <Link
                       to={`/exotic-pet-laws/${row.id}/`}
                       className="text-muted-foreground hover:text-foreground transition-colors"
@@ -314,7 +356,7 @@ export default function ExoticPetLawsState() {
               </p>
               <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 list-none p-0">
                 {unchecked.map((row) => (
-                  <li key={row.id} className="text-sm font-body">
+                  <li key={row.id} id={row.id} className="text-sm font-body scroll-mt-24">
                     <Link
                       to={`/exotic-pet-laws/${row.id}/`}
                       className="text-muted-foreground hover:text-foreground transition-colors"

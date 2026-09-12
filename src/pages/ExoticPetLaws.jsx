@@ -6,7 +6,7 @@ import { ArrowLeft, ChevronDown, X } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
-import { CODE_TO_SLUG } from '@/lib/data/stateSlugs';
+import { CODE_TO_SLUG, SLUG_TO_CODE } from '@/lib/data/stateSlugs';
 // Shared with the state pages, which need the same mid-sentence casing.
 import { inSentence } from '@/lib/utils/animalNames';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
@@ -92,7 +92,40 @@ export default function ExoticPetLaws() {
 
   // Reset the pinned state whenever the animal changes, otherwise you keep a
   // detail card for a jurisdiction that has nothing to say about the new one.
-  React.useEffect(() => setSelectedState(null), [activeId]);
+  //
+  // The exception is the very first run, where a fragment names the cell to
+  // open: /exotic-pet-laws/serval/#hawaii restores the tapped card. A fragment
+  // rather than ?state=HI because Google ignores fragments when deciding what
+  // to index, so addressing all 2,704 cells this way cannot produce 2,704
+  // crawlable near-duplicates of the 52 pages that should rank.
+  const hashAdopted = React.useRef(false);
+  React.useEffect(() => {
+    if (!hashAdopted.current) {
+      hashAdopted.current = true;
+      const fromHash = SLUG_TO_CODE[decodeURIComponent(window.location.hash.replace(/^#/, ''))];
+      if (fromHash && LEGAL.jurisdictions[fromHash]) {
+        setSelectedState(fromHash);
+        return;
+      }
+    }
+    setSelectedState(null);
+  }, [activeId]);
+
+  // And the reverse: tapping a state puts it in the address bar, so the URL a
+  // reader copies is the cell they are looking at. The first run is skipped
+  // because it fires before the effect above has committed its state, and would
+  // otherwise strip the very fragment that is being adopted.
+  const hashSynced = React.useRef(false);
+  React.useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    if (!hashSynced.current) {
+      hashSynced.current = true;
+      return;
+    }
+    const base = `${window.location.pathname}${window.location.search}`;
+    const next = selectedState ? `${base}#${CODE_TO_SLUG[selectedState]}` : base;
+    window.history.replaceState(null, '', next);
+  }, [selectedState]);
 
   // Escape and a click anywhere outside both dismiss the help panel. Without
   // the outside click it sits open over the map it is explaining, which on a
