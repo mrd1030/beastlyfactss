@@ -4,29 +4,19 @@ Notes on animal facts that were drafted but did NOT make it into `src/lib/data/f
 
 ## Guide heroes still needed
 
-**`federal-exotic-pet-laws.jpg`**, one hero, for the federal law guide written
-2026-09-12. The article is finished and sits in
-`content/_scheduled-legal-guides/` until the art lands, so it is not live and
-check-images reports it as staged rather than missing. Prompt is in
-IMAGE_PROMPTS.md under "Federal law guide hero". Promoting it is three steps:
-move the file into `content/guides/`, add `federal-exotic-pet-laws-guide` to the
-RELATED_ARTICLES entries it serves, and link it from the federal section of the
-exotic pet legal hub.
-
-The fourteen legal-guide heroes were delivered by Mike on 2026-09-11 and
-installed; the nine feeding-guide heroes landed on 2026-09-09.
-
-**2026-09-09: nine feeding guide heroes installed.** green-iguana, conure,
-box-turtle, hermit-crab, hognose-snake, whites-tree-frog, russian-tortoise,
-budgie and lovebird. Eight arrived as 1168x784 JPEG, matching the house guide
-size and the existing sibling series, and were re-encoded through mozjpeg at
-quality 80 (359KB down to 139KB on the largest, 246 to 459KB down to 85 to
-188KB across the set). The hognose frame arrived as a 1264x848 PNG at 1.4MB and
-was resized and converted to 1168x784 JPEG at quality 80, landing at 69KB.
-Derived -thumb and -card tiers are gitignored and rebuilt by
-generate-thumbnails.js, so check-images reporting those as missing is expected.
+None outstanding. The federal law guide hero landed 2026-09-12, the fourteen
+legal-guide heroes on 2026-09-11, and the nine feeding-guide heroes on
+2026-09-09.
 
 ## Completed
+
+**2026-09-12: federal law guide hero installed.** `federal-exotic-pet-laws.jpg`,
+a hatchling red-eared slider at the waterline, arrived at 1168x784 JPEG already
+matching the house guide size and was re-encoded through mozjpeg at quality 80,
+228KB down to 75KB. The article moved out of `content/_scheduled-legal-guides/`
+into `content/guides/` the same day, wired into RELATED_ARTICLES against 14
+guide ids and linked from the hub's federal section. Prompt is in
+IMAGE_PROMPTS.md.
 
 **2026-09-11: fourteen legal guide heroes installed.** crested-gecko,
 leopard-gecko, green-iguana, blue-tongue-skink, gerbil, bearded-dragon,

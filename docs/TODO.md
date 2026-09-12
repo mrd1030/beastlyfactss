@@ -7,15 +7,10 @@ file is the one that counts. Cross items off here, not in a chat window.
 
 ## 1. Write the federal law guide
 
-**Written 2026-09-12, waiting on one hero image.** The guide is
-`content/_scheduled-legal-guides/federal-exotic-pet-laws-guide.mdx`, staged
-rather than live because `federal-exotic-pet-laws.jpg` does not exist yet and a
-live article pointing at a missing hero fails check-images. Voice check passes
-clean, 0 errors and 0 warnings, and all 14 sources return 200. The prompt for
-the hero is in IMAGE_PROMPTS.md and the promotion steps are in NEEDS_IMAGE.md:
-move the file, wire RELATED_ARTICLES, link it from the hub's federal section.
-Both of those wait for the move, because a RELATED_ARTICLES entry or a hub link
-pointing at a staged slug is a dead link until the file is in content/guides.
+**Done 2026-09-12.** `content/guides/federal-exotic-pet-laws-guide.mdx`, live,
+hero installed, wired into RELATED_ARTICLES against 14 guide ids and linked
+from the hub's federal section. Voice check clean, 0 errors and 0 warnings, all
+14 sources return 200.
 
 What it covers, all against primary text: the Lacey Act's two halves, the
 injurious wildlife list and the 2017 D.C. Circuit ruling that ended the
