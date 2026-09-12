@@ -2,7 +2,8 @@
 
 Guide art replaced on 2026-09-12 (docs/TODO.md item 5). Most of it was replaced
 because the animal in the frame was not the species the guide is about: eight
-from the first skim pass, three from the second, four composites from the third.
+from the first skim pass, three from the second, four composites from the third,
+two more from the fourth.
 Two files at the end are different, correct animals swapped out for better
 photographs rather than for being wrong. Kept rather than deleted: several are
 good photographs of a real animal, just the wrong one, so they are usable art
@@ -31,6 +32,8 @@ a `-2` suffix. Read the second column before reusing one.
 | `gargoyle-mourning-african-fat-tail-gecko-overview.jpg` | Three-gecko overview | The pre-splice grid. Gargoyle and mourning gecko panels correct; the third was a knob-headed gecko rather than an African fat-tail. |
 | `goldfish-2.jpg` | Goldfish care hub | **Correct species**, the replacement installed earlier the same day. Retired only because the colour was muted. No barbels, plain snout, single caudal fin. Perfectly usable. |
 | `koi.jpg` | Koi care hub | **Correct species**, retired only for colour. A single koi in pond weed, barbels present. Perfectly usable. |
+| `red-eared-slider-legal.jpg` | Red-eared slider legal guide | Reads as a painted turtle, *Chrysemys picta*: red bars along the shell margins and no red patch behind the eye, which is the feature the slider is named for. |
+| `tiger-salamander-legal.jpg` | Tiger salamander legal guide | Glossy black with bright egg-yellow patches, reading as a European fire salamander, *Salamandra salamandra*, rather than the dull olive-on-brown of a tiger salamander. Lower confidence than the others here, the two do overlap. |
 
 Nothing in `src/` or `content/` points at this folder. The files are here to be
 picked up deliberately, not to be served. The two marked not usable are kept

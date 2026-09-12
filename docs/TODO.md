@@ -184,14 +184,15 @@ checked.** The last 50 were the dog and cat breeds, the remaining legal set and
 the six generic files. Two new flags, both in the legal set, both needing a
 human eye before art is spent:
 
-- **`red-eared-slider-legal.jpg`** reads as a painted turtle: red bars along the
-  shell margins and no red patch behind the eye. A slider's red temple stripe is
-  the whole name of the species and this animal does not have one. Medium-high
-  confidence, and it sits on the guide about that species specifically.
-- `tiger-salamander-legal.jpg`: glossy black with bright yellow blotches, which
-  reads closer to a European fire salamander than to a tiger salamander's
-  olive-on-dark barring. Low confidence, the two overlap a lot. The standalone
-  `tiger-salamander.jpg` is correct, so compare them side by side.
+Both were **replaced 2026-09-12**, the same day they were found:
+
+- **`red-eared-slider-legal.jpg`** read as a painted turtle, with red bars along
+  the shell margins and no red patch behind the eye. The new frame carries the
+  broad red temple stripe and a carapace with no red on it at all.
+- **`tiger-salamander-legal.jpg`** read as a European fire salamander, glossy
+  black with bright egg-yellow. The new frame has the dull olive-mustard
+  blotches, broad blunt head, small eyes and visible costal grooves of
+  *Ambystoma tigrinum*.
 
 Two cosmetic notes, no art needed: `ackie-monitor-legal.jpg` has a slightly long
 snout for the species but the spiny ringed tail reads correctly, and the props
