@@ -174,6 +174,31 @@ the hissing cockroach in that same ackie composite, and the hognose in
 `veiled-chameleon-ferret-hognose-overview.jpg` are all right. These are
 per-image failures, not per-species ones.
 
+Fourth pass, 2026-09-12. **All 183 heroes in `public/assets/guides/` are now
+checked.** The last 50 were the dog and cat breeds, the remaining legal set and
+the six generic files. Two new flags, both in the legal set, both needing a
+human eye before art is spent:
+
+- **`red-eared-slider-legal.jpg`** reads as a painted turtle: red bars along the
+  shell margins and no red patch behind the eye. A slider's red temple stripe is
+  the whole name of the species and this animal does not have one. Medium-high
+  confidence, and it sits on the guide about that species specifically.
+- `tiger-salamander-legal.jpg`: glossy black with bright yellow blotches, which
+  reads closer to a European fire salamander than to a tiger salamander's
+  olive-on-dark barring. Low confidence, the two overlap a lot. The standalone
+  `tiger-salamander.jpg` is correct, so compare them side by side.
+
+Two cosmetic notes, no art needed: `ackie-monitor-legal.jpg` has a slightly long
+snout for the species but the spiny ringed tail reads correctly, and the props
+in `exotic-pet-legal-hub.jpg` (a scorpion and a tortoise beside a gavel) look
+like dried specimens rather than live animals.
+
+Everything else in the last 50 passed: all sixteen dog and cat breed heroes, the
+six generic care and legal files, and the rest of the legal set.
+
+Still unchecked: the 777 article heroes in `public/assets/images/`. Nothing in
+that folder has been looked at.
+
 Checked and correct, for the record: all six dog and cat breeds sampled,
 every parrot and finch, the turtles and tortoises, leopard gecko, gargoyle
 gecko, African fat-tail, mourning gecko, fire skink, uromastyx, green anole,
