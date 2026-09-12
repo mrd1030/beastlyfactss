@@ -1959,3 +1959,123 @@ jet-black skin, no bright egg-yellow patches, and no prominent bulging parotoid
 glands behind the eyes. The standalone `tiger-salamander.jpg` is correct and is
 the reference to match.
 
+---
+
+# Article hero fixes, `public/assets/images/`, 1168x784
+
+From the article skim (docs/TODO.md item 6). Grouped by species, one block per
+animal, because the fault is shared across a species' set even though only some
+files carry it. Same spec as the rest: 3:2, 1168x784, mozjpeg quality 80.
+
+Only the named files need replacing. The others in each species' set were
+checked and are correct, so do not regenerate them.
+
+## Emperor scorpion, 4 files
+
+Every one of these shows orange or yellow legs, and `handling` and
+`health-issues` also show a second pair of pincers that no scorpion has. The
+accuracy block below applies to all four: uniformly glossy jet black over body,
+legs, pincers and tail alike, massive granular pincers as thick as the forearms,
+ONE pair of pincers, eight walking legs, a single bulbous telson carrying one
+dark sting. Never orange, red or yellow legs.
+
+```
+emperor-scorpion-cost.jpg
+Photorealistic photograph of an adult emperor scorpion on damp coconut fibre in
+a simple glass enclosure, full side view, whole animal in frame, a cork bark
+hide and a shallow water dish behind it. Uniformly glossy jet black body, legs,
+pincers and tail, heavy granular pincers, single telson with one dark sting.
+Warm dim keeper-room light, black and umber palette, camera at substrate level,
+100mm macro, f/8, 3:2. No orange or yellow anywhere on the animal.
+
+emperor-scorpion-handling.jpg
+Photorealistic photograph of an adult emperor scorpion being guided across damp
+substrate by long stainless steel feeding tongs entering from the left, the
+animal calm with pincers forward and tail low. Uniformly glossy jet black body,
+legs, pincers and tail, one pair of pincers only. Soft overhead light, black and
+grey palette, macro, f/8, 3:2. No hands, no orange legs, no second pair of
+claws.
+
+emperor-scorpion-health-issues.jpg
+Photorealistic photograph of an adult emperor scorpion on damp dark substrate
+beside a small round hygrometer dial, side view, the animal's carapace and tail
+segments clearly lit so the joints and cuticle read sharply. Uniformly glossy
+jet black throughout, single telson with one sting. Cool even light, black and
+slate palette, macro, f/8, 3:2.
+
+emperor-scorpion-tank-setup.jpg
+Photorealistic photograph of a full emperor scorpion enclosure seen through the
+front glass, deep dark substrate, two cork bark hides, a shallow water dish and
+a side-mounted heat mat cable, with the scorpion out in the open near one hide.
+Uniformly glossy jet black animal, clearly readable at this distance. Warm low
+lighting from one side, brown and black palette, 35mm, f/5.6, 3:2.
+```
+
+## African pygmy hedgehog, 3 files
+
+`cost` is plainly the European hedgehog. `handling` and `feeding` lean the same
+way. Accuracy block for all three: cream quills each banded with a single brown
+stripe, a white face and white belly fur, a small dark button eye, a pink-brown
+pointed snout, and a body small enough to sit in two cupped hands. Never the
+European hedgehog's dark brown spines, dark grey face and heavy build.
+
+```
+hedgehog-cost.jpg
+Photorealistic photograph of an African pygmy hedgehog standing beside a small
+ceramic food bowl on fleece bedding inside a plastic-bin style enclosure, whole
+animal in frame, front three-quarter view, quills relaxed. Cream quills banded
+with brown, white face and cheeks, pink-brown snout. Soft indoor light, warm
+neutral palette, camera at floor level, 85mm, f/2.8, 3:2.
+
+hedgehog-handling.jpg
+Photorealistic photograph of an African pygmy hedgehog curled loosely in a pair
+of cupped human hands, face and snout visible rather than fully balled, quills
+relaxed. Cream quills banded with brown, white face, dark button eyes, pink-brown
+snout. Bright soft window light indoors, warm neutral palette, shallow depth of
+field on the face, 85mm, f/2.8, 3:2.
+
+hedgehog-feeding.jpg
+Photorealistic photograph of an African pygmy hedgehog eating from a shallow
+dish of dry kibble with a single mealworm on top, head down at the dish, body in
+three-quarter view. Cream quills banded with brown, white face, pink-brown
+snout. Warm low light suited to a nocturnal animal, amber and cream palette,
+camera at dish level, 100mm macro, f/4, 3:2.
+```
+
+## Corydoras catfish, 3 files
+
+`health-issues` is a wide-mouthed long-whiskered catfish, closest to a channel
+catfish. `handling` is a shoal of elongated forked-tail fish with a large
+catfish above them. `feeding` is the right species but ships at 512px wide, so
+it needs reshooting for size alone. Accuracy block for all three: a stout
+arch-backed body no longer than a thumb, two overlapping rows of bony armour
+plates along each flank instead of scales, a blunt downturned snout, three pairs
+of SHORT barbels at the mouth, a tall triangular dorsal fin, a small adipose
+fin, a forked tail. Never long trailing whiskers, never a wide flat head, never
+a scaled torpedo body.
+
+```
+corydoras-catfish-health-issues.jpg
+Photorealistic underwater photograph of a single healthy corydoras resting on
+fine pale sand, front three-quarter view, barbels spread and intact, dorsal fin
+raised and undamaged, whole fish in frame. Stout arched armour-plated body,
+blunt downturned snout, three pairs of short barbels. Bright clean aquarium
+light, pale sand and green palette, camera at substrate level, 100mm macro,
+f/5.6, 3:2.
+
+corydoras-catfish-handling.jpg
+Photorealistic underwater photograph of a corydoras being guided into a soft
+green aquarium net held still in the water, the fish calm and level, whole body
+and net rim in frame. Stout arched armour-plated body, blunt downturned snout,
+three pairs of short barbels, tall triangular dorsal fin. Clean even aquarium
+light, green and sand palette, 60mm macro, f/5.6, 3:2. No hands in the water.
+
+corydoras-catfish-feeding.jpg
+Photorealistic underwater photograph of five or six corydoras working a bed of
+fine pale sand for a sinking wafer, several with snouts buried and barbels
+spread, sand lifting slightly around them. Stout arch-backed armour-plated
+bodies, blunt downturned snouts, short barbels. Bright clean aquarium light,
+shallow depth of field on the nearest fish, pale sand and green palette, 100mm
+macro, f/5.6, 3:2.
+```
+
