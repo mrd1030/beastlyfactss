@@ -3,15 +3,16 @@ import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { useLocation, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { Search, ChevronRight, Info } from 'lucide-react';
+import { Search, Info } from 'lucide-react';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
+import BrowseRow from '@/components/shared/BrowseRow';
+import { groupGuides } from '@/lib/data/guideGroups';
 import { guideCategoryDescription } from '@/lib/seo/categoryDescriptions';
 import { allGuides } from '@/lib/data/guides';
 import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
-import LocalImage from '@/components/shared/LocalImage';
 import { trackEvent } from '@/lib/analytics';
 
 // Tabs
@@ -345,7 +346,19 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {group.animals.map((animal) => (
-                <AnimalRow key={animal.id} animal={animal} onOpenLegend={onOpenLegend} returnTo={currentListPath} />
+                <BrowseRow
+                  key={animal.id}
+                  to={`/encyclopedia/animal/${animal.id}/`}
+                  name={animal.name}
+                  subtitle={animal.scientific}
+                  image={animal.image}
+                  emoji={animal.emoji}
+                  difficulty={animal.difficulty}
+                  difficultyClass={difficultyColor[animal.difficulty]}
+                  onOpenLegend={onOpenLegend}
+                  returnTo={currentListPath}
+                  available={animal.available}
+                />
               ))}
             </div>
           </motion.div>
@@ -364,6 +377,10 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
 } 
 
 function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides, onOpenLegend, currentListPath }) {
+  // Same headings the encyclopedia tab uses, so the two halves of this page
+  // break their lists the same way. See guideGroups.js.
+  const groups = useMemo(() => groupGuides(filteredGuides), [filteredGuides]);
+
   return (
     <div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
@@ -420,121 +437,40 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
         )}
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
-        {filteredGuides.length === 0 ? (
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 space-y-10">
+        {groups.length === 0 ? (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">🔍</span>
             <p className="font-body font-bold text-foreground">No guides found</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredGuides.map((guide, i) => (
-              <GuideCard key={guide.id} guide={guide} index={i} onOpenLegend={onOpenLegend} returnTo={currentListPath} />
-            ))}
-          </div>
+          groups.map((group) => (
+            <motion.div key={group.name} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
+              <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
+                <span>{group.emoji}</span>{` ${group.name}`}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                {group.guides.map((guide) => (
+                  <BrowseRow
+                    key={guide.id}
+                    to={`/guides/${guide.id}/`}
+                    name={guide.name}
+                    subtitle={guide.tagline}
+                    image={guide.image}
+                    emoji={guide.emoji}
+                    difficulty={guide.difficulty}
+                    difficultyClass={difficultyColor[guide.difficulty]}
+                    onOpenLegend={onOpenLegend}
+                    returnTo={currentListPath}
+                  />
+                ))}
+              </div>
+            </motion.div>
+          ))
         )}
       </div>
     </div>
   );
 }
 
-function AnimalRow({ animal, onOpenLegend, returnTo }) {
-  const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
 
-  if (animal.available) {
-    return (
-      <Link to={`/encyclopedia/animal/${animal.id}/`} state={{ returnTo }}>
-        <motion.div whileHover={{ x: 3 }}
-          className="flex items-center justify-between bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer">
-          <div className="flex items-center gap-3 min-w-0">
-            {animal.image ? (
-              <LocalImage src={animal.image} alt={animal.name} loading="lazy" className="w-10 h-10 rounded-lg object-cover flex-shrink-0" />
-            ) : (
-              <span className="text-xl flex-shrink-0">{animal.emoji}</span>
-            )}
-            <div className="min-w-0">
-              <p className="font-body font-semibold text-sm text-foreground truncate">{animal.name}</p>
-              <p className="text-xs text-muted-foreground font-body italic truncate">{animal.scientific}</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-2 flex-shrink-0">
-            <button 
-              onClick={(e) => { e.preventDefault(); e.stopPropagation(); onOpenLegend(); }}
-              className={`text-xs font-body font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
-            >
-              {animal.difficulty}
-            </button>
-            <ChevronRight className="w-3.5 h-3.5 text-muted-foreground group-hover:text-secondary transition-colors" />
-          </div>
-        </motion.div>
-      </Link>
-    );
-  }
-
-  return (
-    <div className="flex items-center justify-between bg-card/50 border border-border/50 rounded-xl px-4 py-3 opacity-60">
-      <div className="flex items-center gap-3 min-w-0">
-        {animal.image ? (
-          <LocalImage src={animal.image} alt={animal.name} loading="lazy" className="w-10 h-10 rounded-lg object-cover grayscale flex-shrink-0" />
-        ) : (
-          <span className="text-xl flex-shrink-0 grayscale">{animal.emoji}</span>
-        )}
-        <div className="min-w-0">
-          <p className="font-body font-semibold text-sm text-foreground truncate">{animal.name}</p>
-          <p className="text-xs text-muted-foreground font-body italic truncate">{animal.scientific}</p>
-        </div>
-      </div>
-      <button 
-        onClick={(e) => { e.preventDefault(); onOpenLegend(); }}
-        className={`text-xs font-body font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
-      >
-        {animal.difficulty}
-      </button>
-    </div>
-  );
-}
-
-function GuideCard({ guide, index, onOpenLegend, returnTo }) {
-  const diffClass = difficultyColor[guide.difficulty] || 'text-muted-foreground bg-muted';
-  const isBreedQuirk = guide.name.includes('Breed Quirks') || guide.name.includes(':');
-
-  return (
-    <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(index * 0.03, 0.4) }} whileHover={{ y: -3 }}>
-      <Link to={`/guides/${guide.id}/`} state={{ returnTo }} onClick={() => trackEvent('guide_card_clicked', { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty })}>
-        <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
-          {guide.image && (
-            <div className="-mx-5 -mt-5 rounded-t-2xl overflow-hidden mb-4 aspect-video">
-              <LocalImage
-                src={guide.image}
-                alt={guide.name}
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          )}
-          <div className="flex items-start justify-between mb-3">
-            <span className="text-3xl">{guide.emoji}</span>
-            <div className="flex items-center gap-1.5 flex-wrap justify-end">
-              {isBreedQuirk && <span className="text-xs font-body font-semibold px-2 py-0.5 rounded-full bg-secondary/10 text-secondary">Breed Quirks</span>}
-              {guide.sizeCategory && guide.sizeCategory !== 'All Sizes' && (
-                <span className="text-xs font-body font-semibold px-2 py-0.5 rounded-full bg-muted text-muted-foreground">{guide.sizeCategory}</span>
-              )}
-              <button 
-                onClick={(e) => { e.preventDefault(); e.stopPropagation(); onOpenLegend(); }}
-                className={`text-xs font-body font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
-              >
-                {guide.difficulty}
-              </button>
-            </div>
-          </div>
-          <h3 className="font-display font-bold text-base text-foreground mb-1 group-hover:text-secondary transition-colors">{guide.name}</h3>
-          <p className="text-xs text-muted-foreground font-body mb-2">{guide.petType}</p>
-          <p className="text-xs text-muted-foreground font-body leading-relaxed flex-1">{guide.tagline}</p>
-          <div className="flex items-center gap-1 mt-4 text-xs font-body font-semibold text-secondary">
-            View full guide <ChevronRight className="w-3.5 h-3.5" />
-          </div>
-        </div>
-      </Link>
-    </motion.div>
-  );
-}
