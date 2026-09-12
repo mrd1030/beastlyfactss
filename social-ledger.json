@@ -336,6 +336,62 @@
       {
         "id": 278,
         "date": "2026-09-11"
+      },
+      {
+        "id": 132,
+        "date": "2026-09-12"
+      },
+      {
+        "id": 134,
+        "date": "2026-09-12"
+      },
+      {
+        "id": 129,
+        "date": "2026-09-13"
+      },
+      {
+        "id": 121,
+        "date": "2026-09-13"
+      },
+      {
+        "id": 137,
+        "date": "2026-09-14"
+      },
+      {
+        "id": 122,
+        "date": "2026-09-14"
+      },
+      {
+        "id": 64,
+        "date": "2026-09-15"
+      },
+      {
+        "id": 78,
+        "date": "2026-09-15"
+      },
+      {
+        "id": 72,
+        "date": "2026-09-16"
+      },
+      {
+        "id": 86,
+        "date": "2026-09-16"
+      },
+      {
+        "id": 117,
+        "date": "2026-09-17"
+      },
+      {
+        "id": 108,
+        "date": "2026-09-17"
+      },
+      {
+        "id": 74,
+        "date": "2026-09-18"
+      },
+      {
+        "id": 62,
+        "date": "2026-09-18"
       }
     ],
     "articles": [
@@ -502,9 +558,37 @@
       {
         "file": "content/guides/sugar-glider-cost-guide.mdx",
         "date": "2026-09-11"
+      },
+      {
+        "file": "content/guides/green-iguana-cost-guide.mdx",
+        "date": "2026-09-12"
+      },
+      {
+        "file": "content/guides/red-eared-slider-cost-guide.mdx",
+        "date": "2026-09-13"
+      },
+      {
+        "file": "content/guides/betta-fish-health-issues-guide.mdx",
+        "date": "2026-09-14"
+      },
+      {
+        "file": "content/guides/hamster-health-issues-guide.mdx",
+        "date": "2026-09-15"
+      },
+      {
+        "file": "content/guides/ball-python-health-issues-guide.mdx",
+        "date": "2026-09-16"
+      },
+      {
+        "file": "content/guides/chinchilla-cost-guide.mdx",
+        "date": "2026-09-17"
+      },
+      {
+        "file": "content/guides/savannah-monitor-cost-guide.mdx",
+        "date": "2026-09-18"
       }
     ],
-    "nextStart": "2026-09-12"
+    "nextStart": "2026-09-19"
   },
   "ig": {
     "facts": [
@@ -1010,6 +1094,62 @@
       {
         "id": 143,
         "date": "2026-09-11"
+      },
+      {
+        "id": 1,
+        "date": "2026-09-12"
+      },
+      {
+        "id": 20,
+        "date": "2026-09-12"
+      },
+      {
+        "id": 26,
+        "date": "2026-09-13"
+      },
+      {
+        "id": 60,
+        "date": "2026-09-13"
+      },
+      {
+        "id": 63,
+        "date": "2026-09-14"
+      },
+      {
+        "id": 81,
+        "date": "2026-09-14"
+      },
+      {
+        "id": 100,
+        "date": "2026-09-15"
+      },
+      {
+        "id": 111,
+        "date": "2026-09-15"
+      },
+      {
+        "id": 115,
+        "date": "2026-09-16"
+      },
+      {
+        "id": 123,
+        "date": "2026-09-16"
+      },
+      {
+        "id": 127,
+        "date": "2026-09-17"
+      },
+      {
+        "id": 136,
+        "date": "2026-09-17"
+      },
+      {
+        "id": 112,
+        "date": "2026-09-18"
+      },
+      {
+        "id": 107,
+        "date": "2026-09-18"
       }
     ],
     "articles": [
@@ -1100,9 +1240,37 @@
       {
         "file": "content/guides/lovebird-health-issues-guide.mdx",
         "date": "2026-09-11"
+      },
+      {
+        "file": "content/guides/corn-snake-health-issues-guide.mdx",
+        "date": "2026-09-12"
+      },
+      {
+        "file": "content/guides/crested-gecko-cost-guide.mdx",
+        "date": "2026-09-13"
+      },
+      {
+        "file": "content/guides/guinea-pig-health-issues-guide.mdx",
+        "date": "2026-09-14"
+      },
+      {
+        "file": "content/guides/budgie-health-issues-guide.mdx",
+        "date": "2026-09-15"
+      },
+      {
+        "file": "content/guides/russian-tortoise-cost-guide.mdx",
+        "date": "2026-09-16"
+      },
+      {
+        "file": "content/guides/oscar-fish-cost-guide.mdx",
+        "date": "2026-09-17"
+      },
+      {
+        "file": "content/guides/tiger-salamander-cost-guide.mdx",
+        "date": "2026-09-18"
       }
     ],
-    "nextStart": "2026-09-12"
+    "nextStart": "2026-09-19"
   },
   "pinterest": {
     "facts": [

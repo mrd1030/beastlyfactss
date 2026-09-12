@@ -263,6 +263,10 @@ The 9/5 to 9/11 week is uploaded and queued on all three platforms, marked in
 the ledger (X 84 facts / 48 articles, IG 21 / 60, Threads 43 / 22), with
 `nextStart` on all three at 2026-09-12.
 
+The 9/12 to 9/18 week is uploaded and queued on X and Threads, 21 posts
+each, marked in the ledger (X 98 facts / 48 articles, Threads 57 / 29),
+with `nextStart` on both at 2026-09-19.
+
 Instagram was skipped for the week of 9/12 to 9/18, deliberately, not
 missed. X and Threads ran that week and Pinterest was already queued
 through 9/18, so IG's `nextStart` still reads 2026-09-12 and its whole pool
