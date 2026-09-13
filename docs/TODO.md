@@ -331,14 +331,18 @@ gecko, crested gecko and blue-tongue skink, 18 images. **One species miss and
 two defects of other kinds, prompts written for all three:**
 
 - **`blue-tongue-skink-handling.jpg`**: slender limbs with long spidery toes on
-  a small body. A blue-tongue is heavy and sausage-shaped on very short stubby
-  legs, which the other three frames in its set get right.
+  a small body where a blue-tongue is heavy and sausage-shaped on short stubby
+  legs. **Replaced 2026-09-12.**
 - **`crested-gecko-health-issues.jpg`**: correct species, but the digital scale
-  carries invented button labels ("MUZERS", "Cund", "BRV") and a nonsense
-  readout. Not a species error, just the loudest possible generated-image tell,
-  on the page about weighing your gecko.
-- **`tokay-gecko-handling.jpg`**: a correct tokay gaping on a branch, with no
-  handling in the frame at all. Right animal, wrong page.
+  carried invented button labels ("MUZERS", "Cund", "BRV") and a nonsense
+  readout. **Replaced 2026-09-12** with a plain scale and a blank display.
+- ~~`tokay-gecko-handling.jpg`~~: **flag withdrawn.** I called it right animal,
+  wrong page for showing no handling. Mike questioned whether tokays are a
+  hands-on species at all, and the article settles it: "Should You Handle a
+  Tokay Gecko? Probably Not Often", a display animal that gapes, barks and bites
+  when a hand enters. The gaping frame is the correct illustration and stays.
+  The lesson is to read what a handling guide recommends before treating a
+  hands-off image as a mismatch.
 
 Everything else passed, including both monitor sets. Worth noting that the
 crested gecko set is fine throughout, which downgrades the earlier
@@ -346,7 +350,8 @@ low-confidence flag on its guide hero: the species reads consistently across
 seven article frames.
 
 Running total for the article folder: 26 species of about 110, 115 images
-opened, 14 replaced, 8 open.
+opened, 16 replaced, 5 open: the angelfish feeding frame, the neon tetra health
+frame, and the three muddled guppy frames.
 
 ### Separate from species: 12 badly undersized files
 

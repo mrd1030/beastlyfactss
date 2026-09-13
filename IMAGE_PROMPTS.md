@@ -2202,16 +2202,15 @@ Check: no lettering anywhere. The current frame carries invented button labels
 and a nonsense readout, which is the loudest possible tell on a page about
 weighing your animal. A blank display is better than a wrong one.
 
-```
-tokay-gecko-handling.jpg
-Photorealistic photograph of a tokay gecko being lifted on a flat open palm and
-forearm, the animal calm and gripping the skin with splayed toe pads, head
-turned toward the camera, mouth closed. Vivid blue-grey skin with orange and
-rust spotting, large gold eye with a vertical pupil, broad adhesive toe pads.
-Terrarium background soft behind, warm low light, blue and rust palette, 85mm,
-f/4, 3:2.
-```
-Check: the animal must actually be in contact with a hand, since this is the
-handling guide. The current frame is a correct tokay gaping on a branch with no
-handling in it at all, which makes it a fine gecko photograph on the wrong page.
+**tokay-gecko-handling.jpg: prompt withdrawn 2026-09-12, do not regenerate.**
+The existing frame, a tokay gaping on a branch with no hand in it, is correct
+and should stay. The article is titled "Should You Handle a Tokay Gecko?
+Probably Not Often" and says a hand entering the enclosure draws gaping,
+barking, lunging and biting, and that even a settled captive-bred animal is a
+display species rather than a handling pet. A calm tokay sitting on an open palm
+would contradict the page it illustrates. The defensive gape is the article.
+
+This one is worth remembering as a rule: on a handling guide, check what the
+guide actually recommends before calling a hands-off frame a mismatch. Chinchilla
+on wire mesh was the same class of error in the opposite direction.
 
