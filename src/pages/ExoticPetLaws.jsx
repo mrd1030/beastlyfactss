@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useLocation } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { ChevronDown, X } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
@@ -276,6 +276,14 @@ export default function ExoticPetLaws() {
     ];
   const crumbs = breadcrumbSchema(trail);
 
+  // Only when this hub really is the previous history entry, which the stamp
+  // it puts on its own links is what tells us. A reader who arrived from a
+  // search result has no such entry, and sending them back would leave the
+  // site entirely.
+  const location = useLocation();
+  const backToHub = location.state?.from === 'legal-hub' ? '/exotic-pet-laws/' : null;
+
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -307,7 +315,7 @@ export default function ExoticPetLaws() {
           {/* py-3 with a matching negative margin: the row looks the same size as
               the Beastfile back link but gives a 44px tap target. The first
               version was 32px, under the minimum for a thumb. */}
-          <Breadcrumbs trail={trail} className="mb-3" />
+          <Breadcrumbs trail={trail} className="mb-3" historyBackFor={backToHub} />
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">

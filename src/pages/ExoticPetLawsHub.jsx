@@ -31,6 +31,12 @@ const ANIMALS_AZ = Object.keys(LEGAL.animals).sort((a, b) =>
   LEGAL.animals[a].name.localeCompare(LEGAL.animals[b].name),
 );
 
+// Read by the breadcrumb on every page this hub links into, which uses it to
+// go back through history rather than push this URL. The lists it links from
+// start 6,056px down a 7,721px page, so returning to the top is four screens
+// of scrolling back to where you were.
+const FROM_HUB = { from: 'legal-hub' };
+
 export default function ExoticPetLawsHub() {
   const stateCount = 52;
   const title = withBrand('Exotic Pet Laws by State: What Is Actually Banned');
@@ -74,14 +80,14 @@ export default function ExoticPetLawsHub() {
               writing about a state, actually asks. */}
           <div className="mt-5 flex flex-wrap gap-3">
             <Link
-              to="/exotic-pet-laws/map/"
+              to="/exotic-pet-laws/map/" state={FROM_HUB}
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-body font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
             >
               <MapIcon className="w-4 h-4" aria-hidden="true" />
               Open the interactive map
             </Link>
             <Link
-              to="/exotic-pet-laws/state/"
+              to="/exotic-pet-laws/state/" state={FROM_HUB}
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2.5 text-sm font-body font-semibold text-foreground transition-colors hover:border-primary/50"
             >
               <MapPin className="w-4 h-4" aria-hidden="true" />
@@ -116,7 +122,7 @@ export default function ExoticPetLawsHub() {
             {ANIMALS_AZ.map((id) => (
               <li key={id} className="text-sm font-body">
                 <Link
-                  to={`/exotic-pet-laws/${id}/`}
+                  to={`/exotic-pet-laws/${id}/`} state={FROM_HUB}
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {LEGAL.animals[id].name}
@@ -141,7 +147,7 @@ export default function ExoticPetLawsHub() {
             {JURISDICTIONS_AZ.map((code) => (
               <li key={code} className="text-sm font-body">
                 <Link
-                  to={`/exotic-pet-laws/state/${CODE_TO_SLUG[code]}/`}
+                  to={`/exotic-pet-laws/state/${CODE_TO_SLUG[code]}/`} state={FROM_HUB}
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {LEGAL.jurisdictions[code].name}

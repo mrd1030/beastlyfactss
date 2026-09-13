@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link, useParams, Navigate } from 'react-router-dom';
+import { Link, useParams, Navigate, useLocation } from 'react-router-dom';
 import LEGAL from '@/lib/data/legalStatus.json';
 import { STATUS_BUCKETS } from '@/components/legal/LegalStatusMap';
 import { forJurisdiction, TRACKED_ANIMAL_COUNT } from '@/lib/data/legalByState';
@@ -132,6 +132,14 @@ export default function ExoticPetLawsState() {
   ];
   const crumbs = breadcrumbSchema(trail);
 
+  // Only when this hub really is the previous history entry, which the stamp
+  // it puts on its own links is what tells us. A reader who arrived from a
+  // search result has no such entry, and sending them back would leave the
+  // site entirely.
+  const location = useLocation();
+  const backToHub = location.state?.from === 'legal-hub' ? '/exotic-pet-laws/' : null;
+
+
   // The opening sentence is derived, not templated: it names the actual banned
   // animals where there are few enough to list, which makes every one of these
   // 52 pages open on its own specifics rather than on the same sentence with a
@@ -199,7 +207,7 @@ export default function ExoticPetLawsState() {
 
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-6 pb-8 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <Breadcrumbs trail={trail} className="mb-3" />
+          <Breadcrumbs trail={trail} className="mb-3" historyBackFor={backToHub} />
 
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
             {`Exotic pet laws in ${inPlace}`}

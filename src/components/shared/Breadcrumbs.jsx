@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
 // The visible breadcrumb trail.
@@ -18,7 +18,17 @@ import { ChevronRight } from 'lucide-react';
 // The last rung is the current page, so it is text rather than a link, marked
 // aria-current="page". A link to where you already are is noise for everyone
 // and a small trap for a screen reader.
-export default function Breadcrumbs({ trail, className = '' }) {
+// `historyBackFor` names one rung that should go back through history instead
+// of pushing its URL, and is set only when the caller knows that page is the
+// previous history entry. It stays a real anchor with the right href, so it
+// still crawls, still opens in a new tab on a middle click, and still works if
+// the click handler never runs. The handler only intercepts the plain click,
+// where the difference is that the reader keeps their scroll position: the
+// legal hub is 7,700px tall and its animal and state lists start at 6,056px,
+// so pushing its URL means landing at a masthead four screens above the list
+// they were reading.
+export default function Breadcrumbs({ trail, className = '', historyBackFor = null }) {
+  const navigate = useNavigate();
   const items = [['Beastly Facts', '/'], ...trail];
 
   return (
@@ -44,6 +54,14 @@ export default function Breadcrumbs({ trail, className = '' }) {
                 // height of one.
                 <Link
                   to={path}
+                  onClick={historyBackFor === path ? (e) => {
+                    // Let a modified click through: cmd, ctrl, shift, middle
+                    // button and the rest all mean "not here", and calling
+                    // navigate would hijack them.
+                    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+                    e.preventDefault();
+                    navigate(-1);
+                  } : undefined}
                   className="font-medium text-muted-foreground hover:text-primary transition-colors py-1 -my-1 whitespace-nowrap"
                 >
                   {name}

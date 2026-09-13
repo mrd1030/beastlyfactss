@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import LegalStatusMap from '@/components/legal/LegalStatusMap';
 import {
   STATE_LEGAL,
@@ -47,6 +47,14 @@ export default function ExoticPetLawsStateIndex() {
   ];
   const crumbs = breadcrumbSchema(trail);
 
+  // Only when this hub really is the previous history entry, which the stamp
+  // it puts on its own links is what tells us. A reader who arrived from a
+  // search result has no such entry, and sending them back would leave the
+  // site entirely.
+  const location = useLocation();
+  const backToHub = location.state?.from === 'legal-hub' ? '/exotic-pet-laws/' : null;
+
+
   const mostRestrictive = JURISDICTIONS_BY_RESTRICTION.slice(0, 10);
 
   // Across the whole matrix here, since this page summarises all of it. The
@@ -73,7 +81,7 @@ export default function ExoticPetLawsStateIndex() {
 
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-6 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
-          <Breadcrumbs trail={trail} className="mb-3" />
+          <Breadcrumbs trail={trail} className="mb-3" historyBackFor={backToHub} />
 
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
             Exotic pet laws by state
