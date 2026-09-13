@@ -95,6 +95,21 @@ const inSentence = (name) => {
   const [first, ...rest] = name.split(' ');
   return PROPER_FIRST_WORDS.has(first) ? name : [first.toLowerCase(), ...rest].join(' ');
 };
+// Mirrors inTitle in src/lib/utils/animalNames.js, same hand-kept arrangement
+// as inSentence above and cross-checked by the drift test at the foot of this
+// file. Casing does not change a title's length, so this exists to keep the
+// reported copy identical to what ships rather than to move any budget.
+const TITLE_MINOR_WORDS = new Set(['a', 'an', 'and', 'of', 'or', 'the', 'in']);
+const raiseFirst = (word) => (word ? word[0].toUpperCase() + word.slice(1) : word);
+const inTitle = (name) =>
+  String(name || '')
+    .split(' ')
+    .map((word, i) =>
+      i > 0 && TITLE_MINOR_WORDS.has(word.toLowerCase())
+        ? word.toLowerCase()
+        : word.split('-').map(raiseFirst).join('-'),
+    )
+    .join(' ');
 const bucketFor = (s) =>
   s === 'legal' ? 'none' : s === 'banned' ? 'banned' : s === 'permit' ? 'permit' : s === 'unclear' ? 'unclear' : 'conditions';
 
@@ -110,9 +125,9 @@ for (const [id, animal] of Object.entries(LEGAL.animals)) {
   const title = withBrand(
     pickWithinLimit(
       [
-        `${animal.name} Laws by State: Where It Is Banned`,
-        `${animal.name} Laws by State: Bans and Permits`,
-        `${animal.name} Laws by State`,
+        `${inTitle(animal.name)} Laws by State: Where It Is Banned`,
+        `${inTitle(animal.name)} Laws by State: Bans and Permits`,
+        `${inTitle(animal.name)} Laws by State`,
       ],
       TITLE_MAX - ` | ${BRAND}`.length,
     ),

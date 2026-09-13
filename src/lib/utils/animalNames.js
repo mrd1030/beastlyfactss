@@ -37,3 +37,34 @@ export function joinList(items) {
   if (items.length === 1) return items[0];
   return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
 }
+
+// Animal names as they appear in a title tag.
+//
+// The names in the legal dataset are sentence case, which is right in prose and
+// wrong in a title: "Prairie dog Laws by State: Bans and Permits" puts a
+// lowercase word in front of a title-cased suffix and reads as a typo in a
+// result. A GSC pull on 2026-09-12 had /exotic-pet-laws/prairie-dog/ taking 115
+// impressions at position 7.66 with no clicks at all, which is the shape of a
+// title people look at and skip. Forty of the 52 names hit it.
+//
+// Only the leading character of each part is raised, never the rest, because
+// several names already carry internal capitals ("African", "Madagascar") that
+// a blanket capitalize would flatten. Hyphenated parts are raised on both sides
+// so "Red-eared slider" becomes "Red-Eared Slider", but apostrophes are left
+// alone so "Jackson's" does not become "Jackson'S".
+//
+// The small words stay down mid-title, which is what keeps "Argentine black and
+// white tegu" reading as "Argentine Black and White Tegu".
+const TITLE_MINOR_WORDS = new Set(['a', 'an', 'and', 'of', 'or', 'the', 'in']);
+
+const raiseFirst = (word) => (word ? word[0].toUpperCase() + word.slice(1) : word);
+
+export function inTitle(name) {
+  return String(name || '')
+    .split(' ')
+    .map((word, i) => {
+      if (i > 0 && TITLE_MINOR_WORDS.has(word.toLowerCase())) return word.toLowerCase();
+      return word.split('-').map(raiseFirst).join('-');
+    })
+    .join(' ');
+}

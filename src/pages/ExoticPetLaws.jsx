@@ -8,7 +8,7 @@ import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
 import { CODE_TO_SLUG, SLUG_TO_CODE } from '@/lib/data/stateSlugs';
 // Shared with the state pages, which need the same mid-sentence casing.
-import { inSentence } from '@/lib/utils/animalNames';
+import { inSentence, inTitle } from '@/lib/utils/animalNames';
 import { describeVerified, formatDay } from '@/lib/utils/verifiedDates';
 import CitationBox from '@/components/legal/CitationBox';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
@@ -236,9 +236,9 @@ export default function ExoticPetLaws() {
     ? 'Exotic Pet Laws by State: An Interactive US Map'
     : pickWithinLimit(
         [
-          `${animal.name} Laws by State: Where It Is Banned`,
-          `${animal.name} Laws by State: Bans and Permits`,
-          `${animal.name} Laws by State`,
+          `${inTitle(animal.name)} Laws by State: Where It Is Banned`,
+          `${inTitle(animal.name)} Laws by State: Bans and Permits`,
+          `${inTitle(animal.name)} Laws by State`,
         ],
         TITLE_MAX - ` | ${BRAND}`.length,
       );
