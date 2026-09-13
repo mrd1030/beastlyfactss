@@ -93,7 +93,8 @@ Deno.serve(async (req) => {
   // Everything already on the feed, for both dedupe paths.
   const { data: postedRows, error: postedError } = await supabase
     .from("social_posts")
-    .select("queue_id, media_url");
+    .select("queue_id, media_url, created_at")
+    .order("created_at", { ascending: false });
   if (postedError) return json({ error: postedError.message }, 500);
   const postedIds = new Set((postedRows || []).map((r) => r.queue_id).filter(Boolean));
   const postedMedia = new Set((postedRows || []).map((r) => r.media_url).filter(Boolean));
@@ -138,7 +139,8 @@ Deno.serve(async (req) => {
   if (!factsRes.ok) return json({ error: `facts fetch failed: ${factsRes.status}` }, 502);
   const factsDoc = await factsRes.json();
 
-  const candidates = ((factsDoc.facts || []) as Fact[])
+  const all = (factsDoc.facts || []) as Fact[];
+  const candidates = all
     .filter((f) => f && f.id && f.photo && f.fact && f.title)
     .filter((f) => !postedIds.has(`fact-${f.id}`) && !postedMedia.has(absolute(f.photo!)))
     .sort((a, b) => a.id - b.id);
@@ -153,7 +155,21 @@ Deno.serve(async (req) => {
     });
   }
 
-  const pick = candidates[0];
+  // Oldest unused id first, except never the same animal as the last three
+  // fact posts. Without this the feed opens with two dog facts back to back,
+  // because ids cluster by animal. Falls back to plain oldest if that filter
+  // empties the list.
+  const byId = new Map(all.map((f) => [f.id, f]));
+  const recentAnimals = new Set(
+    (postedRows || [])
+      .map((r) => r.queue_id)
+      .filter((id): id is string => !!id && id.startsWith("fact-"))
+      .slice(0, 3)
+      .map((id) => byId.get(Number(id.slice(5)))?.animal)
+      .filter(Boolean) as string[],
+  );
+  const spaced = candidates.filter((f) => !recentAnimals.has(f.animal || ""));
+  const pick = (spaced.length ? spaced : candidates)[0];
   const { error: factError } = await supabase.from("social_posts").insert({
     queue_id: `fact-${pick.id}`,
     media_type: "image",
