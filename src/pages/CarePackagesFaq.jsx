@@ -33,8 +33,12 @@ const FAQS = [
     a: 'If a package is revised, the file behind your purchase updates too, at no extra cost. Sign in to your library with the email you bought with and download the current edition whenever you like.',
   },
   {
+    // No address spelled out here: this answer is rendered into the FAQPage
+    // JSON-LD verbatim, and Cloudflare's email obfuscation skips script blocks,
+    // so an address in this string ships raw to every scraper. The contact page
+    // carries it behind the obfuscation instead.
     q: 'What if it is not what I expected?',
-    a: 'Refunds within 30 days of purchase, no questions asked. Email hello@beastlyfacts.com and we will process it. A refund removes the package from your library and ends your licence to it, so we ask that you delete any copy you downloaded or printed.',
+    a: 'Refunds within 30 days of purchase, no questions asked. Message me from the contact page and we will process it. A refund removes the package from your library and ends your licence to it, so we ask that you delete any copy you downloaded or printed.',
   },
   {
     q: 'Are these a substitute for a vet?',
