@@ -49,6 +49,19 @@ export default function ExoticPetLawsState() {
   const code = SLUG_TO_CODE[stateSlug];
   const j = code ? forJurisdiction(code) : null;
 
+  // Above the early return below, not beside the breadcrumb trail it feeds.
+  // An unknown slug returns before that point, so a hook declared down there
+  // runs on some renders and not others, which is the rules-of-hooks error CI
+  // caught. The hash effect further down carries the same note for the same
+  // reason.
+  //
+  // Itself: the hub's breadcrumb rung goes back through history only when the
+  // hub really is the previous entry, which the stamp it puts on its own links
+  // is what tells us. A reader who arrived from a search result has no such
+  // entry, and sending them back would leave the site.
+  const location = useLocation();
+  const backToHub = location.state?.from === 'legal-hub' ? '/exotic-pet-laws/' : null;
+
   // A single cell of the matrix, addressable: /exotic-pet-laws/state/hawaii/#serval
   // opens that row and scrolls to it. A fragment rather than a query parameter
   // on purpose. Google ignores fragments when deciding what to index, so this
@@ -131,13 +144,6 @@ export default function ExoticPetLawsState() {
     [j.name, `/exotic-pet-laws/state/${CODE_TO_SLUG[code]}/`],
   ];
   const crumbs = breadcrumbSchema(trail);
-
-  // Only when this hub really is the previous history entry, which the stamp
-  // it puts on its own links is what tells us. A reader who arrived from a
-  // search result has no such entry, and sending them back would leave the
-  // site entirely.
-  const location = useLocation();
-  const backToHub = location.state?.from === 'legal-hub' ? '/exotic-pet-laws/' : null;
 
 
   // The opening sentence is derived, not templated: it names the actual banned
