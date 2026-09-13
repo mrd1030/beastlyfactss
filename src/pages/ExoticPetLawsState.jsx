@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import { STATUS_BUCKETS } from '@/components/legal/LegalStatusMap';
 import { forJurisdiction, TRACKED_ANIMAL_COUNT } from '@/lib/data/legalByState';
@@ -11,6 +10,7 @@ import CitationBox from '@/components/legal/CitationBox';
 import { SLUG_TO_CODE, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import { inSentence, joinList } from '@/lib/utils/animalNames';
 import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
+import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import LegalDisclaimer from '@/components/mdx/LegalDisclaimer';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 
@@ -125,11 +125,12 @@ export default function ExoticPetLawsState() {
   // Four rungs rather than three: the state index is a real page these 52 hang
   // off, and naming it is what tells Google they are one family rather than 52
   // unrelated pages that happen to share a path prefix.
-  const crumbs = breadcrumbSchema([
+  const trail = [
     ['Exotic Pet Laws', '/exotic-pet-laws/'],
     ['By State', '/exotic-pet-laws/state/'],
     [j.name, `/exotic-pet-laws/state/${CODE_TO_SLUG[code]}/`],
-  ]);
+  ];
+  const crumbs = breadcrumbSchema(trail);
 
   // The opening sentence is derived, not templated: it names the actual banned
   // animals where there are few enough to list, which makes every one of these
@@ -198,13 +199,7 @@ export default function ExoticPetLawsState() {
 
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-6 pb-8 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <Link
-            to="/exotic-pet-laws/state/"
-            className="inline-flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-primary transition-colors mb-3 py-3 -my-2 pr-3 -mr-3"
-          >
-            <ArrowLeft className="w-3.5 h-3.5" />
-            All states
-          </Link>
+          <Breadcrumbs trail={trail} className="mb-3" />
 
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
             {`Exotic pet laws in ${inPlace}`}

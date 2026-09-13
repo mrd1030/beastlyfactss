@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { ArrowLeft, ChevronDown, X } from 'lucide-react';
+import { ChevronDown, X } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
@@ -10,6 +10,7 @@ import { CODE_TO_SLUG, SLUG_TO_CODE } from '@/lib/data/stateSlugs';
 // Shared with the state pages, which need the same mid-sentence casing.
 import { inSentence, inTitle } from '@/lib/utils/animalNames';
 import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
+import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { describeVerified, formatDay } from '@/lib/utils/verifiedDates';
 import CitationBox from '@/components/legal/CitationBox';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
@@ -267,14 +268,13 @@ export default function ExoticPetLaws() {
   // rather than the sentence-case name in the dataset. Google renders these
   // side by side in a result and "Prairie dog" under "Prairie Dog Laws by
   // State" reads as a mistake.
-  const crumbs = breadcrumbSchema(
-    isIndex
-      ? [['Exotic Pet Laws', '/exotic-pet-laws/'], ['Interactive Map', '/exotic-pet-laws/map/']]
-      : [
-        ['Exotic Pet Laws', '/exotic-pet-laws/'],
-        [`${inTitle(animal.name)} Laws by State`, `/exotic-pet-laws/${activeId}/`],
-      ],
-  );
+  const trail = isIndex
+    ? [['Exotic Pet Laws', '/exotic-pet-laws/'], ['Interactive Map', '/exotic-pet-laws/map/']]
+    : [
+      ['Exotic Pet Laws', '/exotic-pet-laws/'],
+      [`${inTitle(animal.name)} Laws by State`, `/exotic-pet-laws/${activeId}/`],
+    ];
+  const crumbs = breadcrumbSchema(trail);
 
   return (
     <div className="min-h-screen bg-background">
@@ -307,13 +307,7 @@ export default function ExoticPetLaws() {
           {/* py-3 with a matching negative margin: the row looks the same size as
               the Beastfile back link but gives a 44px tap target. The first
               version was 32px, under the minimum for a thumb. */}
-          <Link
-            to={isIndex ? '/blog/category/legal/' : '/exotic-pet-laws/'}
-            className="inline-flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-primary transition-colors mb-3 py-3 -my-2 pr-3 -mr-3"
-          >
-            <ArrowLeft className="w-3.5 h-3.5" />
-            {isIndex ? 'Legal guides' : 'All animals'}
-          </Link>
+          <Breadcrumbs trail={trail} className="mb-3" />
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">

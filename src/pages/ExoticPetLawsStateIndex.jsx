@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
 import LegalStatusMap from '@/components/legal/LegalStatusMap';
 import {
   STATE_LEGAL,
@@ -15,6 +14,8 @@ import { describeVerified } from '@/lib/utils/verifiedDates';
 import LegalDisclaimer from '@/components/mdx/LegalDisclaimer';
 import CitationBox from '@/components/legal/CitationBox';
 import { withBrand } from '@/lib/utils/seo';
+import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
+import Breadcrumbs from '@/components/shared/Breadcrumbs';
 
 const SITE = 'https://beastlyfacts.com';
 const JURISDICTION_COUNT = JURISDICTIONS_AZ.length;
@@ -40,6 +41,12 @@ export default function ExoticPetLawsStateIndex() {
   const description = `What is actually banned in each US state, ${TRACKED_ANIMAL_COUNT} exotic animals checked against the statutes in all ${JURISDICTION_COUNT} jurisdictions. Pick a state and see every rule.`;
   const canonical = `${SITE}/exotic-pet-laws/state/`;
 
+  const trail = [
+    ['Exotic Pet Laws', '/exotic-pet-laws/'],
+    ['By State', '/exotic-pet-laws/state/'],
+  ];
+  const crumbs = breadcrumbSchema(trail);
+
   const mostRestrictive = JURISDICTIONS_BY_RESTRICTION.slice(0, 10);
 
   // Across the whole matrix here, since this page summarises all of it. The
@@ -55,6 +62,7 @@ export default function ExoticPetLawsStateIndex() {
         <title>{withBrand(title)}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
+        <script type="application/ld+json">{JSON.stringify(crumbs)}</script>
         <meta property="og:title" content={withBrand(title)} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
@@ -65,13 +73,7 @@ export default function ExoticPetLawsStateIndex() {
 
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-6 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
-          <Link
-            to="/exotic-pet-laws/"
-            className="inline-flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-primary transition-colors mb-3 py-3 -my-2 pr-3 -mr-3"
-          >
-            <ArrowLeft className="w-3.5 h-3.5" />
-            Exotic pet laws
-          </Link>
+          <Breadcrumbs trail={trail} className="mb-3" />
 
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
             Exotic pet laws by state
