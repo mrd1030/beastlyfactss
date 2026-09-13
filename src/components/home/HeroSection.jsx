@@ -88,7 +88,7 @@ export default function HeroSection({ onOpenFact }) {
   };
 
   return (
-   <section className="relative flex flex-col items-center px-0 pt-0 pb-10">
+   <section className="relative flex flex-col items-center px-0 pt-0 pb-10 lg:pt-[400px]">
         {/* ==================== HERO IMAGE ====================
             Full bleed, square corners, running straight into the navbar. The
             source is 3:2 and the box is 4/3 on phones, 16/10 above that, so the
@@ -103,7 +103,17 @@ export default function HeroSection({ onOpenFact }) {
             instead (see MASK), and a shadow would trace the container's full
             silhouette even where the picture has faded to nothing, putting back
             the exact hard line the mask removes. */}
-        <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden">
+        {/* Below lg this box is in flow and its height comes from the aspect
+            ratio, which is what keeps the whole picture on screen on a phone.
+            From lg it leaves the flow and becomes a background layer filling
+            the section, because in flow its height was a function of the width:
+            at 1920 the 16/10 box stood 1200px tall and pushed the headline
+            999px down the page, below the fold, while phones and tablets were
+            fine. The section's lg:pt sets that distance now and it does not
+            move with the width. The photograph is unchanged and still fills
+            whatever room it is given, it just does it behind the content
+            instead of in front of it in the layout. */}
+        <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
                 browser accepts, so order is the negotiation. The preload in
@@ -112,10 +122,18 @@ export default function HeroSection({ onOpenFact }) {
             <source srcSet={HERO_AVIF} sizes="100vw" type="image/avif" />
             <source srcSet={HERO_WEBP} sizes="100vw" type="image/webp" />
             <source srcSet={HERO_JPG} sizes="100vw" type="image/jpeg" />
+            {/* Centre the crop below lg, where the box matches the source
+                closely enough that object-cover barely takes anything. From lg
+                the box is as tall as the content rather than as tall as the
+                ratio, so on a wide screen cover throws away a real slice: at
+                2560 a centred crop cut the lorikeet's head off at the top.
+                Biasing to 35% spends that crop on the foreground spinifex,
+                which the mask is fading out anyway, and keeps all three animals
+                whole. */}
             <img
               src={hero1200Jpg}
               alt="A bearded dragon basking on red desert earth, with a rainbow lorikeet perched on a flowering branch and a red kangaroo standing in the spinifex behind"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover lg:object-[50%_35%]"
               style={{ maskImage: MASK, WebkitMaskImage: MASK }}
               fetchpriority="high"
               width="1200"
@@ -145,7 +163,12 @@ export default function HeroSection({ onOpenFact }) {
             blue, by simultaneous contrast. A tan at hue 36 sits in the same
             family as the image and as the light-mode --border, which is already
             warm at hue 38. Light mode is left alone for that reason. */}
-        <div className="relative z-[5] w-full max-w-[760px] -mt-[20vw] sm:-mt-[17vw] px-3 sm:px-5 flex flex-col items-center">
+        {/* The negative pull only has a job while the image is in flow. From
+            lg the image is behind, so there is nothing to pull up over and the
+            section's padding places this instead. Leaving -17vw there would
+            drag the card further up the wider the window got, which is the same
+            drift running the other way. */}
+        <div className="relative z-[5] w-full max-w-[760px] -mt-[20vw] sm:-mt-[17vw] lg:mt-0 px-3 sm:px-5 flex flex-col items-center">
           <div className="w-full flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
               card below. framer-motion does not emit its styles into the
