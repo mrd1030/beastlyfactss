@@ -152,7 +152,7 @@ const ANIMAL_IMAGES = {
 // about an animal gets no photo (falls back to the hero image) unless it has
 // its own explicit id entry here, instead of silently inheriting whatever
 // photo the first fact for that animal used.
-const FACT_IMAGES = {
+export const FACT_IMAGES = {
   247: '/assets/facts/penguin-2.jpg',
   248: '/assets/facts/penguin-3.jpg',
   249: '/assets/facts/crocodile.jpg',
