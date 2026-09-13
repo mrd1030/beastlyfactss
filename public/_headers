@@ -76,10 +76,27 @@
 # before og-default.jpg took over, so links shared before that swap still point
 # at it. Nothing in the app references it any more. Do not delete it.
 
-# The favicon is the one image Vite content-hashes, because index.html points at
-# ./src/assets/favicon.webp rather than at public/. That makes its filename
-# change whenever its contents do, which is exactly the property the rules above
-# cannot assume, so it gets the same year-long immutable treatment as .js/.css.
+# The hashed favicon webp. It is no longer the search favicon: index.html now
+# declares /favicon.png and /favicon.ico, because Google Search does not read
+# WebP for favicons and because the hashed URL moved whenever the image was
+# recompressed. This file still ships, since Logo.jsx imports the same webp for
+# the on-page mark, and that import is content-hashed the way every src/ asset
+# is. A changed file is a changed URL there, so it keeps the year-long immutable
+# treatment .js and .css get.
 # More specific path, so this wins over /assets/*.webp.
 /assets/favicon-*.webp
   Cache-Control: public, max-age=31536000, immutable
+
+# The search favicon, at two paths that must never change. Google's guidance is
+# that the favicon URL has to be stable, so unlike everything Vite emits these
+# carry no content hash and cannot be given the immutable treatment above: the
+# max-age here is how long a visitor keeps showing the old mark after a swap.
+# 30 days, matching the other stable-filename images.
+#
+# The rules above are all /assets/* and never matched these, so before this
+# block they fell through to the default short lifetime and every repeat visit
+# revalidated the icon.
+/favicon.ico
+  Cache-Control: public, max-age=2592000
+/favicon.png
+  Cache-Control: public, max-age=2592000

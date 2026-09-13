@@ -28,7 +28,19 @@
          an X-Robots-Tag header in public/_headers, NOT as a robots meta here:
          generate-fact-pages.mjs injects a per-fact robots noindex into this
          shell and hard-fails the build if the shell already carries one. -->
-    <link rel="icon" type="image/webp" sizes="256x256" href="./src/assets/favicon.webp">
+    <!-- The search favicon is a PNG at an unhashed path, and both of those
+         matter. Google Search reads BMP, GIF, ICO, PNG, JPEG, PPM and TIFF for
+         favicons; WebP is not on that list, so the WebP this used to declare was
+         a format Google would not take, and it kept showing whatever it had
+         cached for the domain instead. The href also pointed into src/, which
+         Vite fingerprints, so the icon shipped as /assets/favicon-<hash>.webp and
+         moved every time the image was recompressed. Google's own guidance is
+         that the favicon URL must be stable. Files under public/ are copied
+         verbatim, so these two paths never change.
+         The ICO carries 16, 32 and 48 for the crawlers and browsers that still
+         request /favicon.ico blind, which used to 404 here. -->
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" type="image/png" sizes="256x256" href="/favicon.png">
     <link rel="apple-touch-icon" href="/pwa/apple-touch-icon-180.png">
     <link rel="manifest" href="/manifest.json">
     <!-- Light is this site's default (useDarkMode in useLocalStorage.js
