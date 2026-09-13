@@ -9,6 +9,7 @@ import { STATE_NAMES } from '@/lib/data/usStatePaths';
 import { CODE_TO_SLUG, SLUG_TO_CODE } from '@/lib/data/stateSlugs';
 // Shared with the state pages, which need the same mid-sentence casing.
 import { inSentence, inTitle } from '@/lib/utils/animalNames';
+import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
 import { describeVerified, formatDay } from '@/lib/utils/verifiedDates';
 import CitationBox from '@/components/legal/CitationBox';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
@@ -262,6 +263,19 @@ export default function ExoticPetLaws() {
 
   const canonical = isIndex ? `${SITE}/exotic-pet-laws/map/` : `${SITE}/exotic-pet-laws/${activeId}/`;
 
+  // inTitle rather than animal.name so the trail rung matches the title tag
+  // rather than the sentence-case name in the dataset. Google renders these
+  // side by side in a result and "Prairie dog" under "Prairie Dog Laws by
+  // State" reads as a mistake.
+  const crumbs = breadcrumbSchema(
+    isIndex
+      ? [['Exotic Pet Laws', '/exotic-pet-laws/'], ['Interactive Map', '/exotic-pet-laws/map/']]
+      : [
+        ['Exotic Pet Laws', '/exotic-pet-laws/'],
+        [`${inTitle(animal.name)} Laws by State`, `/exotic-pet-laws/${activeId}/`],
+      ],
+  );
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -269,6 +283,7 @@ export default function ExoticPetLaws() {
         <meta name="description" content={description} />
         <meta name="robots" content={nothingToReport ? 'noindex,follow' : 'index,follow'} />
         <link rel="canonical" href={canonical} />
+        <script type="application/ld+json">{JSON.stringify(crumbs)}</script>
         <meta property="og:title" content={withBrand(title)} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />

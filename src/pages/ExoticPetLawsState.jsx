@@ -10,6 +10,7 @@ import { describeVerified, formatDay } from '@/lib/utils/verifiedDates';
 import CitationBox from '@/components/legal/CitationBox';
 import { SLUG_TO_CODE, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import { inSentence, joinList } from '@/lib/utils/animalNames';
+import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
 import LegalDisclaimer from '@/components/mdx/LegalDisclaimer';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 
@@ -121,6 +122,15 @@ export default function ExoticPetLawsState() {
 
   const canonical = `${SITE}/exotic-pet-laws/state/${CODE_TO_SLUG[code]}/`;
 
+  // Four rungs rather than three: the state index is a real page these 52 hang
+  // off, and naming it is what tells Google they are one family rather than 52
+  // unrelated pages that happen to share a path prefix.
+  const crumbs = breadcrumbSchema([
+    ['Exotic Pet Laws', '/exotic-pet-laws/'],
+    ['By State', '/exotic-pet-laws/state/'],
+    [j.name, `/exotic-pet-laws/state/${CODE_TO_SLUG[code]}/`],
+  ]);
+
   // The opening sentence is derived, not templated: it names the actual banned
   // animals where there are few enough to list, which makes every one of these
   // 52 pages open on its own specifics rather than on the same sentence with a
@@ -171,6 +181,7 @@ export default function ExoticPetLawsState() {
         <title>{withBrand(title)}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
+        <script type="application/ld+json">{JSON.stringify(crumbs)}</script>
         <meta property="og:title" content={withBrand(title)} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />

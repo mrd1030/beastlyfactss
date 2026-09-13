@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
 import { useParams, Link } from 'react-router-dom';
 import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import { getBeastfile } from '@/lib/data/beastlypedia';
@@ -78,6 +79,10 @@ export default function BeastfileDetail() {
   const siblingIds = content?.siblings || [];
 
   const canonical = `${SITE}/beastlypedia/${id}/`;
+  const crumbs = breadcrumbSchema([
+    ['Beastlypedia', '/beastlypedia/'],
+    [name, `/beastlypedia/${id}/`],
+  ]);
   // The scientific name is kept out of the title on purpose. With it, longer
   // names blow past 70 characters once " | Beastlypedia | BeastlyFacts" is
   // appended - "Blue Poison Dart Frog (Dendrobates tinctorius azureus)" alone
@@ -107,6 +112,7 @@ export default function BeastfileDetail() {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
+        <script type="application/ld+json">{JSON.stringify(crumbs)}</script>
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />

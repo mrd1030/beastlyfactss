@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
 import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, BookOpen, ChevronRight } from 'lucide-react';
@@ -102,6 +103,10 @@ export default function EncyclopediaAnimal() {
   const pageDescription = truncateDescription(bio.overview
     || `Learn about the ${animal.name} (${animal.scientific}) - natural habitat, wild diet, lifespan, size, and conservation status.`);
   const canonicalUrl = `https://beastlyfacts.com/encyclopedia/animal/${animal.id}/`;
+  const crumbs = breadcrumbSchema([
+    ['Encyclopedia', '/encyclopedia/'],
+    [animal.name, `/encyclopedia/animal/${animal.id}/`],
+  ]);
 
   return (
     <div className="min-h-screen">
@@ -109,6 +114,7 @@ export default function EncyclopediaAnimal() {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        <script type="application/ld+json">{JSON.stringify(crumbs)}</script>
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />
