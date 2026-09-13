@@ -123,17 +123,23 @@ export default function HeroSection({ onOpenFact }) {
             <source srcSet={HERO_WEBP} sizes="100vw" type="image/webp" />
             <source srcSet={HERO_JPG} sizes="100vw" type="image/jpeg" />
             {/* Centre the crop below lg, where the box matches the source
-                closely enough that object-cover barely takes anything. From lg
-                the box is as tall as the content rather than as tall as the
-                ratio, so on a wide screen cover throws away a real slice: at
-                2560 a centred crop cut the lorikeet's head off at the top.
-                Biasing to 35% spends that crop on the foreground spinifex,
-                which the mask is fading out anyway, and keeps all three animals
-                whole. */}
+                closely enough that object-cover barely takes anything.
+                From lg the box is as tall as the content rather than as tall as
+                the ratio, so cover has real work to do and where it takes that
+                from is a choice. Anchored to the top: the horizon, the sky and
+                the branch hold the same position under the navbar at every
+                width, and the box grows and shrinks against the foreground
+                instead of sliding the whole composition up and down. A centred
+                crop did the opposite, trimming both ends at once, which cut the
+                lorikeet's head off at 2560.
+                Note the crop only turns vertical above about 1443px. Below that
+                the box is taller than the width-scaled image, so cover scales
+                by height and takes the difference off the sides instead, and
+                this vertical anchor does nothing. */}
             <img
               src={hero1200Jpg}
               alt="A bearded dragon basking on red desert earth, with a rainbow lorikeet perched on a flowering branch and a red kangaroo standing in the spinifex behind"
-              className="h-full w-full object-cover lg:object-[50%_35%]"
+              className="h-full w-full object-cover lg:object-top"
               style={{ maskImage: MASK, WebkitMaskImage: MASK }}
               fetchpriority="high"
               width="1200"
