@@ -245,6 +245,10 @@ export default function Blog() {
   const origin = location.state?.from;
   const cameFromFactFiles = origin === 'fact-files';
   const cameFromBeastfile = origin === 'beastlypedia' && Boolean(location.state?.returnTo);
+  // Arrived from a species care guide hub. Handled with history rather than a
+  // URL so the reader lands back at the row they clicked: those hubs run
+  // several screens and the first-week table is most of the way down one.
+  const cameFromGuideHub = origin === 'guide-hub' && Boolean(location.state?.hubName);
 
   // The species this article is a deep dive of, when it is one. 557 of the 739
   // resolve; the rest are cross-species pieces (ball-python-vs-corn-snake,
@@ -268,9 +272,11 @@ export default function Blog() {
     ? 'Back to Fact Files'
     : cameFromBeastfile
       ? `Back to ${location.state.returnLabel || 'Beastlypedia'}`
-      : backToHub
-        ? `Back to ${hubName}`
-        : 'Back to Critter Digest';
+      : cameFromGuideHub
+        ? `Back to ${location.state.hubName}`
+        : backToHub
+          ? `Back to ${hubName}`
+          : 'Back to Critter Digest';
 
   const handleBack = () => {
     if (cameFromFactFiles) {
@@ -279,6 +285,13 @@ export default function Blog() {
     }
     if (cameFromBeastfile) {
       navigate(location.state.returnTo);
+      return;
+    }
+    if (cameFromGuideHub) {
+      // -1 rather than the hub's path: a push would be a new history entry at
+      // the top of the page, and the whole point is the position the browser
+      // already has stored for the entry we came from.
+      navigate(-1);
       return;
     }
     if (backToHub) {
@@ -311,8 +324,14 @@ export default function Blog() {
     // page they never saw, which is the same complaint the comment above
     // records in the other direction. selectedPost is null only on the listing,
     // so it is the thing that tells the two apart.
-    const listingState = location.state
-      ? { state: location.state }
+    // A jump from one article to another must not inherit guide-hub state: the
+    // label would still name the hub while navigate(-1) went to the previous
+    // article instead. Dropping it makes the second article a cold landing,
+    // which offers its own species hub, and that is the right destination from
+    // there anyway.
+    const carried = location.state?.from === 'guide-hub' ? null : location.state;
+    const listingState = carried
+      ? { state: carried }
       : selectedPost
         ? undefined
         : { state: { from: 'blog' } };

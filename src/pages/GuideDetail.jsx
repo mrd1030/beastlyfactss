@@ -57,6 +57,14 @@ export default function GuideDetail() {
   // breadcrumb rung Blog.jsx builds for the same articles.
   const shortLabel = (slug) => shortLabelFor(slug) || titleOf(slug).split(':')[0];
 
+  // Stamped on every link out of this hub into one of its deep dives. The
+  // article's back control reads it to send the reader back through history
+  // rather than to the hub's URL, which is what restores their place in a page
+  // that can run several screens. Without it the article cannot tell a reader
+  // who scrolled to the health row and clicked from one who arrived cold from
+  // a search result, and both got the top of the page.
+  const hubReturn = { from: 'guide-hub', hubId: guide.id, hubName: guide.name };
+
   const handleBack = () => {
     const returnTo = location.state?.returnTo;
     if (returnTo) {
@@ -411,7 +419,7 @@ export default function GuideDetail() {
                       <dd className="text-sm text-muted-foreground font-body leading-relaxed">
                         {row.value}
                         {row.source && (
-                          <Link to={`/blog/${row.source}/`} className="ml-1.5 whitespace-nowrap text-xs font-semibold text-secondary hover:underline">
+                          <Link to={`/blog/${row.source}/`} state={hubReturn} className="ml-1.5 whitespace-nowrap text-xs font-semibold text-secondary hover:underline">
                             {`${shortLabel(row.source)} →`}
                           </Link>
                         )}
@@ -441,7 +449,7 @@ export default function GuideDetail() {
                 )}
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-body">
                   {guide.emergencyCard.source && (
-                    <Link to={`/blog/${guide.emergencyCard.source}/`} className="font-semibold text-secondary hover:underline">
+                    <Link to={`/blog/${guide.emergencyCard.source}/`} state={hubReturn} className="font-semibold text-secondary hover:underline">
                       {`From ${titleOf(guide.emergencyCard.source)} →`}
                     </Link>
                   )}
@@ -461,7 +469,7 @@ export default function GuideDetail() {
                 </h2>
                 <div className="divide-y divide-border/60">
                   {guide.routes.map(({ slug, line }) => (
-                    <Link key={slug} to={`/blog/${slug}/`} className="group block py-3">
+                    <Link key={slug} to={`/blog/${slug}/`} state={hubReturn} className="group block py-3">
                       <p className="text-sm font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug flex items-start gap-1.5">
                         <span className="flex-1">{titleOf(slug)}</span>
                         <ChevronRight className="w-4 h-4 flex-shrink-0 mt-0.5 text-muted-foreground group-hover:text-secondary" />
@@ -491,7 +499,7 @@ export default function GuideDetail() {
                   return costRoute ? (
                     <p className="text-xs text-muted-foreground font-body mt-4">
                       Prices and the reasoning behind each item are in{' '}
-                      <Link to={`/blog/${costRoute.slug}/`} className="font-semibold text-secondary hover:underline">{titleOf(costRoute.slug)}</Link>.
+                      <Link to={`/blog/${costRoute.slug}/`} state={hubReturn} className="font-semibold text-secondary hover:underline">{titleOf(costRoute.slug)}</Link>.
                     </p>
                   ) : null;
                 })()}
@@ -640,7 +648,7 @@ export default function GuideDetail() {
                 </p>
                 <div className="space-y-3">
                   {legalArticles.map(article => (
-                    <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
+                    <Link key={article._id} to={`/blog/${article.slug.current}/`} state={hubReturn} className="group block">
                       <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {article.title}
                       </p>
