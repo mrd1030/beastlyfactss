@@ -381,3 +381,28 @@ html, body {
    against a hue-153 green-black page, which is not this site's colour.
    SectionDivider.jsx is what is left of that work, and it carries no colour of
    its own beyond the accent arcs in its own SVG, so it needs no CSS here. */
+
+/* The homepage hero's bottom fade.
+   Declared here rather than inline because it has to change at lg and an
+   inline style cannot carry a media query.
+   The mask is applied to the element box, not to the picture inside it, and
+   above lg the box is as tall as the content while the image is scaled to the
+   viewport width. Those two heights come apart the wider the window gets, so a
+   fade set at 68% of the box landed further and further up the photograph: at
+   2560 the only part of the bearded dragon still inside the box was also
+   entirely inside the fade, and he washed out to nothing. Starting at 88% there
+   keeps him solid at every width the crop leaves him in, and still dissolves
+   the bottom edge into the page, which is the whole job of the mask.
+   Below lg the box height comes from the aspect ratio and tracks the image, so
+   the original stops are correct and are left alone: 130px of fade on a 293px
+   phone hero would be a third of the picture. */
+.hero-fade {
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 68%, transparent 96%);
+  mask-image: linear-gradient(to bottom, black 0%, black 68%, transparent 96%);
+}
+@media (min-width: 1024px) {
+  .hero-fade {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 88%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 88%, transparent 100%);
+  }
+}

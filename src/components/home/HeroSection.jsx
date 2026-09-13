@@ -32,7 +32,9 @@ import hero1600Jpg from '@/assets/hero-1600.jpg';
 // the last third, revealing the page background, so there is no hard bottom
 // edge for the text panel to fight. A tint laid over the top cannot do this,
 // it only fakes it against one known background colour.
-const MASK = 'linear-gradient(to bottom, black 0%, black 68%, transparent 96%)';
+// The hero's bottom fade lives in src/index.css as .hero-fade, because its
+// stops change at lg and an inline style cannot carry a media query. See the
+// comment there for why the desktop fade starts later than the phone one.
 
 const srcSet = (a, b, c, d) => `${a} 400w, ${b} 800w, ${c} 1200w, ${d} 1600w`;
 const HERO_AVIF = srcSet(hero400Avif, hero800Avif, hero1200Avif, hero1600Avif);
@@ -100,7 +102,7 @@ export default function HeroSection({ onOpenFact }) {
             cropped out of frame entirely at that size and only the macaw
             survived. That is the failure this layout exists to fix.
             No rounding and no shadow: the foot of the image is masked out
-            instead (see MASK), and a shadow would trace the container's full
+            instead (see .hero-fade in index.css), and a shadow would trace the container's full
             silhouette even where the picture has faded to nothing, putting back
             the exact hard line the mask removes. */}
         {/* Below lg this box is in flow and its height comes from the aspect
@@ -139,8 +141,7 @@ export default function HeroSection({ onOpenFact }) {
             <img
               src={hero1200Jpg}
               alt="A bearded dragon basking on red desert earth, with a rainbow lorikeet perched on a flowering branch and a red kangaroo standing in the spinifex behind"
-              className="h-full w-full object-cover lg:object-top"
-              style={{ maskImage: MASK, WebkitMaskImage: MASK }}
+              className="h-full w-full object-cover lg:object-top hero-fade"
               fetchpriority="high"
               width="1200"
               height="800"
