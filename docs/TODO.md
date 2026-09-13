@@ -256,6 +256,103 @@ of a species' set can be right and half wrong, so there is no shortcut of
 replacing a whole species at once, and no way to infer a set from its guide
 hero. Nineteen images checked so far, seven wrong.
 
+### Second batch: the fish, 2026-09-12
+
+Four more species, 24 images. Two clear misses, two to look at:
+
+- **`angelfish-feeding.jpg`** is a rounded striped cichlid with short fins, no
+  trailing dorsal, anal or ventral filaments. Not *Pterophyllum*. The other five
+  angelfish files are correct freshwater angels in planted tanks.
+- **`neon-tetra-health-issues.jpg`** has the red stripe running from behind the
+  gill all the way to the tail, which is a cardinal tetra. On a neon the red
+  starts mid-body. The other five neon files are correct.
+- **Guppy: the set is muddled rather than plainly wrong.** `feeding` is a
+  deep-bodied spotted livebearer that reads platy, and `cost` and
+  `health-issues` mix obvious platies in among the guppies. `enrichment` is a
+  textbook fancy guppy male. Worth a human eye before spending art, since
+  platies and guppies share a tank and a body plan.
+- **Oscar: all six correct.** Worth recording, because the oscar's *guide* hero
+  was one of the wrong ones. Its article set was fine the whole time, which is
+  the per-image finding again.
+
+Running total for the article folder: 7 species checked of about 110, 43 images
+opened, 10 replaced and 4 open.
+
+### Third batch: the snakes, 2026-09-12
+
+Seven species sampled across corn snake, California kingsnake, milk snake,
+hognose, ball python, boa constrictor and rosy boa, 18 images. **One miss:**
+
+- **`corn-snake-cost.jpg`** showed orange and white bands that wrap the body,
+  which is milk snake or kingsnake patterning. **Replaced 2026-09-12** with a
+  corn snake carrying dark-edged saddles that stop at the flanks.
+
+Everything else in the snake sets is right, including several that could easily
+have gone wrong: the hognose handling frame shows the upturned rostral scale
+clearly, the ball python set is correctly blocky-headed throughout despite its
+guide hero being one of the replaced ones, and
+`milk-snake-vs-corn-snake.jpg` gets the comparison exactly right, bands on the
+left and saddles on the right, which is the image that would have been worst to
+get wrong.
+
+Running total for the article folder: 14 species of about 110, 67 images opened,
+10 replaced, 5 open (angelfish feeding, neon tetra health, corn snake cost, plus
+the muddled guppy set).
+
+### Fourth batch: small mammals, 2026-09-12
+
+Gerbil, degu, chinchilla and hamster, 12 images. **Three misses, all gerbil, all
+replaced 2026-09-12:**
+
+- **`gerbil-cost.jpg`** and **`gerbil-health-issues.jpg`** show rodents with
+  bold dark dorsal stripes, closer to an African striped mouse or a chipmunk
+  than to a Mongolian gerbil, which has a plain agouti back.
+- **`gerbil-tank-setup.jpg`** has a grey animal with a long naked tail. A
+  gerbil's tail is furred end to end with a dark tuft; a bare tail makes it a
+  mouse.
+
+`gerbil-feeding.jpg` is textbook and `gerbil-enrichment.jpg` and
+`gerbil-handling.jpg` are fine, so this is the same per-image split as
+everywhere else. Degu, chinchilla and hamster sets are all correct.
+
+One non-species note: `chinchilla-health-issues.jpg` stands the animal on a wire
+mesh floor, which causes the foot problems that guide is partly about. Right
+species, wrong husbandry, and it sits on the page where it contradicts the text.
+Worth a reshoot eventually but not a species error.
+
+Running total for the article folder: 18 species of about 110, 79 images opened,
+14 replaced, 5 open: the angelfish feeding frame, the neon tetra health frame,
+and the three muddled guppy frames that want a human eye.
+
+### Fifth batch: monitors and lizards, 2026-09-12
+
+Savannah monitor, ackie monitor, uromastyx, tokay, veiled chameleon, leopard
+gecko, crested gecko and blue-tongue skink, 18 images. **One species miss and
+two defects of other kinds, prompts written for all three:**
+
+- **`blue-tongue-skink-handling.jpg`**: slender limbs with long spidery toes on
+  a small body where a blue-tongue is heavy and sausage-shaped on short stubby
+  legs. **Replaced 2026-09-12.**
+- **`crested-gecko-health-issues.jpg`**: correct species, but the digital scale
+  carried invented button labels ("MUZERS", "Cund", "BRV") and a nonsense
+  readout. **Replaced 2026-09-12** with a plain scale and a blank display.
+- ~~`tokay-gecko-handling.jpg`~~: **flag withdrawn.** I called it right animal,
+  wrong page for showing no handling. Mike questioned whether tokays are a
+  hands-on species at all, and the article settles it: "Should You Handle a
+  Tokay Gecko? Probably Not Often", a display animal that gapes, barks and bites
+  when a hand enters. The gaping frame is the correct illustration and stays.
+  The lesson is to read what a handling guide recommends before treating a
+  hands-off image as a mismatch.
+
+Everything else passed, including both monitor sets. Worth noting that the
+crested gecko set is fine throughout, which downgrades the earlier
+low-confidence flag on its guide hero: the species reads consistently across
+seven article frames.
+
+Running total for the article folder: 26 species of about 110, 115 images
+opened, 16 replaced, 5 open: the angelfish feeding frame, the neon tetra health
+frame, and the three muddled guppy frames.
+
 ### Separate from species: 12 badly undersized files
 
 **Deferred 2026-09-12 by Mike's call.** One of the twelve, the corydoras feeding

@@ -2079,3 +2079,138 @@ shallow depth of field on the nearest fish, pale sand and green palette, 100mm
 macro, f/5.6, 3:2.
 ```
 
+## Angelfish and neon tetra, 1 file each
+
+From the second article batch. Both species' other files are correct and must
+not be regenerated.
+
+```
+angelfish-feeding.jpg
+Photorealistic underwater photograph of a freshwater angelfish rising to take a
+sinking flake just under the water surface, full side view, whole fish in frame
+including the fin tips. Tall disc-shaped body flattened side to side and taller
+than it is long, a very tall triangular dorsal fin and matching anal fin
+sweeping back to fine points, a pair of long thread-like ventral filaments
+trailing below, silver body crossed by four vertical black bars including one
+through the eye. A few flakes drifting down through the water, planted tank soft
+behind. Bright clean aquarium light from above, silver and green palette, camera
+level with the fish, 60mm macro, f/5.6, 3:2.
+```
+Check: tall thin disc with trailing filaments. Not a rounded short-finned
+cichlid, which is what the current frame shows, and not a discus.
+
+```
+neon-tetra-health-issues.jpg
+Photorealistic underwater close-up of a single healthy neon tetra in profile
+against a dark planted background, whole fish in frame, fins held open and
+undamaged. An iridescent blue-green stripe running from the eye back to the
+adipose fin along the upper half, and a red stripe that begins level with the
+middle of the body and runs back to the tail base only, leaving the front half
+of the belly plain silver-white. Small deep body, forked transparent tail. Soft
+side light against near-black, blue and red against deep green, 100mm macro,
+f/5.6, 3:2.
+```
+Check: the red must start mid-body, not at the gill. A red stripe running the
+full length from head to tail is a cardinal tetra, which is what the current
+frame shows and which the site covers separately.
+
+## Corn snake, 1 file
+
+```
+corn-snake-cost.jpg
+Photorealistic photograph of a corn snake on aspen bedding in a glass vivarium,
+body in a loose S with the head raised toward the camera, a cork hide and a
+shallow water bowl behind it. Orange-red ground colour carrying large dark-edged
+saddles along the back that stop at the flanks and do not wrap the body, smaller
+matching blotches low on the sides, a spear-point marking on the crown between
+the eyes, smooth unkeeled scales, round pupil. Warm keeper-room light, orange
+and pale wood palette, camera at snake level, 85mm, f/4, 3:2.
+```
+Check: saddles, not rings. If the pattern wraps all the way around the body in
+bands it is a milk snake or a kingsnake, which is what the current frame shows
+and which both have their own art elsewhere in this folder.
+
+## Mongolian gerbil, 3 files
+
+`cost` and `health-issues` show rodents with bold dark dorsal stripes, closer to
+an African striped mouse or a chipmunk. `tank-setup` has a grey animal with a
+long naked tail, which is a mouse. Accuracy block for all three: sandy-agouti
+back with NO stripes of any kind, clean white belly, large dark eye, medium
+rounded ears, and a long tail furred along its whole length ending in a dark
+tuft. Never a naked mouse tail, never a striped back.
+
+```
+gerbil-cost.jpg
+Photorealistic photograph of two Mongolian gerbils sitting upright side by side
+on a pale wooden surface, both facing the camera, whole animals in frame
+including their tails. Plain sandy-agouti fur with no stripes, clean white
+bellies, large black eyes, long tails furred to a dark tuft at the tip. Bright
+soft daylight, warm sand and pale wood palette, camera at their eye level, 85mm,
+f/4, 3:2.
+
+gerbil-health-issues.jpg
+Photorealistic photograph of a Mongolian gerbil being examined on a clean
+veterinary table, held gently in one gloved hand with the body in profile and
+the tail visible. Plain sandy-agouti back with no stripe, white belly, bright
+clear eye, furred tufted tail. Cool clinical light, white and sand palette,
+shallow depth of field on the animal's head, 100mm macro, f/4, 3:2.
+
+gerbil-tank-setup.jpg
+Photorealistic photograph of a glass tank set up for gerbils, seen from the
+front, with six inches of deep paper and aspen bedding dug into open burrows, a
+sand bath dish, a water bottle and a solid-surface wheel, and one gerbil out on
+the surface near a chew block. The gerbil has plain sandy-agouti fur, a white
+belly and a fully furred tail with a dark tuft. Bright even room light, sand and
+pale wood palette, 35mm, f/5.6, 3:2.
+```
+Check on all three: the tail. A gerbil's tail is furred end to end and finishes
+in a tuft; a bare pink tail makes the animal a mouse or a rat, which is the
+current fault in `tank-setup`. And no dorsal stripes anywhere.
+
+## Reptile article frames, 3 files
+
+From the fifth article batch. Only one is a species error; the other two are a
+garbled-text defect and a frame that does not show what its article is about.
+Every other file in the blue-tongue skink, crested gecko, tokay, uromastyx,
+leopard gecko, veiled chameleon, ackie and savannah monitor sets was checked and
+is correct.
+
+```
+blue-tongue-skink-handling.jpg
+Photorealistic photograph of an adult blue-tongue skink supported on two flat
+open hands, body horizontal and fully supported along its length, head toward
+the camera. Heavy sausage-shaped body, a broad triangular head clearly wider
+than the neck, very short stubby legs with short toes, smooth glossy scales in
+banded brown and cream. Bright soft indoor light, warm neutral palette, 85mm,
+f/4, 3:2.
+```
+Check: short stubby legs and a heavy body. The current frame has slender limbs
+with long spidery toes and a small body, which is a different skink entirely.
+Compare against `blue-tongue-skink-cost.jpg`, which has the proportions right.
+
+```
+crested-gecko-health-issues.jpg
+Photorealistic photograph of a crested gecko standing on the flat pan of a small
+digital kitchen scale, body in profile, whole animal in frame. Eyelash-like
+crests above each eye running back along the spine, soft skin with no spines on
+the flanks, large lidless eye, semi-prehensile tail. The scale is a plain
+unbranded black slab with a clean blank display showing no text or digits at
+all. Soft even light on a pale worktop, warm neutral palette, 100mm macro, f/5.6,
+3:2.
+```
+Check: no lettering anywhere. The current frame carries invented button labels
+and a nonsense readout, which is the loudest possible tell on a page about
+weighing your animal. A blank display is better than a wrong one.
+
+**tokay-gecko-handling.jpg: prompt withdrawn 2026-09-12, do not regenerate.**
+The existing frame, a tokay gaping on a branch with no hand in it, is correct
+and should stay. The article is titled "Should You Handle a Tokay Gecko?
+Probably Not Often" and says a hand entering the enclosure draws gaping,
+barking, lunging and biting, and that even a settled captive-bred animal is a
+display species rather than a handling pet. A calm tokay sitting on an open palm
+would contradict the page it illustrates. The defensive gape is the article.
+
+This one is worth remembering as a rule: on a handling guide, check what the
+guide actually recommends before calling a hands-off frame a mismatch. Chinchilla
+on wire mesh was the same class of error in the opposite direction.
+
