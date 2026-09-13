@@ -2167,3 +2167,51 @@ Check on all three: the tail. A gerbil's tail is furred end to end and finishes
 in a tuft; a bare pink tail makes the animal a mouse or a rat, which is the
 current fault in `tank-setup`. And no dorsal stripes anywhere.
 
+## Reptile article frames, 3 files
+
+From the fifth article batch. Only one is a species error; the other two are a
+garbled-text defect and a frame that does not show what its article is about.
+Every other file in the blue-tongue skink, crested gecko, tokay, uromastyx,
+leopard gecko, veiled chameleon, ackie and savannah monitor sets was checked and
+is correct.
+
+```
+blue-tongue-skink-handling.jpg
+Photorealistic photograph of an adult blue-tongue skink supported on two flat
+open hands, body horizontal and fully supported along its length, head toward
+the camera. Heavy sausage-shaped body, a broad triangular head clearly wider
+than the neck, very short stubby legs with short toes, smooth glossy scales in
+banded brown and cream. Bright soft indoor light, warm neutral palette, 85mm,
+f/4, 3:2.
+```
+Check: short stubby legs and a heavy body. The current frame has slender limbs
+with long spidery toes and a small body, which is a different skink entirely.
+Compare against `blue-tongue-skink-cost.jpg`, which has the proportions right.
+
+```
+crested-gecko-health-issues.jpg
+Photorealistic photograph of a crested gecko standing on the flat pan of a small
+digital kitchen scale, body in profile, whole animal in frame. Eyelash-like
+crests above each eye running back along the spine, soft skin with no spines on
+the flanks, large lidless eye, semi-prehensile tail. The scale is a plain
+unbranded black slab with a clean blank display showing no text or digits at
+all. Soft even light on a pale worktop, warm neutral palette, 100mm macro, f/5.6,
+3:2.
+```
+Check: no lettering anywhere. The current frame carries invented button labels
+and a nonsense readout, which is the loudest possible tell on a page about
+weighing your animal. A blank display is better than a wrong one.
+
+```
+tokay-gecko-handling.jpg
+Photorealistic photograph of a tokay gecko being lifted on a flat open palm and
+forearm, the animal calm and gripping the skin with splayed toe pads, head
+turned toward the camera, mouth closed. Vivid blue-grey skin with orange and
+rust spotting, large gold eye with a vertical pupil, broad adhesive toe pads.
+Terrarium background soft behind, warm low light, blue and rust palette, 85mm,
+f/4, 3:2.
+```
+Check: the animal must actually be in contact with a hand, since this is the
+handling guide. The current frame is a correct tokay gaping on a branch with no
+handling in it at all, which makes it a fine gecko photograph on the wrong page.
+

@@ -324,6 +324,30 @@ Running total for the article folder: 18 species of about 110, 79 images opened,
 14 replaced, 5 open: the angelfish feeding frame, the neon tetra health frame,
 and the three muddled guppy frames that want a human eye.
 
+### Fifth batch: monitors and lizards, 2026-09-12
+
+Savannah monitor, ackie monitor, uromastyx, tokay, veiled chameleon, leopard
+gecko, crested gecko and blue-tongue skink, 18 images. **One species miss and
+two defects of other kinds, prompts written for all three:**
+
+- **`blue-tongue-skink-handling.jpg`**: slender limbs with long spidery toes on
+  a small body. A blue-tongue is heavy and sausage-shaped on very short stubby
+  legs, which the other three frames in its set get right.
+- **`crested-gecko-health-issues.jpg`**: correct species, but the digital scale
+  carries invented button labels ("MUZERS", "Cund", "BRV") and a nonsense
+  readout. Not a species error, just the loudest possible generated-image tell,
+  on the page about weighing your gecko.
+- **`tokay-gecko-handling.jpg`**: a correct tokay gaping on a branch, with no
+  handling in the frame at all. Right animal, wrong page.
+
+Everything else passed, including both monitor sets. Worth noting that the
+crested gecko set is fine throughout, which downgrades the earlier
+low-confidence flag on its guide hero: the species reads consistently across
+seven article frames.
+
+Running total for the article folder: 26 species of about 110, 115 images
+opened, 14 replaced, 8 open.
+
 ### Separate from species: 12 badly undersized files
 
 **Deferred 2026-09-12 by Mike's call.** One of the twelve, the corydoras feeding
