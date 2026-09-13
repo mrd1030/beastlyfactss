@@ -2114,3 +2114,56 @@ Check: the red must start mid-body, not at the gill. A red stripe running the
 full length from head to tail is a cardinal tetra, which is what the current
 frame shows and which the site covers separately.
 
+## Corn snake, 1 file
+
+```
+corn-snake-cost.jpg
+Photorealistic photograph of a corn snake on aspen bedding in a glass vivarium,
+body in a loose S with the head raised toward the camera, a cork hide and a
+shallow water bowl behind it. Orange-red ground colour carrying large dark-edged
+saddles along the back that stop at the flanks and do not wrap the body, smaller
+matching blotches low on the sides, a spear-point marking on the crown between
+the eyes, smooth unkeeled scales, round pupil. Warm keeper-room light, orange
+and pale wood palette, camera at snake level, 85mm, f/4, 3:2.
+```
+Check: saddles, not rings. If the pattern wraps all the way around the body in
+bands it is a milk snake or a kingsnake, which is what the current frame shows
+and which both have their own art elsewhere in this folder.
+
+## Mongolian gerbil, 3 files
+
+`cost` and `health-issues` show rodents with bold dark dorsal stripes, closer to
+an African striped mouse or a chipmunk. `tank-setup` has a grey animal with a
+long naked tail, which is a mouse. Accuracy block for all three: sandy-agouti
+back with NO stripes of any kind, clean white belly, large dark eye, medium
+rounded ears, and a long tail furred along its whole length ending in a dark
+tuft. Never a naked mouse tail, never a striped back.
+
+```
+gerbil-cost.jpg
+Photorealistic photograph of two Mongolian gerbils sitting upright side by side
+on a pale wooden surface, both facing the camera, whole animals in frame
+including their tails. Plain sandy-agouti fur with no stripes, clean white
+bellies, large black eyes, long tails furred to a dark tuft at the tip. Bright
+soft daylight, warm sand and pale wood palette, camera at their eye level, 85mm,
+f/4, 3:2.
+
+gerbil-health-issues.jpg
+Photorealistic photograph of a Mongolian gerbil being examined on a clean
+veterinary table, held gently in one gloved hand with the body in profile and
+the tail visible. Plain sandy-agouti back with no stripe, white belly, bright
+clear eye, furred tufted tail. Cool clinical light, white and sand palette,
+shallow depth of field on the animal's head, 100mm macro, f/4, 3:2.
+
+gerbil-tank-setup.jpg
+Photorealistic photograph of a glass tank set up for gerbils, seen from the
+front, with six inches of deep paper and aspen bedding dug into open burrows, a
+sand bath dish, a water bottle and a solid-surface wheel, and one gerbil out on
+the surface near a chew block. The gerbil has plain sandy-agouti fur, a white
+belly and a fully furred tail with a dark tuft. Bright even room light, sand and
+pale wood palette, 35mm, f/5.6, 3:2.
+```
+Check on all three: the tail. A gerbil's tail is furred end to end and finishes
+in a tuft; a bare pink tail makes the animal a mouse or a rat, which is the
+current fault in `tank-setup`. And no dorsal stripes anywhere.
+

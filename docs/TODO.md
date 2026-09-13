@@ -299,6 +299,30 @@ Running total for the article folder: 14 species of about 110, 67 images opened,
 10 replaced, 5 open (angelfish feeding, neon tetra health, corn snake cost, plus
 the muddled guppy set).
 
+### Fourth batch: small mammals, 2026-09-12
+
+Gerbil, degu, chinchilla and hamster, 12 images. **Three misses, all gerbil,
+prompts written:**
+
+- **`gerbil-cost.jpg`** and **`gerbil-health-issues.jpg`** show rodents with
+  bold dark dorsal stripes, closer to an African striped mouse or a chipmunk
+  than to a Mongolian gerbil, which has a plain agouti back.
+- **`gerbil-tank-setup.jpg`** has a grey animal with a long naked tail. A
+  gerbil's tail is furred end to end with a dark tuft; a bare tail makes it a
+  mouse.
+
+`gerbil-feeding.jpg` is textbook and `gerbil-enrichment.jpg` and
+`gerbil-handling.jpg` are fine, so this is the same per-image split as
+everywhere else. Degu, chinchilla and hamster sets are all correct.
+
+One non-species note: `chinchilla-health-issues.jpg` stands the animal on a wire
+mesh floor, which causes the foot problems that guide is partly about. Right
+species, wrong husbandry, and it sits on the page where it contradicts the text.
+Worth a reshoot eventually but not a species error.
+
+Running total for the article folder: 18 species of about 110, 79 images opened,
+10 replaced, 9 open with prompts written for 8 of them.
+
 ### Separate from species: 12 badly undersized files
 
 **Deferred 2026-09-12 by Mike's call.** One of the twelve, the corydoras feeding
