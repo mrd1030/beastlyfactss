@@ -5,6 +5,8 @@ import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
+import { shortLabelFor } from '@/lib/data/articleLabels';
+import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
 import { firsthandNote } from '@/lib/data/firsthand';
 import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
@@ -51,11 +53,9 @@ export default function GuideDetail() {
   const titleOf = (slug) => relatedPosts.find(p => p._id === slug)?.title || slug;
   // The first-week rows cite their source as a short tag ("Feeding guide")
   // rather than the full article title, which runs to a line on its own.
-  const SHORT_LABELS = { 'cost-guide': 'Cost guide', 'tank-setup-guide': 'Setup guide', 'feeding-guide': 'Feeding guide', 'health-issues-guide': 'Health guide', 'handling-guide': 'Handling guide', 'enrichment-guide': 'Enrichment guide', 'legal-guide': 'Legal guide', 'growth-weight-checks-guide': 'Growth guide', 'sexing-growth-body-condition-guide': 'Body condition guide', 'shopping-list': 'Shopping list', 'temperature-guide': 'Temperature guide', 'reptile-quarantine-guide': 'Quarantine guide', 'reptile-shedding-complete-guide': 'Shedding guide', 'reptile-salmonella-hygiene-guide': 'Hygiene guide', 'reptile-emergency-plan-guide': 'Emergency plan', 'small-mammal-temperature-heat-stress-guide': 'Heat and cold guide', 'small-mammal-grooming-nails-molting-guide': 'Grooming guide', 'small-mammal-vet-visits-and-travel-guide': 'Vet trips guide', 'tank-size-bowl-myth': 'Bowl myth guide', 'quarantine-and-treatment-guide': 'Quarantine guide', 'power-outage-and-transport-guide': 'Power outage guide', 'water-parameters-guide': 'Water guide', 'cycling-guide': 'Cycling guide', 'humidity-guide': 'Humidity guide', 'safe-plants-guide': 'Safe plants guide', 'bird-quarantine-guide': 'Quarantine guide', 'bird-emergency-travel-guide': 'Emergency plan', 'pellet-conversion-guide': 'Pellet guide', 'cere-color-guide': 'Cere color guide' };
-  const shortLabel = (slug) => {
-    const hit = Object.keys(SHORT_LABELS).find(k => slug.endsWith(`-${k}`));
-    return hit ? SHORT_LABELS[hit] : titleOf(slug).split(':')[0];
-  };
+  // The table itself is in src/lib/data/articleLabels.js, shared with the
+  // breadcrumb rung Blog.jsx builds for the same articles.
+  const shortLabel = (slug) => shortLabelFor(slug) || titleOf(slug).split(':')[0];
 
   const handleBack = () => {
     const returnTo = location.state?.returnTo;
@@ -234,15 +234,10 @@ export default function GuideDetail() {
     : truncateDescription(`Complete care guide for ${guide.name} - covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`);
   const canonicalUrl = `https://beastlyfacts.com/guides/${guide.id}/`;
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://beastlyfacts.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Care Guides", "item": "https://beastlyfacts.com/guides/" },
-      { "@type": "ListItem", "position": 3, "name": `${guide.name} Care Guide`, "item": canonicalUrl },
-    ],
-  };
+  const crumbs = breadcrumbSchema([
+    ['Care Guides', '/guides/'],
+    [`${guide.name} Care Guide`, `/guides/${guide.id}/`],
+  ]);
 
   const howToSchema = {
     "@context": "https://schema.org",
@@ -293,7 +288,7 @@ export default function GuideDetail() {
           "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/og-default.jpg" } },
           "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl }
         })}</script>
-        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(crumbs)}</script>
         <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
       </Helmet>
       {guide.faqs?.length > 0 && (

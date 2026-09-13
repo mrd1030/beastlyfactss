@@ -12,6 +12,9 @@ import { isChroniclesPost, seriesForSlug, chroniclesPath } from '@/lib/chronicle
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { trackSearch } from '@/lib/analytics';
 import { truncateDescription } from '@/lib/utils/truncate';
+import { primaryGuideId, speciesNameFor } from '@/lib/data/relatedArticles';
+import { shortLabelFor } from '@/lib/data/articleLabels';
+import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
 import LEGAL_COVERAGE from '@/lib/generated/legal-coverage.json';
 import { withBrand } from '@/lib/utils/seo';
 import { getDisplayDate, getDisplayIsoDate, byReleaseThenDate, siteToday } from '@/lib/utils/date';
@@ -242,11 +245,32 @@ export default function Blog() {
   const origin = location.state?.from;
   const cameFromFactFiles = origin === 'fact-files';
   const cameFromBeastfile = origin === 'beastlypedia' && Boolean(location.state?.returnTo);
+
+  // The species this article is a deep dive of, when it is one. 557 of the 739
+  // resolve; the rest are cross-species pieces (ball-python-vs-corn-snake,
+  // aquarium-cycling) that belong to no single hub and get null here.
+  //
+  // Only consulted when the reader has no origin, which is the cold landing
+  // from a search result and, per the GSC numbers, nearly all of this page's
+  // traffic. Someone who really did click through from Critter Digest should
+  // be sent back to Critter Digest. Someone who arrived from Google has never
+  // seen it, and "Back to Critter Digest" offers them a page they have no
+  // memory of instead of the hub this article hangs off. Same reasoning as the
+  // Beastfile case above: the useful destination is the animal being read.
+  const selectedSlug = selectedPost
+    ? (selectedPost.slug?.current || selectedPost._id || selectedPost.id)
+    : null;
+  const hubId = !origin && selectedSlug ? primaryGuideId(selectedSlug) : null;
+  const hubName = hubId ? speciesNameFor(selectedSlug) : null;
+  const backToHub = Boolean(hubId && hubName);
+
   const backLabel = cameFromFactFiles
     ? 'Back to Fact Files'
     : cameFromBeastfile
       ? `Back to ${location.state.returnLabel || 'Beastlypedia'}`
-      : 'Back to Critter Digest';
+      : backToHub
+        ? `Back to ${hubName}`
+        : 'Back to Critter Digest';
 
   const handleBack = () => {
     if (cameFromFactFiles) {
@@ -255,6 +279,10 @@ export default function Blog() {
     }
     if (cameFromBeastfile) {
       navigate(location.state.returnTo);
+      return;
+    }
+    if (backToHub) {
+      navigate(`/guides/${hubId}/`);
       return;
     }
     // Prefer the real URL slug from the route; slugify only for legacy ?category= titles.
@@ -274,7 +302,21 @@ export default function Blog() {
     // there. Every article-to-article jump on the page routes through here
     // (the sidebar list and You May Also Like both call it), so this is the
     // only place it needs doing.
-    navigate(`/blog/${targetSlug}/`, location.state ? { state: location.state } : undefined);
+    // Three cases, and the middle one is the one that bites. With an origin
+    // already set, carry it. Without one, it matters whether this click came
+    // from the listing or from inside another article: from the listing the
+    // reader really has been to Critter Digest and expects to land back in it
+    // at the right page and category, so mark it; from inside an article they
+    // have not, and marking it would hand them a "Back to Critter Digest" for a
+    // page they never saw, which is the same complaint the comment above
+    // records in the other direction. selectedPost is null only on the listing,
+    // so it is the thing that tells the two apart.
+    const listingState = location.state
+      ? { state: location.state }
+      : selectedPost
+        ? undefined
+        : { state: { from: 'blog' } };
+    navigate(`/blog/${targetSlug}/`, listingState);
 
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -765,15 +807,29 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://beastlyfacts.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Critter Digest", "item": "https://beastlyfacts.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": post.title, "item": canonicalUrl },
-    ],
-  };
+  // Four rungs for the 557 articles that are a deep dive of one species, three
+  // for the 182 that are not. A breadcrumb is allowed to describe the site's
+  // hierarchy rather than the URL's, and here the hierarchy is the truthful
+  // one: ball-python-feeding-guide lives at /blog/ but it is a chapter of the
+  // ball python care guide, which is how every link on the site treats it.
+  //
+  // The last rung is the short tag rather than post.title. The titles are
+  // written to be clicked in a search result and run long ("How Much Does a
+  // Ball Python Really Cost?"), which reads as a sentence bolted to the end of
+  // a path. With the species already named one rung up, "Cost guide" is the
+  // part that is still saying something.
+  const crumbHubId = primaryGuideId(postSlug);
+  const crumbSpecies = crumbHubId ? speciesNameFor(postSlug) : null;
+  const crumbs = crumbHubId && crumbSpecies
+    ? breadcrumbSchema([
+      ['Care Guides', '/guides/'],
+      [crumbSpecies, `/guides/${crumbHubId}/`],
+      [shortLabelFor(postSlug) || post.title.split(':')[0], `/blog/${postSlug}/`],
+    ])
+    : breadcrumbSchema([
+      ['Critter Digest', '/blog/'],
+      [post.title, `/blog/${postSlug}/`],
+    ]);
 
   const faqSchema = post.faqs?.length > 0 ? {
     "@context": "https://schema.org",
@@ -828,7 +884,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
         <meta name="twitter:description" content={postDescription} />
         <meta name="twitter:image" content={ogImage} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(crumbs)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
         {factsListSchema && <script type="application/ld+json">{JSON.stringify(factsListSchema)}</script>}
       </Helmet>

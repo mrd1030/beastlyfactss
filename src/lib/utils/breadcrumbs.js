@@ -12,10 +12,17 @@
 // usefully, zero invalid ones in the whole recorded history back to June, so
 // the shape those two settled on is the shape to copy rather than reinvent.
 //
-// Trail entries are [name, path] and every path is site-relative. The home
+// Trail entries are [name, path] and every path is site-relative. The root
 // rung is added here so no caller can forget it: Google wants the trail to
 // start at the root, and a list that begins halfway down is the usual way this
 // markup goes quietly wrong.
+//
+// It is named for the site rather than "Home" because the trail is read in a
+// search result, not in the site's own navigation. "Home" is meaningful to
+// someone already here; in a listing it names no place at all, while the brand
+// is the thing a reader is deciding whether to trust.
+import { BRAND } from '@/lib/utils/seo';
+
 const SITE = 'https://beastlyfacts.com';
 
 const absolute = (path) => (path.startsWith('http') ? path : `${SITE}${path}`);
@@ -24,7 +31,7 @@ export function breadcrumbSchema(trail) {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [['Home', '/'], ...trail].map(([name, path], i) => ({
+    itemListElement: [[BRAND, '/'], ...trail].map(([name, path], i) => ({
       '@type': 'ListItem',
       position: i + 1,
       name,
