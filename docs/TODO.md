@@ -283,9 +283,9 @@ opened, 10 replaced and 4 open.
 Seven species sampled across corn snake, California kingsnake, milk snake,
 hognose, ball python, boa constrictor and rosy boa, 18 images. **One miss:**
 
-- **`corn-snake-cost.jpg`** shows orange and white bands that wrap the body,
-  which is a milk snake or kingsnake pattern. A corn snake carries saddles:
-  dark-bordered blotches along the back that stop at the flanks.
+- **`corn-snake-cost.jpg`** showed orange and white bands that wrap the body,
+  which is milk snake or kingsnake patterning. **Replaced 2026-09-12** with a
+  corn snake carrying dark-edged saddles that stop at the flanks.
 
 Everything else in the snake sets is right, including several that could easily
 have gone wrong: the hognose handling frame shows the upturned rostral scale
@@ -301,8 +301,8 @@ the muddled guppy set).
 
 ### Fourth batch: small mammals, 2026-09-12
 
-Gerbil, degu, chinchilla and hamster, 12 images. **Three misses, all gerbil,
-prompts written:**
+Gerbil, degu, chinchilla and hamster, 12 images. **Three misses, all gerbil, all
+replaced 2026-09-12:**
 
 - **`gerbil-cost.jpg`** and **`gerbil-health-issues.jpg`** show rodents with
   bold dark dorsal stripes, closer to an African striped mouse or a chipmunk
@@ -321,7 +321,8 @@ species, wrong husbandry, and it sits on the page where it contradicts the text.
 Worth a reshoot eventually but not a species error.
 
 Running total for the article folder: 18 species of about 110, 79 images opened,
-10 replaced, 9 open with prompts written for 8 of them.
+14 replaced, 5 open: the angelfish feeding frame, the neon tetra health frame,
+and the three muddled guppy frames that want a human eye.
 
 ### Separate from species: 12 badly undersized files
 
