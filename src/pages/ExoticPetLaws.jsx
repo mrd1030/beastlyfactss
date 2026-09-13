@@ -451,7 +451,24 @@ export default function ExoticPetLaws() {
                   <h2 className="font-display font-bold text-base text-foreground">
                     {jurisdictionName(detail.code)}
                   </h2>
-                  <BucketPill bucketKey={bucketFor(detail.entry?.status)} />
+                  {/* Clicking the same state again already cleared the card, but
+                      nothing said so, and the card sits in the flow: while it is
+                      open everything under it, the animal picker included, is
+                      pushed down by its height, 350px for Hawaii and more where
+                      the quoted statute runs long. With no visible way to close
+                      it, a reader who was done reading had to remember which
+                      state they had clicked and find it on the map again. */}
+                  <div className="flex items-center gap-2 flex-shrink-0">
+                    <BucketPill bucketKey={bucketFor(detail.entry?.status)} />
+                    <button
+                      type="button"
+                      onClick={() => setSelectedState(null)}
+                      aria-label={`Close ${jurisdictionName(detail.code)}`}
+                      className="-mt-1 -mr-1 p-1 text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  </div>
                 </div>
                 {detail.entry ? (
                   <>
