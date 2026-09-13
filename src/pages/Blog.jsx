@@ -4,7 +4,7 @@ import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, ChevronDown, Clock, Search as SearchIcon, X } from 'lucide-react';
-import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
+import { useNavigate, useLocation, useParams, useNavigationType, Link } from 'react-router-dom';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
 import { mdxPosts } from '@/lib/mdxPosts';
@@ -264,9 +264,27 @@ export default function Blog() {
   const selectedSlug = selectedPost
     ? (selectedPost.slug?.current || selectedPost._id || selectedPost.id)
     : null;
-  const hubId = !origin && selectedSlug ? primaryGuideId(selectedSlug) : null;
+  //
+  // And only on a real cold landing. React Router reports POP for the first
+  // render of a page the browser loaded and PUSH for one reached by a click
+  // inside the app, which separates the two cases that "no origin" had been
+  // lumping together. Most links into an article carry no state and cannot
+  // easily be made to: every in-body link on the site renders through one
+  // MdxLink component that has no idea what page it is on or what that page is
+  // called. Those were being read as cold landings, so clicking a species legal
+  // guide out of the legal hub offered "Back to Argentine Tegu" and went to
+  // /guides/tegu/, a page the reader had not come from and had never seen,
+  // while the legal hub they left sat 1,925px down and forgotten.
+  const arrivedByClick = useNavigationType() === 'PUSH';
+  const hubId = !origin && !arrivedByClick && selectedSlug ? primaryGuideId(selectedSlug) : null;
   const hubName = hubId ? speciesNameFor(selectedSlug) : null;
   const backToHub = Boolean(hubId && hubName);
+
+  // Reached by a click from somewhere on the site that did not say where. There
+  // is a history entry behind it, so going back is both correct and the only
+  // honest thing to offer: the label cannot name a destination nobody recorded,
+  // and a confident wrong name is worse than a plain one.
+  const plainBack = !origin && arrivedByClick && Boolean(selectedPost);
 
   const backLabel = cameFromFactFiles
     ? 'Back to Fact Files'
@@ -274,9 +292,11 @@ export default function Blog() {
       ? `Back to ${location.state.returnLabel || 'Beastlypedia'}`
       : cameFromGuideHub
         ? `Back to ${location.state.hubName}`
-        : backToHub
-          ? `Back to ${hubName}`
-          : 'Back to Critter Digest';
+        : plainBack
+          ? 'Back'
+          : backToHub
+            ? `Back to ${hubName}`
+            : 'Back to Critter Digest';
 
   const handleBack = () => {
     if (cameFromFactFiles) {
@@ -285,6 +305,10 @@ export default function Blog() {
     }
     if (cameFromBeastfile) {
       navigate(location.state.returnTo);
+      return;
+    }
+    if (plainBack) {
+      navigate(-1);
       return;
     }
     if (cameFromGuideHub) {
