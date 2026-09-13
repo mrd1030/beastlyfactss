@@ -44,7 +44,16 @@ export default function About() {
         {/* The Person every article's BlogPosting author points at by @id.
             ProfilePage is the type for a page that IS about one person, which
             this is. sameAs ties the byline, this page and the site's public
-            accounts into a single identity. */}
+            accounts into a single identity.
+
+            No `email` here on purpose. Cloudflare's email obfuscation rewrites
+            the address everywhere it appears in page text or a mailto, but it
+            skips JSON-LD, because rewriting a script block would break the
+            JSON. An email field here was therefore the one labelled,
+            machine-readable copy of the address on the whole site, sitting in
+            the exact shape a harvester looks for. It is optional on Person and
+            earns nothing in search, and the mailto further down the page still
+            gives a reader the address. */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -58,7 +67,6 @@ export default function About() {
               "description": AUTHOR.bio,
               "jobTitle": AUTHOR.role,
               "image": `https://beastlyfacts.com${AUTHOR.image}`,
-              "email": "hello@beastlyfacts.com",
               "sameAs": AUTHOR.sameAs,
               "worksFor": PUBLISHER,
             },

@@ -9,12 +9,35 @@ filled without manual posting:
    site-relative; the poster makes them absolute.
 2. **The daily poster**: edge function `post-social-feed`
    (supabase/functions/post-social-feed/index.ts), called by pg_cron at 15:00
-   UTC daily (supabase/social_feed_automation.sql). It fetches the queue from
-   the live site and inserts entries whose date has arrived. Idempotent via the
-   unique `queue_id` column, so stale queues and repeat calls are harmless.
+   UTC daily (supabase/social_feed_automation.sql). It posts from two sources,
+   in order:
+   - anything in the queue whose date has arrived and that has not been posted;
+   - failing that, **one fact** from `facts.json` that has its own photo and has
+     never been posted, oldest id first.
+
+   So the feed moves every day whether or not anyone refills the queue. Nothing
+   posts twice: `social_posts.queue_id` is unique (`fact-<id>` for the fact
+   path), and the fact path also skips any photo already used by a queue post,
+   so a fact promoted through the queue is never repeated as a fallback.
 3. **The weekly refill**: a scheduled Routine that rewrites the queue each week
    with the coming week's posts and pushes to main (a real deploy, the queue
-   ships with the site). Its prompt lives below so it can be recreated.
+   ships with the site). Its prompt lives below so it can be recreated. It is
+   now an enhancement rather than a dependency: when it fails the fact floor
+   carries the feed.
+
+### Why the fact floor exists
+
+The refill Routine fired on Sunday 2026-09-06, hung, never committed, and
+reported SUCCEEDED anyway, because a Routine's status records that the session
+was delivered rather than that it did its job. The queue's newest entry was
+2026-09-07, the poster went on returning `posted: 0` every day, pg_cron logged
+success every day, and the feed sat still for five days with nothing anywhere
+raising a hand. Read `queue_future` in the poster's response to see whether the
+queue is actually alive: it counts entries dated after today.
+
+There are 178 facts with their own photo, so at one a day the floor alone
+carries roughly six months before it runs out, and the response reports
+`facts_remaining` so the number is visible.
 
 Caption rules are docs/RULES.md plus the social voice: hook first, no URLs in
 captions (`link_url` carries the page), 2 to 4 #hashtags at the end, no em or

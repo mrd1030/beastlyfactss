@@ -1432,3 +1432,785 @@ floor, front three-quarter view low to the ground. Domed dark carapace with pale
 areolae, and the red and orange scales on the legs and head catching the light,
 which are the identifying feature. Dappled shade through leaves above, rich
 brown and leaf-green palette, 50mm, f/4, 3:2.
+
+---
+
+# Federal law guide hero, `public/assets/guides/`, 1168x784
+
+One image, `federal-exotic-pet-laws.jpg`, for the federal law guide dated
+2026-09-12. Same spec and the same house rule as the legal series above: no
+gavels, no flags, no documents, no rulers, no hands. The article carries the
+law.
+
+The subject is a hatchling red-eared slider, because the FDA four-inch rule is
+the federal rule the most readers have actually run into, and a hatchling is the
+animal it was written about. It must read as a hatchling: a rounded carapace a
+few inches across, the vivid juvenile green and yellow striping, the red temple
+patch, proportionally large eye and head.
+
+### federal-exotic-pet-laws.jpg
+```
+Photorealistic photograph of a single hatchling red-eared slider resting on a
+wet dark rock at the waterline, body in three-quarter view, head raised and
+turned slightly toward the camera. Small rounded carapace with fresh green and
+yellow striping and fine growth rings, bright red patch behind the eye, wet
+shell reflecting the sky. Shallow still water and soft green bank out of focus
+behind. Soft overcast morning light, cool green and slate palette, camera down
+at water level so the animal reads small in the frame, 100mm macro, f/4, 3:2.
+No hands, no ruler, no coin, no tank, no people.
+```
+
+---
+
+# Wrong-species replacements, `public/assets/guides/`, 1168x784
+
+Eight files from the 2026-09-12 hero skim (docs/TODO.md item 5). Each one shows
+a different animal from the one its guide is about. Same spec as the rest of
+the set: 3:2, 1168x784, mozjpeg quality 80, no hands, no people.
+
+Every miss here was a close relative the generator substituted, so each prompt
+carries the identifying features in the prompt itself and a check line under it.
+Verify against the check line before installing. None of these may reuse the
+setting, palette or camera position of the species' other art.
+
+## The prompts
+
+#### hedgehog.jpg
+```
+Photorealistic photograph of an African pygmy hedgehog walking across a fleece
+blanket on a smooth indoor floor in daytime, whole animal in frame, front
+three-quarter view, quills relaxed and lying back. Cream quills each banded with
+a single brown stripe, white face and cheeks, white belly fur, small dark button
+eye, pink-brown pointed snout. Bright soft window light, warm neutral palette,
+camera at floor level, 85mm, f/2.8, 3:2.
+```
+Check: cream-and-brown banded quills, white face, small enough to sit in two
+hands. Not the European hedgehog: no dark brown spines, no dark grey face, no
+garden or leaf-litter setting.
+
+#### hissing-cockroach.jpg
+```
+Photorealistic photograph of one adult Madagascar hissing cockroach on a slab of
+cork bark over dark coconut fibre, side-on three-quarter view, antennae forward.
+Uniformly glossy chestnut red-brown carapace, wingless, head tucked out of sight
+beneath the smooth pronotal shield, two blunt bumps on the pronotum, a row of
+darker spiracle dots along each flank, stout unspined legs. Warm dim light
+raking across the shell, deep brown palette, macro at the animal's level, 100mm,
+f/5.6, 3:2.
+```
+Check: one colour from head to abdomen, head hidden under the shield. Not a
+black head and thorax with an orange abdomen, no beetle wing cases, no spiny
+cricket legs, no exposed mandibles.
+
+#### california-kingsnake.jpg
+```
+Photorealistic photograph of a California kingsnake crossing sun-warmed granite
+in open chaparral, head raised and body in a loose S, most of the length in
+frame. Crisp alternating glossy black-brown and cream bands that continue
+unbroken around the body, smooth unkeeled scales, small rounded head barely
+wider than the neck, round pupil, black tongue. Late afternoon side light, warm
+grey and cream palette, camera low at snake level, 100mm, f/5.6, 3:2.
+```
+Check: rings, not blotches. Not a gopher or bull snake: no saddled dorsal
+blotches on a pale ground, no red tongue, no dry grass prairie.
+
+#### ball-python.jpg
+```
+Photorealistic photograph of a ball python coiled on leaf litter in a planted
+enclosure, head raised and facing the camera, thick body stacked in loose coils.
+Blocky wedge-shaped head clearly wider than the neck, short heavy body, dark
+chocolate ground with gold and tan side blotches enclosing darker spots, a cream
+stripe running from the nostril through the eye, heat pits along the upper lip.
+Warm low side light, brown and gold palette, camera at head height, 85mm, f/4,
+3:2.
+```
+Check: blocky head, short heavy body, gold side blotches. Not an African rock
+python: no slender head, no arrowhead marking on the crown, no banding across
+the back, no dry scrub.
+
+#### emperor-scorpion.jpg
+```
+Photorealistic photograph of an adult emperor scorpion on damp leaf litter at
+night, side view with the whole animal in frame, pincers forward and tail curled
+low over the back. Uniformly glossy jet black over the body, legs, pincers and
+tail alike, massive granular pincers as thick as the forearms, a single bulbous
+telson with one dark sting. Cool torchlight from the upper left against near
+black, macro, 100mm, f/8, 3:2.
+```
+Check: black everywhere, one pair of pincers, eight walking legs. Never orange
+or red legs, never a second pair of claws, never a segmented tail ending in
+anything but one telson and one sting.
+
+#### emperor-scorpion-legal.jpg
+```
+Photorealistic photograph of an adult emperor scorpion standing on damp red-brown
+coconut fibre in a shaft of daylight, high three-quarter view looking down the
+length of the animal, tail low and pincers apart. Uniformly glossy jet black
+body, legs, pincers and tail, heavy granular pincers, single bulbous telson with
+one dark sting, pale comb-like pectines just visible under the body. Cool
+diffused daylight, rust and black palette, 60mm, f/8, 3:2.
+```
+Check: as above. Different light, angle and ground from `emperor-scorpion.jpg`,
+which is the night shot.
+
+#### savannah-monitor-legal.jpg
+```
+Photorealistic photograph of a savannah monitor on hard dusty ground in open
+West African scrub, body in three-quarter view, head turned toward the camera.
+Short blunt rounded snout, thick neck, heavy stocky body, grey-brown to tan
+ground colour carrying rows of paired dark-edged cream ocelli across the back,
+short blunt tail round in cross-section, pale forked tongue just out. Hard midday
+sun, dust and straw palette, camera low and ahead of the animal, 135mm, f/5.6,
+3:2.
+```
+Check: blunt snout, stocky build, rows of paired ocelli, round tail. Not a Nile
+monitor: no long tapering snout, no laterally flattened keeled tail, and not at
+a riverbank, which is `nile-monitor-legal.jpg`.
+
+#### corydoras-catfish.jpg
+```
+Photorealistic underwater photograph of a single bronze corydoras resting on pale
+fine sand in a planted aquarium, front three-quarter view, barbels spread and
+clearly visible. Stout arched back, blunt downturned snout, two overlapping rows
+of bony armour plates along each flank instead of scales, three pairs of short
+barbels at the mouth, tall triangular dorsal fin, small adipose fin, forked tail.
+Bright clean aquarium light, green and pale sand palette, camera at substrate
+level, 100mm macro, f/5.6, 3:2.
+```
+Check: armoured plates and an arched stout body. Not a minnow, barb or gudgeon:
+no scaled flanks, no torpedo body, no long trailing whiskers.
+
+#### oscar.jpg
+```
+Photorealistic photograph of an adult tiger oscar hanging in midwater in a
+planted aquarium, full side profile, whole fish in frame including the tail.
+Deep oval heavy-bodied cichlid with a large blunt head and thick lips, dark
+charcoal ground marbled with irregular red-orange banding, and a black eyespot
+ringed in bright orange at the base of the tail where the caudal fin meets the
+body. Long low dorsal and anal fins running back to the tail. Driftwood and
+broad-leaved plants behind, bright clean aquarium light, bronze and green
+palette, camera level with the fish, 60mm macro, f/5.6, 3:2.
+```
+Check: the orange-ringed black spot at the tail base is the whole identification
+and must be unmistakable. Not a tilapia, which is silver-grey with vertical bars
+and no eyespot, and not a generic spotted cichlid.
+
+#### goldfish.jpg
+```
+Photorealistic photograph of a single common goldfish in full side profile in a
+bright planted aquarium, whole fish in frame, swimming left to right. Deep
+orange metallic scales grading to pale on the belly, a short single caudal fin,
+and a plain rounded snout with a small terminal mouth and no whiskers of any
+kind at the corners. Green stem plants and pale gravel behind, clean daylight
+aquarium lighting, orange and green palette, camera level with the fish,
+60mm macro, f/5.6, 3:2. Absolutely no barbels.
+```
+Check: nothing whisker-like anywhere near the mouth. A pair of barbels at the
+corners of the mouth makes it a koi, which is the exact difference the koi
+versus goldfish guide turns on, and the previous frame appeared to have them.
+Not a fancy goldfish either: no double tail, no head growth, no telescope eyes.
+
+#### angelfish.jpg
+```
+Photorealistic photograph of a single freshwater angelfish in full side profile
+in a planted freshwater aquarium, whole fish in frame including the fin tips,
+hanging almost still in midwater. Tall disc-shaped body flattened side to side
+and clearly taller than it is long, a very tall triangular dorsal fin and a
+matching anal fin sweeping back to fine points, a pair of long thread-like
+ventral filaments trailing below, and a silver body crossed by four vertical
+black bars, one running down through the eye and one at the base of the tail.
+Tall ribbon-leaved plants and a dark background behind, soft diffused aquarium
+light from above, silver and deep green palette, camera level with the fish,
+60mm macro, f/5.6, 3:2.
+```
+Check: freshwater Pterophyllum, so a tall thin disc with trailing fins and
+vertical bars in a planted tank. Never a marine angelfish, never coral, reef
+rock, open blue water or sunbeams through saltwater, which is what the previous
+frame showed. Not a discus either: a discus is a rounded disc with short fins
+and no trailing filaments, and it has its own hero.
+
+
+
+---
+
+# Fact photos awaiting art, `public/assets/facts/`, 1600x1067
+
+The ten facts drafted but held out of `facts.js` because no photo exists, listed
+in NEEDS_IMAGE.md under the 2026-08-31 and 2026-09-07 runs. Every fact needs its
+own photo, no reuse from a guide hero, a Beastfile hero or another fact: the
+photo is the whole interaction on a Beastfile page, where clicking a fact opens
+it in a lightbox.
+
+Each prompt names the identifying features in the body and carries a check line,
+the same shape the legal set uses, because the 2026-09-12 hero skim found eight
+guide images showing the wrong species. No hands, no people, no text in frame.
+
+Promotion steps once a photo lands are in BEASTLYPEDIA_FACT_GAPS.md.
+
+Status 2026-09-12: eight frames delivered and accepted. The orca came back with
+a bull's dorsal fin and the bowerbird with a maypole hut instead of an avenue;
+both prompts below carry the corrected wording.
+
+#### orca.jpg
+```
+Photorealistic photograph of an adult female orca swimming at the surface with
+two smaller orcas tucked close behind and slightly below her, all three
+travelling in the same direction in tight formation. Her dorsal fin is short and
+strongly falcate, curved backward like a sickle and no more than about half the
+height of a bull's tall erect triangular fin. Crisp white oval eye patch behind
+each eye, white lower jaw and flank patch, pale grey saddle behind the dorsal
+fin, glossy black back beaded with water. Cold open ocean, low grey daylight,
+slate and white palette, camera at water level, 200mm, f/4, 3:2.
+No tall straight dorsal fins anywhere in the frame, since that is an adult male.
+```
+Check: falcate curved fin on the lead animal, because the matriarch is female
+and the fact is that she leads. Not a false killer whale, which has no white
+patches, and not a pilot whale, which has a bulbous head and a broad low fin.
+
+#### pembroke-welsh-corgi.jpg
+```
+Photorealistic photograph of a Pembroke Welsh Corgi standing in full profile on
+short grass, side on to the camera, legs straight and body level, whole dog in
+frame. Long deep body carried on very short straight legs, normal-sized fox-like
+head with large upright pointed ears, red and white coat with a white chest
+blaze, no tail. Bright overcast daylight, green and rust palette, camera at the
+dog's chest height so the leg-to-body ratio reads, 85mm, f/4, 3:2.
+```
+Check: no tail and upright pointed ears. A Cardigan has a long bushy tail and
+rounded ears. Legs short but straight and sound, not bowed.
+
+#### short-beaked-echidna.jpg
+```
+Photorealistic photograph of a short-beaked echidna probing its snout into damp
+leaf litter and loose soil, body three-quarter on, head low and working. Short
+bare tubular snout with tiny nostrils at the tip, very small dark eye, stocky
+rounded body covered in coarse brown fur with cream-and-black tipped spines
+lying back over it, heavy clawed digging forefeet. Soft dappled forest floor
+light, brown and olive palette, camera down at ground level close to the snout,
+100mm macro, f/5.6, 3:2.
+```
+Check: spines short and interspersed with visible fur, snout bare and tubular.
+Not a porcupine, not a hedgehog.
+
+#### atlantic-puffin.jpg
+```
+Photorealistic photograph of two Atlantic puffins standing bill to bill at the
+mouth of a grassy clifftop burrow, heads angled together mid-billing, bodies
+upright. Breeding-season bill, deep and triangular and banded in orange, yellow
+and blue-grey with a fine pale line, white face with a grey eye patch and the
+red-rimmed eye ornament, black crown and back, white breast, bright orange
+webbed feet. Sea thrift and worn turf at the burrow entrance, soft coastal
+light, green and orange palette, camera at bird height, 300mm, f/5.6, 3:2.
+```
+Check: white face, banded triangular bill, orange feet. Not a tufted puffin,
+which has a dark face and straw-coloured head plumes.
+
+#### king-cobra.jpg
+```
+Photorealistic photograph of a king cobra coiled low beside a large mound of
+compacted dead leaves on a forest floor, head raised only slightly and turned
+toward the mound, hood not spread. Olive-brown to tan body with faint pale
+chevrons across the back, large smooth-scaled head noticeably wider than the
+neck with a pair of big occipital shields behind the crown, plain narrow hood,
+round eye with a round pupil. Humid lowland forest, warm filtered green light,
+olive and leaf-brown palette, camera low and level with the nest, 135mm, f/4,
+3:2.
+```
+Check: narrow plain hood and paired occipital shields. Not a spectacled cobra
+with a broad marked hood. The mound must read as deliberately piled, not as
+scattered litter.
+
+#### satin-bowerbird.jpg
+```
+Photorealistic photograph of a male satin bowerbird standing on the cleared
+court at one open end of his bower, holding a blue flower in his bill. The bower
+is an avenue: two separate parallel walls of thin vertical twigs pushed into the
+ground about a hand's width apart, forming a short roofless corridor open at
+both ends, with daylight and forest floor visible straight through the gap. The
+flat court in front of it is scattered with blue bottle caps, blue flowers, blue
+feathers and blue plastic fragments. The bird is glossy blue-black with a
+violet-blue iris and a pale horn-coloured bill. Dappled understorey light, deep
+green and blue palette, camera at ground level slightly off the corridor's axis
+so both walls and the gap between them are readable, 200mm, f/4, 3:2.
+```
+Check: two distinct walls with a see-through gap between them and no roof. Not a
+dome, hut, tunnel or teepee, which is a maypole bower built by a different
+species, and never a cup nest or anything in a tree. The glossy blue-black bird
+is the adult male; the olive-green one is the female and the wrong subject.
+
+#### siamese-cat.jpg
+```
+Photorealistic photograph of a Siamese kitten a few weeks old sitting on a pale
+blanket, front three-quarter view, one forepaw forward. Body still pale cream
+with the points only beginning to come in: ears shading to dark seal at the
+edges, a faint smudge of a mask around the nose, darkening on the paw tips and
+the tail. Deep blue almond eyes, wedge-shaped head, large ears. Soft bright
+window light, cream and taupe palette, camera at the kitten's eye level, 85mm,
+f/2.8, 3:2.
+```
+Check: the torso must read clearly paler than the ears and paws. A finished
+adult Siamese does not show the fact.
+
+#### aardvark.jpg
+```
+Photorealistic photograph of an aardvark at night with its snout pushed into a
+torn-open termite mound, long sticky tongue extended into the breach, body in
+three-quarter view. Long tubular pig-like snout, very long upright rabbit-like
+ears, arched back, thick tapering tail, sparse yellowish-grey hair over pinkish
+skin, heavy spade-like claws on the forefeet. Dry savanna at night, warm
+torchlight falling on the animal against near-black, dust and umber palette,
+camera low and ahead of the shoulder, 135mm, f/4, 3:2.
+```
+Check: long ears, arched back, thick tail, sparse hair. Not a giant anteater,
+not a pangolin.
+
+#### dumbo-octopus.jpg
+```
+Photorealistic photograph of a small dumbo octopus drifting in open black water,
+photographed from slightly below and in front, the two ear-like fins on the
+mantle held out mid-flap. Translucent pinkish gelatinous body, large dark eyes,
+short arms joined by a continuous web so the underside reads as a soft umbrella,
+no long trailing arms. Lit by a single cold ROV lamp from the upper left,
+everything beyond the animal falling to pure black, marine snow drifting through
+the beam, pink and black palette, 60mm, f/8, 3:2.
+```
+Check: paired fins above the eyes, webbed umbrella of short arms. No coral, rock
+or sand anywhere in frame, since this animal lives kilometres above any of it.
+
+#### horned-lizard.jpg
+```
+Photorealistic photograph of a Texas horned lizard on sun-baked sandy ground,
+body braced and head turned, a thin jet of blood arcing from the corner of one
+eye toward the edge of the frame. Flattened round disc-shaped body, a crown of
+two long central horns and shorter spines at the back of the head, two rows of
+fringe scales along each flank, tan and rust camouflage banding with a pale
+dorsal line. Hard midday desert light, ochre and rust palette, camera at ground
+level slightly ahead of the animal, 100mm macro, f/5.6, 3:2.
+```
+Check: flat round body, crown of horns at the back of the skull. Not a thorny
+devil, not a frilled lizard. Thin arcing stream, not a spray, predator out of
+frame.
+
+---
+
+# Colour refresh: goldfish and koi, `public/assets/guides/`, 1168x784
+
+Not species fixes. The goldfish installed 2026-09-12 is correct and the koi has
+always been correct; both are just muted, and these two animals are the most
+colour-driven species on the site. Same spec as the rest of the guide set.
+
+The pair also has to stay distinguishable, because the koi versus goldfish
+comparison guide turns on the difference: koi carry a pair of barbels at the
+corners of the mouth and goldfish have none. Saturate the colour, not the
+identification.
+
+#### goldfish.jpg
+```
+Photorealistic photograph of a single common goldfish in full side profile in a
+brightly lit planted aquarium, whole fish in frame, swimming left to right.
+Vivid tangerine to deep red-orange scales with a metallic sheen, each scale
+edge catching the light so the flank reads like hammered copper, belly fading to
+pale cream gold, fins translucent amber with orange rays. Saturated emerald stem
+plants filling the background and clean pale sand below. Strong clean daylight
+from above raking across the fish, high colour saturation and high local
+contrast, orange against deep green, camera level with the fish, 60mm macro,
+f/5.6, 3:2. A plain rounded snout with a small terminal mouth and absolutely no
+barbels or whiskers of any kind.
+```
+Check: colour rich and clearly orange, never washed pale or brown. Nothing
+whisker-like at the mouth, which would make it a koi. Single caudal fin, no
+double tail, no head growth, no telescope eyes.
+
+#### koi.jpg
+```
+Photorealistic photograph of three koi swimming just under the surface of a
+clear garden pond, seen from above at a slight angle, bodies overlapping in a
+loose diagonal, all three whole in frame. One kohaku with a brilliant white
+ground and deep lacquer-red markings, one showa with jet black over red and
+white, one solid metallic orange-gold, all with crisp saturated edges where the
+colours meet. Two short barbels at each mouth, clearly visible. Sunlight
+striking the water so the colours glow against dark green depth, water clear
+enough to read every scale, a few lily pads at the frame edge. High colour
+saturation, red and white against deep green, 100mm, f/5.6, 3:2.
+```
+Check: barbels present at the corners of each mouth, the feature that separates
+a koi from a goldfish. Colour blocks crisp and saturated, not muddy or pastel,
+and the white genuinely white rather than cream.
+
+---
+
+# Composite panel fixes, `public/assets/guides/`
+
+Four overview grids from the 2026-09-12 skim carry one wrong panel each
+(docs/TODO.md item 5). Three have straight dividers, so the fix is a single
+replacement panel spliced into the existing file at the panel's exact size,
+which keeps the panels that are already right. The fourth has diagonal
+dividers and needs the whole grid regenerated.
+
+Each single panel must match its neighbours in the grid it is going into, so
+the lighting and palette notes below are not decoration: a panel lit differently
+from the three beside it reads as a mistake even when the animal is correct.
+
+#### koi-conure-slider-scorpion-overview.jpg, bottom-right panel only, 584x392
+Replaces a scorpion with bright orange legs and a second pair of pincers.
+```
+Photorealistic photograph of an adult emperor scorpion on dark damp soil, full
+side view, whole animal in frame, pincers forward and tail curled low over the
+back. Uniformly glossy jet black over the body, legs, pincers and tail alike,
+massive granular pincers as thick as the forearms, a single bulbous telson with
+one dark sting. Dark earth background falling away behind, hard directional
+light from the upper left picking out the gloss on the carapace, black and
+umber palette, macro, 3:2.
+```
+Check: black everywhere including the legs, one pair of pincers, eight walking
+legs. The frame must sit beside a koi, a conure and a red-eared slider without
+looking brighter or flatter than they are.
+
+#### sulcata-hedgehog-lovebird-guppy-overview.jpg, top-right panel only, 584x392
+Replaces a European hedgehog with the pet species.
+```
+Photorealistic photograph of an African pygmy hedgehog walking across the floor
+of an indoor enclosure, body in three-quarter view, whole animal in frame,
+quills relaxed. Cream quills each banded with a single brown stripe, white face
+and cheeks, white belly fur, small dark button eye, pink-brown pointed snout.
+Soft indoor light from the left, warm neutral palette, wire enclosure panel soft
+in the background, camera at floor level, 3:2.
+```
+Check: banded cream quills and a white face, small enough to sit in two hands.
+Never the European hedgehog's dark brown spines and dark grey face, which is
+what this panel currently shows.
+
+#### gargoyle-mourning-african-fat-tail-gecko-overview.jpg, right panel only, 389x784 portrait
+Replaces a knob-headed gecko that is not the species.
+```
+Photorealistic vertical photograph of an African fat-tailed gecko standing on
+warm orange sand beside a clay hide, body in three-quarter view, head toward the
+camera, whole animal in frame including the tail. Smooth rounded head with no
+crests, knobs or spines anywhere, chunky body in broad chocolate-brown and tan
+bands, a thick blunt tail as wide as the body, a narrow cream stripe running
+down the spine, vertical pupil in a dark eye. Warm low side light, terracotta
+and chocolate palette, camera at sand level, tall portrait crop, 1:2.
+```
+Check: a smooth head. Any crest, spike or knob makes it the wrong species,
+which is the current fault. Fat blunt tail, not slender or leaf-shaped, and the
+banding broad rather than speckled.
+
+#### five-beginner-reptiles-overview.jpg, whole grid, 1264x848
+The fifth panel shows a banded milk or kingsnake where the article's fifth
+species is the corn snake. Diagonal dividers mean the grid gets regenerated.
+```
+Photorealistic composite of five vertical panels separated by thin diagonal
+white dividers, one animal per panel, all five shot in the same warm low light
+against soft tan and brown backgrounds so the set reads as one series, 1264x848.
+Panel one, a bearded dragon on a branch, spiny beard and rows of lateral spines,
+head raised. Panel two, a leopard gecko on bark, plump tail and black spotting
+on cream. Panel three, a ball python coiled on wood, blocky head clearly wider
+than the neck, gold and dark brown side blotches. Panel four, a crested gecko
+gripping bark, eyelash crests over the eyes, no spines along the flanks.
+Panel five, a corn snake on bark with its head raised, orange ground carrying
+dark-bordered dorsal saddles, a spear-point marking on the crown, smooth
+unkeeled scales.
+```
+Check panel five hardest: saddles, which are blotches along the back that do not
+wrap the body, never full rings. A snake with complete bands is a milk snake or
+kingsnake, which is what the current frame shows, and both of those have their
+own heroes elsewhere in this folder.
+
+---
+
+# Legal hero fixes, second round, `public/assets/guides/`, 1168x784
+
+Two from the fourth skim pass (docs/TODO.md item 5). Both are look-alike
+substitutions rather than obviously wrong animals, so each prompt leads with the
+one feature that separates the species from its double.
+
+#### red-eared-slider-legal.jpg
+Replaces a turtle that reads as a painted turtle.
+```
+Photorealistic photograph of a red-eared slider basking on a half-submerged log
+at the edge of a pond, body in three-quarter view with the head turned toward
+the camera so the side of the face is fully visible. A broad red stripe running
+back from behind each eye across the temple, thin yellow-green stripes down the
+neck and legs, an olive-brown carapace with faint yellow streaking and a
+serrated rear edge, a plain yellow plastron, webbed hind feet with long claws.
+Still green water and soft bank planting behind, warm midday light, olive and
+yellow palette, camera at water level, 200mm, f/5.6, 3:2.
+```
+Check: the red temple stripe, which is the feature the species is named for, and
+a carapace with no red anywhere on it. A turtle with red bars along the shell
+margins is a painted turtle, *Chrysemys picta*, which is what the current frame
+shows. A yellow blotch instead of a red stripe makes it a yellow-bellied slider.
+
+#### tiger-salamander-legal.jpg
+Replaces an animal that reads as a European fire salamander.
+```
+Photorealistic photograph of a tiger salamander at the mouth of its burrow in
+damp dark soil, body in three-quarter view, head low and toward the camera.
+Stocky heavy build with a broad rounded head, small dark eyes set well apart, a
+blunt snout, clear vertical costal grooves down each flank, and irregular dull
+olive to mustard blotches and bars over a dark brown ground, the markings soft
+edged rather than crisp. Damp earth and scattered leaf litter, cool overcast
+light, brown and olive palette, camera at ground level close to the snout,
+100mm macro, f/5.6, 3:2.
+```
+Check: dull olive-mustard markings on brown, a broad blunt head and visible
+costal grooves. Not a fire salamander, *Salamandra salamandra*: no glossy
+jet-black skin, no bright egg-yellow patches, and no prominent bulging parotoid
+glands behind the eyes. The standalone `tiger-salamander.jpg` is correct and is
+the reference to match.
+
+---
+
+# Article hero fixes, `public/assets/images/`, 1168x784
+
+From the article skim (docs/TODO.md item 6). Grouped by species, one block per
+animal, because the fault is shared across a species' set even though only some
+files carry it. Same spec as the rest: 3:2, 1168x784, mozjpeg quality 80.
+
+Only the named files need replacing. The others in each species' set were
+checked and are correct, so do not regenerate them.
+
+## Emperor scorpion, 4 files
+
+Every one of these shows orange or yellow legs, and `handling` and
+`health-issues` also show a second pair of pincers that no scorpion has. The
+accuracy block below applies to all four: uniformly glossy jet black over body,
+legs, pincers and tail alike, massive granular pincers as thick as the forearms,
+ONE pair of pincers, eight walking legs, a single bulbous telson carrying one
+dark sting. Never orange, red or yellow legs.
+
+```
+emperor-scorpion-cost.jpg
+Photorealistic photograph of an adult emperor scorpion on damp coconut fibre in
+a simple glass enclosure, full side view, whole animal in frame, a cork bark
+hide and a shallow water dish behind it. Uniformly glossy jet black body, legs,
+pincers and tail, heavy granular pincers, single telson with one dark sting.
+Warm dim keeper-room light, black and umber palette, camera at substrate level,
+100mm macro, f/8, 3:2. No orange or yellow anywhere on the animal.
+
+emperor-scorpion-handling.jpg
+Photorealistic photograph of an adult emperor scorpion being guided across damp
+substrate by long stainless steel feeding tongs entering from the left, the
+animal calm with pincers forward and tail low. Uniformly glossy jet black body,
+legs, pincers and tail, one pair of pincers only. Soft overhead light, black and
+grey palette, macro, f/8, 3:2. No hands, no orange legs, no second pair of
+claws.
+
+emperor-scorpion-health-issues.jpg
+Photorealistic photograph of an adult emperor scorpion on damp dark substrate
+beside a small round hygrometer dial, side view, the animal's carapace and tail
+segments clearly lit so the joints and cuticle read sharply. Uniformly glossy
+jet black throughout, single telson with one sting. Cool even light, black and
+slate palette, macro, f/8, 3:2.
+
+emperor-scorpion-tank-setup.jpg
+Photorealistic photograph of a full emperor scorpion enclosure seen through the
+front glass, deep dark substrate, two cork bark hides, a shallow water dish and
+a side-mounted heat mat cable, with the scorpion out in the open near one hide.
+Uniformly glossy jet black animal, clearly readable at this distance. Warm low
+lighting from one side, brown and black palette, 35mm, f/5.6, 3:2.
+```
+
+## African pygmy hedgehog, 3 files
+
+`cost` is plainly the European hedgehog. `handling` and `feeding` lean the same
+way. Accuracy block for all three: cream quills each banded with a single brown
+stripe, a white face and white belly fur, a small dark button eye, a pink-brown
+pointed snout, and a body small enough to sit in two cupped hands. Never the
+European hedgehog's dark brown spines, dark grey face and heavy build.
+
+```
+hedgehog-cost.jpg
+Photorealistic photograph of an African pygmy hedgehog standing beside a small
+ceramic food bowl on fleece bedding inside a plastic-bin style enclosure, whole
+animal in frame, front three-quarter view, quills relaxed. Cream quills banded
+with brown, white face and cheeks, pink-brown snout. Soft indoor light, warm
+neutral palette, camera at floor level, 85mm, f/2.8, 3:2.
+
+hedgehog-handling.jpg
+Photorealistic photograph of an African pygmy hedgehog curled loosely in a pair
+of cupped human hands, face and snout visible rather than fully balled, quills
+relaxed. Cream quills banded with brown, white face, dark button eyes, pink-brown
+snout. Bright soft window light indoors, warm neutral palette, shallow depth of
+field on the face, 85mm, f/2.8, 3:2.
+
+hedgehog-feeding.jpg
+Photorealistic photograph of an African pygmy hedgehog eating from a shallow
+dish of dry kibble with a single mealworm on top, head down at the dish, body in
+three-quarter view. Cream quills banded with brown, white face, pink-brown
+snout. Warm low light suited to a nocturnal animal, amber and cream palette,
+camera at dish level, 100mm macro, f/4, 3:2.
+```
+
+## Corydoras catfish, 3 files
+
+`health-issues` is a wide-mouthed long-whiskered catfish, closest to a channel
+catfish. `handling` is a shoal of elongated forked-tail fish with a large
+catfish above them. `feeding` is the right species but ships at 512px wide, so
+it needs reshooting for size alone. Accuracy block for all three: a stout
+arch-backed body no longer than a thumb, two overlapping rows of bony armour
+plates along each flank instead of scales, a blunt downturned snout, three pairs
+of SHORT barbels at the mouth, a tall triangular dorsal fin, a small adipose
+fin, a forked tail. Never long trailing whiskers, never a wide flat head, never
+a scaled torpedo body.
+
+```
+corydoras-catfish-health-issues.jpg
+Photorealistic underwater photograph of a single healthy corydoras resting on
+fine pale sand, front three-quarter view, barbels spread and intact, dorsal fin
+raised and undamaged, whole fish in frame. Stout arched armour-plated body,
+blunt downturned snout, three pairs of short barbels. Bright clean aquarium
+light, pale sand and green palette, camera at substrate level, 100mm macro,
+f/5.6, 3:2.
+
+corydoras-catfish-handling.jpg
+Photorealistic underwater photograph of a corydoras being guided into a soft
+green aquarium net held still in the water, the fish calm and level, whole body
+and net rim in frame. Stout arched armour-plated body, blunt downturned snout,
+three pairs of short barbels, tall triangular dorsal fin. Clean even aquarium
+light, green and sand palette, 60mm macro, f/5.6, 3:2. No hands in the water.
+
+corydoras-catfish-feeding.jpg
+Photorealistic underwater photograph of five or six corydoras working a bed of
+fine pale sand for a sinking wafer, several with snouts buried and barbels
+spread, sand lifting slightly around them. Stout arch-backed armour-plated
+bodies, blunt downturned snouts, short barbels. Bright clean aquarium light,
+shallow depth of field on the nearest fish, pale sand and green palette, 100mm
+macro, f/5.6, 3:2.
+```
+
+## Angelfish and neon tetra, 1 file each
+
+From the second article batch. Both species' other files are correct and must
+not be regenerated.
+
+```
+angelfish-feeding.jpg
+Photorealistic underwater photograph of a freshwater angelfish rising to take a
+sinking flake just under the water surface, full side view, whole fish in frame
+including the fin tips. Tall disc-shaped body flattened side to side and taller
+than it is long, a very tall triangular dorsal fin and matching anal fin
+sweeping back to fine points, a pair of long thread-like ventral filaments
+trailing below, silver body crossed by four vertical black bars including one
+through the eye. A few flakes drifting down through the water, planted tank soft
+behind. Bright clean aquarium light from above, silver and green palette, camera
+level with the fish, 60mm macro, f/5.6, 3:2.
+```
+Check: tall thin disc with trailing filaments. Not a rounded short-finned
+cichlid, which is what the current frame shows, and not a discus.
+
+```
+neon-tetra-health-issues.jpg
+Photorealistic underwater close-up of a single healthy neon tetra in profile
+against a dark planted background, whole fish in frame, fins held open and
+undamaged. An iridescent blue-green stripe running from the eye back to the
+adipose fin along the upper half, and a red stripe that begins level with the
+middle of the body and runs back to the tail base only, leaving the front half
+of the belly plain silver-white. Small deep body, forked transparent tail. Soft
+side light against near-black, blue and red against deep green, 100mm macro,
+f/5.6, 3:2.
+```
+Check: the red must start mid-body, not at the gill. A red stripe running the
+full length from head to tail is a cardinal tetra, which is what the current
+frame shows and which the site covers separately.
+
+## Corn snake, 1 file
+
+```
+corn-snake-cost.jpg
+Photorealistic photograph of a corn snake on aspen bedding in a glass vivarium,
+body in a loose S with the head raised toward the camera, a cork hide and a
+shallow water bowl behind it. Orange-red ground colour carrying large dark-edged
+saddles along the back that stop at the flanks and do not wrap the body, smaller
+matching blotches low on the sides, a spear-point marking on the crown between
+the eyes, smooth unkeeled scales, round pupil. Warm keeper-room light, orange
+and pale wood palette, camera at snake level, 85mm, f/4, 3:2.
+```
+Check: saddles, not rings. If the pattern wraps all the way around the body in
+bands it is a milk snake or a kingsnake, which is what the current frame shows
+and which both have their own art elsewhere in this folder.
+
+## Mongolian gerbil, 3 files
+
+`cost` and `health-issues` show rodents with bold dark dorsal stripes, closer to
+an African striped mouse or a chipmunk. `tank-setup` has a grey animal with a
+long naked tail, which is a mouse. Accuracy block for all three: sandy-agouti
+back with NO stripes of any kind, clean white belly, large dark eye, medium
+rounded ears, and a long tail furred along its whole length ending in a dark
+tuft. Never a naked mouse tail, never a striped back.
+
+```
+gerbil-cost.jpg
+Photorealistic photograph of two Mongolian gerbils sitting upright side by side
+on a pale wooden surface, both facing the camera, whole animals in frame
+including their tails. Plain sandy-agouti fur with no stripes, clean white
+bellies, large black eyes, long tails furred to a dark tuft at the tip. Bright
+soft daylight, warm sand and pale wood palette, camera at their eye level, 85mm,
+f/4, 3:2.
+
+gerbil-health-issues.jpg
+Photorealistic photograph of a Mongolian gerbil being examined on a clean
+veterinary table, held gently in one gloved hand with the body in profile and
+the tail visible. Plain sandy-agouti back with no stripe, white belly, bright
+clear eye, furred tufted tail. Cool clinical light, white and sand palette,
+shallow depth of field on the animal's head, 100mm macro, f/4, 3:2.
+
+gerbil-tank-setup.jpg
+Photorealistic photograph of a glass tank set up for gerbils, seen from the
+front, with six inches of deep paper and aspen bedding dug into open burrows, a
+sand bath dish, a water bottle and a solid-surface wheel, and one gerbil out on
+the surface near a chew block. The gerbil has plain sandy-agouti fur, a white
+belly and a fully furred tail with a dark tuft. Bright even room light, sand and
+pale wood palette, 35mm, f/5.6, 3:2.
+```
+Check on all three: the tail. A gerbil's tail is furred end to end and finishes
+in a tuft; a bare pink tail makes the animal a mouse or a rat, which is the
+current fault in `tank-setup`. And no dorsal stripes anywhere.
+
+## Reptile article frames, 3 files
+
+From the fifth article batch. Only one is a species error; the other two are a
+garbled-text defect and a frame that does not show what its article is about.
+Every other file in the blue-tongue skink, crested gecko, tokay, uromastyx,
+leopard gecko, veiled chameleon, ackie and savannah monitor sets was checked and
+is correct.
+
+```
+blue-tongue-skink-handling.jpg
+Photorealistic photograph of an adult blue-tongue skink supported on two flat
+open hands, body horizontal and fully supported along its length, head toward
+the camera. Heavy sausage-shaped body, a broad triangular head clearly wider
+than the neck, very short stubby legs with short toes, smooth glossy scales in
+banded brown and cream. Bright soft indoor light, warm neutral palette, 85mm,
+f/4, 3:2.
+```
+Check: short stubby legs and a heavy body. The current frame has slender limbs
+with long spidery toes and a small body, which is a different skink entirely.
+Compare against `blue-tongue-skink-cost.jpg`, which has the proportions right.
+
+```
+crested-gecko-health-issues.jpg
+Photorealistic photograph of a crested gecko standing on the flat pan of a small
+digital kitchen scale, body in profile, whole animal in frame. Eyelash-like
+crests above each eye running back along the spine, soft skin with no spines on
+the flanks, large lidless eye, semi-prehensile tail. The scale is a plain
+unbranded black slab with a clean blank display showing no text or digits at
+all. Soft even light on a pale worktop, warm neutral palette, 100mm macro, f/5.6,
+3:2.
+```
+Check: no lettering anywhere. The current frame carries invented button labels
+and a nonsense readout, which is the loudest possible tell on a page about
+weighing your animal. A blank display is better than a wrong one.
+
+**tokay-gecko-handling.jpg: prompt withdrawn 2026-09-12, do not regenerate.**
+The existing frame, a tokay gaping on a branch with no hand in it, is correct
+and should stay. The article is titled "Should You Handle a Tokay Gecko?
+Probably Not Often" and says a hand entering the enclosure draws gaping,
+barking, lunging and biting, and that even a settled captive-bred animal is a
+display species rather than a handling pet. A calm tokay sitting on an open palm
+would contradict the page it illustrates. The defensive gape is the article.
+
+This one is worth remembering as a rule: on a handling guide, check what the
+guide actually recommends before calling a hands-off frame a mismatch. Chinchilla
+on wire mesh was the same class of error in the opposite direction.
+

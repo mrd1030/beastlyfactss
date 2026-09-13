@@ -152,7 +152,7 @@ const ANIMAL_IMAGES = {
 // about an animal gets no photo (falls back to the hero image) unless it has
 // its own explicit id entry here, instead of silently inheriting whatever
 // photo the first fact for that animal used.
-const FACT_IMAGES = {
+export const FACT_IMAGES = {
   247: '/assets/facts/penguin-2.jpg',
   248: '/assets/facts/penguin-3.jpg',
   249: '/assets/facts/crocodile.jpg',
@@ -321,6 +321,16 @@ const FACT_IMAGES = {
   294: '/assets/facts/pygmy-marmoset.jpg',
   295: '/assets/facts/barreleye-fish.jpg',
   296: '/assets/facts/basilisk-lizard.jpg',
+  315: '/assets/facts/orca.jpg',
+  316: '/assets/facts/pembroke-welsh-corgi.jpg',
+  317: '/assets/facts/short-beaked-echidna.jpg',
+  318: '/assets/facts/atlantic-puffin.jpg',
+  319: '/assets/facts/king-cobra.jpg',
+  320: '/assets/facts/satin-bowerbird.jpg',
+  321: '/assets/facts/siamese-cat.jpg',
+  322: '/assets/facts/aardvark.jpg',
+  323: '/assets/facts/dumbo-octopus.jpg',
+  324: '/assets/facts/horned-lizard.jpg',
 };
 
 // Site-relative path for <img src>, or null if this fact has no dedicated photo yet.
