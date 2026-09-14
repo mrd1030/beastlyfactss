@@ -78,7 +78,7 @@ export const smallMammalEncyclopedia = [
       habitat: "Arid steppe, sandy grassland and semi-desert, in extensive burrow systems",
       adultSize: "4-5 inches (10-13 cm) body, plus a furred tail of similar length; 2-4 oz",
       wildDiet: "Seeds, grasses, roots, and insects",
-      wildLifespan: "2-3 years",
+      wildLifespan: "Months rather than years in the wild, where Animal Diversity Web puts the average near 3 to 4; 2 to 3 years is the normal captive lifespan",
       conservation: "Least Concern (IUCN)",
       history: "Alphonse Milne-Edwards named the species Gerbillus unguiculatus in 1867, working from specimens that Father Armand David had sent to Paris from northern China the year before. The captive population rests on a much narrower base: 20 pairs of wild-caught gerbils went to Japan in 1935, and 11 of their descendants reached Victor Schwentker's Tumblebrook Farm in Brant Lake, New York, in 1954. Schwentker had imported them as research animals and then noticed how well they took to a cage. They were selling as pets across the United States by the late 1950s and arrived in Britain in 1964.",
     },

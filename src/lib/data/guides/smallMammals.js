@@ -452,96 +452,89 @@ Tumors, including mammary tumors, become more common as mice age, similar to rat
     image: "/assets/guides/gerbil.jpg",
     tagline: "The tidy desert burrower that wants deep bedding, not a bare cage floor!",
     funFact: "Gerbils came out of the Mongolian desert with a water-conserving physiology that makes them one of the least smelly pets you can keep. They produce only a few drops of highly concentrated urine a day, so a well-kept gerbil tank barely registers compared with a mouse or a rat.",
-    // Item labels are written to match `covers` strings in affiliateProducts.js so the
-    // Cost Builder resolves each line to a real product, and the low/high figures are
-    // that product's vetted price range rather than an estimate. See
-    // scripts/check-cost-coverage.mjs. Lines with no matching product are services.
-    // Priced for a pair, which is the minimum this species should be kept in.
-    costs: {
-      setup: [
-        { item: "20-gallon long aquarium (terrestrial setup)", low: 35, high: 60 },
-        { item: "Secure mesh lid", low: 35, high: 42 },
-        { item: "Solid exercise wheel (10-12 in)", low: 38, high: 42 },
-        { item: "Hideouts and tunnels", low: 10, high: 30 },
-        { item: "Toys, tunnels, and dig boxes", low: 40, high: 58 },
-        { item: "Water bottle and food dishes", low: 3, high: 9 },
-        { item: "Digital thermometer and hygrometer", low: 11, high: 19 },
-      ],
-      annual: [
-        { item: "Bedding", low: 18, high: 30 },
-        { item: "Hamster pellets or lab blocks", low: 9, high: 14 },
-        { item: "Grass hay (unlimited)", low: 18, high: 26 },
-        { item: "Sand bath (chinchilla sand)", low: 10, high: 14 },
-        { item: "Chew toys (smaller, softer)", low: 10, high: 18 },
-        { item: "Exotic vet check", low: 60, high: 130 },
-      ],
-    },
-    sections: {
-      housing: `Depth matters more than floor plan. Gerbils are burrowing animals and the single biggest improvement you can make is eight to twelve inches of substrate they can tunnel through. A 20 gallon long tank with a mesh lid suits them better than most wire cages, because a wire cage cannot hold deep bedding and gerbils kick it out.
-
-Mix paper-based bedding with hay or shredded paper so the tunnels hold their shape. Pure fluffy bedding collapses; a mix binds. Once a pair has built a burrow system they will maintain and remodel it for months, and that is the behavior the species is really about.
-
-Bar spacing on any wire section must be half an inch or less. Gerbils are small, determined and good climbers, and a mesh lid needs to be secured rather than rested on top.
-
-Keep them at 65 to 75 degrees F, out of direct sun. A glass tank in a sunny window becomes an oven very quickly.
-
-Keep the humidity low, which is the one environmental number that really matters for this species. Merck advises staying below 40 percent, because above 50 percent gerbils develop nasal dermatitis, the sore-nose condition described in the health section. A gerbil setup in a damp room or a poorly ventilated tank is asking for it.
-
-Skip the plastic. Tubes, wheels and hides in plastic get chewed through fast, and swallowed fragments cause impactions.`,
-      diet: `Feed a pelleted diet labeled for gerbils specifically, at 18 to 20 percent protein and roughly 5 to 8 grams per gerbil per day. Merck is unusually direct about this: gerbils fed standard rat or mouse diets develop insidious periodontal disease, obesity, reduced glucose tolerance and diabetic changes in the pancreas, and its stated rule is to always feed diets labeled for the species.
-
-Sunflower seed is the specific thing to keep out. It is high in fat and low in calcium, gerbils will pick it out first given the chance, and on diets above about 4 percent fat they develop raised blood cholesterol, more so in males. Seed mixes are a treat rather than a staple.
-
-Provide hay alongside it, both to eat and to build with.
-
-Fresh food is a small supplement rather than a food group: a little broccoli, carrot, cucumber, apple or dandelion a few times a week is plenty. Too much fresh food causes diarrhea in a species adapted to a dry diet.
-
-Water from a bottle, checked daily. Gerbils drink very little, which makes it easy to miss a bottle that has stopped flowing.
-
-Avoid citrus, onion, garlic, rhubarb, raw beans and anything sugary or sticky.`,
-      enrichment: `Keep gerbils in same-sex pairs or small groups. A single gerbil is an unhappy gerbil, and unlike hamsters they are genuinely social.
-
-The catch is that introductions are hard. Adult gerbils that do not already know each other will often fight, sometimes seriously, and a bonded pair can also fall out later in what keepers call declanning. Buy littermates, keep an eye on them, and if a pair does break down they usually cannot be put back together. The split-cage method is the standard way to introduce unfamiliar animals, over one to two weeks.
-
-Give them things to destroy: cardboard tubes, plain toilet rolls, seagrass, untreated hardwood, hay. Gerbils gnaw constantly and a bare tank leads to bar chewing and repetitive digging in one corner.
-
-A sand bath, not a dust bath, keeps the coat in order. Use chinchilla sand rather than the finer dust, and offer it a couple of times a week rather than leaving it in permanently.
-
-Handle low over a surface, scooped in cupped hands. If you must steady a gerbil by the tail, take it at the base only. Merck is explicit that a gerbil lifted by the tail tip degloves: the skin slips off, leaving exposed tissue that goes necrotic and sloughs, and the treatment is prompt amputation of the bare section.`,
-      health: `Nasal dermatitis, called sore nose or facial eczema, is the condition Merck describes as common in pet gerbils. It starts as redness around the nostrils and can progress to hair loss and a spreading moist dermatitis, and if it reaches the sinuses it causes appetite loss, weight loss and can kill. The cause is not an infection to begin with: it is porphyrin secretion from the Harderian gland irritating the skin, driven by humidity above 50 percent, overcrowding, or being unable to sand bathe. Fix the environment as well as treating the skin.
-
-Tyzzer's disease is the one that kills fastest. Merck calls it the most frequently described fatal infectious disease of gerbils. It spreads by the fecal-oral route from contaminated bedding, and it presents as sudden death or a very short illness with diarrhea. A hunched, lethargic gerbil with diarrhea needs a vet the same day.
-
-Aural cholesteatoma is the one nobody warns you about. Merck records it in 50 percent of gerbils over two years old: a growth in the ear canal that pushes the eardrum inward, with head tilt as the visible sign, leading to bone damage and inner ear destruction.
-
-Tumors are common with age, at a 25 to 40 percent incidence past two or three years. Scent gland carcinomas in males and ovarian tumors in females account for around 80 percent of them. The scent gland sits as a bare orange-tan oval on the belly, so any lump, ulceration or bleeding there is worth checking early, since marking gland tumors can spread.
-
-Seizures occur in some lines and can look alarming. They typically pass in a few minutes and leave no lasting effects, and anticonvulsants are not usually needed. Merck notes that frequency and severity often decrease with age, but is careful to add that a subset of adults instead get progressively worse, so a gerbil whose seizures are becoming more frequent is not simply growing out of it. Handling gently and often in the first weeks of life suppresses them in predisposed animals.
-
-Overgrown teeth and respiratory infections round out the usual list. Dusty bedding and poor ventilation are behind most respiratory problems.
-
-Because gerbils drink so little, dehydration is easy to miss. Check skin tenting and check the bottle daily.`,
-      checklist: [
-        "20 gallon long tank or deep-base cage for a pair",
-        "At least two gerbils, ideally littermates",
-        "8 to 12 inches of bedding for burrowing",
-        "Secure mesh lid",
-        "Solid 8 in exercise wheel",
-        "Pelleted gerbil diet, 18 to 20 percent protein",
-        "Hay for eating and tunnel building",
-        "Chinchilla sand for bathing",
-        "Humidity kept below 40 percent",
-        "Cardboard and untreated hardwood to chew",
-        "Exotic veterinarian experienced with gerbils"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats.
+    //
+    // This species reversed the usual pattern. The old hub was the only page
+    // citing Merck, and on protein, fat, portion, humidity, lifespan and tail
+    // degloving it was right while the deep dives had drifted. Those figures
+    // were moved into the deep dives first, verified against Merck, and the
+    // rows below copy them from there. Aural cholesteatoma and seizures were
+    // hub-only too and are now sections of the health guide.
+    // Reconciled 2026-09-14 for batch H (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Never just one", value: "Gerbils are social and should not be kept alone, so you are buying a same-sex pair or sibling group rather than an animal. Introductions between unfamiliar adults frequently fail, which is the hardest part of keeping them.", source: "gerbil-handling-guide" },
+        { label: "Enclosure", value: "A glass aquarium with a secure wire-mesh lid, not a wire cage, since wire construction can't hold the depth of bedding this species needs. A 20-gallon long works as a minimum for a pair, and a 40-gallon breeder, roughly 36 by 18 by 16 inches, is genuinely the better target.", source: "gerbil-tank-setup-guide" },
+        { label: "Digging depth", value: "6 to 10 inches at minimum, and some welfare-focused sources recommend even more, so a pair can build real tunnel systems instead of surface burrows. It is the most commonly under-delivered part of gerbil care.", source: "gerbil-tank-setup-guide" },
+        { label: "Substrate mix", value: "Aspen shavings and paper-based bedding with some hay worked in holds tunnel shape well. Avoid cedar entirely, skip aromatic non-kiln-dried pine, and avoid scented bedding and fluffy cotton-style nesting material.", source: "gerbil-tank-setup-guide" },
+        { label: "Humidity", value: "Below 40%, with good ventilation. Above 50% is where gerbils start developing nasal dermatitis, the sore-nose condition, and below 40% is the level that prevents it.", source: "gerbil-tank-setup-guide" },
+        { label: "Temperature", value: "Normal room temperature, 65 to 75°F, suits this species well without any special heating or cooling.", source: "gerbil-tank-setup-guide" },
+        { label: "Wheel", value: "A solid-surface exercise wheel, 8 inches minimum, 10 to 12 inches is better. Wire-rung wheels are a real injury risk.", source: "gerbil-tank-setup-guide" },
+        { label: "Cleaning", value: "Keep some old, familiar-smelling nesting material aside during cleanouts and put it back afterward. Gerbils are strongly scent-driven, and a completely fresh-smelling environment after a full clean can cause temporary stress or even conflict between cage mates.", source: "gerbil-tank-setup-guide" },
+        { label: "Staple diet", value: "A uniform pelleted diet or lab block, since a gerbil can't pick favorites out of it. Aim for 18 to 20% protein and keep fat at or under about 4%: past that, gerbils develop raised blood cholesterol, more pronounced in males.", source: "gerbil-feeding-guide" },
+        { label: "Reading the bag", value: "The American Gerbil Society's 14% protein is a floor, not a target, and many products labeled simply \"Hamster and Gerbil Food\" miss even that, since they're really formulated for hamsters. Check the guaranteed analysis panel.", source: "gerbil-feeding-guide" },
+        { label: "Portion", value: "Roughly 5 to 8 grams, about a tablespoon, of pellets per adult gerbil per day, fed once daily. Fresh vegetables every other day or a few times weekly, and fruit as an occasional weekly indulgence.", source: "gerbil-feeding-guide" },
+        { label: "Seed mixes", value: "Gerbils selectively eat the fatty seeds, sunflower especially, and leave the balanced components behind, so a bag that looks nutritionally complete on the label doesn't get eaten that way.", source: "gerbil-feeding-guide" },
+        { label: "Foods to avoid", value: "Grapes and raisins, rhubarb, chocolate, onion and garlic, avocado, raw potato, raw kidney beans, and apple seeds, plus salty, sugary, or processed human food and dairy. Watery lettuce can cause diarrhea.", source: "gerbil-feeding-guide" },
+        { label: "Sand bath", value: "Chinchilla sand rather than the finer dust, offered a couple of times a week rather than left in permanently. It is what keeps the coat in order.", source: "gerbil-enrichment-guide" },
+        { label: "Things to destroy", value: "Cardboard tubes, plain toilet rolls, seagrass, untreated hardwood, hay. Gerbils gnaw constantly, and a bare tank leads to bar chewing and repetitive digging in one corner.", source: "gerbil-enrichment-guide" },
+        { label: "Never by the tail", value: "Grasping pressure causes tail slip, where the skin and fur come away and the whole tail can be lost. Scoop by the body instead, low over a surface.", source: "gerbil-handling-guide" },
+        { label: "If it happens", value: "The skin slips away and the tissue underneath, now exposed, dies. Merck recommends amputating the bare portion of the tail as soon as possible to prevent infection setting in, so this is a vet visit rather than something to watch.", source: "gerbil-health-issues-guide" },
+        { label: "Diarrhea", value: "Tyzzer's disease is the most common infectious disease in this species and can progress to death quickly. Ruffled fur, lethargy, a hunched posture, poor appetite and diarrhea: see a vet immediately.", source: "gerbil-health-issues-guide" },
+        { label: "Head tilt", value: "Aural cholesteatoma, which Merck records in 50% of gerbils over two years old: a growth in the ear canal that pushes the eardrum inward, eventually causing bone damage and inner ear destruction. Head tilt is the visible sign.", source: "gerbil-health-issues-guide" },
+        { label: "Lumps on the belly", value: "Tumors run at a 25 to 40% incidence past two or three years, and scent gland carcinomas in males plus ovarian tumors in females account for roughly 80% of them. The gland sits as a bare orange-tan oval on the midline.", source: "gerbil-health-issues-guide" },
+        { label: "Seizures", value: "They occur in some lines, typically pass in a few minutes, and leave no lasting effects. Frequency and severity often decrease with age, though a subset of adults instead get progressively worse, so a gerbil whose seizures are becoming more frequent is not simply growing out of it.", source: "gerbil-health-issues-guide" },
+        { label: "Legal check", value: "Worth settling before you buy: at least one state bans this species outright, and the rules are written in a way that catches it by absence rather than by name.", source: "gerbil-legal-guide" },
+        { label: "Budget", value: "$5 to $50 each and you need at least two, roughly $150 to $350 to set up a pair, and about $10 to $20 a month once the annual supply costs are spread out.", source: "gerbil-cost-guide" },
+        { label: "Lifespan", value: "2 to 3 years is the normal lifespan the Merck Veterinary Manual gives for this species.", source: "gerbil-cost-guide" },
+        { label: "Adult size", value: "4 to 5 inches (10 to 13 cm) body, plus a furred tail of similar length; 2 to 4 oz." },
+        { label: "Getting one to the vet", value: "A hard-sided carrier with familiar bedding inside, the cage mate travelling along wherever the clinic allows it, and no long pre-surgery fast: the overnight fast a dog gets before anesthesia is wrong for a small mammal this size.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
+    emergencyCard: {
+      source: "gerbil-health-issues-guide",
+      callNow: [
+        "Diarrhea, with ruffled fur, lethargy, a hunched posture and poor appetite",
+        "A head tilt, which points at aural cholesteatoma",
+        "A lump, sore, or ulcer along the midline of the abdomen",
+        "A tail stripped of skin, which needs the bare portion amputated promptly",
+        "Seizures that are becoming more frequent rather than less",
+      ],
+      vetLine: "Diarrhea in a gerbil is an emergency, see a vet immediately, since Tyzzer's disease can progress to death quickly if untreated.",
+    },
+    routes: [
+      { slug: "gerbil-cost-guide", line: "$5 to $50 a gerbil and you need two, the $150 to $350 pair setup, and why the monthly figure is smaller than it looks." },
+      { slug: "gerbil-tank-setup-guide", line: "Why it has to be glass, the 6-to-10-inch digging depth most starter kits can't hold, and the humidity number that prevents sore nose." },
+      { slug: "gerbil-feeding-guide", line: "The 18 to 20% protein target, the 4% fat ceiling, and why a seed mix that looks complete on the label doesn't get eaten that way." },
+      { slug: "gerbil-handling-guide", line: "Same-sex pairs, day-active hours, and the one rule that matters most: never by the tail." },
+      { slug: "gerbil-health-issues-guide", line: "Tyzzer's disease as a same-day emergency, cholesteatoma at 50% past two years, tumors, seizures, and tail degloving." },
+      { slug: "gerbil-enrichment-guide", line: "The burrow study, the sand bath, and a priority list you can shop from." },
+      { slug: "gerbil-legal-guide", line: "Where a gerbil is banned, and the exception-by-absence trap that catches it." },
+      { slug: "gerbil-vs-hamster-guide", line: "Company or solitude, awake by day or strictly at night, and why the bag labelled for both is usually a hamster bag." },
+      { slug: "gerbil-vs-guinea-pig-guide", line: "Ten times the body weight, double the lifespan, and a daily vitamin C job a gerbil owner doesn't have." },
+    ],
+    buyList: [
+      "20-gallon long glass tank for a pair, 40-gallon breeder preferred",
+      "Secure wire-mesh lid",
+      "Aspen shavings and paper-based bedding, enough for 6 to 10 inches",
+      "Hay, worked into the substrate to hold tunnel shape",
+      "Solid exercise wheel, 8 inches minimum",
+      "Chinchilla sand and a sand bath dish",
+      "Hideouts and rigid tunnels",
+      "Untreated wood and cardboard to gnaw",
+      "Water bottle and food dish",
+      "Digital thermometer and hygrometer",
+      "Pelleted gerbil diet at 18 to 20% protein",
+    ],
     faqs: [
-      { q: "Do gerbils smell?", a: "Barely, and it is the main reason people pick them. Gerbils evolved in the Mongolian desert with a physiology built around conserving water, so they produce only a few drops of very concentrated urine a day. A tank with deep bedding, spot-cleaned regularly and fully changed every few weeks, stays far fresher than the equivalent setup for a mouse or a rat." },
-      { q: "How deep should gerbil bedding be?", a: "Eight to twelve inches if you can manage it. Gerbils are burrowers and a shallow tray gives them nothing to do, which shows up as bar chewing and digging obsessively in one corner. Mix paper bedding with hay or shredded paper so the tunnels hold rather than collapse. A deep setup is the single biggest quality of life change you can make for this species." },
-      { q: "Can gerbils live alone?", a: "They should not. Gerbils are social and a lone animal does poorly. The complication is that they are also territorial: unfamiliar adults often fight, and even an established pair can suddenly fall out, which keepers call declanning. Buy littermates where possible, introduce unfamiliar animals only with the split-cage method over one to two weeks, and separate permanently if a pair breaks down." },
-      { q: "Why does my gerbil have a bald orange patch on its belly?", a: "That is the scent gland, and it is normal on both sexes, more prominent in males. Gerbils rub it on objects to mark territory. It is worth checking now and then, because scent gland tumors are one of the more common problems in older gerbils and are usually treatable when found early. Any lump, ulcer or bleeding there needs a vet." },
-      { q: "Why is my gerbil having seizures?", a: "Some gerbil lines carry an inherited tendency to brief seizures, usually set off by stress, a sudden noise, or rough handling, and often in younger animals that grow out of it. An episode typically passes in under a minute. Keep the animal somewhere quiet, keep handling sessions short and gentle, and see a vet if seizures are frequent, long, or start in an adult that never had them before." },
-      { q: "Should I get a gerbil or a mouse?", a: "Odor is the most practical difference. Gerbils evolved in the Mongolian desert to conserve water and produce only a few drops of concentrated urine a day, making them one of the least smelly small pets you can keep. [Mice](/guides/mouse/), especially males, are near the opposite end of the spectrum: male mouse urine contains trimethylamine, a compound that gives it a distinctly strong smell, so a mouse cage needs more frequent cleaning than a gerbil tank of the same size. Gerbils are also generally the calmer, less easily startled of the two once tame, while mice are smaller, faster, and quicker to bolt. If odor and steadier handling matter most, lean gerbil; if you specifically want the smallest, quickest small mammal on this site, a mouse is that animal." },
+      { q: "What is the best staple food for a gerbil?", a: "The best base is a uniform pelleted diet or lab block made for gerbils, since a gerbil can't pick favorites out of it. Aim for 18 to 20% protein and keep fat at or under about 4%. The American Gerbil Society's 14% is a floor rather than a target, and many bags labeled 'Hamster and Gerbil Food' miss even that." },
+      { q: "How deep should gerbil bedding be?", a: "6 to 10 inches of digging depth at minimum, and some welfare-focused sources go further, so a pair can build real tunnels instead of surface burrows. It is the most commonly under-delivered part of gerbil care." },
+      { q: "Can you pick a gerbil up by the tail?", a: "Never. Grasping pressure causes tail slip, where the skin and fur come away and the whole tail can be lost. That one needs a vet. Scoop by the body." },
     ],
   },
   {

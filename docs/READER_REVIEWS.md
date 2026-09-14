@@ -9368,3 +9368,122 @@ in-body links.
 - The hub's "Females should not be paired with males until they reach at
   least 40 grams" had no deep dive behind it and no page follows it up.
   Retired rather than carried as an unsourced row, and filed as a gap.
+
+## Gerbil (2026-09-14, batch H, single pass, before the router hub)
+
+Extractor set of eleven pages, the largest yet (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment, legal, and the
+vs guinea pig and vs hamster comparisons). One Opus 5 agent. The reader
+read the legacy care sheet hub; the router hub was built from its
+findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A- | Densest page in the set and the only one citing Merck. |
+| Encyclopedia | B+ | Short, genuinely natural history, no care padding. |
+| Cost | C+ | The monthly figure does not match its own annual table. |
+| Handling | C | Thin, mostly "social, day-active, no tail." |
+| Health issues | B- | Good triage lines, shorter and softer than the hub's health section. |
+| Tank setup | A- | The most buildable page here. |
+| Feeding | B | Specific, sourced, and it contradicts the hub. |
+| Enrichment | A | Best page in the set. |
+| Legal | A | Tells me the exception-by-absence trap. |
+| vs Guinea pig | C- | Its gerbil column is unreliable. |
+| vs Hamster | C | Useful on schedule, wrong on diet. |
+
+Set grade: B-. "Excellent on the two things that matter most, burrow
+structure and law, undermined by numbers that disagree across pages I am
+supposed to trust equally."
+
+### The pattern reversed
+
+This is the first species in four batches where the hub was right and the
+deep dives were wrong, and it matters for the process. The hub was the
+only page in the set citing the Merck Veterinary Manual, and it graded
+A-, the highest hub grade any reader has given. A router rebuild that
+assumed the deep dive wins by default would have deleted six correct,
+vet-sourced figures and carried the drifted ones forward.
+
+Opened Merck's gerbil page. Every hub figure is verbatim:
+
+- "Gerbils thrive on commercially available pelleted rodent diets with
+  18-20% protein."
+- "Pelleted chow (5-8 g/day) has been recommended."
+- "On diets containing > 4% fat", gerbils develop elevated blood
+  cholesterol.
+- Nasal dermatitis develops above 50% humidity; prevention requires
+  "lowering environmental humidity below 40%."
+- "The normal lifespan of a gerbil is 2-3 years."
+- On tail degloving: "amputation of the bare portion of the tail as soon
+  as possible is recommended to prevent the development of infection."
+
+### Numbers decided, both sides and the source that won
+
+- Protein. Feeding guide "Aim for roughly 14 to 16%" against the hub's 18
+  to 20%. Merck, a veterinary manual, outranks the American Gerbil
+  Society, a husbandry reference, and the two do not actually conflict:
+  AGS gives 14% as a minimum and the feeding guide had read a floor as a
+  target. Now 18 to 20%, with the 14% kept as the floor many
+  hamster-labelled bags miss.
+- Fat. Feeding guide "low fat around 4 to 8%" against Merck's ">4%"
+  causing raised cholesterol. The reader put it best: "The hub's danger
+  line is the feeding guide's target." Now at or under about 4%.
+- Portion. Feeding guide 5 to 10 g against Merck's 5 to 8 g/day.
+- Humidity. Setup and health guides "under about 50%" against the hub's
+  "below 40 percent". Merck gives both numbers with different meanings:
+  50% is where the disease appears, 40% is what prevents it. Both pages
+  now say so.
+- Lifespan. Cost guide "2 to 5 years, commonly landing around 3 to 4"
+  against the two comparison pages' flat "2 to 3 years". Merck says 2 to
+  3, so the pages the reader graded C- and C were right and the cost
+  guide was not.
+- Tail slip, three positions across three pages. Handling: "genuinely
+  warrants a vet visit." Health: "The stump usually heals on its own."
+  Hub: "prompt amputation of the bare section." Merck backs the hub, and
+  the health guide's version was the dangerous one.
+
+### Hub-only material moved into the health guide
+
+Retiring this hub would have deleted clinically useful Merck content no
+deep dive carried, so it moved first and the rows copy it from there:
+aural cholesteatoma, which Merck records in 50% of gerbils over two years
+old with head tilt as the visible sign, seizures and how to tell the
+ones that resolve with age from the ones that do not, and the 25 to 40%
+tumor incidence past two or three years with scent gland and ovarian
+tumors at roughly 80% of the total. All three are now sections of the
+health guide.
+
+### Other fixes
+
+- The cost guide's "$25 to $40 a month" against its own annual table,
+  which sums to $125 to $232 a year including the vet check, or $10 to
+  $20 a month. The reader caught it; the table was right.
+- The vs guinea pig table's "10-gallon+ tank" against the setup guide's
+  20-gallon long minimum for a pair.
+- The vs hamster guide's "a quality pelleted food formulated for both
+  works for either species", which the feeding guide and AGS both
+  contradict. It now has a short section of its own saying why the bag
+  labelled for both is usually a hamster bag.
+- The feeding guide listed citrus as outright toxic while the RSPCA, one
+  of its own three cited sources, lists oranges among the fruits that can
+  supplement a pelleted diet. Citrus moved from the toxic list to the
+  ration-it list.
+- Encyclopedia wildLifespan read "2-3 years", a captive figure in the
+  wild field, the fifth instance of this defect in two batches. Animal
+  Diversity Web gives an average wild lifespan of 3 to 4 months, which is
+  a far more striking number than the one it replaced.
+- Six of the reader's eleven recommended links.
+
+### Open
+
+- The seven things not covered anywhere, in docs/READER_LOG.md: sexing
+  and confirming a same-sex pair, choosing animals at purchase, the
+  first-week settling routine, declanning warning signs and how to split
+  a pair safely, a full cleaning schedule, heat and cold thresholds, and
+  playpen safety.
+- The declanning gap is the sharpest. Both the hub and the encyclopedia
+  call failed introductions the hardest part of keeping gerbils, and no
+  page says what a pair breaking down looks like or what to do about it.
+- The shared small mammal heat stress guide names guinea pigs, rabbits,
+  chinchillas and hamsters and not gerbils, which is a one-row fix in a
+  shared guide rather than species work.

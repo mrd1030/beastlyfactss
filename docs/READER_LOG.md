@@ -4081,3 +4081,87 @@ Checked against the Health and More list. Emergency and cold snaps, shedding mec
 - First aid and wound care for a fresh tail drop.
 - A scale, and target weights by age, despite weighing being called the best early warning.
 - Cleanup crew cost for the bioactive setup both the hub and tank setup recommend.
+---
+
+# Gerbil: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch H. Raw and unedited.
+
+Read all eleven files.
+
+# Gerbil set review
+
+## 1. Page by page
+
+- **00 Hub.** Finished it; densest page in the set and the only one citing Merck. Actionable: humidity, protein, portion grams, degloving. **A-**
+- **01 Encyclopedia.** Finished it; short, genuinely natural history, no care padding. Nothing to act on, and it does not pretend otherwise. **B+**
+- **02 Cost.** Finished it. Actionable numbers, but the monthly figure does not match its own annual table. **C+**
+- **03 Handling.** Finished it; thin, mostly "social, day-active, no tail." **C**
+- **04 Health.** Finished it; good triage lines, but shorter and softer than the hub's health section. **B-**
+- **05 Tank setup.** Finished it; the most buildable page here. **A-**
+- **06 Feeding.** Finished it; specific, sourced, and it contradicts the hub. **B**
+- **07 Enrichment.** Best page in the set. One study, one conclusion, a priority list I can shop from. **A**
+- **08 Legal.** Finished it; clear, sourced, tells me the exception-by-absence trap. **A**
+- **09 vs Guinea pig.** Finished it; its gerbil column is unreliable. **C-**
+- **10 vs Hamster.** Finished it; useful on schedule, wrong on diet. **C**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, taxonomy, the 1935/1954 founder history, no repetition. The hub mostly earns its place too, because it carries material that appears nowhere else (aural cholesteatoma at 50 percent past two years, seizures, tumor incidence, the Merck degloving detail). But it disagrees with the deep dives repeatedly:
+
+- Protein. Hub: "at 18 to 20 percent protein and roughly 5 to 8 grams per gerbil per day." Feeding: "a minimum of 14% protein... Aim for roughly 14 to 16% protein... roughly 5 to 10 grams."
+- Fat. Hub: "on diets above about 4 percent fat they develop raised blood cholesterol." Feeding: "low fat around 4 to 8%." The hub's danger line is the feeding guide's target.
+- Depth. Hub: "eight to twelve inches of substrate." Setup: "6 to 10 inches of digging depth at minimum."
+- Humidity. Hub: "Merck advises staying below 40 percent." Setup and Health: "Keep it under about 50%."
+- Tank. Hub checklist: "20 gallon long tank or deep-base cage for a pair." Setup: "a 40-gallon breeder... is genuinely the better target."
+- Wheel. Hub checklist: "Solid 8 in exercise wheel," while the hub's own cost table prices a "Solid exercise wheel (10-12 in)."
+- Wheel price. Hub: "$38 | $42." Cost guide: "$28 - $40."
+- Hub prices a "Toys, tunnels, and dig boxes" line at $40 to $58 that the cost guide's table drops entirely, and a "hygrometer" the cost guide does not include even though the humidity rule needs one.
+
+## 3. Could I keep one
+
+Mostly yes: I can buy a pair, build a deep tank with a buried tunnel-and-chamber, feed pellets, and recognize an emergency. Still missing: how to verify same-sex at purchase and what accidental litters mean; what to look for in a healthy animal from a shop or breeder; the first-week settling routine; the warning signs of declanning and how to split a pair safely; how often bedding is actually changed, in a page other than one hub FAQ; heat emergency signs for this species.
+
+Unsignposted handoffs: the hub's "declanning" and split-cage line raises a question the handling guide answers, with no link. The health guide's humidity fix sits on the setup page. The cost guide's "deep digging substrate" budget is set by the setup page's 40-gallon recommendation, which would move the total.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three or more times: gerbils are social and adult introductions fail; never lift by the tail; deep substrate; wire cages cannot hold bedding. Conflicts:
+
+- Lifespan. Cost: "2 to 5 years, commonly landing around 3 to 4." vs Guinea Pig and vs Hamster: "A gerbil's normal lifespan is 2 to 3 years."
+- Space. vs Guinea Pig table: "10-gallon+ tank (deep substrate)." Setup: "A 20-gallon long tank works as a minimum for a pair."
+- Diet. vs Hamster: "a quality pelleted food formulated for both works for either species." Feeding: "many products labeled simply 'Hamster and Gerbil Food' fall short of that, they're really formulated for hamsters."
+- Tail injury. Handling: "sometimes losing the whole tail. This genuinely warrants a vet visit." Health: "The stump usually heals on its own." Hub: "the treatment is prompt amputation of the bare section."
+- Health coverage. The health guide never mentions cholesteatoma or seizures, both of which the hub calls common.
+
+## 5. One link per page
+
+- **Hub:** "A 20 gallon long tank with a mesh lid suits them better than most wire cages" → Enclosure Setup.
+- **Encyclopedia:** "introductions between adults frequently fail, which is the single hardest part of keeping them" → Handling.
+- **Cost:** "A proper glass enclosure with deep digging substrate costs more upfront than the wire cages often marketed for small rodents" → Enclosure Setup.
+- **Handling:** "Housing in a wire cage that can't hold the deep bedding this species genuinely needs." → Enclosure Setup.
+- **Health:** "Correct the environment first (keep humidity under about 50%, and use clean, dry bedding)" → Enclosure Setup.
+- **Setup:** "Provide 6 to 10 inches of digging depth at minimum" → Enrichment.
+- **Feeding:** "What matters more day to day is constant fresh water and safe wood to gnaw, gerbil teeth grow continuously." → Health Issues.
+- **Enrichment:** "which for most setups means considerably more than a bag's worth" → Enclosure Setup.
+- **Legal:** none needed.
+- **vs Guinea Pig:** "versus a fraction of that for a pair of gerbils in a tank with deep, diggable substrate" → Enclosure Setup.
+- **vs Hamster:** "a quality pelleted food formulated for both works for either species" → Feeding.
+
+## 6. Trust
+
+Doubts: the two comparison pages read like they were written from a template without checking the species pages, and the protein and humidity splits mean somebody is wrong about numbers I have to buy against. Most convincing sentence, from the enrichment guide: "Cardboard tubes work as a starting version and gerbils will destroy them quickly, which is fine and also why a rigid option is worth having as the permanent one."
+
+## 7. Set grade
+
+**B-.** Excellent on the two things that matter most, burrow structure and law, undermined by numbers that disagree across pages I am supposed to trust equally. First two changes: reconcile the numbers into one source of truth (protein, fat, depth, humidity, tank size, wheel size, lifespan, wheel price), and fix the comparison pages' gerbil columns to match it.
+
+## Not covered anywhere
+
+- How to sex gerbils or confirm a same-sex pair, and what an accidental litter means.
+- What to check when choosing animals from a shop or breeder.
+- The first-week settling and quarantine routine.
+- Warning signs that a bonded pair is declanning, and how to separate safely.
+- A full cleaning schedule and bedding-change interval outside one hub FAQ.
+- Heat and cold thresholds for gerbils; the shared heat stress guide names guinea pigs, rabbits, chinchillas, and hamsters, not this species.
+- Out-of-tank time or playpen safety.
