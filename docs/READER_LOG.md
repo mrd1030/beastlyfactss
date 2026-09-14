@@ -3140,3 +3140,90 @@ First two changes: rebuild the hub from the deep dives so bar spacing, cage cost
 - Quarantine-to-introduction sequencing for adding a bird to an existing pair. The shared quarantine guide covers the timeline; nothing joins it to the enrichment page's introduction advice.
 - Normal zebra finch weight in grams. The shared weight guide promises grams but is written around parrots, and the encyclopedia gives only 0.3 to 0.5 oz.
 - What to do if a hen lays with no nest provided. The shared chronic egg laying guide is scoped to budgies, cockatiels and lovebirds.
+
+## Angelfish (2026-09-14)
+
+One Opus 5 agent, eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment), about 86k tokens. Full agent
+output below, unedited.
+
+---
+
+# Angelfish Set Review
+
+## 1. Page by page
+
+- **00 Care guide hub.** Finished it. Actionable: tank size, temp band, checklist, water change schedule. It is the only page with a water change number. **B**
+- **01 Encyclopedia.** Finished it, fast. Actionable: adult size including fins, lifespan, origin. The 1823 to 1909 to 2022 history is the best writing in the set. **B+**
+- **02 Cost guide.** Finished it. Actionable: itemized setup table, monthly range, the marine vs freshwater price trap. **B**
+- **03 Handling.** Finished it. Actionable: add angelfish last, no nano fish, buy six juveniles and let pairs form. **A-**
+- **04 Health issues.** Finished it. Actionable: symptom lists, metronidazole by brand name, 86°F for ich. **B+**
+- **05 Tank setup.** Finished it, took notes. Actionable: heater wattage math, pH range, substrate, the lid. Best page here. **A**
+- **06 Feeding.** Finished it. Actionable: schedule by life stage, 2 to 5 minute rule, sunken belly test. **A-**
+- **07 Enrichment.** Finished it. Actionable: priority order list, cardinal tetra substitution, "two or three adults is the bullying setup." **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: natural history and the genome story appear nowhere else. The hub mostly restates the deep dives in shorter form, and it is where the contradictions live.
+
+Conflicts, hub first:
+- Temperature. Hub: "heated between 78 and 84 degrees F." Setup: "comfortable in the 78 to 82°F range, some sources extend slightly lower to 75°F." 84 is ich-treatment territory, not a housing band.
+- Who fits in 29 gallons. Hub FAQ: "A minimum of 29 to 30 gallons for a single pair." Setup: "29 gallons... is the practical minimum for a single adult." One fish or two is not a rounding difference.
+- Staple food. Hub: "a high-quality cichlid pellet or flake as a dietary staple." Feeding: "The staple is a high-quality flake, generally preferred over pellets for this species."
+- Ongoing cost. Hub annual table: food "$50" to "$90" plus test kit "$20" to "$30," so about $70 to $120 a year. Cost guide: "$15 - $40" a month, which is $180 to $480 a year. Four times apart at the low end.
+- Setup cost. Hub's four rows total roughly $180 to $345. Cost guide: "Roughly $300 to $600 for a Proper Tank."
+- Feeding window. Hub: "only what's consumed within a couple of minutes." Feeding: "within about 2 to 5 minutes."
+- Lifespan. Encyclopedia: "Wild Lifespan: 10-12 years." Cost: "8 to 12 years is typical with good care." Captive reading lower than wild needs a word of explanation.
+
+## 3. The set as a whole
+
+I could buy and set up a tank tomorrow: size, height, heater watts, substrate, plants, filter type, lid, pH target, stocking order, feeding schedule, and what illness looks like. Gaps:
+
+- Acclimation procedure. Feeding names "pH shock during acclimation" as a cause of refusal and never says how to acclimate.
+- Water change size and frequency exist only on the hub. Setup and health both say "regular" and stop.
+- Nitrate target. Ammonia and nitrite get zeros, nitrate gets nothing.
+- Choosing a healthy fish at the store, and how many to buy for a 55.
+- A positive tankmate list. I know tiger barbs and neons are out and cardinals are in.
+- Breeding past the fry feeding schedule.
+
+Unsignposted handoffs: the cost guide's "tank height and quality filtration, both genuinely non-negotiable" never points at the setup page that has the numbers. Health's overfeeding line never points at feeding. Feeding's "Territorial or social stress" never points at handling. Handling's weak-swimmer note never points at setup's flow section.
+
+## 4. Across the deep dives
+
+Read twice or more: height over length (setup, enrichment, cost, hub), weak swimmers and gentle flow (handling, setup), adults eating neons (handling, enrichment, feeding, hub), fin nipping (health, enrichment, hub). The height point is repeated four times without adding anything after the first.
+
+Disagreements:
+- Group size for a 55. Setup: "a small group of four to six." Handling: "most keepers raise a group of six or more juveniles."
+- Pellets versus flake, as above, and the cost guide's checklist side lists "cichlid pellets" while feeding prefers flake.
+- Prey threshold framing. Handling: "once it reaches roughly 3 inches." Feeding: "Small fish under about 2 inches are natural prey." Both plausible, different yardsticks, never reconciled.
+
+## 5. One link per page
+
+- **Hub:** "Avoid keeping angelfish long-term with fish small enough to be viewed as prey once they mature, such as neon tetras." Point at the enrichment guide, which names the substitute.
+- **Encyclopedia:** "Adult Size: 6 inches (15 cm) body; 8-10 inches (20-25 cm) including fins." Point at tank setup.
+- **Cost:** "What determines your total cost is tank height and quality filtration." Point at tank setup.
+- **Handling:** "Water quality and stress management also do most of the heavy lifting in preventing illness here." Point at health issues.
+- **Health:** "Overfeeding is one of the quieter causes of the water-quality problems behind most of this list." Point at feeding.
+- **Tank setup:** "Combined with prioritizing height over length and stocking angelfish last in a community tank." Point at handling.
+- **Feeding:** "Small fish under about 2 inches are natural prey for angelfish given their ambush biology." Point at handling.
+- **Enrichment:** "shredded fins are a route into infection." Point at health issues.
+
+## 6. Trust
+
+Doubts: the hub's cost tables and 84°F ceiling read like they were written separately from the deep dives and never reconciled. The feeding guide names two parasites as "a stomach parasite specific to cichlids" and "a separate parasite" without naming either, which is the one place the writing goes vague exactly where I needed a name to look up. Only two outside sources are ever named, Saxby 2010 and Petco.
+
+Most convincing sentence, from tank setup: "a '20-gallon long' tank, despite the larger-sounding volume, is often only about 12 inches tall, genuinely too shallow for this species." That is someone who has watched a beginner buy the wrong tank.
+
+## 7. Set grade: B
+
+Strong, specific deep dives undercut by a hub that contradicts them on temperature, cost, and stocking.
+
+First two changes: make the hub derive its numbers from the deep dives instead of restating them from somewhere else, and settle pellets versus flake in one sentence everywhere.
+
+## Not covered anywhere
+
+- Acclimation procedure for a new angelfish, despite pH shock being named as a cause of refusal. The transport guide covers moving an established fish, not bringing one home.
+- Nitrate target and water change volume for this species. The shared pH, GH, and KH guide is written for coldwater and goldfish, and never reaches the soft, acidic water this fish wants.
+- How to pick a healthy angelfish at point of sale.
+- A positive tankmate list beyond cardinal tetras.
+- Breeding and fry rearing past the feeding schedule, including any way to sex them.

@@ -7229,3 +7229,173 @@ exists. The hognose snake pass took the same line for the same reason.
   rather than this pass's.
 - Whether buying unweaned finches is wise, raised by the reader against
   the cost guide's cheapest-seller line.
+
+## Angelfish (2026-09-14, batch F, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment). One Opus 5 agent, about 86k
+tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | Actionable, and the only page with a water change number, but where the contradictions live. |
+| Encyclopedia | B+ | The history is the best writing in the set. |
+| Cost | B | The itemized setup table and the marine versus freshwater price trap. |
+| Handling | A- | Add angelfish last, no nano fish, buy six juveniles and let pairs form. |
+| Health issues | B+ | Symptom lists, metronidazole by brand name, 86°F for ich. |
+| Tank setup | A | Heater wattage math, pH, substrate, the lid. Best page in the set. |
+| Feeding | A- | Schedule by life stage, the 2 to 5 minute rule, the sunken belly test. |
+| Enrichment | A | The priority order and "two or three adults is the bullying setup". |
+
+Set grade: B. "Strong, specific deep dives undercut by a hub that
+contradicts them on temperature, cost, and stocking."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs angelfish --strict` before the
+pass printed 11 conflicting topic groups. The real decisions: the hub's
+78 to 84°F against tank setup's 78 to 82, the hub's whole setup and
+annual cost tables against the cost guide's, the hub's "29 to 30 gallons
+for a single pair" against tank setup's "single adult", and the
+encyclopedia's 10 to 12 year wild lifespan against the deep dives' 8 to
+12. The rest were one page's own two-part figures, such as 3 to 5 watts
+per gallon meaning 200 to 250 watts.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild:
+
+- Temperature. Old hub: "Keep water heated between 78 and 84 degrees F."
+  Tank setup: "comfortable in the 78 to 82°F range". As the reader put
+  it, 84 is ich-treatment territory, not a housing band, and the health
+  guide's own ich protocol raises the tank toward 86°F.
+- Who fits in 29 gallons. Old hub FAQ: "A minimum of 29 to 30 gallons for
+  a single pair." Tank setup: "29 gallons, and specifically a tall
+  configuration, is the practical minimum for a single adult." One fish
+  or two is not a rounding difference.
+- Staple food. Old hub: "a high-quality cichlid pellet or flake as a
+  dietary staple." Feeding: "The staple is a high-quality flake,
+  generally preferred over pellets for this species."
+- Ongoing cost. Old hub's annual rows came to roughly $70 to $120 a year.
+  Cost guide: "$15 - $40" a month, which is $180 to $480 a year.
+- Setup cost. Old hub's four setup rows summed to roughly $180 to $345.
+  Cost guide: "Roughly $300 to $600 for a Proper Tank."
+- Feeding window. Old hub: "offering only what's consumed within a couple
+  of minutes." Feeding: "letting them clear it within about 2 to 5
+  minutes."
+
+### Deep dives against each other
+
+- Group size for a 55. Tank setup: "a small group of four to six."
+  Handling: "Most keepers raise a group of six or more juveniles and let
+  pairs form naturally." Not actually a conflict, one is adults in a
+  finished tank and the other is juveniles bought to get a pair, and the
+  tank setup sentence never said which. One word added, "four to six
+  adults", in its body and its FAQ. No number changed.
+- Prey threshold. Handling: "once it reaches roughly 3 inches", about the
+  angelfish. Feeding: "Small fish under about 2 inches are natural prey",
+  about the prey. Two different yardsticks, both correct, never joined.
+  Fixed with the reader's own recommended link rather than by moving a
+  number: the feeding sentence now links the handling guide.
+- Pellets against flake. The feeding guide's flake-preferred staple is
+  the set's only recommendation on this; the cost guide's table row
+  prices "flake or pellet food", which is a price line rather than a
+  recommendation, and the only actual "cichlid pellets" recommendation
+  was the old hub's. Resolved by the rebuild.
+
+### Gaps, checked against the Health and More list first
+
+- Acclimation procedure for a new angelfish, despite the feeding guide
+  naming pH shock during acclimation as a cause of refusal. The shared
+  power outage and transport guide covers moving an established fish,
+  not bringing one home.
+- Water change volume and frequency. The old hub's weekly 25 percent was
+  the only figure in the set and no deep dive carries it, so it is gone
+  with the rebuild rather than carried forward as a hub-only number.
+  This is now the top item for the deep dives to close.
+- A nitrate target. Ammonia and nitrite get zeros, nitrate gets nothing.
+- How to pick a healthy angelfish at point of sale.
+- A positive tankmate list beyond cardinal tetras.
+- Breeding and fry rearing past the feeding schedule, and any way to sex
+  them.
+
+All filed in docs/READER_LOG.md.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | "Avoid keeping angelfish long-term with fish small enough to be viewed as prey" | Enrichment guide | n/a, that hub prose is gone; the hub's Tankmates row is sourced to the enrichment guide |
+| Encyclopedia | the adult size line | Tank setup | No link slot |
+| Cost | "What determines your total cost is tank height and quality filtration" | Tank setup guide | Yes |
+| Handling | "Water quality and stress management also do most of the heavy lifting in preventing illness here" | Health issues guide | Yes |
+| Health issues | "Overfeeding is one of the quieter causes of the water-quality problems behind most of this list" | Feeding guide | Yes |
+| Tank setup | "stocking angelfish last in a community tank" | Handling guide | Yes |
+| Feeding | "Small fish under about 2 inches are natural prey for angelfish" | Handling guide | Yes |
+| Enrichment | "shredded fins are a route into infection" | Health issues guide | Yes |
+
+Six added, one sibling link per article, the cap the checker enforces.
+
+### Trust
+
+The reader named the hub's cost tables and its 84°F ceiling as reading
+like they were written separately from the deep dives, which is exactly
+what they were. It also flagged the feeding guide naming two parasites
+only as "a stomach parasite specific to cichlids" and "a separate
+parasite", vague at the one point a reader needs a name to look up. Left
+as is: naming them is research, not a fix, and the guide's Sources do not
+carry the names. The sentence that most convinced it a keeper wrote the
+set, from tank setup: "a '20-gallon long' tank, despite the
+larger-sounding volume, is often only about 12 inches tall, genuinely too
+shallow for this species."
+
+### Numbers decided, both sides and the source that won
+
+- Lifespan. The cost guide and tank setup both say 8 to 12 years typical,
+  which is exactly what the cost guide's own opened source, Aquarium
+  Co-Op's angelfish care guide, states ("angelfish can live up to 8 to 12
+  years long"). The encyclopedia's "10-12 years" matches no cited source
+  and was filed under Wild Lifespan for a fish with no documented wild
+  longevity figure, which a search of FishBase-adjacent literature did
+  not turn up either. The deep dives win, and the encyclopedia now says
+  so plainly rather than printing a captive number under a wild label.
+- Temperature. No figure changed. Tank setup's 78 to 82°F stands, with
+  75°F kept as the low end it tolerates. Aquarium Co-Op's own range runs
+  wider (78 to 86°F), but nothing in the set disagreed with 78 to 82
+  once the old hub's 78 to 84 was retired, so there was no conflict to
+  settle and no reason to move a sourced figure.
+
+### Encyclopedia
+
+One field changed on `angelfish` in src/lib/data/encyclopedia/fish.js,
+nothing else in the file touched: `wildLifespan`, from "10-12 years" to
+"Not well documented in the wild; 8 to 12 years is typical in a well-kept
+aquarium, up to around 15 under ideal conditions". `adultSize` was
+checked against the same source and left alone, since no deep dive states
+an adult size and there was nothing to conflict with.
+
+### Also fixed
+
+- Source narration, per RULES, "The source goes in the block, not the
+  sentence". The handling guide attributed its territoriality claim to
+  Petco, a retailer that is not even in its Sources block. The tank setup
+  guide's "some sources extend slightly lower to 75°F" and the feeding
+  guide's "Sourcing blurs two different numbers here... One guide states"
+  paragraph and its FAQ twin. Every figure and every hedge kept, listed
+  before and after in the fixes commit.
+- Two link-only closing sentences of the "Check the Angelfish
+  encyclopedia profile for more" shape, cut from the cost and health
+  guides. The two that read "has more on the species itself" and "covers
+  the species itself", on tank setup and handling, are left: they say what
+  is on the other page rather than just pointing at it.
+
+### Open
+
+- The six gaps above, all in docs/READER_LOG.md, with water change volume
+  the one the rebuild made more visible rather than less.
+- Sources across this set. Handling runs a single entry, health issues
+  and tank setup two each, and one is a bare homepage, where RULES targets
+  four to five that each carry a claim. Nothing deleted, and adding
+  sources is research rather than a fix.
+- The two unnamed parasites in the feeding guide.
