@@ -166,61 +166,79 @@ export const snakeGuides = [
     image: "/assets/guides/california-kingsnake.jpg",
     tagline: "The boldly banded beginner snake that becomes a gem with handling!",
     funFact: "Kingsnakes are immune to the venom of rattlesnakes, copperheads, and cottonmouths, and they actively hunt and eat other snakes, including venomous ones! The name 'King' is well earned.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft escape-proof enclosure", low: 130, high: 250 },
-        { item: "Under-tank heater with thermostat", low: 35, high: 60 },
-        { item: "Two snug hides", low: 15, high: 25 },
-        { item: "Aspen or cypress mulch substrate", low: 15, high: 25 },
-        { item: "Soak-able water dish", low: 10, high: 15 },
-        { item: "Feeding tongs", low: 5, high: 10 },
-        { item: "Digital thermometer", low: 15, high: 20 },
-        { item: "Branches for enrichment", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Frozen/thawed mice", low: 80, high: 150 },
-        { item: "Substrate replacement", low: 25, high: 40 },
-        { item: "Electricity (heat)", low: 40, high: 70 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A 4x2x2 ft enclosure is appropriate for most adult California kingsnakes. This species is active and curious and will use all available space meaningfully. California kingsnakes are determined, persistent escape artists - they methodically test every seam, hinge, and gap. A lockable lid is essential. Check all seams regularly.
-
-Provide a warm end with a surface temperature of 85 to 88 degrees F via an under-tank heater on a thermostat, and a cool end at 72 to 75 degrees F. Two snug hides - one at each end - are required. Aspen shavings or cypress mulch work well as substrate. Ambient humidity of 30 to 50% is appropriate. A moist hide with damp sphagnum moss supports healthy shedding.
-
-Fresh water in a soak-able dish must always be available, changed at least twice weekly.`,
-      diet: `California kingsnakes are typically excellent, reliable feeders. Feed appropriately sized frozen/thawed mice - prey width should match the snake's widest mid-body. Always use feeding tongs at every feeding. Feed juveniles every 5 to 7 days, sub-adults every 7 to 10 days, adults every 10 to 14 days. Allow 48 to 72 hours after feeding before handling.
-
-Thaw frozen prey fully in warm water until the core reaches 100 to 105 degrees F. Never feed live prey - it is dangerous to the snake and ethically unnecessary. If a kingsnake regurgitates, wait 2 full weeks before the next feeding attempt and reassess temperatures and prey size.
-
-Note that kingsnakes are ophiophagous (snake-eaters) in the wild. Never house with other snakes under any circumstances.`,
-      enrichment: `California kingsnakes are active explorers that investigate every inch of their enclosure. Provide branches for climbing, multiple hides in different sizes and shapes, cork bark pieces, and a water dish large enough to soak in. Rearranging the enclosure layout periodically gives the snake new territory to explore.
-
-Handle regularly and with confidence. Juvenile California kings often musk and may strike defensively. This typically diminishes quickly with consistent calm handling. Most adults become very handleable snakes. Remain calm and still during any defensive displays - panicked movements escalate the snake's response.`,
-      health: `California kingsnakes are very hardy when husbandry is correct. Respiratory infections from cold, damp conditions are the primary concern: signs include wheezing and mucus. Retained shed from low humidity is the second most common issue - the moist hide prevents it. Retained eye caps are the most serious form: soak and gently remove, or seek veterinary assistance.
-
-Escape prevention is a practical safety issue - an escaped kingsnake faces cold, dehydration, and household hazards. Inspect all enclosure seals regularly. Annual wellness checks are recommended for all snakes even when they appear healthy.`,
-      checklist: [
-        "4x2x2 ft escape-proof enclosure (lockable lid)",
-        "Under-tank heater with thermostat (85 to 88 degrees F warm end)",
-        "Two snug hides (warm and cool ends)",
-        "Aspen or cypress mulch substrate",
-        "Shallow water dish (soak-able)",
-        "Frozen/thawed appropriately-sized mice",
-        "Feeding tongs",
-        "Digital thermometer",
-        "Branches for enrichment",
-        "Reptile-savvy vet contact",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Quarantine, hygiene, and power
+    // outage cite the shared reptile guides in the sidebar's Health and More
+    // list. This species has no feeding guide, so the feeding row is sourced
+    // to the Diet Basics section of the setup guide. Reconciled 2026-09-14 for
+    // batch G (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new snake is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "A 20-gallon tank works for a hatchling or young snake, and the ideal adult enclosure is 48 inches long by 24 inches wide by 24 inches tall, front-opening. Give an adult an enclosure at least as long as the snake itself.", source: "california-kingsnake-tank-setup-guide" },
+        { label: "Security", value: "California kingsnakes are accomplished escape artists, so a tightly clamped, secure lid isn't optional. The second requirement isn't about the lid at all: never house a kingsnake with or near another snake, since this species retains a real cannibalistic drive.", source: "california-kingsnake-tank-setup-guide" },
+        { label: "Temperatures", value: "Warm side 85 to 88°F, cool side 72 to 78°F. Get there with an under-tank heat pad, an overhead source, or both, always on a thermostat.", source: "california-kingsnake-tank-setup-guide" },
+        { label: "Humidity", value: "Low, 40 to 60%. Good ventilation and a water bowl that isn't overfilled hold that range on their own.", source: "california-kingsnake-tank-setup-guide" },
+        { label: "UVB", value: "Not strictly required, as long as the room gives a natural light cycle. Low-level UVB still offers some benefit, so add it if that is convenient.", source: "california-kingsnake-tank-setup-guide" },
+        { label: "Substrate", value: "Aspen shavings, the classic choice, since they support natural burrowing. Cypress mulch, sani-chips, and commercial forest-floor products also work. Pine and cedar are out, their aromatic oils irritate the respiratory system, and so are sand and anything chemically treated.", source: "california-kingsnake-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Hatchlings and juveniles every 5 to 7 days, adults every 10 to 14 days, on frozen/thawed rodents. Size the prey to roughly the width of the snake at its thickest point.", source: "california-kingsnake-tank-setup-guide" },
+        { label: "Water", value: "Fresh water in a dish the snake can sit in, and never offer live rodents, which can injure a snake that does not strike cleanly.", source: "california-kingsnake-tank-setup-guide" },
+        { label: "Handling", value: "No handling until it is eating reliably. First sessions run no more than 5 minutes, two to three times a week, with around 10 to 15 minutes as the upper limit depending on room temperature. Wait at least 48 hours after a meal, and skip the whole shed cycle.", source: "california-kingsnake-handling-guide" },
+        { label: "Reading the snake", value: "Tail vibrating, the neck drawn back into an S, balling up with the head tucked, musking, and tight, quick tongue flicks are all fear. Scoop from below with the whole body supported rather than grabbing.", source: "california-kingsnake-handling-guide" },
+        { label: "Living alone", value: "In the wild this species eats other snakes, including copperheads, cottonmouths, and rattlesnakes, and that instinct doesn't turn off in captivity. Never house it with, or allow contact with, another snake of any kind.", source: "california-kingsnake-handling-guide" },
+        { label: "Venom resistance", value: "Serum research on the genus found meaningful resistance to rattlesnake venom, and how much varies by population. Coral snakes are a different case: kingsnakes have little to no protection against that neurotoxic venom.", source: "california-kingsnake-handling-guide" },
+        { label: "Floor space", value: "An enclosure longer than the snake is the single change with a preference test behind it, and the test was run on a relative: twelve corn snakes offered enclosures either two thirds of their body length or longer than their body preferred the larger one.", source: "california-kingsnake-enrichment-guide" },
+        { label: "Cover", value: "More space only helps if the snake will cross it. Break the floor up with cork tubes and flats, leaf litter over aspen, and enough clutter that the animal is never fully exposed anywhere.", source: "california-kingsnake-enrichment-guide" },
+        { label: "Climbing", value: "Kingsnakes climb more than their terrestrial reputation suggests. A firmly braced branch or a stack of cork adds a second usable level, and stability is the requirement rather than height.", source: "california-kingsnake-enrichment-guide" },
+        { label: "Shed trouble", value: "Retained skin from humidity running too low. Manageable at home with a humid hide lined with damp sphagnum moss.", source: "california-kingsnake-health-issues-guide" },
+        { label: "Budget", value: "$45 to $300 for the snake, $200 to $500 for the setup, and roughly $15 to $30 a month after that.", source: "california-kingsnake-cost-guide" },
+        { label: "Vet costs", value: "$50 to $135 for a routine exotic exam. An emergency visit starts around $150 and can reach $500 or more once treatment and diagnostics are added.", source: "california-kingsnake-cost-guide" },
+        { label: "Adult size", value: "2.5 to 4 feet (75 to 120 cm)." },
+        { label: "Lifespan", value: "20 years or more is achievable with good care, with some individuals surpassing that.", source: "california-kingsnake-cost-guide" },
+        { label: "Where it's banned", value: "Hawaii bans the whole snake suborder outright, Delaware requires a permit, and Oregon and Nevada both write their rules around the snake's color pattern rather than its species.", source: "kingsnake-legal-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "65 to 75°F is the normal night low. Below 65°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
+    emergencyCard: {
+      source: "california-kingsnake-health-issues-guide",
+      callNow: [
+        "Wheezing, open-mouth breathing, nasal mucus, or lethargy",
+        "Discolored, uneven, or damaged scales, sometimes with swelling and a foul odor",
+        "Tiny black or red specks moving around the eyes and vent",
+        "Unusual amounts of time spent soaking in the water bowl",
+        "Cheesy or yellowish material around the gums, along with swelling",
+      ],
+    },
+    routes: [
+      { slug: "california-kingsnake-cost-guide", line: "$45 to $300 for the snake, $200 to $500 for the setup, $15 to $30 a month, and the one cost consideration that isn't about money." },
+      { slug: "california-kingsnake-tank-setup-guide", line: "The 48x24x24 adult enclosure, the temperature and humidity targets, substrate, feeding, and the two security rules this species carries." },
+      { slug: "california-kingsnake-handling-guide", line: "Session lengths, the timing rules around feeding and shedding, the five fear signals, and why this snake must live alone." },
+      { slug: "california-kingsnake-health-issues-guide", line: "Respiratory infection, scale rot, mites, mouth rot, retained shed, and why nearly all of it traces back to husbandry." },
+      { slug: "california-kingsnake-enrichment-guide", line: "No kingsnake study exists, so this is the corn snake and ratsnake evidence, labeled as borrowed, on floor space, cover, climbing and scent." },
+      { slug: "kingsnake-legal-guide", line: "Hawaii's total snake ban, Delaware's permit, and the two states that judge a kingsnake by its color pattern rather than its species." },
+    ],
+    buyList: [
+      "48x24x24 inch front-opening enclosure",
+      "Under-tank heat pad, overhead heat source, or both",
+      "Thermostat",
+      "Two cork bark hides, one per temperature zone",
+      "Humid hide with damp sphagnum moss",
+      "Aspen shavings or cypress mulch substrate",
+      "Water dish the snake can sit in",
+      "Digital thermometer and hygrometer",
+      "Branches or stacked cork for climbing",
+      "Feeding tongs",
+      "Frozen/thawed rodents",
+    ],
     faqs: [
-      { q: "Are California kingsnakes immune to snake venom?", a: "Yes. California kingsnakes are ophiophagous - they eat other snakes in the wild, including venomous species like rattlesnakes, copperheads, and cottonmouths, to whose venom they are largely immune. The name 'King' reflects this apex predatory status. Never house with other snakes; they will attempt to eat enclosure mates regardless of species." },
-      { q: "How big do California kingsnakes get?", a: "Adults typically reach 3 to 4 feet in total length - a manageable, handleable size that makes them popular with first-time snake owners and experienced collectors alike. They are slender, muscular snakes that feel confident in the hand. They reach adult size by 2 to 3 years of age." },
-      { q: "Are California kingsnakes good beginner snakes?", a: "Yes. They feed reliably on frozen/thawed prey, tame down quickly with consistent calm handling, and have straightforward temperature and humidity requirements. Juvenile kingsnakes can be defensive - musking, hissing, or striking - but this diminishes significantly with regular interaction. Most adults become calm, handleable snakes within weeks to months of consistent work." },
-      { q: "What humidity do California kingsnakes need?", a: "Low to moderate - 30 to 50% ambient humidity is appropriate. This is generally achievable at room humidity in most homes without additional measures. The most important shedding support is a moist hide (a box packed with damp sphagnum moss) available at all times. Retained shed on eye caps is preventable with consistent access to a humid microhabitat." },
-      { q: "Why is my California kingsnake musking?", a: "Musking - releasing a pungent musk from cloacal glands - is a normal defensive behavior in juveniles and newly acquired adults. It is not an indication of illness or permanent temperament. Most California kingsnakes reduce or eliminate musking with consistent, calm handling over weeks. Never react to musking with fear or by putting the snake down - this reinforces the behavior." },
+      { q: "Why do California kingsnakes need to be housed alone?", a: "In the wild, California kingsnakes eat other snakes, including venomous species like copperheads, cottonmouths, and rattlesnakes. That instinct doesn't turn off in captivity, so this species must never be housed with, or allowed contact with, another snake of any kind." },
+      { q: "Are California kingsnakes resistant to venom?", a: "Partly. Serum research on the genus found meaningful resistance to rattlesnake venom, and how much varies by population. Coral snakes are a different case: kingsnakes have little to no protection against that neurotoxic venom." },
+      { q: "Are California kingsnakes prone to health problems?", a: "Not inherently. Incorrect temperatures, inadequate humidity, dirty conditions, or improper feeding explain the vast majority of problems in captive kingsnakes, not genetic susceptibility, so getting the basics right heads off nearly all of this list." },
     ],
   },
   {
