@@ -4200,8 +4200,9 @@ in one review section.
   glider: the cost guide's three-state legal paragraph replaced by the
   legal guide's eight-jurisdiction list, the encyclopedia's ounce weight
   replaced by the veterinary gram ranges, and the hub funFact's 150-foot
-  glide moved to the Australian Museum's 50 m. Twenty-nine in-body links
-  added across the five sets, one sibling link per article.
+  glide moved to the Australian Museum's 50 m. Thirty in-body links
+  added across the five sets (six, seven, six, five and six), one sibling
+  link per article.
 - 2026-09-14, batch F species check (one Fable agent covering all five
   species on the shared branch, the model decision recorded in the batch
   prompt): found and fixed a sugar glider emergency-card bullet the health
