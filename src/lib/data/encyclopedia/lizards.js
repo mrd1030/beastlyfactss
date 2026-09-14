@@ -152,7 +152,7 @@ export const lizardEncyclopedia = [
       habitat: "Mountain valleys, plateaus, and vegetation near water sources in an otherwise arid landscape",
       adultSize: "18-24 inches (46-61 cm) males; 10-14 inches (25-36 cm) females",
       wildDiet: "Insects, with some opportunistic feeding on leaves and flowers",
-      wildLifespan: "5-8 years (males often longer than females)",
+      wildLifespan: "Males 6-8 years; females often just 2-6 and frequently less, from the toll of producing egg clutches",
       conservation: "Not evaluated (widespread and common)",
       history: "Auguste Duméril and Gabriel Bibron named the species in 1851. It reached the pet trade late and then reshaped it: where most chameleons of the era arrived as wild caught imports that died quickly, this one bred willingly in captivity, and it went on to become the most widely kept and captive bred chameleon in the hobby. That productivity had a side effect. Escaped and released pets have founded breeding populations in both Florida and Hawaii, an unusual outcome for a family that rarely establishes itself outside its native range.",
     },
