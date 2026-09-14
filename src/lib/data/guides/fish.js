@@ -8,44 +8,84 @@ export const fishGuides = [
     image: "/assets/guides/angelfish.jpg",
     tagline: "The elegant Amazonian cichlid that pairs for life and rules its corner of the tank!",
     funFact: "Angelfish are cichlids that often form long-term monogamous breeding pairs, and unlike most fish, both parents cooperatively guard their eggs and fry - fanning them with fresh water and defending the territory together. Their tall, laterally flattened body shape is a natural adaptation for slipping between roots and plant stems in flooded Amazon forest, effectively letting them disguise themselves as a drifting leaf.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "29+ gallon tall tank", low: 100, high: 200 },
-        { item: "Aquarium heater", low: 20, high: 35 },
-        { item: "Moderate filtration", low: 30, high: 50 },
-        { item: "Driftwood and tall plants", low: 30, high: 60 },
-      ],
-      annual: [
-        { item: "Cichlid pellets/flakes + frozen bloodworms", low: 50, high: 90 },
-        { item: "Water test kit and conditioner", low: 20, high: 30 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Cycling, quarantine, power outage,
+    // filtration and the sick-fish check cite the shared aquarium guides in the
+    // sidebar's Health and More list. The old hub's weekly 25% water change was
+    // a figure no deep dive carries, so it is retired here and filed as a gap in
+    // docs/READER_LOG.md. Built 2026-09-14 for the angelfish set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "29 gallons, and specifically a tall configuration, is the practical minimum for a single adult. A 55-gallon tank is the better choice for a small group of four to six adults, and at a standard 20 inches tall it already clears this species' height requirement without needing a specialty configuration.", source: "angelfish-tank-setup-guide" },
+        { label: "Height over length", value: "Prioritize height, aim for at least 18 to 20 inches, over length. A \"20-gallon long\" tank, despite the larger-sounding volume, is often only about 12 inches tall, genuinely too shallow for this species.", source: "angelfish-tank-setup-guide" },
+        { label: "Temperature", value: "A genuinely tropical species, comfortable in the 78 to 82°F range and tolerant down to about 75°F. Keep fluctuation within about 2 degrees in either direction.", source: "angelfish-tank-setup-guide" },
+        { label: "Heater", value: "Essential. Budget roughly 3 to 5 watts per gallon, meaning a 200 to 250 watt heater for a 55-gallon tank.", source: "angelfish-tank-setup-guide" },
+        { label: "Water chemistry", value: "Slightly acidic to neutral, pH 6.5 to 7.0, with soft water genuinely preferred, especially if you're hoping for breeding pairs to form. Stable, fully cycled water with zero ammonia and zero nitrite matters more for this species than for some hardier community fish.", source: "angelfish-tank-setup-guide" },
+        { label: "Filtration", value: "Gentle to moderate flow works best, angelfish are relatively weak swimmers and don't do well fighting strong current. A sponge filter is the choice if you're breeding, since it protects fry from being pulled into stronger filtration.", source: "angelfish-tank-setup-guide" },
+        { label: "Substrate", value: "Fine sand or small, smooth gravel. Avoid sharp or coarse gravel entirely, angelfish have genuinely delicate fins that tear easily against rough substrate.", source: "angelfish-tank-setup-guide" },
+        { label: "Decor", value: "Build vertically. Tall driftwood and broadleaf plants, Amazon sword, Java fern, and anubias, give this tall-bodied fish natural cover, help break sightlines to reduce territorial aggression, and double as spawning surfaces if a pair bonds.", source: "angelfish-tank-setup-guide" },
+        { label: "Lighting", value: "A standard LED on an 8 to 10 hour daily cycle is sufficient, no special requirements beyond what supports any live plants you're keeping.", source: "angelfish-tank-setup-guide" },
+        { label: "Lid", value: "Angelfish can jump, and a tank left uncovered, or covered with meaningful gaps, is a real risk.", source: "angelfish-tank-setup-guide" },
+        { label: "Group size", value: "No evidence of a group size effect on welfare was found for angelfish, which are cichlids rather than shoaling fish, so the shoal-size rules that govern a tetra tank do not describe them. Either keep a bonded pair, or keep enough fish in a large enough tank that aggression spreads across the group. Two or three adults in a modest tank is the setup that produces a bullied fish.", source: "angelfish-enrichment-guide" },
+        { label: "Stocking order", value: "Add angelfish to a tank last, after the other community fish are already established.", source: "angelfish-handling-guide" },
+        { label: "Tankmates", value: "An adult angelfish will eat small fish, neon tetras and guppies among them, once it reaches roughly 3 inches, and this happens even to small fish it was raised alongside as a juvenile. Cardinal tetras are slightly larger and the usual substitute. Avoid fin nippers in the other direction.", source: "angelfish-enrichment-guide" },
+        { label: "Pairing", value: "Angelfish form genuinely monogamous breeding pairs, though sexing them by appearance alone is very difficult. Most keepers raise a group of six or more juveniles and let pairs form naturally over time. A bonded pair becomes noticeably more territorial once established.", source: "angelfish-handling-guide" },
+        { label: "Feeding schedule", value: "Adults once or twice a day, a pinch of food at a time, letting them clear it within about 2 to 5 minutes before removing anything left over. Juveniles 2 to 3 times a day to support faster growth.", source: "angelfish-feeding-guide" },
+        { label: "Diet", value: "Omnivores with a protein-leaning diet. The staple is a high-quality flake, generally preferred over pellets for this species, supplemented with live or frozen protein at least twice a week: bloodworms, brine shrimp, daphnia, mysis shrimp, and tubifex worms, the last only from a reputable cultured or commercial source, never wild-collected.", source: "angelfish-feeding-guide" },
+        { label: "Off food", value: "Newly introduced angelfish commonly refuse food for the first 2 to 4 days in a new tank. Refusal beyond about 4 to 5 days, or any refusal paired with a sunken belly, clamped fins, lethargy, color loss, or stringy white feces, warrants water testing, quarantine, and a consult with an aquatic vet or experienced aquarist if it doesn't resolve.", source: "angelfish-feeding-guide" },
+        { label: "Budget", value: "Common freshwater angelfish run $3 to $20 for standard varieties, $3 to $50 across most varieties, with fancy morphs higher and rare or extra-large specimens pushing past $100. Roughly $300 to $600 upfront for a proper tank, then roughly $15 to $40 a month.", source: "angelfish-cost-guide" },
+        { label: "Which angelfish", value: "Marine angelfish are a different, far pricier group entirely, commonly $150 to $1,500, and need a saltwater reef setup rather than a freshwater community tank. Worth double-checking which one is actually in the listing before you buy.", source: "angelfish-cost-guide" },
+        { label: "Vet costs", value: "Aquatic vet care is uncommon and specialized. Most keepers manage illness themselves with water quality correction and over-the-counter medications rather than professional visits, so budget for medication on hand rather than office visits.", source: "angelfish-cost-guide" },
+        { label: "Lifespan", value: "8 to 12 years is typical with good care, up to around 15 years under genuinely ideal conditions.", source: "angelfish-cost-guide" },
+        { label: "Adult size", value: "6 inches (15 cm) body, 8 to 10 inches (20 to 25 cm) including fins." },
+        { label: "Cycling", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Quarantine", value: "At least 30 days for a new or sick fish, and 30 to 60 days for one you especially don't want to lose or don't want introducing something to an established tank. Thirty days is the floor, not the target. Use separate nets and siphon hoses for the quarantine tank.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "Angelfish need a tall tank - at least 29 to 30 gallons, with a height of 18 inches or more, since their body shape means vertical space matters as much as footprint. A group of five or six juveniles that will grow out and naturally pair off does best in 55 gallons or more. Keep water heated between 78 and 84 degrees F with moderate filtration. Vertical decor like driftwood and tall plants recreates the flooded forest roots they naturally shelter among, and dim lighting tends to suit them better than bright, direct light.",
-      diet: "Angelfish are omnivores that do well on a high-quality cichlid pellet or flake as a dietary staple. Live or frozen bloodworms, brine shrimp, and daphnia provide valuable protein and support vivid color. Occasional blanched vegetables round out the diet. Feed once or twice daily, offering only what's consumed within a couple of minutes - breeding pairs in particular benefit from extra protein during and after spawning.",
-      enrichment: "Angelfish show real cichlid intelligence, recognizing their keeper over time, and some individuals will even take food directly from a hand. Paired adults establish and defend a territory, especially around a chosen spawning site, and can become notably more aggressive toward other angelfish or similarly shaped fish during this period. Vertical tank space and dense plant cover let subordinate or newly introduced fish break line of sight and reduce conflict. Watching an established pair's parental behavior - fanning eggs, herding fry, and coordinating territory defense - is one of the most rewarding aspects of keeping this species.",
-      health: "Fin nipping from incompatible tankmates, particularly tiger barbs and other notorious nippers, is a common source of injury, so tankmate choice matters. Hole-in-the-head disease has been linked to poor water quality and nutritional gaps. Aggression-related injuries between angelfish themselves increase in small tanks or during pairing and breeding. Angelfish are sensitive to ammonia and nitrite spikes, so weekly 25 percent water changes are important. Avoid keeping angelfish long-term with fish small enough to be viewed as prey once they mature, such as neon tetras.",
-      checklist: [
-        "29+ gallon tall tank (55+ gallons for a group)",
-        "Heater set to 78-84°F",
-        "Moderate filtration",
-        "Driftwood and tall plants for vertical cover",
-        "Dim to moderate lighting",
-        "High-quality cichlid pellets or flakes",
-        "Frozen bloodworms and brine shrimp",
-        "Water test kit and conditioner",
-        "Weekly 25% water changes",
+    emergencyCard: {
+      source: "angelfish-health-issues-guide",
+      callNow: [
+        "Small white spots resembling grains of salt, flashing against decor, clamped fins, and rapid gill movement",
+        "Pitting lesions on the head and along the lateral line, white stringy feces, appetite loss, and fading color",
+        "Ragged, receding fins with discolored edges",
+        "Fluffy white growths, typically secondary to an injury or a period of stress",
       ],
+      vetLine: "Most keepers manage the conditions above at home rather than through a clinic visit. Test and correct the water first, since treatment alone without fixing the environment tends not to hold.",
     },
+    routes: [
+      { slug: "angelfish-cost-guide", line: "$3 to $50 for the fish, $300 to $600 for the tank that makes it work, and the marine-versus-freshwater price trap." },
+      { slug: "angelfish-tank-setup-guide", line: "Why height beats length, heater wattage math, pH 6.5 to 7.0, gentle flow, and the lid nobody expects to need." },
+      { slug: "angelfish-feeding-guide", line: "Schedule by life stage, the 2 to 5 minute rule, what is safe to feed, and the sunken belly that outranks appetite." },
+      { slug: "angelfish-handling-guide", line: "The territoriality that arrives with maturity, why angelfish go in last, and how pairs form." },
+      { slug: "angelfish-health-issues-guide", line: "Ich, hexamita, fin rot, cotton wool, and why fixing the water outlasts any medication." },
+      { slug: "angelfish-enrichment-guide", line: "The study that found group size did not matter for this fish, and what to optimize instead." },
+    ],
+    buyList: [
+      "55-gallon tank and stand, or a 29-gallon tall for a single adult",
+      "Hang-on-back or canister filter sized for the tank, gentle to moderate flow",
+      "Sponge filter if you plan to breed",
+      "Aquarium heater, roughly 3 to 5 watts per gallon",
+      "Fine sand or small, smooth gravel",
+      "Tall driftwood and broadleaf plants: Amazon sword, Java fern, anubias",
+      "Standard LED light",
+      "A secure lid with no meaningful gaps",
+      "Liquid water test kit",
+      "Water conditioner",
+      "High-quality flake food",
+      "Frozen or live bloodworms, brine shrimp, daphnia, or mysis shrimp",
+    ],
     faqs: [
-      { q: "Are angelfish aggressive?", a: "They can be territorial, especially paired adults defending a chosen breeding site or established individuals reacting to newcomers. Juveniles kept in groups tend to be more peaceful, with aggression typically increasing as fish mature and pair off." },
-      { q: "Can angelfish live with neon tetras?", a: "Only reliably while both are small and growing together. Adult angelfish are natural predators of small fish in the wild, and a mature angelfish may eventually see a full-grown neon tetra as prey rather than a tankmate." },
-      { q: "How big do angelfish get?", a: "About 6 inches in body length, but their tall dorsal and anal fins can bring their total height to 8 to 10 inches - which is exactly why they need a tall tank rather than just a wide one." },
-      { q: "Do angelfish pair for life?", a: "Angelfish that successfully pair off often form long-term monogamous bonds and cooperatively guard their eggs and fry, one of the more elaborate parenting behaviors seen in commonly kept aquarium fish." },
-      { q: "What tank size do angelfish need?", a: "A minimum of 29 to 30 gallons for a single pair, with height of 18 inches or more being just as important as overall footprint because of their tall, laterally compressed body shape." },
-      { q: "Are angelfish good pets for beginners?", a: "Not the best first fish. Angelfish need a genuinely tall tank (18+ inches, 29-30 gallons minimum), can turn territorial once paired off, and will eventually eat small tankmates like neon tetras once grown. They're a great step-up fish for someone who's kept a community tank successfully first, rather than a true beginner species." },
-      { q: "How is an angelfish different from a discus?", a: "Both are tall-bodied Amazonian cichlids, but angelfish are the hardier, more forgiving of the two by a real margin. [Discus](/guides/discus/) need meaningfully warmer, softer, and cleaner water to thrive, while angelfish tolerate a wider temperature range and are a more realistic entry point into keeping this body shape of fish." },
+      { q: "What size tank does an angelfish need?", a: "29 gallons in a tall configuration is the practical minimum for one adult, and 55 gallons suits a small group of four to six adults. Watch out for the \"20-gallon long\": bigger volume, but often only about 12 inches of height, which is too shallow here. Buy height, at least 18 to 20 inches, before length." },
+      { q: "Do angelfish need a tank lid?", a: "Yes. They can jump, so an uncovered tank, or one with meaningful gaps in the cover, is a real risk. The lid is a non-obvious requirement here." },
+      { q: "Why is a sunken belly a warning sign even if my angelfish is still eating?", a: "A specific stomach parasite common in cichlids, the family angelfish belong to, can cause a fish to keep eating voraciously while still losing significant weight and developing a sunken belly. Appetite alone isn't a reliable health check for this species." },
     ],
   },
   {
