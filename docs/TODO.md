@@ -227,6 +227,11 @@ exists to prevent.
 
 ## 6. Wrong-species article art
 
+**Status 2026-09-14: not finished.** Five batches done, 26 of about 110 species
+and 115 of 770 article heroes opened, 16 replaced, 5 open (angelfish feeding,
+neon tetra health, three guppy frames). The guide folder (183) is fully checked;
+this folder is not. Continue with the suggested order at the end of this section.
+
 Started 2026-09-12, after the guide folder was finished. `public/assets/images/`
 holds 770 article heroes, about seven per species (cost, handling, health
 issues, tank setup, feeding, enrichment, plus a tank-setup infographic). Three
@@ -382,3 +387,46 @@ koi, discus), the snakes that get confused with each other (corn, milk,
 kingsnake, hognose, rosy boa, ball python, boa), the small mammals that get
 swapped (gerbil, degu, chinchilla, hamster), the monitors, and the parrots that
 share a silhouette. That is roughly 25 species, about 175 images.
+
+## 7. Router hubs, species by species
+
+Checked 2026-09-14 against `src/lib/data/guides/*.js`: a hub is a router hub
+when its entry carries `firstWeek` rows (RULES, Hubs). 31 of 108 done, 77
+still rendering the legacy care sheet. Batches of five, one branch each,
+per the READMEFIRST process. Dogs and cats last.
+
+Done (31):
+
+- [x] axolotl, White's tree frog
+- [x] African grey, budgie, cockatiel, cockatoo, conure, lovebird
+- [x] betta fish, goldfish, guppy
+- [x] crested gecko, leopard gecko
+- [x] hermit crab, tarantula
+- [x] bearded dragon, blue-tongue skink, green iguana
+- [x] chinchilla, ferret, guinea pig, hamster, rabbit, rat
+- [x] ball python, boa constrictor, corn snake, hognose snake
+- [x] box turtle, red-eared slider, Russian tortoise
+
+To do (77):
+
+- [ ] Amphibians (3): fire-bellied toad, pacman frog, tiger salamander
+- [ ] Birds (4): canary, parrotlet, quaker parakeet, zebra finch
+- [ ] Fish (12): angelfish, bristlenose pleco, cardinal tetra, corydoras
+      catfish, discus, koi, molly, neon tetra, oscar, platy, swordtail,
+      zebra danio
+- [ ] Geckos (5): African fat-tail, gargoyle gecko, leaf-tailed gecko,
+      mourning gecko, tokay gecko
+- [ ] Invertebrates (9): amano shrimp, cherry shrimp, ghost shrimp, emperor
+      scorpion, giant millipede, jumping spider, hissing cockroach, praying
+      mantis, stick insect
+- [ ] Lizards (8): ackie monitor, Argentine tegu, fire skink, green anole,
+      Jackson's chameleon, savannah monitor, uromastyx, veiled chameleon
+- [ ] Small mammals (6): degu, mouse, flying squirrel, gerbil, hedgehog,
+      sugar glider
+- [ ] Snakes (4): California kingsnake, garter snake, milk snake, rosy boa
+- [ ] Turtles (2): red-footed tortoise, sulcata tortoise
+- [ ] Cats (10): universal, American shorthair, Bengal, domestic shorthair,
+      Maine Coon, Persian, Ragdoll, Scottish Fold, Siamese, Sphynx
+- [ ] Dogs (14): universal, small breed, medium breed, large breed, beagle,
+      border collie, bulldog, dachshund, French bulldog, German shepherd,
+      golden retriever, Labrador, Rottweiler, Siberian husky
