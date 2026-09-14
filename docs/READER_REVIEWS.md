@@ -7967,3 +7967,169 @@ check exists to catch, and the hub-row ones are the same step that leaked
 in batches D and E."
 
 No species was given a redo verdict, so no second check round ran.
+
+## Canary (2026-09-14, batch G, single pass, before the router hub)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment). One Opus 5 agent, about 85k tokens. The
+reader read the legacy care sheet hub; the router hub was built from its
+findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | Actionable, and its numbers fight the cost guide. |
+| Encyclopedia | B- | The mining history is good reading and changes nothing you do. |
+| Cost | B- | One thing to act on: ask the seller to confirm a male before paying. |
+| Handling | A- | Silence in July is molt, silence the week the cage moved is the television. |
+| Health issues | B | A male going quiet can precede any breathing sign. |
+| Tank setup | B- | Bar spacing, liner routine, powder-coated steel. |
+| Enrichment | A- | Keep the cage center empty, perches at the ends, no sandpaper covers. |
+
+Set grade: B-. "Two strong, sourced deep dives sitting on top of a hub
+whose numbers contradict them, with feeding left unwritten."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs canary --strict` before the pass
+printed 9 conflicting topic groups. The real decisions: the flight cage
+at $60 to $120 against $120 to $220, the annual vet check at $40 to $70
+against $50 to $100 or more, a three-way lifespan split, and the cost
+guide's own setup headline against its own table. The rest were the cost
+guide's price tiers by breed, which are separate figures.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild:
+
+- Flight cage price. Old hub: "Flight cage (24-30 in wide): $60 to $120."
+  Cost guide: "A quality flight cage runs $120 to $220 on its own."
+- Cage size. Old hub: "A flight cage at least 24 to 30 inches wide is far
+  better than a typical small cage." Tank setup: "24 inches long by 18
+  inches wide by 18 inches tall is a reasonable minimum, but the shape
+  matters more than the raw dimensions."
+- Vet cost. Old hub annual table: "Annual avian vet check: $40 to $70."
+  Cost guide: "An annual avian wellness exam... runs $50 to $100 or
+  more."
+- Darkness. Old hub: "Cover the cage at night to provide a consistent 10
+  to 12 hours of uninterrupted darkness for sleep." Enrichment: "Twelve
+  hours of genuine dark for sleep, undisturbed."
+- Pairing. Old hub: "Canaries do best kept singly or in a compatible
+  pair", and its FAQ said "alone or in a same-sex pair". Enrichment and
+  handling both say males must not be housed together. A same-sex pair is
+  precisely the arrangement the deep dives rule out for males.
+- Lifespan, three ways. Old hub: "8 to 10 years is typical, with some
+  canaries reaching 12 to 15 years." Cost guide: "10 to 15 years with
+  good care, sometimes cited more conservatively at 8 to 12."
+  Encyclopedia: "up to 24 years recorded in captivity." See Numbers
+  decided.
+
+### Deep dives against each other
+
+- Light cycle. Tank setup: "Bright, indirect natural or artificial light
+  with a consistent day and night cycle supports normal behavior."
+  Enrichment: "a canary kept under an artificial light schedule that
+  never changes is being held in a permanent season", citing the song and
+  photoperiod research. The enrichment guide carries sources and the tank
+  setup guide carried none, so the tank setup sentence changed to keep a
+  clear day and night cycle while letting day length follow the season,
+  and it now links the enrichment guide.
+- The cost guide against itself. Headline: "Upfront Setup: Roughly $200
+  to $400." Its own four-row table sums to $150 to $273. Headline
+  corrected to $150 to $275.
+- Feather picking. The health guide names boredom as a cause; the
+  enrichment guide, the boredom page, never mentions it. Noted, not
+  fixed: adding it is new content rather than a conflict to settle.
+
+### Gaps, checked against the Health and More list first
+
+- Unsafe foods for a canary. The shared household hazards guide is fumes
+  and physical safety, not diet.
+- What a day of greens actually looks like.
+- Routine cage and perch cleaning beyond the paper liner.
+- Foot problems and pressure sores. The enrichment guide promised the
+  health guide covers them and it does not, and the shared first aid and
+  grooming guide covers nails and beak.
+- Canary-specific molt: how long, and what to feed through it.
+- Egg binding in a canary hen. The shared chronic egg laying guide names
+  budgies, cockatiels, and lovebirds only, while the old hub said canary
+  hens do it too.
+
+Grit, which the reader also listed, turned out to be answerable and is
+now answered in the new Diet Basics section. All the rest are filed in
+docs/READER_LOG.md.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | the egg-binding line | Shared chronic egg laying guide | n/a, that hub prose is gone |
+| Encyclopedia | none needed | | n/a |
+| Cost | "make sure you're buying a confirmed male" | Shared sexing, weight and body condition guide | Yes |
+| Handling | "that is the health check the closing section points to" | Health issues guide | Yes |
+| Health issues | "Caused by poor air quality, a dirty cage, household fumes, or drafts" | Tank setup guide | Yes |
+| Tank setup | the lighting sentence | Enrichment guide | Yes |
+| Enrichment | "A long flight cage beats a tall decorative one by a wide margin" | Tank setup guide | Yes |
+
+Five added, one sibling link per article. Adding the handling guide's
+tripped the sibling-link checker at two, because a FunFact already
+carried "our Canary cost guide covers how much that distinction actually
+affects price too"; that clause was cut as a site self-reference (RULES,
+Linking) rather than dropping the link the reader asked for.
+
+### Trust
+
+The reader's sharpest finding was a link that misdescribes its target:
+the enrichment guide said "Our health issues guide covers foot problems,
+which are common and preventable", and the health guide does not mention
+foot problems anywhere. Cut, with the surrounding pressure-sore point
+kept, since the enrichment guide makes it itself. The reader also called
+the handling guide's beginner-birdwatching link filler; cut for the same
+reason, it was an "our X guide covers" sentence about something other
+than keeping a canary. The sentence that most convinced it a keeper wrote
+the set, from handling: "LafeberVet's method is 'lights out, perches
+out,' taking the bird quickly before its eyes adjust."
+
+### Numbers decided, both sides and the source that won
+
+- Lifespan. Three figures, and the two deep-dive ones were unsourced:
+  the cost guide has no Sources block at all, and neither does tank setup
+  or health issues. Opened LafeberVet's canary basic information sheet,
+  the veterinary reference the handling guide already cites: "Mean life
+  span (years): 6-12, up to 15". That is the only sourced figure
+  available for this species, so the cost guide moved to it in its body
+  and its FAQ, and LafeberVet was added to that guide's Sources. The
+  encyclopedia's "up to 24 years recorded in captivity" is a record
+  rather than a typical span and reads as such, so it was left alone.
+- Setup total. The cost guide's "$200 to $400" against its own table's
+  $150 to $273. Arithmetic on the page's own rows settles it; corrected
+  to $150 to $275. No line item changed.
+- Light cycle. No figure moved. See Deep dives against each other.
+- Grit, cage size, temperature and daily intake in the new Diet Basics
+  section all come from the same LafeberVet sheet: "Canaries do not
+  require grit, however they should be offered a cuttlebone", "All-seed
+  diets are deficient in vitamins, mineral, and protein including calcium
+  and vitamin A", "Food intake: Up to 30% of body weight (BW)/day", and
+  "Body weight (g): 12-30".
+
+### Encyclopedia
+
+Nothing changed. Adult size and the captivity record were both checked
+against the deep dives and the LafeberVet sheet and neither conflicts.
+
+### Also fixed
+
+- The tank setup guide gained a Diet Basics section and a Sources block,
+  since it had neither. The section answers grit, the all-seed problem,
+  daily intake, the cuttlebone, and points at the shared pellet
+  conversion guide for the method.
+- The cost guide gained a Sources block, since it had none.
+
+### Open
+
+- Three of five deep dives shipped with no Sources block at all: cost,
+  tank setup, and health issues. Two now have one. The health issues
+  guide still has none, and its mite and respiratory claims are the ones
+  a reader acts on, so it is the priority for a sourcing pass.
+- The six gaps above, in docs/READER_LOG.md.
+- Feather picking, named as a boredom sign by the health guide and absent
+  from the enrichment guide.

@@ -3401,3 +3401,83 @@ First two changes: rewrite the hub's numbers to match the deep dives, or delete 
 - How to choose a breeder or rescue, and what a healthy glider looks like at purchase.
 - Glider-proofing a room for out-of-cage time, and recovering an escaped glider.
 - Who cares for them when you travel.
+
+## Canary (2026-09-14)
+
+One Opus 5 agent, seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment), about 85k tokens. Full agent output
+below, unedited.
+
+---
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: checklist, cage cover for night dark, egg food during molt. But its numbers fight the cost guide. **C**
+- **01 Encyclopedia.** Finished it, enjoyed the Haldane mining history, acted on nothing. **B-**
+- **02 Cost guide.** Finished it. Actionable: ask the seller to confirm a male before paying. **B-**
+- **03 Handling.** Finished it twice. Actionable: silence in July is molt, silence the week the cage moved is the television. **A-**
+- **04 Health issues.** Finished it. Actionable: a male going quiet can precede any breathing sign, and treat the cage as well as the bird. **B**
+- **05 Cage setup.** Finished it. Actionable: half inch bar spacing, paper liner daily spot, weekly change, powder-coated steel. **B-**
+- **06 Enrichment.** Finished it. Actionable: keep the cage center empty for a flight path, perches at the ends, no sandpaper covers. **A-**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, size, and a history section nothing else repeats. The hub does not. Its Housing, Diet, Enrichment, and Health sections are compressed versions of pages 05, 06, and 04, except for diet, which exists nowhere else. And it disagrees with the deep dives repeatedly:
+
+- Cage cost. Hub: "Flight cage (24-30 in wide) | $60 | $120." Cost: "A quality flight cage runs $120 to $220 on its own."
+- Cage size. Hub: "A flight cage at least 24 to 30 inches wide." Setup: "24 inches long by 18 inches wide by 18 inches tall is a reasonable minimum."
+- Vet. Hub: "Annual avian vet check | $40 | $70." Cost: "An annual avian wellness exam... runs $50 to $100 or more."
+- Lifespan, three ways. Hub: "8 to 10 years is typical, with some canaries reaching 12 to 15." Cost: "10 to 15 years with good care, sometimes cited more conservatively at 8 to 12." Encyclopedia: "up to 24 years recorded in captivity."
+- Dark hours. Hub: "a consistent 10 to 12 hours of uninterrupted darkness." Enrichment: "Twelve hours of genuine dark for sleep, undisturbed."
+- Pairing. Hub FAQ: "A canary does best alone or in a same-sex pair." Enrichment: "Do not house two males together, since they are territorial and will fight."
+
+## 3. The set as a whole
+
+I could buy, cage, and observe a canary confidently. I could not feed one from the deep dives alone: diet exists only as one hub paragraph, with no portions, no daily amounts, no unsafe foods, no answer on grit. Still missing: a cleaning routine beyond the paper liner, what a molt actually looks like week to week, and what to do if a lone hen lays.
+
+Questions raised on one page and answered on another, unsaid:
+- Handling and cost both say confirm the sex with the seller. Neither says how. The sidebar's "Sexing, Weight, and Body Condition in Pet Birds" is the answer.
+- Handling's silent male sends you to "the health check the closing section points to." The health guide's air-sac mites section is that check, unlinked.
+- Setup's air quality warning and handling's kitchen fume warning both point at "Household Hazards for Pet Birds," unlinked.
+- The hub's egg-binding paragraph points at the shared chronic egg laying guide, unlinked.
+
+## 4. Overlap and conflict across deep dives
+
+Read twice or more: horizontal not vertical flight (cost, setup, enrichment), varied-diameter perches (setup, enrichment, hub), bathing (setup, enrichment, hub), only males sing (cost, handling, hub, encyclopedia), air quality (setup, health, handling).
+
+Conflicts:
+- Light. Setup: "Bright, indirect natural or artificial light with a consistent day and night cycle." Enrichment: "a canary kept under an artificial light schedule that never changes is being held in a permanent season."
+- The cost guide argues with itself. Headline: "Upfront Setup: Roughly $200 to $400." Its own table sums to about $150 to $273, and the hub's equivalent table sums to $88 to $170.
+- Feather picking. Health: "Feather-picking can signal mites, a diet deficiency, boredom, or general stress." Enrichment never mentions it, despite being the boredom page.
+
+## 5. One link per page
+
+- **Hub.** "Egg-binding can occur in females even without a male present." Link to the shared chronic egg laying and egg binding guide.
+- **Encyclopedia.** None needed. It is background and the sidebar does the rest.
+- **Cost.** "make sure you're buying a confirmed male, this is worth verifying with the seller directly." Link to "Sexing, Weight, and Body Condition in Pet Birds."
+- **Handling.** "A sudden loss of song is a behavior change worth checking rather than waiting out." Link to Common Canary Health Issues.
+- **Health.** "Caused by poor air quality, a dirty cage, household fumes, or drafts." Link to Canary Cage Setup.
+- **Setup.** "Bright, indirect natural or artificial light with a consistent day and night cycle supports normal behavior." Link to Canary Enrichment, which corrects it.
+- **Enrichment.** "A long flight cage beats a tall decorative one by a wide margin." Link to Canary Cage Setup, the page with the dimensions.
+
+## 6. Trust
+
+What hurt: the enrichment page says "Our health issues guide covers foot problems, which are common and preventable," and it does not, at all. A link that lies about its target is worse than no link. Then the cage price that doubles between two pages, three lifespans, and a hub that recommends a "same-sex pair" one screen after the deep dives say never two males. The birdwatching link in the handling guide reads as filler.
+
+What convinced me a keeper wrote this: "LafeberVet's method is 'lights out, perches out,' taking the bird quickly before its eyes adjust. A vet dims the room before a hand goes in. A keeper's hand in daylight is not going to go better."
+
+## 7. Set grade: B-
+
+Two strong, sourced deep dives sitting on top of a hub whose numbers contradict them, with feeding left unwritten.
+
+First two changes: reconcile lifespan, cage dimensions, cage price, and vet cost to one set of figures used everywhere. Then write a canary feeding deep dive and fix the enrichment page's false foot-problems link.
+
+## Not covered anywhere
+
+- Grit: whether canaries need it. Not mentioned on any page or in the shared list.
+- Unsafe foods for a canary (avocado, onion, chocolate). The household hazards guide is fumes and safety, not diet.
+- Daily food quantities, and what a day of greens actually looks like.
+- Routine cage and perch cleaning and disinfection beyond the paper liner.
+- Foot problems and pressure sores, promised by the enrichment page, absent from the health page, and not in the first aid and grooming guide, which covers nails and beak.
+- Molt in canaries specifically: how long, and what to feed through it. "Why Is My Bird Losing Feathers?" tells molt from plucking, not how to support one.
+- Egg binding in a canary hen. The shared guide names budgies, cockatiels, and lovebirds only, while the hub says canary hens do it too.
