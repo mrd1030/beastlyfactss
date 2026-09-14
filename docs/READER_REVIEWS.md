@@ -8133,3 +8133,171 @@ against the deep dives and the LafeberVet sheet and neither conflicts.
 - The six gaps above, in docs/READER_LOG.md.
 - Feather picking, named as a boredom sign by the health guide and absent
   from the enrichment guide.
+
+## Neon Tetra (2026-09-14, batch G, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment). One Opus 5 agent, about 86k
+tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | Carries two things nothing else does, and its tables fight the cost guide's. |
+| Encyclopedia | C+ | Read for the Hindenburg story, nothing to act on. |
+| Cost | C | Budgetable, and its tables fight the hub's. |
+| Handling | B+ | Six floor, ten to twelve better, no fin-nippers. |
+| Health issues | A- | The NTD signs, and the honest note that NTD is over-diagnosed. |
+| Tank setup | A- | The best page for doing. |
+| Feeding | A- | Twice daily in 2 to 3 minutes, and what a 1 to 2mm mouth changes. |
+| Enrichment | A | The only cited page, and the number came out ten. |
+
+Set grade: B-. "Strong on the doing pages, undermined by numbers that
+disagree across pages a reader hits in one sitting."
+
+Worth recording that the reader's first recommended change was to make
+the hub the single source for costs, lifespan, school size, and feeding
+frequency, and fix the deep dives to match. That is the opposite of the
+hub rule (RULES, Hubs): the deep dives own the numbers and the hub
+follows. The rebuild went the other way on purpose.
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs neon-tetra --strict` before the
+pass printed 8 conflicting topic groups: the hub's whole cost table
+against the cost guide's, tank size against school size, lifespan three
+ways, and the temperature band. The rest were the cost guide's own price
+tiers.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild:
+
+- Tank against school. Old hub: "A 10 to 20 gallon tank works well for a
+  proper school of 6 to 10 or more." Tank setup: "10 gallons is the
+  practical minimum for a proper school of 6. If you're aiming for the
+  better group size of 10 to 15 fish, step up to a 20-gallon long tank."
+  As the reader put it, the old hub reads as if ten fish fit in ten
+  gallons.
+- Cost, every line. Old hub: tank "$60 to $120", filter "$20 to $35",
+  food "$30 to $50". Cost guide: tank "$20 - $150", "Gentle filter | $10
+  - $20", "Micro-pellet or micro-crisp food | $15 - $30".
+- Lifespan. Old hub: "5 to 8 years is achievable with stable water
+  quality." Cost guide: "Around 5 years is achievable with good, stable
+  care, though average conditions often see neon tetras live closer to 2
+  to 3 years."
+- Feeding frequency. Old hub: "Feed small amounts once or twice a day."
+  Feeding: "Feed small amounts twice daily, morning and evening."
+- The parasite's name. Old hub, twice: "Pleistophora hyphessobrycetis."
+  Feeding guide: "Pleistophora hyphessobryconis." See Numbers decided.
+
+### Deep dives against each other
+
+- School size. Handling: "ten to twelve or more is considerably better."
+  Tank setup: "the better group size of 10 to 15 fish." Enrichment: "buy
+  ten rather than six." Checked and left alone, not a conflict: all three
+  put the target at ten or above and the floor at six, and Seriously Fish
+  gives "a mixed-sex group of at least 8-10 specimens", which sits inside
+  all of them. The hub row copies the enrichment guide, the page with the
+  study behind it.
+- Lifespan, encyclopedia against cost guide. The encyclopedia's "5-8
+  years" is in the wildLifespan field and the cost guide's figure is
+  explicitly about a home tank, so the two are measuring different
+  things. The old hub was the page that conflated them, applying the wild
+  figure to a home tank. Neither deep-dive number moved. See Numbers
+  decided.
+- Test kit. The old hub's checklist called a water test kit mandatory
+  while the cost guide's ongoing table lists only food and conditioner.
+  The rebuild keeps the test kit in the buy list, and the cost guide's
+  table is its own, so no figure moved.
+
+### Gaps, checked against the Health and More list first
+
+- How to soften hard tap water for a pH 6.0 to 7.0 tank. The shared pH,
+  GH and KH guide argues against chasing numbers and gives no method.
+- Acclimation on the day you bring them home.
+- How many fish to add at once to a newly cycled tank.
+- The target temperature and duration for ich treatment.
+- How to humanely euthanize a confirmed NTD fish, which the health guide
+  recommends and does not explain.
+- A concrete tankmate list beyond avoiding large or fin-nipping fish.
+- Breeding, mentioned only as egg-scattering in passing.
+- A weekly water change percentage. The old hub's 20 to 25% was the only
+  one in the set and no deep dive carries one, so it goes with the
+  rebuild. The enrichment guide has the rule without the number: "Small
+  regular water changes, never large occasional ones."
+
+All filed in docs/READER_LOG.md.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | "Always fully cycle a tank before adding neons" | Cycling guide | n/a, the hub's Cycling row is sourced to it |
+| Encyclopedia | the schooling line | Enrichment guide | No link slot |
+| Cost | "A school of 6 to 12 runs $10 to $40 total" | Enrichment guide | Yes |
+| Handling | "what drives disease risk in a new neon tetra tank" | Health issues guide | Yes |
+| Health issues | "quarantine new fish for 2 to 4 weeks" | Shared hospital tank guide | Yes |
+| Tank setup | "worth testing your source water" | Shared pH, GH and KH guide | Yes |
+| Feeding | "never leave a dead fish in the tank" | Health issues guide | Yes |
+| Enrichment | "Cycle the tank fully before they go in" | Shared cycling guide | Yes |
+
+Six added, one sibling link per article.
+
+### Trust
+
+The reader's doubts were the misspelled parasite, the cost tables that
+contradict each other, the lifespan spread, and "Roughly two million are
+now sold in the United States each month" with nothing behind it. The
+first two are fixed. The two-million figure sits on the encyclopedia
+page, which no deep dive repeats, and no source in this set carries it;
+filed as open rather than deleted, since removing a fact is not this
+pass's job. The sentence that most convinced it a keeper wrote the set,
+from enrichment: "Spread food across the surface instead of dropping it
+in one spot, so the whole shoal eats rather than the boldest three."
+
+### Numbers decided, both sides and the source that won
+
+- The parasite's name. The old hub said "Pleistophora hyphessobrycetis"
+  twice, the feeding guide says "Pleistophora hyphessobryconis". Checked
+  against the taxonomic literature: hyphessobryconis is correct, and it
+  is also what the cardinal tetra deep dives and the site glossary use.
+  The hub was the only wrong copy in this species' set and it is gone.
+- Lifespan. No deep-dive figure moved. The encyclopedia's 5 to 8 years is
+  a wild figure and the cost guide's is a captive one, and the published
+  figures genuinely scatter: aquarium sources variously give 2 to 3 years
+  as typical in a home tank, about 5 with good care, 5 to 8, and up to 8
+  to 10 in the wild, none of them from a source that outranks the others.
+  With no authority to pick between them and no cross-page contradiction
+  once the labels are read, both stand and the hub carries the captive
+  one, since that is the number a buyer acts on.
+- School size and temperature. Nothing moved. Seriously Fish gives "at
+  least 8-10 specimens" and "21-25°C / 70-77°F", both consistent with the
+  deep dives as written.
+
+### Encyclopedia
+
+Nothing changed. The wildLifespan field is a wild figure correctly
+labelled, and the adult size matches the deep dives.
+
+### Also fixed
+
+- Three "Our Guppy X guide covers..." sentences, on the cost, tank setup,
+  and health issues guides, rewritten so the comparison is about the fish
+  rather than about the site (RULES, Linking). All three links kept.
+
+### Open
+
+- The neon tetra disease parasite is also misspelled
+  "hyphessobrycetis" in the cardinal tetra hub's legacy health prose
+  (src/lib/data/guides/fish.js). That is a different species and outside
+  this batch, so it was left alone and is flagged here: it will disappear
+  when cardinal tetra gets its own router rebuild, but until then that
+  hub ships a wrong scientific name.
+- The health issues guide has no Sources block at all, the same gap the
+  canary health guide has.
+- The feeding guide's Sources block carries two entries as bare text with
+  no URL.
+- The encyclopedia's "roughly two million sold in the United States each
+  month", unsourced.
+- The eight gaps above, in docs/READER_LOG.md.

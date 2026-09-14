@@ -3481,3 +3481,88 @@ First two changes: reconcile lifespan, cage dimensions, cage price, and vet cost
 - Foot problems and pressure sores, promised by the enrichment page, absent from the health page, and not in the first aid and grooming guide, which covers nails and beak.
 - Molt in canaries specifically: how long, and what to feed through it. "Why Is My Bird Losing Feathers?" tells molt from plucking, not how to support one.
 - Egg binding in a canary hen. The shared guide names budgies, cockatiels, and lovebirds only, while the hub says canary hens do it too.
+
+## Neon tetra (2026-09-14)
+
+One Opus 5 agent, eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment), about 86k tokens. Full agent
+output below, unedited.
+
+---
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: tank range, temp, school size, checklist, weekly 20 to 25 percent water changes. It is the only page giving a water change percentage. **B**
+- **01 Encyclopedia.** Finished it, mostly for the Hindenburg story. Nothing to act on. **C+**
+- **02 Cost.** Finished it. Actionable: $1 to $3 per fish, $10 to $40 for a school, $100 to $300 setup. Its tables fight the hub's. **C**
+- **03 Handling.** Finished it. Actionable: six floor, ten to twelve better, no fin-nippers, guppy experience does not transfer. **B+**
+- **04 Health.** Finished it. Actionable: NTD signs, quarantine 2 to 4 weeks, never feed a dead fish to the tank, and the honest note that NTD is over-diagnosed. **A-**
+- **05 Tank setup.** Finished it. Actionable: 10 gallon floor, 20 long for ten plus, pH 6.0 to 7.0, gentle sponge filter, dark substrate, 8 to 10 hours dim light, driftwood and almond leaves. Best page for doing. **A-**
+- **06 Feeding.** Finished it. Actionable: twice daily, 2 to 3 minutes, 1 to 2mm mouths, protein 2 to 3 times a week. **A-**
+- **07 Enrichment.** Finished it fastest. Actionable: buy ten, one species not two of five, priority list. The only cited page. **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, adult size, wild diet, history appear nowhere else. The hub mostly restates the deep dives in shorter form, but it carries two things nothing else does (the 20 to 25 percent weekly water change, and a buy checklist), so it is not redundant, just inconsistent.
+
+Disagreements with the deep dives:
+
+- Tank vs school. Hub: "A 10 to 20 gallon tank works well for a proper school of 6 to 10 or more." Setup: "10 gallons is the practical minimum for a proper school of 6. If you're aiming for the better group size of 10 to 15 fish, step up to a 20-gallon long tank." The hub reads as if ten fish fit in ten gallons.
+- Costs. Hub: "10-20+ gallon tank | $60 | $120", filter "$20 | $35", food "$30 | $50". Cost guide: "10+ gallon tank | $20 - $150", "Gentle filter | $10 - $20", "Micro-pellet or micro-crisp food | $15 - $30". Every line differs.
+- Lifespan. Hub: "5 to 8 years is achievable." Cost: "Around 5 years is achievable with good, stable care, though average conditions often see neon tetras live closer to 2 to 3 years."
+- Feeding. Hub: "Feed small amounts once or twice a day." Feeding: "Feed small amounts twice daily, morning and evening."
+- Parasite name. Hub: "Pleistophora hyphessobrycetis." Feeding: "Pleistophora hyphessobryconis." One is wrong, and the health guide never names it at all.
+
+## 3. The set as a whole
+
+Yes, I could set up, stock, feed and keep them. Missing: what to do if my tap water is hard, an acclimation procedure for the day I bring them home, how many to add at once, a tankmate list beyond "avoid angelfish or oscars", the target temperature for ich treatment, and how to humanely euthanize a confirmed NTD fish after the page tells me to.
+
+Questions raised on one page and answered on another without saying so:
+
+- Handling: "Adding them to a tank that hasn't been properly cycled yet" and "That second mistake in particular is a big part of what drives disease risk." The health page is right there.
+- Cost: lifespan "leans on water stability" with no pointer to the setup page that defines stability.
+- Setup and health both say quarantine 2 to 4 weeks, and neither says what a quarantine tank is. The hospital tank guide in the sidebar does.
+- Enrichment: "take real care netting them" with no method; the transport guide is the nearest thing.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: cycle the tank first, quarantine 2 to 4 weeks, small mouths need micro food, dim light and dense planting. Feeding and enrichment both cover diet; enrichment's version adds the only genuinely new thing, spreading food across the surface.
+
+Conflicts:
+
+- School target. Handling: "ten to twelve or more is considerably better." Setup: "the better group size of 10 to 15 fish." Enrichment: "buy ten rather than six."
+- Temperature. Hub: "heated between 72 and 78 degrees F." Setup: "70 to 81°F works, with 72 to 78°F being a solid, commonly recommended target."
+- Test kit. The hub checklist lists "Water test kit (confirm cycling before stocking)" but the cost guide's ongoing table has only food and conditioner, so the budget omits the tool the hub calls mandatory.
+
+## 5. One link per page
+
+- Hub, "Always fully cycle a tank before adding neons" to How to Cycle a Fish Tank.
+- Encyclopedia, "rely on large schools for both natural behavior and reduced individual stress" to the enrichment guide.
+- Cost, "A school of 6 to 12 runs $10 to $40 total" to the enrichment guide, which is where the number is defended.
+- Handling, "That second mistake in particular is a big part of what drives disease risk in a new neon tetra tank" to the health guide.
+- Health, "quarantine new fish for 2 to 4 weeks before adding them to an established tank" to the hospital tank guide.
+- Setup, "it's worth testing your source water before assuming your setup is automatically suitable" to Freshwater pH, GH, and KH.
+- Feeding, "never leave a dead fish in the tank or let tankmates scavenge a visibly sick fish's body" to the health guide.
+- Enrichment, "Cycle the tank fully before they go in" to How to Cycle a Fish Tank.
+
+## 6. Trust
+
+Doubts: the misspelled parasite on the hub, cost tables that contradict each other on the same site, 5 to 8 years against 2 to 3, and "Roughly two million are now sold in the United States each month" with nothing behind it. The enrichment page citing Saxby et al. 2010 by name, journal and year raised the set back up.
+
+Most convincing sentence: "Spread food across the surface instead of dropping it in one spot, so the whole shoal eats rather than the boldest three."
+
+## 7. Set grade: B-
+
+Strong on the doing pages, undermined by numbers that disagree across pages a reader hits in one sitting.
+
+First two changes: make the hub the single source for costs, lifespan, school size and feeding frequency and fix the deep dives to match; add real in-body links from the hub, handling and setup pages into the cycling and quarantine guides.
+
+## Not covered anywhere
+
+- How to soften hard tap water for a pH 6.0 to 7.0 tank. The pH, GH and KH guide argues against chasing numbers and does not give a method.
+- Acclimation on the day you bring them home, bag float, drip, or neither.
+- How many fish to add at once to a newly cycled tank, and whether to buy ten in one trip.
+- The target temperature and duration for ich treatment.
+- How to humanely euthanize a confirmed NTD fish.
+- A concrete tankmate list beyond avoiding large or fin-nipping fish.
+- Breeding, mentioned only as "egg-scattering" in passing.
