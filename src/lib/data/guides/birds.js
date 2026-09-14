@@ -167,11 +167,11 @@ export const birdGuides = [
         { label: "Flight distance", value: "A long flight cage beats a tall decorative one by a wide margin. Leave the middle open so there is a flight path, and resist the urge to fill the center with toys. A study measuring stress hormone in canary droppings found a significant change in corticosterone excretion when group-bred birds were restrained in smaller cages.", source: "canary-enrichment-guide" },
         { label: "Perches", value: "Perches of varied diameter and natural branch with irregular surfaces let the foot change position. Uniform dowel of one thickness holds the foot in a single position all day, which is how pressure sores start. Site them at the ends of the cage so the flight path stays clear, and avoid sandpaper covers entirely.", source: "canary-enrichment-guide" },
         { label: "Temperature", value: "Normal household temperature, 65 to 80°F, works well, with 65 to 75°F frequently cited as ideal. Keep the cage away from drafts, air conditioning vents, and radiators. No supplemental heat is needed indoors.", source: "canary-tank-setup-guide" },
-        { label: "Lighting", value: "Bright, indirect natural or artificial light with a consistent day and night cycle supports normal behavior and, in males, healthy singing. Avoid placing the cage in direct sun where it could overheat.", source: "canary-tank-setup-guide" },
+        { label: "Lighting", value: "Bright, indirect natural or artificial light with a clear day and night cycle supports normal behavior and, in males, healthy singing. Let the day length follow the season instead of holding it fixed year round, and avoid placing the cage in direct sun where it could overheat.", source: "canary-tank-setup-guide" },
         { label: "Cage lining", value: "A paper liner on the cage floor, spot-cleaned daily and fully changed weekly. Avoid galvanized metal or lead-painted cage components entirely, powder-coated steel is the safe standard.", source: "canary-tank-setup-guide" },
         { label: "Air quality", value: "Canaries are extremely sensitive to airborne toxins. Non-stick cookware fumes, aerosols, and smoke can all be genuinely dangerous, so keep the cage well away from the kitchen and any source of fumes or sprays.", source: "canary-tank-setup-guide" },
         { label: "Bathing", value: "A shallow bird bath. Canaries genuinely enjoy bathing and it supports healthy feather condition.", source: "canary-tank-setup-guide" },
-        { label: "Diet", value: "A granivore that cannot live on seed alone: an all-seed diet is deficient in vitamins, minerals, and protein, including calcium and vitamin A. Build on a quality canary seed mix or pellet and supplement daily with fresh greens and vegetables, plus egg food as a protein source during molt and breeding.", source: "canary-tank-setup-guide" },
+        { label: "Diet", value: "A granivore that cannot live on seed alone: an all-seed diet is deficient in vitamins, minerals, and protein, including calcium and vitamin A. Build on a quality canary seed mix or pellet and supplement daily with fresh fruits and vegetables, plus egg food as a protein source during molt and breeding.", source: "canary-tank-setup-guide" },
         { label: "How much", value: "Up to 30% of body weight a day, which for a 12 to 30 gram bird is a small measured amount rather than a permanently heaped dish.", source: "canary-tank-setup-guide" },
         { label: "Grit and cuttlebone", value: "Canaries do not require grit, but they should be offered a cuttlebone, which supplies the calcium a seed-based diet runs short on.", source: "canary-tank-setup-guide" },
         { label: "Why he sings", value: "The absence of a potential mate increases song production, and the presence of a mate greatly reduces it. A male singing constantly is doing what an unpaired male does. Song volume is not a welfare readout.", source: "canary-enrichment-guide" },
@@ -194,7 +194,7 @@ export const birdGuides = [
     emergencyCard: {
       source: "canary-health-issues-guide",
       callNow: [
-        "A canary that stops singing outside the summer molt",
+        "A loss of song in a previously singing male",
         "Fluffed or dull feathers",
         "General lethargy",
         "Open-mouth breathing, clicking or wheezing sounds",

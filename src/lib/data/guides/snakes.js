@@ -213,6 +213,7 @@ export const snakeGuides = [
         "Unusual amounts of time spent soaking in the water bowl",
         "Cheesy or yellowish material around the gums, along with swelling",
       ],
+      vetLine: "Early cases of respiratory infection sometimes resolve once parameters are corrected, advanced cases need a vet for antibiotics. Mouth rot: always see a vet, this can become life-threatening if untreated. Mites can become genuinely life-threatening if left unaddressed, and treatment needs to cover both the snake and a full enclosure cleaning. The vast majority of health problems in captive kingsnakes trace directly to incorrect temperatures, inadequate humidity, dirty conditions, or improper feeding, not genetic susceptibility.",
     },
     routes: [
       { slug: "california-kingsnake-cost-guide", line: "$45 to $300 for the snake, $200 to $500 for the setup, $15 to $30 a month, and the one cost consideration that isn't about money." },
