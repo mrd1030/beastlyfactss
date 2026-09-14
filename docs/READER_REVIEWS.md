@@ -4175,6 +4175,48 @@ in one review section.
   old-hub FAQs replaced with deep-dive copies. VCA feeding split and
   PubMed 10649752 both verified real. Pass grade B-. Nothing merged.
 
+- 2026-09-14, batch F (pacman frog, zebra finch, angelfish, tokay gecko,
+  sugar glider), branch claude/hub-pacman-frog-80291s, five classes:
+  amphibian, bird, fish, gecko, small mammal. Five router hubs built, 130
+  first-week rows between them. Pacman frog: the health guide's
+  once-a-week adult feeding corrected to the feeding guide's 1 to 3 times
+  a week against a veterinary clinic and PetMD, the feeding guide's 50 to
+  80% humidity to tank setup's sourced 60 to 80%, the encyclopedia's 3 to
+  5 inch adult size to the handling guide's sourced 4 to 7, and its 6 to
+  15 year wild lifespan rewritten on the undocumented-in-the-wild pattern
+  against AnAge's 14.7 years captive. Zebra finch: the cost guide's 5 to
+  10 year captive lifespan corrected to Animal Diversity Web's
+  species-specific 5 to 7, the pellet share stated once instead of as two
+  sources at odds, and the wild flock-size clash between the encyclopedia,
+  tank setup and a peer-reviewed field study resolved by one verb rather
+  than a figure. Angelfish: the encyclopedia's 10 to 12 year wild lifespan
+  moved to the deep dives' sourced 8 to 12, the old hub's 78 to 84°F
+  retired for tank setup's 78 to 82, and the group-size and prey-threshold
+  clashes resolved by scoping one sentence and adding one link. Tokay
+  gecko: a sourced Diet Basics section added to the tank setup guide, since
+  this species has no feeding guide and the old hub's diet prose was the
+  set's only feeding content, and the solo-versus-pair conflict settled
+  toward the 2024 pair-housing study without flipping the default. Sugar
+  glider: the cost guide's three-state legal paragraph replaced by the
+  legal guide's eight-jurisdiction list, the encyclopedia's ounce weight
+  replaced by the veterinary gram ranges, and the hub funFact's 150-foot
+  glide moved to the Australian Museum's 50 m. Twenty-nine in-body links
+  added across the five sets, one sibling link per article.
+- 2026-09-14, batch F species check (one Fable agent covering all five
+  species on the shared branch, the model decision recorded in the batch
+  prompt): found and fixed a sugar glider emergency-card bullet the health
+  guide never states, an angelfish hub row that mixed a handling-guide
+  sentence under the enrichment guide's source (split into two rows), a
+  zebra finch hub diet row left stale against the batch's own later fix to
+  that guide, a zebra finch cost guide `description` field still carrying
+  the retired 5 to 10 year lifespan, a hedge dropped from the angelfish
+  handling guide when a retailer attribution was cut ("can become
+  territorial" restored), an angelfish feeding-guide date bumped for a
+  link only, and three review-file notes that did not match the diff. It
+  also traced the sugar glider adult-weight figure to the VCA page that
+  actually states it and added that page to the feeding guide's Sources.
+  Pass grade B+.
+
 ## Green Iguana (2026-09-09, first pass)
 
 Extractor set of seven pages (hub, encyclopedia, cost, handling, health issues,
@@ -7785,3 +7827,142 @@ claim moved.
 - The health issues guide is thin outside metabolic bone disease: dental
   disease gets one sentence and no signs, which is why the emergency card
   has nothing to copy for it.
+
+## Pacman frog, zebra finch, angelfish, tokay gecko, sugar glider (2026-09-14, batch F species check)
+
+One Fable agent covering all five species on branch
+claude/hub-pacman-frog-80291s from base 4345819, run once after every
+species was done and pushed, per the batch prompt. It read diffs rather
+than whole files, opened source URLs to check the batch's number
+decisions, fixed every finding on the branch, and committed
+"Pacman frog, zebra finch, angelfish, tokay gecko, sugar glider: species
+check" (bb355a0). Nothing merged.
+
+### Scope
+
+Clean. The whole diff is the five guide entries, the five species' MDX,
+this file, docs/READER_LOG.md, and four encyclopedia entries at one field
+each, all for batch species. No shared class guide row, no src file beyond
+the guide data, RELATED_ARTICLES, articleLabels and READMEFIRST untouched.
+
+### Pacman frog: clean
+
+Every hub row matches its deep dive with no source name in the prose. The
+five emergency bullets cover every vet cue in the health guide and the
+vetLine keeps its "rather than a wait-and-see approach". Both number
+decisions verified by opening the sources: Tree of Life Exotic Pet Medical
+Center gives "4 to 7 inches (females are larger)", "60 to 80%" humidity,
+and "Adults: feed 2 to 3 times per week"; PetMD gives males 3 to 4 inches,
+females 4 to 8, 70 to 80% humidity, and adults 1 to 2 times a week; AnAge
+gives 14.7 years captive at data quality "Acceptable". All four decisions
+hold as filed, every same-page copy moved with them, and the dates are
+right in both directions.
+
+### Zebra finch: fixed on the branch
+
+- Hub Diet split row read "Pellets roughly 70% of the diet" while the
+  feeding guide, after this batch's own fix, states "roughly 70% ... and
+  60% at an absolute minimum". The row had gone stale against the fix.
+  Now carries both figures.
+- The cost guide's frontmatter `description` still said "a 5 to 10 year
+  lifespan" after the body and FAQ moved to 5 to 7. Fixed. This is the
+  same-page-copy failure the batch prompt names, caught in a field the
+  numbers checker does not read.
+- Review file said "Six added" and then listed seven links, since tank
+  setup carries two. Corrected.
+- Confirmed: Animal Diversity Web states "captivity 5 to 7 years" and
+  "wild 2 to 3 years", so the lifespan change went the right way;
+  `zebra-finch-parrotlet-overview` is correctly treated as a vs piece and
+  not routed; no date bumped, which is right when every guide's publish
+  date is still ahead of today.
+
+### Angelfish: fixed on the branch
+
+- The hub's Tankmates row put a handling-guide sentence, the 3-inch prey
+  threshold and the raised-alongside point, under the enrichment guide's
+  `source`. Split into a Prey threshold row sourced to handling and a
+  Tankmates row sourced to enrichment, both in their articles' words.
+- A hedge was lost. Cutting the Petco attribution from the handling guide
+  turned "freshwater angelfish can become territorial and aggressive" into
+  "become". Restored "can become". This is the Never-list item the
+  de-narration pass came closest to breaking.
+- The feeding guide's lastUpdated had been bumped to 2026-09-14 with
+  nothing changed but a link and narration. Reverted to 2026-07-31. The
+  tank setup bump was kept, since "four to six adults" is a fact
+  clarification.
+- Review file claimed "one word added ... in its body and its FAQ" for a
+  FAQ that was rewritten whole. Corrected.
+- Confirmed: Aquarium Co-Op states "8 to 12 years", so the encyclopedia
+  change went the right way, and no number change went against the source
+  ranking.
+
+### Tokay gecko: fixed on the branch, review file only
+
+- Every hub row matches, including the 12-bullet emergency card copied
+  from the health guide's call-the-vet list bullet for bullet, and the
+  legal row against the legal guide.
+- The new Diet Basics section was verified figure by figure: ReptiFiles
+  gives "juvenile tokays should be fed daily, and full-grown adults ...
+  every other day", "no larger than the gecko's head", and the
+  five-minute window; PetMD (Melissa Witherell, DVM) gives the same
+  schedule. Every figure in the section is stated by a source.
+- The cohousing call was checked against the ranking and upheld: the 2024
+  Applied Animal Behaviour Science study outranks ReptiFiles and PetMD,
+  both of which say house alone, so losing the absolute while keeping the
+  default is correct.
+- Review file said the two opened sources agree "with neither" old hub
+  figure, but PetMD does carry the "space between the gecko's eyes" prey
+  rule the old hub used. Corrected.
+- Noted and left: the health guide's new closing line, that the leopard
+  gecko and crested gecko "fail in the same three places", is a claim
+  about two other species that nobody researched.
+
+### Sugar glider: fixed on the branch
+
+- The emergency card's sixth bullet, "Weight that has moved in either
+  direction on a diet you are not certain about", appears nowhere in the
+  health guide, which does not use the word "weight" at all. Replaced with
+  that guide's own Malnutrition and Obesity line. This is the one place
+  the batch wrote a bullet instead of copying one.
+- The adult-weight provenance in this file was wrong. VCA's sugar glider
+  feeding page, which the feeding guide cites, carries the oxalate list
+  and no weights; VCA's Sugar Gliders, Owning page states both ranges
+  exactly. The figure is a veterinary-hospital figure and the
+  encyclopedia change stands, and that page was added to the feeding
+  guide's Sources so the claim is traceable. Note corrected here.
+- Confirmed: the Australian Museum states "glide up to 50 m", so the hub
+  funFact's 165 feet holds, and the cost guide's move to the legal guide's
+  eight-jurisdiction list went the right way with the date bump justified.
+- Noted and left: the feeding guide's KeyTakeaway went from naming two
+  brands as vet-endorsed to "Any of those", which widens the endorsement
+  to all five. Left because the sentence before it already calls all five
+  vet-endorsed.
+
+### Gates on the branch head
+
+check-internal-links, check-related-articles, check-affiliate-mdx,
+check-cost-coverage, check-seo-tags, check-encyclopedia, check-voice
+--strict (0 errors), and eslint --quiet all pass.
+check-species-numbers --strict exits 1 for all five, as it also does for
+the reconciled leopard gecko control, because it exits on any multi-value
+topic group; parsed per species, every remaining hub value without a
+deep-dive match is a shared-guide row, the encyclopedia-only adult size
+row, or a grouping artifact. No hub line disagrees with a deep dive.
+check-voice per changed slug against the same slug at 4345819: no warning
+count went up anywhere, and the pacman frog and sugar glider feeding
+guides each dropped one.
+
+### Pass grade: B+
+
+"The session followed the router rules closely, cited real sources it had
+opened for every number it moved (all nine spot-checked sources said what
+the review claims, bar one mis-cited VCA page), kept hedges through a lot
+of de-narration with one slip, and filed complete review sections. What
+keeps it off an A: a hub row stated a bullet the health guide never says,
+one row mixed two sources, one row went stale against its own later fix,
+one hedge was dropped, one date bumped for a link, and three review-file
+notes did not match the diff. Small, but each is the kind of thing the
+check exists to catch, and the hub-row ones are the same step that leaked
+in batches D and E."
+
+No species was given a redo verdict, so no second check round ran.
