@@ -6838,3 +6838,215 @@ rulebook describes rather than a conflict to resolve.
   four to five. Not touched here (nothing may be deleted, and adding sources is
   research, not a fix), but the health guide (two, one of them unlinked) and the
   cost guide (two, one unlinked) are in the same position.
+
+## Pacman Frog (2026-09-14, batch F, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment). One Opus 5 agent, about 87k
+tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | Buyable and buildable from the checklist alone, but its numbers fight everything downstream. |
+| Encyclopedia | B- | Actionable only in telling you there are two species and a hybrid sold under one name. |
+| Cost | B | You can budget from it: frog $15-100, setup ~$100-225, vet $50-150, emergency ~$250. |
+| Handling | B+ | Tongs, one frog per tank, support from underneath, expect a jump. |
+| Health issues | B+ | Symptom lists specific enough to act on at 11pm. |
+| Tank setup | A- | The side-mounted heat mat rule alone justified the page. |
+| Feeding | A | Best page in the set. |
+| Enrichment | A | A weekly weigh-in and a real warning sign, from the page that looked least likely to have one. |
+
+Set grade: B-. "Strong deep dives undercut by a hub that contradicts them
+on the numbers a new keeper will copy first."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs pacman-frog --strict` before the
+pass printed 15 conflicting topic groups. The ones that were real
+decisions, not the checker grouping two different figures under one
+label: humidity three ways (hub 70 to 90%, tank setup 60 to 80%, feeding
+50 to 80%), adult feeding frequency three ways (hub every 3 to 4 days,
+health once a week, feeding 1 to 3 times a week), adult size (handling 4
+to 7 inches against the encyclopedia's 3 to 5), and lifespan (cost 6 to
+10 with 10 to 15 on excellent care, against the encyclopedia's 6 to 15
+filed as a wild figure). Everything else in the list was one page's own
+sentence carrying two ranges, or the old hub restating the cost guide's
+table.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild:
+
+- Humidity. Old hub: "Humidity: 70 to 90%." Tank setup: "60 to 80% is the
+  target range." Feeding: "50 to 80% humidity." Three ranges for one
+  animal. The router hub carries tank setup's 60 to 80%, and the feeding
+  guide was corrected to match (see Fixes).
+- Adult feeding. Old hub: "Adults eat every 3 to 4 days." Health issues:
+  "adults should eat roughly once a week." Feeding: "Treat roughly 1 to 3
+  times a week as the range." The router hub carries the feeding guide's
+  figure, and the health guide was corrected to match.
+- Heat mat. Old hub checklist: "Low-wattage heat lamp or under-enclosure
+  mat with thermostat." Tank setup: "Never place a heat mat under the
+  tank." The router hub's Heat source row carries tank setup's rule in
+  full, and the buy list reads "side-mounted heat mat on a thermostat".
+- Substrate changes. Old hub: "Change the substrate monthly," billed at
+  $30 to $50 a year. Tank setup: "Change the substrate every 2 to 3
+  months." The router hub carries the deep dive's interval.
+- Night temperature. Old hub: "Temperature: 75 to 85 degrees F", no night
+  drop anywhere. Tank setup: "dropping to 65 to 75°F at night." The
+  router hub's Temperature row carries the whole sentence.
+- Rodents. Old hub: "Offer appropriately sized live or freshly deceased
+  prey... Occasional pinky mice for large adult frogs." Feeding: "thawed,
+  never live, never microwaved." The router hub's Diet row is the feeding
+  guide's.
+
+### Deep dives against each other
+
+- Adult feeding schedule. Health issues: "adults should eat roughly once
+  a week." Feeding: "Several sources say 1 to 2 times a week, an exotics
+  veterinary clinic says 2 to 3 times a week... roughly 1 to 3 times a
+  week as the range." Settled at 1 to 3 times a week, see Fixes.
+- Adult size. Handling: "Pacman frogs stay smaller, typically 4 to 7
+  inches." Encyclopedia: "3-5 inches (7-12 cm) body." Settled at 4 to 7
+  inches, see Encyclopedia.
+- UVB. Tank setup: "No special lighting is required... Low-level UVB is
+  optional." Health issues: metabolic bone disease "Caused by missing
+  calcium supplementation or UVB," which reads as though UVB were
+  required. Reworded on the health guide so both pages say the same
+  thing.
+- Read three times with no disagreement, and noted by the reader as
+  padding rather than a conflict: the dinosaur bite-force FunFact appears
+  in the cost, handling, and tank setup guides. Left alone, a FunFact is
+  never deleted under the batch rules and none of the three restates a
+  body sentence.
+
+### Gaps, checked against the Health and More list first
+
+- When a juvenile becomes an adult for feeding-schedule purposes. Neither
+  the feeding guide nor any shared amphibian guide gives an age or a size.
+- Routine spot-cleaning between full substrate changes.
+- How to actually dechlorinate water. The shared amphibian quarantine and
+  water guide covers hardness and names a conditioner, but no page in this
+  set walks the step.
+- What a healthy frog looks like at the point of purchase.
+
+All four filed in docs/READER_LOG.md. None is fixable with a link or a
+number.
+
+### Stranded questions
+
+The cost guide's "Impaction, the risk that defines this species, is what
+usually leads to a bill like that" never pointed at the health guide.
+The feeding guide's impaction bullet never pointed at the page that
+covers it. The handling guide's "to protect yourself from Salmonella"
+never pointed at the shared hygiene guide sitting in its own sidebar. All
+three fixed.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | "If a frog consistently refuses food for more than 2 to 3 weeks..." | Feeding guide | n/a, that hub prose is gone |
+| Encyclopedia | "Breeders also cross Ceratophrys cranwelli with the Surinam horned frog..." | Cost guide | No, the encyclopedia is structured data with no link slot |
+| Cost | "Impaction, the risk that defines this species, is what usually leads to a bill like that." | Health issues guide | Yes |
+| Handling | "to protect yourself from Salmonella" | Salmonella and reptile hygiene guide | Yes |
+| Health issues | "use fine coco fiber rather than gravel or coarse bark" | Tank setup guide | Yes, anchored on "gravel or coarse bark" since "fine coco fiber" is already an affiliate link |
+| Tank setup | "a real cause of this species' impaction risk" | Health issues guide | Yes |
+| Feeding | "Blind lunging at prey can mean accidentally swallowing loose substrate" | Health issues guide | Yes |
+| Enrichment | "obesity plus impaction are the two defining captive problems" | Health issues guide | Yes |
+
+Six added, each article ending at exactly one link to a sibling guide,
+the cap the checker enforces.
+
+### Trust
+
+The reader named the humidity spread, the once-a-week against 2-to-3-times
+gap, and a hub checklist recommending the burn risk its own deep dive
+forbids. The sentence that most convinced it a keeper wrote the set, from
+tank setup: "Never place a heat mat under the tank. Pacman frogs burrow to
+the substrate floor, and a mat positioned underneath risks burning a frog
+that's buried directly on top of it."
+
+### Reader's two changes
+
+1. Make the hub derive its numbers from the deep dives. Done, the hub is
+   now a router and keeps no figure of its own.
+2. Add the juvenile-to-adult transition point and a plain dechlorination
+   method. Not done, both are new content rather than a number or a link,
+   and both are filed in docs/READER_LOG.md.
+
+### Numbers decided, both sides and the source that won
+
+- Adult feeding frequency. Health issues said "roughly once a week",
+  citing BackwaterReptiles, a retailer care page listed in Sources as a
+  bare homepage. Feeding said "roughly 1 to 3 times a week", citing PetMD
+  ("Juvenile frogs should be fed daily, while adults should be fed one to
+  two times a week") and Tree of Life Exotic Pet Medical Center ("Adults:
+  Feed 2-3 times per week"). Both source pages were opened. A veterinary
+  hospital outranks a retailer care sheet, and 1 to 3 times a week is the
+  span the two opened sources actually cover between them; once a week is
+  the bottom of one of them stated as the rule. Feeding wins, and it is
+  also the page whose subject this is. The health guide's body, its
+  obesity FAQ, and its seoDescription all moved to 1 to 3 times a week.
+- Humidity. Feeding said 50 to 80%, tank setup 60 to 80%. Neither of
+  feeding's own opened sources states 50: PetMD gives "70-80%" and Tree
+  of Life gives "high humidity (60-80%)". Tank setup's 60 to 80% is what
+  the veterinary source states, and tank setup is the subject page.
+  Feeding corrected to 60 to 80%.
+- Adult size. Handling said "typically 4 to 7 inches", the encyclopedia
+  "3-5 inches (7-12 cm)". Tree of Life gives "Adult Size: 4-7 inches
+  (females are larger)", PetMD gives males 3 to 4 inches and females 4 to
+  8, and SeaWorld's species page gives a snout-to-vent length of 14 cm
+  (5.5 in). The deep dive's figure is the one a source states outright.
+  The encyclopedia moved to 4-7 inches (10-18 cm).
+- Lifespan. The cost guide's 6 to 10 years, with 10 to 15 on excellent
+  care, is a captive figure and stands. The encyclopedia carried "6-15
+  years" under Wild Lifespan, which is a captive range wearing a wild
+  label. AnAge gives a maximum longevity of 14.7 years in captivity at
+  data quality "Acceptable" and no wild figure at all; SeaWorld gives an
+  average of 6 years. Rewritten the way the crested gecko and Russian
+  tortoise entries already handle an undocumented wild lifespan.
+
+### Encyclopedia
+
+Two fields changed on `pacman-frog` in src/lib/data/encyclopedia/amphibians.js,
+both researched against opened sources as above, nothing else in the file
+touched:
+
+- `adultSize`: "3-5 inches (7-12 cm) body; 0.5-1.5 lbs" to "4-7 inches
+  (10-18 cm) body; 0.5-1.5 lbs". The weight half was left alone: no deep
+  dive states a weight, so there is no conflict to settle there.
+- `wildLifespan`: "6-15 years" to "Not well documented in the wild; about
+  6 years is the usual figure given, with captive records reaching 14.7
+  years".
+
+### Also fixed
+
+- Cost guide, same-page contradiction. The setup FAQ read "Roughly $100
+  to $225 for the frog and everything it needs", while the body heading
+  it answers is "Upfront Setup: Roughly $100 to $225" and the body
+  separately says a first setup "frog included, commonly totals around
+  $225". The FAQ now reads "for the enclosure and everything that goes in
+  it, before the frog itself". No number changed.
+- Source narration removed from the deep dives, per RULES, "The source
+  goes in the block, not the sentence", which is also what the hub rows
+  need before they can copy a figure. Every number and every hedge kept.
+  Listed before and after in the fixes commit.
+- The feeding guide's closing "Check the Pacman Frog encyclopedia profile
+  for more", a sentence that existed only to carry a link.
+
+### Open
+
+- The four content gaps above, all in docs/READER_LOG.md.
+- Sources quality across this set. Tank setup and health issues each run
+  a single entry, and four entries across the set are bare homepages
+  (mramphibian.com, backwaterreptiles.com, a-z-animals.com,
+  thecritterdepot.com) where RULES asks for the page that carries the
+  claim. Nothing was deleted, and adding sources is research rather than
+  a fix, so this is left as a research job for the set.
+- The cost guide and health guide both close on an "Our White's Tree Frog
+  X guide covers..." sentence, the shape RULES, Linking rules out. Left
+  alone: neither the reader nor the checker flagged them, both carry a
+  real cross-species link, and rewriting them means asserting something
+  new about the other species.

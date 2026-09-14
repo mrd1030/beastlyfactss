@@ -2962,3 +2962,92 @@ Four excellent deep dives undermined by a hub that disagrees with them on humidi
 - Choosing a breeder and health-checking the animal at purchase: quarantine starts after you own it.
 - Enclosure cleaning cadence and full substrate change interval: the stool guide is a daily observation check, not a cleaning schedule.
 - Brumation: not mentioned once.
+
+## Pacman frog (2026-09-14)
+
+One Opus 5 agent, eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment), about 87k tokens. Full agent
+output below, unedited.
+
+---
+
+# Pacman Frog Page Set: A Buyer's Review
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. I can buy the list and set the tank up from the checklist alone. But its numbers are the ones that fight everything downstream. **C+**
+- **01 Encyclopedia.** Finished it, short enough. Actionable only in that it tells me there are two species and a hybrid sold under one name. **B-**
+- **02 Cost.** Finished it. I can budget: frog $15-100, setup ~$100-225, vet $50-150, emergency ~$250. **B**
+- **03 Handling.** Finished it. Clear rules: tongs, one frog per tank, support from underneath, expect a jump. **B+**
+- **04 Health.** Finished it. Symptom lists are specific enough to act on at 11pm. **B+**
+- **05 Tank setup.** Finished it. The side-mounted heat mat rule alone justified the page. **A-**
+- **06 Feeding.** Finished it. Best page in the set: it tells me where sources disagree instead of picking one and hiding it. **A**
+- **07 Enrichment.** Finished it, and it was the one I didn't expect to. Gives me a weekly weigh-in and a real warning sign. **A**
+
+## 2. Do the hub and encyclopedia earn their place?
+
+The encyclopedia does, barely: the Bell 1843 history and the cranwelli/ornata/fantasy-frog split appear nowhere else, and that matters when a shop labels everything "Pacman frog."
+
+The hub does not. It restates the deep dives at lower resolution and, worse, disagrees with them:
+
+- **Humidity.** Hub: "Humidity: 70 to 90%." Tank setup: "60 to 80% is the target range." Feeding: "50 to 80% humidity." Three ranges for one animal.
+- **Adult feeding.** Hub: "Adults eat every 3 to 4 days." Health: "adults should eat roughly once a week." Feeding: "roughly 1 to 3 times a week as the range." The hub number is nearly twice the health guide's, on a species both call obesity-prone.
+- **Heat mat.** Hub checklist: "Low-wattage heat lamp or under-enclosure mat with thermostat." Tank setup: "Never place a heat mat under the tank." The hub tells me to do the thing the deep dive calls a burn risk.
+- **Substrate changes.** Hub: "Change the substrate monthly," billed annually at $30-50. Tank setup: "Change the substrate every 2 to 3 months." Cost: "substrate only needs changing every couple of months." The hub's own budget line is built on the wrong frequency.
+- **Night temperature.** Hub gives "75 to 85 degrees F" flat; tank setup adds "dropping to 65 to 75°F at night." The hub reads as if no night drop exists.
+- **Rodents.** Hub: "Offer appropriately sized live or freshly deceased prey... Occasional pinky mice." Feeding: "thawed, never live, never microwaved."
+
+## 3. Could I actually keep one?
+
+Yes, mostly. I could buy, build, feed, and spot trouble. Still missing:
+
+- No page says **when a juvenile becomes an adult** for schedule purposes. Age? Size? Both schedules exist; the switch point doesn't.
+- No **routine cleaning** between full substrate changes. Spot-clean waste daily? Weekly?
+- **How to dechlorinate.** Four pages say "dechlorinated." None say conditioner, standing time, or brand-neutral method.
+- **What a healthy frog looks like at purchase.**
+
+Questions raised on one page and answered on another, unsignposted: the hub's "If a frog consistently refuses food for more than 2 to 3 weeks, investigate environmental conditions" is a whole feeding-guide section. The health guide's "a young frog under about a year old going dormant... worth a vet call" is expanded properly in the feeding guide. The cost guide's "impaction, the risk that defines this species" is the health guide's core.
+
+## 4. Overlap and conflict across deep dives
+
+Read three times: the identical dinosaur bite-force fun fact in the cost, handling, and tank setup pages. Read twice: cannibalism, tongs-not-fingers, impaction-from-substrate.
+
+Real conflicts:
+
+- **Adult schedule.** Health: "adults should eat roughly once a week." Feeding: "an exotics veterinary clinic says 2 to 3 times a week."
+- **Adult size.** Handling: "Pacman frogs stay smaller, typically 4 to 7 inches." Encyclopedia: "3-5 inches (7-12 cm) body." Hub: "3 to 5 inches in diameter."
+- **Weight.** Hub: "weigh over 200 grams." Encyclopedia: "0.5-1.5 lbs," which starts above 225 g.
+- **Sexing age.** Handling: "commonly by around 5 to 6 months old." The hub gives no age at all.
+- **UVB.** Tank setup: "No special lighting is required." Health: MBD "Caused by missing calcium supplementation or UVB."
+
+## 5. The one link each page needed
+
+- **Hub:** "If a frog consistently refuses food for more than 2 to 3 weeks, investigate environmental conditions" -> feeding guide.
+- **Encyclopedia:** "Breeders also cross Ceratophrys cranwelli with the Surinam horned frog to produce the captive hybrid marketed as the fantasy frog" -> cost guide, where morph prices live.
+- **Cost:** "Impaction, the risk that defines this species, is what usually leads to a bill like that" -> health issues guide.
+- **Handling:** "to protect yourself from Salmonella" -> the Salmonella guide sitting unlinked in the sidebar.
+- **Health:** "use fine coco fiber rather than gravel or coarse bark" -> tank setup guide.
+- **Tank setup:** "a real cause of this species' impaction risk" -> health issues guide.
+- **Feeding:** "Impaction. Blind lunging at prey can mean accidentally swallowing loose substrate" -> health issues guide.
+- **Enrichment:** "obesity plus impaction are the two defining captive problems" -> health issues guide.
+
+## 6. Trust
+
+What hurt: the humidity spread, the two-versus-seven-times-a-week feeding gap, and a hub checklist that recommends the burn risk its own deep dive forbids. The repeated dinosaur fact reads as padding. The hub's flat "never distilled or reverse-osmosis water" is asserted with no reasoning anywhere.
+
+What convinced me a keeper wrote this: "Never place a heat mat under the tank. Pacman frogs burrow to the substrate floor, and a mat positioned underneath risks burning a frog that's buried directly on top of it." Runner-up, the enrichment page noting that the validated body-condition scale threw out photos of restrained frogs "because holding an animal distorts the very landmarks you are trying to read."
+
+## 7. Set grade: B-
+
+Strong deep dives undercut by a hub that contradicts them on the numbers a new keeper will copy first.
+
+First two changes:
+1. Make the hub derive its numbers from the deep dives, starting with humidity, adult feeding frequency, the heat mat line, and substrate change interval.
+2. Add the juvenile-to-adult transition point and a plain dechlorination method.
+
+## Not covered anywhere
+
+- When a juvenile becomes an adult for feeding-schedule purposes (age or size).
+- Routine spot-cleaning between full substrate changes.
+- How to actually dechlorinate water; the Amphibian Quarantine guide covers hardness, not this.
+- What to look for in a healthy frog at the point of purchase.
