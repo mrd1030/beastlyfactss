@@ -798,65 +798,87 @@ Impaction from moist substrate is possible if the sandy substrate is kept too we
     image: "/assets/guides/veiled-chameleon.jpg",
     tagline: "The Arabian casque-crowned climber often called the most forgiving chameleon to start with!",
     funFact: "Veiled chameleons are remarkably drought-adapted for a chameleon. Native to the mountains of Yemen and Saudi Arabia, they tolerate wider temperature and humidity swings than most other chameleon species. Females are also famous for laying large clutches of infertile eggs even without ever having contact with a male.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x48 in all-screen enclosure", low: 150, high: 300 },
-        { item: "Strong UVB (T5 HO Arcadia 6% or 12%)", low: 70, high: 110 },
-        { item: "Basking bulb", low: 20, high: 40 },
-        { item: "Dripper system and automatic mister", low: 50, high: 100 },
-        { item: "Live plants (pothos, hibiscus, ficus)", low: 40, high: 80 },
-        { item: "Laying bin with moist sand/soil (females)", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Gut-loaded feeder insects (variety)", low: 150, high: 280 },
-        { item: "Calcium w/ and w/o D3 + multivitamin", low: 25, high: 35 },
-        { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (heat, lighting, mister)", low: 50, high: 90 },
-        { item: "Annual vet wellness check (chameleon-experienced)", low: 60, high: 100 },
-      ],
-    },
-    sections: {
-      housing: `A 24x24x48 inch or larger all-screen enclosure is the minimum for one adult veiled chameleon. Screen construction is mandatory, not optional - stagnant air in glass or plastic enclosures causes rapid-onset respiratory infections in chameleons of every species. Dense live plants (pothos, hibiscus, ficus) covering 60 to 70% of the enclosure interior provide humidity regulation, visual security, and climbing structure. Bare enclosures produce chronically stressed animals.
-
-Veiled chameleons tolerate warmer basking temperatures than most other chameleon species: a basking spot of 85 to 95 degrees F for adults is appropriate, with ambient daytime temperatures of 75 to 85 degrees F. Nighttime temperatures can drop to 65 to 75 degrees F. Strong UVB lighting (T5 HO Arcadia 6% or 12%) is mandatory for calcium metabolism.
-
-A dripper and/or automatic misting system is required, since chameleons rarely drink from standing water and instead drink droplets from leaves after simulated rainfall. Just as important and specific to this species: a deep laying bin of moist sand or soil must be available at all times, regardless of whether a female has ever been near a male - she will lay infertile eggs on her own schedule and needs somewhere to dig, or she risks fatal egg-binding.`,
-      diet: `Veiled chameleons are primarily insectivorous. Offer a rotating variety of crickets, dubia roaches, superworms, silkworms, hornworms, and black soldier fly larvae - variety in feeder species is one of the most important factors in long-term health. Gut-load all feeders 24 to 48 hours before offering them.
-
-Unusually among chameleons, veiled chameleons also opportunistically eat plant matter in the wild, including leaves and flowers such as hibiscus. Offering occasional leafy greens or hibiscus flowers alongside their insect diet reflects natural behavior and provides some supplemental hydration and nutrition, though insects should remain the dietary foundation.
-
-Feed juveniles daily, offering as much as they'll consume in about 15 minutes. Feed adults every other day, offering 5 to 10 appropriately sized insects - no larger than the width of the chameleon's head. Dust feeders with calcium without D3 at most feedings, calcium with D3 twice weekly, and a reptile multivitamin once a week.`,
-      enrichment: `Multi-level branching is the most important structural enrichment, since veiled chameleons are almost entirely arboreal and spend their lives navigating a three-dimensional network of branches and leaves. The large casque (the helmet-like structure on top of the head) helps condense atmospheric moisture and plays a role in thermoregulation and visual signaling to other chameleons.
-
-Color changes are primarily a communication tool - signaling mood, temperature, and social or reproductive status - rather than camouflage as commonly assumed. Bright colors often indicate excitement or a display; dark, muted tones typically signal stress or cold.
-
-Handle minimally. Chameleons are display and observation animals rather than handling pets, and unnecessary handling is a significant stress factor. When handling is required for husbandry or veterinary reasons, move slowly and let the chameleon walk onto your hand voluntarily. Always keep a laying bin available for females at all times - this is enrichment and a genuine health necessity in one.`,
-      health: `Dehydration is the most common cause of early death in pet chameleons of any species. Sunken eyes, dark coloration, and lethargy are the key warning signs, and any chameleon showing them needs immediate long misting sessions and, if it doesn't improve quickly, veterinary care. Maintain the dripper and misting schedule without gaps.
-
-Egg-binding (dystocia) is a serious and species-specific health risk for female veiled chameleons, since they lay eggs whether or not they've mated. A female without an appropriate laying bin available at all times, or one that strains and appears lethargic without laying, needs prompt veterinary attention - this is a genuine emergency.
-
-Metabolic bone disease from inadequate UVB or supplementation causes swollen limbs and deformities. Respiratory infections follow stagnant air and poor ventilation, which is exactly why the all-screen enclosure requirement exists. Find a reptile vet experienced with chameleons before you need one.`,
-      checklist: [
-        "24x24x48\" all-screen enclosure",
-        "Strong UVB lighting (T5 HO Arcadia 6% or 12%)",
-        "Basking bulb (85 to 95°F hot spot for adults)",
-        "Dripper system and automatic mister",
-        "Live plants (pothos, hibiscus, ficus)",
-        "Laying bin with moist sand/soil, always available (females)",
-        "Gut-loaded feeder insects",
-        "Calcium w/ and w/o D3 supplements",
-        "Reptile multivitamin",
-        "Reptile vet with chameleon experience",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Quarantine, hygiene, the thermostat
+    // probe and the emergency plan cite the shared reptile guides in the
+    // sidebar's Health and More list. Built 2026-09-14 for the veiled chameleon
+    // set test (docs/READER_REVIEWS.md). The old hub's supplement schedule was
+    // roughly four times the feeding guide's, on the two supplements that guide
+    // says cause gular edema in excess; that is the row to check first if this
+    // hub ever drifts again.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal check", value: "Hawaii and Washington DC are the two places you cannot keep one, and neither ban is written about chameleons: DC permits only non-venomous snakes, fish and turtles, so every lizard is out, and Hawaii bars anything not on an approved list. New Jersey wants a permit, and Minnesota allows one obtained from a permitted breeder. Check your city ordinance too.", source: "veiled-chameleon-legal-guide" },
+        { label: "Enclosure", value: "2 feet by 2 feet by 4 feet (24x24x48 inches) is the practical minimum for an adult, bigger, 4x2x4 feet, is better if you have the space. Juveniles can start smaller, around 18x18x36 inches, but veiled chameleons reach adult size in just 6 to 8 months, so plan and budget for the adult enclosure from the start.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Enclosure type", value: "A screen enclosure is the traditional choice and provides excellent airflow. Hybrid enclosures, with partially solid sides, hold humidity better and are increasingly preferred. Glass terrariums can work but need serious attention to ventilation, and most aren't large enough for an adult anyway.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Temperature", value: "Basking spot around 85°F for females and juveniles, up to 90 to 95°F for adult males. Ambient temperature 72 to 80°F, with a beneficial night drop to 55 to 65°F.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Humidity", value: "40 to 50% during the day and 80 to 100% at night, raised through misting sessions morning and evening plus a dripper or an overnight cool-mist humidifier using distilled water.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Lighting", value: "A linear T5 HO UVB tube (ReptiSun 5.0 or Arcadia 6% are the commonly recommended options) spanning the enclosure, with the basking branch positioned roughly 6 to 9 inches below it. UVB and daylight lighting both run 12 hours a day. Replace the bulb every 6 to 12 months regardless of whether it still visibly lights up. Skip compact or coil-style UVB bulbs.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Water", value: "Veiled chameleons do not recognize standing water as something to drink. They only respond to moving droplets on leaves and branches. A water dish alone will not keep your chameleon hydrated, no matter how often you refill it. A dripper or misting system is a genuine essential, not an accessory.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Drainage", value: "Daily misting produces real runoff, and the enclosure needs somewhere for that water to go.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Substrate", value: "Bare bottom or paper towel is the safest, easiest option. Coco fiber or a soil-based mix works for planted, bioactive setups. Avoid sand, gravel, and wood chips, all carry a real impaction risk if ingested during a feeding strike.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Laying bin, females", value: "Even a female with no male present will produce eggs, and without somewhere appropriate to lay them, she's at real risk of egg-binding. Keep a moist sand or soil bin, roughly 5 to 10 inches deep, permanently available, not something you set up only once she shows signs of needing it.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Babies at 1 to 3 months eat as much as they'll eat, roughly twice daily. Juveniles at 3 to 6 months take around 10 to 12 small crickets daily. Sub-adults at 6 to 12 months take 8 to 10 medium crickets daily or every other day. Adults from 12 months take roughly 4 to 6 feeders every other day, and adult females specifically should be fed a somewhat restricted amount.", source: "veiled-chameleon-feeding-guide" },
+        { label: "Prey size", value: "Size prey to the space between your chameleon's eyes, nothing bigger.", source: "veiled-chameleon-feeding-guide" },
+        { label: "Diet", value: "Primarily insectivorous, built on genuine variety: crickets, dubia roaches, black soldier fly larvae, superworms, silkworms, and locusts as rotating staples. Hornworms, waxworms, and butterworms are higher in fat or water and belong in treat territory, no more than about twice a week.", source: "veiled-chameleon-feeding-guide" },
+        { label: "Supplements", value: "Dust feeders with plain calcium, no D3, no phosphorus, at nearly every feeding. Separately, use a calcium with D3 supplement about every other week, and a multivitamin with a real vitamin A source on roughly the same twice-monthly schedule. D3 specifically can become toxic in excess, which is exactly why it's dosed less often than plain calcium.", source: "veiled-chameleon-feeding-guide" },
+        { label: "Gut-loading", value: "Gut-load feeder insects on collard greens, mustard greens, dandelion, and squash for 24 to 48 hours before offering them.", source: "veiled-chameleon-feeding-guide" },
+        { label: "Handling", value: "Solitary, territorial display animals that generally don't tolerate handling well. Approach slowly from below with your palm open and let the chameleon choose to climb onto your hand rather than grabbing from above, which reads as a predator attack. Keep sessions infrequent.", source: "veiled-chameleon-handling-guide" },
+        { label: "Reading a defensive display", value: "Hissing, gaping, inflating or flattening the body, and darkening color are all stress and defense signals. A darkened, gaping chameleon isn't aggressive in the way that word implies, it's frightened, and treating the display as a warning to back off gets better results.", source: "veiled-chameleon-handling-guide" },
+        { label: "Rearing and company", value: "Hatchlings reared in isolation for their first two months grew into animals that were more submissive, darker and duller in color, and worse at finding food. That is not a license to house adults together, because adults are territorial and cohabiting them goes badly.", source: "veiled-chameleon-enrichment-guide" },
+        { label: "Budget", value: "$20 to $100 for a captive-bred juvenile, and roughly $400 to $800 for the upfront setup. Experienced keepers commonly report around $500 for a complete single-animal setup, with elaborate builds reaching $1,200 or more.", source: "veiled-chameleon-cost-guide" },
+        { label: "The emergency that costs most", value: "Egg-binding in females is the emergency risk: medical management runs $200 to $400, and surgery can run $800 to $1,500 or more.", source: "veiled-chameleon-cost-guide" },
+        { label: "Lifespan", value: "Males commonly live 6 to 8 years. Females typically live considerably shorter, often just 2 to 6 years, and many don't make it past 2 to 3, driven by the physical toll of producing egg clutches.", source: "veiled-chameleon-cost-guide" },
+        { label: "Adult size", value: "Males 18 to 24 inches (46 to 61 cm), females 10 to 14 inches (25 to 36 cm)." },
+        { label: "Quarantine", value: "A new lizard can look completely healthy while it is still shedding mites or a fatal virus, so a real quarantine runs months rather than weeks, in its own enclosure in a separate room, with a fecal exam and a vet workup before it meets an established pet.", source: "reptile-quarantine-guide" },
+        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an overhead source, follow your controller's own instruction and confirm the result with independent checks.", source: "reptile-heating-thermostats-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact with the chameleon, its enclosure, or anything that has touched either. Never clean the enclosure or its water bowl in a kitchen sink or a shared bathtub. Children younger than 5 should not handle or touch reptiles or their environments.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage or a sitter", value: "Check this species' tank setup guide for the documented nighttime low and use that as the floor, which for a veiled chameleon is the 55 to 65°F night drop it already wants.", source: "reptile-emergency-plan-guide" },
       ],
     },
+    emergencyCard: {
+      source: "veiled-chameleon-health-issues-guide",
+      callNow: [
+        "A soft or bendable rubber jaw, curved or broken limbs, tremors, or an inability to grip branches or shoot the tongue",
+        "In a female: restlessness, digging without producing eggs, straining, lethargy, and swelling",
+        "Eye discharge, or turret abscesses and infections",
+        "Wheezing, gaping, and visible mucus",
+      ],
+      vetLine: "Egg-binding is the emergency: it can kill within 24 hours, and severe cases often require surgery. Metabolic bone disease caught early is only partly reversible and advanced cases are permanent, so it is a vet visit rather than a wait. Sky-blue spots on the flanks are a normal sign after a female has successfully laid, worth knowing so you don't mistake healthy post-laying color for illness.",
+    },
+    routes: [
+      { slug: "veiled-chameleon-cost-guide", line: "$20 to $100 for the animal, $400 to $800 for the setup, and why a female's vet bill is the line that matters." },
+      { slug: "veiled-chameleon-tank-setup-guide", line: "24x24x48 as the floor, the thermal gradient, UVB distance, the laying bin, and why the dripper is not optional." },
+      { slug: "veiled-chameleon-feeding-guide", line: "Portions by age, the eye-spacing prey rule, and the supplement schedule that decides whether this animal gets bone disease." },
+      { slug: "veiled-chameleon-handling-guide", line: "Why this is a display animal, what gaping and darkening actually mean, and how to pick one up when you must." },
+      { slug: "veiled-chameleon-health-issues-guide", line: "Metabolic bone disease, egg-binding, eye problems, respiratory infection, and the signs that mean a vet today." },
+      { slug: "veiled-chameleon-enrichment-guide", line: "The isolation-rearing study done on this exact species, planting density, branch diameters, and prey release." },
+      { slug: "veiled-chameleon-legal-guide", line: "The two places that ban every lizard without naming one, the permit states, and why your city matters." },
+    ],
+    buyList: [
+      "24x24x48 inch screen or hybrid enclosure, larger if the space allows",
+      "Linear T5 HO UVB fixture and tube, ReptiSun 5.0 or Arcadia 6%",
+      "Basking bulb",
+      "Thermostat, thermometer and hygrometer",
+      "Dripper system or automatic mister",
+      "Drainage tray or setup for misting runoff",
+      "Live plants: pothos, hibiscus, ficus, parlor palm",
+      "Branches at varied diameters",
+      "Laying bin with 5 to 10 inches of moist sand or soil, for females",
+      "Plain calcium without D3 or phosphorus",
+      "Calcium with D3, and a multivitamin with a real vitamin A source",
+      "Gut-load greens: collard, mustard, dandelion, squash",
+      "Varied feeder insects",
+      "Reptile vet contact",
+    ],
     faqs: [
-      { q: "Are veiled chameleons good for beginners?", a: "They're often called the most forgiving chameleon species to start with, since they tolerate a wider range of temperature and humidity than most other chameleons. That said, they're still not a true beginner reptile - they require an all-screen enclosure, strong UVB, a dripper or misting system, live plants, and daily gut-loaded insects. Compared to other chameleon species they're relatively approachable; compared to a leopard gecko or bearded dragon, they remain considerably more demanding." },
-      { q: "Why does my female veiled chameleon keep laying eggs without a male?", a: "This is completely normal. Female veiled chameleons produce infertile egg clutches on a regular cycle regardless of whether they've ever had contact with a male. Because of this, every female needs a deep laying bin of moist sand or soil available at all times - without one, she can develop fatal egg-binding trying to lay in an unsuitable space." },
-      { q: "What is the casque for?", a: "The casque is the helmet-like structure on top of a veiled chameleon's head. It helps condense atmospheric moisture (functioning almost like a small collection surface in humid air), assists with thermoregulation, and plays a role in visual signaling and species recognition. Casque size and shape also differ notably between males and females, with males developing a substantially larger casque." },
-      { q: "How big do veiled chameleons get?", a: "Males typically reach 18 to 24 inches in total length and 140 to 200 grams, making them one of the larger chameleon species kept in captivity. Females are noticeably smaller at 10 to 14 inches, but require equally attentive care since they're prone to reproductive complications like egg-binding." },
-      { q: "How long do veiled chameleons live?", a: "5 to 8 years is typical with optimal care. Males often outlive females, since females that lay frequent egg clutches over their lifetime tend to have measurably shortened lifespans. Consistent UVB, proper hydration, and a laying bin for females all meaningfully improve longevity." },
-      { q: "How can I tell if my veiled chameleon is male or female?", a: "Look at the heel. Male veiled chameleons develop a small bony spur (a tarsal spur) on the back of each hind foot within a few months of hatching; females never grow one. Males also develop a noticeably taller casque than females as they mature. By adulthood, size confirms it too - males typically reach 18 to 24 inches and 140 to 200 grams, while females stay smaller at 10 to 14 inches." },
+      { q: "What size enclosure does an adult veiled chameleon need?", a: "24x24x48 inches is the practical floor for an adult, and 4x2x4 feet is better if the space is there. Because they hit adult size in 6 to 8 months, buy the adult enclosure up front rather than planning an upgrade." },
+      { q: "Why can't I just use a water dish?", a: "Standing water does not read as drinking water to this species. Only moving droplets on leaves and branches get a response, so refilling a dish more often will not fix hydration. The dripper or misting system is the essential piece, not an accessory." },
+      { q: "What is the correct calcium and vitamin schedule for a veiled chameleon?", a: "Plain calcium, no D3 and no phosphorus, on nearly every feeding. Calcium with D3 goes on about every other week, and a multivitamin carrying a real vitamin A source runs on that same twice-monthly schedule. Excess D3 can turn toxic, which is why it's dosed less often." },
     ],
   },
 ];

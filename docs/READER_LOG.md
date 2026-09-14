@@ -3401,3 +3401,428 @@ First two changes: rewrite the hub's numbers to match the deep dives, or delete 
 - How to choose a breeder or rescue, and what a healthy glider looks like at purchase.
 - Glider-proofing a room for out-of-cage time, and recovering an escaped glider.
 - Who cares for them when you travel.
+
+## Canary (2026-09-14)
+
+One Opus 5 agent, seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment), about 85k tokens. Full agent output
+below, unedited.
+
+---
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: checklist, cage cover for night dark, egg food during molt. But its numbers fight the cost guide. **C**
+- **01 Encyclopedia.** Finished it, enjoyed the Haldane mining history, acted on nothing. **B-**
+- **02 Cost guide.** Finished it. Actionable: ask the seller to confirm a male before paying. **B-**
+- **03 Handling.** Finished it twice. Actionable: silence in July is molt, silence the week the cage moved is the television. **A-**
+- **04 Health issues.** Finished it. Actionable: a male going quiet can precede any breathing sign, and treat the cage as well as the bird. **B**
+- **05 Cage setup.** Finished it. Actionable: half inch bar spacing, paper liner daily spot, weekly change, powder-coated steel. **B-**
+- **06 Enrichment.** Finished it. Actionable: keep the cage center empty for a flight path, perches at the ends, no sandpaper covers. **A-**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, size, and a history section nothing else repeats. The hub does not. Its Housing, Diet, Enrichment, and Health sections are compressed versions of pages 05, 06, and 04, except for diet, which exists nowhere else. And it disagrees with the deep dives repeatedly:
+
+- Cage cost. Hub: "Flight cage (24-30 in wide) | $60 | $120." Cost: "A quality flight cage runs $120 to $220 on its own."
+- Cage size. Hub: "A flight cage at least 24 to 30 inches wide." Setup: "24 inches long by 18 inches wide by 18 inches tall is a reasonable minimum."
+- Vet. Hub: "Annual avian vet check | $40 | $70." Cost: "An annual avian wellness exam... runs $50 to $100 or more."
+- Lifespan, three ways. Hub: "8 to 10 years is typical, with some canaries reaching 12 to 15." Cost: "10 to 15 years with good care, sometimes cited more conservatively at 8 to 12." Encyclopedia: "up to 24 years recorded in captivity."
+- Dark hours. Hub: "a consistent 10 to 12 hours of uninterrupted darkness." Enrichment: "Twelve hours of genuine dark for sleep, undisturbed."
+- Pairing. Hub FAQ: "A canary does best alone or in a same-sex pair." Enrichment: "Do not house two males together, since they are territorial and will fight."
+
+## 3. The set as a whole
+
+I could buy, cage, and observe a canary confidently. I could not feed one from the deep dives alone: diet exists only as one hub paragraph, with no portions, no daily amounts, no unsafe foods, no answer on grit. Still missing: a cleaning routine beyond the paper liner, what a molt actually looks like week to week, and what to do if a lone hen lays.
+
+Questions raised on one page and answered on another, unsaid:
+- Handling and cost both say confirm the sex with the seller. Neither says how. The sidebar's "Sexing, Weight, and Body Condition in Pet Birds" is the answer.
+- Handling's silent male sends you to "the health check the closing section points to." The health guide's air-sac mites section is that check, unlinked.
+- Setup's air quality warning and handling's kitchen fume warning both point at "Household Hazards for Pet Birds," unlinked.
+- The hub's egg-binding paragraph points at the shared chronic egg laying guide, unlinked.
+
+## 4. Overlap and conflict across deep dives
+
+Read twice or more: horizontal not vertical flight (cost, setup, enrichment), varied-diameter perches (setup, enrichment, hub), bathing (setup, enrichment, hub), only males sing (cost, handling, hub, encyclopedia), air quality (setup, health, handling).
+
+Conflicts:
+- Light. Setup: "Bright, indirect natural or artificial light with a consistent day and night cycle." Enrichment: "a canary kept under an artificial light schedule that never changes is being held in a permanent season."
+- The cost guide argues with itself. Headline: "Upfront Setup: Roughly $200 to $400." Its own table sums to about $150 to $273, and the hub's equivalent table sums to $88 to $170.
+- Feather picking. Health: "Feather-picking can signal mites, a diet deficiency, boredom, or general stress." Enrichment never mentions it, despite being the boredom page.
+
+## 5. One link per page
+
+- **Hub.** "Egg-binding can occur in females even without a male present." Link to the shared chronic egg laying and egg binding guide.
+- **Encyclopedia.** None needed. It is background and the sidebar does the rest.
+- **Cost.** "make sure you're buying a confirmed male, this is worth verifying with the seller directly." Link to "Sexing, Weight, and Body Condition in Pet Birds."
+- **Handling.** "A sudden loss of song is a behavior change worth checking rather than waiting out." Link to Common Canary Health Issues.
+- **Health.** "Caused by poor air quality, a dirty cage, household fumes, or drafts." Link to Canary Cage Setup.
+- **Setup.** "Bright, indirect natural or artificial light with a consistent day and night cycle supports normal behavior." Link to Canary Enrichment, which corrects it.
+- **Enrichment.** "A long flight cage beats a tall decorative one by a wide margin." Link to Canary Cage Setup, the page with the dimensions.
+
+## 6. Trust
+
+What hurt: the enrichment page says "Our health issues guide covers foot problems, which are common and preventable," and it does not, at all. A link that lies about its target is worse than no link. Then the cage price that doubles between two pages, three lifespans, and a hub that recommends a "same-sex pair" one screen after the deep dives say never two males. The birdwatching link in the handling guide reads as filler.
+
+What convinced me a keeper wrote this: "LafeberVet's method is 'lights out, perches out,' taking the bird quickly before its eyes adjust. A vet dims the room before a hand goes in. A keeper's hand in daylight is not going to go better."
+
+## 7. Set grade: B-
+
+Two strong, sourced deep dives sitting on top of a hub whose numbers contradict them, with feeding left unwritten.
+
+First two changes: reconcile lifespan, cage dimensions, cage price, and vet cost to one set of figures used everywhere. Then write a canary feeding deep dive and fix the enrichment page's false foot-problems link.
+
+## Not covered anywhere
+
+- Grit: whether canaries need it. Not mentioned on any page or in the shared list.
+- Unsafe foods for a canary (avocado, onion, chocolate). The household hazards guide is fumes and safety, not diet.
+- Daily food quantities, and what a day of greens actually looks like.
+- Routine cage and perch cleaning and disinfection beyond the paper liner.
+- Foot problems and pressure sores, promised by the enrichment page, absent from the health page, and not in the first aid and grooming guide, which covers nails and beak.
+- Molt in canaries specifically: how long, and what to feed through it. "Why Is My Bird Losing Feathers?" tells molt from plucking, not how to support one.
+- Egg binding in a canary hen. The shared guide names budgies, cockatiels, and lovebirds only, while the hub says canary hens do it too.
+
+## Neon tetra (2026-09-14)
+
+One Opus 5 agent, eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment), about 86k tokens. Full agent
+output below, unedited.
+
+---
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: tank range, temp, school size, checklist, weekly 20 to 25 percent water changes. It is the only page giving a water change percentage. **B**
+- **01 Encyclopedia.** Finished it, mostly for the Hindenburg story. Nothing to act on. **C+**
+- **02 Cost.** Finished it. Actionable: $1 to $3 per fish, $10 to $40 for a school, $100 to $300 setup. Its tables fight the hub's. **C**
+- **03 Handling.** Finished it. Actionable: six floor, ten to twelve better, no fin-nippers, guppy experience does not transfer. **B+**
+- **04 Health.** Finished it. Actionable: NTD signs, quarantine 2 to 4 weeks, never feed a dead fish to the tank, and the honest note that NTD is over-diagnosed. **A-**
+- **05 Tank setup.** Finished it. Actionable: 10 gallon floor, 20 long for ten plus, pH 6.0 to 7.0, gentle sponge filter, dark substrate, 8 to 10 hours dim light, driftwood and almond leaves. Best page for doing. **A-**
+- **06 Feeding.** Finished it. Actionable: twice daily, 2 to 3 minutes, 1 to 2mm mouths, protein 2 to 3 times a week. **A-**
+- **07 Enrichment.** Finished it fastest. Actionable: buy ten, one species not two of five, priority list. The only cited page. **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, adult size, wild diet, history appear nowhere else. The hub mostly restates the deep dives in shorter form, but it carries two things nothing else does (the 20 to 25 percent weekly water change, and a buy checklist), so it is not redundant, just inconsistent.
+
+Disagreements with the deep dives:
+
+- Tank vs school. Hub: "A 10 to 20 gallon tank works well for a proper school of 6 to 10 or more." Setup: "10 gallons is the practical minimum for a proper school of 6. If you're aiming for the better group size of 10 to 15 fish, step up to a 20-gallon long tank." The hub reads as if ten fish fit in ten gallons.
+- Costs. Hub: "10-20+ gallon tank | $60 | $120", filter "$20 | $35", food "$30 | $50". Cost guide: "10+ gallon tank | $20 - $150", "Gentle filter | $10 - $20", "Micro-pellet or micro-crisp food | $15 - $30". Every line differs.
+- Lifespan. Hub: "5 to 8 years is achievable." Cost: "Around 5 years is achievable with good, stable care, though average conditions often see neon tetras live closer to 2 to 3 years."
+- Feeding. Hub: "Feed small amounts once or twice a day." Feeding: "Feed small amounts twice daily, morning and evening."
+- Parasite name. Hub: "Pleistophora hyphessobrycetis." Feeding: "Pleistophora hyphessobryconis." One is wrong, and the health guide never names it at all.
+
+## 3. The set as a whole
+
+Yes, I could set up, stock, feed and keep them. Missing: what to do if my tap water is hard, an acclimation procedure for the day I bring them home, how many to add at once, a tankmate list beyond "avoid angelfish or oscars", the target temperature for ich treatment, and how to humanely euthanize a confirmed NTD fish after the page tells me to.
+
+Questions raised on one page and answered on another without saying so:
+
+- Handling: "Adding them to a tank that hasn't been properly cycled yet" and "That second mistake in particular is a big part of what drives disease risk." The health page is right there.
+- Cost: lifespan "leans on water stability" with no pointer to the setup page that defines stability.
+- Setup and health both say quarantine 2 to 4 weeks, and neither says what a quarantine tank is. The hospital tank guide in the sidebar does.
+- Enrichment: "take real care netting them" with no method; the transport guide is the nearest thing.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: cycle the tank first, quarantine 2 to 4 weeks, small mouths need micro food, dim light and dense planting. Feeding and enrichment both cover diet; enrichment's version adds the only genuinely new thing, spreading food across the surface.
+
+Conflicts:
+
+- School target. Handling: "ten to twelve or more is considerably better." Setup: "the better group size of 10 to 15 fish." Enrichment: "buy ten rather than six."
+- Temperature. Hub: "heated between 72 and 78 degrees F." Setup: "70 to 81°F works, with 72 to 78°F being a solid, commonly recommended target."
+- Test kit. The hub checklist lists "Water test kit (confirm cycling before stocking)" but the cost guide's ongoing table has only food and conditioner, so the budget omits the tool the hub calls mandatory.
+
+## 5. One link per page
+
+- Hub, "Always fully cycle a tank before adding neons" to How to Cycle a Fish Tank.
+- Encyclopedia, "rely on large schools for both natural behavior and reduced individual stress" to the enrichment guide.
+- Cost, "A school of 6 to 12 runs $10 to $40 total" to the enrichment guide, which is where the number is defended.
+- Handling, "That second mistake in particular is a big part of what drives disease risk in a new neon tetra tank" to the health guide.
+- Health, "quarantine new fish for 2 to 4 weeks before adding them to an established tank" to the hospital tank guide.
+- Setup, "it's worth testing your source water before assuming your setup is automatically suitable" to Freshwater pH, GH, and KH.
+- Feeding, "never leave a dead fish in the tank or let tankmates scavenge a visibly sick fish's body" to the health guide.
+- Enrichment, "Cycle the tank fully before they go in" to How to Cycle a Fish Tank.
+
+## 6. Trust
+
+Doubts: the misspelled parasite on the hub, cost tables that contradict each other on the same site, 5 to 8 years against 2 to 3, and "Roughly two million are now sold in the United States each month" with nothing behind it. The enrichment page citing Saxby et al. 2010 by name, journal and year raised the set back up.
+
+Most convincing sentence: "Spread food across the surface instead of dropping it in one spot, so the whole shoal eats rather than the boldest three."
+
+## 7. Set grade: B-
+
+Strong on the doing pages, undermined by numbers that disagree across pages a reader hits in one sitting.
+
+First two changes: make the hub the single source for costs, lifespan, school size and feeding frequency and fix the deep dives to match; add real in-body links from the hub, handling and setup pages into the cycling and quarantine guides.
+
+## Not covered anywhere
+
+- How to soften hard tap water for a pH 6.0 to 7.0 tank. The pH, GH and KH guide argues against chasing numbers and does not give a method.
+- Acclimation on the day you bring them home, bag float, drip, or neither.
+- How many fish to add at once to a newly cycled tank, and whether to buy ten in one trip.
+- The target temperature and duration for ich treatment.
+- How to humanely euthanize a confirmed NTD fish.
+- A concrete tankmate list beyond avoiding large or fin-nipping fish.
+- Breeding, mentioned only as "egg-scattering" in passing.
+
+## Veiled chameleon (2026-09-14)
+
+One Opus 5 agent, nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal), about 96k tokens. Full
+agent output below, unedited.
+
+---
+
+# Veiled Chameleon: Set Review
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: shopping checklist, cost tables, sizes, sexing. But its feeding numbers conflict with the feeding guide. **C+**
+- **01 Encyclopedia.** Finished it, short. Actionable: almost nothing, and that is fine. The history paragraph on Florida and Hawaii founder populations is the one part I would repeat aloud. **B**
+- **02 Cost.** Finished it. Actionable: I can budget setup, month, year, and the female emergency line. **A-**
+- **03 Handling.** Finished it. Actionable: approach from below, read gaping as fear, tarsal spur sexing. Repeats itself. **B-**
+- **04 Health.** Finished it. Actionable: named signs per condition, plus the blue-spot detail. **A-**
+- **05 Tank setup.** Finished it. Actionable: the whole build, including bulb distance and bin depth. **A**
+- **06 Feeding.** Finished it. Actionable: age-banded portions and a defensible supplement schedule. **A**
+- **07 Enrichment.** Finished it twice. Actionable: planting-density test, branch diameters, prey release, priority order. Best page here. **A**
+- **08 Legal.** Finished it. Actionable: DC, Hawaii, NJ permit, check your city. **A-**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: range, habitat, taxonomic history, the invasive populations. Nothing in it is in a deep dive.
+
+The hub does not. It is a compressed rewrite of five articles, and where it is compressed it is wrong.
+
+- Supplements. Hub: "calcium with D3 twice weekly, and a reptile multivitamin once a week." Feeding: "use a calcium with D3 supplement about every other week, and a multivitamin with a real vitamin A source on roughly the same twice-monthly schedule." That is four times the dose, on the two supplements the feeding guide says cause gular edema in excess.
+- Portions. Hub: "offering 5 to 10 appropriately sized insects." Feeding: "roughly 4 to 6 feeders every other day."
+- Prey size. Hub: "no larger than the width of the chameleon's head." Feeding: "Size prey to the space between your chameleon's eyes."
+- Night temps. Hub: "Nighttime temperatures can drop to 65 to 75 degrees F." Tank: "a beneficial night drop to 55 to 65°F." Zero overlap.
+- Ambient. Hub "75 to 85 degrees F" versus tank "72 to 80°F."
+- Enclosure type. Hub: "Screen construction is mandatory, not optional." Tank: "Hybrid enclosures, with partially solid sides, hold humidity better and are increasingly preferred."
+- UVB. Hub checklist: "Arcadia 6% or 12%." Tank: "ReptiSun 5.0 or Arcadia 6%," at 6 to 9 inches. A 12% tube at that distance is a different animal, and the hub never says so.
+- Lifespan. Hub: "5 to 8 years is typical." Cost: females "often just 2 to 6 years, and many don't make it past 2 to 3."
+
+## 3. The set as a whole
+
+Yes. I could buy, build, wire, feed, and spot the four things that kill them. Enclosure, lighting, water, supplements, and the laying bin are all specified in numbers.
+
+Unsignposted handoffs: the hub's lifespan FAQ raises the female cost and never points at the cost guide; the handling guide says chameleons "mask sickness well" and never points at the health guide; the health guide's closing line about the calcium and D3 schedule points nowhere; the enrichment guide tells me to ask the breeder about rearing and never points at anything about buying.
+
+Still missing: a humidity percentage, a photoperiod, what to do after she lays, and how to pick a healthy animal.
+
+## 4. Overlap and conflict across the deep dives
+
+Read five times: chameleons do not drink standing water (04, 05, 06, 07, plus hub). Twice: the MBD supplementation study, vaguely in 04 and properly cited in 06. The handling guide's fun fact box restates its own "How They Compare" section nearly word for word. Egg-binding appears in 04, 05, and 06.
+
+Between deep dives the numbers actually hold. The only real disagreement is 04 saying supplementation prevented MBD "even without added UVB or D3" sitting next to UVB being mandatory everywhere else. The legal guide's arithmetic wobbles: "legal in forty-eight states," then a table flagging Minnesota and New Jersey, then "The other forty-eight states have nothing to say."
+
+## 5. One link per page
+
+- 00: "calcium with D3 twice weekly, and a reptile multivitamin once a week." Point at the feeding guide.
+- 01: "Escaped and released pets have founded breeding populations in both Florida and Hawaii." Point at the legal guide.
+- 02: "Spaying a female can meaningfully extend her life." Point at the health guide.
+- 03: "Missing early illness signs, chameleons are prey animals and mask sickness well." Point at the health guide. This page links nowhere inside the set.
+- 04: "Metabolic bone disease specifically comes down to the calcium and D3 schedule." Point at the feeding guide.
+- 05: "she's at real risk of egg-binding." Point at the health guide.
+- 06: "proper UVB lighting lets your chameleon produce some of its own D3 naturally." Point at the tank setup guide.
+- 07: "A 24x24x48 screen enclosure is a reasonable adult footprint." Point at the tank setup guide.
+- 08: none needed.
+
+## 6. Trust
+
+Doubts: the hub disagreeing with its own articles on supplements and night temps; 12% UVB listed without distance; the repeated paragraph in the handling guide; the state count.
+
+The sentence that convinced me: "Sky-blue spots appearing on the flanks are a normal sign after a female has successfully laid, worth knowing so you don't mistake healthy post-laying color for illness."
+
+## 7. Set grade: B
+
+The deep dives are genuinely good and internally consistent; the hub sitting on top of them is the weak link. First two changes: rewrite the hub to match the feeding and tank guides number for number, and add humidity, photoperiod, and post-laying care somewhere.
+
+## Not covered anywhere
+
+- Target humidity range as a number. Every page says "moderate."
+- Photoperiod. No page says how many hours the lights run.
+- What to do after a female lays: eggs, recovery, rehydration, refeeding.
+- How to buy: sourcing a breeder and judging a healthy animal. Quarantine covers arrival, not selection.
+- Enclosure cleaning and disinfection routine, including drainage maintenance.
+
+---
+
+# California Kingsnake: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch G. Raw and unedited.
+
+Read all seven pages in order. Review follows.
+
+---
+
+## 1. Page by page
+
+**00 Care guide hub** (B-). Finished it; it is the only page with feeding cadence, thaw temperature, and a buy checklist, so I can act on it directly. Marked down because its numbers do not match the setup guide.
+
+**01 Encyclopedia** (C+). Finished it, but the only thing I can act on is nothing; the one paragraph that earns its keep is the captive-breeding history.
+
+**02 Cost guide** (B). Finished it; morph table, $200 to $500 setup, $15 to $30 a month, vet ranges are all buyable numbers. The co-housing section is the third time I read that rule.
+
+**03 Handling guide** (A-). Finished it easily; the defensive-signal list and the session-length table are the most usable things in the set, and they name sources.
+
+**04 Health issues** (B+). Finished it; symptom-to-cause-to-action is clean, and the soaking-as-mite-sign tip is real. No temperature or humidity numbers to act on.
+
+**05 Enclosure setup** (B-). Finished it; the substrate and size spec are directly actionable, but two of its core numbers are contradicted by siblings.
+
+**06 Enrichment** (A). Finished it; the priority order is a shopping sequence, and it tells me what its evidence is not.
+
+## 2. Hub and encyclopedia
+
+The hub earns its place: it carries feeding, which no deep dive covers at all. The encyclopedia mostly repeats it, minus the history paragraph.
+
+Disagreements between hub and deep dives:
+
+- Humidity. Hub: "Ambient humidity of 30 to 50% is appropriate." Setup: "Keep it relatively low, 40 to 60%."
+- Warm end. Hub: "a surface temperature of 85 to 88 degrees F." Setup: "Basking/warm side | 85 - 90°F."
+- Cool end. Hub: "a cool end at 72 to 75 degrees F." Setup: "Cool side | 70 - 80°F."
+- Feeding. Hub: "adults every 10 to 14 days." Cost: "One appropriately sized rodent a week."
+- Adult size. Hub FAQ: "Adults typically reach 3 to 4 feet." Encyclopedia: "Adult Size: 2.5-4 feet (75-120 cm)."
+- Lifespan. Encyclopedia: "up to 33.3 years in captivity." Cost: "20 years or more is achievable with good care."
+
+## 3. Could I keep one alive?
+
+Setup, buy, and feed: yes. Keep healthy long term: mostly, with gaps.
+
+Still missing: what a feeding refusal means and when to worry (regurgitation is covered on the hub, a fast is not); brumation or seasonal appetite shutdown; how to pick a healthy animal and a seller; how to recover an escaped snake, which every page insists will happen; whether a hygrometer is needed, since it is not on the checklist though two pages give a humidity range; hatchling-versus-adult temperature differences.
+
+Questions answered elsewhere without being told: the hub's "moist hide with damp sphagnum moss supports healthy shedding" is explained, and partly contradicted, by the shared shed guide, with no pointer. The health guide's shed section has the same problem. The setup guide's thermostat line has no pointer to the shared heating and thermostat guide. The handling guide's "No handling until it is eating reliably" for a new arrival is the quarantine guide's territory, unlinked.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: kingsnakes eat snakes, never co-house. Read twice: escape artist, loose lid. Both are in the handling, setup, enrichment, and cost pages.
+
+Real conflicts:
+
+- Enclosure length rule. Setup: "enclosure length should be at least two-thirds of your snake's body length." Enrichment: "Twelve corn snakes were housed in enclosures either two thirds of their body length or longer than their body length... they preferred the larger enclosure." The setup guide is recommending the condition the study's snakes rejected.
+- Hides. Setup: "Furnish the enclosure with two cork bark hides, one on each end." Enrichment: "Cover Everywhere, Not Two Hides... A kingsnake in a large bare enclosure uses two hides and nothing else."
+- Rearranging. Hub: "Rearranging the enclosure layout periodically gives the snake new territory to explore." Enrichment ranks it "6. Rearrangement, last."
+- Post-feeding wait. Hub: "Allow 48 to 72 hours after feeding before handling." Handling: "Wait at least 48 hours."
+
+## 5. One link per page
+
+- Hub: "Provide a warm end with a surface temperature of 85 to 88 degrees F via an under-tank heater on a thermostat" → Enclosure Setup.
+- Encyclopedia: "Adult Size: 2.5-4 feet (75-120 cm)" → Enclosure Setup, since that number sets the enclosure.
+- Cost: "A 48x24x24 inch front-opening enclosure for an adult" → Enclosure Setup.
+- Handling: "Underestimating this species as an escape artist, a loose lid is a real risk." → Enclosure Setup.
+- Health: "Retained skin from humidity running too low. Manageable at home with a humid hide lined with damp sphagnum moss." → How Snakes Actually Shed, and Why Humidity Is Not the Engine.
+- Setup: "As a general guide, enclosure length should be at least two-thirds of your snake's body length" → Kingsnake Enrichment.
+- Enrichment: "A 4x2x2 foot enclosure comfortably exceeds adult body length for this species." → Enclosure Setup.
+
+## 6. Trust
+
+Doubts: two humidity ranges and two warm-end ranges inside one site; weekly feeding in the cost guide against 10 to 14 days on the hub; "up to 33.3 years" is suspiciously precise next to "20 years or more"; the enrichment guide's "Other substrate quantities are available" reads like a broken sentence; its FAQ calls the ratsnake work "closer still," which the body does not support.
+
+Most convincing sentence: "A kingsnake in a large bare enclosure uses two hides and nothing else, which then gets misread as proof it wanted a smaller box." That is watching an animal, not summarizing a caresheet.
+
+## 7. Set grade: B
+
+Genuinely useful and unusually honest about evidence, held back by a hub and a setup guide that disagree on the numbers a first-time keeper will actually dial in.
+
+First two changes: make one page the source of truth for temperature, humidity, feeding cadence, and the enclosure-length rule, and fix the setup guide's two-thirds line to match the enrichment evidence. Second, give feeding its own deep dive, since it currently exists only on the hub.
+
+## Not covered anywhere
+
+- What to do when a kingsnake refuses food for weeks, and when a fast becomes a vet visit.
+- Brumation and seasonal appetite drop.
+- How to choose a seller and assess a healthy animal before buying.
+- How to find and recapture an escaped snake.
+- Whether a hygrometer is needed, and where to place it.
+- Hatchling-specific temperature and enclosure differences beyond "a 20-gallon works."
+---
+
+# Hedgehog: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch G. Raw and unedited.
+
+Read all nine files. Review below.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, and it is the most actionable single page (sizes, temps, checklist), but it is also the one I now distrust most. **D.**
+- **01 Encyclopedia.** Finished it. Acted on nothing husbandry-wise, but the import ban and the Salmonella outbreak are real background. **B.**
+- **02 Cost.** Finished it. Budget numbers and the $500 emergency fund are usable; the legal section contradicts its own FAQ. **C.**
+- **03 Handling.** Finished it. Scoop technique, quilling window, do not force the ball: all directly usable. **B+.**
+- **04 Health.** Finished it. Quarantine two weeks, gradual weight loss, vet for any wobble. **A-.**
+- **05 Setup.** Finished it. CHE on a thermostat, solid floor, 3 to 4 inches substrate, dim 12 hour cycle. **B.**
+- **06 Feeding.** Finished it. The 24 hour rule and the stop-eating checklist are the best thing in the set. **A-.**
+- **07 Enrichment.** Finished it. Clean the wheel daily, hide, solo housing, scatter feed. **A.**
+- **08 Legal.** Finished it twice. It quotes the regulations. **A.**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, wild lifespan, the 1991 USDA import ban, the hybrid ancestry. None of that is in the deep dives.
+
+The hub does not. It restates the deep dives less accurately, and it disagrees with them on the two numbers that matter most.
+
+- WHS. Hub: "It affects an estimated 1 in 3 African pygmy hedgehogs." Health guide: "a lower confirmed rate, closer to 3%." One of those is ten times the other, and the deep dive exists specifically to debunk the inflated figure the hub prints.
+- Cold threshold. Hub: "Below 65 degrees F, African pygmy hedgehogs ... can enter a dangerous state of torpor." Setup: "Below about 72°F, hedgehogs can attempt to hibernate." Seven degrees of daylight on the one rule both pages call non-negotiable.
+- Enclosure size. Hub: "A minimum of 2 ft x 4 ft of floor space is required." Setup: "A minimum of 4 square feet of solid floor space." Half.
+- Wheel. Hub checklist: "8 to 12 inch solid exercise wheel," against its own body text ("10 to 12 inches") and setup's "10.5 to 12 inches."
+- Lifespan. Hub: "Some individuals reach 7 to 8 years." Cost: "some individuals reaching 8 to 10 years."
+
+## 3. Could I keep one
+
+Mostly yes. I could buy legally, build the enclosure, hold temperature, feed, spot illness early, and handle without teaching fear. Missing:
+
+- How to pick a breeder, and what to ask. Quarantine appears only as mite prevention.
+- Salmonella. The encyclopedia names a 54 person outbreak; the handling guide tells me to wash my hands only after self-anointing.
+- Nail trimming. Clippers are on the shopping list and in the cost table. No page shows the trim.
+- Bathing. The hub raises baths; no deep dive returns to it.
+- Spaying. The hub says it cuts uterine cancer risk. No page prices it or says when.
+- Finding an exotic vet, and power outage or heat failure planning.
+
+Unsignposted handoffs: the hub says WHS hits 1 in 3 and never points to the article that corrects it; the cost guide's legality section duplicates the legal guide without linking it; the hub's "wheel noise" aside never reaches the enrichment page's daily wheel cleaning.
+
+## 4. Deep dive overlap and conflict
+
+Read three times: the cold-hibernation rule (health, setup, enrichment, feeding) and the solid wheel. That repetition is mostly earned, except the numbers drift.
+
+- Floor space. Setup: "A minimum of 4 square feet." Enrichment: "68 percent were in enclosures under 0.5 square meters," listed as a failure. 4 sq ft is 0.37 sq m, so setup's minimum is below enrichment's fail line.
+- Quilling. Handling: "Between 2 and 6 months old." Feeding: "most intense at 4 to 6 weeks old and again around 4 months."
+- Fat. Hub: "low fat content (under 15%)." Feeding: "moderate fat (10 to 20% dry matter)."
+- Insects. Hub: "3 to 5 times per week." Feeding: "3 to 4 times weekly, or roughly 2 to 3 times a week."
+- Legality, inside one page. Cost body: "New Jersey is the only state in the country where a permit is the answer ... Maine names the African pygmy hedgehog on its Unrestricted Species List." Cost FAQ: "New Jersey and Wisconsin require a permit," with Maine restricted and NYC dropped from the ban list.
+- Humidity, inside one page. Setup: "under 40% is preferred," then recommends a humidifier "bringing the room to 40 to 60%."
+
+## 5. One link per page
+
+- Hub: "It affects an estimated 1 in 3 African pygmy hedgehogs and has no treatment." Link to the health issues guide.
+- Encyclopedia: "ownership remains illegal in several states." Link to the legal guide.
+- Cost: "Six places will not let you keep one." Link to the legal guide.
+- Handling: "Between 2 and 6 months old, hedgehogs shed their baby quills." Link to the feeding guide, which ties quilling to appetite loss.
+- Health: "hedgehogs kept below roughly 72°F can attempt to hibernate." Link to the setup guide.
+- Setup: "A large, solid-surface exercise wheel, 10.5 to 12 inches in diameter ... is essential." Link to the enrichment guide.
+- Feeding: "Watch for ... a body that feels cold, possible torpor." Link to the setup guide.
+- Enrichment: "do not assume a huffing, balled-up hedgehog is going to enjoy being socialized on your schedule." Link to the handling guide.
+- Legal: none needed. It links well already.
+
+## 6. Trust
+
+What hurt: the hub's 1 in 3 WHS figure sitting next to an article built to refute it, and the cost guide's FAQ contradicting its own body about which states permit.
+
+What convinced me: from the enrichment guide, "Owners who consulted a vet were more likely to clean the wheel daily, which matters more than it sounds for an animal that defecates while running." Nobody writes that from a summary.
+
+## 7. Set grade
+
+**B-.** The deep dives are unusually good and unusually honest about disagreement; the hub drags the set down by contradicting them on WHS prevalence, temperature, and cage size.
+
+First two changes: rebuild the hub from the deep dives so every number matches, and fix the cost guide's legality FAQ to match its own body and the legal guide.
+
+## Not covered anywhere
+
+- Choosing and vetting a breeder or rescue, and what to ask before buying.
+- Salmonella hygiene for owners, despite the encyclopedia naming the outbreak.
+- Bathing and foot baths, raised on the hub and dropped.
+- Spay decision and cost, raised on the hub and dropped.
+- Finding an exotic vet who sees hedgehogs (the shared vet guide covers transport and anesthesia, not sourcing).
+- Heat failure or power outage contingency.
+
+(Nail trimming and molting are covered by the shared Grooming, Nails, and Molting guide; vet transport by the shared small mammal vet guide.)

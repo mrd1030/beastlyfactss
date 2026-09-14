@@ -4217,6 +4217,40 @@ in one review section.
   also traced the sugar glider adult-weight figure to the VCA page that
   actually states it and added that page to the feeding guide's Sources.
   Pass grade B+.
+- 2026-09-14, batch G (canary, neon tetra, veiled chameleon, California
+  kingsnake, hedgehog), one reader pass each and one Fable check. Canary:
+  cost guide setup total corrected to its own table ($150 to $275),
+  lifespan to LafeberVet's 6 to 12 years, a sourced Diet Basics section
+  and two Sources blocks added where three deep dives had none, and the
+  tank setup lighting sentence reconciled with the enrichment guide's
+  photoperiod research. Neon tetra: nothing moved; the old hub's
+  misspelled parasite name and its conflated wild lifespan went with the
+  rebuild. Veiled chameleon: humidity (40 to 50% day, 80 to 100% night)
+  and a 12-hour photoperiod added to the tank setup guide from
+  ReptiFiles, the legal guide's forty-eight corrected to forty-seven, the
+  encyclopedia lifespan field split by sex. California kingsnake: warm
+  and cool side to Tree of Life's 85 to 88 and 72 to 78, the two-thirds
+  enclosure rule replaced by "at least as long as the snake", feeding to
+  the vet schedule (5 to 7 days juvenile, 10 to 14 adult), a sourced Diet
+  Basics section added since the species has no feeding guide. Hedgehog:
+  floor space to Merck's 2 by 3 feet, ideal temperature to 75 to 85, the
+  40 to 60% humidifier line retired, quilling to LafeberVet's episodes,
+  the cost guide's vet table and legal FAQ matched to their own bodies,
+  the encyclopedia wild lifespan to Animal Diversity Web's 2 to 3 years.
+  Twenty-four in-body links added across the five sets, one sibling per
+  article.
+- 2026-09-14, batch G species check (one Fable agent covering all five):
+  found and fixed three canary cost guide frontmatter copies of the
+  retired setup total and lifespan, a canary hub lighting row stale
+  against the batch's own fix, a canary emergency bullet worded from the
+  handling guide, two hedgehog hub rows carrying the feeding guide's
+  source narration (settled in the deep dive first), a hedgehog feeding
+  guide date not bumped for a number change, a LafeberVet source missing
+  from the hedgehog handling guide's block, the California kingsnake hub's
+  missing vetLine, a veiled chameleon encyclopedia field carrying a
+  captive figure under "Wild Lifespan" with no label, and one review-file
+  note that did not match the diff. Every number decision held when the
+  sources were reopened. Pass grade B+.
 
 ## Green Iguana (2026-09-09, first pass)
 
@@ -7967,3 +8001,952 @@ check exists to catch, and the hub-row ones are the same step that leaked
 in batches D and E."
 
 No species was given a redo verdict, so no second check round ran.
+
+## Canary (2026-09-14, batch G, single pass, before the router hub)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment). One Opus 5 agent, about 85k tokens. The
+reader read the legacy care sheet hub; the router hub was built from its
+findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | Actionable, and its numbers fight the cost guide. |
+| Encyclopedia | B- | The mining history is good reading and changes nothing you do. |
+| Cost | B- | One thing to act on: ask the seller to confirm a male before paying. |
+| Handling | A- | Silence in July is molt, silence the week the cage moved is the television. |
+| Health issues | B | A male going quiet can precede any breathing sign. |
+| Tank setup | B- | Bar spacing, liner routine, powder-coated steel. |
+| Enrichment | A- | Keep the cage center empty, perches at the ends, no sandpaper covers. |
+
+Set grade: B-. "Two strong, sourced deep dives sitting on top of a hub
+whose numbers contradict them, with feeding left unwritten."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs canary --strict` before the pass
+printed 9 conflicting topic groups. The real decisions: the flight cage
+at $60 to $120 against $120 to $220, the annual vet check at $40 to $70
+against $50 to $100 or more, a three-way lifespan split, and the cost
+guide's own setup headline against its own table. The rest were the cost
+guide's price tiers by breed, which are separate figures.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild:
+
+- Flight cage price. Old hub: "Flight cage (24-30 in wide): $60 to $120."
+  Cost guide: "A quality flight cage runs $120 to $220 on its own."
+- Cage size. Old hub: "A flight cage at least 24 to 30 inches wide is far
+  better than a typical small cage." Tank setup: "24 inches long by 18
+  inches wide by 18 inches tall is a reasonable minimum, but the shape
+  matters more than the raw dimensions."
+- Vet cost. Old hub annual table: "Annual avian vet check: $40 to $70."
+  Cost guide: "An annual avian wellness exam... runs $50 to $100 or
+  more."
+- Darkness. Old hub: "Cover the cage at night to provide a consistent 10
+  to 12 hours of uninterrupted darkness for sleep." Enrichment: "Twelve
+  hours of genuine dark for sleep, undisturbed."
+- Pairing. Old hub: "Canaries do best kept singly or in a compatible
+  pair", and its FAQ said "alone or in a same-sex pair". Enrichment and
+  handling both say males must not be housed together. A same-sex pair is
+  precisely the arrangement the deep dives rule out for males.
+- Lifespan, three ways. Old hub: "8 to 10 years is typical, with some
+  canaries reaching 12 to 15 years." Cost guide: "10 to 15 years with
+  good care, sometimes cited more conservatively at 8 to 12."
+  Encyclopedia: "up to 24 years recorded in captivity." See Numbers
+  decided.
+
+### Deep dives against each other
+
+- Light cycle. Tank setup: "Bright, indirect natural or artificial light
+  with a consistent day and night cycle supports normal behavior."
+  Enrichment: "a canary kept under an artificial light schedule that
+  never changes is being held in a permanent season", citing the song and
+  photoperiod research. The enrichment guide carries sources and the tank
+  setup guide carried none, so the tank setup sentence changed to keep a
+  clear day and night cycle while letting day length follow the season,
+  and it now links the enrichment guide.
+- The cost guide against itself. Headline: "Upfront Setup: Roughly $200
+  to $400." Its own four-row table sums to $150 to $273. Headline
+  corrected to $150 to $275.
+- Feather picking. The health guide names boredom as a cause; the
+  enrichment guide, the boredom page, never mentions it. Noted, not
+  fixed: adding it is new content rather than a conflict to settle.
+
+### Gaps, checked against the Health and More list first
+
+- Unsafe foods for a canary. The shared household hazards guide is fumes
+  and physical safety, not diet.
+- What a day of greens actually looks like.
+- Routine cage and perch cleaning beyond the paper liner.
+- Foot problems and pressure sores. The enrichment guide promised the
+  health guide covers them and it does not, and the shared first aid and
+  grooming guide covers nails and beak.
+- Canary-specific molt: how long, and what to feed through it.
+- Egg binding in a canary hen. The shared chronic egg laying guide names
+  budgies, cockatiels, and lovebirds only, while the old hub said canary
+  hens do it too.
+
+Grit, which the reader also listed, turned out to be answerable and is
+now answered in the new Diet Basics section. All the rest are filed in
+docs/READER_LOG.md.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | the egg-binding line | Shared chronic egg laying guide | n/a, that hub prose is gone |
+| Encyclopedia | none needed | | n/a |
+| Cost | "make sure you're buying a confirmed male" | Shared sexing, weight and body condition guide | Yes |
+| Handling | "that is the health check the closing section points to" | Health issues guide | Yes |
+| Health issues | "Caused by poor air quality, a dirty cage, household fumes, or drafts" | Tank setup guide | Yes |
+| Tank setup | the lighting sentence | Enrichment guide | Yes |
+| Enrichment | "A long flight cage beats a tall decorative one by a wide margin" | Tank setup guide | Yes |
+
+Five added, one sibling link per article. Adding the handling guide's
+tripped the sibling-link checker at two, because a FunFact already
+carried "our Canary cost guide covers how much that distinction actually
+affects price too"; that clause was cut as a site self-reference (RULES,
+Linking) rather than dropping the link the reader asked for.
+
+### Trust
+
+The reader's sharpest finding was a link that misdescribes its target:
+the enrichment guide said "Our health issues guide covers foot problems,
+which are common and preventable", and the health guide does not mention
+foot problems anywhere. Cut, with the surrounding pressure-sore point
+kept, since the enrichment guide makes it itself. The reader also called
+the handling guide's beginner-birdwatching link filler; cut for the same
+reason, it was an "our X guide covers" sentence about something other
+than keeping a canary. The sentence that most convinced it a keeper wrote
+the set, from handling: "LafeberVet's method is 'lights out, perches
+out,' taking the bird quickly before its eyes adjust."
+
+### Numbers decided, both sides and the source that won
+
+- Lifespan. Three figures, and the two deep-dive ones were unsourced:
+  the cost guide has no Sources block at all, and neither does tank setup
+  or health issues. Opened LafeberVet's canary basic information sheet,
+  the veterinary reference the handling guide already cites: "Mean life
+  span (years): 6-12, up to 15". That is the only sourced figure
+  available for this species, so the cost guide moved to it in its body
+  and its FAQ, and LafeberVet was added to that guide's Sources. The
+  encyclopedia's "up to 24 years recorded in captivity" is a record
+  rather than a typical span and reads as such, so it was left alone.
+- Setup total. The cost guide's "$200 to $400" against its own table's
+  $150 to $273. Arithmetic on the page's own rows settles it; corrected
+  to $150 to $275. No line item changed.
+- Light cycle. No figure moved. See Deep dives against each other.
+- Grit, cage size, temperature and daily intake in the new Diet Basics
+  section all come from the same LafeberVet sheet: "Canaries do not
+  require grit, however they should be offered a cuttlebone", "All-seed
+  diets are deficient in vitamins, mineral, and protein including calcium
+  and vitamin A", "Food intake: Up to 30% of body weight (BW)/day", and
+  "Body weight (g): 12-30".
+
+### Encyclopedia
+
+Nothing changed. Adult size and the captivity record were both checked
+against the deep dives and the LafeberVet sheet and neither conflicts.
+
+### Also fixed
+
+- The tank setup guide gained a Diet Basics section and a Sources block,
+  since it had neither. The section answers grit, the all-seed problem,
+  daily intake, the cuttlebone, and points at the shared pellet
+  conversion guide for the method.
+- The cost guide gained a Sources block, since it had none.
+
+### Open
+
+- Three of five deep dives shipped with no Sources block at all: cost,
+  tank setup, and health issues. Two now have one. The health issues
+  guide still has none, and its mite and respiratory claims are the ones
+  a reader acts on, so it is the priority for a sourcing pass.
+- The six gaps above, in docs/READER_LOG.md.
+- Feather picking, named as a boredom sign by the health guide and absent
+  from the enrichment guide.
+
+## Neon Tetra (2026-09-14, batch G, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment). One Opus 5 agent, about 86k
+tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | Carries two things nothing else does, and its tables fight the cost guide's. |
+| Encyclopedia | C+ | Read for the Hindenburg story, nothing to act on. |
+| Cost | C | Budgetable, and its tables fight the hub's. |
+| Handling | B+ | Six floor, ten to twelve better, no fin-nippers. |
+| Health issues | A- | The NTD signs, and the honest note that NTD is over-diagnosed. |
+| Tank setup | A- | The best page for doing. |
+| Feeding | A- | Twice daily in 2 to 3 minutes, and what a 1 to 2mm mouth changes. |
+| Enrichment | A | The only cited page, and the number came out ten. |
+
+Set grade: B-. "Strong on the doing pages, undermined by numbers that
+disagree across pages a reader hits in one sitting."
+
+Worth recording that the reader's first recommended change was to make
+the hub the single source for costs, lifespan, school size, and feeding
+frequency, and fix the deep dives to match. That is the opposite of the
+hub rule (RULES, Hubs): the deep dives own the numbers and the hub
+follows. The rebuild went the other way on purpose.
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs neon-tetra --strict` before the
+pass printed 8 conflicting topic groups: the hub's whole cost table
+against the cost guide's, tank size against school size, lifespan three
+ways, and the temperature band. The rest were the cost guide's own price
+tiers.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild:
+
+- Tank against school. Old hub: "A 10 to 20 gallon tank works well for a
+  proper school of 6 to 10 or more." Tank setup: "10 gallons is the
+  practical minimum for a proper school of 6. If you're aiming for the
+  better group size of 10 to 15 fish, step up to a 20-gallon long tank."
+  As the reader put it, the old hub reads as if ten fish fit in ten
+  gallons.
+- Cost, every line. Old hub: tank "$60 to $120", filter "$20 to $35",
+  food "$30 to $50". Cost guide: tank "$20 - $150", "Gentle filter | $10
+  - $20", "Micro-pellet or micro-crisp food | $15 - $30".
+- Lifespan. Old hub: "5 to 8 years is achievable with stable water
+  quality." Cost guide: "Around 5 years is achievable with good, stable
+  care, though average conditions often see neon tetras live closer to 2
+  to 3 years."
+- Feeding frequency. Old hub: "Feed small amounts once or twice a day."
+  Feeding: "Feed small amounts twice daily, morning and evening."
+- The parasite's name. Old hub, twice: "Pleistophora hyphessobrycetis."
+  Feeding guide: "Pleistophora hyphessobryconis." See Numbers decided.
+
+### Deep dives against each other
+
+- School size. Handling: "ten to twelve or more is considerably better."
+  Tank setup: "the better group size of 10 to 15 fish." Enrichment: "buy
+  ten rather than six." Checked and left alone, not a conflict: all three
+  put the target at ten or above and the floor at six, and Seriously Fish
+  gives "a mixed-sex group of at least 8-10 specimens", which sits inside
+  all of them. The hub row copies the enrichment guide, the page with the
+  study behind it.
+- Lifespan, encyclopedia against cost guide. The encyclopedia's "5-8
+  years" is in the wildLifespan field and the cost guide's figure is
+  explicitly about a home tank, so the two are measuring different
+  things. The old hub was the page that conflated them, applying the wild
+  figure to a home tank. Neither deep-dive number moved. See Numbers
+  decided.
+- Test kit. The old hub's checklist called a water test kit mandatory
+  while the cost guide's ongoing table lists only food and conditioner.
+  The rebuild keeps the test kit in the buy list, and the cost guide's
+  table is its own, so no figure moved.
+
+### Gaps, checked against the Health and More list first
+
+- How to soften hard tap water for a pH 6.0 to 7.0 tank. The shared pH,
+  GH and KH guide argues against chasing numbers and gives no method.
+- Acclimation on the day you bring them home.
+- How many fish to add at once to a newly cycled tank.
+- The target temperature and duration for ich treatment.
+- How to humanely euthanize a confirmed NTD fish, which the health guide
+  recommends and does not explain.
+- A concrete tankmate list beyond avoiding large or fin-nipping fish.
+- Breeding, mentioned only as egg-scattering in passing.
+- A weekly water change percentage. The old hub's 20 to 25% was the only
+  one in the set and no deep dive carries one, so it goes with the
+  rebuild. The enrichment guide has the rule without the number: "Small
+  regular water changes, never large occasional ones."
+
+All filed in docs/READER_LOG.md.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | "Always fully cycle a tank before adding neons" | Cycling guide | n/a, the hub's Cycling row is sourced to it |
+| Encyclopedia | the schooling line | Enrichment guide | No link slot |
+| Cost | "A school of 6 to 12 runs $10 to $40 total" | Enrichment guide | Yes |
+| Handling | "what drives disease risk in a new neon tetra tank" | Health issues guide | Yes |
+| Health issues | "quarantine new fish for 2 to 4 weeks" | Shared hospital tank guide | Yes |
+| Tank setup | "worth testing your source water" | Shared pH, GH and KH guide | Yes |
+| Feeding | "never leave a dead fish in the tank" | Health issues guide | Yes |
+| Enrichment | "Cycle the tank fully before they go in" | Shared cycling guide | Yes |
+
+Six added, one sibling link per article.
+
+### Trust
+
+The reader's doubts were the misspelled parasite, the cost tables that
+contradict each other, the lifespan spread, and "Roughly two million are
+now sold in the United States each month" with nothing behind it. The
+first two are fixed. The two-million figure sits on the encyclopedia
+page, which no deep dive repeats, and no source in this set carries it;
+filed as open rather than deleted, since removing a fact is not this
+pass's job. The sentence that most convinced it a keeper wrote the set,
+from enrichment: "Spread food across the surface instead of dropping it
+in one spot, so the whole shoal eats rather than the boldest three."
+
+### Numbers decided, both sides and the source that won
+
+- The parasite's name. The old hub said "Pleistophora hyphessobrycetis"
+  twice, the feeding guide says "Pleistophora hyphessobryconis". Checked
+  against the taxonomic literature: hyphessobryconis is correct, and it
+  is also what the cardinal tetra deep dives and the site glossary use.
+  The hub was the only wrong copy in this species' set and it is gone.
+- Lifespan. No deep-dive figure moved. The encyclopedia's 5 to 8 years is
+  a wild figure and the cost guide's is a captive one, and the published
+  figures genuinely scatter: aquarium sources variously give 2 to 3 years
+  as typical in a home tank, about 5 with good care, 5 to 8, and up to 8
+  to 10 in the wild, none of them from a source that outranks the others.
+  With no authority to pick between them and no cross-page contradiction
+  once the labels are read, both stand and the hub carries the captive
+  one, since that is the number a buyer acts on.
+- School size and temperature. Nothing moved. Seriously Fish gives "at
+  least 8-10 specimens" and "21-25°C / 70-77°F", both consistent with the
+  deep dives as written.
+
+### Encyclopedia
+
+Nothing changed. The wildLifespan field is a wild figure correctly
+labelled, and the adult size matches the deep dives.
+
+### Also fixed
+
+- Three "Our Guppy X guide covers..." sentences, on the cost, tank setup,
+  and health issues guides, rewritten so the comparison is about the fish
+  rather than about the site (RULES, Linking). All three links kept.
+
+### Open
+
+- The neon tetra disease parasite is also misspelled
+  "hyphessobrycetis" in the cardinal tetra hub's legacy health prose
+  (src/lib/data/guides/fish.js). That is a different species and outside
+  this batch, so it was left alone and is flagged here: it will disappear
+  when cardinal tetra gets its own router rebuild, but until then that
+  hub ships a wrong scientific name.
+- The health issues guide has no Sources block at all, the same gap the
+  canary health guide has.
+- The feeding guide's Sources block carries two entries as bare text with
+  no URL.
+- The encyclopedia's "roughly two million sold in the United States each
+  month", unsourced.
+- The eight gaps above, in docs/READER_LOG.md.
+
+## Veiled Chameleon (2026-09-14, batch G, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal). One Opus 5 agent, about
+96k tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | A compressed rewrite of five articles, and where it is compressed it is wrong. |
+| Encyclopedia | B | Range, habitat, and the Florida and Hawaii founder populations, none of it in a deep dive. |
+| Cost | A- | Setup, month, year, and the female emergency line. |
+| Handling | B- | Approach from below, read gaping as fear. Repeats itself. |
+| Health issues | A- | Named signs per condition, plus the blue-spot detail. |
+| Tank setup | A | The whole build, including bulb distance and bin depth. |
+| Feeding | A | Age-banded portions and a defensible supplement schedule. |
+| Enrichment | A | Best page here: the planting-density test, branch diameters, prey release. |
+| Legal | A- | DC, Hawaii, the New Jersey permit, check your city. |
+
+Set grade: B. "The deep dives are genuinely good and internally
+consistent; the hub sitting on top of them is the weak link."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs veiled-chameleon --strict` before
+the pass printed 33 topic groups with conflicts across eight of them. The
+real decisions: the supplement schedule, the night drop, ambient
+temperature, portions, prey size, enclosure type, UVB strength, and
+lifespan, every one of them the hub against a deep dive.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+The first is the most serious defect any reader has raised in batches F
+or G:
+
+- Supplements. Old hub: "Dust insects with calcium with D3 twice weekly,
+  and a reptile multivitamin once a week." Feeding guide: "use a calcium
+  with D3 supplement about every other week, and a multivitamin with a
+  real vitamin A source on roughly the same twice-monthly schedule." That
+  is roughly four times the dose, on the two supplements the feeding
+  guide specifically says cause gular edema and organ stress in excess:
+  "over-supplementing vitamin A or D3 can cause throat swelling (gular
+  edema) and organ stress, more isn't automatically safer here." A reader
+  following the old hub was being handed an overdose.
+- Night temperature. Old hub: "Nighttime temperatures can drop to 65 to
+  75 degrees F." Tank setup: "a beneficial night drop to 55 to 65°F."
+  The two ranges do not overlap at any point.
+- Ambient temperature. Old hub: "75 to 85 degrees F." Tank setup: "72 to
+  80°F."
+- Portions. Old hub: "offering 5 to 10 appropriately sized insects."
+  Feeding: "roughly 4 to 6 feeders every other day."
+- Prey size. Old hub: "no larger than the width of the chameleon's head."
+  Feeding: "Size prey to the space between your chameleon's eyes."
+- Enclosure type. Old hub: "Screen construction is mandatory, not
+  optional." Tank setup: "Hybrid enclosures, with partially solid sides,
+  hold humidity better and are increasingly preferred."
+- UVB. Old hub checklist: "Strong UVB lighting (T5 HO Arcadia 6% or 12%)
+  is mandatory." Tank setup: "ReptiSun 5.0 or Arcadia 6%", with the
+  basking branch 6 to 9 inches below. As the reader put it, a 12% tube at
+  that distance is a different animal and the old hub never said so.
+- Lifespan. Old hub: "5 to 8 years is typical." Cost guide: "Males
+  commonly live 6 to 8 years. Females typically live considerably
+  shorter, often just 2 to 6 years, and many don't make it past 2 to 3."
+
+### Deep dives against each other
+
+The reader's verdict was that between deep dives the numbers actually
+hold, and re-checking them confirmed it. Two items worth recording:
+
+- The MBD study. The health guide's FunFact says supplementation
+  prevented MBD "even without added UVB or D3", which sits oddly beside
+  UVB being called mandatory everywhere else. Checked and left alone: the
+  same FunFact already closes with "It's not an either-or, but it's a
+  reminder that lighting alone can't cover for a poor supplement
+  routine", and the feeding guide states the same study more precisely
+  ("independently of additional UVB and dietary cholecalciferol"). No
+  number to move and no hedge to change.
+- The legal guide's arithmetic did not hold, and that one was fixed. See
+  Numbers decided.
+
+### Gaps, checked against the Health and More list first
+
+Two of the reader's five gaps turned out to be answerable from a source
+this set already cites, and are now answered in the tank setup guide:
+
+- Target humidity as a number. Every page said "moderate". Now 40 to 50%
+  by day and 80 to 100% at night.
+- Photoperiod. No page said how many hours the lights run. Now 12.
+
+Still open and filed in docs/READER_LOG.md:
+
+- What to do after a female lays: eggs, recovery, rehydration, refeeding.
+- How to buy: sourcing a breeder and judging a healthy animal. The shared
+  quarantine guide covers arrival, not selection.
+- Enclosure cleaning and disinfection, including drainage maintenance.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | the supplement line | Feeding guide | n/a, the hub's Supplements row is sourced to it |
+| Encyclopedia | the Florida and Hawaii line | Legal guide | No link slot |
+| Cost | "Spaying a female can meaningfully extend her life" | Health issues guide | Yes |
+| Handling | "chameleons are prey animals and mask sickness well" | Health issues guide | Yes, and it was the page's only link into the set |
+| Health issues | "comes down to the calcium and D3 schedule" | Feeding guide | Yes |
+| Tank setup | "she's at real risk of egg-binding" | Health issues guide | Yes |
+| Feeding | "proper UVB lighting lets your chameleon produce some of its own D3" | Tank setup guide | No. The feeding guide already spends its one sibling link, on the health issues guide |
+| Enrichment | "A 24x24x48 screen enclosure is a reasonable adult footprint" | Tank setup guide | Yes |
+| Legal | none needed | | n/a |
+
+Five added, one skipped at the cap.
+
+### Trust
+
+The reader's doubts were the hub's supplement and night-temperature
+figures, the 12% UVB with no distance, the repeated paragraph in the
+handling guide, and the state count. The first, second and fourth are
+fixed. The repeated paragraph is a FunFact restating its own section
+nearly word for word, which is the standing FunFact-repeats job rather
+than this pass's, and a FunFact is never deleted here; noted for that
+list. The sentence that most convinced it a keeper wrote the set, from
+health issues: "Sky-blue spots appearing on the flanks are a normal sign
+after a female has successfully laid, worth knowing so you don't mistake
+healthy post-laying color for illness."
+
+### Numbers decided, both sides and the source that won
+
+- Supplement schedule. The feeding guide's twice-monthly D3 and
+  multivitamin against the old hub's twice-weekly and weekly. Opened
+  ReptiFiles' veiled chameleon care sheet, which the feeding guide
+  already cites: it gives a supplement at every feeding plus "Twice
+  monthly: Arcadia Revitalise D3 or Repashy CalciumPlus LoD". The feeding
+  guide is confirmed and is also the subject page. The hub was the only
+  wrong copy and it is gone.
+- Lifespan. The cost guide's sex-split figure against the encyclopedia's
+  flat "5-8 years (males often longer than females)". ReptiFiles gives
+  "your pet can live for up to 6-8 years, with females typically having a
+  shorter lifespan", which matches the cost guide's male figure exactly
+  and supports the direction of its female one. The deep dive wins, and
+  the encyclopedia's wildLifespan now carries the split rather than a
+  range that excludes a normal female.
+- Humidity and photoperiod. No figure moved, both were absent. ReptiFiles
+  gives "40-50% during the day, and 80-100% at night" and "UVB and
+  daylight lighting should both be on for 12 hours each day". Both added
+  to the tank setup guide, with ReptiFiles added to its Sources block so
+  the claims are traceable.
+- Legal counts. The legal guide said "legal in forty-eight states" in one
+  place and "The other forty-eight states have nothing to say" in
+  another, while its own table names Hawaii as a ban, New Jersey as a
+  permit, and Minnesota as permitted-breeder-only. Fifty states minus
+  those three is forty-seven. Both sentences corrected to forty-seven,
+  with the second now naming Minnesota so the arithmetic is visible.
+  Washington DC is not a state and is counted separately, as the guide
+  already does.
+
+### Encyclopedia
+
+One field changed on `veiled-chameleon` in
+src/lib/data/encyclopedia/lizards.js, nothing else in the file touched:
+`wildLifespan`, from "5-8 years (males often longer than females)" to
+"Males 6-8 years; females often just 2-6 and frequently less, from the
+toll of producing egg clutches". Researched as above. `adultSize` already
+carries the sex split and matches the deep dives, so it stands.
+
+### Also fixed
+
+- The handling guide's "Our Ferret handling guide and Hognose snake
+  handling guide cover what each species' display means" rewritten to say
+  the thing about the animals instead of about the site. Both links kept.
+
+### Open
+
+- The three gaps above, in docs/READER_LOG.md.
+- The handling guide's FunFact restating its own "How They Compare"
+  section nearly word for word, for the FunFact-repeats job.
+
+## California Kingsnake (2026-09-14, batch G, single pass, before the router hub)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment). One Opus 5 agent. The reader read the
+legacy care sheet hub; the router hub was built from its findings the
+same day. No feeding guide exists for this species, so the legacy hub's
+diet prose was the set's only feeding content.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The only page with feeding cadence, thaw temperature, and a buy checklist, and its numbers do not match the setup guide. |
+| Encyclopedia | C+ | The captive-breeding history paragraph is the only thing that earns its keep. |
+| Cost | B | Morph table, setup, month, and vet ranges are all buyable numbers. |
+| Handling | A- | The defensive-signal list and the session-length table are the most usable things in the set. |
+| Health issues | B+ | Symptom to cause to action is clean, and the soaking-as-mite-sign tip is real. |
+| Tank setup | B- | Substrate and size spec are directly actionable, two core numbers are contradicted by siblings. |
+| Enrichment | A | The priority order is a shopping sequence, and it tells you what its evidence is not. |
+
+Set grade: B. "Genuinely useful and unusually honest about evidence, held
+back by a hub and a setup guide that disagree on the numbers a first-time
+keeper will actually dial in."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs california-kingsnake --strict`
+before the pass printed conflicts on humidity, warm end, cool end,
+feeding cadence, adult size, and lifespan. Every one of the first four
+was the hub against a deep dive.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Humidity. Hub: "Ambient humidity of 30 to 50% is appropriate." Setup:
+  "Keep it relatively low, 40 to 60%."
+- Warm end. Hub: "a surface temperature of 85 to 88 degrees F." Setup:
+  "Basking/warm side | 85 - 90°F."
+- Cool end. Hub: "a cool end at 72 to 75 degrees F." Setup: "Cool side |
+  70 - 80°F."
+- Feeding. Hub: "adults every 10 to 14 days." Cost: "One appropriately
+  sized rodent a week."
+- Adult size. Hub FAQ: "Adults typically reach 3 to 4 feet."
+  Encyclopedia: "Adult Size: 2.5-4 feet (75-120 cm)."
+- Post-feeding wait. Hub: "Allow 48 to 72 hours after feeding before
+  handling." Handling: "Wait at least 48 hours."
+- Rearranging. Hub: "Rearranging the enclosure layout periodically gives
+  the snake new territory to explore." Enrichment ranks it "6.
+  Rearrangement, last."
+
+### Deep dives against each other
+
+The sharpest finding in the set, and the only one that is a deep-dive
+defect rather than a hub one:
+
+- Enclosure length rule. Setup: "enclosure length should be at least
+  two-thirds of your snake's body length." Enrichment: "Twelve corn
+  snakes were housed in enclosures either two thirds of their body length
+  or longer than their body length... they preferred the larger
+  enclosure." The reader: "The setup guide is recommending the condition
+  the study's snakes rejected."
+- Hides. Setup: "Furnish the enclosure with two cork bark hides, one on
+  each end." Enrichment: "Cover Everywhere, Not Two Hides... A kingsnake
+  in a large bare enclosure uses two hides and nothing else."
+
+### Numbers decided, both sides and the source that won
+
+The setup guide carried no Sources block at all, so its temperatures were
+unsourced. Tree of Life Exotic Pet Medical Center, the vet clinic the
+handling guide already cites, outranks every husbandry reference here and
+decided all three.
+
+- Warm end. Setup 85 to 90°F against Tree of Life's "Warm Side: 85 to 88°F".
+  Vet wins: 85 to 88.
+- Cool end. Setup 70 to 80°F against Tree of Life's "Cool Side: 72 to 78°F".
+  Vet wins: 72 to 78.
+- Humidity. Setup 40 to 60% matches Tree of Life's "Moderate (40 to 60%)"
+  and beats RSPCA's 40 to 55%. Unchanged.
+- Enclosure length. RSPCA asks for "a vivarium that enables it to fully
+  stretch out," and the enrichment guide's borrowed preference test says
+  the same. The two-thirds rule is gone; an adult now gets an enclosure at
+  least as long as the snake.
+- Feeding. Tree of Life's "Every 5 to 7 days" juveniles and "Every 10 to 14
+  days" adults beat Reptiles Magazine's "Feeding once a week." The cost
+  guide's weekly line now follows the vet schedule.
+
+### Gaps closed rather than carried
+
+No feeding guide exists, so the setup guide gained a sourced Diet Basics
+section, the Russian tortoise pattern from batch A. The legacy hub's
+thaw-temperature figure (100 to 105°F) and its two-week post-regurgitation
+wait had no deep dive behind them and were retired rather than carried as
+unsourced rows.
+
+### Also fixed
+
+- The enrichment guide's "Other substrate quantities are available," a
+  broken fragment the reader flagged under Trust.
+- Its FAQ calling the ratsnake work "closer still in the older taxonomy,"
+  which the body does not support. It now says what is actually true:
+  corn snakes themselves sat in Elaphe under the older taxonomy.
+- Three of the reader's seven recommended links: the setup guide's
+  thermostat line into the shared heating guide, the health guide's shed
+  section into the humidity-myth guide, and the handling guide's
+  escape-artist bullet into the setup guide.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: feeding
+  refusal and when a fast becomes a vet visit, brumation, choosing a
+  seller, recapturing an escaped snake, hygrometer placement, and
+  hatchling-specific temperatures.
+- The reader's second recommended change, "give feeding its own deep
+  dive, since it currently exists only on the hub." Diet Basics closes
+  the immediate gap; a real feeding guide is still the right answer.
+- Encyclopedia "up to 33.3 years in captivity" against the cost guide's
+  "20 years or more." Not a contradiction (a record against a typical),
+  but the reader read it as one.
+
+## Hedgehog (2026-09-14, batch G, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal). One Opus 5 agent, about
+90k tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | D | The most actionable single page, and the one I now distrust most. |
+| Encyclopedia | B | The import ban and the Salmonella outbreak are real background. |
+| Cost | C | Budget numbers are usable; the legal section contradicts its own FAQ. |
+| Handling | B+ | Scoop technique, quilling window, do not force the ball. |
+| Health issues | A- | Quarantine two weeks, gradual weight loss, vet for any wobble. |
+| Tank setup | B | CHE on a thermostat, solid floor, substrate depth, dim 12 hour cycle. |
+| Feeding | A- | The 24 hour rule and the stop-eating checklist are the best thing in the set. |
+| Enrichment | A | Clean the wheel daily, hide, solo housing, scatter feed. |
+| Legal | A | Finished it twice. It quotes the regulations. |
+
+Set grade: B-. "The deep dives are unusually good and unusually honest
+about disagreement; the hub drags the set down by contradicting them on
+WHS prevalence, temperature, and cage size." The D on the hub is the
+lowest page grade any reader has given in batches F or G.
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs hedgehog --strict` before the
+pass printed 17 topic groups with conflicts. Seven of them were the hub
+against a deep dive, and two were a deep dive against itself.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+The first is a straight factual error, not a rounding drift:
+
+- WHS prevalence. Hub: "It affects an estimated 1 in 3 African pygmy
+  hedgehogs." Health guide: "a lower confirmed rate, closer to 3%." The
+  reader: "One of those is ten times the other, and the deep dive exists
+  specifically to debunk the inflated figure the hub prints."
+- Cold threshold. Hub: "Below 65 degrees F, African pygmy hedgehogs ...
+  can enter a dangerous state of torpor." Setup: "Below about 72°F,
+  hedgehogs can attempt to hibernate." The reader: "Seven degrees of
+  daylight on the one rule both pages call non-negotiable."
+- Enclosure size. Hub: "A minimum of 2 ft x 4 ft of floor space is
+  required." Setup: "A minimum of 4 square feet of solid floor space."
+- Wheel. Hub checklist "8 to 12 inch," hub body "10 to 12 inches," setup
+  "10.5 to 12 inches." Three numbers, two of them on one page.
+- Lifespan. Hub: "Some individuals reach 7 to 8 years." Cost: "some
+  individuals reaching 8 to 10 years."
+- Insects. Hub: "3 to 5 times per week." Feeding: "3 to 4 times weekly,
+  or roughly 2 to 3 times a week."
+- Fat. Hub: "low fat content (under 15%)." Feeding: "moderate fat (10 to
+  20% dry matter)."
+
+### Deep dives against each other
+
+- Floor space. Setup: "A minimum of 4 square feet." Enrichment: "68
+  percent were in enclosures under 0.5 square meters," listed as a
+  welfare failure. The reader did the arithmetic: "4 sq ft is 0.37 sq m,
+  so setup's minimum is below enrichment's fail line."
+- Quilling. Handling: "Between 2 and 6 months old." Feeding: "most
+  intense at 4 to 6 weeks old and again around 4 months."
+- Legality, inside one page. Cost body: "New Jersey is the only state in
+  the country where a permit is the answer ... Maine names the African
+  pygmy hedgehog on its Unrestricted Species List." Cost FAQ: "New Jersey
+  and Wisconsin require a permit," with Maine restricted and New York
+  City dropped from the ban list. The article's own body debunks its own
+  FAQ.
+- Humidity, inside one page. Setup: "under 40% is preferred," then
+  recommends a humidifier "bringing the room to 40 to 60%."
+
+### Numbers decided, both sides and the source that won
+
+- Floor space. Setup's 4 square feet against the enrichment guide's 0.5
+  square meter fail line. Merck, which the setup guide already cites,
+  settles it: "Minimum floor dimensions of 2 × 3 feet (0.6 × 0.9 m) are
+  recommended." Six square feet clears the survey line, and the setup
+  guide was under its own source.
+- Ideal temperature. Setup's 75 to 80°F against Merck's "72 to 90°F;
+  75 to 85°F is optimal," with LafeberVet giving the same 75 to 85. Vet
+  sources win: 75 to 85 inside 72 to 90.
+- Humidity. Merck and LafeberVet both say "Low humidity (< 40%) is
+  preferred," so the enclosure target stands and the 40 to 60% humidifier
+  line, which had nothing behind it, is gone.
+- Quilling. LafeberVet: "'Nest spines' are shed at 1 month of age and are
+  replaced with permanent spines." The feeding guide's episodic framing
+  was right and the handling guide's single 2 to 6 month window was not.
+  The handling guide now says episodes: about a month old, then a heavier round
+  around 4 months.
+- Vet cost. The cost guide carried three figures for one thing: $40 to
+  $80 routine, $80 to $200 exotic, $60 to $100 in the annual table. The
+  guide's own sentence says this species needs an exotic vet, so the
+  table row now reads $80 to $200 and the $40 to $80 stays only as the
+  general-practice comparison it actually is.
+- Legality. The legal guide quotes the regulations and wins outright. The
+  cost guide's FAQ now matches its own body: six closed jurisdictions,
+  New Jersey the only permit, Maine and Wisconsin not permit states.
+
+### Encyclopedia
+
+wildLifespan read "3-5 years", which is the captive figure sitting in the
+wild field. Animal Diversity Web: "African pygmy hedgehogs live
+approximately 2-3 years in the wild" and "in captivity, they can live to
+be 8-10 years old." Now: "About 2 to 3 years in the wild; 3 to 6 is
+typical in captivity, with some individuals reaching 8 to 10."
+
+### Also fixed
+
+Five of the reader's nine recommended links, each into the page that
+settles the question raised: cost into the legal guide, health into the
+setup guide on the temperature range, handling into the feeding guide on
+quilling and appetite, feeding into the setup guide on the torpor
+threshold, and enrichment into the handling guide on huffing and balling.
+The hub's own two (WHS and the wheel) are now routes rather than links.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: choosing a
+  breeder or rescue, Salmonella hygiene for owners, bathing, the spay
+  decision and its cost, finding an exotic vet who sees hedgehogs, and
+  heat failure planning.
+- Salmonella is the sharpest of those. The encyclopedia names a 54-person
+  multistate outbreak and no care page tells an owner to wash their
+  hands, except after self-anointing. Small mammals have no shared
+  hygiene guide the way reptiles do.
+- Bathing and the spay question were raised only by the legacy hub and go
+  away with it. Neither had a deep dive behind it, so both are retired
+  rather than carried, and both are worth writing.
+
+## Canary, neon tetra, veiled chameleon, California kingsnake, hedgehog (2026-09-14, batch G species check)
+
+One Fable agent covering all five species on branch
+claude/hub-pacman-frog-80291s from base ef32e6a, run once after every
+species was done and pushed, per the batch prompt. It read diffs rather
+than whole files, opened the source URLs behind every number decision
+(Tree of Life Exotic Pet Medical Center, LafeberVet for the canary and
+the hedgehog, Merck, ReptiFiles, Animal Diversity Web for both
+encyclopedia fields), fixed every finding on the branch, and committed
+"Canary, neon tetra, veiled chameleon, California kingsnake, hedgehog:
+species check". Nothing merged.
+
+### Scope
+
+Clean. The diff is the five guide entries, the five species' MDX, this
+file, docs/READER_LOG.md, READMEFIRST.md and docs/TODO.md (the batch
+pick-up commit), and two encyclopedia entries at one field each, both for
+batch species, both traced to a named and opened source. No shared class
+guide row, no other src file. SHORT_LABELS and RELATED_ARTICLES needed no
+change and got none.
+
+### Canary: fixed on the branch
+
+- The cost guide's setup total moved from $200 to $400 to $150 to $275
+  (its own table sums to $150 to $273) and its lifespan to LafeberVet's
+  "6-12, up to 15", but three same-page copies were left behind: the
+  `seoTitle` ("Plus $200 to $400 Setup"), the `description` ("roughly
+  $200 to $400" and "a 10 to 15 year lifespan"), and the setup FAQ
+  ("Roughly $200 to $400"). All three now carry the new figures. Same
+  frontmatter-field failure batch F caught on the zebra finch.
+- Hub Lighting row was a copy of the tank setup sentence before the
+  batch's own fix to it ("consistent day and night cycle"), so it had
+  gone stale against the branch. Now carries the fixed sentence, day
+  length following the season.
+- Hub Diet row said "fresh greens and vegetables" where the Diet Basics
+  section it cites says "fresh fruits and vegetables". Row now matches.
+- Emergency card's first bullet, "A canary that stops singing outside the
+  summer molt", took its molt qualifier from the handling guide rather
+  than the health guide it is sourced to. Now "A loss of song in a
+  previously singing male", the health guide's words.
+- Confirmed by opening LafeberVet's canary sheet: "Mean life span (years):
+  6-12, up to 15", "Body weight (g): 12-30", "Up to 30% of body weight
+  (BW)/day", "Canaries do not require grit, however they should be
+  offered a cuttlebone", "All-seed diets are deficient in vitamins,
+  mineral, and protein including calcium and vitamin A". Every figure in
+  the new Diet Basics section and the lifespan change holds. Five links
+  added, one sibling per article, none before the first H2. Dates right
+  in both directions. The two "our X guide covers" cuts (birdwatching,
+  the FunFact cost-guide clause) and the misdescribed foot-problems link
+  are the linking rule, not rewrites, and were left.
+- Out of scope, not touched, flagged for whoever next edits zebra finch:
+  zebra-finch-cost-guide says a canary is kept "solo (or a same-sex pair
+  for males, since two males will fight)", which contradicts itself and
+  the canary enrichment guide's rule that males are never housed
+  together.
+
+### Neon tetra: clean
+
+No number moved, and none needed to. Every hub row's figures sit in its
+source article, the seven emergency bullets are the health guide's four
+conditions bullet for bullet, and the vetLine keeps "likely" and
+"relatively uncommon". Six links added, one sibling per article, no date
+bumped, which is right for a link-only pass. The three "Our Guppy X guide
+covers" rewrites keep their links and lose the site talking about itself.
+The hub's Temperature row copies "commonly recommended target" from the
+tank setup guide; that is the article's own phrasing rather than source
+narration and was left.
+
+### Veiled chameleon: fixed on the branch, encyclopedia only
+
+- The batch's `wildLifespan` rewrite put ReptiFiles' pet figure ("up to
+  6-8 years, with females typically having a shorter lifespan") into a
+  field the site renders as "Wild Lifespan" with no captive label, the
+  same mislabeling the hedgehog fix corrected. Opened Animal Diversity
+  Web for Chamaeleo calyptratus: "usually five years for females and up
+  to eight years for males". The field now reads "Males up to 8 years and
+  females usually around 5; in captivity females often just 2-6 and
+  frequently less, from the toll of producing egg clutches", so the
+  captive figure is labeled as one.
+- Everything else holds. ReptiFiles states "40-50% during the day, and
+  80-100% at night", "UVB and daylight lighting should both be on for 12
+  hours each day", and the twice-monthly D3 and multivitamin, so the
+  humidity, photoperiod and supplement rows and the tank setup additions
+  are sourced. The legal guide's forty-seven is right on its own table
+  (Hawaii, New Jersey, Minnesota out of fifty) and no other copy of
+  forty-eight survives. Four emergency bullets cover the four conditions
+  the health guide names signs for; the vetLine keeps "can kill within 24
+  hours" and "often require surgery". Five links added, one skipped at
+  the cap, correctly. `veiled-chameleon-ferret-hognose-overview` is a
+  roundup and correctly not routed.
+
+### California kingsnake: fixed on the branch
+
+- The emergency card had no vetLine, the only router hub of 36 without
+  one. Added, copied from the health guide with its hedges: "Early cases
+  of respiratory infection sometimes resolve once parameters are
+  corrected, advanced cases need a vet for antibiotics", the mouth rot
+  "always see a vet", the mites "can become genuinely life-threatening",
+  and the closing husbandry sentence.
+- Confirmed by opening Tree of Life: "85 to 88°F" warm, "72 to 78°F" cool,
+  "Moderate (40 to 60%)", "Every 5 to 7 days" juvenile, "Every 10 to 14 days"
+  adult, "Prey should be about as wide as the snake's thickest point",
+  "pre-killed (frozen/thawed) mice or small rats". Every temperature and
+  feeding change and every claim in the new Diet Basics section holds,
+  and the vet source outranks Reptiles Magazine as the review says. Same-
+  page copies all moved (table, FAQs, seoDescription); the cost guide's
+  weekly line and FAQ moved with them.
+- The enrichment FAQ rewrite ("closer still in the older taxonomy" to
+  "the genus corn snakes themselves sat in") is a change the prompt's
+  contradiction rule does not strictly cover, but the new sentence is
+  true and the guide's own Almli and Burghardt entry names the genus
+  (Elaphe). Kept.
+- Dates: cost and tank setup bumped for number changes, the rest not,
+  which is right. The health guide gained a shed-mechanism sentence
+  carrying a link to the shared shedding guide without a bump; treated as
+  navigation, since the claim is the linked page's, and left.
+
+### Hedgehog: fixed on the branch
+
+- Hub Portion row narrated the disagreement ("Daily amount is a real
+  point of disagreement, and the more clinically oriented guidance skips
+  one fixed total") and the Insects row carried "per other sources": the
+  batch D and E leak, in two rows. Both came from the feeding guide's own
+  wording, so the deep dive was settled first per RULES (state the range,
+  say which end, move on) and the rows copy the settled sentences. Body
+  before: "Daily amount is a real point of disagreement, not just
+  imprecise numbers. One care sheet says 3 to 4 teaspoons of hedgehog
+  pellets a day, a separate article from the same publisher says 1 to 3
+  tablespoons, roughly a 2 to 3 times spread. The more clinically
+  oriented guidance skips one fixed total entirely, instead framing it as
+  roughly 2 to 3 teaspoons of a protein base plus 1 to 2 teaspoons of
+  chopped produce, adjusted by body condition rather than a flat number."
+  After: "Published daily amounts run from 3 to 4 teaspoons of hedgehog
+  pellets a day up to 1 to 3 tablespoons, roughly a 2 to 3 times spread,
+  so a flat total is the wrong tool. Feed roughly 2 to 3 teaspoons of a
+  protein base plus 1 to 2 teaspoons of chopped produce, adjusted by body
+  condition rather than a flat number." Insects before: "3 to 4 times
+  weekly, or roughly 2 to 3 times a week per other sources." After: "2 to
+  3 times a week and up to 3 to 4 times weekly." Both ranges kept, no
+  number changed, no hedge changed. The feeding route line "the portion
+  nobody agrees on" is now "the portion by body condition".
+- The feeding guide's cold-stress figure moved from "the mid-60s°F or
+  below" to "below about 72°F" with no date bump. lastUpdated and
+  lastReviewed now 2026-09-14, matching the rest of the set.
+- The handling guide's quilling numbers now rest on LafeberVet ("'Nest
+  spines' are shed at 1 month of age"), but its Sources block carried
+  only Merck. LafeberVet added, so the figure is traceable on the page
+  that states it.
+- Review file said "Both pages now say episodes" under Quilling. The
+  feeding guide did not change; it already read "most intense at 4 to 6
+  weeks old and again around 4 months". Corrected to name the handling
+  guide only.
+- Confirmed by opening Merck: "Minimum floor dimensions of 2 × 3 feet
+  (0.6 × 0.9 m) are recommended", "72 to 90°F", "75 to 85°F is optimal",
+  "Low humidity (< 40%) is preferred"; LafeberVet: "75-85°F", "Low
+  humidity < 40% is preferred"; Animal Diversity Web: "approximately 2-3
+  years in the wild", "8-10 years old" in captivity. Every number
+  decision and the encyclopedia field hold. Legal FAQ now matches its body
+  and the legal guide with no hedge lost. Six emergency bullets cover the
+  five conditions plus the hibernation attempt, and the vetLine keeps
+  "can look similar".
+- Left open: the feeding guide's portion FAQ still opens "This is
+  disputed, even within the same publisher's own content". It does not
+  contradict its body, which is the only case the prompt lets a FAQ be
+  rewritten for, so it stays and is listed here for the source-in-block
+  pass.
+
+### Gates on the branch head
+
+check-internal-links, check-related-articles, check-affiliate-mdx,
+check-cost-coverage, check-seo-tags, check-voice --strict (0 errors), and
+`npx eslint . --quiet` all pass. check-species-numbers for all five: no
+hub line disagrees with a deep dive; every hub-only value the checker
+lists sits in a shared guide, the encyclopedia, or the same deep dive
+under a different topic key. check-voice per changed slug: no warning
+count went up on any of the 28 changed articles, and the three files
+touched here are unchanged in count.
+
+### Pass grade: B+
+
+The process was followed: real sources opened and quoted for every number
+decision, every one of which held when the URLs were reopened here; no
+file outside scope; hedges intact everywhere, including the two FAQ
+rewrites; the review file complete and quoting both sides. What it
+missed is the pattern batches D through F already named: three
+frontmatter copies of a moved figure on the canary cost guide, one hub
+row left stale against the batch's own later fix, two hedgehog rows
+carrying the deep dive's source narration, one missing vetLine, one date
+not bumped, and a captive figure filed under "Wild Lifespan" with no
+label on the same day the hedgehog fix labeled its own.

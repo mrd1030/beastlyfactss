@@ -120,7 +120,7 @@ export const smallMammalEncyclopedia = [
       habitat: "Savanna, grassland, and dry woodland",
       adultSize: "5-9 inches (13-23 cm); 8-24 oz",
       wildDiet: "Insects, worms, snails, small vertebrates, eggs, and some plant matter",
-      wildLifespan: "3-5 years",
+      wildLifespan: "About 2 to 3 years in the wild; 3 to 6 is typical in captivity, with some individuals reaching 8 to 10",
       conservation: "Least Concern (IUCN)",
       history: "Hedgehog keeping took hold in the United States in the early 1980s, and the pet is probably not a pure Atelerix albiventris: it appears to descend from hybrids with the North African hedgehog, Atelerix algirus. The supply line closed almost as fast as it opened. Because African hedgehogs can carry foot-and-mouth disease, the USDA banned importing them from Africa in 1991, so every pet hedgehog in the country now comes from captive stock, and ownership remains illegal in several states. Public health agencies have watched them since: a Salmonella Typhimurium outbreak traced to pet hedgehogs sickened 54 people across 23 states between October 2018 and August 2019, hospitalizing eight.",
     },

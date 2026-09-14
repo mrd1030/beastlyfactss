@@ -631,46 +631,85 @@ export const fishGuides = [
     image: "/assets/guides/neon-tetra.jpg",
     tagline: "The tiny electric-blue schooler that turns any planted tank into a shimmering river scene!",
     funFact: "A neon tetra's iridescent blue stripe isn't pigment - it's produced by light-reflecting cells called iridophores. That stripe actually dims or goes nearly dark while the fish sleeps at night, a completely natural nocturnal color change rather than a sign of illness.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a proper school of 6-10+.
-    costs: {
-      setup: [
-        { item: "10-20+ gallon tank", low: 60, high: 120 },
-        { item: "Aquarium heater", low: 15, high: 25 },
-        { item: "Gentle filter", low: 20, high: 35 },
-        { item: "Dense live plants", low: 20, high: 35 },
-      ],
-      annual: [
-        { item: "Micro-pellets + baby brine shrimp", low: 30, high: 50 },
-        { item: "Water test kit and conditioner", low: 15, high: 25 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Cycling, quarantine, filtration, water
+    // chemistry, the power outage rule and the sick-fish check cite the shared
+    // aquarium guides in the sidebar's Health and More list. The old hub's
+    // weekly 20 to 25% water change was a figure no deep dive carries, so it is
+    // retired here and filed as a gap in docs/READER_LOG.md. Built 2026-09-14
+    // for the neon tetra set test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "How many", value: "Groups of ten neon tetras showed improved welfare compared with smaller groups: aggression and darting were lowest in the larger groups, and latency to feed decreased as group size increased. Six is the floor, not the target. If the tank supports it, buy ten rather than six, and prefer one species of ten to two species of five.", source: "neon-tetra-enrichment-guide" },
+        { label: "Tank size", value: "10 gallons is the practical minimum for a proper school of 6. If you're aiming for the better group size of 10 to 15 fish, step up to a 20-gallon long tank. Schooling behavior plays out horizontally, so favor a longer tank over a taller one.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Temperature", value: "70 to 81°F works, with 72 to 78°F being a solid, commonly recommended target. A heater is necessary for any tank of 10 gallons or more, and keeping the temperature stable matters as much as hitting the right number, swings are more stressful than a slightly imperfect but steady setting.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Water chemistry", value: "Soft, slightly acidic water, a pH of 6.0 to 7.0 and low hardness. Genuinely different from the harder, more alkaline water species like guppies tolerate, so test your source water before assuming your setup is suitable. Ammonia and nitrite both need to read zero.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Filtration", value: "Keep the flow gentle, neon tetras dislike strong current. A sponge filter is a common, effective choice, and a hang-on-back filter works too if you can baffle or reduce its output.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Substrate", value: "Fine gravel or sand, and a darker color genuinely makes neon coloring pop more against the background.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Lighting", value: "Dim to moderate, roughly 8 to 10 hours a day. Bright, intense lighting stresses this species, they come from shaded, plant-covered streams, not open water.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Blackwater feel", value: "Driftwood and Indian almond leaves release natural tannins that stain the water slightly and lower pH, mimicking the blackwater habitat this species evolved in. Pair that with dense midground live plants and some floating plants to dim the light further.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Small amounts twice daily, morning and evening, only as much as the fish finish in about 2 to 3 minutes. Fry and juveniles need 3 to 4 small feedings a day, and adults from about 6 months do well on twice daily.", source: "neon-tetra-feeding-guide" },
+        { label: "Food size", value: "Their mouths are only about 1 to 2mm across. Crush flakes into fine pieces, and stick to micro or nano sized pellets, food that's too large gets taken and spat back out repeatedly, which functionally starves the fish even while food is visibly going into the tank.", source: "neon-tetra-feeding-guide" },
+        { label: "Diet", value: "Omnivores. A high-quality tropical flake or micro-pellet designed for small, nano fish, supplemented several times a week with small frozen or live foods: baby brine shrimp, daphnia, cyclops, and finely chopped bloodworms, plus some plant or algae content. Keep protein-rich frozen or live foods to 2 to 3 feedings a week.", source: "neon-tetra-feeding-guide" },
+        { label: "The rule that protects the school", value: "Never leave a dead fish in the tank or let tankmates scavenge a visibly sick fish's body. Neon tetra disease is caused by the microsporidian parasite Pleistophora hyphessobryconis, and if a fish dies of it and its body is eaten by others, those fish contract it too.", source: "neon-tetra-feeding-guide" },
+        { label: "Quarantine", value: "Quarantine new fish for 2 to 4 weeks before adding them to an established tank, given the disease risk this species carries.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Tankmates", value: "Peaceful, similarly sized community fish. Avoid anything large enough to eat a neon tetra and anything inclined to nip fins.", source: "neon-tetra-handling-guide" },
+        { label: "Handling", value: "This is a look-but-don't-touch fish, and netting is the only contact it should get. Take real care netting them, they are small and easily damaged.", source: "neon-tetra-handling-guide" },
+        { label: "Budget", value: "Most neon tetras run $1 to $3, occasionally reaching $5 depending on the source, and a school of 6 to 12 runs $10 to $40 total. Upfront setup is roughly $100 to $300, with complete starter kits at this size commonly $50 to $200 and the tank alone $20 to $150.", source: "neon-tetra-cost-guide" },
+        { label: "Vet costs", value: "Not applicable in the traditional sense. Fish health management is entirely about water quality and, when needed, over-the-counter treatments, not veterinary visits.", source: "neon-tetra-cost-guide" },
+        { label: "Lifespan", value: "Around 5 years is achievable with good, stable care, though average conditions often see neon tetras live closer to 2 to 3 years.", source: "neon-tetra-cost-guide" },
+        { label: "Adult size", value: "1 to 1.5 inches (2.5 to 4 cm)." },
+        { label: "Cycling", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Quarantine tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A 10 to 20 gallon tank works well for a proper school of 6 to 10 or more, since neon tetras are intensely shoaling fish that show visible stress in small numbers. Keep water heated between 72 and 78 degrees F with gentle filtration and current. Dense planting paired with some open swimming space, along with subdued lighting, mimics the dappled blackwater streams they come from. A stable, fully established tank is strongly preferred over a brand-new one, since neon tetras are notably sensitive to ammonia spikes.",
-      diet: "Neon tetras are omnivores that do well on high-quality micro-pellets or crushed flake sized appropriately for their small mouths. Supplementing with baby brine shrimp or micro daphnia adds valuable variety. Feed small amounts once or twice a day - overfeeding fouls water quickly given how sensitive this species is to poor water quality relative to its tiny bioload.",
-      enrichment: "Schooling behavior is really the core of both their appeal and their wellbeing - a group of 10 or more moving in a tight, synchronized formation through planted decor is genuinely mesmerizing to watch and meaningfully reduces stress on individual fish. Dense plants and driftwood recreate the dappled light of their native streams. Their peaceful nature makes them excellent with other small, non-aggressive community fish, but avoid housing them with anything large enough to view them as food, such as angelfish or oscars.",
-      health: "Neon tetra disease, caused by the parasite Pleistophora hyphessobrycetis, causes color loss, a curved spine, and wasting, and unfortunately has no cure - affected fish should be removed and isolated to protect the rest of the school. Ich is also common. Neon tetras are extremely sensitive to ammonia and nitrite spikes and sudden shifts in water parameters, which is a major cause of unexplained die-offs in new tanks. Always fully cycle a tank before adding neons, and maintain stable weekly 20 to 25 percent water changes afterward.",
-      checklist: [
-        "10-20+ gallon fully cycled tank",
-        "Group of 6-10+ neon tetras",
-        "Heater set to 72-78°F",
-        "Gentle filter",
-        "Dense live plants",
-        "Subdued lighting",
-        "Micro-pellet or crushed flake food",
-        "Water test kit (confirm cycling before stocking)",
-        "Water conditioner",
-        "Weekly 20-25% water changes",
+    emergencyCard: {
+      source: "neon-tetra-health-issues-guide",
+      callNow: [
+        "Restless or erratic swimming, often more noticeable at night",
+        "Fading or patchy color, particularly along the back",
+        "Visible lumps under the skin",
+        "A curved or deformed spine in advanced cases",
+        "Difficulty swimming normally",
+        "Small white spots resembling grains of salt, with flashing against decor and rapid breathing",
+        "Ragged or bloody-edged fins",
       ],
+      vetLine: "Nearly everything treatable on this list traces back to water quality and stability, exactly what a properly cycled tank with consistent temperature and regular water changes prevents. Neon tetra disease is the exception and has no cure, though it is likely over-diagnosed: true cases are relatively uncommon in a well-established, well-filtered tank, and the symptoms genuinely overlap with more treatable bacterial infections.",
     },
+    routes: [
+      { slug: "neon-tetra-cost-guide", line: "$1 to $3 a fish, why the purchase is a group, and the $100 to $300 that goes into the tank around them." },
+      { slug: "neon-tetra-tank-setup-guide", line: "10 gallons for six and a 20 long for ten, soft acidic water, gentle flow, dim light, and the blackwater detail." },
+      { slug: "neon-tetra-feeding-guide", line: "Twice a day in 2 to 3 minutes, why a 1 to 2mm mouth changes what you buy, and the rule that stops an outbreak." },
+      { slug: "neon-tetra-handling-guide", line: "Why this is a netting-only fish, the school floor, and the tankmates that turn a shoal into lunch." },
+      { slug: "neon-tetra-health-issues-guide", line: "Neon tetra disease and why it is over-diagnosed, plus ich, fin rot, and swim bladder trouble." },
+      { slug: "neon-tetra-enrichment-guide", line: "The 2010 study that tested group size properly, and why the answer came back ten rather than six." },
+    ],
+    buyList: [
+      "10-gallon tank for a school of six, or a 20-gallon long for ten to fifteen",
+      "Ten neon tetras rather than six, where the tank supports it",
+      "Aquarium heater",
+      "Sponge filter, or a hang-on-back unit you can baffle",
+      "Fine gravel or sand in a darker color",
+      "Driftwood and Indian almond leaves",
+      "Dense midground live plants and floating plants",
+      "Dim to moderate aquarium light on a timer",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Micro or nano pellet, or a tropical flake to crush",
+      "Frozen baby brine shrimp, daphnia, or bloodworms",
+    ],
     faqs: [
-      { q: "Why do my neon tetras keep dying?", a: "The most common cause is adding them to a tank that hasn't fully cycled - neon tetras are unusually sensitive to ammonia and nitrite spikes. Always confirm a completed nitrogen cycle before adding neons, and avoid stocking them into a brand-new tank." },
-      { q: "What is neon tetra disease?", a: "A parasitic infection (Pleistophora hyphessobrycetis) that causes fading color, a curved spine, and wasting. It has no cure and can spread to other neons, so an affected fish should be isolated immediately to protect the rest of the school." },
-      { q: "How many neon tetras should I get?", a: "At least 6, ideally 10 or more if tank size allows. They are intensely schooling fish and show noticeably better color and confidence in larger groups." },
-      { q: "Why does my neon tetra's stripe look dull at night?", a: "This is normal - their signature iridescent blue stripe is produced by reflective cells that dim while the fish sleeps, so a faded stripe after dark is a natural nocturnal change, not a sign of illness." },
-      { q: "How long do neon tetras live?", a: "5 to 8 years is achievable with stable water quality and a fully cycled, low-stress tank, though many pet-store neons live far shorter lives due to stress before and immediately after purchase." },
-      { q: "Are neon tetras good pets for beginners?", a: "With one big caveat: only in a fully cycled tank. Neon tetras are inexpensive and peaceful, which makes them a common first fish, but they're unusually sensitive to ammonia and nitrite, and adding them to a brand-new, uncycled tank is the single most common cause of a beginner's neons dying within days." },
-      { q: "What's the difference between a neon tetra and a cardinal tetra?", a: "The red stripe. On a [cardinal tetra](/guides/cardinal-tetra/) it runs the full length of the body; on a neon tetra it only covers roughly the back half. Cardinals also run slightly larger and tolerate marginally warmer water, otherwise the two are nearly identical to keep." },
+      { q: "What size tank does a school of neon tetras need?", a: "10 gallons for a school of 6, which is the practical floor. For the better group of 10 to 15, move up to a 20-gallon long. Schooling happens sideways, so favor length over height." },
+      { q: "How often should I feed neon tetras?", a: "Twice a day for adults, morning and evening, only as much as they finish in about 2 to 3 minutes. Fry and juveniles need 3 to 4 small feedings a day until about 6 months old." },
+      { q: "So is six enough?", a: "Six is the number most care sheets give and the study found ten better. The smallest functioning shoaling unit is often put at six to eight, so six is a floor rather than a target. If you can house ten, house ten." },
     ],
   },
   {
