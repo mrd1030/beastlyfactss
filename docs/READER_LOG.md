@@ -3227,3 +3227,91 @@ First two changes: make the hub derive its numbers from the deep dives instead o
 - How to pick a healthy angelfish at point of sale.
 - A positive tankmate list beyond cardinal tetras.
 - Breeding and fry rearing past the feeding schedule, including any way to sex them.
+
+## Tokay gecko (2026-09-14)
+
+One Opus 5 agent, eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, legal), about 88k tokens. Full agent
+output below, unedited.
+
+---
+
+## 1. Page by page
+
+**00 Hub.** Finished it, and it is the only page that tells me how often to feed and to gut-load 24 to 48 hours ahead, but its temperatures and enclosure size contradict the deep dives, so I cannot act on the husbandry numbers. **D.**
+
+**01 Encyclopedia.** Finished it fast; the trade history (5 million animals a year, questionable captive-bred paperwork) is the one thing here I actually acted on, because it changed how hard I will vet a seller. **B.**
+
+**02 Cost.** Finished it; I can budget $300 to $500 setup, $100 to $150 for a captive-bred normal, $15 to $30 a month, and skip the $15 wild-caught. **B.**
+
+**03 Handling.** Finished it; the session table, the do-not-pull bite rule, and the two-bite distinction are directly usable. **A.**
+
+**04 Health.** Finished it; the vet call list, the 3 to 6 month quarantine, the weekly gram-scale weight, and the 42.9% farmed-parasite figure are all actionable. **A.**
+
+**05 Tank setup.** Finished it; this is my build sheet, and it is the only page that gives substrate depth and a bulb replacement interval. **A-.**
+
+**06 Enrichment.** Finished it; the priority order and the honest caveat on pairing are usable, though "one study" is thin ground to change housing on. **B+.**
+
+**07 Legal.** Finished it; I know my state answer and that a domestic captive-bred purchase raises no CITES question. **A.**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: nothing else in the set covers range, wild diet, or the trade volume. The hub does not. It repeats the deep dives at lower resolution and then disagrees with them, which is worse than omitting.
+
+Temperature, the serious one. Hub: "Maintain daytime temperatures of 82 to 88 degrees F with a basking area, dropping to 72 to 78 degrees F at night." Setup: "Basking area 90 to 105F, cooler zone 80 to 85F, and nighttime should stay warmer than many homes naturally run, 75 to 80F." The health guide backs the setup page. A reader who builds to the hub runs a cold basking spot and a night floor below the stated minimum, which is the exact cause the health guide names for respiratory infection.
+
+Size. Hub: "A minimum 20x20x30" (or larger) vertical, arboreal enclosure." Setup and cost: "18 inches long by 18 inches wide by 36 inches tall as a minimum." Different footprint, six fewer inches of the dimension both pages call the important one.
+
+Handling. Hub: "Tokay geckos can become calmer over time with consistent, patient handling." Handling guide, for a gecko that barks or gapes: "No sessions. Baldwin's call is a hands-off terrarium subject."
+
+Social. Hub: "ideal for a single adult tokay gecko." Enrichment: "pair housing improves welfare in this species."
+
+Lifespan. Hub FAQ: "commonly live 10 to 20 years." Cost: "10 to 15 years is typical in captivity."
+
+## 3. The set as a whole
+
+Yes, mostly. I could source legally, budget, build the enclosure, quarantine, feed, and know when to call a vet. Still missing: how to tell a genuinely captive-bred tokay from laundered wild-caught stock, which the encyclopedia itself raises and drops; anything on females, eggs, or egg binding beyond a prolapse cause; and what to do in the first week with a new, terrified animal.
+
+Questions answered elsewhere without a signpost:
+- Cost says night heat is "needed since tokays require warmer nights than most homes provide naturally" and never gives the number. The setup guide has it.
+- Handling says "Housing two males together, they fight." The enrichment guide's pairing study is the other half of that, and neither page points at the other.
+- Legal notes wild-caught animals "arrive with parasite loads." The health guide has the figures.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice: wild-caught versus captive-bred (cost, health, handling, legal, encyclopedia), humidity 60 to 80% (setup, health), arboreal height and cork bark (setup, enrichment, hub).
+
+Real conflict is social housing. Setup: "House one gecko per enclosure, tokays are highly territorial." Enrichment: "the results indicate pair housing improves welfare in this species." Neither acknowledges the other.
+
+Second, UVB. Setup: "tokays can technically survive without UVB if their diet supplies enough vitamin D3." Enrichment: "Provision is increasingly treated as a welfare input rather than optional for nocturnal species."
+
+## 5. One link per page
+
+- **Hub:** "Maintain daytime temperatures of 82 to 88 degrees F with a basking area" should link the tank setup guide, and match its numbers.
+- **Encyclopedia:** "investigations into the commercial breeding facilities that are supposed to supply them have questioned whether the captive-bred paperwork reflects any captive breeding at all" should link the cost guide, where the buying decision lives.
+- **Cost:** "For night heat, needed since tokays require warmer nights than most homes provide naturally" should link the tank setup guide.
+- **Handling:** "Housing two males together, they fight, often with serious or fatal results" should link the enrichment guide.
+- **Health:** "its own enclosure in a separate room from any other reptile" should link the shared reptile quarantine guide.
+- **Setup:** "House one gecko per enclosure, tokays are highly territorial" should link the enrichment guide.
+- **Enrichment:** "Socially deprived lizards were more likely to move and hide before feeding" is fine; the page's real gap is the caveat sentence, which should also link the health guide's wild-caught quarantine section.
+- **Legal:** "arrive with parasite loads and a temperament shaped by capture" should link the health guide.
+
+## 6. Trust
+
+What made me doubt: the hub reading like it was written from a different source than the deep dives, and the enrichment page building a headline on a single 2024 study. Nothing in the deep dives felt invented.
+
+Most convincing sentence, from the health guide: "a weekly weight on a gram scale, since the slow weight loss Merck names is the sign a keeper can catch before the gecko looks sick."
+
+## 7. Set grade: B
+
+The six deep dives are specific, sourced, and honest about uncertainty; the hub drags the set down by contradicting them on temperature and size.
+
+First two changes: rebuild the hub from the deep dives, or cut its numbers entirely; and make the setup and enrichment pages argue with each other in public over solo versus pair housing, with a link each way.
+
+## Not covered anywhere
+
+- How to verify a tokay is genuinely captive-bred rather than laundered wild-caught stock.
+- Females, egg laying, and egg binding as a keeping issue rather than a prolapse cause.
+- Acclimation: what the first week with a new tokay should look like.
+- Recapturing an escaped tokay, given a fast, arboreal, biting animal.
+- Feeding as its own deep dive; only the hub covers schedule, prey size, and gut-loading.

@@ -7399,3 +7399,199 @@ an adult size and there was nothing to conflict with.
   four to five that each carry a claim. Nothing deleted, and adding
   sources is research rather than a fix.
 - The two unnamed parasites in the feeding guide.
+
+## Tokay Gecko (2026-09-14, batch F, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, legal). One Opus 5 agent, about 88k
+tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | D | The only page with feeding, and its temperatures and enclosure size contradict the deep dives. |
+| Encyclopedia | B | The trade history changed how hard the reader would vet a seller. |
+| Cost | B | Budgetable, and it says which price to skip. |
+| Handling | A | The session table, the do-not-pull bite rule, the two-bite distinction. |
+| Health issues | A | The vet call list, the quarantine window, the weekly gram-scale weight, the 42.9% figure. |
+| Tank setup | A- | The build sheet, and the only page with substrate depth and a bulb interval. |
+| Enrichment | B+ | Usable priority order, honest caveat, one study to stand on. |
+| Legal | A | A clear state answer and a clear CITES answer. |
+
+Set grade: B. "The six deep dives are specific, sourced, and honest about
+uncertainty; the hub drags the set down by contradicting them on
+temperature and size."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs tokay-gecko --strict` before the
+pass printed 9 conflicting topic groups. The real decisions: the hub's 82
+to 88°F day and 72 to 78°F night against tank setup's 90 to 105 basking,
+80 to 85 cool and 75 to 80 nights; the hub's 20x20x30 enclosure against
+18x18x36 on two deep dives; the hub's whole cost table against the cost
+guide's; and the hub FAQ's 10 to 20 year lifespan against the cost
+guide's 10 to 15 typical. The rest were the cost guide's own price tiers
+and the health guide's parasite percentages, which are separate figures
+rather than a disagreement.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild:
+
+- Temperature, the serious one. Old hub: "Maintain daytime temperatures of
+  82 to 88 degrees F with a basking area, dropping to 72 to 78 degrees F
+  at night." Tank setup: "Basking area 90 to 105F, cooler zone 80 to 85F,
+  and nighttime should stay warmer than many homes naturally run, 75 to
+  80F, not dropping below about 70F." The health guide backs the tank
+  setup page and names exactly that mismatch, a tokay kept cooler than
+  this, as the cause of respiratory infection. Building to the old hub
+  gave a cold basking spot and a night floor under the stated minimum.
+- Enclosure. Old hub: "A minimum 20x20x30\" (or larger) vertical, arboreal
+  enclosure." Tank setup and cost: "18 inches long by 18 inches wide by 36
+  inches tall as a minimum." Six fewer inches of the dimension both pages
+  call the important one.
+- Handling. Old hub: "Tokay geckos can become calmer over time with
+  consistent, patient handling." Handling guide, for a gecko that barks
+  or gapes: "No sessions... a hands-off terrarium subject; the occasional
+  tokay that tames down is the exception."
+- Social housing. Old hub: "ideal for a single adult tokay gecko."
+  Enrichment: "the results indicate pair housing improves welfare in this
+  species."
+- Lifespan. Old hub FAQ: "commonly live 10 to 20 years in captivity."
+  Cost: "10 to 15 years is typical in captivity, with well-documented
+  cases reaching 20 years or more under excellent care."
+- Feeding. Old hub: "Feed juveniles daily, adults every 2 to 3 days. Prey
+  should be no larger than the space between the gecko's eyes." No deep
+  dive carried either figure, and both opened sources give something
+  else. See Numbers decided.
+
+### Deep dives against each other
+
+- Social housing, the one real conflict. Tank setup: "House one gecko per
+  enclosure, tokays are highly territorial", citing ReptiFiles. Enrichment:
+  "the results indicate pair housing improves welfare in this species",
+  citing a 2024 paper in Applied Animal Behaviour Science. Settled toward
+  the peer-reviewed source under the batch prompt's ranking, but not by
+  flipping the default: the tank setup sentence loses its absolute and
+  gains a link, and the enrichment guide's own caveat about quarantine,
+  introduction, space and an exit plan stays in place and now links the
+  health guide's months-long wild-caught quarantine. Both pages now
+  acknowledge the other, which is what the reader asked for.
+- UVB. Tank setup: "tokays can technically survive without UVB if their
+  diet supplies enough vitamin D3, but low-level UVB... offers real
+  benefit." Enrichment lists "A low UVB gradient" seventh in its priority
+  order. Checked and left alone: both call it beneficial and neither calls
+  it required, so there is no number to correct and no hedge to change.
+
+### Gaps, checked against the Health and More list first
+
+- How to verify a tokay is genuinely captive-bred rather than laundered
+  wild-caught stock, a question the encyclopedia itself raises.
+- Females, egg laying, and egg binding as a keeping issue rather than
+  only a prolapse cause.
+- Acclimation: what the first week with a new tokay should look like.
+- Recapturing an escaped tokay.
+- A feeding guide of its own. The tank setup guide's new Diet Basics
+  section closes the first-week part of this, but schedule, prey size,
+  and supplementation for a species this size still deserve their own
+  page.
+
+All filed in docs/READER_LOG.md.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | the temperature line | Tank setup | n/a, every hub row now links its source |
+| Encyclopedia | the captive-bred paperwork line | Cost guide | No link slot |
+| Cost | "For night heat, needed since tokays require warmer nights than most homes provide naturally" | Tank setup | No. That sentence is a ComparisonTable cell, and cells do not take markdown |
+| Handling | "Housing two males together, they fight" | Enrichment guide | Yes |
+| Health issues | "its own enclosure in a separate room from any other reptile" | Shared reptile quarantine guide | Yes |
+| Tank setup | "House one gecko per enclosure, tokays are highly territorial" | Enrichment guide | Yes |
+| Enrichment | the pairing caveat | Health issues guide | Yes |
+| Legal | "arrive with parasite loads and a temperament shaped by capture" | Health issues guide | Yes |
+
+Five added, one skipped for position. Each article spends exactly one
+sibling link.
+
+### Trust
+
+The reader named the hub reading as though written from a different
+source than the deep dives, which it was, and the enrichment page
+building a headline on a single 2024 study. It also said nothing in the
+deep dives felt invented. The sentence that most convinced it a keeper
+wrote the set, from health issues: "a weekly weight on a gram scale,
+since the slow weight loss Merck names is the sign a keeper can catch
+before the gecko looks sick."
+
+### Numbers decided, both sides and the source that won
+
+- Feeding schedule and prey size. The old hub said "Feed juveniles daily,
+  adults every 2 to 3 days" and "Prey should be no larger than the space
+  between the gecko's eyes". No deep dive carried either. Both opened
+  sources agree with each other and with neither: ReptiFiles gives
+  "Juvenile tokays should be fed daily, and full-grown adults should be
+  fed every other day" with insects "no larger than the gecko's head" and
+  a five-minute feeding window, and PetMD's vet-authored tokay care sheet
+  gives "Juvenile Tokay geckos should be fed daily, while adults should
+  be fed every other day". The sourced figures win, and they now live in
+  the tank setup guide's new Diet Basics section with PetMD added to that
+  guide's Sources to back them.
+- Social housing. See Deep dives against each other. The 2024 Applied
+  Animal Behaviour Science study outranks ReptiFiles and PetMD on the
+  source ladder, and both of those say solitary, so the fix keeps one per
+  enclosure as the default and stops stating it as an absolute.
+- Enclosure size. Left at 18x18x36 on both deep dives. Worth recording
+  that the two opened sources bracket it rather than confirm it:
+  ReptiFiles gives "24\"L x 24\"W x 48\"H or similar" as its minimum,
+  PetMD gives "a 20-gallon tank or larger" for an adult, which is smaller.
+  With one source above and one below and the two deep dives already
+  agreeing with each other, there was no single figure to move to, so
+  nothing moved. Filed here as the number this set should fact-check
+  next.
+- Adult size. The old hub FAQ said 11 to 15 inches, the encyclopedia says
+  10 to 15. No deep dive states an adult size, so there was no conflict
+  to settle and the encyclopedia was left alone. For the record, the two
+  opened sources give 10 to 12 inches average with up to 16 (ReptiFiles)
+  and 8 to 16 inches (PetMD), both of which the encyclopedia's range sits
+  inside.
+
+### Encyclopedia
+
+Nothing changed. Every field was checked against the two opened care
+sheets and none of them conflicts with a deep dive's sourced figure.
+
+### Also fixed
+
+- The tank setup guide gained a Diet Basics section, the same move the
+  Russian tortoise hub's pass made for the same reason: no feeding guide
+  exists for this species and the old hub's diet prose was the only
+  feeding content in the set. Sourced to ReptiFiles and to PetMD's
+  vet-authored care sheet, which was added to that guide's Sources block.
+  It carries a matching FAQ and links the shared gut-loading guide for
+  the method.
+- The UVB link moved out of a closing "The lighting decisions here are
+  covered in more depth in our complete guide to UVB lighting" sentence
+  and onto the UVB claim in the Lighting section where it belongs.
+- Two closing sentences of the "our X guides" shape, on the tank setup
+  and health issues guides, rewritten to say something about the animals
+  instead of about the site (RULES, Linking). Both links kept.
+- "colour morphs" caught in a hub row draft and corrected to the US
+  spelling before commit.
+
+### Dates
+
+lastUpdated bumped on the tank setup guide, which gained a sourced diet
+section and changed its cohousing claim. Not bumped on cost, handling,
+health issues, legal, or enrichment: links and one closing rewrite only,
+and the legal and enrichment guides carry publish dates still ahead of
+today.
+
+### Open
+
+- The five gaps above, all in docs/READER_LOG.md.
+- The 18x18x36 enclosure minimum, bracketed rather than confirmed by its
+  own sources, as above.
+- Sources across this set. The tank setup guide ran one entry before this
+  pass and now runs two, and the cost guide runs two, where RULES targets
+  four to five. The health, handling, and legal guides are well sourced.
