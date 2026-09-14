@@ -7157,7 +7157,7 @@ All four filed in docs/READER_LOG.md.
 | Feeding | the pellet-share sentence | Pellet conversion guide | Yes |
 | Enrichment | "do not let one bird lose condition unchecked" | Sexing, weight and body condition guide | Yes |
 
-Six added. Tank setup carries two, one shared (photoperiod) and one
+Seven added. Tank setup carries two, one shared (photoperiod) and one
 sibling (enrichment), which is inside the one-sibling cap. Cost and
 health issues each spend their one sibling link.
 
@@ -7292,7 +7292,8 @@ All against the old legacy hub, every one resolved by the router rebuild:
   pairs form naturally." Not actually a conflict, one is adults in a
   finished tank and the other is juveniles bought to get a pair, and the
   tank setup sentence never said which. One word added, "four to six
-  adults", in its body and its FAQ. No number changed.
+  adults", in its body; its FAQ was rewritten around the same word so
+  it no longer copies the body sentence. No number changed.
 - Prey threshold. Handling: "once it reaches roughly 3 inches", about the
   angelfish. Feeding: "Small fish under about 2 inches are natural prey",
   about the prey. Two different yardsticks, both correct, never joined.
@@ -7529,7 +7530,10 @@ before the gecko looks sick."
 - Feeding schedule and prey size. The old hub said "Feed juveniles daily,
   adults every 2 to 3 days" and "Prey should be no larger than the space
   between the gecko's eyes". No deep dive carried either. Both opened
-  sources agree with each other and with neither: ReptiFiles gives
+  sources agree on the schedule and neither gives every 2 to 3 days;
+  on prey size PetMD does give "no larger than the space between the
+  gecko's eyes", so the old hub's prey rule had a source and ReptiFiles'
+  head-width rule was chosen for the new section. ReptiFiles gives
   "Juvenile tokays should be fed daily, and full-grown adults should be
   fed every other day" with insects "no larger than the gecko's head" and
   a five-minute feeding window, and PetMD's vet-authored tokay care sheet
@@ -7736,8 +7740,9 @@ cage without touching the bars."
 - Adult weight. The encyclopedia gave "4-5.5 oz", which is about 113 to
   156 grams and excludes a normal adult female. The feeding guide gives
   "Adult males typically weigh 100 to 160 grams and adult females 80 to
-  130 grams", and its cited veterinary source is where that came from.
-  The deep dive wins, and the encyclopedia's adultSize now carries the
+  130 grams". That figure is VCA's, from its Sugar Gliders, Owning page
+  rather than the feeding page the guide cited, so the species check added
+  the Owning page to the feeding guide's Sources. The deep dive wins, and the encyclopedia's adultSize now carries the
   same two ranges in grams.
 - Oxalate list. Nothing changed, verified against the source, as above.
 

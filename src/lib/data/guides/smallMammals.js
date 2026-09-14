@@ -906,7 +906,7 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
         "Difficulty climbing",
         "Fractures or seizures, which are the advanced signs",
         "Chewing at their own skin or tail",
-        "Weight that has moved in either direction on a diet you are not certain about",
+        "A diet imbalanced the other way, too much fat or sugar: manageable at home, but worth a vet visit to confirm the adjustments rather than guessing",
       ],
       vetLine: "Always see a vet at the first sign of hind-limb weakness or trembling. Caught early, this is treatable with corrected calcium, vitamin D3, and an overall diet fix. The real fix, though, is prevention, feeding a properly balanced diet from the start, not waiting for symptoms to appear.",
     },
