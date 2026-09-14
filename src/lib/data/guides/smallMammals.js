@@ -695,73 +695,91 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
     image: "/assets/guides/hedgehog.jpg",
     tagline: "The spiky little explorer that runs on a wheel all night!",
     funFact: "When threatened, hedgehogs roll into a tight ball and can make a variety of cute snuffling and hissing sounds. They're surprisingly vocal!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "2x4 ft enclosure (bin or modified cage)", low: 60, high: 150 },
-        { item: "Solid exercise wheel (10-12 in)", low: 30, high: 50 },
-        { item: "Hideout/igloo", low: 10, high: 20 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Supplemental heat source", low: 30, high: 60 },
-        { item: "Nail clippers", low: 8, high: 12 },
-      ],
-      annual: [
-        { item: "High-quality cat food", low: 40, high: 70 },
-        { item: "Live insects", low: 60, high: 100 },
-        { item: "Bedding (paper-based or fleece)", low: 60, high: 100 },
-        { item: "Annual vet wellness check (exotic)", low: 60, high: 100 },
-      ],
-    },
-    sections: {
-      housing: `Hedgehogs need more space than the small round cages commonly sold in pet stores. A minimum of 2 ft x 4 ft of floor space is required for one adult hedgehog, and more is always better. Excellent options include large plastic storage bins modified with ventilation, double-level Critter Nation cages with ramps (that the hedgehog can safely navigate), or DIY C&C cage setups.
-
-Provide a solid exercise wheel 10 to 12 inches in diameter - this is not optional. Hedgehogs can run 5 to 8 miles per night on a wheel. A wheel that is too small (under 10 inches) causes spinal stress. The wheel must have a solid running surface, not bars or mesh, which catch legs and cause injuries. Carolina Storm Wheels and Bucket Wheel are widely recommended.
-
-Temperature is critically important. Hedgehogs must be kept at 72 to 80 degrees F at all times. Below 65 degrees F, African pygmy hedgehogs (the common pet species) can enter a dangerous state of torpor - they are not cold-adapted hibernators, and torpor in pet hedgehogs causes organ damage and can be fatal. Keep the room warm and use a thermostat if necessary.
-
-Bedding should be paper-based (Carefresh, shredded paper) or fleece liners. Never use cedar or pine shavings - the aromatic oils are toxic to small mammals. Provide a cozy hideout (a plastic igloo or small wooden hide box), a food dish, and a water bottle or heavy ceramic water bowl.`,
-      diet: `High-quality cat food forms the cornerstone of most pet hedgehog diets. Choose a kibble with a named protein (chicken, turkey) as the first ingredient, low fat content (under 15%), high fiber, and no artificial colors or preservatives. Hedgehog-specific commercial diets exist but vary widely in quality - research ingredients carefully. A mix of 2 to 3 high-quality cat foods provides better nutritional variety than a single option.
-
-Supplement with live insects 3 to 5 times per week. Mealworms (in moderation as they are high in fat and low in calcium), dubia roaches, crickets, and waxworms as an occasional treat are all appropriate. Insects provide protein variety and behavioral enrichment - hedgehogs actively hunt prey and this activity is enriching and natural.
-
-Small amounts of cooked egg, plain cooked chicken, baby food (single-ingredient meat varieties), and low-fat cottage cheese can be offered occasionally for variety. Fresh fruits and vegetables can be offered in tiny quantities: blueberries, apple slices (no seeds), cooked carrot, and leafy greens are safe options. Avoid grapes, raisins, citrus, onion, garlic, and anything with xylitol.
-
-Fresh water must always be available. Some hedgehogs prefer a water bowl over a bottle - offer both initially to see which the hedgehog uses more.`,
-      enrichment: `The solid exercise wheel is the single most critical enrichment item and must be provided every night. Without adequate running opportunities, hedgehogs become obese, lethargic, and develop behavioral and health problems. Most hedgehogs run for several hours each night. Accept that this is part of keeping a hedgehog and plan for the wheel noise accordingly.
-
-Provide tunnels (toilet paper rolls, PVC pipes, plastic igloo tunnels), foraging toys (hiding insects or kibble in egg cartons or puzzle feeders), and safe items to explore at various heights. Hedgehogs have excellent senses of smell and will investigate every new scent in their environment. Rotate enrichment items regularly.
-
-Supervised free-roam time in a warm, hedgehog-proofed area (no gaps under furniture large enough for escape, no electrical cords at floor level) is excellent additional enrichment. Many hedgehogs enjoy bath time in a shallow, warm water tub and will swim briefly before toweling off.
-
-Most hedgehogs have a grumpy, defensive reputation - but with patient, consistent handling from a young age, many become quite relaxed and even sociable. Handle at dusk when they are naturally active. Move slowly, support the whole body, and avoid startling them. An anointing hedgehog (self-anointing with unusual scents by licking and spreading saliva on their quills) is engaging and completely normal behavior.`,
-      health: `Wobbly Hedgehog Syndrome (WHS) is a progressive and incurable neurological disease caused by a genetic mutation that causes muscle wasting and progressive paralysis, starting in the hindquarters and moving forward. It affects an estimated 1 in 3 African pygmy hedgehogs and has no treatment. A hedgehog with WHS will gradually lose the ability to use its hind legs, then its front legs, and eventually lose the ability to eat. Comfort care and quality of life management with veterinary guidance is the approach.
-
-Obesity is extremely common and leads to fatty liver disease, heart problems, and joint issues. Hedgehogs become obese from overfeeding high-fat insects, insufficient exercise, or inadequate wheel access. Monitor body condition: you should be able to feel but not see the hip bones. A hedgehog that cannot curl into a full ball due to fat deposits is significantly overweight.
-
-Cancer is unfortunately common in hedgehogs over 3 years old - tumors of the uterus, mouth, and mammary glands are most frequently encountered. Annual veterinary examinations with an exotic vet experienced in hedgehogs are strongly recommended from age 2 onward. Spaying females reduces uterine cancer risk significantly.
-
-Torpor (temperature-induced dormancy) in response to cold temperatures is a veterinary emergency in pet hedgehogs. Signs include extreme lethargy, cold body temperature, and difficulty moving. Warm the hedgehog slowly against your body and contact a vet immediately.`,
-      checklist: [
-        "Minimum 2x4 ft secure enclosure",
-        "8 to 12 inch solid exercise wheel",
-        "High-quality kitten or adult cat food",
-        "Live insects (mealworms, dubia roaches)",
-        "Paper-based or fleece bedding",
-        "Hideout/igloo",
-        "Digital thermometer and hygrometer",
-        "Safe foraging toys and tunnels",
-        "Nail clippers",
-        "Exotic vet experienced with hedgehogs"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Vet trips and grooming
+    // cite the shared small mammal guides in the sidebar's Health and More
+    // list. The old hub put Wobbly Hedgehog Syndrome at 1 in 3, ten times the
+    // figure in the health guide written to correct it, and its cold floor at
+    // 65°F against the deep dives' 72. Reconciled 2026-09-14 for batch G
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal check", value: "California, Georgia, Hawaii, Pennsylvania, Washington DC, and New York City will not let you keep one, and none of them has a pet permit to apply for. New Jersey has one and you need it. Maine and Wisconsin get listed as permit states online and neither one is.", source: "hedgehog-legal-guide" },
+        { label: "Enclosure", value: "A minimum of 2 by 3 feet of solid floor space, six square feet, and bigger is fine as long as you fill roughly three-quarters of it with hides and enrichment items. The floor must be solid, never wire, which catches limbs and causes real injuries.", source: "hedgehog-tank-setup-guide" },
+        { label: "Temperature", value: "75 to 85°F ideally, inside a workable 72 to 90°F. Below about 72°F, hedgehogs can attempt to hibernate, a dangerous, potentially fatal response in a species not built to survive it safely in captivity.", source: "hedgehog-tank-setup-guide" },
+        { label: "Heat source", value: "A ceramic heat emitter on a thermostat, necessary for nearly every keeper, since very few homes stay consistently warm enough without one. Avoid light-emitting heat bulbs specifically, which disrupt the day and night cycle and can contribute to triggering hibernation attempts.", source: "hedgehog-tank-setup-guide" },
+        { label: "Humidity", value: "Low, under 40%. A home that runs very dry can leave a hedgehog with itchy, flaky skin, and a humidifier nudging the room up toward that ceiling handles it.", source: "hedgehog-tank-setup-guide" },
+        { label: "Substrate", value: "Recycled paper bedding, aspen shavings, or fleece liners, 3 to 4 inches deep wherever the hedgehog burrows. Nothing rough, dusty, or scented, and nothing with loose fibers or frayed fabric, which can trap toes and limbs.", source: "hedgehog-tank-setup-guide" },
+        { label: "Lighting", value: "Dim, on a consistent 12-hour light and dark cycle. This is a nocturnal species, and bright, constant lighting is genuinely disruptive rather than a minor annoyance.", source: "hedgehog-tank-setup-guide" },
+        { label: "Wheel", value: "A large, solid-surface exercise wheel, 10.5 to 12 inches in diameter, is essential, not optional. Avoid wire or mesh wheels entirely, they cause serious foot and leg injuries.", source: "hedgehog-tank-setup-guide" },
+        { label: "Wheel cleaning", value: "Daily. They run and defecate at the same time, and the mess is not optional. In the owner survey, the keepers who consulted a vet were the ones likelier to do it.", source: "hedgehog-enrichment-guide" },
+        { label: "A hide", value: "The most commonly missing item and one of the cheapest to fix: 84 percent of animals in a 2024 owner survey had none. A hideout plus fleece liners or a snuggle sack gives a nocturnal animal somewhere dark to sleep through the day.", source: "hedgehog-enrichment-guide" },
+        { label: "Floor space", value: "Well past half a square meter, which 68 percent of surveyed animals were housed below. Long and wide rather than tall, with a solid floor: hedgehogs are poor climbers and can be injured falling.", source: "hedgehog-enrichment-guide" },
+        { label: "Living alone", value: "African pygmy hedgehogs are solitary and adults housed together fight. Solo housing is the correct answer for this species, never a compromise.", source: "hedgehog-enrichment-guide" },
+        { label: "Foraging", value: "Scatter feeding, insects released into a dig box of safe substrate, and food hidden inside cardboard or under objects all turn a bowl into a search. Live insects are the strongest version.", source: "hedgehog-enrichment-guide" },
+        { label: "Feeding schedule", value: "Once daily, in the evening, which matches a nocturnal animal's activity. Water stays available around the clock via bottle or bowl, checked daily.", source: "hedgehog-feeding-guide" },
+        { label: "Portion", value: "Daily amount is a real point of disagreement, and the more clinically oriented guidance skips one fixed total: roughly 2 to 3 teaspoons of a protein base plus 1 to 2 teaspoons of chopped produce, adjusted by body condition.", source: "hedgehog-feeding-guide" },
+        { label: "Base diet", value: "A high-quality hedgehog-specific kibble, or a high-quality, low-fat cat food used as a base, moderate to high protein (roughly 30 to 50% dry matter) and moderate fat (10 to 20% dry matter).", source: "hedgehog-feeding-guide" },
+        { label: "Insects", value: "A supplement, not the daily centerpiece: 5 to 6 mealworms or 1 to 2 crickets, 3 to 4 times weekly, or roughly 2 to 3 times a week per other sources. Gut-load them for a day or two first. Waxworms are treat-only, too fatty for a staple.", source: "hedgehog-feeding-guide" },
+        { label: "Foods to avoid", value: "Avocado is toxic. Raw meat, raw eggs, and dairy all cause real problems. Nuts, seeds, and hard raw vegetables like uncooked carrot are choking hazards, so cook vegetables before offering them.", source: "hedgehog-feeding-guide" },
+        { label: "Not eating", value: "Roughly 24 hours is the outer limit before a vet visit is warranted. For a newly acquired hedgehog still adjusting, breeders treat it more loosely, around 2 nights, since some stress-related refusal is expected. Check fecal output, not bowl level.", source: "hedgehog-feeding-guide" },
+        { label: "Picking one up", value: "Scoop from underneath and the sides using flat or cupped hands, like a shovel rather than a grip, and let the ball unroll on its own timeline. Never force a ball open: it teaches the hedgehog that handling means being restrained.", source: "hedgehog-handling-guide" },
+        { label: "Huffing and balling", value: "Defensive reflexes, not aggression, and not a sign you're doing anything wrong. A hedgehog carries around 5,000 to 7,000 quills, smooth and unbarbed so they don't embed in skin, but a balled-up one can still genuinely poke.", source: "hedgehog-handling-guide" },
+        { label: "Quilling", value: "Baby quills out, adult ones in, in episodes: the nest spines go at about a month old and a heavier round lands around 4 months. Expect more grumpiness and more balling up, and expect each episode to pass within a month or so.", source: "hedgehog-handling-guide" },
+        { label: "Self-anointing", value: "A new or interesting smell sets it off, and the hedgehog foams and spreads saliva across its own quills. It looks alarming and is completely normal, not a seizure or a sign of poisoning. Wash your hands afterward before touching your eyes or mouth.", source: "hedgehog-handling-guide" },
+        { label: "Quarantine", value: "Mites are most commonly brought in by a new hedgehog that wasn't properly quarantined, so quarantining any new arrival for at least two weeks is the real prevention.", source: "hedgehog-health-issues-guide" },
+        { label: "Wobbly Hedgehog Syndrome", value: "Older figures put it at roughly 10% of captive hedgehogs. A more recent 20-year study across multiple US veterinary institutions found a lower confirmed rate, closer to 3%, with average onset around 3.3 years. Progression to full paralysis usually runs 9 to 15 months.", source: "hedgehog-health-issues-guide" },
+        { label: "Weight", value: "Watch for a hedgehog that can't fully curl into a ball anymore or struggles to walk or use its wheel. Take weight off gradually: rapid loss can trigger the fatty liver problem it's meant to prevent.", source: "hedgehog-health-issues-guide" },
+        { label: "Budget", value: "$100 to $300 for the hedgehog, roughly $200 to $400 for the setup, and about $20 to $40 a month. Heating electricity adds more in colder months, and this species needs consistent warmth year round.", source: "hedgehog-cost-guide" },
+        { label: "Vet costs", value: "$80 to $200 for an exotic vet visit, which is the kind of vet this species needs. Respiratory infection treatment with medication commonly reaches $200 to $400, and an emergency fund of $500 or more is a reasonable planning number.", source: "hedgehog-cost-guide" },
+        { label: "Lifespan", value: "3 to 6 years typically, with some individuals reaching 8 to 10 years under excellent care. Age 5 is generally considered senior for a hedgehog.", source: "hedgehog-cost-guide" },
+        { label: "Adult size", value: "5 to 9 inches (13 to 23 cm); 8 to 24 oz." },
+        { label: "Getting one to the vet", value: "A hard-sided carrier with a towel or familiar bedding inside, and no long pre-surgery fast: the overnight fast a dog gets before anesthesia is wrong for a small mammal this size.", source: "small-mammal-vet-visits-and-travel-guide" },
+        { label: "Grooming", value: "Nail trims and coat checks look like tidiness chores and are actually health checks. Work them into the handling routine rather than treating them as a separate event.", source: "small-mammal-grooming-nails-molting-guide" },
       ],
     },
+    emergencyCard: {
+      source: "hedgehog-health-issues-guide",
+      callNow: [
+        "Any wobbling or change in coordination",
+        "Difficulty fully curling into a ball",
+        "Wheezing, nasal discharge, and lethargy",
+        "A body that feels cold, which may be a hibernation attempt",
+        "Crusting or flaking skin and quill loss",
+        "Scaly patches near the base of the quills, which is zoonotic",
+      ],
+      vetLine: "Always see a vet for any wobbling or coordination changes, since several other conditions, cold-related sluggishness, minor strokes, and tumors, can look similar and are far more treatable.",
+    },
+    routes: [
+      { slug: "hedgehog-cost-guide", line: "$100 to $300 for the animal, $200 to $400 to set up, $20 to $40 a month, and why the legal question comes before any of it." },
+      { slug: "hedgehog-tank-setup-guide", line: "The 2 by 3 foot floor, the 72 to 90°F range that is the whole ballgame, and the lightless heat emitter that holds it." },
+      { slug: "hedgehog-feeding-guide", line: "Evening feeding, the portion nobody agrees on, the foods that are genuinely toxic, and the 24-hour rule for a hedgehog that stops eating." },
+      { slug: "hedgehog-handling-guide", line: "What huffing and balling actually mean, the scoop that works, quilling, and why self-anointing is not a seizure." },
+      { slug: "hedgehog-health-issues-guide", line: "Wobbly Hedgehog Syndrome at 3% rather than the 10% everyone repeats, obesity, mites, ringworm, and the cold that starts most of it." },
+      { slug: "hedgehog-enrichment-guide", line: "The 2024 owner survey: 84 percent with no hide, 68 percent under half a square meter, 17 percent with no wheel." },
+      { slug: "hedgehog-legal-guide", line: "The six places you cannot keep one, quoted from the regulations, and the two permit states that turn out not to exist." },
+    ],
+    buyList: [
+      "Enclosure with at least 2 by 3 feet of solid floor",
+      "Large solid-surface exercise wheel, 10.5 to 12 inches",
+      "Ceramic heat emitter and thermostat",
+      "Digital thermometer and hygrometer",
+      "Hideout, plus fleece liners or a snuggle sack",
+      "Recycled paper bedding, aspen shavings, or fleece",
+      "High-quality hedgehog kibble or low-fat cat food",
+      "Live insects (mealworms, crickets, dubia roaches)",
+      "Food dish and water bottle or bowl",
+      "Nail clippers",
+      "Exotic vet experienced with hedgehogs",
+    ],
     faqs: [
-      { q: "Are hedgehogs nocturnal?", a: "Yes. African pygmy hedgehogs - the standard pet species - are crepuscular to nocturnal, most active from dusk through the night. During daylight hours they will typically sleep in their hideout or curl into a defensive ball. The best time to interact, feed, and observe your hedgehog is in the evening and early night hours. Forcing interaction during the day causes significant stress. If you are primarily a daytime person, a hedgehog's natural schedule may not align well with your lifestyle." },
-      { q: "Can hedgehogs run on a wheel?", a: "Yes - and they must. A solid exercise wheel 10 to 12 inches in diameter is one of the most critical pieces of hedgehog equipment. Hedgehogs can run 5 to 8 miles per night and require this nightly exercise for physical and mental health. Without adequate wheel access, hedgehogs become obese, lethargic, and develop health problems including fatty liver disease. The wheel must have a solid running surface - bars or mesh injure feet and legs." },
-      { q: "What do hedgehogs eat?", a: "High-quality low-fat cat food forms the backbone of most hedgehog diets. Look for a named protein (chicken, turkey) as the first ingredient and fat content under 15%. Supplement with live insects 3 to 5 times per week - dubia roaches, small mealworms in moderation, and crickets are appropriate. Small amounts of cooked egg, cooked chicken, and safe fruits and vegetables like blueberries, apple, and cooked carrot can be offered as variety. Avoid grapes, raisins, avocado, citrus, onion, garlic, and any xylitol-containing foods." },
-      { q: "What is Wobbly Hedgehog Syndrome?", a: "Wobbly Hedgehog Syndrome (WHS) is a progressive, incurable neurological disease caused by a genetic mutation that produces muscle wasting and paralysis. It begins in the hindquarters and moves forward over months to years, eventually affecting the entire body. An estimated 1 in 3 African pygmy hedgehogs is affected. There is no treatment - management focuses on quality of life with veterinary guidance on when euthanasia becomes the compassionate choice." },
-      { q: "How long do hedgehogs live?", a: "African pygmy hedgehogs typically live 3 to 6 years in captivity. Some individuals reach 7 to 8 years, but this is the exception. Lifespan is significantly affected by genetics (WHS, cancer predisposition), diet (obesity is extremely common and life-shortening), and access to appropriate veterinary care. Annual check-ups with an exotic vet experienced in hedgehogs from age 2 onward are strongly recommended." },
-      { q: "Is a hedgehog related to a porcupine?", a: "No, not closely at all, despite both being spiky. Hedgehogs are small insectivores covered in modified hairs called spines; porcupines are rodents, often much larger, covered in genuinely different quills that detach easily and can lodge in a predator. The two just look superficially similar because both evolved a spiky defense independently." },
-      { q: "Is a hedgehog the same as a groundhog?", a: "No, they're not related and don't even look that similar once you know what to look for. A groundhog is a large, spineless burrowing rodent (a type of marmot) native to North America; a hedgehog is a small, spine-covered insectivore. The name similarity is the main source of confusion, not the animals themselves." },
+      { q: "How common is Wobbly Hedgehog Syndrome?", a: "Older figures put it at roughly 10% of captive hedgehogs. A more recent 20-year study across multiple US veterinary institutions found a lower confirmed rate, closer to 3%, with average onset around 3.3 years. It's real and serious when it happens, just less common than the older number implies." },
+      { q: "How long can a hedgehog go without eating?", a: "Multiple sources converge on roughly 24 hours as the outer limit before a vet visit is warranted. For a newly acquired hedgehog still adjusting, breeders are a bit more lenient, around 2 nights, before recommending a call for help, since some initial stress-related refusal is expected." },
+      { q: "Are hedgehogs as cuddly as hamsters or guinea pigs?", a: "No, and the marketing that shelves them together oversells the resemblance. A hedgehog tolerates handling instead of seeking it out, and its temperature needs sit closer to a reptile's than a pocket pet's." },
     ],
   },
   {

@@ -3736,3 +3736,93 @@ First two changes: make one page the source of truth for temperature, humidity, 
 - How to find and recapture an escaped snake.
 - Whether a hygrometer is needed, and where to place it.
 - Hatchling-specific temperature and enclosure differences beyond "a 20-gallon works."
+---
+
+# Hedgehog: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch G. Raw and unedited.
+
+Read all nine files. Review below.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, and it is the most actionable single page (sizes, temps, checklist), but it is also the one I now distrust most. **D.**
+- **01 Encyclopedia.** Finished it. Acted on nothing husbandry-wise, but the import ban and the Salmonella outbreak are real background. **B.**
+- **02 Cost.** Finished it. Budget numbers and the $500 emergency fund are usable; the legal section contradicts its own FAQ. **C.**
+- **03 Handling.** Finished it. Scoop technique, quilling window, do not force the ball: all directly usable. **B+.**
+- **04 Health.** Finished it. Quarantine two weeks, gradual weight loss, vet for any wobble. **A-.**
+- **05 Setup.** Finished it. CHE on a thermostat, solid floor, 3 to 4 inches substrate, dim 12 hour cycle. **B.**
+- **06 Feeding.** Finished it. The 24 hour rule and the stop-eating checklist are the best thing in the set. **A-.**
+- **07 Enrichment.** Finished it. Clean the wheel daily, hide, solo housing, scatter feed. **A.**
+- **08 Legal.** Finished it twice. It quotes the regulations. **A.**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, wild lifespan, the 1991 USDA import ban, the hybrid ancestry. None of that is in the deep dives.
+
+The hub does not. It restates the deep dives less accurately, and it disagrees with them on the two numbers that matter most.
+
+- WHS. Hub: "It affects an estimated 1 in 3 African pygmy hedgehogs." Health guide: "a lower confirmed rate, closer to 3%." One of those is ten times the other, and the deep dive exists specifically to debunk the inflated figure the hub prints.
+- Cold threshold. Hub: "Below 65 degrees F, African pygmy hedgehogs ... can enter a dangerous state of torpor." Setup: "Below about 72°F, hedgehogs can attempt to hibernate." Seven degrees of daylight on the one rule both pages call non-negotiable.
+- Enclosure size. Hub: "A minimum of 2 ft x 4 ft of floor space is required." Setup: "A minimum of 4 square feet of solid floor space." Half.
+- Wheel. Hub checklist: "8 to 12 inch solid exercise wheel," against its own body text ("10 to 12 inches") and setup's "10.5 to 12 inches."
+- Lifespan. Hub: "Some individuals reach 7 to 8 years." Cost: "some individuals reaching 8 to 10 years."
+
+## 3. Could I keep one
+
+Mostly yes. I could buy legally, build the enclosure, hold temperature, feed, spot illness early, and handle without teaching fear. Missing:
+
+- How to pick a breeder, and what to ask. Quarantine appears only as mite prevention.
+- Salmonella. The encyclopedia names a 54 person outbreak; the handling guide tells me to wash my hands only after self-anointing.
+- Nail trimming. Clippers are on the shopping list and in the cost table. No page shows the trim.
+- Bathing. The hub raises baths; no deep dive returns to it.
+- Spaying. The hub says it cuts uterine cancer risk. No page prices it or says when.
+- Finding an exotic vet, and power outage or heat failure planning.
+
+Unsignposted handoffs: the hub says WHS hits 1 in 3 and never points to the article that corrects it; the cost guide's legality section duplicates the legal guide without linking it; the hub's "wheel noise" aside never reaches the enrichment page's daily wheel cleaning.
+
+## 4. Deep dive overlap and conflict
+
+Read three times: the cold-hibernation rule (health, setup, enrichment, feeding) and the solid wheel. That repetition is mostly earned, except the numbers drift.
+
+- Floor space. Setup: "A minimum of 4 square feet." Enrichment: "68 percent were in enclosures under 0.5 square meters," listed as a failure. 4 sq ft is 0.37 sq m, so setup's minimum is below enrichment's fail line.
+- Quilling. Handling: "Between 2 and 6 months old." Feeding: "most intense at 4 to 6 weeks old and again around 4 months."
+- Fat. Hub: "low fat content (under 15%)." Feeding: "moderate fat (10 to 20% dry matter)."
+- Insects. Hub: "3 to 5 times per week." Feeding: "3 to 4 times weekly, or roughly 2 to 3 times a week."
+- Legality, inside one page. Cost body: "New Jersey is the only state in the country where a permit is the answer ... Maine names the African pygmy hedgehog on its Unrestricted Species List." Cost FAQ: "New Jersey and Wisconsin require a permit," with Maine restricted and NYC dropped from the ban list.
+- Humidity, inside one page. Setup: "under 40% is preferred," then recommends a humidifier "bringing the room to 40 to 60%."
+
+## 5. One link per page
+
+- Hub: "It affects an estimated 1 in 3 African pygmy hedgehogs and has no treatment." Link to the health issues guide.
+- Encyclopedia: "ownership remains illegal in several states." Link to the legal guide.
+- Cost: "Six places will not let you keep one." Link to the legal guide.
+- Handling: "Between 2 and 6 months old, hedgehogs shed their baby quills." Link to the feeding guide, which ties quilling to appetite loss.
+- Health: "hedgehogs kept below roughly 72°F can attempt to hibernate." Link to the setup guide.
+- Setup: "A large, solid-surface exercise wheel, 10.5 to 12 inches in diameter ... is essential." Link to the enrichment guide.
+- Feeding: "Watch for ... a body that feels cold, possible torpor." Link to the setup guide.
+- Enrichment: "do not assume a huffing, balled-up hedgehog is going to enjoy being socialized on your schedule." Link to the handling guide.
+- Legal: none needed. It links well already.
+
+## 6. Trust
+
+What hurt: the hub's 1 in 3 WHS figure sitting next to an article built to refute it, and the cost guide's FAQ contradicting its own body about which states permit.
+
+What convinced me: from the enrichment guide, "Owners who consulted a vet were more likely to clean the wheel daily, which matters more than it sounds for an animal that defecates while running." Nobody writes that from a summary.
+
+## 7. Set grade
+
+**B-.** The deep dives are unusually good and unusually honest about disagreement; the hub drags the set down by contradicting them on WHS prevalence, temperature, and cage size.
+
+First two changes: rebuild the hub from the deep dives so every number matches, and fix the cost guide's legality FAQ to match its own body and the legal guide.
+
+## Not covered anywhere
+
+- Choosing and vetting a breeder or rescue, and what to ask before buying.
+- Salmonella hygiene for owners, despite the encyclopedia naming the outbreak.
+- Bathing and foot baths, raised on the hub and dropped.
+- Spay decision and cost, raised on the hub and dropped.
+- Finding an exotic vet who sees hedgehogs (the shared vet guide covers transport and anesthesia, not sourcing).
+- Heat failure or power outage contingency.
+
+(Nail trimming and molting are covered by the shared Grooming, Nails, and Molting guide; vet transport by the shared small mammal vet guide.)

@@ -8596,3 +8596,132 @@ unsourced rows.
 - Encyclopedia "up to 33.3 years in captivity" against the cost guide's
   "20 years or more." Not a contradiction (a record against a typical),
   but the reader read it as one.
+
+## Hedgehog (2026-09-14, batch G, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal). One Opus 5 agent, about
+90k tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | D | The most actionable single page, and the one I now distrust most. |
+| Encyclopedia | B | The import ban and the Salmonella outbreak are real background. |
+| Cost | C | Budget numbers are usable; the legal section contradicts its own FAQ. |
+| Handling | B+ | Scoop technique, quilling window, do not force the ball. |
+| Health issues | A- | Quarantine two weeks, gradual weight loss, vet for any wobble. |
+| Tank setup | B | CHE on a thermostat, solid floor, substrate depth, dim 12 hour cycle. |
+| Feeding | A- | The 24 hour rule and the stop-eating checklist are the best thing in the set. |
+| Enrichment | A | Clean the wheel daily, hide, solo housing, scatter feed. |
+| Legal | A | Finished it twice. It quotes the regulations. |
+
+Set grade: B-. "The deep dives are unusually good and unusually honest
+about disagreement; the hub drags the set down by contradicting them on
+WHS prevalence, temperature, and cage size." The D on the hub is the
+lowest page grade any reader has given in batches F or G.
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs hedgehog --strict` before the
+pass printed 17 topic groups with conflicts. Seven of them were the hub
+against a deep dive, and two were a deep dive against itself.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+The first is a straight factual error, not a rounding drift:
+
+- WHS prevalence. Hub: "It affects an estimated 1 in 3 African pygmy
+  hedgehogs." Health guide: "a lower confirmed rate, closer to 3%." The
+  reader: "One of those is ten times the other, and the deep dive exists
+  specifically to debunk the inflated figure the hub prints."
+- Cold threshold. Hub: "Below 65 degrees F, African pygmy hedgehogs ...
+  can enter a dangerous state of torpor." Setup: "Below about 72°F,
+  hedgehogs can attempt to hibernate." The reader: "Seven degrees of
+  daylight on the one rule both pages call non-negotiable."
+- Enclosure size. Hub: "A minimum of 2 ft x 4 ft of floor space is
+  required." Setup: "A minimum of 4 square feet of solid floor space."
+- Wheel. Hub checklist "8 to 12 inch," hub body "10 to 12 inches," setup
+  "10.5 to 12 inches." Three numbers, two of them on one page.
+- Lifespan. Hub: "Some individuals reach 7 to 8 years." Cost: "some
+  individuals reaching 8 to 10 years."
+- Insects. Hub: "3 to 5 times per week." Feeding: "3 to 4 times weekly,
+  or roughly 2 to 3 times a week."
+- Fat. Hub: "low fat content (under 15%)." Feeding: "moderate fat (10 to
+  20% dry matter)."
+
+### Deep dives against each other
+
+- Floor space. Setup: "A minimum of 4 square feet." Enrichment: "68
+  percent were in enclosures under 0.5 square meters," listed as a
+  welfare failure. The reader did the arithmetic: "4 sq ft is 0.37 sq m,
+  so setup's minimum is below enrichment's fail line."
+- Quilling. Handling: "Between 2 and 6 months old." Feeding: "most
+  intense at 4 to 6 weeks old and again around 4 months."
+- Legality, inside one page. Cost body: "New Jersey is the only state in
+  the country where a permit is the answer ... Maine names the African
+  pygmy hedgehog on its Unrestricted Species List." Cost FAQ: "New Jersey
+  and Wisconsin require a permit," with Maine restricted and New York
+  City dropped from the ban list. The article's own body debunks its own
+  FAQ.
+- Humidity, inside one page. Setup: "under 40% is preferred," then
+  recommends a humidifier "bringing the room to 40 to 60%."
+
+### Numbers decided, both sides and the source that won
+
+- Floor space. Setup's 4 square feet against the enrichment guide's 0.5
+  square meter fail line. Merck, which the setup guide already cites,
+  settles it: "Minimum floor dimensions of 2 × 3 feet (0.6 × 0.9 m) are
+  recommended." Six square feet clears the survey line, and the setup
+  guide was under its own source.
+- Ideal temperature. Setup's 75 to 80°F against Merck's "72°–90°F;
+  75°–85°F is optimal," with LafeberVet giving the same 75 to 85. Vet
+  sources win: 75 to 85 inside 72 to 90.
+- Humidity. Merck and LafeberVet both say "Low humidity (< 40%) is
+  preferred," so the enclosure target stands and the 40 to 60% humidifier
+  line, which had nothing behind it, is gone.
+- Quilling. LafeberVet: "'Nest spines' are shed at 1 month of age and are
+  replaced with permanent spines." The feeding guide's episodic framing
+  was right and the handling guide's single 2 to 6 month window was not.
+  Both pages now say episodes: about a month old, then a heavier round
+  around 4 months.
+- Vet cost. The cost guide carried three figures for one thing: $40 to
+  $80 routine, $80 to $200 exotic, $60 to $100 in the annual table. The
+  guide's own sentence says this species needs an exotic vet, so the
+  table row now reads $80 to $200 and the $40 to $80 stays only as the
+  general-practice comparison it actually is.
+- Legality. The legal guide quotes the regulations and wins outright. The
+  cost guide's FAQ now matches its own body: six closed jurisdictions,
+  New Jersey the only permit, Maine and Wisconsin not permit states.
+
+### Encyclopedia
+
+wildLifespan read "3-5 years", which is the captive figure sitting in the
+wild field. Animal Diversity Web: "African pygmy hedgehogs live
+approximately 2-3 years in the wild" and "in captivity, they can live to
+be 8-10 years old." Now: "About 2 to 3 years in the wild; 3 to 6 is
+typical in captivity, with some individuals reaching 8 to 10."
+
+### Also fixed
+
+Five of the reader's nine recommended links, each into the page that
+settles the question raised: cost into the legal guide, health into the
+setup guide on the temperature range, handling into the feeding guide on
+quilling and appetite, feeding into the setup guide on the torpor
+threshold, and enrichment into the handling guide on huffing and balling.
+The hub's own two (WHS and the wheel) are now routes rather than links.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: choosing a
+  breeder or rescue, Salmonella hygiene for owners, bathing, the spay
+  decision and its cost, finding an exotic vet who sees hedgehogs, and
+  heat failure planning.
+- Salmonella is the sharpest of those. The encyclopedia names a 54-person
+  multistate outbreak and no care page tells an owner to wash their
+  hands, except after self-anointing. Small mammals have no shared
+  hygiene guide the way reptiles do.
+- Bathing and the spay question were raised only by the legacy hub and go
+  away with it. Neither had a deep dive behind it, so both are retired
+  rather than carried, and both are worth writing.
