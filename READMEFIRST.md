@@ -509,8 +509,16 @@ carried forward as unsourced rows, the angelfish weekly 25 percent water
 change and the sugar glider 12-inch wheel, both filed as gaps in
 docs/READER_LOG.md.
 
-Paste this with the next five species filled in when picking up the batch
-after that.
+Batch F merged to main 2026-09-14. That makes 36 router hubs; the 72
+still on the legacy care sheet are listed by class in docs/TODO.md,
+section 7, dogs and cats last.
+
+Next up is batch G: canary, neon tetra, veiled chameleon, California
+kingsnake, hedgehog (bird, fish, lizard, snake, small mammal). One per
+class, all high-traffic, and canary goes first because the zebra finch
+set merged in batch F cross-links the canary guides four times, so any
+canary figure that moves gets checked against fresh work. Paste this with
+the next five species filled in when picking up the batch after that.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
