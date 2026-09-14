@@ -3647,3 +3647,92 @@ The deep dives are genuinely good and internally consistent; the hub sitting on 
 - What to do after a female lays: eggs, recovery, rehydration, refeeding.
 - How to buy: sourcing a breeder and judging a healthy animal. Quarantine covers arrival, not selection.
 - Enclosure cleaning and disinfection routine, including drainage maintenance.
+
+---
+
+# California Kingsnake: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch G. Raw and unedited.
+
+Read all seven pages in order. Review follows.
+
+---
+
+## 1. Page by page
+
+**00 Care guide hub** (B-). Finished it; it is the only page with feeding cadence, thaw temperature, and a buy checklist, so I can act on it directly. Marked down because its numbers do not match the setup guide.
+
+**01 Encyclopedia** (C+). Finished it, but the only thing I can act on is nothing; the one paragraph that earns its keep is the captive-breeding history.
+
+**02 Cost guide** (B). Finished it; morph table, $200 to $500 setup, $15 to $30 a month, vet ranges are all buyable numbers. The co-housing section is the third time I read that rule.
+
+**03 Handling guide** (A-). Finished it easily; the defensive-signal list and the session-length table are the most usable things in the set, and they name sources.
+
+**04 Health issues** (B+). Finished it; symptom-to-cause-to-action is clean, and the soaking-as-mite-sign tip is real. No temperature or humidity numbers to act on.
+
+**05 Enclosure setup** (B-). Finished it; the substrate and size spec are directly actionable, but two of its core numbers are contradicted by siblings.
+
+**06 Enrichment** (A). Finished it; the priority order is a shopping sequence, and it tells me what its evidence is not.
+
+## 2. Hub and encyclopedia
+
+The hub earns its place: it carries feeding, which no deep dive covers at all. The encyclopedia mostly repeats it, minus the history paragraph.
+
+Disagreements between hub and deep dives:
+
+- Humidity. Hub: "Ambient humidity of 30 to 50% is appropriate." Setup: "Keep it relatively low, 40 to 60%."
+- Warm end. Hub: "a surface temperature of 85 to 88 degrees F." Setup: "Basking/warm side | 85 - 90°F."
+- Cool end. Hub: "a cool end at 72 to 75 degrees F." Setup: "Cool side | 70 - 80°F."
+- Feeding. Hub: "adults every 10 to 14 days." Cost: "One appropriately sized rodent a week."
+- Adult size. Hub FAQ: "Adults typically reach 3 to 4 feet." Encyclopedia: "Adult Size: 2.5-4 feet (75-120 cm)."
+- Lifespan. Encyclopedia: "up to 33.3 years in captivity." Cost: "20 years or more is achievable with good care."
+
+## 3. Could I keep one alive?
+
+Setup, buy, and feed: yes. Keep healthy long term: mostly, with gaps.
+
+Still missing: what a feeding refusal means and when to worry (regurgitation is covered on the hub, a fast is not); brumation or seasonal appetite shutdown; how to pick a healthy animal and a seller; how to recover an escaped snake, which every page insists will happen; whether a hygrometer is needed, since it is not on the checklist though two pages give a humidity range; hatchling-versus-adult temperature differences.
+
+Questions answered elsewhere without being told: the hub's "moist hide with damp sphagnum moss supports healthy shedding" is explained, and partly contradicted, by the shared shed guide, with no pointer. The health guide's shed section has the same problem. The setup guide's thermostat line has no pointer to the shared heating and thermostat guide. The handling guide's "No handling until it is eating reliably" for a new arrival is the quarantine guide's territory, unlinked.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: kingsnakes eat snakes, never co-house. Read twice: escape artist, loose lid. Both are in the handling, setup, enrichment, and cost pages.
+
+Real conflicts:
+
+- Enclosure length rule. Setup: "enclosure length should be at least two-thirds of your snake's body length." Enrichment: "Twelve corn snakes were housed in enclosures either two thirds of their body length or longer than their body length... they preferred the larger enclosure." The setup guide is recommending the condition the study's snakes rejected.
+- Hides. Setup: "Furnish the enclosure with two cork bark hides, one on each end." Enrichment: "Cover Everywhere, Not Two Hides... A kingsnake in a large bare enclosure uses two hides and nothing else."
+- Rearranging. Hub: "Rearranging the enclosure layout periodically gives the snake new territory to explore." Enrichment ranks it "6. Rearrangement, last."
+- Post-feeding wait. Hub: "Allow 48 to 72 hours after feeding before handling." Handling: "Wait at least 48 hours."
+
+## 5. One link per page
+
+- Hub: "Provide a warm end with a surface temperature of 85 to 88 degrees F via an under-tank heater on a thermostat" → Enclosure Setup.
+- Encyclopedia: "Adult Size: 2.5-4 feet (75-120 cm)" → Enclosure Setup, since that number sets the enclosure.
+- Cost: "A 48x24x24 inch front-opening enclosure for an adult" → Enclosure Setup.
+- Handling: "Underestimating this species as an escape artist, a loose lid is a real risk." → Enclosure Setup.
+- Health: "Retained skin from humidity running too low. Manageable at home with a humid hide lined with damp sphagnum moss." → How Snakes Actually Shed, and Why Humidity Is Not the Engine.
+- Setup: "As a general guide, enclosure length should be at least two-thirds of your snake's body length" → Kingsnake Enrichment.
+- Enrichment: "A 4x2x2 foot enclosure comfortably exceeds adult body length for this species." → Enclosure Setup.
+
+## 6. Trust
+
+Doubts: two humidity ranges and two warm-end ranges inside one site; weekly feeding in the cost guide against 10 to 14 days on the hub; "up to 33.3 years" is suspiciously precise next to "20 years or more"; the enrichment guide's "Other substrate quantities are available" reads like a broken sentence; its FAQ calls the ratsnake work "closer still," which the body does not support.
+
+Most convincing sentence: "A kingsnake in a large bare enclosure uses two hides and nothing else, which then gets misread as proof it wanted a smaller box." That is watching an animal, not summarizing a caresheet.
+
+## 7. Set grade: B
+
+Genuinely useful and unusually honest about evidence, held back by a hub and a setup guide that disagree on the numbers a first-time keeper will actually dial in.
+
+First two changes: make one page the source of truth for temperature, humidity, feeding cadence, and the enclosure-length rule, and fix the setup guide's two-thirds line to match the enrichment evidence. Second, give feeding its own deep dive, since it currently exists only on the hub.
+
+## Not covered anywhere
+
+- What to do when a kingsnake refuses food for weeks, and when a fast becomes a vet visit.
+- Brumation and seasonal appetite drop.
+- How to choose a seller and assess a healthy animal before buying.
+- How to find and recapture an escaped snake.
+- Whether a hygrometer is needed, and where to place it.
+- Hatchling-specific temperature and enclosure differences beyond "a 20-gallon works."

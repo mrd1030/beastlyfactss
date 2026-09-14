@@ -8478,3 +8478,121 @@ carries the sex split and matches the deep dives, so it stands.
 - The three gaps above, in docs/READER_LOG.md.
 - The handling guide's FunFact restating its own "How They Compare"
   section nearly word for word, for the FunFact-repeats job.
+
+## California Kingsnake (2026-09-14, batch G, single pass, before the router hub)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment). One Opus 5 agent. The reader read the
+legacy care sheet hub; the router hub was built from its findings the
+same day. No feeding guide exists for this species, so the legacy hub's
+diet prose was the set's only feeding content.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The only page with feeding cadence, thaw temperature, and a buy checklist, and its numbers do not match the setup guide. |
+| Encyclopedia | C+ | The captive-breeding history paragraph is the only thing that earns its keep. |
+| Cost | B | Morph table, setup, month, and vet ranges are all buyable numbers. |
+| Handling | A- | The defensive-signal list and the session-length table are the most usable things in the set. |
+| Health issues | B+ | Symptom to cause to action is clean, and the soaking-as-mite-sign tip is real. |
+| Tank setup | B- | Substrate and size spec are directly actionable, two core numbers are contradicted by siblings. |
+| Enrichment | A | The priority order is a shopping sequence, and it tells you what its evidence is not. |
+
+Set grade: B. "Genuinely useful and unusually honest about evidence, held
+back by a hub and a setup guide that disagree on the numbers a first-time
+keeper will actually dial in."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs california-kingsnake --strict`
+before the pass printed conflicts on humidity, warm end, cool end,
+feeding cadence, adult size, and lifespan. Every one of the first four
+was the hub against a deep dive.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Humidity. Hub: "Ambient humidity of 30 to 50% is appropriate." Setup:
+  "Keep it relatively low, 40 to 60%."
+- Warm end. Hub: "a surface temperature of 85 to 88 degrees F." Setup:
+  "Basking/warm side | 85 - 90°F."
+- Cool end. Hub: "a cool end at 72 to 75 degrees F." Setup: "Cool side |
+  70 - 80°F."
+- Feeding. Hub: "adults every 10 to 14 days." Cost: "One appropriately
+  sized rodent a week."
+- Adult size. Hub FAQ: "Adults typically reach 3 to 4 feet."
+  Encyclopedia: "Adult Size: 2.5-4 feet (75-120 cm)."
+- Post-feeding wait. Hub: "Allow 48 to 72 hours after feeding before
+  handling." Handling: "Wait at least 48 hours."
+- Rearranging. Hub: "Rearranging the enclosure layout periodically gives
+  the snake new territory to explore." Enrichment ranks it "6.
+  Rearrangement, last."
+
+### Deep dives against each other
+
+The sharpest finding in the set, and the only one that is a deep-dive
+defect rather than a hub one:
+
+- Enclosure length rule. Setup: "enclosure length should be at least
+  two-thirds of your snake's body length." Enrichment: "Twelve corn
+  snakes were housed in enclosures either two thirds of their body length
+  or longer than their body length... they preferred the larger
+  enclosure." The reader: "The setup guide is recommending the condition
+  the study's snakes rejected."
+- Hides. Setup: "Furnish the enclosure with two cork bark hides, one on
+  each end." Enrichment: "Cover Everywhere, Not Two Hides... A kingsnake
+  in a large bare enclosure uses two hides and nothing else."
+
+### Numbers decided, both sides and the source that won
+
+The setup guide carried no Sources block at all, so its temperatures were
+unsourced. Tree of Life Exotic Pet Medical Center, the vet clinic the
+handling guide already cites, outranks every husbandry reference here and
+decided all three.
+
+- Warm end. Setup 85 to 90°F against Tree of Life's "Warm Side: 85–88°F".
+  Vet wins: 85 to 88.
+- Cool end. Setup 70 to 80°F against Tree of Life's "Cool Side: 72–78°F".
+  Vet wins: 72 to 78.
+- Humidity. Setup 40 to 60% matches Tree of Life's "Moderate (40–60%)"
+  and beats RSPCA's 40 to 55%. Unchanged.
+- Enclosure length. RSPCA asks for "a vivarium that enables it to fully
+  stretch out," and the enrichment guide's borrowed preference test says
+  the same. The two-thirds rule is gone; an adult now gets an enclosure at
+  least as long as the snake.
+- Feeding. Tree of Life's "Every 5–7 days" juveniles and "Every 10–14
+  days" adults beat Reptiles Magazine's "Feeding once a week." The cost
+  guide's weekly line now follows the vet schedule.
+
+### Gaps closed rather than carried
+
+No feeding guide exists, so the setup guide gained a sourced Diet Basics
+section, the Russian tortoise pattern from batch A. The legacy hub's
+thaw-temperature figure (100 to 105°F) and its two-week post-regurgitation
+wait had no deep dive behind them and were retired rather than carried as
+unsourced rows.
+
+### Also fixed
+
+- The enrichment guide's "Other substrate quantities are available," a
+  broken fragment the reader flagged under Trust.
+- Its FAQ calling the ratsnake work "closer still in the older taxonomy,"
+  which the body does not support. It now says what is actually true:
+  corn snakes themselves sat in Elaphe under the older taxonomy.
+- Three of the reader's seven recommended links: the setup guide's
+  thermostat line into the shared heating guide, the health guide's shed
+  section into the humidity-myth guide, and the handling guide's
+  escape-artist bullet into the setup guide.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: feeding
+  refusal and when a fast becomes a vet visit, brumation, choosing a
+  seller, recapturing an escaped snake, hygrometer placement, and
+  hatchling-specific temperatures.
+- The reader's second recommended change, "give feeding its own deep
+  dive, since it currently exists only on the hub." Diet Basics closes
+  the immediate gap; a real feeding guide is still the right answer.
+- Encyclopedia "up to 33.3 years in captivity" against the cost guide's
+  "20 years or more." Not a contradiction (a record against a typical),
+  but the reader read it as one.
