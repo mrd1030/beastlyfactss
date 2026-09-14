@@ -8301,3 +8301,180 @@ labelled, and the adult size matches the deep dives.
 - The encyclopedia's "roughly two million sold in the United States each
   month", unsourced.
 - The eight gaps above, in docs/READER_LOG.md.
+
+## Veiled Chameleon (2026-09-14, batch G, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal). One Opus 5 agent, about
+96k tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | A compressed rewrite of five articles, and where it is compressed it is wrong. |
+| Encyclopedia | B | Range, habitat, and the Florida and Hawaii founder populations, none of it in a deep dive. |
+| Cost | A- | Setup, month, year, and the female emergency line. |
+| Handling | B- | Approach from below, read gaping as fear. Repeats itself. |
+| Health issues | A- | Named signs per condition, plus the blue-spot detail. |
+| Tank setup | A | The whole build, including bulb distance and bin depth. |
+| Feeding | A | Age-banded portions and a defensible supplement schedule. |
+| Enrichment | A | Best page here: the planting-density test, branch diameters, prey release. |
+| Legal | A- | DC, Hawaii, the New Jersey permit, check your city. |
+
+Set grade: B. "The deep dives are genuinely good and internally
+consistent; the hub sitting on top of them is the weak link."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs veiled-chameleon --strict` before
+the pass printed 33 topic groups with conflicts across eight of them. The
+real decisions: the supplement schedule, the night drop, ambient
+temperature, portions, prey size, enclosure type, UVB strength, and
+lifespan, every one of them the hub against a deep dive.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+The first is the most serious defect any reader has raised in batches F
+or G:
+
+- Supplements. Old hub: "Dust insects with calcium with D3 twice weekly,
+  and a reptile multivitamin once a week." Feeding guide: "use a calcium
+  with D3 supplement about every other week, and a multivitamin with a
+  real vitamin A source on roughly the same twice-monthly schedule." That
+  is roughly four times the dose, on the two supplements the feeding
+  guide specifically says cause gular edema and organ stress in excess:
+  "over-supplementing vitamin A or D3 can cause throat swelling (gular
+  edema) and organ stress, more isn't automatically safer here." A reader
+  following the old hub was being handed an overdose.
+- Night temperature. Old hub: "Nighttime temperatures can drop to 65 to
+  75 degrees F." Tank setup: "a beneficial night drop to 55 to 65°F."
+  The two ranges do not overlap at any point.
+- Ambient temperature. Old hub: "75 to 85 degrees F." Tank setup: "72 to
+  80°F."
+- Portions. Old hub: "offering 5 to 10 appropriately sized insects."
+  Feeding: "roughly 4 to 6 feeders every other day."
+- Prey size. Old hub: "no larger than the width of the chameleon's head."
+  Feeding: "Size prey to the space between your chameleon's eyes."
+- Enclosure type. Old hub: "Screen construction is mandatory, not
+  optional." Tank setup: "Hybrid enclosures, with partially solid sides,
+  hold humidity better and are increasingly preferred."
+- UVB. Old hub checklist: "Strong UVB lighting (T5 HO Arcadia 6% or 12%)
+  is mandatory." Tank setup: "ReptiSun 5.0 or Arcadia 6%", with the
+  basking branch 6 to 9 inches below. As the reader put it, a 12% tube at
+  that distance is a different animal and the old hub never said so.
+- Lifespan. Old hub: "5 to 8 years is typical." Cost guide: "Males
+  commonly live 6 to 8 years. Females typically live considerably
+  shorter, often just 2 to 6 years, and many don't make it past 2 to 3."
+
+### Deep dives against each other
+
+The reader's verdict was that between deep dives the numbers actually
+hold, and re-checking them confirmed it. Two items worth recording:
+
+- The MBD study. The health guide's FunFact says supplementation
+  prevented MBD "even without added UVB or D3", which sits oddly beside
+  UVB being called mandatory everywhere else. Checked and left alone: the
+  same FunFact already closes with "It's not an either-or, but it's a
+  reminder that lighting alone can't cover for a poor supplement
+  routine", and the feeding guide states the same study more precisely
+  ("independently of additional UVB and dietary cholecalciferol"). No
+  number to move and no hedge to change.
+- The legal guide's arithmetic did not hold, and that one was fixed. See
+  Numbers decided.
+
+### Gaps, checked against the Health and More list first
+
+Two of the reader's five gaps turned out to be answerable from a source
+this set already cites, and are now answered in the tank setup guide:
+
+- Target humidity as a number. Every page said "moderate". Now 40 to 50%
+  by day and 80 to 100% at night.
+- Photoperiod. No page said how many hours the lights run. Now 12.
+
+Still open and filed in docs/READER_LOG.md:
+
+- What to do after a female lays: eggs, recovery, rehydration, refeeding.
+- How to buy: sourcing a breeder and judging a healthy animal. The shared
+  quarantine guide covers arrival, not selection.
+- Enclosure cleaning and disinfection, including drainage maintenance.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | the supplement line | Feeding guide | n/a, the hub's Supplements row is sourced to it |
+| Encyclopedia | the Florida and Hawaii line | Legal guide | No link slot |
+| Cost | "Spaying a female can meaningfully extend her life" | Health issues guide | Yes |
+| Handling | "chameleons are prey animals and mask sickness well" | Health issues guide | Yes, and it was the page's only link into the set |
+| Health issues | "comes down to the calcium and D3 schedule" | Feeding guide | Yes |
+| Tank setup | "she's at real risk of egg-binding" | Health issues guide | Yes |
+| Feeding | "proper UVB lighting lets your chameleon produce some of its own D3" | Tank setup guide | No. The feeding guide already spends its one sibling link, on the health issues guide |
+| Enrichment | "A 24x24x48 screen enclosure is a reasonable adult footprint" | Tank setup guide | Yes |
+| Legal | none needed | | n/a |
+
+Five added, one skipped at the cap.
+
+### Trust
+
+The reader's doubts were the hub's supplement and night-temperature
+figures, the 12% UVB with no distance, the repeated paragraph in the
+handling guide, and the state count. The first, second and fourth are
+fixed. The repeated paragraph is a FunFact restating its own section
+nearly word for word, which is the standing FunFact-repeats job rather
+than this pass's, and a FunFact is never deleted here; noted for that
+list. The sentence that most convinced it a keeper wrote the set, from
+health issues: "Sky-blue spots appearing on the flanks are a normal sign
+after a female has successfully laid, worth knowing so you don't mistake
+healthy post-laying color for illness."
+
+### Numbers decided, both sides and the source that won
+
+- Supplement schedule. The feeding guide's twice-monthly D3 and
+  multivitamin against the old hub's twice-weekly and weekly. Opened
+  ReptiFiles' veiled chameleon care sheet, which the feeding guide
+  already cites: it gives a supplement at every feeding plus "Twice
+  monthly: Arcadia Revitalise D3 or Repashy CalciumPlus LoD". The feeding
+  guide is confirmed and is also the subject page. The hub was the only
+  wrong copy and it is gone.
+- Lifespan. The cost guide's sex-split figure against the encyclopedia's
+  flat "5-8 years (males often longer than females)". ReptiFiles gives
+  "your pet can live for up to 6-8 years, with females typically having a
+  shorter lifespan", which matches the cost guide's male figure exactly
+  and supports the direction of its female one. The deep dive wins, and
+  the encyclopedia's wildLifespan now carries the split rather than a
+  range that excludes a normal female.
+- Humidity and photoperiod. No figure moved, both were absent. ReptiFiles
+  gives "40-50% during the day, and 80-100% at night" and "UVB and
+  daylight lighting should both be on for 12 hours each day". Both added
+  to the tank setup guide, with ReptiFiles added to its Sources block so
+  the claims are traceable.
+- Legal counts. The legal guide said "legal in forty-eight states" in one
+  place and "The other forty-eight states have nothing to say" in
+  another, while its own table names Hawaii as a ban, New Jersey as a
+  permit, and Minnesota as permitted-breeder-only. Fifty states minus
+  those three is forty-seven. Both sentences corrected to forty-seven,
+  with the second now naming Minnesota so the arithmetic is visible.
+  Washington DC is not a state and is counted separately, as the guide
+  already does.
+
+### Encyclopedia
+
+One field changed on `veiled-chameleon` in
+src/lib/data/encyclopedia/lizards.js, nothing else in the file touched:
+`wildLifespan`, from "5-8 years (males often longer than females)" to
+"Males 6-8 years; females often just 2-6 and frequently less, from the
+toll of producing egg clutches". Researched as above. `adultSize` already
+carries the sex split and matches the deep dives, so it stands.
+
+### Also fixed
+
+- The handling guide's "Our Ferret handling guide and Hognose snake
+  handling guide cover what each species' display means" rewritten to say
+  the thing about the animals instead of about the site. Both links kept.
+
+### Open
+
+- The three gaps above, in docs/READER_LOG.md.
+- The handling guide's FunFact restating its own "How They Compare"
+  section nearly word for word, for the FunFact-repeats job.

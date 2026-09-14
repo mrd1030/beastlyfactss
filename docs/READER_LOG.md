@@ -3566,3 +3566,84 @@ First two changes: make the hub the single source for costs, lifespan, school si
 - How to humanely euthanize a confirmed NTD fish.
 - A concrete tankmate list beyond avoiding large or fin-nipping fish.
 - Breeding, mentioned only as "egg-scattering" in passing.
+
+## Veiled chameleon (2026-09-14)
+
+One Opus 5 agent, nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal), about 96k tokens. Full
+agent output below, unedited.
+
+---
+
+# Veiled Chameleon: Set Review
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: shopping checklist, cost tables, sizes, sexing. But its feeding numbers conflict with the feeding guide. **C+**
+- **01 Encyclopedia.** Finished it, short. Actionable: almost nothing, and that is fine. The history paragraph on Florida and Hawaii founder populations is the one part I would repeat aloud. **B**
+- **02 Cost.** Finished it. Actionable: I can budget setup, month, year, and the female emergency line. **A-**
+- **03 Handling.** Finished it. Actionable: approach from below, read gaping as fear, tarsal spur sexing. Repeats itself. **B-**
+- **04 Health.** Finished it. Actionable: named signs per condition, plus the blue-spot detail. **A-**
+- **05 Tank setup.** Finished it. Actionable: the whole build, including bulb distance and bin depth. **A**
+- **06 Feeding.** Finished it. Actionable: age-banded portions and a defensible supplement schedule. **A**
+- **07 Enrichment.** Finished it twice. Actionable: planting-density test, branch diameters, prey release, priority order. Best page here. **A**
+- **08 Legal.** Finished it. Actionable: DC, Hawaii, NJ permit, check your city. **A-**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: range, habitat, taxonomic history, the invasive populations. Nothing in it is in a deep dive.
+
+The hub does not. It is a compressed rewrite of five articles, and where it is compressed it is wrong.
+
+- Supplements. Hub: "calcium with D3 twice weekly, and a reptile multivitamin once a week." Feeding: "use a calcium with D3 supplement about every other week, and a multivitamin with a real vitamin A source on roughly the same twice-monthly schedule." That is four times the dose, on the two supplements the feeding guide says cause gular edema in excess.
+- Portions. Hub: "offering 5 to 10 appropriately sized insects." Feeding: "roughly 4 to 6 feeders every other day."
+- Prey size. Hub: "no larger than the width of the chameleon's head." Feeding: "Size prey to the space between your chameleon's eyes."
+- Night temps. Hub: "Nighttime temperatures can drop to 65 to 75 degrees F." Tank: "a beneficial night drop to 55 to 65°F." Zero overlap.
+- Ambient. Hub "75 to 85 degrees F" versus tank "72 to 80°F."
+- Enclosure type. Hub: "Screen construction is mandatory, not optional." Tank: "Hybrid enclosures, with partially solid sides, hold humidity better and are increasingly preferred."
+- UVB. Hub checklist: "Arcadia 6% or 12%." Tank: "ReptiSun 5.0 or Arcadia 6%," at 6 to 9 inches. A 12% tube at that distance is a different animal, and the hub never says so.
+- Lifespan. Hub: "5 to 8 years is typical." Cost: females "often just 2 to 6 years, and many don't make it past 2 to 3."
+
+## 3. The set as a whole
+
+Yes. I could buy, build, wire, feed, and spot the four things that kill them. Enclosure, lighting, water, supplements, and the laying bin are all specified in numbers.
+
+Unsignposted handoffs: the hub's lifespan FAQ raises the female cost and never points at the cost guide; the handling guide says chameleons "mask sickness well" and never points at the health guide; the health guide's closing line about the calcium and D3 schedule points nowhere; the enrichment guide tells me to ask the breeder about rearing and never points at anything about buying.
+
+Still missing: a humidity percentage, a photoperiod, what to do after she lays, and how to pick a healthy animal.
+
+## 4. Overlap and conflict across the deep dives
+
+Read five times: chameleons do not drink standing water (04, 05, 06, 07, plus hub). Twice: the MBD supplementation study, vaguely in 04 and properly cited in 06. The handling guide's fun fact box restates its own "How They Compare" section nearly word for word. Egg-binding appears in 04, 05, and 06.
+
+Between deep dives the numbers actually hold. The only real disagreement is 04 saying supplementation prevented MBD "even without added UVB or D3" sitting next to UVB being mandatory everywhere else. The legal guide's arithmetic wobbles: "legal in forty-eight states," then a table flagging Minnesota and New Jersey, then "The other forty-eight states have nothing to say."
+
+## 5. One link per page
+
+- 00: "calcium with D3 twice weekly, and a reptile multivitamin once a week." Point at the feeding guide.
+- 01: "Escaped and released pets have founded breeding populations in both Florida and Hawaii." Point at the legal guide.
+- 02: "Spaying a female can meaningfully extend her life." Point at the health guide.
+- 03: "Missing early illness signs, chameleons are prey animals and mask sickness well." Point at the health guide. This page links nowhere inside the set.
+- 04: "Metabolic bone disease specifically comes down to the calcium and D3 schedule." Point at the feeding guide.
+- 05: "she's at real risk of egg-binding." Point at the health guide.
+- 06: "proper UVB lighting lets your chameleon produce some of its own D3 naturally." Point at the tank setup guide.
+- 07: "A 24x24x48 screen enclosure is a reasonable adult footprint." Point at the tank setup guide.
+- 08: none needed.
+
+## 6. Trust
+
+Doubts: the hub disagreeing with its own articles on supplements and night temps; 12% UVB listed without distance; the repeated paragraph in the handling guide; the state count.
+
+The sentence that convinced me: "Sky-blue spots appearing on the flanks are a normal sign after a female has successfully laid, worth knowing so you don't mistake healthy post-laying color for illness."
+
+## 7. Set grade: B
+
+The deep dives are genuinely good and internally consistent; the hub sitting on top of them is the weak link. First two changes: rewrite the hub to match the feeding and tank guides number for number, and add humidity, photoperiod, and post-laying care somewhere.
+
+## Not covered anywhere
+
+- Target humidity range as a number. Every page says "moderate."
+- Photoperiod. No page says how many hours the lights run.
+- What to do after a female lays: eggs, recovery, rehydration, refeeding.
+- How to buy: sourcing a breeder and judging a healthy animal. Quarantine covers arrival, not selection.
+- Enclosure cleaning and disinfection routine, including drainage maintenance.
