@@ -513,12 +513,35 @@ Batch F merged to main 2026-09-14. That makes 36 router hubs; the 72
 still on the legacy care sheet are listed by class in docs/TODO.md,
 section 7, dogs and cats last.
 
-Next up is batch G: canary, neon tetra, veiled chameleon, California
-kingsnake, hedgehog (bird, fish, lizard, snake, small mammal). One per
-class, all high-traffic, and canary goes first because the zebra finch
-set merged in batch F cross-links the canary guides four times, so any
-canary figure that moves gets checked against fresh work. Paste this with
-the next five species filled in when picking up the batch after that.
+Batch G (canary, neon tetra, veiled chameleon, California kingsnake,
+hedgehog), spanning bird, fish, lizard, snake and small mammal, done and
+checked 2026-09-14 on branch claude/hub-pacman-frog-80291s; not yet
+merged. Five router hubs, 131 first-week rows, one reader pass per
+species and one Fable check covering all five. Pass grade B+ again, and
+the check caught the same pattern batches D through F named: three
+frontmatter copies of a moved figure left behind on canary, one canary
+hub row stale against the batch's own later fix, two hedgehog rows
+carrying the feeding guide's source narration, a California kingsnake
+hub with no vetLine (the only router hub of 41 missing one), one date
+not bumped, and a captive figure sitting under "Wild Lifespan" with no
+label. Neon tetra came back clean, the first species in three batches
+to do so.
+
+Two things worth carrying forward. California kingsnake, like tokay
+gecko in batch F and Russian tortoise in batch A, has no feeding guide,
+so its tank setup guide gained a sourced Diet Basics section; that is
+now the standard move, not an improvisation. And the sharpest defect of
+the batch was not a hub one: the kingsnake setup guide asked for an
+enclosure "at least two-thirds of your snake's body length", which is
+exactly the condition the enrichment guide's cited preference test found
+snakes rejected. A router pass reads the deep dives against each other
+for the first time, which is how that surfaced, so expect one real
+deep-dive contradiction per batch rather than treating the hub as the
+only thing being fixed.
+
+Batch H is not picked yet. The 67 species still on the legacy care sheet
+are listed by class in docs/TODO.md, section 7, dogs and cats last.
+Paste the prompt below with the next five species filled in.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
