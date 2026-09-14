@@ -394,6 +394,9 @@ Checked 2026-09-14 against `src/lib/data/guides/*.js`: a hub is a router hub
 when its entry carries `firstWeek` rows (RULES, Hubs). 31 of 108 done, 77
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
+Next: batch F, pacman frog, zebra finch, angelfish, tokay gecko, sugar
+glider. Worker Opus 5 high effort, one Fable closing check per batch (the
+batch prompt in READMEFIRST has the reasoning).
 
 Done (31):
 

@@ -229,8 +229,8 @@ catches the defects the commands produce. Per batch:
    for later batches. Batch E (red-eared slider, guppy, blue-tongue skink,
    hognose snake, White's tree frog), spanning turtles, fish, lizards,
    snakes and amphibians, five different classes: written,
-   reader-passed, and species-checked 2026-09-09 on the same branch, not
-   yet merged. Pass grade B. All four of its husbandry number changes
+   reader-passed, species-checked and merged to main 2026-09-09. Pass
+   grade B. All four of its husbandry number changes
    held up against opened sources: skink setup $400-800 to $330-635
    (main's header never matched its own table, the new one sums exactly,
    and to $430-1,335 with the animal), skink UVB 10.0-12% to 5-12% (both
@@ -439,7 +439,7 @@ dashes:
 ```
 
 
-## The batch prompt, for a fresh session (Sonnet, default effort): five species, one branch, one reader pass each, one Fable check at the end
+## The batch prompt, for a fresh session (Opus 5, high effort): five species, one branch, one reader pass each, one Fable check at the end
 
 Replaces the one-species prompt and the separate check session
 (2026-09-08). The worker decides from the sources instead of asking; Mike
@@ -467,15 +467,28 @@ section of docs/READER_REVIEWS.md for what the check caught. Batch D
 (green iguana, conure, rat, hermit crab, box turtle) done, checked and
 merged to main 2026-09-09 on branch claude/batch-d-opus-agents-7jgjwi,
 every species at pass grade A-, with an extra Opus check standing in for
-the Fable one. Next up is batch E (red-eared slider, guppy, blue-tongue
-skink, hognose snake, White's tree frog), spanning turtles, fish,
-lizards, snakes and amphibians, five different classes, where batch D
-spanned lizards, birds, small mammals, invertebrates and turtles.
-None of the 58 species still on the legacy hub carry a sellable care
-package (every care-package species is reconciled as of batch C), so
-this batch and the ones after it are picked for popularity and class
-spread rather than the old care-package priority. Paste this with the
-next five species filled in when picking up the batch after that.
+the Fable one. Batch E (red-eared slider, guppy, blue-tongue skink,
+hognose snake, White's tree frog) done, checked and merged to main
+2026-09-09, pass grade B. That makes 31 router hubs; the 77 still on
+the legacy care sheet are listed by class in docs/TODO.md, section 7,
+dogs and cats last. None of them carry a sellable care package, so
+batches are picked for popularity and class spread.
+
+Model decision, 2026-09-14, closing the open question in docs/NOTES.md:
+the worker is Opus 5 at high effort and the closing check is one Fable
+agent per batch, not Opus. Batches D and E both ran Opus-only checks and
+both shipped the same defect the check step failed to catch: the router
+step copied source narration into hub rows (28 rows in D, 13 in E), and
+the batch E check listed open items instead of fixing them. The check
+is the one place the more expensive model earns its cost, and it runs
+once per batch. Two things are now hard rules below: the numbers
+checker runs strict before and after, and the check agent fixes what
+it finds rather than reporting it.
+
+Next up is batch F: pacman frog, zebra finch, angelfish, tokay gecko,
+sugar glider (amphibian, bird, fish, gecko, small mammal). Paste this
+with the next five species filled in when picking up the batch after
+that.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
@@ -526,8 +539,11 @@ all five are actually done.
 
 Per species:
 
-1. Baseline. Run `node scripts/check-species-numbers.mjs <species>`
-   and save the output to the scratchpad. Run
+1. Baseline. Run `node scripts/check-species-numbers.mjs <species>
+   --strict` and save the output to the scratchpad; every conflict it
+   prints is a decision step 4 has to make, and the list goes into the
+   review file under "Numbers checker" so nothing is decided silently.
+   Run
    `node scripts/reader-extract.mjs <species> .reader/<species>`.
    Launch one reader agent (run_in_background, the same model as you)
    with the set test prompt from READMEFIRST on that folder. While it
@@ -546,6 +562,13 @@ Per species:
      them into one. No figure of your own. Rows the deep dives do not
      cover (lifespan, adult size) may use the encyclopedia entry with
      no source.
+   - The row carries the figure, never the source's name or the fact
+     that sources disagree. "Sources give a real range", "most sources
+     recommend", "depending on where you look", "ReptiFiles says": none
+     of that goes in a row. The source lives in the `source` field. A
+     deep dive that narrates a disagreement instead of stating a figure
+     is a step 4 conflict to settle first, and the row waits for the
+     settled figure. This is where batches D and E leaked.
    - Add rows sourced to the shared Health and More guides that apply
      (reptiles: quarantine, hygiene, emergency plan; small mammals:
      heat stress, grooming, vet trips; fish and amphibians: quarantine,
@@ -667,6 +690,13 @@ After all five species have gone through steps 1 to 5 and are pushed:
    "<Species 1>, <species 2>, ...: species check", and returns one
    report covering all five. It also grades the pass itself, not just
    the content: see the added instruction in the species check prompt.
+   Report-only is not a result: every defect it finds is fixed on the
+   branch, or listed with the one reason it cannot be (a corpus-wide
+   gap, a number no source states), never left as a to-do. Before it
+   reports, it reruns `node scripts/check-species-numbers.mjs
+   <species> --strict` for all five species and every check script in
+   step 4; a hub line that disagrees with a deep dive, or any script
+   failing, means the check is not finished.
    If any species' verdict is "redo", do what it names for that
    species only, push, and launch the check once more for just that
    species; two check rounds at most per species, then move on and
