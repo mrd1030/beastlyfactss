@@ -857,67 +857,86 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
     petType: "Small Mammals",
     image: "/assets/guides/sugar-glider.jpg",
     tagline: "The tiny, gliding, social marsupial that needs a colony and lots of enrichment!",
-    funFact: "Sugar gliders can glide up to 150 feet in the wild using a membrane called a patagium. They steer with their tails and can even do mid-air turns!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x36 in aviary-style cage", low: 150, high: 300 },
-        { item: "Solid exercise wheel (glider-specific)", low: 40, high: 70 },
-        { item: "Multiple sleeping pouches", low: 30, high: 60 },
-        { item: "Branches and climbing structures", low: 25, high: 45 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Bonding pouch", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Commercial sugar glider diet (BML/TPG)", low: 200, high: 350 },
-        { item: "Fresh fruits, vegetables, and insects", low: 100, high: 180 },
-        { item: "Calcium and multivitamin supplements (glider-specific)", low: 20, high: 30 },
-        { item: "Electricity (heat, temp-sensitive)", low: 60, high: 100 },
-        { item: "Annual vet wellness check (exotic)", low: 70, high: 120 },
-      ],
-    },
-    sections: {
-      housing: `Sugar gliders require a minimum 24x24x36" aviary-style cage, though larger is strongly recommended. They are highly active gliders and climbers that need vertical space and horizontal bars they can climb throughout. Bar spacing of 1/2 inch or less prevents escape and entrapment.
-
-Provide multiple levels, branches, ropes, and ladders throughout the cage. Multiple sleeping pouches - bonded pairs and groups sleep together in pouches - should be available at different levels. Temperature must stay between 75 and 85 degrees F. Sugar gliders are sensitive to cold and cannot tolerate temperatures below 65 degrees F for any extended period.
-
-Sugar gliders are nocturnal. They sleep through most of the day and become active at dusk. Plan their care, feeding, and interaction around their natural evening and nighttime activity period. Place the cage in an area where nighttime noise and activity won't disturb their sleep.`,
-      diet: `Sugar glider nutrition is one of the most complex and debated topics in exotic pet care. The fundamental dietary challenge is that sugar gliders require a very specific calcium-to-phosphorus ratio (close to 2:1 calcium to phosphorus) to prevent Metabolic Bone Disease (MBD/nutritional osteodystrophy). Many common fruits and foods disrupt this ratio.
-
-The most widely used and researched diets are the BML (Bourbon's Modified Leadbeater's) diet and the TPG (The Pet Glider) diet. These commercial or home-prepared formulas are balanced specifically for sugar gliders. Supplement with fresh fruits, vegetables, and occasional live insects (mealworms, crickets). Variety in the fresh food component is important.
-
-Avoid feeding high-phosphorus foods as staples (most nuts and seeds, corn) without careful calcium balancing. Fresh water must always be available in a water bottle. Research the specific diet you choose thoroughly - poorly balanced home-made diets cause rapid onset of MBD in sugar gliders.`,
-      enrichment: `A solid exercise wheel (designed for sugar gliders, not a wire hamster wheel which catches legs) is essential - sugar gliders are highly active at night and run extensively. Provide foraging toys, tunnels, rope ladders, glider pouches, and rotating novel objects to maintain engagement.
-
-Social enrichment is the most critical factor in sugar glider wellbeing. Sugar gliders must be kept in pairs or small groups - never alone. A lone sugar glider experiences profound loneliness and frequently develops self-mutilation behaviors (barbering or biting themselves), depression, and shortened lifespan. If you can only commit to one animal, a sugar glider is not appropriate for your situation.
-
-Daily bonding time during their active evening hours is essential. Many keepers carry their gliders in bonding pouches during the day so the animals acclimate to their scent and presence. This is one of the most effective bonding techniques for this species.`,
-      health: `Nutritional Osteodystrophy (MBD from calcium-phosphorus imbalance) is the most common serious disease in pet sugar gliders and is entirely preventable with the correct diet. Signs include progressive hind leg weakness, inability to climb, and eventually paralysis and death. A balanced diet with the correct 2:1 calcium-to-phosphorus ratio prevents it. Any glider showing hind leg weakness requires emergency veterinary assessment.
-
-Self-mutilation (self-barbering or chewing of the skin, pouches in males, or tail) is almost always a sign of severe psychological distress from inadequate social contact, inappropriate housing, or undetected pain or infection. A self-mutilating glider requires immediate veterinary assessment and environmental evaluation.
-
-Respiratory infections from drafts, cold temperatures, or stress are common. Sugar gliders are sensitive animals that mask illness - by the time symptoms are obvious, the animal is often significantly compromised. Annual veterinary exams with an exotic vet experienced with sugar gliders are mandatory, not optional.`,
-      checklist: [
-        "Minimum 24x24x36\" aviary-style cage",
-        "Solid exercise wheel (12+ inch)",
-        "Multiple sleeping pouches",
-        "Commercial sugar glider diet (TPG or Wombaroo)",
-        "Fresh fruits, vegetables, and insects",
-        "Calcium + multivitamin supplements",
-        "Safe foraging toys and tunnels",
-        "Branches and climbing structures",
-        "Digital thermometer and hygrometer",
-        "Exotic veterinarian experienced with gliders"
+    funFact: "Sugar gliders can glide up to 165 feet in the wild using a membrane called a patagium. They steer with their tails and can even do mid-air turns!",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult body length comes from the
+    // encyclopedia entry, which no deep dive repeats. Vet trips and grooming
+    // cite the shared small mammal guides in the sidebar's Health and More
+    // list. Built 2026-09-14 for the sugar glider set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal check", value: "Illegal statewide in California, Alaska, and Hawaii, effectively illegal in Pennsylvania where possession permits exist on paper but are almost never granted, banned in the District of Columbia and in New York City, permit-required in New Jersey, and import-permit-required in New Mexico. Generally legal everywhere else: Georgia, Massachusetts, and Wyoming are frequently misreported online as banning them and do not.", source: "sugar-glider-legal-guide" },
+        { label: "Never one glider", value: "Sugar gliders are colonial and should be kept in pairs or small groups. That is the natural history and the veterinary consensus, and solitary housing is treated as a major welfare risk. Two minimum, more if you have the space, and neutering males avoids both breeding and a good deal of the scent marking.", source: "sugar-glider-enrichment-guide" },
+        { label: "Cage size", value: "A minimum of roughly 30 by 18 by 36 inches for a pair, though many current keepers recommend going larger still, 24 by 24 by 48 inches or more. Whatever footprint you choose, prioritize vertical space, this is a climbing, gliding animal.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Bar spacing", value: "No more than half an inch. Young gliders are small enough to squeeze through wider gaps, and escape-proofing matters more with this species than the cage's overall size might suggest.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Temperature", value: "75 to 88°F is the comfortable range. Keep the cage away from drafts and direct sun, and place it in a consistently warm part of the house rather than somewhere temperature fluctuates a lot through the day.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Humidity and lighting", value: "No special humidity control is needed for this species, and ordinary household lighting is sufficient. There is no UVB requirement the way many reptiles have.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Cage floor", value: "A solid cage bottom with washable liners or trays underneath the main living area, rather than loose bedding that accumulates waste and becomes harder to keep clean.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Wheel", value: "A standard hamster or rat wheel is genuinely dangerous for a sugar glider, not just the wrong size. Many of those wheels have a center axle bar running through the middle, and that bar can seriously injure a glider's spine or tail during use. Look specifically for an axle-free design built for this species.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Sleeping pouch", value: "Position the sleeping pouch high in the cage, matching this species' natural preference for elevated, secure resting spots. A bonding pouch doubles as this resting spot and is also the starting point for taming.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Cage cover", value: "Cover part of the cage with fleece, over the top, back, and sides. It helps a new or still-bonding glider feel more secure, and supports the taming process.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Climbing routes", value: "Branches at varied heights and angles, ropes, and gaps small enough to cross with a short glide give them routes instead of a ladder. The test is whether a glider can get from the bottom to the top and across the cage without touching the bars.", source: "sugar-glider-enrichment-guide" },
+        { label: "Diet split", value: "Roughly one-third nutritionally balanced pelleted kibble, one-third a nectar or sap-based mixture, and one-third a small number of insects offered every other day, a calcium-based multivitamin, and a variety of fresh vegetables and fruits.", source: "sugar-glider-feeding-guide" },
+        { label: "Formulated diets", value: "Established, vet-endorsed formulated diets include Leadbeater's mixture, Bourbon's Modified Leadbeater's (BML), High Protein Wombaroo (HPW), Critter Love Complete, and Exotic Nutrition diets.", source: "sugar-glider-feeding-guide" },
+        { label: "Portion and timing", value: "Roughly 15 to 20% of body weight daily, offered in the evening since gliders are nocturnal. Kibble can stay available at all times, while the fresh, nectar, insect, and produce components are given daily, with insects every other day. Keep fruit to a small portion.", source: "sugar-glider-feeding-guide" },
+        { label: "Calcium to phosphorus", value: "The target dietary calcium-to-phosphorus ratio is roughly 2:1, with 1.5:1 to 2:1 also given.", source: "sugar-glider-feeding-guide" },
+        { label: "Supplements", value: "A calcium and vitamin D3 multivitamin made specifically for sugar gliders, not a reptile vitamin, is essential because the typical fruit-and-insect diet runs phosphorus-rich and calcium-poor. Dust or gut-load insects with calcium before feeding, and sprinkle the multivitamin on food.", source: "sugar-glider-feeding-guide" },
+        { label: "Foods to avoid", value: "Chocolate and dairy, canned fruit for its excess sodium and preservatives, and any pesticide-treated produce. Foods high in oxalates that impair calcium absorption, including raspberries, strawberries, blackberries, spinach, carrots, beets, pears, lettuce, figs, and collard greens. Skip yogurt drops, peanut butter, pasta, rice, and human candy entirely.", source: "sugar-glider-feeding-guide" },
+        { label: "Adult weight", value: "Adult males typically weigh 100 to 160 grams and adult females 80 to 130 grams.", source: "sugar-glider-feeding-guide" },
+        { label: "Bonding", value: "Direct handling isn't where this starts. Gliders bond by being carried against your body in a dedicated bonding pouch, absorbing your scent over time until they recognize you as safe. Plan for one to two hours of daily interaction once bonding is underway, and a settling-in period of several days before starting interactive handling at all.", source: "sugar-glider-handling-guide" },
+        { label: "Handling room", value: "Gliders chill easily, keep the space above roughly 68°F during sessions.", source: "sugar-glider-handling-guide" },
+        { label: "Crabbing", value: "A loud buzzing or chattering sound, the signature defensive response when a glider feels frightened. Gliders aren't easily handled by strangers and will often bite, vocalize, or urinate if forcibly restrained, and a frightened glider's bite can be surprisingly deep.", source: "sugar-glider-handling-guide" },
+        { label: "Budget", value: "$200 to $500 each, and you need two, with standard greys toward the lower end and rescue gliders $50 to $200. Roughly $500 to $1,200 upfront for a pair, and $30 to $60 a month. Most keepers report a full first-year cost, gliders plus setup, in the $800 to $1,500-plus range.", source: "sugar-glider-cost-guide" },
+        { label: "Vet costs", value: "An exotic vet visit runs $75 to $200. Neutering a male, commonly recommended, runs $100 to $200. No vaccines are needed for this species. Budget at least $200 for unexpected care, sugar gliders can decline quickly when something goes wrong nutritionally.", source: "sugar-glider-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years in captivity, commonly cited around 12 to 15.", source: "sugar-glider-cost-guide" },
+        { label: "Adult size", value: "5 to 6 inches (13 to 15 cm) body." },
+        { label: "Getting one to the vet", value: "A hard-sided carrier with a towel or a familiar pouch inside, the cage mate travelling along wherever the clinic allows it, and no long pre-surgery fast: the overnight fast a dog gets before anesthesia is wrong for a small mammal this size.", source: "small-mammal-vet-visits-and-travel-guide" },
+        { label: "Grooming", value: "Nail trims, coat checks, and scent glands look like tidiness chores and are actually health checks. Work them into the handling routine rather than treating them as a separate event.", source: "small-mammal-grooming-nails-molting-guide" },
       ],
     },
+    emergencyCard: {
+      source: "sugar-glider-health-issues-guide",
+      callNow: [
+        "Hind-limb weakness progressing toward paralysis",
+        "Trembling",
+        "Difficulty climbing",
+        "Fractures or seizures, which are the advanced signs",
+        "Chewing at their own skin or tail",
+        "Weight that has moved in either direction on a diet you are not certain about",
+      ],
+      vetLine: "Always see a vet at the first sign of hind-limb weakness or trembling. Caught early, this is treatable with corrected calcium, vitamin D3, and an overall diet fix. The real fix, though, is prevention, feeding a properly balanced diet from the start, not waiting for symptoms to appear.",
+    },
+    routes: [
+      { slug: "sugar-glider-cost-guide", line: "$200 to $500 each and you need two, a $500 to $1,200 setup, and the first-year number most keepers report." },
+      { slug: "sugar-glider-tank-setup-guide", line: "Cage height over width, half-inch bar spacing, 75 to 88°F, and the wheel that can injure a glider's spine." },
+      { slug: "sugar-glider-feeding-guide", line: "The thirds, the formulated diets, portion by body weight, and the calcium ratio that prevents paralysis." },
+      { slug: "sugar-glider-handling-guide", line: "Why bonding starts in a pouch, what crabbing means, and why a lone glider is harder to reach." },
+      { slug: "sugar-glider-health-issues-guide", line: "Metabolic bone disease, obesity, self-mutilation, dental disease, and why more calcium is not the answer." },
+      { slug: "sugar-glider-enrichment-guide", line: "The colony requirement, the honest caveat on the self-mutilation claim, height, and routes between things." },
+      { slug: "sugar-glider-legal-guide", line: "The states and cities that restrict them, and the bans that turn out not to exist." },
+    ],
+    buyList: [
+      "Tall cage, at least roughly 30 by 18 by 36 inches for a pair, bar spacing half an inch or less",
+      "A second glider, never just one",
+      "Glider-safe axle-free exercise wheel",
+      "Bonding pouch",
+      "Sleeping pouch, positioned high in the cage",
+      "Branches, ropes, and climbing structures at varied heights",
+      "Fleece to cover the top, back, and sides",
+      "Solid cage bottom with washable liners or trays",
+      "A formulated sugar glider diet",
+      "Calcium and vitamin D3 multivitamin made for sugar gliders",
+      "Insects for gut-loading and dusting",
+      "Exotic vet contact, found before you need one",
+    ],
     faqs: [
-      { q: "Can sugar gliders live alone?", a: "No. A lone sugar glider experiences profound loneliness and frequently develops self-mutilation behaviors - barbering or biting themselves - along with depression and a shortened lifespan. Sugar gliders must be kept in pairs or small groups. If you cannot commit to at least two animals, a sugar glider is not appropriate for your situation. Adoption of bonded pairs is strongly recommended." },
-      { q: "What is the correct diet for sugar gliders?", a: "Sugar glider nutrition is complex and highly debated. The most widely used, researched diets are the BML (Bourbon's Modified Leadbeater's) formula and the TPG (The Pet Glider) diet - both are specifically formulated to maintain the critical 2:1 calcium-to-phosphorus ratio that prevents Metabolic Bone Disease. Supplement with fresh fruits, vegetables, and occasional live insects. Research your chosen diet thoroughly before acquiring gliders." },
-      { q: "Do sugar gliders need specialized veterinary care?", a: "Yes. Only exotic veterinarians with specific experience in sugar gliders can provide appropriate care. Annual wellness exams are mandatory - sugar gliders mask illness as an evolutionary defense, and by the time symptoms are visible, the animal is usually significantly compromised. Find a glider-experienced exotic vet before acquiring your gliders, not during an emergency." },
-      { q: "Are sugar gliders good pets for beginners?", a: "Sugar gliders are not recommended for first-time exotic pet owners. They require a specialized and research-intensive diet, must be kept in same-species groups, are nocturnal and most active when most people are sleeping, need daily bonding time during their active hours, and require exotic veterinary care. They are rewarding for dedicated keepers who fully prepare, but frequently end up in rescue from unprepared owners." },
-      { q: "How long do sugar gliders live?", a: "10 to 15 years in captivity with excellent care - appropriate companionship, correct calcium-phosphorus balanced diet, nocturnal scheduling respected, and annual exotic vet exams. Life expectancy drops sharply in isolated animals or those on poorly balanced diets. A sugar glider is a decade-plus commitment." },
-      { q: "Is a sugar glider the same as a flying squirrel?", a: "No, despite looking and gliding almost identically. Sugar gliders are marsupials; [flying squirrels](/guides/flying-squirrel/) are true rodents, an unrelated lineage that independently evolved the same wrist-to-ankle gliding membrane. Sugar gliders are also larger and, in the US, are non-native everywhere, while flying squirrels are native wildlife in much of the country and face more complicated, state-by-state legal restrictions as a result." },
-      { q: "How can I tell if my sugar glider is male or female?", a: "Males have a visible scent gland as a bald spot on top of the head (and often the chest), plus a pendulous pouch-like structure housing the testes, positioned forward of the vent. Females have a marsupial pouch on the belly, used to carry joeys, which is easy to spot once you know to look for it. Both traits are reliably visible in a healthy adult and don't require a vet to check." },
+      { q: "What kind of exercise wheel and substrate should a sugar glider cage use?", a: "A glider-safe, axle-free exercise wheel, not a standard rodent wheel. Wheels built for hamsters or rats often have a center axle bar that can seriously injure a glider's spine or tail during use. For the cage floor, a solid bottom with washable liners or trays underneath works best, rather than loose bedding that accumulates waste and becomes harder to keep clean." },
+      { q: "How do you bond with a sugar glider?", a: "Through a dedicated bonding pouch, not direct handling from day one. Gliders bond by being carried against your body in the pouch, absorbing your scent over time until they recognize you as safe. Veterinary guidance recommends a settling-in period of several days before starting interactive handling, and one to two hours of daily interaction once bonding is underway." },
+      { q: "Is it true that sugar gliders are banned in Georgia?", a: "No, this is a common misconception. Georgia explicitly allows sugar gliders to be kept as pets without a license, as long as the owner has documentation showing the animal came from a USDA-inspected and regulated source." },
     ],
   },
 ];
