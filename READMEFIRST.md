@@ -485,10 +485,32 @@ once per batch. Two things are now hard rules below: the numbers
 checker runs strict before and after, and the check agent fixes what
 it finds rather than reporting it.
 
-Next up is batch F: pacman frog, zebra finch, angelfish, tokay gecko,
-sugar glider (amphibian, bird, fish, gecko, small mammal). Paste this
-with the next five species filled in when picking up the batch after
-that.
+Batch F (pacman frog, zebra finch, angelfish, tokay gecko, sugar
+glider), spanning amphibian, bird, fish, gecko and small mammal, done and
+checked 2026-09-14 on branch claude/hub-pacman-frog-80291s; not yet
+merged. Five router hubs, 130 first-week rows, one reader pass per
+species and one Fable check covering all five at the end, which is the
+first batch run on the model decision above. Pass grade B+, the best so
+far and the first batch where the router step did not leak source
+narration into hub rows, which is what the Fable check was reinstated to
+catch. What it did catch instead: a sugar glider emergency-card bullet
+written rather than copied from the health guide, an angelfish hub row
+mixing two sources, a zebra finch hub row left stale against the batch's
+own later fix, a retired lifespan still sitting in a frontmatter
+`description` field the numbers checker never reads, and one hedge lost
+to the de-narration pass. The frontmatter-field one is worth carrying
+forward: `description`, `excerpt` and `seoDescription` are same-page
+copies the checker cannot see, so grep them by hand whenever a number
+moves. Tokay gecko needed a sourced Diet Basics section added to its tank
+setup guide, since the species has no feeding guide and the old hub's
+diet prose was the set's only feeding content, the same move Russian
+tortoise needed in batch A. Two hub-only figures were retired rather than
+carried forward as unsourced rows, the angelfish weekly 25 percent water
+change and the sugar glider 12-inch wheel, both filed as gaps in
+docs/READER_LOG.md.
+
+Paste this with the next five species filled in when picking up the batch
+after that.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs
