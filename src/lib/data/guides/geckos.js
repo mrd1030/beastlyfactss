@@ -432,65 +432,96 @@ Escape prevention is critical not only for the geckos' welfare but also for your
     image: "/assets/guides/tokay-gecko.jpg",
     tagline: "The jewel-toned, loud-voiced gecko that's not for the faint of heart!",
     funFact: "Tokay geckos are named after their incredibly loud 'TO-KAY!' call. Males use this booming vocalization to defend territory and attract mates. You'll hear them from across a room!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "20x20x30 in+ vertical arboreal enclosure", low: 130, high: 250 },
-        { item: "Cork bark rounds and sturdy branches", low: 25, high: 50 },
-        { item: "Dense live or artificial plants", low: 30, high: 60 },
-        { item: "Thermostat-controlled heat source", low: 40, high: 70 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
-        { item: "Automatic mister or fine misting bottle", low: 10, high: 40 },
-      ],
-      annual: [
-        { item: "Dubia roaches, crickets, and varied insects", low: 100, high: 180 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 45, high: 80 },
-        { item: "Electricity (heat and lighting)", low: 40, high: 70 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A minimum 20x20x30" (or larger) vertical, arboreal enclosure is ideal for a single adult tokay gecko. Height is more important than floor space as these geckos are strongly arboreal and will spend most of their time in the upper third of the enclosure. Front-opening enclosures are much safer for interaction with this defensive species.
-
-Provide plenty of cork bark rounds, sturdy branches, and dense live or artificial plants. Tokay geckos feel most secure in heavily cluttered environments where they can press against bark and disappear into vegetation. A sparse enclosure creates a chronically stressed gecko.
-
-Maintain daytime temperatures of 82 to 88 degrees F with a basking area, dropping to 72 to 78 degrees F at night. Humidity should stay at 60 to 80%, achieved through evening misting and a live plant presence. An automatic misting system on a timer set for morning and evening is the most reliable approach. Low-output UVB is beneficial for overall health.`,
-      diet: `Tokay geckos are carnivorous insectivores. Offer appropriately sized live insects: dubia roaches, crickets, mealworms, and superworms. Adults can occasionally take small pinky mice or waxworms as very occasional treats. Feed juveniles daily, adults every 2 to 3 days. Prey should be no larger than the space between the gecko's eyes.
-
-Gut-load all feeder insects 24 to 48 hours before offering - the gecko's nutritional quality depends entirely on what its prey was eating. Dust with calcium w/D3 2 to 3 times per week and a reptile multivitamin once weekly. Always have fresh, dechlorinated water available in a shallow dish.
-
-Tokay geckos tend to eat aggressively when conditions are correct. A gecko that consistently refuses food may be in pre-shed, too cold, or experiencing illness - assess husbandry parameters before assuming a medical problem.`,
-      enrichment: `Dense cork bark arrangements, branching at multiple levels, and live or high-quality artificial plants create a stimulating and security-providing environment. Tokay geckos are primarily display animals - their vivid spotted coloration, dramatic size, and famous vocalizations are the primary appeal.
-
-The "tokay" call - a loud, two-syllable bark used by males to defend territory and attract mates - is one of the most distinctive sounds in the reptile hobby. Housing a tokay gecko where you can see and hear them during their evening activity period is genuinely entertaining. Their color-shifting in response to mood changes and the visual hunting behavior they display during prey pursuit are fascinating to observe.
-
-Tokay geckos can become calmer over time with consistent, patient handling. Approach slowly and always from below and in front - never from above, which mimics a predator. Some individuals remain defensive throughout their lives. Respect individual temperament. Forced handling of an unwilling tokay increases aggression and stress.`,
-      health: `New tokay geckos are often significantly defensive and will bite hard - their jaws are powerful and they hold on. Wear leather gloves during initial handling sessions. A bite will usually release when the gecko is lowered toward the ground (they release prey instinctively when it "lands"). Never jerk your hand away as this causes lacerations.
-
-Watch for retained shed (especially around toes and eye caps), respiratory infections from low temperatures or humidity swings, and internal parasites in wild-caught animals. Wild-caught tokay geckos frequently carry heavy parasite loads and should receive a fecal exam from a reptile vet promptly after acquisition.
-
-Only purchase captive-bred individuals from reputable breeders whenever possible. Wild-caught animals experience significant stress from capture and transport and require extra time to settle. Annual wellness checks with a reptile-savvy veterinarian are recommended.`,
-      checklist: [
-        "20x20x30\"+ vertical arboreal enclosure",
-        "Cork bark rounds and sturdy branches",
-        "Dense live or artificial plants",
-        "Thermostat-controlled heat source (82 to 88 degrees F)",
-        "Digital thermometer and hygrometer",
-        "UVB T5 HO (low output, beneficial)",
-        "Dubia roaches, crickets, and varied insects",
-        "Calcium w/D3 + multivitamin supplements",
-        "Automatic mister or fine misting bottle",
-        "Reptile-savvy exotic vet contact",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Gut-loading, hygiene, the thermostat
+    // probe, the stool check and the emergency plan cite the shared reptile
+    // guides in the sidebar's Health and More list. This species has no feeding
+    // guide, so the diet rows point at the tank setup guide's Diet Basics
+    // section, added in the same pass. Built 2026-09-14 for the tokay gecko set
+    // test (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal check", value: "Legal with no permit in 49 of 52 jurisdictions. Hawaii allows it for research and exhibition only, the District of Columbia bars it by omission, Minnesota treats lizards as protected wild animals as a whole category, and New Jersey's permit rule names the tokay as the one gecko it exempts.", source: "tokay-gecko-legal-guide" },
+        { label: "Enclosure", value: "18 inches long by 18 inches wide by 36 inches tall as a minimum, larger is better. This is an arboreal species, so vertical space genuinely matters more than floor space. A front-opening enclosure makes maintenance easier given how defensive this species can be.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Temperature", value: "Basking area 90 to 105F, cooler zone 80 to 85F, and nighttime should stay warmer than many homes naturally run, 75 to 80F, not dropping below about 70F.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Heating", value: "A halogen basking bulb during the day, paired with a lightless ceramic heat emitter or deep heat projector on a thermostat for overnight warmth. This species genuinely needs supplemental night heat more than most.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 80% is the target range, considerably more humid than what suits a desert species. Daily or twice-daily misting, moisture-retentive substrate, sphagnum moss, and leaf litter. Good ventilation matters here too, high humidity without airflow invites mold.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber or a bioactive-style mix, at least 2 to 3 inches deep, with moss and leaf litter layered on top. Avoid pine and cedar entirely, both release fumes that are toxic to reptiles.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Lighting", value: "As a nocturnal species, tokays can technically survive without UVB if their diet supplies enough vitamin D3, but low-level UVB, a 5% or forest-strength T5 bulb, offers real benefit. Replace the bulb every 6 to 12 months. Keep nights genuinely dark.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Climbing structure", value: "Branches, cork bark, and foliage spanning the full height of the enclosure, not just near the top or bottom, so the gecko can move along the vertical temperature gradient to thermoregulate properly.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Diet", value: "Insectivores. Gut-loaded crickets, dubia roaches, and similar feeder insects, with nothing offered wider than the gecko's own head. Juveniles eat daily and full-grown adults every other day. A tokay will not take the powdered fruit diet a crested gecko lives on.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Supplements and water", value: "Dust feeders with calcium and vitamin D3, and keep fresh, dechlorinated water in a shallow dish at all times.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Gut-loading", value: "Twenty four to seventy two hours before feeding, with 48 hours the most commonly cited figure. Insects begin voiding their gut contents once removed from the food source, so feed them out within a few hours of taking them off the gut-load diet.", source: "gut-loading-feeder-insects-guide" },
+        { label: "Handling", value: "A tokay that barks, gapes, or bites at the hand gets no sessions at all: this is a hands-off terrarium subject, and the occasional tokay that tames down is the exception. One that tolerates a flat hand in the enclosure gets short sessions of a few minutes on a flat hand kept under the gecko, so it sits there without being restrained.", source: "tokay-gecko-handling-guide" },
+        { label: "If it bites", value: "Do not pull. Tugging makes the animal tighten its grip. Set the gecko down with all four feet on an even surface near a retreat and wait for it to let go, since once it feels it can get away it is more likely to release.", source: "tokay-gecko-handling-guide" },
+        { label: "Tail", value: "Tokays can detach the tail when restrained, and the regrown tail takes about 30 days and never looks like the original. Never pick one up by the tail.", source: "tokay-gecko-handling-guide" },
+        { label: "Two males", value: "Housing two males together is a first-timer mistake: they fight, often with serious or fatal results.", source: "tokay-gecko-handling-guide" },
+        { label: "Pair housing", value: "A 2024 study measured enclosure use, basking and hiding as captive-bred tokays went from single to pair housing, found that socially deprived lizards were more likely to move and hide before feeding, and concluded that pair housing improves welfare in this species. That is one study on captive-bred animals under observation, and pairing needs quarantine, careful introduction, enough space and cover for both, and a genuine plan for separating them.", source: "tokay-gecko-enrichment-guide" },
+        { label: "Quarantine", value: "3 to 6 months for a new reptile, and the longer window is the safer one for a wild-caught animal. Its own enclosure in a separate room from any other reptile, a fecal exam from a reptile vet early and a repeat before quarantine ends, and a weekly weight on a gram scale.", source: "tokay-gecko-health-issues-guide" },
+        { label: "Parasites", value: "A 2025 study screened 21 commercially farmed tokay geckos in China and found intestinal parasites in 42.9% of them, with Strongyloides in 19.1%, Spauligodon pinworms in 14.3%, and Spironucleus in 9.5%. A gecko can carry a load for months before appetite loss, weight loss, vomiting or diarrhea show, which is why an annual exam with fecal testing matters even in a gecko that looks fine.", source: "tokay-gecko-health-issues-guide" },
+        { label: "Budget", value: "Wild-caught or unspecified \"normal\" tokays run as low as $15 to $50, captive-bred normals $100 to $150, and captive-bred color morphs $150 to $400 or more. Roughly $300 to $500 for the setup before the gecko itself, then roughly $15 to $30 a month.", source: "tokay-gecko-cost-guide" },
+        { label: "Captive-bred or wild-caught", value: "A cheaper wild-caught tokay isn't the budget option once you factor in likely parasite treatment and a considerably more defensive, harder-to-work-with animal. Paying more for a captive-bred gecko is the better value for nearly every keeper.", source: "tokay-gecko-cost-guide" },
+        { label: "Vet costs", value: "A routine exam runs $50 to $100. Wild-caught animals frequently need a fecal test plus antiparasitic treatment on top of that. Emergencies, prolapse or respiratory infection among them, can reach $200 or more.", source: "tokay-gecko-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years is typical in captivity, with well-documented cases reaching 20 years or more under excellent care.", source: "tokay-gecko-cost-guide" },
+        { label: "Adult size", value: "10 to 15 inches (25 to 38 cm)." },
+        { label: "CITES", value: "Added to CITES Appendix II at CoP18 in Geneva in August 2019, on a proposal brought jointly by the European Union, India, the Philippines and the United States. That listing governs international movement rather than domestic keeping.", source: "tokay-gecko-legal-guide" },
+        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an under-tank mat it goes on the floor of the warm hide, held down with foil tape so it can't drift; for an overhead source, follow your controller's own instruction and confirm with independent checks.", source: "reptile-heating-thermostats-guide" },
+        { label: "Daily stool check", value: "Yellow, orange, or gritty and crystalline urates instead of smooth white to cream point to dehydration, and in a more serious case a urate or kidney problem. It is a free, five-second daily check.", source: "reptile-stool-urates-hydration-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact with the gecko, its enclosure, or anything that has touched either. Never clean the enclosure or its water dish in a kitchen sink or a shared bathtub. Children younger than 5 should not handle or touch reptiles or their environments.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage or a sitter", value: "The tokay is not in the emergency plan guide's species table. Its rule for a species that isn't listed is to check that species' tank setup guide for the documented nighttime low and use that as the floor, the same way the table itself was built.", source: "reptile-emergency-plan-guide" },
       ],
     },
+    emergencyCard: {
+      source: "tokay-gecko-health-issues-guide",
+      callNow: [
+        "Loss of appetite, or no interest in food at all",
+        "Lethargy or unusual inactivity",
+        "Nasal discharge or any change in breathing",
+        "Swelling, damage, or changes in skin color",
+        "Weight loss",
+        "Limping or difficulty moving",
+        "Loose or abnormal droppings",
+        "Eye discharge or swelling",
+        "Retained shed",
+        "Any injury or trauma",
+        "Ulcers or excessive discharge in the mouth",
+        "Tissue protruding from the vent",
+      ],
+      vetLine: "Any of these means a call, not a wait. Tissue protruding from the vent is always an emergency, get to a vet immediately and do not try to replace it yourself.",
+    },
+    routes: [
+      { slug: "tokay-gecko-cost-guide", line: "$15 to $400 for the gecko depending on where it came from, a $300 to $500 setup, and why the cheap one is not the budget option." },
+      { slug: "tokay-gecko-tank-setup-guide", line: "18x18x36 minimum, a 90 to 105F basking zone, 60 to 80% humidity, night heat, and what this insectivore eats." },
+      { slug: "tokay-gecko-handling-guide", line: "The two kinds of bite, reading a tokay before it bites, what to do when it has hold of you, and session length by tameness." },
+      { slug: "tokay-gecko-health-issues-guide", line: "MBD, respiratory infection, retained shed, parasites, prolapse, the wild-caught quarantine, and the vet-call list." },
+      { slug: "tokay-gecko-enrichment-guide", line: "The 2024 pair-housing study, usable vertical structure, retreats at every level, and the priority order." },
+      { slug: "tokay-gecko-legal-guide", line: "Legal in 49 of 52 jurisdictions, the three that are not, and why New Jersey exempts this gecko specifically." },
+    ],
+    buyList: [
+      "Vertical arboreal enclosure, 18x18x36 inches or larger, front-opening",
+      "Halogen basking bulb",
+      "Ceramic heat emitter or deep heat projector for night heat",
+      "Thermostat",
+      "Low-output UVB, a 5% or forest-strength T5 bulb",
+      "Coconut fiber or bioactive substrate, enough for 2 to 3 inches",
+      "Sphagnum moss and leaf litter",
+      "Cork bark, branches, and foliage spanning the full height",
+      "Digital thermometer and hygrometer",
+      "Fine mist spray bottle or an automatic mister",
+      "Shallow water dish",
+      "Gut-loaded crickets or dubia roaches",
+      "Calcium with D3 and a reptile multivitamin",
+      "Gram scale",
+      "Reptile vet contact",
+    ],
     faqs: [
-      { q: "Are tokay geckos good beginner geckos?", a: "No. Tokay geckos are defensive, fast, and have a powerful, tenacious bite. They are best suited to experienced keepers comfortable with handling a defensive animal. With consistent, patient work over months or even years, many individuals become calmer - but some remain defensive throughout their lives. Respect the individual temperament." },
-      { q: "Do tokay geckos bite?", a: "Yes, and their bite is strong for a gecko. Initial handling sessions should use leather gloves. They grip and hold rather than releasing quickly. Lowering your hand toward the ground usually triggers a release, as they instinctively release prey when it 'lands.' Never jerk your hand away during a bite - this causes lacerations from their small, recurved teeth." },
-      { q: "What do tokay geckos eat?", a: "Tokay geckos are insectivorous carnivores - they will not eat commercial crested gecko diet. Offer appropriately sized live insects: dubia roaches, crickets, mealworms, and superworms. Adults can occasionally have small pinky mice. Gut-load all insects 24 to 48 hours before offering and dust with calcium w/D3 2 to 3 times per week." },
-      { q: "How big do tokay geckos get?", a: "Tokay geckos are one of the largest gecko species kept in captivity. Adults typically reach 11 to 15 inches total length - males at the larger end, females slightly smaller. Their size, powerful jaws, and vivid spotted coloration make them impressive display animals." },
-      { q: "How long do tokay geckos live?", a: "With appropriate housing - a tall arboreal enclosure, 60 to 80% humidity, and temperatures of 82 to 88 degrees F during the day - tokay geckos commonly live 10 to 20 years in captivity. Annual wellness checks with a reptile-savvy veterinarian are recommended, particularly for wild-caught animals that may carry parasites." },
+      { q: "What temperatures does a tokay gecko need?", a: "A basking area of 90 to 105F, a cooler zone of 80 to 85F, and nighttime temperatures staying warmer than many homes naturally run, 75 to 80F, not dropping below about 70F." },
+      { q: "Does buying a captive-bred tokay gecko make it easier to handle?", a: "It helps, and meaningfully. A captive-bred tokay runs calmer and more tolerant than a wild-caught one, though most keep a real baseline of defensiveness. Even a settled individual is a display animal, not a handling pet." },
+      { q: "Are tokay geckos legal in the US?", a: "In 49 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, and Minnesota attaches conditions that apply to every lizard rather than to this species specifically." },
     ],
   },
 ];
