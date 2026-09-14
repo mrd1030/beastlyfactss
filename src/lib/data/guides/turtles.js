@@ -323,64 +323,90 @@ Red-footed tortoises do not need to brumate and should not be allowed to get col
     image: "/assets/guides/sulcata-tortoise.jpg",
     tagline: "The third-largest tortoise: a lifetime commitment that may outlive you!",
     funFact: "Sulcata tortoises (African spurred tortoises) are the third-largest tortoise species on Earth. A hatchling the size of a ping-pong ball can grow to over 100 lbs and 3 feet long, in the same home!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Adult outdoor housing varies enormously (fencing, heated shelter
-    // construction), so these numbers are wide on purpose.
-    costs: {
-      setup: [
-        { item: "Indoor tortoise table (for hatchlings/juveniles)", low: 150, high: 300 },
-        { item: "Outdoor enclosure materials + buried fencing", low: 300, high: 1500 },
-        { item: "Heated shelter (materials + heater)", low: 200, high: 600 },
-        { item: "Strong UVB (Arcadia 12%, indoor setups)", low: 60, high: 100 },
-        { item: "Basking bulb", low: 20, high: 40 },
-      ],
-      annual: [
-        { item: "Grass hay (Bermuda, orchard, Timothy)", low: 100, high: 200 },
-        { item: "Edible weeds and leafy greens", low: 60, high: 120 },
-        { item: "Calcium supplements", low: 15, high: 25 },
-        { item: "Electricity (heated shelter)", low: 150, high: 350 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
-      ],
-    },
-    sections: {
-      housing: "Baby sulcatas can start indoors, but adults require large outdoor enclosures. Adults need at least 100+ square feet of outdoor space, and many keepers give them an entire yard. Outdoor walls must be buried 12 to 18 inches underground (they will dig under anything). A heated shelter with temperatures maintained at 60 degrees F+ is essential for cooler climates. Indoor basking spot: 95 to 105 degrees F. Strong UVB (Arcadia 12%) is mandatory. These tortoises will eventually demolish most enclosure furniture. Plan accordingly.",
-      diet: `Sulcata tortoises require a high-fiber, very low protein, low sugar diet. The primary food source should be grass - Bermuda grass, orchard grass, Timothy hay, and other grass hays make up 70 to 80% of the diet. Unlimited hay must always be available. An outdoor enclosure with natural grass pasture is the ideal setup.
-
-Supplement with edible weeds and leafy greens: dandelion (entire plant including flowers), clover, mulberry leaves, cactus pads (Opuntia, spines removed), grape leaves, and hibiscus flowers. These foods are nutrient-dense and appropriate for sulcatas. Do not offer fruit, high-oxalate foods, animal protein, or excessive amounts of commercial tortoise pellets - these cause the shell pyramiding and organ damage that plague improperly fed sulcatas.
-
-Calcium supplementation (without D3 for outdoor animals that get natural sunlight, with D3 for indoor animals) 2 to 3 times per week. Fresh water always available in a large, shallow dish they can soak in - sulcatas drink and soak frequently.`,
-      enrichment: `Sulcata tortoises are powerful, surprisingly fast, and incredibly motivated to dig and move. They need large areas to roam, graze, and dig. A minimum of 100 square feet of outdoor space for an adult - though a full yard is better. Natural grass pastures provide the richest enrichment and the most appropriate diet simultaneously.
-
-Provide varied terrain: mounds of soil for digging, large flat rocks for basking, logs and boulders to navigate, and varied plant material to graze on. Sulcatas recognize their keepers and approach for food and interaction. Many develop distinct personalities and are genuinely engaging animals.
-
-Be aware of their physical power: adult male sulcatas weigh 100 to 200+ lbs and can ram, knock over, and destroy most enclosure furniture and lightweight fencing. Build for their adult size and strength from the beginning. They can knock over small children and animals. Always supervise interactions.`,
-      health: `Shell pyramiding (raised, bumpy shell scutes) is the most visible sign of poor husbandry in sulcatas and is caused by excessive protein intake, low humidity during growth, and rapid growth rate from inappropriate feeding. Once pyramiding occurs it is irreversible. Correct diet - primarily grass and fibrous weeds with minimal protein - and appropriate humidity levels during growth prevent it.
-
-Respiratory infections occur in cool, damp conditions. Provide a heated shelter that maintains 60 degrees F or higher at night, and a dry environment. Hatchlings are significantly more delicate than adults and require careful temperature management and humidity control during their first year.
-
-Sulcatas regularly outlive their owners - they can live 70 to 150+ years. This is not a decision to make lightly. Research reputable tortoise rescue organizations and create a contingency plan for the animal before acquiring one. A reptile vet with chelonian experience is an essential long-term partner for sulcata ownership.`,
-      checklist: [
-        "Large outdoor enclosure (100+ sq ft for adults)",
-        "Underground-buried walls (12 to 18 inch deep)",
-        "Heated shelter (60 degrees F+ minimum at night)",
-        "Strong UVB (Arcadia 12% for indoor setups)",
-        "Basking spot (95 to 105 degrees F)",
-        "Unlimited Bermuda/orchard/timothy grass and hay",
-        "Edible weeds (dandelion, clover, cactus pads)",
-        "Calcium supplementation (2 to 3x/week)",
-        "Large shallow water dish (always available)",
-        "Reptile vet + long-term rehoming plan in place",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Brumation cites the
+    // shared tortoise guide in the sidebar's Health and More list.
+    //
+    // The old hub asserted a 70-to-150-year lifespan no deep dive supported,
+    // stated pyramiding causation as settled where the health guide calls it
+    // debated, and gave a sexing threshold, an outdoor-space figure and a
+    // shelter temperature that all disagreed with the deep dives.
+    // Reconciled 2026-09-14 for batch H (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Before anything else", value: "What actually matters is whether you have, or will have within a few years, the outdoor space, the shelter budget, and a multi-generational plan for an animal that can weigh 80 to 110 pounds and outlive you.", source: "sulcata-tortoise-cost-guide" },
+        { label: "Legal check", value: "Several states restrict this species, interstate transport can need a tick certificate, and California's rules are frequently confused with the ones covering its native desert tortoise.", source: "sulcata-tortoise-legal-guide" },
+        { label: "Indoor space", value: "A juvenile under 10 inches wants about 7 feet by 3.5 by 2.5 indoors. An adult kept inside would need 8 by 8 feet at an absolute minimum, and in practice indoor-only housing doesn't work for a full-grown sulcata.", source: "sulcata-tortoise-tank-setup-guide" },
+        { label: "Outdoor space", value: "Budget 80 to 100 square feet per tortoise, ideally several hundred.", source: "sulcata-tortoise-tank-setup-guide" },
+        { label: "When it moves out", value: "Sooner than most new owners expect. Sulcatas grow fast through their first 5 to 10 years, so outdoor housing arrives within a few years of a hatchling coming home, not someday. Without meaningful outdoor space in that window, this is the wrong species rather than a harder version of the right one.", source: "sulcata-tortoise-tank-setup-guide" },
+        { label: "Fencing", value: "Escape-proof fencing is the starting requirement, and it has to go down as well as up, because a sulcata that wants to leave will dig under it.", source: "sulcata-tortoise-enrichment-guide" },
+        { label: "Temperatures", value: "Basking 95 to 105°F, ambient 80 to 90°F, cool side 75 to 85°F, never sustained under 70°F.", source: "sulcata-tortoise-tank-setup-guide" },
+        { label: "Outdoor shelter", value: "Lightless heat, a ceramic heat emitter or radiant panel, once nighttime temperatures drop below 50°F, set to maintain 70 to 75°F.", source: "sulcata-tortoise-tank-setup-guide" },
+        { label: "No brumation", value: "The Royal Veterinary College names the African spurred tortoise among the species that should never be hibernated, because it comes from a climate with no cold season at all. Where winters are cold, the tortoise winters indoors.", source: "tortoise-brumation-guide" },
+        { label: "Humidity", value: "It depends on age. Adults do best in a dry, well-ventilated environment. Hatchlings and juveniles need humid hides, roughly 70% humidity, to support proper shell growth and reduce pyramiding risk, the same way wild sulcatas use humid burrow microclimates even in an otherwise arid habitat.", source: "sulcata-tortoise-tank-setup-guide" },
+        { label: "Substrate", value: "A diggable mix: organic topsoil and play sand at about 60/40, coconut fiber, or cypress mulch. Depth counts, 6 inches for juveniles and up to 24 for adults, which dig and burrow in earnest. Keep it dry, since damp substrate leads straight to shell rot.", source: "sulcata-tortoise-tank-setup-guide" },
+        { label: "Diet", value: "Grass and grass hay should make up the overwhelming majority of a sulcata's diet, commonly cited at 75 to 80% or more.", source: "sulcata-tortoise-feeding-guide" },
+        { label: "Supplements", value: "A phosphorus-free calcium supplement dusted onto food roughly 2 to 3 times a week for juveniles and about weekly for adults, more often for animals still growing quickly. A multivitamin with vitamin A and D3 more sparingly, somewhere between weekly and once every few weeks.", source: "sulcata-tortoise-feeding-guide" },
+        { label: "Never feed", value: "Animal protein entirely, no dog or cat food, no meat: it causes progressive kidney and liver damage over time and is considered one of the leading causes of premature death in captive sulcatas. Fruit should be avoided or offered only as a rare, tiny treat.", source: "sulcata-tortoise-feeding-guide" },
+        { label: "Not eating", value: "An enclosure that isn't warm enough is by far the most common cause, and appetite drops fast when temperatures fall short.", source: "sulcata-tortoise-feeding-guide" },
+        { label: "Pyramiding", value: "It's debated. One well-known study put the key driver at low humidity during growth, with dietary protein only a minor factor. Another found supplemental night heat and faster growth rates produced pyramiding with humidity held constant. Either way, humid hides while a tortoise is growing and a properly paced diet are the defense, and pyramiding is permanent once it happens.", source: "sulcata-tortoise-health-issues-guide" },
+        { label: "Handling a juvenile", value: "Low to the ground, always. A sulcata pushes off hard with its legs, and even a short fall can crack the shell. Never flip one onto its back.", source: "sulcata-tortoise-handling-guide" },
+        { label: "Handling an adult", value: "Not safely. An adult runs 80 to 110 pounds, and a male can reach 200. Interaction with a grown sulcata happens at ground level: time in its space, hand-feeding, and letting it come to you.", source: "sulcata-tortoise-handling-guide" },
+        { label: "Target training", value: "A tortoise that will follow a target moves itself for weighing, health checks and enclosure transfers, which for a hundred pound animal is worth real effort.", source: "sulcata-tortoise-enrichment-guide" },
+        { label: "Terrain", value: "A tortoise that flips onto its back in a hot enclosure can die there, so build terrain it can climb without tipping.", source: "sulcata-tortoise-enrichment-guide" },
+        { label: "Two males", value: "Not together. They're territorial, and adult males fight hard enough to cause real shell injuries and chronic stress.", source: "sulcata-tortoise-handling-guide" },
+        { label: "Sexing", value: "Not reliably until it's several years old, in the 10 to 15 inch shell-length range, hatchlings and young juveniles can't be sexed by eye. At that size, males have a concave plastron and a longer tail with a spur at the tip, while females have a flat plastron and a short, blunt tail.", source: "sulcata-tortoise-handling-guide" },
+        { label: "Digging and ramming", value: "Both normal. Sulcatas are dedicated burrowers, so expect digging and tunneling wherever they live. Ramming and bulldozing is a dominance display, not aggression aimed at you.", source: "sulcata-tortoise-handling-guide" },
+        { label: "Budget", value: "An indoor juvenile setup runs a few hundred dollars, and that's the cheap phase. A basic outdoor enclosure can easily reach $1,000, and a proper heated shelter for cold nights or winters adds another $1,000 or more on top of that.", source: "sulcata-tortoise-cost-guide" },
+        { label: "Food costs", value: "Greens are $2.44 to $3.57 a pound, call it two or three pounds a month, and a 25 pound box of Timothy is $23 to $40.", source: "sulcata-tortoise-cost-guide" },
+        { label: "Lifespan", value: "Commonly 70 to 100 years, and some estimates reach further still.", source: "sulcata-tortoise-cost-guide" },
+        { label: "Adult size", value: "24 to 30 inches (61 to 76 cm); 80 to 110 lbs typical, with large males over 40 inches and 200 lbs." },
       ],
     },
+    emergencyCard: {
+      source: "sulcata-tortoise-health-issues-guide",
+      callNow: [
+        "Soft, discolored, pitted or foul-smelling patches on the shell",
+        "A soft or rubbery shell, a misshapen jaw, or trouble walking",
+        "Nasal discharge, wheezing, open-mouth breathing or lethargy",
+        "A tortoise found on its back, which in a hot enclosure is an emergency",
+        "Refusing food for a week",
+      ],
+      vetLine: "Nearly everything on this list traces back to the enclosure: the temperature gradient, the humidity a growing tortoise gets, and whether the substrate stays dry. A reptile vet with chelonian experience is a long-term partner for this species rather than an emergency contact.",
+    },
+    routes: [
+      { slug: "sulcata-tortoise-cost-guide", line: "Adoption over purchase, monthly figures by life stage, the winter electricity line, and the shelter that costs more than the tortoise." },
+      { slug: "sulcata-tortoise-tank-setup-guide", line: "Every number you need to build: sizes at each stage, the temperature gradient, substrate depth, and why indoor housing is a stage rather than a plan." },
+      { slug: "sulcata-tortoise-feeding-guide", line: "The grass-and-hay majority, the supplement cadence by age, the eight reasons a sulcata stops eating, and the protein rule that matters most." },
+      { slug: "sulcata-tortoise-handling-guide", line: "Keeping juveniles low, why an adult is handled at ground level, the two-males rule, and when sexing becomes possible." },
+      { slug: "sulcata-tortoise-health-issues-guide", line: "Pyramiding and the two studies that disagree about its cause, shell rot, metabolic bone disease, and the outdoor hazards worth clearing first." },
+      { slug: "sulcata-tortoise-enrichment-guide", line: "Grazing, target training a hundred-pound animal, and the terrain that can flip a tortoise onto its back." },
+      { slug: "sulcata-tortoise-legal-guide", line: "The state table, the tick certificate interstate transport needs, and the California desert tortoise mix-up." },
+      { slug: "sulcata-tortoise-vs-russian-tortoise-guide", line: "The honest do-not-buy filter: one stays on a tortoise table for life, the other needs a yard and a heated shed." },
+    ],
+    buyList: [
+      "Outdoor enclosure with fencing buried as deep as it stands",
+      "Heated shelter with a ceramic heat emitter or radiant panel",
+      "Thermostat",
+      "Tortoise table for the juvenile stage",
+      "Strong T5 HO UVB fixture for indoor housing",
+      "Basking lamp",
+      "Organic topsoil and play sand, deep enough to dig",
+      "Humid hide for a growing tortoise",
+      "Grass hay, by the box",
+      "Phosphorus-free calcium and a tortoise multivitamin",
+      "Cuttlebone or crushed oyster shell",
+      "Shallow water dish large enough to soak in",
+      "A chelonian-experienced reptile vet",
+    ],
     faqs: [
-      { q: "How big do sulcata tortoises get?", a: "Sulcatas are the third-largest tortoise species in the world. Adults commonly reach 24 to 36 inches shell length and 80 to 150+ lbs, with some exceptional males exceeding 200 lbs. That palm-sized hatchling at the pet store will become an animal that requires a yard and a heated shelter. Research adult size and space requirements very carefully before acquiring a sulcata." },
-      { q: "How long do sulcata tortoises live?", a: "70 to 150+ years - they will almost certainly outlive you. Before acquiring a sulcata, establish a contingency rehoming plan with a reputable tortoise rescue organization. This is a responsibility that may need to be passed to the next generation. Many sulcatas end up in rescue because their owners were not prepared for their adult size and lifespan." },
-      { q: "What do sulcata tortoises eat?", a: "80% of the diet should be grass - Bermuda grass, orchard grass, Timothy hay - with edible weeds and leafy greens as a supplement. Do not feed fruit, animal protein, or excessive commercial tortoise pellets. These cause the shell pyramiding and organ damage common in improperly fed sulcatas. A natural grass pasture outdoor enclosure is ideal." },
-      { q: "What causes shell pyramiding in sulcatas?", a: "Pyramiding - raised, bumpy scutes - is caused by excessive protein or fruit in the diet, rapid growth from inappropriate high-calorie feeding, and low humidity during the growth phase. Once pyramiding occurs, it is irreversible. The only prevention is a correct high-fiber, low-protein diet and appropriate growth rate from hatching." },
-      { q: "Can I keep a baby sulcata tortoise indoors?", a: "Yes, but only temporarily. Hatchlings and juveniles can be kept indoors with a T5 HO UVB lamp (Arcadia 12%) and basking spot of 95 to 105 degrees F. As they grow - which happens faster than most people expect - they need progressively larger outdoor enclosures. An adult sulcata cannot be kept indoors in any practical sense." },
-      { q: "Are sulcata tortoises good pets for beginners?", a: "No, and this is one of the most consequential mismatches in the pet trade. A ping-pong-ball-sized hatchling grows into an animal that can exceed 150 pounds, needs 100+ square feet of outdoor space, and can outlive its owner by decades. Sulcatas are one of the most commonly surrendered tortoises specifically because they're sold to beginners who had no idea what they were taking on." },
-      { q: "How can I tell if my sulcata tortoise is male or female?", a: "It's genuinely difficult before the tortoise is several years old and around 8 to 10 inches in shell length - sulcatas don't show reliable external differences as hatchlings. Once mature, males have a longer, thicker tail, a more concave plastron to accommodate mating, and larger, more pronounced anal scutes than females. Males also tend to grow a bit larger overall. For a young tortoise, patience is the honest answer more often than any quick trick." },
-      { q: "How does a sulcata tortoise compare to smaller tortoises like the Russian or red-footed?", a: "Sulcatas are dramatically larger than both - a 100+ lb adult next to a 5 to 10 inch Russian tortoise or an 11 to 16 inch red-footed tortoise. The three also come from very different climates: Russian tortoises come from cold Central Asian steppe and brumate, red-footed tortoises come from humid tropical South America and don't, and sulcatas come from the hot, dry Sahel. If a sulcata's eventual size feels like too much responsibility, the [red-footed tortoise](/guides/red-footed-tortoise/) or [Russian tortoise](/guides/russian-tortoise/) are worth considering instead." },
+      { q: "What causes shell pyramiding in sulcata tortoises?", a: "It's debated. One well-known study put the key driver at low humidity during growth, with dietary protein only a minor factor. Another found supplemental night heat and faster growth rates produced pyramiding with humidity held constant. Either way, humid hides while a tortoise is growing and a properly paced diet are the defense, and pyramiding is permanent once it happens." },
+      { q: "When does a sulcata tortoise need to move outdoors?", a: "Sooner than most new owners expect. Sulcatas grow fast through their first 5 to 10 years, so outdoor housing arrives within a few years of a hatchling coming home, not someday. Without meaningful outdoor space in that window, this is the wrong species rather than a harder version of the right one." },
+      { q: "Can you pick up an adult sulcata tortoise?", a: "Not safely. An adult runs 80 to 110 pounds, and a male can reach 200. Interaction with a grown sulcata happens at ground level: time in its space, hand-feeding, and letting it come to you." },
     ],
   },
 ];

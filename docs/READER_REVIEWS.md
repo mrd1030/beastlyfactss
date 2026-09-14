@@ -9487,3 +9487,133 @@ health guide.
 - The shared small mammal heat stress guide names guinea pigs, rabbits,
   chinchillas and hamsters and not gerbils, which is a one-row fix in a
   shared guide rather than species work.
+
+## Sulcata Tortoise (2026-09-14, batch H, single pass, before the router hub)
+
+Extractor set of ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, and the sulcata vs
+Russian tortoise comparison). One Opus 5 agent. The reader read the
+legacy care sheet hub; the router hub was built from its findings the
+same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | A summary of the other nine, and the only page where numbers are asserted with no hedging. |
+| Encyclopedia | B- | Almost nothing to act on, except the 10 foot burrow depth. |
+| Cost | A- | Adoption over purchase, monthly figures by life stage, the winter electricity line. |
+| Handling | B | Keep juveniles low, never house two mature males, sexing cues. |
+| Health issues | A- | Names two studies and admits they disagree. |
+| Tank setup | A | Every number I need to build. The most useful page here. |
+| Feeding | A | Schedule by age, supplement cadence, the one week vet threshold. |
+| Enrichment | A- | Target training, and do not build terrain that flips a tortoise. |
+| Legal | A- | The state table, the tick certificate, the California desert tortoise mix-up. |
+| vs Russian | B+ | Mostly a do-not-buy filter, which is fair. |
+
+Set grade: B+. "The deep dives are genuinely good and specific, and the
+set is dragged down by a hub that repeats them badly and by numbers that
+drift page to page."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs sulcata-tortoise --strict` before
+the pass printed 20 topic groups with conflicts across 48 groups, the
+most of any species in batches F to H.
+
+### The brumation contradiction
+
+The reader called this the worst one, and it is the only case in three
+batches where a deep dive contradicted one of the site's own shared
+guides rather than a sibling.
+
+Tank setup: "In regions with genuinely cold winters, the shelter needs to
+stay heated to at least 55 to 60°F to allow safe brumation." The vs
+Russian guide: "Sulcatas come from the edge of the Sahara and are not
+built for brumation at all."
+
+The site already settles this. Our shared tortoise brumation guide names
+the species the Royal Veterinary College considers unsuitable for
+hibernation outright, and the African spurred tortoise is on that list
+alongside leopard, red-foot and yellow-foot tortoises, because they are
+tropical or subtropical species with no cold-season adaptation. The tank
+setup guide was giving Testudo advice to a Sahel animal. Rewritten: where
+winters are cold, the tortoise winters indoors, and the sentence now
+links the shared guide that names it.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Lifespan. Hub: "they can live 70 to 150+ years." Cost guide: "commonly
+  lives 70 to 100 years", which handling and vs Russian also say. The
+  reader: "The hub is the outlier and it is the number people quote."
+- Pyramiding. Hub: "is caused by excessive protein intake, low humidity
+  during growth, and rapid growth rate." Health: "It's debated," with two
+  named studies that disagree. The hub was stating a live scientific
+  question as settled, in the direction the health guide's better source
+  rejects.
+- Sexing size. Hub: "around 8 to 10 inches in shell length." Handling:
+  "10 to 15 inch shell-length range."
+- Calcium. Hub checklist: "2 to 3x/week" flat. Feeding: "2 to 3 times a
+  week for juveniles and about weekly for adults."
+- Outdoor space. Hub: "at least 100+ square feet." Setup: "80 to 100
+  square feet per tortoise, ideally several hundred."
+- Shelter temperature. Hub: "60 degrees F+." Setup: "70 to 75°F."
+- Greens cost. Hub: "$60 to $120." Cost guide: "$2.44 to $3.57 a pound,
+  call it two or three pounds a month."
+
+### Numbers decided, both sides and the source that won
+
+- IUCN status, which carries a legal conclusion. Encyclopedia:
+  "Vulnerable (IUCN)." Legal guide: "Centrochelys sulcata is IUCN
+  endangered, which makes it categorically non-exempt" from a
+  Massachusetts permit allowance. The 2021 assessment by Petrozzi and
+  colleagues lists the species as Endangered, and Wikipedia records it as
+  Endangered under IUCN 3.1 with that assessment year. The IUCN Red List
+  page itself returns 403 to an automated fetch. The legal guide was
+  right and the encyclopedia was out of date.
+- Lifespan. Animal Diversity Web gives an average captive longevity of
+  54.3 years and no wild figure; ReptiFiles says "over 70 years"; the
+  cost guide says 70 to 100. Nothing supports 150. The encyclopedia's
+  wildLifespan also held a captive figure, the sixth instance of that
+  defect in two batches.
+- Adult weight, four figures across four pages. Animal Diversity Web:
+  "Range mass: 36 to 50 kg", which is 79 to 110 lbs. ReptiFiles: "70-110
+  lbs on average, although particularly large males can reach over
+  40 inches and 200 lbs". The handling guide's "80 to 110 pounds, and a
+  male can reach 200" already matched both, so the encyclopedia's
+  "70-150+ lbs" and the vs Russian guide's three instances of the same
+  were corrected to it rather than a new number being introduced.
+- Juvenile indoor size. Handling gave "an 8-by-8-foot indoor minimum as a
+  juvenile", which is the setup guide's adult figure. Corrected to the
+  setup guide's roughly 7 by 3.5 feet under 10 inches, with 8 by 8 named
+  as the adult floor for housing that should not be indoors at all.
+- Shelter cost, inside one page. Cost table "$200 - $600" against its own
+  body's "another $1,000 or more on top of that". The table row now reads
+  $200 to $1,000+ and the body says what the table is pricing.
+- Daytime temperature. Feeding's "roughly 85 to 95°F during the day"
+  blurred the setup guide's ambient 80 to 90 and basking 95 to 105 into
+  one band. Now it names both.
+
+### Also fixed
+
+Seven of the reader's ten recommended links. The enrichment guide was at
+its one-sibling cap on a pre-existing sentence reading "The tank setup
+guide has the indoor and outdoor space requirements at each size", which
+is the site self-reference RULES bans, so that sentence now carries the
+80-to-100-square-feet figure directly and the freed slot went to the
+reader's requested feeding link.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: a juvenile
+  soaking protocol, growth benchmarks and a weigh-in schedule, how to
+  build the humid hide the pyramiding advice depends on, evaluating a
+  hatchling or breeder, emergency vet costs in dollars, and how to move
+  an adult.
+- The soaking one is the sharpest: the feeding guide says juveniles
+  "benefit from regular soaking" and then stops, with no frequency,
+  duration, depth or water temperature anywhere in the set.
+- The moving question is the second: the cost guide raises transporting a
+  hundred-pound tortoise and no page answers it, on a set where the
+  enrichment guide's best line is about target training precisely so the
+  animal moves itself.

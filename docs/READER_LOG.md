@@ -4165,3 +4165,87 @@ Doubts: the two comparison pages read like they were written from a template wit
 - A full cleaning schedule and bedding-change interval outside one hub FAQ.
 - Heat and cold thresholds for gerbils; the shared heat stress guide names guinea pigs, rabbits, chinchillas, and hamsters, not this species.
 - Out-of-tank time or playpen safety.
+---
+
+# Sulcata Tortoise: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch H. Raw and unedited.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, but it is a summary of the other nine. Actionable: the two cost tables, the checklist, the 12 to 18 inch buried wall. **C.**
+- **01 Encyclopedia.** Finished it, 90 seconds. Actionable: almost nothing, except the 10 foot burrow depth, which reframes the digging problem. **B-.**
+- **02 Cost.** Finished it. Actionable: adoption over purchase, monthly figures by life stage, the winter electricity line. **A-.**
+- **03 Handling.** Finished it. Actionable: keep juveniles low, never house two mature males, sexing cues. **B.**
+- **04 Health.** Finished it. Actionable: the causes are the setup, plus clearing yard chemicals. Names two studies and admits they disagree. **A-.**
+- **05 Tank setup.** Finished it. Actionable: every number I need to build, sizes, temps, substrate depth, photoperiod. The most useful page here. **A.**
+- **06 Feeding.** Finished it. Actionable: schedule by age, supplement cadence, the eight reasons for not eating, the one week vet threshold. **A.**
+- **07 Enrichment.** Finished it. Actionable: the priority list, target training, do not build terrain that flips a tortoise. **A-.**
+- **08 Legal.** Finished it. Actionable: the state table, the tick certificate for interstate transport, the California desert tortoise mix-up. **A-.**
+- **09 vs Russian.** Finished it. Actionable: mostly a do-not-buy filter, which is fair. **B+.**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns a small place: origin, burrow depth, the 1970s to 1990s export history that explains the rescue backlog. Nothing else. The hub does not earn its place. Every section is a shorter, less careful version of a deep dive, and it is the only page where numbers are asserted with no hedging.
+
+Hub versus deep dive conflicts:
+
+- Lifespan. Hub: "they can live 70 to 150+ years." Cost guide: "Sulcatas commonly live 70 to 100 years." Handling and vs Russian also say 70 to 100. The hub is the outlier and it is the number people quote.
+- Sexing size. Hub: "around 8 to 10 inches in shell length." Handling: "around 10 to 15 inches in shell length."
+- Pyramiding certainty. Hub: "is caused by excessive protein intake, low humidity during growth, and rapid growth rate." Health: "What causes it is genuinely debated... dietary protein playing only a minor role."
+- Calcium. Hub checklist: "Calcium supplementation (2 to 3x/week)." Feeding: "2 to 3 times a week for juveniles and about weekly for adults."
+- Outdoor space. Hub: "at least 100+ square feet." Tank setup: "at least 80 to 100 square feet per tortoise."
+- Shelter temp. Hub: "60 degrees F+." Tank setup: "set to maintain 70 to 75°F."
+- IUCN status. Encyclopedia: "Vulnerable (IUCN)." Legal: "Centrochelys sulcata is IUCN endangered, which makes it categorically non-exempt." A legal conclusion rests on that word.
+
+## 3. As a whole
+
+Yes, I could set one up, buy it, feed it, and keep it alive. Setup, diet, and the size trap are all covered properly.
+
+Still missing: a soaking protocol (feeding says juveniles "benefit from regular soaking" and stops), growth benchmarks and a weigh-in routine, how to actually build the humid hide the health page depends on, how to evaluate a hatchling or a breeder, what an emergency vet bill costs, and how you move a 100 pound tortoise.
+
+Unsignposted handoffs: the health page's pyramiding humidity advice has its 70 percent number only in tank setup. The feeding page's "an enclosure that isn't warm enough" has its temperature gradient only in tank setup. The cost guide's heated shelter has its target temperature only in tank setup. The handling page's sexing cues sit next to the hub's different threshold with nothing connecting them.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three or four times: adult size and surrender risk, buried fencing, indoor is temporary, pyramiding.
+
+- Brumation, the worst one. Tank setup: "the shelter needs to stay heated to at least 55 to 60°F to allow safe brumation." vs Russian: "Sulcatas come from the edge of the Sahara and are not built for brumation at all."
+- Juvenile indoor size. Handling: "requiring an 8-by-8-foot indoor minimum as a juvenile." Tank setup: "A juvenile under 10 inches needs roughly 7 feet by 3.5 feet by 2.5 feet," with 8 by 8 given as the adult figure.
+- Weight. Handling: "An adult sulcata weighs 80 to 110 pounds." vs Russian: "70-150+ lbs."
+- Shelter cost, inside one page. Cost table: "Heated shelter (materials + heater) | $200 - $600." Cost body: "a proper heated shelter... adds another $1,000 or more on top of that."
+- Daytime temp. Feeding: "roughly 85 to 95°F during the day." Tank setup: "ambient 80 to 90°F."
+
+## 5. One link per page
+
+- **Hub.** "Adults need at least 100+ square feet of outdoor space" to the tank setup guide.
+- **Encyclopedia.** "digging burrows up to 10 feet deep to escape heat" to the enrichment guide.
+- **Cost.** "a proper heated shelter built around something like a ceramic heat emitter for cold nights" to the tank setup guide.
+- **Handling.** "requiring an 8-by-8-foot indoor minimum as a juvenile and several hundred square feet outdoors as an adult" to the tank setup guide.
+- **Health.** "Low humidity during the growing years is strongly linked to pyramiding" to the tank setup guide.
+- **Tank setup.** "the shelter needs to stay heated to at least 55 to 60°F to allow safe brumation" to Tortoise Brumation.
+- **Feeding.** "An enclosure that isn't warm enough. By far the most common cause." to the tank setup guide.
+- **Enrichment.** "a tortoise calcium and multivitamin powder handles that side" to the feeding guide.
+- **Legal.** "whether you can provide for an animal that may reach 200 pounds and outlive you" to the cost guide.
+- **vs Russian.** "plus a heated shelter for cold nights" to the tank setup guide.
+
+## 6. Trust
+
+Doubts: the hub's confident pyramiding causation against the health page's honest "genuinely debated"; the 150 year lifespan that no deep dive supports; endangered versus Vulnerable; the brumation contradiction; the 8 by 8 juvenile figure. The pattern is that the hub and the odd stray sentence are unreviewed, while the deep dives are careful.
+
+Most convincing sentence, from the enrichment guide: "A tortoise that will follow a target moves itself for weighing, health checks and enclosure transfers, which for a hundred pound animal is worth real effort." Close second, same page: "A tortoise that flips onto its back in a hot enclosure can die there."
+
+## 7. Set grade: B+
+
+The deep dives are genuinely good and specific, and the set is dragged down by a hub that repeats them badly and by numbers that drift page to page.
+
+First two changes: (1) fix the brumation contradiction and pin one set of canonical numbers for weight, lifespan, sexing size, and outdoor space, then make the hub quote them; (2) rewrite the hub as a short router that links inline into the deep dives instead of restating them.
+
+## Not covered anywhere
+
+- A soaking protocol for juveniles: how often, how long, water depth and temperature.
+- Growth benchmarks by age and a routine weigh-in schedule for a growing sulcata.
+- How to build the humid hide the pyramiding advice depends on.
+- How to evaluate a hatchling or a breeder at purchase.
+- What an emergency vet event actually costs in dollars.
+- How to physically move or transport an adult, which the cost guide raises and no page answers.
