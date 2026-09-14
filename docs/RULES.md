@@ -125,8 +125,19 @@ snapshot, not a quote."
 
 ## Linking: everything to and from somewhere
 
-- Every article carries 1 to 2+ in-body internal links, written by hand. The
-  build gates on this, but the check is a net, not the author.
+- Every article carries 1 to 2+ in-body internal links, written by hand. That
+  is a floor, not a target: with this many guides on the site, an article
+  links wherever another page is the real answer to something it raised.
+  The build gates on the floor, but the check is a net, not the author.
+- A link rides inside a sentence that says something. No "see our", "check
+  out our", "read our", "head over to our": the sentence names what the
+  other page settles and links it there ("the same impaction risk the
+  [leopard gecko](/blog/leopard-gecko-health-issues-guide/) faces on loose
+  substrate"). An article never ends on a link library: no closing
+  paragraph that exists to hand the reader three other guides. The last
+  paragraph is content, and if it links, it links the one page that
+  follows from the point it makes. The bearded dragon guides are the
+  reference. Decided 2026-09-14.
 - In-body links point somewhere the Deep Dive does not: another species
   ("the same calcium problem sugar gliders have"), a cross-species guide
   (quarantine, UVB, gut-loading), the encyclopedia profile, an overview or
