@@ -8,7 +8,7 @@ export const fishEncyclopedia = [
       habitat: "Slow-moving tributaries, flooded forest, and blackwater streams",
       adultSize: "6 inches (15 cm) body; 8-10 inches (20-25 cm) including fins",
       wildDiet: "Small insects, crustaceans, zooplankton, and occasionally small fish",
-      wildLifespan: "10-12 years",
+      wildLifespan: "Not well documented in the wild; 8 to 12 years is typical in a well-kept aquarium, up to around 15 under ideal conditions",
       conservation: "Not evaluated (widespread and common)",
       history: "The species reached print long before it reached aquariums. Ferdinand Schultze described it in 1823 from a specimen catalogued at the zoological museum of the Royal University of Berlin, filing it as Zeus scalaris among the marine dories, and it was shuffled through several other genera before Pterophyllum stuck. Live fish did not arrive in Europe until 1909, when C. Ziggelkow of Hamburg brought the first import into Germany. The angelfish then spent more than a century as a fixture of the hobby with its genome unread, until a high school student named Indeever Madireddy sequenced and assembled it on a community lab bench and published the result in October 2022.",
     },
