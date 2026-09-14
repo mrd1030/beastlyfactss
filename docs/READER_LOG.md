@@ -3826,3 +3826,78 @@ First two changes: rebuild the hub from the deep dives so every number matches, 
 - Heat failure or power outage contingency.
 
 (Nail trimming and molting are covered by the shared Grooming, Nails, and Molting guide; vet transport by the shared small mammal vet guide.)
+
+---
+
+# Cardinal Tetra: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch H. Raw and unedited.
+
+Read all eight files in order. Review follows.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: shopping checklist, school size, cycle warning. **B.** The one page with a water change schedule, and its temperature range contradicts the setup guide.
+- **01 Encyclopedia.** Finished it. Actionable: adult size, wild lifespan context. The naming-priority story is the only thing here I could not get elsewhere. **B.**
+- **02 Cost.** Finished it. Actionable: $1 to $3 a fish, $65 to $230 setup, test kit is the non-optional line item. **A-.**
+- **03 Handling.** Finished it. Actionable: minimum 10, three named beginner mistakes, the stripe tell. Thin for a standalone page. **B-.**
+- **04 Health.** Finished it. Actionable: symptom lists, ich and fin rot treatment, nitrite as the number to watch. **A.**
+- **05 Tank setup.** Finished it. Actionable: 20 long, 73 to 84F, pH 5.0 to 7.0, sponge filter, driftwood and almond leaves. Best page in the set. **A.**
+- **06 Feeding.** Finished it. Actionable: twice daily, two-minute rule, crush the flake, remove dead fish immediately. **A-.**
+- **07 Enrichment.** Finished it. Actionable: priority order list, buy from a shop that has held them, spread food across the surface. Terse, and the honest "nothing on cardinals specifically" bought my trust. **A-.**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, adult size, wild lifespan, and the Schultz/Axelrod naming race appear nowhere else. The hub half earns it. Checklist, cost tables, and the weekly water change line are useful; the Housing, Diet, Enrichment and Health sections are compressed restatements of four deep dives.
+
+Disagreements with the deep dives:
+
+- Temperature. Hub: "Keep water heated between 73 and 81 degrees F." Setup: "73 to 84°F is the range Seriously Fish gives for this species." The hub checklist repeats 73 to 81.
+- School size. Hub FAQ: "At least 6, ideally 8 to 10 or more if the tank allows." Enrichment: "Ten, not six... Do not stop at six." Handling: "Animal Diversity Web puts the workable minimum at 10."
+- Tank size. Hub: "A 10 to 20 gallon tank suits a proper school of 8 to 10 or more." Setup: "If you're stocking the fuller 8 to 10 fish school this species is usually kept in, that's [20-gallon long] the better practical minimum."
+- Feeding. Hub: "Feed small amounts once or twice daily." Feeding guide: "Twice daily... is the practical standard."
+- Parasite name. Hub: "Pleistophora hyphessobrycetis." Health and feeding: "Pleistophora hyphessobryconis." One is wrong.
+
+## 3. Could I keep one alive?
+
+Mostly yes. I can size the tank, buy the kit, stock ten, feed them, and recognize ich, fin rot, swim bladder trouble and neon tetra disease. Still missing: how to soften hard tap water (enrichment says hard water is the main reason cardinals fail, then never says what to do about it), a tankmate list, how to acclimate a bag on arrival beyond "slowly", quarantine duration for new stock other than the 30 days mentioned under ich, and how to humanely euthanize a confirmed case.
+
+Unmarked hand-offs: the hub asks me to "confirm a completed nitrogen cycle" without pointing anywhere; the cycling guide is in the sidebar. Handling names a fatal mistake as "adding them to a tank that hasn't finished cycling" and never links the setup guide or the cycling guide. Health tells me to set up "a modest separate tank with its own gentle sponge filter" and does not link the hospital tank guide sitting in its own sidebar. Setup says "always quarantine new fish" and links nothing.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: the 2008 Acta Amazonica nitrite finding (cost, handling, health, feeding). Read twice: the neon stripe comparison (hub FAQ, handling), the incurable-disease scavenging rule (health, feeding), blackwater tannins (setup, enrichment), small mouths (feeding, enrichment).
+
+Conflicts:
+
+- Setup body: neon tetra is comfortable to "roughly 25°C (77°F)". Setup FAQ, same page: "warmer than neon tetra's comfort ceiling of roughly 77 to 81°F."
+- Health body on ich: "a commercial ich medication alongside daily partial water changes." Health FAQ: "a gradual temperature increase plus a commercial ich medication." The body never mentions heat, which matters when the same site puts 50% mortality near 33.7°C.
+- Cost: "A 10-gallon tank is workable for the bare minimum school of 6," against enrichment's flat "Do not stop at six."
+
+## 5. One link per page
+
+- Hub: "always confirm a completed nitrogen cycle, especially for nitrite, before stocking" points to How to Cycle a Fish Tank.
+- Encyclopedia: none needed.
+- Cost: "Confirming your cycle before stocking, not after, is the cheapest insurance this species has" points to How to Cycle a Fish Tank.
+- Handling: "Adding them to a tank that hasn't finished cycling" points to the tank setup guide.
+- Health: "A modest separate tank with its own gentle sponge filter is worth setting up for this" points to Fish Quarantine and Treatment.
+- Setup: "Always quarantine new fish before adding them, given the disease risk this species carries" points to the cardinal tetra health issues guide.
+- Feeding: "Overfeeding lets uneaten food decay and spike ammonia and nitrite" points to How to Tell If Your Fish Is Sick.
+- Enrichment: "Do not keep them in hard alkaline water and expect them to thrive" points to Freshwater pH, GH, and KH.
+
+## 6. Trust
+
+Doubts: the Merck citation for a microsporidian parasite resolves to a page titled mycotic diseases, the parasite name is spelled two different ways, and the hub temperature band is narrower than the guide's without explanation. The cost guide's "up to five years" also quietly drops the hub's "up to 10."
+
+Most convincing sentence, from the feeding guide: "Food that's too large gets taken and spat back out repeatedly, which functionally starves the fish even while food is visibly going into the tank." That is watched, not researched.
+
+## 7. Set grade
+
+**B+.** Strong, sourced, genuinely specific on the things that kill this fish, undermined by a hub that disagrees with its own deep dives and a near-total absence of links between pages that plainly need each other. First two changes: reconcile the hub to the setup and enrichment numbers (temperature, school size, tank size, feeding frequency), then add the cycling and quarantine links where four pages already raise the question.
+
+## Not covered anywhere
+
+- How to soften or acidify hard tap water for this species. The pH, GH, KH guide is framed around not chasing numbers in a coldwater tank, and does not promise a softening method.
+- A cardinal tetra tankmate list, and what counts as a fin-nipper to avoid.
+- Humane euthanasia method for a confirmed neon tetra disease case, which the health guide recommends and never explains.
+- Breeding, or what to do with fry, given the species is described as hard to breed at scale.

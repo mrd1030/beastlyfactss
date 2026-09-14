@@ -8950,3 +8950,137 @@ row left stale against the batch's own later fix, two hedgehog rows
 carrying the deep dive's source narration, one missing vetLine, one date
 not bumped, and a captive figure filed under "Wild Lifespan" with no
 label on the same day the hedgehog fix labeled its own.
+
+## Cardinal Tetra (2026-09-14, batch H, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment). One Opus 5 agent. The reader
+read the legacy care sheet hub; the router hub was built from its
+findings the same day. Cardinal tetra went first in batch H partly
+because the neon tetra set merged in batch G cross-links it, and partly
+because its hub carried a misspelled parasite name flagged during batch F
+and left because the species was out of scope then.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | The one page with a water change schedule, and its temperature range contradicts the setup guide. |
+| Encyclopedia | B | The naming-priority story is the only thing here I could not get elsewhere. |
+| Cost | A- | $1 to $3 a fish, $65 to $230 setup, test kit is the non-optional line item. |
+| Handling | B- | Minimum 10, three named beginner mistakes, the stripe tell. Thin for a standalone page. |
+| Health issues | A | Symptom lists, ich and fin rot treatment, nitrite as the number to watch. |
+| Tank setup | A | Best page in the set. |
+| Feeding | A- | Twice daily, two-minute rule, crush the flake, remove dead fish immediately. |
+| Enrichment | A- | The honest "nothing on cardinals specifically" bought my trust. |
+
+Set grade: B+. "Strong, sourced, genuinely specific on the things that
+kill this fish, undermined by a hub that disagrees with its own deep
+dives and a near-total absence of links between pages that plainly need
+each other."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs cardinal-tetra --strict` before
+the pass printed conflicts on tank size, temperature, lifespan and the
+cost line items. The decisions were temperature, school size, tank size,
+feeding frequency and lifespan, all of them the hub against a deep dive.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Temperature. Hub: "Keep water heated between 73 and 81 degrees F."
+  Setup: "73 to 84°F is the range Seriously Fish gives for this species."
+  The hub checklist repeated 73 to 81.
+- School size. Hub FAQ: "At least 6, ideally 8 to 10 or more if the tank
+  allows." Enrichment: "Ten, not six... Do not stop at six." Handling:
+  "Animal Diversity Web puts the workable minimum at 10."
+- Tank size. Hub: "A 10 to 20 gallon tank suits a proper school of 8 to
+  10 or more." Setup splits it: a 10-gallon for the bare minimum school
+  of 6, a 20-gallon long as the practical minimum for 8 to 10.
+- Feeding. Hub: "Feed small amounts once or twice daily." Feeding guide:
+  "Twice daily... is the practical standard."
+- Parasite name. Hub: "Pleistophora hyphessobrycetis." Health and
+  feeding: "Pleistophora hyphessobryconis." The reader: "One is wrong."
+  The hub was, and the whole `sections` block goes with the rebuild.
+
+### Deep dives against each other, and against themselves
+
+Both of the sharpest findings are same-page contradictions, which no
+cross-page checker catches:
+
+- Setup guide, body: Practical Fishkeeping "notes that cardinal tetra
+  tolerates water reaching 30°C (86°F), warmer than the roughly 25°C
+  (77°F) ceiling neon tetra is comfortable with." Setup guide, its own
+  FAQ: "warmer than neon tetra's comfort ceiling of roughly 77 to 81°F."
+  Our own neon tetra setup guide, reconciled in batch G, says 70 to 81
+  works with 72 to 78 the usual target. The FAQ now carries the body's
+  comparison.
+- Health guide, body on ich: "a commercial ich medication alongside
+  daily partial water changes." Health guide, its own FAQ: "a gradual
+  temperature increase plus a commercial ich medication." The reader:
+  "The body never mentions heat, which matters when the same site puts
+  50% mortality near 33.7°C."
+- Cost: "A 10-gallon tank is workable for the bare minimum school of 6,"
+  against enrichment's flat "Do not stop at six."
+
+### Numbers decided, both sides and the source that won
+
+- Ich treatment. The FAQ's temperature increase against the body's
+  medication-and-water-changes protocol. Opened Aquarium Co-Op, the
+  guide's own cited source: it prescribes Ich-X redosed every 24 hours
+  with roughly a third of the water changed each time, carried a day past
+  the last spot, and never recommends raising the temperature. The body
+  was right and the FAQ was repeating hobby lore. Both now say so
+  explicitly, since "raise the temperature" is common enough advice that
+  silence reads as agreement.
+- Lifespan. Hub and encyclopedia carried "up to 10"; the cost guide said
+  "up to five years" from Practical Fishkeeping, so the hub's outer
+  figure had nothing behind it. Animal Diversity Web, already cited by
+  the handling guide: "In captivity, the life expectancy is about 5
+  years, although individuals may live as long as 10 years." Not a
+  contradiction once both halves are stated, so the cost guide now
+  carries the outer figure and ADW joins its Sources.
+- Temperature, school size, tank size and feeding frequency all went to
+  the deep dives unchanged; only the hub was wrong.
+
+### The Merck citation the reader doubted
+
+Worth recording because the doubt was reasonable and the citation is
+sound. The reader flagged that a microsporidian parasite is cited to a
+page titled "Mycotic Diseases of Fish". Opened it: the page states "Neon
+tetra disease is caused by Pleistophora hyphessobryconis, which infects
+the skeletal musculature" and names "tetras, angelfish, rasboras, barbs,
+and zebrafish", exactly as the two guides quote it. Microsporidia are
+closely related to true fungi, which is why Merck files them there. No
+change.
+
+### Gaps closed rather than carried
+
+The legacy hub's weekly 20 to 25% water change had no deep dive behind
+it, and the shared aquarium filtration guide carries no schedule figure
+either, so it is retired rather than carried as an unsourced row. Same
+call as angelfish in batch F and neon tetra in batch G, which makes three
+fish hubs now missing a water-change cadence: worth writing once into a
+shared guide rather than three times into species pages.
+
+### Also fixed
+
+Six of the reader's eight recommended links. Two went somewhere other
+than it suggested, both times to the shared guide that actually settles
+the question: its "adding them to a tank that hasn't finished cycling"
+on the handling guide points at the cycling guide rather than the setup
+guide, and the setup guide's "always quarantine new fish" points at the
+hospital tank guide rather than the health guide, since the setup guide
+had already spent its one sibling link on the handling guide.
+
+### Open
+
+- The four things not covered anywhere, in docs/READER_LOG.md: how to
+  soften or acidify hard tap water, a tankmate and fin-nipper list,
+  the humane euthanasia method the health guide recommends without
+  explaining, and breeding.
+- The first is the sharpest. The enrichment guide names hard alkaline
+  water as the main reason cardinals fail where neons would have been
+  fine, and then no page in the set says what to do about it. The shared
+  pH, GH and KH guide is written around not chasing numbers in a
+  coldwater tank and does not promise a softening method.
