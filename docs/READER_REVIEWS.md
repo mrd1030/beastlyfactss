@@ -7595,3 +7595,188 @@ today.
 - Sources across this set. The tank setup guide ran one entry before this
   pass and now runs two, and the cost guide runs two, where RULES targets
   four to five. The health, handling, and legal guides are well sourced.
+
+## Sugar Glider (2026-09-14, batch F, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal). One Opus 5 agent, about
+88k tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | Actionable, and dragged down by numbers the deep dives contradict. |
+| Encyclopedia | B+ | The only place in the set that says where US gliders came from. |
+| Cost | B | Price per glider, the pair requirement, setup, monthly, emergency float. |
+| Handling | A- | Settling period, pouch first, daily hours, back off at crabbing. |
+| Health issues | B- | The symptom list and "do not just add calcium", thin on everything that is not bone disease. |
+| Tank setup | A- | Dimensions, bar spacing, the axle-free wheel, solid bottom, fleece cover. |
+| Feeding | A | The densest page here. |
+| Enrichment | A | The priority order and the no-touching-the-bars test. |
+| Legal | A | A clear answer on whether you may own one. |
+
+Set grade: B. "The deep dives are strong and honest; the hub sitting in
+front of them contradicts them on size, temperature, price, and diet
+brand, and the pages almost never link each other."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs sugar-glider --strict` before the
+pass printed 10 conflicting topic groups. The real decisions: cage size,
+cage price, temperature, vet cost, the glide distance against the
+encyclopedia's, and the encyclopedia's ounce weight against the feeding
+guide's gram figures. The rest were the cost guide's own price tiers.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild:
+
+- Cage. Old hub: "Sugar gliders require a minimum 24x24x36\" aviary-style
+  cage." Tank setup: "A minimum of roughly 30 by 18 by 36 inches for a
+  pair, though many current keepers recommend going larger still, 24 by
+  24 by 48 inches or more."
+- Temperature. Old hub: "Temperature must stay between 75 and 85 degrees
+  F." Tank setup: "75 to 88°F is the comfortable range."
+- Cage price. Old hub table: "24x24x36 in aviary-style cage: $150 to
+  $300." Cost guide: "Tall cage, sized for a genuinely vertical, climbing
+  pair: $200 - $400."
+- Vet cost. Old hub annual table: "Annual vet wellness check (exotic): $70
+  to $120." Cost guide: "An exotic vet visit runs $75 to $200."
+- Diet brand. Old hub checklist: "Commercial sugar glider diet (TPG or
+  Wombaroo)." The feeding guide names "Leadbeater's mixture, Bourbon's
+  Modified Leadbeater's (BML), High Protein Wombaroo (HPW), Critter Love
+  Complete, and Exotic Nutrition diets" and never mentions TPG at all.
+- Certainty on isolation. Old hub: a lone glider "frequently develops
+  self-mutilation behaviors." Enrichment: a study "noted that the
+  solitary animals in its sample were healthy and that the aggression and
+  self-mutilation behaviors were not observed", alongside the clinical
+  literature that does treat solitary housing as a risk factor. The
+  router hub carries the enrichment guide's framing, which holds both.
+- Glide distance. Old hub funFact: "glide up to 150 feet." Encyclopedia:
+  "glide up to 165 feet." Settled at 165, see Numbers decided.
+
+### Deep dives against each other
+
+- Dishes. The cost guide budgets for "hides, a glider-safe wheel, dishes,
+  enrichment", while the enrichment guide's foraging section says
+  "Foraging at height, never a dish." Checked and left alone, not a
+  conflict: the enrichment guide is talking about how to present foraging
+  food, and the feeding guide separately says kibble stays available at
+  all times, which needs a dish.
+- Temperature floors. The old hub's 65°F cage floor and the handling
+  guide's "keep the space above roughly 68°F during sessions" are two
+  different numbers for two different things, and only the handling one
+  is in a deep dive. The hub now carries the handling figure for handling
+  and the tank setup range for the cage.
+- Lifespan. Cost and the old hub say 10 to 15 years, the encyclopedia
+  says "up to 17.8 years recorded in captivity". A typical range against
+  a record, both correctly labelled. Left alone.
+
+### Gaps, checked against the Health and More list first
+
+- How to introduce a second glider to an existing one, including
+  quarantine.
+- How to hold a room at 75 to 88°F, and what heat source is safe.
+- Cage and pouch cleaning frequency.
+- How to choose a breeder or rescue, and what a healthy glider looks like
+  at purchase.
+- Glider-proofing a room for out-of-cage time, and recovering an escaped
+  glider.
+- Who cares for them when you travel. The shared small mammal vet and
+  travel guide covers the carrier and the clinic, not a sitter.
+- A wheel diameter. The old hub's "12+ inch" was the only one in the set
+  and no deep dive carries it, so it goes with the rebuild and belongs in
+  the tank setup guide next.
+
+All filed in docs/READER_LOG.md.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | the temperature line | Tank setup | n/a, every hub row now links its source |
+| Encyclopedia | "they live in groups of 10-15 individuals" | Enrichment | No link slot |
+| Cost | the legal paragraph | Legal guide | Yes |
+| Handling | "A lone glider is more stressed, more defensive, and genuinely harder to bond with" | Enrichment guide | Yes |
+| Health issues | "feeding a properly balanced diet like a commercial sugar glider diet from the start" | Feeding guide | Yes, anchored on "a properly balanced diet" since the next phrase is already an affiliate link |
+| Tank setup | "A bonding pouch doubles as this resting spot and is also the starting point for taming" | Handling guide | Yes |
+| Feeding | "Hind-leg weakness, tremors, or paralysis are emergency signs" | Health issues guide | Yes |
+| Enrichment | "Do not improvise the diet, since nutritional disease is common in this species" | Feeding guide | Yes |
+| Legal | none needed | | n/a |
+
+Six added, one sibling link per article.
+
+### Trust
+
+The reader doubted the feeding guide's oxalate list, which bundles
+"carrots, beets, pears, lettuce, figs, and collard greens" with spinach
+as calcium blockers. Checked against that guide's own cited source and
+left exactly as it stands: VCA's sugar glider feeding page states it
+verbatim, "Avoid fruits and vegetables known to be high in oxalates, as
+they will reduce calcium absorption. These include raspberries,
+strawberries, blackberries, spinach, carrots, beets, pears, lettuce,
+figs, and collard greens." The article is copying a veterinary hospital
+faithfully, so this is a nutrition argument with the source rather than a
+site defect. Recorded here so the next pass does not re-open it without
+new evidence. The reader's second doubt, the hub asserting self-mutilation
+as near-inevitable, was real and is fixed by the rebuild. The sentence
+that most convinced it a keeper wrote the set, from enrichment: "The test
+is whether a glider can get from the bottom to the top and across the
+cage without touching the bars."
+
+### Numbers decided, both sides and the source that won
+
+- Glide distance. The hub's funFact said 150 feet, the encyclopedia 165.
+  Opened sources: the Australian Museum gives "glide up to 50 m between
+  trees", which is about 165 feet; Animal Diversity Web gives "up to 45
+  meters", about 148. Both sit in the museum and university tier, and the
+  Australian Museum is the species-specific one for an Australian
+  marsupial, so 165 wins and the hub's funFact moved to it. No deep dive
+  states a glide distance, so nothing else changed.
+- Adult weight. The encyclopedia gave "4-5.5 oz", which is about 113 to
+  156 grams and excludes a normal adult female. The feeding guide gives
+  "Adult males typically weigh 100 to 160 grams and adult females 80 to
+  130 grams", and its cited veterinary source is where that came from.
+  The deep dive wins, and the encyclopedia's adultSize now carries the
+  same two ranges in grams.
+- Oxalate list. Nothing changed, verified against the source, as above.
+
+### Encyclopedia
+
+One field changed on `sugar-glider` in
+src/lib/data/encyclopedia/smallMammals.js, nothing else in the file
+touched: `adultSize`, from "5-6 inches (13-15 cm) body; 4-5.5 oz" to
+"5-6 inches (13-15 cm) body; males 100-160 g, females 80-130 g". The body
+length half is unchanged and matches the deep dives. `wildLifespan`
+already uses the "not well documented in the wild" pattern and was left
+alone.
+
+### Also fixed
+
+- The cost guide's legal paragraph, which named three bans and then said
+  "Some other sources also flag additional states and specific cities".
+  It now carries the legal guide's own list, California, Alaska, Hawaii,
+  Pennsylvania, the District of Columbia, New York City, New Jersey, and
+  New Mexico, and links it, the same deferral the Russian tortoise cost
+  guide made to its legal guide.
+- Source narration in the feeding guide: "VCA's balanced framework", "VCA
+  specifically names", "per VCA", "Some breeder guidance calls for daily
+  dusting, while other veterinary sources recommend", "with some sources
+  citing 1.5:1 to 2:1", and the two FAQs carrying the same shapes. Every
+  figure and every hedge kept.
+
+### Dates
+
+lastUpdated bumped on the cost guide, whose legal paragraph gained four
+jurisdictions. Not bumped on feeding, tank setup, handling, health
+issues, enrichment, or legal: links and de-narration only, no number or
+claim moved.
+
+### Open
+
+- The seven gaps above, all in docs/READER_LOG.md, with the wheel
+  diameter and a second-glider introduction the two the rebuild made more
+  visible.
+- The health issues guide is thin outside metabolic bone disease: dental
+  disease gets one sentence and no signs, which is why the emergency card
+  has nothing to copy for it.

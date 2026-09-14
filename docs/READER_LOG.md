@@ -3315,3 +3315,89 @@ First two changes: rebuild the hub from the deep dives, or cut its numbers entir
 - Acclimation: what the first week with a new tokay should look like.
 - Recapturing an escaped tokay, given a fast, arboreal, biting animal.
 - Feeding as its own deep dive; only the hub covers schedule, prey size, and gut-loading.
+
+## Sugar glider (2026-09-14)
+
+One Opus 5 agent, nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal), about 88k tokens. Full
+agent output below, unedited.
+
+---
+
+## 1. Page by page
+
+- **00 Care guide hub.** Finished it. Actionable: cage minimum, temp band, shopping checklist, the "never alone" rule. Grade **B-**, dragged down by numbers that the deep dives contradict.
+- **01 Encyclopedia.** Finished it, fast. Actionable: nothing, and it does not pretend otherwise. The 2019 PeerJ haplotype passage is the only place in the set I learned where US gliders came from. Grade **B+**.
+- **02 Cost guide.** Finished it. Actionable: $200 to $500 each, pair, $500 to $1,200 setup, $30 to $60 monthly, $200 emergency float. Grade **B**.
+- **03 Handling.** Finished it. Actionable: several days settling, pouch first, 1 to 2 hours daily, back off at crabbing. Grade **A-**.
+- **04 Health issues.** Finished it. Actionable: the symptom list, and "do not just add calcium." Thin on everything that is not MBD (dental disease gets one sentence). Grade **B-**.
+- **05 Cage setup.** Finished it. Actionable: dimensions, half-inch bar spacing, axle-free wheel, solid bottom, fleece cover. Grade **A-**.
+- **06 Feeding.** Finished it, the densest page here. Actionable: the thirds framework, 15 to 20% body weight, evening feeding, the avoid list, named diets. Grade **A**.
+- **07 Enrichment.** Finished it. Actionable: the priority order and the no-touching-the-bars test. Grade **A**.
+- **08 Legal.** Finished it. Actionable: I can tell whether I may legally own one. Grade **A**.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place. It is natural history the deep dives never touch, and it is short.
+
+The hub does not. It restates the deep dives at lower resolution and gets numbers wrong doing it.
+
+- Cage. Hub: "minimum 24x24x36" aviary-style cage." Setup: "A minimum of roughly 30 by 18 by 36 inches for a pair, though many current keepers recommend going larger still, 24 by 24 by 48 inches or more."
+- Temperature. Hub: "Temperature must stay between 75 and 85 degrees F." Setup: "75 to 88°F is the comfortable range."
+- Cage cost. Hub table: "24x24x36 in aviary-style cage | $150 | $300." Cost guide: "Tall cage, sized for a genuinely vertical, climbing pair | $200 - $400."
+- Glide. Hub: "can glide up to 150 feet." Encyclopedia: "glide up to 165 feet."
+- Diet brand. Hub checklist: "Commercial sugar glider diet (TPG or Wombaroo)." The feeding deep dive never mentions TPG at all, listing "Leadbeater's mixture, Bourbon's Modified Leadbeater's (BML), High Protein Wombaroo (HPW), Critter Love Complete, and Exotic Nutrition."
+- Certainty. Hub: a lone glider "frequently develops self-mutilation behaviors." Enrichment: "the solitary animals in its sample were healthy" and the behaviors "not observed."
+
+## 3. The set as a whole
+
+Yes, mostly. I could check the law, budget, buy a cage, kit it out, build a feeding plan, and know what an emergency looks like. Still missing: how to introduce a second glider, how to heat a room to 75 to 88°F, how often to clean, how to vet a breeder, how to glider-proof a room for out-of-cage time, and vacation cover.
+
+Questions answered on another page without the text saying so:
+
+- Cost guide's legal section is answered in full by the legal guide. No link.
+- Health guide's "feeding a properly balanced diet like a commercial sugar glider diet from the start" is the entire feeding guide. No link.
+- Setup's bonding pouch sentence is the handling guide. No link.
+- Hub's "Only exotic veterinarians ... can provide appropriate care" is partly the shared vet-transport guide.
+
+## 4. Overlap and conflict across deep dives
+
+I read the pair requirement four times and MBD three times (health, feeding, hub), in near-identical words. Conflicts:
+
+- Dishes. Cost guide budgets "hides, a glider-safe wheel, dishes, enrichment." Enrichment: "Foraging at height, never a dish."
+- Wheel size. Hub: "Solid exercise wheel (12+ inch)." Setup and enrichment say only "large" and never give a diameter, so the one number I can shop with sits on the page least likely to be right.
+- Temperature floor. Hub: "cannot tolerate temperatures below 65 degrees F." Handling: "keep the space above roughly 68°F during sessions." Not contradictory, but two floors with no relationship stated.
+- Lifespan. Hub and cost say 10 to 15; encyclopedia says "up to 17.8 years recorded in captivity."
+
+## 5. One link per page
+
+- **Hub:** "Temperature must stay between 75 and 85 degrees F." Point to the cage setup guide.
+- **Encyclopedia:** "Highly social in the wild, they live in groups of 10-15 individuals." Point to enrichment.
+- **Cost:** "Sugar gliders are banned outright in California, Hawaii, and Alaska, and Pennsylvania requires a special permit to keep one." Point to the legal guide. It links a hedgehog cost page instead.
+- **Handling:** "A lone glider is more stressed, more defensive, and genuinely harder to bond with than one kept with a companion." Point to enrichment.
+- **Health:** "feeding a properly balanced diet like a commercial sugar glider diet from the start." Point to feeding. Biggest miss in the set.
+- **Setup:** "A bonding pouch doubles as this resting spot and is also the starting point for taming." Point to handling.
+- **Feeding:** "Hind-leg weakness, tremors, or paralysis are emergency signs." Point to health issues.
+- **Enrichment:** "Do not improvise the diet, since nutritional disease is common in this species." Point to feeding.
+- **Legal:** none needed. It already links three relevant places.
+
+## 6. Trust
+
+What made me doubt: the oxalate list in the feeding guide bundles "carrots, beets, pears, lettuce, figs, and collard greens" with spinach as calcium blockers, which is wrong for several of those and odd for a page whose whole subject is calcium. Second, the hub asserting self-mutilation as near-inevitable while the enrichment guide says the published evidence does not support that.
+
+Most convincing sentence, from enrichment: "The test is whether a glider can get from the bottom to the top and across the cage without touching the bars." Nobody writes that who has not watched one.
+
+## 7. Set grade
+
+**B.** The deep dives are strong and honest; the hub sitting in front of them contradicts them on size, temperature, price, and diet brand, and the pages almost never link each other.
+
+First two changes: rewrite the hub's numbers to match the deep dives, or delete them and let the hub point. Then add the two missing links, health to feeding and cost to legal.
+
+## Not covered anywhere
+
+- How to introduce a second glider to an existing one, including quarantine.
+- How to hold a room at 75 to 88°F, and what heat source is safe.
+- Cage and pouch cleaning frequency.
+- How to choose a breeder or rescue, and what a healthy glider looks like at purchase.
+- Glider-proofing a room for out-of-cage time, and recovering an escaped glider.
+- Who cares for them when you travel.
