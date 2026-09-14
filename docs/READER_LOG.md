@@ -3987,3 +3987,97 @@ First two changes: make the hub match the tank setup guide on heat source, tempe
 - Enclosure cleaning cadence: spot-clean frequency and full substrate change interval.
 - What to do when a milk snake escapes, on a set of pages that calls it an escape artist five times.
 - Handling technique itself: how to lift, session length, the first week home.
+---
+
+# Gargoyle Gecko: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch H. Raw and unedited.
+
+Read all eight files in order. Review below.
+
+---
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, and it is the most actionable single page: sizes, temps, costs, checklist. But it is also where the numbers go wrong. **B-**
+- **01 Encyclopedia.** Finished it, short and genuinely interesting on the 2012 genus split. Nothing to act on, and it contradicts itself. **C+**
+- **02 Cost.** Finished it. I can budget from it today: gear table, $280 to $745 all-in, vet tiers, monthly food. **A-**
+- **03 Handling.** Finished it. Concrete plan: wait two weeks, 5 minutes every other day, work to 15, handle low. **A-**
+- **04 Health.** Finished it. Symptom lists plus the causes, and a clear vet trigger list. Best page in the set. **A**
+- **05 Tank setup.** Finished it. I could build the enclosure from this alone. **A**
+- **06 Feeding.** Finished it, and it is the only page that tells me where sources disagree instead of picking one and hiding it. **A**
+- **07 Enrichment.** Finished it. Honest about having no species research, and the priority list is usable. **B+**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: natural history, the Bavay/Bauer taxonomy, why captive stock exists at all. None of that is in the deep dives. It also contradicts itself: quick facts say "Conservation: Vulnerable (IUCN)" while the history says "The IUCN still rates the species Least Concern." And "the regrown version is smooth and bumpy" cannot be both.
+
+The hub mostly repeats, in shorter and looser form, what the deep dives say better, and it disagrees with them:
+
+- Temperature. Hub: "Temperature should stay between 72 and 80 degrees F during the day... temperatures above 85 degrees F can be fatal." Tank setup: "Comfortable range is 72 to 78°F during the day... sustained temperatures above about 82°F cause real stress."
+- Insects. Hub diet section: "Supplement with live feeder insects 1 to 2 times per week." Hub FAQ: "live insects should be offered 2 to 3 times per week." Feeding guide: "once a week for adults."
+- Supplements. Hub: "Dust insects with calcium w/D3 2 to 3 times per week." Feeding: "dust with a calcium supplement without D3 for most feedings, with a D3-inclusive product periodically."
+- Handling time. Hub: "Sessions of 10 to 20 minutes a few times per week." Handling: "Start with 5-minute sessions every other day, working up to about 15."
+- Time of day. Hub: "Handle gently at dusk when they are naturally alert." Handling: "Handling during the day, when gargoyle geckos are naturally sleepier, also tends to go smoother than an evening session."
+- Temperament. Hub: "they rarely jump suddenly." Handling: "Young gargoyle geckos are skittish and jumpy, quick to leap at the slightest disturbance."
+- Enclosure. Hub: "An 18x18x24" or larger enclosure works well." Tank setup calls that the minimum and 24x24x24 the ideal. The cost table prices only the minimum.
+- Tail. Hub: "The tail partially regenerates." Handling: "fully functional."
+- The hub's entire Enrichment section is about handling. The enrichment guide says "do not treat handling as enrichment for a species that drops its tail."
+
+## 3. The set as a whole
+
+Yes, I could set one up, buy it, feed it, and spot trouble. Setup, temperature ceiling, humidity cycle, diet, and the vet triggers are all covered well.
+
+Still missing: how to choose a healthy animal at purchase and what to inspect; a cleaning and maintenance schedule; sexing, and what a lone female laying infertile eggs means; first aid for a fresh tail drop; a scale, despite feeding saying "Regular weighing is the most objective way to catch a real problem early" and no page listing one in gear or cost; cleanup crew cost for the bioactive option that two pages recommend.
+
+Questions raised on one page and answered silently on another:
+
+- Health: "non-particulate substrate matters for this species." The substrate answer is in tank setup, unlinked.
+- Feeding: "a warm side that runs too cool slows digestion." Tank setup is the page that says whether you have a warm side at all, and says most homes need no heat. Unlinked, and arguably in conflict.
+- Cost lists "UVB bulb replacement." Tank setup holds the bulb spec and UVI target. Unlinked.
+- Health raises floppy tail syndrome; tank setup's clutter section is the fix. Tank setup links health, health never links back.
+- Hub: "Females should not be paired with males until they reach at least 40 grams." Nothing anywhere follows that up.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice: glass-climbing and floppy tail syndrome (tank setup and handling), tail regrowth (handling, hub, encyclopedia), solo housing (handling, tank setup, enrichment), the wet-dry cycle (tank setup and health).
+
+Real conflicts:
+
+- Substrate. Health: "Impaction... is linked to ingesting loose substrate, which is why non-particulate substrate matters for this species." Tank setup: "Coconut fiber (like Zoo Med Eco Earth) works well for humidity retention." Coconut fiber is loose. Tank setup's own avoid list is "sand, wood chips, and gravel." Those two pages are not applying the same rule.
+- Heat. Tank setup: "Most homes need no dedicated heat source at all." Feeding: "An enclosure that's too cool... a warm side that runs too cool." There is no warm side in the tank setup.
+- Bulb life. Cost FAQ: "Add a UVB bulb replacement every 6 to 12 months." The cost table lists it as an annual line item.
+
+## 5. One link per page
+
+- **Hub.** None. The Deep Dive list already carries every one of these.
+- **Encyclopedia.** "If threatened, it can drop and partially regenerate its tail" should go to the handling guide, which is where partial becomes "fully functional."
+- **Cost.** "this species doesn't need a dedicated heat source in most homes" should go to the tank setup guide.
+- **Handling.** "gargoyles climb glass poorly and need more grippable branches instead" should go to the tank setup guide.
+- **Health.** "which is why non-particulate substrate matters for this species" should go to the tank setup guide's substrate section.
+- **Tank setup.** "a complete powdered diet supplies vitamin D3" should go to the feeding guide.
+- **Feeding.** "a warm side that runs too cool slows digestion and drops appetite" should go to the tank setup guide.
+- **Enrichment.** "An 18x18x24 terrarium is a reasonable adult footprint" should go to the tank setup guide. This page links out to two other species and to none of its own.
+
+## 6. Trust
+
+What made me doubt: the encyclopedia rating the species Vulnerable and Least Concern on one screen. The 2024 genome study asserted flatly with no author or journal. "One specialist source" and "one detailed care sheet" never named, so I cannot weigh them. And the hub disagreeing with its own FAQ on insect frequency.
+
+The sentence that convinced me a keeper wrote this: "Check the two calcium sacs under the throat, depleted white sacs are a visible warning sign worth checking regularly." That is something you learn by looking at the animal, not by rewriting care sheets.
+
+## 7. Set grade: B
+
+The five deep dives are strong, specific, and unusually honest about uncertainty. The hub sitting in front of them is looser and contradicts them on numbers a beginner will act on first.
+
+First two changes: rebuild the hub from the deep dives so every temperature, session length, insect frequency, and supplement schedule matches, and settle the substrate question between health and tank setup in one voice.
+
+## Not covered anywhere
+
+Checked against the Health and More list. Emergency and cold snaps, shedding mechanics, Salmonella, stool and hydration checks, thermostats, and quarantine are all covered by the shared guides. Remaining:
+
+- How to choose a healthy gargoyle gecko at purchase and what to inspect before paying.
+- Routine cleaning and enclosure maintenance schedule.
+- Sexing, and what to do when a lone female lays infertile eggs.
+- First aid and wound care for a fresh tail drop.
+- A scale, and target weights by age, despite weighing being called the best early warning.
+- Cleanup crew cost for the bioactive setup both the hub and tank setup recommend.

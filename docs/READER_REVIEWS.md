@@ -9210,3 +9210,161 @@ in three places. Opened it; the figures below are quoted from that page.
   fillable from work already done.
 - "Escape artist" appears on five pages in this set and no page says what
   to do about it.
+
+## Gargoyle Gecko (2026-09-14, batch H, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment). One Opus 5 agent. The reader
+read the legacy care sheet hub; the router hub was built from its
+findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The most actionable single page, and where the numbers go wrong. |
+| Encyclopedia | C+ | Genuinely interesting on the 2012 genus split, and it contradicts itself. |
+| Cost | A- | I can budget from it today. |
+| Handling | A- | Wait two weeks, 5 minutes every other day, work to 15, handle low. |
+| Health issues | A | Best page in the set. |
+| Tank setup | A | I could build the enclosure from this alone. |
+| Feeding | A | The only page that tells me where sources disagree instead of picking one and hiding it. |
+| Enrichment | B+ | Honest about having no species research, and the priority list is usable. |
+
+Set grade: B. "The five deep dives are strong, specific, and unusually
+honest about uncertainty. The hub sitting in front of them is looser and
+contradicts them on numbers a beginner will act on first."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs gargoyle-gecko --strict` before
+the pass printed 18 topic groups with conflicts, the most of any species
+in batches F to H. Eight were the hub against a deep dive, and the hub
+disagreed with its own FAQ on one of them.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Temperature. Hub: "between 72 and 80 degrees F during the day...
+  temperatures above 85 degrees F can be fatal." Tank setup: "72 to 78°F
+  during the day... sustained temperatures above about 82°F cause real
+  stress." Both turned out to be wrong, see below.
+- Insects, the hub against itself. Diet section: "Supplement with live
+  feeder insects 1 to 2 times per week." Its own FAQ: "live insects
+  should be offered 2 to 3 times per week." Feeding guide: "once a week
+  for adults."
+- Supplements. Hub: "Dust insects with calcium w/D3 2 to 3 times per
+  week." Feeding: "a calcium supplement without D3 for most feedings,
+  with a D3-inclusive product periodically." The hub had the D3 schedule
+  backwards, which is the direction that causes harm.
+- Handling. Hub: "Sessions of 10 to 20 minutes a few times per week."
+  Handling: "Start with 5-minute sessions every other day, working up to
+  about 15."
+- Time of day. Hub: "Handle gently at dusk when they are naturally
+  alert." Handling: "Handling during the day, when gargoyle geckos are
+  naturally sleepier, also tends to go smoother."
+- Temperament. Hub: "they rarely jump suddenly." Handling: "Young
+  gargoyle geckos are skittish and jumpy, quick to leap."
+- Tail. Hub: "The tail partially regenerates." Handling: "fully
+  functional."
+- The hub's entire Enrichment section was about handling, where the
+  enrichment guide says "do not treat handling as enrichment for a
+  species that drops its tail."
+
+### The tank setup guide against its own three sources
+
+The most serious defect found in batches F, G or H, and neither the
+checker nor the reader could have caught it, since it needed the sources
+opened. The guide was titled "A Cool-Climate Species That Doesn't Want
+Your Heat Lamp" and argued that "Most homes need no dedicated heat source
+at all" and that "this is a temperature ceiling, not a floor." All three
+of its own cited sources say the opposite:
+
+- ReptiFiles, the species-specific page whose subject is this exact
+  topic: daytime "between 77-84°F", a basking spot targeting "84°F", and
+  air that "should never get higher than 86°F (30°C) or lower than 65°F
+  (18°C)". It answers the room-temperature argument directly, noting
+  geckos are ectothermic and benefit from a heat source.
+- The Bio Dude: "Basking area temperature: 82-85°F", "Cool zone
+  temperature: 70-75°F", and in terms: "There is a common misconception
+  that gargoyle geckos don't need a heat source, but this is false."
+- Reptiles Magazine: "Gargoyle geckos like temperatures of 78 to 82
+  degrees Fahrenheit during the day," heated by "a low wattage
+  incandescent bulb or a ceramic heat emitter... over one side of the
+  tank so that the temperature of basking areas (branches) reaches the
+  desired range."
+
+Two of the three name the no-heat belief as a misconception. The guide
+was publishing it as its headline. Rewritten to the reconciled position:
+a gradient with a cool end around 70 to 75°F and a basking spot around 82
+to 84°F, ambient at or below 82, a 65°F floor, and a hard 86°F ceiling.
+The title, excerpt, description, seoDescription, figure caption, FAQ and
+closing paragraph all carried the old claim and all changed. The cost
+guide's "this species doesn't need a dedicated heat source in most homes"
+went with it.
+
+This also resolves a conflict the reader flagged and could not settle:
+the feeding guide's "a warm side that runs too cool slows digestion"
+described a warm side the setup guide said not to build. The feeding
+guide was right.
+
+### Deep dives against each other
+
+- Substrate. Health: "Impaction... is linked to ingesting loose
+  substrate, which is why non-particulate substrate matters for this
+  species." Tank setup recommends coconut fiber, which is loose, and its
+  own avoid list is "sand, wood chips, and gravel." The reader: "Those
+  two pages are not applying the same rule." The health guide's blanket
+  claim has no source behind it and the setup guide's position is backed
+  by two of its three (Reptiles Magazine's peat-based soil mix, The Bio
+  Dude's bioactive layering), so the health guide now names the sharp and
+  indigestible particles as the risk and notes an arboreal species is at
+  lower risk than a ground-dweller to begin with.
+- Bulb life. Cost FAQ: "every 6 to 12 months." Cost table: an annual line
+  item. The FAQ now says annually is the conservative end of that window.
+
+### Encyclopedia
+
+Three fields, all researched.
+
+- `conservation` read "Vulnerable (IUCN)" while the same entry's history
+  paragraph said "The IUCN still rates the species Least Concern." The
+  IUCN Red List page itself returns 403 to an automated fetch, but
+  Wikipedia gives Least Concern citing IUCN 3.1 and the GBIF taxon record
+  agrees. Corrected to Least Concern. The likely origin is the crested
+  gecko entry directly above it in the same file, which is genuinely
+  Vulnerable.
+- `overview` said the gecko "can drop and partially regenerate its tail,
+  though the regrown version is smooth and bumpy." The reader: "cannot be
+  both." The handling guide, citing Lozito et al. (2024) in Gigabyte,
+  says gargoyles regenerate where crested geckos cannot, and the regrown
+  tail is "prehensile and cartilage-based rather than bone, with somewhat
+  asymmetrical scales, but fully functional." A peer-reviewed paper
+  outranks everything, so the overview now matches it.
+- `wildLifespan` read "15-20 years", a captive figure in the wild field,
+  the fourth instance of this defect in two batches after hedgehog,
+  veiled chameleon and milk snake. No source gives a wild figure for this
+  species. Rewritten to the form the crested gecko and African fat-tail
+  entries in the same file already use.
+
+### Also fixed
+
+Four of the reader's eight recommended links. The setup guide was already
+at the one-sibling cap on a pre-existing link to the health guide, so its
+suggested pointer to the feeding guide was dropped rather than the
+existing one; the hub needed none; and the encyclopedia carries no
+in-body links.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: choosing a
+  healthy animal at purchase, a cleaning schedule, sexing and what a lone
+  female laying infertile eggs means, first aid for a fresh tail drop, a
+  scale and target weights by age, and cleanup crew cost for the
+  bioactive option two pages recommend.
+- The scale is the pointed one: the feeding guide calls regular weighing
+  "the most objective way to catch a real problem early" and no page
+  listed one in gear or cost. It is on the router hub's buy list now,
+  which is a partial fix, not a real one.
+- The hub's "Females should not be paired with males until they reach at
+  least 40 grams" had no deep dive behind it and no page follows it up.
+  Retired rather than carried as an unsourced row, and filed as a gap.
