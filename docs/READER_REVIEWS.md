@@ -9084,3 +9084,129 @@ had already spent its one sibling link on the handling guide.
   fine, and then no page in the set says what to do about it. The shared
   pH, GH and KH guide is written around not chasing numbers in a
   coldwater tank and does not promise a softening method.
+
+## Milk Snake (2026-09-14, batch H, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, legal, and the milk snake vs corn snake
+comparison). One Opus 5 agent. The reader read the legacy care sheet hub;
+the router hub was built from its findings the same day. No feeding guide
+exists for this species, so the legacy hub's diet prose was the set's
+only feeding content, the third species in two batches after tokay gecko
+and California kingsnake.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | The only page with a feeding schedule, and it contradicts the deep dives on the two things I would buy first. |
+| Encyclopedia | B- | Earns its place on one paragraph, the motion-camouflage argument. |
+| Cost | B | A real budget and a buy list. |
+| Handling | C+ | Never cohabit, do not handle mid-shed. No actual technique. |
+| Health issues | B+ | Symptoms and which ones mean vet today. |
+| Tank setup | B+ | Dimensions, temps, substrate, cohabitation. |
+| Enrichment | A- | Cover across the whole floor, priority order. |
+| Legal | A | Better than anything else I have read on the topic. |
+| vs Corn snake | C | Skimmed the back half. Act on: nothing. |
+
+Set grade: B-. "Strong individual pages, a legal guide better than
+anything else I have read on the topic, undercut by a hub that disagrees
+with its own deep dives on heat and enclosure size."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs milk-snake --strict` before the
+pass printed 11 topic groups with conflicts. The reader found one the
+checker could not: adult size had four different answers across four
+pages, because three of them were phrased in units the grouping never
+put side by side.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Heating, and the reader's sharpest point. Hub: "a warm end (85 to 88
+  degrees F surface temperature via UTH on thermostat) and a cool end (72
+  to 75 degrees F)." Setup: "Basking surface 85 to 90°F... A halogen
+  flood bulb positioned over a basking stone is the commonly recommended
+  heat source for this species." The reader: "The hub sells me a UTH as
+  the primary heater, the deep dive calls the UTH a supplement." The
+  shopping checklist sold the same wrong thing.
+- Enclosure. Hub: "A 3x1.5x1.5 ft to 4x2x2 ft enclosure suits most adult
+  milk snakes." Setup: "the minimum adult enclosure at 48 inches long by
+  24 inches wide by 24 inches tall." The hub's low end was below the deep
+  dive's minimum.
+- Setup cost. The hub's table totalled roughly $208 to $430 against the
+  cost guide's "Roughly $300 to $600", because the hub was pricing a
+  glass tank and the cost guide a PVC vivarium, and neither said so.
+- Adult size, four ways. Hub body: "over 5 ft (Sinaloan milk snake)."
+  Hub FAQ: "Sinaloan milk snakes can reach 4 to 5 feet." Encyclopedia:
+  "2-4 feet." vs Corn: "24-36 in (some larger)."
+- Lifespan, three ways. Hub "12 to 20 years", cost guide "commonly live
+  20 years or more", vs Corn "15-20 years, some 25+".
+
+### Deep dives against each other
+
+- The mimicry story itself, which no checker would ever catch. Cost guide
+  states it flat: "evolved to resemble the venomous eastern coral snake."
+  The encyclopedia argues against it: "Milk snakes live across a range
+  that includes large areas where no coral snake occurs at all, which is
+  difficult to square with mimicry as the whole explanation." And the vs
+  Corn table widened the model to "coral snake/copperhead", which no
+  other page supports and which the cited mimicry research (Harper and
+  Pfennig, on coral snake mimicry) does not either. The copperhead is
+  gone; the encyclopedia's hedge stands, since it is the better-argued
+  position and the cost and handling guides both already say the
+  resemblance deters predators rather than claiming it is the only
+  explanation.
+
+### Numbers decided, both sides and the source that won
+
+The setup guide cites exactly one source, ReptiFiles, and drifted from it
+in three places. Opened it; the figures below are quoted from that page.
+
+- Cool side. Guide 70 to 80°F against ReptiFiles' 75 to 80. Source wins.
+- Night floor. Guide "not below about 66°F" against ReptiFiles' 70 to 75.
+  Source wins, and 66 was the lowest figure anywhere in the set.
+- Subspecies length. Guide "Honduran and other larger subspecies can
+  reach 4 to 5 feet" against ReptiFiles, citing Markel: Eastern 36 to 45
+  inches, Pueblan 28 to 36, Honduran and Sinaloan both 40 to 48. Nothing
+  in the source reaches 5 feet. Animal Diversity Web agrees on the
+  broader picture: "In the United States lengths are most often 60 to 130
+  cm." Both the guide's 4-to-5-feet line and the vs Corn table's "24-36
+  in" are now the cited 28 to 48.
+- Lifespan. Encyclopedia wildLifespan read "10-22 years", a captive
+  figure in the wild field, the same defect the hedgehog and veiled
+  chameleon fixes corrected in batch G. Animal Diversity Web: "Specific
+  data on lifespan is not given, although it is known that one individual
+  caught as an adult lived another 21 years in captivity." The field now
+  says the wild figure is undocumented and gives the captive one.
+- Feeding. No feeding guide exists, so the setup guide gained a sourced
+  Diet Basics section: ReptiFiles' juveniles every 7 to 10 days, adults
+  every 10 to 14, prey no more than 1.5 times the snake's widest point or
+  roughly 10% of body weight, frozen/thawed over live, and a bowl big
+  enough to soak in.
+
+### Also fixed
+
+- "Other substrate quantities are available and a decent depth wants the
+  larger bag" in the enrichment guide, which the reader called "product
+  copy with the product missing". The same template fragment was cut from
+  the California kingsnake enrichment guide in batch G, so it is worth
+  grepping the rest of the enrichment set for it.
+- Five of the reader's nine recommended links. Two were skipped: the
+  encyclopedia carries no in-body links at all, and the legal guide's
+  suggested target was this species' own care guide hub, which RULES
+  forbids linking to.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: brumation
+  and winter feeding refusal, feeding mechanics beyond the new Diet
+  Basics section, choosing and buying, cleaning cadence, what to do when
+  the escape artist escapes, and handling technique itself.
+- The last is the most pointed. The reader graded the handling guide C+
+  because it has no pick-up method, no session length, and no first week,
+  which the California kingsnake handling guide does have. That is a
+  sibling page in the same genus with the same rules, so the gap is
+  fillable from work already done.
+- "Escape artist" appears on five pages in this set and no page says what
+  to do about it.

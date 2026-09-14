@@ -3901,3 +3901,89 @@ Most convincing sentence, from the feeding guide: "Food that's too large gets ta
 - A cardinal tetra tankmate list, and what counts as a fin-nipper to avoid.
 - Humane euthanasia method for a confirmed neon tetra disease case, which the health guide recommends and never explains.
 - Breeding, or what to do with fry, given the species is described as hard to breed at scale.
+---
+
+# Milk Snake: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch H. Raw and unedited.
+
+Read all nine. Review below.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Act on: the full shopping checklist, temps, feeding interval, the 48 to 72 hour post-feed handling wait. Grade B.
+- **01 Encyclopedia.** Finished it, it is short. Act on: nothing, but the History paragraph on pattern as motion camouflage is the only genuinely new idea in the set. Grade B minus.
+- **02 Cost.** Finished it. Act on: a real budget and a buy list. Grade B.
+- **03 Handling.** Finished it. Act on: never cohabit, do not handle mid-shed. No actual technique: no pick-up method, no session length, no settling-in week. Grade C plus.
+- **04 Health.** Finished it. Act on: symptoms and which ones mean vet today. Grade B plus.
+- **05 Tank setup.** Finished it. Act on: dimensions, temps, substrate, cohabitation. Grade B plus.
+- **06 Enrichment.** Finished it fastest. Act on: cover across the whole floor, priority order. Grade A minus.
+- **07 Legal.** Finished it. Act on: check my state before buying. Grade A.
+- **08 vs Corn.** Skimmed the back half. Act on: nothing. Grade C.
+
+## 2. Hub and encyclopedia against the deep dives
+
+The encyclopedia earns its place on one paragraph only, the camouflage argument, which no other page mentions. Everything else in it is restated elsewhere.
+
+The hub does not earn its place. It is the only page with a feeding schedule and the only page with a post-feed handling wait, which is real value, but it contradicts the deep dives on the two things I would buy first.
+
+Heating. Hub: "Under-tank heater with thermostat" and "a warm end (85 to 88 degrees F surface temperature via UTH on thermostat) and a cool end (72 to 75 degrees F)." Tank setup: "Basking surface 85 to 90°F, cool side 70 to 80°F, nighttime not below about 66°F. A halogen flood bulb positioned over a basking stone is the commonly recommended heat source for this species." The hub sells me a UTH as the primary heater, the deep dive calls the UTH a supplement.
+
+Enclosure. Hub: "A 3x1.5x1.5 ft to 4x2x2 ft enclosure suits most adult milk snakes." Tank setup: "the minimum adult enclosure at 48 inches long by 24 inches wide by 24 inches tall." The hub's low end is below the deep dive's minimum.
+
+Setup cost. Hub table totals roughly $208 to $430. Cost guide: "Roughly $300 to $600." The hub is budgeting a glass tank, the cost guide a PVC vivarium. Neither says so.
+
+Size. Hub: "over 5 ft (Sinaloan milk snake)." Hub FAQ: "Sinaloan milk snakes can reach 4 to 5 feet." Encyclopedia: "2-4 feet." vs Corn: "24-36 in (some larger)." Four numbers for one animal.
+
+Lifespan. Hub "12 to 20 years," cost guide "commonly live 20 years or more," vs Corn "15-20 years, some 25+."
+
+## 3. Could I keep one
+
+Almost. I can size and build the enclosure, budget it, recognize the main illnesses, and check my state's law. What is missing:
+
+- Feeding beyond the hub's one line. No prey size by snake weight, no thawing method, no what to do with a refusal. There is no feeding deep dive in either sidebar list.
+- Brumation. A temperate snake that may stop eating in winter, and nothing says so.
+- Buying. Breeder versus shop, what a healthy hatchling looks like, shipping.
+- Cleaning cadence. The hub bills annual substrate replacement but no page says how often to spot-clean or strip it.
+- What to do when the escape artist escapes.
+
+Questions raised on one page and answered on another, unsaid: the health guide's respiratory causes ("temperatures running too cool, humidity that's off") never point to tank setup where the numbers are. The health guide's obesity line never points to the Sexing, Growth and Body Condition guide. The handling guide's mid-shed warning never points to either shed guide. The cost guide's purchase section never points to the legal guide, which is the page that tells me I may not legally buy one in Wisconsin.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: Batesian mimicry and the rhyme (hub twice, encyclopedia, cost fun fact, handling in full, vs Corn in full). Never cohabit (handling, tank setup, enrichment, hub). Escape artist (four pages).
+
+Conflicts: the heating and enclosure splits above. Also the mimicry story itself. Cost guide states it flat: "evolved to resemble the venomous eastern coral snake." The encyclopedia undercuts it: "Milk snakes live across a range that includes large areas where no coral snake occurs at all, which is difficult to square with mimicry as the whole explanation." And vs Corn widens the model to "coral snake/copperhead," which no other page supports.
+
+## 5. One link per page
+
+- Hub: none needed, both sidebar lists carry everything.
+- Encyclopedia: the History paragraph on the coral snake argument, to the handling guide, which is where the rhyme's limits live.
+- Cost: "Common Pueblan milk snakes run $70 to $100." To the legal guide.
+- Handling: "Handling a snake mid-shed, when skin is more vulnerable." To How Snakes Actually Shed.
+- Health: "From temperatures running too cool, humidity that's off, or poor ventilation." To the tank setup guide.
+- Tank setup: "A halogen flood bulb positioned over a basking stone is the commonly recommended heat source for this species." To Reptile Heating and Thermostats.
+- Enrichment: "Do not handle a hiding snake to check on it." To the handling guide.
+- Legal: "most people who keep one never think twice about whether it's legal." To the care guide hub.
+- vs Corn: "Both species do well in a similarly sized enclosure, eat appropriately sized rodents on a similar schedule." To the milk snake tank setup guide.
+
+## 6. Trust
+
+Doubts: the heater contradiction between the page I land on and the page I read second. Four different adult sizes. And two sentences that read like unedited template output: "Sphagnum moss for moist hide" as a noun, and in the enrichment guide "Other substrate quantities are available and a decent depth wants the larger bag," which is product copy with the product missing.
+
+The sentence that convinced me a keeper wrote this: "If not, it will use two hides and nothing else, and you will conclude it wanted a smaller enclosure." Nobody writes that without having watched it happen.
+
+## 7. Set grade: B minus
+
+Strong individual pages, a legal guide better than anything else I have read on the topic, undercut by a hub that disagrees with its own deep dives on heat and enclosure size.
+
+First two changes: make the hub match the tank setup guide on heat source, temperatures, minimum enclosure, and setup cost, or delete those numbers from the hub. Second, write a feeding guide and link it from the hub's diet section.
+
+## Not covered anywhere
+
+- Brumation and winter feeding refusal in a temperate colubrid.
+- Feeding mechanics: prey size by snake weight, thawing method, refusal troubleshooting.
+- Choosing and buying: breeder versus shop, what a healthy animal looks like, shipping.
+- Enclosure cleaning cadence: spot-clean frequency and full substrate change interval.
+- What to do when a milk snake escapes, on a set of pages that calls it an escape artist five times.
+- Handling technique itself: how to lift, session length, the first week home.
