@@ -149,55 +149,76 @@ Chytrid fungus (Bd) quarantine protocols apply to all new animals: quarantine an
     image: "/assets/guides/pacman-frog.jpg",
     tagline: "The round, grumpy ambush predator that is essentially all mouth!",
     funFact: "Pacman frogs (horned frogs, genus Ceratophrys) have an extraordinarily powerful bite for an amphibian. Their bite force relative to body size is comparable to some predatory dinosaurs. They will attempt to eat anything that moves near them, including other frogs, small mice, and keepers' fingers.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "10-20 gallon terrarium", low: 40, high: 80 },
-        { item: "Deep coconut fiber or topsoil substrate", low: 15, high: 25 },
-        { item: "Low-wattage heat lamp/mat with thermostat", low: 30, high: 55 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Small shallow water dish", low: 5, high: 10 },
-        { item: "Feeding tongs (short, soft-tipped)", low: 8, high: 15 },
-      ],
-      annual: [
-        { item: "Gut-loaded live insects (dubia, crickets, earthworms)", low: 70, high: 130 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "Monthly substrate replacement", low: 30, high: 50 },
-      ],
-    },
-    sections: {
-      housing: "A 10 to 20 gallon terrarium is sufficient for a single adult. Pacman frogs are sedentary ambush predators that spend most of their time buried in moist substrate with just their eyes and mouth exposed. They do not need tall enclosures. They need deep (3 to 4 inch), very moist coconut fiber or organic topsoil substrate. The substrate must feel damp like a wrung-out sponge at all times. They absorb all their water through their skin and a dried-out Pacman frog will go into estivation (a state of dormancy) and potentially die. Temperature: 75 to 85 degrees F. Humidity: 70 to 90%.",
-      diet: `Pacman frogs eat with reckless, impressive aggression. Offer appropriately sized live or freshly deceased prey: dubia roaches, crickets, and nightcrawlers (earthworms are an excellent nutritional staple) form the primary diet. Occasional pinky mice for large adult frogs and waxworms as very occasional treats are acceptable. Prey should be no larger than the width of the frog's head.
-
-Adults eat every 3 to 4 days. Juveniles eat every 1 to 2 days. Dust prey with calcium w/D3 2 to 3 times per week and a reptile multivitamin once weekly. Use feeding tongs at all times - a Pacman frog's bite is strong enough to break skin. They strike at movement reflexively and will bite anything that moves near their face, including fingers.
-
-Gut-load all feeder insects 24 to 48 hours before offering. Remove uneaten prey promptly - prey left overnight in the enclosure stresses the frog and can cause unnecessary strikes and injury to the prey.`,
-      enrichment: `Pacman frogs are sedentary ambush predators - enrichment for this species is primarily about providing the correct environmental conditions rather than toys or interaction. The most important enrichment element is deep, moist substrate (3 to 4 inches of coconut fiber or organic topsoil) that allows complete burial with just the eyes and top of the head exposed. This is natural resting posture for a Pacman frog.
-
-Provide a small, shallow water dish large enough to soak in, and a hide for when the frog is not buried. Some leaf litter on the substrate surface adds natural texture and aesthetics. The frog will rearrange and bury through it naturally.
-
-Observe rather than handle. Pacman frogs are display animals - watching them hunt prey and seeing them emerge during their active periods (usually at night) is the primary enrichment for the keeper. Handle very minimally and only with feeding tongs within arm's reach at all times. Their bite can draw blood and they hold on tenaciously.`,
-      health: "Toxic out syndrome (TOS): this happens when a Pacman frog is kept on unsafe substrate (gravel, artificial turf with dyes, paper towels with chemicals). The frog absorbs toxins through the skin, causing neurological symptoms (spinning, thrashing, paralysis). Only use chemical-free substrates. Metabolic bone disease from lack of supplementation causes jaw deformities over time. Red-leg syndrome (bacterial infection) results from unsanitary water. Change the substrate monthly and use only dechlorinated tap water, never distilled or reverse-osmosis water, which lacks the electrolytes an amphibian needs.",
-      checklist: [
-        "10 to 20 gallon terrarium",
-        "3 to 4 inch deep damp coconut fiber or organic topsoil substrate",
-        "Digital thermometer and hygrometer",
-        "Calcium w/D3 + multivitamin supplements",
-        "Gut-loaded live insects (dubia, crickets, earthworms)",
-        "Feeding tongs (mandatory, they bite hard)",
-        "Dechlorinated tap water for substrate moisture and dish",
-        "Small shallow water dish",
-        "Low-wattage heat lamp or under-enclosure mat with thermostat",
-        "Monthly full substrate replacement",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Quarantine, water, and hygiene rows cite
+    // the shared amphibian and reptile guides in the sidebar's Health and More
+    // list. Built 2026-09-14 for the pacman frog set test
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure", value: "A 10 to 20 gallon terrarium works well for an adult, with 24x18x18 inches as an ideal. Floor space matters far more than height here, this isn't a climbing species.", source: "pacman-frog-tank-setup-guide" },
+        { label: "One per enclosure", value: "Always house one frog per enclosure. Pacman frogs are cannibalistic, and cohabitation isn't a workable option regardless of enclosure size.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Temperature", value: "Daytime around 75 to 85°F, with a slightly warmer basking area near 83°F, dropping to 65 to 75°F at night.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Heat source", value: "A side-mounted under-tank heat mat on a thermostat, or a low-wattage overhead bulb. Never place a heat mat under the tank: Pacman frogs burrow to the substrate floor, and a mat positioned underneath risks burning a frog that's buried directly on top of it.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 80% is the target range, maintained through moisture-retentive substrate and daily misting. Let it drop back toward the lower end of that range between mistings rather than keeping the enclosure constantly waterlogged.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Substrate", value: "3 to 4 inches of coco fiber or coco husk, kept moist enough for burrowing, with a light layer of sphagnum moss or leaf litter on top if you like. Avoid gravel, rocks, bark chips, and charcoal entirely.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Substrate changes", value: "Change the substrate every 2 to 3 months as waste builds up acidity, unless you're running a bioactive setup with a cleanup crew.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Lighting", value: "No special lighting is required. A standard 12-hour light, 12-hour dark cycle using a basic LED works fine. Low-level UVB is optional and can support vitamin D synthesis, but isn't necessary if the diet is properly supplemented.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Juveniles eat daily or every 1 to 2 days. Adults eat roughly 1 to 3 times a week.", source: "pacman-frog-feeding-guide" },
+        { label: "Portion", value: "No source gives a fixed prey count per feeding. Size prey no wider than the frog's own head, and judge portion by body condition, round but not visibly bloated.", source: "pacman-frog-feeding-guide" },
+        { label: "Diet", value: "The staple rotation is gut-loaded crickets, dubia roaches, and earthworms or nightcrawlers. Mealworms and waxworms work as occasional treats only. Rodents are for adults only, thawed, never live, never microwaved, roughly every other week and used sparingly.", source: "pacman-frog-feeding-guide" },
+        { label: "Gut-loading and supplements", value: "Gut-load feeder insects on a nutrient-dense diet for roughly 24 to 72 hours before offering them. Dust with calcium and vitamin D3 daily for juveniles and a few times a week for adults, plus a general reptile multivitamin about once a week.", source: "pacman-frog-feeding-guide" },
+        { label: "Feeding tool", value: "Feed with forceps, tongs, or by dropping food into a dish, never with your fingers. A Pacman frog genuinely cannot always distinguish a finger from prey.", source: "pacman-frog-handling-guide" },
+        { label: "Handling", value: "Keep sessions brief and infrequent. Support the frog gently from underneath, or grasp it gently but firmly around the base of the rear legs, and be ready for a sudden jump. Wash your hands thoroughly before and after.", source: "pacman-frog-handling-guide" },
+        { label: "Off food", value: "A frog that stays active, alert, and hydrated with normal-looking feces and stable weight is generally fine even while skipping meals. Weigh weekly and treat roughly 10% weight loss over a couple of weeks as a signal to act.", source: "pacman-frog-feeding-guide" },
+        { label: "Budget", value: "$15 to $100 for the frog itself, roughly $100 to $225 for the upfront setup, and a complete first setup, frog included, commonly totals around $225.", source: "pacman-frog-cost-guide" },
+        { label: "Vet costs", value: "An exotic or amphibian-experienced vet exam commonly runs $50 to $150, with a dedicated exotic emergency fee often starting around $250 at specialty hospitals.", source: "pacman-frog-cost-guide" },
+        { label: "Adult size", value: "Typically 4 to 7 inches, with females substantially larger than males, sometimes close to double the body mass.", source: "pacman-frog-handling-guide" },
+        { label: "Lifespan", value: "6 to 10 years is the most commonly cited range, and 10 to 15 years is achievable with excellent care.", source: "pacman-frog-cost-guide" },
+        { label: "Quarantine", value: "6 to 8 weeks per general veterinary guidance, landing closer to that range than to the shortest end. The clock resets, not just pauses, if the animal shows any illness partway through. Move a new amphibian in a container, never a net.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Water", value: "Dechlorinated tap water is the practical default, using a conditioner that neutralizes both chlorine and chloramine. Distilled and reverse-osmosis water are usually not electrolyte-balanced, and using either without rebalancing can be fatal to amphibians.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact with the frog, its enclosure, or its water. Never clean the enclosure or water dish in a kitchen sink or a shared bathtub. Children younger than 5 should not handle or touch amphibians or their environments.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
+    emergencyCard: {
+      source: "pacman-frog-health-issues-guide",
+      callNow: [
+        "A hard lump in the belly, bloating, and refusal to move, the signs of a blockage that isn't passing",
+        "A droopy jaw, bowed legs, and twitching",
+        "Red spots on the belly or thighs, cloudy eyes, and lethargy: quarantine the frog and get to a vet promptly",
+        "Severe swelling combined with an inability to right itself",
+        "A frog under about a year old going dormant",
+      ],
+      vetLine: "An exotic or amphibian-experienced vet, found before you need one. Severe swelling with an inability to right itself needs immediate veterinary attention rather than a wait-and-see approach.",
+    },
+    routes: [
+      { slug: "pacman-frog-cost-guide", line: "The frog $15 to $100, the modest setup this species actually needs, and the vet bill that impaction brings." },
+      { slug: "pacman-frog-tank-setup-guide", line: "Enclosure size, 75 to 85°F days, 60 to 80% humidity, and why the heat mat never goes underneath." },
+      { slug: "pacman-frog-feeding-guide", line: "Schedule by age, the staple rotation, gut-loading, and the eight reasons a Pacman frog stops eating." },
+      { slug: "pacman-frog-handling-guide", line: "Why this is a display animal, how to pick one up on the rare occasion you must, and sexing a mature frog." },
+      { slug: "pacman-frog-health-issues-guide", line: "Obesity, impaction, metabolic bone disease, red-leg, and the signs that mean a vet now." },
+      { slug: "pacman-frog-enrichment-guide", line: "What the amphibian research actually supports, the priority order, and reading body condition without touching the frog." },
+    ],
+    buyList: [
+      "10 to 20 gallon terrarium (24x18x18 inches if you want the ideal)",
+      "Coco fiber or coco husk substrate, enough for 3 to 4 inches",
+      "Sphagnum moss or leaf litter for the surface",
+      "Side-mounted heat mat on a thermostat, or a low-wattage overhead bulb",
+      "Digital thermometer and hygrometer",
+      "Shallow water dish that won't drown a burrowed frog",
+      "A basic hide",
+      "Short, soft-tipped feeding tongs",
+      "Water conditioner that neutralizes chlorine and chloramine",
+      "Calcium with D3 and a reptile multivitamin",
+      "Gut-loaded crickets, dubia roaches, and earthworms or nightcrawlers",
+    ],
     faqs: [
-      { q: "Do Pacman frogs bite?", a: "Yes, and it is not a warning nip - Pacman frogs have a strong, reflexive bite that can break skin. They strike at any movement near their face as an instinctive ambush response, and once they bite they tend to hold. Always use feeding tongs to offer prey and keep fingers away from their striking zone (within a body length in front of the frog). If a Pacman frog bites your finger: stay calm, lower the frog toward the ground, and gently press the frog's lower jaw downward - they release once they realize they haven't caught prey." },
-      { q: "How big do Pacman frogs get?", a: "Adults are typically 3 to 5 inches in diameter - roughly the size of a tennis ball. Females grow significantly larger than males; a large female Horned Frog (the most common species, Ceratophrys cranwelli or ornata) can reach 5 to 6 inches in diameter and weigh over 200 grams. Their near-circular shape - almost as wide as they are long - and their massive gape for their body size gives them their 'Pac-Man' nickname. Despite their impressive bite, they are completely sedentary and spend most of their lives buried up to their eyes in substrate." },
-      { q: "How often should I feed my Pacman frog?", a: "Adults: every 3 to 4 days is the standard recommendation. Juveniles and young frogs: every 1 to 2 days. Pacman frogs are prone to obesity from overfeeding - their sedentary lifestyle means they burn very few calories. Feed prey sized no larger than the width of the frog's head. A healthy adult Pacman frog should have a rounded but not pendulous abdomen and should show active interest in food at feeding time. If a frog consistently refuses food for more than 2 to 3 weeks, investigate environmental conditions (temperature, humidity, substrate moisture)." },
-      { q: "Why doesn't my Pacman frog move?", a: "This is almost certainly normal. Pacman frogs are sit-and-wait ambush predators: their entire strategy is to remain completely motionless, buried in substrate with only the top of their head exposed, and strike anything that moves within range. Extended periods of stillness - sometimes days at a time - are natural and healthy. As long as the frog is eating on schedule, maintaining weight, and shows alertness when approached, inactivity is expected behavior, not illness." },
-      { q: "What is estivation and how do I prevent it?", a: "Estivation is a drought-triggered dormancy where the Pacman frog seals itself in a mucus cocoon to prevent moisture loss during dry conditions. In captivity it is almost always caused by substrate that has dried out. The substrate must feel like a wrung-out sponge at all times - never allow it to dry. A frog found in estivation (rigid, cocooned, unresponsive) should be gently rehydrated in a shallow dish of dechlorinated lukewarm water for 20 to 30 minutes and the enclosure humidity corrected. Repeated estivation cycles shorten the frog's lifespan." },
-      { q: "How can I tell if my Pacman frog is male or female?", a: "The most reliable sign only shows up in mature, vocal males: a dark patch of loose skin on the throat, the vocal sac, which females don't have. A male calling - a distinctive buzzing chirp, most often at night or after rain-like misting - confirms it instantly. Outside of that, females tend to grow noticeably larger than males, but size alone isn't a reliable method for a single frog with nothing to compare it to." },
+      { q: "Can you put a heat mat under a Pacman frog's tank?", a: "No, never underneath. Pacman frogs burrow to the floor of the substrate, so a mat below the tank can burn a frog sitting right on top of it. Mount the mat on the side, on a thermostat, or use a low-wattage overhead bulb." },
+      { q: "What causes impaction in Pacman frogs, and is it serious?", a: "Yes, it can be fatal. A Pacman frog strikes explosively and often swallows whatever is on the ground with the prey: loose substrate, sand-coated feeders, or an item too big to pass. A hard lump in the belly, bloating, and refusal to move are the signs. Warm soaks sometimes clear a mild case, but a blockage that doesn't pass needs a vet." },
+      { q: "Why should you never hand-feed a Pacman frog?", a: "Because a Pacman frog can't reliably tell a finger from prey. The bite that follows a feeding mistake is a real, painful injury, not a nip. Feed with forceps, tongs, or by dropping food into a dish." },
     ],
   },
   {
