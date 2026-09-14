@@ -160,7 +160,7 @@ export const smallMammalEncyclopedia = [
       overview: "Sugar gliders are small marsupials native to Australia, New Guinea, and eastern Indonesia - more closely related to koalas and kangaroos than to flying squirrels, which they superficially resemble. They possess a membrane (patagium) stretching from wrist to ankle that allows them to glide up to 165 feet between trees. Highly social in the wild, they live in groups of 10-15 individuals and communicate through a range of calls, barks, and crabbing sounds.",
       origin: "Northern and eastern Australia, New Guinea, eastern Indonesia",
       habitat: "Tropical and temperate forest and woodland",
-      adultSize: "5-6 inches (13-15 cm) body; 4-5.5 oz",
+      adultSize: "5-6 inches (13-15 cm) body; males 100-160 g, females 80-130 g",
       wildDiet: "Nectar, pollen, tree sap, insects, and small vertebrates",
       wildLifespan: "Not well documented in the wild; up to 17.8 years recorded in captivity",
       conservation: "Least Concern (IUCN)",
