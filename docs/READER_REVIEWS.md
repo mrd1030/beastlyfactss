@@ -7050,3 +7050,182 @@ touched:
   alone: neither the reader nor the checker flagged them, both carry a
   real cross-species link, and rewriting them means asserting something
   new about the other species.
+
+## Zebra Finch (2026-09-14, batch F, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment). One Opus 5 agent, about 97k
+tokens. The reader read the legacy care sheet hub; the router hub was
+built from its findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | The weakest page, and the one the navigation lands on first. |
+| Encyclopedia | C+ | Nothing to act on, and its flock-size line is contradicted later in the set. |
+| Cost | B | Two birds minimum, $180 to $400 upfront, budgetable. |
+| Handling | A- | Net or towel, never the tail, do not force contact. |
+| Health issues | A- | A concrete symptom list worth calling a vet over. |
+| Tank setup | B+ | Dimensions, bar spacing, temperature, liner, all buyable. |
+| Feeding | A | Ratios, the teaspoon measure, no grit, cuttlebone. Best page in the set. |
+| Enrichment | A | The priority order and the what-not-to-do list are the most usable thing here. |
+
+Set grade: B. "Strong, sourced deep dives sitting under a hub that
+contradicts them."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs zebra-finch --strict` before the
+pass printed 10 conflicting topic groups. The real decisions: bar spacing
+(hub 1/2 inch against tank setup's 3/8), flight cage price (hub $60 to
+$120 against the cost guide's $120 to $220), cage dimensions (hub "at
+least 24 inches wide" against tank setup's 24 by 14 by 18), lifespan (hub
+5 to 10 in captivity, encyclopedia 5 to 7, cost guide adding a 3 to 5
+figure), and the pellet share stated twice on one page as two different
+sources' numbers. The rest were the cost guide's own per-seller prices,
+which are different figures rather than a conflict.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild:
+
+- Bar spacing. Old hub: "Bar spacing of 1/2 inch or less keeps a finch
+  from squeezing through or getting a head caught." Tank setup: "No wider
+  than 3/8 inch... That's tighter than the roughly 1/2 inch that works
+  for a canary." The hub was printing the canary figure, on the one
+  number a buyer acts on at the shop.
+- Flight cage price. Old hub setup table: "Flight cage (24-30 in wide):
+  $60 to $120." Cost guide: "The cage is the single biggest line item at
+  $120 to $220 for a quality flight cage." The two ranges did not overlap
+  at any point.
+- Cage dimensions. Old hub: "A flight cage at least 24 inches wide." Tank
+  setup: "at least 24 inches long by 14 inches wide by 18 inches tall as
+  a minimum for a pair." The hub had turned the length into the width.
+- Darkness. Old hub: "Cover the cage at night for a consistent 10 to 12
+  hours of darkness." Tank setup: "approximately 12 hours of light and 12
+  hours of darkness each day."
+- Diet framing. Old hub checklist: "Quality finch seed mix or pelleted
+  diet", an either/or. Feeding: "pellets make up roughly 70% of a finch's
+  diet... seed limited to about one level teaspoon per bird per day."
+- Vet cost. Old hub annual table: "Annual avian vet check: $40 to $70", a
+  figure no deep dive carries, against the cost guide's "an exam
+  typically costs more than a routine cat or dog visit."
+
+### Deep dives against each other
+
+- Wild flock size. Encyclopedia and tank setup both said wild zebra
+  finches "travel in flocks of dozens" up to a hundred or more birds.
+  Enrichment: "the commonest unit was a pair, 94.2 percent mixed-sex,
+  with groups of three to ten also frequent and anything larger
+  uncommon", citing a peer-reviewed field study. Both statements are
+  true of different things, aggregation at water against the unit that
+  actually forages and travels, and the clash was the word "travel".
+  Changed to "live in" on both pages, no figure touched, and tank setup
+  now links the enrichment guide at that sentence.
+- Pellet share. The feeding guide gave the figure twice, as two sources'
+  numbers set against each other. Settled to one statement, see Numbers
+  decided.
+- Perch placement. Tank setup: "several perches of varied diameter,
+  positioned with enough distance between them that the birds fly rather
+  than just hop across." Enrichment: "Site them at the ends of the flight
+  path, not through the middle of it." Not a conflict, the enrichment
+  guide is the more specific version of the same instruction. Left alone.
+
+### Gaps, checked against the Health and More list first
+
+- What to do when one bird of a bonded pair dies, and how soon to replace
+  it.
+- Quarantine-to-introduction sequencing for adding a bird to an existing
+  pair. The shared quarantine guide has the timeline, the enrichment
+  guide has the introduction advice, and nothing joins them.
+- A normal zebra finch weight in grams. The shared sexing and weight
+  guide is written around parrots, and the encyclopedia gives ounces.
+- What to do if a hen lays with no nest provided. The shared chronic egg
+  laying guide is scoped to budgies, cockatiels, and lovebirds.
+
+All four filed in docs/READER_LOG.md.
+
+### Recommended links, one per page
+
+| Page | Sentence | Link to | Added |
+|---|---|---|---|
+| Hub | "avian vets increasingly recommend building the diet around a pelleted food instead" | Pellet conversion guide | n/a, that hub prose is gone; the hub carries a Seed to pellets row instead |
+| Encyclopedia | "wild zebra finches travel in flocks of dozens to over a hundred birds" | Enrichment guide | No link slot, but the sentence was reconciled |
+| Cost | "a genuine flight cage that lets the birds fly the length of it rather than just hop between two perches" | Tank setup guide | Yes |
+| Handling | "reading this species' wellbeing from the outside is largely how you'll be interacting with it day to day" | Bird body language guide | Yes |
+| Health issues | "This is exactly why a cuttlebone is a non-negotiable part of the setup" | Feeding guide | Yes |
+| Tank setup | "a stable light cycle at home can inadvertently cue breeding behavior" | Photoperiod and sleep guide | Yes |
+| Feeding | the pellet-share sentence | Pellet conversion guide | Yes |
+| Enrichment | "do not let one bird lose condition unchecked" | Sexing, weight and body condition guide | Yes |
+
+Six added. Tank setup carries two, one shared (photoperiod) and one
+sibling (enrichment), which is inside the one-sibling cap. Cost and
+health issues each spend their one sibling link.
+
+### Trust
+
+The reader named the hub's bar spacing and cage price as the things that
+hurt, both being exactly what a buyer acts on, and flagged the cost
+guide quoting "very young, unweaned pairs at $29" as the budget option
+without saying whether buying unweaned finches is wise. Left as is, that
+is a content judgement rather than a number or a link. The sentence that
+most convinced it a keeper wrote the set, from handling: "Hold firmly
+enough to prevent escape but gently, too much pressure will make the bird
+gasp or squeal, a clear sign to ease up."
+
+### Numbers decided, both sides and the source that won
+
+- Captive lifespan. The cost guide said "commonly cited as 5 to 10 years
+  in captivity with good care, occasionally longer", the encyclopedia "5
+  to 7 years in captivity". Opened sources: Animal Diversity Web, the
+  cost guide's own citation, gives "Typical lifespan Status: captivity 5
+  to 7 years" and "Typical lifespan Status: wild 2 to 3 years" for
+  Taeniopygia guttata; PetMD's finch care sheet gives "5-10 years with
+  proper care, depending on species", a finch-wide figure rather than a
+  zebra finch one; Lafeber gives "about 3 to 5 years". Under the source
+  ranking a university museum database outranks a general care sheet, and
+  a species-specific figure beats a family-wide one, so the encyclopedia's
+  5 to 7 wins and the cost guide moved to it, in its body and in its vet
+  FAQ. Lafeber's lower figure is kept as "with some birds only reaching 3
+  to 5" so its Sources entry still carries a claim.
+- Pellet share. The feeding guide stated it as two sources at once:
+  roughly 70% with 20% produce and about a teaspoon of seed per bird per
+  day, against 60 to 70%+ with seed "in very limited quantities". Opened
+  both: the veterinary hospital guidance gives the 70/20/teaspoon
+  breakdown and PetMD gives "at least 60-70%". They agree on direction
+  and the more specific breakdown comes from the veterinary source, so
+  the page now states one figure with the other as its floor: roughly
+  70%, and 60% at an absolute minimum. Both numbers kept, neither source
+  named in the sentence.
+- Wild flock size. No figure changed. See Deep dives against each other.
+
+### Encyclopedia
+
+One field changed on `zebra-finch` in src/lib/data/encyclopedia/birds.js,
+nothing else in the file touched: `overview`, where "wild zebra finches
+travel in flocks of dozens to over a hundred birds" became "live in
+flocks". Researched against the enrichment guide's cited field study and
+against the general species literature, which documents both the large
+aggregations and the pair-sized foraging and travelling units. The figure
+is unchanged; the verb was the part that contradicted the deep dive.
+`adultSize` and `wildLifespan` were checked against Animal Diversity Web
+and left exactly as they stand, since they already match it.
+
+### Dates
+
+No lastUpdated or lastReviewed bumped. Every zebra finch guide carries a
+publish date of 2026-09-19 or later, which is still ahead of today, so
+stamping today's date would put an article's last update before it
+exists. The hognose snake pass took the same line for the same reason.
+
+### Open
+
+- The four gaps above, all in docs/READER_LOG.md.
+- Source narration through the body prose of this set, which names PetMD,
+  VCA, Merck, the RSPCA, and Lafeber inside sentences where RULES asks for
+  the figure alone. The hub rows are clean and the two-sources-at-once
+  case is settled, but the single-source attributions are left: most are
+  attached to direct quotes, where de-attributing without rewriting would
+  leave an unmarked lift, and rewriting all of them is a corpus-wide job
+  rather than this pass's.
+- Whether buying unweaned finches is wise, raised by the reader against
+  the cost guide's cheapest-seller line.

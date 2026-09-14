@@ -3051,3 +3051,92 @@ First two changes:
 - Routine spot-cleaning between full substrate changes.
 - How to actually dechlorinate water; the Amphibian Quarantine guide covers hardness, not this.
 - What to look for in a healthy frog at the point of purchase.
+
+## Zebra finch (2026-09-14)
+
+One Opus 5 agent, eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment), about 97k tokens. Full agent
+output below, unedited.
+
+---
+
+# Zebra Finch Page Set: Reader Review
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, but it is the weakest page and I acted on the wrong numbers until the deep dives corrected me. Actionable: checklist, sexing FAQ. **C**
+- **01 Encyclopedia.** Finished it. Nothing to act on, and its flock-size line is contradicted later. **C+**
+- **02 Cost.** Finished it. I can budget: two birds minimum, $180 to $400 upfront. **B**
+- **03 Handling.** Finished it. I can act today: net or towel, never the tail, do not force contact. **A-**
+- **04 Health.** Finished it. Concrete symptom list I would call a vet over. **A-**
+- **05 Cage setup.** Finished it. Dimensions, bar spacing, temperature, liner, all buyable. **B+**
+- **06 Feeding.** Finished it. Ratios, teaspoon measure, no grit, cuttlebone. Best page here. **A**
+- **07 Enrichment.** Finished it fast. Priority order and the What Not to Do list are the most usable thing in the set. **A**
+
+## 2. Hub and encyclopedia vs the deep dives
+
+The encyclopedia earns its place: origin, taxonomy, history. The hub does not. It restates the deep dives less accurately, and it is the first page the nav gives me.
+
+Conflicts, hub first:
+
+- Bar spacing. Hub: "Bar spacing of 1/2 inch or less keeps a finch from squeezing through." Setup: "No wider than 3/8 inch, per PetMD. That's tighter than the roughly 1/2 inch that works for a canary." The hub gives the canary number. That is a cage I might buy.
+- Cage cost. Hub table: "Flight cage (24-30 in wide) | $60 | $120." Cost guide: "Wide flight cage | $120 - $220." No overlap at all.
+- Cage dimension. Hub: "A flight cage at least 24 inches wide." Setup: "at least 24 inches long by 14 inches wide by 18 inches tall." The hub turned the length into the width.
+- Darkness. Hub: "a consistent 10 to 12 hours of darkness." Setup: "approximately 12 hours of light and 12 hours of darkness."
+- Lifespan. Hub FAQ: "Typically 5 to 10 years in captivity." Encyclopedia: "5 to 7 years in captivity." Cost guide adds Lafeber at "roughly 3 to 5 years."
+- Diet framing. Hub checklist: "Quality finch seed mix or pelleted diet," an either/or. Feeding: "pellets make up roughly 70% of a finch's diet... seed limited to about one level teaspoon per bird per day."
+
+The hub's vet line, "Annual avian vet check | $40 | $70," also sits badly next to the cost guide saying an avian exam "typically costs more than a routine cat or dog visit."
+
+## 3. Could I keep one?
+
+Yes, mostly. I can buy a pair, pick a long cage with 3/8 inch bars, set 65 to 80F, feed 70/20/teaspoon with cuttlebone, run a paper liner, and know what sends me to a vet same day.
+
+Still missing: what to do when one of a bonded pair dies, and how to introduce the replacement; how long a new bird sits apart before meeting mine; what a normal zebra finch weighs in grams; what to do if a hen lays despite no nest.
+
+Questions raised on one page, answered on another, with no link:
+
+- Health says calcium deficiency drives egg binding. Feeding explains the cuttlebone mechanism. Neither points at the other.
+- Setup warns a stable light cycle can cue breeding. Enrichment says provide material without a nest site. No link.
+- Cost says "you can never buy just one." Enrichment quantifies the right number and warns against bigger. No link.
+- Health says quiet daily observation is how you catch problems. Handling says the same. No link.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: never keep one, RSPCA quote verbatim in cost and setup; fly not climb; varied perch diameters; shallow bath; all-seed is bad; cuttlebone.
+
+Real conflict on wild flock size. Encyclopedia: "wild zebra finches travel in flocks of dozens to over a hundred birds." Setup repeats it: "in the wild they travel in flocks of dozens up to around 100 birds." Enrichment: "the commonest unit was a pair, 94.2 percent mixed-sex, with groups of three to ten also frequent and anything larger uncommon." Only the enrichment page seems to know the others exist.
+
+Smaller: setup says "several perches of varied diameter, positioned with enough distance between them"; enrichment says put them "at the ends of the flight path, not through the middle of it." Enrichment is the usable one.
+
+Feeding says keep pellets constantly available; hub's Diet section never mentions the teaspoon limit at all.
+
+## 5. The one link each page needed
+
+- **Hub.** "though avian vets increasingly recommend building the diet around a pelleted food instead" should point to Converting a Seed-Eating Bird to Pellets.
+- **Encyclopedia.** "wild zebra finches travel in flocks of dozens to over a hundred birds" should point to the enrichment guide, which disputes it.
+- **Cost.** "a genuine flight cage that lets the birds fly the length of it rather than just hop between two perches is a meaningfully better setup than the bare minimum" should point to the cage setup guide. It links to the canary cost guide instead.
+- **Handling.** "reading this species' wellbeing from the outside is largely how you'll be interacting with it day to day" should point to Reading Bird Body Language.
+- **Health.** "This is exactly why a cuttlebone is a non-negotiable part of the setup, not an optional extra" should point to the feeding guide.
+- **Setup.** "a stable light cycle at home can inadvertently cue breeding behavior in a mixed-sex group" should point to Photoperiod and Sleep.
+- **Feeding.** "PetMD's guidance lands in a similar place, pellets at 60 to 70%+ of intake" should point to Converting a Seed-Eating Bird to Pellets. It tells me the target and never the method.
+- **Enrichment.** "do not let one bird lose condition unchecked" should point to Sexing, Weight, and Body Condition.
+
+## 6. Trust
+
+What hurt: the hub disagreeing with its own deep dives on bar spacing and cage price, which is the exact thing a buyer acts on. Also the cost guide quoting "very young, unweaned pairs at $29" as the budget option without a word about whether buying unweaned finches is wise.
+
+The sentence that convinced me a keeper wrote this, from the handling guide: "Hold firmly enough to prevent escape but gently, too much pressure will make the bird gasp or squeal, a clear sign to ease up."
+
+## 7. Set grade: B
+
+Strong, sourced deep dives sitting under a hub that contradicts them.
+
+First two changes: rebuild the hub from the deep dives so bar spacing, cage cost, cage dimensions, darkness hours and lifespan match. Then reconcile the flock-size claim, and have the encyclopedia and setup pages link to the enrichment finding instead of repeating the number it overturns.
+
+## Not covered anywhere
+
+- What to do when one bird of a bonded pair dies, and how soon to replace it.
+- Quarantine-to-introduction sequencing for adding a bird to an existing pair. The shared quarantine guide covers the timeline; nothing joins it to the enrichment page's introduction advice.
+- Normal zebra finch weight in grams. The shared weight guide promises grams but is written around parrots, and the encyclopedia gives only 0.3 to 0.5 oz.
+- What to do if a hen lays with no nest provided. The shared chronic egg laying guide is scoped to budgies, cockatiels and lovebirds.
