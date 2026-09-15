@@ -1300,46 +1300,100 @@ export const fishGuides = [
     image: "/assets/guides/zebra-danio.jpg",
     tagline: "The tireless, torpedo-striped schooler that's equally at home in a beginner's tank and a genetics lab!",
     funFact: "Zebra danios, known to scientists as zebrafish, are the most widely used non-mammalian vertebrate model organism in developmental biology and genetics research. Their embryos develop transparently outside the mother's body within hours of fertilization, letting researchers watch organs form in real time, and roughly 70 percent of human genes have a working counterpart in the zebrafish genome, sequenced in full in 2013. That same genetic malleability is also how GloFish, the first genetically modified animal ever sold as a pet, came to exist: they're fluorescent zebra danios.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a proper school of 5-6+, since they're obligate schooling fish.
-    costs: {
-      setup: [
-        { item: "10-20+ gallon long tank", low: 50, high: 100 },
-        { item: "Gentle filter", low: 20, high: 35 },
-        { item: "Live or silk plants for cover", low: 15, high: 30 },
-        { item: "Water test kit", low: 15, high: 20 },
-      ],
-      annual: [
-        { item: "Flake/micro-pellet food + frozen bloodworms", low: 30, high: 50 },
-        { item: "Water conditioner", low: 10, high: 15 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, filtration, the hospital tank, water
+    // chemistry, the power outage rule, summer cooling and the sick-fish check
+    // cite the shared aquarium guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-15 after the zebra danio set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // Retired rather than moved: a whole cost table written independently of
+    // the cost guide, with the tank at $50 to $100 against $18 to $60, the
+    // filter at $20 to $35 against $8 to $15, food at $30 to $50 against $15
+    // to $25, and the test kit filed as annual where the cost guide files it
+    // as a one-time purchase. Also "Feed small amounts once or twice daily"
+    // against the feeding guide's twice a day minimum, and a heater listed as
+    // optional equipment without the range that makes it optional.
+    //
+    // Group size is stated twice on purpose and is not a disagreement. The
+    // handling guide gives the floor and the target together, 5 to 6 workable
+    // against 8 to 10 or more for natural schooling; the enrichment guide
+    // gives the behavioural reason for the higher number. The old hub said
+    // "at least five or six" and stopped at the floor, which is the same
+    // failure the swordtail hub had with its sex ratio.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "How many", value: "At least 6. Aquarium Co-Op names 5 to 6 as the workable minimum, but Seriously Fish recommends starting with 8 to 10 or more for natural schooling behavior. A group that's too small is more likely to direct fin-nipping energy at tankmates instead of schooling normally.", source: "zebra-danio-handling-guide" },
+        { label: "Why the higher number", value: "In small groups the chasing and nipping that danios do among themselves lands repeatedly on the same individual, and a bigger group spreads it out. Eight or more, and more where the tank supports it.", source: "zebra-danio-enrichment-guide" },
+        { label: "Tank size", value: "A 10-gallon tank is workable for the bare minimum school of 6. Seriously Fish's recommended footprint, roughly 90x30cm even for a small group, lines up closely with a 20-gallon long tank, a better practical minimum for the fuller 8 to 10 fish school most sources recommend.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Length over height", value: "The commonest mistake with this species is a small cube. Danios in a short tank do laps, and the behavior that gets described as energetic is a fish running out of tank. A long tank is worth far more to them than a tall one of the same volume.", source: "zebra-danio-enrichment-guide" },
+        { label: "Temperature, and the heater", value: "Not strictly needed. Multiple care sources put their comfortable range at 64 to 77\u00B0F, close enough to room temperature in most homes that a heater is optional. It's still worth adding if your home runs cool or if danios share a tank with tropical fish that need warmer, more stable water.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Water chemistry", value: "Flexible. Seriously Fish lists a comfortable pH range of 6.0 to 8.0 and hardness from soft to fairly hard, a much wider window than a soft-water specialist like cardinal tetra needs. Ammonia and nitrite should still read zero before stocking regardless of how tolerant the species is.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Filtration", value: "Moderate water movement is fine, and this species appreciates a bit more current than a delicate blackwater fish would. Seriously Fish recommends filtration that turns over roughly 4 to 5 times the tank volume per hour. A sponge filter or hang-on-back filter both work well.", source: "zebra-danio-tank-setup-guide" },
+        { label: "The lid", value: "Because they're capable jumpers. Multiple sources put their jump height at 20 to 30cm, and even a small gap in a hood or lid is often enough for an active, easily startled danio to find its way out. A tight-fitting lid isn't optional the way it might be for a calmer fish.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Planting", value: "Substrate and live planting instead of bare glass, plus driftwood for structure and surface. Plant the sides and back, leave the middle open. Danios need cover and they need somewhere to sprint, and a tank that is all one or all the other misses half of it.", source: "zebra-danio-enrichment-guide" },
+        { label: "Flow", value: "Stream fish. A filter outlet aimed to produce some flow along the length of the tank gets used rather than avoided. Not a torrent: enough that there is a fast end and a slow end, and the fish get to choose.", source: "zebra-danio-enrichment-guide" },
+        { label: "Feeding", value: "Twice a day is the practical standard, offering only what the school finishes in two to three minutes. That matches general zebrafish feeding guidance used in research settings too: the standard husbandry reference at ZFIN recommends adult zebrafish get fed at least twice daily.", source: "zebra-danio-feeding-guide" },
+        { label: "The accidental spawn", value: "Conditioning danios on live or frozen food is a classic way to trigger spawning, since it mimics the food abundance that kicks off breeding activity in the wild. If you don't want fry, skip the daily live-food routine and don't add fine-leaved plants or marbles the eggs can fall into and survive in.", source: "zebra-danio-feeding-guide" },
+        { label: "Catching one", value: "Chasing rarely works. Set a net flush against a front corner of the tank, then use your other hand, fingers spread, to guide the fish toward it rather than pursuing them directly. Lowering the water level a few inches and staying calm both help.", source: "zebra-danio-handling-guide" },
+        { label: "Acclimation", value: "Float the sealed bag for 15 to 20 minutes to match temperature, then add a quarter cup of tank water to the bag every 5 minutes for another 15 to 20 minutes before netting the fish into the tank. Discard the bag water rather than pouring it in.", source: "zebra-danio-handling-guide" },
+        { label: "Quarantine", value: "Two to four weeks before new fish join an established tank. A simple 10 to 20-gallon bare-bottom tank with its own sponge filter and heater works well for this and doubles as an isolation tank later if a fish gets sick.", source: "zebra-danio-handling-guide" },
+        { label: "Budget", value: "Roughly $2 to $3 a fish, so about $12 to $30 for a starting school of 6 to 10. Core equipment runs roughly $60 to $150, and most first setups land around $100 to $180 once substrate and a test kit go in. Ongoing costs are very low, even by cheap-fish standards.", source: "zebra-danio-cost-guide" },
+        { label: "The GloFish premium", value: "The same species, genetically engineered to carry a fluorescent protein gene. They run about $8 each regardless of pack size, roughly four times the price of a plain wild-type danio. That premium reflects licensing and patent costs tied to the fluorescent gene, not a harder-to-keep fish.", source: "zebra-danio-cost-guide" },
+        { label: "Vet costs", value: "Not applicable in the traditional sense. Fish health management here is almost entirely about water quality and, when needed, over-the-counter treatments, not veterinary visits.", source: "zebra-danio-cost-guide" },
+        { label: "Lifespan", value: "Outbred zebra danios average around 3.5 years in captivity and can live up to 5.5 years with excellent care, according to the AnAge longevity database. Most wild zebrafish live to be about one year old.", source: "zebra-danio-cost-guide" },
+        { label: "Adult size", value: "1.5 to 2.5 inches (4 to 6 cm); occasionally to 3 inches (7.5 cm) in captivity." },
+        { label: "The condition to know about", value: "Mycobacteriosis, sometimes called fish tuberculosis. Lethargy, loss of appetite and emaciation, along with skin ulcers, pale patches, and in advanced cases visible white nodules or a swollen abdomen. There's no reliable cure once a fish is visibly symptomatic, which makes quarantine the real defense.", source: "zebra-danio-health-issues-guide" },
+        { label: "Gloves, if you have a cut", value: "Mycobacterium marinum can also infect people, usually through a small cut or scrape exposed to contaminated tank water. It's uncommon and treatable, but it's a genuine reason to wear gloves for tank maintenance if you have any open cuts, and to mention aquarium exposure to a doctor if a slow-healing bump shows up.", source: "zebra-danio-health-issues-guide" },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "A hot week", value: "Reach for room air conditioning and a fan first, treat frozen bottles as a genuine last resort rather than a daily habit, and keep the aeration running no matter what else you're doing. Warmer water holds less dissolved oxygen at the same moment the fish need more of it.", source: "cooling-an-aquarium-without-a-chiller-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A 10-gallon tank is a workable minimum for a small group of zebra danios, but a 20-gallon long tank suits them far better, since these are fast, energetic swimmers that need horizontal racing room more than height. Keep water between 64 and 77 degrees F, close enough to room temperature in most homes that a heater is often optional, unless your house runs cool or your danios share a tank with warmth-loving tropical fish. Use a gentle filter and always fit a tight, secure lid, since zebra danios are genuinely capable jumpers and even a small gap is often enough for one to escape. A fully cycled tank matters just as much for this species as any other, despite their reputation for toughness.",
-      diet: "Zebra danios are omnivores that do well on a high-quality flake or micro-pellet food as a dietary staple, sized small enough for their upturned mouths. Frozen or live bloodworms, brine shrimp, and daphnia offered two to three times a week add valuable variety and bring out their color. Feed small amounts once or twice daily, offering only what's eaten within two to three minutes, since overfeeding fouls water quickly in a smaller tank.",
-      enrichment: "Zebra danios are obligate schooling fish and should always be kept in groups of at least five or six, both to feel secure and to keep their energy directed at each other rather than at slower or longer-finned tankmates, since an understocked group is more likely to fin-nip. A properly sized school moving together at speed through open water is genuinely one of the more mesmerizing sights a beginner tank can offer. Because danios are egg-scatterers rather than livebearers, unlike the guppies and mollies also covered on this site, watching a spawning chase, with no nest-building or parental care afterward, is itself a distinct behavior worth observing.",
-      health: "Ich, fin rot, and columnaris (a bacterial infection causing greyish patches) are the most common issues, and all three are far easier to prevent through stable water quality than to treat after the fact. Swim bladder problems, usually from overfeeding, can cause a danio to struggle swimming level. Zebra danios have a genuine reputation for tolerating ammonia and nitrite better than more sensitive fish like neon tetras, but that tolerance is relative, not absolute, and a brand-new, uncycled tank still damages their gills the same way it would any other fish. Weekly 25 to 30 percent water changes are the simplest way to keep a hardy fish actually healthy rather than just surviving.",
-      checklist: [
-        "10-20+ gallon long tank",
-        "Group of 5-6+ zebra danios",
-        "Gentle filter",
-        "Tight-fitting lid (danios jump)",
-        "Optional heater (64-77°F tolerated; add one for a warmer community tank)",
-        "Live or silk plants for cover",
-        "Flake or micro-pellet food",
-        "Frozen bloodworms or brine shrimp for variety",
-        "Water test kit and conditioner",
-        "Weekly 25-30% water changes",
+    emergencyCard: {
+      source: "zebra-danio-health-issues-guide",
+      callNow: [
+        "Small white spots resembling grains of salt, alongside increased mucus production, flashing against decor, rapid breathing, and lethargy",
+        "Discoloration on the fin edges first, then fraying as infected tissue dies off",
+        "Lethargy, loss of appetite, and emaciation, along with skin ulcers, pale patches, and in advanced cases visible white nodules or a swollen abdomen",
+        "Buoyancy problems, floating at the surface unable to swim down, or struggling to rise from the bottom",
+        "A slow-growing, sometimes painful bump on your own hand after working in the tank",
       ],
+      vetLine: "Nearly everything treatable on this list traces back to water quality and stability, exactly what a properly cycled tank with consistent temperature and regular water changes prevents. Mycobacteriosis is the exception and the one to take seriously: there's no reliable cure once a fish is visibly symptomatic, and quarantine, clean equipment and stable water are the real defense. The bump on your own skin is a doctor's call, not a vet's, and worth mentioning aquarium exposure for.",
     },
+    routes: [
+      { slug: "zebra-danio-cost-guide", line: "$2 a fish, $100 to $180 for a first setup, and why GloFish cost four times as much for identical care." },
+      { slug: "zebra-danio-tank-setup-guide", line: "The 90x30cm footprint, 64 to 77F, and the rare community fish that might not need a heater." },
+      { slug: "zebra-danio-feeding-guide", line: "Twice a day, two to three minutes, and the live food that triggers an accidental spawn." },
+      { slug: "zebra-danio-handling-guide", line: "Trap and guide rather than chase, float-and-drip timings, and the school size that matters more than technique." },
+      { slug: "zebra-danio-health-issues-guide", line: "Ich, fin rot, swim bladder, and the fish tuberculosis this species is studied for." },
+      { slug: "zebra-danio-enrichment-guide", line: "The enrichment study that measured survival rather than behavior, and why a cube is the wrong tank." },
+    ],
+    buyList: [
+      "A school of 8 to 10, not two or three to start",
+      "20-gallon long for that school, 10 gallons only for a bare minimum six",
+      "Tight-fitting lid, every seam checked",
+      "Sponge or hang-on-back filter at 4 to 5 times tank volume per hour",
+      "Heater, only if the room runs cool or tankmates need one",
+      "Substrate and live plants along the sides and back, open water through the middle",
+      "Driftwood for structure",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Flake or micro-pellet food",
+      "Frozen bloodworms or brine shrimp, for variety rather than daily",
+    ],
     faqs: [
-      { q: "Do zebra danios need a heater?", a: "Not strictly. They tolerate 64 to 77°F, which is close to room temperature in most homes, so many keepers run them unheated. A small heater is still worth adding if your home runs cool or if danios are sharing a tank with tropical fish that need warmer, more stable water." },
-      { q: "Why do my zebra danios keep jumping out of the tank?", a: "Zebra danios are genuinely capable jumpers, and even a small gap in a hood or lid is often enough for one to escape. A tight-fitting lid isn't optional for this species the way it might be for a slower, less energetic fish." },
-      { q: "How many zebra danios should I keep together?", a: "At least 5 to 6. They're obligate schooling fish, and an undersized group is more likely to direct fin-nipping energy at slower or longer-finned tankmates instead of schooling normally." },
-      { q: "Are zebra danios livebearers like guppies?", a: "No, this is a genuine point of difference. [Guppies](/guides/guppy/) and mollies give birth to free-swimming fry, but zebra danios are egg-scatterers: a pair releases eggs into open water or plants with no nest and no parental care afterward, closer to how most tetras breed." },
-      { q: "Why are zebra danios used in science labs?", a: "Zebrafish, the same species as the aquarium zebra danio, are the most widely used non-mammalian vertebrate model organism in developmental biology and genetics research. Their embryos develop transparently outside the body, and roughly 70 percent of human genes have a working counterpart in their genome, making them uniquely useful for studying development and disease." },
-      { q: "What are GloFish?", a: "Fluorescent zebra danios. GloFish were the first genetically modified animal ever sold as a pet, created by inserting a fluorescent protein gene into zebrafish embryos, and they need the exact same care as any other zebra danio." },
-      { q: "Are zebra danios good pets for beginners?", a: "Yes, genuinely, they're one of the hardiest community fish available and don't strictly need a heater. The real mismatch to avoid is tankmates: their speed and fin-nipping tendency in small groups can stress slow, long-finned fish like bettas, so stick to similarly active, non-delicate tankmates." },
+      { q: "What size tank does a school of zebra danios need?", a: "A 10-gallon tank is workable for the bare minimum school of 6. Seriously Fish's recommended footprint, roughly 90x30cm even for a small group, lines up closely with a 20-gallon long tank, a better practical minimum for the fuller 8 to 10 fish school most sources recommend." },
+      { q: "Do zebra danios need a heater?", a: "Not strictly. Multiple care sources put their comfortable range at 64 to 77\u00B0F, close enough to room temperature in most homes that a heater is optional. It's still worth adding if your home runs cool or if danios share a tank with tropical fish that need warmer, more stable water." },
+      { q: "How many zebra danios should I keep together?", a: "At least 6. Aquarium Co-Op names 5 to 6 as the workable minimum, but Seriously Fish recommends starting with 8 to 10 or more for natural schooling behavior. A group that's too small is more likely to direct fin-nipping energy at tankmates instead of schooling normally." },
     ],
   },
 ];

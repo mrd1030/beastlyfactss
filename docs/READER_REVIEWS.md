@@ -13805,3 +13805,75 @@ either list covers; stocking numbers past "a small trio", which is the fifth
 species in two batches with the same gap and is already a section 8 item; fry
 rearing beyond the fact that they breed; and judging a healthy fish at the shop
 before buying it.
+
+## Zebra Danio (2026-09-15, batch N, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 80k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B+, with the hub alone at C+. "Strong, sourced,
+genuinely species-specific deep dives sitting under a hub that undercuts them on
+numbers."
+
+The cost table was written independently of the cost guide and it shows on every
+line. Tank $50 to $100 against $18 to $60. Filter $20 to $35 against $8 to $15.
+Food $30 to $50 against $15 to $25. Test kit filed as an annual cost where the
+cost guide files it as a one-time purchase. The reader's verdict on it, "the
+hub's cost table reads like it was written separately from the cost guide," is
+the plainest description of this failure anyone has given across four batches.
+All of it retired.
+
+Group size was the swordtail failure again, in a different species. The hub said
+"groups of at least five or six" and stopped there. The handling guide gives the
+floor and the target in the same sentence, Aquarium Co-Op's 5 to 6 workable
+minimum against Seriously Fish's 8 to 10 or more for natural schooling, and the
+enrichment guide gives the reason the higher number matters: in small groups the
+nipping lands repeatedly on the same fish. Two rows now, the number and the
+reason, and the hub no longer presents the floor as the recommendation.
+
+Feeding frequency was a quieter version of the same thing. Hub: "small amounts
+once or twice daily." Feeding guide: at least twice a day, on ZFIN's research
+husbandry guidance. The hub's "once or" was the entire disagreement.
+
+Ich against the heater. This is the reader's sharpest structural catch and it
+holds across two species in this batch. The health guide says to raise
+temperature toward the top of the comfort range; the setup guide says the top of
+that range is 77°F and that the tank may well have no heater in it at all. The
+health guide now says what that means, that an unheated tank needs a heater
+added for the length of the treatment. The shared-guide version of the problem,
+where general ich guidance assumes a heat treatment well above this species'
+ceiling, is a section 8 item and stays there.
+
+The planted-tank contradiction, kept rather than resolved. The feeding guide
+tells a keeper who does not want fry to keep fine-leaved plants and marbles out
+of the tank; the enrichment guide is built on a study where planted tanks
+produced better larval survival and less anxious adults than bare ones. Both are
+right and neither acknowledged the other. The feeding guide now names the trade
+and comes down on planting, since the adults eat the eggs anyway, which is the
+guide's own stated fact.
+
+Lee et al. was named in the enrichment guide's body with no year and no link
+while every other page on the site links out. The full citation was already in
+that page's Sources block, so this was a formatting miss rather than an unsourced
+claim, and the in-body mention now carries the year and the link.
+
+Links: 6 added, one per article, all from the reader's own list. The health guide
+had no in-body internal links at all before this.
+
+Dates: health and feeding bumped, since health gained the 77°F consequence and
+feeding gained the planting trade. Cost, handling and tank setup changed links
+only. Enrichment is future-dated to 2026-11-03 and was not bumped.
+
+check-species-numbers zebra-danio: every hub value matches its source. Voice
+warning set identical to baseline. All gates and eslint clean.
+
+Left open: the 20 to 30cm jump height, which both the setup and handling guides
+carry on housedpet.com alone. The figure is plausible and consistent across the
+two pages, but it is the weakest source in the set and would not survive the
+ranking in docs/RULES.md against anything better. Nothing better was found in
+this pass.
+
+Gaps, checked against the Health and More list: tankmate compatibility beyond
+"avoid bettas and slow long-finned fish"; sexing, which the breeding warnings
+assume a reader can do; what to actually do with an accidental spawn once it
+happens; and a maintenance routine, since the weekly 25 to 30% change existed
+only on the hub and no shared guide covers water changes, which is already the
+section 8 item this batch opened.

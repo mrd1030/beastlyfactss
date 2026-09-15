@@ -6312,3 +6312,87 @@ Strong, sourced, unusually honest about where evidence runs out, dragged down by
 - Stocking numbers: nothing tells me how many swordtails a 29 gallon actually holds beyond "a small trio".
 - Fry rearing: the roundup covers that they breed, but nothing covers raising fry, when to separate them, or when they can be rehomed.
 - Judging a healthy fish at the shop before you buy it.
+
+## Zebra Danio (2026-09-15, batch N)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment).
+
+## 1. Page by page
+
+**00 Hub.** Finished it. Actionable: full shopping checklist, 5-6 fish, 64-77F, weekly 25-30% changes. Numbers clash with the deep dives it points at. **C+**
+
+**01 Encyclopedia.** Finished it. Actionable: adult size, 3.5 year lifespan, egg-scatterer. Natural history only, and it earns that. **B+**
+
+**02 Cost.** Finished it. Actionable: $2/fish, $12-30 school, $100-180 first setup, GloFish 4x premium. **A-**
+
+**03 Handling.** Finished it. Actionable: the corner-net trap-and-guide steps, float-and-drip acclimation timings, 2-4 week quarantine. **A**
+
+**04 Health.** Finished it. Actionable: what ich, fin rot, mycobacteriosis look like, and gloves for open cuts. **A**
+
+**05 Tank setup.** Finished it. Actionable: 90x30cm footprint, pH 6.0-8.0, 4-5x turnover, check every lid seam. **A**
+
+**06 Feeding.** Finished it. Actionable: twice daily, two to three minutes, and how not to trigger a spawn. **A-**
+
+**07 Enrichment.** Finished it. Actionable: plant sides and back, open middle, long tank, eight or more, directional flow. Only page with no source URLs. **A-**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, wild diet, Hamilton 1822, Streisinger. Nothing else carries it.
+
+The hub does not. It restates the deep dives at lower resolution, and where it adds a number it disagrees with them.
+
+Costs, hub vs cost guide: "10-20+ gallon long tank | $50 | $100" vs "10-20 gallon tank | $18 - $60". Filter "$20 | $35" vs "$8 - $15". Food "$30 | $50" vs "$15 - $25". Test kit "$15 | $20" vs "a one-time purchase of $25 to $40".
+
+Feeding: hub "Feed small amounts once or twice daily" vs feeding guide "at least twice a day, noting that multiple light feedings let fish make better use of the food."
+
+Group size: hub "groups of at least five or six" vs enrichment "Eight or more, and more where the tank supports it."
+
+The weekly water change schedule exists only on the hub. No deep dive gives a number.
+
+## 3. The set as a whole
+
+I could buy, set up, stock, feed and spot most trouble. Missing: a tankmate list beyond "not bettas"; sexing; what to do if an accidental spawn happens; any maintenance routine outside the hub's one line; the fact that ich treatment needs a heater the setup guide told me to skip.
+
+Questions answered elsewhere without being told: the health guide's ich temperature raise is bounded by the setup guide's 64-77F, unlinked. The setup guide's "a patch of fine-leaved plants gives any eggs a place to fall out of reach" is the feeding guide's breeding wrinkle, unlinked. Handling's quarantine tank with "its own sponge filter and heater" is a cost item the cost guide never budgets.
+
+## 4. Overlap and conflict across deep dives
+
+Read three or four times: the 20-30cm jump height and lid warning, 64-77F, the 6 vs 8-10 school, egg-scattering with no parental care.
+
+Planting, feeding vs enrichment: "keep the tank free of fine-leaved plants or marble substrate the eggs could survive in" against "Substrate and live planting instead of bare glass, plus driftwood for structure and surface." Both are defensible, neither acknowledges the other.
+
+School size, handling vs enrichment: "Aquarium Co-Op names 5 to 6 as a workable minimum" against "Do not keep three or four" plus "Eight or more."
+
+Tank, setup vs enrichment: "A 10-gallon tank is workable for the bare minimum school of 6" against "Do not buy a cube for a horizontal sprinter." A standard 10 is closer to a cube than to 90x30cm.
+
+## 5. One link per page
+
+- Hub: "A fully cycled tank matters just as much for this species as any other, despite their reputation for toughness." to How to Cycle a Fish Tank.
+- Encyclopedia: "danios are egg-scatterers: a spawning pair releases eggs into open water or fine-leaved plants" to the feeding guide.
+- Cost: "but a completely uncycled tank still damages their gills the same way it would any other fish." to How to Cycle a Fish Tank.
+- Handling: "A simple 10 to 20-gallon bare-bottom tank with its own sponge filter and heater works well for this" to Fish Quarantine and Treatment.
+- Health: "A gradual temperature increase toward the top of this species' comfort range, combined with a commercial ich medication and daily partial water changes, generally clears it." to the tank setup guide, which is where the range and the optional heater live.
+- Tank setup: "Ammonia and nitrite should still read zero before stocking regardless." to How to Cycle a Fish Tank.
+- Feeding: "keep the tank free of fine-leaved plants or marble substrate the eggs could survive in" to the enrichment guide.
+- Enrichment: "Do not use them as living cycling equipment." to How to Cycle a Fish Tank.
+
+## 6. Trust
+
+Doubts: the hub's cost table reads like it was written separately from the cost guide. The enrichment guide names Lee et al. in the Journal of Fish Biology with no year and no link while every other page links out. A jump-height figure sourced to housedpet.com. And telling me to raise the temperature for ich on a tank the site says needs no heater.
+
+The sentence that convinced me: "Danios in a short tank do laps, and the behavior that gets described as energetic is a fish running out of tank."
+
+## 7. Set grade: B+
+
+Strong, sourced, genuinely species-specific deep dives sitting under a hub that undercuts them on numbers.
+
+First two changes: rewrite the hub from the deep dives so costs, feeding frequency, group size and tank size match, and give water changes and tankmates a real home in a deep dive instead of one hub line.
+
+## Not covered anywhere
+
+- Tankmate compatibility beyond "avoid bettas and slow long-finned fish."
+- Telling males from females, which the breeding warnings assume.
+- What to actually do with an accidental spawn or fry.
+- A maintenance routine: the weekly 25-30% change appears only on the hub, and no class guide covers water changes.
+- How to raise temperature for ich treatment in the unheated tank the setup guide recommends.

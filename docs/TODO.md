@@ -565,6 +565,12 @@ is why they kept getting deferred. Do them once section 7 is finished.
       are listed by what they need rather than by species.
 
       Needs new research before anyone can decide:
+      - Zebra danio jump height. Both the tank setup and handling guides put it
+        at 20 to 30cm on housedpet.com alone, which is the weakest source in
+        either set and loses to almost anything under the ranking in
+        docs/RULES.md. The figure is plausible and consistent across the two
+        pages and nothing better turned up in the batch N pass, so it stays until
+        someone finds a real source or a reason to drop the number. (batch N)
       - Rosy boa lifespan. The cost guide's FAQ carries "20 to 30 typical" beside
         "the captive average sits nearer 18 to 22". ADW confirms both 18 to 22
         and past 30, so neither is wrong, but nothing in that page's Sources
