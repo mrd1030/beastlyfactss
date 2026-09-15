@@ -784,6 +784,13 @@ Also worth carrying: the review file claimed four raw reader outputs were filed
 in docs/READER_LOG.md when only one was. File the raw output in the same commit
 as the review section, not later.
 
+And the one that had been quietly accumulating for three batches: an open a batch
+records in docs/READER_REVIEWS.md is invisible unless it is also promoted to
+docs/TODO.md section 8. Eleven of them had built up across batches K, L and M
+before anyone noticed, including five that need new research. When a batch writes
+"left open" or "not fixed, recorded", it goes in section 8 in the same commit,
+grouped by what it needs: research, a style decision, or a mechanical pass.
+
 Next up is batch N. Pick five, one per class, where a set from a recent
 batch points at them. What is left, by class, is in docs/TODO.md
 section 7.

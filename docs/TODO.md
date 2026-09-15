@@ -525,6 +525,68 @@ is why they kept getting deferred. Do them once section 7 is finished.
       RELATED_ARTICLES entry amano shrimp had before batch J, so their
       sidebars are missing cycling, quarantine and the sick-tank check that
       every fish species carries. One line each.
+- [ ] The opens from batches K, L and M, which the reader passes recorded in
+      docs/READER_REVIEWS.md and nothing promoted here until 2026-09-15. Each one
+      is a real decision the batch could not make under its Never list, and they
+      are listed by what they need rather than by species.
+
+      Needs new research before anyone can decide:
+      - Rosy boa lifespan. The cost guide's FAQ carries "20 to 30 typical" beside
+        "the captive average sits nearer 18 to 22". ADW confirms both 18 to 22
+        and past 30, so neither is wrong, but nothing in that page's Sources
+        shows what the 20 to 30 rests on, and settling it ripples into the
+        encyclopedia and the overview. (batch K)
+      - Fire-bellied toad feeding schedule. PetMD, the vet-tier source, gives
+        adults "once or twice a week"; Amphibian Care and Smithsonian both sit at
+        every two to three days, which is what the page carries. The vet-tier
+        source is the outlier of three, which is the one shape the ranking rule
+        does not resolve on its own. (batch L)
+      - Fire-bellied toad water depth. Amphibian Care's "about 3 inches" against
+        PetMD's "1- to 2-inch-deep". PetMD's figure would contradict the page's
+        standing "deep enough to genuinely swim" instruction, so one of the two
+        claims has to give and that is a husbandry call, not a ranking call.
+        (batch L)
+      - Argentine tegu enclosure and basking. LafeberVet gives 6ft x 3ft x 3ft
+        and a 95 to 100F basking range against the setup guide's 8x4x4 and 100 to
+        115F. Both tegu deep dives agree with each other and the reader graded
+        that page A-, so a vet-tier source sitting below the site's own numbers
+        on both figures wants a deliberate decision. (batch L)
+      - Leaf-tailed gecko basking. Reptile Supply gives an 80 to 84F basking
+        area, 68 to 76F cool zone and a 62F night minimum for the genus; the
+        setup guide that now cites it says a basking source "can be actively
+        dangerous" and gives 68 to 75 by day. That is a genus-level figure
+        against a species-specific warning about a montane animal. (batch M)
+
+      Needs a style decision, then one pass to apply it everywhere:
+      - Source narration in a symptom list. The quaker parakeet health guide
+        names MSD, VCA and Merck inline as hyperlinks mid-sentence. On a page
+        where three veterinary manuals each contribute a different part of one
+        list, the attribution is arguably doing real work, and no reader has
+        flagged it. Either it is an exception worth writing into RULES or it is
+        the same defect the batches keep de-narrating. (batch L)
+      - The Argentine tegu handling guide's pre-existing sentence naming
+        LafeberVet against ReptiFiles on adult size, which is the same question
+        on a page where the spread genuinely is the point. (batch L)
+
+      Small, mechanical, just not in any batch's scope:
+      - The molly cost guide's Sources block lists Splashy Fish Store, a retailer
+        page RULES does not want as a source. Deleting a Sources entry is on the
+        Never list, so it needs replacing rather than removing. (batch L)
+      - `praying-mantis-ootheca-guide.mdx` carries two pre-existing voice errors,
+        an intensifier in the heading "What an Ootheca Actually Is" and one in an
+        FAQ answer. (batch L)
+      - `argentine-tegus-are-not-venomous.mdx` carries two pre-existing voice
+        errors. (batch L)
+      - The rosy boa encyclopedia's description prose says "Rarely exceeding 3
+        feet as adults" next to its own adultSize field of "rarely over 4 feet".
+        Both are defensible, they just disagree inside one entry. (batch K)
+
+      Checked and deliberately not actioned, recorded so nobody re-opens it: the
+      emperor scorpion encyclopedia's adult size of "1.5-2 inches (4-5 cm)"
+      against ADW's wider "3.5 to 8 cm". Smithsonian's "a maximum length of 2
+      inches" supports the encyclopedia, no deep dive states a size, so nothing
+      conflicts. (batch K)
+
 - [ ] Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
       batch I's five species had one (red-footed tortoise, degu, savannah
       monitor), so the legal guide was reachable from the hub and from
