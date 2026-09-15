@@ -213,7 +213,7 @@ files.forEach((f, i) => {
   const slug = f.replace(/\.mdx$/, '');
   const title = /^title: "(.*)"$/m.exec(fm)?.[1] || slug;
   const text = `ARTICLE: ${title}\n\n` + renderBody(body, slug) + frontmatterFaqs(fm);
-  const name = `${String(i + 2).padStart(2, '0')}-${slug.replace(/^.*?-(?=[a-z-]*-guide$)/, '').replace(species + '-', '')}.txt`;
+  const name = `${String(i + 2).padStart(2, '0')}-${slug.startsWith(species + '-') ? slug.slice(species.length + 1) : (suffixRe.exec(slug) || [''])[0].slice(1) || slug}.txt`;
   fs.writeFileSync(path.join(outDir, name), text + '\n');
   written.push(name);
 });

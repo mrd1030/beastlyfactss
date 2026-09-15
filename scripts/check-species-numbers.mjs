@@ -85,12 +85,28 @@ function mdxToText(raw) {
   const faqs = [...fm.matchAll(/- q: "(.*)"\s*\n\s*a: "(.*)"/g)].map((m) => `${m[1]} ${m[2]}`).join('\n');
   return body + '\n' + faqs;
 }
+// A guide id doesn't always prefix its own articles: the tegu hub is `tegu`
+// and its deep dives are all `argentine-tegu-*`. Matching on the prefix alone
+// compared that hub against nothing but its encyclopedia entry and reported
+// no conflicts, on a species whose hub disagreed with five deep dives.
+// A file also counts when its slug ends in one of the standard suffixes and
+// its base name and the guide id contain one another, which catches the
+// longer-name case without pulling in another species' pages.
+const SUFFIXES = ['cost', 'handling', 'health-issues', 'tank-setup', 'feeding', 'enrichment', 'legal'];
+const suffixRe = new RegExp(`-(${SUFFIXES.join('|')})-guide$`);
+function isOwnPage(slug) {
+  if (slug.startsWith(species + '-')) return true;
+  const base = slug.replace(suffixRe, '');
+  return base !== slug && (base.includes(species) || species.includes(base));
+}
 for (const dir of ['content/guides', 'content/blog']) {
   if (!fs.existsSync(dir)) continue;
   for (const f of fs.readdirSync(dir).sort()) {
-    if (!f.startsWith(species + '-') || !f.endsWith('.mdx')) continue;
+    if (!f.endsWith('.mdx')) continue;
+    const slug = f.replace(/\.mdx$/, '');
+    if (!isOwnPage(slug)) continue;
     if (/-vs-|-overview\.mdx$/.test(f)) continue;
-    pages.push({ page: f.replace(/\.mdx$/, '').replace(species + '-', ''), text: mdxToText(fs.readFileSync(path.join(dir, f), 'utf8')) });
+    pages.push({ page: slug.startsWith(species + '-') ? slug.slice(species.length + 1) : (suffixRe.exec(slug) || [''])[0].slice(1) || slug, text: mdxToText(fs.readFileSync(path.join(dir, f), 'utf8')) });
   }
 }
 if (!pages.length) { console.error(`no pages found for "${species}"`); process.exit(1); }
