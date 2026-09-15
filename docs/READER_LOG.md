@@ -4502,3 +4502,91 @@ C+. The individual pages are well aimed and the enrichment, legal and feeding gu
 - Cage cleaning schedule and how to spot clean a six-inch dig layer.
 - Out-of-cage time and degu-proofing a room for an animal that chews structurally.
 - The shared list covers heat emergencies, antibiotic risk, vet transport and grooming, so those are answered; the six above are not, on any page in the set.
+
+---
+
+# Savannah Monitor: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch I. Raw and unedited.
+
+
+**1. Page by page**
+
+- 00 hub: Finished it. Actionable: full parts list, cost ranges, a checklist I could shop from. But its numbers are the loosest in the set. C+
+- 01 encyclopedia: Finished it. Actionable: nothing husbandry-wise, but the CITES export figures told me why the animal in front of me is probably wild-caught. B+
+- 02 cost: Finished it. Actionable: a real budget, and the admission that no 8x4x4 exists ready-made. B-
+- 03 handling: Finished it. Actionable: the warning-sign list, pick up from underneath, tongs for feeding, nail trims are a two or three person job. A-
+- 04 health: Finished it, fast, because it is thin. Actionable: almost nothing numeric. It names four problems and says see a vet. C+
+- 05 tank setup: Finished it. Actionable: the whole build. Best page here. A
+- 06 enrichment: Finished it. Actionable: the priority order, puzzle feeding at existing ration, target training. Two sentences are visibly broken. B
+- 07 legal: Finished it. Actionable: I know exactly whether I can own one. A-
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: the 1792 naming and the export volumes appear nowhere else. The hub mostly restates the deep dives, and where it differs it is wrong.
+
+Conflicts, hub versus deep dive:
+- Size. Hub: "Adult savannah monitors can reach 3 to 5 ft" and "weigh 6 to 15+ lbs". Handling: "reaches 3 to 4 feet long and weighs 8 to 15 pounds". Encyclopedia: "2.5-4 feet (75-120 cm)". Three different animals.
+- Basking. Hub: "A very hot basking spot (130 to 150 degrees F surface) is critical." Tank setup: "Basking surface temperature should reach 140 to 150F". A 130F floor is ten degrees of daylight between two pages.
+- Cool side. Hub: "Cool side: 78 to 82 degrees F." Tank setup: "Cool side should run 75 to 85F, with nighttime dropping to around 70 to 75F." The hub never mentions a night drop at all.
+- Humidity. Hub: "High humidity (60 to 70%) in the cool/burrow area." Tank setup: "Around 50% ambient, with access to a genuinely humid burrow."
+- Substrate. Hub: "12 inches or more". Tank setup: "12 to 24 inches or more". The hub checklist, the thing I would actually shop from, says "12 inch+", which is the tank guide's failing grade.
+- Vet. Hub: "Annual vet wellness check | $70 | $120". Cost: "A routine annual exam runs $50 to $100."
+- Diet. The hub argues for an invertebrate-heavy diet, then its checklist reads "Varied whole prey diet (roaches, eggs, mice, rats)", putting the two items it just blamed for killing the species on my shopping list.
+
+**3. The set as a whole**
+
+I could build the enclosure, wire the heat and light, buy legally, and handle the animal. I could not feed it with confidence. The only feeding schedule in the whole set is one hub line, "Feed juveniles daily. Feed adults 3 to 5 times per week", and no deep dive repeats, sources, or refines it. No portion size, no supplement dusting frequency despite calcium being on every list, no guidance on what a healthy adult weighs.
+
+Questions raised on one page and answered on another without being told:
+- Cost says many arrive "stressed, parasitized"; health says get a fecal exam proactively. Neither points at the other, and neither points at the shared quarantine guide.
+- Health blames respiratory infection on low temperatures; tank setup has the actual numbers.
+- Health says correct obesity by "encouraging exercise via a properly large enclosure"; the 8x4x4 page is what that means.
+- Handling says undersizing the enclosure causes behavioral problems; enrichment is the page about that.
+
+**4. Overlap and conflict across the deep dives**
+
+Read twice or more: the obesity and fatty liver story appears in full on cost, health, enrichment, and legal. The 8x4x4 admission appears near-verbatim on cost and tank setup. "Overfeeding is the single biggest issue" is on four pages.
+
+Conflicts:
+- Lifespan. Hub: "5 to 8 years instead of the 15 to 20 years". Cost: "Commonly cited at 10 to 15 years, with 15 to 20 achievable" and elsewhere "dying in their early teens or younger". Early teens and 5 to 8 years are not the same claim.
+- Enclosure cost. Hub: "8x4x4 ft+ custom enclosure or room | $500 | $1200". Cost: "Enclosure (8x2x2ft, partial match only) | $650 - $730", which is the wrong-size box priced above the hub's floor for a right-sized one.
+- Legal, internally. "the six places that do restrict it are worth reading individually", then a table of eleven jurisdictions, then "Three of the six restrictions" and "Rhode Island is the only one of the six", then "Forty-one of the 52". The table and the final count agree; the word "six" is stale in three places.
+
+**5. One link per page**
+
+- 00 hub: none needed, the sidebar carries every one.
+- 01 encyclopedia: "Despite a reputation for being tameable, savannah monitors in captivity frequently suffer from obesity and shortened lifespans due to improper high-fat diets." To the health issues guide.
+- 02 cost: "An adult needs an 8x4x4 foot custom build, and it's worth being upfront here: the enclosure above is an honest partial-match substitute". To the enclosure setup guide.
+- 03 handling: "Overfeeding, the single biggest issue with this species." To the health issues guide.
+- 04 health: "Manageable at home through genuine diet correction and encouraging exercise via a properly large enclosure". To the enclosure setup guide.
+- 05 tank setup: "Worth being upfront here: a ready-made 8ft PVC modular enclosure is actually 8x2x2ft". To the cost guide.
+- 06 enrichment: "Do not add calories in the name of enrichment, because obesity is the defining welfare problem in captive savannah monitors." To the health issues guide.
+- 07 legal: "Fatty liver disease kills more pet savannah monitors young than anything else, and it is entirely a husbandry outcome." To the health issues guide.
+
+**6. Trust**
+
+Doubts: two sentences in the enrichment guide are stranded with their subject missing, "Other quantities are available and an enclosure for this species will need many" and "The board is sized for a lizard and not a dog, which is the gap that used to sit here", which reads like a product was pulled and the prose was not. The legal guide's "six" against its own eleven-row table. The size spread across three pages. And the hub telling me rodents kill this species, then listing mice and rats on the checklist.
+
+Most convincing sentence: "Achieve this by pouring water directly into the deep substrate in one area and providing a humid hide, rather than trying to raise ambient humidity across the whole enclosure." That is somebody who has tried to fog an eight-foot box and given up.
+
+**7. Set grade: B-**
+
+The build and legal pages are genuinely good, and the set is undone by a hub whose numbers fight the pages underneath it and by a feeding question nobody answers.
+
+First two changes:
+1. Make the hub a summary of the deep dives instead of a fourth opinion: one size, one basking range, one cool side, one humidity target, one vet price, and drop mice and rats from the checklist.
+2. Write the feeding page. Schedule by age, portion, supplement dusting frequency, what a healthy body looks like with numbers, and link it from health and enrichment.
+
+**Not covered anywhere**
+
+Checked against the Health and More shared guides first. Quarantine, shedding, power outages and sitters, Salmonella, stool and hydration checks, and thermostat and probe placement are all covered there, so they are off this list.
+
+- Feeding schedule, portion size, and how to adjust either as the animal grows. Only one unsupported hub line.
+- Calcium and D3 dusting frequency. Named as a purchase on three pages, never given a schedule.
+- What a healthy adult weight or body condition score actually is. Health links out to a general body condition page but gives no monitor numbers.
+- How to buy one: captive-bred versus wild-caught sourcing, and what to check on the animal before money changes hands. Flagged as the core risk on cost and health, never answered.
+- Building the 8x4x4: materials, ventilation, floor loading, and how to contain 12 to 24 inches of damp soil.
+- Maintenance of a deep soil bed: spot cleaning, full changes, how often.
+- How to find a vet with monitor experience, called essential on the hub.
+- Free-roam safety, raised on the hub and dropped everywhere else.

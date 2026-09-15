@@ -10265,3 +10265,107 @@ across every species with a legal guide.
 - Bonding is the sharpest. The set tells the reader to buy two eight
   times and never tells them how, and four pages say introductions of
   unfamiliar adults fail.
+
+## Savannah Monitor (2026-09-15, batch I, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. Savannah monitor was
+picked for batch I as the lizard and to clear one of the six enrichment
+guides carrying the "Other quantities are available" template fragment.
+
+Set grade: B-. "The build and legal pages are genuinely good, and the set
+is undone by a hub whose numbers fight the pages underneath it and by a
+feeding question nobody answers." Tank setup A, handling A-, legal A-,
+encyclopedia B+, enrichment B, cost B-, hub C+, health C+.
+
+### The missing feeding guide
+
+This species has no feeding guide, and the reader's summary of what that
+cost them is the sharpest sentence in the batch: "I could build the
+enclosure, wire the heat and light, buy legally, and handle the animal. I
+could not feed it with confidence."
+
+The only feeding schedule anywhere in the set was one hub line, "Feed
+juveniles daily. Feed adults 3 to 5 times per week," which no article
+repeated or sourced. It is also wrong: LafeberVet and Tree of Life Exotic
+Pet Medical Center, the two veterinary sources the set already cites, both
+independently say adults eat two to three times a week.
+
+Per the standing move for a species with no feeding guide, a sourced Diet
+Basics section now sits in the tank setup guide: gut-loaded insects as the
+staple, lean mice, chicks or freshwater fish as occasional items, juveniles
+daily or every other day and adults two to three times a week, calcium
+dusting with D3 only where UVB is absent, a weekly multivitamin, and
+LafeberVet's minimum 2:1 calcium to phosphorus ratio. On portion the
+honest answer is that the veterinary literature does not give one, and the
+section says so.
+
+### The hub fought its articles on eight figures
+
+All gone rather than moved.
+
+- Size, three figures across three pages. Hub: 3 to 5 ft, 6 to 15+ lbs.
+  Handling: 3 to 4 feet, 8 to 15 pounds. Encyclopedia: 2.5-4 feet. The
+  reader: "Three different animals." Tree of Life Exotics settles it at
+  "3-4 ft (90-120 cm) average adult length; 8-15 lbs (3.6-6.8 kg)," which
+  is the handling guide's figure exactly, so the handling guide is the
+  source and the encyclopedia now matches.
+- Basking. Hub: 130 to 150F surface. Tank setup: 140 to 150F. "A 130F
+  floor is ten degrees of daylight between two pages."
+- Cool side. Hub: 78 to 82F, and no night drop at all. Tank setup: 75 to
+  85F with nights at 70 to 75F.
+- Humidity. Hub: 60 to 70% in the burrow area. Tank setup: around 50%
+  ambient plus a genuinely humid burrow.
+- Substrate. Hub: 12 inches or more, and its shopping checklist said
+  "12 inch+". Tank setup: 12 to 24 inches or more. The reader noticed
+  that the checklist, the part they would actually shop from, carried the
+  failing figure.
+- Vet exam. Hub: $70 to $120. Cost guide: $50 to $100.
+- Enclosure cost. Hub: $500 to $1200 for an 8x4x4 build. Cost guide: $650
+  to $730 for an 8x2x2 that does not fit the animal. The hub priced the
+  right-sized box below the wrong-sized one.
+- Lifespan. Hub: 5 to 8 years. Cost guide: 10 to 15 commonly cited, 15 to
+  20 achievable, with many dying in their early teens.
+
+And the defect that is not a number: the hub argued for an
+invertebrate-heavy diet and then listed "Varied whole prey diet (roaches,
+eggs, mice, rats)" on the checklist, "putting the two items it just
+blamed for killing the species on my shopping list."
+
+### Deep-dive fixes
+
+- Legal guide, wrong about itself in three places. It says "the six
+  places that do restrict it," "Three of the six restrictions," and
+  "Rhode Island is the only one of the six," above its own eleven-row
+  table and its own closing "Forty-one of the 52." The article was
+  written when the matrix held six jurisdictions and five were added
+  later. Corrected to eleven, and the Rhode Island paragraph now names
+  the other permit routes: five outright bans, six paperwork.
+- Enrichment guide, two stranded sentences. "Other quantities are
+  available and an enclosure for this species will need many" and "The
+  board is sized for a lizard and not a dog, which is the gap that used
+  to sit here." The reader: "reads like a product was pulled and the
+  prose was not." Both rewritten as real sentences. This clears one of
+  the six enrichment guides carrying the fragment; the other five,
+  Madagascar hissing cockroach, chinchilla, ackie monitor, Argentine
+  tegu and hermit crab, are still open.
+- Encyclopedia wildLifespan held a captive figure again, "10-20 years."
+  Seventh instance across batches G, H and I. Now says the wild figure is
+  not well documented.
+- Six of the reader's seven link asks added. The encyclopedia one was
+  skipped because encyclopedia overviews render as plain text and no
+  other entry carries a link.
+
+### Open
+
+- The eight things not covered anywhere, in docs/READER_LOG.md. Three of
+  them, feeding schedule, portion, and supplement frequency, are now
+  answered in the tank setup guide. What remains: what a healthy adult
+  weight or body condition score actually is with monitor numbers, how to
+  buy one and what to check before paying, building the 8x4x4 (materials,
+  ventilation, floor loading, containing damp soil), maintenance of a deep
+  soil bed, how to find a vet with monitor experience, and free-roam
+  safety.
+- The health guide is the weak page and the reader was blunt about it:
+  "Finished it, fast, because it is thin. It names four problems and says
+  see a vet." It is the page that should carry body condition numbers for
+  this species and instead links out to a general one.

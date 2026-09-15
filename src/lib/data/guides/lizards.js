@@ -661,62 +661,108 @@ Respiratory infections result from stagnant air and temperature fluctuations. Th
     image: "/assets/guides/savannah-monitor.jpg",
     tagline: "The powerful, intelligent monitor that needs serious space and a serious keeper!",
     funFact: "Savannah monitors are built for digging. In the wild they may create burrows several feet deep to escape the African heat. A deep substrate is one of the most important enrichment features you can give them!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Adult housing is often custom-built; setup range reflects that.
-    costs: {
-      setup: [
-        { item: "8x4x4 ft+ custom enclosure or room", low: 500, high: 1200 },
-        { item: "12 in+ deep substrate (topsoil/sand mix)", low: 100, high: 200 },
-        { item: "High-wattage basking bulb + fixture", low: 30, high: 60 },
-        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
-        { item: "Quality thermostat", low: 40, high: 70 },
-        { item: "Infrared thermometer gun", low: 25, high: 40 },
-        { item: "Large water tub for soaking", low: 30, high: 60 },
-      ],
-      annual: [
-        { item: "Varied diet (roaches, eggs, occasional mice/rats)", low: 250, high: 450 },
-        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
-        { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (high-wattage basking)", low: 120, high: 220 },
-        { item: "Annual vet wellness check", low: 70, high: 120 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Quarantine, hygiene, the thermostat
+    // probe and the power-outage line cite the shared reptile guides in the
+    // sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // savannah monitor set test (docs/READER_REVIEWS.md).
+    //
+    // This species has no feeding guide, so the diet rows copy the Diet
+    // Basics section added to the tank setup guide from LafeberVet and Tree
+    // of Life Exotics, the two veterinary sources the set already cites.
+    // That section exists because the reader could build the enclosure and
+    // not feed the animal: the only schedule anywhere in the set was one
+    // hub line no article repeated or sourced.
+    //
+    // The old hub fought its articles on eight figures, all gone rather than
+    // moved: size (3 to 5 ft and 6 to 15+ lbs, against the handling guide's
+    // 3 to 4 ft and 8 to 15 lbs, which LafeberVet's own clinic source
+    // matches), basking (a 130°F floor against the setup guide's 140 to
+    // 150), cool side (78 to 82°F against 75 to 85 with a night drop the hub
+    // never mentioned), humidity (60 to 70% in the burrow area against about
+    // 50% ambient plus a genuinely humid burrow), substrate (12 inches
+    // against 12 to 24 or more, with the shopping checklist carrying the
+    // failing figure), the vet exam ($70 to $120 against the cost guide's
+    // $50 to $100), the enclosure line ($500 to $1200 for a right-sized
+    // build, under the cost guide's $650 to $730 for a wrong-sized one),
+    // and lifespan (5 to 8 years against the cost guide's early teens).
+    // The old checklist also read "Varied whole prey diet (roaches, eggs,
+    // mice, rats)" directly under an argument that rodents are what kill
+    // this species.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "Eleven jurisdictions restrict it, five as outright bans and six as paperwork, and the other 41 place no restriction at all. Louisiana is the one state that decided about this species in particular, naming Varanus exanthematicus on its prohibited nonnative list.", source: "savannah-monitor-legal-guide" },
+        { label: "Day one", value: "A new lizard is quarantined 3 to 6 months away from any reptile you already keep, in a separate room on plain paper towel, with its own tools, and a vet check within two weeks of acquiring it with a fresh fecal sample.", source: "reptile-quarantine-guide" },
+        { label: "Where it came from", value: "Many are wild-caught or farmed in bulk for the pet trade, which keeps supply high and price low, and also means a real share arrive stressed, parasitized, and with a shorter life expectancy than a captive-bred animal would have.", source: "savannah-monitor-cost-guide" },
+        { label: "Parasites", value: "Genuinely common in this species, particularly wild-caught or farmed animals. A fecal exam is worth doing proactively for any newly acquired savannah monitor rather than waiting for symptoms.", source: "savannah-monitor-health-issues-guide" },
+        { label: "Adult size", value: "3 to 4 feet long and 8 to 15 pounds, genuinely large and strong enough that adult handling calls for real caution. Sharp teeth, strong claws, and a whip-capable tail are all real defensive tools on an animal this size.", source: "savannah-monitor-handling-guide" },
+        { label: "Enclosure", value: "A hatchling can start around 36x24x20 inches, but a single adult needs an 8-foot by 4-foot by 4-foot enclosure at minimum. This is the current welfare standard and reflects genuine need, not excess. Floor space matters more than height, and it is one monitor per enclosure.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Nothing fits", value: "A ready-made 8ft PVC modular enclosure is actually 8x2x2ft, a partial match on length only, well short of the 8x4x4ft footprint an adult needs. True adult-sized housing for this species is typically a DIY build or ordered direct from a manufacturer.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Basking", value: "Basking surface temperature should reach 140 to 150F, measured directly with an infrared thermometer rather than an air temperature reading. Use a cluster of halogen flood bulbs on a thermostat: this species needs multiple bulbs working together to create adequate heat across a large enclosure.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Cool side and night", value: "Cool side should run 75 to 85F, with nighttime dropping to around 70 to 75F. Avoid ceramic heat emitters, red or blue bulbs, or heat mats as the primary basking heat source, they don't provide the intensity this species needs.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an overhead source, follow your controller's own instruction and confirm the result with independent checks.", source: "reptile-heating-thermostats-guide" },
+        { label: "Humidity", value: "Around 50% ambient, with access to a genuinely humid burrow where conditions run considerably wetter. Achieve this by pouring water directly into the deep substrate in one area and providing a humid hide, rather than trying to raise ambient humidity across the whole enclosure.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Substrate", value: "Deep is the operative word, 12 to 24 inches or more of a diggable soil, sand, and clay mix that genuinely holds a burrow shape. A topsoil and play sand blend, or a product like Zoo Med Excavator Clay, both work. Avoid shallow substrate or loose, particulate-only setups that collapse rather than holding tunnels.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO bulb in the 10 to 12% range, spanning roughly half the enclosure, positioned 14 to 16 inches from the basking area. Pair with a bright 6500K daylight bulb. Adjust photoperiod seasonally, around 11 hours in winter, 13 in summer.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Water basin", value: "Large enough for the monitor to fully submerge its entire body, not just a shallow dish. Combined with the humid burrow, this genuinely matters for hydration and shedding, and a big, dry enclosure with just a small water bowl isn't adequate regardless of how large the dry footprint is.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Diet", value: "The staple is gut-loaded insects: dubia roaches, crickets, locusts, superworms, silkworms, grasshoppers, crayfish and other low-fat foods. Lean mice, chicks or freshwater fish belong in the occasional column. Skip processed meats and dog or cat food entirely.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "How often", value: "Juveniles eat daily or every other day. Adults eat two to three times a week, a figure LafeberVet and Tree of Life Exotics give independently.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Supplements", value: "Dust insects with calcium, without D3 where UVB is running and with D3 where it is not, and add a multivitamin weekly. LafeberVet asks for a calcium supplement low in or free of phosphorus, at a minimum calcium to phosphorus ratio of 2:1.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Portion", value: "No number attached to it in the veterinary literature: frequency and food choice do most of the work. An animal putting on a rounded, heavy body shape is being fed too richly whatever the portion size says.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "The thing that kills them", value: "In the wild, savannah monitors eat a lean, largely insect-based diet on a seasonal cycle. In captivity that rhythm disappears and animals get fed rich food year-round with a fraction of the activity level, which is why obesity and hepatic lipidosis are the signature problem here.", source: "savannah-monitor-health-issues-guide" },
+        { label: "Handling", value: "Pick up from underneath rather than from above, since reaching down from above mimics a predator attack and triggers defensive reactions. Support the full body and tail. As adults grow, routine tasks like nail trims may genuinely require two or three people experienced with reptile restraint.", source: "savannah-monitor-handling-guide" },
+        { label: "Stop signals", value: "Hissing, open-mouthed snapping, puffing out the throat, standing up on the hind limbs, and flicking the tail. LafeberVet's instruction is not to attempt handling while any of those is on display unless you are an experienced reptile handler.", source: "savannah-monitor-handling-guide" },
+        { label: "Feed with tongs", value: "Put food in and take leftovers out with tongs, because a hungry monitor may mistake moving fingers for prey, and wash your hands after handling its food. Keep the nails trimmed, since they can become very sharp and painful.", source: "savannah-monitor-handling-guide" },
+        { label: "Enrichment", value: "Substrate deep enough for a real burrow with a damp lower layer first, then enclosure floor area, then puzzle and extraction feeding delivering the existing ration, then a humid retreat, then target and station training, then scent novelty, and rearrangement last.", source: "savannah-monitor-enrichment-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Budget", value: "Juveniles run $150 to $300 and adults $300 to $800. Setup commonly runs well past $500 and sometimes exceeds $1,000, and upkeep is roughly $30 to $50 a month. A routine annual exam runs $50 to $100.", source: "savannah-monitor-cost-guide" },
+        { label: "Lifespan", value: "Commonly cited at 10 to 15 years, with 15 to 20 achievable under excellent husbandry. Many pet savannah monitors die well before that, in their early teens or younger, from fatty liver disease, kidney failure, or gout, nearly all tied directly to overfeeding.", source: "savannah-monitor-cost-guide" },
       ],
     },
-    sections: {
-      housing: "Adult savannah monitors can reach 3 to 5 ft and require enormous enclosures. A minimum 8x4x4 ft is recommended, and many keepers build custom rooms. Deep substrate (12 inches or more of a 50/50 topsoil/sand mix) is essential for burrowing and thermoregulation. A very hot basking spot (130 to 150 degrees F surface) is critical. Ambient warm side: 90 to 95 degrees F. Cool side: 78 to 82 degrees F. Strong desert UVB (Arcadia Dragon 12%) is mandatory. High humidity (60 to 70%) in the cool/burrow area, low humidity under the basking spot.",
-      diet: `Savannah monitors are carnivores that benefit from a varied diet reflecting their natural feeding habits. In the wild, savannah monitors eat a wide variety of invertebrates, small vertebrates, and eggs - not primarily rodents. Research consistently shows that monitors fed primarily on mice and rats develop severe obesity, fatty liver disease, and cardiac problems. An invertebrate-heavy diet is significantly healthier.
-
-Appropriate feeders include large dubia roaches, superworms, crickets, hornworms, silkworm pupae, and large insects. Whole prey items - appropriate-sized mice, rats (infrequently), raw quail, feeder fish, and whole raw eggs - provide variety and nutritional completeness. Eggs (raw chicken or quail) are an excellent regular food item.
-
-Feed juveniles daily. Feed adults 3 to 5 times per week. Watch body condition carefully - a healthy savannah monitor has visible muscle tone but no pronounced fat deposits on the neck or limbs. Obesity is one of the most common and serious welfare problems in pet savannah monitors.`,
-      enrichment: `Deep burrowing substrate is the most important enrichment. Savannah monitors in the wild create burrows many feet deep. A minimum of 12 inches of substrate (topsoil/sand mix) allows natural burrowing behavior that is fundamental to their physical and psychological wellbeing.
-
-Provide large rock structures (securely stacked), cork bark hides, climbing logs and branches, and a large water tub for soaking. Savannah monitors can become remarkably tame and interactive with consistent, confident handling from a young age. Mental stimulation through foraging enrichment (hiding prey in substrate or under rocks), novel objects, and varied prey items prevents the boredom that leads to stereotypic pacing behavior.
-
-Free-roam time in a safe, supervised area provides exercise and exploration opportunities beyond the enclosure. Savannah monitors that are handled regularly and given enrichment opportunities are genuinely engaging, interactive animals.`,
-      health: `Obesity from an all-rodent diet is the most common and serious welfare problem in savannah monitors. Whole-mammal diets (exclusively mice and rats) cause progressive fatty liver disease, cardiovascular problems, and lifespan reduction to 5 to 8 years instead of the 15 to 20 years possible with appropriate care. An invertebrate-diverse diet with only occasional whole prey mammals dramatically improves long-term health outcomes.
-
-Metabolic Bone Disease from inadequate UVB causes soft bones and skeletal deformities. Strong desert UVB (Arcadia Dragon 12%) is mandatory and should run on a consistent schedule. Replace bulbs on schedule - UV output degrades before visible light does.
-
-These are powerful animals. Adult savannah monitors can inflict significant injuries with their tail (whipping), claws, and jaws. Approach with confidence and calm, never fear or aggression. Annual veterinary wellness checks with a reptile vet experienced in monitor lizards are essential.`,
-      checklist: [
-        "8x4x4 ft+ custom enclosure or room",
-        "12 inch+ deep substrate (topsoil/sand mix)",
-        "High-wattage basking bulb (130 to 150 degrees F surface)",
-        "Strong desert UVB (T5 HO Arcadia Dragon 12%)",
-        "Quality thermostat",
-        "Digital thermometer (IR gun essential)",
-        "Large water tub for soaking",
-        "Varied whole prey diet (roaches, eggs, mice, rats)",
-        "Calcium + multivitamin supplements",
-        "Reptile vet with monitor lizard experience",
+    emergencyCard: {
+      source: "savannah-monitor-health-issues-guide",
+      callNow: [
+        "A rounded, heavy body shape, reduced activity, and general lethargy (obesity and hepatic lipidosis). Manageable at home through diet correction and a properly large enclosure, but advanced liver or organ disease needs a vet and may not be fully reversible by then",
+        "Soft or deformed bones and fractures (metabolic bone disease). Always see a vet",
+        "Laboured breathing from temperatures running too low or humidity mismanaged (respiratory infection). Always see a vet, this needs antibiotics",
+        "Any newly acquired monitor, symptoms or not: a fecal exam, since parasites are genuinely common in wild-caught and farmed animals",
+        "A bite that breaks the skin gets cleaned, and a deep one gets a doctor: a 2011 review cites a case of Pseudomonas aeruginosa septic arthritis after a savannah monitor bite",
       ],
+      vetLine: "Exotic vet workups for obesity, parasites, or metabolic bone disease can run into the hundreds, and given how common these issues are in this species, it's worth budgeting for rather than hoping to avoid. Body condition scoring is a more honest read on weight than eyeballing an animal you see every day.",
     },
+    routes: [
+      { slug: "savannah-monitor-cost-guide", line: "$150 to $800 for the animal, why that price is part of the problem, a setup that runs past $1,000, and the gap between what this species can live and what it usually does." },
+      { slug: "savannah-monitor-tank-setup-guide", line: "The 8x4x4 foot standard and why nothing off the shelf meets it, a 140 to 150F basking surface, two feet of diggable substrate, the full-submersion basin, and what to feed." },
+      { slug: "savannah-monitor-handling-guide", line: "Why this is not the ackie, the five warning signals that end a session, the grip for when an animal has to be controlled, and the nail trim that takes three people." },
+      { slug: "savannah-monitor-health-issues-guide", line: "Obesity and fatty liver disease as the defining problem, the wild feeding rhythm that explains it, MBD, and the parasite screen every new animal needs." },
+      { slug: "savannah-monitor-enrichment-guide", line: "Eight of eight monitors opening a puzzle tube in ten minutes, why that evidence is genus-level rather than species-level, and puzzle feeding that adds work instead of calories." },
+      { slug: "savannah-monitor-legal-guide", line: "Legal in 41 of 52 jurisdictions, the one state that names this species, and the Arkansas list that clears ten monitors and stops one name short." },
+    ],
+    buyList: [
+      "8x4x4 ft enclosure, realistically a DIY build or a direct order",
+      "Cluster of halogen flood bulbs",
+      "Thermostat for the basking cluster",
+      "Infrared thermometer for surface readings",
+      "T5 HO UVB in the 10 to 12% range",
+      "6500K daylight bulb",
+      "12 to 24+ inches of diggable soil, sand and clay mix",
+      "A humid hide and a way to wet one area of substrate",
+      "Water basin big enough for full submersion",
+      "Rock stacks, logs and varied terrain",
+      "Gut-loaded feeder insects",
+      "Calcium without D3, and a multivitamin",
+      "Feeding tongs",
+      "Extraction puzzle feeder",
+      "Clicker and target stick",
+      "An exotics vet who sees monitors",
+    ],
     faqs: [
-      { q: "What is the biggest mistake in savannah monitor care?", a: "Feeding primarily or exclusively rodents. A diet of mice and rats causes severe obesity, fatty liver disease, and cardiovascular problems that dramatically shorten lifespan to 5 to 8 years instead of the 15 to 20 years achievable with appropriate care. Wild savannah monitors eat primarily invertebrates. An invertebrate-heavy diet - dubia roaches, superworms, eggs, large insects - is the correct dietary model, with whole prey mammals offered only occasionally." },
-      { q: "How big do savannah monitors get?", a: "Adults typically reach 3 to 5 feet in total length and weigh 6 to 15+ lbs. This is a large, powerful animal requiring enormous housing - 8x4x4 ft at minimum, and many dedicated keepers build custom rooms. Prospective owners should research adult size requirements thoroughly before acquiring a hatchling." },
-      { q: "Do savannah monitors become tame?", a: "Yes, with consistent confident handling from a young age, many savannah monitors become remarkably calm and tolerant. Adult tame monitors can be handled confidently and even enjoy interaction. The key is consistent calm handling that builds trust - never fear or forced interaction. Adults that were handled regularly as juveniles are dramatically different animals from those that were not." },
-      { q: "How hot does a savannah monitor's basking spot need to be?", a: "130 to 150 degrees F at the surface, measured with an infrared temperature gun. Without adequate basking temperatures, savannah monitors cannot properly thermoregulate, digest food, or activate their immune systems. High-wattage halogen or flood bulbs in a quality fixture achieve these temperatures." },
-      { q: "How long do savannah monitors live?", a: "With an invertebrate-based diet, appropriate housing (8x4x4 ft+), correct basking temperatures, and regular veterinary care, savannah monitors can live 15 to 20 years. The species has a reputation for short captive lifespans because most are fed primarily rodents - this is an entirely preventable outcome." },
+      { q: "What size enclosure does a savannah monitor need?", a: "A hatchling can start near 36x24x20 inches, but one adult needs 8 by 4 by 4 feet at minimum, which is the current welfare standard rather than excess. Floor space beats height for a ground-dweller, and it's one monitor to an enclosure." },
+      { q: "How hot does a savannah monitor's basking spot need to be?", a: "140 to 150F on the basking surface, read directly with an infrared thermometer rather than off an air temperature. Cool side 75 to 85F, nights 70 to 75F." },
+      { q: "What and how often does a savannah monitor eat?", a: "Gut-loaded insects as the staple, with lean mice, chicks or freshwater fish in the occasional column. Juveniles eat daily or every other day, adults two to three times a week. Dust with calcium and add a multivitamin weekly." },
     ],
   },
   {
