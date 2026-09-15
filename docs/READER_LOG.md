@@ -4332,3 +4332,92 @@ First two changes: make the hub inherit its numbers from the deep dives instead 
 - Enclosure cleaning and substrate replacement schedule.
 - Cohabitation: whether two can share an enclosure, and whether males fight.
 - Sexing: the hub says females are smaller, and nothing tells you how to sex one.
+
+---
+
+# Red-Footed Tortoise: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch I. Raw and unedited.
+
+## 1. Page by page
+
+- **00 hub.** Finished it. Act on: the checklist and the two cost tables. But its numbers fight the deep dives. **C**
+- **01 encyclopedia.** Finished it, short. Act on: almost nothing, it is natural history. The Lenten-dish and CITES-export history is the only thing here I could not get elsewhere. **B**
+- **02 cost.** Finished it. Act on: a real budget, a named breeder with listed prices. **B+**
+- **03 handling.** Finished it. Act on: two-handed low support, and the year-by-year growth chart that sizes the adult enclosure. **B**
+- **04 health.** Finished it fast. Act on: the symptom-to-cause table in my head, especially dry-and-cool causing RI. **A-**
+- **05 tank setup.** Finished it. Act on: everything, this is the build document. **A-**
+- **06 feeding.** Finished it. Act on: the 90/10 split, the protein list, the avoid list. **A-**
+- **07 enrichment.** Finished it, and it was the only page that surprised me. Act on: scatter feeding, target training, the priority order. **B+**
+- **08 legal.** Finished it. Act on: check my state, and do not buy a hatchling in NYC. **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place. It is the only page with range, taxonomy history, IUCN and CITES status, and it does not repeat husbandry.
+
+The hub does not. It is a compressed rewrite of the deep dives, and where it differs it is wrong.
+
+- Floor space. Hub: "Adult red-footed tortoises need at least 32 to 72 sq ft of floor space." Tank setup: "Plan for an indoor minimum around 18 to 24 square feet of floor space for one adult." That is not rounding, it is double.
+- Annual cost. Hub's annual table sums to about $375 to $645. Cost guide: "Roughly $650 to $850 a Year." The hub's ceiling is below the article's floor.
+- Calcium. Hub: "calcium (without D3 most feedings, with D3 twice weekly for indoor animals without natural sunlight)." Feeding: "Dust food with a calcium and D3 supplement several times a week."
+- Diet split. Hub: "about 55% fruit, flowers, and leafy greens; 35% grasses and vegetables." Feeding: "about 70% leafy greens, 20% other vegetables, and 10% fruit," with fruit "commonly cited at 10 to 15%." The hub's lump lets fruit run far past that.
+- Night floor. Hub: "nighttime lows no cooler than 65 to 70 degrees F." Tank setup: "Keep the nighttime floor from dropping much below 70°F."
+- UVB. The hub prescribes Arcadia 12% flat; tank setup says researchers put this forest species in a lower Ferguson zone and suggests Arcadia Forest 6%.
+
+## 3. Could I keep one
+
+Yes, nearly. I could buy, build, heat, humidify, feed, and recognize the five things that go wrong. Still missing, not in any of the nine pages:
+
+- A soaking protocol. Every page says they soak often. None says how often, how deep, how warm, how long.
+- Whether two can live together, and what male-on-male aggression looks like.
+- What to inspect on the animal before paying, and what to do in its first month.
+- Healthy weight for a given shell length, and how often to weigh.
+- How often to change damp substrate. Cost guide says "more often" and stops.
+
+Questions raised on one page, answered on another, with no link: cost guide's "A full adult needs meaningfully more floor space than that" (number is in tank setup); health guide's "raise humidity and warmth in the meantime" (numbers in tank setup); legal guide's "A red-footed tortoise hatchling is inside the prohibition" (handling's growth chart says when it clears four inches); enrichment's humid-substrate priority (tank setup).
+
+## 4. Overlap and conflict across the deep dives
+
+Read three or four times: no-brumation, the protein-deficiency hind-leg paralysis, the 50 to 70 year lifespan, humidity as the defining difference. The protein point appears in the hub, health, feeding and encyclopedia in nearly the same words.
+
+Conflicts:
+- Growth rate, inside one page. Handling body: "roughly 3 to 4 inches by the first birthday, 7 to 9 inches and several pounds by age 2." Its own FAQ: "roughly an inch of shell length a year through the first decade." Cost guide repeats the second.
+- Time to adult. Handling: "Most individuals reach close to full adult size... within 5 to 10 years." Feeding: "juveniles are still building the growth that gets them to adult size, roughly 10 to 15 years by most estimates," yet it drops feeding frequency at 5.
+- Fogger price. Hub table: $40 to $90. Cost guide: "$35 to $60."
+- Pyramiding study date. Health guide: "A 2021 study... (Mendoza et al., 2022)."
+
+## 5. One link per page
+
+- 00 hub: "Adult red-footed tortoises need at least 32 to 72 sq ft of floor space" to the tank setup guide.
+- 01 encyclopedia: "Officially declared CITES exports between 2000 and 2005 came to roughly 35,565 tortoises" to the legal guide.
+- 02 cost: "A full adult needs meaningfully more floor space than that" to the tank setup guide.
+- 03 handling: "a dry, sandy, arid-style substrate is a genuine mismatch for it" to the tank setup guide.
+- 04 health: "while you raise humidity and warmth in the meantime" to the tank setup guide.
+- 05 tank setup: "a basic automatic fogger or misting system ($35 to $60)" to the cost guide.
+- 06 feeding: "many keepers shift to every other day for adults, which helps prevent the overly fast growth that drives shell pyramiding" to the health issues guide.
+- 07 enrichment: "a humid substrate with damp retreats is a welfare input rather than a refinement" to the tank setup guide.
+- 08 legal: "A red-footed tortoise hatchling is inside the prohibition" to the handling guide's growth chart.
+
+## 6. Trust
+
+Doubts: the hub's floor-space and annual-cost numbers contradicting its own articles is the worst of it, because I cannot tell which page to believe on anything else. Handling contradicting itself on growth rate. The health guide's unnamed authorities, "several reptile-vet sources" and "one detailed care resource." The enrichment guide's "A 2025 study" with no author or journal, next to a mislabeled study date on the health page.
+
+Most convincing sentence in the set: "good ventilation still matters, but 'open on top' and 'well-ventilated' aren't the same thing for a species that needs to hold 70 to 80% humidity." That distinction only comes from having fought to hold a number.
+
+## 7. Set grade: B
+
+The deep dives are specific, sourced, and unusually good at saying why this species is not the other two; the hub sits on top contradicting them.
+
+First two changes:
+1. Make the hub agree with the articles or strip its numbers and let it route.
+2. Give the health guide in-body links to the tank setup and feeding guides, since it names the problems and holds none of the fixes.
+
+## Not covered anywhere
+
+Checked against the Health and More list as well as this species' own pages.
+
+- Soaking protocol: frequency, water depth, temperature, duration. Nothing in the set, and the stool and hydration guide assesses hydration rather than prescribing soaks.
+- Keeping two or more together, and male aggression. The sexing and eggs guide identifies sex but not cohabitation.
+- What to check on the animal before buying, and its first-month acclimation. The herpesvirus guide covers quarantine length, not selection or settling in.
+- Healthy weight for shell length and a weighing cadence. The brumation guide's weigh-ins apply only to species that brumate, which excludes this one.
+- How often to change damp substrate in a permanently humid enclosure.

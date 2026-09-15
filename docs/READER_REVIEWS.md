@@ -10065,3 +10065,89 @@ gap: it belongs in a shared freshwater maintenance guide, written once.
 - The acclimation gap is the sharpest, because the health guide names
   shipping stress as a red blotch trigger and then says nothing about
   what to do on arrival.
+
+## Red-Footed Tortoise (2026-09-15, batch I, single pass, before the router hub)
+
+Extractor set of nine pages. One Opus 5 agent. Red-foot was picked for
+batch I as the third tortoise set, after sulcata in batch H and box
+turtle earlier, so the shared chelonian guides get a third read.
+
+Set grade: B. "The deep dives are specific, sourced, and unusually good
+at saying why this species is not the other two; the hub sits on top
+contradicting them." Hub C, health A-, tank setup A-, feeding A-, legal
+A.
+
+### The hub was the whole problem
+
+The reader: "It is a compressed rewrite of the deep dives, and where it
+differs it is wrong." Six figures, all resolved by the router rebuild
+and none carried over.
+
+- Floor space. Hub: "at least 32 to 72 sq ft." Tank setup: "an indoor
+  minimum around 18 to 24 square feet of floor space for one adult."
+  The reader: "That is not rounding, it is double."
+- Annual cost. The hub's annual table summed to roughly $375 to $645.
+  Cost guide: "Roughly $650 to $850 a Year." The hub's ceiling sat below
+  the article's floor.
+- Calcium. Hub: "without D3 most feedings, with D3 twice weekly."
+  Feeding: "a calcium and D3 supplement several times a week."
+- Diet split. Hub: "about 55% fruit, flowers, and leafy greens; 35%
+  grasses and vegetables." Feeding: "about 70% leafy greens, 20% other
+  vegetables, and 10% fruit," with fruit capped at 10 to 15%. The hub's
+  lump let fruit run far past that.
+- Night floor. Hub: "no cooler than 65 to 70 degrees F." Tank setup:
+  "from dropping much below 70°F."
+- UVB. The hub prescribed Arcadia 12% flat. Tank setup carries the
+  Ferguson-zone caveat that puts this forest-edge species lower, with
+  Arcadia Forest 6% as the alternative and real shade as the thing that
+  matters most. The router row carries both camps.
+
+The fogger price conflict (hub $40 to $90, cost guide $35 to $60) went
+with the cost tables.
+
+### Deep-dive fixes
+
+- Health guide: "A 2021 study" cited as "(Mendoza et al., 2022)" in the
+  body and again in the pyramiding FAQ. Now "a controlled study,"
+  matching the Sources block, which carries the full 2022 citation.
+- Handling guide: the growth FAQ said "roughly an inch of shell length a
+  year through the first decade," against its own body, which cites the
+  Hepper chart: 1.5 to 2 inches at hatching, 3 to 4 by the first
+  birthday, 7 to 9 by age 2, 9 to 11 by age 5. The FAQ now reads the
+  chart. The cost guide repeated the same inch-a-year figure and is
+  corrected the same way.
+- Feeding guide: adult size reached "roughly 10 to 15 years by most
+  estimates," while the same guide drops feeding frequency at 5 and the
+  handling guide's sourced chart says most reach close to full adult
+  size within 5 to 10 years. Now the chart's figure.
+- Enrichment guide: "A 2025 study" with no author or journal. The
+  primary paper, Evidence of mood states in reptiles (Animal Cognition,
+  doi 10.1007/s10071-025-01973-y), now sits above the phys.org summary
+  in Sources.
+- Three of the reader's link asks added: health to tank setup on "raise
+  humidity and warmth," handling and cost to tank setup on the substrate
+  mismatch and on floor space, feeding to health on pyramiding.
+
+The reader's second requested change, in-body links from the health
+guide to both the tank setup and feeding guides, is half done on
+purpose: the linking rule caps sibling-suffix links at one per article,
+so the health guide links to tank setup only.
+
+### Also fixed
+
+RELATED_ARTICLES had no entry for red-footed-tortoise-legal-guide, so
+the legal guide was reachable from the hub and from nowhere in the
+sidebar. Sulcata and box turtle both list theirs. Added.
+
+### Open
+
+- The five things not covered anywhere, in docs/READER_LOG.md: a soaking
+  protocol (how often, how deep, how warm, how long), cohabitation and
+  male aggression, what to inspect on an animal before paying and its
+  first month, healthy weight for shell length and a weighing cadence,
+  and how often to change permanently damp substrate.
+- The soaking gap is the sharpest. Every page in the set says this
+  species soaks often and none of them says what that looks like. It is
+  the third tortoise set to raise it: sulcata's reader asked for the
+  same protocol for juveniles. Two instances make it a shared chelonian
+  guide rather than a per-species gap.
