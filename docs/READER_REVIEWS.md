@@ -10692,9 +10692,9 @@ set already cites on three pages.
   that lives in colonies.
 - Enrichment guide citation that was not one. The anchor "study on tokay
   geckos" pointed at our own tokay enrichment post. The reader: "which
-  reads like a citation and is not one." The study is now named in the
-  sentence and cited in Sources, and the internal link says what it
-  actually goes to.
+  reads like a citation and is not one." The study is now named by
+  journal and year in the sentence, its Sources entry was already there,
+  and the internal link says what it actually goes to.
 - The affiliate template fragment, one more shape: "Other flavors and
   sizes are available." Cut.
 - Six of the reader's eight link asks added.
@@ -10880,7 +10880,7 @@ is now the first first-week row and the last route.
   snakes are semi-aquatic, proficient swimmers in the wild." The setup
   guide's is the claim the rest of the set is built on, including a water
   feature sized to swim in, so the enrichment guide now matches it.
-- Six of the reader's eight link asks added, including two to shared
+- Five of the reader's eight link asks added, including two to shared
   guides the set was leaning on without pointing at: the quarantine guide,
   since the handling guide's one-to-two-week settling-in window is not a
   quarantine and the reader noticed, and the sexing and body condition
@@ -11043,7 +11043,14 @@ adultSize claimed this is "the largest freshwater shrimp species commonly
 kept in aquariums." The reader: "which bamboo and vampire shrimp beat
 outright." They do, and both are common enough in the trade for the claim
 to be wrong rather than arguable. Now "large for a dwarf shrimp, though
-bamboo and vampire shrimp are bigger still."
+bamboo and vampire shrimp are bigger still." Checked at the species check,
+since the pass had recorded no source for it: Fishkeeping World's bamboo
+shrimp page gives "up to 2-3 inches" and calls them "a common sight in
+freshwater aquariums", and Wikipedia's Atya gabonensis entry gives "15
+centimetres (6 inches)" for the vampire shrimp, against this species' 2
+inches. The overview field on the same entry still opens "the largest
+shrimp commonly kept in freshwater aquariums", left alone under the
+one-field rule and flagged for Mike.
 
 The wildLifespan field was already right, and worth noting as the shape
 the other nine should have taken: "No biological study of wild lifespan

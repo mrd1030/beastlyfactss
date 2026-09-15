@@ -78,7 +78,7 @@ export const geckoEncyclopedia = [
       habitat: "Tropical coastal vegetation, forest edges, and human structures",
       adultSize: "3.5-4 inches (8.5-10 cm)",
       wildDiet: "Small invertebrates, fruit juice, and nectar",
-      wildLifespan: "Not documented in the wild; as long as 10 years in captivity, with some claims of 15",
+      wildLifespan: "Not documented in the wild; up to 10 years in captivity, with some reports of 15",
       conservation: "Least Concern (IUCN)",
       history: "Auguste Duméril and Gabriel Bibron named the species in 1836, but the work that made it a laboratory animal came much later: Orlando Cuellar and Arnold Kluge documented natural parthenogenesis in it in 1972, and it has been a standard subject for cytogenetics ever since. Later chromosome work showed the species is not one clone but many. Each lineage appears to descend from a separate hybridization between Lepidodactylus moestus and a still undescribed relative, producing diploid animals with 44 chromosomes and triploids with 66. Developmental biologists adopted it because no pairing is needed, every individual lays, and clonemates are genetically identical, and those same traits are what let one stray animal found a colony.",
     },

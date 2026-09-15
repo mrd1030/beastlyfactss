@@ -34,7 +34,7 @@ export const lizardGuides = [
       rows: [
         { label: "Legal", value: "41 of the 52 jurisdictions place no restriction on it at all. The four places it is unavailable, Washington DC, Hawaii, New York City and New Mexico, are not reacting to this species so much as to lizards or monitors in general, and New Jersey, Rhode Island and Maine want a permit.", source: "ackie-monitor-legal-guide" },
         { label: "Day one", value: "Quarantine any new ackie until it's cleared two separate clean fecal checks before introducing it to an established collection, and maintain good general hygiene.", source: "ackie-monitor-health-issues-guide" },
-        { label: "Enclosure", value: "ReptiFiles recommends 5 feet long by 2.5 feet wide by 4 feet tall as the minimum for a single adult, larger than the older 4x2x2 foot standard often quoted for this species. The reason is directly tied to how active ackies actually are: this isn't an animal that thrives in a modest footprint the way a more sedentary lizard might.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Enclosure", value: "The minimum for a single adult is 5 feet long by 2.5 feet wide by 4 feet tall, larger than the older 4x2x2 foot standard often quoted for this species. The reason is directly tied to how active ackies actually are: this isn't an animal that thrives in a modest footprint the way a more sedentary lizard might.", source: "ackie-monitor-tank-setup-guide" },
         { label: "Basking surface", value: "Roughly 130 to 170°F, measured directly on the basking stone or stack with an infrared thermometer, not air temperature. A reading below about 130°F is too cool for this species to properly synthesize vitamin D. Most keepers under-provide heat rather than over-provide it, so erring toward the hotter end is usually the safer mistake.", source: "ackie-monitor-tank-setup-guide" },
         { label: "Cool side", value: "Around 75 to 80°F, giving a real thermal gradient across the enclosure.", source: "ackie-monitor-tank-setup-guide" },
         { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an overhead source, follow your controller's own instruction and confirm the result with independent checks.", source: "reptile-heating-thermostats-guide" },
@@ -61,7 +61,7 @@ export const lizardGuides = [
     emergencyCard: {
       source: "ackie-monitor-health-issues-guide",
       callNow: [
-        "Swollen limbs, soft or malformed bones, lethargy, and difficulty moving normally (metabolic bone disease). Always see a vet. ReptiFiles describes this plainly as a highly preventable disease of neglect, one a properly kept ackie should never develop",
+        "Swollen limbs, soft or malformed bones, lethargy, and difficulty moving normally (metabolic bone disease). Always see a vet. A disease of neglect, and one a properly kept ackie should never develop",
         "Decreased appetite, lethargy, weight loss, and irregular stool (internal or external parasites). See a vet for diagnosis and treatment",
         "Impaction, which can become a genuine emergency if severe, linked to inappropriate substrate ingestion or temperatures too low to support proper digestion",
         "Respiratory infection, linked to incorrect temperature or humidity. Always see a vet",
@@ -71,7 +71,7 @@ export const lizardGuides = [
     },
     routes: [
       { slug: "ackie-monitor-cost-guide", line: "$150 to $450 for the animal, red against yellow, the $800 to $1,500 setup itemized, and why the enclosure rather than the monitor is the real commitment." },
-      { slug: "ackie-monitor-tank-setup-guide", line: "ReptiFiles' 5 by 2.5 by 4 foot minimum, a basking surface hotter than almost any other pet lizard's, two feet of diggable substrate, and what a Retes stack is for." },
+      { slug: "ackie-monitor-tank-setup-guide", line: "The 5 by 2.5 by 4 foot minimum, a basking surface hotter than almost any other pet lizard's, two feet of diggable substrate, and what a Retes stack is for." },
       { slug: "ackie-monitor-feeding-guide", line: "Daily for juveniles and every other day after, the insect staples worth building on, why rodents are the mistake, and six reasons an ackie stops eating." },
       { slug: "ackie-monitor-handling-guide", line: "A lizard that does backflips after crickets, tong-feeding as the bonding tool, and the body language that says stop before it bolts." },
       { slug: "ackie-monitor-health-issues-guide", line: "MBD as a disease of neglect, obesity as the captivity-specific risk, the weekly kitchen scale, and impaction from substrate and cold." },
@@ -98,9 +98,9 @@ export const lizardGuides = [
       "Clicker and target stick",
     ],
     faqs: [
-      { q: "What size enclosure does an ackie monitor need?", a: "ReptiFiles recommends 5 feet long by 2.5 feet wide by 4 feet tall as the minimum for a single adult, larger than the older 4x2x2 foot standard still quoted for the species. Ackies are genuinely active animals, and that footprint reflects it." },
-      { q: "Can I feed my ackie monitor mice or rats?", a: "Only as an occasional treat, genuinely sparingly. Rodents are calorie-dense, and a rodent-heavy diet is directly linked to fatty liver disease, which shortens more captive monitor lifespans than almost anything else. Build the diet on gutloaded insects instead." },
-      { q: "Why are ackie monitors prone to obesity in captivity?", a: "They're naturally so active that they burn far more energy in the wild than most captive setups allow for. Combine that with strong food motivation and free-feeding an adult the way you would a juvenile, and weight gain follows. A large enclosure and a weekly weigh-in do most of the preventive work." },
+      { q: "What size enclosure does an ackie monitor need?", a: "The minimum for a single adult is 5 feet long, 2.5 feet wide, and 4 feet tall. That is bigger than the older 4x2x2 foot standard still quoted for the species, and the reason is activity level: ackies do not thrive in a modest footprint the way a more sedentary lizard might." },
+      { q: "Can I feed my ackie monitor mice or rats?", a: "Only as an occasional treat, never a staple or a weekly habit. Mice and rats are calorie-dense, and a rodent-heavy diet is linked to fatty liver disease in captive monitors." },
+      { q: "Why are ackie monitors prone to obesity in captivity?", a: "Their wild activity level burns far more energy than most captive setups allow for, and they are strongly food motivated. The fix is to cut feeding frequency and amount, give a large enclosure that encourages movement, and weigh weekly on a kitchen scale." },
     ],
   },
   {
