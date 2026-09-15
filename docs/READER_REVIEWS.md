@@ -9979,3 +9979,89 @@ health links reach the same page.
   the cost table nor the old hub checklist, so a reader buying from the
   list could not measure the headline requirement. It is on the router
   hub's buy list now, which is a partial fix.
+
+## Corydoras Catfish (2026-09-15, batch I, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. Corydoras was picked for
+batch I as the standard tankmate for the two tetra sets reconciled in
+batches G and H, so any tankmate or temperature claim in those gets
+checked against fresh work.
+
+Set grade: B. "Strong on the two things that kill cories, substrate and
+dedicated food, but the hub contradicts its own deep dives on money and
+tank size, which is exactly where a buyer starts." Hub B-, feeding B-,
+handling C+, enrichment A.
+
+### Two shipped defects
+
+Both are the kind a checker cannot see and a reader finds in one pass.
+
+- The feeding guide's "Why Corydoras Catfish Stop Eating" section was a
+  numbered list containing only item 1. The reader: "which reads like a
+  page that shipped broken." The article's own title promises the
+  section, its FAQ names four causes, and its cited source is titled "Why
+  Is My Cory Catfish Not Eating? (7 Common Causes)". Restored from that
+  source: settling in, group size, bullying and being outcompeted, water
+  quality, overcrowding, illness, and boredom with the food.
+- The encyclopedia's header read `scientific: "Corydoras aeneus"` while
+  its own history paragraph said "the bronze cory moved to Osteogaster".
+  The 2024 phylogenomic revision (Dias et al., Zoological Journal of the
+  Linnean Society) resurrected seven genera and transferred the bronze
+  cory as Osteogaster aenea. The field now reads "Osteogaster aenea
+  (formerly Corydoras aeneus)", which keeps the name a shopper will
+  actually search.
+
+### The barbel erosion conflict, settled against the health guide
+
+Health guide: barbel erosion "is caused by a combination of sharp
+substrate causing physical damage and elevated nitrates allowing
+bacterial infection to take hold in the wound." Enrichment guide: "No
+controlled study establishes what causes barbel erosion" and "Do not let
+the substrate get dirty, which is the actual barbel risk."
+
+Aquarium Co-Op, which the feeding guide already cites, backs the
+enrichment guide: "smooth sand or gravel is preferred" and, on eroding
+barbels, "it may be caused by other factors like poor water quality"
+rather than substrate type alone. The health guide's confident mechanism
+is now the hedged one, in the body and in both FAQs that repeated it.
+The enrichment guide's behavioral argument for sand, that cories root
+through substrate with their barbels to find food, is the stronger case
+and survives untouched.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, resolved by the router rebuild.
+
+- Tank price. Hub: "10-20+ gallon tank | $60 | $120." Cost guide: "20
+  gallon long tank | $35 - $60." The reader: "Same tank, double the
+  money."
+- Filter price. Hub: "$20 | $35." Cost guide: "$8 - $15."
+- Food cost. Hub annual: "$40 | $70." Cost guide: "$10 to $20 a Month",
+  which is $120 to $240 a year.
+- Tank size. Hub: "A 10 to 20 gallon tank suits a proper school." Setup:
+  "A 20-gallon long tank is the practical minimum for a proper school of
+  six standard-sized cories." Ten gallons is pygmy-only and the hub never
+  said so. Aquarium Co-Op agrees: "For dwarf species, a 10-gallon
+  aquarium may be suitable, but we recommend 20 gallons or more."
+- The hub's setup table omitted a heater and a test kit, both of which
+  the cost guide calls required. Both are on the router hub's buy list.
+- Anatomy. Hub: "scaleless catfish." Health guide and encyclopedia:
+  "armored catfish with sensitive, naked bellies."
+
+### Gaps closed rather than carried
+
+The legacy hub's weekly 20 to 25% water change had no deep dive behind
+it, the fourth fish hub in three batches to lose one after angelfish,
+neon tetra and cardinal tetra. Four instances is no longer a per-species
+gap: it belongs in a shared freshwater maintenance guide, written once.
+
+### Open
+
+- The five things not covered anywhere, in docs/READER_LOG.md: breeding,
+  a named tankmate list, drip or float acclimation on arrival, which
+  species want cooler or warmer water, and telling a dwarf or pygmy
+  species from a standard one at the store when the two need different
+  tanks.
+- The acclimation gap is the sharpest, because the health guide names
+  shipping stress as a red blotch trigger and then says nothing about
+  what to do on arrival.

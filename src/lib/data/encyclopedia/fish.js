@@ -56,7 +56,7 @@ export const fishEncyclopedia = [
     },
   },
   {
-    id: "corydoras-catfish", name: "Corydoras Catfish", scientific: "Corydoras aeneus",
+    id: "corydoras-catfish", name: "Corydoras Catfish", scientific: "Osteogaster aenea (formerly Corydoras aeneus)",
     category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "corydoras-catfish", available: true, image: "/assets/guides/corydoras-catfish.jpg",
     bio: {
       overview: "Corydoras catfish are small, armored, bottom-dwelling fish native to the rivers and streams of South America. They are obligate shoaling fish, meaning they need the company of their own species to feel secure and behave naturally, and they spend much of the day actively foraging through soft substrate with sensitive barbels around their mouth. A unique adaptation lets them gulp air at the surface and absorb oxygen through their intestine, a backup system for the low-oxygen waters they evolved in.",

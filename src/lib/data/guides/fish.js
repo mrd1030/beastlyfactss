@@ -313,46 +313,85 @@ export const fishGuides = [
     image: "/assets/guides/corydoras-catfish.jpg",
     tagline: "The armored little bottom-cleaner that schools, snoozes, and shimmies to the surface for air!",
     funFact: "Corydoras catfish can breathe atmospheric air by gulping it at the surface and absorbing oxygen through their intestine - a backup adaptation for the low-oxygen waters they evolved in. This means an occasional dash to the surface for a quick gulp of air is completely normal behavior, not a sign of a sick or distressed fish.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a proper school of 6+, since they're obligate shoaling fish.
-    costs: {
-      setup: [
-        { item: "10-20+ gallon tank", low: 60, high: 120 },
-        { item: "Gentle filter", low: 20, high: 35 },
-        { item: "Soft sand or smooth fine gravel", low: 15, high: 25 },
-        { item: "Driftwood and plant cover", low: 20, high: 35 },
-      ],
-      annual: [
-        { item: "Sinking wafers + frozen bloodworms", low: 40, high: 70 },
-        { item: "Water conditioner", low: 10, high: 15 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Cycling, the hospital
+    // tank and sick-fish signs cite the shared fish guides in the sidebar's
+    // Health and More list. The old hub priced a tank at double the cost
+    // guide's figure and a filter at more than double, gave "10 to 20 gallon"
+    // without saying 10 is pygmy-only, and omitted the heater and test kit
+    // the cost guide calls required. Reconciled 2026-09-15 for batch I
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Before any fish", value: "A tank that has finished cycling reads zero ammonia and zero nitrite while still processing a dose, which is a different question from how long it has been running.", source: "aquarium-cycling-guide" },
+        { label: "Tank size", value: "A 20-gallon long is the practical minimum for a school of six standard-sized cories; dwarf and pygmy species manage in about 10 gallons. Going to 29 or 30 gallons is better, especially for a group of 8 to 15.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Group size", value: "Six of the same species, minimum. A lone or paired cory hides, darts erratically, and goes off its food, which is what an inadequate group looks like. Treat the number as a welfare requirement.", source: "corydoras-catfish-handling-guide" },
+        { label: "More is better", value: "Six at absolute minimum and more is better. They are social bottom-dwellers that shoal, forage and rest together, and a group of two or three is a visibly less active, more nervous set of fish.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Temperature", value: "72 to 78°F covers most species in the hobby, though preferences vary: some take warmer water, others want it cooler. Unless the room stays warm year-round, run a reliable heater, and hold the number steady rather than chasing a precise one.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 7.0 to 7.8 for captive-bred cories, which is most of what the trade sells. Keep ammonia and nitrite at zero and nitrate low with regular water changes.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Substrate", value: "Soft sand, or smooth, fine, rounded gravel, about 2 inches deep. Sharp or coarse gravel is out, and so are certain specialty planted-tank sands: manufacturers flag some sharp-grained options as unsuitable for bottom-dwellers like cories.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Why sand, really", value: "Corydoras are social foragers that root through the substrate with their barbels to find food, and fine sand is what lets them do it without hurting themselves. The behavioral argument for sand is stronger than the barbel argument ever was.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Flow", value: "Gentle water movement with calm areas to rest in, rather than one strong current everywhere. They also need clear access to the surface, since they gulp air periodically as part of normal breathing.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Lighting", value: "Standard community lighting. Cories are most active at dawn and dusk, so give them shaded cover and hides to retreat into when the tank is bright.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Not algae eaters", value: "The cleanup crew reputation is wrong. Cories pick leftover food off the bottom, which helps but isn't the same job, and they need sinking food of their own. Algae and scraps won't keep them alive.", source: "corydoras-catfish-handling-guide" },
+        { label: "Staple food", value: "A sinking pellet or wafer made for bottom feeders or catfish, around 30 to 40% protein, does the staple work. Worms belong in the rotation regularly: live blackworms, frozen bloodworms, or Hikari Vibra Bites, plus occasional sinking gel foods.", source: "corydoras-catfish-feeding-guide" },
+        { label: "Portion", value: "Once or twice daily, and only what the group clears in 2 to 3 minutes. Start at about one sinking wafer per 3 to 4 fish, or 2 to 3 small pellets each, then adjust to what gets eaten. Food still sitting there after 20 to 30 minutes means cut back next time.", source: "corydoras-catfish-feeding-guide" },
+        { label: "Why flakes fail", value: "Because they feed on the bottom. Flakes get eaten by mid and upper-tank fish long before they sink far enough to matter, so a tank fed exclusively with flakes can leave cories functionally unfed even though food goes in daily.", source: "corydoras-catfish-feeding-guide" },
+        { label: "Feeding after dark", value: "Sinking food fed for them, after lights out if faster tankmates are taking it.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Surface dashes", value: "Corydoras can gulp air and absorb oxygen through the gut, which is normal behavior rather than a symptom. It becomes a warning sign when it happens constantly, which usually means the water is low in oxygen or fouled.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Barbel erosion", value: "The barbels wear down: shortened, red, or gone entirely. It's the signature cory health issue, and the cause is less settled than it is usually stated: eroding barbels may come as much from poor water quality as from grain shape, so a dirty substrate is what to manage first.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Keeping the bottom clean", value: "Regular substrate vacuuming, low nitrate, no uneaten food left to rot. Sharp substrate is not ideal and is a secondary factor next to what is living in a dirty one.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "If barbels go", value: "Caught reasonably early, move to soft sand, do a significant water change, and hold nitrates under 20 ppm from there on. Barbels can regrow over 4 to 8 weeks once conditions improve. Untreated, it can progress to red blotch disease.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Medication sensitivity", value: "They're armored catfish with sensitive, naked bellies, and notably more medication sensitive than many community fish. That means reduced doses, sometimes a half or a quarter of the standard amount, and no full-strength copper, malachite green, or formalin.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Ich", value: "Raise the temperature gradually toward 82°F with strong aeration, and reduce the medication dose. This species doesn't tolerate a full-strength treatment the way many hardier fish do.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Netting one", value: "Take real care, since the pectoral spines lock and tangle in mesh.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Quarantine", value: "A new or sick fish belongs in a bare hospital tank first, and how long it stays there is settled by the rules rather than by how the fish looks.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Budget", value: "$3 to $8 each for the common ones, and groups of six or more are the requirement, so price the school rather than the fish. Roughly $150 to $215 upfront, and $10 to $20 a month after that.", source: "corydoras-catfish-cost-guide" },
+        { label: "Vet costs", value: "Aquatic vets are uncommon. Most cory health problems get handled by the keeper instead, through correcting water quality and using appropriate medication.", source: "corydoras-catfish-cost-guide" },
+        { label: "Lifespan", value: "5 to 10 years is typical, and some individuals live well past that, with occasional reports of up to 15 years in ideal conditions. Plan the tank around it: that's longer than many people expect from a small bottom dweller.", source: "corydoras-catfish-cost-guide" },
+        { label: "Adult size", value: "1 to 3 inches (2.5 to 7.5 cm) depending on species." },
       ],
     },
-    sections: {
-      housing: "A 10 to 20 gallon tank suits a proper school, since corydoras are obligate shoaling fish that need at least six of the same species to feel secure. Soft sand substrate is essential - sharp or rough gravel damages their sensitive barbels, the whisker-like feelers they use to find food. Gentle filtration, driftwood, and plants for cover round out a good setup, kept at 72 to 78 degrees F with well-oxygenated water.",
-      diet: "Corydoras are omnivorous bottom feeders that do best on sinking wafers or pellets formulated specifically for catfish. Supplement with blanched vegetables and frozen bloodworms or brine shrimp for variety. Feed in the evening, or make sure food reaches the bottom before faster mid-water fish eat it all - relying only on leftover flake food from other tankmates does not provide adequate nutrition for corydoras.",
-      enrichment: "Corydoras must be kept in groups of six or more of the same species; solitary or small-group individuals show visible stress and reduced activity compared to a properly sized school. They spend much of the day actively foraging, sifting through soft substrate with their barbels, and displaying playful, synchronized schooling behavior. Periodic surface dashes for air are a natural and healthy part of their routine. They also appreciate caves and plant cover to retreat to when resting.",
-      health: "Barbel damage or erosion from sharp or rough substrate is a very common and entirely preventable problem - always use sand or smooth, fine gravel. Ich and bacterial infections both follow poor water quality. Corydoras are also sensitive to some medications, since many contain copper, which is toxic to scaleless catfish, so always check a treatment's corydoras-safety before dosing the tank. Because they spend their time along the bottom, they're often the first fish affected by settling waste, making regular gravel vacuuming and 20 to 25 percent weekly water changes especially important.",
-      checklist: [
-        "10-20+ gallon tank",
-        "Group of 6+ corydoras of the same species",
-        "Soft sand or smooth fine gravel (no sharp gravel)",
-        "Gentle filter",
-        "Driftwood and plant cover",
-        "Sinking catfish wafers or pellets",
-        "Frozen bloodworms for variety",
-        "Water test kit",
-        "Gravel vacuum for substrate cleaning",
-        "Check medications for copper before treating",
+    emergencyCard: {
+      source: "corydoras-catfish-health-issues-guide",
+      callNow: [
+        "Barbels shortened, red, or gone entirely",
+        "Red or bloody-looking sores on the belly and flanks",
+        "Small white spots resembling grains of salt",
+        "Frayed or receding fins",
+        "Constant dashing to the surface, rather than an occasional gulp",
       ],
+      vetLine: "Aquatic vets are uncommon, so most of this is handled by correcting water quality and using appropriate medication at a reduced dose. This species is notably more medication sensitive than many community fish: sometimes a half or a quarter of the standard amount, and no full-strength copper, malachite green, or formalin.",
     },
+    routes: [
+      { slug: "corydoras-catfish-cost-guide", line: "$3 to $8 a fish and you need six, the $150 to $215 setup, and why the substrate line matters more here than for most community fish." },
+      { slug: "corydoras-catfish-tank-setup-guide", line: "The 20-gallon-long minimum, the substrate that decides everything, gentle flow with calm resting spots, and clear access to the surface." },
+      { slug: "corydoras-catfish-feeding-guide", line: "Why the cleanup-crew reputation starves them, the sinking staple, portion by the group, and seven reasons a cory stops eating." },
+      { slug: "corydoras-catfish-handling-guide", line: "An observation fish, the six-fish welfare floor, and why the dash to the surface is not distress." },
+      { slug: "corydoras-catfish-health-issues-guide", line: "Barbel erosion, red blotch, ich at a reduced dose, and why this species tolerates medication worse than its tankmates." },
+      { slug: "corydoras-catfish-enrichment-guide", line: "What the barbel story actually rests on, the behavioral case for sand, and feeding after lights out." },
+    ],
+    buyList: [
+      "20-gallon long tank, 29 or 30 gallons preferred",
+      "Heater",
+      "Gentle-flow filter",
+      "Water test kit",
+      "Water conditioner",
+      "Soft sand, about 2 inches deep",
+      "Plants and hides for shaded cover",
+      "Sinking pellets or wafers for bottom feeders",
+      "Frozen or live worms for the rotation",
+      "Gravel vacuum",
+      "A group of six or more of one species",
+    ],
     faqs: [
-      { q: "Why does my corydoras keep dashing to the surface?", a: "This is normal air-gulping behavior. Corydoras can breathe atmospheric oxygen through their intestine as a backup to their gills, so an occasional dart to the surface for a gulp of air is healthy, not a sign of a problem." },
-      { q: "How many corydoras should I keep together?", a: "At least 6 of the same species. They are obligate shoaling fish and show visible stress, reduced activity, and duller color in groups smaller than that." },
-      { q: "What substrate is safe for corydoras?", a: "Soft sand or smooth, fine gravel only. Sharp or rough gravel damages their sensitive barbels, the whisker-like feelers around their mouth that they rely on to locate food." },
-      { q: "Are corydoras aggressive?", a: "No - they're among the most peaceful community fish available and make excellent tankmates for nearly any non-aggressive fish species." },
-      { q: "How long do corydoras live?", a: "5 to 10 years is typical with good care, and some especially well-kept individuals have reached 15 years, which is unusually long for a small aquarium fish." },
-      { q: "Are corydoras catfish good pets for beginners?", a: "Yes, genuinely. They're peaceful, hardy, and among the most beginner-friendly community fish available, as long as you commit to a proper school of six or more and soft substrate for their barbels. The main mistake beginners make is buying just one or two, which leaves them visibly stressed." },
-      { q: "Can corydoras live with a bristlenose pleco?", a: "Yes, genuinely well. Both are peaceful, bottom-dwelling, scaleless catfish that need similar water quality, and they're not really in competition since corydoras sift the substrate for food while a [bristlenose pleco](/guides/bristlenose-pleco/) grazes algae off glass, decor, and driftwood. Just remember both are sensitive to copper-based medications, so double-check any treatment before dosing a shared tank." },
+      { q: "Do corydoras catfish eat algae?", a: "Not effectively. Left to live off leftovers and algae film as a self-sufficient cleanup crew, a cory can slowly starve, especially alongside faster, more aggressive eaters. They need dedicated sinking food, offered on purpose every time." },
+      { q: "Does gravel wear down corydoras barbels?", a: "That is the standard explanation, and no controlled study establishes it, or any competing mechanism. What is documented is that substrate of any kind harbors pathogenic bacteria, so a clean substrate matters more than its grain shape, and plenty of keepers have raised healthy corydoras on smooth gravel for decades." },
+      { q: "Why are corydoras catfish more medication sensitive than other fish?", a: "They're armored catfish with sensitive, naked bellies, and notably more medication sensitive than many community fish. That means reduced doses, sometimes a half or a quarter of the standard amount, and no full-strength copper, malachite green, or formalin, which this species tolerates poorly." },
     ],
   },
   {
