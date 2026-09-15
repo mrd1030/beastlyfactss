@@ -189,74 +189,104 @@ export const smallMammalGuides = [
   },
   {
     id: "mouse",
-    name: "Fancy Mouse",
-    emoji: "🐭",
+    name: "Mouse",
+    emoji: "\u{1F42D}",
     difficulty: "Beginner",
     petType: "Small Mammals",
     image: "/assets/guides/mouse.jpg",
     tagline: "The pocket-sized speedster that's cheap to keep but easy to underestimate!",
     funFact: "A male mouse's strong smell comes down to one specific chemical, trimethylamine, that shows up heavily in his urine and barely at all in a female's or a rat's. It's why an all-male mouse cage needs cleaning far more often than the equivalent rat setup.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a small group, since mice should not be kept alone.
-    costs: {
-      setup: [
-        { item: "18x18x10 in cage for 2-3 mice", low: 35, high: 70 },
-        { item: "Smooth exercise wheel (mouse-sized)", low: 12, high: 20 },
-        { item: "Paper-based bedding", low: 12, high: 20 },
-        { item: "Hideouts and tunnels", low: 10, high: 20 },
-        { item: "Water bottle and food dishes", low: 8, high: 15 },
-        { item: "Chew toys and enrichment", low: 10, high: 20 },
-        { item: "Digital thermometer", low: 10, high: 15 },
-      ],
-      annual: [
-        { item: "Mouse-specific pellets or lab blocks", low: 20, high: 35 },
-        { item: "Fresh vegetables (small amounts)", low: 20, high: 35 },
-        { item: "Bedding (ongoing)", low: 40, high: 70 },
-        { item: "Chew toys and enrichment refresh", low: 10, high: 18 },
-        { item: "Annual exotic vet wellness check", low: 40, high: 80 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Reconciled 2026-09-15 after the mouse set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The reader graded the hub C and named the reason precisely: "I would
+    // have bought the wrong cage from it." Its bar spacing said "under half an
+    // inch" in the prose and the checklist, against a setup guide that puts
+    // the maximum safe spacing at a quarter inch (6mm) and warns that even
+    // three-eighths is wide enough for a mouse to squeeze through. The hub's
+    // number was double the safe one, so a buyer following the landing page
+    // loses the animal. That is the most consequential single defect a batch
+    // reader has found.
+    //
+    // Also retired: "mice shouldn't be housed completely alone unless a vet
+    // has specifically advised it", which contradicted the enrichment guide's
+    // solitary housing for adult males and contradicted itself inside the same
+    // section; a coprophagy rate of "roughly six times a day" against the
+    // feeding guide's sourced 9.6 falling to 4.7 on a B12-fortified diet; a
+    // bedding line of $12 to $20 against $18 to $30 and a vet line of $40 to
+    // $80 against $35 to $75; and a checklist listing only a thermometer where
+    // two deep dives require a hygrometer. The hub also never mentioned the
+    // set's most surprising instruction, which is that a glass tank is the
+    // wrong enclosure for this species.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Bar spacing, the number that matters most", value: "No more than about a quarter inch (6mm), and some welfare-focused sources recommend going even tighter, to 5mm. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster. Plenty of cages marketed for \"small animals\", including ones with spacing around three-eighths of an inch, look tight but are still wide enough for a determined mouse.", source: "mouse-tank-setup-guide" },
+        { label: "A wire cage, not a glass tank", value: "This runs against the instinct a lot of small-pet owners bring from other species. Aquariums are not suitable cages for rats and mice, because air circulation is inadequate and therefore ammonia builds up. A solid-sided enclosure, even one topped with a mesh lid, can't move air the way an all-wire cage can.", source: "mouse-tank-setup-guide" },
+        { label: "Enclosure size", value: "A concrete minimum of 18 inches long by 18 inches wide by 10 inches high for a small group of 2 to 3 mice. There's no single evidence-based ideal size beyond that floor, so more floor space and genuine vertical climbing room, using shelves, ramps, and multiple levels, is always the safer default rather than treating the minimum as a target.", source: "mouse-tank-setup-guide" },
+        { label: "Cage construction", value: "A solid floor, since wire mesh flooring risks injury to small feet, with wire sides and top for ventilation. Top mesh no larger than about 1cm square, strong enough to resist an adult mouse's chewing.", source: "mouse-tank-setup-guide" },
+        { label: "Bedding", value: "Dust-free, paper-based, at least about 2 to 4cm deep, enough to support nesting and light digging. That's considerably shallower than the many-inches-deep bedding a hamster or gerbil needs. Avoid cedar and aromatic pine entirely, and skip fluffy, cotton-wool-style nesting products, which pose a real entanglement and blockage risk.", source: "mouse-tank-setup-guide" },
+        { label: "Nesting material, the tested number", value: "A mouse in a room you find comfortable is below its own comfort range. Given enough nesting material it builds its way out of the problem, and the research puts the useful amount at six to ten grams, which is considerably more than most pet cages ever contain.", source: "mouse-enrichment-guide" },
+        { label: "Wheel", value: "Solid-surfaced, axle-free, and mouse-sized, roughly 6 to 8 inches rather than the 10 to 12 inch hamster wheels. A wheel shouldn't be the only enrichment on offer.", source: "mouse-tank-setup-guide" },
+        { label: "Temperature and humidity", value: "The comfort range for mice is 64 to 79\u00B0F and 30 to 70% relative humidity. Damp conditions, drafts, dust, and poor ventilation all raise respiratory risk, which is why cage humidity is worth actually tracking rather than guessing at.", source: "mouse-health-issues-guide" },
+        { label: "Diet", value: "A pelleted ration formulated for mice or rats. Protein is where mice diverge from hamsters and gerbils: general maintenance crude protein for mice is 20 to 25%, with growing or breeding animals needing more. That's meaningfully higher than the 14 to 16% adequate for a gerbil or hamster, which is exactly why a hamster-and-gerbil pellet is the wrong tub to reach for.", source: "mouse-feeding-guide" },
+        { label: "How to feed it", value: "Feed a measured pelleted ration once daily, and lean toward scattering some of that ration around the cage rather than dumping it all in one dish, which encourages natural foraging. The dish is for the fresh vegetables, which do not scatter well and need pulling out before they spoil.", source: "mouse-feeding-guide" },
+        { label: "Fresh food portions", value: "Leafy greens, carrot, bell pepper and broccoli daily in genuinely small amounts, cut small. \"Small\" means something different for a 1 to 1.6 ounce animal than it does for a hamster, closer to a pea-sized piece than a chunk of carrot.", source: "mouse-feeding-guide" },
+        { label: "Foods to avoid", value: "Grapes and raisins, rhubarb, citrus fruit, chocolate, caffeine, and alcohol are toxic. Garlic, onion, raw beans, and raw potato should also be avoided, and while lettuce isn't toxic, it reliably causes diarrhea in mice, so it's best left out entirely.", source: "mouse-feeding-guide" },
+        { label: "Eating droppings is normal", value: "Mice fed a standard diet ate their own droppings about 9.6 times a day on average, but once the feed was fortified with vitamin B12 that dropped to roughly 4.7 times a day, direct evidence the behavior tracks real nutritional demand rather than instinct alone. Mouse feces run 124 to 197 times higher in vitamin B12 than the diet that produced them.", source: "mouse-feeding-guide" },
+        { label: "Females in groups, males usually alone", value: "Female mice are social and should be kept in same-sex groups. They do noticeably better with company and it is not a close call. Adult males are a different problem: they frequently fight seriously, and solitary housing is the common answer. That is a genuine welfare compromise rather than a preference, and it is a reason to think carefully before choosing males.", source: "mouse-enrichment-guide" },
+        { label: "Picking one up", value: "Cup both hands and let the mouse walk onto them rather than grabbing from above. Guide it gently with a second hand if needed, and never scruff or lift by the tip of the tail. If you need to support the tail at all, hold it only at the very base and transfer to a cupped hand immediately rather than letting the mouse dangle.", source: "mouse-handling-guide" },
+        { label: "Handle low", value: "Mice can jump roughly 13 inches straight up from a standing start, and with a running start can cover more than 2 feet horizontally in a single leap, easily enough to go from a table to a countertop in one motion. Handling sessions are worth having somewhere low, enclosed, or over a soft surface.", source: "mouse-handling-guide" },
+        { label: "Cleaning, and why not to strip it", value: "Stripping a cage completely just prompts a male to re-mark it more intensely, so frequent spot-cleaning of soiled corners, combined with less frequent full cleans that leave some familiar-smelling bedding behind, tends to work better than either extreme.", source: "mouse-health-issues-guide" },
+        { label: "Adult size", value: "2 to 3 inches (5 to 8 cm) body, plus a 3 to 4 inch tail, at 1 to 1.6 oz." },
+        { label: "Budget, the animals", value: "$5 to $20 each, and you are buying two or three rather than one. A proper first setup runs roughly $100 to $210 including one mouse, plus $10 to $40 for the second and third the group actually needs.", source: "mouse-cost-guide" },
+        { label: "Ongoing costs", value: "Roughly $10 to $20 a month: pellets, small amounts of fresh produce, bedding replaced often enough to keep ammonia from building up, chews, and a yearly vet check. Bedding is the line item that moves the most, and it's tied directly to odor.", source: "mouse-cost-guide" },
+        { label: "Vet costs", value: "A routine exam at an exotics-experienced practice typically runs $35 to $75, though it's worth confirming ahead of time that a given vet actually sees mice, not every general practice does.", source: "mouse-cost-guide" },
+        { label: "Lifespan", value: "Pet fancy mice typically live 1.5 to 2 years, with the average pet mouse lifespan put at 18 to 24 months. That's less time to spread a setup cost across, and a shorter total commitment than almost any other small mammal.", source: "mouse-cost-guide" },
       ],
     },
-    sections: {
-      housing: `A commonly cited minimum for a small group of 2 to 3 mice is an 18x18x10 inch cage, and because mice are prolific escape artists, wire mesh spacing needs to be under half an inch, tighter than almost any other small pet on this site. A solid floor is essential; wire flooring injures small feet just as it does in rats and hamsters.
-
-Use paper-based bedding rather than wood shavings, for the same respiratory reasons as every other small rodent here, and never use a wood cage, since urine soaks into the wood and the resulting ammonia buildup drives respiratory disease. A smooth, non-perforated exercise wheel gives mice a safe way to burn off energy, and most take to it enthusiastically.
-
-Keep the room in the same general range as rats and hamsters, roughly 64 to 79 degrees F, away from damp and drafts, which is specifically flagged as a driver of respiratory infection in mice. Because male mice mark territory heavily and their urine carries a distinctly strong odor, plan on more frequent spot-cleaning for an all-male or mixed cage than you would for the equivalent rat setup.`,
-      diet: `A mouse-specific pelleted diet or lab block should form the base of the diet, alongside small daily portions of fresh vegetables. Mice are omnivores in the wild, eating seeds, plant matter, insects, and even carrion opportunistically, and a pelleted diet formulated specifically for mice covers that range of needs more reliably than a seed mix, which invites the same selective, fatty-piece-picking behavior seen in rats and hamsters.
-
-Mice also practice coprophagy, eating some of their own droppings, roughly six times a day. Like in [degus](/guides/degu/), this is normal, necessary behavior that lets them extract nutrients a single pass through the gut misses, not something to try to prevent.
-
-Keep treats and fruit occasional rather than routine, and always provide fresh water via a properly positioned sipper bottle, checked daily since a clogged spout is easy to miss on an animal that drinks so little at a time.`,
-      enrichment: `Mice are naturally social, but sex matters more here than it does for rats. Females of most lines get along well in same-sex groups and are the more straightforward choice if you want a group. Intact adult males frequently fight, especially if they're unfamiliar with each other or can smell females nearby, so male mice are usually kept singly, paired with a desexed female, or in a stable group of littermates established before weaning and never added to afterward. Whatever the arrangement, mice shouldn't be housed completely alone unless a vet has specifically advised it for an individual animal's welfare.
-
-Provide tunnels, climbing structures, chew blocks, and a smooth exercise wheel, and rotate items regularly since mice investigate novelty quickly. Nesting material that mice can shred and arrange themselves is both enrichment and a genuine behavioral need.
-
-Mice are quicker and more easily startled than rats, and most individuals don't tame down to the same degree of confident handling. Short, frequent, gentle handling sessions from a young age produce the calmest results, but expect a mouse to stay a faster-moving, more reactive pet than a rat even with consistent socialization.`,
-      health: `Respiratory infection is common in mice, worsened by damp conditions, drafts, and dusty bedding, the same Mycoplasma pulmonis risk that affects rats. Watch for labored or noisy breathing (affected mice can make an audible chattering sound), squinting, and discharge from the eyes or nose, and see a vet promptly since small animals decline quickly.
-
-Mice have continuously growing incisors, and overgrown teeth cause difficulty eating, weight loss, and mouth trauma if there isn't enough hard material to gnaw on. Regular access to wooden chew blocks is the main prevention, alongside a vet check if you notice dropped food or reluctance to eat.
-
-Tumors, including mammary tumors, become more common as mice age, similar to rats, though mouse mammary tumors are more often adenocarcinomas, a form more likely to be malignant than the typically benign fibroadenomas common in rats. Any new lump is worth a veterinary opinion rather than a wait-and-see approach, and unspayed females on breeding lines carry a higher mammary tumor risk specifically.`,
-      checklist: [
-        "18x18x10 in minimum cage for 2 to 3 mice",
-        "Compatible same-sex group, or a solo/paired male if needed",
-        "Bar spacing under 1/2 in",
-        "Smooth, non-perforated exercise wheel",
-        "Paper-based bedding (never wood shavings or a wood cage)",
-        "Mouse-specific pellets or lab blocks",
-        "Fresh vegetables in small daily amounts",
-        "Wooden chew blocks for tooth wear",
-        "Frequent spot-cleaning for odor control",
-        "Exotic veterinarian experienced with mice"
+    emergencyCard: {
+      source: "mouse-health-issues-guide",
+      callNow: [
+        "Any breathing changes: sneezing, nasal or eye discharge, labored or noisy breathing, sometimes an audible chattering sound",
+        "A new lump anywhere on the body",
+        "Sudden weight loss",
+        "Dropped food and drooling",
+        "A hunched posture, ruffled coat, and reduced activity",
       ],
+      vetLine: "See a vet promptly for any breathing changes, a new lump anywhere on the body, sudden weight loss, or dropped food and drooling. Mice decline quickly once a respiratory infection takes hold, and the organism behind most serious mouse respiratory disease can sit largely asymptomatic for a long stretch before flaring into visible illness. Confirm ahead of time that a given practice actually sees mice.",
     },
+    routes: [
+      { slug: "mouse-cost-guide", line: "$5 to $20 a mouse and you are buying two or three, $100 to $210 for the cage around them, and $10 to $20 a month after." },
+      { slug: "mouse-tank-setup-guide", line: "Why the glass tank that suits a gerbil is wrong here, the quarter-inch bar spacing that keeps a mouse inside, and bedding shallower than you would guess." },
+      { slug: "mouse-feeding-guide", line: "Why a hamster pellet is the wrong tub, portions sized to an ounce-and-a-half animal, and the reason eating droppings is a good sign." },
+      { slug: "mouse-handling-guide", line: "The cupped-hand pickup, never the tail tip, and why 13 inches of vertical jump changes where you sit down to do it." },
+      { slug: "mouse-health-issues-guide", line: "Respiratory disease as the one to watch, mammary tumors, and why stripping the cage makes the smell worse." },
+      { slug: "mouse-enrichment-guide", line: "Six to ten grams of nesting material, the number behind it, and why a mouse in a comfortable room is cold." },
+    ],
+    buyList: [
+      "Wire cage, at least 18 by 18 by 10 inches for two or three mice",
+      "Bar spacing no wider than a quarter inch (6mm), 5mm better",
+      "Solid cage floor, never wire mesh flooring",
+      "Dust-free paper bedding, 2 to 4cm deep",
+      "Plain shreddable paper and cardboard, six to ten grams of it",
+      "Hideout for the nest to go inside",
+      "Solid-surfaced axle-free wheel, 6 to 8 inches",
+      "Shelves, ramps and levels for vertical space",
+      "Mouse or rat formulated pellet at 20 to 25% protein",
+      "Shallow chew-resistant dish, for the fresh food",
+      "Chew toys",
+      "Digital thermometer and hygrometer",
+      "Two or three mice, and females if you want them housed together",
+    ],
     faqs: [
-      { q: "Can mice be kept alone?", a: "Not by default. Mice are social animals and solitary housing is generally considered stressful for them, recommended only when a vet has specifically advised it for an individual animal, usually because of unmanageable aggression. Most mice should be kept in a compatible group of their own species rather than alone." },
-      { q: "Do male and female mice need to be housed differently?", a: "Yes, this is one of the bigger practical differences between the sexes in mice. Females of most lines get along well in same-sex groups and are the easier choice if you want more than one mouse without much fuss. Intact adult males are much more prone to fighting, especially with unfamiliar males or when they can smell females nearby, so males are usually kept singly, paired with a desexed female, or in a stable littermate group that was established before weaning and never has animals added or removed afterward." },
-      { q: "Why do mice smell more than other small pets?", a: "It comes down to a specific chemical. Male mouse urine contains trimethylamine, a compound that produces a notably pungent smell and is barely present in females and essentially absent in rat urine. Males also scent-mark and urinate considerably more than females as a territorial behavior, so an all-male or mixed mouse cage needs more frequent spot-cleaning than the equivalent rat or gerbil setup to stay on top of the odor." },
-      { q: "How long do mice live?", a: "Pet fancy mice typically live 1.5 to 2 years, genuinely shorter than the 2 to 3 years typical of pet rats despite the two being closely related. It's one of the shortest lifespans among the small mammals on this site, so it's worth going in expecting a briefer companionship than a rat, hamster, or gerbil would offer." },
-      { q: "Are mice as easy to tame as rats?", a: "Generally, no. Mice are smaller, faster, and more easily startled than rats, and most individuals don't reach the same level of confident, seek-out-interaction handling that a well-socialized rat does, even with frequent, gentle handling from a young age. That doesn't make them bad pets, just a faster-moving, more reactive one that rewards patience rather than one you can expect to relax into a lap." },
-      { q: "What's the difference between a mouse and a rat?", a: "They're closely related rodents but different species with meaningfully different care needs. [Rats](/guides/rat/) are larger, generally calmer, and more consistently hand-tameable, and are widely considered one of the more trainable small pets available. Mice are smaller, faster, and more easily startled, and male mice specifically are more prone to fighting each other and to producing a stronger odor than male rats. If you want the more interactive, dog-like companion, most keepers find rats the easier match; if you want the smallest, quickest small mammal on this site and don't mind a shorter lifespan and stronger smell, a mouse is that animal." },
+      { q: "How tight does the bar spacing need to be for a mouse cage?", a: "No more than about a quarter inch (6mm), and some welfare-focused sources recommend going even tighter, to 5mm. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster." },
+      { q: "Is a glass tank a good enclosure for a pet mouse?", a: "No, and this is a real difference from gerbil housing. The Merck Veterinary Manual states plainly that aquariums are not suitable for mice because air circulation is inadequate, which lets ammonia build up. A well-ventilated wire cage is the better choice for mice specifically." },
+      { q: "How much protein do mice need?", a: "More than a hamster or gerbil. The American Fancy Rat and Mouse Association puts general maintenance crude protein at 20 to 25%, with breeding or growing mice needing even more depending on strain, well above the 14 to 16% that's adequate for a gerbil." },
     ],
   },
   {
