@@ -162,9 +162,9 @@ export const invertebrateGuides = [
         "A shrimp whose body has visibly separated from its shell",
         "Stillness and hiding that lasts well beyond a few days after a molt",
         "Sudden losses across the colony with no obvious cause",
-        "Any copper-containing medication, fertilizer, or newly bought plant that has reached the tank",
+        "A shrimp that looks pale or ashy",
       ],
-      vetLine: "There is no practical veterinary care for an animal this small, so this list is entirely about prevention. Nearly everything on it traces back to water stability and mineral content, exactly what a mature, properly cycled tank with gradual water changes prevents. A failed molt is usually fatal once it happens, which makes stable GH, gradual water changes and a properly fed colony the real point of leverage. A water test kit is the tool that actually tells you which cause you're dealing with rather than guessing.",
+      vetLine: "There's essentially no practical veterinary care available for an animal this small, so this list is entirely about prevention. Nearly everything on it traces back to water stability and mineral content, exactly what a mature, properly cycled tank with gradual water changes prevents. A failed molt is usually fatal once it happens, which makes stable GH, gradual water changes and a properly fed colony the real point of leverage. A water test kit is the tool that actually tells you which of these causes you're dealing with rather than guessing.",
     },
     routes: [
       { slug: "cherry-shrimp-cost-guide", line: "$4 to $8 a shrimp by grade, $45 to $110 for the tank around them, and why you never release the extras." },
@@ -188,7 +188,7 @@ export const invertebrateGuides = [
       "Ten or more shrimp, rather than a pair or trio",
     ],
     faqs: [
-      { q: "What size tank do cherry shrimp need?", a: "Aquariadise cites 5 gallons as the practical minimum. Shrimp can technically survive in a 2-gallon nano tank, per Aquarium Co-Op, which recommends 10 gallons or more for a stable breeding colony, since more water absorbs the small parameter shifts a growing colony causes." },
+      { q: "What size tank do cherry shrimp need?", a: "5 gallons is the commonly cited practical minimum. Shrimp can technically survive in a 2-gallon nano tank, but 10 gallons or more suits a stable breeding colony, since more water absorbs the small parameter shifts a growing colony causes." },
       { q: "Should I remove a shrimp's shed shell after it molts?", a: "No, leave it in the tank for a day or two. Shrimp (including the one that just molted) eat the discarded shell to reclaim the calcium and minerals in it, which directly supports hardening the new shell underneath. The only exception is a tank dealing with a parasite or bacterial outbreak, where old shells should be removed instead." },
       { q: "How many should I keep?", a: "More than a handful. Cherry shrimp are more active, more visible and more confident in a colony, and ten or more is a sensible starting point in a tank of reasonable size. A pair or trio spends most of its time hidden." },
     ],

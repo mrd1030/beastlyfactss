@@ -5974,3 +5974,124 @@ Strong deep dives, weakened by a hub that restates them with different numbers. 
 - Fry endgame: at what age or size to rehome, and whether shops take them.
 - Plant selection: which species give the dense cover four pages require.
 - Acclimation: float, drip, or neither on the day the fish come home.
+
+## Cherry Shrimp (2026-09-15, batch M)
+
+The batch session did not file the raw reader output for this species. What
+follows is reconstructed by the species check from the review section in
+docs/READER_REVIEWS.md, which quotes the reader; the page-by-page detail and the
+one-link-per-page list are not recoverable. One Opus agent, 8-page extract
+(hub, encyclopedia, cost, handling, health issues, tank setup, feeding,
+enrichment).
+
+**Grades, as quoted in the review**
+
+Hub C+ ("Where I got most of my wrong ideas."), encyclopedia B, cost A-,
+handling A, health issues A, tank setup A ("The page I would buy from."),
+feeding A-, enrichment B- ("the sentience review is a strange front door").
+
+**7. Set grade: B+**
+
+"The five deep dives are sourced, specific, and honest about where sources
+disagree; the hub that fronts them undercuts them with different numbers."
+
+**Not covered anywhere**
+
+- Mixing color lines breeds offspring back to wild brown.
+- Sexing and berried females.
+- How to test tap water for the copper three pages warn about.
+- Lighting and photoperiod.
+- Fish tankmate compatibility.
+- What to do when a colony outgrows its tank.
+
+## Green Anole (2026-09-15, batch M)
+
+The batch session did not file the raw reader output for this species. What
+follows is reconstructed by the species check from the review section in
+docs/READER_REVIEWS.md; the per-page grade table, the page-by-page detail and
+the one-link-per-page list are not recoverable. One Opus agent, 8-page extract
+(hub, encyclopedia, cost, handling, health issues, legal, tank setup,
+enrichment).
+
+**Hub and encyclopedia, as quoted**
+
+Hub C-. The cohabitation split across three pages was the reader's sharpest
+finding: hub "A male-female pair or a group of females can be housed together",
+setup "Don't house multiple anoles together, they don't coexist peacefully",
+enrichment "A single male with females in a large planted enclosure is the
+workable version." The reader said one of them is wrong and a buyer cannot tell
+which. The hub's own tables summed to roughly $210 to $405 against a stated
+total of $390 to $470. The cost guide's "a genuinely new addition to the gear we
+recommend for this species" read as an internal note that escaped.
+
+**7. Set grade: B**
+
+"Strong deep dives sitting under a hub whose numbers are the outliers." The
+biggest miss in the set: the health guide's sentence that everything connects
+back to the setup never pointed there.
+
+**Not covered anywhere**
+
+- What to do when a female lays eggs.
+- How to catch or restrain one safely.
+- Whether a temperate native needs a winter cooling period.
+- A spot-cleaning and substrate-replacement schedule.
+
+## Leaf-Tailed Gecko (2026-09-15, batch M)
+
+The batch session did not file the raw reader output for this species, and its
+review section carries no gaps list, so only the lines it quotes survive. One
+Opus agent, 7-page extract (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment).
+
+**Hub, as quoted**
+
+Hub C+. "If the landing page tells me 24x24x36 and 80 to 100% while the setup
+article says 18x18x24 and 60 to 80%, I stop trusting whichever one I read
+second." Four of five deep dives carried no Sources block. The reader said the
+enrichment guide "names Gaskill but gives no link to check"; it links both
+Gaskill papers in its Sources block.
+
+**7. Set grade: B-**
+
+"Four strong deep dives undercut by a hub that disagrees with them on every
+number a buyer acts on first."
+
+**Not covered anywhere**
+
+Not recoverable; the batch filed no gaps list for this species.
+
+## Mouse (2026-09-15, batch M)
+
+The batch session did not file the raw reader output for this species. What
+follows is reconstructed by the species check from the review section in
+docs/READER_REVIEWS.md; the per-page grade table, the page-by-page detail and
+the one-link-per-page list are not recoverable. One Opus agent, 8-page extract
+(hub, encyclopedia, cost, handling, health issues, tank setup, feeding,
+enrichment).
+
+**Hub, as quoted**
+
+Hub C. "I would have bought the wrong cage from it." Hub, twice: "wire mesh
+spacing needs to be under half an inch" and "Bar spacing under 1/2 in", against
+the setup guide's quarter inch (6mm). The cost guide's stated "Roughly $15 to
+$30 a Month" against an annual table totalling $125 to $240. Feeding guide
+"lean toward scattering some of that ration around the cage" and "Use a shallow,
+chew-resistant dish" against enrichment "Scatter feeding, never a bowl."
+
+**7. Set grade: B**
+
+"Six strong, specific deep dives undercut by a hub that contradicts them on the
+one number that decides whether the animal stays in the cage."
+
+**Not covered anywhere**
+
+- A spot-clean and full-clean schedule in days.
+- A weighing routine and scale against the 20% weight-loss warning.
+- How to pick and sex a healthy mouse.
+- How to introduce unfamiliar females.
+- Accidental litters and desexing.
+- Zoonotic risk and hand hygiene.
+- Out-of-cage time and escape recovery.
+- A travel carrier.
+- End-of-life costs.

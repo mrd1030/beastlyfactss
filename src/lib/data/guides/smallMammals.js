@@ -225,7 +225,7 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Bar spacing, the number that matters most", value: "No more than about a quarter inch (6mm), and some welfare-focused sources recommend going even tighter, to 5mm. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster. Plenty of cages marketed for \"small animals\", including ones with spacing around three-eighths of an inch, look tight but are still wide enough for a determined mouse.", source: "mouse-tank-setup-guide" },
+        { label: "Bar spacing, the number that matters most", value: "No more than about a quarter inch (6mm), and tighter still, down to 5mm, is sometimes recommended. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster. Plenty of cages marketed for \"small animals\", including ones with spacing around three-eighths of an inch, look tight but are still wide enough for a determined mouse.", source: "mouse-tank-setup-guide" },
         { label: "A wire cage, not a glass tank", value: "This runs against the instinct a lot of small-pet owners bring from other species. Aquariums are not suitable cages for rats and mice, because air circulation is inadequate and therefore ammonia builds up. A solid-sided enclosure, even one topped with a mesh lid, can't move air the way an all-wire cage can.", source: "mouse-tank-setup-guide" },
         { label: "Enclosure size", value: "A concrete minimum of 18 inches long by 18 inches wide by 10 inches high for a small group of 2 to 3 mice. There's no single evidence-based ideal size beyond that floor, so more floor space and genuine vertical climbing room, using shelves, ramps, and multiple levels, is always the safer default rather than treating the minimum as a target.", source: "mouse-tank-setup-guide" },
         { label: "Cage construction", value: "A solid floor, since wire mesh flooring risks injury to small feet, with wire sides and top for ventilation. Top mesh no larger than about 1cm square, strong enough to resist an adult mouse's chewing.", source: "mouse-tank-setup-guide" },
@@ -243,7 +243,7 @@ export const smallMammalGuides = [
         { label: "Handle low", value: "Mice can jump roughly 13 inches straight up from a standing start, and with a running start can cover more than 2 feet horizontally in a single leap, easily enough to go from a table to a countertop in one motion. Handling sessions are worth having somewhere low, enclosed, or over a soft surface.", source: "mouse-handling-guide" },
         { label: "Cleaning, and why not to strip it", value: "Stripping a cage completely just prompts a male to re-mark it more intensely, so frequent spot-cleaning of soiled corners, combined with less frequent full cleans that leave some familiar-smelling bedding behind, tends to work better than either extreme.", source: "mouse-health-issues-guide" },
         { label: "Adult size", value: "2 to 3 inches (5 to 8 cm) body, plus a 3 to 4 inch tail, at 1 to 1.6 oz." },
-        { label: "Budget, the animals", value: "$5 to $20 each, and you are buying two or three rather than one. A proper first setup runs roughly $100 to $210 including one mouse, plus $10 to $40 for the second and third the group actually needs.", source: "mouse-cost-guide" },
+        { label: "Budget, the animals", value: "$5 to $20 each, and you are buying two or three rather than one. A proper first setup runs roughly $100 to $210 including one mouse, plus another $5 to $40 for the second or third mouse the group actually needs.", source: "mouse-cost-guide" },
         { label: "Ongoing costs", value: "Roughly $10 to $20 a month: pellets, small amounts of fresh produce, bedding replaced often enough to keep ammonia from building up, chews, and a yearly vet check. Bedding is the line item that moves the most, and it's tied directly to odor.", source: "mouse-cost-guide" },
         { label: "Vet costs", value: "A routine exam at an exotics-experienced practice typically runs $35 to $75, though it's worth confirming ahead of time that a given vet actually sees mice, not every general practice does.", source: "mouse-cost-guide" },
         { label: "Lifespan", value: "Pet fancy mice typically live 1.5 to 2 years, with the average pet mouse lifespan put at 18 to 24 months. That's less time to spread a setup cost across, and a shorter total commitment than almost any other small mammal.", source: "mouse-cost-guide" },
@@ -256,7 +256,6 @@ export const smallMammalGuides = [
         "A new lump anywhere on the body",
         "Sudden weight loss",
         "Dropped food and drooling",
-        "A hunched posture, ruffled coat, and reduced activity",
       ],
       vetLine: "See a vet promptly for any breathing changes, a new lump anywhere on the body, sudden weight loss, or dropped food and drooling. Mice decline quickly once a respiratory infection takes hold, and the organism behind most serious mouse respiratory disease can sit largely asymptomatic for a long stretch before flaring into visible illness. Confirm ahead of time that a given practice actually sees mice.",
     },
@@ -284,9 +283,9 @@ export const smallMammalGuides = [
       "Two or three mice, and females if you want them housed together",
     ],
     faqs: [
-      { q: "How tight does the bar spacing need to be for a mouse cage?", a: "No more than about a quarter inch (6mm), and some welfare-focused sources recommend going even tighter, to 5mm. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster." },
-      { q: "Is a glass tank a good enclosure for a pet mouse?", a: "No, and this is a real difference from gerbil housing. The Merck Veterinary Manual states plainly that aquariums are not suitable for mice because air circulation is inadequate, which lets ammonia build up. A well-ventilated wire cage is the better choice for mice specifically." },
-      { q: "How much protein do mice need?", a: "More than a hamster or gerbil. The American Fancy Rat and Mouse Association puts general maintenance crude protein at 20 to 25%, with breeding or growing mice needing even more depending on strain, well above the 14 to 16% that's adequate for a gerbil." },
+      { q: "How tight does the bar spacing need to be for a mouse cage?", a: "No more than about a quarter inch (6mm), and tighter still, down to 5mm, is sometimes recommended. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster." },
+      { q: "Is a glass tank a good enclosure for a pet mouse?", a: "No, and this is a real difference from gerbil housing. A glass tank can't move enough air, so ammonia builds up inside it. A well-ventilated wire cage is the better choice for mice specifically." },
+      { q: "How much protein do mice need?", a: "More than a hamster or gerbil. General maintenance crude protein for a mouse runs 20 to 25%, with breeding or growing mice needing even more depending on strain, well above the 14 to 16% that's adequate for a gerbil." },
     ],
   },
   {
