@@ -6,7 +6,7 @@ export const invertebrateEncyclopedia = [
       overview: "The Amano shrimp is the largest shrimp commonly kept in freshwater aquariums and arguably the single best algae eater in the hobby, tackling hair, thread, and even tough beard algae that most fish and other shrimp ignore. It gets its name from Takashi Amano, the Japanese aquascaper who began using it to keep his pioneering planted tanks algae-free in the early 1980s. Unlike the cherry shrimp it's often sold alongside, the Amano shrimp cannot complete its life cycle in freshwater: its larvae hatch needing brackish to full-strength salt water to develop, so almost every Amano shrimp in the trade is wild-caught rather than captive-bred.",
       origin: "Japan (southwestern) and Taiwan",
       habitat: "Fast-flowing freshwater streams and rivers",
-      adultSize: "Up to about 2 inches (5 cm); the largest freshwater shrimp species commonly kept in aquariums",
+      adultSize: "Up to about 2 inches (5 cm); large for a dwarf shrimp, though bamboo and vampire shrimp are bigger still",
       wildDiet: "Algae and organic biofilm grazed from rocks and streambeds in fast-flowing water",
       wildLifespan: "No biological study of wild lifespan exists for dwarf shrimp; 2 to 3 years in an aquarium, occasionally up to 5 with excellent, stable conditions",
       conservation: "Least Concern (IUCN)",

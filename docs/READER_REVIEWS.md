@@ -10987,3 +10987,104 @@ were link-only, and the enrichment guide is future-dated.
   metronidazole dosing, named as the treatment with no dose behind it;
   plants and lighting for a tank whose occupant uproots everything; and
   managing aggression once tankmates are in and fighting.
+
+## Amano Shrimp (2026-09-15, batch J, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. Amano shrimp closed batch
+J as the first invertebrate to get one, and because it shares a tank and
+a sinking-wafer line with corydoras from batch I.
+
+Set grade: B+. "The deep dives are genuinely good and honestly sourced;
+the hub that new readers land on first undercuts them on price, tank
+cost, and pH." Health A, tank setup A, cost A-, handling A-, feeding A-,
+encyclopedia B, enrichment B-, hub C+.
+
+### Numbers checker
+
+`check-species-numbers amano-shrimp --strict` before the rebuild, 42
+sentences with numbers across 14 groups. Every hub price sat above the
+cost guide's table and none of it is moved: the tank at $45 to $90
+against $18 to $30, the heater at $15 to $25 against $18 to $30, the
+sponge filter at $10 to $20 against $8 to $15, algae wafers at $10 to $20
+against $8 to $12. The shrimp themselves went the other way, "$3 to $6"
+against a cost guide that quotes a real listing at $6.39 to $7.99 and
+lands on $5 to $12, so the hub was under its own sourced floor. pH was 6
+to 8 against the setup guide's 6.0 to 7.5, and temperature appeared twice
+on the hub and differently, 65 to 82°F in prose and 68 to 76°F on the
+checklist, against a setup guide that says 64 to 82 tolerated with the
+cooler two-thirds better.
+
+### The stocking spread, and a figure attributed to a source that never said it
+
+The reader found the one real deep-dive conflict inside a single
+paragraph: "Fishkeeping World suggests roughly one shrimp per 2 gallons"
+against "Aquarium Co-Op's upper guidance runs closer to two shrimp per
+gallon". As the reader put it, that is 5 shrimp or 20 in a 10-gallon, and
+"often sits toward that denser end" is not a decision.
+
+Opening both sources made it worse than a disagreement. Fishkeeping World
+does say it: "As a good rule of thumb, you can add 1 Amano Shrimp per 2
+Gallons," alongside a 10-gallon minimum. Aquarium Co-Op says nothing of
+the kind. Their page gives no density at all: "They have a low bioload
+and do not need to be kept in groups, so they can live in most nano tanks
+(or larger), as long as there is a tight-fitting lid." The two shrimp per
+gallon figure was attributed to a source that does not carry it.
+
+Settled: one per 2 gallons, five in a 10-gallon, named as the only
+density figure any source states. Aquarium Co-Op's low-bioload point
+survives as what it actually is, an argument that a tank fighting an
+algae outbreak can carry more without a water quality problem, with the
+caveat that more shrimp in the same algae only means the supply runs out
+sooner.
+
+### Encyclopedia
+
+adultSize claimed this is "the largest freshwater shrimp species commonly
+kept in aquariums." The reader: "which bamboo and vampire shrimp beat
+outright." They do, and both are common enough in the trade for the claim
+to be wrong rather than arguable. Now "large for a dwarf shrimp, though
+bamboo and vampire shrimp are bigger still."
+
+The wildLifespan field was already right, and worth noting as the shape
+the other nine should have taken: "No biological study of wild lifespan
+exists for dwarf shrimp; 2 to 3 years in an aquarium."
+
+### Deep-dive fixes
+
+- The feeding guide's algae FAQ claimed diatoms as a strength and
+  attributed the list to Aquarium Co-Op. The body never mentions diatoms
+  and the cited page does not make that claim. Cut to what the body and
+  the sources support.
+- The affiliate template fragment, "and other sizes are available." Cut.
+  This was the second of the two the batch was picked to clear.
+- Six of the reader's seven link asks added. The pattern here was that
+  every page names another page's topic without pointing at it: the cost
+  guide says general hardness matters and gives no number, the health
+  guide blames a calcium-short diet and never says where calcium comes
+  from, the handling guide names failed molts as the reason acclimation
+  matters and does not explain them.
+
+### Also fixed
+
+RELATED_ARTICLES gave amano shrimp only three shared guides, so its
+sidebar Health and More list was missing cycling, quarantine and the
+sick-tank check that every fish species carries. Added. Cherry shrimp and
+ghost shrimp have the same three-guide entry and the same gap, and both
+are outside this batch, so that is one line each for whoever takes them.
+
+### Dates
+
+Every amano shrimp guide is future-dated, 2026-09-17 or later, so no
+bumps were made.
+
+### Open
+
+- The five things not covered anywhere, in docs/READER_LOG.md. The one
+  that matters most is tankmates: which fish will eat or harass them, on
+  a species almost always bought as an addition to an existing community
+  tank. The three-shrimp overview compares shrimp to shrimp only.
+- Also open: how to find out whether your tap water carries copper, which
+  three pages tell a reader to verify and none tells them how; the cost
+  of the quarantine tank two pages require and the cost guide omits; and
+  what a berried female looks like, so a keeper can tell her from the molt
+  and illness signs on the health page.

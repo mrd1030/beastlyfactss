@@ -4991,3 +4991,85 @@ First two changes:
 - Metronidazole dosing, duration, and where to obtain it. The quarantine guide covers salt, carbon and aeration, not this drug.
 - Plants and lighting for a tank whose occupant uproots everything.
 - Managing aggression once tankmates are already in and fighting, and the rehoming option for an adult.
+
+---
+
+# Amano Shrimp: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch J. Raw and unedited.
+
+
+## 1. Page by page
+
+**00 hub.** Finished it, and it is the page I trust least: I can act on the lid, the drip acclimation, the copper warning, the checklist. Grade C+.
+**01 encyclopedia.** Finished it for the Stimpson/De Man history, which is the most interesting writing in the set. Nothing to act on. Grade B.
+**02 cost.** Finished it. Actionable: $5 to $12 a shrimp, cheaper in a 10-pack, budget a test kit. Grade A-.
+**03 handling.** Finished it. Actionable: soft net, one to two hour drip at one to two drops per second, three to four hours if the gap is wide, two to four weeks quarantine. Grade A-.
+**04 health.** Finished it, best page here. Actionable: test water first, keep GH and KH from swinging at water changes, check every label against 0.15 to 0.20 mg/L copper. Grade A.
+**05 tank setup.** Finished it. Actionable: 4 to 15 dGH targeting 6 to 8, 2 to 8 dKH, sponge as intake guard rather than flow reducer. Grade A.
+**06 feeding.** Finished it. Actionable: light feeding every couple of days, remove leftovers after a few hours, leave molts in. Grade A-.
+**07 enrichment.** Finished it, mostly repeat. Actionable: drop food in several spots. Grade B-.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: taxonomy history and origin appear nowhere else. The hub does not. It compresses the six deep dives into worse versions of themselves and contradicts three of them.
+
+Price. Hub: "often $3 to $6 versus a dollar or two". Cost guide: "$6.39 to $7.99 each individually" and "Roughly $5 to $12 each". The hub is under the sourced floor.
+
+Tank price. Hub table: "10+ gallon tank with secure lid | $45 | $90". Cost guide table: "10 gallon tank | $18 - $30".
+
+pH. Hub: "Keep pH between 6 and 8 with moderately hard water". Tank setup: "Aim for pH 6.0 to 7.5."
+
+Temperature. Hub: "65 to 82 degrees F". Tank setup: "64 to 82°F covers the tolerated range".
+
+## 3. The set as a whole
+
+Yes, I could set this up, buy, feed, and keep them, except for stocking number and tankmates. Still missing: how many shrimp for my tank (see 4), what fish will eat them, how to find out whether my tap water carries copper, a water change volume and interval, and the cost of the quarantine tank the handling and health guides both tell me to own.
+
+Questions answered on another page without being told:
+- Cost: "tracking general hardness matters here specifically" gives no number. The dGH range is in tank setup.
+- Health: "a diet that hasn't supplied enough calcium" never says where calcium comes from. Feeding's shed-shell section answers it.
+- Health: "stable mineral content" and copper warnings never point to a filter or GH page.
+- Tank setup: "it's time to add sinking wafers or blanched vegetables" with no frequency. Feeding has it.
+- Handling: "a known trigger for failed, often fatal molts" with no explanation. Health has it.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three or four times: the amphidromous larvae explanation (cost, handling, health, enrichment, plus hub and encyclopedia), the copper warning, the lid, the sponge filter, and "algae is a starting supply, not renewable" (tank setup and feeding, nearly verbatim).
+
+The one real conflict is stocking, inside a single paragraph: "Fishkeeping World suggests roughly one shrimp per 2 gallons" against "Aquarium Co-Op's upper guidance runs closer to two shrimp per gallon". That is 5 shrimp or 20 in a 10-gallon, and "often sits toward that denser end" is not a decision. The hub's "Group of 5-6+ shrimp" picks the low end without saying so.
+
+Softer: enrichment says "Change small amounts of water often" while no page gives a percentage, and health blames "a rushed water change" for die-offs.
+
+## 5. One link per page
+
+- **Hub:** "Drip acclimate new arrivals over an hour or two rather than releasing them straight from the bag." To the handling guide.
+- **Encyclopedia:** none needed.
+- **Cost:** "tracking general hardness matters here specifically, since this species needs real dissolved minerals to molt successfully, not just clean water." To tank setup.
+- **Handling:** "that kind of sudden internal stress is a known trigger for failed, often fatal molts." To health.
+- **Health:** "a diet that hasn't supplied enough calcium to build the new shell properly." To feeding.
+- **Tank setup:** "when that reserve runs low it's time to add sinking wafers or blanched vegetables." To feeding.
+- **Feeding:** "Avoid any food, medication, or fertilizer that contains copper in any form." To health.
+- **Enrichment:** "Copper is lethal to shrimp and arrives in fish medications, some fertilizers and some tap water." To health.
+
+## 6. Trust
+
+Doubts: the hub's $3 to $6 and $45 to $90 tank contradict sourced numbers two clicks away, which reads like someone wrote the hub from memory. The encyclopedia calls it "the largest freshwater shrimp species commonly kept in aquariums", which bamboo and vampire shrimp beat outright. Enrichment cites Birch with no link and outsources it to another species' page. Feeding's FAQ claims diatoms as a strength the body never mentions. "Sinking wafers are the practical answer, and other sizes are available" is a sentence with a product removed from it.
+
+The sentence that convinced me a keeper wrote this: "An amano that grabs food and runs off with it is a hungry amano, and that behavior is so characteristic that it gets treated as charming rather than as information."
+
+## 7. Set grade: B+
+
+The deep dives are genuinely good and honestly sourced; the hub that new readers land on first undercuts them on price, tank cost, and pH.
+
+First two changes: rebuild the hub's numbers from the deep dives so nothing on it contradicts them, and resolve the stocking spread into one recommendation with a number.
+
+## Not covered anywhere
+
+Checked against the Health and More list. Filtration plausibly covers cycling and water change maintenance; the pH, GH, KH guide covers raising soft tap water. These remain:
+
+- Which fish and tankmates will eat or harass amano shrimp. Three Shrimp compares shrimp to shrimp only.
+- How to find out whether your tap water carries copper, which three pages tell you to verify.
+- The cost of the quarantine tank two pages require; the cost guide's $60 to $150 does not include it.
+- How many shrimp to buy for a given tank size, left at 5 or 20 in a 10-gallon.
+- What a female carrying eggs actually looks like, so a keeper can tell it from the molt and illness signs the health page describes.
