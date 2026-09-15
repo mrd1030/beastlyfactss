@@ -575,40 +575,95 @@ export const invertebrateGuides = [
     image: "/assets/guides/jumping-spider.jpg",
     tagline: "The tiny, curious-eyed hunter that watches you back and needs barely any space at all!",
     funFact: "Jumping spiders have some of the best vision of any arthropod, with four pairs of eyes giving them nearly 360-degree awareness and sharp enough focus to visually track and judge the distance of prey before pouncing - hence the name. Many keepers report their jumping spider appearing to watch and turn to follow movement outside the enclosure, genuinely interactive behavior that's unusual for an invertebrate.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "Small tall enclosure (5x5x8 in or similar)", low: 15, high: 30 },
-        { item: "Climbing branches and cork bark (miniature)", low: 10, high: 20 },
-        { item: "Feeding tongs (fine-tip precision)", low: 8, high: 15 },
-      ],
-      annual: [
-        { item: "Live feeder insects (crickets, fruit flies)", low: 20, high: 40 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Molting, pesticides, rehousing and the travel and
+    // outage plan cite the shared invertebrate guides in the sidebar's Health
+    // and More list. Reconciled 2026-09-15 after the jumping spider set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The old hub disagreed with a deep dive on almost every number a buyer
+    // would write down, which is how the reader put it: enclosure 5x5x8 inches
+    // against the setup guide's 4x4x7 minimum and 8 to 10 inches tall;
+    // enclosure price $15 to $30 against the cost guide's $60 to $70;
+    // feeder insects $20 to $40 a year against $5 to $15 a month; lifespan 1
+    // to 2 years against 1 to 3; temperature 70 to 80F against 72 to 82F;
+    // misting "every day or two" against every 2 to 3 days; and "remove
+    // anything uneaten after a day" against pulling live prey within a few
+    // hours to overnight. None of those figures moved up here; each row now
+    // copies the article that owns it.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The spider", value: "$15 to $60. Captive-bred spiderlings run $15 to $25. Juvenile or sub-adult females, generally more prized than males since they live considerably longer, run $25 to $60. Named regional color forms cost more than standard animals.", source: "jumping-spider-cost-guide" },
+        { label: "Setup budget", value: "Roughly $112 to $150, and the enclosure is most of it at $60 to $70. Coconut fiber substrate, mini cork bark or artificial plants, a fine mist spray bottle and a digital hygrometer make up the rest.", source: "jumping-spider-cost-guide" },
+        { label: "Ongoing costs", value: "Roughly $5 to $15 a month. Feeder insects make up nearly the entire monthly cost.", source: "jumping-spider-cost-guide" },
+        { label: "Vet costs", value: "Effectively none. Exotic vets rarely treat spiders, and the large majority of health issues in this species trace back to the enclosure environment rather than anything requiring professional treatment.", source: "jumping-spider-cost-guide" },
+        { label: "Lifespan", value: "Males typically live 8 to 12 months after reaching maturity, while females live longer, 1.5 to 3 years. A realistic overall range to expect is 1 to 3 years.", source: "jumping-spider-cost-guide" },
+        { label: "Adult size", value: "0.5 to 0.75 inches (1.3 to 1.9 cm), females larger than males." },
+        { label: "Enclosure size", value: "A minimum of about 4 by 4 by 7 inches, vertically oriented, works for an adult, and something closer to 8 to 10 inches tall gives more genuine climbing room. This is an arboreal species, up and down space matters more than floor area.", source: "jumping-spider-tank-setup-guide" },
+        { label: "One per enclosure", value: "Use a front-opening design with cross-ventilation, and house one spider per enclosure, they're cannibalistic toward each other.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 82°F suits this species well, and normal room temperature is usually fine without any supplemental heat at all. If your space runs consistently below about 70°F, a thermostat-controlled heat mat on the side wall works, but never place heat under the substrate, and never run one without a thermostat.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Humidity", value: "Target 50 to 60% for Phidippus species like the regal jumping spider, tropical genera need more. Mist one corner of the enclosure every 2 to 3 days with dechlorinated water, and aim to leave drinkable droplets rather than soaking everything. Good ventilation matters here too, humidity without airflow invites mold.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber, or a coconut fiber and sphagnum moss blend, about an inch or two deep, helps buffer humidity swings between mistings. Avoid sand or vermiculite, and skip using bare paper towel as a long-term substrate, it doesn't hold moisture well enough.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Lighting", value: "This species is diurnal and genuinely relies on vision to hunt, so provide bright ambient light on a normal 12-hour day and night cycle. UVB is not required for this species.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Where the door goes", value: "Jumping spiders build their silk retreat near the top of the enclosure, so it's worth positioning your access opening lower or to the side.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Feeding, by life stage", value: "Spiderlings every 1 to 2 days on 1 to 2 flightless fruit flies. Small to mid juveniles every 2 to 3 days. Sub-adults every 2 to 4 days. Adults every 2 to 5 days, with the abdomen deciding where in that window a given spider sits.", source: "jumping-spider-feeding-guide" },
+        { label: "The abdomen is the gauge", value: "A shrunken or wrinkled abdomen means it's hungry and can be fed early. A plump, rounded abdomen noticeably wider than the cephalothorax means skip the next feeding. Feed in the morning, jumping spiders are visual daytime hunters, and pull uneaten live prey within a few hours to overnight so it doesn't harass or injure the spider, especially near a molt.", source: "jumping-spider-feeding-guide" },
+        { label: "What they eat", value: "An obligate carnivore, no plant matter and no commercial spider food. Flightless fruit flies are the staple for slings and small juveniles. Pinhead-to-small crickets, houseflies, and bluebottle or greenbottle flies work for juveniles through adults, flies in particular are a preferred, low-injury-risk staple since they can't bite back or burrow.", source: "jumping-spider-feeding-guide" },
+        { label: "Prey size", value: "Keep prey noticeably smaller than the spider, roughly no bigger than the abdomen, matched to the size of the chelicerae. Oversized prey is the most repeated safety warning here, a cricket that's too big can injure or kill a jumping spider, especially near a molt.", source: "jumping-spider-feeding-guide" },
+        { label: "Never feed", value: "Ants, repeatedly named as the single most important thing to avoid, they can bite or spray formic acid, and jumping spiders show an instinctive fear response to them. Hard-shelled beetles and pill bugs, too tough to bite through effectively. Fireflies. Other spiders, a real cannibalism and injury risk. Wild-caught or unknown insects, especially anything from an area treated with pesticides.", source: "jumping-spider-feeding-guide" },
+        { label: "Supplements", value: "Spiders can't be dusted with supplement powder, which makes what the feeders ate the only nutrition that reaches them, so gut-loading the feeders is the whole supplement routine.", source: "jumping-spider-feeding-guide" },
+        { label: "Water", value: "A shallow water dish, plus the drinking droplets the misting leaves on the walls. Never mist the spider's abdomen directly, water can seep between the book-lung plates and cause suffocation.", source: "jumping-spider-feeding-guide" },
+        { label: "A spider that stops eating", value: "Usually premolt fasting, which commonly starts days to weeks before shedding. After a molt, new fangs are soft and can't safely bite or digest prey, so wait about 2 to 3 days before offering food again. A healthy adult can safely go roughly 2 to 3 weeks without eating. Spiderlings have much smaller reserves and shouldn't be left that long.", source: "jumping-spider-feeding-guide" },
+        { label: "Dehydration", value: "The single most common problem, and honestly the leading cause of death in captive jumping spiders. Watch for curled legs and general lethargy. It's caused by humidity running too low or an absence of drinkable water droplets.", source: "jumping-spider-health-issues-guide" },
+        { label: "Retained molt", value: "A spider that gets stuck in its old exoskeleton during a molt can lose limbs or die. This is caused by insufficient humidity in the lead-up to molting. Once a molt has genuinely failed, there's little that can be done. Never feed or disturb a spider that's in or approaching a molt.", source: "jumping-spider-health-issues-guide" },
+        { label: "Heat", value: "Heat stress comes from direct sunlight or an unregulated heat mat, and it's manageable by correcting placement and always running supplemental heat through a thermostat if you use it at all.", source: "jumping-spider-health-issues-guide" },
+        { label: "Handling", value: "Minimal handling is the right approach. If you do handle one, let it walk freely onto and off your hand instead of grabbing or restraining it, they're genuinely fragile, and a fall, even a short one, can rupture the abdomen and prove fatal. Always handle low, over a soft surface.", source: "jumping-spider-handling-guide" },
+        { label: "What enrichment means here", value: "A jumping spider navigates by sight in a way almost no other invertebrate does, and a bare acrylic cube gives those eyes nothing. Vary the surfaces, depths and textures inside the enclosure: cork bark mini flats, small branches, and artificial or live foliage create the layered, three-dimensional space a salticid actually reads.", source: "jumping-spider-enrichment-guide" },
+        { label: "They know who you are", value: "A 2024 paper in eLife documents individual recognition in Phidippus regius. Interaction with human caretakers during handling and maintenance is mentioned in the salticid literature as a form of behavioral enrichment, so keep it brief, low to a soft surface, and never over a hard floor.", source: "jumping-spider-enrichment-guide" },
+        { label: "Molting", value: "A spider that has sealed itself into a retreat is likely molting, and interrupting that is dangerous. Normal molting signs and a failed molt look different, and the difference is worth knowing before it happens.", source: "invertebrate-molting-guide" },
+        { label: "Bug spray", value: "A spider is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy, well-fed pet spider can be found dead in its enclosure the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "Rehousing", value: "The catch cup and card method, worked low over a larger tub so a bolt or a fall goes nowhere, and never during a molt.", source: "invertebrate-rehousing-guide" },
+        { label: "A power cut, and a trip", value: "A jumping spider lives at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank. A full, shallow water dish refilled the morning you go, stable humidity, and a checked lid do more for a short absence than any attempt to pre-feed.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
-    sections: {
-      housing: "A small enclosure is not just acceptable but preferred - something around 5x5x8 inches works well for one adult regal jumping spider (Phidippus regius), the most common pet species. Taller than wide is ideal since jumping spiders climb constantly. Ventilation is essential, via a mesh top or side vents, since stagnant air causes health problems. Furnish with climbing branches, cork bark, and artificial plants, which jumping spiders use both for exploring and for building silk hammock retreats where they sleep and molt. Light misting every day or two maintains humidity and gives them water droplets to drink. Room temperature of 70 to 80 degrees F is fine without any supplemental heating in most homes.",
-      diet: "Jumping spiders eat live prey exclusively. Appropriately sized crickets, flightless fruit flies (ideal for juveniles), and small roaches work well, sized no larger than the spider's body. Offer prey 2 to 3 times a week and remove anything uneaten after a day. Unlike web-building spiders, jumping spiders are active visual hunters that stalk and pounce on prey rather than waiting passively - watching this hunting behavior is one of the most rewarding parts of keeping the species.",
-      enrichment: "Jumping spiders are unusually curious and visually engaged with their surroundings for an invertebrate, often turning to track movement and appearing to observe their keeper. Climbing branches and varied décor support their naturally exploratory behavior. Some keepers offer brief, supervised free-roam time in a small, secure, escape-proof space. Handling should stay minimal - they're delicate and can jump or fall - though many individuals are calm enough to gently walk onto an open hand for a short supervised moment.",
-      health: "Molting is the most vulnerable period in a jumping spider's life, just as it is for tarantulas - never disturb a molting spider, and avoid offering live prey right before or after a molt. Dehydration is preventable with regular light misting and a small water source. A short natural lifespan of only 1 to 2 years is completely normal for this species and not a sign of poor care. Mite issues are uncommon but possible in an unclean enclosure, so remove uneaten prey and old webbing periodically.",
-      checklist: [
-        "Small, tall enclosure (5x5x8 inches or similar)",
-        "Ventilated, secure lid",
-        "Climbing branches and cork bark",
-        "Light misting for humidity and drinking water",
-        "Small live prey (crickets, flightless fruit flies)",
-        "Room temperature 70-80°F (no heating needed)",
-        "Feeding tongs",
-        "Patience - they're an observation pet, not a handling pet",
+    emergencyCard: {
+      source: "jumping-spider-feeding-guide",
+      callNow: [
+        "Food refusal running well past two weeks with no molt ever occurring",
+        "No interest in food for a week or more after a molt has already completed",
+        "A visibly shrunken or wrinkled abdomen, especially paired with lethargy",
+        "Legs curling inward, or an inability to right itself if flipped",
+        "Visible injury or fluid leakage",
+        "A failed or stuck molt, a spider partially out of its old exoskeleton with no progress for several hours",
       ],
+      vetLine: "The last few of these are treated as urgent, warranting an exotic-animal vet rather than a wait-and-see approach. Everything above them is read against the abdomen first: a healthy adult can safely go roughly 2 to 3 weeks without eating, and older adults are anecdotally reported tolerating a month or more, particularly around a molt or egg-guarding, none of that alone is cause for alarm.",
     },
+    routes: [
+      { slug: "jumping-spider-cost-guide", line: "$15 to $60 for the spider, $112 to $150 for setup, and why the short lifespan is the real cost." },
+      { slug: "jumping-spider-tank-setup-guide", line: "4x4x7 inches as a floor, 72 to 82F, 50 to 60%, and why the door belongs low." },
+      { slug: "jumping-spider-feeding-guide", line: "A schedule by life stage, the never-feed list with ants at the top, and how to read a spider that has stopped eating." },
+      { slug: "jumping-spider-handling-guide", line: "Why a visual hunter behaves differently in your hand, and why the fall is the risk." },
+      { slug: "jumping-spider-health-issues-guide", line: "Dehydration, retained molts, silk impaction, and the humidity underneath all three." },
+      { slug: "jumping-spider-enrichment-guide", line: "The cognition literature on this species, and what it actually asks you to put in the enclosure." },
+    ],
+    buyList: [
+      "A small vertical, front-opening enclosure, 4x4x7 inches at the least and taller if you can",
+      "Coconut fiber, or a coconut fiber and sphagnum moss blend",
+      "Mini cork bark flats, small branches, and artificial or live foliage",
+      "A fine mist spray bottle and dechlorinated water",
+      "A digital hygrometer",
+      "A shallow water dish",
+      "A flightless fruit fly culture for a sling, small crickets or flies for an adult",
+      "A thermostat, if and only if the room needs supplemental heat",
+    ],
     faqs: [
-      { q: "Are jumping spiders dangerous?", a: "No. Jumping spiders have very mild venom meant for tiny insect prey, are extremely reluctant to bite, and are essentially harmless to humans. A bite, in the rare event one happens, is typically compared to a mosquito bite at most." },
-      { q: "How long do jumping spiders live?", a: "1 to 2 years is typical for most pet species, sometimes slightly longer for well-cared-for females. This short natural lifespan is completely normal for the species and isn't a sign that something went wrong." },
-      { q: "Can you handle a jumping spider?", a: "Gently and briefly. They aren't a cuddly pet and can jump or fall unexpectedly, but many individuals are calm enough to walk onto an open hand for a short, supervised moment. Regular or prolonged handling isn't recommended." },
-      { q: "What do jumping spiders eat?", a: "Live prey only - appropriately sized crickets, flightless fruit flies, and small roaches, offered 2 to 3 times a week and sized no larger than the spider's body." },
-      { q: "Do jumping spiders need a big enclosure?", a: "No - quite the opposite. Jumping spiders generally do better in smaller enclosures, where locating prey is easier and the space feels less overwhelming. Height matters more than footprint, since they spend most of their time climbing." },
-      { q: "Are jumping spiders good pets for beginners?", a: "Yes, one of the more approachable invertebrates to start with. They need very little space, are essentially harmless to humans, and their curious, visually engaged behavior makes them genuinely interesting to observe, this isn't a handling pet, but it's a low-cost, low-commitment way to get into invertebrate keeping." },
+      { q: "What size enclosure does a jumping spider need?", a: "About 4 by 4 by 7 inches, oriented vertically, is the minimum for an adult, and 8 to 10 inches tall gives real climbing room. Arboreal species: height counts for more than floor." },
+      { q: "How often should I feed my jumping spider?", a: "It depends on life stage and varies a fair amount even among adults: spiderlings eat every 1 to 2 days, tapering to roughly every 2 to 5 days by adulthood. The guide is the abdomen, shrunken or wrinkled means feed, plump and noticeably wider than the cephalothorax means skip the next meal." },
+      { q: "What should I never feed a jumping spider?", a: "Ants, above all: jumping spiders show an instinctive fear response to them, and an ant can bite or spray formic acid. Also unsafe are hard-shelled beetles, pill bugs, fireflies, and any prey larger than the spider's own body." },
     ],
   },
   {
