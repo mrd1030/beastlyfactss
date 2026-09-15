@@ -13308,6 +13308,16 @@ and adults every other day in the evening, as much as the gecko takes in one
 night, prey no larger than the eye gap, and an all-in-one supplement on every
 feeder.
 
+Corrected after the species check, and this is the batch L bombesin shape
+repeating: the Diet Basics section was written by moving the old hub's unsourced
+diet paragraph into the article and then putting a Sources block under it. Two
+sources confirm the feeder list, juveniles daily against adults every other day,
+as much as the gecko takes in one night, and a light all-in-one dusting on every
+feeder. Neither states the eye-gap prey rule, a 24 to 48 hour gut-load, or
+isopods and fruit flies for this genus, so all three are gone rather than left
+sitting under a citation that does not support them. Dubia.com's leaf-tailed
+gecko sheet is added as the second source.
+
 Left open and recorded rather than resolved. Reptile Supply gives a basking area
 of 80 to 84F for the genus, where our setup guide says a basking source is
 generally unnecessary and can be actively dangerous. That is a genus-level figure

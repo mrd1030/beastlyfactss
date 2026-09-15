@@ -732,7 +732,59 @@ was gone, and a setup FunFact still stating the clearance rule the same pass had
 redefined. FunFacts and FAQs are frontmatter's blind spot twin: grep the figure,
 do not trust the memory of having changed it.
 
-Next up is batch M. Pick five, one per class, where a set from a recent
+Batch M (platy, cherry shrimp, green anole, leaf-tailed gecko, mouse),
+spanning fish, invertebrate, lizard, gecko and small mammal, done and checked on
+branch claude/platy-cherryshrimp-greenanole-leaftailedgecko-mouse 2026-09-15, not
+merged. Five router hubs, 126 first-week rows, one reader pass per species and
+one Fable check. Pass grade B-, down from batch L's B. That makes 71 router hubs;
+the 37 still on the legacy care sheet are in docs/TODO.md, section 7, dogs and
+cats last. Geckos are finished: leaf-tailed gecko was the last one.
+
+The grade went down, and the reason is worth reading before starting batch N.
+Every mechanical part of the router shape came back clean, including, for the
+first time, all ten shared-guide rows. What failed was research discipline, in
+the same shape batch L was told about and repeated anyway.
+
+Citing a source and then writing what it does not say, three times in one batch.
+The platy handling guide got "two and a half and five months, driven by
+temperature and by the fish's own genotype" under a citation to Kallman and
+Borkoski, whose figures are eight to 28 weeks and who never mention temperature;
+the temperature clause came from an aquarium blog read earlier in the same
+session and got attached to the wrong source. The green anole Diet Basics gave
+"two to three food items per feeding" for juveniles where ReptiFiles gives
+juveniles as much as they will eat and puts the two-to-three figure on adults,
+with each feeder "slightly smaller than the anole's head" rather than the eye-gap
+rule the batch wrote. The leaf-tailed gecko Diet Basics was the old hub's
+unsourced paragraph moved into an article with a Sources block placed under it,
+carrying an eye-gap rule, a 24 to 48 hour gut-load and two feeders that neither
+cited sheet states. This is the bombesin failure from batch L exactly. The rule
+that would have caught all three: after writing a sentence, read the source back
+against the sentence, not against the number.
+
+A reader is not automatically right. The mouse cost guide said "another $5 to $40
+for the second or third mouse", the reader read that as two mice and called the
+arithmetic wrong, and the batch changed it to "$10 to $40 for the second and
+third", which quietly makes a pair the wrong group size. The original was correct
+for one or two extra mice. Check a reader's arithmetic finding before acting on
+it; they are excellent at spotting that two pages disagree and no better than
+anyone else at deciding which one is right.
+
+De-narration drops hedges, the third distinct way this has now gone wrong. Batch
+K upgraded a hedged range into a claim of safety; batch L stripped a name off a
+two-claim sentence; batch M turned ReptiFiles' "this pet can live up to 10 years
+and possibly longer" into "one lives up to 10 years" in four places at once.
+Taking a source name out of a sentence is a rewrite of that sentence, so diff it
+against the original claim word by word, not just figure by figure.
+
+Emergency card bullets written rather than grepped, for the third batch running,
+on three of five species. There is no judgment call here and it keeps happening:
+grep the health guide for the sentence, paste the sentence.
+
+Also worth carrying: the review file claimed four raw reader outputs were filed
+in docs/READER_LOG.md when only one was. File the raw output in the same commit
+as the review section, not later.
+
+Next up is batch N. Pick five, one per class, where a set from a recent
 batch points at them. What is left, by class, is in docs/TODO.md
 section 7.
 

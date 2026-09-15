@@ -400,11 +400,14 @@ savannah monitor) passed its Fable check at grade B-.
 Batch K (tiger salamander, parrotlet, koi, emperor scorpion, rosy boa)
 done, checked and merged to main 2026-09-15. Pass grade B.
 Batch L (fire-bellied toad, quaker parakeet, molly, praying mantis, argentine
-tegu) done and checked on branch claude/firebelliedtoad-quaker-molly-mantis-tegu
-2026-09-15, not merged. Pass grade B. Amphibians and birds are finished:
-fire-bellied toad and quaker parakeet were the last on each list. Next is batch
-M: pick five, one per class, where a set from a recent batch points at them.
-Of the classes with anything left, only invertebrates has more than five.
+tegu) done, checked and merged to main 2026-09-15 as 837d5cd. Pass grade B.
+Amphibians and birds are finished.
+Batch M (platy, cherry shrimp, green anole, leaf-tailed gecko, mouse) done and
+checked on branch claude/platy-cherryshrimp-greenanole-leaftailedgecko-mouse
+2026-09-15, not merged. Pass grade B-. Geckos are finished: leaf-tailed gecko was
+the last one. Next is batch N: pick five, one per class, where a set from a
+recent batch points at them. Only small mammals is down to one, and nothing but
+dogs and cats has more than five.
 Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
 shrimp) passed its check at grade C+. Next is batch K: pick five, one per
 class, where a set from a recent batch points at them. Worker Opus 5 high effort, one Fable closing check per batch (the
@@ -434,18 +437,20 @@ Done (56):
 - [x] tiger salamander, parrotlet, koi, emperor scorpion, rosy boa
       (batch K, merged to main 2026-09-15)
 - [x] fire-bellied toad, quaker parakeet, molly, praying mantis, argentine
-      tegu (batch L, on branch 2026-09-15, not merged)
+      tegu (batch L, merged to main 2026-09-15)
+- [x] platy, cherry shrimp, green anole, leaf-tailed gecko, mouse
+      (batch M, on branch 2026-09-15, not merged)
 
-To do (42):
+To do (37):
 
 - [ ] Amphibians (0): none left, fire-bellied toad was the last one
 - [ ] Birds (0): none left, quaker parakeet was the last one
-- [ ] Fish (5): bristlenose pleco, discus, platy, swordtail, zebra danio
-- [ ] Geckos (1): leaf-tailed gecko
-- [ ] Invertebrates (6): cherry shrimp, ghost shrimp, giant millipede,
-      jumping spider, hissing cockroach, stick insect
-- [ ] Lizards (4): fire skink, green anole, Jackson's chameleon, uromastyx
-- [ ] Small mammals (2): mouse, flying squirrel
+- [ ] Fish (4): bristlenose pleco, discus, swordtail, zebra danio
+- [ ] Geckos (0): none left, leaf-tailed gecko was the last one
+- [ ] Invertebrates (5): ghost shrimp, giant millipede, jumping spider,
+      hissing cockroach, stick insect
+- [ ] Lizards (3): fire skink, Jackson's chameleon, uromastyx
+- [ ] Small mammals (1): flying squirrel
 - [ ] Snakes (0): none left, rosy boa was the last one
 - [ ] Cats (10): universal, American shorthair, Bengal, domestic shorthair,
       Maine Coon, Persian, Ragdoll, Scottish Fold, Siamese, Sphynx
@@ -485,7 +490,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
       rosy boa, stick insect, sugar glider, tarantula, tiger salamander,
       uromastyx, all in enrichment guides. Batch K cleared four of those
       (tiger salamander, parrotlet, emperor scorpion, rosy boa) and batch L
-      cleared the Argentine tegu. The grep returns 16 as of 2026-09-15: koi is
+      cleared the Argentine tegu. The grep returns 15 as of 2026-09-15 (batch M cleared the mouse enrichment guide): koi is
       still on it, so batch K did not actually clear the five it claimed, and
       the earlier count of 18 was wrong in both directions. Re-run the grep
       rather than trusting this number. Shop copy with the product
