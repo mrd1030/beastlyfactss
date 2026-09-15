@@ -10817,3 +10817,89 @@ Two more fields, both researched against ReptiFiles' care guide.
 - Also open: choosing a breeder and checking the animal at pickup,
   interim housing for a hatchling that cannot fill a 5x2.5x4 yet, sexing,
   and maintenance of 12 to 24 inches of substrate.
+
+## Garter Snake (2026-09-15, batch J, single pass, before the router hub)
+
+Extractor set of nine pages. One Opus 5 agent. Garter snake was picked
+for batch J because the red-footed tortoise overview from batch I points
+at it, and because it is one of only two snakes left on the list.
+
+Set grade: A-, the highest in two batches. "The deep dives are specific,
+sourced to statute and study, and unusually willing to say what is not
+known; the hub drags it down by contradicting them." Health A, tank setup
+A, feeding A, legal A, cost A-, handling A-, enrichment B, encyclopedia
+B, hub C+.
+
+### Numbers checker
+
+`check-species-numbers garter-snake --strict` before the rebuild, 68
+sentences with numbers across 30 groups. The deep dives agreed with each
+other almost everywhere. Every conflict was the hub against one of them,
+and all are gone rather than moved:
+
+- Warm end. Hub: "a surface temperature of 85 to 88 degrees F (basking air
+  up to 90 degrees F)." Tank setup: "85 - 90°F (up to 95°F on some
+  sources)", with the steer to "treat the lower end as a floor rather than
+  a ceiling."
+- Supplements. Hub: "vitamin B1 and calcium a couple of times a month if
+  fish or earthworms make up a significant part of the diet." Feeding and
+  health both: "add a vitamin B1 supplement if fish still make up more
+  than roughly a quarter of what your snake eats." A different trigger and
+  a different schedule, and the deep dives never tie B1 to earthworms at
+  all.
+- Feeding schedule. The hub gave two cases, mice weekly and earthworms
+  twice weekly, and omitted the third: fish-heavy at every 5 to 7 days,
+  which for a fish specialist is the likeliest one of the three.
+- Under-tank heater. Hub: $35 to $60. Cost guide: $35 to $70.
+- UVB. The hub's "low-output 5% T8 or 2 to 5% T5" was the only place on
+  the site giving a strength for this species. The setup guide's lighting
+  section describes the shift toward low-output UVB without naming a
+  number, so the row says that and no more.
+
+### The hub dropped the legal guide
+
+The reader's sharpest structural point, and it is not a number: "it drops
+the legal article entirely, which is the one thing a buyer needs before
+anything else." Garter snakes are native almost everywhere, so most
+states regulate them as wildlife rather than as pet-trade reptiles, and
+New York's own guidance says its native-species law "does not
+differentiate between wild-caught and captive-bred animals." A New York
+buyer reached five pages of husbandry before anything mentioned it. Legal
+is now the first first-week row and the last route.
+
+### Deep-dive fixes
+
+- The aspen substrate. The hub's checklist said "Aspen or cypress mulch
+  substrate" and the cost guide's table repeated it, against the setup
+  guide's "coconut fiber, cypress mulch, or dry leaf litter." The reader:
+  "Aspen is not moisture-retentive and the tank guide never lists it."
+  The cost table row now matches the setup guide, and so does the buy
+  list.
+- Semi-aquatic, hedged two ways. Enrichment: "Many garter snake
+  populations are semi-aquatic and hunt in water." Tank setup: "Garter
+  snakes are semi-aquatic, proficient swimmers in the wild." The setup
+  guide's is the claim the rest of the set is built on, including a water
+  feature sized to swim in, so the enrichment guide now matches it.
+- Six of the reader's eight link asks added, including two to shared
+  guides the set was leaning on without pointing at: the quarantine guide,
+  since the handling guide's one-to-two-week settling-in window is not a
+  quarantine and the reader noticed, and the sexing and body condition
+  guide, since the feeding guide sizes prey by body weight without saying
+  a scale is involved.
+
+### Dates
+
+Every garter snake guide carries a future publish date, 2026-09-24 or
+later, so no bumps were made. A bump would have dated the update before
+the article exists.
+
+### Open
+
+- The five things not covered anywhere, in docs/READER_LOG.md. Two are
+  the set's own loose ends rather than gaps: cohabitation is raised in the
+  tank setup and enrichment guides and settled in neither, and the live
+  litter the hub advertised, up to 80 young, has no neonate care behind it
+  anywhere.
+- Also open: brumation or a winter cooling cycle, thawing and prep for
+  frozen fish and worms, and how long to wait after a meal before
+  handling.

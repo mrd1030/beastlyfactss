@@ -4833,3 +4833,80 @@ Checked against the Health and More list: thermostats and wattage are covered by
 - Maintenance of 12 to 24 inches of substrate: spot cleaning, full replacement interval, bioactive cleanup crew.
 - Target adult weight or growth curve to judge the weekly weigh-in against.
 - An ambient humidity figure in the setup guide; only the hub gives one (40 to 60%).
+---
+
+# Garter Snake: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch J. Raw and unedited.
+
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: shopping list, temps, cost tables. Weakened by a substrate and supplement line the deep dives contradict, and zero mention that this snake is banned in several states. **C+**
+- **01 Encyclopedia.** Finished it. Actionable: almost nothing, but the lab-model and tetrodotoxin history is the only page that made me want to keep the animal. **B**
+- **02 Cost.** Finished it. Actionable: real $49.99 listing, $200-400 setup, the honest "free snake still costs $200" math. **A-**
+- **03 Handling.** Finished it. Actionable: wait 1-2 weeks, short sessions twice weekly, approach from the side. **A-**
+- **04 Health.** Finished it. Actionable: symptom lists per condition and a clear go-to-the-vet-now list. **A**
+- **05 Tank setup.** Finished it. Actionable: sizes, gradient, bin dimensions, sealed gaps. **A**
+- **06 Feeding.** Finished it. Actionable: frequency table by diet type, prey sizing, red wiggler warning. **A**
+- **07 Enrichment.** Finished it, fastest read. Actionable: priority order and scatter-feeding. Thin, and the correction is most of the page. **B**
+- **08 Legal.** Finished it. Actionable: I now know to check my state before buying. **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: nothing else carries the range, conservation status, or the research history. The hub does not. It is a compressed rewrite of the tank, feeding, and health guides with no numbers the deep dives lack, and it drops the legal article entirely, which is the one thing a buyer needs before anything else.
+
+Disagreements with the deep dives:
+- Substrate. Hub checklist: "Aspen or cypress mulch substrate." Tank setup: "1 to 2 inches of a moisture-retentive substrate works well for most setups, coconut fiber, cypress mulch, or dry leaf litter." Aspen is not moisture-retentive and the tank guide never lists it. The cost guide repeats the hub's version.
+- Warm end. Hub: "a surface temperature of 85 to 88 degrees F (basking air up to 90 degrees F)." Tank setup: "85 - 90°F (up to 95°F on some sources)... treat the lower end as a floor rather than a ceiling."
+- Supplements. Hub: "Supplement with vitamin B1 and calcium a couple of times a month if fish or earthworms make up a significant part of the diet." Feeding and health both say: "add a vitamin B1 supplement if fish still make up more than roughly a quarter of what your snake eats." Different trigger, different schedule, and the deep dives never tie B1 to earthworms.
+- Feeding schedule. Hub: "adults roughly once a week if eating mice, or twice a week if eating mostly earthworms." The feeding table adds the case the hub omits, fish-heavy at "every 5 - 7 days," which for a fish-eating specialist is the likeliest one.
+- Heater price. Hub: "$35 | $60." Cost guide: "$35 - $70."
+
+## 3. The set as a whole
+
+Yes. I could legally check, buy, build, feed, handle, and spot illness. Gaps: no brumation or winter cooling anywhere; nothing on the live litter the hub advertises (up to 80 babies, no word on what you do with them); no thawing or prep procedure for frozen fish and worms; no wait-after-feeding rule before handling; cohabitation is raised three times and never actually decided.
+
+Questions answered elsewhere without being pointed there:
+- Health says "for any newly acquired garter snake" without sending me to the shared quarantine guide.
+- Cost says "a wild-caught animal skips the purchase price" while the legal guide is where I learn that in New York it is not lawful to keep at all.
+- Tank setup says the thermostat "is the part with zero exceptions" and never links the shared thermostat guide that says where the probe goes.
+- Feeding's prey-sizing rule uses body weight; the shared body-condition guide is what tells me to own a scale.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: thiaminase, tilapia/salmon/silversides, and the same neurological symptom list, nearly verbatim in cost, health, and feeding. Read twice: the swimmable water container and the weekly water change (tank setup and health, tank setup and enrichment).
+
+One soft conflict. Enrichment: "Many garter snake populations are semi-aquatic and hunt in water." Tank setup: "Garter snakes are semi-aquatic, proficient swimmers in the wild." One says many populations, the other says the species. Otherwise the deep-dive numbers agree.
+
+## 5. One link per page
+
+- **Hub.** "never feed live prey - it isn't necessary and can injure the snake." Point to the feeding guide, which is where the red wigglers and live-fish parasite warnings live.
+- **Encyclopedia.** "many individuals never accept a plain mouse." Point to the feeding guide.
+- **Cost.** "a fecal exam for parasites is a genuinely good idea for any wild-caught snake." Point to the health guide.
+- **Handling.** "Give a newly acquired garter snake one to two weeks to settle into its enclosure and start eating reliably before attempting to handle it." Point to the shared quarantine guide, since two weeks is not a quarantine.
+- **Health.** "A digital thermometer and hygrometer is the single best tool for catching this early." Point to the tank setup guide.
+- **Tank setup.** "a water conditioner to remove chlorine and chloramine is worth using given how much time this species spends in the water." Point to the health guide, where the same water fouling causes mouth rot.
+- **Feeding.** "Size prey at no more than about 1.5 times the width of the snake at its widest point, or roughly up to 10% of body weight per meal." Point to the shared sexing, growth and body condition guide.
+- **Enrichment.** "Do not feed a group in the same space." Point to the tank setup guide, the only page that sizes an enclosure for more than one snake.
+- **Legal.** Needs none. It links the hub and the map, and legality does not depend on husbandry.
+
+## 6. Trust
+
+Doubts: the hub disagreeing with its own deep dives on substrate and supplements suggests the card data and the articles were written apart and never reconciled, and the hub is the page I landed on first. The enrichment guide says "we made it ourselves before checking" under a title that says "I," and no author is named anywhere.
+
+The sentence that convinced me a keeper wrote this: "Do not feed a group in the same space, since one snake taking another's prey is how garter snakes injure each other." Nobody summarizing care sheets knows that the injury comes from the grab, not the fight.
+
+## 7. Set grade: A-
+
+The deep dives are specific, sourced to statute and study, and unusually willing to say what is not known; the hub drags it down by contradicting them.
+
+First two changes: rebuild the hub from the deep-dive numbers, starting with substrate, the B1 trigger, and the warm-end range, and add the legal article to the hub, since a New York buyer currently reaches five pages of husbandry before anything mentions it.
+
+## Not covered anywhere
+
+- Brumation or a winter cooling cycle, whether to do it and how.
+- What to do with a live litter, and any neonate care at all, despite the hub advertising up to 80 babies.
+- Thawing and prep for frozen fish and worms, and whether to feed in or out of the water.
+- How long to wait after a meal before handling.
+- Cohabitation as a real decision, raised in tank setup and enrichment, settled in neither.
