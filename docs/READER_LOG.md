@@ -6802,3 +6802,78 @@ First two changes:
 - Species identification and sexing, which every host plant and humidity answer depends on.
 
 Batch O note, not the reader's: the old hub's molt duration (20 to 60 minutes in one section, 30 minutes to over an hour in another) was retired rather than moved, since no deep dive states one. How long a molt takes, and whether to intervene in one going wrong, are both gaps on this species.
+
+## Fire Skink (2026-09-15, batch P)
+
+Raw output, one Opus reader agent, extractor set of seven pages.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: full shopping checklist, temps, mix ratio, feeding schedule. Grade B-.
+- **01 Encyclopedia.** Finished it. Actionable: adult size, 15 to 20 year lifespan, the Ghana/Togo export note that tells me most stock is wild caught. Grade B.
+- **02 Cost.** Finished it, grudgingly. Actionable: line-item setup, monthly feeder math. Undermined by numbers that fight the hub and itself. Grade C+.
+- **03 Handling.** Finished it in a minute. Actionable: no tail grabs, work low over soft surface, expect a display animal. Mostly a blue-tongue comparison with little fire skink method. Grade C.
+- **04 Health.** Finished it. Actionable: symptom list per problem, clear home-vs-vet split. Thin on numbers and no first aid for a dropped tail. Grade C+.
+- **05 Tank setup.** Finished it. Actionable: sizes, temps, mix, lamp distance, and it flags its own UVI source conflict. Grade B+.
+- **06 Enrichment.** Best of the set. Actionable: priority order 1 to 7, scatter feed into litter, cover at both ends of the gradient. Grade A-.
+
+## 2. Hub and encyclopedia against the deep dives
+
+The encyclopedia earns its place: taxonomy, range and the import route are nowhere else. The hub mostly restates the deep dives in shorter form, and its only unique content is the diet section and the cost tables, both of which conflict with the cost guide.
+
+Disagreements:
+
+- Substrate depth, hub against itself and against setup. Hub body: "Use four to six inches of a mix that holds a tunnel." Hub fun fact: "Give one four inches of substrate and it will vanish; give it eight to ten and it will build a burrow system." Hub FAQ: "At six to ten inches." Setup guide: "Provide 4 to 6 inches." The page tells me four inches ruins the animal, then puts "4 to 6 inches" on the checklist I am meant to shop from.
+- Setup cost. Hub table sums to roughly $380 to $500. Cost guide: "roughly $660 to $720." Hub enclosure "$202 | $258" versus cost guide "$280". Hub substrate "$10 | $16" versus cost guide "$88 - $99".
+- Thermostat. Cost guide: "the thermostat is the one people try to skip," at $130. The hub table and checklist have no thermostat line at all.
+- Night temperature. Hub: "a night drop to 70 to 75." Setup: "a night drop to about 70°F, 65°F is acceptable."
+- UVB necessity. Hub FAQ: "Do fire skinks need UVB? Yes." Setup: "UVB offers real benefit though is technically optional if diet is properly supplemented."
+- UVB replacement. Hub: "replace it every twelve months." Hub cost table: "UVB bulb replacement (every 6-12 months)."
+- MBD weight. Hub: "Metabolic bone disease is the main preventable problem." Health guide: "Less common in this species than in some other lizards."
+
+## 3. The set as a whole
+
+I could buy and build it. I could feed an adult. What I could not do confidently: bring a new import home. Nothing tells me what day one looks like, how long acclimation takes, or what a fecal test costs. Also missing: sexing, juvenile feeding amounts beyond "daily to every other day," body weight tracking, cleaning schedule or cleanup crew for permanently damp soil, and how to find a captive-bred animal when every page tells me to buy one.
+
+Questions answered on another page without being told: the hub asks why the skink hides and answers in three lines, while the enrichment guide has the real answer. The health guide's "maintain 60 to 70% substrate humidity consistently" never says the setup guide holds the fogger and probe hygrometer detail. The cost guide's parasite screening line never points at quarantine.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: substrate depth, humidity, wild-caught versus captive-bred, and the blue-tongue comparison, which opens or closes four pages.
+
+- Feeding location. Health: "considering feeding from a dish to reduce accidental ingestion." Enrichment: "Release live insects into the leaf litter rather than dropping them in a dish."
+- Sand. Hub health: "Impaction is the reason to avoid sand, gravel and any loose particulate." Both the hub and the setup guide then recommend "20% fine sand."
+- Cohab. Setup: "Don't house multiple fire skinks together." Enrichment FAQ: "Cautiously, and not by default."
+- Cost guide against itself. "Captive-bred individuals cost more" then "A wild-caught animal costs about the same as a captive-bred one."
+- Feeding frequency. Hub: "Adults eat twice a week." Cost: "An adult fire skink eats two or three times a week."
+
+## 5. One link per page
+
+- Hub: "Almost always because the substrate is too shallow." Point to the enrichment guide.
+- Encyclopedia: "Most animals in the trade are still wild collected and shipped out through Ghana and Togo." Point to Reptile Quarantine.
+- Cost: "the thermostat is the one people try to skip." Point to Reptile Heating and Thermostats.
+- Handling: "tail autotomy under grasping pressure." Point to the health guide.
+- Health: "maintain 60 to 70% substrate humidity consistently." Point to the setup guide.
+- Setup: "this connects directly to the respiratory infection and shedding problems dry air causes." Point to the health guide.
+- Enrichment: none needed.
+
+## 6. Trust
+
+Doubts: a hub setup table that is $200 short of its own cost guide, a checklist with no thermostat, and a cost page with September 2026 prices that contradicts itself on wild-caught pricing in two paragraphs. The health guide calling MBD uncommon while the hub calls it the main problem made me stop trusting either.
+
+Most convincing sentence: "Fire skinks get called expensive substrate by keepers who bought one and then never saw it again."
+
+## 7. Set grade: B-
+
+Strong husbandry instincts, undermined by numbers that do not reconcile across pages. First two changes: pick one substrate depth and one setup total and enforce them everywhere, and add an acquisition and first-30-days page covering sourcing, acclimation and the fecal test.
+
+## Not covered anywhere
+
+- Where to actually find a captive-bred fire skink, after five pages telling me to buy one.
+- Acclimation protocol for a fresh import, beyond "a quiet acclimation period."
+- Sexing, and whether it matters for a single animal.
+- Juvenile feeding quantities and growth expectations.
+- Cleaning, spot-cleaning or bioactive cleanup crew for permanently damp deep substrate.
+- Body condition or weight monitoring for a species you rarely see.
+- Which UVI to actually target, after the setup guide names the disagreement and leaves it open.
+- How much topsoil and sand to buy for the 40/40/20 mix; only coconut fiber is priced.

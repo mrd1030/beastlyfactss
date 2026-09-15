@@ -14472,3 +14472,59 @@ Verdicts: giant millipede fixed on the branch; jumping spider fixed on the branc
 Gates on the branch head: check-internal-links, check-related-articles, check-affiliate-mdx, check-cost-coverage, check-seo-tags, check-voice --strict, eslint all clean. check-species-numbers: no hub line disagrees with a deep dive on any of the four; the strict exit is on advisory groups only, the same as every merged reconciled species.
 
 Pass grade: B. Everything the last six batches were told about and kept getting wrong came back right: FAQs verbatim, frontmatter copies moved with the figure, no source name in any row, no stale figure anywhere, real sources opened for every number and the encyclopedia field. What it still got wrong is the other half of the same list: three hedges upgraded during de-narration, four hub rows and four emergency bullets written rather than pasted on three of four species, two sentences written past what the opened source says, and one review count off by one.
+
+## Fire Skink (2026-09-15, batch P, single pass, before the router hub)
+
+Extractor set of seven pages. One Opus agent, about 76k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B-. "Strong husbandry instincts, undermined by
+numbers that do not reconcile across pages."
+
+Numbers checker before the pass, 38 topic groups and 13 conflicts, most of them
+the old hub's cost table against the cost guide. The reader found those and added
+the two the checker cannot see: a cost guide that contradicts itself on
+wild-caught pricing two paragraphs apart, and a substrate depth given three
+different ways across two pages.
+
+The self-contradiction is the finding worth carrying. The cost guide says
+"Captive-bred individuals cost more but make genuinely better pets" in its second
+paragraph and "A wild-caught animal costs about the same as a captive-bred one" in
+its last, and the reader stopped trusting the page over it. No checker compares a
+page against itself in prose. Fixed to the version the FAQ and the rest of the set
+already carried.
+
+Substrate depth: the setup guide says 4 to 6 inches, the handling guide's FunFact
+said four inches makes the animal vanish and eight to ten makes it thrive, and the
+old hub managed all three. ReptiFiles gives "4-6″ / 10-15cm" and Dubia.com gives
+"around 6″ deep", so nothing supports the 8 to 10, and the old FunFact told a
+reader that the depth on the site's own shopping list would ruin the animal. Both
+FunFacts now carry 4 to 6.
+
+Diet Basics added to the tank setup guide, the sixth species to need it and the
+third in two batches. The only feeding schedule anywhere in this set was inside
+the cost guide's monthly feeder math. Sourced to Dubia.com (adults 2 to 3 times a
+week depending on body condition, juveniles daily) and ReptiFiles (the five-minute
+rule, no feeder wider than the head, the feeder list, calcium and multivitamin).
+
+Source narration inside a FunFact, which is a shape this file has not recorded
+before. The setup guide's UVI FunFact named Reptiles Magazine against "other
+husbandry sources" and called the split "a real disagreement worth knowing about",
+then left the reader to pick. RULES says state the range, say which end to use and
+why, and move on, so it now does, and the reader's "which UVI to actually target"
+complaint is answered rather than left open. The published range itself, Ferguson
+Zone 2 at UVI 0.7 to 1.0 up to UVI 3.0 to 4.0, is unchanged.
+
+Links: 4 added. The cost guide's thermostat line goes to the shared reptile
+heating guide rather than to a sibling, which is the better target and does not
+spend the one sibling slot.
+
+check-species-numbers fire-skink after the pass: every line marked hub appears in
+the deep dive its row names. Voice warning counts identical to baseline on all five
+changed files, all gates and eslint clean.
+
+Not covered anywhere, the reader's list: where to actually find a captive-bred
+animal after five pages recommending one, an acclimation protocol for a fresh
+import, sexing, juvenile feeding quantities and growth expectations, cleaning or a
+cleanup crew for permanently damp deep substrate, body condition tracking for an
+animal you rarely see, and how much topsoil and sand to buy for the 40/40/20 mix
+when only the coconut fiber is priced. The acclimation one is the same gap batch O
+found on all four invertebrates, which now makes it seven species running.
