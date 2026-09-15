@@ -106,7 +106,7 @@ export const birdEncyclopedia = [
       habitat: "Arid scrubland, deciduous forest, and cultivated farmland",
       adultSize: "4.3-5.5 inches (11-14 cm); 1-1.4 oz",
       wildDiet: "Grass seeds, berries, cactus fruit, and blossoms",
-      wildLifespan: "Not well documented in the wild; one estimate averages around 10 years (often 15-20 years in captivity, some individuals reaching their 20s or 30s)",
+      wildLifespan: "Not well documented in the wild; one estimate averages around 10 years (8-12 years is the usual captive average, with individuals reported into their 20s and occasionally their 30s)",
       conservation: "Least Concern (IUCN)",
       history: "Rene Lesson described Forpus coelestis in 1847, but the bird was slow to reach keepers. The United States has held an established captive breeding population since 1930, and even so parrotlets stayed obscure in American aviculture until the mid-1980s; a 1996 article in the AFA Watchbird noted that they had been little known ten years earlier and were only then becoming popular. The Wild Bird Conservation Act, signed on October 23, 1992, ended commercial imports of wild-caught parrots into the United States. The surge in parrotlet keeping that followed therefore ran entirely on birds already in captivity.",
     },

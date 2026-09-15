@@ -5161,3 +5161,87 @@ First two changes:
 - What a normal shed looks like, so a keeper can tell it from the "abnormal shedding" the health page calls a red flag.
 - What kind of vet to call. No page in the set names an exotic or amphibian vet as the one to find, though the cost guide prices an "exotic exam".
 - A prey-size rule. The old hub's "no larger than the space between the salamander's eyes" was retired rather than carried into a deep dive, since no opened source states it.
+
+## Parrotlet (2026-09-15, batch K)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment).
+
+**1. Page by page**
+
+- 00 Hub. Finished it; can act on cage size, the shopping checklist, and the toxic-food list, but the numbers are the softest on the site. B-
+- 01 Encyclopedia. Finished it, read in 90 seconds, nothing to act on except the 4.3-5.5 in size and the 1992 import law context. B
+- 02 Cost. Finished it; can budget a real number ($100-900 bird, $160-300 setup, $20-40/month) and it tells me sources disagree on lifespan. A-
+- 03 Handling. Finished it; 5-10 minute sessions, millet reward, warning nip, no punishment: all actionable. A
+- 04 Health. Finished it; I know my four emergency signs and the egg-binding prevention stack. A-
+- 05 Setup. Finished it; bar spacing, powder-coat/stainless, 65-80F, UV, paper liner, pair introduction protocol. Most actionable page in the set. A-
+- 06 Feeding. Finished it; free-choice pellets, seed once a day, no grit, the safe/toxic lists. A
+- 07 Enrichment. Finished it fastest; the priority order is a to-do list. A
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: range, wild flock size, the 1930 breeding population and the Wild Bird Conservation Act appear nowhere else. The hub does not. Every hub section is a compressed version of a deep dive, and it compresses badly.
+
+Conflicts, hub versus deep dive:
+
+- Bar spacing. Hub: "Bar spacing of 3/8 to 1/2 inch keeps a parrotlet from squeezing through." Setup: "Lafeber... recommends going tighter still, around 1/4 inch. That's meaningfully narrower than the 3/8 to 5/8 inch range that's fine for a lovebird." The hub is recommending the range the setup guide calls a lovebird range.
+- Cage cost. Hub: "$100 | $280." Cost: "$120 - $220."
+- Vet. Hub annual table: "$60 | $100." Cost table: "$60 - $150."
+- Toys upfront. Hub: "$20 | $40." Cost: "$10 - $22."
+- Lifespan. Hub FAQ: "Commonly 15 to 20 years in captivity with good care." Cost: "PetMD's own figure is comparatively conservative, 8 to 12 years on average." The hub states as settled what another page calls contested.
+
+**3. The set as a whole**
+
+Yes, I could do this. I could buy the bird, size and furnish the cage, feed it, run a socialization and training routine, and recognize an emergency. Still missing: what a parrotlet sounds like at volume, how to tell a hen from a cock, and a cleaning routine with a frequency on it.
+
+Questions raised on one page and answered on another, unsignposted:
+
+- Cost: "egg-binding in a female" is priced but never explained. The mechanism is in the health guide.
+- Health: "a proper pelleted diet" as egg-binding prevention. The how is the feeding guide.
+- Health: "A genuinely roomy flight cage and a rotating supply of chew and forage toys." The enrichment guide is the actual answer.
+- Setup: "the socialization that comes with it is what keeps a parrotlet friendly rather than nippy." The routine is in the handling guide.
+- Handling: molting-season nipping. The feeding guide explains molt protein demand.
+
+**4. Overlap and conflict across the deep dives**
+
+Read four and five times: one bird versus two (cost, handling, setup, enrichment), pellets over seed, boredom to feather plucking, the big-personality-small-body line, and the wild 40-50 flock. The pair discussion is genuinely four pages long.
+
+Real disagreements:
+
+- Bowls. Feeding: "refresh the base pellet bowl in the morning... clamp-on dishes that stay put on the cage bars make this easier." Enrichment: "Do not use a food bowl as the default," priority 1 being "All food delivered through foraging." Nobody reconciles these.
+- Seed. Feeding: Lafeber "limiting seeds and nuts to about once a day." Hub: "Seed mix can be offered in small amounts, ideally through a foraging toy." Not contradictory, but the hub gives no frequency.
+- Sessions. Handling: "5 to 10 minutes, two or three times a day." Enrichment: "Ten minutes twice a day."
+- Pairing safety. Handling: "Lafeber is more cautious, recommending parrotlets be kept singly rather than paired, citing safety." Enrichment: "A bonded pair covers the social requirement... which is a trade and not a downside." The caution vanishes.
+- Out-of-cage time has a number on the hub only ("at least an hour"); the enrichment priority list omits it entirely.
+
+**5. The one link each page needs**
+
+- Hub: "Bar spacing of 3/8 to 1/2 inch keeps a parrotlet from squeezing through or getting a head or foot caught" to the cage setup guide.
+- Encyclopedia: "an under-socialized bird can turn sharp and nippy well out of proportion to its size" to the handling guide.
+- Cost: "egg-binding in a female or an injury from this bird's fearless, accident-prone streak" to the health issues guide.
+- Handling: "pairing can work, but only with a slow, supervised introduction, never two strangers dropped straight into one cage" to the cage setup guide, which has the actual steps.
+- Health: "A genuinely roomy flight cage and a rotating supply of chew and forage toys address the boredom side directly" to the enrichment guide.
+- Setup: "Indoor birds benefit from supplemental UV exposure to properly synthesize vitamin D3 for calcium absorption" to the health issues guide.
+- Feeding: "A cuttlebone or mineral block should be available at all times for calcium, this matters even more for females given the egg-laying risks" to the health issues guide.
+- Enrichment: "Under-slept small parrots get nippier, which is the behavior owners then attribute to temperament" to the handling guide.
+
+**6. Trust**
+
+Doubts: the hub disagreeing with three deep dives on numbers; the feeding guide's grit fun-fact box saying the same thing as the paragraph directly under it; and a link that misdescribes itself, "our Budgie cage setup guide covers the same pellet-over-seed shift," which is a cage page sold as a diet page. The health guide carries one bare "budgie" link and no route to anything else parrotlet.
+
+What convinced me a keeper wrote this: "A parrotlet usually gives a gentle warning nip before an actual bite, a small piece of communication most new owners miss entirely." Nobody compiling from sources notices that. The enrichment guide's flat "Nothing on parrotlets" is the runner-up.
+
+**7. Set grade: B+**
+
+Six strong deep dives dragged down by a hub that contradicts them and by pages that never point at each other.
+
+First two changes: make the hub derive its numbers from the deep dives (bar spacing, cage price, vet cost, lifespan range) instead of carrying its own; and settle the bowl-versus-foraging question in one place, with the hub's "at least an hour" out-of-cage figure added to the enrichment priority list.
+
+**Not covered anywhere**
+
+- Sexing a parrotlet, which the shared guide explicitly punts on ("Most parrots can't be sexed by looking at them"), yet the health and feeding pages both hinge on knowing you have a hen.
+- What a parrotlet actually sounds like and whether it works in an apartment. The hub says "smaller and quieter" and stops.
+- A cage cleaning schedule. "Changed regularly" is the only instruction in the set.
+- The first week home. Handling says start "the day the bird comes home"; nothing says whether that is right for a bird that just moved.
+- The cost and choice of the UV fixture the setup guide recommends. It is in no budget table, and the shared photoperiod guide covers schedule, not hardware.
+- A daily out-of-cage duration. The old hub's "at least an hour" was retired rather than carried into a deep dive, since no deep dive or opened source states it.

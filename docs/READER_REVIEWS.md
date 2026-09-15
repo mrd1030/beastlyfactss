@@ -11446,3 +11446,214 @@ are available"); and six in-body links.
 Left open: the six content gaps above, filed in docs/READER_LOG.md. The larval
 husbandry gap is the one the reader named first and it is real: three pages hand
 a reader to an axolotl page for it.
+
+## Parrotlet (2026-09-15, batch K, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, feeding, enrichment). One Opus agent, about 96k tokens. The review
+below reads the old legacy hub (housing, diet, enrichment and health prose, two
+cost tables, a checklist); the router hub was built from its findings the same
+day. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | Cage size, a shopping checklist and the toxic-food list, with the softest numbers on the site. |
+| Encyclopedia | B | Ninety seconds, and only the adult size and the 1992 import law are new. |
+| Cost | A- | A real budget, and it admits the lifespan figures disagree. |
+| Handling | A | Five to ten minute sessions, millet, the warning nip, no punishment. |
+| Health issues | A- | Four emergency signs and the egg-binding prevention stack. |
+| Tank setup | A- | The most actionable page in the set. |
+| Feeding | A | Free-choice pellets, seed once a day, no grit, the safe and toxic lists. |
+| Enrichment | A | The priority order reads as a to-do list. |
+
+Set grade: B+. "Six strong deep dives dragged down by a hub that contradicts
+them and by pages that never point at each other."
+
+Hub versus the set, both sides quoted (resolved by the router rebuild unless
+noted):
+
+- Bar spacing, the one that mattered. Old hub: "Bar spacing of 3/8 to 1/2 inch
+  keeps a parrotlet from squeezing through or getting a head or foot caught."
+  Tank setup: "That's meaningfully narrower than the 3/8 to 5/8 inch range
+  that's fine for a lovebird." The hub was recommending, for a parrotlet, the
+  exact range its own setup guide identifies as a lovebird range. Neither figure
+  survived; see Numbers checker.
+- Cage cost. Old hub: "$100 | $280." Cost guide table: "$120 - $220." Retired
+  with the hub's cost tables.
+- Vet. Old hub annual table: "$60 | $100." Cost guide table: "$60 - $150." Cost
+  guide body: "about $60 to $90." Three figures for one idea, and the cost guide
+  contradicted itself; see Numbers checker.
+- Toys upfront. Old hub: "$20 | $40." Cost guide: "$10 - $22." Retired.
+- Lifespan. Old hub FAQ: "Commonly 15 to 20 years in captivity with good care."
+  Cost guide: "PetMD's own figure is comparatively conservative, 8 to 12 years
+  on average." The hub stated as settled what another page called contested; see
+  Numbers checker.
+
+Numbers checker. `node scripts/check-species-numbers.mjs parrotlet --strict`
+before the pass reported nine conflicting topic groups. Decisions:
+
+- Bar spacing in. Old hub 3/8 to 1/2, tank setup "no wider than 1/2 inch, with
+  some general bird-safety sources putting the outer limit at 5/8 inch" and, in
+  the next sentence, Lafeber's 1/4 inch. Both opened avian sources give the same
+  number and it is the tightest one: Lafeber's parrotlet page says "A spacious
+  wide cage with 1/4 inch bar spacing is ideal," and PetMD's parrotlet article,
+  written by Dr. Laurie Hess, DVM, Diplomate ABVP (Avian Practice), says "bar
+  spacing narrow enough (1/4") to prevent escapes." The 1/2 and 5/8 figures were
+  general small-bird guidance, and under RULES a species-specific source at the
+  higher tier wins. The page now leads with 1/4 inch and names 1/2 inch as the
+  widest worth considering, in the body and in its own FAQ. The lovebird
+  comparison, which is a real comparison rather than a source, stays.
+- Lifespan years. Old hub 15 to 20 captive, encyclopedia "often 15-20 years in
+  captivity", cost guide "PetMD's own figure is comparatively conservative, 8 to
+  12 years on average. Other sources, Lafeber among them, put typical captive
+  lifespan at 15 to 20 years." PetMD's own words: "they live, on average, 8-12
+  years but are reported to live into their 20s in captivity." Lafeber gives "Up
+  to 20 years," which is an upper bound and not a typical figure, so the two are
+  not in conflict once the narration is removed. The section now leads with 8 to
+  12 as the average, keeps the reports into the 20s and 30s, keeps Lafeber's
+  20-year upper end unattributed, and keeps the wild estimate of around 10 years.
+  The encyclopedia's captive parenthetical moved to match.
+- Vet $. Cost guide table "$60 - $150" against its own body "about $60 to $90".
+  A same-page contradiction. The Vet Desk, the page's own first source, states
+  "$60-$90 per year" for a routine vet checkup, so the table row moved to
+  $60 - $90. That changed the annual sum, which was computed off the $150: the
+  four annual rows now total $250 to $400, so the section heading and the
+  sentence under the table both moved from "Roughly $20 to $40 a Month" to
+  "Roughly $21 to $33 a Month" and "$250 to $400 a year". The arithmetic checks:
+  70+80+40+60 = 250 and 110+130+70+90 = 400.
+- Every other group was the old hub's two cost tables against the cost guide's.
+  The hub carries no table now.
+
+After the rebuild the checker reports eight groups, and every value on a line
+marked `hub` appears, unchanged, in the deep dive its row names. What is left is
+the checker filing cage dimensions under "other | in" and bird prices under
+"greens | $", which RULES calls advisory.
+
+Deep dives against each other:
+
+- Bowls versus foraging. Feeding: "refresh the base pellet bowl in the morning
+  when they're hungriest and top it up if it empties before evening." Enrichment,
+  in its What Not to Do list: "Do not use a food bowl as the default," with
+  priority 1 being all food delivered through foraging. Enrichment is the page
+  whose subject is delivery, and its cited evidence (Meehan, Millam and Mench on
+  foraging opportunity preventing feather picking) is about exactly that, so it
+  keeps the recommendation. What was missing was the reconciliation, and it is
+  now on the enrichment page: the pellet base is the same either way, and a bowl
+  of it stays available as the fallback, since a small bird that fails to solve a
+  toy still has to eat that day. Neither page's figure changed.
+- Session length. Handling: "5 to 10 minutes, two or three times a day."
+  Enrichment: "Ten minutes twice a day." Ten minutes twice a day sits inside 5 to
+  10 minutes two or three times a day, so this is one instruction stated loosely,
+  not two. Left alone.
+- Pairing. Handling narrated a disagreement between two sources; enrichment
+  treats a bonded pair as a trade rather than a downside. De-narrated on the
+  handling page to state the trade directly: a pair suits an owner with less
+  time, singly is the safer default, and pairing needs a slow supervised
+  introduction. The caution is now on both pages rather than one.
+- Read four and five times across the set: one bird versus two, pellets over
+  seed, boredom leading to feather plucking, the big-personality-small-body line,
+  and the wild 40 to 50 flock.
+
+Source narration, the defect the last four batches kept finding, was on three
+deep dives here before the router step ever ran, which is the point step 4 makes:
+settle the figure in the article, then copy. Fixed on all three.
+
+- Tank setup: "Lafeber, an avian-specialist source writing specifically about
+  this species, recommends going tighter still, around 1/4 inch" and "some
+  general bird-safety sources putting the outer limit at 5/8 inch."
+- Feeding: "Lafeber, an avian-specialist source, recommends limiting seeds and
+  nuts to about once a day", in the body and in its FAQ.
+- Handling: "Lafeber, an avian-specialist source, describes a parrotlet's bite
+  as much stronger than a budgie's... PetMD backs this up from the other
+  direction", and a whole paragraph opening "Sources don't fully agree on
+  pairing. PetMD frames... Lafeber is more cautious", both repeated in FAQs.
+- Cost: the section heading "Lifespan: A Wider Range Than Most Sources Agree On"
+  and its opening line "Lifespan estimates vary more for this species than for
+  most birds we cover", which is both source narration and the site talking about
+  itself. Heading now reads "Lifespan: One to Two Decades".
+
+Gaps, checked against the Health and More list before calling them real. The
+parrotlet sidebar is unusually well stocked: household hazards, avian gastric
+yeast, quarantine, droppings, photoperiod and sleep, pellet conversion, wing
+clipping, the emergency plan, sexing and weight, chronic egg laying, feather
+loss, choosing a pet bird, and polyomavirus. Against that list, sexing is
+covered (the shared guide's answer is that DNA testing is the only reliable one
+for most parrots, which is an answer rather than a punt, and it is now a hub
+row). These are real and filed in docs/READER_LOG.md: what a parrotlet sounds
+like and whether it suits an apartment; a cage cleaning schedule with a
+frequency on it; what the first week home should look like for a bird that has
+just moved; the cost and choice of the UV fixture the setup guide recommends;
+and a daily out-of-cage duration.
+
+The old hub's "at least an hour" of daily out-of-cage time was the one figure
+worth trying to keep, and it was retired rather than carried forward: no deep
+dive states it and neither opened source gives a duration. The hub's
+Out-of-cage row now copies the tank setup guide's sentence, which says the time
+matters without putting a number on it, and the hour is filed as a gap. This is
+the batch F move on the angelfish water change and the sugar glider wheel.
+
+Stranded questions, now linked: the cost guide priced egg binding and never
+explained it; the feeding guide raised calcium for a hen and never said what the
+deficiency leads to; the health guide prescribed a roomy cage and rotating toys
+and never pointed at the page that ranks them; the tank setup guide raised UV
+and calcium and stopped; the handling guide described a supervised pair
+introduction whose actual steps are in the setup guide. All five fixed.
+
+One link per page, from the reader:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Bar spacing of 3/8 to 1/2 inch keeps a parrotlet from squeezing through" | setup guide | Yes, as a hub Bar spacing row sourced to it |
+| Encyclopedia | "an under-socialized bird can turn sharp and nippy" | handling guide | No, the encyclopedia is structured data with no link slot |
+| Cost | "egg-binding in a female or an injury from this bird's fearless, accident-prone streak" | health issues guide | Yes |
+| Handling | "pairing can work, but only with a slow, supervised introduction" | setup guide | Yes |
+| Health | "A genuinely roomy flight cage and a rotating supply of chew and forage toys address the boredom side directly" | enrichment guide | Yes |
+| Setup | "Indoor birds benefit from supplemental UV exposure to properly synthesize vitamin D3 for calcium absorption" | health issues guide | Yes |
+| Feeding | "A cuttlebone or mineral block should be available at all times for calcium" | health issues guide | Yes |
+| Enrichment | "Under-slept small parrots get nippier" | handling guide | No, the enrichment guide already carries its one sibling link, to feeding, where the bowl-versus-foraging reconciliation now sits |
+
+Seven of eight added or answered, one sibling link per article, each with a
+reason, none before the first H2, none in a ComparisonTable cell.
+
+Also fixed on the reader's trust list: the tank setup guide's closing "our
+Budgie cage setup guide covers a similarly sized bird with a more forgiving
+temperament worth comparing", which was both the site talking about itself and a
+sentence existing to carry a link, and which the reader separately caught
+misdescribing itself elsewhere in the set as covering a diet shift. It now says
+what the budgie actually settles, that a bird of roughly the same body length
+takes wider bar spacing, which is the point the section is making. The
+enrichment guide's affiliate template fragment ("and other sizes are available")
+is gone, one of the 23 in docs/TODO.md section 8.
+
+Dates. Every parrotlet guide is future-dated: the cost, feeding, handling,
+health issues and tank setup guides all carry `date: "2026-09-20"` and the
+enrichment guide `2026-10-31`, each with lastUpdated and lastReviewed equal to
+its own publish date. None was bumped. An article that has not published yet
+cannot have been updated after publication, and setting lastUpdated to
+2026-09-15 would put it before the date. Worth a decision from Mike if a future
+batch hits the same thing.
+
+Encyclopedia. One field changed, the one conflicting with a deep dive's figure.
+`wildLifespan` read "Not well documented in the wild; one estimate averages
+around 10 years (often 15-20 years in captivity, some individuals reaching their
+20s or 30s)". The wild half is unchanged and still correct. The captive
+parenthetical moved to "8-12 years is the usual captive average, with
+individuals reported into their 20s and occasionally their 30s", matching PetMD
+and the cost guide. Nothing else in the entry was touched.
+
+Unsourced, needs a fact-check: "occasionally their 30s" appears on the cost
+guide, the encyclopedia and now the hub, and neither opened source states it.
+PetMD gives "into their 20s" and Lafeber "up to 20 years". It was left in place
+rather than deleted, since removing a figure is not what this pass is for, but
+it wants one look.
+
+Fixed the same day: the bar-spacing recommendation in the tank setup body and
+FAQ; source narration on four deep dives, body and FAQs both; the cost guide's
+vet table row, its annual total, its ongoing-costs heading, its lifespan heading
+and section, and its description field; the enrichment guide's affiliate
+template fragment; the bowl-versus-foraging reconciliation; the tank setup
+guide's self-referential budgie sentence; the encyclopedia's captive lifespan
+parenthetical; and seven in-body links.
+
+Left open: the five content gaps above, filed in docs/READER_LOG.md, plus the
+unsourced "30s" figure.
