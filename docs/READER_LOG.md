@@ -6947,3 +6947,84 @@ Strong deep dives sitting under a hub whose numbers contradict them. First two c
 - Gravid female husbandry, birth, dystocia, and what to do with 5 to 30 neonates.
 - How to vet a breeder or tell captive-bred from wild-caught at purchase.
 - UVB distance from the basking branch, punted to a UVB guide that is not in this set.
+
+## Uromastyx (2026-09-15, batch P)
+
+Raw output, one Opus reader agent, extractor set of nine pages.
+
+## 1. Page by page
+
+- **00 Care guide hub.** Finished it; it is the most actionable single page (checklist, cost tables, numbers) and also the one most often contradicted by the pages under it. **C**
+- **01 Encyclopedia.** Finished it in a minute. Actionable: almost nothing, but the CITES Appendix II and Morocco collection paragraph told me to buy captive-bred. **B-**
+- **02 Cost guide.** Finished it. I can budget $500 to $900 up front and $25 to $45 a month. The table has two rows and then hands the rest to prose. **B**
+- **03 Handling.** Finished it. Two weeks hands-off, scoop from below, 10 to 15 minute sessions, never the tail. Short and complete. **B+**
+- **04 Health issues.** Finished it. Named signs, named sources, monthly gram-scale weighing, a four-item call-the-vet list. **A-**
+- **05 Tank setup.** Finished it. Sizes, temps, UVI target, a substrate recipe I can mix. **A-**
+- **06 Feeding.** Finished it. Best page in the set: it tells me where sources disagree instead of inventing a number. **A**
+- **07 Enrichment.** Finished it. Priority list I can build from, and it admits there is no uromastyx research. **A-**
+- **08 vs Bearded dragon.** Finished it. Good for the buying decision, but its temperature column is wrong against the rest of the set. **C+**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: the genus history, CITES listing, and Moroccan wild-collection note appear nowhere else. The hub mostly restates the deep dives at lower resolution, and then disagrees with them:
+
+- Basking. Hub: "A surface temperature of 120 to 140 degrees F at the basking site is not optional." Tank setup: "Basking surface temperature needs to reach 120 to 130F, with the giant Egyptian species needing at least 130F."
+- UVB bulb. Hub checklist: "Strong desert UVB (T5 HO Arcadia Dragon 12%)." Tank setup: "A high-output T5 HO bulb in the 14% range, targeting a basking-area UVI of 4.5 to 6.0."
+- Substrate. Hub: "3 to 4 inches deep" and "fine play sand or an 80/20 sand-to-soil mix." Tank setup: "packed at least 4 inches deep," "roughly 50% play sand, 30% topsoil, and 20% excavator clay."
+- Water. Hub FAQ: "Remove any water dish from a standard uromastyx setup." Health: "Long Island still wants a water bowl available, so keep one, even if it goes untouched."
+- Seeds. Hub: "Seeds form a nutritionally important part of the diet." Feeding: "Treat seeds as limited, not a daily component either way."
+- Enclosure cost. Hub: "$150 to $300." Cost guide: "$280 - $400."
+- Size. Hub FAQ: "10 to 18 inches total length." Encyclopedia: "10-30 inches (25-75 cm)."
+
+## 3. The set as a whole
+
+Yes, I could buy, build, feed, and run one. Still missing: brumation management (feeding names it, nobody says what to do), any cleaning or substrate-replacement cadence, sexing and egg-laying (cost bills "egg-binding" and no page prevents it), what to inspect when buying and how to pick a breeder, and whether a hatchling goes straight into a 4x2x2.
+
+Unstated hand-offs:
+- Tank setup ends on "The Non-Obvious Requirement: Seeds in the Diet" and never points at the feeding guide.
+- Feeding's 120 to 140F basking claim never points at tank setup, which is where the number is built.
+- Handling warns against a damp enclosure without pointing at the humidity section that defines damp.
+- Cost names MBD, impaction, and egg-binding without pointing at the health guide.
+
+## 4. Overlap and conflict across deep dives
+
+I read the tail-whip warning, the herbivore/seed point, and "water comes from food" three times each. Real conflicts:
+
+- Basking. vs Bearded dragon: "generally 110 to 120 degrees F." Tank setup: "120 to 130F." Feeding: "roughly 120 to 140°F." Three ranges, and the comparison page's ceiling is below the others' floor.
+- Temperament. Hub: "many develop what keepers describe as dog-like personalities, seeking interaction." vs Bearded dragon: "they start from a more naturally skittish baseline, bolting for a burrow at the first sign of a threat."
+- Handling as enrichment. Hub: "Supervised handling sessions build trust quickly with this species." Enrichment: "do not treat handling as enrichment for a species that mostly wants to be left on its rock."
+- Insects. Hub FAQ: "no insects in the diet." Enrichment FAQ: "Occasional insects are not a disaster in most keepers' experience."
+- Humidity practice. Hub: "A water dish ... raises humidity significantly, which is inappropriate." Health: "Tree of Life adds a light fog of the enclosure once or twice a week at night."
+
+## 5. One link per page
+
+- **Hub:** "A water dish is typically unnecessary and can raise humidity to unhealthy levels." Link to the health issues guide, which keeps one.
+- **Encyclopedia:** "Highly adapted to extreme heat and drought, they obtain most of their water from plant matter and seeds." Link to the feeding guide.
+- **Cost:** "Emergencies involving metabolic bone disease, impaction, or egg-binding can run several hundred dollars." Link to the health issues guide.
+- **Handling:** "Keeping the enclosure damp, which stresses this genuinely arid-adapted species." Link to the tank setup guide.
+- **Health:** "Choosing an appropriate sand substrate and avoiding calcium sand or walnut shell products entirely." Link to the tank setup guide.
+- **Tank setup:** "this species needs seeds like lentils and millet as a regular dietary component." Link to the feeding guide.
+- **Feeding:** "roughly 120 to 140°F on the basking surface depending on the source." Link to the tank setup guide.
+- **Enrichment:** "Do not build a diet on insects for a herbivore." Link to the feeding guide.
+- **vs Bearded dragon:** needs none; it already links both hubs and both profiles.
+
+## 6. Trust
+
+Doubts: three different basking ranges, two different UVB percentages, and a hub that tells me to remove the water bowl while the health page tells me to keep one and soak the animal weekly. The "possibly as long as 60" lifespan is one source repeated twice on the same page, once in a fun-fact box, which reads like padding.
+
+Most convincing sentence, from the enrichment FAQ: "a subordinate animal in a shared enclosure loses access to the basking spot, which for this species means losing access to digestion."
+
+## 7. Set grade: B-
+
+The deep dives are genuinely good and honest about uncertainty; the hub sits on top of them contradicting four numbers a new keeper will act on.
+
+First two changes: (1) pick one basking range, one UVB spec, and one hydration policy, and make every page use them; (2) rewrite the hub to summarize and link down to the deep dives instead of issuing its own fifth set of numbers.
+
+## Not covered anywhere
+
+- How to run brumation: temperatures, photoperiod, whether to cool deliberately, when to end it.
+- Cleaning cadence: spot-cleaning frequency and when to replace sand substrate.
+- Sexing, breeding, and egg-laying setup, including the lay box that prevents the egg-binding the cost guide bills for.
+- What to check on the animal at purchase and how to pick a captive-bred source, distinct from quarantining it afterward.
+- Housing a hatchling or juvenile: whether a baby goes straight into the 4x2x2 adult enclosure.
+- Species-level differences beyond size and price among Mali, ornate, and Egyptian.

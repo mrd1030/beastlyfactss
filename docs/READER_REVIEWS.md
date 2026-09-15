@@ -14589,3 +14589,55 @@ and what to do with 5 to 30 neonates, which the cost guide prices as an emergenc
 and the health guide never mentions; how to tell captive-bred from wild-caught at
 purchase; and UVB distance from the basking branch, which the setup guide hands off
 to a UVB guide outside this set.
+
+## Uromastyx (2026-09-15, batch P, single pass, before the router hub)
+
+Extractor set of nine pages, including the vs-bearded-dragon comparison. One Opus
+agent, about 81k tokens. Raw output in docs/READER_LOG.md. Set grade: B-. "The
+deep dives are genuinely good and honest about uncertainty; the hub sits on top of
+them contradicting four numbers a new keeper will act on."
+
+Numbers checker before the pass, 44 topic groups, the largest set in either batch.
+The reader found the hub conflicts the checker found and one it could not: a third
+basking range on the vs-bearded-dragon page.
+
+Three basking ranges, and the comparison page's ceiling sat below the other two
+pages' floor. vs guide: "110-120°F". Setup guide: "120 to 130F, with the giant
+Egyptian species needing at least 130F". Feeding guide: "roughly 120 to 140°F".
+ReptiFiles, which the setup guide cites, states "Basking surface temperature:
+120-130°F (49-55°C)", and basking is the setup guide's own subject, so both other
+pages moved to it. A comparison table is the easiest page in a set to leave behind
+when a number changes, and this is the first time a batch has caught one.
+
+Source narration, eight instances across four pages, which is the most any species
+in either batch has carried. Two on the setup guide including one inside a FunFact,
+two on the cost guide (the reader called the repeated ReptiFiles lifespan citation
+padding, and it was the same claim twice on one page), and four on the health
+guide, where Merck, Long Island Bird & Exotics and Tree of Life were named in
+prose. Every claim, figure and hedge survives; the names stay in the Sources
+blocks. This matters more here than usual because the health guide is the page the
+emergency card copies from, so a name in that prose is a name in a hub row.
+
+The feeding guide was graded A by the reader for being "honest about uncertainty",
+and its schedule was still narrated as a disagreement. The rewrite keeps both ends
+of the published range and adds which end to use and why, which is what RULES asks
+for, so the honesty survives without the survey. Same for its two FAQs.
+
+Hydration was the one genuine deep-dive contradiction: the hub said remove the
+water dish, the health guide's veterinary sources say keep one available even if it
+goes untouched. The hub lost, which is the usual direction, and the health guide's
+version is now a row.
+
+Links: 6 added, one per article.
+
+check-species-numbers uromastyx after the pass: every line marked hub appears in
+the deep dive its row names. Voice warning counts identical to baseline on all
+seven changed files, all gates and eslint clean.
+
+Not covered anywhere, the reader's list: brumation management, which the feeding
+guide names as a normal fast and no page explains; cleaning and substrate
+replacement cadence; sexing, breeding and the lay box that prevents the egg-binding
+the cost guide bills for; what to inspect at purchase; whether a hatchling goes
+straight into a 4x2x2; and species-level differences among Mali, ornate and
+Egyptian beyond size and price. Brumation is the one worth writing first, since the
+set tells a keeper a two-month fast can be normal and then leaves them to judge it.
