@@ -14164,3 +14164,81 @@ guide is unsourced, and one of the two sources opened for the group-housing fix
 says the opposite, that millipedes coexist with isopods. Left as written, since
 the claim is Mike's and settling it needs its own research pass rather than a
 hub row.
+
+## Jumping Spider (2026-09-15, batch O, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 78k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B-. "Two or three genuinely good pages sitting
+behind a hub that contradicts them on almost every number a buyer would write
+down."
+
+Numbers checker before the pass, nine groups. Six were the old hub against a deep
+dive (budget, enclosure price, feeder insects, lifespan, temperature) and the rest
+were the feeding guide's own narrated ranges showing up as spread. The reader
+found the same list independently and added two the checker cannot see: the
+misting cadence and the handling guide's FAQ promising three mistakes after a body
+that listed two.
+
+The cost table could not add up, and this is the sharpest finding of the species.
+"Small vertical, arboreal enclosure | $60 - $70" sat inside "Total upfront setup |
+$50 - $120" with four more items marked "Included in setup total", so the stated
+floor was below the price of the single item the table priced. Fixed by filling
+the four placeholder cells from the site's own product records, exactly as the
+millipede cost table already does, and summing: $112 to $150. That figure then had
+to move in five places, the H2, the seoTitle, the seoDescription, the description
+field and the upfront FAQ, which is the frontmatter-blind-spot pattern this file
+has warned about since batch D, and the reason for grepping the number rather than
+trusting the memory of having changed it.
+
+Source narration in the feeding guide, four instances in one article, and this is
+the defect the last five batches kept finding in hub rows rather than upstream in
+the article. The adult feeding row was the worst of it: "This is where sources
+diverge most, reported intervals range from every 2 to 3 days up to every 3 to 5
+days, with males in particular sometimes fed as infrequently as every 10 days by
+one source." A row copying that verbatim would have carried the disagreement onto
+the hub, which is exactly the batch I mechanism. Settled in the article first:
+"Every 2 to 5 days, with the abdomen deciding where in that window a given spider
+sits." The span is unchanged, the 10-day male figure is kept in the passive that
+marks it as a practice rather than a recommendation, and the hedge on gravid
+females is untouched. Checked against The Tarantula Collective's Phidippus regius
+sheet, which gives adults "once or twice a week (or as needed)", so the settled
+range covers the published guidance rather than narrowing it.
+
+Misting cadence, the one genuine deep-dive contradiction. Setup guide: "Mist one
+corner of the enclosure every 2 to 3 days." Feeding guide: "light daily misting of
+the enclosure walls." Neither page's sources settle it and both are husbandry
+references of the same tier, so the subject rule decides: humidity is the setup
+guide's topic and the feeding guide changed to match.
+
+The Bronx Zoo fun fact the reader doubted checks out: the record is a female named
+Ms. Regal at 4 years 9 months, corroborated across hobby sources but not by
+anything in the cost guide's own Sources block. Left as written and listed here
+rather than dressed in a citation the page does not have.
+
+Links: 6 added, one per article, all from the reader's table. The hub needed none,
+which the reader said outright.
+
+Left as written: the cost guide's Sources block carries "Bugs in Cyberspace:
+Phidippus regius listings", a for-sale listing page, which RULES bars from a
+Sources block. Deleting a Sources entry is on the batch prompt's Never list, so it
+stays and is recorded here instead.
+
+Prices: no "Prices last checked" line added. The table's figures come from the
+site's own product records rather than a retail pass, so the line would assert a
+check nobody performed. Same decision as batches E and N, and the corpus-wide gap
+stands.
+
+check-species-numbers jumping-spider after the pass: every line marked hub appears,
+numbers unchanged, in the deep dive its row names. The encyclopedia's 1 to 2 years
+is a wild figure against the cost guide's 1 to 3 captive, which is not a conflict.
+Voice warning counts identical to baseline on all six changed files, all gates and
+eslint clean.
+
+Not covered anywhere, the reader's list, none of it answered by the shared class
+guides: where to buy and how to judge a healthy spider at the point of sale, how to
+sex one (the cost guide makes sex financially load-bearing and never says how to
+tell), arrival day, routine cleaning and old web removal with the spider in
+residence, escape recovery, how to dechlorinate water, what a "damp cotton ball
+setup" physically is, and what to do with an egg sac including an infertile one.
+Sexing is the one worth writing first, since the price and the lifespan both hang
+on it.

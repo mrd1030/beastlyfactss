@@ -6559,3 +6559,82 @@ First two changes: settle group housing and minimum enclosure size to one number
 - Whether a shallow water dish is permanent kit or only a dehydration fix.
 - Adult size, never stated outside the encyclopedia and absent from the hub.
 - Sexing, and what happens if a group breeds.
+
+## Jumping Spider (2026-09-15, batch O)
+
+Raw output, one Opus reader agent, extractor set of eight pages.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: enclosure shape, room temperature, prey types, checklist. But the numbers are the loosest in the set. **C**
+- **01 Encyclopedia.** Finished it, fast. Nothing to act on, but the history (Koch 1846, the post 2017 Lucas the Spider surge, now in chain stores) is the only place the set tells me why this animal is suddenly everywhere. **B**
+- **02 Cost.** Finished it, suspiciously. Actionable: spider price by age and sex, "vet care: effectively none." The setup table contradicts itself. **C-**
+- **03 Handling.** Finished it. Actionable: let it walk on, never grab, work low over something soft. Half the page re-explains visual hunting I had already read twice. **C+**
+- **04 Health.** Finished it. Actionable: curled legs and lethargy mean dehydration, thermostat or no heat, no antidote for pesticide exposure. Gives no humidity number on the page where humidity is the whole thesis. **B**
+- **05 Tank setup.** Finished it. The only page I could actually build from: size, 72 to 82F, 50 to 60%, substrate depth, lighting, opening placement. **A-**
+- **06 Feeding.** Finished it and reread it. Stage schedule, prey list, never-feed list, abdomen as the gauge, and it says outright where sources disagree and that the fasting numbers are hobbyist reported. **A**
+- **07 Enrichment.** Finished it. Actionable priority order, and it names a real captivity effect instead of flattering me. **B+**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, wild diet, wild lifespan, and the trade history appear nowhere else. The hub mostly restates the deep dives at lower resolution, and where it restates them it disagrees:
+
+- Enclosure: hub "around 5x5x8 inches works well for one adult" vs setup "A minimum of about 4 by 4 by 7 inches... closer to 8 to 10 inches tall gives more genuine climbing room."
+- Enclosure price: hub "Small tall enclosure (5x5x8 in or similar) | $15 | $30" vs cost "Small vertical, arboreal enclosure | $60 - $70."
+- Food budget: hub "Live feeder insects... | $20 | $40" per year vs cost "Roughly $5 to $15 a Month," which is $60 to $180.
+- Lifespan: hub "1 to 2 years is typical" vs cost "A realistic overall range to expect is 1 to 3 years."
+- Temperature: hub "Room temperature of 70 to 80 degrees F" vs setup "72 to 82F."
+- Misting: hub "Light misting every day or two" vs setup "Mist one corner of the enclosure every 2 to 3 days."
+- Feeding: hub "Offer prey 2 to 3 times a week and remove anything uneaten after a day" vs feeding "pull uneaten live prey within a few hours to overnight."
+
+## 3. The set as a whole
+
+Yes, I could set one up, feed it, and keep it alive, and I would use the setup and feeding pages to do it and ignore the hub's numbers. Still missing: where to buy and how to judge a healthy spider, how to sex one (the cost page makes sex financially load bearing and never says how to tell), what to do on arrival day, routine enclosure cleaning with a live spider in it, what to do if it escapes into the room, how to make water dechlorinated, what a "damp cotton ball setup" physically is, and what to do if a female lays an egg sac.
+
+Questions answered elsewhere without being told: health says "mist the enclosure regularly" and the actual target sits on setup; handling warns about "an unmonitored heat mat" and the thermostat rule sits on setup and health; the hub's checklist lists "a small water source" that only the feeding page ever describes as a shallow dish; the cost page's fruit fly culture is explained only on feeding.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: jumping spiders hunt by sight rather than webbing (hub, encyclopedia, handling, enrichment, feeding), fragility and the fatal fall (handling, enrichment), height over floor space (setup, enrichment), never oversized prey (feeding, enrichment).
+
+Conflicts:
+- Misting cadence: setup "every 2 to 3 days" vs feeding "light daily misting of the enclosure walls."
+- Prey size: hub "sized no larger than the spider's body" vs feeding "roughly no bigger than the abdomen."
+- Cost internal math: "Small vertical, arboreal enclosure | $60 - $70" inside "Total upfront setup | $50 - $120," with four more items supposedly included.
+- Handling body lists two first-timer mistakes, its own FAQ says "Using an unmonitored heat mat and letting the enclosure run too dry are the other two."
+
+## 5. One link per page
+
+- Hub: none needed, the sidebar carries them. Fix the numbers instead.
+- Encyclopedia: "It is now stocked by chain pet stores across the United States and Canada" to the cost guide.
+- Cost: "the large majority of health issues in this species trace back to the enclosure environment rather than anything requiring professional treatment" to the health issues guide.
+- Handling: "Using an unmonitored heat mat, a genuine and common preventable cause of death." to the health issues guide.
+- Health: "It's manageable at home, mist the enclosure regularly" to the enclosure setup guide, which has the 50 to 60% target.
+- Setup: "aim to leave drinkable droplets rather than soaking everything" to the health issues guide, since dehydration is the leading killer.
+- Feeding: "Refusal paired with a shrunken, raisin-like abdomen, lethargy, poor jumping ability, or curled-inward legs points to a real problem" to the health issues guide.
+- Enrichment: "And do not offer prey larger than the spider's body." to the feeding guide.
+
+## 6. Trust
+
+Doubts: the cost table that cannot add up, the hub's enclosure price at a third of the cost page's, the handling FAQ promising three mistakes after a body that listed two, and the "female kept at the Bronx Zoo, lived just under 5 years" fun fact, which is exactly the kind of claim I would want a source for.
+
+The sentence that convinced me a keeper wrote this: "Jumping spiders build their silk retreat near the top of the enclosure, so it's worth positioning your access opening lower or to the side." Runner up, from feeding: "never mist the spider's abdomen directly, water can seep between the book-lung plates and cause suffocation."
+
+## 7. Set grade: B-
+
+Two or three genuinely good pages sitting behind a hub that contradicts them on almost every number a buyer would write down.
+
+First two changes: make the deep dives the single source of truth and regenerate the hub's cost, size, temperature, misting, feeding, and lifespan figures from them. Then add a "bringing one home" page covering sourcing, sexing, arrival, and escape recovery, and put the 50 to 60% humidity figure on the health page.
+
+## Not covered anywhere
+
+- Where to buy a jumping spider and how to judge a healthy one.
+- How to tell a male from a female, despite price and lifespan hanging on it.
+- Arrival and acclimation day.
+- Routine enclosure cleaning and old web removal with the spider in residence.
+- What to do if the spider escapes into the room.
+- How to dechlorinate water.
+- What a "damp cotton ball setup" actually is.
+- What to do with an egg sac, including an infertile one from an unmated female.
+
+Covered by the shared class guides, so not listed above: molting normal versus failed, pesticide exposure prevention, rehousing method, and travel or power outage planning.
