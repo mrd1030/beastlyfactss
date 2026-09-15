@@ -391,7 +391,7 @@ share a silhouette. That is roughly 25 species, about 175 images.
 ## 7. Router hubs, species by species
 
 Checked 2026-09-15 against `src/lib/data/guides/*.js`: a hub is a router hub
-when its entry carries `firstWeek` rows (RULES, Hubs). 61 of 108 done, 47
+when its entry carries `firstWeek` rows (RULES, Hubs). 76 of 108 done, 32
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
 Batches I and J both merged to main 2026-09-15 as 05a6fa6b. Batch I
@@ -402,18 +402,22 @@ done, checked and merged to main 2026-09-15. Pass grade B.
 Batch L (fire-bellied toad, quaker parakeet, molly, praying mantis, argentine
 tegu) done, checked and merged to main 2026-09-15 as 837d5cd. Pass grade B.
 Amphibians and birds are finished.
-Batch M (platy, cherry shrimp, green anole, leaf-tailed gecko, mouse) done and
-checked on branch claude/platy-cherryshrimp-greenanole-leaftailedgecko-mouse
-2026-09-15, not merged. Pass grade B-. Geckos are finished: leaf-tailed gecko was
-the last one. Next is batch N: pick five, one per class, where a set from a
-recent batch points at them. Only small mammals is down to one, and nothing but
-dogs and cats has more than five.
+Batch M (platy, cherry shrimp, green anole, leaf-tailed gecko, mouse) done,
+checked and merged to main 2026-09-15 as 4a39f2f. Pass grade B-. Geckos are
+finished: leaf-tailed gecko was the last one.
+Batch N (bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp) done
+and checked on branch
+claude/bristlenosepleco-discus-swordtail-zebradanio-ghostshrimp 2026-09-15, not
+merged. Pass grade: pass, after fixes. Fish are finished: this batch took the
+last four. Next is batch O, and the classes left are invertebrates (4), lizards
+(3) and small mammals (1), so a one-per-class batch is no longer possible
+without dogs or cats.
 Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
 shrimp) passed its check at grade C+. Next is batch K: pick five, one per
 class, where a set from a recent batch points at them. Worker Opus 5 high effort, one Fable closing check per batch (the
 batch prompt in READMEFIRST has the reasoning).
 
-Done (56):
+Done (61):
 
 - [x] axolotl, White's tree frog
 - [x] African grey, budgie, cockatiel, cockatoo, conure, lovebird
@@ -439,16 +443,18 @@ Done (56):
 - [x] fire-bellied toad, quaker parakeet, molly, praying mantis, argentine
       tegu (batch L, merged to main 2026-09-15)
 - [x] platy, cherry shrimp, green anole, leaf-tailed gecko, mouse
-      (batch M, on branch 2026-09-15, not merged)
+      (batch M, merged to main 2026-09-15)
+- [x] bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp
+      (batch N, on branch 2026-09-15, not merged)
 
-To do (37):
+To do (32):
 
 - [ ] Amphibians (0): none left, fire-bellied toad was the last one
 - [ ] Birds (0): none left, quaker parakeet was the last one
-- [ ] Fish (4): bristlenose pleco, discus, swordtail, zebra danio
+- [ ] Fish (0): none left, batch N took the last four
 - [ ] Geckos (0): none left, leaf-tailed gecko was the last one
-- [ ] Invertebrates (5): ghost shrimp, giant millipede, jumping spider,
-      hissing cockroach, stick insect
+- [ ] Invertebrates (4): giant millipede, jumping spider, hissing cockroach,
+      stick insect
 - [ ] Lizards (3): fire skink, Jackson's chameleon, uromastyx
 - [ ] Small mammals (1): flying squirrel
 - [ ] Snakes (0): none left, rosy boa was the last one

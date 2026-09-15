@@ -791,8 +791,72 @@ before anyone noticed, including five that need new research. When a batch write
 "left open" or "not fixed, recorded", it goes in section 8 in the same commit,
 grouped by what it needs: research, a style decision, or a mechanical pass.
 
-Next up is batch N. Pick five, one per class, where a set from a recent
-batch points at them. What is left, by class, is in docs/TODO.md
+Batch N (bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp), four
+fish and an invertebrate rather than one per class, done and checked on branch
+claude/bristlenosepleco-discus-swordtail-zebradanio-ghostshrimp 2026-09-15, not
+merged. Five router hubs, 131 first-week rows, one reader pass per species and
+one Fable check. Pass grade: pass, after fixes, up from batch M's B-. That makes
+76 router hubs; the 32 still on the legacy care sheet are in docs/TODO.md,
+section 7, dogs and cats last. Fish are finished: this batch took the last four.
+
+The one-per-class rule broke here and that was the right call. Mike asked for the
+remaining fish to go in one batch, which meant four fish and a shrimp. It cost
+nothing and it gained something: four aquarium sets read back to back surfaced
+three problems that no single species would have shown as a problem. Water
+changes have no home anywhere on the site, on four of the five. Ich heat
+treatment contradicts the stated temperature ceiling, on two species
+independently, which makes it the shared fish-health material rather than either
+species. And the shared pH/GH/KH guide reads as coldwater goldfish material, now
+three species across two batches. All three went to section 8 as shared-guide
+work instead of being patched five times. A batch drawn one-per-class would have
+found none of them.
+
+What the batch got right that earlier ones did not. The structural findings came
+before any hub work, which is the order that worked: the swordtail feeding guide
+turned out to be damaged rather than inconsistent, its "Why Swordtails Stop
+Eating" list running 1 straight to 5 with three items deleted and nobody
+rereading the page, and that was restored and swept across all 796 articles as
+its own commit before the hub it belonged to was touched. The ghost shrimp
+encyclopedia contradicted itself on the genus, and that was researched against
+WoRMS before the one permitted encyclopedia edit. Raw reader output went into
+docs/READER_LOG.md in the same commit as the review section, which is the batch M
+lesson, and the two batch N species already filed without it were backfilled in
+the same pass.
+
+What still failed, and it is the same two things. Hub rows written in my own
+voice instead of pasted from the article named in the row's source, on roughly a
+dozen rows across the five hubs, including two emergency bullets taken from the
+wrong article entirely: the discus card's "hangs dark-colored at the surface in a
+corner" is the enrichment guide's sentence and the ghost shrimp card's "a curled
+or clamped posture" is the handling guide's, on cards that name the health guide.
+That is the fourth batch running for the emergency card specifically. The check
+also caught a swordtail feeding row that inverted its source, telling a reader to
+keep bloodworms as an occasional supplement where the feeding guide says to
+rotate protein in regularly rather than sparingly. A row can match on the number
+and still be wrong.
+
+And a study cited for something it did not measure, again. The discus hub funFact
+said a 2010 study found the mucus carries "amino acids and immune antibodies";
+Buckley and colleagues measured total protein, cortisol, immunoglobulin and
+electrolytes, with amino acids appearing only in the methods as earlier work by
+others. The difference from batch M is that this one was inherited: the hub
+copied it faithfully from the feeding guide's FunFact, which had carried the
+overreach since before this batch. Copying a claim correctly is not the same as
+the claim being true, so a hub row is also the moment to check the sentence it
+copies.
+
+One to carry forward about the review file itself. The swordtail review section
+claimed the old hub had adult size backwards, males and females swapped. It did
+not: the base commit's hub FAQ has the encyclopedia's figures, and the wrong
+sentence was one I wrote during the conversion and then corrected in the same
+pass. Writing up a fix for a defect you introduced yourself as though it were
+found in the old hub is a new failure mode. Diff the claim against the base
+commit before writing it up, not against memory of having changed it.
+
+Next up is batch O, and the one-per-class rule is now impossible without dogs or
+cats: invertebrates has four left, lizards three, small mammals one, and
+everything else is finished. Either take a class to zero the way this batch took
+fish, or start dogs and cats. What is left, by class, is in docs/TODO.md
 section 7.
 
 The old batch J note follows for the reasoning, since it is the pattern
