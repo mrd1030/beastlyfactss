@@ -9872,3 +9872,110 @@ says "the copperhead is gone" and "corrected to 80 to 110" about pages
 where neither happened. One Merck sentence was read out of its paragraph
 and reached the emergency card. None of it was hard to fix; all of it
 should have been caught by the batch's own step 4.
+
+## African Fat-Tailed Gecko (2026-09-15, batch I, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. African fat-tail went
+first in batch I on a specific hypothesis: the gargoyle gecko defect in
+batch H was a setup guide whose whole thesis its own three sources
+reject, and this is a sibling gecko guide from the same writing pass, so
+it was the likeliest place for that failure to repeat.
+
+It did not repeat. Tree of Life Exotic Pet Medical Center, the vet
+clinic this set cites, backs the setup guide line for line: "A 20-gallon
+long tank (or similar) is suitable for one adult", "Warm side: 88-92°F
+(measured on the substrate). Cool side: 75-80°F", "Maintain around
+50-70%", "Juveniles: Feed daily. Adults: Feed 3-4 times per week",
+"7-9 inches total length as adults". The guide's terrestrial thesis is
+simply correct. Worth recording as a negative result, since the point of
+ordering the batch that way was to find out.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | It states numbers that its own deep dives contradict. |
+| Encyclopedia | B | The wild-caught import history changes how I shop. |
+| Cost | B+ | I can budget the animal, the setup, and a vet emergency. |
+| Handling | B | Two-week wait, no tail grabbing, chirp means stop. |
+| Health issues | B+ | Symptom lists, and a clear "this one needs a vet" split. |
+| Tank setup | A- | Every number I need to build the enclosure. |
+| Feeding | A- | Best page in the set. |
+| Enrichment | B+ | A priority order I can build to, and permission to skip mirrors. |
+
+Set grade: B. "The deep dives are specific, honest about disagreement,
+and clearly written, but the hub undercuts them with softer competing
+numbers."
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Humidity. Hub: "Aim for 50 to 60% ambient humidity." Setup: "around 50
+  to 70%... maintained with a permanent humid hide running 70 to 80%."
+  The hub never gave the humid hide figure at all, on a species where
+  that hide is the headline requirement.
+- Supplements, the one that could do harm. Hub: "Dust with calcium w/D3
+  at every juvenile feeding and 2 to 3 times per week for adults."
+  Feeding: "plain, phosphorus-free calcium at most feedings... with a
+  calcium and D3 combo used once or twice a week on top." Different
+  regimens, and the hub never mentioned phosphorus at all.
+- Schedule. The hub had no hatchling line, and hatchlings eat daily.
+- Cool side. Hub: "75 to 78 degrees F", with no night temperature.
+  Setup: "75 to 80°F, with a nighttime drop to around 70 to 75°F."
+- Lifespan, substrate and soak duration all drifted the same way.
+
+### The sand contradiction, and both pages being half right
+
+Setup: "a common blend is roughly 70% topsoil to 30% play sand." Feeding:
+"Never use sand as substrate, ingested sand causes real digestive
+impaction." The reader: "One page sells me the sand, the next page bans
+it."
+
+Cadillac Vet, which the feeding guide already cited, settles it and
+splits the difference: "70% untreated topsoil and 30% play sand" for a
+natural substrate, and separately "We do not recommend keeping them on
+sand, as it can lead to dehydration and prevent them from properly
+shedding. It can also lead to impaction if accidentally ingested."
+
+So the mix is recommended and keeping a gecko on sand is not. The
+feeding guide had over-generalised from "do not keep them on sand" to
+"no sand at all". It now says what the source says and points at the
+mix. The setup guide's hedge gained the dehydration and shedding
+reasons, which are the real argument against pure sand and stronger than
+the impaction one it was resting on, and Cadillac Vet joins its Sources.
+
+The same page also confirms the feeding guide's supplement regimen
+against the hub's: "Calcium only be used for most of their meals, and
+1-2 times a week use the Calcium/D3 combo powder", and "Do not use
+calcium with phosphorus added, as this can damage the kidneys and cause
+gout."
+
+### An unsourced figure, removed
+
+"The tail can hold close to half the gecko's total body mass" appeared in
+the feeding guide's excerpt, a FAQ and the body, and the reader called it
+"a big claim carried without a source". A search turns up nothing
+stating that fraction; the physiological measurement does not appear to
+exist in the literature the care sources draw on. Cut from all three.
+What it existed to justify, that healthy adults fast for weeks to months
+on the tail reserve, is sourced and stands on its own.
+
+### Links
+
+Two of the reader's eight. One was skipped on a rule: the handling
+guide's humidity sentence sits in a closing paragraph that already
+carries two cross-species links, and a third trips `closer-dump`, the
+rule against a closing paragraph that is a link library. The feeding and
+health links reach the same page.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md. Two are
+  sharper than the rest.
+- No page says how to actually raise and hold 50 to 70% ambient
+  humidity. The set names it as the requirement separating this species
+  from a leopard gecko and never gives a misting, ventilation or
+  water-surface method.
+- A hygrometer is named in one cost FAQ answer and appears in neither
+  the cost table nor the old hub checklist, so a reader buying from the
+  list could not measure the headline requirement. It is on the router
+  hub's buy list now, which is a partial fix.

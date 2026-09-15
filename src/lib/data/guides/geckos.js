@@ -8,67 +8,87 @@ export const geckoGuides = [
     image: "/assets/guides/african-fat-tail.jpg",
     tagline: "The calm, velvety cousin of the leopard gecko: gentle as can be!",
     funFact: "African fat-tailed geckos store fat in their wide, sausage-shaped tails as an energy reserve, just like leopard geckos. A plump tail is a sign of a healthy, well-fed gecko!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "30x12x12 in or larger enclosure", low: 90, high: 170 },
-        { item: "Under-tank heater with quality thermostat", low: 40, high: 70 },
-        { item: "3 hides (warm, cool, moist)", low: 20, high: 35 },
-        { item: "Damp sphagnum moss for moist hide", low: 5, high: 10 },
-        { item: "Cypress mulch or coconut fiber substrate", low: 15, high: 40 },
-        { item: "Digital thermometer (IR gun ideal)", low: 15, high: 30 },
-        { item: "Shallow water dish", low: 8, high: 15 },
-        { item: "Low-output UVB (optional but beneficial)", low: 45, high: 80 },
-      ],
-      annual: [
-        { item: "Dubia roaches, crickets, mealworms", low: 90, high: 160 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement (if used)", low: 45, high: 80 },
-        { item: "Electricity (heat)", low: 30, high: 50 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A 30x12x12" (20-gallon long) enclosure is the minimum for one adult African fat-tailed gecko, though a 36x18" or larger provides a better thermal gradient and more enrichment space. Like leopard geckos, AFTs are terrestrial - floor space is more important than height.
-
-Provide three hides: a warm hide (floor temperature 88 to 92 degrees F under the UTH), a cool hide (75 to 78 degrees F), and a moist hide filled with damp sphagnum moss on the warm side. The moist hide is critical - AFTs require higher humidity than leopard geckos and chronic dryness causes persistent shedding problems.
-
-Aim for 50 to 60% ambient humidity, which is higher than the 30 to 40% appropriate for leopard geckos. Cypress mulch or coconut fiber substrate help maintain this humidity level while remaining easy to clean. Use an under-tank heater on a quality thermostat as the primary heat source, verified with an infrared temperature gun. Low-output UVB is now recommended by reptile veterinarians.`,
-      diet: `African fat-tailed geckos are strict insectivores. Offer crickets, dubia roaches, and black soldier fly larvae as primary feeders. Mealworms can be offered occasionally. Feed juveniles every other day, adults 2 to 3 times per week. Prey should be no wider than the space between the gecko's eyes.
-
-Gut-load all feeder insects 24 to 48 hours before offering. Dust with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults. A reptile multivitamin once weekly. A small dish of pure calcium powder placed in the enclosure allows the gecko to self-supplement as needed - this is particularly important for reproductive females.
-
-Fresh, dechlorinated water in a shallow dish must always be available. Unlike many reptiles, AFTs are relatively good about drinking from dishes and should be offered access continuously.`,
-      enrichment: `African fat-tailed geckos are among the calmest and most handleable gecko species available. Their slow, deliberate movements and natural docility make them ideal for keepers seeking a handleable gecko companion. With regular, gentle interaction, most become very relaxed and comfortable with human contact.
-
-Provide multiple hides at both ends of the thermal gradient, flat cork bark pieces and rock slates as basking and resting surfaces, and textured substrate for natural exploration. They are crepuscular, most active at dusk and dawn. Handle during these activity windows for the most relaxed interactions.
-
-Avoid handling during shed (identifiable by a dull, slightly grayish skin tone and clouding of the eyes). Always wash hands before handling to avoid introducing any chemical residues to the gecko's skin.`,
-      health: `Stuck shed (dysecdysis) is the most common health issue and is almost always prevented by a properly maintained moist hide. Stuck shed on the toes is the most dangerous - it constricts blood flow and leads to digit loss if not addressed. Soak the gecko briefly in shallow lukewarm water and gently remove retained shed with a damp cotton swab.
-
-Metabolic Bone Disease from inadequate calcium or vitamin D3 causes trembling, weakness, and skeletal deformities. Consistent supplementation and UVB exposure prevent it. MBD is entirely preventable with correct husbandry.
-
-Parasites are less common in AFTs than in many other gecko species but annual fecal exams are recommended, especially for wild-caught animals. AFTs are sensitive to humidity - chronically low humidity causes not just shedding problems but respiratory stress and immune suppression. Annual vet checks with a reptile-experienced veterinarian are recommended.`,
-      checklist: [
-        "30x12x12\" or larger terrestrial enclosure",
-        "Under-tank heater with quality thermostat",
-        "3 hides (warm, cool, moist)",
-        "Damp sphagnum moss for moist hide",
-        "Cypress mulch or coconut fiber substrate",
-        "Digital thermometer (IR gun ideal)",
-        "Calcium w/D3 + multivitamin supplements",
-        "Calcium dish (always in enclosure)",
-        "Shallow water dish",
-        "Dubia roaches, crickets, mealworms",
-        "Low-output UVB light (optional but beneficial)",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Quarantine, hygiene and
+    // thermostats cite the shared reptile guides in the sidebar's Health and
+    // More list. The old hub narrowed ambient humidity to 50-60% against the
+    // setup guide's 50-70%, never gave the humid hide figure at all, had the
+    // D3 supplement schedule backwards against the feeding guide, and gave a
+    // cool side and a lifespan that disagreed with the deep dives.
+    // Reconciled 2026-09-15 for batch I (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new gecko is quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "A 20-gallon long is the minimum for one adult, and a 36x18x16 inch (40-gallon breeder) is meaningfully better. Height buys little here: this is a terrestrial species, on the ground and under it.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Heat", value: "A heat mat on a thermostat. Aim for 88 to 92°F on the warm side, 75 to 80°F on the cool side, and a night drop to 70 to 75°F. Heat rocks and strong overhead basking bulbs both carry real burn risk.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Humidity", value: "Higher than a leopard gecko needs, though the enclosure stays mostly dry. Ambient around 50 to 70% works, and a permanent humid hide at 70 to 80% is the piece that prevents shedding problems.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Substrate", value: "For healthy adults, a naturalistic sandy-soil mix: roughly 70% topsoil to 30% play sand, or coconut fiber with reptile sand, at least 4 inches deep so the gecko can burrow. Quarantine animals and juveniles go on paper towel.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Not pure sand", value: "Keeping one on pure sand dries the gecko out and interferes with shedding, and it can cause impaction if swallowed with prey. That is a different thing from the topsoil-and-sand mix, which is what a burrowing species wants underfoot.", source: "african-fat-tail-feeding-guide" },
+        { label: "UVB", value: "They are nocturnal, and a high-D3 calcium supplement can carry them without it, but low-output UVB in the 2 to 5% band is increasingly recommended. Either way, run a 10 to 12 hour photoperiod.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Three hides", value: "A warm hide, a cool hide and a humid hide are what let a gecko choose its temperature and humidity while staying concealed, which is behavioral choice rather than a checklist item. Thermal choice is what the leopard gecko study ranked first.", source: "african-fat-tail-enrichment-guide" },
+        { label: "A humid hide that works", value: "Permanent rather than occasional, since fat-tails come from more humid West African habitats than leopard geckos and need noticeably more moisture.", source: "african-fat-tail-enrichment-guide" },
+        { label: "Feeding schedule", value: "Hatchlings eat daily. Beyond that, sources disagree, some treat juveniles as needing daily feeding distinct from adults, others lump juveniles and adults together at about 3 times a week. Adult frequency itself ranges from 3 times a week to a condition-based schedule where a gecko with a visibly fat tail eats only every 5 days.", source: "african-fat-tail-feeding-guide" },
+        { label: "Portion", value: "Roughly 2 appropriately sized bugs per inch of the gecko's body length, or simply as much as it eats in about 15 minutes. Prey should be no wider than the space between the gecko's eyes.", source: "african-fat-tail-feeding-guide" },
+        { label: "Calcium", value: "Most hobbyist care sheets say every feeding with plain, phosphorus-free calcium. One veterinary clinic source is slightly less strict, at least 3 times a week. A calcium and D3 combo is generally used just once or twice a week on top of that.", source: "african-fat-tail-feeding-guide" },
+        { label: "Never feed", value: "Ladybugs, fireflies, monarch butterflies, box elder bugs, centipedes, bees, and wasps are all specifically flagged by an exotics vet source, generally because they're wild-caught or contain toxins. Only feed captive-bred, farmed insects.", source: "african-fat-tail-feeding-guide" },
+        { label: "Not eating", value: "A seasonal appetite drop in fall and winter is common in adults, and juveniles typically keep eating normally through it. An enclosure that isn't warm enough can trigger a false brumation response even outside the normal season.", source: "african-fat-tail-feeding-guide" },
+        { label: "The tail is the gauge", value: "No source gives one universal day count, and that's honest: the tail fat reserve genuinely lets healthy adults fast for weeks to several months without harm. A tail thinner than the neck, not just less plump, is the warning sign.", source: "african-fat-tail-feeding-guide" },
+        { label: "Handling, week one", value: "Two weeks after it comes home, and not before it is eating regularly. Once you start, support the whole body and let the gecko walk across your hands instead of gripping it. Skip handling right after a meal or during a shed.", source: "african-fat-tail-handling-guide" },
+        { label: "Temperament", value: "Among the calmest pet geckos available, often described as even more docile than the closely related leopard gecko. Adults tolerate handling well and usually stay calm through a session. Juveniles tend to be shyer and take longer to settle.", source: "african-fat-tail-handling-guide" },
+        { label: "Chirps and squeaks", value: "Discomfort, usually with being handled. A chirp or a squeak is the cue to ease off and put the gecko back down. An arched back with a slow tail-swish is the same message, stated more clearly.", source: "african-fat-tail-handling-guide" },
+        { label: "Tail drop", value: "Yes, if it is grabbed roughly or badly frightened, which is why the tail is never a handhold. The tail does grow back, and the replacement is smoother and more bulbous than the one it lost.", source: "african-fat-tail-handling-guide" },
+        { label: "Stuck shed", value: "Retained shed on the toes and tail tip, the single most common fat-tail-specific problem. It shows up when humidity is too low or no moist hide is available, and a proper moist hide plus correct humidity prevents almost all of it.", source: "african-fat-tail-health-issues-guide" },
+        { label: "The serious one", value: "Metabolic bone disease, from calcium or vitamin D3 deficiency, often alongside missing UVB. It's widely described as the most common serious issue in this species and can be fatal if it progresses.", source: "african-fat-tail-health-issues-guide" },
+        { label: "Feeding enrichment", value: "Tong feeding, short supervised insect hunts in the enclosure, and varying when and where prey appears. Fat-tails are crepuscular and nocturnal, so evening feeding matches their activity window and gets a better response than daytime offering.", source: "african-fat-tail-enrichment-guide" },
+        { label: "Skip the mirror", value: "Bashaw and colleagues tested five types of environmental enrichment on leopard geckos. Thermal and feeding enrichment produced the strongest responses and increased behavioral diversity. Mirror-based visual enrichment was the weakest, with geckos largely not engaging with it.", source: "african-fat-tail-enrichment-guide" },
+        { label: "Budget", value: "Normals commonly around $100, inside a typical range of $75 to $600, with mid-range morphs $200 to $400 and stacked multi-gene animals $600 to $1,000 or more. Roughly $200 to $450 for the setup, and $10 to $25 a month after that.", source: "african-fat-tail-cost-guide" },
+        { label: "Lifespan", value: "Care sources commonly cite 15 to 20 years. The best-documented figure comes from an academic longevity database, a maximum recorded captive lifespan just over 16 years.", source: "african-fat-tail-cost-guide" },
+        { label: "Adult size", value: "7 to 9 inches (18 to 23 cm)." },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Thermostat", value: "Any heat source runs through a thermostat, and where the probe sits decides what the controller is actually holding.", source: "reptile-heating-thermostats-guide" },
       ],
     },
+    emergencyCard: {
+      source: "african-fat-tail-health-issues-guide",
+      callNow: [
+        "Lethargy, difficulty standing or walking, swollen joints, muscle twitches, or spinal curvature",
+        "Bloating, appetite loss, and straining, which point at impaction",
+        "Wheezing, mucus, or open-mouth breathing",
+        "A female straining to lay, which is a genuine emergency",
+        "Cloudiness, swelling, or discharge in the eyes outside a normal shed cycle",
+      ],
+      vetLine: "Respiratory infection needs a vet and antibiotic treatment and won't clear on its own. Egg-binding is a genuine emergency requiring immediate vet care, and eye problems are reported relatively commonly in this species, so anything outside a normal shed cycle is worth a visit.",
+    },
+    routes: [
+      { slug: "african-fat-tail-cost-guide", line: "$75 to $600 for a normal and past $1,000 for stacked morphs, the $200 to $450 setup, and what a documented 16-year maximum means for budgeting." },
+      { slug: "african-fat-tail-tank-setup-guide", line: "The 20-gallon-long floor, the heat mat gradient, the humidity that separates this species from a leopard gecko, and 4 inches of substrate to burrow in." },
+      { slug: "african-fat-tail-feeding-guide", line: "Portion by body length, where the schedules genuinely disagree, the phosphorus-free calcium rule, and why the tail is a better gauge than a day count." },
+      { slug: "african-fat-tail-handling-guide", line: "Two weeks before the first session, what a chirp means, and why the tail is never a handhold." },
+      { slug: "african-fat-tail-health-issues-guide", line: "Retained shed, metabolic bone disease, impaction, respiratory infection, and egg-binding." },
+      { slug: "african-fat-tail-enrichment-guide", line: "The leopard gecko study that ranked thermal and feeding enrichment first and mirrors last, and the one thing that does not transfer." },
+    ],
+    buyList: [
+      "20-gallon long enclosure, 40-gallon breeder preferred",
+      "Under-tank heat mat",
+      "Thermostat",
+      "Digital thermometer and hygrometer",
+      "Optional low-output 2 to 5% UVB",
+      "Topsoil and play sand, enough for 4 inches",
+      "Warm hide, cool hide, and a permanent humid hide",
+      "Sphagnum moss for the humid hide",
+      "Shallow water dish",
+      "Gut-loaded crickets and dubia roaches",
+      "Plain phosphorus-free calcium, plus a calcium and D3 combo",
+      "Feeding tongs",
+    ],
     faqs: [
-      { q: "How are African fat-tailed geckos different from leopard geckos?", a: "They are closely related and share similar husbandry, but African fat-tailed geckos (AFTs) require notably higher ambient humidity - 50 to 60% versus the leopard gecko's 30 to 40%. AFTs are also generally calmer and more docile, and they have a velvety skin texture quite different from the leopard gecko's pebbly appearance. Both species use an under-tank heater for belly heat and are strict insectivores." },
-      { q: "Do African fat-tailed geckos need a humid hide?", a: "Yes - the moist hide is critical, and AFTs need it more consistently than leopard geckos. Fill a hide box with damp sphagnum moss and keep it on the warm side. They require higher ambient humidity (50 to 60%) than most other ground-dwelling geckos, and the moist hide provides the microhabitat that prevents persistent stuck shed, particularly on the toes." },
-      { q: "What do African fat-tailed geckos eat?", a: "Strict insectivores. Crickets, dubia roaches, and black soldier fly larvae are the best staples. Mealworms can be offered occasionally. Feed juveniles every other day, adults 2 to 3 times per week. All feeders must be gut-loaded 24 to 48 hours before offering and dusted with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults." },
-      { q: "How big do African fat-tailed geckos get?", a: "Adults typically reach 7 to 9 inches in total length and 35 to 80 grams. Females are usually smaller than males. The tail, which stores fat reserves just like the leopard gecko's, should be plump and rounded in a healthy, well-fed gecko." },
-      { q: "How long do African fat-tailed geckos live?", a: "With correct humidity, appropriate thermal gradient (88 to 92 degrees F warm-side floor temperature via UTH on thermostat), and consistent supplementation, African fat-tailed geckos commonly live 10 to 20 years in captivity. They are robust animals when their humidity requirement is met." },
+      { q: "How humid should the enclosure be?", a: "Higher than a leopard gecko needs, though the enclosure stays mostly dry. Ambient around 50 to 70% works, and a permanent humid hide at 70 to 80% is the piece that prevents shedding problems." },
+      { q: "How often should I dust with calcium?", a: "Most hobbyist care sheets say every feeding with plain, phosphorus-free calcium. One veterinary clinic source is slightly less strict, at least 3 times a week. A calcium and D3 combo is generally used just once or twice a week on top of that." },
+      { q: "Will an African fat-tailed gecko drop its tail like a leopard gecko?", a: "Yes, if it is grabbed roughly or badly frightened, which is why the tail is never a handhold. The tail does grow back. The replacement is smoother and more bulbous than the one it lost." },
     ],
   },
   {

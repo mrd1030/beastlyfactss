@@ -4249,3 +4249,86 @@ First two changes: (1) fix the brumation contradiction and pin one set of canoni
 - How to evaluate a hatchling or a breeder at purchase.
 - What an emergency vet event actually costs in dollars.
 - How to physically move or transport an adult, which the cost guide raises and no page answers.
+
+---
+
+# African Fat-Tailed Gecko: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch I. Raw and unedited.
+
+## 1. Page by page
+
+**00 Hub.** Finished it. Actionable: full shopping list, warm/cool hide temps, three-hide rule. Grade B-, it states numbers that its own deep dives contradict.
+
+**01 Encyclopedia.** Finished it, it is short. Actionable: almost nothing husbandry-wise, but the wild-caught import history changes how I shop. Grade B.
+
+**02 Cost.** Finished it. Actionable: I can budget the animal, the setup, and a vet emergency. Grade B+.
+
+**03 Handling.** Finished it. Actionable: two-week wait, no tail grabbing, chirp means stop. Grade B.
+
+**04 Health.** Finished it. Actionable: symptom lists I can check against, and a clear "this one needs a vet" split. Grade B+.
+
+**05 Tank setup.** Finished it. Actionable: every number I need to build the enclosure, including night drop and substrate depth. Grade A-.
+
+**06 Feeding.** Finished it, best page in the set. Actionable: portion rule, tail-thinner-than-neck red flag, nine reasons for a hunger strike. Grade A-.
+
+**07 Enrichment.** Finished it. Actionable: a priority order I can build to, and permission to skip mirrors. Grade B+.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: range, habitat, and the import history are nowhere else. The hub mostly repeats the deep dives at lower resolution, and it disagrees with them.
+
+- Humidity. Hub: "Aim for 50 to 60% ambient humidity." Tank setup: "Ambient humidity around 50 to 70% works well, maintained with a permanent humid hide running 70 to 80%." The hub never gives the humid-hide number at all.
+- Cool side. Hub: "a cool hide (75 to 78 degrees F)." Tank setup: "cool side 75 to 80°F, with a nighttime drop to around 70 to 75°F." The hub has no night temperature.
+- Supplements. Hub: "Dust with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults." Feeding: "Dust with plain, phosphorus-free calcium at most feedings... with a calcium and D3 combo used once or twice a week on top." Those are different regimens, and the hub never mentions the phosphorus warning.
+- Schedule. Hub: "Feed juveniles every other day, adults 2 to 3 times per week." Feeding: adults are "3 times a week, 3 to 4 times a week, or a condition-based tiered schedule." The hub has no hatchling line at all, and hatchlings eat daily.
+- Lifespan. Hub: "commonly live 10 to 20 years in captivity." Cost: "Care sources commonly cite 15 to 20 years, and... a maximum recorded captive lifespan of just over 16 years."
+- Substrate. Hub: "Cypress mulch or coconut fiber substrate." Tank setup: "roughly 70% topsoil to 30% play sand... at least 4 inches" for burrowing. The hub's version reads like bedding, not a dig box.
+- Soak. Hub: "Soak the gecko briefly in shallow lukewarm water." Feeding: "a 15 to 30 minute soak in warm water."
+- The hub says annual fecal exams are recommended, then budgets "Annual vet wellness check $50-$90" with no fecal line, while the cost guide prices a fecal at $65 to $110.
+
+## 3. The set as a whole
+
+Yes, I could buy, build, feed, and keep one. Still missing: how to actually raise ambient humidity to 50-70% (nobody gives a misting or ventilation method), a hygrometer (the cost FAQ mentions one, the cost table and hub checklist do not list it), a scale, and an enclosure cleaning schedule.
+
+Unsignposted handoffs: the health guide's "manageable at home with a proper moist hide... and correct humidity" never says the numbers live in tank setup. The feeding guide's retained-eye-cap paragraph raises humidity and points nowhere. The handling guide says "fat-tails need meaningfully higher humidity" and links to leopard gecko pages instead of its own tank setup. The encyclopedia's wild-caught paragraph raises quarantine without saying so.
+
+## 4. Overlap and conflict across deep dives
+
+Read four times: the tail-is-a-fat-reserve fun fact (hub, cost, handling, health). Read three times: the leopard gecko comparison, the three-hide list, the humid hide. The vocalization material appears in handling and again as the tank setup fun fact.
+
+Real conflict, sand. Tank setup: "a common blend is roughly 70% topsoil to 30% play sand... pure loose sand is sometimes flagged as an impaction risk, but the more accurate picture is that impaction tends to happen in geckos that are already unhealthy." Feeding: "Never use sand as substrate, ingested sand causes real digestive impaction." One page sells me the sand, the next page bans it.
+
+Also, hub calls stuck shed "the most common health issue" while the health guide calls MBD "the most common serious issue in this species" and stuck shed the most common "fat-tail-specific" one. Activity window wobbles: hub "crepuscular," tank setup "nocturnal," enrichment "crepuscular and nocturnal."
+
+## 5. One link per page
+
+- Hub: "Cypress mulch or coconut fiber substrate help maintain this humidity level while remaining easy to clean." to tank setup guide.
+- Encyclopedia: "for years most animals offered for sale were wild caught adults." to Reptile Quarantine.
+- Cost: "The thermostat isn't optional, it's what keeps the heat mat from overheating the enclosure." to Reptile Heating and Thermostats.
+- Handling: "fat-tails need meaningfully higher humidity than leopard geckos, and are more sensitive to conditions that run too dry." to tank setup guide.
+- Health: "It's manageable at home with a proper moist hide lined with damp sphagnum moss and correct humidity." to tank setup guide.
+- Tank setup: "pure loose sand is sometimes flagged as an impaction risk." to health issues guide, impaction section.
+- Feeding: "If humidity is too low, the shed can get stuck, including retained eye caps." to tank setup guide.
+- Enrichment: "A gecko cave packed with damp sphagnum moss stays humid inside while the rest of the enclosure runs drier." to tank setup guide.
+
+## 6. Trust
+
+Doubts: the sand contradiction between two adjacent pages, the hub's supplement schedule disagreeing with the feeding guide, and three lifespan figures across three pages. "The tail... can hold close to half the gecko's total body mass" is a big claim carried without a source.
+
+Most convincing sentence, from enrichment: "A humid hide that has dried out is a hide, not a humid hide."
+
+## 7. Set grade: B
+
+The deep dives are specific, honest about disagreement, and clearly written, but the hub undercuts them with softer competing numbers.
+
+First two changes: make the hub inherit its numbers from the deep dives instead of restating them, and settle the sand question once, in the tank setup guide, with the feeding guide pointing at it.
+
+## Not covered anywhere
+
+- How to actually raise and hold 50-70% ambient humidity: no misting, ventilation, or water-surface method on any page, and the shared Shedding and Emergency guides do not address it.
+- Hygrometer: named in one cost FAQ answer, absent from the cost table and the hub checklist, so a reader buying from the list ends up unable to measure the species' headline requirement.
+- A scale, despite the feeding guide calling for "routine weight checks."
+- Enclosure cleaning and substrate replacement schedule.
+- Cohabitation: whether two can share an enclosure, and whether males fight.
+- Sexing: the hub says females are smaller, and nothing tells you how to sex one.
