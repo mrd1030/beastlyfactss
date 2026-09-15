@@ -12425,7 +12425,10 @@ Numbers checker, before: 31 topic groups, 8 conflicting. Decisions:
   72 to 78F through the day dropping at night, with 65F the floor and 82F the
   hard ceiling, in the body, the FAQ and the seoDescription. This is the
   gargoyle gecko pattern from batch H in a milder form: a page hedged toward a
-  thesis its own subject matter does not support.
+  thesis its own subject matter does not support. Species check: 72 to 78 was
+  a merge of the two sources' bands, and PetMD, the DVM-authored page, is the
+  higher tier, so the daytime band is now PetMD's 75 to 78F on every copy, with
+  the 65F floor and 82F ceiling unchanged.
 - Lifespan. Cost guide "10 to 15 commonly cited, with some sources putting the
   range as wide as 10 to 20" against the encyclopedia's "Maximum longevity in
   the wild is estimated at 20 years; up to 30 years in captivity". These never
@@ -12458,7 +12461,12 @@ monitor and tiger salamander): a sourced Diet Basics section in the tank setup
 guide. It carries the staples both sources agree on, the schedule (two to six
 items per toad every two to three days for an adult, juveniles daily in smaller
 quantities, ceiling of what the animal clears in 15 minutes), gut-loading, and
-the supplement cadence. That also answers the reader's first "not covered
+the supplement cadence. Species check: the schedule is Amphibian Care's, not a
+point both sources agree on. PetMD has juveniles every other day and adults
+"may only need to eat once or twice a week". Left as written because
+Smithsonian's own feeding practice, small crickets three times a week, sits
+with Amphibian Care's every two to three days rather than PetMD's hedged
+weekly figure; worth Mike's eye, since the vet-tier source is the outlier. That also answers the reader's first "not covered
 anywhere" item, how much to feed per toad per session.
 
 Deep dives against each other, and one divergence recorded rather than acted on:
@@ -12578,7 +12586,7 @@ page now says so.
 This species has no feeding guide, the seventh in a row this has come up on. The
 sourced Diet Basics section went into the tank setup guide as usual.
 
-Links: 3 added and 3 cut back. The handling guide's legal link and the health
+Links: 2 added and 3 cut back. The handling guide's legal link and the health
 guide's quarantine link both went in. Three more (cost to setup, handling to
 enrichment, enrichment to legal) were written and then removed, because each of
 those articles already carried its one sibling link and the checker errors on
@@ -12673,8 +12681,9 @@ multi-decade reptile costs. The reader called it "dropped into a molly budget
 for no reason" and that is the right reading: it is a link-carrying sentence,
 which RULES rules out.
 
-Links: 5 added, all to shared aquarium guides rather than siblings, which is
-where the reader's own list pointed. Health to the hospital tank guide on the
+Links: 6 added, five to shared aquarium guides rather than siblings, which is
+where the reader's own list pointed. Cost to the filtration guide on sizing a
+filter to a bioload. Health to the hospital tank guide on the
 sentence that says isolating a fish is standard practice and never said where.
 Handling to the cycling guide on the first-timer mistake it names. Tank setup
 and enrichment to the pH, GH and KH guide, one on soft tap water and one on the
@@ -12797,7 +12806,9 @@ Also fixed: the handling guide's unsourced "mantises can jump or fly a surprisin
 distance, roughly twice their own body length," which understates the actual
 failure mode the reader named. The number is gone rather than replaced with
 another invented one, and the sentence now says what is true, that the winged
-adults of commonly kept species fly and can cross a room. The enrichment guide's
+adults of commonly kept species fly and can cross a room. Species check: the
+same figure survived in the handling guide's FAQ and FunFact and was cut from
+both there. The enrichment guide's
 "An tall nano terrarium" typo is fixed.
 
 Links: 5 added. Tank setup to health issues on the mold and infection warning.
@@ -12932,7 +12943,7 @@ roughly right but not the guide's actual rule about probe placement, and an
 emergency row that gave no figure where the guide has one. Worth keeping as a
 habit: a shared-guide row is copied, not recalled.
 
-Links: 6 added. Setup to the heating and thermostats guide on the thermostat
+Links: 5 added. Setup to the heating and thermostats guide on the thermostat
 sentence, health to setup on the MBD UVB spec, handling to the Salmonella guide,
 enrichment to setup on the basking and UVB line that outranks enrichment, and
 cost to setup on the DIY build sentence that previously pointed only at a

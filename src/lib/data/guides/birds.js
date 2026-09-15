@@ -664,7 +664,7 @@ export const birdGuides = [
         "Anorexia, lethargy, an overgrown beak and nails, green-tinted droppings, labored breathing or a swollen abdomen (fatty liver disease)",
         "Feather plucking, especially self-inflicted skin damage on the chest and shoulders. Always see a vet first to rule out a medical cause",
         "Feather, beak or immune-system abnormalities (PBFD). There's no cure, which makes early diagnosis and preventing spread to other birds genuinely important",
-        "Any respiratory signs in the bird alongside flu-like illness in the household, since psittacosis passes to people",
+        "A bacterial infection spread through droppings and respiratory secretions that can pass to people in the household (psittacosis). See a vet, this needs proper diagnosis and treatment for everyone's sake, not just the bird's",
       ],
       vetLine: "Fix the diet first: an all-seed diet drives both the fatty liver disease and the vitamin deficiencies here. Then cover social interaction and enrichment, which is what keeps feather plucking down. Hygiene and quarantine handle PBFD and psittacosis.",
     },
