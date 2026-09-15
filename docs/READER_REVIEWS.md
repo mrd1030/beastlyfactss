@@ -13679,3 +13679,62 @@ shared-guide item in section 8), how to prepare driftwood, what to treat with
 instead of copper, the target temperature for ich heat treatment against the
 80F ceiling (also now a section 8 item, since zebra danio has the same problem),
 breeding follow-through, tankmates to avoid, and bag-to-tank acclimation.
+
+## Discus (2026-09-15, batch N, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 82k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B+. "The articles are specific, honest about
+disagreement, and genuinely usable; the hub they hang off is looser than they
+are and the pages barely link to each other."
+
+The hub contradicted itself, which is rarer than a hub contradicting its
+articles and worse. Its funFact said discus fry feed on parental mucus "for their
+first one to two weeks of life"; its own diet section said "for about a month
+total, most intensively through the first two weeks and weaning through weeks
+three and four." The feeding guide settles it with the fuller version and a 2010
+Journal of Experimental Biology study behind it. A funFact survives a router
+conversion, so this one is corrected rather than retired, and it now carries the
+weaning window and the study's finding about amino acids and immune antibodies.
+
+Two rows deliberately keep a hedge the old hub had flattened, which is the
+interesting half of this species.
+
+Filtration. The hub checklist said "Strong but gentle canister filtration" as if
+settled. The setup guide records a discus-specialty source pushing back on
+canisters specifically, on the grounds that they are sealed systems competing
+with the fish for dissolved oxygen and can fail dangerously in a power outage.
+The router row carries the disagreement, because a reader choosing a filter needs
+to know the choice is contested rather than being handed one answer.
+
+Neon tetras. The hub answered flat; the handling guide calls it "a genuine point
+of disagreement," with dedicated discus sources avoiding neons at discus
+temperatures and at least one general retailer listing them as fine. The reader
+said "I prefer the article," and so does the router row: the disagreement stays
+and cardinals are named as the safer default.
+
+Acclimation is the third of these, and the handling guide already handled it
+well: general guidance says drip for 60 to 90 minutes, a discus-specialty breeder
+argues drip is worse for this species because it holds the fish in depleting
+shipping water longer. The row keeps both and then gives what does line up,
+lights off and no food on day one.
+
+Retired with the hub: a tank line of "$290 | $450" against the cost guide's "$290
+- $310"; a checklist reading "Frequent large water changes (25-50% every 2-3 days
+in serious setups)", which flattens the setup guide's weekly baseline into the
+enthusiast cadence and would have a new keeper doing three times the work; and
+"a group of 6 or more" against a cost guide that says 5 to 6.
+
+Links: 4 added, from the reader's list. Health to the cycling guide on the
+uncycled-tank sentence, which the reader called out for sitting next to that
+guide in its own sidebar and never pointing at it. Tank setup to cost on the
+electricity and water the routine consumes. Cost to tank setup on what actually
+drives the budget. Feeding to the hospital tank guide on "consider quarantine".
+
+Dates: none bumped. Every changed article gained links only; the fry-feeding
+correction was to the hub's funFact, not to an article.
+
+Gaps: choosing a seller and judging a healthy discus at purchase, what to do with
+RO water once you have it, stocking density past "55 is a floor", grow-out care
+for juveniles, and practical breeding beyond the mucus fact. The reader also
+flagged that the shared pH, GH and KH guide's sidebar summary is written around
+goldfish and coldwater tanks, which is now a section 8 item on its third species.

@@ -448,52 +448,103 @@ export const fishGuides = [
   {
     id: "discus",
     name: "Discus",
-    emoji: "🐠",
+    emoji: "\u{1F41F}",
     difficulty: "Intermediate-Advanced",
     petType: "Fish",
     image: "/assets/guides/discus.jpg",
     tagline: "The self-styled king of the aquarium, a tall, social cichlid that raises its fry on its own skin!",
-    funFact: "Newly hatched discus fry feed on a nutrient-rich mucus secreted from both parents' skin for their first one to two weeks of life, a form of direct parental feeding called 'discus milk' that's genuinely rare among fish.",
-    // Verified against real research in the discus deep-dive articles
-    // (content/guides/discus-cost-guide.mdx and siblings) - a proper 55-75
-    // gallon setup with filtration sized well above tank volume realistically
-    // runs $600-800, not the $200-450 first-draft estimate.
-    costs: {
-      setup: [
-        { item: "55-75 gallon tall tank (group of 6)", low: 290, high: 450 },
-        { item: "Heater rated for sustained 82-86°F", low: 18, high: 30 },
-        { item: "Canister filter, sized well above tank volume", low: 250, high: 320 },
-        { item: "RO/DI unit or water softening (if tap is hard)", low: 70, high: 150 },
-      ],
-      annual: [
-        { item: "Discus pellets or beef-heart mix", low: 240, high: 480 },
-        { item: "Water test kit and conditioner", low: 25, high: 40 },
+    funFact: "Newly hatched discus fry feed on a nutrient-rich mucus secreted from both parents' skin, most intensively for roughly the first two weeks after they become free-swimming, with a gradual weaning over the following two weeks. It is one of the only documented cases of sustained direct parental feeding in fish, and a 2010 study found the mucus carries amino acids and immune antibodies at levels that rise and fall across the feeding period.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, filtration, the hospital tank, water
+    // chemistry, the power outage rule and the sick-fish check cite the shared
+    // aquarium guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the discus set test (docs/READER_REVIEWS.md).
+    //
+    // Retired rather than moved: a tank line of "$290 | $450" against the cost
+    // guide's "$290 - $310", a $140 gap at the top; a checklist reading
+    // "Frequent large water changes (25-50% every 2-3 days in serious setups)",
+    // which flattens the setup guide's weekly baseline into the enthusiast
+    // cadence; "a group of 6 or more" against a cost guide that says 5 to 6;
+    // and a fry-feeding window of "one to two weeks" in the funFact against
+    // "about a month total" in its own diet section, a page contradicting
+    // itself. The funFact survives a router conversion, so it is corrected here
+    // against the feeding guide rather than retired: roughly two weeks
+    // intensively, then two weeks weaning.
+    //
+    // Two rows deliberately carry a hedge the old hub had flattened. The hub
+    // checklist said "Strong but gentle canister filtration" as settled where
+    // the setup guide records a discus-specialty source pushing back on
+    // canisters specifically, and the hub answered the neon tetra question flat
+    // where the handling guide calls it "a genuine point of disagreement". The
+    // reader preferred the article in both cases, and so does the router.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "55 gallons is commonly cited as the practical entry point for a small group. Several experienced discus-keeping sources push back on treating 55 gallons as anything more than a floor, recommending 75 gallons or larger instead, since a 55-gallon tank forces meaningfully more frequent water changes to keep pace with a proper group's waste output. Taller and deeper tanks are generally preferred over long, shallow ones.", source: "discus-tank-setup-guide" },
+        { label: "How many", value: "Plan for a real group, 5 to 6 fish or more, since this is a genuinely social species that does poorly alone or in a pair outside of breeding.", source: "discus-tank-setup-guide" },
+        { label: "Why the number is six", value: "The reason is the pecking order. A group of three gives the bottom fish nothing but the bottom. Six or more spreads the aggression thinly enough that no individual is permanently targeted. Watch for the singled-out fish: a discus that hangs dark-colored at the surface in a corner is the one to act on, and the answer is usually more fish or more tank rather than removing the aggressor.", source: "discus-enrichment-guide" },
+        { label: "Temperature", value: "82 to 86\u00B0F, warmer than nearly every other common community fish and warm enough that it genuinely limits realistic tankmate options. Wild Heckel discus tolerate water closer to 90\u00B0F, but 82 to 86\u00B0F is the standard range cited for keeping captive-bred discus long term. Many keepers budget toward the higher end of standard heater wattage, or run two heaters, since a heater failure is a bigger problem at this temperature.", source: "discus-tank-setup-guide" },
+        { label: "Water changes", value: "The detail that actually defines a working discus tank more than any single equipment choice. Weekly changes in the 25 to 50% range are commonly recommended, and some serious keepers change water every 2 to 3 days rather than weekly. Budget the electricity and water use behind this routine into your ongoing costs.", source: "discus-tank-setup-guide" },
+        { label: "Filtration, which is genuinely debated", value: "Canister filters, sized well above the tank's actual volume, are the most common modern choice and handle this species' heavy bioload well. At least one discus-specialty source pushes back on canister filters specifically, arguing they're sealed systems that compete with the fish for dissolved oxygen and can fail dangerously during a power outage, recommending a hang-on-back filter instead, or a canister paired with extra surface agitation. Avoid under-gravel filters.", source: "discus-tank-setup-guide" },
+        { label: "Put the tank somewhere quiet", value: "An enrichment decision that costs nothing and is almost never mentioned. Discus are nervous fish, and a tank in a busy corridor with people passing and looming over it produces animals that live at the back. A low-traffic wall, approached from the side rather than above, and a background on the rear glass. Feed at the same times so the routine becomes predictable.", source: "discus-enrichment-guide" },
+        { label: "Structure and open water", value: "Tall plant stems and upright driftwood give them structure to orient to and break sight lines between individuals, which matters given the hierarchy. Leave open water: discus cruise instead of darting, and they need somewhere to do it.", source: "discus-enrichment-guide" },
+        { label: "Feeding schedule", value: "Adults 2 to 3 times a day, small amounts cleared within a few minutes. Discus have a short gut relative to their body size, and smaller, more frequent meals suit that better than one large feeding.", source: "discus-feeding-guide" },
+        { label: "Diet", value: "A quality discus-formulated pellet or granule, sized appropriately for this species' small mouth, supplemented regularly with frozen or live bloodworms and brine shrimp. Many experienced keepers also feed a beef-heart mix as part of the rotation, though it works better as a supplement than as the sole staple.", source: "discus-feeding-guide" },
+        { label: "How fry feed", value: "Once free-swimming, fry feed directly on mucus secreted from both parents' skin, most intensively for roughly the first two weeks, with parents gradually weaning them off it over the following two weeks as they start swimming away more often and the fry begin investigating other food sources.", source: "discus-feeding-guide" },
+        { label: "Acclimation, where sources disagree", value: "General fishkeeping guidance commonly recommends a slow drip acclimation, sometimes 60 to 90 minutes. At least one discus-specialty breeder argues the opposite for this species, that drip acclimation keeps the fish confined in shipping water longer while oxygen depletes, and recommends a faster, controlled temperature and pH match instead. What does line up: keep the lights off during acclimation and for several hours after, and don't feed a newly introduced discus right away.", source: "discus-handling-guide" },
+        { label: "Tankmates", value: "Narrower than it looks from a typical peaceful-community list, because sustained 82 to 86\u00B0F rules a lot of standard tropical fish out. Cardinal tetras are named most consistently across dedicated discus sources, alongside rummynose tetras, Sterbai cory catfish, and bristlenose plecos. Neon tetras are a genuine point of disagreement, so cardinals are the safer default if you want a warm-water tetra.", source: "discus-handling-guide" },
+        { label: "Sexing", value: "Genuinely difficult outside of breeding. A more pointed dorsal fin and a somewhat larger body are rough cues, and sources are clear they aren't reliable alone. Most keepers raise a group and let pairs form and reveal themselves through spawning behavior instead of sexing young fish by eye.", source: "discus-handling-guide" },
+        { label: "Budget, the fish", value: "$20 to $450 or more, and price is heavily strain-dependent. Young, common-strain discus run $20 to $40, nicer adult specimens $50 to $150, and premium or rare strains regularly climb to $200 to $450 or more per fish. With a group of 5 to 6, the starting cost is closer to $150 to $250 even at the budget end.", source: "discus-cost-guide" },
+        { label: "Budget, the setup", value: "Roughly $600 to $800, with ongoing costs of $20 to $50 a month. The fish itself is rarely the biggest line item unless you're chasing a premium strain: what drives the budget is filtration sized well above the tank's volume and a water-change routine more demanding than most freshwater fish need.", source: "discus-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years with excellent, stable care is the commonly cited range, though some sources put the typical captive lifespan closer to 8 to 10 years. Consistency is the deciding factor here more than for most community fish.", source: "discus-cost-guide" },
+        { label: "Adult size", value: "6 to 8 inches (15 to 20 cm) in diameter." },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A 55 to 75 gallon tank is the minimum for a proper group of 6, and taller, deeper tanks are strongly preferred over long ones since discus are a tall-bodied fish. Keep water heated between 82 and 86 degrees F, meaningfully warmer than most community tropical fish, which is exactly why tankmate choice is narrower than it looks. Soft, slightly acidic water (pH 6-7) mimicking Amazon blackwater is important; hard tap water often needs an RO/DI unit or a water softener to keep discus healthy long term.",
-      diet: "Discus do best on a high-protein diet: quality discus pellets, frozen bloodworms and brine shrimp, and the classic beef-heart mix used by experienced keepers, best rotated with other foods rather than fed as beef-heart alone given real fat and calcium-phosphorus caveats. Feed small amounts multiple times a day rather than one large feeding. Fry are fed by both parents through a nutrient-rich skin mucus for about a month total, most intensively through the first two weeks and weaning through weeks three and four, a genuine and peer-reviewed form of parental care rather than hobbyist folklore.",
-      enrichment: "Unlike most cichlids, which pair off and defend territory, discus are genuinely social and do best in a group of 6 or more rather than alone or in pairs. They're easily startled by sudden movement and bright light, so a calm room and a tank kept out of a high-traffic path reduces stress noticeably. Dense broad-leafed planting (Amazon sword, anubias) and driftwood give a shy group somewhere to retreat, closer to their native blackwater look than an open tank.",
-      health: "Hexamita infection, known as hole-in-the-head disease, causes pitting around the head and lateral line and has historically been blamed on poor water quality, stress, and diet-related calcium-phosphorus imbalance; a controlled 2019 study specifically tested severe dietary calcium deficiency over 16 weeks and found it did not produce the disease on its own, so water quality and stress remain the better-supported causes. Catch it early and it's treatable, but a vet or experienced aquatic specialist should confirm before treating. Discus carry a thick protective slime coat, and anything that damages it, rough handling or poor water, opens the door to secondary bacterial or fungal infection. This is not a fish for an uncycled or newly established tank; ammonia and nitrite sensitivity is high, and sudden water-quality swings are a common cause of unexplained decline.",
-      checklist: [
-        "55-75 gallon tall tank (group of 6+)",
-        "Heater holding a steady 82-86°F",
-        "Strong but gentle canister filtration",
-        "RO/DI unit or water softener (if needed for soft, acidic water)",
-        "Frequent large water changes (25-50% every 2-3 days in serious setups)",
-        "Discus pellets, frozen bloodworms, and/or beef-heart mix",
-        "Bare-bottom or fine sand substrate for easy cleaning",
-        "Driftwood and broad-leafed plants for cover",
-        "Water test kit and conditioner",
-        "Warm-water-tolerant, peaceful tankmates only",
+    emergencyCard: {
+      source: "discus-health-issues-guide",
+      callNow: [
+        "Small white spots on the skin and gills, usually preceded by flashing against decor, weakness, and appetite loss",
+        "Pitting, small holes, and erosion around the head and along the lateral line",
+        "Labored or rapid breathing, flashing against decor, excess mucus production, and sometimes visible spots on the body",
+        "Frayed or discolored fin edges",
+        "A discus that hangs dark-colored at the surface in a corner",
       ],
+      vetLine: "Ich treatment for this species goes noticeably higher than the standard advice given for other fish, toward roughly 90\u00B0F rather than the 82 to 86\u00B0F discus already live at, since they have less headroom left before hitting ich's own upper survival limit. Hole-in-the-head is more complicated than the hobbyist calcium-to-phosphorus explanation: a 2019 controlled study fed discus a severely unfavorable ratio for 16 weeks and did not produce lesions, so water quality and stress remain the better-supported levers. Catching it early matters, since advanced lesions are less likely to fully resolve.",
     },
+    routes: [
+      { slug: "discus-cost-guide", line: "$20 to $450 a fish by strain, $600 to $800 for the tank around them, and why the fish is rarely the biggest line." },
+      { slug: "discus-tank-setup-guide", line: "55 gallons as a floor and 75 as the real answer, 82 to 86F, and the water-change routine that defines the tank." },
+      { slug: "discus-feeding-guide", line: "Two to three small meals for a short gut, the small-mouth sizing issue, and the peer-reviewed truth about discus milk." },
+      { slug: "discus-handling-guide", line: "Why the acclimation advice genuinely splits, the narrow tankmate list, and sexing that mostly cannot be done by eye." },
+      { slug: "discus-health-issues-guide", line: "Ich at 90F rather than 86, flukes, and the hole-in-the-head study that undercuts the usual beef-heart explanation." },
+      { slug: "discus-enrichment-guide", line: "Why six is the number, the singled-out fish to watch for, and the free enrichment decision nobody mentions." },
+    ],
+    buyList: [
+      "55-gallon tank as an entry point, 75 gallons or larger for a proper group",
+      "Five to six discus, not one or two",
+      "Reliable heater, or two, sized for 82 to 86F",
+      "Canister filter above the tank volume, or a hang-on-back, plus extra surface agitation",
+      "Tall plant stems and upright driftwood, with open cruising water left clear",
+      "Background for the rear glass",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Discus-formulated pellet or granule, sized for a small mouth",
+      "Frozen or live bloodworms and brine shrimp",
+      "Python or similar for the water-change routine",
+    ],
     faqs: [
-      { q: "Can discus live with neon tetras?", a: "Not well, long term. Discus need sustained 82 to 86°F water, and neon tetras genuinely struggle at the top of that range, so the classic community pairing is more of a temperature compromise than an ideal setup for either fish. [Cardinal tetras](/guides/cardinal-tetra/) tolerate the warmth noticeably better and are a more honest tankmate choice." },
-      { q: "How can I tell if my discus is male or female?", a: "It's genuinely difficult. Discus show almost no reliable external difference between sexes outside of breeding, when the genital papilla shape differs (males pointed, females rounder). Most keepers can't sex a non-breeding discus with confidence, and that's normal, not a sign you're missing something obvious." },
-      { q: "Why is my discus hiding and not eating?", a: "Discus are easily stressed by sudden movement, bright light, poor water quality, or a tank in a high-traffic area, and hiding with reduced appetite is usually the first visible sign. Check water parameters first, since ammonia or nitrite swings are a common trigger, then consider whether the tank's placement or a recent disturbance is the cause." },
-      { q: "How is a discus different from an angelfish?", a: "Both are Amazonian cichlids, but discus need meaningfully warmer, softer, cleaner water and are considered the more demanding of the two by a real margin, not just reputation. [Angelfish](/guides/angelfish/) are hardier, tolerate a wider temperature range, and are the more forgiving entry point into keeping a tall-bodied South American cichlid." },
-      { q: "How long do discus live?", a: "10 to 15 years with excellent, stable care, meaningfully shorter under fluctuating water quality. Discus reward consistency more than almost any other common aquarium fish; the fish that struggle are usually the ones kept in a tank that's clean one week and neglected the next." },
+      { q: "What size tank does a discus need?", a: "55 gallons is commonly cited as the practical minimum for a small group, though several experienced sources push that to 75 gallons or more, since a 55-gallon tank forces noticeably more frequent water changes to keep pace with this species' bioload. Taller tanks are preferred over long, low ones given this fish's body shape." },
+      { q: "What temperature do discus need?", a: "82 to 86\u00B0F, warmer than nearly every other common community fish, warm enough that it narrows the tankmate list. Wild Heckel discus take water closer to 90\u00B0F, but 82 to 86\u00B0F is the standard target for captive-bred fish." },
+      { q: "How often should I feed my discus?", a: "Adults 2 to 3 times a day, in small amounts they clear within a few minutes, rather than one large daily meal. Discus have a short gut for their body size, and smaller, more frequent meals suit that digestive setup better than a single big feeding." },
     ],
   },
   {
