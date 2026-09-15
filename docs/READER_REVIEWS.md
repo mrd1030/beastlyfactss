@@ -13963,3 +13963,109 @@ spot a berried female, after the old hub sold watching eggs develop as the
 appeal; and a named calcium source for molting, where the health guide calls a
 calcium-inclusive diet prevention and the feeding guide says no dedicated
 supplement is required, with neither naming a food.
+
+## Bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp (2026-09-15, batch N species check)
+
+Closing check on batch N, base 0701d2e through 88c6a34, on the branch
+claude/bristlenosepleco-discus-swordtail-zebradanio-ghostshrimp. Fixes are in
+973f54a. Method: every hub row, emergency bullet and vetLine sentence for the
+five species was matched against its `source` article by sentence, with the
+article's FAQ block counted as the article; every content change in the batch
+was read against the deep dive or source it leaned on; the review sections
+above were checked line by line against the diffs.
+
+The finding that set the grade. The discus hub funFact, new this batch, said
+"a 2010 study found the mucus carries amino acids and immune antibodies at
+levels that rise and fall across the feeding period." Opened the study
+(Buckley and colleagues, Journal of Experimental Biology 213:3787). The abstract
+reports total protein, cortisol, immunoglobulin, and Na, K and Ca; amino acids
+appear only in the methods as earlier work by others. The hub had copied the
+claim faithfully from the feeding guide's own FunFact, which carried the same
+overreach from before this batch, so the copy was correct and the source
+sentence was not. Both now say antibodies and protein, with the antibody peak at
+the free-swimming stage the abstract does report and the colostrum comparison
+the authors make. The feeding guide's lastUpdated and lastReviewed moved to
+2026-09-15 because a fact changed; the discus section above says none were
+bumped and is annotated.
+
+Also fixed, hub rows. Two emergency bullets came from the wrong article: the
+discus card's "a discus that hangs dark-colored at the surface in a corner" is
+the enrichment guide's sentence, and the ghost shrimp card's "a curled or
+clamped posture" is the handling guide's; neither exists in the health guide
+each card names, so both are gone. The swordtail feeding row said to keep
+bloodworms "as a supplement rather than a daily staple" where the feeding guide
+says to rotate protein in "regularly rather than sparingly," an inversion of the
+source; it now carries the guide's sentences. The swordtail acclimation row had
+"equalise"; it is now the handling guide's FAQ sentence. The ghost shrimp algae
+row had dropped the guide's "while other sources report them grazing on soft
+brush algae too," a flattened hedge; restored. The ghost shrimp feeding row's
+"daytime hiding is normal rather than a warning sign in a settled tank" was a
+hub-written reconciliation no deep dive states; replaced with the guide's own
+flashlight sentence, and the ghost shrimp section above is annotated. Beyond
+those, the swordtail tank size, filtration, quarantine, sexing, vet costs and
+lifespan rows, the swordtail and zebra danio vetLines, the bristlenose net and
+barbel rows, the zebra danio water chemistry and filtration rows, and the ghost
+shrimp feeder, filtration, cover, tankmates, quarantine and sentience rows were
+paraphrases or de-attributions of their source and are now the source's words.
+Every FAQ was already verbatim (check-hub-faqs: 76 clean, 0 non-verbatim).
+Hub numbers did not change: check-species-numbers --strict prints the same hub
+value set before and after for all five.
+
+Also fixed, files. The ghost shrimp encyclopedia overview still said "from the
+genus Palaemonetes" on the same entry whose scientific field d4daa59 had just
+corrected; it now says Palaemon with the old name noted, on the WoRMS record
+for Palaemon paludosus (Gibbes, 1850). The swordtail health guide's "The fix
+is a ratio of one male to three or four females spreads mating attempts" was
+never a sentence; the row copied from it is now grammatical on both pages, no
+date bump since no fact changed. "labelling" in a bristlenose route line.
+
+The review sections. Bristlenose claimed 3 links rewritten; the diff shows 2
+(feeding and tank setup), the enrichment guide's edits were voice fixes.
+Swordtail claimed the old hub said "4 to 6 inches including the male's sword"
+and had the sexes backwards; the base commit's swordtail hub FAQ reads "Males
+reach about 5.5 inches (14 cm) including the sword, and females grow slightly
+longer still, up to about 6.2 inches (16 cm)," which is the encyclopedia's
+figure, so nothing was wrong and nothing was corrected. Struck in place.
+Swordtail's dates line listed feeding among the unbumped when b0ce643 had
+bumped it for the restoration, which the same section describes two paragraphs
+earlier. Ghost shrimp's "WoRMS lists Palaemonetes as an accepted synonym of
+Palaemon" now says what WoRMS says. Everything else checked out: discus 4 links
+added, swordtail 6, zebra danio 6, ghost shrimp 6, the zebra danio and ghost
+shrimp health guides had zero in-body internal links at base, the two
+"fortnight"s and "moulting" in ghost shrimp enrichment, the Lee et al. link
+(DOI 10.1111/jfb.13865 resolves to Lee, Paull and Tyler 2019, J Fish Biol
+94:86), the ghost shrimp RELATED_ARTICLES addition, and the five raw reader
+outputs in docs/READER_LOG.md, one per species, with the .reader extracts on
+disk.
+
+Dates otherwise correct: swordtail feeding, handling and health, zebra danio
+feeding and health, bristlenose feeding and tank setup bumped for facts added;
+discus and every ghost shrimp article unbumped (ghost shrimp all future-dated);
+no future-dated enrichment guide bumped. The bristlenose feeding bump rests on
+one added clause ("one small ornament piece is a decoration, not a provision")
+rather than a number, which is defensible and left alone.
+
+Deliberately not actioned. Rows that trim a clause from the article's sentence
+or open with a two-word lead-in ("Flexible.", "Prey or predator depending on
+size.") were left, matching the platy, molly and amano hubs already accepted.
+The swordtail "why a swordtail stops eating" row compresses a five-item list
+into one sentence using the list's own phrases; left. The zebra danio jump
+height on housedpet.com, the bristlenose lifespan ceiling, and the white ring
+of death next step stay in section 8. The zebra danio health guide's "That
+ceiling is 77°F" is the setup guide's figure restated, not a new number, and
+the ich heat contradiction it exposes is the section 8 shared-guide item.
+
+Gates on the branch head: check-internal-links (796 articles carry a link),
+check-related-articles, check-affiliate-mdx, check-cost-coverage,
+check-seo-tags, check-hub-faqs (76 router hubs, 0 non-verbatim),
+check-encyclopedia (103 entries, 0 errors, 0 warnings), eslint --quiet exit 0,
+check-voice --strict (0 errors, 356 warnings, baseline unchanged). No em or en
+dash in any file the batch touched. check-species-numbers --strict for all
+five: hub values unchanged and each matched to a deep dive.
+
+Grade: pass, after fixes. The batch's structure held (router shape, retired
+figures, links, dates, gates), and the failures were the two the session keeps
+producing: rows written in the hub's voice instead of pasted, including two
+emergency bullets from the wrong article, and one study cited for a compound it
+never measured. The amino acid line was inherited rather than invented this
+batch, which is the difference between this pass and batch M's.
