@@ -13738,3 +13738,70 @@ RO water once you have it, stocking density past "55 is a floor", grow-out care
 for juveniles, and practical breeding beyond the mucus fact. The reader also
 flagged that the shared pH, GH and KH guide's sidebar summary is written around
 goldfish and coldwater tanks, which is now a section 8 item on its third species.
+
+## Swordtail (2026-09-15, batch N, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 84k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B+. "Strong, sourced, unusually honest about
+where evidence runs out, dragged down by a hub that disagrees with its own deep
+dives and one broken article."
+
+The broken article came first and was handled on its own, before any hub work,
+in commit b0ce643. The feeding guide's "Why Swordtails Stop Eating" list ran
+"1. Stress" straight to "5. Illness": items 2, 3 and 4 had been deleted and
+nobody reread the page, while the page's own FAQ still named all three missing
+causes. Item 1 had also absorbed an orphaned sentence belonging to the
+impending-birth item. Restored from the FAQ and the intact platy version of the
+same list, so recovered rather than invented. A numbered-list gap sweep across
+all 796 articles found no second case.
+
+The ratio reads as three different numbers across the set and is not actually a
+disagreement. Handling and health both say one male to three or four females,
+handling notes some sources say two or three, and enrichment says two to three
+minimum with four or more as the clean version. The hub was the only page that
+took the floor as the answer, "one male with two or three females", and that
+line is retired. Three rows now carry the ratio: the enrichment guide's rule,
+its ratio, and the health guide's reason for treating the ratio as a health
+item rather than a stocking preference.
+
+What the hub never said at all, and the reader caught it: two males is the
+problem number. The enrichment guide builds a whole page on it and the hub
+omitted it entirely, which is why it is now the first row rather than a row
+somewhere in the middle. The reader picked the same sentence out of the set as
+the one that convinced it a keeper wrote this: "With two, every contest is
+between the same pair and the loser has nowhere to be."
+
+The handling guide had the sharper version of the same gap. It recommended "a
+males-only group for a colorful, breeding-free display" with no two-males
+caveat at all, which points a reader at exactly the arrangement the enrichment
+guide warns about. That sentence now carries the caveat and the link.
+
+Retired with the hub: "A 20-gallon tank is a reasonable minimum", which takes
+the floor as the recommendation where the setup guide's own title is "A Real 29
+to 30 Gallons"; "Keep water between 70 and 82 degrees F" against 64 to 82 with
+72 to 79 cited most often, a range whose low end matched neither page; and four
+cost lines, the tank at $70 to $150 against the cost guide's $35 to $60, plus
+filter, food, conditioner and test kit all drifting.
+
+Adult size was wrong in a quieter way. The hub said "4 to 6 inches including the
+male's sword", where the encyclopedia and the handling guide agree that males
+reach about 5.5 inches including the sword and females, which carry no sword,
+grow longer still at about 6.2. The hub's version made the sworded fish the
+larger one, which is backwards. Now the encyclopedia's sentence.
+
+Links: 6 added, one per article, all from the reader's own list. No page had a
+sibling link before this.
+
+Dates: handling and health bumped, since handling gained the two-males caveat
+and health gained the two-minute feeding figure. Cost, tank setup and feeding
+changed links only and were not bumped. Enrichment is future-dated to 2026-11-04
+and was not bumped.
+
+check-species-numbers swordtail: every hub value matches its source. Voice
+warning set identical to baseline. All gates and eslint clean.
+
+Gaps, checked against the Health and More list: tankmates, which no page in
+either list covers; stocking numbers past "a small trio", which is the fifth
+species in two batches with the same gap and is already a section 8 item; fry
+rearing beyond the fact that they breed; and judging a healthy fish at the shop
+before buying it.

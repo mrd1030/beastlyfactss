@@ -6095,3 +6095,220 @@ one number that decides whether the animal stays in the cage."
 - Out-of-cage time and escape recovery.
 - A travel carrier.
 - End-of-life costs.
+
+## Bristlenose Pleco (2026-09-15, batch N)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment).
+
+## 1. Page by page
+
+**00 Hub.** Finished it. Actionable: tank 20-30gal, 74-82F, driftwood, wafers, checklist. Grade **B-** (its cost table fights the cost guide).
+**01 Encyclopedia.** Finished it. Actionable: 4-6in, 5-10yr, why it's sold as "Ancistrus sp." Grade **B+**.
+**02 Cost.** Finished it. Actionable: $7-25 fish, $155-265 setup, $45-85/yr, replace wood every year or two. Grade **C+** (numbers contradict the hub).
+**03 Handling.** Finished it. Actionable: don't net, herd into a cup; hold behind the pectorals; one cave per male. Grade **A-**.
+**04 Health.** Finished it. Actionable: sunken belly is the tell, no copper, smooth substrate. Grade **B** (ich section stops short of a number).
+**05 Tank setup.** Finished it. Actionable: 20gal floor, +10/fish, 74-80F, pH 6.5-7.8, AquaClear 70, sand. Grade **B+**.
+**06 Feeding.** Finished it. Actionable: once daily after lights-out, 85/15 plant to protein, pull food next day. Grade **B+**.
+**07 Enrichment.** Finished it twice. Actionable: big wood not an ornament piece, leave the back glass unscrubbed, priority list. Grade **A**.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, L-numbers, the 1854/2017 taxonomy, none of it repeated elsewhere. The hub does not. Every section is a shorter version of a deep dive, and it disagrees with them:
+
+- Temperature. Hub: "Keep water heated between 74 and 82 degrees F". Setup: "74 to 80°F suits most captive-bred bristlenose".
+- Tank price. Hub: "20-30 gallon tank | $90 | $170". Cost: "20 gallon long tank (minimum) | $35 - $60".
+- Filter. Hub: "$30 | $50". Cost: "$45 - $60". Heater: hub "$20 | $35", cost "$18 - $30".
+- Test kit. Hub files it as annual, "Water conditioner and test kit | $15 | $25". Cost files it upfront at "$25 - $40".
+- Hub setup totals $165-305 against the cost guide's "Roughly $155 to $265", and the hub is missing the test kit line entirely.
+- Encyclopedia: "up to 12-15 years with excellent care". Cost: "reasonably often reported living 12 to 14 years".
+- Hub calls them "scaleless"; health calls them "armored catfish with an unprotected belly". Those are different bodies.
+
+## 3. The set as a whole
+
+Yes, I could buy one, set it up, feed it, and spot most of what goes wrong. Still missing: a water change schedule (three pages say "regular water changes", none says how much or how often); how to prepare driftwood (boil, soak, sink, how long the tannins last); what to use instead of copper; how high to raise the temperature for ich, which the 74-80F ceiling makes urgent; what happens when they breed, which the hub raises and nobody follows; tankmates to avoid; acclimating a new fish out of the bag.
+
+Unsignposted handoffs: the hub's copper warning never points at the health guide. The cost guide says driftwood is "tied to digestion" and leaves the reader to find the enrichment page that argues it. Worst, feeding says "Our Bristlenose Pleco tank setup guide covers exactly how to add it," and the setup guide does not cover adding it at all, while pointing back at feeding for the science that actually lives in enrichment. That is a circular pair with the answer in a third file neither links.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three or four times: the common pleco size trap, the algae myth, the sunken belly, "driftwood is not decor." By the enrichment guide I was skimming.
+
+Conflicts:
+- Setup says "74 to 80°F"; health says ich is "Treatable by gradually raising tank temperature with strong aeration" without saying to what, which only works above that range.
+- Setup: "plan for at least one secure hiding spot per fish". Enrichment: "a cave per fish is sensible when you keep more than one." Handling gives no number. Close, not identical.
+- Cost prices a "20 gallon long tank (minimum)" while the hub's checklist says "20-30 gallon tank", so the beginner buying off the checklist overpays or underbuys.
+- Feeding adds spinach to the vegetable list; hub and enrichment omit it.
+
+## 5. One link per page
+
+- **Hub**: "Bristlenose plecos, like corydoras catfish, are scaleless and unusually sensitive to copper-based medications" → the health issues guide.
+- **Encyclopedia**: "Algae alone is not a complete diet for either type as an adult" → the feeding guide.
+- **Cost**: "Driftwood isn't a style choice here either, it's tied to digestion rather than aesthetics." → the enrichment guide.
+- **Handling**: "Those spines catch easily in ordinary net mesh, and a fish that struggles while tangled risks real injury to itself in the process." → the health issues guide, for what an open wound becomes.
+- **Health**: "Treatable by gradually raising tank temperature with strong aeration, but use reduced medication doses" → Fish Quarantine and Treatment: The Hospital Tank Guide.
+- **Setup**: "keep ammonia and nitrite at zero through regular water changes" → How to Cycle a Fish Tank.
+- **Feeding**: "Our Bristlenose Pleco tank setup guide covers exactly how to add it." → should point to the enrichment guide, which is the page that actually delivers.
+- **Enrichment**: "And take real care netting one, since the pectoral spines lock into mesh and the odontodes catch." → the handling guide.
+
+## 6. Trust
+
+Doubts: the hub and cost guide disagreeing on the price of a tank by a factor of two is the kind of thing that makes me re-check everything else. Five pages source driftwood to "most care guides tie that behavior to," which is hearsay; only enrichment produces actual studies, and it then undercuts what the other four asserted flatly. The enrichment guide also switches voice: "courgette," "strip it in a fortnight," and a stray "Other sizes are available" that goes nowhere. The shared pH/GH/KH guide is pitched at coldwater goldfish keepers, which is not me.
+
+The sentence that convinced me: "A pleco visible in the open all day is often a pleco with nowhere better to be." Runner-up, the handling guide on rehoming: "it can hide successfully through most of a tank teardown."
+
+## 7. Set grade: **B-**
+
+Genuinely useful and unusually honest about the wood evidence, undermined by a hub that contradicts its own deep dives on price and temperature. First two fixes: reconcile the hub's cost table and temperature range to the deep dives, or drop the table and link out; then give the driftwood how-to a home in the setup guide and fix the circular pointer.
+
+## Not covered anywhere
+
+- Water change frequency and percentage: not in Cycling, Filtration, or any species page.
+- Driftwood preparation: boiling, soaking, getting it to sink, how long tannins last.
+- What to treat with instead of copper: no medication class is ever named.
+- Target temperature for the ich heat treatment, and whether it breaks the 80F ceiling.
+- Breeding follow-through: the hub raises it, no page says what to do with eggs or fry.
+- Tankmates to avoid by name.
+- Acclimating a newly bought fish; the Transport guide covers moving a tank, not bag to tank.
+
+## Discus (2026-09-15, batch N)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment).
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: tank range, temp, pH, checklist, cost tables. It is the densest page but the numbers drift from the articles it sits on top of. **B-**
+- **01 Encyclopedia.** Finished it. Actionable: adult size (6 to 8 inches), origin water type, and the strain history that explains why one fish is $20 and another $400. **B**
+- **02 Cost.** Finished it. Actionable: I can build a real budget, roughly $700 to $900 all in plus $20 to $50 a month, and I know the group multiplier. **B+**
+- **03 Handling/social.** Finished it. Actionable: group size, tankmate shortlist, lights off after introduction, do not feed day one. Honest about the drip acclimation split. **A-**
+- **04 Health.** Finished it. Actionable: named symptoms, named drugs, the 90°F ich note. **B+**
+- **05 Tank setup.** Finished it. Best page in the set. Actionable: water change cadence, substrate call, filter tradeoff, lighting. **A-**
+- **06 Feeding.** Finished it. Actionable: 2 to 3 small meals, pellet sizing, beef heart as rotation not staple. **A-**
+- **07 Enrichment.** Finished it. Actionable: six or more, tall tank, quiet wall, background on rear glass, feed at fixed times. **A-**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin water, adult size, and the breeding history are nowhere else. The hub mostly restates the deep dives in shorter form, and it is where the numbers slip.
+
+Conflicts:
+- Group size. Hub: "a group of 6 or more". Cost guide: "a group of 5 to 6 or more". Enrichment: "**Six or more**". Small, but the hub's own checklist says "group of 6+" while the article a reader buys from says 5 is acceptable.
+- Tank price. Hub: "55-75 gallon tall tank (group of 6) | $290 | $450". Cost guide: "55-gallon tank (or 75-gallon-plus for a larger group) | $290 - $310". A $140 gap at the top.
+- Water changes. Hub checklist: "Frequent large water changes (25-50% every 2-3 days in serious setups)". Tank setup: "Weekly water changes in the 25 to 50% range are commonly recommended, and some serious keepers change water every 2 to 3 days." The hub reads as if 2 to 3 days is the baseline.
+- Fry feeding, hub against itself. Fun fact: mucus "for their first one to two weeks of life". Diet section: "for about a month total, most intensively through the first two weeks and weaning through weeks three and four."
+- Filtration. Hub checklist: "Strong but gentle canister filtration", flat. Tank setup: "At least one discus-specialty source pushes back on canister filters specifically."
+- Neon tetras. Hub FAQ answers flat. Handling calls it "a genuine point of disagreement". I prefer the article.
+
+## 3. The set as a whole
+
+I could set up, buy, feed and largely keep them. Still missing: where to buy and how to pick a healthy fish in the shop; what to do with RO water once you have it (remineralize, blend, buffer); a stocking rule past "55 is a floor"; grow-out care for juveniles; anything practical about breeding beyond the mucus fact.
+
+Unsignposted handoffs: the hub's hiding FAQ raises tank placement, which the enrichment guide answers. The health guide says "a new, uncycled tank is the single most common setup mistake" and never points at the cycling guide sitting in its own sidebar. The feeding guide says "consider quarantine" with no route to the hospital tank guide.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: the 82 to 86°F range, the group number, tall over long, water quality and stress as the root cause, the mucus fun fact (four times), and small frequent meals. Real conflict is thin. Tank setup: "A tall tank such as a 55 gallon is a starting point for a small group" appears in enrichment as "a proper group of six adults needs considerably more", while the cost guide prices a 55 as the working setup. Enrichment also recommends "A large canister filter" as settled, where tank setup treats canisters as "a genuine point of disagreement". Enrichment's opener, "most of the difficulty is water chemistry", sits oddly against its own FAQ answer that most problems are water problems and the rest of the set's stress emphasis.
+
+## 5. One link per page
+
+- Hub: "then consider whether the tank's placement or a recent disturbance is the cause." Link to the enrichment guide.
+- Encyclopedia: "discus are genuinely social and do best in a group." Link to the social/handling guide.
+- Cost: "What actually drives the discus budget is filtration sized well above the tank's actual volume and a water-change routine more demanding than most freshwater community fish need." Link to the tank setup guide.
+- Handling: "Water quality and stress management also do most of the work preventing illness." Link to the health issues guide.
+- Health: "a new, uncycled tank is the single most common setup mistake behind unexplained fish loss." Link to the cycling guide.
+- Tank setup: "Budget the electricity and water use behind this routine into your ongoing costs." Link to the cost guide.
+- Feeding: "then consider quarantine and a closer look at the fish itself if water quality checks out fine." Link to the hospital tank guide.
+- Enrichment: "A large canister filter and a serious water change routine, plus a water test kit used regularly." Link to the tank setup guide.
+
+## 6. Trust
+
+Doubts: the hub contradicting itself on fry feeding, the tank price ceiling mismatch, and "Discus are one of the pricier community fish" opening a piece that spends the rest of its length arguing they are not really a community fish. Also the health guide's sidebar offers a pH/GH/KH guide summarized around goldfish and coldwater tanks, which is not the page a discus keeper needs.
+
+Most convincing sentence: "A discus that hangs dark-colored at the surface in a corner is the one to act on, and the answer is usually more fish or more tank rather than removing the aggressor."
+
+## 7. Set grade: B+
+
+The articles are specific, honest about disagreement, and genuinely usable; the hub they hang off is looser than they are and the pages barely link to each other.
+
+First two changes: reconcile one canonical number set (group size, tank price, water change cadence, fry weaning) across hub and articles; add the in-body cross links above, starting with health to cycling and tank setup to cost.
+
+## Not covered anywhere
+
+- How to choose a seller and judge a healthy discus at the point of purchase.
+- What to do with RO/DI output: remineralizing, blending with tap, and holding KH steady.
+- Stocking density for adults past "55 gallons is a floor", in gallons or footprint per fish.
+- Grow-out care for juveniles, which is where most first-time discus are bought.
+- Practical breeding: triggering a spawn, what a pair needs, and what to do with fry after weaning.
+
+## Swordtail (2026-09-15, batch N)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment).
+
+Reviewed all eight pages in /home/user/beastlyfactss/.reader/swordtail/.
+
+## 1. Page by page
+
+- **00 hub.** Finished it. Act on: checklist, temp range, weekly 20-25% water changes. Grade B-, it is the only page whose numbers fight the deep dives.
+- **01 encyclopedia.** Finished it. Act on: little, but the fast-stream origin explains the flow advice later. Grade B.
+- **02 cost.** Finished it. Act on: $3-6 a fish, $115-190 setup but budget past it, $20-35 a month. Grade B+.
+- **03 handling.** Finished it. Act on: float 15-20 min, drip 45-60 min, net not pour, quarantine 2-4 weeks, sexing. Grade B+.
+- **04 health.** Finished it. Act on: what ich, fin rot, dropsy and swim bladder look like, and treating ratio as a health issue. Grade A-.
+- **05 tank setup.** Finished it. Act on: 29-30 gal long, 72-79F, pH 7.0-8.4, 12-30 dGH, 4-5x turnover, sealed lid. Grade A.
+- **06 feeding.** Finished it, noticed it was damaged. Act on: 2-minute rule, veg a few times a week, fry 3-5x daily. Grade C+.
+- **07 enrichment.** Finished it fastest. Act on: never exactly two males, one male plus four or more females, spread food, aim outflow along the length. Grade A.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: range, wild habitat, the Heckel/Gordon/Kallman stock-centre history, none of it repeated elsewhere. The hub mostly earns its place on one item, the water-change schedule, which appears nowhere else in the set. Otherwise it is a condensed replay, and it contradicts the deep dives three times.
+
+- Size. Hub: "A 20-gallon tank is a reasonable minimum for a small group." Setup: "29 to 30 gallons the better real-world target for most keepers." The hub checklist says "20+ gallon tank" and never mentions 29.
+- Temperature. Hub: "Keep water between 70 and 82 degrees F." Setup: "roughly 64 to 82°F, with 72 to 79°F cited most often." Neither low end matches.
+- Ratio. Hub: "keep one male with two or three females." Health: "one male to three or four females." Enrichment: "one male and four or more females is a clean, easy setup."
+- Cost. Hub tank: "$70 | $150." Cost guide: "20-gallon long tank | $35 - $60." Hub filter $30-50 against the cost guide's $45-60; hub food $35-60 against $25-50; hub's combined conditioner and test kit $20-30 against the cost guide's $35-55 for the same two lines.
+- The hub never states the enrichment guide's single most important rule, that two males is the problem number.
+
+## 3. The set as a whole
+
+I could buy, set up, cycle, feed and stock this tank with confidence. Missing or unanswered: which tankmates are safe, how many fish a 29 actually holds beyond "a trio", and what to do with fry once they arrive (breeder box, when to separate, when they are sellable).
+
+Questions raised on one page whose answer sits silently on another:
+- Cost says a 29-30 gallon is the real target but never points at the setup page that argues it.
+- Health says "Uneaten food is a common and avoidable driver of the water-quality decline" and stops, with the 2-minute rule sitting unlinked in the feeding guide.
+- Setup raises fry-eating and female refuge; the breeding mechanics behind both are in handling, unlinked.
+- Feeding blames appetite loss on ratio; the ratio rule is in enrichment, unlinked.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three or four times: jumping and lids, fry eating, hybridising with platies, planting for female refuge, the more-active-than-a-molly line. Conflicts:
+
+- Ratio, health: "one male to three or four females" against enrichment: "Two to three females per male minimum."
+- Filtration, setup: "filter flow at 4 to 5 times the tank's volume per hour" against enrichment: "A hang-on-back filter rated above the tank volume handles both." The second reads as far less filter than the first.
+- Tank floor, enrichment: "A 20 gallon long is a sensible floor rather than a generous provision" against setup's title and body pushing 29-30.
+- Handling recommends "a males-only group for a colorful, breeding-free display" without the two-males warning enrichment builds a whole page around.
+
+## 5. One link per page
+
+- 00 hub: none needed, the sidebar carries them.
+- 01 encyclopedia: "In the wild, swordtails favor faster-flowing streams than platies and are correspondingly more energetic, active swimmers in the aquarium." Point to the tank setup guide.
+- 02 cost: "the comfortable starting point costs somewhat more than the table above, since a 29 or 30-gallon tank itself runs higher" to the tank setup guide.
+- 03 handling: "keep a males-only group for a colorful, breeding-free display instead" to the enrichment guide.
+- 04 health: "Uneaten food is a common and avoidable driver of the water-quality decline behind most of these conditions." to the feeding guide.
+- 05 setup: "swordtail parents don't look after fry, and adults will eat them given the chance" to the handling guide.
+- 06 feeding: "an imbalanced male-to-female ratio matters more than it does for most other community fish" to the enrichment guide.
+- 07 enrichment: "A 20 gallon long is a sensible floor rather than a generous provision." to the tank setup guide.
+
+## 6. Trust
+
+The feeding guide's "Why Swordtails Stop Eating" list runs "1. Stress" then jumps straight to "5. Illness", and its own FAQ cites water quality, cold and a gravid female as causes that are nowhere in the body. Three items were dropped and nobody read the page afterwards. That plus the hub's numbers made me check everything else twice. The sentence that convinced me a keeper wrote this: "With two, every contest is between the same pair and the loser has nowhere to be."
+
+## 7. Set grade: B+
+
+Strong, sourced, unusually honest about where evidence runs out, dragged down by a hub that disagrees with its own deep dives and one broken article. First two changes: rewrite the hub from the deep dives so size, temperature, ratio and every cost line match, and restore the three missing causes in the feeding guide's list.
+
+## Not covered anywhere
+
+- Tankmates: no page in either list says which species can share a swordtail tank.
+- Stocking numbers: nothing tells me how many swordtails a 29 gallon actually holds beyond "a small trio".
+- Fry rearing: the roundup covers that they breed, but nothing covers raising fry, when to separate them, or when they can be rehomed.
+- Judging a healthy fish at the shop before you buy it.

@@ -1192,49 +1192,103 @@ export const fishGuides = [
   {
     id: "swordtail",
     name: "Swordtail",
-    emoji: "🐠",
+    emoji: "\u{1F420}",
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/swordtail.jpg",
     tagline: "The active, sword-tailed livebearer that's basically a guppy's bigger, livelier cousin!",
     funFact: "Female swordtails that have already given birth can sometimes go on to develop a sword, male coloring, and even father broods of their own later in life. Hobbyists have reported the switch for generations, and scientists have studied it since the 1930s, though researchers still debate whether it's a true sex reversal or male traits simply emerging late in a fish that was missexed as a juvenile.",
-    costs: {
-      setup: [
-        { item: "20+ gallon tank", low: 70, high: 150 },
-        { item: "Aquarium heater", low: 18, high: 30 },
-        { item: "Filter sized to tank/bioload", low: 30, high: 50 },
-        { item: "Live or silk plants", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Flake/pellet food + frozen bloodworms/brine shrimp", low: 35, high: 60 },
-        { item: "Water conditioner and test kit", low: 20, high: 30 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, filtration, the hospital tank, water
+    // chemistry, the power outage rule and the sick-fish check cite the shared
+    // aquarium guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the swordtail set test (docs/READER_REVIEWS.md).
+    //
+    // Retired rather than moved: "A 20-gallon tank is a reasonable minimum",
+    // which takes the floor as the recommendation where the setup guide's own
+    // title is "A Real 29 to 30 Gallons"; "Keep water between 70 and 82 degrees
+    // F" against 64 to 82 with 72 to 79 cited most often, a range whose low end
+    // matched neither; a tank line of "$70 | $150" against the cost guide's $35
+    // to $60, with the filter, food, conditioner and test kit rows all drifting
+    // too; and "one male with two or three females", which is the floor the
+    // handling guide explicitly calls the weaker option.
+    //
+    // The ratio reads as three different numbers across the set and is not
+    // actually a disagreement: handling and health both say one male to three
+    // or four females, handling notes some sources say two or three, and
+    // enrichment says two to three minimum with four or more as the clean
+    // version. The hub was the only page that took the floor as the answer.
+    //
+    // The hub also never stated the enrichment guide's single most useful
+    // stocking rule, that two males is the problem number. It is the first
+    // behavioral row below.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Not two males", value: "The single most useful stocking rule for this species. With two, every contest is between the same pair and the loser has nowhere to be. One male with a group of females is the simplest answer. Several males in a large, well-planted tank works because the aggression distributes, and it needs the space to be real rather than nominal.", source: "swordtail-enrichment-guide" },
+        { label: "Sex ratio", value: "Two to three females per male minimum, more better, for the same reasons as any livebearer. A pursued female feeds less and rests less. Combined with the rule above: one male and four or more females is a clean, easy setup.", source: "swordtail-enrichment-guide" },
+        { label: "Why the ratio is a health item", value: "A ratio of one male to three or four females spreads mating attempts out enough to meaningfully reduce chasing, and a tank with real planted cover gives a harassed fish somewhere to break line of sight. A fish showing chewed fins or clamped, listless behavior in a male-heavy tank needs the ratio corrected, not just the individual moved.", source: "swordtail-health-issues-guide" },
+        { label: "Tank size", value: "20 gallons is the genuine floor for a small trio, a step up from the 10-gallon tank that gets a small guppy or platy group by. Most direct retailers and care sheets for this species recommend going further, since swordtails are noticeably more active, open-water swimmers than a molly or platy of similar size. A 20-gallon long works for a trio, with 29 or 30 gallons the better real-world target for most keepers.", source: "swordtail-tank-setup-guide" },
+        { label: "Temperature", value: "A tropical range of roughly 64 to 82\u00B0F works, with 72 to 79\u00B0F cited most often as the steadier, more comfortable target. Stability matters more than hitting an exact number, avoid swings larger than about 2\u00B0F in a 24-hour period.", source: "swordtail-tank-setup-guide" },
+        { label: "The jumping risk", value: "Real, not hobbyist exaggeration. Reports from experienced keepers describe fish escaping through gaps of well under an inch between a glass lid and the tank rim. A full mesh or glass lid with no meaningful gaps is the fix, not an optional upgrade. Leave a feeding hatch or filter cutout no larger than necessary, and check it after any tank rearranging.", source: "swordtail-tank-setup-guide" },
+        { label: "Filtration", value: "Swordtails need more real filtration capacity than a guppy or molly: filter flow at 4 to 5 times the tank's volume per hour is the figure cited for this species. For a standard or growing group, a hang-on-back or a stronger canister filter handles the load comfortably. A gentle sponge filter is the better call specifically if you're prioritizing fry survival.", source: "swordtail-tank-setup-guide" },
+        { label: "Cover and broken sight lines", value: "Dense live planting along the sides and back, with open water through the middle. Planting does double duty: cover for pursued females, and broken sight lines that stop a dominant male tracking a subordinate across the whole tank. If you are keeping several males, this is what makes it work.", source: "swordtail-enrichment-guide" },
+        { label: "Feeding", value: "Feed only what the group clears in about two minutes, once or twice a day. Rotate blanched vegetables in a few times a week alongside the staple flake or pellet, and keep protein foods like bloodworms as a supplement rather than a daily staple.", source: "swordtail-feeding-guide" },
+        { label: "Why a swordtail stops eating", value: "Stress from a new tank, aggressive tankmates or an unbalanced ratio; poor or unstable water quality; cold water, which slows metabolism directly; a female close to giving birth; and illness, which usually comes with other visible signs rather than appetite loss alone.", source: "swordtail-feeding-guide" },
+        { label: "Acclimation", value: "Float the sealed bag 15 to 20 minutes to equalise temperature, then drip acclimate over 45 to 60 minutes. Net the fish into the tank rather than pouring the bag water in with it.", source: "swordtail-handling-guide" },
+        { label: "Quarantine", value: "2 to 4 weeks in a separate tank before new fish join an established group, which catches most problems before they spread.", source: "swordtail-handling-guide" },
+        { label: "Sexing", value: "The sword itself is the giveaway: males develop the extended lower tail lobe the species is named for, alongside a gonopodium in place of the fuller fan-shaped anal fin females keep.", source: "swordtail-handling-guide" },
+        { label: "Budget", value: "$3 to $25 a fish, more for lyretail and specialty patterns. Upfront setup is $115 to $190, more if you size up to the 29 or 30 gallons the setup guide recommends, and ongoing costs run $20 to $35 a month.", source: "swordtail-cost-guide" },
+        { label: "Vet costs", value: "Not applicable in the traditional sense. Swordtail health management is water quality and, when needed, over-the-counter treatments, not veterinary visits.", source: "swordtail-cost-guide" },
+        { label: "Lifespan", value: "3 to 5 years with good, stable water quality.", source: "swordtail-cost-guide" },
+        { label: "Adult size", value: "Males up to 5.5 inches (14 cm) including the sword; females up to 6.2 inches (16 cm) and typically the larger sex overall." },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A 20-gallon tank is a reasonable minimum for a small group, and swordtails appreciate a long footprint over a tall one since they're more active, energetic swimmers than platies or guppies and favor open water. Keep water between 70 and 82 degrees F with a heater to hold it steady, and use a secure lid, since swordtails are capable jumpers. Because males can be genuinely aggressive toward other males, keep one male with two or three females rather than multiple males in anything short of a large, well-planted tank; dense planting also gives females somewhere to break line of sight from an overly persistent male.",
-      diet: "Swordtails are omnivores that do well on a high-quality flake or pellet food as a dietary staple, and a real vegetable or algae component matters just as much here as it does for platies and mollies. Frozen or live bloodworms, brine shrimp, and daphnia add valuable protein and variety. Feed small amounts once or twice daily, only what's consumed within a couple of minutes.",
-      enrichment: "Swordtails are noticeably more active swimmers than platies or guppies and make good use of open water alongside planted cover. Male ratio matters here for real welfare reasons, not just breeding math: a single female housed with a male faces near-constant, stressful mating pursuit, so two or three females per male spreads that attention out and reduces chasing. Watching courtship and the arrival of new broods is itself a source of ongoing enrichment, though as with every livebearer on this site, adults will eat their own fry without dense cover or a separate nursery.",
-      health: "Swordtails are generally hardy, but ich and fin rot both follow poor water quality, and as larger, more active fish they produce more waste than a guppy or platy of the same age, so filtration and maintenance need to keep pace. Fry and juveniles are considerably more delicate than adults and benefit from more frequent, smaller water changes. Because male aggression is a genuine stress and injury risk in an unbalanced sex ratio, ongoing chasing and fin damage in a tank with too few females is a health issue as much as a behavioral one. Weekly 20 to 25 percent water changes support the heavier bioload of a full-grown group.",
-      checklist: [
-        "20+ gallon tank (longer footprint preferred)",
-        "Heater set to 70-82°F",
-        "Filter sized to tank and bioload",
-        "Secure lid (swordtails jump)",
-        "Live or silk plants",
-        "1 male to 2-3 females (reduces mating-chase stress)",
-        "High-quality flake or pellet food with vegetable content",
-        "Frozen bloodworms or brine shrimp for variety",
-        "Water conditioner and test kit",
-        "Weekly 20-25% water changes",
+    emergencyCard: {
+      source: "swordtail-health-issues-guide",
+      callNow: [
+        "Small white spots resembling grains of salt across the body and fins",
+        "Ragged, frayed, or discolored fin edges",
+        "Fluid buildup in the abdomen that makes the scales stand out in a raised, pinecone-like pattern",
+        "Buoyancy problems: floating, sinking, or swimming at an odd angle",
+        "Chewed fins or clamped, listless behavior in a male-heavy tank",
       ],
+      vetLine: "Stress, poor or unstable water quality, overcrowding, and skipping quarantine are the common thread behind nearly every condition on this list. The swordtail-specific one is the sex ratio: a male-heavy tank produces measurable stress and fin damage, and correcting the ratio addresses the cause rather than the symptom. Dropsy is the hardest condition here to treat successfully and often carries a poor outlook by the time it's obvious.",
     },
+    routes: [
+      { slug: "swordtail-cost-guide", line: "$3 to $25 a fish, $115 to $190 for the tank, and why sizing up costs more than the table says." },
+      { slug: "swordtail-tank-setup-guide", line: "A real 29 to 30 gallons, 64 to 82F, four to five times turnover, and a lid that actually seals." },
+      { slug: "swordtail-feeding-guide", line: "The two-minute rule, vegetables a few times a week, and the five reasons a swordtail goes off its food." },
+      { slug: "swordtail-handling-guide", line: "Float then drip, net rather than pour, quarantine two to four weeks, and sexing by the sword." },
+      { slug: "swordtail-health-issues-guide", line: "Ich, fin rot, dropsy and swim bladder, plus the sex ratio treated as the health issue it is." },
+      { slug: "swordtail-enrichment-guide", line: "Why two males is the problem number, the ratio that follows from it, and what planting actually does." },
+    ],
+    buyList: [
+      "20-gallon long as a floor, 29 or 30 gallons as the real target",
+      "Lid that seals, with no gaps at the back or around cutouts",
+      "Submersible aquarium heater",
+      "Filter rated for 4 to 5 times the tank volume per hour",
+      "Sponge filter, if fry survival matters",
+      "Dense live plants along the sides and back, open water through the middle",
+      "One male and four or more females, or a single-sex group",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Staple flake or pellet",
+      "Zucchini, spinach or peas to blanch",
+    ],
     faqs: [
-      { q: "How big do swordtails get?", a: "Males reach about 5.5 inches (14 cm) including the sword, and females grow slightly longer still, up to about 6.2 inches (16 cm), despite having no sword at all. That makes swordtails roughly double the length of a platy or guppy." },
-      { q: "Why do male swordtails have a 'sword'?", a: "It's an extension of the lower edge of the tail fin, and it's a genuine target of female mate choice, females show measurable preferences for males with longer swords and bolder color, similar to a peacock's tail. The sword itself plays no role in swimming." },
-      { q: "Can swordtails and platies really interbreed?", a: "Yes, and it's far more common than most keepers realize. [Platies](/guides/platy/) and swordtails are both in the genus Xiphophorus and close enough to produce fertile hybrids; deliberate crossbreeding between the two has been part of the aquarium hobby for close to a century, so many platies and swordtails sold today already carry some hybrid ancestry rather than being purely one species." },
-      { q: "Is a 'swordtail guppy' the same as a swordtail fish?", a: "No, and this trips up a lot of new keepers. 'Swordtail' is also the name of a [guppy](/guides/guppy/) tail shape, a single pointed extension top or bottom of the caudal fin, bred within Poecilia reticulata itself. A true swordtail (Xiphophorus hellerii) is a separate, larger species; a swordtail-finned guppy is still just a guppy." },
-      { q: "What size tank do swordtails need?", a: "20 gallons is a reasonable minimum for a small group, more than a guppy or platy needs, since swordtails are larger and considerably more active swimmers. A longer tank footprint suits their swimming style better than a tall one." },
-      { q: "Are swordtails good pets for beginners?", a: "Yes, they're hardy, colorful, and about as easy to breed as any livebearer. The main adjustment from a guppy or platy is size and activity level: swordtails need a bigger, longer tank and are more prone to male-on-male aggression, so stick to one male per group of females unless the tank is large and well planted." },
+      { q: "What size tank does a swordtail need?", a: "20 gallons is the genuine floor for a small trio, one male and two or three females, but 29 to 30 gallons is the more realistic starting point that most direct retailers and care sheets recommend, since swordtails are more active, open-water swimmers than a molly or platy. Go long and rectangular over tall, and use a lid, swordtails are capable jumpers." },
+      { q: "What temperature do swordtails need?", a: "Tropical, roughly 64 to 82\u00B0F, with 72 to 79\u00B0F cited most often as the steadier target. Hold it steady rather than chasing a number: keep swings under about 2\u00B0F a day. A submersible heater is necessary unless the room stays warm all year." },
+      { q: "Why does male-to-female ratio matter so much with swordtails?", a: "Because males can be persistent toward females and combative toward each other. Sources commonly recommend one male to three or four females, some say two or three is enough, but the higher end spreads out mating attempts more effectively and reduces the fin damage and stress that come with a single female fielding constant attention." },
     ],
   },
   {
