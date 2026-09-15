@@ -13662,8 +13662,10 @@ the hub's "20-30 gallon tank" checklist line is gone in favour of the cost
 guide's 20 long as the floor with 29 to 30 as the better long-term answer, which
 is what the setup guide already said.
 
-Links: 3 rewritten rather than added, since the problem here was links that
-existed and pointed the wrong way.
+Links: 2 rewritten rather than added (feeding and tank setup, both now pointing
+at enrichment), since the problem here was links that existed and pointed the
+wrong way. [Corrected from "3" by the batch N species check: the enrichment
+guide's edits were voice fixes, not a link.]
 
 Dates: tank setup and feeding bumped. Enrichment is future-dated to 2026-11-05
 and was not bumped despite the voice fixes, which changed no figure.
@@ -13731,7 +13733,9 @@ electricity and water the routine consumes. Cost to tank setup on what actually
 drives the budget. Feeding to the hospital tank guide on "consider quarantine".
 
 Dates: none bumped. Every changed article gained links only; the fry-feeding
-correction was to the hub's funFact, not to an article.
+correction was to the hub's funFact, not to an article. [Superseded by the batch
+N species check: the feeding guide was bumped to 2026-09-15 when its amino acid
+claim was corrected against the 2010 study, see that section.]
 
 Gaps: choosing a seller and judging a healthy discus at purchase, what to do with
 RO water once you have it, stocking density past "55 is a floor", grow-out care
@@ -13783,19 +13787,23 @@ to 30 Gallons"; "Keep water between 70 and 82 degrees F" against 64 to 82 with
 cost lines, the tank at $70 to $150 against the cost guide's $35 to $60, plus
 filter, food, conditioner and test kit all drifting.
 
-Adult size was wrong in a quieter way. The hub said "4 to 6 inches including the
-male's sword", where the encyclopedia and the handling guide agree that males
-reach about 5.5 inches including the sword and females, which carry no sword,
-grow longer still at about 6.2. The hub's version made the sworded fish the
-larger one, which is backwards. Now the encyclopedia's sentence.
+[Struck by the batch N species check: this section originally claimed the old
+hub said "4 to 6 inches including the male's sword" and had the sexes backwards.
+The base commit's swordtail hub FAQ read "Males reach about 5.5 inches (14 cm)
+including the sword, and females grow slightly longer still, up to about 6.2
+inches (16 cm)", which is the encyclopedia's figure. The adult size row carries
+the same numbers; nothing was corrected, and the claim that something was is
+withdrawn.]
 
 Links: 6 added, one per article, all from the reader's own list. No page had a
 sibling link before this.
 
 Dates: handling and health bumped, since handling gained the two-males caveat
-and health gained the two-minute feeding figure. Cost, tank setup and feeding
-changed links only and were not bumped. Enrichment is future-dated to 2026-11-04
-and was not bumped.
+and health gained the two-minute feeding figure. Feeding was bumped earlier in
+commit b0ce643 for the restored causes. Cost and tank setup changed links only
+and were not bumped. Enrichment is future-dated to 2026-11-04 and was not
+bumped. [Corrected by the batch N species check: the original line listed
+feeding among the unbumped.]
 
 check-species-numbers swordtail: every hub value matches its source. Voice
 warning set identical to baseline. All gates and eslint clean.
@@ -13894,8 +13902,11 @@ this species is largely nocturnal and stays hidden among vegetation by day. The
 reader saw why that matters and said so: the health guide lists "staying hidden
 far more than normal" as a stress sign, so the hub's version turns a normal
 animal into a worrying one for anyone who bought on the strength of watching
-them. The hub row now says daytime hiding is normal and a flashlight after dark
-is how you watch them.
+them. The hub row now carries the feeding guide's nocturnal sentence and its
+flashlight-after-dark sentence. [Amended by the batch N species check: the row
+originally added a hub-written line, "daytime hiding is normal rather than a
+warning sign in a settled tank", which no deep dive says; it was replaced with
+the feeding guide's own wording.]
 
 The hub also said true *Palaemonetes paludosus* "can complete their entire life
 cycle in freshwater." The setup guide's source, a 1990 *Journal of Crustacean
@@ -13909,7 +13920,8 @@ The taxonomy contradiction was handled before any hub work, in commit d4daa59.
 The hub asserted the genus *Palaemonetes* while the encyclopedia's own history
 section said that genus was sunk, and the encyclopedia's `scientific` field
 still read "Palaemonetes spp." against its own prose. Verified against WoRMS,
-which lists *Palaemonetes* as an accepted synonym of *Palaemon*, then corrected
+which lists *Palaemonetes paludosus* as accepted as *Palaemon paludosus* (Gibbes,
+1850), then corrected
 the one field and the prose elsewhere that asserted the old genus as current.
 Source titles and URLs that carry the old name as published were left alone.
 
