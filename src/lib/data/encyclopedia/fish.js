@@ -120,7 +120,7 @@ export const fishEncyclopedia = [
       habitat: "Outdoor ponds and slow-moving freshwater systems; entirely domesticated as a pet",
       adultSize: "12-36 inches (30-90 cm) depending on pond size and variety",
       wildDiet: "Omnivorous bottom feeder - aquatic plants, insects, and crustaceans",
-      wildLifespan: "25-35 years typical; some documented individuals far longer",
+      wildLifespan: "25-50 years with good care; koi are fully domesticated, so there is no separate wild figure, and some documented individuals run far longer",
       conservation: "Domesticated (not evaluated; wild ancestor Least Concern)",
       history: "The founding mutations turned up in an unlikely place: the snowbound villages of Nijuumura, in what is now Nagaoka and Ojiya in Niigata Prefecture, where farmers kept carp through the winter as a food supply. The fish stayed a local curiosity until the Tokyo Taisho Exposition of 1914, where about twenty of them were shown under the older name kawarigoi, won a silver medal, and were seen by some of the roughly 7.5 million people who attended. Crown Prince Hirohito, later Emperor Showa, had them brought to the Imperial Palace, which is what turned a regional farm product into a national art form. Japan set a formal agricultural standard for nishikigoi only in 2022.",
     },

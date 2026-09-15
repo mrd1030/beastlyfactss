@@ -5245,3 +5245,87 @@ First two changes: make the hub derive its numbers from the deep dives (bar spac
 - The first week home. Handling says start "the day the bird comes home"; nothing says whether that is right for a bird that just moved.
 - The cost and choice of the UV fixture the setup guide recommends. It is in no budget table, and the shared photoperiod guide covers schedule, not hardware.
 - A daily out-of-cage duration. The old hub's "at least an hour" was retired rather than carried into a deep dive, since no deep dive or opened source states it.
+
+## Koi (2026-09-15, batch K)
+
+Raw reader output, one Opus agent, 9-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment, vs goldfish).
+
+**1. Page by page**
+
+- 00 Care guide hub. Finished it; I can act on the checklist and the pond spec, but it disagrees with three deep dives and leads with the Hanako myth as its headline fun fact. C
+- 01 Encyclopedia. Finished it; nothing to act on, but the Niigata-to-1914-exposition history is the only page I'd read twice for pleasure. B
+- 02 Cost guide. Finished it; I can build a budget from it, except the stated setup range doesn't match its own table. B+
+- 03 Handling. Finished it; wet hands, net into a floating bowl, don't lift. Short and usable. B
+- 04 Health issues. Finished it; the emergency vs manageable-at-home split is the most decision-ready thing in the set. A-
+- 05 Pond setup. Finished it; 250 gal per adult, 3 to 5 ft, oversized filtration. These are the numbers I'd hand a contractor. A-
+- 06 Feeding. Finished it; a temperature-banded schedule I can tape to the pond shed, and it flags its own weak sources. A
+- 07 Enrichment. Finished it; really a pond-design page, and the best-written one. "Stock for the adults" is the line that changed my plan. A-
+- 08 Koi vs goldfish. Finished it; useful decision frame, but its size and species figures fight the rest of the set. C
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: the history is on no other page. The hub mostly restates the deep dives in shorter form, which is fine as a landing page, but it contradicts them:
+
+- Quarantine. Hub: "always quarantine any new koi for 2 to 4 weeks". Health guide: "strict quarantine, often 4 to 6 weeks or longer".
+- Lifespan. Hub FAQ: "25 to 35 years is typical". Cost guide and vs-goldfish: "25 to 50 years with good care".
+- Peas. Hub: "Occasional treats like shelled peas, watermelon, and orange slices are enjoyed in moderation." Feeding guide: "Peas are a genuine point of disagreement ... hard or dried peas are a real choking and blockage risk".
+- Volume. Hub: "at least 1,000 gallons for even a small group". Enrichment: "Adult koi need thousands of gallons rather than hundreds".
+- Hanako. Hub fun fact runs the 226-year claim up front; the cost guide says "Treat it as folklore rather than fact."
+
+The hub's setup table also totals $2,450 to $9,200 while the cost guide's prose says "commonly runs $5,100 to $15,875". Same table, incompatible headline.
+
+**3. The set as a whole**
+
+I could dig, plumb, stock, feed and winterize a pond from this. What's missing: how to pick a healthy fish at purchase, how to acclimate one on arrival, and any pond water-change or sludge-removal routine. The word "quarantine" appears on five pages and no koi page tells me how big the quarantine system is or how to run it.
+
+Questions raised on one page and answered on another, unsignposted:
+
+- Setup lists "A quarantine system: essential for any new arrival" with no spec; the health guide's KHV section is why, and the shared Hospital Tank guide is how.
+- Health guide ends on "beneficial bacteria at spring startup, paired with solid filtration"; the setup guide's filtration section and the shared cycling guide both answer that, neither is named.
+- Feeding says to test water immediately when multiple fish go off food; the health guide's water-quality-crisis protocol is the answer.
+- Enrichment says "Do not feed in cold water" with no pointer to the feeding guide that gives the actual temperature bands.
+- Handling lists skipping quarantine as a top mistake and never links the health guide.
+
+**4. Overlap and conflict across the deep dives**
+
+Read twice: predator netting, oversized filtration, aeration, quarantine, and the 250 gal per fish figure appear in three or four pages each. That repetition is mostly tolerable.
+
+Real conflicts:
+
+- Adult size. Vs-goldfish: "A typical adult koi reaches 14 to 18 inches". Handling: "koi grow substantially larger, commonly 24 to 36 inches or more as adults". Enrichment: "around two feet". Hub and encyclopedia: "12-36 inches". Four numbers, and the 250 gal per fish figure depends on which is true.
+- Species. Encyclopedia: "Scientific: Cyprinus rubrofuscus ... ornamental varieties of the Amur carp". Vs-goldfish: "Koi | Cyprinus carpio (common carp)" and "koi descend from the common carp". Same site, two ancestries.
+- KHV mortality. Health: "outbreaks can carry mortality rates of 80 to 100%". Feeding: "mortality is commonly cited at 70 to 100%".
+- Stop-feeding threshold. Feeding: "Below about 48 to 50°F". Cost: "dropping sharply once water falls below about 50 to 55°F".
+- Depth. Setup: "Minimum 3 feet, ideally 3 to 5 feet or more." Enrichment: "at least three to four feet in part of the pond", which is a weaker rule stated as the floor.
+
+**5. One link per page**
+
+- Hub and encyclopedia: none needed, they already link everything.
+- Cost: "Itemized, that breaks down into flexible EPDM liner (preferred for durability and fish safety) plus underlayment, excavation and grading, a pump sized to circulate the full volume every 1 to 2 hours" goes to Koi Pond Setup.
+- Handling: "Introducing new fish without a proper quarantine period" goes to Common Koi Health Issues.
+- Health: "A healthy dose of beneficial bacteria at spring startup, paired with solid filtration and UV clarification, prevents far more of this list than any treatment ever will" goes to Koi Pond Setup.
+- Setup: "A quarantine system: essential for any new arrival before it joins the main pond" goes to Fish Quarantine and Treatment: The Hospital Tank Guide.
+- Feeding: "If multiple fish stop eating at once, that's a signal to test water immediately rather than assume a benign cause" goes to Common Koi Health Issues.
+- Enrichment: "In cold water, feeding drops away entirely, and pushing food into fish that cannot digest it is a common winter mistake" goes to Koi Feeding.
+- Vs goldfish: "That size gap is the reason koi essentially require an outdoor pond setup, roughly 250 gallons per fish" goes to Koi Pond Setup.
+
+**6. Trust**
+
+Doubts: the species and adult-size conflicts, the hub's cost table not matching the cost guide's own range, and the hub repeating Hanako as a fun fact while the cost guide debunks it.
+
+What convinced me a keeper wrote this: "Do not break ice by hitting it, which sends a shockwave through the water." Nobody summarizing sources invents that. The feeding FAQ's "Koi have no true stomach, food passes straight into the intestine" is a close second.
+
+**7. Set grade: B**
+
+Genuinely usable, well-sourced where it matters, and undermined by numbers that don't agree across pages. First two fixes: pick one adult size and one scientific name and propagate them everywhere; then rewrite the hub so it matches the deep dives on quarantine length, lifespan, peas and cost, and drop Hanako from the headline fun fact.
+
+**Not covered anywhere**
+
+- How to choose a healthy koi at purchase, and where to buy from.
+- Acclimating a new fish on arrival: bag float, drip, how long before it goes into quarantine.
+- Pond water-change schedule, percentage, and sludge or bottom-drain maintenance. The shared filtration guide covers aquarium filter media, not pond muck.
+- Pond-specific summer heat management. The shared cooling guide is aquarium-only, with no answer for a 1,000 gallon outdoor pond.
+- Spawning: what to do when it happens, and whether to keep or remove eggs and fry.
+- KHV after diagnosis: whether testing is available, who a "notifiable" disease gets reported to, and what happens to the pond and survivors.
+- A single winter shutdown schedule with temperatures and dates. The pieces are spread across setup and enrichment, assembled nowhere.

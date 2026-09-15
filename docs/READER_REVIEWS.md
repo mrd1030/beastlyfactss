@@ -11657,3 +11657,190 @@ parenthetical; and seven in-body links.
 
 Left open: the five content gaps above, filed in docs/READER_LOG.md, plus the
 unsourced "30s" figure.
+
+## Koi (2026-09-15, batch K, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, feeding, enrichment, vs goldfish). One Opus agent, about 95k tokens.
+The review below reads the old legacy hub (housing, diet, enrichment and health
+prose, two cost tables, a checklist); the router hub was built from its findings
+the same day. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | A usable checklist and pond spec, disagreeing with three deep dives and leading on a myth another page debunks. |
+| Encyclopedia | B | The Niigata-to-1914 history is the only thing in the set worth reading twice for pleasure. |
+| Cost | B+ | A budget you can build from, except the stated setup range doesn't match its own table. |
+| Handling | B | Wet hands, net into a floating bowl, don't lift. |
+| Health issues | A- | The emergency versus manageable-at-home split is the most decision-ready thing in the set. |
+| Tank setup | A- | The numbers you would hand a contractor. |
+| Feeding | A | A temperature-banded schedule you could tape to the pond shed. |
+| Enrichment | A- | Really a pond-design page, and the best written one. |
+| vs goldfish | C | A useful decision frame whose size and species figures fight the rest of the set. |
+
+Set grade: B. "Genuinely usable, well-sourced where it matters, and undermined
+by numbers that don't agree across pages."
+
+Hub versus the set, both sides quoted (all against the old legacy hub, resolved
+by the router rebuild):
+
+- Quarantine. Old hub: "always quarantine any new koi for 2 to 4 weeks." Health
+  guide: "strict quarantine, often 4 to 6 weeks or longer, sometimes at specific
+  temperatures." The hub was telling a reader to do half of what the deep dive
+  calls the critical prevention step for a disease with no cure.
+- Lifespan. Old hub FAQ: "25 to 35 years is typical." Cost guide: "25 to 50
+  years with good care is the commonly cited range." See Numbers checker.
+- Peas. Old hub: "Occasional treats like shelled peas, watermelon, and orange
+  slices are enjoyed in moderation." Feeding guide: "hard or dried peas are a
+  real choking and blockage risk." The hub's row now copies the feeding guide's
+  settled wording.
+- Volume. Old hub: "at least 1,000 gallons for even a small group." Enrichment:
+  "Adult koi need thousands of gallons rather than hundreds." Not strictly a
+  contradiction, but the hub gave the floor as the plan. Both sentences are now
+  rows, from the setup guide and the enrichment guide respectively.
+- Hanako. The old hub's headline funFact led with the 226-year claim; the cost
+  guide's own FunFact says "Treat it as folklore rather than fact." The hub's
+  funFact now carries the fish-recognizes-people fact from the enrichment guide
+  instead, and the Hanako claim stays where it is debunked.
+- Cost. The old hub's setup table summed to $2,450 to $9,200 while the cost
+  guide's prose says "$5,100 to $15,875." The hub carries no table now, and see
+  Numbers checker for what turned out to be behind that gap.
+
+Numbers checker. `node scripts/check-species-numbers.mjs koi --strict` before
+the pass reported 13 conflicting topic groups. Decisions:
+
+- Scientific name, the one the reader put first. The encyclopedia says "Cyprinus
+  rubrofuscus" and describes koi as "ornamental varieties of the Amur carp"; the
+  vs goldfish guide's comparison table said "Cyprinus carpio (common carp)" and
+  its body and FAQ both said "koi descend from the common carp." ITIS, the US
+  federal taxonomic authority, lists Cyprinus rubrofuscus Lacepede, 1803 as a
+  valid species (TSN 688966, credibility "verified, standards met"). The Amur
+  carp was formerly treated as a common carp subspecies, C. c. haematopterus,
+  and current authorities separate it. The encyclopedia is right and the vs
+  guide moved, in the table, the body, and the FAQ.
+- Adult size, four figures across the set. vs goldfish "14 to 18 inches",
+  handling "commonly 24 to 36 inches or more", enrichment "around two feet", hub
+  and encyclopedia "12 to 36 inches". PetMD's koi care sheet, written by Dr.
+  Melissa Witherell, DVM (September 2024), gives "Up to 3 feet long" and, for
+  stocking, "adults that grow to be 24-25 inches in length need approximately
+  250 gallons per individual," which is the figure the whole set's 250-gallon
+  rule rests on. So 24 to 25 inches is the adult figure and 3 feet the top. The
+  vs guide's 14 to 18 was the outlier and undercut its own argument; corrected in
+  body and FAQ. The handling guide's "24 to 36 inches or more" lost the "or
+  more", which put it past PetMD's stated maximum. Enrichment's "around two
+  feet" already agreed. The encyclopedia's "12-36 inches depending on pond size
+  and variety" is a full range with a real hedge and was left.
+- KHV mortality. Feeding guide "mortality is commonly cited at 70 to 100%"
+  against the health guide's "80 to 100%". Neither page's own sources are
+  high-tier here, so this went to the literature: Quijano Carde et al. (2020),
+  Frontiers in Veterinary Science, on CyHV-3 states infection leads "in some
+  cases to death in <21 days in over 80% of the infections", and gives clinical
+  signs "over the range of 15-28C". Over 80% is the health guide's range, not
+  the feeding guide's, so the feeding guide moved to 80 to 100%. The feeding
+  guide's "outbreaks are worst in the 61 to 77F range" sits inside the paper's
+  15 to 28C and was left.
+- Stop-feeding threshold. Feeding guide "Below about 48 to 50F: Stop feeding
+  entirely" against the cost guide's "below about 50 to 55F, when koi stop
+  eating almost entirely." The feeding guide is the page whose subject is
+  feeding and its figure is the more specific one; the cost guide moved, in the
+  body and in its FAQ.
+- Lifespan. Encyclopedia "25-35 years typical" against the cost guide's "25 to
+  50 years with good care." PetMD's vet-authored care sheet gives "Up to 50+
+  years with proper care", so the cost guide has the higher-tier figure and the
+  encyclopedia moved.
+- Depth. Setup guide "Minimum 3 feet, ideally 3 to 5 feet or more" against
+  enrichment's "at least three to four feet in part of the pond". Left as
+  written on both. Enrichment scopes its figure to the deep zone, which is a
+  real distinction on a pond with shelves, and its range sits inside the setup
+  guide's. PetMD gives "at least 3 to 6 feet deep", which contains both. No
+  number moved and no hedge changed.
+- The cost guide's setup table versus its own heading. The table sums to $2,450
+  to $9,200 and the heading says $5,100 to $15,875. Both figures are real and
+  they measure different things: the heading is an installed-pond cost from a
+  contractor pricing analysis, the table is an itemized parts list. That was
+  never said, so the section now says it, in one sentence, and neither figure
+  changed.
+- Every other group was the old hub's two cost tables against the cost guide's.
+  The hub carries no table now.
+
+After the rebuild, every value on a line marked `hub` appears, unchanged, in the
+deep dive its row names. Two values were checked by hand because the checker
+files them under a different topic label on the hub than on the deep dive: the
+buy list's "1,000 gallons" (tank setup, line 62 and its FAQ) and the seasonal
+food row's "25 to 32%" (feeding guide, line 70). Both are verbatim.
+
+Source narration, again before the router step ran, on three deep dives:
+
+- Tank setup: "some sources extend this to 59 to 77F", "acceptable per some care
+  guides, but many experienced keepers prefer bare-bottom ponds".
+- Feeding: "Some sources narrow this further", "per one manufacturer", "though at
+  least one koi-specific source argues keepers who rely on it tend to overfeed by
+  a wide margin, that specific figure wasn't corroborated elsewhere", and "Peas
+  are a genuine point of disagreement, some sources call them a top treat, others
+  say only in small, thoroughly cooked amounts", the last of which left a reader
+  with a warning and no instruction.
+- Cost: nothing narrated, but three sentences of the site talking about itself
+  ("our Koi vs. Goldfish guide breaks down", "our Red Eared Slider cost guide
+  walks through", and a closing roundup sentence that existed only to carry a
+  link), plus a body sentence restating the FunFact directly above it word for
+  word ("one of the longest financial commitments in the entire pet world").
+
+Gaps, checked against the Health and More list before calling them real. The koi
+sidebar carries the aquarium filtration, cycling, water parameters, quarantine
+and hospital tank, power outage and transport, and cooling-without-a-chiller
+guides. Against that list these are real and are filed in docs/READER_LOG.md:
+choosing a healthy koi at purchase and where to buy; acclimating a new fish on
+arrival; a pond water-change and sludge or bottom-drain routine, since the shared
+filtration guide is about aquarium media rather than pond muck; pond-specific
+summer heat management, since the shared cooling guide is aquarium-only and has
+no answer for 1,000 gallons outdoors; spawning; what happens after a KHV
+diagnosis, including who a notifiable disease is reported to; and a single winter
+shutdown schedule, whose pieces are spread across setup and enrichment and
+assembled nowhere.
+
+Stranded questions, now linked: the setup guide listed a quarantine system as
+essential with no spec; the health guide prescribed beneficial bacteria and
+filtration and never named the page that sizes it; the feeding guide told a
+reader to test water and never said what to do with a bad reading; the handling
+guide named skipping quarantine as a top mistake with no route to the disease it
+prevents; the cost guide itemized a build and never pointed at the guide that
+sizes it. All five fixed.
+
+One link per page, from the reader:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub, encyclopedia | none needed | | n/a |
+| Cost | "Itemized, that breaks down into flexible EPDM liner... a pump sized to circulate the full volume every 1 to 2 hours" | pond setup | Yes |
+| Handling | "Introducing new fish without a proper quarantine period" | health issues | Yes |
+| Health | "beneficial bacteria at spring startup, paired with solid filtration and UV clarification" | pond setup | Yes |
+| Setup | "A quarantine system: essential for any new arrival" | shared hospital tank guide | Yes |
+| Feeding | "If multiple fish stop eating at once, that's a signal to test water immediately" | health issues | Yes |
+| Enrichment | "In cold water, feeding drops away entirely" | feeding guide | No link, but the missing figure was added instead: the sentence now carries the feeding guide's own "below roughly 48 to 50F", so the reader gets the number rather than a trip |
+| vs goldfish | "That size gap is the reason koi essentially require an outdoor pond setup, roughly 250 gallons per fish" | pond setup | Yes |
+
+Six links added, one sibling link per article, each with a reason, none before
+the first H2, none in a ComparisonTable cell.
+
+Encyclopedia. One field changed, the one conflicting with a deep dive's sourced
+figure. `wildLifespan` read "25-35 years typical; some documented individuals far
+longer" and now reads "25-50 years with good care; koi are fully domesticated, so
+there is no separate wild figure, and some documented individuals run far
+longer". The scientific name and the history section were not touched: the
+encyclopedia was the page that had the name right, and the vs guide moved to it.
+
+Fixed the same day: the scientific name and ancestry in three places on the vs
+goldfish guide; the adult size on the vs goldfish guide (body and FAQ) and the
+handling guide; the KHV mortality figure on the feeding guide; the stop-feeding
+threshold on the cost guide (body and FAQ); source narration on the tank setup
+and feeding guides, body and FAQs; three site-self-reference sentences and one
+link-library closing sentence on the cost guide, plus one on the tank setup guide
+and one on the handling guide; the cost guide's table-versus-heading gap; a body
+sentence restating its own FunFact; the enrichment guide's affiliate template
+fragment ("and other sizes are available"); the encyclopedia's lifespan field;
+and six in-body links.
+
+Left open: the seven content gaps above, filed in docs/READER_LOG.md. The winter
+shutdown schedule is the one worth writing first, since the set has every piece
+of it and assembles them nowhere, and a koi keeper needs it once a year on a
+deadline set by the weather.
