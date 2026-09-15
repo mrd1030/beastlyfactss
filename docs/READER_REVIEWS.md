@@ -13877,3 +13877,77 @@ assume a reader can do; what to actually do with an accidental spawn once it
 happens; and a maintenance routine, since the weekly 25 to 30% change existed
 only on the hub and no shared guide covers water changes, which is already the
 section 8 item this batch opened.
+
+## Ghost Shrimp (2026-09-15, batch N, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 86k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B. "Genuinely useful and unusually honest about
+the feeder trade, undercut by a hub that contradicts the pages it introduces."
+
+Two hub claims were retired as wrong rather than merely different, which is a
+harder category than the usual drift.
+
+The hub said ghost shrimp are "unusually bold and active for a shrimp: rather
+than hiding through the day like most dwarf shrimp species, they wander openly
+in search of food." The feeding guide cites Wikipedia for the opposite, that
+this species is largely nocturnal and stays hidden among vegetation by day. The
+reader saw why that matters and said so: the health guide lists "staying hidden
+far more than normal" as a stress sign, so the hub's version turns a normal
+animal into a worrying one for anyone who bought on the strength of watching
+them. The hub row now says daytime hiding is normal and a flashlight after dark
+is how you watch them.
+
+The hub also said true *Palaemonetes paludosus* "can complete their entire life
+cycle in freshwater." The setup guide's source, a 1990 *Journal of Crustacean
+Biology* study, puts reliable hatching and metamorphosis in a 0 to 5 ppt band
+and quotes the researchers concluding the species "can complete its life cycle
+in brackish water." Freshwater is inside the viable window, not the whole of it,
+and the hub had flattened a precise result into a marketing line. The hub row is
+now the study's version.
+
+The taxonomy contradiction was handled before any hub work, in commit d4daa59.
+The hub asserted the genus *Palaemonetes* while the encyclopedia's own history
+section said that genus was sunk, and the encyclopedia's `scientific` field
+still read "Palaemonetes spp." against its own prose. Verified against WoRMS,
+which lists *Palaemonetes* as an accepted synonym of *Palaemon*, then corrected
+the one field and the prose elsewhere that asserted the old genus as current.
+Source titles and URLs that carry the old name as published were left alone.
+
+Retired with the hub: "Heater if room runs below 65°F" against the setup guide's
+72 to 82°F comfortable range, seven degrees apart on whether a keeper buys a
+heater at all; pH 6.5 to 8.0 against 7 to 8; 5 to 15 dGH against 3 to 15; and a
+cost table that differed from the cost guide on every line.
+
+Voice fixes on the reader's evidence, the same pattern as the bristlenose
+enrichment guide in this batch: two "fortnight"s and a "moulting guide" link on
+a US-spelling site.
+
+Links: 6 added, one per article, all from the reader's list. The health guide had
+no in-body internal links at all before this. The handling guide's "a separate,
+simple setup" now says what simple still has to clear, which was the reader's
+question about whether a quarantine tank needs cycling, answered from the set's
+own sourced material rather than by assertion.
+
+RELATED_ARTICLES gained aquarium-cycling-guide for this species, which the health
+guide's "confirm the tank is fully cycled before stocking" needed and the sidebar
+did not carry.
+
+Dates: none bumped. Every ghost shrimp article is future-dated, five to 2026-09-18
+and enrichment to 2026-11-02.
+
+check-species-numbers ghost-shrimp: every hub value matches its source. Voice
+warning set identical to baseline. All gates and eslint clean.
+
+Left open, both filed in section 8: what to actually do about the white ring of
+death, which the health guide calls frequently fatal and then drops, and the fact
+that the shared invertebrate molting guide is written for tarantulas, hermit
+crabs and jumping spiders, so the one shared page a shrimp keeper most needs is
+not about shrimp.
+
+Gaps, checked against the Health and More list: how many shrimp to buy for a 5 or
+10 gallon tank, which is the section 8 stocking item again; water change
+frequency and volume, the section 8 item this batch opened; how to sex them or
+spot a berried female, after the old hub sold watching eggs develop as the
+appeal; and a named calcium source for molting, where the health guide calls a
+calcium-inclusive diet prevention and the feeding guide says no dedicated
+supplement is required, with neither naming a food.

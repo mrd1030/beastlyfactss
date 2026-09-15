@@ -554,6 +554,14 @@ is why they kept getting deferred. Do them once section 7 is finished.
         in batch N. Three species now, and the sidebar excerpt is what a reader
         sees before deciding whether to click, so a discus keeper reading about
         goldfish concludes the guide is not for them.
+      - The shared invertebrate molting guide is terrestrial. It covers
+        tarantulas, hermit crabs and jumping spiders by name and its timelines
+        and signs are written for those three, while molting is the single most
+        load-bearing topic for ghost shrimp and cherry shrimp, whose health
+        guides carry the aquatic version alone. Either a section in that guide
+        or an aquatic counterpart. Ghost shrimp's reader in batch N wanted the
+        feeding guide to point there and the page it would have pointed at is
+        not about shrimp.
       - Stocking numbers past a floor. Swordtail ("how many in a 29 beyond a
         trio"), zebra danio, ghost shrimp ("how many for a 5 or 10 gallon") and,
         from batch M, platy and cherry shrimp all stop at a minimum tank size and
@@ -565,6 +573,13 @@ is why they kept getting deferred. Do them once section 7 is finished.
       are listed by what they need rather than by species.
 
       Needs new research before anyone can decide:
+      - The white ring of death, what to actually do about it. The ghost shrimp
+        health guide calls it "frequently fatal" and stops there, which is the
+        one place in that set a reader is left with a named emergency and no
+        next step. Shrimp Science is the page's source and may or may not give
+        one. If the honest answer is that there is no intervention and
+        prevention is the whole of it, the guide should say that rather than
+        trailing off. (batch N)
       - Zebra danio jump height. Both the tank setup and handling guides put it
         at 20 to 30cm on housedpet.com alone, which is the weakest source in
         either set and loses to almost anything under the ranking in

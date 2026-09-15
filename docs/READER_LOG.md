@@ -6396,3 +6396,80 @@ First two changes: rewrite the hub from the deep dives so costs, feeding frequen
 - What to actually do with an accidental spawn or fry.
 - A maintenance routine: the weekly 25-30% change appears only on the hub, and no class guide covers water changes.
 - How to raise temperature for ich treatment in the unheated tank the setup guide recommends.
+
+## Ghost Shrimp (2026-09-15, batch N)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment).
+
+Review: the ghost shrimp set (8 pages, read in order)
+
+**1. Page by page**
+
+- 00 Care guide hub. Finished it. Actionable: the checklist is the only buy-list in the set I could take to a store. But its numbers are its own, not the deep dives'. B minus.
+- 01 Encyclopedia. Finished it, short and worth it for the origin and the 2012/2013 name change. Actionable: almost nothing, and it doesn't pretend otherwise. B.
+- 02 Cost guide. Finished it. Actionable: buy from a pet-stock tank, not the feeder bin, and budget $40 to $130. Its cost tables contradict the hub's line for line. B.
+- 03 Handling/acclimation. Finished it. Most actionable page in the set: net not hands, 1 to 2 drops per second, double the volume over 1 to 2 hours, quarantine 2 to 4 weeks. A minus.
+- 04 Health issues. Finished it. Actionable: copper under 0.03 mg/L, ammonia and nitrite at zero before stocking, recognise pre-molt stillness, four prevention habits. A minus.
+- 05 Tank setup. Finished it. Actionable: sponge filter for the intake reason, dark substrate, cover for molters, size both directions. A minus.
+- 06 Feeding. Finished it. Actionable: small amount every day or two, remove leftovers after a few hours, don't buy them to fix algae. B plus.
+- 07 Enrichment. Finished it but trusted it least. Actionable: the priority order list. Different voice, thinnest sourcing, and it drops quarantine entirely. C plus.
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: origin, wild lifespan, and the taxonomy history appear nowhere else. The hub mostly restates the deep dives in shorter form, and its numbers disagree with them.
+
+- Heater. Hub checklist: "Heater if room runs below 65°F". Setup: "72 to 82°F is the range most care sources converge on... A heater is only strictly necessary if your room regularly runs below that comfortable range." Seven degrees apart on whether I buy a heater.
+- pH. Hub: "Keep pH between 6.5 and 8.0." Setup: "Aim for pH 7 to 8".
+- Hardness. Hub: "tolerates a wide hardness range, 5-15 dGH". Setup: "general hardness of 3 to 15 dGH".
+- Cost. Every line differs. Hub tank "$25 | $50" vs cost guide "5-10 gallon tank | $18 - $30". Hub heater "$15 | $25" vs "$18 - $30". Hub food "$8 | $18" vs "Sinking wafer food | $16 - $35".
+- Taxonomy. Hub: "Ghost shrimp belong to the genus Palaemonetes in the family Palaemonidae". Encyclopedia: "Palaemonetes, a genus that no longer exists... making the correct name Palaemon paludosus." The encyclopedia's own Scientific field still says "Palaemonetes spp."
+
+**3. The set as a whole**
+
+I could set up, buy, feed and keep them. I know the tank, filter, substrate, cover, acclimation, quarantine, diet, and the copper rule. What I still can't do: know how many shrimp to buy, know what water change to do and how often ("Small regular changes" is all I get), know whether the quarantine tank needs to be cycled first, or tell a male from a berried female after the hub told me I could watch her eggs develop.
+
+Questions answered on another page without the text saying so:
+- Enrichment says "Acclimate slowly, by drip if you can" and never gives a rate. The handling page has the whole procedure.
+- Cost's "no practical veterinary care... husbandry and prevention do all the work" is the exact setup for the health page's four habits, unlinked.
+- Setup's fun fact raises the brackish larvae problem; feeding and the hub answer parts of it separately.
+
+**4. Overlap and conflict across the deep dives**
+
+Read the feeder-tank origin four times (cost, handling, health, enrichment) with the same two quotes, and the molting/predation warning five times. Conflicts:
+
+- Activity. Hub: "they wander openly in search of food, which makes them easy and satisfying to actually watch". Feeding: "this species is largely nocturnal, staying hidden among vegetation by day". That matters, because health lists "staying hidden far more than normal" as a stress sign.
+- Protein. Hub: "supplemented with blanched vegetables and the occasional protein source." Feeding, under Foods to Avoid: "Excess protein-heavy feeding".
+- Calcium. Health: "a diet that includes some calcium content" is prevention. Feeding: "No dedicated supplement is required... it includes enough calcium to support molting." Neither names a food.
+- Breeding. Hub: "true Palaemonetes paludosus can complete their entire life cycle in freshwater". Setup: the researchers concluded the species "can complete its life cycle in brackish water" and "the odds improve with a trace of salinity."
+- Quarantine. Health calls it one of four habits; enrichment's seven-item priority order omits it.
+
+**5. One link per page**
+
+- 00 Hub: "stable, dechlorinated water and a cycled tank still matter" → Aquarium Filtration.
+- 01 Encyclopedia: "Unlike the cherry shrimp and Amano shrimp they're commonly sold beside" → Three Shrimp, Three Different Jobs.
+- 02 Cost: "There's essentially no practical veterinary care available for a freshwater invertebrate this small, so husbandry and prevention do all the work here." → the health issues page.
+- 03 Handling: "The standard precaution is a 2 to 4 week quarantine in a separate, simple setup" → Aquarium Filtration, because "simple setup" is doing a lot of work.
+- 04 Health: "inadequate calcium and general hardness leave a new shell unable to harden correctly" → Freshwater pH, GH, and KH.
+- 05 Setup: "A heater is only strictly necessary if your room regularly runs below that comfortable range" → Cooling an Aquarium Without a Chiller. The page names an 82°F ceiling and never says what to do above it.
+- 06 Feeding: a freshly molted shrimp is "soft, defenseless" for "several hours or even days" → the moulting guide, which only the enrichment page points to.
+- 07 Enrichment: "Acclimate slowly, by drip if you can, since sudden parameter changes finish off animals that are already marginal." → the handling page. Biggest gap in the set.
+
+**6. Trust**
+
+Doubts: two different cost tables under one roof; the hub asserting a genus the encyclopedia says was sunk in 2013; bold-by-day versus nocturnal; and enrichment's "Nothing on the species" when another page in the set cites a 1990 Journal of Crustacean Biology study on P. paludosus. Enrichment also reads like a different writer (fortnight, moulting, no sources of its own).
+
+Most convincing: "a shrimp about to molt typically goes still and stops eating for an hour or more beforehand, normal behavior worth recognizing rather than mistaking for illness." Runner-up, "Leave discarded shells in the tank, since the shrimp eat them and recover the minerals."
+
+**7. Set grade: B**
+
+Genuinely useful and unusually honest about the feeder trade, undercut by a hub that contradicts the pages it introduces. First two changes: derive the hub's costs, pH, dGH and heater threshold from the deep dives instead of restating them, and settle nocturnal versus bold-by-day in the same pass; then add the two operational numbers missing everywhere, how many shrimp to start with and what water change to run.
+
+**Not covered anywhere**
+
+- How many shrimp to buy for a 5 or 10 gallon tank. No page and no shared guide gives a stocking number.
+- Water change frequency and volume. The filtration guide's summary covers filter maintenance, not changes.
+- Whether the quarantine tank has to be cycled before shrimp go in.
+- How to sex them or spot a berried female, after the hub sells watching eggs develop as the appeal.
+- What to actually do when you see the white ring of death. Called "frequently fatal" with no next step.
+- A named calcium source for molting, given the health and feeding pages disagree on whether one is needed.

@@ -290,44 +290,101 @@ export const invertebrateGuides = [
     image: "/assets/guides/ghost-shrimp.jpg",
     tagline: "The nearly transparent, famously cheap cleanup crew that's sold as fish food as often as it's kept as a pet!",
     funFact: "Despite looking like a smaller, cheaper cousin of the cherry and Amano shrimp sold right next to them in the store, ghost shrimp aren't closely related to either. They belong to the family Palaemonidae, while cherry and Amano shrimp both belong to the unrelated family Atyidae, and each lineage independently evolved from marine ancestors into fresh water at a different point in history. Their famous hardiness is exactly why they're sold cheaply in bulk as feeder shrimp for larger fish, even though plenty of keepers keep them purely as pets.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "5-10 gallon tank", low: 25, high: 50 },
-        { item: "Gentle sponge filter", low: 10, high: 20 },
-        { item: "Heater (if room runs cool)", low: 15, high: 25 },
-        { item: "Substrate and simple hides/plants", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Algae wafers and general fish food", low: 8, high: 18 },
-        { item: "Water conditioner", low: 8, high: 12 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Cycling, filtration, water chemistry,
+    // summer cooling and the molting guide cite the shared guides in the
+    // sidebar's Health and More list. Reconciled 2026-09-15 after the ghost
+    // shrimp set test (docs/READER_REVIEWS.md).
+    //
+    // Retired rather than moved: "Heater if room runs below 65F" against the
+    // setup guide's 72 to 82F comfortable range, seven degrees apart on whether
+    // a keeper buys a heater at all; "pH 6.5-8.0" against 7 to 8; "5-15 dGH"
+    // against 3 to 15; and a cost table that differed from the cost guide on
+    // every line, tank $25-50 against $18-30, heater $15-25 against $18-30,
+    // food $8-18 against $16-35.
+    //
+    // Two claims retired as wrong rather than merely different. The hub called
+    // ghost shrimp "unusually bold and active... they wander openly in search
+    // of food", where the feeding guide cites this species as largely nocturnal
+    // and hidden by day, and the health guide lists staying hidden as a stress
+    // sign, so the hub's version turned a normal animal into a worrying one.
+    // And the hub said true Palaemonetes paludosus "can complete their entire
+    // life cycle in freshwater" where the setup guide's 1990 Journal of
+    // Crustacean Biology source puts viable hatching and metamorphosis in a 0
+    // to 5 ppt band, with the researchers concluding the species can complete
+    // its life cycle in brackish water. Freshwater is inside the window, not
+    // the whole of it.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Where yours came from", value: "The leading cause of early losses, and it happened before you bought them. A large share of ghost shrimp move through the trade as feeder stock, and feeder tanks are run for volume and turnover rather than individual animal health, with no disease screening and no quarantine before sale. Watch for lethargy, refusing food, and rapid losses in the first days.", source: "ghost-shrimp-health-issues-guide" },
+        { label: "Recovery first", value: "The item that matters most and the one no care sheet lists. Acclimate slowly, then give them a quiet, stable, planted tank and low expectations for the first two weeks. Losses in that window are common and are usually not something you did.", source: "ghost-shrimp-enrichment-guide" },
+        { label: "Tank size", value: "5 gallons is the workable minimum according to The Shrimp Farm, and 10 gallons gives a small colony more stability and room to forage. Bigger is always more forgiving with water quality, but ghost shrimp don't demand the larger footprint some other species do.", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "Temperature and water chemistry", value: "72 to 82\u00B0F is the commonly cited comfortable range, with tolerance stretching noticeably wider on both ends. Aim for pH 7 to 8 and general hardness of 3 to 15 dGH. Wide tolerance doesn't mean water quality stops mattering: ammonia and nitrite still need to read zero before stocking.", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "Filtration", value: "A gentle sponge filter is the standard choice, strong enough to keep water clean without a current powerful enough to stress a small shrimp or pull it into an intake, a real risk with a standard hang-on-back filter's uncovered intake tube.", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "Copper", value: "The one rule that isn't negotiable. Commonly cited safety thresholds put copper at roughly 0.03 mg/L or lower as the ceiling for invertebrates, and copper-based fish medications, some plant fertilizers, and old copper plumbing are all realistic exposure routes. Confirm any medication or fertilizer is explicitly invertebrate-safe before using it.", source: "ghost-shrimp-health-issues-guide" },
+        { label: "Cover, and why", value: "Dense planting and cover give a molting shrimp, which is soft and defenseless for hours after shedding its shell, somewhere to disappear from both predatory tankmates and other ghost shrimp, which will opportunistically target a freshly molted individual.", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "Molting, what normal looks like", value: "A shrimp about to molt typically goes still and stops eating for an hour or more beforehand, normal behavior worth recognizing rather than mistaking for illness. Younger shrimp molt roughly weekly, older shrimp roughly monthly.", source: "ghost-shrimp-health-issues-guide" },
+        { label: "Molting, what failure looks like", value: "Most failures trace back to water parameters and diet, specifically inadequate calcium and general hardness leaving a new shell unable to harden. The most serious version is the white ring of death, a solid band where the shell should split cleanly at the head, trapping the animal between old and new exoskeleton. It's frequently fatal, which makes stable water chemistry the whole answer.", source: "ghost-shrimp-health-issues-guide" },
+        { label: "The shells they leave", value: "Leave discarded shells in the tank, since the shrimp eat them and recover the minerals.", source: "ghost-shrimp-enrichment-guide" },
+        { label: "Feeding", value: "A small amount every day or two is plenty for a modestly stocked tank, since ghost shrimp scavenge a meaningful share of their food on their own. Offer only what a sinking wafer or a few pellets provide, and remove anything still sitting on the substrate after a few hours.", source: "ghost-shrimp-feeding-guide" },
+        { label: "Not an algae crew", value: "Better described as an all-purpose detritivore than a dedicated algae specialist. Quality Marine specifically notes they're \"not known for eating algae\" but do \"an excellent job cleaning up the detritus around the tank.\" Don't count on them to control a serious algae problem the way an Amano shrimp would.", source: "ghost-shrimp-feeding-guide" },
+        { label: "Why you don't see them", value: "This species is largely nocturnal, staying hidden among vegetation by day and emerging at night to feed. A flashlight after dark is how you actually watch them, and daytime hiding is normal rather than a warning sign in a settled tank.", source: "ghost-shrimp-feeding-guide" },
+        { label: "Supplements", value: "No dedicated supplement is required. A varied diet, mostly self-sourced scavenging plus an occasional sinking wafer with some protein and plant content built in, covers their nutritional needs, including the calcium that supports healthy molting.", source: "ghost-shrimp-feeding-guide" },
+        { label: "Tankmates", value: "It depends entirely on relative size. Ghost shrimp large enough to have reached roughly 1.5 inches are usually too big for most bettas to bother with, while smaller or juvenile shrimp are at risk. The same logic runs in reverse with smaller shrimp species, so think about size in both directions.", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "They eat each other", value: "A real and documented risk, not a rare exception. Freshly molted individuals of any species, including their own, are especially vulnerable since a new shell takes hours to days to harden. Dense hiding cover and generous, consistent feeding both measurably reduce how often it happens.", source: "ghost-shrimp-feeding-guide" },
+        { label: "Getting them into the tank", value: "Use a soft aquarium net rather than your hands, keep the shrimp in water as much as possible, and never scoop them out and drop them into different water without acclimating first. Their thin, permeable exoskeleton makes them far more sensitive to sudden change than most fish.", source: "ghost-shrimp-handling-guide" },
+        { label: "Drip acclimation", value: "A slow drip, commonly run for 1 to 2 hours, lets a shrimp adjust gradually instead of being shocked by an abrupt change, and it meaningfully reduces the risk of a failed molt or death shortly after introduction. Shrimp can't quickly regulate their internal water balance the way fish can.", source: "ghost-shrimp-handling-guide" },
+        { label: "Quarantine", value: "2 to 4 weeks in a separate tank before new shrimp join an established one, which is the standard precaution given how feeder stock is held before sale.", source: "ghost-shrimp-handling-guide" },
+        { label: "Budget", value: "Often well under $1 each in bulk as feeder stock, and roughly $1 to $3 each bought individually as pets. Core equipment runs roughly $40 to $130, and ongoing costs are minimal, since ghost shrimp scavenge a meaningful share of their own food.", source: "ghost-shrimp-cost-guide" },
+        { label: "Vet costs", value: "There's essentially no practical veterinary care available for a freshwater invertebrate this small, so husbandry and prevention do all the work here.", source: "ghost-shrimp-cost-guide" },
+        { label: "Lifespan", value: "Roughly one year on average in a home aquarium is what most sources converge on, with some individuals reaching closer to two years under good, stable conditions. Shorter than an Amano shrimp's typical 2 to 3 years.", source: "ghost-shrimp-cost-guide" },
+        { label: "Not one species", value: "The name covers several translucent Palaemon and similar species sold interchangeably, and a single bag can contain more than one. That is why care advice for them varies so much and why some individuals behave differently from others.", source: "ghost-shrimp-enrichment-guide" },
+        { label: "Breeding", value: "A 1990 laboratory study tested Palaemonetes paludosus across salinities from 0 to 35 ppt and found egg hatching and successful metamorphosis reliably limited to a 0 to 5 ppt band, so true freshwater is inside the viable window rather than excluded from it. The larvae can survive there, but the odds improve with a trace of salinity, which is why home breeding is hit-or-miss rather than reliable.", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "Whether they feel it", value: "Nothing exists on the species. The relevant evidence is the decapod sentience review, which applied an eight criterion framework to over 300 scientific publications and concluded decapod crustaceans are probably sentient. The UK then extended animal welfare law to cover them, shrimp included.", source: "ghost-shrimp-enrichment-guide" },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "A hot week", value: "Reach for room air conditioning and a fan first, treat frozen bottles as a genuine last resort rather than a daily habit, and keep the aeration running no matter what else you're doing. Warmer water holds less dissolved oxygen at the same moment the animals need more of it.", source: "cooling-an-aquarium-without-a-chiller-guide" },
       ],
     },
-    sections: {
-      housing: "A 5-gallon tank is a workable minimum for a small group, and 10 gallons gives a colony more stability and room to forage, similar to the space guidance for cherry shrimp. Ghost shrimp are far more tolerant of a wide temperature (roughly 65 to 85 degrees F) and hardness range than most other freshwater shrimp, which is a big part of why they're sold so cheaply and shipped in such bulk, though tolerant doesn't mean thriving in anything: stable, dechlorinated water and a cycled tank still matter for a shrimp meant to live its full one to two year lifespan rather than a few feeder-tank weeks. Keep pH between 6.5 and 8.0. A gentle sponge filter protects them the same way it protects cherry and Amano shrimp, and light planting gives them somewhere to retreat, though ghost shrimp are noticeably bolder and more visible during the day than most dwarf shrimp, which spend more time hidden.",
-      diet: "Ghost shrimp are true scavengers and among the least fussy eaters on this site. In a community tank they'll happily clean up uneaten flake, pellets, and biofilm, and a colony can get by on leftovers alone in a moderately stocked tank. That said, a shrimp kept as a deliberate pet rather than an afterthought does better with intentional feeding: an algae wafer every day or two for a small group, supplemented with blanched vegetables and the occasional protein source. Their scavenging habits are also exactly why they were historically sold as tank cleanup crew, long before 'cleanup crew shrimp' became its own selling point in the hobby.",
-      enrichment: "Ghost shrimp are unusually bold and active for a shrimp: rather than hiding through the day like most dwarf shrimp species, they wander openly in search of food, which makes them easy and satisfying to actually watch. Their near-total transparency is itself part of the appeal, since it's possible to see a female's developing eggs, a full digestive tract after feeding, or even a heartbeat with a careful look. Unlike [Amano shrimp](/guides/amano-shrimp/), true Palaemonetes paludosus can complete their entire life cycle in freshwater, and hobbyists have successfully bred them at home, though it's inconsistent rather than reliable: the free-swimming larvae need very fine food and are easy prey for tankmates, and shipments sold as 'ghost shrimp' sometimes mix in other Palaemonetes species that need a trace of brackish water to raise larvae successfully. Treat any breeding as a bonus rather than something to plan around.",
-      health: "Ghost shrimp are the hardiest of the shrimp on this site and tolerate a wider margin of error than cherry or Amano shrimp, but that reputation comes with a real caveat: shrimp sold cheaply and in bulk as feeders are often shipped and housed in crowded, poorly maintained tanks before they ever reach a home aquarium, so a batch that looks stressed or has early losses often reflects that history rather than anything wrong with the species itself or your setup. As with all shrimp, they're highly sensitive to copper even at levels safe for fish, so confirm any medication or fertilizer is invertebrate-safe first. If housing multiple shrimp species together, keep in mind that ghost shrimp are opportunistic and will sometimes prey on smaller or freshly molted tankmates such as young [cherry shrimp](/guides/cherry-shrimp/), particularly if the tank is underfed or overcrowded, so feed generously and provide dense cover if you're mixing species.",
-      checklist: [
-        "5-10+ gallon tank",
-        "Gentle sponge filter",
-        "Heater if room runs below 65°F",
-        "pH 6.5-8.0 (tolerates a wide hardness range, 5-15 dGH)",
-        "Light planting or hides for cover",
-        "Algae wafers and general fish food",
-        "Copper-free medications and fertilizers",
-        "Dense cover if mixing with smaller shrimp species",
-        "Buy from a source with healthy-looking stock (feeder tanks vary)",
+    emergencyCard: {
+      source: "ghost-shrimp-health-issues-guide",
+      callNow: [
+        "Lethargy, staying hidden far more than usual, and refusing food",
+        "A curled or clamped posture",
+        "Rapid unexplained losses within the group",
+        "A solid white band around the body where the shell should split at the head",
+        "Any copper-based medication or fertilizer going into the tank",
       ],
+      vetLine: "There is no practical veterinary care for a freshwater invertebrate this small, so every line above is a water test and a husbandry decision rather than a phone call. Quarantine new arrivals, confirm the tank is fully cycled before stocking, keep copper out of the water entirely, and maintain stable temperature and hardness for reliable molting. Nearly everything traces back to those four habits rather than to anything inherently fragile about the species. Some hiding in the first day or two after a move is normal; several days of refusing food or repeated deaths in the group point to a genuine problem.",
     },
+    routes: [
+      { slug: "ghost-shrimp-cost-guide", line: "Under $1 as feeder stock against $1 to $3 as a pet, and why the cheapest source is rarely the healthiest." },
+      { slug: "ghost-shrimp-tank-setup-guide", line: "5 gallons as a floor, 72 to 82F, pH 7 to 8, and the sponge filter that exists for the intake." },
+      { slug: "ghost-shrimp-feeding-guide", line: "A wafer every day or two, why they are not an algae crew, and the cannibalism nobody warns about." },
+      { slug: "ghost-shrimp-handling-guide", line: "Net rather than hands, drip for 1 to 2 hours, quarantine two to four weeks, and what stress looks like." },
+      { slug: "ghost-shrimp-health-issues-guide", line: "Copper at 0.03 mg/L, the feeder-tank history behind most early losses, and the white ring of death." },
+      { slug: "ghost-shrimp-enrichment-guide", line: "Recovery as the real enrichment, the decapod sentience review, and why one bag holds several species." },
+    ],
+    buyList: [
+      "5 gallon tank as a floor, 10 gallons for a colony",
+      "Gentle sponge filter, or a guarded intake on anything else",
+      "Heater, only if the room runs below the comfortable range",
+      "Sand or fine gravel substrate",
+      "Dense live plants, moss, wood and leaf litter",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Sinking wafer food",
+      "Copper-free medications and fertilizers, checked before they go near the tank",
+      "A separate quarantine tank for new arrivals",
+    ],
     faqs: [
-      { q: "Are ghost shrimp and glass shrimp the same thing?", a: "Usually, yes. Both names are commonly used for shrimp in the genus Palaemonetes, and the most common aquarium species, Palaemonetes paludosus, is sold under either name depending on the store. Adding to the confusion, other translucent shrimp, including whisker shrimp and occasionally young Amano shrimp, are sometimes mislabeled as ghost shrimp too. If a species label matters to you, such as for breeding, ask before buying rather than assuming the tag is precise." },
-      { q: "Why are ghost shrimp sold so cheap?", a: "Mainly hardiness and demand as feeder stock. Ghost shrimp tolerate a wider range of water conditions and rougher shipping than cherry or Amano shrimp, which makes them cheap and easy to breed and move in bulk, often well under a dollar each (sometimes 30 to 60 cents at big chain stores). A large share of that supply is sold specifically as feeders for larger predatory fish, which keeps prices low across the board, even for shrimp bought specifically to be kept as pets rather than food." },
-      { q: "Will ghost shrimp breed in my tank?", a: "Possibly, unlike Amano shrimp. True Palaemonetes paludosus can complete their whole life cycle in freshwater, and home breeding has been done successfully, but it's inconsistent rather than reliable the way cherry shrimp breeding is: the free-swimming larvae need very fine food and are easily eaten by tankmates before reaching adulthood. Treat any surviving young as a pleasant surprise rather than something to count on." },
-      { q: "Are ghost shrimp related to cherry shrimp or Amano shrimp?", a: "Not closely. Ghost shrimp belong to the genus Palaemonetes in the family Palaemonidae, while [cherry shrimp](/guides/cherry-shrimp/) and [Amano shrimp](/guides/amano-shrimp/) both belong to the unrelated family Atyidae. All three ended up on the same aquarium store shelf by convergent lifestyle, small, algae-tolerant freshwater scavengers, rather than by shared ancestry." },
-      { q: "Can ghost shrimp live with cherry shrimp?", a: "Often, but not risk-free. Ghost shrimp are generally peaceful scavengers, but they're larger than a cherry shrimp and will opportunistically eat a smaller or freshly molted one, especially in an underfed or crowded tank. Keeping the colony well fed and giving cherry shrimp dense plant cover meaningfully reduces the risk, but it isn't a guaranteed-safe pairing." },
-      { q: "How long do ghost shrimp live?", a: "About 1 to 2 years with stable water quality, though this varies a lot with history: a ghost shrimp bought as a pet from a well-maintained tank tends to live longer than one that spent time in a crowded feeder tank first. In the wild, most ghost shrimp live on a roughly one-year cycle." },
-      { q: "Are ghost shrimp good pets for beginners?", a: "Yes, genuinely one of the easiest and cheapest ways into shrimp keeping. They tolerate a wider margin of error than cherry or Amano shrimp, do real scavenging work, and are bold enough to actually watch during the day rather than hiding. The only real downside is the feeder-tank reputation; buying from a healthier-looking source than the bargain bin gives you a noticeably better start." },
+      { q: "What size tank do ghost shrimp need?", a: "5 gallons is the workable minimum according to The Shrimp Farm, and 10 gallons gives a small colony more stability and room to forage. Bigger is always more forgiving with water quality, but ghost shrimp don't demand the larger footprint some other species do." },
+      { q: "Why are ghost shrimp so sensitive to copper?", a: "Like all freshwater shrimp, their gills and exoskeleton absorb dissolved metals efficiently, and copper is toxic to them at concentrations that barely register for fish. Commonly cited safety thresholds put copper at roughly 0.03 mg/L or lower as the ceiling for invertebrates, and copper-based fish medications, some plant fertilizers, and old copper plumbing are all realistic exposure routes. Keep it as close to zero as possible and confirm any medication or fertilizer is explicitly invertebrate-safe before using it." },
+      { q: "Why does drip acclimation matter so much for shrimp specifically?", a: "Because shrimp can't quickly regulate their internal water balance the way fish can, and a permeable exoskeleton means a sudden shift in water chemistry causes real osmotic stress fast. A slow drip, commonly run for 1 to 2 hours, lets a shrimp adjust gradually instead of being shocked by an abrupt change, and it meaningfully reduces the risk of a failed molt or death shortly after introduction." },
     ],
   },
   {
