@@ -5815,3 +5815,94 @@ Checked against the Health and More list, which covers pesticides, rehousing, em
 - Hand-feeding technique for a mismolted mantis, which the health page requires and nobody explains.
 - Recapturing an escaped mantis. Rehousing covers the catch cup for a tarantula in a box, not a mantis loose in a room.
 - Water beyond misting. Whether a mantis drinks droplets, and whether a dish is ever appropriate.
+
+## Argentine Tegu (2026-09-15, batch L)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, enrichment, legal). This is the first set
+the extractor could produce for this species: its guide id is `tegu` and every
+deep dive is `argentine-tegu-*`, so before the fix the reader would have been
+handed a hub and an encyclopedia entry and nothing else.
+
+## 1. Page by page
+
+- **00 Care guide hub.** Finished it, but it is the page I trust least: actionable numbers for enclosure, temps, diet split, brumation temp. Grade C-.
+- **01 Encyclopedia.** Short, read it all. Actionable: scientific name, size range, the Florida invasion history and the 2021 date. Grade B.
+- **02 Cost guide.** Finished. Actionable: animal price by morph, vet exam and emergency ranges, monthly range, the warning that the priced enclosure is not the enclosure I need. Grade B-.
+- **03 Handling guide.** Finished easily, best-sourced page here. Actionable: stress signals, approach from the side, two handlers for an adult, bite protocol, brumation stops handling. Grade A-.
+- **04 Health issues.** Finished, but it says the same three things three times. Actionable: symptom lists per condition, prolapse is an emergency. No numbers, no feeding schedule. Grade C+.
+- **05 Enclosure setup.** Finished. The most buildable page: sizes, 100 to 115F, 70 to 80% humidity, 12 to 18in substrate, 46in T5 HO 12 to 14%, UVI 3.0 to 4.0, 12 to 14 hour photoperiod. Grade A-.
+- **06 Enrichment.** Finished, and the opening admission bought a lot of goodwill. Actionable: priority order, puzzle feeding, target training, big soak tub. Grade A.
+- **07 Legal.** Finished. Actionable: Florida dates, the closed grandfather window, the 2025 caging rule, other states. Undercut by contradicting itself. Grade B-.
+
+(Note: "10 Surprising Argentine Tegu Facts" is in the sidebar on every page but was not in the folder, so I could not read it.)
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: taxonomy, describer, the Merian naming, the Florida spread. Nothing in it repeats a deep dive.
+
+The hub does not. It is a lower-resolution copy of the setup, enrichment and health guides, and where it differs it is wrong:
+
+- Substrate. Hub: "Substrate of 4 to 6 inches minimum is needed for natural burrowing behavior." Setup: "Deep, 12 to 18 inches or more." The enrichment guide calls depth "the largest single enclosure choice for the species." The hub checklist repeats "4 to 6 inch substrate" and its cost table prices "Substrate (4-6 in soil/sand mix) $60 to $120." That is a third of what the other pages demand.
+- Substrate type and humidity. Hub: "A 50/50 mix of organic topsoil and play sand works well." Setup: "70 to 80%" humidity held with "cypress mulch, coconut fiber, organic topsoil" and warns to "Avoid dry, dusty substrate." The hub never states a humidity figure at all, and prices no misting system.
+- Brumation, necessary or not. Hub: brumation "is a natural and necessary part of tegu biology" and "Do not try to prevent or interrupt brumation." Handling: "Brumation isn't required for a non-breeding pet tegu, and skipping it isn't harmful."
+- Brumation length. Hub FAQ: "lasting 3 to 5 months." Handling and setup both say "2 to 4 months."
+- Temperatures. Hub: basking "100 to 110 degrees F or higher", warm side "85 to 90", cool "75 to 80". Setup: "Basking area 100 to 115F, warm ambient in the 90s, cool side around 80F."
+- Cost. Hub setup table tops out near $1,640 and omits the animal. Cost guide: "Often exceeding $1,000 to $3,000."
+- Legality. The hub, the page navigation lands on first, never mentions that Florida banned acquisition in 2021. The cost guide treats that as the first thing to know.
+
+## 3. The set as a whole
+
+I could build the enclosure, buy the animal outside Florida, and know what illness looks like. I could not confidently feed it. Nothing anywhere gives a feeding frequency or portion by age, yet the health guide blames obesity on "continuing a juvenile feeding schedule into adulthood" and prescribes "an appropriate feeding schedule for an adult's actual needs" without ever stating one. Also missing: how to pick a breeder and a healthy animal, how to lift and support a 15lb lizard, how to tegu-proof a room for the daily free roam every page assumes, how to run the brumation ramp-down, and what an 8x4x4 DIY build actually costs.
+
+Questions raised on one page and answered on another, unsignposted:
+- Health guide's MBD section never names a UVB spec; the setup guide has the bulb and the UVI target.
+- Health guide's respiratory section says temperature and humidity are "harder to get right at this size"; the setup guide has the actual numbers.
+- Handling guide says the brumation season closes handling; the setup guide is where you learn the substrate has to be deep enough for the burrow.
+- Cost guide says an adult tegu is hard to transport to a vet; nothing points to the emergency plan guide in the sidebar.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: the 8x4x4 minimum, the "ready made 8ft PVC is actually 8x2x2" caveat (near verbatim in the cost and setup guides), the 2 to 4 month brumation (handling, setup, enrichment), substrate depth (setup, enrichment, cost), and the dog comparison (hub, handling, enrichment).
+
+Real conflicts:
+- Bowl feeding. Handling: "LafeberVet's prevention: feed from a bowl or with tongs." Enrichment: "Do not bowl-feed an animal this investigative."
+- Taxonomy. Hub FAQ: "Tegus (family Teiidae) are New World lizards... monitor lizards... belong to a completely separate Old World family (Varanidae)." Cost guide: "the savannah monitor cost guide for that other large monitor family lizard." Setup guide: "just as with the savannah monitor, another large monitor family lizard." The enrichment guide's entire argument is that they are not.
+- Lifespan. Hub and encyclopedia: "15 to 20 years." Cost guide: "documented living past 30 years old under excellent care." The hub FAQ presents 15 to 20 as the whole answer.
+- Legal scope. Legal guide opening: "most states don't mention them in their wildlife codes at all. What they have is a very specific, very real Florida problem." Same page, lower: "This guide focuses specifically on Florida's restriction because it's the one fully documented, verified rule we found." Its own table lists Georgia, Alabama, Louisiana, Hawaii, DC and NYC as bans. The FAQ "Are tegus restricted anywhere else in the US?" answers with no ban anywhere else.
+- Size. Hub: males "3.5 to 4.5 feet, with some exceeding 5 feet." Encyclopedia: "3-5 feet." Handling: "up to 5.2 feet and 11 pounds" versus "up to 5 feet and 15 pounds." The handling guide names its sources and is the only one that admits the spread.
+
+## 5. One link per page
+
+- **Hub.** "Substrate of 4 to 6 inches minimum is needed for natural burrowing behavior." Point it at the enclosure setup guide, and fix the number while you are there.
+- **Encyclopedia.** "On April 29, 2021 the Florida Fish and Wildlife Conservation Commission added the genera Salvator and Tupinambis to its prohibited list." Point it at the legal guide.
+- **Cost guide.** "True adult sized housing at this species' scale is typically a DIY build or ordered direct from a manufacturer." It currently links to the savannah monitor cost guide. It should link to the tegu enclosure setup guide.
+- **Handling.** "Not washing hands before and after handling, Salmonella risk applies here as with most reptiles." Point it at Salmonella and Reptile Hygiene.
+- **Health.** "Caused by inadequate UVB or insufficient calcium and vitamin D3." Point it at the enclosure setup guide, which is the only page with a bulb and a UVI target.
+- **Setup.** "run through a real heavy duty thermostat rated for the wattage a setup this size actually draws." Point it at Reptile Heating and Thermostats.
+- **Enrichment.** "Do not let enrichment distract from basking temperatures and UVB, which outrank all of it." Point it at the enclosure setup guide.
+- **Legal.** Needs none. Its four links already go where I would want to go.
+
+## 6. Trust
+
+What hurt: calling a teiid a "monitor family lizard" twice on a site whose own FAQ corrects that; the hub's substrate and brumation numbers fighting the deep dives; the legal guide's state table rendered under a "Date | What Happened" header with states jammed into it; and the cost guide pricing an 8x2x2 enclosure in the table after telling me it is not the enclosure I need.
+
+What convinced me a keeper wrote it, one sentence, from the enrichment guide: "a tegu will work sliders and lift-out plugs, which is exactly what a bearded dragon will not do." Runner-up, handling: "A burrow counts as a hide, so leave it."
+
+## 7. Set grade: B-
+
+Three of the deep dives are genuinely good, and the hub that everyone lands on first contradicts them on the two decisions that cost the most money.
+
+First two changes:
+1. Rewrite the hub from the setup, handling and enrichment guides: 12 to 18in substrate, a humidity figure, moisture-retentive mix, 2 to 4 month brumation described as normal rather than mandatory, and one line saying tegus cannot be legally acquired in Florida.
+2. Add a feeding schedule with frequency and portions by age, on the hub and in the health guide, and settle bowl versus tongs versus puzzle so handling and enrichment stop disagreeing.
+
+## Not covered anywhere
+
+- Feeding frequency and portion size by age, the exact thing the health guide blames obesity on.
+- How to choose a breeder and assess a healthy captive-bred juvenile at purchase.
+- Lifting and supporting technique for an adult, beyond "two people."
+- How to tegu-proof a room for the daily free roam every page assumes.
+- Brumation ramp-down protocol: fasting first, acceptable weight loss, how to bring one back up.
+- What an actual 8x4x4 DIY or custom build costs, the number the cost guide says I need and never prices.
+- Sexing, and whether sex should change my enclosure or budget plan.

@@ -12821,3 +12821,144 @@ guide that is body-linked from two pages: sexing a mantis, an enclosure cleaning
 schedule, culturing feeder insects including the bottle fly pupae the old hub
 said you hatch at home, hand-feeding a mismolted mantis, and recapturing an
 escaped one. All filed in docs/READER_LOG.md.
+
+## Argentine Tegu (2026-09-15, batch L, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 92k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C- | The page I trust least. |
+| Encyclopedia | B | Scientific name, size range, the Florida invasion history and the 2021 date. |
+| Cost | B- | Animal price by morph, vet ranges, and the warning that the priced enclosure is not the one I need. |
+| Handling | A- | Best-sourced page here: stress signals, approach from the side, two handlers, bite protocol. |
+| Health issues | C+ | Says the same three things three times. No numbers, no feeding schedule. |
+| Tank setup | A- | The most buildable page in the set. |
+| Enrichment | A | The opening admission bought a lot of goodwill. |
+| Legal | B- | Florida dates, the closed window, the 2025 caging rule. Undercut by contradicting itself. |
+
+Set grade: B-. "Three of the deep dives are genuinely good, and the hub that
+everyone lands on first contradicts them on the two decisions that cost the most
+money."
+
+This set nearly did not get read at all, and that is the finding worth recording
+first. The tegu hub's guide id is `tegu`; every one of its deep dives is
+`argentine-tegu-*`. Both scripts/reader-extract.mjs and
+scripts/check-species-numbers.mjs matched a species' own articles by slug
+prefix, so both handed back a hub and an encyclopedia entry and nothing else.
+The numbers checker had been reporting four advisory groups on a species whose
+hub turns out to disagree with five deep dives, and it reported them clean
+because it could not see the deep dives. Both scripts now also accept an article
+whose slug ends in a standard suffix and whose base name and the guide id
+contain one another. Page counts are unchanged for praying mantis, ball python,
+rosy boa, goldfish, molly, koi and bearded dragon. This is the second class of
+silent blind spot the extractor has had, after the goldfish myth page, and both
+were found by a reader rather than by a check.
+
+The taxonomy error, which is the sharpest thing in the set. The tank setup guide
+called the savannah monitor "another large monitor family lizard needing a
+similarly sized enclosure" and the cost guide called it "that other large
+monitor family lizard," on a site whose own hub FAQ says plainly that tegus
+"(family Teiidae) are New World lizards" while monitors "belong to a completely
+separate Old World family (Varanidae)," and whose enrichment guide is built
+around borrowing varanid evidence honestly *because* they are not related. Both
+sentences now describe the savannah monitor as a lizard of comparable size from
+a different family, which is the actual reason the comparison is worth making.
+
+The feeding gap, which was the reader's second requested change and the one that
+made the health guide incoherent. That page blames obesity on "continuing a
+juvenile feeding schedule into adulthood" and prescribes "an appropriate feeding
+schedule for an adult's actual needs" without stating one, anywhere in eight
+pages. LafeberVet's tegu care sheet, which the handling guide already cites,
+gives it directly: "Young tegus should be fed every day. Tegus between 1-3 years
+old should be fed every other day and once they exceed 3 years of age, tegus can
+be fed every 3 days," alongside "Adult tegus are prone to obesity. Monitor body
+weight regularly and provide sufficient time and room for exercise" and the
+supplement schedule, calcium without D3 at every meal and a multivitamin weekly,
+which "do not vary with age." That is now a sourced Diet Basics section in the
+tank setup guide, the standing move for a species with no feeding guide, and the
+health guide's obesity section carries the schedule instead of gesturing at one.
+
+Bowl feeding, where two deep dives read as contradicting each other and turned
+out to be answering different questions. Handling had LafeberVet's "feed from a
+bowl or with tongs"; enrichment had "Do not bowl-feed an animal this
+investigative." LafeberVet's full sentence is about bite prevention, "Prevent
+accidental bites from your hungry lizard by feeding from a bowl or with tongs,"
+with a separate paper-lined feeding enclosure offered as a third option. The
+rule is that nothing goes from your hand. A bowl, tongs, a puzzle feeder and a
+separate feeding container all satisfy it, and the enrichment guide's objection
+is to a bowl being the only way the animal ever meets food. Both pages now say
+that, and neither has to lose.
+
+The legal guide's contradiction, which was a structural accident rather than a
+disagreement. Nine jurisdiction rows, each with three cells, had been appended
+into the Florida *timeline* table, which has two columns headed "Date" and "What
+Happened." The reader saw states jammed under a date header, and the page's
+prose had never been updated to match: the intro still said Florida was the
+whole story, the "What About Other States?" section still said Florida is "the
+one fully documented, verified rule we found," and the FAQ asking whether tegus
+are restricted anywhere else answered that there is no nationwide ban and said
+nothing about the nine. The rows now sit in their own table under that section,
+with a paragraph that splits them three ways, ban, permit, and source-dependent,
+and the FAQ and intro both name them. Alabama gets called out specifically
+because it bans at genus level, so a buyer checking only for "Argentine" misses
+that a Colombian tegu is caught too.
+
+The hub itself, where every figure lost. Substrate at "4 to 6 inches minimum"
+against 12 to 18 inches or more, and priced to match at $60 to $120, on a species
+whose enrichment guide calls depth "the largest single enclosure choice."
+Brumation as "a natural and necessary part of tegu biology" you must not
+"prevent or interrupt," against the handling guide's "isn't required for a
+non-breeding pet tegu, and skipping it isn't harmful," at 3 to 5 months against
+2 to 4 on two deep dives. A thermostat at $40 to $70 against the cost guide's $17
+to $23, UVB at $80 to $120 against $65 to $75, a vet check at $70 to $120 against
+a $50 to $135 exam, and a setup table topping out near $1,640 on a page whose own
+cost guide says the build "often exceeds $1,000 to $3,000." It also gave no
+humidity figure at all while blaming husbandry for respiratory infection, and
+never mentioned Florida, which the cost guide treats as the first thing a buyer
+needs to know. The router hub opens on the law for that reason.
+
+Adult size goes to the handling guide rather than the hub, because it is the only
+page that names its sources and the gap between them: LafeberVet at up to 5.2
+feet and 11 pounds, ReptiFiles at up to 5 feet and 15 pounds. The hub's own
+3.5 to 4.5 for males and 2.5 to 3.5 for females had nothing behind it.
+
+The four shared reptile rows on the new hub were drafted from memory and then
+checked against the guides they cite, which caught three wrong ones: a quarantine
+row that invented "long enough to see a full feeding and shedding cycle" where
+the guide gives Merck's 3 to 6 months, a thermostat row that had the probe advice
+roughly right but not the guide's actual rule about probe placement, and an
+emergency row that gave no figure where the guide has one. Worth keeping as a
+habit: a shared-guide row is copied, not recalled.
+
+Links: 6 added. Setup to the heating and thermostats guide on the thermostat
+sentence, health to setup on the MBD UVB spec, handling to the Salmonella guide,
+enrichment to setup on the basking and UVB line that outranks enrichment, and
+cost to setup on the DIY build sentence that previously pointed only at a
+different species. That is the reader's list, minus its hub and encyclopedia
+entries, which the router hub covers.
+
+One product went stranded when the hub's cost table retired: the high-wattage
+basking fixture was reachable only through that table. It now sits on the cost
+guide's "Basking and radiant heat sources" row, in the table rather than in
+prose, because the setup guide was already at the five inline-link cap.
+Reachability is back to 234 of 269.
+
+Dates: cost, handling, health issues, legal and tank setup bumped to 2026-09-15.
+Enrichment changed one link only.
+
+Not fixed, recorded: LafeberVet gives a smaller enclosure minimum, 6ft x 3ft x
+3ft, and a cooler basking range, 95 to 100F, than the setup guide's 8x4x4 and 100
+to 115F. The two deep dives agree with each other and the reader graded that page
+A-, so the figures stand on this pass, but a vet-tier source sitting below the
+site's own numbers on both is worth a deliberate decision rather than a quiet
+edit. Also recorded: `argentine-tegus-are-not-venomous.mdx` carries two
+pre-existing voice errors that predate this pass.
+
+Gaps, checked against the Health and More list, which for this species covers
+emergencies, stool and hydration, Salmonella, thermostats, quarantine, outdoor
+housing and shedding: how to choose a breeder and assess a healthy juvenile,
+lifting and supporting an adult beyond "two people," tegu-proofing a room for the
+free roam every page assumes, the brumation ramp-down protocol, what an 8x4x4 DIY
+build actually costs, and sexing. All filed in docs/READER_LOG.md.

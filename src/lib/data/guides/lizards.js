@@ -106,70 +106,115 @@ export const lizardGuides = [
   {
     id: "tegu",
     name: "Argentine Black and White Tegu",
-    emoji: "🦎",
+    emoji: "\u{1F98E}",
     difficulty: "Advanced",
     petType: "Lizards",
     image: "/assets/guides/tegu.jpg",
     tagline: "The dog-like mega-lizard that can learn its own name!",
     funFact: "Tegus are one of the only reptiles known to have near-endothermic (warm-blooded) properties. During breeding season, their body temperature rises above ambient temperatures!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Adult housing is often custom-built; setup range reflects that.
-    costs: {
-      setup: [
-        { item: "8x4x4 ft+ custom enclosure or room", low: 500, high: 1200 },
-        { item: "High-wattage basking setup", low: 40, high: 70 },
-        { item: "Strong desert UVB (T5 HO 12%+)", low: 80, high: 120 },
-        { item: "Substrate (4-6 in soil/sand mix)", low: 60, high: 120 },
-        { item: "Large water tub for soaking", low: 30, high: 60 },
-        { item: "Quality thermostat", low: 40, high: 70 },
-      ],
-      annual: [
-        { item: "Whole prey and varied diet (rats, eggs, protein)", low: 250, high: 450 },
-        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
-        { item: "UVB bulb replacement", low: 80, high: 120 },
-        { item: "Electricity (high-wattage basking)", low: 120, high: 220 },
-        { item: "Annual vet wellness check", low: 70, high: 120 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the handling
+    // guide, which is the only page that names its sources and the spread
+    // between them. Salmonella, thermostats, stool and hydration, quarantine
+    // and the emergency plan cite the shared reptile guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the tegu set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The old hub said in its own comment that its pricing was unverified,
+    // and the reader graded it C-: "a lower resolution copy of the setup,
+    // enrichment and health guides, and where it differs it is wrong."
+    // Retired rather than moved: "Substrate of 4 to 6 inches minimum"
+    // against the setup guide's 12 to 18 inches or more, which the
+    // enrichment guide calls "the largest single enclosure choice for the
+    // species", a third of what the deep dives demand and priced to match at
+    // $60 to $120; brumation as "a natural and necessary part of tegu
+    // biology" that you must not "prevent or interrupt", where the handling
+    // guide says it "isn't required for a non-breeding pet tegu, and
+    // skipping it isn't harmful"; a brumation length of 3 to 5 months
+    // against 2 to 4 on two deep dives; basking at "100 to 110 degrees F or
+    // higher" against 100 to 115; a warm side of 85 to 90 against ambient in
+    // the 90s; a thermostat at $40 to $70 against the cost guide's $17 to
+    // $23; a UVB line at $80 to $120 against $65 to $75; a vet check at $70
+    // to $120 against a $50 to $135 exam; and a setup table topping out near
+    // $1,640 on a page whose own cost guide says the build "often exceeds
+    // $1,000 to $3,000". The hub also never gave a humidity figure while
+    // blaming husbandry for respiratory infection, and never mentioned that
+    // Florida banned acquisition in 2021, which the cost guide treats as the
+    // first thing a buyer needs to know. All of that is now sourced to a
+    // deep dive or gone.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Check the law first", value: "Since April 29, 2021, new acquisition of a pet tegu has been banned outright in Florida under the state's Prohibited species list, and the grandfather window closed on July 28, 2021. Georgia, Alabama, Louisiana, Hawaii, the District of Columbia and New York City ban one as a pet, New Mexico requires an import permit, New Jersey a permit under a closed-list code, and Minnesota allows one only from a permitted breeder. Alabama bans at genus level, so a Colombian tegu is caught too.", source: "argentine-tegu-legal-guide" },
+        { label: "Enclosure size", value: "8 feet by 4 feet by 4 feet is the minimum for an adult male, with females needing somewhat less but still substantial space. Many experienced keepers aim for 10 feet by 5 feet by 5 feet or, where possible, a dedicated reptile room. Hatchlings can start in something smaller, around 40 gallons, but grow fast enough that rehousing within the first year is standard.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "The enclosure you can actually buy", value: "A ready made 8ft PVC modular enclosure is actually 8x2x2ft, a partial match on length only, well short of the full 8x4x4ft footprint an adult tegu needs. True adult sized housing for this species is typically a DIY build or ordered direct from a manufacturer.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Temperature", value: "Basking area 100 to 115F, warm ambient in the 90s, cool side around 80F, with nighttime allowed to drop to 65F without triggering brumation. This species needs a powerful heat source, a cluster of basking bulbs, a radiant heat panel, or both, run through a real heavy duty thermostat rated for the wattage a setup this size actually draws.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Humidity", value: "70 to 80%, maintained through deep, moisture retentive substrate, live plants in a bioactive style setup, a large water tub, and often an automatic misting system. Manually misting an 8 foot enclosure consistently isn't realistic for most keepers.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Substrate depth", value: "Deep, 12 to 18 inches or more, of an absorbent, burrow supporting mix: cypress mulch, coconut fiber, organic topsoil, or a bioactive blend. Reaching that depth across an 8 by 4 foot floor takes considerably more than a pack or two. Avoid dry, dusty substrate that doesn't hold a burrow shape.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Why the depth", value: "Tegus dig, extensively, and will build a burrow they sleep in and brumate in. Depth is the largest single enclosure choice for the species, and a shallow layer is just bedding.", source: "argentine-tegu-enrichment-guide" },
+        { label: "UVB", value: "Strong UVB is required. For an enclosure this large, a 46 inch T5 HO bulb in the 12 to 14% range, spanning a quarter to half the enclosure's length on the warm side, targeting a basking area UVI of 3.0 to 4.0. Add a 6500K LED for brightness and to support live plants. Run a 12 to 14 hour photoperiod.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Feeding frequency", value: "Set by age rather than by size. Feed a young tegu every day. From one to three years old, every other day. Past three years, every third day. Adult tegus are prone to obesity, so weigh yours regularly and give it the room and the time to move.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Diet", value: "Young tegus are primarily insectivorous, then the protein moves to appropriately sized pre-killed or frozen-thawed rodents. Live rodents are not worth the injury risk. Lean ground meat, fish and raw eggs are occasional treats. Offer a variety of vegetables alongside smaller amounts of fruit, and expect fruit to matter more as the animal ages.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Supplements", value: "A calcium supplement without D3 goes on or in every meal, and a multivitamin once a week. That does not change with age.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Never from your hand", value: "A hungry tegu is a voracious feeder and will not distinguish a finger from the food, so use a bowl, tongs, a puzzle feeder, or a separate paper-lined feeding container, which has the added effect of teaching the animal that its usual enclosure is not where food appears.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Puzzle feeding", value: "A container with visible food that has to be opened, food under a moveable object, food buried in a new spot. A tegu will work sliders and lift-out plugs, which is exactly what a bearded dragon will not do.", source: "argentine-tegu-enrichment-guide" },
+        { label: "A soak big enough to get into", value: "Tegus soak readily, and a container large enough to fully enter supports hydration and shedding. It is genuinely passive: you provide it, the animal decides. Larger tubs are worth it for an adult.", source: "argentine-tegu-enrichment-guide" },
+        { label: "Adult size", value: "LafeberVet's care sheet puts an adult Argentine at up to 5.2 feet and 11 pounds, ReptiFiles at up to 5 feet and 15 pounds. No source names a cutoff length for handling, and the nearest rule, one handler per 3 to 4 feet, puts a full-grown Argentine past it: two people for any job that needs it held still.", source: "argentine-tegu-handling-guide" },
+        { label: "Handling, the honest version", value: "The dog-like temperament is real and it is earned, not automatic. Tegus need regular, supervised handling and free roam time to develop and keep it. Skip that socialization and you get a considerably more defensive animal instead, and a bite from an animal this size is powerful.", source: "argentine-tegu-handling-guide" },
+        { label: "Approach", value: "From the side, never from above, and never disturb one in its hide. Hatchlings at 7 to 10 inches read anything swooping down as a predator and are more likely to run than bite. On frequency, LafeberVet says daily and ReptiFiles says short and frequent.", source: "argentine-tegu-handling-guide" },
+        { label: "Tail autotomy", value: "Unlike monitors, tegus can drop their tails as a defense mechanism, which surprises keepers coming from a savannah monitor. It matters most with flighty subadults or a newly acquired animal that hasn't settled.", source: "argentine-tegu-handling-guide" },
+        { label: "Brumation", value: "Argentine tegus slow down, eat less, and burrow for roughly 2 to 4 months during cooler periods, even when kept as pets indoors, triggered by shortening day length and changes in humidity and pressure rather than temperature alone. It isn't required for a non-breeding pet tegu and skipping it isn't harmful, though many keepers find allowing it improves feeding response afterward. For handling, that season is closed: a burrow counts as a hide, so leave it.", source: "argentine-tegu-handling-guide" },
+        { label: "Budget, the animal", value: "Standard black and white tegus, along with blue and Chacoan morphs, typically run $200 to $500. Rare designer morphs, albino, high white, and various patterned lines, push considerably higher, $700 to $1,200 or more for the rarest combinations.", source: "argentine-tegu-cost-guide" },
+        { label: "Budget, the setup", value: "Often exceeding $1,000 to $3,000. The adult enclosure alone is custom built at 8 by 4 by 4 feet minimum and routinely runs into the thousands, then add powerful basking and radiant heat, a 46 inch high output UVB fixture, and enough substrate for 12 to 18 inches of depth.", source: "argentine-tegu-cost-guide" },
+        { label: "Ongoing costs", value: "Roughly $40 to $100 or more a month. A varied omnivore diet, rodents, insects, eggs, ground meats, fruit, and vegetables, plus meaningful electricity for heating and lighting a large enclosure.", source: "argentine-tegu-cost-guide" },
+        { label: "Vet costs", value: "A routine exotic exam runs $50 to $135, with emergency visits starting around $150 to $300 before diagnostics. An adult tegu's size makes transport to a vet logistically difficult, so establish a relationship with a reptile vet early, before you need one urgently.", source: "argentine-tegu-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years is typical, with some individuals documented living past 30 under excellent care. Combined with the setup cost, this is a genuinely serious, multi-decade financial and space commitment.", source: "argentine-tegu-cost-guide" },
+        { label: "Salmonella", value: "A completely healthy-looking reptile can carry and shed Salmonella with no outward sign, and the route is hands and surfaces to mouth rather than bites. Never clean the enclosure, water dish or any equipment in a kitchen sink or a bathtub people also use. Children younger than 5 should not handle or touch reptiles or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Thermostat", value: "The probe goes at the animal's level, never taped to the back of a heat mat and never left up near the fixture reading room air. A basic on/off unit suits a mat; a basking bulb or radiant heat panel benefits from a pulse proportional or dimming controller, which holds a steadier output instead of swinging fully on and off.", source: "reptile-heating-thermostats-guide" },
+        { label: "Quarantine", value: "Longer than the two to four weeks that gets repeated informally: the Merck Veterinary Manual recommends 3 to 6 months for a new reptile. A bare enclosure on plain paper towel, so mites and abnormal stool show against a blank background, with dedicated tools and the quarantined animal serviced last, after every other animal.", source: "reptile-quarantine-guide" },
+        { label: "Power outage", value: "A healthy adult in most commonly kept species tolerates a few hours to one cool night without real harm. The risk climbs with time, not with a single cold hour: a day or two below the species' normal nighttime low is when cold stress and secondary respiratory infection become a real concern.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `Argentine black and white tegus are among the largest lizards kept as pets and require enclosures that reflect their impressive size. Adults typically reach 3.5 to 4.5 ft for males and 2.5 to 3.5 ft for females, with some males exceeding 5 ft. The minimum enclosure for an adult is 8x4x4 ft, and many dedicated keepers build entire rooms for their tegus - a converted bedroom or large wooden enclosure the size of a garden shed.
-
-A very hot basking spot of 100 to 110 degrees F or higher is required at the surface. Tegus are from the subtropical and tropical regions of South America and require intense heat for digestion and immune function. The ambient warm side should be 85 to 90 degrees F and the cool side 75 to 80 degrees F. Strong desert UVB (T5 HO Arcadia Dragon 12%) is mandatory.
-
-Substrate of 4 to 6 inches minimum is needed for natural burrowing behavior. A 50/50 mix of organic topsoil and play sand works well, as does a commercial reptile bedding mix. Tegus burrow extensively and need substrate they can actually dig into.
-
-Brumation - a winter dormancy period lasting several months - is a natural and necessary part of tegu biology. Beginning in autumn, tegus slow down, stop eating, and eventually become largely inactive. Provide a cool (55 to 65 degrees F), dark brumation space, or allow them to burrow in their enclosure. Do not try to prevent or interrupt brumation; forced wakefulness causes significant health problems.`,
-      diet: `Argentine tegus are true omnivores with a wide-ranging diet that changes with age. Juveniles and young adults eat primarily animal protein: whole prey items like appropriately sized rats and chicks, organ meats (heart, liver), lean ground turkey, and eggs. As tegus mature, plant matter becomes an increasingly important part of the diet - mature adults may be 40 to 60% plant-based in the warmer months.
-
-Whole prey items are ideal for the protein component: rats (frozen/thawed), quail eggs, raw whole chicken or turkey pieces, and shrimp provide nutritional variety. Eggs - especially raw scrambled or hard-boiled - are an excellent regular protein source. Avoid exclusively feeding one prey type.
-
-Plant matter includes dark leafy greens (collard, mustard, dandelion greens), squash, berries (in moderation), and seasonal fruits as treats. Do not over-supplement with fruit, which is high in sugar. Supplement all food with calcium w/D3 and a reptile multivitamin on a regular schedule.
-
-Never feed dog or cat food as a staple - the preservatives, artificial additives, and non-nutritional fillers are inappropriate for tegus despite the protein content. Fresh water must always be available in a large tub they can soak in.`,
-      enrichment: `Argentine tegus are often described as the most dog-like of all reptiles - and this is not hyperbole. Well-socialized adult tegus recognize their names, come when called, follow their keepers around the house, seek out physical contact, and form genuine bonds over time. They are some of the most cognitively sophisticated reptiles accessible to hobbyists.
-
-Provide supervised free-roaming time daily in a tegu-proofed area. Tegus explore confidently, investigate novel objects with their tongues, and interact with household pets (under supervision) and family members. Puzzle feeders, hiding food in different locations, introducing novel safe objects, and training sessions - where the tegu learns to touch a target stick for food rewards - are all excellent enrichment.
-
-Handling from a young age produces the most socialized adults. Juvenile tegus can be fast and defensive. Consistent calm handling sessions, even short ones, over weeks and months produce remarkable results. Adult tegus that have been consistently handled are generally very calm large animals.
-
-Brumation period enrichment means preparing an appropriate cool, dark space and respecting the natural dormancy. Do not disturb a brumating tegu unnecessarily. Check on the animal briefly every 1 to 2 weeks to confirm it is alive and healthy, and offer water occasionally, but do not force feeding or activity.`,
-      health: `Inadequate enclosure size is the most common welfare problem in tegus. A tegu kept in a small enclosure cannot properly thermoregulate, cannot exercise, and cannot express natural behavior - this leads to physical and psychological deterioration. If you cannot provide an 8x4x4 ft or larger adult setup, a tegu is not the right animal for your situation.
-
-Metabolic Bone Disease from inadequate UVB or calcium is less common in tegus than in some other species when husbandry is correct, but still possible. Strong UVB and consistent supplementation prevent it.
-
-Parasites - particularly internal parasites - are common in tegus, especially those sourced from unknown backgrounds or import chains. Annual fecal exams with a reptile vet are recommended. Tegus sourced from reputable captive breeders typically have fewer parasite issues.
-
-These are powerful animals. A tame adult tegu can still cause injury unintentionally - their claws and tail are strong. Approach with confidence, never fear, and never force interactions. A veterinarian with large lizard experience is an essential part of responsible tegu ownership. Annual wellness checks are strongly recommended for all adult tegus.`,
-      checklist: ["8x4x4 ft+ custom enclosure or room", "Very hot basking spot (100 to 110 degrees F+)", "Strong desert UVB (T5 HO 12%+)", "4 to 6 inch substrate (soil/sand mix)", "Large water tub for soaking", "Quality thermostat", "Whole prey and varied diet", "Calcium and multivitamin", "Enrichment objects and puzzle feeders", "Brumation space (cool, dark area)"],
+    emergencyCard: {
+      source: "argentine-tegu-health-issues-guide",
+      callNow: [
+        "Weakness, decreased appetite, swollen joints or legs, tremors, or soft or fractured bones",
+        "Lethargy, appetite loss, nasal discharge, or open mouth breathing",
+        "Any tissue protruding from the vent, which is an emergency",
+        "Retained shed around the toes or tail tip that does not clear on the next cycle",
+        "A visible, sustained gain in body condition on an adult, which this species is prone to",
+      ],
+      vetLine: "Weak UVB and calcium cause MBD, especially consequential given how fast and large this species grows. Poor temperature or humidity control, harder to maintain consistently in a large enclosure, causes respiratory infection. And continuing a juvenile feeding schedule into adulthood causes the obesity that's common in this species. An adult tegu's size makes emergency transport genuinely difficult, so find a reptile vet before you need one.",
     },
+    routes: [
+      { slug: "argentine-tegu-legal-guide", line: "Florida's prohibited list with the dates, the closed grandfather window, and the eight other jurisdictions that ban or gate one." },
+      { slug: "argentine-tegu-cost-guide", line: "$200 to $500 for the animal, a build that often exceeds $1,000 to $3,000, and why the enclosure you can buy is not the one you need." },
+      { slug: "argentine-tegu-tank-setup-guide", line: "8x4x4 as a floor, 100 to 115F basking, 70 to 80% humidity, 12 to 18 inches of substrate, and the feeding schedule by age." },
+      { slug: "argentine-tegu-handling-guide", line: "Why the dog comparison is earned rather than marketing, reading a tegu by its size, the bite protocol, and the season handling stops." },
+      { slug: "argentine-tegu-health-issues-guide", line: "MBD, respiratory infection, parasites and the obesity this species is genuinely prone to, with what each one looks like." },
+      { slug: "argentine-tegu-enrichment-guide", line: "Borrowed monitor problem-solving evidence handled honestly, substrate depth as the biggest decision, and puzzle feeding a lizard that will actually work one." },
+    ],
+    buyList: [
+      "8x4x4ft enclosure at minimum, DIY built or ordered direct from a manufacturer",
+      "Cluster of basking bulbs or a radiant heat panel, sized to the enclosure",
+      "Heavy duty thermostat rated for that wattage",
+      "46 inch T5 HO UVB tube in the 12 to 14% range",
+      "6500K LED for brightness and live plants",
+      "Enough cypress mulch, coconut fiber or organic topsoil for 12 to 18 inches across an 8 by 4 foot floor",
+      "Automatic misting system or fogger",
+      "Water tub large enough for an adult to fully enter",
+      "Hides at both ends of the temperature gradient",
+      "Extraction puzzle board",
+      "Clicker and target stick",
+      "Calcium without D3, plus a reptile multivitamin",
+      "Digital thermometer and hygrometer",
+    ],
     faqs: [
-      { q: "Are tegus really like dogs?", a: "In many meaningful ways, yes. Well-socialized tegus recognize and respond to their names, come when called, follow their keepers around, seek physical contact, and form genuine bonds that deepen over years. They are widely regarded as the most dog-like reptile accessible to hobbyists. This intelligence also means they require enrichment, space, and interaction to thrive." },
-      { q: "What is brumation and do tegus need it?", a: "Brumation is a natural winter dormancy period lasting 3 to 5 months, typically beginning in autumn. Tegus slow dramatically, stop eating, and become largely inactive. This is normal and essential biology - do not attempt to prevent or interrupt it. Provide a cool (55 to 65 degrees F), dark space for brumation. Forced wakefulness during this period causes significant stress and health problems." },
-      { q: "How big do tegus get?", a: "Argentine black and white tegu males typically reach 3.5 to 4.5 feet, with some exceeding 5 feet. Females are 2.5 to 3.5 feet. They are powerfully muscled animals - an adult male tegu is a substantial animal requiring an 8x4x4 ft minimum enclosure, and many experienced keepers convert entire rooms to accommodate them properly." },
-      { q: "What do tegus eat?", a: "True omnivores with age-dependent ratios. Juveniles eat primarily animal protein: whole prey (rats, quail, chicks), organ meats, raw eggs, and lean ground turkey. As they mature, plant matter becomes increasingly important - adults may be 40 to 60% plant-based during the warmer months. Eggs are an excellent regular protein source at any age. Avoid dog or cat food as a staple." },
-      { q: "How long do tegus live?", a: "15 to 20 years with appropriate care, proper diet, adequate housing, and annual wellness veterinary checks. A tegu is a multi-decade commitment. Their cognitive sophistication and social bonding make them deeply rewarding animals - but only for keepers who can genuinely provide the space, time, and resources their long lives require." },
-      { q: "Is a tegu a monitor lizard?", a: "No, despite the frequent comparison. Tegus (family Teiidae) are New World lizards from South and Central America, while monitor lizards, like the [Ackie monitor](/guides/ackie-monitor/) and [Savannah monitor](/guides/savannah-monitor/), belong to a completely separate Old World family (Varanidae). They end up compared constantly because both are large, intelligent, dog-like lizards popular with the same keepers, not because they're closely related." },
-      { q: "Are tegus dangerous, aggressive, or venomous?", a: "Not venomous, no venom gland or delivery system has ever been documented in tegus. \"Aggressive\" is more a socialization story than a species trait: wild-caught or undersocialized tegus can be genuinely defensive, but consistently handled captive-bred tegus are widely considered among the calmest large lizards kept as pets. [We go through the research behind this in full](/blog/argentine-tegus-are-not-venomous/), including why they read as unusually alert for a reptile." },
+      { q: "What size enclosure does an Argentine tegu need?", a: "An adult male needs 8 by 4 by 4 feet at minimum; females need somewhat less, though still substantial space. Experienced keepers often go to 10 by 5 by 5 or a dedicated reptile room. A hatchling can start near 40 gallons, but expect to rehouse it within the first year." },
+      { q: "Is it legal to buy an Argentine tegu as a pet?", a: "In most states, yes, tegus aren't federally injurious and most state wildlife codes don't mention them at all. Florida is the major exception: since April 29, 2021, new acquisition of a pet tegu has been banned outright under the state's Prohibited species list." },
+      { q: "Should I plan the enclosure around brumation?", a: "Yes. Tegus slow down, eat less, and burrow for 2 to 4 months in cooler seasons, indoors included. That is normal for the species, so give the substrate enough depth to support a long burrow instead of trying to prevent it." },
     ],
   },
   {
