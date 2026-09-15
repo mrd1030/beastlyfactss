@@ -10903,3 +10903,87 @@ the article exists.
 - Also open: brumation or a winter cooling cycle, thawing and prep for
   frozen fish and worms, and how long to wait after a meal before
   handling.
+
+## Oscar (2026-09-15, batch J, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. Oscar was picked for
+batch J because it sits in the overview with box turtle and California
+kingsnake, both already reconciled.
+
+Set grade: B+. "The deep dives are specific, honest about disputed
+causes, and would get me to a healthy fish; the hub is the weak link and
+the pages do not point at each other where they obviously should." Tank
+setup A, feeding A, health A-, enrichment A-, encyclopedia B, cost B-,
+handling B-, hub C.
+
+### Numbers checker
+
+`check-species-numbers oscar --strict` before the rebuild, 64 sentences
+with numbers across 24 groups. The hub understated the build in every
+line that had a price on it, and all of it is gone rather than moved:
+
+- Tank size, and this is the one that decides the purchase. Hub: "A
+  juvenile oscar needs at least 55 gallons, growing to 75 gallons or more
+  as an adult." Tank setup: "75 gallons is the widely recommended minimum
+  for a single adult... starting small and upgrading later is both more
+  expensive overall and more disruptive for the fish." The reader put it
+  best: "The hub's checklist tells me to make the exact mistake the cost
+  guide calls the biggest one."
+- Canister filter. Hub: $100 to $200. Cost guide: $325 to $340.
+- Heater. Hub: $25 to $45. Cost guide: $18 to $30.
+- Monthly running cost. The hub's annual table worked out to roughly $9 to
+  $15 a month against the cost guide's "roughly $35 to $40 a Month."
+- Feeding frequency. Hub: "Feed once or twice daily," flat. Feeding guide:
+  three times daily under 3 to 4 inches, twice at 3 to 8 inches, once or
+  twice over 8 inches.
+- Adult size, given twice on the hub itself: "12 to 14 inches or longer"
+  in one place and "10 to 14 inches, up to 16" in another.
+- Lifespan. Hub FAQ: "can live 10 to 20 years." Cost guide: "10 to 15
+  years typically, with well-kept individuals occasionally reaching close
+  to 20."
+
+### Encyclopedia
+
+wildLifespan was "10-20 years", the tenth captive figure found in the
+wild field across batches G through J. Searching turned up wild estimates
+only from aggregator sites that disagree with each other, nothing worth
+citing, so the field now carries the cost guide's captive range and says
+the wild is not well documented.
+
+### Deep-dive fixes
+
+- Hole-in-the-head told two ways. Health guide: "Poor water quality,
+  elevated nitrates especially, is the common thread running through
+  nearly every condition on this list." Feeding guide: "Overfeeding and
+  uneaten food fouling the water are the primary driver behind
+  Hole-in-the-Head disease in most sources." Both pages then hedge in
+  opposite directions. Neither side is settled in the literature, so both
+  now say so in the same words and give the same two-part answer: weekly
+  25 to 30% water changes with nitrate under about 40 ppm, and real
+  variety in the diet. The 40 ppm figure had been sitting in a FunFact box
+  on the feeding page and nowhere else; it is now on the health page too,
+  which is where a reader looking for it would go.
+- Six link asks added. The reader's structural complaint was that the
+  three pages that most obviously answer each other, setup, health and
+  feeding, never point at each other, and that the enrichment guide
+  "links three other species and none of its own siblings." All three
+  crossings are now made, one per article.
+
+### Dates
+
+The health and feeding guides changed a claim and are bumped. The rest
+were link-only, and the enrichment guide is future-dated.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md. The one
+  worth acting on first is a single target water parameter set for an
+  established oscar tank: ammonia, nitrite and nitrate in one place. The
+  shared cycling guide covers dosing during a cycle and stops, so a
+  reader with a running tank has nowhere to look.
+- Also open: tank stand and floor loading for a 75 to 125 gallon build,
+  which nothing in the shared list touches; sexing and what to do if a
+  pair spawns, on a set whose cost guide prices a breeding pair;
+  metronidazole dosing, named as the treatment with no dose behind it;
+  plants and lighting for a tank whose occupant uproots everything; and
+  managing aggression once tankmates are in and fighting.

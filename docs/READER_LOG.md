@@ -4910,3 +4910,84 @@ First two changes: rebuild the hub from the deep-dive numbers, starting with sub
 - Thawing and prep for frozen fish and worms, and whether to feed in or out of the water.
 - How long to wait after a meal before handling.
 - Cohabitation as a real decision, raised in tank setup and enrichment, settled in neither.
+
+---
+
+# Oscar: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch J. Raw and unedited.
+
+
+**1. Page by page**
+
+- 00 hub: skimmed it, would not read twice. Act on: the checklist, temp 74-81F, weekly 25-30% changes. Grade C, because its headline tank number contradicts every deep dive behind it.
+- 01 encyclopedia: finished it, nothing to act on, but the Agassiz misfiling and the Dade County stocking are real content, not padding. Grade B.
+- 02 cost: finished it. Act on: buy the 75g from day one, budget $35-40/month. Grade B minus, numbers wobble.
+- 03 handling: finished it, thin. Act on: tankmate rule, no small fish. Repeats itself across three sections. Grade B minus.
+- 04 health: finished it. Act on: the HITH symptom list, nitrate control, metronidazole as the named drug. Grade A minus.
+- 05 tank setup: finished it, the most useful page here. Act on: 75g, 4-5x turnover, sand, secure lid. Grade A.
+- 06 feeding: finished it. Act on: 80/20 split, 35-45% protein, per-size feeding schedule, the thiaminase reason. Grade A.
+- 07 enrichment: finished it and enjoyed it. Act on: the numbered priority list. Grade A minus.
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: origin, wild diet, invasive history, none of it in the deep dives. The hub mostly restates them in shorter form, and where it differs it is wrong.
+
+Real conflict, tank size. Hub: "A juvenile oscar needs at least 55 gallons, growing to 75 gallons or more as an adult." Setup: "75 gallons is the widely recommended minimum for a single adult... starting small and upgrading later is both more expensive overall and more disruptive for the fish." Cost, on the same question: "What's the biggest cost mistake new oscar owners make? Starting with a small tank instead of the adult-size setup." The hub's checklist tells me to make the exact mistake the cost guide calls the biggest one.
+
+Filter price. Hub: "Heavy-duty canister filter | $100 | $200." Cost: "Canister filter | $325 - $340."
+
+Running cost. Hub annual: food $80-$140 plus conditioner and test kit $25-$40, roughly $9-$15 a month. Cost: "Ongoing Costs: Roughly $35 to $40 a Month."
+
+Feeding schedule. Hub: "Feed once or twice daily." Feeding: "Babies under 3 to 4 inches eat 3 times daily. Juveniles around 3 to 8 inches eat twice daily."
+
+Routine. Hub: "Many oscars respond well to consistent feeding routines." Enrichment: "A varied feeding schedule, never a fixed one."
+
+Lifespan. Hub FAQ: "can live 10 to 20 years." Cost: "10 to 15 years typically, with well-kept individuals occasionally reaching close to 20."
+
+**3. The set as a whole**
+
+Yes, I could buy, set up, feed and keep one, provided I ignore the hub and follow the setup, feeding and health pages. Tank, filter turnover, temp, substrate, diet by size class, water change cadence and the disease to watch are all here.
+
+Still missing: tank stand and floor loading for a 75-125 gallon build, sexing and what to do if a pair forms, a single place listing target ammonia/nitrite/nitrate (nitrate under 40 ppm appears once, inside a fun fact box on the feeding page), metronidazole dosing or where to buy it, plants and lighting given that oscars uproot everything, and what to do when tankmates start fighting.
+
+Questions raised on one page and answered on another with no signpost: the setup page says weekly changes prevent hole-in-the-head but never points at the health page that describes it. The health page says nutritional gaps cause it and never points at the feeding page. The handling page's "play dead" quirk is exactly what the health page's symptom list would otherwise have me panicking over, neither links the other. The enrichment page says "they do bite" and "take real care moving a large cichlid," and the transport plan sits unlinked in the shared sidebar.
+
+**4. Overlap and conflict across the deep dives**
+
+Read twice or more: the 2-inch-to-12-inch line (cost and setup, near verbatim), no feeder goldfish (setup, feeding, enrichment), 75 gallons (cost, setup, enrichment), 25-30% weekly changes (setup, health, feeding), "anything that fits in an oscar's mouth" (handling and enrichment).
+
+Conflicts. Cause of HITH, health: "Poor water quality, elevated nitrates especially, is the common thread running through nearly every condition on this list." Feeding: "Overfeeding and uneaten food fouling the water are the primary driver behind Hole-in-the-Head disease (HITH/HLLE) in most sources." The feeding page also names "vitamin C, D, and essential fatty acids"; the health page never mentions vitamins at all.
+
+Feeding window, hub: "only what's consumed within a couple of minutes." Feeding: "Feed only what's eaten in 2 to 3 minutes."
+
+**5. One link per page**
+
+- Hub: "A juvenile oscar needs at least 55 gallons, growing to 75 gallons or more as an adult" should link to the Tank Setup guide, and be rewritten to agree with it.
+- Encyclopedia: "Oscars are naturally curious and active diggers, regularly rearranging substrate and decor in their environment" should link to the Enrichment guide.
+- Cost: "total costs easily exceed $1,000 once you factor in premium filtration and the 75-gallon-plus tank this species will eventually require" should link to Tank Setup.
+- Handling: "And since so much of the appeal here is behavioral, watching for the health issues that can dampen that personality matters too" should link to Health Issues. It gestures at it and stops.
+- Health: "Nutritional gaps are part of the cause, which is why a quality staple cichlid pellet as a diet foundation is treated as genuine prevention, not just feeding" should link to the Feeding guide.
+- Tank setup: "Weekly water changes of 25 to 30% are mandatory, not optional, this connects directly to preventing hole-in-the-head disease" should link to Health Issues.
+- Feeding: "some keepers soak food in vitamin supplements when actively addressing Hole-in-the-Head disease" should link to Health Issues.
+- Enrichment: "Do not let water quality drift, given the link to hole-in-the-head" should link to Health Issues. This page links three other species and none of its own siblings.
+
+**6. Trust**
+
+Doubts: the hub disagreeing with its own deep dives on the one number that decides the whole purchase. The cost page leaning twice on "an aquarium retailer" for lifespan, a seller quoted as an authority. Precise-sounding single figures with no range, "$560 as a low-end build" and a "$235" vet exam. The enrichment page arguing from a neon tetra study that found nothing for the one cichlid in it. And the shared pH/GH/KH guide is pitched at "a coldwater tank" and goldfish keepers, which is the wrong animal for anyone arriving from an oscar page.
+
+The sentence that convinced me a keeper wrote this: "Water quality is where oscar tanks fail, and it fails slowly enough that the fish looks fine until it does not."
+
+**7. Set grade: B plus.** The deep dives are specific, honest about disputed causes, and would get me to a healthy fish; the hub is the weak link and the pages do not point at each other where they obviously should.
+
+First two changes:
+1. Rewrite the hub to match the deep dives: 75 gallons from day one, not 55 for a juvenile, and fix the filter price and monthly cost so the hub and cost page agree.
+2. Add the in-body links between setup, health and feeding where each already names the other's topic, and reconcile the HITH cause sentence to one story across both pages.
+
+**Not covered anywhere**
+- Tank stand and floor loading for a 75-125 gallon build. Nothing in the shared list touches weight or stands.
+- Sexing oscars, pair formation, and what to do if a pair spawns. The cost page prices a breeding pair and no page goes further.
+- A single target water parameter set, ammonia, nitrite, nitrate. The cycling guide covers dosing during a cycle; no page gives the steady-state numbers for an established oscar tank, and the 40 ppm nitrate figure appears only inside a feeding fun fact box.
+- Metronidazole dosing, duration, and where to obtain it. The quarantine guide covers salt, carbon and aeration, not this drug.
+- Plants and lighting for a tank whose occupant uproots everything.
+- Managing aggression once tankmates are already in and fighting, and the rehoming option for an adult.

@@ -162,7 +162,7 @@ export const fishEncyclopedia = [
       habitat: "Slow-moving rivers, floodplains, and calm backwaters",
       adultSize: "10-14 inches (25-36 cm); up to 16 inches in optimal conditions",
       wildDiet: "Fish, insects, crustaceans, and worms",
-      wildLifespan: "10-20 years",
+      wildLifespan: "Not well documented in the wild; 10 to 15 years in captivity, with well-kept individuals occasionally close to 20",
       conservation: "Least Concern (IUCN)",
       history: "Louis Agassiz named the species in 1831 and got it badly wrong. Believing his specimen had come from the Atlantic Ocean, he filed it as Lobotes ocellatus, in a genus of marine tripletails, and the correction to the South American cichlid genus Astronotus came later. The Florida record is unusually specific: the breeding populations in the south of the state trace to a deliberate stocking by aquarium fish farms in Dade County in the late 1950s, and the fish has since turned up in at least six counties and inside Everglades National Park. In its native rivers the oscar is not a curiosity but a food fish, taken and sold by artisanal fishers.",
     },

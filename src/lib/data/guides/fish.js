@@ -802,44 +802,90 @@ export const fishGuides = [
     image: "/assets/guides/oscar.jpg",
     tagline: "The big-personality cichlid that recognizes its keeper and rearranges the tank on a whim!",
     funFact: "Oscars are sometimes nicknamed 'water dogs' because of how strongly they bond with and recognize individual keepers - learning to beg at the glass, follow a finger around the tank, and in some cases tolerate supervised hand-feeding, behavior that sets them apart from most other fish.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "55+ gallon tank (75+ for an adult)", low: 150, high: 350 },
-        { item: "Heavy-duty canister filter", low: 100, high: 200 },
-        { item: "Aquarium heater", low: 25, high: 45 },
-        { item: "Heavy driftwood and rock (digging-proof)", low: 40, high: 80 },
-      ],
-      annual: [
-        { item: "Cichlid pellets + occasional meaty treats", low: 80, high: 140 },
-        { item: "Water conditioner and test kit", low: 25, high: 40 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, quarantine, filter maintenance and the
+    // sick-fish check cite the shared aquarium guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the oscar set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The old hub understated this build in every line that had a price on
+    // it, all gone rather than moved: the canister filter at $100 to $200
+    // against the cost guide's $325 to $340, the heater at $25 to $45
+    // against $18 to $30, and a tank line of $150 to $350 on a page whose
+    // own cost guide says the total "easily exceeds $1,000". It also opened
+    // with "a minimum of 55 gallons for one juvenile", a figure no deep dive
+    // carries, where the setup guide says to build the 75-gallon adult tank
+    // immediately rather than upgrade into it. And it gave adult size twice,
+    // as "12 to 14 inches or longer" in one place and "10 to 14, up to 16"
+    // in another.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cycling", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Quarantine", value: "At least 30 days for a new or sick fish, and 30 to 60 days for one you especially don't want to lose or don't want introducing something to an established tank. Thirty days is the floor, not the target. Use separate nets and siphon hoses for the quarantine tank.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Tank size", value: "75 gallons is the widely recommended minimum for a single adult, with 100 to 125-plus gallons for a pair or small group. A 2-inch juvenile oscar reaches 12 inches or more within its first year, so starting small and upgrading later is both more expensive overall and more disruptive for the fish than getting the adult tank from the start.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Space first", value: "Everything else is downstream. Oscars reach a foot or more and get sold at two inches to people buying a tank for the two inch version. There is no enrichment that compensates for an adult oscar in a 40 gallon.", source: "oscar-fish-enrichment-guide" },
+        { label: "Filtration", value: "Canister filters are the standard choice, sized to handle roughly 4 to 5 times the tank's total volume per hour. Many keepers run a large canister alongside a secondary hang-on-back unit for redundancy, which in oscar keeping is close to the baseline expectation rather than overkill.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Temperature", value: "74 to 81°F, kept stable. A reliable submersible heater is required, ideally one with a built-in thermometer for easy monitoring, since this is a genuinely tropical species with no cold tolerance.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Water chemistry", value: "A pH range of 6 to 8 and soft to moderately hard water both suit this species well. Oscars are fairly adaptable on this front compared to some pickier fish.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Water changes", value: "Weekly changes of 25 to 30% are mandatory, not optional, and this connects directly to preventing hole-in-the-head disease.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Substrate", value: "Sand, which oscars genuinely enjoy sifting through, or smooth, pea-sized or larger gravel. Avoid sharp or coarse substrate, which can injure this fish's mouth given how much it interacts with the tank floor.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Anchor everything", value: "Oscars rearrange their environment with their mouths and will topple anything not properly anchored, and thicker aquarium glass is worth considering given how much this fish bumps and interacts with its tank walls. A tight, secure lid is essential, since oscars are capable jumpers.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Let them move things", value: "Oscars dig substrate, shift decor and uproot plants deliberately, and an aquascape they cannot alter takes that away. Give them movable furniture: smooth stones, sizeable driftwood, and a deep sand or fine gravel bed to push around. The layout will not stay where you put it, because the rearranging is the point.", source: "oscar-fish-enrichment-guide" },
+        { label: "Staple food", value: "A high-quality cichlid pellet, commonly cited at 35 to 45% protein, making up roughly 80% of the diet, sized appropriately for the fish. The remaining 20% is frozen or fresh: shrimp, krill, earthworms, mysis, and occasional plant matter like peas or zucchini.", source: "oscar-fish-feeding-guide" },
+        { label: "Feeding frequency", value: "Babies under 3 to 4 inches eat 3 times daily. Juveniles around 3 to 8 inches eat twice daily. Adults over about 8 inches, or a year old, eat once or at most twice daily. Feed only what's eaten in 2 to 3 minutes and remove anything uneaten.", source: "oscar-fish-feeding-guide" },
+        { label: "Portion check", value: "A healthy oscar has a slightly rounded, not bulging, belly. They beg constantly and are genuinely easy to overfeed, and many keepers fast adults one day a week to keep portions honest.", source: "oscar-fish-feeding-guide" },
+        { label: "Not feeder goldfish", value: "Live feeder goldfish and rosy-red minnows shouldn't be a staple. Feeder fish commonly carry thiaminase, an enzyme that breaks down vitamin B1, and without adequate B1 the symptoms run to lethargy, weight loss, nerve control problems, and eventually heart failure and death. They also carry a real risk of parasites, disease, and excess fat.", source: "oscar-fish-feeding-guide" },
+        { label: "Tank mates", value: "Oscars are genuinely predatory, not just assertive. A useful rule of thumb from experienced keepers: if something fits in an oscar's mouth, it will eventually end up there. Best paired with large, tough fish, severums or big plecos among them, in a large tank, or kept alone entirely.", source: "oscar-fish-handling-guide" },
+        { label: "Not a hands-on pet", value: "Oscars recognize their keeper, swim to the front of the tank in greeting, and can be trained to eat from a hand, but the relationship lives entirely at the glass and through feeding, not through touch.", source: "oscar-fish-handling-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Budget", value: "$7 to $35 for a common juvenile, over $100 for a specialty variety, and $99 and up for an already-grown fish. A 55-gallon starter setup has been estimated at around $560 as a low-end build, and the total easily exceeds $1,000 with premium filtration and the 75-gallon-plus tank this species eventually requires. Upkeep runs roughly $35 to $40 a month.", source: "oscar-fish-cost-guide" },
+        { label: "Adult size", value: "10 to 14 inches (25 to 36 cm); up to 16 inches in optimal conditions." },
+        { label: "Lifespan", value: "10 to 15 years typically, with well-kept individuals occasionally reaching close to 20. As one aquarium retailer puts it, an oscar can live as long as a dog.", source: "oscar-fish-cost-guide" },
       ],
     },
-    sections: {
-      housing: "A juvenile oscar needs at least 55 gallons, growing to 75 gallons or more as an adult, since they can reach 12 to 14 inches or longer. Heavy-duty filtration, ideally a large canister filter, is essential given how much waste they produce. Keep water heated between 74 and 81 degrees F, and use a secure lid, since oscars are powerful swimmers capable of knocking loose decor around. Choose only heavy, sturdy decor - driftwood and large rock - since oscars naturally dig and rearrange their tank, and lighter items get toppled or buried.",
-      diet: "Oscars are carnivorous, predatory cichlids that do best on a high-quality cichlid pellet as their dietary staple. Avoid feeding an all-feeder-fish diet, which has been linked to nutritional deficiencies and disease transmission. Occasional treats like earthworms and prawns or shrimp add welcome variety. Feed once or twice daily, offering only what's consumed within a couple of minutes, since oscars are prone to obesity if overfed.",
-      enrichment: "Oscars are unusually intelligent and interactive for fish, regularly recognizing and responding differently to their individual keeper compared to strangers. They enjoy digging and rearranging substrate and decor, so providing heavy river rock and driftwood that can't easily be displaced gives them an outlet for this natural behavior. Many oscars respond well to consistent feeding routines and some informal training. Avoid any tankmates small enough to be eaten or too slow to avoid being bullied.",
-      health: "Hole-in-the-head disease, which causes pitting lesions on the head and lateral line, is strongly associated with poor water quality, nutritional deficiency, and old-tank syndrome, and is unfortunately common in this species - often linked to keepers underestimating the maintenance a large, heavy-bioload tank requires. Ich and aggression-related injuries from incompatible tankmates are also concerns. Insufficient tank size is one of the most common and preventable welfare issues for oscars, since they're frequently sold small into tanks that can't accommodate their adult size. Strong filtration and weekly 25 to 30 percent water changes are non-negotiable given their heavy bioload.",
-      checklist: [
-        "55+ gallon tank for a juvenile (75+ gallons for an adult)",
-        "Heavy-duty canister filter",
-        "Heater set to 74-81°F",
-        "Secure lid",
-        "Sand or smooth large gravel substrate",
-        "Heavy driftwood and rock (digging-proof decor)",
-        "High-quality cichlid pellets as dietary staple",
-        "Occasional meaty treats (earthworms, shrimp)",
-        "Water test kit",
-        "Weekly 25-30% water changes",
+    emergencyCard: {
+      source: "oscar-fish-health-issues-guide",
+      callNow: [
+        "Small pitted lesions or holes developing on the head and along the lateral line, appetite and weight loss, lethargy, and stringy white feces (hole-in-the-head disease). Caught early this is genuinely treatable at home with a near-zero fatality rate: correct water quality, address nitrate specifically, adjust diet, and treat with metronidazole if a parasite is involved",
+        "Small white spots across the body and fins (ich), triggered by temperature swings or general stress. Manageable at home with a standard commercial ich treatment and correcting whatever stressor triggered it",
+        "Frayed, discolored fin edges (fin and tail rot), bacterial and tied to poor water quality. Treatment without fixing the underlying water rarely holds",
+        "One or both eyes swollen or bulging (popeye), usually bacterial or linked to water quality. See a vet if available, or treat with water correction and antibacterial medication if not",
+        "Swelling, a distended abdomen, and scales that raise into a pinecone-like pattern (dropsy). This typically signals serious internal illness and often carries a poor outlook by the time it's visibly obvious",
       ],
+      vetLine: "Poor water quality, elevated nitrates especially, is the common thread running through nearly every condition on this list, hole-in-the-head disease most directly of all. Weekly water changes and heavy-duty filtration aren't optional extras for this species, they're genuinely the primary defense against the health issue oscars are most known for.",
     },
+    routes: [
+      { slug: "oscar-fish-cost-guide", line: "$7 to $35 for the fish and past $1,000 for the tank it needs, the itemized build, and why the animal is the smallest number in the equation." },
+      { slug: "oscar-fish-tank-setup-guide", line: "The 75-gallon adult minimum to build immediately rather than grow into, filtration sized to 4 or 5 times the volume, and the decor an oscar will move anyway." },
+      { slug: "oscar-fish-feeding-guide", line: "The 80/20 pellet-and-frozen split, feeding frequency by size, and why feeder goldfish are the one mistake that matters most." },
+      { slug: "oscar-fish-handling-guide", line: "The aquatic dog reputation and what is actually behind it, the sulking after a water change, and the rule that anything fitting in an oscar's mouth ends up there." },
+      { slug: "oscar-fish-health-issues-guide", line: "Hole-in-the-head disease, treatable at home when caught early, plus ich, fin rot, popeye and dropsy, and the nitrate line running under all of them." },
+      { slug: "oscar-fish-enrichment-guide", line: "Why the enrichment case here is argued from behavior rather than studies, the decor an oscar is allowed to rearrange, and target training a fish." },
+    ],
+    buyList: [
+      "75-gallon or larger glass or acrylic aquarium",
+      "Canister filter rated for 4 to 5 times the tank volume",
+      "A secondary hang-on-back filter for redundancy",
+      "Submersible heater with a built-in thermometer",
+      "Water test kit",
+      "Water conditioner",
+      "Sand, or smooth pea-sized or larger gravel",
+      "Heavy driftwood and smooth stones, anchored",
+      "A tight, secure lid",
+      "Gravel vacuum and buckets for weekly changes",
+      "High-quality cichlid pellets, 35 to 45% protein",
+      "Frozen shrimp, krill, mysis or earthworms",
+      "A quarantine tank with its own net and hose",
+    ],
     faqs: [
-      { q: "How big do oscars get?", a: "10 to 14 inches is typical for a well-kept adult, with some individuals reaching up to 16 inches in very large tanks - far bigger than most new keepers expect from a fish that's usually sold small in pet stores." },
-      { q: "Do oscars recognize their owners?", a: "Yes, oscars are genuinely known for recognizing individual keepers, which is why they're sometimes called 'water dogs.' They will approach the glass, beg for food, and behave noticeably differently toward their regular keeper than toward strangers." },
-      { q: "What size tank does an oscar need?", a: "A minimum of 55 gallons for one juvenile, growing to 75 gallons or more as an adult. Oscars are frequently sold small into undersized tanks, which is one of the most common welfare problems in the species." },
-      { q: "Can oscars live with other fish?", a: "Only with similarly sized, robust tankmates such as larger catfish, silver dollars, or other comparably sized Central and South American cichlids. Small or slow fish will be eaten or bullied." },
-      { q: "What is hole-in-the-head disease?", a: "A condition causing pitting lesions on the head and lateral line, strongly associated with poor water quality, old-tank syndrome, and nutritional gaps, especially an all-feeder-fish diet. Prevention centers on strong filtration, regular water changes, and a varied high-quality diet." },
-      { q: "Are oscars good pets for beginners?", a: "Not really, despite how small they look in the pet store. An oscar needs 55 to 75+ gallons as an adult, produces a heavy bioload, and can live 10 to 20 years. They're better suited to someone who's already run a smaller tank successfully and is ready to commit to the space and filtration a big, intelligent cichlid needs." },
+      { q: "How big a tank does an oscar need?", a: "75 gallons is the widely recommended minimum for a single adult, with 100 to 125-plus gallons for a pair or small group. A 2-inch juvenile reaches 12 inches or more within its first year, so building the adult tank immediately is cheaper overall and less disruptive than upgrading later." },
+      { q: "Why are feeder goldfish a mistake for oscars?", a: "Feeder fish species commonly carry thiaminase, an enzyme that breaks down vitamin B1, and without adequate B1 the symptoms include lethargy, weight loss, nerve control problems, and eventually heart failure and death. Feeder fish also carry a real risk of parasites, disease, and excess fat." },
+      { q: "What is hole-in-the-head disease?", a: "Small pitted lesions or holes developing on the head and along the lateral line, alongside appetite and weight loss, lethargy, and stringy white feces. Caught early it is genuinely treatable at home with a near-zero fatality rate, and the causes line up with what is preventable: poor water quality, elevated nitrates especially, and nutritional gaps." },
     ],
   },
   {
