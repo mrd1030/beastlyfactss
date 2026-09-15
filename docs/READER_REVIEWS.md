@@ -13148,3 +13148,71 @@ water chemistry, the hospital tank, power outages and spotting a sick fish:
 tankmates, stocking limits past "six or more" in a 20 gallon, what to do with fry
 and whether shops take them, which plant species give the dense cover four pages
 require, and day-one acclimation. All filed in docs/READER_LOG.md.
+
+## Cherry Shrimp (2026-09-15, batch M, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 84k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | Where I got most of my wrong ideas. |
+| Encyclopedia | B | The taxonomy history is genuinely good reading. |
+| Cost | A- | Real per-shrimp prices with pack math, and the 2025 USFWS risk rating. |
+| Handling | A | Drip rate, 60 to 90 minutes, two-week quarantine, never bare fingers. |
+| Health issues | A | Copper LC50, quarantine new plants five days, cap water changes at 10% weekly. |
+| Tank setup | A | GH/KH targets, temperature, pre-filter sponge. The page I would buy from. |
+| Feeding | A- | Pea-sized portion for 10 to 20 shrimp, 2 to 3 hour rule, leave the shed shell in. |
+| Enrichment | B- | The priority list and "ten or more", but the sentience review is a strange front door. |
+
+Set grade: B+. "The five deep dives are sourced, specific, and honest about where
+sources disagree; the hub that fronts them undercuts them with different numbers."
+
+This is the cleanest species in either batch on the thing that usually takes the
+work: the deep dives agree with each other. The reader found the numeric
+conflicts among them "minor," and every real disagreement was hub-versus-article,
+so the router conversion retired all of them at once rather than needing a
+ranking call on each.
+
+Retired with the hub: GH of "roughly 7 to 14 dGH" against the setup guide's 6 to
+8, which the reader correctly called "barely overlapping"; pH "between 6.5 and
+8.0" against 6.5 to 7.5; a temperature range of "about 65 to 85 degrees F, with
+the high 60s to high 70s being the most comfortable zone" against 60 to 82 with
+72 to 76 optimal; a heater trigger of "below 65°F" against the setup guide's high
+50s, which is a fifteen-degree gap on a purchase decision; a shrimp price of "$2
+to $4 for a common red shrimp" against the cost guide's $4 to $5 for standard
+grades; and every cost row, with the tank at $25 to $50 against $18 to $30.
+
+Two soft contradictions the reader caught that the numbers checker could not.
+The hub said "a shrimp-specific sinking pellet should still form the base of a
+deliberate diet" on a set whose feeding guide's own heading is "The Staple Diet:
+Mostly Grazing, Lightly Supplemented." And the hub checklist demanded a
+"Calcium/mineral supplement for molting" where the feeding guide says diet and
+stable hardness "cover most of that need without a dedicated supplement." Both
+are gone with the hub, and the router rows carry the feeding guide's framing.
+
+De-narration, done carefully because this set's sentences carry two claims each.
+The GH passage named Aquarium Co-Op for the floor and Tropical Treasures Wyo for
+the tighter target; the temperature passage named Aquarium Co-Op for the
+comfortable band and Aquariadise for the outer tolerated one. Taking a name off a
+sentence that holds two figures is exactly where batch K upgraded a hedge, so
+both claims are kept whole in both cases: the floor and the target, the
+comfortable range and the outer one. Every source stays in its block.
+
+Links: 6 added, one of which was already half-written. The feeding guide said
+"stable water hardness (more on GH in our tank setup guide)" in plain text, which
+is both a dead reference and the site talking about itself, and RULES rules out
+the second even when the link works. Also health to setup on the
+mature-not-just-cycled rule, setup to health on soft molts, cost to setup on the
+GH supplement the cost table leaves out, handling to health on a shrimp that
+never resumes grazing, and enrichment to handling on transfer shock.
+
+Dates: none bumped. The setup and health guides are future-dated to 2026-09-16
+and the other four changed links only.
+
+Gaps, checked against the Health and More list, which covers filtration, water
+chemistry, summer cooling and the three-shrimp comparison: that mixing color
+lines breeds offspring back to wild brown, sexing and berried females, how to
+test tap water for the copper three pages warn about, lighting and photoperiod,
+fish tankmate compatibility, and what to do when a colony outgrows its tank. All
+filed in docs/READER_LOG.md.
