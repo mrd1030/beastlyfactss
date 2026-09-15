@@ -14641,3 +14641,65 @@ the cost guide bills for; what to inspect at purchase; whether a hatchling goes
 straight into a 4x2x2; and species-level differences among Mali, ornate and
 Egyptian beyond size and price. Brumation is the one worth writing first, since the
 set tells a keeper a two-month fast can be normal and then leaves them to judge it.
+
+## Flying Squirrel (2026-09-15, batch P, single pass, before the router hub)
+
+Extractor set of nine pages. One Opus agent, about 84k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B. "The deep dives are genuinely good and the legal
+guide is exceptional; the hub actively degrades them and the everyday basics have
+holes."
+
+Numbers checker before the pass, 23 groups, mostly the old hub's cost table
+against the cost guide's. The reader found those and the three things no checker
+can see.
+
+No page in the set mentioned water. Not a bottle, not a bowl, not a changing
+schedule, across nine pages on a small mammal. That is the plainest gap either
+batch has produced, and it survived because every page is written against the
+sugar glider's set, where water is presumably handled somewhere else. Added to the
+feeding guide and to the setup guide's substrate section, and it is a row.
+
+Protein frequency contradicted itself inside a single guide: "several times a
+week" in the feeding guide's body, "every day or two" two paragraphs later, and
+"daily to every-other-day" in its FAQ. All three now say every day or two. A page
+disagreeing with itself in three places is a different failure from two pages
+disagreeing, and it is the second time in batch P after the fire skink cost guide.
+
+The light figure existed on the wrong page: the feeding guide gave "at least 20
+minutes a day of natural or full-spectrum light" and the setup guide, which is
+where a keeper building a cage looks, gave no number. The setup guide now carries
+it.
+
+The cage minimum was narrated as a source disagreement on two pages, and both now
+state the two footprints as the same volume in different shapes, with height named
+as the dimension that matters. The cost guide also said state law "isn't settled or
+consistent enough to summarize here" while this species' own legal guide covers all
+52 jurisdictions and the reader called that guide the reason they would trust the
+site; that clause is now the two ends of the real range with a link.
+
+RELATED_ARTICLES: this species' entry carried exactly one item, the overview. Its
+own legal guide was reachable from nowhere in the sidebar, because "legal" is not a
+standard suffix and nothing auto-detects it, which is the batch I finding for the
+third time. Added, along with the small mammal vet visits and travel guide.
+
+No shared small-mammal guide names this species, so this is the only hub in either
+batch with no shared-guide rows. That is deliberate: batch O's check caught three
+rows sourced to shared guides that never mention the animal, and the answer is to
+leave the row out rather than to write one.
+
+Links: 4 added. A fifth, the reader's ask for the health guide's gnawing line to
+point at the enrichment guide, was reverted: that page already spends its one
+sibling link on the feeding guide, which matters more on a page about a
+diet-driven disease.
+
+check-species-numbers flying-squirrel after the pass: every line marked hub appears
+in the deep dive its row names. Voice warning counts identical to baseline on all
+five changed files, all gates and eslint clean.
+
+Not covered anywhere, the reader's list and the longest in either batch: cage
+cleaning cadence, how to introduce two squirrels (the whole instruction is
+"introductions take time"), portion sizes in any real unit, how to find and vet a
+breeder or an exotic vet, zoonoses and new-animal quarantine, tooth and nail checks
+beyond "watch tooth length", escape recovery after the handling guide warns that a
+startled squirrel will glide across a room, and vacation care for a nocturnal,
+pair-housed animal. Water was on that list and is now answered.

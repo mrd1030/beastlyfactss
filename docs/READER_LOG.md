@@ -7028,3 +7028,80 @@ First two changes: (1) pick one basking range, one UVB spec, and one hydration p
 - What to check on the animal at purchase and how to pick a captive-bred source, distinct from quarantining it afterward.
 - Housing a hatchling or juvenile: whether a baby goes straight into the 4x2x2 adult enclosure.
 - Species-level differences beyond size and price among Mali, ornate, and Egyptian.
+
+## Flying Squirrel (2026-09-15, batch P)
+
+Raw output, one Opus reader agent, extractor set of nine pages.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, but it is the weakest thing here: I can act on the cage size, temperature range, and checklist, and almost nothing else is specific enough to buy from. Grade C.
+- **01 Encyclopedia.** Finished it fast. Actionable: adult size and weight (8-10 in, 2-3 oz), which is what makes the half-inch bar spacing make sense. Grade B.
+- **02 Cost.** Finished it. I can budget $200-450 per animal, double it, $200-500 setup, $20-50/month. Grade B+.
+- **03 Handling.** Finished it. Buy at 6-8 weeks, pouch several hours a day, 2-8 weeks to bond, cup the hand, no daytime handling. Grade A-.
+- **04 Health.** Finished it. Symptom ladder for MBD is the usable part: appetite, climbing reluctance, hind-limb weakness. Grade B+.
+- **05 Tank setup.** Finished it. Most buildable page in the set: size, half-inch bars, 65-75F, solid bottom with liner, axle-free 12 in wheel, high pouches. Grade A-.
+- **06 Feeding.** Finished it. Rodent block base, produce daily, protein, small nut portion, Ca:P 2:1, dust with Ca/D3, evening feeding. Grade A-.
+- **07 Enrichment.** Finished it, best-written page. Gnawing list and the priority order are directly actionable. Grade A.
+- **08 Legal.** Finished it, and it is the reason I would trust this site. Grade A-.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: size, weight, range, and the 2019 Marion County trapping case are nowhere else. The hub does not. It is a compressed restatement of the six deep dives with worse numbers, and it disagrees with them:
+
+- Food cost. Hub: "Varied nuts, seeds, fruit, vegetables, and protein | $360 | $720" annual. Cost guide: "Rodent-block staple food | $40 - $80" plus "Fresh produce and an insect or protein source | $60 - $120". The hub is roughly triple, and it prices a diet the feeding guide tells me not to feed.
+- Diet framing. Hub: "A varied omnivorous diet of nuts, seeds, fruit, vegetables, and a protein or insect component." Feeding guide: "Nuts, seeds, and dried fruit are best treated as occasional treats layered on top, not the base of the diet." The hub checklist never mentions rodent block at all.
+- Cage and gear. Hub: "24x24x36 in aviary-style cage | $150 | $300" and wheel "$40 | $70". Cost guide: "$120 - $300" and "$30 - $60".
+- Cage minimum. Hub: "24x24x36 inches at an absolute minimum." Setup guide: "some cite roughly 24x24x36 inches, others closer to 30 inches wide by 18 deep by 36 tall."
+
+## 3. The set as a whole
+
+Yes, I could legally check, buy, build, feed, and bond a pair. Still missing: **water** (no page mentions a bottle or bowl anywhere), **cage cleaning cadence**, **how to introduce two squirrels** ("Introductions take time" is the whole instruction), **portion sizes in any real unit**, **how to find and vet an exotic vet or breeder**, **zoonoses and quarantine**, **nail or tooth trimming**, and **what happens if they escape** after the handling guide warns me they will try.
+
+Unlinked handoffs: the health guide's dental section raises gnawing and the answer is the enrichment guide's gnawing list, unlinked. The setup guide says "the other big piece of the puzzle is diet" and does not link the feeding guide. The hub's legal FAQ and the cost guide's legal section both tell me to call my state agency while a 52-jurisdiction guide sits in the sidebar, unlinked from either body.
+
+## 4. Overlap and conflict across deep dives
+
+Read twice or more: convergent evolution with sugar gliders (all seven pages), the MBD symptom ladder (health and feeding, near-verbatim), the 2:1 ratio, the pair requirement, the axle-free wheel, the cage-minimum hedge.
+
+Conflicts:
+- Legal summarizability. Cost guide: "the specifics genuinely vary by state, in a way that isn't settled or consistent enough to summarize here." Legal guide: "This guide now reflects all 52 jurisdictions on our map."
+- Protein frequency, inside the feeding guide itself. Body: "a protein source ... several times a week." Two paragraphs later: "rotate in a protein source every day or two." FAQ: "add produce and protein daily to every-other-day."
+- Light duration. Feeding: "at least 20 minutes a day of natural or full-spectrum light." Setup guide, which is where I would look: "Regular access to natural daylight or full-spectrum lighting," no number.
+- Legal guide internal tidiness: the section headed "The Four Clean States" opens "Nine states are a clean yes," then spends its last third on Texas, which is not one of the four. The section titled "Permit States Where 'Permit' Doesn't Mean What You Think" opens with Florida and immediately concludes Florida is not a permit state.
+
+## 5. One link per page
+
+- Hub: "Check your specific state's wildlife agency before acquiring one." Link the legal guide.
+- Encyclopedia: "a licensed dealer in Bushnell who logged them as captive-bred." Link the legal guide.
+- Cost: "check your state wildlife agency before you commit to buying one, not after." Link the legal guide.
+- Handling: "Handling in a cold room ... they still do best in the mid-60s to mid-70s Fahrenheit range." Link the cage setup guide.
+- Health: "appropriate gnawing opportunities and a watchful eye on tooth length and alignment are worth building into routine care." Link the enrichment guide.
+- Setup: "Once the cage is dialed in, the other big piece of the puzzle is diet." Link the feeding guide.
+- Feeding: "provide at least 20 minutes a day of natural or full-spectrum light." Link the cage setup guide.
+- Enrichment: "Live insects are worth including. The calcium balance is the part most improvised diets get wrong." Link the feeding guide.
+- Legal: "the animal has to come from a lawful captive-bred source." Link the cost guide.
+
+## 6. Trust
+
+Doubts: the hub calls them "captive-bred joeys," a marsupial word on the one page that spends four paragraphs insisting these are not marsupials. The hub's food budget does not survive contact with the cost guide. The enrichment guide admits "Nothing on pet flying squirrel enrichment" has been published, which is honest but means a whole page is borrowed.
+
+Most convincing sentence, from the enrichment guide: "Check fabric for loose threads, since toes and gliding membranes catch easily." Nobody writes that from a search result. The legal guide's refusal to fake New York ("Until someone reads it, treat New York as a no in practice and an open question on paper") runs a close second.
+
+## 7. Set grade: B
+
+The deep dives are genuinely good and the legal guide is exceptional; the hub actively degrades them and the everyday basics have holes. First two changes: rebuild the hub from the deep dives instead of alongside them, matching the cost tables and putting rodent block in the diet and checklist; then add water, cleaning cadence, and an introductions procedure, and link the legal guide from the hub and cost guide where both already tell me to go check the law.
+
+## Not covered anywhere
+
+Checked against the sidebar's shared class guide, "Three Small Mammals That Get Dismissed as Just Rodents," which is a comparison overview and covers none of these:
+
+- Water: bottle or bowl, placement, changing frequency. Not mentioned on any page.
+- Cage cleaning schedule: how often the liner, pouches, and branches get changed.
+- Introducing or pairing two squirrels: the actual method, quarantine period, and failure signs.
+- Portion sizes in a usable unit: how much block, how much produce, how many nuts per animal per day.
+- Sourcing: how to find and vet a breeder, and what paperwork proves captive-bred, which the legal guide makes load-bearing in Florida and Illinois.
+- Zoonotic risk, parasites, and new-animal vet quarantine.
+- Routine tooth and nail checks: the health guide says watch tooth length, no page says how or what to do about overgrowth.
+- Escape recovery: recapturing a squirrel that glides off in a room, which the handling guide warns about and never resolves.
+- Vacation and travel care for a nocturnal, pair-housed animal.
