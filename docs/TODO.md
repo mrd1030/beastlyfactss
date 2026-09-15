@@ -391,12 +391,17 @@ share a silhouette. That is roughly 25 species, about 175 images.
 ## 7. Router hubs, species by species
 
 Checked 2026-09-15 against `src/lib/data/guides/*.js`: a hub is a router hub
-when its entry carries `firstWeek` rows (RULES, Hubs). 56 of 108 done, 52
+when its entry carries `firstWeek` rows (RULES, Hubs). 61 of 108 done, 47
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
 Batches I and J both merged to main 2026-09-15 as 05a6fa6b. Batch I
 (African fat-tail gecko, corydoras catfish, red-footed tortoise, degu,
 savannah monitor) passed its Fable check at grade B-.
+Batch K (tiger salamander, parrotlet, koi, emperor scorpion, rosy boa)
+done, checked and merged to main 2026-09-15. Pass grade B. Next is batch L:
+pick five, one per class, where a set from a recent batch points at them.
+Only one snake is left on the list and none of the remaining classes has
+more than seven.
 Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
 shrimp) passed its check at grade C+. Next is batch K: pick five, one per
 class, where a set from a recent batch points at them. Worker Opus 5 high effort, one Fable closing check per batch (the
@@ -423,21 +428,22 @@ Done (56):
       savannah monitor (batch I, merged to main 2026-09-15)
 - [x] mourning gecko, ackie monitor, garter snake, oscar, amano shrimp
       (batch J, merged to main 2026-09-15)
+- [x] tiger salamander, parrotlet, koi, emperor scorpion, rosy boa
+      (batch K, merged to main 2026-09-15)
 
-To do (52):
+To do (47):
 
-- [ ] Amphibians (2): fire-bellied toad, tiger salamander
-- [ ] Birds (2): parrotlet, quaker parakeet
-- [ ] Fish (7): bristlenose pleco, discus, koi, molly, platy, swordtail,
+- [ ] Amphibians (1): fire-bellied toad
+- [ ] Birds (1): quaker parakeet
+- [ ] Fish (6): bristlenose pleco, discus, molly, platy, swordtail,
       zebra danio
 - [ ] Geckos (1): leaf-tailed gecko
-- [ ] Invertebrates (8): cherry shrimp, ghost shrimp, emperor scorpion,
-      giant millipede, jumping spider, hissing cockroach, praying mantis,
-      stick insect
+- [ ] Invertebrates (7): cherry shrimp, ghost shrimp, giant millipede,
+      jumping spider, hissing cockroach, praying mantis, stick insect
 - [ ] Lizards (5): Argentine tegu, fire skink, green anole, Jackson's
       chameleon, uromastyx
 - [ ] Small mammals (2): mouse, flying squirrel
-- [ ] Snakes (1): rosy boa
+- [ ] Snakes (0): none left, rosy boa was the last one
 - [ ] Cats (10): universal, American shorthair, Bengal, domestic shorthair,
       Maine Coon, Persian, Ragdoll, Scottish Fold, Siamese, Sphynx
 - [ ] Dogs (14): universal, small breed, medium breed, large breed, beagle,
@@ -474,7 +480,9 @@ is why they kept getting deferred. Do them once section 7 is finished.
       skink, gargoyle gecko, gerbil, giant millipede, koi, Madagascar hissing
       cockroach, mouse, neon tetra, pacman frog, parrotlet, red-eared slider,
       rosy boa, stick insect, sugar glider, tarantula, tiger salamander,
-      uromastyx, all in enrichment guides. Shop copy with the product
+      uromastyx, all in enrichment guides. Batch K cleared five of those
+      (tiger salamander, parrotlet, koi, emperor scorpion, rosy boa), leaving
+      18. Shop copy with the product
       missing: "Other quantities are available and a proper depth needs
       several", "and other sizes are available" tacked onto an affiliate
       link, "Other flavors and sizes are available". Most are species whose

@@ -652,7 +652,39 @@ garter snake sits in the red-footed tortoise overview; oscar sits in the
 box turtle and kingsnake overview; amano shrimp shares a tank with
 corydoras.
 
-Next up is batch K. Pick five, one per class, where a set from a recent
+Batch K (tiger salamander, parrotlet, koi, emperor scorpion, rosy boa),
+spanning amphibian, bird, fish, invertebrate and snake, done, checked and
+merged to main 2026-09-15. Five router hubs, 119 first-week rows, one reader
+pass per species and one Fable check. Pass grade B. That makes 61 router hubs;
+the 47 still on the legacy care sheet are listed by class in docs/TODO.md,
+section 7, dogs and cats last. Snakes are finished: rosy boa was the last one.
+
+Three findings worth carrying into the next batch.
+
+De-narration has a second failure mode, and it is not the source-name leak the
+last four batches kept finding. Stripping a name off a hedged range can quietly
+upgrade the claim: "some sources extend this to 59 to 77F" became "safe across
+a wider 59 to 77F" on koi, and the same thing happened on emperor scorpion.
+That asserts safety no source was quoted for, which is a hedge change and on
+the Never list. The check caught both. When a source name comes off a range,
+check the replacement claims exactly what the original did and no more.
+
+A reconciled species' figures can go stale on another species' unreconciled
+hub, and nothing catches it until the second species comes up. The rosy boa hub
+still had the boa constrictor at 6x3x3 ft and 8 to 10+ feet, both retired when
+batch C reconciled the boa. The rosy boa tank setup guide already had the
+current figure, so the hub was the only page carrying the old one.
+
+The cheap defect is still the one that ships. The check found six retired
+figures surviving in frontmatter description, excerpt and seoDescription fields
+and in comparison-table cells, across rosy boa and koi, which is exactly the
+pattern this file has warned about since batch D. Batch K was told to grep
+those by hand and did not. It also built a rosy boa emergency card out of the
+health guide's section headings while that guide carried an explicit five-bullet
+"When to See a Vet" list, ready to copy, which is the batch F sugar glider
+defect again.
+
+Next up is batch L. Pick five, one per class, where a set from a recent
 batch points at them. What is left, by class, is in docs/TODO.md
 section 7.
 
