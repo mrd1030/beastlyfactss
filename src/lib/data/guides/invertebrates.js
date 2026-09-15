@@ -527,61 +527,101 @@ Escaped cockroaches are the most serious concern for many keepers: check the lid
   {
     id: "praying-mantis",
     name: "Praying Mantis",
-    emoji: "🦗",
+    emoji: "\u{1F997}",
     difficulty: "Self-Sufficient",
     petType: "Invertebrates",
     image: "/assets/guides/praying-mantis.jpg",
     tagline: "Nature's most impressive ambush predator, in a palm-sized package!",
     funFact: "Praying mantises are the only insects known to have a single ear, located in the center of their chest between their hind legs. They use it to detect the ultrasonic calls of hunting bats, letting them dodge mid-flight. They are also the only insect that can turn its head 180 degrees.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "Tall vertical mesh or acrylic enclosure", low: 15, high: 35 },
-        { item: "Vertical branch or stick for molting", low: 5, high: 10 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Fine misting bottle", low: 5, high: 10 },
-      ],
-      annual: [
-        { item: "Fruit flies and live feeder insects", low: 30, high: 60 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Pre-molt appearance, rehousing, pesticides and the
+    // emergency plan cite the shared invertebrate guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the praying mantis
+    // set test (docs/READER_REVIEWS.md).
+    //
+    // The old hub carried unverified pricing by its own admission and every
+    // one of its figures lost to a deep dive. Retired rather than moved:
+    // an enclosure at "$15 to $35" against the cost guide's $60 to $70;
+    // feeders at "$30 to $60" a year against $10 to $40 a month; a lifespan
+    // of "12 to 18 months" against 6 to 12 for most kept species, which is
+    // what both the Chinese mantis care sheet and Animal Diversity Web
+    // support; "a 12x12x18 inch mesh or acrylic enclosure" against the setup
+    // guide's 8 by 8 by 12; "75 to 85 degrees F" and "72 to 95" against the
+    // 70 to 80 the setup guide now carries with a source; a separate line
+    // item for the molting stick the cost guide says is the same purchase as
+    // the climbing branch; and an FAQ recommending a nymph where the cost
+    // guide says buy an adult or subadult. The prey-size rule of "never
+    // exceed the space between the mantis's eyes" was hub-only with nothing
+    // behind it, and is replaced by the sourced one-third-of-body-length
+    // rule now in the setup guide's Diet Basics.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Buy an adult", value: "Buy an adult or subadult, not a nymph. Nymphs are genuinely difficult to keep alive through their many molts, and a beginner is much better served starting with an animal that's already past that fragile early stage.", source: "praying-mantis-cost-guide" },
+        { label: "Enclosure size", value: "Length and width should each be at least twice the mantis's body length, and height at least three times its length. A reasonable adult enclosure runs around 8 inches long, 8 inches wide, and 12 inches tall as a minimum. Nymphs do well in something much smaller, a vented 32-ounce deli cup works fine at that stage.", source: "praying-mantis-tank-setup-guide" },
+        { label: "The measurement that decides a molt", value: "The drop from the top of the perch to the floor, which wants to be at least four times the mantis's length. On an 8 by 8 by 12 enclosure with the perch reaching the lid, that drop is 12 inches, enough for a mantis up to about three inches. A larger adult wants a taller box than the stated minimum.", source: "praying-mantis-tank-setup-guide" },
+        { label: "What the ceiling has to be", value: "Something the mantis can grip securely upside down for hours: mesh, screen or a rough surface. Smooth glass or plastic at the top is a hazard, and adding mesh or a piece of rough material to hang from is a two minute fix that prevents the most common cause of death in the species.", source: "praying-mantis-enrichment-guide" },
+        { label: "Keep the top clear", value: "Keep the center of the upper enclosure clear. Structure that fills the space directly under the ceiling is structure the mantis can hit on the way down during a molt.", source: "praying-mantis-enrichment-guide" },
+        { label: "Temperature", value: "Most commonly kept species, Carolina and Chinese mantises among them, do fine at normal room temperature, which in practice means roughly 70 to 80\u00B0F. Stay below 88\u00B0F. A small heat mat is only necessary if your home runs genuinely cool. Never place the enclosure in direct sunlight, the confined space heats up fast enough to be fatal.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Humidity", value: "Species-dependent, and the spread is wide: a temperate Chinese mantis sits around 50 to 65%, while tropical species like Ghost and Orchid mantises want 70 to 80%. Mist lightly at least once daily, more often in a mesh enclosure. Those droplets are also how a mantis drinks, though heavy standing water is a drowning risk for small nymphs.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Ventilation", value: "A mesh or ventilated lid, never solid glass or plastic. Airflow is what keeps the mold and internal infection that excess humidity brings out of the enclosure, and that failure mode kills quietly, with no visible symptom until it is too late.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber, plain soil, bark, or even paper towel all work well. Substrate here serves two purposes: giving the mantis stable footing and helping hold humidity at the level you're aiming for.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Lighting", value: "No special lighting or UVB is needed. A normal household light cycle, roughly 12 hours of light a day, is sufficient.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Feeding", value: "Live prey only. Offer food every other day, as much as the mantis will take in one sitting. The honest range across species runs from every day to every four days, set by the species, the prey, the mantis's size and whether it is already well fed or looking thin.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Prey size", value: "Nothing longer than about a third of the mantis's own length. Fruit flies carry the smallest nymphs, then bottle flies, small crickets and appropriately sized dubia roaches as it grows, with larger crickets, waxworms and bottle flies available to a full adult.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Live prey, not dead", value: "Mantises are visual ambush hunters that respond to movement, and most will ignore a dead insect entirely. Live flying prey is also the closest thing to enrichment this animal has, since hunting is most of its behavioral repertoire.", source: "praying-mantis-enrichment-guide" },
+        { label: "Feeding around a molt", value: "A mantis going off food is usually about to molt, so stop offering and pull anything live back out: a cricket left in with a soft, newly molted mantis will chew on it. After a molt, wait until the legs and mouthparts have hardened, several hours to a day, before offering anything.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Handling", value: "Let the mantis walk onto your hand or a tool rather than grabbing it. Handle only in a closed room. Mantises jump, and the winged adults of most commonly kept species fly, so an animal that startles off your hand can cross the room. Never restrain or squeeze a mantis, their bodies are delicate in ways that aren't always obvious.", source: "praying-mantis-handling-guide" },
+        { label: "Hands off before a molt", value: "Avoid handling in the days leading up to a molt. A pre-molt mantis is at its most physically vulnerable, and handling during this window raises real risk of a failed or fatal molt. If your mantis has stopped eating and seems unusually still, treat that as a signal to leave it alone entirely.", source: "praying-mantis-handling-guide" },
+        { label: "One per enclosure", value: "They are cannibalistic and will eat each other at any size difference and often at none. Solo housing is the only sensible default outside of deliberate, supervised breeding.", source: "praying-mantis-enrichment-guide" },
+        { label: "Budget, the animal", value: "Common species like Carolina and Chinese mantises run $15 to $35. Ghost mantises run $15 to $75 depending on age and quality. Orchid mantises, prized for their striking appearance, can reach $150. Most species stay well under $75 even as full adults.", source: "praying-mantis-cost-guide" },
+        { label: "Budget, the setup", value: "The three required lines, enclosure, substrate, and branches or mesh, come to about $85 to $115. The spray bottle and tongs take a full first-time setup to roughly $100 to $145. Add the mantis and most buyers are between $115 and $220.", source: "praying-mantis-cost-guide" },
+        { label: "Ongoing costs", value: "Roughly $10 to $40 a month, almost all of it live feeder insects. Fruit fly cultures run $5 to $10 each, and crickets cost roughly 10 to 50 cents apiece depending on size.", source: "praying-mantis-cost-guide" },
+        { label: "Vet costs", value: "Essentially none. Exotic vets rarely treat invertebrates, and mantis care is entirely husbandry-based. Correct humidity, proper feeding, and careful handling around molting time do far more for a mantis's health than any veterinary intervention could.", source: "praying-mantis-cost-guide" },
+        { label: "Lifespan", value: "Most commonly kept mantis species live just 6 to 12 months total, Chinese mantises toward 8 to 12 months, African mantises closer to 6 to 9 months, with females typically outliving males. A small number of species can reach around 18 months under excellent care.", source: "praying-mantis-cost-guide" },
+        { label: "Adult size", value: "0.5 to 6 inches (1 to 15 cm) depending on species." },
+        { label: "If you get an ootheca", value: "An ootheca can release dozens to hundreds of tiny nymphs within a short window, often within an hour or two of each other. Mantis nymphs are highly cannibalistic toward their siblings, so individual containers and a fruit fly culture need to be ready before the hatch, not after.", source: "praying-mantis-ootheca-guide" },
+        { label: "Pre-molt signs", value: "An invertebrate about to molt goes off food, dulls in color and becomes still. That is not illness and it is not the moment to intervene: leave it alone, and leave the old shed skin where it falls until the animal has hardened.", source: "invertebrate-molting-guide" },
       ],
     },
-    sections: {
-      housing: "Most pet mantis species (Ghost Mantis, Chinese Mantis, African Flower Mantis) need a small vertical enclosure. A tall deli cup (for nymphs) to a 12x12x18 inch mesh or acrylic enclosure (for adults) is appropriate. The rule of thumb is 3 times the mantis length in height and 2 times in width. Cross-ventilation is critical. Mantises molt hanging from the top of the enclosure so adequate height is non-negotiable. Provide a stick or branch angled from floor to ceiling for perching and molting. Temperature ranges from 72 to 95 degrees F depending on species. Most common pet species do well at 75 to 85 degrees F.",
-      diet: `Mantises eat live prey exclusively. Match the prey size to the mantis: fruit flies (Drosophila melanogaster, the small species) for early nymph stages, progressing to bottle flies, small crickets, and small dubia roaches as the mantis grows. Adult mantises can handle larger crickets, mealworms, waxworms, and bottle flies. Prey should never exceed the space between the mantis's eyes in width.
-
-Feed every 2 to 3 days. Mantises will fast in the days before molting - do not offer prey during this time and remove any uneaten insects promptly. After molting, wait until the mantis's legs and mouthparts are fully hardened (several hours to a day) before offering food. Adult females require more frequent feeding than males and have significantly longer lifespans.
-
-Prey variety is beneficial. Waxworms are high in fat and should be treats rather than staples. Bottle flies (blue or green bottle flies in pupae form, which you hatch at home) are one of the best feeders for many mantis species - appropriately sized, easy to culture, and eagerly taken.`,
-      enrichment: `Mantises are highly visual, active hunters that track and stalk prey with their distinctive head-turning behavior. Watching a mantis hunt - the slow, swaying approach followed by a lightning-fast strike - is one of the most captivating behaviors in the invertebrate hobby. The prey of the day (and the hunting sequence) is the primary enrichment.
-
-Provide varied perching structures at different heights: branches, cork bark, artificial plants, and vertical surfaces. Mantises naturally vary their position throughout the day. Some docile species (Orchid Mantis, African Flower Mantis) can be gently handled - allow them to walk voluntarily from hand to hand. They may bite if startled or if fingers smell like prey.
-
-Their "alien" compound eyes, remarkable camouflage, and astonishing hunting behaviors make mantises among the most visually engaging invertebrate pets. They are genuinely fascinating display animals.`,
-      health: `Failed molts are the primary cause of mantis death in captivity. The mantis hangs upside down from the enclosure top to molt, pulling free of its old exoskeleton. If the enclosure is too short, too humid, too dry, or if the mantis is disturbed during this process, the molt fails and the mantis dies or is permanently injured. Always ensure adequate height (3 times the mantis length minimum) and an appropriate perch from which to hang.
-
-Maintain appropriate humidity for the species by misting one side of the enclosure once daily. Dehydration causes failed molts. Overcrowding and cannibalism are serious risks - always house mantises individually, one per enclosure. Even a mantis kept alone for weeks has been known to cannibalize a newly housed enclosure mate.
-
-Most pet mantis species have lifespans of 12 to 18 months. The hobby cycle for mantises is acquisition as a nymph, raising through multiple molts to adulthood, and a relatively short adult phase. Females live significantly longer than males.`,
-      checklist: [
-        "Tall vertical mesh or acrylic enclosure (3x height rule)",
-        "Vertical branch or stick for molting",
-        "Species-appropriate temperature range",
-        "Fruit flies (for nymphs) and appropriate live insects for adults",
-        "Feeding tongs or forceps",
-        "Fine misting bottle (daily humidity maintenance)",
-        "Digital thermometer and hygrometer",
-        "House individually (cannibalistic species)",
-        "Never disturb during molt",
-        "Secure ventilated lid",
+    emergencyCard: {
+      source: "praying-mantis-health-issues-guide",
+      callNow: [
+        "An incomplete shed, or limbs that come out twisted or stuck",
+        "A mantis struggling and not progressing during what should be a molt",
+        "A mantis that has fallen mid-molt, or lost its grip on the perch",
+        "A crooked or deformed limb after a molt, which can make normal hunting difficult",
+        "Regurgitation, which can come from overfeeding rather than illness",
+        "Mold visible in the enclosure, or a mantis declining in a tank that is being over-misted",
       ],
+      vetLine: "Exotic vets rarely treat invertebrates, so this list leans almost entirely on prevention rather than treatment. Humidity that's too low is the single biggest driver of the mismolt risk that accounts for most mantis deaths, and humidity that's too high invites mold and internal infection instead. A mantis that survives a mismolt with a crooked limb may need hand-feeding with fine-tip tongs going forward. There is little to be done once a molt has genuinely failed.",
     },
+    routes: [
+      { slug: "praying-mantis-cost-guide", line: "$15 to $35 for a common species, $85 to $145 for the setup around it, and the lifespan that changes what you are buying." },
+      { slug: "praying-mantis-tank-setup-guide", line: "8 by 8 by 12 as a floor, the perch drop that decides a molt, humidity by species, and what live prey to offer when." },
+      { slug: "praying-mantis-handling-guide", line: "Walk it onto your hand, keep the door shut, and the pre-molt window when you do not touch it at all." },
+      { slug: "praying-mantis-health-issues-guide", line: "Mismolt, which is most of it, plus dehydration, the opposite mistake, and why going off food is usually fine." },
+      { slug: "praying-mantis-enrichment-guide", line: "Why the only enrichment number that matters is a height, what the ceiling has to be, and the space to leave empty." },
+      { slug: "praying-mantis-ootheca-guide", line: "What an egg case is, whether a lone female can lay one, and what to have ready before dozens of nymphs arrive." },
+    ],
+    buyList: [
+      "Tall enclosure, at least 8 by 8 by 12 inches for an adult",
+      "Mesh, screen or rough material at the top to grip during a molt",
+      "Climbing branch that reaches the lid, which is also the molting perch",
+      "Coconut fiber, soil, bark or paper towel substrate",
+      "Fine mist spray bottle",
+      "Fine-tip feeding tongs",
+      "Digital thermometer and hygrometer",
+      "Fruit fly culture for a nymph, or bottle flies and small crickets for an adult",
+      "A vented 32-ounce deli cup, if you are starting with a nymph",
+    ],
     faqs: [
-      { q: "How long do praying mantises live?", a: "Most pet species live 12 to 18 months total. Females live significantly longer than males - males often die shortly after their final molt to adulthood, while females continue living and laying eggs for months. The typical keeper experience is acquiring a nymph, raising it through 6 to 9 molts over several months, enjoying the adult phase, and then the cycle ends. If you want continuous mantis keeping, plan to culture your own oothecae (egg cases) or establish a reliable supplier for juveniles." },
-      { q: "Can praying mantises be kept together?", a: "Never. Praying mantises are solitary, highly territorial, and cannibalistic with any insect they can catch - including a sibling they have lived next to for weeks. Even a mantis kept in complete isolation for months will immediately attempt to eat a newly introduced individual. Always house one per enclosure, no exceptions. The only intended exception is brief supervised mating, and even then the female frequently eats the male during or after the process." },
-      { q: "What do praying mantises eat?", a: "Live prey exclusively, sized to the mantis. Early nymphs eat fruit flies (Drosophila melanogaster). As they grow, progress to bottle flies, small crickets, and appropriately sized dubia roaches. Adults can handle larger crickets, mealworms, waxworms, and bottle flies. Prey should never exceed the space between the mantis's eyes in width. Feed every 2 to 3 days and always remove uneaten prey promptly - stress from live prey in the enclosure can interfere with molting." },
-      { q: "What causes failed molts in mantises?", a: "The top three causes are: enclosure too short (the mantis needs 3x its body length in height to hang and pull free of the old exoskeleton), humidity too low (dry conditions make the old skin brittle and hard to exit), and being disturbed during the molt. Never handle, disturb, or offer food when a mantis is hanging still from the cage top - this is pre-molt positioning. A mantis that gets stuck in a molt almost always dies. Prevention is the only viable approach." },
-      { q: "Can praying mantises be handled?", a: "Many docile species tolerate gentle handling well - Ghost Mantis, African Flower Mantis, and Chinese Mantis are commonly reported as calm on the hand. They may bite if startled or if fingers smell like prey (from handling insects), but the bite of most pet mantises is minor - more surprise than damage. Always let the mantis walk voluntarily onto your hand rather than grabbing it. Some individuals are more defensive than others; read the individual animal's posture before attempting contact." },
-      { q: "Are praying mantises good pets for beginners?", a: "Yes, as a display animal rather than a handling one. They're inexpensive, low-maintenance, and genuinely fascinating to watch hunt, but they must be housed alone (they're cannibalistic) and only live 12 to 18 months as adults, so go in knowing this is a shorter, more observational relationship than most other invertebrate pets on this site." },
+      { q: "Can mantids be kept together?", a: "No. They are cannibalistic and will eat each other at any size difference and often at none. Solo housing is the only sensible default outside of deliberate, supervised breeding." },
+      { q: "What happens if it is too short?", a: "The animal drops before it is fully out of the old skin, and a mantis that lands part-molted usually ends up with deformed limbs or dies. Failed molts are the leading cause of death in captive mantids and most of them are enclosure geometry." },
+      { q: "How long do praying mantises live, and how does that affect budgeting?", a: "Just 6 to 12 months for most kept species: Chinese mantises toward 8 to 12, African mantises closer to 6 to 9, with females typically outliving males. A few species reach around 18 months under excellent care. That makes it a very short commitment, closer to a garden project in length." },
     ],
   },
   {

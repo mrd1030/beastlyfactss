@@ -12370,3 +12370,701 @@ left in frontmatter and table cells, six on rosy boa and koi, the exact pattern
 READMEFIRST warns about from batches D to J; source narration reaching a hub row
 and hub FAQ again; and a rosy boa emergency card written from headings when the
 health guide had the list ready to copy."
+
+## Fire-Bellied Toad (2026-09-15, batch L, single pass, before the router hub)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment). One Opus agent, about 84k tokens. The review reads the
+old legacy hub; the router hub was built from its findings the same day. Raw
+output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The only page with a feeding schedule, dragged down by numbers the deep dives contradict. |
+| Encyclopedia | B | The chytrid trade history, and nothing to act on except "ask where it came from". |
+| Cost | C+ | The table does not add to the total it claims. |
+| Handling | A- | The staged warning display is the best writing in the set. |
+| Health issues | B+ | Red leg as emergency, fecal exam on arrival, calcium check on twitching. |
+| Tank setup | B | The most actionable page for the build. |
+| Enrichment | A | The only page that admits its evidence is borrowed. |
+
+Set grade: B-. "Strong, sourced, unusually honest deep dives sitting under a hub
+whose numbers contradict them on tank size, cost, heating, and feeders."
+
+The factual error. The old hub named this species' skin toxin as
+"pumiliotoxins", in its health section and again in a FAQ. Pumiliotoxins are
+dendrobatid alkaloids, sequestered from diet by poison dart frogs; Bombina
+orientalis produces nothing of the kind. The reader flagged it as reading like a
+memory error and was right. What the species actually secretes is a family of
+peptides called bombinins, alongside bombesin, which was first isolated from
+this animal in the 1970s and named after it (Xiang et al., 2017, Bioscience
+Reports, opened and added to the handling guide's Sources). The handling guide
+had it right but vague, "specific defensive peptides that have been identified
+and characterized in scientific research", and it now names them, in the body
+and in the FAQ that literally asks which toxin this animal has. The hub's
+version died with the rebuild. This is the first outright wrong fact, as opposed
+to a stale or conflicting figure, that a batch reader has caught.
+
+Hub versus the set, all resolved by the rebuild: tank size (20 gallon for 3 to 5
+adults against the setup guide's 10 gallon for one to three), layout (60/40
+water-to-land against roughly half and half, inverted), water depth, heating
+(the hub FAQ said never use an under-tank heater while the setup guide
+recommends a thermostat-controlled one), feeders (the hub listed mealworms as
+variety while the setup guide bans hard-shelled feeders for impaction risk),
+group size (3 to 6 against one to three), and every line of both cost tables.
+
+Numbers checker, before: 31 topic groups, 8 conflicting. Decisions:
+
+- Temperature, and this one was bigger than the reader could see. The page said
+  "65 to 75F, some sources allow up to about 78F" and the hub called the species
+  "distinctly cool-temperature". Both opened sources put the daytime band above
+  that ceiling: PetMD's care sheet by Maria Zayas, DVM (2023) gives "from 75 F to
+  78 F", with "should not exceed 82 F or fall below 65 F", and Amphibian Care
+  gives "Daytime temperatures should range from 72F to 78F and can drop at
+  night". The page's ceiling was where both sources put their floor. Settled at
+  72 to 78F through the day dropping at night, with 65F the floor and 82F the
+  hard ceiling, in the body, the FAQ and the seoDescription. This is the
+  gargoyle gecko pattern from batch H in a milder form: a page hedged toward a
+  thesis its own subject matter does not support. Species check: 72 to 78 was
+  a merge of the two sources' bands, and PetMD, the DVM-authored page, is the
+  higher tier, so the daytime band is now PetMD's 75 to 78F on every copy, with
+  the 65F floor and 82F ceiling unchanged.
+- Lifespan. Cost guide "10 to 15 commonly cited, with some sources putting the
+  range as wide as 10 to 20" against the encyclopedia's "Maximum longevity in
+  the wild is estimated at 20 years; up to 30 years in captivity". These never
+  actually conflicted, they were typical against maximum with the word missing.
+  ADW states both encyclopedia figures verbatim and Smithsonian's National Zoo
+  gives "frequently living to be 12 to 15 years old. In human care, they can
+  reach 20 years of age." The cost guide now says 10 to 15 to plan around with
+  20 in human care recorded and 30 the maximum on record. The encyclopedia was
+  right and was not touched.
+- The cost guide's setup table against its own heading. Five rows summing to $55
+  to $101 under a heading of $150 to $300, with a closing sentence claiming the
+  total was reached "once the tank, filter, conditioner, and substrate are all
+  accounted for", which are the rows. The page now says what the table is and
+  where the rest of the money goes (plants, hides, cork bark, lid, thermometer,
+  conditioner for the water changes).
+- Water depth. "Several inches" on the setup guide against the hub's 3 to 4.
+  Amphibian Care gives "The water depth should gradually slope to 3 inches,
+  although deeper water can be provided", so the vague half became the sourced
+  one.
+
+Sources. The cost guide and the tank setup guide both carried no `<Sources>`
+block at all, which is why every conflict above resolved against them. Both
+gained one: PetMD, Amphibian Care and Smithsonian on setup; PetMD, Smithsonian
+and ADW on cost. The cost guide also gained the "Prices last checked" line RULES
+asks for, which it had never had despite quoting retail prices.
+
+This species has no feeding guide, so the standing move applied for the sixth
+time (after Russian tortoise, tokay gecko, California kingsnake, savannah
+monitor and tiger salamander): a sourced Diet Basics section in the tank setup
+guide. It carries the staples both sources agree on, the schedule (two to six
+items per toad every two to three days for an adult, juveniles daily in smaller
+quantities, ceiling of what the animal clears in 15 minutes), gut-loading, and
+the supplement cadence. Species check: the schedule is Amphibian Care's, not a
+point both sources agree on. PetMD has juveniles every other day and adults
+"may only need to eat once or twice a week". Left as written because
+Smithsonian's own feeding practice, small crickets three times a week, sits
+with Amphibian Care's every two to three days rather than PetMD's hedged
+weekly figure; worth Mike's eye, since the vet-tier source is the outlier. That also answers the reader's first "not covered
+anywhere" item, how much to feed per toad per session.
+
+Deep dives against each other, and one divergence recorded rather than acted on:
+PetMD's list of acceptable feeders includes mealworms, while the tank setup
+guide bans them along with other hard-shelled feeders on the same impaction
+reasoning it uses to ban small gravel. The ban is the conservative instruction,
+it is internally consistent with the health guide's impaction section, and
+weakening it would be a hedge change, so it stays and the new Diet Basics
+section lists the staples without mealworms. Recorded here so the next reader
+finds the decision.
+
+Links: 5 added (cost to health on the wild-caught fecal exam, setup to health on
+impaction, health to the shared amphibian quarantine guide, handling to the
+shared Salmonella guide, enrichment to health on untreated tap water). The
+reader's hub and encyclopedia suggestions are answered by hub rows and by the
+encyclopedia having no link slot.
+
+Dates: cost, tank setup and handling bumped to 2026-09-15, each having changed a
+fact. Health issues and enrichment changed links only and were not bumped.
+
+Gaps, checked against the Health and More list first: cycling and testing the
+water section, brumation or seasonal cooling, sexing and calling, choosing a
+healthy animal in a mostly wild-caught trade, and keeping a room under the
+ceiling beyond a fan. All filed in docs/READER_LOG.md. The cooling one is real:
+the shared axolotl tubbing and cooling guide is written for a sick axolotl, not
+a warm room.
+
+Left open: the encyclopedia's adult size of "1.5-2 inches (4-5 cm)" against
+ADW's wider "3.5 to 8 cm". Smithsonian gives "a maximum length of 2 inches",
+which supports the encyclopedia, and no deep dive states a size, so nothing
+conflicts and the one-field rule keeps it out of scope.
+
+## Quaker Parakeet (2026-09-15, batch L, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 96k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | Cage spec, toxic foods, the fumes warning, a checklist. |
+| Encyclopedia | B | Honest about the JFK crate myth. |
+| Cost | A- | The only page with numbers to budget from, dated and attributed. |
+| Handling | D | Finished it, then distrusted it. Its state list contradicts the legal guide, and nothing in it teaches handling. |
+| Health issues | B | The symptom lists and the vet-first rule. |
+| Tank setup | C | Thin, and half template. |
+| Enrichment | A | The most actionable page in the set. |
+| Legal | A | The best-written page here. |
+
+Set grade: B-. "Two genuinely excellent pages and one solid money page carrying
+a legal page that contradicts them and a cage page that is half template."
+
+The law, and this is the sharpest cross-page contradiction any batch reader has
+found. The handling guide carried its own state list: ten "commonly cited
+outright bans" including Tennessee, three ban-with-exceptions, three
+legal-with-conditions, closing on "Sources genuinely disagree on the exact
+count." The legal guide had already read all 52 jurisdictions against the codes
+themselves (58 Pa. Code ch. 137, K.A.R. 115-18-10, 4 Va. Admin. Code 15-30-40,
+166 Neb. Admin. Code ch. 8, Wis. Admin. Code NR 40, plus Avery et al. 2002 for
+the power-outage figures) and found thirteen banned outright, three permit,
+Virginia banded, Tennessee unresolved. The reader listed the flips: Maine and
+Rhode Island ban to permit, Colorado, Connecticut and Wisconsin conditional to
+banned, Nebraska and Vermont appearing from nowhere, Tennessee banned to
+unresolved, and New York's banding requirement, which the legal guide finds
+nothing to support. Ohio's flight-feather clipping appears on the handling guide
+and the old hub and nowhere in the legal guide's reading of Ohio.
+
+The handling guide loses the whole list and defers to the legal guide, which is
+both the subject-matter page and the one with primary sources. Its sourced New
+Jersey paragraph, which cites N.J.A.C. directly, stays. The reader called this
+link "the single most needed in the set" and it is now there.
+
+Numbers checker, before: 23 topic groups, 8 conflicting. Decisions:
+
+- Cage minimum. Old hub 24x24x30 against the setup guide's 24x24x36. VCA's
+  Quaker page states "Minimum 2 ft x 2 ft x 3 ft long (60 cm x 60 cm x 90 cm)",
+  which is the setup guide's figure exactly. Hub prose retired.
+- Pellet share, and this one was low in the unsafe direction. The old hub said
+  pellets "should make up roughly 60 to 70 percent of intake". VCA's
+  species-specific feeding page says "Pellets should ideally represent a minimum
+  of 70% of the bird's diet", with fruits, vegetables and greens "no more than
+  20-40% of the daily diet" and seed "only a very small part of a balanced diet
+  and never be the entire diet". The corrected figures went into the new Diet
+  Basics section, and that VCA page is now in the tank setup guide's Sources.
+- Running cost. The old hub's annual table summed to about $27 to $55 a month
+  against the cost guide's stated $40 to $110, driven by a $200 to $400 fresh
+  produce line for an eleven inch bird. Retired with the hub's tables.
+- Vet. Old hub "$90 to $200" against the cost guide's "$78 to $115" for an
+  established-client wellness exam, a figure that page takes from three named
+  clinics' published price lists. Retired.
+- Shreddable material, a direct instruction contradiction and the one the
+  reader caught that the checker could not. Handling: "Reserve shredding toys
+  for play areas, never the cage itself". Enrichment makes weaving material into
+  the cage bars priority one, and both the setup guide and the old hub agree
+  with enrichment. Three pages against one, and the enrichment guide is the one
+  carrying the cited foraging evidence. The handling guide's blanket ban is
+  replaced by the enrichment guide's actual rule: give the material, watch for
+  cage aggression in spring, scale it back if it appears instead of cutting it
+  off, and never add a nest box.
+
+UVB, the reader's template-bones finding. The tank setup guide stated "Roughly 3
+to 4 hours of daily UVB exposure supports healthy vitamin D and calcium
+metabolism" as a requirement. No other page in the set mentions it and no cost
+table budgets a lamp. Lafeber's own answer on bird lighting says there are "no
+scientific studies on lighting", that full spectrum is "optional", that up to 4
+hours daily is the conservative figure for a standard bulb, and that "most pet
+birds have never had any special lighting and they do just fine". The 4 hour
+figure stays and the framing moves from requirement to optional, with the
+absence of controlled evidence stated plainly.
+
+The recommended cage does not meet the stated minimum, which the reader caught
+and nothing else would have. The cost guide prices a Prevue flight cage at 31 by
+20 by 53 inches. Twenty inches deep is under the 24 inch minimum the setup guide
+and VCA both give. The cage is not wrong to recommend, it buys the room back in
+width and height, but a reader shopping from that line deserves to know, and the
+page now says so.
+
+This species has no feeding guide, the seventh in a row this has come up on. The
+sourced Diet Basics section went into the tank setup guide as usual.
+
+Links: 2 added and 3 cut back. The handling guide's legal link and the health
+guide's quarantine link both went in. Three more (cost to setup, handling to
+enrichment, enrichment to legal) were written and then removed, because each of
+those articles already carried its one sibling link and the checker errors on
+two. In each case the correction stayed and only the link came out.
+
+Dates: cost, handling and tank setup bumped to 2026-09-15. Health issues and
+enrichment changed links only. The legal guide was not touched.
+
+Not fixed, recorded: the health guide names MSD, VCA and Merck inline as
+hyperlinks mid-sentence, which is the source-narration shape RULES describes.
+Left alone on this pass. On a disease page where three veterinary manuals each
+contribute a different part of one symptom list, the attribution is arguably
+doing real work, and the reader did not flag it. Worth a decision rather than a
+quiet edit.
+
+Gaps, checked against the Health and More list, which for this species is
+unusually deep and already covers training, wing clipping, quarantine,
+droppings, weight, emergencies and succession: a daily feeding portion, one bird
+or two and how to introduce a second, a cage cleaning cadence, bathing
+frequency, and what an owner actually does if they have to move to a ban state.
+All filed in docs/READER_LOG.md.
+
+## Molly (2026-09-15, batch L, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 91k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | Short, and every section is a compressed reprint of a deep dive. |
+| Encyclopedia | B | The Mollienesia and black molly history is the only thing here I could not get elsewhere. |
+| Cost | B+ | I can budget: $2 to $8 a fish, $130 to $260 setup, $20 to $30 a month. |
+| Handling | B | Sexing, one male to two or three females, separate or single-sex groups. |
+| Health issues | A- | Shimmy protocol, salt types, quarantine 2 to 3 weeks. |
+| Tank setup | A- | 20 long, lid, 4x turnover, pH 7.5 to 8.5, 2 to 4 week cycle. |
+| Feeding | B+ | Adults once or twice daily, blanched veg 2 to 3 times a week, bloodworms capped at 3. |
+| Enrichment | A- | Grazing surface, hard water over salt, spread the food. |
+
+Set grade: B. "The deep dives are specific, sourced and unusually honest about
+what is disputed; the hub they hang off is a lossy summary that contradicts
+them."
+
+Two ranges settled, and both went to the same source. The tank setup and health
+guides each cite PetMD's molly care sheet, a vet-tier species-specific page,
+which is where the ranking sends a husbandry number when the two pages that
+carry it disagree.
+
+- Temperature. The old hub said "Keep water between 72 and 78 degrees F," which
+  sits below the health guide's own shimmy fix of "Raise the temperature toward
+  the 76 to 80°F range." The tank setup guide said "roughly 72 to 80°F, with
+  some sources extending the tolerated upper end to 82°F." PetMD states
+  "72-82 F". That is now the species range on every page, and the narration
+  about what some sources extend is gone rather than converted into a wider
+  claim of safety. Aquarium Co-Op's narrower 75 to 80 loses on tier, not on
+  disagreement: 76 to 80 stays where it belongs, as the shimmy treatment
+  target, and it sits inside the range.
+- pH. Tank setup: "Mollies do best with a pH of 7.5 to 8.5, tolerating down to
+  around 7.0." Health: "check and correct pH toward 7.0 to 8.0." The reader put
+  it exactly right, that the health guide's target floor is the tank setup
+  guide's tolerance floor, so a keeper correcting a shimmy case was aiming at
+  the bottom of the tolerated band. PetMD states "7.5-8.5". Both pages now say
+  that, and the unsourced tolerance floor came out with it.
+
+The salt dose, which is the hub turning a treatment into a habit. Hub FAQ:
+"commonly around a tablespoon per 5 gallons if you use it." Tank setup: the
+same dose, but "in a hospital tank... a targeted treatment context, not
+necessarily a standing requirement for every molly tank." The router hub carries
+the deep dive's sentence whole, treatment context included.
+
+Numbers checker, before: 26 topic groups, 4 conflicting on value. Also fixed:
+
+- Balloon and lyretail price. The cost guide's body said "$6 to $7 each" after
+  the retail names came out of the prose on the earlier pass, while its own FAQ
+  still said "$6 to $8." Both now read $6 to $7, and the hub copies it.
+- Aquarium salt. The reader caught a three-way split: $20 to $22 on the hub,
+  a flat $20 in the cost table, $21.72 in the body. One container, one number,
+  $22, and the retailer name came off the link text.
+- Tank size in the enrichment FAQ. "Some varieties reach a size that makes a
+  ten gallon inadequate" against a 20 gallon minimum on four other pages. The
+  body of that same guide already said 20 gallon long; only the FAQ had
+  drifted, and it now matches.
+
+The all-male group, an instruction the reader found incomplete rather than
+wrong. Handling: "Keep a males-only group for a colorful, breeding-free
+display." Enrichment carries the caveat handling omits, that "male mollies
+squabble among themselves more than male guppies do, so it needs space and
+numbers rather than a trio." Handling now carries it too, in body and FAQ,
+because it is the page a keeper reads while deciding.
+
+The sulcata tortoise link, cut. A molly lifespan paragraph detoured into what a
+multi-decade reptile costs. The reader called it "dropped into a molly budget
+for no reason" and that is the right reading: it is a link-carrying sentence,
+which RULES rules out.
+
+Links: 6 added, five to shared aquarium guides rather than siblings, which is
+where the reader's own list pointed. Cost to the filtration guide on sizing a
+filter to a bioload. Health to the hospital tank guide on the
+sentence that says isolating a fish is standard practice and never said where.
+Handling to the cycling guide on the first-timer mistake it names. Tank setup
+and enrichment to the pH, GH and KH guide, one on soft tap water and one on the
+test kit. Feeding to the molly health guide on uneaten food, the set's one
+sibling link, which is the limit. The reader's structural note, that "nearly
+every in-body link goes to a guppy page," was the real finding here.
+
+Dates: cost, handling, health issues and tank setup bumped to 2026-09-15.
+Feeding changed links only. Enrichment is future-dated and was not bumped.
+
+Not fixed, recorded: the cost guide's Sources block still lists Splashy Fish
+Store, a retailer page, which RULES does not want as a source. Deleting a
+Sources entry is off the table on this pass, so it stays flagged.
+
+Gaps, checked against the Health and More list, which already covers cycling,
+filtration, water chemistry, the hospital tank, power outages and spotting a
+sick fish: tankmates and stocking density, acclimating a fancy molly out of
+hard shipping water, a hardness target in actual dGH, what happens to fry after
+birth, and juvenile feeding amounts, which the feeding guide itself flags as
+thin. All filed in docs/READER_LOG.md.
+
+## Praying Mantis (2026-09-15, batch L, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 87k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | Its numbers are the ones the deep dives contradict. |
+| Encyclopedia | A- | The Chinese mantis is the cheap, legal, easy first species, and that is why it is everywhere. |
+| Cost | C+ | Finished it, then stopped trusting the totals. |
+| Handling | B+ | Closed room only, hands off in pre-molt, never two in a box. |
+| Health issues | A- | Mesh not solid, a hunger strike is usually pre-molt, a honey drop for a flagging animal. |
+| Tank setup | A | 8x8x12 floor, mesh lid, room temperature, no UVB, 12 hour light cycle. |
+| Enrichment | B+ | The priority list, keep the space under the ceiling empty, release prey rather than present it. |
+| Ootheca | A- | Individual cups and fruit flies staged before the hatch, freeze it if I do not want a brood. |
+
+Set grade: B. "The deep dives are genuinely good and the hub undercuts them with
+contradictory numbers on the exact figures a buyer checks first."
+
+This is the thinnest-sourced set a batch reader has been handed. Three of the six
+deep dives, health issues, ootheca and tank setup, carried no Sources block at
+all, and the three that did leaned on ThePricer, Lobo Mantis and 903Pets. Every
+husbandry number below was researched properly before it was pinned, and all
+three pages now carry a Sources block.
+
+The hub was legacy and said so in its own comment, "Rough starting ranges, not
+verified current pricing." Every figure on it lost:
+
+- Lifespan. Hub: "Most pet mantis species have lifespans of 12 to 18 months."
+  Cost guide: "just 6 to 12 months total, Chinese mantises toward 8 to 12
+  months, African mantises closer to 6 to 9." Animal Diversity Web gives
+  *Tenodera aridifolia* "6 to 9 months in the wild" and says the same applies
+  in captivity; Reptile Supply's Chinese mantis sheet says "Total lifespan is
+  8-12 months, depending on sex." Both land on the cost guide's numbers, not
+  the hub's. The Amateur Entomologists' Society does say "Mantids will live for
+  12 to 18 months," which is where the hub's figure came from, and it is the
+  outlier of the three. The cost guide already carries 18 months as the
+  excellent-care ceiling, which is where that claim belongs.
+- Enclosure price. Hub "$15 to $35" against the cost guide table's "$60 to
+  $70". The ranges do not touch, as the reader put it.
+- Feeders. Hub "$30 to $60" a year against "$10 to $40 a Month," which is $120
+  to $480. An eightfold gap.
+- Enclosure size. Hub "a 12x12x18 inch mesh or acrylic enclosure (for adults)"
+  against the setup guide's 8 by 8 by 12. Two independent sources back the
+  setup guide: Keeping Insects gives "at least 3x longer than the body length
+  praying mantis and 2x wider," and Reptile Supply gives the same rule plus the
+  same dimensions, "at least 8"L x 8"W x 12"H."
+- Temperature. Hub "75 to 85 degrees F" and separately "72 to 95," against a
+  setup guide that said only "normal room temperature" and gave no number. The
+  reader's line was the useful one: "My room is 70." Reptile Supply puts the
+  Chinese mantis at "70-80°F" with "avoid temperatures above 88°F," and AES
+  gives 20 to 25°C, which is 68 to 77. The setup guide now carries 70 to 80
+  with 88 as the ceiling, and the hub copies it.
+- The molting stick, priced and checklisted separately on the hub where the
+  cost guide says "this is one line item, not two."
+- Nymph or adult, a direct instruction contradiction. Hub FAQ: "The typical
+  keeper experience is acquiring a nymph, raising it through 6 to 9 molts."
+  Cost guide: "Buy an adult or subadult, not a nymph."
+
+The clearance rule, where the two deep dives disagreed with each other.
+Enrichment: "clear vertical space beneath it of at least three times its body
+length." Tank setup: "roughly twice the mantis's body height." Neither was
+sourced, and the sources say the 3x figure is the enclosure's total height, not
+the drop below the perch. So both pages now carry the same two numbers: three
+times the body length in enclosure height, from Keeping Insects and Reptile
+Supply, and four times it in the drop from the top of the perch to the floor,
+from AES, which is stricter and is the measurement a molt actually depends on.
+The setup guide works that through against the 8 by 8 by 12 enclosure it
+recommends, which covers a mantis up to about three inches and no more. That is
+a thing the page could not say before and a reader shopping from it should know.
+
+Humidity, which nobody had pinned. The setup guide gave "60 to 80% depending on
+the species" and then said temperate species need less without saying how much
+less. Reptile Supply puts the Chinese mantis at "50-65%," below the old floor.
+The page now gives the split concretely, temperate around 50 to 65 and tropical
+Ghost and Orchid at 70 to 80, and adds what AES and Keeping Insects both say
+about droplets: that is how a mantis drinks, and standing water drowns nymphs.
+
+The cost guide against its own table, which the reader caught and the checker
+could not. The table runs $117 to $221 including the mantis; the text said "most
+first-time setups land around $50 to $150." The page now states the required
+lines at $85 to $115, the full setup with the optional spray bottle and tongs at
+$100 to $145, and $115 to $220 with the animal. The seoTitle, seoDescription,
+description and FAQ all carried the retired $50 figure and all four are fixed,
+which is the frontmatter failure mode batch K filed and this batch keeps hitting.
+
+This species has no feeding guide, so the sourced Diet Basics section went into
+the tank setup guide as usual. It carries the prey-size rule from Reptile Supply,
+"no larger than 1/3 of the mantis' length," which replaces the hub-only rule
+about the space between the mantis's eyes that no source or deep dive carried.
+Feeding frequency is Reptile Supply's "every other day, as much as your mantis
+will take," with Keeping Insects' honest "every one to four days" as the spread.
+
+Checked and left alone: the reader called "the only insect that can turn its head
+180 degrees" an overreach. It is not. Multiple natural history sources state it
+directly, and the fun fact stands.
+
+Also fixed: the handling guide's unsourced "mantises can jump or fly a surprising
+distance, roughly twice their own body length," which understates the actual
+failure mode the reader named. The number is gone rather than replaced with
+another invented one, and the sentence now says what is true, that the winged
+adults of commonly kept species fly and can cross a room. Species check: the
+same figure survived in the handling guide's FAQ and FunFact and was cut from
+both there. The enrichment guide's
+"An tall nano terrarium" typo is fixed.
+
+Links: 5 added. Tank setup to health issues on the mold and infection warning.
+Health issues to tank setup on vertical space. Handling to health issues on the
+mantis that stops eating. Cost to health issues on why a nymph is harder. Ootheca
+to handling on the one-per-container rule. That is the reader's own list, minus
+its hub and encyclopedia entries, which the router hub's routes cover.
+
+Dates: cost, handling, health issues and tank setup bumped to 2026-09-15.
+Enrichment is future-dated and was not bumped. Ootheca changed links and gained
+a Sources block, no figure.
+
+Not fixed, recorded: the ootheca guide carries two pre-existing voice errors,
+an intensifier in the heading "What an Ootheca Actually Is" and one in an FAQ
+answer. Both predate this pass and neither is a figure, so they stay flagged
+rather than swept into a reader-driven commit.
+
+Gaps, checked against the Health and More list, which covers pesticides,
+rehousing, emergencies, shipping and stocking, plus the invertebrate molting
+guide that is body-linked from two pages: sexing a mantis, an enclosure cleaning
+schedule, culturing feeder insects including the bottle fly pupae the old hub
+said you hatch at home, hand-feeding a mismolted mantis, and recapturing an
+escaped one. All filed in docs/READER_LOG.md.
+
+## Argentine Tegu (2026-09-15, batch L, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 92k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C- | The page I trust least. |
+| Encyclopedia | B | Scientific name, size range, the Florida invasion history and the 2021 date. |
+| Cost | B- | Animal price by morph, vet ranges, and the warning that the priced enclosure is not the one I need. |
+| Handling | A- | Best-sourced page here: stress signals, approach from the side, two handlers, bite protocol. |
+| Health issues | C+ | Says the same three things three times. No numbers, no feeding schedule. |
+| Tank setup | A- | The most buildable page in the set. |
+| Enrichment | A | The opening admission bought a lot of goodwill. |
+| Legal | B- | Florida dates, the closed window, the 2025 caging rule. Undercut by contradicting itself. |
+
+Set grade: B-. "Three of the deep dives are genuinely good, and the hub that
+everyone lands on first contradicts them on the two decisions that cost the most
+money."
+
+This set nearly did not get read at all, and that is the finding worth recording
+first. The tegu hub's guide id is `tegu`; every one of its deep dives is
+`argentine-tegu-*`. Both scripts/reader-extract.mjs and
+scripts/check-species-numbers.mjs matched a species' own articles by slug
+prefix, so both handed back a hub and an encyclopedia entry and nothing else.
+The numbers checker had been reporting four advisory groups on a species whose
+hub turns out to disagree with five deep dives, and it reported them clean
+because it could not see the deep dives. Both scripts now also accept an article
+whose slug ends in a standard suffix and whose base name and the guide id
+contain one another. Page counts are unchanged for praying mantis, ball python,
+rosy boa, goldfish, molly, koi and bearded dragon. This is the second class of
+silent blind spot the extractor has had, after the goldfish myth page, and both
+were found by a reader rather than by a check.
+
+The taxonomy error, which is the sharpest thing in the set. The tank setup guide
+called the savannah monitor "another large monitor family lizard needing a
+similarly sized enclosure" and the cost guide called it "that other large
+monitor family lizard," on a site whose own hub FAQ says plainly that tegus
+"(family Teiidae) are New World lizards" while monitors "belong to a completely
+separate Old World family (Varanidae)," and whose enrichment guide is built
+around borrowing varanid evidence honestly *because* they are not related. Both
+sentences now describe the savannah monitor as a lizard of comparable size from
+a different family, which is the actual reason the comparison is worth making.
+
+The feeding gap, which was the reader's second requested change and the one that
+made the health guide incoherent. That page blames obesity on "continuing a
+juvenile feeding schedule into adulthood" and prescribes "an appropriate feeding
+schedule for an adult's actual needs" without stating one, anywhere in eight
+pages. LafeberVet's tegu care sheet, which the handling guide already cites,
+gives it directly: "Young tegus should be fed every day. Tegus between 1-3 years
+old should be fed every other day and once they exceed 3 years of age, tegus can
+be fed every 3 days," alongside "Adult tegus are prone to obesity. Monitor body
+weight regularly and provide sufficient time and room for exercise" and the
+supplement schedule, calcium without D3 at every meal and a multivitamin weekly,
+which "do not vary with age." That is now a sourced Diet Basics section in the
+tank setup guide, the standing move for a species with no feeding guide, and the
+health guide's obesity section carries the schedule instead of gesturing at one.
+
+Bowl feeding, where two deep dives read as contradicting each other and turned
+out to be answering different questions. Handling had LafeberVet's "feed from a
+bowl or with tongs"; enrichment had "Do not bowl-feed an animal this
+investigative." LafeberVet's full sentence is about bite prevention, "Prevent
+accidental bites from your hungry lizard by feeding from a bowl or with tongs,"
+with a separate paper-lined feeding enclosure offered as a third option. The
+rule is that nothing goes from your hand. A bowl, tongs, a puzzle feeder and a
+separate feeding container all satisfy it, and the enrichment guide's objection
+is to a bowl being the only way the animal ever meets food. Both pages now say
+that, and neither has to lose.
+
+The legal guide's contradiction, which was a structural accident rather than a
+disagreement. Nine jurisdiction rows, each with three cells, had been appended
+into the Florida *timeline* table, which has two columns headed "Date" and "What
+Happened." The reader saw states jammed under a date header, and the page's
+prose had never been updated to match: the intro still said Florida was the
+whole story, the "What About Other States?" section still said Florida is "the
+one fully documented, verified rule we found," and the FAQ asking whether tegus
+are restricted anywhere else answered that there is no nationwide ban and said
+nothing about the nine. The rows now sit in their own table under that section,
+with a paragraph that splits them three ways, ban, permit, and source-dependent,
+and the FAQ and intro both name them. Alabama gets called out specifically
+because it bans at genus level, so a buyer checking only for "Argentine" misses
+that a Colombian tegu is caught too.
+
+The hub itself, where every figure lost. Substrate at "4 to 6 inches minimum"
+against 12 to 18 inches or more, and priced to match at $60 to $120, on a species
+whose enrichment guide calls depth "the largest single enclosure choice."
+Brumation as "a natural and necessary part of tegu biology" you must not
+"prevent or interrupt," against the handling guide's "isn't required for a
+non-breeding pet tegu, and skipping it isn't harmful," at 3 to 5 months against
+2 to 4 on two deep dives. A thermostat at $40 to $70 against the cost guide's $17
+to $23, UVB at $80 to $120 against $65 to $75, a vet check at $70 to $120 against
+a $50 to $135 exam, and a setup table topping out near $1,640 on a page whose own
+cost guide says the build "often exceeds $1,000 to $3,000." It also gave no
+humidity figure at all while blaming husbandry for respiratory infection, and
+never mentioned Florida, which the cost guide treats as the first thing a buyer
+needs to know. The router hub opens on the law for that reason.
+
+Adult size goes to the handling guide rather than the hub, because it is the only
+page that names its sources and the gap between them: LafeberVet at up to 5.2
+feet and 11 pounds, ReptiFiles at up to 5 feet and 15 pounds. The hub's own
+3.5 to 4.5 for males and 2.5 to 3.5 for females had nothing behind it.
+
+The four shared reptile rows on the new hub were drafted from memory and then
+checked against the guides they cite, which caught three wrong ones: a quarantine
+row that invented "long enough to see a full feeding and shedding cycle" where
+the guide gives Merck's 3 to 6 months, a thermostat row that had the probe advice
+roughly right but not the guide's actual rule about probe placement, and an
+emergency row that gave no figure where the guide has one. Worth keeping as a
+habit: a shared-guide row is copied, not recalled.
+
+Links: 5 added. Setup to the heating and thermostats guide on the thermostat
+sentence, health to setup on the MBD UVB spec, handling to the Salmonella guide,
+enrichment to setup on the basking and UVB line that outranks enrichment, and
+cost to setup on the DIY build sentence that previously pointed only at a
+different species. That is the reader's list, minus its hub and encyclopedia
+entries, which the router hub covers.
+
+One product went stranded when the hub's cost table retired: the high-wattage
+basking fixture was reachable only through that table. It now sits on the cost
+guide's "Basking and radiant heat sources" row, in the table rather than in
+prose, because the setup guide was already at the five inline-link cap.
+Reachability is back to 234 of 269.
+
+Dates: cost, handling, health issues, legal and tank setup bumped to 2026-09-15.
+Enrichment changed one link only.
+
+Not fixed, recorded: LafeberVet gives a smaller enclosure minimum, 6ft x 3ft x
+3ft, and a cooler basking range, 95 to 100F, than the setup guide's 8x4x4 and 100
+to 115F. The two deep dives agree with each other and the reader graded that page
+A-, so the figures stand on this pass, but a vet-tier source sitting below the
+site's own numbers on both is worth a deliberate decision rather than a quiet
+edit. Also recorded: `argentine-tegus-are-not-venomous.mdx` carries two
+pre-existing voice errors that predate this pass.
+
+Gaps, checked against the Health and More list, which for this species covers
+emergencies, stool and hydration, Salmonella, thermostats, quarantine, outdoor
+housing and shedding: how to choose a breeder and assess a healthy juvenile,
+lifting and supporting an adult beyond "two people," tegu-proofing a room for the
+free roam every page assumes, the brumation ramp-down protocol, what an 8x4x4 DIY
+build actually costs, and sexing. All filed in docs/READER_LOG.md.
+
+## Fire-bellied toad, quaker parakeet, molly, praying mantis, argentine tegu (2026-09-15, batch L species check)
+
+One Fable agent over the whole branch after all five were pushed, base ab92382.
+Fixes committed on the branch as dd7fdbe. Pass grade B. Nothing merged.
+
+### The finding that set the grade
+
+The batch cited a paper and then wrote a claim that paper contradicts. The toad
+handling guide, its FAQ and the hub's toxin row all said bombesin "was first
+isolated from this very animal and named after it." Xiang et al. 2017, which
+this batch added to that guide's Sources on this very pass, says it was isolated
+from *Bombina variegata* and named after the genus. Now "first isolated from the
+skin of a related European fire-bellied toad and named after the genus."
+
+That is worse than citing nothing, because the citation is what makes the wrong
+sentence look checked. Read the source back against the sentence you wrote, not
+just against the number you took from it.
+
+### Two ranking calls the batch got wrong, and one it got right
+
+Toad temperature, wrong. The batch settled 72 to 78F. PetMD, the DVM-authored
+source, says "from 75 F to 78 F" with "should not exceed 82 F or fall below
+65 F"; Amphibian Care says 72 to 78. 72 to 78 was a merge of the two bands
+rather than a ranking of them. Fixed to 75 to 78F in the setup body, FAQ,
+seoDescription and the hub row.
+
+Toad feeding schedule, a false claim in the review file rather than in the
+content. The review said the new Diet Basics section "carries the schedule both
+sources agree on." They do not agree: PetMD gives juveniles every other day and
+adults "once or twice a week," and the page's every two to three days is
+Amphibian Care's. The check left the page as written, because Smithsonian, which
+outranks both, feeds its adults three times a week, which sits with Amphibian
+Care. Recorded here because a vet-tier source is the outlier and that is worth
+Mike's decision rather than a quiet one.
+
+Molly temperature and pH, right, and specifically not the batch K shape. PetMD
+states "72-82 F" and "7.5-8.5," it sits in both pages' Sources, and it outranks
+Aquarium Co-Op. The hedge came off a range and the claim did not widen.
+
+### The defects that repeat
+
+Emergency cards written rather than copied, five bullets across four species.
+A quaker bullet about "respiratory signs in the bird alongside flu-like illness
+in the household" that the health guide never says. A tegu retained-shed bullet
+that appears nowhere, while the guide's own parasites item was left out. A mantis
+bullet hardening the guide's "difficult" into "impossible," and another stating
+a regurgitation threshold the guide does not give. Batch K built the rosy boa
+card from section headings; batch F did the same on sugar glider. Every bullet
+is a sentence that already exists on the health guide, found by grep.
+
+Retired figures surviving in frontmatter and FunFacts, on the species where the
+review file said they were gone. The mantis cost guide's seoTitle, seoDescription
+and description still said $150 after the body moved to $145. The handling guide's
+FAQ and FunFact still carried the jump figure the review claimed was removed. The
+setup guide's FunFact still stated the clearance rule that same pass had
+redefined. FunFacts are frontmatter's blind spot twin.
+
+A number left behind on a page the batch did not open: the quaker health guide
+still said pellets are "roughly 60 to 70% of intake" after the batch settled
+VCA's minimum 70 percent everywhere else. Fixed and the date bumped with it.
+
+Source names in hub rows, five of them, two tegu and three molly. The tegu adult
+size row quoted LafeberVet against ReptiFiles by name, copied from a handling
+guide sentence that legitimately narrates the gap; the row now takes the
+encyclopedia figure and the handling rule moved to its own row in the article's
+words.
+
+### Counts the review file had wrong
+
+Links added: molly 6 not 5 (cost to filtration was unlisted), quaker 2 not 3,
+tegu 5 not 6. All corrected in those sections.
+
+### Gates on dd7fdbe
+
+check-internal-links, check-related-articles, check-affiliate-mdx,
+check-cost-coverage (234/269 reachable), check-seo-tags, check-hub-faqs,
+check-encyclopedia, check-voice --strict (0 errors) and `npx eslint . --quiet`
+all pass. Voice warning counts per changed slug are identical to ab92382 across
+all 27 changed files.
+
+check-species-numbers --strict exits 1 for all five, as it does for bearded
+dragon, koi and rosy boa on main, because any multi-value topic group counts as
+a conflict including the benign topic-label groupings. The substantive condition
+is what holds: every hub sentence was checked against its source article by a
+verbatim-sentence script plus grep, and no hub line disagrees with a deep dive.
+
+### Left open
+
+The tegu handling guide's pre-existing sentence naming LafeberVet against
+ReptiFiles on adult size still stands in the article, outside this batch's diff.
+The toad water depth stays at Amphibian Care's "about 3 inches" against PetMD's
+"1- to 2-inch-deep," because PetMD's figure would contradict the page's standing
+"deep enough to genuinely swim" instruction, which is a claim this batch could
+not change on its own. Both want a decision rather than a quiet edit.

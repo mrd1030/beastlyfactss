@@ -184,8 +184,22 @@ const bySuffix = fs.readdirSync('content/guides').filter((f) => f.startsWith(spe
 // shows them same as the rest. The suffix glob alone missed
 // goldfish-tank-size-bowl-myth.mdx, so a reader never saw it even though it
 // was the page the size numbers actually came from.
+//
+// A guide id doesn't always prefix its own articles: the tegu hub is
+// `tegu` and its deep dives are all `argentine-tegu-*`, so the prefix test
+// alone handed the reader a hub and an encyclopedia entry and nothing else.
+// A wired, non-shared article whose slug ends in one of the standard suffixes
+// counts as this species' own when its base name and the guide id contain one
+// another, which is what catches the longer-name case without dragging in
+// another species' pages.
+const suffixRe = new RegExp(`-(${order.join('|')})-guide$`);
+const ownByName = (slug) => {
+  if (slug.startsWith(species + '-')) return true;
+  const base = slug.replace(suffixRe, '');
+  return base !== slug && (base.includes(species) || species.includes(base));
+};
 const wired = getRelatedArticleSlugs(species, posts)
-  .filter((slug) => slug.startsWith(species + '-') && !isSharedDeepDiveArticle(slug))
+  .filter((slug) => ownByName(slug) && !isSharedDeepDiveArticle(slug))
   .map((slug) => slug + '.mdx')
   .filter((f) => fs.existsSync(path.join('content/guides', f)));
 const files = Array.from(new Set([...bySuffix, ...wired]));
@@ -199,7 +213,7 @@ files.forEach((f, i) => {
   const slug = f.replace(/\.mdx$/, '');
   const title = /^title: "(.*)"$/m.exec(fm)?.[1] || slug;
   const text = `ARTICLE: ${title}\n\n` + renderBody(body, slug) + frontmatterFaqs(fm);
-  const name = `${String(i + 2).padStart(2, '0')}-${slug.replace(species + '-', '')}.txt`;
+  const name = `${String(i + 2).padStart(2, '0')}-${slug.startsWith(species + '-') ? slug.slice(species.length + 1) : (suffixRe.exec(slug) || [''])[0].slice(1) || slug}.txt`;
   fs.writeFileSync(path.join(outDir, name), text + '\n');
   written.push(name);
 });
