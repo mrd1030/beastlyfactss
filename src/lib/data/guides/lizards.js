@@ -425,85 +425,103 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/fire-skink.jpg",
     tagline: "Spectacular red and gold, and it will spend most of its life underground!",
-    funFact: "Fire skinks are one of the most brightly colored lizards in the hobby and one of the most rarely seen in their own enclosure. Give one four inches of substrate and it will vanish; give it eight to ten and it will build a burrow system, come out to bask, and behave like a completely different animal.",
-    // Labels match `covers` strings in affiliateProducts.js and the figures are those
-    // products' vetted prices. See scripts/check-cost-coverage.mjs.
-    costs: {
-      setup: [
-        { item: "36x18x18 in enclosure", low: 202, high: 258 },
-        { item: "Moist substrate (coconut fiber + topsoil)", low: 10, high: 16 },
-        { item: "Halogen basking bulb + fixture", low: 18, high: 25 },
-        { item: "Moderate UVB (T5 HO Arcadia 6%)", low: 95, high: 115 },
-        { item: "Cork bark slabs and flat stones", low: 28, high: 40 },
-        { item: "Sphagnum moss for moist hide", low: 8, high: 14 },
-        { item: "Shallow water dish", low: 8, high: 14 },
-        { item: "Digital thermometer and hygrometer", low: 11, high: 19 },
-      ],
-      annual: [
-        { item: "Live insects (crickets, dubia, worms)", low: 200, high: 380 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement (every 6-12 months)", low: 111, high: 141 },
-        { item: "Feeding tongs", low: 8, high: 14 },
-        { item: "Electricity for heat and lighting", low: 70, high: 140 },
-        { item: "Exotic vet check", low: 70, high: 150 },
-      ],
-    },
-    sections: {
-      housing: `A single adult wants 36x18x18 inches as a floor-space-first enclosure. Height is close to irrelevant here; fire skinks are terrestrial and fossorial, and the useful dimension is length and depth.
-
-Substrate is the whole game with this species. Use four to six inches of a mix that holds a tunnel. ReptiFiles gives 40 percent organic topsoil, 40 percent coconut fiber and 20 percent fine sand, kept slightly damp, with leaf litter on top. A fire skink in shallow bedding hides in one corner under a hide and looks permanently nervous. The same animal in deep substrate builds a burrow, uses the whole enclosure and comes out to bask.
-
-Provide a basking surface of 92 to 96 degrees F, a cool end of 75 to 85, and a night drop to 70 to 75. Use a halogen flood on a dimmer rather than a ceramic emitter, since these animals do respond to visible basking light.
-
-Fit UVB. A linear T5 at 5 to 6 percent across part of the enclosure is right; a small coil bulb is not. Humidity should sit at 60 to 70 percent, which deep damp substrate largely does on its own, topped up by misting morning and evening. Ventilate enough that it dries a little between mistings.
-
-Include a humid hide, a shallow water dish big enough to sit in, and plenty of cork bark and leaf cover. A skink that feels exposed will not come out.`,
-      diet: `Fire skinks are insectivores with an appetite. Feed a rotation of appropriately sized live insects: dubia roaches, crickets, black soldier fly larvae, silkworms and the occasional superworm. Adults eat twice a week, juveniles daily to every other day. Offer as much as the animal clears in about five minutes, with no feeder bigger than its head.
-
-Gut load the insects for at least 24 hours before offering them, on greens, squash and a commercial gut-load. An insect that has eaten nothing is close to an empty shell nutritionally.
-
-Dust with a plain calcium at most feedings and a calcium with D3 plus a multivitamin once or twice a week, adjusted down if your UVB is strong and well positioned. Metabolic bone disease is the main nutritional failure in this species and it comes from the calcium and UVB side rather than from protein.
-
-Some individuals take small amounts of soft fruit or the occasional pinky as adults. Neither is necessary and neither should be routine.
-
-Keep fresh water available at all times in a dish heavy enough not to be tipped or buried.`,
-      enrichment: `The enrichment for a fire skink is mostly the substrate, and it is not a nice-to-have. Depth, moisture and leaf litter turn a hiding animal into an active one.
-
-Add cork bark tunnels, flat stones near the basking area, sphagnum-stuffed hides and a dense litter layer. Live plants such as pothos survive in a fire skink enclosure better than they do with larger lizards, though the digging will disturb roots.
-
-Feed with tongs or scatter feed into the litter. Scatter feeding gets them foraging through the leaves, which is what they do in the wild and is the easiest natural behavior to encourage.
-
-Handling is possible but should be earned slowly. Fire skinks are fast and initially flighty, and a stressed one will drop its tail. Start with tong feeding, then short sessions low over a soft surface. Many settle into being reliably handleable; some never do.
-
-Keep one per enclosure unless you have real experience. Males will fight, and mixed pairs need enough space and hides for the female to get away.`,
-      health: `Metabolic bone disease is the main preventable problem, from insufficient UVB, insufficient calcium, or both. Watch for tremors, a soft or bowed jaw, difficulty lifting the body off the floor and a reluctance to climb.
-
-Retained shed on the toes and tail tip is the most common minor complaint and is nearly always a humidity problem. A humid hide and a slightly damp substrate layer usually resolve it. Rings of retained skin left in place can cut off circulation.
-
-Impaction is the reason to avoid sand, gravel and any loose particulate that does not hold moisture. A soil and coco fiber mix is both better for burrowing and safer to swallow incidentally.
-
-Wild-caught animals are still common in this trade and often arrive with parasite loads, dehydration and injuries. Ask about origin. A captive-bred fire skink costs more and starts far healthier, and a fresh import should have a fecal check early.
-
-Mouth rot and respiratory infections follow from enclosures that are wet rather than humid, with no ventilation or no thermal gradient.`,
-      checklist: [
-        "36x18x18 in front-opening terrarium",
-        "4 to 6 inches of topsoil, coco fiber and sand",
-        "Leaf litter layer and cork bark cover",
-        "Halogen basking bulb on a dimmer, 92 to 96 F",
-        "Linear T5 UVB, 5 to 6 percent",
-        "Humid hide and shallow water dish",
-        "Digital thermometer and hygrometer",
-        "Varied live insects, gut loaded",
-        "Calcium and D3 plus multivitamin",
-        "Exotic veterinarian experienced with skinks"
+    funFact: "Fire skinks are one of the most brightly colored lizards in the hobby and one of the most rarely seen in their own enclosure. Give one an inch or two of substrate and it will vanish; give it the 4 to 6 inches it can actually tunnel through and it will build a burrow system, come out to bask, and behave like a completely different animal.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Quarantine, thermostats, stool and hydration,
+    // hygiene, shedding and the emergency plan cite the shared reptile guides
+    // in the sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // fire skink set test (docs/READER_REVIEWS.md).
+    //
+    // The old hub's cost table was roughly $200 short of the cost guide's own
+    // total, $380 to $500 against $660 to $720, and it disagreed line by line:
+    // the enclosure at $202 to $258 against $280, substrate at $10 to $16
+    // against $88 to $99 for the eight or nine bags a 6 inch bed actually
+    // takes, and no thermostat line at all on a page whose cost guide calls the
+    // thermostat the line people try to skip.
+    //
+    // Also retired rather than moved: a night drop to 70 to 75F against the
+    // setup guide's 70F with 65F acceptable; a flat "yes" on whether UVB is
+    // needed against the setup guide's "real benefit though technically
+    // optional if diet is properly supplemented"; a UVB replacement interval
+    // given as both 12 months and 6 to 12 months on the same page; "metabolic
+    // bone disease is the main preventable problem" against the health guide's
+    // "less common in this species than in some other lizards"; and a substrate
+    // depth the page gave three different ways, 4 to 6 inches in the body, 8 to
+    // 10 in its FunFact and 6 to 10 in its FAQ. The FunFact above now carries
+    // the setup guide's figure.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The skink", value: "$25 to $40 for the common wild-caught or imported animals. There's no real color-morph market here, this species is prized for its natural red, black, and gold banding rather than selectively bred variants. Captive-bred individuals cost more but make genuinely better pets, healthier on arrival and more receptive to taming.", source: "fire-skink-cost-guide" },
+        { label: "Setup budget", value: "Roughly $660 to $720, line by line: a 36x18x18 inch glass terrarium at $280, a 36 inch T5 HO UVB kit with a 6% bulb at $99, a basking bulb two-pack and dome at $43, a thermostat at $130, eight to nine bags of coconut fiber at $88 to $99, two hides at $8 to $60, and a digital thermometer and hygrometer at $11.", source: "fire-skink-cost-guide" },
+        { label: "The line people skip", value: "The enclosure and the thermostat are the two big lines, and the thermostat is the one people try to skip. The $130 unit priced in the cost guide is an on/off model, and its maker says not to run an incandescent basking bulb on one; a bulb wants a dimming thermostat, which runs higher.", source: "fire-skink-cost-guide" },
+        { label: "Monthly", value: "Roughly $40 to $65: feeder insects at $10 to $25 across two to three feedings a week, a $6 tub of calcium with D3 that lasts a few months, and substrate at $22 to $33 a month once a full replacement every three to four months is spread out.", source: "fire-skink-cost-guide" },
+        { label: "Vet costs", value: "Fire skinks are hardy with relatively few reported health issues. An annual exotic vet checkup is still worth doing, and parasite screening is genuinely important for wild-caught animals specifically, given how common wild-caught stock is in this species' trade.", source: "fire-skink-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years, a long commitment for a lizard this small and this affordable to acquire. The low purchase price shouldn't distract from the fact that you're taking on a two-decade relationship.", source: "fire-skink-cost-guide" },
+        { label: "Adult size", value: "12 to 15 inches (30 to 38 cm) including tail." },
+        { label: "Enclosure size", value: "36 inches long by 18 inches wide by 18 inches tall as a minimum for a single adult, larger is genuinely worth it since this is an active species. Floor space matters more than height.", source: "fire-skink-tank-setup-guide" },
+        { label: "One per enclosure", value: "Don't house multiple fire skinks together, especially two males, real fighting risk.", source: "fire-skink-tank-setup-guide" },
+        { label: "Temperature", value: "Ambient 80 to 86°F, with a basking spot around 92 to 96°F, and a night drop to about 70°F, 65°F is acceptable. A basking bulb, halogen works well, provides daytime heat, run through a dimming thermostat to hold that basking range precisely.", source: "fire-skink-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 70% ambient, higher overnight. Achieved through misting once or twice daily, keeping the substrate itself consistently moist, and providing a humid hide lined with sphagnum moss. Monitor with a digital probe hygrometer rather than guessing.", source: "fire-skink-tank-setup-guide" },
+        { label: "Substrate, the whole job", value: "4 to 6 inches of a loose, moisture-retentive tropical mix, a DIY blend of roughly 40% topsoil, 40% coconut fiber, and 20% fine sand works well, topped with leaf litter or sphagnum moss. The substrate needs to stay damp, not waterlogged, and needs to hold a burrow shape. Avoid dry, sand-only setups entirely, they simply don't support how this species actually lives.", source: "fire-skink-tank-setup-guide" },
+        { label: "UVB", value: "UVB offers real benefit though is technically optional if diet is properly supplemented. A lower-output UVB tube in the 5 to 6% range, positioned so the basking area sits 7 to 10 inches below the lamp, replaced every 12 months, is a reasonable, well-supported choice.", source: "fire-skink-tank-setup-guide" },
+        { label: "Feeding", value: "An insectivore, fed live. Full-grown adults eat two to three times a week depending on body condition, juveniles daily to every other day. At each feeding, offer as many insects as the skink can eat in about five minutes, with no feeder larger than the width of its own head.", source: "fire-skink-tank-setup-guide" },
+        { label: "What to feed", value: "Crickets, dubia and discoid roaches, mealworms and superworms with their beetles, earthworms, hornworms, silkworms and isopods all work, and variety across the week matters more than any single feeder. Dust with a calcium powder at nearly every feeding and a reptile multivitamin on the schedule its label sets.", source: "fire-skink-tank-setup-guide" },
+        { label: "Where the food goes", value: "Scatter the insects into the leaf litter rather than dropping them in a dish where you can. Hunting them down is the closest thing this species gets to exercise, and it is the one enrichment item with a controlled study behind it.", source: "fire-skink-tank-setup-guide" },
+        { label: "Respiratory infection", value: "Open-mouth breathing, mucus, and wheezing. Caused by substrate or overall enclosure conditions running too dry, or occasionally too cold. See a vet, this needs professional treatment.", source: "fire-skink-health-issues-guide" },
+        { label: "Retained shed", value: "From low humidity. Retained shed on the toes or tail can constrict circulation if left unaddressed. Manageable at home with corrected humidity and a humid hide, though retained eye caps or a severe case should prompt a vet visit rather than repeated home attempts.", source: "fire-skink-health-issues-guide" },
+        { label: "Impaction", value: "From ingesting dry, loose substrate accidentally while feeding. See a vet if suspected. Prevented by using proper moist substrate and considering feeding from a dish to reduce accidental ingestion.", source: "fire-skink-health-issues-guide" },
+        { label: "Metabolic bone disease", value: "Less common in this species than in some other lizards, but still possible if UVB and calcium supplementation are inadequate.", source: "fire-skink-health-issues-guide" },
+        { label: "Handling, honestly", value: "Fire skinks aren't defensive or bitey in any meaningful sense, but they are notably skittish, fast-moving, and prone to burrowing out of sight the moment they feel exposed. Even settled fire skinks tend to stay squirmy and quick rather than becoming the sit-still handling experience a blue-tongued skink can offer.", source: "fire-skink-handling-guide" },
+        { label: "The tail", value: "An occasional hard bite if cornered, and like many lizards, tail autotomy under grasping pressure. Never grab or restrain by the tail. Given how fast and squirmy this species is, handle low over a soft surface as a sensible precaution against an accidental drop or escape.", source: "fire-skink-handling-guide" },
+        { label: "Wild-caught or captive-bred", value: "Wild-caught animals especially stay flighty, while captive-bred individuals tame more readily with patient, gradual handling.", source: "fire-skink-handling-guide" },
+        { label: "Why you never see it", value: "The highest-value item and the one people skimp on because it makes the enclosure harder to inspect. Fire skinks are semi-fossorial forest floor animals that spend most of their time under things, and a deep bed of substrate lets a skink genuinely disappear instead of scratching at a floor. Hiding and having nothing to do can look identical from outside the glass.", source: "fire-skink-enrichment-guide" },
+        { label: "Cover at both ends", value: "Cork tubes and flats at both ends of the thermal gradient mean the animal never has to choose between being at the right temperature and feeling secure. A gradient a skink can only use by sitting exposed is a gradient it will mostly refuse to use.", source: "fire-skink-enrichment-guide" },
+        { label: "Quarantine", value: "A new snake or lizard can look completely healthy while it is still shedding mites or a fatal virus. General reptile-keeping advice sometimes puts a workable quarantine floor at 60 to 90 days, while the Merck Veterinary Manual recommends 3 to 6 months. That matters more here than for most species, since so much of this trade is still wild-caught.", source: "reptile-quarantine-guide" },
+        { label: "Thermostats and burns", value: "What a thermostat actually does, the three controller types, where the probe goes, and why wattage is a starting guess you verify, not a number you trust blindly.", source: "reptile-heating-thermostats-guide" },
+        { label: "The daily check", value: "Reptile stool and urates are a free, five-second daily health check that works across lizards, geckos, snakes, and turtles and tortoises alike, with what is normal varying by diet type and a clear line between dehydrated and an actual red flag.", source: "reptile-stool-urates-hydration-guide" },
+        { label: "Hygiene", value: "Healthy reptiles and amphibians carry Salmonella as normal gut flora, no illness required. The transmission route, the FDA four-inch rule and the hygiene habits that actually cut risk are all about handling and cleaning rather than about whether the animal looks sick.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Shedding", value: "Shedding is one of the most misunderstood aspects of reptile care. What is actually happening, what is normal, and when you need to step in.", source: "reptile-shedding-complete-guide" },
+        { label: "A power cut, and a trip", value: "What to actually do when the power goes out, you're leaving town, or you're handing your reptile off to a sitter, with species-specific cold floors in one table.", source: "reptile-emergency-plan-guide" },
       ],
     },
+    emergencyCard: {
+      source: "fire-skink-health-issues-guide",
+      callNow: [
+        "Open-mouth breathing, mucus, and wheezing, which is respiratory infection and needs professional treatment",
+        "Substrate impaction suspected, from ingesting dry, loose substrate accidentally while feeding",
+        "Metabolic bone disease, still possible if UVB and calcium supplementation are inadequate",
+        "Retained eye caps, or a severe retained shed, rather than repeated home attempts",
+        "A dropped tail with an open or infected wound",
+      ],
+      vetLine: "Low humidity is directly responsible for the respiratory infection and poor shedding that make up most of this species' real health risk. Dry substrate causes impaction. And rough handling causes preventable tail loss. This is a species where getting the moisture and substrate depth right, more than any other single factor, determines how healthy and how visible your fire skink actually is.",
+    },
+    routes: [
+      { slug: "fire-skink-cost-guide", line: "$25 to $40 for the skink, $660 to $720 for the setup, and the thermostat line people try to skip." },
+      { slug: "fire-skink-tank-setup-guide", line: "36x18x18 as a floor, 92 to 96F basking, 60 to 70%, the 4 to 6 inch mix, and what to feed." },
+      { slug: "fire-skink-handling-guide", line: "Why this is not the blue-tongued skink, and why the tail is the part to leave alone." },
+      { slug: "fire-skink-health-issues-guide", line: "Respiratory infection, retained shed, impaction, and the humidity underneath all three." },
+      { slug: "fire-skink-enrichment-guide", line: "The blue-tongue study where skinks stopped hiding, and what it asks of a burrowing lizard's enclosure." },
+    ],
+    buyList: [
+      "A 36x18x18 inch enclosure as a floor, larger for an active species",
+      "Organic topsoil, coconut fiber and fine sand for a 4 to 6 inch mix",
+      "Leaf litter or sphagnum moss for the surface, and a humid hide",
+      "A T5 HO UVB kit, 5 to 6%",
+      "A halogen basking bulb and dome fixture",
+      "A dimming thermostat for the basking bulb",
+      "A digital probe thermometer and hygrometer",
+      "Two hides, one at each end of the gradient, plus cork flats",
+      "Calcium with D3 and a reptile multivitamin",
+      "Feeder insects, varied, and tongs",
+    ],
     faqs: [
-      { q: "Why does my fire skink hide all the time?", a: "Almost always because the substrate is too shallow. Fire skinks are burrowers, and in four inches of bedding the only option is to wedge under a hide and stay there. At six to ten inches of a soil and coco fiber mix that holds a tunnel, they build a burrow system and start using the whole enclosure, basking in the open and foraging through the leaf litter. Depth of substrate changes this species more than any other single factor." },
-      { q: "Do fire skinks need UVB?", a: "Yes. They are diurnal and bask, and while some keepers raise them without UVB using heavy D3 supplementation, the results are far more consistent with it. Use a linear T5 at 5 to 6 percent over part of the enclosure rather than a compact coil, mount it at the distance the manufacturer specifies, and replace it every twelve months even though it still emits visible light." },
-      { q: "Can you handle a fire skink?", a: "Some, with patience. They are fast and start out flighty, and a stressed one can drop its tail, which regrows but never matches. Build up through tong feeding first, then short sessions held low over a soft surface so a jump does not end badly. Plenty of fire skinks become reliably handleable adults, and some simply stay display animals. Buying captive bred makes a calm outcome much more likely." },
-      { q: "Is my fire skink wild caught?", a: "Quite possibly, and it is worth asking directly. A large share of fire skinks in the trade are still imported, and wild-caught animals typically arrive dehydrated, carrying parasites, and sometimes with injuries or missing toes. They can settle in well, but they need a fecal test and a quiet acclimation period. Captive-bred animals cost more and start much healthier." },
-      { q: "How big do fire skinks get?", a: "About 12 to 15 inches including the tail, with the body itself a good deal shorter than that suggests. They are heavy-bodied for their length rather than lanky. That size makes a 36x18x18 inch enclosure a comfortable adult home for one animal, prioritizing floor area over height since they spend their time on and under the ground." },
+      { q: "What size enclosure does a fire skink need?", a: "36 by 18 by 18 inches minimum for one adult, and bigger is worth it for an active species. Floor space beats height. Don't house two fire skinks together, especially two males: real fighting risk." },
+      { q: "What does a fire skink enclosure setup cost?", a: "Roughly $660 to $720: a 36x18x18 inch enclosure, T5 UVB kit, basking bulb and dome, dimming thermostat, eight or nine bags of coconut fiber, two hides, and a hygrometer. The enclosure and thermostat dominate." },
+      { q: "What causes respiratory infection in fire skinks?", a: "Substrate or overall enclosure conditions running too dry, or occasionally too cold. Watch for open-mouth breathing, mucus, and wheezing. See a vet, this needs professional treatment, and prevention is straightforward, maintain 60 to 70% substrate humidity consistently." },
     ],
   },
   {
