@@ -483,62 +483,87 @@ Mites and general parasite loads are worth checking for in any new garter snake,
     image: "/assets/guides/milk-snake.jpg",
     tagline: "The brilliantly banded mimic that wears venomous colors with no venom required!",
     funFact: "Milk snakes are harmless, but their red, black, and yellow banding mimics the deadly coral snake: a survival trick called Batesian mimicry. The rhyme 'Red touch yellow, kill a fellow; red touch black, friend of Jack' helps tell them apart!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "3x1.5x1.5 ft to 4x2x2 ft enclosure", low: 100, high: 250 },
-        { item: "Under-tank heater with thermostat", low: 35, high: 60 },
-        { item: "Multiple snug hides", low: 15, high: 25 },
-        { item: "Aspen shavings substrate", low: 15, high: 25 },
-        { item: "Soak-able water dish", low: 8, high: 15 },
-        { item: "Digital thermometer", low: 15, high: 20 },
-        { item: "Cork bark and branches", low: 15, high: 25 },
-        { item: "Feeding tongs", low: 5, high: 10 },
-      ],
-      annual: [
-        { item: "Frozen/thawed mice", low: 70, high: 130 },
-        { item: "Substrate replacement", low: 25, high: 40 },
-        { item: "Electricity (heat)", low: 40, high: 70 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A 3x1.5x1.5 ft to 4x2x2 ft enclosure suits most adult milk snakes depending on subspecies - they range from a compact 2 ft (scarlet king subspecies) to over 5 ft (Sinaloan milk snake). Milk snakes are secretive, semi-fossorial animals that spend most of their time hidden. Multiple snug hides are essential.
-
-Provide a warm end (85 to 88 degrees F surface temperature via UTH on thermostat) and a cool end (72 to 75 degrees F). Maintain 40 to 60% humidity. Aspen shavings are an excellent substrate: they allow natural burrowing behavior, maintain appropriate humidity, and spot-clean easily. Provide 3 to 4 inches of substrate depth for burrowing.
-
-A secure, lockable lid is non-negotiable. Milk snakes test every seam consistently and are skilled escape artists. Check all enclosure seals regularly.`,
-      diet: `Feed appropriately sized frozen/thawed mice every 7 to 10 days for juveniles, every 10 to 14 days for adults. Milk snakes are typically strong, reliable feeders. Always use feeding tongs at every feeding - without exception.
-
-Some subspecies and individual milk snakes can be defensive or nippy as juveniles. This usually diminishes rapidly with regular, calm handling. The smell of prey on your hands can trigger feeding responses, so always wash hands before handling and feed with tongs. Allow 48 to 72 hours after feeding before handling.
-
-Like kingsnakes, milk snakes are ophiophagous (snake-eaters) in the wild. Never house with other snakes.`,
-      enrichment: `Milk snakes are semi-fossorial and spend much of their time burrowed in or hiding under substrate. Providing substrate deep enough to burrow in (3 to 4 inches of aspen), multiple hides at both temperature ends, cork bark rounds and pieces, and a water dish large enough to soak in meets their enrichment needs.
-
-Milk snakes explore their enclosure actively during the evening and night. Rearranging hide positions and adding varied objects (cork bark, small logs) periodically provides novelty. Handle regularly for taming - most adults become very calm and handleable with consistent interaction.`,
-      health: `Milk snakes are extremely hardy when husbandry is correct. Respiratory infections from cold or damp conditions and retained shed from too-low humidity are the primary concerns. A moist hide with damp sphagnum moss prevents most shedding issues.
-
-Their secretive nature means illness can be hidden until advanced. Monitor feeding response, alertness, and activity level as baseline health indicators. Any sudden change in these warrants investigation. Annual wellness checks with a reptile vet are recommended even for apparently healthy animals.`,
-      checklist: [
-        "3x1.5x1.5 ft to 4x2x2 ft escape-proof enclosure",
-        "Under-tank heater with thermostat",
-        "Multiple snug hides (warm and cool ends)",
-        "Aspen shavings substrate (3 to 4 inch deep for burrowing)",
-        "Shallow soak-able water dish",
-        "Frozen/thawed appropriately-sized mice",
-        "Feeding tongs",
-        "Digital thermometer",
-        "Cork bark and branches",
-        "Reptile-savvy vet contact",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Quarantine, hygiene and
+    // power outage cite the shared reptile guides in the sidebar's Health and
+    // More list. This species has no feeding guide, so the feeding rows are
+    // sourced to the Diet Basics section of the setup guide. The old hub sold
+    // an under-tank heater as the primary heat source where the setup guide
+    // calls it a supplement, put the enclosure floor below the setup guide's
+    // minimum, and gave Sinaloans 4 to 5 feet against a cited 40 to 48 inches.
+    // Reconciled 2026-09-14 for batch H (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new snake is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Legal check", value: "Worth settling before price does: a handful of states restrict this species outright, and the rules turn on whether the subspecies is native rather than on the animal being a milk snake.", source: "milk-snake-legal-guide" },
+        { label: "Enclosure", value: "Most milk snakes stay at or under 48 inches long, which puts the minimum adult enclosure at 48 inches long by 24 inches wide by 24 inches tall. A secure, genuinely escape-proof lid matters more with this species than some others.", source: "milk-snake-tank-setup-guide" },
+        { label: "Size by subspecies", value: "Within that ceiling, a Pueblan reaches 28 to 36 inches, an Eastern 36 to 45, and a Honduran or Sinaloan 40 to 48.", source: "milk-snake-tank-setup-guide" },
+        { label: "Heat source", value: "A halogen flood bulb positioned over a basking stone is the commonly recommended heat source for this species, generally preferred over ceramic, colored, or red bulbs. A thermostat-controlled heat mat can supplement the warm hide if needed, though it is the supplement and not the main heater.", source: "milk-snake-tank-setup-guide" },
+        { label: "Temperatures", value: "Basking surface 85 to 90°F, cool side 75 to 80°F, nighttime 70 to 75°F.", source: "milk-snake-tank-setup-guide" },
+        { label: "Humidity", value: "40 to 60%, monitored with a digital probe hygrometer. A dedicated humid hide with moist sphagnum moss is what actually prevents retained shed, and mist as needed to maintain the range.", source: "milk-snake-tank-setup-guide" },
+        { label: "Substrate", value: "Aspen bedding or cypress mulch both work well and support natural burrowing. Avoid substrate that stays constantly wet, this is a direct path to scale rot, and skip cedar and pine entirely, both are toxic to reptiles.", source: "milk-snake-tank-setup-guide" },
+        { label: "UVB", value: "Not strictly required, but low-level UVB offers real benefit according to current husbandry guidance. A low-output 5% option works well, run on a standard 12-hour photoperiod.", source: "milk-snake-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Juveniles every 7 to 10 days, adults every 10 to 14, on frozen/thawed rodents. Frozen and thawed is both safer for the snake and generally considered the more humane choice than live.", source: "milk-snake-tank-setup-guide" },
+        { label: "Prey size", value: "No more than 1.5 times the snake's width at its widest point, or roughly 10% of its body weight.", source: "milk-snake-tank-setup-guide" },
+        { label: "Water", value: "A bowl large enough for the snake to curl up in and soak, topped up with fresh water.", source: "milk-snake-tank-setup-guide" },
+        { label: "Living alone", value: "Milk snakes are cannibalistic. This isn't a rare edge case: never house two milk snakes in the same enclosure under any circumstances.", source: "milk-snake-handling-guide" },
+        { label: "Temperament", value: "Docile overall and generally tolerant of handling, though a bit muskier and flightier than a corn snake, especially while young. Young ones can be jumpy, quick to musk, and occasionally nip when stressed, settling noticeably with regular, gentle handling as they mature.", source: "milk-snake-handling-guide" },
+        { label: "The rhyme's limits", value: "\"Red touches yellow, kill a fellow\" is a US-only regional shortcut. Dozens of coral snake species across Central and South America show completely different band orders, and even within the US a young or damaged, twisted snake can make the pattern hard to read correctly.", source: "milk-snake-handling-guide" },
+        { label: "Cover, not a smaller box", value: "The practical test is whether the snake can cross the entire enclosure without ever being fully exposed. If not, it will use two hides and nothing else, and you will conclude it wanted a smaller enclosure.", source: "milk-snake-enrichment-guide" },
+        { label: "Clutter", value: "Cork tubes and flats at intervals, leaf litter over aspen deep enough to push into, and planting dense enough to break sightlines. Two hides at opposite ends of the gradient is the starting point, not the finished enclosure.", source: "milk-snake-enrichment-guide" },
+        { label: "Climbing", value: "Milk snakes climb more readily than the terrestrial label suggests. A firmly braced branch or stacked cork adds a level, and stability matters more than height, since a structure that shifts is one the snake stops using.", source: "milk-snake-enrichment-guide" },
+        { label: "Scent", value: "The free option, and the one that best matches how a colubrid experiences the world. A shed from another enclosure, a scent-marked object, prey dragged across the substrate before it is offered.", source: "milk-snake-enrichment-guide" },
+        { label: "The moisture dial", value: "Substrate kept too wet is the direct cause of scale rot, one of the more serious conditions on the list. Low humidity, the opposite problem, causes retained shed. Getting the moisture balance right is really the central skill in keeping this species healthy long-term.", source: "milk-snake-health-issues-guide" },
+        { label: "Shed trouble", value: "From low humidity or dehydration. Manageable at home with a properly maintained humid hide and correct overall humidity. A shed that comes off in pieces rather than one length is the first sign the enclosure has drifted dry.", source: "milk-snake-health-issues-guide" },
+        { label: "Budget", value: "$60 to $500 for the snake depending on subspecies and morph, roughly $300 to $600 for the setup, and roughly $15 to $30 a month after that.", source: "milk-snake-cost-guide" },
+        { label: "Vet costs", value: "$50 to $100 for a routine reptile exam, with a fecal test adding $25 to $50. Emergency visits start around $150 to $300 for the exam alone, before any treatment.", source: "milk-snake-cost-guide" },
+        { label: "Lifespan", value: "Milk snakes commonly live 20 years or more with good care. The monthly cost stays low the whole way, so the commitment is time more than money.", source: "milk-snake-cost-guide" },
+        { label: "Adult size", value: "2 to 4 feet (60 to 120 cm) depending on subspecies." },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "65 to 75°F is the normal night low for a colubrid this size. Below 65°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
+    emergencyCard: {
+      source: "milk-snake-health-issues-guide",
+      callNow: [
+        "Wheezing, nasal or oral discharge, and open-mouth breathing",
+        "Red, inflamed skin and fluid-filled blisters, typically on the belly",
+        "Tiny black or red specks around the eyes and scales",
+        "Restlessness and excessive soaking",
+        "Signs of mouth rot (infectious stomatitis)",
+      ],
+      vetLine: "Respiratory infection always needs a vet, since it needs antibiotics and won't clear up on its own. So does scale rot, which veterinary sources document as a real risk that can progress to septicemia and become fatal if left untreated, and the substrate and cleaning routine have to be fixed at the same time: treatment alone doesn't fix a setup that's still too damp.",
+    },
+    routes: [
+      { slug: "milk-snake-cost-guide", line: "$60 to $500 by subspecies and morph, the $300 to $600 setup, and why the real commitment here is time rather than money." },
+      { slug: "milk-snake-tank-setup-guide", line: "The 48x24x24 minimum, the halogen bulb over a basking stone, the moisture balance, feeding, and the no-cohabitation rule." },
+      { slug: "milk-snake-handling-guide", line: "A muskier, flightier temperament than a corn snake's, the cannibalism rule, and where the red-touches-yellow rhyme stops working." },
+      { slug: "milk-snake-health-issues-guide", line: "Respiratory infection, scale rot, mites, retained shed, and the one dial, moisture, that sits behind three of them." },
+      { slug: "milk-snake-enrichment-guide", line: "Why a snake that hides constantly needs more cover rather than a smaller enclosure, and how to clutter one properly." },
+      { slug: "milk-snake-legal-guide", line: "Where a native subspecies changes the answer, and the states that restrict this snake without ever naming it." },
+    ],
+    buyList: [
+      "48x24x24 inch wood or PVC vivarium",
+      "Halogen basking bulb and fixture",
+      "Thermostat",
+      "Optional low-level 5% UVB",
+      "Multiple snug hides, including a dedicated humid hide",
+      "Sphagnum moss for the humid hide",
+      "Aspen bedding or cypress mulch substrate",
+      "Cork tubes and flats, plus a braced branch",
+      "Water bowl large enough to soak in",
+      "Digital thermometer and probe hygrometer",
+      "Feeding tongs",
+      "Frozen/thawed rodents",
+    ],
     faqs: [
-      { q: "Are milk snakes venomous?", a: "No. Milk snakes are completely harmless. Their vivid red, black, and yellow banding mimics the pattern of the coral snake - a venomous species - in a survival strategy called Batesian mimicry. The old rhyme helps: 'Red touches black, friend of Jack; red touches yellow, kill a fellow.' On a milk snake, red touches black. They have no venom and pose no danger to humans." },
-      { q: "How big do milk snakes get?", a: "Size varies significantly by subspecies. The Eastern milk snake reaches 2 to 3 feet; Sinaloan milk snakes (one of the most popular) can reach 4 to 5 feet; the Mexican milk snake stays around 2.5 to 3 feet. Choose your enclosure and prey size based on your specific subspecies. All are slender, graceful snakes." },
-      { q: "How do I tell a milk snake from a coral snake?", a: "Use the rhyme: 'Red touches black, friend of Jack; red touches yellow, kill a fellow.' Milk snakes have red bands bordered by black bands. Coral snakes have red bands bordered by yellow bands. This rhyme applies to North American species. In all cases, never handle an unidentified snake in the wild." },
-      { q: "Are milk snakes good beginner snakes?", a: "Yes - once established, they are strong feeders and straightforward to care for. Juvenile milk snakes can be nippy initially, but this diminishes rapidly with consistent calm handling. Their smaller size (compared to ball pythons or corn snakes) makes them easy to manage. Ensure a secure, lockable lid - milk snakes are persistent escape artists that will test every seam." },
-      { q: "How long do milk snakes live?", a: "12 to 20 years in captivity with appropriate care - correct temperatures, consistent prey, humidity appropriate for the subspecies, and annual wellness checks with a reptile-savvy veterinarian. A milk snake acquired as a hatchling is a long-term commitment." },
-      { q: "Is a milk snake the same as a king snake?", a: "Closely related, not the same. Milk snakes (Lampropeltis triangulum) are actually a species within the kingsnake genus, Lampropeltis, so every milk snake is technically a kingsnake, but not every kingsnake is a milk snake. The California kingsnake, for example, is a separate species in the same genus with different patterning, usually banded or striped in black and white, rather than the red-black-yellow banding milk snakes are known for. Care requirements are nearly identical between the two." },
+      { q: "Can I keep two milk snakes together?", a: "No, never. Milk snakes are cannibalistic, and housing two together in the same enclosure under any circumstances is a firm rule with no exceptions." },
+      { q: "Does the 'red touches yellow, kill a fellow' rhyme work?", a: "Only as a rough US regional guideline, and even then it has real limits. Central and South America have dozens of coral snake species with different band orders, and young or damaged, twisted specimens can make the pattern hard to read, even for experienced herpetologists. It's essentially a non-issue for a captive-bred pet, since there's no real confusion risk in a home setting." },
+      { q: "My milk snake hides all the time. Does it need a smaller enclosure?", a: "That is the conclusion most keepers reach and the colubrid research points elsewhere. Given enclosures longer than their body, corn snakes stretched out fully and preferred the larger option. A snake that hides constantly in a large bare enclosure is short of cover rather than short of walls." },
     ],
   },
   {

@@ -4251,6 +4251,38 @@ in one review section.
   captive figure under "Wild Lifespan" with no label, and one review-file
   note that did not match the diff. Every number decision held when the
   sources were reopened. Pass grade B+.
+- 2026-09-14, batch H (cardinal tetra, milk snake, gargoyle gecko, gerbil,
+  sulcata tortoise, branch claude/hub-pacman-frog-80291s). Cardinal tetra: the
+  health guide's ich FAQ dropped the temperature-increase advice its cited
+  Aquarium Co-Op protocol never gives, the cost guide's lifespan gained ADW's
+  "about five, up to ten", and the hub's misspelled parasite went with the
+  legacy sections. Milk snake: the setup guide moved to ReptiFiles' 75 to 80
+  cool side and 70 to 75 night, its "4 to 5 feet" subspecies line to the cited
+  28 to 48 inches, and gained a sourced Diet Basics section; the vs corn table
+  lost its copperhead and its 24 to 36 inches. Gargoyle gecko: the tank setup
+  guide's no-heat thesis was rewritten against all three of its own sources to
+  a gradient with a low ceiling, and the encyclopedia's Vulnerable became Least
+  Concern. Gerbil: the hub was right and the deep dives wrong, so six Merck
+  figures (protein, fat, portion, humidity, lifespan, tail amputation) moved
+  into the deep dives, plus cholesteatoma, seizures and tumor incidence as new
+  health guide sections. Sulcata: the setup guide's brumation advice for a
+  Sahel species was cut against the shared brumation guide, the encyclopedia's
+  Vulnerable became Endangered and its 70 to 150 lb and 70 to 150 years became
+  the sourced 80 to 110 lb, 200 lb males, and 70-plus years.
+- 2026-09-14, batch H species check (one Fable agent covering all five):
+  confirmed both claims the batch rested on against the source pages (Merck
+  on gerbil, the three gargoyle heat sources), then found and fixed: source
+  names in nine cardinal tetra hub rows, one milk snake row, three gerbil rows
+  and the gargoyle and gerbil deep dives' new prose; two gargoyle hub rows and
+  one setup-guide range ("82 to 84°F") no source states; a stale gargoyle body
+  H1; a Merck seizure sentence read out of its dihydrostreptomycin paragraph
+  and carried into the gerbil emergency card; that card written rather than
+  copied, and the sulcata and milk snake cards each carrying a bullet their
+  health guide does not; three hubs routing vs pieces; the milk snake vs corn
+  page still saying copperhead and the sulcata vs Russian page saying 70 to
+  110 where the review said otherwise; a gerbil FunFact still at three to
+  four years; and ten files with a number changed and no date bump. Pass
+  grade B-.
 
 ## Green Iguana (2026-09-09, first pass)
 
@@ -8950,3 +8982,893 @@ row left stale against the batch's own later fix, two hedgehog rows
 carrying the deep dive's source narration, one missing vetLine, one date
 not bumped, and a captive figure filed under "Wild Lifespan" with no
 label on the same day the hedgehog fix labeled its own.
+
+## Cardinal Tetra (2026-09-14, batch H, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment). One Opus 5 agent. The reader
+read the legacy care sheet hub; the router hub was built from its
+findings the same day. Cardinal tetra went first in batch H partly
+because the neon tetra set merged in batch G cross-links it, and partly
+because its hub carried a misspelled parasite name flagged during batch F
+and left because the species was out of scope then.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | The one page with a water change schedule, and its temperature range contradicts the setup guide. |
+| Encyclopedia | B | The naming-priority story is the only thing here I could not get elsewhere. |
+| Cost | A- | $1 to $3 a fish, $65 to $230 setup, test kit is the non-optional line item. |
+| Handling | B- | Minimum 10, three named beginner mistakes, the stripe tell. Thin for a standalone page. |
+| Health issues | A | Symptom lists, ich and fin rot treatment, nitrite as the number to watch. |
+| Tank setup | A | Best page in the set. |
+| Feeding | A- | Twice daily, two-minute rule, crush the flake, remove dead fish immediately. |
+| Enrichment | A- | The honest "nothing on cardinals specifically" bought my trust. |
+
+Set grade: B+. "Strong, sourced, genuinely specific on the things that
+kill this fish, undermined by a hub that disagrees with its own deep
+dives and a near-total absence of links between pages that plainly need
+each other."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs cardinal-tetra --strict` before
+the pass printed conflicts on tank size, temperature, lifespan and the
+cost line items. The decisions were temperature, school size, tank size,
+feeding frequency and lifespan, all of them the hub against a deep dive.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Temperature. Hub: "Keep water heated between 73 and 81 degrees F."
+  Setup: "73 to 84°F is the range Seriously Fish gives for this species."
+  The hub checklist repeated 73 to 81.
+- School size. Hub FAQ: "At least 6, ideally 8 to 10 or more if the tank
+  allows." Enrichment: "Ten, not six... Do not stop at six." Handling:
+  "Animal Diversity Web puts the workable minimum at 10."
+- Tank size. Hub: "A 10 to 20 gallon tank suits a proper school of 8 to
+  10 or more." Setup splits it: a 10-gallon for the bare minimum school
+  of 6, a 20-gallon long as the practical minimum for 8 to 10.
+- Feeding. Hub: "Feed small amounts once or twice daily." Feeding guide:
+  "Twice daily... is the practical standard."
+- Parasite name. Hub: "Pleistophora hyphessobrycetis." Health and
+  feeding: "Pleistophora hyphessobryconis." The reader: "One is wrong."
+  The hub was, and the whole `sections` block goes with the rebuild.
+
+### Deep dives against each other, and against themselves
+
+Both of the sharpest findings are same-page contradictions, which no
+cross-page checker catches:
+
+- Setup guide, body: Practical Fishkeeping "notes that cardinal tetra
+  tolerates water reaching 30°C (86°F), warmer than the roughly 25°C
+  (77°F) ceiling neon tetra is comfortable with." Setup guide, its own
+  FAQ: "warmer than neon tetra's comfort ceiling of roughly 77 to 81°F."
+  Our own neon tetra setup guide, reconciled in batch G, says 70 to 81
+  works with 72 to 78 the usual target. The FAQ now carries the body's
+  comparison.
+- Health guide, body on ich: "a commercial ich medication alongside
+  daily partial water changes." Health guide, its own FAQ: "a gradual
+  temperature increase plus a commercial ich medication." The reader:
+  "The body never mentions heat, which matters when the same site puts
+  50% mortality near 33.7°C."
+- Cost: "A 10-gallon tank is workable for the bare minimum school of 6,"
+  against enrichment's flat "Do not stop at six."
+
+### Numbers decided, both sides and the source that won
+
+- Ich treatment. The FAQ's temperature increase against the body's
+  medication-and-water-changes protocol. Opened Aquarium Co-Op, the
+  guide's own cited source: it prescribes Ich-X redosed every 24 hours
+  with roughly a third of the water changed each time, carried a day past
+  the last spot, and never recommends raising the temperature. The body
+  was right and the FAQ was repeating hobby lore. Both now say so
+  explicitly, since "raise the temperature" is common enough advice that
+  silence reads as agreement.
+- Lifespan. Hub and encyclopedia carried "up to 10"; the cost guide said
+  "up to five years" from Practical Fishkeeping, so the hub's outer
+  figure had nothing behind it. Animal Diversity Web, already cited by
+  the handling guide: "In captivity, the life expectancy is about 5
+  years, although individuals may live as long as 10 years." Not a
+  contradiction once both halves are stated, so the cost guide now
+  carries the outer figure and ADW joins its Sources.
+- Temperature, school size, tank size and feeding frequency all went to
+  the deep dives unchanged; only the hub was wrong.
+
+### The Merck citation the reader doubted
+
+Worth recording because the doubt was reasonable and the citation is
+sound. The reader flagged that a microsporidian parasite is cited to a
+page titled "Mycotic Diseases of Fish". Opened it: the page states "Neon
+tetra disease is caused by Pleistophora hyphessobryconis, which infects
+the skeletal musculature" and names "tetras, angelfish, rasboras, barbs,
+and zebrafish", exactly as the two guides quote it. Microsporidia are
+closely related to true fungi, which is why Merck files them there. No
+change.
+
+### Gaps closed rather than carried
+
+The legacy hub's weekly 20 to 25% water change had no deep dive behind
+it, and the shared aquarium filtration guide carries no schedule figure
+either, so it is retired rather than carried as an unsourced row. Same
+call as angelfish in batch F and neon tetra in batch G, which makes three
+fish hubs now missing a water-change cadence: worth writing once into a
+shared guide rather than three times into species pages.
+
+### Also fixed
+
+Six of the reader's eight recommended links. Two went somewhere other
+than it suggested, both times to the shared guide that actually settles
+the question: its "adding them to a tank that hasn't finished cycling"
+on the handling guide points at the cycling guide rather than the setup
+guide, and the setup guide's "always quarantine new fish" points at the
+hospital tank guide rather than the health guide, since the setup guide
+had already spent its one sibling link on the handling guide.
+
+### Open
+
+- The four things not covered anywhere, in docs/READER_LOG.md: how to
+  soften or acidify hard tap water, a tankmate and fin-nipper list,
+  the humane euthanasia method the health guide recommends without
+  explaining, and breeding.
+- The first is the sharpest. The enrichment guide names hard alkaline
+  water as the main reason cardinals fail where neons would have been
+  fine, and then no page in the set says what to do about it. The shared
+  pH, GH and KH guide is written around not chasing numbers in a
+  coldwater tank and does not promise a softening method.
+
+## Milk Snake (2026-09-14, batch H, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, enrichment, legal, and the milk snake vs corn snake
+comparison). One Opus 5 agent. The reader read the legacy care sheet hub;
+the router hub was built from its findings the same day. No feeding guide
+exists for this species, so the legacy hub's diet prose was the set's
+only feeding content, the third species in two batches after tokay gecko
+and California kingsnake.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | The only page with a feeding schedule, and it contradicts the deep dives on the two things I would buy first. |
+| Encyclopedia | B- | Earns its place on one paragraph, the motion-camouflage argument. |
+| Cost | B | A real budget and a buy list. |
+| Handling | C+ | Never cohabit, do not handle mid-shed. No actual technique. |
+| Health issues | B+ | Symptoms and which ones mean vet today. |
+| Tank setup | B+ | Dimensions, temps, substrate, cohabitation. |
+| Enrichment | A- | Cover across the whole floor, priority order. |
+| Legal | A | Better than anything else I have read on the topic. |
+| vs Corn snake | C | Skimmed the back half. Act on: nothing. |
+
+Set grade: B-. "Strong individual pages, a legal guide better than
+anything else I have read on the topic, undercut by a hub that disagrees
+with its own deep dives on heat and enclosure size."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs milk-snake --strict` before the
+pass printed 11 topic groups with conflicts. The reader found one the
+checker could not: adult size had four different answers across four
+pages, because three of them were phrased in units the grouping never
+put side by side.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Heating, and the reader's sharpest point. Hub: "a warm end (85 to 88
+  degrees F surface temperature via UTH on thermostat) and a cool end (72
+  to 75 degrees F)." Setup: "Basking surface 85 to 90°F... A halogen
+  flood bulb positioned over a basking stone is the commonly recommended
+  heat source for this species." The reader: "The hub sells me a UTH as
+  the primary heater, the deep dive calls the UTH a supplement." The
+  shopping checklist sold the same wrong thing.
+- Enclosure. Hub: "A 3x1.5x1.5 ft to 4x2x2 ft enclosure suits most adult
+  milk snakes." Setup: "the minimum adult enclosure at 48 inches long by
+  24 inches wide by 24 inches tall." The hub's low end was below the deep
+  dive's minimum.
+- Setup cost. The hub's table totalled roughly $208 to $430 against the
+  cost guide's "Roughly $300 to $600", because the hub was pricing a
+  glass tank and the cost guide a PVC vivarium, and neither said so.
+- Adult size, four ways. Hub body: "over 5 ft (Sinaloan milk snake)."
+  Hub FAQ: "Sinaloan milk snakes can reach 4 to 5 feet." Encyclopedia:
+  "2-4 feet." vs Corn: "24-36 in (some larger)."
+- Lifespan, three ways. Hub "12 to 20 years", cost guide "commonly live
+  20 years or more", vs Corn "15-20 years, some 25+".
+
+### Deep dives against each other
+
+- The mimicry story itself, which no checker would ever catch. Cost guide
+  states it flat: "evolved to resemble the venomous eastern coral snake."
+  The encyclopedia argues against it: "Milk snakes live across a range
+  that includes large areas where no coral snake occurs at all, which is
+  difficult to square with mimicry as the whole explanation." And the vs
+  Corn table widened the model to "coral snake/copperhead", which no
+  other page supports and which the cited mimicry research (Harper and
+  Pfennig, on coral snake mimicry) does not either. The copperhead is
+  gone; the encyclopedia's hedge stands, since it is the better-argued
+  position and the cost and handling guides both already say the
+  resemblance deters predators rather than claiming it is the only
+  explanation.
+
+### Numbers decided, both sides and the source that won
+
+The setup guide cites exactly one source, ReptiFiles, and drifted from it
+in three places. Opened it; the figures below are quoted from that page.
+
+- Cool side. Guide 70 to 80°F against ReptiFiles' 75 to 80. Source wins.
+- Night floor. Guide "not below about 66°F" against ReptiFiles' 70 to 75.
+  Source wins, and 66 was the lowest figure anywhere in the set.
+- Subspecies length. Guide "Honduran and other larger subspecies can
+  reach 4 to 5 feet" against ReptiFiles, citing Markel: Eastern 36 to 45
+  inches, Pueblan 28 to 36, Honduran and Sinaloan both 40 to 48. Nothing
+  in the source reaches 5 feet. Animal Diversity Web agrees on the
+  broader picture: "In the United States lengths are most often 60 to 130
+  cm." Both the guide's 4-to-5-feet line and the vs Corn table's "24-36
+  in" are now the cited 28 to 48.
+- Lifespan. Encyclopedia wildLifespan read "10-22 years", a captive
+  figure in the wild field, the same defect the hedgehog and veiled
+  chameleon fixes corrected in batch G. Animal Diversity Web: "Specific
+  data on lifespan is not given, although it is known that one individual
+  caught as an adult lived another 21 years in captivity." The field now
+  says the wild figure is undocumented and gives the captive one.
+- Feeding. No feeding guide exists, so the setup guide gained a sourced
+  Diet Basics section: ReptiFiles' juveniles every 7 to 10 days, adults
+  every 10 to 14, prey no more than 1.5 times the snake's widest point or
+  roughly 10% of body weight, frozen/thawed over live, and a bowl big
+  enough to soak in.
+
+### Also fixed
+
+- "Other substrate quantities are available and a decent depth wants the
+  larger bag" in the enrichment guide, which the reader called "product
+  copy with the product missing". The same template fragment was cut from
+  the California kingsnake enrichment guide in batch G, so it is worth
+  grepping the rest of the enrichment set for it.
+- Five of the reader's nine recommended links. Two were skipped: the
+  encyclopedia carries no in-body links at all, and the legal guide's
+  suggested target was this species' own care guide hub, which RULES
+  forbids linking to.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: brumation
+  and winter feeding refusal, feeding mechanics beyond the new Diet
+  Basics section, choosing and buying, cleaning cadence, what to do when
+  the escape artist escapes, and handling technique itself.
+- The last is the most pointed. The reader graded the handling guide C+
+  because it has no pick-up method, no session length, and no first week,
+  which the California kingsnake handling guide does have. That is a
+  sibling page in the same genus with the same rules, so the gap is
+  fillable from work already done.
+- "Escape artist" appears on five pages in this set and no page says what
+  to do about it.
+
+## Gargoyle Gecko (2026-09-14, batch H, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment). One Opus 5 agent. The reader
+read the legacy care sheet hub; the router hub was built from its
+findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The most actionable single page, and where the numbers go wrong. |
+| Encyclopedia | C+ | Genuinely interesting on the 2012 genus split, and it contradicts itself. |
+| Cost | A- | I can budget from it today. |
+| Handling | A- | Wait two weeks, 5 minutes every other day, work to 15, handle low. |
+| Health issues | A | Best page in the set. |
+| Tank setup | A | I could build the enclosure from this alone. |
+| Feeding | A | The only page that tells me where sources disagree instead of picking one and hiding it. |
+| Enrichment | B+ | Honest about having no species research, and the priority list is usable. |
+
+Set grade: B. "The five deep dives are strong, specific, and unusually
+honest about uncertainty. The hub sitting in front of them is looser and
+contradicts them on numbers a beginner will act on first."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs gargoyle-gecko --strict` before
+the pass printed 18 topic groups with conflicts, the most of any species
+in batches F to H. Eight were the hub against a deep dive, and the hub
+disagreed with its own FAQ on one of them.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Temperature. Hub: "between 72 and 80 degrees F during the day...
+  temperatures above 85 degrees F can be fatal." Tank setup: "72 to 78°F
+  during the day... sustained temperatures above about 82°F cause real
+  stress." Both turned out to be wrong, see below.
+- Insects, the hub against itself. Diet section: "Supplement with live
+  feeder insects 1 to 2 times per week." Its own FAQ: "live insects
+  should be offered 2 to 3 times per week." Feeding guide: "once a week
+  for adults."
+- Supplements. Hub: "Dust insects with calcium w/D3 2 to 3 times per
+  week." Feeding: "a calcium supplement without D3 for most feedings,
+  with a D3-inclusive product periodically." The hub had the D3 schedule
+  backwards, which is the direction that causes harm.
+- Handling. Hub: "Sessions of 10 to 20 minutes a few times per week."
+  Handling: "Start with 5-minute sessions every other day, working up to
+  about 15."
+- Time of day. Hub: "Handle gently at dusk when they are naturally
+  alert." Handling: "Handling during the day, when gargoyle geckos are
+  naturally sleepier, also tends to go smoother."
+- Temperament. Hub: "they rarely jump suddenly." Handling: "Young
+  gargoyle geckos are skittish and jumpy, quick to leap."
+- Tail. Hub: "The tail partially regenerates." Handling: "fully
+  functional."
+- The hub's entire Enrichment section was about handling, where the
+  enrichment guide says "do not treat handling as enrichment for a
+  species that drops its tail."
+
+### The tank setup guide against its own three sources
+
+The most serious defect found in batches F, G or H, and neither the
+checker nor the reader could have caught it, since it needed the sources
+opened. The guide was titled "A Cool-Climate Species That Doesn't Want
+Your Heat Lamp" and argued that "Most homes need no dedicated heat source
+at all" and that "this is a temperature ceiling, not a floor." All three
+of its own cited sources say the opposite:
+
+- ReptiFiles, the species-specific page whose subject is this exact
+  topic: daytime "between 77-84°F", a basking spot targeting "84°F", and
+  air that "should never get higher than 86°F (30°C) or lower than 65°F
+  (18°C)". It answers the room-temperature argument directly, noting
+  geckos are ectothermic and benefit from a heat source.
+- The Bio Dude: "Basking area temperature: 82-85°F", "Cool zone
+  temperature: 70-75°F", and in terms: "There is a common misconception
+  that gargoyle geckos don't need a heat source, but this is false."
+- Reptiles Magazine: "Gargoyle geckos like temperatures of 78 to 82
+  degrees Fahrenheit during the day," heated by "a low wattage
+  incandescent bulb or a ceramic heat emitter... over one side of the
+  tank so that the temperature of basking areas (branches) reaches the
+  desired range."
+
+Two of the three name the no-heat belief as a misconception. The guide
+was publishing it as its headline. Rewritten to the reconciled position:
+a gradient with a cool end around 70 to 75°F and a basking spot around 82
+to 84°F, ambient at or below 82, a 65°F floor, and a hard 86°F ceiling.
+The title, excerpt, description, seoDescription, figure caption, FAQ and
+closing paragraph all carried the old claim and all changed. The cost
+guide's "this species doesn't need a dedicated heat source in most homes"
+went with it.
+
+This also resolves a conflict the reader flagged and could not settle:
+the feeding guide's "a warm side that runs too cool slows digestion"
+described a warm side the setup guide said not to build. The feeding
+guide was right.
+
+### Deep dives against each other
+
+- Substrate. Health: "Impaction... is linked to ingesting loose
+  substrate, which is why non-particulate substrate matters for this
+  species." Tank setup recommends coconut fiber, which is loose, and its
+  own avoid list is "sand, wood chips, and gravel." The reader: "Those
+  two pages are not applying the same rule." The health guide's blanket
+  claim has no source behind it and the setup guide's position is backed
+  by two of its three (Reptiles Magazine's peat-based soil mix, The Bio
+  Dude's bioactive layering), so the health guide now names the sharp and
+  indigestible particles as the risk and notes an arboreal species is at
+  lower risk than a ground-dweller to begin with.
+- Bulb life. Cost FAQ: "every 6 to 12 months." Cost table: an annual line
+  item. The FAQ now says annually is the conservative end of that window.
+
+### Encyclopedia
+
+Three fields, all researched.
+
+- `conservation` read "Vulnerable (IUCN)" while the same entry's history
+  paragraph said "The IUCN still rates the species Least Concern." The
+  IUCN Red List page itself returns 403 to an automated fetch, but
+  Wikipedia gives Least Concern citing IUCN 3.1 and the GBIF taxon record
+  agrees. Corrected to Least Concern. The likely origin is the crested
+  gecko entry directly above it in the same file, which is genuinely
+  Vulnerable.
+- `overview` said the gecko "can drop and partially regenerate its tail,
+  though the regrown version is smooth and bumpy." The reader: "cannot be
+  both." The handling guide, citing Lozito et al. (2024) in Gigabyte,
+  says gargoyles regenerate where crested geckos cannot, and the regrown
+  tail is "prehensile and cartilage-based rather than bone, with somewhat
+  asymmetrical scales, but fully functional." A peer-reviewed paper
+  outranks everything, so the overview now matches it.
+- `wildLifespan` read "15-20 years", a captive figure in the wild field,
+  the fourth instance of this defect in two batches after hedgehog,
+  veiled chameleon and milk snake. No source gives a wild figure for this
+  species. Rewritten to the form the crested gecko and African fat-tail
+  entries in the same file already use.
+
+### Also fixed
+
+Four of the reader's eight recommended links. The setup guide was already
+at the one-sibling cap on a pre-existing link to the health guide, so its
+suggested pointer to the feeding guide was dropped rather than the
+existing one; the hub needed none; and the encyclopedia carries no
+in-body links.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: choosing a
+  healthy animal at purchase, a cleaning schedule, sexing and what a lone
+  female laying infertile eggs means, first aid for a fresh tail drop, a
+  scale and target weights by age, and cleanup crew cost for the
+  bioactive option two pages recommend.
+- The scale is the pointed one: the feeding guide calls regular weighing
+  "the most objective way to catch a real problem early" and no page
+  listed one in gear or cost. It is on the router hub's buy list now,
+  which is a partial fix, not a real one.
+- The hub's "Females should not be paired with males until they reach at
+  least 40 grams" had no deep dive behind it and no page follows it up.
+  Retired rather than carried as an unsourced row, and filed as a gap.
+
+## Gerbil (2026-09-14, batch H, single pass, before the router hub)
+
+Extractor set of eleven pages, the largest yet (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment, legal, and the
+vs guinea pig and vs hamster comparisons). One Opus 5 agent. The reader
+read the legacy care sheet hub; the router hub was built from its
+findings the same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | A- | Densest page in the set and the only one citing Merck. |
+| Encyclopedia | B+ | Short, genuinely natural history, no care padding. |
+| Cost | C+ | The monthly figure does not match its own annual table. |
+| Handling | C | Thin, mostly "social, day-active, no tail." |
+| Health issues | B- | Good triage lines, shorter and softer than the hub's health section. |
+| Tank setup | A- | The most buildable page here. |
+| Feeding | B | Specific, sourced, and it contradicts the hub. |
+| Enrichment | A | Best page in the set. |
+| Legal | A | Tells me the exception-by-absence trap. |
+| vs Guinea pig | C- | Its gerbil column is unreliable. |
+| vs Hamster | C | Useful on schedule, wrong on diet. |
+
+Set grade: B-. "Excellent on the two things that matter most, burrow
+structure and law, undermined by numbers that disagree across pages I am
+supposed to trust equally."
+
+### The pattern reversed
+
+This is the first species in four batches where the hub was right and the
+deep dives were wrong, and it matters for the process. The hub was the
+only page in the set citing the Merck Veterinary Manual, and it graded
+A-, the highest hub grade any reader has given. A router rebuild that
+assumed the deep dive wins by default would have deleted six correct,
+vet-sourced figures and carried the drifted ones forward.
+
+Opened Merck's gerbil page. Every hub figure is verbatim:
+
+- "Gerbils thrive on commercially available pelleted rodent diets with
+  18-20% protein."
+- "Pelleted chow (5-8 g/day) has been recommended."
+- "On diets containing > 4% fat", gerbils develop elevated blood
+  cholesterol.
+- Nasal dermatitis develops above 50% humidity; prevention requires
+  "lowering environmental humidity below 40%."
+- "The normal lifespan of a gerbil is 2-3 years."
+- On tail degloving: "amputation of the bare portion of the tail as soon
+  as possible is recommended to prevent the development of infection."
+
+### Numbers decided, both sides and the source that won
+
+- Protein. Feeding guide "Aim for roughly 14 to 16%" against the hub's 18
+  to 20%. Merck, a veterinary manual, outranks the American Gerbil
+  Society, a husbandry reference, and the two do not actually conflict:
+  AGS gives 14% as a minimum and the feeding guide had read a floor as a
+  target. Now 18 to 20%, with the 14% kept as the floor many
+  hamster-labelled bags miss.
+- Fat. Feeding guide "low fat around 4 to 8%" against Merck's ">4%"
+  causing raised cholesterol. The reader put it best: "The hub's danger
+  line is the feeding guide's target." Now at or under about 4%.
+- Portion. Feeding guide 5 to 10 g against Merck's 5 to 8 g/day.
+- Humidity. Setup and health guides "under about 50%" against the hub's
+  "below 40 percent". Merck gives both numbers with different meanings:
+  50% is where the disease appears, 40% is what prevents it. Both pages
+  now say so.
+- Lifespan. Cost guide "2 to 5 years, commonly landing around 3 to 4"
+  against the two comparison pages' flat "2 to 3 years". Merck says 2 to
+  3, so the pages the reader graded C- and C were right and the cost
+  guide was not.
+- Tail slip, three positions across three pages. Handling: "genuinely
+  warrants a vet visit." Health: "The stump usually heals on its own."
+  Hub: "prompt amputation of the bare section." Merck backs the hub, and
+  the health guide's version was the dangerous one.
+
+### Hub-only material moved into the health guide
+
+Retiring this hub would have deleted clinically useful Merck content no
+deep dive carried, so it moved first and the rows copy it from there:
+aural cholesteatoma, which Merck records in 50% of gerbils over two years
+old with head tilt as the visible sign, seizures and how to tell the
+ones that resolve with age from the ones that do not, and the 25 to 40%
+tumor incidence past two or three years with scent gland and ovarian
+tumors at roughly 80% of the total. All three are now sections of the
+health guide.
+
+### Other fixes
+
+- The cost guide's "$25 to $40 a month" against its own annual table,
+  which sums to $125 to $232 a year including the vet check, or $10 to
+  $20 a month. The reader caught it; the table was right.
+- The vs guinea pig table's "10-gallon+ tank" against the setup guide's
+  20-gallon long minimum for a pair.
+- The vs hamster guide's "a quality pelleted food formulated for both
+  works for either species", which the feeding guide and AGS both
+  contradict. It now has a short section of its own saying why the bag
+  labelled for both is usually a hamster bag.
+- The feeding guide listed citrus as outright toxic while the RSPCA, one
+  of its own three cited sources, lists oranges among the fruits that can
+  supplement a pelleted diet. Citrus moved from the toxic list to the
+  ration-it list.
+- Encyclopedia wildLifespan read "2-3 years", a captive figure in the
+  wild field, the fifth instance of this defect in two batches. Animal
+  Diversity Web gives an average wild lifespan of 3 to 4 months, which is
+  a far more striking number than the one it replaced.
+- Six of the reader's eleven recommended links.
+
+### Open
+
+- The seven things not covered anywhere, in docs/READER_LOG.md: sexing
+  and confirming a same-sex pair, choosing animals at purchase, the
+  first-week settling routine, declanning warning signs and how to split
+  a pair safely, a full cleaning schedule, heat and cold thresholds, and
+  playpen safety.
+- The declanning gap is the sharpest. Both the hub and the encyclopedia
+  call failed introductions the hardest part of keeping gerbils, and no
+  page says what a pair breaking down looks like or what to do about it.
+- The shared small mammal heat stress guide names guinea pigs, rabbits,
+  chinchillas and hamsters and not gerbils, which is a one-row fix in a
+  shared guide rather than species work.
+
+## Sulcata Tortoise (2026-09-14, batch H, single pass, before the router hub)
+
+Extractor set of ten pages (hub, encyclopedia, cost, handling, health
+issues, tank setup, feeding, enrichment, legal, and the sulcata vs
+Russian tortoise comparison). One Opus 5 agent. The reader read the
+legacy care sheet hub; the router hub was built from its findings the
+same day.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | A summary of the other nine, and the only page where numbers are asserted with no hedging. |
+| Encyclopedia | B- | Almost nothing to act on, except the 10 foot burrow depth. |
+| Cost | A- | Adoption over purchase, monthly figures by life stage, the winter electricity line. |
+| Handling | B | Keep juveniles low, never house two mature males, sexing cues. |
+| Health issues | A- | Names two studies and admits they disagree. |
+| Tank setup | A | Every number I need to build. The most useful page here. |
+| Feeding | A | Schedule by age, supplement cadence, the one week vet threshold. |
+| Enrichment | A- | Target training, and do not build terrain that flips a tortoise. |
+| Legal | A- | The state table, the tick certificate, the California desert tortoise mix-up. |
+| vs Russian | B+ | Mostly a do-not-buy filter, which is fair. |
+
+Set grade: B+. "The deep dives are genuinely good and specific, and the
+set is dragged down by a hub that repeats them badly and by numbers that
+drift page to page."
+
+### Numbers checker
+
+`node scripts/check-species-numbers.mjs sulcata-tortoise --strict` before
+the pass printed 20 topic groups with conflicts across 48 groups, the
+most of any species in batches F to H.
+
+### The brumation contradiction
+
+The reader called this the worst one, and it is the only case in three
+batches where a deep dive contradicted one of the site's own shared
+guides rather than a sibling.
+
+Tank setup: "In regions with genuinely cold winters, the shelter needs to
+stay heated to at least 55 to 60°F to allow safe brumation." The vs
+Russian guide: "Sulcatas come from the edge of the Sahara and are not
+built for brumation at all."
+
+The site already settles this. Our shared tortoise brumation guide names
+the species the Royal Veterinary College considers unsuitable for
+hibernation outright, and the African spurred tortoise is on that list
+alongside leopard, red-foot and yellow-foot tortoises, because they are
+tropical or subtropical species with no cold-season adaptation. The tank
+setup guide was giving Testudo advice to a Sahel animal. Rewritten: where
+winters are cold, the tortoise winters indoors, and the sentence now
+links the shared guide that names it.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Lifespan. Hub: "they can live 70 to 150+ years." Cost guide: "commonly
+  lives 70 to 100 years", which handling and vs Russian also say. The
+  reader: "The hub is the outlier and it is the number people quote."
+- Pyramiding. Hub: "is caused by excessive protein intake, low humidity
+  during growth, and rapid growth rate." Health: "It's debated," with two
+  named studies that disagree. The hub was stating a live scientific
+  question as settled, in the direction the health guide's better source
+  rejects.
+- Sexing size. Hub: "around 8 to 10 inches in shell length." Handling:
+  "10 to 15 inch shell-length range."
+- Calcium. Hub checklist: "2 to 3x/week" flat. Feeding: "2 to 3 times a
+  week for juveniles and about weekly for adults."
+- Outdoor space. Hub: "at least 100+ square feet." Setup: "80 to 100
+  square feet per tortoise, ideally several hundred."
+- Shelter temperature. Hub: "60 degrees F+." Setup: "70 to 75°F."
+- Greens cost. Hub: "$60 to $120." Cost guide: "$2.44 to $3.57 a pound,
+  call it two or three pounds a month."
+
+### Numbers decided, both sides and the source that won
+
+- IUCN status, which carries a legal conclusion. Encyclopedia:
+  "Vulnerable (IUCN)." Legal guide: "Centrochelys sulcata is IUCN
+  endangered, which makes it categorically non-exempt" from a
+  Massachusetts permit allowance. The 2021 assessment by Petrozzi and
+  colleagues lists the species as Endangered, and Wikipedia records it as
+  Endangered under IUCN 3.1 with that assessment year. The IUCN Red List
+  page itself returns 403 to an automated fetch. The legal guide was
+  right and the encyclopedia was out of date.
+- Lifespan. Animal Diversity Web gives an average captive longevity of
+  54.3 years and no wild figure; ReptiFiles says "over 70 years"; the
+  cost guide says 70 to 100. Nothing supports 150. The encyclopedia's
+  wildLifespan also held a captive figure, the sixth instance of that
+  defect in two batches.
+- Adult weight, four figures across four pages. Animal Diversity Web:
+  "Range mass: 36 to 50 kg", which is 79 to 110 lbs. ReptiFiles: "70-110
+  lbs on average, although particularly large males can reach over
+  40 inches and 200 lbs". The handling guide's "80 to 110 pounds, and a
+  male can reach 200" already matched both, so the encyclopedia's
+  "70-150+ lbs" and the vs Russian guide's three instances of the same
+  were corrected to it rather than a new number being introduced.
+- Juvenile indoor size. Handling gave "an 8-by-8-foot indoor minimum as a
+  juvenile", which is the setup guide's adult figure. Corrected to the
+  setup guide's roughly 7 by 3.5 feet under 10 inches, with 8 by 8 named
+  as the adult floor for housing that should not be indoors at all.
+- Shelter cost, inside one page. Cost table "$200 - $600" against its own
+  body's "another $1,000 or more on top of that". The table row now reads
+  $200 to $1,000+ and the body says what the table is pricing.
+- Daytime temperature. Feeding's "roughly 85 to 95°F during the day"
+  blurred the setup guide's ambient 80 to 90 and basking 95 to 105 into
+  one band. Now it names both.
+
+### Also fixed
+
+Seven of the reader's ten recommended links. The enrichment guide was at
+its one-sibling cap on a pre-existing sentence reading "The tank setup
+guide has the indoor and outdoor space requirements at each size", which
+is the site self-reference RULES bans, so that sentence now carries the
+80-to-100-square-feet figure directly and the freed slot went to the
+reader's requested feeding link.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: a juvenile
+  soaking protocol, growth benchmarks and a weigh-in schedule, how to
+  build the humid hide the pyramiding advice depends on, evaluating a
+  hatchling or breeder, emergency vet costs in dollars, and how to move
+  an adult.
+- The soaking one is the sharpest: the feeding guide says juveniles
+  "benefit from regular soaking" and then stops, with no frequency,
+  duration, depth or water temperature anywhere in the set.
+- The moving question is the second: the cost guide raises transporting a
+  hundred-pound tortoise and no page answers it, on a set where the
+  enrichment guide's best line is about target training precisely so the
+  animal moves itself.
+
+## Cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata tortoise (2026-09-14, batch H species check)
+
+One Fable agent covering all five species on branch
+claude/hub-pacman-frog-80291s from base b01ecd2, run once after every
+species was done and pushed, per the batch prompt. It read diffs rather
+than whole files, opened the source URLs behind the two claims the batch
+rests on (the Merck gerbil page, twice, plus the raw page text for the
+seizure paragraph; ReptiFiles, The Bio Dude and Reptiles Magazine on
+gargoyle gecko heat) and behind every other number decision (ReptiFiles
+on milk snake and sulcata, Animal Diversity Web for cardinal tetra, milk
+snake, gerbil and sulcata, Aquarium Co-Op on ich, the RSPCA on gerbil
+citrus, Wikipedia for the two IUCN fields where the Red List returns
+403), fixed every finding on the branch, and committed "Cardinal tetra,
+milk snake, gargoyle gecko, gerbil, sulcata tortoise: species check".
+Nothing merged.
+
+### Scope
+
+Clean. The diff is the five guide entries, the five species' MDX, this
+file, docs/READER_LOG.md, READMEFIRST.md and docs/TODO.md (the batch
+pick-up commit), and four encyclopedia entries, all for batch species,
+every changed field traced to a named source that was opened again here
+(gargoyle: Lozito et al. for the tail, Wikipedia and GBIF for Least
+Concern; milk snake and gerbil: Animal Diversity Web; sulcata: ADW,
+ReptiFiles, and Petrozzi et al. 2021 via Wikipedia for Endangered). The
+sulcata overview and adultSize edits are same-page copies of the moved
+weight and lifespan figures, not new research. No shared class guide
+row, no other src file. SHORT_LABELS and RELATED_ARTICLES needed no
+change and got none.
+
+### The two claims the batch rests on
+
+Both hold. Merck's gerbil page states, verbatim, 18 to 20% protein, 5 to
+8 g/day, raised cholesterol on diets over 4% fat, nasal dermatitis above
+50% humidity with prevention "below 40%", a 2 to 3 year lifespan, and
+tail amputation "as soon as possible". Reversing the usual direction was
+right. And the three gargoyle sources do reject the old no-heat thesis:
+ReptiFiles gives 77 to 84°F with a basking spot at 84 and calls
+inadequate heat the most common cause of lethargy and poor appetite, The
+Bio Dude gives basking 82 to 85 and cool 70 to 75 and calls the belief
+"a common misconception", Reptiles Magazine gives 78 to 82 by day under
+a low-wattage bulb or ceramic emitter. The rewrite was warranted.
+
+What did not hold was one sentence downstream of the Merck claim: see
+Gerbil below.
+
+### Cardinal tetra: fixed on the branch
+
+- Eight first-week rows carried a source's name ("Animal Diversity Web
+  puts", "Seriously Fish gives", "Practical Fishkeeping notes", "the
+  Merck Veterinary Manual documents", "Aquarium Co-Op notes"), copied
+  faithfully from deep dives that name sources inline. The batch prompt
+  says none of that goes in a row and this is exactly where batches D
+  and E leaked. All eight rows now carry the figure alone, numbers
+  unchanged; the three hub FAQs keep their names because the verbatim
+  rule wins for FAQs.
+- The health guide's rewritten ich FAQ said the heat advice "is not what
+  Aquarium Co-Op calls for"; the cost guide's rewritten lifespan FAQ
+  said "Animal Diversity Web notes". Both batch-added names cut, hedges
+  kept.
+- Every number decision checked out: Aquarium Co-Op never recommends
+  raising the temperature and prescribes a redose every 24 hours with a
+  third of the water changed, one extra day past the last spot; ADW says
+  "about 5 years, although individuals may live as long as 10 years"
+  and "at least 10 of this species should be kept together". Dates
+  bumped on the three files where a number moved and nowhere else. Six
+  links, all to shared fish guides, none over a limit.
+
+### Milk snake: fixed on the branch
+
+- The setup guide's new subspecies sentence ("ReptiFiles, working from
+  Markel's reference figures, gives...") and its new Diet Basics opener
+  ("ReptiFiles puts juveniles on...") narrated the source in the body,
+  and the hub's "Size by subspecies" row copied the narration. Both
+  sentences rewritten to state the figures; row updated to match. The
+  figures themselves are ReptiFiles' verbatim: cool side 75 to 80, night
+  70 to 75, Pueblan 28 to 36, Eastern 36 to 45, Honduran and Sinaloan 40
+  to 48, juveniles every 7 to 10 days, adults 10 to 14, prey 1.5x width
+  or 10% of body weight, "20 years or more".
+- The vs corn guide dropped "copperhead" from its table cell and the
+  review says "the copperhead is gone", but the same page's FAQ and its
+  mimicry paragraph still said "coral snakes or copperheads". Both now
+  say coral snakes. That page also changed three figures (length,
+  lifespan, mimic) with no date bump; bumped to 2026-09-14.
+- The hub routed the vs corn piece. The batch prompt's routes are one
+  per own deep dive, not vs pieces, and no other router hub on the site
+  routes one; removed.
+- The emergency card's "Cheesy or yellowish material around the gums"
+  does not appear in the health guide, whose mouth rot section gives no
+  sign at all. Bullet now reads "Signs of mouth rot (infectious
+  stomatitis)", which is what the guide says.
+- The enrichment sentence that lost its "other substrate quantities"
+  fragment ended up with "deep enough" twice; tidied, no fact changed.
+
+### Gargoyle gecko: fixed on the branch
+
+- The body H1 still read "A Cool-Climate Species That Doesn't Want Your
+  Heat Lamp". DemotedH1 renders it invisibly, which is exactly how a
+  stale copy survives. Now matches the new title.
+- "A basking spot around 82 to 84°F" appeared in the body, the FAQ, the
+  seoDescription, the cost guide's new link sentence and the hub
+  Temperature row. No source states that range: The Bio Dude says 82 to
+  85, ReptiFiles says 84. Under "never write a number no source states",
+  all five now read 82 to 85, The Bio Dude's figure, which the rest of
+  that paragraph's gradient (cool end 70 to 75, ambient at or below 82)
+  already came from.
+- The rewritten temperature section named ReptiFiles and The Bio Dude in
+  prose, the substrate section named Reptiles Magazine and The Bio Dude,
+  and the excerpt and opener both said "every specialist source on this
+  page says otherwise". All de-narrated; the ectothermy point and the
+  misconception label stay as claims, the block carries the sources.
+- Hub "Feeding schedule" and "Insects" rows copied the feeding guide's
+  disagreement narration ("though one detailed care sheet breaks life
+  stages out differently", "most sources say... one source says... one
+  specialist source is a real outlier"). Rows now carry the figures the
+  guide lands on. The feeding guide itself is pre-existing text and was
+  left alone.
+- Cost guide (heat sentence, bulb FAQ) and health guide (impaction
+  paragraph) both changed a fact with no date bump; both bumped.
+- Encyclopedia: three fields, all traced, all confirmed. Wikipedia's
+  infobox gives Least Concern, the handling guide's Lozito et al.
+  citation carries the tail claim.
+
+### Gerbil: fixed on the branch
+
+- The seizures section, new in the health guide, said "Merck notes that
+  frequency and severity often decrease with age, and adds that a subset
+  of adults instead get progressively worse". Merck's raw page text puts
+  that sentence in the paragraph on dihydrostreptomycin toxicosis
+  ("seizures due to toxicosis from dihydrostreptomycin often decrease
+  with age... certain subsets of adult gerbils do not improve"), not on
+  spontaneous seizures. The emergency card then carried "Seizures that
+  are becoming more frequent rather than less" as a call-the-vet
+  bullet, built on the misread. The section is rewritten from the MSD
+  page already in that guide's Sources: 20 to 40% of gerbils, uncommon
+  in many pet strains, onset at 2 to 3 months, worse to about 6 months
+  then declining, episodes of several minutes with no permanent damage,
+  handling in the first three weeks reduces them. The "progressively
+  worse" claim and the card bullet are gone; the hub Seizures row copies
+  the new section.
+- The emergency card had five bullets, three of them written (head
+  tilt, tail, seizures) and two of the health guide's four items
+  dropped (dropped food or drooling, a persistently red or bloody
+  nose). The batch added the cholesteatoma and degloving sections and
+  left the guide's When to See a Vet sentence untouched, so the card had
+  nothing to copy from. That sentence now names the degloved tail as a
+  same-day visit and the head tilt as a prompt one, and the card copies
+  it: six bullets, one per item.
+- Merck named in prose seven times across four guides (cost body and
+  FAQ, feeding body, setup body, health body three times and FAQ), all
+  batch-added, and in three hub rows and one route line. All rewritten
+  to state the figure; Merck stays in the Sources blocks it was added
+  to. The 40% humidity figure is on the page ("Prevention requires
+  lowering environmental humidity below 40%"), so the setup and health
+  guides' two-number explanation stands.
+- The cost guide's FunFact still said "on average, a three to four year
+  relationship" under a Lifespan section that now says 2 to 3. Same-page
+  copy; now two to three.
+- Both vs guides changed a fact (guinea pig: the 20-gallon cell; hamster:
+  the new protein section) with no date bump; both bumped.
+- Two vs routes removed from the hub, same rule as milk snake.
+- Encyclopedia wildLifespan: ADW does give "average lifespan in the wild
+  is 3-4 months". Confirmed.
+
+### Sulcata tortoise: fixed on the branch
+
+- The review says the vs Russian guide's three weight figures "were
+  corrected to" the handling guide's 80 to 110. They were changed to 70
+  to 110 instead, in the table, both FAQs and the body, so the vs guide
+  disagreed with the handling guide, hub, encyclopedia and cost guide
+  the batch had just aligned. All four now read 80 to 110 (ADW's 36 to
+  50 kg is 79 to 110 lb; ReptiFiles' 70 to 110 is the only source for a
+  70, and the site figure the batch chose everywhere else is 80).
+- Five files changed a number with no date bump: the tank setup guide
+  (brumation), feeding (85 to 95 became the two bands), handling (the
+  juvenile indoor figure), cost (the shelter table cell) and vs Russian
+  (weight). All bumped to 2026-09-14. The enrichment guide's pointer
+  swap was left unbumped as a navigation edit carrying a copied figure.
+- Emergency card: "A tortoise found on its back" and "Refusing food for
+  a week" are not in the health guide the card cites (the first is the
+  enrichment guide's, the second the feeding guide's). Replaced with the
+  health guide's shell fracture item, which the card had skipped.
+- The vs Russian route removed from the hub, same rule.
+- Encyclopedia: four fields. Endangered (Petrozzi et al. 2021, via
+  Wikipedia's infobox), 36 to 50 kg and 54.3 years captive (ADW), 70 to
+  110 lb and 200 lb males (ReptiFiles) all confirmed on the pages.
+- Left as is: the setup guide names the Royal Veterinary College in the
+  brumation sentence and the hub row copies it. That is a named
+  institutional list rather than provenance for a figure, and the shared
+  brumation guide names it the same way.
+
+### Gates on the branch head
+
+check-internal-links, check-related-articles, check-affiliate-mdx,
+check-cost-coverage, check-seo-tags, check-encyclopedia, check-voice
+--strict and eslint all pass. check-species-numbers for all five: no
+hub line disagrees with a deep dive (--strict exits 1 on every species,
+including merged ones like canary, whenever any advisory group exists,
+so the exit code is not the test). Voice warning counts on the 30
+changed MDX files are unchanged against b01ecd2, except the gargoyle
+tank setup guide, which lost one.
+
+### Verdicts
+
+Cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata tortoise:
+all fixed on the branch. No redo.
+
+### Pass grade: B-
+
+The research was real and the hard calls were right: both claims the
+batch leaned on hold verbatim on the source pages, the gargoyle rewrite
+was warranted, and reversing the hub-loses default on gerbil was the
+correct read of Merck. But the execution around those calls was loose in
+ways the process has named before. Ten files changed a number with no
+date bump. Three hubs routed vs pieces against the prompt's rule. Two
+emergency cards carried written bullets and one dropped half the health
+guide's list. Source names went into hub rows and body prose on four of
+five species after batches F and G had stopped that, and the review file
+says "the copperhead is gone" and "corrected to 80 to 110" about pages
+where neither happened. One Merck sentence was read out of its paragraph
+and reached the emergency card. None of it was hard to fix; all of it
+should have been caught by the batch's own step 4.

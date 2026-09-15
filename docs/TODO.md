@@ -394,9 +394,12 @@ Checked 2026-09-14 against `src/lib/data/guides/*.js`: a hub is a router hub
 when its entry carries `firstWeek` rows (RULES, Hubs). 41 of 108 done, 67
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
-Next: batch H, not yet picked. Worker Opus 5 high effort, one Fable
-closing check per batch (the batch prompt in READMEFIRST has the
-reasoning).
+Next: batch H, cardinal tetra, milk snake, gargoyle gecko, gerbil,
+sulcata tortoise, one per class. Three of the five are cross-linked by
+batch G, and the cardinal tetra hub carries a misspelled parasite name
+flagged in batch F and left out of scope then. Worker Opus 5 high
+effort, one Fable closing check per batch (the batch prompt in
+READMEFIRST has the reasoning).
 
 Done (31):
 
@@ -412,7 +415,7 @@ Done (31):
 - [x] pacman frog, zebra finch, angelfish, tokay gecko, sugar glider
       (batch F, merged to main 2026-09-14)
 - [x] canary, neon tetra, veiled chameleon, California kingsnake, hedgehog
-      (batch G, done and checked 2026-09-14, not yet merged)
+      (batch G, merged to main 2026-09-14)
 
 To do (67):
 

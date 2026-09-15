@@ -3826,3 +3826,426 @@ First two changes: rebuild the hub from the deep dives so every number matches, 
 - Heat failure or power outage contingency.
 
 (Nail trimming and molting are covered by the shared Grooming, Nails, and Molting guide; vet transport by the shared small mammal vet guide.)
+
+---
+
+# Cardinal Tetra: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch H. Raw and unedited.
+
+Read all eight files in order. Review follows.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: shopping checklist, school size, cycle warning. **B.** The one page with a water change schedule, and its temperature range contradicts the setup guide.
+- **01 Encyclopedia.** Finished it. Actionable: adult size, wild lifespan context. The naming-priority story is the only thing here I could not get elsewhere. **B.**
+- **02 Cost.** Finished it. Actionable: $1 to $3 a fish, $65 to $230 setup, test kit is the non-optional line item. **A-.**
+- **03 Handling.** Finished it. Actionable: minimum 10, three named beginner mistakes, the stripe tell. Thin for a standalone page. **B-.**
+- **04 Health.** Finished it. Actionable: symptom lists, ich and fin rot treatment, nitrite as the number to watch. **A.**
+- **05 Tank setup.** Finished it. Actionable: 20 long, 73 to 84F, pH 5.0 to 7.0, sponge filter, driftwood and almond leaves. Best page in the set. **A.**
+- **06 Feeding.** Finished it. Actionable: twice daily, two-minute rule, crush the flake, remove dead fish immediately. **A-.**
+- **07 Enrichment.** Finished it. Actionable: priority order list, buy from a shop that has held them, spread food across the surface. Terse, and the honest "nothing on cardinals specifically" bought my trust. **A-.**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, adult size, wild lifespan, and the Schultz/Axelrod naming race appear nowhere else. The hub half earns it. Checklist, cost tables, and the weekly water change line are useful; the Housing, Diet, Enrichment and Health sections are compressed restatements of four deep dives.
+
+Disagreements with the deep dives:
+
+- Temperature. Hub: "Keep water heated between 73 and 81 degrees F." Setup: "73 to 84°F is the range Seriously Fish gives for this species." The hub checklist repeats 73 to 81.
+- School size. Hub FAQ: "At least 6, ideally 8 to 10 or more if the tank allows." Enrichment: "Ten, not six... Do not stop at six." Handling: "Animal Diversity Web puts the workable minimum at 10."
+- Tank size. Hub: "A 10 to 20 gallon tank suits a proper school of 8 to 10 or more." Setup: "If you're stocking the fuller 8 to 10 fish school this species is usually kept in, that's [20-gallon long] the better practical minimum."
+- Feeding. Hub: "Feed small amounts once or twice daily." Feeding guide: "Twice daily... is the practical standard."
+- Parasite name. Hub: "Pleistophora hyphessobrycetis." Health and feeding: "Pleistophora hyphessobryconis." One is wrong.
+
+## 3. Could I keep one alive?
+
+Mostly yes. I can size the tank, buy the kit, stock ten, feed them, and recognize ich, fin rot, swim bladder trouble and neon tetra disease. Still missing: how to soften hard tap water (enrichment says hard water is the main reason cardinals fail, then never says what to do about it), a tankmate list, how to acclimate a bag on arrival beyond "slowly", quarantine duration for new stock other than the 30 days mentioned under ich, and how to humanely euthanize a confirmed case.
+
+Unmarked hand-offs: the hub asks me to "confirm a completed nitrogen cycle" without pointing anywhere; the cycling guide is in the sidebar. Handling names a fatal mistake as "adding them to a tank that hasn't finished cycling" and never links the setup guide or the cycling guide. Health tells me to set up "a modest separate tank with its own gentle sponge filter" and does not link the hospital tank guide sitting in its own sidebar. Setup says "always quarantine new fish" and links nothing.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: the 2008 Acta Amazonica nitrite finding (cost, handling, health, feeding). Read twice: the neon stripe comparison (hub FAQ, handling), the incurable-disease scavenging rule (health, feeding), blackwater tannins (setup, enrichment), small mouths (feeding, enrichment).
+
+Conflicts:
+
+- Setup body: neon tetra is comfortable to "roughly 25°C (77°F)". Setup FAQ, same page: "warmer than neon tetra's comfort ceiling of roughly 77 to 81°F."
+- Health body on ich: "a commercial ich medication alongside daily partial water changes." Health FAQ: "a gradual temperature increase plus a commercial ich medication." The body never mentions heat, which matters when the same site puts 50% mortality near 33.7°C.
+- Cost: "A 10-gallon tank is workable for the bare minimum school of 6," against enrichment's flat "Do not stop at six."
+
+## 5. One link per page
+
+- Hub: "always confirm a completed nitrogen cycle, especially for nitrite, before stocking" points to How to Cycle a Fish Tank.
+- Encyclopedia: none needed.
+- Cost: "Confirming your cycle before stocking, not after, is the cheapest insurance this species has" points to How to Cycle a Fish Tank.
+- Handling: "Adding them to a tank that hasn't finished cycling" points to the tank setup guide.
+- Health: "A modest separate tank with its own gentle sponge filter is worth setting up for this" points to Fish Quarantine and Treatment.
+- Setup: "Always quarantine new fish before adding them, given the disease risk this species carries" points to the cardinal tetra health issues guide.
+- Feeding: "Overfeeding lets uneaten food decay and spike ammonia and nitrite" points to How to Tell If Your Fish Is Sick.
+- Enrichment: "Do not keep them in hard alkaline water and expect them to thrive" points to Freshwater pH, GH, and KH.
+
+## 6. Trust
+
+Doubts: the Merck citation for a microsporidian parasite resolves to a page titled mycotic diseases, the parasite name is spelled two different ways, and the hub temperature band is narrower than the guide's without explanation. The cost guide's "up to five years" also quietly drops the hub's "up to 10."
+
+Most convincing sentence, from the feeding guide: "Food that's too large gets taken and spat back out repeatedly, which functionally starves the fish even while food is visibly going into the tank." That is watched, not researched.
+
+## 7. Set grade
+
+**B+.** Strong, sourced, genuinely specific on the things that kill this fish, undermined by a hub that disagrees with its own deep dives and a near-total absence of links between pages that plainly need each other. First two changes: reconcile the hub to the setup and enrichment numbers (temperature, school size, tank size, feeding frequency), then add the cycling and quarantine links where four pages already raise the question.
+
+## Not covered anywhere
+
+- How to soften or acidify hard tap water for this species. The pH, GH, KH guide is framed around not chasing numbers in a coldwater tank, and does not promise a softening method.
+- A cardinal tetra tankmate list, and what counts as a fin-nipper to avoid.
+- Humane euthanasia method for a confirmed neon tetra disease case, which the health guide recommends and never explains.
+- Breeding, or what to do with fry, given the species is described as hard to breed at scale.
+---
+
+# Milk Snake: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch H. Raw and unedited.
+
+Read all nine. Review below.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Act on: the full shopping checklist, temps, feeding interval, the 48 to 72 hour post-feed handling wait. Grade B.
+- **01 Encyclopedia.** Finished it, it is short. Act on: nothing, but the History paragraph on pattern as motion camouflage is the only genuinely new idea in the set. Grade B minus.
+- **02 Cost.** Finished it. Act on: a real budget and a buy list. Grade B.
+- **03 Handling.** Finished it. Act on: never cohabit, do not handle mid-shed. No actual technique: no pick-up method, no session length, no settling-in week. Grade C plus.
+- **04 Health.** Finished it. Act on: symptoms and which ones mean vet today. Grade B plus.
+- **05 Tank setup.** Finished it. Act on: dimensions, temps, substrate, cohabitation. Grade B plus.
+- **06 Enrichment.** Finished it fastest. Act on: cover across the whole floor, priority order. Grade A minus.
+- **07 Legal.** Finished it. Act on: check my state before buying. Grade A.
+- **08 vs Corn.** Skimmed the back half. Act on: nothing. Grade C.
+
+## 2. Hub and encyclopedia against the deep dives
+
+The encyclopedia earns its place on one paragraph only, the camouflage argument, which no other page mentions. Everything else in it is restated elsewhere.
+
+The hub does not earn its place. It is the only page with a feeding schedule and the only page with a post-feed handling wait, which is real value, but it contradicts the deep dives on the two things I would buy first.
+
+Heating. Hub: "Under-tank heater with thermostat" and "a warm end (85 to 88 degrees F surface temperature via UTH on thermostat) and a cool end (72 to 75 degrees F)." Tank setup: "Basking surface 85 to 90°F, cool side 70 to 80°F, nighttime not below about 66°F. A halogen flood bulb positioned over a basking stone is the commonly recommended heat source for this species." The hub sells me a UTH as the primary heater, the deep dive calls the UTH a supplement.
+
+Enclosure. Hub: "A 3x1.5x1.5 ft to 4x2x2 ft enclosure suits most adult milk snakes." Tank setup: "the minimum adult enclosure at 48 inches long by 24 inches wide by 24 inches tall." The hub's low end is below the deep dive's minimum.
+
+Setup cost. Hub table totals roughly $208 to $430. Cost guide: "Roughly $300 to $600." The hub is budgeting a glass tank, the cost guide a PVC vivarium. Neither says so.
+
+Size. Hub: "over 5 ft (Sinaloan milk snake)." Hub FAQ: "Sinaloan milk snakes can reach 4 to 5 feet." Encyclopedia: "2-4 feet." vs Corn: "24-36 in (some larger)." Four numbers for one animal.
+
+Lifespan. Hub "12 to 20 years," cost guide "commonly live 20 years or more," vs Corn "15-20 years, some 25+."
+
+## 3. Could I keep one
+
+Almost. I can size and build the enclosure, budget it, recognize the main illnesses, and check my state's law. What is missing:
+
+- Feeding beyond the hub's one line. No prey size by snake weight, no thawing method, no what to do with a refusal. There is no feeding deep dive in either sidebar list.
+- Brumation. A temperate snake that may stop eating in winter, and nothing says so.
+- Buying. Breeder versus shop, what a healthy hatchling looks like, shipping.
+- Cleaning cadence. The hub bills annual substrate replacement but no page says how often to spot-clean or strip it.
+- What to do when the escape artist escapes.
+
+Questions raised on one page and answered on another, unsaid: the health guide's respiratory causes ("temperatures running too cool, humidity that's off") never point to tank setup where the numbers are. The health guide's obesity line never points to the Sexing, Growth and Body Condition guide. The handling guide's mid-shed warning never points to either shed guide. The cost guide's purchase section never points to the legal guide, which is the page that tells me I may not legally buy one in Wisconsin.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: Batesian mimicry and the rhyme (hub twice, encyclopedia, cost fun fact, handling in full, vs Corn in full). Never cohabit (handling, tank setup, enrichment, hub). Escape artist (four pages).
+
+Conflicts: the heating and enclosure splits above. Also the mimicry story itself. Cost guide states it flat: "evolved to resemble the venomous eastern coral snake." The encyclopedia undercuts it: "Milk snakes live across a range that includes large areas where no coral snake occurs at all, which is difficult to square with mimicry as the whole explanation." And vs Corn widens the model to "coral snake/copperhead," which no other page supports.
+
+## 5. One link per page
+
+- Hub: none needed, both sidebar lists carry everything.
+- Encyclopedia: the History paragraph on the coral snake argument, to the handling guide, which is where the rhyme's limits live.
+- Cost: "Common Pueblan milk snakes run $70 to $100." To the legal guide.
+- Handling: "Handling a snake mid-shed, when skin is more vulnerable." To How Snakes Actually Shed.
+- Health: "From temperatures running too cool, humidity that's off, or poor ventilation." To the tank setup guide.
+- Tank setup: "A halogen flood bulb positioned over a basking stone is the commonly recommended heat source for this species." To Reptile Heating and Thermostats.
+- Enrichment: "Do not handle a hiding snake to check on it." To the handling guide.
+- Legal: "most people who keep one never think twice about whether it's legal." To the care guide hub.
+- vs Corn: "Both species do well in a similarly sized enclosure, eat appropriately sized rodents on a similar schedule." To the milk snake tank setup guide.
+
+## 6. Trust
+
+Doubts: the heater contradiction between the page I land on and the page I read second. Four different adult sizes. And two sentences that read like unedited template output: "Sphagnum moss for moist hide" as a noun, and in the enrichment guide "Other substrate quantities are available and a decent depth wants the larger bag," which is product copy with the product missing.
+
+The sentence that convinced me a keeper wrote this: "If not, it will use two hides and nothing else, and you will conclude it wanted a smaller enclosure." Nobody writes that without having watched it happen.
+
+## 7. Set grade: B minus
+
+Strong individual pages, a legal guide better than anything else I have read on the topic, undercut by a hub that disagrees with its own deep dives on heat and enclosure size.
+
+First two changes: make the hub match the tank setup guide on heat source, temperatures, minimum enclosure, and setup cost, or delete those numbers from the hub. Second, write a feeding guide and link it from the hub's diet section.
+
+## Not covered anywhere
+
+- Brumation and winter feeding refusal in a temperate colubrid.
+- Feeding mechanics: prey size by snake weight, thawing method, refusal troubleshooting.
+- Choosing and buying: breeder versus shop, what a healthy animal looks like, shipping.
+- Enclosure cleaning cadence: spot-clean frequency and full substrate change interval.
+- What to do when a milk snake escapes, on a set of pages that calls it an escape artist five times.
+- Handling technique itself: how to lift, session length, the first week home.
+---
+
+# Gargoyle Gecko: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch H. Raw and unedited.
+
+Read all eight files in order. Review below.
+
+---
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, and it is the most actionable single page: sizes, temps, costs, checklist. But it is also where the numbers go wrong. **B-**
+- **01 Encyclopedia.** Finished it, short and genuinely interesting on the 2012 genus split. Nothing to act on, and it contradicts itself. **C+**
+- **02 Cost.** Finished it. I can budget from it today: gear table, $280 to $745 all-in, vet tiers, monthly food. **A-**
+- **03 Handling.** Finished it. Concrete plan: wait two weeks, 5 minutes every other day, work to 15, handle low. **A-**
+- **04 Health.** Finished it. Symptom lists plus the causes, and a clear vet trigger list. Best page in the set. **A**
+- **05 Tank setup.** Finished it. I could build the enclosure from this alone. **A**
+- **06 Feeding.** Finished it, and it is the only page that tells me where sources disagree instead of picking one and hiding it. **A**
+- **07 Enrichment.** Finished it. Honest about having no species research, and the priority list is usable. **B+**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: natural history, the Bavay/Bauer taxonomy, why captive stock exists at all. None of that is in the deep dives. It also contradicts itself: quick facts say "Conservation: Vulnerable (IUCN)" while the history says "The IUCN still rates the species Least Concern." And "the regrown version is smooth and bumpy" cannot be both.
+
+The hub mostly repeats, in shorter and looser form, what the deep dives say better, and it disagrees with them:
+
+- Temperature. Hub: "Temperature should stay between 72 and 80 degrees F during the day... temperatures above 85 degrees F can be fatal." Tank setup: "Comfortable range is 72 to 78°F during the day... sustained temperatures above about 82°F cause real stress."
+- Insects. Hub diet section: "Supplement with live feeder insects 1 to 2 times per week." Hub FAQ: "live insects should be offered 2 to 3 times per week." Feeding guide: "once a week for adults."
+- Supplements. Hub: "Dust insects with calcium w/D3 2 to 3 times per week." Feeding: "dust with a calcium supplement without D3 for most feedings, with a D3-inclusive product periodically."
+- Handling time. Hub: "Sessions of 10 to 20 minutes a few times per week." Handling: "Start with 5-minute sessions every other day, working up to about 15."
+- Time of day. Hub: "Handle gently at dusk when they are naturally alert." Handling: "Handling during the day, when gargoyle geckos are naturally sleepier, also tends to go smoother than an evening session."
+- Temperament. Hub: "they rarely jump suddenly." Handling: "Young gargoyle geckos are skittish and jumpy, quick to leap at the slightest disturbance."
+- Enclosure. Hub: "An 18x18x24" or larger enclosure works well." Tank setup calls that the minimum and 24x24x24 the ideal. The cost table prices only the minimum.
+- Tail. Hub: "The tail partially regenerates." Handling: "fully functional."
+- The hub's entire Enrichment section is about handling. The enrichment guide says "do not treat handling as enrichment for a species that drops its tail."
+
+## 3. The set as a whole
+
+Yes, I could set one up, buy it, feed it, and spot trouble. Setup, temperature ceiling, humidity cycle, diet, and the vet triggers are all covered well.
+
+Still missing: how to choose a healthy animal at purchase and what to inspect; a cleaning and maintenance schedule; sexing, and what a lone female laying infertile eggs means; first aid for a fresh tail drop; a scale, despite feeding saying "Regular weighing is the most objective way to catch a real problem early" and no page listing one in gear or cost; cleanup crew cost for the bioactive option that two pages recommend.
+
+Questions raised on one page and answered silently on another:
+
+- Health: "non-particulate substrate matters for this species." The substrate answer is in tank setup, unlinked.
+- Feeding: "a warm side that runs too cool slows digestion." Tank setup is the page that says whether you have a warm side at all, and says most homes need no heat. Unlinked, and arguably in conflict.
+- Cost lists "UVB bulb replacement." Tank setup holds the bulb spec and UVI target. Unlinked.
+- Health raises floppy tail syndrome; tank setup's clutter section is the fix. Tank setup links health, health never links back.
+- Hub: "Females should not be paired with males until they reach at least 40 grams." Nothing anywhere follows that up.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice: glass-climbing and floppy tail syndrome (tank setup and handling), tail regrowth (handling, hub, encyclopedia), solo housing (handling, tank setup, enrichment), the wet-dry cycle (tank setup and health).
+
+Real conflicts:
+
+- Substrate. Health: "Impaction... is linked to ingesting loose substrate, which is why non-particulate substrate matters for this species." Tank setup: "Coconut fiber (like Zoo Med Eco Earth) works well for humidity retention." Coconut fiber is loose. Tank setup's own avoid list is "sand, wood chips, and gravel." Those two pages are not applying the same rule.
+- Heat. Tank setup: "Most homes need no dedicated heat source at all." Feeding: "An enclosure that's too cool... a warm side that runs too cool." There is no warm side in the tank setup.
+- Bulb life. Cost FAQ: "Add a UVB bulb replacement every 6 to 12 months." The cost table lists it as an annual line item.
+
+## 5. One link per page
+
+- **Hub.** None. The Deep Dive list already carries every one of these.
+- **Encyclopedia.** "If threatened, it can drop and partially regenerate its tail" should go to the handling guide, which is where partial becomes "fully functional."
+- **Cost.** "this species doesn't need a dedicated heat source in most homes" should go to the tank setup guide.
+- **Handling.** "gargoyles climb glass poorly and need more grippable branches instead" should go to the tank setup guide.
+- **Health.** "which is why non-particulate substrate matters for this species" should go to the tank setup guide's substrate section.
+- **Tank setup.** "a complete powdered diet supplies vitamin D3" should go to the feeding guide.
+- **Feeding.** "a warm side that runs too cool slows digestion and drops appetite" should go to the tank setup guide.
+- **Enrichment.** "An 18x18x24 terrarium is a reasonable adult footprint" should go to the tank setup guide. This page links out to two other species and to none of its own.
+
+## 6. Trust
+
+What made me doubt: the encyclopedia rating the species Vulnerable and Least Concern on one screen. The 2024 genome study asserted flatly with no author or journal. "One specialist source" and "one detailed care sheet" never named, so I cannot weigh them. And the hub disagreeing with its own FAQ on insect frequency.
+
+The sentence that convinced me a keeper wrote this: "Check the two calcium sacs under the throat, depleted white sacs are a visible warning sign worth checking regularly." That is something you learn by looking at the animal, not by rewriting care sheets.
+
+## 7. Set grade: B
+
+The five deep dives are strong, specific, and unusually honest about uncertainty. The hub sitting in front of them is looser and contradicts them on numbers a beginner will act on first.
+
+First two changes: rebuild the hub from the deep dives so every temperature, session length, insect frequency, and supplement schedule matches, and settle the substrate question between health and tank setup in one voice.
+
+## Not covered anywhere
+
+Checked against the Health and More list. Emergency and cold snaps, shedding mechanics, Salmonella, stool and hydration checks, thermostats, and quarantine are all covered by the shared guides. Remaining:
+
+- How to choose a healthy gargoyle gecko at purchase and what to inspect before paying.
+- Routine cleaning and enclosure maintenance schedule.
+- Sexing, and what to do when a lone female lays infertile eggs.
+- First aid and wound care for a fresh tail drop.
+- A scale, and target weights by age, despite weighing being called the best early warning.
+- Cleanup crew cost for the bioactive setup both the hub and tank setup recommend.
+---
+
+# Gerbil: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch H. Raw and unedited.
+
+Read all eleven files.
+
+# Gerbil set review
+
+## 1. Page by page
+
+- **00 Hub.** Finished it; densest page in the set and the only one citing Merck. Actionable: humidity, protein, portion grams, degloving. **A-**
+- **01 Encyclopedia.** Finished it; short, genuinely natural history, no care padding. Nothing to act on, and it does not pretend otherwise. **B+**
+- **02 Cost.** Finished it. Actionable numbers, but the monthly figure does not match its own annual table. **C+**
+- **03 Handling.** Finished it; thin, mostly "social, day-active, no tail." **C**
+- **04 Health.** Finished it; good triage lines, but shorter and softer than the hub's health section. **B-**
+- **05 Tank setup.** Finished it; the most buildable page here. **A-**
+- **06 Feeding.** Finished it; specific, sourced, and it contradicts the hub. **B**
+- **07 Enrichment.** Best page in the set. One study, one conclusion, a priority list I can shop from. **A**
+- **08 Legal.** Finished it; clear, sourced, tells me the exception-by-absence trap. **A**
+- **09 vs Guinea pig.** Finished it; its gerbil column is unreliable. **C-**
+- **10 vs Hamster.** Finished it; useful on schedule, wrong on diet. **C**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, taxonomy, the 1935/1954 founder history, no repetition. The hub mostly earns its place too, because it carries material that appears nowhere else (aural cholesteatoma at 50 percent past two years, seizures, tumor incidence, the Merck degloving detail). But it disagrees with the deep dives repeatedly:
+
+- Protein. Hub: "at 18 to 20 percent protein and roughly 5 to 8 grams per gerbil per day." Feeding: "a minimum of 14% protein... Aim for roughly 14 to 16% protein... roughly 5 to 10 grams."
+- Fat. Hub: "on diets above about 4 percent fat they develop raised blood cholesterol." Feeding: "low fat around 4 to 8%." The hub's danger line is the feeding guide's target.
+- Depth. Hub: "eight to twelve inches of substrate." Setup: "6 to 10 inches of digging depth at minimum."
+- Humidity. Hub: "Merck advises staying below 40 percent." Setup and Health: "Keep it under about 50%."
+- Tank. Hub checklist: "20 gallon long tank or deep-base cage for a pair." Setup: "a 40-gallon breeder... is genuinely the better target."
+- Wheel. Hub checklist: "Solid 8 in exercise wheel," while the hub's own cost table prices a "Solid exercise wheel (10-12 in)."
+- Wheel price. Hub: "$38 | $42." Cost guide: "$28 - $40."
+- Hub prices a "Toys, tunnels, and dig boxes" line at $40 to $58 that the cost guide's table drops entirely, and a "hygrometer" the cost guide does not include even though the humidity rule needs one.
+
+## 3. Could I keep one
+
+Mostly yes: I can buy a pair, build a deep tank with a buried tunnel-and-chamber, feed pellets, and recognize an emergency. Still missing: how to verify same-sex at purchase and what accidental litters mean; what to look for in a healthy animal from a shop or breeder; the first-week settling routine; the warning signs of declanning and how to split a pair safely; how often bedding is actually changed, in a page other than one hub FAQ; heat emergency signs for this species.
+
+Unsignposted handoffs: the hub's "declanning" and split-cage line raises a question the handling guide answers, with no link. The health guide's humidity fix sits on the setup page. The cost guide's "deep digging substrate" budget is set by the setup page's 40-gallon recommendation, which would move the total.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three or more times: gerbils are social and adult introductions fail; never lift by the tail; deep substrate; wire cages cannot hold bedding. Conflicts:
+
+- Lifespan. Cost: "2 to 5 years, commonly landing around 3 to 4." vs Guinea Pig and vs Hamster: "A gerbil's normal lifespan is 2 to 3 years."
+- Space. vs Guinea Pig table: "10-gallon+ tank (deep substrate)." Setup: "A 20-gallon long tank works as a minimum for a pair."
+- Diet. vs Hamster: "a quality pelleted food formulated for both works for either species." Feeding: "many products labeled simply 'Hamster and Gerbil Food' fall short of that, they're really formulated for hamsters."
+- Tail injury. Handling: "sometimes losing the whole tail. This genuinely warrants a vet visit." Health: "The stump usually heals on its own." Hub: "the treatment is prompt amputation of the bare section."
+- Health coverage. The health guide never mentions cholesteatoma or seizures, both of which the hub calls common.
+
+## 5. One link per page
+
+- **Hub:** "A 20 gallon long tank with a mesh lid suits them better than most wire cages" → Enclosure Setup.
+- **Encyclopedia:** "introductions between adults frequently fail, which is the single hardest part of keeping them" → Handling.
+- **Cost:** "A proper glass enclosure with deep digging substrate costs more upfront than the wire cages often marketed for small rodents" → Enclosure Setup.
+- **Handling:** "Housing in a wire cage that can't hold the deep bedding this species genuinely needs." → Enclosure Setup.
+- **Health:** "Correct the environment first (keep humidity under about 50%, and use clean, dry bedding)" → Enclosure Setup.
+- **Setup:** "Provide 6 to 10 inches of digging depth at minimum" → Enrichment.
+- **Feeding:** "What matters more day to day is constant fresh water and safe wood to gnaw, gerbil teeth grow continuously." → Health Issues.
+- **Enrichment:** "which for most setups means considerably more than a bag's worth" → Enclosure Setup.
+- **Legal:** none needed.
+- **vs Guinea Pig:** "versus a fraction of that for a pair of gerbils in a tank with deep, diggable substrate" → Enclosure Setup.
+- **vs Hamster:** "a quality pelleted food formulated for both works for either species" → Feeding.
+
+## 6. Trust
+
+Doubts: the two comparison pages read like they were written from a template without checking the species pages, and the protein and humidity splits mean somebody is wrong about numbers I have to buy against. Most convincing sentence, from the enrichment guide: "Cardboard tubes work as a starting version and gerbils will destroy them quickly, which is fine and also why a rigid option is worth having as the permanent one."
+
+## 7. Set grade
+
+**B-.** Excellent on the two things that matter most, burrow structure and law, undermined by numbers that disagree across pages I am supposed to trust equally. First two changes: reconcile the numbers into one source of truth (protein, fat, depth, humidity, tank size, wheel size, lifespan, wheel price), and fix the comparison pages' gerbil columns to match it.
+
+## Not covered anywhere
+
+- How to sex gerbils or confirm a same-sex pair, and what an accidental litter means.
+- What to check when choosing animals from a shop or breeder.
+- The first-week settling and quarantine routine.
+- Warning signs that a bonded pair is declanning, and how to separate safely.
+- A full cleaning schedule and bedding-change interval outside one hub FAQ.
+- Heat and cold thresholds for gerbils; the shared heat stress guide names guinea pigs, rabbits, chinchillas, and hamsters, not this species.
+- Out-of-tank time or playpen safety.
+---
+
+# Sulcata Tortoise: Set Review
+
+Opus reader agent, first pass, 2026-09-14, batch H. Raw and unedited.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, but it is a summary of the other nine. Actionable: the two cost tables, the checklist, the 12 to 18 inch buried wall. **C.**
+- **01 Encyclopedia.** Finished it, 90 seconds. Actionable: almost nothing, except the 10 foot burrow depth, which reframes the digging problem. **B-.**
+- **02 Cost.** Finished it. Actionable: adoption over purchase, monthly figures by life stage, the winter electricity line. **A-.**
+- **03 Handling.** Finished it. Actionable: keep juveniles low, never house two mature males, sexing cues. **B.**
+- **04 Health.** Finished it. Actionable: the causes are the setup, plus clearing yard chemicals. Names two studies and admits they disagree. **A-.**
+- **05 Tank setup.** Finished it. Actionable: every number I need to build, sizes, temps, substrate depth, photoperiod. The most useful page here. **A.**
+- **06 Feeding.** Finished it. Actionable: schedule by age, supplement cadence, the eight reasons for not eating, the one week vet threshold. **A.**
+- **07 Enrichment.** Finished it. Actionable: the priority list, target training, do not build terrain that flips a tortoise. **A-.**
+- **08 Legal.** Finished it. Actionable: the state table, the tick certificate for interstate transport, the California desert tortoise mix-up. **A-.**
+- **09 vs Russian.** Finished it. Actionable: mostly a do-not-buy filter, which is fair. **B+.**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns a small place: origin, burrow depth, the 1970s to 1990s export history that explains the rescue backlog. Nothing else. The hub does not earn its place. Every section is a shorter, less careful version of a deep dive, and it is the only page where numbers are asserted with no hedging.
+
+Hub versus deep dive conflicts:
+
+- Lifespan. Hub: "they can live 70 to 150+ years." Cost guide: "Sulcatas commonly live 70 to 100 years." Handling and vs Russian also say 70 to 100. The hub is the outlier and it is the number people quote.
+- Sexing size. Hub: "around 8 to 10 inches in shell length." Handling: "around 10 to 15 inches in shell length."
+- Pyramiding certainty. Hub: "is caused by excessive protein intake, low humidity during growth, and rapid growth rate." Health: "What causes it is genuinely debated... dietary protein playing only a minor role."
+- Calcium. Hub checklist: "Calcium supplementation (2 to 3x/week)." Feeding: "2 to 3 times a week for juveniles and about weekly for adults."
+- Outdoor space. Hub: "at least 100+ square feet." Tank setup: "at least 80 to 100 square feet per tortoise."
+- Shelter temp. Hub: "60 degrees F+." Tank setup: "set to maintain 70 to 75°F."
+- IUCN status. Encyclopedia: "Vulnerable (IUCN)." Legal: "Centrochelys sulcata is IUCN endangered, which makes it categorically non-exempt." A legal conclusion rests on that word.
+
+## 3. As a whole
+
+Yes, I could set one up, buy it, feed it, and keep it alive. Setup, diet, and the size trap are all covered properly.
+
+Still missing: a soaking protocol (feeding says juveniles "benefit from regular soaking" and stops), growth benchmarks and a weigh-in routine, how to actually build the humid hide the health page depends on, how to evaluate a hatchling or a breeder, what an emergency vet bill costs, and how you move a 100 pound tortoise.
+
+Unsignposted handoffs: the health page's pyramiding humidity advice has its 70 percent number only in tank setup. The feeding page's "an enclosure that isn't warm enough" has its temperature gradient only in tank setup. The cost guide's heated shelter has its target temperature only in tank setup. The handling page's sexing cues sit next to the hub's different threshold with nothing connecting them.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three or four times: adult size and surrender risk, buried fencing, indoor is temporary, pyramiding.
+
+- Brumation, the worst one. Tank setup: "the shelter needs to stay heated to at least 55 to 60°F to allow safe brumation." vs Russian: "Sulcatas come from the edge of the Sahara and are not built for brumation at all."
+- Juvenile indoor size. Handling: "requiring an 8-by-8-foot indoor minimum as a juvenile." Tank setup: "A juvenile under 10 inches needs roughly 7 feet by 3.5 feet by 2.5 feet," with 8 by 8 given as the adult figure.
+- Weight. Handling: "An adult sulcata weighs 80 to 110 pounds." vs Russian: "70-150+ lbs."
+- Shelter cost, inside one page. Cost table: "Heated shelter (materials + heater) | $200 - $600." Cost body: "a proper heated shelter... adds another $1,000 or more on top of that."
+- Daytime temp. Feeding: "roughly 85 to 95°F during the day." Tank setup: "ambient 80 to 90°F."
+
+## 5. One link per page
+
+- **Hub.** "Adults need at least 100+ square feet of outdoor space" to the tank setup guide.
+- **Encyclopedia.** "digging burrows up to 10 feet deep to escape heat" to the enrichment guide.
+- **Cost.** "a proper heated shelter built around something like a ceramic heat emitter for cold nights" to the tank setup guide.
+- **Handling.** "requiring an 8-by-8-foot indoor minimum as a juvenile and several hundred square feet outdoors as an adult" to the tank setup guide.
+- **Health.** "Low humidity during the growing years is strongly linked to pyramiding" to the tank setup guide.
+- **Tank setup.** "the shelter needs to stay heated to at least 55 to 60°F to allow safe brumation" to Tortoise Brumation.
+- **Feeding.** "An enclosure that isn't warm enough. By far the most common cause." to the tank setup guide.
+- **Enrichment.** "a tortoise calcium and multivitamin powder handles that side" to the feeding guide.
+- **Legal.** "whether you can provide for an animal that may reach 200 pounds and outlive you" to the cost guide.
+- **vs Russian.** "plus a heated shelter for cold nights" to the tank setup guide.
+
+## 6. Trust
+
+Doubts: the hub's confident pyramiding causation against the health page's honest "genuinely debated"; the 150 year lifespan that no deep dive supports; endangered versus Vulnerable; the brumation contradiction; the 8 by 8 juvenile figure. The pattern is that the hub and the odd stray sentence are unreviewed, while the deep dives are careful.
+
+Most convincing sentence, from the enrichment guide: "A tortoise that will follow a target moves itself for weighing, health checks and enclosure transfers, which for a hundred pound animal is worth real effort." Close second, same page: "A tortoise that flips onto its back in a hot enclosure can die there."
+
+## 7. Set grade: B+
+
+The deep dives are genuinely good and specific, and the set is dragged down by a hub that repeats them badly and by numbers that drift page to page.
+
+First two changes: (1) fix the brumation contradiction and pin one set of canonical numbers for weight, lifespan, sexing size, and outdoor space, then make the hub quote them; (2) rewrite the hub as a short router that links inline into the deep dives instead of restating them.
+
+## Not covered anywhere
+
+- A soaking protocol for juveniles: how often, how long, water depth and temperature.
+- Growth benchmarks by age and a routine weigh-in schedule for a growing sulcata.
+- How to build the humid hide the pyramiding advice depends on.
+- How to evaluate a hatchling or a breeder at purchase.
+- What an emergency vet event actually costs in dollars.
+- How to physically move or transport an adult, which the cost guide raises and no page answers.

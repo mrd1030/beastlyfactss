@@ -152,65 +152,91 @@ Parasites are less common in AFTs than in many other gecko species but annual fe
     difficulty: "Beginner",
     petType: "Geckos",
     image: "/assets/guides/gargoyle-gecko.jpg",
-    tagline: "The stocky, grippy gecko with a face only a reptile lover could adore!",
-    funFact: "Gargoyle geckos can drop and partially regenerate their tails, but the regrown version looks different from the original.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "18x18x24 in arboreal enclosure", low: 100, high: 200 },
-        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
-        { item: "Thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Coconut fiber or bioactive substrate", low: 20, high: 40 },
-        { item: "Cork bark and branches", low: 20, high: 40 },
-        { item: "Live or artificial plants", low: 25, high: 45 },
-        { item: "Misting bottle", low: 5, high: 15 },
-      ],
-      annual: [
-        { item: "Commercial crested gecko diet", low: 40, high: 70 },
-        { item: "Dubia roaches and crickets", low: 70, high: 130 },
-        { item: "Calcium + D3 and multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 45, high: 80 },
-        { item: "Electricity (lighting)", low: 25, high: 45 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+    tagline: "The bumpy-headed New Caledonian climber that regrows its tail!",
+    funFact: "Gargoyle geckos are named for the horn-like bumps on their heads, and unlike their crested gecko cousins they can regrow a dropped tail. A 2024 genome study confirmed the difference: same family, one very different superpower.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Quarantine, hygiene and
+    // thermostats cite the shared reptile guides in the sidebar's Health and
+    // More list. The old hub disagreed with the deep dives on temperature,
+    // insect frequency, supplement schedule, handling session length, time of
+    // day, temperament and tail regrowth, and its own diet section and FAQ
+    // disagreed with each other on insects. Reconciled 2026-09-14 for batch H
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new gecko is quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "18x18x24 inches is the minimum for a single adult, with 24x24x24 inches as the ideal. Vertical space matters more than floor space. Hatchlings and juveniles under about 12 grams do better in a smaller grow-out enclosure temporarily.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Living alone", value: "House one gecko per enclosure. They're territorial, hatchlings can be cannibalized, and mating alone gets rough enough to cost a tail.", source: "gargoyle-gecko-handling-guide" },
+        { label: "Temperature", value: "A gradient: a cool end around 70 to 75°F and a basking spot around 82 to 85°F, with ambient temperature sitting at or below about 82°F. Nights can drop into the low 70s or even the mid-60s without issue, and 65°F is the floor.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "The ceiling", value: "Air above 86°F is dangerous, which is a lower limit than almost any other lizard in the hobby. Keep the enclosure away from sunny windows, since ambient room heat is the thing most likely to push a gargoyle past it.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Heat source", value: "A low-wattage bulb or ceramic heat emitter on a thermostat, over one side of a screen top so the basking branches reach range. The belief that this species needs no heat at all is the most repeated mistake about it.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Humidity", value: "Target 50 to 70%. Mist heavily in the evening, and let it dry back down toward 50% before misting again. Constant, unbroken moisture causes respiratory infection, one of the most common preventable problems in this species.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Water", value: "Gargoyle geckos mostly drink water droplets off leaves and walls rather than from a dish, though a shallow dish is still worth providing.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber works well for humidity retention, and paper towel is a solid budget option, especially for hatchlings or a sick gecko. A bioactive soil mix with a drainage layer and a cleanup crew is another good option. Avoid sand, wood chips, and gravel.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "UVB", value: "Gargoyle geckos can survive without it since a complete powdered diet supplies vitamin D3, but low-level UVB offers real digestive and immune benefits: a 12-inch low-output T5 positioned for a basking-area UVI of roughly 1.0 to 2.0, on a 12-hour cycle, mounted over open mesh.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Clutter", value: "Heavy clutter, not sparse decor, is the right instinct here. Branches, vines, and cork bark genuinely help prevent floppy tail syndrome by giving your gecko somewhere other than bare glass to rest. Gargoyle geckos climb glass poorly compared to crested geckos.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Height over floor", value: "They are arboreal New Caledonian geckos that live on vertical surfaces, so a tall enclosure with real structure in it gives them far more usable space than a wide flat one. Height without branches and planting is wasted.", source: "gargoyle-gecko-enrichment-guide" },
+        { label: "Staple diet", value: "A commercial powdered crested gecko diet, mixed with water to a ketchup-like consistency, roughly 2 to 3 parts water to 1 part powder. Offer it in a small cup or on a feeding ledge. Rotate 3 or more brands or flavors for variety and to avoid pickiness.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Feeding schedule", value: "Hatchlings and juveniles get fresh commercial gecko diet daily, adults every 2 to 3 days.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Insects", value: "1 to 2 times a week for juveniles, once a week for adults.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Insects are required", value: "Unlike crested geckos, live insects here are a required supplement rather than optional enrichment. Gargoyle geckos are unusually carnivorous for New Caledonian geckos.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Supplements", value: "Gut-load insects 24 to 48 hours before feeding and dust with a calcium supplement without D3 for most feedings, with a D3-inclusive product periodically.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Foods to avoid", value: "Citrus fruits are too acidic and can cause diarrhea, starfruit and rhubarb are high in oxalates, rhubarb specifically called potentially lethal. Skip garlic, onion, eggplant, and dairy entirely, geckos are lactose intolerant. Avocado is avoided as a precaution.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Not eating", value: "A healthy, well-hydrated adult can reportedly go up to 2 to 3 weeks without food. Juveniles shouldn't go past about 4 to 5 days given their growth needs. Water is more time-critical: no gecko should go more than 2 to 3 days without water access.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Handling, week one", value: "Wait two weeks after it comes home. Begin with 5-minute sessions every other day, work up toward 15, and keep the daily total near 20 minutes even once it's tame.", source: "gargoyle-gecko-handling-guide" },
+        { label: "Temperament", value: "Adults are generally docile and slow-moving, one of the calmer arboreal geckos to handle. Juveniles are a different story, they're skittish and jumpy, so don't judge the species by a nervous young gecko.", source: "gargoyle-gecko-handling-guide" },
+        { label: "Biting", value: "Rare, and almost always because it was provoked. Gargoyle teeth are noticeably bigger than a crested gecko's, so an adult bite can break skin where a crestie's can't. It's still a minor wound: soap and water.", source: "gargoyle-gecko-handling-guide" },
+        { label: "Tail drop", value: "Never grab or hold the tail. Unlike crested geckos, gargoyle geckos do regrow their tail. The regrown tail comes back slightly different, prehensile and cartilage-based rather than bone, with somewhat asymmetrical scales, but fully functional.", source: "gargoyle-gecko-handling-guide" },
+        { label: "Weighing", value: "Regular weighing is the most objective way to catch a real problem early, and a small amount of natural fluctuation isn't itself alarming. Rapid weight loss shows most easily as thinning at the tail, which this species uses as a fat-storage organ.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Budget", value: "$50 to $300 for a common reticulated or striped animal, climbing to $500 to $1,000 or more for a premium morph. Roughly $230 to $445 in gear, so a typical first setup with a common animal lands around $280 to $745.", source: "gargoyle-gecko-cost-guide" },
+        { label: "Ongoing costs", value: "Most keepers land in the $10 to $25 a month range for food and supplements. One 8-ounce bag of powdered gecko diet lasts a single adult about two months and runs around $20.", source: "gargoyle-gecko-cost-guide" },
+        { label: "Vet costs", value: "$50 to $150 for a routine exotic exam. A common-illness visit with diagnostics is more like $150 to $600, and imaging or surgery can reach $800 to $2,500 or more. No gargoyle-specific fee data exists, so these are general exotic reptile benchmarks.", source: "gargoyle-gecko-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years is typical, with some keepers reporting animals still breeding well past 20.", source: "gargoyle-gecko-cost-guide" },
+        { label: "Adult size", value: "7 to 9 inches (18 to 23 cm) including tail." },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Thermostat", value: "Any heat source runs through a thermostat, and where the probe sits decides what the controller is actually holding.", source: "reptile-heating-thermostats-guide" },
       ],
     },
-    sections: {
-      housing: `An 18x18x24" or larger enclosure works well for a single adult gargoyle gecko, with height being the priority over floor space. Like crested geckos, gargoyles are arboreal and spend most of their time off the ground. A front-opening design is strongly preferred for easier, less stressful access.
-
-Cork bark rounds, thick and thin branches, and live or high-quality artificial plants at varying heights create the layered climbing environment these geckos need. Gargoyle geckos are sturdier and more deliberate climbers than crested geckos - they grip surfaces firmly and move with purpose, which makes them easier to handle and less prone to sudden jumps.
-
-Temperature should stay between 72 and 80 degrees F during the day, with a nighttime drop to 65 to 72 degrees F. Gargoyle geckos share the crested gecko's sensitivity to heat - temperatures above 85 degrees F can be fatal. No supplemental heat is required in most homes. Humidity should follow the same wet-dry cycling as crested geckos: 50 to 70% during the day, spiking briefly after evening misting.
-
-A low-output UVB light (T5 HO 5 to 6%) on a 10 to 12 hour cycle is now recommended. While not historically considered mandatory, UVB improves calcium metabolism and supports healthy circadian rhythms.`,
-      diet: `A commercial crested gecko diet (CGD) such as Repashy or Pangea forms the nutritional foundation for gargoyle geckos. Offer the mixed CGD in a raised dish every 2 to 3 days, removing and refreshing it every 48 hours to prevent spoilage. Gargoyle geckos are slightly less enthusiastic about CGD than crested geckos on average, so offering a variety of flavors and brands can help maintain consistent intake.
-
-Supplement with live feeder insects 1 to 2 times per week: dubia roaches, crickets, small hornworms, and silkworms. Gut-load all insects 24 to 48 hours before offering. Appropriately size prey to no wider than the space between the gecko's eyes.
-
-Dust insects with calcium w/D3 2 to 3 times per week and a reptile multivitamin once per week. A small dish of pure calcium powder in the enclosure allows the gecko to self-supplement as needed. Fresh dechlorinated water in a shallow dish should always be available.
-
-Fruit-based treats (mashed mango or papaya) can be offered occasionally as enrichment and variety, but should not replace CGD.`,
-      enrichment: `Gargoyle geckos are often described as the ideal handler's gecko in the New Caledonian gecko family. Their slower, more deliberate movement and firmer grip make them significantly more predictable than crested geckos, and they rarely jump suddenly. Many individuals become extremely calm and relaxed with regular handling.
-
-Provide climbing structures at multiple levels - cork bark rounds, thick branches, and sturdy plant stems. Unlike crested geckos, gargoyle geckos are heavier and need more substantial perching. Thin twigs that flex under their weight are less appropriate than the sturdier options crested geckos enjoy.
-
-Gargoyle geckos are most active in the evening and at night. Handle gently at dusk when they are naturally alert. Allow the gecko to move voluntarily rather than forcing or restricting movement. Sessions of 10 to 20 minutes a few times per week build trust effectively.
-
-Tail autotomy (voluntary tail-dropping as a defense mechanism) is possible in gargoyle geckos, though they are somewhat less prone to this than crested geckos. The tail partially regenerates but looks different from the original. Avoid grabbing or restraining the tail.`,
-      health: `Dysecdysis (stuck shed) is the most common health issue. The toes are the most critical area - retained shed on the toes constricts blood flow and can lead to digit loss. A moist hide with damp sphagnum moss prevents most shedding problems. If stuck shed is present, soak briefly in shallow lukewarm water and gently remove with a damp cotton swab.
-
-Metabolic Bone Disease (MBD) results from inadequate calcium or vitamin D3. Early signs include leg trembling, rubber jaw, and difficulty walking. Consistent supplementation and UVB exposure prevent it entirely. Do not skip supplementation.
-
-Tail drops can occur from rough handling, predator-like grasps from above, or significant stress. The tail regrows partially. While not life-threatening, prevent it through calm, gentle handling that allows the gecko to move voluntarily.
-
-Maintain temperatures below 85 degrees F at all times. Heat stress is a genuine welfare risk in gargoyle geckos. During summer, monitor enclosure temperatures carefully. Annual wellness checks with a reptile-savvy vet are recommended.`,
-      checklist: ["18x18x24\" arboreal enclosure", "Coconut fiber or bioactive substrate", "UVB T5 HO (low output)", "Thermometer and hygrometer", "Commercial crested gecko diet", "Dubia roaches and crickets", "Calcium + D3 and multivitamin", "Cork bark and branches", "Live or artificial plants", "Misting bottle"],
+    emergencyCard: {
+      source: "gargoyle-gecko-health-issues-guide",
+      callNow: [
+        "Any kinked tail, soft jaw, or tremor (possible MBD)",
+        "Open-mouth breathing or mucus (possible respiratory infection)",
+        "A tail that stays deformed despite adding hides (possible FTS)",
+        "Any sign of parasites or impaction",
+      ],
+      vetLine: "New geckos should also be quarantined and given a fecal exam, which is how internal parasites are diagnosed, before joining an established collection.",
     },
+    routes: [
+      { slug: "gargoyle-gecko-cost-guide", line: "$50 to $300 for a common animal and past $1,000 for a morph, the $230 to $445 of gear, and what a 15-to-20-year lifespan costs." },
+      { slug: "gargoyle-gecko-tank-setup-guide", line: "The gradient this species needs, the 86°F ceiling it cannot cross, the daily wet-dry humidity cycle, and the clutter that prevents floppy tail syndrome." },
+      { slug: "gargoyle-gecko-feeding-guide", line: "Powdered diet versus live insects, the schedule by age, where the sources genuinely disagree, and how to read appetite loss." },
+      { slug: "gargoyle-gecko-handling-guide", line: "Two weeks before the first session, the two defense mechanisms, the bite that breaks skin, and the tail that grows back." },
+      { slug: "gargoyle-gecko-health-issues-guide", line: "Metabolic bone disease, floppy tail syndrome, respiratory infection, parasites, and the vet-today list." },
+      { slug: "gargoyle-gecko-enrichment-guide", line: "No gargoyle study exists, so this is the crested and leopard gecko evidence, labeled as borrowed, on height, novelty and feeding." },
+    ],
+    buyList: [
+      "18x18x24 inch arboreal terrarium (24x24x24 preferred)",
+      "Low-wattage basking bulb or ceramic heat emitter",
+      "Thermostat",
+      "Digital thermometer and hygrometer",
+      "Low-output T5 UVB and hood",
+      "Coconut fiber, bioactive soil mix, or paper towel",
+      "Branches, vines, and cork bark, generously",
+      "Fine mist spray bottle",
+      "Shallow water dish and a feeding ledge",
+      "Powdered crested gecko diet, three or more flavors",
+      "Gut-loaded feeder insects and calcium without D3",
+      "A gram scale",
+    ],
     faqs: [
-      { q: "How are gargoyle geckos different from crested geckos?", a: "Gargoyle and crested geckos share nearly identical care requirements but differ in a few key ways. Gargoyle geckos are stockier and more muscular, with bumpy skin and a horned head that gives them their name. They are slightly less skittish, tolerate handling well, and have a higher protein requirement that benefits from more frequent insect feedings. Both species eat commercial crested gecko diet, need no supplemental heat in most homes, and thrive at the same temperature and humidity ranges." },
-      { q: "Do gargoyle geckos regrow their tails?", a: "Yes - unlike crested geckos, gargoyle geckos can regenerate dropped tails. The regrown tail looks different from the original: smoother, lacking original markings, and slightly blunter in shape. The gecko suffers no permanent health consequences from the loss. Tail drops are triggered by extreme stress, rough handling, or combat between geckos. Gentle, calm handling prevents the vast majority of unnecessary tail drops." },
-      { q: "What do gargoyle geckos eat?", a: "Gargoyle geckos thrive on a commercial crested gecko diet (CGD) like Repashy or Pangea as their nutritional foundation. Because they are more insectivorous than crested geckos, live insects should be offered 2 to 3 times per week - dubia roaches, crickets, and hornworms are excellent choices. All insects should be gut-loaded and dusted with calcium w/D3 before feeding. Occasional fruit-based purees can be offered as a treat." },
-      { q: "How big do gargoyle geckos get?", a: "Adults typically reach 7 to 9 inches in total length and 60 to 80 grams, making them slightly more robust than crested geckos. They reach sexual maturity around 15 to 18 months but continue filling out until 24 to 30 months. Females should not be paired with males until they reach at least 40 grams - breeding underweight females carries serious health risks." },
-      { q: "Are gargoyle geckos good pets for beginners?", a: "Yes, with some research. Gargoyle geckos are excellent for anyone prepared for their slightly higher insect requirements compared to crested geckos. They are hardier than most tropical reptiles, need no supplemental heating in most homes, and become quite handleable with regular gentle interaction. They sit between a true beginner species and intermediate species - beginners who do their homework do very well with gargoyle geckos." },
+      { q: "Can a gargoyle gecko regrow its tail, unlike a crested gecko?", a: "Yes, and this is one of the biggest differences between the two species. Gargoyle geckos regenerate a dropped tail, confirmed by peer-reviewed genome research, while crested geckos cannot. The regrown tail is prehensile and cartilage-based rather than bone, with somewhat asymmetrical scales, but it's fully functional." },
+      { q: "Do gargoyle geckos need live insects, or is powder enough?", a: "Unlike crested geckos, insects are described as a required supplement here, not optional enrichment. Gargoyle geckos are unusually carnivorous for their gecko family, wild individuals are documented preying on other lizards, even young crested geckos, alongside insects." },
+      { q: "Why does a gargoyle gecko setup need so much clutter?", a: "Because gargoyle geckos climb glass poorly compared to crested geckos and need grippable branches instead, and because heavy clutter helps prevent floppy tail syndrome, a condition linked to sleeping flat against bare glass. Sparse decor is the wrong instinct for this species." },
     ],
   },
   {

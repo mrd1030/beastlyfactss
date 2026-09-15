@@ -539,9 +539,21 @@ for the first time, which is how that surfaced, so expect one real
 deep-dive contradiction per batch rather than treating the hub as the
 only thing being fixed.
 
-Batch H is not picked yet. The 67 species still on the legacy care sheet
-are listed by class in docs/TODO.md, section 7, dogs and cats last.
-Paste the prompt below with the next five species filled in.
+Batch G merged to main 2026-09-14. That makes 41 router hubs; the 67
+still on the legacy care sheet are listed by class in docs/TODO.md,
+section 7, dogs and cats last.
+
+Next up is batch H: cardinal tetra, milk snake, gargoyle gecko, gerbil,
+sulcata tortoise (fish, snake, gecko, small mammal, turtle). One per
+class, and three of the five are cross-linked by work that just merged,
+the same reasoning that put canary first in batch G: the neon tetra set
+cross-links cardinal tetra, the California kingsnake set names milk
+snake repeatedly, and the hedgehog set points at sulcata tortoise four
+times. Cardinal tetra goes first for a second reason: its hub carries a
+misspelled parasite, "Pleistophora hyphessobrycetis", flagged during
+batch F and left because the species was out of scope then. Paste this
+with the next five species filled in when picking up the batch after
+that.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs

@@ -220,45 +220,88 @@ export const fishGuides = [
     image: "/assets/guides/cardinal-tetra.jpg",
     tagline: "The neon tetra's brighter, warmer-water-tolerant cousin, with a red stripe that runs the full body!",
     funFact: "Huge numbers of cardinal tetras are still sustainably wild-harvested from Brazil's Rio Negro every year through community-based fisheries, a rare case where the aquarium trade directly funds rainforest conservation by giving local communities a real economic reason to keep the river intact.",
-    // Verified against real research in the cardinal tetra deep-dive articles
-    // (content/guides/cardinal-tetra-cost-guide.mdx and siblings).
-    costs: {
-      setup: [
-        { item: "10-20 gallon tank", low: 20, high: 150 },
-        { item: "Aquarium heater", low: 18, high: 30 },
-        { item: "Gentle filter", low: 8, high: 15 },
-        { item: "Dense live plants", low: 18, high: 35 },
-      ],
-      annual: [
-        { item: "Micro-pellets + baby brine shrimp", low: 15, high: 30 },
-        { item: "Water conditioner", low: 10, high: 15 },
-        { item: "Water test kit", low: 25, high: 40 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Cycling and the
+    // hospital tank cite the shared fish guides in the sidebar's Health and
+    // More list. The old hub narrowed the temperature band to 73-81 against
+    // the setup guide's 73-84, put the school floor at 6 against the
+    // handling and enrichment guides' 10, and misspelled the neon tetra
+    // disease parasite as "hyphessobrycetis". Reconciled 2026-09-14 for
+    // batch H (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Before any fish", value: "A 2008 study on this exact species found cardinal tetra tolerates ammonia better than many keepers assume, but is sensitive to nitrite, which makes confirming a completed nitrogen cycle before stocking the single most useful habit for keeping this species healthy long-term.", source: "cardinal-tetra-health-issues-guide" },
+        { label: "Tank size", value: "A 10-gallon tank is workable for the bare minimum school of 6. The recommended footprint, roughly 24x12 inches of base, lines up closely with a 20-gallon long tank, a better practical minimum for the fuller 8 to 10 fish school most sources recommend for this species.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "School size", value: "The workable minimum is 10, since fewer fish kept together tend to develop sickness from stress; start with 8 to 10 or more for natural schooling behavior, a notably higher bar than the six-fish floor commonly cited for neon tetra.", source: "cardinal-tetra-handling-guide" },
+        { label: "Ten, not six", value: "Ten or more, following the neon tetra finding, and cardinals shoal more tightly and color up better in bigger groups. Six is a floor rather than a target.", source: "cardinal-tetra-enrichment-guide" },
+        { label: "Temperature", value: "73 to 84°F is the tolerated range for this species, with general care closer to 77 to 82°F. Cardinal tetra tolerates water reaching 86°F, against roughly 77°F for neon tetra, so cardinal is the better fit for a warmer community tank.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Water chemistry", value: "Soft and acidic: roughly pH 5.0 to 7.0, and toward the lower end where possible. Test your source water first rather than assuming it suits the species. Ammonia and nitrite both need to read zero before stocking.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Filtration", value: "Keep the flow gentle. This species comes from slow-moving forest streams full of fallen branches and leaf litter rather than open current. A sponge filter is a common, effective choice.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Substrate", value: "Fine gravel or sand, and a darker color makes cardinal tetra's red and blue stripe stand out more against the background.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Lighting", value: "Dim to moderate. This species comes from shaded, densely vegetated streams, and bright, intense lighting stresses fish built for filtered, dappled light rather than open water.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Blackwater", value: "Driftwood and Indian almond leaves release natural tannins that stain the water and lower pH, mimicking the shaded, leaf-litter-covered streams this species evolved in. Pair that with dense planting and dim lighting, and color and confidence both improve noticeably.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Shade", value: "Blackwater fish under a bright aquarium light spend their time near the bottom and stay pale. Floating plants, tannin staining, or a less powerful light all fix it, and color is the immediate readout.", source: "cardinal-tetra-enrichment-guide" },
+        { label: "Mostly wild caught", value: "A large proportion still are, from the Rio Negro in Brazil, unlike almost everything else in a modern fish shop. A wild fish arriving from a long supply chain needs settling time and stable conditions more than a tank-bred one does.", source: "cardinal-tetra-enrichment-guide" },
+        { label: "Settling them in", value: "Cardinals often arrive after a long chain of transfers, already stressed, and losses in the first fortnight are common. Acclimate slowly, have the tank cycled and stable before they arrive, dim the lights, and leave them alone. Buy from a shop that has held them a while, not one that got them yesterday.", source: "cardinal-tetra-enrichment-guide" },
+        { label: "Staple diet", value: "A high-quality micro-pellet or crushed flake as the staple, supplemented with live or frozen bloodworms, mosquito larvae, and daphnia. Moina is another good live option.", source: "cardinal-tetra-feeding-guide" },
+        { label: "Mouth size", value: "Cardinal tetras are small-mouthed fish, so food needs to be sized down: whole flakes and standard pellets are usually too large. Food that's too large gets taken and spat back out repeatedly, which functionally starves the fish even while food is visibly going into the tank.", source: "cardinal-tetra-feeding-guide" },
+        { label: "Feeding schedule", value: "Twice a day is the practical standard, offering only what the school finishes in a couple of minutes. This species feeds almost constantly in the wild, so some keepers split that into three or four smaller feedings a day instead.", source: "cardinal-tetra-feeding-guide" },
+        { label: "Feeding a shoal", value: "Small mouths that lose out to faster fish. Spread food across the surface, never into one spot. Frozen and live foods get a much stronger response than flake.", source: "cardinal-tetra-enrichment-guide" },
+        { label: "Overfeeding", value: "If food is still visible in the tank after a couple of minutes, cut back. Uneaten food decays and spikes ammonia and nitrite, and nitrite is the parameter cardinal tetra tolerates the worst.", source: "cardinal-tetra-feeding-guide" },
+        { label: "Foods to avoid", value: "Oversized flakes or pellets, excessive protein-rich live or frozen food, and any overfeeding. Avoid low-quality live foods from questionable sources, which can introduce parasites, and don't overdo vegetables or fruit, which cause bloating in a fish this small.", source: "cardinal-tetra-feeding-guide" },
+        { label: "The rule that protects the school", value: "Never leave a dead fish in the tank or let tankmates scavenge a visibly sick fish's body. There is no cure for neon tetra disease, and if a fish dies of it and its body is eaten by others, those fish contract it as well.", source: "cardinal-tetra-feeding-guide" },
+        { label: "Neon tetra disease", value: "Named after neon tetra specifically, but the parasite affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish, so cardinal tetra falls within that group. Caused by a microsporidian parasite, Pleistophora hyphessobryconis, that invades muscle tissue.", source: "cardinal-tetra-health-issues-guide" },
+        { label: "Quarantine", value: "Quarantining any new fish for a full 30 days before introduction is the most effective way to keep ich out of an established tank in the first place.", source: "cardinal-tetra-health-issues-guide" },
+        { label: "Budget", value: "$1 to $3 a fish, so roughly $8 to $30 for a starting school of 8 to 10, and $65 to $230 for the core equipment. Add substrate and basic decor and most first-time setups land around $100 to $250.", source: "cardinal-tetra-cost-guide" },
+        { label: "Ongoing costs", value: "Low. A micro-pellet food runs roughly $15 to $30 a year, water conditioner $10 to $15 a year, and a water test kit is a $25 to $40 purchase you'll rely on more than once given how sensitive this species is to an incomplete nitrogen cycle.", source: "cardinal-tetra-cost-guide" },
+        { label: "Vet costs", value: "Not applicable in the traditional sense. Fish health management here is entirely about water quality and, when needed, over-the-counter treatments, not veterinary visits.", source: "cardinal-tetra-cost-guide" },
+        { label: "Lifespan", value: "About five years in captivity under good, stable conditions, and individuals may reach ten. In the wild it is close to an annual fish: the shallow dry-season pools shrink and strand huge numbers, and most don't see a second year.", source: "cardinal-tetra-cost-guide" },
+        { label: "Adult size", value: "2 inches (5 cm)." },
+        { label: "Telling it from a neon", value: "The red stripe. It runs gills to tail on a cardinal, and covers only the back half on a neon, whose front half shows blue alone. Cardinals also run slightly larger and take warmer water.", source: "cardinal-tetra-handling-guide" },
       ],
     },
-    sections: {
-      housing: "A 10 to 20 gallon tank suits a proper school of 8 to 10 or more; cardinals are intensely schooling and look washed-out and nervous in small numbers. Keep water heated between 73 and 81 degrees F, a touch warmer-tolerant than neon tetra, which makes cardinals a slightly better fit for a warmer community tank. Dark substrate and dense planting show off their color best and give a school somewhere to retreat.",
-      diet: "Cardinal tetras are omnivores that do well on high-quality micro-pellets or crushed flake, with baby brine shrimp or micro daphnia as valuable supplements. Feed small amounts once or twice daily; overfeeding fouls water quickly relative to how little this species actually needs.",
-      enrichment: "A school of 8 to 10 or more moving in tight formation is both the visual appeal and a genuine stress-reducer for the individual fish. Dense plants and driftwood recreate the dappled light of their native blackwater streams. Peaceful and non-aggressive, cardinals make an easy community fish once past the fragile early-cycling period, just avoid anything large enough to see them as food.",
-      health: "Neon tetra disease (Pleistophora hyphessobrycetis) can affect cardinal tetras despite the name, causing color loss, a curved spine, and wasting, with no cure; isolate an affected fish to protect the school. Ich is common under temperature swings or stress. A 2008 toxicology study found cardinal tetras unusually ammonia-tolerant but genuinely nitrite-sensitive (LC50 just 1.1 mg/L), which is why an uncycled tank is the single most common cause of a new keeper losing an entire school within the first week or two; always confirm a completed nitrogen cycle, especially for nitrite, before stocking.",
-      checklist: [
-        "10-20 gallon fully cycled tank",
-        "Group of 8-10+ cardinal tetras",
-        "Heater set to 73-81°F",
-        "Gentle filter",
-        "Dense live plants",
-        "Dark substrate",
-        "Micro-pellet or crushed flake food",
-        "Water test kit (confirm cycling before stocking)",
-        "Water conditioner",
-        "Weekly 20-25% water changes",
+    emergencyCard: {
+      source: "cardinal-tetra-health-issues-guide",
+      callNow: [
+        "Restless or erratic swimming, often more noticeable at night",
+        "Fading or patchy color",
+        "Visible lumps under the skin",
+        "A curved or deformed spine in advanced cases",
+        "Small white spots resembling grains of salt, with flashing against decor and rapid breathing",
+        "Discoloration on the fin edges, then fraying",
+        "Floating at the surface unable to swim down, or struggling to rise from the bottom",
       ],
+      vetLine: "Nearly everything treatable on this list traces back to water quality and stability, exactly what a properly cycled tank with consistent temperature and regular water changes prevents. The one condition that isn't treatable, neon tetra disease, is prevented primarily through quarantine, the single habit that matters most for keeping this species healthy long-term.",
     },
+    routes: [
+      { slug: "cardinal-tetra-cost-guide", line: "$1 to $3 a fish, the $65 to $230 setup, and the Rio Negro fishery behind why this one prices above a neon." },
+      { slug: "cardinal-tetra-tank-setup-guide", line: "The 20-gallon long, 73 to 84°F, soft acidic water, gentle flow, and the blackwater tannins that change the fish." },
+      { slug: "cardinal-tetra-feeding-guide", line: "Micro-pellet portions, the two-minute rule, and why removing a dead fish immediately is the real defense against an incurable disease." },
+      { slug: "cardinal-tetra-handling-guide", line: "Why this is an observation fish, the ten-fish minimum that functions as a welfare need, and the stripe that tells it from a neon." },
+      { slug: "cardinal-tetra-health-issues-guide", line: "Neon tetra disease, ich, fin rot, swim bladder trouble, and the 2008 study that says nitrite, not ammonia, is the number to watch." },
+      { slug: "cardinal-tetra-enrichment-guide", line: "Most of them are still wild caught, what that means for the first fortnight, and the borrowed neon tetra finding that says ten." },
+    ],
+    buyList: [
+      "20-gallon long tank (10-gallon for a bare minimum school of 6)",
+      "Aquarium heater",
+      "Sponge filter or a baffled hang-on-back",
+      "Water test kit",
+      "Water conditioner",
+      "Dark fine gravel or sand",
+      "Dense live plants",
+      "Driftwood and Indian almond leaves",
+      "Micro-pellet or crushed flake food",
+      "Live or frozen bloodworm, daphnia, and mosquito larvae",
+      "A separate bare tank with its own sponge filter, for quarantine",
+    ],
     faqs: [
-      { q: "What's the difference between a cardinal tetra and a neon tetra?", a: "Look at the red stripe. On a cardinal tetra it runs the full length of the body; on a [neon tetra](/guides/neon-tetra/) the red only covers roughly the back half, with the front half showing just the blue stripe. Cardinals also run slightly larger and tolerate marginally warmer water, which matters if you're stocking a warmer community tank." },
-      { q: "How many cardinal tetras should I get?", a: "At least 6, ideally 8 to 10 or more if the tank allows. Like most tetras, they're intensely schooling fish that show noticeably better color and confidence in a larger group than in a small cluster." },
-      { q: "Are cardinal tetras harder to keep than neon tetras?", a: "Only slightly, and mostly for historical reasons: more of the cardinal tetra supply has traditionally been wild-collected rather than farmed, which can mean a bit more transport stress reaching stores. Tank-raised stock has become widely available and is just as forgiving as neon tetra once past the same fragile early-cycling window both species share." },
-      { q: "How long do cardinal tetras live?", a: "4 to 5 years is the commonly cited range in a typical home aquarium; some sources report up to 10 years under very stable, low-stress conditions, though that's closer to a best-case outcome than a typical one." },
-      { q: "Do cardinal tetras need a fully cycled tank?", a: "Yes, without exception. Cardinal tetras are unusually sensitive to ammonia and nitrite spikes, and adding them to a brand-new, uncycled tank is the single most common cause of a beginner losing an entire school within days." },
+      { q: "How many cardinal tetras should I keep together?", a: "Animal Diversity Web puts the workable minimum at 10, noting that fewer fish kept together tend to develop sickness from stress, and Seriously Fish recommends starting with 8 to 10 or more for natural schooling behavior, a notably higher bar than the six-fish floor commonly cited for neon tetra. A group that's too small produces fish that are pale, stressed, and constantly hiding." },
+      { q: "Can cardinal tetras get neon tetra disease?", a: "Yes. It's named after neon tetra specifically, but the Merck Veterinary Manual documents the parasite affecting tetras broadly, along with angelfish, rasboras, barbs, and zebrafish, so cardinal tetra falls within that group. It's caused by a microsporidian parasite, Pleistophora hyphessobryconis, that invades muscle tissue. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases." },
+      { q: "What's the non-obvious detail that makes the biggest difference in a cardinal tetra tank?", a: "Recreating blackwater conditions. Driftwood and Indian almond leaves release natural tannins that stain the water and lower pH, mimicking the shaded, leaf-litter-covered streams this species evolved in. Pair that with dense planting and dim lighting, and color and confidence both improve noticeably." },
     ],
   },
   {

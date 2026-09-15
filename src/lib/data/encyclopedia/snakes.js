@@ -92,7 +92,7 @@ export const snakeEncyclopedia = [
       habitat: "Rocky hillsides, woodland, grassland, farmland, and forest edges",
       adultSize: "2-4 feet (60-120 cm) depending on subspecies",
       wildDiet: "Rodents, lizards, birds, eggs, and other snakes",
-      wildLifespan: "10-22 years",
+      wildLifespan: "Not documented in the wild; one adult-caught individual lived another 21 years in captivity, and 20 years or more is the usual figure for a well-kept pet",
       conservation: "Least Concern (IUCN)",
       history: "The coral snake resemblance has been argued over for longer than the species has been a pet. Milk snakes live across a range that includes large areas where no coral snake occurs at all, which is difficult to square with mimicry as the whole explanation. Research discussed by the American Museum of Natural History points at a second effect: the red, black, and pale banding is conspicuous on a still snake, but on one moving across a forest floor it breaks the outline up and makes the animal hard for a predator to track. The pattern that reads as a warning when the snake stops may work as camouflage when it moves.",
     },
