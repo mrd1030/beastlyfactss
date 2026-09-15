@@ -675,61 +675,103 @@ export const invertebrateGuides = [
     image: "/assets/guides/hissing-cockroach.jpg",
     tagline: "Calm, armored, surprisingly clean - and yes, it hisses!",
     funFact: "Madagascar hissing cockroaches are one of the few insect species where the father plays an active role in rearing offspring. Males guard and protect the female and young after birth, and juveniles stay with the family group for weeks.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "10-gallon terrarium with secure lid", low: 30, high: 60 },
-        { item: "Coconut fiber or bark chip substrate", low: 15, high: 25 },
-        { item: "Cork bark tubes or egg cartons", low: 10, high: 20 },
-        { item: "Shallow water dish with sponge insert", low: 5, high: 10 },
-        { item: "Digital thermometer", low: 10, high: 15 },
-      ],
-      annual: [
-        { item: "Fresh fruits, vegetables, and dry kibble", low: 30, high: 60 },
-        { item: "Substrate replacement", low: 15, high: 25 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Pesticides, rehousing and the travel and outage plan
+    // cite the shared invertebrate guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-15 after the hissing cockroach set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // What the old hub had wrong, in the reader's order: humidity 50 to 70%
+    // against the setup and health guides' 60 to 70%; "temperatures of 75 to
+    // 90 degrees F are ideal" running into the 85 to 95F breeding trigger it
+    // never mentioned; a Housing section calling smooth sides 10 to 12 inches
+    // tall enough to prevent escape and the jelly barrier "a secondary
+    // escape-proofing method some keepers use", where the setup guide says a
+    // secure lid alone isn't enough and its own FAQ said they scale glass; a
+    // setup table totalling $70 to $130 before the animal against the cost
+    // guide's $40 to $100 including it; "completely harmless to humans"
+    // against the handling guide's leg spines and Salmonella; maturity at 5 to
+    // 7 months against the feeding guide's molt count; a protein supplement
+    // line against the feeding guide's "hissers are naturally
+    // protein-sparing"; and a permanent cuttlebone the feeding guide never
+    // mentions at all. None of those figures moved up here.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The animal", value: "$3 to $65. Individual nymphs run around $3 each. A breeding pair runs about $24, and a starter colony of 25 runs around $65. Because this same species is also sold widely as a feeder insect for reptiles, availability and pricing stay consistently low across most sources.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Setup budget", value: "Roughly $40 to $100, animal included. A tank or plastic tub in the 5 to 20 gallon range with a secure, screened lid is the enclosure baseline, paired with coconut fiber substrate, a hide or two, and a water dish.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Ongoing costs", value: "A few dollars a month. Fresh vegetables and fruit, occasional commercial roach or dog food, and modest substrate replacement make up the entire monthly cost.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Vet costs", value: "Effectively none. Invertebrates are rarely taken to a vet, and very few vets treat them at all. Care here is entirely husbandry-based, correct humidity and substrate do all the real work.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Lifespan", value: "2 to 5 years is the typical range, most commonly 2 to 3, with 4 to 5 achievable under excellent care.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Adult size", value: "2 to 4 inches (5 to 10 cm)." },
+        { label: "Enclosure size", value: "A 5-gallon tank works as a minimum for a small group. A 10-20+ gallon tank or plastic tub suits a larger colony better, floor space matters more here than height for this ground-dwelling species.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Not one on its own", value: "They are gregarious, they cluster, and the welfare research that exists is on groups. A single hissing cockroach is neither how the species lives nor how it has been studied.", source: "madagascar-hissing-cockroach-enrichment-guide" },
+        { label: "Temperature", value: "75 to 85°F for general pet-keeping, room temperature above about 70°F is genuinely fine if you're not actively trying to breed them. Breeding specifically gets triggered around 85 to 95°F, worth knowing if you want to avoid an accidental population boom.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 70%, maintained through daily misting and a substrate that holds moisture well. A simple humidity chamber, a small container with a damp sponge inside the main enclosure, works well too, a technique used by professional insect-keeping programs.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber, peat moss, or orchid bark, 2 to 3 inches deep, supports this species' semi-burrowing habits well. Provide egg-crate stacks or cork bark as hides, they'll use these constantly.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "The escape barrier", value: "This is the detail that matters most for a successful setup. Madagascar hissing cockroaches are excellent climbers, capable of scaling smooth glass with ease. Smear a band of plain petroleum jelly around the top 2 to 3 inches of the enclosure interior, combined with a secure, tight-fitting lid, and escapes become a non-issue. Skip this step, and you'll likely find roaches outside the enclosure sooner or later.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Lighting", value: "None needed. This species is nocturnal and photophobic, genuinely prefers darkness, and doesn't require any special lighting setup at all.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Male or female", value: "Males carry a pair of large bumps, the pronotal horns, behind the head, and those structures are much smaller in females. Males also grow larger. Worth knowing before you buy, since a mixed-sex group breeds and a same-sex group does not.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Feeding", value: "Keep a dry protein source available, high-quality dry dog food, cat food, or a commercial roach chow, and top it up with fresh produce 2 to 3 times a week in a quantity the colony finishes within 24 to 48 hours so leftovers don't mold. A small pet colony does fine at the lighter end of that, dry food about once a week with fruit every couple of weeks.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "What they eat", value: "High-quality dry dog food is the most consistently recommended staple. Offer fresh produce a few times a week: romaine lettuce and other dark leafy greens, dandelion greens, carrots, squash, sweet potato, apples, bananas, oranges, and grapes. Their wild diet is decaying plant matter and fallen, overripe fruit, so captive feeding is built to approximate that rather than something meat-heavy.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Not a protein-heavy diet", value: "Skip diets that are too protein-heavy, hissers are naturally protein-sparing and don't need a meat- or pellet-heavy feed the way some other insects do. Use caution with iceberg lettuce, nutritionally much weaker than romaine, and with any produce treated with pesticides.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Water", value: "A water source that can't drown a roach: a cotton ball or sponge saturated with water in a shallow dish, or a commercial water gel, changed regularly, since an open dish poses a real drowning risk to small nymphs.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Why it looks like nothing is eating", value: "Hissers are light-averse and most active after dark, so feeding is often genuinely happening overnight even when it looks like nothing's being eaten.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Growing up", value: "Nymphs go through about six molts over roughly six to seven months to reach adulthood, and commonly go quiet and eat less beforehand. They need elevated humidity during this window to shed successfully.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Handling", value: "Docile for an insect, more so than most people expect, but this is fundamentally a display and observation pet, not a handling-focused one. Pick one up gently around the thorax, or let it walk from hand to hand instead of gripping it. Never jerk or pull, their sticky foot pads and leg hooks grip surfaces tightly, and pulling against that grip can genuinely injure the insect.", source: "madagascar-hissing-cockroach-handling-guide" },
+        { label: "They are not entirely harmless", value: "Their sharp leg spines are a real defensive feature, and can scratch or draw a small amount of blood if the roach is held down or restrained against its will. Wash your hands before and after handling: they can carry Salmonella like most reptiles and invertebrates.", source: "madagascar-hissing-cockroach-handling-guide" },
+        { label: "Reading the hiss", value: "A weak stimulus may produce a single hiss, while a strong one may cause a long series of hisses as the animal flees. A roach that hisses once when you lift the lid is noting you. One that hisses in a run and bolts for the substrate is telling you the approach was too fast or too much. A roach that freezes flat when touched is at least as stressed as one that hisses.", source: "madagascar-hissing-cockroach-handling-guide" },
+        { label: "Desiccation", value: "Low humidity causes real problems with molting and can lead to death if left uncorrected. The fix is straightforward, maintain 60 to 70% humidity through regular misting and a moisture-holding coconut fiber substrate.", source: "madagascar-hissing-cockroach-health-issues-guide" },
+        { label: "A fresh molt", value: "A freshly molted cockroach is soft and pale white for several hours after shedding its exoskeleton, and genuinely vulnerable during that window. Never handle a roach during or immediately after a molt. Overcrowding and low humidity both make molting problems more likely.", source: "madagascar-hissing-cockroach-health-issues-guide" },
+        { label: "Mold and mites", value: "From uneaten wet food combined with poor ventilation, this can genuinely devastate a colony if it takes hold. Remove any uneaten fresh food within 24 to 48 hours, ensure the enclosure has adequate airflow, and do a deeper clean periodically rather than only when a problem appears.", source: "madagascar-hissing-cockroach-health-issues-guide" },
+        { label: "Heat mats", value: "A heat mat used without a thermostat is a real risk, capable of overheating the roaches or even melting a plastic tub enclosure. If you're using supplemental heat, mainly relevant for breeding rather than casual pet-keeping, always run it through a thermostat.", source: "madagascar-hissing-cockroach-health-issues-guide" },
+        { label: "Legal, before you buy", value: "Four jurisdictions bar them: New Hampshire, Montana, Hawaii and the District of Columbia. Florida requires an agriculture permit rather than a wildlife one. Oregon attaches conditions. Three more, New Mexico, New Jersey and Idaho, have rules that could reach insects but never say whether they do.", source: "madagascar-hissing-cockroach-legal-guide" },
+        { label: "Bug spray", value: "A hissing cockroach is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy animal can be found dead the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "Moving them", value: "A roach is slow enough to nudge into a catch cup with a soft brush, worked low over a larger tub so a bolt goes nowhere, and never during a molt.", source: "invertebrate-rehousing-guide" },
+        { label: "A power cut, and a trip", value: "Hissers live at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank. A full, shallow water dish refilled the morning you go, stable humidity, and a checked lid do more for a short absence than any attempt to pre-feed.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
-    sections: {
-      housing: `A 10-gallon terrarium with a tight, secure lid is a reasonable starting point for a small colony of 10 to 20 individuals. For larger colonies (which they become quickly), upgrade to a 20-gallon or larger rubbermaid-style container with a ventilated lid. Madagascar hissing cockroaches are exceptional climbers on rough surfaces - any textured wall, wood, or mesh can be scaled. Smooth glass or smooth plastic sides at least 10 to 12 inches tall will prevent escape. Petroleum jelly applied near the top edge (a "barrier" band) is a secondary escape-proofing method some keepers use.
-
-Use coconut fiber or bark chip substrate 2 to 3 inches deep. Add cork bark tubes, egg carton sections stacked vertically, or cardboard tubes - these create the dense, structured hides this social species prefers. They pile together in these structures during the day and emerge at night.
-
-Temperatures of 75 to 90 degrees F are ideal. Ambient room temperature above 70 degrees F usually suffices without supplemental heating. Moderate humidity of 50 to 70% is appropriate. Avoid overly wet conditions, which encourage mold.`,
-      diet: `Madagascar hissing cockroaches are detritivores that are not picky. The core of their diet is fresh fruits and vegetables: apple slices, banana, carrot, sweet potato, leafy greens (collard greens, romaine), and cucumber are all accepted eagerly. Rotate offerings to provide variety.
-
-Supplement with a protein source: dry dog or cat kibble (grain-free or basic formulation) provides the amino acids needed for healthy molting and breeding. Oatmeal, dry whole-grain cereal, and bran are also accepted as carbohydrate supplementation.
-
-Remove all fresh food within 24 to 48 hours before mold develops. Provide cuttlebone or crushed eggshell pieces constantly - calcium is critical for successful molting in cockroaches as in all invertebrates. Fresh water must be available at all times, but use a shallow dish with a sponge, cotton ball, or pebbles inside to prevent smaller individuals from drowning.`,
-      enrichment: `Madagascar hissing cockroaches are social, colony-living animals - their primary enrichment comes from appropriate group dynamics. They maintain a social hierarchy, with males competing for dominance through physical pushing contests and the remarkable hissing displays. Watching these contests is genuinely fascinating. Males hiss aggressively during territorial and mating encounters; both sexes produce a startle hiss when suddenly disturbed.
-
-They are completely harmless to humans: they do not bite, they have no venom, and they do not sting. They are one of the best invertebrate species for children and beginners due to their large size, slow movement, predictable behavior, and tolerance of handling. Allow them to walk across open palms - they are unhurried and easy to manage.
-
-Cork bark tubes, stacked egg carton sections, and cardboard tubes give the colony the dense social spaces they seek naturally. This is especially important for juveniles and molting adults, who need secure, enclosed spaces to complete their molts safely. A well-furnished enclosure with adequate hiding space dramatically reduces molting failures.`,
-      health: `Madagascar hissing cockroaches are exceptionally hardy with few health problems when kept in appropriate conditions. The most common issues are all avoidable: overcrowding (which causes stress, increased male aggression, and premature deaths), failed molts from insufficient humidity or inadequate hides, and mite infestations from a too-wet substrate.
-
-Mites show as tiny white or brown specks visible on the cockroaches or moving through the substrate. Treat by removing all cockroaches, discarding the old substrate completely, cleaning and drying the enclosure, and starting fresh. Increase ventilation and allow the substrate to dry slightly between mistings.
-
-Escaped cockroaches are the most serious concern for many keepers: check the lid and escape barrier routinely. Males fight - in overcrowded conditions with too few hides, subordinate males can be killed. Provide enough structure that all individuals can find secure shelter simultaneously. This species can live 2 to 5 years, and colonies grow rapidly once established.`,
-      checklist: [
-        "10-gallon terrarium with secure, tight lid",
-        "Coconut fiber or bark chip substrate",
-        "Cork bark tubes or egg carton for hiding",
-        "Fresh fruits, vegetables, and dry kibble",
-        "Cuttlebone or crushed eggshell for calcium",
-        "Shallow water dish with sponge insert",
-        "Digital thermometer",
-        "Moderate humidity (50 to 70%)",
-        "Spray bottle for misting",
-        "Secure lid (excellent climbers)",
+    emergencyCard: {
+      source: "madagascar-hissing-cockroach-feeding-guide",
+      callNow: [
+        "Inactivity, or lying in one place",
+        "Failure to hiss when handled",
+        "Lethargy beyond normal pre-molt sluggishness",
+        "A dull-looking exoskeleton",
+        "Visible weight loss",
+        "Discharge from the mouth or eyes",
+        "Visible sores",
+        "Abnormal feces",
       ],
+      vetLine: "A visibly sick hisser is reported to commonly survive only about 2 to 3 days once symptoms are obvious, which argues for acting quickly, checking temperature and humidity and consulting an exotics-experienced vet, rather than waiting once multiple symptoms stack up.",
     },
+    routes: [
+      { slug: "madagascar-hissing-cockroach-cost-guide", line: "$3 a nymph, $24 a pair, $65 a colony of 25, and a setup total under $100 with the animal in it." },
+      { slug: "madagascar-hissing-cockroach-tank-setup-guide", line: "5 gallons as a floor, 75 to 85F, 60 to 70%, and the petroleum jelly band that does the real escape prevention." },
+      { slug: "madagascar-hissing-cockroach-feeding-guide", line: "Dry dog food as the staple, produce two or three times a week, and why it looks like nothing is eating." },
+      { slug: "madagascar-hissing-cockroach-handling-guide", line: "How the hiss is actually produced, what a graded hiss is telling you, and why pulling against the grip injures them." },
+      { slug: "madagascar-hissing-cockroach-health-issues-guide", line: "Desiccation, molting complications, mold and mites, and why prevention does almost all the work." },
+      { slug: "madagascar-hissing-cockroach-enrichment-guide", line: "The 2023 welfare framework built for group-housed Gromphadorhina, and what it asks of a colony enclosure." },
+      { slug: "madagascar-hissing-cockroach-legal-guide", line: "Four jurisdictions that bar them, the Florida permit filed under agriculture, and three states that never say." },
+    ],
+    buyList: [
+      "A 5 gallon tank as a floor, 10 to 20+ gallons for a colony, with a secure screened lid",
+      "Plain petroleum jelly for the escape barrier",
+      "Coconut fiber, peat moss or orchid bark substrate",
+      "Egg-crate stacks or cork bark hides",
+      "Leaf litter and pieces of rotting wood",
+      "A shallow dish with a cotton ball or sponge, or a commercial water gel",
+      "High-quality dry dog food or commercial roach chow",
+      "A spray bottle for misting",
+      "A thermostat, only if you are running supplemental heat to breed",
+    ],
     faqs: [
-      { q: "Why do Madagascar hissing cockroaches hiss?", a: "By forcing air through modified abdominal spiracles (breathing openings). Unlike most insect sounds produced by wing-rubbing or leg-rubbing, the hiss is produced by expelling air - a unique mechanism in the insect world. Males use a distinctive multi-hiss pattern during dominance contests with other males, and a different pattern during mating. Both males and females produce a single sharp startle hiss when suddenly disturbed by a predator (or a surprised keeper). The sound is much louder than you would expect from an insect." },
-      { q: "Are Madagascar hissing cockroaches safe to handle?", a: "Yes - they are one of the best invertebrate options for beginners, particularly children, because they have no bite, no sting, no venom, and no urticating hairs. They move slowly and predictably, are large enough to observe and handle comfortably, and are very tolerant of gentle handling. They may hiss when first picked up (startle hiss) and may grip with strong tarsal claws, but they cannot harm you. Wash hands before and after handling. Their size - up to 3 inches - makes them significantly easier to handle than smaller invertebrates." },
-      { q: "What do hissing cockroaches eat?", a: "Fresh fruits and vegetables form the core of their diet: apple, banana, carrot, sweet potato, leafy greens, and cucumber are all eagerly accepted. Supplement with protein: dry dog or cat kibble, dried cat food, or mealworm powder provides the amino acids needed for healthy molting and breeding. Calcium from cuttlebone or crushed eggshell must be available at all times for successful molting. Fresh water must always be accessible in a shallow dish with pebbles or a sponge insert to prevent drowning. Remove fresh food within 24 to 48 hours to prevent mold." },
-      { q: "How do I stop hissing cockroaches from escaping?", a: "Their climbing ability on textured surfaces is remarkable - they can scale glass, most plastics, and any rough surface. Smooth glass or smooth plastic walls at least 10 to 12 inches tall are the primary barrier for most housing. A secondary layer is a 2 to 3 inch band of petroleum jelly applied near the top interior edge of the enclosure - cockroaches will not cross this. The most critical point is the lid: a lid that doesn't seal completely against the sides is the number-one escape vector. Inspect the seal regularly, especially if the population is growing." },
-      { q: "How fast do hissing cockroach colonies grow?", a: "Very fast. Females are ovoviviparous - they carry the egg case internally and give birth to 20 to 60 live nymphs per clutch, with nymphs reaching sexual maturity in 5 to 7 months. A small starting group of mixed males and females can produce hundreds of individuals within a year. If you don't want a colony, keep only same-sex groups. Many keepers intentionally maintain large colonies because hissers make excellent feeder insects for reptiles and amphibians, making them doubly useful in a multi-pet household." },
-      { q: "Are Madagascar hissing cockroaches good pets for kids?", a: "Yes, they're one of the better invertebrate choices for children specifically. No bite, no sting, no venom, slow and predictable movement, and a size that's easy to see and handle without being intimidating. The hiss startles people the first time, but it's harmless, and kids tend to find it more fascinating than scary." },
+      { q: "How much does a Madagascar hissing cockroach cost?", a: "Around $3 for an individual nymph, about $24 for a breeding pair, and around $65 for a starter colony of 25. This species doubles as a feeder insect for reptiles, which keeps pricing low and consistent across most sources." },
+      { q: "What temperature and humidity does this species need?", a: "75 to 85°F for general pet-keeping, room temperature above about 70°F is fine if you're not actively breeding. Breeding gets triggered around 85 to 95°F. Humidity should stay at 60 to 70%, maintained through daily misting and moisture-holding substrate." },
+      { q: "What's the most common health problem in pet Madagascar hissing cockroaches?", a: "Desiccation. Low humidity causes real problems with molting and can lead to death if left uncorrected. Maintaining 60 to 70% humidity through regular misting and moisture-holding substrate fixes it." },
     ],
   },
   {
