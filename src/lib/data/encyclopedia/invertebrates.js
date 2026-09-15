@@ -64,7 +64,7 @@ export const invertebrateEncyclopedia = [
       habitat: "Subtropical and tropical forest floor and savanna",
       adultSize: "10-15 inches (25-38 cm)",
       wildDiet: "Decaying plant matter, leaf litter, fungi, and minerals from soil",
-      wildLifespan: "5-10 years",
+      wildLifespan: "5-7 years in the wild; 7-10 years in captivity",
       conservation: "Least Concern (IUCN)",
       history: "Wilhelm Peters described the species in 1855. Its path into captivity has been shaped less by hobbyists than by agricultural regulators, because the United States treats giant millipedes as a potential plant pest and requires a federal permit to import them; shipments arriving without one are seized, as happened at San Francisco International Airport in 2014. Much of that caution traces to the mites that ride on the millipede's exoskeleton, which appear to clean their host in exchange for food and shelter but are difficult to screen at a border. The result is an animal that is straightforward to keep and awkward to move across a national line.",
     },
