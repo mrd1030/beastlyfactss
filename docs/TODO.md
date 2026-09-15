@@ -525,6 +525,13 @@ is why they kept getting deferred. Do them once section 7 is finished.
       RELATED_ARTICLES entry amano shrimp had before batch J, so their
       sidebars are missing cycling, quarantine and the sick-tank check that
       every fish species carries. One line each.
+- [ ] Bristlenose pleco lifespan ceiling, hub against encyclopedia. The cost
+      guide says well-kept individuals are "reasonably often reported living 12
+      to 14 years"; the encyclopedia's wildLifespan field says "up to 12-15 years
+      with excellent care". Neither is obviously wrong and that page's Sources do
+      not settle the ceiling, so it needs research rather than a pick. Found by
+      the numbers checker during batch N. (batch N)
+
 - [ ] Four shared-guide gaps batch N's readers found on multiple species at once,
       which is what makes them shared-guide work rather than five hub lines.
 

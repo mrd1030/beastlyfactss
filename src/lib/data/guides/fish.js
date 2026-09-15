@@ -164,51 +164,103 @@ export const fishGuides = [
   {
     id: "bristlenose-pleco",
     name: "Bristlenose Pleco",
-    emoji: "🐟",
+    emoji: "\u{1F41F}",
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/bristlenose-pleco.jpg",
     tagline: "The tentacle-snouted algae cleaner that actually stays small, unlike the 'baby pleco' at the pet store!",
     funFact: "Most of the cheap, inch-long 'plecos' sold for algae control are common plecos (Hypostomus plecostomus) or a related Pterygoplichthys species, and neither stays small: both regularly reach 12 to 24 inches and need a 75-gallon-or-larger tank as adults, a size surprise so common that escaped and released pet plecos have established breeding, invasive populations in Texas and Florida rivers. Researchers pulled more than 400 invasive armored catfish from a single stretch of Texas's San Marcos River in one 2022 removal effort. The bristlenose pleco profiled here is a different, deliberately smaller species that tops out around 4 to 6 inches for life, which is exactly why it's the pleco actually worth recommending to a beginner.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a single bristlenose, the beginner-appropriate pleco species.
-    costs: {
-      setup: [
-        { item: "20-30 gallon tank", low: 90, high: 170 },
-        { item: "Filter sized above the tank minimum", low: 30, high: 50 },
-        { item: "Aquarium heater", low: 20, high: 35 },
-        { item: "Driftwood (required, not decorative) and caves", low: 25, high: 50 },
-      ],
-      annual: [
-        { item: "Algae wafers + fresh vegetables", low: 30, high: 60 },
-        { item: "Water conditioner and test kit", low: 15, high: 25 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, filtration, the hospital tank, water
+    // chemistry, the power outage rule and the sick-fish check cite the shared
+    // aquarium guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the bristlenose pleco set test (docs/READER_REVIEWS.md).
+    //
+    // The reader graded the old hub B- and said the tank price alone "is the
+    // kind of thing that makes me re-check everything else." Retired rather
+    // than moved: a tank line of $90 to $170 against the cost guide's $35 to
+    // $60, roughly a factor of two on the biggest purchase; a filter at $30 to
+    // $50 against $45 to $60 and a heater at $20 to $35 against $18 to $30, both
+    // drifting the other way; a test kit filed as an annual cost where the cost
+    // guide has it upfront; a setup total of $165 to $305 against a stated $155
+    // to $265, with the test kit line missing entirely; "Keep water heated
+    // between 74 and 82 degrees F" against the setup guide's 74 to 80; and a
+    // checklist calling for a "20-30 gallon tank" where the cost guide prices a
+    // 20 long as the minimum, so a beginner shopping off the checklist either
+    // overpays or misreads the floor.
+    //
+    // The hub also called this fish "scaleless", where the health guide calls
+    // it an armored catfish with an unprotected belly. Those are different
+    // bodies, and the copper warning depends on which one is true, so the row
+    // below takes the health guide's wording.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Confirm the species first", value: "The single most expensive mistake in this hobby isn't a bristlenose pleco, it's buying a fish labeled simply \"pleco\" that turns out to be a common pleco (*Hypostomus plecostomus*) instead. At the size stores sell juveniles, an inch or two long, the two can look genuinely similar. A common pleco grows into a 12 to 24-inch adult that needs a 75-gallon-plus tank, while a bristlenose stays 4 to 6 inches for life.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Why the bristles don't settle it", value: "A true bristlenose typically doesn't show its namesake bristles until around 3 inches, and even then only reliably on males, so don't count on the bristles alone to tell them apart early. Ask the store directly for the species name rather than settling for \"pleco.\"", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "Tank size", value: "20 gallons is the practical minimum for a single adult bristlenose, and 29 to 30 gallons is genuinely the better long-term choice given how much waste one fish produces relative to its size. Add roughly 10 gallons for each additional bristlenose, and favor extra floor space and driftwood surface over height.", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "Temperature and water", value: "74 to 80\u00B0F suits most captive-bred bristlenose, with some sources citing a somewhat wider tolerance either side of that range. Aim for a pH around 6.5 to 7.8, and keep ammonia and nitrite at zero through regular water changes.", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "Driftwood is required, not decorative", value: "This species rasps wood constantly and instinctively, and most care guides tie that grazing behavior to healthy digestion, fiber and the biofilm colonizing the wood's surface both appear to matter. Skipping it entirely is genuinely associated with digestive problems even in a fish that's otherwise being fed correctly.", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "How much wood", value: "Size matters more than variety. One small ornament piece in a tank with two plecos is not a wood provision, it is a decoration they will strip in a couple of weeks. Give a substantial piece, or several. It will tint the water with tannins, which is normal and harmless.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Caves and shade", value: "Nocturnal fish that spend the day wedged into something. A cave gives that, and males use caves as spawning sites, which is why a cave per fish is sensible when you keep more than one. Add general shade: wood overhangs, broad-leaved plants, and a light that is not blasting the whole floor. A pleco visible in the open all day is often a pleco with nowhere better to be.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Grazing surface", value: "Beyond the wood, anything that grows biofilm: rock, plant leaves, the back glass left unscrubbed. Scrubbing every surface in the tank every week removes a genuine food source. Leave the back and sides, clean the front.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Filtration and oxygen", value: "Plecos produce a lot of waste and need real filtration and current. Good flow and surface agitation matter, since a heavily stocked warm tank with a large catfish in it runs low on oxygen faster than people expect.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Feeding schedule", value: "Feed once a day, ideally after lights-out since this is a nocturnal species that does most of its grazing overnight. Offer a wafer or vegetable portion the fish clears within a few hours, and remove anything still sitting untouched the next day. Dropping food near a favorite cave or driftwood perch helps a shy individual find it without competing in open water.", source: "bristlenose-pleco-feeding-guide" },
+        { label: "The algae myth", value: "The single most common and most damaging feeding mistake with this species. Tank algae rarely grows fast enough to keep pace with a full-grown adult, and a bristlenose left to fend for itself on algae and other fish's leftovers gradually loses condition rather than failing suddenly, which makes the problem easy to miss until it's fairly advanced.", source: "bristlenose-pleco-feeding-guide" },
+        { label: "Never handled, and hard to net", value: "A bristlenose has stiff, lockable spines on its pectoral and dorsal fins that it raises when startled, and those spines catch easily in ordinary net mesh. Many experienced keepers herd it into a cup or wide plastic container instead, then lift the container out with the fish inside.", source: "bristlenose-pleco-handling-guide" },
+        { label: "Invisible all day is normal", value: "A bristlenose that's invisible all day and active only after the lights go off isn't hiding from a problem, it's just being a bristlenose. A cave, a gap behind the filter, or the underside of a piece of driftwood is exactly where it's supposed to spend the day.", source: "bristlenose-pleco-handling-guide" },
+        { label: "Territorial males", value: "Peaceful toward other species, but males are territorial toward each other and toward similarly shaped bottom dwellers, competing over caves rather than open water. Planning for enough hiding spots that more than one male isn't forced to share heads off most of the friction before it starts.", source: "bristlenose-pleco-handling-guide" },
+        { label: "The copper warning", value: "Bristlenose plecos are armored catfish with an unprotected belly and a mucous coating that copper damages badly, and this species is more medication sensitive than many community fish. Copper-based treatments belong on the avoid list entirely, use an alternative medication for any copper-susceptible parasite instead.", source: "bristlenose-pleco-health-issues-guide" },
+        { label: "Budget, the fish", value: "Common color morphs like albino and brown typically run $7 to $10, with green dragon and lemon varieties close behind and red bristlenose running a bit more, around $12. Larger or specialty specimens can reach $20 to $25.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Budget, the setup", value: "Roughly $155 to $265, and ongoing costs run about $45 to $85 a year. Driftwood doesn't need frequent replacing, but budget for an occasional new piece, $15 to $30, every year or two once an older piece is fully grazed down.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Vet costs", value: "Aquatic vets are genuinely uncommon, and most bristlenose health issues, water-quality problems and nutritional deficiency chief among them, are managed directly by the keeper rather than through professional visits.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Lifespan", value: "5 to 10 years is typical with decent care, and well-kept individuals are reasonably often reported living 12 to 14 years. That's a genuinely long commitment for a fish this inexpensive and this unassuming.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Adult size", value: "4 to 6 inches (10 to 15 cm)." },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A single adult bristlenose needs at least 20 gallons, and 30 is a genuinely better long-term minimum given how much waste one fish produces relative to its size. Keep water heated between 74 and 82 degrees F with a filter sized above what the tank's gallon rating alone would suggest, since bristlenose plecos are messy eaters. Driftwood is not optional decor for this species: they rasp wood fiber for real digestive benefit, and a tank without it tends to produce a duller, less healthy fish over time. Add caves, PVC pipe, or dense decor for daytime hiding, since bristlenose are nocturnal and spend most of the day tucked out of sight, becoming active once the lights go down.",
-      diet: "Bristlenose plecos are often sold as if algae alone will feed them, and that's a genuine myth: tank algae isn't enough on its own for an adult, and a pleco fed only on what it can graze from the glass typically ends up with a sunken belly and a shortened lifespan. Sinking algae wafers should form the dietary staple, supplemented several times a week with blanched zucchini, cucumber, or sweet potato. A small amount of occasional protein, like frozen bloodworms or brine shrimp, rounds out the diet without overdoing it, since bristlenose stay primarily plant-based grazers even as adults.",
-      enrichment: "The single best enrichment for a bristlenose is simply letting it do what it evolved to do: grazing algae and biofilm off glass, decor, and especially driftwood through the night. They're peaceful, low-key tankmates for almost any non-aggressive community fish, and a mature male's branching facial bristles, used to signal sex and spar with rival males, are one of the more distinctive things to watch develop as a juvenile grows up. Breeding is a real possibility even in a community tank: males are cave spawners that guard and fan a clutch of eggs alone once a female has laid them, a genuine bit of solo paternal care to witness if you keep more than one.",
-      health: "Bristlenose plecos, like corydoras catfish, are scaleless and unusually sensitive to copper-based medications, so any ich or parasite treatment needs to be checked for pleco safety before it goes in the tank. Ich and fungal infections both follow poor water quality more than anything else. The biggest real health risk with any pleco, bristlenose included, is nutritional: an adult fed algae alone, with no wafers, vegetables, or driftwood to rasp, declines over months rather than failing suddenly, which makes the problem easy to miss until a fish is already in poor shape. Buying a pleco without confirming the exact species is the other major risk here, since a juvenile common pleco and a juvenile bristlenose can look deceptively similar at an inch or two long in a store tank, and only one of them stays that size.",
-      checklist: [
-        "20-30 gallon tank",
-        "Heater set to 74-82°F",
-        "Filter sized above the tank's gallon minimum",
-        "Driftwood (required for digestion, not just decor)",
-        "Caves or PVC pipe for daytime hiding",
-        "Sinking algae wafers as dietary staple",
-        "Blanched zucchini, cucumber, or sweet potato",
-        "Occasional bloodworms or brine shrimp",
-        "Water test kit and conditioner",
-        "Confirm species before buying (bristlenose vs. common pleco)",
+    emergencyCard: {
+      source: "bristlenose-pleco-health-issues-guide",
+      callNow: [
+        "A sunken, concave belly, sometimes alongside faded color or fins that start to look ragged even without an infection driving it",
+        "Small, pinhead-sized white spots across the body and fins",
+        "Frayed or discolored fin edges",
+        "Damaged barbels or torn fins from rough decor or sharp substrate",
       ],
+      vetLine: "Diet drives the single biggest risk, decor and substrate drive physical injury, and water quality sits underneath nearly everything else on this list. A consistent, dedicated bottom-feeder food, rather than leftover algae and scraps, keeps a bristlenose in the kind of steady condition that makes it more resilient generally. Malnutrition is the one to watch hardest precisely because it's gradual: there's no single obvious symptom on day one.",
     },
+    routes: [
+      { slug: "bristlenose-pleco-cost-guide", line: "$7 to $25 for the fish, $155 to $265 for the tank around it, and the labelling mistake that costs the most of all." },
+      { slug: "bristlenose-pleco-tank-setup-guide", line: "20 gallons as a floor and 29 to 30 as the real answer, 74 to 80F, and why driftwood is not decoration." },
+      { slug: "bristlenose-pleco-feeding-guide", line: "Once a day after lights-out, and why the algae myth is the most damaging thing a new keeper believes." },
+      { slug: "bristlenose-pleco-handling-guide", line: "Spines that lock into a net, why you herd one into a cup instead, and why you never see it during the day." },
+      { slug: "bristlenose-pleco-health-issues-guide", line: "A sunken belly as the tell, the copper medications that are off the list entirely, and what rough decor does to barbels." },
+      { slug: "bristlenose-pleco-enrichment-guide", line: "What the wood-eating research actually settles, how much driftwood counts as enough, and the back glass you leave unscrubbed." },
+    ],
+    buyList: [
+      "20-gallon long tank as a floor, 29 to 30 gallons for the long term",
+      "Submersible aquarium heater",
+      "Filter rated above the tank volume, for a messy eater",
+      "Substantial driftwood, or several pieces, not an ornament",
+      "A cave per fish, plus wood overhangs and broad-leaved plants for shade",
+      "Smooth substrate, sand or rounded gravel",
+      "Sinking wafers formulated for catfish and bottom feeders",
+      "Zucchini and cucumber to blanch",
+      "Liquid water test kit",
+      "Water conditioner",
+    ],
     faqs: [
-      { q: "Will a pleco stay small in my tank?", a: "Only if it's actually a bristlenose. The classic cheap 'plecostomus' sold as a tiny algae-eater is usually a common pleco or a related Pterygoplichthys species, both of which grow to 12 to 24 inches and need a 75-gallon-or-larger tank as an adult. A bristlenose pleco is the species that genuinely stays small, topping out around 4 to 6 inches." },
-      { q: "How can I tell a bristlenose pleco from a common pleco?", a: "At the size stores sell them, it's genuinely difficult, which is exactly the problem. Ask the store directly for the species name rather than just 'pleco,' and be skeptical of any unlabeled 'algae eater' sold at an inch or two long, since that's precisely the size both a bristlenose and a common pleco start out at." },
-      { q: "Do plecos only eat algae?", a: "No, and this is a common misconception. Tank algae alone isn't a complete diet for an adult of any pleco species. Sinking algae wafers and regular blanched vegetables need to be the actual dietary staple, with tank algae as a bonus rather than the main course." },
-      { q: "Why is my bristlenose pleco hiding all day?", a: "This is normal, not a sign of stress. Bristlenose plecos are nocturnal and spend daylight hours tucked into caves or driftwood, becoming active and visibly grazing once the lights go down." },
-      { q: "Can bristlenose plecos live with corydoras catfish?", a: "Yes, this is a genuinely good pairing. Both are peaceful, bottom-dwelling, scaleless catfish with similar water needs, and since [corydoras](/guides/corydoras-catfish/) forage the substrate while bristlenose graze surfaces and wood, they're not competing for the same food or space." },
-      { q: "How big does a bristlenose pleco get?", a: "4 to 6 inches for life, which is exactly what makes it the pleco worth recommending to a beginner. Compare that to a common pleco, which is regularly sold at the same tiny size but grows to 12 to 24 inches." },
+      { q: "What size tank does a bristlenose pleco need?", a: "20 gallons is the practical floor for one adult, though 29 to 30 holds up better long term, since this fish produces a lot of waste for its size. Add about 10 gallons per extra bristlenose." },
+      { q: "Can bristlenose plecos be treated with copper-based medication?", a: "No. Bristlenose plecos are armored catfish with an unprotected belly and a mucous coating that copper damages badly, and this species is more medication sensitive than many community fish. Copper-based treatments belong on the avoid list entirely, use an alternative medication for any copper-susceptible parasite instead." },
+      { q: "Why does my bristlenose pleco need driftwood if I'm already feeding it?", a: "Bristlenose rasp driftwood constantly and instinctively, and most care guides tie this to healthy digestion, ingesting fiber and the biofilm growing on the wood's surface. Skipping driftwood is associated with digestive problems even in a well-fed fish." },
     ],
   },
   {

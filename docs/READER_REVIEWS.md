@@ -13620,3 +13620,62 @@ cited under a range it does not give, a care sheet was cited under a portion
 rule and a prey rule it does not state, a hedge was dropped in four places by a
 de-narration pass, a correct figure was changed on a misreading, and the review
 file says four raw outputs were filed when one was.
+
+## Bristlenose Pleco (2026-09-15, batch N, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 82k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B-. "Genuinely useful and unusually honest about
+the wood evidence, undermined by a hub that contradicts its own deep dives on
+price and temperature."
+
+The tank price is what cost this set its grade, and the reader said why in a
+sentence worth keeping: "the hub and cost guide disagreeing on the price of a
+tank by a factor of two is the kind of thing that makes me re-check everything
+else." Hub: "20-30 gallon tank | $90 | $170". Cost guide: "20 gallon long tank
+(minimum) | $35 - $60". The filter and heater rows drift in opposite directions
+from each other, the test kit is filed as annual on one page and upfront on the
+other, and the hub's own setup table sums to $165 to $305 against a stated $155
+to $265 while missing the test kit line entirely. All retired with the hub.
+
+Two bodies, one fish. The hub called a bristlenose "scaleless"; the health guide
+calls it "armored catfish with an unprotected belly". The reader put it plainly,
+that those are different bodies, and it matters because the copper warning rests
+on which one is true. The hub row now takes the health guide's wording, which is
+also the version its Sources support.
+
+The circular pointer, which is the most useful structural finding here. The
+feeding guide said "Our Bristlenose Pleco tank setup guide covers exactly how to
+add it" about driftwood; the setup guide covers why, not how, and points back at
+the feeding guide for the science; and the answer to how much wood is enough sits
+in the enrichment guide, which neither links. Two pages pointing at each other
+with the answer in a third. Both now point at enrichment, and the setup guide
+gained the practical part it was promising: buy a substantial piece rather than
+an ornament, expect tannins.
+
+Also fixed on the reader's evidence: the enrichment guide's voice slips, a
+"fortnight" and a "courgette" on a US-spelling site, and a stray "Other sizes are
+available" fragment with no product behind it, which is the docs/TODO.md section
+8 template-fragment item for this species, done. That leaves 14 across the site.
+
+Temperature settled at the setup guide's 74 to 80 against the hub's 74 to 82, and
+the hub's "20-30 gallon tank" checklist line is gone in favour of the cost
+guide's 20 long as the floor with 29 to 30 as the better long-term answer, which
+is what the setup guide already said.
+
+Links: 3 rewritten rather than added, since the problem here was links that
+existed and pointed the wrong way.
+
+Dates: tank setup and feeding bumped. Enrichment is future-dated to 2026-11-05
+and was not bumped despite the voice fixes, which changed no figure.
+
+Left open, needs research: the encyclopedia's "up to 12-15 years with excellent
+care" against the cost guide's "reasonably often reported living 12 to 14 years".
+Neither is obviously wrong and the cost guide's Sources do not settle the
+ceiling. Filed in section 8.
+
+Gaps, checked against the Health and More list: a water change schedule (three
+pages say "regular water changes" and none gives a number, which is now a
+shared-guide item in section 8), how to prepare driftwood, what to treat with
+instead of copper, the target temperature for ich heat treatment against the
+80F ceiling (also now a section 8 item, since zebra danio has the same problem),
+breeding follow-through, tankmates to avoid, and bag-to-tank acclimation.
