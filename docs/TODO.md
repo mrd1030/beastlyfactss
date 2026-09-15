@@ -397,9 +397,17 @@ per the READMEFIRST process. Dogs and cats last.
 Batch I (African fat-tail gecko, corydoras catfish, red-footed tortoise,
 degu, savannah monitor) is built, checked and pushed on
 claude/hub-pacman-frog-80291s, not merged. The Fable closing check ran
-2026-09-15 and fixed every finding on the branch; pass grade B-. Worker
-Opus 5 high effort, one Fable closing check per batch (the batch prompt
-in READMEFIRST has the reasoning).
+2026-09-15 and fixed every finding on the branch; pass grade B-.
+Next: batch J, mourning gecko, ackie monitor, garter snake, oscar, amano
+shrimp, one per class and three classes new since batch I. Mourning
+gecko has nine inbound articles including batch H's and batch I's gecko
+work; the ackie enrichment guide is the page savannah monitor borrows
+its evidence from; garter snake sits in the red-footed tortoise
+overview; oscar sits in the box turtle and kingsnake overview; amano
+shrimp shares a tank with corydoras. Ackie and amano each carry the
+affiliate template fragment. Worker Opus 5 high effort, one Fable
+closing check per batch (the batch prompt in READMEFIRST has the
+reasoning).
 
 Done (51):
 
@@ -440,3 +448,41 @@ To do (57):
 - [ ] Dogs (14): universal, small breed, medium breed, large breed, beagle,
       border collie, bulldog, dachshund, French bulldog, German shepherd,
       golden retriever, Labrador, Rottweiler, Siberian husky
+
+## 8. After the router hubs: the queue the batches kept filling
+
+None of these blocks a batch, and none of them is a per-species job, which
+is why they kept getting deferred. Do them once section 7 is finished.
+
+- [ ] Corydoras adult size, hub against encyclopedia. The corydoras hub's
+      sourceless Adult size row says "1 to 3 inches (2.5 to 7.5 cm)" and the
+      encyclopedia entry it is supposed to copy says "2-3 inches (5-7.5 cm)".
+      No deep dive states a size, so under RULES the row takes the
+      encyclopedia's figure and currently does not. Research which is right
+      before making them agree: the set turns on the dwarf-versus-standard
+      distinction (the setup guide sizes the tank at 10 gallons for pygmy
+      species and 20 for standard), and 2 inches as a floor excludes the
+      pygmy species the same set tells a reader they can keep. Found by the
+      numbers checker after batch I's species check, which missed it.
+- [ ] A shared chelonian soaking guide. How often, how deep, how warm, how
+      long. Two tortoise readers have now asked for it, sulcata in batch H
+      for juveniles and red-footed tortoise in batch I for the species
+      generally, and every page in both sets says the animal soaks often
+      without saying what that looks like. Two instances make it shared-guide
+      work rather than a per-species gap.
+- [ ] The affiliate template fragment, eleven left, not the six READMEFIRST
+      has been saying. Grepping both phrasings across content/guides finds:
+      ackie monitor, amano shrimp, Argentine tegu, corydoras catfish, giant
+      millipede, koi, Madagascar hissing cockroach, neon tetra, parrotlet,
+      red-eared slider, sugar glider. Shop copy with the product missing,
+      in two shapes: "Other quantities are available and a proper depth needs
+      several" and a bare "and other sizes are available" tacked onto an
+      affiliate link. Five of the eleven are species whose hubs are already
+      reconciled, so this does not follow the batch order and wants one pass
+      of its own. Batch I cleared savannah monitor and degu.
+- [ ] Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
+      batch I's five species had one (red-footed tortoise, degu, savannah
+      monitor), so the legal guide was reachable from the hub and from
+      nowhere in the sidebar. Legal is not a standard suffix, so nothing
+      auto-detects it and check-related-articles does not catch it. One pass
+      over every species with a legal guide.

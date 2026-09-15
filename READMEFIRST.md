@@ -618,22 +618,43 @@ RELATED_ARTICLES, so it was reachable from the hub and from nowhere in
 the sidebar. A sweep across every species with a legal guide is worth
 one short session.
 
-Next up is batch J. The cross-link reasoning again, since it keeps
-paying: pick five species one per class where a set merged in a recent
-batch points at them.
+Next up is batch J: mourning gecko, ackie monitor, garter snake, oscar,
+amano shrimp (gecko, lizard, snake, fish, invertebrate). Three of those
+classes are new relative to batch I, and invertebrates have not had a
+batch at all. The cross-link reasoning again, since it keeps paying:
+mourning gecko is the strongest inbound target left on the list with
+nine articles pointing at it, including African fat-tail from batch I on
+three pages and gargoyle gecko from batch H on four, plus the shared
+three-gecko overview, so both of the last two batches' gecko work gets
+checked against fresh eyes. Savannah monitor from batch I points at
+ackie monitor from two pages, and the ackie enrichment guide is the page
+savannah borrows its genus-level problem-solving evidence from, which
+means batch I's reasoning rests on a page nobody has read yet. The
+red-footed tortoise overview from batch I points at garter snake. Oscar
+sits in the overview with box turtle and California kingsnake, both
+already reconciled. Amano shrimp shares its tank and its sinking-wafer
+line with corydoras from batch I.
+
+Ackie monitor and amano shrimp also each carry the affiliate template
+fragment, so two of the eleven get cleared in scope.
 
 Savannah monitor was picked for batch I partly to clear one of the
 enrichment guides carrying the "Other quantities are available" template
-fragment, and that one is fixed. The check found a second instance in
-the degu enrichment guide ("and other sizes are available"), also fixed.
-The ones still carrying it are amano shrimp, chinchilla, hermit crab,
-hissing cockroach, ackie monitor and Argentine tegu. That fragment is
-shop copy with the product missing ("Other quantities are available and
-a proper depth needs several") and it is worth one short session of its
-own rather than waiting for each species' batch.
+fragment, and that one is fixed. The check found a second shape of the
+same leftover in the degu enrichment guide ("and other sizes are
+available"), also fixed. Grepping both phrasings afterwards shows the
+real count was never six: eleven are left, and five of them are species
+whose hubs are already reconciled, so it does not follow the batch order
+at all. The list is in docs/TODO.md, section 8. It is worth one short
+session of its own rather than waiting for each species' batch.
 
 The 57 species still on the legacy care sheet are listed by class in
-docs/TODO.md, section 7, dogs and cats last. Paste this with the next
+docs/TODO.md, section 7, dogs and cats last. Section 8 of the same file
+is the queue the batches kept filling and deferring: the corydoras adult
+size mismatch, a shared chelonian soaking guide, the six enrichment
+guides still carrying the template fragment, and a corpus-wide sweep for
+legal guides missing from RELATED_ARTICLES. None of them blocks a batch
+and none is per-species work, so they wait until section 7 is done. Paste this with the next
 five species filled in when picking up the batch after that.
 
 ```
