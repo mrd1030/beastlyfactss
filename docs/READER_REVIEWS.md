@@ -11829,6 +11829,14 @@ there is no separate wild figure, and some documented individuals run far
 longer". The scientific name and the history section were not touched: the
 encyclopedia was the page that had the name right, and the vs guide moved to it.
 
+Dates. lastUpdated and lastReviewed bumped to 2026-09-15 on the four koi guides
+whose own figures changed: cost (the stop-feeding threshold), feeding (the KHV
+mortality range), handling (the adult size), and vs goldfish (the scientific
+name and the adult size). Not bumped on tank setup, health issues or enrichment,
+which changed wording and links only. The enrichment guide is future-dated
+(2026-11-05) and gained the feeding guide's existing figure rather than a new
+one, so it was left alone either way.
+
 Fixed the same day: the scientific name and ancestry in three places on the vs
 goldfish guide; the adult size on the vs goldfish guide (body and FAQ) and the
 handling guide; the KHV mortality figure on the feeding guide; the stop-feeding
