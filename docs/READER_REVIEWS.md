@@ -3647,6 +3647,36 @@ in one review section.
 
 ## What the tests changed so far
 
+- 2026-09-15, batch O (branch claude/invertebrates-readmefirst-batch-ayolwx, not
+  merged): four router hubs rather than five, because invertebrates had exactly
+  four species left on the legacy care sheet and the class is now finished. 118
+  first-week rows, one reader pass per species and one Fable check covering all
+  four. Pass grade B. Giant millipede: the handling guide's secretion "contains
+  cyanide", attributed to a vet clinic care sheet, lost to the legal guide's
+  Wood (1974), which analysed this species and found benzoquinones; the setup
+  guide's unsourced "keep one per enclosure" lost to two opened sources on
+  communal housing; wildLifespan moved from 5-10 to CuriOdyssey's 5-7 wild and
+  7-10 captive; a sourced Diet Basics section added, the species having no
+  feeding guide. Jumping spider: a cost table whose $50 floor sat below the $60
+  enclosure it priced, re-priced from the site's own product records to $112-150
+  across five places; the feeding guide's adult interval settled from a narrated
+  disagreement into "every 2 to 5 days" with the male 10-day figure and the
+  gravid-female hedge intact; the misting cadence settled to the setup guide by
+  the subject rule. Hissing cockroach: the hub's "completely harmless to humans"
+  retired against the handling guide's leg spines and Salmonella; an unsourced
+  Arizona shipping ban retired against the legal guide, which researched all 50
+  states and never names it; time to adulthood moved to Animal Diversity Web's
+  6-7 months; sexing added to the setup guide, a gap four pages depended on.
+  Stick insect: the hub called the animal legal while the cost guide says the
+  APHIS permit is unobtainable, and the permit is now the first row; a second
+  broken cost table re-priced to $77-98; a sourced Diet Basics section added
+  from the Phasmid Study Group; the cost guide gained its first Sources block,
+  USDA APHIS's own permits page. Four of the eleven affiliate template fragments
+  in docs/TODO.md section 8 cleared in passing. The check's standing list: three
+  hedges upgraded during de-narration, four hub rows and four emergency bullets
+  written rather than pasted, two of them sourced to shared guides that do not
+  cover the species at all.
+
 - 2026-09-15, batch K (branch
   claude/tiger-salamander-parrotlet-koi-emperor-scorpion-rosy-boa, not merged):
   five router hubs, 119 first-week rows, one reader pass per species and one
@@ -14206,9 +14236,12 @@ range covers the published guidance rather than narrowing it.
 
 Misting cadence, the one genuine deep-dive contradiction. Setup guide: "Mist one
 corner of the enclosure every 2 to 3 days." Feeding guide: "light daily misting of
-the enclosure walls." Neither page's sources settle it and both are husbandry
-references of the same tier, so the subject rule decides: humidity is the setup
-guide's topic and the feeding guide changed to match.
+the enclosure walls." Both pages' sources do state a cadence and they disagree at
+the same tier, ExoPetGuides on the setup guide giving "every two to three days"
+and Bugs in Cyberspace on the feeding guide giving "daily or frequent mistings",
+so the subject rule decides: humidity is the setup guide's topic and the feeding
+guide changed to match. [Corrected by the batch O species check, which opened both
+sources; this section originally said neither page's sources settled it.]
 
 The Bronx Zoo fun fact the reader doubted checks out: the record is a female named
 Ms. Regal at 4 years 9 months, corroborated across hobby sources but not by
@@ -14378,8 +14411,10 @@ Retired with the hub: a molt duration. The old hub gave two, 20 to 60 minutes in
 one section and 30 minutes to over an hour in another, and no deep dive states one
 at all, so it is gone rather than carried up, and it is a gap in the log.
 
-Links: 5 added, one per article, all from the reader's table. The best of them is
-the enrichment guide's parthenogenesis paragraph, which now runs into the cost
+Links: 4 added, one per article, all from the reader's table (the setup guide
+gained none, since its one sibling slot was already the pesticide guide carried
+into Diet Basics). The best of them is the enrichment guide's parthenogenesis
+paragraph, which now runs into the cost
 guide's rule against releasing eggs, because the reader's sharpest structural point
 was that this set tells you you will get eggs and never tells you what to do with
 them.
